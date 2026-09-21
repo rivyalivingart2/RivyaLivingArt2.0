@@ -1,7 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { readFileSync, existsSync } from 'node:fs';
-import { resolve } from 'node:path';
 import { concepts, collections, findConcept, findCollection, conceptsForTier } from '../src/lib/catalogue.ts';
 import { isVisualPreviewAllowed } from '../src/lib/preview-mode.ts';
 

@@ -2,7 +2,7 @@
 
 **Repository:** `rivyalivingart2/RivyaLivingArt2.0`  
 **Work branch:** `codex/r8-first-frontend`  
-**Stage:** R8-1 initial frontend source; dependency installation/build verification pending.
+**Stage:** R8-1 dependencies/build verified; actual browser verification blocked.
 
 This is a new application, as confirmed by the owner on 21 September 2026.
 The earlier Markdown-only state was intentional. [The owner decision](docs/decisions/2026-09-21-new-build.md)
@@ -16,30 +16,33 @@ fictional concept studies, collection/detail route foundations, status-only Stud
 and loading/error/404 views. The two compact concept images derive from the owner's
 Drive collection. They are AI concepts, not real product photographs or stock.
 
-**Not complete:** dependency lock/install, actual Next.js build/hydration checks,
-full frontend, staff login, CMS, database/storage, enquiries, imports, full demo pack
+**Not complete:** hydrated browser/layout checks, full frontend, staff login, CMS,
+database/storage, enquiries, imports, full demo pack
 or deployment. No code in this slice collects personal data or sends messages.
 
-Read [Codex workflow](docs/CODEX_WORKFLOW.md), [slice evidence](docs/R8-1_FRONTEND_FOUNDATION.md)
+Read [Codex workflow](docs/CODEX_WORKFLOW.md), [current verification](docs/R8-1_DEPENDENCY_VERIFICATION.md)
 and [current checkpoint](PROJECT_STATE.md) before continuing.
 
-## Run locally once dependencies are available
+## Run locally
 
-Use Node 22 and npm. These are real package scripts; only `npm test` has been run
-successfully so far. The authoring container could not resolve the npm registry.
+Use Node 22 and npm 10.9.2. The committed lockfile was resolved from the npm registry
+and verified with a clean install. No application dependency pins were changed.
 
 ```sh
-npm install
+npm ci
 npm run lint
 npm run typecheck
 npm test
+npm run test:preflight
 npm run build
+npm run test:runtime
 npm run dev
 ```
 
-`npm install` must generate the actual `package-lock.json`; review/commit it and
-use `npm ci` in later clean installs. Never fabricate dependency resolution or
-claim the build passed because unit tests passed.
+`npm run check` runs the six checks above, including the build and HTTP regression
+tests. Typecheck generates Next route types first, so it works before the first
+build. Runtime tests start the real built app on loopback; they do not exercise a
+browser, React hydration, desktop/mobile layout or the mobile dialog.
 
 Local development displays the labelled visual study. For a local built-server
 review after a successful build: `RIVYA_VISUAL_PREVIEW=1 npm start`. Do not set
@@ -54,10 +57,11 @@ receives a holding page for these fixture routes.
 - `src/lib/`: typed source concepts and pure preview-mode policy.
 - `public/media/concepts/`: two small preview derivatives, not original masters.
 - `tests/`: dependency-free fixture/policy/source-contract tests.
-- `tools/`: preserved read-only Codex preflight and its tests.
+- `tools/`: read-only Codex preflight and actual built-server HTTP regression tests.
 - `docs/assets/initial-media.json`: provenance, dimensions, hashes and usage limits.
 - `docs/CODEX_WORKFLOW.md`: current starting/continuation instructions.
-- `docs/R8-1_FRONTEND_FOUNDATION.md`: actual checks, limitations and next task.
+- `docs/R8-1_FRONTEND_FOUNDATION.md`: preserved initial source-slice evidence.
+- `docs/R8-1_DEPENDENCY_VERIFICATION.md`: current install/build/runtime evidence and browser blocker.
 - `docs/decisions/2026-09-21-new-build.md`: confirmed initial-creation decision.
 - `docs/R8-0_AUDIT.md` and `docs/R8-0_REMOTE_VERIFICATION.md`: unchanged history.
 - `AGENTS.md`, `PROJECT_STATE.md`: active guidance and dated checkpoints.

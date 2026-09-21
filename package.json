@@ -12,10 +12,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "test:preflight": "node --test tools/codex-preflight.test.mjs",
-    "check": "npm run lint && npm run typecheck && npm test && npm run build"
+    "test:runtime": "node --test tools/frontend-runtime.test.mjs",
+    "check": "npm run lint && npm run typecheck && npm test && npm run test:preflight && npm run build && npm run test:runtime"
   },
   "dependencies": {
     "next": "16.3.5",

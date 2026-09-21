@@ -8,6 +8,7 @@ import { ConceptCard } from "@/components/concept-card";
 
 type Props = { params: Promise<{ collection: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  if (!isVisualPreviewAllowed(process.env)) return { title: "Not found" };
   const collection = findCollection((await params).collection);
   return { title: collection?.label ?? "Not found" };
 }

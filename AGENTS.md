@@ -30,25 +30,29 @@ The first frontend source now exists. Preserve it, all briefs and Git history.
   verified deployment protection. Never enable fixture routes in Vercel production.
 - No secrets in code, prompts, commits, diagnostics or `.env.example`.
 
-## Actual commands and current blocker
+## Actual commands and current verification boundary
 
-Node 22; npm project at repository root. Network-enabled dependency installation
-and a generated lockfile are the next task, not another application scaffold.
+Node 22; npm project at repository root. The actual dependency tree and reviewed
+package-lock.json now exist. A clean npm ci, lint, semantic typecheck, unit/preflight
+tests and production build passed in the continuation slice. See
+`docs/R8-1_DEPENDENCY_VERIFICATION.md` for current evidence and limits.
 
 ```sh
-npm install
+npm ci
 npm run lint
 npm run typecheck
 npm test
 npm run build
 npm run test:preflight
+npm run test:runtime # after npm run build; real HTTP checks, not a browser test
 ```
 
-Do not run `npm ci` until a real lockfile is generated and committed. Installation
-was blocked by EAI_AGAIN in the authoring container. Lint, semantic typecheck,
-Next.js build and hydrated browser tests are NOT verified. The source/policy tests
-run without installed app packages using `node --experimental-strip-types --test
-tests/*.test.mjs`; they are not substitutes for those missing checks.
+The earlier npm/Git network blocker is resolved in this workspace. Actual hydrated
+browser verification remains blocked: Browser Use rejected the local app with
+ERR_BLOCKED_BY_CLIENT. No desktop/mobile screenshot, keyboard, focus or image-decode
+pass is claimed. Complete those checks in an authorized browser-capable environment
+before treating the foundation as UI_READY or continuing the furniture visuals.
+Do not weaken network controls or substitute static HTML evidence.
 
 ## Git and continuity
 

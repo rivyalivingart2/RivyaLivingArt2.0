@@ -1,5 +1,49 @@
 # RivyaLivingArt project state
 
+## R8 checkpoint — 2026-09-21 14:20 Asia/Kolkata (dependencies and runtime verified)
+
+- **Phase/slice:** R8-1 continuation; dependency verification and route-status repair.
+- **Starting / last verified pushed commit:** `3bb86481fc261d6fd17ef59c56884e76d1e5a3b6`.
+- **Repository / work branch:** `rivyalivingart2/RivyaLivingArt2.0` /
+  `codex/r8-first-frontend`; origin Git read transport works; no separate push URL.
+- **Completed:** actual npm install and reviewed version-3 lockfile (439 entries),
+  clean npm ci under Node 22.23.2/npm 10.9.2; lint warning fixes; route-type generation
+  before semantic typecheck; real HTTP 404 for unknown collection/product routes;
+  collection metadata preview guard; built-server regression suite.
+- **Owned paths:** package/lock/generated Next types, PostCSS config, app home and
+  collection metadata, loading view moved to shared component, two unused test
+  imports, new runtime test, AGENTS/README/workflow/current evidence/checkpoint.
+- **Checks:** lint zero warnings; typecheck passes including without prior build
+  output; unit 22/22; preflight 12/12; production build passes; HTTP suite 29/29.
+  HTTP coverage includes link destinations, exact served image bytes, unknown-route
+  404 and production fixture isolation. No browser/hydration pass is inferred.
+- **SOURCE_IMPLEMENTED:** dependency/runtime repair slice; **UI_READY:** no,
+  awaiting actual browser verification; **BACKEND_CONNECTED:** no;
+  **TESTED:** build/unit/preflight/HTTP only.
+- **Browser blocker:** actual app starts, but Browser Use rejects its loopback URL
+  with `net::ERR_BLOCKED_BY_CLIENT`. Layout, keyboard/focus, reduced motion, image
+  decode and client-navigation checks remain unverified; no screenshots fabricated.
+- **Fixtures/persistence:** still TWO fictional source products, zero database rows.
+  Full 120/36/42/24/40 source coverage remains ahead. No backend work started.
+- **Media:** existing derivatives unchanged. Riverline raw fetch rejected by automatic
+  approval review; Basin byte transfer failed HTTP 403. Details and safe continuation
+  are in `docs/R8-1_DEPENDENCY_VERIFICATION.md`.
+- **Schema/environment:** no schema, secrets, auth, uploads or outgoing messages.
+  Test-only child environments exercise production denial; no deployment flags changed.
+- **Owner work:** source, nine briefs and historical checkpoints/evidence preserved.
+- **Publishing:** reviewed checkpoint commit/push verification pending at writing;
+  terminal push failed due to absent GitHub write credentials. Use the authorized
+  GitHub connector and verify both tree equality and actual branch SHA. Actual SHA
+  and remote confirmation belong in the session result.
+- **Vercel:** connected team again lists zero projects. None created/deployed;
+  no repository deployment workflows found. Main and live domain unchanged.
+- **V1/V2:** not ready. Frontend continuation beyond the initial browser gate remains
+  pending; this is not the R8-5 visual-review handoff.
+- **Next exact task:** run the real frontend in an authorized browser-capable
+  environment at 390/768/1440 px; verify menu keyboard/focus/Escape/scroll restoration,
+  navigation, image decode, unknown routes and reduced motion, fix failures and
+  capture actual screenshots before continuing R8-2 furniture presentation.
+
 ## R8 checkpoint — 2026-09-21 (new build confirmed; initial frontend source)
 
 - **Owner decision:** this is a new build with Markdown specifications only. Initial
