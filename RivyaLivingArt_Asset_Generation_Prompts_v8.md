@@ -1,0 +1,531 @@
+# RivyaLivingArt — Separate Asset Generation Prompts and Drive Handoff
+
+**Revision 8 · 21 September 2026**  
+**Companion:** `RivyaLivingArt_Master_Build_Prompt_v8.md`  
+**This file contains prompts, not generated images or videos.** The owner generates missing image/video outputs, uploads them to Drive, and returns the source reference. Codex inspects, maps, optimizes and imports approved files. No generation-service integration is added to the custom CMS.
+
+**Carried-forward Revision 7 scope note:** The existing 24 image, 5 video and 4 SVG templates remain unchanged. Generate/request assets only for the confirmed website and Studio scope; none is needed for the rejected S01–S04 features. This revision changes scope instructions and document references only; it does not generate media or re-review Drive files.
+
+## Revision 8 priority — resolve visible assets before backend
+
+Use the templates below incrementally during R8-1–5, beginning with the large-furniture hero, first collectible grid/detail, secondary collections and Studio/logo visuals. The 24 image, 5 video and 4 SVG templates remain the same; no rejected-feature asset request is added. Do not generate all templates indiscriminately or delay usable frontend pages while every optional film is pending.
+
+For the first visual build, use already approved public media URLs or reviewed modest-size local derivatives in the existing source asset structure. Record actual source/rights/classification and output mapping. Never commit full original media collections, huge videos or private customer images just to push the frontend. Keep original Drive files unchanged. Later, integrate editable marketing assets with the shared Blob/media library without re-creating a second gallery or losing source references.
+
+Missing outputs remain prompts for the owner to generate and return through Drive. An acceptable static poster or labelled visual-pending fallback can support review when genuinely appropriate; it is not proof of completed final media. No runtime Drive sync, image/video generator or new vendor account is introduced.
+
+## 1. Reuse the known Drive source before generating
+
+Source folder: `Rivya_All_Generated_Images`  
+Folder ID: `1wUG_qzou3CC1wjnTGeTDwP5Fh7Dab86l`  
+Folder URL: <https://drive.google.com/drive/folders/1wUG_qzou3CC1wjnTGeTDwP5Fh7Dab86l>
+
+README file: `1RkCclKtmgNvpw_6opUYNCZPfQpdMfDCo`; index: `1cgkeziT6VjkrIZW81YmWbjA997YT2fDH`. The README reports **35 final product portraits and 10 final room scenes**, all AI-generated concept visualizations, plus two earlier versions. It reports native portrait dimensions of **1122×1402** and scene dimensions of **1672×941**, and explicitly states that the matching homepage video poster is not included. This is source-reported metadata, not a complete new visual audit of every asset.
+
+Use `final/product-heroes/` and `final/room-scenes/` before `earlier-versions/`. Review actual pixels for product identity, framing, continuity and quality. Do not count the room views as ten additional products, claim the sources are real photographs, or assume images were uploaded to Blob merely because they exist on Drive. The source README references another repository/older provider brief; it does not override the current custom-CMS/Blob/no-scraper decisions.
+
+Initial gap priorities: hero film with matching poster; a safe mobile composition; seating; preservation clocks/trays/nameplates; jewellery/rakhi; required material/story slots. These are candidate gaps from the source index, subject to actual image review. There is no reason to regenerate every already suitable concept.
+
+## 2. Owner generation loop
+
+Codex resolves the next necessary visual slot and fills its prompt variables. The owner attaches any referenced image to the generator, runs the prompt, checks the output and uploads the original output to a chosen writable Drive destination. Return the actual Drive file link/ID and its prompt/slot ID. Codex then checks dimensions, file type, imagery/video frames, crop, rights/classification and file integrity before mapping a reviewed derivative to Blob/local assets.
+
+Folder suggestion only, not created here: `website-assets/incoming/images`, `incoming/video`, `incoming/vectors`, `approved` and `rejected` beneath an owner-selected writable folder. Do not mutate the existing shared collection or create these folders without a specific request/permission. Keep original filenames or record a deliberate mapping; never overwrite source masters silently.
+
+Each request needs ID, fixture/content IDs, real/concept classification, required reference file, route/component, priority, output filename, aspect ratio, native size, prompt, constraints, poster/fallback, owner-returned source ID and review state. Useful states: NEEDS_PROMPT → AWAITING_OWNER_OUTPUT → OUTPUT_RECEIVED → IN_REVIEW → APPROVED / REJECTED → MAPPED. A filename or prompt is not proof an output exists.
+
+## 3. Brand, accuracy and output rules
+
+Use the supplied logo board as colour/art-direction reference: forest-dark surfaces, warm ivory light and restrained bronze. Proposed UI colours are forest canvas `#101713`, surface `#19221C`, bronze `#B79270` and ivory `#F3EFE7`. These affect surroundings and composition; do not recolour the actual product to force a match. Do not bake UI titles, captions, logos or measurement labels into generated imagery.
+
+All new demo designs are **fictional concepts**. Reference-preserving instructions require the actual authorized reference to be attached; replace placeholders before generating. Do not claim exact dimensions, construction safety, real delivery, stock, workshop activity or customer endorsement from pixels. No real names, phone numbers, plans, wedding cards or faces in demo generation. Do not submit private customer files to a third-party generator without specific consent.
+
+Image targets below express desirable composition/native resolution, not a guarantee that a tool supports an exact size. Preserve the native output, record actual dimensions and do not stretch/crop/upscale while pretending higher detail was generated. Ask for a higher-quality rerender only where the slot really needs it. Keep the existing smaller concepts usable for appropriate preview/card sizes where visually acceptable.
+
+Video: no required audio, no rapid flashing, no manufactured false motion or geometrical drift. Review actual frames. Create the final poster from the approved video so the two match; a still image is an acceptable temporary fallback but is not a “matching extracted frame.” Optimize derivatives after review; the existing approximate 6 MB hero-video target is a delivery budget, not an instruction that a generator guarantees file size. Keep a static reduced-motion/mobile fallback.
+
+Logo masters: request the actual approved SVG or transparent PNG from the brand source. Do not generate a replacement R/leaf monogram, recreate it from a lookalike font, or use the entire branding board as the header/favicon. Small icons and true SVG vector code can be authored through ChatGPT/Codex and reviewed directly; an image generator's bitmap is not a vector file.
+
+## 4. Twenty-four image prompt templates
+
+Fill variables using the exact DP/DB entry in `RivyaLivingArt_Demo_Content_Blueprint_v8.md`. A template may cover several product IDs, but each output must correspond to its actual concept and have a unique stable filename. Do not generate 120 images indiscriminately: map useful existing concepts first, then fill necessary gaps in batches.
+
+### IMG01 — Furniture-first hero
+**Priority:** P1. **Placement:** Home / collectible landing · W04.  
+**Output:** `rivya-home-hero-concept-16x9-v01.png`. **Format target:** 16:9; target 2560×1440 or higher native output.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. A large sculptural resin-and-wood coffee or dining table as the sole focal object in a quiet architectural interior. Compose the object to the right with uncluttered left-side space for accessible website text. Use deep forest/mineral surroundings, warm ivory architectural accents and a very restrained bronze detail. Soft side light should reveal grain and translucency without making the resin glow like neon. The scale must read as large furniture, not a miniature.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG02 — Mobile hero composition
+**Priority:** P1. **Placement:** Mobile home hero · W04.  
+**Output:** `rivya-home-hero-concept-4x5-v01.png`. **Format target:** 4:5; target 2048×2560 or higher native output.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Use the approved IMG01 object reference, which must be attached. Produce a vertical companion view preserving the same silhouette, supports, wood grain, resin colour and materials. Keep the full object in frame and leave calm space above it for a short mobile headline. Do not invent a second table or merely stretch the landscape composition.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG03 — Sculptural seating study
+**Priority:** P1. **Placement:** Seating category / matching DP043–DP050 fixture · W06/W07.  
+**Output:** `rivya-seating-[DP_ID]-hero-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create one original explicitly fictional resin-and-wood [CHAIR_OR_STOOL_OR_BENCH] concept for [DP_ID_AND_TITLE]. Show an unobstructed three-quarter full-object view on a quiet dark forest-toned studio backdrop. Make supports visually coherent, with balanced proportions and a believable contact shadow. This is a concept illustration, not evidence of structural safety, comfort or manufactured stock.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG04 — Side-table concept
+**Priority:** P1. **Placement:** Side-table category / matching fixture · W07/W11.  
+**Output:** `rivya-[DP_ID]-side-table-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Depict the original fictional side-table design described by [DP_ID_AND_TITLE]. A compact but clearly furniture-scale object with an uncluttered silhouette, restrained translucent resin and natural wood. Use warm side light and sufficient tonal separation from the deep forest background. Show all legs/supports and the tabletop edge; no unrelated accessories masking construction.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG05 — Coffee-table concept
+**Priority:** P1. **Placement:** Collectible grid / matching fixture · W07/W11.  
+**Output:** `rivya-[DP_ID]-coffee-table-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Depict one original fictional [DP_TITLE] coffee-table concept in a full-object three-quarter portrait. Keep its [APPROVED_DESIGN_DESCRIPTION] consistent with the fixture brief. Restrained resin depth, natural grain, clean base silhouette, soft mineral ground and a dark forest backdrop. Leave small safe margins so the top and supports survive a catalogue crop.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG06 — Dining-table concept
+**Priority:** P2. **Placement:** Dining collection / matching fixture · W07/W11.  
+**Output:** `rivya-[DP_ID]-dining-table-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create an original fictional [DP_TITLE] dining-table visualization from [DESIGN_BRIEF]. Show the whole top and base with natural perspective and sufficient space around its perimeter. Quiet architectural setting, soft daylight, honest-looking wood grain and subtle resin translucency. Do not add chairs that conceal the table, baked-in dimensions, a designer signature or brand logos.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG07 — Console concept
+**Priority:** P2. **Placement:** Console collection / matching fixture · W07/W11.  
+**Output:** `rivya-[DP_ID]-console-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Visualize an original fictional [DP_TITLE] narrow console from [DESIGN_BRIEF]. Show a readable long-span silhouette with coherent supports, a clean top and a subtle floor shadow. The backdrop is deep forest charcoal with warm neutral architectural light. No props covering the join between wood and resin; no false workshop or installed-project claim.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG08 — Desk concept
+**Priority:** P2. **Placement:** Desk collection / matching fixture · W07/W11.  
+**Output:** `rivya-[DP_ID]-desk-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create one original fictional full-size [DP_TITLE] desk concept using [DESIGN_BRIEF]. Show the object, leg clearance and full top without a person or computer concealing details. Calm mineral surroundings, natural wood, subtle resin and controlled light. Do not interpret a small desk ornament as a full-size desk or add unrequested drawers, outlets or features.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG09 — Architectural wall-art concept
+**Priority:** P2. **Placement:** Large wall-art collection · W07/W11.  
+**Output:** `rivya-[DP_ID]-wall-art-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create an original fictional [SINGLE_PANEL_DIPTYCH_OR_TRIPTYCH] resin wall-art concept for [DP_TITLE]. Show the whole arrangement on a quiet dark wall with enough surrounding architecture to suggest large scale. Controlled relief depth and soft grazing light; no invented measurement labels, client home, signature or certification.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG10 — Freestanding sculpture concept
+**Priority:** P2. **Placement:** Sculpture collection · W07/W11.  
+**Output:** `rivya-[DP_ID]-sculpture-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create an original fictional [DP_TITLE] sculptural resin object from [DESIGN_BRIEF]. Use a clear gallery silhouette, physically plausible visual support and a minimal plinth or floor appropriate to the stated intended scale. Soft light reveals layers rather than exaggerated glow. Do not imitate a named artist or claim a real exhibition, edition or sale.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG11 — Architectural installation concept
+**Priority:** P2. **Placement:** Bespoke projects / concept case study.  
+**Output:** `rivya-[DP_ID]-installation-16x9-v01.png`. **Format target:** 16:9; target 2560×1440.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Visualize the original fictional [DP_TITLE] installation from [DESIGN_BRIEF] in an anonymous quiet architectural space. Leave clear circulation and show the installation as the primary subject. Use deep forest and warm neutral surroundings with restrained bronze accents. It must be presented as a design study, not a completed RivyaLivingArt project or an engineering-approved installation.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG12 — Preservation-clock concept
+**Priority:** P1. **Placement:** Memory art / matching clock fixture · W08/W17.  
+**Output:** `rivya-[DP_ID]-clock-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create an original fictional floral resin clock concept for [DP_TITLE]. Use tasteful small botanical details, clear separation between the clock face and preserved-flower composition, soft light and a warm-neutral surface against a dark background. No real names, dates, customer materials, certification or claims of a specific mechanism.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG13 — Bouquet-preservation concept
+**Priority:** P2. **Placement:** Memory-art category and matching product · W08.  
+**Output:** `rivya-[DP_ID]-bouquet-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create a clearly illustrative fictional [FRAME_OR_BLOCK_OR_DISC] bouquet keepsake for [DP_TITLE]. Show the flowers as the visual centre with calm negative space and legible object scale. Natural restrained floral colours, gentle highlights and a deep forest-toned setting. No real couple names, portraits, event documents or implication that an actual sentimental object was processed.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG14 — Ceremony-tray concept
+**Priority:** P1. **Placement:** Memory-art tray fixtures · W08/W17.  
+**Output:** `rivya-[DP_ID]-ceremony-tray-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create an original fictional engagement/ring ceremony tray concept for [DP_TITLE]. Use a restrained arrangement, subtle resin depth and minimal floral or metallic detail. Show the whole tray and clear margins; leave any personalization area blank so the application can render reviewed text. No identifiable people, names, dates, logos or crowded ornament.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG15 — Nameplate concept
+**Priority:** P1. **Placement:** Memory-art nameplate fixtures · W08.  
+**Output:** `rivya-[DP_ID]-nameplate-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create an original fictional botanical resin nameplate form for [DP_TITLE], shown as a standalone object rather than installed at a real address. Keep the main lettering area blank and uncluttered; actual sample labels will be added accessibly by the UI. Forest/ivory setting, gentle bronze detail, soft light; no house number or real family information.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG16 — Small memory keepsake concept
+**Priority:** P2. **Placement:** Baby/anniversary sample objects · W08.  
+**Output:** `rivya-[DP_ID]-keepsake-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create an original fictional keepsake-object concept for [DP_TITLE] using a minimal botanical or abstract composition. Avoid actual baby photos, names, birth dates, medical identifiers or personal documents. Show clear object scale and a calm premium finish; it is a generic design concept, not a real family commission.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG17 — Resin jewellery concept
+**Priority:** P1. **Placement:** Personal art / jewellery · W09.  
+**Output:** `rivya-[DP_ID]-jewellery-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create an original fictional [PENDANT_OR_EARRINGS] resin concept for [DP_TITLE] in a clean still life. Small believable scale, subtle botanical inclusion and uncluttered metal findings without pretending a specific metal grade. No model/skin, brand marks, allergy-safe claim or excessive sparkles. Use a warm neutral platform on a forest-dark background.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG18 — Rakhi concept
+**Priority:** P1. **Placement:** Personal art / festive gifting · W09.  
+**Output:** `rivya-[DP_ID]-rakhi-4x5-v01.png`. **Format target:** 4:5; target 2048×2560.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create one original fictional resin rakhi design for [DP_TITLE] as a clearly visible small object in a clean still life. Gentle material detail, tasteful thread arrangement, restrained colour and no real name or festival-year lettering. Use warm soft light and a premium dark forest-toned setting; no hand/model or manufactured-stock claim.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG19 — Small-gift collection still life
+**Priority:** P2. **Placement:** Gifting landing / related objects · W06/W09.  
+**Output:** `rivya-gifting-collection-16x9-v01.png`. **Format target:** 16:9; target 2560×1440.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Compose a quiet editorial still life using only the approved attached [PRODUCT_REFERENCE_IDS] for small resin gifts. Preserve the identity of each object; do not invent extra features. Use no more than three related objects, ample space and warm side light. Leave a calm headline area. Without actual references, produce a clearly labelled original concept, not a photograph of offered stock.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG20 — Resin and wood macro
+**Priority:** P1. **Placement:** Material story / article cover · W14/W22.  
+**Output:** `rivya-material-macro-16x9-v01.png`. **Format target:** 16:9; target 2560×1440.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create an abstract original material study where translucent resin meets natural wood grain. Fine tactile detail, subtle pigment depth, gentle raking light, no fluorescent glow and no dramatic cracks or defects presented as craftsmanship. The palette is forest/mineral/bronze/ivory around the material, not an instruction to recolour an approved product. No text or proof-of-process claim.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG21 — Large-art journal cover family
+**Priority:** P2. **Placement:** Large-art blog covers · W22.  
+**Output:** `rivya-blog-[DB_ID]-large-art-16x9-v01.png`. **Format target:** 16:9; target 2560×1440.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create a distinct conceptual editorial cover for [DB_TITLE_AND_BRIEF]. Use one relevant sculptural-furniture silhouette, wood/resin study or carefully arranged anonymous interior detail. Calm dark forest/mineral art direction with restrained warm light and space for separately rendered text. No article text, logos, fake client projects or photographed-person claims.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG22 — Commission-planning journal cover
+**Priority:** P2. **Placement:** Commission/process article covers · W22.  
+**Output:** `rivya-blog-[DB_ID]-planning-16x9-v01.png`. **Format target:** 16:9; target 2560×1440.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create an original conceptual still life about planning a bespoke furniture piece: blank paper shapes, a simple unlabeled object sketch, material fragments and subtle bronze drawing tools, arranged with quiet precision. No readable dimensions, customer floor plan, address, signature or brand logo. Use soft light and the dark forest/ivory visual language.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG23 — Memory-art journal cover
+**Priority:** P2. **Placement:** Memory/preservation blog covers · W22.  
+**Output:** `rivya-blog-[DB_ID]-memory-16x9-v01.png`. **Format target:** 16:9; target 2560×1440.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create an original illustrative editorial cover about [DB_TITLE_AND_BRIEF], using generic flowers and a simple keepsake silhouette. Leave ample space and avoid real people, names, dates, wedding documents or an actual before/after preservation claim. Warm restrained light, subtle translucency and a forest-dark setting; no baked-in title.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+### IMG24 — Personal-gifting journal cover
+**Priority:** P2. **Placement:** Gifting blog covers · W22.  
+**Output:** `rivya-blog-[DB_ID]-gifting-16x9-v01.png`. **Format target:** 16:9; target 2560×1440.  
+**Classification:** Fictional demo/editorial concept, unless an actual approved product reference and truthful use are separately confirmed.
+
+```text
+Create an original RivyaLivingArt concept visualization. Create a distinct original small-object gifting still life for [DB_TITLE_AND_BRIEF]. Show a few tactile resin forms and simple unbranded packaging in a calm composition. No readable corporate logos, customer names, fake testimonial text or invented luxury-brand packaging. Warm neutral materials against forest-dark surroundings, no baked-in headings.
+Use only references actually attached with permission. Preserve an attached approved
+object's identity; otherwise label the result as a new fictional design concept.
+No baked-in lettering, watermark imitation, third-party logo, extra parts, distorted
+perspective, impossible supports or fake customer/project evidence. Return one clean
+image in the requested aspect ratio, with useful margins and restrained tonal detail.
+```
+
+## 5. Five optional video prompts
+
+Video generation happens in the owner’s chosen suitable tool, not the deployed CMS. Never claim that an image-only tool can produce these clips. A static poster is the fallback while outputs are pending.
+
+### VID01 — Homepage furniture film
+**Priority:** P1. **Placement:** W04 home hero.  
+**Output:** `rivya-home-hero-16x9-v01.mp4` plus a poster extracted after approval. **Target:** 16:9; 5–8 seconds; silent.
+
+```text
+Create an editorial concept film for RivyaLivingArt. Use the attached approved hero concept image [REFERENCE_ID]. Make a slow restrained camera move that reveals the surface and base without changing the object. Preserve geometry, leg count, grain, resin colour and background continuity from frame to frame. No morphing, extra parts, people, text, logos, flashing light or simulated fabrication. Keep a calm headline-safe region. Identify a clean poster frame; a seamless loop is optional and must be inspected.
+Use only the actual approved references attached to this request. No generated
+speech, music, logo, watermark imitation, customer identity or factual production
+claim. Return the native video file; product accuracy and continuity will be checked
+before use. Do not substitute a still-image animation for a geometry-accurate model.
+```
+
+### VID02 — Mobile hero film
+**Priority:** P2. **Placement:** W04 mobile enhancement.  
+**Output:** `rivya-home-hero-4x5-v01.mp4` plus a poster extracted after approval. **Target:** 4:5 or reviewed 9:16; 5–8 seconds; silent.
+
+```text
+Create an editorial concept film for RivyaLivingArt. Use the same approved hero object as VID01 with a vertical reference image attached. Preserve the full object and a quiet text area during a very small camera move. Do not crop away supports or invent geometry to fill the portrait frame. No visual drift, titles or rapid movement. This is optional; the matching mobile poster remains the reliable default.
+Use only the actual approved references attached to this request. No generated
+speech, music, logo, watermark imitation, customer identity or factual production
+claim. Return the native video file; product accuracy and continuity will be checked
+before use. Do not substitute a still-image animation for a geometry-accurate model.
+```
+
+### VID03 — Material macro film
+**Priority:** P2. **Placement:** W14 material section.  
+**Output:** `rivya-material-macro-16x9-v01.mp4` plus a poster extracted after approval. **Target:** 16:9; 4–6 seconds; silent.
+
+```text
+Create an editorial concept film for RivyaLivingArt. Animate a subtle light/camera shift across the attached approved resin-and-wood macro. Keep grain and material boundaries consistent, with gentle reflections and no liquid pouring, bubbles appearing or surface transformation. This is a material visualization, not documentary footage of the actual workshop or a product-performance test.
+Use only the actual approved references attached to this request. No generated
+speech, music, logo, watermark imitation, customer identity or factual production
+claim. Return the native video file; product accuracy and continuity will be checked
+before use. Do not substitute a still-image animation for a geometry-accurate model.
+```
+
+### VID04 — Product detail movement
+**Priority:** P2. **Placement:** W11 optional selected collectible video.  
+**Output:** `rivya-[DP_ID]-detail-film-16x9-v01.mp4` plus a poster extracted after approval. **Target:** 16:9; 5–8 seconds; silent.
+
+```text
+Create an editorial concept film for RivyaLivingArt. Use the attached approved [DP_ID] reference. Produce only a small lateral camera move around the visible angle, preserving the known silhouette and support arrangement. Avoid a complete 360-degree orbit that invents unseen geometry. No added accessories or colour changes. Keep it labelled as a concept film and do not call it a 3D model or AR asset.
+Use only the actual approved references attached to this request. No generated
+speech, music, logo, watermark imitation, customer identity or factual production
+claim. Return the native video file; product accuracy and continuity will be checked
+before use. Do not substitute a still-image animation for a geometry-accurate model.
+```
+
+### VID05 — Memory-art concept film
+**Priority:** P2. **Placement:** W11 selected memory product.  
+**Output:** `rivya-[DP_ID]-memory-film-4x5-v01.mp4` plus a poster extracted after approval. **Target:** 4:5; 4–6 seconds; silent.
+
+```text
+Create an editorial concept film for RivyaLivingArt. Use the attached fictional flower-keepsake reference [DP_ID]. Add very restrained camera motion and light, preserving every flower and object edge without blooming/morphing effects. No hands, real names, faces, dates or claims that sentimental materials are being processed. Keep the whole object visible and identify a stable poster frame.
+Use only the actual approved references attached to this request. No generated
+speech, music, logo, watermark imitation, customer identity or factual production
+claim. Return the native video file; product accuracy and continuity will be checked
+before use. Do not substitute a still-image animation for a geometry-accurate model.
+```
+
+## 6. Four true-vector/code prompts
+
+These are for a tool that can return actual SVG code or an SVG-authoring workflow. Review geometry and sanitize through the application’s approved vector pipeline; no script, remote content or unsanitized inline SVG. UI icons remain local reviewed components; editable large illustrations may use the approved media pipeline.
+
+### SVG01 — Missing craft icon family
+**Priority:** P1. **Placement:** Shared primitives / A16.  
+**Output:** `rivya-icon-[NAME].svg`. **Target:** 24×24 viewBox; true vector paths.
+
+```text
+Author original SVG geometry for [FURNITURE / SEATING / RESIN_LAYER / WOOD_GRAIN / RULER / FLOWER_MEMORY / SMALL_GIFT] matching the currently installed icon stroke language. Use currentColor, a 24×24 viewBox, restrained 1.75–2 stroke width adjusted to the audited family, rounded joins and simple paths. It must read at 16, 20 and 24 CSS pixels. No embedded raster, scripts, event handlers, foreignObject, remote URLs, copied logo or fake scalable bitmap. Return valid SVG code plus an accessible label separately. Reuse existing icons for generic save/search/settings rather than redrawing every action.
+Return the actual SVG source and a short intended-use/accessibility note. Do not
+claim it is a copy of the supplied logo or an official third-party icon. Use a
+small, readable path structure that can be inspected before being added to code.
+```
+
+### SVG02 — Furniture dimension schematic
+**Priority:** P1. **Placement:** W12/W16 specifications and form help.  
+**Output:** `rivya-dimension-[OBJECT].svg`. **Target:** Useful viewBox, lightweight vector.
+
+```text
+Author an original minimal SVG schematic of a [TABLE / CHAIR / CONSOLE / WALL_PANEL] showing width, depth and height arrows. Use the existing stroke style with optional CSS-controlled bronze accent. No numeric dimensions; UI text will supply verified values. Text labels should remain separate where possible. No external fonts, raster images, scripts or remote resources. Make the drawing clearly schematic, not a structural plan or safety certificate.
+Return the actual SVG source and a short intended-use/accessibility note. Do not
+claim it is a copy of the supplied logo or an official third-party icon. Use a
+small, readable path structure that can be inspected before being added to code.
+```
+
+### SVG03 — Studio empty-state illustrations
+**Priority:** P1. **Placement:** A08/A09/A19 empty/loading/error states.  
+**Output:** `rivya-empty-[STATE].svg`. **Target:** Lightweight responsive vector.
+
+```text
+Author an original restrained SVG illustration for [NO_PRODUCTS / NO_MEDIA / NO_ENQUIRIES / NO_SEARCH_RESULTS / DEMO_REMOVED]. Use a simple furniture/material motif, clear negative space and the existing dark UI stroke system with at most one bronze accent. Leave actual status text and actions to HTML. No sad mascots, fake activity, external resources or executable code. Decorative SVG will be aria-hidden; it must not communicate essential state alone.
+Return the actual SVG source and a short intended-use/accessibility note. Do not
+claim it is a copy of the supplied logo or an official third-party icon. Use a
+small, readable path structure that can be inspected before being added to code.
+```
+
+### SVG04 — Login and 404 decorative artwork
+**Priority:** P2. **Placement:** A02/W29.  
+**Output:** `rivya-system-[LOGIN_OR_404].svg`. **Target:** Lightweight responsive vector.
+
+```text
+Author an original abstract resin-flow or sculptural-furniture SVG motif for a dark RivyaLivingArt login/404 composition. Use forest-toned surfaces, minimal bronze hairlines and generous negative space, but do not redraw or invent the brand monogram. No lettering, logos, complex filters, embedded images, scripts or external loads. Keep all real text and navigation in HTML. Provide static geometry that remains clear without animation.
+Return the actual SVG source and a short intended-use/accessibility note. Do not
+claim it is a copy of the supplied logo or an official third-party icon. Use a
+small, readable path structure that can be inspected before being added to code.
+```
+
+## 7. Online icons/vectors: Google discovery, original-source permission
+
+Reuse the existing installed icon family first. Google may help find an original library/creator page; it is not proof of commercial reuse rights. Open the original asset/license, record version/creator/URL/notices and exclude personal-use-only or uncertain files. Preserve any required attribution. Do not hotlink Google thumbnails, remove watermarks, scrape competitor photos or download mixed full icon packs for a few symbols.
+
+Previously reviewed candidate references are [Lucide](https://lucide.dev/license), [Google Material Symbols](https://developers.google.com/fonts/docs/material_symbols), and [Google's usage-rights guidance](https://support.google.com/websearch/answer/29508?hl=en). Recheck the exact selected asset/license during implementation. Their presence here does not approve an unidentified asset or require a second icon system.
+
+## 8. High-volume catalogue and blog mapping
+
+The demo requirement is 120 records, not necessarily 120 immediately generated full galleries. Use existing matching source concepts, a small number of selected polished hero/gallery examples and clearly labelled visual-pending fallbacks for unresolved samples. Final world-class presentation still requires resolving the important visible slots; do not hide incomplete mapping in the status report.
+
+A 35-portrait source could cover at most 35 unique product heroes if every one were a genuine match. The actual useful count requires review; ten room scenes do not increase that upper bound. Do not claim enough distinct media for all 120 products until verified. Use the register’s candidate source IDs and create a row for every unresolved DP asset slot. Alternate angles/macros must preserve the same object; a different object is not a second gallery view.
+
+For 36 blog covers, apply IMG20–IMG24 and relevant approved gallery material to the specific subject. Reuse is acceptable when editorially appropriate and documented; do not generate arbitrary unrelated covers to satisfy a counter. Keep sample testimonial avatars as initials/abstract shapes—no need for twenty-four fabricated customer portraits.
+
+Request ledger schema:
+
+```text
+requestId | content/DP/DB IDs | exact route/component | slot | priority
+sourceCandidates | actualSelectedSourceID | classification | rights/consent
+promptVersion | outputFilename | desiredAspect/size | ownerReturnedDriveFileID
+actualDimensions/duration/bytes | review | derivativeBlobID/localPath
+poster/crop/fallback | approvedBy/at | remainingIssue
+```
+
+## 9. Completion and handoff
+
+Check selected files, native dimensions, visible geometry, frame continuity, text-safe crop, correct product/story association, alt text, consent/rights, source provenance, demo/real classification and fallback. Import selected derivatives only. Preserve originals, rejected variants and source metadata privately as required; do not publish private Drive links, provider tokens or sensitive prompts.
+
+Update canonical `docs/images.md`, the existing manifest and the next checkpoint with actual approved files and unresolved IDs. Return only the next meaningful batch to the owner, not a vague request for “more images.” Public pages serve approved Blob/local media and continue working without Drive access or a generation session.
+
+**Nothing in this file has been generated, uploaded to Drive or published by preparing these prompts.** The existing logo board and source metadata are the evidence available; individual output approval occurs later.
