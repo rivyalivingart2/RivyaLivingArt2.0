@@ -853,3 +853,124 @@ Do not map returned artwork to product galleries. Review these as editorial asse
 retain a visible concept label, and record any crop/derivative decisions after the
 owner returns the source. Portfolio installation photography, artist/studio portraits
 and documentary fabrication media still require genuine owner-approved sources.
+
+## R8-3D — next six journal cover briefs (21 September 2026)
+
+These owner-generation requests cover the newly authored DB007–DB012 drafts.
+No image has been generated, downloaded or approved by adding this section. The
+website retains labelled pending covers. Use approved Drive assets first if a
+relevant source is actually available; these briefs do not establish such a source.
+
+**Shared output:** one horizontal 3:2 image per brief, target 2400×1600 or larger,
+with a clear central composition that tolerates a restrained card crop. Record
+actual dimensions, source, rights, approval and derivative decisions before use.
+Use forest shadows, warm ivory and restrained bronze accents. Do not bake in text,
+logos, product identifiers, watermarks or approval/certification symbols. Do not
+include identifiable people, private rooms, real project documents or customer data.
+
+**Classification:** original fictional editorial illustration, visibly labelled as
+a concept. These are not completed RivyaLivingArt interiors, real commissions,
+verified material samples or technical instructions. Do not recolour or alter an
+approved catalogue product to fit an article. Unreferenced objects remain anonymous
+concepts and must not be mapped into product galleries.
+
+### JOURNAL-DB007 — Pairing Resin Art with Warm Neutral Interiors
+
+**Output:** `rivya-journal-db007-warm-neutral-interior-3x2-v01.png`
+**Placement:** DB007 journal cover/card; fictional colour-relationship study.
+
+```text
+Create an original fictional interior composition exploring a warm neutral room
+and one anonymous wood-and-resin furniture form. Use a quiet warm ivory wall,
+oatmeal textile, understated timber tones and one restrained translucent accent.
+Give texture, shadow and negative space room to distinguish the surfaces without
+making every object match. Keep the full furniture silhouette visible. This is a
+palette illustration, not a completed client room or a promise of available finishes.
+No paint labels, colour codes, people, logos or copied catalogue design. Follow the
+shared R8-3D constraints and return one horizontal 3:2 editorial concept image.
+```
+
+### JOURNAL-DB008 — A Guide to Describing Your Commission
+
+**Output:** `rivya-journal-db008-commission-notebook-3x2-v01.png`
+**Placement:** DB008 journal cover/card; fictional planning still life.
+
+```text
+Create an original editorial still life about preparing a clear furniture brief.
+Arrange blank ivory paper, a small anonymous sculptural furniture maquette, a
+pencil and a few generic material fragments on a forest-dark surface. A simple
+unlabelled outline on one page may suggest scale without showing measurements,
+an actual floor plan or buildable technical details. Emphasize clarity and a small
+number of thoughtful references, with soft side light and generous space. No
+client names, signatures, quotation, approval stamp or accepted-order claim.
+Follow the shared R8-3D constraints; return one horizontal 3:2 concept illustration.
+```
+
+### JOURNAL-DB009 — What to Include in an Architect’s Enquiry
+
+**Output:** `rivya-journal-db009-architect-enquiry-3x2-v01.png`
+**Placement:** DB009 journal cover/card; fictional project-communication study.
+
+```text
+Create an original fictional editorial composition of simple architectural volumes,
+an anonymous console maquette and several blank paper sheets, viewed at a calm
+oblique angle. Arrange the elements so that project context, object proportion and
+open questions are suggested through spacing, rather than a dense technical desk.
+Use warm ivory paper, dark timber-like tones and subtle bronze drawing tools. No
+real drawings, title blocks, dimension text, addresses or engineering details. Do
+not imply a site visit, architectural accreditation or a service delivered by the
+studio. Follow the shared R8-3D constraints and return one horizontal 3:2 image.
+```
+
+### JOURNAL-DB010 — Wall Art at Architectural Scale
+
+**Output:** `rivya-journal-db010-wall-art-rhythm-3x2-v01.png`
+**Placement:** DB010 journal cover/card; fictional panel-composition study.
+
+```text
+Create an original fictional gallery-wall composition using three abstract panels
+with restrained flowing wood-and-resin-inspired visual rhythms. Show the intervals
+between the panels, a quiet surrounding wall and enough floor to suggest viewing
+distance. Keep the focus on the relationship of the three forms and their negative
+space, with soft light and an unoccupied setting. These are imagined compositions,
+not manufactured or installed products. No visible mounting-system recipe,
+structural details, dimensions, safety symbols or real project attribution. Follow
+the shared R8-3D constraints and return a single horizontal 3:2 editorial image.
+```
+
+### JOURNAL-DB011 — From a Mood Board to a Material Conversation
+
+**Output:** `rivya-journal-db011-material-mood-board-3x2-v01.png`
+**Placement:** DB011 journal cover/card; fictional reference-composition study.
+
+```text
+Create an original top-down editorial arrangement of anonymous visual references:
+small abstract colour fields, a grain-like texture fragment, a translucent generic
+form and blank note cards. Give each item separate breathing room so the whole
+composition suggests a conversation about relationships, not a finished material
+specification. Use a warm ivory ground with forest and quiet bronze accents. No
+copied photographs, supplier marks, readable notes, approval ticks or before/after
+comparison interface. These are illustrative references, not actual approved finish
+samples. Follow the shared R8-3D constraints and return one horizontal 3:2 image.
+```
+
+### JOURNAL-DB012 — Light, Transparency and the Look of Resin
+
+**Output:** `rivya-journal-db012-light-transparency-3x2-v01.png`
+**Placement:** DB012 journal cover/card; fictional visual-perception study.
+
+```text
+Create an original editorial close composition of one anonymous translucent
+sculptural form against a softly divided warm-light and forest-shadow background.
+Let the viewpoint, reflected light and visible edge suggest an impression of depth.
+Use restrained highlights rather than extreme gloss or a laboratory presentation.
+Show a visual question about appearance, not a physical experiment or an actual
+resin formulation. No transmittance scales, UV symbols, performance certificates,
+durability claims, text or identifiable product design. Follow the shared R8-3D
+constraints and return one horizontal 3:2 fictional concept illustration.
+```
+
+Retain the editorial-concept label after approval. Image appearance cannot establish
+resin chemistry, UV resistance, durability, manufacturing feasibility or a physical
+colour match. Genuine portfolio, workshop and people imagery still requires the
+owner's authentic approved source material.

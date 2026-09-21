@@ -1,0 +1,10 @@
+.document { color-scheme: dark; background: #101713; }
+.body { margin: 0; background: #101713; color: #f3efe7; font-family: Arial, Helvetica, sans-serif; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 28px 4.7vw; border-bottom: 1px solid #3a483e; }
+.header a { color: #f3efe7; text-decoration: none; font: 400 27px/1.3 Georgia, serif; }
+.header span { color: #b7bfb5; font-size: 11px; }
+.header a:focus-visible, .skipLink:focus-visible { outline: 2px solid #ceac89; outline-offset: 5px; }
+.footer { padding: 24px 4.7vw 32px; border-top: 1px solid #3a483e; color: #b7bfb5; font-size: 11px; }
+.skipLink { position: fixed; z-index: 10; top: 8px; left: 12px; transform: translateY(-200%); padding: 12px 20px; background: #b79270; color: #101713; text-decoration: none; }
+.skipLink:focus { transform: translateY(0); }
+@media (max-width: 760px) { .header { padding: 22px 5vw; } .footer { padding: 24px 5vw; } }

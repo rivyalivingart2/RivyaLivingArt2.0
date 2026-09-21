@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Form from "next/form";
 import { ConceptCard } from "@/components/concept-card";
+import { SystemState } from "@/components/system-state";
 import { Arrow } from "@/components/ui/arrow";
 import {
   catalogueHref,
@@ -90,12 +91,7 @@ export function FurnitureCollection({ searchParams }: { searchParams: SearchPara
             {result.items.map((piece, index) => <ConceptCard key={piece.id} piece={piece} index={first + index} />)}
           </div>
         ) : (
-          <div className={styles.emptyState}>
-            <p className="eyebrow">Room for another idea</p>
-            <h3>No studies match this combination.</h3>
-            <p>Try another material or a broader size. This growing sample collection shows only a small part of the possible directions.</p>
-            <Link href="/collectible-design#collection-results" className="button">View all studies <Arrow /></Link>
-          </div>
+          <SystemState kind="empty" compact title="No studies match this combination." description="Try another material or a broader size. This growing sample collection shows only a small part of the possible directions." actionHref="/collectible-design#collection-results" actionLabel="View all studies" />
         )}
 
         {result.pageCount > 1 && (

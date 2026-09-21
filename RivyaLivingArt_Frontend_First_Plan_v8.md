@@ -8,7 +8,7 @@
 > integration. This overrides the per-slice and R8-5 QA timing below and in the
 > older Revision 8 companions. Keep existing tests and checks intact; compiler/
 > typechecking may resolve development wiring only. Historical results remain
-> historical, and new R8-3B source is untested. R8-5 still provides protected
+> historical, and R8-3B/R8-3C/R8-3D source is untested. R8-5 still provides protected
 > frontend-development preview instructions and preserves owner review control;
 > full QA is not a prerequisite to integration, and no visual approval is implied.
 > See [the dated decision](docs/decisions/2026-09-21-development-first.md).
@@ -19,12 +19,21 @@
 → protected Vercel frontend handoff / owner review → backend/database integration
 → persistent demo management → final consolidated QA → owner Vercel deployment.**
 
-The source and Git audit already exists. PR #7 merged R8-3A into main at
-`0999b3b0a873e0745231f119c1567b3f8cd79fd8`; new R8-3B form work continues on
-development. Its typed local simulations add no real uploads, persistence or
-messages. The next exact task is **R8-3C**, followed by R8-3D and Studio. The phase
-requirements below retain their feature scope; their earlier QA-gating clauses are
-superseded by the dated timing override, not silently marked complete.
+The source and Git audit already exists. PR #9 merged R8-3C into main at
+`96af467fe5cc94dc56f1fa507df35317cbdbc798`, verified from the remote reference.
+R8-3D system-state and second article-batch development continues on the safe
+branch. Its local recovery and blocked-WhatsApp examples add no real uploads,
+persistence or messages. The next exact task is **R8-4A — Studio shell/navigation,
+fixture-derived dashboard, product list/detail, tier fields and form-builder
+visuals**. The phase requirements below retain their feature scope; their earlier
+QA-gating clauses are superseded by the dated timing override, not silently marked
+complete. Read `docs/R8-3D_SYSTEM_STATES.md` and the latest owner merge decision.
+
+**Current contact correction:** master Section 1 already supplied the phone,
+WhatsApp destination, email and map link. R8-3D corrects the earlier missing-contact
+description using those exact values; it does not transfer fictional drafts to
+live contact links. Real care/legal wording, studio history and genuine supporting
+media still need owner review. No street address, hours or service terms are inferred.
 
 Revision 8 explicitly replaces Revision 7's backend-first ordering. Use `R8-0` through `R8-11` in active task IDs so earlier `Phase 4`, for example, cannot be mistaken for the new phase 4. Preserve historical checkpoints and add a phase crosswalk; do not renumber history or repeat already implemented functionality solely to fit the new order.
 
@@ -77,6 +86,17 @@ Keep actual dimensions and price modes in typed data; demo facts stay visibly fi
 3B: large commission, preservation and gifting forms: usable steps, keyboard validation, optional local preview of safe sample reference images, local summary and explicitly simulated receipt.  
 3C: journal index/article layouts, FAQ, about/process/materials/care, portfolio, contact, search and approved existing service routes.  
 3D: 404/error/root error, empty/unavailable product, loading, failed-media, failed-form and WhatsApp fallback designs; responsive refinements.
+
+**Current R8-3D checkpoint:** shared state/error/loading presentation, guarded
+`/preview/states` gallery, post-validation collection/search/journal Suspense,
+header pending-link indicators, media retry and zoom-on-load, form-failure state
+that preserves mounted values/reference, and blocked-WhatsApp local simulation.
+These are implemented frontend surfaces, not executed QA or runtime fault
+injection. No global root loading boundary is introduced before route validation.
+`npm run typecheck` passed for wiring; UI_READY and TESTED remain deferred.
+Article source now includes DB001–DB012 (12/36), with 24 still to write. There are
+42 FAQ drafts, three fictional studies and 24 products; the full product,
+testimonial and inquiry/order-scenario targets remain incomplete.
 
 Write the full 36 demo article drafts across bounded content slices, not in one unreviewed batch. The demo companion's briefs are inputs to writing, not completed articles. Complete all 120 named concept records, 42 FAQ answers, 24 fictional quotes and 40 order scenarios as source fixtures by V1. Actual insertion into a database is R8-9.
 

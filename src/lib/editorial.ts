@@ -19,7 +19,7 @@ export const editorialPages: Readonly<Record<EditorialPageKey, EditorialPage>> =
   process: editorialRecord("EP002", "From a possibility to a considered brief", "A conceptual guide to preparing a furniture, preservation or gifting brief; the real studio process awaits owner review."),
   materials: editorialRecord("EP003", "A language of materials", "Explore wood, resin, metal and mineral as visual directions for fictional design studies."),
   care: editorialRecord("EP004", "Care begins with knowing your piece", "Questions to help request piece-specific material, finish and care information from the studio."),
-  contact: editorialRecord("EP005", "Begin a conversation", "Choose a sample furniture, memory-art or personal-gifting brief. Verified contact channels are awaiting owner input."),
+  contact: editorialRecord("EP005", "Begin a conversation", "Explore sample furniture, memory-art or personal-gifting briefs, or use the supplied studio contact details for a real conversation."),
   architects: editorialRecord("EP006", "For architects & interior designers", "Prepare a fictional project brief around a room, a material direction and the practical requirements of a space."),
 };
 

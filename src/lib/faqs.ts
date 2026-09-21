@@ -670,7 +670,7 @@ export const faqs: readonly FaqRecord[] = [
     "groupId": "delivery-care",
     "question": "Are returns and damage policies available?",
     "answer": "Only the owner-approved policies should be published as business terms. Contact the studio for the applicable current policy.",
-    "previewNote": "Approved returns and damage terms have not been supplied. The contact page currently explains that live studio contact details are pending.",
+    "previewNote": "Approved returns and damage terms have not been supplied. Use the studio contact details on the contact page to ask about current policies.",
     "references": [
       {
         "href": "/care",
@@ -775,7 +775,7 @@ export const faqs: readonly FaqRecord[] = [
     "groupId": "privacy-demo",
     "question": "How do I ask about privacy or my enquiry?",
     "answer": "Use the supplied studio contact details and your request reference. The owner must approve the final privacy and retention wording.",
-    "previewNote": "Live studio contact details, saved enquiry references and approved privacy/retention terms are not yet configured. Do not enter personal enquiry details into this demo.",
+    "previewNote": "The contact page includes the supplied studio contact details. Saved enquiry references and approved privacy/retention terms are not yet configured. Do not enter personal enquiry details into this demo.",
     "references": [
       {
         "href": "/contact",

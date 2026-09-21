@@ -8,6 +8,7 @@ import {
 } from "@/components/public-page";
 import { Arrow } from "@/components/ui/arrow";
 import { furnitureConcepts } from "@/lib/catalogue";
+import { businessContact } from "@/lib/contact";
 import {
   careTopics, contactJourneys, editorialWorlds, materialDirections,
   planningSteps, professionalBriefAreas,
@@ -114,7 +115,17 @@ export function ContactPage() {
     <section className={styles.contactGrid} aria-label="Choose a sample inquiry journey">{contactJourneys.map((journey) => <article className={styles.contactCard} key={journey.number}>
       <span className={styles.contactNumber} aria-hidden="true">{journey.number}</span><h2>{journey.title}</h2><p>{journey.body}</p><p className={styles.contactDetails}>{journey.details}</p><Link href={journey.href} className="text-link">{journey.label}<Arrow /></Link>
     </article>)}</section>
-    <section className={styles.contactChannels} aria-labelledby="contact-direct"><div><p className="eyebrow">Direct contact</p><h2 id="contact-direct">The real details<br /><em>belong here.</em></h2></div><div><p>Verified studio email, phone, WhatsApp and visiting information have not yet been supplied. Real contact channels will be shown after owner review.</p><p>Until then, these forms are a way to explore the inquiry journey. A simulated receipt does not reach the studio or reserve a piece, a date or a consultation.</p><div className={styles.inlineLinks}><Link href="/faq" className="text-link">Read common questions <Arrow /></Link><Link href="/architects" className="text-link">For architects & designers <Arrow /></Link></div></div></section>
+    <section className={styles.contactChannels} aria-labelledby="contact-direct"><div><p className="eyebrow">Direct contact</p><h2 id="contact-direct">Bring the idea<br /><em>into conversation.</em></h2></div><div>
+      <p>Contact details supplied by RivyaLivingArt. For a real conversation, contact the studio directly and confirm any visit in advance.</p>
+      <dl className={styles.contactDetailsList}>
+        <div><dt>Phone</dt><dd><a href={businessContact.phoneHref}>{businessContact.phone}</a></dd></div>
+        <div><dt>Email</dt><dd><a href={businessContact.emailHref}>{businessContact.email}</a></dd></div>
+        <div><dt>WhatsApp</dt><dd>{businessContact.whatsapp}<small>The demo message handoff is disconnected.</small></dd></div>
+        <div><dt>Location</dt><dd><a href={businessContact.locationHref} target="_blank" rel="noopener noreferrer">View supplied map location <span className="sr-only">(opens a new tab)</span><Arrow /></a></dd></div>
+      </dl>
+      <p>Sample form entries stay in this browser page. They are never added to these contact links. A simulated receipt does not reach the studio or reserve a piece, a date or a consultation.</p>
+      <div className={styles.inlineLinks}><Link href="/faq" className="text-link">Read common questions <Arrow /></Link><Link href="/architects" className="text-link">For architects & designers <Arrow /></Link></div>
+    </div></section>
     <PublicPageClosing title="Still finding the direction?" description="Discover furniture first, then explore memory art and personal pieces at your own pace." href="/collectible-design" label="Explore the collection" />
   </main>;
 }

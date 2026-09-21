@@ -1,5 +1,14 @@
 # R8-3C — journal, editorial pages and discovery
 
+> **R8-3D correction — 21 September 2026:** the master brief Section 1 already
+> supplies the business phone/WhatsApp, email and map link. The R8-3C description
+> below that contact channels were missing was incorrect. R8-3D corrects the
+> current contact presentation using those exact supplied values, without draft
+> transfer or automated messages. Contact values are no longer a blocker; genuine
+> care/legal wording, studio history and supporting media still require owner
+> review. The original R8-3C record below is preserved as historical evidence.
+> See `R8-3D_SYSTEM_STATES.md` for current content counts and implementation status.
+
 **Date:** 21 September 2026  
 **Work branch:** `codex/r8-first-frontend`  
 **Parent main:** `cd6f91e55f8153b55a8c4af1f4329af1be81f38d`

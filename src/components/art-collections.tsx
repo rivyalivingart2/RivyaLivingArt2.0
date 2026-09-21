@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import Form from "next/form";
 import Link from "next/link";
 import { MemoryProductCard, PersonalArtProductCard } from "@/components/concept-card";
+import { SystemState } from "@/components/system-state";
 import { Arrow } from "@/components/ui/arrow";
 import {
   memoryHref, memoryOccasionOptions, personalColourOptions, personalFestivalOptions,
@@ -52,12 +53,7 @@ function CollectionResults({ heading, base, total, page, pageSize, pageCount, fi
         {filtered && <Link className="text-link" href={`${base}#collection-results`}>Reset filters <span aria-hidden="true">↗</span></Link>}
       </div>
       {total ? children : (
-        <div className={styles.emptyState}>
-          <p className="eyebrow">Another way to begin</p>
-          <h3>No studies match this combination.</h3>
-          <p>{emptyCopy}</p>
-          <Link href={`${base}#collection-results`} className="button">View all studies <Arrow /></Link>
-        </div>
+        <SystemState kind="empty" compact title="No studies match this combination." description={emptyCopy} actionHref={`${base}#collection-results`} actionLabel="View all studies" />
       )}
       {pageCount > 1 && (
         <nav aria-label="Collection pages" className={styles.pagination}>

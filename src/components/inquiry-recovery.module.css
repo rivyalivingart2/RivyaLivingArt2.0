@@ -1,0 +1,27 @@
+.recovery { min-width: 0; }
+.recovery > h2, .recovery > h3 { font-size: clamp(35px, 3.8vw, 52px); line-height: 1.1; margin: 17px 0 22px; overflow-wrap: anywhere; }
+.introduction { font-size: 13px; line-height: 1.9; color: var(--muted); max-width: 650px; }
+.state { display: flex; gap: 19px; padding: 23px 0; margin: 25px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.symbol { font-family: var(--font-display); font-size: 34px; line-height: 1; color: var(--primary-hover); flex-shrink: 0; min-width: 22px; }
+.state strong { font-size: 12px; font-weight: 500; }
+.state p { font-size: 11px; color: var(--muted); line-height: 1.85; margin-top: 6px; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 13px 22px; margin-top: 25px; }
+.actions > button { white-space: normal; text-align: left; }
+.actions > button:disabled { opacity: .65; }
+.outlineButton { display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 1px solid var(--control-border); padding: 14px 18px; min-height: 50px; font-size: 12px; line-height: 1.7; }
+.outlineButton:hover { background: var(--surface-elevated); }
+.textButton { display: inline-flex; align-items: center; gap: 12px; background: transparent; border: 0; padding: 12px 0; min-height: 44px; font-size: 12px; line-height: 1.7; color: var(--primary-hover); }
+.textButton:hover { color: var(--foreground); }
+.status { color: var(--primary-hover); font-size: 12px; line-height: 1.85; }
+.status:not(:empty) { margin-top: 20px; }
+.manualCopy { margin-top: 20px; }
+.manualCopy label { display: block; font-size: 12px; margin-bottom: 9px; }
+.manualCopy textarea { display: block; width: 100%; min-width: 0; min-height: 49px; padding: 12px 13px; border: 1px solid var(--control-border); border-radius: 0; background: var(--background); color: var(--foreground); font-size: 12px; line-height: 1.65; resize: vertical; }
+.note { color: var(--muted); font-size: 10px; line-height: 1.9; margin-top: 20px; max-width: 670px; }
+@media (max-width: 600px) {
+  .recovery > h2, .recovery > h3 { font-size: 37px; }
+  .actions { align-items: stretch; flex-direction: column; }
+  .actions > button { justify-content: space-between; }
+  .actions > .textButton { align-self: flex-start; }
+  .manualCopy textarea { font-size: 16px; }
+}
