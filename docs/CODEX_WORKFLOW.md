@@ -2,7 +2,7 @@
 
 **Repository:** `rivyalivingart2/RivyaLivingArt2.0`  
 **Working branch:** `codex/r8-first-frontend`  
-**Latest decisions:** new build confirmed; accumulated work merged through PR #4
+**Latest decisions:** new build confirmed; accumulated work merged through PRs #4 and #5
 under the owner’s subsequent instruction. New work continues on the development branch.
 
 Read `AGENTS.md`, `PROJECT_STATE.md`, `docs/decisions/2026-09-21-new-build.md` and
@@ -11,13 +11,11 @@ specification; the dated owner decision supersedes their initial source-gap guar
 **Do not ask for old source, restore another repository, scaffold again or generate
 another prompt pack.** Continue the source now present.
 
-**Current continuation update:** dependency installation, the real lockfile, clean
-`npm ci`, lint/typecheck/unit/preflight/build and built-server HTTP checks are now
-verified. Actual local Chromium checks now also pass: 50 passed across four sizes,
-with 10 mobile-only cases inapplicable on desktop/tablet. Read
-`docs/R8-1_BROWSER_VERIFICATION.md` and the main-merge decision. The cloud browser’s
-localhost restriction remains unchanged; repository-owned Playwright tests resolve
-the project verification gate. Do not repeat the earlier source/network diagnosis.
+**Current continuation update:** R8-2 furniture source and real browser checks are
+verified: 12 authored concepts, 33 unit / 12 preflight / 59 HTTP / 98 browser tests;
+10 mobile-only cases are inapplicable on desktop/tablet. Lint/typecheck/build pass.
+Read `docs/R8-2_FURNITURE_FRONTEND.md` and the main-merge decision. The next task is
+R8-3A; do not repeat the earlier source/network/browser blocker diagnosis.
 
 ## 1. Open the correct branch
 
@@ -89,16 +87,16 @@ present; do not scaffold again or ask for old application files.
 Read AGENTS.md, PROJECT_STATE.md, docs/CODEX_WORKFLOW.md, the new-build decision
 and the R8-1 evidence document. Follow the relevant Revision 8 requirements.
 
-The dependency/build/runtime/browser foundation is verified; read its current
+The R8-2 furniture frontend is verified; read its current
 evidence. Use npm ci, npm run check and npm run test:e2e with installed Chromium
 to reproduce it. Resolve real errors without suppressing checks.
 
-Continue R8-2 furniture collection discovery and detail presentation; improve
-media/typography and progressively author the required sample content, preserving
+Continue R8-3A: distinct memory-art and personal-art collection presentations
+and tier-aware sample detail pages. Progressively author the required content using
 reusable components, the dark logo-derived tokens and honest fixture labels.
 Do not start backend implementation before the visual-review gate.
 
-Only two fictional source products currently exist. Complete the specified
+Twelve fictional LARGE source products currently exist; ten lack approved visuals. Complete the specified
 120/36/42/24/40 source content progressively; do not claim full counts early.
 Use the known Drive sources first and give missing image/video prompts to the
 owner in the separate asset document. Do not generate a replacement logo.
@@ -114,7 +112,7 @@ remote SHA. Check deployment triggers before publishing. Never force-push or
 merge/deploy production. Report unrun/failed checks and blocked publishing honestly.
 
 At R8-5 provide the protected Vercel visual-preview handoff and pause backend
-work for owner review. This current R8-1 source is NOT that completed gate.
+work for owner review. The completed R8-2 furniture slice is NOT that completed gate.
 ```
 
 ## 4. Git, readiness and next sessions
@@ -132,7 +130,7 @@ the connector. A created commit object alone is not a branch update.
 
 The connected Vercel team returned no projects during this slice. Recheck later;
 this does not cover unrelated accounts. No project creation, paid activation, preview
-deployment or live-domain action occurred. The owner separately authorized PR #4
+deployment or live-domain action occurred. The owner separately authorized PRs #4 and #5
 merging accumulated work into main; later work continues on the development branch.
 Preview protection and build verification remain prerequisites; a preview flag
 and noindex are not access control.

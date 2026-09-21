@@ -1,6 +1,6 @@
 /**
  * HTTP regression checks against the actual installed, built Next.js server.
- * Run after `npm run build`: `node --test tools/frontend-runtime.test.mjs`.
+ * Run after `npm run build`: `npm run test:runtime` (Node 22 type stripping).
  * These checks do not execute browser JavaScript or verify hydration/layout.
  */
 import assert from 'node:assert/strict';
@@ -12,6 +12,7 @@ import { resolve } from 'node:path';
 import { setTimeout as delay } from 'node:timers/promises';
 import { fileURLToPath } from 'node:url';
 import { test } from 'node:test';
+import { concepts } from '../src/lib/catalogue.ts';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const nextBin = resolve(root, 'node_modules/next/dist/bin/next');
@@ -19,9 +20,9 @@ const fixtureRoutes = [
   '/collectible-design',
   '/memory-art',
   '/personal-art',
-  '/pieces/riverline-live-edge-dining-table',
-  '/pieces/basin-shallow-pour-coffee-table',
+  ...concepts.map(piece => `/pieces/${piece.slug}`),
 ];
+const fixtureNames = new RegExp(`\\b(?:${concepts.map(piece => piece.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})\\b`);
 const unknownRoutes = [
   '/not-an-existing-collection',
   '/pieces/not-an-existing-piece',
@@ -166,15 +167,15 @@ test('built frontend HTTP behavior (not browser or hydration verification)', { t
         assert.equal(response.status, 200);
         assertNoindex(response, '/');
         assert.match(html, /An atelier taking shape/);
-        assert.doesNotMatch(html, /Riverline|Basin/);
+        assert.doesNotMatch(html, fixtureNames);
       });
       for (const path of fixtureRoutes) {
         await t.test(`GET ${path} denies fixture content with HTTP 404`, async () => {
           const { response, html } = await getPage(origin, path);
           assert.equal(response.status, 404, `${path} must be denied in ${label}`);
           assertNoindex(response, path);
-          assert.doesNotMatch(html, /Riverline|Basin/);
-          assert.doesNotMatch(html, /<title>(?:Collectible design|Memory art|Personal art|Riverline|Basin)/i);
+          assert.doesNotMatch(html, fixtureNames);
+          assert.doesNotMatch(html, /<title>(?:Collectible design|Memory art|Personal art)/i);
         });
       }
     });

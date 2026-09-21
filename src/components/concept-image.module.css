@@ -1,0 +1,4 @@
+.fallback { display: flex; min-height: 260px; height: 100%; padding: 36px 20px; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: var(--surface); color: var(--muted); text-align: center; font-size: 14px; }
+.fill { position: absolute; inset: 0; min-height: 0; }
+.mark { width: 36px; height: 1px; background: var(--primary); margin-bottom: 14px; }
+.caption { max-width: 210px; font-size: 11px; line-height: 1.6; }

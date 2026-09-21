@@ -78,6 +78,9 @@ for (const route of routes) {
     await expectNoHorizontalOverflow(page);
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.screenshot({ path: testInfo.outputPath(`${route.name}.png`), fullPage: true });
+    if (route.path === "/") {
+      await page.screenshot({ path: testInfo.outputPath("home-viewport.png") });
+    }
     expect(consoleErrors, "No console errors on an existing preview route").toEqual([]);
   });
 }
