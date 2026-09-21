@@ -31,7 +31,7 @@ export function SiteFooter() {
       <div className={styles.brand}><Link href="/" className={styles.wordmark}>RivyaLivingArt</Link><p>Art for the space.<br />Art for the memory.<br />Art for the person.</p><span>Furniture first. Meaning at every scale.</span></div>
       {groups.map((group) => <nav key={group.title} aria-label={group.title}><h2>{group.title}</h2>{group.links.map((link) => <Link key={link.href} href={link.href}>{link.label}</Link>)}</nav>)}
     </div>
-    <div className={styles.meta}><p>Development preview · Fictional concepts and owner-review editorial drafts.</p><Link href="/preview/states">Interface state studies <span aria-hidden="true">↗</span></Link><Link href="/studio">Studio development status <span aria-hidden="true">↗</span></Link></div>
+    <div className={styles.meta}><p>Development preview · Fictional concepts and owner-review editorial drafts.</p><Link href="/preview/states">Interface state studies <span aria-hidden="true">↗</span></Link><Link href="/preview/studio">Studio visual preview <span aria-hidden="true">↗</span></Link></div>
   </footer>;
   return <footer className="site-footer">
     <div><p className="footer-brand">RivyaLivingArt</p><p className="muted">Art for the space. Art for the memory. Art for the person.</p></div>

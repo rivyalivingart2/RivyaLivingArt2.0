@@ -1,0 +1,11 @@
+.page { max-width: 900px; border: 1px solid var(--border); background: var(--surface); padding: clamp(25px,5vw,65px); }
+.eyebrow { color: var(--primary-hover); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+.status { display: inline-block; border: 1px solid var(--border); color: var(--muted); padding: 5px 9px; font-size: 10px; margin: 25px 0; }
+.page h1 { font-family: var(--font-body); font-size: clamp(29px,4vw,44px); font-weight: 500; line-height: 1.2; letter-spacing: -.04em; margin-bottom: 20px; }
+.description { color: var(--muted); font-size: 15px; max-width: 650px; }
+.note { border-left: 2px solid var(--primary); padding: 18px 22px; margin: 32px 0; background: var(--background); }
+.note h2 { font-family: var(--font-body); font-size: 14px; font-weight: 500; letter-spacing: 0; margin-bottom: 10px; }
+.note p { font-size: 12px; color: var(--muted); }
+.actions { display: flex; flex-wrap: wrap; gap: 20px; font-size: 12px; }
+.actions a { display: flex; align-items: center; gap: 25px; min-height: 44px; border-bottom: 1px solid var(--border); }
+.actions a:hover { color: var(--primary-hover); }

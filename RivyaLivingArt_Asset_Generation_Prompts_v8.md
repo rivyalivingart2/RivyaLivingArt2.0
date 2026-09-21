@@ -974,3 +974,220 @@ Retain the editorial-concept label after approval. Image appearance cannot estab
 resin chemistry, UV resistance, durability, manufacturing feasibility or a physical
 colour match. Genuine portfolio, workshop and people imagery still requires the
 owner's authentic approved source material.
+
+
+## R8-4A — twelve further furniture concept briefs (21 September 2026)
+
+The catalogue now contains 36 authored source fixtures: 24 LARGE, 6 MEDIUM and
+6 SMALL. Only DP001 and DP013 have mapped concept AVIFs. The twelve records below
+have no approved image mapping; all 34 unresolved product visuals stay explicitly
+pending. The existing Drive index lists `PRODUCT-HERO-010` as a candidate for
+DP004 Monolith, but that image has not been inspected or approved here. Inspect
+that owner-accessible source first; do not claim it matches the new record merely
+because its index name sounds relevant.
+
+**Shared request contract:** each request is P2, for its named collectible-detail
+hero, public card and Studio product thumbnail. Classification: fictional concept
+visualization, never documentary furniture, tested construction or a delivered
+client project. Desired aspect ratio is 4:5 with a native target of 2048×2560;
+preserve the actual native dimensions and do not pretend upscaling creates detail.
+No attached product reference is assumed. If an existing matching source is found,
+review and map it before generating a replacement. All twelve states are
+AWAITING_OWNER_OUTPUT, with no returned Drive ID or approved derivative.
+
+**Shared prompt constraints:** compose one unobstructed full object (or the named
+DP016 pair) in a quiet forest-dark studio setting with warm ivory side light and
+restrained bronze only where the concept requires it. Keep a believable contact
+shadow, calm perspective and useful margins; show the important top and supports.
+The sample dimensions are fictional proportion guides, not measurement labels,
+engineering constraints or evidence of manufacturing feasibility. Do not add
+chairs, people, logos, lettering, certificates, price labels, customer references,
+private drawings, complex styling or extra products. Do not invent a replacement
+brand mark, recolour an attached approved design, borrow an unrelated product or
+present the output as a photograph of actual stock. Return one original concept
+image. Keep the labelled visual-pending fallback until review and approval.
+
+### IMG04-DP003 — Verdant Split-Slab Dining Table
+
+**Placement:** `/pieces/verdant-split-slab-dining-table` hero/card and `DP003` Studio thumbnail.
+**Output:** `rivya-dp003-verdant-split-slab-dining-table-4x5-v01.png`.
+**Sample proportions:** 2300 × 1000 × 750 mm. **Reference:** none attached or approved.
+**State:** AWAITING_OWNER_OUTPUT; no returned source ID, review or mapping.
+
+```text
+Create an original fictional RivyaLivingArt concept visualization for DP003,
+Verdant Split-Slab Dining Table. Two long timber slabs with irregular inner edges separated by a slender restrained green resin channel; quiet metal supports below. The channel narrows and widens gently while both outer edges form a calm rectangular dining surface.
+Use 2300 × 1000 × 750 mm only as fictional proportion guidance; do not print dimensions
+or imply the pictured form is engineered, manufactured or available. Follow all
+shared R8-4A prompt constraints above and return one clean vertical 4:5 image.
+```
+
+### IMG04-DP004 — Monolith Long-Span Dining Table
+
+**Placement:** `/pieces/monolith-long-span-dining-table` hero/card and `DP004` Studio thumbnail.
+**Output:** `rivya-dp004-monolith-long-span-dining-table-4x5-v01.png`.
+**Sample proportions:** 3200 × 1100 × 760 mm. **Reference:** none attached or approved.
+**State:** AWAITING_OWNER_OUTPUT; no returned source ID, review or mapping.
+
+```text
+Create an original fictional RivyaLivingArt concept visualization for DP004,
+Monolith Long-Span Dining Table. A long, broad resin dining plane over two substantial mineral supports. Show the supports clearly below the top and give the horizontal form room to breathe. Keep the resin neutral and the mineral faces softly textured, with no exaggerated floating span.
+Use 3200 × 1100 × 760 mm only as fictional proportion guidance; do not print dimensions
+or imply the pictured form is engineered, manufactured or available. Follow all
+shared R8-4A prompt constraints above and return one clean vertical 4:5 image.
+```
+
+### IMG04-DP005 — Estuary Oval Dining Table
+
+**Placement:** `/pieces/estuary-oval-dining-table` hero/card and `DP005` Studio thumbnail.
+**Output:** `rivya-dp005-estuary-oval-dining-table-4x5-v01.png`.
+**Sample proportions:** 2400 × 1150 × 750 mm. **Reference:** none attached or approved.
+**State:** AWAITING_OWNER_OUTPUT; no returned source ID, review or mapping.
+
+```text
+Create an original fictional RivyaLivingArt concept visualization for DP005,
+Estuary Oval Dining Table. An oval timber dining top with a resin channel that gradually widens toward one end, between two distinct timber fields. Restrained metal supports stay visible beneath the softened ends. Let the grain and spreading channel create asymmetry within a balanced overall outline.
+Use 2400 × 1150 × 750 mm only as fictional proportion guidance; do not print dimensions
+or imply the pictured form is engineered, manufactured or available. Follow all
+shared R8-4A prompt constraints above and return one clean vertical 4:5 image.
+```
+
+### IMG04-DP006 — Canopy Round Dining Table
+
+**Placement:** `/pieces/canopy-round-dining-table` hero/card and `DP006` Studio thumbnail.
+**Output:** `rivya-dp006-canopy-round-dining-table-4x5-v01.png`.
+**Sample proportions:** 1500 mm diameter × 750 mm height. **Reference:** none attached or approved.
+**State:** AWAITING_OWNER_OUTPUT; no returned source ID, review or mapping.
+
+```text
+Create an original fictional RivyaLivingArt concept visualization for DP006,
+Canopy Round Dining Table. One round resin dining top with branching timber pieces separated by translucent intervals, above a central mineral pedestal. Show the circular edge and the pedestal clearly. The timber should form an original quiet arrangement, with open resin between pieces rather than a copied tree silhouette.
+Use 1500 mm diameter × 750 mm height only as fictional proportion guidance; do not print dimensions
+or imply the pictured form is engineered, manufactured or available. Follow all
+shared R8-4A prompt constraints above and return one clean vertical 4:5 image.
+```
+
+### IMG04-DP007 — Tidal Rectangular Dining Table
+
+**Placement:** `/pieces/tidal-rectangular-dining-table` hero/card and `DP007` Studio thumbnail.
+**Output:** `rivya-dp007-tidal-rectangular-dining-table-4x5-v01.png`.
+**Sample proportions:** 2500 × 1000 × 750 mm. **Reference:** none attached or approved.
+**State:** AWAITING_OWNER_OUTPUT; no returned source ID, review or mapping.
+
+```text
+Create an original fictional RivyaLivingArt concept visualization for DP007,
+Tidal Rectangular Dining Table. A rectangular timber dining surface interrupted by several restrained transverse resin bands, with metal supports visible underneath. The bands cross the grain direction; they are not a single conventional lengthwise river. Keep each band subtle and leave substantial timber fields between them.
+Use 2500 × 1000 × 750 mm only as fictional proportion guidance; do not print dimensions
+or imply the pictured form is engineered, manufactured or available. Follow all
+shared R8-4A prompt constraints above and return one clean vertical 4:5 image.
+```
+
+### IMG04-DP008 — Umber Twin-Base Dining Table
+
+**Placement:** `/pieces/umber-twin-base-dining-table` hero/card and `DP008` Studio thumbnail.
+**Output:** `rivya-dp008-umber-twin-base-dining-table-4x5-v01.png`.
+**Sample proportions:** 2600 × 1050 × 760 mm. **Reference:** none attached or approved.
+**State:** AWAITING_OWNER_OUTPUT; no returned source ID, review or mapping.
+
+```text
+Create an original fictional RivyaLivingArt concept visualization for DP008,
+Umber Twin-Base Dining Table. A warm timber-and-resin dining top on two broad timber supports. Keep the palette close to umber and warm natural grain, with restrained resin translucency rather than a bright coloured river. Show the full supports and the join between their visual masses and the top.
+Use 2600 × 1050 × 760 mm only as fictional proportion guidance; do not print dimensions
+or imply the pictured form is engineered, manufactured or available. Follow all
+shared R8-4A prompt constraints above and return one clean vertical 4:5 image.
+```
+
+### IMG04-DP009 — Lagoon Pedestal Dining Table
+
+**Placement:** `/pieces/lagoon-pedestal-dining-table` hero/card and `DP009` Studio thumbnail.
+**Output:** `rivya-dp009-lagoon-pedestal-dining-table-4x5-v01.png`.
+**Sample proportions:** 1600 × 1450 × 750 mm. **Reference:** none attached or approved.
+**State:** AWAITING_OWNER_OUTPUT; no returned source ID, review or mapping.
+
+```text
+Create an original fictional RivyaLivingArt concept visualization for DP009,
+Lagoon Pedestal Dining Table. A softly squared blue-green resin dining surface on one central mineral pedestal. Make the corners gently rounded without turning the outline into a circle. Keep the top’s calm translucent field visually distinct from the grounded pedestal and show the entire object unobstructed.
+Use 1600 × 1450 × 750 mm only as fictional proportion guidance; do not print dimensions
+or imply the pictured form is engineered, manufactured or available. Follow all
+shared R8-4A prompt constraints above and return one clean vertical 4:5 image.
+```
+
+### IMG04-DP010 — Ridge Bronze-Inlay Dining Table
+
+**Placement:** `/pieces/ridge-bronze-inlay-dining-table` hero/card and `DP010` Studio thumbnail.
+**Output:** `rivya-dp010-ridge-bronze-inlay-dining-table-4x5-v01.png`.
+**Sample proportions:** 2400 × 1000 × 755 mm. **Reference:** none attached or approved.
+**State:** AWAITING_OWNER_OUTPUT; no returned source ID, review or mapping.
+
+```text
+Create an original fictional RivyaLivingArt concept visualization for DP010,
+Ridge Bronze-Inlay Dining Table. A long timber dining top with a fine restrained bronze inlay running alongside a narrow resin seam, above quiet metal supports. The bronze is one precise line rather than a decorative gold flood. Preserve the distinction between timber grain, resin seam and fine inlay.
+Use 2400 × 1000 × 755 mm only as fictional proportion guidance; do not print dimensions
+or imply the pictured form is engineered, manufactured or available. Follow all
+shared R8-4A prompt constraints above and return one clean vertical 4:5 image.
+```
+
+### IMG04-DP011 — Dune Smoked-Resin Dining Table
+
+**Placement:** `/pieces/dune-smoked-resin-dining-table` hero/card and `DP011` Studio thumbnail.
+**Output:** `rivya-dp011-dune-smoked-resin-dining-table-4x5-v01.png`.
+**Sample proportions:** 2200 × 950 × 750 mm. **Reference:** none attached or approved.
+**State:** AWAITING_OWNER_OUTPUT; no returned source ID, review or mapping.
+
+```text
+Create an original fictional RivyaLivingArt concept visualization for DP011,
+Dune Smoked-Resin Dining Table. A muted timber dining surface with a smoked-resin band and restrained metal supports. Use low-saturation warm timber and subtly translucent smoky resin, with enough side light to distinguish the edge without making it glow. Avoid substituting a vivid river-table palette.
+Use 2200 × 950 × 750 mm only as fictional proportion guidance; do not print dimensions
+or imply the pictured form is engineered, manufactured or available. Follow all
+shared R8-4A prompt constraints above and return one clean vertical 4:5 image.
+```
+
+### IMG04-DP012 — Grove Communal Dining Table
+
+**Placement:** `/pieces/grove-communal-dining-table` hero/card and `DP012` Studio thumbnail.
+**Output:** `rivya-dp012-grove-communal-dining-table-4x5-v01.png`.
+**Sample proportions:** 3600 × 1100 × 760 mm. **Reference:** none attached or approved.
+**State:** AWAITING_OWNER_OUTPUT; no returned source ID, review or mapping.
+
+```text
+Create an original fictional RivyaLivingArt concept visualization for DP012,
+Grove Communal Dining Table. A long communal timber table composed visually of several timber sections joined by narrow resin intervals, over repeated metal supports. Let the changing grain and repeated supports form a rhythm along the length. Show the whole table with no occupants or implied commercial venue.
+Use 3600 × 1100 × 760 mm only as fictional proportion guidance; do not print dimensions
+or imply the pictured form is engineered, manufactured or available. Follow all
+shared R8-4A prompt constraints above and return one clean vertical 4:5 image.
+```
+
+### IMG04-DP015 — Contour Oval Coffee Table
+
+**Placement:** `/pieces/contour-oval-coffee-table` hero/card and `DP015` Studio thumbnail.
+**Output:** `rivya-dp015-contour-oval-coffee-table-4x5-v01.png`.
+**Sample proportions:** 1350 × 800 × 350 mm. **Reference:** none attached or approved.
+**State:** AWAITING_OWNER_OUTPUT; no returned source ID, review or mapping.
+
+```text
+Create an original fictional RivyaLivingArt concept visualization for DP015,
+Contour Oval Coffee Table. A low oval coffee table with related layered resin contours visible within its top, above a quiet mineral base. The contours suggest an abstract map without exact concentric rings or printed lines. A slightly elevated three-quarter view should reveal both the internal pattern and the low base.
+Use 1350 × 800 × 350 mm only as fictional proportion guidance; do not print dimensions
+or imply the pictured form is engineered, manufactured or available. Follow all
+shared R8-4A prompt constraints above and return one clean vertical 4:5 image.
+```
+
+### IMG04-DP016 — Drift Nesting Coffee Table
+
+**Placement:** `/pieces/drift-nesting-coffee-table` hero/card and `DP016` Studio thumbnail.
+**Output:** `rivya-dp016-drift-nesting-coffee-table-4x5-v01.png`.
+**Sample proportions:** larger 1100 × 700 × 400 mm; tentative smaller 700 × 500 × 300 mm. **Reference:** none attached or approved.
+**State:** AWAITING_OWNER_OUTPUT; no returned source ID, review or mapping.
+
+```text
+Create an original fictional RivyaLivingArt concept visualization for DP016,
+Drift Nesting Coffee Table. Two related low timber-and-resin tables at different heights, each with visible metal supports. The larger surface overlaps a small part of its smaller companion. Their resin gestures are related but not a continuous image. Keep both outlines and support sets legible; show a fictional arrangement rather than demonstrating a nesting mechanism.
+Use larger 1100 × 700 × 400 mm; tentative smaller 700 × 500 × 300 mm only as fictional proportion guidance; do not print dimensions
+or imply the pictured form is engineered, manufactured or available. Follow all
+shared R8-4A prompt constraints above and return one clean vertical 4:5 image.
+```
+
+These briefs add no generated or downloaded assets. The owner returns each original
+Drive file with its request/DP ID for inspection, provenance and rights review,
+then approval and a modest public derivative. A reviewed concept image remains a
+concept; it does not prove approved materials, production, stock or construction.
