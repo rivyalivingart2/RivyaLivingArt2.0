@@ -58,7 +58,7 @@ export function MemoryProductCard({ piece, index = 0 }: { piece: MemoryConcept; 
       </dl>
       <div className={styles.memoryBottom}>
         <div><span className={styles.sampleLabel}>Sample specification &amp; price</span><p>{formatPrice(piece)}</p></div>
-        <Link href={`/pieces/${piece.slug}#guidance`} className="text-link" aria-label={`Preserve Your Memory — ${piece.name}`}>Preserve Your Memory <Arrow /></Link>
+        <Link href={{ pathname: "/preserve", query: { piece: piece.slug } }} className="text-link" aria-label={`Preserve Your Memory — ${piece.name}`}>Preserve Your Memory <Arrow /></Link>
       </div>
     </article>
   );
@@ -81,7 +81,7 @@ export function PersonalArtProductCard({ piece }: { piece: PersonalConcept }) {
       </div>
       <div className={styles.personalBottom}>
         <div><span className={styles.sampleLabel}>Sample price</span><p>{formatPrice(piece)}</p></div>
-        <Link href={`/pieces/${piece.slug}#guidance`} className="text-link" aria-label={`Personalize & Enquire — ${piece.name}`}>Personalize &amp; Enquire <Arrow /></Link>
+        <Link href={{ pathname: "/personalize", query: { piece: piece.slug, ...(piece.personal.variants[0] ? { variant: piece.personal.variants[0].id } : {}) } }} className="text-link" aria-label={`Personalize & Enquire — ${piece.name}`}>Personalize &amp; Enquire <Arrow /></Link>
       </div>
     </article>
   );

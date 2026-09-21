@@ -94,13 +94,13 @@ export function SiteHeader() {
   return <header className="site-header">
     <Link href="/" className="brand-link" aria-label="RivyaLivingArt home"><Wordmark /></Link>
     <nav className="desktop-nav" aria-label="Main navigation">{links.map((link) => <Link key={link.href} href={link.href} aria-current={pathname === link.href ? "page" : undefined}>{link.label}</Link>)}</nav>
-    <Link href="/#commission" className="header-cta">Commission a piece <Arrow /></Link>
+    <Link href="/commission" className="header-cta">Commission a piece <Arrow /></Link>
     <button ref={trigger} className="menu-trigger" type="button" onClick={openMenu} aria-haspopup="dialog" aria-expanded={menuOpen} aria-controls="mobile-navigation"><span>Menu</span><span className="menu-lines" aria-hidden="true" /></button>
     <dialog ref={dialog} id="mobile-navigation" className="mobile-navigation" aria-labelledby="mobile-nav-heading" onClose={onMenuClose} onKeyDown={containMenuFocus} onCancel={() => { closeReason.current = "dismiss"; }} onClick={(event) => { if (event.target === event.currentTarget) closeMenu(); }}>
       <div className="mobile-panel">
         <div className="mobile-panel-top"><h2 id="mobile-nav-heading" className="eyebrow">Explore RivyaLivingArt</h2><button type="button" className="close-menu" onClick={() => closeMenu()} autoFocus>Close <span aria-hidden="true">×</span></button></div>
         <nav aria-label="Mobile navigation">{links.map((link, index) => <Link key={link.href} href={link.href} onClick={() => closeMenu("navigate")} aria-current={pathname === link.href ? "page" : undefined}><span className="eyebrow">0{index + 1}</span>{link.label}<Arrow /></Link>)}</nav>
-        <Link href="/#commission" className="button button-primary" onClick={() => closeMenu("navigate")}>Commission a piece <Arrow /></Link>
+        <Link href="/commission" className="button button-primary" onClick={() => closeMenu("navigate")}>Commission a piece <Arrow /></Link>
         <p className="muted">Furniture. Memory. Personal meaning.</p>
       </div>
     </dialog>

@@ -2,11 +2,16 @@
 
 **Repository:** `rivyalivingart2/RivyaLivingArt2.0`  
 **Work branch:** `codex/r8-first-frontend`  
-**Stage:** R8-3A memory/personal UI verified in the actual browser; next is R8-3B.
+**Stage:** R8-3B form development; testing deferred until after backend/database
+integration. Next: R8-3C public pages.
 
 This is a new application, as confirmed by the owner on 21 September 2026.
 The earlier Markdown-only state was intentional. [The owner decision](docs/decisions/2026-09-21-new-build.md)
 supersedes the old source-absence guard without discarding documents or history.
+The [latest development-first decision](docs/decisions/2026-09-21-development-first.md)
+moves all testing-related work to final QA after integration. It also records the
+completed R8-3A main merge through PR #7 at
+`0999b3b0a873e0745231f119c1567b3f8cd79fd8`. New work stays on development.
 
 ## What exists now
 
@@ -20,12 +25,18 @@ Drive collection. They are AI concepts, not real product photographs or stock.
 Twenty-two studies have explicit visual-pending states; higher-resolution media remains
 unavailable. No unrelated images are assigned to those products.
 
+R8-3B adds typed client-only form journeys at `/commission?piece=slug`,
+`/preserve?piece=slug` and `/personalize?piece=slug&variant=id`: local validation,
+summary, optional local reference-image preview and an explicitly simulated
+receipt. This source is untested. The 24 labelled catalogue fixtures are unchanged.
+
 **Not complete:** full frontend, staff login, CMS,
 database/storage, enquiries, imports, full demo pack
 or protected visual-preview handoff. The existing Vercel production deployment
-serves the intended holding screen. No code in this slice collects personal data or sends messages.
+serves the intended holding screen. Form values stay in local UI state; there is
+no real enquiry submission, upload, persistence or outgoing message.
 
-Read [Codex workflow](docs/CODEX_WORKFLOW.md), [current R8-3A verification](docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md)
+Read [Codex workflow](docs/CODEX_WORKFLOW.md), [R8-3B development status](docs/R8-3B_INQUIRY_FRONTEND.md)
 and [current checkpoint](PROJECT_STATE.md) before continuing.
 
 ## Run locally
@@ -34,28 +45,22 @@ Use Node 22 and npm 10.9.2. The committed lockfile was resolved from the npm reg
 and verified with a clean install. No application dependency pins were changed.
 
 ```sh
-npm ci
-npm run lint
-npm run typecheck
-npm test
-npm run test:preflight
-npm run build
-npm run test:runtime
-npx playwright install chromium
-npm run test:e2e
 npm run dev
 ```
 
-`npm run check` runs lint, typecheck, unit, preflight, build and HTTP regression
-checks. `npm run test:e2e` separately runs the actual Chromium browser suite after
-browser installation and a build: 146 passed across four sizes, with 10 mobile-only
-cases inapplicable on desktop/tablet. Typecheck generates Next route types first,
-so it works before the first build. Runtime tests start the real built app on
-loopback; they do not exercise a
-browser, React hydration, desktop/mobile layout or the mobile dialog.
+The existing lockfile/dependencies support development; R8-3B adds no dependency.
+Use `npm run typecheck` only as needed to resolve implementation wiring. Compiler
+feedback alone does not establish UI_READY or TESTED.
 
-Local development displays the labelled visual study. For a local built-server
-review after a successful build: `RIVYA_VISUAL_PREVIEW=1 npm start`. Do not set
+All lint/test/preflight, build-verification and browser/visual QA work is deferred
+until after backend/database integration. Existing test sources and scripts remain
+intact. For that final stage, `npm run check` runs lint, typecheck, unit, preflight,
+build and HTTP checks; `npm run test:e2e` runs Chromium after a build and browser
+installation. Historical R8-3A results are in its [evidence document](docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md)
+and do not certify R8-3B.
+
+Local development displays the labelled visual study. The retained built-server
+preview command is `RIVYA_VISUAL_PREVIEW=1 npm start` after a build. Do not set
 `VERCEL_ENV` manually to bypass a production restriction. An online non-production
 preview additionally requires verified deployment protection. Production always
 receives a holding page for these fixture routes.
@@ -76,10 +81,12 @@ receives a holding page for these fixture routes.
 - `docs/R8-1_DEPENDENCY_VERIFICATION.md`: historical install/build/runtime evidence.
 - `docs/R8-1_BROWSER_VERIFICATION.md`: preserved foundation browser evidence.
 - `docs/R8-2_FURNITURE_FRONTEND.md`: furniture slice features, results and screenshots.
-- `docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md`: current features, checks and screenshots.
+- `docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md`: historical collection/detail checks and screenshots.
+- `docs/R8-3B_INQUIRY_FRONTEND.md`: current form source and deferred-QA boundary.
 - `docs/VERCEL_RUNTIME_ALIGNMENT.md`: verified runtime mismatch and exact remaining setting.
 - `docs/decisions/2026-09-21-main-merge.md`: owner-authorized PR #4 main integration.
 - `docs/decisions/2026-09-21-new-build.md`: confirmed initial-creation decision.
+- `docs/decisions/2026-09-21-development-first.md`: latest merge and final-QA timing override.
 - `docs/R8-0_AUDIT.md` and `docs/R8-0_REMOTE_VERIFICATION.md`: unchanged history.
 - `AGENTS.md`, `PROJECT_STATE.md`: active guidance and dated checkpoints.
 
@@ -95,11 +102,12 @@ receives a holding page for these fixture routes.
 - [Asset prompts](RivyaLivingArt_Asset_Generation_Prompts_v8.md)
 - [Original AGENTS addendum](RivyaLivingArt_AGENTS_Addendum_v8.md)
 
-Frontend and Studio visuals precede real integrations. R8-5 gives an owner-controlled
-protected visual-preview handoff; R8-11 addresses the complete application. Neither
-milestone has been reached. The owner separately authorized PRs #4 and #5 merging accumulated
-work into main; PR #6 is also now merged. New slices continue on the development
-branch. Vercel Git integration now exists, so development pushes may build previews
+Frontend and Studio development precede real integrations. R8-5 remains an
+owner-controlled protected frontend-preview handoff; it is not a full-QA gate under
+the latest instruction. Do not invent owner visual approval. Final QA follows the
+backend/database integration, before the R8-11 full deployment handoff. Neither
+handoff has been reached. R8-3A is merged through PR #7; new slices continue on the
+development branch. Vercel Git integration exists, so development pushes may build previews
 and main pushes may deploy production. This task changed no deployment settings or
 domains. The Node22 project-setting alignment is recorded in the runtime note.
 Exact business rules and exclusions remain in the brief.
