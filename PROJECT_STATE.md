@@ -1,5 +1,34 @@
 # RivyaLivingArt project state
 
+## R8 checkpoint — 2026-09-21 (R8-0 remote verification and Codex handoff)
+
+- **Phase/slice:** R8-0 follow-up; repository tooling and handoff, not application UI.
+- **Confirmed destination:** `rivyalivingart2/RivyaLivingArt2.0`.
+- **Baseline main SHA:** `5500fe9b92fb48d015dbb873afea1434d0bd8c18`.
+- **Work branch:** `codex/r8-repository-handoff`, created from the baseline.
+- **Observed source:** both pre-existing branches contain the same 13 documentation
+  files and no application manifest, lockfile, routes, components or backend.
+- **Access:** GitHub connector read/write capability verified. Direct container Git
+  clone failed DNS resolution; this is not evidence that connector publishing fails.
+- **Completed files:** `docs/CODEX_WORKFLOW.md`, `docs/R8-0_REMOTE_VERIFICATION.md`,
+  `tools/codex-preflight.mjs`, `tools/codex-preflight.test.mjs`; current README,
+  AGENTS guidance and this appended checkpoint updated. Earlier audit retained.
+- **Tests:** Node syntax checks passed; 12 preflight tests passed, 0 failed. Tests
+  use temporary local Git repositories and do not run application code or networks.
+- **UI_READY:** No; **BACKEND_CONNECTED:** No; **application TESTED:** No.
+- **Fixtures/media:** 0 application fixtures, 0 persisted rows, no Drive imports.
+- **Environment/deployment:** no CI/deployment files in baseline; connected Vercel
+  context returned no projects. No Vercel changes, deployments, paid activation,
+  migrations, production merge, or main-branch update authorized/performed.
+- **Commit/push state at writing:** files prepared/tested; commit and remote-ref
+  verification to be recorded in the completed task report. Do not equate this
+  planned publication with evidence; query the actual branch SHA.
+- **Unresolved:** source restoration or explicit authorization to initialize the
+  first application in this confirmed repo. The URL is no longer a missing input.
+- **Next exact instruction:** resolve that one source decision; then perform the
+  first source-backed R8-1 frontend slice. Follow `docs/CODEX_WORKFLOW.md`; do not
+  re-run a missing-remote loop or silently override the no-replacement rule.
+
 ## R8 checkpoint — 2026-09-21 (R8-0 audit)
 
 - **Phase/slice and stage:** R8-0 grounded audit; documentation-only checkpoint.

@@ -27,3 +27,27 @@ for the slices to which they apply.
 
 More detailed rules remain in `RivyaLivingArt_AGENTS_Addendum_v8.md`; this file
 integrates its operational guidance without duplicating the full master brief.
+
+## Confirmed repository and Codex handoff — 21 September 2026
+
+The owner has confirmed `rivyalivingart2/RivyaLivingArt2.0` as the destination.
+Read `docs/CODEX_WORKFLOW.md` and `docs/R8-0_REMOTE_VERIFICATION.md`. Remote identity
+is no longer unknown; absence of application source is a separate unresolved
+condition. Do not copy the earlier local checkout's missing-remote diagnosis into
+new reports after verifying a working origin. Never replace a different origin.
+
+Current tooling checks (no application package manifest is required):
+
+```sh
+node --check tools/codex-preflight.mjs
+node --test tools/codex-preflight.test.mjs
+node tools/codex-preflight.mjs --report-only
+```
+
+The preflight is read-only, not a deployment approval or application test. Do not
+initialize a framework merely to make it pass. An explicit owner decision to
+initialize the first app here may narrowly supersede the source-absence guard;
+record that decision once, preserve existing history and then begin frontend work.
+Until source is restored or that decision arrives, complete only safe tooling and
+handoff tasks, and ask one precise source/initialization question rather than
+rebuilding prompt packs or repeatedly asking for the confirmed repository URL.
