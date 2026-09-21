@@ -9,7 +9,8 @@ const links = [
   { href: "/collectible-design", label: "Collectible design" },
   { href: "/memory-art", label: "Memory art" },
   { href: "/personal-art", label: "Personal art & gifts" },
-  { href: "/#atelier", label: "The atelier" },
+  { href: "/journal", label: "Journal" },
+  { href: "/search", label: "Search" },
 ] as const;
 
 /** Text fallback, not a reproduction of the owner's logo artwork. */

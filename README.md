@@ -2,16 +2,17 @@
 
 **Repository:** `rivyalivingart2/RivyaLivingArt2.0`  
 **Work branch:** `codex/r8-first-frontend`  
-**Stage:** R8-3B form development; testing deferred until after backend/database
-integration. Next: R8-3C public pages.
+**Stage:** R8-3C public-page development; testing deferred until after backend/database
+integration. Next: R8-3D remaining visual states.
 
 This is a new application, as confirmed by the owner on 21 September 2026.
 The earlier Markdown-only state was intentional. [The owner decision](docs/decisions/2026-09-21-new-build.md)
 supersedes the old source-absence guard without discarding documents or history.
 The [latest development-first decision](docs/decisions/2026-09-21-development-first.md)
-moves all testing-related work to final QA after integration. It also records the
-completed R8-3A main merge through PR #7 at
-`0999b3b0a873e0745231f119c1567b3f8cd79fd8`. New work stays on development.
+moves all testing-related work to final QA after integration. The owner subsequently
+authorized the [R8-3B merge](docs/decisions/2026-09-21-r8-3b-main-merge.md) through
+PR #8 at `cd6f91e55f8153b55a8c4af1f4329af1be81f38d`, verified from the remote
+main reference. New R8-3C work stays on development.
 
 ## What exists now
 
@@ -28,7 +29,12 @@ unavailable. No unrelated images are assigned to those products.
 R8-3B adds typed client-only form journeys at `/commission?piece=slug`,
 `/preserve?piece=slug` and `/personalize?piece=slug&variant=id`: local validation,
 summary, optional local reference-image preview and an explicitly simulated
-receipt. This source is untested. The 24 labelled catalogue fixtures are unchanged.
+receipt. R8-3C adds journal/article, FAQ, about/process/materials/care, portfolio,
+contact, architect enquiry and catalogue-search pages. Its typed editorial content
+includes six complete labelled article drafts (DB001–DB006), 42 FAQ answers and
+three fictional project studies. The forms and new public pages remain untested.
+The 24 labelled catalogue fixtures are unchanged; 30 article drafts and the complete
+120-product/24-testimonial/40-scenario targets remain ahead.
 
 **Not complete:** full frontend, staff login, CMS,
 database/storage, enquiries, imports, full demo pack
@@ -36,8 +42,9 @@ or protected visual-preview handoff. The existing Vercel production deployment
 serves the intended holding screen. Form values stay in local UI state; there is
 no real enquiry submission, upload, persistence or outgoing message.
 
-Read [Codex workflow](docs/CODEX_WORKFLOW.md), [R8-3B development status](docs/R8-3B_INQUIRY_FRONTEND.md)
-and [current checkpoint](PROJECT_STATE.md) before continuing.
+Read [Codex workflow](docs/CODEX_WORKFLOW.md), [R8-3C development status](docs/R8-3C_PUBLIC_PAGES.md)
+and [current checkpoint](PROJECT_STATE.md) before continuing. The
+[R8-3B form boundary](docs/R8-3B_INQUIRY_FRONTEND.md) remains applicable.
 
 ## Run locally
 
@@ -48,7 +55,7 @@ and verified with a clean install. No application dependency pins were changed.
 npm run dev
 ```
 
-The existing lockfile/dependencies support development; R8-3B adds no dependency.
+The existing lockfile/dependencies support development; R8-3C adds no dependency.
 Use `npm run typecheck` only as needed to resolve implementation wiring. Compiler
 feedback alone does not establish UI_READY or TESTED.
 
@@ -57,7 +64,7 @@ until after backend/database integration. Existing test sources and scripts rema
 intact. For that final stage, `npm run check` runs lint, typecheck, unit, preflight,
 build and HTTP checks; `npm run test:e2e` runs Chromium after a build and browser
 installation. Historical R8-3A results are in its [evidence document](docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md)
-and do not certify R8-3B.
+and do not certify R8-3B or R8-3C.
 
 Local development displays the labelled visual study. The retained built-server
 preview command is `RIVYA_VISUAL_PREVIEW=1 npm start` after a build. Do not set
@@ -67,9 +74,9 @@ receives a holding page for these fixture routes.
 
 ## Source and document map
 
-- `src/app/`: App Router layouts, collection/concept pages and system views.
+- `src/app/`: App Router layouts, catalogue, local enquiry, editorial and system views.
 - `src/components/`: reusable first public components; `src/styles/`: semantic tokens.
-- `src/lib/`: 24 typed source concepts, server-side query helpers and preview policy.
+- `src/lib/`: typed catalogue/editorial fixtures, local form contracts, query helpers and preview policy.
 - `src/styles/fonts/`: local WOFF2 files, original OFL licenses and hash manifest.
 - `public/media/concepts/`: two small preview derivatives, not original masters.
 - `tests/`: dependency-free fixture/policy/source-contract tests.
@@ -82,11 +89,13 @@ receives a holding page for these fixture routes.
 - `docs/R8-1_BROWSER_VERIFICATION.md`: preserved foundation browser evidence.
 - `docs/R8-2_FURNITURE_FRONTEND.md`: furniture slice features, results and screenshots.
 - `docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md`: historical collection/detail checks and screenshots.
-- `docs/R8-3B_INQUIRY_FRONTEND.md`: current form source and deferred-QA boundary.
-- `docs/VERCEL_RUNTIME_ALIGNMENT.md`: verified runtime mismatch and exact remaining setting.
+- `docs/R8-3B_INQUIRY_FRONTEND.md`: form source and deferred-QA boundary.
+- `docs/R8-3C_PUBLIC_PAGES.md`: current public-page source, content counts and deferred QA.
+- `docs/VERCEL_RUNTIME_ALIGNMENT.md`: current Node22 alignment and historical mismatch diagnosis.
 - `docs/decisions/2026-09-21-main-merge.md`: owner-authorized PR #4 main integration.
 - `docs/decisions/2026-09-21-new-build.md`: confirmed initial-creation decision.
-- `docs/decisions/2026-09-21-development-first.md`: latest merge and final-QA timing override.
+- `docs/decisions/2026-09-21-development-first.md`: final-QA timing override.
+- `docs/decisions/2026-09-21-r8-3b-main-merge.md`: owner-authorized PR #8 main integration.
 - `docs/R8-0_AUDIT.md` and `docs/R8-0_REMOTE_VERIFICATION.md`: unchanged history.
 - `AGENTS.md`, `PROJECT_STATE.md`: active guidance and dated checkpoints.
 
@@ -106,8 +115,9 @@ Frontend and Studio development precede real integrations. R8-5 remains an
 owner-controlled protected frontend-preview handoff; it is not a full-QA gate under
 the latest instruction. Do not invent owner visual approval. Final QA follows the
 backend/database integration, before the R8-11 full deployment handoff. Neither
-handoff has been reached. R8-3A is merged through PR #7; new slices continue on the
+handoff has been reached. R8-3B is merged through PR #8; new slices continue on the
 development branch. Vercel Git integration exists, so development pushes may build previews
 and main pushes may deploy production. This task changed no deployment settings or
-domains. The Node22 project-setting alignment is recorded in the runtime note.
+domains. Read-only inspection now confirms the project Node22 setting is aligned;
+this task did not change it. The runtime note preserves the earlier diagnosis.
 Exact business rules and exclusions remain in the brief.

@@ -1,12 +1,31 @@
 # Vercel runtime alignment — 21 September 2026
 
-## Diagnosis
+## Current status — R8-3C continuation
+
+Read-only `get_project` inspection of the same project now returns
+`nodeVersion: "22.x"`. The project default and repository requirement are aligned.
+The earlier dashboard-alignment action is therefore resolved in the current
+project configuration; this task did not change that setting. Existing deployment
+records may still show the Node24 default captured at their creation.
+
+Deployment protection remains reported enabled with
+`deploymentType: "all_except_custom_domains"`. The owner-authorized R8-3B PR #8
+merge updated main to `cd6f91e55f8153b55a8c4af1f4329af1be81f38d`, verified
+from the remote ref. This can trigger the existing Vercel production build. No
+manual deployment, environment/protection mutation or domain change was made.
+Deployment readiness, compiler feedback and deferred application QA are distinct;
+the alignment observation does not establish that R8-3B or R8-3C has been tested.
+
+The following diagnosis and setting instructions record the earlier state and are
+retained for continuity. They are no longer an outstanding owner action.
+
+## Historical diagnosis
 
 The owner supplied a successful Vercel deployment screenshot with Node.js `22.x`
 beside a struck-through `24.x`. Read-only inspection of project
 `rivya-living-art2-0` (`prj_J90SIW3OHaXYsmhan527F4n8PYUc`) confirmed its project
-default is **24.x**. The repository deliberately requires **`>=22.16.0 <23`** in
-`package.json`, with `.nvmrc` set to `22`. Those settings select the tested Node 22
+default was **24.x** at that earlier inspection. The repository deliberately
+requires **`>=22.16.0 <23`** in `package.json`, with `.nvmrc` set to `22`. Those settings select the tested Node 22
 major instead of the project default; the screenshot is a settings disagreement,
 not a failed deployment.
 
@@ -15,7 +34,7 @@ that the dashboard setting applies to new deployments:
 [Supported Node.js versions](https://vercel.com/docs/functions/runtimes/node-js/node-js-versions).
 Do not widen the engine range to Node 24 just to hide the warning.
 
-## Exact remaining setting change
+## Historical setting change instructions — now resolved
 
 In the existing Vercel project:
 

@@ -735,3 +735,121 @@ alt text, crops and modest delivery derivatives. Record any visible design
 difference instead of silently changing the fixture or treating a generated image
 as proof of construction. Source review, rights confirmation and mapping remain
 outstanding for all twelve slots in this checkpoint.
+
+## R8-3C — journal editorial imagery, first six drafts
+
+**Checkpoint: 21 September 2026.** DB001–DB006 are now authored source drafts;
+the following imagery remains **AWAITING_OWNER_OUTPUT / NOT APPROVED**. The journal
+currently uses original CSS editorial cover shapes, labelled as image-pending,
+rather than pretending these photographs exist. No image was generated, downloaded
+or added in this slice. The three portfolio studies reuse Riverline/Basin only as
+labelled object concepts; they are not installation photographs. The memory study
+keeps its existing Vow visual-pending state and existing product-image brief.
+
+All six journal requests: one original fictional editorial visualization, **3:2**,
+target native **2400×1600** or the highest available native resolution. Leave
+comfortable crop margins; keep the subject readable at card scale. Use forest-dark,
+warm ivory and restrained bronze surroundings with soft directional light. No
+logos, readable text, measurements, people, private homes, client documents,
+brand imitation, documentary workshop claims or fabrication/performance claims.
+Do not depict a named catalogue product without its approved reference or silently
+change that product's shape or colour. These are editorial illustrations only.
+Record actual returned dimensions, generation source and rights before approval.
+
+### JOURNAL-DB001 — A Room Begins with a Statement Table
+
+**Output:** `rivya-journal-db001-statement-table-3x2-v01.png`  
+**Placement:** DB001 journal cover/card; editorial illustration, not a project image.
+
+```text
+Create an original fictional interior study centred on one anonymous sculptural
+dining table. Show the relationship between a long table silhouette, a calm wall,
+daylight and generous visible floor space. The table should feel like a visual
+anchor without filling the room. Use a restrained wood-and-resin material direction,
+with no claim that it matches an available product. Keep circulation visually open,
+without measurement marks or a promised seating count. Compose at eye level with
+the whole object visible and quiet negative space around it. Follow the shared
+R8-3C journal constraints. Return one 3:2 image; this is an imagined design study.
+```
+
+### JOURNAL-DB002 — Reading the Grain
+
+**Output:** `rivya-journal-db002-grain-composition-3x2-v01.png`  
+**Placement:** DB002 journal cover/card; material art-direction study.
+
+```text
+Create an original fictional editorial close view of a wood-grain rhythm beside
+a restrained translucent resin field. Show two visual languages meeting along a
+considered edge: irregular natural lines and a quieter area of depth. Soft raking
+light should reveal composition without wet-look glare. Leave enough context to
+read this as a visual material study, not a microscopy image or a verified product
+sample. No tools, hands, labels, performance symbols or documentary workshop setting.
+Follow the shared R8-3C journal constraints. Return one clean horizontal 3:2 image.
+```
+
+### JOURNAL-DB003 — A Dining-Table Planning Notebook
+
+**Output:** `rivya-journal-db003-table-shapes-3x2-v01.png`  
+**Placement:** DB003 journal cover/card; conceptual composition, not a scale drawing.
+
+```text
+Create an original editorial still life of three simple table-form maquettes:
+one round, one oval and one rectangular, arranged on an unmarked warm ivory surface.
+Use a consistent neutral material so the outlines are the subject. Photograph the
+imagined objects from an elevated oblique viewpoint with soft shadows and restrained
+forest-dark surroundings. Preserve clear separation between forms. No room plan,
+dimensions, chairs, seating claims or readable notebook text. These are fictional
+composition models, not buildable designs. Follow the shared R8-3C constraints and
+return one horizontal 3:2 illustration.
+```
+
+### JOURNAL-DB004 — Coffee Tables as Sculptural Objects
+
+**Output:** `rivya-journal-db004-low-table-silhouette-3x2-v01.png`  
+**Placement:** DB004 journal cover/card; anonymous furniture concept.
+
+```text
+Create an original fictional low-table study that emphasizes silhouette and the
+negative space beneath and around the top. Use an anonymous softly curved form,
+a restrained dark material direction and a lightly suggested seating edge in the
+background for composition only. Show the full table without cropping its base.
+Use quiet side light and a low viewpoint; avoid ornate decoration, lifestyle props
+or a claim that the scene is a completed interior. No exact catalogue-product copy.
+Follow the shared R8-3C journal constraints. Return a single horizontal 3:2 image.
+```
+
+### JOURNAL-DB005 — The Quiet Role of a Side Table
+
+**Output:** `rivya-journal-db005-side-table-3x2-v01.png`  
+**Placement:** DB005 journal cover/card; fictional reading-corner study.
+
+```text
+Create an original fictional composition of a modest side table beside the edge
+of an anonymous reading chair. A closed unlabelled book may suggest a role without
+crowding the scene. Emphasize the table's outline, the relationship of surfaces and
+the empty space between the two objects. Use warm neutral surroundings, a forest
+shadow and a restrained material accent. No person, visible private home, real
+client story, comfort guarantee or product-identifying design copied from elsewhere.
+Follow the shared R8-3C constraints and return one horizontal 3:2 illustration.
+```
+
+### JOURNAL-DB006 — An Entryway Built Around One Console
+
+**Output:** `rivya-journal-db006-console-arrival-3x2-v01.png`  
+**Placement:** DB006 journal cover/card; fictional threshold composition.
+
+```text
+Create an original fictional entryway study with one slender anonymous console
+against a calm wall and an open passage visible beside it. Let horizontal rhythm,
+quiet shadow and a single unbranded sculptural object establish the composition.
+Avoid mirrors that reveal people or an identifiable home. The console should be
+fully visible with an understated wood/resin visual direction; do not reproduce a
+named catalogue object without an approved reference. No installation or mounting
+hardware claims, measurements or completed-project framing. Follow the shared
+R8-3C journal constraints and return one horizontal 3:2 editorial illustration.
+```
+
+Do not map returned artwork to product galleries. Review these as editorial assets,
+retain a visible concept label, and record any crop/derivative decisions after the
+owner returns the source. Portfolio installation photography, artist/studio portraits
+and documentary fabrication media still require genuine owner-approved sources.

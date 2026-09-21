@@ -3,6 +3,7 @@ import { collections, conceptsForTier } from "@/lib/catalogue";
 import { ConceptCard } from "@/components/concept-card";
 import { ConceptImage } from "@/components/concept-image";
 import { Arrow } from "@/components/ui/arrow";
+import { JournalSelection } from "@/components/journal";
 import styles from "./homepage.module.css";
 
 const directions = [
@@ -51,8 +52,10 @@ export function Homepage() {
         <article><p className="eyebrow">03 / Form</p><h3>Presence, with purpose.</h3><p>Every concept begins with how a piece sits within a room. Proportion and practical details belong in the same conversation.</p></article>
       </div>
       <p className={styles.materialCaption}>A design narrative for these fictional studies. Materials and construction would require confirmation for a real piece.</p>
+      <div className={styles.editorialLinks}><Link className="text-link" href="/about">Our point of view <Arrow /></Link><Link className="text-link" href="/materials">Explore materials <Arrow /></Link><Link className="text-link" href="/portfolio">Fictional design studies <Arrow /></Link></div>
     </section>
     <section className="section worlds" aria-labelledby="worlds-title"><div className="section-heading"><div><p className="eyebrow">Discover your expression</p><h2 id="worlds-title">Three scales.<br /><em>One artistic language.</em></h2></div></div><div className="world-grid">{collections.map((collection) => <Link key={collection.slug} href={`/${collection.slug}`} className="world-card"><span className="eyebrow">{collection.number} / {collection.detail}</span><h3>{collection.title}</h3><p>{collection.description}</p><span className="text-link">{collection.label}<Arrow /></span></Link>)}</div></section>
+    <JournalSelection />
     <section id="commission" className="section commission" aria-labelledby="commission-title">
       <p className="eyebrow">Begin with a possibility</p><h2 id="commission-title">Your space.<br />Your story. <em>Your piece.</em></h2>
       <div><p>A table for a gathering place. An object with personal meaning. A direction that begins with you.</p><ol className={styles.briefSteps}><li><strong>The room & the role</strong><span>Where the piece will live, how it will be used and the dimensions you have in mind.</span></li><li><strong>A material direction</strong><span>The grain, colour, form or finish that draws you in. A concept is a conversation starter.</span></li><li><strong>The practical details</strong><span>Location, delivery access and your preferred timeline help shape a considered brief.</span></li></ol><div className="development-note"><strong>Try a sample commissioning brief.</strong><span>Use fictional details to explore the form and simulated receipt. Nothing is sent to the studio.</span><Link href="/commission" className="text-link">Start a demo brief <Arrow /></Link></div></div>

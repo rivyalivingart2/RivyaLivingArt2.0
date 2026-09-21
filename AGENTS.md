@@ -11,9 +11,11 @@ source. The owner explicitly authorized the first application here; see
 superseded for this initialization. Do not restart the source-gap/approval loop.
 The first frontend source now exists. Preserve it, all briefs and Git history.
 
-The owner subsequently authorized merging R8-3A into main. PR #7 is merged at
-`0999b3b0a873e0745231f119c1567b3f8cd79fd8`; the remote SHA was verified.
-New R8-3B work continues on the development branch.
+The owner subsequently authorized merging completed R8-3B into main, then
+continuing R8-3C. PR #8 is merged at
+`cd6f91e55f8153b55a8c4af1f4329af1be81f38d`; the remote SHA was verified.
+New R8-3C work continues on the development branch. See
+`docs/decisions/2026-09-21-r8-3b-main-merge.md`.
 
 **Latest override: development first; all testing-related work moves to the final
 stage after backend/database integration.** Do not run per-slice lint, test,
@@ -48,7 +50,7 @@ in the older briefs and workflow. See
 ## Deferred checks and current development boundary
 
 Node 22; npm project at repository root. The actual dependency tree and reviewed
-package-lock.json exist. No dependency change is needed for R8-3B. Commands below
+package-lock.json exist. No dependency change is needed for R8-3C. Commands below
 remain available for the final QA stage; this is not an instruction to run them
 during the current development slices.
 
@@ -68,22 +70,29 @@ Historical R8-3A memory/personal checks passed before the timing override:
 48 unit, 12 preflight, 95 HTTP and 146 Chromium browser tests, with 10 mobile-only
 cases inapplicable on desktop/tablet. Clean npm ci, lint/typecheck/build pass. Read
 `docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md` for current evidence and media limits.
-Browser Use's cloud loopback restriction is unchanged; local Playwright supplies
-real app evidence without weakening network controls. Those results do not cover
-R8-3B and are not R8-5 owner approval.
+Browser Use's cloud loopback restriction is unchanged; the historical local
+Playwright evidence did not weaken network controls. Those results do not cover
+R8-3B or R8-3C and are not R8-5 owner approval.
 
-R8-3B develops typed, client-only commission, preservation and gifting forms,
+R8-3B provides typed, client-only commission, preservation and gifting forms,
 local validation/summary, an explicitly simulated receipt and local reference-image
 preview. No real submissions, uploads, persistence or messages. Read
 `docs/R8-3B_INQUIRY_FRONTEND.md`; its new source is untested and final QA is deferred.
-Next: R8-3C journal/article, FAQ, about/process/materials/care, portfolio, contact,
-search and approved service-page frontend work.
+R8-3C adds journal/article, FAQ, about/process/materials/care, portfolio, contact,
+architect enquiry and catalogue-search frontend pages. Six full labelled article
+drafts (DB001–DB006), 42 FAQ answers and three fictional project studies are source
+content, not published business claims. The 30 remaining articles and complete
+120-product/24-testimonial/40-scenario targets remain ahead. Read
+`docs/R8-3C_PUBLIC_PAGES.md`; all new source remains untested pending final QA.
+Next: R8-3D remaining error/root-error/loading/unavailable, form-failure and
+WhatsApp-fallback visual states, followed by Studio visuals.
 
-The owner-created Vercel project now exists and main deployments are READY. Preview
-authentication is reported enabled. Recheck deployment target and protection before
-publishing. The Node22 app overrides a Node24 project default; saving 22.x in the
-Vercel dashboard remains an owner action because setting-write access is unavailable.
-See `docs/VERCEL_RUNTIME_ALIGNMENT.md`. Never expose fixtures in production.
+The owner-created Vercel project exists, with prior READY main deployments and
+Preview authentication reported enabled. Recheck deployment target and protection
+before publishing. Read-only project inspection during R8-3C now reports Node
+`22.x`, aligned with the repository. No setting was changed by this task; the prior
+Node24 mismatch is resolved in the current project setting. See
+`docs/VERCEL_RUNTIME_ALIGNMENT.md`. Never expose fixtures in production.
 
 ## Git and continuity
 
@@ -92,7 +101,7 @@ Inspect current changes, remote identity and deployment triggers. After a cohere
 slice: update docs/checkpoint, inspect changes for the development commit, stage
 only owned files, commit normally, publish to the safe work branch and verify the
 actual remote SHA. Record testing as deferred, not passed; existing evidence only
-covers its recorded revision. The R8-3A merge is not standing authorization to merge
+covers its recorded revision. The R8-3B merge is not standing authorization to merge
 later slices. No force-push, branch deletion, automatic production release or
 live-domain changes.
 
