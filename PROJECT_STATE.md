@@ -1,5 +1,65 @@
 # RivyaLivingArt project state
 
+## R8 checkpoint — 2026-09-21 (R8-3D merged; R8-4A Studio catalogue)
+
+- **Owner instruction:** merge completed work into main, then implement R8-4A.
+  The development-first decision still defers all testing-related work until
+  after backend/database integration. Existing tests and commands remain intact.
+- **Main integration:** PR #10 merged development head
+  `679a358b334bcc658226a3661ed6b6add2dff852`; the actual main reference was
+  read back at `6e1be895b98a147ce0f00102e2ade7f9881db9f6`. R8-4A continues on
+  `codex/r8-first-frontend` from that merge and is published separately. No history
+  or branch was removed.
+- **Implemented:** isolated `/preview/studio` shell/navigation and dashboard;
+  URL-filtered/paginated product table with explicit current-page selection and
+  confirmed local review; product create/edit presentation with local draft state,
+  tier-specific validation and confirmed tier changes that preserve other-tier
+  fields; typed versioned form builder with keyboard ordering, controlled
+  conditions and shared public input rendering. Future modules have explicit
+  status routes rather than unexplained dead controls.
+- **Route boundary:** each harness layout/page and metadata path is guarded before
+  fixture rendering. The root application frame omits public chrome only for the
+  Studio presentation path. `/studio` retains its holding boundary and adds a
+  preview-only link to the harness; no staff identity, authenticated session or
+  backend permission is manufactured.
+  The preview flag is not access control and production continues to deny fixtures.
+- **Local state:** table review, product draft and builder controls never write
+  to a database, publish content or mutate source/public fixtures. The dashboard
+  derives Demo metrics from actual source records and marks Live, enquiries and
+  imports unconnected. No invented business totals, revenue or conversions.
+- **Source content:** twelve LARGE concepts (DP003–DP012 and DP015–DP016) bring
+  products to 36/120: 24 LARGE / 6 MEDIUM / 6 SMALL. Eighty-four remain to author.
+  Article source remains 12/36 with 24 remaining; FAQs 42/42; three fictional
+  studies; testimonials 0/24 and operational scenarios 0/40. Local UI examples
+  are not persisted demo scenarios or real business activity.
+- **Media / dependencies:** two mapped product AVIFs and 34 visual-pending
+  products. Owner prompts for the twelve new concepts are in the existing asset
+  companion. No new image/font, dependency or lockfile change; no image generation,
+  download, upload or storage integration occurred in this slice.
+- **Development feedback:** `npm run typecheck` passed (Next route generation
+  and TypeScript, Node 22) for implementation wiring. No lint, build verification,
+  unit/preflight/HTTP/browser checks or screenshot QA were run or added.
+  Compiler feedback does not establish a QA pass.
+- **SOURCE_IMPLEMENTED:** R8-4A Studio catalogue presentation and next product
+  batch. **UI_READY:** pending deferred visual/keyboard QA.
+  **BACKEND_CONNECTED:** no. **TESTED:** not run. Historical R8-3A results do not
+  certify later source.
+- **Vercel:** read-only inspection reports Node `22.x` and authentication
+  protection `all_except_custom_domains`. Existing Git branch triggers may create
+  production/Preview builds. No explicit deployment, promotion, environment,
+  runtime/protection setting or live-domain action was performed.
+- **Remaining:** genuine owner-approved media, care/legal wording and studio
+  history; remaining demo content; R8-4B–R8-4D Studio frontend; backend/database
+  integration and final consolidated QA. All rejected integrations and S01–S04
+  remain excluded. Neither R8-5/V1 owner approval nor R8-11/V2 readiness is claimed.
+- **Checkpoint / publication:** source and current guidance are prepared for the
+  development commit. Publish the safe branch and read back its actual remote
+  SHA/tree; report the resulting draft PR and source reference separately.
+  See `docs/R8-4A_STUDIO_CATALOGUE.md` for the presentation and integration map.
+- **Next exact task:** R8-4B — content hub, page-section editor, Tiptap presentation,
+  FAQ/blog/testimonial editors, media picker, responsive layout preview and
+  autosave/validation/history presentation.
+
 ## R8 checkpoint — 2026-09-21 (R8-3C merged; R8-3D system states)
 
 - **Owner instruction:** merge completed work into main, then implement R8-3D.

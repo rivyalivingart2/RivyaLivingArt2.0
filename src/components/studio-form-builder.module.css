@@ -1,0 +1,113 @@
+.builder { min-width: 0; }
+.heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 30px; }
+.heading h1 { font-size: clamp(38px, 4vw, 61px); letter-spacing: -.035em; line-height: 1.05; margin: 12px 0 16px; }
+.heading > div > p:last-child { color: var(--muted); font-size: 13px; line-height: 1.7; }
+.textLink { display: inline-flex; align-items: center; gap: 20px; min-height: 44px; font-size: 11px; color: var(--primary-hover); white-space: nowrap; }
+.draftBar { border-block: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 12px 0; }
+.draftBar > div { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 11px; }
+.draftBar strong { font-weight: 500; color: var(--primary-hover); }
+.draftBar > div > span:last-child { color: var(--muted); }
+.dot { width: 6px; height: 6px; background: var(--primary-hover); border-radius: 50%; }
+.draftBar button, .previewControls > button, .subtleButton { background: transparent; border: 0; color: var(--primary-hover); font-size: 11px; min-height: 44px; padding: 10px 0; text-align: left; }
+.notice { font-size: 11px; color: var(--muted); line-height: 1.85; max-width: 900px; margin: 18px 0 26px; }
+.announcement { font-size: 12px; line-height: 1.8; color: var(--primary-hover); }
+.announcement:not(:empty) { margin-bottom: 20px; padding-left: 14px; border-left: 2px solid var(--primary); }
+.workspace { display: grid; grid-template-columns: minmax(260px, .88fr) minmax(0, 1.35fr); align-items: start; gap: 30px; }
+.editor, .previewFields, .settings { border: 0; padding: 0; margin: 0; min-width: 0; }
+.editorHeading { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 22px; }
+.editorHeading > span:last-child { color: var(--muted); font-size: 10px; font-family: var(--font-data); }
+.control { display: grid; gap: 8px; font-size: 11px; line-height: 1.65; min-width: 0; }
+.control input, .control select, .control textarea { min-height: 45px; width: 100%; min-width: 0; border-radius: 0; border: 1px solid var(--control-border); padding: 10px 12px; font-size: 13px; line-height: 1.7; color: var(--foreground); background: var(--background); }
+.control textarea { resize: vertical; }
+.control small { font-size: 9px; color: var(--muted); font-family: var(--font-data); }
+.helper { font-size: 11px; line-height: 1.85; color: var(--muted); margin-top: 10px; overflow-wrap: anywhere; }
+.fieldList { display: grid; gap: 6px; padding: 0; list-style: none; margin: 22px 0 0; }
+.fieldList > li { display: flex; align-items: stretch; min-width: 0; border: 1px solid var(--border); }
+.fieldList > li[data-selected] { border-color: var(--primary); background: var(--surface-elevated); }
+.selectField { flex: 1; min-width: 0; display: flex; align-items: flex-start; gap: 12px; border: 0; background: transparent; padding: 15px 12px; text-align: left; font-size: 12px; line-height: 1.65; }
+.selectField > span:last-child { overflow-wrap: anywhere; }
+.selectField small { display: block; color: var(--muted); font-size: 9px; margin-top: 4px; }
+.fieldNumber { color: var(--primary-hover); font-family: var(--font-data); font-size: 10px; margin-top: 3px; }
+.reorder { display: flex; flex-direction: column; border-left: 1px solid var(--border); flex-shrink: 0; }
+.reorder button { border: 0; background: transparent; padding: 2px 9px; min-height: 36px; min-width: 36px; color: var(--muted); }
+.reorder button + button { border-top: 1px solid var(--border); }
+.builder button:disabled, .builder fieldset:disabled button { cursor: default; opacity: .5; }
+.builder button:not(:disabled):hover { color: var(--primary-hover); }
+.addField { margin-top: 23px; }
+.addField > button { display: flex; align-items: center; justify-content: space-between; gap: 20px; width: 100%; background: var(--surface); border: 1px solid var(--control-border); min-height: 45px; padding: 11px 14px; font-size: 11px; margin-top: 10px; }
+.fixedNote { border-left: 1px solid var(--primary); padding-left: 14px; font-size: 10px; line-height: 1.9; color: var(--muted); margin-top: 23px; }
+.inspector { border-top: 1px solid var(--border); padding-top: 26px; margin-top: 27px; }
+.inspectorTitle { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+.inspectorTitle h2 { font-size: 29px; }
+.inspectorTitle span { border: 1px solid var(--border); color: var(--muted); padding: 4px 7px; text-transform: uppercase; font-size: 8px; letter-spacing: .08em; }
+.fieldId { font-family: var(--font-data); font-size: 10px; color: var(--primary-hover); margin: 9px 0 13px; overflow-wrap: anywhere; }
+.settings { display: grid; gap: 17px; margin-top: 19px; }
+.settings:disabled { opacity: .65; }
+.check { display: flex; align-items: flex-start; gap: 10px; font-size: 11px; line-height: 1.8; margin-top: 19px; }
+.check input { margin: 3px 0 0; width: 17px; height: 17px; accent-color: var(--primary-hover); flex-shrink: 0; }
+.options, .constraints, .visibility { border-top: 1px solid var(--border); padding-top: 21px; margin-top: 23px; }
+.options h3, .constraints h3, .visibility h3 { font-family: var(--font-body); font-weight: 500; font-size: 12px; line-height: 1.7; margin-bottom: 13px; }
+.option { display: flex; align-items: center; gap: 10px; margin-top: 14px; }
+.option > label { flex: 1; }
+.option > button { min-width: 36px; min-height: 44px; border: 0; background: transparent; font-size: 22px; }
+.pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.visibility > label + label { margin-top: 16px; }
+.deleteField { margin-top: 25px; border-top: 1px solid var(--border); padding-top: 16px; }
+.deleteField > button { background: transparent; border: 0; min-height: 44px; padding: 8px 0; color: #e2aaa0; font-size: 11px; text-align: left; }
+.preview { min-width: 0; background: var(--surface); border: 1px solid var(--border); padding: clamp(20px, 2.8vw, 38px); }
+.previewHeading { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.previewHeading h2 { font-size: clamp(30px, 2.7vw, 41px); line-height: 1.1; margin-top: 12px; }
+.previewHeading > span { font-size: 9px; color: var(--primary-hover); white-space: nowrap; border: 1px solid var(--border); padding: 7px 9px; }
+.previewControls { display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; padding-block: 24px; margin-top: 6px; border-bottom: 1px solid var(--border); }
+.previewControls > button { justify-self: start; }
+.stepHeading { margin-block: 28px; }
+.stepHeading h3 { font-size: clamp(29px, 2.9vw, 40px); line-height: 1.12; letter-spacing: -.02em; margin-block: 14px; }
+.stepHeading > p { color: var(--muted); font-size: 12px; line-height: 1.85; }
+.reference { display: flex; align-items: center; gap: 17px; border: 1px dashed var(--control-border); padding: 20px; margin-top: 25px; }
+.reference > span { font-size: 26px; color: var(--primary-hover); }
+.reference strong { font-size: 11px; font-weight: 500; }
+.reference p { color: var(--muted); font-size: 10px; line-height: 1.85; margin-top: 6px; }
+.validateButton { display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 20px; min-height: 48px; padding: 13px 17px; margin-top: 30px; background: var(--primary); color: var(--primary-foreground); border: 1px solid var(--primary); font-size: 11px; text-align: left; }
+.builder .validateButton:not(:disabled):hover { background: var(--primary-hover); color: var(--primary-foreground); }
+.schemaIssues, .validationErrors { padding: 19px; margin-top: 23px; border: 1px solid #bb9380; color: #f1c8b8; background: #2c251f; font-size: 11px; line-height: 1.8; }
+.schemaIssues h3, .validationErrors h4 { font-family: var(--font-body); font-size: 12px; font-weight: 500; }
+.schemaIssues ul, .validationErrors ul { padding-left: 17px; margin: 10px 0 0; }
+.validationErrors { margin-bottom: 25px; }
+.summary > section { margin-top: 24px; }
+.summary h4 { font-size: 25px; line-height: 1.2; margin-bottom: 9px; }
+.summary dl { margin: 0; }
+.summary dl > div { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 15px; border-bottom: 1px solid var(--border); padding: 11px 0; font-size: 11px; line-height: 1.8; }
+.summary dt { color: var(--muted); }
+.summary dd { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.schemaSnapshot { border-top: 1px solid var(--border); margin-top: 28px; padding-top: 15px; }
+.schemaSnapshot summary { padding: 10px 0; min-height: 44px; font-size: 11px; line-height: 1.8; color: var(--muted); cursor: pointer; }
+.schemaSnapshot pre { max-height: 380px; overflow: auto; border: 1px solid var(--border); background: var(--background); padding: 17px; font-size: 10px; line-height: 1.9; margin: 15px 0 0; tab-size: 2; }
+.confirmation { margin-bottom: 25px; padding: 24px; border: 1px solid var(--primary); background: var(--surface-elevated); }
+.confirmation h2 { font-size: 30px; line-height: 1.2; }
+.confirmation p { max-width: 660px; margin-top: 12px; font-size: 12px; line-height: 1.9; color: var(--muted); }
+.confirmation > div { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.confirmation button { min-height: 44px; padding: 10px 15px; background: var(--background); color: var(--foreground); border: 1px solid var(--control-border); font-size: 11px; }
+.confirmation button:last-child { border-color: var(--primary); }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 1150px) {
+  .workspace { grid-template-columns: minmax(230px, .85fr) minmax(0, 1.2fr); gap: 22px; }
+  .previewHeading { flex-wrap: wrap; }
+}
+@media (max-width: 900px) {
+  .workspace { grid-template-columns: minmax(0, 1fr); gap: 35px; }
+  .heading { align-items: flex-start; flex-direction: column; gap: 9px; }
+  .fieldList { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .editorHeading { margin-bottom: 18px; }
+}
+@media (max-width: 600px) {
+  .heading h1 { font-size: 42px; }
+  .draftBar { align-items: flex-start; gap: 9px; }
+  .draftBar > div { gap: 8px; padding-block: 10px; }
+  .draftBar button { max-width: 105px; text-align: right; line-height: 1.7; }
+  .fieldList { grid-template-columns: minmax(0, 1fr); }
+  .control input, .control select, .control textarea { font-size: 16px; }
+  .preview { padding: 23px 18px; }
+  .summary dl > div { grid-template-columns: minmax(0, 1fr); gap: 3px; }
+  .confirmation { padding: 20px; }
+  .confirmation h2 { font-size: 27px; }
+}

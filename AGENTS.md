@@ -11,11 +11,11 @@ source. The owner explicitly authorized the first application here; see
 superseded for this initialization. Do not restart the source-gap/approval loop.
 The first frontend source now exists. Preserve it, all briefs and Git history.
 
-The owner subsequently authorized merging completed R8-3C into main, then
-continuing R8-3D. PR #9 is merged at
-`96af467fe5cc94dc56f1fa507df35317cbdbc798`; the remote SHA was verified.
-New R8-3D work continues on the development branch. See
-`docs/decisions/2026-09-21-r8-3c-main-merge.md`.
+The owner subsequently authorized merging completed R8-3D into main, then
+continuing R8-4A. PR #10 is merged at
+`6e1be895b98a147ce0f00102e2ade7f9881db9f6`; the remote SHA was verified.
+New R8-4A work continues on the development branch. See
+`docs/decisions/2026-09-21-r8-3d-main-merge.md`.
 
 **Latest override: development first; all testing-related work moves to the final
 stage after backend/database integration.** Do not run per-slice lint, test,
@@ -40,8 +40,8 @@ in the older briefs and workflow. See
 - Use approved Drive media first. Write missing image/video prompts for the owner
   in the existing separate asset document. No replacement logo, product recolouring,
   private media or large original media collections in Git.
-- Twenty-four labelled source fixtures exist: 12 LARGE / 6 MEDIUM / 6 SMALL;
-  two images, 22 pending visuals. The complete demo dataset, CMS,
+- Thirty-six labelled source fixtures exist: 24 LARGE / 6 MEDIUM / 6 SMALL;
+  two images, 34 pending visuals. The complete demo dataset, CMS,
   staff login, data/storage and real enquiries remain planned work.
 - Current visual flag is NOT authentication. Online preview requires separately
   verified deployment protection. Never enable fixture routes in Vercel production.
@@ -54,7 +54,7 @@ in the older briefs and workflow. See
 ## Deferred checks and current development boundary
 
 Node 22; npm project at repository root. The actual dependency tree and reviewed
-package-lock.json exist. No dependency change is needed for R8-3D. Commands below
+package-lock.json exist. No dependency change is needed for R8-4A. Commands below
 remain available for the final QA stage; this is not an instruction to run them
 during the current development slices.
 
@@ -76,7 +76,7 @@ cases inapplicable on desktop/tablet. Clean npm ci, lint/typecheck/build pass. R
 `docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md` for current evidence and media limits.
 Browser Use's cloud loopback restriction is unchanged; the historical local
 Playwright evidence did not weaken network controls. Those results do not cover
-R8-3B, R8-3C or R8-3D and are not R8-5 owner approval.
+R8-3B, R8-3C, R8-3D or R8-4A and are not R8-5 owner approval.
 
 R8-3B provides typed, client-only commission, preservation and gifting forms,
 local validation/summary, an explicitly simulated receipt and local reference-image
@@ -95,12 +95,26 @@ a success response before an invalid route is rejected. Six more article drafts
 (DB007–DB012) bring the source total to 12/36, leaving 24. The complete
 120-product/24-testimonial/40-scenario targets remain ahead. Read
 `docs/R8-3D_SYSTEM_STATES.md`; all new source remains untested pending final QA.
-Next: R8-4A Studio shell/navigation, fixture-derived dashboard, product list/detail,
-tier fields and form-builder visuals.
+R8-4A adds the isolated `/preview/studio` shell, fixture-derived dashboard,
+URL-filtered product list, local product drafts and typed form-builder presentation.
+Guard each harness layout/page and metadata before fixture access. The existing
+`/studio` holding boundary remains intact, with a link to the harness only when
+preview is allowed: no fake staff identity, authenticated session, backend
+permission or persistent operation. Root application framing
+omits public chrome only on the Studio presentation path. Future modules have
+explicit status pages, not invented working editors. Local review/draft/builder
+changes never alter public source fixtures or database records. Product tier
+changes require confirmation and preserve the other tier fields in local state.
+The form builder uses the public schema and shared input renderer; allow only
+typed fields/conditions, never JavaScript. Read `docs/R8-4A_STUDIO_CATALOGUE.md`.
+Twelve additional LARGE records bring products to 36/120, with 84 remaining.
+No new media is mapped. Next: R8-4B content hub, page-section editor, Tiptap
+presentation, FAQ/blog/testimonial editors, media picker, responsive layout preview,
+and autosave/validation/history presentation.
 
 The owner-created Vercel project exists, with prior READY main deployments and
 Preview authentication reported enabled. Recheck deployment target and protection
-before publishing. Read-only project inspection during R8-3D still reports Node
+before publishing. Read-only project inspection during R8-4A still reports Node
 `22.x`, aligned with the repository. No setting was changed by this task; the prior
 Node24 mismatch is resolved in the current project setting. See
 `docs/VERCEL_RUNTIME_ALIGNMENT.md`. Never expose fixtures in production.
@@ -112,7 +126,7 @@ Inspect current changes, remote identity and deployment triggers. After a cohere
 slice: update docs/checkpoint, inspect changes for the development commit, stage
 only owned files, commit normally, publish to the safe work branch and verify the
 actual remote SHA. Record testing as deferred, not passed; existing evidence only
-covers its recorded revision. The R8-3C merge is not standing authorization to merge
+covers its recorded revision. The R8-3D merge is not standing authorization to merge
 later slices. No force-push, branch deletion, automatic production release or
 live-domain changes.
 

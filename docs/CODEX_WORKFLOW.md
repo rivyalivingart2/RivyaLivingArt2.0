@@ -2,12 +2,12 @@
 
 **Repository:** `rivyalivingart2/RivyaLivingArt2.0`  
 **Working branch:** `codex/r8-first-frontend`  
-**Latest decisions:** R8-3C merged through PR #9; development first, with all QA
+**Latest decisions:** R8-3D merged through PR #10; development first, with all QA
 deferred until after backend/database integration. New work stays on development.
 
 Read `AGENTS.md`, `PROJECT_STATE.md`,
 `docs/decisions/2026-09-21-development-first.md`,
-`docs/decisions/2026-09-21-r8-3c-main-merge.md`, the new-build decision and the
+`docs/decisions/2026-09-21-r8-3d-main-merge.md`, the new-build decision and the
 current slice document. The nine Revision 8 documents remain the feature
 specification; dated owner decisions supersede their source-gap and QA-timing rules.
 **Do not ask for old source, restore another repository, scaffold again or generate
@@ -19,14 +19,20 @@ are inapplicable on desktop/tablet. Clean npm ci, lint/typecheck/build pass. Rea
 `docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md` and `docs/VERCEL_RUNTIME_ALIGNMENT.md`.
 The owner-authorized PR #7 merged that work at
 `0999b3b0a873e0745231f119c1567b3f8cd79fd8`, verified from the remote ref. Those checks
-do not cover R8-3B, R8-3C or R8-3D source. R8-3B merged through PR #8 at
+do not cover R8-3B, R8-3C, R8-3D or R8-4A source. R8-3B merged through PR #8 at
 `cd6f91e55f8153b55a8c4af1f4329af1be81f38d`. The owner then authorized PR #9
 to merge R8-3C at `96af467fe5cc94dc56f1fa507df35317cbdbc798`, also verified
-from the remote main ref. Read `docs/R8-3B_INQUIRY_FRONTEND.md` for the local form
+from the remote main ref. PR #10 then merged R8-3D source head
+`679a358b334bcc658226a3661ed6b6add2dff852` at
+`6e1be895b98a147ce0f00102e2ade7f9881db9f6`, verified from the main reference.
+Read `docs/R8-3B_INQUIRY_FRONTEND.md` for the local form
 boundary, `docs/R8-3C_PUBLIC_PAGES.md` for public pages and
-`docs/R8-3D_SYSTEM_STATES.md` for current state visuals and article progress.
-These slices await final QA. Next is R8-4A Studio shell/navigation, fixture-derived
-dashboard, product list/detail, tier fields and form-builder visuals.
+`docs/R8-3D_SYSTEM_STATES.md` for state visuals and article progress.
+Read `docs/R8-4A_STUDIO_CATALOGUE.md` for the current Studio shell, dashboard,
+product table/editors and form-builder presentation. These slices await final QA.
+Next is R8-4B: content hub, page-section editor, Tiptap presentation,
+FAQ/blog/testimonial editors, media picker, responsive layout preview and
+autosave/validation/history presentation.
 Vercel has Git deployment triggers and Preview protection. Read-only project
 inspection still reports Node `22.x`, aligned with the app; no setting was changed
 by this task.
@@ -62,7 +68,7 @@ dependency-verification slice. Terminal Git reads work here; terminal push lacks
 write credentials. Use the authorized GitHub connector to publish and verify the
 branch ref, or normal Git push when a later workspace already has credentials.
 
-Use Node 22 and the root package. R8-3D requires no dependency changes. For ordinary
+Use Node 22 and the root package. R8-4A requires no dependency changes. For ordinary
 local development, `npm run dev` starts the app. When needed to resolve TypeScript
 wiring, `npm run typecheck` generates route types and runs the compiler; record only
 that limited outcome, not TESTED or full UI readiness.
@@ -107,11 +113,11 @@ present; do not scaffold again or ask for old application files.
 
 Read AGENTS.md, PROJECT_STATE.md, docs/CODEX_WORKFLOW.md,
 docs/decisions/2026-09-21-development-first.md,
-docs/decisions/2026-09-21-r8-3c-main-merge.md and the current slice document.
+docs/decisions/2026-09-21-r8-3d-main-merge.md and the current slice document.
 Follow the relevant Revision 8 features under the latest dated owner overrides.
 
-R8-3C is merged into main through PR #9. Historical R8-3A checks do not certify
-R8-3B, R8-3C or R8-3D source. ALL testing-related work is deferred until after
+R8-3D is merged into main through PR #10. Historical R8-3A checks do not certify
+R8-3B, R8-3C, R8-3D or R8-4A source. ALL testing-related work is deferred until after
 backend/database integration. Do not run/add tests, lint/preflight, build verification or browser/
 visual QA now. Compiler/typechecking is allowed only for development wiring.
 Preserve existing tests/scripts/assertions; do not suppress checks or claim TESTED.
@@ -126,15 +132,24 @@ presentation gallery. The gallery is development UI, not completed QA or runtime
 fault injection. Keep pending boundaries after route validation; do not add a
 root loading boundary that could stream success before unknown-route rejection.
 Read docs/R8-3B_INQUIRY_FRONTEND.md, docs/R8-3C_PUBLIC_PAGES.md and
-docs/R8-3D_SYSTEM_STATES.md. Continue R8-4A: Studio shell/navigation, fixture-derived
-dashboard, product list/detail, tier fields and form-builder visuals.
+docs/R8-3D_SYSTEM_STATES.md. R8-4A adds the isolated /preview/studio shell,
+fixture-derived dashboard, URL-filtered product table, local tier-aware product
+editors and typed form builder. Read docs/R8-4A_STUDIO_CATALOGUE.md. Keep /studio
+holding intact with its preview-only harness link, guard every preview
+page/layout/metadata path, and keep real staff authentication separate. The harness has no sessions, backend permissions,
+persistent saves or public fixture mutations. Typed builder fields use the same
+public renderer; do not accept JavaScript or arbitrary executable conditions.
+Continue R8-4B: content hub, page-section editor, Tiptap presentation,
+FAQ/blog/testimonial editors, media picker, responsive layout preview and
+autosave/validation/history presentation.
 Use existing components, dark tokens and honest fixture labels. No fake staff
 authentication, real requests, uploads, persistence or messages. Do not start
 backend integration in this frontend slice.
 
-Twenty-four fictional source products exist (12 LARGE / 6 MEDIUM / 6 SMALL);
-22 lack approved visuals. Twelve full article drafts (DB001–DB012), 42 FAQ answers
-and three fictional project studies now exist as source. Complete the remaining
+Thirty-six fictional source products exist (24 LARGE / 6 MEDIUM / 6 SMALL);
+34 lack approved visuals, and 84 of the 120 products remain to author. Twelve full
+article drafts (DB001–DB012), 42 FAQ answers and three fictional project studies
+now exist as source. Complete the remaining
 24 articles and full 120-product/24-testimonial/40-scenario targets progressively;
 do not claim full demo coverage early.
 Use the known Drive sources first and give missing image/video prompts to the
@@ -166,7 +181,7 @@ owner review or explicit continuation at that handoff. Final QA follows integrat
 ## 4. Git, readiness and next sessions
 
 Use the development-first slice workflow. Report SOURCE_IMPLEMENTED, UI_READY,
-BACKEND_CONNECTED and TESTED independently. R8-3B, R8-3C and R8-3D are untested.
+BACKEND_CONNECTED and TESTED independently. R8-3B, R8-3C, R8-3D and R8-4A are untested.
 Compiler feedback alone does not establish UI_READY or TESTED. Commit only
 intended source/docs/media derivatives. Never commit node_modules, .next, credentials, private photos, original
 asset collections or machine-specific configuration. If a slice is blocked, a draft
@@ -183,7 +198,7 @@ Recheck target and protection before publishing: a development push may trigger 
 Preview build, while main may deploy production. The runtime note documents the
 current read-only observation that the project default is now Node22, resolving
 the earlier mismatch; no environment, runtime or protection setting was changed
-here. The owner separately authorized the R8-3C merge through PR #9. Later work
+here. The owner separately authorized the R8-3D merge through PR #10. Later work
 continues on development. Preview protection remains required;
 a preview flag and noindex are not access control. Do not change the production
 fixture guard to make a development preview visible.

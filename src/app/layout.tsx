@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { ApplicationFrame } from "@/components/application-frame";
 import "./globals.css";
 
 const displayFont = localFont({
@@ -30,5 +31,5 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#101713", colorScheme: "dark" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}><body><a className="skip-link" href="#main-content">Skip to content</a><div className="preview-notice">Development preview <span aria-hidden="true">/</span> Concept imagery & sample content. Not a live offer.</div><SiteHeader />{children}<SiteFooter /></body></html>;
+  return <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}><body><a className="skip-link" href="#main-content">Skip to content</a><ApplicationFrame header={<SiteHeader />} footer={<SiteFooter />}>{children}</ApplicationFrame></body></html>;
 }

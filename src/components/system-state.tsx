@@ -14,6 +14,7 @@ type SystemStateProps = {
   actionLabel?: string;
   compact?: boolean;
   demo?: boolean;
+  headingLevel?: 1 | 2;
 };
 
 const content: Record<SystemStateKind, { eyebrow: string; title: string; description: string }> = {
@@ -60,10 +61,10 @@ function SculptureStudy() {
 }
 
 /** Owns a section so it can be composed inside a page or a labelled state study. */
-export function SystemState({ kind, title, description, eyebrow, onRetry, retryLabel = "Try again", actionHref = "/", actionLabel = "Back to RivyaLivingArt", compact = false, demo = false }: SystemStateProps) {
+export function SystemState({ kind, title, description, eyebrow, onRetry, retryLabel = "Try again", actionHref = "/", actionLabel = "Back to RivyaLivingArt", compact = false, demo = false, headingLevel }: SystemStateProps) {
   const defaults = content[kind];
   const heading = title ?? defaults.title;
-  const Heading = compact ? "h2" : "h1";
+  const Heading = headingLevel === 1 ? "h1" : headingLevel === 2 || compact ? "h2" : "h1";
 
   return (
     <section className={`${styles.state} ${compact ? styles.compact : ""}`} aria-label={heading}>

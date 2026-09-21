@@ -8,7 +8,7 @@
 > integration. This overrides the per-slice and R8-5 QA timing below and in the
 > older Revision 8 companions. Keep existing tests and checks intact; compiler/
 > typechecking may resolve development wiring only. Historical results remain
-> historical, and R8-3B/R8-3C/R8-3D source is untested. R8-5 still provides protected
+> historical, and R8-3B/R8-3C/R8-3D/R8-4A source is untested. R8-5 still provides protected
 > frontend-development preview instructions and preserves owner review control;
 > full QA is not a prerequisite to integration, and no visual approval is implied.
 > See [the dated decision](docs/decisions/2026-09-21-development-first.md).
@@ -19,15 +19,18 @@
 → protected Vercel frontend handoff / owner review → backend/database integration
 → persistent demo management → final consolidated QA → owner Vercel deployment.**
 
-The source and Git audit already exists. PR #9 merged R8-3C into main at
-`96af467fe5cc94dc56f1fa507df35317cbdbc798`, verified from the remote reference.
-R8-3D system-state and second article-batch development continues on the safe
-branch. Its local recovery and blocked-WhatsApp examples add no real uploads,
-persistence or messages. The next exact task is **R8-4A — Studio shell/navigation,
-fixture-derived dashboard, product list/detail, tier fields and form-builder
-visuals**. The phase requirements below retain their feature scope; their earlier
-QA-gating clauses are superseded by the dated timing override, not silently marked
-complete. Read `docs/R8-3D_SYSTEM_STATES.md` and the latest owner merge decision.
+The source and Git audit already exists. PR #10 merged R8-3D into main at
+`6e1be895b98a147ce0f00102e2ade7f9881db9f6`, verified from the remote reference.
+R8-4A Studio shell, dashboard, catalogue editor and form-builder development
+continues on the safe branch through an isolated `/preview/studio` harness.
+It adds no real authentication, sessions, uploads, persistence or messages and
+retains the `/studio` holding boundary, adding only a preview-only harness link.
+The next exact task is **R8-4B — content hub,
+page-section editor, Tiptap presentation, FAQ/blog/testimonial editors, media
+picker, responsive layout preview and autosave/validation/history presentation**.
+The phase requirements below retain their feature scope; their earlier QA-gating
+clauses are superseded by the dated timing override, not silently marked complete.
+Read `docs/R8-4A_STUDIO_CATALOGUE.md` and the latest owner merge decision.
 
 **Current contact correction:** master Section 1 already supplied the phone,
 WhatsApp destination, email and map link. R8-3D corrects the earlier missing-contact
@@ -87,7 +90,7 @@ Keep actual dimensions and price modes in typed data; demo facts stay visibly fi
 3C: journal index/article layouts, FAQ, about/process/materials/care, portfolio, contact, search and approved existing service routes.  
 3D: 404/error/root error, empty/unavailable product, loading, failed-media, failed-form and WhatsApp fallback designs; responsive refinements.
 
-**Current R8-3D checkpoint:** shared state/error/loading presentation, guarded
+**Recorded R8-3D checkpoint:** shared state/error/loading presentation, guarded
 `/preview/states` gallery, post-validation collection/search/journal Suspense,
 header pending-link indicators, media retry and zoom-on-load, form-failure state
 that preserves mounted values/reference, and blocked-WhatsApp local simulation.
@@ -106,6 +109,20 @@ Write the full 36 demo article drafts across bounded content slices, not in one 
 4B: content hub, page-section editor, Tiptap presentation, FAQs/blog/testimonial editors, media picker, layout preview, autosave/validation/history presentation.  
 4C: enquiry pipeline/status details, internal notes, catalogue import/export controls, demo manager/remove dialogs and independent menu visibility.  
 4D: login/setup/recovery/access-denied visuals, staff/role/session panels and environment-health layout.
+
+**Current R8-4A checkpoint:** the guarded `/preview/studio` harness contains the
+Studio shell, fixture-derived dashboard, URL-filtered product table, local draft
+editors with tier-change confirmation and a typed form builder that shares the
+public field renderer. Each layout/page and its metadata apply the preview policy;
+`/studio` keeps its holding boundary and a preview-only harness link. Future
+modules have explicit status pages.
+Local draft/review operations do not modify source fixtures, publish catalogue
+content, create staff sessions or write to a database. Compiler feedback is recorded
+separately in `docs/R8-4A_STUDIO_CATALOGUE.md`; UI_READY and TESTED remain deferred.
+Twelve further LARGE records bring products to 36/120 (24 LARGE / 6 MEDIUM / 6 SMALL),
+with two mapped images and 34 pending visuals. Eighty-four products, 24 articles,
+24 testimonials and 40 operational scenarios remain to author. The next Studio
+slice is R8-4B as listed above.
 
 Reuse production-bound presentation components through a separately isolated visual harness. Do not remove real `/studio` authentication. A login mock must not accept real passwords or authenticate anyone. Where the final backend does not exist yet, use labelled local state/simulation or a clear disabled integration state; no unexplained dead controls and no fake success. All real operations are implemented later.
 
