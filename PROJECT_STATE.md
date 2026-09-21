@@ -1,5 +1,64 @@
 # RivyaLivingArt project state
 
+## R8 checkpoint — 2026-09-21 (R8-3B merged; R8-3C public pages)
+
+- **Owner instruction:** merge accumulated R8-3B into main, then implement R8-3C.
+  The development-first decision still defers all testing until after backend and
+  database integration. No test work or old assertions were removed or bypassed.
+- **Main integration:** PR #8 merged development head
+  `ce37e7966c8b50105c539caee44fba70a5a15278`; actual remote main was read back at
+  `cd6f91e55f8153b55a8c4af1f4329af1be81f38d`. The development branch was
+  fast-forwarded to that merge before new work. No branch/history was removed.
+- **Work branch / slice:** R8-3C on `codex/r8-first-frontend`, published separately
+  from the preceding R8-3B main merge.
+- **Implemented:** journal index and six article detail paths; category/search/
+  pagination, contents and reading progress; 42-answer FAQ with topic/search/native
+  disclosures; about, process, materials, care, contact and architects pages;
+  three fictional portfolio studies and detail routes; bounded catalogue search
+  with tier filters/pagination/empty state. Header/footer/homepage now connect the
+  new surfaces using shared components and existing typography/tokens.
+- **Source content:** six complete original DB001–DB006 article drafts with six
+  sections each, excerpts, owner-review notes and existing DP relationships;
+  DF001–DF042 supplied FAQ drafts; DS001–DS003 fictional design studies; six
+  versioned EP editorial page records. None is published business copy or a
+  database row. The remaining 30 article assignments remain unfinished briefs.
+- **Content boundaries:** no invented studio history, artist credentials, delivered
+  client work, legal/care policy, real contact details or unsupported workshops/3D
+  service. Planned FAQ upload/save/message/staff behavior is qualified with current
+  preview notes. Professional enquiry reuses the existing local commission form.
+- **Preview boundary:** shared request-time guard runs before fixture lookup/render;
+  article/study metadata is guarded; unknown slugs call notFound. No fictional live
+  canonicals, backend calls, database, auth, upload or outgoing-message work.
+  Production holding/fixture denial remains in place.
+- **Development feedback:** `npm run typecheck` passed (Next route generation and
+  TypeScript compiler, Node 22). This is implementation-wiring feedback only.
+  No lint, build verification, unit/preflight/HTTP/browser checks or screenshots
+  ran for this slice. Existing QA code remains intact for the final phase.
+- **SOURCE_IMPLEMENTED:** R8-3C public-page slice and first editorial batch.
+  **UI_READY:** pending deferred visual/keyboard QA. **BACKEND_CONNECTED:** no.
+  **TESTED:** not run. Earlier R8-3A results do not certify this source.
+- **Products / media / dependencies:** 24 concepts remain (12 LARGE / 6 MEDIUM /
+  6 SMALL), two existing AVIFs and 22 pending product visuals. No package/lockfile
+  change or new image/font asset. Journal covers are original CSS decorations,
+  labelled image-pending. Six owner-generation briefs were appended to the existing
+  asset companion; no image generation/download took place.
+- **Vercel:** read-only project inspection now reports Node `22.x`, so the prior
+  project-default mismatch is resolved; this task changed no setting. Authentication
+  protection still reports `all_except_custom_domains`. The authorized main merge
+  can trigger the existing production build; development publishing can trigger a
+  Preview. No explicit deployment/promotion or live-domain change occurred.
+- **Remaining:** owner-approved media/contact/studio/policy content; remaining
+  product/article/testimonial/scenario fixtures; R8-3D system states and Studio;
+  backend/database/integrations and final QA. S01–S04 and all rejected integrations
+  remain excluded. R8-5/V1 and R8-11/V2 are not claimed ready.
+- **Checkpoint / publication:** source and current guidance reviewed for the
+  development commit. Publish the coherent slice, compare remote/local source trees
+  and read back the branch SHA; report those actual values with the draft PR.
+  See `docs/R8-3C_PUBLIC_PAGES.md` for route/content maps and remaining boundaries.
+- **Next exact task:** R8-3D — complete root-error/loading/unavailable product,
+  failed-form/media and explicitly simulated WhatsApp-fallback visual states,
+  before moving to Studio development.
+
 ## R8 checkpoint — 2026-09-21 (R8-3A merged; R8-3B development)
 
 - **Owner instruction:** put R8-3A in main, defer all testing work until the final
