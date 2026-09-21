@@ -1,0 +1,17 @@
+:root {
+  color-scheme: dark;
+  --background: #101713;
+  --surface: #19221c;
+  --surface-elevated: #232e26;
+  --foreground: #f3efe7;
+  --muted: #b7bfb5;
+  --primary: #b79270;
+  --primary-hover: #ceac89;
+  --primary-foreground: #101713;
+  --border: #3a483e;
+  --control-border: #78867c;
+  --focus: #ceac89;
+  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-data: "SFMono-Regular", Consolas, monospace;
+}
