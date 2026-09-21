@@ -40,7 +40,7 @@ em { font-weight: 400; color: var(--primary-hover); }
 .desktop-nav a:hover, .desktop-nav a[aria-current="page"] { color: var(--primary-hover); }
 .header-cta { display: flex; align-items: center; gap: 20px; font-size: 12px; border-bottom: 1px solid var(--primary); padding: 8px 0; }
 .menu-trigger { display: none; }
-.mobile-navigation { background: var(--surface); color: var(--foreground); width: min(92vw,560px); max-height: 90dvh; padding: 0; border: 1px solid var(--border); }
+.mobile-navigation { background: var(--surface); color: var(--foreground); width: min(92vw,560px); max-height: 90dvh; margin: auto; padding: 0; border: 1px solid var(--border); }
 .mobile-navigation::backdrop { background: rgb(0 0 0 / .74); }
 .mobile-panel { padding: 28px; }
 .mobile-panel-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 25px; }

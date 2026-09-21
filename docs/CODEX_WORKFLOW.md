@@ -2,7 +2,8 @@
 
 **Repository:** `rivyalivingart2/RivyaLivingArt2.0`  
 **Working branch:** `codex/r8-first-frontend`  
-**Latest decision:** new build confirmed; first application initialization authorized.
+**Latest decisions:** new build confirmed; accumulated work merged through PR #4
+under the owner’s subsequent instruction. New work continues on the development branch.
 
 Read `AGENTS.md`, `PROJECT_STATE.md`, `docs/decisions/2026-09-21-new-build.md` and
 `docs/R8-1_FRONTEND_FOUNDATION.md`. The nine Revision 8 documents remain the feature
@@ -12,9 +13,11 @@ another prompt pack.** Continue the source now present.
 
 **Current continuation update:** dependency installation, the real lockfile, clean
 `npm ci`, lint/typecheck/unit/preflight/build and built-server HTTP checks are now
-verified. Read `docs/R8-1_DEPENDENCY_VERIFICATION.md`. The remaining first gate is
-actual browser verification, blocked here by `ERR_BLOCKED_BY_CLIENT` for localhost.
-Do not repeat the earlier missing-source or npm-network diagnosis.
+verified. Actual local Chromium checks now also pass: 50 passed across four sizes,
+with 10 mobile-only cases inapplicable on desktop/tablet. Read
+`docs/R8-1_BROWSER_VERIFICATION.md` and the main-merge decision. The cloud browser’s
+localhost restriction remains unchanged; repository-owned Playwright tests resolve
+the project verification gate. Do not repeat the earlier source/network diagnosis.
 
 ## 1. Open the correct branch
 
@@ -38,7 +41,7 @@ node --test tools/codex-preflight.test.mjs
 
 The source presence check is not a dependency, build, security or deployment test.
 
-## 2. Reproduce the verified build, then finish browser verification
+## 2. Reproduce the verified build and browser checks
 
 The original authoring container had DNS failures; that historical limitation is
 resolved in the current continuation. The real lockfile is committed with the
@@ -56,13 +59,19 @@ npm test
 npm run test:preflight
 npm run build
 npm run test:runtime
+npx playwright install chromium
+npm run test:e2e
 ```
 
 The existing Next/React/Tailwind pins installed together and built successfully.
 Do not change them merely to restart installation. Review metadata/peer constraints
 when a real dependency change is needed. Do not invent a lockfile, bypass integrity
-checks or disable sandbox controls. `npm run check` includes the full command list.
-The runtime suite starts and checks real Next servers over HTTP, not a browser.
+checks or disable sandbox controls. `npm run check` runs lint, typecheck, unit,
+preflight, build and HTTP checks; browser setup and `test:e2e` are separate.
+The runtime suite checks real Next servers over HTTP. The separate browser suite
+starts a local preview and checks the hydrated app; it refuses Vercel deployments.
+An existing local Chromium executable may be selected with the test-only
+`RIVYA_BROWSER_EXECUTABLE` override. See the evidence for this workspace’s runtime.
 
 Run the real app using `npm run dev`, or after a successful build use
 `RIVYA_VISUAL_PREVIEW=1 npm start` for local production-mode testing. Verify desktop,
@@ -80,13 +89,12 @@ present; do not scaffold again or ask for old application files.
 Read AGENTS.md, PROJECT_STATE.md, docs/CODEX_WORKFLOW.md, the new-build decision
 and the R8-1 evidence document. Follow the relevant Revision 8 requirements.
 
-The dependency/build/runtime slice is complete; read its current evidence file.
-Use npm ci and npm run check to reproduce it. Finish the blocked actual browser
-checks: desktop/tablet/mobile, menu keyboard/focus/Escape, route transitions,
-images, unknown routes and reduced motion. Resolve errors without suppressing checks.
+The dependency/build/runtime/browser foundation is verified; read its current
+evidence. Use npm ci, npm run check and npm run test:e2e with installed Chromium
+to reproduce it. Resolve real errors without suppressing checks.
 
-Then continue the smallest R8-1/R8-2 visual task: improve production-quality
-media/typography, furniture collection and detail layouts while preserving
+Continue R8-2 furniture collection discovery and detail presentation; improve
+media/typography and progressively author the required sample content, preserving
 reusable components, the dark logo-derived tokens and honest fixture labels.
 Do not start backend implementation before the visual-review gate.
 
@@ -124,8 +132,10 @@ the connector. A created commit object alone is not a branch update.
 
 The connected Vercel team returned no projects during this slice. Recheck later;
 this does not cover unrelated accounts. No project creation, paid activation, preview
-deployment, main merge or live-domain action occurred. Preview protection and build
-verification remain prerequisites; a preview flag and noindex are not access control.
+deployment or live-domain action occurred. The owner separately authorized PR #4
+merging accumulated work into main; later work continues on the development branch.
+Preview protection and build verification remain prerequisites; a preview flag
+and noindex are not access control.
 
 After dependency/build/browser verification, continue the recorded frontend task,
 not the earlier documentation-only audit. Preserve historical records unchanged.

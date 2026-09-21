@@ -11,6 +11,10 @@ source. The owner explicitly authorized the first application here; see
 superseded for this initialization. Do not restart the source-gap/approval loop.
 The first frontend source now exists. Preserve it, all briefs and Git history.
 
+The owner subsequently authorized merging accumulated work into main; PR #4 is
+merged. See `docs/decisions/2026-09-21-main-merge.md`. Continue new work on the
+development branch. This authorization did not deploy the site or waive visual QA.
+
 - Exact brand: **RivyaLivingArt**. Large collectible resin furniture/spatial art
   leads; memory art and personal gifts are distinct secondary journeys.
 - Follow frontend-first R8-0–R8-5, owner visual review, then backend R8-6 onward.
@@ -35,7 +39,8 @@ The first frontend source now exists. Preserve it, all briefs and Git history.
 Node 22; npm project at repository root. The actual dependency tree and reviewed
 package-lock.json now exist. A clean npm ci, lint, semantic typecheck, unit/preflight
 tests and production build passed in the continuation slice. See
-`docs/R8-1_DEPENDENCY_VERIFICATION.md` for current evidence and limits.
+`docs/R8-1_DEPENDENCY_VERIFICATION.md` for install/runtime evidence and
+`docs/R8-1_BROWSER_VERIFICATION.md` for the subsequent actual browser results.
 
 ```sh
 npm ci
@@ -44,15 +49,18 @@ npm run typecheck
 npm test
 npm run build
 npm run test:preflight
-npm run test:runtime # after npm run build; real HTTP checks, not a browser test
+npm run test:runtime # after npm run build; real HTTP checks
+npx playwright install chromium # once per browser environment
+npm run test:e2e # after npm run build; actual local browser tests
 ```
 
-The earlier npm/Git network blocker is resolved in this workspace. Actual hydrated
-browser verification remains blocked: Browser Use rejected the local app with
-ERR_BLOCKED_BY_CLIENT. No desktop/mobile screenshot, keyboard, focus or image-decode
-pass is claimed. Complete those checks in an authorized browser-capable environment
-before treating the foundation as UI_READY or continuing the furniture visuals.
-Do not weaken network controls or substitute static HTML evidence.
+The earlier npm/Git network blocker is resolved. Repository-owned local Playwright
+checks now pass in Chromium at 1440/768/390/320 px: 50 passed, 10 mobile-only cases
+inapplicable on desktop/tablet, zero failures. Actual screenshot, keyboard/focus,
+image-decode, navigation, 404 and reduced-motion evidence exists. Browser Use's
+cloud localhost restriction is unchanged; no network controls were weakened.
+The foundation is ready for continued frontend development, not the R8-5 owner
+visual-review gate. Next: R8-2 furniture collection discovery and detail presentation.
 
 ## Git and continuity
 

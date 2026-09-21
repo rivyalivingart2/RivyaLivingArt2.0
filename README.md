@@ -2,7 +2,7 @@
 
 **Repository:** `rivyalivingart2/RivyaLivingArt2.0`  
 **Work branch:** `codex/r8-first-frontend`  
-**Stage:** R8-1 dependencies/build verified; actual browser verification blocked.
+**Stage:** R8-1 foundation verified in the actual browser; next is R8-2 furniture.
 
 This is a new application, as confirmed by the owner on 21 September 2026.
 The earlier Markdown-only state was intentional. [The owner decision](docs/decisions/2026-09-21-new-build.md)
@@ -16,11 +16,11 @@ fictional concept studies, collection/detail route foundations, status-only Stud
 and loading/error/404 views. The two compact concept images derive from the owner's
 Drive collection. They are AI concepts, not real product photographs or stock.
 
-**Not complete:** hydrated browser/layout checks, full frontend, staff login, CMS,
+**Not complete:** full frontend, staff login, CMS,
 database/storage, enquiries, imports, full demo pack
 or deployment. No code in this slice collects personal data or sends messages.
 
-Read [Codex workflow](docs/CODEX_WORKFLOW.md), [current verification](docs/R8-1_DEPENDENCY_VERIFICATION.md)
+Read [Codex workflow](docs/CODEX_WORKFLOW.md), [current browser verification](docs/R8-1_BROWSER_VERIFICATION.md)
 and [current checkpoint](PROJECT_STATE.md) before continuing.
 
 ## Run locally
@@ -36,12 +36,17 @@ npm test
 npm run test:preflight
 npm run build
 npm run test:runtime
+npx playwright install chromium
+npm run test:e2e
 npm run dev
 ```
 
-`npm run check` runs the six checks above, including the build and HTTP regression
-tests. Typecheck generates Next route types first, so it works before the first
-build. Runtime tests start the real built app on loopback; they do not exercise a
+`npm run check` runs lint, typecheck, unit, preflight, build and HTTP regression
+checks. `npm run test:e2e` separately runs the actual Chromium browser suite after
+browser installation and a build: 50 passed across four sizes, with 10 mobile-only
+cases inapplicable on desktop/tablet. Typecheck generates Next route types first,
+so it works before the first build. Runtime tests start the real built app on
+loopback; they do not exercise a
 browser, React hydration, desktop/mobile layout or the mobile dialog.
 
 Local development displays the labelled visual study. For a local built-server
@@ -58,10 +63,13 @@ receives a holding page for these fixture routes.
 - `public/media/concepts/`: two small preview derivatives, not original masters.
 - `tests/`: dependency-free fixture/policy/source-contract tests.
 - `tools/`: read-only Codex preflight and actual built-server HTTP regression tests.
+- `e2e/`, `playwright.config.ts`: local hydrated Chromium checks across four sizes.
 - `docs/assets/initial-media.json`: provenance, dimensions, hashes and usage limits.
 - `docs/CODEX_WORKFLOW.md`: current starting/continuation instructions.
 - `docs/R8-1_FRONTEND_FOUNDATION.md`: preserved initial source-slice evidence.
-- `docs/R8-1_DEPENDENCY_VERIFICATION.md`: current install/build/runtime evidence and browser blocker.
+- `docs/R8-1_DEPENDENCY_VERIFICATION.md`: historical install/build/runtime evidence.
+- `docs/R8-1_BROWSER_VERIFICATION.md`: actual browser results and screenshots.
+- `docs/decisions/2026-09-21-main-merge.md`: owner-authorized PR #4 main integration.
 - `docs/decisions/2026-09-21-new-build.md`: confirmed initial-creation decision.
 - `docs/R8-0_AUDIT.md` and `docs/R8-0_REMOTE_VERIFICATION.md`: unchanged history.
 - `AGENTS.md`, `PROJECT_STATE.md`: active guidance and dated checkpoints.
@@ -80,5 +88,7 @@ receives a holding page for these fixture routes.
 
 Frontend and Studio visuals precede real integrations. R8-5 gives an owner-controlled
 protected visual-preview handoff; R8-11 addresses the complete application. Neither
-milestone has been reached. No main merge, Vercel project or deployment is authorized
-by this README. Exact contact/business rules and rejected features remain in the brief.
+milestone has been reached. The owner separately authorized PR #4 merging accumulated
+work into main; new slices continue on the development branch. No Vercel project,
+deployment or domain change occurred. Exact business rules and exclusions remain
+in the brief.

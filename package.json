@@ -16,6 +16,7 @@
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "test:preflight": "node --test tools/codex-preflight.test.mjs",
     "test:runtime": "node --test tools/frontend-runtime.test.mjs",
+    "test:e2e": "playwright test",
     "check": "npm run lint && npm run typecheck && npm test && npm run test:preflight && npm run build && npm run test:runtime"
   },
   "dependencies": {
@@ -24,13 +25,14 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@playwright/test": "1.62.1",
     "@tailwindcss/postcss": "4.3.3",
-    "tailwindcss": "4.3.3",
-    "typescript": "5.9.3",
-    "eslint": "9.39.1",
-    "eslint-config-next": "16.3.5",
     "@types/node": "^22.19.0",
     "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0"
+    "@types/react-dom": "^19.2.0",
+    "eslint": "9.39.1",
+    "eslint-config-next": "16.3.5",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3"
   }
 }
