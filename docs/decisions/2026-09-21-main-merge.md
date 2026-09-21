@@ -28,3 +28,17 @@ browser slice `8e8e14b287ebdcc28ed1bd511cb7cbbab914d62b` into main at
 stacked draft PR #3 was closed as superseded after its work was included in main.
 R8-2 then continued on the development branch. This instruction did not authorize
 a deployment, live-domain change or backend integration before owner visual review.
+
+## State observed when R8-3A began
+
+GitHub reported PR #6 already merged at
+`b1f0e095721d5b56a502598fe1478893ebf4e356`, and the existing Vercel project reported
+a READY production deployment from that SHA. Its tree exactly matched the preceding
+R8-2 development head `528d6b172cd04d98a10541c200be048c7163ab8d`. The local work
+branch was fast-forwarded to the merge without replacing any source or edits.
+
+The current owner request is to diagnose the Vercel warning and implement R8-3A.
+It does not ask for another main merge. R8-3A is published separately for review.
+The newly observed Git integration means main pushes can now deploy production;
+later tasks must inspect deployment triggers instead of relying on earlier
+zero-project observations. See `docs/VERCEL_RUNTIME_ALIGNMENT.md`.

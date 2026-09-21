@@ -2,7 +2,7 @@
 
 **Repository:** `rivyalivingart2/RivyaLivingArt2.0`  
 **Work branch:** `codex/r8-first-frontend`  
-**Stage:** R8-2 furniture UI verified in the actual browser; next is R8-3A.
+**Stage:** R8-3A memory/personal UI verified in the actual browser; next is R8-3B.
 
 This is a new application, as confirmed by the owner on 21 September 2026.
 The earlier Markdown-only state was intentional. [The owner decision](docs/decisions/2026-09-21-new-build.md)
@@ -12,18 +12,20 @@ supersedes the old source-absence guard without discarding documents or history.
 
 Next.js App Router/TypeScript source, CSS-first Tailwind configuration, dark semantic
 tokens, locally hosted typography, responsive header/mobile-dialog navigation,
-furniture-led homepage, 12 labelled furniture concepts, URL filters/pagination,
-detail galleries, finish choices, sample specifications, status-only Studio,
+furniture-led homepage, 24 labelled concepts (12 furniture / 6 memory / 6 personal),
+distinct cards and tier-specific details, URL filters/pagination, gallery and local
+finish/variant choices, sample specifications, status-only Studio,
 and loading/error/404 views. The two compact concept images derive from the owner's
 Drive collection. They are AI concepts, not real product photographs or stock.
-Ten studies have explicit visual-pending states; higher-resolution media remains
+Twenty-two studies have explicit visual-pending states; higher-resolution media remains
 unavailable. No unrelated images are assigned to those products.
 
 **Not complete:** full frontend, staff login, CMS,
 database/storage, enquiries, imports, full demo pack
-or deployment. No code in this slice collects personal data or sends messages.
+or protected visual-preview handoff. The existing Vercel production deployment
+serves the intended holding screen. No code in this slice collects personal data or sends messages.
 
-Read [Codex workflow](docs/CODEX_WORKFLOW.md), [current furniture verification](docs/R8-2_FURNITURE_FRONTEND.md)
+Read [Codex workflow](docs/CODEX_WORKFLOW.md), [current R8-3A verification](docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md)
 and [current checkpoint](PROJECT_STATE.md) before continuing.
 
 ## Run locally
@@ -46,7 +48,7 @@ npm run dev
 
 `npm run check` runs lint, typecheck, unit, preflight, build and HTTP regression
 checks. `npm run test:e2e` separately runs the actual Chromium browser suite after
-browser installation and a build: 98 passed across four sizes, with 10 mobile-only
+browser installation and a build: 146 passed across four sizes, with 10 mobile-only
 cases inapplicable on desktop/tablet. Typecheck generates Next route types first,
 so it works before the first build. Runtime tests start the real built app on
 loopback; they do not exercise a
@@ -62,7 +64,7 @@ receives a holding page for these fixture routes.
 
 - `src/app/`: App Router layouts, collection/concept pages and system views.
 - `src/components/`: reusable first public components; `src/styles/`: semantic tokens.
-- `src/lib/`: 12 typed source concepts, server-side query helpers and preview policy.
+- `src/lib/`: 24 typed source concepts, server-side query helpers and preview policy.
 - `src/styles/fonts/`: local WOFF2 files, original OFL licenses and hash manifest.
 - `public/media/concepts/`: two small preview derivatives, not original masters.
 - `tests/`: dependency-free fixture/policy/source-contract tests.
@@ -73,7 +75,9 @@ receives a holding page for these fixture routes.
 - `docs/R8-1_FRONTEND_FOUNDATION.md`: preserved initial source-slice evidence.
 - `docs/R8-1_DEPENDENCY_VERIFICATION.md`: historical install/build/runtime evidence.
 - `docs/R8-1_BROWSER_VERIFICATION.md`: preserved foundation browser evidence.
-- `docs/R8-2_FURNITURE_FRONTEND.md`: current furniture features, results and screenshots.
+- `docs/R8-2_FURNITURE_FRONTEND.md`: furniture slice features, results and screenshots.
+- `docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md`: current features, checks and screenshots.
+- `docs/VERCEL_RUNTIME_ALIGNMENT.md`: verified runtime mismatch and exact remaining setting.
 - `docs/decisions/2026-09-21-main-merge.md`: owner-authorized PR #4 main integration.
 - `docs/decisions/2026-09-21-new-build.md`: confirmed initial-creation decision.
 - `docs/R8-0_AUDIT.md` and `docs/R8-0_REMOTE_VERIFICATION.md`: unchanged history.
@@ -94,6 +98,8 @@ receives a holding page for these fixture routes.
 Frontend and Studio visuals precede real integrations. R8-5 gives an owner-controlled
 protected visual-preview handoff; R8-11 addresses the complete application. Neither
 milestone has been reached. The owner separately authorized PRs #4 and #5 merging accumulated
-work into main; new slices continue on the development branch. No Vercel project,
-deployment or domain change occurred. Exact business rules and exclusions remain
-in the brief.
+work into main; PR #6 is also now merged. New slices continue on the development
+branch. Vercel Git integration now exists, so development pushes may build previews
+and main pushes may deploy production. This task changed no deployment settings or
+domains. The Node22 project-setting alignment is recorded in the runtime note.
+Exact business rules and exclusions remain in the brief.

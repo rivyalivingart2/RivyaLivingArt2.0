@@ -1,0 +1,111 @@
+.page { padding-top: 76px; }
+.memoryIntroduction { display: grid; grid-template-columns: 1.6fr 1fr; gap: 8vw; align-items: center; margin-bottom: 60px; }
+.introCopy { max-width: 610px; color: var(--muted); font-size: 16px; line-height: 1.9; }
+.memoryAside { border-left: 1px solid var(--primary); padding-left: 32px; }
+.memoryAside > p { font-family: var(--font-display); font-size: clamp(28px, 3vw, 42px); line-height: 1.2; }
+.memoryAside > span, .personalAside > span { display: block; max-width: 270px; margin-top: 22px; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.memoryJourney { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 26px 0; margin: 0; list-style: none; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.memoryJourney > li { display: flex; align-items: baseline; gap: 18px; padding: 0 26px; border-right: 1px solid var(--border); }
+.memoryJourney > li:first-child { padding-left: 0; }
+.memoryJourney > li:last-child { padding-right: 0; border: 0; }
+.memoryJourney > li > span { color: var(--primary-hover); font-family: var(--font-data); font-size: 10px; }
+.memoryJourney h2 { font-size: 26px; line-height: 1.2; letter-spacing: -.02em; }
+.memoryJourney p { margin-top: 9px; font-size: 12px; line-height: 1.8; color: var(--muted); max-width: 265px; }
+.results { margin-top: 74px; scroll-margin-top: 28px; }
+.resultsHeading { display: flex; justify-content: space-between; align-items: end; gap: 35px; margin-bottom: 32px; }
+.resultsHeading h2 { font-size: clamp(36px, 3.8vw, 54px); }
+.resultsHeading > p { color: var(--muted); max-width: 280px; font-size: 12px; line-height: 1.8; }
+.filterPanel { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.filterPanel summary { cursor: pointer; padding: 20px 0; font-size: 13px; }
+.filterPanel summary > span { float: right; color: var(--primary-hover); font-family: var(--font-data); }
+.filterPanel summary > span::before { content: "+"; }
+.filterPanel[open] summary > span::before { content: "−"; }
+.filters { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; padding-bottom: 26px; align-items: end; }
+.filters label { display: grid; gap: 9px; color: var(--muted); font-size: 12px; min-width: 0; }
+.filters select { width: 100%; min-width: 0; min-height: 50px; border: 1px solid var(--control-border); border-radius: 0; padding: 10px 28px 10px 12px; background: var(--background); color: var(--foreground); font: inherit; cursor: pointer; }
+.filters button { grid-column: 4; }
+.resultSummary { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 84px; color: var(--muted); font-size: 12px; }
+.resultSummary a { flex-shrink: 0; }
+.memoryGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 55px 35px; }
+.personalGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px 24px; }
+.emptyState { padding: 55px 30px; border: 1px solid var(--border); text-align: center; background: var(--surface); }
+.emptyState h3 { font-size: clamp(30px, 3vw, 44px); line-height: 1.2; margin: 18px 0; }
+.emptyState > p:not(:first-child) { color: var(--muted); max-width: 530px; margin: 0 auto; font-size: 14px; }
+.emptyState a { margin-top: 28px; }
+.pagination { display: flex; align-items: center; justify-content: space-between; gap: 15px; border-top: 1px solid var(--border); padding-top: 28px; margin-top: 45px; font-size: 13px; }
+.pagination > a, .pagination > span { padding: 12px 0; }
+.pagination a:hover { color: var(--primary-hover); }
+.pagination [aria-disabled] { color: var(--muted); opacity: .65; }
+.pageNumbers { display: flex; gap: 8px; }
+.pageNumbers a { display: grid; place-items: center; width: 44px; min-height: 44px; border: 1px solid transparent; }
+.pageNumbers a[aria-current] { border-color: var(--primary); color: var(--primary-hover); }
+.memoryNote { margin: 80px auto 0; padding: 46px 30px; max-width: 880px; text-align: center; border-top: 1px solid var(--border); }
+.memoryNote h2 { margin: 18px 0 24px; }
+.memoryNote > p:last-child { max-width: 620px; margin: 0 auto; font-size: 14px; line-height: 1.85; color: var(--muted); }
+.personalIntroduction { display: flex; justify-content: space-between; align-items: end; gap: 65px; margin-bottom: 45px; }
+.personalAside { flex-shrink: 0; padding-bottom: 5px; }
+.personalAside > p { font-family: var(--font-display); font-size: 34px; line-height: 1.2; }
+.personalAside > span { max-width: 240px; }
+.recipients { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 26px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.recipients > span { margin-right: 15px; }
+.recipients a { display: inline-flex; align-items: center; justify-content: space-between; gap: 30px; padding: 11px 15px; border: 1px solid var(--border); font-size: 12px; min-height: 44px; }
+.recipients svg { width: 16px; height: 16px; color: var(--primary); }
+.recipients a:hover, .recipients a[aria-current] { border-color: var(--primary); background: var(--surface); }
+.personalPage .results { margin-top: 52px; }
+.personalNote { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 8vw; padding-top: 50px; margin-top: 75px; border-top: 1px solid var(--border); }
+.personalNote h2 { margin-top: 18px; }
+.personalNote > p { font-size: 14px; color: var(--muted); line-height: 1.9; max-width: 490px; }
+@media (max-width: 1000px) {
+  .memoryIntroduction { gap: 5vw; }
+  .memoryAside { padding-left: 23px; }
+  .memoryJourney > li { gap: 12px; padding: 0 16px; }
+  .memoryJourney h2 { font-size: 24px; }
+  .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .filters button { grid-column: 2; }
+  .personalGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 45px 28px; }
+  .personalIntroduction { gap: 35px; }
+  .personalAside > p { font-size: 29px; }
+  .personalAside > span { max-width: 185px; }
+}
+@media (max-width: 760px) {
+  .page { padding-top: 50px; }
+  .memoryIntroduction { grid-template-columns: 1fr; gap: 30px; margin-bottom: 36px; }
+  .introCopy { font-size: 14px; }
+  .memoryAside { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding-left: 20px; }
+  .memoryAside > p { font-size: 27px; }
+  .memoryAside > span { margin-top: 0; font-size: 11px; }
+  .memoryJourney { grid-template-columns: 1fr; padding: 4px 0; }
+  .memoryJourney > li, .memoryJourney > li:first-child, .memoryJourney > li:last-child { padding: 18px 0; border-right: 0; gap: 22px; }
+  .memoryJourney > li + li { border-top: 1px solid var(--border); }
+  .memoryJourney h2 { font-size: 26px; }
+  .memoryJourney p { max-width: 100%; margin-top: 6px; }
+  .results, .personalPage .results { margin-top: 45px; }
+  .resultsHeading { align-items: start; flex-direction: column; gap: 16px; margin-bottom: 24px; }
+  .resultsHeading > p { max-width: 100%; }
+  .filters { gap: 16px; }
+  .filters select { font-size: 13px; }
+  .filters button { grid-column: 1/-1; }
+  .resultSummary { min-height: 75px; gap: 12px; }
+  .memoryGrid { grid-template-columns: 1fr; gap: 44px; }
+  .personalGrid { gap: 35px 18px; }
+  .emptyState { padding: 40px 22px; }
+  .pagination { gap: 8px; font-size: 12px; }
+  .pageNumbers { gap: 3px; }
+  .pageNumbers a { width: 38px; }
+  .memoryNote { padding: 35px 0 0; margin-top: 50px; text-align: left; }
+  .personalIntroduction { display: block; margin-bottom: 30px; }
+  .personalAside { margin-top: 25px; }
+  .personalAside > p { display: none; }
+  .personalAside > span { max-width: 100%; margin-top: 0; }
+  .recipients { gap: 10px; padding: 20px 0; }
+  .recipients > span { width: 100%; margin-bottom: 3px; }
+  .recipients a { padding: 9px 12px; gap: 16px; font-size: 11px; }
+  .personalNote { grid-template-columns: 1fr; gap: 22px; padding-top: 40px; margin-top: 50px; }
+}
+@media (max-width: 600px) {
+  .filters { grid-template-columns: 1fr; }
+}
+@media (max-width: 380px) {
+  .memoryAside { grid-template-columns: 1fr; gap: 15px; }
+  .personalGrid { grid-template-columns: 1fr; }
+}

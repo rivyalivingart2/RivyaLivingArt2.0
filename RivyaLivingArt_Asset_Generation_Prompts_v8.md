@@ -603,3 +603,135 @@ Review every returned image against the corresponding concept before mapping.
 Do not stretch a small derivative or reuse a different object's picture to fill
 these slots. Additional angles, material macros, film and usable 3D models remain
 unprovided; the current static media controls must not imply those assets exist.
+
+## R8-3A asset checkpoint — 21 September 2026
+
+This slice adds six memory-art and six personal-art source concepts. **All twelve
+hero slots below remain visual pending.** Preparing this ledger has not generated,
+downloaded, uploaded, approved or mapped any output. No Drive action was taken.
+The two existing furniture derivatives cannot stand in for these different objects.
+
+Each request covers the card hero at the collection route shown and the gallery at
+the exact detail route. W08 `MemoryProductCard` and W09 `PersonalArtProductCard` are
+exported from `src/components/concept-card.tsx`; their collection owners are
+`MemoryCollection` and `PersonalArtCollection` in `src/components/art-collections.tsx`.
+Every requested output is a **fictional AI concept visualization**, not a real
+commission, customer keepsake or proof of available stock. All slots currently use
+the shared “Demo concept — visual pending” fallback. Owner-returned file IDs,
+selected source IDs, actual dimensions/bytes, rights review, approval and derivative
+paths are **none / not yet verified** for every row.
+
+The three `PRODUCT-HERO` references are name-based candidates from the existing
+source index, not approved images. Inspect an owner-authorized source before
+deciding whether a replacement is necessary. Rows marked `NEEDS_PROMPT` only map an
+existing template; their variables still need a product-specific review before use.
+Only the next two filled prompts below are ready for owner generation.
+
+| Request / concept | Collection card / exact detail route | Existing candidate or template | Priority / state | Output filename |
+| --- | --- | --- | --- | --- |
+| R83A-DP085-HERO — Vow Framed Varmala Keepsake | `/memory-art` · `/pieces/vow-framed-varmala-keepsake` | `PRODUCT-HERO-020`; inspect first; IMG13 if unsuitable | P1 · awaiting source review | `rivya-dp085-vow-keepsake-concept-4x5-v01.png` |
+| R83A-DP091-HERO — Hourglass Floral Wall Clock | `/memory-art` · `/pieces/hourglass-floral-wall-clock` | IMG12-DP091, filled below | P1 · AWAITING_OWNER_OUTPUT | `rivya-dp091-hourglass-clock-concept-4x5-v01.png` |
+| R83A-DP095-HERO — Union Engagement Tray | `/memory-art` · `/pieces/union-engagement-tray` | IMG14; one tray, blank personalization area | P1 · NEEDS_PROMPT | `rivya-dp095-union-tray-concept-4x5-v01.png` |
+| R83A-DP099-HERO — Letterlight Invitation Frame | `/memory-art` · `/pieces/letterlight-invitation-frame` | IMG16 adapted to a frame with a blank, non-identifying paper insert | P2 · NEEDS_PROMPT | `rivya-dp099-letterlight-frame-concept-4x5-v01.png` |
+| R83A-DP103-HERO — Threshold Family Nameplate | `/memory-art` · `/pieces/threshold-family-nameplate` | IMG15; standalone plate with no names, numbers or address | P1 · NEEDS_PROMPT | `rivya-dp103-threshold-nameplate-concept-4x5-v01.png` |
+| R83A-DP107-HERO — First Chapter Baby Keepsake | `/memory-art` · `/pieces/first-chapter-baby-keepsake` | IMG16; abstract/botanical contents without personal records | P2 · NEEDS_PROMPT | `rivya-dp107-first-chapter-keepsake-concept-4x5-v01.png` |
+| R83A-DP109-HERO — Botanical Resin Pendant | `/personal-art` · `/pieces/botanical-resin-pendant` | IMG17-DP109, filled below | P1 · AWAITING_OWNER_OUTPUT | `rivya-dp109-botanical-pendant-concept-4x5-v01.png` |
+| R83A-DP111-HERO — Thread of Light Resin Rakhi | `/personal-art` · `/pieces/thread-of-light-resin-rakhi` | IMG18; one rakhi, no person or festival-year text | P1 · NEEDS_PROMPT | `rivya-dp111-thread-of-light-rakhi-concept-4x5-v01.png` |
+| R83A-DP112-HERO — Initial Story Keychain | `/personal-art` · `/pieces/initial-story-keychain` | IMG19 adapted to one keychain in portrait; lettering area blank | P2 · NEEDS_PROMPT | `rivya-dp112-initial-story-keychain-concept-4x5-v01.png` |
+| R83A-DP113-HERO — Chaptermark Flower Bookmark | `/personal-art` · `/pieces/chaptermark-flower-bookmark` | IMG19 adapted to one bookmark in portrait; no readable book text | P2 · NEEDS_PROMPT | `rivya-dp113-chaptermark-bookmark-concept-4x5-v01.png` |
+| R83A-DP114-HERO — Everyday Resin Coaster Set | `/personal-art` · `/pieces/everyday-resin-coaster-set` | `PRODUCT-HERO-029`; inspect first; IMG19 single-set portrait adaptation if unsuitable | P2 · awaiting source review | `rivya-dp114-everyday-coaster-set-concept-4x5-v01.png` |
+| R83A-DP120-HERO — Little Archive Keepsake Box | `/personal-art` · `/pieces/little-archive-keepsake-box` | `PRODUCT-HERO-035`; inspect first; IMG19 single-box portrait adaptation if unsuitable | P2 · awaiting source review | `rivya-dp120-little-archive-box-concept-4x5-v01.png` |
+
+**Composition/native target for every requested hero:** 4:5, ideally 2048×2560
+native pixels, with the entire object and comfortable crop margins visible. This
+is a target for new output, not a claim about the existing source candidates.
+Record the actual native size on return; never upscale a small source and report
+the target as its original resolution. Preserve identity when reviewing a source
+candidate; do not recolour it to match the UI. Additional gallery angles, macros
+and video are not requested or implied by this single-hero ledger.
+
+### IMG12-DP091 — Hourglass Floral Wall Clock
+
+**Request:** R83A-DP091-HERO · prompt version 1 · P1.
+
+**Placement:** `/memory-art` / `MemoryProductCard`; `/pieces/hourglass-floral-wall-clock`
+/ shared `ProductGallery`.
+
+**Fixture direction:** circular resin-and-metal clock study, uneven floral ring,
+open centre and clearly separated hands. Sample diameters are 300 or 400 mm, with
+40 or 45 mm depth; these are concept proportions, not verified manufacturing dimensions.
+
+**Required reference:** none; create an original fictional design. No customer
+flowers, photographs or documents are requested.
+
+**Output:** `rivya-dp091-hourglass-clock-concept-4x5-v01.png`; portrait 4:5,
+target native 2048×2560. **Classification:** fictional AI concept visualization.
+
+**State:** AWAITING_OWNER_OUTPUT; returned source ID none; no output generated or
+mapped. **Fallback:** “Demo concept — visual pending”; no film/poster requested.
+
+```text
+Create an original, explicitly fictional concept visualization for RivyaLivingArt:
+Hourglass Floral Wall Clock, DP091. Despite its name, this is a circular wall-clock
+design, not a sand timer. Compose an uneven ring of small botanical forms within a
+restrained resin disc, leaving a calm open centre around clearly legible metal hands.
+Let the floral ring feel considered but not perfectly symmetrical. Keep the outline,
+hands and resin depth visibly separate, with enough quiet space to read the whole
+object at card size. Use a near-frontal view with a slight angle that reveals depth,
+on an anonymous warm-neutral wall against a forest-dark surrounding composition.
+Soft ivory side light should reveal translucent depth without neon glow, exaggerated
+sparkle or a glass-like mirror hiding the flowers. The object should suggest a wall
+clock of approximately 300–400 mm diameter, never a miniature or oversized room clock.
+Show the complete perimeter and comfortable crop margins. Use no real names, dates,
+dedications, clock-face lettering, customer materials, people, logos or measurements.
+Do not display invented mounting hardware, a mechanism specification, documentary
+preservation work or proof of colour retention. This is an unbuilt concept, not an
+available product or a processed sentimental object. Return one clean vertical 4:5
+image at the highest native resolution available; do not upscale to claim detail.
+```
+
+### IMG17-DP109 — Botanical Resin Pendant
+
+**Request:** R83A-DP109-HERO · prompt version 1 · P1.
+
+**Placement:** `/personal-art` / `PersonalArtProductCard`;
+`/pieces/botanical-resin-pendant` / shared `ProductGallery`.
+
+**Fixture direction:** a simple resin outline around one botanical accent, with
+restrained metal fitting direction. The sample body is 24×7×34 mm (width/depth/height).
+This first request depicts the **clear botanical direction only**. The rose direction
+has no image; one output does not verify both variants or permit automatic recolouring.
+
+**Required reference:** none; create an original fictional design.
+
+**Output:** `rivya-dp109-botanical-pendant-concept-4x5-v01.png`; portrait 4:5,
+target native 2048×2560. **Classification:** fictional AI concept visualization.
+
+**State:** AWAITING_OWNER_OUTPUT; returned source ID none; no output generated or
+mapped. **Fallback:** “Demo concept — visual pending”; no film/poster requested.
+
+```text
+Create an original, explicitly fictional concept visualization for RivyaLivingArt:
+Botanical Resin Pendant, DP109. Show one small clear-resin pendant with a simple,
+restrained outline holding a single delicate botanical accent. Keep the botanical
+form legible without filling the entire resin body. Use a modest metal fitting as
+a visual direction only, with no hallmark, material-grade label or promise about
+the eventual fastening. Present the pendant alone in a clean, slightly angled
+still life on a warm ivory mineral surface with a quiet forest-dark background.
+Its body should read as an intimate object, roughly 24 mm wide and 34 mm high with
+restrained depth, not as a large sculpture. Show the entire outline and fitting
+with generous crop margins and soft side light that reveals the botanical detail.
+Choose the clear visual direction only; do not add a second rose-tinted pendant,
+comparison panel or a chain of an invented length. Leave personalization blank.
+No person, skin, hands, names, initials, logos, price tags, measurements, excessive
+sparkles or purported customer context. Do not imply manufactured stock, verified
+allergy suitability, skin-contact properties or durable performance. Return one
+clean vertical 4:5 image at the highest native resolution available. This is a
+fictional design study; it must not be described as a product photograph.
+```
+
+On return, review each output against its exact fixture and route before approving
+alt text, crops and modest delivery derivatives. Record any visible design
+difference instead of silently changing the fixture or treating a generated image
+as proof of construction. Source review, rights confirmation and mapping remain
+outstanding for all twelve slots in this checkpoint.

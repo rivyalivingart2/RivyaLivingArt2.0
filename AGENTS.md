@@ -12,8 +12,9 @@ superseded for this initialization. Do not restart the source-gap/approval loop.
 The first frontend source now exists. Preserve it, all briefs and Git history.
 
 The owner subsequently authorized merging accumulated work into main; PRs #4 and
-#5 are merged. See `docs/decisions/2026-09-21-main-merge.md`. Continue new work on the
-development branch. This authorization did not deploy the site or waive visual QA.
+#5 are merged. PR #6 was also already merged when R8-3A began; main is now
+`b1f0e095721d5b56a502598fe1478893ebf4e356`. Continue new work on the development
+branch. See `docs/decisions/2026-09-21-main-merge.md`. Visual QA remains required.
 
 - Exact brand: **RivyaLivingArt**. Large collectible resin furniture/spatial art
   leads; memory art and personal gifts are distinct secondary journeys.
@@ -28,8 +29,8 @@ development branch. This authorization did not deploy the site or waive visual Q
 - Use approved Drive media first. Write missing image/video prompts for the owner
   in the existing separate asset document. No replacement logo, product recolouring,
   private media or large original media collections in Git.
-- Twelve labelled LARGE source fixtures now exist (two images, ten pending visuals).
-  The complete demo dataset, CMS,
+- Twenty-four labelled source fixtures exist: 12 LARGE / 6 MEDIUM / 6 SMALL;
+  two images, 22 pending visuals. The complete demo dataset, CMS,
   staff login, data/storage and real enquiries remain planned work.
 - Current visual flag is NOT authentication. Online preview requires separately
   verified deployment protection. Never enable fixture routes in Vercel production.
@@ -56,15 +57,20 @@ npx playwright install chromium # once per browser environment
 npm run test:e2e # after npm run build; actual local browser tests
 ```
 
-R8-2 furniture source and actual browser checks now pass: 33 unit, 12 preflight,
-59 HTTP and 98 Chromium browser tests, with 10 mobile-only cases inapplicable on
-desktop/tablet. Lint/typecheck/build pass. Actual screenshots cover the furniture
-journey at 1440/768/390/320 px, filters/history, finishes, gallery focus and media
-fallbacks. Browser Use's cloud loopback restriction is unchanged; local Playwright
-provides the real app evidence without weakening network controls.
-The furniture UI is ready for continued frontend development with explicit media
-gaps. This is not R8-5 owner visual approval. Next: R8-3A distinct memory/personal
-collection presentations and tier-aware sample detail pages.
+R8-3A memory/personal collections and tier-specific details now pass actual checks:
+48 unit, 12 preflight, 95 HTTP and 146 Chromium browser tests, with 10 mobile-only
+cases inapplicable on desktop/tablet. Clean npm ci, lint/typecheck/build pass. Read
+`docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md` for current evidence and media limits.
+Browser Use's cloud loopback restriction is unchanged; local Playwright supplies
+real app evidence without weakening network controls. This is not R8-5 owner approval.
+Next: R8-3B commission/preservation/gifting form visuals, keyboard validation,
+local summary and explicitly simulated receipt; no real submission or upload.
+
+The owner-created Vercel project now exists and main deployments are READY. Preview
+authentication is reported enabled. Recheck deployment target and protection before
+publishing. The Node22 app overrides a Node24 project default; saving 22.x in the
+Vercel dashboard remains an owner action because setting-write access is unavailable.
+See `docs/VERCEL_RUNTIME_ALIGNMENT.md`. Never expose fixtures in production.
 
 ## Git and continuity
 

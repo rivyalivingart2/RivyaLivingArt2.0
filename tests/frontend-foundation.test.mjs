@@ -24,12 +24,14 @@ test('furniture, memory and personal worlds remain distinct and ordered', () => 
   assert.deepEqual(collections.map(x => x.tier), ['LARGE', 'MEDIUM', 'SMALL']);
   assert.equal(new Set(collections.map(x => x.slug)).size, 3);
 });
-test('the furniture slice contains twelve authored source fixtures, not a completed seed pack', () => {
-  assert.equal(concepts.length, 12);
-  assert.deepEqual(concepts.map(x => x.id).sort(), ['DP001', 'DP002', 'DP013', 'DP014', 'DP025', 'DP035', 'DP043', 'DP048', 'DP051', 'DP057', 'DP069', 'DP077']);
+test('the progressive catalogue contains twenty-four source fixtures, not a completed seed pack', () => {
+  assert.equal(concepts.length, 24);
+  assert.deepEqual(conceptsForTier('LARGE').map(x => x.id).sort(), ['DP001', 'DP002', 'DP013', 'DP014', 'DP025', 'DP035', 'DP043', 'DP048', 'DP051', 'DP057', 'DP069', 'DP077']);
+  assert.deepEqual(conceptsForTier('MEDIUM').map(x => x.id).sort(), ['DP085', 'DP091', 'DP095', 'DP099', 'DP103', 'DP107']);
+  assert.deepEqual(conceptsForTier('SMALL').map(x => x.id).sort(), ['DP109', 'DP111', 'DP112', 'DP113', 'DP114', 'DP120']);
 });
 test('fixture keys and slugs are unique', () => {
-  for (const field of ['id','slug']) assert.equal(new Set(concepts.map(x=>x[field])).size, concepts.length);
+  for (const field of ['id','slug','demoFixtureKey']) assert.equal(new Set(concepts.map(x=>x[field])).size, concepts.length);
 });
 test('sample catalogue retains fictional provenance and contains no customer information', () => {
   for (const p of concepts) {
@@ -65,8 +67,11 @@ test('unknown concepts never resolve to an arbitrary fallback product', () => {
   assert.equal(findConcept('../studio'),undefined);
   assert.equal(findConcept(concepts[0].slug)?.id,'DP001');
 });
-test('secondary collections have honest empty states instead of misclassified furniture', () => {
-  assert.equal(conceptsForTier('MEDIUM').length,0); assert.equal(conceptsForTier('SMALL').length,0);
+test('secondary collections resolve their own typed concepts without misclassified furniture', () => {
+  assert.equal(conceptsForTier('MEDIUM').length,6); assert.equal(conceptsForTier('SMALL').length,6);
+  assert.ok(conceptsForTier('MEDIUM').every(piece => piece.tier === 'MEDIUM' && 'memory' in piece && !('personal' in piece)));
+  assert.ok(conceptsForTier('SMALL').every(piece => piece.tier === 'SMALL' && 'personal' in piece && !('memory' in piece)));
+  assert.equal(findCollection('memory-art')?.tier,'MEDIUM'); assert.equal(findCollection('personal-art')?.tier,'SMALL');
   assert.equal(findCollection('collectible-design')?.tier,'LARGE'); assert.equal(findCollection('studio'),undefined);
 });
 test('no fixture route becomes a public indexed offer', () => {

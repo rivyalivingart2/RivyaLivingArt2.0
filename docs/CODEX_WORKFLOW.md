@@ -11,11 +11,13 @@ specification; the dated owner decision supersedes their initial source-gap guar
 **Do not ask for old source, restore another repository, scaffold again or generate
 another prompt pack.** Continue the source now present.
 
-**Current continuation update:** R8-2 furniture source and real browser checks are
-verified: 12 authored concepts, 33 unit / 12 preflight / 59 HTTP / 98 browser tests;
-10 mobile-only cases are inapplicable on desktop/tablet. Lint/typecheck/build pass.
-Read `docs/R8-2_FURNITURE_FRONTEND.md` and the main-merge decision. The next task is
-R8-3A; do not repeat the earlier source/network/browser blocker diagnosis.
+**Current continuation update:** R8-3A is verified: 24 authored concepts
+(12/6/6), 48 unit / 12 preflight / 95 HTTP / 146 browser tests; 10 mobile-only cases
+are inapplicable on desktop/tablet. Clean npm ci, lint/typecheck/build pass. Read
+`docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md` and `docs/VERCEL_RUNTIME_ALIGNMENT.md`.
+The next task is R8-3B. PR #6 was already merged when this slice began; new work
+continues on development. Vercel now has Git deployment triggers and Preview
+protection; the app's Node22 requirement overrides its Node24 project default.
 
 ## 1. Open the correct branch
 
@@ -87,16 +89,18 @@ present; do not scaffold again or ask for old application files.
 Read AGENTS.md, PROJECT_STATE.md, docs/CODEX_WORKFLOW.md, the new-build decision
 and the R8-1 evidence document. Follow the relevant Revision 8 requirements.
 
-The R8-2 furniture frontend is verified; read its current
+The R8-3A memory/personal frontend is verified; read its current
 evidence. Use npm ci, npm run check and npm run test:e2e with installed Chromium
 to reproduce it. Resolve real errors without suppressing checks.
 
-Continue R8-3A: distinct memory-art and personal-art collection presentations
-and tier-aware sample detail pages. Progressively author the required content using
+Continue R8-3B: furniture commission, memory-preservation and personal-gifting
+form visuals, keyboard validation, local summary and an explicitly simulated receipt.
+Do not send real requests, upload files or launch messages. Progressively author the required content using
 reusable components, the dark logo-derived tokens and honest fixture labels.
 Do not start backend implementation before the visual-review gate.
 
-Twelve fictional LARGE source products currently exist; ten lack approved visuals. Complete the specified
+Twenty-four fictional source products exist (12 LARGE / 6 MEDIUM / 6 SMALL);
+22 lack approved visuals. Complete the specified
 120/36/42/24/40 source content progressively; do not claim full counts early.
 Use the known Drive sources first and give missing image/video prompts to the
 owner in the separate asset document. Do not generate a replacement logo.
@@ -112,7 +116,7 @@ remote SHA. Check deployment triggers before publishing. Never force-push or
 merge/deploy production. Report unrun/failed checks and blocked publishing honestly.
 
 At R8-5 provide the protected Vercel visual-preview handoff and pause backend
-work for owner review. The completed R8-2 furniture slice is NOT that completed gate.
+work for owner review. The completed R8-3A sample journeys are NOT that completed gate.
 ```
 
 ## 4. Git, readiness and next sessions
@@ -128,10 +132,13 @@ Verify publication from the actual branch reference, e.g. compare local HEAD wit
 Connector-based publication must instead verify the created commit and branch via
 the connector. A created commit object alone is not a branch update.
 
-The connected Vercel team returned no projects during this slice. Recheck later;
-this does not cover unrelated accounts. No project creation, paid activation, preview
-deployment or live-domain action occurred. The owner separately authorized PRs #4 and #5
-merging accumulated work into main; later work continues on the development branch.
+The connected Vercel project now exists and has READY production deployments from
+main. Preview authentication is reported enabled (`all_except_custom_domains`).
+Recheck target and protection before publishing: a development push may trigger a
+Preview build, while main may deploy production. The runtime note documents the
+remaining dashboard default alignment to Node22; no environment or protection
+setting was changed here. The owner separately authorized PRs #4/#5; PR #6 was
+already merged when this slice began. Later work continues on development.
 Preview protection and build verification remain prerequisites; a preview flag
 and noindex are not access control.
 
