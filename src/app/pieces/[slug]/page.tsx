@@ -7,6 +7,8 @@ import { isVisualPreviewAllowed } from "@/lib/preview-mode";
 import { ConceptCard } from "@/components/concept-card";
 import { FinishOptions } from "@/components/finish-options";
 import { ProductGallery } from "@/components/product-gallery";
+import { MemoryDetail } from "@/components/memory-detail";
+import { PersonalDetail } from "@/components/personal-detail";
 import styles from "./piece.module.css";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -21,6 +23,8 @@ export default async function PiecePage({ params }: Props) {
   if (!isVisualPreviewAllowed(process.env)) notFound();
   const piece = findConcept((await params).slug);
   if (!piece) notFound();
+  if (piece.tier === "MEDIUM") return <MemoryDetail piece={piece} />;
+  if (piece.tier === "SMALL") return <PersonalDetail piece={piece} />;
   const related = relatedConcepts(piece);
   const dimensions = piece.dimensions;
 

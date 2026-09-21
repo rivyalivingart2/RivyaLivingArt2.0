@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import {
-  concepts, queryFurniture, catalogueHref, formatPrice, relatedConcepts,
+  furnitureConcepts as concepts, queryFurniture, catalogueHref, formatPrice, relatedConcepts,
   categoryOptions, materialOptions, sizeOptions, sortOptions,
 } from '../src/lib/catalogue.ts';
 

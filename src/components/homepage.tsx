@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { collections, concepts } from "@/lib/catalogue";
+import { collections, conceptsForTier } from "@/lib/catalogue";
 import { ConceptCard } from "@/components/concept-card";
 import { ConceptImage } from "@/components/concept-image";
 import { Arrow } from "@/components/ui/arrow";
@@ -13,6 +13,7 @@ const directions = [
 ];
 
 export function Homepage() {
+  const concepts = conceptsForTier("LARGE");
   const hero = concepts[0];
   const selected = ["DP001", "DP013", "DP043", "DP035"].flatMap((id) => {
     const piece = concepts.find((concept) => concept.id === id);

@@ -1,5 +1,51 @@
 # RivyaLivingArt project state
 
+## R8 checkpoint — 2026-09-21 (R8-3A memory and personal art)
+
+- **Owner request:** diagnose the Vercel runtime warning, then implement R8-3A.
+  The application selects tested Node 22; Vercel project default is 24.x. Dashboard
+  alignment to 22.x remains an owner action because no authenticated setting-write
+  capability is available here. See `docs/VERCEL_RUNTIME_ALIGNMENT.md`.
+- **Remote continuity:** PR #6 was already merged externally at main
+  `b1f0e095721d5b56a502598fe1478893ebf4e356`, confirmed through GitHub and a READY
+  Vercel production deployment. Its tree matched development head
+  `528d6b172cd04d98a10541c200be048c7163ab8d`; the work branch was fast-forwarded
+  without changing its source or discarding in-progress work.
+- **Phase / work branch:** R8-3A on `codex/r8-first-frontend`, based on that main
+  merge. This task did not merge main, deploy production or change a domain.
+- **Implemented:** discriminated shared catalogue; distinct memory story cards,
+  personal gift cards, server-validated tier facets/sorts/pagination, empty/reset
+  states; preservation and gifting details, related work, honest guidance and local
+  variant radios. Furniture remains primary and all original furniture values match.
+- **Fixtures / persistence:** 24 authored concepts (12 LARGE / 6 MEDIUM / 6 SMALL),
+  zero database rows. New narratives are 134–142 words and summaries 46–50 words,
+  with exact blueprint names and versioned IDs. Full 120/36/42/24/40 content is ahead.
+- **Media:** two approved images unchanged, 22 visual-pending studies. The existing
+  asset companion contains 12 new slots, three unapproved source-index candidates
+  and two filled next-image briefs; no original-media request retried or image generated.
+- **Actual checks:** clean npm ci; unchanged lockfile/dependencies; lint/typecheck/
+  build pass; 48 unit / 12 preflight / 95 HTTP tests pass. Final full Chromium suite:
+  146 passed, 10 mobile-only cases inapplicable on desktop/tablet, zero failures.
+  Desktop/tablet/mobile/narrow coverage remains 1440/768/390/320px.
+- **Review / evidence:** independent source and screenshot review; size axes made
+  explicit and phone filter labels given full width. Six browser screenshots and
+  reproducible results are in `docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md`.
+- **SOURCE_IMPLEMENTED:** R8-3A. **UI_READY:** tested sample journeys for continued
+  work; final media/full frontend not complete. **BACKEND_CONNECTED:** no.
+  **TESTED:** actual results above, not physical-device/Safari/Firefox certification.
+- **Vercel:** existing owner-created project now observed; Preview authentication
+  reports enabled (`all_except_custom_domains`). Development pushes can trigger
+  Preview builds, main pushes production builds. No environment/protection settings
+  changed. Production still denies all fictional catalogue routes.
+- **Schema / scope:** no migrations, real auth, uploads, saved enquiries or outgoing
+  messages. Forms remain R8-3B. All rejected integrations and S01–S04 remain excluded.
+- **Publication:** review/commit this slice, publish the development branch and
+  verify its actual SHA/tree; report those queried results in the task response.
+- **V1/V2:** not ready. R8-5 protected visual review and backend gate remain intact.
+- **Next exact task:** R8-3B — furniture commission, memory-preservation and
+  personal-gifting form visuals with keyboard validation, local summary and an
+  explicitly simulated receipt; no real submissions, uploads or messages.
+
 ## R8 checkpoint — 2026-09-21 (R8-2 furniture frontend)
 
 - **Owner instruction / main:** merge all accumulated work, then R8-2. PR #5 merged
