@@ -3,10 +3,11 @@ import Link from "next/link";
 import { Arrow } from "@/components/ui/arrow";
 import styles from "./public-page.module.css";
 
-export function PublicPageHeader({ eyebrow, title, intro, children }: { eyebrow: string; title: string; intro: string; children?: ReactNode }) {
+export function PublicPageHeader({ eyebrow, title, intro, children, headingLevel = 1 }: { eyebrow: string; title: string; intro: string; children?: ReactNode; headingLevel?: 1 | 2 }) {
+  const Heading = headingLevel === 1 ? "h1" : "h2";
   return <header className={styles.header}>
     <p className="eyebrow"><span className="small-line" />{eyebrow}</p>
-    <h1>{title}</h1>
+    <Heading>{title}</Heading>
     <p className={styles.intro}>{intro}</p>
     {children}
   </header>;

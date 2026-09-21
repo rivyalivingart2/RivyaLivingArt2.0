@@ -1,7 +1,9 @@
 import Form from "next/form";
 import Link from "next/link";
 import { Arrow } from "@/components/ui/arrow";
-import { faqGroups, faqs, type FaqGroupId, type FaqRecord } from "@/lib/faqs";
+import { faqGroups, faqs, type FaqGroupId } from "@/lib/faqs";
+import { FaqAnswers } from "@/components/content-section-public-parts";
+export { FaqAnswers } from "@/components/content-section-public-parts";
 import styles from "./craft-faq.module.css";
 
 type FaqQuery = Readonly<{ topic: "all" | FaqGroupId; q: string; adjusted: boolean }>;
@@ -24,34 +26,6 @@ function topicHref(topic: "all" | FaqGroupId, q: string) {
   if (topic !== "all") query.set("topic", topic);
   if (q) query.set("q", q);
   return `/faq${query.size ? `?${query}` : ""}#faq-results`;
-}
-
-/** Native disclosure keeps each answer available without client JavaScript or animation. */
-export function FaqAnswers({ items }: { items: readonly FaqRecord[] }) {
-  return (
-    <div className={styles.answers}>
-      {items.map((item) => (
-        <details id={item.id} key={item.id} className={styles.answer}>
-          <summary>
-            <span className={styles.question}>{item.question}</span>
-            <span className={styles.toggle} aria-hidden="true" />
-          </summary>
-          <div className={styles.answerBody}>
-            <p className={styles.draftLabel}>Sample answer · owner review pending</p>
-            <p>{item.answer}</p>
-            {item.previewNote && <p className={styles.previewNote}><strong>In this preview</strong>{item.previewNote}</p>}
-            {item.references.length > 0 && (
-              <ul className={styles.references} aria-label="Related pages">
-                {item.references.map((reference) => (
-                  <li key={reference.href}><Link href={reference.href}>{reference.label}<span aria-hidden="true">↗</span></Link></li>
-                ))}
-              </ul>
-            )}
-          </div>
-        </details>
-      ))}
-    </div>
-  );
 }
 
 export function CraftFAQ({ query }: { query: FaqQuery }) {

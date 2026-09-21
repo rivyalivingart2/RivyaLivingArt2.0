@@ -2,6 +2,8 @@ import Form from "next/form";
 import Link from "next/link";
 import { concepts } from "@/lib/catalogue";
 import { articleWordCount, journalArticles, journalCategoryOptions, readMinutes, type JournalArticle } from "@/lib/journal";
+import { ContentRichText } from "@/components/content-richtext";
+import { textToRichText } from "@/lib/content-richtext";
 import { ConceptCard } from "@/components/concept-card";
 import { PublicPageHeader, PublicPageClosing, PublicSampleNotice } from "@/components/public-page";
 import { ReadingProgress } from "@/components/reading-progress";
@@ -89,7 +91,7 @@ export function JournalIndex({ searchParams }: { searchParams: SearchParams }) {
         </Link>
       </article>}
       {cards.length > 0 && <div className={styles.grid}>{cards.map((article) => <JournalCard key={article.id} article={article} />)}</div>}
-      {filtered.length === 0 && <div className={styles.empty}><p className="eyebrow">A little room to explore</p><h3>{invalidSelection ? "That selection is not available." : "No note matches this search yet."}</h3><p>Try a broader word, choose another category or return to all six sample articles.</p><Link className="button" href="/journal#journal-results">Browse all notes <Arrow /></Link></div>}
+      {filtered.length === 0 && <div className={styles.empty}><p className="eyebrow">A little room to explore</p><h3>{invalidSelection ? "That selection is not available." : "No note matches this search yet."}</h3><p>Try a broader word, choose another category or return to all sample articles.</p><Link className="button" href="/journal#journal-results">Browse all notes <Arrow /></Link></div>}
       {pageCount > 1 && <nav aria-label="Journal pages" className={styles.pagination}>
         {page > 1 ? <Link href={journalHref(category, query, page - 1)} aria-label="Previous journal page">← Previous</Link> : <span aria-disabled="true">← Previous</span>}
         <div>{Array.from({ length: pageCount }, (_, index) => index + 1).map((number) => <Link key={number} href={journalHref(category, query, number)} aria-current={page === number ? "page" : undefined} aria-label={`Journal page ${number}`}>{number}</Link>)}</div>
@@ -119,7 +121,7 @@ export function JournalArticlePage({ article }: { article: JournalArticle }) {
       <div className={styles.articleLayout}>
         <aside className={styles.contents}><nav aria-label="Article contents"><p className="eyebrow">In this note</p><ol>{article.sections.map((section) => <li key={section.id}><a href={`#${section.id}`}>{section.heading}</a></li>)}</ol></nav><p className={styles.contentsNote}>A few quiet minutes.<br />A more considered starting point.</p></aside>
         <div className={styles.prose} id="journal-reading-body">
-          {article.sections.map((section) => <section key={section.id} id={section.id} aria-labelledby={`${section.id}-heading`}><h2 id={`${section.id}-heading`}>{section.heading}</h2>{section.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}{section.checklist && <ul>{section.checklist.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
+          {article.sections.map((section) => <section key={section.id} id={section.id} aria-labelledby={`${section.id}-heading`}><h2 id={`${section.id}-heading`}>{section.heading}</h2><ContentRichText value={{ type: "doc", content: [...(textToRichText(section.paragraphs).content ?? []), ...(section.checklist ? [{ type: "bulletList", content: section.checklist.map((text) => ({ type: "listItem", content: textToRichText([text]).content })) }] : [])] }} /></section>)}
           <div className={styles.reviewNote}><p className="eyebrow">Before this draft can be published</p><ul>{article.reviewNotes.map((note) => <li key={note}>{note}</li>)}</ul><p>Editorial imagery is pending; no process photograph or completed client project is implied.</p></div>
         </div>
       </div>

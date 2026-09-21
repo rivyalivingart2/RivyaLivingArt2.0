@@ -8,7 +8,7 @@
 > integration. This overrides the per-slice and R8-5 QA timing below and in the
 > older Revision 8 companions. Keep existing tests and checks intact; compiler/
 > typechecking may resolve development wiring only. Historical results remain
-> historical, and R8-3B/R8-3C/R8-3D/R8-4A source is untested. R8-5 still provides protected
+> historical, and R8-3B/R8-3C/R8-3D/R8-4A/R8-4B source is untested. R8-5 still provides protected
 > frontend-development preview instructions and preserves owner review control;
 > full QA is not a prerequisite to integration, and no visual approval is implied.
 > See [the dated decision](docs/decisions/2026-09-21-development-first.md).
@@ -19,18 +19,19 @@
 → protected Vercel frontend handoff / owner review → backend/database integration
 → persistent demo management → final consolidated QA → owner Vercel deployment.**
 
-The source and Git audit already exists. PR #10 merged R8-3D into main at
-`6e1be895b98a147ce0f00102e2ade7f9881db9f6`, verified from the remote reference.
-R8-4A Studio shell, dashboard, catalogue editor and form-builder development
-continues on the safe branch through an isolated `/preview/studio` harness.
-It adds no real authentication, sessions, uploads, persistence or messages and
-retains the `/studio` holding boundary, adding only a preview-only harness link.
-The next exact task is **R8-4B — content hub,
-page-section editor, Tiptap presentation, FAQ/blog/testimonial editors, media
-picker, responsive layout preview and autosave/validation/history presentation**.
+The source and Git audit already exists. PR #11 merged R8-4A into main at
+`8b8c81f5d85bf0a78d165184b3d8e460073452e4`, verified from the remote reference.
+R8-4B content hub, structured editors, actual Tiptap, media picker and local
+preview/history development continues on the safe branch through the existing
+`/preview/studio` harness. It adds no real authentication, sessions, uploads,
+persistence, publication or messages and retains the `/studio` holding boundary.
+The new slice is published separately; the previous instruction does not authorize
+its automatic merge. The next exact task is **R8-4C — enquiry pipeline/status
+details and internal notes, catalogue import/export controls, demo manager/remove
+dialogs and independent menu visibility**.
 The phase requirements below retain their feature scope; their earlier QA-gating
 clauses are superseded by the dated timing override, not silently marked complete.
-Read `docs/R8-4A_STUDIO_CATALOGUE.md` and the latest owner merge decision.
+Read `docs/R8-4B_CONTENT_WORKSPACE.md` and the latest owner merge decision.
 
 **Current contact correction:** master Section 1 already supplied the phone,
 WhatsApp destination, email and map link. R8-3D corrects the earlier missing-contact
@@ -110,7 +111,7 @@ Write the full 36 demo article drafts across bounded content slices, not in one 
 4C: enquiry pipeline/status details, internal notes, catalogue import/export controls, demo manager/remove dialogs and independent menu visibility.  
 4D: login/setup/recovery/access-denied visuals, staff/role/session panels and environment-health layout.
 
-**Current R8-4A checkpoint:** the guarded `/preview/studio` harness contains the
+**Recorded R8-4A checkpoint:** the guarded `/preview/studio` harness contains the
 Studio shell, fixture-derived dashboard, URL-filtered product table, local draft
 editors with tier-change confirmation and a typed form builder that shares the
 public field renderer. Each layout/page and its metadata apply the preview policy;
@@ -123,6 +124,29 @@ Twelve further LARGE records bring products to 36/120 (24 LARGE / 6 MEDIUM / 6 S
 with two mapped images and 34 pending visuals. Eighty-four products, 24 articles,
 24 testimonials and 40 operational scenarios remain to author. The next Studio
 slice is R8-4B as listed above.
+
+**Current R8-4B checkpoint:** the content hub adds source documents and typed
+page/article/FAQ/testimonial editors. Eleven code-owned marketing section types
+have stable IDs, variants, references, validation and local add/duplicate/hide/
+keyboard-order controls. Actual Tiptap 3.31.3 edits allowlisted structured content;
+the picker shares stable public-safe media IDs, alt/caption/focal metadata and
+truthful pending/preview-only states. Shared public components supply the
+responsive content preview. Product fields remain catalogue-owned and the inquiry
+form builder remains separate from the marketing composer.
+
+Autosave checkpoints, history, restore, archive and failure/conflict examples are
+session-local presentation, not server saves, audit evidence or publication. The
+content/media routes and their metadata remain guarded inside the existing Studio
+harness. Production fixture denial and the `/studio` holding boundary remain.
+The exact 24 supplied fictional testimonials complete DT001–DT024, with a
+permanent sample label and no ratings, reviewer photos or verified claims. Current
+source totals are products 36/120, articles 12/36, FAQs 42/42, testimonials 24/24,
+three fictional studies and 0/40 operational scenarios. Seven initial page
+compositions adapt the six editorial sources plus a homepage draft; the broader
+14-page and authored multi-revision blueprint remains incomplete. Two product
+images remain preview-only and 34 visuals pending. Compiler/lockfile feedback is
+recorded in `docs/R8-4B_CONTENT_WORKSPACE.md`; UI_READY and TESTED remain deferred.
+Next is R8-4C as listed above.
 
 Reuse production-bound presentation components through a separately isolated visual harness. Do not remove real `/studio` authentication. A login mock must not accept real passwords or authenticate anyone. Where the final backend does not exist yet, use labelled local state/simulation or a clear disabled integration state; no unexplained dead controls and no fake success. All real operations are implemented later.
 

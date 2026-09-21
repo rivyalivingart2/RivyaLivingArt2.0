@@ -15,8 +15,8 @@ const navigationGroups = [
     label: "Create & curate",
     links: [
       { label: "Catalogue", href: `${studioRoot}/products`, icon: "catalogue", planned: false },
-      { label: "Content", href: `${studioRoot}/modules/content`, icon: "content", planned: true },
-      { label: "Media", href: `${studioRoot}/modules/media`, icon: "media", planned: true },
+      { label: "Content", href: `${studioRoot}/content`, icon: "content", planned: false },
+      { label: "Media", href: `${studioRoot}/media`, icon: "media", planned: false },
     ],
   },
   {
@@ -62,6 +62,8 @@ function StudioNavigation({ pathname, onNavigate }: { pathname: string; onNaviga
 }
 
 function currentSection(pathname: string) {
+  if (pathname === `${studioRoot}/content/new`) return { parent: "Content", current: "New local draft" };
+  if (pathname.startsWith(`${studioRoot}/content/`)) return { parent: "Content", current: "Document editor" };
   if (pathname === `${studioRoot}/products/new`) return { parent: "Catalogue", current: "New sample product" };
   if (pathname.startsWith(`${studioRoot}/products/`)) return { parent: "Catalogue", current: "Product editor" };
   if (pathname === `${studioRoot}/products`) return { parent: "Workspace", current: "Catalogue" };
