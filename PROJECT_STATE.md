@@ -1,5 +1,51 @@
 # RivyaLivingArt project state
 
+## R8 checkpoint — 2026-09-21 (R8-2 furniture frontend)
+
+- **Owner instruction / main:** merge all accumulated work, then R8-2. PR #5 merged
+  browser head `8e8e14b287ebdcc28ed1bd511cb7cbbab914d62b` into main at
+  `7d9edc1315c39b22335f9f69599b7c8c89b9a63f`; actual remote ref verified. Historical
+  stacked draft PR #3 was closed after all its work was included. No branches removed.
+- **Phase / branch / parent:** R8-2A–C furniture UI on `codex/r8-first-frontend`,
+  starting from that main merge. Last published development head before this slice:
+  `8e8e14b287ebdcc28ed1bd511cb7cbbab914d62b`.
+- **Implemented:** locally hosted display/body typography; furniture-led homepage,
+  category discovery, material/commission narrative; richer cards; URL category,
+  material, width and sort filters with pagination/reset/empty states; detailed
+  specifications, price modes, sample availability, finish radios, gallery/zoom,
+  failed/pending media, care/site access and related furniture.
+- **Fixtures/persistence:** 12 authored LARGE concepts (6 table/desk, 2 seating,
+  1 console, 3 spatial-art); 7 ON_REQUEST / 3 STARTING_FROM / 2 FIXED; all sample
+  facts labelled. Exact blueprint names, 45–48-word summaries and 135–145-word
+  narratives. Stable IDs/version/batch. Zero database rows; full dataset remains ahead.
+- **Actual checks:** lint/typecheck/build pass; 33 unit / 12 preflight / 59 HTTP tests
+  pass. 98 Chromium browser tests pass at 1440/768/390/320px, 10 mobile-only cases
+  inapplicable on desktop/tablet, zero failures. `npm run check` passed in sequence.
+- **Browser fixes:** font-variable inheritance corrected; navigation Form keeps
+  controls consistent with URL/history; home renders its anchor destinations with
+  the page. Tests retain navigation/value assertions and wait for real transitions.
+- **Review/evidence:** independent source and detail/gallery visual reviews found
+  no remaining material issue. Five unmodified screenshots and a source/operation
+  map are in `docs/R8-2_FURNITURE_FRONTEND.md` and `docs/evidence/r8-2/`.
+- **Media/fonts:** two existing AVIFs unchanged, ten deliberate pending visuals.
+  Original-media access limitations remain; no rejected request retried. Existing
+  asset companion updated with eight candidate reviews and two filled missing-image
+  briefs. Four licensed local font subsets total 75,040 bytes; licenses/hashes kept.
+- **SOURCE_IMPLEMENTED:** R8-2 furniture UI. **UI_READY:** tested sample journey;
+  final media and complete frontend remain unfinished. **BACKEND_CONNECTED:** no.
+  **TESTED:** actual results above; no physical-device/Safari/Firefox certification.
+- **Schema/environment:** no migrations, auth, storage, real enquiries or outgoing
+  messages; rejected integrations and S01–S04 still excluded. Runtime app dependencies
+  and lockfile unchanged. Node22 HTTP-test script explicitly enables type stripping.
+- **Publication:** prepare/review the R8-2 commit and publish to the development branch;
+  verify the remote tree/SHA and report it in the task result. The main SHA above is
+  the preceding authorized merge, not an automatic merge of this new slice.
+- **Vercel / deployment:** connected team still showed zero projects; no deployment
+  configuration added, no project created, no production promotion/domain change.
+- **V1/V2:** not ready. R8-3 public pages/forms, R8-4 Studio and R8-5 review remain.
+- **Next exact task:** R8-3A — distinct memory-art and personal-art collection
+  presentations and tier-aware sample detail pages using the shared catalogue.
+
 ## R8 checkpoint — 2026-09-21 (main integration and actual browser verification)
 
 - **Owner instruction:** merge accumulated work into main, then go to the next task.

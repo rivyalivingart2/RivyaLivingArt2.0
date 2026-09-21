@@ -18,3 +18,13 @@ The next task remains actual frontend/browser verification. Continue it on
 `codex/r8-first-frontend`, fast-forwarded to the main merge commit. Later slice
 publishing continues to the development branch under the existing workflow.
 This merge does not establish UI_READY or satisfy the R8-5 visual-review gate.
+
+## Subsequent owner instruction before R8-2
+
+The owner next requested: “Merge all things to main branch and go to next task R8-2”.
+PR [#5](https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/5) merged the completed
+browser slice `8e8e14b287ebdcc28ed1bd511cb7cbbab914d62b` into main at
+`7d9edc1315c39b22335f9f69599b7c8c89b9a63f`, verified from the remote ref. The old
+stacked draft PR #3 was closed as superseded after its work was included in main.
+R8-2 then continued on the development branch. This instruction did not authorize
+a deployment, live-domain change or backend integration before owner visual review.

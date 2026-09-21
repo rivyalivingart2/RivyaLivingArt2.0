@@ -1,0 +1,9 @@
+.fieldset { min-width: 0; border: 0; padding: 0; margin: 28px 0; }
+.fieldset legend { font-size: 14px; color: var(--foreground); margin-bottom: 14px; padding: 0; }
+.fieldset legend span { display: block; color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .12em; margin-top: 3px; }
+.options { display: flex; flex-wrap: wrap; gap: 10px; }
+.option { display: flex; align-items: center; min-height: 46px; gap: 9px; padding: 9px 13px; border: 1px solid var(--control-border); cursor: pointer; font-size: 12px; }
+.option:has(input:checked) { background: var(--surface-elevated); border-color: var(--primary-hover); }
+.option input { accent-color: var(--primary-hover); width: 16px; height: 16px; margin: 0; }
+.description { color: var(--muted); font-size: 13px; line-height: 1.7; margin-top: 14px; min-height: 3.4em; }
+.note { color: var(--muted); font-size: 11px; line-height: 1.7; margin-top: 8px; }

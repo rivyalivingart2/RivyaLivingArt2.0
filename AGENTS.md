@@ -11,8 +11,8 @@ source. The owner explicitly authorized the first application here; see
 superseded for this initialization. Do not restart the source-gap/approval loop.
 The first frontend source now exists. Preserve it, all briefs and Git history.
 
-The owner subsequently authorized merging accumulated work into main; PR #4 is
-merged. See `docs/decisions/2026-09-21-main-merge.md`. Continue new work on the
+The owner subsequently authorized merging accumulated work into main; PRs #4 and
+#5 are merged. See `docs/decisions/2026-09-21-main-merge.md`. Continue new work on the
 development branch. This authorization did not deploy the site or waive visual QA.
 
 - Exact brand: **RivyaLivingArt**. Large collectible resin furniture/spatial art
@@ -28,7 +28,8 @@ development branch. This authorization did not deploy the site or waive visual Q
 - Use approved Drive media first. Write missing image/video prompts for the owner
   in the existing separate asset document. No replacement logo, product recolouring,
   private media or large original media collections in Git.
-- Only two source fixtures exist in this slice. The complete demo dataset, CMS,
+- Twelve labelled LARGE source fixtures now exist (two images, ten pending visuals).
+  The complete demo dataset, CMS,
   staff login, data/storage and real enquiries remain planned work.
 - Current visual flag is NOT authentication. Online preview requires separately
   verified deployment protection. Never enable fixture routes in Vercel production.
@@ -40,7 +41,8 @@ Node 22; npm project at repository root. The actual dependency tree and reviewed
 package-lock.json now exist. A clean npm ci, lint, semantic typecheck, unit/preflight
 tests and production build passed in the continuation slice. See
 `docs/R8-1_DEPENDENCY_VERIFICATION.md` for install/runtime evidence and
-`docs/R8-1_BROWSER_VERIFICATION.md` for the subsequent actual browser results.
+`docs/R8-1_BROWSER_VERIFICATION.md` for the foundation browser results. Current R8-2
+furniture evidence and media limits are in `docs/R8-2_FURNITURE_FRONTEND.md`.
 
 ```sh
 npm ci
@@ -54,13 +56,15 @@ npx playwright install chromium # once per browser environment
 npm run test:e2e # after npm run build; actual local browser tests
 ```
 
-The earlier npm/Git network blocker is resolved. Repository-owned local Playwright
-checks now pass in Chromium at 1440/768/390/320 px: 50 passed, 10 mobile-only cases
-inapplicable on desktop/tablet, zero failures. Actual screenshot, keyboard/focus,
-image-decode, navigation, 404 and reduced-motion evidence exists. Browser Use's
-cloud localhost restriction is unchanged; no network controls were weakened.
-The foundation is ready for continued frontend development, not the R8-5 owner
-visual-review gate. Next: R8-2 furniture collection discovery and detail presentation.
+R8-2 furniture source and actual browser checks now pass: 33 unit, 12 preflight,
+59 HTTP and 98 Chromium browser tests, with 10 mobile-only cases inapplicable on
+desktop/tablet. Lint/typecheck/build pass. Actual screenshots cover the furniture
+journey at 1440/768/390/320 px, filters/history, finishes, gallery focus and media
+fallbacks. Browser Use's cloud loopback restriction is unchanged; local Playwright
+provides the real app evidence without weakening network controls.
+The furniture UI is ready for continued frontend development with explicit media
+gaps. This is not R8-5 owner visual approval. Next: R8-3A distinct memory/personal
+collection presentations and tier-aware sample detail pages.
 
 ## Git and continuity
 

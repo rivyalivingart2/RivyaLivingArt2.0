@@ -11,7 +11,8 @@
   --border: #3a483e;
   --control-border: #78867c;
   --focus: #ceac89;
-  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
-  --font-body: Arial, Helvetica, sans-serif;
+  --font-display: var(--font-cormorant), "Iowan Old Style", Georgia, serif;
+  --font-body: var(--font-dm-sans), Arial, Helvetica, sans-serif;
+  --font-brand: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   --font-data: "SFMono-Regular", Consolas, monospace;
 }

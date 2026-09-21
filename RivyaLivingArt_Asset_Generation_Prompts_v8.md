@@ -529,3 +529,77 @@ Check selected files, native dimensions, visible geometry, frame continuity, tex
 Update canonical `docs/images.md`, the existing manifest and the next checkpoint with actual approved files and unresolved IDs. Return only the next meaningful batch to the owner, not a vague request for “more images.” Public pages serve approved Blob/local media and continue working without Drive access or a generation session.
 
 **Nothing in this file has been generated, uploaded to Drive or published by preparing these prompts.** The existing logo board and source metadata are the evidence available; individual output approval occurs later.
+
+
+## R8-2 asset checkpoint — 21 September 2026
+
+Twelve source concepts are being authored; only DP001 and DP013 have inspected,
+bundled image derivatives. Those small files remain preview-only. The earlier
+original-file authorization/transfer blockers have not been bypassed or retried.
+No new Drive originals or generated outputs were imported in this slice.
+
+### Existing candidate sources: review before generating replacements
+
+These are source-index candidates, **not approved mappings**. Each corresponding
+UI currently displays “Demo concept — visual pending.” Return an accessible,
+owner-approved source for pixel inspection before replacing that state.
+
+| Concept | Candidate from the existing source index | State |
+| --- | --- | --- |
+| DP002 Stillwater Full-Pour Dining Table | PRODUCT-HERO-002 | Awaiting source review |
+| DP014 Orbit Circular Centre Table | PRODUCT-HERO-004 | Awaiting source review |
+| DP025 Twinleaf Matched Side-Table Pair | PRODUCT-HERO-008 | Awaiting source review |
+| DP035 Span Narrow Console | PRODUCT-HERO-005 | Awaiting source review |
+| DP048 Threshold Entry Bench | PRODUCT-HERO-009 | Awaiting source review |
+| DP051 Single-Slab Atelier Desk | PRODUCT-HERO-007 | Awaiting source review |
+| DP057 Horizon Band Wall Panel | PRODUCT-HERO-011 | Awaiting source review |
+| DP069 Lattice Resin-and-3D Sculpture | PRODUCT-HERO-016 | Awaiting source review |
+
+### IMG03-DP043 — Petal Sculptural Chair
+
+**Priority:** P1; seating discovery, selected home study and DP043 detail.
+**Classification:** fictional AI concept; no required existing product reference.
+**Output:** `rivya-dp043-petal-chair-concept-4x5-v01.png`; target native 2048×2560.
+**State:** awaiting owner output. **Fallback:** labelled visual-pending panel.
+**Returned source ID:** none; no asset generated or mapped.
+
+```text
+Create an original, explicitly fictional concept visualization for RivyaLivingArt:
+Petal Sculptural Chair, DP043. Show one sculptural chair with a gently cupped,
+petal-inspired resin form and a restrained mineral-composite base. Present the complete object
+in a clear three-quarter view against a quiet dark forest studio setting with
+warm ivory side light. Keep generous margins around the back, seat and supports.
+Emphasize silhouette, negative space and the contrast between translucent resin
+and a quiet opaque mineral body. Use restrained material colour, coherent visible supports and a subtle
+contact shadow. This is a design study, not a real manufactured chair or evidence
+of strength, seating comfort or safety. Do not add people, logos, text, measurement
+labels, extra furniture or neon glow. Do not copy another designer's recognizable
+chair. Return a vertical 4:5 image at the highest native resolution available.
+```
+
+### IMG-DP077 — Estuary Reception Counter
+
+**Priority:** P1; installation discovery and DP077 detail.
+**Classification:** fictional AI concept; no required existing product reference.
+**Output:** `rivya-dp077-estuary-counter-concept-4x5-v01.png`; target native 2048×2560.
+**State:** awaiting owner output. **Fallback:** labelled visual-pending panel.
+**Returned source ID:** none; no asset generated or mapped.
+
+```text
+Create an original, explicitly fictional concept visualization for RivyaLivingArt:
+Estuary Reception Counter, DP077. Show one architectural reception-counter study
+whose flowing translucent resin face meets a grounded mineral-composite body. Use a
+quiet, unbranded interior with a dark forest backdrop and warm ivory light. Frame
+the whole object in a three-quarter view with clear edges, generous margins and
+believable visual scale. Keep the reception surface distinct from a domestic
+dining table; suggest a solid front and a considered staff-side recess without
+inventing technical construction details. This is an unbuilt design concept, not
+a completed commercial project, accessibility certification or structural claim.
+No people, client names, signage, logos, lettering, measurement labels or dramatic
+neon effects. Return a vertical 4:5 image at the highest native resolution available.
+```
+
+Review every returned image against the corresponding concept before mapping.
+Do not stretch a small derivative or reuse a different object's picture to fill
+these slots. Additional angles, material macros, film and usable 3D models remain
+unprovided; the current static media controls must not imply those assets exist.

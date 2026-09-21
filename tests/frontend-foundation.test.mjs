@@ -24,21 +24,34 @@ test('furniture, memory and personal worlds remain distinct and ordered', () => 
   assert.deepEqual(collections.map(x => x.tier), ['LARGE', 'MEDIUM', 'SMALL']);
   assert.equal(new Set(collections.map(x => x.slug)).size, 3);
 });
-test('the initial slice contains exactly two named source fixtures, not a completed seed pack', () => {
-  assert.equal(concepts.length, 2); assert.deepEqual(concepts.map(x => x.id), ['DP001','DP013']);
+test('the furniture slice contains twelve authored source fixtures, not a completed seed pack', () => {
+  assert.equal(concepts.length, 12);
+  assert.deepEqual(concepts.map(x => x.id).sort(), ['DP001', 'DP002', 'DP013', 'DP014', 'DP025', 'DP035', 'DP043', 'DP048', 'DP051', 'DP057', 'DP069', 'DP077']);
 });
 test('fixture keys and slugs are unique', () => {
   for (const field of ['id','slug']) assert.equal(new Set(concepts.map(x=>x[field])).size, concepts.length);
 });
-test('sample catalogue exposes no numeric price or customer information', () => {
+test('sample catalogue retains fictional provenance and contains no customer information', () => {
   for (const p of concepts) {
-    assert.equal(p.originKind, 'DEMO_FIXTURE'); assert.equal(p.priceType,'ON_REQUEST');
+    assert.equal(p.originKind, 'DEMO_FIXTURE');
+    assert.equal(p.demoFixtureKey, `product:${p.id}`);
+    assert.equal(p.demoBatchId, 'rivya-r8-visual-2026-09');
+    assert.equal(p.demoVersion, 1);
     for (const field of ['price','email','phone','customer','rating']) assert.equal(field in p, false);
     assert.match(p.description, /fictional/i);
   }
 });
-test('all fixture media resolves to bundled files, not Drive hotlinks', () => {
+test('available fixture media is local and missing visuals have no substituted image', () => {
+  assert.equal(concepts.filter(p => p.image).length, 2);
   for (const p of concepts) {
+    if (p.image === null) {
+      assert.equal(p.mediaStatus, 'VISUAL_PENDING');
+      assert.deepEqual(p.gallery, []);
+      continue;
+    }
+    assert.equal(p.mediaStatus, 'CONCEPT_VISUAL');
+    assert.equal(p.gallery.length, 1);
+    assert.equal(p.gallery[0].src, p.image);
     assert.match(p.image, /^\/media\/concepts\/[a-z-]+\.avif$/);
     assert.ok(existsSync(new URL('public'+p.image,root)));
     const bytes=readFileSync(new URL('public'+p.image,root));
