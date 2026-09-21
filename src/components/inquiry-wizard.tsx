@@ -14,10 +14,12 @@ import {
 } from "@/lib/inquiry-schema";
 import { Arrow } from "./ui/arrow";
 import { InquiryReference } from "./inquiry-reference";
+import { InquiryRecovery, InquirySaveFailure } from "./inquiry-recovery";
 import styles from "./inquiry-wizard.module.css";
 
 type FieldErrors = Record<string, string>;
 type FocusTarget = "heading" | "errors" | { field: string };
+type WizardView = "form" | "save-failed" | "receipt";
 const subscribeToHydration = () => () => {};
 const hydratedSnapshot = () => true;
 const serverSnapshot = () => false;
@@ -99,7 +101,8 @@ export function InquiryWizard({ config }: { config: InquiryConfig }) {
   const [stepIndex, setStepIndex] = useState(0);
   const [furthestStep, setFurthestStep] = useState(0);
   const [errors, setErrors] = useState<FieldErrors>({});
-  const [isReceipt, setIsReceipt] = useState(false);
+  const [view, setView] = useState<WizardView>("form");
+  const [showHandoffExample, setShowHandoffExample] = useState(false);
   const [announcement, setAnnouncement] = useState("");
   const [copyStatus, setCopyStatus] = useState("");
   const [showPlainText, setShowPlainText] = useState(false);
@@ -158,7 +161,8 @@ export function InquiryWizard({ config }: { config: InquiryConfig }) {
   function moveTo(index: number) {
     setStepIndex(index);
     setErrors({});
-    setIsReceipt(false);
+    setView("form");
+    setShowHandoffExample(false);
     setAnnouncement("");
     requestFocus("heading");
   }
@@ -171,7 +175,7 @@ export function InquiryWizard({ config }: { config: InquiryConfig }) {
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (referencePending) return;
+    if (referencePending || view !== "form") return;
     const foundErrors = step.kind === "review" ? validateInquiry(config, values) : validateStep(config, stepIndex, values);
     setErrors(foundErrors);
     if (Object.keys(foundErrors).length) {
@@ -179,11 +183,7 @@ export function InquiryWizard({ config }: { config: InquiryConfig }) {
       return;
     }
     if (step.kind === "review") {
-      setValues(normalizeInquiryValues(config, values));
-      setIsReceipt(true);
-      setCopyStatus("");
-      setShowPlainText(false);
-      requestFocus("heading");
+      showReceipt();
       return;
     }
     const next = Math.min(stepIndex + 1, config.steps.length - 1);
@@ -192,12 +192,46 @@ export function InquiryWizard({ config }: { config: InquiryConfig }) {
     requestFocus("heading");
   }
 
+  function showReceipt() {
+    setValues(normalizeInquiryValues(config, values));
+    setView("receipt");
+    setCopyStatus("");
+    setShowPlainText(false);
+    setShowHandoffExample(false);
+    requestFocus("heading");
+  }
+
+  function exploreFailure() {
+    if (referencePending || view !== "form" || step.kind !== "review") return;
+    const foundErrors = validateInquiry(config, values);
+    setErrors(foundErrors);
+    if (Object.keys(foundErrors).length) {
+      requestFocus("errors");
+      return;
+    }
+    setView("save-failed");
+    setAnnouncement("");
+  }
+
+  function retryReceiptSimulation() {
+    if (view !== "save-failed") return;
+    const foundErrors = validateInquiry(config, values);
+    setErrors(foundErrors);
+    if (Object.keys(foundErrors).length) {
+      setView("form");
+      requestFocus("errors");
+      return;
+    }
+    showReceipt();
+  }
+
   function reset(useExample: boolean) {
     setValues(useExample ? fictionalDemoValues(config) : { ...config.initialValues });
     setStepIndex(0);
     setFurthestStep(0);
     setErrors({});
-    setIsReceipt(false);
+    setView("form");
+    setShowHandoffExample(false);
     setCopyStatus("");
     setShowPlainText(false);
     setReferenceLabel(null);
@@ -242,7 +276,7 @@ export function InquiryWizard({ config }: { config: InquiryConfig }) {
       <h2>{note.title}</h2>
       <p className={styles.sidebarCopy}>{note.note}</p>
       <nav aria-label="Brief steps"><ol className={styles.steps}>{config.steps.map((item, index) => <li key={item.id}>
-        <button type="button" disabled={!isHydrated || index > furthestStep || isReceipt} onClick={() => moveTo(index)} aria-current={!isReceipt && index === stepIndex ? "step" : undefined}>
+        <button type="button" disabled={!isHydrated || index > furthestStep || view !== "form"} onClick={() => moveTo(index)} aria-current={view === "form" && index === stepIndex ? "step" : undefined}>
           <span className={styles.stepNumber}>{String(index + 1).padStart(2, "0")}</span><span>{item.title}</span>
         </button>
       </li>)}</ol></nav>
@@ -252,11 +286,11 @@ export function InquiryWizard({ config }: { config: InquiryConfig }) {
     <div className={styles.panel}>
       <p className={styles.liveAnnouncement} role="status">{announcement}</p>
       <noscript><p className={styles.reviewNotice}>JavaScript is needed for this local sample journey. The form stays disabled so no details can be sent through a standard browser submission.</p></noscript>
-      <form noValidate onSubmit={handleSubmit} autoComplete="off" hidden={isReceipt}>
+      <form noValidate onSubmit={handleSubmit} autoComplete="off" hidden={view !== "form"}>
         <fieldset className={styles.formFields} disabled={!isHydrated}>
         <header className={styles.panelHeader}>
           <p className="eyebrow">Step {String(stepIndex + 1).padStart(2, "0")} <span className={styles.progressDivider}>/</span> {String(config.steps.length).padStart(2, "0")}</p>
-          {!isReceipt && <h2 ref={headingRef} tabIndex={-1}>{step.title}</h2>}
+          {view === "form" && <h2 ref={headingRef} tabIndex={-1}>{step.title}</h2>}
           <p>{step.description}</p>
           <div className={styles.progressTrack} aria-hidden="true"><span style={{ width: `${((stepIndex + 1) / config.steps.length) * 100}%` }} /></div>
         </header>
@@ -278,9 +312,15 @@ export function InquiryWizard({ config }: { config: InquiryConfig }) {
           <button type="submit" disabled={referencePending} className="button button-primary">{referencePending ? "Reading local image…" : step.kind === "review" ? "Create simulated receipt" : "Continue"}<Arrow /></button>
         </footer>
         <p className={styles.localNote}>Your choices stay in this page only. No real request is created.</p>
+        {step.kind === "review" && <aside className={styles.failureDemo} aria-label="Optional recovery example">
+          <p className="eyebrow">Optional · recovery example</p>
+          <p>Explore how a failed save could look. Your fictional details, reference image and acknowledgement stay in this page, ready to edit or retry.</p>
+          <button type="button" disabled={referencePending} className={styles.backButton} onClick={exploreFailure}>Explore a simulated failure <span aria-hidden="true">↗</span></button>
+        </aside>}
         </fieldset>
       </form>
-      {isReceipt && <section className={styles.receipt} aria-label="Simulated receipt">
+      {view === "save-failed" && <InquirySaveFailure onRetry={retryReceiptSimulation} onEdit={() => moveTo(config.steps.length - 1)} focusOnMount />}
+      {view === "receipt" && <section className={styles.receipt} aria-label="Simulated receipt">
         <p className="eyebrow">Simulated · not sent or saved</p>
         <h2 ref={headingRef} tabIndex={-1}>Your sample brief,<br /><em>brought together.</em></h2>
         <p className={styles.receiptIntro}>This is a local demonstration of the receipt layout. The atelier has not received anything. No enquiry, reservation, quotation or order exists.</p>
@@ -295,6 +335,13 @@ export function InquiryWizard({ config }: { config: InquiryConfig }) {
         <p role="status" className={styles.copyStatus}>{copyStatus}</p>
         {showPlainText && <div className={styles.manualCopy}><label htmlFor={`${wizardId}-copy`}>Plain-text demo summary</label><textarea id={`${wizardId}-copy`} ref={plainTextRef} rows={12} readOnly value={plainText} /></div>}
         <p className={styles.localNote}>This sample receipt is not an enquiry or order. Nothing has been sent to the atelier.</p>
+        <div className={styles.handoffDemo}>
+          {showHandoffExample ? <InquiryRecovery summary={plainText} onEdit={() => moveTo(config.steps.length - 1)} focusOnMount /> : <>
+            <p className="eyebrow">Optional · conversation fallback</p>
+            <p>See the next-step design for a blocked WhatsApp handoff. This example opens no app or outgoing message.</p>
+            <button type="button" className={styles.backButton} onClick={() => setShowHandoffExample(true)}>Explore blocked WhatsApp example <span aria-hidden="true">↗</span></button>
+          </>}
+        </div>
       </section>}
     </div>
   </div></>;

@@ -11,11 +11,11 @@ source. The owner explicitly authorized the first application here; see
 superseded for this initialization. Do not restart the source-gap/approval loop.
 The first frontend source now exists. Preserve it, all briefs and Git history.
 
-The owner subsequently authorized merging completed R8-3B into main, then
-continuing R8-3C. PR #8 is merged at
-`cd6f91e55f8153b55a8c4af1f4329af1be81f38d`; the remote SHA was verified.
-New R8-3C work continues on the development branch. See
-`docs/decisions/2026-09-21-r8-3b-main-merge.md`.
+The owner subsequently authorized merging completed R8-3C into main, then
+continuing R8-3D. PR #9 is merged at
+`96af467fe5cc94dc56f1fa507df35317cbdbc798`; the remote SHA was verified.
+New R8-3D work continues on the development branch. See
+`docs/decisions/2026-09-21-r8-3c-main-merge.md`.
 
 **Latest override: development first; all testing-related work moves to the final
 stage after backend/database integration.** Do not run per-slice lint, test,
@@ -45,12 +45,16 @@ in the older briefs and workflow. See
   staff login, data/storage and real enquiries remain planned work.
 - Current visual flag is NOT authentication. Online preview requires separately
   verified deployment protection. Never enable fixture routes in Vercel production.
+- The master Section 1 already supplies the business phone, WhatsApp, email and
+  map link. R8-3D corrects the earlier claim that contacts were missing. Use those
+  exact supplied values; do not infer an address, opening hours or delivery terms.
+  Local fictional drafts must never be transferred into live contact links.
 - No secrets in code, prompts, commits, diagnostics or `.env.example`.
 
 ## Deferred checks and current development boundary
 
 Node 22; npm project at repository root. The actual dependency tree and reviewed
-package-lock.json exist. No dependency change is needed for R8-3C. Commands below
+package-lock.json exist. No dependency change is needed for R8-3D. Commands below
 remain available for the final QA stage; this is not an instruction to run them
 during the current development slices.
 
@@ -72,7 +76,7 @@ cases inapplicable on desktop/tablet. Clean npm ci, lint/typecheck/build pass. R
 `docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md` for current evidence and media limits.
 Browser Use's cloud loopback restriction is unchanged; the historical local
 Playwright evidence did not weaken network controls. Those results do not cover
-R8-3B or R8-3C and are not R8-5 owner approval.
+R8-3B, R8-3C or R8-3D and are not R8-5 owner approval.
 
 R8-3B provides typed, client-only commission, preservation and gifting forms,
 local validation/summary, an explicitly simulated receipt and local reference-image
@@ -81,15 +85,22 @@ preview. No real submissions, uploads, persistence or messages. Read
 R8-3C adds journal/article, FAQ, about/process/materials/care, portfolio, contact,
 architect enquiry and catalogue-search frontend pages. Six full labelled article
 drafts (DB001–DB006), 42 FAQ answers and three fictional project studies are source
-content, not published business claims. The 30 remaining articles and complete
+content, not published business claims. Read `docs/R8-3C_PUBLIC_PAGES.md`.
+R8-3D adds shared 404/error/root-error/loading/empty/unavailable states, media
+fallbacks and gallery retry, local form-failure and blocked-WhatsApp simulations,
+and a guarded `/preview/states` presentation gallery. This gallery is implemented
+UI, not performed QA or runtime fault injection. Pending indicators and boundaries
+belong after route validation; avoid a root loading boundary that could stream
+a success response before an invalid route is rejected. Six more article drafts
+(DB007–DB012) bring the source total to 12/36, leaving 24. The complete
 120-product/24-testimonial/40-scenario targets remain ahead. Read
-`docs/R8-3C_PUBLIC_PAGES.md`; all new source remains untested pending final QA.
-Next: R8-3D remaining error/root-error/loading/unavailable, form-failure and
-WhatsApp-fallback visual states, followed by Studio visuals.
+`docs/R8-3D_SYSTEM_STATES.md`; all new source remains untested pending final QA.
+Next: R8-4A Studio shell/navigation, fixture-derived dashboard, product list/detail,
+tier fields and form-builder visuals.
 
 The owner-created Vercel project exists, with prior READY main deployments and
 Preview authentication reported enabled. Recheck deployment target and protection
-before publishing. Read-only project inspection during R8-3C now reports Node
+before publishing. Read-only project inspection during R8-3D still reports Node
 `22.x`, aligned with the repository. No setting was changed by this task; the prior
 Node24 mismatch is resolved in the current project setting. See
 `docs/VERCEL_RUNTIME_ALIGNMENT.md`. Never expose fixtures in production.
@@ -101,7 +112,7 @@ Inspect current changes, remote identity and deployment triggers. After a cohere
 slice: update docs/checkpoint, inspect changes for the development commit, stage
 only owned files, commit normally, publish to the safe work branch and verify the
 actual remote SHA. Record testing as deferred, not passed; existing evidence only
-covers its recorded revision. The R8-3B merge is not standing authorization to merge
+covers its recorded revision. The R8-3C merge is not standing authorization to merge
 later slices. No force-push, branch deletion, automatic production release or
 live-domain changes.
 

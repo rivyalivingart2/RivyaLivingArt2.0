@@ -59,6 +59,9 @@
 .backButton:hover { color: var(--primary-hover); }
 .requiredNote { font-size: 10px; color: var(--muted); }
 .localNote { color: var(--muted); font-size: 10px; line-height: 1.8; margin-top: 19px; }
+.failureDemo, .handoffDemo { border-top: 1px solid var(--border); padding-top: 26px; margin-top: 30px; }
+.failureDemo > p:not(:first-child), .handoffDemo > p:not(:first-child) { font-size: 11px; line-height: 1.9; color: var(--muted); margin-top: 9px; }
+.failureDemo button:disabled { opacity: .65; }
 .liveAnnouncement { color: var(--primary-hover); font-size: 12px; line-height: 1.8; }
 .liveAnnouncement:not(:empty) { margin-bottom: 22px; }
 .errorSummary { border: 1px solid #cf958c; background: #332b27; padding: 19px 22px; margin-bottom: 28px; }

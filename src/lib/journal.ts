@@ -1,6 +1,6 @@
 /**
  * Original, owner-review editorial fixtures for the protected frontend preview.
- * These six complete drafts are the first bounded batch of 36 planned articles.
+ * These twelve complete drafts are two bounded batches of 36 planned articles.
  * Plain text is rendered by React; no pasted HTML or operational claims belong here.
  */
 export type JournalCategory = "Spaces" | "Materials" | "Commissioning";
@@ -432,6 +432,396 @@ export const journalArticles: readonly JournalArticle[] = [
         paragraphs: [
           "A clear enquiry includes the intended wall, proposed footprint, opening doors and the route through the space. Add photographs you have permission to share and note any drawings that still need to be measured or confirmed. Mention whether the console is expected to support particular objects, provide storage or coordinate with fitted elements. Those details give the studio concrete questions to investigate before a design is agreed.",
           "Ask how stability, placement, access and care will be addressed for the actual commissioned piece. Do not assume those matters are resolved by a rendering or a sample catalogue description. The protected preview offers a local form for fictional planning information and an explicitly simulated summary. A real arrangement will need reviewed materials, an agreed specification and the owner’s actual enquiry process before any promise about delivery or installation can be made.",
+        ],
+      },
+    ],
+  },
+  {
+    ...editorialDefaults,
+    id: "DB007",
+    slug: "pairing-resin-art-with-warm-neutral-interiors",
+    title: "Pairing Resin Art with Warm Neutral Interiors",
+    excerpt: "Build a palette from the room you already have, then explore how a material-led object can introduce contrast, repetition and a little visual breathing space.",
+    category: "Spaces",
+    relatedProductIds: ["DP001", "DP025", "DP035"],
+    imageBriefId: "JOURNAL-DB007",
+    reviewNotes: [
+      "Original owner-review demo editorial; palette examples describe visual intentions, not available finishes.",
+      "Any future room imagery must be original or approved, clearly labelled and never presented as a completed client interior.",
+      "Confirm actual samples and their viewing conditions before making colour or material decisions.",
+    ],
+    sections: [
+      {
+        id: "begin-with-the-existing-neutrals",
+        heading: "Begin with the neutrals already in the room",
+        paragraphs: [
+          "A warm neutral interior is rarely one single colour. A wall may look softly cream beside a pale textile and more yellow beside a cooler stone. Before adding a resin-art object, make a small inventory of the surfaces that will remain: the largest floor area, the main upholstery, the most visible timber and the background wall. Describe what you actually see rather than beginning with a fashionable palette name.",
+          "You do not need to resolve every colour relationship immediately. Give each existing surface a role in the brief and note which combinations you already enjoy. A room with varied quiet tones may invite a stronger focal object, while another may benefit from a more restrained addition. The useful starting point is the composition you have, including its imperfections and ordinary daylight.",
+        ],
+      },
+      {
+        id: "give-the-new-object-a-role",
+        heading: "Give the new object one clear role",
+        paragraphs: [
+          "Decide whether the new piece should anchor the room, connect existing elements or introduce a deliberate interruption. A dining table might carry the strongest material contrast, while a pair of side tables could repeat a smaller detail. That distinction keeps the conversation focused. Without it, an attractive reference can lead to a request for an object that competes with the features you most want to preserve.",
+          "Use the Riverline, Twinleaf and Span fixtures as separate conceptual starting points. Only look to an image when that particular fixture has an approved visual; an empty image slot is not an invitation to borrow another product’s photograph. Their sample descriptions can still help name a role for the object. The final appearance, proportions and material choices remain questions for an actual commission.",
+        ],
+      },
+      {
+        id: "build-an-illustrative-palette",
+        heading: "Build an illustrative palette with limits",
+        paragraphs: [
+          "Try an imaginary arrangement of oat-coloured fabric, a warm timber note and a small dark accent. Then try the same room with a lighter focal surface and a more visible base. These are composition exercises rather than prescribed combinations. Label them as alternatives, and explain which relationship interests you: the contrast between light and dark, the repetition of warmth or a quieter transition between neighbouring surfaces.",
+          "Keep the palette small enough that each addition has a reason. When every reference introduces another colour, it becomes hard to know which choice is carrying the idea. A short written note can restore that clarity: retain the sofa, relate to the floor, let the table provide the contrast. The note gives a designer freedom to develop the intention without reproducing a reference interior.",
+        ],
+      },
+      {
+        id: "let-texture-do-some-work",
+        heading: "Let texture do some of the work",
+        paragraphs: [
+          "In a restrained palette, texture can provide differences that colour alone does not explain. A woven textile, a visually grained surface and a quiet painted wall each introduce a different pattern of detail. Describe those visible qualities separately from how a material might feel. A photograph can suggest a texture, but touching an actual approved sample supplies information that a screen cannot settle.",
+          "Consider where the room already has a lot to look at. If the rug is patterned and the shelving is full, a simpler object outline may offer a pause. If large background areas are visually quiet, a more expressive material composition may become the focus. These are options to explore in your own setting, not rules that every neutral interior must follow or claims about a particular resin finish.",
+        ],
+      },
+      {
+        id: "borrow-a-relationship-not-a-room",
+        heading: "Borrow a relationship, not a room",
+        paragraphs: [
+          "A reference interior can be useful when you can explain the relationship you admire. Perhaps a dark object feels balanced by a large pale wall, or several warm surfaces are interrupted by one cooler detail. Write down that observation and set aside the temptation to reproduce every furnishing. Your room’s architecture, retained objects and daily use deserve a response of their own.",
+          "Use only references you are entitled to share, and keep their source visible in a real project brief. Do not present another designer’s room as a RivyaLivingArt installation or an instruction to duplicate its objects. An original concept board can instead use your room sketch, plain colour notes and approved product studies. This makes the intention readable without confusing inspiration, authorship and a proposed commission.",
+        ],
+      },
+      {
+        id: "bring-the-palette-back-to-the-room",
+        heading: "Bring the palette back to the actual room",
+        paragraphs: [
+          "Before a final decision, ask how the relevant material and finish samples can be considered alongside the existing surfaces. Record the viewing context rather than declaring that one screen image proves a match. Note which choices are fixed, which are preferred and which remain open. That small distinction helps prevent a provisional palette from becoming an apparently approved specification during a longer project conversation.",
+          "The preview catalogue contains fictional material labels and pending visuals; it cannot confirm a colour match or a finished surface. Use its local commission journey only with invented planning details. A useful real brief would end with a concise intention, such as a calm background with one material focal point, followed by the actual samples, dimensions and questions that still need the studio’s review.",
+        ],
+      },
+    ],
+  },
+  {
+    ...editorialDefaults,
+    id: "DB008",
+    slug: "a-guide-to-describing-your-commission",
+    title: "A Guide to Describing Your Commission",
+    excerpt: "Turn a collection of preferences into a useful first brief: what the piece is for, where it will live, what is known and which questions still need a conversation.",
+    category: "Commissioning",
+    relatedProductIds: ["DP001", "DP051", "DP077"],
+    imageBriefId: "JOURNAL-DB008",
+    reviewNotes: [
+      "Original demo guidance, not an approved quotation, acceptance process or business policy.",
+      "Actual scope, feasibility, timing and commercial terms require the owner’s reviewed enquiry process.",
+      "Preview forms accept fictional examples only and do not submit or persist a commission request.",
+    ],
+    sections: [
+      {
+        id: "describe-the-purpose-first",
+        heading: "Describe the purpose in one sentence",
+        paragraphs: [
+          "Start with what you want the object to do in the life of the room. You might be considering a dining table for everyday family use, a desk that becomes the visual centre of a study, or a reception piece that introduces a space to visitors. A plain sentence about purpose gives the design conversation direction before you reach for a particular finish, shape or style label.",
+          "Add the practical situations that make this project different. Perhaps existing chairs must remain, the room has another use at weekends, or the piece will be seen mainly from an adjoining area. These details are not small distractions from the creative brief. They explain the context in which the eventual design needs to be assessed and help separate an essential requirement from a passing preference.",
+        ],
+      },
+      {
+        id: "show-what-is-measured",
+        heading: "Show what is measured and what is proposed",
+        paragraphs: [
+          "List the measurements you actually know, with explicit units and clear labels for width, depth and height. Keep room measurements separate from proposed object dimensions. If something is an estimate, say so. A short annotated sketch can be more useful than several numbers in a message when it shows exactly which opening, wall or existing item each measurement describes.",
+          "You can arrive with a preferred size without treating it as the only possible answer. Explain why you chose it and which constraints are fixed. The studio may need further information before it can respond to feasibility or proportions. Sample dimensions in the protected catalogue describe fictional concepts; copying them into a brief does not establish that the same footprint, support arrangement or access plan suits your project.",
+        ],
+      },
+      {
+        id: "annotate-your-references",
+        heading: "Annotate the references you bring",
+        paragraphs: [
+          "Select a few references and write one reason for each. You may like the direction of a grain pattern, the quietness of a base or the balance between two surface areas. That reason is the important part of the reference. Without it, someone reading the brief may assume you want the whole object, including details you had barely noticed or would actively prefer to change.",
+          "Include a reference that is close but not quite right if it helps articulate a boundary. Explain the difference in ordinary language rather than technical terms you are unsure of. Share only material you are entitled to use, and distinguish an inspiration image from your own room documentation. In the current local preview, choose safe fictional references; private project files do not belong in an interface demonstration.",
+        ],
+      },
+      {
+        id: "explain-the-practical-context",
+        heading: "Explain the practical context",
+        paragraphs: [
+          "A useful first brief identifies the general project location, intended placement and any access conditions already known. A narrow turn, a lift or a route shared with other work may raise questions that need investigation. Describe the situation rather than promising that delivery will be simple. The actual route and handling arrangements require the relevant people to assess the specific object and site.",
+          "Mention related decisions that are still in progress. Flooring, fixed joinery or room layout changes can affect what information is available and when. If an architect or interior designer is involved, identify the coordination role without assuming that one person has approved every part of the proposal. The purpose is to make dependencies visible early, so the design conversation is based on the same understanding of the project.",
+        ],
+      },
+      {
+        id: "give-timing-and-budget-context",
+        heading: "Give timing and budget their context",
+        paragraphs: [
+          "Explain any date that influences the enquiry and why it matters. An intended move, event or stage of building work is useful context, but it is not a confirmed production or delivery date. Ask what the studio needs to review before it can discuss a realistic sequence. Keep preferred timing separate from any timing that has actually been agreed through the real project process.",
+          "If you choose to share a budget range, describe what you expect it to cover and invite clarification. Avoid assuming that a sample price includes site work, transport, installation or additional design services. The preview uses fictional price modes to develop the interface, not to issue quotations. A clear brief can acknowledge these open items without attempting to invent commercial terms before the studio has reviewed the scope.",
+        ],
+      },
+      {
+        id: "end-with-answerable-questions",
+        heading: "End with questions someone can answer",
+        paragraphs: [
+          "Read the brief once as if you were seeing the project for the first time. Can you identify the intended use, the known dimensions, the visual direction and the unresolved constraints? Remove repeated adjectives and retain the observations that explain them. Then write the next questions plainly: what should be measured next, which options are worth exploring and what information is needed to discuss a specification?",
+          "A good first enquiry does not need to contain a finished design. It needs enough context for a useful response and an honest account of what is still unknown. The development form can help organise a fictional example into a local summary, but nothing is sent or saved as a real request. Actual acceptance, design work and agreed terms begin only through the owner’s reviewed operating process.",
+        ],
+      },
+    ],
+  },
+  {
+    ...editorialDefaults,
+    id: "DB009",
+    slug: "what-to-include-in-an-architects-enquiry",
+    title: "What to Include in an Architect’s Enquiry",
+    excerpt: "Make the first project exchange easier to interpret with a concise context note, clearly labelled drawings and an explicit list of unresolved specification and coordination questions.",
+    category: "Commissioning",
+    relatedProductIds: ["DP035", "DP057", "DP077"],
+    imageBriefId: "JOURNAL-DB009",
+    reviewNotes: [
+      "Original owner-review editorial for project communication, not professional, engineering or regulatory advice.",
+      "Drawing review, shop drawings, site visits and coordination services are questions, not promised RivyaLivingArt services.",
+      "Use synthetic project identifiers in preview; do not place confidential drawings or client information in demo forms.",
+    ],
+    sections: [
+      {
+        id: "open-with-project-context",
+        heading: "Open with a compact project context",
+        paragraphs: [
+          "An architect’s enquiry is easier to interpret when it begins with the project stage and the role of the proposed object. State whether you are exploring a concept, coordinating a developed interior or seeking information for a specific decision. Identify the intended setting in broad terms and explain what the object should contribute visually and functionally. This helps the recipient understand the question before opening any drawings.",
+          "Separate your team’s role from the services you are asking the studio to discuss. Do you need an initial feasibility conversation, a material option to review or clarification of a proposed scope? Those requests are not interchangeable. Naming the immediate decision makes it possible to respond at the appropriate level without assuming that design development, technical coordination or installation responsibilities have already been assigned.",
+        ],
+      },
+      {
+        id: "send-a-readable-drawing-set",
+        heading: "Prepare a readable drawing set",
+        paragraphs: [
+          "Choose drawings that explain the relevant location and relationships, rather than sending every available sheet without context. A plan may show the route around an object; an elevation may explain its relationship with a wall or adjacent joinery. Label the revision and status of each document so an exploratory sketch cannot be mistaken for information cleared for construction or a later coordinated design.",
+          "Use explicit units and identify which dimensions require site confirmation. If a drawing contains an illustrative object, say whether its outline is a fixed requirement or a placeholder for discussion. A short cover note can point to the relevant area and list known discrepancies. Share project documents only through an appropriate agreed channel; the protected frontend’s reference preview is for fictional examples and does not provide a confidential document intake service.",
+        ],
+      },
+      {
+        id: "describe-the-design-intent",
+        heading: "Describe the design intent and its boundaries",
+        paragraphs: [
+          "Explain the intended relationship between the proposed piece and the architecture. It may establish a horizontal line, provide a material focal point or connect two areas visually. Support that intention with a few annotated references rather than a general style label. Identify the qualities that matter and the features that are incidental, especially when reference images contain other designers’ work or unrelated room conditions.",
+          "Distinguish requirements from options under consideration. A proposed length may be constrained by adjacent joinery, while the base composition remains open. A particular colour impression may be preferred, while the actual material selection still needs samples. Making these boundaries readable leaves room for an original design response and prevents an early concept rendering from acquiring the authority of an approved specification without a deliberate decision.",
+        ],
+      },
+      {
+        id: "record-access-and-interfaces",
+        heading: "Record access and the surrounding interfaces",
+        paragraphs: [
+          "Include known information about how the object would reach its intended position, while marking the route as subject to assessment where appropriate. Note relevant openings, changes of level, lifts, turns and any site restrictions that the project team has identified. Avoid reducing the question to whether a top fits through one doorway; handling and installation need a complete project-specific discussion with those responsible.",
+          "Identify the surrounding interfaces as well. A reception concept may relate to flooring, lighting or fixed services; a wall piece raises separate questions about the supporting wall and fixing strategy. Do not treat a catalogue image as proof that these relationships are resolved. List who is expected to provide the missing information and ask the studio to clarify what it can evaluate within an agreed scope.",
+        ],
+      },
+      {
+        id: "ask-for-specific-information",
+        heading: "Ask for specific specification information",
+        paragraphs: [
+          "Write the information request as a list of decisions rather than a broad demand for every possible document. You might need proposed overall dimensions, a description of the actual material system, available sample information, care guidance or details requiring coordination. Ask which documents and assessments can be supplied for the particular proposal. Their availability should be confirmed rather than inferred from an editorial page or a fictional fixture.",
+          "Keep visual approval separate from technical acceptance and any applicable project requirements. A finish selected for its appearance does not establish a performance characteristic, and a rendered joint does not define a buildable connection. The appropriate project professionals need to identify and assess the relevant requirements. This article provides a communication structure; it does not certify a product, resolve a regulation or assign professional responsibility for the work.",
+        ],
+      },
+      {
+        id: "make-the-next-exchange-clear",
+        heading: "Make the next exchange clear",
+        paragraphs: [
+          "Close with the decision you hope to make next, the information needed to make it and the people who need to be part of the conversation. Give programme dates as project context, distinguishing requested milestones from agreed commitments. If commercial scope is still open, say what you expect the discussion to cover and ask for clarification rather than assuming a sample price includes every related service.",
+          "A concise, well-labelled enquiry reduces ambiguity without pretending that one email can resolve the whole project. Keep confidential client information out of the current demo environment and use synthetic details if exploring the local commission flow. The Span, Horizon and Estuary fixtures are fictional references only. Real drawings, material decisions and service commitments require the owner’s actual review process and explicit agreement between the relevant project participants.",
+        ],
+      },
+    ],
+  },
+  {
+    ...editorialDefaults,
+    id: "DB010",
+    slug: "wall-art-at-architectural-scale",
+    title: "Wall Art at Architectural Scale",
+    excerpt: "Explore one panel, two related elements or a three-part composition through the wall, the viewing sequence and the space between the pieces. Every dimension remains a proposal.",
+    category: "Spaces",
+    relatedProductIds: ["DP057", "DP035", "DP069"],
+    imageBriefId: "JOURNAL-DB010",
+    reviewNotes: [
+      "Original demo composition study; single-panel, diptych and triptych alternatives are not manufactured product claims.",
+      "Dimensions, panel intervals, materials and support arrangements remain proposed until project-specific review.",
+      "This article provides no wall-fixing, structural, fire-performance or installation specification.",
+    ],
+    sections: [
+      {
+        id: "draw-the-whole-wall",
+        heading: "Draw the whole wall before the artwork",
+        paragraphs: [
+          "At architectural scale, wall art is read in relation to the space around it. Begin with the full wall, including openings, changes of plane, visible services and nearby furniture. Then mark the usual approaches and viewing positions. A composition seen along a corridor may need to be discussed differently from one encountered directly across a room, even when the available wall dimensions are similar.",
+          "Keep measured facts and exploratory ideas distinct in the sketch. Record actual wall dimensions where they are known, then draw a proposed area for the artwork without calling it a final size. The exercise helps establish visual intention. It does not determine whether the wall is suitable for a particular object or resolve the information a project team needs before selecting materials and an installation approach.",
+        ],
+      },
+      {
+        id: "study-a-single-panel",
+        heading: "Study the presence of a single panel",
+        paragraphs: [
+          "One panel can make the composition read as a continuous field. Its outer boundary becomes especially important: a wide band, an upright form or a more compact shape each establishes a different relationship with the wall. In a sketch, compare how much background remains visible around the proposal. That unoccupied area is part of the composition rather than leftover space to fill automatically.",
+          "The Horizon fixture offers a fictional wall-panel concept for this conversation. Its text and proposed dimensions are starting material, with any missing visual clearly left pending. Do not enlarge a sample proportion without reconsidering the relationship to the real wall and viewing distance. Questions about construction, weight, handling and support need separate project-specific answers; a strong graphic outline does not supply those technical decisions.",
+        ],
+      },
+      {
+        id: "study-a-diptych",
+        heading: "Study the dialogue between two parts",
+        paragraphs: [
+          "A diptych introduces a relationship between two elements and the interval that separates them. You might explore a shared line continuing across the gap, a balanced pair or a deliberately unequal arrangement. Draw the two parts first as plain shapes. This allows you to consider proportion and rhythm before surface detail makes one version seem more persuasive simply because it is more elaborately illustrated.",
+          "Treat the interval as an active design choice. A narrow visual pause and a broad separation can change whether the work reads as one composition or two related objects. No universal gap is proposed here. Record alternatives and ask how they relate to the actual wall, adjacent openings and intended viewpoint. The two-part study is an editorial possibility, not an additional catalogue product or approved mounting arrangement.",
+        ],
+      },
+      {
+        id: "study-a-triptych",
+        heading: "Study rhythm across three parts",
+        paragraphs: [
+          "Three elements make repetition and variation particularly visible. A triptych might use similar widths to establish an even rhythm, or give one part a different role. Consider where the viewer’s attention begins and where it rests. A central emphasis may suit one intention; a sequence that moves across the wall may suit another. Neither approach should be selected solely because the number of panels feels complete.",
+          "Compare the overall outer boundary with the gaps inside it. A three-part arrangement can occupy a much larger visual area than any individual panel suggests, so show it within the full wall elevation. Label every dimension as proposed until reviewed. The drawing should help the studio discuss an original composition and its feasibility, without implying that repetition makes fabrication, support or installation straightforward or already agreed.",
+        ],
+      },
+      {
+        id: "consider-near-and-distant-views",
+        heading: "Consider near and distant views",
+        paragraphs: [
+          "Stand at the points from which the wall is normally seen and describe the kind of detail likely to matter there. From one approach, the overall outline may dominate; closer to the wall, the relationships within the surface may become more interesting. Include both viewpoints in the brief so the discussion does not depend on a single carefully composed rendering that nobody will experience in everyday use.",
+          "Consider surrounding light as context, while avoiding performance assumptions about an unspecified material. A bright opening, an adjacent reflective surface or planned lighting may alter the visual impression and deserve further discussion. Ask what samples or mockups could help assess the particular proposal. The article does not prescribe lighting equipment or certify how a resin formulation will look, age or behave under any specific condition.",
+        ],
+      },
+      {
+        id: "separate-composition-from-installation",
+        heading: "Separate the composition from its installation brief",
+        paragraphs: [
+          "Collect the preferred arrangement, its proposed extent and the reasons behind it into a short composition brief. Alongside that, keep a separate list of information needed about the real wall, object and access route. Identify who will assess support, fixings and other applicable project requirements. A visual preference can be clear while those responsibilities and details remain unresolved; making that distinction explicit protects the quality of the conversation.",
+          "Use the current preview only to explore fictional design notes. Its catalogue and local forms do not confirm fabrication or arrange installation. A real wall-art proposal needs reviewed material information, project-specific coordination and an agreed scope before it can progress beyond a concept. The single panel, diptych and triptych studies are ways to frame the design discussion, with no delivered installation or extra authored product record implied.",
+        ],
+      },
+    ],
+  },
+  {
+    ...editorialDefaults,
+    id: "DB011",
+    slug: "from-a-mood-board-to-a-material-conversation",
+    title: "From a Mood Board to a Material Conversation",
+    excerpt: "Give every reference a clear job, then separate the mood it suggests from the samples, drawings and recorded choices a real object will need.",
+    category: "Materials",
+    relatedProductIds: ["DP001", "DP013", "DP025"],
+    imageBriefId: "JOURNAL-DB011",
+    reviewNotes: [
+      "Original owner-review demo editorial; no live material approval or customer workflow is represented.",
+      "References, physical samples, drawings and specifications carry different information and require explicit status labels.",
+      "This does not introduce the excluded enhanced finish-comparison tool or a private client approval portal.",
+    ],
+    sections: [
+      {
+        id: "give-the-board-a-question",
+        heading: "Give the board a question to answer",
+        paragraphs: [
+          "A mood board becomes more useful when it has a purpose beyond collecting attractive images. Decide what you are trying to explain: a quiet room with one expressive surface, an object that relates to existing timber, or a contrast between a strong outline and a restrained palette. Write that intention at the top. It gives every reference a reason to be included and makes omissions easier to recognise.",
+          "Choose only a few images at first. A large collection can conceal uncertainty because each image suggests a different answer. If two references conflict, keep both only when the difference itself is useful to discuss. The board is an instrument for finding a direction, not proof that all its materials, dimensions and details can be combined into one feasible commissioned object.",
+        ],
+      },
+      {
+        id: "annotate-what-each-image-means",
+        heading: "Annotate what each image means",
+        paragraphs: [
+          "Write a short note beside each reference identifying the particular quality that matters. It could be the spacing between two shapes, the apparent depth of a colour area or the balance of a top and base. Be equally clear about what you are not carrying forward. A useful image may contain a room layout, object size or decorative detail that has no relevance to your project.",
+          "Keep authorship and source information with any material shared in a real brief, and use references you are entitled to share. Discuss the underlying design relationship rather than requesting a copy of another maker’s object. Originality becomes easier to preserve when the board explains intentions in words. It also helps the studio respond to your actual room instead of reproducing the setting that happened to make a photograph appealing.",
+        ],
+      },
+      {
+        id: "sort-the-kinds-of-information",
+        heading: "Sort the kinds of information you have",
+        paragraphs: [
+          "An inspiration photograph, a concept rendering and a physical sample answer different questions. The photograph may communicate an atmosphere; the rendering may explore a proposed composition; the sample may allow a particular surface to be considered directly. Give each item a plain status label. Otherwise, a material suggested in a rendering can quietly be remembered as a confirmed option even though no one has reviewed it.",
+          "Do the same with dimensions and written notes. Measured room information is different from a preferred object size, and both are different from an agreed specification. A simple list with columns for known, proposed and awaiting confirmation can help a real discussion. It does not need an elaborate approval system. The important point is that people can see which information they are relying on and what still needs a decision.",
+        ],
+      },
+      {
+        id: "bring-in-physical-samples",
+        heading: "Bring physical samples into the conversation",
+        paragraphs: [
+          "Ask which actual samples are relevant to the options being considered and what each sample represents. A small piece may communicate colour or surface character without demonstrating every aspect of a finished object. Record the description provided by the studio, including any limits on what can be inferred from it. Avoid assuming that a sample settles construction, performance or the appearance of a much larger composition.",
+          "Consider samples alongside the room’s retained materials where an appropriate real review is possible, and note the viewing context. Screens and printed references remain useful communication aids, but they should not be treated as exact colour standards. If an impression differs from the mood board, return to the original intention and discuss the difference. The aim is an informed choice, not forcing a physical material to match an ambiguous image.",
+        ],
+      },
+      {
+        id: "record-decisions-with-their-scope",
+        heading: "Record decisions with their scope",
+        paragraphs: [
+          "When a real choice is made, state what the choice actually covers. Selecting an appearance direction is not the same as agreeing an entire object specification. A useful note identifies the item discussed, the reference or sample involved and the questions left open. That record helps later conversations stay connected to the decision itself rather than to different recollections of a broad approval word.",
+          "Keep the latest agreed information distinguishable from abandoned alternatives, while retaining whatever project records the participants need. Changes to shape, material or context may require earlier assumptions to be revisited. This is ordinary communication guidance, not a promise of a particular RivyaLivingArt approval service. The protected frontend contains no real customer approval portal, and the excluded enhanced finish-comparison feature is not part of this workflow.",
+        ],
+      },
+      {
+        id: "turn-the-board-into-a-brief",
+        heading: "Turn the board into a concise brief",
+        paragraphs: [
+          "Finish by reducing the board to a few sentences someone else could use to understand the direction. Describe the object’s role, the visual relationships to preserve and the practical information still needed. Attach only the references that support those sentences, with their labels intact. If the description becomes contradictory, that is useful feedback: the board may need one more conversation before it can guide a coherent proposal.",
+          "The Riverline, Basin and Twinleaf fixtures can provide fictional starting points for an exercise, but their preview material fields are not approved real samples. Explore the local commission form with invented details only; it creates a demo summary and sends nothing. Actual material choices, specification records and project commitments belong to the studio’s reviewed process, with the participants clear about what has been explored and what has truly been agreed.",
+        ],
+      },
+    ],
+  },
+  {
+    ...editorialDefaults,
+    id: "DB012",
+    slug: "light-transparency-and-the-look-of-resin",
+    title: "Light, Transparency and the Look of Resin",
+    excerpt: "Describe what a reference image seems to show, then ask what would need a real sample. A visual notebook on backgrounds, viewpoints, reflections and the impression of depth.",
+    category: "Materials",
+    relatedProductIds: ["DP001", "DP013", "DP069"],
+    imageBriefId: "JOURNAL-DB012",
+    reviewNotes: [
+      "Original demo editorial about visual perception and art direction, not resin chemistry or performance.",
+      "No transparency, colour stability, durability, UV resistance or other property is certified for a real formulation.",
+      "Images and future sample studies must be labelled by source, product mapping and viewing context.",
+    ],
+    sections: [
+      {
+        id: "describe-the-impression",
+        heading: "Describe the impression before naming a property",
+        paragraphs: [
+          "A reference image may make a resin area appear deep, luminous, smoky or almost opaque. Those words can be useful in a design conversation when they describe an impression rather than claim a verified material property. Begin by saying what you notice and where you notice it. Does the effect seem strongest at an edge, across a broad area or beside a contrasting material?",
+          "Then explain why the impression matters to your brief. You may be drawn to a sense of visual depth or to the way a quiet colour area sits beside visible grain. That preference can be discussed without assuming a particular formulation or finish. The distinction keeps an appealing photograph in its proper role as a visual reference while leaving the actual material system to be identified and reviewed.",
+        ],
+      },
+      {
+        id: "notice-the-background",
+        heading: "Notice what sits behind and around the object",
+        paragraphs: [
+          "Look beyond the object in a reference image. A pale background, a dark floor or nearby furniture contributes to the appearance of the whole composition. When you compare two images with different settings, you may be responding to those surroundings as much as to the material itself. Make a note of the background before drawing conclusions about which surface or colour you prefer.",
+          "An art-direction study can hold the proposed object and viewpoint constant while exploring a small number of clearly labelled background alternatives. Such an illustration is a way to discuss visual relationships, not a simulation that proves how a physical product will behave. No new imagery is provided by this draft. Any future study should identify whether it is a concept image, an approved photograph or a documented sample view.",
+        ],
+      },
+      {
+        id: "compare-viewpoints-carefully",
+        heading: "Compare viewpoints carefully",
+        paragraphs: [
+          "A top view, a side view and a close detail show different parts of a design. One may emphasise the arrangement of materials, another the edge and another the way a particular area catches the eye. When building a brief, identify which viewpoint supports the observation you are making. A detail image can be compelling while telling you very little about the complete object in a room.",
+          "Do not assume that an unseen area has the same appearance as the photographed section. Ask what additional views or physical samples would help clarify the proposal. For the fictional catalogue, an unavailable angle should remain an explicit missing visual, not be replaced by another product’s image. Honest gaps make the material conversation more useful because they show what still needs to be considered before any appearance is agreed.",
+        ],
+      },
+      {
+        id: "separate-reflections-from-colour",
+        heading: "Separate reflections from colour preferences",
+        paragraphs: [
+          "When looking at a glossy-looking reference, consider whether a bright area belongs to the surface’s apparent colour or to something reflected in it. You may not be able to settle that question from one image, and it is useful to say so. Describe the visual effect you like without building a specification around an uncertain interpretation of a highlight or a dark patch.",
+          "The setting of the eventual object matters to the discussion as well. Large windows, nearby colours and planned lighting are worth showing in the room context, but this editorial exercise does not prescribe lighting or predict a finished surface. Ask which actual samples and viewing conditions are appropriate for a real review. A preference for a calm appearance should be explored with reliable information, not translated automatically into an unsupported finish claim.",
+        ],
+      },
+      {
+        id: "read-the-edge-and-interior",
+        heading: "Read the edge and the apparent interior",
+        paragraphs: [
+          "Some concept images draw attention to the boundary between materials; others invite you to look into an area that seems to have depth. These are different compositional interests. In a brief, specify whether you are responding to the outline, the colour field, the meeting of surfaces or the apparent layers within it. The more precisely you describe the observation, the less the conversation depends on a vague request for transparency.",
+          "Keep that visual vocabulary separate from measurable properties of a real formulation. An image does not establish optical performance, colour stability, resistance to exposure or suitability for a particular use. Those questions need information about the actual materials and finished object. The Riverline, Basin and Lattice references remain fictional concepts; their names and sample descriptions cannot supply evidence for claims that have never been assessed or approved.",
+        ],
+      },
+      {
+        id: "ask-for-a-grounded-review",
+        heading: "Ask for a grounded visual review",
+        paragraphs: [
+          "Turn your observations into a short request for clarification. Identify the reference, describe the impression you want to explore and ask which real sample or documented view could help discuss it. Include the intended setting and distinguish fixed room conditions from ideas still under consideration. The goal is to connect a visual intention to information that can be reviewed, rather than to demand an exact effect from an unspecified image.",
+          "Treat conclusions as provisional until the relevant participants have considered the actual proposal and its documentation. This draft makes no promise about a resin formulation, its longevity or its response to any environment. The protected frontend provides labelled concept content and local fictional planning tools only. A real commission needs an agreed material specification and owner-reviewed guidance before appearance language can become a meaningful part of the project record.",
         ],
       },
     ],

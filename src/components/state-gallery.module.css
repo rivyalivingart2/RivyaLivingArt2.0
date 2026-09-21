@@ -1,0 +1,25 @@
+.page { padding: 45px 4.7vw 76px; overflow-wrap: anywhere; }
+.header { max-width: 780px; margin-bottom: 38px; }
+.header h1 { font-size: clamp(56px,7.5vw,108px); margin: 22px 0; }
+.header > p:last-child { max-width: 610px; color: var(--muted); }
+.notice { padding: 22px 26px; background: var(--surface); border-left: 2px solid var(--primary); font-size: 13px; }
+.notice strong { font-weight: 500; }
+.notice p { color: var(--muted); max-width: 980px; margin-top: 7px; }
+.controls { display: grid; grid-template-columns: minmax(220px, .7fr) 1.3fr; align-items: end; gap: 35px; padding: 36px 0; }
+.controls label { display: grid; gap: 10px; font-size: 12px; color: var(--muted); }
+.controls select { width: 100%; min-height: 48px; padding: 12px; color: var(--foreground); background: var(--surface); border: 1px solid var(--border); border-radius: 0; font: inherit; font-size: 14px; }
+.controls p { color: var(--muted); font-size: 13px; max-width: 680px; }
+.stage { min-width: 0; border: 1px solid var(--border); background: var(--background); }
+.stage > section { margin: 0; }
+.stage > section:has(h3) { padding: clamp(24px,5vw,65px); }
+.mediaStudy { position: relative; aspect-ratio: 4/3; width: min(100%,760px); margin: auto; }
+.receipt { padding: clamp(26px,5vw,65px); }
+.receipt h2 { margin: 22px 0; }
+.receipt > p:not(:first-child) { color: var(--muted); max-width: 620px; margin-bottom: 30px; }
+.feedback { min-height: 28px; margin-top: 14px; color: var(--primary-hover); font-size: 13px; }
+.destinations { display: flex; flex-wrap: wrap; gap: 16px 32px; border-top: 1px solid var(--border); margin-top: 28px; padding-top: 28px; font-size: 13px; }
+.destinations p { width: 100%; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
+.destinations a { padding: 8px 0; border-bottom: 1px solid var(--border); }
+.destinations a:hover { color: var(--primary-hover); }
+.destinations span { margin-left: 10px; }
+@media (max-width: 760px) { .page { padding: 28px 5vw 52px; } .controls { grid-template-columns: 1fr; gap: 17px; padding: 28px 0; } .notice { padding: 20px; } .header h1 { font-size: clamp(50px,11vw,78px); } }

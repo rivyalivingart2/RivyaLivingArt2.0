@@ -1,5 +1,66 @@
 # RivyaLivingArt project state
 
+## R8 checkpoint — 2026-09-21 (R8-3C merged; R8-3D system states)
+
+- **Owner instruction:** merge completed work into main, then implement R8-3D.
+  The development-first decision still defers all testing-related work until
+  after backend/database integration. Existing tests and commands remain intact.
+- **Main integration:** PR #9 merged development head
+  `cbacda4d6d9661e47f75157c9e894277181e3ad6`; the actual main reference was
+  read back at `96af467fe5cc94dc56f1fa507df35317cbdbc798`. R8-3D continues on
+  `codex/r8-first-frontend`; this new slice is published separately. No history
+  or branch was removed.
+- **Implemented:** shared `SystemState` and `RootErrorPresentation` for 404,
+  route/root errors, unavailable and empty views; page-loading presentation;
+  guarded `/preview/states` gallery; post-validation Suspense boundaries on
+  collection/search/journal pages; header `PendingLink` indicators using
+  `useLinkStatus`; media fallback/retry and gallery zoom enabled after image load.
+  The state gallery renders labelled examples, not deliberate runtime faults.
+- **Local recovery:** form-failure presentation preserves mounted form/reference
+  state for retry or editing. The blocked-WhatsApp example is a local simulation:
+  no transport, message, persisted request or live draft transfer. Nothing in
+  these frontend states establishes that a real submission succeeded or failed.
+- **Route boundary:** preview denial and parameter/record validation precede
+  fixture rendering and pending boundaries. No global root loading boundary is
+  introduced that could stream a successful response before an unknown route is
+  rejected. Real HTTP/browser behavior remains part of deferred final QA.
+- **Contact correction:** master Section 1 already supplies the business phone,
+  WhatsApp destination, email and map link. R8-3D uses those exact values. The
+  earlier R8-3C missing-contact description was incorrect; contact values are no
+  longer a blocker. No address, hours, workshop access or delivery terms are
+  inferred. Local fictional drafts stay out of live contact links.
+- **Source content:** DB007–DB012 add six complete labelled original article
+  drafts, bringing article source to 12/36 with 24 remaining. The 42 FAQ drafts,
+  three fictional studies and 24 products remain. The full 120-product,
+  24-testimonial and 40-inquiry/order-scenario targets are still incomplete.
+  Source fixtures do not create database rows or completed customer work.
+- **Media / dependencies:** two existing product AVIFs and 22 pending product
+  visuals; no new image/font, dependency or lockfile change. The existing asset
+  companion adds owner briefs JOURNAL-DB007–JOURNAL-DB012, pending generation and
+  approval. No image generation or download occurred in this slice.
+- **Development feedback:** `npm run typecheck` passed (Next route generation
+  and TypeScript, Node 22) for implementation wiring. No lint, build verification,
+  unit/preflight/HTTP/browser checks or screenshot QA were run or added for R8-3D.
+  Compiler feedback is not a QA pass.
+- **SOURCE_IMPLEMENTED:** R8-3D frontend system states and second article batch.
+  **UI_READY:** pending deferred visual/keyboard QA. **BACKEND_CONNECTED:** no.
+  **TESTED:** not run. Historical R8-3A results do not certify later source.
+- **Vercel:** read-only inspection still reports Node `22.x` and authentication
+  protection `all_except_custom_domains`. Existing branch triggers may create
+  production/Preview builds. No explicit deployment, promotion, environment,
+  runtime/protection setting or live-domain action was made. Production fixture
+  denial and separately protected Preview access remain required.
+- **Remaining:** genuine owner-approved media, care/legal wording and studio
+  history; remaining demo content; Studio frontend; backend/database integration
+  and final consolidated QA. All rejected integrations and S01–S04 remain excluded.
+  Neither R8-5/V1 owner approval nor R8-11/V2 readiness is claimed.
+- **Checkpoint / publication:** source and current guidance reviewed for this
+  development commit. Publish the safe branch and read back the actual remote
+  SHA/tree; report the resulting draft PR and source reference separately.
+  See `docs/R8-3D_SYSTEM_STATES.md` for implemented state and content boundaries.
+- **Next exact task:** R8-4A — Studio shell/navigation, fixture-derived dashboard,
+  product list/detail, tier fields and form-builder visuals.
+
 ## R8 checkpoint — 2026-09-21 (R8-3B merged; R8-3C public pages)
 
 - **Owner instruction:** merge accumulated R8-3B into main, then implement R8-3C.
