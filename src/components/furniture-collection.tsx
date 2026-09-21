@@ -109,7 +109,7 @@ export function FurnitureCollection({ searchParams }: { searchParams: SearchPara
 
       <section className={styles.commission} aria-labelledby="collection-commission-heading">
         <div><p className="eyebrow">Your space. Your starting point.</p><h2 id="collection-commission-heading">A piece with a place in mind.</h2></div>
-        <div><p>A room, a material, a particular feeling. A commission begins with the things that matter to you.</p><Link className="text-link" href="/#commission">Explore commissioning <Arrow /></Link></div>
+        <div><p>A room, a material, a particular feeling. Explore a sample commissioning brief with fictional details.</p><Link className="text-link" href="/commission">Explore commissioning <Arrow /></Link></div>
       </section>
     </main>
   );

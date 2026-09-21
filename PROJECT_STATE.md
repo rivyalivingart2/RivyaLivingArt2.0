@@ -1,5 +1,50 @@
 # RivyaLivingArt project state
 
+## R8 checkpoint — 2026-09-21 (R8-3A merged; R8-3B development)
+
+- **Owner instruction:** put R8-3A in main, defer all testing work until the final
+  phase after backend/database integration, then develop R8-3B. The dated decision
+  `docs/decisions/2026-09-21-development-first.md` overrides earlier QA timing.
+- **Main integration:** PR #7 merged R8-3A head
+  `7c47e36b0a523ebb83177952360504b9e17e47c5`; actual remote main is
+  `0999b3b0a873e0745231f119c1567b3f8cd79fd8`. Development was fast-forwarded
+  to that merge before continuing. No history or branch was removed.
+- **Work branch / slice:** R8-3B on `codex/r8-first-frontend`. Its new source is
+  published separately; the R8-3A merge does not merge subsequent form work.
+- **Implemented:** guarded `/commission`, `/preserve` and `/personalize` routes;
+  selected-product configurations and public selection rejection; sample pickers;
+  distinct commission/preservation/gifting fields; local steps, conditional contact,
+  validation/error focus, review/edit, fictional example filling, optional local
+  reference preview, copyable local summary and explicitly simulated receipt.
+  Product/home/header CTAs now enter the forms, preserving personal variant choice.
+- **State boundary:** fictional inputs stay in React state. Reference files use
+  temporary object URLs, never an upload. No local/session storage, API submission,
+  saved request, outgoing message, login, checkout or database work. Query strings
+  carry only selected public product/variant identifiers.
+- **Development feedback:** `npm run typecheck` passed (Next route generation
+  and TypeScript compiler, Node 22.23.2). This is implementation-wiring feedback,
+  not QA. No lint, build verification, unit, preflight, HTTP, browser or screenshot
+  checks were run for this slice. No test files, scripts or assertions were removed or weakened.
+- **SOURCE_IMPLEMENTED:** R8-3B local inquiry frontend. **UI_READY:** pending deferred
+  visual/keyboard QA. **BACKEND_CONNECTED:** no. **TESTED:** not run for R8-3B.
+  Historical R8-3A results below do not certify this source.
+- **Dependencies / fixtures / media:** no dependency or lockfile change; 24 labelled
+  fixtures remain (12 LARGE / 6 MEDIUM / 6 SMALL), zero database rows, two existing
+  concept images and 22 pending visuals. Complete source/demo content remains ahead.
+- **Workflow:** continue frontend development, Studio and the protected R8-5
+  development handoff; final QA moves after integration. Owner review remains
+  owner-controlled and no visual approval is invented. All exclusions remain intact.
+- **Vercel / publication:** existing Git deployment triggers can build main and
+  development. No explicit deployment, environment/protection setting or domain
+  change. Production fixture denial remains in the source. The Node22 dashboard
+  alignment remains an owner action as recorded in the runtime note. Publish this
+  development checkpoint and read back its actual SHA/tree; report those results.
+- **Documentation:** `docs/R8-3B_INQUIRY_FRONTEND.md` maps routes, local behavior,
+  preview-only bounds and the deferred final QA boundary. Prior evidence is retained.
+- **Next exact task:** R8-3C — journal index/article, FAQ, about/process/materials/care,
+  portfolio, contact and search frontend pages, progressively completing labelled
+  source content with the existing components and typography.
+
 ## R8 checkpoint — 2026-09-21 (R8-3A memory and personal art)
 
 - **Owner request:** diagnose the Vercel runtime warning, then implement R8-3A.

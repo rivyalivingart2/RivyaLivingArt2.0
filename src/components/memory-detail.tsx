@@ -24,8 +24,8 @@ export function MemoryDetail({ piece }: { piece: MemoryConcept }) {
           <div><dt>Material direction</dt><dd>{piece.materials.map((material) => material.label).join(" · ")}</dd></div>
         </dl>
         <div className={styles.priceRow}><div><span>Demo pricing</span><p>{formatPrice(piece)}</p></div><div><span>Example lead time</span><p>{piece.leadTime.minWeeks}–{piece.leadTime.maxWeeks} weeks</p></div></div>
-        <a href="#guidance" className={`button button-primary ${styles.mainAction}`}>Preserve Your Memory <span aria-hidden="true">↗</span></a>
-        <p className={styles.ctaNote}>Explore what a preservation brief could include. The request form is planned; this preview sends nothing.</p>
+        <Link href={{ pathname: "/preserve", query: { piece: piece.slug } }} className={`button button-primary ${styles.mainAction}`}>Preserve Your Memory <span aria-hidden="true">↗</span></Link>
+        <p className={styles.ctaNote}>Try a preservation brief with fictional details. This local demo sends nothing to the studio.</p>
       </div>
     </div>
     <section className={styles.memoryStory} aria-labelledby="memory-story">
@@ -40,7 +40,7 @@ export function MemoryDetail({ piece }: { piece: MemoryConcept }) {
       <div><p className="eyebrow">Preservation guidance / preview</p><h2 id="memory-guidance">Before you send<br /><em>a keepsake.</em></h2><p className={styles.sectionNote}>Begin with a conversation about the object and the story it carries. No enquiry is created here.</p></div>
       <div className={styles.disclosures}>
         <details open><summary>A personal starting point <span aria-hidden="true">+</span></summary><div className={styles.disclosure}><p>Sample customization directions for {piece.title}:</p><ul>{memory.personalization.map((item) => <li key={item}>{item}</li>)}</ul><p>These are discussion prompts. Please do not share names, dates, photos or other private material in this preview.</p></div></details>
-        <details open><summary>Physical materials & the studio <span aria-hidden="true">+</span></summary><div className={styles.disclosure}><p>Before sending flowers, paper or objects, ask the studio to review their condition and confirm suitability, timing, packaging and a current delivery address. This preview provides no shipping instructions or acceptance guarantee.</p><p>A future brief can record the occasion, proposed format and size, the materials available and your preferred timing. The owner must confirm the preservation process and feasibility.</p></div></details>
+        <details open><summary>Physical materials & the studio <span aria-hidden="true">+</span></summary><div className={styles.disclosure}><p>Before sending flowers, paper or objects, ask the studio to review their condition and confirm suitability, timing, packaging and a current delivery address. This preview provides no shipping instructions or acceptance guarantee.</p><p>The demo brief explores an occasion, proposed format and size, materials and preferred timing using fictional details. The owner must confirm the preservation process and feasibility for any real work.</p></div></details>
         <details><summary>Care & preservation <span aria-hidden="true">+</span></summary><div className={styles.disclosure}><p>{piece.care}</p><p>Example timing: {piece.leadTime.minWeeks}–{piece.leadTime.maxWeeks} weeks. Material condition, design review and the agreed process may affect a real schedule.</p></div></details>
       </div>
     </section>

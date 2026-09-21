@@ -24,7 +24,7 @@ export function PersonalDetail({ piece }: { piece: PersonalConcept }) {
           <div><dt>Occasion</dt><dd>{occasions}</dd></div>
           <div><dt>Sample size</dt><dd>{dimensionText(piece.dimensions)}<span>Width × depth × height</span></dd></div>
         </dl>
-        <PersonalChoices key={piece.id} variants={personal.variants} personalization={personal.personalization} quantity={personal.quantity} giftNote={personal.giftNote} />
+        <PersonalChoices key={piece.id} slug={piece.slug} variants={personal.variants} personalization={personal.personalization} quantity={personal.quantity} giftNote={personal.giftNote} />
       </div>
     </div>
     <section className={styles.personalDetails} aria-labelledby="personal-details">

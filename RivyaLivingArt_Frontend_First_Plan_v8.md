@@ -3,9 +3,28 @@
 **Revision 8 · 21 September 2026**  
 **Master:** `RivyaLivingArt_Master_Build_Prompt_v8.md`
 
+> **Later owner instruction — 21 September 2026:** development first; all
+> testing-related work occurs at the final stage after backend/database
+> integration. This overrides the per-slice and R8-5 QA timing below and in the
+> older Revision 8 companions. Keep existing tests and checks intact; compiler/
+> typechecking may resolve development wiring only. Historical results remain
+> historical, and new R8-3B source is untested. R8-5 still provides protected
+> frontend-development preview instructions and preserves owner review control;
+> full QA is not a prerequisite to integration, and no visual approval is implied.
+> See [the dated decision](docs/decisions/2026-09-21-development-first.md).
+
 ## 1. New order, unchanged final scope
 
-**Audit → website frontend → Studio frontend → tested Git checkpoint → owner Vercel visual review → backend integration → persistent demo management → full QA → owner Vercel deployment.**
+**Effective order: website frontend → Studio frontend → development Git checkpoint
+→ protected Vercel frontend handoff / owner review → backend/database integration
+→ persistent demo management → final consolidated QA → owner Vercel deployment.**
+
+The source and Git audit already exists. PR #7 merged R8-3A into main at
+`0999b3b0a873e0745231f119c1567b3f8cd79fd8`; new R8-3B form work continues on
+development. Its typed local simulations add no real uploads, persistence or
+messages. The next exact task is **R8-3C**, followed by R8-3D and Studio. The phase
+requirements below retain their feature scope; their earlier QA-gating clauses are
+superseded by the dated timing override, not silently marked complete.
 
 Revision 8 explicitly replaces Revision 7's backend-first ordering. Use `R8-0` through `R8-11` in active task IDs so earlier `Phase 4`, for example, cannot be mistaken for the new phase 4. Preserve historical checkpoints and add a phase crosswalk; do not renumber history or repeat already implemented functionality solely to fit the new order.
 

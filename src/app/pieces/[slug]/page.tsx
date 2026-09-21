@@ -45,8 +45,8 @@ export default async function PiecePage({ params }: Props) {
           <div><dt>Sample availability</dt><dd>{piece.availability === "MADE_TO_ORDER" ? "Made-to-order example" : "Ready-to-ship example"}<span>Demo state · not live stock</span></dd></div>
         </dl>
         <FinishOptions key={piece.id} finishes={piece.finishes} />
-        <Link href="/#commission" className={`button button-primary ${styles.commission}`}>Explore commissioning {piece.title}<span aria-hidden="true">↗</span></Link>
-        <p className={styles.ctaNote}>Start with the commissioning overview. This preview does not create an enquiry or reserve a piece.</p>
+        <Link href={{ pathname: "/commission", query: { piece: piece.slug } }} className={`button button-primary ${styles.commission}`}>Explore commissioning {piece.title}<span aria-hidden="true">↗</span></Link>
+        <p className={styles.ctaNote}>Try a commissioning brief with fictional details. This local demo sends nothing to the studio and reserves no piece.</p>
       </div>
     </div>
     <section className={styles.story} aria-labelledby="piece-story">
