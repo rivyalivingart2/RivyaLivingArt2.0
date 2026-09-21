@@ -1,5 +1,44 @@
 # RivyaLivingArt project state
 
+## R8 checkpoint — 2026-09-21 (main integration and actual browser verification)
+
+- **Owner instruction:** merge accumulated work into main, then go to the next task.
+  PR #4 merged development head `274fc26d4a5132ed9c1a23e9b603d15be7dc03a1` into
+  main at `f4d79f125622a547488e081fb38e062089c636e6`; remote main was read back.
+  Earlier branches are ancestors; no history/branch was removed. See the merge decision.
+- **Phase/slice:** R8-1 actual browser verification and mobile-menu repair, continuing
+  from that main commit on `codex/r8-first-frontend`.
+- **Completed:** repository-owned Playwright configuration/tests; dialog centering,
+  keyboard containment, dismissal focus/scroll restoration, anchor navigation and
+  desktop-resize behavior. Independent review found no actionable issue.
+- **Checks:** clean npm ci with the updated, reviewed 443-entry lockfile; lint and
+  semantic typecheck pass; unit 22/22; preflight 12/12; build passes; HTTP 29/29;
+  Chromium browser 50 passed / 10 inapplicable mobile-only skips / zero failed.
+- **Actual browser evidence:** seven routes at 1440/768/390/320 px, decoded images,
+  navigation, unknown-route 404, reduced motion and menu keyboard/focus/scroll.
+  Five actual screenshots retained in `docs/evidence/r8-1-browser/`. Read
+  `docs/R8-1_BROWSER_VERIFICATION.md` for reproducible commands and limits.
+- **SOURCE_IMPLEMENTED:** foundation/browser repair. **UI_READY:** existing
+  foundation verified for continued development; complete frontend not ready.
+  **BACKEND_CONNECTED:** no. **TESTED:** the checks above.
+- **Browser boundary:** the cloud browser still blocks localhost. Local Playwright
+  successfully exercised the real built app; no network controls were changed.
+  No Safari/Firefox, physical-device or complete accessibility certification claimed.
+- **Fixtures/persistence/media:** still two fictional products, zero database rows;
+  120/36/42/24/40 content coverage remains ahead. Existing small AVIFs unchanged;
+  higher-resolution source access remains blocked as previously documented.
+- **Schema/environment:** no schema, real auth, uploads, outgoing messages or backend.
+  All rejected integrations and S01–S04 remain excluded. Browser executable override
+  is local test tooling only; no deployment configuration or secrets added.
+- **Publishing:** this new slice is prepared for a normal development-branch commit;
+  query the remote SHA after publication and report it in the task result. The
+  already-verified main merge above is separate from subsequent development fixes.
+- **Vercel:** connected team again returned zero projects; no project, deployment,
+  production promotion or live-domain change. No repository deployment trigger found.
+- **V1/V2:** not ready. This is not the R8-5 handoff or owner visual approval.
+- **Next exact task:** R8-2 furniture collection discovery and detail presentation,
+  using the existing typed concepts/components and progressively authored demo content.
+
 ## R8 checkpoint — 2026-09-21 14:20 Asia/Kolkata (dependencies and runtime verified)
 
 - **Phase/slice:** R8-1 continuation; dependency verification and route-status repair.
