@@ -1,5 +1,42 @@
 # RivyaLivingArt project state
 
+## R8 checkpoint — 2026-09-21 (new build confirmed; initial frontend source)
+
+- **Owner decision:** this is a new build with Markdown specifications only. Initial
+  application creation is authorized; do not ask for old source again. See
+  `docs/decisions/2026-09-21-new-build.md`.
+- **Branch/parent:** `codex/r8-first-frontend` from
+  `7f7ec493ac3163821b369f72982435eb32e9c0b3`; main unchanged.
+- **Slice:** R8-1 initial app foundation, public shell and furniture presentation.
+- **Source:** Next.js/TypeScript configuration, CSS-first tokens, responsive header,
+  mobile dialog source, homepage, collection/concept pages, status-only Studio and
+  system views. No prior source was replaced; briefs and tools remain intact.
+- **Fixtures/media:** TWO fictional source records (DP001/DP013); zero database rows.
+  Two inspected Drive concept images have compact local AVIF preview derivatives.
+  Full demo counts, higher-quality production assets and final typography remain.
+- **Tests:** `npm test` passed 22 pure policy/fixture/source-contract tests. Seventeen
+  source TS/TSX files passed a global TS5.8.3 syntax-only check; two CSS files parsed.
+  A source-derived static diagnostic had three decoded images and no horizontal
+  overflow at 1440/390px; this is NOT Next/React/hydration/event/browser-app testing.
+- **Blocker:** npm install failed EAI_AGAIN resolving registry.npmjs.org. No dependency
+  tree/lockfile; ESLint, semantic typecheck, Next build and actual app browser tests
+  remain unrun. Direct shell Git network is unavailable; connector publication is
+  separate. Do not describe source tests or static screenshots as a successful build.
+- **SOURCE_IMPLEMENTED:** initial slice. **UI_READY:** pending build/browser checks.
+  **BACKEND_CONNECTED:** no. **TESTED:** limited checks above. **V1/V2:** not ready.
+- **Environment:** no app secrets, schema migrations, real auth, uploads or messages.
+  Preview flag is not authentication; online preview needs verified protection.
+  Connected Vercel team returned no projects; none created/deployed/changed.
+- **Docs:** current AGENTS, README and Codex workflow updated; new owner decision,
+  frontend evidence and media manifest added. Old audits/checkpoints unchanged below.
+- **Publication at checkpoint-writing time:** reviewed source prepared for a draft
+  commit on the named branch. Final SHA and remote verification belong in the task/PR
+  result and must be queried, not inferred from this pre-commit document.
+- **Next exact task:** in network-enabled Codex install actual packages and generate
+  the real lockfile; run lint/typecheck/unit/preflight/build and actual responsive
+  browser checks, fix errors, commit/publish verified results, then continue the
+  furniture frontend. Do not scaffold again or begin backend before visual review.
+
 ## R8 checkpoint — 2026-09-21 (R8-0 remote verification and Codex handoff)
 
 - **Phase/slice:** R8-0 follow-up; repository tooling and handoff, not application UI.

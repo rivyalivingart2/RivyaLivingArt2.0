@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "date": "2026-09-21",
+  "scope": "R8-1 preview only",
+  "sourceFolderId": "1wUG_qzou3CC1wjnTGeTDwP5Fh7Dab86l",
+  "assets": [
+    {
+      "key": "riverline",
+      "sourceProvider": "owner-supplied Google Drive collection",
+      "driveFileId": "1wtFuURNJd1SrsOgDTlMIMTt2L5c32_AA",
+      "originalName": "product-hero-001-4x5.png",
+      "sourceSHA256": "ba11e11b145dbb91c6b671135e22bbb419f23ccb447c621b2c188af9fddc2bbd",
+      "classification": "AI_GENERATED_FICTIONAL_CONCEPT",
+      "review": "visually inspected for this labelled R8-1 preview only; not production product proof",
+      "path": "public/media/concepts/riverline.avif",
+      "width": 560,
+      "height": 700,
+      "bytes": 7732,
+      "sha256": "92d727c5cbfced083ded9096f316c0935a49f5115a08a541be6e675b745b667a",
+      "originalPreserved": true,
+      "qualityLimit": "small initial preview derivative; review larger deliverable before production",
+      "storagePlan": "bundled public demo derivative now; approved media library/Blob later"
+    },
+    {
+      "key": "basin",
+      "sourceProvider": "owner-supplied Google Drive collection",
+      "driveFileId": "1geZaezr1z_MB48o8CDjfOgwh4MngpT-I",
+      "originalName": "product-hero-003-4x5.png",
+      "sourceSHA256": "df9313011da126266432ec9dc7ceff3932a3874f40140bdd9ea323191be4e9e1",
+      "classification": "AI_GENERATED_FICTIONAL_CONCEPT",
+      "review": "visually inspected for this labelled R8-1 preview only; not production product proof",
+      "path": "public/media/concepts/basin.avif",
+      "width": 480,
+      "height": 600,
+      "bytes": 7007,
+      "sha256": "b1d41aba3d4f441584861154dfb0c875b95fa203731bef4c86bd25c50891569b",
+      "originalPreserved": true,
+      "qualityLimit": "small initial preview derivative; review larger deliverable before production",
+      "storagePlan": "bundled public demo derivative now; approved media library/Blob later"
+    }
+  ]
+}
