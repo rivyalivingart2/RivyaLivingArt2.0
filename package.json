@@ -20,6 +20,10 @@
     "check": "npm run lint && npm run typecheck && npm test && npm run test:preflight && npm run build && npm run test:runtime"
   },
   "dependencies": {
+    "@tiptap/core": "3.31.3",
+    "@tiptap/pm": "3.31.3",
+    "@tiptap/react": "3.31.3",
+    "@tiptap/starter-kit": "3.31.3",
     "next": "16.3.5",
     "react": "19.3.0",
     "react-dom": "19.3.0"

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ComponentProps } from "react";
+import { WorldIntro } from "@/components/content-section-public-parts";
 import { ConceptImage } from "@/components/concept-image";
 import {
   PublicPageHeader as SharedPageHeader,
@@ -10,7 +11,7 @@ import { Arrow } from "@/components/ui/arrow";
 import { furnitureConcepts } from "@/lib/catalogue";
 import { businessContact } from "@/lib/contact";
 import {
-  careTopics, contactJourneys, editorialWorlds, materialDirections,
+  careTopics, contactJourneys, materialDirections,
   planningSteps, professionalBriefAreas,
 } from "@/lib/editorial";
 import styles from "./editorial-pages.module.css";
@@ -48,9 +49,7 @@ export function AboutPage() {
     </section>
     <section className={styles.worldSection} aria-labelledby="about-worlds">
       <div className={styles.sectionHeading}><p className="eyebrow">One point of view</p><h2 id="about-worlds">The scale changes.<br /><em>The intention stays personal.</em></h2></div>
-      <div className={styles.worlds}>{editorialWorlds.map((world) => <article className={styles.world} key={world.number}>
-        <p className="eyebrow">{world.number} / {world.scale}</p><h3>{world.title}</h3><p>{world.description}</p><Link href={world.href} className="text-link">{world.label}<Arrow /></Link>
-      </article>)}</div>
+      <WorldIntro />
     </section>
     <section className={styles.pairedNote} aria-labelledby="about-story">
       <div><p className="eyebrow">A story still taking shape</p><h2 id="about-story">Meet the work.<br /><em>Then meet the makers.</em></h2></div>

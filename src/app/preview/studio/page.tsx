@@ -2,6 +2,7 @@ import { StudioOverview } from "@/components/studio-overview";
 import { concepts } from "@/lib/catalogue";
 import { faqs } from "@/lib/faqs";
 import { journalArticles } from "@/lib/journal";
+import { testimonials } from "@/lib/testimonials";
 import { publicPreviewMetadata, requirePublicPreview } from "@/lib/public-preview";
 import { buildStudioOverviewData } from "@/lib/studio-overview";
 
@@ -9,5 +10,5 @@ export function generateMetadata() { return publicPreviewMetadata("Studio overvi
 
 export default async function StudioOverviewPage() {
   await requirePublicPreview();
-  return <StudioOverview data={buildStudioOverviewData(concepts, journalArticles.length, faqs.length)} />;
+  return <StudioOverview data={buildStudioOverviewData(concepts, journalArticles.length, faqs.length, testimonials.length)} />;
 }

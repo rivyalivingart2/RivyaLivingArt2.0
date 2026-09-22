@@ -12,7 +12,7 @@ export type StudioOverviewData = Readonly<{
 }>;
 
 /** Pure fixture aggregation; deliberately has no operational or financial totals. */
-export function buildStudioOverviewData(products: readonly Concept[], articles: number, faqAnswers: number): StudioOverviewData {
+export function buildStudioOverviewData(products: readonly Concept[], articles: number, faqAnswers: number, testimonialCount = 0): StudioOverviewData {
   const tiers = [
     { tier: "LARGE", label: "Furniture & spatial art" },
     { tier: "MEDIUM", label: "Memory art" },
@@ -32,8 +32,9 @@ export function buildStudioOverviewData(products: readonly Concept[], articles: 
       .slice(0, 5).map((product) => ({ id: product.id, title: product.name, tier: product.tier, issue: product.workingDraftStatus === "IN_REVIEW" ? "Sample draft in review" : "Visual still needed" })),
     content: [
       { label: "Product concepts", count: products.length, target: 120, href: "/preview/studio/products" },
-      { label: "Article drafts", count: articles, target: 36, href: "/journal" },
-      { label: "FAQ drafts", count: faqAnswers, target: 42, href: "/faq" },
+      { label: "Article drafts", count: articles, target: 36, href: "/preview/studio/content?kind=article" },
+      { label: "FAQ drafts", count: faqAnswers, target: 42, href: "/preview/studio/content?kind=faq" },
+      { label: "Fictional testimonials", count: testimonialCount, target: 24, href: "/preview/studio/content?kind=testimonial" },
     ],
   };
 }

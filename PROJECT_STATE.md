@@ -1,5 +1,69 @@
 # RivyaLivingArt project state
 
+## R8 checkpoint — 2026-09-21 (R8-4A merged; R8-4B content workspace)
+
+- **Owner instruction:** merge completed work into main, then implement R8-4B.
+  The development-first decision still defers all testing-related work until
+  after backend/database integration. Existing tests and commands remain intact.
+- **Main integration:** PR #11 merged development head
+  `0691ef45500dc679577aaf1f77ea534f5c98bb67`; the actual main reference was
+  read back at `8b8c81f5d85bf0a78d165184b3d8e460073452e4`. R8-4B continues on
+  `codex/r8-first-frontend` from that merge and is published separately. The prior
+  merge instruction is not standing authorization to merge this new slice.
+- **Implemented:** content-type hub and deep links; typed page, article, FAQ and
+  testimonial editors; eleven registered marketing sections with controlled
+  add/duplicate/hide/order fields; actual Tiptap with safe structured content;
+  shared media picker; responsive shared-renderer preview; and local
+  autosave/validation/history, restore and labelled failure/conflict presentations.
+  Product fields remain catalogue-owned; the marketing composer is distinct from
+  the existing product inquiry form builder.
+- **Route boundary:** `/preview/studio/content`, its new/document routes and
+  `/preview/studio/media` reuse the existing shell and guard layout/page/metadata
+  before exposing fixtures. `/studio` retains its holding boundary. No staff
+  identity, session, server permission or public publication is manufactured.
+  Vercel production continues to deny fixtures; the visual flag is not access control.
+- **Local state:** working drafts, checkpoints, duplicate/archive/restore and
+  simulated conflict/failure states do not write to a database, publish content,
+  alter public source fixtures or produce real staff audit events. Local history
+  is not durable recovery or server version checking. Reload/navigation can discard it.
+- **Source content:** DT001–DT024 add all 24 exact supplied fictional quotes and
+  identities, with permanent disclosures: 12 LARGE / 6 MEDIUM / 6 SMALL. Totals
+  are 36/120 products, 12/36 full articles, 42/42 FAQs, 24/24 testimonials, three
+  fictional studies and 0/40 operational scenarios. Six existing editorial page
+  sources plus a homepage starting draft supply seven initial composer documents;
+  the broader 14-page and authored history-fixture targets remain incomplete.
+- **Media / dependencies:** two existing preview-only product AVIFs and 34
+  pending product visuals; no new media mapping/generation/upload. The picker uses
+  stable public-safe IDs and usage-specific alt/caption/focal fields; it does not
+  invent approval or expose private attachments. Actual Tiptap core/pm/react/
+  starter-kit 3.31.3 were installed with exact pins; npm added 51 packages and
+  regenerated the lockfile. Existing Next/React pins and Node 22 remain.
+- **Development feedback:** `npm run typecheck` passed for implementation
+  wiring (Next route generation and TypeScript, Node 22). The npm-generated
+  lockfile was reviewed: 51 new MIT packages, no existing package version changes
+  or added install scripts; React type dependencies lose only their dev-only flag. No lint, build verification, unit/preflight/HTTP/browser checks or
+  screenshot QA were run or added. Compiler feedback does not establish a QA pass.
+- **SOURCE_IMPLEMENTED:** R8-4B content workspace, editor/media/history
+  presentation and 24 fictional testimonials. **UI_READY:** pending deferred
+  visual/keyboard QA. **BACKEND_CONNECTED:** no. **TESTED:** not run. Historical
+  R8-3A results do not certify later source.
+- **Vercel:** read-only inspection reports Node `22.x` and authentication
+  protection `all_except_custom_domains`. Existing Git triggers may build the
+  main production holding page or development Preview. No explicit deployment,
+  promotion, environment, runtime/protection setting or live-domain action occurred.
+- **Remaining:** Studio R8-4C/R8-4D, remaining demo source and authored history,
+  genuine approved media and owner-reviewed care/legal wording/studio history;
+  backend/database integration and final consolidated QA. All rejected integrations
+  and S01–S04 remain excluded. Protected R8-5 instructions/owner review are still
+  ahead; neither R8-5/V1 approval nor R8-11/V2 readiness is claimed.
+- **Checkpoint / publication:** publish this development slice separately,
+  read back its actual remote SHA/tree and report the resulting draft PR and
+  source reference. See `docs/R8-4B_CONTENT_WORKSPACE.md` for the presentation and
+  integration boundaries.
+- **Next exact task:** R8-4C — enquiry pipeline/status details and internal notes,
+  catalogue import/export controls, demo manager/remove dialogs and independent
+  menu visibility.
+
 ## R8 checkpoint — 2026-09-21 (R8-3D merged; R8-4A Studio catalogue)
 
 - **Owner instruction:** merge completed work into main, then implement R8-4A.

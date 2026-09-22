@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { publicPreviewMetadata, requirePublicPreview } from "@/lib/public-preview";
 import { isVisualPreviewAllowed } from "@/lib/preview-mode";
 import styles from "./page.module.css";
@@ -15,12 +15,14 @@ const modules = {
 export async function generateMetadata({ params }: { params: Promise<{ module: string }> }) {
   if (!isVisualPreviewAllowed(process.env)) return publicPreviewMetadata("Not found");
   const { module } = await params;
+  if (module === "content" || module === "media") return publicPreviewMetadata(`${module === "content" ? "Content" : "Media"} workspace · Studio demo`);
   return publicPreviewMetadata(Object.hasOwn(modules, module) ? `${modules[module as keyof typeof modules].title} · Planned Studio demo` : "Not found");
 }
 
 export default async function PlannedStudioModule({ params }: { params: Promise<{ module: string }> }) {
   await requirePublicPreview();
   const { module } = await params;
+  if (module === "content" || module === "media") redirect(`/preview/studio/${module}`);
   if (!Object.hasOwn(modules, module)) notFound();
   const entry = modules[module as keyof typeof modules];
   return <section className={styles.page} aria-labelledby="module-title"><p className={styles.eyebrow}>Studio roadmap / {entry.stage}</p><span className={styles.status}>Planned module</span><h1 id="module-title">{entry.title}</h1><p className={styles.description}>{entry.description}</p><div className={styles.note}><h2>Current development boundary</h2><p>{entry.current}</p></div><div className={styles.actions}><Link href={entry.href}>{entry.action}<span aria-hidden="true">↗</span></Link><Link href="/preview/studio">Back to overview<span aria-hidden="true">↗</span></Link></div></section>;

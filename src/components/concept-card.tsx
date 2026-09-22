@@ -4,9 +4,9 @@ import { Arrow } from "@/components/ui/arrow";
 import { ConceptImage } from "@/components/concept-image";
 import styles from "./concept-card.module.css";
 
-export function ConceptCard({ piece, index = 0 }: { piece: Concept; index?: number }) {
-  if (piece.tier === "MEDIUM") return <MemoryProductCard piece={piece} index={index} />;
-  if (piece.tier === "SMALL") return <PersonalArtProductCard piece={piece} />;
+export function ConceptCard({ piece, index = 0, idPrefix = "" }: { piece: Concept; index?: number; idPrefix?: string }) {
+  if (piece.tier === "MEDIUM") return <MemoryProductCard piece={piece} index={index} idPrefix={idPrefix} />;
+  if (piece.tier === "SMALL") return <PersonalArtProductCard piece={piece} idPrefix={idPrefix} />;
   return (
     <article className={`concept-card ${styles.card}`}>
       <Link className="concept-link" href={`/pieces/${piece.slug}`}>
@@ -33,8 +33,8 @@ export function ConceptCard({ piece, index = 0 }: { piece: Concept; index?: numb
   );
 }
 
-export function MemoryProductCard({ piece, index = 0 }: { piece: MemoryConcept; index?: number }) {
-  const headingId = `memory-${piece.id}`;
+export function MemoryProductCard({ piece, index = 0, idPrefix = "" }: { piece: MemoryConcept; index?: number; idPrefix?: string }) {
+  const headingId = `${idPrefix}memory-${piece.id}`;
   const occasion = piece.memory.occasions.map((value) => memoryOccasionOptions.find((option) => option.value === value)?.label).join(" · ");
   const preservation = preservationOptions.find((option) => option.value === piece.memory.preservation)?.label;
   return (
@@ -64,8 +64,8 @@ export function MemoryProductCard({ piece, index = 0 }: { piece: MemoryConcept; 
   );
 }
 
-export function PersonalArtProductCard({ piece }: { piece: PersonalConcept }) {
-  const headingId = `personal-${piece.id}`;
+export function PersonalArtProductCard({ piece, idPrefix = "" }: { piece: PersonalConcept; idPrefix?: string }) {
+  const headingId = `${idPrefix}personal-${piece.id}`;
   return (
     <article className={`${styles.card} ${styles.personalCard}`} data-tier="personal">
       <Link className={`concept-link ${styles.personalLink}`} href={`/pieces/${piece.slug}`} aria-labelledby={headingId}>
