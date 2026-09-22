@@ -1,6 +1,6 @@
 /**
- * Server fixture adapter for guarded Studio routes. Do not import this module
- * into a client component: journal source includes every full article body.
+ * Fixture adapter reused by the isolated Sites frontend and guarded Studio routes.
+ * No real customer content or provider data is included.
  * These functions do not save, publish or mutate the original source records.
  */
 import { concepts } from "@/lib/catalogue";
@@ -15,6 +15,8 @@ import { faqs } from "@/lib/faqs";
 import { journalArticles, type JournalArticle } from "@/lib/journal";
 import { studioMediaAssets, type AssetReference } from "@/lib/studio-media";
 import { DEMO_TESTIMONIAL_LABEL, testimonials } from "@/lib/testimonials";
+
+const supplementaryPages = [{"id": "CP002", "slug": "collectible-design", "title": "Collectible Design", "summary": "Furniture and spatial art, considered at the scale of a room.", "sectionType": "product-selection", "refs": ["DP001", "DP013", "DP035", "DP069"]}, {"id": "CP003", "slug": "memory-art", "title": "Memory Art", "summary": "A moment, given a form. Explore fictional preservation and celebration concepts.", "sectionType": "product-selection", "refs": ["DP085", "DP087", "DP099"]}, {"id": "CP004", "slug": "personal-art", "title": "Personal Art & Gifts", "summary": "Small objects with a personal meaning.", "sectionType": "product-selection", "refs": ["DP109", "DP114", "DP119"]}, {"id": "CP005", "slug": "commission", "title": "Custom Commission", "summary": "A considered starting point for a furniture or spatial-art conversation.", "sectionType": "commission-process", "refs": []}, {"id": "CP006", "slug": "portfolio", "title": "Imagined Spaces", "summary": "Explicitly fictional briefs. No real clients or completed installations are represented.", "sectionType": "project-story", "refs": ["DP001", "DP013"]}, {"id": "CP007", "slug": "faq", "title": "Frequently Asked Questions", "summary": "Owner-review answers about objects, requests and the questions that remain open.", "sectionType": "faq", "refs": ["DF001","DF007","DF013"]}, {"id": "CP008", "slug": "journal", "title": "Journal Intro", "summary": "Original draft essays on material, space and meaning.", "sectionType": "journal-selection", "refs": ["DB001", "DB013", "DB019"]}] as const;
 
 const pageDraftNote = "Composer starting draft derived from the existing sample editorial direction. It is not a saved or published version of the current website.";
 const pageKeys = Object.keys(editorialPages) as EditorialPageKey[];
@@ -169,6 +171,7 @@ function homepageDocument(): ContentDocument {
 export function getContentSummaries(): ContentDocumentSummary[] {
   return [
     { id: "CP001", kind: "page", title: "Homepage · furniture first", slug: "home", description: pageDraftNote, mediaState: "PREVIEW_ONLY", sourceRoute: "/", schemaVersion: 1 },
+    ...supplementaryPages.map((p): ContentDocumentSummary => ({id:p.id,kind:"page",title:p.title,slug:p.slug,description:p.summary,mediaState:"NOT_REQUIRED",sourceRoute:`/${p.slug}`,schemaVersion:1})),
     ...pageKeys.map((key): ContentDocumentSummary => {
       const page = editorialPages[key];
       return { id: page.id, kind: "page", title: page.title, slug: key, description: page.description, mediaState: key === "about" ? "PREVIEW_ONLY" : "NOT_REQUIRED", sourceRoute: `/${key}`, schemaVersion: 1 };
@@ -181,6 +184,8 @@ export function getContentSummaries(): ContentDocumentSummary[] {
 
 export function getContentDocument(id: string): ContentDocument | undefined {
   if (id === "CP001") return homepageDocument();
+  const extra=supplementaryPages.find(p=>p.id===id);
+  if(extra)return {...baseDocument("page",extra.id,extra.title,extra.slug),summary:extra.summary,body:textToRichText([extra.summary,pageDraftNote]),sourceRoute:`/${extra.slug}`,sections:[section("hero",`${extra.id}-hero`,{heading:extra.title,body:extra.summary}),section(extra.sectionType as SectionType,`${extra.id}-selection`,{heading:extra.title,referenceIds:[...extra.refs]}),...(extra.id==="CP003"?[section("testimonial",`${extra.id}-fictional-quote`,{referenceIds:["DT001"]})]:[]),section("contact",`${extra.id}-contact`)]};
   const pageKey = pageKeys.find((key) => editorialPages[key].id === id);
   if (pageKey) {
     const page = editorialPages[pageKey];
@@ -214,7 +219,7 @@ export function getContentDocument(id: string): ContentDocument | undefined {
 /** Starting values only; opening this draft does not create a stored record. */
 export function newContentDocument(kind: ContentKind): ContentDocument {
   const draft = baseDocument(kind, `LOCAL-${kind}`, `Untitled sample ${kind}`, `untitled-sample-${kind}`);
-  draft.summary = kind === "testimonial" ? DEMO_TESTIMONIAL_LABEL : "New local sample draft. Add fictional content only; leaving the editor discards these changes.";
+  draft.summary = kind === "testimonial" ? DEMO_TESTIMONIAL_LABEL : "New local sample draft. Add fictional content only; local checkpoints retain synthetic drafts in this browser where storage is available.";
   if (kind === "page") draft.sections = [section("hero", "LOCAL-page-opening")];
   if (kind === "testimonial") draft.identity = "Demo Reviewer — local draft";
   return draft;

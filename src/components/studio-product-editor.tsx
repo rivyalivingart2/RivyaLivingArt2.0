@@ -1,5 +1,6 @@
 "use client";
 
+import {useOptionalDemo} from '@/lib/rivya/demo-state';
 import Link from "next/link";
 import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import { ConceptImage } from "@/components/concept-image";
@@ -45,8 +46,10 @@ export function StudioProductEditor({ product }: { product?: Concept }) {
 
 function ProductDraftEditor({ product }: { product?: Concept }) {
   const hydrated = useSyncExternalStore(subscribeToHydration, clientHydrated, serverHydrated);
-  const [draft, setDraft] = useState(() => createStudioProductDraft(product));
-  const [snapshot, setSnapshot] = useState(() => createStudioProductDraft(product));
+  const localDemo=useOptionalDemo();
+  const [draft, setDraft] = useState<StudioProductDraft>(() => {try{const data=localDemo?.state.drafts[product?.id||"LOCAL-product"]?.data;return data?JSON.parse(data):createStudioProductDraft(product)}catch{return createStudioProductDraft(product)}});
+  const [snapshot, setSnapshot] = useState<StudioProductDraft>(() => {try{const data=localDemo?.state.drafts[product?.id||"LOCAL-product"]?.data;return data?JSON.parse(data):createStudioProductDraft(product)}catch{return createStudioProductDraft(product)}});
+  const localVersion=useRef(localDemo?.state.drafts[product?.id||"LOCAL-product"]?.revision||0);
   const [hasApplied, setHasApplied] = useState(false);
   const [errors, setErrors] = useState<StudioDraftErrors>({});
   const [pendingTier, setPendingTier] = useState<ProductTier | null>(null);
@@ -80,7 +83,10 @@ function ProductDraftEditor({ product }: { product?: Concept }) {
     const nextErrors = validateStudioProductDraft(draft);
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length) { setNotice("Resolve the highlighted fields before applying this local draft."); return; }
-    setSnapshot(draft); setHasApplied(true); setNotice("Local draft applied in this tab only. Nothing was saved to a database or published.");
+    const result=localDemo?.save(product?.id||"LOCAL-product",draft,localVersion.current);
+    if(result&&!result.ok){setNotice(result.reason||"Local checkpoint failed. Your input is retained.");return}
+    if(result?.revision)localVersion.current=result.revision;
+    setSnapshot(draft);setHasApplied(true);setNotice("Synthetic draft checkpointed locally. See the storage banner for whether it survives leaving this tab. No database write or publication.");
   }
   function resolveTier(confirm: boolean) {
     if (confirm && pendingTier) { base("tier", pendingTier); setErrors({}); setNotice("Tier changed locally. Previous tier fields are retained in this tab; review the new required fields."); }
@@ -89,7 +95,7 @@ function ProductDraftEditor({ product }: { product?: Concept }) {
 
   return <section className={styles.editor} aria-labelledby="product-editor-title">
     <header className={styles.header}>
-      <div><p className={styles.eyebrow}>Catalogue / {product?.id ?? "New local draft"}</p><h1 id="product-editor-title">{product ? "Edit product study" : "Create a product study"}</h1><p>Demo authoring · changes live in this tab and are lost when you leave or reload.</p></div>
+      <div><p className={styles.eyebrow}>Catalogue / {product?.id ?? "New local draft"}</p><h1 id="product-editor-title">{product ? "Edit product study" : "Create a product study"}</h1><p>Demo authoring · checkpointed drafts resume in this browser when storage is available. Unsaved input is temporary.</p></div>
       <Link href="/preview/studio/products" className={styles.link}>Back to products <span aria-hidden="true">↗</span></Link>
     </header>
     <div className={styles.documentBar}><span className={styles.badge}>Demo dataset</span><span>{product ? `Source: ${product.id} · ${product.contentStatus === "DEMO_VISIBLE" ? "visible in demo" : "source fixture"}` : "No source record created"}</span><span className={styles.draftStatus}>{dirty ? "Unapplied local changes" : hasApplied ? "Local snapshot applied" : "No local changes"}</span></div>
@@ -158,7 +164,7 @@ function ProductDraftEditor({ product }: { product?: Concept }) {
           <div className={styles.twoColumns}><Field name="availability" label="Sample availability" value={draft.availability} onChange={(value) => base("availability", value as StudioProductDraft["availability"])} errors={errors} required options={[{ value: "MADE_TO_ORDER", label: "Made to order" }, { value: "READY_TO_SHIP", label: "Ready to ship · fictional" }]} /><Field name="stage" label="Local draft stage" value={draft.stage} onChange={(value) => base("stage", value as StudioProductDraft["stage"])} errors={errors} required options={[{ value: "DRAFT", label: "Draft" }, { value: "IN_REVIEW", label: "In review · local label" }]} /></div>
           <p className={styles.hint}>Changing the draft stage sends no review request and grants no publication or rights approval.</p>
         </section>
-        <div className={styles.applyBar}><div><strong>{dirty ? "Unapplied changes" : hasApplied ? "Local snapshot ready" : "Ready to edit"}</strong><p>No database save. Reloading or leaving discards this work.</p></div><div className={styles.actions}><button className={styles.secondary} type="button" disabled={!dirty || Boolean(pendingTier)} onClick={() => { setDraft(snapshot); setErrors({}); setNotice("Unapplied changes reverted to the local snapshot in this tab."); }}>Revert local changes</button><button className={styles.primary} type="submit">Apply local draft</button></div><p className={styles.status} role="status">{notice}</p></div>
+        <div className={styles.applyBar}><div><strong>{dirty ? "Unapplied changes" : hasApplied ? "Local snapshot ready" : "Ready to edit"}</strong><p>No database save. Applied drafts remain in this browser where storage is available.</p></div><div className={styles.actions}><button className={styles.secondary} type="button" disabled={!dirty || Boolean(pendingTier)} onClick={() => { setDraft(snapshot); setErrors({}); setNotice("Unapplied changes reverted to the local snapshot in this tab."); }}>Revert local changes</button><button className={styles.primary} type="submit">Apply local draft</button></div><p className={styles.status} role="status">{notice}</p></div>
         </fieldset>
       </form>
 

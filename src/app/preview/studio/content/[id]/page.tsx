@@ -1,18 +1,7 @@
-import { notFound } from "next/navigation";
-import { StudioContentEditor } from "@/components/studio-content-editor";
-import { isVisualPreviewAllowed } from "@/lib/preview-mode";
-import { publicPreviewMetadata, requirePublicPreview } from "@/lib/public-preview";
-import { getContentDocument, getContentReferences, getContentSummaries } from "@/lib/studio-content-data";
-
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
-  if (!isVisualPreviewAllowed(process.env)) return publicPreviewMetadata("Not found");
-  const document = getContentDocument((await params).id);
-  return publicPreviewMetadata(document ? `${document.title} · Content draft · Studio demo` : "Not found");
-}
-
-export default async function ContentDocumentPage({ params }: { params: Promise<{ id: string }> }) {
-  await requirePublicPreview();
-  const document = getContentDocument((await params).id);
-  if (!document) notFound();
-  return <StudioContentEditor key={document.id} initialDocument={document} documents={getContentSummaries()} references={getContentReferences()} />;
-}
+import {notFound} from "next/navigation";
+import {concepts} from "@/lib/catalogue";
+import {getContentDocument} from "@/lib/studio-content-data";
+import {ApprovedExperience} from "@/components/rivya/approved-entry";
+import {requirePublicPreview,publicPreviewMetadata} from "@/lib/public-preview";
+export function generateMetadata(){return publicPreviewMetadata("RivyaLivingArt Studio · local demo")}
+export default async function Page({params}:{params:Promise<{id:string}>}){await requirePublicPreview();const {id}=await params;if(!getContentDocument(id)&&!/^LOCAL-(page|article|faq|testimonial)(?:-[a-f0-9-]{36})?$/.test(id))notFound();return <ApprovedExperience initialRoute={`/studio/content/${id}`}/>;}

@@ -1,3 +1,5 @@
+import {connection} from "next/server";
+import {isVisualPreviewAllowed} from "@/lib/preview-mode";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { SiteHeader } from "@/components/site-header";
@@ -30,6 +32,7 @@ export const metadata: Metadata = {
 };
 export const viewport: Viewport = { themeColor: "#101713", colorScheme: "dark" };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}><body><a className="skip-link" href="#main-content">Skip to content</a><ApplicationFrame header={<SiteHeader />} footer={<SiteFooter />}>{children}</ApplicationFrame></body></html>;
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  await connection();
+  return <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}><body><a className="skip-link" href="#main-content">Skip to content</a><ApplicationFrame approved={isVisualPreviewAllowed(process.env)} header={<SiteHeader />} footer={<SiteFooter />}>{children}</ApplicationFrame></body></html>;
 }

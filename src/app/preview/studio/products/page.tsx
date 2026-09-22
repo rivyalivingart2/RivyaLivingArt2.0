@@ -1,10 +1,4 @@
-import { StudioProducts } from "@/components/studio-products";
-import { concepts, type CatalogueQuery } from "@/lib/catalogue";
-import { publicPreviewMetadata, requirePublicPreview } from "@/lib/public-preview";
-
-export function generateMetadata() { return publicPreviewMetadata("Studio products · Demo"); }
-
-export default async function StudioProductsPage({ searchParams }: { searchParams: Promise<CatalogueQuery> }) {
-  await requirePublicPreview();
-  return <StudioProducts products={concepts} query={await searchParams} />;
-}
+import {ApprovedExperience} from "@/components/rivya/approved-entry";
+import {requirePublicPreview,publicPreviewMetadata} from "@/lib/public-preview";
+export function generateMetadata(){return publicPreviewMetadata("RivyaLivingArt Studio · local demo")}
+export default async function Page(){await requirePublicPreview();return <ApprovedExperience initialRoute={"/studio/products"}/>;}

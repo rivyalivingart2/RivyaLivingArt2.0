@@ -1,8 +1,4 @@
-import { InquiryEntry, inquiryMetadata } from "@/components/inquiry-entry";
-import type { CatalogueQuery } from "@/lib/catalogue";
-
-export function generateMetadata() { return inquiryMetadata("preserve"); }
-
-export default function PreservationPage({ searchParams }: { searchParams: Promise<CatalogueQuery> }) {
-  return <InquiryEntry mode="preserve" searchParams={searchParams} />;
-}
+import {ApprovedExperience} from "@/components/rivya/approved-entry";
+import {requirePublicPreview,publicPreviewMetadata} from "@/lib/public-preview";
+export function generateMetadata(){return publicPreviewMetadata('Preserve');}
+export default async function Page(){await requirePublicPreview();return <ApprovedExperience initialRoute="/preserve"/>}

@@ -1,5 +1,6 @@
 "use client";
 
+import {useOptionalDemo} from '@/lib/rivya/demo-state';
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
@@ -42,9 +43,11 @@ function DraftPreview({ document, references }: { document: ContentDocument; ref
 }
 
 export function StudioContentEditor({ initialDocument, documents, references }: { initialDocument: ContentDocument; documents: readonly ContentDocumentSummary[]; references: ContentReferences }) {
+  const localDemo=useOptionalDemo();
   const hydrated = useSyncExternalStore(subscribe, () => true, () => false);
-  const [draft, setDraft] = useState(() => clone(initialDocument));
-  const [history, setHistory] = useState<LocalContentCheckpoint[]>([]);
+  const [draft, setDraft] = useState<ContentDocument>(() => {try{const data=localDemo?.state.drafts[initialDocument.id]?.data;return data?JSON.parse(data):clone(initialDocument)}catch{return clone(initialDocument)}});
+  const [history, setHistory] = useState<LocalContentCheckpoint[]>(()=> (localDemo?.state.history[initialDocument.id]||[]).flatMap(r=>{try{return [{id:r.revision,label:`Local checkpoint ${r.revision}`,document:JSON.parse(r.data) as ContentDocument}]}catch{return []}}));
+  const localVersions=useRef<Record<string,number>>({[initialDocument.id]:localDemo?.state.drafts[initialDocument.id]?.revision||0});
   const [selectedCheckpoint, setSelectedCheckpoint] = useState(0);
   const [status, setStatus] = useState<SaveStatus>("untouched");
   const [saveExample, setSaveExample] = useState<SaveExample>("normal");
@@ -56,7 +59,7 @@ export function StudioContentEditor({ initialDocument, documents, references }: 
   const [action, setAction] = useState<DraftAction>(null);
   const [editorGeneration, setEditorGeneration] = useState(0);
   const [notice, setNotice] = useState("");
-  const nextCheckpoint = useRef(1);
+  const nextCheckpoint = useRef((localDemo?.state.drafts[initialDocument.id]?.revision||0)+1);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastDraft = useRef(draft);
   const hasLocalChanges = JSON.stringify(initialDocument) !== JSON.stringify(draft) || history.length > 0;
@@ -85,6 +88,9 @@ export function StudioContentEditor({ initialDocument, documents, references }: 
     timer.current = setTimeout(() => {
       timer.current = null;
       if (example !== "normal") { setStatus(example); return; }
+      const result=localDemo?.save(value.id,value,localVersions.current[value.id]||0);
+      if(result&&!result.ok){setStatus("conflict");setNotice(result.reason||"Checkpoint failed; your input remains here.");return}
+      if(result?.revision)localVersions.current[value.id]=result.revision;
       const id = nextCheckpoint.current++;
       const snapshot = { id, label: `Local checkpoint ${id}`, document: clone(value) };
       setHistory((current) => [...current, snapshot].slice(-12));
@@ -102,7 +108,7 @@ export function StudioContentEditor({ initialDocument, documents, references }: 
   function confirmAction() {
     if (action === "duplicate") {
       change({ ...clone(draft), id: `LOCAL-${draft.kind}-${crypto.randomUUID()}`, title: `${draft.title} — copy`, slug: `${draft.slug}-copy`, sourceRoute: null, archived: false });
-      setNotice("A separate local copy is open. The source library is unchanged; this copy disappears when you leave.");
+      setNotice("A separate local copy is open. Checkpoint this copy to resume it from the content hub. The source library is unchanged.");
     } else if (action === "archive" || action === "restore") {
       patch({ archived: action === "archive" });
       setNotice(action === "archive" ? "Draft archived in this editor only. Source records and public pages are unchanged." : "Local draft restored. Nothing was written to a database.");
@@ -116,13 +122,13 @@ export function StudioContentEditor({ initialDocument, documents, references }: 
 
   return <section className={styles.workspace} aria-labelledby="document-title">
     <header className={styles.editorHeading}><div><Link href="/preview/studio/content" className={styles.back}>← Content room</Link><p className={styles.eyebrow}>{contentKindLabels[draft.kind]} / {draft.id} / Schema {draft.schemaVersion}</p><h1 id="document-title">{draft.title || "Untitled local draft"}</h1><p>Sample content · Owner review required{draft.archived ? " · Archived locally" : ""}</p></div><div className={styles.editorActions}><button type="button" disabled={!hydrated} onClick={() => setAction("duplicate")}>Duplicate locally</button><button type="button" disabled={!hydrated} onClick={() => setAction(draft.archived ? "restore" : "archive")}>{draft.archived ? "Restore local draft" : "Archive locally"}</button><button type="button" className={styles.primaryButton} disabled={!hydrated || status === "pending"} onClick={() => checkpoint(draft)}>Hold local checkpoint</button></div></header>
-    <div className={styles.saveBar}><p role="status" data-status={status}><span className={styles.statusDot} aria-hidden="true" />{saveLabels[status]}</p><label><input type="checkbox" checked={autosave} disabled={!hydrated} onChange={(event) => { const enabled = event.target.checked; setAutosave(enabled); cancelPending(); if (enabled && hasUncheckpointedChanges) checkpoint(draft); else setStatus(settledStatus); }} /> Local autosave</label><span>Memory only · Latest 12 checkpoints · Lost on exit</span></div>
-    {action && <div className={styles.confirmation} role="group" aria-labelledby="draft-action-title"><h2 id="draft-action-title">{action === "history" ? "Restore this snapshot as a new local draft?" : action === "duplicate" ? "Open a temporary copy of this draft?" : action === "archive" ? "Archive this draft in the open editor?" : "Restore this local draft?"}</h2><p>Current editor state will change. The source library, existing snapshots and public pages stay intact.</p><div><button type="button" onClick={confirmAction}>Confirm {action === "history" ? "snapshot restore" : action}</button><button type="button" onClick={() => setAction(null)}>Cancel</button></div></div>}
+    <div className={styles.saveBar}><p role="status" data-status={status}><span className={styles.statusDot} aria-hidden="true" />{saveLabels[status]}</p><label><input type="checkbox" checked={autosave} disabled={!hydrated} onChange={(event) => { const enabled = event.target.checked; setAutosave(enabled); cancelPending(); if (enabled && hasUncheckpointedChanges) checkpoint(draft); else setStatus(settledStatus); }} /> Local autosave</label><span>Browser-local · Latest 12 checkpoints · Not a durable backup</span></div>
+    {action && <div className={styles.confirmation} role="group" aria-labelledby="draft-action-title"><h2 id="draft-action-title">{action === "history" ? "Restore this snapshot as a new local draft?" : action === "duplicate" ? "Open a separate local copy of this draft?" : action === "archive" ? "Archive this draft in the open editor?" : "Restore this local draft?"}</h2><p>Current editor state will change. The source library, existing snapshots and public pages stay intact.</p><div><button type="button" onClick={confirmAction}>Confirm {action === "history" ? "snapshot restore" : action}</button><button type="button" onClick={() => setAction(null)}>Cancel</button></div></div>}
     {notice && <p className={styles.notice} role="status">{notice}</p>}
-    {(status === "failure" || status === "conflict") && <div className={styles.confirmation}><h2>{status === "failure" ? "Checkpoint failure example" : "Version conflict example"}</h2><p>{status === "failure" ? "This example did not create a checkpoint. Your current input is still here." : "No remote version exists in this frontend. Compare a local checkpoint with your retained draft to explore how a future conflict would be presented."}</p><div><button type="button" onClick={() => { setSaveExample("normal"); checkpoint(draft, "normal"); }}>Retry as a normal local checkpoint</button>{status === "conflict" && <button type="button" onClick={() => setView("history")}>Compare local history</button>}</div></div>}
+    {(status === "failure" || status === "conflict") && <div className={styles.confirmation}><h2>{status === "failure" ? "Checkpoint failure example" : "Local version conflict"}</h2><p>{status === "failure" ? "This example did not create a checkpoint. Your current input is still here." : "The current input has been retained. If another tab saved a newer version, export or copy your input, reopen this record and reconcile the two drafts. This can also be selected as a simulated conflict example."}</p><div><button type="button" onClick={() => { setSaveExample("normal"); checkpoint(draft, "normal"); }}>Retry as a normal local checkpoint</button>{status === "conflict" && <button type="button" onClick={() => setView("history")}>Compare local history</button>}</div></div>}
     <div className={styles.editorTabs} aria-label="Editor views">{(["edit", "preview", "history"] as const).map((item) => <button key={item} type="button" aria-pressed={view === item} onClick={() => setView(item)}>{item === "edit" ? "Write & arrange" : item === "preview" ? "Layout preview" : `History (${history.length})`}</button>)}</div>
     <div className={styles.editorLayout} data-view={view}>
-      <aside className={styles.editorSidebar}><details><summary>In this collection <span>{documents.filter((doc) => doc.kind === draft.kind).length}</span></summary><nav aria-label="Other source documents">{documents.filter((doc) => doc.kind === draft.kind).map((doc) => <Link key={doc.id} href={`/preview/studio/content/${doc.id}`} aria-current={doc.id === initialDocument.id ? "page" : undefined}><small>{doc.id}</small>{doc.title}</Link>)}</nav></details><div className={styles.note}><strong>Temporary editor</strong><p>Leaving this editor discards its drafts and checkpoints. Source pages open separately so you can keep editing here.</p>{initialDocument.sourceRoute && <Link target="_blank" rel="noopener noreferrer" href={initialDocument.sourceRoute}>Open source page ↗</Link>}</div><details className={styles.simulation}><summary>Save-state examples</summary><label>Local checkpoint outcome<select value={saveExample} disabled={!hydrated} onChange={(event) => { cancelPending(); setSaveExample(event.target.value as SaveExample); setStatus(settledStatus); }}><option value="normal">Normal local snapshot</option><option value="failure">Simulated failure</option><option value="conflict">Simulated version conflict</option></select></label><p>The chosen example applies to local checkpoint attempts while it is selected. No database, autosave service or other editor is connected.</p></details></aside>
+      <aside className={styles.editorSidebar}><details><summary>In this collection <span>{documents.filter((doc) => doc.kind === draft.kind).length}</span></summary><nav aria-label="Other source documents">{documents.filter((doc) => doc.kind === draft.kind).map((doc) => <Link key={doc.id} href={`/preview/studio/content/${doc.id}`} aria-current={doc.id === initialDocument.id ? "page" : undefined}><small>{doc.id}</small>{doc.title}</Link>)}</nav></details><div className={styles.note}><strong>Local editor</strong><p>Checkpointed drafts can resume in this browser when storage is available. Unsaved input is temporary. Source pages open separately.</p>{initialDocument.sourceRoute && <Link target="_blank" rel="noopener noreferrer" href={initialDocument.sourceRoute}>Open source page ↗</Link>}</div><details className={styles.simulation}><summary>Save-state examples</summary><label>Local checkpoint outcome<select value={saveExample} disabled={!hydrated} onChange={(event) => { cancelPending(); setSaveExample(event.target.value as SaveExample); setStatus(settledStatus); }}><option value="normal">Normal local snapshot</option><option value="failure">Simulated failure</option><option value="conflict">Simulated version conflict</option></select></label><p>The chosen example applies to local checkpoint attempts while it is selected. No database, autosave service or other editor is connected.</p></details></aside>
       <div className={styles.writingPanel} hidden={view !== "edit"}>
         <fieldset className={styles.fieldset} disabled={!hydrated || draft.archived}><legend>{draft.kind === "faq" ? "Question & answer" : draft.kind === "testimonial" ? "Fictional quote" : "Document details"}</legend><label htmlFor="content-title-field">{draft.kind === "faq" ? "Question" : "Title"}<input id="content-title-field" maxLength={160} value={draft.title} onChange={(event) => patch({ title: event.target.value })} /></label>
           {(draft.kind === "article" || draft.kind === "page") && <><label htmlFor="content-slug">Slug<input id="content-slug" maxLength={100} value={draft.slug} onChange={(event) => patch({ slug: event.target.value })} /></label><p className={styles.fieldHint}>Local route proposal. Editing this field does not rename a source route.</p></>}

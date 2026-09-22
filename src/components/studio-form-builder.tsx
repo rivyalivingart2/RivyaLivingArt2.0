@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import {useOptionalDemo} from "@/lib/rivya/demo-state";
 import { useId, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import { InquiryInput } from "./inquiry-input";
 import { fictionalDemoValues, isInquiryFieldVisible, summarizeInquiry, validateInquiry, type InquiryConfig, type InquiryErrors, type InquiryField, type InquiryValues } from "@/lib/inquiry-schema";
@@ -14,12 +15,15 @@ const server = () => false;
 type Confirmation = { kind: "delete"; field: InquiryField } | { kind: "reset" } | { kind: "example" };
 
 export function StudioFormBuilder({ initialConfig }: { initialConfig: InquiryConfig }) {
+  const demo=useOptionalDemo();
+  const checkpointId=`FORM-${initialConfig.product?.id||"GENERAL"}`;
+  const savedVersion=useRef(demo?.state.drafts[checkpointId]?.revision||0);
   const isHydrated = useSyncExternalStore(subscribe, hydrated, server);
-  const [draft, setDraft] = useState(initialConfig);
+  const [draft, setDraft] = useState<InquiryConfig>(()=>{try{const data=demo?.state.drafts[checkpointId]?.data;return data?JSON.parse(data):initialConfig}catch{return initialConfig}});
   const [revision, setRevision] = useState(0);
-  const [stepId, setStepId] = useState(initialConfig.steps[0].id);
-  const [selectedId, setSelectedId] = useState(initialConfig.steps[0].fields[0]?.id ?? "");
-  const [previewStepId, setPreviewStepId] = useState(initialConfig.steps[0].id);
+  const [stepId, setStepId] = useState(draft.steps[0].id);
+  const [selectedId, setSelectedId] = useState(draft.steps[0].fields[0]?.id ?? "");
+  const [previewStepId, setPreviewStepId] = useState(draft.steps[0].id);
   const [values, setValues] = useState<InquiryValues>({ ...initialConfig.initialValues });
   const [errors, setErrors] = useState<InquiryErrors>({});
   const [announcement, setAnnouncement] = useState("");
@@ -238,12 +242,12 @@ export function StudioFormBuilder({ initialConfig }: { initialConfig: InquiryCon
             <legend className={styles.srOnly}>Local visitor form preview</legend>
             <header className={styles.stepHeading}><span className="eyebrow">{String(draft.steps.indexOf(previewStep) + 1).padStart(2, "0")} / {String(draft.steps.length).padStart(2, "0")}</span><h3>{previewStep.title}</h3><p>{previewStep.description}</p></header>
             {Object.keys(errors).length > 0 && <div className={styles.validationErrors} role="alert"><h4>Review these sample answers</h4><ul>{Object.entries(errors).map(([fieldId, error]) => <li key={fieldId}>{draft.steps.flatMap((item) => item.fields).find((field) => field.id === fieldId)?.label}: {error}</li>)}</ul></div>}
-            {previewStep.kind === "review" ? <div className={styles.summary}><p className={styles.helper}>{draft.reviewNotice}</p>{summarizeInquiry(draft, values).map((section) => <section key={section.id}><h4>{section.title}</h4><dl>{section.items.map((item) => <div key={item.id}><dt>{item.label}</dt><dd>{item.value}</dd></div>)}</dl></section>)}<p className={styles.helper}>Local preview acknowledgement: {values.previewConsent === "yes" ? "confirmed" : "not confirmed"}.</p></div> : <div className={fieldStyles.fieldGrid}>{previewStep.fields.filter((field) => isInquiryFieldVisible(field, values)).map((field) => <InquiryInput key={field.id} field={field} values={values} error={errors[field.id]} inputId={`${id}-visitor-${field.id}`} onChange={updateValue} />)}</div>}
+            {previewStep.kind === "review" ? <div className={styles.summary}><p className={styles.helper}>{draft.reviewNotice}</p>{summarizeInquiry(draft, values).map((section) => <section key={section.id}><h4>{section.title}</h4><dl>{section.items.map((item) => <div key={item.id}><dt>{item.label}</dt><dd>{item.value}</dd></div>)}</dl></section>)}<p className={styles.helper}>Local preview acknowledgement: {values.previewConsent === "yes" ? "confirmed" : "not confirmed"}.</p></div> : <div className={fieldStyles.fieldGrid}>{previewStep.fields.filter((field) => isInquiryFieldVisible(field, values)).map((field) => <InquiryInput syntheticOnly key={field.id} field={field} values={values} error={errors[field.id]} inputId={`${id}-visitor-${field.id}`} onChange={updateValue} />)}</div>}
             {previewStep.reference && <aside className={styles.reference}><span aria-hidden="true">↥</span><div><strong>Reference-image position</strong><p>Local builder placeholder. File selection is unavailable here; nothing is uploaded.</p></div></aside>}
             <button type="submit" className={styles.validateButton}>Validate {previewStep.kind === "review" ? "all sample answers" : "this sample step"} <span aria-hidden="true">→</span></button>
           </fieldset>
         </form>
-        <details className={styles.schemaSnapshot}><summary>Inspect local schema v{draft.schemaVersion} · revision {revision}</summary><p className={styles.helper}>Schema only. Preview answers are omitted. This is not a saved schema version or a historical enquiry record.</p><pre>{JSON.stringify({ schemaVersion: draft.schemaVersion, localRevision: revision, productId: draft.product?.id ?? null, mode: draft.mode, steps: draft.steps }, null, 2)}</pre></details>
+        <button type="button" className={styles.validateButton} disabled={issues.length>0} onClick={()=>{const result=demo?.save(checkpointId,{...draft,initialValues:initialConfig.initialValues},savedVersion.current);if(result&&!result.ok){setAnnouncement(result.reason||"The schema could not be checkpointed.");return}if(result?.revision)savedVersion.current=result.revision;setAnnouncement("Schema checkpointed locally. Visitor answers are excluded; no database write or public form replacement.")}}>Checkpoint this sample form locally</button><details className={styles.schemaSnapshot}><summary>Inspect local schema v{draft.schemaVersion} · revision {revision}</summary><p className={styles.helper}>Schema only. Preview answers are omitted. This is not a saved schema version or a historical enquiry record.</p><pre>{JSON.stringify({ schemaVersion: draft.schemaVersion, localRevision: revision, productId: draft.product?.id ?? null, mode: draft.mode, steps: draft.steps }, null, 2)}</pre></details>
       </section>
     </div>
   </section>;

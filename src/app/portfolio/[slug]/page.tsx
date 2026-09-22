@@ -1,20 +1,8 @@
-import { notFound } from "next/navigation";
-import { PortfolioDetail } from "@/components/portfolio";
-import { findPortfolioStudy } from "@/lib/portfolio";
-import { isVisualPreviewAllowed } from "@/lib/preview-mode";
-import { publicPreviewMetadata, requirePublicPreview } from "@/lib/public-preview";
-
-type Props = { params: Promise<{ slug: string }> };
-
-export async function generateMetadata({ params }: Props) {
-  if (!isVisualPreviewAllowed(process.env)) return { title: "Not found" };
-  const study = findPortfolioStudy((await params).slug);
-  return study ? publicPreviewMetadata(`${study.title} — fictional design study`, study.excerpt) : { title: "Not found" };
-}
-
-export default async function PortfolioStudyPage({ params }: Props) {
-  await requirePublicPreview();
-  const study = findPortfolioStudy((await params).slug);
-  if (!study) notFound();
-  return <PortfolioDetail study={study} />;
-}
+import {notFound} from 'next/navigation';
+import {ApprovedExperience} from '@/components/rivya/approved-entry';
+import {requirePublicPreview,publicPreviewMetadata} from '@/lib/public-preview';
+import {isVisualPreviewAllowed} from '@/lib/preview-mode';
+import {findPortfolioStudy} from '@/lib/portfolio';
+type Props={params:Promise<{slug:string}>};
+export async function generateMetadata({params}:Props){if(!isVisualPreviewAllowed(process.env))return publicPreviewMetadata('Not found');return publicPreviewMetadata(findPortfolioStudy((await params).slug)?.title||'Not found')}
+export default async function Page({params}:Props){await requirePublicPreview();const {slug}=await params;if(!findPortfolioStudy(slug))notFound();return <ApprovedExperience initialRoute={"/portfolio/"+slug}/>}

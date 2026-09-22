@@ -1,4 +1,56 @@
+# Current task — owner-authorized GitHub publication
+
+22 September 2026. Owner explicitly instructed publishing the prepared updated code
+into `rivyalivingart2/RivyaLivingArt2.0` after the public-disclosure blocker was explained.
+This resolves the earlier scope blocker for this source/asset payload only. See
+`docs/decisions/2026-09-22-approved-code-publication.md`.
+
+Publish `codex/sites-approved-design` on the latest verified main history (`79f5834`,
+R8-4B merge; no file differences from the existing development base). Preserve four
+local development commits and the actual native Version 5 export. Local implementation
+checkpoint: `918a017`. Connector publication creates its own Git commit metadata; verify
+its tree against the reviewed local tree and record the actual remote SHA separately.
+Push verification pending at this authoring checkpoint; no main merge or deployment.
+
+Prior checkpoints below retain their original blocker/evidence state as history.
+
+---
+
+# Current continuation — SITES-FULL-03
+
+22 September 2026. Non-image source work continues on `codex/sites-approved-design`.
+Implemented actual browser CSV/XLSX parsing/mapping and local product-draft batches,
+protected resume and exports, own-ID content copies, saved-draft hydration, bounded
+storage handling, local revision conflicts, exact cleanup dry runs, publication
+validation, fuller tier projections, additional Memory/Gift filters and separate
+Studio/editorial route chunks. See `docs/sites/non-image-development.md`.
+
+Counts stay 120 products / 36 articles / 42 FAQs / 24 fictional quotes / 40 scenarios.
+Images stay seven matched product portraits and 113 pending. No new assets, Drive
+reads, real credentials/customer collection, database migration, auth, outgoing
+messages, deployment, main merge or sharing change. Formal QA deferred; compiler
+feedback only. Same approved live Version 1 remains. Saved version details are in
+`docs/sites/source-version.json`. GitHub remains public; automatic approval rejection
+of public source/media disclosure is still active. The read-only GitHub connection
+verified both work branches at `29250ee0b8d011835a3053510f7d4ea7ca58cf1e`.
+
+Next: use the saved review version and continue the R8 backend sequence through
+verified isolated services; add owner-returned assets when supplied. Do not repeat
+completed fixture writing or rebuild the approved homepage.
+
+---
+
+## 22 September 2026 — SITES-FULL-02 continuation
+
+Approved Site preserved and extended; actual Next.js public/Studio port implemented on `codex/sites-approved-design`. Counts: 120 products (84/24/12), 36 original full articles, 42 FAQs, 24 fictional testimonials, 40 scenarios, 14 pages, 8 projects. All writes remain synthetic/local. Formal QA remains deferred; no production-readiness claim.
+
+GitHub push blocked by automatic approval review because repository is public and source/media disclosure needs explicit authorization. No workaround or main merge. Saved Site version/source, local commit, remote verification and archive details are recorded in `docs/sites/source-handoff.md`. Read `docs/sites/status.md` and `sample-manifest.json` for the current boundaries and exact remaining integration work. Existing historical entries below retain their original evidence scope.
+
 # RivyaLivingArt project state
+
+## SITES-FULL checkpoint — 22 September 2026
+
+Owner approved existing Sites Version 1 and authorized scoped source export and compatible frontend integration on codex/sites-approved-design, based on latest R8-4B head 29250ee0b8d011835a3053510f7d4ea7ca58cf1e. Baseline native source preserved under experiments/sites/rivyalivingart-studio-preview. Homepage composition/fonts and selected derivative media are ported into src without replacing root application/dependencies or preview guards. Same Site Version 2 saved but not deployed; current audience/live Version 1 unchanged. Memory/personal journeys and sample briefs implemented natively. Full Studio/public expansion and complete sample targets remain in progress; see docs/sites/status.md and source-handoff.md. Formal QA remains deferred; no backend/auth/submission connection. No main merge or Vercel deployment action.
 
 ## R8 checkpoint — 2026-09-21 (R8-4A merged; R8-4B content workspace)
 
