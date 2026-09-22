@@ -1,11 +1,4 @@
-import { MaterialsPage } from "@/components/editorial-pages";
-import { publicPreviewMetadata, requirePublicPreview } from "@/lib/public-preview";
-
-export function generateMetadata() {
-  return publicPreviewMetadata("A language of materials", "Explore wood, resin, metal and mineral as visual directions for fictional design studies.");
-}
-
-export default async function Page() {
-  await requirePublicPreview();
-  return <MaterialsPage />;
-}
+import {ApprovedExperience} from "@/components/rivya/approved-entry";
+import {requirePublicPreview,publicPreviewMetadata} from "@/lib/public-preview";
+export function generateMetadata(){return publicPreviewMetadata('Materials');}
+export default async function Page(){await requirePublicPreview();return <ApprovedExperience initialRoute="/materials"/>}

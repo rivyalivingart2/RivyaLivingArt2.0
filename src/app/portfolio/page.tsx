@@ -1,11 +1,4 @@
-import { PortfolioIndex } from "@/components/portfolio";
-import { publicPreviewMetadata, requirePublicPreview } from "@/lib/public-preview";
-
-export function generateMetadata() {
-  return publicPreviewMetadata("Portfolio — fictional design studies", "Fictional furniture, spatial and memory-art briefs for the RivyaLivingArt preview.");
-}
-
-export default async function PortfolioPage() {
-  await requirePublicPreview();
-  return <PortfolioIndex />;
-}
+import {ApprovedExperience} from "@/components/rivya/approved-entry";
+import {requirePublicPreview,publicPreviewMetadata} from "@/lib/public-preview";
+export function generateMetadata(){return publicPreviewMetadata('Portfolio');}
+export default async function Page(){await requirePublicPreview();return <ApprovedExperience initialRoute="/portfolio"/>}

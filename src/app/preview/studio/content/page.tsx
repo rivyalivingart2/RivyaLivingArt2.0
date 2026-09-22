@@ -1,10 +1,4 @@
-import { StudioContentHub } from "@/components/studio-content-hub";
-import { publicPreviewMetadata, requirePublicPreview } from "@/lib/public-preview";
-import { getContentSummaries } from "@/lib/studio-content-data";
-
-export function generateMetadata() { return publicPreviewMetadata("Content room · Studio demo"); }
-
-export default async function ContentWorkspacePage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
-  await requirePublicPreview();
-  return <StudioContentHub documents={getContentSummaries()} query={await searchParams} />;
-}
+import {ApprovedExperience} from "@/components/rivya/approved-entry";
+import {requirePublicPreview,publicPreviewMetadata} from "@/lib/public-preview";
+export function generateMetadata(){return publicPreviewMetadata("RivyaLivingArt Studio · local demo")}
+export default async function Page(){await requirePublicPreview();return <ApprovedExperience initialRoute={"/studio/content"}/>;}

@@ -1,0 +1,13 @@
+.header { padding: 35px 0 52px; max-width: 990px; }
+.header h1, .header h2 { font-size: clamp(51px, 6.5vw, 96px); line-height: 1.03; letter-spacing: -.035em; margin: 24px 0 29px; text-wrap: balance; }
+.intro { max-width: 665px; color: var(--muted); line-height: 1.9; font-size: 15px; }
+.header > a { margin-top: 28px; }
+.notice { display: grid; gap: 9px; padding: 20px 23px; border: 1px solid var(--border); background: var(--surface); margin: 0 0 40px; max-width: 900px; }
+.notice > div { color: var(--muted); font-size: 12px; line-height: 1.8; }
+.notice a { text-decoration: underline; text-underline-offset: 4px; color: var(--primary-hover); }
+.closing { border-top: 1px solid var(--border); margin-top: 70px; padding-top: 40px; display: flex; align-items: center; justify-content: space-between; gap: 32px 6vw; }
+.closing > div { max-width: 710px; }
+.closing h2 { margin: 18px 0; font-size: clamp(36px, 4vw, 59px); }
+.closing p:last-child { max-width: 570px; color: var(--muted); font-size: 13px; }
+.closing > a { flex-shrink: 0; }
+@media (max-width: 760px) { .header { padding: 26px 0 34px; } .header h1, .header h2 { font-size: clamp(45px, 10.5vw, 70px); margin: 20px 0 25px; } .intro { font-size: 13px; } .notice { padding: 19px; margin-bottom: 32px; } .closing { flex-direction: column; align-items: flex-start; margin-top: 50px; } }

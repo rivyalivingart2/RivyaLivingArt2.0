@@ -7,13 +7,16 @@ function RequiredMark({ required }: { required: boolean }) {
   return <span className={styles.requirement}>{required ? "Required" : "Optional"}</span>;
 }
 
-export function InquiryInput({ field, values, error, inputId, onChange }: {
+export function InquiryInput({ field, values, error, inputId, onChange, syntheticOnly=false }: {
+  syntheticOnly?:boolean;
   field: InquiryField;
   values: InquiryValues;
   error?: string;
   inputId: string;
   onChange: (id: string, value: string) => void;
 }) {
+  const privateField=['contactName','contactEmail','contactPhone'].includes(field.id)||field.type==='email'||field.type==='tel';
+  if(syntheticOnly&&privateField)return <div className={styles.field}><label htmlFor={inputId}>{field.label} · fixed fictional example</label><input id={inputId} readOnly value={values[field.id]||field.placeholder||'Fictional example only'}/><p className={styles.hint}>This design does not accept real customer details.</p></div>;
   const required = Boolean(field.required || (field.requiredWhen && values[field.requiredWhen.field] === field.requiredWhen.value));
   const hintId = `${inputId}-hint`;
   const errorId = `${inputId}-error`;

@@ -1,0 +1,45 @@
+.editor { border: 1px solid var(--border); border-radius: 8px; background: var(--background); min-width: 0; overflow-wrap: anywhere; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 5px; padding: 10px; border-bottom: 1px solid var(--border); background: var(--surface-elevated); border-radius: 8px 8px 0 0; }
+.toolbar button, .actions button { border: 1px solid var(--border); border-radius: 4px; background: var(--surface); padding: 8px 10px; min-height: 40px; font-size: 11px; line-height: 1.5; }
+.toolbar button[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: var(--primary-foreground); }
+.toolbar button em { color: inherit; }
+.toolbar button:hover:not(:disabled), .actions button:hover:not(:disabled) { border-color: var(--primary-hover); }
+.toolbar button:disabled, .actions button:disabled { opacity: .45; }
+.editingSurface { min-height: 260px; }
+.document { min-height: 260px; outline: none; padding: 24px; color: var(--foreground); font-size: 14px; line-height: 1.9; }
+.document:focus-visible { outline: 2px solid var(--focus); outline-offset: -3px; }
+.document p, .prose p { margin: 0 0 1.15em; }
+.document > :last-child, .prose > div > :last-child { margin-bottom: 0; }
+.document h2, .prose h2 { font-size: clamp(28px,3vw,42px); line-height: 1.2; margin: 1.2em 0 .65em; }
+.document h3, .prose h3 { font-size: clamp(24px,2.5vw,32px); line-height: 1.3; margin: 1.1em 0 .6em; }
+.document ul, .document ol, .prose ul, .prose ol { padding-left: 1.5em; margin: 1em 0 1.25em; }
+.document ul, .prose ul { list-style: disc; }
+.document ol, .prose ol { list-style: decimal; }
+.document li, .prose li { margin-bottom: .4em; padding-left: .2em; }
+.document li p, .prose li p { margin-bottom: .35em; }
+.document blockquote, .prose blockquote { border-left: 2px solid var(--primary); padding: 12px 0 12px 22px; margin: 22px 0; color: var(--foreground); font-family: var(--font-display); font-size: 1.3em; }
+.document blockquote p:last-child, .prose blockquote p:last-child { margin-bottom: 0; }
+.document a, .prose a { color: var(--primary-hover); text-decoration: underline; text-underline-offset: 4px; }
+.document :global(.ProseMirror-selectednode) { outline: 2px solid var(--primary-hover); }
+.document :global(.ProseMirror-gapcursor:after) { border-top-color: var(--foreground); }
+.hint, .status, .loading { color: var(--muted); font-size: 11px; line-height: 1.8; padding: 12px 16px; }
+.hint { border-top: 1px solid var(--border); }
+.status { padding-top: 0; padding-bottom: 8px; }
+.status:empty { display: none; }
+.panel { margin: 14px; padding: 16px; border: 1px solid var(--primary); background: var(--surface); display: grid; gap: 10px; min-width: 0; }
+.panel legend { padding: 0 6px; font-family: var(--font-display); font-size: 22px; color: var(--foreground); }
+.panel label { font-size: 11px; color: var(--muted); }
+.panel input, .panel select { background: var(--background); border: 1px solid var(--border); border-radius: 3px; color: var(--foreground); min-height: 44px; padding: 10px; width: 100%; min-width: 0; }
+.panel p { font-size: 11px; line-height: 1.7; color: var(--muted); }
+.panel input[aria-invalid="true"] { border-color: #d7a278; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.prose { color: var(--muted); font-size: inherit; line-height: 1.9; overflow-wrap: anywhere; }
+.prose h2, .prose h3, .prose strong { color: var(--foreground); }
+.warning { background: var(--surface-elevated); border: 1px solid var(--primary); padding: 14px; color: #e4c5a4; font-size: 12px; }
+.product { display: grid; gap: 7px; border: 1px solid var(--border); background: var(--surface-elevated); padding: 18px; margin: 22px 0; }
+.product > span:first-child { font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.product > a, .product > strong { font-family: var(--font-display); font-size: 25px; color: var(--foreground); font-weight: 400; line-height: 1.35; }
+.node { margin: 18px 0; cursor: default; }
+.selected { outline: 2px solid var(--primary-hover); outline-offset: 4px; }
+.nodeHint { display: block; font-size: 10px; color: var(--muted); margin-top: 8px; font-family: var(--font-body); }
+@media (max-width: 600px) { .document { padding: 18px 14px; } .toolbar { gap: 5px; padding: 8px; } .toolbar button { min-height: 44px; } .panel { margin: 10px; padding: 12px; } }

@@ -149,3 +149,7 @@ and main pushes may deploy production. This task changed no deployment settings 
 domains. Read-only inspection now confirms the project Node22 setting is aligned;
 this task did not change it. The runtime note preserves the earlier diagnosis.
 Exact business rules and exclusions remain in the brief.
+
+## Approved Sites continuation
+
+See [current checkpoint](docs/sites/status.md), [approved baseline](docs/sites/approved-design.md), [route map](docs/sites/route-component-map.md) and [actual source handoff](docs/sites/source-handoff.md).

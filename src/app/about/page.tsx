@@ -1,11 +1,4 @@
-import { AboutPage } from "@/components/editorial-pages";
-import { publicPreviewMetadata, requirePublicPreview } from "@/lib/public-preview";
-
-export function generateMetadata() {
-  return publicPreviewMetadata("About RivyaLivingArt", "A sample editorial introduction to furniture, memory art and personal objects, connected by a material-led point of view.");
-}
-
-export default async function Page() {
-  await requirePublicPreview();
-  return <AboutPage />;
-}
+import {ApprovedExperience} from "@/components/rivya/approved-entry";
+import {requirePublicPreview,publicPreviewMetadata} from "@/lib/public-preview";
+export function generateMetadata(){return publicPreviewMetadata('About');}
+export default async function Page(){await requirePublicPreview();return <ApprovedExperience initialRoute="/about"/>}

@@ -1,0 +1,4 @@
+import type { Metadata } from 'next';
+import './globals.css';
+export const metadata: Metadata = { title:'RivyaLivingArt — Website & Studio Preview', description:'Collectible furniture, resin and spatial art. An isolated SITES-01 concept preview for RivyaLivingArt.', robots:{index:false,follow:false}, icons:{icon:'/favicon.svg',shortcut:'/favicon.svg'} };
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en" className="dark"><body>{children}</body></html>}

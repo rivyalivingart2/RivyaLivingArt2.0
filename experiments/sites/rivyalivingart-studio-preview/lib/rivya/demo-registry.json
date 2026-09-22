@@ -1,0 +1,2514 @@
+[
+  {
+    "id": "DP001",
+    "title": "River Channel",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP013",
+    "title": "Shallow Basin",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP002",
+    "title": "Stillwater",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP014",
+    "title": "Orbit",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP025",
+    "title": "Twinleaf",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP035",
+    "title": "Narrow Span",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP043",
+    "title": "Petal",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP048",
+    "title": "Entryway",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP051",
+    "title": "Single-Slab",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP057",
+    "title": "Horizon",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP069",
+    "title": "Lattice Object",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP077",
+    "title": "Estuary",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP003",
+    "title": "Verdant",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP004",
+    "title": "Monolith",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP005",
+    "title": "Estuary",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP006",
+    "title": "Canopy",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP007",
+    "title": "Tidal",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP008",
+    "title": "Umber",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP009",
+    "title": "Lagoon",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP010",
+    "title": "Ridge",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP011",
+    "title": "Dune",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP012",
+    "title": "Grove",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP015",
+    "title": "Contour",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP016",
+    "title": "Drift",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP017",
+    "title": "Pebble",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP018",
+    "title": "Delta",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP019",
+    "title": "Cove",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP020",
+    "title": "Halo",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP021",
+    "title": "Moss",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP022",
+    "title": "Slate",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP023",
+    "title": "Current",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP024",
+    "title": "Terra",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP026",
+    "title": "Dewdrop",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP027",
+    "title": "Arc",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP028",
+    "title": "Reed",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP029",
+    "title": "Nocturne",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP030",
+    "title": "Loam",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP031",
+    "title": "Lumen",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP032",
+    "title": "Brook",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP033",
+    "title": "Silt",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP034",
+    "title": "Eclipse",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP036",
+    "title": "Root",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP037",
+    "title": "Passage",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP038",
+    "title": "Horizon",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP039",
+    "title": "Meadow",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP040",
+    "title": "Trace",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP041",
+    "title": "Sienna",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP042",
+    "title": "Canyon",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP044",
+    "title": "Crescent",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP045",
+    "title": "Aster",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP046",
+    "title": "Rill",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP047",
+    "title": "Flint",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP049",
+    "title": "Forest",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP050",
+    "title": "Fold",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP052",
+    "title": "Meridian",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP053",
+    "title": "Stillpoint",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP054",
+    "title": "Haven",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP055",
+    "title": "Linework",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP056",
+    "title": "Terrace",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP058",
+    "title": "Vertical",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP059",
+    "title": "Sequence",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP060",
+    "title": "Strata",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP061",
+    "title": "Solstice",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP062",
+    "title": "Tide",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP063",
+    "title": "Mist",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP064",
+    "title": "Verdure",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP065",
+    "title": "Contour",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP066",
+    "title": "Amber",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP067",
+    "title": "Stonewave",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP068",
+    "title": "Rivergrid",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP070",
+    "title": "Parametric",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP071",
+    "title": "Cast Architectural Study",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP072",
+    "title": "Form Study I",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP073",
+    "title": "Form Study II",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP074",
+    "title": "Material",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP075",
+    "title": "Form Study III",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP076",
+    "title": "Arc",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP078",
+    "title": "Canopy",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP079",
+    "title": "Monsoon",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP080",
+    "title": "Grove",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP081",
+    "title": "Contour",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP082",
+    "title": "Stillwater",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP083",
+    "title": "Bronzeleaf",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP084",
+    "title": "Tidal",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP085",
+    "title": "Vow",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP091",
+    "title": "Hourglass",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP095",
+    "title": "Union",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP099",
+    "title": "Letterlight",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP103",
+    "title": "Threshold",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP107",
+    "title": "First Chapter",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP086",
+    "title": "Forever",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP087",
+    "title": "Petal",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP088",
+    "title": "Meadow",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP089",
+    "title": "Aster",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP090",
+    "title": "Memory",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP092",
+    "title": "Petal",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP093",
+    "title": "Evergreen",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP094",
+    "title": "Moment",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP096",
+    "title": "Promise",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP097",
+    "title": "Gather",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP098",
+    "title": "Bloom",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP100",
+    "title": "Our",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP101",
+    "title": "Together",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP102",
+    "title": "Anniversary",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP104",
+    "title": "Welcome",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP105",
+    "title": "Blessing",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP106",
+    "title": "Festival",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP108",
+    "title": "Little Bloom Memory",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP109",
+    "title": "Botanical",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP111",
+    "title": "Thread of Light",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP112",
+    "title": "Initial Story",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP113",
+    "title": "Chaptermark",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP114",
+    "title": "Everyday",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP120",
+    "title": "Little Archive",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP110",
+    "title": "Petal",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP115",
+    "title": "Palm",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP116",
+    "title": "Still",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP117",
+    "title": "Twinleaf",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP118",
+    "title": "Pocketworld",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DP119",
+    "title": "Promise",
+    "kind": "product",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "CP001",
+    "title": "Homepage · furniture first",
+    "kind": "page",
+    "route": "/",
+    "refs": [
+      "DP001",
+      "DP013",
+      "DP043",
+      "DP035",
+      "DB001",
+      "DB002",
+      "DB003"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "CP002",
+    "title": "Collectible Design",
+    "kind": "page",
+    "route": "/collectible-design",
+    "refs": [
+      "DP001",
+      "DP013",
+      "DP035",
+      "DP069"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "CP003",
+    "title": "Memory Art",
+    "kind": "page",
+    "route": "/memory-art",
+    "refs": [
+      "DP085",
+      "DP087",
+      "DP099",
+      "DT001"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "CP004",
+    "title": "Personal Art & Gifts",
+    "kind": "page",
+    "route": "/personal-art",
+    "refs": [
+      "DP109",
+      "DP114",
+      "DP119"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "CP005",
+    "title": "Custom Commission",
+    "kind": "page",
+    "route": "/commission",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "CP006",
+    "title": "Imagined Spaces",
+    "kind": "page",
+    "route": "/portfolio",
+    "refs": [
+      "DP001",
+      "DP013"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "CP007",
+    "title": "Frequently Asked Questions",
+    "kind": "page",
+    "route": "/faq",
+    "refs": [
+      "DF001",
+      "DF007",
+      "DF013"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "CP008",
+    "title": "Journal Intro",
+    "kind": "page",
+    "route": "/journal",
+    "refs": [
+      "DB001",
+      "DB013",
+      "DB019"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "EP001",
+    "title": "About RivyaLivingArt",
+    "kind": "page",
+    "route": "/about",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "EP002",
+    "title": "From a possibility to a considered brief",
+    "kind": "page",
+    "route": "/process",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "EP003",
+    "title": "A language of materials",
+    "kind": "page",
+    "route": "/materials",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "EP004",
+    "title": "Care begins with knowing your piece",
+    "kind": "page",
+    "route": "/care",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "EP005",
+    "title": "Begin a conversation",
+    "kind": "page",
+    "route": "/contact",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "EP006",
+    "title": "For architects & interior designers",
+    "kind": "page",
+    "route": "/architects",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB001",
+    "title": "A Room Begins with a Statement Table",
+    "kind": "article",
+    "route": "/journal/a-room-begins-with-a-statement-table",
+    "refs": [
+      "DP001",
+      "DP002",
+      "DP013"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB002",
+    "title": "Reading the Grain: Wood and Resin in a Shared Composition",
+    "kind": "article",
+    "route": "/journal/reading-the-grain-wood-and-resin-in-a-shared-composition",
+    "refs": [
+      "DP001",
+      "DP013",
+      "DP051"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB003",
+    "title": "Round, Oval or Rectangular: A Dining-Table Planning Notebook",
+    "kind": "article",
+    "route": "/journal/round-oval-or-rectangular-a-dining-table-planning-notebook",
+    "refs": [
+      "DP001",
+      "DP002"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB004",
+    "title": "Coffee Tables as Sculptural Objects",
+    "kind": "article",
+    "route": "/journal/coffee-tables-as-sculptural-objects",
+    "refs": [
+      "DP013",
+      "DP014"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB005",
+    "title": "The Quiet Role of a Side Table",
+    "kind": "article",
+    "route": "/journal/the-quiet-role-of-a-side-table",
+    "refs": [
+      "DP025",
+      "DP043"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB006",
+    "title": "An Entryway Built Around One Console",
+    "kind": "article",
+    "route": "/journal/an-entryway-built-around-one-console",
+    "refs": [
+      "DP035",
+      "DP048",
+      "DP057"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB007",
+    "title": "Pairing Resin Art with Warm Neutral Interiors",
+    "kind": "article",
+    "route": "/journal/pairing-resin-art-with-warm-neutral-interiors",
+    "refs": [
+      "DP001",
+      "DP025",
+      "DP035"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB008",
+    "title": "A Guide to Describing Your Commission",
+    "kind": "article",
+    "route": "/journal/a-guide-to-describing-your-commission",
+    "refs": [
+      "DP001",
+      "DP051",
+      "DP077"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB009",
+    "title": "What to Include in an Architect’s Enquiry",
+    "kind": "article",
+    "route": "/journal/what-to-include-in-an-architects-enquiry",
+    "refs": [
+      "DP035",
+      "DP057",
+      "DP077"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB010",
+    "title": "Wall Art at Architectural Scale",
+    "kind": "article",
+    "route": "/journal/wall-art-at-architectural-scale",
+    "refs": [
+      "DP057",
+      "DP035",
+      "DP069"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB011",
+    "title": "From a Mood Board to a Material Conversation",
+    "kind": "article",
+    "route": "/journal/from-a-mood-board-to-a-material-conversation",
+    "refs": [
+      "DP001",
+      "DP013",
+      "DP025"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB012",
+    "title": "Light, Transparency and the Look of Resin",
+    "kind": "article",
+    "route": "/journal/light-transparency-and-the-look-of-resin",
+    "refs": [
+      "DP001",
+      "DP013",
+      "DP069"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB013",
+    "title": "Chairs, Benches and the Shape of a Room",
+    "kind": "article",
+    "route": "/journal/chairs-benches-and-the-shape-of-a-room",
+    "refs": [
+      "DP043",
+      "DP048",
+      "DP049"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB014",
+    "title": "Planning a Large Piece for Delivery Access",
+    "kind": "article",
+    "route": "/journal/planning-a-large-piece-for-delivery-access",
+    "refs": [
+      "DP001",
+      "DP077"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB015",
+    "title": "Why a Visualization Is Not a Final Specification",
+    "kind": "article",
+    "route": "/journal/why-a-visualization-is-not-a-final-specification",
+    "refs": [
+      "DP001",
+      "DP085"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB016",
+    "title": "A Home Office with a Material Focal Point",
+    "kind": "article",
+    "route": "/journal/a-home-office-with-a-material-focal-point",
+    "refs": [
+      "DP051",
+      "DP055"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB017",
+    "title": "A Small Vocabulary of Finishes and Forms",
+    "kind": "article",
+    "route": "/journal/a-small-vocabulary-of-finishes-and-forms",
+    "refs": [
+      "DP035",
+      "DP069"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB018",
+    "title": "The Project Story Behind a Collectible Interior",
+    "kind": "article",
+    "route": "/journal/the-project-story-behind-a-collectible-interior",
+    "refs": [
+      "DP013",
+      "DP057"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB019",
+    "title": "Turning a Wedding Memory into a Design Brief",
+    "kind": "article",
+    "route": "/journal/turning-a-wedding-memory-into-a-design-brief",
+    "refs": [
+      "DP085",
+      "DP087"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB020",
+    "title": "Choosing a Format for a Bouquet Keepsake",
+    "kind": "article",
+    "route": "/journal/choosing-a-format-for-a-bouquet-keepsake",
+    "refs": [
+      "DP087",
+      "DP086",
+      "DP088"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB021",
+    "title": "Names and Dates: A Personalization Proofreading Checklist",
+    "kind": "article",
+    "route": "/journal/names-and-dates-a-personalization-proofreading-checklist",
+    "refs": [
+      "DP085",
+      "DP114"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB022",
+    "title": "Designing a Wedding-Invitation Keepsake",
+    "kind": "article",
+    "route": "/journal/designing-a-wedding-invitation-keepsake",
+    "refs": [
+      "DP099",
+      "DP100"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB023",
+    "title": "A Preservation Clock as a Memory Object",
+    "kind": "article",
+    "route": "/journal/a-preservation-clock-as-a-memory-object",
+    "refs": [
+      "DP091",
+      "DP093"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB024",
+    "title": "Before You Send Sentimental Materials",
+    "kind": "article",
+    "route": "/journal/before-you-send-sentimental-materials",
+    "refs": [
+      "DP085",
+      "DP099"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB025",
+    "title": "A Family Nameplate with a Personal Story",
+    "kind": "article",
+    "route": "/journal/a-family-nameplate-with-a-personal-story",
+    "refs": [
+      "DP103",
+      "DP104"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB026",
+    "title": "Photographs, Privacy and Memory Art",
+    "kind": "article",
+    "route": "/journal/photographs-privacy-and-memory-art",
+    "refs": [
+      "DP101"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB027",
+    "title": "Small Objects with a Personal Meaning",
+    "kind": "article",
+    "route": "/journal/small-objects-with-a-personal-meaning",
+    "refs": [
+      "DP111",
+      "DP114",
+      "DP115"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB028",
+    "title": "A Cohesive Gift Set without Repeating Every Detail",
+    "kind": "article",
+    "route": "/journal/a-cohesive-gift-set-without-repeating-every-detail",
+    "refs": [
+      "DP111",
+      "DP114",
+      "DP115"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB029",
+    "title": "Personalized Resin Jewellery: Preparing Your Brief",
+    "kind": "article",
+    "route": "/journal/personalized-resin-jewellery-preparing-your-brief",
+    "refs": [
+      "DP109",
+      "DP110"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB030",
+    "title": "Seasonal Gifting without the Marketplace Clutter",
+    "kind": "article",
+    "route": "/journal/seasonal-gifting-without-the-marketplace-clutter",
+    "refs": [
+      "DP114",
+      "DP118"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB031",
+    "title": "Corporate Gifts as Small Design Objects",
+    "kind": "article",
+    "route": "/journal/corporate-gifts-as-small-design-objects",
+    "refs": [
+      "DP117",
+      "DP119"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB032",
+    "title": "Choosing Initials, Colours and a Short Message",
+    "kind": "article",
+    "route": "/journal/choosing-initials-colours-and-a-short-message",
+    "refs": [
+      "DP111",
+      "DP114"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB033",
+    "title": "Inside a Material-Led Design Notebook",
+    "kind": "article",
+    "route": "/journal/inside-a-material-led-design-notebook",
+    "refs": [
+      "DP001",
+      "DP069"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB034",
+    "title": "How to Read a Product Specification",
+    "kind": "article",
+    "route": "/journal/how-to-read-a-product-specification",
+    "refs": [
+      "DP001",
+      "DP085"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB035",
+    "title": "Preparing a Clear WhatsApp Enquiry",
+    "kind": "article",
+    "route": "/journal/preparing-a-clear-whatsapp-enquiry",
+    "refs": [
+      "DP001",
+      "DP085",
+      "DP114"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DB036",
+    "title": "From Draft to Approved Design: A Client Checklist",
+    "kind": "article",
+    "route": "/journal/from-draft-to-approved-design-a-client-checklist",
+    "refs": [
+      "DP001",
+      "DP099"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF001",
+    "title": "Can I request a custom dining table?",
+    "kind": "faq",
+    "route": "/faq#DF001",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF002",
+    "title": "What information should my furniture enquiry include?",
+    "kind": "faq",
+    "route": "/faq#DF002",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF003",
+    "title": "Can I choose a different size?",
+    "kind": "faq",
+    "route": "/faq#DF003",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF004",
+    "title": "Can an architect submit a project brief?",
+    "kind": "faq",
+    "route": "/faq#DF004",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF005",
+    "title": "Do you offer chairs and benches?",
+    "kind": "faq",
+    "route": "/faq#DF005",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF006",
+    "title": "Does a render show the final manufactured object?",
+    "kind": "faq",
+    "route": "/faq#DF006",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF007",
+    "title": "How do I describe a resin colour?",
+    "kind": "faq",
+    "route": "/faq#DF007",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF008",
+    "title": "Can I discuss wood and resin combinations?",
+    "kind": "faq",
+    "route": "/faq#DF008",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF009",
+    "title": "Where can I find product dimensions?",
+    "kind": "faq",
+    "route": "/faq#DF009",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF010",
+    "title": "Can I request a particular finish?",
+    "kind": "faq",
+    "route": "/faq#DF010",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF011",
+    "title": "Can I add personal text or initials?",
+    "kind": "faq",
+    "route": "/faq#DF011",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF012",
+    "title": "Are sample prices a binding quote?",
+    "kind": "faq",
+    "route": "/faq#DF012",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF013",
+    "title": "Can I enquire about varmala preservation?",
+    "kind": "faq",
+    "route": "/faq#DF013",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF014",
+    "title": "How should I send my flowers?",
+    "kind": "faq",
+    "route": "/faq#DF014",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF015",
+    "title": "Can I include a wedding invitation?",
+    "kind": "faq",
+    "route": "/faq#DF015",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF016",
+    "title": "Can I preview names and dates?",
+    "kind": "faq",
+    "route": "/faq#DF016",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF017",
+    "title": "Can I upload a private reference photograph?",
+    "kind": "faq",
+    "route": "/faq#DF017",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF018",
+    "title": "Can every sentimental object be preserved?",
+    "kind": "faq",
+    "route": "/faq#DF018",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF019",
+    "title": "Can I personalize a small gift?",
+    "kind": "faq",
+    "route": "/faq#DF019",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF020",
+    "title": "Can I request multiple gifts together?",
+    "kind": "faq",
+    "route": "/faq#DF020",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF021",
+    "title": "Can I enquire about corporate gifting?",
+    "kind": "faq",
+    "route": "/faq#DF021",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF022",
+    "title": "Are festive products always available?",
+    "kind": "faq",
+    "route": "/faq#DF022",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF023",
+    "title": "Can I choose gift packaging?",
+    "kind": "faq",
+    "route": "/faq#DF023",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF024",
+    "title": "Can a design be repeated for a set?",
+    "kind": "faq",
+    "route": "/faq#DF024",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF025",
+    "title": "Is there an online checkout?",
+    "kind": "faq",
+    "route": "/faq#DF025",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF026",
+    "title": "Do I need a customer account?",
+    "kind": "faq",
+    "route": "/faq#DF026",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF027",
+    "title": "What happens after I submit a request?",
+    "kind": "faq",
+    "route": "/faq#DF027",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF028",
+    "title": "Does opening WhatsApp confirm my order?",
+    "kind": "faq",
+    "route": "/faq#DF028",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF029",
+    "title": "How do I refer to an existing request?",
+    "kind": "faq",
+    "route": "/faq#DF029",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF030",
+    "title": "What can I do if WhatsApp does not open?",
+    "kind": "faq",
+    "route": "/faq#DF030",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF031",
+    "title": "How long will a piece take?",
+    "kind": "faq",
+    "route": "/faq#DF031",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF032",
+    "title": "Do you deliver to my location?",
+    "kind": "faq",
+    "route": "/faq#DF032",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF033",
+    "title": "Is installation included?",
+    "kind": "faq",
+    "route": "/faq#DF033",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF034",
+    "title": "What access details are useful for large furniture?",
+    "kind": "faq",
+    "route": "/faq#DF034",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF035",
+    "title": "Where can I get care instructions?",
+    "kind": "faq",
+    "route": "/faq#DF035",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF036",
+    "title": "Are returns and damage policies available?",
+    "kind": "faq",
+    "route": "/faq#DF036",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF037",
+    "title": "Why is this item marked Demo?",
+    "kind": "faq",
+    "route": "/faq#DF037",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF038",
+    "title": "Are demo testimonials real reviews?",
+    "kind": "faq",
+    "route": "/faq#DF038",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF039",
+    "title": "Are all gallery images product photographs?",
+    "kind": "faq",
+    "route": "/faq#DF039",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF040",
+    "title": "Who can access my uploaded reference?",
+    "kind": "faq",
+    "route": "/faq#DF040",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF041",
+    "title": "Does this site require a Google login?",
+    "kind": "faq",
+    "route": "/faq#DF041",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DF042",
+    "title": "How do I ask about privacy or my enquiry?",
+    "kind": "faq",
+    "route": "/faq#DF042",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT001",
+    "title": "Demo Reviewer 01 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT002",
+    "title": "Demo Reviewer 02 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT003",
+    "title": "Demo Reviewer 03 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT004",
+    "title": "Demo Reviewer 04 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT005",
+    "title": "Demo Reviewer 05 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT006",
+    "title": "Demo Reviewer 06 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT007",
+    "title": "Demo Reviewer 07 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT008",
+    "title": "Demo Reviewer 08 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT009",
+    "title": "Demo Reviewer 09 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT010",
+    "title": "Demo Reviewer 10 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT011",
+    "title": "Demo Reviewer 11 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT012",
+    "title": "Demo Reviewer 12 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT013",
+    "title": "Demo Reviewer 13 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT014",
+    "title": "Demo Reviewer 14 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT015",
+    "title": "Demo Reviewer 15 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT016",
+    "title": "Demo Reviewer 16 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT017",
+    "title": "Demo Reviewer 17 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT018",
+    "title": "Demo Reviewer 18 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT019",
+    "title": "Demo Reviewer 19 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT020",
+    "title": "Demo Reviewer 20 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT021",
+    "title": "Demo Reviewer 21 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT022",
+    "title": "Demo Reviewer 22 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT023",
+    "title": "Demo Reviewer 23 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DT024",
+    "title": "Demo Reviewer 24 · fictional sample",
+    "kind": "testimonial",
+    "route": null,
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO001",
+    "title": "Large dining enquiry missing delivery-access measurements",
+    "kind": "enquiry",
+    "refs": [
+      "DP001"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO002",
+    "title": "Coffee-table enquiry with two design references",
+    "kind": "enquiry",
+    "refs": [
+      "DP015"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO003",
+    "title": "Preservation request with an event-date preference",
+    "kind": "enquiry",
+    "refs": [
+      "DP085"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO004",
+    "title": "Ceremony tray request with sample initials",
+    "kind": "enquiry",
+    "refs": [
+      "DP096"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO005",
+    "title": "Seasonal gift enquiry for a sample quantity",
+    "kind": "enquiry",
+    "refs": [
+      "DP111"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO006",
+    "title": "Console enquiry with initial questions recorded",
+    "kind": "enquiry",
+    "refs": [
+      "DP035"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO007",
+    "title": "Seating enquiry awaiting intended-use clarification",
+    "kind": "enquiry",
+    "refs": [
+      "DP045"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO008",
+    "title": "Baby keepsake enquiry awaiting format choice",
+    "kind": "enquiry",
+    "refs": [
+      "DP108"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO009",
+    "title": "Initial keychain enquiry awaiting spelling confirmation",
+    "kind": "enquiry",
+    "refs": [
+      "DP112"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO010",
+    "title": "Side-table pair enquiry awaiting placement details",
+    "kind": "enquiry",
+    "refs": [
+      "DP025"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO011",
+    "title": "Long-table brief with proposed dimensions and access notes",
+    "kind": "enquiry",
+    "refs": [
+      "DP004"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO012",
+    "title": "Atelier desk brief with a material preference",
+    "kind": "enquiry",
+    "refs": [
+      "DP051"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO013",
+    "title": "Large wall-panel project with a room sketch",
+    "kind": "enquiry",
+    "refs": [
+      "DP057"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO014",
+    "title": "Varmala block request with agreed sample format",
+    "kind": "enquiry",
+    "refs": [
+      "DP086"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO015",
+    "title": "Gift-box request with quantity and mock packaging choice",
+    "kind": "enquiry",
+    "refs": [
+      "DP120"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO016",
+    "title": "Dining table with a sample quotation version",
+    "kind": "enquiry",
+    "refs": [
+      "DP007"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO017",
+    "title": "Coffee-table project with two sample finish options",
+    "kind": "enquiry",
+    "refs": [
+      "DP017"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO018",
+    "title": "Console project with a revised sample scope",
+    "kind": "enquiry",
+    "refs": [
+      "DP040"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO019",
+    "title": "Clock request with sample personalization cost",
+    "kind": "enquiry",
+    "refs": [
+      "DP092"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO020",
+    "title": "Coaster set with a sample quantity-based quote",
+    "kind": "enquiry",
+    "refs": [
+      "DP114"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO021",
+    "title": "Full-pour table with a simulated accepted design brief",
+    "kind": "enquiry",
+    "refs": [
+      "DP002"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO022",
+    "title": "Counter stool design with a mock specification approval",
+    "kind": "enquiry",
+    "refs": [
+      "DP046"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO023",
+    "title": "Single-bloom keepsake with sample layout approval",
+    "kind": "enquiry",
+    "refs": [
+      "DP089"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO024",
+    "title": "Celebration tray with a frozen example text proof",
+    "kind": "enquiry",
+    "refs": [
+      "DP097"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO025",
+    "title": "Pendant set with a mock personalization approval",
+    "kind": "enquiry",
+    "refs": [
+      "DP109"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO026",
+    "title": "Communal table sample at fabrication planning",
+    "kind": "enquiry",
+    "refs": [
+      "DP012"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO027",
+    "title": "Long bench sample at a finishing milestone",
+    "kind": "enquiry",
+    "refs": [
+      "DP049"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO028",
+    "title": "Wall relief sample awaiting quality review",
+    "kind": "enquiry",
+    "refs": [
+      "DP065"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO029",
+    "title": "Bouquet frame sample at layout confirmation",
+    "kind": "enquiry",
+    "refs": [
+      "DP087"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO030",
+    "title": "Mini tray sample at packaging review",
+    "kind": "enquiry",
+    "refs": [
+      "DP115"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO031",
+    "title": "Round dining-table example with closed production tasks",
+    "kind": "enquiry",
+    "refs": [
+      "DP006"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO032",
+    "title": "Side-table example with a complete activity timeline",
+    "kind": "enquiry",
+    "refs": [
+      "DP031"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO033",
+    "title": "Study-desk example with archived quote snapshots",
+    "kind": "enquiry",
+    "refs": [
+      "DP053"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO034",
+    "title": "Botanical nameplate example with final proof history",
+    "kind": "enquiry",
+    "refs": [
+      "DP102"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO035",
+    "title": "Bookmark example with sample quantity completion",
+    "kind": "enquiry",
+    "refs": [
+      "DP113"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO036",
+    "title": "Dining-table enquiry closed after a scope change",
+    "kind": "enquiry",
+    "refs": [
+      "DP003"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO037",
+    "title": "Reception-counter concept closed as outside current scope",
+    "kind": "enquiry",
+    "refs": [
+      "DP077"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO038",
+    "title": "Flower-disc enquiry closed without approval",
+    "kind": "enquiry",
+    "refs": [
+      "DP088"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO039",
+    "title": "Earring enquiry closed as a duplicate sample",
+    "kind": "enquiry",
+    "refs": [
+      "DP110"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DO040",
+    "title": "Paperweight enquiry closed after no further response",
+    "kind": "enquiry",
+    "refs": [
+      "DP118"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DS001",
+    "title": "A quiet room. A singular table.",
+    "kind": "project",
+    "refs": [
+      "DP001",
+      "DP043"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DS002",
+    "title": "A room around an open centre.",
+    "kind": "project",
+    "refs": [
+      "DP013",
+      "DP057",
+      "DP025"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DS003",
+    "title": "A place for the vows.",
+    "kind": "project",
+    "refs": [
+      "DP085",
+      "DP099"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DS004",
+    "title": "A workspace with room to think.",
+    "kind": "project",
+    "refs": [
+      "DP051"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DS005",
+    "title": "An arrival in one line.",
+    "kind": "project",
+    "refs": [
+      "DP035"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DS006",
+    "title": "A wall in three movements.",
+    "kind": "project",
+    "refs": [
+      "DP059"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DS007",
+    "title": "An open screen.",
+    "kind": "project",
+    "refs": [
+      "DP080"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "DS008",
+    "title": "One anniversary. One gesture.",
+    "kind": "project",
+    "refs": [
+      "DP102"
+    ],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "JOB001",
+    "title": "ready import example",
+    "kind": "job",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "JOB002",
+    "title": "validating import example",
+    "kind": "job",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "JOB003",
+    "title": "running import example",
+    "kind": "job",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "JOB004",
+    "title": "completed import example",
+    "kind": "job",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "JOB005",
+    "title": "failed import example",
+    "kind": "job",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "JOB006",
+    "title": "cancelled import example",
+    "kind": "job",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SUB001",
+    "title": "demo-reader-01@newsletter.invalid",
+    "kind": "subscriber",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SUB002",
+    "title": "demo-reader-02@newsletter.invalid",
+    "kind": "subscriber",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SUB003",
+    "title": "demo-reader-03@newsletter.invalid",
+    "kind": "subscriber",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SUB004",
+    "title": "demo-reader-04@newsletter.invalid",
+    "kind": "subscriber",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SUB005",
+    "title": "demo-reader-05@newsletter.invalid",
+    "kind": "subscriber",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SUB006",
+    "title": "demo-reader-06@newsletter.invalid",
+    "kind": "subscriber",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SUB007",
+    "title": "demo-reader-07@newsletter.invalid",
+    "kind": "subscriber",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SUB008",
+    "title": "demo-reader-08@newsletter.invalid",
+    "kind": "subscriber",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SUB009",
+    "title": "demo-reader-09@newsletter.invalid",
+    "kind": "subscriber",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SUB010",
+    "title": "demo-reader-10@newsletter.invalid",
+    "kind": "subscriber",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SUB011",
+    "title": "demo-reader-11@newsletter.invalid",
+    "kind": "subscriber",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SUB012",
+    "title": "demo-reader-12@newsletter.invalid",
+    "kind": "subscriber",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "IMPORTS",
+    "kind": "import-workspace",
+    "title": "Local catalogue import workspace",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "SETTINGS",
+    "kind": "settings",
+    "title": "Site settings",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "TAXONOMY",
+    "kind": "taxonomy",
+    "title": "Sample taxonomy",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  },
+  {
+    "id": "NAVIGATION",
+    "kind": "settings",
+    "title": "Menu visibility",
+    "refs": [],
+    "batch": "rivya-r8-visual-2026-09"
+  }
+]

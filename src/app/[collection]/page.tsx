@@ -1,36 +1,8 @@
-import type { Metadata } from "next";
-import { Suspense } from "react";
-import { connection } from "next/server";
-import { notFound } from "next/navigation";
-import { findCollection } from "@/lib/catalogue";
-import { isVisualPreviewAllowed } from "@/lib/preview-mode";
-import { FurnitureCollection } from "@/components/furniture-collection";
-import { MemoryCollection, PersonalArtCollection } from "@/components/art-collections";
-import { PageLoading } from "@/components/page-loading";
-
-type Props = {
-  params: Promise<{ collection: string }>;
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
-};
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  if (!isVisualPreviewAllowed(process.env)) return { title: "Not found" };
-  const collection = findCollection((await params).collection);
-  return { title: collection?.label ?? "Not found" };
-}
-
-export default async function CollectionPage({ params, searchParams }: Props) {
-  await connection();
-  if (!isVisualPreviewAllowed(process.env)) notFound();
-  const collection = findCollection((await params).collection);
-  if (!collection) notFound();
-  return <Suspense fallback={<PageLoading variant="collection" />}><CollectionContent tier={collection.tier} searchParams={searchParams} /></Suspense>;
-}
-
-async function CollectionContent({ tier, searchParams }: { tier: "LARGE" | "MEDIUM" | "SMALL"; searchParams: Props["searchParams"] }) {
-  if (tier === "LARGE") {
-    return <FurnitureCollection searchParams={await searchParams} />;
-  }
-  if (tier === "MEDIUM") return <MemoryCollection searchParams={await searchParams} />;
-  return <PersonalArtCollection searchParams={await searchParams} />;
-}
+import {notFound} from 'next/navigation';
+import {ApprovedExperience} from '@/components/rivya/approved-entry';
+import {requirePublicPreview,publicPreviewMetadata} from '@/lib/public-preview';
+import {isVisualPreviewAllowed} from '@/lib/preview-mode';
+import {findCollection} from '@/lib/catalogue';
+type Props={params:Promise<{collection:string}>};
+export async function generateMetadata({params}:Props){if(!isVisualPreviewAllowed(process.env))return publicPreviewMetadata('Not found');return publicPreviewMetadata(findCollection((await params).collection)?.label||'Not found')}
+export default async function Page({params}:Props){await requirePublicPreview();const {collection}=await params;if(!findCollection(collection))notFound();return <ApprovedExperience initialRoute={`/${collection}`}/>}

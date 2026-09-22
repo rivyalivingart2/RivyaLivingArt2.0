@@ -3,6 +3,38 @@
 Read this file, `PROJECT_STATE.md`, `docs/CODEX_WORKFLOW.md` and the applicable
 Revision 8 specification before editing.
 
+## Current checkpoint — 22 September 2026
+
+The owner approved the existing Sites design and then asked to continue non-image
+development while they generate assets. The same Site is preserved; no redesign,
+new Site, deployment or sharing change is authorized. Current source fixtures are
+120 products (84/24/12), 36 articles, 42 FAQs, 24 fictional testimonials and 40
+fictional enquiries. Older counts below are historical.
+
+Continue `codex/sites-approved-design`. See `docs/sites/non-image-development.md`
+and `docs/sites/source-version.json` for the latest native source and port.
+CSV/XLSX parsing, local batches/exports, draft continuity, cleanup dependencies and
+review validation now exist as browser-only demonstrations. Database/auth/storage
+and real WhatsApp handoff remain in R8 integration; do not describe them as connected.
+Formal QA remains deferred. The owner is preparing missing assets; do not generate
+substitutes or retry the previously blocked Drive child access.
+
+The GitHub repository is PUBLIC. After the public-disclosure blocker was reported,
+the owner explicitly instructed: “Put this updated code into gitrepo” with this
+repository URL. This authorizes publishing the prepared source and included approved
+asset derivatives on `codex/sites-approved-design`. See
+`docs/decisions/2026-09-22-approved-code-publication.md`. Keep main and the live Site
+unchanged; no new sharing, secrets, domains or manual deployment is authorized.
+The earlier rejection is history, not a reason to request the same approval again.
+
+Publication is complete. GitHub implementation commit
+`d74ca0ee722011bd453b08bc8939892413b0bd86` has the exact tree of local authoring
+checkpoint `96af6ca360b68dafe33e94f2ee20e7cf49bccb3a`. Draft PR #13 targets main.
+Read `docs/sites/github-publication.json` before continuing; fetch the current remote
+branch instead of assuming the older local and connector-created commit IDs match.
+The existing Git integration created a protected Preview automatically. No manual
+deployment or production change was requested. The saved/live Site is unchanged.
+
 ## Latest owner decision — 21 September 2026
 
 **This is a new build.** The Markdown files were the brief, not missing application

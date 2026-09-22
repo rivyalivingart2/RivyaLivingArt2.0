@@ -1,0 +1,187 @@
+{
+  "products": 120,
+  "tiers": {
+    "LARGE": 84,
+    "MEDIUM": 24,
+    "SMALL": 12
+  },
+  "pricing": {
+    "ON_REQUEST": 60,
+    "STARTING_FROM": 36,
+    "FIXED": 24
+  },
+  "multipleFinishes": 120,
+  "articles": 36,
+  "articleWords": [
+    {
+      "id": "DB001",
+      "words": 755
+    },
+    {
+      "id": "DB002",
+      "words": 774
+    },
+    {
+      "id": "DB003",
+      "words": 766
+    },
+    {
+      "id": "DB004",
+      "words": 785
+    },
+    {
+      "id": "DB005",
+      "words": 776
+    },
+    {
+      "id": "DB006",
+      "words": 794
+    },
+    {
+      "id": "DB007",
+      "words": 777
+    },
+    {
+      "id": "DB008",
+      "words": 787
+    },
+    {
+      "id": "DB009",
+      "words": 792
+    },
+    {
+      "id": "DB010",
+      "words": 787
+    },
+    {
+      "id": "DB011",
+      "words": 802
+    },
+    {
+      "id": "DB012",
+      "words": 811
+    },
+    {
+      "id": "DB013",
+      "words": 601
+    },
+    {
+      "id": "DB014",
+      "words": 600
+    },
+    {
+      "id": "DB015",
+      "words": 602
+    },
+    {
+      "id": "DB016",
+      "words": 605
+    },
+    {
+      "id": "DB017",
+      "words": 610
+    },
+    {
+      "id": "DB018",
+      "words": 608
+    },
+    {
+      "id": "DB019",
+      "words": 601
+    },
+    {
+      "id": "DB020",
+      "words": 610
+    },
+    {
+      "id": "DB021",
+      "words": 615
+    },
+    {
+      "id": "DB022",
+      "words": 613
+    },
+    {
+      "id": "DB023",
+      "words": 601
+    },
+    {
+      "id": "DB024",
+      "words": 605
+    },
+    {
+      "id": "DB025",
+      "words": 610
+    },
+    {
+      "id": "DB026",
+      "words": 609
+    },
+    {
+      "id": "DB027",
+      "words": 609
+    },
+    {
+      "id": "DB028",
+      "words": 613
+    },
+    {
+      "id": "DB029",
+      "words": 610
+    },
+    {
+      "id": "DB030",
+      "words": 611
+    },
+    {
+      "id": "DB031",
+      "words": 622
+    },
+    {
+      "id": "DB032",
+      "words": 613
+    },
+    {
+      "id": "DB033",
+      "words": 611
+    },
+    {
+      "id": "DB034",
+      "words": 622
+    },
+    {
+      "id": "DB035",
+      "words": 618
+    },
+    {
+      "id": "DB036",
+      "words": 616
+    }
+  ],
+  "faqs": 42,
+  "testimonials": 24,
+  "projects": 8,
+  "enquiries": 40,
+  "enquiryStates": {
+    "NEW": 5,
+    "CONTACTED": 5,
+    "QUALIFIED": 5,
+    "QUOTED": 5,
+    "CONFIRMED": 5,
+    "IN_PRODUCTION": 5,
+    "COMPLETED": 5,
+    "CLOSED": 5
+  },
+  "pages": 14,
+  "productImages": 7,
+  "pendingImages": 113,
+  "pageDrafts": 14,
+  "sourceRevisionExamples": 36,
+  "documentsWithHistory": 12,
+  "importJobs": 6,
+  "subscribers": 12,
+  "databaseRowsCreated": 0,
+  "qaStatus": "DEFERRED_UNTIL_BACKEND_INTEGRATION",
+  "registryRecords": 306,
+  "localImportWorkspaces": 1
+}

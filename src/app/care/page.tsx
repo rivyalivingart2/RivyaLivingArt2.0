@@ -1,11 +1,4 @@
-import { CarePage } from "@/components/editorial-pages";
-import { publicPreviewMetadata, requirePublicPreview } from "@/lib/public-preview";
-
-export function generateMetadata() {
-  return publicPreviewMetadata("Care begins with knowing your piece", "Questions to help request piece-specific material, finish and care information from the studio.");
-}
-
-export default async function Page() {
-  await requirePublicPreview();
-  return <CarePage />;
-}
+import {ApprovedExperience} from "@/components/rivya/approved-entry";
+import {requirePublicPreview,publicPreviewMetadata} from "@/lib/public-preview";
+export function generateMetadata(){return publicPreviewMetadata('Care');}
+export default async function Page(){await requirePublicPreview();return <ApprovedExperience initialRoute="/care"/>}
