@@ -27,6 +27,14 @@ asset derivatives on `codex/sites-approved-design`. See
 unchanged; no new sharing, secrets, domains or manual deployment is authorized.
 The earlier rejection is history, not a reason to request the same approval again.
 
+Publication is complete. GitHub implementation commit
+`d74ca0ee722011bd453b08bc8939892413b0bd86` has the exact tree of local authoring
+checkpoint `96af6ca360b68dafe33e94f2ee20e7cf49bccb3a`. Draft PR #13 targets main.
+Read `docs/sites/github-publication.json` before continuing; fetch the current remote
+branch instead of assuming the older local and connector-created commit IDs match.
+The existing Git integration created a protected Preview automatically. No manual
+deployment or production change was requested. The saved/live Site is unchanged.
+
 ## Latest owner decision — 21 September 2026
 
 **This is a new build.** The Markdown files were the brief, not missing application

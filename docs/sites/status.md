@@ -1,10 +1,10 @@
-> **Publication authorization update — 22 September 2026:** The owner subsequently
-> instructed publishing this prepared update to the public GitHub repository, resolving
-> the earlier public-disclosure blocker for this scoped source and included assets.
-> The historical blocker notes below describe the prior checkpoint. See
-> `../decisions/2026-09-22-approved-code-publication.md`. Branch publication is pending
-> verification at this authoring commit; main, saved/live Site versions and audience
-> are not changed by this GitHub task.
+> **Publication completed — 22 September 2026:** The owner authorized public publication.
+> GitHub implementation commit `d74ca0ee722011bd453b08bc8939892413b0bd86` on
+> `codex/sites-approved-design` was verified against the exact reviewed local Git tree.
+> Draft PR: https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/13.
+> See `github-publication.json` for identities and the automatic protected Preview.
+> Main, saved/live Site versions and audience are unchanged. Historical blocker notes
+> below describe the earlier checkpoint and are superseded by this publication receipt.
 
 # SITES-FULL-03 — saved non-image development checkpoint
 

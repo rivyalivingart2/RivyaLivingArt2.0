@@ -37,6 +37,14 @@ Read-only Vercel inspection still reports Node 22.x and Vercel Authentication pr
 update may invoke the existing protected Preview integration. No deploy operation or
 project-setting mutation is part of this task.
 
-Publication verification is pending in this authoring checkpoint. Read the actual remote
-branch and commit tree after updating the ref; do not claim local commit IDs were pushed
-unchanged when the connector created an equivalent commit with new metadata.
+Publication completed through the GitHub connector. The branch was fast-forwarded to
+implementation commit `d74ca0ee722011bd453b08bc8939892413b0bd86` and read back.
+Its tree is `402ec253365133de2e3eeb7024bde91106b063e4`, exactly equal to local
+authoring checkpoint `96af6ca360b68dafe33e94f2ee20e7cf49bccb3a`. Local and remote
+commit metadata differ and are deliberately recorded separately. Draft PR #13 is open.
+Main was read back unchanged at `79f5834dc4028cb42fef4020651ccaac40c16285`.
+
+The existing Git integration automatically created Preview deployment
+`dpl_6azZTgAjiu7NnCx9f4RYduiGDbFF` for this implementation commit. Its reported
+state is READY and target is preview; this is deployment status, not formal QA or
+production readiness. No deploy tool was called. See `../sites/github-publication.json`.

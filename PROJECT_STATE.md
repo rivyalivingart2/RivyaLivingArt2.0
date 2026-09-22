@@ -1,16 +1,31 @@
-# Current task — owner-authorized GitHub publication
+# Current checkpoint — GitHub publication completed
 
 22 September 2026. Owner explicitly instructed publishing the prepared updated code
 into `rivyalivingart2/RivyaLivingArt2.0` after the public-disclosure blocker was explained.
 This resolves the earlier scope blocker for this source/asset payload only. See
 `docs/decisions/2026-09-22-approved-code-publication.md`.
 
-Publish `codex/sites-approved-design` on the latest verified main history (`79f5834`,
-R8-4B merge; no file differences from the existing development base). Preserve four
-local development commits and the actual native Version 5 export. Local implementation
-checkpoint: `918a017`. Connector publication creates its own Git commit metadata; verify
-its tree against the reviewed local tree and record the actual remote SHA separately.
-Push verification pending at this authoring checkpoint; no main merge or deployment.
+Published `codex/sites-approved-design` on latest verified main history (`79f5834`,
+R8-4B merge; no file differences from the existing development base). Implementation
+commit `d74ca0ee722011bd453b08bc8939892413b0bd86` was read back from GitHub; its
+tree `402ec253365133de2e3eeb7024bde91106b063e4` exactly matches local authoring
+checkpoint `96af6ca360b68dafe33e94f2ee20e7cf49bccb3a`. Local development history
+is retained. Draft PR: https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/13.
+See `docs/sites/github-publication.json` for the source/remote identity mapping.
+This documentation checkpoint records the verified implementation publication; read
+the current remote ref for subsequent documentation commits.
+
+Main remains `79f5834dc4028cb42fef4020651ccaac40c16285`. No merge, Site deployment,
+manual Vercel deployment, secrets, domains or sharing changes were made. The existing
+Git integration automatically produced protected Preview `dpl_6azZTgAjiu7NnCx9f4RYduiGDbFF`
+for the implementation commit; Vercel reports READY, which is not formal QA evidence.
+Saved Site Version 5 remains undeployed; approved live Version 1 remains unchanged.
+
+Counts: 120 products (84/24/12), 36 article drafts, 42 FAQs, 24 fictional testimonials
+and 40 fictional enquiry scenarios. Public and Studio source scope is recorded in
+`docs/sites/status.md`. All persistence/authentication/handoff boundaries remain local
+demonstrations; formal QA is deferred. Next: continue the existing R8 integration
+sequence and map the owner's generated assets when their new Drive folder is supplied.
 
 Prior checkpoints below retain their original blocker/evidence state as history.
 

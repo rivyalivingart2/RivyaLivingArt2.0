@@ -1,0 +1,48 @@
+{
+  "recordedOn": "2026-09-22",
+  "repository": "rivyalivingart2/RivyaLivingArt2.0",
+  "visibility": "public",
+  "branch": "codex/sites-approved-design",
+  "remoteImplementationCommit": "d74ca0ee722011bd453b08bc8939892413b0bd86",
+  "localAuthoringCommit": "96af6ca360b68dafe33e94f2ee20e7cf49bccb3a",
+  "localImplementationCommit": "918a017096d8e5bc690094c9ff3c3bcecc5aa66e",
+  "verifiedImplementationTree": "402ec253365133de2e3eeb7024bde91106b063e4",
+  "remoteParentAndUnchangedMain": "79f5834dc4028cb42fef4020651ccaac40c16285",
+  "method": "Authorized GitHub connector Git Data upload, exact tree comparison, non-force ref update and remote readback",
+  "draftPullRequest": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/13",
+  "receiptScope": "Verified implementation publication; subsequent documentation commits may advance the branch. Read the current remote ref.",
+  "nativeSourceExport": "experiments/sites/rivyalivingart-studio-preview/",
+  "nextjsPort": "src/components/rivya/ and existing src/app routes, custom CMS components and src/lib contracts",
+  "site": {
+    "projectId": "appgprj_6ab151d54d488191adb373eaa3abed6b",
+    "savedVersion": 5,
+    "savedVersionId": "appgprj_6ab151d54d488191adb373eaa3abed6b~appgver_7c6da657f9508191a93378a933c6b3c9",
+    "savedSourceCommit": "d3337a2eac823ff50d4426b7d11c9e9a1a66916d",
+    "savedVersionDeployed": false,
+    "approvedLiveVersion": 1,
+    "approvedSourceCommit": "6ba66f89f064f71266a1f38927cba16e0cb38125",
+    "audienceChanged": false
+  },
+  "sampleCounts": {
+    "products": 120,
+    "largeFurnitureAndSpatialArt": 84,
+    "memoryAndCelebrationArt": 24,
+    "personalAndGifting": 12,
+    "articleDrafts": 36,
+    "faqs": 42,
+    "fictionalTestimonials": 24,
+    "fictionalEnquiryScenarios": 40
+  },
+  "automaticPreview": {
+    "id": "dpl_6azZTgAjiu7NnCx9f4RYduiGDbFF",
+    "commit": "d74ca0ee722011bd453b08bc8939892413b0bd86",
+    "stateAtReadback": "READY",
+    "target": "preview",
+    "projectProtectionAtReadback": "all_except_custom_domains",
+    "trigger": "Existing Git integration; no manual deployment operation"
+  },
+  "mainMerged": false,
+  "backendConnected": false,
+  "formalQa": "Deferred until backend/database integration; source/tree and privacy review do not establish TESTED",
+  "nextTask": "Continue existing R8 integration sequence; map generated assets when the owner supplies the new Drive folder."
+}
