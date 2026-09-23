@@ -1,26 +1,5 @@
-"use client";
-
-import { usePathname } from "next/navigation";
-import type { ReactNode } from "react";
-
-type ApplicationFrameProps = Readonly<{
-  children: ReactNode;
-  header: ReactNode;
-  footer: ReactNode;
-  approved?: boolean;
-}>;
-
-/** Presentation only: every Studio route still requires its server-side session check. */
-export function ApplicationFrame({ children, header, footer, approved=false }: ApplicationFrameProps) {
-  const pathname = usePathname();
-  const isStudioPreview = pathname === "/studio" || pathname.startsWith("/studio/") || pathname === "/preview/studio" || pathname.startsWith("/preview/studio/");
-
-  if (isStudioPreview || (approved && pathname !== "/studio")) return children;
-
-  return <>
-    <div className="preview-notice">Development preview <span aria-hidden="true">/</span> Concept imagery &amp; sample content. Not a live offer.</div>
-    {header}
-    {children}
-    {footer}
-  </>;
+import type {ReactNode} from 'react';
+/** Route shells own their navigation; unavailable routes must not revive the old fixture frame. */
+export function ApplicationFrame({children}:{children:ReactNode}){
+ return children;
 }

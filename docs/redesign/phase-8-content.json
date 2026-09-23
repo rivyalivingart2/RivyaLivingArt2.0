@@ -1,0 +1,1775 @@
+{
+  "version": 1,
+  "date": "2026-09-23",
+  "planRevision": "3.9",
+  "sourceBaseline": "630521de2f228d2fe935585e12e4639e98da8839",
+  "scope": "P8 source/content review; no runtime QA or data write",
+  "counts": {
+    "documents": 47,
+    "articles": 36,
+    "pages": 11,
+    "faqs": 12,
+    "changedDocuments": 25,
+    "approvedRealProjects": 0,
+    "routeFiles": 59,
+    "formSourceFiles": 18
+  },
+  "copyReview": [
+    {
+      "id": "page:process",
+      "kind": "page",
+      "route": "/process",
+      "title": "A piece, shaped together.",
+      "topic": "The process",
+      "sectionIds": [
+        "section-1",
+        "section-2",
+        "section-3",
+        "section-4"
+      ],
+      "words": 150,
+      "copySha256": "36ac96bf374745269b875d22fb3e98ff39c67fe65f8b46d60a7dd8eccda16898",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel dining table in a room, a design visualization",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "page:our-story",
+      "kind": "page",
+      "route": "/our-story",
+      "title": "Art for the way you live.",
+      "topic": "RivyaLivingArt",
+      "sectionIds": [
+        "section-1",
+        "section-2",
+        "section-3"
+      ],
+      "words": 125,
+      "copySha256": "618a073fcd68873a861f255e21079973daa4471acc15f2b5a879600ac7e9751e",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-hero-026-4x5.webp",
+        "alt": "Timber grain and resin in a sculptural design visualization",
+        "classification": "AI_CONCEPT",
+        "sha256": "be75f368c0cfd2e0aa7a3eaf5f9ab80aa8bda35249fdf2c3546cc7a950635b25",
+        "bytes": 245526,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "page:privacy",
+      "kind": "page",
+      "route": "/privacy",
+      "title": "Your brief stays personal.",
+      "topic": "Privacy",
+      "sectionIds": [
+        "section-1",
+        "section-2",
+        "section-3",
+        "section-4",
+        "section-5",
+        "section-6",
+        "section-7"
+      ],
+      "words": 343,
+      "copySha256": "a8af7d04ecddb23efb317f7c7a2f527cb25c8fb560801f442489826f5f44278e",
+      "changedSinceOriginalCandidate": true,
+      "image": null,
+      "relatedProductIds": [],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Factual draft ready; missing retention/fulfilment particulars remain a publication gate"
+    },
+    {
+      "id": "page:terms",
+      "kind": "page",
+      "route": "/terms",
+      "title": "Clear from the beginning.",
+      "topic": "Ordering terms",
+      "sectionIds": [
+        "section-1",
+        "section-2",
+        "section-3",
+        "section-4"
+      ],
+      "words": 127,
+      "copySha256": "ffd5e115a26471e217f353fec303fb33a01e035490eca1fbf07fdcc5ae37d392",
+      "changedSinceOriginalCandidate": true,
+      "image": null,
+      "relatedProductIds": [],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Factual draft ready; missing retention/fulfilment particulars remain a publication gate"
+    },
+    {
+      "id": "page:shipping-delivery",
+      "kind": "page",
+      "route": "/shipping-delivery",
+      "title": "A considered arrival.",
+      "topic": "Delivery",
+      "sectionIds": [
+        "section-1",
+        "section-2",
+        "section-3"
+      ],
+      "words": 102,
+      "copySha256": "4af9b833c486526f2a3be1e4a3a72530ec5ba61c48132209de985aa574247a41",
+      "changedSinceOriginalCandidate": true,
+      "image": null,
+      "relatedProductIds": [],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Factual draft ready; missing retention/fulfilment particulars remain a publication gate"
+    },
+    {
+      "id": "page:returns-cancellations",
+      "kind": "page",
+      "route": "/returns-cancellations",
+      "title": "Talk to us about a change.",
+      "topic": "Changes & cancellations",
+      "sectionIds": [
+        "section-1",
+        "section-2",
+        "section-3"
+      ],
+      "words": 107,
+      "copySha256": "ae38ccb2d1377f89879615fd3584f1f7b9ed2bf38a750e5a24b2fc1edb18d9ed",
+      "changedSinceOriginalCandidate": true,
+      "image": null,
+      "relatedProductIds": [],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Factual draft ready; missing retention/fulfilment particulars remain a publication gate"
+    },
+    {
+      "id": "page:accessibility",
+      "kind": "page",
+      "route": "/accessibility",
+      "title": "A website for more people.",
+      "topic": "Accessibility",
+      "sectionIds": [
+        "section-1",
+        "section-2",
+        "section-3"
+      ],
+      "words": 106,
+      "copySha256": "58517645e9eb7618b6609ac39118bbb1c9a1b033ff5a2c2cb4e883bcbcc43618",
+      "changedSinceOriginalCandidate": true,
+      "image": null,
+      "relatedProductIds": [],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "page:architects",
+      "kind": "page",
+      "route": "/architects",
+      "title": "A material partner for your vision.",
+      "topic": "For architects & interior designers",
+      "sectionIds": [
+        "section-1",
+        "section-2",
+        "section-3",
+        "section-4"
+      ],
+      "words": 145,
+      "copySha256": "b66e2b0853f8aa2e56bea32f1c0fc093fbed2374857a5c4833e483f1016fc9d9",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-scene-005-16x9.webp",
+        "alt": "Estuary dining table in a room, a design visualization",
+        "classification": "AI_CONCEPT",
+        "sha256": "d6edca6cb44246351e3b9cf784b902ab14976cf62fa6aaa381a9dfc36992ec35",
+        "bytes": 205688,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "page:contact",
+      "kind": "page",
+      "route": "/contact",
+      "title": "Let’s begin a conversation.",
+      "topic": "Contact the atelier",
+      "sectionIds": [
+        "section-1",
+        "section-2",
+        "section-3"
+      ],
+      "words": 107,
+      "copySha256": "991d0639c2b7a6e72111c78a0492e1eb41ab45caffebcbc365d4bb0e3b763896",
+      "changedSinceOriginalCandidate": true,
+      "image": null,
+      "relatedProductIds": [],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "page:materials-care",
+      "kind": "page",
+      "route": "/materials-care",
+      "title": "Texture, depth and everyday life.",
+      "topic": "Materials & care",
+      "sectionIds": [
+        "materials",
+        "section-1",
+        "section-2",
+        "care",
+        "section-4",
+        "section-5"
+      ],
+      "words": 204,
+      "copySha256": "a51d8e129dc24768cdc82d24ce159906069f339e058ec8530112ec9c32fcdb69",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-hero-026-4x5.webp",
+        "alt": "Timber and resin design visualization",
+        "classification": "AI_CONCEPT",
+        "sha256": "be75f368c0cfd2e0aa7a3eaf5f9ab80aa8bda35249fdf2c3546cc7a950635b25",
+        "bytes": 245526,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "page:faq",
+      "kind": "page",
+      "route": "/faq",
+      "title": "Your questions, considered.",
+      "topic": "Before we begin",
+      "sectionIds": [
+        "question-0",
+        "question-1",
+        "question-2",
+        "question-3",
+        "question-4",
+        "question-5",
+        "question-6",
+        "question-7",
+        "question-8",
+        "question-9",
+        "question-10",
+        "question-11"
+      ],
+      "words": 449,
+      "copySha256": "f9e3a9aef2678fcc7f0e57260ab7b9cd9e3ca32a67c5d03d46335d521ffdb3f9",
+      "changedSinceOriginalCandidate": true,
+      "image": null,
+      "relatedProductIds": [],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB001",
+      "kind": "article",
+      "route": "/journal/a-room-begins-with-a-statement-table",
+      "title": "A Room Begins with a Statement Table",
+      "topic": "Spaces",
+      "sectionIds": [
+        "begin-with-the-room",
+        "draw-the-visible-weight",
+        "map-everyday-movement",
+        "make-a-material-conversation",
+        "leave-space-for-change",
+        "prepare-the-first-conversation"
+      ],
+      "words": 628,
+      "copySha256": "e3d4455fdcc095f6cae9df468022c05ccdfbb3196059acee52ded081830c9f16",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP002",
+        "DP013"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB002",
+      "kind": "article",
+      "route": "/journal/reading-the-grain-wood-and-resin-in-a-shared-composition",
+      "title": "Reading the Grain: Wood and Resin in a Shared Composition",
+      "topic": "Materials",
+      "sectionIds": [
+        "look-for-direction",
+        "notice-the-interval",
+        "separate-tone-and-transparency",
+        "include-the-edge-and-base",
+        "make-a-useful-reference-board",
+        "turn-observations-into-questions"
+      ],
+      "words": 703,
+      "copySha256": "f7f91aa3dab97227c2dd789f760fdef0e110b709ea20decaee3e7d7b567d7d3c",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP013",
+        "DP051"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB003",
+      "kind": "article",
+      "route": "/journal/round-oval-or-rectangular-a-dining-table-planning-notebook",
+      "title": "Round, Oval or Rectangular: A Dining-Table Planning Notebook",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "start-with-a-measured-sketch",
+        "consider-a-round-outline",
+        "consider-an-oval-outline",
+        "consider-a-rectangular-outline",
+        "compare-the-same-situations",
+        "write-a-comparison-brief"
+      ],
+      "words": 673,
+      "copySha256": "7adb80e95c6589b73ff863780fb2b1013bd9d39b9c358d1f2ce15caf12706142",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP002"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB004",
+      "kind": "article",
+      "route": "/journal/coffee-tables-as-sculptural-objects",
+      "title": "Coffee Tables as Sculptural Objects",
+      "topic": "Spaces",
+      "sectionIds": [
+        "read-the-silhouette",
+        "relate-it-to-the-seating",
+        "look-at-the-open-space",
+        "compose-without-matching",
+        "style-for-the-real-day",
+        "brief-a-sculptural-table"
+      ],
+      "words": 714,
+      "copySha256": "34e770feac3ee22535be33aed74cd4ddb890b8b287b72c8b07d5aff04645ff93",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-scene-003-16x9.webp",
+        "alt": "Shallow Basin: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "22f9de1350df7184342cd0946cb9abbbe7e61f1f94890cd0ca73b0747cba0dcb",
+        "bytes": 231328,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP013",
+        "DP014"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB005",
+      "kind": "article",
+      "route": "/journal/the-quiet-role-of-a-side-table",
+      "title": "The Quiet Role of a Side Table",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "name-the-job",
+        "find-its-neighbour",
+        "consider-one-or-two",
+        "notice-the-overlooked-details",
+        "choose-the-kind-of-presence",
+        "make-a-small-clear-brief"
+      ],
+      "words": 643,
+      "copySha256": "481472486367e08c09b11fe0654e9a2179f8afc9dbd1bb6d4af432010c6f8812",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/generated/dp025-twinleaf-matched-side-table-pair-portrait-4x5.webp",
+        "alt": "Twinleaf: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "a2572efe4c2cb3c3222e89e9ca497428b3c59590fdeb8b45d90b6a6bc2d699f0",
+        "bytes": 295980,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP025",
+        "DP043"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB006",
+      "kind": "article",
+      "route": "/journal/an-entryway-built-around-one-console",
+      "title": "An Entryway Built Around One Console",
+      "topic": "Spaces",
+      "sectionIds": [
+        "read-the-arrival",
+        "establish-a-horizontal-line",
+        "build-a-rhythm-on-the-wall",
+        "style-with-restraint",
+        "consider-the-other-objects",
+        "bring-the-project-questions"
+      ],
+      "words": 650,
+      "copySha256": "adc176ceb7f0e6a6b8aaf7493c6331f85cc73846bd99011f7e64670b89971ec9",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-scene-005-16x9.webp",
+        "alt": "Narrow Span: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "d6edca6cb44246351e3b9cf784b902ab14976cf62fa6aaa381a9dfc36992ec35",
+        "bytes": 205688,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP035",
+        "DP048",
+        "DP057"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB007",
+      "kind": "article",
+      "route": "/journal/pairing-resin-art-with-warm-neutral-interiors",
+      "title": "Pairing Resin Art with Warm Neutral Interiors",
+      "topic": "Spaces",
+      "sectionIds": [
+        "begin-with-the-existing-neutrals",
+        "give-the-new-object-a-role",
+        "build-an-illustrative-palette",
+        "let-texture-do-some-work",
+        "borrow-a-relationship-not-a-room",
+        "bring-the-palette-back-to-the-room"
+      ],
+      "words": 717,
+      "copySha256": "6bb799cb1f0d59f0510da8a885b86ecdfefe8888bab810c53d3bf6c72cdedf43",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP025",
+        "DP035"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB008",
+      "kind": "article",
+      "route": "/journal/a-guide-to-describing-your-commission",
+      "title": "A Guide to Describing Your Commission",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "describe-the-purpose-first",
+        "show-what-is-measured",
+        "annotate-your-references",
+        "explain-the-practical-context",
+        "give-timing-and-budget-context",
+        "end-with-answerable-questions"
+      ],
+      "words": 581,
+      "copySha256": "444e3e90dae6ac309b629a4de143a5d72a08f2047a45850a4364856e0c3a2187",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP051",
+        "DP077"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB009",
+      "kind": "article",
+      "route": "/journal/what-to-include-in-an-architects-enquiry",
+      "title": "What to Include in an Architect’s Enquiry",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "open-with-project-context",
+        "send-a-readable-drawing-set",
+        "describe-the-design-intent",
+        "record-access-and-interfaces",
+        "ask-for-specific-information"
+      ],
+      "words": 575,
+      "copySha256": "eab0ec2e1d7f0e64e760bd87bc8eed575fc99e808496199b60b3c0140c245d67",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-scene-005-16x9.webp",
+        "alt": "Narrow Span: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "d6edca6cb44246351e3b9cf784b902ab14976cf62fa6aaa381a9dfc36992ec35",
+        "bytes": 205688,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP035",
+        "DP057",
+        "DP077"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB010",
+      "kind": "article",
+      "route": "/journal/wall-art-at-architectural-scale",
+      "title": "Wall Art at Architectural Scale",
+      "topic": "Spaces",
+      "sectionIds": [
+        "draw-the-whole-wall",
+        "study-a-single-panel",
+        "study-a-diptych",
+        "study-a-triptych",
+        "consider-near-and-distant-views",
+        "separate-composition-from-installation"
+      ],
+      "words": 720,
+      "copySha256": "8bf63e05f14e854b9f91d91219bcb6e04064101663c992b300dbbc00cb90202a",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-scene-005-16x9.webp",
+        "alt": "Narrow Span: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "d6edca6cb44246351e3b9cf784b902ab14976cf62fa6aaa381a9dfc36992ec35",
+        "bytes": 205688,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP057",
+        "DP035",
+        "DP069"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB011",
+      "kind": "article",
+      "route": "/journal/from-a-mood-board-to-a-material-conversation",
+      "title": "From a Mood Board to a Material Conversation",
+      "topic": "Materials",
+      "sectionIds": [
+        "give-the-board-a-question",
+        "annotate-what-each-image-means",
+        "sort-the-kinds-of-information",
+        "bring-in-physical-samples",
+        "record-decisions-with-their-scope",
+        "turn-the-board-into-a-brief"
+      ],
+      "words": 730,
+      "copySha256": "0682b3a0ee483769e7345fd8e0a1c7182398c5f0da7ce44f7772700e6b9ccbb7",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP013",
+        "DP025"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB012",
+      "kind": "article",
+      "route": "/journal/light-transparency-and-the-look-of-resin",
+      "title": "Light, Transparency and the Look of Resin",
+      "topic": "Materials",
+      "sectionIds": [
+        "describe-the-impression",
+        "notice-the-background",
+        "compare-viewpoints-carefully",
+        "separate-reflections-from-colour",
+        "read-the-edge-and-interior",
+        "ask-for-a-grounded-review"
+      ],
+      "words": 662,
+      "copySha256": "1aeb084a641f0b0357c2e7e6552f4f9710ddbd022689e407a09c350001ff4a0a",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP013",
+        "DP069"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB013",
+      "kind": "article",
+      "route": "/journal/chairs-benches-and-the-shape-of-a-room",
+      "title": "Chairs, Benches and the Shape of a Room",
+      "topic": "Spaces",
+      "sectionIds": [
+        "db013-1",
+        "db013-2",
+        "db013-4",
+        "db013-5"
+      ],
+      "words": 449,
+      "copySha256": "9b4110e0d5ac006396fc3bd9555050eec6435ab650424bb05c7425a0734df75a",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-hero-009-4x5.webp",
+        "alt": "Entryway: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "1418172d62fc8377d87df288a51149d5ef2eb1cf7c67fa968b229dc1b2c0c3d2",
+        "bytes": 335506,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP043",
+        "DP048",
+        "DP049"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB014",
+      "kind": "article",
+      "route": "/journal/planning-a-large-piece-for-delivery-access",
+      "title": "Planning a Large Piece for Delivery Access",
+      "topic": "Spaces",
+      "sectionIds": [
+        "db014-1",
+        "db014-2",
+        "db014-3",
+        "db014-5"
+      ],
+      "words": 422,
+      "copySha256": "86009e8e4eea0af4d74d0680dda9505d23d5add2dda2dd474ea17dada1192199",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP077"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB015",
+      "kind": "article",
+      "route": "/journal/why-a-visualization-is-not-a-final-specification",
+      "title": "Why a Visualization Is Not a Final Specification",
+      "topic": "Materials",
+      "sectionIds": [
+        "db015-1",
+        "db015-3",
+        "db015-4",
+        "db015-5"
+      ],
+      "words": 426,
+      "copySha256": "c296a24b4cb1c90342b3a9635b2ca25952d6964771def6bcf96219ae56ab3316",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP085"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB016",
+      "kind": "article",
+      "route": "/journal/a-home-office-with-a-material-focal-point",
+      "title": "A Home Office with a Material Focal Point",
+      "topic": "Spaces",
+      "sectionIds": [
+        "db016-1",
+        "db016-2",
+        "db016-3",
+        "db016-4",
+        "db016-5"
+      ],
+      "words": 532,
+      "copySha256": "effe95666a65c3361a1eec24c69c42a2505479e320b01b3a3b0169cd3db2391c",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/generated/dp051-single-slab-atelier-desk-portrait-4x5.webp",
+        "alt": "Single-Slab: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "6e4e069c3d8ba5352010d798f5dd591f8a7c7facd47fddc8ddb3b4d0f81d0d67",
+        "bytes": 397578,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP051",
+        "DP055"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB017",
+      "kind": "article",
+      "route": "/journal/a-small-vocabulary-of-finishes-and-forms",
+      "title": "A Small Vocabulary of Finishes and Forms",
+      "topic": "Materials",
+      "sectionIds": [
+        "db017-2",
+        "db017-3",
+        "db017-4",
+        "db017-5",
+        "db017-6"
+      ],
+      "words": 555,
+      "copySha256": "47d2bc81d076f63d7ec9086fa891c682243aef518fa8e0fce13a534a497bffe9",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-scene-005-16x9.webp",
+        "alt": "Narrow Span: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "d6edca6cb44246351e3b9cf784b902ab14976cf62fa6aaa381a9dfc36992ec35",
+        "bytes": 205688,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP035",
+        "DP069"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB018",
+      "kind": "article",
+      "route": "/journal/the-project-story-behind-a-collectible-interior",
+      "title": "The Project Story Behind a Collectible Interior",
+      "topic": "Spaces",
+      "sectionIds": [
+        "give-the-room-a-purpose",
+        "identify-the-constraints",
+        "name-the-key-relationship",
+        "make-the-brief-readable"
+      ],
+      "words": 273,
+      "copySha256": "7fbc94aa346138d7fd69821e06d840e35a3b5afa8487eeaee8687f40e5b7f8de",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-scene-003-16x9.webp",
+        "alt": "Shallow Basin: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "22f9de1350df7184342cd0946cb9abbbe7e61f1f94890cd0ca73b0747cba0dcb",
+        "bytes": 231328,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP013",
+        "DP057"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB019",
+      "kind": "article",
+      "route": "/journal/turning-a-wedding-memory-into-a-design-brief",
+      "title": "Turning a Wedding Memory into a Design Brief",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db019-1",
+        "db019-5",
+        "choose-what-leads"
+      ],
+      "words": 285,
+      "copySha256": "04f479f42d9ff09a829b9d9a6afcf0d30a811e786b28efd64bb4fedd948dbeca",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-hero-020-4x5.webp",
+        "alt": "Vow: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "5b03050b65a1c868262db502117e94f6fb5bf6c4a6c17c2e69b20c8551d35c71",
+        "bytes": 197232,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP085",
+        "DP087"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB020",
+      "kind": "article",
+      "route": "/journal/choosing-a-format-for-a-bouquet-keepsake",
+      "title": "Choosing a Format for a Bouquet Keepsake",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db020-1",
+        "db020-2",
+        "db020-4",
+        "db020-6"
+      ],
+      "words": 448,
+      "copySha256": "306e47f7fc2b69c52e7d2b7290b5e472897ed4fdf06b1b88643383de7c8027e9",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/generated/dp086-forever-solid-block-varmala-keepsake-portrait-4x5.webp",
+        "alt": "Forever: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ee6671a09831eeb85f1222a8a01c144c609e50351e329975117fcd3433f60805",
+        "bytes": 107890,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP087",
+        "DP086",
+        "DP088"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB021",
+      "kind": "article",
+      "route": "/journal/names-and-dates-a-personalization-proofreading-checklist",
+      "title": "Names and Dates: A Personalization Proofreading Checklist",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db021-2",
+        "db021-3",
+        "db021-5",
+        "db021-6"
+      ],
+      "words": 429,
+      "copySha256": "61f05d5bd76156c8f694c674df1ca50340d2fcd0c4175833f424bb765ed4ec51",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-hero-020-4x5.webp",
+        "alt": "Vow: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "5b03050b65a1c868262db502117e94f6fb5bf6c4a6c17c2e69b20c8551d35c71",
+        "bytes": 197232,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP085",
+        "DP114"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB022",
+      "kind": "article",
+      "route": "/journal/designing-a-wedding-invitation-keepsake",
+      "title": "Designing a Wedding-Invitation Keepsake",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db022-3",
+        "db022-4",
+        "review-the-visible-text"
+      ],
+      "words": 314,
+      "copySha256": "401ae453a7b6e87106c59ecf1aa9cb7c2e0b289cbb6704affe51963ce155c966",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/generated/dp099-letterlight-invitation-frame-portrait-4x5.webp",
+        "alt": "Letterlight: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ea86304a3ab2d965787d659f4414feb4f854446ffe965111cf1acca0d453db74",
+        "bytes": 143056,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP099",
+        "DP100"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB023",
+      "kind": "article",
+      "route": "/journal/a-preservation-clock-as-a-memory-object",
+      "title": "A Preservation Clock as a Memory Object",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db023-2",
+        "db023-3",
+        "db023-6"
+      ],
+      "words": 324,
+      "copySha256": "49904e43241d7078de4172fdff33ff296e19dab6f86b2927606b685fff512eb1",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/generated/dp091-hourglass-floral-wall-clock-portrait-4x5.webp",
+        "alt": "Hourglass: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "99824624ba918020edf9932ca75368053b10b776e26ce6402fe96b165bb6564d",
+        "bytes": 92478,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP091",
+        "DP093"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB024",
+      "kind": "article",
+      "route": "/journal/before-you-send-sentimental-materials",
+      "title": "Before You Send Sentimental Materials",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db024-4",
+        "db024-6",
+        "make-a-clear-record"
+      ],
+      "words": 286,
+      "copySha256": "b3ba25912da58876ea68a66c1b64102245c4f4b03fbcfef9873b8a64fa258a4b",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-hero-020-4x5.webp",
+        "alt": "Vow: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "5b03050b65a1c868262db502117e94f6fb5bf6c4a6c17c2e69b20c8551d35c71",
+        "bytes": 197232,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP085",
+        "DP099"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB025",
+      "kind": "article",
+      "route": "/journal/a-family-nameplate-with-a-personal-story",
+      "title": "A Family Nameplate with a Personal Story",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db025-3",
+        "db025-4",
+        "check-the-approach"
+      ],
+      "words": 316,
+      "copySha256": "29441e1211355793d00a85679b0213951ea8f808eb786b500469f76dfd4f9836",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/generated/dp103-threshold-family-nameplate-portrait-4x5.webp",
+        "alt": "Threshold: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "7346a52583d8354e8e4776cd5b5139f7daf092cd88e5bcd812b2c1cd208c0717",
+        "bytes": 67222,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP103",
+        "DP104"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB026",
+      "kind": "article",
+      "route": "/journal/photographs-privacy-and-memory-art",
+      "title": "Photographs, Privacy and Memory Art",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db026-2",
+        "db026-3",
+        "db026-4"
+      ],
+      "words": 325,
+      "copySha256": "6bcb74c9a8a3bacbe6da593525971ef052078f829a5d2e473615074146a28004",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/generated/dp101-together-couple-memory-frame-portrait-4x5.webp",
+        "alt": "Together: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "0c82fc759310b8f4c681141db5e20996ddb5f71af83076c0d608863f6c4eb4a6",
+        "bytes": 89366,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP101"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB027",
+      "kind": "article",
+      "route": "/journal/small-objects-with-a-personal-meaning",
+      "title": "Small Objects with a Personal Meaning",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db027-3",
+        "db027-5",
+        "write-one-clear-intention"
+      ],
+      "words": 298,
+      "copySha256": "e6333285904fd168db05449a28a6d34b7ea97db2972c07403f74c441049b513e",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/generated/dp111-thread-of-light-resin-rakhi-portrait-4x5.webp",
+        "alt": "Thread of Light: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "d10c0558117a3607d0548fab063af4002d9a0652067beb9fad43edf23af8410b",
+        "bytes": 193308,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP111",
+        "DP114",
+        "DP115"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB028",
+      "kind": "article",
+      "route": "/journal/a-cohesive-gift-set-without-repeating-every-detail",
+      "title": "A Cohesive Gift Set without Repeating Every Detail",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db028-2",
+        "db028-3",
+        "db028-4"
+      ],
+      "words": 345,
+      "copySha256": "0de3b06fc429856b6ce8f1df8b3d20080684ca899edd5a254b89d442d598fd27",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/generated/dp111-thread-of-light-resin-rakhi-portrait-4x5.webp",
+        "alt": "Thread of Light: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "d10c0558117a3607d0548fab063af4002d9a0652067beb9fad43edf23af8410b",
+        "bytes": 193308,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP111",
+        "DP114",
+        "DP115"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB029",
+      "kind": "article",
+      "route": "/journal/personalized-resin-jewellery-preparing-your-brief",
+      "title": "Personalized Resin Jewellery: Preparing Your Brief",
+      "topic": "Materials",
+      "sectionIds": [
+        "db029-2",
+        "db029-4",
+        "db029-5",
+        "db029-6"
+      ],
+      "words": 429,
+      "copySha256": "dffa74a93e3ca90cff65a0de6cae78ca0788e70056b761c17a3fe5f5e9f9f8a7",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/generated/dp109-botanical-resin-pendant-portrait-4x5.webp",
+        "alt": "Botanical: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "a6d14d53736484b743d0c748ac685af2f396f4be3634657afc83cbd39c45ced0",
+        "bytes": 133334,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP109",
+        "DP110"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB030",
+      "kind": "article",
+      "route": "/journal/seasonal-gifting-without-the-marketplace-clutter",
+      "title": "Seasonal Gifting without the Marketplace Clutter",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db030-3",
+        "db030-5",
+        "work-back-from-the-occasion"
+      ],
+      "words": 286,
+      "copySha256": "2a9ea92b72a63c9fab45209cb5c0373823f4861b12e5e2c4da19a994013a3ca3",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-hero-029-4x5.webp",
+        "alt": "Everyday: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "d71af51cdcdd5a3000d4d5bde1e42c06baac0a1520591c6af8780f63c266768a",
+        "bytes": 225128,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP114",
+        "DP118"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB031",
+      "kind": "article",
+      "route": "/journal/corporate-gifts-as-small-design-objects",
+      "title": "Corporate Gifts as Small Design Objects",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db031-4",
+        "db031-6",
+        "agree-who-reviews"
+      ],
+      "words": 278,
+      "copySha256": "efed9adc5c6129432d45be707792b734d3493af3932979e27598c3d9d6f0b2ea",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
+        "alt": "Twinleaf: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "46c4dde929377553d8b2703b44470247d8dbcff73cfd791b7494e0e6c028a78d",
+        "bytes": 192734,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP117",
+        "DP119"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB032",
+      "kind": "article",
+      "route": "/journal/choosing-initials-colours-and-a-short-message",
+      "title": "Choosing Initials, Colours and a Short Message",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db032-2",
+        "db032-3",
+        "db032-5",
+        "db032-6"
+      ],
+      "words": 432,
+      "copySha256": "34f7f2cb249b5f8f558dcd59373137a14a5bb94b7e6e3db65bd46a5e29c19877",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/generated/dp111-thread-of-light-resin-rakhi-portrait-4x5.webp",
+        "alt": "Thread of Light: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "d10c0558117a3607d0548fab063af4002d9a0652067beb9fad43edf23af8410b",
+        "bytes": 193308,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP111",
+        "DP114"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB033",
+      "kind": "article",
+      "route": "/journal/inside-a-material-led-design-notebook",
+      "title": "Inside a Material-Led Design Notebook",
+      "topic": "Materials",
+      "sectionIds": [
+        "db033-1",
+        "db033-2",
+        "db033-3",
+        "db033-5"
+      ],
+      "words": 409,
+      "copySha256": "00a9ea97905656c18b650de64abd6496c25ee3428741ebba8cff322d2eff6218",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP069"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB034",
+      "kind": "article",
+      "route": "/journal/how-to-read-a-product-specification",
+      "title": "How to Read a Product Specification",
+      "topic": "Materials",
+      "sectionIds": [
+        "db034-2",
+        "db034-4",
+        "db034-5"
+      ],
+      "words": 310,
+      "copySha256": "f41f60234fc5390309a9b42d951e171e21fb12ccdf1dcc27192f7469a6e2bff2",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP085"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB035",
+      "kind": "article",
+      "route": "/journal/preparing-a-clear-whatsapp-enquiry",
+      "title": "Preparing a Clear WhatsApp Enquiry",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "choose-a-starting-point",
+        "prepare-a-small-brief",
+        "save-before-whatsapp",
+        "send-and-agree"
+      ],
+      "words": 300,
+      "copySha256": "7e767ef2b5ada304e1542a12ea74f5af026f2d17cec7d790afa20aa5afc36503",
+      "changedSinceOriginalCandidate": false,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP085",
+        "DP114"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    },
+    {
+      "id": "DB036",
+      "kind": "article",
+      "route": "/journal/from-draft-to-approved-design-a-client-checklist",
+      "title": "From Draft to Approved Design: A Client Checklist",
+      "topic": "Commissioning",
+      "sectionIds": [
+        "db036-1",
+        "db036-2",
+        "db036-3",
+        "db036-5"
+      ],
+      "words": 408,
+      "copySha256": "4ab576461c36a077fea2f795721d21566efea29e063ce1a54bf7b96c6c4c5d67",
+      "changedSinceOriginalCandidate": true,
+      "image": {
+        "path": "/media/product-scene-001-16x9.webp",
+        "alt": "River Channel: design visualization accompanying this article",
+        "classification": "AI_CONCEPT",
+        "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+        "bytes": 284552,
+        "visualVerification": "P9/P11 pending; hash/association review only"
+      },
+      "relatedProductIds": [
+        "DP001",
+        "DP099"
+      ],
+      "review": "Full paragraph source review; planning/care guidance, no fabricated completed work or product performance promise",
+      "disposition": "Source ready; deliberate Studio publication and final QA still required"
+    }
+  ],
+  "aliases": {
+    "articles": {
+      "the-space-around-an-object": "a-room-begins-with-a-statement-table",
+      "following-the-natural-edge": "reading-the-grain-wood-and-resin-in-a-shared-composition",
+      "a-commission-begins-with-a-conversation": "a-guide-to-describing-your-commission"
+    },
+    "products": "Preserved 120 stable/current/legacy mappings in phase-4-products.json; only redirect to a currently published target",
+    "pages": {
+      "/about": "/our-story",
+      "/materials": "/materials-care#materials",
+      "/care": "/materials-care#care"
+    }
+  },
+  "routes": [
+    {
+      "file": "src/app/[collection]/page.tsx",
+      "route": "/[collection]",
+      "disposition": "Only collectible-design, memory-art and personal-art; all other values 404"
+    },
+    {
+      "file": "src/app/about/page.tsx",
+      "route": "/about",
+      "disposition": "Permanent retained alias with query preservation and care/material anchors"
+    },
+    {
+      "file": "src/app/accessibility/page.tsx",
+      "route": "/accessibility",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/api/inquiry/receipt/route.ts",
+      "route": "/api/inquiry/receipt",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/inquiry/reference/route.ts",
+      "route": "/api/inquiry/reference",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/inquiry/schema/route.ts",
+      "route": "/api/inquiry/schema",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/inquiry/session/route.ts",
+      "route": "/api/inquiry/session",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/studio/cleanup/route.ts",
+      "route": "/api/studio/cleanup",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/studio/content/route.ts",
+      "route": "/api/studio/content",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/studio/inquiry-handoff/route.ts",
+      "route": "/api/studio/inquiry-handoff",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/studio/media/route.ts",
+      "route": "/api/studio/media",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/studio/operations/route.ts",
+      "route": "/api/studio/operations",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/studio/orders/route.ts",
+      "route": "/api/studio/orders",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/studio/references/[id]/route.ts",
+      "route": "/api/studio/references/[id]",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/studio/revisions/route.ts",
+      "route": "/api/studio/revisions",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/studio/settings/route.ts",
+      "route": "/api/studio/settings",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/api/studio/workspace/route.ts",
+      "route": "/api/studio/workspace",
+      "disposition": "API only; request/session/role scope and private response; never sitemap"
+    },
+    {
+      "file": "src/app/architects/page.tsx",
+      "route": "/architects",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/care/page.tsx",
+      "route": "/care",
+      "disposition": "Permanent retained alias with query preservation and care/material anchors"
+    },
+    {
+      "file": "src/app/commission/customize/page.tsx",
+      "route": "/commission/customize",
+      "disposition": "Published product or bespoke brief; noindex, writes gated, saves before order-only handoff"
+    },
+    {
+      "file": "src/app/commission/page.tsx",
+      "route": "/commission",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/contact/page.tsx",
+      "route": "/contact",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/faq/page.tsx",
+      "route": "/faq",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/inquiry/received/page.tsx",
+      "route": "/inquiry/received",
+      "disposition": "Guest-bound saved receipt; noindex/private, expiry does not remove saved order"
+    },
+    {
+      "file": "src/app/journal/[slug]/page.tsx",
+      "route": "/journal/[slug]",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/journal/page.tsx",
+      "route": "/journal",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/materials-care/page.tsx",
+      "route": "/materials-care",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/materials/page.tsx",
+      "route": "/materials",
+      "disposition": "Permanent retained alias with query preservation and care/material anchors"
+    },
+    {
+      "file": "src/app/our-story/page.tsx",
+      "route": "/our-story",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/page.tsx",
+      "route": "/",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/personalize/page.tsx",
+      "route": "/personalize",
+      "disposition": "Legacy selection/customization adapter; real published product context, noindex"
+    },
+    {
+      "file": "src/app/pieces/[slug]/customize/page.tsx",
+      "route": "/pieces/[slug]/customize",
+      "disposition": "Published product or bespoke brief; noindex, writes gated, saves before order-only handoff"
+    },
+    {
+      "file": "src/app/pieces/[slug]/page.tsx",
+      "route": "/pieces/[slug]",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/portfolio/[slug]/page.tsx",
+      "route": "/portfolio/[slug]",
+      "disposition": "Approved real projects only; currently zero, truthful empty list or 404 detail"
+    },
+    {
+      "file": "src/app/portfolio/page.tsx",
+      "route": "/portfolio",
+      "disposition": "Approved real projects only; currently zero, truthful empty list or 404 detail"
+    },
+    {
+      "file": "src/app/preserve/page.tsx",
+      "route": "/preserve",
+      "disposition": "Legacy selection/customization adapter; real published product context, noindex"
+    },
+    {
+      "file": "src/app/preview/states/[kind]/page.tsx",
+      "route": "/preview/states/[kind]",
+      "disposition": "Visual system presentation only; denied in production and shared data mode"
+    },
+    {
+      "file": "src/app/preview/states/page.tsx",
+      "route": "/preview/states",
+      "disposition": "Visual system presentation only; denied in production and shared data mode"
+    },
+    {
+      "file": "src/app/preview/studio/[...path]/page.tsx",
+      "route": "/preview/studio/[...path]",
+      "disposition": "Authenticated legacy Studio adapter; redirects to Studio, never public content"
+    },
+    {
+      "file": "src/app/preview/studio/content/[id]/page.tsx",
+      "route": "/preview/studio/content/[id]",
+      "disposition": "Authenticated legacy Studio adapter; redirects to Studio, never public content"
+    },
+    {
+      "file": "src/app/preview/studio/content/new/page.tsx",
+      "route": "/preview/studio/content/new",
+      "disposition": "Authenticated legacy Studio adapter; redirects to Studio, never public content"
+    },
+    {
+      "file": "src/app/preview/studio/content/page.tsx",
+      "route": "/preview/studio/content",
+      "disposition": "Authenticated legacy Studio adapter; redirects to Studio, never public content"
+    },
+    {
+      "file": "src/app/preview/studio/media/page.tsx",
+      "route": "/preview/studio/media",
+      "disposition": "Authenticated legacy Studio adapter; redirects to Studio, never public content"
+    },
+    {
+      "file": "src/app/preview/studio/modules/[module]/page.tsx",
+      "route": "/preview/studio/modules/[module]",
+      "disposition": "Authenticated legacy Studio adapter; redirects to Studio, never public content"
+    },
+    {
+      "file": "src/app/preview/studio/page.tsx",
+      "route": "/preview/studio",
+      "disposition": "Authenticated legacy Studio adapter; redirects to Studio, never public content"
+    },
+    {
+      "file": "src/app/preview/studio/products/[id]/form/page.tsx",
+      "route": "/preview/studio/products/[id]/form",
+      "disposition": "Authenticated legacy Studio adapter; redirects to Studio, never public content"
+    },
+    {
+      "file": "src/app/preview/studio/products/[id]/page.tsx",
+      "route": "/preview/studio/products/[id]",
+      "disposition": "Authenticated legacy Studio adapter; redirects to Studio, never public content"
+    },
+    {
+      "file": "src/app/preview/studio/products/new/page.tsx",
+      "route": "/preview/studio/products/new",
+      "disposition": "Authenticated legacy Studio adapter; redirects to Studio, never public content"
+    },
+    {
+      "file": "src/app/preview/studio/products/page.tsx",
+      "route": "/preview/studio/products",
+      "disposition": "Authenticated legacy Studio adapter; redirects to Studio, never public content"
+    },
+    {
+      "file": "src/app/privacy/page.tsx",
+      "route": "/privacy",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/process/page.tsx",
+      "route": "/process",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/returns-cancellations/page.tsx",
+      "route": "/returns-cancellations",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/search/page.tsx",
+      "route": "/search",
+      "disposition": "Published catalogue query/filter form; noindex; no WhatsApp"
+    },
+    {
+      "file": "src/app/shipping-delivery/page.tsx",
+      "route": "/shipping-delivery",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    },
+    {
+      "file": "src/app/studio/[...path]/page.tsx",
+      "route": "/studio/[...path]",
+      "disposition": "Staff-only Studio or sign-in; no customer account, noindex"
+    },
+    {
+      "file": "src/app/studio/login/page.tsx",
+      "route": "/studio/login",
+      "disposition": "Staff-only Studio or sign-in; no customer account, noindex"
+    },
+    {
+      "file": "src/app/studio/page.tsx",
+      "route": "/studio",
+      "disposition": "Staff-only Studio or sign-in; no customer account, noindex"
+    },
+    {
+      "file": "src/app/studio/reference/[id]/page.tsx",
+      "route": "/studio/reference/[id]",
+      "disposition": "Staff-only Studio or sign-in; no customer account, noindex"
+    },
+    {
+      "file": "src/app/terms/page.tsx",
+      "route": "/terms",
+      "disposition": "Public route; published data only, explicit availability boundary"
+    }
+  ],
+  "forms": [
+    {
+      "file": "src/components/inquiry-wizard.tsx",
+      "scope": "Historical component preserved; not an active public-form entry"
+    },
+    {
+      "file": "src/components/rivya/studio.tsx",
+      "scope": "Historical component preserved; not an active public-form entry"
+    },
+    {
+      "file": "src/components/shop/catalogue-browser.tsx",
+      "scope": "Public GET catalogue search/filter only"
+    },
+    {
+      "file": "src/components/shop/header.tsx",
+      "scope": "Public GET search only"
+    },
+    {
+      "file": "src/components/shop/order-form.tsx",
+      "scope": "Public product/bespoke customization; sole order-save form; no direct unsaved handoff"
+    },
+    {
+      "file": "src/components/studio-form-builder.tsx",
+      "scope": "Historical component preserved; not an active public-form entry"
+    },
+    {
+      "file": "src/components/studio-login.tsx",
+      "scope": "Staff sign-in; no customer account or WhatsApp"
+    },
+    {
+      "file": "src/components/studio-media-picker.tsx",
+      "scope": "Historical component preserved; not an active public-form entry"
+    },
+    {
+      "file": "src/components/studio-orders-board.tsx",
+      "scope": "Shared authenticated Kanban; legacy form export is not a public entry"
+    },
+    {
+      "file": "src/components/studio-product-editor.tsx",
+      "scope": "Historical component preserved; not an active public-form entry"
+    },
+    {
+      "file": "src/components/studio/business-settings.tsx",
+      "scope": "Authenticated Studio editing/operations; existing saved-order actions only"
+    },
+    {
+      "file": "src/components/studio/catalogue-editor.tsx",
+      "scope": "Authenticated Studio editing/operations; existing saved-order actions only"
+    },
+    {
+      "file": "src/components/studio/content-editor.tsx",
+      "scope": "Authenticated Studio editing/operations; existing saved-order actions only"
+    },
+    {
+      "file": "src/components/studio/inquiry-board.tsx",
+      "scope": "Authenticated Studio editing/operations; existing saved-order actions only"
+    },
+    {
+      "file": "src/components/studio/inquiry-detail.tsx",
+      "scope": "Authenticated Studio editing/operations; existing saved-order actions only"
+    },
+    {
+      "file": "src/components/studio/media-library.tsx",
+      "scope": "Authenticated Studio editing/operations; existing saved-order actions only"
+    },
+    {
+      "file": "src/components/studio/staff-editor.tsx",
+      "scope": "Authenticated Studio editing/operations; existing saved-order actions only"
+    },
+    {
+      "file": "src/components/studio/workspace.tsx",
+      "scope": "Authenticated Studio editing/operations; existing saved-order actions only"
+    }
+  ],
+  "states": {
+    "loading": "Shared ReadingLoading for editorial, journal, portfolio and policies",
+    "missing": "Existing 404 presentation; unpublished record never falls back to a source candidate",
+    "error": "Existing retry boundary distinguishes an unavailable fetch from a missing document; no synthetic successful response",
+    "empty": "Published-only journal and portfolio show factual empty copy and relevant links",
+    "expired": "Existing guest-bound receipt is available up to 24 hours; recovery never starts a replacement inquiry"
+  },
+  "publication": "Original reviewed-publication.json preserved as historical input. Use current Studio source proposals deliberately, compare saved drafts and publish only after factual/runtime/commercial gates. No import script was run.",
+  "verification": "Source, identity, section preservation and image-byte review only. Rendered crop, route/redirect/metadata behavior and all browser/API/accessibility verification remain P11."
+}
