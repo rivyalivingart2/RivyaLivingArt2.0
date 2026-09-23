@@ -1,3 +1,15 @@
+# Active approved plan — Phase 1 complete
+
+The owner approved the corrected WhatsApp-only order workflow and requested Phase 1 completion and GitHub publication. Read docs/decisions/2026-09-23-revised-phase-1-approved.md first, then docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md (revision 3.1), docs/redesign/Current-State-Reconciliation.md and docs/redesign/IMPLEMENTATION_PROGRESS.md.
+
+This is the single active implementation plan. Phase 1 is complete; next is P2.1 on codex/whatsapp-order-experience. Do not request the same plan approval again or restart preserved work. New phase numbering is 0–12; readiness checks are Phase 10, formal integrated QA Phase 11 and release Phase 12.
+
+WhatsApp is only the prepared saved-order message handoff, with customer manual Send and saved-order reopen/copy controls. Database and Studio are primary records. No generic WhatsApp features, payments, carts or customer accounts. Vercel-only/free-only and the deployment hold remain; no Netlify. Main/production stay unchanged until final release gates pass.
+
+The records below are historical where superseded by the approved plan and this instruction.
+
+---
+
 # Active owner instruction — approved full redesign
 
 Latest override: read docs/decisions/2026-09-23-vercel-only-hold.md. Publish saved source to the existing GitHub work branch; Vercel only, no Netlify. Commercial deployment remains on hold under free-only constraints. Do not bypass vercel.json's automatic-deployment hold or activate business workflows on Hobby without resolved eligibility.
