@@ -1,11 +1,11 @@
 # RivyaLivingArt — Commercial Implementation Plan
 
-**Revision:** 3.3 — Phase 3 shared design system complete; approved scope retained
+**Revision:** 3.4 — Phase 4 product discovery source complete; approved scope retained
 **Prepared:** 23 September 2026  
-**Status:** Phase 3 complete — shared design-system source; next task P4.1
+**Status:** Phase 4 complete — product discovery/presentation source; next task P5.1
 **Scope:** Every public page, product/customization instance, private Studio screen and shared state.  
 **Hosting direction:** Vercel only; free services only; commercial deployment eligibility unresolved. No Netlify.  
-**Execution boundary:** The owner authorized Phase 3 and GitHub publication. Shared tokens, readable responsive navigation, dialogs, public/Studio controls, static/reduced-motion behavior and shared copy are implemented. No migration, seed, data deletion or deployment was performed. Formal QA is Phase 11; integration and release gates remain.
+**Execution boundary:** The owner authorized Phase 4 and GitHub publication. All 120 products are reconciled; URL discovery, published-media projection, gallery/care/related presentation, canonical customization routing and per-record dispositions are implemented. No database publication, migration, seed or deployment. Formal QA remains Phase 11 and release gates remain.
 
 **Canonical plan after publication:** `docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md` in the existing repository. The outputs file is a synchronized delivery copy of the same revision, not a competing plan. Read `docs/decisions/2026-09-23-revised-phase-1-approved.md` for the approval record. No repeat plan approval is needed.
 
@@ -384,7 +384,7 @@ Formal integrated verification stays after backend integration. “Testing” be
 
 **Tasks:** P4.1 reconcile all 120 IDs/slugs against actual publishable records; P4.2 refine furniture-led home and three distinct collection journeys; P4.3 complete URL search/filter/sort/result/back behavior; P4.4 refine every product's gallery/specification/care/related pieces and image states; P4.5 route each Customize action to the exact product/schema; P4.6 classify content/media rather than silently publish fixtures.
 
-**Dependencies:** Phase 3; approved factual content/media and publication controls. **Files/systems:** catalogue models/queries, shop site/browser, product routes, instance/media registers. **Database impact:** versioned draft content; deliberate reviewed publication later, no seed during build. **UI impact:** P01–P06 and shared gallery. **Security:** published-only reads; no guessed object URLs or draft leakage. **Testing:** prepare every-instance review, filters/back navigation and unavailable-product cases. **Deliverables:** product-level completion matrix with content/schema/image evidence. **Exit criteria:** every retained published product has correct information and customization entry; held records have reasons and safe disposition. **Resume point:** P5.1.
+**Dependencies:** Phase 3; approved factual content/media and publication controls. **Files/systems:** catalogue models/queries, shop site/browser, product routes, instance/media registers. **Database impact:** versioned draft content; deliberate reviewed publication later, no seed during build. **UI impact:** P01–P06 and shared gallery. **Security:** published-only reads; no guessed object URLs or draft leakage. **Testing:** prepare every-instance review, filters/back navigation and unavailable-product cases. **Deliverables:** product-level completion matrix with content/schema/image evidence. **Exit criteria:** every retained published product has correct information and customization entry; held records have reasons and safe disposition. **Resume point:** P5.1. **Status:** P4.1–P4.6 complete at the source gate; see PHASE-4-CATALOGUE.md and phase-4-products.json. Current runtime publication is not inferred; final visual/behavioral proof remains Phase 11.
 
 ### Phase 5 — Product-specific and bespoke customization
 
@@ -607,7 +607,8 @@ Already resolved: pasted workflow is the WhatsApp authority; business number/pho
 | 1 | Complete — approved | Master, reconciliation, progress, approval record and repository guidance finalized for work-branch publication |
 | 2 | Complete — foundation and architecture | P2.1–P2.7; see PHASE-2-DATA-ARCHITECTURE.md, PHASE-2-MIGRATION-RUNBOOK.md and phase-2-environments.json. No migration applied. |
 | 3 | Complete — shared design-system source | P3.1–P3.6; tokens, responsive header, dialogs, controls, Studio density, motion/static rules and shared WhatsApp copy; see PHASE-3-DESIGN-SYSTEM.md |
-| 4–9 | Planned; prior source preserved | Next P4.1; catalogue and product-specific implementation, then remaining approved phases |
+| 4 | Complete — catalogue/discovery source | P4.1–P4.6; all 120 product records reconciled; PHASE-4-CATALOGUE.md and phase-4-products.json |
+| 5–9 | Planned; prior source preserved | Next P5.1; explicit field families/capabilities including DP110/DP119, then remaining implementation |
 | 10 | Planned | Full integrated commercial-readiness report and remediation |
 | 11 | Planned | Formal final QA on exact candidate |
 | 12 | Planned; eligibility unresolved | Main and eligible production release only after gates |
@@ -642,9 +643,15 @@ Approval is recorded. It does not waive hosting eligibility, final QA, privacy o
 
 **Phase 3 publication receipt:** implementation commit 34989309c785ad72cb3f33af6db699f6951da9e1 pushed to codex/phase-3-design-system and verified against GitHub remote refs on 23 September 2026. Main remained 85b476df358d9fb07c9a8ec07cc478da581138f4. See phase-3-github-publication.json; this documentation-only receipt follows the implementation commit. No production deployment or database change.
 
+### L7. Phase 4 completion — 23 September 2026
+
+**Phase:** 4 — Product discovery and all-product presentation. **Status:** P4.1–P4.6 source complete; record activation/final QA pending. **Objective:** understandable responsive catalogue with truthful published-only presentation. **Completed Tasks:** 120 ID/slug/copy/schema/media inventories (84 furniture, 24 memory, 12 personal); published furniture-led home and distinct journeys with empty recovery; URL collection/category/material search, sorts, page-size/show-more/history; robust gallery and tier-specific care/category-first related pieces; exact canonical/legacy customization routing; explicit source-ready/held classifications. **Files Changed:** shop-discovery, shop-catalogue, catalogue browser/gallery, public image, shop site/styles, customization route; source inventory script/120-row matrix, instance/media/coverage registers, report/master/progress/decision/checkpoint. **Database Changes:** none; no fresh live visibility claim or publication. **Design Changes:** existing visual system/assets retained, compact filter controls and clear result/image/empty states. **Content Changes:** home/product handoff wording narrowed to saved order details and manual Send; reviewed product/candidate copy and drafts preserved. **Tests:** Node 22.23.2 TypeScript compiler wiring, source identity/copy/media hash reconciliation and CSS/source checks only; no lint/build/suites/browser/database/application QA. **Issues:** DP110 earrings and DP119 ring dish have broad ring-matching size fields assigned to P5.1; source-ready does not mean published or TESTED. **Decisions:** same-product published media required; no fixture image/data fallback or guessed URLs; preserve all existing identifiers. **Commercial Risks:** eligibility, credentials/grants, backup/privacy and deployment hold unchanged. **Owner Input Required:** none for Phase 4; no repeat plan approval. **Next Phase:** 5. **Resume Point:** P5.1 reconcile field families and actual capabilities. Branch codex/phase-4-catalogue starts at owner merge 47323c51a9c225cac0ee719203612bc579d5ede0 (PR #17); Git identifies the phase snapshot.
+
+**Phase 4 publication receipt:** implementation a75d95bb662093564a6ff84b04583238a81b394d pushed to codex/phase-4-catalogue and independently matched against GitHub remote refs on 23 September 2026. Main remained 47323c51a9c225cac0ee719203612bc579d5ede0. See phase-4-github-publication.json; this documentation receipt follows the implementation commit. No database or production deployment changes.
+
 ## M. Final recommendation
 
-Continue the approved saved-order-only scope from the Phase 3 checkpoint at P4.1. Preserve working database/Studio foundations; correct actual message sequencing, metadata, bespoke flow, copy and staff controls; prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
+Continue the approved saved-order-only scope from the Phase 4 checkpoint at P5.1. Preserve working database/Studio foundations; correct actual message sequencing, metadata, bespoke flow, copy and staff controls; prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
 
 The statement below applies to **this revised implementation**. Substantial earlier source work exists and is preserved; it has not been reset or falsely described as nonexistent.
 
@@ -654,5 +661,7 @@ PHASE 2 STATUS: COMPLETE — FOUNDATION AND ARCHITECTURE; NO MIGRATION APPLIED.
 
 PHASE 3 STATUS: COMPLETE — SHARED DESIGN-SYSTEM SOURCE; FINAL QA PENDING.
 
+PHASE 4 STATUS: COMPLETE — PRODUCT DISCOVERY SOURCE; ACTIVATION AND FINAL QA PENDING.
+
 NEXT ACTION:
-Begin Phase 4 from task P4.1.
+Begin Phase 5 from task P5.1.

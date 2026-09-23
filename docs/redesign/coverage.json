@@ -7,7 +7,7 @@
       "design": "New cinematic composition, collection hierarchy, selected pieces, material chapter, process, journal and invitation",
       "acceptance": "Visitors can identify the business and enter a collection without waiting for animation",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 4 discovery source complete; product-form work and Phase 11 verification pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P01",
@@ -15,10 +15,11 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/shop-site.tsx",
-      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
+      "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source"
     },
     {
       "id": "P02",
@@ -26,7 +27,7 @@
       "design": "New spatial hero, concise collection narrative, furniture-type filters and gallery grid",
       "acceptance": "Furniture leads; only meaningful supported filters appear",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 4 discovery source complete; product-form work and Phase 11 verification pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P02",
@@ -34,10 +35,11 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/shop-site.tsx",
-      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
+      "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source"
     },
     {
       "id": "P03",
@@ -45,7 +47,7 @@
       "design": "Distinct preservation story, formats, suitability guidance and empathetic product presentation",
       "acceptance": "No unsupported preservation promise; route leads to the selected piece's form",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 4 discovery source complete; product-form work and Phase 11 verification pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P03",
@@ -53,10 +55,11 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/shop-site.tsx",
-      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
+      "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source"
     },
     {
       "id": "P04",
@@ -64,7 +67,7 @@
       "design": "Distinct gifting composition, occasion/type browsing and personalized-object cards",
       "acceptance": "Small gifts receive relevant information rather than furniture questions",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 4 discovery source complete; product-form work and Phase 11 verification pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P04",
@@ -72,10 +75,11 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/shop-site.tsx",
-      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
+      "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source"
     },
     {
       "id": "P05",
@@ -83,7 +87,7 @@
       "design": "New search bar, counts, filter controls, clear results and empty state",
       "acceptance": "Search/filters survive returning from a product; zero-results recovery works",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 4 discovery source complete; product-form work and Phase 11 verification pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P05",
@@ -91,10 +95,11 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/catalogue-browser.tsx",
-      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
+      "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source"
     },
     {
       "id": "P06",
@@ -102,7 +107,7 @@
       "design": "New gallery/information layout, unique story, options, care, scale/context and related pieces",
       "acceptance": "All 120 source identities reconciled; every published instance has reviewed facts/assets",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 4 discovery source complete; product-form work and Phase 11 verification pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P06",
@@ -110,10 +115,11 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/shop-site.tsx",
-      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
+      "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source"
     },
     {
       "id": "P07",
@@ -121,7 +127,7 @@
       "design": "New responsive three-group form with selected product, relevant fields, references and review",
       "acceptance": "Every published product renders its own approved version; no repeated selection",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 4 discovery source complete; product-form work and Phase 11 verification pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P07",
@@ -129,10 +135,11 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/order-form.tsx; src/lib/product-form.ts; product-review.json",
-      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
+      "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source"
     },
     {
       "id": "P08",
@@ -577,7 +584,7 @@
       "design": "Full redesign of every shared navigation and overlay surface",
       "acceptance": "Focus, close/back behavior, contrast, touch targets and mobile use are verified",
       "owner": "Codex",
-      "status": "Phase 3 shared source complete; runtime integration and Phase 11 verification pending",
+      "status": "Phase 4 discovery source complete; product-form work and Phase 11 verification pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P31",
@@ -585,10 +592,11 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Shared focus/static/reduced-motion source updated; prepared P11 scenarios in PHASE-3-DESIGN-SYSTEM.md",
-      "verificationEvidence": "Node 22 TypeScript compiler wiring, CSS parse and source-token contrast only; no formal browser/runtime QA",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/header.tsx; src/components/shop/shop-frame.tsx; src/components/shop/dialog.tsx",
-      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
+      "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source"
     },
     {
       "id": "S01",
@@ -934,5 +942,5 @@
     }
   ],
   "updated": "2026-09-23",
-  "activePlanRevision": "3.3"
+  "activePlanRevision": "3.4"
 }

@@ -155,3 +155,16 @@
 @media(max-width:780px){.header{height:var(--header-height)}.dialogHead h2{font-size:28px}.mobileMenu .dialogHead h2{font-size:18px}}
 @media(max-width:390px){.mobilePageLinks{grid-template-columns:1fr}.dialogHead{gap:12px}}
 @media(prefers-reduced-motion:reduce){.card:hover .cardImage img,.card:focus-within .cardImage img{transform:none}.dialog *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Phase 4 discovery: explicit URL filter commits and readable results. */
+.resultsCount{margin:0 0 28px;font-size:16px;overflow-wrap:anywhere}
+.toolbar{align-items:end;gap:16px}
+.toolbar label{min-width:min(160px,100%)}
+.toolbar>.button{flex-shrink:0}
+.toolbar>.textLink{min-height:44px;display:inline-flex;align-items:center}
+.hero{background:var(--forest)}
+.journey{background:var(--forest)}
+.detailVisual>.imageUnavailable,.editorialImage>.imageUnavailable,.collectionFeatureImage>.imageUnavailable{position:absolute;inset:0}
+@media(max-width:540px){.toolbar label{flex-basis:100%;min-width:0}.toolbar>.button{width:100%}.resultsCount{font-size:15px}}
+
+.staticGallery{padding-left:20px;margin-block:20px}.staticGallery a{display:inline-flex;min-height:44px;align-items:center;text-decoration:underline}
