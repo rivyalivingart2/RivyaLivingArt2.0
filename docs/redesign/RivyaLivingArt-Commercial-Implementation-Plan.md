@@ -1,11 +1,11 @@
 # RivyaLivingArt — Commercial Implementation Plan
 
-**Revision:** 3.6 — Phase 6 order source and Preview schema complete; approved scope retained
+**Revision:** 3.7 — shared data configuration saved; production release paused by owner
 **Prepared:** 23 September 2026  
-**Status:** Phase 6 source and Preview schema complete — intake off; next task P7.1
+**Status:** Phase 6 complete; shared configuration saved for future deployments; intake off; next P7.1
 **Scope:** Every public page, product/customization instance, private Studio screen and shared state.  
 **Hosting direction:** Vercel only; free services only; commercial deployment eligibility unresolved. No Netlify.  
-**Execution boundary:** The owner authorized the next phase and GitHub publication, then delegated Preview credential retrieval and encrypted backup choices. P6.1–P6.8 source is complete; the approved additive schema is applied in isolated Preview with existing data preserved. Intake/message retry remain off. No catalogue publication, deployment or production change. Formal QA remains Phase 11; release remains Phase 12.
+**Execution boundary:** Main includes Phase 6 through PR #20 at 8fd2cf02174ccb81c67586389d5bc958fa442b29. The owner approved one shared live database and private reference store, then explicitly paused production under free-only constraints. Existing Production environment values were updated in place for future deployments; no deployment, data write, schema migration or content publication occurred. Both databases were independently encrypted/backed up and retained. Intake/message retry remain off. Shared application Preview is no longer isolated: use separate disposable resources for synthetic QA and restore rehearsals. Phase 11 QA and Phase 12 release gates remain. See L10 and SHARED-DATA-CONFIGURATION.md.
 
 **Canonical plan after publication:** `docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md` in the existing repository. The outputs file is a synchronized delivery copy of the same revision, not a competing plan. Read `docs/decisions/2026-09-23-revised-phase-1-approved.md` for the approval record. No repeat plan approval is needed.
 
@@ -665,9 +665,13 @@ Approval is recorded. It does not waive hosting eligibility, final QA, privacy o
 
 **Phase 6 publication receipt:** implementation 37a47195fb19209aa520f2da27051f49e1c0ece9 pushed to codex/phase-6-order-handoff and independently matched against GitHub remote refs on 23 September 2026. Main remained c7c5cb9161b961fe0e0c46c40d6b467d6a0252e7 (Phase 5 PR #19). See phase-6-github-publication.json; this documentation receipt follows the implementation commit. No production deployment or new data publication.
 
+### L10. Shared data configuration and production hold — 23 September 2026
+
+**Scope:** owner-directed environment change after Phase 6; no Phase 7 completion claim. **Decisions:** one shared live database; shared private reference storage explicitly approved; keep free-only and pause production. **Completed:** inspected both databases, encrypted independent archives/metadata/rollback connection snapshots, verified archive readability and unchanged record fingerprints; updated 16 existing Production database variables in place to the modern former-Preview target; extended three private Blob variable scopes to Preview and Production; saved RIVYA_DATA_MODE=shared for both. **Preservation:** no database/connection/variable deletion, schema/data mutation, public file exposure, credential publication or new deployment. Old resource associations remain, so future integration synchronization requires destination verification. **Source:** isolated-only guards for import/bootstrap paths and shared-data exclusion for fixture presentation routes. **Evidence:** sanitized shared-data-configuration.json; server update acknowledgements and independent IDs/scopes readback, not decrypted sensitive-value comparison or runtime equality proof. Both database inventories are empty of orders/catalogue/content; shared target retains its pre-existing budget/session rows. **Validation:** Node script syntax and TypeScript wiring only; full restore and application QA remain deferred. **Release:** existing production dpl_7HRC8CVEJ98ih86yRxoppxVgMgR2 / f9533bbbaf3cc2843025f1a1243442b0a9d920e8 is unchanged; configuration applies only to future deployments. No paid upgrade or alternative host. **Continuation:** master 3.7, main 8fd2cf02174ccb81c67586389d5bc958fa442b29 plus codex/shared-database-configuration; next P7.1. The new shared-data decision supersedes earlier isolated application Preview wording; Phase 11 needs separate disposable data/storage. No further approval needed for these completed settings. See SHARED-DATA-CONFIGURATION.md for rollback and remaining gates.
+
 ## M. Final recommendation
 
-Continue the approved saved-order-only scope from the Phase 6 checkpoint at P7.1. Preserve the applied Preview schema and saved-message contract; complete Studio detail, operations and publishing, then prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
+Continue the approved saved-order-only scope from the Phase 6 checkpoint at P7.1. Preserve the applied shared-target schema and saved-message contract; complete Studio detail, operations and publishing, then prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
 
 The statement below applies to **this revised implementation**. Substantial earlier source work exists and is preserved; it has not been reset or falsely described as nonexistent.
 

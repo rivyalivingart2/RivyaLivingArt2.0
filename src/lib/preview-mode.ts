@@ -2,6 +2,7 @@
  * This pure policy has no client query-string, cookie or localStorage override.
  */
 export function isVisualPreviewAllowed(env: Readonly<Record<string, string | undefined>>): boolean {
+  if (env.RIVYA_DATA_MODE === "shared") return false;
   if (env.VERCEL_ENV === "production" || env.RIVYA_ENV === "production") return false;
   if (env.NODE_ENV === "development" && !env.VERCEL_ENV) return true;
   return env.RIVYA_VISUAL_PREVIEW === "1" &&
