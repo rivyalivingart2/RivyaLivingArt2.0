@@ -1,3 +1,9 @@
+# Latest owner override — 23 September 2026 production release
+
+The owner confirmed Studio login and explicitly authorized merging the full current update into main and deploying Vercel Production, using free services only. See `docs/decisions/2026-09-23-production-release.md`. This overrides the historical no-main/no-production and public holding-page restrictions below for this release. Keep Studio server authentication, concept/sample disclosures, separate production data, and the deferred formal-QA boundary. The actual CMS remains partially local; deployment is not full backend completion.
+
+---
+
 # RivyaLivingArt repository guidance
 
 Read this file, `PROJECT_STATE.md`, `docs/CODEX_WORKFLOW.md` and the applicable

@@ -23,3 +23,7 @@ The owner can recover access by replacing the Vercel credentials and redeploying
 ## Verification boundary
 
 TypeScript is used for implementation wiring only. Formal auth/security, browser, database-concurrency, session expiry, logout, accessibility and end-to-end order tests remain deferred under the owner's development-first instruction. Deployment READY is build status, not a security or full-QA certification. This implementation is in the Next.js repository; the historical native Sites export has no operational auth/database support and is not republished.
+
+## Production release authorization
+
+The owner confirmed Preview login and requested main plus Production publication on 23 September 2026. See `decisions/2026-09-23-production-release.md`. Production uses the owner-saved admin Secret variables and its own Neon Free database, with the same empty schema. Existing preview sessions/orders are not copied. Public pages use the explicit production website policy; private Studio authentication is unchanged.

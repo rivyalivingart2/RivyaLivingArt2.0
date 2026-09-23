@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { isVisualPreviewAllowed } from "@/lib/preview-mode";
+import { isPublicWebsiteAvailable } from "@/lib/public-website";
 import styles from "./site-footer.module.css";
 
 const groups = [
@@ -26,7 +26,7 @@ const groups = [
 ] as const;
 
 export function SiteFooter() {
-  if (isVisualPreviewAllowed(process.env)) return <footer className={styles.footer}>
+  if (isPublicWebsiteAvailable(process.env)) return <footer className={styles.footer}>
     <div className={styles.grid}>
       <div className={styles.brand}><Link href="/" className={styles.wordmark}>RivyaLivingArt</Link><p>Art for the space.<br />Art for the memory.<br />Art for the person.</p><span>Furniture first. Meaning at every scale.</span></div>
       {groups.map((group) => <nav key={group.title} aria-label={group.title}><h2>{group.title}</h2>{group.links.map((link) => <Link key={link.href} href={link.href}>{link.label}</Link>)}</nav>)}
