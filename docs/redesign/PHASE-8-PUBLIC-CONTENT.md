@@ -198,3 +198,7 @@ Phase 11 must cover:
 Read master 3.9, IMPLEMENTATION_PROGRESS.md, this report and SHARED-DATA-CONFIGURATION.md. Begin P9.1: reconcile actual media gaps, then device crops, motion/reduced motion, breakpoints and loading costs. Preserve all 47 current source proposals and later saved drafts. Carry exact missing policy facts into P10 readiness.
 
 Both order-write flags and automatic deployment remain off. Free-only/Vercel-only commercial eligibility is unresolved; production is not published. Credentials stay ignored. Phase 2/6 schema is already present on the shared target; do not replay migrations or ask for the same settings approvals.
+
+## Git publication
+
+Implementation 210112d1482cb8f5be6f1b961cc11cd781602acc is published on codex/phase-8-public-content and independently matches the remote branch. Main remains 630521de2f228d2fe935585e12e4639e98da8839. See phase-8-github-publication.json; the local completion artifact records the final documentation head. No production deployment or database publication occurred.

@@ -6,7 +6,7 @@ Phase 8 — SOURCE CHECKPOINT COMPLETE under master 3.9. P8.4 factual draft copy
 
 ## Current Task
 
-P8.1–P8.7 source and continuity work complete. Git publication is the final task for this checkpoint. Main baseline: 630521de2f228d2fe935585e12e4639e98da8839, PR #22. Branch: codex/phase-8-public-content. See phase-8-github-publication.json and the local Phase 8 completion artifact after publication.
+P8.1–P8.7 source and continuity work complete and published. Implementation 210112d1482cb8f5be6f1b961cc11cd781602acc independently matches GitHub codex/phase-8-public-content. This documentation follow-up records the receipt. Main baseline: 630521de2f228d2fe935585e12e4639e98da8839, PR #22. Branch: codex/phase-8-public-content. See phase-8-github-publication.json and the local Phase 8 completion artifact after publication.
 
 ## Completed
 
@@ -21,7 +21,7 @@ P8.1–P8.7 source and continuity work complete. Git publication is the final ta
 
 ## In Progress
 
-Git source publication and remote receipt. No application server, migration or database operation is running.
+None. Phase 8 implementation is published and independently verified. No application server, migration, database operation or deployment is running.
 
 ## Pending
 
