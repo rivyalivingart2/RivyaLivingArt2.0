@@ -6,7 +6,7 @@ Phase 7 — COMPLETE at the source implementation gate under master revision 3.8
 
 ## Current Task
 
-P7.1–P7.8 source and continuity records complete. Publish the current codex/phase-7-studio checkpoint and verify GitHub identity; phase-7-github-publication.json and the local completion artifact record publication after the push. Main baseline is d1a50072fb42ed44612e621d64a157c7fef20455 (PR #21).
+P7.1–P7.8 source and continuity records complete and published. Implementation a82c559df04f21b85e753cad13dbed0089415605 independently matches GitHub codex/phase-7-studio. See phase-7-github-publication.json; this documentation follow-up records publication, and the local completion artifact records the final head. Main baseline is d1a50072fb42ed44612e621d64a157c7fef20455 (PR #21).
 
 ## Completed
 
@@ -21,7 +21,7 @@ P7.1–P7.8 source and continuity records complete. Publish the current codex/ph
 
 ## In Progress
 
-GitHub publication checkpoint only; no active migration, application server, real data operation or deployment.
+None. Phase 7 source checkpoint is published; no active migration, application server, real data operation or deployment.
 
 ## Pending
 
