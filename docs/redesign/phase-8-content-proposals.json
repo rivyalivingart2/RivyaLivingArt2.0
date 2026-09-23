@@ -1,0 +1,2226 @@
+{
+  "version": 1,
+  "planRevision": "3.9",
+  "scope": "Reviewed source proposals, not a database snapshot or instruction to overwrite drafts",
+  "publication": "Held for deliberate Studio review and release prerequisites",
+  "content": [
+    {
+      "id": "page:process",
+      "kind": "page",
+      "route": "/process",
+      "title": "A piece, shaped together.",
+      "eyebrow": "The process",
+      "description": "Find a starting point, prepare your brief and send the saved order details. The final design is agreed with you.",
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel dining table in a room, a design visualization",
+      "sections": [
+        {
+          "id": "section-1",
+          "heading": "01 / Discover",
+          "paragraphs": [
+            "Explore the collection and choose a starting point. Look at the shape, the material direction and how it could belong in your space or story."
+          ]
+        },
+        {
+          "id": "section-2",
+          "heading": "02 / Personalize",
+          "paragraphs": [
+            "Complete the piece’s form with your preferred dimensions, colours, personalization and reference images. Share your name and phone number so the studio can respond."
+          ]
+        },
+        {
+          "id": "section-3",
+          "heading": "03 / Place your inquiry",
+          "paragraphs": [
+            "Place Order saves your requirements and private references in our Studio. The saved receipt prepares your order message and tries to open WhatsApp. If it cannot open, use the receipt to reopen it or copy the summary. You press Send yourself."
+          ]
+        },
+        {
+          "id": "section-4",
+          "heading": "04 / Agree the details",
+          "paragraphs": [
+            "Discuss feasibility, the final design, quotation, payment and delivery directly on WhatsApp. Submitting a website inquiry does not confirm an order or collect payment."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page:our-story",
+      "kind": "page",
+      "route": "/our-story",
+      "title": "Art for the way you live.",
+      "eyebrow": "RivyaLivingArt",
+      "description": "Furniture, resin art and personal expression. Discover how your space, references and story give a piece its direction.",
+      "image": "/media/product-hero-026-4x5.webp",
+      "imageAlt": "Timber grain and resin in a sculptural design visualization",
+      "sections": [
+        {
+          "id": "section-1",
+          "heading": "Objects with a point of view",
+          "paragraphs": [
+            "RivyaLivingArt brings furniture, resin art and personal expression into one conversation. A dining table can anchor a room. A preserved flower can hold a memory. A small object can say something that a conventional gift cannot."
+          ]
+        },
+        {
+          "id": "section-2",
+          "heading": "A starting point, not a fixed answer",
+          "paragraphs": [
+            "The collection helps you articulate what you like. Each piece opens a conversation about proportion, colour and purpose. We develop the final details with you."
+          ]
+        },
+        {
+          "id": "section-3",
+          "heading": "The personal part matters",
+          "paragraphs": [
+            "Your references, the space around a piece and the story behind it give the design its direction. Every order is finalized in a direct WhatsApp conversation with the studio."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page:privacy",
+      "kind": "page",
+      "route": "/privacy",
+      "title": "Your brief stays personal.",
+      "eyebrow": "Privacy",
+      "description": "How your brief, private references and receipt are handled, and how to contact the atelier about your information.",
+      "sections": [
+        {
+          "id": "section-1",
+          "heading": "What the form collects",
+          "paragraphs": [
+            "We collect your name, phone number, optional email, customization choices, notes and any reference images you upload. We use them to respond to your inquiry and manage the work you discuss with us."
+          ]
+        },
+        {
+          "id": "section-2",
+          "heading": "Where your details go",
+          "paragraphs": [
+            "Inquiry records are stored in our database. Reference images are held in private file storage. Administrators and staff assigned to the inquiry can access them after signing in. They are not published in the catalogue. Our current infrastructure uses Vercel and Neon."
+          ]
+        },
+        {
+          "id": "section-3",
+          "heading": "The WhatsApp handoff",
+          "paragraphs": [
+            "After saving your inquiry, the website prepares a message containing your contact details and brief. WhatsApp receives that text when you open the link. You choose whether to send the message. Private image links are not included. WhatsApp applies its own privacy terms."
+          ]
+        },
+        {
+          "id": "section-4",
+          "heading": "Cookies and control",
+          "paragraphs": [
+            "An essential cookie links your form, uploads and private receipt for up to 24 hours. Clearing it or changing browsers can remove receipt access; it does not delete a saved inquiry. No customer account is created. Contact details and reference images are not kept in browser local storage. Unsaved form details remain in the current browser tab and may be lost if it is closed."
+          ]
+        },
+        {
+          "id": "section-5",
+          "heading": "Unsubmitted and saved references",
+          "paragraphs": [
+            "Images uploaded without a submitted inquiry become eligible for administrator cleanup after 24 hours; removal is not automatic at that deadline. Saved inquiries and their reference images do not currently have an automatic deletion deadline."
+          ]
+        },
+        {
+          "id": "section-6",
+          "heading": "Requests about your information",
+          "paragraphs": [
+            "Email rivyalivingart2.0@gmail.com with your inquiry reference to request access, a correction or deletion. The atelier will review the request and may need to verify that it comes from the person concerned. Receipt expiry does not remove database records, private references or backup copies."
+          ]
+        },
+        {
+          "id": "section-7",
+          "heading": "Service protection",
+          "paragraphs": [
+            "The service uses a protected identifier derived from the network address to limit repeated requests. Hosting and storage providers also process information needed to operate their services. Opening a map, email application or WhatsApp takes you to a separate service."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page:terms",
+      "kind": "page",
+      "route": "/terms",
+      "title": "Clear from the beginning.",
+      "eyebrow": "Ordering terms",
+      "description": "What submitting an inquiry means and which details need agreement before a custom order is confirmed.",
+      "sections": [
+        {
+          "id": "section-1",
+          "heading": "An inquiry starts the conversation",
+          "paragraphs": [
+            "Place Order submits your requirements to the studio. It does not accept a quotation, confirm production or take payment. Final terms are agreed directly with you on WhatsApp."
+          ]
+        },
+        {
+          "id": "section-2",
+          "heading": "Images and specifications",
+          "paragraphs": [
+            "Collection images are design visualizations. Material selection, dimensions, colour, availability and feasibility must be confirmed for your individual piece. Prices are provided by quotation."
+          ]
+        },
+        {
+          "id": "section-3",
+          "heading": "Your references",
+          "paragraphs": [
+            "Only upload images you are entitled to share. Please avoid unnecessary sensitive information in notes and references."
+          ]
+        },
+        {
+          "id": "section-4",
+          "heading": "Changes, cancellations and delivery",
+          "paragraphs": [
+            "Ask the studio to record the change, cancellation and delivery terms in your individual quotation before agreeing to the order. An inquiry is not acceptance of those terms."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page:shipping-delivery",
+      "kind": "page",
+      "route": "/shipping-delivery",
+      "title": "A considered arrival.",
+      "eyebrow": "Delivery",
+      "description": "Discuss the destination, access, timing and transport arrangements for your individual piece.",
+      "sections": [
+        {
+          "id": "section-1",
+          "heading": "Discuss the destination",
+          "paragraphs": [
+            "Share your delivery city, preferred timing and relevant access details in your inquiry. For larger furniture, lifts, stairs and doorways may affect the plan."
+          ]
+        },
+        {
+          "id": "section-2",
+          "heading": "Agree before confirming",
+          "paragraphs": [
+            "Availability, packing, transport, installation needs and charges are discussed with the studio as part of your quotation. We do not promise a standard delivery date for a custom piece."
+          ]
+        },
+        {
+          "id": "section-3",
+          "heading": "Before sending a keepsake",
+          "paragraphs": [
+            "Keep sentimental originals with you until the atelier confirms suitability and provides current transfer instructions. Confirm the recipient, destination and agreed transport arrangements for your particular item."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page:returns-cancellations",
+      "kind": "page",
+      "route": "/returns-cancellations",
+      "title": "Talk to us about a change.",
+      "eyebrow": "Changes & cancellations",
+      "description": "How to raise a change, cancellation or concern and keep it connected to your agreed specification.",
+      "sections": [
+        {
+          "id": "section-1",
+          "heading": "Before your order is confirmed",
+          "paragraphs": [
+            "Use the WhatsApp conversation to resolve design details and ask about the applicable cancellation terms before accepting a quotation."
+          ]
+        },
+        {
+          "id": "section-2",
+          "heading": "After confirmation",
+          "paragraphs": [
+            "Contact the studio promptly with your inquiry reference. What can be changed depends on the agreed specification and the current stage of work."
+          ]
+        },
+        {
+          "id": "section-3",
+          "heading": "If something arrives with a concern",
+          "paragraphs": [
+            "Contact the atelier with the inquiry reference and a clear description of the issue. Keep the relevant photographs and agreed specification available for review. Do not attempt a repair before discussing the piece with the atelier."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page:accessibility",
+      "kind": "page",
+      "route": "/accessibility",
+      "title": "A website for more people.",
+      "eyebrow": "Accessibility",
+      "description": "Our approach to access, the current evaluation status and a way to report a difficulty.",
+      "sections": [
+        {
+          "id": "section-1",
+          "heading": "Our approach",
+          "paragraphs": [
+            "We aim to make the collection and order forms usable with a keyboard, readable at larger text sizes and considerate of reduced-motion preferences. The redesign includes labelled fields, visible focus indicators and written error guidance."
+          ]
+        },
+        {
+          "id": "section-2",
+          "heading": "If something gets in the way",
+          "paragraphs": [
+            "Call +91 83204 04132 or email rivyalivingart2.0@gmail.com. Tell us the page and the difficulty you encountered so we can help with your inquiry."
+          ]
+        },
+        {
+          "id": "section-3",
+          "heading": "Evaluation status",
+          "paragraphs": [
+            "A complete accessibility evaluation of this redesign has not yet been completed. We do not currently claim conformance with a particular accessibility standard."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page:architects",
+      "kind": "page",
+      "route": "/architects",
+      "title": "A material partner for your vision.",
+      "eyebrow": "For architects & interior designers",
+      "description": "Prepare a clear project brief with dimensions, intended use and material references, then develop the specification with the atelier.",
+      "image": "/media/product-scene-005-16x9.webp",
+      "imageAlt": "Estuary dining table in a room, a design visualization",
+      "sections": [
+        {
+          "id": "section-1",
+          "heading": "Begin with the space",
+          "paragraphs": [
+            "Share the piece, intended use, approximate dimensions and references. Include the delivery city and access constraints to help frame the design discussion."
+          ]
+        },
+        {
+          "id": "section-2",
+          "heading": "Develop the specification together",
+          "paragraphs": [
+            "Choose a design from the collection and use its customization form. Add project requirements in the notes; we will discuss feasibility and the quotation with you on WhatsApp."
+          ]
+        },
+        {
+          "id": "section-3",
+          "heading": "Make the brief useful",
+          "paragraphs": [
+            "Distinguish measured site dimensions from proposed product dimensions. Label references with what matters: a silhouette, a material relationship or an intended use. Do not include confidential client details that the design discussion does not need."
+          ]
+        },
+        {
+          "id": "section-4",
+          "heading": "Keep responsibilities clear",
+          "paragraphs": [
+            "Ask the atelier to clarify the proposed scope, required drawings, material references and installation responsibilities. A catalogue visualization does not resolve construction, performance or site conditions."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page:contact",
+      "kind": "page",
+      "route": "/contact",
+      "title": "Let’s begin a conversation.",
+      "eyebrow": "Contact the atelier",
+      "description": "Call or email the atelier for general questions. For a new product or custom piece, start with a saved order brief.",
+      "sections": [
+        {
+          "id": "section-1",
+          "heading": "For a new piece",
+          "paragraphs": [
+            "Choose a design and complete its customization form. That gives the studio a saved brief and prepares the WhatsApp conversation."
+          ]
+        },
+        {
+          "id": "section-2",
+          "heading": "For an existing inquiry",
+          "paragraphs": [
+            "Call or email the atelier and include your RLA inquiry reference so we can find the saved details. Do not submit another order form solely to recover an existing inquiry."
+          ]
+        },
+        {
+          "id": "section-3",
+          "heading": "For general questions",
+          "paragraphs": [
+            "Use the phone or email details below for questions about the atelier, accessibility or the website. General contact does not open a WhatsApp order message."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page:materials-care",
+      "kind": "page",
+      "route": "/materials-care",
+      "title": "Texture, depth and everyday life.",
+      "eyebrow": "Materials & care",
+      "description": "Explore timber, resin, colour and care questions for your individual piece.",
+      "image": "/media/product-hero-026-4x5.webp",
+      "imageAlt": "Timber and resin design visualization",
+      "sections": [
+        {
+          "id": "materials",
+          "heading": "Timber and resin",
+          "paragraphs": [
+            "Natural grain gives an object movement and variation. Resin introduces a contrasting depth and a way to work with colour and transparency. The balance between them begins with your brief."
+          ]
+        },
+        {
+          "id": "section-1",
+          "heading": "Colour in context",
+          "paragraphs": [
+            "Consider the surrounding finishes and the light in your room. Share photographs and references so we can discuss the colour direction together. Screen images are useful references, but they cannot guarantee the appearance of a finished material."
+          ]
+        },
+        {
+          "id": "section-2",
+          "heading": "A finish for your setting",
+          "paragraphs": [
+            "Tell us how the piece will be used. The studio will discuss a suitable surface direction and any care considerations as part of the final specification."
+          ]
+        },
+        {
+          "id": "care",
+          "heading": "Follow the guidance for your piece",
+          "paragraphs": [
+            "Different finishes and preserved materials need different care. Ask the studio for the instructions that apply to your final specification."
+          ]
+        },
+        {
+          "id": "section-4",
+          "heading": "Begin gently",
+          "paragraphs": [
+            "Use a soft cloth and avoid abrasive tools, harsh solvents and direct contact with hot cookware. Confirm any cleaning product with the studio before applying it to a resin surface."
+          ]
+        },
+        {
+          "id": "section-5",
+          "heading": "Mind the setting",
+          "paragraphs": [
+            "Discuss exposure to sunlight, heat and moisture when placing your order. If a piece changes or is accidentally damaged, share photographs with the studio before attempting a repair."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page:faq",
+      "kind": "page",
+      "route": "/faq",
+      "title": "Your questions, considered.",
+      "eyebrow": "Before we begin",
+      "description": "Answers about customization, saving an inquiry, private references and the WhatsApp conversation.",
+      "sections": [
+        {
+          "id": "question-0",
+          "heading": "How do I place an order?",
+          "paragraphs": [
+            "Choose a piece, complete its customization form and select Place Order. We save your inquiry and private references first, then prepare your order message and try to open WhatsApp. You must press Send yourself. The saved receipt also offers Open WhatsApp and Copy controls."
+          ]
+        },
+        {
+          "id": "question-1",
+          "heading": "When is my order confirmed?",
+          "paragraphs": [
+            "Submitting the form creates an inquiry. Your design, quotation, payment arrangements and delivery are confirmed separately with the studio on WhatsApp."
+          ]
+        },
+        {
+          "id": "question-2",
+          "heading": "Can I change the size or colour?",
+          "paragraphs": [
+            "Tell us the proportions and colour direction you have in mind. We will review material availability and feasibility before confirming the final design."
+          ]
+        },
+        {
+          "id": "question-3",
+          "heading": "Can I upload a reference?",
+          "paragraphs": [
+            "Yes. You can attach up to three JPG, PNG or WebP images, each up to 3 MB. They are stored privately for the studio and are not added to the public catalogue."
+          ]
+        },
+        {
+          "id": "question-4",
+          "heading": "Do the images show finished pieces?",
+          "paragraphs": [
+            "The collection uses design visualizations to communicate shape, colour and material direction. They do not promise an exact finished appearance. Final details are agreed individually."
+          ]
+        },
+        {
+          "id": "question-5",
+          "heading": "How long will my piece take?",
+          "paragraphs": [
+            "Timing depends on the design, materials and current studio capacity. Share your preferred date in the brief; we will discuss what is possible before confirming your order."
+          ]
+        },
+        {
+          "id": "question-6",
+          "heading": "Can you preserve any flower or keepsake?",
+          "paragraphs": [
+            "Suitability depends on the material and its condition. Tell us what you would like to preserve and share clear photographs. Please wait for the studio’s guidance before sending an irreplaceable item."
+          ]
+        },
+        {
+          "id": "question-7",
+          "heading": "Can I start without choosing a catalogue piece?",
+          "paragraphs": [
+            "Yes. Begin a piece offers a custom brief for furniture, memory art or a personal gift. Your requirements are saved before the order message is prepared for WhatsApp."
+          ]
+        },
+        {
+          "id": "question-8",
+          "heading": "Does the website send a WhatsApp message for me?",
+          "paragraphs": [
+            "No. It prepares the saved order details and may open WhatsApp after a successful save. You press Send yourself. The website cannot confirm whether you sent the message."
+          ]
+        },
+        {
+          "id": "question-9",
+          "heading": "What if WhatsApp does not open?",
+          "paragraphs": [
+            "Use Open WhatsApp on the saved receipt or copy its complete order summary and paste it into the conversation. A long brief may require copying before opening. Do not create another inquiry just to send the same details."
+          ]
+        },
+        {
+          "id": "question-10",
+          "heading": "Does my receipt expiring delete the inquiry?",
+          "paragraphs": [
+            "No. Private receipt access lasts up to 24 hours in the original browser. The saved inquiry remains with the studio. Keep your RLA reference and contact the atelier if you need help finding it."
+          ]
+        },
+        {
+          "id": "question-11",
+          "heading": "Can I use WhatsApp for a general website question?",
+          "paragraphs": [
+            "The website prepares WhatsApp messages only for saved product or custom-piece requests. Use the contact page to call or email the atelier about general questions."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DB001",
+      "kind": "article",
+      "route": "/journal/a-room-begins-with-a-statement-table",
+      "title": "A Room Begins with a Statement Table",
+      "eyebrow": "Spaces",
+      "description": "Begin with the room around the object: sightlines, everyday movement and the kind of gathering you want a table to hold. A planning notebook for a future commission.",
+      "sections": [
+        {
+          "id": "begin-with-the-room",
+          "heading": "Begin with the room, before the object",
+          "paragraphs": [
+            "A statement table gives a room somewhere to begin looking. That does not mean it must be the largest or brightest thing in view. Its presence might come from an unusually quiet outline, a visible meeting of materials, or the space deliberately left around it. Before choosing a design, stand at the room’s usual entrance and describe what you notice first. Then consider what you would like to notice first.",
+            "Write down the room’s ordinary activities as well as its occasional gatherings. A dining space used for conversation, reading and homework presents a different brief from one opened mainly for guests. These observations are more useful than declaring a style immediately. They give the eventual discussion a purpose that can survive changes of colour, shape or finish."
+          ]
+        },
+        {
+          "id": "draw-the-visible-weight",
+          "heading": "Draw the visible weight",
+          "paragraphs": [
+            "On a simple plan, mark the furniture that is staying. Include cupboards, a large sofa, open shelving and anything else that occupies a strong visual area. A substantial table beside another substantial object may feel concentrated; the same table in an open setting may read as a calm centre. Neither arrangement is inherently wrong. The useful question is whether that concentration matches the atmosphere you are trying to make."
+          ]
+        },
+        {
+          "id": "map-everyday-movement",
+          "heading": "Map everyday movement",
+          "paragraphs": [
+            "Sketch the routes between doorways and the places people actually use. Add the opening direction of doors, drawers and cabinets. A table footprint alone misses the changing outline made by someone pulling out a chair, carrying a tray or moving toward a window. Record the situations you need a designer to consider instead of treating an attractive overhead composition as a complete plan.",
+            "Where appropriate, represent a proposed outline on the floor with a removable marker that will not damage the surface. Observe it during normal use and note awkward moments. This is a conversation aid, not a clearance certification. Ask the project team to confirm the dimensions and any relevant access or accessibility requirements for the particular room and the people who use it."
+          ]
+        },
+        {
+          "id": "make-a-material-conversation",
+          "heading": "Make a material conversation",
+          "paragraphs": [
+            "Bring the table into a conversation with the room’s existing surfaces. Identify the most visible wood tone, the largest fabric area and the metal details you intend to keep. A reference board becomes more useful when each image carries a short explanation: the warmth of this timber, the restraint of that outline, or the relationship between an opaque area and a translucent one."
+          ]
+        },
+        {
+          "id": "leave-space-for-change",
+          "heading": "Leave space for the rest of the room",
+          "paragraphs": [
+            "A focal object does not need every surrounding choice to repeat it. Try describing the room in three layers: the table, the supporting furniture and the quieter background. Repetition can happen through one small relationship, such as a warm tone or a curve, while other elements remain distinct. This keeps the brief specific without turning the whole room into a matching set.",
+            "Consider what is likely to change later. A rug, pendant or chair may be easier to replace than the commissioned object, but your own priorities should lead that decision. Make a list of fixed elements and flexible elements. It helps the conversation stay anchored when a reference image contains an appealing room whose architecture, light or proportions are very different from yours."
+          ]
+        },
+        {
+          "id": "prepare-the-first-conversation",
+          "heading": "Prepare the first conversation",
+          "paragraphs": [
+            "A useful initial brief is a small set of clear observations. Include a measured room sketch with its units, photographs you are entitled to share, and a description of how the space is used. Label proposed dimensions as proposals. If an event or move influences the timing, state that context and ask what can realistically be assessed before committing to a date."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP002",
+        "DP013"
+      ]
+    },
+    {
+      "id": "DB002",
+      "kind": "article",
+      "route": "/journal/reading-the-grain-wood-and-resin-in-a-shared-composition",
+      "title": "Reading the Grain: Wood and Resin in a Shared Composition",
+      "eyebrow": "Materials",
+      "description": "Follow line, contrast and the meeting of surfaces. A visual vocabulary for discussing wood and resin without mistaking a design image for a material specification.",
+      "sections": [
+        {
+          "id": "look-for-direction",
+          "heading": "Look for direction before colour",
+          "paragraphs": [
+            "When looking at a wood-and-resin composition, begin by tracing the lines you can see. Follow the apparent grain, the edge of the timber and the shape of the area between separate elements. Does your eye move along the length, pause at a curve or return toward the middle? Describing that movement gives you a more precise starting point than saying a surface feels natural or modern.",
+            "A timber-and-resin design can serve as a visual prompt for this exercise. Use the image to discuss a visual direction, with the final specification confirmed separately. If you use a design image in a brief, identify the part that interests you. The direction of a line can be relevant even when the image’s colour, room setting or overall proportions are not."
+          ]
+        },
+        {
+          "id": "notice-the-interval",
+          "heading": "Notice the interval between materials",
+          "paragraphs": [
+            "The meeting of wood and resin can be read as an interval: narrow in one place, open in another, regular or deliberately irregular. On a reference image, imagine the timber and the adjoining area as two flat shapes. This removes some of the distraction of shine and room styling. It makes the relationship between the shapes easier to describe in a commission conversation.",
+            "A thin interval might suggest a continuous drawing across the top, while a broader area might become the main visual field. Those are compositional impressions, not manufacturing instructions. The way a real object is constructed, supported and finished needs a separate technical discussion. A reference can communicate a preference without promising that the same effect is feasible at a different size or in another material combination."
+          ]
+        },
+        {
+          "id": "separate-tone-and-transparency",
+          "heading": "Separate tone from transparency",
+          "paragraphs": [
+            "Colour is only one part of the image. Ask whether the quality you like is a warm hue, a dark field, a visible depth, or the contrast between a textured area and a visually quiet one. These qualities can be confused when they appear together in a single photograph. Give each preference its own sentence so a later material discussion can explore them independently.",
+            "Treat apparent transparency with particular care in a visual brief. Backgrounds, lighting, reflections and image processing influence what a screen shows. Say that you are drawn to the impression of depth rather than requesting an exact result from an unverified image. A physical material sample and a clear description of its viewing conditions offer a more grounded basis for decisions than a colour selected from a photograph alone."
+          ]
+        },
+        {
+          "id": "include-the-edge-and-base",
+          "heading": "Include the edge and the base",
+          "paragraphs": [
+            "A surface is rarely experienced only from directly above. Its edge may be the first thing visible when someone enters a room, and the base contributes another set of lines below it. Look for side views in an approved reference set. Describe whether you want the top to feel visually thin, grounded, irregular or clearly separated from its support, without assuming that an image resolves structural questions."
+          ]
+        },
+        {
+          "id": "make-a-useful-reference-board",
+          "heading": "Make a reference board with reasons",
+          "paragraphs": [
+            "Choose a small number of references and annotate them. One might explain the grain direction you enjoy; another might show a restrained relationship between the top and base. Include one image that almost works and explain the difference you would want. This often reveals a preference more clearly than a large collection of attractive images without any written context or order.",
+            "Keep the source and status of each reference visible. A rendering, an approved photograph and a physical material sample provide different kinds of information. Avoid presenting another maker’s object as a design to copy. Describe the general relationship that appeals to you, then leave room for an original response to your room, dimensions and intended use. A useful board opens a conversation rather than pretending to close it."
+          ]
+        },
+        {
+          "id": "turn-observations-into-questions",
+          "heading": "Turn observations into questions",
+          "paragraphs": [
+            "Before a real commission, translate your visual notes into questions the studio can answer. What actual timber and resin options are under consideration? Which references belong to the proposed specification? How will the selected finish be described and approved? What care guidance applies to that particular object? These questions connect an aesthetic preference to information that needs to be confirmed for the work itself."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP013",
+        "DP051"
+      ]
+    },
+    {
+      "id": "DB003",
+      "kind": "article",
+      "route": "/journal/round-oval-or-rectangular-a-dining-table-planning-notebook",
+      "title": "Round, Oval or Rectangular: A Dining-Table Planning Notebook",
+      "eyebrow": "Commissioning",
+      "description": "Three outlines, many possible rooms. Organise the measurements, seating questions and everyday situations that should shape a dining-table conversation.",
+      "sections": [
+        {
+          "id": "start-with-a-measured-sketch",
+          "heading": "Start with a measured sketch",
+          "paragraphs": [
+            "Begin the notebook with a plan of the actual dining area. Show its boundaries, openings and the furniture that will stay. Mark whether the dining space is a separate room or part of a larger living area, because a visual boundary may matter even when there is no wall. Use one consistent unit and distinguish measured dimensions from estimates or proposed changes.",
+            "Then describe the setting in words. Is the table seen along its length from an entrance, approached from several sides, or placed against a backdrop of windows? Do nearby doors need to open during meals? These observations do not choose a shape automatically. They make it possible to compare outlines against the same real context instead of comparing isolated product images with unrelated room styling."
+          ]
+        },
+        {
+          "id": "consider-a-round-outline",
+          "heading": "Consider a round outline",
+          "paragraphs": [
+            "A circle gives a drawing no obvious short end or long side. That can be an appealing starting point for a room approached from several directions, or for a composition organised around a central pendant. Yet the absence of corners does not settle whether a particular table fits. The chairs, base and surrounding routes still have their own dimensions and changing positions.",
+            "Sketch the actual chairs you intend to discuss around the proposed outline. Record the number used routinely and any occasional arrangement you hope to explore. Avoid treating diameter alone as a seating promise. Chair width, arm shape, leg position and the table’s support need to be considered together. A round form is a visual choice to investigate, with its practical details still open for confirmation."
+          ]
+        },
+        {
+          "id": "consider-an-oval-outline",
+          "heading": "Consider an oval outline",
+          "paragraphs": [
+            "An oval introduces a longer direction while changing the way the ends appear in a plan. It may be interesting where a room has a clear length but a softer outline suits the surrounding furniture. Describe which part attracts you: the continuous curve, the relationship with a rug, or the way the top meets the view from an adjoining space."
+          ]
+        },
+        {
+          "id": "consider-a-rectangular-outline",
+          "heading": "Consider a rectangular outline",
+          "paragraphs": [
+            "A rectangle establishes a clear direction and offers a straightforward shape to compare with walls, floorboards or a long room opening. That visual alignment may be useful, but it is only one part of the decision. The character of the edges and base can make two tables with similar footprints feel very different when seen from a seated position or an adjacent room.",
+            "Use the collection’s contrasting outlines as prompts for those differences in composition, not as guaranteed room solutions. When considering a rectangular table, mark any intended end seats and check what lies beneath those positions. Ask how the proposed support arrangement relates to the actual chairs. A named shape or proposed product size cannot replace that conversation or establish a universal number of places."
+          ]
+        },
+        {
+          "id": "compare-the-same-situations",
+          "heading": "Compare the same everyday situations",
+          "paragraphs": [
+            "Make three small plans using the same room, chairs and surrounding furniture. Change only the proposed table outline first. Then add the situations that matter to you: the everyday meal, additional guests, a child working nearby, or someone reaching a cupboard. This is an exercise in asking better questions, not a way to certify that an arrangement meets every requirement.",
+            "Include the spaces around the table rather than looking only at the occupied surface. What view remains open toward the window? Which route becomes less direct when chairs are in use? Are there individual access needs that the project team should address? Record uncertainty plainly. A question left visible in the notebook is more useful than a confident drawing built on assumptions nobody has checked."
+          ]
+        },
+        {
+          "id": "write-a-comparison-brief",
+          "heading": "Write a comparison brief",
+          "paragraphs": [
+            "Summarise the alternatives with one sentence about appearance and one about the practical questions for each. For example, a curved outline might suit the room’s visual rhythm while leaving support placement unresolved. A longer straight outline might align with the architecture while raising questions about movement at one end. Keeping both observations together prevents a preference from being mistaken for a final decision."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP002"
+      ]
+    },
+    {
+      "id": "DB004",
+      "kind": "article",
+      "route": "/journal/coffee-tables-as-sculptural-objects",
+      "title": "Coffee Tables as Sculptural Objects",
+      "eyebrow": "Spaces",
+      "description": "Study a low table through silhouette, the space beneath it and its relationship with seating. An editorial exercise in making an object belong to a larger composition.",
+      "sections": [
+        {
+          "id": "read-the-silhouette",
+          "heading": "Read the silhouette first",
+          "paragraphs": [
+            "A coffee table is often noticed from above while standing and from the side while seated. Those two views can tell different stories. An expansive top may become a quiet line at eye level; a compact surface may sit over a base with a strong sculptural presence. Begin by imagining the object as a single dark outline, temporarily setting aside its colour and material detail."
+          ]
+        },
+        {
+          "id": "relate-it-to-the-seating",
+          "heading": "Relate it to the seating",
+          "paragraphs": [
+            "Look at the proposed table alongside the seats that will surround it. A deep sofa, an upright chair and a low lounge seat each create a different relationship in the drawing. Record their actual dimensions when available and describe how the space is used. The question is not simply whether the coffee table looks balanced in an empty photograph, but how the group reads and functions together.",
+            "Height belongs in that conversation alongside length and width. Rather than applying a universal rule from an unrelated room, ask what relationship suits the intended use and the people involved. Serving, reading, displaying an object and moving through the room may pull the brief in different directions. Identify those priorities before treating a visually appealing height as the settled answer for a commission."
+          ]
+        },
+        {
+          "id": "look-at-the-open-space",
+          "heading": "Look at the space beneath and around it",
+          "paragraphs": [
+            "Negative space is the part of the composition that remains unoccupied. Beneath a table, it can reveal a rug or allow the base to read as a separate drawing. Around the table, it gives the object an outline within the seating group. Try sketching the open areas as deliberately as the furniture; this often changes which part of the composition seems most important.",
+            "A solid-looking base and an open frame can create different visual rhythms even when their tops occupy similar areas. Neither is automatically better for a small or large room. Compare them against the actual surrounding furniture, including legs, shelves and upholstery. Questions about structural performance, cleaning access or suitability require information about the real design; the visual exercise should not be used to invent those answers."
+          ]
+        },
+        {
+          "id": "compose-without-matching",
+          "heading": "Compose without making everything match",
+          "paragraphs": [
+            "The coffee table can share one quality with its surroundings while differing in others. A curve might respond to a chair arm, a warm tone might echo a small timber detail, or a restrained surface might sit beside a patterned textile. Identify the relationship you want to keep, then let other elements remain independent. This makes the brief easier to explain than a broad request for a coordinated room.",
+            "Use references to compare alternatives one change at a time. Keep the seating constant while considering a circular outline, a longer outline or a more sculptural base. If every image changes the architecture, rug and lighting as well, it becomes difficult to know what you actually prefer. A modest annotated sketch can be more useful than a polished mood board full of incompatible settings."
+          ]
+        },
+        {
+          "id": "style-for-the-real-day",
+          "heading": "Style for the real day",
+          "paragraphs": [
+            "An editorial photograph often shows only a few carefully placed objects. Your room may need space for books, a tray or everyday items that come and go. Think about both conditions. What portion of the surface would you like to remain visible? Is the material composition itself the main interest, or do you expect the table to support a changing arrangement of other objects?",
+            "Draw the ordinary items at an approximate scale instead of assuming they will disappear into the composition. This does not establish a load limit or approve a particular use; those questions belong with the real product specification. It does help explain why a surface that looks generous in an empty image might feel different when it becomes part of a lived routine and a wider seating arrangement."
+          ]
+        },
+        {
+          "id": "brief-a-sculptural-table",
+          "heading": "Brief a sculptural table in plain language",
+          "paragraphs": [
+            "A productive brief can begin with three observations: the outline you are drawn to, the visual space you want to preserve and the activities the table should support. Add the dimensions of the room and existing seating, marking any estimates. Include a small number of references with notes about the particular feature in each, so the designer can separate your intention from the image’s styling."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-003-16x9.webp",
+      "imageAlt": "Shallow Basin: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP013",
+        "DP014"
+      ]
+    },
+    {
+      "id": "DB005",
+      "kind": "article",
+      "route": "/journal/the-quiet-role-of-a-side-table",
+      "title": "The Quiet Role of a Side Table",
+      "eyebrow": "Commissioning",
+      "description": "Beside a chair, near a bed or at the edge of a larger arrangement, a small table can have a precise job. Start a custom brief by naming that job.",
+      "sections": [
+        {
+          "id": "name-the-job",
+          "heading": "Name the job before the style",
+          "paragraphs": [
+            "A side table is often described as an accent, but its most useful starting point may be a simple task. It could be a place for a book beside a reading chair, a landing point near a sofa or a small surface beside a bed. Name the task before selecting an outline. That gives the design conversation something more specific to work with than a request for a finishing touch.",
+            "Notice whether the table will serve one position or several. A surface shared between two seats raises different questions from one assigned to a particular chair. Write down what needs to rest there and when. These notes do not prescribe a size by themselves; they explain the purpose against which proposed dimensions, materials and details can eventually be discussed and reviewed."
+          ]
+        },
+        {
+          "id": "find-its-neighbour",
+          "heading": "Find its nearest neighbour",
+          "paragraphs": [
+            "Take the surrounding dimensions into the brief, especially when a table is intended to sit in a precise position. Record the relevant seat, arm or bedside dimensions as measured facts, and label your preferred table height as a proposal. The eventual relationship needs to be considered for the actual user and activity. An appealing arrangement in a design image does not establish ease of reach or a universal ergonomic recommendation."
+          ]
+        },
+        {
+          "id": "consider-one-or-two",
+          "heading": "Consider one object or a pair",
+          "paragraphs": [
+            "A pair of side tables can introduce repetition without requiring perfect symmetry throughout a room. Imagine the pair together, separated on either side of a sofa, or used in different parts of the space. Describe which arrangement matters most. The answer affects whether the pair should feel like two equivalent pieces or related objects with deliberately different visual roles."
+          ]
+        },
+        {
+          "id": "notice-the-overlooked-details",
+          "heading": "Notice the details around the table",
+          "paragraphs": [
+            "Small furniture often sits where several parts of a room meet: a curtain, a rug edge, a socket, a skirting line or the side of a larger object. Mark those details in your sketch. If a lamp is part of the intended arrangement, show it as a separate item and describe the cable route you need the project team to consider.",
+            "Do not turn a furniture mood board into an electrical or installation plan. The point is to make the relevant questions visible so the right person can address them. Also note any nearby door or drawer that opens into the area and any route you intend to keep clear. A compact footprint can still occupy an important part of an everyday movement pattern, depending on the room around it."
+          ]
+        },
+        {
+          "id": "choose-the-kind-of-presence",
+          "heading": "Choose the kind of presence",
+          "paragraphs": [
+            "A side table can be visually quiet without being anonymous. Perhaps its material relates to a larger table while its outline stays simpler. Perhaps it introduces a small contrast in a room dominated by upholstered furniture. Decide whether you want the object to draw attention at first glance or reveal its character when someone sits nearby and notices the surface and edge.",
+            "Describe that preference with references to particular qualities: a restrained colour area, an irregular outline, a visible meeting of materials or the spacing between supports. Avoid relying on terms such as timeless or luxurious to carry the whole brief. They can mean different things to different people. Concrete observations allow the designer to respond with an original proposal and make subsequent choices easier to discuss together."
+          ]
+        },
+        {
+          "id": "make-a-small-clear-brief",
+          "heading": "Make a small, clear brief",
+          "paragraphs": [
+            "Gather a photograph of the intended location, a measured sketch and a short list of the table’s everyday contents. Include the neighbouring furniture dimensions that matter and identify anything likely to change. If you have more than one possible position, show both rather than presenting an unsettled arrangement as a final instruction. A useful brief can be concise while still making uncertainty visible."
+          ]
+        }
+      ],
+      "image": "/media/generated/dp025-twinleaf-matched-side-table-pair-portrait-4x5.webp",
+      "imageAlt": "Twinleaf: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP025",
+        "DP043"
+      ]
+    },
+    {
+      "id": "DB006",
+      "kind": "article",
+      "route": "/journal/an-entryway-built-around-one-console",
+      "title": "An Entryway Built Around One Console",
+      "eyebrow": "Spaces",
+      "description": "Plan an arrival space through rhythm, everyday objects and the view beyond the doorway. A console can anchor the composition while leaving the practical questions visible.",
+      "sections": [
+        {
+          "id": "read-the-arrival",
+          "heading": "Read the arrival as a sequence",
+          "paragraphs": [
+            "An entryway is experienced in motion. There is the view when the door first opens, the place where someone pauses and the glimpse of the room beyond. Before choosing a console, walk through that sequence and describe what each moment needs. You may want a clear focal object, a quiet landing place for everyday items, or a restrained transition into a more expressive interior.",
+            "Sketch the open door as well as the closed one, and mark anything that already shapes the view. A switch panel, window, recess or change in wall direction may matter more than an idealised symmetrical composition. The aim is to build a brief around the actual space. A beautifully centred object in a reference photograph is not automatically the right response to a different entrance."
+          ]
+        },
+        {
+          "id": "establish-a-horizontal-line",
+          "heading": "Establish a horizontal line",
+          "paragraphs": [
+            "Look at the object from the approach as well as straight on. A top that seems slender from the front may occupy more of a route when viewed along the corridor. Show the proposed depth in the plan and identify the movement that must be considered. Relevant clearances and accessibility needs require project-specific confirmation, so keep this drawing as a planning aid rather than an installation approval."
+          ]
+        },
+        {
+          "id": "build-a-rhythm-on-the-wall",
+          "heading": "Build a rhythm on the wall",
+          "paragraphs": [
+            "The space above a console can feel as deliberate as the object itself. Consider whether one artwork, a grouping or an unoccupied wall best supports the arrival sequence you described. Draw their outlines in relation to the console rather than choosing each element separately. You can then discuss alignment, intervals and emphasis without becoming distracted by the precise colours of an early reference image.",
+            "A wall panel such as a wide horizontal composition might be a compositional reference, but a picture does not resolve mounting, weight, fixings or the suitability of a wall. Keep those questions separate and visible. If a mirror, lighting or another fitted element enters the real proposal, ask the relevant project team to confirm what information and professional assessment are needed before any installation decision is made."
+          ]
+        },
+        {
+          "id": "style-with-restraint",
+          "heading": "Style with a little restraint",
+          "paragraphs": [
+            "Choose what you want the console surface to reveal. If the top’s material composition is central to the design, a crowded arrangement may hide the very relationship that drew you to it. Try a few simple outlines in a sketch: one taller object, a lower group and an area left empty. Change their position before adding more things, and observe how the composition responds.",
+            "This is an editorial exercise rather than a rule about how a home should look. A lived entryway may need space for items that never appear in a styled photograph. Include them honestly in the brief. The question is whether the proposed surface and nearby storage suit your routine, not whether the room can remain permanently arranged like a catalogue image with every ordinary object removed."
+          ]
+        },
+        {
+          "id": "consider-the-other-objects",
+          "heading": "Consider the other objects in the sequence",
+          "paragraphs": [
+            "Think about the view beyond the entrance too. The console can introduce a quality that reappears more subtly elsewhere, or it can provide a pause before a different room character. Record which existing objects will remain and which are only suggestions. That distinction helps avoid a commission brief that depends on replacing half the surrounding furniture when the intention was to add one considered piece."
+          ]
+        },
+        {
+          "id": "bring-the-project-questions",
+          "heading": "Bring the project questions into the brief",
+          "paragraphs": [
+            "A clear enquiry includes the intended wall, proposed footprint, opening doors and the route through the space. Add photographs you have permission to share and note any drawings that still need to be measured or confirmed. Mention whether the console is expected to support particular objects, provide storage or coordinate with fitted elements. Those details give the studio concrete questions to investigate before a design is agreed."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-005-16x9.webp",
+      "imageAlt": "Narrow Span: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP035",
+        "DP048",
+        "DP057"
+      ]
+    },
+    {
+      "id": "DB007",
+      "kind": "article",
+      "route": "/journal/pairing-resin-art-with-warm-neutral-interiors",
+      "title": "Pairing Resin Art with Warm Neutral Interiors",
+      "eyebrow": "Spaces",
+      "description": "Build a palette from the room you already have, then explore how a material-led object can introduce contrast, repetition and a little visual breathing space.",
+      "sections": [
+        {
+          "id": "begin-with-the-existing-neutrals",
+          "heading": "Begin with the neutrals already in the room",
+          "paragraphs": [
+            "A warm neutral interior is rarely one single colour. A wall may look softly cream beside a pale textile and more yellow beside a cooler stone. Before adding a resin-art object, make a small inventory of the surfaces that will remain: the largest floor area, the main upholstery, the most visible timber and the background wall. Describe what you actually see rather than beginning with a fashionable palette name.",
+            "You do not need to resolve every colour relationship immediately. Give each existing surface a role in the brief and note which combinations you already enjoy. A room with varied quiet tones may invite a stronger focal object, while another may benefit from a more restrained addition. The useful starting point is the composition you have, including its imperfections and ordinary daylight."
+          ]
+        },
+        {
+          "id": "give-the-new-object-a-role",
+          "heading": "Give the new object one clear role",
+          "paragraphs": [
+            "Decide whether the new piece should anchor the room, connect existing elements or introduce a deliberate interruption. A dining table might carry the strongest material contrast, while a pair of side tables could repeat a smaller detail. That distinction keeps the conversation focused. Without it, an attractive reference can lead to a request for an object that competes with the features you most want to preserve."
+          ]
+        },
+        {
+          "id": "build-an-illustrative-palette",
+          "heading": "Build an illustrative palette with limits",
+          "paragraphs": [
+            "Try an imaginary arrangement of oat-coloured fabric, a warm timber note and a small dark accent. Then try the same room with a lighter focal surface and a more visible base. These are composition exercises rather than prescribed combinations. Label them as alternatives, and explain which relationship interests you: the contrast between light and dark, the repetition of warmth or a quieter transition between neighbouring surfaces.",
+            "Keep the palette small enough that each addition has a reason. When every reference introduces another colour, it becomes hard to know which choice is carrying the idea. A short written note can restore that clarity: retain the sofa, relate to the floor, let the table provide the contrast. The note gives a designer freedom to develop the intention without reproducing a reference interior."
+          ]
+        },
+        {
+          "id": "let-texture-do-some-work",
+          "heading": "Let texture do some of the work",
+          "paragraphs": [
+            "In a restrained palette, texture can provide differences that colour alone does not explain. A woven textile, a visually grained surface and a quiet painted wall each introduce a different pattern of detail. Describe those visible qualities separately from how a material might feel. A photograph can suggest a texture, but examining a physical material sample supplies information that a screen cannot settle.",
+            "Consider where the room already has a lot to look at. If the rug is patterned and the shelving is full, a simpler object outline may offer a pause. If large background areas are visually quiet, a more expressive material composition may become the focus. These are options to explore in your own setting, not rules that every neutral interior must follow or claims about a particular resin finish."
+          ]
+        },
+        {
+          "id": "borrow-a-relationship-not-a-room",
+          "heading": "Borrow a relationship, not a room",
+          "paragraphs": [
+            "A reference interior can be useful when you can explain the relationship you admire. Perhaps a dark object feels balanced by a large pale wall, or several warm surfaces are interrupted by one cooler detail. Write down that observation and set aside the temptation to reproduce every furnishing. Your room’s architecture, retained objects and daily use deserve a response of their own.",
+            "Use only references you are entitled to share, and keep their source visible in a real project brief. Do not present another designer’s room as a RivyaLivingArt installation or an instruction to duplicate its objects. An original design board can instead use your room sketch, plain colour notes and approved product studies. This makes the intention readable without confusing inspiration, authorship and a proposed commission."
+          ]
+        },
+        {
+          "id": "bring-the-palette-back-to-the-room",
+          "heading": "Bring the palette back to the actual room",
+          "paragraphs": [
+            "Before a final decision, ask how the relevant material and finish references can be considered alongside the existing surfaces. Record the viewing context rather than declaring that one screen image proves a match. Note which choices are fixed, which are preferred and which remain open. That small distinction helps prevent a provisional palette from becoming an apparently approved specification during a longer project conversation."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP025",
+        "DP035"
+      ]
+    },
+    {
+      "id": "DB008",
+      "kind": "article",
+      "route": "/journal/a-guide-to-describing-your-commission",
+      "title": "A Guide to Describing Your Commission",
+      "eyebrow": "Commissioning",
+      "description": "Turn a collection of preferences into a useful first brief: what the piece is for, where it will live, what is known and which questions still need a conversation.",
+      "sections": [
+        {
+          "id": "describe-the-purpose-first",
+          "heading": "Describe the purpose in one sentence",
+          "paragraphs": [
+            "Start with what you want the object to do in the life of the room. You might be considering a dining table for everyday family use, a desk that becomes the visual centre of a study, or a reception piece that introduces a space to visitors. A plain sentence about purpose gives the design conversation direction before you reach for a particular finish, shape or style label.",
+            "Add the practical situations that make this project different. Perhaps existing chairs must remain, the room has another use at weekends, or the piece will be seen mainly from an adjoining area. These details are not small distractions from the creative brief. They explain the context in which the eventual design needs to be assessed and help separate an essential requirement from a passing preference."
+          ]
+        },
+        {
+          "id": "show-what-is-measured",
+          "heading": "Show what is measured and what is proposed",
+          "paragraphs": [
+            "List the measurements you actually know, with explicit units and clear labels for width, depth and height. Keep room measurements separate from proposed object dimensions. If something is an estimate, say so. A short annotated sketch can be more useful than several numbers in a message when it shows exactly which opening, wall or existing item each measurement describes."
+          ]
+        },
+        {
+          "id": "annotate-your-references",
+          "heading": "Annotate the references you bring",
+          "paragraphs": [
+            "Select a few references and write one reason for each. You may like the direction of a grain pattern, the quietness of a base or the balance between two surface areas. That reason is the important part of the reference. Without it, someone reading the brief may assume you want the whole object, including details you had barely noticed or would actively prefer to change."
+          ]
+        },
+        {
+          "id": "explain-the-practical-context",
+          "heading": "Explain the practical context",
+          "paragraphs": [
+            "A useful first brief identifies the general project location, intended placement and any access conditions already known. A narrow turn, a lift or a route shared with other work may raise questions that need investigation. Describe the situation rather than promising that delivery will be simple. The actual route and handling arrangements require the relevant people to assess the specific object and site.",
+            "Mention related decisions that are still in progress. Flooring, fixed joinery or room layout changes can affect what information is available and when. If an architect or interior designer is involved, identify the coordination role without assuming that one person has approved every part of the proposal. The purpose is to make dependencies visible early, so the design conversation is based on the same understanding of the project."
+          ]
+        },
+        {
+          "id": "give-timing-and-budget-context",
+          "heading": "Give timing and budget their context",
+          "paragraphs": [
+            "Explain any date that influences the enquiry and why it matters. An intended move, event or stage of building work is useful context, but it is not a confirmed production or delivery date. Ask what the studio needs to review before it can discuss a realistic sequence. Keep preferred timing separate from any timing that has actually been agreed through the real project process."
+          ]
+        },
+        {
+          "id": "end-with-answerable-questions",
+          "heading": "End with questions someone can answer",
+          "paragraphs": [
+            "Read the brief once as if you were seeing the project for the first time. Can you identify the intended use, the known dimensions, the visual direction and the unresolved constraints? Remove repeated adjectives and retain the observations that explain them. Then write the next questions plainly: what should be measured next, which options are worth exploring and what information is needed to discuss a specification?"
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP051",
+        "DP077"
+      ]
+    },
+    {
+      "id": "DB009",
+      "kind": "article",
+      "route": "/journal/what-to-include-in-an-architects-enquiry",
+      "title": "What to Include in an Architect’s Enquiry",
+      "eyebrow": "Commissioning",
+      "description": "Make the first project exchange easier to interpret with a concise context note, clearly labelled drawings and an explicit list of unresolved specification and coordination questions.",
+      "sections": [
+        {
+          "id": "open-with-project-context",
+          "heading": "Open with a compact project context",
+          "paragraphs": [
+            "An architect’s enquiry is easier to interpret when it begins with the project stage and the role of the proposed object. State whether you are exploring a design, coordinating a developed interior or seeking information for a specific decision. Identify the intended setting in broad terms and explain what the object should contribute visually and functionally. This helps the recipient understand the question before opening any drawings.",
+            "Separate your team’s role from the services you are asking the studio to discuss. Do you need an initial feasibility conversation, a material option to review or clarification of a proposed scope? Those requests are not interchangeable. Naming the immediate decision makes it possible to respond at the appropriate level without assuming that design development, technical coordination or installation responsibilities have already been assigned."
+          ]
+        },
+        {
+          "id": "send-a-readable-drawing-set",
+          "heading": "Prepare a readable drawing set",
+          "paragraphs": [
+            "Choose drawings that explain the relevant location and relationships, rather than sending every available sheet without context. A plan may show the route around an object; an elevation may explain its relationship with a wall or adjacent joinery. Label the revision and status of each document so an exploratory sketch cannot be mistaken for information cleared for construction or a later coordinated design."
+          ]
+        },
+        {
+          "id": "describe-the-design-intent",
+          "heading": "Describe the design intent and its boundaries",
+          "paragraphs": [
+            "Explain the intended relationship between the proposed piece and the architecture. It may establish a horizontal line, provide a material focal point or connect two areas visually. Support that intention with a few annotated references rather than a general style label. Identify the qualities that matter and the features that are incidental, especially when reference images contain other designers’ work or unrelated room conditions.",
+            "Distinguish requirements from options under consideration. A proposed length may be constrained by adjacent joinery, while the base composition remains open. A particular colour impression may be preferred, while the actual material selection still needs references. Making these boundaries readable leaves room for an original design response and prevents an early design rendering from acquiring the authority of an approved specification without a deliberate decision."
+          ]
+        },
+        {
+          "id": "record-access-and-interfaces",
+          "heading": "Record access and the surrounding interfaces",
+          "paragraphs": [
+            "Include known information about how the object would reach its intended position, while marking the route as subject to assessment where appropriate. Note relevant openings, changes of level, lifts, turns and any site restrictions that the project team has identified. Avoid reducing the question to whether a top fits through one doorway; handling and installation need a complete project-specific discussion with those responsible.",
+            "Identify the surrounding interfaces as well. A reception design may relate to flooring, lighting or fixed services; a wall piece raises separate questions about the supporting wall and fixing strategy. Do not treat a catalogue image as proof that these relationships are resolved. List who is expected to provide the missing information and ask the studio to clarify what it can evaluate within an agreed scope."
+          ]
+        },
+        {
+          "id": "ask-for-specific-information",
+          "heading": "Ask for specific specification information",
+          "paragraphs": [
+            "Keep visual approval separate from technical acceptance and any applicable project requirements. A finish selected for its appearance does not establish a performance characteristic, and a rendered joint does not define a buildable connection. The appropriate project professionals need to identify and assess the relevant requirements. This article provides a communication structure; it does not certify a product, resolve a regulation or assign professional responsibility for the work."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-005-16x9.webp",
+      "imageAlt": "Narrow Span: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP035",
+        "DP057",
+        "DP077"
+      ]
+    },
+    {
+      "id": "DB010",
+      "kind": "article",
+      "route": "/journal/wall-art-at-architectural-scale",
+      "title": "Wall Art at Architectural Scale",
+      "eyebrow": "Spaces",
+      "description": "Explore one panel, two related elements or a three-part composition through the wall, the viewing sequence and the space between the pieces. Every dimension remains a proposal.",
+      "sections": [
+        {
+          "id": "draw-the-whole-wall",
+          "heading": "Draw the whole wall before the artwork",
+          "paragraphs": [
+            "At architectural scale, wall art is read in relation to the space around it. Begin with the full wall, including openings, changes of plane, visible services and nearby furniture. Then mark the usual approaches and viewing positions. A composition seen along a corridor may need to be discussed differently from one encountered directly across a room, even when the available wall dimensions are similar.",
+            "Keep measured facts and exploratory ideas distinct in the sketch. Record actual wall dimensions where they are known, then draw a proposed area for the artwork without calling it a final size. The exercise helps establish visual intention. It does not determine whether the wall is suitable for a particular object or resolve the information a project team needs before selecting materials and an installation approach."
+          ]
+        },
+        {
+          "id": "study-a-single-panel",
+          "heading": "Study the presence of a single panel",
+          "paragraphs": [
+            "One panel can make the composition read as a continuous field. Its outer boundary becomes especially important: a wide band, an upright form or a more compact shape each establishes a different relationship with the wall. In a sketch, compare how much background remains visible around the proposal. That unoccupied area is part of the composition rather than leftover space to fill automatically."
+          ]
+        },
+        {
+          "id": "study-a-diptych",
+          "heading": "Study the dialogue between two parts",
+          "paragraphs": [
+            "A diptych introduces a relationship between two elements and the interval that separates them. You might explore a shared line continuing across the gap, a balanced pair or a deliberately unequal arrangement. Draw the two parts first as plain shapes. This allows you to consider proportion and rhythm before surface detail makes one version seem more persuasive simply because it is more elaborately illustrated.",
+            "Treat the interval as an active design choice. A narrow visual pause and a broad separation can change whether the work reads as one composition or two related objects. No universal gap is proposed here. Record alternatives and ask how they relate to the actual wall, adjacent openings and intended viewpoint. The two-part study is an editorial possibility, not an additional catalogue product or approved mounting arrangement."
+          ]
+        },
+        {
+          "id": "study-a-triptych",
+          "heading": "Study rhythm across three parts",
+          "paragraphs": [
+            "Three elements make repetition and variation particularly visible. A triptych might use similar widths to establish an even rhythm, or give one part a different role. Consider where the viewer’s attention begins and where it rests. A central emphasis may suit one intention; a sequence that moves across the wall may suit another. Neither approach should be selected solely because the number of panels feels complete.",
+            "Compare the overall outer boundary with the gaps inside it. A three-part arrangement can occupy a much larger visual area than any individual panel suggests, so show it within the full wall elevation. Label every dimension as proposed until reviewed. The drawing should help the studio discuss an original composition and its feasibility, without implying that repetition makes fabrication, support or installation straightforward or already agreed."
+          ]
+        },
+        {
+          "id": "consider-near-and-distant-views",
+          "heading": "Consider near and distant views",
+          "paragraphs": [
+            "Stand at the points from which the wall is normally seen and describe the kind of detail likely to matter there. From one approach, the overall outline may dominate; closer to the wall, the relationships within the surface may become more interesting. Include both viewpoints in the brief so the discussion does not depend on a single carefully composed rendering that nobody will experience in everyday use.",
+            "Consider surrounding light as context, while avoiding performance assumptions about an unspecified material. A bright opening, an adjacent reflective surface or planned lighting may alter the visual impression and deserve further discussion. Ask what references or mockups could help assess the particular proposal. The article does not prescribe lighting equipment or certify how a resin formulation will look, age or behave under any specific condition."
+          ]
+        },
+        {
+          "id": "separate-composition-from-installation",
+          "heading": "Separate the composition from its installation brief",
+          "paragraphs": [
+            "Collect the preferred arrangement, its proposed extent and the reasons behind it into a short composition brief. Alongside that, keep a separate list of information needed about the real wall, object and access route. Identify who will assess support, fixings and other applicable project requirements. A visual preference can be clear while those responsibilities and details remain unresolved; making that distinction explicit protects the quality of the conversation."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-005-16x9.webp",
+      "imageAlt": "Narrow Span: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP057",
+        "DP035",
+        "DP069"
+      ]
+    },
+    {
+      "id": "DB011",
+      "kind": "article",
+      "route": "/journal/from-a-mood-board-to-a-material-conversation",
+      "title": "From a Mood Board to a Material Conversation",
+      "eyebrow": "Materials",
+      "description": "Give every reference a clear job, then separate the mood it suggests from the samples, drawings and recorded choices a real object will need.",
+      "sections": [
+        {
+          "id": "give-the-board-a-question",
+          "heading": "Give the board a question to answer",
+          "paragraphs": [
+            "A mood board becomes more useful when it has a purpose beyond collecting attractive images. Decide what you are trying to explain: a quiet room with one expressive surface, an object that relates to existing timber, or a contrast between a strong outline and a restrained palette. Write that intention at the top. It gives every reference a reason to be included and makes omissions easier to recognise.",
+            "Choose only a few images at first. A large collection can conceal uncertainty because each image suggests a different answer. If two references conflict, keep both only when the difference itself is useful to discuss. The board is an instrument for finding a direction, not proof that all its materials, dimensions and details can be combined into one feasible commissioned object."
+          ]
+        },
+        {
+          "id": "annotate-what-each-image-means",
+          "heading": "Annotate what each image means",
+          "paragraphs": [
+            "Write a short note beside each reference identifying the particular quality that matters. It could be the spacing between two shapes, the apparent depth of a colour area or the balance of a top and base. Be equally clear about what you are not carrying forward. A useful image may contain a room layout, object size or decorative detail that has no relevance to your project.",
+            "Keep authorship and source information with any material shared in a real brief, and use references you are entitled to share. Discuss the underlying design relationship rather than requesting a copy of another maker’s object. Originality becomes easier to preserve when the board explains intentions in words. It also helps the studio respond to your actual room instead of reproducing the setting that happened to make a photograph appealing."
+          ]
+        },
+        {
+          "id": "sort-the-kinds-of-information",
+          "heading": "Sort the kinds of information you have",
+          "paragraphs": [
+            "An inspiration photograph, a design rendering and a physical material sample answer different questions. The photograph may communicate an atmosphere; the rendering may explore a proposed composition; the sample may allow a particular surface to be considered directly. Give each item a plain status label. Otherwise, a material suggested in a rendering can quietly be remembered as a confirmed option even though no one has reviewed it.",
+            "Do the same with dimensions and written notes. Measured room information is different from a preferred object size, and both are different from an agreed specification. A simple list with columns for known, proposed and awaiting confirmation can help a real discussion. It does not need an elaborate approval system. The important point is that people can see which information they are relying on and what still needs a decision."
+          ]
+        },
+        {
+          "id": "bring-in-physical-samples",
+          "heading": "Bring physical material references into the conversation",
+          "paragraphs": [
+            "Ask which actual references are relevant to the options being considered and what each sample represents. A small piece may communicate colour or surface character without demonstrating every aspect of a finished object. Record the description provided by the studio, including any limits on what can be inferred from it. Avoid assuming that a sample settles construction, performance or the appearance of a much larger composition.",
+            "Consider references alongside the room’s retained materials where an appropriate real review is possible, and note the viewing context. Screens and printed references remain useful communication aids, but they should not be treated as exact colour standards. If an impression differs from the mood board, return to the original intention and discuss the difference. The aim is an informed choice, not forcing a physical material to match an ambiguous image."
+          ]
+        },
+        {
+          "id": "record-decisions-with-their-scope",
+          "heading": "Record decisions with their scope",
+          "paragraphs": [
+            "When a real choice is made, state what the choice actually covers. Selecting an appearance direction is not the same as agreeing an entire object specification. A useful note identifies the item discussed, the reference or sample involved and the questions left open. That record helps later conversations stay connected to the decision itself rather than to different recollections of a broad approval word."
+          ]
+        },
+        {
+          "id": "turn-the-board-into-a-brief",
+          "heading": "Turn the board into a concise brief",
+          "paragraphs": [
+            "Finish by reducing the board to a few sentences someone else could use to understand the direction. Describe the object’s role, the visual relationships to preserve and the practical information still needed. Attach only the references that support those sentences, with their labels intact. If the description becomes contradictory, that is useful feedback: the board may need one more conversation before it can guide a coherent proposal."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP013",
+        "DP025"
+      ]
+    },
+    {
+      "id": "DB012",
+      "kind": "article",
+      "route": "/journal/light-transparency-and-the-look-of-resin",
+      "title": "Light, Transparency and the Look of Resin",
+      "eyebrow": "Materials",
+      "description": "Describe what a reference image seems to show, then ask what would need a real sample. A visual notebook on backgrounds, viewpoints, reflections and the impression of depth.",
+      "sections": [
+        {
+          "id": "describe-the-impression",
+          "heading": "Describe the impression before naming a property",
+          "paragraphs": [
+            "A reference image may make a resin area appear deep, luminous, smoky or almost opaque. Those words can be useful in a design conversation when they describe an impression rather than claim a verified material property. Begin by saying what you notice and where you notice it. Does the effect seem strongest at an edge, across a broad area or beside a contrasting material?",
+            "Then explain why the impression matters to your brief. You may be drawn to a sense of visual depth or to the way a quiet colour area sits beside visible grain. That preference can be discussed without assuming a particular formulation or finish. The distinction keeps an appealing photograph in its proper role as a visual reference while leaving the actual material system to be identified and reviewed."
+          ]
+        },
+        {
+          "id": "notice-the-background",
+          "heading": "Notice what sits behind and around the object",
+          "paragraphs": [
+            "Look beyond the object in a reference image. A pale background, a dark floor or nearby furniture contributes to the appearance of the whole composition. When you compare two images with different settings, you may be responding to those surroundings as much as to the material itself. Make a note of the background before drawing conclusions about which surface or colour you prefer.",
+            "An art-direction study can hold the proposed object and viewpoint constant while exploring a small number of clearly labelled background alternatives. Such an illustration is a way to discuss visual relationships, not a simulation that proves how a physical product will behave. Label each study as a design image, an approved photograph or a proposed view so its purpose stays clear."
+          ]
+        },
+        {
+          "id": "compare-viewpoints-carefully",
+          "heading": "Compare viewpoints carefully",
+          "paragraphs": [
+            "A top view, a side view and a close detail show different parts of a design. One may emphasise the arrangement of materials, another the edge and another the way a particular area catches the eye. When building a brief, identify which viewpoint supports the observation you are making. A detail image can be compelling while telling you very little about the complete object in a room."
+          ]
+        },
+        {
+          "id": "separate-reflections-from-colour",
+          "heading": "Separate reflections from colour preferences",
+          "paragraphs": [
+            "When looking at a glossy-looking reference, consider whether a bright area belongs to the surface’s apparent colour or to something reflected in it. You may not be able to settle that question from one image, and it is useful to say so. Describe the visual effect you like without building a specification around an uncertain interpretation of a highlight or a dark patch.",
+            "The setting of the eventual object matters to the discussion as well. Large windows, nearby colours and planned lighting are worth showing in the room context, but this editorial exercise does not prescribe lighting or predict a finished surface. Ask which actual references and viewing conditions are appropriate for a real review. A preference for a calm appearance should be explored with reliable information, not translated automatically into an unsupported finish claim."
+          ]
+        },
+        {
+          "id": "read-the-edge-and-interior",
+          "heading": "Read the edge and the apparent interior",
+          "paragraphs": [
+            "Some design images draw attention to the boundary between materials; others invite you to look into an area that seems to have depth. These are different compositional interests. In a brief, specify whether you are responding to the outline, the colour field, the meeting of surfaces or the apparent layers within it. The more precisely you describe the observation, the less the conversation depends on a vague request for transparency."
+          ]
+        },
+        {
+          "id": "ask-for-a-grounded-review",
+          "heading": "Ask for a grounded visual review",
+          "paragraphs": [
+            "Turn your observations into a short request for clarification. Identify the reference, describe the impression you want to explore and ask which physical sample or documented view could help discuss it. Include the intended setting and distinguish fixed room conditions from ideas still under consideration. The goal is to connect a visual intention to information that can be reviewed, rather than to demand an exact effect from an unspecified image."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP013",
+        "DP069"
+      ]
+    },
+    {
+      "id": "DB013",
+      "kind": "article",
+      "route": "/journal/chairs-benches-and-the-shape-of-a-room",
+      "title": "Chairs, Benches and the Shape of a Room",
+      "eyebrow": "Spaces",
+      "description": "Look at seating as part of a changing room: the line of a chair back, the rhythm of a group and the space each person needs.",
+      "sections": [
+        {
+          "id": "db013-1",
+          "heading": "Start with the room's changing outline",
+          "paragraphs": [
+            "A chair is more than the outline it makes when pushed neatly beneath a table. Its position changes when someone arrives, turns toward a conversation or stands up again. A bench creates another pattern, gathering several places along one continuous line. Before choosing a sculptural seat, describe these ordinary movements. Sketch the room twice: once with everything put away, then again as it might look during use. The difference between those drawings is valuable information. It shows where a beautiful composition needs practical discussion, and where an apparently empty area is doing useful work for the people moving through it."
+          ]
+        },
+        {
+          "id": "db013-2",
+          "heading": "Read the back as part of the composition",
+          "paragraphs": [
+            "In a dining room, chair backs may be the most visible part of the seating. Seen from an entrance, they form a rhythm around the table before anyone notices the seats themselves. The Petal design offers one possible curved outline; a straighter form would make a different sequence. Neither is automatically the better partner for an expressive table. Compare a few silhouettes at the intended scale, and explain what each contributes. Avoid choosing solely from a tightly cropped product picture. A side view, rear view and room sketch can reveal relationships that disappear when an object is shown alone."
+          ]
+        },
+        {
+          "id": "db013-4",
+          "heading": "Separate an expressive idea from comfort",
+          "paragraphs": [
+            "A sculptural seat can be compelling in a drawing and still leave important questions unresolved. Record the intended seat height, the relationship to nearby furniture and the activities it should support. Ask what physical evaluation would be possible before committing to a final form. Do not infer comfort from a soft-looking curve or strength from a substantial-looking base. A rendered image does not demonstrate either. If several people will regularly use the seat, include their practical requirements in the brief without sharing unnecessary personal information. The purpose is to make the conversation specific, not to prescribe a universal ergonomic solution."
+          ]
+        },
+        {
+          "id": "db013-5",
+          "heading": "Compare repetition with variation",
+          "paragraphs": [
+            "A room can use repeated seating to create order, or introduce variation to mark different positions. Try drawing both arrangements without colour first. Repetition may let the table remain the main material event; variation may give the room a more conversational quality. If you mix forms, identify the connection that holds them together: a similar visual height, a restrained tone or a shared curve. Matching every detail is unnecessary. What matters is whether the composition still reads clearly when the chairs are occupied, moved or viewed from another doorway. An arrangement that only works in one photograph deserves another look."
+          ]
+        }
+      ],
+      "image": "/media/product-hero-009-4x5.webp",
+      "imageAlt": "Entryway: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP043",
+        "DP048",
+        "DP049"
+      ]
+    },
+    {
+      "id": "DB014",
+      "kind": "article",
+      "route": "/journal/planning-a-large-piece-for-delivery-access",
+      "title": "Planning a Large Piece for Delivery Access",
+      "eyebrow": "Spaces",
+      "description": "Trace the journey from the street to the final setting. A useful access brief records the whole route, with measurements and questions for the people arranging delivery.",
+      "sections": [
+        {
+          "id": "db014-1",
+          "heading": "Follow the whole route",
+          "paragraphs": [
+            "Delivery access begins before the room where an object will eventually stand. Think about the complete route from an agreed arrival point to the final position, including shared entrances, changes of level and internal turns. A photograph of the destination alone cannot describe that journey. Make a simple sequence of places the project team needs to understand. Record which parts are known and which require a site visit or another person's confirmation. This early inventory is a way to ask better questions; it is not a transport plan and should never be treated as permission to attempt a difficult move."
+          ]
+        },
+        {
+          "id": "db014-2",
+          "heading": "Record openings with context",
+          "paragraphs": [
+            "A doorway measurement becomes more useful when it is accompanied by the opening direction, nearby walls and any fixed obstruction. Note the units and the exact points between which you measured. A generous width at one point may be followed by a tight turn or low overhead feature. Photographs can help explain the relationship, but perspective can be misleading, so keep written measurements alongside them. Do not remove doors, fittings or other building elements on the assumption that doing so will solve access. Any proposed alteration needs the property owner’s agreement and a qualified assessment where the circumstances require it."
+          ]
+        },
+        {
+          "id": "db014-3",
+          "heading": "Ask about lifts, stairs and shared areas",
+          "paragraphs": [
+            "If a lift forms part of the proposed route, record the information available from the building team rather than guessing from its appearance. Ask which dimensions, operating restrictions and booking arrangements the delivery team needs. Stairs introduce another set of questions about turns, landings and handling space. Shared corridors may have access hours or protective requirements. None of these details can be settled by a catalogue card. A clear responsibility list prevents assumptions from becoming invisible."
+          ]
+        },
+        {
+          "id": "db014-5",
+          "heading": "Connect arrival to final placement",
+          "paragraphs": [
+            "The last part of the route deserves the same attention as the entrance. Describe the intended position, nearby fixed furniture and the space available while the piece is being placed. Ask how the final location will be agreed and who will be present to make decisions. If other work is happening on site, identify it early so the responsible teams can coordinate. Surface protection, handling methods, installation and acceptance arrangements need confirmation for the particular project. Avoid promising that an object can be moved again easily after placement; that question belongs with the final construction and the actual environment."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP077"
+      ]
+    },
+    {
+      "id": "DB015",
+      "kind": "article",
+      "route": "/journal/why-a-visualization-is-not-a-final-specification",
+      "title": "Why a Visualization Is Not a Final Specification",
+      "eyebrow": "Materials",
+      "description": "A compelling image starts a conversation. Learn how a visualization, drawing, material reference and finished object contribute different information to the design process.",
+      "sections": [
+        {
+          "id": "db015-1",
+          "heading": "Understand the job of a design image",
+          "paragraphs": [
+            "A design image can express atmosphere remarkably quickly. It may suggest the weight of a silhouette, the rhythm of a material boundary or the way a table could anchor a room. Those are useful contributions, but they do not make the image a complete description of an object. Treat it as an invitation to identify what matters visually. Write down the features that interest you and the questions it leaves open. In this collection, images labelled as designs remain designs even when they look photographic. They are not proof that a particular piece has been made, installed or offered for sale."
+          ]
+        },
+        {
+          "id": "db015-3",
+          "heading": "Give drawings their own questions",
+          "paragraphs": [
+            "A drawing can communicate information that a mood image cannot, yet it also needs context. Check what views are included, which dimensions are shown and whether important details remain unresolved. Ask who prepared it and what stage it represents. A sketch for discussion should not be read as an installation instruction simply because it contains numbers. Changes need a clear revision reference so everyone is discussing the same proposal. If a drawing conflicts with a text description, pause the decision and ask for clarification. Choosing whichever source appears more convenient leaves the disagreement available to resurface later."
+          ]
+        },
+        {
+          "id": "db015-4",
+          "heading": "Let material samples speak precisely",
+          "paragraphs": [
+            "A physical material sample offers another kind of evidence. It can help a conversation about colour, texture and the appearance of a proposed finish under particular conditions. It still needs identification: which material, which finish and which proposal does it belong to? Ask whether variation is expected and how the final selection will be recorded. A sample does not automatically establish every property of a larger finished object. Performance, maintenance and suitability claims require information relevant to the actual specification. Preserve the distinction between liking the look of a sample and approving all the unresolved decisions around the final piece."
+          ]
+        },
+        {
+          "id": "db015-5",
+          "heading": "Keep revisions connected without merging them",
+          "paragraphs": [
+            "An effective review can show a design image, a drawing, a material reference and a written specification together while keeping their labels distinct. Give each a date or revision identifier and state its purpose. If a later image changes the shape, ask whether the drawing has changed too. If a finish changes, ask which written fields and references need updating. Keep a copy of the version discussed and record which decisions remain open. A later revision should clearly identify what has changed."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP085"
+      ]
+    },
+    {
+      "id": "DB016",
+      "kind": "article",
+      "route": "/journal/a-home-office-with-a-material-focal-point",
+      "title": "A Home Office with a Material Focal Point",
+      "eyebrow": "Spaces",
+      "description": "Plan a desk around the work you do, then give its materials room to be noticed. A quieter approach to the home office.",
+      "sections": [
+        {
+          "id": "db016-1",
+          "heading": "Decide what the desk should hold",
+          "paragraphs": [
+            "A home-office brief begins with work rather than styling. List the activities the desk needs to support: writing, reading, drawing, using a screen or spreading out reference material. Identify which objects stay on the surface and which appear only occasionally. This inventory helps distinguish a generous-looking image from a useful working arrangement. The Single-Slab and linear desk designs offer different compositional directions, but neither establishes the right size for a particular person. Mark your proposed dimensions as questions until they have been considered alongside the chair, equipment, room and actual requirements of the people who will use the desk."
+          ]
+        },
+        {
+          "id": "db016-2",
+          "heading": "Give the material one clear role",
+          "paragraphs": [
+            "An expressive surface can become the focal point of a quiet room without requiring every accessory to compete with it. Describe what you want to notice first: the timber grain, a resin passage, a slender edge or the relation between top and base. Then identify where equipment will obscure that feature. A composition that is beautiful when empty may read very differently beneath a monitor and papers. Try a simple plan with the everyday objects drawn in place. The aim is not to keep a working desk permanently bare, but to understand how its material character can remain legible during ordinary use."
+          ]
+        },
+        {
+          "id": "db016-3",
+          "heading": "Include light without promising a result",
+          "paragraphs": [
+            "Observe where daylight enters and where existing lamps are positioned. Record the times when the room is usually occupied and the directions from which the surface is seen. Screen glare, reflections and shadows deserve project-specific consideration; they cannot be resolved by choosing a finish name from a photograph. Ask what references or room observations would help the discussion. The useful brief describes the conditions and the desired atmosphere while leaving the actual specification open for informed review."
+          ]
+        },
+        {
+          "id": "db016-4",
+          "heading": "Draw the working space below",
+          "paragraphs": [
+            "The visible top is only part of the desk. Consider the space around the chair, the proposed support positions and the routes needed for equipment connections. Describe storage requirements separately instead of assuming drawers or concealed cable features are included. An apparently open base in a design image does not establish legroom, comfort or construction. These questions need a measured proposal and, where appropriate, practical evaluation. If the desk shares a room with another activity, show that relationship on the plan. A work surface might need to coexist with a reading chair, guest bed or circulation route whose position changes over time."
+          ]
+        },
+        {
+          "id": "db016-5",
+          "heading": "Edit the supporting objects",
+          "paragraphs": [
+            "Choose accessories for the jobs they need to do, then consider their visual relationship to the desk. A small tray might group loose objects; a lamp might introduce a contrasting line. The connection can be subtle, such as one repeated tone rather than a complete matching set. Before adding another object, ask whether it clarifies the workspace or merely fills an empty area in a reference photograph. Leave room for the irregularity of actual work. A useful composition can accommodate a notebook left open or a stack of papers without losing the distinction between the main material gesture and its supporting elements."
+          ]
+        }
+      ],
+      "image": "/media/generated/dp051-single-slab-atelier-desk-portrait-4x5.webp",
+      "imageAlt": "Single-Slab: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP051",
+        "DP055"
+      ]
+    },
+    {
+      "id": "DB017",
+      "kind": "article",
+      "route": "/journal/a-small-vocabulary-of-finishes-and-forms",
+      "title": "A Small Vocabulary of Finishes and Forms",
+      "eyebrow": "Materials",
+      "description": "A few precise words can make a design conversation clearer. Describe sheen, edges, curves and the space between materials without needing specialist vocabulary.",
+      "sections": [
+        {
+          "id": "db017-2",
+          "heading": "Distinguish sheen from colour",
+          "paragraphs": [
+            "A dark surface can be glossy or subdued, and a pale one can reflect light in different ways. Colour and apparent sheen therefore deserve separate notes. In a reference image, explain whether you like the tone itself or the pattern of light across it. A single photograph may combine studio lighting, camera choices and image processing, so it cannot settle the finish decision. Where relevant, ask to see an identified physical material sample under useful viewing conditions. Keep a record of what the sample belongs to. A screen-based preference can guide a conversation, but it should not silently become an exact colour or surface promise."
+          ]
+        },
+        {
+          "id": "db017-3",
+          "heading": "Describe edges as relationships",
+          "paragraphs": [
+            "An edge can look sharp, rounded, irregular, thin or substantial. These words become more useful when connected to the rest of the object. Is the intention a top that appears to float above its support, or one that reads as a solid volume? Does an irregular boundary carry the composition, or would a restrained outline give the material more attention? Describe the visual relationship without prescribing construction. The final edge treatment, dimensions and suitability for the intended use require discussion of the actual design. A design image cannot establish how a surface feels to touch or how it should be manufactured."
+          ]
+        },
+        {
+          "id": "db017-4",
+          "heading": "Read positive and negative space",
+          "paragraphs": [
+            "Solid areas give an object visible weight; openings and gaps shape the space around and through it. A lattice, an arch or a recessed base may create a changing silhouette as the viewer moves. Try describing both the material you see and the empty space it frames. This is especially useful for sculptural bases and spatial art, where a front view may hide much of the composition. Ask which other views would clarify the proposal. An open-looking structure is a visual observation only. It does not prove lightness, strength, stability or the method by which the eventual object would be assembled."
+          ]
+        },
+        {
+          "id": "db017-5",
+          "heading": "Be specific about material boundaries",
+          "paragraphs": [
+            "When two materials meet, the line between them can be central to the design. It may appear continuous, interrupted, narrow or expansive. Trace that boundary in a reference and explain its rhythm. Distinguish the general idea from an instruction to reproduce another maker's exact work. A useful note might say that you enjoy a wandering line beside a quiet field, leaving room for an original response. Actual timber selection, resin formulation, bonding, finish and construction belong in the later specification. None can be certified by a descriptive phrase such as natural, seamless or flowing, however convincing the visual impression may be."
+          ]
+        },
+        {
+          "id": "db017-6",
+          "heading": "Make a small personal glossary",
+          "paragraphs": [
+            "At the end of a first discussion, write a short glossary for the project. Pair each selected term with a reference and an explanation of what it means in that conversation. Mark uncertain words as questions. If someone says soft, clarify whether they mean colour, outline, reflection or tactile quality. If they say light, ask whether they mean visual weight, transparency or actual mass. These distinctions prevent a simple adjective from carrying several incompatible expectations. The glossary remains a communication aid until the responsible people approve the actual specification. It helps preserve the idea while making the next decisions more precise."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-005-16x9.webp",
+      "imageAlt": "Narrow Span: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP035",
+        "DP069"
+      ]
+    },
+    {
+      "id": "DB018",
+      "kind": "article",
+      "route": "/journal/the-project-story-behind-a-collectible-interior",
+      "title": "The Project Story Behind a Collectible Interior",
+      "eyebrow": "Spaces",
+      "description": "Describe the room you want to create through its purpose, constraints and choices. A framework for writing your own interior brief.",
+      "sections": [
+        {
+          "id": "give-the-room-a-purpose",
+          "heading": "Give the room a purpose",
+          "paragraphs": [
+            "Begin with the life the room needs to support. A living room for quiet evenings asks different questions from one that often holds a large gathering. List the activities before choosing a visual theme. Note which objects have personal value and which parts of the layout can change. These observations give the design a direction that belongs to you."
+          ]
+        },
+        {
+          "id": "identify-the-constraints",
+          "heading": "Put the fixed elements on the page",
+          "paragraphs": [
+            "Record doors, windows, circulation routes and furniture that will stay. Add photographs from the entrance and from the places where people sit. Mark measurements with their units and distinguish an approximate observation from a checked dimension. A clear constraint can be useful: it explains why one outline feels appropriate while another interrupts the room."
+          ]
+        },
+        {
+          "id": "name-the-key-relationship",
+          "heading": "Choose one relationship to develop",
+          "paragraphs": [
+            "A resin piece might relate to the warmth of the floor, introduce a contrasting line or act as the room’s focal point. Choose the relationship that matters most and describe it in a sentence. You do not need every surrounding object to repeat the same colour or curve. Give the main piece enough visual space for its character to remain legible."
+          ]
+        },
+        {
+          "id": "make-the-brief-readable",
+          "heading": "Turn the story into a brief",
+          "paragraphs": [
+            "Combine the purpose, measured context, preferred piece and unresolved questions in a short brief. Label each reference with what you like about it. Keep a distinction between the atmosphere you want and the specifications still to be agreed. This is a way to plan a future interior; it does not describe a completed RivyaLivingArt installation."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-003-16x9.webp",
+      "imageAlt": "Shallow Basin: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP013",
+        "DP057"
+      ]
+    },
+    {
+      "id": "DB019",
+      "kind": "article",
+      "route": "/journal/turning-a-wedding-memory-into-a-design-brief",
+      "title": "Turning a Wedding Memory into a Design Brief",
+      "eyebrow": "Commissioning",
+      "description": "Begin with the detail that holds the memory. Turn the meaning of a wedding flower, colour or invitation into questions the atelier can help you explore.",
+      "sections": [
+        {
+          "id": "db019-1",
+          "heading": "Begin with what the memory means",
+          "paragraphs": [
+            "A wedding-memory brief does not need to begin with a list of decorative options. Start with the part of the occasion you want to remember: a gesture, a colour relationship, a few words or the presence of particular flowers. Meaning can guide the composition before its format is chosen. A generous frame, a compact block and a quieter circular object may each tell a different story. None is automatically more personal. The useful question is which arrangement gives the chosen memory enough space to be understood."
+          ]
+        },
+        {
+          "id": "db019-5",
+          "heading": "Ask about the actual materials",
+          "paragraphs": [
+            "Sentimental items can be irreplaceable. Before moving or sending anything, request the studio's current instructions and an assessment of the actual materials involved. This article provides no drying, packing, chemical-treatment or shipping recipe. Describe what you have and ask what information can be reviewed first, through the selected piece’s customization form. Clarify whether originals, copies or a different representation should be considered. Any expectations about appearance, condition or preservation outcomes need a direct, informed conversation. The emotional significance of an item makes those boundaries more important, not less, even when an online design looks beautifully resolved."
+          ]
+        },
+        {
+          "id": "choose-what-leads",
+          "heading": "Choose the detail that should lead",
+          "paragraphs": [
+            "A bouquet may hold many colours and textures, but one relationship can guide the composition. It might be the shape of a particular flower, a ribbon colour or the connection between flowers and an invitation. Explain that priority before asking for a format. Keep irreplaceable originals with you until the atelier has discussed their condition, suitability and current transfer instructions."
+          ]
+        }
+      ],
+      "image": "/media/product-hero-020-4x5.webp",
+      "imageAlt": "Vow: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP085",
+        "DP087"
+      ]
+    },
+    {
+      "id": "DB020",
+      "kind": "article",
+      "route": "/journal/choosing-a-format-for-a-bouquet-keepsake",
+      "title": "Choosing a Format for a Bouquet Keepsake",
+      "eyebrow": "Commissioning",
+      "description": "A frame, a block and a circular form organize flowers differently. Compare their visual roles before asking which format suits your keepsakes.",
+      "sections": [
+        {
+          "id": "db020-1",
+          "heading": "Compare formats as different compositions",
+          "paragraphs": [
+            "A bouquet keepsake can be imagined as a frame, a block or a circular composition, but choosing among them is more than selecting an outline. Each format changes the relationship between flowers, background and surrounding space. Start by describing how you want the object to be encountered. Should it read as a quiet picture on a wall, a small volume on a surface or a concentrated detail viewed closely? Use the available designs to discuss these differences. Their purpose is to reveal preferences; they do not prove that a particular bouquet can be used or that the illustrated format has been fabricated."
+          ]
+        },
+        {
+          "id": "db020-2",
+          "heading": "Consider the frame's field",
+          "paragraphs": [
+            "A frame gives the composition a defined field and a visible boundary. Within it, flowers might form a central gathering, a loose vertical gesture or an arrangement with generous open space. The border itself also has a role: it can quietly contain the work or become a strong part of the image. Describe the balance you prefer rather than requesting an exact copy of a reference. Ask how the proposed depth and size would be established for the actual materials. A flat screen image cannot settle those questions, and a frame-like appearance does not establish a mounting method or finished weight."
+          ]
+        },
+        {
+          "id": "db020-4",
+          "heading": "Let a circle organize movement",
+          "paragraphs": [
+            "A circular outline can encourage the eye to travel around a composition. Flowers might follow the edge, gather on one side or frame an open centre. Each choice produces a different balance between movement and stillness. If wording is included, consider whether it sits within that movement or interrupts it. Sketch a few simple arrangements with shapes before discussing exact flowers or text. This keeps the conversation focused on composition. The chosen circle's dimensions, support, materials and eventual use still need confirmation. A pleasing outline is not evidence that every botanical element or personalization request can be accommodated within it."
+          ]
+        },
+        {
+          "id": "db020-6",
+          "heading": "Make the format a considered request",
+          "paragraphs": [
+            "Record a preferred format and a reason, then name one acceptable alternative if you have one. For example, the priority might be generous space around a few selected blooms, with the outline remaining flexible. Such a brief gives the studio room to respond to the actual materials and practical constraints. Keep any original items with their owner until current instructions and suitability have been discussed. Review the eventual dimensions, wording, display requirements and care guidance as part of the real proposal. Choosing a proposed format online creates a conversation-ready preference, not an order, a technical approval or a guarantee about the finished keepsake."
+          ]
+        }
+      ],
+      "image": "/media/generated/dp086-forever-solid-block-varmala-keepsake-portrait-4x5.webp",
+      "imageAlt": "Forever: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP087",
+        "DP086",
+        "DP088"
+      ]
+    },
+    {
+      "id": "DB021",
+      "kind": "article",
+      "route": "/journal/names-and-dates-a-personalization-proofreading-checklist",
+      "title": "Names and Dates: A Personalization Proofreading Checklist",
+      "eyebrow": "Commissioning",
+      "description": "Small details carry meaning. Use one clear spelling, an unambiguous date and a readable proof before confirming personalization.",
+      "sections": [
+        {
+          "id": "db021-2",
+          "heading": "Establish one authoritative spelling",
+          "paragraphs": [
+            "For a real brief, ask the appropriate person to supply the exact spelling to be used. Copy it into a single agreed reference rather than collecting slightly different versions across messages. Pay attention to spaces, accents and characters that may be unfamiliar to the reviewer. Do not automatically shorten a name to fit a layout. If the proposed format requires an abbreviation, make that a separate question. The visual proof should be compared against the authoritative text, not against someone's memory of it. This simple distinction helps prevent an attractive layout from concealing a transcription error that has already entered the conversation."
+          ]
+        },
+        {
+          "id": "db021-3",
+          "heading": "Make the date unambiguous",
+          "paragraphs": [
+            "A numeric date can be read differently depending on the order of day and month. Agree how it should be written before considering its decorative treatment. Spelling out the month may help in some contexts, while another format may suit the intended wording better. The decision should be explicit and checked by the person responsible for the content. Keep the meaningful local calendar date as supplied; do not let a software timezone conversion silently change it. A proof should show the complete inscription together, because the placement of separators, spacing and line breaks can alter how even a correct date is read."
+          ]
+        },
+        {
+          "id": "db021-5",
+          "heading": "Check the composition around the text",
+          "paragraphs": [
+            "Correct wording can still feel crowded when placed beside flowers, imagery or an irregular material boundary. Review the space around the inscription and the hierarchy between its lines. Decide which information should be noticed first. If the composition changes after the wording is checked, review the complete proof again rather than assuming that the earlier approval covers every new arrangement. A line break may separate words in an unintended way, while a decorative element may make a small character harder to read. These are design questions worth resolving alongside spelling, not reasons to compress more information into a format than it can clearly hold."
+          ]
+        },
+        {
+          "id": "db021-6",
+          "heading": "Record exactly what was reviewed",
+          "paragraphs": [
+            "A useful proof record identifies the object, text, layout revision and unresolved questions. In a real project, ask the studio how the final approval is captured and how later changes are handled. Before agreeing a physical inscription, compare the final proof against the authoritative wording one last time. Read it slowly and, where helpful, have another authorized person review it independently. The purpose is a clear shared decision about the exact text and arrangement, rather than a general statement that the design looks good."
+          ]
+        }
+      ],
+      "image": "/media/product-hero-020-4x5.webp",
+      "imageAlt": "Vow: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP085",
+        "DP114"
+      ]
+    },
+    {
+      "id": "DB022",
+      "kind": "article",
+      "route": "/journal/designing-a-wedding-invitation-keepsake",
+      "title": "Designing a Wedding-Invitation Keepsake",
+      "eyebrow": "Commissioning",
+      "description": "An invitation brings together words, colour and the memory of a gathering. Plan what to reveal, what to leave private and how the page sits within the composition.",
+      "sections": [
+        {
+          "id": "db022-3",
+          "heading": "Give the page room to breathe",
+          "paragraphs": [
+            "A document can feel crowded when every edge is framed tightly by decoration. Try describing the relationship between the invitation and its surrounding field: centred, offset, layered or given a generous margin. If flowers or another keepsake are included in the idea, decide which element leads and which supports it. A simple sketch of rectangular and organic shapes can reveal the balance before any original material is involved. Ask which views would help clarify depth and scale. A front-facing design image can suggest an arrangement but cannot establish the construction, thickness or final appearance of a physical invitation keepsake."
+          ]
+        },
+        {
+          "id": "db022-4",
+          "heading": "Discuss originals and alternatives explicitly",
+          "paragraphs": [
+            "An original invitation may be irreplaceable even when a digital copy exists. Before anything is sent, ask the studio whether the actual paper and printing can be assessed and what information is needed first. Do not assume that a process suitable for one document is suitable for another. This article offers no treatment, coating, packing or shipping instructions. Alternatives such as a permitted reproduction or a text-based interpretation may be worth discussing, but their feasibility also needs confirmation. The important first decision is whether an original is necessary to the intended meaning, rather than treating its transfer as an automatic part of the enquiry."
+          ]
+        },
+        {
+          "id": "review-the-visible-text",
+          "heading": "Review the words that remain visible",
+          "paragraphs": [
+            "Read the invitation as both a design and a record of personal details. Decide which names, date or message you want the object to show, and which information should stay out of photographs or the finished composition. Provide the exact approved text separately where it needs to be recreated. A crop can remove an address while keeping the part of the invitation that carries the memory."
+          ]
+        }
+      ],
+      "image": "/media/generated/dp099-letterlight-invitation-frame-portrait-4x5.webp",
+      "imageAlt": "Letterlight: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP099",
+        "DP100"
+      ]
+    },
+    {
+      "id": "DB023",
+      "kind": "article",
+      "route": "/journal/a-preservation-clock-as-a-memory-object",
+      "title": "A Preservation Clock as a Memory Object",
+      "eyebrow": "Commissioning",
+      "description": "A clock can give a memory a place in daily life. Consider the dial, the preserved elements and the setting as parts of one object.",
+      "sections": [
+        {
+          "id": "db023-2",
+          "heading": "Give the dial a clear role",
+          "paragraphs": [
+            "The dial can lead the composition or sit quietly within it, but its relationship to surrounding elements needs to be intentional. Consider whether flowers form a border, gather to one side or leave an open central field. Ask how the hands and markers would remain visually distinct from the botanical detail. This is a question to explore at the proposed scale and viewing distance. A close-up rendering may look clear on a screen while leaving the real arrangement unresolved. Do not assume that every decorative element shown can coexist with the eventual mechanism or that a design image settles legibility."
+          ]
+        },
+        {
+          "id": "db023-3",
+          "heading": "Describe the intended setting",
+          "paragraphs": [
+            "A wall clock across a room is encountered differently from a small desk clock nearby. Note the proposed location, usual viewpoint and surrounding visual activity. If the object will share a shelf with other memories, describe that grouping rather than presenting it as an isolated hero image. Ask which dimensions and support details need to be established for the chosen format. Mounting, stability and handling depend on the actual design and setting, so this article does not prescribe them. The brief's job is to make the conditions visible to the responsible maker, not to certify a location from a photograph."
+          ]
+        },
+        {
+          "id": "db023-6",
+          "heading": "Review the whole object together",
+          "paragraphs": [
+            "The final design discussion should reconnect the two parts of the brief: meaning and function. Look at the arrangement of the memory elements, the exact wording if present and the proposed dial at the intended scale. Review the practical specification alongside the visual rather than approving each in isolation and hoping they agree. It does not create an order or confirm a mechanism. A real agreement needs the atelier's process, a reviewed design and clear answers about the actual object that would be made."
+          ]
+        }
+      ],
+      "image": "/media/generated/dp091-hourglass-floral-wall-clock-portrait-4x5.webp",
+      "imageAlt": "Hourglass: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP091",
+        "DP093"
+      ]
+    },
+    {
+      "id": "DB024",
+      "kind": "article",
+      "route": "/journal/before-you-send-sentimental-materials",
+      "title": "Before You Send Sentimental Materials",
+      "eyebrow": "Commissioning",
+      "description": "Start with a conversation while your sentimental items remain with you. Establish suitability, transfer instructions and expectations before arranging a handover.",
+      "sections": [
+        {
+          "id": "db024-4",
+          "heading": "Obtain current transfer instructions",
+          "paragraphs": [
+            "If the studio agrees that a transfer is appropriate, request its current instructions directly. Confirm the destination, recipient, timing and any required reference information through the actual business channel. Do not rely on an old screenshot, a design caption or an address inferred from another source. Ask who is responsible for arranging transport and what the agreed process says about receipt and condition records. Keep those arrangements with the instructions for your particular item. If an instruction is unclear, resolve it before sending. The value of a sentimental object makes a clear shared understanding more useful than speed alone."
+          ]
+        },
+        {
+          "id": "db024-6",
+          "heading": "Agree expectations before the handover",
+          "paragraphs": [
+            "Before an original changes hands, make sure the intended design, unresolved risks, scope and next steps are understood through the real process. Ask what will happen if suitability changes after closer assessment and how any proposed alteration will be discussed. Avoid interpreting a general expression of interest as acceptance of materials or a guarantee about their eventual appearance. A careful first conversation protects the meaning of the keepsake by keeping the practical decisions visible, explicit and connected to the actual item rather than an imagined result."
+          ]
+        },
+        {
+          "id": "make-a-clear-record",
+          "heading": "Make a clear record of the handover",
+          "paragraphs": [
+            "Before anything leaves your care, agree what is being sent and how it will be identified. Ask the atelier which photographs or descriptions are useful for recording its condition. Confirm the recipient, packing guidance and transport arrangement directly. Keep a copy of the agreed instructions with your inquiry reference. An online image cannot establish the condition of an original or guarantee a preservation result."
+          ]
+        }
+      ],
+      "image": "/media/product-hero-020-4x5.webp",
+      "imageAlt": "Vow: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP085",
+        "DP099"
+      ]
+    },
+    {
+      "id": "DB025",
+      "kind": "article",
+      "route": "/journal/a-family-nameplate-with-a-personal-story",
+      "title": "A Family Nameplate with a Personal Story",
+      "eyebrow": "Commissioning",
+      "description": "Give the family name a clear place in the composition. Explore lettering, supporting details and the view from the approach to your home.",
+      "sections": [
+        {
+          "id": "db025-3",
+          "heading": "Build a clear hierarchy of words",
+          "paragraphs": [
+            "If several lines of text are included, decide which one should lead. A main name, a house number and a short message do not all need equal emphasis. Try a plain arrangement before adding decorative elements. Read the words at the intended scale, paying attention to spacing and letters that could be confused. The choice of type should support recognition as well as atmosphere. Ask whether the proposed lettering style and method can actually be produced. A font displayed on a webpage is not automatically a fabrication option, and the final inscription needs its own exact proof rather than a general approval of the design."
+          ]
+        },
+        {
+          "id": "db025-4",
+          "heading": "Let the decoration support the name",
+          "paragraphs": [
+            "Botanical detail, a resin passage or an irregular edge can give a nameplate character, but each occupies attention. Describe which element should be noticed first and which should be discovered later. A small motif may feel more personal than a dense field if it connects to a particular memory. Avoid asking for every reference detail to appear at once. A simple sketch can reveal where open space is needed around the letters. Actual flowers or other inclusions require a separate suitability discussion; their appearance in a design does not guarantee that a specific material can be accepted or preserved in the proposed way."
+          ]
+        },
+        {
+          "id": "check-the-approach",
+          "heading": "Consider the view from the approach",
+          "paragraphs": [
+            "Look at the surface where the nameplate might sit and the distance from which it will usually be read. Record the available area and share a photograph that does not reveal unnecessary private details. Ask the atelier to confirm the proposed size, material suitability and mounting approach for that setting. An attractive lettering layout is one part of the decision; placement and installation need their own discussion."
+          ]
+        }
+      ],
+      "image": "/media/generated/dp103-threshold-family-nameplate-portrait-4x5.webp",
+      "imageAlt": "Threshold: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP103",
+        "DP104"
+      ]
+    },
+    {
+      "id": "DB026",
+      "kind": "article",
+      "route": "/journal/photographs-privacy-and-memory-art",
+      "title": "Photographs, Privacy and Memory Art",
+      "eyebrow": "Commissioning",
+      "description": "Choose photographs for both their meaning and the people they include. A thoughtful brief shares only what the design discussion needs.",
+      "sections": [
+        {
+          "id": "db026-2",
+          "heading": "Ask who should be involved",
+          "paragraphs": [
+            "Before using a photograph, consider who appears in it, who supplied it and who should have a say in its intended use. A private family keepsake and a public portfolio image are different contexts. Permission for one should not be assumed to cover the other. Where the situation is unclear, resolve it with the relevant people and, if needed, obtain appropriate advice. This article is not legal guidance. Its practical point is to make the intended use explicit early, before a file moves through several channels or becomes part of a design proof that is shared more widely than expected."
+          ]
+        },
+        {
+          "id": "db026-3",
+          "heading": "Share the smallest useful reference",
+          "paragraphs": [
+            "A first discussion may only need a description of the image and the proposed format. If the studio later requests a file, ask which version is needed and through what channel it should be provided. Avoid sending an entire album when one permitted image is sufficient. Check for unrelated private information visible in the background or in accompanying file details. A limited-sharing approach keeps the design conversation focused while reducing unnecessary copies and making it easier to understand who has received the material and for what purpose."
+          ]
+        },
+        {
+          "id": "db026-4",
+          "heading": "Discuss cropping as a meaningful edit",
+          "paragraphs": [
+            "Cropping can strengthen a composition, but it can also remove part of the memory. A background detail that seems incidental to one person may be central to another. Explain what must remain visible and what may be changed before a layout is prepared. Ask to review the proposed crop at the intended shape and scale. Keep the original separate from edited proofs so the versions are not confused. A design image that suggests a photographic panel is not evidence that the source has enough detail for a particular size, and it does not settle how the image would be reproduced physically."
+          ]
+        }
+      ],
+      "image": "/media/generated/dp101-together-couple-memory-frame-portrait-4x5.webp",
+      "imageAlt": "Together: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP101"
+      ]
+    },
+    {
+      "id": "DB027",
+      "kind": "article",
+      "route": "/journal/small-objects-with-a-personal-meaning",
+      "title": "Small Objects with a Personal Meaning",
+      "eyebrow": "Commissioning",
+      "description": "A small gift can carry a precise idea. Start with the person, the occasion and the everyday place the object might hold.",
+      "sections": [
+        {
+          "id": "db027-3",
+          "heading": "Consider the everyday setting",
+          "paragraphs": [
+            "Imagine where the object might be used or kept. A desk item, a piece of jewellery and an object carried in a bag encounter different situations. Describe the intended role and ask what the actual specification says about it. Do not infer suitability, durability or material safety from a polished design image. A small tray illustrated beside everyday objects is not a food-contact claim, and a jewellery design does not establish fitting composition or skin compatibility. Discuss these questions with the atelier. The visual brief can remain personal while being precise about which practical details still need confirmation."
+          ]
+        },
+        {
+          "id": "db027-5",
+          "heading": "Think about the moment of giving",
+          "paragraphs": [
+            "The way a gift is presented can support its meaning, but packaging and delivery arrangements should be requested explicitly. Do not assume that an illustrated box, ribbon or surrounding prop is included with a design. If the gift relates to an occasion, explain the date as context and ask what is feasible before relying on a deadline. Consider whether the recipient should see a personal message privately or whether it belongs on the visible object. These choices can be discussed without turning the enquiry into a checkout. A real agreement still needs the atelier's confirmation of scope, price, timing and available presentation options."
+          ]
+        },
+        {
+          "id": "write-one-clear-intention",
+          "heading": "Write one clear intention",
+          "paragraphs": [
+            "Describe the gift in a sentence that begins with the recipient: someone who enjoys a quiet desk, someone marking a new home, or someone remembering a shared occasion. That intention can guide the choice of form and personalization. Select one meaningful detail rather than filling every surface with decoration. Confirm the exact inscription and any presentation options before agreeing the order."
+          ]
+        }
+      ],
+      "image": "/media/generated/dp111-thread-of-light-resin-rakhi-portrait-4x5.webp",
+      "imageAlt": "Thread of Light: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP111",
+        "DP114",
+        "DP115"
+      ]
+    },
+    {
+      "id": "DB028",
+      "kind": "article",
+      "route": "/journal/a-cohesive-gift-set-without-repeating-every-detail",
+      "title": "A Cohesive Gift Set without Repeating Every Detail",
+      "eyebrow": "Commissioning",
+      "description": "A shared colour, line or inscription can connect a gift set without making every piece identical. Plan the group and its individual objects together.",
+      "sections": [
+        {
+          "id": "db028-2",
+          "heading": "Choose one consistent element",
+          "paragraphs": [
+            "Select a single feature that will remain consistent across the proposed set. It could be an initial style, one visual tone or a recurring material gesture. Write it down clearly so later choices can be compared against it. If everything varies, the set may lose its connection; if every detail repeats, the objects may feel unnecessarily uniform. The right balance depends on the intention. Use a simple arrangement of shapes or labelled design cards to explore it. Do not recolour product images to imply available variants. A different colour request should remain a written preference until an approved visual or physical material sample supports it."
+          ]
+        },
+        {
+          "id": "db028-3",
+          "heading": "Give variation a purpose",
+          "paragraphs": [
+            "Variation is most useful when it reflects the role of each object or the preferences of different recipients. A larger piece may carry the main message while smaller items remain quiet. Alternatively, individual initials may distinguish recipients within a shared design language. Avoid adding arbitrary differences merely to make every card look unique. Explain the purpose of each variation and ask how it affects the real specification and quotation. The collection can illustrate a relationship between designs, but it cannot promise that a material effect will match exactly across different forms or that every personalization method is appropriate for every item."
+          ]
+        },
+        {
+          "id": "db028-4",
+          "heading": "Review the group and each item",
+          "paragraphs": [
+            "A set should be considered both as a composition and as separate objects. Lay out the proposed items at comparable scales and examine the overall balance, then review each one on its own. Check whether the connection remains visible without the surrounding group. If text is used, verify it individually; a correct shared style does not guarantee that every name or initial is correct. Keep the product IDs and quantities explicit in the brief. This avoids a mood image being mistaken for a complete order list, especially when props, alternative variants or decorative packaging appear near the actual designs under discussion."
+          ]
+        }
+      ],
+      "image": "/media/generated/dp111-thread-of-light-resin-rakhi-portrait-4x5.webp",
+      "imageAlt": "Thread of Light: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP111",
+        "DP114",
+        "DP115"
+      ]
+    },
+    {
+      "id": "DB029",
+      "kind": "article",
+      "route": "/journal/personalized-resin-jewellery-preparing-your-brief",
+      "title": "Personalized Resin Jewellery: Preparing Your Brief",
+      "eyebrow": "Materials",
+      "description": "Prepare a jewellery brief through proportion, colour and the details that matter to the wearer. Keep questions about fittings and the final specification visible.",
+      "sections": [
+        {
+          "id": "db029-2",
+          "heading": "Consider scale in relation to the wearer",
+          "paragraphs": [
+            "A close-up photograph can make a small object appear substantial, while a distant styled image may hide important detail. Ask for proposed dimensions with units and, where appropriate, a clearly labelled scale reference. Describe the intended visual presence rather than assuming that a design's size will suit everyone. A delicate-looking shape and a statement piece make different contributions to an outfit, but their actual weight and comfort cannot be judged reliably from a rendering. Those details need information about the physical design. If the scale remains undecided, keep it as an open question rather than filling the brief with an arbitrary number."
+          ]
+        },
+        {
+          "id": "db029-4",
+          "heading": "Ask about fittings as their own specification",
+          "paragraphs": [
+            "The decorative element is only one part of a jewellery object. Chains, hooks, posts, closures and other fittings need their own description where applicable. Ask the studio what the actual fitting material and dimensions would be, rather than inferring them from a metallic appearance in a design. If you have a personal sensitivity or medical concern, seek appropriate advice and do not rely on this article or an image caption. A useful brief keeps these practical questions visible without treating an attractive front view as a complete description of the wearable object."
+          ]
+        },
+        {
+          "id": "db029-5",
+          "heading": "Keep personalization proportionate",
+          "paragraphs": [
+            "An initial or tiny motif can carry meaning, but small scale limits how clearly detail can be read. Decide which element should lead and whether the personalization belongs on the visible face at all. Ask to review the exact proposed wording or symbol at the intended size. Avoid assuming that every typography option shown elsewhere in the collection can be used on jewellery. The actual method and feasible detail need confirmation. If a botanical inclusion is part of the idea, discuss its suitability separately. A design image cannot guarantee the acceptance, appearance or preservation of a particular sentimental flower or other original material."
+          ]
+        },
+        {
+          "id": "db029-6",
+          "heading": "Prepare the questions that remain",
+          "paragraphs": [
+            "A concise jewellery brief identifies the design, desired visual scale, preferred colour direction, any proposed personalization and the information still needed about the actual object. Include the intended occasion as context, with timing subject to confirmation. Ask for the final specification, care guidance and available presentation options through the real business process. Keep the visual direction separate from the specification questions that still need confirmation. A considered small object begins with a clear idea and an equally clear understanding of what has not yet been established."
+          ]
+        }
+      ],
+      "image": "/media/generated/dp109-botanical-resin-pendant-portrait-4x5.webp",
+      "imageAlt": "Botanical: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP109",
+        "DP110"
+      ]
+    },
+    {
+      "id": "DB030",
+      "kind": "article",
+      "route": "/journal/seasonal-gifting-without-the-marketplace-clutter",
+      "title": "Seasonal Gifting without the Marketplace Clutter",
+      "eyebrow": "Commissioning",
+      "description": "Make the recipient the starting point for a seasonal gift. A restrained palette and a clear message can outlast the occasion.",
+      "sections": [
+        {
+          "id": "db030-3",
+          "heading": "Use seasonal colour with restraint",
+          "paragraphs": [
+            "A colour reference can acknowledge an occasion without turning the object into a temporary decoration. Consider whether the recipient would enjoy it beyond the event itself. One accent may be enough, especially when the form already carries a strong material expression. Keep colour preferences separate from claims about available variants. A design image should not be recoloured to suggest a production option that has not been approved. If the supplied choices do not match the idea, record a question for the studio. The actual material, finish and colour decision needs the appropriate reference and a confirmed specification for the object being discussed."
+          ]
+        },
+        {
+          "id": "db030-5",
+          "heading": "Separate presentation from the object",
+          "paragraphs": [
+            "A styled image may contain ribbons, boxes, foliage or other props that contribute to its atmosphere. Ask explicitly which presentation elements, if any, are part of a real proposal. Decide whether a short message belongs on the object, in a separate note or in the moment of giving. These choices can reduce unnecessary visual clutter while keeping the gesture personal. If several gifts are involved, distinguish item quantities from the number of recipients or sets. Share recipient details only when they are needed to agree personalization or delivery."
+          ]
+        },
+        {
+          "id": "work-back-from-the-occasion",
+          "heading": "Discuss the occasion early",
+          "paragraphs": [
+            "Include the intended occasion and preferred date in your inquiry, while leaving room for the atelier to confirm what is feasible. Decide which details are essential and which could change. For several recipients, make the quantities and proposed inscriptions clear before requesting a quotation. Keep addresses and recipient information out of the initial brief unless they are necessary for the conversation."
+          ]
+        }
+      ],
+      "image": "/media/product-hero-029-4x5.webp",
+      "imageAlt": "Everyday: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP114",
+        "DP118"
+      ]
+    },
+    {
+      "id": "DB031",
+      "kind": "article",
+      "route": "/journal/corporate-gifts-as-small-design-objects",
+      "title": "Corporate Gifts as Small Design Objects",
+      "eyebrow": "Commissioning",
+      "description": "Bring purpose, quantities and design decisions into one readable brief. Plan a group of gifts with room for an individual response.",
+      "sections": [
+        {
+          "id": "db031-4",
+          "heading": "Make quantities unambiguous",
+          "paragraphs": [
+            "State the proposed number of individual objects and distinguish it from the number of sets. If variants or different inscriptions are requested, show how those quantities are distributed without supplying real recipient data at the planning stage. Ask how the studio would review the list before production. A requested quantity still needs confirmation of capacity, availability and price. Changes to the count may also affect the proposal, so keep the version of the quantity list connected to the design revision being discussed. A concise table is often more useful than a sentence that mixes total units, spare items and alternative ideas without explaining their relationship."
+          ]
+        },
+        {
+          "id": "db031-6",
+          "heading": "Prepare a brief others can review",
+          "paragraphs": [
+            "A useful corporate-gift brief combines purpose, selected designs, proposed quantities, permitted branding direction, review roles and timing questions. Identify what is essential and where alternatives are welcome. In the real process, review the exact design, wording, specification and scope before agreement, with any subsequent changes tied to a clear revision. A small design object can represent an organization thoughtfully when the brief gives both the creative intention and the practical decisions a clear, shared place."
+          ]
+        },
+        {
+          "id": "agree-who-reviews",
+          "heading": "Agree who will review the design",
+          "paragraphs": [
+            "Name the role responsible for approving the visual direction and the person who will confirm quantities and timing. Use only brand assets you are authorized to share. Ask for one clearly identified design version that shows the intended wording, placement and scope. Gather comments before sending them to the atelier so conflicting instructions do not become separate versions of the same request."
+          ]
+        }
+      ],
+      "image": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
+      "imageAlt": "Twinleaf: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP117",
+        "DP119"
+      ]
+    },
+    {
+      "id": "DB032",
+      "kind": "article",
+      "route": "/journal/choosing-initials-colours-and-a-short-message",
+      "title": "Choosing Initials, Colours and a Short Message",
+      "eyebrow": "Commissioning",
+      "description": "Choose one clear idea, then refine the initials, colour direction and short message around it. Check the exact wording at the proposed scale.",
+      "sections": [
+        {
+          "id": "db032-2",
+          "heading": "Clarify what the initials mean",
+          "paragraphs": [
+            "Initials can appear in different orders, and the intended order should be supplied explicitly rather than inferred from a name. Decide whether punctuation, spaces or a connecting symbol belongs between them. If more than one person is represented, confirm the arrangement with the relevant people in the real process. A decorative treatment can change the visual emphasis between letters, so review the actual proposed layout. Do not rely on a generic monogram shown in a design card. The proof should contain the exact intended characters, with any uncertain order or interpretation resolved before it is treated as an approved inscription."
+          ]
+        },
+        {
+          "id": "db032-3",
+          "heading": "Describe colour as a preference",
+          "paragraphs": [
+            "A colour word can cover many appearances. Instead of saying only green or gold, explain whether the desired quality is muted, dark, warm, translucent-looking or strongly contrasting. Connect the preference to an approved reference where possible, while acknowledging that a screen cannot guarantee an exact physical match. Do not recolour a product photograph to invent a variant. The supplied options are proposed directions that need confirmation for a real proposal. If a particular match matters, ask what reference or physical material sample would be used and how the final selection would be recorded. A named preference is the beginning of that decision, not its completion."
+          ]
+        },
+        {
+          "id": "db032-5",
+          "heading": "Review text at the proposed scale",
+          "paragraphs": [
+            "Once a layout is proposed, examine the wording and decorative elements together. Check where lines break, how much space remains around the text and whether small characters are distinguishable. Ask how the intended lettering method affects feasible detail. A font on a webpage is not evidence of a particular engraving, printing or other physical process. If the object changes size or shape, revisit the text arrangement rather than assuming an earlier proof still applies. Keep the design revision visible so the discussion refers to one coherent proposal. Exact wording and visual placement should be reviewed as connected decisions with their own clear record."
+          ]
+        },
+        {
+          "id": "db032-6",
+          "heading": "Keep the brief and approval distinct",
+          "paragraphs": [
+            "A customization brief expresses a request; an approved specification records what has actually been agreed. The gap between them may contain questions about wording, materials, scale, feasibility or timing. Leave those questions visible and ask the atelier how the final decision is captured through the real workflow. Used with that boundary understood, a concise brief can make the eventual conversation easier: one clear intention, a few deliberate choices and an exact proof of the details that carry the meaning."
+          ]
+        }
+      ],
+      "image": "/media/generated/dp111-thread-of-light-resin-rakhi-portrait-4x5.webp",
+      "imageAlt": "Thread of Light: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP111",
+        "DP114"
+      ]
+    },
+    {
+      "id": "DB033",
+      "kind": "article",
+      "route": "/journal/inside-a-material-led-design-notebook",
+      "title": "Inside a Material-Led Design Notebook",
+      "eyebrow": "Materials",
+      "description": "Keep observations, references and decisions connected. A material-led notebook can give an early idea a useful path toward a design brief.",
+      "sections": [
+        {
+          "id": "db033-1",
+          "heading": "Give observations somewhere to live",
+          "paragraphs": [
+            "A material-led design notebook can begin with ordinary observations: the line of a branch, a changing reflection or the way an empty area makes a form easier to see. Write down what caught your attention before trying to turn it into a product. A brief sentence may preserve the idea more clearly than an unexplained image. This article describes an illustrative planning method, not documentary access to RivyaLivingArt's workshop. It makes no claim about a particular fabrication process or the origin of a finished collection. The notebook is a way to explore visual relationships while keeping facts, references and speculation distinguishable."
+          ]
+        },
+        {
+          "id": "db033-2",
+          "heading": "Label references by their role",
+          "paragraphs": [
+            "A photograph, a design rendering, a material sample and a quick sketch provide different kinds of information. Give each reference a label explaining why it is included. One may show a curve; another may suggest a palette; a third may record a practical constraint. Avoid collecting images as though all were equally authoritative. Record the source and any permission limits relevant to their use, and do not treat another maker's object as a design to reproduce. A useful reference board extracts questions and general relationships. It leaves room for an original response instead of quietly turning admiration into an instruction to copy."
+          ]
+        },
+        {
+          "id": "db033-3",
+          "heading": "Move from words to simple shapes",
+          "paragraphs": [
+            "Before refining detail, reduce the idea to a few shapes. Consider the solid areas, the openings and the direction in which the eye travels. A simple drawing can reveal whether the composition depends on a surface pattern or on the overall form. Try more than one proportion and keep the alternatives visible long enough to compare them. The purpose is not to make an early sketch look finished. It is to discover which relationship is worth developing. If a form suggests a structural or manufacturing question, write that question alongside it rather than solving it through a more convincing-looking illustration alone."
+          ]
+        },
+        {
+          "id": "db033-5",
+          "heading": "Record why a direction changes",
+          "paragraphs": [
+            "When a sketch is revised, keep a short note about the reason. Perhaps the base competes with the top, the material boundary becomes too busy or the intended scale changes after the room is considered. Such notes make later comparisons more useful than a folder of numbered images alone. They also help distinguish a new working idea from the version currently being discussed."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP069"
+      ]
+    },
+    {
+      "id": "DB034",
+      "kind": "article",
+      "route": "/journal/how-to-read-a-product-specification",
+      "title": "How to Read a Product Specification",
+      "eyebrow": "Materials",
+      "description": "Read dimensions, materials and revision notes as a connected record. Learn which questions a specification answers and which still need discussion.",
+      "sections": [
+        {
+          "id": "db034-2",
+          "heading": "Read units before numbers",
+          "paragraphs": [
+            "A number without units can be misunderstood even when it looks familiar. Check the units used for dimensions and distinguish overall size from the size of an individual component. Ask what the order of dimensions means if it is not explicit. For an irregular object, determine which points define the stated measurement. Do not infer exact size from a photograph or convert an ambiguous figure into a confident one. The purpose of reading carefully is to expose missing context. If a value is unknown, leaving it marked as unknown is more informative than entering zero or copying a plausible number from a different product."
+          ]
+        },
+        {
+          "id": "db034-4",
+          "heading": "Look for the limits of the document",
+          "paragraphs": [
+            "No single sheet necessarily answers every question about an object. Ask what it covers and what belongs in separate drawings, material information, care guidance or installation documentation. Weight, mounting, handling and performance details should come from the actual approved design, not assumptions based on visual mass or familiar materials. If a claim matters to the intended use, request relevant evidence rather than treating a descriptive adjective as certification. This article offers a reading approach, not technical approval. The responsible maker and project team need to confirm the information required for the particular object and the environment in which it would be used."
+          ]
+        },
+        {
+          "id": "db034-5",
+          "heading": "Compare files without merging their authority",
+          "paragraphs": [
+            "A specification sheet, a design image and a material sample can support one another while remaining different records. Keep their references visible when reviewing them together. If a later drawing changes a dimension, ask whether the written sheet has been updated. If a finish reference changes, identify which version is now under consideration. Avoid creating an informal composite by choosing preferred details from several incompatible revisions."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP085"
+      ]
+    },
+    {
+      "id": "DB035",
+      "kind": "article",
+      "route": "/journal/preparing-a-clear-whatsapp-enquiry",
+      "title": "Preparing a Clear WhatsApp Enquiry",
+      "eyebrow": "Commissioning",
+      "description": "Choose a piece, save a useful brief and continue the conversation on WhatsApp. Here is what to prepare and what remains to be agreed.",
+      "sections": [
+        {
+          "id": "choose-a-starting-point",
+          "heading": "Choose the closest piece",
+          "paragraphs": [
+            "Begin in the collection and open the piece that best expresses your idea. Its form asks for details relevant to that design. A table brief may focus on dimensions and the room; a keepsake brief may focus on what you would like to preserve. Answer what you know and use the notes to explain the questions you would like to discuss."
+          ]
+        },
+        {
+          "id": "prepare-a-small-brief",
+          "heading": "Make each reference useful",
+          "paragraphs": [
+            "A useful brief explains the purpose of the piece, your preferred direction and any timing or location context. You can add up to three JPG, PNG or WebP references, each up to 3 MB. Choose images you are entitled to share, and explain the detail that matters in each one. Avoid including unrelated personal information."
+          ]
+        },
+        {
+          "id": "save-before-whatsapp",
+          "heading": "Save, then continue on WhatsApp",
+          "paragraphs": [
+            "Review your contact details and requirements before selecting Place Order. The website saves the inquiry and its private references in Studio, then gives you a receipt and a WhatsApp link. The message includes your inquiry reference and text brief. If it is too long for a reliable link, copy the full brief from the receipt and paste it into the conversation. Reference images stay in private storage; the text link does not attach them."
+          ]
+        },
+        {
+          "id": "send-and-agree",
+          "heading": "Send the message and agree the details",
+          "paragraphs": [
+            "Opening WhatsApp prepares a conversation; you still choose whether to send the message. Keep the RLA inquiry reference when following up. Feasibility, the final design, quotation, payment arrangements and delivery are discussed directly with the atelier. Saving the inquiry does not confirm a sale or take a payment. If WhatsApp cannot open, the saved receipt still lets you copy the brief or use the contact details."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP085",
+        "DP114"
+      ]
+    },
+    {
+      "id": "DB036",
+      "kind": "article",
+      "route": "/journal/from-draft-to-approved-design-a-client-checklist",
+      "title": "From Draft to Approved Design: A Client Checklist",
+      "eyebrow": "Commissioning",
+      "description": "Before agreeing a design, gather the right version, the exact personalization and the remaining specification questions in one place.",
+      "sections": [
+        {
+          "id": "db036-1",
+          "heading": "Begin with the version under review",
+          "paragraphs": [
+            "A design review becomes more productive when everyone is looking at the same material. Identify the product or project, the current revision and the files that belong to it. Distinguish the working draft from any version previously agreed for discussion. A newer image is not automatically the approved one, and an older approval should not silently cover later changes."
+          ]
+        },
+        {
+          "id": "db036-2",
+          "heading": "Review the intention before the detail",
+          "paragraphs": [
+            "Start by asking whether the proposal still answers the original purpose. Does the table give the room the intended focal point? Does the keepsake emphasize the right memory? Does the small gift communicate the desired gesture? These questions help keep detailed feedback connected to a coherent direction. If the intention has changed, say so explicitly rather than making a series of small edits that obscure the new brief. A design can be revised thoughtfully without pretending that every part was fixed from the beginning. The useful outcome is a shared understanding of what the design is now trying to achieve and why."
+          ]
+        },
+        {
+          "id": "db036-3",
+          "heading": "Check the actual specification separately",
+          "paragraphs": [
+            "After the visual direction, review the dimensions, materials, selected options and supplied specification files. Confirm that their references match the design version being discussed. Mark unknown values and ask who will resolve them. Do not infer construction, weight, comfort, performance or installation details from an image. A material sample should be identified by the proposal it belongs to, and any claimed property needs relevant information about the actual object. A catalogue image alone cannot provide those confirmations. A real agreement requires the responsible people to establish what is included and what evidence or further work is needed before a particular decision can be approved."
+          ]
+        },
+        {
+          "id": "db036-5",
+          "heading": "Resolve contradictions before agreement",
+          "paragraphs": [
+            "If the image, drawing and written description disagree, do not choose one silently. List the conflict and ask for a coordinated revision or clarification. The same applies when different reviewers give incompatible instructions. Consolidate feedback so the studio receives a coherent set of decisions rather than several competing messages. Some questions may remain open, but their status should be explicit. An approval can only be understood in relation to what it actually covers. This article does not define the business's contractual process; it offers a practical way to make the information clearer before the atelier and client agree the real scope and conditions."
+          ]
+        }
+      ],
+      "image": "/media/product-scene-001-16x9.webp",
+      "imageAlt": "River Channel: design visualization accompanying this article",
+      "relatedProductIds": [
+        "DP001",
+        "DP099"
+      ]
+    }
+  ]
+}

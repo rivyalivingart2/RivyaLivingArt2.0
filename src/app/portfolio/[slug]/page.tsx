@@ -3,10 +3,9 @@ import {approvedProjects} from '@/lib/project-model';
 import {ProjectStory} from '@/components/shop/project-story';
 import {ShopShell} from '@/components/shop/shop-shell';
 import {requirePublicPreview} from '@/lib/public-preview';
-import {indexingEnabled,siteOrigin} from '@/lib/site-metadata';
+import {routeMetadata} from '@/lib/site-metadata';
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}){
- const {slug}=await params,p=approvedProjects.find(p=>p.slug===slug&&p.approvalRecord);
- return p?{title:p.title,description:p.description,alternates:{canonical:siteOrigin+'/portfolio/'+slug},robots:{index:indexingEnabled(),follow:indexingEnabled()},openGraph:{images:[siteOrigin+p.image]}}:{title:'Project unavailable',robots:{index:false,follow:false}};
+ return routeMetadata('/portfolio/'+(await params).slug);
 }
 export default async function Page({params}:{params:Promise<{slug:string}>}){
  await requirePublicPreview();const {slug}=await params;

@@ -1,11 +1,11 @@
 # RivyaLivingArt — Commercial Implementation Plan
 
-**Revision:** 3.8 — Phase 7 Studio source complete; production eligibility hold retained
+**Revision:** 3.9 — Phase 8 public-content source complete; policy/publication and production gates retained
 **Prepared:** 23 September 2026  
-**Status:** Phase 7 source complete; next P8.1; intake off and final QA pending
+**Status:** Phase 8 source checkpoint complete; next P9.1; missing policy particulars, intake activation and final QA remain gated
 **Scope:** Every public page, product/customization instance, private Studio screen and shared state.  
 **Hosting direction:** Vercel only; free services only; commercial deployment eligibility unresolved. No Netlify.  
-**Execution boundary:** The owner authorized the next phase and GitHub publication. P7.1–P7.8 are complete at the source gate from main d1a50072fb42ed44612e621d64a157c7fef20455 (PR #21), on codex/phase-7-studio. No migration, data write, staff creation, export, cleanup, content publication or deployment occurred. Application Preview and Production remain configured to share future live data; synthetic QA and restore require separate disposable resources. Both order-write flags and automatic deployment remain off. Formal QA remains Phase 11; eligible release remains Phase 12. Read PHASE-7-STUDIO.md and L11.
+**Execution boundary:** The owner authorized the next phase and GitHub publication. P8.1–P8.7 are implemented/reviewed at the source gate from main 630521de2f228d2fe935585e12e4639e98da8839 (PR #22), on codex/phase-8-public-content. P8.4 factual drafts are ready; exact undocumented retention/fulfilment terms remain a publication gate. No database write, migration, content publication or deployment occurred. Both order-write flags and automatic deployment remain off. Shared data is not a synthetic QA target. Formal QA remains Phase 11; eligible release remains Phase 12. Read PHASE-8-PUBLIC-CONTENT.md and L12.
 
 **Canonical plan after publication:** `docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md` in the existing repository. The outputs file is a synchronized delivery copy of the same revision, not a competing plan. Read `docs/decisions/2026-09-23-revised-phase-1-approved.md` for the approval record. No repeat plan approval is needed.
 
@@ -416,7 +416,7 @@ Formal integrated verification stays after backend integration. “Testing” be
 
 **Tasks:** P8.1 redesign/review Atelier, process, materials/care, architects, contact and FAQ; P8.2 review all 36 articles and related media; P8.3 publish only genuine projects or use truthful empty/unpublished states; P8.4 finalize privacy/terms/shipping/changes/accessibility copy from actual practices; P8.5 reconcile aliases, product/article redirects, metadata, canonical/sitemap/robots and truthful structured data; P8.6 inventory every public form and ensure general contact never hands off to WhatsApp; P8.7 complete 404/error/loading/empty/expired states and production route isolation.
 
-**Dependencies:** Phases 3–7; only genuinely missing business facts require confirmation. **Files/systems:** app public routes, editorial/content models, reviewed copies, metadata/sitemap/robots, CMS. **Database impact:** versioned drafts/publication after review; original content retained. **UI impact:** P12–P31 and associated instances. **Security:** no private/customer data in public metadata, structured data, previews or search; draft/private noindex is additional protection, not authentication. **Testing:** prepare route/redirect/status, contact links, content factuality and fixture-exposure checks. **Deliverables:** reviewed page/article/policy matrix and corrected copy log. **Exit criteria:** all public routes have explicit final disposition; no placeholders, fake evidence or generic WhatsApp function. **Resume point:** P9.1.
+**Dependencies:** Phases 3–7; only genuinely missing business facts require confirmation. **Files/systems:** app public routes, editorial/content models, reviewed copies, metadata/sitemap/robots, CMS. **Database impact:** versioned drafts/publication after review; original content retained. **UI impact:** P12–P31 and associated instances. **Security:** no private/customer data in public metadata, structured data, previews or search; draft/private noindex is additional protection, not authentication. **Testing:** prepare route/redirect/status, contact links, content factuality and fixture-exposure checks. **Deliverables:** reviewed page/article/policy matrix and corrected copy log. **Exit criteria:** all public routes have explicit final disposition; no placeholders, fake evidence or generic WhatsApp function. **Resume point:** P9.1. **Status:** Source checkpoint complete; all 47 documents and 59 page/API route files have a disposition. P8.4 operational specifics remain a publication gate; no invented policy terms. See PHASE-8-PUBLIC-CONTENT.md and phase-8-content.json.
 
 ### Phase 9 — Integrated motion, media and responsive refinement
 
@@ -611,7 +611,8 @@ Already resolved: pasted workflow is the WhatsApp authority; business number/pho
 | 5 | Complete — customization source | P5.1–P5.7; PHASE-5-CUSTOMIZATION.md and phase-5-schemas.json; bespoke durable save remains P6 |
 | 6 | Complete — source and Preview schema | P6.1–P6.8; PHASE-6-ORDER-HANDOFF.md and phase-6-preview-migration.json; intake off, runtime QA pending |
 | 7 | Complete — Studio source | P7.1–P7.8; PHASE-7-STUDIO.md, source capability/permission matrix; runtime QA remains Phase 11 |
-| 8–9 | Planned; prior source preserved | Next P8.1; remaining public pages, factual content, media and refinement |
+| 8 | Complete at source checkpoint; policy publication gated | P8.1–P8.7; PHASE-8-PUBLIC-CONTENT.md; 47 documents, 36 articles, 12 FAQs; no data writes or runtime QA |
+| 9 | Planned; prior assets preserved | Next P9.1; reconcile media gaps and refine crops, motion, responsiveness and loading |
 | 10 | Planned | Full integrated commercial-readiness report and remediation |
 | 11 | Planned | Formal final QA on exact candidate |
 | 12 | Planned; eligibility unresolved | Main and eligible production release only after gates |
@@ -676,9 +677,15 @@ Approval is recorded. It does not waive hosting eligibility, final QA, privacy o
 
 **Phase 7 publication receipt:** implementation a82c559df04f21b85e753cad13dbed0089415605 pushed to codex/phase-7-studio and independently matched to GitHub on 23 September 2026. Main remained d1a50072fb42ed44612e621d64a157c7fef20455. See phase-7-github-publication.json; no database change or production deployment.
 
+### L12. Phase 8 source completion — 23 September 2026
+
+**Phase:** 8 — Remaining public pages and corrected copy. **Status:** source checkpoint complete; exact missing policy facts, durable publication and Phase 11 QA remain gated. **Completed:** all 47 documents/36 articles reviewed, 25 source documents changed, 12 FAQ answers; journal topic navigation/reading context, contextual page/policy CTAs, contact scope; truthful empty portfolio and approval-filtered detail; privacy/current-practice and accessibility-status copy; published-only validated content/media projection, reserved alias protection, published-target redirects, metadata/indexing/sitemap/robots and factual structured data; 59 route/API and 18 form-source dispositions; editorial loading and legacy frame removal. **Preservation:** all document IDs/routes/section identities, 120 products and approved image bytes retained. Original candidate remains historical; current 47 proposals are separate. Studio offers deliberate reviewed-copy comparison/apply without automatic overwrite. **Database Changes:** none. **Verification:** compiler wiring, source/identity/media hash/preservation review only; no runtime, browser, API, database, build, lint, tests or deployment. **Owner Input:** specific retention/cancellation/delivery facts asked, not presumed; source work and Git publication do not require repeating approval. **Risks:** eligibility, runtime grants, policy/backup governance and full isolated restore/QA remain. **Next:** P9.1. Baseline 630521de2f228d2fe935585e12e4639e98da8839, branch codex/phase-8-public-content. See PHASE-8-PUBLIC-CONTENT.md, phase-8-content.json and the GitHub receipt after publication.
+
+**Phase 8 publication receipt:** implementation 210112d1482cb8f5be6f1b961cc11cd781602acc pushed to codex/phase-8-public-content and independently matched to GitHub on 23 September 2026. Main remained 630521de2f228d2fe935585e12e4639e98da8839. See phase-8-github-publication.json; no database publication or deployment. This documentation follow-up and the local completion artifact retain the final checkpoint.
+
 ## M. Final recommendation
 
-Continue the approved saved-order-only scope from the Phase 7 checkpoint at P8.1. Preserve the shared-target schema, saved-message contract and Studio source; complete remaining public content/media/readiness, then prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
+Continue the approved saved-order-only scope from the Phase 8 checkpoint at P9.1. Preserve the shared-target schema, saved-message contract and Studio source; complete remaining public content/media/readiness, then prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
 
 The statement below applies to **this revised implementation**. Substantial earlier source work exists and is preserved; it has not been reset or falsely described as nonexistent.
 
@@ -696,5 +703,7 @@ PHASE 6 STATUS: COMPLETE — ORDER SOURCE AND PREVIEW SCHEMA; INTAKE OFF, FINAL 
 
 PHASE 7 STATUS: COMPLETE — STUDIO SOURCE; FORMAL QA P11, NO DATA WRITES.
 
+PHASE 8 STATUS: SOURCE CHECKPOINT COMPLETE — PUBLIC CONTENT; POLICY PARTICULARS AND FINAL QA STILL GATED.
+
 NEXT ACTION:
-Begin Phase 8 from task P8.1.
+Begin Phase 9 from task P9.1.
