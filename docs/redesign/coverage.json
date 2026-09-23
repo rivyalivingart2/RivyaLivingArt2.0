@@ -17,7 +17,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/shop-site.tsx"
+      "implementationEvidence": "src/components/shop/shop-site.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P02",
@@ -35,7 +36,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/shop-site.tsx"
+      "implementationEvidence": "src/components/shop/shop-site.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P03",
@@ -53,7 +55,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/shop-site.tsx"
+      "implementationEvidence": "src/components/shop/shop-site.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P04",
@@ -71,7 +74,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/shop-site.tsx"
+      "implementationEvidence": "src/components/shop/shop-site.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P05",
@@ -89,7 +93,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/catalogue-browser.tsx"
+      "implementationEvidence": "src/components/shop/catalogue-browser.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P06",
@@ -107,7 +112,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/shop-site.tsx"
+      "implementationEvidence": "src/components/shop/shop-site.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P07",
@@ -125,7 +131,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/order-form.tsx; src/lib/product-form.ts; product-review.json"
+      "implementationEvidence": "src/components/shop/order-form.tsx; src/lib/product-form.ts; product-review.json",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P08",
@@ -143,7 +150,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/lib/legacy-journey.tsx"
+      "implementationEvidence": "src/lib/legacy-journey.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P09",
@@ -161,7 +169,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/lib/legacy-journey.tsx"
+      "implementationEvidence": "src/lib/legacy-journey.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P10",
@@ -179,7 +188,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/lib/legacy-journey.tsx"
+      "implementationEvidence": "src/lib/legacy-journey.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P11",
@@ -197,7 +207,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/app/inquiry/received/page.tsx; src/components/shop/saved-receipt.tsx"
+      "implementationEvidence": "src/app/inquiry/received/page.tsx; src/components/shop/saved-receipt.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P12",
@@ -215,7 +226,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/editorial.tsx"
+      "implementationEvidence": "src/components/shop/editorial.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P13",
@@ -233,7 +245,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/app/about/page.tsx"
+      "implementationEvidence": "src/app/about/page.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P14",
@@ -251,7 +264,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/editorial.tsx"
+      "implementationEvidence": "src/components/shop/editorial.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P15",
@@ -269,7 +283,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/editorial.tsx"
+      "implementationEvidence": "src/components/shop/editorial.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P16",
@@ -287,7 +302,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/app/materials/page.tsx; src/app/care/page.tsx"
+      "implementationEvidence": "src/app/materials/page.tsx; src/app/care/page.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P17",
@@ -305,7 +321,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/editorial.tsx"
+      "implementationEvidence": "src/components/shop/editorial.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P18",
@@ -323,7 +340,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/editorial.tsx"
+      "implementationEvidence": "src/components/shop/editorial.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P19",
@@ -341,7 +359,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/app/journal/[slug]/page.tsx; editorial-review.json"
+      "implementationEvidence": "src/app/journal/[slug]/page.tsx; editorial-review.json",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P20",
@@ -359,7 +378,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/editorial.tsx"
+      "implementationEvidence": "src/components/shop/editorial.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P21",
@@ -377,7 +397,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/editorial.tsx"
+      "implementationEvidence": "src/components/shop/editorial.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P22",
@@ -395,7 +416,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/editorial.tsx"
+      "implementationEvidence": "src/components/shop/editorial.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P23",
@@ -413,7 +435,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/editorial.tsx"
+      "implementationEvidence": "src/components/shop/editorial.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P24",
@@ -431,7 +454,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/editorial.tsx"
+      "implementationEvidence": "src/components/shop/editorial.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P25",
@@ -449,7 +473,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/editorial.tsx"
+      "implementationEvidence": "src/components/shop/editorial.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P26",
@@ -467,7 +492,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/editorial.tsx"
+      "implementationEvidence": "src/components/shop/editorial.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P27",
@@ -485,7 +511,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/app/portfolio/page.tsx"
+      "implementationEvidence": "src/app/portfolio/page.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P28",
@@ -503,7 +530,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Template implemented; eight fictional instances withheld, zero real approved projects",
-      "implementationEvidence": "src/components/shop/project-story.tsx; src/lib/project-model.ts"
+      "implementationEvidence": "src/components/shop/project-story.tsx; src/lib/project-model.ts",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P29",
@@ -521,7 +549,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/app/not-found.tsx; src/components/shop/feedback.tsx"
+      "implementationEvidence": "src/app/not-found.tsx; src/components/shop/feedback.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P30",
@@ -539,7 +568,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/app/error.tsx; src/components/shop/public-image.tsx; src/components/shop/feedback.tsx"
+      "implementationEvidence": "src/app/error.tsx; src/components/shop/public-image.tsx; src/components/shop/feedback.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P31",
@@ -547,17 +577,18 @@
       "design": "Full redesign of every shared navigation and overlay surface",
       "acceptance": "Focus, close/back behavior, contrast, touch targets and mobile use are verified",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 3 shared source complete; runtime integration and Phase 11 verification pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P31",
       "mobileDesign": "Specified compact composition/states in DESIGN-SYSTEM.md, P31",
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
-      "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
+      "accessibilityState": "Shared focus/static/reduced-motion source updated; prepared P11 scenarios in PHASE-3-DESIGN-SYSTEM.md",
+      "verificationEvidence": "Node 22 TypeScript compiler wiring, CSS parse and source-token contrast only; no formal browser/runtime QA",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/header.tsx; src/components/shop/shop-frame.tsx; src/components/shop/dialog.tsx"
+      "implementationEvidence": "src/components/shop/header.tsx; src/components/shop/shop-frame.tsx; src/components/shop/dialog.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S01",
@@ -565,17 +596,18 @@
       "design": "Compact branded login, readable inputs, error/pending state and recovery guidance",
       "acceptance": "Staff-only server authentication; secrets never displayed",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 3 shared source complete; runtime integration and Phase 11 verification pending",
       "contentSource": "Authenticated database and preserved Studio drafts",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, S01",
       "mobileDesign": "Specified compact composition/states in DESIGN-SYSTEM.md, S01",
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Studio authentication and isolated database",
-      "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
+      "accessibilityState": "Shared focus/static/reduced-motion source updated; prepared P11 scenarios in PHASE-3-DESIGN-SYSTEM.md",
+      "verificationEvidence": "Node 22 TypeScript compiler wiring, CSS parse and source-token contrast only; no formal browser/runtime QA",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio-login.tsx; src/app/studio/login/actions.ts"
+      "implementationEvidence": "src/components/studio-login.tsx; src/app/studio/login/actions.ts",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S02",
@@ -593,7 +625,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/operations.tsx"
+      "implementationEvidence": "src/components/studio/operations.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S03",
@@ -611,7 +644,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/inquiry-board.tsx"
+      "implementationEvidence": "src/components/studio/inquiry-board.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S04",
@@ -629,7 +663,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio-orders-board.tsx; src/app/api/studio/orders/route.ts"
+      "implementationEvidence": "src/components/studio-orders-board.tsx; src/app/api/studio/orders/route.ts",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S05",
@@ -647,7 +682,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/inquiry-board.tsx; src/app/api/studio/workspace/route.ts"
+      "implementationEvidence": "src/components/studio/inquiry-board.tsx; src/app/api/studio/workspace/route.ts",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S06",
@@ -665,7 +701,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/inquiry-board.tsx"
+      "implementationEvidence": "src/components/studio/inquiry-board.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S07",
@@ -683,7 +720,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/catalogue-editor.tsx"
+      "implementationEvidence": "src/components/studio/catalogue-editor.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S08",
@@ -701,7 +739,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/catalogue-editor.tsx; src/components/studio/product-details.tsx"
+      "implementationEvidence": "src/components/studio/catalogue-editor.tsx; src/components/studio/product-details.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S09",
@@ -719,7 +758,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/catalogue-editor.tsx; src/lib/product-form.ts"
+      "implementationEvidence": "src/components/studio/catalogue-editor.tsx; src/lib/product-form.ts",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S10",
@@ -737,7 +777,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/product-details.tsx; src/components/studio/revision-history.tsx"
+      "implementationEvidence": "src/components/studio/product-details.tsx; src/components/studio/revision-history.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S11",
@@ -755,7 +796,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/content-editor.tsx"
+      "implementationEvidence": "src/components/studio/content-editor.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S12",
@@ -773,7 +815,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/media-library.tsx"
+      "implementationEvidence": "src/components/studio/media-library.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S13",
@@ -791,7 +834,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/reference-viewer.tsx; src/app/api/studio/references/[id]/route.ts"
+      "implementationEvidence": "src/components/studio/reference-viewer.tsx; src/app/api/studio/references/[id]/route.ts",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S14",
@@ -809,7 +853,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/staff-editor.tsx"
+      "implementationEvidence": "src/components/studio/staff-editor.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S15",
@@ -827,7 +872,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/business-settings.tsx; src/components/studio/reference-cleanup.tsx"
+      "implementationEvidence": "src/components/studio/business-settings.tsx; src/components/studio/reference-cleanup.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S16",
@@ -845,7 +891,8 @@
       "accessibilityState": "Source design defined; Phase 11 verification pending",
       "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/studio/operations.tsx; src/components/studio/inquiry-board.tsx"
+      "implementationEvidence": "src/components/studio/operations.tsx; src/components/studio/inquiry-board.tsx",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "S17",
@@ -853,17 +900,18 @@
       "design": "Confirmations, permission-denied, session-expired, unsaved edits, save errors and conflicts",
       "acceptance": "No dead-end screens; keyboard focus and recovery actions work",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 3 shared source complete; runtime integration and Phase 11 verification pending",
       "contentSource": "Authenticated database and preserved Studio drafts",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, S17",
       "mobileDesign": "Specified compact composition/states in DESIGN-SYSTEM.md, S17",
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Studio authentication and isolated database",
-      "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
+      "accessibilityState": "Shared focus/static/reduced-motion source updated; prepared P11 scenarios in PHASE-3-DESIGN-SYSTEM.md",
+      "verificationEvidence": "Node 22 TypeScript compiler wiring, CSS parse and source-token contrast only; no formal browser/runtime QA",
       "finalDisposition": "Pending final integrated QA",
-      "implementationEvidence": "src/components/shop/dialog.tsx; src/components/studio/workspace-api.ts"
+      "implementationEvidence": "src/components/shop/dialog.tsx; src/components/studio/workspace-api.ts",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     },
     {
       "id": "P32",
@@ -881,9 +929,10 @@
       "accessibilityState": "Specified; Phase 11 verification pending",
       "verificationEvidence": "Inactive registry compiler wiring only",
       "finalDisposition": "Pending P5/P6 implementation and Phase 11 integrated QA",
-      "implementationEvidence": "src/lib/bespoke-schema.ts; src/lib/order-contract.ts; scripts/phase2-order-contract.sql"
+      "implementationEvidence": "src/lib/bespoke-schema.ts; src/lib/order-contract.ts; scripts/phase2-order-contract.sql",
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
     }
   ],
   "updated": "2026-09-23",
-  "activePlanRevision": "3.2"
+  "activePlanRevision": "3.3"
 }

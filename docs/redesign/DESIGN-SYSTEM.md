@@ -1,12 +1,12 @@
 # Phase 3 — design system and page blueprint
 
-23 September 2026. Source design specification; final visual/keyboard/device verification remains Phase 9.
+23 September 2026. Updated under approved master revision 3.3, P3.1–P3.6. Source design specification; final visual/keyboard/device verification remains Phase 11. See PHASE-3-DESIGN-SYSTEM.md for the source audit, state coverage and prepared verification scenarios.
 
 ## Shared system
 
-Navy #0B1728 frames the site, forest #19221C marks material/atelier chapters, ivory #F3EFE7 holds catalogue/editorial content, stone #DDD6CB separates surfaces. Ink #18202A is text on ivory. Bronze #B79270 is decorative on dark surfaces; never normal text on ivory. Primary controls are ivory/navy or navy/ivory. Locally hosted Cormorant Garamond and DM Sans use the retained licence files. Display scales to 44–112px; body 16–18px; fields at least 16px.
+Navy #0B1728 frames the site, forest #19221C marks material/atelier chapters, ivory #F3EFE7 holds catalogue/editorial content, stone #DDD6CB separates surfaces. Ink #18202A is text on ivory. Bronze #B08D57 is decorative on dark surfaces; never normal text on ivory. Primary controls are ivory/navy or navy/ivory. Locally hosted Cormorant Garamond and DM Sans use the retained licence files. Display scales to 44–112px; body 16–18px; fields at least 16px.
 
-The shared shell uses a constrained 184×52 logo, 84px desktop header/76px compact header, one Collections disclosure, Our Atelier, Process, Journal, Contact, search and Begin a piece. A native mobile dialog contains the three collection links with keyboard focus containment, Escape and return to the opener. Studio is absent. Footer includes collection, atelier, contact and policy destinations.
+The shared shell uses a constrained 184×52 logo, 84px desktop sticky header/72px compact sticky header, 16px navigation and 44px minimum compact targets, one Collections disclosure, Our Atelier, Process, Journal, Contact, search and Begin a piece. A native mobile dialog contains the three collection links with keyboard focus containment, Escape and return to the opener. At 1200px the header changes to compact navigation; native noscript navigation remains available without JavaScript. Anchor offsets track header height. Studio is absent. Footer includes collection, atelier, contact and policy destinations.
 
 CSS modules isolate active shop components from retained legacy presentations. The source repair changes shared tokens and the scoped header rather than increasing logo specificity throughout the old website.
 
@@ -76,10 +76,10 @@ CSS modules isolate active shop components from retained legacy presentations. T
 
 ## Motion and asset slots
 
-Home headline enters 18px over 700ms; image settles from 1.025 scale over 900ms. Navigation is immediately usable. Cards scale at most 1.035; gallery transitions 200ms; native scroll throughout. No unsupported film dependency or pinned section is introduced. Reduced-motion removes transitions/animation and preserves every action. Forms/Studio have no decorative entrance delay.
+Home headline enters 12px over 550ms with full opacity throughout; image settles from 1.025 scale over 550ms. Navigation is immediately usable. Cards scale at most 1.035; gallery transitions 200ms; native scroll throughout. No unsupported film dependency or pinned section is introduced. Reduced-motion removes transitions/animation and hover/focus scale transforms, preserving every action. Forms/Studio have no decorative entrance delay.
 
-Hero is a supplied 16:9 spatial visualization with responsive object position; card/detail slot is 4:5; material split 4:5 desktop/5:4 compact. Zoom uses object-contain. Alt describes the actual depicted object; captions identify design visualizations. Only same-object images join a gallery. Existing logo and source derivatives remain unchanged; no new paid asset is required. Media budget/derivative work is P8; measured performance is P9.
+Hero is a supplied 16:9 spatial visualization with responsive object position; card/detail slot is 4:5; material split 4:5 desktop/5:4 compact. Zoom uses object-contain. Alt describes the actual depicted object; captions identify design visualizations. Only same-object images join a gallery. Existing logo and source derivatives remain unchanged; no new paid asset is required. Media budget/derivative work is Phase 9; measured performance is Phase 11.
 
 ## Copy rules
 
-Lead with object and purpose. Use concrete material, scale and selection language only where supported. Price on request. “Place Order” creates a saved inquiry; WhatsApp opening does not send or confirm it. Error text states what failed and what remains saved. No fictional testimonials, invented provenance, guaranteed lead times or material performance. Staff controls use clear verbs: Save draft, Publish, Hide, Move to, Add note.
+Lead with object and purpose. Use concrete material, scale and selection language only where supported. Price on request. The order submit action creates a saved inquiry; WhatsApp opening does not send or confirm it. Exact action labels and persisted-first sequencing are finalized in Phase 6. Error text states what failed and what remains saved. No fictional testimonials, invented provenance, guaranteed lead times or material performance. Staff controls use clear verbs: Save draft, Publish, Hide, Move to, Add note.

@@ -27,7 +27,7 @@ const bodyFont = localFont({
 
 export const metadata: Metadata = {
   title: { default: "RivyaLivingArt — A material-led atelier", template: "%s | RivyaLivingArt" },
-  description: "Explore resin furniture, memory art and personal gifts. Customize your piece and begin a conversation with RivyaLivingArt on WhatsApp.",
+  description: "Explore resin furniture, memory art and personal gifts. Choose a piece and share your customization details with the atelier.",
   icons:{icon:[{url:'/brand/favicon.ico',sizes:'any'},{url:'/brand/rivyalivingart-icon-32.png',sizes:'32x32',type:'image/png'}],apple:'/brand/apple-touch-icon.png'}, manifest:'/brand/site.webmanifest',
   robots: { index: (process.env.SITE_INDEXABLE==='true'&&(process.env.RIVYA_ENV==='production'||process.env.VERCEL_ENV==='production')), follow: (process.env.SITE_INDEXABLE==='true'&&(process.env.RIVYA_ENV==='production'||process.env.VERCEL_ENV==='production')) },
 };

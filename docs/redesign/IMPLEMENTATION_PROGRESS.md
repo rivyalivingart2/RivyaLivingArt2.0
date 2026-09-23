@@ -2,79 +2,74 @@
 
 ## Current Phase
 
-Phase 2 — COMPLETE: foundation and data architecture under approved master revision 3.2. No Phase 2 migration or activation was performed; those remain gated integration tasks.
+Phase 3 — COMPLETE at the shared design-system source/specification gate under approved master revision 3.3. Formal integrated QA is Phase 11; no TESTED claim.
 
 ## Current Task
 
-P2.7 complete — schema/data/role/instance registers, proposed migration and rollback instructions saved. Publish this Phase 2 checkpoint to the owner's GitHub repository, then verify the remote commit.
+P3.1–P3.6 complete and published. Implementation commit 34989309c785ad72cb3f33af6db699f6951da9e1 was pushed to codex/phase-3-design-system and independently matched through GitHub remote readback; main remained 85b476df358d9fb07c9a8ec07cc478da581138f4. See phase-3-github-publication.json. A documentation-only follow-up records this receipt; the task output completion file gives the final branch head. Check live refs before resuming because the owner can merge between chats.
 
 ## Completed
 
-- P2.1: verified clean preserved source, Phase 1 upstream merge PR #15 at bdfd78fa08f5b7738df8d465326eb960147b9ac2, identical tree to local Phase 1, and disabled Git deployments; started codex/phase-2-foundation.
-- P2.2: fresh authenticated read-only Preview/Production columns, nullability, constraints, indexes, aggregate counts and current dashboard-role permissions; environment names/scopes inspected without revealing values.
-- P2.3: typed v2 request, answer, source, consent and message contracts; legacy compatibility and one-time proposed additive/widening migration. No fake legacy consent or destination metadata.
-- P2.4: independent database/object backup definition, restore runbook, non-destructive rollback and comprehensive PII retention/deletion mapping.
-- P2.5: inactive bespoke-piece v1 registry and guest/reference ownership design; no fake catalogue product.
-- P2.6: permitted local source work and exact connected/hosted activation gates recorded; secrets kept ignored and separate.
-- P2.7: master, schema/role/environment/migration/instance/coverage registers and repository continuation instructions updated. Coverage now includes all 49 entries including P32.
-- Prior Phase 0/1 work, approved supplied assets/products/policies, drafts and historical records preserved.
+- P3.1: audited existing token/font/component reuse; retained assets, local font licenses, public/Studio architecture and historical drafts.
+- P3.2: centralized forest/navy/ivory roles, approved bronze #B08D57, field/error/focus tokens, responsive spacing and compact Studio grids; calculated source contrast pairs.
+- P3.3: 84px/72px sticky header, 16px desktop navigation, preserved logo, 1200px collapse, shared anchor offsets, route/breakpoint menu dismissal and native no-JavaScript navigation.
+- P3.4: consistent controls, invalid/disabled states, cards/feedback and native Dialog primitive; unique heading IDs, nested scroll-lock cleanup, focus return and viewport scrolling.
+- P3.5: 200ms controls / 550ms public entrance, content visible without animation, static reduced-motion card behavior; readable Studio/login/board density.
+- P3.6: removed general WhatsApp invitation from default metadata and shared footer; preserved order-only saved-request actions for later sequencing work.
+- Updated master, design specification, source/state/QA-scenario report, coverage and continuation guidance. No new packages or assets.
 
 ## In Progress
 
-No Phase 3 implementation is in progress. Final Phase 2 Git publication/readback is the handoff operation.
+None. Phase 3 implementation is complete and published; P4.1 is the next work item. No Phase 4 implementation started.
 
 ## Pending
 
-P3.1 and the remaining Phases 3–12. The typed registry is not yet consumed by the UI; v2 readers/writer/message finalization belong to P5–P7. Full integrated QA is Phase 11; release is Phase 12.
+Next P4.1 and remaining Phases 4–12. Product-specific forms, bespoke flow, persisted-first message sequence, operational Studio controls and page copy remain assigned to P4–P8; refinement/readiness follows P9–P10. Full integrated QA is P11 and release P12.
 
 ## Blocked
 
-- Hosted commercial activation: Vercel Hobby eligibility remains unresolved under Vercel-only/free-only instructions.
-- Connected local integration: ignored DATABASE_URL and BLOB_READ_WRITE_TOKEN remain masked; source work can continue.
-- Migration activation: independent backup and permitted target required before any DDL. Production has only the original four tables and must receive reviewed missing prerequisites before the new migration.
-- Release isolation: admin ID/password currently shared between Preview and Production; runtime database grants still need reconciliation.
-- Privacy/recovery: attached-reference retention, encrypted backup destination/custody, operational recovery targets and actual restore proof remain later gates.
+- Hosted commercial activation: Vercel Hobby eligibility unresolved under Vercel-only/free-only instructions; automatic Git deployment disabled.
+- Connected local integration: ignored database/Blob credentials remain masked per Phase 2 receipt; not re-read or modified in Phase 3.
+- Migration activation: independent backup and permitted target required; Production needs the reviewed missing prerequisite tables before the proposed v2 migration.
+- Release isolation: shared Preview/Production admin credentials and runtime least-privilege grants need reconciliation.
+- Recovery/privacy: reference retention, encrypted backup destination/custody, recovery objectives and restore proof remain later gates.
 
-Each blocker has a concrete continuation in PHASE-2-MIGRATION-RUNBOOK.md and phase-2-environments.json. None blocks P3 local design-system source work.
+Exact integration continuations remain in PHASE-2-MIGRATION-RUNBOOK.md and phase-2-environments.json. None prevents local Phase 4 source reconciliation.
 
 ## Owner Input Required
 
-No repeated plan approval. The owner completed the fresh database verification this turn. Only later, specific retention/backup custody and commercial eligibility decisions remain; do not request credentials in chat.
+None for Phase 3. No repeated plan approval or credentials in chat. Later specific hosting eligibility and retention/backup decisions remain as already recorded.
 
 ## Files Changed
 
-- src/lib/order-contract.ts; src/lib/bespoke-schema.ts (inactive definitions).
-- scripts/phase2-schema-inspection.sql; scripts/phase2-order-contract.sql (read-only inspection and unapplied proposed DDL).
-- docs/redesign/PHASE-2-DATA-ARCHITECTURE.md; PHASE-2-MIGRATION-RUNBOOK.md; phase-2-environments.json; phase-2-migrations.json.
-- Master revision 3.2, this progress file, reconciliation, coverage/instances/infrastructure registers, dependency/lifecycle authority notes.
-- Phase 2 owner decision and AGENTS.md / PROJECT_STATE.md / CODEX_WORKFLOW.md / CHECKPOINT.md continuation notices.
-
-Delivery copies are synchronized in the current task outputs. Existing routes, submissions, dependency pins, source media, private configuration and customer data were not changed.
+- Shared tokens and public header/dialog/feedback/frame/styles.
+- Studio login/workspace/board presentation and loading/busy semantics.
+- Root metadata and global anchor offset.
+- DESIGN-SYSTEM.md; PHASE-3-DESIGN-SYSTEM.md; coverage.json; master revision 3.3; this progress file.
+- Phase 3 execution decision and active AGENTS/PROJECT_STATE/CODEX_WORKFLOW/CHECKPOINT notices.
 
 ## Database Changes
 
-None. Fresh READ ONLY observations: Preview has 16 tables, one storage-budget row with zero reserved bytes, one existing session, and zero rows in each of the other 14 tables. Production has four original Studio tables, all with zero rows. Both report PostgreSQL 18.6. Counts are point-in-time observations and must be re-read before writes. No sessions were revoked or copied.
-
-Dashboard role has SELECT/INSERT/UPDATE/DELETE privileges and RLS is off on inspected tables; actual queries report transaction_read_only=on. This does not prove runtime least privilege. No grant or role changed.
+None. No query, migration, seed, submission, secret change, stored content publication or deletion in Phase 3. Phase 2 schema/count observations remain historical point-in-time evidence; re-inspect before later writes.
 
 ## Testing Completed
 
-Compiler wiring only: TypeScript no-emit check passes with existing Node 22.23.2. Document/register consistency, source mapping, preservation and sensitive-file checks performed. Live metadata/count inspection is operational evidence, not application runtime QA.
+Compiler wiring only: TypeScript no-emit passes under existing Node 22.23.2. CSS parsed with existing PostCSS, source-token contrast calculated, component/hook/source scope and document/register consistency reviewed. Fonts/assets/data/dependencies/deployment settings preserved.
 
-No lint, build, test suite, browser application QA, migration execution, constraint simulation, seed or restore rehearsal. Do not mark the platform TESTED or newly BACKEND_CONNECTED.
+No lint, build, test suite, dev server, browser application QA, migration, constraint simulation or restore rehearsal. Prepared Phase 11 scenarios are documented; they were not executed. No new BACKEND_CONNECTED or TESTED status.
 
 ## Known Issues
 
-See C01–C26 in the approved master and Phase 2 architecture. Existing submission still renders the summary before core save; v2 contract and proposed DDL do not change that active behavior. Current receipt/Studio readers do not yet handle bespoke/pending messages. The original Stage A source remains intact; implementation/concurrency proof continues in P5–P7/P11.
+See C01–C26 and Phase 2 records. Existing submission still renders the message before core save; P6 will implement the approved sequencing. Existing readers do not yet activate the v2/bespoke contract. The shared styles do not prove those workflows. Rendered contrast, focus across browsers, reflow, long content, screen-reader and cross-device behavior require final integrated QA.
 
 ## Next Exact Task
 
-**P3.1 — Audit existing token, font and component reuse against the approved shared design system before editing it.**
+**P4.1 — Reconcile all 120 product IDs/slugs against actual publishable records**, using instances.json, product-review.json, reviewed-publication.json and existing catalogue/draft source. Preserve stable identifiers and approved supplied materials; record withheld/unavailable cases without inventing facts or blindly publishing candidates.
 
 Repository: C:/Users/gonda/Documents/Codex/2026-09-23/rivyalivingart-website-studio-preview-sites-project/work/repo
 
-Branch: codex/phase-2-foundation, based on verified upstream main bdfd78fa08f5b7738df8d465326eb960147b9ac2. Read current Git refs before resuming; publication/merges can advance them. Current production deployment remains dpl_7HRC8CVEJ98ih86yRxoppxVgMgR2 from f9533bbbaf3cc2843025f1a1243442b0a9d920e8.
+Branch: codex/phase-3-design-system, based on verified upstream Phase 2 merge 85b476df358d9fb07c9a8ec07cc478da581138f4 (PR #16). The Phase 3 commit is recorded in Git and the task output completion receipt. Read current refs before continuing. Phase 3 made no deployment; the last recorded Production deployment is dpl_7HRC8CVEJ98ih86yRxoppxVgMgR2 from f9533bbbaf3cc2843025f1a1243442b0a9d920e8, not freshly inspected in this phase.
 
 ## Resume Instruction
 
-Read AGENTS.md, PROJECT_STATE.md, phase-2-execution decision, master revision 3.2, this progress file, Phase 2 architecture/runbook and environment/migration registers. Continue P3.1; do not run the proposed SQL, reseed, restart or ask for the same approval. Keep WhatsApp order-only, no payments/customer accounts, free-only/Vercel-only and automatic-deployment hold. Apply DB changes only after the recorded integration gates, and main/production release only after final QA and eligibility.
+Read AGENTS.md, PROJECT_STATE.md, Phase 3 execution decision, master revision 3.3, this progress file and PHASE-3-DESIGN-SYSTEM.md. Keep Phase 2 architecture/runbook/environment gates. Continue P4.1 without restarting or reapproving. Keep WhatsApp order-only, no payments/customer accounts, free-only/Vercel-only and automatic-deployment hold. Final main/production release requires P11 proof and commercial eligibility.
