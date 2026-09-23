@@ -1,3 +1,5 @@
+import {orderReceipt} from '@/lib/order-handoff';
+import {decodeSavedBrief} from '@/lib/saved-brief';
 import {randomUUID} from 'node:crypto';
 import {studioSession,hashStaffPassword} from '@/lib/studio-auth';
 import {studioDb} from '@/lib/studio-db';
@@ -18,7 +20,7 @@ export async function GET(request:Request){
   }
   if(view==='inquiry'){
    const id=url.searchParams.get('id');if(!uuid(id))return json({error:'Invalid reference.'},400);
-   const inquiry=await sql`SELECT i.id,i.reference,i.product_snapshot AS product,i.name,i.phone,i.email,i.answers,i.notes,i.summary,i.assignee,i.follow_up AS "followUp",i.created_at AS "createdAt",o.version FROM rivya_inquiries i JOIN rivya_studio_orders o ON o.id=i.id WHERE i.id=${id}::uuid AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)`;
+   const inquiry=await sql`SELECT i.id,i.reference,i.product_snapshot AS product,i.name,i.phone,i.email,i.answers,i.notes,i.summary,i.assignee,i.follow_up AS "followUp",i.created_at AS "createdAt",o.version,to_jsonb(i) AS saved_record FROM rivya_inquiries i JOIN rivya_studio_orders o ON o.id=i.id WHERE i.id=${id}::uuid AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)`;
    if(!inquiry.length){
     if(session.role!=='admin')return json({error:'This inquiry is unavailable to your account.'},404);
     const manual=await sql`SELECT o.id,o.client,o.title,o.status,o.version,o.updated_at AS "updatedAt" FROM rivya_studio_orders o
@@ -32,7 +34,11 @@ export async function GET(request:Request){
     sql`SELECT n.id,n.actor,n.body,n.created_at AS "createdAt" FROM rivya_inquiry_notes n JOIN rivya_inquiries i ON i.id=n.inquiry_id WHERE i.id=${id}::uuid AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid) ORDER BY n.created_at`,
     sql`SELECT e.actor,e.from_status,e.to_status,e.version,e.reason,e.created_at AS "createdAt" FROM rivya_studio_order_events e JOIN rivya_inquiries i ON i.id=e.order_id WHERE i.id=${id}::uuid AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid) ORDER BY e.created_at`
    ]);
-   return json({inquiry:inquiry[0],refs,notes,events});
+   const {saved_record,...record}=inquiry[0];
+   const receipt=await orderReceipt(saved_record);
+   let savedAnswers:{label:string;value:string}[]|null=null;
+   if(saved_record.contract_version===2)try{savedAnswers=decodeSavedBrief(saved_record).answers.map(a=>({label:a.label,value:String(a.value)}));}catch{/* Keep raw stored evidence intact; no fabricated summary. */}
+   return json({inquiry:{...record,requestKind:saved_record.request_kind||'product',savedAnswers,receipt},refs,notes,events});
   }
   const staff=await sql`SELECT id,login,name,role,active,version FROM rivya_staff ORDER BY name`;
   return json({session,staff:session.role==='admin'?staff:staff.filter(s=>s.active).map(s=>({id:s.id,name:s.name,role:s.role,active:s.active}))});

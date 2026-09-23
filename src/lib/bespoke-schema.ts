@@ -1,5 +1,5 @@
 /**
- * Versioned definition for the bespoke form. Durable saving is connected in Phase 6.
+ * Versioned definition for the bespoke form. Uses the common v2 writer when intake is enabled in a permitted environment.
  * Choices describe requests for review, not guaranteed manufacturing capability.
  * Never edit a released version in place; append a version and snapshot it on save.
  */

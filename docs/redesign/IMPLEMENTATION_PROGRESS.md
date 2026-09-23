@@ -2,70 +2,70 @@
 
 ## Current Phase
 
-Phase 5 — COMPLETE at the customization source gate under master revision 3.5. Bespoke durable saving remains Phase 6; integrated QA remains Phase 11.
+Phase 6 — COMPLETE at the source and isolated Preview schema gate under master revision 3.6. Intake remains disabled; application QA is Phase 11.
 
 ## Current Task
 
-P5.1–P5.7 source complete and published. Implementation 8d84d2e8b934b049467b18604718f05a9ba12efc matches independent GitHub remote readback on codex/phase-5-customization; main remains a007d0fb0b2cc05f4ce55e0f3ebff6d66f51c17f (Phase 4 merge PR #18). See phase-5-github-publication.json. This documentation follow-up records the verified receipt; the task completion file records the final branch head.
+P6.1–P6.8 implementation and checkpoint complete; GitHub publication is being finalized on codex/phase-6-order-handoff. Read phase-6-github-publication.json once recorded and fresh Git refs for the final head. Phase 5 merged through PR #19 during this phase; this work branch fast-forwarded to that merge before publication.
 
 ## Completed
 
-- P5.1: explicit 120-product capability registry, 27 families and schema proposals; false DP110/DP119 ring sizing removed. Inventory has 111 changed proposals and nine unchanged forms.
-- P5.2: stable field IDs/types/conditions/bounds validated in Studio and server product validation; safe reorder/removal; deliberate reviewed-form draft apply with old snapshots preserved.
-- P5.3: typed shared product/bespoke form and /commission/customize, seven-field bespoke v1 with no fake product ID. Bespoke saving/uploads explicitly unavailable pending P6.
-- P5.4: bounded contact/notes/consent/private-reference handling, three steps, review/edit and copy-unsaved-brief fallback.
-- P5.5: tab-memory draft recovery, stale-schema reconciliation, reconnect retaining request key, exact-payload retry after uncertain save, file-key retry/removal and interrupted-queue cancellation.
-- P5.6: real honeypot, upload byte/processing status, stable input/error links and step focus.
-- P5.7: real service/error boundaries; no simulated success or premature WhatsApp handoff. Legacy product atomic writer retained; v2 save/message correction remains P6.
-- Report, source schema inventory, master, coverage, routes, decision and continuation guidance saved; historical candidates/assets/data preserved.
+- P6.1: accepted product/bespoke payload validation, canonical hash, guest/request ownership, original-schema duplicate recovery, owned private upload identity.
+- P6.2: atomic Studio order/inquiry/immutable snapshots/consent/source/reference links/NEW event/audit; session-first serialization and version/config checks.
+- P6.3: message prepared from committed saved evidence, pinned template and destination version, bounded idempotent finalization; ready messages never overwritten.
+- P6.4: pending/ready/failed/legacy/unavailable receipt states; authorized guest/staff recovery without creating another inquiry.
+- P6.5: complete encoded message, long-link copy-first, selectable clipboard fallback and blocked-app recovery.
+- P6.6: independent Studio retrieval, typed saved answers, bespoke/null-product compatibility and saved-order actions.
+- P6.7: truthful maintenance and saved-request copy; customer still presses Send in WhatsApp.
+- P6.8: generic/default-number wiring removed; old datasets/presentations preserved with production guards; no additional WhatsApp system.
+- Existing isolated Preview credentials retrieved directly into ignored configuration under owner delegation; explicit private Blob token handling fixed.
+- Independent encrypted owner-profile backup captured and readable; additive v2/upload-identity DDL applied in one guarded Preview transaction; all original data/counts preserved.
 
 ## In Progress
 
-None. Phase 5 source is complete and published. Phase 6 has not started.
+GitHub implementation push, independent remote SHA verification and publication receipt. No active migration or application server.
 
 ## Pending
 
-P6.1: validation/ownership/request identity for product and bespoke v2 briefs; then atomic core persistence, saved-canonical-message finalization, pending/ready receipt recovery and independently retrievable Studio records. Studio operations P7; content/media P8–P9; readiness P10; QA P11; release P12.
+P7.1 original-versus-amended Studio detail; remaining P7 roles, Kanban, publishing, retention/export capabilities. P8 public content/policies, P9 media/motion, P10 integrated commercial readiness, P11 formal QA/full restore, P12 final main and eligible production release.
 
 ## Blocked
 
-- Commercial activation: Vercel-only/free-only eligibility hold; automatic Git deployment disabled.
-- Connected integration: Phase 2 recorded masked local database/Blob values; no fresh Phase 5 provider inspection.
-- Migrations/publication: independent backup, permitted isolated target and prerequisite schema must be established first; no migration/seed/run occurred.
-- Release: environment-specific staff credentials/runtime grants, retention/backup custody and restore proof remain open.
+- Commercial activation: Vercel-only/free-only eligibility hold; automatic Git deployment remains disabled.
+- Activation prerequisites: least-privilege runtime grants, environment-specific staff credentials/session revocation, reviewed catalogue/content publication and actual business settings.
+- Recovery/privacy: full isolated restore proof, backup portability/cadence/retention/RPO/RTO, submitted-reference retention and deletion responsibilities.
+- Release: complete later phases and exact-candidate QA. Preview schema application does not establish end-to-end application correctness.
 
-These do not block Phase 5 source completion or Git publication. Read Phase 2 architecture, environment matrix and runbook before integration.
+Masked Preview database/Blob values and backup destination/key custody are no longer pending user-input blockers. The owner delegated both; they were handled without exposing secrets. Do not ask again or repeat the migration.
 
 ## Owner Input Required
 
-None for Phase 5. Supplied product/policy/image approval remains valid. Do not request repeat plan approval or credentials in chat.
+None for Phase 6 source completion or Git publication. Preserve supplied product/policy/image approval. Resolve only actual missing policy facts and hosting eligibility at their later gates; do not request blanket reapproval or secrets in chat.
 
 ## Files Changed
 
-product-capabilities.json; product-form.ts; field-schema.ts; brief-validation.ts; inquiry-definition.ts; order-draft.ts; order-form.tsx; shop-model.ts; bespoke-schema.ts; schema API/custom route; inquiry action/reference DELETE; shop-site/styles; Studio catalogue editor. Schema inventory script/report, decision, master/progress/coverage/routes and active guidance.
+Order action; session/reference/receipt and Studio APIs; shared saved actions/receipt, form and Studio detail; order consent/input/persistence/handoff/receipt/service/saved-brief modules; WhatsApp helper; private storage/cleanup; upload-identity DDL; .env.example. Phase report, migration receipt, master/progress/coverage/routes/decision and active guidance.
 
 ## Database Changes
 
-None. No fresh query, write, migration, seed, data deletion or catalogue publication. All existing records and historical schema/answers preserved. Source template revision 3 does not overwrite database published_version.
+Preview only at 2026-09-23T14:52:40.400Z: phase2-order-contract.sql plus phase6-upload-identity.sql, 24 added columns. Sixteen table counts and original-column row fingerprints preserved. One pre-existing storage-budget row and one Studio-session row; all other application counts and private-object count zero. No inquiry, upload, staff creation, seed or publication. Production unchanged. See phase-6-preview-migration.json; do not rerun applied DDL.
 
 ## Testing Completed
 
-TypeScript no-emit compiler wiring with existing Node 22.23.2; pure-source inventory reconciles 120 identities/routes/capabilities and old/new schema shape, plus bespoke v1. CSS syntax, source/document consistency, preservation and sensitive-file checks accompany publication.
-
-No lint/build/suites/dev server/browser/device/runtime QA, real inquiry or database operation. Prepared cases are in PHASE-5-CUSTOMIZATION.md; no new TESTED/BACKEND_CONNECTED claim.
+Node 22.23.2 TypeScript no-emit compiler wiring. Source/import/preservation/sensitive-file review, live read-only Preview schema/count inventory, encrypted archive checksum/readability and migration preservation checks. No lint/build/suites/dev server/browser/device/endpoint/concurrency/restore QA, synthetic inquiry, upload or message. No TESTED claim; backend evidence covers resource access/schema only.
 
 ## Known Issues
 
-Bespoke prepare/review/copy works in source but uploads/save/handoff remain unavailable until P6 v2 integration. The legacy product summary is still constructed before core save; P6 must fix sequencing. Tab memory cannot survive reload/close; copy/leave notices disclose this. Fully expired server sessions require copied-brief recovery/re-upload. Late provider write versus deletion requires reconciliation proof in P6/10/11. Phase 4 historical matrices still contain the now-corrected proposal findings by design; read phase-5-schemas.json for the new source proposals.
+Both order write flags remain off/unset. Pending-upload recovery may require waiting five minutes for the lease; unconfirmed pending references retain quota and can block that brief until recovered or expired cleanup after 24 hours. Prove late-write/cleanup reconciliation and assess cancellation tombstones in P10/11. Changed destination/version blocks opening while retaining copy; no audited override yet. Five failed preparation attempts require staff remediation without replacing saved evidence. Legacy unknown destination remains unknown. Unsaved tab state still does not survive reload/close. Full runtime denial/concurrency and restore evidence remain deferred.
 
 ## Next Exact Task
 
-**P6.1 — Enforce validation, ownership and request identity for selected-product and bespoke saved briefs.** Read Phase 2 contracts/migration runbook and Phase 5 typed validators. Verify current environment/backup/schema before any allowed integration writes, then retain atomic core and finalize message from the saved canonical snapshot. Preserve historical records and no WhatsApp before save.
+**P7.1 — Complete Studio detail layout and immutable original versus operational amendment separation.** Read Phase 6 report and applied migration receipt first; reuse the saved-order handoff/recovery controls. Preserve private references, historical fields/messages/stages, source drafts and all IDs. Do not infer production schema from Preview or activate owner-level runtime credentials.
 
 Repository: C:/Users/gonda/Documents/Codex/2026-09-23/rivyalivingart-website-studio-preview-sites-project/work/repo
 
-Branch: codex/phase-5-customization; baseline main a007d0fb0b2cc05f4ce55e0f3ebff6d66f51c17f, Phase 4 merge PR #18. Verify live Git refs before resuming. Current source SHA is in Git and the task completion receipt. No Phase 5 deployment or fresh production inspection.
+Branch: codex/phase-6-order-handoff; includes Phase 5 final 44245c4b21405cd09c2986704accc3dd5dda4f1e. Main at start a007d0fb0b2cc05f4ce55e0f3ebff6d66f51c17f (Phase 4 PR #18). Latest fetched main is c7c5cb9161b961fe0e0c46c40d6b467d6a0252e7 (Phase 5 PR #19), included in this branch. Verify current refs before resuming. Completion artifact records final head and local backup location. No deployment.
 
 ## Resume Instruction
 
-Read AGENTS.md, PROJECT_STATE.md, Phase 5 decision, master revision 3.5, this file, PHASE-5-CUSTOMIZATION.md and phase-5-schemas.json. Continue P6.1 without restarting/reapproving. Retain Phase 2 integration/backup gates, saved-order-only WhatsApp, no payments/customer accounts, Vercel-only/free-only, automatic-deployment hold and final main/production release requirements.
+Read AGENTS.md, PROJECT_STATE.md, docs/CODEX_WORKFLOW.md, Phase 6 decision, master revision 3.6, this file, PHASE-6-ORDER-HANDOFF.md and phase-6-preview-migration.json. Continue P7.1 without restarting/reapproving. Credentials are already in ignored local configuration, independent encrypted backup exists and Preview migration is consumed. Retain two-stage saved-order-only WhatsApp, free-only/Vercel-only, automatic-deployment hold and Phase 11/12 QA/release gates.

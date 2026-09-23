@@ -28,5 +28,4 @@ export function validProduct(value:unknown,base?:ShopProduct):value is ShopProdu
  if(fieldSchemaIssues(p.fields).length)return false;
  return true;
 }
-export {whatsappNumber} from './whatsapp';
 

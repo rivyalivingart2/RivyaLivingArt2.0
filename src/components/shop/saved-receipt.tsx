@@ -1,17 +1,13 @@
 'use client';
-import {useEffect,useRef,useState} from 'react';
+import {useState} from 'react';
 import Link from 'next/link';
-import {whatsappHandoff} from '@/lib/whatsapp';
+import type {OrderReceipt} from '@/lib/order-receipt';
+import {SavedOrderActions} from './saved-order-actions';
 import s from './shop.module.css';
-export function SavedReceipt({reference,summary,requestKey,autoOpen,whatsapp}:{reference:string;summary:string;requestKey:string;autoOpen:boolean;whatsapp:string}){
- const handoff=whatsappHandoff(reference,summary,whatsapp),opened=useRef(false),[status,setStatus]=useState('');
- useEffect(()=>{
-   if(!autoOpen||opened.current)return;opened.current=true;
-   window.history.replaceState(null,'','/inquiry/received?key='+encodeURIComponent(requestKey));
-   if(!handoff.copyRequired)window.location.assign(handoff.whatsappUrl);
- },[autoOpen,requestKey,handoff.copyRequired,handoff.whatsappUrl]);
- return <section className={s.prose}><span className={s.eyebrow}>Inquiry saved · {reference}</span><h1>Your piece begins here.</h1><p>Your brief is saved in our Studio. Continue the conversation in WhatsApp and press Send there. Your order, quotation and delivery still need to be agreed with the atelier.</p>
- {handoff.copyRequired&&<p className={s.success}>Your brief is too long for a reliable WhatsApp link. Copy the complete summary first, open the short reference message, then paste the full summary into the conversation. The short link contains your inquiry reference only.</p>}
- <div className={s.actions}><button className={s.button} onClick={()=>void navigator.clipboard.writeText(summary).then(()=>setStatus('Complete summary copied.')).catch(()=>setStatus('Copy was unavailable. Select the summary below and copy it manually.'))}>Copy complete summary</button><a className={s.button+' '+s.outline} href={handoff.whatsappUrl} rel="noreferrer">Open WhatsApp ↗</a></div><p role="status">{status}</p>
- <details open><summary>Your saved brief</summary><pre className={s.receiptSummary}>{summary}</pre></details><p className={s.help}>This private receipt is available in this browser for up to 24 hours. Reopening WhatsApp does not create another inquiry.</p><Link className={s.textLink} href="/collectible-design">Return to the collection</Link></section>;
+export function SavedReceipt({receipt:initial,requestKey,autoOpen}:{receipt:OrderReceipt;requestKey:string;autoOpen:boolean}){
+ const [receipt,setReceipt]=useState(initial);
+ return <section className={s.prose}><span className={s.eyebrow}>Inquiry saved · {receipt.reference}</span><h1>Your brief is with us.</h1><p>Your request is recorded in the database and Studio. A saved request is not a confirmed quotation or production booking. Final design, quotation and delivery need the atelier’s agreement.</p>
+ <SavedOrderActions receipt={receipt} endpoint={'/api/inquiry/receipt?key='+encodeURIComponent(requestKey)} identity={{key:requestKey}} autoOpen={autoOpen} onChange={setReceipt}/>
+ {receipt.summary?<details open><summary>Your saved order message</summary><pre className={s.receiptSummary}>{receipt.summary}</pre></details>:receipt.brief&&<details open><summary>Your saved brief</summary><dl className={s.reviewList}><dt>Piece</dt><dd>{receipt.brief.title}</dd><dt>Name</dt><dd>{receipt.brief.name}</dd><dt>Phone</dt><dd>{receipt.brief.phone}</dd><dt>Email</dt><dd>{receipt.brief.email||'Not provided'}</dd>{receipt.brief.answers.map(a=><div key={a.label} style={{display:'contents'}}><dt>{a.label}</dt><dd>{a.value}</dd></div>)}<dt>Notes</dt><dd>{receipt.brief.notes||'None'}</dd><dt>Private references</dt><dd>{receipt.brief.referenceCount}</dd></dl></details>}
+ <p className={s.help}>This private receipt is available in the original browser for up to 24 hours. Reopening WhatsApp or preparing the saved message does not create another inquiry. Nothing sends automatically, and the website cannot tell whether you pressed Send.</p><Link className={s.textLink} href="/collectible-design">Return to the collection</Link></section>;
 }

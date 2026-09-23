@@ -1,0 +1,117 @@
+{
+  "date": "2026-09-23T14:52:40.400Z",
+  "resource": "store_TYe2hzqKpB0JBuDN",
+  "privateStore": "store_1W9MAXAeFr2AwK23",
+  "project": "blue-haze-08978208",
+  "files": [
+    {
+      "file": "scripts/phase2-order-contract.sql",
+      "sha256": "a880306e06681735ae58a61738d9a678272f73e6eddb2c350acbaeb6977726e7",
+      "normalizedSourceSha256": "a880306e06681735ae58a61738d9a678272f73e6eddb2c350acbaeb6977726e7"
+    },
+    {
+      "file": "scripts/phase6-upload-identity.sql",
+      "sha256": "03de26f380d6bedc50f407096949bf563094c022e5095a9b2a2c1216e4ed9034",
+      "normalizedSourceSha256": "03de26f380d6bedc50f407096949bf563094c022e5095a9b2a2c1216e4ed9034"
+    }
+  ],
+  "transaction": "One transaction; table locks, unchanged-data guards and bounded timeouts",
+  "counts": {
+    "rivya_audit": 0,
+    "rivya_business_settings": 0,
+    "rivya_catalogue": 0,
+    "rivya_content": 0,
+    "rivya_inquiries": 0,
+    "rivya_inquiry_notes": 0,
+    "rivya_inquiry_upload_sessions": 0,
+    "rivya_public_media": 0,
+    "rivya_references": 0,
+    "rivya_revisions": 0,
+    "rivya_staff": 0,
+    "rivya_storage_budget": 1,
+    "rivya_studio_login_limits": 0,
+    "rivya_studio_order_events": 0,
+    "rivya_studio_orders": 0,
+    "rivya_studio_sessions": 1
+  },
+  "privateObjects": 0,
+  "originalDataPreserved": true,
+  "newColumns": 24,
+  "constraints": [
+    {
+      "table": "rivya_inquiries",
+      "name": "rivya_inquiries_contract_v2",
+      "validated": true
+    },
+    {
+      "table": "rivya_inquiries",
+      "name": "rivya_inquiries_contract_version",
+      "validated": true
+    },
+    {
+      "table": "rivya_inquiries",
+      "name": "rivya_inquiries_contract_version_not_null",
+      "validated": true
+    },
+    {
+      "table": "rivya_inquiries",
+      "name": "rivya_inquiries_message_attempts",
+      "validated": true
+    },
+    {
+      "table": "rivya_inquiries",
+      "name": "rivya_inquiries_message_attempts_not_null",
+      "validated": true
+    },
+    {
+      "table": "rivya_inquiries",
+      "name": "rivya_inquiries_message_state",
+      "validated": true
+    },
+    {
+      "table": "rivya_inquiries",
+      "name": "rivya_inquiries_message_state_not_null",
+      "validated": true
+    },
+    {
+      "table": "rivya_inquiries",
+      "name": "rivya_inquiries_request_kind",
+      "validated": true
+    },
+    {
+      "table": "rivya_inquiries",
+      "name": "rivya_inquiries_request_kind_not_null",
+      "validated": true
+    },
+    {
+      "table": "rivya_references",
+      "name": "rivya_reference_upload_digest",
+      "validated": true
+    },
+    {
+      "table": "rivya_references",
+      "name": "rivya_reference_write_lease",
+      "validated": true
+    },
+    {
+      "table": "rivya_references",
+      "name": "rivya_references_linked_at",
+      "validated": true
+    },
+    {
+      "table": "rivya_references",
+      "name": "rivya_references_normalized_mime",
+      "validated": true
+    },
+    {
+      "table": "rivya_references",
+      "name": "rivya_references_vercel_only",
+      "validated": false
+    }
+  ],
+  "runtime": "No inquiry/upload/message/browser QA executed; intake and retry flags remain off",
+  "backupId": "phase6-preview-2026-09-23T14-49-31-739Z",
+  "backupCustody": "Windows DPAPI CurrentUser; access-restricted owner-profile storage outside repository and provider; local completion receipt records location",
+  "backupVerification": "Encryption roundtrip checksum and pg_restore archive listing succeeded; full restore rehearsal remains Phase 11",
+  "hashBasis": "SHA-256 of local raw SQL bytes applied; LF-normalized source digest also recorded for Git checkout portability"
+}

@@ -15,7 +15,7 @@ export function validateBriefForm(form:FormData,definition:InquiryDefinition){
  const contact={name:read('name'),phone:read('phone'),email:read('email'),notes:read('notes')};
  const errors=contactIssues(contact,read('consent')==='on');
  const raw=Object.fromEntries(definition.fields.map(f=>[f.id,read('answer_'+f.id)]));
- const allowed=new Set(['kind','schemaId','schemaVersion','productId','revision','requestKey','name','phone','email','notes','consent','reference','website',...definition.fields.map(f=>'answer_'+f.id)]);
+ const allowed=new Set(['kind','schemaId','schemaVersion','productId','revision','requestKey','name','phone','email','notes','consent','consentVersion','reference','website',...definition.fields.map(f=>'answer_'+f.id)]);
  if([...form.keys()].some(k=>!allowed.has(k)||k!=='reference'&&form.getAll(k).length!==1))errors.form='The brief contains an unsupported or repeated field. Review the current form.';
  if([...form.values()].some(v=>typeof v!=='string')||[...form.values()].reduce((n,v)=>n+String(v).length,0)>10000)errors.form='The brief is too long or contains unsupported data.';
  if(read('website'))errors.form='Unable to submit this request.';

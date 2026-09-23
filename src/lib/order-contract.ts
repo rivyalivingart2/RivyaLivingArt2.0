@@ -1,6 +1,6 @@
 /**
- * Phase 2 persistence contract. Not wired to submission/receipt routes yet.
- * Server validation and compatibility readers are implemented in Phases 5–7.
+ * Version 2 persistence contract used by Phase 6 submission and compatibility readers.
+ * Schemas and immutable saved evidence are validated before message rendering.
  * Never cast untrusted JSON to this type as a substitute for validation.
  */
 import type {CustomField} from './product-form';
