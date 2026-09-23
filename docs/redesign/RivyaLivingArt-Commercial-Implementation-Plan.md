@@ -1,11 +1,11 @@
 # RivyaLivingArt — Commercial Implementation Plan
 
-**Revision:** 3.4 — Phase 4 product discovery source complete; approved scope retained
+**Revision:** 3.5 — Phase 5 customization source complete; approved scope retained
 **Prepared:** 23 September 2026  
-**Status:** Phase 4 complete — product discovery/presentation source; next task P5.1
+**Status:** Phase 5 source complete — forms and recovery; next task P6.1
 **Scope:** Every public page, product/customization instance, private Studio screen and shared state.  
 **Hosting direction:** Vercel only; free services only; commercial deployment eligibility unresolved. No Netlify.  
-**Execution boundary:** The owner authorized Phase 4 and GitHub publication. All 120 products are reconciled; URL discovery, published-media projection, gallery/care/related presentation, canonical customization routing and per-record dispositions are implemented. No database publication, migration, seed or deployment. Formal QA remains Phase 11 and release gates remain.
+**Execution boundary:** The owner authorized Phase 5 and GitHub publication. All 120 product schemas, Studio validation, selected-product/bespoke forms and recovery boundaries are implemented in source. Bespoke saving remains explicitly unavailable until Phase 6 v2 persistence. No database operation, publication or deployment. Formal QA remains Phase 11; release remains Phase 12.
 
 **Canonical plan after publication:** `docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md` in the existing repository. The outputs file is a synchronized delivery copy of the same revision, not a competing plan. Read `docs/decisions/2026-09-23-revised-phase-1-approved.md` for the approval record. No repeat plan approval is needed.
 
@@ -392,7 +392,7 @@ Formal integrated verification stays after backend integration. “Testing” be
 
 **Tasks:** P5.1 reconcile field families and actual capabilities; P5.2 complete stable typed field IDs, versioning/conditions and Studio builder validation; P5.3 complete selected-product form and the proposed bespoke `/commission/customize` branch; P5.4 customer fields, optional references/notes and review/edit controls; P5.5 stale-schema, upload, navigation and retry recovery without persistent plaintext browser PII; P5.6 connect a real honeypot if retained, visible upload status and linked error descriptions; P5.7 replace demo-only form behavior with genuine service/error boundaries.
 
-**Dependencies:** Phases 2–4 and approved supported product capabilities. **Files/systems:** `product-form.ts`, order form, customization routes, form editor and request/upload contracts. **Database impact:** draft/published schema versions and custom-kind support; preserve old schema/answers. **UI impact:** P07–P10, new P32, S09. **Security:** server validates all options/conditions; ignore no untrusted fields; bounded notes/files. **Testing:** prepare per-product required/conditional cases, mobile keyboards, Unicode, revision changes, attachment progress/failure and unsaved navigation. **Deliverables:** schema inventory, working source forms and exact review copy. **Exit criteria:** each accepted brief has stable structure and version, no fake success, no generic WhatsApp path. **Resume point:** P6.1.
+**Dependencies:** Phases 2–4 and approved supported product capabilities. **Files/systems:** `product-form.ts`, order form, customization routes, form editor and request/upload contracts. **Database impact:** draft/published schema versions and custom-kind support; preserve old schema/answers. **UI impact:** P07–P10, new P32, S09. **Security:** server validates all options/conditions; ignore no untrusted fields; bounded notes/files. **Testing:** prepare per-product required/conditional cases, mobile keyboards, Unicode, revision changes, attachment progress/failure and unsaved navigation. **Deliverables:** schema inventory, working source forms and exact review copy. **Exit criteria:** each accepted brief has stable structure and version, no fake success, no generic WhatsApp path. **Resume point:** P6.1. **Status:** P5.1–P5.7 complete at the source gate; see PHASE-5-CUSTOMIZATION.md and phase-5-schemas.json. Bespoke prepare/review/copy is ready in source; uploads/save/handoff await Phase 6. No runtime QA or database integration completion is claimed.
 
 ### Phase 6 — Durable order save and WhatsApp handoff
 
@@ -608,7 +608,8 @@ Already resolved: pasted workflow is the WhatsApp authority; business number/pho
 | 2 | Complete — foundation and architecture | P2.1–P2.7; see PHASE-2-DATA-ARCHITECTURE.md, PHASE-2-MIGRATION-RUNBOOK.md and phase-2-environments.json. No migration applied. |
 | 3 | Complete — shared design-system source | P3.1–P3.6; tokens, responsive header, dialogs, controls, Studio density, motion/static rules and shared WhatsApp copy; see PHASE-3-DESIGN-SYSTEM.md |
 | 4 | Complete — catalogue/discovery source | P4.1–P4.6; all 120 product records reconciled; PHASE-4-CATALOGUE.md and phase-4-products.json |
-| 5–9 | Planned; prior source preserved | Next P5.1; explicit field families/capabilities including DP110/DP119, then remaining implementation |
+| 5 | Complete — customization source | P5.1–P5.7; PHASE-5-CUSTOMIZATION.md and phase-5-schemas.json; bespoke durable save remains P6 |
+| 6–9 | Planned; prior source preserved | Next P6.1; product/bespoke ownership/identity, atomic save and saved-message finalization |
 | 10 | Planned | Full integrated commercial-readiness report and remediation |
 | 11 | Planned | Formal final QA on exact candidate |
 | 12 | Planned; eligibility unresolved | Main and eligible production release only after gates |
@@ -649,9 +650,15 @@ Approval is recorded. It does not waive hosting eligibility, final QA, privacy o
 
 **Phase 4 publication receipt:** implementation a75d95bb662093564a6ff84b04583238a81b394d pushed to codex/phase-4-catalogue and independently matched against GitHub remote refs on 23 September 2026. Main remained 47323c51a9c225cac0ee719203612bc579d5ede0. See phase-4-github-publication.json; this documentation receipt follows the implementation commit. No database or production deployment changes.
 
+### L8. Phase 5 completion — 23 September 2026
+
+**Phase:** 5 — Product-specific and bespoke customization. **Status:** P5.1–P5.7 source complete; durable bespoke saving is P6 and final QA P11. **Objective:** collect the correct versioned brief with recoverable, accessible entry. **Completed Tasks:** explicit 120-product/27-family capability registry and 111 changed proposals, correcting DP110/DP119 ring sizing; shared stable field/condition/bounds validation and deliberate Studio draft apply; typed product/bespoke definitions and /commission/customize; contact/consent/private-reference/review/edit controls; tab-memory recovery, stale-schema reconciliation, stable request/upload identity and paused editing after uncertain save; real honeypot, upload progress and linked error summaries; honest unavailable bespoke service boundary. **Files Changed:** product capabilities/fields, shared schema/brief/definition validators, order form/tab draft memory/styles, schema API/custom route, legacy action validation/reference DELETE, Studio editor; source inventory/report/decision/master/progress/coverage/routes/guidance. **Database Changes:** none; no fresh read/write/migration/seed/publication. **Design Changes:** shared visual system retained; clearer steps/review/errors/upload states. **Content Changes:** form labels/help/service-state copy; historical candidate content unchanged. **Tests:** Node 22.23.2 TypeScript wiring, source-schema inventory/CSS/preservation checks only; no application QA or runtime proof. **Issues:** bespoke v2 writer and saved-message sequencing remain P6; reload/close loses tab memory; late-upload/deletion races require later reconciliation proof. **Decisions:** no silent schema migration or fake product/save; source template revision differs from durable published version. **Commercial Risks:** existing free-only/Vercel eligibility, credentials/grants, backup/privacy and deployment hold unchanged. **Owner Input Required:** none for this source phase. **Next Phase:** 6. **Resume Point:** P6.1 validation/ownership/request identity; follow Phase 2 backup/schema/environment gates before integration. Baseline main a007d0fb0b2cc05f4ce55e0f3ebff6d66f51c17f (PR #18), branch codex/phase-5-customization.
+
+**Phase 5 publication receipt:** implementation 8d84d2e8b934b049467b18604718f05a9ba12efc pushed to codex/phase-5-customization and independently matched against GitHub remote refs on 23 September 2026. Main remained a007d0fb0b2cc05f4ce55e0f3ebff6d66f51c17f. See phase-5-github-publication.json; this documentation receipt follows the implementation commit. No database or production deployment changes.
+
 ## M. Final recommendation
 
-Continue the approved saved-order-only scope from the Phase 4 checkpoint at P5.1. Preserve working database/Studio foundations; correct actual message sequencing, metadata, bespoke flow, copy and staff controls; prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
+Continue the approved saved-order-only scope from the Phase 5 source checkpoint at P6.1. Preserve working database/Studio foundations; correct actual message sequencing, metadata, bespoke flow, copy and staff controls; prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
 
 The statement below applies to **this revised implementation**. Substantial earlier source work exists and is preserved; it has not been reset or falsely described as nonexistent.
 
@@ -663,5 +670,7 @@ PHASE 3 STATUS: COMPLETE — SHARED DESIGN-SYSTEM SOURCE; FINAL QA PENDING.
 
 PHASE 4 STATUS: COMPLETE — PRODUCT DISCOVERY SOURCE; ACTIVATION AND FINAL QA PENDING.
 
+PHASE 5 STATUS: COMPLETE — CUSTOMIZATION SOURCE; BESPOKE SAVE P6, FINAL QA P11.
+
 NEXT ACTION:
-Begin Phase 5 from task P5.1.
+Begin Phase 6 from task P6.1.
