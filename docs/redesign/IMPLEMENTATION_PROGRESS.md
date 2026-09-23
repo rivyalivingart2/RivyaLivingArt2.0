@@ -6,7 +6,7 @@ Phase 5 — COMPLETE at the customization source gate under master revision 3.5.
 
 ## Current Task
 
-P5.1–P5.7 source complete. Preparing GitHub publication on codex/phase-5-customization. Baseline main a007d0fb0b2cc05f4ce55e0f3ebff6d66f51c17f is the Phase 4 merge PR #18. Publication receipt will record independently verified remote identity.
+P5.1–P5.7 source complete and published. Implementation 8d84d2e8b934b049467b18604718f05a9ba12efc matches independent GitHub remote readback on codex/phase-5-customization; main remains a007d0fb0b2cc05f4ce55e0f3ebff6d66f51c17f (Phase 4 merge PR #18). See phase-5-github-publication.json. This documentation follow-up records the verified receipt; the task completion file records the final branch head.
 
 ## Completed
 
@@ -21,7 +21,7 @@ P5.1–P5.7 source complete. Preparing GitHub publication on codex/phase-5-custo
 
 ## In Progress
 
-GitHub source publication and exact remote readback. No application QA or deployment is running.
+None. Phase 5 source is complete and published. Phase 6 has not started.
 
 ## Pending
 
