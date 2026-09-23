@@ -1,10 +1,10 @@
-# Active approved plan — Phase 2 complete
+# Active approved plan — Phase 3 complete
 
-The owner authorized Phase 2 and GitHub publication; read docs/decisions/2026-09-23-phase-2-execution.md. The canonical plan is docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md revision 3.2. Read PHASE-2-DATA-ARCHITECTURE.md, PHASE-2-MIGRATION-RUNBOOK.md, phase-2-environments.json and IMPLEMENTATION_PROGRESS.md in docs/redesign.
+The owner authorized Phase 3 and GitHub publication; read docs/decisions/2026-09-23-phase-3-execution.md. The canonical plan is docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md revision 3.3. Read PHASE-3-DESIGN-SYSTEM.md, DESIGN-SYSTEM.md and IMPLEMENTATION_PROGRESS.md in docs/redesign; retain the Phase 2 architecture/runbook as the integration authority.
 
-Phase 2 foundation/architecture is complete; no migration or data write was performed. Next is P3.1 on codex/phase-2-foundation, created from upstream Phase 1 merge bdfd78fa08f5b7738df8d465326eb960147b9ac2. Verify current Git state before resuming; do not restart or repeat approval. Formal QA is Phase 11 and release Phase 12.
+P3.1–P3.6 shared design-system source work is complete. Next is P4.1: reconcile all 120 product IDs/slugs against actual publishable records. Branch codex/phase-3-design-system starts from Phase 2 merge 85b476df358d9fb07c9a8ec07cc478da581138f4. Verify current Git state before resuming; do not restart or repeat approval. Formal QA is Phase 11 and release Phase 12.
 
-WhatsApp is only saved-order handoff with manual Send and saved-order Open/Copy. Preserve database/Studio records, private references and drafts. No generic WhatsApp, payments, carts or customer accounts. Vercel-only/free-only and automatic-deployment hold remain; no Netlify. Main/production release waits for final gates.
+WhatsApp is only saved-order handoff with manual Send and saved-order Open/Copy. Preserve database/Studio records, private references, drafts and supplied assets. No generic WhatsApp, payments, carts or customer accounts. Vercel-only/free-only and automatic-deployment hold remain; no Netlify. Main/production release waits for final gates. No Phase 3 migration, publication of catalogue records or deployment occurred.
 
 Older records below are historical where superseded.
 

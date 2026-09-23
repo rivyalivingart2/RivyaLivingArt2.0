@@ -1,11 +1,11 @@
 # RivyaLivingArt — Commercial Implementation Plan
 
-**Revision:** 3.2 — Phase 2 foundation complete; approved scope retained
+**Revision:** 3.3 — Phase 3 shared design system complete; approved scope retained
 **Prepared:** 23 September 2026  
-**Status:** Phase 2 complete — foundation and architecture; next task P3.1
+**Status:** Phase 3 complete — shared design-system source; next task P4.1
 **Scope:** Every public page, product/customization instance, private Studio screen and shared state.  
 **Hosting direction:** Vercel only; free services only; commercial deployment eligibility unresolved. No Netlify.  
-**Execution boundary:** The owner authorized Phase 2 and GitHub publication. Foundation contracts, inactive bespoke registry, proposed migration, recovery runbook and read-only Preview/Production reconciliation are complete. No Phase 2 DDL, seed, data deletion or deployment was performed. Integration and release gates remain.
+**Execution boundary:** The owner authorized Phase 3 and GitHub publication. Shared tokens, readable responsive navigation, dialogs, public/Studio controls, static/reduced-motion behavior and shared copy are implemented. No migration, seed, data deletion or deployment was performed. Formal QA is Phase 11; integration and release gates remain.
 
 **Canonical plan after publication:** `docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md` in the existing repository. The outputs file is a synchronized delivery copy of the same revision, not a competing plan. Read `docs/decisions/2026-09-23-revised-phase-1-approved.md` for the approval record. No repeat plan approval is needed.
 
@@ -376,7 +376,7 @@ Formal integrated verification stays after backend integration. “Testing” be
 
 **Tasks:** P3.1 audit token/font/component reuse; P3.2 establish forest/navy/ivory contrast roles and responsive grid; P3.3 correct logo/header/navigation/menu/sticky behavior; P3.4 standardize buttons, fields, cards, dialogs, feedback and focus; P3.5 define motion/static/reduced-motion rules and Studio density; P3.6 remove broad WhatsApp labels from shared chrome without adding generic replacements.
 
-**Dependencies:** Phase 2 source baseline; existing brand assets. **Files/systems:** `src/styles/tokens.css`, `src/components/shop/*`, Studio styles and login. **Database impact:** none. **UI impact:** every shared public and Studio component. **Security:** no public staff entry or customer account; dialog states must not reveal private data. **Testing:** prepare keyboard/focus/contrast/reflow scenarios; compiler/source checks only until integrated QA. **Deliverables:** updated design-system specification, responsive component/source coverage. **Exit criteria:** every shared state has a specified usable static version, readable header and no generic WhatsApp affordance. **Resume point:** P4.1.
+**Dependencies:** Phase 2 source baseline; existing brand assets. **Files/systems:** `src/styles/tokens.css`, `src/components/shop/*`, Studio styles and login. **Database impact:** none. **UI impact:** every shared public and Studio component. **Security:** no public staff entry or customer account; dialog states must not reveal private data. **Testing:** prepare keyboard/focus/contrast/reflow scenarios; compiler/source checks only until integrated QA. **Deliverables:** updated design-system specification, responsive component/source coverage. **Exit criteria:** every shared state has a specified usable static version, readable header and no generic WhatsApp affordance. **Resume point:** P4.1. **Status:** P3.1–P3.6 complete at the source/specification gate; see PHASE-3-DESIGN-SYSTEM.md. Compiler/source checks only; visual/device/accessibility proof remains Phase 11.
 
 ### Phase 4 — Product discovery and all-product presentation
 
@@ -606,7 +606,8 @@ Already resolved: pasted workflow is the WhatsApp authority; business number/pho
 | 0 | Complete within audit limits | Source/plan reconciliation, WhatsApp classification, read-only deployment listing, benchmark sampling; live database/runtime checks explicitly outstanding |
 | 1 | Complete — approved | Master, reconciliation, progress, approval record and repository guidance finalized for work-branch publication |
 | 2 | Complete — foundation and architecture | P2.1–P2.7; see PHASE-2-DATA-ARCHITECTURE.md, PHASE-2-MIGRATION-RUNBOOK.md and phase-2-environments.json. No migration applied. |
-| 3–9 | Planned; prior source preserved | Next P3.1; shared design system, then the remaining approved implementation |
+| 3 | Complete — shared design-system source | P3.1–P3.6; tokens, responsive header, dialogs, controls, Studio density, motion/static rules and shared WhatsApp copy; see PHASE-3-DESIGN-SYSTEM.md |
+| 4–9 | Planned; prior source preserved | Next P4.1; catalogue and product-specific implementation, then remaining approved phases |
 | 10 | Planned | Full integrated commercial-readiness report and remediation |
 | 11 | Planned | Formal final QA on exact candidate |
 | 12 | Planned; eligibility unresolved | Main and eligible production release only after gates |
@@ -635,9 +636,13 @@ Approval is recorded. It does not waive hosting eligibility, final QA, privacy o
 
 **Phase:** 2 — Foundation and data architecture. **Status:** complete within the approved architecture scope; migration and integration remain gated. **Objective:** extend the preserved source safely. **Completed Tasks:** P2.1 baseline/hold verified, new branch from merged main bdfd78f; P2.2 live read-only Preview/Production columns, constraints, indexes, counts and dashboard-role permissions; P2.3 versioned brief/message/consent/source contract and proposed DDL; P2.4 independent backup/restore and retention/deletion mapping; P2.5 inactive bespoke v1 registry and guest/reference boundaries; P2.6 environment isolation matrix and permitted local continuation; P2.7 schema/role/instance/coverage registers and rollback instructions. **Files Changed:** order-contract.ts, bespoke-schema.ts, phase2-schema-inspection.sql, phase2-order-contract.sql; Phase 2 architecture/runbook/environment/migration registers; master/progress/guidance/coverage/instance records. **Database Changes:** none; Preview has 16 tables, one storage-budget row and one existing session, all other inspected counts zero; Production has four original tables, all counts zero. These observations do not authorize deletion or remove the need for a fresh pre-write inventory. **Design Changes:** none; bespoke definition is inactive. **Content Changes:** no published copy/records changed. **Tests:** TypeScript compiler wiring passes under existing Node 22.23.2; document/contract/register consistency and sensitive-file checks; no lint/build/browser/constraint/restore tests or final QA claimed. **Issues:** current runtime lacks v2 readers/writer; local DB/Blob values masked; Production lacks the later migrations. **Decisions:** retain Neon HTTP atomic core and two-stage saved-message finalization; explicit legacy compatibility; no destructive down migration. **Commercial Risks:** Vercel Hobby hold, shared environment admin credentials, unverified runtime grants and pending recovery/privacy policy remain release gates. **Owner Input Required:** no plan approval; later specific backup custody/retention and hosting eligibility decisions only. **Next Phase:** 3. **Resume Point:** P3.1 on codex/phase-2-foundation; read current Git state because upstream merges may advance it.
 
+### L6. Phase 3 completion — 23 September 2026
+
+**Phase:** 3 — Shared design system. **Status:** P3.1–P3.6 source/specification complete; final integrated QA remains pending. **Objective:** refine preserved public/Studio components into a consistent readable system. **Completed Tasks:** token/font/component audit; forest/navy/ivory/bronze roles and grid; 84px/72px sticky header with 16px navigation; unified modal lock/focus lifecycle and native no-JavaScript navigation; controls/cards/fields/feedback focus and state styling; static/reduced-motion parity and Studio density; broad WhatsApp wording removed from shared footer/default metadata. **Files Changed:** tokens.css, shop header/dialog/feedback/frame/styles, Studio login/workspace/board styles, root layout/global anchor offsets; DESIGN-SYSTEM, PHASE-3-DESIGN-SYSTEM, coverage/master/progress/continuation and owner decision records. **Database Changes:** none. **Design Changes:** existing logo/local fonts/assets retained; no new dependency or paid service. **Content Changes:** shared footer and metadata only; drafts, catalogue/editorial records and saved messages preserved. **Tests:** Node 22.23.2 TypeScript compiler wiring passes; CSS parse, token contrast calculation, source/component/register consistency and preservation review. No lint/build/suites/browser/device/runtime QA executed; not TESTED. **Issues:** product-level content/behavior, message sequencing and Studio runtime proof remain in later phases; source contrast does not certify rendered accessibility. **Decisions:** continue existing source from Phase 2 PR #16 merge 85b476df358d9fb07c9a8ec07cc478da581138f4 on codex/phase-3-design-system; publish only source/sanitized records to GitHub. **Commercial Risks:** existing hosting eligibility, credentials/grants, backup/privacy and release gates unchanged; automatic deployment remains disabled. **Owner Input Required:** none for this phase; no repeat plan approval. **Next Phase:** 4. **Resume Point:** P4.1 — reconcile all 120 product IDs/slugs against actual publishable records. Git history identifies this source snapshot; verify current refs before continuing.
+
 ## M. Final recommendation
 
-Continue the approved saved-order-only scope from the Phase 2 checkpoint at P3.1. Preserve working database/Studio foundations; correct actual message sequencing, metadata, bespoke flow, copy and staff controls; prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
+Continue the approved saved-order-only scope from the Phase 3 checkpoint at P4.1. Preserve working database/Studio foundations; correct actual message sequencing, metadata, bespoke flow, copy and staff controls; prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
 
 The statement below applies to **this revised implementation**. Substantial earlier source work exists and is preserved; it has not been reset or falsely described as nonexistent.
 
@@ -645,5 +650,7 @@ PHASE 1 STATUS: COMPLETE — APPROVED
 
 PHASE 2 STATUS: COMPLETE — FOUNDATION AND ARCHITECTURE; NO MIGRATION APPLIED.
 
+PHASE 3 STATUS: COMPLETE — SHARED DESIGN-SYSTEM SOURCE; FINAL QA PENDING.
+
 NEXT ACTION:
-Begin Phase 3 from task P3.1.
+Begin Phase 4 from task P4.1.
