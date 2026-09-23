@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, type KeyboardEvent, type ReactNode } from "react";
 import styles from "./studio-shell.module.css";
 
-const studioRoot = "/preview/studio";
+const studioRoot = "/studio";
 const navigationGroups = [
   {
     label: "Workspace",

@@ -66,7 +66,7 @@ function ProductWorkspace({ result, sourceTotal }: { result: StudioCatalogueResu
   }
 
   function productIdentity(piece: Concept) {
-    return <Link className={styles.identity} href={`/preview/studio/products/${piece.id}`}>
+    return <Link className={styles.identity} href={`/studio/products/${piece.id}`}>
       <span className={styles.thumbnail}><ConceptImage src={piece.image} alt={piece.alt} fill compact sizes="64px" /></span>
       <span><strong>{piece.title}</strong><span>{piece.id} · {piece.type}</span></span>
     </Link>;
@@ -91,19 +91,19 @@ function ProductWorkspace({ result, sourceTotal }: { result: StudioCatalogueResu
   return <section className={styles.workspace} aria-labelledby="studio-products-heading">
     <header className={styles.heading}>
       <div><p className="eyebrow">Catalogue / Demo dataset</p><h1 id="studio-products-heading">Products<span>{sourceTotal}</span></h1><p>Furniture, memories and personal objects. Every record here is a labelled source fixture.</p></div>
-      <Link className={styles.primaryAction} href="/preview/studio/products/new"><span aria-hidden="true">+</span> Create local draft</Link>
+      <Link className={styles.primaryAction} href="/studio/products/new"><span aria-hidden="true">+</span> Create local draft</Link>
     </header>
 
     <div className={styles.notice}><span className={styles.noticeMark} aria-hidden="true" /><p><strong>Demo workspace.</strong> Visibility and draft labels describe source fixtures, not a live catalogue. Rights and owners have not been approved. Local staging disappears when you leave, refresh or change filters.</p></div>
 
-    <Form action="/preview/studio/products" className={styles.filters}>
+    <Form action="/studio/products" className={styles.filters}>
       <label className={styles.search}>Search products<input type="search" name="q" defaultValue={filters.q} maxLength={120} placeholder="Title, fixture ID or object type" autoComplete="off" /></label>
       <label>Tier<select name="tier" defaultValue={filters.tier}>{studioTierOptions.map((item) => <option value={item.value} key={item.value}>{item.label}</option>)}</select></label>
       <label>Working draft<select name="draft" defaultValue={filters.draft}>{studioDraftOptions.map((item) => <option value={item.value} key={item.value}>{item.label}</option>)}</select></label>
       <label>Media<select name="media" defaultValue={filters.media}>{studioMediaOptions.map((item) => <option value={item.value} key={item.value}>{item.label}</option>)}</select></label>
       <label>Sort<select name="sort" defaultValue={filters.sort}>{studioSortOptions.map((item) => <option value={item.value} key={item.value}>{item.label}</option>)}</select></label>
       <button type="submit" className={styles.filterButton}>Apply filters</button>
-      <Link href="/preview/studio/products" className={styles.reset}>Reset</Link>
+      <Link href="/studio/products" className={styles.reset}>Reset</Link>
     </Form>
 
     <div className={styles.resultBar}>
@@ -142,7 +142,7 @@ function ProductWorkspace({ result, sourceTotal }: { result: StudioCatalogueResu
         {productIdentity(piece)}{productStatus(piece)}
         <dl><div><dt>Sample price</dt><dd>{price(piece)}</dd></div><div><dt>Lead time</dt><dd>{piece.leadTime.minWeeks}–{piece.leadTime.maxWeeks} weeks</dd></div><div><dt>Media / rights</dt><dd>{mediaStatus(piece)}</dd></div><div><dt>Owner</dt><dd>Unassigned</dd></div></dl>
       </li>)}</ul>
-    </> : <div className={styles.empty}><span aria-hidden="true">↗</span><h2>No products match this view.</h2><p>Try a shorter title, remove a filter or return to the complete demo catalogue.</p><Link href="/preview/studio/products">View all demo products</Link></div>}
+    </> : <div className={styles.empty}><span aria-hidden="true">↗</span><h2>No products match this view.</h2><p>Try a shorter title, remove a filter or return to the complete demo catalogue.</p><Link href="/studio/products">View all demo products</Link></div>}
 
     <footer className={styles.pagination}>
       <p>Page {result.page} of {result.pageCount}</p>

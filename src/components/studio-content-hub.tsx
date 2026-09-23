@@ -4,7 +4,7 @@ import { contentKindLabels, contentKinds, isContentKind, type ContentDocumentSum
 import styles from "./studio-content.module.css";
 
 type Query = Record<string, string | string[] | undefined>;
-const root = "/preview/studio/content";
+const root = "/studio/content";
 
 function contentHref(kind: string, q: string, page = 1) {
   const query = new URLSearchParams();
