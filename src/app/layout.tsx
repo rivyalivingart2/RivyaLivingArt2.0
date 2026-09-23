@@ -1,5 +1,5 @@
 import {connection} from "next/server";
-import {isVisualPreviewAllowed} from "@/lib/preview-mode";
+import {isPublicWebsiteAvailable} from "@/lib/public-website";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { SiteHeader } from "@/components/site-header";
@@ -28,11 +28,12 @@ const bodyFont = localFont({
 export const metadata: Metadata = {
   title: { default: "RivyaLivingArt — A material-led atelier", template: "%s | RivyaLivingArt" },
   description: "A furniture-first visual study for RivyaLivingArt. Collectible design, memory art and personal objects.",
+  icons:{icon:[{url:'/brand/favicon.ico',sizes:'any'},{url:'/brand/rivyalivingart-icon-32.png',sizes:'32x32',type:'image/png'}],apple:'/brand/apple-touch-icon.png'}, manifest:'/brand/site.webmanifest',
   robots: { index: false, follow: false },
 };
 export const viewport: Viewport = { themeColor: "#101713", colorScheme: "dark" };
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   await connection();
-  return <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}><body><a className="skip-link" href="#main-content">Skip to content</a><ApplicationFrame approved={isVisualPreviewAllowed(process.env)} header={<SiteHeader />} footer={<SiteFooter />}>{children}</ApplicationFrame></body></html>;
+  return <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}><body><a className="skip-link" href="#main-content">Skip to content</a><ApplicationFrame approved={isPublicWebsiteAvailable(process.env)} header={<SiteHeader />} footer={<SiteFooter />}>{children}</ApplicationFrame></body></html>;
 }

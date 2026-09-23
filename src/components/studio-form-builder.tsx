@@ -45,7 +45,7 @@ export function StudioFormBuilder({ initialConfig }: { initialConfig: InquiryCon
   const controllers = selected ? precedingControllers(draft, selected.id) : [];
   const controller = controllers.find((field) => field.id === selected?.visibleWhen?.field);
   const controllerOptions = controller?.type === "checkbox" ? [{ value: "yes", label: "Checked" }] : controller?.options ?? [];
-  const productHref = initialConfig.product ? `/preview/studio/products/${initialConfig.product.id}` : "/preview/studio/products";
+  const productHref = initialConfig.product ? `/studio/products/${initialConfig.product.id}` : "/studio/products";
 
   function changeDraft(next: InquiryConfig, message?: string) {
     setDraft(next);

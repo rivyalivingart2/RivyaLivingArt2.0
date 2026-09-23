@@ -10,10 +10,10 @@ type ApplicationFrameProps = Readonly<{
   approved?: boolean;
 }>;
 
-/** Presentation only: every Studio route still needs its server-side preview guard. */
+/** Presentation only: every Studio route still requires its server-side session check. */
 export function ApplicationFrame({ children, header, footer, approved=false }: ApplicationFrameProps) {
   const pathname = usePathname();
-  const isStudioPreview = pathname === "/preview/studio" || pathname.startsWith("/preview/studio/");
+  const isStudioPreview = pathname === "/studio" || pathname.startsWith("/studio/") || pathname === "/preview/studio" || pathname.startsWith("/preview/studio/");
 
   if (isStudioPreview || (approved && pathname !== "/studio")) return children;
 
