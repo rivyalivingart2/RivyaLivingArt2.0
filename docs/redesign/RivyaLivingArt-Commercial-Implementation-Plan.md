@@ -1,11 +1,11 @@
 # RivyaLivingArt — Commercial Implementation Plan
 
-**Revision:** 3.1 — approved Phase 1 completion and repository handoff; revision 3.0 scope unchanged  
+**Revision:** 3.2 — Phase 2 foundation complete; approved scope retained
 **Prepared:** 23 September 2026  
-**Status:** Phase 1 complete — owner approved; next implementation task P2.1  
+**Status:** Phase 2 complete — foundation and architecture; next task P3.1
 **Scope:** Every public page, product/customization instance, private Studio screen and shared state.  
 **Hosting direction:** Vercel only; free services only; commercial deployment eligibility unresolved. No Netlify.  
-**Execution boundary:** The owner accepted the revised plan, confirmed the saved-order-only WhatsApp scope, and instructed completion of Phase 1 followed by publication of the latest documents to GitHub. This completion updates plan/progress/repository guidance only. Phase 2 application changes, database writes and deployment are not part of this Phase 1 handoff.
+**Execution boundary:** The owner authorized Phase 2 and GitHub publication. Foundation contracts, inactive bespoke registry, proposed migration, recovery runbook and read-only Preview/Production reconciliation are complete. No Phase 2 DDL, seed, data deletion or deployment was performed. Integration and release gates remain.
 
 **Canonical plan after publication:** `docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md` in the existing repository. The outputs file is a synchronized delivery copy of the same revision, not a competing plan. Read `docs/decisions/2026-09-23-revised-phase-1-approved.md` for the approval record. No repeat plan approval is needed.
 
@@ -368,7 +368,7 @@ Formal integrated verification stays after backend integration. “Testing” be
 
 **Tasks:** P2.1 verify the latest approved plan, exact work-branch head/remote, clean or preserved working tree and deployment hold; snapshot any new drafts. P2.2 reconcile current Preview/Production schemas, migration receipts, permissions and environment scopes read-only; never assume zero records remain. P2.3 design additive request kind, stable answer snapshot, consent/source metadata and message-finalization fields with legacy compatibility. P2.4 define independent backup/restore, retention and deletion mapping. P2.5 define bespoke schema registry and references/guest ownership. P2.6 resolve permitted local/hosted integration environment under the Vercel eligibility hold; keep secrets ignored and separate. P2.7 update schema/data/role/instance registers and migration/rollback instructions.
 
-**Dependencies:** revised approval; required secrets only in secure local/provider configuration; hosting eligibility before any hosted business activation. **Files/systems:** `scripts/*schema.sql`, `src/lib/studio-db.ts`, models, `docs/redesign`, ignored configuration. **Database impact:** additive migrations only after schema reconciliation and backup; no deletion/backfill invention; Preview first when permitted, Production later. **UI impact:** none beyond architecture prerequisites. **Security:** explicit owner/admin/editor and private-reference boundaries; isolate environment identities. **Testing:** prepare migration invariants and recovery cases; final restore/constraint tests in Phases 10–11. **Deliverables:** current schema map, migration/rollback bundle, environment matrix and decision log. **Exit criteria:** each planned change maps to current schema; historical data remains readable; no secret exposure; any external blocker has an exact local continuation task. **Resume point:** P3.1.
+**Dependencies:** revised approval; required secrets only in secure local/provider configuration; hosting eligibility before any hosted business activation. **Files/systems:** `scripts/*schema.sql`, `src/lib/studio-db.ts`, models, `docs/redesign`, ignored configuration. **Database impact:** additive migrations only after schema reconciliation and backup; no deletion/backfill invention; Preview first when permitted, Production later. **UI impact:** none beyond architecture prerequisites. **Security:** explicit owner/admin/editor and private-reference boundaries; isolate environment identities. **Testing:** prepare migration invariants and recovery cases; final restore/constraint tests in Phases 10–11. **Deliverables:** current schema map, migration/rollback bundle, environment matrix and decision log. **Exit criteria:** each planned change maps to current schema; historical data remains readable; no secret exposure; any external blocker has an exact local continuation task. **Resume point:** P3.1. **Status:** Phase 2 foundation complete. Live Preview/Production schema reconciliation, proposed migration/rollback bundle, typed contracts and environment/role/instance registers are saved; activation blockers have exact continuation tasks. No migration applied.
 
 ### Phase 3 — Shared design system
 
@@ -605,7 +605,8 @@ Already resolved: pasted workflow is the WhatsApp authority; business number/pho
 |---|---|---|
 | 0 | Complete within audit limits | Source/plan reconciliation, WhatsApp classification, read-only deployment listing, benchmark sampling; live database/runtime checks explicitly outstanding |
 | 1 | Complete — approved | Master, reconciliation, progress, approval record and repository guidance finalized for work-branch publication |
-| 2–9 | Planned; prior source preserved | Next P2.1; reconcile and refine the existing implementation, do not restart |
+| 2 | Complete — foundation and architecture | P2.1–P2.7; see PHASE-2-DATA-ARCHITECTURE.md, PHASE-2-MIGRATION-RUNBOOK.md and phase-2-environments.json. No migration applied. |
+| 3–9 | Planned; prior source preserved | Next P3.1; shared design system, then the remaining approved implementation |
 | 10 | Planned | Full integrated commercial-readiness report and remediation |
 | 11 | Planned | Formal final QA on exact candidate |
 | 12 | Planned; eligibility unresolved | Main and eligible production release only after gates |
@@ -630,15 +631,19 @@ Before an output/context limit, save pending work and the exact next task, curre
 
 Approval is recorded. It does not waive hosting eligibility, final QA, privacy or release requirements. Phase 1 completion/publication does not mean the Phase 2–12 application work has been executed.
 
+### L5. Phase 2 completion — 23 September 2026
+
+**Phase:** 2 — Foundation and data architecture. **Status:** complete within the approved architecture scope; migration and integration remain gated. **Objective:** extend the preserved source safely. **Completed Tasks:** P2.1 baseline/hold verified, new branch from merged main bdfd78f; P2.2 live read-only Preview/Production columns, constraints, indexes, counts and dashboard-role permissions; P2.3 versioned brief/message/consent/source contract and proposed DDL; P2.4 independent backup/restore and retention/deletion mapping; P2.5 inactive bespoke v1 registry and guest/reference boundaries; P2.6 environment isolation matrix and permitted local continuation; P2.7 schema/role/instance/coverage registers and rollback instructions. **Files Changed:** order-contract.ts, bespoke-schema.ts, phase2-schema-inspection.sql, phase2-order-contract.sql; Phase 2 architecture/runbook/environment/migration registers; master/progress/guidance/coverage/instance records. **Database Changes:** none; Preview has 16 tables, one storage-budget row and one existing session, all other inspected counts zero; Production has four original tables, all counts zero. These observations do not authorize deletion or remove the need for a fresh pre-write inventory. **Design Changes:** none; bespoke definition is inactive. **Content Changes:** no published copy/records changed. **Tests:** TypeScript compiler wiring passes under existing Node 22.23.2; document/contract/register consistency and sensitive-file checks; no lint/build/browser/constraint/restore tests or final QA claimed. **Issues:** current runtime lacks v2 readers/writer; local DB/Blob values masked; Production lacks the later migrations. **Decisions:** retain Neon HTTP atomic core and two-stage saved-message finalization; explicit legacy compatibility; no destructive down migration. **Commercial Risks:** Vercel Hobby hold, shared environment admin credentials, unverified runtime grants and pending recovery/privacy policy remain release gates. **Owner Input Required:** no plan approval; later specific backup custody/retention and hosting eligibility decisions only. **Next Phase:** 3. **Resume Point:** P3.1 on codex/phase-2-foundation; read current Git state because upstream merges may advance it.
+
 ## M. Final recommendation
 
-Continue the approved saved-order-only scope from the existing source checkpoint at P2.1. Preserve working database/Studio foundations; correct actual message sequencing, metadata, bespoke flow, copy and staff controls; prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
+Continue the approved saved-order-only scope from the Phase 2 checkpoint at P3.1. Preserve working database/Studio foundations; correct actual message sequencing, metadata, bespoke flow, copy and staff controls; prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
 
 The statement below applies to **this revised implementation**. Substantial earlier source work exists and is preserved; it has not been reset or falsely described as nonexistent.
 
 PHASE 1 STATUS: COMPLETE — APPROVED
 
-PHASE 2 IMPLEMENTATION HAS NOT STARTED.
+PHASE 2 STATUS: COMPLETE — FOUNDATION AND ARCHITECTURE; NO MIGRATION APPLIED.
 
 NEXT ACTION:
-Begin Phase 2 from task P2.1.
+Begin Phase 3 from task P3.1.

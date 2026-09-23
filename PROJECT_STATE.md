@@ -1,12 +1,12 @@
-# Active approved plan — Phase 1 complete
+# Active approved plan — Phase 2 complete
 
-The owner approved the corrected WhatsApp-only order workflow and requested Phase 1 completion and GitHub publication. Read docs/decisions/2026-09-23-revised-phase-1-approved.md first, then docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md (revision 3.1), docs/redesign/Current-State-Reconciliation.md and docs/redesign/IMPLEMENTATION_PROGRESS.md.
+The owner authorized Phase 2 and GitHub publication; read docs/decisions/2026-09-23-phase-2-execution.md. The canonical plan is docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md revision 3.2. Read PHASE-2-DATA-ARCHITECTURE.md, PHASE-2-MIGRATION-RUNBOOK.md, phase-2-environments.json and IMPLEMENTATION_PROGRESS.md in docs/redesign.
 
-This is the single active implementation plan. Phase 1 is complete; next is P2.1 on codex/whatsapp-order-experience. Do not request the same plan approval again or restart preserved work. New phase numbering is 0–12; readiness checks are Phase 10, formal integrated QA Phase 11 and release Phase 12.
+Phase 2 foundation/architecture is complete; no migration or data write was performed. Next is P3.1 on codex/phase-2-foundation, created from upstream Phase 1 merge bdfd78fa08f5b7738df8d465326eb960147b9ac2. Verify current Git state before resuming; do not restart or repeat approval. Formal QA is Phase 11 and release Phase 12.
 
-WhatsApp is only the prepared saved-order message handoff, with customer manual Send and saved-order reopen/copy controls. Database and Studio are primary records. No generic WhatsApp features, payments, carts or customer accounts. Vercel-only/free-only and the deployment hold remain; no Netlify. Main/production stay unchanged until final release gates pass.
+WhatsApp is only saved-order handoff with manual Send and saved-order Open/Copy. Preserve database/Studio records, private references and drafts. No generic WhatsApp, payments, carts or customer accounts. Vercel-only/free-only and automatic-deployment hold remain; no Netlify. Main/production release waits for final gates.
 
-The records below are historical where superseded by the approved plan and this instruction.
+Older records below are historical where superseded.
 
 ---
 

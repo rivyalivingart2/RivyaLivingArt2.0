@@ -81,5 +81,13 @@
     "content": 0,
     "revisions": 0,
     "method": "Authenticated Preview read-only count query after all applied migrations; 1101ms"
+  },
+  "phase2Reconciliation": {
+    "record": "phase-2-environments.json",
+    "date": "2026-09-23",
+    "previewTables": 16,
+    "productionTables": 4,
+    "phase2MigrationsApplied": false,
+    "note": "Earlier fields are historical receipts; current environment/count observations and remaining gates are in the linked record."
   }
 }
