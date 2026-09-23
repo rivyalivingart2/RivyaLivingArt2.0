@@ -2,11 +2,11 @@
 
 ## Current Phase
 
-Phase 6 — COMPLETE at the source and isolated Preview schema gate under master revision 3.6. Intake remains disabled; application QA is Phase 11.
+Phase 6 source/schema complete. Post-Phase-6 shared database/private storage configuration saved under master revision 3.7; production release paused by owner. Next P7.1. Intake remains disabled; application QA is Phase 11.
 
 ## Current Task
 
-P6.1–P6.8 implementation and checkpoint complete and published. Implementation 37a47195fb19209aa520f2da27051f49e1c0ece9 independently matches GitHub codex/phase-6-order-handoff; main remains c7c5cb9161b961fe0e0c46c40d6b467d6a0252e7. See phase-6-github-publication.json. This documentation follow-up records publication; the local completion artifact records the final head. Phase 5 merged through PR #19 during this phase; this work branch fast-forwarded to that merge before publication.
+Shared configuration, backups, safeguards and resumable documentation complete. Phase 6 merged through PR #20 into main 8fd2cf02174ccb81c67586389d5bc958fa442b29. Follow-up branch: codex/shared-database-configuration. The local completion artifact records the final pushed SHA. See SHARED-DATA-CONFIGURATION.md and shared-data-configuration.json.
 
 ## Completed
 
@@ -23,7 +23,7 @@ P6.1–P6.8 implementation and checkpoint complete and published. Implementation
 
 ## In Progress
 
-None. Phase 6 is complete at its source/Preview schema gate and published. No active migration or application server.
+None for this configuration checkpoint. No deployment, active migration or application server. Phase 7 has not begun.
 
 ## Pending
 
@@ -31,7 +31,8 @@ P7.1 original-versus-amended Studio detail; remaining P7 roles, Kanban, publishi
 
 ## Blocked
 
-- Commercial activation: Vercel-only/free-only eligibility hold; automatic Git deployment remains disabled.
+- Commercial activation: owner explicitly paused production under Vercel-only/free-only constraints; automatic Git deployment remains disabled.
+- Shared-data operation: require separate disposable database/storage for synthetic QA and full restore. Existing integration associations can overwrite manually aligned values after reconnect/rotation; recheck before release.
 - Activation prerequisites: least-privilege runtime grants, environment-specific staff credentials/session revocation, reviewed catalogue/content publication and actual business settings.
 - Recovery/privacy: full isolated restore proof, backup portability/cadence/retention/RPO/RTO, submitted-reference retention and deletion responsibilities.
 - Release: complete later phases and exact-candidate QA. Preview schema application does not establish end-to-end application correctness.
@@ -40,19 +41,19 @@ Masked Preview database/Blob values and backup destination/key custody are no lo
 
 ## Owner Input Required
 
-None for Phase 6 source completion or Git publication. Preserve supplied product/policy/image approval. Resolve only actual missing policy facts and hosting eligibility at their later gates; do not request blanket reapproval or secrets in chat.
+None for the approved shared database/private storage configuration or source publication. The owner explicitly kept free-only and paused production. Do not repeat approvals or request secrets in chat.
 
 ## Files Changed
 
-Order action; session/reference/receipt and Studio APIs; shared saved actions/receipt, form and Studio detail; order consent/input/persistence/handoff/receipt/service/saved-brief modules; WhatsApp helper; private storage/cleanup; upload-identity DDL; .env.example. Phase report, migration receipt, master/progress/coverage/routes/decision and active guidance.
+Shared-data guard in preview-mode.ts; isolated-mode guards in seed-reviewed-preview.mjs and studio-migrate.mjs; .env.example; shared-data decision/report/sanitized receipt, master/progress and active continuation guidance. Prior Phase 6 source remains preserved.
 
 ## Database Changes
 
-Preview only at 2026-09-23T14:52:40.400Z: phase2-order-contract.sql plus phase6-upload-identity.sql, 24 added columns. Sixteen table counts and original-column row fingerprints preserved. One pre-existing storage-budget row and one Studio-session row; all other application counts and private-object count zero. No inquiry, upload, staff creation, seed or publication. Production unchanged. See phase-6-preview-migration.json; do not rerun applied DDL.
+Historical Phase 6 additive migration: see phase-6-preview-migration.json; do not rerun. This follow-up changed only Vercel environment configuration, with no database schema/data mutation. Both databases were backed up independently; old Production has four empty original tables, shared target has 16 tables with one budget and one existing session row and all other counts zero. Private objects: zero. Production variables now target the modern database for future deployments, and both environments have approved private reference storage access. Existing deployments retain old captured configuration.
 
 ## Testing Completed
 
-Node 22.23.2 TypeScript no-emit compiler wiring. Source/import/preservation/sensitive-file review, live read-only Preview schema/count inventory, encrypted archive checksum/readability and migration preservation checks. No lint/build/suites/dev server/browser/device/endpoint/concurrency/restore QA, synthetic inquiry, upload or message. No TESTED claim; backend evidence covers resource access/schema only.
+Node 22 TypeScript no-emit wiring and modified maintenance-script syntax checks passed. Read-only inventories, unchanged row fingerprints, encrypted roundtrip checksums/archive readability and Vercel update acknowledgements with independent IDs/scopes readback recorded. Sensitive plaintext comparison was unavailable. No application/browser/build/lint/concurrency/upload/message/full-restore QA or synthetic records; no TESTED claim.
 
 ## Known Issues
 
@@ -60,12 +61,8 @@ Both order write flags remain off/unset. Pending-upload recovery may require wai
 
 ## Next Exact Task
 
-**P7.1 — Complete Studio detail layout and immutable original versus operational amendment separation.** Read Phase 6 report and applied migration receipt first; reuse the saved-order handoff/recovery controls. Preserve private references, historical fields/messages/stages, source drafts and all IDs. Do not infer production schema from Preview or activate owner-level runtime credentials.
-
-Repository: C:/Users/gonda/Documents/Codex/2026-09-23/rivyalivingart-website-studio-preview-sites-project/work/repo
-
-Branch: codex/phase-6-order-handoff; includes Phase 5 final 44245c4b21405cd09c2986704accc3dd5dda4f1e. Main at start a007d0fb0b2cc05f4ce55e0f3ebff6d66f51c17f (Phase 4 PR #18). Latest fetched main is c7c5cb9161b961fe0e0c46c40d6b467d6a0252e7 (Phase 5 PR #19), included in this branch. Verify current refs before resuming. Completion artifact records final head and local backup location. No deployment.
+**P7.1 — Complete Studio detail layout and immutable original versus operational amendment separation.** Read the shared-data report/decision, Phase 6 report and applied migration receipt first. Preserve all records/IDs/private references and reuse saved-order controls. Main: 8fd2cf02174ccb81c67586389d5bc958fa442b29; branch: codex/shared-database-configuration. Verify current refs before resuming. Repository: C:/Users/gonda/Documents/Codex/2026-09-23/rivyalivingart-website-studio-preview-sites-project/work/repo. Synthetic QA and restore rehearsals must use separate disposable resources, never the shared database/store.
 
 ## Resume Instruction
 
-Read AGENTS.md, PROJECT_STATE.md, docs/CODEX_WORKFLOW.md, Phase 6 decision, master revision 3.6, this file, PHASE-6-ORDER-HANDOFF.md and phase-6-preview-migration.json. Continue P7.1 without restarting/reapproving. Credentials are already in ignored local configuration, independent encrypted backup exists and Preview migration is consumed. Retain two-stage saved-order-only WhatsApp, free-only/Vercel-only, automatic-deployment hold and Phase 11/12 QA/release gates.
+Read AGENTS.md, PROJECT_STATE.md, docs/CODEX_WORKFLOW.md, the shared-data owner decision, master revision 3.7, this file and SHARED-DATA-CONFIGURATION.md. Continue P7.1 without restarting/reapproving. Credentials are already in ignored configuration; independent backups exist. Keep both order write flags and automatic deployment off. Production release remains paused under free-only/Vercel-only requirements. Check integration variable destinations before any later deployment.

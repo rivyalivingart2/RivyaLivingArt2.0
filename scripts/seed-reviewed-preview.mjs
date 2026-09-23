@@ -7,7 +7,7 @@ import nextEnv from '@next/env';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 nextEnv.loadEnvConfig(root,true, {info(){},error(){}});
 if(process.argv[2]!=='--apply-preview')throw new Error('Explicit --apply-preview is required. This command never targets Production.');
-if(process.env.VERCEL_ENV==='production'||process.env.RIVYA_ENV==='production'||!process.env.DATABASE_URL||process.env.DATABASE_URL==='[SENSITIVE]')throw new Error('A usable isolated Preview database is required.');
+if(process.env.RIVYA_DATA_MODE!=='isolated'||process.env.VERCEL_ENV==='production'||process.env.RIVYA_ENV==='production'||!process.env.DATABASE_URL||process.env.DATABASE_URL==='[SENSITIVE]')throw new Error('A verified isolated database with RIVYA_DATA_MODE=isolated is required. Never run this import against the shared live database.');
 const bytes=fs.readFileSync(path.join(root,'docs/redesign/reviewed-publication.json'));
 const candidate=JSON.parse(bytes),digest=crypto.createHash('sha256').update(bytes).digest('hex');
 if(candidate.products.length!==120||candidate.content.length!==47)throw new Error('Review the changed publication scope before applying it.');
