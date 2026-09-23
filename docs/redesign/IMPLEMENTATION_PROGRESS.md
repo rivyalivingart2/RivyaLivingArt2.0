@@ -6,7 +6,7 @@ Phase 4 — COMPLETE at the catalogue/discovery source gate under master revisio
 
 ## Current Task
 
-P4.1–P4.6 complete. Publish this source/document checkpoint to codex/phase-4-catalogue and verify the remote SHA. Save the publication receipt before the final handoff.
+P4.1–P4.6 complete and published. Implementation commit a75d95bb662093564a6ff84b04583238a81b394d matches independent GitHub remote readback on codex/phase-4-catalogue; main remains 47323c51a9c225cac0ee719203612bc579d5ede0. See phase-4-github-publication.json. A documentation-only follow-up records this receipt; the task completion file records the final branch head.
 
 ## Completed
 
@@ -20,7 +20,7 @@ P4.1–P4.6 complete. Publish this source/document checkpoint to codex/phase-4-c
 
 ## In Progress
 
-Final Git publication/readback only. Phase 5 has not started.
+None. Phase 4 source is complete and published. Phase 5 has not started.
 
 ## Pending
 
