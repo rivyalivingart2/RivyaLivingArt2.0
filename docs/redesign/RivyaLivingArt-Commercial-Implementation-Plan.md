@@ -663,6 +663,8 @@ Approval is recorded. It does not waive hosting eligibility, final QA, privacy o
 
 **Phase 6 publication baseline update:** main advanced to c7c5cb9161b961fe0e0c46c40d6b467d6a0252e7 through Phase 5 PR #19 during this phase. The work branch fast-forwarded to that identical source tree before the Phase 6 commit; all upstream work is retained.
 
+**Phase 6 publication receipt:** implementation 37a47195fb19209aa520f2da27051f49e1c0ece9 pushed to codex/phase-6-order-handoff and independently matched against GitHub remote refs on 23 September 2026. Main remained c7c5cb9161b961fe0e0c46c40d6b467d6a0252e7 (Phase 5 PR #19). See phase-6-github-publication.json; this documentation receipt follows the implementation commit. No production deployment or new data publication.
+
 ## M. Final recommendation
 
 Continue the approved saved-order-only scope from the Phase 6 checkpoint at P7.1. Preserve the applied Preview schema and saved-message contract; complete Studio detail, operations and publishing, then prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.

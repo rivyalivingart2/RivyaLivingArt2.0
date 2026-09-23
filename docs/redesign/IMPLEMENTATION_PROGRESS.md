@@ -6,7 +6,7 @@ Phase 6 — COMPLETE at the source and isolated Preview schema gate under master
 
 ## Current Task
 
-P6.1–P6.8 implementation and checkpoint complete; GitHub publication is being finalized on codex/phase-6-order-handoff. Read phase-6-github-publication.json once recorded and fresh Git refs for the final head. Phase 5 merged through PR #19 during this phase; this work branch fast-forwarded to that merge before publication.
+P6.1–P6.8 implementation and checkpoint complete and published. Implementation 37a47195fb19209aa520f2da27051f49e1c0ece9 independently matches GitHub codex/phase-6-order-handoff; main remains c7c5cb9161b961fe0e0c46c40d6b467d6a0252e7. See phase-6-github-publication.json. This documentation follow-up records publication; the local completion artifact records the final head. Phase 5 merged through PR #19 during this phase; this work branch fast-forwarded to that merge before publication.
 
 ## Completed
 
@@ -23,7 +23,7 @@ P6.1–P6.8 implementation and checkpoint complete; GitHub publication is being 
 
 ## In Progress
 
-GitHub implementation push, independent remote SHA verification and publication receipt. No active migration or application server.
+None. Phase 6 is complete at its source/Preview schema gate and published. No active migration or application server.
 
 ## Pending
 
