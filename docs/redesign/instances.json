@@ -16,7 +16,13 @@
       "sourceMaterials": "Live-edge timber · pigmented resin · metal base",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP001"
+      }
     },
     {
       "id": "DP013",
@@ -32,7 +38,13 @@
       "sourceMaterials": "Timber · pigmented resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP013"
+      }
     },
     {
       "id": "DP035",
@@ -48,7 +60,13 @@
       "sourceMaterials": "Timber · pigmented resin · metal base",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP035"
+      }
     },
     {
       "id": "DP048",
@@ -63,7 +81,13 @@
       "sourceMaterials": "Timber · pigmented resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP048"
+      }
     },
     {
       "id": "DP069",
@@ -78,7 +102,13 @@
       "sourceMaterials": "Fabricated lattice · transparent resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP069"
+      }
     },
     {
       "id": "DP002",
@@ -93,7 +123,13 @@
       "sourceMaterials": "Resin · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP002"
+      }
     },
     {
       "id": "DP014",
@@ -108,7 +144,13 @@
       "sourceMaterials": "Resin · Mineral composite",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP014"
+      }
     },
     {
       "id": "DP025",
@@ -123,7 +165,13 @@
       "sourceMaterials": "Wood · Resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP025"
+      }
     },
     {
       "id": "DP043",
@@ -138,7 +186,13 @@
       "sourceMaterials": "Resin · Mineral composite",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP043"
+      }
     },
     {
       "id": "DP051",
@@ -153,7 +207,13 @@
       "sourceMaterials": "Wood · Resin · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP051"
+      }
     },
     {
       "id": "DP057",
@@ -168,7 +228,13 @@
       "sourceMaterials": "Resin · Mineral composite",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP057"
+      }
     },
     {
       "id": "DP077",
@@ -183,7 +249,13 @@
       "sourceMaterials": "Resin · Mineral composite · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP077"
+      }
     },
     {
       "id": "DP003",
@@ -198,7 +270,13 @@
       "sourceMaterials": "Wood · Resin · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP003"
+      }
     },
     {
       "id": "DP004",
@@ -213,7 +291,13 @@
       "sourceMaterials": "Resin · Mineral composite",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP004"
+      }
     },
     {
       "id": "DP005",
@@ -228,7 +312,13 @@
       "sourceMaterials": "Wood · Resin · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP005"
+      }
     },
     {
       "id": "DP006",
@@ -243,7 +333,13 @@
       "sourceMaterials": "Wood · Resin · Mineral composite",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP006"
+      }
     },
     {
       "id": "DP007",
@@ -258,7 +354,13 @@
       "sourceMaterials": "Wood · Resin · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP007"
+      }
     },
     {
       "id": "DP008",
@@ -273,7 +375,13 @@
       "sourceMaterials": "Wood · Resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP008"
+      }
     },
     {
       "id": "DP009",
@@ -288,7 +396,13 @@
       "sourceMaterials": "Resin · Mineral composite",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP009"
+      }
     },
     {
       "id": "DP010",
@@ -303,7 +417,13 @@
       "sourceMaterials": "Wood · Resin · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP010"
+      }
     },
     {
       "id": "DP011",
@@ -318,7 +438,13 @@
       "sourceMaterials": "Wood · Resin · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP011"
+      }
     },
     {
       "id": "DP012",
@@ -333,7 +459,13 @@
       "sourceMaterials": "Wood · Resin · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP012"
+      }
     },
     {
       "id": "DP015",
@@ -348,7 +480,13 @@
       "sourceMaterials": "Resin · Mineral composite",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP015"
+      }
     },
     {
       "id": "DP016",
@@ -363,7 +501,13 @@
       "sourceMaterials": "Wood · Resin · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP016"
+      }
     },
     {
       "id": "DP017",
@@ -378,7 +522,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP017"
+      }
     },
     {
       "id": "DP018",
@@ -393,7 +543,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP018"
+      }
     },
     {
       "id": "DP019",
@@ -408,7 +564,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP019"
+      }
     },
     {
       "id": "DP020",
@@ -423,7 +585,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP020"
+      }
     },
     {
       "id": "DP021",
@@ -438,7 +606,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP021"
+      }
     },
     {
       "id": "DP022",
@@ -453,7 +627,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP022"
+      }
     },
     {
       "id": "DP023",
@@ -468,7 +648,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP023"
+      }
     },
     {
       "id": "DP024",
@@ -483,7 +669,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP024"
+      }
     },
     {
       "id": "DP026",
@@ -498,7 +690,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP026"
+      }
     },
     {
       "id": "DP027",
@@ -513,7 +711,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP027"
+      }
     },
     {
       "id": "DP028",
@@ -528,7 +732,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP028"
+      }
     },
     {
       "id": "DP029",
@@ -543,7 +753,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP029"
+      }
     },
     {
       "id": "DP030",
@@ -558,7 +774,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP030"
+      }
     },
     {
       "id": "DP031",
@@ -573,7 +795,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP031"
+      }
     },
     {
       "id": "DP032",
@@ -588,7 +816,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP032"
+      }
     },
     {
       "id": "DP033",
@@ -603,7 +837,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP033"
+      }
     },
     {
       "id": "DP034",
@@ -618,7 +858,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP034"
+      }
     },
     {
       "id": "DP036",
@@ -633,7 +879,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP036"
+      }
     },
     {
       "id": "DP037",
@@ -648,7 +900,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP037"
+      }
     },
     {
       "id": "DP038",
@@ -663,7 +921,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP038"
+      }
     },
     {
       "id": "DP039",
@@ -678,7 +942,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP039"
+      }
     },
     {
       "id": "DP040",
@@ -693,7 +963,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP040"
+      }
     },
     {
       "id": "DP041",
@@ -708,7 +984,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP041"
+      }
     },
     {
       "id": "DP042",
@@ -723,7 +1005,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP042"
+      }
     },
     {
       "id": "DP044",
@@ -738,7 +1026,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP044"
+      }
     },
     {
       "id": "DP045",
@@ -753,7 +1047,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP045"
+      }
     },
     {
       "id": "DP046",
@@ -768,7 +1068,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP046"
+      }
     },
     {
       "id": "DP047",
@@ -783,7 +1089,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP047"
+      }
     },
     {
       "id": "DP049",
@@ -798,7 +1110,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP049"
+      }
     },
     {
       "id": "DP050",
@@ -813,7 +1131,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP050"
+      }
     },
     {
       "id": "DP052",
@@ -828,7 +1152,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP052"
+      }
     },
     {
       "id": "DP053",
@@ -843,7 +1173,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP053"
+      }
     },
     {
       "id": "DP054",
@@ -858,7 +1194,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP054"
+      }
     },
     {
       "id": "DP055",
@@ -873,7 +1215,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP055"
+      }
     },
     {
       "id": "DP056",
@@ -888,7 +1236,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP056"
+      }
     },
     {
       "id": "DP058",
@@ -903,7 +1257,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP058"
+      }
     },
     {
       "id": "DP059",
@@ -918,7 +1278,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP059"
+      }
     },
     {
       "id": "DP060",
@@ -933,7 +1299,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP060"
+      }
     },
     {
       "id": "DP061",
@@ -948,7 +1320,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP061"
+      }
     },
     {
       "id": "DP062",
@@ -963,7 +1341,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP062"
+      }
     },
     {
       "id": "DP063",
@@ -978,7 +1362,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP063"
+      }
     },
     {
       "id": "DP064",
@@ -993,7 +1383,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP064"
+      }
     },
     {
       "id": "DP065",
@@ -1008,7 +1404,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP065"
+      }
     },
     {
       "id": "DP066",
@@ -1023,7 +1425,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP066"
+      }
     },
     {
       "id": "DP067",
@@ -1038,7 +1446,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP067"
+      }
     },
     {
       "id": "DP068",
@@ -1053,7 +1467,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP068"
+      }
     },
     {
       "id": "DP070",
@@ -1068,7 +1488,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP070"
+      }
     },
     {
       "id": "DP071",
@@ -1083,7 +1509,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP071"
+      }
     },
     {
       "id": "DP072",
@@ -1098,7 +1530,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP072"
+      }
     },
     {
       "id": "DP073",
@@ -1113,7 +1551,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP073"
+      }
     },
     {
       "id": "DP074",
@@ -1128,7 +1572,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP074"
+      }
     },
     {
       "id": "DP075",
@@ -1143,7 +1593,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP075"
+      }
     },
     {
       "id": "DP076",
@@ -1158,7 +1614,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP076"
+      }
     },
     {
       "id": "DP078",
@@ -1173,7 +1635,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP078"
+      }
     },
     {
       "id": "DP079",
@@ -1188,7 +1656,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP079"
+      }
     },
     {
       "id": "DP080",
@@ -1203,7 +1677,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP080"
+      }
     },
     {
       "id": "DP081",
@@ -1218,7 +1698,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP081"
+      }
     },
     {
       "id": "DP082",
@@ -1233,7 +1719,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP082"
+      }
     },
     {
       "id": "DP083",
@@ -1248,7 +1740,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP083"
+      }
     },
     {
       "id": "DP084",
@@ -1263,7 +1761,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP084"
+      }
     },
     {
       "id": "DP085",
@@ -1278,7 +1782,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP085"
+      }
     },
     {
       "id": "DP091",
@@ -1293,7 +1803,13 @@
       "sourceMaterials": "Resin · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP091"
+      }
     },
     {
       "id": "DP095",
@@ -1308,7 +1824,13 @@
       "sourceMaterials": "Resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP095"
+      }
     },
     {
       "id": "DP099",
@@ -1323,7 +1845,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP099"
+      }
     },
     {
       "id": "DP103",
@@ -1338,7 +1866,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP103"
+      }
     },
     {
       "id": "DP107",
@@ -1353,7 +1887,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP107"
+      }
     },
     {
       "id": "DP086",
@@ -1368,7 +1908,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP086"
+      }
     },
     {
       "id": "DP087",
@@ -1383,7 +1929,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP087"
+      }
     },
     {
       "id": "DP088",
@@ -1398,7 +1950,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP088"
+      }
     },
     {
       "id": "DP089",
@@ -1413,7 +1971,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP089"
+      }
     },
     {
       "id": "DP090",
@@ -1428,7 +1992,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP090"
+      }
     },
     {
       "id": "DP092",
@@ -1443,7 +2013,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP092"
+      }
     },
     {
       "id": "DP093",
@@ -1458,7 +2034,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP093"
+      }
     },
     {
       "id": "DP094",
@@ -1473,7 +2055,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP094"
+      }
     },
     {
       "id": "DP096",
@@ -1488,7 +2076,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP096"
+      }
     },
     {
       "id": "DP097",
@@ -1503,7 +2097,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP097"
+      }
     },
     {
       "id": "DP098",
@@ -1518,7 +2118,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP098"
+      }
     },
     {
       "id": "DP100",
@@ -1533,7 +2139,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP100"
+      }
     },
     {
       "id": "DP101",
@@ -1548,7 +2160,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP101"
+      }
     },
     {
       "id": "DP102",
@@ -1563,7 +2181,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP102"
+      }
     },
     {
       "id": "DP104",
@@ -1578,7 +2202,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP104"
+      }
     },
     {
       "id": "DP105",
@@ -1593,7 +2223,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP105"
+      }
     },
     {
       "id": "DP106",
@@ -1608,7 +2244,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP106"
+      }
     },
     {
       "id": "DP108",
@@ -1623,7 +2265,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP108"
+      }
     },
     {
       "id": "DP109",
@@ -1638,7 +2286,13 @@
       "sourceMaterials": "Resin · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP109"
+      }
     },
     {
       "id": "DP111",
@@ -1653,7 +2307,13 @@
       "sourceMaterials": "Resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP111"
+      }
     },
     {
       "id": "DP112",
@@ -1668,7 +2328,13 @@
       "sourceMaterials": "Resin · Metal",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP112"
+      }
     },
     {
       "id": "DP113",
@@ -1683,7 +2349,13 @@
       "sourceMaterials": "Resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP113"
+      }
     },
     {
       "id": "DP114",
@@ -1698,7 +2370,13 @@
       "sourceMaterials": "Resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP114"
+      }
     },
     {
       "id": "DP120",
@@ -1713,7 +2391,13 @@
       "sourceMaterials": "Resin · Wood",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP120"
+      }
     },
     {
       "id": "DP110",
@@ -1728,7 +2412,15 @@
       "sourceMaterials": "Resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [
+          "Broad /ring/ type matching adds required jewellery size to Drop Earrings. Replace with explicit product capabilities before publication."
+        ],
+        "evidence": "phase-4-products.json#DP110"
+      }
     },
     {
       "id": "DP115",
@@ -1743,7 +2435,13 @@
       "sourceMaterials": "Resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP115"
+      }
     },
     {
       "id": "DP116",
@@ -1758,7 +2456,13 @@
       "sourceMaterials": "Resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP116"
+      }
     },
     {
       "id": "DP117",
@@ -1773,7 +2477,13 @@
       "sourceMaterials": "Resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP117"
+      }
     },
     {
       "id": "DP118",
@@ -1788,7 +2498,13 @@
       "sourceMaterials": "Resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [],
+        "evidence": "phase-4-products.json#DP118"
+      }
     },
     {
       "id": "DP119",
@@ -1803,7 +2519,15 @@
       "sourceMaterials": "Resin",
       "priceDisposition": "Price on request; fixture amounts not promoted",
       "status": "Approved design direction; awaiting per-product schema review and database publication",
-      "verification": "Not run"
+      "verification": "Not run",
+      "phase4": {
+        "sourceDisposition": "DISCOVERY_SOURCE_READY",
+        "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
+        "schemaFollowUps": [
+          "Broad /ring/ type matching adds required jewellery size to Mini Ring Dish. Replace with explicit product capabilities before publication."
+        ],
+        "evidence": "phase-4-products.json#DP119"
+      }
     }
   ],
   "articles": [
@@ -2163,5 +2887,13 @@
     "heldProjects": "Unpublished; no new factual claim",
     "bespoke": "P32 bespoke-piece v1 is a request schema, not a product instance",
     "runtimeVerification": "Pending Phase 11"
+  },
+  "phase4": {
+    "date": "2026-09-23",
+    "planRevision": "3.4",
+    "matrix": "phase-4-products.json",
+    "sourceDisposition": "120 products reconciled; existing IDs, assets and draft/candidate data preserved",
+    "publication": "No Phase 4 database publication or live visibility inspection; final integration/review gates remain",
+    "verification": "Source identity/copy/schema/media inventory only; rendered visual and runtime proof Phase 11"
   }
 }

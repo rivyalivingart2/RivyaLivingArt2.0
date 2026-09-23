@@ -1,10 +1,10 @@
-# Active approved plan — Phase 3 complete
+# Active approved plan — Phase 4 complete
 
-The owner authorized Phase 3 and GitHub publication; read docs/decisions/2026-09-23-phase-3-execution.md. The canonical plan is docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md revision 3.3. Read PHASE-3-DESIGN-SYSTEM.md, DESIGN-SYSTEM.md and IMPLEMENTATION_PROGRESS.md in docs/redesign; retain the Phase 2 architecture/runbook as the integration authority.
+The owner authorized Phase 4 and GitHub publication; read docs/decisions/2026-09-23-phase-4-execution.md. The canonical plan is docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md revision 3.4. Read PHASE-4-CATALOGUE.md, phase-4-products.json and IMPLEMENTATION_PROGRESS.md in docs/redesign; retain Phase 2 contracts/runbook as the integration authority.
 
-P3.1–P3.6 shared design-system source work is complete. Next is P4.1: reconcile all 120 product IDs/slugs against actual publishable records. Branch codex/phase-3-design-system starts from Phase 2 merge 85b476df358d9fb07c9a8ec07cc478da581138f4. Verify current Git state before resuming; do not restart or repeat approval. Formal QA is Phase 11 and release Phase 12.
+P4.1–P4.6 catalogue/discovery source work is complete. Next is P5.1: reconcile field families and actual capabilities for all products; begin with the DP110 earrings and DP119 ring-dish size-field findings. Branch codex/phase-4-catalogue starts from Phase 3 merge 47323c51a9c225cac0ee719203612bc579d5ede0. Verify current Git refs; do not restart or repeat approval. Formal QA is Phase 11 and release Phase 12.
 
-WhatsApp is only saved-order handoff with manual Send and saved-order Open/Copy. Preserve database/Studio records, private references, drafts and supplied assets. No generic WhatsApp, payments, carts or customer accounts. Vercel-only/free-only and automatic-deployment hold remain; no Netlify. Main/production release waits for final gates. No Phase 3 migration, publication of catalogue records or deployment occurred.
+WhatsApp is only saved-order handoff with manual Send and saved-order Open/Copy. Preserve database/Studio records, private references, drafts and supplied assets. No generic WhatsApp, payments, carts or customer accounts. Vercel-only/free-only and automatic-deployment hold remain; no Netlify. No Phase 4 migration, catalogue publication or deployment occurred. Main/production release waits for final gates.
 
 Older records below are historical where superseded.
 

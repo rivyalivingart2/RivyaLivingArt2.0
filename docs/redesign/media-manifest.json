@@ -18,7 +18,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "file": "public/media/product-hero-003-4x5.webp",
@@ -34,7 +39,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "file": "public/media/product-hero-005-4x5.webp",
@@ -50,7 +60,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "file": "public/media/product-hero-009-4x5.webp",
@@ -66,7 +81,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "file": "public/media/product-hero-016-4x5.webp",
@@ -82,7 +102,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "file": "public/media/product-hero-020-4x5.webp",
@@ -98,7 +123,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "file": "public/media/product-hero-026-4x5.webp",
@@ -112,7 +142,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "file": "public/media/product-hero-029-4x5.webp",
@@ -128,7 +163,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "file": "public/media/product-scene-001-16x9.webp",
@@ -144,7 +184,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "file": "public/media/product-scene-003-16x9.webp",
@@ -160,7 +205,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "file": "public/media/product-scene-005-16x9.webp",
@@ -176,7 +226,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1R73YC5jLk1klu7knC_XBRRPq3fd-iscn",
@@ -192,7 +247,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1dedmJc3qxA3mEQnP8Ik-5dC4GGWZjNDk",
@@ -208,7 +268,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1SjhFLVAKvz4Uj3e_W0iJDE2EHb2_6bjM",
@@ -224,7 +289,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1EA_-zhJ2fTG-Jxhpg4Xo_PkVd52jQgHp",
@@ -240,7 +310,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1sj6kGUa0B_C0O3iAtzj9ct42BNy4M1Z_",
@@ -256,7 +331,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1iyqt1pSMZK9Yu52ZYTzNzauR1vMiX-PX",
@@ -272,7 +352,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1-INzFAMXuRaoRZreDVeRobVDHLD8PNsj",
@@ -288,7 +373,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1UluM3SN-mAJNE6noLmUL7vTANNUaQSEh",
@@ -304,7 +394,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1ru_4Rx8EH2tubYnU9LcssDv9xmJ42tNa",
@@ -320,7 +415,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1NMLxx77SkrS_hcHvvGC5uIU-sEm2lHON",
@@ -336,7 +436,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1qkEZ7MoUdluwXkz8j5DAzUKDI5k_FeZ9",
@@ -352,7 +457,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1mkrqlvYq1hzGnZPVgOVUlVijDTzwdFsW",
@@ -368,7 +478,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1xRBwbRygGfbahw1MYUwhIwoWCqs-p24E",
@@ -384,7 +499,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1nwnBD6NtvxrFdboSM7lNJIx28pegHejO",
@@ -400,7 +520,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "14t9kpV0OrYKYSCUb30xzow4cpgy25uu6",
@@ -416,7 +541,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1lZqyFf3VARQvytwSnZ9khpnGFIv4Q3c_",
@@ -432,7 +562,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1LFqTE-BzIiaxewYBeO6AcHcV0qJqODfI",
@@ -448,7 +583,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "17muDFRSGAUh7bRxAiJ35OZPdrNQU2_Ox",
@@ -464,7 +604,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "15fnOTrkQqbFmmFt-w1RLX4kTP-6croaS",
@@ -480,7 +625,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1nnYkETMuXejU-T5lAB1TIfDNV1ka6ycK",
@@ -496,7 +646,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1q87NyiZY0gNDf-28iuvmoPIeLOmgZrMI",
@@ -512,7 +667,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1AL4Vq0X_1uN4Izxqxme6Oyy1nA1eRwRh",
@@ -528,7 +688,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1ViHB_8LpGtsLaMbAGeC4j4OinDgSg-0F",
@@ -544,7 +709,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1E2rkNNDtHVjZNcijzmHAp2ck1dCpnBEL",
@@ -560,7 +730,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1jyOrok5HAntYxBLypHEURj73fywwK3rH",
@@ -576,7 +751,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1xY8kd4cBkotXKqcfUvXZQMGFD-mgh4V-",
@@ -592,7 +772,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "14a8p00rDuLPRBj-3TnX_GuKHosdxsC6o",
@@ -608,7 +793,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1xcuoMUhcJwoIrzj8az4PqRNYRD-Qj8ZM",
@@ -624,7 +814,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1LZ4qYYW0yhduLFnKNmNgm6pBXuVoFzSm",
@@ -640,7 +835,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1wMUjYCO82A_4W1KhsE6cJZ5i499xooOW",
@@ -656,7 +856,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1iWW-Qm4iT47lHT_w-NLqSVVNkR3Nvmno",
@@ -672,7 +877,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1-Zpv8DziWF_GLUAFckNrrUCEjO6-n5GL",
@@ -688,7 +898,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1uTK8g4ztEy3DE5_qrPm5o7O7jmPF64sT",
@@ -704,7 +919,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1Wmb7sBEZBsYQjVuGfLExeAHwmxlG5_6Y",
@@ -720,7 +940,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1gENN-ROUNsPnA96u3zVkKrehUYI75BZz",
@@ -736,7 +961,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1I56KbPHJD7NhvGBs3rKXa-5pexrSiYlN",
@@ -752,7 +982,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1WsppsIszXln4RP_roe1Rwd3kg3vgaT1q",
@@ -768,7 +1003,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1DtZ75oyNjl2GZFp2XXC4JXkGzc-lnj9k",
@@ -784,7 +1024,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1vs5JMVCqWTkBV_8WdGRFz9zMGuBoIfct",
@@ -800,7 +1045,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1cZ9LoASxqqGiT9BBIhfmL1IkDiVdGsx5",
@@ -816,7 +1066,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1pQ7CUWsEZ-sQwFCN3MJa4s2Nb4PVruLp",
@@ -832,7 +1087,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1KY-Y3BFxIceWRVAxzatAwjUQSOY8kasW",
@@ -848,7 +1108,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1FCKby2df2TDL5UVxo77OL9QQ6NFn3r_P",
@@ -864,7 +1129,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1djEF9ZF3MgDA54dkYr_r5STcRwi_g4Cm",
@@ -880,7 +1150,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1tgpFG3bdSzXrBV8l40-KOQ8Aoor76KUh",
@@ -896,7 +1171,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "15NfI6ahU9X31AfXeWZASn_YM-DV1QJa6",
@@ -912,7 +1192,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "17M0bzXCa0KdQX_8ja8Id6i0bHM5a75Jn",
@@ -928,7 +1213,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1b3jsPys0Gn-2tkBFB-2qfH5FYTAfydUH",
@@ -944,7 +1234,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1zylp7bPJ4mt6e9Ybv1Iqe-sL-18AXtQ4",
@@ -960,7 +1255,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1PDhoNEl9oQhuy955W7YZvXyb4gVzFoGX",
@@ -976,7 +1276,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1Mkoz5DXxo4YJW1o7hQDxRGpnnG3U0hkV",
@@ -992,7 +1297,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1a74fRPcdqpRX-Zutcou4vLPCeTwUz5Jo",
@@ -1008,7 +1318,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "18yx36jEwexzHLTQ9XkeDyxG4YFJahOs8",
@@ -1024,7 +1339,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1Xb5cvIKUHAkcTVHbEE8Qnf8xy3Q9n-ie",
@@ -1040,7 +1360,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1Cq32pFl0cYqhR8im_qa-qe63Q5OhgG05",
@@ -1056,7 +1381,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1qK2mX_jiE63nXxORDhNSUqIharkKi4An",
@@ -1072,7 +1402,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1Qlz1SrYhMD8YT8f7YF-boI6FTPfot062",
@@ -1088,7 +1423,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1mJMsQh_ikuJPZ0flDyF_ebzehZz0ffxH",
@@ -1104,7 +1444,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1tP1zxgP5OQnyO_U65ZADAgCFckOUBzNe",
@@ -1120,7 +1465,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1drSU1VlgEMtnavSztVFbQHNnaDqwlk2o",
@@ -1136,7 +1486,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1ZcZ4tVOeeD4LmYL6WhBZJBN_R769ru8M",
@@ -1152,7 +1507,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1ef2-PzENHg5V3s_iCaRH_oVbCAubd63_",
@@ -1168,7 +1528,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1gWcWjNjEjmZFEpQWrJCSvvodkjHms4az",
@@ -1184,7 +1549,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1lTIXesrEFlqdn5Vo_7OUkovK_-5h6Gj_",
@@ -1200,7 +1570,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1WcQwe56R9YX-IULstE_GW0oyxqeTCguN",
@@ -1216,7 +1591,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "14wJWEdM-WLwqqzNIFn6kjXkgz-EJu_Md",
@@ -1232,7 +1612,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1lbxSoKFAs-Z0HzKLg_4Pi-ZhmyRO3jO1",
@@ -1248,7 +1633,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1bWkgo5hseyWUl2pWoTp7eM0KdHTDPh4o",
@@ -1264,7 +1654,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1qUP5NVGqfCRQMRt-S0z1XNIdfrnJF4fl",
@@ -1280,7 +1675,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1fAV-WPzA1kYGZGvPUn3V3RMUb8YxUMTg",
@@ -1296,7 +1696,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1LaX4FFOBZHWY0hQz4TWeLmEsaH0GpuaB",
@@ -1312,7 +1717,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1_UeUd7HMWe451qbQ8oI_NLXL28qE0XYI",
@@ -1328,7 +1738,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1r1LiV0-07xDbN9EXXz1bNeh18IOqPg4R",
@@ -1344,7 +1759,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1jHYi4zVGzcP8zB3IbbKeIOL1xl2_QU96",
@@ -1360,7 +1780,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1f6Cut8eQjCV6YRep-yHO8miX0jawJ1Ch",
@@ -1376,7 +1801,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "136UaHRf1EaGVfFXTLYARP9q-Z6xLjexL",
@@ -1392,7 +1822,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1dXKjONUn3EM9T--qBL_MFHoMcuZ4u8vv",
@@ -1408,7 +1843,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1V1LndSQIW561gz_hQH8A-x6Gn9QlSBf6",
@@ -1424,7 +1864,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1-ZomjtkG-VK05x0uaUu6R5Zz6WSPTvtz",
@@ -1440,7 +1885,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1n5v80wQvv3EqsKOh8JwK_eVTrBLXDnFO",
@@ -1456,7 +1906,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "12fhxH3ETM-ViSNH5DJyBU7h7PTU1kvmd",
@@ -1472,7 +1927,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1Lm_hv3M0WHelMI1D0u0ieVbThR7IiIUu",
@@ -1488,7 +1948,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1-D56G1WEhh4KtRnacFNXyvpVGRE4QZJ_",
@@ -1504,7 +1969,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1-PGoQpTo7GOPjzeulpHMGa85JUaaF6Op",
@@ -1520,7 +1990,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1Di2jlNFGlVqUTJ4ix8avxWiPsYPRA-yv",
@@ -1536,7 +2011,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1ORGmSIrBVVcTO3Lu0U4klXgo0eCxD7A4",
@@ -1552,7 +2032,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1JjzvXZaNIPLf9ZTzUs0K1iyLzoVCYLxW",
@@ -1568,7 +2053,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1om7V0MKqql5W1VjGgTS8cjNUsBSGFRCm",
@@ -1584,7 +2074,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "13SWY_TgGDktXX1tu595tteJHRcXm8-N-",
@@ -1600,7 +2095,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "10nC7TKf7shOVw86aPqiYtI9SROPPzvPD",
@@ -1616,7 +2116,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1nl8itMSOPdG43-wCWPLIfsGvbAgy0kVx",
@@ -1632,7 +2137,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1gewKxNQanOPmGHwoAG8JNEQZZVRlIQV1",
@@ -1648,7 +2158,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "14X3PODsAeBRemPjTvkFulI8JHMsF1ljV",
@@ -1664,7 +2179,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "13Rm8n3LDZQPUDhJE1xdJfBXU8ELfezqK",
@@ -1680,7 +2200,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1wgI6dnKIQ_kFJg3BUjSne5T4Gzdcj3m0",
@@ -1696,7 +2221,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1yLUnn2GRoQ3ycGWSVKTmmW5aV3Y_8jNq",
@@ -1712,7 +2242,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1U3E4KLF1yrWMh36fksteXlecenz-Qytg",
@@ -1728,7 +2263,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1zRq1k38vsW3EC3U0pAJ7MQAzQqpUThRc",
@@ -1744,7 +2284,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1p00McD_4PlyNVhlPYNgjHbg6k4z0q08Z",
@@ -1760,7 +2305,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1LrDFRObhfWhsXRkwU6-AORyH0nV5G5w3",
@@ -1776,7 +2326,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1XcxhXXVt8ZHvGiFx8LwHMrH462dfOvk5",
@@ -1792,7 +2347,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1JGHccOqypxdrn-3ctvaOC9TGRL7cGuZO",
@@ -1808,7 +2368,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1DKfmFDM72mn20KvNbDWOt1MHSuijDD9x",
@@ -1824,7 +2389,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1XnrsfUwHodc355zNvY86atrAe1a01UnT",
@@ -1840,7 +2410,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "19IWyM9y5Y-axOn-FubW-HPJGWysP-HpL",
@@ -1856,7 +2431,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1tiZgVmBRIy1KqQmbbNKEaSQS2eZxk3ZP",
@@ -1872,7 +2452,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1V3ualUtBjzxoujK8lzn6BbTtpyQ_F7P5",
@@ -1888,7 +2473,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "18kBBpAr2pQSQ48pPB5tgMLFnrn2Wd3GQ",
@@ -1904,7 +2494,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1pgJlLmKZFqvQ9CYhhg-npbDuvRSrWy63",
@@ -1920,7 +2515,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1jtBNY-ys5p0l2IofrjU_rnYuvU5gYh2q",
@@ -1936,7 +2536,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1fUeFs6_hci96M3pDRVlyoDgXHhJ13oHF",
@@ -1952,7 +2557,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1yr3SREIvfAWXxeHYv0aB2gqqkB3hD8zQ",
@@ -1968,7 +2578,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1SehTI89E5DhwNlGwo4OMSVfPXrBxP16k",
@@ -1984,7 +2599,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1sxW03X6ltxEsXDXe59GZiO9ZJp5MDt5I",
@@ -2000,7 +2620,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1MNhFSqoHcW4XqhBDJcTRZ-4lH-QdwVF_",
@@ -2016,7 +2641,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1-1I_6vqd0fGYG90hi435v-eqO8HLxGBh",
@@ -2032,7 +2662,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Retained asset outside current media candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1IulrKL5VBQJjA694IOBL2tNQOG9m4QTu",
@@ -2048,7 +2683,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "12pkItvt0V0MJBM4lCD3YmLWW6qc8X4nC",
@@ -2064,7 +2704,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1FJIKvYtiy7LuyepEj-eA2LtbCLS6xT2L",
@@ -2080,7 +2725,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1IwGSb1BFUXm5zHqR2CtbQ4_T3BoAlDzv",
@@ -2096,7 +2746,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1b5sy2SBky1hlvYcNbrhyrmmjulkAII-6",
@@ -2112,7 +2767,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Reviewed design visualization candidate",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "123R8uc-VNYbHdSnL3gBxbBuapgZdAuqu",
@@ -2126,7 +2786,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Brand asset",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1NRVhNDuZth_EpxnuguFHXhcgtBv7tPRt",
@@ -2142,7 +2807,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Brand asset",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1p4OgqjMaBrx0vcuobZIDuAxiIMRMLgj6",
@@ -2158,7 +2828,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Brand asset",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1kwU-w1GJ1DEZ-Ye2zIRyZ2gTsOyDno0A",
@@ -2174,7 +2849,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Brand asset",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1aKMeWbmZ4g6R4_gfQ2wwXYetF-rMMtwx",
@@ -2190,7 +2870,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Brand asset",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1Mmi0p1EoSSj_ECc5pjsjiidNs2BUVuuX",
@@ -2204,7 +2889,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Brand asset",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1nqi5dvOUnFFmLVXiwijmv4i9I5996b8K",
@@ -2220,7 +2910,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Brand asset",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "15okxh0MTjvXgSyvRntlbHnH3hzVLR2Sf",
@@ -2236,7 +2931,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Brand asset",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1fH2_qUplDqbpRtBIZvRgsBJfeumwKuS6",
@@ -2252,7 +2952,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Brand asset",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1PrgnsZW6pJFvpbhGRIR3chz7GgixKFxI",
@@ -2268,7 +2973,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Brand asset",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1TdynglX0m8n0A3fwVi-qpVSMPWnXnUDQ",
@@ -2284,7 +2994,12 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Brand asset",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     },
     {
       "id": "1_1AarIjpX6_XQsS2zgCchivCZ7Um3z3K",
@@ -2300,7 +3015,20 @@
       "exists": true,
       "usage": "Design visualization; never evidence of completed work",
       "crop": "Preserve source; responsive object-fit and sizes per template",
-      "review": "Provenance inventoried; visual suitability review pending Phase 8/9"
+      "review": "Provenance inventoried; visual suitability review pending Phase 8/9",
+      "phase4": {
+        "role": "Brand asset",
+        "publication": "No status change; no completed-work claim",
+        "visualReview": "Phase 9/11 pending"
+      }
     }
-  ]
+  ],
+  "phase4": {
+    "date": "2026-09-23",
+    "planRevision": "3.4",
+    "matrix": "phase-4-products.json",
+    "sourceDisposition": "120 products reconciled; existing IDs, assets and draft/candidate data preserved",
+    "publication": "No Phase 4 database publication or live visibility inspection; final integration/review gates remain",
+    "verification": "Source identity/copy/schema/media inventory only; rendered visual and runtime proof Phase 11"
+  }
 }
