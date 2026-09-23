@@ -1,11 +1,11 @@
 # RivyaLivingArt — Commercial Implementation Plan
 
-**Revision:** 3.5 — Phase 5 customization source complete; approved scope retained
+**Revision:** 3.6 — Phase 6 order source and Preview schema complete; approved scope retained
 **Prepared:** 23 September 2026  
-**Status:** Phase 5 source complete — forms and recovery; next task P6.1
+**Status:** Phase 6 source and Preview schema complete — intake off; next task P7.1
 **Scope:** Every public page, product/customization instance, private Studio screen and shared state.  
 **Hosting direction:** Vercel only; free services only; commercial deployment eligibility unresolved. No Netlify.  
-**Execution boundary:** The owner authorized Phase 5 and GitHub publication. All 120 product schemas, Studio validation, selected-product/bespoke forms and recovery boundaries are implemented in source. Bespoke saving remains explicitly unavailable until Phase 6 v2 persistence. No database operation, publication or deployment. Formal QA remains Phase 11; release remains Phase 12.
+**Execution boundary:** The owner authorized the next phase and GitHub publication, then delegated Preview credential retrieval and encrypted backup choices. P6.1–P6.8 source is complete; the approved additive schema is applied in isolated Preview with existing data preserved. Intake/message retry remain off. No catalogue publication, deployment or production change. Formal QA remains Phase 11; release remains Phase 12.
 
 **Canonical plan after publication:** `docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md` in the existing repository. The outputs file is a synchronized delivery copy of the same revision, not a competing plan. Read `docs/decisions/2026-09-23-revised-phase-1-approved.md` for the approval record. No repeat plan approval is needed.
 
@@ -400,7 +400,7 @@ Formal integrated verification stays after backend integration. “Testing” be
 
 **Tasks:** P6.1 enforce validation/ownership/request identity; P6.2 retain atomic core order/inquiry/reference/history creation; P6.3 read saved canonical snapshot, finalize/persist message and destination/version metadata idempotently; P6.4 implement pending/ready/failure receipt states and authorized recovery; P6.5 full-message encoding, long-link fallback, clipboard denial and blocked-app recovery; P6.6 make saved records independently retrievable in Studio; P6.7 update all order terminology and ensure customer manually sends; P6.8 remove only confirmed out-of-scope wiring/reachable demos, preserving historical data.
 
-**Dependencies:** Phase 5, actual isolated permitted database/private storage, no unresolved schema ambiguity. **Files/systems:** `src/app/actions/inquiry.ts`, receipt/upload/session routes, `whatsapp.ts`, saved receipt, schema and transaction code. **Database impact:** real integration writes only in an allowed isolated environment with clearly labelled synthetic tests; no live customer data for QA; historical messages untouched. **UI impact:** Place Order → saved receipt → Open/reopen/copy. **Security:** guest-bound receipt, expiry/no-store/noindex, server destination, full permission checks and no public references. **Testing:** prepare exact record-count/snapshot/message assertions; exercise in Phase 11, including core-save versus message-finalization failures. **Deliverables:** connected source contract, recorded integration status and failure matrix. **Exit criteria:** code uses only saved record for handoff; every failure has nonduplicating recovery; no claim of verified runtime until later evidence. **Resume point:** P7.1.
+**Dependencies:** Phase 5, actual isolated permitted database/private storage, no unresolved schema ambiguity. **Files/systems:** `src/app/actions/inquiry.ts`, receipt/upload/session routes, `whatsapp.ts`, saved receipt, schema and transaction code. **Database impact:** real integration writes only in an allowed isolated environment with clearly labelled synthetic tests; no live customer data for QA; historical messages untouched. **UI impact:** Place Order → saved receipt → Open/reopen/copy. **Security:** guest-bound receipt, expiry/no-store/noindex, server destination, full permission checks and no public references. **Testing:** prepare exact record-count/snapshot/message assertions; exercise in Phase 11, including core-save versus message-finalization failures. **Deliverables:** connected source contract, recorded integration status and failure matrix. **Exit criteria:** code uses only saved record for handoff; every failure has nonduplicating recovery; no claim of verified runtime until later evidence. **Resume point:** P7.1. **Status:** P6.1–P6.8 complete at source/Preview schema gate; read PHASE-6-ORDER-HANDOFF.md. No end-to-end runtime completion is claimed; flags remain off.
 
 ### Phase 7 — Studio, Kanban and durable publishing
 
@@ -609,7 +609,8 @@ Already resolved: pasted workflow is the WhatsApp authority; business number/pho
 | 3 | Complete — shared design-system source | P3.1–P3.6; tokens, responsive header, dialogs, controls, Studio density, motion/static rules and shared WhatsApp copy; see PHASE-3-DESIGN-SYSTEM.md |
 | 4 | Complete — catalogue/discovery source | P4.1–P4.6; all 120 product records reconciled; PHASE-4-CATALOGUE.md and phase-4-products.json |
 | 5 | Complete — customization source | P5.1–P5.7; PHASE-5-CUSTOMIZATION.md and phase-5-schemas.json; bespoke durable save remains P6 |
-| 6–9 | Planned; prior source preserved | Next P6.1; product/bespoke ownership/identity, atomic save and saved-message finalization |
+| 6 | Complete — source and Preview schema | P6.1–P6.8; PHASE-6-ORDER-HANDOFF.md and phase-6-preview-migration.json; intake off, runtime QA pending |
+| 7–9 | Planned; prior source preserved | Next P7.1; Studio detail and immutable-original versus operational amendment separation |
 | 10 | Planned | Full integrated commercial-readiness report and remediation |
 | 11 | Planned | Formal final QA on exact candidate |
 | 12 | Planned; eligibility unresolved | Main and eligible production release only after gates |
@@ -656,9 +657,17 @@ Approval is recorded. It does not waive hosting eligibility, final QA, privacy o
 
 **Phase 5 publication receipt:** implementation 8d84d2e8b934b049467b18604718f05a9ba12efc pushed to codex/phase-5-customization and independently matched against GitHub remote refs on 23 September 2026. Main remained a007d0fb0b2cc05f4ce55e0f3ebff6d66f51c17f. See phase-5-github-publication.json; this documentation receipt follows the implementation commit. No database or production deployment changes.
 
+### L9. Phase 6 completion — 23 September 2026
+
+**Phase:** 6 — Durable order save and WhatsApp handoff. **Status:** P6.1–P6.8 source and isolated Preview schema complete; intake disabled and final QA pending. **Objective:** save the order independently before preparing its WhatsApp message. **Completed Tasks:** strict product/bespoke validation and canonical request identity; atomic Studio order/inquiry/typed snapshots/reference/history save; idempotent saved-snapshot message finalization; pending/ready/failed/legacy receipts and authorized recovery; complete-message/long-link/clipboard recovery; independently retrievable Studio detail and saved-order actions; manual-Send-only copy and reachable-scope review. **Files Changed:** action, session/reference/receipt/Studio APIs, saved receipt/actions, order-service/input/persistence/handoff/snapshot modules, cleanup/private Blob token handling, upload-identity DDL, configuration example and phase/master/checkpoint registers. **Database Changes:** independent encrypted backup then guarded additive Phase 2 contract plus Phase 6 upload-identity migration in Preview; 24 columns added; all 16 table counts and original data fingerprints preserved; no inquiries, objects, seed or content publication. Production untouched. **Design Changes:** existing components retained with explicit saved/pending/recovery states. **Content Changes:** order-only handoff and truthful maintenance copy; historical data/assets preserved. **Tests:** Node 22.23.2 no-emit compiler wiring, source/preservation review, live read-only inventory, backup checksum/archive listing and post-migration invariants only; no application QA, synthetic submissions or messages. **Issues:** five-attempt preparation bound; pending upload may require same-image retry or 24-hour expiry cleanup; changed destination blocks opening; full restore, runtime roles, publication, privacy and end-to-end proof remain. **Decisions:** owner delegated existing Preview credential retrieval and encrypted backup destination/key custody; Windows user-profile DPAPI backup outside repository/provider; both write flags remain off; no silent legacy migration or destructive rollback. **Commercial Risks:** Vercel-only/free-only eligibility and automatic-deployment hold unchanged; no commercial activation. **Owner Input Required:** none for Phase 6 completion; later precise policy/eligibility gates remain. **Next Phase:** 7. **Resume Point:** P7.1 original-versus-amended Studio detail. Branch codex/phase-6-order-handoff includes Phase 5 final 44245c4b21405cd09c2986704accc3dd5dda4f1e; baseline main a007d0fb0b2cc05f4ce55e0f3ebff6d66f51c17f. Read PHASE-6-ORDER-HANDOFF.md and phase-6-preview-migration.json; never replay applied DDL blindly.
+
+**Phase 6 publication baseline update:** main advanced to c7c5cb9161b961fe0e0c46c40d6b467d6a0252e7 through Phase 5 PR #19 during this phase. The work branch fast-forwarded to that identical source tree before the Phase 6 commit; all upstream work is retained.
+
+**Phase 6 publication receipt:** implementation 37a47195fb19209aa520f2da27051f49e1c0ece9 pushed to codex/phase-6-order-handoff and independently matched against GitHub remote refs on 23 September 2026. Main remained c7c5cb9161b961fe0e0c46c40d6b467d6a0252e7 (Phase 5 PR #19). See phase-6-github-publication.json; this documentation receipt follows the implementation commit. No production deployment or new data publication.
+
 ## M. Final recommendation
 
-Continue the approved saved-order-only scope from the Phase 5 source checkpoint at P6.1. Preserve working database/Studio foundations; correct actual message sequencing, metadata, bespoke flow, copy and staff controls; prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
+Continue the approved saved-order-only scope from the Phase 6 checkpoint at P7.1. Preserve the applied Preview schema and saved-message contract; complete Studio detail, operations and publishing, then prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
 
 The statement below applies to **this revised implementation**. Substantial earlier source work exists and is preserved; it has not been reset or falsely described as nonexistent.
 
@@ -672,5 +681,7 @@ PHASE 4 STATUS: COMPLETE — PRODUCT DISCOVERY SOURCE; ACTIVATION AND FINAL QA P
 
 PHASE 5 STATUS: COMPLETE — CUSTOMIZATION SOURCE; BESPOKE SAVE P6, FINAL QA P11.
 
+PHASE 6 STATUS: COMPLETE — ORDER SOURCE AND PREVIEW SCHEMA; INTAKE OFF, FINAL QA P11.
+
 NEXT ACTION:
-Begin Phase 6 from task P6.1.
+Begin Phase 7 from task P7.1.

@@ -127,7 +127,7 @@
       "design": "New responsive three-group form with selected product, relevant fields, references and review",
       "acceptance": "Every published product renders its own approved version; no repeated selection",
       "owner": "Codex",
-      "status": "Phase 5 customization source complete; Phase 6 persistence and Phase 11 integrated proof pending",
+      "status": "Phase 6 order source and Preview schema complete; intake off; Phase 7 Studio refinement and Phase 11 integrated QA pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P07",
@@ -135,12 +135,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring and pure source schema inventory only; no browser/database/application QA",
-      "finalDisposition": "Pending final integrated QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/components/shop/order-form.tsx; src/lib/product-form.ts; product-review.json",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source",
-      "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring"
+      "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring",
+      "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source"
     },
     {
       "id": "P08",
@@ -148,7 +149,7 @@
       "design": "New journey chooser and product entry, with guidance for customers who need help",
       "acceptance": "Chosen product/context reaches the saved Inquiry flow",
       "owner": "Codex",
-      "status": "Phase 5 customization source complete; Phase 6 persistence and Phase 11 integrated proof pending",
+      "status": "Phase 6 order source and Preview schema complete; intake off; Phase 7 Studio refinement and Phase 11 integrated QA pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P08",
@@ -156,11 +157,12 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring and pure source schema inventory only; no browser/database/application QA",
-      "finalDisposition": "Pending final integrated QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/lib/legacy-journey.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring"
+      "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring",
+      "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source"
     },
     {
       "id": "P09",
@@ -168,7 +170,7 @@
       "design": "Redesigned memory-specific entry or explicit route to the redesigned selected-piece form",
       "acceptance": "Existing links work without losing product/options",
       "owner": "Codex",
-      "status": "Phase 5 customization source complete; Phase 6 persistence and Phase 11 integrated proof pending",
+      "status": "Phase 6 order source and Preview schema complete; intake off; Phase 7 Studio refinement and Phase 11 integrated QA pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P09",
@@ -176,11 +178,12 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring and pure source schema inventory only; no browser/database/application QA",
-      "finalDisposition": "Pending final integrated QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/lib/legacy-journey.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring"
+      "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring",
+      "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source"
     },
     {
       "id": "P10",
@@ -188,7 +191,7 @@
       "design": "Redesigned gifting-specific entry or explicit route to the redesigned selected-piece form",
       "acceptance": "Relevant message/size/quantity flow; no furniture-only requirements",
       "owner": "Codex",
-      "status": "Phase 5 customization source complete; Phase 6 persistence and Phase 11 integrated proof pending",
+      "status": "Phase 6 order source and Preview schema complete; intake off; Phase 7 Studio refinement and Phase 11 integrated QA pending",
       "contentSource": "Reviewed source -> database published version",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, P10",
@@ -196,11 +199,12 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring and pure source schema inventory only; no browser/database/application QA",
-      "finalDisposition": "Pending final integrated QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/lib/legacy-journey.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring"
+      "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring",
+      "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source"
     },
     {
       "id": "P11",
@@ -647,7 +651,7 @@
       "design": "Search, filters, stage/assignee/reference indicators and pagination",
       "acceptance": "Queries stay usable as records grow; no fictional operational records",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 6 order source and Preview schema complete; intake off; Phase 7 Studio refinement and Phase 11 integrated QA pending",
       "contentSource": "Authenticated database and preserved Studio drafts",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, S03",
@@ -655,10 +659,11 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Studio authentication and isolated database",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
-      "finalDisposition": "Pending final integrated QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/components/studio/inquiry-board.tsx",
-      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
+      "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source"
     },
     {
       "id": "S04",
@@ -666,7 +671,7 @@
       "design": "Clear stage columns, readable cards, focused detail access and mobile alternative",
       "acceptance": "Drag/drop plus Move to control; durable moves and conflict recovery",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 6 order source and Preview schema complete; intake off; Phase 7 Studio refinement and Phase 11 integrated QA pending",
       "contentSource": "Authenticated database and preserved Studio drafts",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, S04",
@@ -674,10 +679,11 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Studio authentication and isolated database",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
-      "finalDisposition": "Pending final integrated QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/components/studio-orders-board.tsx; src/app/api/studio/orders/route.ts",
-      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
+      "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source"
     },
     {
       "id": "S05",
@@ -685,7 +691,7 @@
       "design": "Structured saved brief, references, contact, notes, assignee, follow-up and history",
       "acceptance": "Original submitted snapshot remains intact; private access enforced",
       "owner": "Codex",
-      "status": "Source implemented; runtime integration and Phase 11 verification pending",
+      "status": "Phase 6 order source and Preview schema complete; intake off; Phase 7 Studio refinement and Phase 11 integrated QA pending",
       "contentSource": "Authenticated database and preserved Studio drafts",
       "assetMapping": "media-manifest.json; instances.json",
       "desktopDesign": "Specified in DESIGN-SYSTEM.md, S05",
@@ -693,10 +699,11 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Studio authentication and isolated database",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
-      "finalDisposition": "Pending final integrated QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/components/studio/inquiry-board.tsx; src/app/api/studio/workspace/route.ts",
-      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending"
+      "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
+      "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source"
     },
     {
       "id": "S06",
@@ -933,7 +940,7 @@
       "design": "Your piece → Your details & references → Review",
       "acceptance": "Explicit bespoke schema; no fictional product ID; saved database/Studio record before prepared order message",
       "owner": "Codex — P5/P6",
-      "status": "Phase 5 bespoke form source complete; uploads/durable save/handoff unavailable until Phase 6; Phase 11 QA pending",
+      "status": "Phase 6 order source and Preview schema complete; intake off; Phase 7 Studio refinement and Phase 11 integrated QA pending",
       "contentSource": "Versioned bespoke-piece registry; customer-supplied brief",
       "assetMapping": "Private reference metadata only; never public gallery",
       "desktopDesign": "Shared customization layout in approved master D4",
@@ -941,11 +948,12 @@
       "motionFallback": "All fields and saved receipt usable without motion",
       "backendDependency": "V2 contract migration, guest-bound upload/save, message finalization",
       "accessibilityState": "Specified; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring and pure source schema inventory only; no browser/database/application QA",
-      "finalDisposition": "Pending P5/P6 implementation and Phase 11 integrated QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/lib/bespoke-schema.ts; src/lib/order-contract.ts; scripts/phase2-order-contract.sql",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring"
+      "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring",
+      "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source"
     }
   ],
   "updated": "2026-09-23",
