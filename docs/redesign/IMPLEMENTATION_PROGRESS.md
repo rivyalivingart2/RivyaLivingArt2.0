@@ -2,70 +2,70 @@
 
 ## Current Phase
 
-Phase 4 — COMPLETE at the catalogue/discovery source gate under master revision 3.4. Activation and final integrated QA remain pending.
+Phase 5 — COMPLETE at the customization source gate under master revision 3.5. Bespoke durable saving remains Phase 6; integrated QA remains Phase 11.
 
 ## Current Task
 
-P4.1–P4.6 complete and published. Implementation commit a75d95bb662093564a6ff84b04583238a81b394d matches independent GitHub remote readback on codex/phase-4-catalogue; main remains 47323c51a9c225cac0ee719203612bc579d5ede0. See phase-4-github-publication.json. A documentation-only follow-up records this receipt; the task completion file records the final branch head.
+P5.1–P5.7 source complete. Preparing GitHub publication on codex/phase-5-customization. Baseline main a007d0fb0b2cc05f4ce55e0f3ebff6d66f51c17f is the Phase 4 merge PR #18. Publication receipt will record independently verified remote identity.
 
 ## Completed
 
-- P4.1: all 120 stable IDs/slugs and reviewed copy/field inventories reconciled; 120 unique primary images, 131 reviewed media records and existing image hashes mapped. Full per-product evidence in phase-4-products.json.
-- P4.2: furniture-led published hero/selection and three distinct journeys; truthful empty/home/journal recovery with no fixture-image fallback.
-- P4.3: bounded URL search across name/ID/form/category/material, collection/category filters, stable A–Z/Z–A sort, 12/24/48 view sizes, history-preserving Apply/Reset/Show more and native GET/link fallback.
-- P4.4: public-only field projection and same-product published-media guard; gallery empty/error/swipe/index/zoom/thumbnail/static handling; distinct care, correct breadcrumbs and category-first related products.
-- P4.5: exact published product ID/version/fields at canonical customization URLs; legacy customization alias resolves by stable ID; held/unknown products unavailable.
-- P4.6: explicit per-record source-readiness and publication holds; instance/media/coverage registers updated; fictional proof/examples remain held.
-- Master, phase report, source inventory script and continuation guidance saved. Original candidates/assets/data preserved.
+- P5.1: explicit 120-product capability registry, 27 families and schema proposals; false DP110/DP119 ring sizing removed. Inventory has 111 changed proposals and nine unchanged forms.
+- P5.2: stable field IDs/types/conditions/bounds validated in Studio and server product validation; safe reorder/removal; deliberate reviewed-form draft apply with old snapshots preserved.
+- P5.3: typed shared product/bespoke form and /commission/customize, seven-field bespoke v1 with no fake product ID. Bespoke saving/uploads explicitly unavailable pending P6.
+- P5.4: bounded contact/notes/consent/private-reference handling, three steps, review/edit and copy-unsaved-brief fallback.
+- P5.5: tab-memory draft recovery, stale-schema reconciliation, reconnect retaining request key, exact-payload retry after uncertain save, file-key retry/removal and interrupted-queue cancellation.
+- P5.6: real honeypot, upload byte/processing status, stable input/error links and step focus.
+- P5.7: real service/error boundaries; no simulated success or premature WhatsApp handoff. Legacy product atomic writer retained; v2 save/message correction remains P6.
+- Report, source schema inventory, master, coverage, routes, decision and continuation guidance saved; historical candidates/assets/data preserved.
 
 ## In Progress
 
-None. Phase 4 source is complete and published. Phase 5 has not started.
+GitHub source publication and exact remote readback. No application QA or deployment is running.
 
 ## Pending
 
-P5.1: reconcile field families/actual capabilities, beginning with DP110 earrings and DP119 ring-dish false required size fields. Continue P5–P12 from the approved plan. Exact saved-message sequencing remains P6; Studio operations P7; content/media P8–P9; readiness P10; integrated QA P11; release P12.
+P6.1: validation/ownership/request identity for product and bespoke v2 briefs; then atomic core persistence, saved-canonical-message finalization, pending/ready receipt recovery and independently retrievable Studio records. Studio operations P7; content/media P8–P9; readiness P10; QA P11; release P12.
 
 ## Blocked
 
-- Hosted commercial activation: existing Vercel-only/free-only eligibility gate; automatic Git deployment disabled.
-- Connected integration: masked local database/Blob values per Phase 2 receipt; no Phase 4 secret inspection/change.
-- Migrations/publication: independent backup, permitted target and prerequisite schema required; no seed/run occurred.
-- Release isolation: environment-specific staff credentials and runtime database grants still need reconciliation.
-- Recovery/privacy: retention, backup custody/recovery objectives and restore proof remain later gates.
+- Commercial activation: Vercel-only/free-only eligibility hold; automatic Git deployment disabled.
+- Connected integration: Phase 2 recorded masked local database/Blob values; no fresh Phase 5 provider inspection.
+- Migrations/publication: independent backup, permitted isolated target and prerequisite schema must be established first; no migration/seed/run occurred.
+- Release: environment-specific staff credentials/runtime grants, retention/backup custody and restore proof remain open.
 
-Phase 2 architecture, environment matrix and runbook retain exact continuations. These do not block local Phase 5 source work.
+These do not block Phase 5 source completion or Git publication. Read Phase 2 architecture, environment matrix and runbook before integration.
 
 ## Owner Input Required
 
-None for Phase 4. Supplied product/policy/image approval remains. Do not request the same plan approval or credentials in chat.
+None for Phase 5. Supplied product/policy/image approval remains valid. Do not request repeat plan approval or credentials in chat.
 
 ## Files Changed
 
-shop-discovery.ts; shop-catalogue.ts; shop catalogue-browser/gallery/public-image/shop-site/styles; canonical customization route. Phase 4 inventory script/matrix/report/decision; master/progress/coverage/instance/media registers; active repository continuation notices.
+product-capabilities.json; product-form.ts; field-schema.ts; brief-validation.ts; inquiry-definition.ts; order-draft.ts; order-form.tsx; shop-model.ts; bespoke-schema.ts; schema API/custom route; inquiry action/reference DELETE; shop-site/styles; Studio catalogue editor. Schema inventory script/report, decision, master/progress/coverage/routes and active guidance.
 
 ## Database Changes
 
-None. No fresh database reads, write, migration, seed, data deletion or catalogue publication. Historical Phase 2 Preview catalogue count of zero is not a fresh Phase 4 count. All current publication states must be reconciled again before writes. No source fixture is used as a public fallback.
+None. No fresh query, write, migration, seed, data deletion or catalogue publication. All existing records and historical schema/answers preserved. Source template revision 3 does not overwrite database published_version.
 
 ## Testing Completed
 
-TypeScript no-emit compiler wiring passes with existing Node 22.23.2. Source inventory confirms 120 identities, canonical/legacy paths, reviewed copy/fields and same-product media/hash mappings. CSS parse, React/Next source review, document/register consistency and sensitive-file/preservation checks completed.
+TypeScript no-emit compiler wiring with existing Node 22.23.2; pure-source inventory reconciles 120 identities/routes/capabilities and old/new schema shape, plus bespoke v1. CSS syntax, source/document consistency, preservation and sensitive-file checks accompany publication.
 
-No lint/build/suite/dev server/browser/device/runtime QA, real submission or database operation. Phase 11 cases are prepared in PHASE-4-CATALOGUE.md; no new TESTED/BACKEND_CONNECTED claim.
+No lint/build/suites/dev server/browser/device/runtime QA, real inquiry or database operation. Prepared cases are in PHASE-5-CUSTOMIZATION.md; no new TESTED/BACKEND_CONNECTED claim.
 
 ## Known Issues
 
-DP110/DP119 required size capability mismatch is recorded in each matrix row for P5.1; legacy schemas preserved. Source/media mappings do not prove visual suitability or live publication. Existing summary generation before core save remains P6 work. New catalogue IDs need approved associated media; authoring is P7. Current integrated eligibility/recovery/privacy gates remain C01–C26.
+Bespoke prepare/review/copy works in source but uploads/save/handoff remain unavailable until P6 v2 integration. The legacy product summary is still constructed before core save; P6 must fix sequencing. Tab memory cannot survive reload/close; copy/leave notices disclose this. Fully expired server sessions require copied-brief recovery/re-upload. Late provider write versus deletion requires reconciliation proof in P6/10/11. Phase 4 historical matrices still contain the now-corrected proposal findings by design; read phase-5-schemas.json for the new source proposals.
 
 ## Next Exact Task
 
-**P5.1 — Reconcile field families and actual capabilities for all 120 products**, starting with the DP110/DP119 findings. Use phase-4-products.json and Phase 2 contracts before changing product-form.ts or Studio validation. Preserve historical schema/answers/drafts and plan the genuine bespoke branch.
+**P6.1 — Enforce validation, ownership and request identity for selected-product and bespoke saved briefs.** Read Phase 2 contracts/migration runbook and Phase 5 typed validators. Verify current environment/backup/schema before any allowed integration writes, then retain atomic core and finalize message from the saved canonical snapshot. Preserve historical records and no WhatsApp before save.
 
 Repository: C:/Users/gonda/Documents/Codex/2026-09-23/rivyalivingart-website-studio-preview-sites-project/work/repo
 
-Branch: codex/phase-4-catalogue; baseline main 47323c51a9c225cac0ee719203612bc579d5ede0, Phase 3 merge PR #17. Verify live Git refs before resuming. Current source SHA is in Git and the task completion receipt. No Phase 4 deployment; last recorded production identity remains in Phase 2 receipts and was not freshly inspected.
+Branch: codex/phase-5-customization; baseline main a007d0fb0b2cc05f4ce55e0f3ebff6d66f51c17f, Phase 4 merge PR #18. Verify live Git refs before resuming. Current source SHA is in Git and the task completion receipt. No Phase 5 deployment or fresh production inspection.
 
 ## Resume Instruction
 
-Read AGENTS.md, PROJECT_STATE.md, Phase 4 decision, master revision 3.4, this file, PHASE-4-CATALOGUE.md and phase-4-products.json. Continue P5.1 without restarting or reapproving. Retain Phase 2 integration/backup gates and WhatsApp saved-order-only behavior. Keep no payments/customer accounts, Vercel-only/free-only, automatic-deployment hold and final main/production release requirements.
+Read AGENTS.md, PROJECT_STATE.md, Phase 5 decision, master revision 3.5, this file, PHASE-5-CUSTOMIZATION.md and phase-5-schemas.json. Continue P6.1 without restarting/reapproving. Retain Phase 2 integration/backup gates, saved-order-only WhatsApp, no payments/customer accounts, Vercel-only/free-only, automatic-deployment hold and final main/production release requirements.

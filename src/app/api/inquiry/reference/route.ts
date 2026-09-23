@@ -55,10 +55,10 @@ export async function DELETE(request:Request){
  if(!originAllowed(request))return json({error:'Request not allowed.'},403);
  try{
   const guest=await guestIdentity(),body=await smallJson(request,1000);
-  if(!guest||!uuid(body.id)||!uuid(body.key))return json({error:'Invalid reference.'},400);
-  const rows=await studioDb()`SELECT id FROM rivya_references WHERE id=${body.id}::uuid AND request_key=${body.key}::uuid AND guest_hash=${guest} AND inquiry_id IS NULL`;
-  if(!rows.length)return json({error:'This reference is unavailable or is already attached to a saved inquiry.'},404);
-  return await discardReference(body.id)?json({removed:true}):json({error:'This reference is already attached to an inquiry.'},409);
+  if(!guest||!uuid(body.key)||(!uuid(body.id)&&!uuid(body.uploadKey)))return json({error:'Invalid reference.'},400);
+  const rows=await studioDb()`SELECT id,inquiry_id FROM rivya_references WHERE request_key=${body.key}::uuid AND guest_hash=${guest} AND (id=${uuid(body.id)?body.id:null}::uuid OR upload_key=${uuid(body.uploadKey)?body.uploadKey:null}::uuid)`;
+  if(!rows.length)return json({removed:true});
+  if(rows[0].inquiry_id)return json({error:'This reference is attached to a saved inquiry and cannot be removed here.'},409);
+  return await discardReference(rows[0].id)?json({removed:true}):json({error:'This reference is already attached to an inquiry.'},409);
  }catch{return json({error:'Reference removal is temporarily unavailable. Retry before submitting.'},503);}
 }
-

@@ -1,0 +1,602 @@
+{
+  "DP001": {
+    "family": "dining",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP013": {
+    "family": "coffee",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP035": {
+    "family": "console",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP048": {
+    "family": "seating",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP069": {
+    "family": "sculpture",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP002": {
+    "family": "dining",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP014": {
+    "family": "coffee",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP025": {
+    "family": "side",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP043": {
+    "family": "seating",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP051": {
+    "family": "desk",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP057": {
+    "family": "wall",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP077": {
+    "family": "installation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP003": {
+    "family": "dining",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP004": {
+    "family": "dining",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP005": {
+    "family": "dining",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP006": {
+    "family": "dining",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP007": {
+    "family": "dining",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP008": {
+    "family": "dining",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP009": {
+    "family": "dining",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP010": {
+    "family": "dining",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP011": {
+    "family": "dining",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP012": {
+    "family": "dining",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP015": {
+    "family": "coffee",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP016": {
+    "family": "coffee",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP017": {
+    "family": "coffee",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP018": {
+    "family": "coffee",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP019": {
+    "family": "coffee",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP020": {
+    "family": "coffee",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP021": {
+    "family": "coffee",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP022": {
+    "family": "coffee",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP023": {
+    "family": "coffee",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP024": {
+    "family": "coffee",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP026": {
+    "family": "side",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP027": {
+    "family": "side",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP028": {
+    "family": "side",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP029": {
+    "family": "side",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP030": {
+    "family": "side",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP031": {
+    "family": "side",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP032": {
+    "family": "side",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP033": {
+    "family": "side",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP034": {
+    "family": "side",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP036": {
+    "family": "console",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP037": {
+    "family": "console",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP038": {
+    "family": "console",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP039": {
+    "family": "console",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP040": {
+    "family": "console",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP041": {
+    "family": "console",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP042": {
+    "family": "console",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP044": {
+    "family": "seating",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP045": {
+    "family": "seating",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP046": {
+    "family": "seating",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP047": {
+    "family": "seating",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP049": {
+    "family": "seating",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP050": {
+    "family": "seating",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP052": {
+    "family": "desk",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP053": {
+    "family": "desk",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP054": {
+    "family": "desk",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP055": {
+    "family": "desk",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP056": {
+    "family": "desk",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP058": {
+    "family": "wall",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP059": {
+    "family": "wall",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP060": {
+    "family": "wall",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP061": {
+    "family": "wall",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP062": {
+    "family": "wall",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP063": {
+    "family": "wall",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP064": {
+    "family": "wall",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP065": {
+    "family": "wall",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP066": {
+    "family": "wall",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP067": {
+    "family": "wall",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP068": {
+    "family": "wall",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP070": {
+    "family": "sculpture",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP071": {
+    "family": "sculpture",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP072": {
+    "family": "sculpture",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP073": {
+    "family": "sculpture",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP074": {
+    "family": "sculpture",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP075": {
+    "family": "sculpture",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP076": {
+    "family": "sculpture",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP078": {
+    "family": "installation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP079": {
+    "family": "installation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP080": {
+    "family": "installation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP081": {
+    "family": "installation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP082": {
+    "family": "installation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP083": {
+    "family": "installation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP084": {
+    "family": "installation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP085": {
+    "family": "preservation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP091": {
+    "family": "clock",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP095": {
+    "family": "ceremony",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP099": {
+    "family": "invitation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP103": {
+    "family": "nameplate",
+    "personalizationRequired": true,
+    "quantityUnit": "pieces"
+  },
+  "DP107": {
+    "family": "keepsake",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP086": {
+    "family": "preservation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP087": {
+    "family": "preservation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP088": {
+    "family": "preservation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP089": {
+    "family": "preservation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP090": {
+    "family": "preservation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP092": {
+    "family": "clock",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP093": {
+    "family": "clock",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP094": {
+    "family": "clock",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP096": {
+    "family": "ceremony",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP097": {
+    "family": "ceremony",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP098": {
+    "family": "ceremony",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP100": {
+    "family": "invitation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP101": {
+    "family": "invitation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP102": {
+    "family": "invitation",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP104": {
+    "family": "nameplate",
+    "personalizationRequired": true,
+    "quantityUnit": "pieces"
+  },
+  "DP105": {
+    "family": "nameplate",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP106": {
+    "family": "nameplate",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP108": {
+    "family": "keepsake",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP109": {
+    "family": "pendant",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP111": {
+    "family": "rakhi",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP112": {
+    "family": "keychain",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP113": {
+    "family": "bookmark",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP114": {
+    "family": "coasters",
+    "personalizationRequired": false,
+    "quantityUnit": "sets"
+  },
+  "DP120": {
+    "family": "keepsake-box",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP110": {
+    "family": "earrings",
+    "personalizationRequired": false,
+    "quantityUnit": "pairs"
+  },
+  "DP115": {
+    "family": "tray",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP116": {
+    "family": "bowl",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP117": {
+    "family": "bookends",
+    "personalizationRequired": false,
+    "quantityUnit": "pairs"
+  },
+  "DP118": {
+    "family": "paperweight",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  },
+  "DP119": {
+    "family": "ring-dish",
+    "personalizationRequired": false,
+    "quantityUnit": "pieces"
+  }
+}

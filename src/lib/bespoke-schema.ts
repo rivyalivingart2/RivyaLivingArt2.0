@@ -1,5 +1,5 @@
 /**
- * Versioned definition for P5's bespoke form. No route imports this registry yet.
+ * Versioned definition for the bespoke form. Durable saving is connected in Phase 6.
  * Choices describe requests for review, not guaranteed manufacturing capability.
  * Never edit a released version in place; append a version and snapshot it on save.
  */
