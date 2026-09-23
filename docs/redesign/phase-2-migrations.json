@@ -1,0 +1,66 @@
+{
+  "revision": 1,
+  "date": "2026-09-23",
+  "previewBaseline": "16 tables; prior tracked migrations reconciled read-only",
+  "productionBaseline": "studio-schema.sql only; four tables",
+  "phase2DatabaseWrites": 0,
+  "runbook": "PHASE-2-MIGRATION-RUNBOOK.md",
+  "migrationPolicy": "Do not execute on build. Reconcile live schema, independent backup, bounded transaction, Preview first when permitted. Retain additive data on application rollback.",
+  "files": [
+    {
+      "file": "scripts/studio-schema.sql",
+      "sha256": "280dbfd5660a791b9063136f49d6b3efe4b6e54601fb5a05f03e857d769097a9",
+      "phase2Applied": false,
+      "disposition": "Preserved historical source; see environment-specific baseline"
+    },
+    {
+      "file": "scripts/whatsapp-schema.sql",
+      "sha256": "acfbe47599596ff720df57b5d3224f4e2c84d28e38a8591beddfee5a07beb447",
+      "phase2Applied": false,
+      "disposition": "Preserved historical source; see environment-specific baseline"
+    },
+    {
+      "file": "scripts/redesign-preview-migration.sql",
+      "sha256": "2d022e0da6e92ff9bcf3faf606075fe05cab9d5016f545b2a4f9b88a4634da09",
+      "phase2Applied": false,
+      "disposition": "Preserved historical source; see environment-specific baseline"
+    },
+    {
+      "file": "scripts/content-schema.sql",
+      "sha256": "f573e63e0b9b1fb6a019acf0818286151b84dfaa0d7720ea73db7a9005695fff",
+      "phase2Applied": false,
+      "disposition": "Preserved historical source; see environment-specific baseline"
+    },
+    {
+      "file": "scripts/storage-provider-schema.sql",
+      "sha256": "ab09212549a6bd792dd176efcaea869c2cc22829e0426cd4a3e558e922bee95b",
+      "phase2Applied": false,
+      "disposition": "Preserved historical source; see environment-specific baseline"
+    },
+    {
+      "file": "scripts/business-settings-schema.sql",
+      "sha256": "17a3feaed1348e70855f4c00fa83211e5d5d3a16a936af1bd2b58a7e10417430",
+      "phase2Applied": false,
+      "disposition": "Preserved historical source; see environment-specific baseline"
+    },
+    {
+      "file": "scripts/revision-schema.sql",
+      "sha256": "03816e489d320e8d10d09bc1494513680fcc5789352c5ae87b2030ec4564fb16",
+      "phase2Applied": false,
+      "disposition": "Preserved historical source; see environment-specific baseline"
+    },
+    {
+      "file": "scripts/phase2-schema-inspection.sql",
+      "sha256": "82bbc1c190bae4459a9c31aaac0c5c96c027cfa159c6a1a4c7fca9dea9ac440e",
+      "phase2Applied": false,
+      "disposition": "Read-only inspection bundle"
+    },
+    {
+      "file": "scripts/phase2-order-contract.sql",
+      "sha256": "a880306e06681735ae58a61738d9a678272f73e6eddb2c350acbaeb6977726e7",
+      "phase2Applied": false,
+      "disposition": "Proposed one-time migration; not applied"
+    }
+  ],
+  "hashEncoding": "SHA-256 of UTF-8 text with CRLF normalized to LF"
+}

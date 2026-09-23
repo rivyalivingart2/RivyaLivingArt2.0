@@ -2153,5 +2153,15 @@
       "template": "P28",
       "status": "Intentionally unpublished: explicitly fictional completed-work example"
     }
-  ]
+  ],
+  "phase2": {
+    "date": "2026-09-23",
+    "planRevision": "3.2",
+    "preserved": true,
+    "productContract": "product:<existing ID>; published revision plus immutable fields/answers snapshot",
+    "articleContract": "Existing content key and revision; no private inquiry data",
+    "heldProjects": "Unpublished; no new factual claim",
+    "bespoke": "P32 bespoke-piece v1 is a request schema, not a product instance",
+    "runtimeVerification": "Pending Phase 11"
+  }
 }

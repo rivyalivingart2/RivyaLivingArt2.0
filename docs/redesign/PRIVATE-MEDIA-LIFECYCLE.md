@@ -1,3 +1,5 @@
+> Current authority: approved master revision 3.2 and PHASE-2-DATA-ARCHITECTURE.md / PHASE-2-MIGRATION-RUNBOOK.md. The prior phase numbering and observations below are historical. Phase 11 is final QA. Current environment evidence is phase-2-environments.json. The guest cookie is an opaque random bearer token whose HMAC is stored server-side; it is not itself a signed cookie.
+
 # Private reference lifecycle
 
 Source implementation checkpoint, 23 September 2026. Final runtime/privacy proof remains Phase 9.

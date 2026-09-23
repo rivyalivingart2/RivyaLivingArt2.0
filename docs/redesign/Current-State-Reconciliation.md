@@ -251,3 +251,7 @@ Verify safe unpublished/404 behavior; do not publish these as actual work.
 | [ ] | DS006 | a-wall-in-three-movements | Intentionally unpublished — fictional |
 | [ ] | DS007 | an-open-screen | Intentionally unpublished — fictional |
 | [ ] | DS008 | one-anniversary-one-gesture | Intentionally unpublished — fictional |
+
+## Phase 2 reconciliation update — 23 September 2026
+
+The earlier audit above is preserved. Fresh read-only dashboard queries now confirm Preview has all 16 source tables and Production only the original four Studio tables. Column/nullability, constraints, indexes, aggregate counts and query-role permissions were inspected; see phase-2-environments.json for sanitized receipts and PHASE-2-DATA-ARCHITECTURE.md for the change map. No customer row contents, secrets or files were exported. No schema/data writes occurred. Main advanced upstream through PR #15 to bdfd78f before this phase; work starts from that identical source tree on codex/phase-2-foundation. Final app/runtime/restore proof remains outstanding.
