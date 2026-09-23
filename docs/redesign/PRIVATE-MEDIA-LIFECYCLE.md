@@ -12,4 +12,4 @@ Unsubmitted references become eligible for administrator cleanup after 24 hours.
 
 Private retrieval requires a current server session and an admin role or the inquiry's assigned editor. Both the image endpoint and its contextual viewer enforce scope. The endpoint bypasses public image optimization and returns private/no-store headers. Public media authoring never lists customer references.
 
-Vercel's private Preview store and Netlify's environment-specific private stores use separate adapters. Netlify store names must exactly match the configured Preview/Production environment. Actual Netlify credentials, private-store behavior, failure recovery, cross-user denial and byte accounting remain final integrated verification requirements.
+Only Vercel private Blob is selected after the owner's Vercel-only instruction. Unsupported providers are rejected. Private-store behavior, failure recovery, cross-user denial and byte accounting remain final integrated verification requirements. Hosted business activation is on hold pending commercial eligibility; preserved migration history does not authorize another provider.

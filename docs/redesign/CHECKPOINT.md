@@ -2,11 +2,13 @@
 
 Updated 23 September 2026. Full master and supplied product/policy/image use are approved. No repeat plan approval is needed.
 
+Latest owner override: publish all saved source to the GitHub work branch; use Vercel only. Netlify onboarding is cancelled and its source integration removed. Commercial hosting remains on hold under free-only constraints. Read docs/decisions/2026-09-23-vercel-only-hold.md and VERCEL-COMMERCIAL-USE.md before proceeding. Automatic Git deployment is disabled in vercel.json; do not manually deploy this commercial candidate.
+
 ## Current work
 
 - Phase 2 and Phase 3 complete. Phase 4 complete at its source implementation gate. Phase 5 templates and copy candidates implemented; final instance/media review and deployment-specific policy wording remain. Phase 6 schema applied but local runtime connection blocked by masked provider secrets. Phase 7 all S01–S17 source implemented, with backend proof pending. Phase 8 source refinement underway. Formal Phase 9 QA has NOT started.
 - Branch codex/whatsapp-order-experience; original baseline/main f9533bbbaf3cc2843025f1a1243442b0a9d920e8. All 33 inherited drafts preserved in baseline snapshot. Main and existing production unchanged.
-- Read the approved master revision 2.4 section 18, AGENTS.md and PROJECT_STATE.md. Master path ../../outputs/RivyaLivingArt-Master-Full-Website-Redesign-Plan.md from repository.
+- Read the approved master revision 2.5 section 18, AGENTS.md and PROJECT_STATE.md. Master path ../../outputs/RivyaLivingArt-Master-Full-Website-Redesign-Plan.md from repository.
 
 ## Applied Preview schema
 
@@ -18,15 +20,15 @@ Private snapshot rla_backup_20260923_p6 before the inquiry migration. Inquiry, c
 - Editorial: 36 revised original article candidates, 11 page/policy documents, approved image selection/related pieces, all aliases/metadata/robots/sitemap. Real-project template and empty portfolio provided; 8 fictional projects and all fictional testimonials/orders withheld.
 - Catalogue copy: reviewed-product-copy.json removes obsolete demonstration labels and generic dimensions contradicted by the described forms; stable IDs/slugs retained. Public fields are explicit requests subject to atelier confirmation.
 - Studio: overview, scoped list/board/detail, manual orders, assignment/follow-ups, notes, audit/export, product/form/gallery editing, draft/live comparison, content/media editing, staff, business settings, expired-upload cleanup, durable revisions and restore-to-draft. Session expiry preserves unsaved editors and offers renewed sign-in in another tab.
-- Storage: private Vercel Preview adapter; Netlify private storage adapter and protected Preview proxy prepared, not runtime-verified. Netlify build config does not enable indexing.
+- Storage: Vercel private Blob only. Unsupported provider values fail closed. The applied storage-provider migration is preserved as history; no stored data was modified during the provider correction.
 - Publication: docs/redesign/reviewed-publication.json contains 120 products, 47 content records and 131 media records. scripts/seed-reviewed-preview.mjs --apply-preview checks the private snapshot marker and inserts only absent records atomically. It has NOT been run.
 - Source checks: TypeScript wiring passes on Node 22. Formal lint/tests/build/browser/DB end-to-end remain deferred to Phase 9; no TESTED claim.
 
 ## Exact next actions
 
 1. User must replace only the masked DATABASE_URL and BLOB_READ_WRITE_TOKEN entries in ignored .env.local with the isolated Preview values. They must not be pasted into chat. Local-only bootstrap Studio credentials were generated into that file without displaying them; production credentials unchanged. Read values only inside commands, never print them.
-2. Confirm the Preview snapshot marker, then run the explicit publication script. Do not use a build hook or production database for seeding. Finish data integration and record phase outcomes.
-3. Netlify sign-in/account setup remains pending in the existing Netlify browser tab. Free commercial eligibility is documented; do not use a paid tier/trial or deploy commercial production to Vercel Hobby. Verify adapter, runtime env scopes, private stores, protection and quotas before release.
+2. Continue local integration preparation. Before activating hosted workflows or publishing records, resolve Vercel commercial eligibility. Once permitted, confirm the Preview snapshot marker before the explicit insert-only publication script; never seed through a build hook or into Production.
+3. Netlify sign-in is no longer needed. Vercel-only and free-only constraints currently block commercial hosting. Do not assume a static business site, off-site sales or a protected Preview is exempt; see VERCEL-COMMERCIAL-USE.md.
 4. Complete integrated Phase 8 and update copy naming the actual production providers. Then run Phase 9 required checks, end-to-end DB/Studio/WhatsApp proof, roles/concurrency, every-instance and responsive capture review. No main push until these gates pass and the old Vercel auto-deploy trigger is handled.
 5. Publish finalized code to main and eligible production only after the approved release requirements. Do not mark complete because source compiles.
 

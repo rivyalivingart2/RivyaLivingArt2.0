@@ -1,6 +1,6 @@
 # Active owner instruction — approved full redesign
 
-Current continuation: master revision 2.4; Phase 4 source complete, Phases 5–8 source/integration candidate pending Preview credentials and Netlify sign-in. Read docs/redesign/CHECKPOINT.md for exact applied migrations and next steps. Formal QA and release are still outstanding.
+Current continuation: master revision 2.5; Phase 4 source complete, Phases 5–8 source/integration candidate. Owner requests GitHub publication and Vercel only; Netlify onboarding is cancelled and its source integration removed. Commercial hosting remains on hold under free-only constraints; automatic Git deployment is disabled. Read docs/redesign/CHECKPOINT.md and docs/decisions/2026-09-23-vercel-only-hold.md. Preview credentials, formal QA and release eligibility remain outstanding.
 
 Continue the approved master from `docs/redesign/CHECKPOINT.md`. Read `docs/decisions/2026-09-23-approved-full-redesign.md` first. Older appearance, frontend-only and release restrictions below are historical where superseded. Preserve source/data; final QA and eligible free hosting remain release gates.
 

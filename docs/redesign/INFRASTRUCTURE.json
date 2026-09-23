@@ -38,7 +38,7 @@
     "backup": "Atomic private schema snapshot in the same Preview database before additive DDL; baseline schema retained in scripts/studio-schema.sql",
     "sourceSchemaSha256": "acfbe47599596ff720df57b5d3224f4e2c84d28e38a8591beddfee5a07beb447",
     "receipt": {
-      "backedUpAt": "2026-09-23T09:31:15.753363+00:00",
+      "backedUpAt": "2026-09-23T15:01:15.753363+05:30",
       "publicTablesAfter": 12,
       "ordersAfter": 0,
       "eventsAfter": 0,
@@ -46,7 +46,7 @@
       "method": "Authenticated read-only SQL after write; read-only mode restored"
     }
   },
-  "productionRelease": "Main/production unchanged. Netlify Free candidate; account sign-in pending. Final QA and release gates not satisfied.",
+  "productionRelease": "Main and production unchanged. Vercel only; Netlify cancelled. Commercial hosting and final QA remain blocked. Automatic Git deployment disabled in branch source.",
   "contentMigration": {
     "file": "scripts/content-schema.sql",
     "status": "Applied to Preview after owner-completed 2FA",

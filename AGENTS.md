@@ -1,5 +1,7 @@
 # Active owner instruction — approved full redesign
 
+Latest override: read docs/decisions/2026-09-23-vercel-only-hold.md. Publish saved source to the existing GitHub work branch; Vercel only, no Netlify. Commercial deployment remains on hold under free-only constraints. Do not bypass vercel.json's automatic-deployment hold or activate business workflows on Hobby without resolved eligibility.
+
 Continue the approved master from `docs/redesign/CHECKPOINT.md`. Read `docs/decisions/2026-09-23-approved-full-redesign.md` first. Older appearance, frontend-only and release restrictions below are historical where superseded. Preserve source/data; final QA and eligible free hosting remain release gates.
 
 ---
