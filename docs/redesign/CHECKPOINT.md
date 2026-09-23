@@ -4,6 +4,8 @@ Updated 23 September 2026. Full master and supplied product/policy/image use are
 
 Latest owner override: publish all saved source to the GitHub work branch; use Vercel only. Netlify onboarding is cancelled and its source integration removed. Commercial hosting remains on hold under free-only constraints. Read docs/decisions/2026-09-23-vercel-only-hold.md and VERCEL-COMMERCIAL-USE.md before proceeding. Automatic Git deployment is disabled in vercel.json; do not manually deploy this commercial candidate.
 
+GitHub source publication succeeded on codex/whatsapp-order-experience. Remote implementation commit 583b0b61c2635ffe0793425c95f63040bec20202 was verified; it includes the complete redesign checkpoint and Vercel-only correction. Main remains f9533bb. See github-publication.json; no new Vercel deployment was returned in the post-push check. Subsequent documentation commits preserve this receipt.
+
 ## Current work
 
 - Phase 2 and Phase 3 complete. Phase 4 complete at its source implementation gate. Phase 5 templates and copy candidates implemented; final instance/media review and deployment-specific policy wording remain. Phase 6 schema applied but local runtime connection blocked by masked provider secrets. Phase 7 all S01–S17 source implemented, with backend proof pending. Phase 8 source refinement underway. Formal Phase 9 QA has NOT started.
