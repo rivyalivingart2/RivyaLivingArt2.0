@@ -1,3 +1,5 @@
+import {routeMetadata} from '@/lib/site-metadata';
+export function generateMetadata(){return routeMetadata('/');}
 import { connection } from "next/server";
 import { isPublicWebsiteAvailable } from "@/lib/public-website";
 import { Homepage } from "@/components/homepage";

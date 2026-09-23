@@ -1,0 +1,6 @@
+.env*
+!.env.example
+.vercel/
+work/
+playwright-report/
+test-results/

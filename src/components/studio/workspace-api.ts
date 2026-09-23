@@ -1,0 +1,3 @@
+export async function studioFetch(path:string,body?:object){const response=await fetch(path,{cache:'no-store',...(body?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:{})});const data=await response.json();if(response.status===401){throw new Error('Your session expired. Sign in again using the header link, then retry. Keep this tab open to preserve unsaved edits.');}if(!response.ok)throw new Error(data.error||'The request could not be completed.');return data;}
+export type StaffMember={id:string;login:string;name:string;role:'admin'|'editor';active:boolean;version:number};
+export type WorkspaceIdentity={adminId:string;role:'admin'|'editor';staffId:string|null};

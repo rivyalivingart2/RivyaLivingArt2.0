@@ -1,0 +1,842 @@
+{
+  "DP001": {
+    "name": "River Channel",
+    "subtitle": "Live-Edge Dining Table",
+    "story": "Two natural edges trace the course of a deep blue resin channel. This dining-table design explores the meeting of an organic silhouette and an architectural base — a place around which a room can gather. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "240 × 100 × 75 cm",
+    "category": "Tables"
+  },
+  "DP013": {
+    "name": "Shallow Basin",
+    "subtitle": "Coffee Table",
+    "story": "A quiet, low circular form holds a pool of colour. The Shallow Basin design brings the movement of resin close to the floor, inviting a slower look at its depth and the grain around it. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "110 × 110 × 35 cm",
+    "category": "Tables"
+  },
+  "DP035": {
+    "name": "Narrow Span",
+    "subtitle": "Console Table",
+    "story": "A fine line of blue runs through a narrow, purposeful surface. Designed for transitional spaces, Narrow Span gives an entrance or a quiet wall its own moment. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "160 × 38 × 80 cm",
+    "category": "Consoles"
+  },
+  "DP048": {
+    "name": "Entryway",
+    "subtitle": "Bench",
+    "story": "A substantial timber seat becomes a study of the river line. This bench design offers a simple geometry with a resin detail that can be considered in relation to the surrounding space. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "150 × 40 × 45 cm",
+    "category": "Seating"
+  },
+  "DP069": {
+    "name": "Lattice Object",
+    "subtitle": "3D + Resin Study",
+    "story": "An open lattice is suspended within a transparent volume. This design tests the relationship between solid and void; the final scale, fabrication and placement would be resolved through a commission. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "Scale to be developed",
+    "category": "Spatial art"
+  },
+  "DP002": {
+    "name": "Stillwater",
+    "subtitle": "Dining table",
+    "story": "A full-pour dining surface with a calm, continuous outline. Stillwater studies how a single translucent plane could anchor a room without relying on an expressive timber edge. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "2200 × 950 × 750 mm",
+    "category": "Tables"
+  },
+  "DP014": {
+    "name": "Orbit",
+    "subtitle": "Circular table",
+    "story": "A circular centre table that turns the room around a single, continuous edge. Orbit combines an imagined resin surface with a quiet mineral base. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "1000 × 1000 × 380 mm",
+    "category": "Tables"
+  },
+  "DP025": {
+    "name": "Twinleaf",
+    "subtitle": "Side-table pair",
+    "story": "A pair of side tables with related outlines and deliberately different grain directions. Twinleaf explores the balance between a matched set and two individual objects. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "520 × 420 × 520 mm",
+    "category": "Tables"
+  },
+  "DP043": {
+    "name": "Petal",
+    "subtitle": "Sculptural chair",
+    "story": "A seating study shaped around a soft, opening curve. Petal considers the chair as an object to walk around as well as a place to sit. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "680 × 720 × 800 mm",
+    "category": "Seating"
+  },
+  "DP051": {
+    "name": "Single-Slab",
+    "subtitle": "Desk",
+    "story": "A work surface that gives a single timber slab the leading role. The Atelier Desk explores a resin detail along the edge and a frame with visual breathing room beneath. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "1800 × 750 × 750 mm",
+    "category": "Tables"
+  },
+  "DP057": {
+    "name": "Horizon",
+    "subtitle": "Wall panel",
+    "story": "A wall composition built around a long band of resin and a quieter mineral field. Horizon studies how a horizontal artwork might change the proportions of a room. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "2200 × 60 × 900 mm",
+    "category": "Spatial art"
+  },
+  "DP077": {
+    "name": "Estuary",
+    "subtitle": "Reception counter",
+    "story": "A reception counter imagined as a meeting point between a flowing resin face and a grounded mineral body. Estuary explores a large architectural gesture at the entrance to a space. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "3000 × 800 × 1100 mm",
+    "category": "Spatial art"
+  },
+  "DP003": {
+    "name": "Verdant",
+    "subtitle": "Dining table",
+    "story": "A dining table that separates two timber slabs with a slender green resin channel. Verdant studies the space between natural edges, keeping the surface visually light despite its length. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "2300 × 1000 × 750 mm",
+    "category": "Tables"
+  },
+  "DP004": {
+    "name": "Monolith",
+    "subtitle": "Dining table",
+    "story": "A long dining table with a broad resin plane and two substantial mineral supports. Monolith explores a strong horizontal presence for a generous room. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "3200 × 1100 × 760 mm",
+    "category": "Tables"
+  },
+  "DP005": {
+    "name": "Estuary",
+    "subtitle": "Oval dining table",
+    "story": "An oval dining table where a resin channel opens gently between timber fields. Estuary softens the table's ends while keeping a clear direction through the room. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "2400 × 1150 × 750 mm",
+    "category": "Tables"
+  },
+  "DP006": {
+    "name": "Canopy",
+    "subtitle": "Round dining table",
+    "story": "A round dining surface with branching timber shapes suspended within an imagined resin field. Canopy considers the table as a composition shared from several viewpoints. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "1500 × 1500 × 750 mm",
+    "category": "Tables"
+  },
+  "DP007": {
+    "name": "Tidal",
+    "subtitle": "Dining table",
+    "story": "A rectangular table with alternating resin and timber bands running across its width. Tidal brings a measured rhythm to a long dining surface, with a simple metal frame beneath. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "2500 × 1000 × 750 mm",
+    "category": "Tables"
+  },
+  "DP008": {
+    "name": "Umber",
+    "subtitle": "Dining table",
+    "story": "A dining table grounded by two broad timber supports beneath a warm resin-and-wood surface. Umber explores the relationship between a quiet top and a visibly substantial base. The example footprint and material choices are starting points for discussing seating, room scale and the desired surface balance. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "2600 × 1050 × 760 mm",
+    "category": "Tables"
+  },
+  "DP009": {
+    "name": "Lagoon",
+    "subtitle": "Pedestal dining table",
+    "story": "A dining table with a softly squared resin top resting above one mineral pedestal. Lagoon studies a pool-like surface held by a compact central form. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "1600 × 1450 × 750 mm",
+    "category": "Tables"
+  },
+  "DP010": {
+    "name": "Ridge",
+    "subtitle": "Dining table",
+    "story": "A timber dining table marked by a fine bronze inlay beside a narrow resin seam. Ridge uses a small metallic line to give direction to a broad surface. The example materials, dimensions and finishes describe a visual study, with fabrication and care details awaiting confirmation. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "2400 × 1000 × 755 mm",
+    "category": "Tables"
+  },
+  "DP011": {
+    "name": "Dune",
+    "subtitle": "Dining table",
+    "story": "A dining surface that pairs muted timber with a broad band of smoked resin. Dune explores gentle changes in opacity and tone within a simple rectangular outline. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "2200 × 950 × 750 mm",
+    "category": "Tables"
+  },
+  "DP012": {
+    "name": "Grove",
+    "subtitle": "Communal dining table",
+    "story": "A communal table formed from a sequence of timber sections linked by restrained resin intervals. Grove explores a long shared surface with a changing grain rhythm. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "3600 × 1100 × 760 mm",
+    "category": "Tables"
+  },
+  "DP015": {
+    "name": "Contour",
+    "subtitle": "Oval coffee table",
+    "story": "An oval coffee table with layered resin contours set against a quiet mineral base. Contour studies a low surface that reads like an abstract map from above. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "1350 × 800 × 350 mm",
+    "category": "Tables"
+  },
+  "DP016": {
+    "name": "Drift",
+    "subtitle": "Nesting coffee-table",
+    "story": "A pair of low tables with related resin-and-timber surfaces at different heights. Drift explores an overlapping composition that can be discussed together or apart. The listed dimensions describe the larger table only; the smaller companion, clearances and combined arrangement remain part of a future design brief. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "1100 × 700 × 400 mm",
+    "category": "Tables"
+  },
+  "DP017": {
+    "name": "Pebble Sculptural Coffee Table",
+    "subtitle": "Sculptural Coffee Table",
+    "story": "A pebble-shaped top balanced above a recessed support. Discuss how the asymmetrical edge relates to the main seat with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP018": {
+    "name": "Delta Two-Level Coffee Table",
+    "subtitle": "Two-Level Coffee Table",
+    "story": "Two low planes joined by a quiet change of level. Discuss the usable area of each level with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP019": {
+    "name": "Cove Low Coffee Table",
+    "subtitle": "Low Coffee Table",
+    "story": "A low surface with a sheltered resin recess. Discuss the desired balance of display space and empty surface with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP020": {
+    "name": "Halo Ring-Base Coffee Table",
+    "subtitle": "Ring-Base Coffee Table",
+    "story": "An open ring supporting a circular top. Discuss sightlines through the base from a seated position with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP021": {
+    "name": "Moss Square Coffee Table",
+    "subtitle": "Square Coffee Table",
+    "story": "A square surface interrupted by a moss-green resin field. Discuss whether a square footprint suits the room circulation with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP022": {
+    "name": "Slate River Coffee Table",
+    "subtitle": "River Coffee Table",
+    "story": "A dark slate-toned channel following the timber boundary. Discuss the relationship between dark resin and the surrounding floor with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP023": {
+    "name": "Current Asymmetric Coffee Table",
+    "subtitle": "Asymmetric Coffee Table",
+    "story": "An off-centre resin flow within an irregular top. Discuss which edge should face the main seating area with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP024": {
+    "name": "Terra Plinth Coffee Table",
+    "subtitle": "Plinth Coffee Table",
+    "story": "A low monolithic plinth with a quiet inset surface. Discuss how much visual weight the room can hold with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP026": {
+    "name": "Dewdrop Pedestal Side Table",
+    "subtitle": "Pedestal Side Table",
+    "story": "A small droplet-shaped top on one central support. Discuss the reachable edge beside an armchair with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP027": {
+    "name": "Arc C-Shape Side Table",
+    "subtitle": "C-Shape Side Table",
+    "story": "An open-sided C profile with a small cantilevered surface. Discuss clearances around the intended seat with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP028": {
+    "name": "Reed Tall Side Table",
+    "subtitle": "Tall Side Table",
+    "story": "A slender tall table with a restrained resin accent. Discuss its height beside the intended furniture with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP029": {
+    "name": "Nocturne Bedside Table",
+    "subtitle": "Bedside Table",
+    "story": "A bedside surface with a subdued night-toned resin passage. Discuss lamp placement and everyday bedside objects with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP030": {
+    "name": "Loam Drum Side Table",
+    "subtitle": "Drum Side Table",
+    "story": "A drum-like base beneath a round material study. Discuss how the closed form relates to nearby negative space with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP031": {
+    "name": "Lumen Translucent Side Table",
+    "subtitle": "Translucent Side Table",
+    "story": "A translucent upper volume that lets surrounding colours influence its appearance. Discuss the lighting conditions around the intended position with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP032": {
+    "name": "Brook Floating-Top Side Table",
+    "subtitle": "Floating-Top Side Table",
+    "story": "A thin top held apart from its base by a visual shadow gap. Discuss the support detail behind the floating appearance with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP033": {
+    "name": "Silt Compact Bedside Table",
+    "subtitle": "Compact Bedside Table",
+    "story": "A compact bedside form with a muted resin inset. Discuss the width needed for the user’s everyday objects with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP034": {
+    "name": "Eclipse Round Side Table",
+    "subtitle": "Round Side Table",
+    "story": "A circular surface divided into timber and dark resin arcs. Discuss the orientation of the two material areas with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP036": {
+    "name": "Root Sculptural-Base Console",
+    "subtitle": "Sculptural-Base Console",
+    "story": "A sculptural root-like support beneath a narrow top. Discuss the base footprint in relation to the walkway with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Consoles"
+  },
+  "DP037": {
+    "name": "Passage Entry Console",
+    "subtitle": "Entry Console",
+    "story": "An entrance console with a clear horizontal line. Discuss doors and movement around the entrance with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Consoles"
+  },
+  "DP038": {
+    "name": "Horizon Long Console",
+    "subtitle": "Long Console",
+    "story": "A long continuous console across a generous wall. Discuss how to break the visual length without clutter with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Consoles"
+  },
+  "DP039": {
+    "name": "Meadow Floating-Effect Console",
+    "subtitle": "Floating-Effect Console",
+    "story": "A shallow console that appears separated from its support. Discuss the unresolved support and restraint requirements with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Consoles"
+  },
+  "DP040": {
+    "name": "Trace Metal-Frame Console",
+    "subtitle": "Metal-Frame Console",
+    "story": "A fine metal frame outlining an expressive top. Discuss how visible the frame should remain with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Consoles"
+  },
+  "DP041": {
+    "name": "Sienna Curved Console",
+    "subtitle": "Curved Console",
+    "story": "A curved console that softens the line of a wall. Discuss the proposed curve and actual wall geometry with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Consoles"
+  },
+  "DP042": {
+    "name": "Canyon Split-Level Console",
+    "subtitle": "Split-Level Console",
+    "story": "Two offset console levels with contrasting depths. Discuss which plane provides the primary display surface with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Consoles"
+  },
+  "DP044": {
+    "name": "Crescent Lounge Chair",
+    "subtitle": "Lounge Chair",
+    "story": "A crescent-shaped lounge seat with a resin accent. Discuss comfort, usable seating area and evaluation of the final form with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Seating"
+  },
+  "DP045": {
+    "name": "Aster Dining Chair",
+    "subtitle": "Dining Chair",
+    "story": "A dining chair whose back is conceived as a petal-like outline. Discuss seat height and clearance with the intended table with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Seating"
+  },
+  "DP046": {
+    "name": "Rill Counter Stool",
+    "subtitle": "Counter Stool",
+    "story": "A slender counter stool with a flowing material detail. Discuss the actual counter height and necessary foot support with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Seating"
+  },
+  "DP047": {
+    "name": "Flint Accent Stool",
+    "subtitle": "Accent Stool",
+    "story": "A compact faceted stool imagined as an accent object. Discuss its intended seating role and structural evaluation with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Seating"
+  },
+  "DP049": {
+    "name": "Forest Long Bench",
+    "subtitle": "Long Bench",
+    "story": "A long bench following an expressive timber line. Discuss support spacing and the proposed number of users with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Seating"
+  },
+  "DP050": {
+    "name": "Fold Sculptural Bench",
+    "subtitle": "Sculptural Bench",
+    "story": "A bench whose planes suggest a folded surface. Discuss how the sculptural folds affect practical seating with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Seating"
+  },
+  "DP052": {
+    "name": "Meridian Writing Desk",
+    "subtitle": "Writing Desk",
+    "story": "A writing desk with an offset resin line and an open working zone. Discuss the tasks and equipment the surface should accommodate with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP053": {
+    "name": "Stillpoint Study Desk",
+    "subtitle": "Study Desk",
+    "story": "A restrained study desk with one clear material focal point. Discuss the relationship between screen position and daylight with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP054": {
+    "name": "Haven Compact Desk",
+    "subtitle": "Compact Desk",
+    "story": "A compact desk intended for a quiet corner. Discuss legroom, chair movement and cable routing with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP055": {
+    "name": "Linework Executive Desk",
+    "subtitle": "Executive Desk",
+    "story": "An extended desk with a linear resin composition. Discuss the position of meeting and working zones with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP056": {
+    "name": "Terrace Studio Desk",
+    "subtitle": "Studio Desk",
+    "story": "A studio desk conceived as a sequence of working planes. Discuss which activities need separate levels with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Tables"
+  },
+  "DP058": {
+    "name": "Vertical Drop Wall Panel",
+    "subtitle": "Drop Wall Panel",
+    "story": "A tall wall panel with a falling vertical resin gesture. Discuss viewing distance and the relationship to wall height with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP059": {
+    "name": "Sequence Wall Triptych",
+    "subtitle": "Wall Triptych",
+    "story": "Three related panels read as one sequence. Discuss gaps, sequence order and the wall’s horizontal span with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP060": {
+    "name": "Strata Layered Wall Relief",
+    "subtitle": "Layered Wall Relief",
+    "story": "Layered wall relief with overlapping material strata. Discuss the side-view depth and proposed mounting method with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP061": {
+    "name": "Solstice Circular Wall Piece",
+    "subtitle": "Circular Wall Piece",
+    "story": "A circular wall composition with a quiet radial rhythm. Discuss the wall area around the disc with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP062": {
+    "name": "Tide Botanical Wall Panel",
+    "subtitle": "Botanical Wall Panel",
+    "story": "Botanical lines arranged across a large wall panel. Discuss the density of the motif from across the room with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP063": {
+    "name": "Mist Textured Wall Diptych",
+    "subtitle": "Textured Wall Diptych",
+    "story": "Two textured panels connected by a mist-toned resin direction. Discuss whether their edges align or deliberately offset with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP064": {
+    "name": "Verdure Large Wall Disc",
+    "subtitle": "Large Wall Disc",
+    "story": "An oversized disc with a broad green resin area. Discuss how the colour relates to surrounding finishes with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP065": {
+    "name": "Contour Flow Wall Relief",
+    "subtitle": "Flow Wall Relief",
+    "story": "A relief defined by flowing raised contours. Discuss the lighting angle needed to read its depth with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP066": {
+    "name": "Amber Veil Wall Panel",
+    "subtitle": "Veil Wall Panel",
+    "story": "An amber-tinted veil crossing a timber wall plane. Discuss how much transparency the design should suggest with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP067": {
+    "name": "Stonewave Oversized Wall Art",
+    "subtitle": "Oversized Wall Art",
+    "story": "An oversized wall composition with a stone-like visual rhythm. Discuss subdivision, access and mounting questions with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP068": {
+    "name": "Rivergrid Architectural Wall Set",
+    "subtitle": "Architectural Wall Set",
+    "story": "A coordinated grid of architectural wall elements. Discuss the number, spacing and arrangement of modules with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP070": {
+    "name": "Parametric Floor Vessel",
+    "subtitle": "Floor Vessel",
+    "story": "A floor vessel defined by repeating parametric ribs. Discuss the intended scale and whether it is purely sculptural with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP071": {
+    "name": "Cast Architectural Study",
+    "subtitle": "Architectural Sculpture",
+    "story": "A cast-looking architectural volume with deliberate voids. Discuss its viewing sides and unresolved fabrication approach with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP072": {
+    "name": "Form Study I Sculpture",
+    "subtitle": "Sculpture",
+    "story": "A freestanding resin study focused on a single curved gesture. Discuss the preferred front view and footprint with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP073": {
+    "name": "Form Study II Sculpture",
+    "subtitle": "Sculpture",
+    "story": "A compact sculpture balancing intersecting planes. Discuss the relationship between opaque and transparent areas with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP074": {
+    "name": "Material Column Sculpture",
+    "subtitle": "Column Sculpture",
+    "story": "A column-like study of timber beside a resin volume. Discuss the transition between materials and the desired scale with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP075": {
+    "name": "Form Study III Sculpture",
+    "subtitle": "Sculpture",
+    "story": "A third form study with an open central space. Discuss how the void should frame the background with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP076": {
+    "name": "Arc Freestanding Resin Sculpture",
+    "subtitle": "Freestanding Resin Sculpture",
+    "story": "A freestanding arc that changes silhouette as the viewer moves. Discuss stability, position and the required viewing space with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP078": {
+    "name": "Canopy Room-Divider",
+    "subtitle": "Room-Divider",
+    "story": "A room divider imagined as open vertical elements. Discuss privacy, sightlines and fixing requirements with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP079": {
+    "name": "Monsoon Feature-Wall",
+    "subtitle": "Feature-Wall",
+    "story": "A feature wall with a broad rainlike material rhythm. Discuss module sizes and the actual wall construction with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP080": {
+    "name": "Grove Resin-and-Wood Screen",
+    "subtitle": "Resin-and-Wood Screen",
+    "story": "A screen mixing timber uprights with resin accents. Discuss the relationship between separation and openness with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP081": {
+    "name": "Contour Hospitality Table Installation",
+    "subtitle": "Hospitality Table Installation",
+    "story": "A hospitality-scale table arrangement around a continuous resin direction. Discuss circulation, intended use and site-specific specification with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP082": {
+    "name": "Stillwater Lobby Art Installation",
+    "subtitle": "Lobby Art Installation",
+    "story": "A lobby art volume with a broad quiet silhouette. Discuss viewing routes and proposed placement with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP083": {
+    "name": "Bronzeleaf Display Plinth Set",
+    "subtitle": "Display Plinth Set",
+    "story": "A set of display plinths sharing bronze-toned accents. Discuss the objects to be displayed and their actual requirements with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP084": {
+    "name": "Tidal Architectural Panel Installation",
+    "subtitle": "Architectural Panel Installation",
+    "story": "Architectural panels arranged as a tidal sequence. Discuss panel joints, access and the fixing strategy with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Spatial art"
+  },
+  "DP085": {
+    "name": "Vow",
+    "subtitle": "Varmala frame",
+    "story": "A frame study that gives wedding flowers room to hold their own story. Vow imagines a quiet border around selected botanical details, with optional names and a date kept secondary. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "300 × 55 × 400 mm",
+    "category": "Flower preservation"
+  },
+  "DP091": {
+    "name": "Hourglass",
+    "subtitle": "Floral wall-clock",
+    "story": "A wall-clock study where a ring of remembered flowers surrounds a calm central face. Hourglass explores a useful object with a personal story, rather than a crowded arrangement. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "300 × 40 × 300 mm",
+    "category": "Preservation clocks"
+  },
+  "DP095": {
+    "name": "Union",
+    "subtitle": "Engagement tray",
+    "story": "A ceremony tray composed around two small focal points and a generous open border. Union considers how names, a date and a botanical accent might sit together without competing. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "280 × 200 × 25 mm",
+    "category": "Ceremony trays"
+  },
+  "DP099": {
+    "name": "Letterlight",
+    "subtitle": "Invitation frame",
+    "story": "An invitation frame that keeps the printed page at the centre of the story. Letterlight pairs a quiet surround with space for a small botanical or colour accent. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "260 × 40 × 340 mm",
+    "category": "Invitation memories"
+  },
+  "DP103": {
+    "name": "Threshold",
+    "subtitle": "Family nameplate",
+    "story": "A nameplate study that brings a personal inscription into a calm botanical composition. Threshold explores a welcoming object for a chosen place, with lettering kept clear and generous. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "320 × 25 × 160 mm",
+    "category": "Nameplates"
+  },
+  "DP107": {
+    "name": "First Chapter",
+    "subtitle": "Family keepsake",
+    "story": "A display study for a small collection of family memories. First Chapter imagines a quiet arrangement around one meaningful object, with optional wording kept modest. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "240 × 60 × 300 mm",
+    "category": "Baby keepsakes"
+  },
+  "DP086": {
+    "name": "Forever Solid-Block Varmala Keepsake",
+    "subtitle": "Solid-Block Varmala Keepsake",
+    "story": "A freestanding block composed around selected garland details. Discuss the amount and condition of botanical material with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Flower preservation"
+  },
+  "DP087": {
+    "name": "Petal Story Bouquet Frame",
+    "subtitle": "Story Bouquet Frame",
+    "story": "A bouquet frame with selected blooms given individual space. Discuss which flowers carry the strongest memory with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Flower preservation"
+  },
+  "DP088": {
+    "name": "Meadow Wedding-Flower Disc",
+    "subtitle": "Wedding-Flower Disc",
+    "story": "A circular keepsake with botanical movement around its edge. Discuss whether the centre should stay open or carry an inscription. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Flower preservation"
+  },
+  "DP089": {
+    "name": "Aster Single-Bloom Keepsake",
+    "subtitle": "Single-Bloom Keepsake",
+    "story": "A single bloom held as the focus of a compact keepsake. Discuss the flower’s suitability and the intended display format with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Flower preservation"
+  },
+  "DP090": {
+    "name": "Memory Garden Flower Shadowbox",
+    "subtitle": "Garden Flower Shadowbox",
+    "story": "A shadowbox arrangement with varied botanical depth. Discuss the balance of depth, spacing and lettering with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Flower preservation"
+  },
+  "DP092": {
+    "name": "Petal Hour Round Clock",
+    "subtitle": "Hour Round Clock",
+    "story": "A round clock face with flowers arranged around a clear centre. Discuss legibility and the still-unconfirmed clock mechanism with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Preservation clocks"
+  },
+  "DP093": {
+    "name": "Evergreen Botanical Desk Clock",
+    "subtitle": "Botanical Desk Clock",
+    "story": "A small botanical desk-clock composition. Discuss the viewing angle and required base with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Preservation clocks"
+  },
+  "DP094": {
+    "name": "Moment Preserved-Flower Clock",
+    "subtitle": "Preserved-Flower Clock",
+    "story": "A clock format that places one floral memory beside the dial. Discuss the balance of floral detail and readable time markers with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Preservation clocks"
+  },
+  "DP096": {
+    "name": "Promise Ring Platter",
+    "subtitle": "Ring Platter",
+    "story": "A ceremony platter with restrained initials. Discuss the exact inscription and intended ceremonial use with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Ceremony trays"
+  },
+  "DP097": {
+    "name": "Gather Celebration Tray",
+    "subtitle": "Celebration Tray",
+    "story": "A celebration tray that leaves room around a central arrangement. Discuss the actual use and material specification with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Ceremony trays"
+  },
+  "DP098": {
+    "name": "Bloom Paired Ring Dishes",
+    "subtitle": "Paired Ring Dishes",
+    "story": "Two related ring dishes with a shared botanical direction. Discuss the relationship between their shapes with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Ceremony trays"
+  },
+  "DP100": {
+    "name": "Our Chapter",
+    "subtitle": "Wedding-Card Block",
+    "story": "A block format holding an invitation as a visual focal point. Discuss whether a copy or an original could be considered with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Invitation memories"
+  },
+  "DP101": {
+    "name": "Together Couple-Memory Frame",
+    "subtitle": "Couple-Memory Frame",
+    "story": "A frame combining selected photographic and written memories. Discuss permission, privacy and the approved image selection with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Invitation memories"
+  },
+  "DP102": {
+    "name": "Anniversary Story Display",
+    "subtitle": "Story Display",
+    "story": "An anniversary display bringing one date and one memory together. Discuss the wording hierarchy and proposed placement with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Invitation memories"
+  },
+  "DP104": {
+    "name": "Welcome Botanical Nameplate",
+    "subtitle": "Botanical Nameplate",
+    "story": "A botanical nameplate with lettering separated from decoration. Discuss the exact name spelling and display location with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Nameplates"
+  },
+  "DP105": {
+    "name": "Blessing Pooja Display",
+    "subtitle": "Pooja Display",
+    "story": "A small display design centred on an occasion’s symbolic details. Discuss the intended function and materials to discuss with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Nameplates"
+  },
+  "DP106": {
+    "name": "Festival Memory Plaque",
+    "subtitle": "Memory Plaque",
+    "story": "A seasonal memory plaque with a restrained inscription. Discuss which occasion details should remain visible with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Nameplates"
+  },
+  "DP108": {
+    "name": "Little Bloom Memory",
+    "subtitle": "Keepsake Frame",
+    "story": "A baby-memory frame with space for a small keepsake and an initial. Discuss privacy and the suitability of irreplaceable items with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Baby keepsakes"
+  },
+  "DP109": {
+    "name": "Botanical",
+    "subtitle": "Pendant",
+    "story": "A pendant study that holds a small botanical accent within a simple outline. Botanical explores clear and softly tinted directions at an intimate scale. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "24 × 7 × 34 mm",
+    "category": "Jewellery"
+  },
+  "DP111": {
+    "name": "Thread of Light",
+    "subtitle": "Rakhi",
+    "story": "A rakhi study built around a small resin accent and a considered thread direction. Its seasonal context is a design prompt; timing, fittings and the supplied materials still need individual confirmation. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "28 × 6 × 22 mm",
+    "category": "Festive"
+  },
+  "DP112": {
+    "name": "Initial Story",
+    "subtitle": "Keychain",
+    "story": "A keychain study with a single initial as its point of focus. Initial Story explores a clear or amber resin direction with a simple outline and restrained hardware. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "32 × 8 × 50 mm",
+    "category": "Accessories"
+  },
+  "DP113": {
+    "name": "Chaptermark",
+    "subtitle": "Bookmark",
+    "story": "A bookmark study that gives a narrow botanical composition a place between chapters. Chaptermark explores clear and green directions with an optional small initial. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "30 × 3 × 145 mm",
+    "category": "Desk objects"
+  },
+  "DP114": {
+    "name": "Everyday",
+    "subtitle": "Coaster-set",
+    "story": "A set of small resin discs intended to bring a repeated colour note to a table. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "95 × 95 × 8 mm",
+    "category": "Home objects"
+  },
+  "DP120": {
+    "name": "Little Archive",
+    "subtitle": "Keepsake-box",
+    "story": "A small box that gives a chosen object a place of its own. Its optional inscription and dimensions are starting points for a gift brief, with construction and storage suitability still unresolved. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+    "dimensions": "110 × 85 × 55 mm",
+    "category": "Home objects"
+  },
+  "DP110": {
+    "name": "Petal Drop Earrings",
+    "subtitle": "Drop Earrings",
+    "story": "A pair of drop earrings with small petal-like accents. Discuss the fitting, weight and actual material composition with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Jewellery"
+  },
+  "DP115": {
+    "name": "Palm Mini Serving Tray",
+    "subtitle": "Mini Serving Tray",
+    "story": "A palm-sized tray with a quiet resin channel. Describe the intended use and ask the atelier to confirm material suitability. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Home objects"
+  },
+  "DP116": {
+    "name": "Still Form Catch-All Bowl",
+    "subtitle": "Form Catch-All Bowl",
+    "story": "A small catch-all bowl with a restrained rounded silhouette. Discuss the objects it is expected to hold with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Home objects"
+  },
+  "DP117": {
+    "name": "Twinleaf Mini Bookends",
+    "subtitle": "Mini Bookends",
+    "story": "Paired small bookends whose outlines echo two leaves. Discuss actual dimensions and support requirements with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Desk objects"
+  },
+  "DP118": {
+    "name": "Pocketworld Paperweight",
+    "subtitle": "Paperweight",
+    "story": "A small paperweight whose transparent volume frames a tiny internal landscape. Discuss the intended scale, base and actual weight with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Desk objects"
+  },
+  "DP119": {
+    "name": "Promise Mini Ring Dish",
+    "subtitle": "Mini Ring Dish",
+    "story": "A compact ring dish with an optional short inscription. Discuss lettering scale and the preferred edge shape with the atelier. Final materials, proportions and feasibility are agreed with the atelier.",
+    "dimensions": "Dimensions tailored to your brief",
+    "category": "Home objects"
+  }
+}

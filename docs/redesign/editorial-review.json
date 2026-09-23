@@ -1,0 +1,297 @@
+{
+  "status": "Source copy edited; publication and final integrated review pending",
+  "preservedOriginals": [
+    "src/lib/journal.ts",
+    "src/lib/journal-extra.ts"
+  ],
+  "records": [
+    {
+      "id": "DB001",
+      "removedObsoleteSentences": 0,
+      "title": "A Room Begins with a Statement Table",
+      "sections": 6,
+      "words": 570,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB002",
+      "removedObsoleteSentences": 0,
+      "title": "Reading the Grain: Wood and Resin in a Shared Composition",
+      "sections": 6,
+      "words": 648,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB003",
+      "removedObsoleteSentences": 0,
+      "title": "Round, Oval or Rectangular: A Dining-Table Planning Notebook",
+      "sections": 6,
+      "words": 628,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB004",
+      "removedObsoleteSentences": 0,
+      "title": "Coffee Tables as Sculptural Objects",
+      "sections": 6,
+      "words": 653,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB005",
+      "removedObsoleteSentences": 0,
+      "title": "The Quiet Role of a Side Table",
+      "sections": 6,
+      "words": 581,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB006",
+      "removedObsoleteSentences": 0,
+      "title": "An Entryway Built Around One Console",
+      "sections": 6,
+      "words": 589,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB007",
+      "removedObsoleteSentences": 0,
+      "title": "Pairing Resin Art with Warm Neutral Interiors",
+      "sections": 6,
+      "words": 650,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB008",
+      "removedObsoleteSentences": 0,
+      "title": "A Guide to Describing Your Commission",
+      "sections": 6,
+      "words": 517,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB009",
+      "removedObsoleteSentences": 0,
+      "title": "What to Include in an Architect’s Enquiry",
+      "sections": 5,
+      "words": 520,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB010",
+      "removedObsoleteSentences": 0,
+      "title": "Wall Art at Architectural Scale",
+      "sections": 6,
+      "words": 656,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB011",
+      "removedObsoleteSentences": 0,
+      "title": "From a Mood Board to a Material Conversation",
+      "sections": 6,
+      "words": 668,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB012",
+      "removedObsoleteSentences": 0,
+      "title": "Light, Transparency and the Look of Resin",
+      "sections": 6,
+      "words": 606,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB013",
+      "removedObsoleteSentences": 0,
+      "title": "Chairs, Benches and the Shape of a Room",
+      "sections": 4,
+      "words": 399,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB014",
+      "removedObsoleteSentences": 1,
+      "title": "Planning a Large Piece for Delivery Access",
+      "sections": 4,
+      "words": 375,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB015",
+      "removedObsoleteSentences": 1,
+      "title": "Why a Visualization Is Not a Final Specification",
+      "sections": 4,
+      "words": 387,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB016",
+      "removedObsoleteSentences": 1,
+      "title": "A Home Office with a Material Focal Point",
+      "sections": 5,
+      "words": 482,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB017",
+      "removedObsoleteSentences": 0,
+      "title": "A Small Vocabulary of Finishes and Forms",
+      "sections": 5,
+      "words": 509,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB018",
+      "removedObsoleteSentences": 0,
+      "title": "The Project Story Behind a Collectible Interior",
+      "sections": 4,
+      "words": 229,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB019",
+      "removedObsoleteSentences": 1,
+      "title": "Turning a Wedding Memory into a Design Brief",
+      "sections": 3,
+      "words": 244,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB020",
+      "removedObsoleteSentences": 0,
+      "title": "Choosing a Format for a Bouquet Keepsake",
+      "sections": 4,
+      "words": 406,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB021",
+      "removedObsoleteSentences": 1,
+      "title": "Names and Dates: A Personalization Proofreading Checklist",
+      "sections": 4,
+      "words": 392,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB022",
+      "removedObsoleteSentences": 0,
+      "title": "Designing a Wedding-Invitation Keepsake",
+      "sections": 3,
+      "words": 269,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB023",
+      "removedObsoleteSentences": 1,
+      "title": "A Preservation Clock as a Memory Object",
+      "sections": 3,
+      "words": 284,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB024",
+      "removedObsoleteSentences": 1,
+      "title": "Before You Send Sentimental Materials",
+      "sections": 3,
+      "words": 250,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB025",
+      "removedObsoleteSentences": 0,
+      "title": "A Family Nameplate with a Personal Story",
+      "sections": 3,
+      "words": 275,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB026",
+      "removedObsoleteSentences": 1,
+      "title": "Photographs, Privacy and Memory Art",
+      "sections": 3,
+      "words": 288,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB027",
+      "removedObsoleteSentences": 0,
+      "title": "Small Objects with a Personal Meaning",
+      "sections": 3,
+      "words": 262,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB028",
+      "removedObsoleteSentences": 0,
+      "title": "A Cohesive Gift Set without Repeating Every Detail",
+      "sections": 3,
+      "words": 308,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB029",
+      "removedObsoleteSentences": 2,
+      "title": "Personalized Resin Jewellery: Preparing Your Brief",
+      "sections": 4,
+      "words": 383,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB030",
+      "removedObsoleteSentences": 1,
+      "title": "Seasonal Gifting without the Marketplace Clutter",
+      "sections": 3,
+      "words": 251,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB031",
+      "removedObsoleteSentences": 2,
+      "title": "Corporate Gifts as Small Design Objects",
+      "sections": 3,
+      "words": 242,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB032",
+      "removedObsoleteSentences": 2,
+      "title": "Choosing Initials, Colours and a Short Message",
+      "sections": 4,
+      "words": 387,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB033",
+      "removedObsoleteSentences": 2,
+      "title": "Inside a Material-Led Design Notebook",
+      "sections": 4,
+      "words": 367,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB034",
+      "removedObsoleteSentences": 2,
+      "title": "How to Read a Product Specification",
+      "sections": 3,
+      "words": 272,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB035",
+      "removedObsoleteSentences": 2,
+      "title": "Preparing a Clear WhatsApp Enquiry",
+      "sections": 4,
+      "words": 256,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    },
+    {
+      "id": "DB036",
+      "removedObsoleteSentences": 3,
+      "title": "From Draft to Approved Design: A Client Checklist",
+      "sections": 4,
+      "words": 368,
+      "disposition": "Publishable candidate; image and final layout review remain Phase 9"
+    }
+  ]
+}

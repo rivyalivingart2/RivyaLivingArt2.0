@@ -1,8 +1,9 @@
-import {notFound} from 'next/navigation';
+import {notFound,permanentRedirect} from 'next/navigation';
 import {ApprovedExperience} from '@/components/rivya/approved-entry';
-import {requirePublicPreview,publicPreviewMetadata} from '@/lib/public-preview';
-import {isPublicWebsiteAvailable} from '@/lib/public-website';
-import {findJournalArticle} from '@/lib/journal';
+import {requirePublicPreview} from '@/lib/public-preview';
+import {routeMetadata} from '@/lib/site-metadata';
+import {publishedPage} from '@/lib/published-content';
+import {articleAliases} from '@/lib/content-model';
 type Props={params:Promise<{slug:string}>};
-export async function generateMetadata({params}:Props){if(!isPublicWebsiteAvailable(process.env))return publicPreviewMetadata('Not found');return publicPreviewMetadata(findJournalArticle((await params).slug)?.title||'Not found')}
-export default async function Page({params}:Props){await requirePublicPreview();const {slug}=await params;if(!findJournalArticle(slug))notFound();return <ApprovedExperience initialRoute={"/journal/"+slug}/>}
+export async function generateMetadata({params}:Props){const {slug}=await params;return routeMetadata('/journal/'+(articleAliases[slug]||slug));}
+export default async function Page({params}:Props){await requirePublicPreview();const {slug}=await params;if(articleAliases[slug])permanentRedirect('/journal/'+articleAliases[slug]);if(!await publishedPage('/journal/'+slug))notFound();return <ApprovedExperience initialRoute={'/journal/'+slug}/>;}

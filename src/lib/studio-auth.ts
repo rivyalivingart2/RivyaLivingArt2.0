@@ -4,12 +4,13 @@ import {promisify} from 'node:util';
 import {cookies} from 'next/headers';
 import {redirect} from 'next/navigation';
 import {studioDb} from './studio-db';
+export type StaffSession={adminId:string;role:'admin'|'editor';staffId:string|null};
 
 const derive = promisify(scrypt);
 export const sessionCookie = process.env.NODE_ENV === 'production' ? '__Host-rivya-studio' : 'rivya-studio';
 export const sessionSeconds = 8 * 60 * 60;
 export function studioConfigured() {
-  return !!process.env.DATABASE_URL && !!process.env.STUDIO_ADMIN_ID?.trim() &&
+  return /^postgres(?:ql)?:\/\//.test(process.env.DATABASE_URL||'') && !!process.env.STUDIO_ADMIN_ID?.trim() &&
     (process.env.STUDIO_ADMIN_PASSWORD?.length ?? 0) >= 16 &&
     (process.env.STUDIO_SESSION_SECRET?.length ?? 0) >= 32;
 }
@@ -40,25 +41,39 @@ export async function allowLoginAttempt() {
     RETURNING attempts`;
   return Number(rows[0].attempts) <= 10;
 }
-export async function createStudioSession() {
+export async function hashStaffPassword(password:string){const salt=randomBytes(16).toString('hex');return `${salt}:${((await derive(password,salt,64)) as Buffer).toString('hex')}`;}
+export async function authenticateStaff(id:string,password:string):Promise<StaffSession|null>{
+ if(await verifyAdmin(id,password))return {adminId:process.env.STUDIO_ADMIN_ID!,role:'admin',staffId:null};
+ const rows=await studioDb()`SELECT id,login,password_hash,role FROM rivya_staff WHERE lower(login)=lower(${id}) AND active=true`;
+ const row=rows[0];const [salt,expected]=(row?.password_hash||'00000000000000000000000000000000:'+ '0'.repeat(128)).split(':');
+ const actual=await derive(password,salt,64) as Buffer;
+ return row&&timingSafeEqual(actual,Buffer.from(expected,'hex'))?{adminId:row.login,role:row.role,staffId:row.id}:null;
+}
+export async function createStudioSession(identity?:StaffSession) {
   const sql = studioDb();
   const token = randomBytes(32).toString('base64url');
-  await sql`INSERT INTO rivya_studio_sessions (token_hash, credential_version, expires_at, idle_expires_at)
-    VALUES (${hash(token)}, ${fingerprint()}, now() + interval '8 hours', now() + interval '30 minutes')`;
+  const staffId=identity?.staffId||null;
+  const staff=staffId?await sql`SELECT version FROM rivya_staff WHERE id=${staffId}::uuid AND active=true`:[];
+  if(staffId&&!staff.length)throw new Error('Account unavailable');
+  await sql`INSERT INTO rivya_studio_sessions (token_hash, credential_version, expires_at, idle_expires_at,staff_id)
+    VALUES (${hash(token)}, ${staffId?String(staff[0].version):fingerprint()}, now() + interval '8 hours', now() + interval '30 minutes',${staffId}::uuid)`;
   await sql`DELETE FROM rivya_studio_sessions WHERE expires_at <= now() OR idle_expires_at <= now()`;
   await sql`DELETE FROM rivya_studio_login_limits WHERE key = 'owner'`;
   return token;
 }
-export async function studioSession() {
+export async function studioSession() {return studioSessionFromToken((await cookies()).get(sessionCookie)?.value);}
+export async function studioSessionFromToken(token:string|undefined) {
   if (!studioConfigured()) return null;
-  const token = (await cookies()).get(sessionCookie)?.value;
   if (!token || !/^[A-Za-z0-9_-]{43}$/.test(token)) return null;
   const sql = studioDb();
-  const rows = await sql`UPDATE rivya_studio_sessions
-    SET idle_expires_at = LEAST(expires_at, now() + interval '30 minutes')
-    WHERE token_hash = ${hash(token)} AND credential_version = ${fingerprint()}
-      AND expires_at > now() AND idle_expires_at > now() RETURNING token_hash`;
-  return rows.length ? {adminId: process.env.STUDIO_ADMIN_ID!} : null;
+  const rows = await sql`UPDATE rivya_studio_sessions s
+    SET idle_expires_at = LEAST(s.expires_at, now() + interval '30 minutes')
+    WHERE s.token_hash = ${hash(token)} AND ((s.staff_id IS NULL AND s.credential_version=${fingerprint()}) OR EXISTS(SELECT 1 FROM rivya_staff u WHERE u.id=s.staff_id AND u.active=true AND s.credential_version=u.version::text))
+      AND s.expires_at > now() AND s.idle_expires_at > now() RETURNING s.staff_id`;
+  if(!rows.length)return null;
+  if(!rows[0].staff_id)return {adminId:process.env.STUDIO_ADMIN_ID!,role:'admin',staffId:null} as StaffSession;
+  const staff=await sql`SELECT id,login,role FROM rivya_staff WHERE id=${rows[0].staff_id}::uuid AND active=true`;
+  return staff.length?{adminId:staff[0].login,role:staff[0].role,staffId:staff[0].id} as StaffSession:null;
 }
 export async function requireStudioSession() {
   let session;
