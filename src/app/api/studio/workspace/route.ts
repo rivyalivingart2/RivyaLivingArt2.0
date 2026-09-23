@@ -1,3 +1,4 @@
+import {amendmentPrefix,readAmendment,writeAmendment} from '@/lib/studio-amendment';
 import {orderReceipt} from '@/lib/order-handoff';
 import {decodeSavedBrief} from '@/lib/saved-brief';
 import {randomUUID} from 'node:crypto';
@@ -20,7 +21,7 @@ export async function GET(request:Request){
   }
   if(view==='inquiry'){
    const id=url.searchParams.get('id');if(!uuid(id))return json({error:'Invalid reference.'},400);
-   const inquiry=await sql`SELECT i.id,i.reference,i.product_snapshot AS product,i.name,i.phone,i.email,i.answers,i.notes,i.summary,i.assignee,i.follow_up AS "followUp",i.created_at AS "createdAt",o.version,to_jsonb(i) AS saved_record FROM rivya_inquiries i JOIN rivya_studio_orders o ON o.id=i.id WHERE i.id=${id}::uuid AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)`;
+   const inquiry=await sql`SELECT i.id,i.reference,i.product_snapshot AS product,i.name,i.phone,i.email,i.answers,i.notes,i.summary,i.assignee,i.follow_up AS "followUp",i.created_at AS "createdAt",o.version,o.status,to_jsonb(i) AS saved_record FROM rivya_inquiries i JOIN rivya_studio_orders o ON o.id=i.id WHERE i.id=${id}::uuid AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)`;
    if(!inquiry.length){
     if(session.role!=='admin')return json({error:'This inquiry is unavailable to your account.'},404);
     const manual=await sql`SELECT o.id,o.client,o.title,o.status,o.version,o.updated_at AS "updatedAt" FROM rivya_studio_orders o
@@ -38,7 +39,9 @@ export async function GET(request:Request){
    const receipt=await orderReceipt(saved_record);
    let savedAnswers:{label:string;value:string}[]|null=null;
    if(saved_record.contract_version===2)try{savedAnswers=decodeSavedBrief(saved_record).answers.map(a=>({label:a.label,value:String(a.value)}));}catch{/* Keep raw stored evidence intact; no fabricated summary. */}
-   return json({inquiry:{...record,requestKind:saved_record.request_kind||'product',savedAnswers,receipt},refs,notes,events});
+   const amendments=notes.flatMap(n=>{const amendment=readAmendment(n.body);return amendment?[{id:n.id,actor:n.actor,createdAt:n.createdAt,...amendment}]:[];});
+   const evidence={contractVersion:saved_record.contract_version||1,schemaId:saved_record.schema_id||null,schemaVersion:saved_record.schema_version||null,source:saved_record.submission_source||null,route:saved_record.source_route||null,consentVersion:saved_record.consent_version||null,consentAcceptedAt:saved_record.consent_accepted_at||null,referenceCount:saved_record.reference_count??null,messageState:saved_record.message_state||null};
+   return json({inquiry:{...record,requestKind:saved_record.request_kind||'product',savedAnswers,receipt,evidence},refs,notes:notes.filter(n=>!readAmendment(n.body)),amendments,events});
   }
   const staff=await sql`SELECT id,login,name,role,active,version FROM rivya_staff ORDER BY name`;
   return json({session,staff:session.role==='admin'?staff:staff.filter(s=>s.active).map(s=>({id:s.id,name:s.name,role:s.role,active:s.active}))});
@@ -81,8 +84,32 @@ export async function POST(request:Request){
    if(publish||hide){revalidatePath('/','layout');revalidatePath('/sitemap.xml');}
    return json({saved:true});
   }
+  if(body.action==='amendment'){
+   if(!uuid(body.id)||!uuid(body.requestId)||!Number.isSafeInteger(body.version)||body.version<1||typeof body.reason!=='string'||!body.reason.trim()||body.reason.length>300||typeof body.instructions!=='string'||!body.instructions.trim()||body.instructions.length>1200)return json({error:'Add the reason and revised instructions within the displayed limits.'},400);
+   const encoded=writeAmendment({requestId:body.requestId,reason:body.reason.trim(),instructions:body.instructions.trim(),orderVersion:body.version+1});
+   // Retry only the same actor's exact amendment; never change original evidence/message.
+   const prior=await sql`SELECT n.id FROM rivya_inquiry_notes n JOIN rivya_inquiries i ON i.id=n.inquiry_id WHERE i.id=${body.id}::uuid AND n.actor=${session.adminId} AND n.body=${encoded} AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)`;
+   if(prior.length)return json({saved:true,recovered:true});
+   const rows=await sql`WITH changed AS (
+    UPDATE rivya_studio_orders o SET version=version+1,updated_at=now() WHERE id=${body.id}::uuid AND version=${body.version}
+     AND EXISTS(SELECT 1 FROM rivya_inquiries i WHERE i.id=o.id AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)) RETURNING id
+   ), appended AS (
+    INSERT INTO rivya_inquiry_notes(inquiry_id,actor,body) SELECT id,${session.adminId},${encoded} FROM changed RETURNING inquiry_id
+   ), logged AS (
+    INSERT INTO rivya_audit(actor,action,entity) SELECT ${session.adminId},'inquiry:amendment',inquiry_id::text FROM appended
+   ) SELECT inquiry_id FROM appended`;
+   return rows.length?json({saved:true}):json({error:'This inquiry changed or access was reassigned. Keep your instructions, reload the record, and review before retrying.'},409);
+  }
+  if(body.action==='revoke-staff'){
+   if(session.role!=='admin')return json({error:'Administrator access required.'},403);
+   if(!uuid(body.id)||!Number.isSafeInteger(body.version)||body.id===session.staffId)return json({error:'Choose another staff account and its current version.'},400);
+   const rows=await sql`WITH changed AS(UPDATE rivya_staff SET version=version+1 WHERE id=${body.id}::uuid AND version=${body.version} RETURNING id),
+    revoked AS(DELETE FROM rivya_studio_sessions WHERE staff_id IN(SELECT id FROM changed)),
+    logged AS(INSERT INTO rivya_audit(actor,action,entity) SELECT ${session.adminId},'staff:revoke-sessions',id::text FROM changed) SELECT id FROM changed`;
+   return rows.length?json({saved:true}):json({error:'Staff access changed elsewhere. Reload before revoking sessions.'},409);
+  }
   if(body.action==='note'){
-   if(!uuid(body.id)||typeof body.note!=='string'||!body.note.trim()||body.note.length>2000)return json({error:'Write a note within 2,000 characters.'},400);
+   if(!uuid(body.id)||typeof body.note!=='string'||!body.note.trim()||body.note.length>2000||body.note.trim().startsWith(amendmentPrefix))return json({error:'Write a note within 2,000 characters.'},400);
    const rows=await sql`INSERT INTO rivya_inquiry_notes(inquiry_id,actor,body)
     SELECT id,${session.adminId},${body.note.trim()} FROM rivya_inquiries
     WHERE id=${body.id}::uuid AND (${session.role==='admin'} OR assignee=${session.staffId}::uuid) RETURNING id`;

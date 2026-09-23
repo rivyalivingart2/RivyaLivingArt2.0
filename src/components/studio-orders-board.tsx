@@ -19,7 +19,7 @@ export function OrderKanban({orders, busy, onMove, onOpen}: {
     onDrop={event => { event.preventDefault(); if (dragged) finish(dragged, stage); }}>
     <h2>{stageLabel(stage)} <span>{orders.filter(o => o.status === stage).length}</span></h2>
     {orders.filter(o => o.status === stage).map(order => <article key={order.id} className={`order-card ${dragged === order.id ? 'order-dragging' : ''}`}>
-      <div className="order-card-top"><small>{order.id.startsWith('DO') ? order.id : order.id.slice(0,8)}</small>
+      <div className="order-card-top"><small>{order.reference || (order.id.startsWith('DO') ? order.id : order.id.slice(0,8))}</small>
         <button type="button" className="order-grip" aria-label={`Drag ${order.client} to another stage`} disabled={busy}
           draggable={!busy} onDragStart={event => { event.dataTransfer.setData('text/plain', order.id); event.dataTransfer.effectAllowed = 'move'; setDragged(order.id); }}
           onDragEnd={() => { setDragged(null); setOver(null); }}
@@ -28,8 +28,8 @@ export function OrderKanban({orders, busy, onMove, onOpen}: {
           onPointerUp={event => { if (event.pointerType !== 'mouse' && dragged === order.id) { const target = document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-order-stage]')?.getAttribute('data-order-stage'); finish(order.id,target); } }}
           onPointerCancel={() => { setDragged(null); setOver(null); }}>⠿</button>
       </div>
-      {onOpen ? <button type="button" className="order-open" onClick={() => onOpen(order.id)}>{order.client}</button> : <h3>{order.client}</h3>}
-      <p>{order.title}</p>
+      {onOpen ? <button type="button" className="order-open" disabled={busy} onClick={() => onOpen(order.id)}>{order.client}</button> : <h3>{order.client}</h3>}
+      <p>{order.title}</p>{order.source&&<p><small>{order.source==='manual'?'Staff-entered order':order.requestKind==='bespoke'?'Custom request':'Product request'}<br/>{order.assigneeName||'Unassigned'}{order.followUp?' · Follow up '+order.followUp.slice(0,10):''}<br/>{order.createdAt?'Received '+order.createdAt.slice(0,10)+' · '+Math.max(0,Math.floor((Date.now()-Date.parse(order.createdAt))/86400000))+' days ago':''}{order.referenceCount!==undefined?' · '+order.referenceCount+' references':''}</small></p>}
       <label className="order-stage-select">Move to<select aria-label={`Move ${order.client} to stage`} value={order.status} disabled={busy}
         onChange={event => finish(order.id,event.target.value)}>{orderStages.map(s => <option key={s} value={s}>{stageLabel(s)}</option>)}</select></label>
     </article>)}

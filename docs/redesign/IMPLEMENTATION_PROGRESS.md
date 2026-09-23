@@ -2,67 +2,66 @@
 
 ## Current Phase
 
-Phase 6 source/schema complete. Post-Phase-6 shared database/private storage configuration saved under master revision 3.7; production release paused by owner. Next P7.1. Intake remains disabled; application QA is Phase 11.
+Phase 7 — COMPLETE at the source implementation gate under master revision 3.8. Runtime behavior and formal QA remain Phase 11. Next: P8.1.
 
 ## Current Task
 
-Shared configuration, backups, safeguards and resumable documentation complete. Phase 6 merged through PR #20 into main 8fd2cf02174ccb81c67586389d5bc958fa442b29. Follow-up branch: codex/shared-database-configuration. The local completion artifact records the final pushed SHA. See SHARED-DATA-CONFIGURATION.md and shared-data-configuration.json.
+P7.1–P7.8 source and continuity records complete and published. Implementation a82c559df04f21b85e753cad13dbed0089415605 independently matches GitHub codex/phase-7-studio. See phase-7-github-publication.json; this documentation follow-up records publication, and the local completion artifact records the final head. Main baseline is d1a50072fb42ed44612e621d64a157c7fef20455 (PR #21).
 
 ## Completed
 
-- P6.1: accepted product/bespoke payload validation, canonical hash, guest/request ownership, original-schema duplicate recovery, owned private upload identity.
-- P6.2: atomic Studio order/inquiry/immutable snapshots/consent/source/reference links/NEW event/audit; session-first serialization and version/config checks.
-- P6.3: message prepared from committed saved evidence, pinned template and destination version, bounded idempotent finalization; ready messages never overwritten.
-- P6.4: pending/ready/failed/legacy/unavailable receipt states; authorized guest/staff recovery without creating another inquiry.
-- P6.5: complete encoded message, long-link copy-first, selectable clipboard fallback and blocked-app recovery.
-- P6.6: independent Studio retrieval, typed saved answers, bespoke/null-product compatibility and saved-order actions.
-- P6.7: truthful maintenance and saved-request copy; customer still presses Send in WhatsApp.
-- P6.8: generic/default-number wiring removed; old datasets/presentations preserved with production guards; no additional WhatsApp system.
-- Existing isolated Preview credentials retrieved directly into ignored configuration under owner delegation; explicit private Blob token handling fixed.
-- Independent encrypted owner-profile backup captured and readable; additive v2/upload-identity DDL applied in one guarded Preview transaction; all original data/counts preserved.
+- P7.1 original customer brief/evidence separated from append-only staff amendments with expected-version and exact-envelope retry checks.
+- P7.2 existing saved-order Open/Copy and pending-message recovery retained without a second WhatsApp system.
+- P7.3 scoped list/board context, product/category/date/source/assignee/due filters, pagination, native Move to, optimistic stage reconciliation and conflict feedback.
+- P7.4 eight stages/history preserved; manual source distinguished; active Studio manual creation retains a request identity for recovery.
+- P7.5 explicit admin session revocation, credential-version-pinned sign-in, single-statement role/session lookup, unsaved-work and sign-in renewal recovery.
+- P7.6 durable product/form/content/media drafts, admin publication and restore-to-draft reviewed; local-copy/latest-version recovery added and saves retain acknowledged versions.
+- P7.7 intentionally inactive: no substantiated approved completed-project records; preserve fictional studies unpublished.
+- P7.8 admin filtered private export, retention inventory and existing guarded abandoned-upload cleanup; editor activity restricted to its permitted scope.
 
 ## In Progress
 
-None for this configuration checkpoint. No deployment, active migration or application server. Phase 7 has not begun.
+None. Phase 7 source checkpoint is published; no active migration, application server, real data operation or deployment.
 
 ## Pending
 
-P7.1 original-versus-amended Studio detail; remaining P7 roles, Kanban, publishing, retention/export capabilities. P8 public content/policies, P9 media/motion, P10 integrated commercial readiness, P11 formal QA/full restore, P12 final main and eligible production release.
+P8 public pages/articles/policies/forms/aliases; P9 media/motion/refinement; P10 integrated commercial/operational readiness; P11 formal QA and full restore; P12 final main and eligible production release.
 
 ## Blocked
 
-- Commercial activation: owner explicitly paused production under Vercel-only/free-only constraints; automatic Git deployment remains disabled.
-- Shared-data operation: require separate disposable database/storage for synthetic QA and full restore. Existing integration associations can overwrite manually aligned values after reconnect/rotation; recheck before release.
-- Activation prerequisites: least-privilege runtime grants, environment-specific staff credentials/session revocation, reviewed catalogue/content publication and actual business settings.
-- Recovery/privacy: full isolated restore proof, backup portability/cadence/retention/RPO/RTO, submitted-reference retention and deletion responsibilities.
-- Release: complete later phases and exact-candidate QA. Preview schema application does not establish end-to-end application correctness.
-
-Masked Preview database/Blob values and backup destination/key custody are no longer pending user-input blockers. The owner delegated both; they were handled without exposing secrets. Do not ask again or repeat the migration.
+- Vercel Hobby commercial eligibility under free-only/Vercel-only constraints; automatic deployment remains disabled.
+- Real catalogue/content/business-settings publication, least-privilege runtime grants and environment-specific staff secrets before activation.
+- Submitted-data retention/deletion responsibilities, operating timezone, portable/offsite backup custody/cadence and full isolated restore proof.
+- Final verification requires a different disposable database/private store. The configured Preview/Production shared target must not receive synthetic QA.
 
 ## Owner Input Required
 
-None for the approved shared database/private storage configuration or source publication. The owner explicitly kept free-only and paused production. Do not repeat approvals or request secrets in chat.
+None for completed Phase 7 source work or Git publication. Existing plan, product/policy/image-use and shared-database/private-storage approvals remain valid. Clarify only genuinely missing operational facts at their relevant later gates; do not request blanket reapproval or secrets in chat.
 
 ## Files Changed
 
-Shared-data guard in preview-mode.ts; isolated-mode guards in seed-reviewed-preview.mjs and studio-migrate.mjs; .env.example; shared-data decision/report/sanitized receipt, master/progress and active continuation guidance. Prior Phase 6 source remains preserved.
+Studio inquiry detail, board, staff/session feedback, editorial recovery, settings, operations/retention components; common Kanban; workspace/orders/operations/cleanup APIs; studio-auth/orders/amendment helpers. PHASE-7-STUDIO.md, decision, master/progress/coverage and active guidance. No dependency, approved asset or baseline content dataset changed.
 
 ## Database Changes
 
-Historical Phase 6 additive migration: see phase-6-preview-migration.json; do not rerun. This follow-up changed only Vercel environment configuration, with no database schema/data mutation. Both databases were backed up independently; old Production has four empty original tables, shared target has 16 tables with one budget and one existing session row and all other counts zero. Private objects: zero. Production variables now target the modern database for future deployments, and both environments have approved private reference storage access. Existing deployments retain old captured configuration.
+None in Phase 7. No DDL, customer/synthetic inquiry, staff record, reference object, draft/publication, export or deletion. Existing private note rows support future amendments through a reserved validated envelope; all original evidence stays unchanged. Phase 2/6 migrations remain applied to the shared target; never replay blindly. Shared configuration/backups are documented in SHARED-DATA-CONFIGURATION.md.
 
 ## Testing Completed
 
-Node 22 TypeScript no-emit wiring and modified maintenance-script syntax checks passed. Read-only inventories, unchanged row fingerprints, encrypted roundtrip checksums/archive readability and Vercel update acknowledgements with independent IDs/scopes readback recorded. Sensitive plaintext comparison was unavailable. No application/browser/build/lint/concurrency/upload/message/full-restore QA or synthetic records; no TESTED claim.
+Node 22.23.2 TypeScript no-emit compiler wiring; React/Next source and preservation review. No lint/build/unit/browser/device/API/concurrency/security/full-restore QA. PHASE-7-STUDIO.md contains the prepared capability matrix and Phase 11 evidence plan, not performed test results. No TESTED claim.
 
 ## Known Issues
 
-Both order write flags remain off/unset. Pending-upload recovery may require waiting five minutes for the lease; unconfirmed pending references retain quota and can block that brief until recovered or expired cleanup after 24 hours. Prove late-write/cleanup reconciliation and assess cancellation tombstones in P10/11. Changed destination/version blocks opening while retaining copy; no audited override yet. Five failed preparation attempts require staff remediation without replacing saved evidence. Legacy unknown destination remains unknown. Unsaved tab state still does not survive reload/close. Full runtime denial/concurrency and restore evidence remain deferred.
+Unsaved edits remain tab-local and can be lost on forced close/crash/browser-history navigation; copy or save deliberately. Legacy free-text notes do not have exactly-once retry; inspect the saved ledger after an uncertain response. Legacy manual-create callers without a request identity retain old behavior. Submitted-reference deletion remains unavailable until an actual retention/deletion policy exists. Runtime revocation/concurrency, draft publication across devices and all Phase 6 upload/message recovery cases require isolated Phase 11 proof.
 
 ## Next Exact Task
 
-**P7.1 — Complete Studio detail layout and immutable original versus operational amendment separation.** Read the shared-data report/decision, Phase 6 report and applied migration receipt first. Preserve all records/IDs/private references and reuse saved-order controls. Main: 8fd2cf02174ccb81c67586389d5bc958fa442b29; branch: codex/shared-database-configuration. Verify current refs before resuming. Repository: C:/Users/gonda/Documents/Codex/2026-09-23/rivyalivingart-website-studio-preview-sites-project/work/repo. Synthetic QA and restore rehearsals must use separate disposable resources, never the shared database/store.
+**P8.1 — Review/refine Atelier, process, materials/care, architects, contact and FAQ.** Then complete all Phase 8 factual public content, genuine-project, policy, route/metadata and form-scope work. Preserve Phase 7 source, original inquiry evidence, existing assets and all draft IDs.
+
+Repository: C:/Users/gonda/Documents/Codex/2026-09-23/rivyalivingart-website-studio-preview-sites-project/work/repo
+
+Branch: codex/phase-7-studio. Main baseline: d1a50072fb42ed44612e621d64a157c7fef20455. Fetch current refs before resuming; read the publication receipt and local completion artifact for final SHA.
 
 ## Resume Instruction
 
-Read AGENTS.md, PROJECT_STATE.md, docs/CODEX_WORKFLOW.md, the shared-data owner decision, master revision 3.7, this file and SHARED-DATA-CONFIGURATION.md. Continue P7.1 without restarting/reapproving. Credentials are already in ignored configuration; independent backups exist. Keep both order write flags and automatic deployment off. Production release remains paused under free-only/Vercel-only requirements. Check integration variable destinations before any later deployment.
+Read AGENTS.md, PROJECT_STATE.md, docs/CODEX_WORKFLOW.md, Phase 7 owner decision, master revision 3.8, this file, PHASE-7-STUDIO.md and SHARED-DATA-CONFIGURATION.md. Continue P8.1 without restarting or reapproving. Keep both order-write flags and automatic deployment off; no production release while free-only commercial eligibility is unresolved.
