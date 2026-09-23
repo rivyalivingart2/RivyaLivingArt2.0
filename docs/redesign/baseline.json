@@ -1,0 +1,178 @@
+{
+  "date": "2026-09-23",
+  "branch": "codex/whatsapp-order-experience",
+  "base": "f9533bbbaf3cc2843025f1a1243442b0a9d920e8",
+  "remote": "https://github.com/rivyalivingart2/RivyaLivingArt2.0.git",
+  "dirty": [
+    "M package-lock.json",
+    " M package.json",
+    " M src/app/journal/[slug]/page.tsx",
+    " M src/app/layout.tsx",
+    " M src/app/pieces/[slug]/page.tsx",
+    " M src/app/studio/layout.tsx",
+    " M src/app/studio/login/actions.ts",
+    " M src/components/rivya/approved-entry.tsx",
+    " M src/components/rivya/private-studio-entry.tsx",
+    " M src/lib/studio-auth.ts",
+    "?? scripts/whatsapp-schema.sql",
+    "?? src/app/actions/inquiry.ts",
+    "?? src/app/api/inquiry/receipt/route.ts",
+    "?? src/app/api/inquiry/reference/route.ts",
+    "?? src/app/api/inquiry/session/route.ts",
+    "?? src/app/api/studio/references/[id]/route.ts",
+    "?? src/app/api/studio/workspace/route.ts",
+    "?? src/app/pieces/[slug]/customize/page.tsx",
+    "?? src/components/shop/catalogue-browser.tsx",
+    "?? src/components/shop/editorial.tsx",
+    "?? src/components/shop/header.tsx",
+    "?? src/components/shop/order-form.tsx",
+    "?? src/components/shop/shop-site.tsx",
+    "?? src/components/shop/shop.module.css",
+    "?? src/components/studio/catalogue-editor.tsx",
+    "?? src/components/studio/inquiry-board.tsx",
+    "?? src/components/studio/staff-editor.tsx",
+    "?? src/components/studio/workspace-api.ts",
+    "?? src/components/studio/workspace.module.css",
+    "?? src/components/studio/workspace.tsx",
+    "?? src/lib/request-security.ts",
+    "?? src/lib/shop-catalogue.ts",
+    "?? src/lib/shop-editorial.ts",
+    "?? src/lib/shop-model.ts"
+  ],
+  "preservedDraftHashes": [
+    {
+      "path": "package.json",
+      "sha256": "9099b17660ed10acd4e71b9f66c2d6a6876bc0a53ee040967eacaa15bbc7a54c"
+    },
+    {
+      "path": "src/app/journal/[slug]/page.tsx",
+      "sha256": "353e6872414d64f696a0449e6bd6b1b5ef1690b7525532465d88f1b50c8d188a"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "sha256": "bbc4ca65b6eaa9921a3e79ed7cf72ca46ef70017dc7f48d16707816fb2b05d71"
+    },
+    {
+      "path": "src/app/pieces/[slug]/page.tsx",
+      "sha256": "6fcada56cf63efe8f7266dc37e7525424ac4abd39d3855993d4d08e133f80ba7"
+    },
+    {
+      "path": "src/app/studio/layout.tsx",
+      "sha256": "2b31bfeb136527e9bcab5c8b55107fb6e565f0426e723e224c9e619d444f9dcd"
+    },
+    {
+      "path": "src/app/studio/login/actions.ts",
+      "sha256": "64f00797bba9792b238cad4676e652f254da588e7c0cac2823dc170d131348e5"
+    },
+    {
+      "path": "src/components/rivya/approved-entry.tsx",
+      "sha256": "a8543a0b902532764fc811f7cc64c761df39217ad0cc38f6715b86ec1161f379"
+    },
+    {
+      "path": "src/components/rivya/private-studio-entry.tsx",
+      "sha256": "93cb793ea32d6bfdaa8d0bc48ab9b004e8936bf6ceca98a085e424960cebedb1"
+    },
+    {
+      "path": "src/lib/studio-auth.ts",
+      "sha256": "89fdf7068051fe3b50ea5a935d958e424cec5eb299cd5bec570692b04d607169"
+    },
+    {
+      "path": "scripts/whatsapp-schema.sql",
+      "sha256": "47789bb4993b0fe32201a81d298ede3ba73fe11fc9f557b7da5d8433118bbad4"
+    },
+    {
+      "path": "src/app/actions/inquiry.ts",
+      "sha256": "3aafab3b774c465e67de49eac1189fc8a9b7a922adadb7cc4114a02258da04c6"
+    },
+    {
+      "path": "src/app/api/inquiry/receipt/route.ts",
+      "sha256": "4b1521297905e35d076c9cec1932feaa42c4da82cfbd444ce6d2a8051b21b064"
+    },
+    {
+      "path": "src/app/api/inquiry/reference/route.ts",
+      "sha256": "1cd68aedf8f7a7646187ef1bc503b6d4764e0f667e7dee338fff4a69d1b8592e"
+    },
+    {
+      "path": "src/app/api/inquiry/session/route.ts",
+      "sha256": "75c2626254d3b0ece7d7e0661182505ed4494fc353f9ac9ea042636e54657f81"
+    },
+    {
+      "path": "src/app/api/studio/references/[id]/route.ts",
+      "sha256": "0fe02d3a9bd42d9b64db7395d99555576828cf6b30817060be1151a0d7a7e0e5"
+    },
+    {
+      "path": "src/app/api/studio/workspace/route.ts",
+      "sha256": "69a882fb7cd0d8ab62f969720b2da6ca76d9e8811763d9622704140fcb6f2c3e"
+    },
+    {
+      "path": "src/app/pieces/[slug]/customize/page.tsx",
+      "sha256": "4ef2a411d26cca83f52d710aecafe5802a7a813fd31e28d65916170076fe5053"
+    },
+    {
+      "path": "src/components/shop/catalogue-browser.tsx",
+      "sha256": "110c355404e721a5dbd6686f904ba84127f32b2284e9c15c6ad8a45945cca6bf"
+    },
+    {
+      "path": "src/components/shop/editorial.tsx",
+      "sha256": "97e94d9343fb2be47cfb6f4602174ae5e24ffe748dcf8ec623c81a531b92e533"
+    },
+    {
+      "path": "src/components/shop/header.tsx",
+      "sha256": "e7dc4c4a18f55f7120e2ca198d515b958830be160714e807a7e27910296859ea"
+    },
+    {
+      "path": "src/components/shop/order-form.tsx",
+      "sha256": "48a1b77bed11625740819db1883e16805b15119d6be01f6df019d1ba00dc9771"
+    },
+    {
+      "path": "src/components/shop/shop-site.tsx",
+      "sha256": "1e3ae616f864bde78ae7c071a8d04956bca8c700ed70866bda9440860a44ca02"
+    },
+    {
+      "path": "src/components/shop/shop.module.css",
+      "sha256": "df72dc8cd7653bac814bdf2194542adc4070495a2d73784bdd29b82775010702"
+    },
+    {
+      "path": "src/components/studio/catalogue-editor.tsx",
+      "sha256": "79f2a9f837b1db5ae7fc412d99765f1e49d8128ef38cc10c115e6e182121e7a4"
+    },
+    {
+      "path": "src/components/studio/inquiry-board.tsx",
+      "sha256": "d9ada3220093126d51d96cb7f37d1e016107e03f05081f93568cd82d34887081"
+    },
+    {
+      "path": "src/components/studio/staff-editor.tsx",
+      "sha256": "6913ebefaccb6d8519098f24904eb47369d87f571c4cb51863fbd4fb59755030"
+    },
+    {
+      "path": "src/components/studio/workspace-api.ts",
+      "sha256": "c1194eb0601942dcb85681ab14659cc2faf4e5cffbe61713f959bf52506ac7e1"
+    },
+    {
+      "path": "src/components/studio/workspace.module.css",
+      "sha256": "666e04381b0af437e3967acd4bbc7b0134ac29202373b3b22286048172faf26c"
+    },
+    {
+      "path": "src/components/studio/workspace.tsx",
+      "sha256": "ea35afca94d6340e88e072cabfd9e3ee4f1489f3f0e7f3822b4e7107c3295f3c"
+    },
+    {
+      "path": "src/lib/request-security.ts",
+      "sha256": "19763b65e8c1e6549dda31f849c54ee726dbbbce6204e9f558990a614c6c095f"
+    },
+    {
+      "path": "src/lib/shop-catalogue.ts",
+      "sha256": "285efb569ed9d98b2cfa6853c4786200f115cab439b902029f9bcc19da0f1f82"
+    },
+    {
+      "path": "src/lib/shop-editorial.ts",
+      "sha256": "3b84f7ef3d910fc6f256f81a214907430b10961c897e32c9b14fc0bc29e20313"
+    },
+    {
+      "path": "src/lib/shop-model.ts",
+      "sha256": "a9eb9f6abd5d0b35aac830480ed4781c05db3aaac1af2c784f379504ba58d43c"
+    }
+  ],
+  "checks": "Source inventory only; formal QA deferred to Phase 9",
+  "snapshot": "C:\\Users\\gonda\\Documents\\Codex\\2026-09-23\\continue-the-approved-rivyalivingart-redesign-read\\work\\baseline-2026-09-23"
+}

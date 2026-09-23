@@ -1,0 +1,14 @@
+'use client';
+import {useEffect,useState} from 'react';
+import {studioFetch} from './workspace-api';
+import {Dialog} from '@/components/shop/dialog';
+import s from './workspace.module.css';
+type Details={phone:string;email:string;whatsapp:string;map:string};
+export function BusinessSettingsEditor(){
+ const [data,setData]=useState<{details:Details;version:number}|null>(null),[dirty,setDirty]=useState(false),[busy,setBusy]=useState(false),[confirm,setConfirm]=useState(false),[message,setMessage]=useState('');
+ async function load(){try{setData(await studioFetch('/api/studio/settings'));setDirty(false);}catch(e){setMessage(e instanceof Error?e.message:'Settings unavailable.');}}
+ useEffect(()=>{void load();},[]);
+ useEffect(()=>{const warn=(e:BeforeUnloadEvent)=>{if(dirty){e.preventDefault();e.returnValue='';}};window.addEventListener('beforeunload',warn);return()=>window.removeEventListener('beforeunload',warn);},[dirty]);
+ async function save(){if(!data)return;setBusy(true);try{await studioFetch('/api/studio/settings',data);await load();setConfirm(false);setMessage('Business contact details published. Review any phone numbers or email addresses written inside policy and article copy.');}catch(e){setMessage(e instanceof Error?e.message:'Unable to save.');}finally{setBusy(false);}}
+ return <section className={s.panel} data-unsaved={dirty}><h2>Public contact details</h2><p>Changes update contact links, the footer and new WhatsApp handoffs. The brand name remains RivyaLivingArt.</p>{data?<form onSubmit={e=>{e.preventDefault();setConfirm(true);}}><div className={s.grid}>{([{key:'phone',label:'Phone with country code',type:'tel'},{key:'whatsapp',label:'WhatsApp number — digits only',type:'text'},{key:'email',label:'Public email',type:'email'},{key:'map',label:'Google Maps link',type:'url'}] as const).map(f=><label key={f.key}>{f.label}<input type={f.type} required value={data.details[f.key]} maxLength={f.key==='map'?500:180} onChange={e=>{setData({...data,details:{...data.details,[f.key]:e.target.value}});setDirty(true);}}/></label>)}</div><div className={s.actions}><button disabled={busy||!dirty}>Review contact changes</button><button type="button" disabled={busy} onClick={()=>{if(!dirty||window.confirm('Discard unsaved contact changes?'))void load();}}>Reload</button></div></form>:<button onClick={()=>void load()}>Load contact details</button>}<p role="status">{message}</p><Dialog open={confirm} title="Publish contact details?" onClose={()=>{if(!busy)setConfirm(false);}}><p>New inquiries will open WhatsApp for {data?.details.whatsapp}. Check that this is the atelier’s correct account.</p><p>{data?.details.phone}<br/>{data?.details.email}</p><div className={s.actions}><button disabled={busy} onClick={()=>setConfirm(false)}>Keep editing</button><button disabled={busy} onClick={()=>void save()}>Publish contact details</button></div></Dialog></section>;
+}

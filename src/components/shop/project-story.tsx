@@ -1,0 +1,7 @@
+import Image from './public-image';
+import Link from 'next/link';
+import type {RealProject} from '@/lib/project-model';
+import s from './shop.module.css';
+export function ProjectStory({project:p}:{project:RealProject}){
+ return <><header className={s.pageIntro}><span className={s.eyebrow}>A completed project</span><h1>{p.title}</h1><p>{p.description}</p></header><figure className={s.storyImage}><Image src={p.image} alt={p.imageAlt} fill priority sizes="90vw"/></figure><div className={s.readingLayout}><nav className={s.contents} aria-label="Project chapters"><a href="#context">The setting</a><a href="#brief">The brief</a><a href="#response">The response</a></nav><div className={s.prose}><section id="context"><h2>A place to begin.</h2><p>{p.context}</p></section><section id="brief"><h2>The intention.</h2><p>{p.brief}</p></section><section id="response"><h2>A considered response.</h2><p>{p.response}</p></section><dl className={s.specifications}>{p.details.map(d=><div key={d.label} style={{display:'contents'}}><dt>{d.label}</dt><dd>{d.value}</dd></div>)}</dl></div></div><section className={s.section}><div className={s.projectGallery}>{p.gallery.map(g=><figure key={g.src}><Image src={g.src} alt={g.alt} width={1200} height={900} sizes="(max-width:780px) 90vw, 45vw"/><figcaption>{g.caption}</figcaption></figure>)}</div><div className={s.actions}><Link className={s.button} href="/commission">Begin your own brief ↗</Link><Link className={s.textLink} href="/portfolio">More projects</Link></div></section></>;
+}

@@ -1,8 +1,15 @@
 import {notFound} from 'next/navigation';
-import {ApprovedExperience} from '@/components/rivya/approved-entry';
-import {requirePublicPreview,publicPreviewMetadata} from '@/lib/public-preview';
-import {isPublicWebsiteAvailable} from '@/lib/public-website';
-import {findPortfolioStudy} from '@/lib/portfolio';
-type Props={params:Promise<{slug:string}>};
-export async function generateMetadata({params}:Props){if(!isPublicWebsiteAvailable(process.env))return publicPreviewMetadata('Not found');return publicPreviewMetadata(findPortfolioStudy((await params).slug)?.title||'Not found')}
-export default async function Page({params}:Props){await requirePublicPreview();const {slug}=await params;if(!findPortfolioStudy(slug))notFound();return <ApprovedExperience initialRoute={"/portfolio/"+slug}/>}
+import {approvedProjects} from '@/lib/project-model';
+import {ProjectStory} from '@/components/shop/project-story';
+import {ShopShell} from '@/components/shop/shop-shell';
+import {requirePublicPreview} from '@/lib/public-preview';
+import {indexingEnabled,siteOrigin} from '@/lib/site-metadata';
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){
+ const {slug}=await params,p=approvedProjects.find(p=>p.slug===slug&&p.approvalRecord);
+ return p?{title:p.title,description:p.description,alternates:{canonical:siteOrigin+'/portfolio/'+slug},robots:{index:indexingEnabled(),follow:indexingEnabled()},openGraph:{images:[siteOrigin+p.image]}}:{title:'Project unavailable',robots:{index:false,follow:false}};
+}
+export default async function Page({params}:{params:Promise<{slug:string}>}){
+ await requirePublicPreview();const {slug}=await params;
+ const project=approvedProjects.find(p=>p.slug===slug&&p.approvalRecord);if(!project)notFound();
+ return <ShopShell><ProjectStory project={project}/></ShopShell>;
+}

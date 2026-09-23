@@ -1,4 +1,5 @@
-import {ApprovedExperience} from "@/components/rivya/approved-entry";
-import {requirePublicPreview,publicPreviewMetadata} from "@/lib/public-preview";
-export function generateMetadata(){return publicPreviewMetadata('Care');}
-export default async function Page(){await requirePublicPreview();return <ApprovedExperience initialRoute="/care"/>}
+import {permanentRedirect} from 'next/navigation';
+export default async function Page({searchParams}:{searchParams:Promise<Record<string,string|string[]|undefined>>}){
+ const params=new URLSearchParams();for(const [key,value]of Object.entries(await searchParams))for(const v of Array.isArray(value)?value:value?[value]:[])params.append(key,v);
+ permanentRedirect('/materials-care'+(params.size?'?'+params.toString():'')+'#care');
+}

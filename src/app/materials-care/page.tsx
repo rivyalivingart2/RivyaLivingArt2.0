@@ -1,4 +1,5 @@
+import {routeMetadata} from '@/lib/site-metadata';
 import {ApprovedExperience} from "@/components/rivya/approved-entry";
-import {requirePublicPreview,publicPreviewMetadata} from "@/lib/public-preview";
-export function generateMetadata(){return publicPreviewMetadata('Materials Care');}
+import {requirePublicPreview} from "@/lib/public-preview";
+export function generateMetadata(){return routeMetadata('/materials-care');}
 export default async function Page(){await requirePublicPreview();return <ApprovedExperience initialRoute="/materials-care"/>}

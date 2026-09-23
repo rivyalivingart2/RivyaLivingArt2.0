@@ -1,3 +1,23 @@
+# Active approved plan — Phase 1 complete
+
+The owner approved the corrected WhatsApp-only order workflow and requested Phase 1 completion and GitHub publication. Read docs/decisions/2026-09-23-revised-phase-1-approved.md first, then docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md (revision 3.1), docs/redesign/Current-State-Reconciliation.md and docs/redesign/IMPLEMENTATION_PROGRESS.md.
+
+This is the single active implementation plan. Phase 1 is complete; next is P2.1 on codex/whatsapp-order-experience. Do not request the same plan approval again or restart preserved work. New phase numbering is 0–12; readiness checks are Phase 10, formal integrated QA Phase 11 and release Phase 12.
+
+WhatsApp is only the prepared saved-order message handoff, with customer manual Send and saved-order reopen/copy controls. Database and Studio are primary records. No generic WhatsApp features, payments, carts or customer accounts. Vercel-only/free-only and the deployment hold remain; no Netlify. Main/production stay unchanged until final release gates pass.
+
+The records below are historical where superseded by the approved plan and this instruction.
+
+---
+
+# Active owner instruction — approved full redesign
+
+Current continuation: master revision 2.5; Phase 4 source complete, Phases 5–8 source/integration candidate. Owner requests GitHub publication and Vercel only; Netlify onboarding is cancelled and its source integration removed. Commercial hosting remains on hold under free-only constraints; automatic Git deployment is disabled. Read docs/redesign/CHECKPOINT.md and docs/decisions/2026-09-23-vercel-only-hold.md. Preview credentials, formal QA and release eligibility remain outstanding.
+
+Continue the approved master from `docs/redesign/CHECKPOINT.md`. Read `docs/decisions/2026-09-23-approved-full-redesign.md` first. Older appearance, frontend-only and release restrictions below are historical where superseded. Preserve source/data; final QA and eligible free hosting remain release gates.
+
+---
+
 # Latest owner override — 23 September 2026 production release
 
 The owner confirmed Studio login and explicitly authorized merging the full current update into main and deploying Vercel Production, using free services only. See `docs/decisions/2026-09-23-production-release.md`. This overrides the historical no-main/no-production and public holding-page restrictions below for this release. Keep Studio server authentication, concept/sample disclosures, separate production data, and the deferred formal-QA boundary. The actual CMS remains partially local; deployment is not full backend completion.
