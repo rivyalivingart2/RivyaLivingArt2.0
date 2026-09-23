@@ -33,3 +33,5 @@
 .inquiryDetail dt{color:var(--muted)}
 @media(max-width:540px){.toolbar label{min-width:0;width:100%}.mediaGrid{grid-template-columns:1fr}.member{padding-inline:0}.heading{overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){.workspace *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.definitionRow{display:contents}.preserveText{white-space:pre-wrap}.workspace fieldset,.inquiryDetail fieldset{border:0;padding:0;margin:0;min-width:0}.inquiryDetail fieldset label{margin:14px 0}.inquiryDetail fieldset button{margin-top:14px}.inquiryDetail [role=alert]{border-left:3px solid var(--error-text);padding:12px}.inquiryDetail details{margin-top:20px}
