@@ -16,7 +16,7 @@ export const products: Product[] = [
  ...concepts.filter(c=>!Object.values(identityMap).includes(c.id)).map(c=>({
  id:c.id,slug:c.slug,name:c.title,subtitle:c.type,category:c.tier==='LARGE'?({tables:'Tables',seating:'Seating',consoles:'Consoles',installations:'Spatial art'} as const)[c.category]:c.category,
  tier:c.tier==='LARGE'?'large' as const:c.tier==='MEDIUM'?'memory' as const:'personal' as const,
- image:c.id==='DP085'?'/media/product-hero-020-4x5.webp':c.id==='DP114'?'/media/product-hero-029-4x5.webp':'',
+ image:c.image || '',
  story:c.description,dimensions:`${c.dimensions.width} × ${c.dimensions.depth} × ${c.dimensions.height} mm`,material:c.materials.map(m=>m.label).join(' · '),
  price:c.priceType==='ON_REQUEST'?{mode:'request' as const}:{mode:c.priceType==='FIXED'?'fixed' as const:'starting' as const,amount:(c.priceAmountMinor||0)/100,sample:true as const},sample:true as const,source:c
  }))

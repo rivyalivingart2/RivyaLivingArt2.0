@@ -28,6 +28,7 @@ const bodyFont = localFont({
 export const metadata: Metadata = {
   title: { default: "RivyaLivingArt — A material-led atelier", template: "%s | RivyaLivingArt" },
   description: "A furniture-first visual study for RivyaLivingArt. Collectible design, memory art and personal objects.",
+  icons:{icon:[{url:'/brand/favicon.ico',sizes:'any'},{url:'/brand/rivyalivingart-icon-32.png',sizes:'32x32',type:'image/png'}],apple:'/brand/apple-touch-icon.png'}, manifest:'/brand/site.webmanifest',
   robots: { index: false, follow: false },
 };
 export const viewport: Viewport = { themeColor: "#101713", colorScheme: "dark" };

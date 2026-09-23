@@ -1,3 +1,4 @@
+import {suppliedProductMedia} from './supplied-media';
 import {additionalConcepts} from "./catalogue-extra";
 /** Versioned source fixtures for isolated visual preview; no inventory or offer claims. */
 export type ProductTier = "LARGE" | "MEDIUM" | "SMALL";
@@ -529,7 +530,18 @@ function withApprovedPresentation<T extends Concept>(piece:T):T {
  return {...piece,title:p.title,image:src,alt:`${p.title} — supplied AI concept visualization`,width:1122,height:1402,mediaStatus:'CONCEPT_VISUAL',gallery:[{src,alt:`${p.title} — supplied AI concept`,width:1122,height:1402,caption:'AI concept visualization · not completed work'},...(p.scene?[{src:`/media/product-scene-${p.scene}-16x9.webp`,alt:`${p.title} — imagined interior`,width:1672,height:941,caption:'AI concept interior · not a completed commission'}]:[])]};
 }
 
-export const concepts: readonly Concept[] = [...furnitureConcepts, ...memoryConcepts, ...personalConcepts].map(withApprovedPresentation);
+function withSuppliedMedia<T extends Concept>(piece:T):T {
+ const assets=suppliedProductMedia[piece.id];
+ if(!assets)return piece;
+ const primary=assets.primary;
+ const image=primary?.src || piece.image;
+ const alt=primary ? piece.title+' — owner-supplied AI concept visualization' : piece.alt;
+ const gallery=primary ? [{src:primary.src,alt,width:primary.width,height:primary.height,caption:'Supplied AI concept · not a completed commission'}] : [...piece.gallery];
+ if(assets.detail)gallery.push({src:assets.detail.src,alt:piece.title+' — matching detail, AI concept',width:assets.detail.width,height:assets.detail.height,caption:'Matching detail · AI concept visualization'});
+ return {...piece,image,alt,width:primary?.width||piece.width,height:primary?.height||piece.height,gallery,mediaStatus:image?'CONCEPT_VISUAL':'VISUAL_PENDING'};
+}
+
+export const concepts: readonly Concept[] = [...furnitureConcepts, ...memoryConcepts, ...personalConcepts].map(withApprovedPresentation).map(withSuppliedMedia);
 
 export function findConcept(slug: string): Concept | undefined {
   const alias:Record<string,string>={"river-channel":"DP001","shallow-basin":"DP013","narrow-span":"DP035","entryway-bench":"DP048","lattice-object":"DP069"};
