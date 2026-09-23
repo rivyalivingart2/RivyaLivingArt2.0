@@ -6,7 +6,7 @@ Phase 3 — COMPLETE at the shared design-system source/specification gate under
 
 ## Current Task
 
-P3.1–P3.6 complete. Publish the current Phase 3 source/document checkpoint to the owner's GitHub work branch and verify the remote SHA. The completion receipt in the task outputs records publication; check live Git refs before resuming because the owner can merge between chats.
+P3.1–P3.6 complete and published. Implementation commit 34989309c785ad72cb3f33af6db699f6951da9e1 was pushed to codex/phase-3-design-system and independently matched through GitHub remote readback; main remained 85b476df358d9fb07c9a8ec07cc478da581138f4. See phase-3-github-publication.json. A documentation-only follow-up records this receipt; the task output completion file gives the final branch head. Check live refs before resuming because the owner can merge between chats.
 
 ## Completed
 
@@ -20,7 +20,7 @@ P3.1–P3.6 complete. Publish the current Phase 3 source/document checkpoint to 
 
 ## In Progress
 
-Final Git publication/readback only. No Phase 4 implementation started.
+None. Phase 3 implementation is complete and published; P4.1 is the next work item. No Phase 4 implementation started.
 
 ## Pending
 
