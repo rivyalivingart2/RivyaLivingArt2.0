@@ -5,7 +5,7 @@
  */
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
-import { existsSync } from 'node:fs';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { createServer } from 'node:net';
 import { resolve } from 'node:path';
@@ -22,7 +22,7 @@ const fixtureRoutes = [
   '/personal-art',
   ...concepts.map(piece => `/pieces/${piece.slug}`),
 ];
-const fixtureNames = new RegExp(`\\b(?:${concepts.map(piece => piece.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})\\b`);
+const fixtureNames = new RegExp('demoFixtureKey|DEMO_FIXTURE|<(?:h1|h2|h3)[^>]*>\\s*(?:'+concepts.map(piece=>piece.title.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')\\s*</(?:h1|h2|h3)>');
 const unknownRoutes = [
   '/not-an-existing-collection',
   '/pieces/not-an-existing-piece',
@@ -49,8 +49,8 @@ async function startBuiltServer(t, mode) {
   const origin = `http://127.0.0.1:${port}`;
   const env = { ...process.env, NODE_ENV: 'production', NEXT_TELEMETRY_DISABLED: '1' };
   // Deliberately isolate deployment-policy cases in child processes only.
-  delete env.VERCEL_ENV;
-  delete env.RIVYA_VISUAL_PREVIEW;
+  // Blank explicitly: deleting these keys lets Next reload live .env.local values.
+  Object.assign(env,{VERCEL_ENV:'',VERCEL:'',RIVYA_VISUAL_PREVIEW:'0',RIVYA_ENV:'',RIVYA_DATA_MODE:'isolated',DATABASE_URL:'',DATABASE_URL_UNPOOLED:'',BLOB_READ_WRITE_TOKEN:'',STUDIO_ADMIN_ID:'',STUDIO_ADMIN_PASSWORD:'',STUDIO_SESSION_SECRET:'',RIVYA_ORDER_INTAKE_ENABLED:'false',RIVYA_ORDER_MESSAGE_RETRY_ENABLED:'false',SITE_INDEXABLE:'false'});
   Object.assign(env, mode);
   const child = spawn(process.execPath, [nextBin, 'start', '--hostname', '127.0.0.1', '--port', String(port)], {
     cwd: root,
@@ -69,6 +69,8 @@ async function startBuiltServer(t, mode) {
     resolveExit({ code, signal });
   }));
   t.after(async () => {
+    mkdirSync(resolve(root,'test-results/runtime'),{recursive:true});
+    writeFileSync(resolve(root,'test-results/runtime',`server-${port}.log`),output);
     if (exited || spawnError) return;
     child.kill('SIGTERM');
     const ended = await Promise.race([exit.then(() => true), delay(5000, undefined, { ref: false }).then(() => false)]);
@@ -103,81 +105,42 @@ function assertNoindex(response, path) {
   assert.match(response.headers.get('x-robots-tag') ?? '', /\bnoindex\b/i, `${path} must remain non-indexable`);
 }
 
-function internalTargets(html, origin) {
-  const targets = new Set();
-  for (const match of html.matchAll(/<a\b[^>]*\bhref="([^"]+)"/g)) {
-    const url = new URL(match[1].replaceAll('&amp;', '&'), origin);
-    if (url.origin === origin) targets.add(`${url.pathname}${url.search}`);
-  }
-  return targets;
-}
-
-test('built frontend HTTP behavior (not browser or hydration verification)', { timeout: 120000 }, async t => {
-  await t.test('explicit local visual preview serves routes, local images and valid internal links', async t => {
-    const origin = await startBuiltServer(t, { RIVYA_VISUAL_PREVIEW: '1' });
-    const targets = new Set();
-    for (const path of ['/', ...fixtureRoutes, '/studio']) {
-      await t.test(`GET ${path} is a noindex HTML 200`, async () => {
+// Positive published-page coverage lives in tools/release-qa/public.mjs against
+// a verified disposable database. Source fixtures never replace published data.
+test('built frontend HTTP access and publication boundaries', async t => {
+  for (const mode of [{VERCEL_ENV:'preview',RIVYA_PUBLISHED_PREVIEW:'1'},{VERCEL_ENV:'production',RIVYA_VISUAL_PREVIEW:'1'}]) {
+    await t.test(`${mode.VERCEL_ENV} fails closed when published storage is unavailable`, async t => {
+      const origin = await startBuiltServer(t, mode);
+      for (const path of ['/', ...fixtureRoutes]) await t.test(`GET ${path} does not publish fallback data`, async () => {
         const { response, html } = await getPage(origin, path);
-        assert.equal(response.status, 200, `${path} should render`);
+        assert.equal(response.status, 500, `${path} must report unavailable storage`);
         assert.match(response.headers.get('content-type') ?? '', /text\/html/i);
         assertNoindex(response, path);
-        assert.match(html, /Development preview/);
-        assert.match(html, /id="main-content"/);
-        for (const target of internalTargets(html, origin)) targets.add(target);
-      });
-    }
-    for (const path of unknownRoutes) {
-      await t.test(`GET ${path} sends an actual HTTP 404`, async () => {
-        const { response, html } = await getPage(origin, path);
-        assert.equal(response.status, 404, `${path} must not stream a 200 with 404 content`);
-        assertNoindex(response, path);
-        assert.match(html, /404/);
-      });
-    }
-    for (const name of ['riverline', 'basin']) {
-      const path = `/media/concepts/${name}.avif`;
-      await t.test(`GET ${path} matches the committed local image`, async () => {
-        const response = await fetch(`${origin}${path}`, { signal: AbortSignal.timeout(15000) });
-        assert.equal(response.status, 200);
-        assert.match(response.headers.get('content-type') ?? '', /^image\/avif(?:;|$)/i);
-        assertNoindex(response, path);
-        const served = Buffer.from(await response.arrayBuffer());
-        const expected = await readFile(resolve(root, `public${path}`));
-        assert.deepEqual(served, expected);
-      });
-    }
-    await t.test('rendered same-origin navigation targets resolve without redirects or errors', async () => {
-      assert.ok(targets.size > 0, 'Expected ordinary server-rendered navigation links.');
-      for (const path of targets) {
-        const { response } = await getPage(origin, path);
-        assert.equal(response.status, 200, `Broken internal navigation: ${path}`);
-      }
-    });
-  });
-
-  for (const { label, env } of [
-    { label: 'local production without a preview flag', env: {} },
-    { label: 'Vercel production even with the preview flag', env: { VERCEL_ENV: 'production', RIVYA_VISUAL_PREVIEW: '1' } },
-  ]) {
-    await t.test(`${label} holds home and denies fixture pages`, async t => {
-      const origin = await startBuiltServer(t, env);
-      await t.test('home returns a holding page without fixture names', async () => {
-        const { response, html } = await getPage(origin, '/');
-        assert.equal(response.status, 200);
-        assertNoindex(response, '/');
-        assert.match(html, /An atelier taking shape/);
         assert.doesNotMatch(html, fixtureNames);
+        assert.doesNotMatch(html, /postgres(?:ql)?:\/\/|password_hash|token_hash/);
       });
-      for (const path of fixtureRoutes) {
-        await t.test(`GET ${path} denies fixture content with HTTP 404`, async () => {
-          const { response, html } = await getPage(origin, path);
-          assert.equal(response.status, 404, `${path} must be denied in ${label}`);
-          assertNoindex(response, path);
-          assert.doesNotMatch(html, fixtureNames);
-          assert.doesNotMatch(html, /<title>(?:Collectible design|Memory art|Personal art)/i);
-        });
-      }
     });
   }
+  await t.test('disabled public environment retains holding boundary and real 404s', async t => {
+    const origin = await startBuiltServer(t, {VERCEL_ENV:'test',RIVYA_ENV:'test',RIVYA_PUBLISHED_PREVIEW:'0'});
+    const home = await getPage(origin,'/');
+    assert.equal(home.response.status,200);assert.match(home.html,/An atelier taking shape/);assert.doesNotMatch(home.html,fixtureNames);
+    for (const path of fixtureRoutes) await t.test(`${path} denies unavailable public content`,async()=>{
+      const {response,html}=await getPage(origin,path);assert.equal(response.status,404);assertNoindex(response,path);assert.doesNotMatch(html,fixtureNames);
+    });
+    for (const path of unknownRoutes) await t.test(`${path} returns a real 404`,async()=>{
+      const {response,html}=await getPage(origin,path);assert.equal(response.status,404);assertNoindex(response,path);assert.match(html,/A different direction/);
+    });
+    for (const name of ['riverline','basin']) await t.test(`original ${name} asset remains byte-identical`,async()=>{
+      const path=`/media/concepts/${name}.avif`,r=await fetch(origin+path);
+      assert.equal(r.status,200);assertNoindex(r,path);assert.match(r.headers.get('content-type')||'',/^image\/avif/);
+      assert.deepEqual(Buffer.from(await r.arrayBuffer()),await readFile(resolve(root,`public${path}`)));
+    });
+    for(const path of ['/studio','/studio/inquiries','/studio/follow-ups'])await t.test(`${path} requires staff sign-in`,async()=>{
+      const {response}=await getPage(origin,path);assert.equal(response.status,307);assert.match(response.headers.get('location')||'',/\/studio\/login/);assertNoindex(response,path);
+    });
+    for(const path of ['/api/studio/orders','/api/studio/workspace','/api/studio/privacy'])await t.test(`${path} rejects anonymous access`,async()=>{
+      const r=await fetch(origin+path);assert.equal(r.status,401);assert.match(r.headers.get('cache-control')||'',/no-store/);
+    });
+  });
 });

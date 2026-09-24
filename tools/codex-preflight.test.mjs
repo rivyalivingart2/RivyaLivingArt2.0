@@ -81,7 +81,7 @@ test('explicit nested app root can be inspected', t => {
 test('app root cannot escape repository through parent path or symlink', t => {
   const dir = fixture(t);
   assert.throws(() => inspectRepository(dir, '..'));
-  symlinkSync(tmpdir(), join(dir, 'escape'));
+  symlinkSync(tmpdir(), join(dir, 'escape'), process.platform === 'win32' ? 'junction' : 'dir');
   assert.throws(() => inspectRepository(dir, 'escape'));
 });
 test('CLI respects source-blocked exit code and diagnostic report-only mode', t => {

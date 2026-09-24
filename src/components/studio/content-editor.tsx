@@ -12,7 +12,7 @@ export function ContentEditor({admin}:{admin:boolean}){
  const [media,setMedia]=useState<PublicMedia[]>([]);
  const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[message,setMessage]=useState('Loading content…'),[busy,setBusy]=useState(false),[dirty,setDirty]=useState(false),[preview,setPreview]=useState(false);
  async function load(id?:string){const data=await studioFetch('/api/studio/content');setEntries(data.entries);if(id)setEntry(data.entries.find((e:Entry)=>e.document.id===id)||null);}
- useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia})=>e.media))).catch(()=>{});void load().then(()=>setMessage('Drafts are shared. Public pages use only a published revision.')).catch(e=>setMessage(e.message));},[]);
+ useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia})=>e.media))).catch(()=>{});void studioFetch('/api/studio/content').then(data=>{setEntries(data.entries);setMessage('Drafts are shared. Public pages use only a published revision.');}).catch(e=>setMessage(e.message));},[]);
  useEffect(()=>{const warn=(e:BeforeUnloadEvent)=>{if(dirty){e.preventDefault();e.returnValue='';}};window.addEventListener('beforeunload',warn);return()=>window.removeEventListener('beforeunload',warn);},[dirty]);
  function choose(next:Entry){if(dirty&&!window.confirm('Discard unsaved edits to this document?'))return;setEntry(structuredClone(next));setDirty(false);setPreview(false);}
  function change(patch:Partial<ContentDocument>){setEntry(e=>e?{...e,document:{...e.document,...patch}}:e);setDirty(true);}

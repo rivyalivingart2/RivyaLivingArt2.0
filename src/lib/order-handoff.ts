@@ -45,7 +45,10 @@ export async function orderReceipt(row:Record<string,unknown>):Promise<OrderRece
   base.brief={title:brief.definition.kind==='product'?brief.definition.product.name:brief.definition.title,...brief.customer,notes:brief.notes,referenceCount:brief.referenceCount,answers:brief.answers.map(a=>({label:a.label,value:String(a.value)}))};
   if(state!=='handoff_ready'&&state!=='handoff_pending'&&state!=='handoff_failed')return base;
   base.state=state;base.retryAvailable=state!=='handoff_ready'&&messageRetryEnabled()&&Number(row.message_attempts)<maxMessageAttempts;
-  if(state!=='handoff_ready')return {...base,reason:'Your inquiry and references are saved in Studio. The WhatsApp message is not ready yet. Retry preparing it here; do not submit another inquiry.'};
+  if(state!=='handoff_ready'){
+   const exhausted=Number(row.message_attempts)>=maxMessageAttempts;
+   return {...base,recoveryRequired:exhausted,reason:exhausted?'Your inquiry and references are saved. Message preparation needs administrator review after repeated failures. Contact the atelier by phone or email with your reference; do not submit another inquiry.':'Your inquiry and references are saved in Studio. The WhatsApp message is not ready yet. Retry preparing it here; do not submit another inquiry.'};
+  }
   if(typeof row.summary!=='string'||!row.summary||!row.message_finalized_at)return {...base,state:'unavailable',retryAvailable:false};
   base.summary=row.summary;
   const business=await studioDb()`SELECT details,version FROM rivya_business_settings WHERE id=1`;

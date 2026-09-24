@@ -1,5 +1,5 @@
 'use client';
-import {createContext,useContext,useEffect,useRef,useState,type ReactNode} from 'react';
+import {useSyncExternalStore,createContext,useContext,useEffect,useRef,useState,type ReactNode} from 'react';
 export type DemoRecord={id:string;title:string;kind:string;refs:string[];batch:string;route?:string|null};
 export type LocalRevision={revision:number;data:string;at:string;status:'DRAFT'|'IN_REVIEW'|'APPROVED'|'ARCHIVED'};
 export type DemoState={schemaVersion:1;removed:string[];retained:string[];drafts:Record<string,LocalRevision>;history:Record<string,LocalRevision[]>;published:Record<string,string>;hiddenMenus:string[];events:{id:string;at:string;action:string;target:string}[]};
@@ -39,14 +39,19 @@ export function planDemoRemoval(records:DemoRecord[],state:DemoState,ids:string[
 
 type DemoContextType={state:DemoState;records:DemoRecord[];ready:boolean;storage:boolean;notice:string;save:(id:string,data:unknown,expectedRevision?:number)=>SaveResult;saveMany:(items:{id:string;data:unknown;expectedRevision:number}[])=>SaveResult;transition:(id:string,action:'submit'|'approve'|'publish'|'unpublish'|'archive')=>void;retain:(id:string)=>void;planRemoval:(ids:string[])=>RemovalPlan;remove:(ids:string[])=>RemovalPlan;restore:(id:string,revision:number)=>void;reinstall:()=>void;menu:(id:string)=>void;visible:(id:string)=>boolean};
 const Context=createContext<DemoContextType|null>(null);
-export function DemoProvider({children,records}:{children:ReactNode;records:DemoRecord[]}){
- const [state,setState]=useState<DemoState>(empty),[ready,setReady]=useState(false),[storage,setStorage]=useState(true),[notice,setNotice]=useState('');
- const current=useRef(state),lastRaw=useRef<string|null>(null),loaded=useRef(false),canWrite=useRef(true);
+const subscribeHydration=()=>()=>{};
+export function DemoProvider(props:{children:ReactNode;records:DemoRecord[]}){
+ const ready=useSyncExternalStore(subscribeHydration,()=>true,()=>false);
+ return ready?<HydratedDemoProvider {...props}/>:<p role="status">Opening the local design preview…</p>;
+}
+function HydratedDemoProvider({children,records}:{children:ReactNode;records:DemoRecord[]}){
+ const [initial]=useState(()=>{try{const raw=localStorage.getItem(KEY),state=decode(raw,id=>records.some(r=>r.id===id)||localDocumentId(id)||/^FORM-(DP\d{3}|GENERAL)$/.test(id));state.removed=[...new Set([...state.removed,...strings(JSON.parse(localStorage.getItem(KEY+':removed')||'[]'))])];return {state,raw,storage:true,notice:''};}catch{return {state:empty,raw:null,storage:false,notice:'Saved browser data could not be read. It has not been overwritten. Export current edits before clearing storage.'};}});
+ const [state,setState]=useState<DemoState>(initial.state),[storage,setStorage]=useState(initial.storage),[notice,setNotice]=useState(initial.notice);const ready=true;
+ const current=useRef(state),lastRaw=useRef<string|null>(initial.raw),loaded=useRef(true),canWrite=useRef(initial.storage);
  const allowed=(id:string)=>records.some(r=>r.id===id)||localDocumentId(id)||/^FORM-(DP\d{3}|GENERAL)$/.test(id);
  const adopt=(next:DemoState)=>{current.current=next;setState(next)};
  useEffect(()=>{
   const hydrate=()=>{let removed:string[]=[];try{removed=strings(JSON.parse(localStorage.getItem(KEY+':removed')||'[]'));const raw=localStorage.getItem(KEY),next=decode(raw,allowed);lastRaw.current=raw;next.removed=[...new Set([...next.removed,...removed])];adopt(next);canWrite.current=true;setStorage(true)}catch{adopt({...current.current,removed:[...new Set([...current.current.removed,...removed])]});canWrite.current=false;setStorage(false);setNotice('Saved browser data could not be read. It has not been overwritten. Export any current edits before clearing storage.')}};
-  hydrate();loaded.current=true;setReady(true);
   const external=(event:StorageEvent)=>{if(event.key===KEY||event.key===KEY+':removed'){hydrate();setNotice('Another tab changed this browser demo. Open editors keep their input; stale draft saves are rejected.')}};
   window.addEventListener('storage',external);return()=>window.removeEventListener('storage',external);
  // The source registry is immutable for this mounted provider.

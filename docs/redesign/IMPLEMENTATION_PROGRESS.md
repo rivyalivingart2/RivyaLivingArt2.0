@@ -1,3 +1,29 @@
+# Active owner instruction — publish current work; further development and testing stopped
+
+24 September 2026. Read docs/decisions/2026-09-24-publish-current-stop-testing.md. The owner explicitly requested completing current publication to GitHub main and Vercel Preview/Production, stopping new work and testing, and documenting all pending work. This supersedes the earlier all-findings-closed release hold for this current deployment. Do not resume the pending development or test programme without a new owner request.
+
+Read docs/redesign/PENDING-WORK.md for the complete current status and docs/redesign/PHASE-11-CHECKPOINT.md for continuation. Master revision 3.13 records this scope change; Phase 11 is not fully complete. Existing completed work, restricted runtime configuration, retention-control schema and deliberate approved public-content publication are being released. Preview/Production share the authorized database/private store with independent session secrets. WhatsApp remains saved-order Open/Copy plus manual customer Send only. Search indexing remains off; automatic Git deployment remains off.
+
+No new purchases, customer accounts, payments, Netlify, WhatsApp automation or Sheets synchronization. Preserve original assets, drafts, data, revision history, secrets and private backups. The older checkpoint text below is historical where superseded.
+
+---
+
+# Active checkpoint — Phase 11 verification in progress
+
+The owner authorized completing all remaining work, normal GitHub main publication and intentional Vercel Preview/Production release after the applicable checks. Read docs/decisions/2026-09-24-pro-final-release.md and 2026-09-24-operating-policies.md. The correct Vercel team now has Pro; the earlier free-only/Hobby hold is superseded. No additional paid service is authorized.
+
+Continue codex/final-verification-release from merged main fc6d3fe (PR #25). Read docs/redesign/PHASE-11-CHECKPOINT.md for exact current evidence and pending tasks. Master revision 3.12 is an in-progress verification update, not a release certificate. No repeat plan, asset, shared database or shared private-store approval is needed.
+
+172 unit checks, 12 preflight checks, lint/typecheck/build and the first isolated browser order/Studio tests have passed at their recorded intermediate source; later edits require rerun. QA uses separate database rivya_qa_20260924 and private store store_maHrpDDHXPR93N0w, with independent credentials. The normal Preview/Production shared resources must never receive synthetic tests. QA now has 120 published products, 47 content entries including 36 articles and 131 media entries. Shared-resource publication remains pending.
+
+The encrypted database archive was uploaded to an owner-only Drive folder and restored into isolated resources with matching counts/digests for 16 tables. Recovery-key password-manager/physical custody, scheduled operations, reference/remote restore and complete privacy lifecycle remain unverified. Do not mark these achieved because the owner delegated them. Current live runtime grants, full device/security/accessibility/performance/media/license QA and exact deployment checks remain release gates.
+
+WhatsApp remains saved-order Open/Copy followed by manual customer Send only. No bots, generic chat, notifications, payments, customer accounts, Sheets synchronization or Netlify. Preserve original assets, drafts, revisions and data. Do not rerun historical migrations or wholesale historical publication candidates. Keep automatic Git deployment disabled and normal order flags off until their release checks pass. No new main merge or deployment has occurred in Phase 11.
+
+Older records below are historical where superseded.
+
+---
+
 # RivyaLivingArt Implementation Progress
 
 ## Current Phase

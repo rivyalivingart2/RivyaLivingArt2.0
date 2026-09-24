@@ -20,6 +20,7 @@
 .light :focus-visible{outline-color:var(--navy)}
 .header{height:var(--header-height);gap:20px;padding-inline:var(--gutter);position:sticky;top:0;border-bottom-color:var(--control-border)}
 .header .brand,.header .brand img{width:184px;height:52px}
+.header .brand{background:var(--ivory);border-radius:2px;padding:4px 8px;box-sizing:content-box}
 .nav{gap:clamp(16px,1.65vw,26px)}
 .nav>a,.collectionMenu summary{font-size:16px;min-height:44px;display:flex;align-items:center;gap:5px}
 .nav a[aria-current=page],.collectionMenu summary[data-active=true]{text-decoration:underline;text-underline-offset:8px}
@@ -226,3 +227,4 @@
 }
 @media(max-width:480px){.footerTop{grid-template-columns:1fr}.formAside:has(.detailVisual){grid-template-columns:90px minmax(0,1fr)}.site .formAside h2{font-size:32px}}
 @media(max-width:390px){.articleCardImage{aspect-ratio:16/10}.dialog .galleryControls button{flex:1}.stepper{flex-wrap:wrap}.stepper li{min-width:75px}}
+@media(max-width:780px){.strip{flex-wrap:wrap;white-space:normal;overflow:visible}.strip>span{flex:1 1 12ch}}

@@ -6,5 +6,6 @@ export function isProductionWebsite(env: Readonly<Record<string, string | undefi
   return env.VERCEL_ENV ? env.VERCEL_ENV === "production" : env.RIVYA_ENV === "production";
 }
 export function isPublicWebsiteAvailable(env: Readonly<Record<string, string | undefined>>): boolean {
-  return isProductionWebsite(env) || isVisualPreviewAllowed(env);
+  const publishedPreview = env.VERCEL_ENV === "preview" && env.RIVYA_PUBLISHED_PREVIEW === "1";
+  return isProductionWebsite(env) || publishedPreview || isVisualPreviewAllowed(env);
 }

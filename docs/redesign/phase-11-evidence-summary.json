@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-24",
+  "status": "Partial verification; owner stopped further development and testing before current-work publication",
+  "sourceBase": "fc6d3fe",
+  "recordedChecks": {
+    "unitPassed": 178,
+    "httpPassed": 386,
+    "earlierPreflightPassed": 12,
+    "publishedRoutes": 276,
+    "automatedAccessibilityLayoutCases": 28,
+    "widths": [1440, 768, 390, 320],
+    "findingsInThoseCases": 0,
+    "lintTypesBuild": "Passed at recorded local candidate",
+    "orderUploadReceiptStudio": "Passed in isolated QA",
+    "assignmentRevocationConcurrencyRecovery": "Passed in isolated QA",
+    "maintenanceRetry": "Passed in isolated QA",
+    "retentionAndStudioRoutes": "Passed in isolated QA",
+    "prohibitedRuntimeActionsDenied": 8
+  },
+  "sharedPublication": {
+    "candidateDigest": "0e58444906dbd10cb6dd595344b9dc6303f319e9c3e5773f4b39f400ad877f64",
+    "products": 120,
+    "content": 47,
+    "articles": 36,
+    "media": 131,
+    "businessSettings": 1,
+    "existingRecordsPreserved": true,
+    "syntheticSharedRecords": 0
+  },
+  "sharedPreparation": {
+    "privacySchemaApplied": true,
+    "runtimeRole": "rivya_runtime_20260924",
+    "ownerCapabilities": false,
+    "truncateOrders": false,
+    "deleteHistory": false,
+    "independentSessionSecretsConfigured": true,
+    "sharedPrivateStoragePreserved": true
+  },
+  "recovery": {
+    "encryptedBeforeUpload": true,
+    "ownerOnlyDrivePermissions": true,
+    "remoteDownloadAuthenticated": true,
+    "databaseTablesRestored": 16,
+    "countsAndDigestsMatched": true,
+    "privateReferenceFilesRestored": 2,
+    "restoredSessionsRevoked": true,
+    "windowsCredentialManagerReadback": true,
+    "independentPasswordManagerVerified": false,
+    "physicalOfflineCopyVerified": false,
+    "dailyBackupAutomation": "rivya-daily-encrypted-backup",
+    "dailySchedule": "02:00 Asia/Kolkata; requires awake connected computer",
+    "scheduledRunObserved": false,
+    "fullServiceRecoveryTargetProven": false
+  },
+  "pendingWork": "PENDING-WORK.md",
+  "limitations": "Deployment publication and provider READY/commit readback do not certify full Phase 11 completion. No new test programme after owner stop instruction."
+}

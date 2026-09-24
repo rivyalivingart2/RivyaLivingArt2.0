@@ -83,10 +83,10 @@ export const suppliedProductMedia: Record<string,{primary?:SuppliedMedia;detail?
   },
   "DP108": {
     "primary": {
-      "src": "/media/generated/dp108-little-bloom-memory-frame-portrait-4x5.webp",
+      "src": "/media/generated/dp106-festival-memory-plaque-portrait-4x5.webp",
       "width": 2048,
       "height": 2560,
-      "bytes": 98252
+      "bytes": 158910
     }
   },
   "DP109": {
@@ -99,18 +99,18 @@ export const suppliedProductMedia: Record<string,{primary?:SuppliedMedia;detail?
   },
   "DP106": {
     "primary": {
-      "src": "/media/generated/dp106-festival-memory-plaque-portrait-4x5.webp",
-      "width": 2048,
-      "height": 2560,
-      "bytes": 158910
-    }
-  },
-  "DP105": {
-    "primary": {
       "src": "/media/generated/dp105-blessing-pooja-display-portrait-4x5.webp",
       "width": 2048,
       "height": 2560,
       "bytes": 148098
+    }
+  },
+  "DP105": {
+    "primary": {
+      "src": "/media/generated/dp108-little-bloom-memory-frame-portrait-4x5.webp",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 98252
     }
   },
   "DP104": {
@@ -123,18 +123,18 @@ export const suppliedProductMedia: Record<string,{primary?:SuppliedMedia;detail?
   },
   "DP102": {
     "primary": {
-      "src": "/media/generated/dp102-anniversary-story-display-portrait-4x5.webp",
-      "width": 2048,
-      "height": 2560,
-      "bytes": 155196
-    }
-  },
-  "DP101": {
-    "primary": {
       "src": "/media/generated/dp101-together-couple-memory-frame-portrait-4x5.webp",
       "width": 2048,
       "height": 2560,
       "bytes": 89366
+    }
+  },
+  "DP101": {
+    "primary": {
+      "src": "/media/generated/dp102-anniversary-story-display-portrait-4x5.webp",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 155196
     }
   },
   "DP100": {
@@ -163,29 +163,21 @@ export const suppliedProductMedia: Record<string,{primary?:SuppliedMedia;detail?
   },
   "DP096": {
     "primary": {
-      "src": "/media/generated/dp096-promise-ring-platter-portrait-4x5.webp",
-      "width": 2048,
-      "height": 2560,
-      "bytes": 169462
-    }
-  },
-  "DP094": {
-    "primary": {
       "src": "/media/generated/dp094-moment-preserved-flower-clock-portrait-4x5.webp",
       "width": 2048,
       "height": 2560,
       "bytes": 149622
     }
   },
-  "DP093": {
+  "DP094": {
     "primary": {
-      "src": "/media/generated/dp093-evergreen-botanical-desk-clock-portrait-4x5.webp",
+      "src": "/media/generated/dp096-promise-ring-platter-portrait-4x5.webp",
       "width": 2048,
       "height": 2560,
-      "bytes": 227730
+      "bytes": 169462
     }
   },
-  "DP092": {
+  "DP093": {
     "primary": {
       "src": "/media/generated/dp092-petal-hour-round-clock-portrait-4x5.webp",
       "width": 2048,
@@ -193,7 +185,7 @@ export const suppliedProductMedia: Record<string,{primary?:SuppliedMedia;detail?
       "bytes": 86216
     }
   },
-  "DP090": {
+  "DP092": {
     "primary": {
       "src": "/media/generated/dp090-memory-garden-flower-shadowbox-portrait-4x5.webp",
       "width": 2048,
@@ -201,12 +193,20 @@ export const suppliedProductMedia: Record<string,{primary?:SuppliedMedia;detail?
       "bytes": 163548
     }
   },
-  "DP089": {
+  "DP090": {
     "primary": {
       "src": "/media/generated/dp089-aster-single-bloom-keepsake-portrait-4x5.webp",
       "width": 2048,
       "height": 2560,
       "bytes": 127982
+    }
+  },
+  "DP089": {
+    "primary": {
+      "src": "/media/generated/dp087-petal-story-bouquet-frame-portrait-4x5.webp",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 144528
     }
   },
   "DP088": {
@@ -219,26 +219,26 @@ export const suppliedProductMedia: Record<string,{primary?:SuppliedMedia;detail?
   },
   "DP087": {
     "primary": {
-      "src": "/media/generated/dp087-petal-story-bouquet-frame-portrait-4x5.webp",
+      "src": "/media/generated/dp093-evergreen-botanical-desk-clock-portrait-4x5.webp",
       "width": 2048,
       "height": 2560,
-      "bytes": 144528
+      "bytes": 227730
     }
   },
   "DP058": {
-    "primary": {
-      "src": "/media/generated/dp058-vertical-drop-wall-panel-portrait-4x5.webp",
-      "width": 2048,
-      "height": 2560,
-      "bytes": 226000
-    }
-  },
-  "DP041": {
     "primary": {
       "src": "/media/generated/dp041-sienna-curved-console-portrait-4x5.webp",
       "width": 2048,
       "height": 2560,
       "bytes": 204652
+    }
+  },
+  "DP041": {
+    "primary": {
+      "src": "/media/generated/dp058-vertical-drop-wall-panel-portrait-4x5.webp",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 226000
     }
   },
   "DP074": {
@@ -299,10 +299,10 @@ export const suppliedProductMedia: Record<string,{primary?:SuppliedMedia;detail?
   },
   "DP084": {
     "primary": {
-      "src": "/media/generated/dp084-tidal-architectural-panel-installation-portrait-4x5.webp",
+      "src": "/media/generated/dp083-bronzeleaf-display-plinth-set-portrait-4x5.webp",
       "width": 1122,
       "height": 1402,
-      "bytes": 150234
+      "bytes": 154868
     }
   },
   "DP086": {
@@ -315,10 +315,10 @@ export const suppliedProductMedia: Record<string,{primary?:SuppliedMedia;detail?
   },
   "DP083": {
     "primary": {
-      "src": "/media/generated/dp083-bronzeleaf-display-plinth-set-portrait-4x5.webp",
+      "src": "/media/generated/dp084-tidal-architectural-panel-installation-portrait-4x5.webp",
       "width": 1122,
       "height": 1402,
-      "bytes": 154868
+      "bytes": 150234
     }
   },
   "DP082": {

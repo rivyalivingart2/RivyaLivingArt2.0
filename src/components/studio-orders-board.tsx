@@ -44,13 +44,13 @@ export function StudioOrdersBoard() {
   const [message, setMessage] = useState(''), [query, setQuery] = useState('');
   const [client, setClient] = useState(''), [title, setTitle] = useState('');
   const [truncated, setTruncated] = useState(false);
-  const load = useCallback(async (signal?: AbortSignal) => {
-    const response = await fetch('/api/studio/orders',{cache:'no-store',signal});
+  const load = useCallback((signal?: AbortSignal) => fetch('/api/studio/orders',{cache:'no-store',signal}).then(async response=>{
     const result = await response.json();
-    if (response.status === 401) { window.location.assign('/studio/login'); return; }
-    if (!response.ok) throw new Error(result.error || 'Unable to load orders.');
-    setOrders(result.orders); setTruncated(result.truncated); setReady(true);
-  },[]);
+    if(signal?.aborted)return;
+    if(response.status===401){window.location.assign('/studio/login');return;}
+    if(!response.ok)throw new Error(result.error||'Unable to load orders.');
+    setOrders(result.orders);setTruncated(result.hasMore);setReady(true);
+  }),[]);
   useEffect(() => {
     const controller = new AbortController();
     void load(controller.signal).catch(error => { if (!controller.signal.aborted) setMessage(error.message); });

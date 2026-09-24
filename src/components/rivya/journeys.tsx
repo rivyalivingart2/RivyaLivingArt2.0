@@ -1,4 +1,5 @@
 'use client';
+import {useStoredDraft} from '@/lib/rivya/use-stored-draft';
 import {useCatalogProducts} from '@/lib/rivya/demo-catalog';
 import {useDemo} from '@/lib/rivya/demo-state';
 import {useEffect,useState} from 'react';
@@ -40,9 +41,7 @@ function ArtBriefForm({kind,nav,search}:{kind:'memory'|'personal'|'architect';na
  const memory=kind==='memory',architect=kind==='architect',pool=products.filter(p=>p.tier===(architect?'large':kind));
  const params=new URLSearchParams(search),chosen=pool.find(p=>p.slug===params.get('piece'))||pool[0];
  const defaults:SampleBrief={piece:chosen.slug,occasion:memory?'Sample wedding':architect?'Sample residence':'Sample birthday',option:params.get('option')||'Discuss a direction',quantity:params.get('quantity')||'1',names:'Demo Pair A & B',date:'Sample date — to be discussed',message:'A small thought, just for you',reference:'Supplied concept only',proof:false};
- const [draft,setDraft]=useState(defaults),[step,setStep]=useState(0),[error,setError]=useState(''),[ready,setReady]=useState(false),[stored,setStored]=useState(true),[done,setDone]=useState(false),[failure,setFailure]=useState(false);
- useEffect(()=>{try{const old=JSON.parse(localStorage.getItem(`rivya-sites-brief-${kind}`)||'null');if(old&&typeof old==='object'){const safe={...defaults};for(const k of Object.keys(defaults) as (keyof SampleBrief)[])if(typeof old[k]===typeof defaults[k]&&String(old[k]).length<180)Object.assign(safe,{[k]:old[k]});if(pool.some(p=>p.slug===safe.piece)&&!params.has("piece"))setDraft(safe)}}catch{setStored(false)}setReady(true)},[]);
- useEffect(()=>{if(ready)try{localStorage.setItem(`rivya-sites-brief-${kind}`,JSON.stringify(draft))}catch{setStored(false)}},[draft,ready,kind]);
+ const [draft,setDraft,stored]=useStoredDraft<SampleBrief>('rivya-sites-brief-'+kind,defaults,saved=>pool.some(p=>p.slug===saved.piece)&&!params.has('piece')?saved:defaults);const [step,setStep]=useState(0),[error,setError]=useState(''),[done,setDone]=useState(false),[failure,setFailure]=useState(false);const ready=true;
  const p=pool.find(p=>p.slug===draft.piece)||chosen;
  const update=(k:keyof SampleBrief,v:string|boolean)=>setDraft(d=>({...d,[k]:v,proof:k==='proof'?Boolean(v):false}));
  const submit=()=>{if(step===1&&!architect&&!memory&&(!Number.isInteger(Number(draft.quantity))||Number(draft.quantity)<1||Number(draft.quantity)>(p.source?.tier==='SMALL'?p.source.personal.quantity.max:12))){setError('Enter a whole-number quantity within this piece’s sample range.');return}if(step===3&&!draft.proof){setError('Review the synthetic choices and acknowledge the sample summary.');return}setError('');if(step<3)setStep(step+1);else if(failure)setError('Demonstration: summary preparation failed. Your choices are retained. Turn off the failure example and retry.');else setDone(true)};

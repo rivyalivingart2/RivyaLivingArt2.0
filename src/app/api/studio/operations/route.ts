@@ -25,7 +25,7 @@ export async function GET(request:Request){
    sql`SELECT o.status,count(*)::integer AS count FROM rivya_studio_orders o LEFT JOIN rivya_inquiries i ON i.id=o.id
     WHERE ${session.role==='admin'} OR i.assignee=${session.staffId}::uuid GROUP BY o.status`,
    sql`SELECT i.id,i.reference,i.name,i.follow_up AS "followUp",o.title,o.status FROM rivya_inquiries i JOIN rivya_studio_orders o ON o.id=i.id
-    WHERE (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid) AND i.follow_up<=CURRENT_DATE AND o.status NOT IN ('COMPLETED','CLOSED') ORDER BY i.follow_up LIMIT 30`,
+    WHERE (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid) AND i.follow_up<=(CURRENT_TIMESTAMP AT TIME ZONE 'Asia/Kolkata')::date AND o.status NOT IN ('COMPLETED','CLOSED') ORDER BY i.follow_up LIMIT 30`,
    sql`SELECT o.id,o.client,o.title,o.status,o.updated_at AS "updatedAt",i.reference FROM rivya_studio_orders o LEFT JOIN rivya_inquiries i ON i.id=o.id
     WHERE ${session.role==='admin'} OR i.assignee=${session.staffId}::uuid ORDER BY o.updated_at DESC LIMIT 10`
   ]);
@@ -42,14 +42,14 @@ export async function POST(request:Request){
   const from=body.from||'',to=body.to||'',stage=body.stage||'',source=body.source||'';
   const validDate=(v:unknown)=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v)&&Number.isFinite(Date.parse(v))&&new Date(v).toISOString().slice(0,10)===v;
   if(from&&!validDate(from)||to&&!validDate(to)||from&&to&&from>to||stage&&!isOrderStage(stage)||!['','website','manual'].includes(source))return json({error:'Check the export date range, source and stage.'},400);
-  const rows=await sql`SELECT o.id,i.reference,o.client,o.title,o.status,i.phone,i.email,i.follow_up,o.created_at,CASE WHEN i.id IS NULL THEN 'manual' ELSE 'website' END AS source
+  const rows=await sql`SELECT o.id,i.reference,o.client,o.title,o.status,i.phone,i.email,i.follow_up,o.created_at AS created_at_utc,CASE WHEN i.id IS NULL THEN 'manual' ELSE 'website' END AS source
     FROM rivya_studio_orders o LEFT JOIN rivya_inquiries i ON i.id=o.id
-    WHERE (NULLIF(${from},'')::date IS NULL OR o.created_at>=(NULLIF(${from},'')::date::timestamp AT TIME ZONE 'UTC'))
-     AND (NULLIF(${to},'')::date IS NULL OR o.created_at<((NULLIF(${to},'')::date+1)::timestamp AT TIME ZONE 'UTC'))
+    WHERE (NULLIF(${from},'')::date IS NULL OR o.created_at>=(NULLIF(${from},'')::date::timestamp AT TIME ZONE 'Asia/Kolkata'))
+     AND (NULLIF(${to},'')::date IS NULL OR o.created_at<((NULLIF(${to},'')::date+1)::timestamp AT TIME ZONE 'Asia/Kolkata'))
      AND (${stage}='' OR o.status=${stage}) AND (${source}='' OR ${source}='manual' AND i.id IS NULL OR ${source}='website' AND i.id IS NOT NULL)
     ORDER BY o.created_at DESC,o.id LIMIT 5001`;
   if(rows.length>5000)return json({error:'This export exceeds 5,000 rows. A scoped export must be prepared before downloading.'},409);
-  const columns=['id','reference','client','title','status','phone','email','follow_up','created_at','source'];
+  const columns=['id','reference','client','title','status','phone','email','follow_up','created_at_utc','source'];
   const cell=(value:unknown)=>{let t=value==null?'':String(value);if(/^[\s]*[=+\-@\t\r]/.test(t))t="'"+t;return '"'+t.replaceAll('"','""')+'"';};
   const csv=[columns.join(','),...rows.map(r=>columns.map(k=>cell(r[k])).join(','))].join('\r\n');
   await sql`INSERT INTO rivya_audit(actor,action,entity) VALUES(${session.adminId},'orders:export',${JSON.stringify({count:rows.length,from,to,stage,source})})`;

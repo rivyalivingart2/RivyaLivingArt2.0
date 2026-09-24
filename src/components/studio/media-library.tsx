@@ -10,7 +10,7 @@ type Entry={media:PublicMedia;reviewedMedia:PublicMedia;version:number;published
 export function MediaLibrary({admin}:{admin:boolean}){
  const [rows,setRows]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[message,setMessage]=useState('Loading approved media…'),[busy,setBusy]=useState(false),[dirty,setDirty]=useState(false);
  async function load(path?:string){const data=await studioFetch('/api/studio/media');setRows(data.media);if(path)setEntry(data.media.find((m:Entry)=>m.media.path===path));}
- useEffect(()=>{void load().then(()=>setMessage('Approved public assets only. Customer references are opened from their inquiry.')).catch(e=>setMessage(e.message));},[]);
+ useEffect(()=>{void studioFetch('/api/studio/media').then(data=>{setRows(data.media);setMessage('Approved public assets only. Customer references are opened from their inquiry.');}).catch(e=>setMessage(e.message));},[]);
  useEffect(()=>{const warn=(e:BeforeUnloadEvent)=>{if(dirty){e.preventDefault();e.returnValue='';}};window.addEventListener('beforeunload',warn);return()=>window.removeEventListener('beforeunload',warn);},[dirty]);
  function change(patch:Partial<PublicMedia>){if(entry)setEntry({...entry,media:{...entry.media,...patch}});setDirty(true);}
  async function save(operation:'draft'|'publish'){if(!entry||busy)return;setBusy(true);try{await studioFetch('/api/studio/media',{media:entry.media,version:entry.version,operation});setEntry({...entry,version:entry.version+1});setDirty(false);await load(entry.media.path);setMessage(operation==='publish'?'Image description and crop published.':'Shared media draft saved.');}catch(e){setMessage(e instanceof Error?e.message:'Save failed.');}finally{setBusy(false);}}
