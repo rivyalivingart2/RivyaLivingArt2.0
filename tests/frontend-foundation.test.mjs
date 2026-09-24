@@ -24,12 +24,11 @@ test('furniture, memory and personal worlds remain distinct and ordered', () => 
   assert.deepEqual(collections.map(x => x.tier), ['LARGE', 'MEDIUM', 'SMALL']);
   assert.equal(new Set(collections.map(x => x.slug)).size, 3);
 });
-test('the progressive catalogue contains twenty-four source fixtures, not a completed seed pack', () => {
-  assert.equal(concepts.length, 24);
-  assert.deepEqual(conceptsForTier('LARGE').map(x => x.id).sort(), ['DP001', 'DP002', 'DP013', 'DP014', 'DP025', 'DP035', 'DP043', 'DP048', 'DP051', 'DP057', 'DP069', 'DP077']);
-  assert.deepEqual(conceptsForTier('MEDIUM').map(x => x.id).sort(), ['DP085', 'DP091', 'DP095', 'DP099', 'DP103', 'DP107']);
-  assert.deepEqual(conceptsForTier('SMALL').map(x => x.id).sort(), ['DP109', 'DP111', 'DP112', 'DP113', 'DP114', 'DP120']);
+test('the preserved source catalogue covers all 120 registered identities',()=>{
+ assert.equal(concepts.length,120);
+ for(const [tier,start,count] of [['LARGE',1,84],['MEDIUM',85,24],['SMALL',109,12]])assert.deepEqual(conceptsForTier(tier).map(p=>p.id).sort(),Array.from({length:count},(_,i)=>'DP'+String(start+i).padStart(3,'0')));
 });
+
 test('fixture keys and slugs are unique', () => {
   for (const field of ['id','slug','demoFixtureKey']) assert.equal(new Set(concepts.map(x=>x[field])).size, concepts.length);
 });
@@ -44,7 +43,7 @@ test('sample catalogue retains fictional provenance and contains no customer inf
   }
 });
 test('available fixture media is local and missing visuals have no substituted image', () => {
-  assert.equal(concepts.filter(p => p.image).length, 2);
+  assert.equal(concepts.filter(p => p.image).length, 120);
   for (const p of concepts) {
     if (p.image === null) {
       assert.equal(p.mediaStatus, 'VISUAL_PENDING');
@@ -52,13 +51,13 @@ test('available fixture media is local and missing visuals have no substituted i
       continue;
     }
     assert.equal(p.mediaStatus, 'CONCEPT_VISUAL');
-    assert.equal(p.gallery.length, 1);
+    assert.ok(p.gallery.length >= 1);
     assert.equal(p.gallery[0].src, p.image);
-    assert.match(p.image, /^\/media\/concepts\/[a-z-]+\.avif$/);
+    assert.match(p.image, /^\/media\/(?:generated\/)?[a-z0-9-]+\.webp$/);
     assert.ok(existsSync(new URL('public'+p.image,root)));
     const bytes=readFileSync(new URL('public'+p.image,root));
-    assert.equal(bytes.subarray(4,8).toString(),'ftyp');
-    assert.ok(bytes.includes(Buffer.from('avif')));
+    assert.equal(bytes.subarray(0,4).toString(),'RIFF');
+    assert.equal(bytes.subarray(8,12).toString(),'WEBP');
     assert.ok(p.width>0 && p.height>0); assert.match(p.alt, /AI/i);
   }
 });
@@ -68,27 +67,28 @@ test('unknown concepts never resolve to an arbitrary fallback product', () => {
   assert.equal(findConcept(concepts[0].slug)?.id,'DP001');
 });
 test('secondary collections resolve their own typed concepts without misclassified furniture', () => {
-  assert.equal(conceptsForTier('MEDIUM').length,6); assert.equal(conceptsForTier('SMALL').length,6);
+  assert.equal(conceptsForTier('MEDIUM').length,24); assert.equal(conceptsForTier('SMALL').length,12);
   assert.ok(conceptsForTier('MEDIUM').every(piece => piece.tier === 'MEDIUM' && 'memory' in piece && !('personal' in piece)));
   assert.ok(conceptsForTier('SMALL').every(piece => piece.tier === 'SMALL' && 'personal' in piece && !('memory' in piece)));
   assert.equal(findCollection('memory-art')?.tier,'MEDIUM'); assert.equal(findCollection('personal-art')?.tier,'SMALL');
   assert.equal(findCollection('collectible-design')?.tier,'LARGE'); assert.equal(findCollection('studio'),undefined);
 });
-test('no fixture route becomes a public indexed offer', () => {
-  assert.match(read('src/app/layout.tsx'), /index: false, follow: false/);
-  assert.match(read('src/app/robots.ts'), /disallow: "\/"/);
-  assert.match(read('src/app/page.tsx'), /await connection\(\)/);
-  assert.match(read('src/app/pieces/[slug]/page.tsx'), /isVisualPreviewAllowed/);
+test('public offers use published projections and fixture routes remain protected',()=>{
+ assert.match(read('src/components/rivya/approved-entry.tsx'),/ShopSite/);
+ assert.match(read('src/lib/public-preview.ts'),/isVisualPreviewAllowed/);
+ assert.match(read('src/app/robots.ts'),/indexingEnabled/);
+ assert.match(read('src/app/robots.ts'),/disallow: "\/"/);
+ assert.match(read('src/lib/published-content.ts'),/published IS NOT NULL/);
 });
-test('Studio does not include credential fields or create a fake session', () => {
-  const s=read('src/app/studio/page.tsx');
-  assert.doesNotMatch(s, /<input|<form|signIn\(|cookies\(|localStorage/);
-  assert.match(s,/BuildHoldingScreen studio/);
+test('Studio requires a real server session before rendering its workspace',()=>{
+ const s=read('src/app/studio/page.tsx');assert.match(s,/await requireStudioSession\(\)/);assert.match(s,/PrivateStudioEntry/);assert.doesNotMatch(s,/localStorage|BuildHoldingScreen/);
 });
-test('hero interactions do not contact people or claim persistence', () => {
-  const s=read('src/components/homepage.tsx');
-  assert.doesNotMatch(s,/wa\.me|mailto:|tel:|localStorage|fetch\(/);
-  assert.match(s,/does not send WhatsApp messages/);
+test('saved handoff only opens WhatsApp through the explicit customer action',()=>{
+ const s=read('src/components/shop/saved-order-actions.tsx');
+ assert.match(s,/onClick=\{\(\)=>void refresh\(true\)\}/);
+ assert.doesNotMatch(s,/autoOpen|automatic|refresh\(true,true\)/);
+ const effect=s.slice(s.indexOf('useEffect(()=>'),s.indexOf('async function prepare'));
+ assert.doesNotMatch(effect,/refresh\(|location.assign/);
 });
 test('dependency and configuration files do not include rejected integrations', () => {
   const pkg=JSON.parse(read('package.json'));

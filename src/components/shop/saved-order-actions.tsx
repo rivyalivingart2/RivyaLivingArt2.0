@@ -2,10 +2,10 @@
 import {useEffect,useRef,useState} from 'react';
 import type {OrderReceipt} from '@/lib/order-receipt';
 import s from './shop.module.css';
-export function SavedOrderActions({receipt,endpoint,identity,autoOpen=false,onChange}:{receipt:OrderReceipt;endpoint:string;identity:{key:string}|{id:string};autoOpen?:boolean;onChange:(value:OrderReceipt)=>void}){
+export function SavedOrderActions({receipt,endpoint,identity,saveReceiptLocation=false,onChange}:{receipt:OrderReceipt;endpoint:string;identity:{key:string}|{id:string};saveReceiptLocation?:boolean;onChange:(value:OrderReceipt)=>void}){
  const [busy,setBusy]=useState(false),[message,setMessage]=useState(''),[copied,setCopied]=useState(false),[manualCopy,setManualCopy]=useState(false);
  const lock=useRef(false),opened=useRef(false);
- async function refresh(open=false,automatic=false){
+ async function refresh(open=false){
   if(lock.current)return;lock.current=true;setBusy(true);
   try{
    const response=await fetch(endpoint+(open?'&open=1':''),{cache:'no-store'}),data=await response.json();
@@ -13,18 +13,16 @@ export function SavedOrderActions({receipt,endpoint,identity,autoOpen=false,onCh
    onChange(data.receipt);
    if(!open){setMessage('Saved inquiry refreshed.');return;}
    if(!data.receipt.handoffAllowed||!data.whatsappUrl){setMessage(data.receipt.reason);return;}
-   if(data.copyRequired&&(automatic||!copied)){setManualCopy(true);setMessage('Copy the complete saved summary before opening the short reference message. Then paste it into WhatsApp and press Send.');return;}
+   if(data.copyRequired&&!copied){setManualCopy(true);setMessage('Copy the complete saved summary before opening the short reference message. Then paste it into WhatsApp and press Send.');return;}
    setMessage('If WhatsApp did not open, copy the saved summary and try Open WhatsApp again. You still press Send yourself.');
    window.location.assign(data.whatsappUrl);
   }catch(e){setMessage(e instanceof Error?e.message:'The saved receipt is temporarily unavailable.');}finally{lock.current=false;setBusy(false);}
  }
  useEffect(()=>{
-  if(!autoOpen||opened.current)return;opened.current=true;
+  if(!saveReceiptLocation||opened.current)return;opened.current=true;
   if('key' in identity)window.history.replaceState(window.history.state,'','/inquiry/received?key='+encodeURIComponent(identity.key));
-  if(receipt.state==='handoff_ready'&&receipt.handoffAllowed)void refresh(true,true);
-  // One continuation per mounted receipt. Subsequent opens are explicit and freshly authorized.
-  // eslint-disable-next-line react-hooks/exhaustive-deps
- },[autoOpen]);
+  // Preserve receipt access. Opening WhatsApp always requires a customer action.
+ },[saveReceiptLocation,identity]);
  async function prepare(){
   if(lock.current)return;lock.current=true;setBusy(true);
   try{const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...identity,action:'prepare'})}),data=await response.json();if(!response.ok||!data.receipt)throw Error(data.error||'Message preparation is unavailable.');onChange(data.receipt);setMessage(data.receipt.state==='handoff_ready'?'Your saved order message is ready. Open WhatsApp when you are ready to send it.':data.receipt.reason);}

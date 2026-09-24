@@ -142,7 +142,7 @@ function makeConcept(input: ConceptInput): FurnitureConcept {
   };
 }
 
-export const furnitureConcepts: readonly FurnitureConcept[] = [
+const furnitureSource: readonly FurnitureConcept[] = [
   makeConcept({
     id: "DP001", slug: "riverline-live-edge-dining-table", title: "Riverline", name: "Riverline Live-Edge Dining Table", type: "Dining table concept", category: "tables",
     description: "A fictional dining-table study where flowing blue resin meets expressive wood grain. The long surface gives the natural edge room to wander, while a restrained base keeps attention on the meeting of materials. Sample dimensions and finishes describe a design direction, not a manufactured piece.",
@@ -380,7 +380,7 @@ function makePersonal(input: PersonalInput): PersonalConcept {
     customization: { version: 1, fields: ["Permitted personalization", "Variant", "Quantity", "Gift message"] } };
 }
 
-export const memoryConcepts: readonly MemoryConcept[] = [
+const memorySource: readonly MemoryConcept[] = [
   makeMemory({
     id: "DP085", slug: "vow-framed-varmala-keepsake", title: "Vow", name: "Vow Framed Varmala Keepsake", type: "Varmala frame concept", tier: "MEDIUM", category: "flower-preservation",
     description: "A fictional frame study that gives wedding flowers room to hold their own story. Vow imagines a quiet border around selected botanical details, with optional names and a date kept secondary. Its sizes, materials and timing are sample directions; preservation suitability needs an individual studio discussion.",
@@ -450,7 +450,7 @@ export const memoryConcepts: readonly MemoryConcept[] = [
 ...additionalConcepts.filter((p): p is MemoryConcept => p.tier === "MEDIUM"),
 ];
 
-export const personalConcepts: readonly PersonalConcept[] = [
+const personalSource: readonly PersonalConcept[] = [
   makePersonal({
     id: "DP109", slug: "botanical-resin-pendant", title: "Botanical", name: "Botanical Resin Pendant", type: "Pendant concept", tier: "SMALL", category: "jewellery",
     description: "A fictional pendant study that holds a small botanical accent within a simple outline. Botanical explores clear and softly tinted directions at an intimate scale. The sample variants and fixed price describe a visual idea only; the final fitting, material composition and suitability for wearing remain to be confirmed.",
@@ -541,7 +541,10 @@ function withSuppliedMedia<T extends Concept>(piece:T):T {
  return {...piece,image,alt,width:primary?.width||piece.width,height:primary?.height||piece.height,gallery,mediaStatus:image?'CONCEPT_VISUAL':'VISUAL_PENDING'};
 }
 
-export const concepts: readonly Concept[] = [...furnitureConcepts, ...memoryConcepts, ...personalConcepts].map(withApprovedPresentation).map(withSuppliedMedia);
+export const furnitureConcepts = furnitureSource.map(withApprovedPresentation).map(withSuppliedMedia);
+export const memoryConcepts = memorySource.map(withApprovedPresentation).map(withSuppliedMedia);
+export const personalConcepts = personalSource.map(withApprovedPresentation).map(withSuppliedMedia);
+export const concepts: readonly Concept[] = [...furnitureConcepts, ...memoryConcepts, ...personalConcepts];
 
 export function findConcept(slug: string): Concept | undefined {
   const alias:Record<string,string>={"river-channel":"DP001","shallow-basin":"DP013","narrow-span":"DP035","entryway-bench":"DP048","lattice-object":"DP069"};

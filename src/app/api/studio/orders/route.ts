@@ -51,9 +51,9 @@ export async function GET(request:NextRequest) {
       AND (${source}='' OR ${source}='manual' AND i.id IS NULL OR ${source}='website' AND i.id IS NOT NULL)
       AND (${product}='' OR i.product_id=${product})
       AND (${category}='' OR lower(i.product_snapshot->>'category')=lower(${category}))
-      AND (NULLIF(${from},'')::date IS NULL OR o.created_at>=(NULLIF(${from},'')::date::timestamp AT TIME ZONE 'UTC'))
-      AND (NULLIF(${to},'')::date IS NULL OR o.created_at<((NULLIF(${to},'')::date+1)::timestamp AT TIME ZONE 'UTC'))
-      AND (NOT ${due} OR i.follow_up<=CURRENT_DATE AND o.status NOT IN ('COMPLETED','CLOSED'))
+      AND (NULLIF(${from},'')::date IS NULL OR o.created_at>=(NULLIF(${from},'')::date::timestamp AT TIME ZONE 'Asia/Kolkata'))
+      AND (NULLIF(${to},'')::date IS NULL OR o.created_at<((NULLIF(${to},'')::date+1)::timestamp AT TIME ZONE 'Asia/Kolkata'))
+      AND (NOT ${due} OR i.follow_up<=(CURRENT_TIMESTAMP AT TIME ZONE 'Asia/Kolkata')::date AND o.status NOT IN ('COMPLETED','CLOSED'))
       ORDER BY o.created_at DESC,o.id LIMIT 51 OFFSET ${(page-1)*50}`;
     return json({orders: orders.slice(0,50), hasMore: orders.length > 50, page});
   } catch { return json({error: 'Orders are temporarily unavailable.'}, 503); }

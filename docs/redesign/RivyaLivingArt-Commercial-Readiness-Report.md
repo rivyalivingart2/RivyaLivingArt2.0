@@ -1,3 +1,9 @@
+# Current status addendum — 24 September 2026
+
+The Phase 10 report below is historical. Pro eligibility, shared content publication, restricted-runtime preparation, retention controls, recovery evidence and partial Phase 11 checks have progressed. The owner now requests publication of completed work and explicitly stops further development/testing. Read PENDING-WORK.md for all remaining findings and the release receipt for publication results. This overrides the historical release hold for the current requested deployment; it does not mark unresolved findings complete.
+
+---
+
 # RivyaLivingArt — Commercial Readiness Report
 
 **Phase 10 · 24 September 2026 · Master revision 3.11**

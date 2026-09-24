@@ -1,11 +1,11 @@
 # RivyaLivingArt — Commercial Implementation Plan
 
-**Revision:** 3.11 — Phase 10 audit/remediation checkpoint complete; commercial release HELD
-**Prepared:** 23 September 2026  
-**Status:** Phase 10 checkpoint complete with explicit open release gates; next P11.1 local final QA, isolated resources required for runtime tests
-**Scope:** Every public page, product/customization instance, private Studio screen and shared state.  
-**Hosting direction:** Vercel only; free services only; commercial deployment eligibility unresolved. No Netlify.  
-**Execution boundary:** The owner authorized Phase 10 and GitHub publication. Continue merged main 80be3a0120e200b2d7ce874305b2d117d4e104e1 (PR #24) on codex/phase-10-commercial-readiness. Read-only provider/database/storage evidence and source remediations completed; see the Commercial Readiness Report and L14. No data/schema/grant/configuration/publication/deployment mutation. Both order-write flags and automatic deployment remain off. Shared resources are not synthetic QA targets. Full QA remains Phase 11; main/eligible release Phase 12.
+**Revision:** 3.13 — current-work release; further development and testing stopped
+**Prepared:** 23 September 2026; updated 24 September 2026
+**Status:** Owner-directed publication of completed work. Phase 11 remains partially verified; pending work is explicitly deferred. Phase 12 publication in progress.
+**Scope:** Every public page, product/customization instance, private Studio screen and shared state.
+**Hosting direction:** Vercel only. Correct project/team Pro verified; no additional paid integration authorized. No Netlify.
+**Execution boundary:** Follow the latest owner instruction in docs/decisions/2026-09-24-publish-current-stop-testing.md: no new development or test runs; publish completed work to main and intentional Vercel Preview/Production, and retain the full pending-work register. Deployment builds and provider completion readback continue. Search indexing and automatic Git deployment remain off.
 
 **Canonical plan after publication:** `docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md` in the existing repository. The outputs file is a synchronized delivery copy of the same revision, not a competing plan. Read `docs/decisions/2026-09-23-revised-phase-1-approved.md` for the approval record. No repeat plan approval is needed.
 
@@ -723,3 +723,12 @@ PHASE 10 STATUS: AUDIT/REMEDIATION CHECKPOINT COMPLETE — RELEASE HELD; OPEN FI
 
 NEXT ACTION:
 Begin Phase 11 from P11.1 with local checks. No synthetic writes to the shared database/private store; close all required readiness gates before Phase 12.
+
+
+### L15. Phase 11 verification progress — 24 September 2026
+
+Pro eligibility verified; operating decisions adopted in source candidates. Portable encrypted Drive backup and isolated 16-table database restoration verified. QA-only media/catalogue/content/contact publication completed from the current validated source, preserving existing versions. Initial 172 unit checks, 12 preflight, lint/typecheck/build and isolated customer-order/private-upload/Studio/retry-exhaustion/role/concurrency tests pass at their recorded candidates. Metadata cleanup improvements are newer and require rerun. Recovery custody, routine operations, submitted-data lifecycle, live least-privilege transition/publication, full instance/media/device/measurement/license and hosted release checks remain open. Read PHASE-11-CHECKPOINT.md; older L14 hosting/policy statements are historical. Phase 11 and 12 are not complete.
+
+### L16. Owner-directed current-work release — 24 September 2026
+
+The owner stopped further development/testing and requested publication of all completed current work, with every remaining item in PENDING-WORK.md. Recorded checks: 178 unit, 386 HTTP, 12 earlier preflight, local build/types/lint, 276 published routes, 28 automated accessibility/layout cases and isolated order/Studio/retention/cleanup/grant checks. Completed shared release preparation includes additive privacy controls, restricted runtime role and deliberate publication of 131 media, 120 products, 47 content records and business settings. Recovery custody is verified only in Windows Credential Manager/local protected storage; independent and physical copies, submitted-data erasure/replay and other listed findings remain pending. This release does not certify full Phase 11 completion. The GitHub/Vercel receipt records the actual publication identifiers.
