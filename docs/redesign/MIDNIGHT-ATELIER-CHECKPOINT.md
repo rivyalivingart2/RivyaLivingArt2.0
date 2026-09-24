@@ -51,3 +51,7 @@ Runtime/data/API/auth/security source files and original asset bytes are unchang
 The owner supplied six screenshots and explicitly requested that website images fill their containers. This supersedes the earlier contain-style photography direction for framed public imagery. Hero, material, collection, journey, catalogue, product/form and enlarged-gallery images now use proportional cover fitting with their existing focal positions. Original image files remain unchanged. The supplied logo retains its proper proportions. Journal cards retain wide 16:10 frames, fixing the later portrait-card rule that had overridden their editorial aspect ratio.
 
 This is a presentation-only correction on codex/midnight-atelier / PR #27, to be delivered to protected Preview. Production remains unchanged. The build passed; focused desktop/tablet/mobile visual review is recorded with the follow-up Preview receipt.
+
+Image-fill follow-up READY: https://rivya-living-art2-0-f8zfezxhg-rivyalivingart20-4705.vercel.app
+
+Deployed implementation: 8aba9ab88c13f97eeb535611e033112018d139ef. Vercel deployment: dpl_EUtxLZMAZdLyDZdMWcz1ypnnH9Pb. The build and focused image-fitting/reflow review passed on five public page types at 390, 768 and 1440px (15 combinations). Loaded journal and material screenshots were visually reviewed. Existing Production was verified unchanged. This receipt is documentation-only; the deployed application code is unchanged by it.
