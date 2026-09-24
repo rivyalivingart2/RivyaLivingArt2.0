@@ -1,11 +1,11 @@
 # RivyaLivingArt — Commercial Implementation Plan
 
-**Revision:** 3.10 — Phase 9 media/refinement source complete; readiness and production gates retained
+**Revision:** 3.11 — Phase 10 audit/remediation checkpoint complete; commercial release HELD
 **Prepared:** 23 September 2026  
-**Status:** Phase 9 source checkpoint complete; next P10.1; durable image reconciliation, policy particulars and final QA remain gated
+**Status:** Phase 10 checkpoint complete with explicit open release gates; next P11.1 local final QA, isolated resources required for runtime tests
 **Scope:** Every public page, product/customization instance, private Studio screen and shared state.  
 **Hosting direction:** Vercel only; free services only; commercial deployment eligibility unresolved. No Netlify.  
-**Execution boundary:** The owner authorized the next phase and GitHub publication. P9.1–P9.6 source checkpoint continues merged main 94f70f76c8f61c2fd0c01a3221b48d836e91ea23 (PR #23) on codex/phase-9-media-refinement. Responsive media/motion/loading refined; six existing image associations corrected. No database read/write, migration, content publication or deployment. Both order-write flags and automatic deployment remain off. Shared data is not a synthetic QA target. Formal QA remains Phase 11; eligible release Phase 12. Read PHASE-9-MEDIA-REFINEMENT.md and L13.
+**Execution boundary:** The owner authorized Phase 10 and GitHub publication. Continue merged main 80be3a0120e200b2d7ce874305b2d117d4e104e1 (PR #24) on codex/phase-10-commercial-readiness. Read-only provider/database/storage evidence and source remediations completed; see the Commercial Readiness Report and L14. No data/schema/grant/configuration/publication/deployment mutation. Both order-write flags and automatic deployment remain off. Shared resources are not synthetic QA targets. Full QA remains Phase 11; main/eligible release Phase 12.
 
 **Canonical plan after publication:** `docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md` in the existing repository. The outputs file is a synchronized delivery copy of the same revision, not a competing plan. Read `docs/decisions/2026-09-23-revised-phase-1-approved.md` for the approval record. No repeat plan approval is needed.
 
@@ -432,7 +432,7 @@ Formal integrated verification stays after backend integration. “Testing” be
 
 **Tasks:** P10.1 resolve hosting eligibility and account/environment evidence; P10.2 audit authorization, validation, secrets, references and personal-data lifecycle; P10.3 verify schema integrity, isolation, backup/restore and operational runbooks; P10.4 confirm business/policy/content truthfulness and no demo exposure; P10.5 audit SEO/accessibility/performance on the integrated candidate; P10.6 verify monitoring and optionally add minimal non-PII funnel events; P10.7 remediate findings and publish explicit release-gate status.
 
-**Dependencies:** integrated Phases 2–9; authorized isolated environment; required owner facts. **Files/systems:** entire candidate, provider settings, backups, logs, content and evidence. **Database impact:** controlled isolated audit/test records, independent backups and restore destination; no production destructive tests. **UI impact:** fixes for discovered blockers. **Security:** ordinary authorized functional checks only; no public-provider load/penetration testing or sensitive-data logging. **Testing:** integrated operational, role, privacy, accessibility/performance and restore checks begin here after integration. **Deliverables:** `RivyaLivingArt-Commercial-Readiness-Report.md`; each finding has ID, area, severity, issue, evidence, commercial impact, fix, files/components and status. **Exit criteria:** no unresolved Critical/High release risk; all nontechnical release blockers honestly resolved or release remains held. **Resume point:** P11.1 when testable; no bypass for hosting eligibility.
+**Dependencies:** integrated Phases 2–9; authorized isolated environment; required owner facts. **Files/systems:** entire candidate, provider settings, backups, logs, content and evidence. **Database impact:** controlled isolated audit/test records, independent backups and restore destination; no production destructive tests. **UI impact:** fixes for discovered blockers. **Security:** ordinary authorized functional checks only; no public-provider load/penetration testing or sensitive-data logging. **Testing:** integrated operational, role, privacy, accessibility/performance and restore checks begin here after integration. **Deliverables:** `RivyaLivingArt-Commercial-Readiness-Report.md`; each finding has ID, area, severity, issue, evidence, commercial impact, fix, files/components and status. **Exit criteria:** no unresolved Critical/High release risk; all nontechnical release blockers honestly resolved or release remains held. **Resume point:** P11.1 when testable; no bypass for hosting eligibility. **Current status:** P10.1–P10.7 audit/remediation checkpoint complete under the release-held exit. CR-01–CR-20 record source fixes and unresolved gates in RivyaLivingArt-Commercial-Readiness-Report.md. Local final QA may start; synthetic DB/Blob/restore tests require separate disposable resources. No commercial-readiness or TESTED claim.
 
 ### Phase 11 — Final integrated QA
 
@@ -689,9 +689,15 @@ Approval is recorded. It does not waive hosting eligibility, final QA, privacy o
 
 **Phase 9 publication receipt:** implementation 10d9610176421312f30f8f7204fee75fb3c746a4 pushed to codex/phase-9-media-refinement and independently matched to GitHub on 24 September 2026. Main remains 94f70f76c8f61c2fd0c01a3221b48d836e91ea23. See phase-9-github-publication.json; final documentation head is recorded in the local completion artifact. No database operation or deployment.
 
+### L14. Phase 10 audit/remediation checkpoint — 24 September 2026
+
+**Phase:** 10 — Commercial readiness. **Status:** audit/remediation checkpoint complete; RELEASE HELD. **Completed:** current Vercel Hobby/account/env/deployment metadata and official eligibility review; readonly shared schema/count/role and private-object inspection; encrypted-backup presence; auth/PII/publication/SEO/accessibility/performance-source/license/monitoring audit; CR-01–CR-20 report and operational runbook. **Remediation:** trimmed login throttle identity, minimum guest HMAC secret, runtime published-contact validation/projection, media-owner publication prerequisite, accurate admin-only service/attention view, deliberate initial contact publication, current migration/configuration guidance. **Database:** 16 tables/134 columns/151 constraints; one intentional NOT VALID legacy-provider check; owner-capable credential confirmed; only existing budget/session rows, no orders/publication/private objects. No writes, grants, migrations or provider changes. **Preservation:** all original asset bytes, drafts/data, historical candidates and deployment settings retained. **Verification:** Node 22 TypeScript no-emit wiring and readonly operational/source evidence; no formal application/security/device/restore QA. **Commercial risks:** Hobby eligibility, runtime grants/secrets, recovery/privacy/policy facts, deliberate publication, full media/license and exact-commit QA remain gates. **Next:** P11.1 local QA, then isolated integration only after different targets are verified. Baseline 80be3a0120e200b2d7ce874305b2d117d4e104e1; branch codex/phase-10-commercial-readiness. See phase-10-source.json and publication receipt after push.
+
+**Phase 10 publication receipt:** implementation 3839e6a9e5bacdea0c2cdc30f9c52946f5c3d973 pushed to codex/phase-10-commercial-readiness and independently matched to GitHub on 24 September 2026. Main remains 80be3a0120e200b2d7ce874305b2d117d4e104e1. See phase-10-github-publication.json; local completion records the final documentation head. No database mutation or deployment.
+
 ## M. Final recommendation
 
-Continue the approved saved-order-only scope from the Phase 9 checkpoint at P10.1. Preserve the shared-target schema, saved-message contract and Studio source; complete the integrated commercial-readiness audit and assigned media/publication remediation, then prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
+Continue the approved saved-order-only scope from the Phase 10 release-held checkpoint at P11.1. Preserve the shared-target schema, saved-message contract and Studio source. Begin safe local final QA; use different disposable resources for integration/restore. Close the Commercial Readiness Report gates before activation. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
 
 The statement below applies to **this revised implementation**. Substantial earlier source work exists and is preserved; it has not been reset or falsely described as nonexistent.
 
@@ -713,5 +719,7 @@ PHASE 8 STATUS: SOURCE CHECKPOINT COMPLETE — PUBLIC CONTENT; POLICY PARTICULAR
 
 PHASE 9 STATUS: SOURCE CHECKPOINT COMPLETE — MEDIA/MOTION/RESPONSIVE; READINESS AND FINAL QA STILL GATED.
 
+PHASE 10 STATUS: AUDIT/REMEDIATION CHECKPOINT COMPLETE — RELEASE HELD; OPEN FINDINGS EXPLICITLY RECORDED.
+
 NEXT ACTION:
-Begin Phase 10 from task P10.1.
+Begin Phase 11 from P11.1 with local checks. No synthetic writes to the shared database/private store; close all required readiness gates before Phase 12.

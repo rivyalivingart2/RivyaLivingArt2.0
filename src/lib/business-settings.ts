@@ -9,4 +9,11 @@ export function validBusiness(value:unknown):value is BusinessSettings{
  if(typeof v.phone!=='string'||!/^\+[1-9]\d{9,14}$/.test(v.phone)||typeof v.whatsapp!=='string'||!/^[1-9]\d{9,14}$/.test(v.whatsapp)||typeof v.email!=='string'||v.email.length>180||!/^\S+@[^\s@]+\.[^\s@]+$/.test(v.email)||typeof v.map!=='string'||v.map.length>500)return false;
  try{const url=new URL(v.map);return url.protocol==='https:'&&!url.username&&!url.password&&['maps.app.goo.gl','maps.google.com','www.google.com'].includes(url.hostname);}catch{return false;}
 }
-export const publishedBusiness=cache(async()=>{const rows=await studioDb()`SELECT details,version FROM rivya_business_settings WHERE id=1`;return {details:rows[0]?.details as BusinessSettings||defaultBusiness,version:Number(rows[0]?.version||0)};});
+export const publishedBusiness=cache(async()=>{
+ const rows=await studioDb()`SELECT details,version FROM rivya_business_settings WHERE id=1`;
+ if(!rows.length)return {details:defaultBusiness,version:0};
+ const {details,version}=rows[0];
+ if(!validBusiness(details)||!Number.isSafeInteger(Number(version))||Number(version)<1)throw new Error('Published business details need review');
+ // Only public contact fields may cross the server/client boundary.
+ return {details:{phone:details.phone,email:details.email,whatsapp:details.whatsapp,map:details.map},version:Number(version)};
+});

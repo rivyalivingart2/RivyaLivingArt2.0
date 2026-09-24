@@ -1,4 +1,5 @@
 -- Additive companion to phase2-order-contract.sql. Independent backup required.
+-- APPLIED in Phase 6 to the now-shared target; do not replay this historical migration.
 -- No build hook or seed invokes this file. Old evidence stays unknown.
 BEGIN;
 SET LOCAL lock_timeout='5s';

@@ -11,8 +11,10 @@ export async function loginAdmin(_state: LoginState, form: FormData): Promise<Lo
   if (typeof id !== 'string' || typeof password !== 'string' || id.length > 200 || password.length > 1024)
     return {error: 'Unable to sign in. Check your credentials and try again.'};
   try {
-    if (!await limited(await clientRateKey('login'),40,15) || !await limited('login-id:'+privateHash(id.toLowerCase()),10,15)) return {error: 'Too many attempts. Please wait 15 minutes before trying again.'};
-    const identity=await authenticateStaff(id.trim(),password);
+    const loginId=id.trim();
+    // Use the same trimmed identity for authentication and its durable throttle.
+    if (!await limited(await clientRateKey('login'),40,15) || !await limited('login-id:'+privateHash(loginId.toLowerCase()),10,15)) return {error: 'Too many attempts. Please wait 15 minutes before trying again.'};
+    const identity=await authenticateStaff(loginId,password);
     if (!identity) return {error: 'Unable to sign in. Check your credentials and try again.'};
     const token = await createStudioSession(identity);
     (await cookies()).set(sessionCookie, token, {

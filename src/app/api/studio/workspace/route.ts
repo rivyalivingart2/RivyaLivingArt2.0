@@ -5,6 +5,7 @@ import {randomUUID} from 'node:crypto';
 import {studioSession,hashStaffPassword} from '@/lib/studio-auth';
 import {studioDb} from '@/lib/studio-db';
 import {baselineProducts,validProduct} from '@/lib/shop-model';
+import {publishedMedia} from '@/lib/published-media';
 import {originAllowed,smallJson} from '@/lib/request-security';
 import {revalidatePath} from 'next/cache';
 export const dynamic='force-dynamic';
@@ -60,6 +61,11 @@ export async function POST(request:Request){
    if(body.operation!=='draft'&&session.role!=='admin')return json({error:'Only an administrator can publish or hide a piece.'},403);
    const product={...body.product,revision:body.version+2};
    const publish=body.operation==='publish';const hide=body.operation==='hide';
+   if(publish){
+    const media=await publishedMedia();
+    const paths=[product.image,...(product.scene?[product.scene]:[]),...(product.gallery||[]).map((g:{src:string})=>g.src)];
+    if(paths.some(path=>!media.get(path)?.products.includes(product.id)))return json({error:'Publish the reviewed media for this piece first. Every selected image must belong to this piece; saving a draft is still available.'},409);
+   }
    const rows=await sql`WITH saved AS (
     INSERT INTO rivya_catalogue(product_id,draft,published,version,published_version,visible,updated_by)
     SELECT ${product.id},${JSON.stringify(product)}::jsonb,${publish?JSON.stringify(product):null}::jsonb,1,${publish?2:1},${publish},${session.adminId} WHERE ${body.version}=0

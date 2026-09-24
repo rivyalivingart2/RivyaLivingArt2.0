@@ -2,6 +2,7 @@ import {isOrderStage} from '@/lib/studio-orders';
 import {studioSession} from '@/lib/studio-auth';
 import {studioDb} from '@/lib/studio-db';
 import {originAllowed,smallJson} from '@/lib/request-security';
+import {serviceStatus} from '@/lib/service-status';
 export const dynamic='force-dynamic';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
 export async function GET(request:Request){
@@ -10,7 +11,7 @@ export async function GET(request:Request){
   const sql=studioDb(),view=new URL(request.url).searchParams.get('view');
   if(view==='settings'){
    if(session.role!=='admin')return json({error:'Administrator access required.'},403);
-   return json({business:{name:'RivyaLivingArt',phone:'+91 83204 04132',email:'rivyalivingart2.0@gmail.com',whatsapp:'918320404132'},services:{database:!!process.env.DATABASE_URL,privateReferences:!!process.env.BLOB_READ_WRITE_TOKEN&&process.env.BLOB_READ_WRITE_TOKEN!=='[SENSITIVE]',indexing:process.env.SITE_INDEXABLE==='true'},workflow:'Inquiry is saved before WhatsApp opens. No online payments or customer accounts.'});
+   return json({...await serviceStatus(),workflow:'The order request is saved to the database and Studio before its WhatsApp message is prepared. The customer opens WhatsApp and presses Send. No online payments or customer accounts.'});
   }
   if(view==='activity'){
    const events=await sql`SELECT e.id,e.actor,e.from_status,e.to_status,e.reason,e.created_at AS "createdAt",o.client,o.title,i.reference

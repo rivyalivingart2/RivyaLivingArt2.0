@@ -1,3 +1,9 @@
+# Current operational override — 24 September 2026
+
+Phase 2 contract and Phase 6 upload-identity migrations were applied in Phase 6 to the database now intentionally shared by future Preview/Production. They are not pending. Do not replay either migration or treat application Preview as disposable. Both order-write flags remain off; actual reader/writer adapters and maintenance gates now exist. Independent encrypted archives were created with owner-delegated local DPAPI custody, but full isolated restore and portable recovery are unproved. Read `SHARED-DATA-CONFIGURATION.md`, `phase-6-preview-migration.json`, `RivyaLivingArt-Commercial-Readiness-Report.md` and `PHASE-10-OPERATIONS-RUNBOOK.md` before any operation. The original design runbook below is historical where superseded.
+
+---
+
 # Phase 2 — Migration, recovery and privacy runbook
 
 Status: prepared, not executed. Read with PHASE-2-DATA-ARCHITECTURE.md and the current environment register. This runbook does not authorize bypassing the commercial hosting hold.
