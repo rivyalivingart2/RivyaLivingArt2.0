@@ -1,14 +1,20 @@
 :root {
   color-scheme: dark;
   --navy: #0b1728;
+  --canvas: #08111d;
+  --old-dark: #101713;
   --forest: #19221c;
   --ivory: #f3efe7;
   --stone: #ddd6cb;
-  --bronze: #b08d57;
+  --bronze: #b79270;
+  --bronze-highlight: #ceac89;
+  --brand-gradient: linear-gradient(135deg, #b79270 0%, #ceac89 48%, #b08d57 100%);
+  --canvas-gradient: linear-gradient(135deg, #101713 0%, #0b1728 55%, #19221c 100%);
+  --resin-glow: radial-gradient(circle at 72% 18%, rgba(183,146,112,.16), transparent 42%);
   --ink: #18202a;
-  --background: var(--navy);
-  --surface: var(--forest);
-  --surface-elevated: #213247;
+  --background: var(--canvas);
+  --surface: #111d22;
+  --surface-elevated: #1d2d33;
   --foreground: var(--ivory);
   --muted: #b7bfb5;
   --primary: var(--ivory);
@@ -25,10 +31,10 @@
   --success-border: #86aa96;
   --success-surface: #122b26;
   --studio-panel: #112033;
-  --font-display: var(--font-cormorant), Georgia, serif;
+  --font-display: var(--font-instrument), Georgia, serif;
   --font-body: var(--font-dm-sans), Arial, Helvetica, sans-serif;
   --font-brand: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
-  --font-data: "JetBrains Mono", Consolas, monospace;
+  --font-data: var(--font-jetbrains), Consolas, monospace;
   --gutter: clamp(20px, 5vw, 88px);
   --space-section: clamp(64px, 8vw, 128px);
   --space-control: 12px;
@@ -39,6 +45,9 @@
   --target-min: 44px;
   --radius-control: 2px;
   --motion-fast: 200ms;
+  --motion-ui: 200ms;
+  --motion-hover: 300ms;
+  --motion-hero: 900ms;
   --motion-reveal: 550ms;
   --motion-ease: cubic-bezier(.2, .7, .2, 1);
 }

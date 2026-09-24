@@ -1,13 +1,17 @@
 # RivyaLivingArt — Commercial Implementation Plan
 
-**Revision:** 3.13 — current-work release; further development and testing stopped
+**Revision:** 3.14 — Midnight atelier presentation evolution; protected Preview review
 **Prepared:** 23 September 2026; updated 24 September 2026
-**Status:** Owner-directed publication of completed work. Phase 11 remains partially verified; pending work is explicitly deferred. Phase 12 publication in progress.
+**Status:** Previous current-work release is live at main eb23160. New owner-authorized presentation work continues on codex/midnight-atelier for protected Preview review only. Prior operational pending work remains deferred.
 **Scope:** Every public page, product/customization instance, private Studio screen and shared state.
 **Hosting direction:** Vercel only. Correct project/team Pro verified; no additional paid integration authorized. No Netlify.
 **Execution boundary:** Follow the latest owner instruction in docs/decisions/2026-09-24-publish-current-stop-testing.md: no new development or test runs; publish completed work to main and intentional Vercel Preview/Production, and retain the full pending-work register. Deployment builds and provider completion readback continue. Search indexing and automatic Git deployment remain off.
 
 **Canonical plan after publication:** `docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md` in the existing repository. The outputs file is a synchronized delivery copy of the same revision, not a competing plan. Read `docs/decisions/2026-09-23-revised-phase-1-approved.md` for the approval record. No repeat plan approval is needed.
+
+## New presentation addendum — 24 September 2026
+
+The owner supplied the Midnight Resin / Bronze Atelier brief and authorized implementation with its quality gates. Follow `docs/decisions/2026-09-24-midnight-atelier.md` and `docs/redesign/MIDNIGHT-ATELIER-CHECKPOINT.md`. The current ShopSite and published-data architecture remains the source of truth. The earlier visual checkpoint is reference only. This branch changes public/Studio presentation and narrowly repairs discovered frontend presentation/navigation defects; it does not resume unrelated backend operations. Delivery is a protected Vercel Preview for owner visual review, with no new main merge or Production deployment.
 
 ## A. Understanding, authority and preserved work
 

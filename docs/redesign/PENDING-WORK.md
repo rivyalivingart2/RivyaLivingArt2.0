@@ -1,3 +1,4 @@
+> Presentation update, 24 September 2026: the owner subsequently authorized the Midnight atelier redesign and its scoped QA. See MIDNIGHT-ATELIER-REPORT.md and MIDNIGHT-ATELIER-CHECKPOINT.md for that branch/Preview handoff. The operational backlog below remains pending; the earlier stop does not prohibit the newly authorized presentation work.
 # RivyaLivingArt — completed work and pending work
 
 Updated 24 September 2026. The owner requested publication of the completed current work and a stop to further development and testing. This is an honest release checkpoint, not a certificate that all Phase 11 work is finished. Read the current release receipt for final GitHub/Vercel identifiers.

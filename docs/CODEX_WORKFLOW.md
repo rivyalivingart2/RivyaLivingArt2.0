@@ -1,3 +1,8 @@
+# Active owner instruction — Midnight atelier presentation redesign
+
+24 September 2026. Read docs/decisions/2026-09-24-midnight-atelier.md and docs/redesign/MIDNIGHT-ATELIER-CHECKPOINT.md. The owner explicitly resumed presentation work and its quality gates. Work on codex/midnight-atelier from current main; preserve the current published ShopSite architecture and all data/security behavior. Publish a protected Preview for owner visual review only. No main merge or Production deployment is authorized for this new redesign. Prior stopped operational work remains pending.
+
+---
 # Active owner instruction — publish current work; further development and testing stopped
 
 24 September 2026. Read docs/decisions/2026-09-24-publish-current-stop-testing.md. The owner explicitly requested completing current publication to GitHub main and Vercel Preview/Production, stopping new work and testing, and documenting all pending work. This supersedes the earlier all-findings-closed release hold for this current deployment. Do not resume the pending development or test programme without a new owner request.

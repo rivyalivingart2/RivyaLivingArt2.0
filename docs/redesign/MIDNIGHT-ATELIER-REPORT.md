@@ -1,0 +1,48 @@
+# RivyaLivingArt — Midnight atelier redesign
+
+24 September 2026. Dedicated branch: `codex/midnight-atelier`, based on current main `eb23160`. This is a presentation evolution of the published ShopSite application. The legacy application has not been restored.
+
+## Design implemented
+
+| Area | Result |
+|---|---|
+| Shared identity | Deep canvas, navy, forest and dark elevated surfaces; ivory text; restrained bronze gradient with dark CTA text |
+| Typography | Existing local Instrument Serif for display, DM Sans for text/UI and JetBrains Mono for identifiers; no remote fonts or new packages |
+| Public shell | Quiet dark sticky header, supplied wordmark presented in ivory, dark collection dropdown, accessible search/mobile dialogs and multi-column footer |
+| Home | 47/53 split hero with current published product; slim introduction strip; staggered three-piece selection; numbered categories with actual published counts; material split; four process columns; three image-led worlds; dark journal and oversized closing invitation |
+| Catalogue/detail | Aligned full catalogue, 4:5 product imagery, small product IDs, full-product containment, editorial titles, thin specifications and dark gallery controls |
+| Forms/editorial | Dark 48px controls, preserved labels/validation/receipts, bounded reading measures, dark policy/error/empty states and a clear custom-piece page heading |
+| Studio | Dark gradient login, forest navigation with thin bronze indicator, navy panels, ivory metrics, dark tables/editors and all eight Kanban stages with existing controls |
+| Motion | CSS-only, short restrained movement, hover scale capped at 1.025; reduced-motion support; no decorative entrance delay on forms or Studio |
+
+The restored legacy patterns are layout, typography, spacing and restrained motion. Every visible catalogue record/count and linked form continues to come from current published data.
+
+## Files changed
+
+| Files | Purpose |
+|---|---|
+| `src/styles/tokens.css`, `src/app/layout.tsx` | Shared palette, gradients, motion and local font loading |
+| `src/components/shop/shop.module.css` | Complete public theme and responsive editorial layouts |
+| `src/components/shop/shop-site.tsx` | Database-backed home composition and dark related sections |
+| `src/components/shop/product-card.tsx`, `hero-image.tsx` | Small identifiers and appropriate split-hero image sizing |
+| `src/components/shop/header.tsx` | Fix native search submission being cancelled by premature dialog unmount |
+| `src/app/commission/customize/page.tsx` | Add the missing main page heading and shared introduction |
+| `src/components/studio-private.css`, `src/components/studio/workspace.module.css` | Login, board and workspace presentation; fix narrow-screen filter wrapping |
+| `tools/release-qa/public.mjs`, `midnight.mjs` | Six-width checks and redesign-specific browser regression coverage |
+| `AGENTS.md`, `PROJECT_STATE.md`, `docs/CODEX_WORKFLOW.md`, master/decision/checkpoint/report | Active authority, progress and resumable handoff |
+
+## Functional boundaries preserved
+
+No database migration or schema change, no product/content/media publication changes, no changes to API routes, authentication, sessions, roles, permissions, order persistence, uploads, business settings, privacy controls, retention operations, revision history, SEO or structured data. Original assets and existing drafts remain intact. No new dependencies or paid services.
+
+WhatsApp remains order-specific: save the request and references to the database/Studio, prepare the message, then provide Open/Copy and manual customer Send. No automatic message, general chat, customer account or payment gateway was added.
+
+Two narrow frontend defects discovered during review were corrected: the search form was being removed before its native GET navigation; the custom-piece page lacked an H1. A Studio flex-basis correction keeps inquiry filters usable on narrow screens.
+
+## Verification and remaining review
+
+Completed evidence and deployment details are recorded in `MIDNIGHT-ATELIER-CHECKPOINT.md`. Tests use the existing isolated QA database and private reference store. The normal Preview continues to use the previously authorized shared live resources; test submissions were not made there.
+
+Physical-device behavior, assistive-technology review and owner visual acceptance remain separate from automated Chrome checks. The 200% check emulates the effective CSS viewport and is not a claim of physical browser zoom verification. Existing operational items in `PENDING-WORK.md` remain outside this presentation task.
+
+Production remains the previous release. This redesign is delivered as a protected Preview for review; main merge and Production promotion require the next owner instruction.

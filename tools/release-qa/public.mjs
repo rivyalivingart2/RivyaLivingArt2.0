@@ -13,7 +13,7 @@ const out=output+'/',base='http://localhost:4187';
   const paths=[...inventory.products.flatMap(p=>[{id:p.id,path:'/pieces/'+p.slug},{id:p.id+'-form',path:'/pieces/'+p.slug+'/customize'}]),...inventory.articles.map(p=>({id:p.id,path:'/journal/'+p.slug}))];
   for(let n=0;n<paths.length;n+=5){await Promise.all(paths.slice(n,n+5).map(async item=>{const r=await context.request.get(base+item.path);const body=await r.text();assert.equal(r.status(),200,item.path);assert.match(body,/<h1[ >]/,item.path);assert.doesNotMatch(body,/This page is unavailable|NEXT_HTTP_ERROR_FALLBACK;404/,item.path);results.push({...item,status:200});}));if(n%25===0)console.log('Public instances checked',Math.min(n+5,paths.length));}
   console.log('PASS public product/article HTTP inventory',results.length);
-  for(const viewport of [{width:1440,height:1000},{width:390,height:844},{width:768,height:1024},{width:320,height:740}]){
+  for(const viewport of [{width:1440,height:1000},{width:1200,height:900},{width:1024,height:900},{width:768,height:1024},{width:390,height:844},{width:320,height:740}]){
    await page.setViewportSize(viewport);
    for(const path of ['/','/collectible-design','/pieces/river-channel','/commission','/delivery','/privacy','/studio/login']){
     await page.goto(base+path);await page.waitForLoadState('networkidle');await page.addScriptTag({path:repo+'/node_modules/axe-core/axe.min.js'});

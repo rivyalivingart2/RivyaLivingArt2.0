@@ -7,13 +7,14 @@ import "./globals.css";
 
 const displayFont = localFont({
   src: [
-    { path: "../styles/fonts/cormorant-garamond-latin-400-normal.woff2", weight: "400", style: "normal" },
-    { path: "../styles/fonts/cormorant-garamond-latin-400-italic.woff2", weight: "400", style: "italic" },
+    { path: "../../public/fonts/instrument-serif-normal-400.ttf", weight: "400", style: "normal" },
+    { path: "../../public/fonts/instrument-serif-italic-400.ttf", weight: "400", style: "italic" },
   ],
-  variable: "--font-cormorant",
+  variable: "--font-instrument",
   display: "swap",
   adjustFontFallback: "Times New Roman",
 });
+const dataFont = localFont({src: "../../public/fonts/jetbrains-mono-normal-400.ttf", variable: "--font-jetbrains", display: "swap", preload: false});
 const bodyFont = localFont({
   src: [
     { path: "../styles/fonts/dm-sans-latin-400-normal.woff2", weight: "400", style: "normal" },
@@ -33,5 +34,5 @@ export const viewport: Viewport = { themeColor: "#0b1728", colorScheme: "dark" }
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   await connection();
-  return <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}><body><a className="skip-link" href="#main-content">Skip to content</a><ApplicationFrame>{children}</ApplicationFrame></body></html>;
+  return <html lang="en" className={`${displayFont.variable} ${bodyFont.variable} ${dataFont.variable}`}><body><a className="skip-link" href="#main-content">Skip to content</a><ApplicationFrame>{children}</ApplicationFrame></body></html>;
 }

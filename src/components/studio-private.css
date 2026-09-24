@@ -48,3 +48,14 @@
 .order-create button { min-height:var(--target-min); }
 @media(max-width:700px) { .order-create{grid-template-columns:1fr} .order-kanban{grid-template-columns:repeat(8,minmax(235px,80vw))} }
 @media(prefers-reduced-motion:reduce) { .order-column{transition:none} }
+
+/* The public atelier identity carries through to the private workspace. */
+.studio-login{background:var(--resin-glow),var(--canvas-gradient)}
+.studio-login-card{border-color:#b792705c;background:var(--studio-panel);border-top:2px solid var(--bronze)}
+.studio-login input,.order-create input,.order-stage-select select{background:var(--control-surface)}
+.studio-login .studio-button{background:var(--brand-gradient);border-color:var(--bronze);color:var(--old-dark)}
+.studio-login .studio-button:hover:not(:disabled){background:var(--bronze-highlight)}
+.studio-login .eyebrow{color:var(--bronze-highlight);font:12px/1.7 var(--font-data)}
+.order-card{background:#172a3d;border-color:var(--border);box-shadow:none}
+.order-card-top{font:12px/1.7 var(--font-data)}
+.order-column{border-top:2px solid #b7927070}
