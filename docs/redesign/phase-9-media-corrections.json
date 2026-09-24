@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "date": "2026-09-24",
+  "corrections": [
+    {
+      "id": "DP110",
+      "previous": "/media/generated/dp110-petal-drop-earrings-portrait-4x5.webp",
+      "reviewed": "/media/generated/dp120-little-archive-keepsake-box-portrait-4x5.webp",
+      "reason": "Source pixels were assigned to the wrong product by filename. Visual subject inspected on 2026-09-24; bytes and original path preserved."
+    },
+    {
+      "id": "DP112",
+      "previous": "/media/generated/dp112-initial-story-keychain-portrait-4x5.webp",
+      "reviewed": "/media/generated/dp110-petal-drop-earrings-portrait-4x5.webp",
+      "reason": "Source pixels were assigned to the wrong product by filename. Visual subject inspected on 2026-09-24; bytes and original path preserved."
+    },
+    {
+      "id": "DP113",
+      "previous": "/media/generated/dp113-chaptermark-flower-bookmark-portrait-4x5.webp",
+      "reviewed": "/media/generated/dp112-initial-story-keychain-portrait-4x5.webp",
+      "reason": "Source pixels were assigned to the wrong product by filename. Visual subject inspected on 2026-09-24; bytes and original path preserved."
+    },
+    {
+      "id": "DP120",
+      "previous": "/media/generated/dp120-little-archive-keepsake-box-portrait-4x5.webp",
+      "reviewed": "/media/generated/dp113-chaptermark-flower-bookmark-portrait-4x5.webp",
+      "reason": "Source pixels were assigned to the wrong product by filename. Visual subject inspected on 2026-09-24; bytes and original path preserved."
+    },
+    {
+      "id": "DP115",
+      "previous": "/media/generated/dp115-palm-mini-serving-tray-portrait-4x5.webp",
+      "reviewed": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
+      "reason": "Source pixels were assigned to the wrong product by filename. Visual subject inspected on 2026-09-24; bytes and original path preserved."
+    },
+    {
+      "id": "DP117",
+      "previous": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
+      "reviewed": "/media/generated/dp115-palm-mini-serving-tray-portrait-4x5.webp",
+      "reason": "Source pixels were assigned to the wrong product by filename. Visual subject inspected on 2026-09-24; bytes and original path preserved."
+    }
+  ],
+  "publication": "Reviewed source associations only. Saved product/media drafts and published versions require deliberate reconciliation in Studio; no database mutation."
+}

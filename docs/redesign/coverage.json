@@ -15,12 +15,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/shop-site.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P02",
@@ -36,12 +38,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/shop-site.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P03",
@@ -57,12 +61,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/shop-site.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P04",
@@ -78,12 +84,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/shop-site.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P05",
@@ -99,12 +107,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/catalogue-browser.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P06",
@@ -120,12 +130,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/shop-site.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P07",
@@ -141,7 +153,7 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/components/shop/order-form.tsx; src/lib/product-form.ts; product-review.json",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
@@ -149,7 +161,9 @@
       "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring",
       "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source",
       "phase7Evidence": "PHASE-7-STUDIO.md; original saved brief, private reference access, operational amendments and saved-order handoff retained",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P08",
@@ -165,14 +179,16 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/lib/legacy-journey.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring",
       "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source",
       "phase7Evidence": "PHASE-7-STUDIO.md; original saved brief, private reference access, operational amendments and saved-order handoff retained",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P09",
@@ -188,14 +204,16 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/lib/legacy-journey.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring",
       "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source",
       "phase7Evidence": "PHASE-7-STUDIO.md; original saved brief, private reference access, operational amendments and saved-order handoff retained",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P10",
@@ -211,14 +229,16 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/lib/legacy-journey.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring",
       "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source",
       "phase7Evidence": "PHASE-7-STUDIO.md; original saved brief, private reference access, operational amendments and saved-order handoff retained",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P11",
@@ -234,11 +254,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run",
+      "verificationEvidence": "TypeScript wiring only; formal lint/build/tests/browser/DB flow not run; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/app/inquiry/received/page.tsx; src/components/shop/saved-receipt.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P12",
@@ -254,11 +276,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/editorial.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P13",
@@ -274,11 +298,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/app/about/page.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P14",
@@ -294,11 +320,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/editorial.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P15",
@@ -314,11 +342,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/editorial.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P16",
@@ -334,11 +364,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/app/materials/page.tsx; src/app/care/page.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P17",
@@ -354,11 +386,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/editorial.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P18",
@@ -374,11 +408,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/editorial.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P19",
@@ -394,11 +430,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/app/journal/[slug]/page.tsx; editorial-review.json",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P20",
@@ -414,11 +452,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/editorial.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P21",
@@ -434,11 +474,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/editorial.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P22",
@@ -454,11 +496,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/editorial.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P23",
@@ -474,11 +518,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/editorial.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P24",
@@ -494,11 +540,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/editorial.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P25",
@@ -514,11 +562,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/editorial.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P26",
@@ -534,11 +584,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/editorial.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P27",
@@ -554,11 +606,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/app/portfolio/page.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P28",
@@ -574,11 +628,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Template implemented; eight fictional instances withheld, zero real approved projects",
       "implementationEvidence": "src/components/shop/project-story.tsx; src/lib/project-model.ts",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P29",
@@ -594,11 +650,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/app/not-found.tsx; src/components/shop/feedback.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P30",
@@ -614,12 +672,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/app/error.tsx; src/components/shop/public-image.tsx; src/components/shop/feedback.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "P31",
@@ -635,12 +695,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Published catalogue/content or privacy capability where applicable",
       "accessibilityState": "Shared focus/static/reduced-motion source updated; prepared P11 scenarios in PHASE-3-DESIGN-SYSTEM.md",
-      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA",
+      "verificationEvidence": "TypeScript wiring and source inventory only; no browser/database/application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/header.tsx; src/components/shop/shop-frame.tsx; src/components/shop/dialog.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase4Evidence": "PHASE-4-CATALOGUE.md; phase-4-products.json; shared discovery/published catalogue/gallery/customize routing source",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     },
     {
       "id": "S01",
@@ -656,11 +718,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Shared focus/static/reduced-motion source updated; prepared P11 scenarios in PHASE-3-DESIGN-SYSTEM.md",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio-login.tsx; src/app/studio/login/actions.ts",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S02",
@@ -676,11 +740,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio/operations.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S03",
@@ -696,12 +762,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/components/studio/inquiry-board.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S04",
@@ -717,12 +785,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/components/studio-orders-board.tsx; src/app/api/studio/orders/route.ts",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S05",
@@ -738,12 +808,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/components/studio/inquiry-board.tsx; src/app/api/studio/workspace/route.ts",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S06",
@@ -759,11 +831,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio/inquiry-board.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S07",
@@ -779,11 +853,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio/catalogue-editor.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S08",
@@ -799,11 +875,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio/catalogue-editor.tsx; src/components/studio/product-details.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S09",
@@ -819,12 +897,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio/catalogue-editor.tsx; src/lib/product-form.ts",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S10",
@@ -840,12 +920,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio/product-details.tsx; src/components/studio/revision-history.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S11",
@@ -861,12 +943,14 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA",
+      "verificationEvidence": "Paragraph/source/identity/media hash review and TypeScript wiring only; no application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio/content-editor.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S12",
@@ -882,11 +966,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio/media-library.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S13",
@@ -902,11 +988,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio/reference-viewer.tsx; src/app/api/studio/references/[id]/route.ts",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S14",
@@ -922,11 +1010,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio/staff-editor.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S15",
@@ -942,11 +1032,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio/business-settings.tsx; src/components/studio/reference-cleanup.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S16",
@@ -962,11 +1054,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Source design defined; Phase 11 verification pending",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/studio/operations.tsx; src/components/studio/inquiry-board.tsx",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "S17",
@@ -982,11 +1076,13 @@
       "motionFallback": "Native scroll, no essential content delayed; reduced motion static",
       "backendDependency": "Authenticated shared application database/private store; separate disposable resources required for QA",
       "accessibilityState": "Shared focus/static/reduced-motion source updated; prepared P11 scenarios in PHASE-3-DESIGN-SYSTEM.md",
-      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA",
+      "verificationEvidence": "Node 22 TypeScript wiring and source review only; no application/DB/browser/concurrency QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending final integrated QA",
       "implementationEvidence": "src/components/shop/dialog.tsx; src/components/studio/workspace-api.ts",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
-      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan"
+      "phase7Evidence": "PHASE-7-STUDIO.md; S01–S17 capability matrix and prepared permission/concurrency evidence plan",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained"
     },
     {
       "id": "P32",
@@ -1002,16 +1098,18 @@
       "motionFallback": "All fields and saved receipt usable without motion",
       "backendDependency": "V2 contract migration, guest-bound upload/save, message finalization",
       "accessibilityState": "Specified; Phase 11 verification pending",
-      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA",
+      "verificationEvidence": "TypeScript wiring, Preview metadata/backup integrity/original-data migration preservation only; no inquiry/upload/runtime application QA; Phase 9 compiler/source-media inspection only; no runtime QA",
       "finalDisposition": "Pending activation prerequisites and final integrated QA",
       "implementationEvidence": "src/lib/bespoke-schema.ts; src/lib/order-contract.ts; scripts/phase2-order-contract.sql",
       "sharedDesignEvidence": "P3.1–P3.6 source/specification: PHASE-3-DESIGN-SYSTEM.md; final Phase 11 verification pending",
       "phase5Evidence": "PHASE-5-CUSTOMIZATION.md; phase-5-schemas.json; shared schema/brief validators, forms/recovery and Studio draft authoring",
       "phase6Evidence": "PHASE-6-ORDER-HANDOFF.md; phase-6-preview-migration.json; atomic v2 core, saved-message finalization and guest/staff recovery source",
       "phase7Evidence": "PHASE-7-STUDIO.md; original saved brief, private reference access, operational amendments and saved-order handoff retained",
-      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA"
+      "phase8Evidence": "PHASE-8-PUBLIC-CONTENT.md; phase-8-content.json; factual public content, routes/forms/metadata and reviewed-copy source checkpoint; no runtime QA",
+      "phase9Evidence": "PHASE-9-MEDIA-REFINEMENT.md; phase-9-source.json; phase-9-optimized-media.json",
+      "phase9Disposition": "Shared public motion/responsive/media states; complete instance mapping retained"
     }
   ],
-  "updated": "2026-09-23",
-  "activePlanRevision": "3.9"
+  "updated": "2026-09-24",
+  "activePlanRevision": "3.10"
 }

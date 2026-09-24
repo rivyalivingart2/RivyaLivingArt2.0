@@ -22,6 +22,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP001"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -44,6 +50,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP013"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -66,6 +78,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP035"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -87,6 +105,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP048"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -108,6 +132,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP069"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -129,6 +159,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP002"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -150,6 +186,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP014"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -171,6 +213,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP025"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -192,6 +240,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP043"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -213,6 +267,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP051"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -234,6 +294,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP057"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -255,6 +321,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP077"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -276,6 +348,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP003"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -297,6 +375,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP004"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -318,6 +402,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP005"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -339,6 +429,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP006"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -360,6 +456,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP007"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -381,6 +483,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP008"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -402,6 +510,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP009"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -423,6 +537,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP010"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -444,6 +564,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP011"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -465,6 +591,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP012"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -486,6 +618,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP015"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -507,6 +645,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP016"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -528,6 +672,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP017"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -549,6 +699,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP018"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -570,6 +726,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP019"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -591,6 +753,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP020"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -612,6 +780,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP021"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -633,6 +807,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP022"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -654,6 +834,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP023"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -675,6 +861,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP024"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -696,6 +888,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP026"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -717,6 +915,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP027"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -738,6 +942,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP028"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -759,6 +969,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP029"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -780,6 +996,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP030"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -801,6 +1023,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP031"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -822,6 +1050,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP032"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -843,6 +1077,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP033"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -864,6 +1104,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP034"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -885,6 +1131,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP036"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -906,6 +1158,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP037"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -927,6 +1185,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP038"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -948,6 +1212,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP039"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -969,6 +1239,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP040"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -990,6 +1266,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP041"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1011,6 +1293,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP042"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1032,6 +1320,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP044"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1053,6 +1347,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP045"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1074,6 +1374,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP046"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1095,6 +1401,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP047"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1116,6 +1428,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP049"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1137,6 +1455,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP050"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1158,6 +1482,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP052"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1179,6 +1509,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP053"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1200,6 +1536,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP054"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1221,6 +1563,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP055"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1242,6 +1590,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP056"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1263,6 +1617,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP058"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1284,6 +1644,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP059"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1305,6 +1671,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP060"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1326,6 +1698,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP061"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1347,6 +1725,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP062"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1368,6 +1752,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP063"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1389,6 +1779,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP064"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1410,6 +1806,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP065"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1431,6 +1833,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP066"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1452,6 +1860,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP067"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1473,6 +1887,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP068"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1494,6 +1914,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP070"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1515,6 +1941,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP071"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1536,6 +1968,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP072"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1557,6 +1995,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP073"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1578,6 +2022,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP074"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1599,6 +2049,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP075"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1620,6 +2076,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP076"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1641,6 +2103,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP078"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1662,6 +2130,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP079"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1683,6 +2157,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP080"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1704,6 +2184,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP081"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1725,6 +2211,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP082"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1746,6 +2238,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP083"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1767,6 +2265,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP084"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1788,6 +2292,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP085"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1809,6 +2319,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP091"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1830,6 +2346,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP095"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1851,6 +2373,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP099"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1872,6 +2400,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP103"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1893,6 +2427,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP107"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1914,6 +2454,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP086"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1935,6 +2481,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP087"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1956,6 +2508,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP088"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1977,6 +2535,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP089"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -1998,6 +2562,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP090"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2019,6 +2589,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP092"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2040,6 +2616,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP093"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2061,6 +2643,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP094"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2082,6 +2670,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP096"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2103,6 +2697,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP097"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2124,6 +2724,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP098"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2145,6 +2751,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP100"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2166,6 +2778,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP101"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2187,6 +2805,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP102"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2208,6 +2832,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP104"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2229,6 +2859,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP105"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2250,6 +2886,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP106"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2271,6 +2913,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP108"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2292,6 +2940,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP109"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2313,6 +2967,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP111"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2322,7 +2982,7 @@
       "name": "Initial Story",
       "tier": "personal",
       "template": "P06/P07",
-      "image": "/media/generated/dp112-initial-story-keychain-portrait-4x5.webp",
+      "image": "/media/generated/dp110-petal-drop-earrings-portrait-4x5.webp",
       "source": "src/lib/rivya/data.ts + src/lib/catalogue.ts",
       "sourceDimensions": "32 × 8 × 50 mm",
       "sourceMaterials": "Resin · Metal",
@@ -2334,6 +2994,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP112"
+      },
+      "phase9": {
+        "sourceDisposition": "Reviewed visual association corrected; deliberate product and media draft reconciliation required",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Existing published media ownership will fail closed until corrected metadata is deliberately published"
       }
     },
     {
@@ -2343,7 +3009,7 @@
       "name": "Chaptermark",
       "tier": "personal",
       "template": "P06/P07",
-      "image": "/media/generated/dp113-chaptermark-flower-bookmark-portrait-4x5.webp",
+      "image": "/media/generated/dp112-initial-story-keychain-portrait-4x5.webp",
       "source": "src/lib/rivya/data.ts + src/lib/catalogue.ts",
       "sourceDimensions": "30 × 3 × 145 mm",
       "sourceMaterials": "Resin",
@@ -2355,6 +3021,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP113"
+      },
+      "phase9": {
+        "sourceDisposition": "Reviewed visual association corrected; deliberate product and media draft reconciliation required",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Existing published media ownership will fail closed until corrected metadata is deliberately published"
       }
     },
     {
@@ -2376,6 +3048,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP114"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2385,7 +3063,7 @@
       "name": "Little Archive",
       "tier": "personal",
       "template": "P06/P07",
-      "image": "/media/generated/dp120-little-archive-keepsake-box-portrait-4x5.webp",
+      "image": "/media/generated/dp113-chaptermark-flower-bookmark-portrait-4x5.webp",
       "source": "src/lib/rivya/data.ts + src/lib/catalogue.ts",
       "sourceDimensions": "110 × 85 × 55 mm",
       "sourceMaterials": "Resin · Wood",
@@ -2397,6 +3075,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP120"
+      },
+      "phase9": {
+        "sourceDisposition": "Reviewed visual association corrected; deliberate product and media draft reconciliation required",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Existing published media ownership will fail closed until corrected metadata is deliberately published"
       }
     },
     {
@@ -2406,7 +3090,7 @@
       "name": "Petal",
       "tier": "personal",
       "template": "P06/P07",
-      "image": "/media/generated/dp110-petal-drop-earrings-portrait-4x5.webp",
+      "image": "/media/generated/dp120-little-archive-keepsake-box-portrait-4x5.webp",
       "source": "src/lib/rivya/data.ts + src/lib/catalogue.ts",
       "sourceDimensions": "120 × 25 × 40 mm",
       "sourceMaterials": "Resin",
@@ -2420,6 +3104,12 @@
           "Broad /ring/ type matching adds required jewellery size to Drop Earrings. Replace with explicit product capabilities before publication."
         ],
         "evidence": "phase-4-products.json#DP110"
+      },
+      "phase9": {
+        "sourceDisposition": "Reviewed visual association corrected; deliberate product and media draft reconciliation required",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Existing published media ownership will fail closed until corrected metadata is deliberately published"
       }
     },
     {
@@ -2429,7 +3119,7 @@
       "name": "Palm",
       "tier": "personal",
       "template": "P06/P07",
-      "image": "/media/generated/dp115-palm-mini-serving-tray-portrait-4x5.webp",
+      "image": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
       "source": "src/lib/rivya/data.ts + src/lib/catalogue.ts",
       "sourceDimensions": "120 × 25 × 40 mm",
       "sourceMaterials": "Resin",
@@ -2441,6 +3131,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP115"
+      },
+      "phase9": {
+        "sourceDisposition": "Reviewed visual association corrected; deliberate product and media draft reconciliation required",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Existing published media ownership will fail closed until corrected metadata is deliberately published"
       }
     },
     {
@@ -2462,6 +3158,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP116"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2471,7 +3173,7 @@
       "name": "Twinleaf",
       "tier": "personal",
       "template": "P06/P07",
-      "image": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
+      "image": "/media/generated/dp115-palm-mini-serving-tray-portrait-4x5.webp",
       "source": "src/lib/rivya/data.ts + src/lib/catalogue.ts",
       "sourceDimensions": "120 × 25 × 40 mm",
       "sourceMaterials": "Resin",
@@ -2483,6 +3185,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP117"
+      },
+      "phase9": {
+        "sourceDisposition": "Reviewed visual association corrected; deliberate product and media draft reconciliation required",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Existing published media ownership will fail closed until corrected metadata is deliberately published"
       }
     },
     {
@@ -2504,6 +3212,12 @@
         "publicationDisposition": "HELD_FOR_INTEGRATION_AND_FINAL_REVIEW",
         "schemaFollowUps": [],
         "evidence": "phase-4-products.json#DP118"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     },
     {
@@ -2527,6 +3241,12 @@
           "Broad /ring/ type matching adds required jewellery size to Mini Ring Dish. Replace with explicit product capabilities before publication."
         ],
         "evidence": "phase-4-products.json#DP119"
+      },
+      "phase9": {
+        "sourceDisposition": "Shared responsive card/full-object gallery and order summary image rules",
+        "evidence": "phase-9-optimized-media.json; phase-9-media-corrections.json",
+        "verification": "Not runtime-tested; complete subject/crop/device audit Phase 10/11",
+        "publication": "Published-only visibility and owned-media checks retained"
       }
     }
   ],
@@ -2537,7 +3257,11 @@
       "title": "A Room Begins with a Statement Table",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB002",
@@ -2545,7 +3269,11 @@
       "title": "Reading the Grain: Wood and Resin in a Shared Composition",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB003",
@@ -2553,7 +3281,11 @@
       "title": "Round, Oval or Rectangular: A Dining-Table Planning Notebook",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB004",
@@ -2561,7 +3293,11 @@
       "title": "Coffee Tables as Sculptural Objects",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB005",
@@ -2569,7 +3305,11 @@
       "title": "The Quiet Role of a Side Table",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB006",
@@ -2577,7 +3317,11 @@
       "title": "An Entryway Built Around One Console",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB007",
@@ -2585,7 +3329,11 @@
       "title": "Pairing Resin Art with Warm Neutral Interiors",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB008",
@@ -2593,7 +3341,11 @@
       "title": "A Guide to Describing Your Commission",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB009",
@@ -2601,7 +3353,11 @@
       "title": "What to Include in an Architect’s Enquiry",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB010",
@@ -2609,7 +3365,11 @@
       "title": "Wall Art at Architectural Scale",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB011",
@@ -2617,7 +3377,11 @@
       "title": "From a Mood Board to a Material Conversation",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB012",
@@ -2625,7 +3389,11 @@
       "title": "Light, Transparency and the Look of Resin",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB013",
@@ -2633,7 +3401,11 @@
       "title": "Chairs, Benches and the Shape of a Room",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB014",
@@ -2641,7 +3413,11 @@
       "title": "Planning a Large Piece for Delivery Access",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB015",
@@ -2649,7 +3425,11 @@
       "title": "Why a Visualization Is Not a Final Specification",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB016",
@@ -2657,7 +3437,11 @@
       "title": "A Home Office with a Material Focal Point",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB017",
@@ -2665,7 +3449,11 @@
       "title": "A Small Vocabulary of Finishes and Forms",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB018",
@@ -2673,7 +3461,11 @@
       "title": "The Project Story Behind a Collectible Interior",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB019",
@@ -2681,7 +3473,11 @@
       "title": "Turning a Wedding Memory into a Design Brief",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB020",
@@ -2689,7 +3485,11 @@
       "title": "Choosing a Format for a Bouquet Keepsake",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB021",
@@ -2697,7 +3497,11 @@
       "title": "Names and Dates: A Personalization Proofreading Checklist",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB022",
@@ -2705,7 +3509,11 @@
       "title": "Designing a Wedding-Invitation Keepsake",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB023",
@@ -2713,7 +3521,11 @@
       "title": "A Preservation Clock as a Memory Object",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB024",
@@ -2721,7 +3533,11 @@
       "title": "Before You Send Sentimental Materials",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB025",
@@ -2729,7 +3545,11 @@
       "title": "A Family Nameplate with a Personal Story",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB026",
@@ -2737,7 +3557,11 @@
       "title": "Photographs, Privacy and Memory Art",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB027",
@@ -2745,7 +3569,11 @@
       "title": "Small Objects with a Personal Meaning",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB028",
@@ -2753,7 +3581,11 @@
       "title": "A Cohesive Gift Set without Repeating Every Detail",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB029",
@@ -2761,7 +3593,11 @@
       "title": "Personalized Resin Jewellery: Preparing Your Brief",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB030",
@@ -2769,7 +3605,11 @@
       "title": "Seasonal Gifting without the Marketplace Clutter",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB031",
@@ -2777,7 +3617,11 @@
       "title": "Corporate Gifts as Small Design Objects",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB032",
@@ -2785,7 +3629,11 @@
       "title": "Choosing Initials, Colours and a Short Message",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB033",
@@ -2793,7 +3641,11 @@
       "title": "Inside a Material-Led Design Notebook",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB034",
@@ -2801,7 +3653,11 @@
       "title": "How to Read a Product Specification",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB035",
@@ -2809,7 +3665,11 @@
       "title": "Preparing a Clear WhatsApp Enquiry",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     },
     {
       "id": "DB036",
@@ -2817,7 +3677,11 @@
       "title": "From Draft to Approved Design: A Client Checklist",
       "template": "P19",
       "source": "src/lib/journal.ts + journal-extra.ts",
-      "status": "Preserved draft; review body/byline/date before durable publication"
+      "status": "Preserved draft; review body/byline/date before durable publication",
+      "phase9": {
+        "sourceDisposition": "Landscape cards, responsive reading image, validated published focal point",
+        "verification": "Final subject/crop/keyboard/device QA Phase 11"
+      }
     }
   ],
   "projects": [
@@ -2826,56 +3690,88 @@
       "slug": "quiet-dining-room",
       "title": "A quiet room. A singular table.",
       "template": "P28",
-      "status": "Intentionally unpublished: explicitly fictional completed-work example"
+      "status": "Intentionally unpublished: explicitly fictional completed-work example",
+      "phase9": {
+        "sourceDisposition": "Explicitly fictional; remain unpublished. No synthetic completed-work imagery generated.",
+        "verification": "Truthful empty/list/detail guards to verify in Phase 11"
+      }
     },
     {
       "id": "DS002",
       "slug": "room-around-an-open-centre",
       "title": "A room around an open centre.",
       "template": "P28",
-      "status": "Intentionally unpublished: explicitly fictional completed-work example"
+      "status": "Intentionally unpublished: explicitly fictional completed-work example",
+      "phase9": {
+        "sourceDisposition": "Explicitly fictional; remain unpublished. No synthetic completed-work imagery generated.",
+        "verification": "Truthful empty/list/detail guards to verify in Phase 11"
+      }
     },
     {
       "id": "DS003",
       "slug": "a-place-for-the-vows",
       "title": "A place for the vows.",
       "template": "P28",
-      "status": "Intentionally unpublished: explicitly fictional completed-work example"
+      "status": "Intentionally unpublished: explicitly fictional completed-work example",
+      "phase9": {
+        "sourceDisposition": "Explicitly fictional; remain unpublished. No synthetic completed-work imagery generated.",
+        "verification": "Truthful empty/list/detail guards to verify in Phase 11"
+      }
     },
     {
       "id": "DS004",
       "slug": "a-workspace-with-room-to-think",
       "title": "A workspace with room to think.",
       "template": "P28",
-      "status": "Intentionally unpublished: explicitly fictional completed-work example"
+      "status": "Intentionally unpublished: explicitly fictional completed-work example",
+      "phase9": {
+        "sourceDisposition": "Explicitly fictional; remain unpublished. No synthetic completed-work imagery generated.",
+        "verification": "Truthful empty/list/detail guards to verify in Phase 11"
+      }
     },
     {
       "id": "DS005",
       "slug": "an-arrival-in-one-line",
       "title": "An arrival in one line.",
       "template": "P28",
-      "status": "Intentionally unpublished: explicitly fictional completed-work example"
+      "status": "Intentionally unpublished: explicitly fictional completed-work example",
+      "phase9": {
+        "sourceDisposition": "Explicitly fictional; remain unpublished. No synthetic completed-work imagery generated.",
+        "verification": "Truthful empty/list/detail guards to verify in Phase 11"
+      }
     },
     {
       "id": "DS006",
       "slug": "a-wall-in-three-movements",
       "title": "A wall in three movements.",
       "template": "P28",
-      "status": "Intentionally unpublished: explicitly fictional completed-work example"
+      "status": "Intentionally unpublished: explicitly fictional completed-work example",
+      "phase9": {
+        "sourceDisposition": "Explicitly fictional; remain unpublished. No synthetic completed-work imagery generated.",
+        "verification": "Truthful empty/list/detail guards to verify in Phase 11"
+      }
     },
     {
       "id": "DS007",
       "slug": "an-open-screen",
       "title": "An open screen.",
       "template": "P28",
-      "status": "Intentionally unpublished: explicitly fictional completed-work example"
+      "status": "Intentionally unpublished: explicitly fictional completed-work example",
+      "phase9": {
+        "sourceDisposition": "Explicitly fictional; remain unpublished. No synthetic completed-work imagery generated.",
+        "verification": "Truthful empty/list/detail guards to verify in Phase 11"
+      }
     },
     {
       "id": "DS008",
       "slug": "one-anniversary-one-gesture",
       "title": "One anniversary. One gesture.",
       "template": "P28",
-      "status": "Intentionally unpublished: explicitly fictional completed-work example"
+      "status": "Intentionally unpublished: explicitly fictional completed-work example",
+      "phase9": {
+        "sourceDisposition": "Explicitly fictional; remain unpublished. No synthetic completed-work imagery generated.",
+        "verification": "Truthful empty/list/detail guards to verify in Phase 11"
+      }
     }
   ],
   "phase2": {
@@ -2895,5 +3791,12 @@
     "sourceDisposition": "120 products reconciled; existing IDs, assets and draft/candidate data preserved",
     "publication": "No Phase 4 database publication or live visibility inspection; final integration/review gates remain",
     "verification": "Source identity/copy/schema/media inventory only; rendered visual and runtime proof Phase 11"
+  },
+  "phase9": {
+    "date": "2026-09-24",
+    "planRevision": "3.10",
+    "identitiesPreserved": true,
+    "assetsPreserved": true,
+    "databaseWrites": false
   }
 }

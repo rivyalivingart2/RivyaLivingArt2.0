@@ -17,7 +17,7 @@ export async function GET(request:Request){
   if(view==='catalogue'){
    const rows=await sql`SELECT product_id,draft,published,version,published_version,visible FROM rivya_catalogue`;
    const map=new Map(rows.map(r=>[r.product_id,r]));
-   return json({products:[...baselineProducts.map(p=>{const r=map.get(p.id);return {product:r?.draft||p,version:r?.version||0,publishedVersion:r?.published_version||0,published:r?.published||null,visible:!!r?.published&&r.visible,hasDraft:!r||!r.published||JSON.stringify(r.draft)!==JSON.stringify(r.published)};}),...rows.filter(r=>!baselineProducts.some(p=>p.id===r.product_id)).map(r=>({product:r.draft,version:r.version,publishedVersion:r.published_version,published:r.published,visible:!!r.published&&r.visible,hasDraft:!r.published||JSON.stringify(r.draft)!==JSON.stringify(r.published)}))]});
+   return json({products:[...baselineProducts.map(p=>{const r=map.get(p.id);return {product:r?.draft||p,reviewedImages:{image:p.image,scene:p.scene||null,gallery:p.gallery||[]},version:r?.version||0,publishedVersion:r?.published_version||0,published:r?.published||null,visible:!!r?.published&&r.visible,hasDraft:!r||!r.published||JSON.stringify(r.draft)!==JSON.stringify(r.published)};}),...rows.filter(r=>!baselineProducts.some(p=>p.id===r.product_id)).map(r=>({product:r.draft,version:r.version,publishedVersion:r.published_version,published:r.published,visible:!!r.published&&r.visible,hasDraft:!r.published||JSON.stringify(r.draft)!==JSON.stringify(r.published)}))]});
   }
   if(view==='inquiry'){
    const id=url.searchParams.get('id');if(!uuid(id))return json({error:'Invalid reference.'},400);

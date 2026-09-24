@@ -43,6 +43,6 @@ export function Dialog({open,title,onClose,children,variant='panel'}:{open:boole
     const rect=e.currentTarget.getBoundingClientRect();
     if(e.clientX<rect.left || e.clientX>rect.right || e.clientY<rect.top || e.clientY>rect.bottom) onClose();
   }}>
-    <div className={s.dialogHead}><h2 id={titleId}>{title}</h2><button className={s.closeButton} type="button" onClick={onClose} aria-label={variant==='navigation'?'Close navigation':'Close dialog'}>Close ×</button></div>{children}
+    <div className={s.dialogHead}><h2 id={titleId}>{title}</h2><button className={s.closeButton} type="button" onClick={onClose} aria-label={variant==='navigation'?'Close navigation':'Close dialog'}>Close ×</button></div>{open&&children}
   </dialog>;
 }

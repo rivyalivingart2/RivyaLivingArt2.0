@@ -83,3 +83,7 @@ Hero is a supplied 16:9 spatial visualization with responsive object position; c
 ## Copy rules
 
 Lead with object and purpose. Use concrete material, scale and selection language only where supported. Price on request. The order submit action creates a saved inquiry; WhatsApp opening does not send or confirm it. Exact action labels and persisted-first sequencing are finalized in Phase 6. Error text states what failed and what remains saved. No fictional testimonials, invented provenance, guaranteed lead times or material performance. Staff controls use clear verbs: Save draft, Publish, Hide, Move to, Add note.
+
+## Phase 9 source refinements — 24 September 2026
+
+This supersedes earlier slot/motion details where different: compact home uses the same product's portrait; desktop uses its approved room image when available. Product/collection inspection and zoom use contain; journal cards use 16:10. Card hover scales at most 1.025 on a fine hover pointer; reduced-motion is static. A tall product-copy panel is not sticky. Form/contents sidebars respect the header/viewport and become static on compact/short screens. Native dialogs mount heavy children only while open. Portfolio has truthful empty published-only behavior from Phase 8, superseding the earlier design-stage redirect. Source corrections, remaining issues and exact verification scope are in PHASE-9-MEDIA-REFINEMENT.md.

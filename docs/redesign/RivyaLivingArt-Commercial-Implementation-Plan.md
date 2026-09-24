@@ -1,11 +1,11 @@
 # RivyaLivingArt — Commercial Implementation Plan
 
-**Revision:** 3.9 — Phase 8 public-content source complete; policy/publication and production gates retained
+**Revision:** 3.10 — Phase 9 media/refinement source complete; readiness and production gates retained
 **Prepared:** 23 September 2026  
-**Status:** Phase 8 source checkpoint complete; next P9.1; missing policy particulars, intake activation and final QA remain gated
+**Status:** Phase 9 source checkpoint complete; next P10.1; durable image reconciliation, policy particulars and final QA remain gated
 **Scope:** Every public page, product/customization instance, private Studio screen and shared state.  
 **Hosting direction:** Vercel only; free services only; commercial deployment eligibility unresolved. No Netlify.  
-**Execution boundary:** The owner authorized the next phase and GitHub publication. P8.1–P8.7 are implemented/reviewed at the source gate from main 630521de2f228d2fe935585e12e4639e98da8839 (PR #22), on codex/phase-8-public-content. P8.4 factual drafts are ready; exact undocumented retention/fulfilment terms remain a publication gate. No database write, migration, content publication or deployment occurred. Both order-write flags and automatic deployment remain off. Shared data is not a synthetic QA target. Formal QA remains Phase 11; eligible release remains Phase 12. Read PHASE-8-PUBLIC-CONTENT.md and L12.
+**Execution boundary:** The owner authorized the next phase and GitHub publication. P9.1–P9.6 source checkpoint continues merged main 94f70f76c8f61c2fd0c01a3221b48d836e91ea23 (PR #23) on codex/phase-9-media-refinement. Responsive media/motion/loading refined; six existing image associations corrected. No database read/write, migration, content publication or deployment. Both order-write flags and automatic deployment remain off. Shared data is not a synthetic QA target. Formal QA remains Phase 11; eligible release Phase 12. Read PHASE-9-MEDIA-REFINEMENT.md and L13.
 
 **Canonical plan after publication:** `docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md` in the existing repository. The outputs file is a synchronized delivery copy of the same revision, not a competing plan. Read `docs/decisions/2026-09-23-revised-phase-1-approved.md` for the approval record. No repeat plan approval is needed.
 
@@ -424,7 +424,7 @@ Formal integrated verification stays after backend integration. “Testing” be
 
 **Tasks:** P9.1 reconcile remaining assets and generate only defined approved gaps; P9.2 optimize/crop gallery and hero media per device; P9.3 refine transitions/microinteractions/reduced motion; P9.4 align all breakpoints, long content, sticky actions and touch targets; P9.5 tune bundle/query/image/font loading and recoverable states; P9.6 reconcile every route/instance against the coverage register.
 
-**Dependencies:** complete integrated public/Studio source; approved content/assets. **Files/systems:** shared components/styles, asset manifest/derivatives, image configuration and data-query boundaries. **Database impact:** media metadata/content revisions only. **UI impact:** complete platform; no motion added at the expense of task completion. **Security:** keep customer media outside public assets and generation tools. **Testing:** prepare visual/device/static fallback cases; comprehensive measurement follows Phase 10/11. **Deliverables:** finished candidate, optimized media manifest and unresolved-issue register. **Exit criteria:** all required source/instance work reconciled; remaining issues explicitly assigned to readiness/QA rather than hidden. **Resume point:** P10.1.
+**Dependencies:** complete integrated public/Studio source; approved content/assets. **Files/systems:** shared components/styles, asset manifest/derivatives, image configuration and data-query boundaries. **Database impact:** media metadata/content revisions only. **UI impact:** complete platform; no motion added at the expense of task completion. **Security:** keep customer media outside public assets and generation tools. **Testing:** prepare visual/device/static fallback cases; comprehensive measurement follows Phase 10/11. **Deliverables:** finished candidate, optimized media manifest and unresolved-issue register. **Exit criteria:** all required source/instance work reconciled; remaining issues explicitly assigned to readiness/QA rather than hidden. **Resume point:** P10.1. **Status:** Source checkpoint complete. All 49 coverage rows/164 instances/59 routes and 144 asset files reconciled; six source image assignments corrected, with deliberate Studio reconciliation pending. Remaining full visual review, measured performance, policy and eligibility gates explicitly assigned in P9-R01–P9-R07. No runtime QA claim.
 
 ### Phase 10 — Commercial-readiness audit and remediation
 
@@ -683,9 +683,15 @@ Approval is recorded. It does not waive hosting eligibility, final QA, privacy o
 
 **Phase 8 publication receipt:** implementation 210112d1482cb8f5be6f1b961cc11cd781602acc pushed to codex/phase-8-public-content and independently matched to GitHub on 23 September 2026. Main remained 630521de2f228d2fe935585e12e4639e98da8839. See phase-8-github-publication.json; no database publication or deployment. This documentation follow-up and the local completion artifact retain the final checkpoint.
 
+### L13. Phase 9 source completion — 24 September 2026
+
+**Phase:** 9 — Media, motion and responsive refinement. **Status:** source checkpoint complete; final QA/publication/readiness gated. **Completed:** source media inventory and 15 image inspections; six mismatched gift associations corrected with existing files and deliberate Studio apply controls; single-resource responsive hero, contain gallery/zoom/feature/form media, landscape article cards and published focal points; long-content/touch/short-screen/sticky behavior; static reduced-motion; lazy Studio pages, separate card/gallery modules, conditional dialog content, request-scoped public-media query and bounded optimizer. **Coverage:** 49 rows, 164 instances, 59 routes, 144 original asset files preserved. **Data:** no database operation or publication; original candidate/copy proposals/drafts unchanged. **Checks:** TypeScript no-emit wiring and source/preservation only. **Risks:** durable six-record media reconciliation, full image-subject/crop review, DP118 edge treatment, measurements, eligibility/policy/runtime-grant/staff-secret/backup/full-restore gates remain assigned in P9-R01–P9-R07. **Next:** P10.1. Baseline 94f70f76c8f61c2fd0c01a3221b48d836e91ea23; branch codex/phase-9-media-refinement. See phase report/source register/media inventory and GitHub receipt after publication.
+
+**Phase 9 publication receipt:** implementation 10d9610176421312f30f8f7204fee75fb3c746a4 pushed to codex/phase-9-media-refinement and independently matched to GitHub on 24 September 2026. Main remains 94f70f76c8f61c2fd0c01a3221b48d836e91ea23. See phase-9-github-publication.json; final documentation head is recorded in the local completion artifact. No database operation or deployment.
+
 ## M. Final recommendation
 
-Continue the approved saved-order-only scope from the Phase 8 checkpoint at P9.1. Preserve the shared-target schema, saved-message contract and Studio source; complete remaining public content/media/readiness, then prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
+Continue the approved saved-order-only scope from the Phase 9 checkpoint at P10.1. Preserve the shared-target schema, saved-message contract and Studio source; complete the integrated commercial-readiness audit and assigned media/publication remediation, then prove the full platform before release. Do not remove legitimate order functionality merely to seek a Hobby-plan workaround.
 
 The statement below applies to **this revised implementation**. Substantial earlier source work exists and is preserved; it has not been reset or falsely described as nonexistent.
 
@@ -705,5 +711,7 @@ PHASE 7 STATUS: COMPLETE — STUDIO SOURCE; FORMAL QA P11, NO DATA WRITES.
 
 PHASE 8 STATUS: SOURCE CHECKPOINT COMPLETE — PUBLIC CONTENT; POLICY PARTICULARS AND FINAL QA STILL GATED.
 
+PHASE 9 STATUS: SOURCE CHECKPOINT COMPLETE — MEDIA/MOTION/RESPONSIVE; READINESS AND FINAL QA STILL GATED.
+
 NEXT ACTION:
-Begin Phase 9 from task P9.1.
+Begin Phase 10 from task P10.1.

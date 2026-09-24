@@ -3,10 +3,10 @@ export type SuppliedMedia = {src:string;width:number;height:number;bytes:number}
 export const suppliedProductMedia: Record<string,{primary?:SuppliedMedia;detail?:SuppliedMedia}> = {
   "DP120": {
     "primary": {
-      "src": "/media/generated/dp120-little-archive-keepsake-box-portrait-4x5.webp",
+      "src": "/media/generated/dp113-chaptermark-flower-bookmark-portrait-4x5.webp",
       "width": 2048,
       "height": 2560,
-      "bytes": 194952
+      "bytes": 149738
     }
   },
   "DP119": {
@@ -35,21 +35,29 @@ export const suppliedProductMedia: Record<string,{primary?:SuppliedMedia;detail?
   },
   "DP117": {
     "primary": {
-      "src": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
-      "width": 2048,
-      "height": 2560,
-      "bytes": 192734
-    }
-  },
-  "DP115": {
-    "primary": {
       "src": "/media/generated/dp115-palm-mini-serving-tray-portrait-4x5.webp",
       "width": 2048,
       "height": 2560,
       "bytes": 170986
     }
   },
+  "DP115": {
+    "primary": {
+      "src": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 192734
+    }
+  },
   "DP112": {
+    "primary": {
+      "src": "/media/generated/dp110-petal-drop-earrings-portrait-4x5.webp",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 217150
+    }
+  },
+  "DP113": {
     "primary": {
       "src": "/media/generated/dp112-initial-story-keychain-portrait-4x5.webp",
       "width": 2048,
@@ -57,20 +65,12 @@ export const suppliedProductMedia: Record<string,{primary?:SuppliedMedia;detail?
       "bytes": 249386
     }
   },
-  "DP113": {
-    "primary": {
-      "src": "/media/generated/dp113-chaptermark-flower-bookmark-portrait-4x5.webp",
-      "width": 2048,
-      "height": 2560,
-      "bytes": 149738
-    }
-  },
   "DP110": {
     "primary": {
-      "src": "/media/generated/dp110-petal-drop-earrings-portrait-4x5.webp",
+      "src": "/media/generated/dp120-little-archive-keepsake-box-portrait-4x5.webp",
       "width": 2048,
       "height": 2560,
-      "bytes": 217150
+      "bytes": 194952
     }
   },
   "DP111": {

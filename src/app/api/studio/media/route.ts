@@ -7,7 +7,7 @@ const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache
 export async function GET(){
  try{if(!await studioSession())return json({error:'Sign in to continue.'},401);
   const rows=await studioDb()`SELECT path,draft,published,version FROM rivya_public_media`;const map=new Map(rows.map(r=>[r.path,r]));
-  return json({media:approvedPublicMedia.map(m=>({media:map.get(m.path)?.draft||m,version:map.get(m.path)?.version||0,published:map.get(m.path)?.published||null}))});
+  return json({media:approvedPublicMedia.map(m=>({media:map.get(m.path)?.draft||m,reviewedMedia:m,version:map.get(m.path)?.version||0,published:map.get(m.path)?.published||null}))});
  }catch{return json({error:'The approved media library is unavailable.'},503);}
 }
 export async function POST(request:Request){
