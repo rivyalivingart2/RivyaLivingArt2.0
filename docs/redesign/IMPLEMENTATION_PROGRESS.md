@@ -6,7 +6,7 @@ Phase 10 — AUDIT/REMEDIATION CHECKPOINT COMPLETE under master 3.11. Commercial
 
 ## Current Task
 
-Source fixes and reports complete on codex/phase-10-commercial-readiness, based on freshly fetched merged main 80be3a0120e200b2d7ce874305b2d117d4e104e1, Phase 9 PR #24. GitHub publication is the remaining checkpoint action; the receipt and local completion artifact will record independently verified heads.
+Source fixes and reports complete on codex/phase-10-commercial-readiness, based on freshly fetched merged main 80be3a0120e200b2d7ce874305b2d117d4e104e1, Phase 9 PR #24. Implementation 3839e6a9e5bacdea0c2cdc30f9c52946f5c3d973 was pushed and independently matched to GitHub. See phase-10-github-publication.json; this documentation follow-up and the local completion artifact record final publication. No operation is running.
 
 ## Completed
 
