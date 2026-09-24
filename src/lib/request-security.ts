@@ -3,7 +3,7 @@ import {cookies,headers} from 'next/headers';
 import {createHmac,randomBytes} from 'node:crypto';
 import {studioDb} from './studio-db';
 export const guestCookie=process.env.NODE_ENV==='production'?'__Host-rivya-inquiry':'rivya-inquiry';
-export function privateHash(value:string){const key=process.env.STUDIO_SESSION_SECRET;if(!key)throw new Error('Service unavailable');return createHmac('sha256',key).update(value).digest('hex');}
+export function privateHash(value:string){const key=process.env.STUDIO_SESSION_SECRET;if(!key||key.length<32)throw new Error('Service unavailable');return createHmac('sha256',key).update(value).digest('hex');}
 export async function guestIdentity(create=false){
  const jar=await cookies();let token=jar.get(guestCookie)?.value;
  if(!token||!/^[A-Za-z0-9_-]{43}$/.test(token)){if(!create)return null;token=randomBytes(32).toString('base64url');jar.set(guestCookie,token,{httpOnly:true,secure:process.env.NODE_ENV==='production',sameSite:'strict',path:'/',maxAge:86400});}

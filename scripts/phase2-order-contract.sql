@@ -1,4 +1,6 @@
--- PROPOSED / NOT APPLIED. Read docs/redesign/PHASE-2-MIGRATION-RUNBOOK.md.
+-- APPLIED in Phase 6 to the database now shared by future Preview/Production.
+-- Historical one-time migration: do not replay. Read PHASE-10-OPERATIONS-RUNBOOK.md
+-- and phase-6-preview-migration.json before any separately reviewed schema change.
 -- No build/seed hook invokes this file. Requires reconciled schema + independent backup.
 -- One-time transaction: intentionally fail on existing columns (do not hide drift).
 BEGIN;

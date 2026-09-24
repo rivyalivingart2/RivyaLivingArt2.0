@@ -2,56 +2,36 @@
 
 ## Current Phase
 
-Phase 9 — SOURCE CHECKPOINT COMPLETE under master 3.10. P9.1–P9.6 source/coverage work complete. Formal QA remains Phase 11. Next: P10.1.
+Phase 10 — AUDIT/REMEDIATION CHECKPOINT COMPLETE under master 3.11. Commercial release HELD; this is not a production-readiness or TESTED claim.
 
 ## Current Task
 
-Source implementation and continuation files published. Implementation 10d9610176421312f30f8f7204fee75fb3c746a4 independently matches GitHub codex/phase-9-media-refinement. See phase-9-github-publication.json and the local completion artifact for the documentation follow-up. Main baseline 94f70f76c8f61c2fd0c01a3221b48d836e91ea23, PR #23. Branch codex/phase-9-media-refinement.
+Source fixes and reports complete on codex/phase-10-commercial-readiness, based on freshly fetched merged main 80be3a0120e200b2d7ce874305b2d117d4e104e1, Phase 9 PR #24. GitHub publication is the remaining checkpoint action; the receipt and local completion artifact will record independently verified heads.
 
 ## Completed
 
-- Responsive single-resource home hero, full-object gallery/feature/form images, landscape article cards and published focal points.
-- Six misassigned gift images reconciled from actual pixels; original files/paths preserved. Studio deliberate reviewed-image and media-association apply controls.
-- Conditional dialog content, separate card/gallery modules, six lazy Studio editors, deliberate detail navigation and shared request-scoped public-media read.
-- Bounded image optimizer, existing local fonts retained, long-content/short-screen/touch/reduced-motion improvements and recovery states.
-- 144 assets with dimensions/bytes/hashes; 49 coverage rows, 164 instances and 59 route/API source files reconciled.
+- Audited current Vercel Hobby/account/env/deployment metadata and official hosting restriction.
+- Read-only shared schema/row-count/runtime-role and private Blob inventory; confirmed encrypted-backup files exist.
+- Fixed login throttle normalization, guest secret minimum, validated public contacts and product-media publication prerequisites.
+- Added truthful admin-only service/attention counts and initial business-contact publication flow.
+- Produced Commercial Readiness Report CR-01–CR-20, license inventory and operating/recovery/grant/privacy/publication runbook; corrected stale migration guidance.
 
-## In Progress
+## Database and Provider Changes
 
-None. Source publication is independently verified. No server, database operation or deployment is running.
+None. Read-only transactions and object metadata only. No schema/grant/record/configuration publication or modification, uploads, deletion, export, message sending or deployment. Existing budgets/session and all original source assets/data/drafts preserved.
 
-## Pending
+## Verification
 
-P10.1 hosting/account eligibility followed by commercial/operational readiness and remediation; P11 exact-candidate formal QA/full isolated restore; P12 final main and eligible production release.
+TypeScript no-emit development wiring passed on Node 22. Source/role-boundary review and sanitized read-only evidence recorded. No formal lint/build/unit/browser/device/API/security/restore QA; those remain Phase 11. No QA or test records in shared resources.
 
-## Blocked / Owner Input
+## Open Gates
 
-Existing Vercel-only/free-only commercial eligibility remains unresolved. Production/automatic deployment held. One specific retention/cancellation/delivery question was asked earlier; no answer or invented policy is presumed. Runtime grants, distinct staff secrets, real content/media/catalogue publication, backup/full restore and disposable QA resources remain required. No repeated blanket approval is needed.
-
-## Files Changed
-
-Shared public/Studio media/loading/responsive modules, query projection and image configuration; six source-media associations and deliberate draft reconciliation API/UI; phase report/registers/decision, master/coverage/instances/progress/continuation. No original asset bytes, customer records, package versions, schema, reviewed-publication.json or phase-8-content-proposals.json changed.
-
-## Database Changes
-
-None. No read/write, migration, seed, draft save/publication, staff action, reference upload/export/deletion or message send. Shared target is not a synthetic QA destination.
-
-## Testing Completed
-
-Node 22.23.2 TypeScript no-emit development wiring, source/route/instance preservation and 144 asset hashes. Fifteen source images inspected. No lint/build/unit/browser/device/API/security/database/restore/performance QA; no TESTED claim.
-
-## Known Issues
-
-See P9-R01–P9-R07 in PHASE-9-MEDIA-REFINEMENT.md and phase-9-source.json. Six corrected media/product revisions need deliberate publication; old ownership is excluded by public validation. Remaining image subjects, DP118 edges, device crops and measured performance require final review. Historic webmanifest hash differs from unchanged merged-main bytes; both retained, cause unasserted.
+See CR-01–CR-20. Hobby commercial eligibility remains unresolved. Owner-capable runtime credential must be replaced through a proved least-privilege procedure. Full isolated restore/portable recovery, complete personal-data lifecycle, exact pending policy facts, future runtime target/secret proof, deliberate media/catalogue/content/contact publication, all-image/device/license review and final QA remain gates. Six Phase 9 image corrections remain authoritative; preserve the original bytes and drafts.
 
 ## Next Exact Task
 
-**P10.1 — Resolve hosting eligibility and account/environment evidence.** Continue the integrated readiness audit; keep release paused wherever an actual gate remains. Preserve the six source corrections and deliberate Studio workflow. Do not replay applied migrations, enable intake, or run synthetic QA on shared data.
-
-Repository: C:/Users/gonda/Documents/Codex/2026-09-23/rivyalivingart-website-studio-preview-sites-project/work/repo
-
-Branch: codex/phase-9-media-refinement. Baseline main: 94f70f76c8f61c2fd0c01a3221b48d836e91ea23. Read the GitHub receipt and local Phase 9 completion artifact for final publication heads; fetch fresh refs.
+**P11.1 — Run safe local final-QA checks on the exact candidate.** Fetch current remote refs, read the report/runbook, preserve the deployment/intake holds. Prepare and verify different disposable DB/Blob targets and independent credentials before any synthetic integration/restore operation. Local QA may proceed while hosting stays held. Do not replay applied migrations or seed historical candidates on shared data. Close required findings before Phase 12 main/production release.
 
 ## Resume Instruction
 
-Read AGENTS.md, PROJECT_STATE.md, docs/CODEX_WORKFLOW.md, the Phase 9 decision, master 3.10, this file, PHASE-9-MEDIA-REFINEMENT.md and SHARED-DATA-CONFIGURATION.md. Start P10.1 without restarting or requesting the same plan approval.
+Read AGENTS.md, PROJECT_STATE.md, docs/CODEX_WORKFLOW.md, the Phase 10 decision, master 3.11, this file, the Commercial Readiness Report, operations runbook and SHARED-DATA-CONFIGURATION.md. Continue without restarting or repeating plan/asset/shared-storage approval. Existing production remains the older f9533bb deployment; new source is not live.

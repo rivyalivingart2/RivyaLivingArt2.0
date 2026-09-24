@@ -1,0 +1,180 @@
+{
+  "date": "2026-09-24T04:13:32.378Z",
+  "mode": "Read-only database transactions and private Blob inventory; no application calls",
+  "localTargetMatchesSavedSharedConnection": true,
+  "localFlags": {
+    "dataMode": "shared",
+    "intake": false,
+    "messageRetry": false
+  },
+  "tables": [
+    {
+      "name": "rivya_audit",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_business_settings",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_catalogue",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_content",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_inquiries",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_inquiry_notes",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_inquiry_upload_sessions",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_public_media",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_references",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_revisions",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_staff",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_storage_budget",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 1
+    },
+    {
+      "name": "rivya_studio_login_limits",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_studio_order_events",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_studio_orders",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 0
+    },
+    {
+      "name": "rivya_studio_sessions",
+      "owner_access": true,
+      "row_security": false,
+      "can_truncate": true,
+      "count": 1
+    }
+  ],
+  "runtimeRole": {
+    "superuser": false,
+    "create_role": true,
+    "create_database": true,
+    "bypass_rls": true,
+    "schema_create": true
+  },
+  "schema": {
+    "columnCount": 134,
+    "constraints": {
+      "total": 151,
+      "unvalidated": 1
+    },
+    "unvalidatedDetails": [
+      {
+        "table_name": "rivya_references",
+        "name": "rivya_references_vercel_only",
+        "definition": "CHECK ((storage_provider = 'vercel'::text)) NOT VALID"
+      }
+    ]
+  },
+  "privateStorage": {
+    "listedObjectCount": 0,
+    "hasMore": false
+  },
+  "backup": {
+    "id": "shared-database-2026-09-23T15-25-17-543Z",
+    "files": [
+      {
+        "name": "preview.dump.dpapi",
+        "exists": true
+      },
+      {
+        "name": "production.dump.dpapi",
+        "exists": true
+      },
+      {
+        "name": "preview-inventory.json.dpapi",
+        "exists": true
+      },
+      {
+        "name": "production-inventory.json.dpapi",
+        "exists": true
+      },
+      {
+        "name": "preview-connection.env.dpapi",
+        "exists": true
+      },
+      {
+        "name": "production-connection.env.dpapi",
+        "exists": true
+      }
+    ],
+    "freshRestorePerformed": false
+  },
+  "mutations": 0
+}
