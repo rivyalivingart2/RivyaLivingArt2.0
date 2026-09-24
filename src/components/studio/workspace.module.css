@@ -45,3 +45,25 @@
 @media(max-width:1080px){.sideNav{max-height:none;scrollbar-gutter:auto}.sideNav a{flex-shrink:0}}
 @media(max-width:540px){.top>*{max-width:100%}.workspace .toolbar>*{min-width:0;max-width:100%}.metrics{grid-template-columns:1fr 1fr}.mediaPreview{height:260px}}
 @media(prefers-reduced-motion:reduce){.workspace *::before,.workspace *::after{animation:none!important;transition:none!important}}
+
+/* Midnight atelier: styling only; every permission and operation remains intact. */
+.workspace{background:var(--canvas)}
+.top{background:var(--old-dark);margin-inline:-32px;padding-inline:32px;border-color:#b7927040}
+.top strong{font:400 24px/1.2 var(--font-display);letter-spacing:.01em}
+.workspaceLayout{gap:32px}.sideNav{background:var(--old-dark);padding:20px 10px;margin-top:28px}
+.sideNav a{position:relative;border-color:transparent;background:transparent}
+.sideNav a[aria-current=page]{color:var(--bronze-highlight);background:transparent;border-color:transparent}
+.sideNav a[aria-current=page]:before{content:'';position:absolute;left:0;top:12px;bottom:12px;width:2px;background:var(--brand-gradient)}
+.sideNav a:hover{background:var(--surface)}
+.workspace .primary,.referencePage button{background:var(--brand-gradient);color:var(--old-dark);border-color:var(--bronze)}
+.workspace .primary:hover:not(:disabled){background:var(--bronze-highlight);color:var(--old-dark)}
+.panel,.editor{background:var(--studio-panel);border-color:var(--border)}
+.list button{background:var(--studio-panel)}.list button[aria-pressed=true]{background:#172a3d;box-shadow:inset 2px 0 var(--bronze)}
+.metrics a{border-color:var(--border);border-top:2px solid #b7927080}.metrics strong{font:400 48px/1.2 var(--font-display);color:var(--ivory);margin-top:12px}
+.tableWrap th{color:var(--muted);background:var(--studio-panel);font-weight:500}.tableWrap td{background:#0b1728}
+.drawer{background:var(--studio-panel);box-shadow:none}.workspace :is(code,time){font-family:var(--font-data)}
+@media(max-width:1080px){.sideNav{margin-top:0;padding:12px 8px}.sideNav a[aria-current=page]:before{top:auto;bottom:0;left:12px;right:12px;width:auto;height:2px}}
+@media(max-width:800px){.top{margin-inline:-16px;padding-inline:16px}}
+/* Give wrapping filters a real flex basis: width alone loses to flex:1. */
+.toolbar label{flex:1 1 230px}
+@media(max-width:540px){.toolbar label{flex-basis:100%}}
