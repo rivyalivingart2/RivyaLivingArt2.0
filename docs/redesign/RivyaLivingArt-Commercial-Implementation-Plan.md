@@ -1,6 +1,6 @@
 # RivyaLivingArt — Commercial Implementation Plan
 
-**Revision:** 3.14 — Midnight atelier presentation evolution; protected Preview review
+**Revision:** 3.15 — owner image-fill correction; protected Preview review
 **Prepared:** 23 September 2026; updated 24 September 2026
 **Status:** Previous current-work release is live at main eb23160. New owner-authorized presentation work continues on codex/midnight-atelier for protected Preview review only. Prior operational pending work remains deferred.
 **Scope:** Every public page, product/customization instance, private Studio screen and shared state.

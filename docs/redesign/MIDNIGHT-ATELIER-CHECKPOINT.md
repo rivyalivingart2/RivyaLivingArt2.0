@@ -46,3 +46,8 @@ Runtime/data/API/auth/security source files and original asset bytes are unchang
 - Existing Vercel authentication protection is retained. The hosted request redirects to Vercel authentication; no public bypass was published. Application interaction evidence comes from isolated QA.
 - Production was read back unchanged at dpl_EtSWDywAQSZrMcBiRAH1Lh28cdBk, source eb2316019ad260a877ee2c3cdb63fcd5fd3b5bb9.
 - This receipt is a documentation-only follow-up to the deployed implementation commit. No application code changed after that deployment.
+## Owner visual correction — images fill their frames (24 September 2026)
+
+The owner supplied six screenshots and explicitly requested that website images fill their containers. This supersedes the earlier contain-style photography direction for framed public imagery. Hero, material, collection, journey, catalogue, product/form and enlarged-gallery images now use proportional cover fitting with their existing focal positions. Original image files remain unchanged. The supplied logo retains its proper proportions. Journal cards retain wide 16:10 frames, fixing the later portrait-card rule that had overridden their editorial aspect ratio.
+
+This is a presentation-only correction on codex/midnight-atelier / PR #27, to be delivered to protected Preview. Production remains unchanged. The build passed; focused desktop/tablet/mobile visual review is recorded with the follow-up Preview receipt.
