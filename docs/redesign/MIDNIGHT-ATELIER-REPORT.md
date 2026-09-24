@@ -46,3 +46,14 @@ Completed evidence and deployment details are recorded in `MIDNIGHT-ATELIER-CHEC
 Physical-device behavior, assistive-technology review and owner visual acceptance remain separate from automated Chrome checks. The 200% check emulates the effective CSS viewport and is not a claim of physical browser zoom verification. Existing operational items in `PENDING-WORK.md` remain outside this presentation task.
 
 Production remains the previous release. This redesign is delivered as a protected Preview for review; main merge and Production promotion require the next owner instruction.
+
+## Protected Preview publication
+
+- Vercel status: READY; target: Preview.
+- Preview: https://rivya-living-art2-0-jnta1utfl-rivyalivingart20-4705.vercel.app
+- Implementation commit: 6c539217074ba826f0a3c4cd70801427ef6a2e44.
+- Deployment: dpl_DbktSdAL6c2aVK1a7Xq2hq6QnzbR.
+- GitHub review: https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/27 (draft, not merged).
+- Existing Vercel authentication protection is retained. The hosted request redirects to Vercel authentication; no public bypass was published. Application interaction evidence comes from isolated QA.
+- Production was read back unchanged at dpl_EtSWDywAQSZrMcBiRAH1Lh28cdBk, source eb2316019ad260a877ee2c3cdb63fcd5fd3b5bb9.
+- This receipt is a documentation-only follow-up to the deployed implementation commit. No application code changed after that deployment.
