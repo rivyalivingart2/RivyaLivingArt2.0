@@ -4,14 +4,16 @@ import Link from 'next/link';
 import {notFound} from 'next/navigation';
 import {publishedContent} from '@/lib/published-content';
 import {publishedProducts} from '@/lib/shop-catalogue';
-import {ProductCard} from './catalogue-browser';
+import {ProductCard} from './product-card';
+import {imageSizes} from './image-sizes';
+import type {PublishedContentDocument} from '@/lib/published-content';
 import {EditorialStructuredData} from './structured-data';
 import type {ContentDocument,ContentSection} from '@/lib/content-model';
 import s from './shop.module.css';
 
 function Intro({eyebrow,title,children}:{eyebrow:string;title:string;children?:React.ReactNode}){return <header className={s.pageIntro}><span className={s.eyebrow}>{eyebrow}</span><h1>{title}</h1>{children&&<p>{children}</p>}</header>;}
 const minutes=(a:ContentDocument)=>Math.max(1,Math.ceil([a.description,...a.sections.flatMap(b=>[b.heading,...b.paragraphs,...(b.checklist||[])])].join(' ').trim().split(/\s+/).length/200));
-export function ArticleCard({article:a}:{article:ContentDocument}){return <Link className={s.card} href={a.route}>{a.image&&<div className={s.cardImage}><Image src={a.image} alt={a.imageAlt||''} fill sizes="(max-width:780px) 90vw, 30vw"/></div>}<p>{a.eyebrow} · {minutes(a)} min read</p><h3>{a.title}</h3><p>{a.description}</p><span className={s.textLink}>Read the story ↗</span></Link>;}
+export function ArticleCard({article:a}:{article:PublishedContentDocument}){return <Link className={s.card} prefetch={false} href={a.route}>{a.image&&<div className={`${s.cardImage} ${s.articleCardImage}`}><Image src={a.image} alt={a.imageAlt||''} style={{objectPosition:a.imagePosition}} fill sizes={imageSizes.card}/></div>}<p>{a.eyebrow} · {minutes(a)} min read</p><h3>{a.title}</h3><p>{a.description}</p><span className={s.textLink}>Read the story ↗</span></Link>;}
 function SectionBody({section:b}:{section:ContentSection}){return <>{b.paragraphs.map((p,i)=><p key={i}>{p}</p>)}{!!b.checklist?.length&&<ul>{b.checklist.map((p,i)=><li key={i}>{p}</li>)}</ul>}</>;}
 const policies:Record<string,string>={'/privacy':'Privacy','/terms':'Ordering terms','/shipping-delivery':'Delivery','/returns-cancellations':'Changes & cancellations','/accessibility':'Accessibility'};
 const nextSteps:Record<string,[string,string,string,string]>={
@@ -40,7 +42,7 @@ export async function EditorialPage({route}:{route:string}){
   <EditorialStructuredData document={content}/>
   <nav className={s.editorialBreadcrumb} aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span>{article&&<><Link href="/journal">Journal</Link><span aria-hidden="true">/</span></>}<span aria-current="page">{content.title}</span></nav>
   <Intro eyebrow={content.eyebrow} title={content.title}>{content.description}</Intro>
-  {content.image&&<figure className={s.storyImage}><Image src={content.image} alt={content.imageAlt||''} fill priority sizes="90vw"/><figcaption>Design visualization</figcaption></figure>}
+  {content.image&&<figure className={s.storyImage}><Image src={content.image} alt={content.imageAlt||''} style={{objectPosition:content.imagePosition}} fill priority sizes={imageSizes.story}/><figcaption>Design visualization</figcaption></figure>}
   <div className={s.readingLayout}>{content.sections.length>3&&<nav className={s.contents} aria-label="On this page"><p>On this page</p>{content.sections.map(b=><a key={b.id} href={'#'+b.id}>{b.heading}</a>)}</nav>}
    <div className={s.prose}>{article&&<p className={s.eyebrow}>By RivyaLivingArt · {minutes(content)} minute read</p>}
     {content.sections.map(b=>faq?<details id={b.id} key={b.id}><summary>{b.heading}</summary><SectionBody section={b}/></details>:<section id={b.id} key={b.id}><h2>{b.heading}</h2><SectionBody section={b}/></section>)}

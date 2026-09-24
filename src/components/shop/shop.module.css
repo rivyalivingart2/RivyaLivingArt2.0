@@ -110,7 +110,7 @@
 .site [data-editorial=materials-care] .prose>section{padding-block:28px;border-top:1px solid #ffffff30}
 .site [data-editorial=contact] .readingLayout{max-width:1150px}.site [data-editorial=contact] .contactCards{grid-template-columns:1fr 1fr}
 @media(max-width:780px){.site [data-editorial=process] .prose>section{display:block}.site [data-editorial=contact] .contactCards{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:no-preference){@supports(animation-timeline:view()){.section,.storyImage,.readingLayout{animation:section-arrival linear both;animation-timeline:view();animation-range:entry 0% entry 22%}}}
+@media(prefers-reduced-motion:no-preference){@supports(animation-timeline:view()){.section,.storyImage{animation:section-arrival linear both;animation-timeline:view();animation-range:entry 0% entry 22%}}}
 @keyframes section-arrival{from{opacity:1;transform:translateY(12px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.site *, .site *::before,.site *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .imageUnavailable{min-height:140px;display:flex;flex-direction:column;gap:16px;align-items:center;justify-content:center;background:#122b35;color:#e1e7e9;font:14px var(--font-body),sans-serif;padding:18px;text-align:center}.imageUnavailable button{min-height:44px;border:1px solid #a1b0ba;background:transparent;color:inherit;padding:10px 16px}
@@ -190,3 +190,39 @@
 .readingLoading{max-width:780px;padding:80px var(--gutter);margin:auto;min-height:55vh}
 .readingLoading h1{font-size:clamp(38px,6vw,60px);margin-block:20px}.readingLoading p{color:var(--muted)}
 @media(max-width:780px){.editorialBreadcrumb{padding-top:16px}.journalTopics{gap:8px}.journalTopics a{flex:1 1 auto;justify-content:space-between}.policyLinks{display:grid;grid-template-columns:1fr}}
+
+/* Phase 9: content determines height; image slots reserve space before loading. */
+.site :is(h1,h2,h3,p,dd,summary,legend),.dialog :is(h2,p,button){overflow-wrap:anywhere}
+.detail>*,.editorial>*,.collectionFeature>*,.formLayout>*,.footerTop>*,.fields>*{min-width:0}
+.textLink{white-space:normal;overflow-wrap:anywhere}
+.articleCardImage{aspect-ratio:16/10}
+.heroImage .artDirectedHero{object-position:var(--landscape-position)}
+.heroImageFallback{position:absolute;inset:0;display:flex;align-items:start;justify-content:end;padding:24px;color:var(--muted);font-size:14px}
+.detailVisual,.collectionFeatureImage{background:var(--forest)}
+.formAside .detailVisual img{object-fit:contain}
+.galleryControls{flex-wrap:wrap;gap:12px}
+.galleryControls button{max-width:100%}
+.detailImageStrip button{flex-shrink:0}
+.formAside{top:var(--anchor-offset);max-height:calc(100svh - var(--anchor-offset) - 24px);overflow:auto;scrollbar-gutter:stable;padding:4px}
+.detailCopy{position:static}
+.contents{max-height:calc(100svh - var(--anchor-offset) - 24px);overflow:auto;padding:4px}
+.button:hover:not(:disabled){transform:none}
+.card:hover .cardImage img,.card:focus-within .cardImage img{transform:none}
+.cardArrow{transition:transform var(--motion-fast) var(--motion-ease)}
+.dialog,.dialog.mobileMenu{padding-bottom:max(var(--space-panel),env(safe-area-inset-bottom))}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .card:hover .cardImage img{transform:scale(1.025)}
+ .card:hover .cardArrow,.card:focus-visible .cardArrow{transform:translateX(3px)}
+}
+@media(prefers-reduced-motion:no-preference){.dialog[open]{animation:arrive var(--motion-fast) var(--motion-ease)}}
+@media(max-height:700px){.formAside,.contents{position:static;max-height:none;overflow:visible}}
+@media(max-width:780px){
+ .heroImage .artDirectedHero{object-position:var(--portrait-position)}
+ .formAside,.contents{position:static;max-height:none;overflow:visible}
+ .formAside:not(:has(.detailVisual)){display:block}
+ .formAside:has(.detailVisual)>:not(.detailVisual){grid-column:2}
+ .formAside .detailVisual{grid-row:1 / span 6}
+ .detailVisual img{object-fit:contain}
+}
+@media(max-width:480px){.footerTop{grid-template-columns:1fr}.formAside:has(.detailVisual){grid-template-columns:90px minmax(0,1fr)}.site .formAside h2{font-size:32px}}
+@media(max-width:390px){.articleCardImage{aspect-ratio:16/10}.dialog .galleryControls button{flex:1}.stepper{flex-wrap:wrap}.stepper li{min-width:75px}}

@@ -1,0 +1,1442 @@
+{
+  "version": 1,
+  "date": "2026-09-24",
+  "planRevision": "3.10",
+  "baselineMain": "94f70f76c8f61c2fd0c01a3221b48d836e91ea23",
+  "branch": "codex/phase-9-media-refinement",
+  "counts": {
+    "coverageRows": 49,
+    "products": 120,
+    "articles": 36,
+    "heldProjects": 8,
+    "routeFiles": 59,
+    "assets": 144
+  },
+  "coverage": [
+    {
+      "id": "P01",
+      "route": "Home `/`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P02",
+      "route": "Furniture `/collectible-design`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P03",
+      "route": "Memory art `/memory-art`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P04",
+      "route": "Personal art `/personal-art`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P05",
+      "route": "Search/all pieces `/search`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P06",
+      "route": "Every product `/pieces/[slug]`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P07",
+      "route": "Every product form `/pieces/[slug]/customize`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P08",
+      "route": "Commission entry `/commission`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P09",
+      "route": "Preservation entry `/preserve`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P10",
+      "route": "Gift entry `/personalize`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P11",
+      "route": "Saved inquiry `/inquiry/received`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P12",
+      "route": "Our Atelier `/our-story`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P13",
+      "route": "About alias `/about`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P14",
+      "route": "Process `/process`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P15",
+      "route": "Materials/care `/materials-care`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P16",
+      "route": "Material aliases `/materials`, `/care`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P17",
+      "route": "Architects `/architects`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P18",
+      "route": "Journal `/journal`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P19",
+      "route": "Every journal article `/journal/[slug]`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P20",
+      "route": "Contact `/contact`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P21",
+      "route": "FAQ `/faq`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P22",
+      "route": "Privacy `/privacy`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P23",
+      "route": "Terms `/terms`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P24",
+      "route": "Delivery `/shipping-delivery`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P25",
+      "route": "Changes/cancellations `/returns-cancellations`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P26",
+      "route": "Accessibility `/accessibility`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P27",
+      "route": "Portfolio `/portfolio`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P28",
+      "route": "Every portfolio detail `/portfolio/[slug]`",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P29",
+      "route": "404/unavailable piece",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P30",
+      "route": "Loading/failure/offline/empty/expired states",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P31",
+      "route": "Public header/footer/menu/search overlay/gallery dialog",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S01",
+      "route": "Login `/studio/login`",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S02",
+      "route": "Overview `/studio`",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S03",
+      "route": "Inquiries list",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S04",
+      "route": "Kanban",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S05",
+      "route": "Inquiry/order detail",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S06",
+      "route": "Staff-entered order creation/edit",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S07",
+      "route": "Catalogue list",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S08",
+      "route": "Product create/edit",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S09",
+      "route": "Product customization builder",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S10",
+      "route": "Product/content preview and publication",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S11",
+      "route": "Content list and page/article editor",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S12",
+      "route": "Public media library/detail",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S13",
+      "route": "Private reference viewer",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S14",
+      "route": "Staff management",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S15",
+      "route": "Business/settings",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S16",
+      "route": "Activity, follow-ups and controlled export",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "S17",
+      "route": "All dialogs and system states",
+      "disposition": "Shared Studio responsive/scroll/loading source; original roles/data boundaries retained",
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "P32",
+      "route": "Bespoke /commission/customize",
+      "disposition": "Shared public motion/responsive/media states; complete instance mapping retained",
+      "formalQA": "Phase 11"
+    }
+  ],
+  "routes": [
+    "src/app/[collection]/page.tsx",
+    "src/app/about/page.tsx",
+    "src/app/accessibility/page.tsx",
+    "src/app/api/inquiry/receipt/route.ts",
+    "src/app/api/inquiry/reference/route.ts",
+    "src/app/api/inquiry/schema/route.ts",
+    "src/app/api/inquiry/session/route.ts",
+    "src/app/api/studio/cleanup/route.ts",
+    "src/app/api/studio/content/route.ts",
+    "src/app/api/studio/inquiry-handoff/route.ts",
+    "src/app/api/studio/media/route.ts",
+    "src/app/api/studio/operations/route.ts",
+    "src/app/api/studio/orders/route.ts",
+    "src/app/api/studio/references/[id]/route.ts",
+    "src/app/api/studio/revisions/route.ts",
+    "src/app/api/studio/settings/route.ts",
+    "src/app/api/studio/workspace/route.ts",
+    "src/app/architects/page.tsx",
+    "src/app/care/page.tsx",
+    "src/app/commission/customize/page.tsx",
+    "src/app/commission/page.tsx",
+    "src/app/contact/page.tsx",
+    "src/app/faq/page.tsx",
+    "src/app/inquiry/received/page.tsx",
+    "src/app/journal/[slug]/page.tsx",
+    "src/app/journal/page.tsx",
+    "src/app/materials-care/page.tsx",
+    "src/app/materials/page.tsx",
+    "src/app/our-story/page.tsx",
+    "src/app/page.tsx",
+    "src/app/personalize/page.tsx",
+    "src/app/pieces/[slug]/customize/page.tsx",
+    "src/app/pieces/[slug]/page.tsx",
+    "src/app/portfolio/[slug]/page.tsx",
+    "src/app/portfolio/page.tsx",
+    "src/app/preserve/page.tsx",
+    "src/app/preview/states/[kind]/page.tsx",
+    "src/app/preview/states/page.tsx",
+    "src/app/preview/studio/[...path]/page.tsx",
+    "src/app/preview/studio/content/[id]/page.tsx",
+    "src/app/preview/studio/content/new/page.tsx",
+    "src/app/preview/studio/content/page.tsx",
+    "src/app/preview/studio/media/page.tsx",
+    "src/app/preview/studio/modules/[module]/page.tsx",
+    "src/app/preview/studio/page.tsx",
+    "src/app/preview/studio/products/[id]/form/page.tsx",
+    "src/app/preview/studio/products/[id]/page.tsx",
+    "src/app/preview/studio/products/new/page.tsx",
+    "src/app/preview/studio/products/page.tsx",
+    "src/app/privacy/page.tsx",
+    "src/app/process/page.tsx",
+    "src/app/returns-cancellations/page.tsx",
+    "src/app/search/page.tsx",
+    "src/app/shipping-delivery/page.tsx",
+    "src/app/studio/[...path]/page.tsx",
+    "src/app/studio/login/page.tsx",
+    "src/app/studio/page.tsx",
+    "src/app/studio/reference/[id]/page.tsx",
+    "src/app/terms/page.tsx"
+  ],
+  "instances": [
+    {
+      "id": "DP001",
+      "slug": "river-channel",
+      "primary": "/media/product-hero-001-4x5.webp",
+      "scene": "/media/product-scene-001-16x9.webp",
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP013",
+      "slug": "shallow-basin",
+      "primary": "/media/product-hero-003-4x5.webp",
+      "scene": "/media/product-scene-003-16x9.webp",
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP035",
+      "slug": "narrow-span",
+      "primary": "/media/product-hero-005-4x5.webp",
+      "scene": "/media/product-scene-005-16x9.webp",
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP048",
+      "slug": "entryway-bench",
+      "primary": "/media/product-hero-009-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP069",
+      "slug": "lattice-object",
+      "primary": "/media/product-hero-016-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP002",
+      "slug": "stillwater-full-pour-dining-table",
+      "primary": "/media/generated/dp002-stillwater-full-pour-dining-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP014",
+      "slug": "orbit-circular-centre-table",
+      "primary": "/media/generated/dp014-orbit-circular-centre-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP025",
+      "slug": "twinleaf-matched-side-table-pair",
+      "primary": "/media/generated/dp025-twinleaf-matched-side-table-pair-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP043",
+      "slug": "petal-sculptural-chair",
+      "primary": "/media/generated/dp043-petal-sculptural-chair-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP051",
+      "slug": "single-slab-atelier-desk",
+      "primary": "/media/generated/dp051-single-slab-atelier-desk-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP057",
+      "slug": "horizon-band-wall-panel",
+      "primary": "/media/generated/dp057-horizon-band-wall-panel-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP077",
+      "slug": "estuary-reception-counter",
+      "primary": "/media/generated/dp077-estuary-reception-counter-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP003",
+      "slug": "verdant-split-slab-dining-table",
+      "primary": "/media/generated/dp003-verdant-split-slab-dining-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP004",
+      "slug": "monolith-long-span-dining-table",
+      "primary": "/media/generated/dp004-monolith-long-span-dining-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP005",
+      "slug": "estuary-oval-dining-table",
+      "primary": "/media/generated/dp005-estuary-oval-dining-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP006",
+      "slug": "canopy-round-dining-table",
+      "primary": "/media/generated/dp006-canopy-round-dining-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP007",
+      "slug": "tidal-rectangular-dining-table",
+      "primary": "/media/generated/dp007-tidal-rectangular-dining-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP008",
+      "slug": "umber-twin-base-dining-table",
+      "primary": "/media/generated/dp008-umber-twin-base-dining-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP009",
+      "slug": "lagoon-pedestal-dining-table",
+      "primary": "/media/generated/dp009-lagoon-pedestal-dining-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP010",
+      "slug": "ridge-bronze-inlay-dining-table",
+      "primary": "/media/generated/dp010-ridge-bronze-inlay-dining-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP011",
+      "slug": "dune-smoked-resin-dining-table",
+      "primary": "/media/generated/dp011-dune-smoked-resin-dining-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP012",
+      "slug": "grove-communal-dining-table",
+      "primary": "/media/generated/dp012-grove-communal-dining-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP015",
+      "slug": "contour-oval-coffee-table",
+      "primary": "/media/generated/dp015-contour-oval-coffee-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP016",
+      "slug": "drift-nesting-coffee-table",
+      "primary": "/media/generated/dp016-drift-nesting-coffee-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP017",
+      "slug": "pebble-sculptural-coffee-table",
+      "primary": "/media/generated/dp017-pebble-sculptural-coffee-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP018",
+      "slug": "delta-two-level-coffee-table",
+      "primary": "/media/generated/dp018-delta-two-level-coffee-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP019",
+      "slug": "cove-low-coffee-table",
+      "primary": "/media/generated/dp019-cove-low-coffee-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP020",
+      "slug": "halo-ring-base-coffee-table",
+      "primary": "/media/generated/dp020-halo-ring-base-coffee-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP021",
+      "slug": "moss-square-coffee-table",
+      "primary": "/media/generated/dp021-moss-square-coffee-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP022",
+      "slug": "slate-river-coffee-table",
+      "primary": "/media/generated/dp022-slate-river-coffee-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP023",
+      "slug": "current-asymmetric-coffee-table",
+      "primary": "/media/generated/dp023-current-asymmetric-coffee-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP024",
+      "slug": "terra-plinth-coffee-table",
+      "primary": "/media/generated/dp024-terra-plinth-coffee-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP026",
+      "slug": "dewdrop-pedestal-side-table",
+      "primary": "/media/generated/dp026-dewdrop-pedestal-side-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP027",
+      "slug": "arc-c-shape-side-table",
+      "primary": "/media/generated/dp027-arc-c-shape-side-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP028",
+      "slug": "reed-tall-side-table",
+      "primary": "/media/generated/dp028-reed-tall-side-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP029",
+      "slug": "nocturne-bedside-table",
+      "primary": "/media/generated/dp029-nocturne-bedside-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP030",
+      "slug": "loam-drum-side-table",
+      "primary": "/media/generated/dp030-loam-drum-side-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP031",
+      "slug": "lumen-translucent-side-table",
+      "primary": "/media/generated/dp031-lumen-translucent-side-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP032",
+      "slug": "brook-floating-top-side-table",
+      "primary": "/media/generated/dp032-brook-floating-top-side-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP033",
+      "slug": "silt-compact-bedside-table",
+      "primary": "/media/generated/dp033-silt-compact-bedside-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP034",
+      "slug": "eclipse-round-side-table",
+      "primary": "/media/generated/dp034-eclipse-round-side-table-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP036",
+      "slug": "root-sculptural-base-console",
+      "primary": "/media/generated/dp036-root-sculptural-base-console-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP037",
+      "slug": "passage-entry-console",
+      "primary": "/media/generated/dp037-passage-entry-console-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP038",
+      "slug": "horizon-long-console",
+      "primary": "/media/generated/dp038-horizon-long-console-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP039",
+      "slug": "meadow-floating-effect-console",
+      "primary": "/media/generated/dp039-meadow-floating-effect-console-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP040",
+      "slug": "trace-metal-frame-console",
+      "primary": "/media/generated/dp040-trace-metal-frame-console-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP041",
+      "slug": "sienna-curved-console",
+      "primary": "/media/generated/dp041-sienna-curved-console-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP042",
+      "slug": "canyon-split-level-console",
+      "primary": "/media/generated/dp042-canyon-split-level-console-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP044",
+      "slug": "crescent-lounge-chair",
+      "primary": "/media/generated/dp044-crescent-lounge-chair-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP045",
+      "slug": "aster-dining-chair",
+      "primary": "/media/generated/dp045-aster-dining-chair-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP046",
+      "slug": "rill-counter-stool",
+      "primary": "/media/generated/dp046-rill-counter-stool-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP047",
+      "slug": "flint-accent-stool",
+      "primary": "/media/generated/dp047-flint-accent-stool-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP049",
+      "slug": "forest-long-bench",
+      "primary": "/media/generated/dp049-forest-long-bench-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP050",
+      "slug": "fold-sculptural-bench",
+      "primary": "/media/generated/dp050-fold-sculptural-bench-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP052",
+      "slug": "meridian-writing-desk",
+      "primary": "/media/generated/dp052-meridian-writing-desk-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP053",
+      "slug": "stillpoint-study-desk",
+      "primary": "/media/generated/dp053-stillpoint-study-desk-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP054",
+      "slug": "haven-compact-desk",
+      "primary": "/media/generated/dp054-haven-compact-desk-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP055",
+      "slug": "linework-executive-desk",
+      "primary": "/media/generated/dp055-linework-executive-desk-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP056",
+      "slug": "terrace-studio-desk",
+      "primary": "/media/generated/dp056-terrace-studio-desk-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP058",
+      "slug": "vertical-drop-wall-panel",
+      "primary": "/media/generated/dp058-vertical-drop-wall-panel-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP059",
+      "slug": "sequence-wall-triptych",
+      "primary": "/media/generated/dp059-sequence-wall-triptych-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP060",
+      "slug": "strata-layered-wall-relief",
+      "primary": "/media/generated/dp060-strata-layered-wall-relief-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP061",
+      "slug": "solstice-circular-wall-piece",
+      "primary": "/media/generated/dp061-solstice-circular-wall-piece-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP062",
+      "slug": "tide-botanical-wall-panel",
+      "primary": "/media/generated/dp062-tide-botanical-wall-panel-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP063",
+      "slug": "mist-textured-wall-diptych",
+      "primary": "/media/generated/dp063-mist-textured-wall-diptych-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP064",
+      "slug": "verdure-large-wall-disc",
+      "primary": "/media/generated/dp064-verdure-large-wall-disc-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP065",
+      "slug": "contour-flow-wall-relief",
+      "primary": "/media/generated/dp065-contour-flow-wall-relief-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP066",
+      "slug": "amber-veil-wall-panel",
+      "primary": "/media/generated/dp066-amber-veil-wall-panel-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP067",
+      "slug": "stonewave-oversized-wall-art",
+      "primary": "/media/generated/dp067-stonewave-oversized-wall-art-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP068",
+      "slug": "rivergrid-architectural-wall-set",
+      "primary": "/media/generated/dp068-rivergrid-architectural-wall-set-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP070",
+      "slug": "parametric-floor-vessel",
+      "primary": "/media/generated/dp070-parametric-floor-vessel-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP071",
+      "slug": "cast-architectural-study",
+      "primary": "/media/generated/dp071-cast-architectural-study-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP072",
+      "slug": "form-study-i-sculpture",
+      "primary": "/media/generated/dp072-form-study-i-sculpture-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP073",
+      "slug": "form-study-ii-sculpture",
+      "primary": "/media/generated/dp073-form-study-ii-sculpture-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP074",
+      "slug": "material-column-sculpture",
+      "primary": "/media/generated/dp074-material-column-sculpture-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP075",
+      "slug": "form-study-iii-sculpture",
+      "primary": "/media/generated/dp075-form-study-iii-sculpture-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP076",
+      "slug": "arc-freestanding-resin-sculpture",
+      "primary": "/media/generated/dp076-arc-freestanding-resin-sculpture-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP078",
+      "slug": "canopy-room-divider-concept",
+      "primary": "/media/generated/dp078-canopy-room-divider-concept-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP079",
+      "slug": "monsoon-feature-wall-concept",
+      "primary": "/media/generated/dp079-monsoon-feature-wall-concept-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP080",
+      "slug": "grove-resin-and-wood-screen",
+      "primary": "/media/generated/dp080-grove-resin-and-wood-screen-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP081",
+      "slug": "contour-hospitality-table-installation",
+      "primary": "/media/generated/dp081-contour-hospitality-table-installation-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP082",
+      "slug": "stillwater-lobby-art-installation",
+      "primary": "/media/generated/dp082-stillwater-lobby-art-installation-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP083",
+      "slug": "bronzeleaf-display-plinth-set",
+      "primary": "/media/generated/dp083-bronzeleaf-display-plinth-set-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP084",
+      "slug": "tidal-architectural-panel-installation",
+      "primary": "/media/generated/dp084-tidal-architectural-panel-installation-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP085",
+      "slug": "vow-framed-varmala-keepsake",
+      "primary": "/media/product-hero-020-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP091",
+      "slug": "hourglass-floral-wall-clock",
+      "primary": "/media/generated/dp091-hourglass-floral-wall-clock-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP095",
+      "slug": "union-engagement-tray",
+      "primary": "/media/generated/dp095-union-engagement-tray-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP099",
+      "slug": "letterlight-invitation-frame",
+      "primary": "/media/generated/dp099-letterlight-invitation-frame-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP103",
+      "slug": "threshold-family-nameplate",
+      "primary": "/media/generated/dp103-threshold-family-nameplate-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP107",
+      "slug": "first-chapter-baby-keepsake",
+      "primary": "/media/generated/dp107-first-chapter-baby-keepsake-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP086",
+      "slug": "forever-solid-block-varmala-keepsake",
+      "primary": "/media/generated/dp086-forever-solid-block-varmala-keepsake-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP087",
+      "slug": "petal-story-bouquet-frame",
+      "primary": "/media/generated/dp087-petal-story-bouquet-frame-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP088",
+      "slug": "meadow-wedding-flower-disc",
+      "primary": "/media/generated/dp088-meadow-wedding-flower-disc-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP089",
+      "slug": "aster-single-bloom-keepsake",
+      "primary": "/media/generated/dp089-aster-single-bloom-keepsake-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP090",
+      "slug": "memory-garden-flower-shadowbox",
+      "primary": "/media/generated/dp090-memory-garden-flower-shadowbox-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP092",
+      "slug": "petal-hour-round-clock",
+      "primary": "/media/generated/dp092-petal-hour-round-clock-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP093",
+      "slug": "evergreen-botanical-desk-clock",
+      "primary": "/media/generated/dp093-evergreen-botanical-desk-clock-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP094",
+      "slug": "moment-preserved-flower-clock",
+      "primary": "/media/generated/dp094-moment-preserved-flower-clock-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP096",
+      "slug": "promise-ring-platter",
+      "primary": "/media/generated/dp096-promise-ring-platter-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP097",
+      "slug": "gather-celebration-tray",
+      "primary": "/media/generated/dp097-gather-celebration-tray-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP098",
+      "slug": "bloom-paired-ring-dishes",
+      "primary": "/media/generated/dp098-bloom-paired-ring-dishes-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP100",
+      "slug": "our-chapter-wedding-card-block",
+      "primary": "/media/generated/dp100-our-chapter-wedding-card-block-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP101",
+      "slug": "together-couple-memory-frame",
+      "primary": "/media/generated/dp101-together-couple-memory-frame-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP102",
+      "slug": "anniversary-story-display",
+      "primary": "/media/generated/dp102-anniversary-story-display-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP104",
+      "slug": "welcome-botanical-nameplate",
+      "primary": "/media/generated/dp104-welcome-botanical-nameplate-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP105",
+      "slug": "blessing-pooja-display",
+      "primary": "/media/generated/dp105-blessing-pooja-display-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP106",
+      "slug": "festival-memory-plaque",
+      "primary": "/media/generated/dp106-festival-memory-plaque-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP108",
+      "slug": "little-bloom-memory-frame",
+      "primary": "/media/generated/dp108-little-bloom-memory-frame-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP109",
+      "slug": "botanical-resin-pendant",
+      "primary": "/media/generated/dp109-botanical-resin-pendant-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP111",
+      "slug": "thread-of-light-resin-rakhi",
+      "primary": "/media/generated/dp111-thread-of-light-resin-rakhi-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP112",
+      "slug": "initial-story-keychain",
+      "primary": "/media/generated/dp110-petal-drop-earrings-portrait-4x5.webp",
+      "scene": null,
+      "correction": {
+        "id": "DP112",
+        "previous": "/media/generated/dp112-initial-story-keychain-portrait-4x5.webp",
+        "reviewed": "/media/generated/dp110-petal-drop-earrings-portrait-4x5.webp",
+        "reason": "Source pixels were assigned to the wrong product by filename. Visual subject inspected on 2026-09-24; bytes and original path preserved."
+      },
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP113",
+      "slug": "chaptermark-flower-bookmark",
+      "primary": "/media/generated/dp112-initial-story-keychain-portrait-4x5.webp",
+      "scene": null,
+      "correction": {
+        "id": "DP113",
+        "previous": "/media/generated/dp113-chaptermark-flower-bookmark-portrait-4x5.webp",
+        "reviewed": "/media/generated/dp112-initial-story-keychain-portrait-4x5.webp",
+        "reason": "Source pixels were assigned to the wrong product by filename. Visual subject inspected on 2026-09-24; bytes and original path preserved."
+      },
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP114",
+      "slug": "everyday-resin-coaster-set",
+      "primary": "/media/product-hero-029-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP120",
+      "slug": "little-archive-keepsake-box",
+      "primary": "/media/generated/dp113-chaptermark-flower-bookmark-portrait-4x5.webp",
+      "scene": null,
+      "correction": {
+        "id": "DP120",
+        "previous": "/media/generated/dp120-little-archive-keepsake-box-portrait-4x5.webp",
+        "reviewed": "/media/generated/dp113-chaptermark-flower-bookmark-portrait-4x5.webp",
+        "reason": "Source pixels were assigned to the wrong product by filename. Visual subject inspected on 2026-09-24; bytes and original path preserved."
+      },
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP110",
+      "slug": "petal-drop-earrings",
+      "primary": "/media/generated/dp120-little-archive-keepsake-box-portrait-4x5.webp",
+      "scene": null,
+      "correction": {
+        "id": "DP110",
+        "previous": "/media/generated/dp110-petal-drop-earrings-portrait-4x5.webp",
+        "reviewed": "/media/generated/dp120-little-archive-keepsake-box-portrait-4x5.webp",
+        "reason": "Source pixels were assigned to the wrong product by filename. Visual subject inspected on 2026-09-24; bytes and original path preserved."
+      },
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP115",
+      "slug": "palm-mini-serving-tray",
+      "primary": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
+      "scene": null,
+      "correction": {
+        "id": "DP115",
+        "previous": "/media/generated/dp115-palm-mini-serving-tray-portrait-4x5.webp",
+        "reviewed": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
+        "reason": "Source pixels were assigned to the wrong product by filename. Visual subject inspected on 2026-09-24; bytes and original path preserved."
+      },
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP116",
+      "slug": "still-form-catch-all-bowl",
+      "primary": "/media/generated/dp116-still-form-catch-all-bowl-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP117",
+      "slug": "twinleaf-mini-bookends",
+      "primary": "/media/generated/dp115-palm-mini-serving-tray-portrait-4x5.webp",
+      "scene": null,
+      "correction": {
+        "id": "DP117",
+        "previous": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
+        "reviewed": "/media/generated/dp115-palm-mini-serving-tray-portrait-4x5.webp",
+        "reason": "Source pixels were assigned to the wrong product by filename. Visual subject inspected on 2026-09-24; bytes and original path preserved."
+      },
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP118",
+      "slug": "pocketworld-paperweight",
+      "primary": "/media/generated/dp118-pocketworld-paperweight-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    },
+    {
+      "id": "DP119",
+      "slug": "promise-mini-ring-dish",
+      "primary": "/media/generated/dp119-promise-mini-ring-dish-portrait-4x5.webp",
+      "scene": null,
+      "correction": null,
+      "formalQA": "Phase 11"
+    }
+  ],
+  "preservation": {
+    "historicalCandidateSha256": "13588e3a70ddee78c0a71a727798581f9f2d94a2657b6d0f54c38e859bbd41c8",
+    "currentCandidateSha256": "13588e3a70ddee78c0a71a727798581f9f2d94a2657b6d0f54c38e859bbd41c8",
+    "sourceAssetsMatchBaseline": true,
+    "customerDataTouched": false
+  },
+  "budgets": {
+    "status": "Unmeasured Phase 11 targets",
+    "mobileLCPms": 2500,
+    "INPms": 200,
+    "CLS": 0.1,
+    "initialMobileImageBytes": 600000,
+    "cardImageBytes": 120000,
+    "initialPublicCompressedJSBytes": 220000,
+    "initialStudioCompressedJSBytes": 300000,
+    "queryGoal": "One public-media SELECT per React server render; no cross-request cache of customer or staff data",
+    "closedZoomImageRequests": 0,
+    "heroRequests": 1
+  },
+  "issues": [
+    {
+      "id": "P9-R01",
+      "severity": "High",
+      "owner": "P10.4 / administrator",
+      "issue": "Six source image assignments corrected; saved product and media revisions are not automatically changed.",
+      "resolution": "Compare and apply reviewed associations in Studio, preserve edited drafts/history, publish corrected media and product revisions deliberately only after readiness gates.",
+      "status": "Source remedy ready; durable publication pending"
+    },
+    {
+      "id": "P9-R02",
+      "severity": "High",
+      "owner": "P10.4 / P11",
+      "issue": "15 source images inspected, not every source image or final crop. Source filenames proved unreliable; remaining products need full image-subject and specification review.",
+      "resolution": "Review all 120 product primaries, owned gallery views and 36 article imagery associations. Hold mismatches; record corrections before release.",
+      "status": "Required release review"
+    },
+    {
+      "id": "P9-R03",
+      "severity": "Medium",
+      "owner": "P11 performance/device QA",
+      "issue": "Transfer sizes, image optimization cost, chunk savings, LCP/INP/CLS and font swap are not measured.",
+      "resolution": "Measure exact release candidate at 320/390/768/1024/1440/1920 widths, DPR 1/2, cold/warm and slow network. Budgets below are targets, not results.",
+      "status": "Deferred by development-first instruction"
+    },
+    {
+      "id": "P9-R04",
+      "severity": "High",
+      "owner": "P10.1",
+      "issue": "Existing Vercel-only/free-only commercial eligibility unresolved.",
+      "resolution": "Fresh provider/account evidence and eligible free path required; no upgrade/trial/deployment bypass.",
+      "status": "Production and automatic deployment held"
+    },
+    {
+      "id": "P9-R05",
+      "severity": "High",
+      "owner": "P10.2–P10.4",
+      "issue": "Operating-policy particulars, runtime grants, staff secrets, deliberate content publication and backup/full restore remain outstanding.",
+      "resolution": "Carry prior phase gates; obtain only missing factual business answers, never repeat blanket plan approval.",
+      "status": "Open"
+    },
+    {
+      "id": "P9-R06",
+      "severity": "High",
+      "owner": "P11",
+      "issue": "Configured Preview and Production share future live resources; synthetic tests cannot run there.",
+      "resolution": "Different disposable DB/private storage, authorized isolated setup and exact-candidate QA before activation; both write flags remain off.",
+      "status": "Open"
+    },
+    {
+      "id": "P9-R07",
+      "severity": "Medium",
+      "owner": "P10.4 / P11",
+      "issue": "DP118 paperweight source has visibly dark irregular edge treatment; final crop/background suitability unproven.",
+      "resolution": "Inspect full rendered crop on approved backgrounds; replace only if a concrete visual defect remains, preserving original.",
+      "status": "Recorded source observation"
+    }
+  ],
+  "next": "P10.1"
+}

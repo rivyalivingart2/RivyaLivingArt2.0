@@ -35,3 +35,13 @@
 @media(prefers-reduced-motion:reduce){.workspace *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 .definitionRow{display:contents}.preserveText{white-space:pre-wrap}.workspace fieldset,.inquiryDetail fieldset{border:0;padding:0;margin:0;min-width:0}.inquiryDetail fieldset label{margin:14px 0}.inquiryDetail fieldset button{margin-top:14px}.inquiryDetail [role=alert]{border-left:3px solid var(--error-text);padding:12px}.inquiryDetail details{margin-top:20px}
+
+/* Phase 9: long saved values and touch navigation stay inside their layout. */
+.workspace :is(h1,h2,h3,button,a,legend,strong){overflow-wrap:anywhere}
+.workspaceLayout>*,.layout>*,.grid>*,.metrics>*,.editor>*{min-width:0}
+.workspace button{max-width:100%;white-space:normal}
+.sideNav{max-height:calc(100svh - 32px);overflow:auto;scrollbar-gutter:stable}
+.tableWrap,.mediaGrid{overscroll-behavior:contain}
+@media(max-width:1080px){.sideNav{max-height:none;scrollbar-gutter:auto}.sideNav a{flex-shrink:0}}
+@media(max-width:540px){.top>*{max-width:100%}.workspace .toolbar>*{min-width:0;max-width:100%}.metrics{grid-template-columns:1fr 1fr}.mediaPreview{height:260px}}
+@media(prefers-reduced-motion:reduce){.workspace *::before,.workspace *::after{animation:none!important;transition:none!important}}

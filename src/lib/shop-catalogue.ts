@@ -2,18 +2,16 @@ import 'server-only';
 import {cache} from 'react';
 import {studioDb} from './studio-db';
 import {baselineProducts,validProduct,type ShopProduct} from './shop-model';
-import {validMedia,type PublicMedia} from './public-media';
+import {publishedMedia} from './published-media';
 
 const baseline=new Map(baselineProducts.map(p=>[p.id,p]));
 /** Published versions only; fixtures are validation references, never a fallback. */
 export const publishedProducts=cache(async():Promise<ShopProduct[]>=>{
  const sql=studioDb();
- const [rows,media]=await Promise.all([
+ const [rows,byPath]=await Promise.all([
   sql`SELECT product_id, published, published_version FROM rivya_catalogue WHERE visible=true AND published IS NOT NULL ORDER BY product_id`,
-  sql`SELECT path,published FROM rivya_public_media WHERE published IS NOT NULL`
+  publishedMedia()
  ]);
- const byPath=new Map<string,PublicMedia>();
- for(const row of media)if(validMedia(row.published)&&row.path===row.published.path)byPath.set(row.path,row.published);
  const products:ShopProduct[]=[];
  const slugs=new Set<string>();
  for(const row of rows){

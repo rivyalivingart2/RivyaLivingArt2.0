@@ -3030,5 +3030,14 @@
     "sourceDisposition": "120 products reconciled; existing IDs, assets and draft/candidate data preserved",
     "publication": "No Phase 4 database publication or live visibility inspection; final integration/review gates remain",
     "verification": "Source identity/copy/schema/media inventory only; rendered visual and runtime proof Phase 11"
+  },
+  "phase9": {
+    "date": "2026-09-24",
+    "planRevision": "3.10",
+    "currentDeliveryInventory": "phase-9-optimized-media.json",
+    "currentAssociationCorrections": "phase-9-media-corrections.json",
+    "historicalEntries": "Original source evidence preserved. Use Phase 9 associations instead of misleading filenames.",
+    "preservation": "All 144 tracked files exactly match merged Phase 8 bytes. Historical webmanifest hash differs from that unchanged baseline; both hashes retained.",
+    "visualScope": "15 source images inspected; full subject/material/crop acceptance remains P10/P11. No additional image generated."
   }
 }
