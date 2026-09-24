@@ -6,7 +6,7 @@ Phase 9 — SOURCE CHECKPOINT COMPLETE under master 3.10. P9.1–P9.6 source/cov
 
 ## Current Task
 
-Source implementation and continuation files ready. Git publication is the final checkpoint action. Main baseline 94f70f76c8f61c2fd0c01a3221b48d836e91ea23, PR #23. Branch codex/phase-9-media-refinement.
+Source implementation and continuation files published. Implementation 10d9610176421312f30f8f7204fee75fb3c746a4 independently matches GitHub codex/phase-9-media-refinement. See phase-9-github-publication.json and the local completion artifact for the documentation follow-up. Main baseline 94f70f76c8f61c2fd0c01a3221b48d836e91ea23, PR #23. Branch codex/phase-9-media-refinement.
 
 ## Completed
 
@@ -18,7 +18,7 @@ Source implementation and continuation files ready. Git publication is the final
 
 ## In Progress
 
-Git source publication and independent remote receipt. No server, database operation or deployment is running.
+None. Source publication is independently verified. No server, database operation or deployment is running.
 
 ## Pending
 

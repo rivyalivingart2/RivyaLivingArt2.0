@@ -84,4 +84,4 @@ TypeScript no-emit wiring passes on Node 22.23.2. Source comparison, route/insta
 
 Continue **P10.1** under master 3.10: obtain fresh Vercel account/hosting eligibility evidence, then the integrated readiness audit/remediation. Keep the existing free-only/Vercel-only commercial hold, both order-write flags off and automatic Git deployment disabled. Carry the unanswered exact retention/cancellation/delivery facts forward; do not ask for the same plan/product/image approvals. Shared Preview/Production and private storage approvals persist; never replay applied Phase 2/6 migrations blindly.
 
-Git publication is the remaining checkpoint action. The implementation receipt and local completion artifact will record independently verified commit identities.
+Implementation 10d9610176421312f30f8f7204fee75fb3c746a4 is published on codex/phase-9-media-refinement and independently matches GitHub. Main remains 94f70f76c8f61c2fd0c01a3221b48d836e91ea23. See phase-9-github-publication.json and the local completion artifact for the final documentation head. No database publication or deployment occurred.
