@@ -28,12 +28,12 @@ export function SavedOrderActions({receipt,endpoint,identity,saveReceiptLocation
   try{const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...identity,action:'prepare'})}),data=await response.json();if(!response.ok||!data.receipt)throw Error(data.error||'Message preparation is unavailable.');onChange(data.receipt);setMessage(data.receipt.state==='handoff_ready'?'Your saved order message is ready. Open WhatsApp when you are ready to send it.':data.receipt.reason);}
   catch(e){setMessage(e instanceof Error?e.message:'Your inquiry remains saved. Try preparing its message later.');}finally{lock.current=false;setBusy(false);}
  }
- async function copy(){if(!receipt.summary)return;try{await navigator.clipboard.writeText(receipt.summary);setCopied(true);setMessage('Complete saved order summary copied.');}catch{setManualCopy(true);setMessage('Clipboard access is unavailable. Select and copy the saved summary below.');}}
+ async function copy(){if(!receipt.summary)return;try{await navigator.clipboard.writeText(receipt.summary);setCopied(true);setMessage('Complete saved order summary copied.');setTimeout(()=>setCopied(false),4000);}catch{setManualCopy(true);setMessage('Clipboard access is unavailable. Select and copy the saved summary below.');}}
  return <><p>{receipt.reason}</p><div className={s.actions}>
- {receipt.summary&&<button type="button" disabled={busy} className={s.button} onClick={()=>void copy()}>Copy saved order summary</button>}
+ {receipt.summary&&<button type="button" disabled={busy} className={s.button} onClick={()=>void copy()}>{copied?'✓ Summary copied to clipboard':'Copy saved order summary'}</button>}
  {receipt.handoffAllowed&&<button type="button" disabled={busy} className={s.button+' '+s.outline} onClick={()=>void refresh(true)}>Open WhatsApp ↗</button>}
  {receipt.retryAvailable&&<button type="button" disabled={busy} className={s.button} onClick={()=>void prepare()}>Prepare saved order message</button>}
  <button type="button" disabled={busy} className={s.textLink} onClick={()=>void refresh()}>Refresh saved inquiry</button></div>
- <p role="status">{busy?'Checking your saved inquiry…':message}</p>
+ <p role="status" style={{minHeight:'24px'}}>{busy?'Checking your saved inquiry…':message}</p>
  {manualCopy&&receipt.summary&&<div><label className={s.field}>Complete saved summary<textarea readOnly rows={10} value={receipt.summary} onFocus={e=>e.currentTarget.select()}/></label><label className={s.check}><input type="checkbox" checked={copied} onChange={e=>setCopied(e.target.checked)}/>I have copied the complete summary and can paste it in WhatsApp.</label></div>}</>;
 }
