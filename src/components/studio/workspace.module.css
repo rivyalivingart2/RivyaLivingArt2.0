@@ -47,21 +47,23 @@
 @media(prefers-reduced-motion:reduce){.workspace *::before,.workspace *::after{animation:none!important;transition:none!important}}
 
 /* Midnight atelier: styling only; every permission and operation remains intact. */
-.workspace{background:var(--canvas)}
-.top{background:var(--old-dark);margin-inline:-32px;padding-inline:32px;border-color:#b7927040}
-.top strong{font:400 24px/1.2 var(--font-display);letter-spacing:.01em}
-.workspaceLayout{gap:32px}.sideNav{background:var(--old-dark);padding:20px 10px;margin-top:28px}
-.sideNav a{position:relative;border-color:transparent;background:transparent}
-.sideNav a[aria-current=page]{color:var(--bronze-highlight);background:transparent;border-color:transparent}
-.sideNav a[aria-current=page]:before{content:'';position:absolute;left:0;top:12px;bottom:12px;width:2px;background:var(--brand-gradient)}
-.sideNav a:hover{background:var(--surface)}
-.workspace .primary,.referencePage button{background:var(--brand-gradient);color:var(--old-dark);border-color:var(--bronze)}
-.workspace .primary:hover:not(:disabled){background:var(--bronze-highlight);color:var(--old-dark)}
-.panel,.editor{background:var(--studio-panel);border-color:var(--border)}
-.list button{background:var(--studio-panel)}.list button[aria-pressed=true]{background:#172a3d;box-shadow:inset 2px 0 var(--bronze)}
-.metrics a{border-color:var(--border);border-top:2px solid #b7927080}.metrics strong{font:400 48px/1.2 var(--font-display);color:var(--ivory);margin-top:12px}
-.tableWrap th{color:var(--muted);background:var(--studio-panel);font-weight:500}.tableWrap td{background:#0b1728}
-.drawer{background:var(--studio-panel);box-shadow:none}.workspace :is(code,time){font-family:var(--font-data)}
+.workspace{background:linear-gradient(180deg,#08111d 0%,#101713 100%);min-height:100vh}
+.top{background:rgba(16,23,19,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);margin-inline:-32px;padding-inline:32px;border-bottom:1px solid rgba(183,146,112,0.2)}
+.top strong{font:400 24px/1.2 var(--font-display);letter-spacing:.02em;color:var(--ivory)}
+.workspaceLayout{gap:32px}.sideNav{background:linear-gradient(180deg,#111d22 0%,#08111d 100%);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:20px 10px;margin-top:28px}
+.sideNav a{position:relative;border-radius:4px;border-color:transparent;background:transparent;transition:all var(--motion-fast) var(--motion-ease)}
+.sideNav a[aria-current=page]{color:var(--accent-bronze-hover);background:rgba(183,146,112,0.08);border-color:transparent}
+.sideNav a[aria-current=page]:before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:3px;background:var(--accent-gradient);border-radius:2px}
+.sideNav a:hover{background:rgba(255,255,255,0.04);color:var(--ivory)}
+.workspace .primary,.referencePage button{background:var(--accent-gradient);color:#08111d;border:1px solid var(--accent-bronze);font-weight:500;border-radius:4px;box-shadow:0 4px 14px rgba(0,0,0,0.3)}
+.workspace .primary:hover:not(:disabled){background:var(--bronze-highlight);color:#08111d;transform:translateY(-1px)}
+.panel,.editor{background:linear-gradient(150deg,#112033 0%,#0c1724 100%);border:1px solid rgba(255,255,255,0.08);border-radius:6px}
+.list button{background:var(--studio-panel)}.list button[aria-pressed=true]{background:#172a3d;box-shadow:inset 3px 0 var(--accent-bronze)}
+.metrics a{border:1px solid rgba(255,255,255,0.08);border-top:3px solid var(--accent-bronze);background:linear-gradient(145deg,#112033 0%,#0d1622 100%);border-radius:6px;transition:all var(--motion-fast) var(--motion-ease)}
+.metrics a:hover{border-top-color:var(--accent-bronze-hover);transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,0.4)}
+.metrics strong{font:400 48px/1.2 var(--font-display);color:var(--ivory);margin-top:12px}
+.tableWrap th{color:var(--muted);background:#112033;font-weight:500;border-bottom:1px solid rgba(255,255,255,0.12)}.tableWrap td{background:#0b1728;border-bottom:1px solid rgba(255,255,255,0.06)}
+.drawer{background:linear-gradient(160deg,#112033 0%,#09121d 100%);border-left:1px solid var(--border);box-shadow:-20px 0 60px rgba(0,0,0,0.7)}.workspace :is(code,time){font-family:var(--font-data)}
 @media(max-width:1080px){.sideNav{margin-top:0;padding:12px 8px}.sideNav a[aria-current=page]:before{top:auto;bottom:0;left:12px;right:12px;width:auto;height:2px}}
 @media(max-width:800px){.top{margin-inline:-16px;padding-inline:16px}}
 /* Give wrapping filters a real flex basis: width alone loses to flex:1. */

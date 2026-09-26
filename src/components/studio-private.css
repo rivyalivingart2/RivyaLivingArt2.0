@@ -50,12 +50,14 @@
 @media(prefers-reduced-motion:reduce) { .order-column{transition:none} }
 
 /* The public atelier identity carries through to the private workspace. */
-.studio-login{background:var(--resin-glow),var(--canvas-gradient)}
-.studio-login-card{border-color:#b792705c;background:var(--studio-panel);border-top:2px solid var(--bronze)}
-.studio-login input,.order-create input,.order-stage-select select{background:var(--control-surface)}
-.studio-login .studio-button{background:var(--brand-gradient);border-color:var(--bronze);color:var(--old-dark)}
-.studio-login .studio-button:hover:not(:disabled){background:var(--bronze-highlight)}
+.studio-login{background:var(--ambient-glow),var(--canvas-gradient)}
+.studio-login-card{border:1px solid rgba(183,146,112,0.3);background:linear-gradient(150deg,#112033 0%,#08111d 100%);border-top:3px solid var(--accent-bronze);border-radius:6px;box-shadow:0 24px 60px rgba(0,0,0,0.6)}
+.studio-login input,.order-create input,.order-stage-select select{background:var(--control-surface);border:1px solid var(--control-border);color:var(--ivory);border-radius:4px}
+.studio-login .studio-button{background:var(--accent-gradient);border:1px solid var(--accent-bronze);color:#08111d;font-weight:500;border-radius:4px}
+.studio-login .studio-button:hover:not(:disabled){background:var(--bronze-highlight);color:#08111d;transform:translateY(-1px)}
 .studio-login .eyebrow{color:var(--bronze-highlight);font:12px/1.7 var(--font-data)}
-.order-card{background:#172a3d;border-color:var(--border);box-shadow:none}
-.order-card-top{font:12px/1.7 var(--font-data)}
-.order-column{border-top:2px solid #b7927070}
+.order-card{background:linear-gradient(145deg,#152536 0%,#0d1926 100%);border:1px solid rgba(255,255,255,0.08);border-radius:6px;box-shadow:0 4px 16px rgba(0,0,0,0.3);transition:all var(--motion-fast) var(--motion-ease)}
+.order-card:hover{border-color:rgba(183,146,112,0.4);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.45)}
+.order-card-top{font:12px/1.7 var(--font-data);color:var(--accent-bronze)}
+.order-column{background:linear-gradient(180deg,rgba(17,32,51,0.85) 0%,rgba(13,24,39,0.95) 100%);border:1px solid rgba(255,255,255,0.08);border-top:3px solid var(--accent-bronze);border-radius:6px}
+.order-column>h2 span{background:rgba(183,146,112,0.18);color:var(--accent-bronze-hover);padding:2px 8px;border-radius:10px;font-size:12px;font-family:var(--font-data)}
