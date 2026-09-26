@@ -4,7 +4,7 @@ import type {OrderReceipt} from '@/lib/order-receipt';
 import s from './shop.module.css';
 export function SavedOrderActions({receipt,endpoint,identity,saveReceiptLocation=false,onChange}:{receipt:OrderReceipt;endpoint:string;identity:{key:string}|{id:string};saveReceiptLocation?:boolean;onChange:(value:OrderReceipt)=>void}){
  const [busy,setBusy]=useState(false),[message,setMessage]=useState(''),[copied,setCopied]=useState(false),[manualCopy,setManualCopy]=useState(false);
- const lock=useRef(false),opened=useRef(false);
+ const lock=useRef(false),opened=useRef(false),textareaRef=useRef<HTMLTextAreaElement>(null);
  async function refresh(open=false){
   if(lock.current)return;lock.current=true;setBusy(true);
   try{
@@ -35,5 +35,5 @@ export function SavedOrderActions({receipt,endpoint,identity,saveReceiptLocation
  {receipt.retryAvailable&&<button type="button" disabled={busy} className={s.button} onClick={()=>void prepare()}>Prepare saved order message</button>}
  <button type="button" disabled={busy} className={s.textLink} onClick={()=>void refresh()}>Refresh saved inquiry</button></div>
  <p role="status" style={{minHeight:'24px'}}>{busy?'Checking your saved inquiry…':message}</p>
- {manualCopy&&receipt.summary&&<div><label className={s.field}>Complete saved summary<textarea readOnly rows={10} value={receipt.summary} onFocus={e=>e.currentTarget.select()}/></label><label className={s.check}><input type="checkbox" checked={copied} onChange={e=>setCopied(e.target.checked)}/>I have copied the complete summary and can paste it in WhatsApp.</label></div>}</>;
+ {manualCopy&&receipt.summary&&<div><label className={s.field}>Complete saved summary<textarea ref={textareaRef} readOnly rows={10} value={receipt.summary} onFocus={e=>e.currentTarget.select()}/></label><div style={{display:'flex',gap:'10px',margin:'8px 0 16px'}}><button type="button" className={s.button+' '+s.outline} style={{minHeight:'44px'}} onClick={()=>{if(textareaRef.current){textareaRef.current.focus();textareaRef.current.select();textareaRef.current.setSelectionRange(0,99999);}}}>Select all text</button></div><label className={s.check}><input type="checkbox" checked={copied} onChange={e=>setCopied(e.target.checked)}/>I have copied the complete summary and can paste it in WhatsApp.</label></div>}</>;
 }

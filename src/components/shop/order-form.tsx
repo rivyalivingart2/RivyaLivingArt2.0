@@ -15,7 +15,7 @@ const steps=['Your piece','Your details & references','Review'];
 type Props={product:ShopProduct;definition?:never}|{definition:InquiryDefinition;product?:never};
 export function OrderForm(props:Props){
  const initial=props.definition??productDefinition(props.product!);
- const router=useRouter(),params=useSearchParams(),heading=useRef<HTMLHeadingElement>(null),honeypot=useRef<HTMLInputElement>(null);
+ const router=useRouter(),params=useSearchParams(),heading=useRef<HTMLHeadingElement>(null),honeypot=useRef<HTMLInputElement>(null),fallbackTextarea=useRef<HTMLTextAreaElement>(null);
  const [cached]=useState(()=>typeof window==='undefined'?undefined:readDraft(initial.schemaId));
  const [definition,setDefinition]=useState(cached?.definition||initial);
  const [replacement,setReplacement]=useState<InquiryDefinition|null>(cached&&cached.definition.schemaVersion!==initial.schemaVersion?initial:null);
@@ -142,6 +142,7 @@ export function OrderForm(props:Props){
  <div className={s.hidden} aria-hidden="true"><label>Leave this field empty<input ref={honeypot} name="website" autoComplete="off" tabIndex={-1}/></label></div>
  {!ready&&<p className={s.serviceNotice} role="status">{reconnecting?'Preparing secure order saving…':'Saving is currently unavailable. You can prepare and copy your brief here. Nothing has been submitted.'}</p>}
  <ol className={s.stepper}>{steps.map((label,n)=><li key={label} aria-current={step===n?'step':undefined}><span>0{n+1}</span>{label}</li>)}</ol>
+ <div className={s.mobileStepper} aria-hidden="true"><div className={s.mobileStepHeader}><span className={s.mobileStepCounter}>Step 0{step+1} of 0{steps.length}</span><span className={s.mobileStepName}>{steps[step]}</span></div><div className={s.mobileStepBar}><div className={s.mobileStepProgress} style={{width:`${((step+1)/steps.length)*100}%`}}/></div></div>
  <h2 ref={heading} tabIndex={-1}>{steps[step]}</h2><p className={s.help}>Fields marked * are required. Ask for help where you are unsure; preferences are requests for review.</p>
  {replacement&&<section className={s.serviceNotice} aria-label="Updated customization form"><h3>The form has changed.</h3><p>Your current answers and references are retained. Apply version {replacement.schemaVersion}, then review the changes. Answers that cannot carry forward will remain visible for you to copy or reconcile.</p><button type="button" className={s.button} disabled={editingLocked||transferring} onClick={applySchema}>Review current options</button></section>}
  {!!review.length&&<section className={s.serviceNotice}><h3>Previous answers to reconcile</h3><pre className={s.receiptSummary}>{review.join('\n')}</pre><p>Copy any useful details into the new fields or notes before continuing.</p><button type="button" disabled={editingLocked} onClick={()=>setReview([])}>I have reconciled these answers</button></section>}
@@ -161,6 +162,6 @@ export function OrderForm(props:Props){
  {!ready&&<button type="button" className={s.button} disabled={busy||reconnecting} onClick={()=>setSessionAttempt(v=>v+1)}>{reconnecting?'Connecting…':'Reconnect form'}</button>}
  {<button type="button" className={s.textLink} disabled={editingLocked||refreshing||transferring} onClick={()=>void refreshSchema()}>{refreshing?'Checking options…':'Check current options'}</button>}
  <div className={s.actions}>{step>0&&<button type="button" className={s.button+' '+s.outline} disabled={editingLocked} onClick={()=>go(step-1)}>← Back</button>}<button type="submit" className={s.button} disabled={busy||transferring||!!review.length||!!replacement||(step===2&&!ready)}>{busy?'Saving inquiry…':step===2?(!ready?'Saving temporarily unavailable':sealed?'Retry the same save':'Save order details →'):step===0?'Your details →':'Review your brief →'}</button></div>
- {copyFallback&&<label className={s.field}>Copy your unsaved brief<textarea readOnly rows={10} value={brief} onFocus={e=>e.currentTarget.select()}/></label>}
+ {copyFallback&&<div><label className={s.field}>Copy your unsaved brief<textarea ref={fallbackTextarea} readOnly rows={10} value={brief} onFocus={e=>e.currentTarget.select()}/></label><div style={{display:'flex',gap:'10px',margin:'8px 0 16px'}}><button type="button" className={s.button+' '+s.outline} style={{minHeight:'44px'}} onClick={()=>{if(fallbackTextarea.current){fallbackTextarea.current.focus();fallbackTextarea.current.select();fallbackTextarea.current.setSelectionRange(0,99999);}}}>Select all text</button></div></div>}
  </form></div>;
 }
