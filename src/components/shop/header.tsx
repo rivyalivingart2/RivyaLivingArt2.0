@@ -26,7 +26,7 @@ function HeaderContent({pathname}:{pathname:string}) {
   const active=(url:string)=>pathname===url||pathname.startsWith(url+'/');
   const close=()=>setMenuPath(null);
   useEffect(()=>{
-    const desktop=window.matchMedia('(min-width: 1201px)');
+    const desktop=window.matchMedia('(min-width: 981px)');
     const closeOnDesktop=()=>{if(desktop.matches)setMenuPath(null);};
     desktop.addEventListener('change',closeOnDesktop);
     return()=>desktop.removeEventListener('change',closeOnDesktop);
@@ -61,6 +61,6 @@ function HeaderContent({pathname}:{pathname:string}) {
         <Link href="/commission" className={s.button} onClick={close}>Begin a piece <ArrowUpRight size={18}/></Link>
       </nav>
     </Dialog>
-    <Dialog open={searchPath===pathname} title="Find your piece" onClose={()=>setSearchPath(null)}><form action="/search" method="get" className={s.searchForm}><label>Search the collection<input type="search" name="q" maxLength={100} placeholder="A name, a material, a form"/></label><button className={s.button}>Explore results ↗</button><Link className={s.textLink} href="/search" onClick={()=>setSearchPath(null)}>Browse all pieces</Link></form></Dialog>
+    <Dialog open={searchPath===pathname} title="Find your piece" onClose={()=>setSearchPath(null)}><form action="/search" method="get" className={s.searchForm}><label>Search the collection<input autoFocus type="search" name="q" maxLength={100} placeholder="A name, a material, a form"/></label><button className={s.button}>Explore results ↗</button><Link className={s.textLink} href="/search" onClick={()=>setSearchPath(null)}>Browse all pieces</Link></form></Dialog>
   </header>;
 }

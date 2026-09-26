@@ -31,7 +31,7 @@ h1,h2,h3 { font-family: var(--font-display); font-weight: 400; text-wrap: balanc
 p { text-wrap: pretty; }
 em { font-weight: 400; color: var(--primary-hover); }
 ::selection { background: var(--primary-hover); color: var(--primary-foreground); }
-:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
+:focus-visible { outline: 2px solid var(--focus-on-dark); outline-offset: 4px; }
 .tabular-data { font-variant-numeric: tabular-nums; }
 .glass-panel {
   background: var(--glass-bg);
