@@ -7,6 +7,12 @@ const skills = [
   { slug: 'emilkowalski/mobile-native', name: 'mobile-native' },
   { slug: 's0xdk/refactoring-ui', name: 'refactoring-ui' },
   { slug: 'elithrar/web-perf', name: 'web-perf' },
+  { slug: 'iart-ai/glassmorphism', name: 'glassmorphism' },
+  { slug: 'jakubkrehel/better-typography', name: 'better-typography' },
+  { slug: 'vercel-labs/web-design-guidelines', name: 'web-design-guidelines' },
+  { slug: 'iart-ai/micro-interaction', name: 'micro-interaction' },
+  { slug: 'ibelick/fixing-accessibility', name: 'fixing-accessibility' },
+  { slug: 'dickwu/apple-design', name: 'apple-design' },
 ];
 
 for (const skill of skills) {
@@ -18,4 +24,4 @@ for (const skill of skills) {
   writeFileSync(targetFile, content, 'utf8');
   console.log(`Saved to ${targetFile} (${content.length} bytes)`);
 }
-console.log('All skills successfully installed!');
+console.log('All 10 UI/UX skills successfully installed!');
