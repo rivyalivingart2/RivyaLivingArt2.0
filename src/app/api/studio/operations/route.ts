@@ -3,8 +3,11 @@ import {studioSession} from '@/lib/studio-auth';
 import {studioDb} from '@/lib/studio-db';
 import {originAllowed,smallJson} from '@/lib/request-security';
 import {serviceStatus} from '@/lib/service-status';
+import {recordManagedExport,getManagedExports} from '@/lib/data-erasure';
+
 export const dynamic='force-dynamic';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
+
 export async function GET(request:Request){
  try{
   const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);
@@ -12,6 +15,11 @@ export async function GET(request:Request){
   if(view==='settings'){
    if(session.role!=='admin')return json({error:'Administrator access required.'},403);
    return json({...await serviceStatus(),workflow:'The order request is saved to the database and Studio before its WhatsApp message is prepared. The customer opens WhatsApp and presses Send. No online payments or customer accounts.'});
+  }
+  if(view==='exports'){
+   if(session.role!=='admin')return json({error:'Administrator access required.'},403);
+   const exports=await getManagedExports();
+   return json({exports});
   }
   if(view==='activity'){
    const events=await sql`SELECT e.id,e.actor,e.from_status,e.to_status,e.reason,e.created_at AS "createdAt",o.client,o.title,i.reference
@@ -32,6 +40,7 @@ export async function GET(request:Request){
   return json({stages,followups,recent});
  }catch{return json({error:'This workspace view is temporarily unavailable.'},503);}
 }
+
 export async function POST(request:Request){
  if(!originAllowed(request))return json({error:'Request not allowed.'},403);
  try{
@@ -52,6 +61,9 @@ export async function POST(request:Request){
   const columns=['id','reference','client','title','status','phone','email','follow_up','created_at_utc','source'];
   const cell=(value:unknown)=>{let t=value==null?'':String(value);if(/^[\s]*[=+\-@\t\r]/.test(t))t="'"+t;return '"'+t.replaceAll('"','""')+'"';};
   const csv=[columns.join(','),...rows.map(r=>columns.map(k=>cell(r[k])).join(','))].join('\r\n');
+  
+  // Track managed export with mandatory 7-day expiry deadline (CR-04/18)
+  await recordManagedExport(session.adminId, rows.length, {from, to, stage, source});
   await sql`INSERT INTO rivya_audit(actor,action,entity) VALUES(${session.adminId},'orders:export',${JSON.stringify({count:rows.length,from,to,stage,source})})`;
   return new Response(csv,{headers:{'Content-Type':'text/csv; charset=utf-8','Content-Disposition':'attachment; filename="rivya-private-orders.csv"','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
  }catch{return json({error:'Export is temporarily unavailable.'},503);}

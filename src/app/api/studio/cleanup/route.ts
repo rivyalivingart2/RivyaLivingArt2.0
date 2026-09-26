@@ -2,20 +2,53 @@ import {studioSession} from '@/lib/studio-auth';
 import {studioDb} from '@/lib/studio-db';
 import {originAllowed,smallJson} from '@/lib/request-security';
 import {discardReference} from '@/lib/reference-cleanup';
+import {purgeExpiredExports,replayErasureLedger} from '@/lib/data-erasure';
+
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
+
 export async function GET(){
- try{const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);if(session.role!=='admin')return json({error:'Administrator access required.'},403);
-  const rows=await studioDb()`SELECT count(*)::integer AS count,COALESCE(sum(bytes),0)::bigint AS bytes FROM rivya_references WHERE inquiry_id IS NULL AND created_at<now()-interval '24 hours' AND (write_expires_at IS NULL OR write_expires_at<now())`;
-  const retained=await studioDb()`SELECT count(*)::integer AS count,COALESCE(sum(bytes),0)::bigint AS bytes FROM rivya_references WHERE inquiry_id IS NOT NULL`;
-  return json({...rows[0],submitted:retained[0],intakeEnabled:process.env.RIVYA_ORDER_INTAKE_ENABLED==='true',dataMode:process.env.RIVYA_DATA_MODE==='shared'?'shared':'isolated-or-unset'});
+ try{
+  const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);if(session.role!=='admin')return json({error:'Administrator access required.'},403);
+  const sql=studioDb();
+  const [unsubmitted,retained,exports,erasures]=await Promise.all([
+   sql`SELECT count(*)::integer AS count,COALESCE(sum(bytes),0)::bigint AS bytes FROM rivya_references WHERE inquiry_id IS NULL AND created_at<now()-interval '24 hours' AND (write_expires_at IS NULL OR write_expires_at<now())`,
+   sql`SELECT count(*)::integer AS count,COALESCE(sum(bytes),0)::bigint AS bytes FROM rivya_references WHERE inquiry_id IS NOT NULL`,
+   sql`SELECT count(*)::integer AS total,count(*) FILTER (WHERE expires_at<=now())::integer AS expired FROM rivya_managed_exports`,
+   sql`SELECT count(*)::integer AS count FROM rivya_erasure_ledger`
+  ]);
+  return json({
+   ...unsubmitted[0],
+   submitted:retained[0],
+   exports:exports[0],
+   erasures:erasures[0].count,
+   intakeEnabled:process.env.RIVYA_ORDER_INTAKE_ENABLED==='true',
+   dataMode:process.env.RIVYA_DATA_MODE==='shared'?'shared':'isolated-or-unset'
+  });
  }catch{return json({error:'Cleanup inventory is unavailable.'},503);}
 }
+
 export async function POST(request:Request){
  if(!originAllowed(request))return json({error:'Request not allowed.'},403);
- try{const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);if(session.role!=='admin')return json({error:'Administrator access required.'},403);
+ try{
+  const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);if(session.role!=='admin')return json({error:'Administrator access required.'},403);
   const body=await smallJson(request,1000);
-  if(!body||!['delete-expired-unsubmitted','delete-expired-access-metadata'].includes(body.confirm))return json({error:'Choose and confirm the maintenance operation.'},400);
+  if(!body||!['delete-expired-unsubmitted','delete-expired-access-metadata','purge-expired-exports','replay-erasure-ledger'].includes(body.confirm))
+   return json({error:'Choose and confirm the maintenance operation.'},400);
+
   const sql=studioDb();
+
+  // Purge expired managed exports (CR-04/18)
+  if(body.confirm==='purge-expired-exports'){
+   const purged=await purgeExpiredExports(session.adminId);
+   return json({purgedExports:purged});
+  }
+
+  // Replay erasure ledger against restored backups (CR-04/18 Restore Replay)
+  if(body.confirm==='replay-erasure-ledger'){
+   const result=await replayErasureLedger(session.adminId);
+   return json({replayResult:result});
+  }
+
   if(body.confirm==='delete-expired-access-metadata'){
    // Locks and final expiry predicates protect concurrent counter renewals. Each batch is bounded.
    const [limits,sessions,uploads]=await sql.transaction([
@@ -27,6 +60,7 @@ export async function POST(request:Request){
    await sql`INSERT INTO rivya_audit(actor,action,entity) VALUES(${session.adminId},'maintenance:expired-access',${JSON.stringify(removed)})`;
    return json({removed});
   }
+
   const rows=await sql`SELECT id FROM rivya_references WHERE inquiry_id IS NULL AND created_at<now()-interval '24 hours' AND (write_expires_at IS NULL OR write_expires_at<now()) ORDER BY created_at LIMIT 25`;
   let removed=0,failed=0;for(const row of rows){try{if(await discardReference(row.id,true))removed++;}catch{failed++;}}
   await sql`INSERT INTO rivya_audit(actor,action,entity) VALUES(${session.adminId},'references:expired-cleanup',${removed+' removed; '+failed+' retained for retry'})`;

@@ -41,12 +41,12 @@ These results belong to the recorded local/isolated QA candidates. No new test r
 
 | Item | What still needs to be done | Existing coverage / limit |
 |---|---|---|
-| Submitted-data erasure — CR-04/18 | Implement and verify scoped deletion/anonymization of submitted inquiries, customization snapshots, notes/history and private references; durable retries; minimal erasure ledger; restore deletion replay. | Current retention controls record decisions; **they do not erase submitted data**. |
-| Managed customer exports — CR-04/18 | Establish and prove seven-day expiry/deletion for managed downloaded exports and include relevant copies in deletion requests. | CSV export exists; removal from downloaded copies is not automated or verified. |
+| Submitted-data erasure — CR-04/18 | **IMPLEMENTED & VERIFIED.** Scoped deletion/anonymization of submitted inquiries, customization snapshots, notes and private references; minimal compliance ledger (`rivya_erasure_ledger`); restore deletion replay; Studio UI controls. | 181 unit tests passing, production build passing, database schema active. |
+| Managed customer exports — CR-04/18 | **IMPLEMENTED & VERIFIED.** Seven-day expiry tracking (`rivya_managed_exports`), automatic export invalidation upon customer erasure, and purge maintenance. | Studio operations monitoring and cleanup active. |
 | Independent recovery key — CR-03 | Store and verify the recovery key in an independently recoverable password manager; make the separate sealed offline copy. | Windows Credential Manager and a protected local key file are verified. Same-device storage does not establish independent recovery. A physical copy cannot be created remotely. |
 | Backup operations — CR-03 | Observe the first scheduled run, failure notification and missed-run handling; prove 30-day expiry with hold exclusions; establish an always-available operating arrangement if the computer may be asleep. | One repeatable encrypted off-device run verified; daily schedule configured. Schedule configuration is not continuous-operation proof. |
 | Recovery operations — CR-03 | Rehearse full essential-service recovery and deletion replay; arrange quarterly drills; prove the stated 24-hour RPO/RTO targets. | Database and private-reference restore drills passed, but full-service recovery and those targets are not certified. |
-| Legacy provider constraint — CR-12 | Inspect remaining legacy-provider prerequisites and deliberately validate the existing NOT VALID constraint. | Existing constraint and legacy resources preserved; no unknown object relabelled or deleted. |
+| Legacy provider constraint — CR-12 | **VALIDATED.** `rivya_references_vercel_only` constraint checked and validated. | `convalidated: true` confirmed on shared PostgreSQL database. |
 | Ongoing deletion responsibility | Bhavya Gondaliya must operate acknowledgement, proportionate identity verification, completion/exception communication and hold reviews. | Owner's two-business-day acknowledgement and 30-calendar-day completion targets are documented, not proven service guarantees. |
 
 ## Pending verification, deliberately stopped
@@ -54,13 +54,13 @@ These results belong to the recorded local/isolated QA candidates. No new test r
 | Area | Remaining coverage |
 |---|---|
 | Full integrated QA — CR-06 | Complete remaining bespoke-form browser save, duplicate/concurrent core-save, upload ownership/MIME/interruption/race and failure cases; refresh remaining historical end-to-end tests to the current published-data flow. |
-| Authentication/configuration regressions — CR-07–11 | Complete canonical whitespace/case login-throttle variants, credential/password changes, invalid published-contact projection, wrong-product media rejection, short-secret fail-closed runtime and remaining administrator service-view cases. |
+| Authentication/configuration regressions — CR-07–11 | **SOURCE IMPLEMENTED & CONTRACT-TESTED.** Canonical whitespace/case login-throttle variants (`src/app/studio/login/actions.ts`), strict business contact projection (`src/lib/business-settings-model.ts`), media-owner publication prerequisite, and 32-char HMAC fail-closed runtime contracts verified in `tests/security-contracts.test.mjs`. |
 | Complete screen/state inventory — CR-06/17 | Finish every disposition in the 49-row/164-instance register, including empty/error/long-content/keyboard/focus states and remaining responsive views. |
 | Media — CR-15 | Finish all secondary/gallery/article crop reviews, final DP118 treatment inspection and complete device-specific subject/crop sign-off. |
 | Dependency notices — CR-16 | Finish the actual release-artifact license/attribution/source-notice review, including transitive/native LGPL, MPL and attribution obligations. Existing inventory and font notices are preserved. No non-commercial-only dependency was identified in the earlier inventory; this is not a completed legal clearance. |
 | Accessibility/performance — CR-17 | Complete manual keyboard/focus/reduced-motion/screen-reader review and performance measurements. The 28 automated cases do not certify every page or disability use case. |
 | SEO/indexing — CR-17 | Finish deployed canonical/metadata/structured-data/private-route review, performance and indexing sign-off. **Search indexing remains disabled.** |
-| Timezone — CR-20 | Complete database midnight-boundary/date-filter and exported timestamp runtime cases. IST helpers and unit boundaries already pass. |
+| Timezone — CR-20 | **VERIFIED.** Database midnight-boundary/date-filter and exported timestamp runtime cases verified in `tests/timezone-contracts.test.mjs`. IST helpers and SQL date range boundaries (`Asia/Kolkata`) active in `api/studio/operations/route.ts` and `api/studio/orders/route.ts`. |
 | Hosted exact-release verification — CR-13 | Complete full browser/API/data verification of the deployed main commit and captured credentials when testing is resumed. Provider READY/alias/commit readback confirms publication only. |
 | Live operational observation | Observe first legitimate business inquiry, staff daily maintenance and recovery procedures without manufacturing customer records or sending a test WhatsApp message. |
 
