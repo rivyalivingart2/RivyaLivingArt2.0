@@ -292,10 +292,17 @@
 .textLink{display:inline-flex;align-items:center;min-height:44px;white-space:normal;border-color:#b7927080;font-size:14px}
 .curatedGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;align-items:start;padding-bottom:120px}
 .curatedGrid>.card:nth-child(2){margin-top:64px}.curatedGrid>.card:nth-child(3){margin-top:120px}
-.cardImage{background:var(--surface);border:1px solid #ffffff0d;aspect-ratio:4/5}
-.cardImage img{object-fit:cover;transition:transform var(--motion-hover) var(--motion-ease)}
+.card{overflow-wrap:anywhere;position:relative;border-radius:4px;transition:transform var(--duration-fast) var(--ease-smooth-out)}
+@media(hover:hover) and (pointer:fine){
+  .card:hover{transform:translateY(-3px)}
+  .card:hover .cardImage{border-color:rgba(183,146,112,0.38);box-shadow:0 16px 36px rgba(0,0,0,0.48),0 0 16px rgba(183,146,112,0.1)}
+}
+.card:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.card:active{transform:scale(0.99);transition:transform var(--duration-micro) var(--ease-smooth-out)}
+.cardImage{background:var(--surface);border:1px solid rgba(183,146,112,0.14);aspect-ratio:4/5;border-radius:4px;box-shadow:0 8px 24px rgba(0,0,0,0.3);transition:border-color var(--duration-fast) ease,box-shadow var(--duration-fast) ease}
+.cardImage img{object-fit:cover;transition:transform var(--duration-slow) var(--ease-smooth-out)}
 .cardTop{margin-top:20px;gap:18px}.card p{font-size:14px;color:var(--muted);letter-spacing:.02em;text-transform:none}
-.card small{display:block;margin-top:14px;color:var(--muted);font-size:12px}.card h3{font-size:clamp(28px,2.7vw,40px)}
+.card small,.productIndex{display:block;margin-top:14px;color:var(--muted);font-size:12px;font-family:var(--font-data);font-variant-numeric:tabular-nums}.card h3{font-size:clamp(28px,2.7vw,40px)}
 .categoryRows{border-top:1px solid var(--border)}
 .categoryRow{display:grid;grid-template-columns:40px minmax(0,1.3fr) minmax(0,1fr) 90px 24px;gap:24px;align-items:center;padding:28px 0;border-bottom:1px solid var(--border)}
 .categoryRow h3{font-size:clamp(28px,3.3vw,48px)}
@@ -340,8 +347,12 @@
 .pageIntro{background:var(--resin-glow);padding-top:72px;padding-bottom:52px}
 .detail{grid-template-columns:1.15fr 1fr;gap:6vw}.detailVisual{background:var(--surface)}.detailVisual img{object-fit:cover}
 .detailCopy h1{font-size:clamp(52px,5.5vw,88px)}.detailCopy summary{font-size:16px}
-.zoomButton{background:var(--old-dark);color:var(--ivory);border:1px solid var(--control-border)}
-.detailImageStrip button[aria-pressed=true]{outline-color:var(--bronze-highlight)}
+.zoomButton{background:rgba(16,23,19,0.85);backdrop-filter:blur(8px);color:var(--ivory);border:1px solid var(--control-border);border-radius:2px;font-family:var(--font-data);letter-spacing:0.04em;transition:background var(--duration-fast) ease,border-color var(--duration-fast) ease,transform var(--duration-micro) ease}
+.zoomButton:hover{background:rgba(28,43,51,0.9);border-color:var(--accent)}
+.zoomButton:active{transform:scale(0.97)}
+.detailImageStrip button{border-radius:2px;transition:border-color var(--duration-fast) ease,transform var(--duration-fast) ease}
+.detailImageStrip button:active{transform:scale(0.96)}
+.detailImageStrip button[aria-pressed=true]{outline-color:var(--bronze-highlight);border-color:var(--accent)}
 .field :is(input,select,textarea),.searchForm input{background:var(--control-surface);min-height:48px}
 .form legend,.faq summary{font-family:var(--font-display)}
 .stepper li[aria-current=step]{border-color:var(--bronze-highlight)}
