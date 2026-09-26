@@ -29,7 +29,9 @@
 .selectField small { display: block; color: var(--muted); font-size: 9px; margin-top: 4px; }
 .fieldNumber { color: var(--primary-hover); font-family: var(--font-data); font-size: 10px; margin-top: 3px; }
 .reorder { display: flex; flex-direction: column; border-left: 1px solid var(--border); flex-shrink: 0; }
-.reorder button { border: 0; background: transparent; padding: 2px 9px; min-height: 36px; min-width: 36px; color: var(--muted); }
+.reorder button { border: 0; background: transparent; padding: 2px 10px; min-height: 44px; min-width: 44px; color: var(--muted); font-size: 14px; cursor: pointer; transition: color var(--duration-fast, 150ms) ease, background-color var(--duration-fast, 150ms) ease; }
+.reorder button:focus-visible { outline: 2px solid var(--focus, #e8a87c); outline-offset: -2px; z-index: 2; color: var(--primary-hover); }
+.reorder button:hover:not(:disabled) { color: var(--primary-hover); background: rgba(183,146,112,0.1); }
 .reorder button + button { border-top: 1px solid var(--border); }
 .builder button:disabled, .builder fieldset:disabled button { cursor: default; opacity: .5; }
 .builder button:not(:disabled):hover { color: var(--primary-hover); }

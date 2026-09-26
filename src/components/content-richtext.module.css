@@ -1,5 +1,5 @@
 .editor { border: 1px solid var(--border); border-radius: 8px; background: var(--background); min-width: 0; overflow-wrap: anywhere; }
-.toolbar { display: flex; flex-wrap: wrap; gap: 5px; padding: 10px; border-bottom: 1px solid var(--border); background: var(--surface-elevated); border-radius: 8px 8px 0 0; }
+.toolbar { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: 5px; padding: 10px; border-bottom: 1px solid var(--border); background: color-mix(in srgb, var(--surface-elevated) 90%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 8px 8px 0 0; }
 .toolbar button, .actions button { border: 1px solid var(--border); border-radius: 4px; background: var(--surface); padding: 8px 10px; min-height: 40px; font-size: 11px; line-height: 1.5; }
 .toolbar button[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: var(--primary-foreground); }
 .toolbar button em { color: inherit; }

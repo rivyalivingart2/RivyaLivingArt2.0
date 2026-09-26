@@ -176,7 +176,7 @@ export function StudioFormBuilder({ initialConfig }: { initialConfig: InquiryCon
       <button type="button" disabled={!isHydrated || Boolean(confirmation)} onClick={() => requestConfirmation({ kind: "reset" })}>Reset local draft</button>
     </div>
     <p className={styles.notice}>Fictional product configuration. Edits stay in this page and disappear on navigation or reload. The public form and original v1 configuration remain unchanged. Saving, publishing and historical enquiry snapshots belong to the later backend phase.</p>
-    <p className={styles.announcement} role="status">{announcement}</p>
+    <p className={styles.announcement} role="status" aria-live="polite">{announcement}</p>
     {confirmation && <section className={styles.confirmation} role="alertdialog" aria-labelledby={`${id}-confirm-title`} aria-describedby={`${id}-confirm-copy`} onKeyDown={(event) => { if (event.key === "Escape") { event.preventDefault(); closeConfirmation(); } }}>
       <h2 id={`${id}-confirm-title`}>{confirmation.kind === "reset" ? "Discard this local draft?" : confirmation.kind === "example" ? "Replace preview answers?" : `Remove ${confirmation.field.label}?`}</h2>
       <p id={`${id}-confirm-copy`}>{confirmation.kind === "reset" ? "Your schema edits and preview answers will be cleared. The original source configuration will be restored." : confirmation.kind === "example" ? "Your current preview answers will be replaced by fictional examples. Schema edits are retained." : "This custom question and its local preview answer will be removed. The source configuration is unchanged."}</p>
@@ -189,9 +189,19 @@ export function StudioFormBuilder({ initialConfig }: { initialConfig: InquiryCon
         <div className={styles.editorHeading}><span className="eyebrow">01 · Form structure</span><span>{draft.steps.reduce((total, item) => total + item.fields.length, 0)} fields</span></div>
         <label className={styles.control} htmlFor={`${id}-step`}>Edit step<select id={`${id}-step`} value={step.id} onChange={(event) => selectStep(event.target.value)}>{draft.steps.map((item, index) => <option key={item.id} value={item.id}>{index + 1}. {item.title}</option>)}</select></label>
         <p className={styles.helper}>{step.description}</p>
-        <ol className={styles.fieldList}>{step.fields.map((field, index) => <li key={field.id} data-selected={field.id === selectedId || undefined}>
+        <ol className={styles.fieldList}>{step.fields.map((field, index) => <li key={field.id} data-selected={field.id === selectedId || undefined}
+          onKeyDown={(e) => {
+            if (e.altKey && e.key === "ArrowUp") {
+              e.preventDefault();
+              if (index > 0) moveField(field.id, -1);
+            } else if (e.altKey && e.key === "ArrowDown") {
+              e.preventDefault();
+              if (index < step.fields.length - 1) moveField(field.id, 1);
+            }
+          }}
+        >
           <button type="button" className={styles.selectField} aria-pressed={field.id === selectedId} onClick={() => setSelectedId(field.id)}><span className={styles.fieldNumber}>{String(index + 1).padStart(2, "0")}</span><span>{field.label || "Untitled question"}<small>{field.type} · {originalFields.has(field.id) ? "included" : "custom"}{field.visibleWhen ? " · conditional" : ""}</small></span></button>
-          <div className={styles.reorder}><button type="button" disabled={index === 0} aria-label={`Move ${field.label} up`} onClick={() => moveField(field.id, -1)}>↑</button><button type="button" disabled={index === step.fields.length - 1} aria-label={`Move ${field.label} down`} onClick={() => moveField(field.id, 1)}>↓</button></div>
+          <div className={styles.reorder}><button type="button" disabled={index === 0} aria-label={`Move ${field.label || "question"} up`} title="Move up (Alt+Up)" onClick={() => moveField(field.id, -1)}>↑</button><button type="button" disabled={index === step.fields.length - 1} aria-label={`Move ${field.label || "question"} down`} title="Move down (Alt+Down)" onClick={() => moveField(field.id, 1)}>↓</button></div>
         </li>)}</ol>
         {step.kind === "review" ? <p className={styles.fixedNote}>The review step uses the public summary renderer and local validation. Its role and position stay fixed.</p> : <div className={styles.addField}>
           <label className={styles.control} htmlFor={`${id}-new-type`}>New custom question<select id={`${id}-new-type`} value={newType} onChange={(event) => setNewType(event.target.value as InquiryField["type"])}>{studioFieldTypes.map((type) => <option key={type} value={type}>{type}</option>)}</select></label>
