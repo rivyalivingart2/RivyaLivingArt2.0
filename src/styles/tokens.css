@@ -81,6 +81,44 @@
   --motion-hover: 300ms;
   --motion-reveal: 500ms;
   --motion-ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Motion Token Scale (transitions-polish & micro-interaction) */
+  --duration-stagger: 40ms;
+  --duration-micro: 80ms;
+  --duration-quick: 150ms;
+  --duration-fast: 250ms;
+  --duration-medium: 350ms;
+  --duration-slow: 400ms;
+  --duration-very-slow: 500ms;
+
+  --ease-smooth-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: ease-in-out;
+  --ease-out: ease-out;
+  --ease-linear: linear;
+  --ease-bounce: cubic-bezier(0.34, 1.36, 0.64, 1);
+  --ease-bounce-strong: cubic-bezier(0.34, 3.85, 0.64, 1);
+
+  --distance-micro: 4px;
+  --distance-small: 6px;
+  --distance-base: 8px;
+  --distance-medium: 12px;
+  --distance-large: 30px;
+
+  --scale-large: 0.96;
+  --scale-medium: 0.97;
+  --scale-small: 0.98;
+  --scale-tiny: 0.99;
+
+  --blur-small: 2px;
+  --blur-medium: 3px;
+  --blur-large: 8px;
+
+  /* Glassmorphism Tokens (glassmorphism & apple-design) */
+  --glass-bg: rgba(16, 23, 19, 0.72);
+  --glass-border: rgba(183, 146, 112, 0.16);
+  --glass-border-highlight: rgba(243, 239, 231, 0.22);
+  --glass-blur: blur(16px) saturate(160%);
+  --glass-shadow: 0 16px 40px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(243, 239, 231, 0.14);
 }
 
 @media (max-width: 1200px) {
@@ -90,3 +128,29 @@
 @media (max-width: 780px) {
   :root { --header-height: 64px; }
 }
+
+/* Mobile-Native Platform Base (mobile-native) */
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+button, a, [role="button"] {
+  touch-action: manipulation;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --glass-bg: #101713;
+    --glass-blur: none;
+  }
+}
+

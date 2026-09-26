@@ -30,7 +30,13 @@ export const metadata: Metadata = {
   icons:{icon:[{url:'/brand/favicon.ico',sizes:'any'},{url:'/brand/rivyalivingart-icon-32.png',sizes:'32x32',type:'image/png'}],apple:'/brand/apple-touch-icon.png'}, manifest:'/brand/site.webmanifest',
   robots: { index: indexingEnabled(), follow: indexingEnabled() },
 };
-export const viewport: Viewport = { themeColor: "#08111d", colorScheme: "dark" };
+export const viewport: Viewport = { 
+  width: "device-width", 
+  initialScale: 1, 
+  viewportFit: "cover", 
+  themeColor: "#08111d", 
+  colorScheme: "dark" 
+};
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   await connection();
