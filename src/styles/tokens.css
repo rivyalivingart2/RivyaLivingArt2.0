@@ -1,57 +1,92 @@
 :root {
   color-scheme: dark;
-  --navy: #0b1728;
-  --canvas: #08111d;
-  --old-dark: #101713;
-  --forest: #19221c;
+  
+  /* Primary Brand Anchors */
+  --brand-forest: #101713;
+  --brand-midnight: #08111d;
+  --forest-raised: #19221c;
+  
+  /* Backward-compatible color aliases */
+  --navy: var(--brand-midnight);
+  --canvas: var(--brand-midnight);
+  --old-dark: var(--brand-forest);
+  --forest: var(--forest-raised);
+  
+  /* Brand Gradients: Forest to Midnight */
+  --brand-gradient: linear-gradient(135deg, #101713 0%, #08111d 100%);
+  --brand-gradient-hover: linear-gradient(135deg, #19221c 0%, #112033 100%);
+  --canvas-gradient: linear-gradient(135deg, #101713 0%, #08111d 55%, #19221c 100%);
+  --accent-gradient: linear-gradient(135deg, #b79270 0%, #ceac89 48%, #b08d57 100%);
+  --resin-glow: radial-gradient(circle at 72% 18%, rgba(183, 146, 112, 0.16), transparent 42%);
+  --ambient-glow: radial-gradient(circle at 50% 0%, rgba(16, 23, 19, 0.7), transparent 60%);
+
+  /* Neutral Text & Typography */
   --ivory: #f3efe7;
   --stone: #ddd6cb;
-  --bronze: #b79270;
-  --bronze-highlight: #ceac89;
-  --brand-gradient: linear-gradient(135deg, #b79270 0%, #ceac89 48%, #b08d57 100%);
-  --canvas-gradient: linear-gradient(135deg, #101713 0%, #0b1728 55%, #19221c 100%);
-  --resin-glow: radial-gradient(circle at 72% 18%, rgba(183,146,112,.16), transparent 42%);
+  --muted: #b7bfb5;
+  --foreground: var(--ivory);
+  --text-primary: var(--ivory);
+  --text-secondary: var(--muted);
   --ink: #18202a;
-  --background: var(--canvas);
+  
+  /* Surfaces & Elevation */
+  --background: var(--brand-midnight);
   --surface: #111d22;
   --surface-elevated: #1d2d33;
-  --foreground: var(--ivory);
-  --muted: #b7bfb5;
+  --studio-panel: #112033;
+  --control-surface: #122336;
+  
+  /* Interactive Accents */
+  --bronze: #b79270;
+  --bronze-highlight: #ceac89;
+  --accent-bronze: var(--bronze);
+  --accent-bronze-hover: var(--bronze-highlight);
   --primary: var(--ivory);
   --primary-hover: var(--stone);
-  --primary-foreground: var(--navy);
+  --primary-foreground: var(--brand-midnight);
+
+  /* Borders & Controls */
   --border: #465466;
   --control-border: #8b96a3;
-  --control-surface: #122336;
   --control-text: var(--ivory);
   --focus-on-dark: #e6ba85;
   --focus: var(--focus-on-dark);
+  
+  /* Status Feedback */
   --error-text: #ffd1c5;
   --success-text: #d6eadc;
   --success-border: #86aa96;
   --success-surface: #122b26;
-  --studio-panel: #112033;
+  
+  /* Typography Variables */
   --font-display: var(--font-instrument), Georgia, serif;
   --font-body: var(--font-dm-sans), Arial, Helvetica, sans-serif;
   --font-brand: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   --font-data: var(--font-jetbrains), Consolas, monospace;
+  
+  /* Spacing & Layout */
   --gutter: clamp(20px, 5vw, 88px);
   --space-section: clamp(64px, 8vw, 128px);
   --space-control: 12px;
   --space-panel: clamp(18px, 3vw, 28px);
-  --header-height: 84px;
+  --header-height: 80px;
   --anchor-offset: calc(var(--header-height) + 24px);
   --control-height: 48px;
   --target-min: 44px;
-  --radius-control: 2px;
-  --motion-fast: 200ms;
-  --motion-ui: 200ms;
+  --radius-control: 4px;
+  
+  /* Animation Timings */
+  --motion-fast: 180ms;
+  --motion-ui: 240ms;
   --motion-hover: 300ms;
-  --motion-hero: 900ms;
-  --motion-reveal: 550ms;
-  --motion-ease: cubic-bezier(.2, .7, .2, 1);
+  --motion-reveal: 500ms;
+  --motion-ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @media (max-width: 1200px) {
   :root { --header-height: 72px; }
+}
+
+@media (max-width: 780px) {
+  :root { --header-height: 64px; }
 }
