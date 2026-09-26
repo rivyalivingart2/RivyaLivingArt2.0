@@ -9,10 +9,13 @@ import {studioFetch} from './workspace-api';
 import s from './workspace.module.css';
 import {RevisionHistory} from './revision-history';
 import {ProductComparison,ProductGalleryEditor} from './product-details';
+import {Plus,Search,RefreshCw,X,ExternalLink} from 'lucide-react';
+
 type Entry={product:ShopProduct;reviewedImages?:{image:string;scene:string|null;gallery:NonNullable<ShopProduct['gallery']>};version:number;publishedVersion:number;visible:boolean;hasDraft:boolean;published:ShopProduct|null};
+
 export function CatalogueEditor({admin}:{admin:boolean}){
  const [media,setMedia]=useState<PublicMedia[]>([]),[preview,setPreview]=useState(false),[previewAnswers,setPreviewAnswers]=useState<Record<string,string>>({});
- const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading catalogue…'),[dirty,setDirty]=useState(false);
+ const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[tierFilter,setTierFilter]=useState<'all'|'large'|'memory'|'personal'>('all'),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading catalogue…'),[dirty,setDirty]=useState(false);
  async function load(id?:string){const data=await studioFetch('/api/studio/workspace?view=catalogue');setEntries(data.products);if(id)setEntry(data.products.find((e:Entry)=>e.product.id===id)||null);}
  useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia;reviewedMedia:PublicMedia})=>e.reviewedMedia||e.media))).catch(()=>setMessage('Approved image choices are temporarily unavailable.'));void studioFetch('/api/studio/workspace?view=catalogue').then(data=>{setEntries(data.products);setMessage('Drafts are shared across devices. Only published content appears on the website.');}).catch(e=>setMessage(e.message));},[]);
  useEffect(()=>{const warn=(e:BeforeUnloadEvent)=>{if(dirty){e.preventDefault();e.returnValue='';}};window.addEventListener('beforeunload',warn);return()=>window.removeEventListener('beforeunload',warn);},[dirty]);
@@ -24,5 +27,322 @@ export function CatalogueEditor({admin}:{admin:boolean}){
   if(!entry||busy)return;if(operation!=='hide'&&schemaIssues.length){setMessage(schemaIssues.join(' '));return;}setBusy(true);setMessage('Saving…');
   try{await studioFetch('/api/studio/workspace',{action:'catalogue',product:entry.product,version:entry.version,operation});setEntry({...entry,version:entry.version+1});setDirty(false);await load(entry.product.id);setMessage(operation==='publish'?'Published. New website requests now use this version.':operation==='hide'?'This piece is hidden from the public catalogue.':'Draft saved to the shared catalogue.');}catch(e){setMessage(e instanceof Error?e.message:'Unable to save.');}finally{setBusy(false);}
  }
- return <><div className={s.heading}><div><h1>Pieces & possibilities.</h1><p>Edit product copy and its own customization form. Publish when it is ready.</p></div><button disabled={busy||dirty} onClick={()=>void load(entry?.product.id).then(()=>setMessage('Catalogue refreshed.')).catch(e=>setMessage(e.message))}>Reload catalogue</button></div><p className={s.status} role="status">{message}</p><div className={s.toolbar}><button disabled={busy||!media.length} onClick={()=>{if(dirty&&!window.confirm('Discard unsaved edits?'))return;setEntry({version:0,publishedVersion:0,published:null,visible:false,hasDraft:true,product:{id:'RLA-'+crypto.randomUUID(),slug:'new-piece-'+crypto.randomUUID().slice(0,8),name:'New piece',subtitle:'',category:'Tables',tier:'large',image:media[0].path,story:'',fields:[{id:'brief',label:'Your requirements',type:'text',required:true,maxLength:240}],revision:1}});setDirty(true);}}>New piece</button><label>Find a piece<input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Name, category or product ID"/></label></div><div className={s.layout}><div className={s.list}>{entries.filter(e=>`${e.product.name} ${e.product.category} ${e.product.id}`.toLowerCase().includes(query.toLowerCase())).map(e=><button key={e.product.id} aria-pressed={entry?.product.id===e.product.id} disabled={busy} onClick={()=>{if(dirty&&!window.confirm('Discard unsaved edits to this piece?'))return;setEntry(structuredClone(e));setPreviewAnswers({});setDirty(false);}}>{e.product.name}<small>{e.product.id} · {e.visible?'Visible':'Hidden'}{e.hasDraft?' · Draft changes':''}</small></button>)}</div>{entry?<form data-unsaved={dirty} className={s.editor} onSubmit={e=>{e.preventDefault();void save('draft');}}><fieldset disabled={busy}><h2>{entry.product.name}</h2><p className={s.help}>Shared version {entry.version} · Published form {entry.publishedVersion}. Choose from the approved asset collection. Saved product addresses stay stable.</p><div className={s.actions}><button type="button" onClick={()=>setPreview(v=>!v)}>{preview?'Close form preview':'Preview this form'}</button></div>{preview&&<div className={s.panel}><h3>Draft form preview</h3><p>This preview does not upload files or submit an inquiry.</p>{entry.product.fields.filter(f=>fieldVisible(f,previewAnswers)).map(f=><label key={f.id}>{f.label}{f.required?' *':''}{f.type==='select'?<select value={previewAnswers[f.id]||''} onChange={e=>setPreviewAnswers({...previewAnswers,[f.id]:e.target.value})}><option value="">Choose an option</option>{f.options?.map(o=><option key={o}>{o}</option>)}</select>:<input type={f.type==='number'?'number':'text'} value={previewAnswers[f.id]||''} onChange={e=>setPreviewAnswers({...previewAnswers,[f.id]:e.target.value})}/>}<small>{f.hint}</small></label>)}</div>}<div className={s.grid}><label>Name<input value={entry.product.name} maxLength={100} required onChange={e=>change({name:e.target.value})}/></label><label>Subtitle<input value={entry.product.subtitle} maxLength={120} required onChange={e=>change({subtitle:e.target.value})}/></label><label>Public address<input value={entry.product.slug} disabled={!entry.product.id.startsWith('RLA-')||entry.version>0} onChange={e=>change({slug:e.target.value})}/></label><label>Collection<select value={entry.product.tier} onChange={e=>change({tier:e.target.value as ShopProduct['tier']})}><option value="large">Furniture & spatial art</option><option value="memory">Memory art</option><option value="personal">Personal art & gifts</option></select></label><label>Category<input value={entry.product.category} maxLength={80} required onChange={e=>change({category:e.target.value})}/></label><label>Design dimensions<input value={entry.product.dimensions||''} maxLength={200} onChange={e=>change({dimensions:e.target.value||undefined})}/></label><label>Materials<input value={entry.product.material||''} maxLength={300} onChange={e=>change({material:e.target.value||undefined})}/></label><label>Primary image<select value={entry.product.image} onChange={e=>change({image:e.target.value})}>{media.map(m=><option key={m.path} value={m.path}>{m.alt} · {m.products.join(', ')}</option>)}</select></label><label>Room image<select value={entry.product.scene||''} onChange={e=>change({scene:e.target.value||undefined})}><option value="">No room image</option>{media.map(m=><option key={m.path} value={m.path}>{m.alt}</option>)}</select></label><label className={s.wide}>Product story<textarea value={entry.product.story} maxLength={1800} rows={5} required onChange={e=>change({story:e.target.value})}/></label></div>{entry.reviewedImages&&entry.product.image!==entry.reviewedImages.image&&<section className={s.panel}><h3>A reviewed image assignment is available.</h3><p>Keep your written draft and customization fields. Apply the reviewed primary image and gallery only after comparing the product below. Metadata for its corrected product association must also be published in Public media.</p><p className={s.help}>Reviewed image: {entry.reviewedImages.image}</p><button type="button" onClick={()=>{const images=entry.reviewedImages!;change({image:images.image,scene:images.scene||undefined,gallery:images.gallery,imageAlt:undefined,imageCaption:undefined,imagePosition:undefined});setMessage('Reviewed images applied to this unsaved product draft. Inspect and save deliberately.');}}>Apply reviewed product images</button></section>}<ProductGalleryEditor product={entry.product} media={media} onChange={change}/><RevisionHistory<ShopProduct> key={entry.product.id+':'+entry.version} kind="product" entityKey={entry.product.id} currentVersion={entry.version} onRestore={change}/><ProductComparison draft={entry.product} published={entry.published}/><section className={s.fields}><h2>Customization fields</h2>{hasReviewedCapabilities(entry.product.id)&&<button type="button" disabled={busy} onClick={()=>{if(!window.confirm('Replace only this draft’s fields with the reviewed product-specific form? Published and historical answers stay unchanged.'))return;change({fields:productFields(entry.product)});setPreviewAnswers({});setMessage('Reviewed fields applied to this unsaved draft. Inspect the preview and save deliberately.');}}>Use reviewed product-specific form</button>}{!!schemaIssues.length&&<div role="alert"><p>Correct the form before saving:</p><ul>{schemaIssues.map((issue,i)=><li key={i}>{issue}</li>)}</ul></div>}<p className={s.help}>These exact fields appear on this piece’s public order form after publishing. Contact details, notes and references are included automatically.</p>{entry.product.fields.map((f,i)=><div key={f.id} className={s.fieldRow}><p className={s.help}>Stable field ID: {f.id}</p><div className={s.grid}><label>Field label<input value={f.label} maxLength={100} required onChange={e=>field(i,{label:e.target.value})}/></label><label>Answer type<select value={f.type} onChange={e=>field(i,{type:e.target.value as CustomField['type'],options:e.target.value==='select'?(f.options||['Discuss with the studio']):undefined})}><option value="text">Short text</option><option value="select">Choose from options</option><option value="number">Whole number</option></select></label>{f.type==='select'&&<label className={s.wide}>Options — one per line<textarea rows={4} value={f.options?.join('\n')||''} onChange={e=>field(i,{options:e.target.value.split('\n')})}/></label>}<label className={s.wide}>Help text<input value={f.hint||''} maxLength={400} onChange={e=>field(i,{hint:e.target.value||undefined})}/></label><label>Show when<select value={f.visibleWhen?.field||''} onChange={e=>{const parent=entry.product.fields.find(p=>p.id===e.target.value);field(i,{visibleWhen:parent?{field:parent.id,value:parent.options?.[0]||''}:undefined});}}><option value="">Always visible</option>{entry.product.fields.slice(0,i).filter(p=>p.type==='select'&&!p.visibleWhen).map(p=><option key={p.id} value={p.id}>{p.label}</option>)}</select></label>{f.visibleWhen&&<label>Answer equals<select value={f.visibleWhen.value} onChange={e=>field(i,{visibleWhen:{field:f.visibleWhen!.field,value:e.target.value}})}>{entry.product.fields.find(p=>p.id===f.visibleWhen!.field)?.options?.map(o=><option key={o}>{o}</option>)}</select></label>}{f.type==='number'?<><label>Minimum<input type="number" min={1} max={500} value={f.min??1} onChange={e=>field(i,{min:Number(e.target.value)})}/></label><label>Maximum<input type="number" min={f.min??1} max={500} value={f.max??500} onChange={e=>field(i,{max:Number(e.target.value)})}/></label></>:f.type==='text'&&<label>Character limit<input type="number" min={1} max={240} value={f.maxLength??240} onChange={e=>field(i,{maxLength:Number(e.target.value)})}/></label>}<label className={s.check}><input type="checkbox" checked={f.required} onChange={e=>field(i,{required:e.target.checked})}/>Required</label><div className={s.actions}><button type="button" disabled={i===0} onClick={()=>moveField(i,-1)}>Move up</button><button type="button" disabled={i===entry.product.fields.length-1} onClick={()=>moveField(i,1)}>Move down</button><button type="button" title="Clear dependent conditions before removing a parent field" disabled={entry.product.fields.length===1||entry.product.fields.some(child=>child.visibleWhen?.field===f.id)} onClick={()=>change({fields:entry.product.fields.filter((_,n)=>i!==n)})}>Remove field</button></div></div></div>)}<button type="button" disabled={entry.product.fields.length>=16} onClick={()=>change({fields:[...entry.product.fields,{id:'field_'+crypto.randomUUID().slice(0,8),label:'Your preference',type:'text',required:false}]})}>Add a field</button></section><div className={s.actions}><button className={s.primary} disabled={busy||schemaIssues.length>0}>Save draft</button>{admin&&<><button type="button" disabled={busy||schemaIssues.length>0} onClick={()=>void save('publish')}>Publish to website</button><button type="button" disabled={busy} onClick={()=>void save('hide')}>Hide from website</button></>}<a href={`/pieces/${entry.product.slug}`} target="_blank" rel="noreferrer">View published piece ↗</a></div>{dirty&&<p className={s.help}>You have unsaved changes.</p>}<DraftRecovery value={entry.product} busy={busy} onReload={async()=>{setBusy(true);try{await load(entry.product.id);setDirty(false);}finally{setBusy(false);}}}/></fieldset></form>:<div className={s.empty}>Select a piece to edit its details and customization form.</div>}</div></>;
+
+ const filteredEntries = entries.filter(e => {
+  if (tierFilter !== 'all' && e.product.tier !== tierFilter) return false;
+  if (!query) return true;
+  return `${e.product.name} ${e.product.category} ${e.product.id}`.toLowerCase().includes(query.toLowerCase());
+ });
+
+ return (
+  <>
+   <div className={s.heading}>
+    <div>
+     <h1>Pieces &amp; possibilities.</h1>
+     <p>Edit product copy and its own customization form. Publish when it is ready.</p>
+    </div>
+    <button
+      disabled={busy||dirty}
+      onClick={()=>void load(entry?.product.id).then(()=>setMessage('Catalogue refreshed.')).catch(e=>setMessage(e.message))}
+      style={{ display: 'inline-flex', alignItems: 'center', gap: '7px' }}
+    >
+      <RefreshCw size={14} />
+      <span>Reload catalogue</span>
+    </button>
+   </div>
+
+   <p className={s.status} role="status">{message}</p>
+
+   {/* Collection Filter Tabs */}
+   <div className={s.categoryTabs} role="tablist" aria-label="Filter by collection">
+    <button
+      type="button"
+      role="tab"
+      aria-selected={tierFilter === 'all'}
+      className={tierFilter === 'all' ? `${s.categoryTabBtn} ${s.categoryTabBtnActive}` : s.categoryTabBtn}
+      onClick={() => setTierFilter('all')}
+    >
+      All pieces ({entries.length})
+    </button>
+    <button
+      type="button"
+      role="tab"
+      aria-selected={tierFilter === 'large'}
+      className={tierFilter === 'large' ? `${s.categoryTabBtn} ${s.categoryTabBtnActive}` : s.categoryTabBtn}
+      onClick={() => setTierFilter('large')}
+    >
+      Furniture &amp; spatial ({entries.filter(e => e.product.tier === 'large').length})
+    </button>
+    <button
+      type="button"
+      role="tab"
+      aria-selected={tierFilter === 'memory'}
+      className={tierFilter === 'memory' ? `${s.categoryTabBtn} ${s.categoryTabBtnActive}` : s.categoryTabBtn}
+      onClick={() => setTierFilter('memory')}
+    >
+      Memory art ({entries.filter(e => e.product.tier === 'memory').length})
+    </button>
+    <button
+      type="button"
+      role="tab"
+      aria-selected={tierFilter === 'personal'}
+      className={tierFilter === 'personal' ? `${s.categoryTabBtn} ${s.categoryTabBtnActive}` : s.categoryTabBtn}
+      onClick={() => setTierFilter('personal')}
+    >
+      Personal art &amp; gifts ({entries.filter(e => e.product.tier === 'personal').length})
+    </button>
+   </div>
+
+   <div className={s.toolbar}>
+    <button
+      type="button"
+      disabled={busy||!media.length}
+      onClick={()=>{
+        if(dirty&&!window.confirm('Discard unsaved edits?'))return;
+        setEntry({version:0,publishedVersion:0,published:null,visible:false,hasDraft:true,product:{id:'RLA-'+crypto.randomUUID(),slug:'new-piece-'+crypto.randomUUID().slice(0,8),name:'New piece',subtitle:'',category:'Tables',tier:tierFilter === 'all' ? 'large' : tierFilter,image:media[0].path,story:'',fields:[{id:'brief',label:'Your requirements',type:'text',required:true,maxLength:240}],revision:1}});
+        setDirty(true);
+      }}
+      style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+    >
+      <Plus size={15} />
+      <span>New piece</span>
+    </button>
+
+    <div className={s.searchWrap}>
+      <input
+        type="search"
+        value={query}
+        onChange={e=>setQuery(e.target.value)}
+        placeholder="Find piece by name, category or ID…"
+        aria-label="Find a piece"
+      />
+      {query && (
+        <button
+          type="button"
+          className={s.searchClearBtn}
+          onClick={()=>setQuery('')}
+          aria-label="Clear search"
+        >
+          <X size={14} />
+        </button>
+      )}
+    </div>
+   </div>
+
+   <div className={s.layout}>
+    <div className={s.list}>
+      {filteredEntries.map(e => (
+        <button
+          key={e.product.id}
+          aria-pressed={entry?.product.id===e.product.id}
+          disabled={busy}
+          onClick={()=>{
+            if(dirty&&!window.confirm('Discard unsaved edits to this piece?'))return;
+            setEntry(structuredClone(e));
+            setPreviewAnswers({});
+            setDirty(false);
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
+            <strong>{e.product.name}</strong>
+            {e.visible ? (
+              <span className={s.statusBadgePublished}>Published</span>
+            ) : (
+              <span className={s.statusBadgeHidden}>Hidden</span>
+            )}
+          </div>
+          <small style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap', marginTop: '4px' }}>
+            <span>{e.product.id}</span>
+            <span>·</span>
+            <span>{e.product.category}</span>
+            {e.hasDraft && <span className={s.statusBadgeDraft}>Draft</span>}
+          </small>
+        </button>
+      ))}
+      {filteredEntries.length === 0 && (
+        <p className={s.help} style={{ padding: '16px' }}>No pieces match the selected filter or search.</p>
+      )}
+    </div>
+
+    {entry ? (
+      <form data-unsaved={dirty} className={s.editor} onSubmit={e=>{e.preventDefault();void save('draft');}}>
+        <fieldset disabled={busy}>
+          <h2>{entry.product.name}</h2>
+          <p className={s.help}>Shared version {entry.version} · Published form {entry.publishedVersion}. Choose from the approved asset collection. Saved product addresses stay stable.</p>
+          <div className={s.actions}>
+            <button type="button" onClick={()=>setPreview(v=>!v)}>
+              {preview?'Close form preview':'Preview this form'}
+            </button>
+          </div>
+
+          {preview && (
+            <div className={s.panel}>
+              <h3>Draft form preview</h3>
+              <p>This preview does not upload files or submit an inquiry.</p>
+              {entry.product.fields.filter(f=>fieldVisible(f,previewAnswers)).map(f=>(
+                <label key={f.id}>
+                  {f.label}{f.required?' *':''}
+                  {f.type==='select'?(
+                    <select value={previewAnswers[f.id]||''} onChange={e=>setPreviewAnswers({...previewAnswers,[f.id]:e.target.value})}>
+                      <option value="">Choose an option</option>
+                      {f.options?.map(o=><option key={o}>{o}</option>)}
+                    </select>
+                  ):(
+                    <input type={f.type==='number'?'number':'text'} value={previewAnswers[f.id]||''} onChange={e=>setPreviewAnswers({...previewAnswers,[f.id]:e.target.value})}/>
+                  )}
+                  <small>{f.hint}</small>
+                </label>
+              ))}
+            </div>
+          )}
+
+          <div className={s.grid}>
+            <label>Name<input value={entry.product.name} maxLength={100} required onChange={e=>change({name:e.target.value})}/></label>
+            <label>Subtitle<input value={entry.product.subtitle} maxLength={120} required onChange={e=>change({subtitle:e.target.value})}/></label>
+            <label>Public address<input value={entry.product.slug} disabled={!entry.product.id.startsWith('RLA-')||entry.version>0} onChange={e=>change({slug:e.target.value})}/></label>
+            <label>Collection
+              <select value={entry.product.tier} onChange={e=>change({tier:e.target.value as ShopProduct['tier']})}>
+                <option value="large">Furniture &amp; spatial art</option>
+                <option value="memory">Memory art</option>
+                <option value="personal">Personal art &amp; gifts</option>
+              </select>
+            </label>
+            <label>Category<input value={entry.product.category} maxLength={80} required onChange={e=>change({category:e.target.value})}/></label>
+            <label>Design dimensions<input value={entry.product.dimensions||''} maxLength={200} onChange={e=>change({dimensions:e.target.value||undefined})}/></label>
+            <label>Materials<input value={entry.product.material||''} maxLength={300} onChange={e=>change({material:e.target.value||undefined})}/></label>
+            <label>Primary image
+              <select value={entry.product.image} onChange={e=>change({image:e.target.value})}>
+                {media.map(m=><option key={m.path} value={m.path}>{m.alt} · {m.products.join(', ')}</option>)}
+              </select>
+            </label>
+            <label>Room image
+              <select value={entry.product.scene||''} onChange={e=>change({scene:e.target.value||undefined})}>
+                <option value="">No room image</option>
+                {media.map(m=><option key={m.path} value={m.path}>{m.alt}</option>)}
+              </select>
+            </label>
+            <label className={s.wide}>Product story<textarea value={entry.product.story} maxLength={1800} rows={5} required onChange={e=>change({story:e.target.value})}/></label>
+          </div>
+
+          {entry.reviewedImages&&entry.product.image!==entry.reviewedImages.image&&(
+            <section className={s.panel}>
+              <h3>A reviewed image assignment is available.</h3>
+              <p>Keep your written draft and customization fields. Apply the reviewed primary image and gallery only after comparing the product below. Metadata for its corrected product association must also be published in Public media.</p>
+              <p className={s.help}>Reviewed image: {entry.reviewedImages.image}</p>
+              <button type="button" onClick={()=>{
+                const images=entry.reviewedImages!;
+                change({image:images.image,scene:images.scene||undefined,gallery:images.gallery,imageAlt:undefined,imageCaption:undefined,imagePosition:undefined});
+                setMessage('Reviewed images applied to this unsaved product draft. Inspect and save deliberately.');
+              }}>Apply reviewed product images</button>
+            </section>
+          )}
+
+          <ProductGalleryEditor product={entry.product} media={media} onChange={change}/>
+          <RevisionHistory<ShopProduct> key={entry.product.id+':'+entry.version} kind="product" entityKey={entry.product.id} currentVersion={entry.version} onRestore={change}/>
+          <ProductComparison draft={entry.product} published={entry.published}/>
+
+          <section className={s.fields}>
+            <h2>Customization fields</h2>
+            {hasReviewedCapabilities(entry.product.id)&&(
+              <button type="button" disabled={busy} onClick={()=>{
+                if(!window.confirm('Replace only this draft’s fields with the reviewed product-specific form? Published and historical answers stay unchanged.'))return;
+                change({fields:productFields(entry.product)});
+                setPreviewAnswers({});
+                setMessage('Reviewed fields applied to this unsaved draft. Inspect the preview and save deliberately.');
+              }}>Use reviewed product-specific form</button>
+            )}
+            {!!schemaIssues.length&&(
+              <div role="alert">
+                <p>Correct the form before saving:</p>
+                <ul>{schemaIssues.map((issue,i)=><li key={i}>{issue}</li>)}</ul>
+              </div>
+            )}
+            <p className={s.help}>These exact fields appear on this piece’s public order form after publishing. Contact details, notes and references are included automatically.</p>
+            {entry.product.fields.map((f,i)=>(
+              <div key={f.id} className={s.fieldRow}>
+                <p className={s.help}>Stable field ID: {f.id}</p>
+                <div className={s.grid}>
+                  <label>Field label<input value={f.label} maxLength={100} required onChange={e=>field(i,{label:e.target.value})}/></label>
+                  <label>Answer type
+                    <select value={f.type} onChange={e=>field(i,{type:e.target.value as CustomField['type'],options:e.target.value==='select'?(f.options||['Discuss with the studio']):undefined})}>
+                      <option value="text">Short text</option>
+                      <option value="select">Choose from options</option>
+                      <option value="number">Whole number</option>
+                    </select>
+                  </label>
+                  {f.type==='select'&&(
+                    <label className={s.wide}>Options — one per line
+                      <textarea rows={4} value={f.options?.join('\n')||''} onChange={e=>field(i,{options:e.target.value.split('\n')})}/>
+                    </label>
+                  )}
+                  <label className={s.wide}>Help text<input value={f.hint||''} maxLength={400} onChange={e=>field(i,{hint:e.target.value||undefined})}/></label>
+                  <label>Show when
+                    <select value={f.visibleWhen?.field||''} onChange={e=>{
+                      const parent=entry.product.fields.find(p=>p.id===e.target.value);
+                      field(i,{visibleWhen:parent?{field:parent.id,value:parent.options?.[0]||''}:undefined});
+                    }}>
+                      <option value="">Always visible</option>
+                      {entry.product.fields.slice(0,i).filter(p=>p.type==='select'&&!p.visibleWhen).map(p=>(
+                        <option key={p.id} value={p.id}>{p.label}</option>
+                      ))}
+                    </select>
+                  </label>
+                  {f.visibleWhen&&(
+                    <label>Answer equals
+                      <select value={f.visibleWhen.value} onChange={e=>field(i,{visibleWhen:{field:f.visibleWhen!.field,value:e.target.value}})}>
+                        {entry.product.fields.find(p=>p.id===f.visibleWhen!.field)?.options?.map(o=>(
+                          <option key={o}>{o}</option>
+                        ))}
+                      </select>
+                    </label>
+                  )}
+                  {f.type==='number'?(
+                    <>
+                      <label>Minimum<input type="number" min={1} max={500} value={f.min??1} onChange={e=>field(i,{min:Number(e.target.value)})}/></label>
+                      <label>Maximum<input type="number" min={f.min??1} max={500} value={f.max??500} onChange={e=>field(i,{max:Number(e.target.value)})}/></label>
+                    </>
+                  ):f.type==='text'&&(
+                    <label>Character limit<input type="number" min={1} max={240} value={f.maxLength??240} onChange={e=>field(i,{maxLength:Number(e.target.value)})}/></label>
+                  )}
+                  <label className={s.check}>
+                    <input type="checkbox" checked={f.required} onChange={e=>field(i,{required:e.target.checked})}/>Required
+                  </label>
+                  <div className={s.actions}>
+                    <button type="button" disabled={i===0} onClick={()=>moveField(i,-1)}>Move up</button>
+                    <button type="button" disabled={i===entry.product.fields.length-1} onClick={()=>moveField(i,1)}>Move down</button>
+                    <button type="button" title="Clear dependent conditions before removing a parent field" disabled={entry.product.fields.length===1||entry.product.fields.some(child=>child.visibleWhen?.field===f.id)} onClick={()=>change({fields:entry.product.fields.filter((_,n)=>i!==n)})}>Remove field</button>
+                  </div>
+                </div>
+              </div>
+            ))}
+            <button type="button" disabled={entry.product.fields.length>=16} onClick={()=>change({fields:[...entry.product.fields,{id:'field_'+crypto.randomUUID().slice(0,8),label:'Your preference',type:'text',required:false}]})}>Add a field</button>
+          </section>
+
+          <div className={s.actions}>
+            <button className={s.primary} disabled={busy||schemaIssues.length>0}>Save draft</button>
+            {admin&&(
+              <>
+                <button type="button" disabled={busy||schemaIssues.length>0} onClick={()=>void save('publish')}>Publish to website</button>
+                <button type="button" disabled={busy} onClick={()=>void save('hide')}>Hide from website</button>
+              </>
+            )}
+            <a href={`/pieces/${entry.product.slug}`} target="_blank" rel="noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+              <span>View published piece</span>
+              <ExternalLink size={13} />
+            </a>
+          </div>
+
+          {dirty&&<p className={s.help}>You have unsaved changes.</p>}
+          <DraftRecovery value={entry.product} busy={busy} onReload={async()=>{
+            setBusy(true);
+            try{await load(entry.product.id);setDirty(false);}finally{setBusy(false);}
+          }}/>
+        </fieldset>
+      </form>
+    ):(
+      <div className={s.empty}>Select a piece to edit its details and customization form.</div>
+    )}
+   </div>
+  </>
+ );
 }

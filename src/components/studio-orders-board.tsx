@@ -18,21 +18,41 @@ export function OrderKanban({orders, busy, onMove, onOpen}: {
     aria-label={stageLabel(stage)} onDragOver={event => { if (dragged && !busy) { event.preventDefault(); setOver(stage); } }}
     onDrop={event => { event.preventDefault(); if (dragged) finish(dragged, stage); }}>
     <h2>{stageLabel(stage)} <span>{orders.filter(o => o.status === stage).length}</span></h2>
-    {orders.filter(o => o.status === stage).map(order => <article key={order.id} className={`order-card ${dragged === order.id ? 'order-dragging' : ''}`}>
-      <div className="order-card-top"><small>{order.reference || (order.id.startsWith('DO') ? order.id : order.id.slice(0,8))}</small>
-        <button type="button" className="order-grip" aria-label={`Drag ${order.client} to another stage`} disabled={busy}
-          draggable={!busy} onDragStart={event => { event.dataTransfer.setData('text/plain', order.id); event.dataTransfer.effectAllowed = 'move'; setDragged(order.id); }}
-          onDragEnd={() => { setDragged(null); setOver(null); }}
-          onPointerDown={event => { if (event.pointerType !== 'mouse' && !busy) { event.currentTarget.setPointerCapture(event.pointerId); setDragged(order.id); } }}
-          onPointerMove={event => { if (event.pointerType !== 'mouse' && dragged === order.id) { const target = document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-order-stage]')?.getAttribute('data-order-stage'); setOver(isOrderStage(target) ? target : null); } }}
-          onPointerUp={event => { if (event.pointerType !== 'mouse' && dragged === order.id) { const target = document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-order-stage]')?.getAttribute('data-order-stage'); finish(order.id,target); } }}
-          onPointerCancel={() => { setDragged(null); setOver(null); }}>⠿</button>
-      </div>
-      {onOpen ? <button type="button" className="order-open" disabled={busy} onClick={() => onOpen(order.id)}>{order.client}</button> : <h3>{order.client}</h3>}
-      <p>{order.title}</p>{order.source&&<p><small>{order.source==='manual'?'Staff-entered order':order.requestKind==='bespoke'?'Custom request':'Product request'}<br/>{order.assigneeName||'Unassigned'}{order.followUp?' · Follow up '+order.followUp.slice(0,10):''}<br/>{order.createdAt?'Received '+order.createdAt.slice(0,10)+' · '+Math.max(0,Math.floor((Date.now()-Date.parse(order.createdAt))/86400000))+' days ago':''}{order.referenceCount!==undefined?' · '+order.referenceCount+' references':''}</small></p>}
-      <label className="order-stage-select">Move to<select aria-label={`Move ${order.client} to stage`} value={order.status} disabled={busy}
-        onChange={event => finish(order.id,event.target.value)}>{orderStages.map(s => <option key={s} value={s}>{stageLabel(s)}</option>)}</select></label>
-    </article>)}
+    {orders.filter(o => o.status === stage).map(order => {
+      const isDue = Boolean(order.followUp && new Date(order.followUp.slice(0, 10)).getTime() <= Date.now());
+      const refCode = order.reference || (order.id.startsWith('DO') ? order.id : order.id.slice(0, 8));
+      return <article key={order.id} className={`order-card ${dragged === order.id ? 'order-dragging' : ''}`}>
+        <div className="order-card-top">
+          <small className="order-ref-code">{refCode}</small>
+          <div style={{display:'flex',alignItems:'center',gap:4}}>
+            <button type="button" className="order-copy-ref" title="Copy reference ID" onClick={(e)=>{e.stopPropagation();void navigator.clipboard?.writeText(order.reference || order.id);}}>📋</button>
+            <button type="button" className="order-grip" aria-label={`Drag ${order.client} to another stage`} disabled={busy}
+              draggable={!busy} onDragStart={event => { event.dataTransfer.setData('text/plain', order.id); event.dataTransfer.effectAllowed = 'move'; setDragged(order.id); }}
+              onDragEnd={() => { setDragged(null); setOver(null); }}
+              onPointerDown={event => { if (event.pointerType !== 'mouse' && !busy) { event.currentTarget.setPointerCapture(event.pointerId); setDragged(order.id); } }}
+              onPointerMove={event => { if (event.pointerType !== 'mouse' && dragged === order.id) { const target = document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-order-stage]')?.getAttribute('data-order-stage'); setOver(isOrderStage(target) ? target : null); } }}
+              onPointerUp={event => { if (event.pointerType !== 'mouse' && dragged === order.id) { const target = document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-order-stage]')?.getAttribute('data-order-stage'); finish(order.id,target); } }}
+              onPointerCancel={() => { setDragged(null); setOver(null); }}>⠿</button>
+          </div>
+        </div>
+        {onOpen ? <button type="button" className="order-open" disabled={busy} onClick={() => onOpen(order.id)}>{order.client}</button> : <h3>{order.client}</h3>}
+        <p>{order.title}</p>
+        <div className="order-meta-badges">
+          <span className="order-source-badge">{order.source === 'manual' ? 'Staff manual' : order.requestKind === 'bespoke' ? 'Bespoke' : 'Piece'}</span>
+          {order.followUp && (
+            <span className={isDue ? "order-due-urgent" : "order-due-normal"}>
+              {isDue ? '⚠️ Due ' : 'Follow-up: '}{order.followUp.slice(0, 10)}
+            </span>
+          )}
+          {Boolean(order.referenceCount) && (
+            <span className="order-ref-badge">📷 {order.referenceCount} refs</span>
+          )}
+        </div>
+        {order.source&&<p><small>{order.assigneeName||'Unassigned'}{order.createdAt?' · '+order.createdAt.slice(0,10):''}</small></p>}
+        <label className="order-stage-select">Move to<select aria-label={`Move ${order.client} to stage`} value={order.status} disabled={busy}
+          onChange={event => finish(order.id,event.target.value)}>{orderStages.map(s => <option key={s} value={s}>{stageLabel(s)}</option>)}</select></label>
+      </article>;
+    })}
     {!orders.some(o => o.status === stage) && <p className="order-empty">Drop an order here</p>}
   </section>)}</div>;
 }
