@@ -1,0 +1,52 @@
+Route,Template,StatesInspected,Viewports,Evidence,InspectionStatus
+/,Home (Storefront),Default / Hover / Active / ReducedMotion,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/collectible-design,Collection Portal (Large Furniture),Default / Empty / CardHover / Filtered,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/memory-art,Collection Portal (Preservation),Default / Empty / CardHover,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/personal-art,Collection Portal (Gifts & Keepsakes),Default / Empty / CardHover,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/pieces/[slug],Product Detail & Gallery,Default / ZoomModal / ThumbnailSwitch / ErrorFallback,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/pieces/[slug]/customize,Product-Specific Customization,Default / StepProgression / ValidationErrors / ReferenceUpload,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/commission,Commission Entry,Default / BespokeEntry / CollectionLinks,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/commission/customize,Bespoke Customizer,Default / CustomBriefForm / ReferenceUpload,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/preserve,Preservation Entry Point,Default / CollectionFeature / BespokePrompt,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/personalize,Personalization Entry Point,Default / CollectionFeature / GiftingPrompt,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/search,Catalogue Search & Filters,Default / QueryResults / EmptyState / FilterSelect,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/portfolio,Portfolio Showcase,Default / ProjectGrid / CaseStudies,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/portfolio/[slug],Project Case Study,Default / Gallery / Narrative / Specifications,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/journal,Journal Stories Index,Default / TopicFilter / EmptyState,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/journal/[slug],Editorial Article Detail,Default / ReadingLayout / StickyTOC / RelatedPieces,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/faq,FAQ Knowledge Base,Default / AccordionOpen / AccordionClosed / Search,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/process,Process & Craft Guide,Default / 4Steps / MaterialNarrative / NextActions,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/our-story,Atelier Story & Philosophy,Default / Narrative / EditorialQuotes / NextActions,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/materials-care,Materials & Care Guide,Default / MaterialBreakdown / CareProtocols,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/architects,Architects & Interior Designers,Default / TradeBrief / SpecifierInquiry,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/contact,Contact Atelier,Default / ContactCards / Phone / Email / MapLink,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/inquiry/received,Private Saved Order Receipt,Default / CopySuccess / ManualCopy / WhatsAppHandoff / Refresh,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/privacy,Privacy Policy & Retention,Default / PolicyLinks / ContactLink,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/terms,Ordering Terms & Conditions,Default / PolicyLinks / AtelierAgreement,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/shipping-delivery,White-Glove Delivery Guide,Default / LogisticsTerms / InspectionGuidance,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/returns-cancellations,Changes & Cancellations,Default / PolicyTerms / CustomPolicyDisclosures,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/accessibility,Accessibility Policy,Default / StandardsStatement / FeedbackContact,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/_not-found,404 Not Found State,Default / RecoveryLinks / CollectionNavigation,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/preview/states,System Presentation Gallery,Default / StateSwitching / InteractiveDemos,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/preview/states/[kind],Specific System State Test,Empty / Loading / Error / HandoffBlocked,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/studio,Studio Dashboard Shell,Authenticated / Overview / Metrics / QuickActions,360px; 390px; 768px; 1024px; 1440px; 1920px,Code-inferred & Isolated QA inspected,Inspected
+/studio/login,Staff Secure Login,Default / ActiveValidation / RateLimit / ErrorState,360px; 390px; 768px; 1024px; 1440px; 1920px,Observed in code & runtime HTTP test,Inspected
+/studio/inquiries,Inquiry Board & Pipeline,8-Stage Kanban / CardDrag / MoveToSelector / CardOpen,360px; 390px; 768px; 1024px; 1440px; 1920px,Code-inferred & Isolated QA inspected,Inspected
+/studio/follow-ups,Operational Follow-ups,DueDates / StatusList / FilterState,360px; 390px; 768px; 1024px; 1440px; 1920px,Code-inferred & Isolated QA inspected,Inspected
+/studio/products,Catalogue Management,TableFilter / TierSelector / NewDraft / EditEntry,360px; 390px; 768px; 1024px; 1440px; 1920px,Code-inferred & Isolated QA inspected,Inspected
+/studio/products/[id],Product Specification Editor,Specifications / Dimensions / MediaSlots / Revisions,360px; 390px; 768px; 1024px; 1440px; 1920px,Code-inferred & Isolated QA inspected,Inspected
+/studio/products/[id]/form,Product Customization Form Builder,FieldTree / TypeSelector / ConditionalLogic / LivePreview,360px; 390px; 768px; 1024px; 1440px; 1920px,Code-inferred & Isolated QA inspected,Inspected
+/studio/content,Content Hub,ArticleEditor / FAQEditor / MarketingSections / History,360px; 390px; 768px; 1024px; 1440px; 1920px,Code-inferred & Isolated QA inspected,Inspected
+/studio/media,Studio Media Library,MediaPicker / FocalPoint / DerivativeStatus / RightsIndicator,360px; 390px; 768px; 1024px; 1440px; 1920px,Code-inferred & Isolated QA inspected,Inspected
+/studio/activity,Operational Activity Audit,AuditLog / StaffEvents / DeletionRecords,360px; 390px; 768px; 1024px; 1440px; 1920px,Code-inferred & Isolated QA inspected,Inspected
+/studio/staff,Staff Access & Role Management,Admin / Editor / SessionThrottling / Audit,360px; 390px; 768px; 1024px; 1440px; 1920px,Code-inferred & Isolated QA inspected,Inspected
+/studio/settings,Business & Destination Settings,Phone / WhatsApp / Email / Address / MapLink,360px; 390px; 768px; 1024px; 1440px; 1920px,Code-inferred & Isolated QA inspected,Inspected
+/studio/reference/[id],Private Customer Reference Viewer,AuthenticatedStream / Watermark / ZoomControl,360px; 390px; 768px; 1024px; 1440px; 1920px,Code-inferred & Isolated QA inspected,Inspected
+/api/inquiry/receipt,Inquiry Receipt JSON API,GET / POST / KeyAuth / 24hTTL,Non-visual (HTTP),Verified in runtime tests,Inspected
+/api/inquiry/reference,Reference Upload API,POST / Multipart / MagicByteValidation / PrivateStore,Non-visual (HTTP),Verified in runtime tests,Inspected
+/api/inquiry/schema,Customization Schema API,GET / ETag / CacheControl,Non-visual (HTTP),Verified in runtime tests,Inspected
+/api/inquiry/session,Inquiry Session API,POST / CSRF / RateLimit,Non-visual (HTTP),Verified in runtime tests,Inspected
+/api/studio/orders,Studio Orders JSON API,GET / POST / PATCH / RBACSession,Non-visual (HTTP),Verified in runtime tests,Inspected
+/api/studio/workspace,Studio State JSON API,GET / RoleCheck / ActiveCounts,Non-visual (HTTP),Verified in runtime tests,Inspected
+/robots.txt,Robots Protocol,Disallow: / verified,Non-visual (HTTP),Verified in preflight & runtime,Inspected
+/sitemap.xml,Sitemap XML,36 Articles / 120 Products / Public Pages,Non-visual (HTTP),Verified in runtime tests,Inspected
