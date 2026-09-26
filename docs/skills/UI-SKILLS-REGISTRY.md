@@ -21,6 +21,7 @@
 | **8** | **`iart-ai/micro-interaction`** | `interaction`, `motion` | Tactile feedback (tap scale 0.96 with fast spring), discrete CSS transitions, `@starting-style` enter/exit, and layout animation ("magic move"). | [`.agents/skills/micro-interaction/`](file:///c:/Users/gonda/Documents/antigravity/lucid-maxwell/.agents/skills/micro-interaction/SKILL.md) |
 | **9** | **`ibelick/fixing-accessibility`** | `accessibility`, `a11y` | Targeted WCAG 2.2 remediation: accessible names on controls, keyboard Tab navigation, focus traps in modals, form error aria attributes, and contrast floors. | [`.agents/skills/fixing-accessibility/`](file:///c:/Users/gonda/Documents/antigravity/lucid-maxwell/.agents/skills/fixing-accessibility/SKILL.md) |
 | **10** | **`dickwu/apple-design`** | `craft`, `taste` | Apple Human Interface Guidelines reviewer: distinctive luxury point of view, dark mode semantics, restraint, and non-templated editorial compositions. | [`.agents/skills/apple-design/`](file:///c:/Users/gonda/Documents/antigravity/lucid-maxwell/.agents/skills/apple-design/SKILL.md) |
+| **11** | **`ui-ux-pro-max`** | `design-system`, `intelligence` | UI/UX design intelligence: 67 styles, 96 color palettes, 57 font pairings, 99 UX guidelines, and 25 chart types across 13 technology stacks. | [`.agents/skills/ui-ux-pro-max/`](file:///c:/Users/gonda/Documents/antigravity/lucid-maxwell/.agents/skills/ui-ux-pro-max/SKILL.md) |
 
 ---
 
