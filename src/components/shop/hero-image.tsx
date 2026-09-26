@@ -13,7 +13,6 @@ export function HeroImage({portrait,landscape,name,portraitPosition,landscapePos
  return <picture>
   <source media="(max-width:780px)" srcSet={mobile.srcSet} sizes={mobile.sizes}/>
   {/* getImageProps supplies Next's optimized URLs; picture selects before requesting. */}
-  {/* eslint-disable-next-line @next/next/no-img-element */}
-  <img {...desktop} className={s.artDirectedHero} style={{...desktop.style,'--portrait-position':portraitPosition||'50% 50%','--landscape-position':landscapePosition||'50% 50%'} as CSSProperties} onError={()=>setFailed(true)}/>
+  <img {...desktop} alt={desktop.alt || `${name} — design visualization`} className={s.artDirectedHero} style={{...desktop.style,'--portrait-position':portraitPosition||'50% 50%','--landscape-position':landscapePosition||'50% 50%'} as CSSProperties} onError={()=>setFailed(true)}/>
  </picture>;
 }

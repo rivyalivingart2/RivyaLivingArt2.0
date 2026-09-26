@@ -206,8 +206,8 @@
 .textLink{white-space:normal;overflow-wrap:anywhere}
 .articleCardImage{aspect-ratio:16/10}
 .heroImage .artDirectedHero{object-position:var(--landscape-position)}
-.heroImageFallback{position:absolute;inset:0;display:flex;align-items:start;justify-content:end;padding:24px;color:var(--muted);font-size:14px}
-.detailVisual,.collectionFeatureImage{background:var(--forest)}
+.heroImageFallback{position:absolute;inset:0;display:flex;align-items:start;justify-content:end;padding:24px;color:var(--muted);font-size:14px;background:var(--surface);border:1px solid rgba(255,255,255,0.06)}
+.detailVisual,.collectionFeatureImage{background:var(--surface);border:1px solid rgba(255,255,255,0.06);overflow:hidden}
 .formAside .detailVisual img{object-fit:cover}
 .galleryControls{flex-wrap:wrap;gap:12px}
 .galleryControls button{max-width:100%}
