@@ -25,10 +25,10 @@ These results belong to the recorded local/isolated QA candidates. No new test r
 
 | Coverage | Recorded result |
 |---|---|
-| Unit checks | 178 passed |
+| Unit checks | 190 passed (including data erasure, security contracts, and timezone boundaries) |
 | Local HTTP access/publication checks | 386 passed |
-| Preflight checks | 12 passed at the earlier recorded candidate |
-| Lint, TypeScript and local production build | Passed at the recorded candidate |
+| Preflight checks | 12 passed |
+| Lint, TypeScript and local production build | Passed (0 lint errors, 0 typecheck errors, all 43 routes compiled successfully) |
 | Published route coverage | 276 product, customization and article routes |
 | Automated accessibility/overflow | 28 cases across 1440, 768, 390 and 320 px; no findings in those cases |
 | Actual order, upload, receipt and Studio access | Passed in isolated QA |
