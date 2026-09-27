@@ -15,4 +15,18 @@ export async function limited(key:string,limit:number,minutes=60){
 }
 export async function clientRateKey(scope:string){const h=await headers();const ip=process.env.VERCEL?h.get('x-vercel-forwarded-for')?.split(',')[0]?.trim():'local';return `${scope}:${privateHash(ip||'unknown')}`;}
 export async function smallJson(request:Request,max=40000){const reader=request.body?.getReader();if(!reader)throw new Error('Empty request');const chunks:Uint8Array[]=[];let size=0;for(;;){const r=await reader.read();if(r.done)break;size+=r.value.length;if(size>max){await reader.cancel();throw new Error('Request too large');}chunks.push(r.value);}return JSON.parse(Buffer.concat(chunks).toString('utf8'));}
-export function originAllowed(request:Request){return request.headers.get('origin')===new URL(request.url).origin;}
+export function originAllowed(request:Request){
+ const origin=request.headers.get('origin');
+ if(!origin)return false;
+ try{
+  const originUrl=new URL(origin);
+  const reqUrl=new URL(request.url);
+  if(originUrl.origin===reqUrl.origin)return true;
+  if((originUrl.hostname==='localhost'||originUrl.hostname==='127.0.0.1')&&
+     (reqUrl.hostname==='localhost'||reqUrl.hostname==='127.0.0.1')&&
+     originUrl.port===reqUrl.port&&originUrl.protocol===reqUrl.protocol){
+   return true;
+  }
+  return false;
+ }catch{return false;}
+}

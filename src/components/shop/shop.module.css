@@ -343,7 +343,7 @@
 .footer ul a:hover{color:var(--ivory);transform:translateX(3px)}
 .footerBottom{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;margin-top:56px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.08);font-size:13px;color:var(--muted)}
 .footerBottom span:first-child{color:var(--muted);font-family:var(--font-data);font-size:12px}
-.footerBottom a{color:var(--muted);transition:color var(--motion-fast) var(--motion-ease);padding:4px 2px}
+.footerBottom a{color:var(--muted);transition:color var(--motion-fast) var(--motion-ease);padding:8px 6px;min-height:38px;display:inline-flex;align-items:center}
 .footerBottom a:hover{color:var(--ivory);text-decoration:underline;text-underline-offset:4px}
 .pageIntro{background:var(--resin-glow);padding-top:72px;padding-bottom:52px}
 .detail{grid-template-columns:1.15fr 1fr;gap:6vw}.detailVisual{background:var(--surface)}.detailVisual img{object-fit:cover}
@@ -355,6 +355,10 @@
 .detailImageStrip button:active{transform:scale(0.96)}
 .detailImageStrip button[aria-pressed=true]{outline-color:var(--bronze-highlight);border-color:var(--accent)}
 .field :is(input,select,textarea),.searchForm input{background:var(--control-surface);min-height:48px}
+.breadcrumb a{display:inline-flex;align-items:center;min-height:36px;padding:4px 6px;color:var(--muted);transition:color var(--motion-fast) ease}
+.breadcrumb a:hover{color:var(--ivory)}
+.field input[type="file"]{min-height:44px;padding:8px 12px;display:block}
+.field input[type="file"]::file-selector-button{min-height:36px;padding:6px 14px;margin-right:12px;background:var(--surface-elevated,#172a3d);color:var(--ivory);border:1px solid var(--control-border);border-radius:4px;cursor:pointer}
 .form legend,.faq summary{font-family:var(--font-display)}
 .stepper li[aria-current=step]{border-color:var(--bronze-highlight)}
 .dialog{background:rgba(16,23,19,0.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(183,146,112,0.28);box-shadow:0 24px 64px rgba(0,0,0,0.6),0 0 24px rgba(183,146,112,0.1);border-radius:6px}
