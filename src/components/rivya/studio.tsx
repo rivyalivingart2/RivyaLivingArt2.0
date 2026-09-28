@@ -3,7 +3,7 @@ import {OrderKanban,StudioOrdersBoard} from '@/components/studio-orders-board';
 import {logoutAdmin} from '@/app/studio/login/actions';
 import {useState,type ReactNode} from 'react';
 import {CatalogueImporter} from './catalogue-importer';
-import {Menu,ArrowUpRight,ChevronRight,LayoutDashboard,Package,FileText,Image,MessageSquare,Settings,History,SlidersHorizontal,Users,Upload,Trash2,Layers} from 'lucide-react';
+import {Menu,ArrowUpRight,ChevronRight,LayoutDashboard,Package,FileText,Image,MessageSquare,Settings,History,SlidersHorizontal,Users,Upload,Trash2,Layers,BarChart} from 'lucide-react';
 import {Sheet,SheetContent,SheetTitle,SheetDescription} from '@/components/sites-ui/sheet';
 import {Dialog,DialogContent,DialogTitle,DialogDescription} from '@/components/sites-ui/dialog';
 import {A,Art,Choice,Kicker,type Nav} from './experience';
@@ -33,7 +33,7 @@ import {ContentRichText,parseContent} from './published-content';
 
 import registryData from '@/lib/rivya/demo-registry.json';
 export const registry:DemoRecord[]=registryData;
-const modules=[['overview','Overview',LayoutDashboard],['products','Products',Package],['taxonomy','Taxonomy',Layers],['content','Content room',FileText],['projects','Projects',Layers],['media','Media library',Image],['review','Review & publication',History],['orders','Orders',Package],['enquiries','Sample enquiries',MessageSquare],['imports','Imports & exports',Upload],['subscribers','Subscribers',Users],['demo','Demo data',Trash2],['navigation','Menu visibility',SlidersHorizontal],['staff','Staff & access',Users],['settings','Site settings',Settings],['environment','Environment',SlidersHorizontal],['activity','Activity',History]] as const;
+const modules=[['overview','Overview',LayoutDashboard],['products','Products',Package],['taxonomy','Taxonomy',Layers],['content','Content room',FileText],['projects','Projects',Layers],['media','Media library',Image],['review','Review & publication',History],['orders','Orders',Package],['enquiries','Sample enquiries',MessageSquare],['imports','Imports & exports',Upload],['subscribers','Subscribers',Users],['demo','Demo data',Trash2],['navigation','Menu visibility',SlidersHorizontal],['staff','Staff & access',Users],['settings','Site settings',Settings],['environment','Environment',SlidersHorizontal],['activity','Activity',History],['analytics','Analytics',BarChart]] as const;
 function Panel({children,title}:{children:ReactNode;title?:string}){return <section className="studio-panel">{title&&<h2>{title}</h2>}{children}</section>}
 function Head({eyebrow,title,description,children}:{eyebrow:string;title:string;description:string;children?:ReactNode}){return <header className="studio-page-heading"><div><Kicker>{eyebrow}</Kicker><h1>{title}</h1><p>{description}</p></div>{children}</header>}
 function Download({name,value,children}:{name:string;value:unknown;children:ReactNode}){return <button className="studio-button" onClick={()=>{const blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}}>{children}</button>}
@@ -58,6 +58,7 @@ export function Studio({nav,route,search,authenticated=false}:{nav:Nav;route:str
  else if(section==='staff'||section==='login'||section==='recovery')view=authenticated?<Panel title="Administrator access"><p>You are signed in. The owner manages the Admin ID and password in Vercel environment variables. Changing credentials and redeploying invalidates previous sessions. Other staff accounts are not enabled.</p></Panel>:<Staff initial={section}/>;
  else if(section==='settings')view=<SiteSettings/>;
  else if(section==='environment')view=<Environment/>;
+   else if(section==='analytics')view=<StudioAnalytics/>;
  else if(section==='activity')view=<Activity/>;
  else if(section==='projects')view=<Projects key={id||"index"} nav={nav} id={id}/>;
  else view=<Overview nav={nav}/>;
@@ -88,3 +89,31 @@ function readProject(source:(typeof portfolioStudies)[number]|undefined,raw?:str
 function Projects({nav,id}:{nav:Nav;id?:string}){const d=useDemo(),source=portfolioStudies.find(p=>p.id===id&&d.visible(p.id)),saved=readProject(source,d.state.drafts[id||'']?.data),[title,setTitle]=useState(saved?.title||''),[brief,setBrief]=useState(saved?.brief||''),[notice,setNotice]=useState('');if(id&&!source)return <Panel title="Project unavailable"><p>This sample was removed or the ID does not exist.</p><A nav={nav} href="/studio/projects">Return to projects</A></Panel>;if(source)return <><Head eyebrow={`${source.id} · FICTIONAL STUDY`} title="An imagined project." description="A project editor for sample narrative. It cannot become evidence of delivered work."/><Panel><label>Title<input value={title} onChange={e=>setTitle(e.target.value)}/></label><label>Imagined brief<textarea value={brief} onChange={e=>setBrief(e.target.value)} rows={7}/></label><p>Related product IDs: {source.relatedProductIds.join(', ')}</p><p className="studio-pill">FICTIONAL CONCEPT · NOT A COMPLETED COMMISSION</p><div className="studio-actions"><button className="studio-button primary" disabled={!title.trim()||brief.trim().length<30} onClick={()=>{const result=d.save(source.id,{...source,title,brief});setNotice(result.ok?'Project draft held locally. Fictional provenance is retained.':result.reason||'No checkpoint created.')}}>Save local draft</button><A nav={nav} className="studio-button" href={`/portfolio/${source.slug}`}>View source presentation ↗</A></div><p role="status">{notice}</p></Panel></>;return <><Head eyebrow="PROJECTS" title="Spaces to imagine." description="Fictional concept studies, never completed commissions."/><div className="studio-state-cards">{portfolioStudies.filter(p=>d.visible(p.id)).map(p=><A nav={nav} key={p.id} href={`/studio/projects/${p.id}`}><span>{p.id} · CONCEPT</span><h3>{p.title}</h3><p>{p.excerpt}</p></A>)}</div></>}
 
 function Subscribers(){const d=useDemo(),[filter,setFilter]=useState('All states');return <><Head eyebrow="SUBSCRIBERS · FICTIONAL RECORDS" title="An audience, illustrated." description="Twelve non-contactable source samples. No subscription, consent evidence, campaigns or messages exist."/><Panel><Choice label="Subscriber state" value={filter} onChange={setFilter} options={['All states','PENDING','SUBSCRIBED','UNSUBSCRIBED','SUPPRESSED']}/><table><thead><tr><th>Reference</th><th>Fictional address</th><th>State example</th></tr></thead><tbody>{operationalSamples.subscribers.filter(s=>d.visible(s.id)&&(filter==='All states'||s.status===filter)).map(s=><tr key={s.id}><td>{s.id}</td><td>{s.email}<small>{s.consent}</small></td><td>{s.status}</td></tr>)}</tbody></table><Download name="RivyaLivingArt_subscriber_samples.json" value={operationalSamples.subscribers.filter(s=>d.visible(s.id))}>Export fictional sample records</Download><p className="studio-note">No campaign or bulk-message action is available. Use Demo data for manual removal.</p></Panel></>}
+
+function StudioAnalytics() {
+  return (
+    <>
+      <Head eyebrow="INTELLIGENCE" title="Analytics & Opportunity Scoring" description="Assortment analytics and price architecture views against competitor benchmarks." />
+      <div className="studio-grid">
+        <Panel title="Pricing Architecture Benchmark">
+          <p>Compare the current catalogue pricing distribution against industry averages for luxury resin art in India.</p>
+          <div style={{ display: 'flex', gap: '24px', marginTop: '16px' }}>
+            <div style={{ flex: 1, padding: '16px', background: 'rgba(255,255,255,0.05)', borderRadius: '4px' }}>
+              <h3>Rivya Living Art</h3>
+              <p>Large: ₹45,000 - ₹1,20,000</p>
+              <p>Medium: ₹8,000 - ₹25,000</p>
+              <p>Small: ₹1,500 - ₹4,500</p>
+            </div>
+            <div style={{ flex: 1, padding: '16px', background: 'rgba(255,255,255,0.02)', border: '1px dashed rgba(255,255,255,0.2)', borderRadius: '4px' }}>
+              <h3>Industry Benchmark</h3>
+              <p>Large: ₹35,000 - ₹95,000</p>
+              <p>Medium: ₹12,000 - ₹35,000</p>
+              <p>Small: ₹800 - ₹3,000</p>
+            </div>
+          </div>
+          <p className="studio-note" style={{ marginTop: '16px' }}>Opportunity: The 'Small' tier has premium pricing power. The 'Medium' (Memory Art) tier is currently underpriced compared to specialized Varmala preservers.</p>
+        </Panel>
+      </div>
+    </>
+  );
+}
