@@ -450,3 +450,11 @@
 
 .skipLink { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
 .skipLink:focus { position: fixed; top: 0; left: 0; width: auto; height: auto; padding: 12px 18px; background: var(--ivory, #fff); color: var(--navy, #000); z-index: 9999; font-weight: bold; outline: 3px solid var(--accent-bronze, #b79270); }
+
+/* --- Added Accessibility Focus & Form UX --- */
+.button:focus-visible, .textLink:focus-visible, .searchLink:focus-visible, .mobileToggle:focus-visible, .brand:focus-visible, .nav a:focus-visible { outline: 2px solid var(--accent-bronze, #b79270); outline-offset: 4px; border-radius: 2px; }
+.field input:focus, .field select:focus, .field textarea:focus, .searchForm input:focus { outline: 2px solid var(--accent-bronze, #b79270); outline-offset: -1px; }
+.field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible, .searchForm input:focus-visible { outline: 2px solid var(--accent-bronze, #b79270); outline-offset: 2px; }
+.skipLink:focus-visible { outline: 4px solid var(--accent-bronze, #b79270); }
+.check input:focus-visible { outline: 2px solid var(--accent-bronze, #b79270); outline-offset: 2px; }
+.formLayout { scroll-behavior: smooth; }
