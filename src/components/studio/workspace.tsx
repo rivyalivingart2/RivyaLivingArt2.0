@@ -27,6 +27,8 @@ const StaffEditor=dynamic(()=>import('./staff-editor').then(m=>m.StaffEditor),{l
 const ContentEditor=dynamic(()=>import('./content-editor').then(m=>m.ContentEditor),{loading:WorkspaceLoading});
 const MediaLibrary=dynamic(()=>import('./media-library').then(m=>m.MediaLibrary),{loading:WorkspaceLoading});
 const Operations=dynamic(()=>import('./operations').then(m=>m.Operations),{loading:WorkspaceLoading});
+const SiteCopyEditor=dynamic(()=>import('./site-copy-editor').then(m=>m.SiteCopyEditor),{loading:WorkspaceLoading});
+const SiteImagesEditor=dynamic(()=>import('./site-images-editor').then(m=>m.SiteImagesEditor),{loading:WorkspaceLoading});
 function WorkspaceLoading(){return <p className={s.status} role="status">Opening this workspace page…</p>;}
 
 const navGroups = [
@@ -44,6 +46,8 @@ const navGroups = [
       { key: 'products', href: '/studio/products', label: 'Catalogue & forms', icon: Boxes },
       { key: 'content', href: '/studio/content', label: 'Pages & journal', icon: FileText },
       { key: 'media', href: '/studio/media', label: 'Public media', icon: ImageIcon },
+        { key: 'site-copy', href: '/studio/site-copy', label: 'Site copy', icon: FileText },
+        { key: 'site-images', href: '/studio/site-images', label: 'Site images', icon: ImageIcon },
     ]
   },
   {
@@ -128,7 +132,7 @@ export function Workspace(){
         })}
       </nav>
       <main id="main-content" tabIndex={-1} className={s.workspaceMain}>
-        {error?<div className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p className={s.status} role="status">Opening your workspace…</p>:view==='products'?<CatalogueEditor admin={admin}/>:view==='content'?<ContentEditor admin={admin}/>:view==='media'?<MediaLibrary admin={admin}/>:view==='staff'?admin?<StaffEditor staff={staff} onReload={load}/>:<p className={s.empty}>Administrator access is required.</p>:view==='inquiries'||view==='follow-ups'?<InquiryBoard key={view} staff={staff} admin={admin} dueOnly={view==='follow-ups'}/>:['overview','activity','settings'].includes(view)?view==='settings'&&!admin?<p className={s.empty}>Administrator access is required.</p>:<Operations key={view} view={view as 'overview'|'activity'|'settings'} admin={admin}/>:<section className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>}
+        {error?<div className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p className={s.status} role="status">Opening your workspace…</p>:view==='site-copy'?<SiteCopyEditor admin={admin}/>:view==='site-images'?<SiteImagesEditor admin={admin}/>:view==='products'?<CatalogueEditor admin={admin}/>:view==='content'?<ContentEditor admin={admin}/>:view==='media'?<MediaLibrary admin={admin}/>:view==='staff'?admin?<StaffEditor staff={staff} onReload={load}/>:<p className={s.empty}>Administrator access is required.</p>:view==='inquiries'||view==='follow-ups'?<InquiryBoard key={view} staff={staff} admin={admin} dueOnly={view==='follow-ups'}/>:['overview','activity','settings'].includes(view)?view==='settings'&&!admin?<p className={s.empty}>Administrator access is required.</p>:<Operations key={view} view={view as 'overview'|'activity'|'settings'} admin={admin}/>:<section className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>}
       </main>
     </div>
   </div>

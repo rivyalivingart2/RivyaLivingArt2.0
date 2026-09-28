@@ -8,6 +8,7 @@ import type {PublicMedia} from '@/lib/public-media';
 import {studioFetch} from './workspace-api';
 import s from './workspace.module.css';
 import {RevisionHistory} from './revision-history';
+import {usePagination, Pagination} from './pagination';
 import {ProductComparison,ProductGalleryEditor} from './product-details';
 import {Plus,Search,RefreshCw,X,ExternalLink} from 'lucide-react';
 
@@ -15,6 +16,7 @@ type Entry={product:ShopProduct;reviewedImages?:{image:string;scene:string|null;
 
 export function CatalogueEditor({admin}:{admin:boolean}){
  const [media,setMedia]=useState<PublicMedia[]>([]),[preview,setPreview]=useState(false),[previewAnswers,setPreviewAnswers]=useState<Record<string,string>>({});
+ const [activeTab,setActiveTab]=useState<string>('general');
  const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[tierFilter,setTierFilter]=useState<'all'|'large'|'memory'|'personal'>('all'),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading catalogue…'),[dirty,setDirty]=useState(false);
  async function load(id?:string){const data=await studioFetch('/api/studio/workspace?view=catalogue');setEntries(data.products);if(id)setEntry(data.products.find((e:Entry)=>e.product.id===id)||null);}
  useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia;reviewedMedia:PublicMedia})=>e.reviewedMedia||e.media))).catch(()=>setMessage('Approved image choices are temporarily unavailable.'));void studioFetch('/api/studio/workspace?view=catalogue').then(data=>{setEntries(data.products);setMessage('Drafts are shared across devices. Only published content appears on the website.');}).catch(e=>setMessage(e.message));},[]);
@@ -33,6 +35,8 @@ export function CatalogueEditor({admin}:{admin:boolean}){
   if (!query) return true;
   return `${e.product.name} ${e.product.category} ${e.product.id}`.toLowerCase().includes(query.toLowerCase());
  });
+
+ const {page, setPage, totalPages, paginatedItems} = usePagination(filteredEntries, 20);
 
  return (
   <>
@@ -131,7 +135,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
 
    <div className={s.layout}>
     <div className={s.list}>
-      {filteredEntries.map(e => (
+      {paginatedItems.map(e => (
         <button
           key={e.product.id}
           aria-pressed={entry?.product.id===e.product.id}
@@ -162,6 +166,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
       {filteredEntries.length === 0 && (
         <p className={s.help} style={{ padding: '16px' }}>No pieces match the selected filter or search.</p>
       )}
+      <Pagination page={page} totalPages={totalPages} setPage={setPage} />
     </div>
 
     {entry ? (
@@ -173,6 +178,14 @@ export function CatalogueEditor({admin}:{admin:boolean}){
             <button type="button" onClick={()=>setPreview(v=>!v)}>
               {preview?'Close form preview':'Preview this form'}
             </button>
+          </div>
+
+          
+          <div className={s.tabs} style={{ display: 'flex', gap: '10px', marginBottom: '20px', borderBottom: '1px solid #ffffff20', paddingBottom: '10px', overflowX: 'auto', flexWrap: 'nowrap', WebkitOverflowScrolling: 'touch' }}>
+            <button type='button' style={{ padding: '8px 16px', background: activeTab === 'general' ? '#d4b18d' : 'transparent', color: activeTab === 'general' ? '#0b1728' : 'inherit', border: '1px solid #d4b18d', borderRadius: '4px', whiteSpace: 'nowrap' }} onClick={() => setActiveTab('general')}>General Details</button>
+            <button type='button' style={{ padding: '8px 16px', background: activeTab === 'images' ? '#d4b18d' : 'transparent', color: activeTab === 'images' ? '#0b1728' : 'inherit', border: '1px solid #d4b18d', borderRadius: '4px', whiteSpace: 'nowrap' }} onClick={() => setActiveTab('images')}>Images & Visuals</button>
+            <button type='button' style={{ padding: '8px 16px', background: activeTab === 'customization' ? '#d4b18d' : 'transparent', color: activeTab === 'customization' ? '#0b1728' : 'inherit', border: '1px solid #d4b18d', borderRadius: '4px', whiteSpace: 'nowrap' }} onClick={() => setActiveTab('customization')}>Customization Form</button>
+            <button type='button' style={{ padding: '8px 16px', background: activeTab === 'history' ? '#d4b18d' : 'transparent', color: activeTab === 'history' ? '#0b1728' : 'inherit', border: '1px solid #d4b18d', borderRadius: '4px', whiteSpace: 'nowrap' }} onClick={() => setActiveTab('history')}>History & Compare</button>
           </div>
 
           {preview && (
@@ -196,6 +209,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
             </div>
           )}
 
+          {activeTab === 'general' && (
           <div className={s.grid}>
             <label>Name<input value={entry.product.name} maxLength={100} required onChange={e=>change({name:e.target.value})}/></label>
             <label>Subtitle<input value={entry.product.subtitle} maxLength={120} required onChange={e=>change({subtitle:e.target.value})}/></label>
@@ -223,7 +237,9 @@ export function CatalogueEditor({admin}:{admin:boolean}){
             </label>
             <label className={s.wide}>Product story<textarea value={entry.product.story} maxLength={1800} rows={5} required onChange={e=>change({story:e.target.value})}/></label>
           </div>
-
+          )}
+          {activeTab === 'images' && (
+          <>
           {entry.reviewedImages&&entry.product.image!==entry.reviewedImages.image&&(
             <section className={s.panel}>
               <h3>A reviewed image assignment is available.</h3>
@@ -238,9 +254,16 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           )}
 
           <ProductGalleryEditor product={entry.product} media={media} onChange={change}/>
+          </>
+          )}
+          {activeTab === 'history' && (
+          <>
           <RevisionHistory<ShopProduct> key={entry.product.id+':'+entry.version} kind="product" entityKey={entry.product.id} currentVersion={entry.version} onRestore={change}/>
           <ProductComparison draft={entry.product} published={entry.published}/>
 
+          </>
+          )}
+          {activeTab === 'customization' && (
           <section className={s.fields}>
             <h2>Customization fields</h2>
             {hasReviewedCapabilities(entry.product.id)&&(
@@ -317,6 +340,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
             ))}
             <button type="button" disabled={entry.product.fields.length>=16} onClick={()=>change({fields:[...entry.product.fields,{id:'field_'+crypto.randomUUID().slice(0,8),label:'Your preference',type:'text',required:false}]})}>Add a field</button>
           </section>
+          )}
 
           <div className={s.actions}>
             <button className={s.primary} disabled={busy||schemaIssues.length>0}>Save draft</button>
