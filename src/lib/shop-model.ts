@@ -7,11 +7,12 @@ export type {CustomField} from './product-form';
 export type ShopProduct={
  id:string;slug:string;name:string;subtitle:string;category:string;tier:'large'|'memory'|'personal';
  image:string;imageAlt?:string;imagePosition?:string;imageCaption?:string;scene?:string;sceneAlt?:string;scenePosition?:string;sceneCaption?:string;story:string;dimensions?:string;material?:string;
+ price?:any;
  gallery?:{src:string;alt:string;position?:string;caption?:string}[];fields:CustomField[];revision:number;
 };
 export const baselineProducts:ShopProduct[]=products.map(p=>({
  id:p.id,slug:p.slug,...reviewedCopy[p.id as keyof typeof reviewedCopy],tier:p.tier,
- image:p.image,...(p.scene?{scene:p.scene}:{}),revision:productSchemaRevision,material:p.material,
+ image:p.image,...(p.scene?{scene:p.scene}:{}),revision:productSchemaRevision,material:p.material, price:p.price,
  gallery:p.source?.gallery.map(g=>({src:g.src,alt:g.alt.replace(/owner-supplied AI concept visualization|supplied AI concept|AI concept/g,'design visualization')})),
  fields:productFields({...p,...reviewedCopy[p.id as keyof typeof reviewedCopy]})
 }));

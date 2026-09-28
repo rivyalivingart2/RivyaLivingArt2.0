@@ -56,5 +56,6 @@ export function productFields(p:{id:string;tier:'large'|'memory'|'personal';subt
  if(family==='rakhi')fields.push(text('fit','Wrist fit or tying preferences',false,'Include measurements with units if known.'));
  if(family==='coasters')fields.push(choice('set_size','Pieces per set',['2','4','6','Help me choose']));
  fields.push(text('personalization','Name or message (optional)'));
+ fields.push(choice('gift_packaging', 'Gift packaging', ['Standard presentation', 'Premium gift box', 'No gift packaging'], false));
  return [...fields,{...quantity,label:capability.quantityUnit==='sets'?'Number of sets':capability.quantityUnit==='pairs'?'Number of pairs':'Quantity'},text('city','Delivery city',true),timing];
 }
