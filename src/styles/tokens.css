@@ -20,19 +20,26 @@
   --resin-glow: radial-gradient(circle at 72% 18%, rgba(183, 146, 112, 0.16), transparent 42%);
   --ambient-glow: radial-gradient(circle at 50% 0%, rgba(16, 23, 19, 0.7), transparent 60%);
 
-  /* Neutral Text & Typography */
+  /* Neutral Text & Typography (better-typography & luxury-dark-mode) */
   --ivory: #f3efe7;
   --stone: #ddd6cb;
   --muted: #b7bfb5;
+  --text-ivory-primary: #f5f4ef;
+  --text-muted: #abb8c2;
+  --text-tertiary: #75838f;
+  --text-bronze-accent: #d4b18d;
   --foreground: var(--ivory);
   --text-primary: var(--ivory);
   --text-secondary: var(--muted);
   --ink: #18202a;
   
-  /* Surfaces & Elevation */
+  /* 4-Tier Surfaces & Elevation (luxury-dark-mode) */
   --background: var(--brand-midnight);
+  --surface-ground: var(--brand-midnight);
+  --surface-card: #0d1a2d;
   --surface: #111d22;
-  --surface-elevated: #1d2d33;
+  --surface-elevated: #15243b;
+  --surface-overlay: rgba(16, 28, 45, 0.94);
   --studio-panel: #112033;
   --control-surface: #122336;
   
@@ -47,6 +54,9 @@
 
   /* Borders & Controls */
   --border: #465466;
+  --border-subtle: rgba(183, 146, 112, 0.14);
+  --border-interactive: rgba(183, 146, 112, 0.32);
+  --border-focus: #c5a27d;
   --control-border: #8b96a3;
   --control-text: var(--ivory);
   --focus-on-dark: #e6ba85;
@@ -92,6 +102,7 @@
   --duration-very-slow: 500ms;
 
   --ease-smooth-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out: ease-in-out;
   --ease-out: ease-out;
   --ease-linear: linear;

@@ -40,14 +40,14 @@
 .localMessage { font-size: 11px; color: var(--primary-hover); line-height: 1.85; }
 .localMessage:not(:empty) { padding: 14px 0; }
 .tableScroll { overflow-x: auto; max-width: 100%; border: 1px solid var(--border); border-top: 0; border-radius: 0 0 6px 6px; }
-.table { border-collapse: collapse; text-align: left; width: 100%; min-width: 980px; font-size: 11px; }
-.table thead th { color: var(--muted); font-weight: 400; font-size: 10px; padding: 13px 15px; background: var(--surface); border-bottom: 1px solid var(--border); white-space: nowrap; }
-.table tbody td, .table tbody th { font-weight: 400; padding: 17px 15px; vertical-align: middle; border-bottom: 1px solid var(--border); }
+.table { border-collapse: collapse; text-align: left; width: 100%; min-width: 980px; font-size: 11px; font-variant-numeric: tabular-nums; }
+.table thead th { color: var(--muted); font-weight: 400; font-size: 10px; padding: 13px 15px; background: var(--surface); border-bottom: 1px solid var(--border); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.table tbody td, .table tbody th { font-weight: 400; padding: 17px 15px; vertical-align: middle; border-bottom: 1px solid var(--border); font-variant-numeric: tabular-nums; }
 .table tbody tr:last-child td, .table tbody tr:last-child th { border-bottom: 0; }
 .table tbody td:first-child, .table thead th:first-child { padding-right: 0; width: 39px; }
 .table tbody tr[data-selected] { background: var(--surface-elevated); }
 .table tbody tr:hover { background: var(--surface); }
-.table small, .mobileCards small { display: block; font-size: 9px; line-height: 1.7; color: var(--muted); margin-top: 4px; }
+.table small, .mobileCards small { display: block; font-size: 9px; line-height: 1.7; color: var(--muted); margin-top: 4px; font-variant-numeric: tabular-nums; }
 .identity { display: flex; align-items: center; gap: 12px; min-width: 210px; }
 .identity strong { display: block; font-size: 12px; font-weight: 500; margin-bottom: 5px; }
 .identity:hover strong { color: var(--primary-hover); }
@@ -55,18 +55,20 @@
 .thumbnail { position: relative; display: block; height: 64px; width: 64px; flex-shrink: 0; overflow: hidden; border: 1px solid var(--border); border-radius: 4px; background: var(--surface); }
 .thumbnail img { object-fit: cover; }
 .thumbnail > div { min-height: 0; font-size: 8px; }
-.tier { display: inline-flex; border-radius: 4px; border: 1px solid var(--border); padding: 4px 6px; color: var(--muted); font-size: 9px; font-family: var(--font-data); letter-spacing: .035em; }
+.tier { display: inline-flex; border-radius: 4px; border: 1px solid var(--border); padding: 4px 6px; color: var(--muted); font-size: 9px; font-family: var(--font-data); letter-spacing: .035em; font-variant-numeric: tabular-nums; }
 .tier[data-tier="LARGE"] { border-color: var(--primary); color: var(--primary-hover); }
 .tier[data-tier="MEDIUM"] { color: var(--foreground); }
 .statuses { display: grid; justify-items: start; gap: 6px; min-width: 122px; }
-.demoBadge { font-size: 10px; color: var(--foreground); }
-.demoBadge::before { content: ""; display: inline-block; vertical-align: middle; width: 5px; height: 5px; border: 1px solid var(--muted); margin-right: 6px; border-radius: 50%; }
-.draftBadge { color: var(--muted); font-size: 9px; }
-.draftBadge[data-status="DRAFT"] { color: var(--primary-hover); }
-.draftBadge[data-status="IN_REVIEW"] { color: var(--foreground); }
+.demoBadge { font-size: 10px; color: var(--foreground); display: inline-flex; align-items: center; gap: 6px; }
+.demoBadge::before { content: ""; display: inline-block; width: 6px; height: 6px; background: #10b981; box-shadow: 0 0 6px rgba(16, 185, 129, 0.4); border-radius: 50%; }
+.draftBadge { color: var(--muted); font-size: 9px; display: inline-flex; align-items: center; gap: 6px; }
+.draftBadge[data-status="DRAFT"] { color: #f59e0b; }
+.draftBadge[data-status="DRAFT"]::before { content: ""; display: inline-block; width: 5px; height: 5px; background: #f59e0b; border-radius: 50%; }
+.draftBadge[data-status="IN_REVIEW"] { color: var(--bronze-highlight); }
+.draftBadge[data-status="IN_REVIEW"]::before { content: ""; display: inline-block; width: 5px; height: 5px; background: var(--bronze-highlight); border-radius: 50%; }
 .stagedBadge { font-size: 9px; color: var(--primary-hover); border-bottom: 1px dashed var(--primary); padding-bottom: 2px; }
-.money { white-space: nowrap; font-family: var(--font-data); font-size: 10px; }
-.lead { white-space: nowrap; }
+.money { white-space: nowrap; font-family: var(--font-data); font-size: 10px; font-variant-numeric: tabular-nums; }
+.lead { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .owner { color: var(--muted); font-size: 10px; }
 .mobileCards { display: none; }
 .empty { text-align: center; padding: 55px 22px; border: 1px solid var(--border); border-radius: 6px; }

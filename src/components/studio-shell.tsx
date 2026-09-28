@@ -124,6 +124,33 @@ export function StudioShell({ children }: Readonly<{ children: ReactNode }>) {
     return () => desktop.removeEventListener("change", onBreakpointChange);
   }, []);
 
+  useEffect(() => {
+    function handleKeyDown(e: globalThis.KeyboardEvent) {
+      const isCmdOrCtrl = e.metaKey || e.ctrlKey;
+      if (isCmdOrCtrl && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        const searchInput = document.querySelector<HTMLInputElement>(
+          'input[type="search"], input[placeholder*="Search" i], input[name="search"], input[id*="search" i]'
+        );
+        if (searchInput) {
+          searchInput.focus();
+          searchInput.select();
+        }
+      }
+      if (isCmdOrCtrl && e.key.toLowerCase() === "s") {
+        const saveButton = document.querySelector<HTMLButtonElement>(
+          'button[data-save="true"], button[type="submit"], .saveButton'
+        );
+        if (saveButton && !saveButton.disabled) {
+          e.preventDefault();
+          saveButton.click();
+        }
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   return <div className={styles.shell}>
     <aside className={styles.sidebar} aria-label="Studio workspace">
       <Link href={studioRoot} className={styles.brand} aria-label="RivyaLivingArt Studio overview"><span>RivyaLivingArt</span><strong>Studio</strong><span className={styles.brandCaption}>A place to shape the collection.</span></Link>
@@ -135,7 +162,7 @@ export function StudioShell({ children }: Readonly<{ children: ReactNode }>) {
     <div className={styles.workspace}>
       <header className={styles.topbar}>
         <div className={styles.breadcrumb}><span>{section.parent}</span><span aria-hidden="true">/</span><strong>{section.current}</strong></div>
-        <div className={styles.topbarActions}><span className={styles.demoBadge}>Demo workspace</span><Link href={`${studioRoot}/products/new`} className={styles.createLink}><span aria-hidden="true">＋</span> New sample product</Link></div>
+        <div className={styles.topbarActions}><span className={styles.demoBadge}>Demo workspace</span><kbd className={styles.shortcutKbd} title="Press ⌘K or Ctrl+K to search">⌘K Search</kbd><Link href={`${studioRoot}/products/new`} className={styles.createLink}><span aria-hidden="true">＋</span> New sample product</Link></div>
       </header>
 
       <details ref={disclosure} className={styles.mobileNavigation} onKeyDown={handleNavigationKey}>
