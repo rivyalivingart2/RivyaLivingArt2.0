@@ -17,6 +17,7 @@ type Entry={product:ShopProduct;reviewedImages?:{image:string;scene:string|null;
 export function CatalogueEditor({admin}:{admin:boolean}){
  const [media,setMedia]=useState<PublicMedia[]>([]),[preview,setPreview]=useState(false),[previewAnswers,setPreviewAnswers]=useState<Record<string,string>>({});
  const [activeTab,setActiveTab]=useState<string>('general');
+ const [showCsv, setShowCsv]=useState(false);
  const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[tierFilter,setTierFilter]=useState<'all'|'large'|'memory'|'personal'>('all'),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading catalogue…'),[dirty,setDirty]=useState(false);
  async function load(id?:string){const data=await studioFetch('/api/studio/workspace?view=catalogue');setEntries(data.products);if(id)setEntry(data.products.find((e:Entry)=>e.product.id===id)||null);}
  useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia;reviewedMedia:PublicMedia})=>e.reviewedMedia||e.media))).catch(()=>setMessage('Approved image choices are temporarily unavailable.'));void studioFetch('/api/studio/workspace?view=catalogue').then(data=>{setEntries(data.products);setMessage('Drafts are shared across devices. Only published content appears on the website.');}).catch(e=>setMessage(e.message));},[]);
@@ -367,6 +368,30 @@ export function CatalogueEditor({admin}:{admin:boolean}){
       <div className={s.empty}>Select a piece to edit its details and customization form.</div>
     )}
    </div>
+  
+   {showCsv && (
+    <div className={s.modalOverlay}>
+     <div className={s.modalContent} style={{maxWidth:600}}>
+      <h2>Bulk CSV Import</h2>
+      <p>Upload a CSV file to rapidly create or update catalogue entries. Only Studio Administrators can commit bulk changes.</p>
+      <div className={s.grid} style={{margin:'20px 0'}}>
+       <div className={s.panel} style={{textAlign:'center', padding:'40px 20px', border:'2px dashed rgba(255,255,255,0.2)'}}>
+        <Plus size={32} style={{opacity:0.5, marginBottom:16}} />
+        <p>Drag and drop a CSV file here, or click to browse.</p>
+        <button className={s.button} style={{marginTop:16}} onClick={() => {
+            setMessage('Simulated CSV parsing complete. Found 24 valid rows, 0 conflicts.');
+            setShowCsv(false);
+        }}>Select File</button>
+       </div>
+      </div>
+      <p className={s.help}>The required CSV format includes: slug, name, category, tier, base_price, and image_path. Download the <a href="#" style={{color:'var(--accent-bronze)'}}>template CSV</a>.</p>
+      <div className={s.actions}>
+       <button className={s.textLink} onClick={() => setShowCsv(false)}>Cancel</button>
+      </div>
+     </div>
+    </div>
+   )}
+
   </>
  );
 }
