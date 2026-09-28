@@ -7,7 +7,7 @@ export type {CustomField} from './product-form';
 export type ShopProduct={
  id:string;slug:string;name:string;subtitle:string;category:string;tier:'large'|'memory'|'personal';
  image:string;imageAlt?:string;imagePosition?:string;imageCaption?:string;scene?:string;sceneAlt?:string;scenePosition?:string;sceneCaption?:string;story:string;dimensions?:string;material?:string;
- price?:any;
+ price?: { mode: 'request' } | { mode: 'fixed' | 'starting'; amount: number; sample: true };
  gallery?:{src:string;alt:string;position?:string;caption?:string}[];fields:CustomField[];revision:number;
 };
 export const baselineProducts:ShopProduct[]=products.map(p=>({
