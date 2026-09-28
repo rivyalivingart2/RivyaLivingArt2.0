@@ -26,7 +26,7 @@ for(const p of baselineProducts)test(p.id+' validates required, conditional and 
  for(const f of p.fields.filter(f=>f.type==='select'))assert.ok(validateAnswers(p.fields,{...answers,[f.id]:'Unapproved option'})[f.id]);
 });
 test('36 articles and all reviewed public pages validate before publication',()=>{
- assert.equal(baselineContent.length,48);assert.equal(baselineContent.filter(d=>d.kind==='article').length,36);
+ assert.equal(baselineContent.length,57);assert.equal(baselineContent.filter(d=>d.kind==='article').length,39);
  for(const d of baselineContent)assert.equal(validContent(d,d),true,d.id);
 });
 test('shared Preview enables published pages independently from forbidden visual fixtures',()=>{
