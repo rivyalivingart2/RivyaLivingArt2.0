@@ -35,4 +35,9 @@ export const operatingPolicies: Record<string, {title:string;eyebrow:string;desc
   ['Cookies and browser control','An essential cookie links your form, uploads and private receipt for up to 24 hours. Clearing it or changing browsers may remove receipt access; it does not delete the saved inquiry. No customer account is created. Contact details and reference images are not stored in browser local storage. Unsaved form details remain in the current tab and may be lost when it closes.'],
   ['Service protection','A protected identifier derived from the network address limits repeated requests. Hosting and storage providers process information required to operate their services. Opening a map, email application or WhatsApp takes you to a separate service.']
  ]}
+, '/imprint': {title:'Legal Imprint.',eyebrow:'Impressum',description:'Required legal disclosure for RivyaLivingArt.',sections:[
+  ['Provider Identification','RivyaLivingArt\\nBhavya Gondaliya\\nSurat, Gujarat, India'],
+  ['Contact Information','Email: rivyalivingart2.0@gmail.com'],
+  ['Disclaimer','All product images and visual concepts are for reference only. Exact materials, scale, and finish are confirmed individually prior to order placement.']
+ ]}
 };
