@@ -447,3 +447,6 @@
 @media (max-width: 780px) { .detailImageStrip { flex-wrap: nowrap; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding-bottom: 8px; scrollbar-width: none; } .detailImageStrip::-webkit-scrollbar { display: none; } .detailImageStrip button { scroll-snap-align: start; } }
 
 @media (max-width: 780px) { .section, .detail, .formLayout, .pageIntro, .prose { padding-left: max(5vw, 16px) !important; padding-right: max(5vw, 16px) !important; } }
+
+.skipLink { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+.skipLink:focus { position: fixed; top: 0; left: 0; width: auto; height: auto; padding: 12px 18px; background: var(--ivory, #fff); color: var(--navy, #000); z-index: 9999; font-weight: bold; outline: 3px solid var(--accent-bronze, #b79270); }
