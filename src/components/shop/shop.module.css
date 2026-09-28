@@ -193,8 +193,11 @@
 @media(max-width:540px){.uploadItem{align-items:start;flex-direction:column}.serviceNotice,.errorSummary{padding:16px}}
 
 /* Phase 8 editorial navigation: visible topics, bounded reading measure and anchor clearance. */
-.editorialBreadcrumb{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:28px var(--gutter) 0;font-size:14px;color:var(--muted);overflow-wrap:anywhere}
-.editorialBreadcrumb a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline}
+.editorialBreadcrumb{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:28px var(--gutter) 0;font-size:13px;line-height:1.5;color:var(--muted);overflow-wrap:anywhere}
+.editorialBreadcrumb a{display:inline-flex;align-items:center;min-height:36px;padding:4px 6px;color:var(--muted);text-decoration:none;transition:color var(--motion-fast) ease}
+.editorialBreadcrumb a:hover{color:var(--ivory);text-decoration:underline;text-underline-offset:3px}
+.editorialBreadcrumb a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+.editorialBreadcrumb span{display:inline-flex;align-items:center;min-height:36px}
 .journalTopics{display:flex;flex-wrap:wrap;gap:12px;padding:0 var(--gutter) 40px}
 .journalTopics a{display:inline-flex;gap:18px;align-items:center;min-height:44px;border:1px solid var(--control-border);padding:12px 18px}
 .journalTopics span{font-size:13px;color:var(--muted)}
@@ -358,8 +361,13 @@
 .detailImageStrip button:active{transform:scale(0.96)}
 .detailImageStrip button[aria-pressed=true]{outline-color:var(--bronze-highlight);border-color:var(--accent)}
 .field :is(input,select,textarea),.searchForm input{background:var(--control-surface);min-height:48px}
-.breadcrumb a{display:inline-flex;align-items:center;min-height:36px;padding:4px 6px;color:var(--muted);transition:color var(--motion-fast) ease}
-.breadcrumb a:hover{color:var(--ivory)}
+.breadcrumb{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:13px;line-height:1.5;color:var(--muted);margin-bottom:28px}
+.breadcrumb a{display:inline-flex;align-items:center;min-height:36px;padding:4px 6px;color:var(--muted);text-decoration:none;transition:color var(--motion-fast) ease}
+.breadcrumb a:hover{color:var(--ivory);text-decoration:underline;text-underline-offset:3px}
+.breadcrumb a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+.breadcrumb span{display:inline-flex;align-items:center;min-height:36px}
+.breadcrumbSeparator{color:var(--muted);opacity:0.45;padding-inline:2px;user-select:none;font-size:12px;line-height:1}
+.breadcrumbCurrent{color:var(--ivory);padding-inline:4px;font-weight:400}
 .field input[type="file"]{min-height:44px;padding:8px 12px;display:block}
 .field input[type="file"]::file-selector-button{min-height:36px;padding:6px 14px;margin-right:12px;background:var(--surface-elevated,#172a3d);color:var(--ivory);border:1px solid var(--control-border);border-radius:4px;cursor:pointer}
 .form legend,.faq summary{font-family:var(--font-display)}
