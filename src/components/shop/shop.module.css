@@ -11,7 +11,7 @@
 .site h1{font-size:clamp(44px,7vw,112px)}
 .site .hero h1{font-size:clamp(48px,7.8vw,112px)}
 .site :is(input,textarea,select){font-size:16px}
-.site .button{background:var(--ivory);border-color:var(--ivory);color:var(--navy);font-size:14px;min-height:48px}
+.site .button{background:var(--ivory);border-color:var(--ivory);color:var(--navy);font-size:14px;min-height:48px;min-width:48px;padding:12px 18px;display:inline-flex;align-items:center;justify-content:center;}
 .site .button:hover:not(:disabled){background:var(--stone,#ddd6cb);transform:none}
 .site .outline{background:transparent;color:inherit;border-color:currentColor}
 .site .outline:hover{background:#ffffff12}
@@ -443,3 +443,7 @@
   .categoryDescription{grid-column:2 / 4;grid-row:2;font-size:12px}
   .categoryCount{grid-column:2 / 4;grid-row:3;text-align:left;font-size:12px;margin-top:2px}
 }
+
+@media (max-width: 780px) { .detailImageStrip { flex-wrap: nowrap; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding-bottom: 8px; scrollbar-width: none; } .detailImageStrip::-webkit-scrollbar { display: none; } .detailImageStrip button { scroll-snap-align: start; } }
+
+@media (max-width: 780px) { .section, .detail, .formLayout, .pageIntro, .prose { padding-left: max(5vw, 16px) !important; padding-right: max(5vw, 16px) !important; } }
