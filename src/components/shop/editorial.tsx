@@ -15,7 +15,7 @@ function Intro({eyebrow,title,children}:{eyebrow:string;title:string;children?:R
 const minutes=(a:ContentDocument)=>Math.max(1,Math.ceil([a.description,...a.sections.flatMap(b=>[b.heading,...b.paragraphs,...(b.checklist||[])])].join(' ').trim().split(/\s+/).length/200));
 export function ArticleCard({article:a}:{article:PublishedContentDocument}){return <Link className={s.card} prefetch={false} href={a.route}>{a.image&&<div className={`${s.cardImage} ${s.articleCardImage}`}><Image src={a.image} alt={a.imageAlt||''} style={{objectPosition:a.imagePosition}} fill sizes={imageSizes.card}/></div>}<p>{a.eyebrow} · <span className={s.productIndex} style={{display:'inline',margin:0}}>{minutes(a)} min read</span></p><h3>{a.title}</h3><p>{a.description}</p><span className={s.textLink}>Read the story ↗</span></Link>;}
 function SectionBody({section:b}:{section:ContentSection}){return <>{b.paragraphs.map((p,i)=><p key={i}>{p}</p>)}{!!b.checklist?.length&&<ul>{b.checklist.map((p,i)=><li key={i}>{p}</li>)}</ul>}</>;}
-const policies:Record<string,string>={'/privacy':'Privacy','/terms':'Ordering terms','/shipping-delivery':'Delivery','/returns-cancellations':'Changes & cancellations','/accessibility':'Accessibility'};
+const policies:Record<string,string>={'/privacy':'Privacy','/terms':'Ordering terms','/shipping-delivery':'Delivery','/returns-cancellations':'Changes & cancellations','/accessibility':'Accessibility','/imprint':'Imprint'};
 const nextSteps:Record<string,[string,string,string,string]>={
  '/our-story':['/collectible-design','Explore furniture & spatial art','/process','How a piece begins'],
  '/process':['/commission','Begin your piece','/faq','Read your questions'],
