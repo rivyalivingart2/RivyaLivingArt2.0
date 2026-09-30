@@ -4,9 +4,9 @@ import type {ShopProduct} from '@/lib/shop-model';
 import {imageSizes} from './image-sizes';
 import s from './shop.module.css';
 
-export type CardProduct = Pick<ShopProduct, 'id' | 'slug' | 'name' | 'subtitle' | 'category' | 'tier' | 'material' | 'image' | 'imageAlt' | 'imagePosition'> & { price?: { mode: 'request' } | { mode: 'fixed' | 'starting'; amount: number; sample: true } };
+export type CardProduct = Pick<ShopProduct, 'id' | 'slug' | 'name' | 'subtitle' | 'category' | 'tier' | 'material' | 'image' | 'imageAlt' | 'imagePosition' | 'price'>;
 
-function formatPrice(price: { mode: 'request' } | { mode: 'fixed' | 'starting'; amount: number; sample: true }) {
+function formatPrice(price: ShopProduct['price']) {
   if (!price) return 'Price on request';
   if (price.mode === 'fixed') return `₹${price.amount.toLocaleString('en-IN')}`;
   if (price.mode === 'starting') return `From ₹${price.amount.toLocaleString('en-IN')}`;
