@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "approvedPlan": "2026-09-30 phased implementation plan",
+  "authorization": "local-isolated-only",
+  "targetRepository": "rivyalivingart2/RivyaLivingArt2.0",
+  "requiredHead": "0678a8dfb4df7ad140e0e7182742f897444af390",
+  "status": "partial-blocked-full-checkout-validation",
+  "remoteActionsPerformed": [],
+  "databaseWritesPerformed": [],
+  "productRecordsMutated": [],
+  "externalMessagesSent": [],
+  "fixtureTests": "pass",
+  "fullRepositoryValidation": "blocked-no-writable-materializable-checkout",
+  "files": {
+    "applyScript": ".local-work/apply-approved-local-implementation.py",
+    "fixtureTests": ".local-work/test_transformations.py",
+    "reports": ".local-work/reports"
+  }
+}
