@@ -448,8 +448,8 @@
 
 @media (max-width: 780px) { .section, .detail, .formLayout, .pageIntro, .prose { padding-left: max(5vw, 16px) !important; padding-right: max(5vw, 16px) !important; } }
 
-.skipLink { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
-.skipLink:focus { position: fixed; top: 0; left: 0; width: auto; height: auto; padding: 12px 18px; background: var(--ivory, #fff); color: var(--navy, #000); z-index: 9999; font-weight: bold; outline: 3px solid var(--accent-bronze, #b79270); }
+.skipLink { position: absolute; inset-inline-start: 0; top: 0; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skipLink:focus { position: fixed; top: 0; inset-inline-start: 0; width: auto; height: auto; clip-path: none; padding: 12px 18px; background: var(--ivory, #fff); color: var(--navy, #000); z-index: 9999; font-weight: bold; outline: 3px solid var(--accent-bronze, #b79270); }
 
 /* --- Added Accessibility Focus & Form UX --- */
 .button:focus-visible, .textLink:focus-visible, .searchLink:focus-visible, .mobileToggle:focus-visible, .brand:focus-visible, .nav a:focus-visible { outline: 2px solid var(--accent-bronze, #b79270); outline-offset: 4px; border-radius: 2px; }
