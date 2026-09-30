@@ -1,0 +1,9 @@
+*** Begin Patch
+*** Update File: src/components/shop/product-card.tsx
+@@
+-export type CardProduct = Pick<ShopProduct, 'id' | 'slug' | 'name' | 'subtitle' | 'category' | 'tier' | 'material' | 'image' | 'imageAlt' | 'imagePosition'> & { price?: { mode: 'request' } | { mode: 'fixed' | 'starting'; amount: number; sample: true } };
++export type CardProduct = Pick<ShopProduct, 'id' | 'slug' | 'name' | 'subtitle' | 'category' | 'tier' | 'material' | 'image' | 'imageAlt' | 'imagePosition' | 'price'>;
+ 
+-function formatPrice(price: { mode: 'request' } | { mode: 'fixed' | 'starting'; amount: number; sample: true }) {
++function formatPrice(price: ShopProduct['price']) {
+*** End Patch

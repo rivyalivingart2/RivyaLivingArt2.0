@@ -1,0 +1,46 @@
+{
+  "status": "ready-for-release-review",
+  "repository": "rivyalivingart2/RivyaLivingArt2.0",
+  "workingBranch": "local/phase-wise-implementation",
+  "baseMain": "0678a8dfb4df7ad140e0e7182742f897444af390",
+  "finalTestedApplicationSourceHead": "6c4ac3d16bb9c914eae0a94ece8771328941f551",
+  "vercelDeployment": "dpl_CAJYQrVxMy3YVkF61Js6kLSqqNVQ",
+  "vercelStatus": "success",
+  "completedPhases": [
+    "A",
+    "B",
+    "C1",
+    "C2",
+    "D1",
+    "D3",
+    "D4",
+    "E1",
+    "F1",
+    "G1",
+    "H1",
+    "H2"
+  ],
+  "deferredByDesign": [
+    "D2 navigation editor — no approved persistence schema",
+    "E1 localization — no approved multilingual schema/workflow"
+  ],
+  "h1": {
+    "renderedStates": 35,
+    "routes": 5,
+    "viewports": 7,
+    "navFailures": 0,
+    "overflowFailures": 0,
+    "brokenImages": 0,
+    "consoleOrPageErrors": 0,
+    "mobileTouchTargetFailures": 0,
+    "focusOutlineFailures": 0,
+    "screenshotArchiveMediaId": "e24e3e54-aed0-4c3f-9c6b-8df87279c949",
+    "reportMediaId": "59a21442-9a2f-4d8e-911c-9871182837af"
+  },
+  "releaseReadyForReview": true,
+  "productionReleaseAuthorized": false,
+  "productionActionsPerformed": [],
+  "databaseWritesPerformed": [],
+  "productRecordsMutated": [],
+  "externalMessagesSent": []
+}
