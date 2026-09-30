@@ -1,39 +1,53 @@
 # Validation report
 
 Updated: 2026-09-30
+Tested source head: `5176e24706c62b54417931b6f2207987d3e4bc9b`
 
-## Completed checks
+## Verified checks
 
 | Check | Result | Evidence |
 |---|---|---|
-| Transformation script syntax | PASS | Python bytecode compilation completed |
-| Product-price type failure reproduction | PASS (failure reproduced) | Minimal TS compile produced TS2345 for optional value -> required parameter |
-| Fixed price signature reproduction | PASS | Minimal TS compile accepted `ShopProduct['price']`/optional input |
-| Product-card transformation fixture | PASS | Expected type/signature present |
-| Unapproved content removal fixture | PASS | Six routes removed; DB037-039 removed; count returns to 36 articles / 48 documents |
-| Fake CSV/media UI removal fixture | PASS | State, modal and unused CSS absent |
-| Order-only WhatsApp restoration fixture | PASS | Direct `wa.me` block removed; customization CTA retained |
-| Fabricated analytics removal fixture | PASS | Analytics nav/icon/route/function removed |
-| Dirty-tree safety guard | PASS | Script refuses altered checkout |
+| Transformation fixture suite | PASS | Existing local fixture/safety tests |
+| Dirty-tree hash guard | PASS | Existing local safety test |
+| Product-price regression | PASS | Reproduced before fix; branch build succeeds after typed repair |
+| Next/Vercel production build on branch | PASS | Vercel deployment `dpl_SXoz7dDgUzNFNJPy2FnJvgdTuv4e` is READY; GitHub Vercel status is success |
+| C1 public integrity fixes | PASS at build/source level | Missing spec PDF CTA removed; preservation wording bounded to approved guidance |
+| C2 metadata/structured data | PASS at build/source level | Product breadcrumb graph + collection ItemList/CollectionPage; metadataBase uses canonical site origin |
+| D1 error-aware catalogue editor | PASS at build/source level | Exact D1 preview reached READY; later cumulative source head also READY |
+| D3 copy/media workspaces | PASS at build/source level | Content/media API reuse; D3 previews reached READY |
+| D4 content health | PASS at build/source level | Read-only derived dashboard; D4 preview reached READY |
+| E1 public portfolio truthfulness | PASS at build/source level | Public routes now use only `approvedProjects`; cumulative source head READY |
+| F1 touch/reduced-motion refinements | PASS at build/source level | Exact F1 source head READY |
+| Production data safety | PASS | No migration, DB write, product mutation, order submission or external send performed |
 
-## Checks not run — BLOCKED, not failed
+## Responsive source coverage
 
-The hosted environment lacks a writable materializable full repository checkout and direct GitHub clone/archive access. Therefore the following remain required on an actual isolated checkout:
+The required matrix maps to existing CSS breakpoints as follows:
+- 1920 / 1440 / 1200: desktop and wide-grid rules.
+- 992: public 1100/1024 rules and Studio 1080 collapse behavior.
+- 768: public 780 mobile rules and Studio 800 rules.
+- 512: mobile public rules plus Studio 540 rules.
+- 320: 480/420/400/380 public rules plus 540 Studio rules.
 
-```bash
-npm ci
-npm run lint
-npm run typecheck
-npm test
-npm run test:preflight
-npm run build
-# then isolated runtime / E2E commands from package.json and tools/release-qa
-```
+This confirms code-path coverage, **not visual certification**.
 
-After a green build, run the seven required widths:
-`1920×1080`, `1440×900`, `1200×900`, `992×900`, `768×1024`, `512×915`, `320×740`.
+## G1 performance/media evidence
+- Public image delivery uses Next Image/getImageProps and responsive `sizes`.
+- Hero art direction selects a portrait or landscape optimized source before request.
+- Active body-font WOFF2 files are ~14 KB each; Instrument Serif TTFs are ~62–64 KB each; JetBrains Mono (~112 KB) is configured with `preload:false`.
+- Public media contains 134 source images totaling ~29.8 MB; largest source WebP ~843 KB. Because Next Image transforms delivery, source size alone is not treated as a measured transfer failure.
+- No browser/network trace was available, so no Core Web Vitals or transfer-budget PASS is claimed.
 
-Verify public templates, form validation/error/fallback states, receipt/manual-copy handoff, Studio login and authenticated representative views using isolated QA resources only. Do not submit a real order or send a WhatsApp message.
+## Blocked H1 checks
+The exact Preview is protected by Vercel Authentication. Vercel build/status APIs are available, but:
+- the connected Vercel fetch endpoint returns the authentication boundary rather than rendered app HTML;
+- the hosted Chromium/container cannot resolve/access the protected Preview hostname;
+- no authenticated browser action is exposed in this chat.
 
-## Current production evidence
-The custom domain remains on the older READY deployment sourced from commit `9797bc0c73375bb7359b950f99eacb5b0e2da4fc`. Current Git head remains unreleased and its latest Vercel production attempt is classified `lint_or_type_error`.
+Therefore the following remain **BLOCKED**, not failed:
+- screenshots at 1920×1080, 1440×900, 1200×900, 992×900, 768×1024, 512×915, 320×740;
+- current-head interactive keyboard/touch checks in rendered pages;
+- authenticated Studio visual checks;
+- console/network trace and lab performance capture.
+
+No screenshots or successful browser checks were fabricated.
