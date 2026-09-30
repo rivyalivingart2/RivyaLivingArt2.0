@@ -17,7 +17,6 @@ type Entry={product:ShopProduct;reviewedImages?:{image:string;scene:string|null;
 export function CatalogueEditor({admin}:{admin:boolean}){
  const [media,setMedia]=useState<PublicMedia[]>([]),[preview,setPreview]=useState(false),[previewAnswers,setPreviewAnswers]=useState<Record<string,string>>({});
  const [activeTab,setActiveTab]=useState<string>('general');
- const [showCsv, setShowCsv]=useState(false);
  const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[tierFilter,setTierFilter]=useState<'all'|'large'|'memory'|'personal'>('all'),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading catalogue…'),[dirty,setDirty]=useState(false);
  async function load(id?:string){const data=await studioFetch('/api/studio/workspace?view=catalogue');setEntries(data.products);if(id)setEntry(data.products.find((e:Entry)=>e.product.id===id)||null);}
  useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia;reviewedMedia:PublicMedia})=>e.reviewedMedia||e.media))).catch(()=>setMessage('Approved image choices are temporarily unavailable.'));void studioFetch('/api/studio/workspace?view=catalogue').then(data=>{setEntries(data.products);setMessage('Drafts are shared across devices. Only published content appears on the website.');}).catch(e=>setMessage(e.message));},[]);
@@ -25,9 +24,27 @@ export function CatalogueEditor({admin}:{admin:boolean}){
  function change(p:Partial<ShopProduct>){setEntry(e=>e?{...e,product:{...e.product,...p}}:null);setDirty(true);}
  function field(index:number,patch:Partial<CustomField>){if(entry)change({fields:entry.product.fields.map((f,i)=>i===index?{...f,...patch}:f)});}
  const schemaIssues=entry?fieldSchemaIssues(entry.product.fields):[];
+ const tabIssues=entry?{
+  general:[
+   !entry.product.name.trim()?'Name is required.':null,
+   !entry.product.subtitle.trim()?'Subtitle is required.':null,
+   !entry.product.category.trim()?'Category is required.':null,
+   !entry.product.slug.trim()?'Public address is required.':null,
+   entry.product.id.startsWith('RLA-')&&!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(entry.product.slug)?'Public address must use lowercase words separated by hyphens.':null,
+  ].filter((v):v is string=>Boolean(v)),
+  details:[!entry.product.story.trim()?'Product story is required.':null].filter((v):v is string=>Boolean(v)),
+  images:[!entry.product.image.trim()?'Primary image is required.':null].filter((v):v is string=>Boolean(v)),
+  customization:schemaIssues,
+  history:[] as string[],
+ }:{general:[] as string[],details:[] as string[],images:[] as string[],customization:[] as string[],history:[] as string[]};
  function moveField(index:number,delta:number){if(!entry)return;const fields=[...entry.product.fields];[fields[index+delta],fields[index]]=[fields[index],fields[index+delta]];const issues=fieldSchemaIssues(fields);if(issues.length){setMessage(issues.join(' '));return;}change({fields});}
  async function save(operation:'draft'|'publish'|'hide'){
-  if(!entry||busy)return;if(operation!=='hide'&&schemaIssues.length){setMessage(schemaIssues.join(' '));return;}setBusy(true);setMessage('Saving…');
+  if(!entry||busy)return;
+  if(operation!=='hide'){
+   const issueTab=(['general','details','images','customization'] as const).find(tab=>tabIssues[tab].length);
+   if(issueTab){setActiveTab(issueTab);setMessage(tabIssues[issueTab].join(' '));return;}
+  }
+  setBusy(true);setMessage('Saving…');
   try{await studioFetch('/api/studio/workspace',{action:'catalogue',product:entry.product,version:entry.version,operation});setEntry({...entry,version:entry.version+1});setDirty(false);await load(entry.product.id);setMessage(operation==='publish'?'Published. New website requests now use this version.':operation==='hide'?'This piece is hidden from the public catalogue.':'Draft saved to the shared catalogue.');}catch(e){setMessage(e instanceof Error?e.message:'Unable to save.');}finally{setBusy(false);}
  }
 
@@ -106,6 +123,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
         if(dirty&&!window.confirm('Discard unsaved edits?'))return;
         setEntry({version:0,publishedVersion:0,published:null,visible:false,hasDraft:true,product:{id:'RLA-'+crypto.randomUUID(),slug:'new-piece-'+crypto.randomUUID().slice(0,8),name:'New piece',subtitle:'',category:'Tables',tier:tierFilter === 'all' ? 'large' : tierFilter,image:media[0].path,story:'',fields:[{id:'brief',label:'Your requirements',type:'text',required:true,maxLength:240}],revision:1}});
         setDirty(true);
+        setActiveTab('general');
       }}
       style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
     >
@@ -146,6 +164,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
             setEntry(structuredClone(e));
             setPreviewAnswers({});
             setDirty(false);
+            setActiveTab('general');
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
@@ -182,11 +201,27 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           </div>
 
           
-          <div className={s.tabs} style={{ display: 'flex', gap: '10px', marginBottom: '20px', borderBottom: '1px solid #ffffff20', paddingBottom: '10px', overflowX: 'auto', flexWrap: 'nowrap', WebkitOverflowScrolling: 'touch' }}>
-            <button type='button' style={{ padding: '8px 16px', background: activeTab === 'general' ? '#d4b18d' : 'transparent', color: activeTab === 'general' ? '#0b1728' : 'inherit', border: '1px solid #d4b18d', borderRadius: '4px', whiteSpace: 'nowrap' }} onClick={() => setActiveTab('general')}>General Details</button>
-            <button type='button' style={{ padding: '8px 16px', background: activeTab === 'images' ? '#d4b18d' : 'transparent', color: activeTab === 'images' ? '#0b1728' : 'inherit', border: '1px solid #d4b18d', borderRadius: '4px', whiteSpace: 'nowrap' }} onClick={() => setActiveTab('images')}>Images & Visuals</button>
-            <button type='button' style={{ padding: '8px 16px', background: activeTab === 'customization' ? '#d4b18d' : 'transparent', color: activeTab === 'customization' ? '#0b1728' : 'inherit', border: '1px solid #d4b18d', borderRadius: '4px', whiteSpace: 'nowrap' }} onClick={() => setActiveTab('customization')}>Customization Form</button>
-            <button type='button' style={{ padding: '8px 16px', background: activeTab === 'history' ? '#d4b18d' : 'transparent', color: activeTab === 'history' ? '#0b1728' : 'inherit', border: '1px solid #d4b18d', borderRadius: '4px', whiteSpace: 'nowrap' }} onClick={() => setActiveTab('history')}>History & Compare</button>
+          <div className={s.tabs} role="tablist" aria-label="Product editor sections" style={{ display: 'flex', gap: '10px', marginBottom: '20px', borderBottom: '1px solid #ffffff20', paddingBottom: '10px', overflowX: 'auto', flexWrap: 'nowrap', WebkitOverflowScrolling: 'touch' }}>
+            {([
+              ['general','General Details'],
+              ['details','Story & Specs'],
+              ['images','Images & Visuals'],
+              ['customization','Customization Form'],
+              ['history','History & Compare'],
+            ] as const).map(([value,label])=>(
+              <button
+                key={value}
+                type="button"
+                role="tab"
+                aria-selected={activeTab===value}
+                aria-controls={`product-tab-${value}`}
+                aria-label={tabIssues[value].length?`${label}, ${tabIssues[value].length} issue${tabIssues[value].length===1?'':'s'}`:label}
+                style={{ padding: '8px 16px', background: activeTab === value ? '#d4b18d' : 'transparent', color: activeTab === value ? '#0b1728' : 'inherit', border: tabIssues[value].length ? '1px solid var(--error-text)' : '1px solid #d4b18d', borderRadius: '4px', whiteSpace: 'nowrap' }}
+                onClick={()=>setActiveTab(value)}
+              >
+                {label}{tabIssues[value].length?` · ${tabIssues[value].length}`:''}
+              </button>
+            ))}
           </div>
 
           {preview && (
@@ -211,7 +246,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           )}
 
           {activeTab === 'general' && (
-          <div className={s.grid}>
+          <div id="product-tab-general" role="tabpanel" className={s.grid}>
             <label>Name<input value={entry.product.name} maxLength={100} required onChange={e=>change({name:e.target.value})}/></label>
             <label>Subtitle<input value={entry.product.subtitle} maxLength={120} required onChange={e=>change({subtitle:e.target.value})}/></label>
             <label>Public address<input value={entry.product.slug} disabled={!entry.product.id.startsWith('RLA-')||entry.version>0} onChange={e=>change({slug:e.target.value})}/></label>
@@ -223,8 +258,18 @@ export function CatalogueEditor({admin}:{admin:boolean}){
               </select>
             </label>
             <label>Category<input value={entry.product.category} maxLength={80} required onChange={e=>change({category:e.target.value})}/></label>
+          </div>
+          )}
+          {activeTab === 'details' && (
+          <div id="product-tab-details" role="tabpanel" className={s.grid}>
             <label>Design dimensions<input value={entry.product.dimensions||''} maxLength={200} onChange={e=>change({dimensions:e.target.value||undefined})}/></label>
             <label>Materials<input value={entry.product.material||''} maxLength={300} onChange={e=>change({material:e.target.value||undefined})}/></label>
+            <label className={s.wide}>Product story<textarea value={entry.product.story} maxLength={1800} rows={7} required onChange={e=>change({story:e.target.value})}/></label>
+          </div>
+          )}
+          {activeTab === 'images' && (
+          <div id="product-tab-images" role="tabpanel">
+          <div className={s.grid}>
             <label>Primary image
               <select value={entry.product.image} onChange={e=>change({image:e.target.value})}>
                 {media.map(m=><option key={m.path} value={m.path}>{m.alt} · {m.products.join(', ')}</option>)}
@@ -236,11 +281,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
                 {media.map(m=><option key={m.path} value={m.path}>{m.alt}</option>)}
               </select>
             </label>
-            <label className={s.wide}>Product story<textarea value={entry.product.story} maxLength={1800} rows={5} required onChange={e=>change({story:e.target.value})}/></label>
           </div>
-          )}
-          {activeTab === 'images' && (
-          <>
           {entry.reviewedImages&&entry.product.image!==entry.reviewedImages.image&&(
             <section className={s.panel}>
               <h3>A reviewed image assignment is available.</h3>
@@ -255,17 +296,16 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           )}
 
           <ProductGalleryEditor product={entry.product} media={media} onChange={change}/>
-          </>
+          </div>
           )}
           {activeTab === 'history' && (
-          <>
+          <div id="product-tab-history" role="tabpanel">
           <RevisionHistory<ShopProduct> key={entry.product.id+':'+entry.version} kind="product" entityKey={entry.product.id} currentVersion={entry.version} onRestore={change}/>
           <ProductComparison draft={entry.product} published={entry.published}/>
-
-          </>
+          </div>
           )}
           {activeTab === 'customization' && (
-          <section className={s.fields}>
+          <section id="product-tab-customization" role="tabpanel" className={s.fields}>
             <h2>Customization fields</h2>
             {hasReviewedCapabilities(entry.product.id)&&(
               <button type="button" disabled={busy} onClick={()=>{
@@ -344,10 +384,10 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           )}
 
           <div className={s.actions}>
-            <button className={s.primary} disabled={busy||schemaIssues.length>0}>Save draft</button>
+            <button className={s.primary} disabled={busy}>Save draft</button>
             {admin&&(
               <>
-                <button type="button" disabled={busy||schemaIssues.length>0} onClick={()=>void save('publish')}>Publish to website</button>
+                <button type="button" disabled={busy} onClick={()=>void save('publish')}>Publish to website</button>
                 <button type="button" disabled={busy} onClick={()=>void save('hide')}>Hide from website</button>
               </>
             )}
@@ -369,28 +409,6 @@ export function CatalogueEditor({admin}:{admin:boolean}){
     )}
    </div>
   
-   {showCsv && (
-    <div className={s.modalOverlay}>
-     <div className={s.modalContent} style={{maxWidth:600}}>
-      <h2>Bulk CSV Import</h2>
-      <p>Upload a CSV file to rapidly create or update catalogue entries. Only Studio Administrators can commit bulk changes.</p>
-      <div className={s.grid} style={{margin:'20px 0'}}>
-       <div className={s.panel} style={{textAlign:'center', padding:'40px 20px', border:'2px dashed rgba(255,255,255,0.2)'}}>
-        <Plus size={32} style={{opacity:0.5, marginBottom:16}} />
-        <p>Drag and drop a CSV file here, or click to browse.</p>
-        <button className={s.button} style={{marginTop:16}} onClick={() => {
-            setMessage('Simulated CSV parsing complete. Found 24 valid rows, 0 conflicts.');
-            setShowCsv(false);
-        }}>Select File</button>
-       </div>
-      </div>
-      <p className={s.help}>The required CSV format includes: slug, name, category, tier, base_price, and image_path. Download the <a href="#" style={{color:'var(--accent-bronze)'}}>template CSV</a>.</p>
-      <div className={s.actions}>
-       <button className={s.textLink} onClick={() => setShowCsv(false)}>Cancel</button>
-      </div>
-     </div>
-    </div>
-   )}
 
   </>
  );

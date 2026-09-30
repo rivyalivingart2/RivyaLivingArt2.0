@@ -463,9 +463,6 @@
 .productMaterial { display: block; margin-top: 4px; color: var(--graphite); font-size: var(--text-sm); }
 
 .preservationNotice { background: var(--obsidian); color: var(--paper); padding: 16px; margin: 16px 0; border-left: 2px solid var(--gold); font-size: var(--text-sm); }
-.specificationDownload { margin: 16px 0; display: inline-block; padding: 12px 16px; border: 1px solid var(--hairline); font-size: var(--text-sm); font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; transition: all 0.2s; }
-.specificationDownload:hover { background: var(--hairline); color: var(--obsidian); }
-
 /* SSENSE-Style Catalogue Overrides */
 .card { border: 1px solid var(--hairline); border-radius: 0; padding: 12px; background: transparent; transition: all 0.2s ease; }
 .cardImage { border: none; border-radius: 0; box-shadow: none; aspect-ratio: 3/4; }
@@ -483,4 +480,20 @@
   .nav a { min-height: 44px; padding: 15px 0; display: flex; align-items: center; }
   .mobileToggle { min-width: 44px; min-height: 44px; display: grid; place-items: center; }
   .collectionMenu summary { min-height: 44px; display: flex; align-items: center; }
+}
+
+
+/* Phase F1: mobile links remain comfortably tappable; hover lift is desktop-only. */
+@media(max-width:780px){
+  .footer ul a,.footerBottom a,.breadcrumb a,.breadcrumb span,.editorialBreadcrumb a,.editorialBreadcrumb span{min-height:var(--target-min)}
+  .field input[type="file"]::file-selector-button{min-height:var(--target-min)}
+}
+@media(hover:none){
+  .site .button:hover:not(:disabled),.dialog .button:hover:not(:disabled),.navCta:hover,.contactCards a:hover,.processGrid>div:hover{transform:none}
+}
+
+
+/* H1 visual QA: keep short mobile text links at the same 44px touch target in both axes. */
+@media(max-width:780px){
+  .toolbar .textLink,.footerBottom a{min-width:var(--target-min);justify-content:center}
 }

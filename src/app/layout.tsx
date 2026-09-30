@@ -1,5 +1,5 @@
 import {connection} from "next/server";
-import {indexingEnabled} from "@/lib/site-metadata";
+import {indexingEnabled,siteOrigin} from "@/lib/site-metadata";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { ApplicationFrame } from "@/components/application-frame";
@@ -25,6 +25,7 @@ const bodyFont = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteOrigin),
   title: { default: "RivyaLivingArt — A material-led atelier", template: "%s | RivyaLivingArt" },
   description: "Explore resin furniture, memory art and personal gifts. Choose a piece and share your customization details with the atelier.",
   icons:{icon:[{url:'/brand/favicon.ico',sizes:'any'},{url:'/brand/rivyalivingart-icon-32.png',sizes:'32x32',type:'image/png'}],apple:'/brand/apple-touch-icon.png'}, manifest:'/brand/site.webmanifest',
