@@ -6,11 +6,13 @@ import {defaultSiteSettings,isLocale,validSiteSettings,type Locale,type SiteSett
 export type {SiteSettings} from './site-settings-model';
 
 export const publishedSiteSettings=cache(async():Promise<{settings:SiteSettings;version:number}>=>{
- const rows=await studioDb()`SELECT details,version FROM rivya_business_settings WHERE id=1`;
- if(!rows.length)return {settings:defaultSiteSettings,version:0};
- const details=rows[0].details as Record<string,unknown>;
- const site=details&&typeof details==='object'?details.site:undefined;
- return {settings:validSiteSettings(site)?site:defaultSiteSettings,version:Number(rows[0].version)||0};
+ try{
+  const rows=await studioDb()`SELECT details,version FROM rivya_business_settings WHERE id=1`;
+  if(!rows.length)return {settings:defaultSiteSettings,version:0};
+  const details=rows[0].details as Record<string,unknown>;
+  const site=details&&typeof details==='object'?details.site:undefined;
+  return {settings:validSiteSettings(site)?site:defaultSiteSettings,version:Number(rows[0].version)||0};
+ }catch{return {settings:defaultSiteSettings,version:0};}
 });
 
 export const publicLocale=cache(async():Promise<Locale>=>{
