@@ -1,7 +1,8 @@
 'use client';
 import {DraftRecovery} from './draft-recovery';
 import {useEffect,useState} from 'react';
-import type {ShopProduct,CustomField} from '@/lib/shop-model';
+import type {ShopProduct,CustomField,ProductTranslation} from '@/lib/shop-model';
+import {localeLabels,locales,type Locale} from '@/lib/site-settings-model';
 import {fieldVisible,productFields,hasReviewedCapabilities} from '@/lib/product-form';
 import {fieldSchemaIssues} from '@/lib/field-schema';
 import type {PublicMedia} from '@/lib/public-media';
@@ -17,6 +18,7 @@ type Entry={product:ShopProduct;reviewedImages?:{image:string;scene:string|null;
 export function CatalogueEditor({admin}:{admin:boolean}){
  const [media,setMedia]=useState<PublicMedia[]>([]),[preview,setPreview]=useState(false),[previewAnswers,setPreviewAnswers]=useState<Record<string,string>>({});
  const [activeTab,setActiveTab]=useState<string>('general');
+ const [translationLocale,setTranslationLocale]=useState<Locale>('hi');
  const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[tierFilter,setTierFilter]=useState<'all'|'large'|'memory'|'personal'>('all'),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading catalogue…'),[dirty,setDirty]=useState(false);
  async function load(id?:string){const data=await studioFetch('/api/studio/workspace?view=catalogue');setEntries(data.products);if(id)setEntry(data.products.find((e:Entry)=>e.product.id===id)||null);}
  useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia;reviewedMedia:PublicMedia})=>e.reviewedMedia||e.media))).catch(()=>setMessage('Approved image choices are temporarily unavailable.'));void studioFetch('/api/studio/workspace?view=catalogue').then(data=>{setEntries(data.products);setMessage('Drafts are shared across devices. Only published content appears on the website.');}).catch(e=>setMessage(e.message));},[]);
@@ -35,8 +37,10 @@ export function CatalogueEditor({admin}:{admin:boolean}){
   details:[!entry.product.story.trim()?'Product story is required.':null].filter((v):v is string=>Boolean(v)),
   images:[!entry.product.image.trim()?'Primary image is required.':null].filter((v):v is string=>Boolean(v)),
   customization:schemaIssues,
+  translations:[] as string[],
   history:[] as string[],
- }:{general:[] as string[],details:[] as string[],images:[] as string[],customization:[] as string[],history:[] as string[]};
+ }:{general:[] as string[],details:[] as string[],images:[] as string[],customization:[] as string[],translations:[] as string[],history:[] as string[]};
+ function productTranslation(patch:Partial<ProductTranslation>){if(!entry||translationLocale==='en')return;change({translations:{...(entry.product.translations||{}),[translationLocale]:{...(entry.product.translations?.[translationLocale]||{}),...patch}}});}
  function moveField(index:number,delta:number){if(!entry)return;const fields=[...entry.product.fields];[fields[index+delta],fields[index]]=[fields[index],fields[index+delta]];const issues=fieldSchemaIssues(fields);if(issues.length){setMessage(issues.join(' '));return;}change({fields});}
  async function save(operation:'draft'|'publish'|'hide'){
   if(!entry||busy)return;
@@ -207,6 +211,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
               ['details','Story & Specs'],
               ['images','Images & Visuals'],
               ['customization','Customization Form'],
+              ['translations','Translations'],
               ['history','History & Compare'],
             ] as const).map(([value,label])=>(
               <button
@@ -297,6 +302,21 @@ export function CatalogueEditor({admin}:{admin:boolean}){
 
           <ProductGalleryEditor product={entry.product} media={media} onChange={change}/>
           </div>
+          )}
+          {activeTab === 'translations' && (
+          <section id="product-tab-translations" role="tabpanel" className={s.panel}>
+           <h2>Product translations</h2>
+           <p className={s.help}>Optional public-language overrides. Leave any field blank to use the English product text. Translations publish with this product revision.</p>
+           <label>Language<select value={translationLocale} onChange={e=>setTranslationLocale(e.target.value as Locale)}>{locales.filter(code=>code!=='en').map(code=><option key={code} value={code}>{localeLabels[code]}</option>)}</select></label>
+           {translationLocale!=='en'&&<div className={s.grid} dir={translationLocale==='ar'?'rtl':'ltr'}>
+            <label>Name<small dir="ltr">English: {entry.product.name}</small><input maxLength={100} value={entry.product.translations?.[translationLocale]?.name||''} onChange={e=>productTranslation({name:e.target.value})}/></label>
+            <label>Subtitle<small dir="ltr">English: {entry.product.subtitle}</small><input maxLength={120} value={entry.product.translations?.[translationLocale]?.subtitle||''} onChange={e=>productTranslation({subtitle:e.target.value})}/></label>
+            <label>Category<small dir="ltr">English: {entry.product.category}</small><input maxLength={80} value={entry.product.translations?.[translationLocale]?.category||''} onChange={e=>productTranslation({category:e.target.value})}/></label>
+            <label>Dimensions<small dir="ltr">English: {entry.product.dimensions||'—'}</small><input maxLength={200} value={entry.product.translations?.[translationLocale]?.dimensions||''} onChange={e=>productTranslation({dimensions:e.target.value})}/></label>
+            <label className={s.wide}>Materials<small dir="ltr">English: {entry.product.material||'—'}</small><textarea rows={3} maxLength={300} value={entry.product.translations?.[translationLocale]?.material||''} onChange={e=>productTranslation({material:e.target.value})}/></label>
+            <label className={s.wide}>Product story<small dir="ltr">English: {entry.product.story}</small><textarea rows={8} maxLength={1800} value={entry.product.translations?.[translationLocale]?.story||''} onChange={e=>productTranslation({story:e.target.value})}/></label>
+           </div>}
+          </section>
           )}
           {activeTab === 'history' && (
           <div id="product-tab-history" role="tabpanel">
