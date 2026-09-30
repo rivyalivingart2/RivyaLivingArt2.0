@@ -491,3 +491,9 @@
 @media(hover:none){
   .site .button:hover:not(:disabled),.dialog .button:hover:not(:disabled),.navCta:hover,.contactCards a:hover,.processGrid>div:hover{transform:none}
 }
+
+
+/* H1 visual QA: keep short mobile text links at the same 44px touch target in both axes. */
+@media(max-width:780px){
+  .toolbar .textLink,.footerBottom a{min-width:var(--target-min);justify-content:center}
+}
