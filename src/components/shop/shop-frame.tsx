@@ -3,14 +3,14 @@ import {businessContact} from '@/lib/contact';
 import Link from 'next/link';
 import {ShopHeader} from './header';
 import {LocaleSwitcher} from './locale-switcher';
-import {localizedLabel,uiText,type Locale,type NavigationSettings,type NavItem} from '@/lib/site-settings-model';
+import {defaultNavigation,localizedLabel,uiText,type Locale,type NavigationSettings,type NavItem} from '@/lib/site-settings-model';
 import s from './shop.module.css';
 
 function FooterNavLink({item,locale}:{item:NavItem;locale:Locale}){
  const label=localizedLabel(item.label,locale),props=item.newTab?{target:'_blank',rel:'noreferrer'}:{};
  return item.href.startsWith('/')?<Link href={item.href} {...props}>{label}</Link>:<a href={item.href} {...props}>{label}</a>;
 }
-export function ShopFrame({children,business={phone:businessContact.phone,email:businessContact.email},navigation,locale,enabledLocales}:{children:React.ReactNode;business?:{phone:string;email:string};navigation:NavigationSettings;locale:Locale;enabledLocales:Locale[]}){
+export function ShopFrame({children,business={phone:businessContact.phone,email:businessContact.email},navigation=defaultNavigation,locale='en',enabledLocales=['en']}:{children:React.ReactNode;business?:{phone:string;email:string};navigation?:NavigationSettings;locale?:Locale;enabledLocales?:Locale[]}){
  const explore=navigation.footerExplore.filter(v=>v.visible),atelier=navigation.footerAtelier.filter(v=>v.visible),legal=navigation.footerLegal.filter(v=>v.visible);
  return <div className={s.site}>
     <a href="#main-content" className={s.skipLink}>{uiText(locale,'skipMain')}</a>
