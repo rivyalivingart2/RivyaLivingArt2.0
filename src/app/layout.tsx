@@ -1,5 +1,7 @@
 import {connection} from "next/server";
 import {indexingEnabled,siteOrigin} from "@/lib/site-metadata";
+import {publicLocale} from "@/lib/site-settings";
+import {localeDir} from "@/lib/site-settings-model";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { ApplicationFrame } from "@/components/application-frame";
@@ -41,5 +43,6 @@ export const viewport: Viewport = {
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   await connection();
-  return <html lang="en" className={`${displayFont.variable} ${bodyFont.variable} ${dataFont.variable}`}><body><a className="skip-link" href="#main-content">Skip to content</a><ApplicationFrame>{children}</ApplicationFrame></body></html>;
+  const locale=await publicLocale();
+  return <html lang={locale} dir={localeDir(locale)} className={`${displayFont.variable} ${bodyFont.variable} ${dataFont.variable}`}><body><a className="skip-link" href="#main-content">Skip to content</a><ApplicationFrame>{children}</ApplicationFrame></body></html>;
 }
