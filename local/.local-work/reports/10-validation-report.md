@@ -1,53 +1,58 @@
 # Validation report
 
 Updated: 2026-09-30
-Tested source head: `5176e24706c62b54417931b6f2207987d3e4bc9b`
+Final tested application source head: `6c4ac3d16bb9c914eae0a94ece8771328941f551`
+Vercel Preview: `dpl_CAJYQrVxMy3YVkF61Js6kLSqqNVQ` — **READY / success**
 
-## Verified checks
+## Final validation
 
-| Check | Result | Evidence |
-|---|---|---|
-| Transformation fixture suite | PASS | Existing local fixture/safety tests |
-| Dirty-tree hash guard | PASS | Existing local safety test |
-| Product-price regression | PASS | Reproduced before fix; branch build succeeds after typed repair |
-| Next/Vercel production build on branch | PASS | Vercel deployment `dpl_SXoz7dDgUzNFNJPy2FnJvgdTuv4e` is READY; GitHub Vercel status is success |
-| C1 public integrity fixes | PASS at build/source level | Missing spec PDF CTA removed; preservation wording bounded to approved guidance |
-| C2 metadata/structured data | PASS at build/source level | Product breadcrumb graph + collection ItemList/CollectionPage; metadataBase uses canonical site origin |
-| D1 error-aware catalogue editor | PASS at build/source level | Exact D1 preview reached READY; later cumulative source head also READY |
-| D3 copy/media workspaces | PASS at build/source level | Content/media API reuse; D3 previews reached READY |
-| D4 content health | PASS at build/source level | Read-only derived dashboard; D4 preview reached READY |
-| E1 public portfolio truthfulness | PASS at build/source level | Public routes now use only `approvedProjects`; cumulative source head READY |
-| F1 touch/reduced-motion refinements | PASS at build/source level | Exact F1 source head READY |
-| Production data safety | PASS | No migration, DB write, product mutation, order submission or external send performed |
+| Check | Result |
+|---|---|
+| Transformation fixture suite | PASS |
+| Dirty-tree safety guard | PASS |
+| Build / Vercel Preview | PASS |
+| Public/SEO source checks | PASS |
+| Studio D1/D3/D4 source/build checks | PASS |
+| Portfolio truthfulness correction | PASS |
+| Touch/reduced-motion refinement | PASS |
+| Seven-width rendered browser matrix | PASS |
+| Production data safety | PASS |
 
-## Responsive source coverage
+## Seven-width browser matrix
+Routes tested at every viewport:
+- `/`
+- `/collectible-design`
+- `/journal`
+- `/portfolio`
+- `/preview/studio`
 
-The required matrix maps to existing CSS breakpoints as follows:
-- 1920 / 1440 / 1200: desktop and wide-grid rules.
-- 992: public 1100/1024 rules and Studio 1080 collapse behavior.
-- 768: public 780 mobile rules and Studio 800 rules.
-- 512: mobile public rules plus Studio 540 rules.
-- 320: 480/420/400/380 public rules plus 540 Studio rules.
+Viewports:
+- 1920×1080
+- 1440×900
+- 1200×900
+- 992×900
+- 768×1024
+- 512×915
+- 320×740
 
-This confirms code-path coverage, **not visual certification**.
+Final totals across 35 rendered states:
+- navigation failures: **0**
+- horizontal overflow failures: **0**
+- broken image failures: **0**
+- console/page error cases: **0**
+- mobile controls under 44×44: **0**
+- focus-outline failures: **0**
 
-## G1 performance/media evidence
-- Public image delivery uses Next Image/getImageProps and responsive `sizes`.
-- Hero art direction selects a portrait or landscape optimized source before request.
-- Active body-font WOFF2 files are ~14 KB each; Instrument Serif TTFs are ~62–64 KB each; JetBrains Mono (~112 KB) is configured with `preload:false`.
-- Public media contains 134 source images totaling ~29.8 MB; largest source WebP ~843 KB. Because Next Image transforms delivery, source size alone is not treated as a measured transfer failure.
-- No browser/network trace was available, so no Core Web Vitals or transfer-budget PASS is claimed.
+The initial rendered run found short mobile text links below 44px width. The fix was committed as `6c4ac3d16bb9c914eae0a94ece8771328941f551`, deployed to `dpl_CAJYQrVxMy3YVkF61Js6kLSqqNVQ`, and the entire matrix was rerun successfully.
 
-## Blocked H1 checks
-The exact Preview is protected by Vercel Authentication. Vercel build/status APIs are available, but:
-- the connected Vercel fetch endpoint returns the authentication boundary rather than rendered app HTML;
-- the hosted Chromium/container cannot resolve/access the protected Preview hostname;
-- no authenticated browser action is exposed in this chat.
+## Performance/media
+- Public images use Next Image/getImageProps with responsive sizes.
+- Hero art direction selects one responsive optimized resource.
+- Active body-font assets are WOFF2; JetBrains Mono is not preloaded.
+- No field Core Web Vitals claim is made because this validation is a controlled Preview/lab pass, not production field telemetry.
 
-Therefore the following remain **BLOCKED**, not failed:
-- screenshots at 1920×1080, 1440×900, 1200×900, 992×900, 768×1024, 512×915, 320×740;
-- current-head interactive keyboard/touch checks in rendered pages;
-- authenticated Studio visual checks;
-- console/network trace and lab performance capture.
+## Evidence
+- screenshot archive media id: `e24e3e54-aed0-4c3f-9c6b-8df87279c949`
+- machine-readable QA report media id: `59a21442-9a2f-4d8e-911c-9871182837af`
 
-No screenshots or successful browser checks were fabricated.
+No screenshots or success states were fabricated.
