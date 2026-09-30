@@ -62,6 +62,7 @@ function HeaderContent({pathname,navigation,locale,enabledLocales}:{pathname:str
     <span className={s.eyebrow}>{uiText(locale,'theCollections')}</span>
     {collections.map(item=><NavAnchor key={item.id} item={item} locale={locale} current={active(item.href)} onClick={close}/>)}
     <div className={s.mobilePageLinks}>{pages.map(item=><NavAnchor key={item.id} item={item} locale={locale} current={active(item.href)} onClick={close}/>)}</div>
+    <div className={s.mobileLocale}><LocaleSwitcher locale={locale} enabled={enabledLocales}/></div>
     <Link href="/commission" className={s.button} onClick={close}>{uiText(locale,'beginPiece')} <ArrowUpRight size={18} aria-hidden="true"/></Link>
    </nav>
   </Dialog>
