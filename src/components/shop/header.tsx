@@ -4,63 +4,67 @@ import {Dialog} from './dialog';
 import {usePathname} from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import {Menu, Search, ArrowUpRight, ChevronDown} from 'lucide-react';
+import {Menu,Search,ArrowUpRight,ChevronDown} from 'lucide-react';
+import {LocaleSwitcher} from './locale-switcher';
+import {localizedLabel,uiText,type Locale,type NavigationSettings,type NavItem} from '@/lib/site-settings-model';
 import s from './shop.module.css';
 
-const collections = [
-  ['Furniture & spatial art', '/collectible-design', '01'],
-  ['Memory art', '/memory-art', '02'],
-  ['Personal art & gifts', '/personal-art', '03'],
-] as const;
-const pages = [['Our Atelier','/our-story'],['Process','/process'],['Journal','/journal'],['Contact','/contact']] as const;
-
-export function ShopHeader() {
-  const pathname=usePathname();
-  return <HeaderContent key={pathname} pathname={pathname}/>;
+function NavAnchor({item,locale,className,onClick,current}:{item:NavItem;locale:Locale;className?:string;onClick?:()=>void;current?:boolean}){
+ const label=localizedLabel(item.label,locale);
+ const extra=item.newTab?{target:'_blank' as const,rel:'noreferrer'}:{};
+ return item.href.startsWith('/')?<Link href={item.href} className={className} onClick={onClick} aria-current={current?'page':undefined} {...extra}>{label}</Link>:<a href={item.href} className={className} onClick={onClick} aria-current={current?'page':undefined} {...extra}>{label}</a>;
 }
 
-function HeaderContent({pathname}:{pathname:string}) {
-  const [searchPath,setSearchPath]=useState<string|null>(null);
-  const [menuPath,setMenuPath]=useState<string|null>(null);
-  const collectionMenu=useRef<HTMLDetailsElement>(null);
-  const active=(url:string)=>pathname===url||pathname.startsWith(url+'/');
-  const close=()=>setMenuPath(null);
-  useEffect(()=>{
-    const desktop=window.matchMedia('(min-width: 981px)');
-    const closeOnDesktop=()=>{if(desktop.matches)setMenuPath(null);};
-    desktop.addEventListener('change',closeOnDesktop);
-    return()=>desktop.removeEventListener('change',closeOnDesktop);
-  },[]);
-  return <header className={s.header}>
-    <Link className={s.brand} href="/" aria-label="RivyaLivingArt home">
-      <Image src="/brand/rivyalivingart-logo-horizontal-transparent.png" width={410} height={116} alt="RivyaLivingArt" priority/>
-    </Link>
-    <nav className={s.nav} aria-label="Main navigation">
-      <details className={s.collectionMenu} ref={collectionMenu} onKeyDown={e=>{if(e.key==='Escape'){e.currentTarget.open=false;e.currentTarget.querySelector('summary')?.focus();}}} onBlur={e=>{if(!e.currentTarget.contains(e.relatedTarget))e.currentTarget.open=false;}}>
-        <summary data-active={collections.some(([,url])=>active(url))}>Collections <ChevronDown size={14}/></summary>
-        <div className={s.collectionPanel}>{collections.map(([name,url,number])=><Link key={url} href={url} aria-current={active(url)?'page':undefined} onClick={()=>{if(collectionMenu.current)collectionMenu.current.open=false;}}><span>{number}</span>{name}<ArrowUpRight size={16}/></Link>)}</div>
-      </details>
-      {pages.map(([name,url])=><Link key={url} href={url} aria-current={active(url)?'page':undefined}>{name}</Link>)}
-    </nav>
-    <div className={s.headerActions}>
-      <button type="button" className={s.searchLink} onClick={()=>setSearchPath(pathname)} aria-label="Search pieces" aria-haspopup="dialog"><Search size={20}/></button>
-      <Link className={s.navCta} href="/commission">Begin a piece <ArrowUpRight size={16}/></Link>
-      <button type="button" className={s.mobileToggle} aria-label="Open navigation" aria-haspopup="dialog" aria-expanded={menuPath===pathname} onClick={()=>setMenuPath(pathname)}><Menu size={22}/></button>
-    </div>
-    <noscript>
-      <style>{`.${s.headerActions}{display:none!important}`}</style>
-      <details className={s.staticMenu}><summary>Explore</summary><nav aria-label="Navigation without JavaScript">
-        {[...collections.map(([name,url])=>[name,url]),...pages,['Search pieces','/search'],['Begin a piece','/commission']].map(([name,url])=><Link key={url} href={url}>{name}</Link>)}
-      </nav></details>
-    </noscript>
-    <Dialog open={menuPath===pathname} title="Explore RivyaLivingArt" onClose={close} variant="navigation">
-      <nav aria-label="Mobile navigation">
-        <span className={s.eyebrow}>The collections</span>
-        {collections.map(([name,url,number])=><Link key={url} href={url} onClick={close} aria-current={active(url)?'page':undefined}><small>{number}</small>{name}<ArrowUpRight size={20}/></Link>)}
-        <div className={s.mobilePageLinks}>{pages.map(([name,url])=><Link key={url} href={url} aria-current={active(url)?'page':undefined} onClick={close}>{name}</Link>)}</div>
-        <Link href="/commission" className={s.button} onClick={close}>Begin a piece <ArrowUpRight size={18}/></Link>
-      </nav>
-    </Dialog>
-    <Dialog open={searchPath===pathname} title="Find your piece" onClose={()=>setSearchPath(null)}><form action="/search" method="get" className={s.searchForm}><label>Search the collection<input autoFocus type="search" name="q" maxLength={100} placeholder="A name, a material, a form"/></label><button type="submit" className={s.button}>Explore results ↗</button><Link className={s.textLink} href="/search" onClick={()=>setSearchPath(null)}>Browse all pieces</Link></form></Dialog>
-  </header>;
+export function ShopHeader({navigation,locale,enabledLocales}:{navigation:NavigationSettings;locale:Locale;enabledLocales:Locale[]}) {
+ const pathname=usePathname();
+ return <HeaderContent key={pathname} pathname={pathname} navigation={navigation} locale={locale} enabledLocales={enabledLocales}/>;
+}
+
+function HeaderContent({pathname,navigation,locale,enabledLocales}:{pathname:string;navigation:NavigationSettings;locale:Locale;enabledLocales:Locale[]}) {
+ const [searchPath,setSearchPath]=useState<string|null>(null);
+ const [menuPath,setMenuPath]=useState<string|null>(null);
+ const collectionMenu=useRef<HTMLDetailsElement>(null);
+ const collections=navigation.collections.filter(v=>v.visible),pages=navigation.header.filter(v=>v.visible);
+ const active=(url:string)=>url.startsWith('/')&&(pathname===url||pathname.startsWith(url+'/'));
+ const close=()=>setMenuPath(null);
+ useEffect(()=>{
+  const desktop=window.matchMedia('(min-width: 981px)');
+  const closeOnDesktop=()=>{if(desktop.matches)setMenuPath(null);};
+  desktop.addEventListener('change',closeOnDesktop);
+  return()=>desktop.removeEventListener('change',closeOnDesktop);
+ },[]);
+ return <header className={s.header}>
+  <Link className={s.brand} href="/" aria-label="RivyaLivingArt home">
+   <Image src="/brand/rivyalivingart-logo-horizontal-transparent.png" width={410} height={116} alt="RivyaLivingArt" priority/>
+  </Link>
+  <nav className={s.nav} aria-label="Main navigation">
+   <details className={s.collectionMenu} ref={collectionMenu} onKeyDown={e=>{if(e.key==='Escape'){e.currentTarget.open=false;e.currentTarget.querySelector('summary')?.focus();}}} onBlur={e=>{if(!e.currentTarget.contains(e.relatedTarget))e.currentTarget.open=false;}}>
+    <summary data-active={collections.some(item=>active(item.href))}>{uiText(locale,'collections')} <ChevronDown size={14} aria-hidden="true"/></summary>
+    <div className={s.collectionPanel}>{collections.map(item=><NavAnchor key={item.id} item={item} locale={locale} current={active(item.href)} onClick={()=>{if(collectionMenu.current)collectionMenu.current.open=false;}}/>)}</div>
+   </details>
+   {pages.map(item=><NavAnchor key={item.id} item={item} locale={locale} current={active(item.href)}/>)}
+  </nav>
+  <div className={s.headerActions}>
+   <LocaleSwitcher locale={locale} enabled={enabledLocales}/>
+   <button type="button" className={s.searchLink} onClick={()=>setSearchPath(pathname)} aria-label={uiText(locale,'searchPieces')} aria-haspopup="dialog"><Search size={20} aria-hidden="true"/></button>
+   <Link className={s.navCta} href="/commission">{uiText(locale,'beginPiece')} <ArrowUpRight size={16} aria-hidden="true"/></Link>
+   <button type="button" className={s.mobileToggle} aria-label={uiText(locale,'openNavigation')} aria-haspopup="dialog" aria-expanded={menuPath===pathname} onClick={()=>setMenuPath(pathname)}><Menu size={22} aria-hidden="true"/></button>
+  </div>
+  <noscript>
+   <style>{`.${s.headerActions}{display:none!important}`}</style>
+   <details className={s.staticMenu}><summary>{uiText(locale,'footerExplore')}</summary><nav aria-label="Navigation without JavaScript">
+    {[...collections,...pages].map(item=><NavAnchor key={item.id} item={item} locale={locale}/>)}
+    <Link href="/search">{uiText(locale,'searchPieces')}</Link><Link href="/commission">{uiText(locale,'beginPiece')}</Link>
+   </nav></details>
+  </noscript>
+  <Dialog open={menuPath===pathname} title={uiText(locale,'exploreTitle')} onClose={close} variant="navigation">
+   <nav aria-label="Mobile navigation">
+    <span className={s.eyebrow}>{uiText(locale,'theCollections')}</span>
+    {collections.map(item=><NavAnchor key={item.id} item={item} locale={locale} current={active(item.href)} onClick={close}/>)}
+    <div className={s.mobilePageLinks}>{pages.map(item=><NavAnchor key={item.id} item={item} locale={locale} current={active(item.href)} onClick={close}/>)}</div>
+    <Link href="/commission" className={s.button} onClick={close}>{uiText(locale,'beginPiece')} <ArrowUpRight size={18} aria-hidden="true"/></Link>
+   </nav>
+  </Dialog>
+  <Dialog open={searchPath===pathname} title={uiText(locale,'findPiece')} onClose={()=>setSearchPath(null)}><form action="/search" method="get" className={s.searchForm}><label>{uiText(locale,'searchCollection')}<input autoFocus type="search" name="q" maxLength={100} placeholder={uiText(locale,'searchPieces')}/></label><button type="submit" className={s.button}>{uiText(locale,'exploreResults')}</button><Link className={s.textLink} href="/search" onClick={()=>setSearchPath(null)}>{uiText(locale,'browseAllPieces')}</Link></form></Dialog>
+ </header>;
 }
