@@ -2,10 +2,14 @@ import journal from './reviewed-journal.json';
 import {approvedPublicMedia} from './public-media';
 import {baselineProducts} from './shop-model';
 import {shopPages,shopFaqs} from './shop-editorial';
+import {isLocale,type Locale} from './site-settings-model';
 export type ContentSection={id:string;heading:string;paragraphs:string[];checklist?:string[]};
+export type ContentSectionTranslation={heading?:string;paragraphs?:string[];checklist?:string[]};
+export type ContentTranslation={title?:string;eyebrow?:string;description?:string;sections?:Record<string,ContentSectionTranslation>};
 export type ContentDocument={
  id:string;kind:'page'|'article';route:string;title:string;eyebrow:string;description:string;
  sections:ContentSection[];image?:string;imageAlt?:string;relatedProductIds?:string[];
+ translations?:Partial<Record<Locale,ContentTranslation>>;
 };
 export const articleAliases:Record<string,string>={
  'the-space-around-an-object':'a-room-begins-with-a-statement-table',
@@ -30,6 +34,23 @@ export function validContent(value:unknown,base?:ContentDocument):value is Conte
  if(!base&&(d.kind!=='article'||!/^article:[0-9a-f-]{36}$/.test(d.id)))return false;
  if(d.image&&!approvedPublicMedia.some(m=>m.path===d.image))return false;
  if(d.relatedProductIds&&(!Array.isArray(d.relatedProductIds)||d.relatedProductIds.length>6||new Set(d.relatedProductIds).size!==d.relatedProductIds.length||d.relatedProductIds.some(id=>!baselineProducts.some(p=>p.id===id))))return false;
+ if(d.translations!==undefined){
+  if(!d.translations||typeof d.translations!=='object'||Array.isArray(d.translations))return false;
+  for(const [locale,value] of Object.entries(d.translations)){
+   if(locale==='en'||!isLocale(locale)||!value||typeof value!=='object'||Array.isArray(value))return false;
+   const t=value as ContentTranslation;
+   for(const [key,max] of [['title',120],['eyebrow',100],['description',300]] as const){const v=t[key];if(v!==undefined&&(typeof v!=='string'||v.length>max||/[<>]/.test(v)))return false;}
+   if(t.sections!==undefined){
+    if(!t.sections||typeof t.sections!=='object'||Array.isArray(t.sections))return false;
+    for(const [id,translated] of Object.entries(t.sections)){
+     if(!d.sections.some(section=>section.id===id)||!translated||typeof translated!=='object'||Array.isArray(translated))return false;
+     if(translated.heading!==undefined&&(typeof translated.heading!=='string'||translated.heading.length>150||/[<>]/.test(translated.heading)))return false;
+     if(translated.paragraphs!==undefined&&(!Array.isArray(translated.paragraphs)||translated.paragraphs.length>12||translated.paragraphs.some(p=>typeof p!=='string'||p.length>2500||/[<>]/.test(p))))return false;
+     if(translated.checklist!==undefined&&(!Array.isArray(translated.checklist)||translated.checklist.length>20||translated.checklist.some(p=>typeof p!=='string'||p.length>500||/[<>]/.test(p))))return false;
+    }
+   }
+  }
+ }
  if(d.image&&(!cleanText(d.imageAlt,180)||d.image.includes('..')))return false;
  const ids=new Set<string>();let chars=0;
  for(const s of d.sections){
@@ -39,4 +60,23 @@ export function validContent(value:unknown,base?:ContentDocument):value is Conte
   ids.add(s.id);chars+=s.paragraphs.join('').length+(s.checklist?.join('').length||0);
  }
  return chars<=24000&&!/\b(demo fixture|fictional project|sample content|private design trial)\b/i.test(JSON.stringify(d));
+}
+
+export function localizeContent(document:ContentDocument,locale:Locale):ContentDocument{
+ if(locale==='en')return document;
+ const t=document.translations?.[locale];
+ if(!t)return document;
+ const text=(value:string|undefined,fallback:string)=>value?.trim()?value:fallback;
+ return {...document,
+  title:text(t.title,document.title),
+  eyebrow:text(t.eyebrow,document.eyebrow),
+  description:text(t.description,document.description),
+  sections:document.sections.map(section=>{
+   const st=t.sections?.[section.id];
+   if(!st)return section;
+   const paragraphs=Array.isArray(st.paragraphs)&&st.paragraphs.some(p=>p.trim())?st.paragraphs.map((p,i)=>p.trim()?p:section.paragraphs[i]||''):section.paragraphs;
+   const checklist=Array.isArray(st.checklist)&&st.checklist.some(p=>p.trim())?st.checklist.map((p,i)=>p.trim()?p:section.checklist?.[i]||''):section.checklist;
+   return {...section,heading:text(st.heading,section.heading),paragraphs,...(checklist?{checklist}:{})};
+  })
+ };
 }

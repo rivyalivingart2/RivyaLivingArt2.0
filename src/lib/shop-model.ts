@@ -3,12 +3,15 @@ import {products} from './rivya/data';
 import {fieldSchemaIssues} from './field-schema';
 import {productFields,productSchemaRevision} from './product-form';
 import type {CustomField} from './product-form';
+import {isLocale,type Locale} from './site-settings-model';
 export type {CustomField} from './product-form';
+export type ProductTranslation={name?:string;subtitle?:string;category?:string;story?:string;dimensions?:string;material?:string};
 export type ShopProduct={
  id:string;slug:string;name:string;subtitle:string;category:string;tier:'large'|'memory'|'personal';
  image:string;imageAlt?:string;imagePosition?:string;imageCaption?:string;scene?:string;sceneAlt?:string;scenePosition?:string;sceneCaption?:string;story:string;dimensions?:string;material?:string;
  price?: { mode: 'request' } | { mode: 'fixed' | 'starting'; amount: number; sample: true };
  gallery?:{src:string;alt:string;position?:string;caption?:string}[];fields:CustomField[];revision:number;
+ translations?:Partial<Record<Locale,ProductTranslation>>;
 };
 export const baselineProducts:ShopProduct[]=products.map(p=>({
  id:p.id,slug:p.slug,...reviewedCopy[p.id as keyof typeof reviewedCopy],tier:p.tier,
@@ -26,7 +29,30 @@ export function validProduct(value:unknown,base?:ShopProduct):value is ShopProdu
  if(!['large','memory','personal'].includes(p.tier)||!text(p.category,80)||!permittedImages.has(p.image)||p.scene&&!permittedImages.has(p.scene)||!text(p.name,100)||!text(p.subtitle,120)||!text(p.story,1800)||/\b(demo|dummy|sample|fictional)\b/i.test(p.name+' '+p.subtitle+' '+p.story))return false;
  if(p.dimensions!==undefined&&!text(p.dimensions,200)||p.material!==undefined&&!text(p.material,300))return false;
  if(p.gallery&&(!Array.isArray(p.gallery)||p.gallery.length>12||p.gallery.some(g=>!permittedImages.has(g.src)||!text(g.alt,180))))return false;
+ if(p.translations!==undefined){
+  if(!p.translations||typeof p.translations!=='object'||Array.isArray(p.translations))return false;
+  for(const [locale,value] of Object.entries(p.translations)){
+   if(locale==='en'||!isLocale(locale)||!value||typeof value!=='object'||Array.isArray(value))return false;
+   const t=value as ProductTranslation;
+   for(const [key,max] of [['name',100],['subtitle',120],['category',80],['story',1800],['dimensions',200],['material',300]] as const){const v=t[key];if(v!==undefined&&(typeof v!=='string'||v.length>max||/[<>]/.test(v)))return false;}
+  }
+ }
  if(fieldSchemaIssues(p.fields).length)return false;
  return true;
 }
 
+
+export function localizeProduct(product:ShopProduct,locale:Locale):ShopProduct{
+ if(locale==='en')return product;
+ const t=product.translations?.[locale];
+ if(!t)return product;
+ const pick=(value:string|undefined,fallback:string|undefined)=>value?.trim()?value:fallback;
+ return {...product,
+  name:pick(t.name,product.name)!,
+  subtitle:pick(t.subtitle,product.subtitle)!,
+  category:pick(t.category,product.category)!,
+  story:pick(t.story,product.story)!,
+  dimensions:pick(t.dimensions,product.dimensions),
+  material:pick(t.material,product.material),
+ };
+}

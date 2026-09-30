@@ -14,7 +14,8 @@ import {
   Settings as SettingsIcon,
   LogOut,
   ExternalLink,
-  AlertCircle
+  AlertCircle,
+  Languages
 } from 'lucide-react';
 import dynamic from 'next/dynamic';
 import {logoutAdmin} from '@/app/studio/login/actions';
@@ -30,6 +31,7 @@ const Operations=dynamic(()=>import('./operations').then(m=>m.Operations),{loadi
 const SiteCopyEditor=dynamic(()=>import('./site-copy-editor').then(m=>m.SiteCopyEditor),{loading:WorkspaceLoading});
 const SiteImagesEditor=dynamic(()=>import('./site-images-editor').then(m=>m.SiteImagesEditor),{loading:WorkspaceLoading});
 const ContentHealth=dynamic(()=>import('./content-health').then(m=>m.ContentHealth),{loading:WorkspaceLoading});
+const SiteSettingsEditor=dynamic(()=>import('./site-settings-editor').then(m=>m.SiteSettingsEditor),{loading:WorkspaceLoading});
 function WorkspaceLoading(){return <p className={s.status} role="status">Opening this workspace page…</p>;}
 
 const navGroups = [
@@ -50,6 +52,7 @@ const navGroups = [
         { key: 'site-copy', href: '/studio/site-copy', label: 'Site copy', icon: FileText },
         { key: 'site-images', href: '/studio/site-images', label: 'Site images', icon: ImageIcon },
         { key: 'content-health', href: '/studio/content-health', label: 'Content health', icon: Activity },
+        { key: 'site-settings', href: '/studio/navigation', label: 'Navigation & languages', icon: Languages, adminOnly: true },
     ]
   },
   {
@@ -63,7 +66,7 @@ const navGroups = [
 ];
 
 export function Workspace(){
- const path=usePathname(),segment=path.split('/')[2]||'overview',view=({'orders':'inquiries','kanban':'inquiries','forms':'products','journal':'content','pages':'content'} as Record<string,string>)[segment]||segment;
+ const path=usePathname(),segment=path.split('/')[2]||'overview',view=({'orders':'inquiries','kanban':'inquiries','forms':'products','journal':'content','pages':'content','navigation':'site-settings'} as Record<string,string>)[segment]||segment;
  const [identity,setIdentity]=useState<WorkspaceIdentity|null>(null),[staff,setStaff]=useState<StaffMember[]>([]),[error,setError]=useState(''),[sessionMessage,setSessionMessage]=useState('');
  const load=useCallback(async()=>{const data=await studioFetch('/api/studio/workspace');setIdentity(data.session);setStaff(data.staff);setSessionMessage('');},[]);
  useEffect(()=>{let active=true;void studioFetch('/api/studio/workspace').then(data=>{if(active){setIdentity(data.session);setStaff(data.staff);}}).catch(e=>{if(active)setError(e.message);});return()=>{active=false;};},[]);
@@ -135,6 +138,7 @@ export function Workspace(){
       </nav>
       <main id="main-content" tabIndex={-1} className={s.workspaceMain}>
         {error?<div className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p className={s.status} role="status">Opening your workspace…</p>:view==='site-copy'?<SiteCopyEditor admin={admin}/>:view==='site-images'?<SiteImagesEditor admin={admin}/>:view==='content-health'?<ContentHealth/>:view==='products'?<CatalogueEditor admin={admin}/>:view==='content'?<ContentEditor admin={admin}/>:view==='media'?<MediaLibrary admin={admin}/>:view==='staff'?admin?<StaffEditor staff={staff} onReload={load}/>:<p className={s.empty}>Administrator access is required.</p>:view==='inquiries'||view==='follow-ups'?<InquiryBoard key={view} staff={staff} admin={admin} dueOnly={view==='follow-ups'}/>:['overview','activity','settings'].includes(view)?view==='settings'&&!admin?<p className={s.empty}>Administrator access is required.</p>:<Operations key={view} view={view as 'overview'|'activity'|'settings'} admin={admin}/>:<section className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>}
+        {error?<div className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p className={s.status} role="status">Opening your workspace…</p>:view==='site-copy'?<SiteCopyEditor admin={admin}/>:view==='site-images'?<SiteImagesEditor admin={admin}/>:view==='content-health'?<ContentHealth/>:view==='site-settings'?admin?<SiteSettingsEditor/>:<p className={s.empty}>Administrator access is required.</p>:view==='products'?<CatalogueEditor admin={admin}/>:view==='content'?<ContentEditor admin={admin}/>:view==='media'?<MediaLibrary admin={admin}/>:view==='staff'?admin?<StaffEditor staff={staff} onReload={load}/>:<p className={s.empty}>Administrator access is required.</p>:view==='inquiries'||view==='follow-ups'?<InquiryBoard key={view} staff={staff} admin={admin} dueOnly={view==='follow-ups'}/>:['overview','activity','settings'].includes(view)?view==='settings'&&!admin?<p className={s.empty}>Administrator access is required.</p>:<Operations key={view} view={view as 'overview'|'activity'|'settings'} admin={admin}/>:<section className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>}
       </main>
     </div>
   </div>

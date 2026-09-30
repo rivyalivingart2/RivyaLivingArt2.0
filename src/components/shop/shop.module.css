@@ -448,8 +448,8 @@
 
 @media (max-width: 780px) { .section, .detail, .formLayout, .pageIntro, .prose { padding-left: max(5vw, 16px) !important; padding-right: max(5vw, 16px) !important; } }
 
-.skipLink { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
-.skipLink:focus { position: fixed; top: 0; left: 0; width: auto; height: auto; padding: 12px 18px; background: var(--ivory, #fff); color: var(--navy, #000); z-index: 9999; font-weight: bold; outline: 3px solid var(--accent-bronze, #b79270); }
+.skipLink { position: absolute; inset-inline-start: 0; top: 0; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skipLink:focus { position: fixed; top: 0; inset-inline-start: 0; width: auto; height: auto; clip-path: none; padding: 12px 18px; background: var(--ivory, #fff); color: var(--navy, #000); z-index: 9999; font-weight: bold; outline: 3px solid var(--accent-bronze, #b79270); }
 
 /* --- Added Accessibility Focus & Form UX --- */
 .button:focus-visible, .textLink:focus-visible, .searchLink:focus-visible, .mobileToggle:focus-visible, .brand:focus-visible, .nav a:focus-visible { outline: 2px solid var(--accent-bronze, #b79270); outline-offset: 4px; border-radius: 2px; }
@@ -496,4 +496,17 @@
 /* H1 visual QA: keep short mobile text links at the same 44px touch target in both axes. */
 @media(max-width:780px){
   .toolbar .textLink,.footerBottom a{min-width:var(--target-min);justify-content:center}
+}
+
+
+/* Navigation + localization controls */
+.srOnly{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.localeSwitcher{display:inline-flex;align-items:center;min-height:44px}
+.localeSwitcher select{min-height:44px;max-width:132px;border:1px solid var(--control-border);background:var(--control-surface);color:var(--control-text);padding:0 30px 0 10px;font:inherit;font-size:12px}
+.mobileLocale{display:none}
+html[dir="rtl"] .header,html[dir="rtl"] .footerTop,html[dir="rtl"] .footerBottom{text-align:right}
+@media(max-width:780px){
+ .headerActions>.localeSwitcher{display:none}
+ .mobileLocale{display:block;margin:8px 0 16px}
+ .mobileLocale .localeSwitcher,.mobileLocale .localeSwitcher select{width:100%;max-width:none}
 }

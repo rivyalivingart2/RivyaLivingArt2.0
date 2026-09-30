@@ -12,6 +12,7 @@ import {Gallery} from './product-gallery';
 import {ProductCard} from './product-card';
 import {HeroImage} from './hero-image';
 import {publishedBusiness} from '@/lib/business-settings';
+import {publicLocale} from '@/lib/site-settings';
 import {OrderForm} from './order-form';
 import {EditorialPage,ArticleCard} from './editorial';
 import {publishedContent} from '@/lib/published-content';
@@ -43,8 +44,9 @@ function Home({products,articles}:{products:ShopProduct[];articles:ContentDocume
  </>;
 }
 export async function ShopSite({route}:{route:string}){
+ const locale=await publicLocale();
  const needsCatalogue=route==='/'||route.startsWith('/pieces/')||['/collectible-design','/memory-art','/personal-art','/search','/commission','/preserve','/personalize','/portfolio'].includes(route);
- const [products,documents,business]=await Promise.all([needsCatalogue?publishedProducts():Promise.resolve([]),route==='/'?publishedContent():Promise.resolve([]),publishedBusiness()]);let content:React.ReactNode;
+ const [products,documents,business]=await Promise.all([needsCatalogue?publishedProducts(locale):Promise.resolve([]),route==='/'?publishedContent(locale):Promise.resolve([]),publishedBusiness()]);let content:React.ReactNode;
  if(route==='/')content=<Home products={products} articles={documents.filter(a=>a.kind==='article')}/>;
  else if(route.startsWith('/pieces/')){
   const slug=route.split('/')[2];const product=products.find(p=>p.slug===slug);if(!product)notFound();
@@ -61,5 +63,6 @@ export async function ShopSite({route}:{route:string}){
   const collectionProducts=products.filter(p=>!tier||p.tier===tier);
   content=<>{tier&&!choosing&&route!=='/portfolio'&&<CollectionStructuredData title={title} description={description} url={route} products={collectionProducts}/>}<Intro eyebrow={choosing?'Begin a piece':route==='/search'?'All collections':tier==='memory'?'Memory art':tier==='personal'?'Personal art & gifts':'Furniture & spatial art'} title={title}>{description}</Intro>{tier&&<div className={s.collectionFeature}><div className={s.collectionFeatureImage}>{feature?<Image src={feature.scene||feature.image} style={{objectPosition:feature.scene?feature.scenePosition:feature.imagePosition,objectFit:'cover'}} alt={feature.sceneAlt||feature.imageAlt||feature.name} fill priority sizes={imageSizes.feature}/>:<span className={s.imageUnavailable}>A starting point for your {tier==='large'?'space':tier==='memory'?'memory':'gift'}.</span>}</div><div><span className={s.eyebrow}>{tier==='large'?'01 / A place in your space':tier==='memory'?'02 / A story to keep':'03 / A personal gesture'}</span><h2>{tier==='large'?'Consider the room around it.':tier==='memory'?'Begin with what matters.':'Small details. Personal meaning.'}</h2><p>{tier==='large'?'Bring your dimensions, light and everyday use to the conversation.':tier==='memory'?'Tell us about the flowers or keepsake and its condition. Wait for our guidance before sending anything irreplaceable.':'Choose a form, then share your size, message, occasion and quantity.'}</p></div></div>}<section className={s.section} style={{paddingTop:0}}>{choosing&&<div className={s.bespokeEntry}><h2>A piece of your own.</h2><p>If your idea does not start with a catalogue design, describe its purpose, scale and material direction.</p><Link className={s.button} href="/commission/customize">Prepare a custom-piece brief ↗</Link><p className={s.help}>Prepare and review your brief here. Saving becomes available when the secure order form is ready.</p></div>}<CatalogueBrowser products={collectionProducts.map(card)}/><p className={s.caption}>Collection images are design visualizations. Final details and quotations are agreed individually.</p></section><Invitation/></>;
  }else content=<EditorialPage route={route}/>;
+ }else content=<EditorialPage route={route} locale={locale}/>;
  return <ShopShell business={business.details}>{content}</ShopShell>;
 }

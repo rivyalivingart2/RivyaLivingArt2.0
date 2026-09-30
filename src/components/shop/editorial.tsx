@@ -9,6 +9,7 @@ import {imageSizes} from './image-sizes';
 import type {PublishedContentDocument} from '@/lib/published-content';
 import {EditorialStructuredData} from './structured-data';
 import type {ContentDocument,ContentSection} from '@/lib/content-model';
+import type {Locale} from '@/lib/site-settings-model';
 import s from './shop.module.css';
 
 function Intro({eyebrow,title,children}:{eyebrow:string;title:string;children?:React.ReactNode}){return <header className={s.pageIntro}><span className={s.eyebrow}>{eyebrow}</span><h1>{title}</h1>{children&&<p>{children}</p>}</header>;}
@@ -23,8 +24,8 @@ const nextSteps:Record<string,[string,string,string,string]>={
  '/architects':['/commission','Prepare a project brief','/materials-care','Explore materials & care'],
  '/faq':['/commission','Begin your piece','/contact','Call or email the atelier']
 };
-export async function EditorialPage({route}:{route:string}){
- const documents=await publishedContent(),articles=documents.filter(d=>d.kind==='article');
+export async function EditorialPage({route,locale='en'}:{route:string;locale?:Locale}){
+ const documents=await publishedContent(locale),articles=documents.filter(d=>d.kind==='article');
  if(route==='/journal'){
   const categories=[...new Set(articles.map(a=>a.eyebrow))];
   return <><Intro eyebrow="The journal" title="A closer look.">Notes on material, proportion and the things that make an object personal.</Intro>
@@ -34,7 +35,7 @@ export async function EditorialPage({route}:{route:string}){
  }
  const content=documents.find(d=>d.route===route);if(!content)notFound();
  const article=content.kind==='article',faq=route==='/faq',policy=!!policies[route];
- const related=article&&content.relatedProductIds?.length?(await publishedProducts()).filter(p=>content.relatedProductIds!.includes(p.id)):[];
+ const related=article&&content.relatedProductIds?.length?(await publishedProducts(locale)).filter(p=>content.relatedProductIds!.includes(p.id)):[];
  const more=articles.filter(a=>a.id!==content.id).sort((a,b)=>Number(b.eyebrow===content.eyebrow)-Number(a.eyebrow===content.eyebrow)).slice(0,3);
  const business=route==='/contact'||policy?(await publishedBusiness()).details:null;
  const next=nextSteps[route]||['/commission','Begin your piece','/journal','Return to the journal'];

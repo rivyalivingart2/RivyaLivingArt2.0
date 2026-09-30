@@ -1,0 +1,36 @@
+import {revalidatePath} from 'next/cache';
+import {studioSession} from '@/lib/studio-auth';
+import {studioDb} from '@/lib/studio-db';
+import {publishedSiteSettings} from '@/lib/site-settings';
+import {validSiteSettings} from '@/lib/site-settings-model';
+import {originAllowed,smallJson} from '@/lib/request-security';
+const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
+export async function GET(){
+ try{
+  const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);if(session.role!=='admin')return json({error:'Administrator access required.'},403);
+  return json(await publishedSiteSettings());
+ }catch{return json({error:'Site settings are unavailable.'},503);}
+}
+export async function POST(request:Request){
+ if(!originAllowed(request))return json({error:'Request not allowed.'},403);
+ try{
+  const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);if(session.role!=='admin')return json({error:'Administrator access required.'},403);
+  const body=await smallJson(request,50000);
+  if(!validSiteSettings(body.settings)||!Number.isInteger(body.version)||body.version<0)return json({error:'Check the menu links, labels and enabled languages.'},400);
+  const sql=studioDb(),site=JSON.stringify(body.settings);
+  const rows=await sql`WITH saved AS(
+   INSERT INTO rivya_business_settings(id,details,updated_by)
+   SELECT 1,jsonb_build_object('site',${site}::jsonb),${session.adminId} WHERE ${body.version}::integer=0
+   ON CONFLICT(id) DO UPDATE SET details=jsonb_set(rivya_business_settings.details,'{site}',${site}::jsonb,true),version=rivya_business_settings.version+1,updated_by=EXCLUDED.updated_by,updated_at=now()
+   WHERE rivya_business_settings.version=${body.version}::integer RETURNING version
+  ), existing AS(
+   UPDATE rivya_business_settings SET details=jsonb_set(details,'{site}',${site}::jsonb,true),version=version+1,updated_by=${session.adminId},updated_at=now()
+   WHERE id=1 AND version=${body.version}::integer AND ${body.version}::integer>0 RETURNING version
+  ), changed AS(SELECT version FROM saved UNION ALL SELECT version FROM existing),
+  logged AS(INSERT INTO rivya_audit(actor,action,entity) SELECT ${session.adminId},'site-settings:publish','site settings version '||version FROM changed)
+  SELECT version FROM changed`;
+  if(!rows.length)return json({error:'Site settings changed elsewhere. Reload before saving.'},409);
+  revalidatePath('/','layout');revalidatePath('/sitemap.xml');
+  return json({saved:true,version:rows[0].version});
+ }catch{return json({error:'Site settings could not be saved.'},503);}
+}
