@@ -1,5 +1,7 @@
 'use client';
 import {DraftRecovery} from './draft-recovery';
+import {useLinkedRecord,LinkedRecordNotice} from './linked-record';
+import {publicationState,draftState} from '@/lib/content-health';
 import {useEffect,useState} from 'react';
 import type {ShopProduct,CustomField,ProductTranslation} from '@/lib/shop-model';
 import {localeLabels,locales,type Locale} from '@/lib/site-settings-model';
@@ -16,12 +18,13 @@ import {Plus,Search,RefreshCw,X,ExternalLink} from 'lucide-react';
 type Entry={product:ShopProduct;reviewedImages?:{image:string;scene:string|null;gallery:NonNullable<ShopProduct['gallery']>};version:number;publishedVersion:number;visible:boolean;hasDraft:boolean;published:ShopProduct|null};
 
 export function CatalogueEditor({admin}:{admin:boolean}){
+ const [loaded,setLoaded]=useState(false);
  const [media,setMedia]=useState<PublicMedia[]>([]),[preview,setPreview]=useState(false),[previewAnswers,setPreviewAnswers]=useState<Record<string,string>>({});
  const [activeTab,setActiveTab]=useState<string>('general');
  const [translationLocale,setTranslationLocale]=useState<Locale>('hi');
  const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[tierFilter,setTierFilter]=useState<'all'|'large'|'memory'|'personal'>('all'),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading catalogue…'),[dirty,setDirty]=useState(false);
  async function load(id?:string){const data=await studioFetch('/api/studio/workspace?view=catalogue');setEntries(data.products);if(id)setEntry(data.products.find((e:Entry)=>e.product.id===id)||null);}
- useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia;reviewedMedia:PublicMedia})=>e.reviewedMedia||e.media))).catch(()=>setMessage('Approved image choices are temporarily unavailable.'));void studioFetch('/api/studio/workspace?view=catalogue').then(data=>{setEntries(data.products);setMessage('Drafts are shared across devices. Only published content appears on the website.');}).catch(e=>setMessage(e.message));},[]);
+ useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia;reviewedMedia:PublicMedia})=>e.reviewedMedia||e.media))).catch(()=>setMessage('Approved image choices are temporarily unavailable.'));void studioFetch('/api/studio/workspace?view=catalogue').then(data=>{setEntries(data.products);setLoaded(true);setMessage('Drafts are shared across devices. Only published content appears on the website.');}).catch(e=>setMessage(e.message));},[]);
  useEffect(()=>{const warn=(e:BeforeUnloadEvent)=>{if(dirty){e.preventDefault();e.returnValue='';}};window.addEventListener('beforeunload',warn);return()=>window.removeEventListener('beforeunload',warn);},[dirty]);
  function change(p:Partial<ShopProduct>){setEntry(e=>e?{...e,product:{...e.product,...p}}:null);setDirty(true);}
  function field(index:number,patch:Partial<CustomField>){if(entry)change({fields:entry.product.fields.map((f,i)=>i===index?{...f,...patch}:f)});}
@@ -59,6 +62,10 @@ export function CatalogueEditor({admin}:{admin:boolean}){
  });
 
  const {page, setPage, totalPages, paginatedItems} = usePagination(filteredEntries, 20);
+ const linked=useLinkedRecord({editor:'products',records:entries,loaded,selectedId:entry?.product.id,idOf:e=>e.product.id,busy,onSelect:(next,target)=>{
+  if(dirty&&!window.confirm('Discard unsaved edits to this piece?'))return false;
+  setEntry(structuredClone(next));setDirty(false);setPreview(false);setPreviewAnswers({});setQuery('');setTierFilter('all');setPage(Math.floor(entries.findIndex(e=>e.product.id===next.product.id)/20)+1);setActiveTab(target.tab);return true;
+ }});
 
  return (
   <>
@@ -77,7 +84,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
     </button>
    </div>
 
-   <p className={s.status} role="status">{message}</p>
+   <p className={s.status} role="status">{message}</p><LinkedRecordNotice {...linked}/>
 
    {/* Collection Filter Tabs */}
    <div className={s.categoryTabs} role="tablist" aria-label="Filter by collection">
@@ -173,10 +180,10 @@ export function CatalogueEditor({admin}:{admin:boolean}){
         >
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
             <strong>{e.product.name}</strong>
-            {e.visible ? (
+            {e.visible&&e.published ? (
               <span className={s.statusBadgePublished}>Published</span>
             ) : (
-              <span className={s.statusBadgeHidden}>Hidden</span>
+              <span className={s.statusBadgeHidden}>{publicationState(e.published,e.visible)}</span>
             )}
           </div>
           <small style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap', marginTop: '4px' }}>
@@ -196,7 +203,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
     {entry ? (
       <form data-unsaved={dirty} className={s.editor} onSubmit={e=>{e.preventDefault();void save('draft');}}>
         <fieldset disabled={busy}>
-          <h2>{entry.product.name}</h2>
+          <h2>{entry.product.name}</h2><p className={s.help}>{publicationState(entry.published,entry.visible)} · {draftState(entry.product,entry.published,entry.version)}</p>
           <p className={s.help}>Shared version {entry.version} · Published form {entry.publishedVersion}. Choose from the approved asset collection. Saved product addresses stay stable.</p>
           <div className={s.actions}>
             <button type="button" onClick={()=>setPreview(v=>!v)}>
@@ -252,8 +259,8 @@ export function CatalogueEditor({admin}:{admin:boolean}){
 
           {activeTab === 'general' && (
           <div id="product-tab-general" role="tabpanel" className={s.grid}>
-            <label>Name<input value={entry.product.name} maxLength={100} required onChange={e=>change({name:e.target.value})}/></label>
-            <label>Subtitle<input value={entry.product.subtitle} maxLength={120} required onChange={e=>change({subtitle:e.target.value})}/></label>
+            <label>Name<input id="products-field-name" value={entry.product.name} maxLength={100} required onChange={e=>change({name:e.target.value})}/></label>
+            <label>Subtitle<input id="products-field-subtitle" value={entry.product.subtitle} maxLength={120} required onChange={e=>change({subtitle:e.target.value})}/></label>
             <label>Public address<input value={entry.product.slug} disabled={!entry.product.id.startsWith('RLA-')||entry.version>0} onChange={e=>change({slug:e.target.value})}/></label>
             <label>Collection
               <select value={entry.product.tier} onChange={e=>change({tier:e.target.value as ShopProduct['tier']})}>
@@ -269,14 +276,14 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           <div id="product-tab-details" role="tabpanel" className={s.grid}>
             <label>Design dimensions<input value={entry.product.dimensions||''} maxLength={200} onChange={e=>change({dimensions:e.target.value||undefined})}/></label>
             <label>Materials<input value={entry.product.material||''} maxLength={300} onChange={e=>change({material:e.target.value||undefined})}/></label>
-            <label className={s.wide}>Product story<textarea value={entry.product.story} maxLength={1800} rows={7} required onChange={e=>change({story:e.target.value})}/></label>
+            <label className={s.wide}>Product story<textarea id="products-field-story" value={entry.product.story} maxLength={1800} rows={7} required onChange={e=>change({story:e.target.value})}/></label>
           </div>
           )}
           {activeTab === 'images' && (
           <div id="product-tab-images" role="tabpanel">
           <div className={s.grid}>
             <label>Primary image
-              <select value={entry.product.image} onChange={e=>change({image:e.target.value})}>
+              <select id="products-field-image" value={entry.product.image} onChange={e=>change({image:e.target.value})}>
                 {media.map(m=><option key={m.path} value={m.path}>{m.alt} · {m.products.join(', ')}</option>)}
               </select>
             </label>

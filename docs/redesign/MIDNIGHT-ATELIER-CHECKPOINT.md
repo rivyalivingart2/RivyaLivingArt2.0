@@ -1,3 +1,9 @@
+# Continuation moved to the P1 checkpoint
+
+30 September 2026. The current owner request is P1 implementation, on `codex/p1-studio-foundations`. Read [P1-FOUNDATIONS-CHECKPOINT.md](P1-FOUNDATIONS-CHECKPOINT.md). The Midnight atelier entry below is retained as historical design evidence.
+
+---
+
 # Midnight atelier redesign — continuation checkpoint
 
 Updated 24 September 2026. Active authority: docs/decisions/2026-09-24-midnight-atelier.md.

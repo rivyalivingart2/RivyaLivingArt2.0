@@ -1,3 +1,13 @@
+# Active status — P1 source implemented; integrated QA and publication pending
+
+30 September 2026. Continue `codex/p1-studio-foundations` from main `7569bbf720e73c5fee0117618a702b297af116de`. See [P1 checkpoint](docs/redesign/P1-FOUNDATIONS-CHECKPOINT.md) and [owner scope](docs/decisions/2026-09-30-p1-foundations.md).
+
+Content health routing, shared module registry, record/tab/field links, truthful publication states, IST presets, duplicate skip removal and customer wording are implemented. Existing Imprint source candidate uses the confirmed new-site phone/email. Local checks: 199 unit, 12 preflight and 386 HTTP checks passed; lint has zero errors and 68 existing warnings; TypeScript/build passed. Local fixture UI verified selection, focus, pagination, roles, failure state and narrow-screen layout. These do not replace authenticated database QA or publication.
+
+No live writes, scraper actions, old-product transfer, push, main merge or deployment. P1 production acceptance and P2 remain pending. Historical verification claims below are tied to their earlier revisions.
+
+---
+
 # Active status — UI/UX Skills Elevation Completed & Fully Verified
 
 26 September 2026. All 10 UI/UX skills (`transitions-polish`, `mobile-native`, `refactoring-ui`, `web-perf`, `glassmorphism`, `better-typography`, `web-design-guidelines`, `micro-interaction`, `fixing-accessibility`, and `apple-design`) installed in dual paths. The 8-phase UI/UX Elevation Master Plan (`docs/redesign/UI-UX-SKILLS-IMPROVEMENT-PLAN.md`) was completely executed, verified, and pushed to `main`:

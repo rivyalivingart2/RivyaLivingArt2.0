@@ -1,5 +1,6 @@
 'use client';
-import {useCallback,useEffect,useState} from 'react';
+import {useCallback,useEffect,useState,type ReactNode} from 'react';
+import {studioModules,studioModule,studioModuleHref,type StudioModuleKey} from '@/lib/studio-modules';
 import {usePathname} from 'next/navigation';
 import Link from 'next/link';
 import {
@@ -34,39 +35,27 @@ const ContentHealth=dynamic(()=>import('./content-health').then(m=>m.ContentHeal
 const SiteSettingsEditor=dynamic(()=>import('./site-settings-editor').then(m=>m.SiteSettingsEditor),{loading:WorkspaceLoading});
 function WorkspaceLoading(){return <p className={s.status} role="status">Opening this workspace page…</p>;}
 
-const navGroups = [
-  {
-    title: 'Workspace',
-    items: [
-      { key: 'overview', href: '/studio', label: 'Overview', icon: LayoutDashboard },
-      { key: 'inquiries', href: '/studio/inquiries', label: 'Inquiries & orders', icon: Inbox },
-      { key: 'follow-ups', href: '/studio/follow-ups', label: 'Follow-ups due', icon: Clock },
-    ]
-  },
-  {
-    title: 'Management',
-    items: [
-      { key: 'products', href: '/studio/products', label: 'Catalogue & forms', icon: Boxes },
-      { key: 'content', href: '/studio/content', label: 'Pages & journal', icon: FileText },
-      { key: 'media', href: '/studio/media', label: 'Public media', icon: ImageIcon },
-        { key: 'site-copy', href: '/studio/site-copy', label: 'Site copy', icon: FileText },
-        { key: 'site-images', href: '/studio/site-images', label: 'Site images', icon: ImageIcon },
-        { key: 'content-health', href: '/studio/content-health', label: 'Content health', icon: Activity },
-        { key: 'site-settings', href: '/studio/navigation', label: 'Navigation & languages', icon: Languages, adminOnly: true },
-    ]
-  },
-  {
-    title: 'Operations',
-    items: [
-      { key: 'activity', href: '/studio/activity', label: 'Activity & logs', icon: Activity },
-      { key: 'staff', href: '/studio/staff', label: 'Staff access', icon: Users, adminOnly: true },
-      { key: 'settings', href: '/studio/settings', label: 'Atelier settings', icon: SettingsIcon, adminOnly: true },
-    ]
-  }
-];
+const moduleIcons = {overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
+const navGroups = ['Workspace','Management','Operations'].map(title=>({title,items:studioModules.filter(module=>module.group===title)}));
+type ModuleContext={admin:boolean;staff:StaffMember[];load:()=>Promise<void>};
+const moduleViews = {
+ overview:({admin}:ModuleContext)=><Operations view="overview" admin={admin}/>,
+ inquiries:({admin,staff}:ModuleContext)=><InquiryBoard staff={staff} admin={admin} dueOnly={false}/>,
+ 'follow-ups':({admin,staff}:ModuleContext)=><InquiryBoard staff={staff} admin={admin} dueOnly/>,
+ products:({admin}:ModuleContext)=><CatalogueEditor admin={admin}/>,
+ content:({admin}:ModuleContext)=><ContentEditor admin={admin}/>,
+ media:({admin}:ModuleContext)=><MediaLibrary admin={admin}/>,
+ 'site-copy':({admin}:ModuleContext)=><SiteCopyEditor admin={admin}/>,
+ 'site-images':({admin}:ModuleContext)=><SiteImagesEditor admin={admin}/>,
+ 'content-health':()=> <ContentHealth/>,
+ 'site-settings':()=> <SiteSettingsEditor/>,
+ activity:({admin}:ModuleContext)=><Operations view="activity" admin={admin}/>,
+ staff:({staff,load}:ModuleContext)=><StaffEditor staff={staff} onReload={load}/>,
+ settings:({admin}:ModuleContext)=><Operations view="settings" admin={admin}/>,
+} satisfies Record<StudioModuleKey,(context:ModuleContext)=>ReactNode>;
 
 export function Workspace(){
- const path=usePathname(),segment=path.split('/')[2]||'overview',view=({'orders':'inquiries','kanban':'inquiries','forms':'products','journal':'content','pages':'content','navigation':'site-settings'} as Record<string,string>)[segment]||segment;
+ const path=usePathname(),activeModule=studioModule(path.split('/')[2]||''),view=activeModule?.key;
  const [identity,setIdentity]=useState<WorkspaceIdentity|null>(null),[staff,setStaff]=useState<StaffMember[]>([]),[error,setError]=useState(''),[sessionMessage,setSessionMessage]=useState('');
  const load=useCallback(async()=>{const data=await studioFetch('/api/studio/workspace');setIdentity(data.session);setStaff(data.staff);setSessionMessage('');},[]);
  useEffect(()=>{let active=true;void studioFetch('/api/studio/workspace').then(data=>{if(active){setIdentity(data.session);setStaff(data.staff);}}).catch(e=>{if(active)setError(e.message);});return()=>{active=false;};},[]);
@@ -116,13 +105,13 @@ export function Workspace(){
               <span className={s.navGroupTitle}>{group.title}</span>
               <div className={s.navGroupList}>
                 {visibleItems.map(item => {
-                  const Icon = item.icon;
+                  const Icon = moduleIcons[item.key];
                   const isCurrent = view === item.key;
                   return (
                     <Link
                       key={item.key}
                       prefetch={false}
-                      href={item.href}
+                      href={studioModuleHref(item)}
                       className={s.navLink}
                       aria-current={isCurrent ? 'page' : undefined}
                     >
@@ -137,7 +126,8 @@ export function Workspace(){
         })}
       </nav>
       <main id="main-content" tabIndex={-1} className={s.workspaceMain}>
-        {error?<div className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p className={s.status} role="status">Opening your workspace…</p>:view==='site-copy'?<SiteCopyEditor admin={admin}/>:view==='site-images'?<SiteImagesEditor admin={admin}/>:view==='content-health'?<ContentHealth/>:view==='site-settings'?admin?<SiteSettingsEditor/>:<p className={s.empty}>Administrator access is required.</p>:view==='products'?<CatalogueEditor admin={admin}/>:view==='content'?<ContentEditor admin={admin}/>:view==='media'?<MediaLibrary admin={admin}/>:view==='staff'?admin?<StaffEditor staff={staff} onReload={load}/>:<p className={s.empty}>Administrator access is required.</p>:view==='inquiries'||view==='follow-ups'?<InquiryBoard key={view} staff={staff} admin={admin} dueOnly={view==='follow-ups'}/>:['overview','activity','settings'].includes(view)?view==='settings'&&!admin?<p className={s.empty}>Administrator access is required.</p>:<Operations key={view} view={view as 'overview'|'activity'|'settings'} admin={admin}/>:<section className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>}
+        {error?<div className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p className={s.status} role="status">Opening your workspace…</p>:!activeModule?<section className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>:activeModule.adminOnly&&!admin?<p className={s.empty}>Administrator access is required.</p>:<div key={activeModule.key}>{moduleViews[activeModule.key]({admin,staff,load})}</div>}
+
       </main>
     </div>
   </div>

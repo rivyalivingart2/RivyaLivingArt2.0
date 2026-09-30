@@ -26,3 +26,12 @@ export function businessDayStart(date: string): string {
  if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !Number.isFinite(Date.parse(date)) || new Date(date).toISOString().slice(0,10)!==date) throw new RangeError('Invalid business date');
  return new Date(date+'T00:00:00+05:30').toISOString();
 }
+
+/** Inclusive IST calendar range: today plus the preceding days, independent of the device timezone. */
+export function businessDatePreset(days:1|7|30,value:Date|string|number=new Date()):{from:string;to:string}{
+ if(![1,7,30].includes(days))throw new RangeError('Unsupported date preset');
+ const to=businessDate(value);
+ const from=new Date(to+'T00:00:00Z');
+ from.setUTCDate(from.getUTCDate()-(days-1));
+ return {from:from.toISOString().slice(0,10),to};
+}

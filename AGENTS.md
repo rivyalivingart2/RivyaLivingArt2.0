@@ -1,3 +1,9 @@
+# Current owner scope — P1 Studio foundations
+
+30 September 2026. The owner explicitly started P1 of the consolidated old-to-new implementation plan. Read `docs/decisions/2026-09-30-p1-foundations.md` and `docs/redesign/P1-FOUNDATIONS-CHECKPOINT.md` first. Work is on `codex/p1-studio-foundations` from main `7569bbf720e73c5fee0117618a702b297af116de`. Development and local checks for this phase are authorized; production release remains a separate gate. No scraper work and no old-product transfer. Use the confirmed new-site contacts for the existing Imprint candidate. Preserve current products, contacts, media associations, authentication and manual-send behavior. Older entries below are historical where superseded.
+
+---
+
 # Active owner instruction — Midnight atelier presentation redesign
 
 24 September 2026. Read docs/decisions/2026-09-24-midnight-atelier.md and docs/redesign/MIDNIGHT-ATELIER-CHECKPOINT.md. The owner explicitly resumed presentation work and its quality gates. Work on codex/midnight-atelier from current main; preserve the current published ShopSite architecture and all data/security behavior. Publish a protected Preview for owner visual review only. No main merge or Production deployment is authorized for this new redesign. Prior stopped operational work remains pending.

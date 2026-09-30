@@ -18,7 +18,7 @@ export const operatingPolicies: Record<string, {title:string;eyebrow:string;desc
   ['Refunds','If we cannot fulfil the agreed order, we provide a full refund. We initiate approved refunds within seven business days. Your bank or payment provider may require additional processing time.']
  ]},
  '/terms': {title:'Clear from the beginning.',eyebrow:'Ordering terms',description:'How an order request becomes an agreed specification, with your recorded approval before production begins.',sections:[
-  ['A request starts the conversation','Place Order saves your requirements in the database and Studio. It does not accept a quotation, confirm production or take payment. Choose Open WhatsApp or Copy on the saved receipt and press Send yourself to discuss your order. Opening WhatsApp is not proof that a message was sent, delivered or read.'],
+  ['A request starts the conversation','Place Order saves your requirements for the atelier to review. It does not accept a quotation, confirm production or take payment. Choose Open WhatsApp or Copy on the saved receipt and press Send yourself to discuss your order. Opening WhatsApp is not proof that a message was sent, delivered or read.'],
   ['Agree the details','Before production begins, we obtain your recorded approval of the final design, dimensions, spelling, colours, quotation and production commencement. All applicable charges and taxes are quoted in INR before acceptance or payment, with production and delivery estimates confirmed individually.'],
   ['Images and specifications','Collection images are design visualizations. Material selection, dimensions, colour, availability and feasibility must be confirmed for your individual piece. Prices are provided by quotation.'],
   ['Your references','Only upload images you are entitled to share. Avoid unnecessary sensitive information in notes and references. Reference images remain private and are not added to the public catalogue.'],
@@ -35,9 +35,9 @@ export const operatingPolicies: Record<string, {title:string;eyebrow:string;desc
   ['Cookies and browser control','An essential cookie links your form, uploads and private receipt for up to 24 hours. Clearing it or changing browsers may remove receipt access; it does not delete the saved inquiry. No customer account is created. Contact details and reference images are not stored in browser local storage. Unsaved form details remain in the current tab and may be lost when it closes.'],
   ['Service protection','A protected identifier derived from the network address limits repeated requests. Hosting and storage providers process information required to operate their services. Opening a map, email application or WhatsApp takes you to a separate service.']
  ]}
-, '/imprint': {title:'Legal Imprint.',eyebrow:'Impressum',description:'Required legal disclosure for RivyaLivingArt.',sections:[
-  ['Provider Identification','RivyaLivingArt\\nBhavya Gondaliya\\nSurat, Gujarat, India'],
-  ['Contact Information','Email: rivyalivingart2.0@gmail.com'],
+, '/imprint': {title:'Legal Imprint.',eyebrow:'Impressum',description:'Business identity and contact details for RivyaLivingArt, the resin art and furniture atelier in Surat, Gujarat, India.',sections:[
+  ['Provider Identification','RivyaLivingArt. Business owner: Bhavya Gondaliya. Based in Surat, Gujarat, India.'],
+  ['Contact Information','Phone: +91 8320404132. Email: rivyalivingart2.0@gmail.com'],
   ['Disclaimer','All product images and visual concepts are for reference only. Exact materials, scale, and finish are confirmed individually prior to order placement.']
  ]}
 };

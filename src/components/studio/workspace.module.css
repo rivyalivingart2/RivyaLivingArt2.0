@@ -159,3 +159,10 @@
 }
 
 .error{color:var(--error-text);font-size:12px}
+
+/* P1: distinguish the record identity from status and keep keyboard targets visible. */
+.healthRecord{display:block;font-size:11px;font-weight:400;overflow-wrap:anywhere;margin-top:6px}
+.editor [id*="-field-"]{scroll-margin-top:100px}
+.editor [id*="-field-"]:focus{outline:2px solid var(--accent-bronze);outline-offset:3px}
+
+.tableWrap .healthTable{min-width:880px}.healthTable :is(th,td){vertical-align:top;overflow-wrap:normal}.healthTable th[scope=row]{min-width:180px}.healthTable td:nth-child(2),.healthTable td:last-child,.healthTable th:nth-child(2){white-space:nowrap}
