@@ -6,13 +6,14 @@ import {revalidatePath} from 'next/cache';
 import {isDeepStrictEqual} from 'node:util';
 export const dynamic='force-dynamic';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
+const englishComparable=(document:ContentDocument)=>{const {translations:_,...english}=document;return english;};
 export async function GET(){
  try{
   if(!await studioSession())return json({error:'Sign in to continue.'},401);
   const rows=await studioDb()`SELECT content_key,draft,published,version,published_version,visible FROM rivya_content ORDER BY content_key`;
   const byId=new Map(rows.map(r=>[r.content_key,r]));
   const defaults=baselineContent.map(document=>({document,version:0,published:null,visible:false}));
-  return json({entries:[...defaults.map(e=>{const r=byId.get(e.document.id);return r?{document:r.draft,version:r.version,published:r.published,visible:r.visible,...(!isDeepStrictEqual(r.draft,JSON.parse(JSON.stringify(e.document)))?{reviewed:e.document}:{})}:e;}),...rows.filter(r=>!baselineContent.some(b=>b.id===r.content_key)).map(r=>({document:r.draft,version:r.version,published:r.published,visible:r.visible}))]});
+  return json({entries:[...defaults.map(e=>{const r=byId.get(e.document.id);return r?{document:r.draft,version:r.version,published:r.published,visible:r.visible,...(!isDeepStrictEqual(englishComparable(r.draft),englishComparable(JSON.parse(JSON.stringify(e.document))))?{reviewed:e.document}:{})}:e;}),...rows.filter(r=>!baselineContent.some(b=>b.id===r.content_key)).map(r=>({document:r.draft,version:r.version,published:r.published,visible:r.visible}))]});
  }catch{return json({error:'Content is temporarily unavailable.'},503);}
 }
 export async function POST(request:Request){

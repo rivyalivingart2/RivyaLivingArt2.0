@@ -157,3 +157,5 @@
 @media(hover:none){
   .workspace .primary:hover:not(:disabled),.metrics a:hover{transform:none}
 }
+
+.error{color:var(--error-text);font-size:12px}
