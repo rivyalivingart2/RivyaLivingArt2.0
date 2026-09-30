@@ -37,6 +37,8 @@ export function CatalogueEditor({admin}:{admin:boolean}){
   details:[!entry.product.story.trim()?'Product story is required.':null].filter((v):v is string=>Boolean(v)),
   images:[!entry.product.image.trim()?'Primary image is required.':null].filter((v):v is string=>Boolean(v)),
   customization:schemaIssues,
+  history:[] as string[],
+ }:{general:[] as string[],details:[] as string[],images:[] as string[],customization:[] as string[],history:[] as string[]};
   translations:[] as string[],
   history:[] as string[],
  }:{general:[] as string[],details:[] as string[],images:[] as string[],customization:[] as string[],translations:[] as string[],history:[] as string[]};
