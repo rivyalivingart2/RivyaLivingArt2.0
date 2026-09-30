@@ -10,7 +10,6 @@ import type {PublicMedia} from '@/lib/public-media';
 import Image from 'next/image';
 type Entry={document:ContentDocument;version:number;published:ContentDocument|null;visible:boolean;reviewed?:ContentDocument};
 export function ContentEditor({admin,initialKind='all'}:{admin:boolean;initialKind?:'all'|'page'|'article'}){
- const [media,setMedia]=useState<PublicMedia[]>([]),[kindFilter,setKindFilter]=useState<'all'|'page'|'article'>(initialKind);
  const [media,setMedia]=useState<PublicMedia[]>([]),[kindFilter,setKindFilter]=useState<'all'|'page'|'article'>(initialKind),[translationLocale,setTranslationLocale]=useState<Locale>('hi');
  const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[message,setMessage]=useState('Loading content…'),[busy,setBusy]=useState(false),[dirty,setDirty]=useState(false),[preview,setPreview]=useState(false);
  async function load(id?:string){const data=await studioFetch('/api/studio/content');setEntries(data.entries);if(id)setEntry(data.entries.find((e:Entry)=>e.document.id===id)||null);}

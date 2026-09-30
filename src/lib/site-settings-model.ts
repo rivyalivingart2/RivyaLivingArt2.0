@@ -51,7 +51,6 @@ export const defaultNavigation:NavigationSettings={
 
 export const defaultSiteSettings:SiteSettings={
  navigation:defaultNavigation,
- localization:{enabled:false,enabledLocales:['en']},
  localization:{enabled:true,enabledLocales:[...locales]},
 };
 
