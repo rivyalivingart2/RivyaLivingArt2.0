@@ -51,7 +51,7 @@ export const defaultNavigation:NavigationSettings={
 
 export const defaultSiteSettings:SiteSettings={
  navigation:defaultNavigation,
- localization:{enabled:true,enabledLocales:[...locales]},
+ localization:{enabled:false,enabledLocales:['en']},
 };
 
 const knownStaticRoutes=new Set([
