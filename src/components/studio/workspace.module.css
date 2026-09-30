@@ -147,3 +147,13 @@
 .statusBadgeDraft { font-size: 10px; font-family: var(--font-data); text-transform: uppercase; letter-spacing: 0.05em; padding: 2px 6px; border-radius: 3px; background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
 .statusBadgeHidden { font-size: 10px; font-family: var(--font-data); text-transform: uppercase; letter-spacing: 0.05em; padding: 2px 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.08); color: var(--muted); border: 1px solid rgba(255, 255, 255, 0.12); }
 
+
+
+/* Phase F1: touch and motion refinement without changing desktop density. */
+@media(max-width:800px){
+  .signOutBtn,.navLink,.filterChip,.viewSwitcherBtn,.viewSwitcherActive,.contactActionBtn,.contactActionBtnWa,.datePresetBtn,.categoryTabBtn{min-height:var(--target-min)}
+  .searchClearBtn{min-width:var(--target-min);min-height:var(--target-min)}
+}
+@media(hover:none){
+  .workspace .primary:hover:not(:disabled),.metrics a:hover{transform:none}
+}
