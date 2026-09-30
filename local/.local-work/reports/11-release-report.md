@@ -1,43 +1,53 @@
-# Release report — NOT YET RELEASE-READY
+# Release report — PACKAGE PREPARED, VISUAL QA BLOCKED
 
 Updated: 2026-09-30
 
-## Status
-**BLOCKED before the “tested release package ready for review” gate.** The local implementation transformations are prepared and fixture-tested, but repository-wide checks have not run because this hosted session has no writable full target checkout. Per the master prompt, this is not called complete.
+## Release status
+The approved C–G implementation work is complete on the feature branch and the exact tested source head builds successfully on Vercel Preview. **Production release approval is not requested yet** because H1 seven-width visual/browser verification remains blocked by Vercel Preview Authentication.
 
-## Intended local diff
-15 target paths:
-- modify `src/components/shop/product-card.tsx`
-- modify `src/lib/shop-editorial.ts`
-- modify `src/lib/reviewed-journal.json`
-- modify `tests/release-contracts.test.mjs`
-- modify `src/components/studio/catalogue-editor.tsx`
-- modify `src/components/studio/media-library.tsx`
-- modify `src/components/studio/workspace.module.css`
-- modify `src/components/shop/shop-site.tsx`
-- modify `src/components/rivya/studio.tsx`
-- delete six unapproved route `page.tsx` files for Chennai/Delhi/Mumbai/Pune/varmala/workshops
+## Repository and tested source
+- Repository: `rivyalivingart2/RivyaLivingArt2.0`
+- Feature branch: `local/phase-wise-implementation`
+- Base `main`: `0678a8dfb4df7ad140e0e7182742f897444af390`
+- Tested source head: `5176e24706c62b54417931b6f2207987d3e4bc9b`
+- Vercel Preview: `dpl_SXoz7dDgUzNFNJPy2FnJvgdTuv4e` — READY
+- GitHub/Vercel combined status: success
 
-The exact `git diff` must be generated after running the hash-pinned script in the real checkout.
+## Source changes intended for a future production release
+The tested source diff touches 25 application/test paths (excluding `local/` evidence):
+- metadata/layout and public portfolio routes;
+- removal of six unapproved service landing routes;
+- public product/site/structured-data CSS and components;
+- Studio catalogue/content/media/site-copy/site-images/content-health/workspace components;
+- reviewed editorial source and release-contract expectation.
 
-## Actual test results
-See `10-validation-report.md`. Fixture/unit transformation checks PASS. Full repository lint/typecheck/build/runtime/E2E are BLOCKED and must be completed before release approval is requested.
+## Completed functionality
+- Safe baseline/build repair.
+- Public truthfulness and SEO/structured-data cleanup.
+- Error-aware five-tab catalogue editor.
+- Existing-store Site Copy and Site Images workspaces.
+- Read-only Content Health diagnostics.
+- Public portfolio restricted to owner-approved real projects.
+- Mobile touch-target and non-hover motion refinements.
+- Source-level media/font/performance review.
 
-## Repository/deployment target
-Repository: `rivyalivingart2/RivyaLivingArt2.0`
-Required baseline head: `0678a8dfb4df7ad140e0e7182742f897444af390`
-Vercel project after separate release approval: `rivya-living-art2-0` / `prj_J90SIW3OHaXYsmhan527F4n8PYUc`
-Production domain: `www.rivyalivingart.com`
-Current known READY rollback source: `9797bc0c73375bb7359b950f99eacb5b0e2da4fc`
+## Explicit deferrals
+- Navigation editor: no approved storage contract; no migration introduced.
+- Localization: no approved multilingual schema or operating workflow.
+- Seven-width visual/browser certification: protected Preview cannot be rendered by available browser tooling.
+
+## Release exclusions
+The future production merge must exclude:
+- `local/.local-work/**`;
+- audit reports/manifests/checksums;
+- screenshots/traces/sessions/test artifacts;
+- credentials, private references or database copies.
 
 ## Environment/schema prerequisites
-No schema change or migration is part of this package. Integration/runtime tests still require explicitly isolated QA database/private-storage resources; do not point synthetic tests at shared Preview/Production data.
+No database schema change or migration is part of this source package. Current content/media/catalogue APIs and tables are reused. No product-record creation/import is required.
 
 ## Rollback
-Before remote release, record the new tested commit. Application rollback uses normal Git revert/Vercel rollback to the last known READY candidate; no force push. No database rollback is needed for this package because it contains no migration/data mutation.
+Application rollback remains normal Git/Vercel rollback to the last known READY production source `9797bc0c73375bb7359b950f99eacb5b0e2da4fc` until a later production release is separately approved. Never force-push. No DB rollback is required because this package adds no migration.
 
-## Artifact/privacy check
-The release itself must exclude `.local-work`, audit reports, screenshots, traces, sessions, credentials, local databases, private customer references, and nested repositories. Product records are not created, altered or deleted by this implementation package.
-
-## Remote action
-None performed. GitHub push/PR and Vercel deployment still require separate explicit release approval **after** full checkout validation passes.
+## Remaining release gate
+Run the exact required visual/browser matrix on the tested source head (or revalidate a later source head), record screenshots/interactions, then update this report to READY FOR RELEASE REVIEW. Only after that should a separate explicit production-release approval be requested.
