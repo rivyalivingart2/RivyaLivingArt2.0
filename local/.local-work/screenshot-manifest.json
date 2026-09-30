@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "updatedAt": "2026-09-30T13:35:00+05:30",
+  "repository": "rivyalivingart2/RivyaLivingArt2.0",
+  "branch": "local/phase-wise-implementation",
+  "testedSourceHead": "5176e24706c62b54417931b6f2207987d3e4bc9b",
+  "previewDeployment": "dpl_SXoz7dDgUzNFNJPy2FnJvgdTuv4e",
+  "previewBuildStatus": "READY",
+  "requiredViewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "status": "blocked-visual-auth"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "status": "blocked-visual-auth"
+    },
+    {
+      "width": 1200,
+      "height": 900,
+      "status": "blocked-visual-auth"
+    },
+    {
+      "width": 992,
+      "height": 900,
+      "status": "blocked-visual-auth"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "status": "blocked-visual-auth"
+    },
+    {
+      "width": 512,
+      "height": 915,
+      "status": "blocked-visual-auth"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "status": "blocked-visual-auth"
+    }
+  ],
+  "staticResponsiveCoverage": {
+    "publicBreakpoints": [
+      "1100",
+      "1024",
+      "780",
+      "480",
+      "420",
+      "400",
+      "380"
+    ],
+    "studioBreakpoints": [
+      "1080",
+      "800",
+      "540"
+    ],
+    "note": "Breakpoint/source coverage is verified. It is not a substitute for rendered screenshot certification."
+  },
+  "blocker": "Vercel Preview Authentication prevents the available Vercel fetch/browser/container tools from rendering the exact branch Preview. No screenshots fabricated.",
+  "captures": []
+}
