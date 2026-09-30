@@ -1,41 +1,49 @@
-# Release report — READY FOR RELEASE REVIEW
+# Release report — RELEASED
 
 Updated: 2026-09-30
 
-## Status
-The approved implementation and validation plan is complete on `local/phase-wise-implementation`.
+## Production release
+The approved phased implementation has been promoted to production.
 
 - Repository: `rivyalivingart2/RivyaLivingArt2.0`
-- Base `main`: `0678a8dfb4df7ad140e0e7182742f897444af390`
-- Final tested application source: `6c4ac3d16bb9c914eae0a94ece8771328941f551`
-- Preview deployment: `dpl_CAJYQrVxMy3YVkF61Js6kLSqqNVQ` — READY
-- Seven-width H1 browser QA: PASS
+- Tested application source: `6c4ac3d16bb9c914eae0a94ece8771328941f551`
+- Production commit: `770c66818688077014a828859f08f78c21f2a5be`
+- Production deployment: `dpl_3fs7dWDENtPrqmkyDgnjTgimrdY1`
+- Deployment target: production
+- Deployment state: READY
+- Custom aliases: `www.rivyalivingart.com`, `rivyalivingart.com`
+- Alias error: none
 
-## Release contents
-The future production release includes application/test source changes for:
-- public integrity, metadata and structured data;
-- approved-only public portfolio;
-- five-tab Studio catalogue editing;
-- Site Copy/Site Images workspaces;
-- read-only Content Health;
-- mobile/accessibility/motion refinements;
-- removal of unapproved routes/content and simulated/fabricated UI.
+The production commit was constructed from the exact tested Git blobs for the 25 approved application/test paths. `local/.local-work/**` was not included.
 
-## Explicit deferrals
+## Validation
+Seven-width H1 rendered browser QA passed before release:
+1920×1080, 1440×900, 1200×900, 992×900, 768×1024, 512×915 and 320×740.
+
+35 representative rendered states produced:
+- 0 navigation failures
+- 0 overflow failures
+- 0 broken images
+- 0 console/page errors
+- 0 mobile touch-target failures
+- 0 focus-outline failures
+
+## Live smoke verification
+After production became READY:
+- homepage: HTTP 200 on the new deployment
+- collection: HTTP 200 on the new deployment
+- portfolio: HTTP 200 on the new deployment and no demo-fixture markers
+- Studio login surface: HTTP 200 on the new deployment
+- Vercel runtime error clusters in the verification window: none
+
+## Deferred by design
 - Navigation editor: no approved persistence schema.
 - Localization: no approved multilingual schema/workflow.
 
-## Release exclusions
-Do not merge `local/.local-work/**` into production application source. It contains audit/validation/release evidence only.
-Also exclude credentials, sessions, screenshots/traces and other temporary artifacts.
+These were explicitly excluded rather than implemented with an unreviewed migration.
 
-## Schema/data
-No database migration is part of this package. Existing catalogue/content/media/settings stores are reused.
-No production data write was performed during implementation or QA.
+## Data/schema
+No database migration was introduced and no production data/product mutation was performed.
 
 ## Rollback
-Use ordinary Git/Vercel rollback to the prior known production release. Do not force-push. No database rollback is required for this package.
-
-## Approval gate
-This package is **READY FOR RELEASE REVIEW**, but it is not yet authorized for production.
-A separate explicit owner instruction to release/merge/promote production is required.
+If rollback is required, use standard Git revert/Vercel rollback. Do not force-push. No database rollback is required for this release.
