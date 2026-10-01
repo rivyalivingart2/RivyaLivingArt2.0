@@ -1,0 +1,44 @@
+﻿family,specification,p5a_status,remaining
+S01,Staff sign-in and session renewal,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S02,"Workspace shell, navigation and overview",INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S03,"Inquiries: list, filters and saved views",INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S04,Inquiry board and stage changes,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S05,"Inquiry detail, references, notes and amendments",INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S06,Manual inquiry entry and saved-message preparation,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S07,Follow-ups and IST date controls,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S08,Catalogue list and protected existing-product editor,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S09,Existing new-product screen and deferred media dependency,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S10,Product gallery review and responsive presentation,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S11,Customization forms and schema comparison,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S12,Pages and the homepage section composer,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S13,"Global copy, FAQ, process, materials and policies",INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S14,"Journal index, article editing and editorial links",INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S15,"Media library: assets, provenance and review",INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S16,Site images: page-slot assignment and crops,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S17,Navigation and destination management,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S18,"Languages, translation coverage and review",INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S19,Content health and exact repair navigation,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S20,"Taxonomy, categories and relationship review",DISPOSITION AND DEEP STATE REVIEW PENDING,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S21,Portfolio and testimonials — conditional modules,CONDITIONAL; GENUINE CONTENT REQUIRED,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S22,"Imports, exports and bulk-operation review",DISPOSITION AND DEEP STATE REVIEW PENDING,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S23,"Staff access, roles and recovery assistance",INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S24,Business settings and protected contact references,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S25,"Revisions, concurrent edits and activity audit",INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S26,"SEO, redirects and indexing diagnostics",DISPOSITION AND DEEP STATE REVIEW PENDING,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S27,"Privacy, retention, backup and recovery evidence",DISPOSITION AND DEEP STATE REVIEW PENDING,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S28,Analytics with scraper work excluded,DISPOSITION AND DEEP STATE REVIEW PENDING,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S29,"Publication, real preview and revision recovery: the first complete workflow",INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S30,"Shared loading, empty, error and unavailable-module states",INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S31,FAQ list and answer editor,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S32,Process-step editor,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S33,Materials and care editor,INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S34,Genuine testimonial list/editor,CONDITIONAL; GENUINE CONTENT REQUIRED,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S35,Project detail and new-project states,CONDITIONAL; GENUINE CONTENT REQUIRED,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S36,Legacy subscribers screen,DISPOSITION AND DEEP STATE REVIEW PENDING,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S37,Internal content lab,DISPOSITION AND DEEP STATE REVIEW PENDING,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S38,Manual research/reference board,DISPOSITION AND DEEP STATE REVIEW PENDING,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S39,Scraper and catalogue-ingestion legacy family — excluded,EXCLUDED; NO SCRAPER WORK,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S40,Supported staff recovery/reset and legacy signup routes,DISPOSITION AND DEEP STATE REVIEW PENDING,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S41,Authorized private reference viewer,DISPOSITION AND DEEP STATE REVIEW PENDING,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S42,"Internal preview, state galleries, demo and environment diagnostics",INITIAL SHARED TREATMENT; FAMILY ACCEPTANCE OPEN,See full master specification and P5B–P5E; do not activate unsupported workflows.
+S43,Inquiry card / printable summary,DISPOSITION AND DEEP STATE REVIEW PENDING,See full master specification and P5B–P5E; do not activate unsupported workflows.

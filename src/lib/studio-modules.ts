@@ -2,19 +2,19 @@
  * Authentication and API permissions remain server-owned.
  */
 export const studioModules = [
- {key:'overview',segment:'',label:'Overview',group:'Workspace',aliases:[],adminOnly:false},
- {key:'inquiries',segment:'inquiries',label:'Inquiries & orders',group:'Workspace',aliases:['orders','kanban','enquiries'],adminOnly:false},
- {key:'follow-ups',segment:'follow-ups',label:'Follow-ups due',group:'Workspace',aliases:[],adminOnly:false},
- {key:'products',segment:'products',label:'Catalogue & forms',group:'Management',aliases:['forms'],adminOnly:false},
- {key:'content',segment:'content',label:'Pages & journal',group:'Management',aliases:['pages','journal'],adminOnly:false},
- {key:'media',segment:'media',label:'Public media',group:'Management',aliases:[],adminOnly:false},
- {key:'site-copy',segment:'site-copy',label:'Site copy',group:'Management',aliases:[],adminOnly:false},
- {key:'site-images',segment:'site-images',label:'Site images',group:'Management',aliases:[],adminOnly:false},
- {key:'content-health',segment:'content-health',label:'Content health',group:'Management',aliases:[],adminOnly:false},
- {key:'site-settings',segment:'navigation',label:'Navigation & languages',group:'Management',aliases:[],adminOnly:true},
- {key:'activity',segment:'activity',label:'Activity & logs',group:'Operations',aliases:[],adminOnly:false},
- {key:'staff',segment:'staff',label:'Staff access',group:'Operations',aliases:[],adminOnly:true},
- {key:'settings',segment:'settings',label:'Atelier settings',group:'Operations',aliases:[],adminOnly:true},
+ {key:'overview',segment:'',label:'Overview',group:'Work',aliases:[],adminOnly:false},
+ {key:'inquiries',segment:'inquiries',label:'Inquiries & orders',group:'Work',aliases:['orders','kanban','enquiries'],adminOnly:false},
+ {key:'follow-ups',segment:'follow-ups',label:'Follow-ups due',group:'Work',aliases:[],adminOnly:false},
+ {key:'products',segment:'products',label:'Catalogue & forms',group:'Catalogue',aliases:['forms'],adminOnly:false},
+ {key:'content',segment:'content',label:'Pages & journal',group:'Website',aliases:['pages','journal'],adminOnly:false},
+ {key:'media',segment:'media',label:'Public media',group:'Media',aliases:[],adminOnly:false},
+ {key:'site-copy',segment:'site-copy',label:'Site copy',group:'Website',aliases:[],adminOnly:false},
+ {key:'site-images',segment:'site-images',label:'Site images',group:'Media',aliases:[],adminOnly:false},
+ {key:'content-health',segment:'content-health',label:'Content health',group:'Website',aliases:[],adminOnly:false},
+ {key:'site-settings',segment:'navigation',label:'Navigation & languages',group:'Administration',aliases:[],adminOnly:true},
+ {key:'activity',segment:'activity',label:'Activity & logs',group:'Administration',aliases:[],adminOnly:false},
+ {key:'staff',segment:'staff',label:'Staff access',group:'Administration',aliases:[],adminOnly:true},
+ {key:'settings',segment:'settings',label:'Atelier settings',group:'Administration',aliases:[],adminOnly:true},
 ] as const;
 export type StudioModule = typeof studioModules[number];
 export type StudioModuleKey = StudioModule['key'];

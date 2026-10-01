@@ -3,6 +3,8 @@ import {useCallback,useEffect,useState,type ReactNode} from 'react';
 import {studioModules,studioModule,studioModuleHref,type StudioModuleKey} from '@/lib/studio-modules';
 import {usePathname} from 'next/navigation';
 import Link from 'next/link';
+import {Dialog} from '@/components/shop/dialog';
+import {studioDestinations} from '@/lib/studio-work-queue';
 import {
   LayoutDashboard,
   Inbox,
@@ -16,7 +18,7 @@ import {
   LogOut,
   ExternalLink,
   AlertCircle,
-  Languages
+  Languages, Menu, Search, PanelLeftClose, PanelLeftOpen
 } from 'lucide-react';
 import dynamic from 'next/dynamic';
 import {logoutAdmin} from '@/app/studio/login/actions';
@@ -36,7 +38,7 @@ const SiteSettingsEditor=dynamic(()=>import('./site-settings-editor').then(m=>m.
 function WorkspaceLoading(){return <p className={s.status} role="status">Opening this workspace page…</p>;}
 
 const moduleIcons = {overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
-const navGroups = ['Workspace','Management','Operations'].map(title=>({title,items:studioModules.filter(module=>module.group===title)}));
+const navGroups = ['Work','Website','Catalogue','Media','Administration'].map(title=>({title,items:studioModules.filter(module=>module.group===title)}));
 type ModuleContext={admin:boolean;staff:StaffMember[];load:()=>Promise<void>};
 const moduleViews = {
  overview:({admin}:ModuleContext)=><Operations view="overview" admin={admin}/>,
@@ -54,6 +56,12 @@ const moduleViews = {
  settings:({admin}:ModuleContext)=><Operations view="settings" admin={admin}/>,
 } satisfies Record<StudioModuleKey,(context:ModuleContext)=>ReactNode>;
 
+// A route change can remount Workspace; retain only the requested focus destination.
+let pendingNavigationFocus:string|null=null;
+function NavigationLinks({admin,view,onNavigate}:{admin:boolean;view?:StudioModuleKey;onNavigate?:(href:string)=>void}){
+ return navGroups.map(group=>{const items=group.items.filter(item=>admin||!item.adminOnly);return items.length?<div key={group.title} className={s.navGroup}><span className={s.navGroupTitle}>{group.title}</span><div className={s.navGroupList}>{items.map(item=>{const Icon=moduleIcons[item.key];return <Link key={item.key} prefetch={false} href={studioModuleHref(item)} className={s.navLink} title={item.label} aria-label={item.label} aria-current={view===item.key?'page':undefined} onClick={e=>{if(e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey)onNavigate?.(studioModuleHref(item));}}><Icon size={18} className={s.navIcon} aria-hidden="true"/><span className={s.navLabel}>{item.label}</span></Link>;})}</div></div>:null;});
+}
+
 export function Workspace(){
  const path=usePathname(),activeModule=studioModule(path.split('/')[2]||''),view=activeModule?.key;
  const [identity,setIdentity]=useState<WorkspaceIdentity|null>(null),[staff,setStaff]=useState<StaffMember[]>([]),[error,setError]=useState(''),[sessionMessage,setSessionMessage]=useState('');
@@ -61,10 +69,16 @@ export function Workspace(){
  useEffect(()=>{let active=true;void studioFetch('/api/studio/workspace').then(data=>{if(active){setIdentity(data.session);setStaff(data.staff);}}).catch(e=>{if(active)setError(e.message);});return()=>{active=false;};},[]);
  useEffect(()=>{const expired=()=>setSessionMessage('Your session expired or access changed. Keep this tab open, renew sign-in, then check access before retrying.');const focus=()=>{void load().catch(()=>setSessionMessage('Access could not be refreshed. Your unsaved editors are retained; retry after renewing sign-in.'));};window.addEventListener('studio-session-expired',expired);window.addEventListener('focus',focus);return()=>{window.removeEventListener('studio-session-expired',expired);window.removeEventListener('focus',focus);};},[load]);
  const admin=identity?.role==='admin';
+ const [mobileNav,setMobileNav]=useState(false),[palette,setPalette]=useState(false),[navigationQuery,setNavigationQuery]=useState(''),[collapsed,setCollapsed]=useState(false);
+ const destinations=studioDestinations(admin,navigationQuery);
+ const navigate=(href:string)=>{pendingNavigationFocus=href;setMobileNav(false);setPalette(false);setNavigationQuery('');if(path===href)requestAnimationFrame(()=>{const heading=document.querySelector<HTMLElement>('#main-content h1');if(heading){heading.tabIndex=-1;heading.focus();pendingNavigationFocus=null;}});};
+ useEffect(()=>{const shortcut=(e:KeyboardEvent)=>{if(identity&&(e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'&&!document.querySelector('dialog[open]')){e.preventDefault();setPalette(true);}};window.addEventListener('keydown',shortcut);return()=>window.removeEventListener('keydown',shortcut);},[identity]);
+ useEffect(()=>{if(pendingNavigationFocus!==path)return;const main=document.getElementById('main-content');if(!main)return;const focus=()=>{const heading=main.querySelector<HTMLElement>('h1');if(!heading)return false;heading.tabIndex=-1;heading.focus();pendingNavigationFocus=null;return true;};if(focus())return;const observer=new MutationObserver(()=>{if(focus())observer.disconnect();});observer.observe(main,{subtree:true,childList:true});return()=>observer.disconnect();},[path]);
 
  return (
-  <div className={s.workspace} onClickCapture={e=>{const a=(e.target as HTMLElement).closest('a');if(a&&a.target!=='_blank'&&a.getAttribute('href')?.startsWith('/studio')&&document.querySelector('[data-unsaved="true"]')&&!window.confirm('Leave this page and discard unsaved edits?')){e.preventDefault();e.stopPropagation();}}}>
+  <div className={s.workspace} data-collapsed={collapsed} onClickCapture={e=>{const a=(e.target as HTMLElement).closest('a');if(a&&a.target!=='_blank'&&a.getAttribute('href')?.startsWith('/studio')&&document.querySelector('[data-unsaved="true"]')&&!window.confirm('Leave this page and discard unsaved edits?')){e.preventDefault();e.stopPropagation();}}}>
     <header className={s.top}>
+      <button type="button" className={s.mobileNavToggle} aria-label="Open Studio navigation" aria-haspopup="dialog" aria-expanded={mobileNav} onClick={()=>setMobileNav(true)}><Menu size={20} aria-hidden="true"/><span>Menu</span></button>
       <div className={s.brandGroup}>
         <Link href="/studio" className={s.brandLink}>
           <strong>RivyaLivingArt</strong>
@@ -73,11 +87,12 @@ export function Workspace(){
         </Link>
         <span className={s.envPill}><span className={s.livePulse} aria-hidden="true" />Atelier Private</span>
       </div>
-      <a href="/" target="_blank" rel="noreferrer" className={s.storefrontLink} title="Open public shop in new tab">
+      <a href="/" target="_blank" rel="noreferrer" className={s.storefrontLink} aria-label="Open public shop in new tab" title="Open public shop in new tab">
         <span>Storefront</span>
         <ExternalLink size={13} aria-hidden="true" />
       </a>
       <div className={s.headerActions}>
+        <button type="button" className={s.commandTrigger} disabled={!identity} onClick={()=>setPalette(true)} aria-haspopup="dialog"><Search size={16} aria-hidden="true"/><span>Find a Studio page</span><kbd>Ctrl K</kbd></button>
         {identity && (
           <div className={s.userBadge}>
             <span className={s.userAvatar}>{(identity.adminId || 'ST').slice(0, 2).toUpperCase()}</span>
@@ -97,39 +112,17 @@ export function Workspace(){
     {sessionMessage&&<aside className={s.panel} role="alert"><p><AlertCircle size={16} style={{display:'inline',verticalAlign:'text-bottom',marginRight:6}} />{sessionMessage}</p><button onClick={()=>void load().catch(e=>setSessionMessage(e.message))}>Check renewed access</button></aside>}
     <div className={s.workspaceLayout}>
       <nav className={s.sideNav} aria-label="Studio navigation">
-        {navGroups.map(group => {
-          const visibleItems = group.items.filter(item => !item.adminOnly || admin);
-          if (!visibleItems.length) return null;
-          return (
-            <div key={group.title} className={s.navGroup}>
-              <span className={s.navGroupTitle}>{group.title}</span>
-              <div className={s.navGroupList}>
-                {visibleItems.map(item => {
-                  const Icon = moduleIcons[item.key];
-                  const isCurrent = view === item.key;
-                  return (
-                    <Link
-                      key={item.key}
-                      prefetch={false}
-                      href={studioModuleHref(item)}
-                      className={s.navLink}
-                      aria-current={isCurrent ? 'page' : undefined}
-                    >
-                      <Icon size={16} className={s.navIcon} aria-hidden="true" />
-                      <span>{item.label}</span>
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-          );
-        })}
+        <button type="button" className={s.collapseNav} onClick={()=>setCollapsed(value=>!value)} aria-expanded={!collapsed} aria-label={collapsed?'Expand Studio sidebar':'Collapse Studio sidebar'}>{collapsed?<PanelLeftOpen size={18} aria-hidden="true"/>:<PanelLeftClose size={18} aria-hidden="true"/>}<span className={s.navLabel}>Collapse sidebar</span></button>
+        <NavigationLinks admin={admin} view={view}/>
       </nav>
       <main id="main-content" tabIndex={-1} className={s.workspaceMain}>
+        <nav className={s.workspaceCrumb} aria-label="Workspace breadcrumb"><Link href="/studio">Studio</Link><span aria-hidden> / </span><span aria-current="page">{activeModule?.label||'Unavailable page'}</span></nav>
         {error?<div className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p className={s.status} role="status">Opening your workspace…</p>:!activeModule?<section className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>:activeModule.adminOnly&&!admin?<p className={s.empty}>Administrator access is required.</p>:<div key={activeModule.key}>{moduleViews[activeModule.key]({admin,staff,load})}</div>}
 
       </main>
     </div>
+    <Dialog open={mobileNav} title="Studio navigation" closeLabel="Close navigation" onClose={()=>setMobileNav(false)}><nav className={s.fullNavigation} aria-label="Mobile Studio pages"><NavigationLinks admin={admin} view={view} onNavigate={navigate}/></nav></Dialog>
+    <Dialog open={palette} title="Find a Studio page" onClose={()=>setPalette(false)}><label className={s.paletteSearch}>Page name<input type="search" data-dialog-autofocus onKeyDown={e=>{if(e.key==='Escape'){e.preventDefault();setPalette(false);}}} value={navigationQuery} onChange={e=>setNavigationQuery(e.target.value)} placeholder="Inquiries, pages, images…" maxLength={80}/></label><p role="status">{destinations.length} permitted {destinations.length===1?'page':'pages'}</p><nav className={s.commandResults} aria-label="Matching Studio pages">{destinations.map(item=><Link key={item.key} prefetch={false} href={item.href} onClick={e=>{if(e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey)navigate(item.href);}}><span>{item.label}</span><small>{item.group}</small></Link>)}</nav>{!destinations.length&&<p>No matching page. Try a different name.</p>}</Dialog>
   </div>
  );
 }

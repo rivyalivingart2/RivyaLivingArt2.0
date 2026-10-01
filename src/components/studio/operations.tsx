@@ -6,6 +6,7 @@ import {RefreshCw, Download} from 'lucide-react';
 import {orderStages,stageLabel} from '@/lib/studio-orders';
 import {studioFetch} from './workspace-api';
 import s from './workspace.module.css';
+import {OverviewPanel} from './overview-panel';
 import {ReferenceCleanup} from './reference-cleanup';
 import {BusinessSettingsEditor} from './business-settings';
 
@@ -25,6 +26,9 @@ type OperationsData={
 };
 
 export function Operations({view,admin}:{view:'overview'|'activity'|'settings';admin:boolean}){
+ return view==='overview'?<OverviewPanel/>:<OperationsPanels view={view} admin={admin}/>;
+}
+function OperationsPanels({view,admin}:{view:'overview'|'activity'|'settings';admin:boolean}){
  const [data,setData]=useState<OperationsData|null>(null),[message,setMessage]=useState(''),[busy,setBusy]=useState(false),[exportFrom,setExportFrom]=useState(''),[exportTo,setExportTo]=useState(''),[exportStage,setExportStage]=useState(''),[exportSource,setExportSource]=useState(''),[managedExports,setManagedExports]=useState<ManagedExport[]>([]);
 
  const loadExports=useCallback(async()=>{

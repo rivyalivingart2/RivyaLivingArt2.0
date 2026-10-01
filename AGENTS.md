@@ -1,3 +1,11 @@
+# Current continuation — P5 in progress; P5A implemented locally
+
+1 October 2026. The owner requested START P-5. Continue P5B inquiry continuity on local `codex/p5-studio-workspace`. Read `docs/redesign/P5-CHECKPOINT.md`, `P5A-IMPLEMENTATION.md` and `P5-REFERENCE-COMPARISON.md`. P5A supplies the shared old-reference Studio shell, accessible navigation/page finder, sign-in presentation and initial scoped inquiry queue. The full P5 tasks and 43-family state coverage remain open; P5B–P5E are next. Earlier P5-not-started statements below are historical.
+
+Keep products, original/gallery associations, contact values, forms, scraper, drafts and history protected. No old-product transfer or scraper work. Everything stays local until the owner explicitly requests push to main; then use a detailed PR. No push, deployment or production publication. P4 T41/T61 performance acceptance remains open. P6–P8 are planned.
+
+---
+
 # Current continuation — P4B–P4E implemented and functionally verified
 
 1 October 2026. The owner requested COMPLETE P4B–P4E. Implementation and isolated functional checks are complete on local `codex/p4-detailed-pages`; **performance acceptance remains open** (T41/T61, local loading above target). Read `docs/redesign/P4-CLOSURE.md`, `P4-CHECKPOINT.md` and `docs/decisions/2026-10-01-p4-completion.md`. Historical P4B–P4E-not-started entries below are superseded. P5–P8 have not started.

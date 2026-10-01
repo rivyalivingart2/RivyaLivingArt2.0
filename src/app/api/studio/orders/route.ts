@@ -3,6 +3,8 @@ import {studioSession} from '@/lib/studio-auth';
 import {studioDb} from '@/lib/studio-db';
 import {isOrderStage,orderStages} from '@/lib/studio-orders';
 import type {NextRequest} from 'next/server';
+import {isStudioTask} from '@/lib/studio-work-queue';
+import {businessDate} from '@/lib/business-time';
 
 export const dynamic = 'force-dynamic';
 const headers = {'Cache-Control': 'private, no-store'};
@@ -33,6 +35,8 @@ export async function GET(request:NextRequest) {
     const stage=request.nextUrl.searchParams.get('stage')||'';
     const assignee=request.nextUrl.searchParams.get('assignee')||'';
     const due=request.nextUrl.searchParams.get('due')==='1';
+    const task=request.nextUrl.searchParams.get('task')||'',today=businessDate();
+    if(task&&!isStudioTask(task))return json({error:'Invalid work queue filter.'},400);
     const source=request.nextUrl.searchParams.get('source')||'';
     const product=request.nextUrl.searchParams.get('product')||'',category=request.nextUrl.searchParams.get('category')||'';
     const from=request.nextUrl.searchParams.get('from')||'',to=request.nextUrl.searchParams.get('to')||'';
@@ -54,6 +58,11 @@ export async function GET(request:NextRequest) {
       AND (NULLIF(${from},'')::date IS NULL OR o.created_at>=(NULLIF(${from},'')::date::timestamp AT TIME ZONE 'Asia/Kolkata'))
       AND (NULLIF(${to},'')::date IS NULL OR o.created_at<((NULLIF(${to},'')::date+1)::timestamp AT TIME ZONE 'Asia/Kolkata'))
       AND (NOT ${due} OR i.follow_up<=(CURRENT_TIMESTAMP AT TIME ZONE 'Asia/Kolkata')::date AND o.status NOT IN ('COMPLETED','CLOSED'))
+      AND (${task}='' OR o.status NOT IN ('COMPLETED','CLOSED') AND (
+        ${task}='today' AND i.follow_up=${today}::date OR
+        ${task}='overdue' AND i.follow_up<${today}::date OR
+        ${task}='unassigned' AND i.id IS NOT NULL AND i.assignee IS NULL OR
+        ${task}='message-failed' AND i.message_state='handoff_failed'))
       ORDER BY o.created_at DESC,o.id LIMIT 51 OFFSET ${(page-1)*50}`;
     return json({orders: orders.slice(0,50), hasMore: orders.length > 50, page});
   } catch { return json({error: 'Orders are temporarily unavailable.'}, 503); }
