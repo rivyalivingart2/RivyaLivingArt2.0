@@ -39,11 +39,11 @@ function WorkspaceLoading(){return <p className={s.status} role="status">Opening
 
 const moduleIcons = {overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
 const navGroups = ['Work','Website','Catalogue','Media','Administration'].map(title=>({title,items:studioModules.filter(module=>module.group===title)}));
-type ModuleContext={admin:boolean;staff:StaffMember[];load:()=>Promise<void>};
+type ModuleContext={staffId?:string|null;admin:boolean;staff:StaffMember[];load:()=>Promise<void>};
 const moduleViews = {
  overview:({admin}:ModuleContext)=><Operations view="overview" admin={admin}/>,
- inquiries:({admin,staff}:ModuleContext)=><InquiryBoard staff={staff} admin={admin} dueOnly={false}/>,
- 'follow-ups':({admin,staff}:ModuleContext)=><InquiryBoard staff={staff} admin={admin} dueOnly/>,
+ inquiries:({admin,staff,staffId}:ModuleContext)=><InquiryBoard staff={staff} admin={admin} staffId={staffId} dueOnly={false}/>,
+ 'follow-ups':({admin,staff,staffId}:ModuleContext)=><InquiryBoard staff={staff} admin={admin} staffId={staffId} dueOnly/>,
  products:({admin}:ModuleContext)=><CatalogueEditor admin={admin}/>,
  content:({admin}:ModuleContext)=><ContentEditor admin={admin}/>,
  media:({admin}:ModuleContext)=><MediaLibrary admin={admin}/>,
@@ -117,7 +117,7 @@ export function Workspace(){
       </nav>
       <main id="main-content" tabIndex={-1} className={s.workspaceMain}>
         <nav className={s.workspaceCrumb} aria-label="Workspace breadcrumb"><Link href="/studio">Studio</Link><span aria-hidden> / </span><span aria-current="page">{activeModule?.label||'Unavailable page'}</span></nav>
-        {error?<div className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p className={s.status} role="status">Opening your workspace…</p>:!activeModule?<section className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>:activeModule.adminOnly&&!admin?<p className={s.empty}>Administrator access is required.</p>:<div key={activeModule.key}>{moduleViews[activeModule.key]({admin,staff,load})}</div>}
+        {error?<div className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p className={s.status} role="status">Opening your workspace…</p>:!activeModule?<section className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>:activeModule.adminOnly&&!admin?<p className={s.empty}>Administrator access is required.</p>:<div key={activeModule.key}>{moduleViews[activeModule.key]({admin,staff,load,staffId:identity.staffId})}</div>}
 
       </main>
     </div>

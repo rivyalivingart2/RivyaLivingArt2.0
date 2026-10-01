@@ -22,7 +22,7 @@ export async function GET(request:Request){
   }
   if(view==='inquiry'){
    const id=url.searchParams.get('id');if(!uuid(id))return json({error:'Invalid reference.'},400);
-   const inquiry=await sql`SELECT i.id,i.reference,i.product_snapshot AS product,i.name,i.phone,i.email,i.answers,i.notes,i.summary,i.assignee,i.follow_up AS "followUp",i.created_at AS "createdAt",o.version,o.status,to_jsonb(i) AS saved_record FROM rivya_inquiries i JOIN rivya_studio_orders o ON o.id=i.id WHERE i.id=${id}::uuid AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)`;
+   const inquiry=await sql`SELECT i.id,i.reference,i.product_snapshot AS product,i.name,i.phone,i.email,i.answers,i.notes,i.summary,i.assignee,i.follow_up::text AS "followUp",i.created_at AS "createdAt",o.version,o.status,to_jsonb(i) AS saved_record FROM rivya_inquiries i JOIN rivya_studio_orders o ON o.id=i.id WHERE i.id=${id}::uuid AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)`;
    if(!inquiry.length){
     if(session.role!=='admin')return json({error:'This inquiry is unavailable to your account.'},404);
     const manual=await sql`SELECT o.id,o.client,o.title,o.status,o.version,o.updated_at AS "updatedAt" FROM rivya_studio_orders o

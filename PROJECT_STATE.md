@@ -1,3 +1,11 @@
+# Current continuation — P5A–P5E complete locally
+
+1 October 2026. The owner requested COMPLETE FULL P5B–P5E. Implementation and isolated acceptance are complete on local `codex/p5-studio-workspace`. Read `docs/redesign/P5-CLOSURE.md`, `P5-CHECKPOINT.md`, `p5-validation.json` and `p5-family-coverage.csv`. All four P5 tasks are closed; the 43-family register explicitly preserves deferred, conditional and excluded boundaries. Earlier P5-in-progress entries below are historical.
+
+Products, forms, originals/gallery associations, canonical contacts, scraper, drafts and history remain protected. No old-product transfer or scraper work. Keep all changes local until an explicit push-main request, then use a detailed PR; no push/deployment/production publication occurred. P4 performance acceptance T41/T61 remains open. P6–P8 are not started. Read the closure limitations before making any broader release/service claim.
+
+---
+
 # Current continuation — P5 in progress; P5A implemented locally
 
 1 October 2026. The owner requested START P-5. Continue P5B inquiry continuity on local `codex/p5-studio-workspace`. Read `docs/redesign/P5-CHECKPOINT.md`, `P5A-IMPLEMENTATION.md` and `P5-REFERENCE-COMPARISON.md`. P5A supplies the shared old-reference Studio shell, accessible navigation/page finder, sign-in presentation and initial scoped inquiry queue. The full P5 tasks and 43-family state coverage remain open; P5B–P5E are next. Earlier P5-not-started statements below are historical.

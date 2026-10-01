@@ -1,5 +1,7 @@
 'use client';
+import {CustomizationFields} from '@/components/shop/customization-fields';
 import {useRecordSwitch,RecordSwitchNotice} from './record-switch';
+import {RecordStatus} from './record-status';
 import {DraftRecovery} from './draft-recovery';
 import {useLinkedRecord,LinkedRecordNotice} from './linked-record';
 import {publicationState,draftState} from '@/lib/content-health';
@@ -14,20 +16,21 @@ import s from './workspace.module.css';
 import {RevisionHistory} from './revision-history';
 import {usePagination, Pagination} from './pagination';
 import {ProductComparison,ProductGalleryEditor} from './product-details';
-import {Plus,Search,RefreshCw,X,ExternalLink} from 'lucide-react';
+import {Plus,RefreshCw,X,ExternalLink} from 'lucide-react';
 
 type Entry={product:ShopProduct;reviewedImages?:{image:string;scene:string|null;gallery:NonNullable<ShopProduct['gallery']>};version:number;publishedVersion:number;visible:boolean;hasDraft:boolean;published:ShopProduct|null};
 
 export function CatalogueEditor({admin}:{admin:boolean}){
- const [loaded,setLoaded]=useState(false);
+ const [editing,setEditing]=useState(false);
+ const [loaded,setLoaded]=useState(false),[publicationFilter,setPublicationFilter]=useState('all');
  const [media,setMedia]=useState<PublicMedia[]>([]),[preview,setPreview]=useState(false),[previewAnswers,setPreviewAnswers]=useState<Record<string,string>>({});
  const [activeTab,setActiveTab]=useState<string>('general');
  const [translationLocale,setTranslationLocale]=useState<Locale>('hi');
  const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[tierFilter,setTierFilter]=useState<'all'|'large'|'memory'|'personal'>('all'),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading catalogue…'),[dirty,setDirty]=useState(false);
- async function load(id?:string){const data=await studioFetch('/api/studio/workspace?view=catalogue');setEntries(data.products);if(id)setEntry(data.products.find((e:Entry)=>e.product.id===id)||null);}
+ async function load(id?:string){const data=await studioFetch('/api/studio/workspace?view=catalogue');setEntries(data.products);setLoaded(true);if(id)setEntry(data.products.find((e:Entry)=>e.product.id===id)||null);}
  useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia;reviewedMedia:PublicMedia})=>e.reviewedMedia||e.media))).catch(()=>setMessage('Approved image choices are temporarily unavailable.'));void studioFetch('/api/studio/workspace?view=catalogue').then(data=>{setEntries(data.products);setLoaded(true);setMessage('Drafts are shared across devices. Only published content appears on the website.');}).catch(e=>setMessage(e.message));},[]);
  useEffect(()=>{const warn=(e:BeforeUnloadEvent)=>{if(dirty){e.preventDefault();e.returnValue='';}};window.addEventListener('beforeunload',warn);return()=>window.removeEventListener('beforeunload',warn);},[dirty]);
- function change(p:Partial<ShopProduct>){setEntry(e=>e?{...e,product:{...e.product,...p}}:null);setDirty(true);}
+ function change(p:Partial<ShopProduct>){if(!editing){setMessage('Protected review: open the existing editing controls only for an authorized catalogue change.');return;}setEntry(e=>e?{...e,product:{...e.product,...p}}:null);setDirty(true);}
  function field(index:number,patch:Partial<CustomField>){if(entry)change({fields:entry.product.fields.map((f,i)=>i===index?{...f,...patch}:f)});}
  const schemaIssues=entry?fieldSchemaIssues(entry.product.fields):[];
  const tabIssues=entry?{
@@ -57,6 +60,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
  }
 
  const filteredEntries = entries.filter(e => {
+  if(publicationFilter!=='all'&&publicationState(e.published,e.visible)!==publicationFilter)return false;
   if (tierFilter !== 'all' && e.product.tier !== tierFilter) return false;
   if (!query) return true;
   return `${e.product.name} ${e.product.category} ${e.product.id}`.toLowerCase().includes(query.toLowerCase());
@@ -66,7 +70,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
  const switching=useRecordSwitch(dirty);
  const linked=useLinkedRecord({editor:'products',records:entries,loaded,selectedId:entry?.product.id,idOf:e=>e.product.id,busy,onSelect:(next,target)=>{
   if(next.product.id===entry?.product.id){setActiveTab(target.tab);return true;}
-  return switching.request(()=>{setEntry(structuredClone(next));setDirty(false);setPreview(false);setPreviewAnswers({});setQuery('');setTierFilter('all');setPage(Math.floor(entries.findIndex(e=>e.product.id===next.product.id)/20)+1);setActiveTab(target.tab);});
+  return switching.request(()=>{setEditing(false);setEntry(structuredClone(next));setDirty(false);setPreview(false);setPreviewAnswers({});setQuery('');setTierFilter('all');setPage(Math.floor(entries.findIndex(e=>e.product.id===next.product.id)/20)+1);setActiveTab(target.tab);});
  }});
 
  return (
@@ -74,7 +78,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
    <div className={s.heading}>
     <div>
      <h1>Pieces &amp; possibilities.</h1>
-     <p>Edit product copy and its own customization form. Publish when it is ready.</p>
+     <p>Review existing product details, forms and publication state.</p>
     </div>
     <button
       disabled={busy||dirty}
@@ -86,7 +90,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
     </button>
    </div>
 
-   <p className={s.status} role="status">{message}</p><LinkedRecordNotice {...linked}/><RecordSwitchNotice control={switching}/>
+   <p className={s.protectedNote}>Protected product records: review without changing existing facts, gallery associations or forms. No old products are imported. Editing controls remain available for a deliberate, separately authorized catalogue change.</p><p className={s.status} role="status">{message}</p><LinkedRecordNotice {...linked}/><RecordSwitchNotice control={switching}/>
 
    {/* Collection Filter Tabs */}
    <div className={s.categoryTabs} role="tablist" aria-label="Filter by collection">
@@ -128,12 +132,12 @@ export function CatalogueEditor({admin}:{admin:boolean}){
     </button>
    </div>
 
-   <div className={s.toolbar}>
+   <div className={s.toolbar}><label>Publication state<select value={publicationFilter} onChange={e=>setPublicationFilter(e.target.value)}>{['all','Published','Hidden','Unpublished'].map(v=><option key={v} value={v}>{v==='all'?'All publication states':v}</option>)}</select></label>
     <button
       type="button"
       disabled={busy||!media.length}
       onClick={()=>switching.request(()=>{
-        setEntry({version:0,publishedVersion:0,published:null,visible:false,hasDraft:true,product:{id:'RLA-'+crypto.randomUUID(),slug:'new-piece-'+crypto.randomUUID().slice(0,8),name:'New piece',subtitle:'',category:'Tables',tier:tierFilter === 'all' ? 'large' : tierFilter,image:media[0].path,story:'',fields:[{id:'brief',label:'Your requirements',type:'text',required:true,maxLength:240}],revision:1}});
+        setEditing(true);setEntry({version:0,publishedVersion:0,published:null,visible:false,hasDraft:true,product:{id:'RLA-'+crypto.randomUUID(),slug:'new-piece-'+crypto.randomUUID().slice(0,8),name:'New piece',subtitle:'',category:'Tables',tier:tierFilter === 'all' ? 'large' : tierFilter,image:'',story:'',fields:[{id:'brief',label:'Your requirements',type:'text',required:true,maxLength:240}],revision:1}});
         setDirty(true);
         setActiveTab('general');
       })}
@@ -172,7 +176,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           aria-pressed={entry?.product.id===e.product.id}
           disabled={busy}
           onClick={()=>{if(e.product.id===entry?.product.id)return;switching.request(()=>{
-            setEntry(structuredClone(e));
+            setEditing(false);setEntry(structuredClone(e));
             setPreviewAnswers({});
             setDirty(false);
             setActiveTab('general');
@@ -203,9 +207,9 @@ export function CatalogueEditor({admin}:{admin:boolean}){
     {entry ? (
       <form data-unsaved={dirty} className={s.editor} onSubmit={e=>{e.preventDefault();void save('draft');}}>
         <fieldset disabled={busy}>
-          <h2>{entry.product.name}</h2><p className={s.help}>{publicationState(entry.published,entry.visible)} · {draftState(entry.product,entry.published,entry.version)}</p>
+          <h2>{entry.product.name}</h2><RecordStatus id={entry.product.id} version={entry.version} publication={publicationState(entry.published,entry.visible)} draft={draftState(entry.product,entry.published,entry.version)} dirty={dirty} busy={busy}/><p className={s.help}>{publicationState(entry.published,entry.visible)} · {draftState(entry.product,entry.published,entry.version)}</p>
           <p className={s.help}>Shared version {entry.version} · Published form {entry.publishedVersion}. Choose from the approved asset collection. Saved product addresses stay stable.</p>
-          <div className={s.actions}>
+          <div className={s.actions}>{!editing&&<button type="button" onClick={()=>setEditing(true)}>Open existing product editing controls</button>}
             <button type="button" onClick={()=>setPreview(v=>!v)}>
               {preview?'Close form preview':'Preview this form'}
             </button>
@@ -239,25 +243,12 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           {preview && (
             <div className={s.panel}>
               <h3>Draft form preview</h3>
-              <p>This preview does not upload files or submit an inquiry.</p>
-              {entry.product.fields.filter(f=>fieldVisible(f,previewAnswers)).map(f=>(
-                <label key={f.id}>
-                  {f.label}{f.required?' *':''}
-                  {f.type==='select'?(
-                    <select value={previewAnswers[f.id]||''} onChange={e=>setPreviewAnswers({...previewAnswers,[f.id]:e.target.value})}>
-                      <option value="">Choose an option</option>
-                      {f.options?.map(o=><option key={o}>{o}</option>)}
-                    </select>
-                  ):(
-                    <input type={f.type==='number'?'number':'text'} value={previewAnswers[f.id]||''} onChange={e=>setPreviewAnswers({...previewAnswers,[f.id]:e.target.value})}/>
-                  )}
-                  <small>{f.hint}</small>
-                </label>
-              ))}
+              <p>These are the same field controls used on the public form, with this draft’s labels, conditions and limits. Preview answers stay in this editor; no files are uploaded and no inquiry is submitted.</p>
+              <CustomizationFields formId="studio-product-preview" fields={entry.product.fields.filter(f=>fieldVisible(f,previewAnswers))} answers={previewAnswers} onChange={(id,value)=>setPreviewAnswers(v=>({...v,[id]:value}))} styles={{fields:s.grid,field:'',fieldError:'',error:s.status,help:s.help}}/>
             </div>
           )}
 
-          {activeTab === 'general' && (
+          <fieldset disabled={!editing}>{activeTab === 'general' && (
           <div id="product-tab-general" role="tabpanel" className={s.grid}>
             <label>Name<input id="products-field-name" value={entry.product.name} maxLength={100} required onChange={e=>change({name:e.target.value})}/></label>
             <label>Subtitle<input id="products-field-subtitle" value={entry.product.subtitle} maxLength={120} required onChange={e=>change({subtitle:e.target.value})}/></label>
@@ -283,7 +274,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           <div id="product-tab-images" role="tabpanel">
           <div className={s.grid}>
             <label>Primary image
-              <select id="products-field-image" value={entry.product.image} onChange={e=>change({image:e.target.value})}>
+              <select id="products-field-image" value={entry.product.image} onChange={e=>change({image:e.target.value})}><option value="">Choose a reviewed product image</option>
                 {media.map(m=><option key={m.path} value={m.path}>{m.alt} · {m.products.join(', ')}</option>)}
               </select>
             </label>
@@ -325,13 +316,13 @@ export function CatalogueEditor({admin}:{admin:boolean}){
            </div>}
           </section>
           )}
-          {activeTab === 'history' && (
+          </fieldset>{activeTab === 'history' && (
           <div id="product-tab-history" role="tabpanel">
-          <RevisionHistory<ShopProduct> key={entry.product.id+':'+entry.version} kind="product" entityKey={entry.product.id} currentVersion={entry.version} onRestore={change}/>
+          <RevisionHistory<ShopProduct> key={entry.product.id+':'+entry.version} kind="product" entityKey={entry.product.id} currentVersion={entry.version} currentDocument={entry.product} onRestore={change}/>
           <ProductComparison draft={entry.product} published={entry.published}/>
           </div>
           )}
-          {activeTab === 'customization' && (
+          <fieldset disabled={!editing}>{activeTab === 'customization' && (
           <section id="product-tab-customization" role="tabpanel" className={s.fields}>
             <h2>Customization fields</h2>
             {hasReviewedCapabilities(entry.product.id)&&(
@@ -410,12 +401,12 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           </section>
           )}
 
-          <div className={s.actions}>
-            <button className={s.primary} disabled={busy}>Save draft</button>
+          </fieldset><div className={s.actions}>
+            <button className={s.primary} disabled={busy||!editing}>Save draft</button>
             {admin&&(
               <>
-                <button type="button" disabled={busy} onClick={()=>void save('publish')}>Publish to website</button>
-                <button type="button" disabled={busy} onClick={()=>void save('hide')}>Hide from website</button>
+                <button type="button" disabled={busy||!editing} onClick={()=>void save('publish')}>Publish to website</button>
+                <button type="button" disabled={busy||!editing} onClick={()=>void save('hide')}>Hide from website</button>
               </>
             )}
             <a href={`/pieces/${entry.product.slug}`} target="_blank" rel="noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>

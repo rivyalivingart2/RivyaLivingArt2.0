@@ -1,11 +1,12 @@
 'use client';
 import {useCallback, useEffect, useRef, useState} from 'react';
+import {businessDate} from '@/lib/business-time';
 import {isOrderStage, orderStages, stageLabel, type OrderStage, type StudioOrder} from '@/lib/studio-orders';
 
-export function OrderKanban({orders, busy, onMove, onOpen}: {
+export function OrderKanban({orders, busy, onMove, onOpen,mobileStage}: {
   orders: StudioOrder[]; busy: boolean;
   onMove: (id: string, stage: OrderStage) => void;
-  onOpen?: (id: string) => void;
+  onOpen?: (id: string) => void; mobileStage?:string;
 }) {
   const [dragged, setDragged] = useState<string | null>(null);
   const [over, setOver] = useState<OrderStage | null>(null);
@@ -14,12 +15,12 @@ export function OrderKanban({orders, busy, onMove, onOpen}: {
     setDragged(null); setOver(null);
   }
   return <div className="order-kanban" aria-label="Order stages">{orderStages.map(stage => <section
-    key={stage} data-order-stage={stage} className={`order-column ${over === stage ? 'order-drop-active' : ''}`}
+    key={stage} data-order-stage={stage} data-mobile-active={!mobileStage||mobileStage===stage} className={`order-column ${over === stage ? 'order-drop-active' : ''}`}
     aria-label={stageLabel(stage)} onDragOver={event => { if (dragged && !busy) { event.preventDefault(); setOver(stage); } }}
     onDrop={event => { event.preventDefault(); if (dragged) finish(dragged, stage); }}>
     <h2>{stageLabel(stage)} <span>{orders.filter(o => o.status === stage).length}</span></h2>
     {orders.filter(o => o.status === stage).map(order => {
-      const isDue = Boolean(order.followUp && new Date(order.followUp.slice(0, 10)).getTime() <= Date.now());
+      const isDue = Boolean(order.followUp && order.followUp.slice(0,10)<=businessDate()&&!(['COMPLETED','CLOSED'].includes(order.status)));
       const refCode = order.reference || (order.id.startsWith('DO') ? order.id : order.id.slice(0, 8));
       return <article key={order.id} className={`order-card ${dragged === order.id ? 'order-dragging' : ''}`}>
         <div className="order-card-top">
@@ -35,7 +36,7 @@ export function OrderKanban({orders, busy, onMove, onOpen}: {
               onPointerCancel={() => { setDragged(null); setOver(null); }}>⠿</button>
           </div>
         </div>
-        {onOpen ? <button type="button" className="order-open" disabled={busy} onClick={() => onOpen(order.id)}>{order.client}</button> : <h3>{order.client}</h3>}
+        {onOpen ? <button type="button" className="order-open" data-inquiry-record={order.id} disabled={busy} onClick={() => onOpen(order.id)}>{order.client}</button> : <h3>{order.client}</h3>}
         <p>{order.title}</p>
         <div className="order-meta-badges">
           <span className="order-source-badge">{order.source === 'manual' ? 'Staff manual' : order.requestKind === 'bespoke' ? 'Bespoke' : 'Piece'}</span>

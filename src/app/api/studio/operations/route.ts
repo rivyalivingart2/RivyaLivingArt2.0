@@ -22,7 +22,7 @@ export async function GET(request:Request){
    return json({exports});
   }
   if(view==='activity'){
-   const events=await sql`SELECT e.id,e.actor,e.from_status,e.to_status,e.reason,e.created_at AS "createdAt",o.client,o.title,i.reference
+   const events=await sql`SELECT e.id,o.id AS "recordId",e.actor,e.from_status,e.to_status,e.reason,e.created_at AS "createdAt",o.client,o.title,i.reference
     FROM rivya_studio_order_events e JOIN rivya_studio_orders o ON o.id=e.order_id LEFT JOIN rivya_inquiries i ON i.id=o.id
     WHERE ${session.role==='admin'} OR i.assignee=${session.staffId}::uuid ORDER BY e.created_at DESC LIMIT 100`;
    const edits=await sql`SELECT actor,action,entity,created_at AS "createdAt" FROM rivya_audit
@@ -32,7 +32,7 @@ export async function GET(request:Request){
   const [stages,followups,recent]=await Promise.all([
    sql`SELECT o.status,count(*)::integer AS count FROM rivya_studio_orders o LEFT JOIN rivya_inquiries i ON i.id=o.id
     WHERE ${session.role==='admin'} OR i.assignee=${session.staffId}::uuid GROUP BY o.status`,
-   sql`SELECT i.id,i.reference,i.name,i.follow_up AS "followUp",o.title,o.status FROM rivya_inquiries i JOIN rivya_studio_orders o ON o.id=i.id
+   sql`SELECT i.id,i.reference,i.name,i.follow_up::text AS "followUp",o.title,o.status FROM rivya_inquiries i JOIN rivya_studio_orders o ON o.id=i.id
     WHERE (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid) AND i.follow_up<=(CURRENT_TIMESTAMP AT TIME ZONE 'Asia/Kolkata')::date AND o.status NOT IN ('COMPLETED','CLOSED') ORDER BY i.follow_up LIMIT 30`,
    sql`SELECT o.id,o.client,o.title,o.status,o.updated_at AS "updatedAt",i.reference FROM rivya_studio_orders o LEFT JOIN rivya_inquiries i ON i.id=o.id
     WHERE ${session.role==='admin'} OR i.assignee=${session.staffId}::uuid ORDER BY o.updated_at DESC LIMIT 10`

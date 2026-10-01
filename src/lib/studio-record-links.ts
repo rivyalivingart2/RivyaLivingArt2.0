@@ -21,3 +21,11 @@ export function studioRecordTarget(editor:RecordEditor,params:Pick<URLSearchPara
  // Field ownership chooses the tab. A tampered tab cannot hide the requested field.
  return {record,field,tab:fields[field]||'content',...(editor==='site-images'?{slot:(params.get('slot')||'').slice(0,240)}:{})};
 }
+
+/** Known audit families only: do not turn arbitrary audit payloads into addresses. */
+export function studioActivityHref(action:string,entity:string){
+ const family=action.split(':')[0];
+ if(['content','catalogue','media'].includes(family)&&entity&&entity.length<=1024&&!/[\u0000-\u001f]/.test(entity))return studioRecordHref(family==='catalogue'?'products':family as 'content'|'media',entity);
+ if(['inquiry','order','orders'].includes(family)&&/^[0-9a-f-]{36}$/i.test(entity))return '/studio/inquiries?record='+encodeURIComponent(entity);
+ return null;
+}

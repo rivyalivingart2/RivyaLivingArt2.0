@@ -1,18 +1,20 @@
-# P5 initial old/new Studio reference comparison
+# P5 authenticated old/new Studio comparison
 
-The source of truth for this adaptation is the supplied old repository, especially `src/app/studio/(dashboard)/layout.tsx` and `src/styles/tokens.css`, together with the P0 reference inventory. The new application remains RivyaLivingArt2.0 with its existing session, schema, publication and inquiry contracts. This is a source-based comparison plus new local screenshots; a fresh side-by-side authenticated old/new review remains P5E.
+1 October 2026. Source inspection of the supplied OLDWEBSITE layout/tokens was supplemented by authenticated, read-only browser inspection of its overview, pages list, privacy editor, customization forms and Site images. The new local Studio was checked with the established QA account. No old-site records were saved or transferred.
 
-| Reference | P5A adaptation | Evidence or boundary |
+| Old reference | Adaptation in RivyaLivingArt2.0 | Evidence / deliberate boundary |
 |---|---|---|
-| Obsidian #080a0e | Workspace and sign-in background | Desktop/mobile/sign-in screenshots |
-| Blue panel #08283a; nested #0f3247 | Task cards, editors, rows and dialogs | Shared scope only; inspect each deeper state in P5C/E |
-| Mineral #f4f1e9; mist #a9b4bc | Operational body/headings and secondary labels | Current font system retained; old display density adapted for readability |
-| Champagne #b89b63 | Active navigation, task attention, keyboard focus | Text and shape accompany state; no colour-only status |
-| Sapphire #164e6b / #1d6389 | Actions and hover feedback | Sign-in and workspace controls |
-| Link #5fafd6; control boundary #6f7680 | Links and field boundaries | Focus/contrast sample calculation is supporting evidence, not a full audit |
-| 256 px sidebar / 80 px rail | Desktop expand/collapse and tablet rail | 13 existing registered destinations, accessible names remain |
-| Mobile navigation / command finder | Native modal, visible close, keyboard wrap, one Escape, destination-heading focus | Existing unsaved-change guard retained |
-| Dashboard organization | Real scoped task counts, due work, recent inquiries, current stages and a Content health destination | Editorial/publication task counters remain open, not fabricated |
-| Login/staff identity | Current ID/password/session provider and existing role labels | No Prisma/Auth.js transplant, signup activation or credential-policy change |
+| Obsidian #080a0e, blue panels #08283a/#0f3247 | Shared shell, tables, fields, tabs, dialogs and supporting reference screen | P5A and P5BE desktop/phone captures |
+| Mineral #f4f1e9, mist #a9b4bc, champagne #b89b63 | Readable operational headings, secondary text, active navigation and focus | Text accompanies status; reduced-motion shared treatment retained |
+| Sapphire actions and outlined fields | Consistent staff, editorial and operational controls | Native controls and 44px touch treatment; no decorative dashboard animation |
+| Grouped sidebar and dense work navigation | 13 registered destinations grouped by work/content/catalogue/media/administration, page finder and phone navigation | Server permission restrictions retained; no unsupported legacy menu activation |
+| Dashboard tables and status panels | Real scoped inquiry/follow-up tasks, bounded recent inquiry/editorial records and on-demand publishing checks | Counts come from saved rows; hidden/closed QA fixtures remain truthfully labelled |
+| Focused old page editor | New record status, section groups, explicit saved preview, publication and recoverable history | Old direct-save-to-live behavior was observed, not transplanted |
+| Old forms and product organization | Protected catalogue review with shared real public-field preview | Existing schemas/products/gallery associations unchanged |
+| Old Site images view | P3 page-slot and crop editor remains inside the same Studio shell | It assigns approved editorial assets without rewriting product galleries |
+| Staff/account organization | Concrete role/account/session change review and read-only canonical business references | Current identity/session provider and permissions retained |
+| Mobile/record states | Cards, one-stage phone board, URL continuity, dirty Back protection, retry/session/conflict recovery and printable brief | 43-family disposition register names conditional/deferred/excluded families |
 
-P5C/D/E must compare record-level forms, board/list/detail return, pending saves, conflict recovery, unavailable states, permission changes and staff operations. The 43-row family register is a disposition list, not evidence that every family is implemented. The excluded scraper family stays excluded; conditional/unsupported legacy modules remain gated.
+Old screenshots: parent workspace `outputs/P5/P5-Old-Editor-Reference.jpg` and `P5-Old-Site-Images-Reference.jpg`. New evidence: `P5BE-Overview-Desktop.jpg`, `P5BE-Inquiry-List-Mobile.jpg`, `P5BE-Inquiry-Board-Mobile.jpg`, `P5BE-Note-Failure-Mobile.jpg`, `P5BE-Expired-Draft-Mobile.jpg`, `P5BE-Staff-Review-Mobile.jpg`, `P5BE-Settings-Mobile.jpg`, and `P5BE-Print-Summary.jpg`.
+
+This is a sampled authenticated visual comparison and scoped workflow verification, not a claim that every old screen was live-tested or transferred. The row-level register and P5 closure explain the exact included behavior. P4 performance, later languages/legacy routes and P7 physical-device/service checks remain separate.
