@@ -1,4 +1,6 @@
 import journal from './reviewed-journal.json';
+import {isCustomPageId,isCustomPageRoute} from './custom-page-identity';
+import {isDiscoveryRoute,detailedPageCandidates} from './detailed-pages';
 import {allowedEditorialPath} from './editorial-media-model';
 import {shopPages,shopFaqs} from './shop-editorial';
 import {isLocale,type Locale} from './site-settings-model';
@@ -7,7 +9,7 @@ import {validEditorialBody,bodyParagraphs,safeEditorialHref,type EditorialBody} 
 import {validUsage,type EditorialUsage,type HomeAction} from './homepage-model';
 import {sharedCopyCandidate,sharedCopyId,validSharedCopy} from './shared-copy-model';
 import type {PageSnapshot} from './page-dependencies';
-export type ContentSection={id:string;heading:string;paragraphs:string[];checklist?:string[];body?:EditorialBody;enabled?:boolean;group?:string;stage?:'customer'|'making';policyHref?:string;sourceNote?:string;image?:EditorialUsage;action?:HomeAction;material?:{appearance:string;limitations:string;care:string;placement:string}};
+export type ContentSection={layout?:'prose'|'split'|'reverse'|'statement';id:string;heading:string;paragraphs:string[];checklist?:string[];body?:EditorialBody;enabled?:boolean;group?:string;stage?:'customer'|'making';policyHref?:string;sourceNote?:string;image?:EditorialUsage;action?:HomeAction;material?:{appearance:string;limitations:string;care:string;placement:string}};
 export type ContentSectionTranslation={heading?:string;paragraphs?:string[];checklist?:string[]};
 export type ContentTranslation={title?:string;eyebrow?:string;description?:string;sections?:Record<string,ContentSectionTranslation>};
 export type ContentDocument={
@@ -15,7 +17,7 @@ export type ContentDocument={
  sections:ContentSection[];headerImage?:EditorialUsage;image?:string;imageAlt?:string;relatedProductIds?:string[];
  translations?:Partial<Record<Locale,ContentTranslation>>;
  homepage?:Homepage;homeSnapshot?:HomeSnapshot;
- pageSnapshot?:PageSnapshot;effectiveDate?:string;
+ pageSnapshot?:PageSnapshot;effectiveDate?:string;featuredArticleIds?:string[];
 };
 export const articleAliases:Record<string,string>={
  'the-space-around-an-object':'a-room-begins-with-a-statement-table',
@@ -26,6 +28,7 @@ const pageEntries=Object.entries(shopPages).filter(([route])=>!['/care','/materi
 export const baselineContent:ContentDocument[]=[
  homeCandidate,
  sharedCopyCandidate,
+ ...detailedPageCandidates,
  ...pageEntries.map(([route,p])=>({id:'page:'+route.slice(1),kind:'page' as const,route,title:p.title,eyebrow:p.eyebrow,description:p.description||p.sections[0][1],...(p.image?{image:p.image,imageAlt:p.imageAlt}:{}),sections:p.sections.map(([heading,text],i)=>({id:'section-'+(i+1),heading,paragraphs:[text]}))})),
  {id:'page:materials-care',kind:'page',route:'/materials-care',title:'Texture, depth and everyday life.',eyebrow:'Materials & care',description:'Explore timber, resin, colour and care questions for your individual piece.',image:'/media/product-hero-026-4x5.webp',imageAlt:'Timber and resin design visualization',sections:[...shopPages['/materials'].sections,...shopPages['/care'].sections].map(([heading,text],i)=>({id:i===0?'materials':i===3?'care':'section-'+i,heading,paragraphs:[text]}))},
  {id:'page:faq',kind:'page',route:'/faq',title:'Your questions, considered.',eyebrow:'Before we begin',description:'Answers about customization, saving an inquiry, private references and the WhatsApp conversation.',sections:shopFaqs.map(([heading,text],i)=>({id:'question-'+i,heading,paragraphs:[text]}))},
@@ -42,8 +45,11 @@ function checkContent(value:unknown,base?:ContentDocument):value is ContentDocum
  else if(d.homepage!==undefined||d.homeSnapshot!==undefined)return false;
  if(!cleanText(d.route,240)||(d.route!=='/'||d.id!==homeId)&&!/^\/(?:[a-z0-9]+(?:-[a-z0-9]+)*)(?:\/[a-z0-9]+(?:-[a-z0-9]+)*)?$/.test(d.route))return false;
  if(d.kind==='article'&&(!/^\/journal\/[a-z0-9]+(?:-[a-z0-9]+)*$/.test(d.route)||Object.hasOwn(articleAliases,d.route.slice('/journal/'.length))))return false;
- if(!base&&(d.kind!=='article'||!/^article:[0-9a-f-]{36}$/.test(d.id)))return false;
+ if(isCustomPageId(d.id)&&(d.kind!=='page'||!isCustomPageRoute(d.route)))return false;
+ if(!base&&!(d.kind==='article'&&/^article:[0-9a-f-]{36}$/.test(d.id))&&!isCustomPageId(d.id))return false;
  if(d.id===sharedCopyId&&!validSharedCopy(d))return false;
+ if(isDiscoveryRoute(d.route)&&!d.sections.some(s=>s.id==='browse'&&s.enabled!==false))return false;
+ if(d.featuredArticleIds!==undefined&&(!Array.isArray(d.featuredArticleIds)||d.route!=='/journal'||d.featuredArticleIds.length>3||new Set(d.featuredArticleIds).size!==d.featuredArticleIds.length||d.featuredArticleIds.some(id=>!cleanText(id,100))))return false;
  if(d.effectiveDate!==undefined&&(!/^\d{4}-\d{2}-\d{2}$/.test(d.effectiveDate)||!Number.isFinite(Date.parse(d.effectiveDate))||new Date(d.effectiveDate).toISOString().slice(0,10)!==d.effectiveDate))return false;
  if(d.image&&!allowedEditorialPath(d.image))return false;
  if(d.headerImage&&!validUsage(d.headerImage))return false;
@@ -71,6 +77,7 @@ function checkContent(value:unknown,base?:ContentDocument):value is ContentDocum
   if(!s||!/^[-a-z0-9]{1,80}$/.test(s.id)||ids.has(s.id)||!cleanText(s.heading,150)||!Array.isArray(s.paragraphs)||s.paragraphs.length>12||s.paragraphs.some(p=>!cleanText(p,2500)))return false;
   if(s.checklist&&(!Array.isArray(s.checklist)||s.checklist.length>20||s.checklist.some(p=>!cleanText(p,500))))return false;
   if(s.body&&(!validEditorialBody(s.body)||JSON.stringify(bodyParagraphs(s.body))!==JSON.stringify(s.paragraphs)))return false;
+  if(s.layout!==undefined&&!['prose','split','reverse','statement'].includes(s.layout))return false;
   if(s.enabled!==undefined&&typeof s.enabled!=='boolean')return false;
   if(s.group!==undefined&&!cleanText(s.group,80,false))return false;
   if(s.sourceNote!==undefined&&!cleanText(s.sourceNote,500,false))return false;

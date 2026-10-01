@@ -8,7 +8,7 @@ import {homeActions,homeProductIds,type HomeSnapshot,type HomeProduct,type HomeA
 
 export type DependencyRow={key:string;document:unknown;version:number;fingerprint:string};
 export type DependencySource={products:DependencyRow[];content:DependencyRow[];media:DependencyRow[]};
-const publicRoutes=new Set(['/','/collectible-design','/memory-art','/personal-art','/search','/commission','/preserve','/personalize','/commission/customize','/journal']);
+const publicRoutes=new Set(['/','/collectible-design','/memory-art','/personal-art','/search','/commission','/preserve','/personalize','/commission/customize','/journal','/saved-pieces']);
 /** A single SQL snapshot feeds this pure compiler. Never copy a draft or arbitrary stored keys. */
 export function compileHomepageSnapshot(document:ContentDocument,source:DependencySource):HomeSnapshot{
  const home=document.homepage!;
@@ -20,7 +20,7 @@ export function compileHomepageSnapshot(document:ContentDocument,source:Dependen
   if(!validProduct(p,baselineProducts.find(b=>b.id===row.key))||p.id!==row.key)continue;
   const image=images.get(p.image);if(!image?.products.includes(p.id))continue;
   const scene=p.scene?images.get(p.scene):undefined;
-  products.push({id:p.id,slug:p.slug,name:p.name,subtitle:p.subtitle,category:p.category,tier:p.tier,material:p.material,image:image.path,imageAlt:image.alt,imagePosition:`${image.focalX}% ${image.focalY}%`,revision:Number(row.version),...(p.price?{price:p.price}:{}),...(scene?.products.includes(p.id)?{scene:scene.path,sceneAlt:scene.alt,scenePosition:`${scene.focalX}% ${scene.focalY}%`}:{})});
+  products.push({id:p.id,slug:p.slug,name:p.name,subtitle:p.subtitle,category:p.category,tier:p.tier,material:p.material,image:image.path,imageAlt:image.alt,imagePosition:`${image.focalX}% ${image.focalY}%`,revision:Number(row.version),...(scene?.products.includes(p.id)?{scene:scene.path,sceneAlt:scene.alt,scenePosition:`${scene.focalX}% ${scene.focalY}%`}:{})});
  }
  const pages=source.content.flatMap(row=>{const d=row.document as ContentDocument;return d?.id===row.key&&d.id!==sharedCopyId&&validContent(d,baselineContent.find(b=>b.id===row.key))?[d]:[];});
  const dependencies:HomeDependency[]=[],issues:string[]=[],mediaPaths=new Set<string>(),unavailableActionHrefs=new Set<string>();

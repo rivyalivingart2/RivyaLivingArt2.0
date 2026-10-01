@@ -32,6 +32,6 @@ export function ProductStructuredData({product:p}:{product:ShopProduct}){
   {'@type':'Product','@id':url,url,name:p.name,description:p.story,sku:p.id,category:p.category,mainEntityOfPage:url,image:[...new Set([p.image,p.scene,...(p.gallery||[]).map(g=>g.src)].filter((src):src is string=>!!src))].map(src=>siteOrigin+src),brand:{'@type':'Brand',name:'RivyaLivingArt'}}
  ]}}/>;
 }
-export function CollectionStructuredData({title,description,url,products}:{title:string;description:string;url:string;products:ShopProduct[]}){
+export function CollectionStructuredData({title,description,url,products}:{title:string;description:string;url:string;products:Pick<ShopProduct,'slug'|'name'>[]}){
  return <StructuredData value={{'@context':'https://schema.org','@type':'CollectionPage','@id':siteOrigin+url,url:siteOrigin+url,name:title,description,mainEntity:{'@type':'ItemList',numberOfItems:products.length,itemListElement:products.map((p,index)=>({'@type':'ListItem',position:index+1,url:siteOrigin+'/pieces/'+p.slug,name:p.name}))}}}/>;
 }

@@ -13,7 +13,7 @@ export type PublishedContentDocument=ContentDocument&{imagePosition?:string;publ
 export const publishedContent=cache(async(locale:Locale='en'):Promise<PublishedContentDocument[]>=>{
  const sql=studioDb();
  const [rows,images,dependencies]=await Promise.all([
-  sql`SELECT content_key,kind,route,published,published_version FROM rivya_content WHERE visible=true AND published IS NOT NULL ORDER BY content_key`,
+  sql`SELECT content_key,kind,route,published-'pageSnapshot' AS published,published_version FROM rivya_content WHERE visible=true AND published IS NOT NULL ORDER BY content_key`,
   publishedMedia(),homepageDependencies()
  ]);
  const routes=new Set<string>(),documents:PublishedContentDocument[]=[];
@@ -23,8 +23,9 @@ export const publishedContent=cache(async(locale:Locale='en'):Promise<PublishedC
   const coverPath=d.headerImage?.path||d.image;const image=coverPath?images.get(coverPath):undefined;
   // Only public fields leave the persistence layer. Drafts and extra stored keys never do.
   const publicDocument:PublishedContentDocument={id:d.id,kind:d.kind,route:d.route,title:d.title,eyebrow:d.eyebrow,description:d.description,publishedRevision:version,
-   sections:d.sections.map(b=>({id:b.id,heading:b.heading,paragraphs:[...b.paragraphs],checklist:b.checklist,body:b.body,enabled:b.enabled,group:b.group,stage:b.stage,policyHref:b.policyHref,image:b.image,action:b.action,material:b.material})),
+   sections:d.sections.map(b=>({id:b.id,heading:b.heading,paragraphs:[...b.paragraphs],checklist:b.checklist,body:b.body,enabled:b.enabled,group:b.group,stage:b.stage,layout:b.layout,policyHref:b.policyHref,image:b.image,action:b.action,material:b.material})),
    ...(d.headerImage?{headerImage:d.headerImage}:{}),
+   ...(d.featuredArticleIds?{featuredArticleIds:[...d.featuredArticleIds]}:{}),
    ...(d.effectiveDate?{effectiveDate:d.effectiveDate}:{}),
    ...(!d.homepage?{pageSnapshot:compilePageSnapshot(d,dependencies)}:{}),
    ...(image?{image:image.path,imageAlt:d.headerImage?.alt||d.imageAlt||image.alt,imagePosition:image.focalX+'% '+image.focalY+'%'}:{}),

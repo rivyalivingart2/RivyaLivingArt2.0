@@ -1,3 +1,11 @@
+# Current continuation — P4B–P4E implemented and functionally verified
+
+1 October 2026. The owner requested COMPLETE P4B–P4E. Implementation and isolated functional checks are complete on local `codex/p4-detailed-pages`; **performance acceptance remains open** (T41/T61, local loading above target). Read `docs/redesign/P4-CLOSURE.md`, `P4-CHECKPOINT.md` and `docs/decisions/2026-10-01-p4-completion.md`. Historical P4B–P4E-not-started entries below are superseded. P5–P8 have not started.
+
+Preserve products, original/gallery associations, contacts, scraper and history; no product transfer or scraper work. Use the supplied Drive folder and current destination drafts for any later authorized release. Keep everything local until the owner explicitly requests push to main; then use a feature branch and detailed PR. No push, PR, deployment or production content publication occurred. Functional QA is not a performance or production-release certificate.
+
+---
+
 # Current continuation — P4A implemented; P4 in progress
 
 1 October 2026. The owner requested START P-4. P4A shared navigation and detailed homepage implementation have isolated QA evidence. Continue P4B–P4E on local `codex/p4-detailed-pages`; do not treat the whole phase as complete. Read `docs/redesign/P4-CHECKPOINT.md`, `docs/redesign/P4-HOME-SECTION-DISPOSITION.md` and `docs/decisions/2026-10-01-p4-start.md`. P0–P3 closure remains valid. Historical P4-not-started entries below are superseded.

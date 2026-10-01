@@ -1,6 +1,6 @@
 import type {NavigationSettings} from './site-settings-model';
 export type PublicDestination={route:string;anchors:string[]};
-const structural=new Set(['/','/collectible-design','/memory-art','/personal-art','/search','/commission','/commission/customize','/journal','/portfolio','/preserve','/personalize']);
+const structural=new Set(['/','/collectible-design','/memory-art','/personal-art','/search','/commission','/commission/customize','/journal','/portfolio','/saved-pieces','/preserve','/personalize']);
 const aliases:Record<string,string>={'/materials':'/materials-care','/care':'/materials-care'};
 /** Visibility is derived from current publication, without rewriting the owner's navigation settings. */
 export function destinationAvailable(href:string,documents:PublicDestination[],productRoutes:string[]){
