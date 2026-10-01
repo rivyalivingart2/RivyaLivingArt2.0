@@ -1,6 +1,6 @@
 # Studio media thumbnail layout correction
 
-1 October 2026. Local fix on `codex/fix-studio-media-thumbnails`, based on main `37f164486440e13a14188e3c350b6dbe967ac59c`. The owner's screenshot showed overlapping product thumbnails at `/studio/media`. No push or deployment is authorized by this fix request; the owner's local-first, detailed-PR publication rule remains in force.
+1 October 2026. Fix on `codex/fix-studio-media-thumbnails`, based on main `37f164486440e13a14188e3c350b6dbe967ac59c`. The owner's screenshot showed overlapping product thumbnails at `/studio/media`. After local verification, the owner explicitly requested publishing all updated files to main through a detailed PR. Push this branch and merge through the PR after checks; no direct main push or manual deployment. The existing Git deployment integration is unchanged. Future work stays local until a new publication instruction.
 
 The issue was reproduced in the compiled application against the established isolated QA resources. All 131 product-media buttons collapsed to 44px grid rows even though each image was 130px high, causing images and captions to escape their cards. The shared scrollable grid now uses `grid-auto-rows: max-content`, `align-content: start` and `align-self: start`. Both product and editorial lists use this rule; the existing image framing, responsive columns and scroll-height limit are retained.
 
