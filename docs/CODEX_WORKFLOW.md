@@ -1,3 +1,59 @@
+# Current owner instruction — publish all P3–P5 updates through a detailed PR
+
+1 October 2026. The owner explicitly requested all updated files in main through a PR containing full change details. Push `codex/p5-studio-workspace`, create the detailed PR, verify current checks and merge through the PR. Do not push directly to main or bypass required checks/reviews. This authorizes publication of the accumulated P3/P4/P5 source; later work stays local until a new instruction. Read `docs/decisions/2026-10-01-publish-p3-p5-main.md`, `docs/redesign/P3-P5-MAIN-SUMMARY.md` and the changed-file register. Earlier local-only statements below are historical for this delivery.
+
+Preserve protected products/forms/galleries/originals/contacts/scraper/drafts/history; no product transfer or scraper work. Existing Git deployment triggers are unchanged. Do not manually deploy/promote, change environment settings or publish QA content to production. P4 T41/T61 performance acceptance remains open; P6–P8 are not started. Record the final PR URL and verified main commit in the local publication receipt and final response.
+
+---
+
+# Current continuation — P5A–P5E complete locally
+
+1 October 2026. The owner requested COMPLETE FULL P5B–P5E. Implementation and isolated acceptance are complete on local `codex/p5-studio-workspace`. Read `docs/redesign/P5-CLOSURE.md`, `P5-CHECKPOINT.md`, `p5-validation.json` and `p5-family-coverage.csv`. All four P5 tasks are closed; the 43-family register explicitly preserves deferred, conditional and excluded boundaries. Earlier P5-in-progress entries below are historical.
+
+Products, forms, originals/gallery associations, canonical contacts, scraper, drafts and history remain protected. No old-product transfer or scraper work. Keep all changes local until an explicit push-main request, then use a detailed PR; no push/deployment/production publication occurred. P4 performance acceptance T41/T61 remains open. P6–P8 are not started. Read the closure limitations before making any broader release/service claim.
+
+---
+
+# Current continuation — P5 in progress; P5A implemented locally
+
+1 October 2026. The owner requested START P-5. Continue P5B inquiry continuity on local `codex/p5-studio-workspace`. Read `docs/redesign/P5-CHECKPOINT.md`, `P5A-IMPLEMENTATION.md` and `P5-REFERENCE-COMPARISON.md`. P5A supplies the shared old-reference Studio shell, accessible navigation/page finder, sign-in presentation and initial scoped inquiry queue. The full P5 tasks and 43-family state coverage remain open; P5B–P5E are next. Earlier P5-not-started statements below are historical.
+
+Keep products, original/gallery associations, contact values, forms, scraper, drafts and history protected. No old-product transfer or scraper work. Everything stays local until the owner explicitly requests push to main; then use a detailed PR. No push, deployment or production publication. P4 T41/T61 performance acceptance remains open. P6–P8 are planned.
+
+---
+
+# Current continuation — P4B–P4E implemented and functionally verified
+
+1 October 2026. The owner requested COMPLETE P4B–P4E. Implementation and isolated functional checks are complete on local `codex/p4-detailed-pages`; **performance acceptance remains open** (T41/T61, local loading above target). Read `docs/redesign/P4-CLOSURE.md`, `P4-CHECKPOINT.md` and `docs/decisions/2026-10-01-p4-completion.md`. Historical P4B–P4E-not-started entries below are superseded. P5–P8 have not started.
+
+Preserve products, original/gallery associations, contacts, scraper and history; no product transfer or scraper work. Use the supplied Drive folder and current destination drafts for any later authorized release. Keep everything local until the owner explicitly requests push to main; then use a feature branch and detailed PR. No push, PR, deployment or production content publication occurred. Functional QA is not a performance or production-release certificate.
+
+---
+
+# Current continuation — P4A implemented; P4 in progress
+
+1 October 2026. The owner requested START P-4. P4A shared navigation and detailed homepage implementation have isolated QA evidence. Continue P4B–P4E on local `codex/p4-detailed-pages`; do not treat the whole phase as complete. Read `docs/redesign/P4-CHECKPOINT.md`, `docs/redesign/P4-HOME-SECTION-DISPOSITION.md` and `docs/decisions/2026-10-01-p4-start.md`. P0–P3 closure remains valid. Historical P4-not-started entries below are superseded.
+
+Preserve products, original/gallery associations, contacts, scraper and history; no product transfer or scraper work. Use the supplied Drive folder. Everything stays local until an explicit push-to-main instruction; then use a feature branch and a detailed PR, with no direct main push. No deployment or production content publication occurred. Homepage QA revision 32 and process revision 14 are isolated values, not production versions. P5 has not started.
+
+---
+
+# Current continuation — P0 through P3 complete in isolated QA
+
+1 October 2026. Full P3 (T11, T15, T19, T60) implementation and isolated acceptance are complete. Read `docs/redesign/P3-CLOSURE.md` and `docs/decisions/2026-10-01-p3-completion.md`. The local branch is `codex/p3-editorial-images`; no P3 push, PR, deployment or production publication occurred. P4 has not started. Historical pending P3 entries below are superseded by this closure.
+
+Preserve products, original/gallery associations, approved contacts, scraper and revision history; no old-product transfer. Use the supplied Drive folder. Keep all work local until the owner explicitly says push to main, then use a feature branch and detailed PR with complete changes, affected areas, validation, protection, limitations and recovery; merge through the PR after checks. No direct main push.
+
+---
+
+# Current owner rule — local work; detailed PR when pushing main
+
+1 October 2026. All development stays local unless the owner explicitly says to push to main. On that instruction, push a feature branch and open a pull request to main with the complete change description, affected areas, verification, protected-data checks, limitations and recovery notes. Merge through that PR after required checks. Do not push directly to main, silently push working branches, deploy, or publish production content. Local commits are allowed. The owner's previous direct push is historical, not the rule for future work.
+
+The owner has now authorized starting P3 from main `8990e73` on local `codex/p3-editorial-images`. Use images from https://drive.google.com/drive/folders/1P2HCTmPge6HsEwtoo-xGEzPTSn68oZOW. Read `docs/redesign/P3-CHECKPOINT.md`. Keep existing products, contact values, galleries and scraper protected; no old-product transfer. P3 is in progress, not complete.
+
+---
+
 # Current continuation — P0/P1 complete in QA; P2 in progress
 
 1 October 2026. Read `docs/decisions/2026-10-01-p0-p1-closure-p2-continuation.md` and `docs/redesign/P1-CLOSURE.md`. The owner requested P0/P1 completion before P2. All phase implementation/isolated checks are closed; production and unsupplied legal/business facts remain the later release gate. Continue P2 on `codex/p2-homepage-workflow`, preserving existing products, media, contacts and scraper. No old-product transfer or production release. Historical pending statements below are superseded where the closure report supplies new evidence.

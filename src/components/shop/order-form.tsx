@@ -1,4 +1,5 @@
 'use client';
+import {CustomizationFields} from './customization-fields';
 import {useEffect,useRef,useState} from 'react';
 import {useRouter,useSearchParams} from 'next/navigation';
 import Link from 'next/link';
@@ -11,6 +12,8 @@ import {contactIssues,type BriefContact} from '@/lib/brief-validation';
 import {placeInquiry} from '@/app/actions/inquiry';
 import {readDraft,rememberDraft,forgetDraft,type Reference} from './order-draft';
 import s from './shop.module.css';
+import p from './detailed-pages.module.css';
+import {formatPrice,formErrorTarget} from '@/lib/product-presentation';
 const steps=['Your piece','Your details & references','Review'];
 type Props={product:ShopProduct;definition?:never}|{definition:InquiryDefinition;product?:never};
 export function OrderForm(props:Props){
@@ -47,7 +50,7 @@ export function OrderForm(props:Props){
   window.addEventListener('beforeunload',warn);document.addEventListener('click',leave,true);
   return()=>{window.removeEventListener('beforeunload',warn);document.removeEventListener('click',leave,true);};
  },[dirty]);
- useEffect(()=>{const active=requests.current;return()=>{uploadEpoch.current++;for(const xhr of active)xhr.abort();};},[]);
+ useEffect(()=>{const active=requests.current,epoch=uploadEpoch;return()=>{epoch.current++;for(const xhr of active)xhr.abort();};},[]);
  const go=(n:number)=>{setStep(n);requestAnimationFrame(()=>heading.current?.focus());};
  const updateRef=(id:string,patch:Partial<Reference>)=>setRefs(v=>v.map(r=>r.localId===id?{...r,...patch}:r));
  function upload(reference:Reference){
@@ -86,10 +89,7 @@ export function OrderForm(props:Props){
  function getFirstErrorElementId(errs:Record<string,string>,currentStep:number){
   const firstId=Object.keys(errs)[0];
   if(!firstId)return null;
-  if(currentStep===0)return 'answer-'+firstId;
-  if(firstId==='consent')return 'contact-consent';
-  if(firstId==='references')return 'reference-files';
-  return 'contact-'+firstId;
+  return formErrorTarget(firstId,currentStep===0);
  }
  function next(){
   const issues=step===0?validateAnswers(definition.fields,answers):contactErrors();
@@ -136,20 +136,18 @@ export function OrderForm(props:Props){
   }catch{notify('We could not confirm the save. Editing is paused so retry sends the exact same brief. Your details are still here.',true);}finally{lock.current=false;setBusy(false);}
  }
  return <div className={s.formLayout}>
- <aside className={s.formAside}>{definition.product&&<div className={s.detailVisual}><Image src={definition.product.image} alt={definition.product.imageAlt||definition.title+' design visualization'} fill sizes="(max-width:780px) 100px, 340px"/></div>}<h2>{definition.title}</h2><p>{definition.subtitle}<br/>Price on request</p><p>Final design, quotation and delivery are agreed with the atelier.</p><p className={s.help}>Your unsaved brief is kept only in this tab’s temporary memory. Copy it before closing or reloading.</p><button type="button" className={s.textLink} onClick={()=>void copyBrief()}>Copy my unsaved brief</button></aside>
+ <aside className={s.formAside}>{definition.product&&<div className={s.detailVisual}><Image src={definition.product.image} alt={definition.product.imageAlt||definition.title+' design visualization'} fill sizes="(max-width:780px) 100px, 340px"/></div>}<h2>{definition.title}</h2><p>{definition.subtitle}<br/>{definition.product?.tier==='personal'?formatPrice(definition.product.price):'Price on request'}</p><p>Final design, quotation and delivery are agreed with the atelier.</p><p className={s.help}>Your unsaved brief is kept only in this tab’s temporary memory. Copy it before closing or reloading.</p><button type="button" className={s.textLink} onClick={()=>void copyBrief()}>Copy my unsaved brief</button></aside>
  <form className={s.form} noValidate aria-busy={busy} onSubmit={e=>{e.preventDefault();if(step<2)next();else void submit();}}>
  <noscript><p role="status">JavaScript is needed to prepare a secure request. You can use the contact page to reach the atelier.</p></noscript>
  <div className={s.hidden} aria-hidden="true"><label>Leave this field empty<input ref={honeypot} name="website" autoComplete="off" tabIndex={-1}/></label></div>
  {!ready&&<p className={s.serviceNotice} role="status">{reconnecting?'Preparing secure order saving…':'Saving is currently unavailable. You can prepare and copy your brief here. Nothing has been submitted.'}</p>}
  <ol className={s.stepper}>{steps.map((label,n)=><li key={label} aria-current={step===n?'step':undefined}><span>0{n+1}</span>{label}</li>)}</ol>
  <div className={s.mobileStepper} aria-hidden="true"><div className={s.mobileStepHeader}><span className={s.mobileStepCounter}>Step 0{step+1} of 0{steps.length}</span><span className={s.mobileStepName}>{steps[step]}</span></div><div className={s.mobileStepBar}><div className={s.mobileStepProgress} style={{width:`${((step+1)/steps.length)*100}%`}}/></div></div>
- <h2 ref={heading} tabIndex={-1}>{steps[step]}</h2><p className={s.help}>Fields marked * are required. Ask for help where you are unsure; preferences are requests for review.</p>
+ <h2 ref={heading} tabIndex={-1}>{steps[step]}</h2><p className={p.stepContext}>{['Start with what you know. Use the available choices; the atelier will review feasibility with you.','Add contact details and optional private references. Check spelling and your phone number before continuing.','Review each answer before saving. Saving records your brief; you choose whether to send the prepared message.'][step]}</p><p className={s.help}>Fields marked * are required. Ask for help where you are unsure; preferences are requests for review.</p>
  {replacement&&<section className={s.serviceNotice} aria-label="Updated customization form"><h3>The form has changed.</h3><p>Your current answers and references are retained. Apply version {replacement.schemaVersion}, then review the changes. Answers that cannot carry forward will remain visible for you to copy or reconcile.</p><button type="button" className={s.button} disabled={editingLocked||transferring} onClick={applySchema}>Review current options</button></section>}
  {!!review.length&&<section className={s.serviceNotice}><h3>Previous answers to reconcile</h3><pre className={s.receiptSummary}>{review.join('\n')}</pre><p>Copy any useful details into the new fields or notes before continuing.</p><button type="button" disabled={editingLocked} onClick={()=>setReview([])}>I have reconciled these answers</button></section>}
- {!!Object.keys(errors).length&&<div role="alert" aria-live="assertive" className={s.errorSummary}><p>Please check:</p><ul>{Object.entries(errors).map(([id,error])=><li key={id}><a href={'#'+(definition.fields.some(f=>f.id===id)?'answer-':'contact-')+id} onClick={e=>{e.preventDefault();const n=definition.fields.some(f=>f.id===id)?0:1;setStep(n);requestAnimationFrame(()=>document.getElementById((n===0?'answer-':'contact-')+id)?.focus());}}>{error}</a></li>)}</ul></div>}
- {step===0&&<fieldset disabled={editingLocked}><legend className={s.hidden}>Your preferences</legend><div className={s.fields}>{visibleFields.map((f, i)=><label className={s.field+(errors[f.id]?' '+s.fieldError:'')} key={f.id} htmlFor={'answer-'+f.id}>{f.label}{f.required?' *':''}
- {f.type==='select'?<select id={'answer-'+f.id} required={f.required} value={answers[f.id]||''} autoFocus={i===0} onChange={e=>setAnswers(v=>({...v,[f.id]:e.target.value}))} aria-invalid={!!errors[f.id]} aria-describedby={'help-'+f.id}><option value="">Choose a direction</option>{f.options?.map(o=><option key={o}>{o}</option>)}</select>:<input id={'answer-'+f.id} required={f.required} type={f.type==='number'?'number':'text'} inputMode={f.type==='number'?'numeric':undefined} min={f.type==='number'?f.min??1:undefined} max={f.type==='number'?f.max??500:undefined} step={f.type==='number'?1:undefined} maxLength={f.maxLength??240} value={answers[f.id]||''} autoFocus={i===0} onChange={e=>setAnswers(v=>({...v,[f.id]:e.target.value}))} aria-invalid={!!errors[f.id]} aria-describedby={'help-'+f.id}/>}
- <span id={'help-'+f.id} role={errors[f.id]?'alert':undefined} className={errors[f.id]?s.error:s.help}>{errors[f.id]||f.hint}</span></label>)}</div></fieldset>}
+ {!!Object.keys(errors).length&&<div role="alert" aria-live="assertive" className={s.errorSummary}><p>Please check:</p><ul>{Object.entries(errors).map(([id,error])=><li key={id}><a href={'#'+formErrorTarget(id,definition.fields.some(f=>f.id===id))} onClick={e=>{e.preventDefault();const n=definition.fields.some(f=>f.id===id)?0:1;setStep(n);requestAnimationFrame(()=>document.getElementById(formErrorTarget(id,n===0))?.focus());}}>{error}</a></li>)}</ul></div>}
+ {step===0&&<fieldset disabled={editingLocked}><legend className={s.hidden}>Your preferences</legend><CustomizationFields fields={visibleFields} answers={answers} errors={errors} autoFocus onChange={(id,value)=>setAnswers(v=>({...v,[id]:value}))}/></fieldset>}
  {step===1&&<fieldset disabled={editingLocked}><legend className={s.hidden}>Contact and private references</legend><div className={s.fields}>
  {([{id:'name',label:'Your name *',type:'text',auto:'name',max:100},{id:'phone',label:'Phone number *',type:'tel',auto:'tel',max:20},{id:'email',label:'Email (optional)',type:'email',auto:'email',max:180}] as const).map((f, i)=><label className={s.field+(errors[f.id]?' '+s.fieldError:'')} key={f.id} htmlFor={'contact-'+f.id}>{f.label}<input id={'contact-'+f.id} type={f.type} required={f.id!=='email'} autoComplete={f.auto} maxLength={f.max} value={contact[f.id]} autoFocus={i===0} onChange={e=>setContact(v=>({...v,[f.id]:e.target.value}))} aria-invalid={!!errors[f.id]} aria-describedby={errors[f.id]?'error-'+f.id:undefined}/><span id={'error-'+f.id} role={errors[f.id]?'alert':undefined} className={s.error}>{errors[f.id]}</span></label>)}
  <label className={s.field+' '+s.wide+(errors.notes?' '+s.fieldError:'')} htmlFor="contact-notes">Notes (optional)<textarea id="contact-notes" aria-invalid={!!errors.notes} aria-describedby={errors.notes?'error-notes':undefined} rows={4} maxLength={1200} value={contact.notes} onChange={e=>setContact(v=>({...v,notes:e.target.value}))}/><span id="error-notes" role={errors.notes?'alert':undefined} className={s.error}>{errors.notes}</span></label>

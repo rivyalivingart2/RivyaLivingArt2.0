@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   images: {
-    localPatterns: [{pathname:'/media/**',search:''},{pathname:'/brand/**',search:''}],
+    localPatterns: [{pathname:'/editorial/**',search:''},{pathname:'/media/**',search:''},{pathname:'/brand/**',search:''}],
     deviceSizes: [360,640,828,1080,1440,1920],
     imageSizes: [32,64,96,160,256],
     qualities: [75],

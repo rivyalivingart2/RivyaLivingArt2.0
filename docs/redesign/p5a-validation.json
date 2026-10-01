@@ -1,0 +1,38 @@
+{
+  "phase": "P5A",
+  "p5InProgress": true,
+  "p5Complete": false,
+  "implemented": [
+    "shared shell and scoped navigation",
+    "page finder",
+    "sign-in presentation",
+    "initial real inquiry queue",
+    "exact task filters and resilient reads"
+  ],
+  "unitTests": 250,
+  "preflightRuntimeChecks": 399,
+  "isolatedApiAssertions": 22,
+  "browserAssertions": 19,
+  "viewportSamples": 21,
+  "buildPassed": true,
+  "lintPassed": true,
+  "protectedWholeFilesMatchingP0": 1888,
+  "ordersReadOnlyGetException": true,
+  "existingOrderPostUnchanged": true,
+  "protectedPersistedRecordsUnchanged": true,
+  "temporaryQaEditorInactive": true,
+  "productionWrites": false,
+  "pushed": false,
+  "deployed": false,
+  "remainingSlices": [
+    "P5B",
+    "P5C",
+    "P5D",
+    "P5E"
+  ],
+  "p4PerformanceAcceptanceOpen": [
+    "T41",
+    "T61"
+  ],
+  "fullEvidence": "Parent workspace outputs/P5"
+}

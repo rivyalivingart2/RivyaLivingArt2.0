@@ -1,3 +1,8 @@
+import {JournalBrowser} from './journal-browser';
+import {FaqBrowser} from './faq-browser';
+import {EditorialChapter} from './editorial-chapter';
+import p from './detailed-pages.module.css';
+import {EditorialImage} from './editorial-image';
 import {SectionBody} from './section-body';
 import type {PageSnapshot} from '@/lib/page-dependencies';
 import Image from './public-image';
@@ -23,11 +28,12 @@ const nextSteps:Record<string,[string,string,string,string]>={
  '/our-story':['/collectible-design','Explore furniture & spatial art','/process','How a piece begins'],
  '/process':['/commission','Begin your piece','/faq','Read your questions'],
  '/materials-care':['/collectible-design','Explore the collection','/contact','Ask about your piece'],
- '/architects':['/commission','Prepare a project brief','/materials-care','Explore materials & care'],
+ '/architects':['/commission/customize','Prepare a project brief','/materials-care','Explore materials & care'],
  '/faq':['/commission','Begin your piece','/contact','Call or email the atelier']
 };
 export async function EditorialPage({route,locale='en'}:{route:string;locale?:Locale}){
  const documents=await publishedContent(locale),articles=documents.filter(d=>d.kind==='article');
+ if(route==='/journal'&&documents.some(d=>d.route===route)){return <JournalDocument content={documents.find(d=>d.route===route)!}/>;}
  if(route==='/journal'){
   const categories=[...new Set(articles.map(a=>a.eyebrow))];
   return <><Intro eyebrow="The journal" title="A closer look.">Notes on material, proportion and the things that make an object personal.</Intro>
@@ -38,13 +44,18 @@ export async function EditorialPage({route,locale='en'}:{route:string;locale?:Lo
  const content=documents.find(d=>d.route===route);if(!content)notFound();
  return <EditorialDocument content={content} documents={documents} locale={locale}/>;
 }
+export function JournalDocument({content:d}:{content:PublishedContentDocument}){
+ const articles=(d.pageSnapshot?.articles||[]).map(a=>({...a,kind:'article' as const}));
+ return <div data-content-revision={d.publishedRevision}><Intro eyebrow={d.eyebrow} title={d.title}>{d.description}</Intro>{d.sections.filter(s=>s.enabled!==false).map(b=><div key={b.id} className={s.prose}><h2>{b.heading}</h2><SectionBody section={b} unavailable={d.pageSnapshot?.unavailableActionHrefs} mediaPaths={d.pageSnapshot?.mediaPaths}/></div>)}<JournalBrowser featuredIds={d.featuredArticleIds} items={articles.map(a=>({id:a.id,title:a.title,topic:a.eyebrow,search:[a.title,a.description,a.eyebrow].join(' '),card:<ArticleCard article={a}/>}))}/></div>;
+}
 /** Shared by public pages and authenticated saved-revision previews. */
 export async function EditorialDocument({content:source,documents,locale='en',snapshot}:{content:PublishedContentDocument;documents:PublishedContentDocument[];locale?:Locale;snapshot?:PageSnapshot}){
  const route=source.route,articles=documents.filter(d=>d.kind==='article');
  const business=route==='/contact'||!!policies[route]?(await publishedBusiness()).details:null;
  const bound=business?bindImprintContacts(source,business):source;
  const content={...bound,sections:bound.sections.filter(b=>b.enabled!==false)};
- const article=content.kind==='article',faq=route==='/faq',policy=!!policies[route];
+ const article=content.kind==='article',faq=route==='/faq',policy=!!policies[route],story=route.startsWith('/p/')||['/our-story','/process','/materials-care','/architects'].includes(route);
+ const routeAvailable=(href:string)=>['/','/commission','/journal','/collectible-design','/commission/customize'].includes(href)||(snapshot||source.pageSnapshot)?.availableRoutes?.includes(href)||(!(snapshot||source.pageSnapshot)?.availableRoutes&&documents.some(d=>d.route===href));
  const products=snapshot?.products||source.pageSnapshot?.products||(content.relatedProductIds?.length?await publishedProducts(locale):[]);
  const related=(content.relatedProductIds||[]).flatMap(id=>products.filter(p=>p.id===id));
  const deps=snapshot||source.pageSnapshot;
@@ -55,12 +66,15 @@ export async function EditorialDocument({content:source,documents,locale='en',sn
   <nav className={s.editorialBreadcrumb} aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span>{article&&<><Link href="/journal">Journal</Link><span aria-hidden="true">/</span></>}<span aria-current="page">{content.title}</span></nav>
   <Intro eyebrow={content.eyebrow} title={content.title}>{content.description}</Intro>
   {policy&&<p className={s.editorialBreadcrumb}>{content.effectiveDate?'Effective '+content.effectiveDate:'Effective date not recorded'}</p>}
-  {content.image&&<figure className={s.storyImage}><Image src={content.image} alt={content.imageAlt||''} style={{objectPosition:content.imagePosition}} fill priority sizes={imageSizes.story}/><figcaption>Design visualization</figcaption></figure>}
-  <div className={s.readingLayout}>{content.sections.length>3&&<nav className={s.contents} aria-label="On this page"><p>On this page</p>{content.sections.map(b=><a key={b.id} href={'#'+b.id}>{b.heading}</a>)}</nav>}
+  {route==='/contact'&&business&&<div className={s.prose}><div className={s.contactCards}><a href={'tel:'+business.phone}><span>Call the atelier</span>{business.phone}</a><a href={'mailto:'+business.email}><span>General questions & existing inquiries</span>{business.email}</a><a href={business.map} target="_blank" rel="noreferrer"><span>Location</span>Open the atelier map ↗</a><Link href="/commission"><span>Product & custom-piece requests</span>Prepare your saved order brief ↗</Link></div>{routeAvailable('/faq')&&<p><Link className={s.textLink} href="/faq">Read common questions before you write ↗</Link></p>}</div>}
+  {content.headerImage?<div style={{maxWidth:1100,margin:'0 auto',padding:'0 5vw 40px'}}><EditorialImage usage={content.headerImage} available={deps?.mediaPaths.includes(content.headerImage.path)} priority/></div>:content.image&&<figure className={s.storyImage}><Image src={content.image} alt={content.imageAlt||''} style={{objectPosition:content.imagePosition}} fill priority sizes={imageSizes.story}/><figcaption>Design visualization</figcaption></figure>}
+  {story&&<><nav className={p.readingLinks} aria-label="On this page">{content.sections.map(b=><a href={'#'+b.id} key={b.id}>{b.heading}</a>)}</nav>{content.sections.map(b=><EditorialChapter key={b.id} section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>)}</>}
+  <div className={s.readingLayout}>{!story&&!faq&&content.sections.length>3&&<nav className={s.contents} aria-label="On this page"><p>On this page</p>{content.sections.map(b=><a key={b.id} href={'#'+b.id}>{b.heading}</a>)}</nav>}
    <div className={s.prose}>{article&&<p className={s.eyebrow}>By RivyaLivingArt · <span className={s.productIndex} style={{display:'inline',margin:0}}>{minutes(content)} minute read</span></p>}
-    {content.sections.map(b=>faq?<details id={b.id} key={b.id}><summary>{b.group&&<small>{b.group} · </small>}{b.heading}</summary><SectionBody section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/></details>:<section id={b.id} key={b.id}>{b.stage&&<p className={s.eyebrow}>{b.stage==='customer'?'Customer steps':'Making steps'}</p>}<h2>{b.heading}</h2>{!(route==='/imprint'&&b.id===imprintContactId)&&<SectionBody section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>} {route==='/imprint'&&b.id===imprintContactId&&business&&<dl className={s.imprintContacts}><div><dt>Telephone</dt><dd><a href={'tel:'+business.phone}>{business.phone}</a></dd></div><div><dt>Email</dt><dd><a href={'mailto:'+business.email}>{business.email}</a></dd></div></dl>}</section>)}
-    {policy?<><nav className={s.policyLinks} aria-label="Policies and help">{Object.entries(policies).filter(([p])=>p!==route).map(([p,label])=><Link key={p} href={p}>{label}</Link>)}</nav><div className={s.actions}><Link className={s.button} href="/contact">Contact the atelier ↗</Link>{business&&<a className={s.textLink} href={'mailto:'+business.email}>Email about this page</a>}</div></>:route!=='/contact'&&<div className={s.actions}><Link className={s.button} href={next[0]}>{next[1]} ↗</Link><Link className={s.textLink} href={next[2]}>{next[3]}</Link></div>}
-    {route==='/contact'&&business&&<div className={s.contactCards}><a href={'tel:'+business.phone}><span>Call the atelier</span>{business.phone}</a><a href={'mailto:'+business.email}><span>General questions & existing inquiries</span>{business.email}</a><a href={business.map} target="_blank" rel="noreferrer"><span>Location</span>Open the atelier map ↗</a><Link href="/commission"><span>Product & custom-piece requests</span>Prepare your saved order brief ↗</Link></div>}
+    {faq&&<FaqBrowser sections={content.sections} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>}
+    {!story&&!faq&&content.sections.map(b=>faq?<details id={b.id} key={b.id}><summary>{b.group&&<small>{b.group} · </small>}{b.heading}</summary><SectionBody section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/></details>:<section id={b.id} key={b.id}>{b.stage&&<p className={s.eyebrow}>{b.stage==='customer'?'Customer steps':'Making steps'}</p>}<h2>{b.heading}</h2>{!(route==='/imprint'&&b.id===imprintContactId)&&<SectionBody section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>} {route==='/imprint'&&b.id===imprintContactId&&business&&<dl className={s.imprintContacts}><div><dt>Telephone</dt><dd><a href={'tel:'+business.phone}>{business.phone}</a></dd></div><div><dt>Email</dt><dd><a href={'mailto:'+business.email}>{business.email}</a></dd></div></dl>}</section>)}
+    {policy?<><nav className={s.policyLinks} aria-label="Policies and help">{Object.entries(policies).filter(([p])=>p!==route&&routeAvailable(p)).map(([p,label])=><Link key={p} href={p}>{label}</Link>)}</nav><div className={s.actions}><Link className={s.button} href="/contact">Contact the atelier ↗</Link>{business&&<a className={s.textLink} href={'mailto:'+business.email}>Email about this page</a>}</div></>:route!=='/contact'&&<div className={s.actions}>{routeAvailable(next[0])&&<Link className={s.button} href={next[0]}>{next[1]} ↗</Link>}{routeAvailable(next[2])&&<Link className={s.textLink} href={next[2]}>{next[3]}</Link>}</div>}
+
    </div>
   </div>
   {related.length>0&&<section className={s.section}><div className={s.sectionHead}><h2>Ideas to explore.</h2></div><div className={s.grid}>{related.map(p=><ProductCard key={p.id} product={p}/>)}</div></section>}

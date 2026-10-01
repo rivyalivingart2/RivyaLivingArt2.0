@@ -129,7 +129,7 @@ test('built frontend HTTP access and publication boundaries', async t => {
       const {response,html}=await getPage(origin,path);assert.equal(response.status,404);assertNoindex(response,path);assert.doesNotMatch(html,fixtureNames);
     });
     for (const path of unknownRoutes) await t.test(`${path} returns a real 404`,async()=>{
-      const {response,html}=await getPage(origin,path);assert.equal(response.status,404);assertNoindex(response,path);assert.match(html,/A different direction/);
+      const {response,html}=await getPage(origin,path);assert.equal(response.status,404);assertNoindex(response,path);assert.match(html,/This page is unavailable/);
     });
     for (const name of ['riverline','basin']) await t.test(`original ${name} asset remains byte-identical`,async()=>{
       const path=`/media/concepts/${name}.avif`,r=await fetch(origin+path);
@@ -139,7 +139,7 @@ test('built frontend HTTP access and publication boundaries', async t => {
     for(const path of ['/studio','/studio/inquiries','/studio/follow-ups'])await t.test(`${path} requires staff sign-in`,async()=>{
       const {response}=await getPage(origin,path);assert.equal(response.status,307);assert.match(response.headers.get('location')||'',/\/studio\/login/);assertNoindex(response,path);
     });
-    for(const path of ['/api/studio/orders','/api/studio/workspace','/api/studio/privacy'])await t.test(`${path} rejects anonymous access`,async()=>{
+    for(const path of ['/api/studio/orders','/api/studio/workspace','/api/studio/privacy','/api/studio/work-queue'])await t.test(`${path} rejects anonymous access`,async()=>{
       const r=await fetch(origin+path);assert.equal(r.status,401);assert.match(r.headers.get('cache-control')||'',/no-store/);
     });
   });

@@ -1,6 +1,11 @@
 /** Date-only follow-ups are business dates, not UTC instants. Events remain UTC. */
 export const BUSINESS_TIME_ZONE = 'Asia/Kolkata';
 export const BUSINESS_TIME_LABEL = 'IST (UTC+05:30)';
+/** Add calendar days to today's IST date, regardless of the device timezone. */
+export function businessDateOffset(days:number,value:Date|string|number=new Date()):string{
+ if(!Number.isSafeInteger(days)||Math.abs(days)>366)throw new RangeError('Unsupported date offset');
+ const date=new Date(businessDate(value)+'T00:00:00Z');date.setUTCDate(date.getUTCDate()+days);return date.toISOString().slice(0,10);
+}
 const BUSINESS_MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'] as const;
 
 export function businessDate(value: Date | string | number = new Date()): string {

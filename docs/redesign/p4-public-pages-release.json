@@ -1,0 +1,826 @@
+{
+  "schemaVersion": 1,
+  "phase": "P4B–P4E",
+  "status": "Local implementation and isolated QA complete; not production content",
+  "sourceFolder": "https://drive.google.com/drive/folders/1P2HCTmPge6HsEwtoo-xGEzPTSn68oZOW",
+  "newPageCandidates": [
+    {
+      "id": "page:collectible-design",
+      "kind": "page",
+      "route": "/collectible-design",
+      "title": "Presence, in every form.",
+      "eyebrow": "Furniture & spatial art",
+      "description": "Start with the room, then find a form. Explore furniture and sculptural objects and bring your dimensions, light and everyday use into the conversation.",
+      "sections": [
+        {
+          "id": "browse",
+          "heading": "Find a piece for your space.",
+          "paragraphs": [
+            "Browse the existing collection by form or material direction. The images are design visualizations; the individual piece’s specification and quotation are agreed with the atelier."
+          ]
+        },
+        {
+          "id": "proportion",
+          "heading": "The room is part of the brief.",
+          "paragraphs": [
+            "A piece has a presence beyond its outline. Think about the sightline from the doorway, the furniture around it and the space people need to move. A rough plan and a few room photographs can make your intention clearer.",
+            "Keep proposed product dimensions separate from measurements of the room. These references begin a discussion; they do not establish structural performance or installation suitability."
+          ],
+          "layout": "statement",
+          "checklist": [
+            "Intended use and position",
+            "Approximate size, with units",
+            "Nearby colours, finishes and light",
+            "Doorways, stairs, lifts and delivery city"
+          ],
+          "action": {
+            "label": "Prepare a project brief",
+            "href": "/architects"
+          }
+        },
+        {
+          "id": "material",
+          "heading": "Read the grain. Notice the colour.",
+          "paragraphs": [
+            "Timber brings natural variation; resin introduces colour, depth and transparency. Look at how the materials meet rather than expecting an image to define the final surface.",
+            "Bring references with a note about what matters to you. Discuss material availability, finish and everyday care before agreeing the specification."
+          ],
+          "layout": "split",
+          "action": {
+            "label": "Explore materials and care",
+            "href": "/materials-care"
+          }
+        },
+        {
+          "id": "delivery",
+          "heading": "Plan the arrival as well as the setting.",
+          "paragraphs": [
+            "Share known access constraints and the intended destination early. Packing, transport, installation needs and charges are discussed for the individual quotation. No standard delivery date is promised for a custom piece."
+          ],
+          "policyHref": "/shipping-delivery"
+        },
+        {
+          "id": "next",
+          "heading": "Begin with a piece or a possibility.",
+          "paragraphs": [
+            "Use a product’s customization form when a design is close to your idea. If the starting point is a space or a different form, prepare a bespoke brief. Saving a request starts a conversation, not a production booking."
+          ],
+          "action": {
+            "label": "Prepare a bespoke brief",
+            "href": "/commission/customize"
+          }
+        }
+      ]
+    },
+    {
+      "id": "page:memory-art",
+      "kind": "page",
+      "route": "/memory-art",
+      "title": "For what stays with you.",
+      "eyebrow": "Memory art",
+      "description": "Flowers, keepsakes and the stories they carry. Begin with the material’s condition and the meaning you want the piece to hold.",
+      "sections": [
+        {
+          "id": "browse",
+          "heading": "Find a format for the memory.",
+          "paragraphs": [
+            "Explore the existing preservation designs. Frames, clocks and keepsake forms offer different starting points; suitability depends on your materials and their condition."
+          ]
+        },
+        {
+          "id": "prepare",
+          "heading": "Keep the original with you for now.",
+          "paragraphs": [
+            "Share clear photographs and explain what you would like to preserve. Tell the atelier what the materials are and their current condition. A photograph supports the conversation but cannot guarantee suitability.",
+            "Wait for the atelier’s guidance before sending anything irreplaceable. Confirm the recipient, destination and agreed transport arrangements for your particular item."
+          ],
+          "layout": "statement",
+          "checklist": [
+            "What the keepsake is and why it matters",
+            "Its present condition",
+            "Your preferred format or display setting",
+            "Any intended date, as a request rather than a promise"
+          ],
+          "action": {
+            "label": "Read how the inquiry works",
+            "href": "/process"
+          }
+        },
+        {
+          "id": "appearance",
+          "heading": "Leave room for the material’s character.",
+          "paragraphs": [
+            "A visualization communicates a design direction. Colour, arrangement and final appearance are discussed for your individual keepsake. No identical appearance or preservation result is guaranteed.",
+            "Bring references for the composition and explain the details you most want to retain. Agree the approach before the work is confirmed."
+          ],
+          "action": {
+            "label": "Read the practical questions",
+            "href": "/faq"
+          }
+        },
+        {
+          "id": "care",
+          "heading": "Consider where the memory will live.",
+          "paragraphs": [
+            "Discuss display position, sunlight, heat, moisture and cleaning with the atelier. Follow the guidance for the finished piece rather than treating every preserved material in the same way."
+          ],
+          "policyHref": "/materials-care#care"
+        },
+        {
+          "id": "next",
+          "heading": "Tell us the story behind it.",
+          "paragraphs": [
+            "Choose a design to open its existing customization form, or begin a bespoke request. Private reference images stay with the inquiry and are not added to the public collection."
+          ],
+          "action": {
+            "label": "Begin a preservation brief",
+            "href": "/commission/customize"
+          }
+        }
+      ]
+    },
+    {
+      "id": "page:personal-art",
+      "kind": "page",
+      "route": "/personal-art",
+      "title": "A little more personal.",
+      "eyebrow": "Personal art & gifts",
+      "description": "A name, a short message or a colour with meaning. Discover existing gift designs and use their available options to make your brief specific.",
+      "sections": [
+        {
+          "id": "browse",
+          "heading": "Find the right small gesture.",
+          "paragraphs": [
+            "Browse gifts by their existing category and name. Product pages show the current price basis and supported customization choices; no new option or quantity is implied by this guide."
+          ]
+        },
+        {
+          "id": "personalize",
+          "heading": "The small details deserve a second look.",
+          "paragraphs": [
+            "Choose the closest design, then use its form to describe your direction. An occasion can explain the intention without deciding the design for you.",
+            "Check names, initials, dates and short messages carefully. If spelling or punctuation matters, include it exactly as you want it reviewed. The final specification is agreed with the atelier."
+          ],
+          "layout": "statement",
+          "checklist": [
+            "The person or purpose",
+            "The exact text to discuss",
+            "Colour direction and useful references",
+            "Quantity only where the product offers it"
+          ]
+        },
+        {
+          "id": "expectations",
+          "heading": "Agree the practical details.",
+          "paragraphs": [
+            "A fixed or starting price applies only as stated on the current product record. Other pieces are quoted individually. Ask about the intended quantity, packaging, timing and delivery before confirming an order.",
+            "No packaging inclusion, discount or guaranteed arrival is assumed. Mention a preferred date as a request so the atelier can discuss feasibility."
+          ],
+          "policyHref": "/shipping-delivery"
+        },
+        {
+          "id": "next",
+          "heading": "A thoughtful brief is a useful beginning.",
+          "paragraphs": [
+            "Save your choices, review the prepared message and send it yourself in WhatsApp. A saved inquiry is not a paid order or an accepted quotation."
+          ],
+          "action": {
+            "label": "Choose your starting point",
+            "href": "/commission"
+          }
+        }
+      ]
+    },
+    {
+      "id": "page:search",
+      "kind": "page",
+      "route": "/search",
+      "title": "Find your piece.",
+      "eyebrow": "All collections",
+      "description": "Search the published collection by name, form, reference or material. Your filters stay in the address so you can return to the same view.",
+      "sections": [
+        {
+          "id": "browse",
+          "heading": "Explore the published pieces.",
+          "paragraphs": [
+            "Combine a search with a collection or category, remove one filter at a time, or clear the view. Only currently published designs appear."
+          ]
+        },
+        {
+          "id": "next",
+          "heading": "Still finding the direction?",
+          "paragraphs": [
+            "A room, a memory or a person can be enough to start. Describe your purpose and what is still undecided in a bespoke brief."
+          ],
+          "action": {
+            "label": "Prepare a bespoke brief",
+            "href": "/commission/customize"
+          }
+        }
+      ]
+    },
+    {
+      "id": "page:commission",
+      "kind": "page",
+      "route": "/commission",
+      "title": "Choose your starting point.",
+      "eyebrow": "Begin a piece",
+      "description": "Start from an existing design or describe an idea of your own. Both paths preserve your brief before you choose to send the prepared message.",
+      "sections": [
+        {
+          "id": "choice",
+          "heading": "Two ways to begin.",
+          "paragraphs": [
+            "Choose a catalogue piece when its form or purpose is close to your idea; its own form keeps the available choices together. Use a bespoke brief when your starting point is a space, a keepsake or a different kind of object."
+          ],
+          "layout": "statement",
+          "action": {
+            "label": "Prepare a bespoke brief",
+            "href": "/commission/customize"
+          }
+        },
+        {
+          "id": "browse",
+          "heading": "Begin with an existing design.",
+          "paragraphs": [
+            "Explore all three collections below. Open a piece to read its details and use its supported customization form."
+          ]
+        },
+        {
+          "id": "prepare",
+          "heading": "Bring context, not a finished specification.",
+          "paragraphs": [
+            "Tell us the purpose, approximate dimensions if known, intended setting and the parts of a reference that matter. For a keepsake, explain its condition and wait for guidance before sending it."
+          ],
+          "checklist": [
+            "Choose a design or describe the idea",
+            "Add useful preferences and private references",
+            "Review your name, phone and brief",
+            "Save, then open or copy the message and tap Send yourself"
+          ]
+        },
+        {
+          "id": "agreement",
+          "heading": "The conversation comes before confirmation.",
+          "paragraphs": [
+            "Saving records an inquiry. Feasibility, materials, quotation, payment arrangements and delivery require a separate agreement with the atelier. The website does not take payment or confirm a production booking."
+          ],
+          "policyHref": "/terms"
+        }
+      ]
+    },
+    {
+      "id": "page:journal",
+      "kind": "page",
+      "route": "/journal",
+      "title": "A closer look.",
+      "eyebrow": "The journal",
+      "description": "Notes on materials, spaces and preparing a thoughtful commission. Choose a topic or search for the question on your mind.",
+      "sections": [
+        {
+          "id": "reading",
+          "heading": "A notebook for your next piece.",
+          "paragraphs": [
+            "These stories offer a way to observe, ask questions and prepare a brief. Product images remain design visualizations; each individual specification is agreed with the atelier."
+          ]
+        }
+      ]
+    }
+  ],
+  "appendHiddenChapters": {
+    "/our-story": [
+      {
+        "id": "point-of-view",
+        "heading": "A room, a memory, a personal gesture.",
+        "paragraphs": [
+          "Different pieces begin with different intentions. Furniture asks how an object belongs in a space. A keepsake begins with what someone wants to hold onto. A personal gift starts with the details that make it meaningful to its recipient.",
+          "The existing collection brings those intentions into view. Use it to explain what draws you in, while leaving room to discuss the material and practical decisions."
+        ],
+        "layout": "statement"
+      },
+      {
+        "id": "material-conversation",
+        "heading": "Look closely at the meeting of materials.",
+        "paragraphs": [
+          "Notice the edge, the grain and the way colour changes the reading of a form. These visual relationships are useful starting points for a brief. They are not proof of a particular technique, finish or performance.",
+          "A reference is most helpful when you say what you see in it. Explain whether it is the silhouette, the balance of timber and resin or the setting that you want to discuss."
+        ],
+        "layout": "split",
+        "action": {
+          "label": "Read the material guide",
+          "href": "/materials-care"
+        }
+      },
+      {
+        "id": "practice",
+        "heading": "A specification, shaped in conversation.",
+        "paragraphs": [
+          "Bring the proposed use, dimensions and references into the discussion. Clarify the final appearance, materials, quotation and delivery before confirming an order.",
+          "The illustrations on this website describe a direction. They are not a record of completed client installations or a substitute for the agreed specification."
+        ],
+        "layout": "reverse",
+        "action": {
+          "label": "Follow the process",
+          "href": "/process"
+        }
+      },
+      {
+        "id": "atelier-contact",
+        "heading": "Meet the atelier through your brief.",
+        "paragraphs": [
+          "For an existing design, its customization form gives the conversation a useful structure. For a different idea, begin with a bespoke brief. General questions can use the current phone and email on Contact."
+        ],
+        "action": {
+          "label": "Contact the atelier",
+          "href": "/contact"
+        }
+      }
+    ],
+    "/process": [
+      {
+        "id": "making-discussion",
+        "heading": "From design direction to material decisions.",
+        "paragraphs": [
+          "After discussing the brief, ask how the chosen materials and intended use affect the proposed piece. Confirm the timber or keepsake, resin colour direction, dimensions and appearance as part of that discussion.",
+          "Images of pouring or polishing on this website are illustrative. They do not establish Rivya’s equipment, fabrication method or a curing schedule. The atelier should explain the approach for your agreed specification."
+        ],
+        "stage": "making",
+        "layout": "split",
+        "checklist": [
+          "Confirm the design and material direction",
+          "Discuss preparation and how the materials will be arranged",
+          "Clarify finish, final checks and the care guidance needed"
+        ]
+      },
+      {
+        "id": "material-selection",
+        "heading": "Begin with the actual material.",
+        "paragraphs": [
+          "Ask which timber, resin colour direction or sentimental materials are proposed for your piece. A reference image is useful for explaining grain, contrast and transparency, but the available material may read differently.",
+          "Agree which variations are welcome and which details need another conversation. For flowers or keepsakes, suitability and condition should be discussed before anything irreplaceable changes hands."
+        ],
+        "stage": "making",
+        "action": {
+          "label": "Explore the material questions",
+          "href": "/materials-care"
+        }
+      },
+      {
+        "id": "preparation-arrangement",
+        "heading": "Talk through preparation and arrangement.",
+        "paragraphs": [
+          "If the design includes timber, ask how its condition and intended setting influence the proposal. If it includes preserved objects, discuss their position, orientation and the details that must remain visible.",
+          "Clarify what you will be asked to approve and how changes should be recorded. This is a conversation about your specification, not a published instruction for treating wood or handling sentimental originals."
+        ],
+        "stage": "making",
+        "layout": "statement"
+      },
+      {
+        "id": "casting-curing",
+        "heading": "Ask what the chosen method requires.",
+        "paragraphs": [
+          "Where a proposed piece involves resin casting, ask how the composition and making sequence affect its appearance. A pouring illustration cannot show the full method or establish that every design follows the same steps.",
+          "Discuss when the next decision or review is expected. There is no universal curing duration promised here: material, method and the individual specification need the atelier’s explanation."
+        ],
+        "stage": "making"
+      },
+      {
+        "id": "surface-finish",
+        "heading": "Read the edge, the surface and the finish.",
+        "paragraphs": [
+          "Explain the character you want to discuss: a quiet surface, a strong edge, more transparency or a particular balance of materials. Ask how the proposed finish relates to the intended use and everyday care.",
+          "If a sample or another approval step is needed, agree its scope and availability. A photograph cannot certify a finish, establish a tolerance or replace the final specification."
+        ],
+        "stage": "making",
+        "layout": "statement",
+        "action": {
+          "label": "Plan everyday care",
+          "href": "/materials-care#care"
+        }
+      },
+      {
+        "id": "review-checks",
+        "heading": "Make the final review clear.",
+        "paragraphs": [
+          "Ask what the final review will cover and how any unresolved detail will be recorded. Refer back to the agreed dimensions, material direction, appearance and responsibilities rather than a changing set of informal references.",
+          "Clarify the arrangements for reporting a concern, preparing the piece for transport and receiving its care guidance. No test certificate or performance rating is implied by the design images."
+        ],
+        "stage": "making",
+        "policyHref": "/terms"
+      },
+      {
+        "id": "timing",
+        "heading": "Discuss the sequence and the timing.",
+        "paragraphs": [
+          "Ask which decisions are needed before work can begin and when your approval will be requested. Timing depends on the design, material availability and current capacity; share a preferred date without treating it as a guarantee.",
+          "Keep the agreed specification and inquiry reference together. Discuss changes promptly rather than assuming an edited reference will alter confirmed work."
+        ],
+        "stage": "customer",
+        "layout": "statement",
+        "policyHref": "/returns-cancellations"
+      },
+      {
+        "id": "arrival-and-care",
+        "heading": "Finish the conversation with arrival and care.",
+        "paragraphs": [
+          "Confirm the destination, known access constraints, packing, transport and installation needs in the quotation. Keep sentimental originals with you until transfer instructions have been agreed.",
+          "Request the care instructions for the final material and finish. A completed request, a prepared WhatsApp message and a confirmed order are different stages."
+        ],
+        "stage": "customer",
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read materials and care",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "/materials-care": [
+      {
+        "id": "material-questions",
+        "heading": "Ask about the material in your piece.",
+        "paragraphs": [
+          "The photographs and visualizations help describe an appearance. They cannot establish heat limits, food suitability, outdoor use or chemical resistance. Ask about any intended use that depends on a specific material property."
+        ],
+        "layout": "statement",
+        "checklist": [
+          "What material and finish are proposed?",
+          "What variation should I expect?",
+          "What placement and cleaning guidance applies?",
+          "Who should I contact before attempting a repair?"
+        ]
+      },
+      {
+        "id": "keepsakes",
+        "heading": "Different objects need different conversations.",
+        "paragraphs": [
+          "For preserved flowers or keepsakes, discuss the material’s condition and display position. For a wearable gift, ask about fittings and suitability. For a large object, include support, access and installation in the brief.",
+          "Do not apply a technique shown for one object to a different finished piece without advice. Follow the instructions supplied for your individual specification."
+        ],
+        "action": {
+          "label": "Ask about your piece",
+          "href": "/contact"
+        }
+      }
+    ],
+    "/architects": [
+      {
+        "id": "project-checklist",
+        "heading": "Give the setting a clear brief.",
+        "paragraphs": [
+          "A concise package can explain the intent without sharing unnecessary client information. Label the dimensions and the part of each reference that matters, and distinguish an idea from a confirmed requirement."
+        ],
+        "layout": "statement",
+        "checklist": [
+          "Room purpose and intended location",
+          "Measured site dimensions versus proposed product dimensions",
+          "Plans or photographs with useful context",
+          "Material and colour direction",
+          "Delivery city and known access constraints",
+          "Preferred timing and questions to resolve"
+        ],
+        "action": {
+          "label": "Prepare a bespoke project brief",
+          "href": "/commission/customize"
+        }
+      },
+      {
+        "id": "scope",
+        "heading": "Make the responsibilities explicit.",
+        "paragraphs": [
+          "Discuss drawings, samples, support, installation, transport and final checks where they are relevant. Confirm what the atelier will provide and what needs a separate arrangement before agreeing the quotation.",
+          "This page does not promise engineering, trade pricing, installation services or a particular production capacity. Approved project examples will appear only when genuine details and permissions are available."
+        ],
+        "policyHref": "/terms"
+      }
+    ]
+  },
+  "imageAssignments": [
+    {
+      "record": "page:collectible-design",
+      "slot": "header",
+      "sourceName": "doorway-collectible.jpg",
+      "driveId": "1o5VSIpFgnyn4Obrfh3Bowhm4-bsxz1Mj",
+      "alt": "Timber and blue resin-style table in a dark interior",
+      "caption": "Design visualization",
+      "crop": {
+        "desktop": {
+          "x": 50,
+          "y": 61,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 50,
+          "y": 55,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Do not identify as an existing catalogue SKU or completed client installation without confirmation."
+    },
+    {
+      "record": "page:memory-art",
+      "slot": "header",
+      "sourceName": "doorway-memory.jpg",
+      "driveId": "19KOc4hLTXevHis-A0b_8gtedAgsmWRoC",
+      "alt": "Red and pale flowers displayed within a clear decorative block",
+      "caption": "Design visualization",
+      "crop": {
+        "desktop": {
+          "x": 50,
+          "y": 40,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 50,
+          "y": 43,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Illustrative preservation direction, not evidence of preservation outcomes or a particular customer's keepsakes."
+    },
+    {
+      "record": "page:personal-art",
+      "slot": "header",
+      "sourceName": "doorway-gifts.jpg",
+      "driveId": "1woyD_wMKVigC6rp2Vky9sCojxyHAKmM-",
+      "alt": "Blue and gold decorative jewellery and letter keychains",
+      "caption": "Design visualization",
+      "crop": {
+        "desktop": {
+          "x": 50,
+          "y": 51,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 50,
+          "y": 53,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Mixed gift subjects; do not attach as the gallery for a single pendant or assume catalogue availability."
+    },
+    {
+      "record": "page:process",
+      "slot": "header",
+      "sourceName": "hero-pour.jpg",
+      "driveId": "17rLJSM6v8z_MqArs8lyksy1hpN8ljfru",
+      "alt": "Blue material flowing into glossy folds with gold flecks",
+      "caption": "Design visualization",
+      "crop": {
+        "desktop": {
+          "x": 42,
+          "y": 54,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 40,
+          "y": 52,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Illustrative material visual. Does not establish an actual Rivya workshop process, equipment or resin specification."
+    },
+    {
+      "record": "page:our-story",
+      "slot": "header",
+      "sourceName": "maker-hands.jpg",
+      "driveId": "1VK6Y7T8LDJi5eEGFBFjXg26VNNVGYyVh",
+      "alt": "A person polishing a blue and gold decorative object",
+      "caption": "Illustrative making scene; not a photograph of Rivya staff",
+      "crop": {
+        "desktop": {
+          "x": 52,
+          "y": 59,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 53,
+          "y": 67,
+          "ratio": "4/5"
+        }
+      }
+    },
+    {
+      "record": "page:architects",
+      "slot": "header",
+      "sourceName": "doorway-collectible.jpg",
+      "driveId": "1o5VSIpFgnyn4Obrfh3Bowhm4-bsxz1Mj",
+      "alt": "Timber and blue resin-style table in a dark interior",
+      "caption": "Design visualization",
+      "crop": {
+        "desktop": {
+          "x": 50,
+          "y": 61,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 50,
+          "y": 55,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Do not identify as an existing catalogue SKU or completed client installation without confirmation."
+    },
+    {
+      "record": "page:collectible-design",
+      "slot": "section:material",
+      "sourceName": "hero-pour.jpg",
+      "driveId": "17rLJSM6v8z_MqArs8lyksy1hpN8ljfru",
+      "alt": "Blue material flowing into glossy folds with gold flecks",
+      "caption": "Design visualization",
+      "crop": {
+        "desktop": {
+          "x": 42,
+          "y": 54,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 40,
+          "y": 52,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Illustrative material visual. Does not establish an actual Rivya workshop process, equipment or resin specification."
+    },
+    {
+      "record": "page:our-story",
+      "slot": "section:material-conversation",
+      "sourceName": "hero-pour.jpg",
+      "driveId": "17rLJSM6v8z_MqArs8lyksy1hpN8ljfru",
+      "alt": "Blue material flowing into glossy folds with gold flecks",
+      "caption": "Design visualization",
+      "crop": {
+        "desktop": {
+          "x": 42,
+          "y": 54,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 40,
+          "y": 52,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Illustrative material visual. Does not establish an actual Rivya workshop process, equipment or resin specification."
+    },
+    {
+      "record": "page:process",
+      "slot": "section:making-discussion",
+      "sourceName": "maker-hands.jpg",
+      "driveId": "1VK6Y7T8LDJi5eEGFBFjXg26VNNVGYyVh",
+      "alt": "A person polishing a blue and gold decorative object",
+      "caption": "Illustrative making scene; not a photograph of Rivya staff",
+      "crop": {
+        "desktop": {
+          "x": 52,
+          "y": 59,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 53,
+          "y": 67,
+          "ratio": "4/5"
+        }
+      }
+    }
+  ],
+  "journalFeaturedArticleIds": [
+    "DB019"
+  ],
+  "journalCovers": [
+    {
+      "record": "DB002",
+      "image": "/media/generated/dp001-matching-detail-4x5.webp",
+      "imageAlt": "Timber grain meeting blue resin — design visualization",
+      "source": "Already-published product visual, pixels reviewed; product gallery associations unchanged."
+    },
+    {
+      "record": "DB010",
+      "image": "/media/generated/dp057-horizon-band-wall-panel-portrait-4x5.webp",
+      "imageAlt": "A wide green and gold wall panel above a console — design visualization",
+      "source": "Already-published product visual, pixels reviewed; product gallery associations unchanged."
+    },
+    {
+      "record": "DB013",
+      "image": "/media/generated/dp043-petal-sculptural-chair-portrait-4x5.webp",
+      "imageAlt": "A petal-shaped sculptural chair in a room — design visualization",
+      "source": "Already-published product visual, pixels reviewed; product gallery associations unchanged."
+    },
+    {
+      "record": "DB017",
+      "image": "/media/generated/dp001-matching-detail-4x5.webp",
+      "imageAlt": "The edge and surface of a timber and blue resin piece — design visualization",
+      "source": "Already-published product visual, pixels reviewed; product gallery associations unchanged."
+    },
+    {
+      "record": "DB028",
+      "image": "/media/generated/dp114-matching-detail-4x5.webp",
+      "imageAlt": "Coordinated blue resin and timber coaster forms — design visualization",
+      "source": "Already-published product visual, pixels reviewed; product gallery associations unchanged."
+    },
+    {
+      "record": "DB032",
+      "image": "/media/generated/dp114-matching-detail-4x5.webp",
+      "imageAlt": "Blue, timber and gold detail on small gift objects — design visualization",
+      "source": "Already-published product visual, pixels reviewed; product gallery associations unchanged."
+    },
+    {
+      "record": "DB011",
+      "sourceName": "hero-pour.jpg",
+      "driveId": "17rLJSM6v8z_MqArs8lyksy1hpN8ljfru",
+      "alt": "Blue material flowing into glossy folds with gold flecks",
+      "caption": "Design visualization",
+      "crop": {
+        "desktop": {
+          "x": 42,
+          "y": 54,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 40,
+          "y": 52,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Illustrative material visual. Does not establish an actual Rivya workshop process, equipment or resin specification."
+    },
+    {
+      "record": "DB012",
+      "sourceName": "hero-pour.jpg",
+      "driveId": "17rLJSM6v8z_MqArs8lyksy1hpN8ljfru",
+      "alt": "Blue material flowing into glossy folds with gold flecks",
+      "caption": "Design visualization",
+      "crop": {
+        "desktop": {
+          "x": 42,
+          "y": 54,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 40,
+          "y": 52,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Illustrative material visual. Does not establish an actual Rivya workshop process, equipment or resin specification."
+    },
+    {
+      "record": "DB033",
+      "sourceName": "maker-hands.jpg",
+      "driveId": "1VK6Y7T8LDJi5eEGFBFjXg26VNNVGYyVh",
+      "alt": "A person polishing a blue and gold decorative object",
+      "caption": "Illustrative making scene; not a photograph of Rivya staff",
+      "crop": {
+        "desktop": {
+          "x": 52,
+          "y": 59,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 53,
+          "y": 67,
+          "ratio": "4/5"
+        }
+      }
+    }
+  ],
+  "faqGroups": {
+    "Choosing & ordering": [
+      "question-0",
+      "question-1",
+      "question-2",
+      "question-7"
+    ],
+    "Privacy & references": [
+      "question-3",
+      "question-10"
+    ],
+    "Materials & timing": [
+      "question-4",
+      "question-5",
+      "question-6"
+    ],
+    "Saved messages & help": [
+      "question-8",
+      "question-9",
+      "question-11"
+    ]
+  },
+  "processCustomerSections": "Retain four existing customer-journey sections; classify them customer. Add the eight missing chapters without replacing prior edits.",
+  "customPages": "No business custom page selected. Synthetic QA page is withdrawn; do not migrate it.",
+  "protected": [
+    "All products and option/form schemas",
+    "Product gallery associations and original media",
+    "Business/contact settings",
+    "Scraper and old catalogue",
+    "Existing drafts and revision history"
+  ],
+  "releaseSteps": [
+    "Open current destination records; preserve owner edits and existing section order, crops and translations.",
+    "Register candidates as drafts only. Append missing chapters using Studio; review hidden additions, image disclosures and actions before enabling.",
+    "Resolve each Drive source to its reviewed published destination asset. Never copy isolated QA UUIDs or private receipt URLs.",
+    "Review the destination language, factual content, named article selections and all references. Conditional projects, workshops and testimonials remain hidden without approved facts.",
+    "Save; inspect the exact saved revision on desktop/mobile; publish only under the authorized production-release step.",
+    "Read the public route independently and verify revision and linked destinations. Recover an earlier revision into a new draft, preview and deliberately publish if needed; retain all history."
+  ],
+  "optionalVideo": "Unselected; reviewed static images and reduced-motion presentation are the complete initial media path."
+}

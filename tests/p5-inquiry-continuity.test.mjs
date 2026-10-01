@@ -1,0 +1,15 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readInquiryView,inquiryViewHref,inquiryRequestQuery} from '../src/lib/studio-inquiry-view.ts';
+import {businessDateOffset} from '../src/lib/business-time.ts';
+import {studioActivityHref} from '../src/lib/studio-record-links.ts';
+test('inquiry filters, page, sort, view and exact selection survive a URL round trip',()=>{
+ const params=new URLSearchParams({q:'QA & brief',stage:'CONTACTED',assignee:'unassigned',source:'website',kind:'bespoke',product:'ART-12',category:'Memory',from:'2026-09-30',to:'2026-10-01',task:'today',follow:'today',sort:'followup',page:'3',mode:'board',record:'01234567-89ab-cdef-0123-456789abcdef',column:'CONTACTED'});
+ const view=readInquiryView(params);assert.deepEqual(readInquiryView(new URL(inquiryViewHref('/studio/inquiries',view),'https://local.test').searchParams),view);
+ const request=new URLSearchParams(inquiryRequestQuery(view));assert.equal(request.has('record'),false);assert.equal(request.has('column'),false);assert.equal(request.has('mode'),false);assert.equal(request.get('page'),'3');assert.equal(request.get('kind'),'bespoke');
+});
+test('closing a record preserves every filter and page',()=>{const view=readInquiryView(new URLSearchParams('q=needle&page=4&mode=board&sort=oldest&record=one'));const next=readInquiryView(new URL(inquiryViewHref('/studio/inquiries',view,{record:''}),'https://local.test').searchParams);assert.deepEqual(next,{...view,record:''});});
+test('untrusted view values cannot invent destinations or unsupported stages',()=>{const view=readInquiryView(new URLSearchParams('stage=INVALID&task=all&sort=price&mode=garbage&page=-10&column=INVALID'));assert.equal(view.stage,'');assert.equal(view.task,'');assert.equal(view.sort,'newest');assert.equal(view.mode,'list');assert.equal(view.page,1);assert.equal(view.column,'NEW');assert.throws(()=>inquiryViewHref('https://example.org',view));});
+test('follow-ups have due defaults while explicit all remains stable',()=>{assert.equal(readInquiryView(new URLSearchParams(),true).follow,'due');assert.equal(readInquiryView(new URLSearchParams('follow=all'),true).follow,'all');assert.equal(readInquiryView(new URLSearchParams(),false,true).mode,'board');});
+for(const [instant,days,expected] of [['2026-09-30T18:45:00Z',3,'2026-10-04'],['2026-10-01T18:15:00Z',7,'2026-10-08'],['2026-12-30T20:00:00Z',3,'2027-01-03'],['2028-02-28T20:00:00Z',1,'2028-03-01']])test('IST date shortcut '+instant,()=>assert.equal(businessDateOffset(days,instant),expected));
+test('audit links encode known records and leave unsupported payloads as text',()=>{assert.equal(new URL(studioActivityHref('content:publish','page:home'),'https://local.test').searchParams.get('record'),'page:home');assert.ok(studioActivityHref('catalogue:draft','ART-12').startsWith('/studio/products?'));assert.equal(studioActivityHref('staff:update','a-private-id'),null);assert.equal(studioActivityHref('orders:export','{"private":true}'),null);assert.equal(studioActivityHref('content:draft','bad\u0000id'),null);});

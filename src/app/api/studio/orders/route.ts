@@ -1,14 +1,17 @@
+import {originAllowed} from '@/lib/request-security';
 import {randomUUID} from 'node:crypto';
 import {studioSession} from '@/lib/studio-auth';
 import {studioDb} from '@/lib/studio-db';
 import {isOrderStage,orderStages} from '@/lib/studio-orders';
 import type {NextRequest} from 'next/server';
+import {isStudioTask} from '@/lib/studio-work-queue';
+import {businessDate} from '@/lib/business-time';
 
 export const dynamic = 'force-dynamic';
 const headers = {'Cache-Control': 'private, no-store'};
 function json(data: unknown, status = 200) { return Response.json(data, {status, headers}); }
 function sameOrigin(request: NextRequest) {
-  return request.headers.get('origin') === request.nextUrl.origin;
+  return originAllowed(request);
 }
 async function readSmallBody(request: NextRequest) {
   const reader = request.body?.getReader();
@@ -33,7 +36,11 @@ export async function GET(request:NextRequest) {
     const stage=request.nextUrl.searchParams.get('stage')||'';
     const assignee=request.nextUrl.searchParams.get('assignee')||'';
     const due=request.nextUrl.searchParams.get('due')==='1';
+    const task=request.nextUrl.searchParams.get('task')||'',today=businessDate();
+    if(task&&!isStudioTask(task))return json({error:'Invalid work queue filter.'},400);
     const source=request.nextUrl.searchParams.get('source')||'';
+    const kind=request.nextUrl.searchParams.get('kind')||'',follow=request.nextUrl.searchParams.get('follow')||'',sort=request.nextUrl.searchParams.get('sort')||'newest';
+    if(!['','product','bespoke'].includes(kind)||!['','due','today','overdue','upcoming','all'].includes(follow)||!['newest','oldest','followup'].includes(sort))return json({error:'Invalid inquiry view.'},400);
     const product=request.nextUrl.searchParams.get('product')||'',category=request.nextUrl.searchParams.get('category')||'';
     const from=request.nextUrl.searchParams.get('from')||'',to=request.nextUrl.searchParams.get('to')||'';
     const validDate=(v:string)=>/^\d{4}-\d{2}-\d{2}$/.test(v)&&Number.isFinite(Date.parse(v))&&new Date(v).toISOString().slice(0,10)===v;
@@ -42,19 +49,27 @@ export async function GET(request:NextRequest) {
     const page=Math.min(100000,Math.max(1,Number(request.nextUrl.searchParams.get('page'))||1));
     if(!Number.isInteger(page)||stage&&!isOrderStage(stage)||assignee&&assignee!=='unassigned'&&!/^[0-9a-f-]{36}$/i.test(assignee))return json({error:'Invalid filters.'},400);
     const orders = await sql`SELECT o.id, o.client, o.title, o.status, o.version, o.updated_at AS "updatedAt",
-      o.created_at AS "createdAt",COALESCE(i.reference_count,(SELECT count(*)::integer FROM rivya_references r WHERE r.inquiry_id=i.id)) AS "referenceCount",i.reference,i.assignee,u.name AS "assigneeName",i.follow_up AS "followUp",i.request_kind AS "requestKind",CASE WHEN i.id IS NULL THEN 'manual' ELSE 'website' END AS source
+      o.created_at AS "createdAt",COALESCE(i.reference_count,(SELECT count(*)::integer FROM rivya_references r WHERE r.inquiry_id=i.id)) AS "referenceCount",i.reference,i.assignee,u.name AS "assigneeName",i.follow_up::text AS "followUp",i.request_kind AS "requestKind",CASE WHEN i.id IS NULL THEN 'manual' ELSE 'website' END AS source
       FROM rivya_studio_orders o LEFT JOIN rivya_inquiries i ON i.id=o.id LEFT JOIN rivya_staff u ON u.id=i.assignee
       WHERE (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)
       AND (${q}='' OR concat_ws(' ',o.client,o.title,i.reference) ILIKE ${'%'+q+'%'})
       AND (${stage}='' OR o.status=${stage})
       AND (${assignee}='' OR i.assignee::text=${assignee} OR ${assignee}='unassigned' AND i.id IS NOT NULL AND i.assignee IS NULL)
       AND (${source}='' OR ${source}='manual' AND i.id IS NULL OR ${source}='website' AND i.id IS NOT NULL)
+      AND (${kind}='' OR COALESCE(i.request_kind,'product')=${kind} AND i.id IS NOT NULL)
       AND (${product}='' OR i.product_id=${product})
       AND (${category}='' OR lower(i.product_snapshot->>'category')=lower(${category}))
       AND (NULLIF(${from},'')::date IS NULL OR o.created_at>=(NULLIF(${from},'')::date::timestamp AT TIME ZONE 'Asia/Kolkata'))
       AND (NULLIF(${to},'')::date IS NULL OR o.created_at<((NULLIF(${to},'')::date+1)::timestamp AT TIME ZONE 'Asia/Kolkata'))
-      AND (NOT ${due} OR i.follow_up<=(CURRENT_TIMESTAMP AT TIME ZONE 'Asia/Kolkata')::date AND o.status NOT IN ('COMPLETED','CLOSED'))
-      ORDER BY o.created_at DESC,o.id LIMIT 51 OFFSET ${(page-1)*50}`;
+      AND (${follow}<>'' OR NOT ${due} OR i.follow_up<=(CURRENT_TIMESTAMP AT TIME ZONE 'Asia/Kolkata')::date AND o.status NOT IN ('COMPLETED','CLOSED'))
+      AND (${follow}='' OR i.follow_up IS NOT NULL AND o.status NOT IN ('COMPLETED','CLOSED') AND (
+        ${follow}='all' OR ${follow}='due' AND i.follow_up<=${today}::date OR ${follow}='today' AND i.follow_up=${today}::date OR ${follow}='overdue' AND i.follow_up<${today}::date OR ${follow}='upcoming' AND i.follow_up>${today}::date))
+      AND (${task}='' OR o.status NOT IN ('COMPLETED','CLOSED') AND (
+        ${task}='today' AND i.follow_up=${today}::date OR
+        ${task}='overdue' AND i.follow_up<${today}::date OR
+        ${task}='unassigned' AND i.id IS NOT NULL AND i.assignee IS NULL OR
+        ${task}='message-failed' AND i.message_state='handoff_failed'))
+      ORDER BY CASE WHEN ${sort}='followup' THEN i.follow_up END ASC NULLS LAST,CASE WHEN ${sort}='oldest' THEN o.created_at END ASC,CASE WHEN ${sort}<>'oldest' THEN o.created_at END DESC,o.id LIMIT 51 OFFSET ${(page-1)*50}`;
     return json({orders: orders.slice(0,50), hasMore: orders.length > 50, page});
   } catch { return json({error: 'Orders are temporarily unavailable.'}, 503); }
 }

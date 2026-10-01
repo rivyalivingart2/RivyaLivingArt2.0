@@ -32,18 +32,20 @@ function HeaderContent({pathname,navigation,locale,enabledLocales,copy}:{pathnam
  useEffect(()=>{
   const desktop=window.matchMedia('(min-width: 981px)');
   const closeOnDesktop=()=>{if(desktop.matches)setMenuPath(null);};
+  const closeOutside=(event:PointerEvent)=>{if(collectionMenu.current&&!collectionMenu.current.contains(event.target as Node))collectionMenu.current.open=false;};
+  document.addEventListener('pointerdown',closeOutside);
   desktop.addEventListener('change',closeOnDesktop);
-  return()=>desktop.removeEventListener('change',closeOnDesktop);
+  return()=>{desktop.removeEventListener('change',closeOnDesktop);document.removeEventListener('pointerdown',closeOutside);};
  },[]);
  return <header className={s.header}>
   <Link className={s.brand} href="/" aria-label="RivyaLivingArt home">
    <Image src="/brand/rivyalivingart-logo-horizontal-transparent.png" width={410} height={116} alt="RivyaLivingArt" priority/>
   </Link>
   <nav className={s.nav} aria-label="Main navigation">
-   <details className={s.collectionMenu} ref={collectionMenu} onKeyDown={e=>{if(e.key==='Escape'){e.currentTarget.open=false;e.currentTarget.querySelector('summary')?.focus();}}} onBlur={e=>{if(!e.currentTarget.contains(e.relatedTarget))e.currentTarget.open=false;}}>
+   {collections.length>0&&<details className={s.collectionMenu} ref={collectionMenu} onKeyDown={e=>{if(e.key==='Escape'){e.currentTarget.open=false;e.currentTarget.querySelector('summary')?.focus();}}} onBlur={e=>{if(!e.currentTarget.contains(e.relatedTarget))e.currentTarget.open=false;}}>
     <summary data-active={collections.some(item=>active(item.href))}>{label('collections')} <ChevronDown size={14} aria-hidden="true"/></summary>
     <div className={s.collectionPanel}>{collections.map(item=><NavAnchor key={item.id} item={item} locale={locale} current={active(item.href)} onClick={()=>{if(collectionMenu.current)collectionMenu.current.open=false;}}/>)}</div>
-   </details>
+   </details>}
    {pages.map(item=><NavAnchor key={item.id} item={item} locale={locale} current={active(item.href)}/>)}
   </nav>
   <div className={s.headerActions}>
@@ -68,6 +70,6 @@ function HeaderContent({pathname,navigation,locale,enabledLocales,copy}:{pathnam
     <Link href="/commission" className={s.button} onClick={close}>{label('beginPiece')} <ArrowUpRight size={18} aria-hidden="true"/></Link>
    </nav>
   </Dialog>
-  <Dialog open={searchPath===pathname} title={label('findPiece')} onClose={()=>setSearchPath(null)}><form action="/search" method="get" className={s.searchForm}><label>{label('searchCollection')}<input autoFocus type="search" name="q" maxLength={100} placeholder={label('searchPieces')}/></label><button type="submit" className={s.button}>{label('exploreResults')}</button><Link className={s.textLink} href="/search" onClick={()=>setSearchPath(null)}>{label('browseAllPieces')}</Link></form></Dialog>
+  <Dialog open={searchPath===pathname} title={label('findPiece')} onClose={()=>setSearchPath(null)}><form action="/search" method="get" className={s.searchForm}><label>{label('searchCollection')}<input data-dialog-autofocus type="search" name="q" maxLength={100} placeholder={label('searchPieces')}/></label><button type="submit" className={s.button}>{label('exploreResults')}</button><Link className={s.textLink} href="/search" onClick={()=>setSearchPath(null)}>{label('browseAllPieces')}</Link></form></Dialog>
  </header>;
 }

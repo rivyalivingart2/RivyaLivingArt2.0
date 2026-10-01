@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import {formatPrice} from '@/lib/product-presentation';
+import {SavePieceButton} from './saved-piece-button';
+import pstyle from './detailed-pages.module.css';
 import Image from './public-image';
 import type {ShopProduct} from '@/lib/shop-model';
 import {imageSizes} from './image-sizes';
@@ -6,16 +9,9 @@ import s from './shop.module.css';
 
 export type CardProduct = Pick<ShopProduct, 'id' | 'slug' | 'name' | 'subtitle' | 'category' | 'tier' | 'material' | 'image' | 'imageAlt' | 'imagePosition' | 'price'>;
 
-function formatPrice(price: ShopProduct['price']) {
-  if (!price) return 'Price on request';
-  if (price.mode === 'fixed') return `₹${price.amount.toLocaleString('en-IN')}`;
-  if (price.mode === 'starting') return `From ₹${price.amount.toLocaleString('en-IN')}`;
-  return 'Price on request';
-}
-
 export function ProductCard({product: p}: {product: CardProduct}) {
   return (
-    <Link className={s.card} prefetch={false} href={'/pieces/' + p.slug}>
+    <article className={pstyle.savedCard}><Link className={s.card} prefetch={false} href={'/pieces/' + p.slug}>
       <div className={s.cardImage}>
         <Image 
           src={p.image} 
@@ -46,6 +42,6 @@ export function ProductCard({product: p}: {product: CardProduct}) {
       <small className={s.productIndex}>
         {p.id} / {p.tier === 'personal' ? formatPrice(p.price) : 'Price on request'}
       </small>
-    </Link>
+    </Link><SavePieceButton id={p.id} name={p.name}/></article>
   );
 }

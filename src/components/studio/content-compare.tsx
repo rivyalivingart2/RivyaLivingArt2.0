@@ -1,3 +1,4 @@
+import {editorialSlots} from '@/lib/editorial-slots';
 import {contentDifferences} from '@/lib/content-diff';
 import Image from 'next/image';
 import {validUsage,type EditorialUsage} from '@/lib/homepage-model';
@@ -6,7 +7,7 @@ import s from './workspace.module.css';
 function usages(value:unknown){
  const document=value as Partial<ContentDocument>|null;
  const found=new Map<string,EditorialUsage>();
- for(const section of [...(document?.sections||[]),...(document?.homepage?.sections||[])])if(section.image&&typeof section.image==='object'&&validUsage(section.image))found.set(section.id,section.image);
+ if(document?.sections&&document.id)for(const slot of editorialSlots(document as ContentDocument))if(slot.usage&&validUsage(slot.usage))found.set(slot.key,slot.usage);
  return found;
 }
 export function ContentCompare({before,after}:{before:unknown;after:unknown}){

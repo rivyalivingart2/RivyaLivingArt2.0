@@ -1,0 +1,9 @@
+# Decision — publish the complete P3–P5 source through a detailed PR
+
+1 October 2026. The owner explicitly requested: “PUSH ALL UPDATED FILE INTO MAIN GIT BRANCH WITH PR THAT HAVE ALL DETAILS ON CREATED CHANGES”. This authorizes pushing the complete local P3/P4/P5 feature branch, creating a detailed PR to main, checking its current status and merging through that PR. It supersedes the local-only hold for this accumulated change set. Do not push directly to main or bypass required checks/reviews. Future unrelated work remains local until another explicit push instruction.
+
+Before publication, origin/main was refreshed and remained `8990e73e818c9a0f9aba8183c1e2d9f74a5206c9`; the clean branch contained six implementation commits through `a06971bf17ebe26d989c3046789258b83687ae48`. GitHub reported no existing open PR, no protected-main status contexts and no active main rulesets. Final application validation is retained in the P5 closure; publication preparation changes only documentation.
+
+Preserve all products/forms/originals/gallery associations, contacts, scraper, drafts and history. No old-product transfer, scraper work, production database writes or synthetic-data promotion. Existing Vercel Git deployments are enabled and may build Preview on feature push and production on merge; configuration is unchanged. No manual deploy/promotion, environment change or production Studio content publication is part of this request.
+
+P4 T41/T61 performance acceptance and P6–P8 remain open as recorded. P3/P4 destination image/section publication follows the existing release manifests and current destination drafts; do not copy QA IDs. Read `docs/redesign/P3-P5-MAIN-SUMMARY.md` and `P3-P5-CHANGE-REGISTER.md` for the complete code and evidence inventory. Historical closure statements that work was local remain dated evidence rather than a continuing prohibition on this authorized PR.
