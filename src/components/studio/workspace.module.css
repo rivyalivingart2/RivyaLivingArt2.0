@@ -239,3 +239,10 @@
 .referencePage {min-height:100svh;background:#041c2c;color:#f4f1e9;padding:clamp(20px,5vw,64px);font-family:var(--font-sans),sans-serif;overflow-wrap:anywhere}
 .referencePage a,.referencePage button {color:#f4f1e9;border:1px solid #425361;border-radius:6px;background:#08283a;padding:12px;min-height:44px}
 .referencePage img {display:block;max-width:100%;max-height:75svh;object-fit:contain;margin:24px auto}
+
+/* Keep the full image and caption inside each card when the library scrolls. */
+.mediaGrid {
+  grid-auto-rows: max-content;
+  align-content: start;
+  align-self: start;
+}
