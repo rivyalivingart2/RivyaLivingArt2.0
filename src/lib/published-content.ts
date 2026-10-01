@@ -4,7 +4,8 @@ import {studioDb} from './studio-db';
 import {baselineContent,localizeContent,validContent,type ContentDocument} from './content-model';
 import type {Locale} from './site-settings-model';
 import {publishedMedia} from './published-media';
-export type PublishedContentDocument=ContentDocument&{imagePosition?:string};
+import {captureHomepage} from './homepage-persistence';
+export type PublishedContentDocument=ContentDocument&{imagePosition?:string;publishedRevision?:number};
 /** Reads only durable published revisions. Source candidates never become a public fallback. */
 export const publishedContent=cache(async(locale:Locale='en'):Promise<PublishedContentDocument[]>=>{
  const sql=studioDb();
@@ -18,11 +19,13 @@ export const publishedContent=cache(async(locale:Locale='en'):Promise<PublishedC
   if(!d||d.id!==row.content_key||d.route!==row.route||d.kind!==row.kind||!Number.isSafeInteger(version)||version<1||!validContent(d,baselineContent.find(b=>b.id===d.id))||routes.has(d.route))continue;
   const image=d.image?images.get(d.image):undefined;
   // Only public fields leave the persistence layer. Drafts and extra stored keys never do.
-  const publicDocument:PublishedContentDocument={id:d.id,kind:d.kind,route:d.route,title:d.title,eyebrow:d.eyebrow,description:d.description,
+  const publicDocument:PublishedContentDocument={id:d.id,kind:d.kind,route:d.route,title:d.title,eyebrow:d.eyebrow,description:d.description,publishedRevision:version,
    sections:d.sections.map(b=>({id:b.id,heading:b.heading,paragraphs:[...b.paragraphs],...(b.checklist?{checklist:[...b.checklist]}:{})})),
    ...(image?{image:image.path,imageAlt:d.imageAlt||image.alt,imagePosition:image.focalX+'% '+image.focalY+'%'}:{}),
    ...(d.relatedProductIds?{relatedProductIds:[...d.relatedProductIds]}:{}),
-   ...(d.translations?{translations:d.translations}:{})};
+   ...(d.translations?{translations:d.translations}:{}),
+   // Public references follow current publication/withdrawal. Private saved previews retain their exact snapshot.
+   ...(d.homepage&&d.homeSnapshot?.schemaVersion===1?{homepage:d.homepage,homeSnapshot:await captureHomepage(d)}:{})};
   documents.push(localizeContent(publicDocument,locale));
   routes.add(d.route);
  }

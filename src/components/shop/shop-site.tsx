@@ -19,6 +19,7 @@ import {publishedContent} from '@/lib/published-content';
 import type {ContentDocument} from '@/lib/content-model';
 import {imageSizes} from './image-sizes';
 import s from './shop.module.css';
+import {HomepageDocument} from './homepage-document';
 const button=(outline=false)=>`${s.button} ${outline?s.outline:''}`;
 const card=(p:ShopProduct)=>({id:p.id,slug:p.slug,name:p.name,subtitle:p.subtitle,category:p.category,tier:p.tier,material:p.material,image:p.image,imageAlt:p.imageAlt,imagePosition:p.imagePosition,price:p.price});
 export function Invitation(){return <section className={s.invitation}><span className={s.eyebrow}>A place for your idea</span><h2>Let’s make it<br/><em>meaningful.</em></h2><p>A room in mind. A memory to hold. A person to celebrate. Tell us where your piece begins.</p><div className={s.actions}><Link className={button()} href="/commission">Begin your piece ↗</Link></div></section>;}
@@ -47,7 +48,10 @@ export async function ShopSite({route}:{route:string}){
  const locale=await publicLocale();
  const needsCatalogue=route==='/'||route.startsWith('/pieces/')||['/collectible-design','/memory-art','/personal-art','/search','/commission','/preserve','/personalize','/portfolio'].includes(route);
  const [products,documents,business]=await Promise.all([needsCatalogue?publishedProducts(locale):Promise.resolve([]),route==='/'?publishedContent(locale):Promise.resolve([]),publishedBusiness()]);let content:React.ReactNode;
- if(route==='/')content=<Home products={products} articles={documents.filter(a=>a.kind==='article')}/>;
+ if(route==='/'){
+  const home=documents.find(d=>d.id==='page:home'&&d.homepage&&d.homeSnapshot);
+  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!}/></>:<Home products={products} articles={documents.filter(a=>a.kind==='article')}/>;
+ }
  else if(route.startsWith('/pieces/')){
   const slug=route.split('/')[2];const product=products.find(p=>p.slug===slug);if(!product)notFound();
    content=route.endsWith('/customize')?<><Intro eyebrow="A brief for your piece" title="Make it yours.">Your choices. Your references. One conversation with the studio.</Intro><OrderForm key={product.id} product={product}/></>:<><ProductStructuredData product={product}/><div className={s.pageIntro}><nav className={s.breadcrumb} aria-label="Breadcrumb"><Link href="/">Home</Link><span className={s.breadcrumbSeparator} aria-hidden="true">/</span><Link href={collectionLinks[product.tier]}>{collectionLabels[product.tier]}</Link><span className={s.breadcrumbSeparator} aria-hidden="true">/</span><span className={s.breadcrumbCurrent} aria-current="page">{product.name}</span></nav></div><section className={s.detail}><div><Gallery key={product.id+':'+product.revision} product={{image:product.image,imageAlt:product.imageAlt,imagePosition:product.imagePosition,imageCaption:product.imageCaption,scene:product.scene,sceneAlt:product.sceneAlt,scenePosition:product.scenePosition,sceneCaption:product.sceneCaption,name:product.name,gallery:product.gallery}}/></div><div className={s.detailCopy}><span className={s.eyebrow}>{product.category} / {product.id}</span><h1>{product.name}</h1><p>{product.subtitle}</p><p>{product.story}</p><p>{product.tier === 'personal' && product.price ? (product.price.mode === 'fixed' ? `₹${product.price.amount.toLocaleString('en-IN')}` : product.price.mode === 'starting' ? `From ₹${product.price.amount.toLocaleString('en-IN')}` : 'Price on request') : 'Price on request'} · Customized to your brief</p>

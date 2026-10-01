@@ -1,3 +1,9 @@
+# Current continuation — P2 homepage workflow
+
+1 October 2026. Read `docs/decisions/2026-10-01-p2-homepage-workflow.md` and `docs/redesign/P2-HOMEPAGE-CHECKPOINT.md` first. Work is on `codex/p2-homepage-workflow` from the saved P1 commit. The minimum home draft → exact preview → publish → anonymous verification → restore workflow passed isolated QA; broader P2 coverage remains in progress. Preserve current products, galleries, contacts and the scraper. No old-product transfer or production release. Earlier checkpoint text below is historical where superseded.
+
+---
+
 # Active owner instruction — Midnight atelier presentation redesign
 
 24 September 2026. Read docs/decisions/2026-09-24-midnight-atelier.md and docs/redesign/MIDNIGHT-ATELIER-CHECKPOINT.md. The owner explicitly resumed presentation work and its quality gates. Work on codex/midnight-atelier from current main; preserve the current published ShopSite architecture and all data/security behavior. Publish a protected Preview for owner visual review only. No main merge or Production deployment is authorized for this new redesign. Prior stopped operational work remains pending.

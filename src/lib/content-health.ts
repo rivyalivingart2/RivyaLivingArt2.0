@@ -25,6 +25,8 @@ export function contentHealthRows(content:ContentHealthEntry[],products:ProductH
   if(!d.title.trim()||d.title.length>65)notes.push({text:!d.title.trim()?'Missing title':'Long title',field:'title'});
   if(d.description.length<70||d.description.length>180)notes.push({text:d.description.length<70?'Short search description':'Long search description',field:'description'});
   if(d.image&&!d.imageAlt?.trim())notes.push({text:'Missing image description',field:'imageAlt'});
+  for(const issue of d.homeSnapshot?.issues||[])notes.push({text:issue,field:'title'});
+  if(d.homepage&&!d.homeSnapshot)notes.push({text:'Save the homepage to check published references and image placements',field:'title'});
   if(e.visible&&!e.published)notes.push({text:'Visibility is set without a published revision',field:'title'});
   rows.push({id:d.id,area:'Content',name:d.title,publication:publicationState(e.published,e.visible),readiness:notes.length?'Needs review':'No issues flagged',draft:draftState(d,e.published,e.version),detail:notes.map(n=>n.text).join(' · ')||'No editorial issues flagged; review the page before publishing.',href:studioRecordHref('content',d.id,notes[0]?.field)});
  }

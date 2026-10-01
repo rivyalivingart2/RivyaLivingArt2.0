@@ -1,3 +1,9 @@
+# Current continuation — P2 homepage workflow
+
+1 October 2026. Read `docs/decisions/2026-10-01-p2-homepage-workflow.md` and `docs/redesign/P2-HOMEPAGE-CHECKPOINT.md` first. Work is on `codex/p2-homepage-workflow` from the saved P1 commit. The minimum home draft → exact preview → publish → anonymous verification → restore workflow passed isolated QA; broader P2 coverage remains in progress. Preserve current products, galleries, contacts and the scraper. No old-product transfer or production release. Earlier checkpoint text below is historical where superseded.
+
+---
+
 # Current owner scope — P1 Studio foundations
 
 30 September 2026. The owner explicitly started P1 of the consolidated old-to-new implementation plan. Read `docs/decisions/2026-09-30-p1-foundations.md` and `docs/redesign/P1-FOUNDATIONS-CHECKPOINT.md` first. Work is on `codex/p1-studio-foundations` from main `7569bbf720e73c5fee0117618a702b297af116de`. Development and local checks for this phase are authorized; production release remains a separate gate. No scraper work and no old-product transfer. Use the confirmed new-site contacts for the existing Imprint candidate. Preserve current products, contacts, media associations, authentication and manual-send behavior. Older entries below are historical where superseded.

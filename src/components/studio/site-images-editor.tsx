@@ -1,6 +1,6 @@
 'use client';
-import {MediaLibrary} from './media-library';
+import {ContentEditor} from './content-editor';
 
 export function SiteImagesEditor({admin}:{admin:boolean}){
- return <MediaLibrary admin={admin}/>;
+ return <ContentEditor admin={admin} initialKind="page" initialRecord="page:home" initialHomeSection="material"/>;
 }

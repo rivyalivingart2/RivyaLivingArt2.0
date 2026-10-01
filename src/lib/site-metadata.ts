@@ -20,6 +20,7 @@ const staticPages:Record<string,[string,string]>={
 export async function routeMetadata(route:string):Promise<Metadata>{
  if(!isPublicWebsiteAvailable(process.env))return {title:'Unavailable',robots:{index:false,follow:false}};
  let [title,description]=staticPages[route]||['',''];let image='/brand/rivyalivingart-logo-horizontal-transparent.png',imageAlt='RivyaLivingArt';
+ if(route==='/'){const home=await publishedPage('/');if(home?.homepage&&home.homeSnapshot){title=home.title;description=home.description;const lead=home.homeSnapshot.products.find(p=>p.id===home.homepage!.heroProductId);if(lead){image=lead.image;imageAlt=lead.imageAlt||lead.name;}}}
  if(route.startsWith('/pieces/')){
   const slug=route.slice('/pieces/'.length),products=await publishedProducts();
   const p=products.find(p=>p.slug===slug)||products.find(p=>p.id===findConcept(slug)?.id);

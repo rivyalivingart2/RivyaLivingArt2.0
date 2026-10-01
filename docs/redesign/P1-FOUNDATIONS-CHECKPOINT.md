@@ -1,3 +1,9 @@
+# 1 October 2026 follow-through
+
+P2 continuation located and verified the existing isolated QA resources. Authenticated Content health and its homepage record link passed. The factual Imprint was saved and published only in isolated QA, then checked anonymously and through the actual footer. Homepage save/preview/publish/recovery and inline recovery cancellation were exercised with real persistence. Production publication, editor-account coverage and the remaining P1 checks are not all complete. Continue from [P2-HOMEPAGE-CHECKPOINT.md](P2-HOMEPAGE-CHECKPOINT.md); the dated P1 record below preserves the earlier evidence.
+
+---
+
 # P1 implementation checkpoint
 
 30 September 2026. **Source implemented and locally checked; integrated QA and publication remain pending.**
