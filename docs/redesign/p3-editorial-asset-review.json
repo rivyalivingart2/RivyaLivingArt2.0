@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "sourceFolder": "https://drive.google.com/drive/folders/1P2HCTmPge6HsEwtoo-xGEzPTSn68oZOW",
+  "curatedFolder": "1wbayNeBOmE-q_MELHJCEax3YyEUyllLL",
+  "reviewedAt": "2026-10-01",
+  "reviewer": "Codex visual inspection",
+  "scope": "Initial P3 candidate review only; not ingestion or publication approval",
+  "assets": [
+    {
+      "id": "17rLJSM6v8z_MqArs8lyksy1hpN8ljfru",
+      "name": "hero-pour.jpg",
+      "mime": "image/jpeg",
+      "bytes": 211806,
+      "url": "https://drive.google.com/file/d/17rLJSM6v8z_MqArs8lyksy1hpN8ljfru/view",
+      "subject": "Blue resin-like material pouring into glossy folds with gold flecks",
+      "role": "Material story or illustrative process introduction",
+      "alt": "Blue material flowing into glossy folds with gold flecks",
+      "crop": {
+        "desktop": {
+          "x": 42,
+          "y": 54,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 40,
+          "y": 52,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Illustrative material visual. Does not establish an actual Rivya workshop process, equipment or resin specification.",
+      "visualReview": "pixels inspected",
+      "provenance": "Owner-supplied from Higgsfield Originals; treated as design visualization. Photographic authenticity not independently established.",
+      "publication": "not ingested or published",
+      "productAssociations": [],
+      "sha256": "be54fcd332bb12dae0923a86e3d9fa074a0e052fc04520d0bdb369bf499116b7",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "1o5VSIpFgnyn4Obrfh3Bowhm4-bsxz1Mj",
+      "name": "doorway-collectible.jpg",
+      "mime": "image/jpeg",
+      "bytes": 258778,
+      "url": "https://drive.google.com/file/d/1o5VSIpFgnyn4Obrfh3Bowhm4-bsxz1Mj/view",
+      "subject": "Blue and gold river-style timber table in a dark room",
+      "role": "Collectible design doorway",
+      "alt": "Timber and blue resin-style table in a dark interior",
+      "crop": {
+        "desktop": {
+          "x": 50,
+          "y": 61,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 50,
+          "y": 55,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Do not identify as an existing catalogue SKU or completed client installation without confirmation.",
+      "visualReview": "pixels inspected",
+      "provenance": "Owner-supplied from Higgsfield Originals; treated as design visualization. Photographic authenticity not independently established.",
+      "publication": "not ingested or published",
+      "productAssociations": [],
+      "sha256": "6934feb5740e39a5192e89d9ae506952e7f8b8ba3609f39c7eec71387a29a8be",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "19KOc4hLTXevHis-A0b_8gtedAgsmWRoC",
+      "name": "doorway-memory.jpg",
+      "mime": "image/jpeg",
+      "bytes": 181244,
+      "url": "https://drive.google.com/file/d/19KOc4hLTXevHis-A0b_8gtedAgsmWRoC/view",
+      "subject": "Red and pale flowers with gold flecks in a clear rectangular block",
+      "role": "Memory art doorway",
+      "alt": "Red and pale flowers displayed within a clear decorative block",
+      "crop": {
+        "desktop": {
+          "x": 50,
+          "y": 40,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 50,
+          "y": 43,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Illustrative preservation direction, not evidence of preservation outcomes or a particular customer's keepsakes.",
+      "visualReview": "pixels inspected",
+      "provenance": "Owner-supplied from Higgsfield Originals; treated as design visualization. Photographic authenticity not independently established.",
+      "publication": "not ingested or published",
+      "productAssociations": [],
+      "sha256": "5e14af18d1837fe803ad3dcec0a80e582b3f98d602a27bedcd6c64dfe7092d96",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "1woyD_wMKVigC6rp2Vky9sCojxyHAKmM-",
+      "name": "doorway-gifts.jpg",
+      "mime": "image/jpeg",
+      "bytes": 337148,
+      "url": "https://drive.google.com/file/d/1woyD_wMKVigC6rp2Vky9sCojxyHAKmM-/view",
+      "subject": "Blue and gold bangles, pendants and letter keychains arranged on dark fabric",
+      "role": "Personal art and gifts doorway",
+      "alt": "Blue and gold decorative jewellery and letter keychains",
+      "crop": {
+        "desktop": {
+          "x": 50,
+          "y": 51,
+          "ratio": "3/2"
+        },
+        "mobile": {
+          "x": 50,
+          "y": 53,
+          "ratio": "4/5"
+        }
+      },
+      "limits": "Mixed gift subjects; do not attach as the gallery for a single pendant or assume catalogue availability.",
+      "visualReview": "pixels inspected",
+      "provenance": "Owner-supplied from Higgsfield Originals; treated as design visualization. Photographic authenticity not independently established.",
+      "publication": "not ingested or published",
+      "productAssociations": [],
+      "sha256": "174e2e812ed9d275de1e773b4dcb5ce09232c48321623d2ebcce2ec12242e7b7",
+      "width": 1024,
+      "height": 1536
+    }
+  ]
+}

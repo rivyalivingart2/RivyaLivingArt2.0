@@ -1,3 +1,11 @@
+# Current owner rule — local work; detailed PR when pushing main
+
+1 October 2026. All development stays local unless the owner explicitly says to push to main. On that instruction, push a feature branch and open a pull request to main with the complete change description, affected areas, verification, protected-data checks, limitations and recovery notes. Merge through that PR after required checks. Do not push directly to main, silently push working branches, deploy, or publish production content. Local commits are allowed. The owner's previous direct push is historical, not the rule for future work.
+
+The owner has now authorized starting P3 from main `8990e73` on local `codex/p3-editorial-images`. Use images from https://drive.google.com/drive/folders/1P2HCTmPge6HsEwtoo-xGEzPTSn68oZOW. Read `docs/redesign/P3-CHECKPOINT.md`. Keep existing products, contact values, galleries and scraper protected; no old-product transfer. P3 is in progress, not complete.
+
+---
+
 # Current owner instruction — publish P0/P1/P2 changes to main
 
 1 October 2026. The owner explicitly requested "PUSH ALL CHANGES INTO MAIN BRANCH" after P2 completion. This authorizes merging and pushing the completed implementation commits to GitHub main and supersedes the earlier no-push/no-merge boundary for this delivery. Preserve all protected product, contact, gallery, scraper and history contracts. No new phase implementation, manual deployment/promotion or production content publication is requested. Existing Vercel Git deployment configuration is enabled and is left unchanged; a push may trigger its normal pipeline. See `docs/decisions/2026-10-01-publish-p2-main.md` and `docs/redesign/P2-CLOSURE.md`.
