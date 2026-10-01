@@ -1,4 +1,5 @@
 'use client';
+import {useRecordSwitch,RecordSwitchNotice} from './record-switch';
 import {DraftRecovery} from './draft-recovery';
 import {useLinkedRecord,LinkedRecordNotice} from './linked-record';
 import {publicationState,draftState} from '@/lib/content-health';
@@ -62,9 +63,10 @@ export function CatalogueEditor({admin}:{admin:boolean}){
  });
 
  const {page, setPage, totalPages, paginatedItems} = usePagination(filteredEntries, 20);
+ const switching=useRecordSwitch(dirty);
  const linked=useLinkedRecord({editor:'products',records:entries,loaded,selectedId:entry?.product.id,idOf:e=>e.product.id,busy,onSelect:(next,target)=>{
-  if(dirty&&!window.confirm('Discard unsaved edits to this piece?'))return false;
-  setEntry(structuredClone(next));setDirty(false);setPreview(false);setPreviewAnswers({});setQuery('');setTierFilter('all');setPage(Math.floor(entries.findIndex(e=>e.product.id===next.product.id)/20)+1);setActiveTab(target.tab);return true;
+  if(next.product.id===entry?.product.id){setActiveTab(target.tab);return true;}
+  return switching.request(()=>{setEntry(structuredClone(next));setDirty(false);setPreview(false);setPreviewAnswers({});setQuery('');setTierFilter('all');setPage(Math.floor(entries.findIndex(e=>e.product.id===next.product.id)/20)+1);setActiveTab(target.tab);});
  }});
 
  return (
@@ -84,7 +86,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
     </button>
    </div>
 
-   <p className={s.status} role="status">{message}</p><LinkedRecordNotice {...linked}/>
+   <p className={s.status} role="status">{message}</p><LinkedRecordNotice {...linked}/><RecordSwitchNotice control={switching}/>
 
    {/* Collection Filter Tabs */}
    <div className={s.categoryTabs} role="tablist" aria-label="Filter by collection">
@@ -130,12 +132,11 @@ export function CatalogueEditor({admin}:{admin:boolean}){
     <button
       type="button"
       disabled={busy||!media.length}
-      onClick={()=>{
-        if(dirty&&!window.confirm('Discard unsaved edits?'))return;
+      onClick={()=>switching.request(()=>{
         setEntry({version:0,publishedVersion:0,published:null,visible:false,hasDraft:true,product:{id:'RLA-'+crypto.randomUUID(),slug:'new-piece-'+crypto.randomUUID().slice(0,8),name:'New piece',subtitle:'',category:'Tables',tier:tierFilter === 'all' ? 'large' : tierFilter,image:media[0].path,story:'',fields:[{id:'brief',label:'Your requirements',type:'text',required:true,maxLength:240}],revision:1}});
         setDirty(true);
         setActiveTab('general');
-      }}
+      })}
       style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
     >
       <Plus size={15} />
@@ -170,13 +171,12 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           key={e.product.id}
           aria-pressed={entry?.product.id===e.product.id}
           disabled={busy}
-          onClick={()=>{
-            if(dirty&&!window.confirm('Discard unsaved edits to this piece?'))return;
+          onClick={()=>{if(e.product.id===entry?.product.id)return;switching.request(()=>{
             setEntry(structuredClone(e));
             setPreviewAnswers({});
             setDirty(false);
             setActiveTab('general');
-          }}
+          });}}
         >
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
             <strong>{e.product.name}</strong>

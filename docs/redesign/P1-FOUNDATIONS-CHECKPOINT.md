@@ -1,3 +1,9 @@
+# Latest acceptance — P0/P1 closed; continue P2
+
+1 October 2026. The owner explicitly requested completion of P0/P1 before P2. P0 baseline and P1 implementation/isolated acceptance are complete; see [P1 closure](P1-CLOSURE.md). Production release is still the P8 gate. Preserve all protected products, media, contacts and scraper behavior; transfer no old products. Earlier pending editor-role, Imprint, terms, keyboard and record-switch QA statements below are superseded by that report.
+
+---
+
 # 1 October 2026 follow-through
 
 P2 continuation located and verified the existing isolated QA resources. Authenticated Content health and its homepage record link passed. The factual Imprint was saved and published only in isolated QA, then checked anonymously and through the actual footer. Homepage save/preview/publish/recovery and inline recovery cancellation were exercised with real persistence. Production publication, editor-account coverage and the remaining P1 checks are not all complete. Continue from [P2-HOMEPAGE-CHECKPOINT.md](P2-HOMEPAGE-CHECKPOINT.md); the dated P1 record below preserves the earlier evidence.

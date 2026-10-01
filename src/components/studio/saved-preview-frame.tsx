@@ -12,10 +12,10 @@ export function SavedPreviewFrame({href,revision}:{href:string;revision:number})
     <button type="button" onClick={()=>{setStatus('loading');setAttempt(v=>v+1);}}>Retry preview</button>
    </>:<span>Mobile preview · revision {revision}</span>}
   </div>
-  <iframe ref={frame} key={attempt} title={'Homepage revision '+revision+' at mobile width'} src={href} onLoad={()=>{
+  <iframe ref={frame} key={attempt} title={'Page revision '+revision+' at mobile width'} src={href} onLoad={()=>{
    try{
     const content=frame.current?.contentDocument;
-    setStatus(content?.querySelector(`[data-home-revision="${revision}"]`)?'ready':'failed');
+    setStatus(content?.querySelector(`[data-home-revision="${revision}"], [data-saved-content-revision="${revision}"]`)?'ready':'failed');
    }catch{setStatus('failed');}
   }}/>
  </>;

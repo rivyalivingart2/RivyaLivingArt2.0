@@ -7,6 +7,8 @@ import {isDeepStrictEqual} from 'node:util';
 import {captureHomepage} from '@/lib/homepage-persistence';
 import {homeId,type HomeDependency} from '@/lib/homepage-model';
 import {publishedProducts} from '@/lib/shop-catalogue';
+import {publishedBusiness} from '@/lib/business-settings';
+import {bindImprintContacts} from '@/lib/imprint-content';
 export const dynamic='force-dynamic';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
 const editorialComparable=(document:ContentDocument)=>{const editorial={...document};delete editorial.homeSnapshot;return editorial;};
@@ -31,6 +33,10 @@ export async function POST(request:Request){
   const existing=await sql`SELECT draft,version,published_version FROM rivya_content WHERE content_key=${typeof d?.id==='string'?d.id:''}`;
   const base=baselineContent.find(b=>b.id===d?.id)||existing[0]?.draft;
   if(!validContent(d,base))return json({error:'Check the title, description, sections and approved image. Published page addresses must stay stable.'},400);
+  if(d.id==='page:imprint'){
+   d=bindImprintContacts(d,(await publishedBusiness()).details);
+   if(!validContent(d,base))return json({error:'Leave room for the required business contact section.'},400);
+  }
   const publish=body.operation==='publish',hide=body.operation==='hide';
   if(body.restoredFrom!==undefined){
    if(body.operation!=='draft'||!Number.isSafeInteger(body.restoredFrom)||body.restoredFrom<1||body.restoredFrom>body.version)return json({error:'Choose a saved revision to restore.'},400);

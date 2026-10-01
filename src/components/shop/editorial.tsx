@@ -1,4 +1,5 @@
 import Image from './public-image';
+import {bindImprintContacts,imprintContactId} from '@/lib/imprint-content';
 import {publishedBusiness} from '@/lib/business-settings';
 import Link from 'next/link';
 import {notFound} from 'next/navigation';
@@ -34,10 +35,16 @@ export async function EditorialPage({route,locale='en'}:{route:string;locale?:Lo
   </>;
  }
  const content=documents.find(d=>d.route===route);if(!content)notFound();
+ return <EditorialDocument content={content} documents={documents} locale={locale}/>;
+}
+/** Shared by public pages and authenticated saved-revision previews. */
+export async function EditorialDocument({content:source,documents,locale='en'}:{content:PublishedContentDocument;documents:PublishedContentDocument[];locale?:Locale}){
+ const route=source.route,articles=documents.filter(d=>d.kind==='article');
+ const business=route==='/contact'||!!policies[route]?(await publishedBusiness()).details:null;
+ const content=business?bindImprintContacts(source,business):source;
  const article=content.kind==='article',faq=route==='/faq',policy=!!policies[route];
  const related=article&&content.relatedProductIds?.length?(await publishedProducts(locale)).filter(p=>content.relatedProductIds!.includes(p.id)):[];
  const more=articles.filter(a=>a.id!==content.id).sort((a,b)=>Number(b.eyebrow===content.eyebrow)-Number(a.eyebrow===content.eyebrow)).slice(0,3);
- const business=route==='/contact'||policy?(await publishedBusiness()).details:null;
  const next=nextSteps[route]||['/commission','Begin your piece','/journal','Return to the journal'];
  return <div data-editorial={article?'article':route.slice(1)}>
   <EditorialStructuredData document={content}/>
@@ -46,7 +53,7 @@ export async function EditorialPage({route,locale='en'}:{route:string;locale?:Lo
   {content.image&&<figure className={s.storyImage}><Image src={content.image} alt={content.imageAlt||''} style={{objectPosition:content.imagePosition}} fill priority sizes={imageSizes.story}/><figcaption>Design visualization</figcaption></figure>}
   <div className={s.readingLayout}>{content.sections.length>3&&<nav className={s.contents} aria-label="On this page"><p>On this page</p>{content.sections.map(b=><a key={b.id} href={'#'+b.id}>{b.heading}</a>)}</nav>}
    <div className={s.prose}>{article&&<p className={s.eyebrow}>By RivyaLivingArt · <span className={s.productIndex} style={{display:'inline',margin:0}}>{minutes(content)} minute read</span></p>}
-    {content.sections.map(b=>faq?<details id={b.id} key={b.id}><summary>{b.heading}</summary><SectionBody section={b}/></details>:<section id={b.id} key={b.id}><h2>{b.heading}</h2><SectionBody section={b}/></section>)}
+    {content.sections.map(b=>faq?<details id={b.id} key={b.id}><summary>{b.heading}</summary><SectionBody section={b}/></details>:<section id={b.id} key={b.id}><h2>{b.heading}</h2>{!(route==='/imprint'&&b.id===imprintContactId)&&<SectionBody section={b}/>} {route==='/imprint'&&b.id===imprintContactId&&business&&<dl className={s.imprintContacts}><div><dt>Telephone</dt><dd><a href={'tel:'+business.phone}>{business.phone}</a></dd></div><div><dt>Email</dt><dd><a href={'mailto:'+business.email}>{business.email}</a></dd></div></dl>}</section>)}
     {policy?<><nav className={s.policyLinks} aria-label="Policies and help">{Object.entries(policies).filter(([p])=>p!==route).map(([p,label])=><Link key={p} href={p}>{label}</Link>)}</nav><div className={s.actions}><Link className={s.button} href="/contact">Contact the atelier ↗</Link>{business&&<a className={s.textLink} href={'mailto:'+business.email}>Email about this page</a>}</div></>:route!=='/contact'&&<div className={s.actions}><Link className={s.button} href={next[0]}>{next[1]} ↗</Link><Link className={s.textLink} href={next[2]}>{next[3]}</Link></div>}
     {route==='/contact'&&business&&<div className={s.contactCards}><a href={'tel:'+business.phone}><span>Call the atelier</span>{business.phone}</a><a href={'mailto:'+business.email}><span>General questions & existing inquiries</span>{business.email}</a><a href={business.map} target="_blank" rel="noreferrer"><span>Location</span>Open the atelier map ↗</a><Link href="/commission"><span>Product & custom-piece requests</span>Prepare your saved order brief ↗</Link></div>}
    </div>

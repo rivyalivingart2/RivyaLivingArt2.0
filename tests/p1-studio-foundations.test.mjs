@@ -7,6 +7,8 @@ import {businessDatePreset} from '../src/lib/business-time.ts';
 import {baselineContent,validContent} from '../src/lib/content-model.ts';
 import {baselineProducts} from '../src/lib/shop-model.ts';
 import {approvedPublicMedia} from '../src/lib/public-media.ts';
+import {bindImprintContacts,imprintContactId} from '../src/lib/imprint-content.ts';
+import {defaultBusiness} from '../src/lib/business-settings-model.ts';
 
 test('every sidebar destination and supported alias resolves uniquely, including Content health',()=>{
  const segments=new Set();
@@ -83,4 +85,17 @@ test('Imprint remains one valid source candidate with owner-confirmed new-site c
  const document=entries[0];assert.equal(document.id,'page:imprint');assert.equal(validContent(document,document),true);
  const text=JSON.stringify(document);assert.match(text,/\+91 8320404132/);assert.match(text,/rivyalivingart2\.0@gmail\.com/);
  assert.doesNotMatch(text,/7096036250|gondaliyabhavya70960|\\\\n/);
+});
+
+test('Imprint renders canonical contacts without mutating settings or historical content',()=>{
+ const source=structuredClone(baselineContent.find(d=>d.id==='page:imprint'));
+ source.sections.find(s=>s.id===imprintContactId).paragraphs=['Stale contact copy'];
+ const before=JSON.stringify(source),settings=JSON.stringify(defaultBusiness);
+ const bound=bindImprintContacts(source,defaultBusiness);
+ assert.equal(JSON.stringify(source),before);assert.equal(JSON.stringify(defaultBusiness),settings);
+ assert.match(bound.sections.find(s=>s.id===imprintContactId).paragraphs[0],/\+91 8320404132.*rivyalivingart2\.0@gmail\.com/);
+ assert.equal(validContent(bound,source),true);
+ const missing={...source,sections:source.sections.filter(s=>s.id!==imprintContactId)};
+ assert.equal(bindImprintContacts(missing,defaultBusiness).sections.filter(s=>s.id===imprintContactId).length,1);
+ const other=baselineContent.find(d=>d.id==='page:terms');assert.equal(bindImprintContacts(other,defaultBusiness),other);
 });

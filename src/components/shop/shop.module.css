@@ -510,3 +510,8 @@ html[dir="rtl"] .header,html[dir="rtl"] .footerTop,html[dir="rtl"] .footerBottom
  .mobileLocale{display:block;margin:8px 0 16px}
  .mobileLocale .localeSwitcher,.mobileLocale .localeSwitcher select{width:100%;max-width:none}
 }
+
+.imprintContacts { margin: 1.5rem 0; }
+.imprintContacts > div { display: grid; grid-template-columns: minmax(6rem, 1fr) minmax(0, 3fr); gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.imprintContacts dt { font-weight: 600; }
+.imprintContacts dd { margin: 0; overflow-wrap: anywhere; }
