@@ -1,3 +1,11 @@
+# Current owner instruction — publish all P3–P5 updates through a detailed PR
+
+1 October 2026. The owner explicitly requested all updated files in main through a PR containing full change details. Push `codex/p5-studio-workspace`, create the detailed PR, verify current checks and merge through the PR. Do not push directly to main or bypass required checks/reviews. This authorizes publication of the accumulated P3/P4/P5 source; later work stays local until a new instruction. Read `docs/decisions/2026-10-01-publish-p3-p5-main.md`, `docs/redesign/P3-P5-MAIN-SUMMARY.md` and the changed-file register. Earlier local-only statements below are historical for this delivery.
+
+Preserve protected products/forms/galleries/originals/contacts/scraper/drafts/history; no product transfer or scraper work. Existing Git deployment triggers are unchanged. Do not manually deploy/promote, change environment settings or publish QA content to production. P4 T41/T61 performance acceptance remains open; P6–P8 are not started. Record the final PR URL and verified main commit in the local publication receipt and final response.
+
+---
+
 # Current continuation — P5A–P5E complete locally
 
 1 October 2026. The owner requested COMPLETE FULL P5B–P5E. Implementation and isolated acceptance are complete on local `codex/p5-studio-workspace`. Read `docs/redesign/P5-CLOSURE.md`, `P5-CHECKPOINT.md`, `p5-validation.json` and `p5-family-coverage.csv`. All four P5 tasks are closed; the 43-family register explicitly preserves deferred, conditional and excluded boundaries. Earlier P5-in-progress entries below are historical.
