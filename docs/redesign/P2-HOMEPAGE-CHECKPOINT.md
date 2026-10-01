@@ -1,3 +1,21 @@
+# P2 continuation — shared saved page previews
+
+1 October 2026. P0/P1 implementation and isolated acceptance are closed, including the detailed Content health checks. See [P1 closure](P1-CLOSURE.md). P2 continues from the existing verified homepage workflow; it is not complete.
+
+Saved-revision previews now cover every registered editable page and journal article, plus new durable article IDs. Process, FAQ, materials, Imprint and a published journal article passed real authenticated full-width/mobile-frame checks. The shared EditorialDocument renderer handles public pages and saved previews. Image availability and focal positions follow currently published metadata; related articles/products and global navigation/business settings also remain current. The preview states this dependency boundary explicitly. Saved text is fixed to the selected revision; missing versions never silently substitute another document.
+
+Visual inspection caught a 15 px overflow in the shared reading column. Its width now includes mobile padding; the process preview frame measures 373 px for both client and scroll width. The final navigation repair also focuses its exact destination field without repeatedly stealing focus during edits.
+
+Generic editors distinguish local text review from the real saved-page preview. They offer saved preview only after saving, disable publication while local edits are unsaved, show field-level revision comparisons, and retain the restored source version when saving recovery. The API's strongest snapshot/dependency publication guarantee still belongs to the homepage; completing equivalent all-page dependency capture and publication guards remains P2 work.
+
+Evidence: 21 read-only QA assertions across five families, both roles, private/no-store, same-origin mobile frames, anonymous denial and unchanged protected data. Browser process preview loaded its saved revision 1 in the real mobile layout. Final 215 unit/386 HTTP checks and build/TypeScript passed. Existing preflight and unchanged-source evidence remain applicable.
+
+Remaining P2: global/footer/interface-copy editing, richer safe text marks/links/quotes, full homepage section depth, remaining shared control states and accessibility/device coverage, all-page immutable dependency snapshots and server publication guards, plus complete blocker-to-control coverage. P3 Drive review and expanded slot assignments have not started. Production release remains P8; no push, merge, deployment or production content publication occurred.
+
+The earlier checkpoint below is historical. Its pending editor-role and inline-only page-preview statements are superseded by this continuation.
+
+---
+
 # P2 homepage workflow checkpoint
 
 1 October 2026. **The minimum homepage editing workflow is implemented and verified in isolated QA. The broader P2 specification remains partially implemented; no production release occurred.**

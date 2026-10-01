@@ -1,5 +1,6 @@
 'use client';
-import {useEffect,useMemo,useState} from 'react';
+import {useEffect,useMemo,useRef,useState} from 'react';
+import {useSearchParams} from 'next/navigation';
 import {studioFetch} from './workspace-api';
 import {
  defaultNavigation,describeHrefProblem,localeLabels,locales,
@@ -18,7 +19,11 @@ const menuKeys=Object.keys(menuLabels) as NavMenuKey[];
 
 export function SiteSettingsEditor(){
  const [data,setData]=useState<{settings:SiteSettings;version:number}|null>(null);
- const [menu,setMenu]=useState<NavMenuKey>('header');
+ const params=useSearchParams();
+ const requestedMenu=params.get('menu') as NavMenuKey;
+ const focusedRecord=useRef('');
+ const [menu,setMenu]=useState<NavMenuKey>(menuKeys.includes(requestedMenu)?requestedMenu:'header');
+ useEffect(()=>{const record=params.get('record')||'';if(data&&record&&focusedRecord.current!==record){const field=document.getElementById('navigation-field-'+record+'-href');if(field){focusedRecord.current=record;field.focus();field.scrollIntoView({block:'center'});}}},[data,params]);
  const [locale,setLocale]=useState<Locale>('en');
  const [dirty,setDirty]=useState(false),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading navigation…');
 
@@ -84,7 +89,7 @@ export function SiteSettingsEditor(){
        <div className={s.grid}>
         <label>English label<input value={item.label.en} maxLength={60} onChange={e=>patchItem(index,{label:{...item.label,en:e.target.value}})}/></label>
         {locale!=='en'&&<label>{localeLabels[locale]} label<input dir={locale==='ar'?'rtl':'ltr'} value={translated} maxLength={60} placeholder={item.label.en+' · English fallback'} onChange={e=>patchItem(index,{label:{...item.label,[locale]:e.target.value}})}/></label>}
-        <label className={s.wide}>Destination<input value={item.href} maxLength={500} aria-invalid={!!hrefIssue} onChange={e=>patchItem(index,{href:e.target.value})}/>{hrefIssue&&<small className={s.error}>{hrefIssue}</small>}</label>
+        <label className={s.wide}>Destination<input id={'navigation-field-'+item.id+'-href'} value={item.href} maxLength={500} aria-invalid={!!hrefIssue} onChange={e=>patchItem(index,{href:e.target.value})}/>{hrefIssue&&<small className={s.error}>{hrefIssue}</small>}</label>
        </div>
        <div className={s.actions}>
         <label className={s.check}><input type="checkbox" checked={item.visible} onChange={e=>patchItem(index,{visible:e.target.checked})}/>Visible</label>

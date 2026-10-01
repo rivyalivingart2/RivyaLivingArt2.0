@@ -5,10 +5,9 @@ import {homeId} from './homepage-model';
 import {publishedContent} from './published-content';
 import {HomepageDocument} from '@/components/shop/homepage-document';
 import {EditorialDocument} from '@/components/shop/editorial';
-
-export function supportedSavedPreview(record:unknown):record is string{
- return record===homeId||record==='page:imprint';
-}
+import {publishedMedia} from './published-media';
+import {supportedSavedPreview} from './content-preview-model';
+export {supportedSavedPreview} from './content-preview-model';
 export async function savedContentPreview(record:string,version:number):Promise<ContentDocument|null>{
  if(!supportedSavedPreview(record)||!Number.isSafeInteger(version)||version<1)return null;
  const rows=await studioDb()`SELECT document FROM rivya_revisions WHERE kind='content' AND entity_key=${record} AND version=${version}`;
@@ -17,5 +16,9 @@ export async function savedContentPreview(record:string,version:number):Promise<
  return document;
 }
 export async function SavedContentDocument({document,version}:{document:ContentDocument;version:number}){
- return document.id===homeId?<HomepageDocument document={document} revision={version}/>:<div data-saved-content-revision={version}><EditorialDocument content={document} documents={await publishedContent()}/></div>;
+ if(document.id===homeId)return <HomepageDocument document={document} revision={version}/>;
+ const [documents,images]=await Promise.all([publishedContent(),publishedMedia()]);
+ const image=document.image?images.get(document.image):undefined;
+ const content={...document,image:image?.path,imageAlt:image?(document.imageAlt||image.alt):undefined,imagePosition:image?image.focalX+'% '+image.focalY+'%':undefined};
+ return <div data-saved-content-revision={version}><EditorialDocument content={content} documents={documents}/></div>;
 }

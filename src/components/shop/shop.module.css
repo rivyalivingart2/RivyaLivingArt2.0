@@ -515,3 +515,4 @@ html[dir="rtl"] .header,html[dir="rtl"] .footerTop,html[dir="rtl"] .footerBottom
 .imprintContacts > div { display: grid; grid-template-columns: minmax(6rem, 1fr) minmax(0, 3fr); gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--border); }
 .imprintContacts dt { font-weight: 600; }
 .imprintContacts dd { margin: 0; overflow-wrap: anywhere; }
+.readingLayout > .prose { box-sizing: border-box; min-width: 0; max-width: 100%; overflow-wrap: anywhere; }

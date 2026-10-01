@@ -30,6 +30,16 @@ The baseline covers 66 tasks, 79 page/Studio families, 136 template paths, 74 de
 
 The mutation test stopped after publication because one assertion expected “Save order” while the approved text says “Place Order”. A read-only audit verified the persisted wording and history; mutations were not repeated. An audit expectation was also corrected to the existing `draft:restore:2` operation label. Neither issue required changing application behavior.
 
+## Detailed Content health completion
+
+The final specification cross-check added the full S19 diagnostic view before final closure: separate validation, editorial-review, draft, publication, media and translation columns; entity, blocker/advisory, search and saved-editor filters; removable filter chips; manual recheck; and grouped mobile record cards with blockers first. Checks cover public links to unpublished pages/articles/pieces, unsupported navigation destinations, repeated editorial covers, missing mobile crops, missing published media metadata, per-language field coverage and unchanged translations after English draft changes. Exact chapter links open/focus the homepage chapter; navigation repairs identify the menu and destination field.
+
+Health context is read through an authenticated, private/no-store endpoint. Both roles passed; anonymous access is denied. Interrupted context loading removes the table and displays Unknown until retry succeeds. No review approval is inferred. Assigned ownership and review timestamps are not stored; the UI explicitly says its owner filter uses the last saved editor, editorial approval is unrecorded, and translation freshness is unrecorded except where the current draft proves a source change. These limitations are visible rather than invented statuses.
+
+Browser evidence: 301 records; Content + Advisory + process gives one result; repair focuses `content-field-image`; homepage material repair focuses `content-field-section-material`; 390 px and 320 px grouped views have no page overflow. The temporary QA editor used to verify the new endpoint was also deactivated; its credentials were removed.
+
+Final combined source: 215 unit checks, 12 retained preflight checks and 386 HTTP regressions passed. Full lint had zero errors/67 existing warnings; the later changed-component lint had zero errors/8 existing warnings. Production build/TypeScript passed. The new preview/read-only checks add 21 successful assertions across five families and both roles. No product/media/contact data changed.
+
 ## Release and content boundary
 
 No production content write, GitHub push, merge or deployment. The exact factual Imprint and terms records are retained in the local `Closure-API-QA.json` release evidence. At P8, compare current production versions and review those two payloads individually before publication; do not replay QA scripts or overwrite later owner edits.
