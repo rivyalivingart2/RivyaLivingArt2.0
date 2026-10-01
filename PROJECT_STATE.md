@@ -1,3 +1,11 @@
+# Current continuation — P4A implemented; P4 in progress
+
+1 October 2026. The owner requested START P-4. P4A shared navigation and detailed homepage implementation have isolated QA evidence. Continue P4B–P4E on local `codex/p4-detailed-pages`; do not treat the whole phase as complete. Read `docs/redesign/P4-CHECKPOINT.md`, `docs/redesign/P4-HOME-SECTION-DISPOSITION.md` and `docs/decisions/2026-10-01-p4-start.md`. P0–P3 closure remains valid. Historical P4-not-started entries below are superseded.
+
+Preserve products, original/gallery associations, contacts, scraper and history; no product transfer or scraper work. Use the supplied Drive folder. Everything stays local until an explicit push-to-main instruction; then use a feature branch and a detailed PR, with no direct main push. No deployment or production content publication occurred. Homepage QA revision 32 and process revision 14 are isolated values, not production versions. P5 has not started.
+
+---
+
 # Current continuation — P0 through P3 complete in isolated QA
 
 1 October 2026. Full P3 (T11, T15, T19, T60) implementation and isolated acceptance are complete. Read `docs/redesign/P3-CLOSURE.md` and `docs/decisions/2026-10-01-p3-completion.md`. The local branch is `codex/p3-editorial-images`; no P3 push, PR, deployment or production publication occurred. P4 has not started. Historical pending P3 entries below are superseded by this closure.

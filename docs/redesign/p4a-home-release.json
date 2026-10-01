@@ -1,0 +1,18 @@
+{
+  "phase": "P4A",
+  "status": "Local implementation and isolated QA; no production publication",
+  "record": "page:home",
+  "base": "Retain the target site's current draft and all existing product/media references",
+  "chapters": ["manifesto", "large-format", "atelier", "in-the-room", "bespoke", "principles"],
+  "copySource": "src/lib/homepage-restoration.ts; original reviewed starting points with staff-only source notes",
+  "review": "Add missing chapters as hidden drafts. Review copy and references, mark ready and enable deliberately.",
+  "composition": "Move the existing journeys chapter after manifesto, before selected. Keep other existing relative order. Remove obsolete ordinal prefixes from topic eyebrows after reordering.",
+  "journalSelection": ["DB001", "DB019", "DB025"],
+  "imageAssignments": [
+    {"section": "atelier", "sourceManifest": "p3-editorial-release-manifest.json", "sourceName": "maker-hands.jpg", "driveId": "1VK6Y7T8LDJi5eEGFBFjXg26VNNVGYyVh", "caption": "Illustrative making scene; not a photograph of Rivya staff", "crop": "Use the reviewed desktop/mobile crops in the source manifest; check the actual target preview."},
+    {"section": "in-the-room", "sourceManifest": "p3-editorial-release-manifest.json", "sourceName": "doorway-collectible.jpg", "driveId": "1o5VSIpFgnyn4Obrfh3Bowhm4-bsxz1Mj", "caption": "Design visualization", "crop": "Use the reviewed desktop/mobile crops in the source manifest; check the actual target preview."}
+  ],
+  "closingSecondaryAction": {"label": "Contact the atelier", "href": "/contact"},
+  "conditionalHidden": ["furniture", "work", "words", "workshops", "print"],
+  "release": "Use destination Studio and destination published assets, never isolated QA UUID paths. Save, inspect exact preview, publish only when authorized, verify anonymously and retain recovery history. No product, gallery, business-setting or scraper changes."
+}
