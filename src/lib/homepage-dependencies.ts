@@ -1,4 +1,6 @@
 import {baselineProducts,validProduct,type ShopProduct} from './shop-model';
+import {bodyLinks} from './editorial-body';
+import {sharedCopyId} from './shared-copy-model';
 import {validMedia,type PublicMedia} from './public-media';
 import {baselineContent,validContent,type ContentDocument} from './content-model';
 import {homeActions,homeProductIds,type HomeSnapshot,type HomeProduct,type HomeArticle,type HomeDependency} from './homepage-model';
@@ -17,9 +19,9 @@ export function compileHomepageSnapshot(document:ContentDocument,source:Dependen
   if(!validProduct(p,baselineProducts.find(b=>b.id===row.key))||p.id!==row.key)continue;
   const image=images.get(p.image);if(!image?.products.includes(p.id))continue;
   const scene=p.scene?images.get(p.scene):undefined;
-  products.push({id:p.id,slug:p.slug,name:p.name,subtitle:p.subtitle,category:p.category,tier:p.tier,material:p.material,image:image.path,imageAlt:image.alt,imagePosition:`${image.focalX}% ${image.focalY}%`,revision:Number(row.version),...(scene?.products.includes(p.id)?{scene:scene.path,sceneAlt:scene.alt,scenePosition:`${scene.focalX}% ${scene.focalY}%`}:{})});
+  products.push({id:p.id,slug:p.slug,name:p.name,subtitle:p.subtitle,category:p.category,tier:p.tier,material:p.material,image:image.path,imageAlt:image.alt,imagePosition:`${image.focalX}% ${image.focalY}%`,revision:Number(row.version),...(p.price?{price:p.price}:{}),...(scene?.products.includes(p.id)?{scene:scene.path,sceneAlt:scene.alt,scenePosition:`${scene.focalX}% ${scene.focalY}%`}:{})});
  }
- const pages=source.content.flatMap(row=>{const d=row.document as ContentDocument;return d?.id===row.key&&validContent(d,baselineContent.find(b=>b.id===row.key))?[d]:[];});
+ const pages=source.content.flatMap(row=>{const d=row.document as ContentDocument;return d?.id===row.key&&d.id!==sharedCopyId&&validContent(d,baselineContent.find(b=>b.id===row.key))?[d]:[];});
  const dependencies:HomeDependency[]=[],issues:string[]=[],mediaPaths=new Set<string>(),unavailableActionHrefs=new Set<string>();
  function depend(kind:HomeDependency['kind'],key:string){const row=source[kind==='product'?'products':kind==='content'?'content':'media'].find(r=>r.key===key);if(row&&!dependencies.some(d=>d.kind===kind&&d.key===key))dependencies.push({kind,key,version:Number(row.version),fingerprint:row.fingerprint});}
  const requestedIds=homeProductIds(home);
@@ -27,15 +29,16 @@ export function compileHomepageSnapshot(document:ContentDocument,source:Dependen
  for(const id of requestedIds){const p=selected.find(p=>p.id===id);if(!p){issues.push(`Product ${id} is not available in the published catalogue.`);continue;}depend('product',id);for(const path of [p.image,p.scene])if(path){depend('media',path);mediaPaths.add(path);}}
  const articles:HomeArticle[]=[];
  for(const section of home.sections.filter(s=>s.enabled)){
+  if(section.contentNeeded)issues.push(`${section.id}: this chapter still needs reviewed content. Hide it or complete its review fields.`);
   if(section.type==='selected'&&!section.productIds?.length)issues.push(`${section.id}: select at least one published piece or hide this section.`);
   if(section.image){if(!images.has(section.image.path))issues.push(`${section.id}: the assigned image is not published.`);else {depend('media',section.image.path);mediaPaths.add(section.image.path);}}
-  for(const id of section.articleIds||[]){const article=pages.find(p=>p.id===id&&p.kind==='article');if(!article){issues.push(`${section.id}: article ${id} is not published.`);continue;}depend('content',id);const m=article.image?images.get(article.image):undefined;if(m){depend('media',m.path);mediaPaths.add(m.path);}articles.push({id:article.id,route:article.route,title:article.title,description:article.description,eyebrow:article.eyebrow,...(m?{image:m.path,imageAlt:article.imageAlt||m.alt}:{})});}
+  for(const id of section.articleIds||[]){const article=pages.find(p=>p.id===id&&p.kind==='article');if(!article){issues.push(`${section.id}: article ${id} is not published.`);continue;}depend('content',id);const m=article.image?images.get(article.image):undefined;if(m){depend('media',m.path);mediaPaths.add(m.path);}articles.push({id:article.id,route:article.route,title:article.title,description:article.description,eyebrow:article.eyebrow,sections:article.sections.filter(s=>s.enabled!==false).map(s=>({id:s.id,heading:s.heading,paragraphs:s.paragraphs,checklist:s.checklist})),...(m?{image:m.path,imageAlt:article.imageAlt||m.alt,imagePosition:m.focalX+'% '+m.focalY+'%'}:{})});}
   for(const category of section.categories||[])if(!products.some(p=>p.category===category))issues.push(`${section.id}: category ${category} has no published pieces.`);
  }
- for(const a of homeActions(home)){
+ for(const a of [...homeActions(home),...document.sections.filter(s=>s.enabled!==false&&home.sections.some(h=>h.id===s.id&&h.enabled)).flatMap(s=>bodyLinks(s.body).map(href=>({label:s.heading,href})))]){
   const [route,anchor]=a.href.split('#');const page=pages.find(p=>p.route===route),product=products.find(p=>'/pieces/'+p.slug===route);
   if(!publicRoutes.has(route)&&!page&&!product){issues.push(`“${a.label}” points to an unpublished destination: ${a.href}.`);unavailableActionHrefs.add(a.href);continue;}
-  if(anchor&&!(route==='/'?document.sections.some(s=>s.id===anchor&&home.sections.some(h=>h.id===anchor&&h.enabled)):page?.sections.some(s=>s.id===anchor))){issues.push(`“${a.label}” points to a missing section: ${a.href}.`);unavailableActionHrefs.add(a.href);}
+  if(anchor&&!(route==='/'?document.sections.some(s=>s.id===anchor&&home.sections.some(h=>h.id===anchor&&h.enabled)):page?.sections.some(s=>s.id===anchor&&s.enabled!==false))){issues.push(`“${a.label}” points to a missing section: ${a.href}.`);unavailableActionHrefs.add(a.href);}
   if(page)depend('content',page.id);if(product)depend('product',product.id);
  }
  const categories=[...new Set(products.map(p=>p.category))].map(name=>({name,count:products.filter(p=>p.category===name).length,tiers:[...new Set(products.filter(p=>p.category===name).map(p=>p.tier))]}));

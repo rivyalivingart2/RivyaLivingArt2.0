@@ -6,7 +6,7 @@ export function contentDifferences(before:unknown,after:unknown){
     out[path+'.order']=value.map(v=>v.id).join(' → ');
     for(const item of value)flatten(item,path+'.'+item.id,out);
    }else out[path]=value.map(v=>typeof v==='string'?v:JSON.stringify(v)).join('\n');
-  }else if(value&&typeof value==='object')for(const [key,item] of Object.entries(value)){if(key!=='homeSnapshot')flatten(item,path?path+'.'+key:key,out);}
+  }else if(value&&typeof value==='object')for(const [key,item] of Object.entries(value)){if(key!=='homeSnapshot'&&key!=='pageSnapshot')flatten(item,path?path+'.'+key:key,out);}
   else out[path]=value==null?'':String(value);
   return out;
  }

@@ -1,5 +1,5 @@
 export const editorFields = {
- content:{title:'content',description:'content',image:'content',imageAlt:'content'},
+ content:{title:'content',description:'content',eyebrow:'content',relatedProductIds:'content',primary:'content',secondary:'content',image:'content',imageAlt:'content'},
  products:{name:'general',subtitle:'general',story:'details',image:'images'},
  media:{alt:'metadata',caption:'metadata'},
 } as const;

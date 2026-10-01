@@ -1,3 +1,4 @@
+import {sharedCopyId} from '@/lib/shared-copy-model';
 import {requireStudioSession} from '@/lib/studio-auth';
 import {savedContentPreview,SavedContentDocument,supportedSavedPreview} from '@/lib/saved-content-preview';
 import {ShopShell} from '@/components/shop/shop-shell';
@@ -9,5 +10,5 @@ export default async function PreviewFrame({searchParams}:{searchParams:Promise<
  if(!supportedSavedPreview(params.record))notFound();
  const document=await savedContentPreview(params.record,version);
  if(!document)notFound();
- return <ShopShell><SavedContentDocument document={document} version={version}/></ShopShell>;
+ return <ShopShell copyDocument={document.id===sharedCopyId?document:undefined} copyVersion={version}><SavedContentDocument document={document} version={version}/></ShopShell>;
 }

@@ -1,3 +1,4 @@
+import {issueField} from './content-issues';
 import {contentHealthRows,type ContentHealthEntry,type ProductHealthEntry,type MediaHealthEntry,type HealthRow} from './content-health';
 import {baselineContent,validContent} from './content-model';
 import {baselineProducts,validProduct} from './shop-model';
@@ -32,7 +33,7 @@ export function contentHealthReport(content:ContentHealthEntry[],products:Produc
    mediaState=imagePaths.length?(imagePaths.every(p=>publicImages.has(p))?'Published metadata; visual review unrecorded':'Missing published metadata'):'No image selected';
    if(d.image&&content.filter(e=>e.document.image===d.image).length>1)issues.push({severity:'Advisory',reason:'Editorial cover is reused on other documents. Review visual variety.',href:studioRecordHref('content',d.id,'image')});
    if(imagePaths.some(p=>!publicImages.has(p)))issues.push({severity:'Advisory',reason:'Selected image metadata is not published; the public image may be omitted.',href:studioRecordHref('content',d.id,d.homepage?'section-'+(d.homepage.sections.find(s=>s.image&&!publicImages.has(s.image.path))?.id||'hero'):'image')});
-   for(const reason of d.homeSnapshot?.issues||[])issues.push({severity:'Blocker',reason,href:studioRecordHref('content',d.id,'title')});
+   for(const reason of (d.homeSnapshot||d.pageSnapshot)?.issues||[])issues.push({severity:'Blocker',reason,href:studioRecordHref('content',d.id,issueField(d,reason))});
    const hrefs=d.homepage?[{href:d.homepage.primary.href,field:'title'},{href:d.homepage.secondary.href,field:'title'},...d.homepage.sections.flatMap(b=>[...(b.action?[{href:b.action.href,field:'section-'+b.id}]:[]),...(b.items?.flatMap(i=>i.action?[{href:i.action.href,field:'section-'+b.id}]:[])||[])])]:[];
    for(const action of hrefs){const issue=linkProblem(action.href);if(issue)issues.push({severity:'Blocker',reason:issue,href:studioRecordHref('content',d.id,action.field)});}
    for(const b of d.homepage?.sections||[])if(b.image&&!b.image.mobile)issues.push({severity:'Blocker',reason:`${d.sections.find(s=>s.id===b.id)?.heading||b.id}: mobile crop missing`,href:studioRecordHref('content',d.id,'section-'+b.id)});

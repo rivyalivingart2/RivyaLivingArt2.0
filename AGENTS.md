@@ -1,3 +1,9 @@
+# Current continuation — P0/P1/P2 complete in isolated QA
+
+1 October 2026. Read `docs/decisions/2026-10-01-p2-completion.md` and `docs/redesign/P2-CLOSURE.md`. The owner requested P2 completion; implementation and isolated acceptance are closed on `codex/p2-homepage-workflow`. Preserve products, factual/contact values, forms, media associations, scraper and revision history. No old-product transfer, push, merge or production release. P3 is the next planned phase; P4 owns full detailed-page restoration. Historical pending P2 statements below are superseded by the closure report.
+
+---
+
 # Current continuation — P0/P1 complete in QA; P2 in progress
 
 1 October 2026. Read `docs/decisions/2026-10-01-p0-p1-closure-p2-continuation.md` and `docs/redesign/P1-CLOSURE.md`. The owner requested P0/P1 completion before P2. All phase implementation/isolated checks are closed; production and unsupplied legal/business facts remain the later release gate. Continue P2 on `codex/p2-homepage-workflow`, preserving existing products, media, contacts and scraper. No old-product transfer or production release. Historical pending statements below are superseded where the closure report supplies new evidence.

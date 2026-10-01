@@ -1,3 +1,4 @@
+import {publishedCopy} from '@/lib/published-copy';
 import {connection} from "next/server";
 import {indexingEnabled,siteOrigin} from "@/lib/site-metadata";
 import {publicLocale} from "@/lib/site-settings";
@@ -44,5 +45,6 @@ export const viewport: Viewport = {
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   await connection();
   const locale=await publicLocale();
-  return <html lang={locale} dir={localeDir(locale)} className={`${displayFont.variable} ${bodyFont.variable} ${dataFont.variable}`}><body><a className="skip-link" href="#main-content">{uiText(locale,'skipMain')}</a><ApplicationFrame>{children}</ApplicationFrame></body></html>;
+  const copy=await publishedCopy(locale);
+  return <html lang={locale} dir={localeDir(locale)} className={`${displayFont.variable} ${bodyFont.variable} ${dataFont.variable}`}><body><a className="skip-link" href="#main-content">{copy.values.skipMain||uiText(locale,'skipMain')}</a><ApplicationFrame>{children}</ApplicationFrame></body></html>;
 }

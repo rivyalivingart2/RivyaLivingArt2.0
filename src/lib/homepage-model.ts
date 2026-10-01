@@ -7,10 +7,10 @@ export type ImageCrop={x:number;y:number;ratio:'4/5'|'3/2'|'1/1'};
 export type EditorialUsage={path:string;alt:string;caption:string;desktop:ImageCrop;mobile:ImageCrop};
 export const homeSectionTypes=['selected','categories','story','steps','journeys','journal','invitation'] as const;
 export type HomeSectionType=typeof homeSectionTypes[number];
-export type HomeSection={id:string;type:HomeSectionType;enabled:boolean;eyebrow:string;action?:HomeAction;productIds?:string[];articleIds?:string[];categories?:string[];image?:EditorialUsage;items?:{id:string;title:string;body:string;productId?:string;action?:HomeAction}[]};
+export type HomeSection={id:string;type:HomeSectionType;enabled:boolean;contentNeeded?:boolean;eyebrow:string;action?:HomeAction;productIds?:string[];articleIds?:string[];categories?:string[];image?:EditorialUsage;items?:{id:string;title:string;body:string;productId?:string;action?:HomeAction}[]};
 export type Homepage={schemaVersion:1;heroProductId:string;primary:HomeAction;secondary:HomeAction;annotation:string;strip:string[];sections:HomeSection[]};
 export type HomeProduct=Pick<ShopProduct,'id'|'slug'|'name'|'subtitle'|'category'|'tier'|'material'|'image'|'imageAlt'|'imagePosition'|'price'|'scene'|'sceneAlt'|'scenePosition'|'revision'>;
-export type HomeArticle=Pick<ContentDocument,'id'|'route'|'title'|'description'|'eyebrow'|'image'|'imageAlt'>;
+export type HomeArticle=Pick<ContentDocument,'id'|'route'|'title'|'description'|'eyebrow'|'image'|'imageAlt'|'sections'>&{imagePosition?:string};
 export type HomeDependency={kind:'product'|'content'|'media';key:string;version:number;fingerprint:string};
 /** Server-created, public-only dependencies saved in the same revision as the document. */
 export type HomeSnapshot={schemaVersion:1;products:HomeProduct[];articles:HomeArticle[];mediaPaths:string[];categories:{name:string;count:number;tiers:string[]}[];dependencies:HomeDependency[];issues:string[];unavailableActionHrefs?:string[]};
@@ -58,6 +58,7 @@ function checkHomepage(d:ContentDocument):boolean{
  for(const s of h.sections){
   if(!s||!d.sections.some(b=>b.id===s.id)||seen.has(s.id)||!homeSectionTypes.includes(s.type)||typeof s.enabled!=='boolean'||!text(s.eyebrow,100,false)||!action(s.action))return false;
   seen.add(s.id);
+  if(s.contentNeeded!==undefined&&typeof s.contentNeeded!=='boolean')return false;
   if(s.image&&!validUsage(s.image))return false;
   if(s.type==='selected'&&!ids(s.productIds,6))return false;
   if(s.type==='journal'&&!ids(s.articleIds,6))return false;

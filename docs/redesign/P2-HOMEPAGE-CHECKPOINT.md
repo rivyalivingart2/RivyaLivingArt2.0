@@ -1,3 +1,11 @@
+# P2 complete — implementation and isolated QA
+
+1 October 2026. Read [P2 closure](P2-CLOSURE.md) and the updated [field ownership inventory](P2-COPY-AND-FIELD-OWNERSHIP.md). All 12 P2 foundation tasks are implemented and verified in isolated QA. The final report distinguishes current captured-dependency previews from historical text-only revisions. Products, contacts, gallery associations and scraper remain unchanged. No production release or push occurred. P3 Drive review is the next planned phase; P4 owns full detailed-page content restoration.
+
+The checkpoints below are historical. Their remaining-P2, homepage-only and pending role/network-test statements are superseded by the closure evidence; they are retained as history, not current instructions.
+
+---
+
 # P2 continuation — shared saved page previews
 
 1 October 2026. P0/P1 implementation and isolated acceptance are closed, including the detailed Content health checks. See [P1 closure](P1-CLOSURE.md). P2 continues from the existing verified homepage workflow; it is not complete.

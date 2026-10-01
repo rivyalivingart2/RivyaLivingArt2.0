@@ -4,14 +4,15 @@ import {baselineContent,validContent,type ContentDocument} from '@/lib/content-m
 import {originAllowed,smallJson} from '@/lib/request-security';
 import {revalidatePath} from 'next/cache';
 import {isDeepStrictEqual} from 'node:util';
-import {captureHomepage} from '@/lib/homepage-persistence';
+import {captureHomepage,capturePage} from '@/lib/homepage-persistence';
 import {homeId,type HomeDependency} from '@/lib/homepage-model';
-import {publishedProducts} from '@/lib/shop-catalogue';
+import {editorialDocument} from '@/lib/page-dependencies';
+import {sharedCopyId} from '@/lib/shared-copy-model';
 import {publishedBusiness} from '@/lib/business-settings';
 import {bindImprintContacts} from '@/lib/imprint-content';
 export const dynamic='force-dynamic';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
-const editorialComparable=(document:ContentDocument)=>{const editorial={...document};delete editorial.homeSnapshot;return editorial;};
+const editorialComparable=editorialDocument;
 const englishComparable=(document:ContentDocument)=>{const english=editorialComparable(document);delete english.translations;return english;};
 export async function GET(){
  try{
@@ -26,7 +27,7 @@ export async function POST(request:Request){
  if(!originAllowed(request))return json({error:'Request not allowed.'},403);
  try{
   const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);
-  const body=await smallJson(request,70000);
+  const body=await smallJson(request,180000);
   if(!body||!['draft','publish','hide'].includes(body.operation)||!Number.isSafeInteger(body.version)||body.version<0)return json({error:'Invalid content change.'},400);
   if(body.operation!=='draft'&&session.role!=='admin')return json({error:'Administrator access is required to publish.'},403);
   const sql=studioDb();let d=body.document as ContentDocument;
@@ -44,21 +45,16 @@ export async function POST(request:Request){
    if(!revision.length)return json({error:'The selected recovery revision is unavailable.'},400);
   }
   let dependencies:HomeDependency[]=[];
-  if(d.id===homeId){
-   if(publish||hide){
-    if(!existing[0]||Number(existing[0].version)!==body.version||!isDeepStrictEqual(editorialComparable(d),editorialComparable(existing[0].draft)))return json({error:'Save this homepage draft and preview its exact revision before publishing or hiding.'},409);
-    d=existing[0].draft;
-    if(publish){
-     if(!d.homeSnapshot)return json({error:'Save the homepage again to capture its published references.'},409);
-     if(d.homeSnapshot.issues.length)return json({error:d.homeSnapshot.issues.join(' '),issues:d.homeSnapshot.issues},400);
-     dependencies=d.homeSnapshot.dependencies;
-    }
-   }else d={...editorialComparable(d),homeSnapshot:await captureHomepage(d)};
-  }else if(publish&&d.relatedProductIds?.length){
-   const available=await publishedProducts();
-   const missing=d.relatedProductIds.filter(id=>!available.some(p=>p.id===id));
-   if(missing.length)return json({error:'Related pieces must be published: '+missing.join(', ')},400);
-  }
+  if(publish||hide){
+   if(!existing[0]||Number(existing[0].version)!==body.version||!isDeepStrictEqual(editorialComparable(d),editorialComparable(existing[0].draft)))return json({error:'Save this draft and preview its exact revision before publishing or hiding.'},409);
+   d=existing[0].draft;
+   if(publish){
+    const snapshot=d.id===homeId?d.homeSnapshot:d.pageSnapshot;
+    if(!snapshot)return json({error:'Save this page again to capture its published references.'},409);
+    if(snapshot.issues.length)return json({error:snapshot.issues.join(' '),issues:snapshot.issues},400);
+    dependencies=snapshot.dependencies;
+   }
+  }else d={...editorialComparable(d),...(d.id===homeId?{homeSnapshot:await captureHomepage(d)}:{pageSnapshot:await capturePage(d)})};
   // Recheck saved dependencies in the same statement that writes publication and history.
   const rows=await sql`WITH dependency_check AS (
    SELECT NOT EXISTS(SELECT 1 FROM jsonb_array_elements(${JSON.stringify(dependencies)}::jsonb) dep WHERE NOT EXISTS (
@@ -89,7 +85,7 @@ export async function POST(request:Request){
   ) SELECT * FROM created UNION ALL SELECT * FROM changed`;
   if(!rows.length)return json({error:'A newer record or changed published reference exists. Keep your edits, compare the latest version, then save and preview again.'},409);
   let refreshPending=false;
-  if(publish||hide){try{revalidatePath(d.route);revalidatePath('/journal');revalidatePath('/');revalidatePath('/sitemap.xml');}catch{refreshPending=true;}}
-  return json({saved:true,version:body.version+1,publishedVersion:publish?body.version+1:Number(existing[0]?.published_version||0),document:d,issues:d.homeSnapshot?.issues||[],refreshPending});
+  if(publish||hide){try{if(d.id===sharedCopyId)revalidatePath('/','layout');else revalidatePath(d.route);revalidatePath('/journal');revalidatePath('/');revalidatePath('/sitemap.xml');}catch{refreshPending=true;}}
+  return json({saved:true,version:body.version+1,publishedVersion:publish?body.version+1:Number(existing[0]?.published_version||0),document:d,issues:(d.homeSnapshot||d.pageSnapshot)?.issues||[],refreshPending});
  }catch{return json({error:'Content was not saved. Keep your edits and try again.'},503);}
 }

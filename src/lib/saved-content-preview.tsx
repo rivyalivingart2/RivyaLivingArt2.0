@@ -6,6 +6,8 @@ import {publishedContent} from './published-content';
 import {HomepageDocument} from '@/components/shop/homepage-document';
 import {EditorialDocument} from '@/components/shop/editorial';
 import {publishedMedia} from './published-media';
+import {sharedCopyId} from './shared-copy-model';
+import {publishedCopy} from './published-copy';
 import {supportedSavedPreview} from './content-preview-model';
 export {supportedSavedPreview} from './content-preview-model';
 export async function savedContentPreview(record:string,version:number):Promise<ContentDocument|null>{
@@ -16,7 +18,9 @@ export async function savedContentPreview(record:string,version:number):Promise<
  return document;
 }
 export async function SavedContentDocument({document,version}:{document:ContentDocument;version:number}){
- if(document.id===homeId)return <HomepageDocument document={document} revision={version}/>;
+ if(document.id===sharedCopyId)return <section data-saved-content-revision={version} style={{padding:40}}><h1>Shared website copy</h1><p>Inspect the actual navigation, search dialog and footer around this preview. Contact values remain current published settings.</p></section>;
+ if(document.id===homeId)return <HomepageDocument document={document} revision={version} copy={(await publishedCopy()).values}/>;
+ if(document.pageSnapshot)return <div data-saved-content-revision={version}><EditorialDocument content={{...document,publishedRevision:version,image:document.pageSnapshot.image?.path,imageAlt:document.pageSnapshot.image?.alt,imagePosition:document.pageSnapshot.image?.position}} documents={document.pageSnapshot.articles.map(a=>({...a,kind:'article'}))} snapshot={document.pageSnapshot}/></div>;
  const [documents,images]=await Promise.all([publishedContent(),publishedMedia()]);
  const image=document.image?images.get(document.image):undefined;
  const content={...document,image:image?.path,imageAlt:image?(document.imageAlt||image.alt):undefined,imagePosition:image?image.focalX+'% '+image.focalY+'%':undefined};

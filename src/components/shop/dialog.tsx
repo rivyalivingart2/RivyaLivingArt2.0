@@ -19,7 +19,7 @@ function lockScroll() {
 }
 
 /** Native dialog provides focus containment, Escape and return to the opener. */
-export function Dialog({open,title,onClose,children,variant='panel'}:{open:boolean;title:string;onClose:()=>void;children:ReactNode;variant?:'panel'|'navigation'}) {
+export function Dialog({open,title,onClose,children,variant='panel',closeLabel}:{open:boolean;title:string;onClose:()=>void;children:ReactNode;variant?:'panel'|'navigation';closeLabel?:string}) {
   const ref=useRef<HTMLDialogElement>(null);
   const titleId=useId();
   useEffect(()=>{
@@ -43,6 +43,6 @@ export function Dialog({open,title,onClose,children,variant='panel'}:{open:boole
     const rect=e.currentTarget.getBoundingClientRect();
     if(e.clientX<rect.left || e.clientX>rect.right || e.clientY<rect.top || e.clientY>rect.bottom) onClose();
   }}>
-    <div className={s.dialogHead}><h2 id={titleId}>{title}</h2><button className={s.closeButton} type="button" onClick={onClose} aria-label={variant==='navigation'?'Close navigation':'Close dialog'}>Close ×</button></div>{open&&children}
+    <div className={s.dialogHead}><h2 id={titleId}>{title}</h2><button className={s.closeButton} type="button" onClick={onClose} aria-label={closeLabel||(variant==='navigation'?'Close navigation':'Close dialog')}>{closeLabel||'Close'} ×</button></div>{open&&children}
   </dialog>;
 }

@@ -1,3 +1,4 @@
+import {publishedCopy} from '@/lib/published-copy';
 import Image from './public-image';
 import {WebsiteStructuredData,ProductStructuredData,CollectionStructuredData} from './structured-data';
 import Link from 'next/link';
@@ -50,7 +51,7 @@ export async function ShopSite({route}:{route:string}){
  const [products,documents,business]=await Promise.all([needsCatalogue?publishedProducts(locale):Promise.resolve([]),route==='/'?publishedContent(locale):Promise.resolve([]),publishedBusiness()]);let content:React.ReactNode;
  if(route==='/'){
   const home=documents.find(d=>d.id==='page:home'&&d.homepage&&d.homeSnapshot);
-  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!}/></>:<Home products={products} articles={documents.filter(a=>a.kind==='article')}/>;
+  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={(await publishedCopy(locale)).values}/></>:<Home products={products} articles={documents.filter(a=>a.kind==='article')}/>;
  }
  else if(route.startsWith('/pieces/')){
   const slug=route.split('/')[2];const product=products.find(p=>p.slug===slug);if(!product)notFound();

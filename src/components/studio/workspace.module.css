@@ -176,3 +176,8 @@
 .healthDesktop td { max-width: 24rem; overflow-wrap: anywhere; }
 .healthMobile article, .healthMobile dd { overflow-wrap: anywhere; }
 @media (max-width: 720px) { .healthDesktop { display: none; } .healthMobile { display: block; } .healthMobile dd { margin: .3rem 0 1rem; } }
+
+/* Shared P2 authoring states: normal flow, touch targets and restrained feedback. */
+.editor :is(input,textarea,select){font-size:16px;max-width:100%;box-sizing:border-box}.editor fieldset{min-width:0}.editor .repairLink{text-align:left;white-space:normal;overflow-wrap:anywhere;color:var(--error-text);border:0;background:transparent;text-decoration:underline}.editor :is(button,summary,.controlLink){min-height:44px}.editor input[type=checkbox]{min-width:20px;min-height:20px}.editor label.check{min-height:44px}.editor [role=status]{overflow-wrap:anywhere}.editor blockquote{border-left:3px solid var(--bronze);padding-left:16px;margin-left:0}.editor :is(button,a,input,select,textarea,summary):focus-visible{outline:2px solid var(--bronze);outline-offset:3px}@media(prefers-reduced-motion:reduce){.editor *{animation:none!important;transition:none!important}}
+
+.statePreview iframe{width:390px;max-width:100%;height:800px;border:1px solid var(--control-border);background:var(--navy)}

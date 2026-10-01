@@ -1,3 +1,5 @@
+import {SectionBody} from './section-body';
+import type {PageSnapshot} from '@/lib/page-dependencies';
 import Image from './public-image';
 import {bindImprintContacts,imprintContactId} from '@/lib/imprint-content';
 import {publishedBusiness} from '@/lib/business-settings';
@@ -9,14 +11,13 @@ import {ProductCard} from './product-card';
 import {imageSizes} from './image-sizes';
 import type {PublishedContentDocument} from '@/lib/published-content';
 import {EditorialStructuredData} from './structured-data';
-import type {ContentDocument,ContentSection} from '@/lib/content-model';
+import type {ContentDocument} from '@/lib/content-model';
 import type {Locale} from '@/lib/site-settings-model';
 import s from './shop.module.css';
 
 function Intro({eyebrow,title,children}:{eyebrow:string;title:string;children?:React.ReactNode}){return <header className={s.pageIntro}><span className={s.eyebrow}>{eyebrow}</span><h1>{title}</h1>{children&&<p>{children}</p>}</header>;}
 const minutes=(a:ContentDocument)=>Math.max(1,Math.ceil([a.description,...a.sections.flatMap(b=>[b.heading,...b.paragraphs,...(b.checklist||[])])].join(' ').trim().split(/\s+/).length/200));
 export function ArticleCard({article:a}:{article:PublishedContentDocument}){return <Link className={s.card} prefetch={false} href={a.route}>{a.image&&<div className={`${s.cardImage} ${s.articleCardImage}`}><Image src={a.image} alt={a.imageAlt||''} style={{objectPosition:a.imagePosition}} fill sizes={imageSizes.card}/></div>}<p>{a.eyebrow} · <span className={s.productIndex} style={{display:'inline',margin:0}}>{minutes(a)} min read</span></p><h3>{a.title}</h3><p>{a.description}</p><span className={s.textLink}>Read the story ↗</span></Link>;}
-function SectionBody({section:b}:{section:ContentSection}){return <>{b.paragraphs.map((p,i)=><p key={i}>{p}</p>)}{!!b.checklist?.length&&<ul>{b.checklist.map((p,i)=><li key={i}>{p}</li>)}</ul>}</>;}
 const policies:Record<string,string>={'/privacy':'Privacy','/terms':'Ordering terms','/shipping-delivery':'Delivery','/returns-cancellations':'Changes & cancellations','/accessibility':'Accessibility','/imprint':'Imprint'};
 const nextSteps:Record<string,[string,string,string,string]>={
  '/our-story':['/collectible-design','Explore furniture & spatial art','/process','How a piece begins'],
@@ -38,22 +39,26 @@ export async function EditorialPage({route,locale='en'}:{route:string;locale?:Lo
  return <EditorialDocument content={content} documents={documents} locale={locale}/>;
 }
 /** Shared by public pages and authenticated saved-revision previews. */
-export async function EditorialDocument({content:source,documents,locale='en'}:{content:PublishedContentDocument;documents:PublishedContentDocument[];locale?:Locale}){
+export async function EditorialDocument({content:source,documents,locale='en',snapshot}:{content:PublishedContentDocument;documents:PublishedContentDocument[];locale?:Locale;snapshot?:PageSnapshot}){
  const route=source.route,articles=documents.filter(d=>d.kind==='article');
  const business=route==='/contact'||!!policies[route]?(await publishedBusiness()).details:null;
- const content=business?bindImprintContacts(source,business):source;
+ const bound=business?bindImprintContacts(source,business):source;
+ const content={...bound,sections:bound.sections.filter(b=>b.enabled!==false)};
  const article=content.kind==='article',faq=route==='/faq',policy=!!policies[route];
- const related=article&&content.relatedProductIds?.length?(await publishedProducts(locale)).filter(p=>content.relatedProductIds!.includes(p.id)):[];
+ const products=snapshot?.products||source.pageSnapshot?.products||(content.relatedProductIds?.length?await publishedProducts(locale):[]);
+ const related=(content.relatedProductIds||[]).flatMap(id=>products.filter(p=>p.id===id));
+ const deps=snapshot||source.pageSnapshot;
  const more=articles.filter(a=>a.id!==content.id).sort((a,b)=>Number(b.eyebrow===content.eyebrow)-Number(a.eyebrow===content.eyebrow)).slice(0,3);
  const next=nextSteps[route]||['/commission','Begin your piece','/journal','Return to the journal'];
- return <div data-editorial={article?'article':route.slice(1)}>
+ return <div data-editorial={article?'article':route.slice(1)} data-content-revision={source.publishedRevision}>
   <EditorialStructuredData document={content}/>
   <nav className={s.editorialBreadcrumb} aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span>{article&&<><Link href="/journal">Journal</Link><span aria-hidden="true">/</span></>}<span aria-current="page">{content.title}</span></nav>
   <Intro eyebrow={content.eyebrow} title={content.title}>{content.description}</Intro>
+  {policy&&<p className={s.editorialBreadcrumb}>{content.effectiveDate?'Effective '+content.effectiveDate:'Effective date not recorded'}</p>}
   {content.image&&<figure className={s.storyImage}><Image src={content.image} alt={content.imageAlt||''} style={{objectPosition:content.imagePosition}} fill priority sizes={imageSizes.story}/><figcaption>Design visualization</figcaption></figure>}
   <div className={s.readingLayout}>{content.sections.length>3&&<nav className={s.contents} aria-label="On this page"><p>On this page</p>{content.sections.map(b=><a key={b.id} href={'#'+b.id}>{b.heading}</a>)}</nav>}
    <div className={s.prose}>{article&&<p className={s.eyebrow}>By RivyaLivingArt · <span className={s.productIndex} style={{display:'inline',margin:0}}>{minutes(content)} minute read</span></p>}
-    {content.sections.map(b=>faq?<details id={b.id} key={b.id}><summary>{b.heading}</summary><SectionBody section={b}/></details>:<section id={b.id} key={b.id}><h2>{b.heading}</h2>{!(route==='/imprint'&&b.id===imprintContactId)&&<SectionBody section={b}/>} {route==='/imprint'&&b.id===imprintContactId&&business&&<dl className={s.imprintContacts}><div><dt>Telephone</dt><dd><a href={'tel:'+business.phone}>{business.phone}</a></dd></div><div><dt>Email</dt><dd><a href={'mailto:'+business.email}>{business.email}</a></dd></div></dl>}</section>)}
+    {content.sections.map(b=>faq?<details id={b.id} key={b.id}><summary>{b.group&&<small>{b.group} · </small>}{b.heading}</summary><SectionBody section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/></details>:<section id={b.id} key={b.id}>{b.stage&&<p className={s.eyebrow}>{b.stage==='customer'?'Customer steps':'Making steps'}</p>}<h2>{b.heading}</h2>{!(route==='/imprint'&&b.id===imprintContactId)&&<SectionBody section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>} {route==='/imprint'&&b.id===imprintContactId&&business&&<dl className={s.imprintContacts}><div><dt>Telephone</dt><dd><a href={'tel:'+business.phone}>{business.phone}</a></dd></div><div><dt>Email</dt><dd><a href={'mailto:'+business.email}>{business.email}</a></dd></div></dl>}</section>)}
     {policy?<><nav className={s.policyLinks} aria-label="Policies and help">{Object.entries(policies).filter(([p])=>p!==route).map(([p,label])=><Link key={p} href={p}>{label}</Link>)}</nav><div className={s.actions}><Link className={s.button} href="/contact">Contact the atelier ↗</Link>{business&&<a className={s.textLink} href={'mailto:'+business.email}>Email about this page</a>}</div></>:route!=='/contact'&&<div className={s.actions}><Link className={s.button} href={next[0]}>{next[1]} ↗</Link><Link className={s.textLink} href={next[2]}>{next[3]}</Link></div>}
     {route==='/contact'&&business&&<div className={s.contactCards}><a href={'tel:'+business.phone}><span>Call the atelier</span>{business.phone}</a><a href={'mailto:'+business.email}><span>General questions & existing inquiries</span>{business.email}</a><a href={business.map} target="_blank" rel="noreferrer"><span>Location</span>Open the atelier map ↗</a><Link href="/commission"><span>Product & custom-piece requests</span>Prepare your saved order brief ↗</Link></div>}
    </div>
