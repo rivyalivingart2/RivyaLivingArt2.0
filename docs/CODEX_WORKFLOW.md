@@ -1,3 +1,11 @@
+# Current continuation — P0 through P3 complete in isolated QA
+
+1 October 2026. Full P3 (T11, T15, T19, T60) implementation and isolated acceptance are complete. Read `docs/redesign/P3-CLOSURE.md` and `docs/decisions/2026-10-01-p3-completion.md`. The local branch is `codex/p3-editorial-images`; no P3 push, PR, deployment or production publication occurred. P4 has not started. Historical pending P3 entries below are superseded by this closure.
+
+Preserve products, original/gallery associations, approved contacts, scraper and revision history; no old-product transfer. Use the supplied Drive folder. Keep all work local until the owner explicitly says push to main, then use a feature branch and detailed PR with complete changes, affected areas, validation, protection, limitations and recovery; merge through the PR after checks. No direct main push.
+
+---
+
 # Current owner rule — local work; detailed PR when pushing main
 
 1 October 2026. All development stays local unless the owner explicitly says to push to main. On that instruction, push a feature branch and open a pull request to main with the complete change description, affected areas, verification, protected-data checks, limitations and recovery notes. Merge through that PR after required checks. Do not push directly to main, silently push working branches, deploy, or publish production content. Local commits are allowed. The owner's previous direct push is historical, not the rule for future work.

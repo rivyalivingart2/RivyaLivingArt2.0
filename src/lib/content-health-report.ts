@@ -2,7 +2,8 @@ import {issueField} from './content-issues';
 import {contentHealthRows,type ContentHealthEntry,type ProductHealthEntry,type MediaHealthEntry,type HealthRow} from './content-health';
 import {baselineContent,validContent} from './content-model';
 import {baselineProducts,validProduct} from './shop-model';
-import {validMedia} from './public-media';
+import {validPageMedia,validEditorialMedia,validPublishedEditorialMedia,isEditorialPath} from './editorial-media-model';
+import {editorialSlots} from './editorial-slots';
 import {describeHrefProblem,type SiteSettings} from './site-settings-model';
 import {studioRecordHref} from './studio-record-links';
 export type HealthContext={settings:SiteSettings;owners:Record<string,string>};
@@ -29,7 +30,7 @@ export function contentHealthReport(content:ContentHealthEntry[],products:Produc
    const d=content.find(e=>e.document.id===row.id)!.document;
    const published=content.find(e=>e.document.id===row.id)!.published;
    valid=safeValid(()=>validContent(d,baselineContent.find(b=>b.id===d.id)));
-   const imagePaths=[...(d.image?[d.image]:[]),...(d.homepage?.sections.flatMap(b=>b.image?[b.image.path]:[])||[])];
+   const imagePaths=editorialSlots(d).flatMap(s=>s.path?[s.path]:[]);
    mediaState=imagePaths.length?(imagePaths.every(p=>publicImages.has(p))?'Published metadata; visual review unrecorded':'Missing published metadata'):'No image selected';
    if(d.image&&content.filter(e=>e.document.image===d.image).length>1)issues.push({severity:'Advisory',reason:'Editorial cover is reused on other documents. Review visual variety.',href:studioRecordHref('content',d.id,'image')});
    if(imagePaths.some(p=>!publicImages.has(p)))issues.push({severity:'Advisory',reason:'Selected image metadata is not published; the public image may be omitted.',href:studioRecordHref('content',d.id,d.homepage?'section-'+(d.homepage.sections.find(s=>s.image&&!publicImages.has(s.image.path))?.id||'hero'):'image')});
@@ -50,7 +51,7 @@ export function contentHealthReport(content:ContentHealthEntry[],products:Produc
    mediaState=publicImages.has(p.image)?'Published primary metadata':'Missing primary metadata';
    translation=context.settings.localization.enabled?context.settings.localization.enabledLocales.filter(l=>l!=='en').map(l=>l+': '+(p.translations?.[l]?'Review field coverage':'English fallback')).join(' · ')||'English only':'Language switcher disabled';
   }else{
-   const m=media.find(e=>e.media.path===row.id)!;valid=safeValid(()=>validMedia(m.media));mediaState=m.published?'Published metadata; visual review unrecorded':'Unpublished metadata';
+   const m=media.find(e=>e.media.path===row.id)!;valid=safeValid(()=>validPageMedia(m.media)||validEditorialMedia(m.media));mediaState=isEditorialPath(m.media.path)?(m.published?'Published reviewed editorial image':validPublishedEditorialMedia(m.media)?'Reviewed; not published':'Needs visual review'):(m.published?'Published metadata; visual review unrecorded':'Unpublished metadata');if(isEditorialPath(m.media.path))row.href='/studio/media';
   }
   if(!valid)issues.unshift({severity:'Blocker',reason:'The saved record fails its content contract. Open it to repair the required fields.',href:row.href});
   return {...row,validation:valid?'Valid structure':'Blocking issue',editorial:'Review not recorded',media:mediaState,translation,owner:context.owners[row.area+':'+row.id]||'Unassigned',issues};

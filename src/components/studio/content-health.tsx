@@ -11,9 +11,9 @@ export function ContentHealth(){
  const recheck=()=>{setRows(null);setError('');setAttempt(v=>v+1);};
  useEffect(()=>{
   let active=true;
-  void Promise.all([studioFetch('/api/studio/content'),studioFetch('/api/studio/workspace?view=catalogue'),studioFetch('/api/studio/media'),studioFetch('/api/studio/health-context')]).then(([c,p,m,context])=>{
+  void Promise.all([studioFetch('/api/studio/content'),studioFetch('/api/studio/workspace?view=catalogue'),studioFetch('/api/studio/media'),studioFetch('/api/studio/health-context'),studioFetch('/api/studio/editorial-assets')]).then(([c,p,m,context,e])=>{
    if(!Array.isArray(c.entries)||!Array.isArray(p.products)||!Array.isArray(m.media)||!context.settings||!context.owners)throw new Error('The check returned incomplete records. Retry all checks.');
-   if(active)setRows(contentHealthReport(c.entries,p.products,m.media,context));
+   if(active)setRows(contentHealthReport(c.entries,p.products,[...m.media,...e.media],context));
   }).catch(e=>{if(active)setError(e instanceof Error?e.message:'Content health could not be loaded.');});
   return()=>{active=false;};
  },[attempt]);

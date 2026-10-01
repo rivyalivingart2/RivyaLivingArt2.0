@@ -1,3 +1,4 @@
+import {EditorialImage} from './editorial-image';
 import {SectionBody} from './section-body';
 import type {PageSnapshot} from '@/lib/page-dependencies';
 import Image from './public-image';
@@ -55,7 +56,7 @@ export async function EditorialDocument({content:source,documents,locale='en',sn
   <nav className={s.editorialBreadcrumb} aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span>{article&&<><Link href="/journal">Journal</Link><span aria-hidden="true">/</span></>}<span aria-current="page">{content.title}</span></nav>
   <Intro eyebrow={content.eyebrow} title={content.title}>{content.description}</Intro>
   {policy&&<p className={s.editorialBreadcrumb}>{content.effectiveDate?'Effective '+content.effectiveDate:'Effective date not recorded'}</p>}
-  {content.image&&<figure className={s.storyImage}><Image src={content.image} alt={content.imageAlt||''} style={{objectPosition:content.imagePosition}} fill priority sizes={imageSizes.story}/><figcaption>Design visualization</figcaption></figure>}
+  {content.headerImage?<div style={{maxWidth:1100,margin:'0 auto',padding:'0 5vw 40px'}}><EditorialImage usage={content.headerImage} available={deps?.mediaPaths.includes(content.headerImage.path)} priority/></div>:content.image&&<figure className={s.storyImage}><Image src={content.image} alt={content.imageAlt||''} style={{objectPosition:content.imagePosition}} fill priority sizes={imageSizes.story}/><figcaption>Design visualization</figcaption></figure>}
   <div className={s.readingLayout}>{content.sections.length>3&&<nav className={s.contents} aria-label="On this page"><p>On this page</p>{content.sections.map(b=><a key={b.id} href={'#'+b.id}>{b.heading}</a>)}</nav>}
    <div className={s.prose}>{article&&<p className={s.eyebrow}>By RivyaLivingArt · <span className={s.productIndex} style={{display:'inline',margin:0}}>{minutes(content)} minute read</span></p>}
     {content.sections.map(b=>faq?<details id={b.id} key={b.id}><summary>{b.group&&<small>{b.group} · </small>}{b.heading}</summary><SectionBody section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/></details>:<section id={b.id} key={b.id}>{b.stage&&<p className={s.eyebrow}>{b.stage==='customer'?'Customer steps':'Making steps'}</p>}<h2>{b.heading}</h2>{!(route==='/imprint'&&b.id===imprintContactId)&&<SectionBody section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>} {route==='/imprint'&&b.id===imprintContactId&&business&&<dl className={s.imprintContacts}><div><dt>Telephone</dt><dd><a href={'tel:'+business.phone}>{business.phone}</a></dd></div><div><dt>Email</dt><dd><a href={'mailto:'+business.email}>{business.email}</a></dd></div></dl>}</section>)}

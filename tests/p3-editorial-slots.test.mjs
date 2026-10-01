@@ -8,9 +8,9 @@ import {editorialSlots,assignEditorialSlot,editorialUsages} from '../src/lib/edi
 test('slot inventory exposes rendered editorial placements and protects product references',()=>{
  const slots=editorialSlots(homeCandidate);
  assert.equal(slots.find(s=>s.key==='home:material').editable,true);
- assert.equal(slots.find(s=>s.key==='hero').editable,false);
+ assert.equal(slots.find(s=>s.key==='hero').editable,true);
  assert.equal(slots.filter(s=>s.key.startsWith('journey:')).length,3);
- assert.ok(slots.filter(s=>s.key.startsWith('journey:')).every(s=>!s.editable));
+ assert.ok(slots.filter(s=>s.key.startsWith('journey:')).every(s=>s.editable));
  assert.deepEqual(editorialSlots(sharedCopyCandidate),[]);
 });
 test('a crop changes only the chosen page slot and never its original or shared references',()=>{
@@ -26,8 +26,8 @@ test('a crop changes only the chosen page slot and never its original or shared 
 });
 test('private paths, invalid crops and reference placements cannot be assigned',()=>{
  const usage=structuredClone(homeCandidate.homepage.sections.find(s=>s.id==='material').image);
- assert.throws(()=>assignEditorialSlot(homeCandidate,'hero',usage),/read-only/);
- assert.throws(()=>assignEditorialSlot(homeCandidate,'missing',usage),/read-only/);
+ assert.equal(assignEditorialSlot(homeCandidate,'hero',usage).homepage.heroImage.path,usage.path);
+ assert.throws(()=>assignEditorialSlot(homeCandidate,'missing',usage),/unavailable/);
  assert.throws(()=>assignEditorialSlot(homeCandidate,'home:material',{...usage,path:'/api/studio/private-reference/file'}),/approved/);
  assert.throws(()=>assignEditorialSlot(homeCandidate,'home:material',{...usage,mobile:{...usage.mobile,x:101}}),/approved/);
 });

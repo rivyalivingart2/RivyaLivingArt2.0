@@ -3,6 +3,7 @@ import type {ContentDocument} from './content-model';
 import {validContent,baselineContent} from './content-model';
 import {bodyLinks,safeEditorialHref,validEditorialBody} from './editorial-body';
 import {validUsage} from './homepage-model';
+import {editorialSlots} from './editorial-slots';
 export type ContentIssue={message:string;field:string};
 export function issueField(d:ContentDocument,message:string){
  for(const s of d.sections)if(message.startsWith(s.id+':')||[...bodyLinks(s.body),s.policyHref,s.action?.href].some(h=>h&&message.includes(h)))return 'section-'+s.id;
@@ -13,6 +14,7 @@ export function issueField(d:ContentDocument,message:string){
 export function contentIssues(d:ContentDocument):ContentIssue[]{
  const issues:ContentIssue[]=[];
  const add=(field:string,message:string)=>issues.push({field,message});
+ for(const slot of editorialSlots(d))if(slot.usage&&!validUsage(slot.usage))add(slot.key==='header'?'image':'section-'+(slot.sectionId||'hero'),slot.label+': complete the image description and both crops.');
  if(!d.title.trim()||d.title.length>120)add('title','Enter a title of up to 120 characters.');
  if(!d.eyebrow.trim()||d.eyebrow.length>100)add('eyebrow','Enter an eyebrow of up to 100 characters.');
  if(d.id===sharedCopyId)for(const f of sharedCopyFields){const b=d.sections.find(s=>s.id===copyFieldId(f.id));if(!b?.paragraphs[0]?.trim()||b.paragraphs[0].length>300)add('section-'+copyFieldId(f.id),f.label+': enter a label of up to 300 characters.');}

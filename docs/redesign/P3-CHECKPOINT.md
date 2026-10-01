@@ -1,3 +1,11 @@
+# Current P3 closure
+
+1 October 2026. **P3 implementation and isolated QA are complete.** Read [P3-CLOSURE.md](P3-CLOSURE.md). All four tasks T11/T15/T19/T60 have evidence, including five ingested originals, one exact approved reuse, nine assignments, 101 API checks, a browser save/publish/recovery cycle and unchanged protected records. Local-only; production release remains separate. P4 is not started.
+
+The initial-slice report below is retained as historical evidence. Its pending-work list and read-only hero/header limitations are superseded by the closure.
+
+---
+
 # P3 — Drive assets and page image assignments
 
 1 October 2026. Started by the owner after P0/P1/P2 reached main `8990e73`. Current local branch: `codex/p3-editorial-images`. Work remains local until the owner says push to main; then use a detailed PR and merge through it. See the latest owner decision.

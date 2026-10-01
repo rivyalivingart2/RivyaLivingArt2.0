@@ -1,5 +1,5 @@
 import journal from './reviewed-journal.json';
-import {approvedPublicMedia} from './public-media';
+import {allowedEditorialPath} from './editorial-media-model';
 import {shopPages,shopFaqs} from './shop-editorial';
 import {isLocale,type Locale} from './site-settings-model';
 import {homeCandidate,homeId,validHomepage,type Homepage,type HomeSnapshot} from './homepage-model';
@@ -12,7 +12,7 @@ export type ContentSectionTranslation={heading?:string;paragraphs?:string[];chec
 export type ContentTranslation={title?:string;eyebrow?:string;description?:string;sections?:Record<string,ContentSectionTranslation>};
 export type ContentDocument={
  id:string;kind:'page'|'article';route:string;title:string;eyebrow:string;description:string;
- sections:ContentSection[];image?:string;imageAlt?:string;relatedProductIds?:string[];
+ sections:ContentSection[];headerImage?:EditorialUsage;image?:string;imageAlt?:string;relatedProductIds?:string[];
  translations?:Partial<Record<Locale,ContentTranslation>>;
  homepage?:Homepage;homeSnapshot?:HomeSnapshot;
  pageSnapshot?:PageSnapshot;effectiveDate?:string;
@@ -45,7 +45,8 @@ function checkContent(value:unknown,base?:ContentDocument):value is ContentDocum
  if(!base&&(d.kind!=='article'||!/^article:[0-9a-f-]{36}$/.test(d.id)))return false;
  if(d.id===sharedCopyId&&!validSharedCopy(d))return false;
  if(d.effectiveDate!==undefined&&(!/^\d{4}-\d{2}-\d{2}$/.test(d.effectiveDate)||!Number.isFinite(Date.parse(d.effectiveDate))||new Date(d.effectiveDate).toISOString().slice(0,10)!==d.effectiveDate))return false;
- if(d.image&&!approvedPublicMedia.some(m=>m.path===d.image))return false;
+ if(d.image&&!allowedEditorialPath(d.image))return false;
+ if(d.headerImage&&!validUsage(d.headerImage))return false;
  if(d.relatedProductIds&&(!Array.isArray(d.relatedProductIds)||d.relatedProductIds.length>6||new Set(d.relatedProductIds).size!==d.relatedProductIds.length||d.relatedProductIds.some(id=>typeof id!=='string'||!/^[-a-zA-Z0-9:]{1,100}$/.test(id))))return false;
  if(d.translations!==undefined){
   if(!d.translations||typeof d.translations!=='object'||Array.isArray(d.translations))return false;
