@@ -1,3 +1,9 @@
+# Current owner instruction — publish P0/P1/P2 changes to main
+
+1 October 2026. The owner explicitly requested "PUSH ALL CHANGES INTO MAIN BRANCH" after P2 completion. This authorizes merging and pushing the completed implementation commits to GitHub main and supersedes the earlier no-push/no-merge boundary for this delivery. Preserve all protected product, contact, gallery, scraper and history contracts. No new phase implementation, manual deployment/promotion or production content publication is requested. Existing Vercel Git deployment configuration is enabled and is left unchanged; a push may trigger its normal pipeline. See `docs/decisions/2026-10-01-publish-p2-main.md` and `docs/redesign/P2-CLOSURE.md`.
+
+---
+
 # Current continuation — P0/P1/P2 complete in isolated QA
 
 1 October 2026. Read `docs/decisions/2026-10-01-p2-completion.md` and `docs/redesign/P2-CLOSURE.md`. The owner requested P2 completion; implementation and isolated acceptance are closed on `codex/p2-homepage-workflow`. Preserve products, factual/contact values, forms, media associations, scraper and revision history. No old-product transfer, push, merge or production release. P3 is the next planned phase; P4 owns full detailed-page restoration. Historical pending P2 statements below are superseded by the closure report.
