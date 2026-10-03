@@ -1,3 +1,11 @@
+# Current continuation — C5 Studio presentation implemented; full acceptance open
+
+3 October 2026. Read `docs/redesign/CRAFT-C5-CHECKPOINT.md`, the three `craft-c5-*.json` evidence files and `craft-c5-module-acceptance.csv`. Shared presentation reaches all 16 Studio modules, with labelled record state, compact inquiry filters, protected catalogue/form review, keyboard product tabs, media selection and consistent administration panels. Fifteen focused browser checks, 32 body-reflow observations, 18 isolated service assertions and 403 built-server checks passed. All protected and content/inquiry records match baseline.
+
+Full C5 permission/error/mutation/keyboard acceptance remains open; finish those checks before certifying C5, then continue C6. C4-05 production Imprint's last recorded result was 404; no C5 publication or live recheck occurred. C2 video, human/device/performance, independent key custody, sustained backups and production editorial acceptance remain open. Keep work local until another explicit push-main request, then use a detailed PR. Preserve products/forms/galleries, business/social facts, scraper, private inquiries, drafts/history and manual sending. Screenshot review: workspace `outputs/CRAFT/c5-implementation.html`.
+
+---
+
 # Current continuation — C4 editorial presentation verified locally; live Imprint open
 
 3 October 2026. Read `docs/redesign/CRAFT-C4-CHECKPOINT.md`, the four `craft-c4-*.json` evidence files and `craft-c4-page-acceptance.csv`. C4 refines story/process/materials, architects/portfolio, journal/articles, FAQ/contact and policies while retaining all protected records and content. Missing journal/portfolio details now return real 404. Sixty responsive checks, twenty browser checks, thirty-six isolated HTTP assertions and 403 built-server tests pass.
