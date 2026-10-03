@@ -18,8 +18,9 @@ export const publishedContent=cache(async(locale:Locale='en'):Promise<PublishedC
  ]);
  const routes=new Set<string>(),documents:PublishedContentDocument[]=[];
  for(const row of rows){
-  const d=row.published,version=Number(row.published_version);
-  if(!d||d.id===sharedCopyId||d.id!==row.content_key||d.route!==row.route||d.kind!==row.kind||!Number.isSafeInteger(version)||version<1||!validContent(d,baselineContent.find(b=>b.id===d.id))||routes.has(d.route))continue;
+  const original=row.published,version=Number(row.published_version);
+  const d:ContentDocument=original?localizeContent(original,locale):original;
+  if(!d||d.id===sharedCopyId||d.id!==row.content_key||d.route!==row.route||d.kind!==row.kind||!Number.isSafeInteger(version)||version<1||!validContent(original,baselineContent.find(b=>b.id===d.id))||routes.has(d.route))continue;
   const coverPath=d.headerImage?.path||d.image;const image=coverPath?images.get(coverPath):undefined;
   // Only public fields leave the persistence layer. Drafts and extra stored keys never do.
   const publicDocument:PublishedContentDocument={id:d.id,kind:d.kind,route:d.route,title:d.title,eyebrow:d.eyebrow,description:d.description,publishedRevision:version,
@@ -33,7 +34,7 @@ export const publishedContent=cache(async(locale:Locale='en'):Promise<PublishedC
    ...(d.translations?{translations:d.translations}:{}),
    // Public references follow current publication/withdrawal. Private saved previews retain their exact snapshot.
    ...(d.homepage&&d.homeSnapshot?.schemaVersion===1?{homepage:d.homepage,homeSnapshot:compileHomepageSnapshot(d,dependencies)}:{})};
-  documents.push(localizeContent(publicDocument,locale));
+  documents.push(publicDocument);
   routes.add(d.route);
  }
  return documents;

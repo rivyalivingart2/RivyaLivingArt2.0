@@ -1,3 +1,4 @@
+import {taxonomyReview} from '@/lib/taxonomy-review';
 import {studioSession} from '@/lib/studio-auth';
 import {studioDb} from '@/lib/studio-db';
 import {publishedProducts} from '@/lib/shop-catalogue';
@@ -16,7 +17,7 @@ export async function GET(){
   const productRoutes=products.map(p=>'/pieces/'+p.slug);
   return json({checkedAt:new Date().toISOString(),canonicalOrigin:siteOrigin,indexing:indexingEnabled(),
    routes:legacyRoutes.map(route=>({...route,availability:route.destination?(destinationAvailable(route.destination,documents,productRoutes)?'Available in published sources':'Not currently published'):'No reviewed destination'})),
-   categories:[...new Set(products.map(p=>p.category))].sort((a,b)=>a.localeCompare(b,'en')).map(name=>({name,count:products.filter(p=>p.category===name).length,collections:[...new Set(products.filter(p=>p.category===name).map(p=>p.tier))]})),
+   categories:taxonomyReview(products),
    protectedPaths:['/studio','/api','/inquiry','/preview','/whatsapp-order'],
   });
  }catch{return json({error:'Published destinations could not be checked. Retry; no route settings were changed.'},503);}

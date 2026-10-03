@@ -1,0 +1,260 @@
+{
+  "phase": "P6",
+  "includedImplementationAndIsolatedQAComplete": true,
+  "allConditionalFeaturesActivated": false,
+  "productionTranslationsComplete": false,
+  "branch": "codex/p6-legacy-language-journeys",
+  "base": "c94427de88d45a216fdf545840efef2f875e5789",
+  "unitTests": 277,
+  "preflightTests": 12,
+  "builtHttpTests": 401,
+  "buildAndTypeScript": "passed",
+  "changedFileEslint": "0 errors, 0 warnings",
+  "p6a": {
+    "apiAssertions": 53,
+    "browserAssertions": 29,
+    "layouts": [
+      {
+        "route": "/studio/route-review",
+        "width": 1440
+      },
+      {
+        "route": "/studio/route-review",
+        "width": 1024
+      },
+      {
+        "route": "/studio/route-review",
+        "width": 768
+      },
+      {
+        "route": "/studio/route-review",
+        "width": 390
+      },
+      {
+        "route": "/studio/route-review",
+        "width": 320
+      },
+      {
+        "route": "/whatsapp-order",
+        "width": 1440
+      },
+      {
+        "route": "/whatsapp-order",
+        "width": 390
+      },
+      {
+        "route": "/whatsapp-order",
+        "width": 320
+      },
+      {
+        "route": "/shop/wishlist",
+        "width": 1440
+      },
+      {
+        "route": "/shop/wishlist",
+        "width": 390
+      },
+      {
+        "route": "/shop/wishlist",
+        "width": 320
+      },
+      {
+        "route": "/workshops",
+        "width": 1440
+      },
+      {
+        "route": "/workshops",
+        "width": 390
+      },
+      {
+        "route": "/workshops",
+        "width": 320
+      }
+    ]
+  },
+  "p6be": {
+    "api": {
+      "checkedAt": "2026-10-03T04:34:22.202Z",
+      "checks": [
+        "Priority locale preference en",
+        "Priority locale preference hi",
+        "Priority locale preference gu",
+        "Unreviewed extra locale is not advertised as supported",
+        "Bounded locale compatibility /gu/shop",
+        "Bounded locale compatibility /hi/about",
+        "Bounded locale compatibility /ar/process",
+        "Bounded locale compatibility /en/blog",
+        "Unknown/private locale identity stays unavailable /hi/studio",
+        "Unknown/private locale identity stays unavailable /gu/inquiry/received",
+        "Unknown/private locale identity stays unavailable /gu/product/unknown",
+        "Unknown/private locale identity stays unavailable /hi/blog/unknown",
+        "Reviewed bilingual draft saved without publication",
+        "Exact saved translation preview hi",
+        "Exact saved translation preview gu",
+        "Anonymous published translation hi",
+        "Anonymous published translation gu",
+        "Changed source uses English fallback hi",
+        "Changed source uses English fallback gu",
+        "Stale save rejected",
+        "Recovery makes a new draft; current public source retained",
+        "Recovered reviewed translation restored publicly",
+        "Protected translation field rejected",
+        "Editor can read language coverage",
+        "Editor cannot publish translations",
+        "Editor cannot access administrative diagnostics",
+        "Taxonomy exposes exact keys and record usage",
+        "Isolated fixture hidden; history retained",
+        "Catalogue/media/business rows unchanged",
+        "Existing content and customer records unchanged"
+      ],
+      "assertions": 30,
+      "fixtureHidden": true,
+      "temporaryStaffDisabled": true,
+      "protectedRecordsUnchanged": true,
+      "productionWrites": false
+    },
+    "browser": {
+      "checkedAt": "2026-10-03T05:01:05.276Z",
+      "checks": [
+        "Language switch retains search context hi",
+        "Only priority languages offered",
+        "Layout fits /search hi 390",
+        "Required-field validation translated hi",
+        "Contact errors translated hi",
+        "Saved upload state uses the original state value hi",
+        "Saved receipt journey hi",
+        "Saved customer name unchanged hi",
+        "Layout fits /inquiry/received hi 390",
+        "Language switch retains search context gu",
+        "Only priority languages offered",
+        "Layout fits /search gu 390",
+        "Required-field validation translated gu",
+        "Contact errors translated gu",
+        "Saved upload state uses the original state value gu",
+        "Saved receipt journey gu",
+        "Saved customer name unchanged gu",
+        "Layout fits /inquiry/received gu 390",
+        "Language coverage loads actual records",
+        "Layout fits /studio/translations 1440",
+        "Layout fits /studio/translations 768",
+        "Layout fits /studio/translations 390",
+        "Layout fits /studio/translations 320",
+        "Full family and template inventories available",
+        "Legacy inventory can locate exclusions",
+        "Layout fits /studio/legacy 320",
+        "Category usage evidence rendered",
+        "Layout fits /studio/route-review 390",
+        "Record link selects Gujarati review",
+        "Protected import blocked in real editor",
+        "Layout fits /studio/content translation 390",
+        "Checked import stages an unsaved editorial draft",
+        "No browser page errors",
+        "Protected catalogue/media/business unchanged"
+      ],
+      "assertions": 34,
+      "layouts": [
+        {
+          "route": "/search hi",
+          "width": 390
+        },
+        {
+          "route": "/inquiry/received hi",
+          "width": 390
+        },
+        {
+          "route": "/search gu",
+          "width": 390
+        },
+        {
+          "route": "/inquiry/received gu",
+          "width": 390
+        },
+        {
+          "route": "/studio/translations",
+          "width": 1440
+        },
+        {
+          "route": "/studio/translations",
+          "width": 768
+        },
+        {
+          "route": "/studio/translations",
+          "width": 390
+        },
+        {
+          "route": "/studio/translations",
+          "width": 320
+        },
+        {
+          "route": "/studio/legacy",
+          "width": 320
+        },
+        {
+          "route": "/studio/route-review",
+          "width": 390
+        },
+        {
+          "route": "/studio/content translation",
+          "width": 390
+        }
+      ],
+      "errors": [],
+      "syntheticRequestsClosed": 2,
+      "productionWrites": false
+    }
+  },
+  "families": 79,
+  "templates": 136,
+  "tasks": {
+    "T32": {
+      "status": "IMPLEMENTATION AND ISOLATED QA COMPLETE; RELEASE P8",
+      "decision": "Read-only exact stored category keys, published counts, usage links, normalization conflicts and explicitly collection-level old aliases. No invented category IDs or relationship changes."
+    },
+    "T33": {
+      "status": "IMPLEMENTATION AND ISOLATED QA COMPLETE; RELEASE P8",
+      "decision": "Supported editorial translation JSON dry run, before/after conflicts, allowlisted text fields, stale-import guard and apply-to-unsaved-draft. No direct publication, catalogue import or private export."
+    },
+    "T34": {
+      "status": "CONDITIONAL; GENUINE CONTENT REQUIRED",
+      "decision": "No genuine approved project facts/media/consent supplied. Existing project reader and honest empty presentation retained; no false working project/testimonial editor exposed."
+    },
+    "T35": {
+      "status": "IMPLEMENTATION AND ISOLATED QA COMPLETE; RELEASE P8",
+      "decision": "Seven exact reviewed redirects, safe 404/410 retirements and bounded old locale compatibility. Unknown product/article identity stays unavailable until evidenced; no approximate matching or token forwarding."
+    },
+    "T36": {
+      "status": "IMPLEMENTATION AND ISOLATED QA COMPLETE; EDITORIAL REVIEW AND RELEASE P8",
+      "decision": "Priority interface, source-bound editorial review, complete-document English fallback, exact translated previews, save/publish/recovery and Hindi/Gujarati request journeys verified. Existing business documents are not mass-translated or marked reviewed."
+    },
+    "T37": {
+      "status": "CONDITIONAL; NOT SELECTED",
+      "decision": "No locale URL/SEO migration selected. Cookie preference and temporary legacy-prefix redirect preserve the existing canonical URL scheme; no hreflang/indexing activation."
+    },
+    "T38": {
+      "status": "IMPLEMENTATION AND ISOLATED QA COMPLETE; RELEASE P8",
+      "decision": "Canonical www host aligned with observed existing host redirect; private paths excluded and indexing held. Verify the deployed candidate after a later authorized source release."
+    },
+    "T45": {
+      "status": "CONDITIONAL; TRUSTWORTHY EVENTS REQUIRED",
+      "decision": "Current workload counts preserved. Anonymous funnel data/permission absent; no invented zero metrics, conversion rate, revenue or WhatsApp-send tracking."
+    },
+    "T47": {
+      "status": "CONDITIONAL; VERIFIED OFFERING REQUIRED",
+      "decision": "No real workshop, supplies or 3D-printing offering provided; public activation remains off with explicit old-route disposition."
+    },
+    "T59": {
+      "status": "IMPLEMENTATION AND ISOLATED QA COMPLETE; RELEASE P8",
+      "decision": "All 79 public/Studio families and 136 source templates reconciled in searchable Studio inventory and CSV registers. Protected, conditional, internal and excluded decisions remain explicit."
+    }
+  },
+  "productionWrites": false,
+  "pushed": false,
+  "remaining": [
+    "Business editorial translation review/publication",
+    "Conditional T34/T37/T45/T47",
+    "P4 T41/T61 performance",
+    "P7",
+    "P8",
+    "Deferred S09 new-product media"
+  ]
+}

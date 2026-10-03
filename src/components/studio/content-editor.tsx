@@ -12,8 +12,8 @@ import {DraftRecovery} from './draft-recovery';
 import {useLinkedRecord,LinkedRecordNotice} from './linked-record';
 import {publicationState,draftState} from '@/lib/content-health';
 import {useEffect,useState} from 'react';
-import type {ContentDocument,ContentTranslation,ContentSectionTranslation} from '@/lib/content-model';
-import {localeLabels,locales,type Locale} from '@/lib/site-settings-model';
+import type {ContentDocument} from '@/lib/content-model';
+import {TranslationEditor} from './translation-editor';
 import {studioFetch,StudioRequestError} from './workspace-api';
 import s from './workspace.module.css';
 import {RevisionHistory} from './revision-history';
@@ -25,7 +25,7 @@ type Entry={document:ContentDocument;version:number;publishedVersion?:number;pub
 export function ContentEditor({admin,initialKind='all',initialRecord,initialHomeSection}:{admin:boolean;initialKind?:'all'|'page'|'article';initialRecord?:string;initialHomeSection?:string}){
  const [latest,setLatest]=useState<Entry|null>(null),[verification,setVerification]=useState('');
  const [loaded,setLoaded]=useState(false),[restoredFrom,setRestoredFrom]=useState<number|undefined>();
- const [media,setMedia]=useState<PublicMedia[]>([]),[kindFilter,setKindFilter]=useState<'all'|'page'|'article'>(initialKind),[translationLocale,setTranslationLocale]=useState<Locale>('hi');
+ const [media,setMedia]=useState<PublicMedia[]>([]),[kindFilter,setKindFilter]=useState<'all'|'page'|'article'>(initialKind);
  const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[message,setMessage]=useState('Loading content…'),[busy,setBusy]=useState(false),[dirty,setDirty]=useState(false),[preview,setPreview]=useState(false);
  async function load(id?:string){const data=await studioFetch('/api/studio/content');setEntries(data.entries);setLoaded(true);if(id)setEntry(data.entries.find((e:Entry)=>e.document.id===id)||null);setVerification('');setMessage('Latest saved draft loaded. Your public page is unchanged.');}
  useEffect(()=>{void Promise.all([studioFetch('/api/studio/media'),studioFetch('/api/studio/editorial-assets')]).then(([d,e])=>setMedia([...d.media,...e.media].filter((e:{published:PublicMedia|null})=>e.published).map((e:{published:PublicMedia})=>e.published))).catch(()=>{});void studioFetch('/api/studio/content').then(data=>{setEntries(data.entries);if(initialRecord)setEntry(data.entries.find((e:Entry)=>e.document.id===initialRecord)||null);setLoaded(true);setMessage('Drafts are shared. Public pages use only a published revision.');}).catch(e=>setMessage(e.message));},[initialRecord]);
@@ -34,17 +34,7 @@ export function ContentEditor({admin,initialKind='all',initialRecord,initialHome
  const switching=useRecordSwitch(dirty);
  function choose(next:Entry){if(next.document.id===entry?.document.id)return true;return switching.request(()=>{setEntry(structuredClone(next));setDirty(false);setPreview(false);setRestoredFrom(undefined);setLatest(null);setVerification('');setMessage('Editing '+next.document.title+'. Saving a draft leaves the public page unchanged.');});}
  function change(patch:Partial<ContentDocument>){setEntry(e=>e?{...e,document:{...e.document,...patch}}:e);setDirty(true);}
- function translation(patch:Partial<ContentTranslation>){
-  if(!entry||translationLocale==='en')return;
-  const translations={...(entry.document.translations||{})};
-  translations[translationLocale]={...(translations[translationLocale]||{}),...patch};
-  change({translations});
- }
- function translationSection(sectionId:string,patch:Partial<ContentSectionTranslation>){
-  if(!entry||translationLocale==='en')return;
-  const current=entry.document.translations?.[translationLocale]||{};
-  translation({sections:{...(current.sections||{}),[sectionId]:{...(current.sections?.[sectionId]||{}),...patch}}});
- }
+
  async function verify(target:Entry){
   if(!target.published||!target.visible)return;
   setVerification('Checking the anonymous public page…');
@@ -67,26 +57,7 @@ export function ContentEditor({admin,initialKind='all',initialRecord,initialHome
  <label className={s.wide}>Introduction & search description<textarea id="content-field-description" value={entry.document.description} maxLength={300} required onChange={e=>change({description:e.target.value})}/></label>
  <p className={s.wide}><a href={'/studio/site-images?record='+encodeURIComponent(entry.document.id)+'&slot=header'}>Edit independent header image and desktop/mobile crops ↗</a>{entry.document.headerImage&&' · An editorial header override is active. Changing the fallback below clears it.'}</p><label className={s.wide}>Header image fallback<select id="content-field-image" value={entry.document.image||''} onChange={e=>change({headerImage:undefined,image:e.target.value||undefined,imageAlt:media.find(m=>m.path===e.target.value)?.alt})}><option value="">No header image</option>{media.map(m=><option key={m.path} value={m.path}>{m.alt}</option>)}</select></label><label className={s.wide}>Related product IDs — separated by commas<input id="content-field-relatedProductIds" value={entry.document.relatedProductIds?.join(', ')||''} placeholder="DP001, DP013" onChange={e=>change({relatedProductIds:e.target.value?e.target.value.split(',').map(v=>v.trim()).filter(Boolean):undefined})}/><small>Up to six approved catalogue IDs. Only published pieces are linked publicly.</small></label>{entry.document.image&&<label className={s.wide}>Image description<input id="content-field-imageAlt" value={entry.document.imageAlt||''} maxLength={180} required onChange={e=>change({imageAlt:e.target.value})}/></label>}<label>Effective date (only when verified)<input type="date" value={entry.document.effectiveDate||''} onChange={e=>change({effectiveDate:e.target.value||undefined})}/></label></div>}
  <PageSectionsEditor key={entry.document.id+':'+homeSection} document={entry.document} initialSection={homeSection} onChange={change} media={media}/>
- <details className={s.panel}>
-  <summary>Translations</summary>
-  <p className={s.help}>Optional overrides for public languages. Blank fields fall back to the English text above; publishing this document publishes its translations in the same revision.</p>
-  <label>Language<select value={translationLocale} onChange={e=>setTranslationLocale(e.target.value as Locale)}>{locales.filter(code=>code!=='en').map(code=><option key={code} value={code}>{localeLabels[code]}</option>)}</select></label>
-  {translationLocale!=='en'&&<div dir={translationLocale==='ar'?'rtl':'ltr'}>
-   <div className={s.grid}>
-    <label className={s.wide}>Translated title<small dir="ltr">English: {entry.document.title}</small><input value={entry.document.translations?.[translationLocale]?.title||''} maxLength={120} onChange={e=>translation({title:e.target.value})}/></label>
-    <label>Translated category / eyebrow<small dir="ltr">English: {entry.document.eyebrow}</small><input value={entry.document.translations?.[translationLocale]?.eyebrow||''} maxLength={100} onChange={e=>translation({eyebrow:e.target.value})}/></label>
-    <label className={s.wide}>Translated introduction<small dir="ltr">English: {entry.document.description}</small><textarea rows={4} value={entry.document.translations?.[translationLocale]?.description||''} maxLength={300} onChange={e=>translation({description:e.target.value})}/></label>
-   </div>
-   {entry.document.sections.map((block,index)=>{
-    const translated=entry.document.translations?.[translationLocale]?.sections?.[block.id]||{};
-    return <fieldset className={s.panel} key={'translation-'+block.id}><legend>{localeLabels[translationLocale]} · Section {index+1}</legend>
-     <label>Translated heading<small dir="ltr">English: {block.heading}</small><input value={translated.heading||''} maxLength={150} onChange={e=>translationSection(block.id,{heading:e.target.value})}/></label>
-     <label>Translated paragraphs<small dir="ltr">Keep paragraph order aligned with English. Blank paragraphs fall back individually.</small><textarea rows={7} value={translated.paragraphs?.join('\n\n')||''} onChange={e=>translationSection(block.id,{paragraphs:e.target.value?e.target.value.split(/\n\s*\n/):[]})}/></label>
-     {!!block.checklist?.length&&<label>Translated checklist<small dir="ltr">Keep item order aligned with English.</small><textarea rows={3} value={translated.checklist?.join('\n')||''} onChange={e=>translationSection(block.id,{checklist:e.target.value?e.target.value.split('\n'):[]})}/></label>}
-    </fieldset>;
-   })}
-  </div>}
- </details>
+ <TranslationEditor key={entry.document.id} document={entry.document} onChange={change} version={entry.version} dirty={dirty}/>
  <div className={s.actions}><button className={s.primary} disabled={busy}>Save draft</button>{admin&&<><button type="button" disabled={busy||dirty||entry.version<1||!entry.document.pageSnapshot||!!entry.document.pageSnapshot?.issues.length||contentIssues(entry.document).length>0} onClick={()=>void save('publish')}>Publish this revision</button><button type="button" disabled={busy||dirty||!entry.visible} onClick={()=>void save('hide')}>Hide public page</button></>}</div></form>}
  {entry.reviewed&&<details className={s.panel}><summary>Review the updated website copy</summary><p>This proposed copy is separate from your saved draft. Review any later business changes before using it. Nothing is saved or published by this action.</p><h3>{entry.reviewed.title}</h3><p>{entry.reviewed.description}</p>{entry.reviewed.sections.map(b=><section key={b.id}><h4>{b.heading}</h4>{b.paragraphs.map((p,i)=><p key={i}>{p}</p>)}</section>)}<button type="button" onClick={()=>{if(entry.reviewed&&window.confirm('Replace the editor contents with the reviewed copy? Your current saved and published revisions stay unchanged until you save or publish.')){change(structuredClone(entry.reviewed));setMessage('Reviewed copy is in the editor. Check it, then save a draft when ready.');}}}>Use reviewed copy in this draft</button></details>}
  <RevisionHistory<ContentDocument> key={entry.document.id+':'+entry.version} kind="content" entityKey={entry.document.id} currentVersion={entry.version} currentDocument={entry.document} onRestore={(document,version)=>{change(document);setRestoredFrom(version);}}/>{entry.published&&<details className={s.panel}><summary>Compare saved public content</summary><ContentCompare before={entry.published} after={entry.document}/><h3>{entry.published.title}</h3><p>{entry.published.description}</p>{entry.published.sections.map(b=><section key={b.id}><h4>{b.heading}</h4>{b.paragraphs.map((p,i)=><p key={i}>{p}</p>)}</section>)}</details>}

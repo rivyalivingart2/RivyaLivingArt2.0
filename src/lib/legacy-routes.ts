@@ -25,7 +25,7 @@ export const legacyRoutes:readonly LegacyRoute[]=[
  {source:'/workshops',disposition:'retired',reason:'No verified current workshop offering was supplied. Do not collect a waitlist or invent dates.',evidence:'P6 W31 conditional offering boundary'},
  {source:'/portfolio/[slug]',disposition:'review',reason:'Require genuine project facts, permission and exact identity; never substitute a design visualization.',evidence:'Current approvedProjects is empty'},
  {source:'/p/[slug]',disposition:'review',reason:'Current published custom pages remain available; old pages require an individual content comparison.',evidence:'P4 durable custom-page contract'},
- {source:'/[locale]/[path]',disposition:'planned',reason:'Language-prefixed compatibility and reviewed journeys are P6B. No blanket locale stripping or locale SEO migration is active.',evidence:'P6 T36/T37; current cookie-based locale selection'},
+ {source:'/[locale]/[path]',disposition:'existing',reason:'Verified index/editorial paths use a temporary redirect and enabled language preference. Unknown identities and private paths return 404. Other languages fall back to English. No locale SEO migration is active.',evidence:'P6 T36/T37; current cookie-based locale selection'},
 ] as const;
 
 export type LegacyResolution={kind:'redirect';href:string}|{kind:'notice';status:404|410;title:string;message:string;href:string;label:string};

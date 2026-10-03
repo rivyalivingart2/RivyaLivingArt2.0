@@ -6,12 +6,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import {Menu,Search,ArrowUpRight,ChevronDown} from 'lucide-react';
 import {LocaleSwitcher} from './locale-switcher';
-import {localizedLabel,uiText,type Locale,type NavigationSettings,type NavItem} from '@/lib/site-settings-model';
+import {navigationLabel,uiText,type Locale,type NavigationSettings,type NavItem} from '@/lib/site-settings-model';
 import type {SharedCopy} from '@/lib/shared-copy-model';
 import s from './shop.module.css';
 
 function NavAnchor({item,locale,className,onClick,current}:{item:NavItem;locale:Locale;className?:string;onClick?:()=>void;current?:boolean}){
- const label=localizedLabel(item.label,locale);
+ const label=navigationLabel(item,locale);
  const extra=item.newTab?{target:'_blank' as const,rel:'noreferrer'}:{};
  return item.href.startsWith('/')?<Link href={item.href} className={className} onClick={onClick} aria-current={current?'page':undefined} {...extra}>{label}</Link>:<a href={item.href} className={className} onClick={onClick} aria-current={current?'page':undefined} {...extra}>{label}</a>;
 }

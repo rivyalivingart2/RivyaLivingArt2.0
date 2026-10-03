@@ -2,7 +2,7 @@ import 'server-only';
 import {cache} from 'react';
 import {cookies} from 'next/headers';
 import {studioDb} from './studio-db';
-import {defaultSiteSettings,isLocale,validSiteSettings,type Locale,type SiteSettings} from './site-settings-model';
+import {defaultSiteSettings,isLocale,validSiteSettings,publicJourneyLocales,type Locale,type SiteSettings} from './site-settings-model';
 export type {SiteSettings} from './site-settings-model';
 
 export const publishedSiteSettings=cache(async():Promise<{settings:SiteSettings;version:number}>=>{
@@ -18,5 +18,5 @@ export const publishedSiteSettings=cache(async():Promise<{settings:SiteSettings;
 export const publicLocale=cache(async():Promise<Locale>=>{
  const [{settings},jar]=await Promise.all([publishedSiteSettings(),cookies()]);
  const requested=jar.get('NEXT_LOCALE')?.value||'en';
- return isLocale(requested)&&settings.localization.enabled&&settings.localization.enabledLocales.includes(requested)?requested:'en';
+ return isLocale(requested)&&settings.localization.enabled&&publicJourneyLocales(settings.localization.enabledLocales).includes(requested)?requested:'en';
 });

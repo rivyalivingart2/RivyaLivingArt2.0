@@ -1,3 +1,11 @@
+# Current continuation — included P6 complete locally
+
+3 October 2026. The owner requested full P6. P6A–P6E included implementation and isolated QA are complete on `codex/p6-legacy-language-journeys`. Read `docs/redesign/P6-CLOSURE.md`, `P6-CHECKPOINT.md` and `p6-validation.json`. Conditional T34/T37/T45/T47 remain inactive; business editorial translations still require actual review/publication. Do not claim production is translated or updated. Earlier P6A-only notes below are historical.
+
+Keep work local until a new explicit push-main request, then use a detailed PR. Preserve products/forms/categories/galleries/originals/contacts/scraper/drafts/history and manual-send behavior. No old-product transfer, production publication or automatic service activation. No language-URL migration or indexing activation is selected. S09 new-product media remains deferred; P4 performance acceptance and P7/P8 remain open. P7 has not started.
+
+---
+
 # Current continuation — P6 started locally
 
 3 October 2026. The owner requested starting P6. Continue on `codex/p6-legacy-language-journeys` from main `c94427de88d45a216fdf545840efef2f875e5789` (PRs #34/#35 already merged and deployed). Read `docs/redesign/P6-CHECKPOINT.md`. P6A reviewed legacy routing and read-only publication/category diagnostics are implemented and verified locally. Continue P6B reviewed language journeys. Language journeys, exact unverified product/article mappings and remaining P6 slices stay open until evidenced; do not describe all P6 as complete.

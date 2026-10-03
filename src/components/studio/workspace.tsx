@@ -35,10 +35,12 @@ const SiteCopyEditor=dynamic(()=>import('./site-copy-editor').then(m=>m.SiteCopy
 const SiteImagesEditor=dynamic(()=>import('./site-images-editor').then(m=>m.SiteImagesEditor),{loading:WorkspaceLoading});
 const ContentHealth=dynamic(()=>import('./content-health').then(m=>m.ContentHealth),{loading:WorkspaceLoading});
 const SiteSettingsEditor=dynamic(()=>import('./site-settings-editor').then(m=>m.SiteSettingsEditor),{loading:WorkspaceLoading});
+const TranslationWorkspace=dynamic(()=>import('./translation-workspace').then(m=>m.TranslationWorkspace),{loading:WorkspaceLoading});
+const LegacyDisposition=dynamic(()=>import('./legacy-disposition').then(m=>m.LegacyDisposition),{loading:WorkspaceLoading});
 const RouteReview=dynamic(()=>import('./route-review').then(m=>m.RouteReview),{loading:WorkspaceLoading});
 function WorkspaceLoading(){return <p className={s.status} role="status">Opening this workspace page…</p>;}
 
-const moduleIcons = {overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,'route-review':ExternalLink,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
+const moduleIcons = {overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,legacy:FileText,translations:Languages,'route-review':ExternalLink,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
 const navGroups = ['Work','Website','Catalogue','Media','Administration'].map(title=>({title,items:studioModules.filter(module=>module.group===title)}));
 type ModuleContext={staffId?:string|null;admin:boolean;staff:StaffMember[];load:()=>Promise<void>};
 const moduleViews = {
@@ -52,6 +54,8 @@ const moduleViews = {
  'site-images':({admin}:ModuleContext)=><SiteImagesEditor admin={admin}/>,
  'content-health':()=> <ContentHealth/>,
  'site-settings':()=> <SiteSettingsEditor/>,
+ legacy:()=> <LegacyDisposition/>,
+ translations:()=> <TranslationWorkspace/>,
  'route-review':()=> <RouteReview/>,
  activity:({admin}:ModuleContext)=><Operations view="activity" admin={admin}/>,
  staff:({staff,load}:ModuleContext)=><StaffEditor staff={staff} onReload={load}/>,
