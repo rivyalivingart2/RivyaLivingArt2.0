@@ -1,0 +1,964 @@
+{
+  "public": [
+    {
+      "id": "W01",
+      "title": "Shared header, footer, navigation and search entry",
+      "pattern": "navigation",
+      "heading": "A clear way through Rivya.",
+      "sections": [
+        "Brand and primary links",
+        "collection menu",
+        "search",
+        "language control",
+        "saved pieces",
+        "footer and protected contacts"
+      ],
+      "idea": "Use short destination labels and clear active states. Preserve every existing social label, link and account value.",
+      "visual": "Dark solid navigation with a fine bronze rule; text menus instead of image-heavy navigation. Footer uses roomy columns, not a second hero.",
+      "accept": "Escape closes menus and restores focus. Keyboard can reach all destinations. At 320px menus scroll internally and contact values wrap.",
+      "route": "Shared, conditional or missing dedicated template; see specification",
+      "status": "Local presentation started"
+    },
+    {
+      "id": "W02",
+      "title": "Homepage `/`",
+      "pattern": "hero",
+      "heading": "Art for the way you live.",
+      "sections": [
+        "Full-height hero",
+        "point of view",
+        "three worlds",
+        "selected forms",
+        "all-category index",
+        "material chapter",
+        "atelier chapter",
+        "room context",
+        "bespoke brief",
+        "four steps",
+        "principles",
+        "journal",
+        "invitation"
+      ],
+      "idea": "Keep the detailed old-site depth through discrete chapters. Suggested chapter line: A room. A memory. A personal gesture. Existing published ordering remains authoritative until edited in Studio.",
+      "visual": "Use reviewed blue pour as a full-bleed static opening, three distinct doorway images, edge-detail material chapter and labelled illustrative making scene.",
+      "accept": "Saved homepage preview and public renderer must match at the exact revision. Product selections resolve existing IDs. Every enabled chapter has a heading and a working CTA.",
+      "route": "/",
+      "status": "Local presentation started"
+    },
+    {
+      "id": "W03",
+      "title": "Collectible design `/collectible-design`",
+      "pattern": "catalogue",
+      "heading": "Objects that hold a room.",
+      "sections": [
+        "Collection introduction",
+        "featured visual",
+        "browse anchor",
+        "filter chips and sort",
+        "product grid",
+        "form index",
+        "scale-planning chapter",
+        "materials",
+        "process link",
+        "FAQ",
+        "brief invitation"
+      ],
+      "idea": "Editorial angle: proportion, room circulation and intended use. Keep factual product descriptions and dimensions exactly as stored.",
+      "visual": "Collectible doorway establishes scale. Original product gallery images populate cards; no stock replacement. Crop editorial imagery independently from product galleries.",
+      "accept": "Filters, counts, paging and Back agree. Selected filter chips remain visible. Price-on-request records never gain an invented price.",
+      "route": "/[collection]",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W04",
+      "title": "Memory art `/memory-art`",
+      "pattern": "catalogue",
+      "heading": "A moment. A lasting form.",
+      "sections": [
+        "Memory introduction",
+        "preservation doorway",
+        "browse",
+        "occasion guidance",
+        "what to discuss",
+        "condition questions",
+        "process",
+        "care link",
+        "related journal",
+        "invitation"
+      ],
+      "idea": "Explain how to prepare the story behind a keepsake. Do not promise preservation outcomes, shipping rules or flower-condition guarantees absent approved content.",
+      "visual": "Use the reviewed floral block illustration with its classification. Soft directional light and generous dark space; genuine commissioned examples only with permission.",
+      "accept": "Memory filters remain tier-scoped; personalization questions retain conditional logic. No unsupported longevity or preservation promise is introduced.",
+      "route": "Shared, conditional or missing dedicated template; see specification",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W05",
+      "title": "Personal art `/personal-art`",
+      "pattern": "catalogue",
+      "heading": "For someone. Like no one else.",
+      "sections": [
+        "Personal-gift introduction",
+        "gifts doorway",
+        "browse",
+        "occasion and recipient chapters",
+        "lettering guidance",
+        "quantity discussion",
+        "process",
+        "related journal",
+        "invitation"
+      ],
+      "idea": "Content ideas: choosing a name treatment, explaining a colour reference, describing an occasion. Keep actual minimum quantities and options unchanged.",
+      "visual": "Reviewed blue-gold gift composition. Editorial crops retain small object edges and lettering; avoid arbitrary zoom that suggests a different scale.",
+      "accept": "Personal-art options and quantity validation remain unchanged; original IDs and galleries resolve correctly after filtering and saving.",
+      "route": "/[collection]",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W06",
+      "title": "Search and catalogue discovery `/search`",
+      "pattern": "catalogue",
+      "heading": "Find your starting point.",
+      "sections": [
+        "Search field",
+        "count and current query",
+        "applied chips",
+        "sort",
+        "result grid",
+        "paging",
+        "empty-state reset",
+        "links to all three collections"
+      ],
+      "idea": "Use query-specific count language. Empty state suggests removing one filter or browsing a collection; no generic sales essay above results.",
+      "visual": "Compact text-led opening. Consistent 4:5 original product cards. No hero image or autoplay video above results.",
+      "accept": "Query, filters and page are shareable in the URL. Clear one chip preserves other filters. Back restores the prior result set and scroll context.",
+      "route": "/search",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W07",
+      "title": "Product detail `/pieces/[slug]`",
+      "pattern": "product",
+      "heading": "A closer look at the piece.",
+      "sections": [
+        "Compact breadcrumb",
+        "original gallery and title/specification column",
+        "existing action controls",
+        "factual details",
+        "dimensions and options",
+        "care",
+        "related pieces",
+        "brief invitation"
+      ],
+      "idea": "Use the existing product title, story, materials and pricing status verbatim. Presentation hierarchy may change; data and gallery associations may not.",
+      "visual": "Large exact original gallery, small thumbnails, warm neutral borders. Context shots are separate and clearly classified. Keep true material colour on hover.",
+      "accept": "Gallery order, captions, originals, Arrow/Home/End/Escape and focus return remain correct. Main product action is near the gallery, not below a blank screen.",
+      "route": "/pieces/[slug]",
+      "status": "Local presentation started"
+    },
+    {
+      "id": "W08",
+      "title": "Product customization `/pieces/[slug]/customize`",
+      "pattern": "form",
+      "heading": "Make this piece your own.",
+      "sections": [
+        "Product context",
+        "step navigation",
+        "current options",
+        "references",
+        "contact details",
+        "review",
+        "save request",
+        "explicit WhatsApp handoff"
+      ],
+      "idea": "Write plain step guidance without changing schema labels or business facts. Explain which fields are required and what a reference image is used for.",
+      "visual": "Quiet form page with a compact product thumbnail and a desktop summary. On phones the summary follows the fields. No decorative motion near typing.",
+      "accept": "Initial load remains at heading; Next/error moves focus deliberately. Back retains answers. Retry does not create duplicate requests; private references stay private.",
+      "route": "/pieces/[slug]/customize",
+      "status": "Local presentation started"
+    },
+    {
+      "id": "W09",
+      "title": "Commission entry `/commission`",
+      "pattern": "editorial",
+      "heading": "An idea is enough to begin.",
+      "sections": [
+        "Commission introduction",
+        "choose an existing piece or bespoke path",
+        "what to bring",
+        "four-step journey",
+        "expectations from approved content",
+        "FAQ",
+        "contact"
+      ],
+      "idea": "Help someone decide between adapting an existing design and describing a new brief. Suggested prompts cover purpose, room, approximate scale and reference preferences.",
+      "visual": "A split chapter uses the material-detail asset. Two equal decision cards have concise descriptions and a visible destination.",
+      "accept": "Both paths are keyboard accessible. Links preserve the intended product or bespoke context. No deposit, price or deadline is fabricated.",
+      "route": "/commission",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W10",
+      "title": "Bespoke request `/commission/customize`",
+      "pattern": "form",
+      "heading": "Tell us where your piece begins.",
+      "sections": [
+        "Brief purpose",
+        "dimensions if known",
+        "style and colours",
+        "private references",
+        "contact",
+        "review",
+        "saved receipt"
+      ],
+      "idea": "Use examples as optional prompts, never as prefilled answers. Let people say what is undecided. Keep existing required fields and consent wording.",
+      "visual": "One calm reading column plus a summary on wide screens; numbered steps and visible errors. Use a small reviewed editorial detail only in the intro.",
+      "accept": "No initial autofocus jump. All failures retain entered values. Upload retry, schema-change review and manual-send semantics remain unchanged.",
+      "route": "/commission/customize",
+      "status": "Local presentation started"
+    },
+    {
+      "id": "W11",
+      "title": "Saved-request receipt `/inquiry/received`",
+      "pattern": "receipt",
+      "heading": "Your brief is saved.",
+      "sections": [
+        "Saved reference",
+        "server-confirmed status",
+        "summary",
+        "prepared message",
+        "Open WhatsApp / Copy",
+        "next steps",
+        "safe return link"
+      ],
+      "idea": "Separate request saved, message prepared and customer chooses to send. Never say the message was sent or an order confirmed without supporting evidence.",
+      "visual": "Quiet confirmation panel, readable reference number, two clearly separated actions. No confetti or completion percentage.",
+      "accept": "Reload is safe; private receipt tokens never appear in screenshots or reports. Copy failure offers selectable text. Message preparation failure leaves the saved brief recoverable.",
+      "route": "/inquiry/received",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W12",
+      "title": "Atelier story `/our-story`; alias `/about`",
+      "pattern": "editorial",
+      "heading": "The personal part gives it direction.",
+      "sections": [
+        "Atelier point of view",
+        "material relationship",
+        "personal stories",
+        "design conversation",
+        "genuine maker proof if supplied",
+        "values",
+        "process",
+        "invitation"
+      ],
+      "idea": "Use approved origin/founder/business facts only. Suggested editorial angle: how a room or memory informs a brief. Keep detailed chapter structure.",
+      "visual": "Alternate generous image/text spreads. Label maker-hands as an illustrative scene, not a photograph of Rivya staff. Genuine portrait remains conditional.",
+      "accept": "Each chapter can be edited, previewed and recovered. Missing proof removes the proof module instead of leaving fabricated staff or awards.",
+      "route": "/about; /our-story",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W13",
+      "title": "Process `/process`",
+      "pattern": "process",
+      "heading": "Considered together. Made personal.",
+      "sections": [
+        "Opening",
+        "choose starting point",
+        "describe preferences",
+        "save the brief",
+        "start the conversation",
+        "material discussion",
+        "practical questions",
+        "invitation"
+      ],
+      "idea": "Describe the actual customer workflow. Separate illustrative making footage from customer steps; do not imply every depicted workshop action is verified Rivya practice.",
+      "visual": "Four numbered chapters with a desktop progress rail and visible captions. Optional user-played detail clip later; static images remain default.",
+      "accept": "All four steps readable without animation. Reduced motion uses a simple vertical list. Sticky imagery must release before the footer and never cover text.",
+      "route": "/process",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W14",
+      "title": "Materials and care `/materials-care`; aliases `/materials`, `/care`",
+      "pattern": "editorial",
+      "heading": "Material, movement, meaning.",
+      "sections": [
+        "Materials introduction",
+        "timber",
+        "resin",
+        "finish dialogue",
+        "use and placement",
+        "approved care guidance",
+        "questions",
+        "related journal"
+      ],
+      "idea": "Content ideas: how to describe a finish preference and what to ask about intended use. Preserve approved care instructions and avoid unsupported heat/water claims.",
+      "visual": "Macro edge-detail beside typography. Separate care instructions with clear headings; no abstract video behind instructions.",
+      "accept": "Material and care anchors resolve from other pages. Advice is sourced to reviewed content. Tables reflow; print view remains legible.",
+      "route": "/care; /materials-care; /materials",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W15",
+      "title": "Architects and collaborators `/architects`",
+      "pattern": "editorial",
+      "heading": "Think about the space around it.",
+      "sections": [
+        "Project-context introduction",
+        "what to prepare",
+        "scale and access",
+        "materials dialogue",
+        "collaboration steps",
+        "reference brief",
+        "contact"
+      ],
+      "idea": "Address architects through useful brief questions: use, approximate footprint, surrounding finishes, city and access constraints. Do not invent trade discounts or completed commissions.",
+      "visual": "Collectible doorway plus a detail image; simple annotated spatial diagrams labelled illustrative. Project photography only when genuine evidence exists.",
+      "accept": "Architect CTA reaches the correct brief. No unsupported BIM/download/trade program is activated. Visual diagrams have text equivalents.",
+      "route": "/architects",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W16",
+      "title": "Journey aliases `/preserve`, `/personalize`",
+      "pattern": "editorial",
+      "heading": "Choose the story you want to tell.",
+      "sections": [
+        "Preserve or personalize landing context",
+        "current destination",
+        "collection introduction",
+        "brief path"
+      ],
+      "idea": "Keep aliases useful and exact; avoid a thin duplicate page with conflicting promises. Preserve reviewed old-URL disposition and language selection.",
+      "visual": "Reuse the relevant memory or personal-art collection treatment rather than another generic River Channel hero.",
+      "accept": "Alias behavior and canonical destination agree with the registry; unsupported legacy product identities do not guess a replacement.",
+      "route": "/personalize; /preserve",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W17",
+      "title": "Portfolio index `/portfolio`",
+      "pattern": "journal",
+      "heading": "Spaces with a story.",
+      "sections": [
+        "Portfolio introduction",
+        "genuine project index or honest empty state",
+        "selection criteria",
+        "commission invitation"
+      ],
+      "idea": "Only feature substantiated projects with permission. While empty, explain the work-in-progress collection and link to design explorations clearly labelled as such.",
+      "visual": "A future project grid uses wide contextual images and short factual metadata. Today, use a restrained text-led empty state, not fake installations.",
+      "accept": "No invented clients, project locations or completion years. Empty state is accessible; unapproved detail records remain unavailable.",
+      "route": "/portfolio",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W18",
+      "title": "Project detail `/portfolio/[slug]`",
+      "pattern": "editorial",
+      "heading": "A project, considered in detail.",
+      "sections": [
+        "Approved project title",
+        "context",
+        "brief",
+        "constraints",
+        "design response",
+        "details",
+        "factual outcome",
+        "credits",
+        "related project"
+      ],
+      "idea": "Conditional template. Collect consent, approved location granularity, dates and actual photographs before publication. Quotes require attribution and permission.",
+      "visual": "Wide establishing photo, detail pair, room-scale frame. Documentary colour and captions; avoid fabricated before/after evidence.",
+      "accept": "Unknown project slugs return 404. Publication requires real evidence and image permission; title, gallery and credits are versioned.",
+      "route": "/portfolio/[slug]",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W19",
+      "title": "Journal index `/journal`",
+      "pattern": "journal",
+      "heading": "A closer look.",
+      "sections": [
+        "Editorial introduction",
+        "featured story",
+        "categories",
+        "article grid",
+        "paging",
+        "related collection invitation"
+      ],
+      "idea": "Ideas: reading timber grain; preparing a room brief; preserving the meaning of a flower; choosing a nameplate composition. Clearly separate ideas from factual material advice.",
+      "visual": "ADM-inspired editorial grid with varied emphasis but stable card reading order. Distinct approved images for categories. Actual titles and dates remain unchanged.",
+      "accept": "Only published articles appear. Category filters and paging survive Back. Reading time is derived; no fabricated author/date or newsletter signup.",
+      "route": "/journal",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W20",
+      "title": "Journal article `/journal/[slug]`",
+      "pattern": "article",
+      "heading": "Notes on material and meaning.",
+      "sections": [
+        "Article title",
+        "actual metadata",
+        "lead image",
+        "table of contents if long",
+        "chapters",
+        "image captions",
+        "related reading",
+        "relevant brief CTA"
+      ],
+      "idea": "Use scannable headings, short introductions and concrete questions. Retain approved article content; proposed topic ideas are drafts, not auto-published articles.",
+      "visual": "Readable 62-70ch measure, 18px body, occasional full-width image breaks. Avoid generic product-photo repetition across every article.",
+      "accept": "Headings, anchors and captions work at 200% zoom. Publish/restore changes article version safely. Related links resolve public records only.",
+      "route": "/journal/[slug]",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W21",
+      "title": "Frequently asked questions `/faq`",
+      "pattern": "policy",
+      "heading": "Your questions, considered.",
+      "sections": [
+        "Introduction",
+        "topic groups",
+        "expandable questions",
+        "practical links",
+        "contact invitation"
+      ],
+      "idea": "Group by beginning a brief, materials, preservation, delivery and existing requests. Use approved answers only; flag unknown answers for factual review.",
+      "visual": "Accordion rows with generous hit area, visible focus and quiet dividers. No decorative hero needed.",
+      "accept": "Keyboard activation and state announcement work. Deep-linked question opens correctly. FAQ does not contradict protected policies or contact settings.",
+      "route": "/faq",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W22",
+      "title": "Contact `/contact`",
+      "pattern": "contact",
+      "heading": "Let’s talk about your idea.",
+      "sections": [
+        "Contact introduction",
+        "protected phone/email/socials",
+        "brief choices",
+        "approved location/hours only",
+        "practical links"
+      ],
+      "idea": "Help users choose a product brief, bespoke conversation or existing-request follow-up. Do not replace current phone, email, social links, hours or location.",
+      "visual": "Clear contact cards and one optional atmospheric editorial image. Clickable contact values remain selectable; map loads only on user intent if supported.",
+      "accept": "Phone remains +91 8320404132; email remains rivyalivingart2.0@gmail.com. No unsolicited outbound message, newsletter or third-party embed is added.",
+      "route": "/contact",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W23",
+      "title": "Shipping and delivery `/shipping-delivery`",
+      "pattern": "policy",
+      "heading": "Shipping & delivery.",
+      "sections": [
+        "Policy title",
+        "approved scope",
+        "process",
+        "responsibilities",
+        "questions",
+        "exact contact values"
+      ],
+      "idea": "Improve navigation and readability, not legal meaning. Missing effective dates or service promises remain review tasks; never invent a delivery window.",
+      "visual": "Calm narrow reading column, section index, print-friendly rules and definition rows. No motion except native disclosure.",
+      "accept": "Published approved policy remains the source of truth; no changes to territory, cost, timing or liability without factual approval.",
+      "route": "/shipping-delivery",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W24",
+      "title": "Returns and cancellations `/returns-cancellations`",
+      "pattern": "policy",
+      "heading": "Changes & cancellations.",
+      "sections": [
+        "Policy title",
+        "stages of a request",
+        "approved change/cancellation terms",
+        "contact",
+        "related policy links"
+      ],
+      "idea": "Use plain section labels while preserving business terms. Separate draft inquiry editing from an agreed order's policy.",
+      "visual": "Same policy template as delivery, with important existing clauses visually prominent without rewriting their meaning.",
+      "accept": "No new cancellation rights, deadlines or refund promises. Navigation and printable content remain complete.",
+      "route": "/returns-cancellations",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W25",
+      "title": "Privacy `/privacy`",
+      "pattern": "policy",
+      "heading": "Your privacy.",
+      "sections": [
+        "Policy title",
+        "collection/use",
+        "references",
+        "retention",
+        "rights/contact",
+        "updates"
+      ],
+      "idea": "Preserve policy language and actual privacy workflow. Link the existing request channel; do not imply a new analytics, subscription or data-sharing service.",
+      "visual": "Quiet policy layout with a visible section index. No unnecessary external media or trackers.",
+      "accept": "No private data in structured metadata or screenshots. Erasure and export controls remain authorized Studio actions, never public shortcuts.",
+      "route": "/privacy",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W26",
+      "title": "Terms `/terms`",
+      "pattern": "policy",
+      "heading": "Terms of use.",
+      "sections": [
+        "Terms title",
+        "approved sections",
+        "business contact",
+        "related policies"
+      ],
+      "idea": "Keep reviewed wording and factual entity information. Improve typographic hierarchy and anchors only.",
+      "visual": "Shared policy layout, numbered headings, wide enough for long links to wrap naturally.",
+      "accept": "No fabricated business registration, address or effective date. Unknown legal fields remain explicit editorial blockers.",
+      "route": "/terms",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W27",
+      "title": "Imprint `/imprint` — first broken public destination",
+      "pattern": "policy",
+      "heading": "Imprint.",
+      "sections": [
+        "Registered business content",
+        "approved entity facts",
+        "protected phone/email",
+        "relevant disclosure",
+        "policy links"
+      ],
+      "idea": "Complete the existing factual-content publication workflow. A registered route is not evidence that the page has published business content.",
+      "visual": "A compact factual information sheet with definition rows. Avoid decorative filler or a new brand story.",
+      "accept": "Exact draft preview, publish, public footer navigation and recovery need production evidence. Do not certify availability from code alone.",
+      "route": "/imprint",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W28",
+      "title": "Accessibility `/accessibility`",
+      "pattern": "policy",
+      "heading": "Accessibility.",
+      "sections": [
+        "Statement",
+        "supported interactions",
+        "known limitations",
+        "contact for assistance",
+        "review date if verified"
+      ],
+      "idea": "Describe tested support accurately. Keep human screen-reader and physical-device checks open until performed; do not claim WCAG conformance from automation alone.",
+      "visual": "Plain reading layout with focus-friendly links and clear contrast. Motion-free.",
+      "accept": "Statement matches actual evidence and remaining issues. Contact route works, with no invented certification or audit date.",
+      "route": "/accessibility",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W29",
+      "title": "Loading, empty, unavailable, 404 and error states",
+      "pattern": "system",
+      "heading": "A useful next step.",
+      "sections": [
+        "Clear loading/error/empty title",
+        "relevant explanation",
+        "retry/reset/back action",
+        "retained context"
+      ],
+      "idea": "Write distinct messages for no matches, unavailable content, missing page and failed request. Avoid blaming the user or exposing stack traces.",
+      "visual": "Small calm panels, reserved image dimensions and meaningful skeletons. No endless spinner when retry is possible.",
+      "accept": "Error boundaries preserve safe recovery; no-result filters stay editable. 404 status is real. Loading placeholders do not shift the whole layout.",
+      "route": "Shared, conditional or missing dedicated template; see specification",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W30",
+      "title": "Authenticated preview and development state galleries",
+      "pattern": "system",
+      "heading": "Preview this saved revision.",
+      "sections": [
+        "Authenticated preview banner",
+        "record and revision",
+        "actual renderer",
+        "return-to-editor link"
+      ],
+      "idea": "Make the distinction between draft preview and published page unmistakable. Keep the record/version identity and permission boundary.",
+      "visual": "Use the public page renderer with a compact private banner; never a separate approximate mock page.",
+      "accept": "Unauthenticated preview is denied. Preview never leaks draft data into public caches, metadata, sitemap or screenshots for sharing.",
+      "route": "/[...path]; /[section]; /collectible-design; /; /pieces/[slug]; /preview/states/[kind]; /preview/states; /preview/studio/[...path]; /preview/studio/content/[id]; /preview/studio/content/new; /preview/studio/content; /preview/studio/media; /preview/studio/modules/[module]; /preview/studio; /preview/studio/products/[id]/form; /preview/studio/products/[id]; /preview/studio/products/new; /preview/studio/products",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W31",
+      "title": "Conditional workshop pages — no new route until an actual offering exists",
+      "pattern": "system",
+      "heading": "Workshops, when there is a real offering.",
+      "sections": [
+        "Conditional offering introduction",
+        "verified dates/location/format",
+        "booking only if supported"
+      ],
+      "idea": "No current workshop is invented. Keep retired routes explanatory until a genuine offering and booking policy exist.",
+      "visual": "Future template could use documentary activity photos and a clear schedule; current treatment is a useful unavailable state.",
+      "accept": "No fake seats, dates, prices, bookings or availability. Activation requires real business content and a tested service contract.",
+      "route": "Shared, conditional or missing dedicated template; see specification",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W32",
+      "title": "Conditional 3D-printing/supplies or other legacy service pages",
+      "pattern": "system",
+      "heading": "A clear destination for legacy services.",
+      "sections": [
+        "Existing retirement explanation",
+        "current supported services",
+        "useful contact or collection link"
+      ],
+      "idea": "3D printing and supplies remain conditional. Do not revive the scraper, import products or imply machines/services are available.",
+      "visual": "Use text-led retirement guidance. No supplier logos, machine photography or fabricated service cards.",
+      "accept": "Unverified legacy routes remain gone/unavailable as specified, with safe destinations and no sensitive query forwarding.",
+      "route": "Shared, conditional or missing dedicated template; see specification",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W33",
+      "title": "Reviewed languages and legacy-URL journeys",
+      "pattern": "navigation",
+      "heading": "A considered language journey.",
+      "sections": [
+        "Language switch",
+        "translated interface",
+        "explicit editorial fallback",
+        "exact route preservation",
+        "legacy mapping"
+      ],
+      "idea": "Current priority journeys are English, Hindi and Gujarati. Additional languages require real reviewed content; a long language menu is not completion.",
+      "visual": "Flexible controls, no fixed-height text boxes, correct script rendering and generous line-height.",
+      "accept": "Language choice survives navigation. Fallback is announced; contacts/product facts are unchanged. Unverified translations never auto-publish.",
+      "route": "Shared, conditional or missing dedicated template; see specification",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W34",
+      "title": "Saved pieces / legacy `/shop/wishlist`",
+      "pattern": "saved",
+      "heading": "Keep a few possibilities together.",
+      "sections": [
+        "Saved count",
+        "product cards",
+        "unavailable items",
+        "remove/clear",
+        "collection return",
+        "brief links"
+      ],
+      "idea": "Explain browser-local saving and its limits plainly. Do not imply an account, synced wishlist or customer database.",
+      "visual": "Compact editorial grid with obvious independent save/remove actions. Product photography remains original.",
+      "accept": "Reload persists supported local IDs. Storage failure is explicit. Unavailable records can be removed. No old wishlist import.",
+      "route": "Shared, conditional or missing dedicated template; see specification",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W35",
+      "title": "Registered custom pages / legacy `/p/[slug]`",
+      "pattern": "editorial",
+      "heading": "A page with a clear purpose.",
+      "sections": [
+        "Approved custom-page introduction",
+        "typed chapters",
+        "supported images/actions",
+        "related destination"
+      ],
+      "idea": "Use the registered custom-page contract for genuine content. Avoid one-off routes that bypass validation, publication or recovery.",
+      "visual": "Choose split, reverse or statement chapters from the same system. Avoid copying full external layouts with unrelated content.",
+      "accept": "Exact registered route, published revision, image provenance and recovery pass. Unknown custom slugs return 404.",
+      "route": "Shared, conditional or missing dedicated template; see specification",
+      "status": "Proposed refinement; existing functionality retained"
+    },
+    {
+      "id": "W36",
+      "title": "Gone, maintenance, rate-limit and environmental states",
+      "pattern": "system",
+      "heading": "We can’t complete that right now.",
+      "sections": [
+        "Specific gone/maintenance/rate-limit state",
+        "safe explanation",
+        "retry guidance where valid",
+        "useful return link"
+      ],
+      "idea": "Explain whether the destination is retired, temporarily unavailable or rate-limited. Avoid exposing private record existence.",
+      "visual": "Consistent system-state layout, restrained status icon, no autoplay or animation that delays recovery.",
+      "accept": "Correct HTTP status and cache behavior; no token leakage via redirects/referrers. Recovery action cannot bypass authorization.",
+      "route": "Shared, conditional or missing dedicated template; see specification",
+      "status": "Proposed refinement; existing functionality retained"
+    }
+  ],
+  "studio": [
+    {
+      "key": "overview",
+      "title": "Studio overview",
+      "design": "Bionis metric-card hierarchy; Medesk recent-record table and truthful stage bars; Gridline searchable workspaces.",
+      "contract": "Actual permitted task counts, updated IST timestamp, exact inquiry links, saved publication checks and recent editorial revisions. Never infer revenue, conversion or WhatsApp delivery.",
+      "status": "Local implementation; verify empty/loading/error/stale and role scope.",
+      "route": "/studio"
+    },
+    {
+      "key": "inquiries",
+      "title": "Inquiries & orders",
+      "design": "Dense but readable table, filter bar and persistent applied chips; optional board with clear stage labels.",
+      "contract": "Keep mode/filter/sort/page/record in URL. Drawer groups summary, brief, references, notes, task, amendments and audit. Stage changes retain reason and stale-version handling.",
+      "status": "Proposed visual extension of existing working flow; no customer mutation in this visual pass.",
+      "route": "/studio/inquiries"
+    },
+    {
+      "key": "follow-ups",
+      "title": "Follow-ups due",
+      "design": "Medesk-inspired agenda/table with Today, Overdue, Upcoming views and a compact task rail.",
+      "contract": "Use IST date-only presets, assigned scope, explicit save and clear next action. Keep exact record navigation and preserve date values.",
+      "status": "Existing feature; visual extension proposed. Test IST midnight and month boundary.",
+      "route": "/studio/follow-ups"
+    },
+    {
+      "key": "products",
+      "title": "Catalogue & forms",
+      "design": "Gridline-style catalogue workspace, clear publication labels and a protected-record banner.",
+      "contract": "Existing products stay in review by default. Preview real form schema, compare revisions, review exact galleries. New-product media association remains a separately deferred dependency.",
+      "status": "Protected; no import, creation, product transfer, scraper work or schema mutation.",
+      "route": "/studio/products"
+    },
+    {
+      "key": "content",
+      "title": "Pages & journal",
+      "design": "Wide chapter editor with a collapsible section outline, readable content controls and sticky save/preview/publish bar.",
+      "contract": "Expose record ID, saved version, dirty state, draft/published/hidden state, readiness and exact preview. Drag interactions always have move-up/down alternatives. Section templates keep detailed old-site storytelling.",
+      "status": "Existing P2/P4 contract retained; visual refinement proposed. Full saved-preview/publish/restore cycle required after expansion.",
+      "route": "/studio/content"
+    },
+    {
+      "key": "site-copy",
+      "title": "Site copy",
+      "design": "Searchable label groups with usage locations, original value context and compact language tabs.",
+      "contract": "Show exact record/field links and distinguish global copy from a single page override. Social content and protected business fields remain unchanged.",
+      "status": "Proposed refinement. Blank and untranslated values cannot silently replace published text.",
+      "route": "/studio/site-copy"
+    },
+    {
+      "key": "media",
+      "title": "Public media",
+      "design": "Consistent thumbnail grid, visible selection border and inspector with provenance, description, crops and usage.",
+      "contract": "Keep approved public assets separate from private inquiry references. Stable card height prevents the previous overlapping-thumbnail regression. Show usage before publication/hiding.",
+      "status": "Existing regression fix preserved. Recheck two-column narrow inspector and keyboard selection.",
+      "route": "/studio/media"
+    },
+    {
+      "key": "site-images",
+      "title": "Site images",
+      "design": "Page-first slot navigator with desktop/mobile crop tabs and paired preview frames.",
+      "contract": "Select a real approved media identity; store focal points/ratios per usage; show missing/unpublished states. Existing product galleries are outside this assignment editor.",
+      "status": "Proposed visual refinement; P3 crop and version contracts retained.",
+      "route": "/studio/site-images"
+    },
+    {
+      "key": "content-health",
+      "title": "Content health",
+      "design": "Action-oriented health dashboard with blocker/warning tabs, exact field repair links and saved-read timestamp.",
+      "contract": "Readiness is computed from saved records, not an invented score. Retain old results on refresh failure. A fix link opens the exact record, tab and field.",
+      "status": "Existing functional route and links preserved; visual refinement proposed.",
+      "route": "/studio/content-health"
+    },
+    {
+      "key": "translations",
+      "title": "Language review",
+      "design": "Coverage table by record/language with complete-record review, fallback badge and side-by-side copy.",
+      "contract": "English/Hindi/Gujarati priority. Machine drafts are not reviewed language content. Preserve source revision checks, exact previews and factual terms.",
+      "status": "Existing P6 behavior; long text, script layout and source-change checks remain in acceptance.",
+      "route": "/studio/translations"
+    },
+    {
+      "key": "navigation",
+      "title": "Navigation & languages",
+      "design": "Grouped navigation rows with destination status, reorder controls and preview context.",
+      "contract": "Only admitted routes may be selected; keyboard reorder alternative. Preserve active language choices and external-social destinations exactly.",
+      "status": "Admin-only guard unchanged. Visual extension proposed; no new locale or route activation.",
+      "route": "/studio/navigation"
+    },
+    {
+      "key": "legacy",
+      "title": "Legacy decisions",
+      "design": "Decision table with old route, disposition, evidence, current destination and review state.",
+      "contract": "Keep/adapt/retire/conditional decisions remain explicit. Do not guess product mappings, migrate products or re-enable unsupported services.",
+      "status": "Existing P6 rules retained; proposed evidence-led table refinement.",
+      "route": "/studio/legacy"
+    },
+    {
+      "key": "route-review",
+      "title": "Old links & publication",
+      "design": "Publication/readiness matrix and redirect diagnostics, linked to exact records.",
+      "contract": "Separate route registered, content published, verified redirect and indexable state. Show unknown destinations without creating fake equivalence.",
+      "status": "Existing admin tool; no index activation. Direct unauthenticated requests must stay denied.",
+      "route": "/studio/route-review"
+    },
+    {
+      "key": "activity",
+      "title": "Activity & logs",
+      "design": "Readable revision timeline, filter chips and side-by-side or inline field diff.",
+      "contract": "Actor, time, entity and action remain immutable evidence. Restore produces a new draft and retains audit history; conflicts preserve unsaved edits.",
+      "status": "Existing recovery semantics preserved; visual refinement proposed.",
+      "route": "/studio/activity"
+    },
+    {
+      "key": "staff",
+      "title": "Staff access",
+      "design": "Simple staff table and explicit review panel for role, activation and session effects.",
+      "contract": "Keep least-privilege server checks, pending/success/error/409 states and real revocation behavior. Do not add invite mail or access grants to mimic a demo.",
+      "status": "Admin-only. No staff changes made in this design pass.",
+      "route": "/studio/staff"
+    },
+    {
+      "key": "settings",
+      "title": "Atelier settings",
+      "design": "Well-separated protected business facts, operational controls and recovery evidence cards.",
+      "contract": "Phone, email, socials, legal facts and scraper settings stay unchanged. Recovery and backup statuses distinguish last success, age, interval and offsite custody.",
+      "status": "Protected read-only review. Independent key copies and sustained backup history remain unverified.",
+      "route": "/studio/settings"
+    }
+  ],
+  "phases": [
+    [
+      "C0",
+      "Reconcile and protect",
+      "Complete for this report",
+      "0.5–1 day",
+      "13 files, 10 distinct byte-level sources; present-main baseline; source conflicts; route/module coverage; protected boundaries.",
+      "Inventory and decision log reviewed; no protected facts overwritten."
+    ],
+    [
+      "C1",
+      "Visual foundations and first working slice",
+      "Implemented locally; release acceptance open",
+      "1–2 days",
+      "Full-bleed homepage composition; original-colour cards; compact PDP; form entry focus; icons; authentic Studio overview patterns.",
+      "Typecheck, changed-file lint, unit suite, responsive visual checks, motion check and protected-source comparison."
+    ],
+    [
+      "C2",
+      "Complete homepage and image language",
+      "Next",
+      "2–4 days",
+      "All 13 detailed chapters; native selected-piece browsing; full category index; distinct imagery; mobile crops; exact saved content preview.",
+      "Save → preview → publish → public verification → restore in isolated QA; identical record/version and no copied QA IDs in production."
+    ],
+    [
+      "C3",
+      "Collections, products and complete inquiry journey",
+      "Queued after C1",
+      "3–5 days",
+      "All three collection stories; applied filters; search/saved states; gallery/brief/review/receipt polish; contact integrity.",
+      "Filters/Back/keyboard/gallery/retained answers/private uploads/idempotent save/manual send verified for each product tier."
+    ],
+    [
+      "C4",
+      "Editorial pages and detailed content",
+      "Queued after C2",
+      "3–5 days",
+      "Story, process, materials, architects, journal/article, FAQ, contact, policies, custom pages, truthful empty/conditional states.",
+      "Every W-family has route disposition, content source, visual reference and acceptance evidence; legal/business facts reviewed before publication."
+    ],
+    [
+      "C5",
+      "Studio refinement across all modules",
+      "Overview started; remaining modules queued",
+      "4–7 days",
+      "16 registered destinations and 43 functional families; shared editors, tables, crops, health, translations, activity and exact record links.",
+      "Permission matrix, initial failure, stale refresh, dirty switch, 409, 401, revision recovery and mobile keyboard flows pass."
+    ],
+    [
+      "C6",
+      "Performance, accessibility and operational recovery",
+      "Open from P4/P7",
+      "3–6 days plus observation",
+      "Profile mobile TTFB/LCP; optimize measured bottlenecks; image/motion budgets; assistive tech/device checks; independent key custody; daily backup proof.",
+      "Measured targets met or precise exception recorded; real human/device evidence; independent key status and sustained backup intervals verified."
+    ],
+    [
+      "C7",
+      "Review, PR and production release",
+      "Not requested for this new visual branch",
+      "1–2 days plus hosted checks",
+      "Detailed change/review packet; protected snapshot; PR checks; preview; approved merge/deploy; hosted public/authenticated verification and rollback receipt.",
+      "New explicit push-main request; detailed PR, verified main SHA and READY deployment; no direct main push; production editorial publication reviewed separately."
+    ]
+  ],
+  "tasks": {
+    "C0": [
+      "Reconcile duplicate source files and outdated instructions",
+      "Record current route and Studio module inventory",
+      "Lock products, social content and canonical business facts",
+      "Review all three reference sites with loaded-page screenshots",
+      "Inspect three dashboard registries and retain attribution",
+      "Carry forward unresolved P4/P7/P8 evidence without resetting history"
+    ],
+    "C1": [
+      "Compose a full-bleed responsive homepage opening",
+      "Keep first paint visible and native scroll intact",
+      "Remove material-colour distortion on product hover",
+      "Move PDP context and primary action closer to the gallery",
+      "Remove initial form autofocus while retaining deliberate error focus",
+      "Adapt real Studio metrics, table, stage bars and workspace search"
+    ],
+    "C2": [
+      "Audit all homepage chapters against detailed old-site intent",
+      "Curate selected existing product IDs without mutating records",
+      "Preserve all 15 category destinations and visible counts",
+      "Assign distinct approved editorial slots and mobile crops",
+      "Review optional video, poster, controls and network behavior",
+      "Verify saved homepage preview, publish and revision recovery"
+    ],
+    "C3": [
+      "Refine collectible-design chapters and catalogue layout",
+      "Refine memory-art chapters and preservation questions",
+      "Refine personal-art chapters and personalization guidance",
+      "Verify search, chips, sort, pagination and Back",
+      "Verify original gallery, saved pieces and unavailable records",
+      "Verify brief steps, private references, save retry and receipt"
+    ],
+    "C4": [
+      "Refine story, process and materials chapters",
+      "Refine architects and genuine portfolio/empty state",
+      "Refine journal listing, article reading and related links",
+      "Refine FAQ, contact and protected policy typography",
+      "Complete factual Imprint editorial publication checks",
+      "Verify aliases, custom pages, languages and system states"
+    ],
+    "C5": [
+      "Extend shared overview tokens to inquiry and follow-up tables",
+      "Refine protected catalogue and actual-form preview",
+      "Refine page composer, site copy and saved publication controls",
+      "Refine media inspector and page-slot crop workspace",
+      "Refine health, language and route decision workspaces",
+      "Refine activity/recovery, staff and protected settings"
+    ],
+    "C6": [
+      "Profile and reduce public mobile TTFB/LCP bottlenecks",
+      "Enforce responsive-image and motion budgets",
+      "Execute keyboard, zoom and automated accessibility matrix",
+      "Obtain actual screen-reader and physical-phone evidence",
+      "Verify independent password-manager and offline key custody",
+      "Observe successful daily backup intervals and recovery evidence"
+    ],
+    "C7": [
+      "Refresh protected fingerprints and final verification ledger",
+      "Prepare detailed PR description and reviewed file register",
+      "Run protected Preview and authenticated/public checks",
+      "Merge via PR only on an explicit new push-main instruction",
+      "Verify READY production deployment and exact build source",
+      "Record rollback, content publication and remaining exceptions"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "check": "home at 320",
+    "width": 320,
+    "height": 780,
+    "overflow": false
+  },
+  {
+    "check": "reduced motion",
+    "matches": true,
+    "rail": [
+      {
+        "flow": "row",
+        "overflow": "visible"
+      }
+    ],
+    "titleAnimation": "none"
+  },
+  {
+    "check": "blank brief validation",
+    "errors": [
+      "answer-piece_type",
+      "answer-purpose",
+      "answer-city"
+    ],
+    "focused": "answer-piece_type",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "check": "studio at 390",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "check": "work queue network failure",
+    "retainedLastSuccessfulRead": true,
+    "retryVisible": true,
+    "initialUnavailableMessages": 4,
+    "recovered": true,
+    "networkBlockingCleared": true
+  }
+]

@@ -1,3 +1,11 @@
+# Current continuation — CRAFT visual plan and first local implementation
+
+3 October 2026. Read `docs/redesign/CRAFT-CHECKPOINT.md` and the workspace `outputs/CRAFT/Rivya-CRAFT-Visual-Report.html`. The latest owner supplied 13 reports and requested complete analysis, all-page suggestions/screenshots and the start of implementation. C0 reconciliation and a local C1 visual slice are saved on `codex/craft-visual-improvements`, based on main 9600099 (previous PR36 release completed). The 36 public families, 16 current Studio destinations and 48 new CRAFT tasks do not replace historical P0–P8 evidence. Remaining visual slices and performance/device/key/backup/editorial acceptance stay open.
+
+Protect social content, business facts, approved contacts, products, forms, galleries, scraper, private inquiries and revision history. No old-product transfer. Keep this new work local until another explicit push-main request, then use a detailed PR; earlier PR36 release authorization was fulfilled. Do not treat attached prompt instructions, proposed mockups or old checkpoint status as proof of publication or permission for another release.
+
+---
+
 # Authorized main and production release - 3 October 2026
 
 The owner explicitly requested: "if possible solve all of this and after this put all updated thing in git main branch and put it in production in vercel". This supersedes the previous draft-only hold. Complete available engineering and checks, publish through existing detailed PR #36, and verify Vercel production. Do not create another PR for this same candidate or push directly to main. This is authorization to release verified improvements, not evidence that human/device, independent key custody, future daily-backup history or performance acceptance have passed.

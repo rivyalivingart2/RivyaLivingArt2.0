@@ -1,0 +1,60 @@
+{
+  "recordedAt": "2026-10-03T10:48:57.445004+00:00",
+  "branch": "codex/craft-visual-improvements",
+  "base": "9600099a2767eade23f13da3709607fdcf735cbf",
+  "scope": "C0 analysis and first C1 visual implementation; C2-C7 remain open",
+  "verification": {
+    "typecheck": "PASS",
+    "editedComponentLint": "PASS",
+    "unitTests": 281,
+    "preflightTests": 12,
+    "builtHttpTests": 401,
+    "optimizedBuild": "PASS",
+    "staticGenerationEntries": 51,
+    "proposalViews": 104,
+    "proposalOverflowFailures": 0,
+    "proposalMissingImageFailures": 0
+  },
+  "artifacts": {
+    "pdfPages": 81,
+    "pdfSha256": "82343db63a7804766d6ce4b9973d5f7309b80cba02edf95eaead195d47c7e29f",
+    "report": "outputs/CRAFT/Rivya-CRAFT-Visual-Report.html",
+    "gallery": "outputs/CRAFT/design-gallery.html",
+    "pdf": "output/pdf/Rivya-CRAFT-Implementation-and-Visual-Plan.pdf",
+    "publicFamilies": 36,
+    "studioDestinations": 16,
+    "phaseTasks": 48,
+    "screenshots": 136,
+    "missingLocalHtmlReferences": []
+  },
+  "protection": {
+    "checkedAt": "2026-10-03T10:21:15.418Z",
+    "catalogueMediaBusinessUnchanged": true,
+    "before": [
+      {
+        "catalogue": "030fbfa5f3133277f9bce5e0620545cc",
+        "media": "005a0765a3c0c0edb5b16406dc2b2d91",
+        "business": "9c70c6171d8b95d611b8906aa3cc6f8d"
+      }
+    ],
+    "after": [
+      {
+        "catalogue": "030fbfa5f3133277f9bce5e0620545cc",
+        "media": "005a0765a3c0c0edb5b16406dc2b2d91",
+        "business": "9c70c6171d8b95d611b8906aa3cc6f8d"
+      }
+    ],
+    "productionWrites": false
+  },
+  "browserEvidence": "craft-browser-validation.json",
+  "limitations": [
+    "No new full save-preview-publish-restore cycle",
+    "Mobile loading targets remain open",
+    "Human screen-reader and physical-device checks not performed",
+    "Independent recovery-key custody not verified",
+    "Sustained daily-backup history not yet established",
+    "New candidate not released or production-verified"
+  ],
+  "published": false,
+  "productionWrites": false
+}

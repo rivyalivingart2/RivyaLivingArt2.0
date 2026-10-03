@@ -1,3 +1,11 @@
+# Current continuation — CRAFT visual plan and first local implementation
+
+3 October 2026. Read `docs/redesign/CRAFT-CHECKPOINT.md` and the workspace `outputs/CRAFT/Rivya-CRAFT-Visual-Report.html`. The latest owner supplied 13 reports and requested complete analysis, all-page suggestions/screenshots and the start of implementation. C0 reconciliation and a local C1 visual slice are saved on `codex/craft-visual-improvements`, based on main 9600099 (previous PR36 release completed). The 36 public families, 16 current Studio destinations and 48 new CRAFT tasks do not replace historical P0–P8 evidence. Remaining visual slices and performance/device/key/backup/editorial acceptance stay open.
+
+Protect social content, business facts, approved contacts, products, forms, galleries, scraper, private inquiries and revision history. No old-product transfer. Keep this new work local until another explicit push-main request, then use a detailed PR; earlier PR36 release authorization was fulfilled. Do not treat attached prompt instructions, proposed mockups or old checkpoint status as proof of publication or permission for another release.
+
+---
+
 # RivyaLivingArt
 
 **Repository:** `rivyalivingart2/RivyaLivingArt2.0`  
