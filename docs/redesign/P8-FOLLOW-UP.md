@@ -1,3 +1,5 @@
+> Current release authority (3 October 2026): the owner now explicitly requests main through PR #36 and Vercel production after best-available fixes/checks. See P8-FINAL-RELEASE-CHECKS.md and docs/decisions/2026-10-03-authorized-main-production.md. Draft-only holds below are historical; unresolved acceptance evidence remains accurately open.
+
 # P8 engineering follow-up — 3 October 2026
 
 The owner asked to complete the remaining performance, accessibility, recovery, daily-backup and release work, then delegated the available actions. This authorizes preparing the release through the standing detailed-PR workflow. It does not supply physical test results, an independent key-custody location, business facts or a current Studio session. Full P7/P8 acceptance remains open. This report supersedes earlier statements that another release instruction is needed; the technical and external-evidence gates remain.

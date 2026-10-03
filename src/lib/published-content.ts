@@ -10,8 +10,10 @@ import {homepageDependencies} from './homepage-persistence';
 import {compileHomepageSnapshot} from './homepage-dependencies';
 import {compilePageSnapshot} from './page-dependencies';
 export type PublishedContentDocument=ContentDocument&{imagePosition?:string;publishedRevision?:number};
-/** Reads only durable published revisions. Source candidates never become a public fallback. */
-export const publishedContent=cache(async(locale:Locale='en',route?:string):Promise<PublishedContentDocument[]>=>{
+/** Reads only durable published revisions. Source candidates never become a public fallback.
+ * snapshotRoute retains the complete article/route list while compiling dependencies only for the rendered page.
+ */
+export const publishedContent=cache(async(locale:Locale='en',route?:string,snapshotRoute?:string):Promise<PublishedContentDocument[]>=>{
  const [source,dependencies]=await Promise.all([publishedSource(),homepageDependencies()]);
  const images=new Map<string,PublicMedia>();
  for(const row of source.media)if(validPageMedia(row.document)&&row.key===row.document.path)images.set(row.key,row.document);
@@ -29,12 +31,12 @@ export const publishedContent=cache(async(locale:Locale='en',route?:string):Prom
    ...(d.headerImage?{headerImage:d.headerImage}:{}),
    ...(d.featuredArticleIds?{featuredArticleIds:[...d.featuredArticleIds]}:{}),
    ...(d.effectiveDate?{effectiveDate:d.effectiveDate}:{}),
-   ...(!d.homepage?{pageSnapshot:compilePageSnapshot(d,dependencies)}:{}),
+   ...(!d.homepage&&(snapshotRoute===undefined||d.route===snapshotRoute)?{pageSnapshot:compilePageSnapshot(d,dependencies)}:{}),
    ...(image?{image:image.path,imageAlt:d.headerImage?.alt||d.imageAlt||image.alt,imagePosition:image.focalX+'% '+image.focalY+'%'}:{}),
    ...(d.relatedProductIds?{relatedProductIds:[...d.relatedProductIds]}:{}),
    ...(d.translations?{translations:d.translations}:{}),
    // Public references follow current publication/withdrawal. Private saved previews retain their exact snapshot.
-   ...(d.homepage&&d.homeSnapshot?.schemaVersion===1?{homepage:d.homepage,homeSnapshot:compileHomepageSnapshot(d,dependencies)}:{})};
+   ...(d.homepage&&d.homeSnapshot?.schemaVersion===1&&(snapshotRoute===undefined||d.route===snapshotRoute)?{homepage:d.homepage,homeSnapshot:compileHomepageSnapshot(d,dependencies)}:{})};
   documents.push(publicDocument);
   routes.add(d.route);
  }

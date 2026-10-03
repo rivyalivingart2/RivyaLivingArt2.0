@@ -1,3 +1,11 @@
+# Authorized main and production release - 3 October 2026
+
+The owner explicitly requested: "if possible solve all of this and after this put all updated thing in git main branch and put it in production in vercel". This supersedes the previous draft-only hold. Complete available engineering and checks, publish through existing detailed PR #36, and verify Vercel production. Do not create another PR for this same candidate or push directly to main. This is authorization to release verified improvements, not evidence that human/device, independent key custody, future daily-backup history or performance acceptance have passed.
+
+Products, forms, original/gallery associations, phone, email, scraper, drafts and revision history stay protected. No old-product transfer, production fixtures, index activation, paid provisioning, external messaging, or copying QA content/media identities to production. The owner renewed Studio sign-in; use read-only production checks. Main/production status in older entries below is historical; see PR #36 and the final local production receipt for the outcome.
+
+---
+
 # Saved release candidate - draft PR 36, protected Preview READY
 
 3 October 2026. Draft PR https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/36 contains the complete P6/P7/P8 candidate. Read `docs/redesign/P8-FOLLOW-UP.md` and `p8-preview-receipt.json`. Six hosted HTTP checks pass for application source a14f161. Main is unchanged; the draft PR is held for the precise remaining performance, authenticated runtime, physical/device and key-custody gates. Backup schedule and receipt defects are repaired and the new Drive archive verified. Do not ask for a generic repeat approval, claim full acceptance, or create another PR for this same candidate.

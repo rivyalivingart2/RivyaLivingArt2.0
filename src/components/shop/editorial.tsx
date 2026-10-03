@@ -32,7 +32,7 @@ const nextSteps:Record<string,[string,string,string,string]>={
  '/faq':['/commission','Begin your piece','/contact','Call or email the atelier']
 };
 export async function EditorialPage({route,locale='en'}:{route:string;locale?:Locale}){
- const documents=await publishedContent(locale),articles=documents.filter(d=>d.kind==='article');
+ const documents=await publishedContent(locale,undefined,route),articles=documents.filter(d=>d.kind==='article');
  if(route==='/journal'&&documents.some(d=>d.route===route)){return <JournalDocument content={documents.find(d=>d.route===route)!}/>;}
  if(route==='/journal'){
   const categories=[...new Set(articles.map(a=>a.eyebrow))];

@@ -1,4 +1,4 @@
-Legacy visitors need correct destinations, Studio needs complete reviewed language journeys, and private-data removal must cover every stored answer and retry failed file deletion safely. This candidate adds those P6/P7 improvements, reduces public and Studio data transfers, and repairs backup receipt recording. It is a **draft release candidate**: main and production publication remain held for the measured and external gates below.
+Legacy visitors need correct destinations, Studio needs complete reviewed language journeys, and private-data removal must cover every stored answer and retry failed file deletion safely. This candidate adds those P6/P7 improvements, reduces public and Studio data transfers, and repairs backup receipt recording. The owner explicitly authorized releasing these verified improvements through this PR to main and Vercel production on 3 October. Full performance, human/device, key-custody and sustained-backup acceptance remain open and are disclosed below.
 
 ## Complete change scope
 
@@ -19,18 +19,28 @@ Legacy visitors need correct destinations, Studio needs complete reviewed langua
 - Public projections match all 120 products, 55 documents and business settings from pre-optimization behavior. Fresh live read-only comparisons match 120 protected products, 131 original media/gallery records and the full P0 business record.
 - A fresh 19-table ciphertext backup passed owner-only parent/permission checks, remote byte/hash comparison and authenticated decryption. The controlled service recovery drill remains separately recorded. No production test submissions, uploads, erasures or data migrations were performed.
 
-## Open acceptance gates — do not merge yet
+## Remaining acceptance work — explicitly recorded with this release
 
 Throttled mobile loading still misses the target: 1/15 new samples met the 2.5s LCP comparison. The editor improved from 4.856s to 4.124s, but that is not acceptance. Home menu duration reached 216ms; field p75 is unavailable. Preserve all recorded samples and profile the hosted candidate next.
 
-Human screen-reader/physical-device/full-family checks, independent password-manager and sealed/offsite recovery-key copies, and sustained daily-backup evidence remain unverified. The schedule still requires an awake/connected/authorized computer; the historical 52.21-hour gap remains visible. The live Studio browser session expired, so deployed runtime schema/grants and authenticated production readbacks still need verification.
+Human screen-reader/physical-device/full-family checks, independent password-manager and sealed/offsite recovery-key copies, and sustained daily-backup evidence remain unverified. The schedule still requires an awake/connected/authorized computer; the historical 52.21-hour gap remains visible. The owner renewed Studio sign-in; Overview and Atelier settings readbacks pass. A new administrator-only prerequisite check enables direct deployed-runtime verification of added privacy schema/permissions. Post-deployment readbacks will be recorded against the final SHA.
 
-The owner has authorized continuing release work through this detailed PR; this is not another generic approval request. Hold main merge and production content publication until the technical gates are resolved. Do not bypass protected deployment authentication or use shared Preview resources for synthetic tests.
+The owner explicitly requested main and Vercel production after completing what is possible. This supersedes the earlier draft hold; it does not establish performance acceptance or physical/offsite evidence. Do not bypass protected deployment authentication or use shared Preview resources for synthetic tests.
 
 ## Protection and recovery
 
 No old-product transfer, scraper work, product/form/category/gallery/contact overwrite or secret in the release. Phone remains +91 8320404132 and email rivyalivingart2.0@gmail.com. Preserve drafts, revisions and immutable media. Conditional services and indexing stay inactive.
 
-Verify the actual runtime schema and privileges before release; apply the documented narrow operator grant repair only if required, after a current verified backup. Never run migrations from the build. Source deployment does not create missing destination documents or transport QA image UUIDs. Use actual destination drafts/assets and the P3/P4 release manifests for any separately reviewed editorial publication.
+Verify the actual deployed runtime schema and privileges with the administrator-only readiness check; apply the documented narrow operator grant repair only if required, after a current verified backup. Never run migrations from the build. Source deployment does not create missing destination documents or transport QA image UUIDs. Use actual destination drafts/assets and the P3/P4 release manifests for any separately reviewed editorial publication.
 
 Prior production source is `c94427de88d45a216fdf545840efef2f875e5789`. An application rollback does not undo data erasure; older code retains the repaired erasure defects, so restrict affected operations and forward-fix. Editorial recovery restores a prior revision into a new draft and requires preview/publication/readback. Never reset the shared database or reseed protected products/contacts to undo a page.
+
+
+## Final follow-up changes and validation
+
+- Collection discovery uses the shared card projection: 40,173 bytes for 120 cards versus 275,428 bytes for complete product records (85.4% smaller data projection). No product data is modified.
+- Editorial and fallback-home rendering compiles only the selected page snapshot while keeping the complete public article/route list. Five exact-page and six discovery-query comparisons pass; default full projections still match all 120 products, 55 documents and business settings.
+- Administrator settings checks each required added privacy privilege and named column using the actual running database identity, returning only a readiness phrase. The guarded QA runtime passes.
+- Final build/TypeScript/changed-file lint pass; 281 unit and 413 preflight/compiled HTTP checks pass again.
+- Final local throttled mobile samples remain above 2.5s: home 6.532s, collection 4.576s, Process 3.984s, Journal 3.768s; home interaction maximum 312ms. No overflow or browser application errors, CLS below 0.1. These are preserved, not performance acceptance. Hosted production samples will be recorded separately.
+- Read P8-FINAL-RELEASE-CHECKS.md, p8-final-projection-checks.json and p8-performance-mobile-final-qa.json for exact scope, external limits and the pre-release cleanup-inventory observation.

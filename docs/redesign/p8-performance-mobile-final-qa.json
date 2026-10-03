@@ -1,0 +1,220 @@
+{
+  "at": "2026-10-03T08:20:50.865Z",
+  "environment": "Local compiled QA, remote isolated database",
+  "profile": "390x844, DPR3, mobile/touch, reduced motion, cold browser cache; CDP CPU4x, latency150ms, download1.6Mbps/upload750Kbps. Local server is not production CDN.",
+  "limits": "Single lab sample per route; event-duration maximum is a diagnostic, not real-user p75 INP. Studio editor opening measured, no publication during performance run.",
+  "samples": [
+    {
+      "route": "/",
+      "status": 200,
+      "lcp": 6532,
+      "cls": 0.015826572037957887,
+      "events": [
+        312,
+        312,
+        312,
+        112,
+        16
+      ],
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "/_next/image",
+        "size": 79950
+      },
+      "ttfb": 2804.900000002235,
+      "transfer": 438977,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578,
+          "duration": 1928.9000000022352,
+          "start": 2861.199999999255
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123,
+          "duration": 1568.0999999977648,
+          "start": 2861.60000000149
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224,
+          "duration": 1234.6000000014901,
+          "start": 3736.5
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 29559,
+          "duration": 3628.300000000745,
+          "start": 2859.60000000149
+        },
+        {
+          "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26716,
+          "duration": 786.9000000022352,
+          "start": 2837
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/collectible-design",
+      "status": 200,
+      "lcp": 4576,
+      "cls": 0,
+      "events": [
+        120,
+        120,
+        120,
+        72,
+        16
+      ],
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "/_next/image",
+        "size": 133380
+      },
+      "ttfb": 1607.199999999255,
+      "transfer": 545354,
+      "largestResources": [
+        {
+          "path": "/_next/image",
+          "bytes": 89617,
+          "duration": 2699.699999999255,
+          "start": 1657
+        },
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578,
+          "duration": 2649.5,
+          "start": 1659.2999999970198
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 49836,
+          "duration": 1540.6000000014901,
+          "start": 2908.2999999970198
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123,
+          "duration": 2090.699999999255,
+          "start": 1659.5999999977648
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224,
+          "duration": 1675.699999999255,
+          "start": 2571.599999997765
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/process",
+      "status": 200,
+      "lcp": 3984,
+      "cls": 0,
+      "events": [
+        120,
+        120,
+        120,
+        64
+      ],
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "/_next/image",
+        "size": 151983
+      },
+      "ttfb": 523.9000000022352,
+      "transfer": 430671,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578,
+          "duration": 2098.10000000149,
+          "start": 579
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123,
+          "duration": 1807.199999999255,
+          "start": 579.5
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224,
+          "duration": 1104.5,
+          "start": 1417.6000000014901
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 29559,
+          "duration": 305.69999999925494,
+          "start": 3440.400000002235
+        },
+        {
+          "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26716,
+          "duration": 680.1000000014901,
+          "start": 556
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/journal",
+      "status": 200,
+      "lcp": 3768,
+      "cls": 0,
+      "events": [
+        136,
+        136,
+        136,
+        56,
+        16
+      ],
+      "lcpElement": {
+        "tag": "P",
+        "url": null,
+        "size": 47628
+      },
+      "ttfb": 536.7999999970198,
+      "transfer": 554042,
+      "largestResources": [
+        {
+          "path": "/_next/image",
+          "bytes": 89617,
+          "duration": 963.5999999977648,
+          "start": 3747.699999999255
+        },
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578,
+          "duration": 2128.7000000029802,
+          "start": 590.7999999970198
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 58553,
+          "duration": 808.6000000014901,
+          "start": 3747.099999997765
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123,
+          "duration": 1803.699999999255,
+          "start": 591
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224,
+          "duration": 1147.2000000029802,
+          "start": 1433.7999999970198
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "errors": []
+}
