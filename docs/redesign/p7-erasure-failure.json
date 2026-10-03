@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-03T05:52:50.409Z",
+  "checks": [
+    "Unavailable storage cannot produce a successful erasure claim",
+    "Failed deletion retains inaccessible work and quota",
+    "Studio reports private deletion pending",
+    "Retry completes provider deletion and releases quota exactly once",
+    "Repeated completion leaves quota unchanged"
+  ],
+  "scope": "Synthetic missing-object metadata and unavailable credential simulate provider failure. Real private-image deletion separately verified by journey test.",
+  "productionWrites": false,
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Evidence supports the recorded P7 candidate. Application logic checks preceded only later lossless font packaging unless the recorded scope specifies otherwise; backup/restore receipts are operational evidence, not deployed-source proof."
+}

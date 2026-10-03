@@ -1,3 +1,5 @@
+> Current 3 October 2026 continuation: read P7-CHECKPOINT.md, P7-VERIFICATION-REPORT.md and P8-RELEASE-PACKET.md. Local P6/P7 repairs and P8 preparation are saved; performance, assistive/device acceptance, custody/RPO and live release remain open. The following 24 September backlog is historical evidence, not the current phase status.
+
 > Presentation update, 24 September 2026: the owner subsequently authorized the Midnight atelier redesign and its scoped QA. See MIDNIGHT-ATELIER-REPORT.md and MIDNIGHT-ATELIER-CHECKPOINT.md for that branch/Preview handoff. The operational backlog below remains pending; the earlier stop does not prohibit the newly authorized presentation work.
 # RivyaLivingArt — completed work and pending work
 

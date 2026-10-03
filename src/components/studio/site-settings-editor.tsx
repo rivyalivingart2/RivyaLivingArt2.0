@@ -1,9 +1,10 @@
 'use client';
+import Link from 'next/link';
 import {useEffect,useMemo,useRef,useState} from 'react';
 import {useSearchParams} from 'next/navigation';
 import {studioFetch} from './workspace-api';
 import {
- defaultNavigation,describeHrefProblem,localeLabels,locales,
+ defaultNavigation,describeHrefProblem,localeLabels,locales,navigationReview,
  type Locale,type NavItem,type NavMenuKey,type SiteSettings
 } from '@/lib/site-settings-model';
 import s from './workspace.module.css';
@@ -34,7 +35,7 @@ export function SiteSettingsEditor(){
  useEffect(()=>{let active=true;void studioFetch('/api/studio/site-settings').then(next=>{if(active){setData(next);setMessage('Changes publish across the public site after review.');}}).catch(e=>{if(active)setMessage(e.message);});return()=>{active=false;};},[]);
  useEffect(()=>{const warn=(e:BeforeUnloadEvent)=>{if(dirty){e.preventDefault();e.returnValue='';}};window.addEventListener('beforeunload',warn);return()=>window.removeEventListener('beforeunload',warn);},[dirty]);
 
- const rows=data?.settings.navigation[menu]||[];
+ const rows=useMemo(()=>data?.settings.navigation[menu]||[],[data,menu]);
  const enabled=data?.settings.localization.enabledLocales||['en'];
  const issues=useMemo(()=>rows.flatMap((item,index)=>{const href=describeHrefProblem(item.href);return href?[{index,message:href}]:[];}),[rows]);
 
@@ -62,14 +63,14 @@ export function SiteSettingsEditor(){
   <p className={s.status} role="status">{message}</p>
   {!data?<p className={s.empty}>Loading site settings…</p>:<>
    <section className={s.panel} data-unsaved={dirty}>
-    <h2>Language availability</h2>
-    <p className={s.help}>English is the authoritative fallback. Other languages may be enabled before every field is translated; blank translations display the English original rather than invented copy.</p>
+    <h2>Language availability</h2><p><Link href="/studio/translations">Review document translation coverage ↗</Link></p>
+    <p className={s.help}>English is the authoritative fallback. Only English, Hindi and Gujarati are offered publicly. Other saved language settings are retained but held from the switcher. Missing or stale editorial translations use a visible English fallback.</p>
     <label className={s.check}><input type="checkbox" checked={data.settings.localization.enabled} onChange={e=>patchSettings({...data.settings,localization:{...data.settings.localization,enabled:e.target.checked}})}/>Show the public language switcher</label>
     <div className={s.grid}>
      {locales.map(code=><label className={s.check} key={code}><input type="checkbox" disabled={code==='en'} checked={enabled.includes(code)} onChange={e=>{
       const next=e.target.checked?[...enabled,code]:enabled.filter(v=>v!==code);
       patchSettings({...data.settings,localization:{...data.settings.localization,enabledLocales:locales.filter(v=>next.includes(v))}});
-     }}/>{localeLabels[code]}{code==='en'?' · fallback':''}</label>)}
+     }}/>{localeLabels[code]}{code==='en'?' · fallback':!['hi','gu'].includes(code)?' · held from public switcher':''}</label>)}
     </div>
    </section>
 
@@ -88,7 +89,7 @@ export function SiteSettingsEditor(){
       return <div className={s.panel} key={item.id}>
        <div className={s.grid}>
         <label>English label<input value={item.label.en} maxLength={60} onChange={e=>patchItem(index,{label:{...item.label,en:e.target.value}})}/></label>
-        {locale!=='en'&&<label>{localeLabels[locale]} label<input dir={locale==='ar'?'rtl':'ltr'} value={translated} maxLength={60} placeholder={item.label.en+' · English fallback'} onChange={e=>patchItem(index,{label:{...item.label,[locale]:e.target.value}})}/></label>}
+        {locale!=='en'&&<label>{localeLabels[locale]} label<input dir={locale==='ar'?'rtl':'ltr'} value={translated} maxLength={60} placeholder={item.label.en+' · English fallback'} onChange={e=>patchItem(index,{label:{...item.label,[locale]:e.target.value}})}/><small>{item.reviewedLabels?.[locale]===navigationReview(item.label,locale)?'Reviewed against current English':'Unreviewed or stale — English fallback'}</small><button type="button" disabled={!translated.trim()} onClick={()=>patchItem(index,{reviewedLabels:{...item.reviewedLabels,[locale]:navigationReview(item.label,locale)}})}>Review this label</button></label>}
         <label className={s.wide}>Destination<input id={'navigation-field-'+item.id+'-href'} value={item.href} maxLength={500} aria-invalid={!!hrefIssue} onChange={e=>patchItem(index,{href:e.target.value})}/>{hrefIssue&&<small className={s.error}>{hrefIssue}</small>}</label>
        </div>
        <div className={s.actions}>

@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-03T06:13:12.465Z",
+  "checks": [
+    "Scoped empty CSV is private and records expiry metadata",
+    "Managed export records a seven-day expiry",
+    "Final erasure engine completes with restricted grants",
+    "Recovery audit identity preserved and personal explanation redacted",
+    "Erasure invalidates managed export metadata",
+    "Expired metadata purges without claiming downloaded-file deletion",
+    "Final replay completes against the three synthetic ledger records",
+    "Replay redacts earlier recovery explanation",
+    "Protected records unchanged"
+  ],
+  "productionWrites": false,
+  "downloadedCopies": "No customer CSV was saved. External copies cannot be recalled by this service; operator removal remains required.",
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Evidence supports the recorded P7 candidate. Application logic checks preceded only later lossless font packaging unless the recorded scope specifies otherwise; backup/restore receipts are operational evidence, not deployed-source proof."
+}

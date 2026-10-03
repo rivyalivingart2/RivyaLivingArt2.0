@@ -1,0 +1,9 @@
+# P7 verification and P8 preparation decision
+
+The owner requested P4 performance acceptance and P7/P8. Local engineering, guarded isolated testing, read-only shared-source comparison, the existing approved encrypted-backup workflow, disposable recovery testing and release preparation were performed. The owner separately confirmed independent password-manager and sealed offline recovery-key copies are **not verified yet**. No key was requested in chat.
+
+Application candidate: `dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c`, on `codex/p7-performance-release`, including the local P6 work. See `../redesign/P7-VERIFICATION-REPORT.md` and `../redesign/P8-RELEASE-PACKET.md`.
+
+Required gates remain: loading and interaction performance, real-user p75 evidence, human screen-reader/physical-device/full-family acceptance, independently verified key custody and reliable daily backup/RPO evidence. The 52.21-hour prior backup gap is a recorded failure despite the fresh valid archive and successful controlled restore. P4 performance and full P7 acceptance are not complete. P8 has a concrete packet, local PR draft, destination revision list, owner guide and recovery plan; no live release occurred.
+
+The standing owner instruction remains local-only until a new explicit push-main request, then a detailed PR and merge through that PR. This turn did not authorize a new push, PR, deployment, production content publication or shared-data migration/erasure. Products, original media/gallery links, form schemas, canonical contacts and scraper remain protected; no old products were transferred. Reviewed Drive image assignments use destination identities only when later authorized for release. History is preserved, except intentional synthetic privacy-test redaction of personal fields/recovery explanations in isolated QA.

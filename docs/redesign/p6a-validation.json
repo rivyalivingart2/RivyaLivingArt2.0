@@ -1,0 +1,175 @@
+{
+  "phase": "P6A",
+  "phaseComplete": false,
+  "sliceImplementedAndVerified": true,
+  "base": "c94427de88d45a216fdf545840efef2f875e5789",
+  "branch": "codex/p6-legacy-language-journeys",
+  "unitTests": 267,
+  "preflightTests": 12,
+  "builtHttpTests": 395,
+  "buildAndTypeScript": "passed",
+  "changedFileEslint": "0 errors, 0 warnings",
+  "api": {
+    "checkedAt": "2026-10-03T03:48:45.976Z",
+    "phase": "P6A",
+    "checks": [
+      "308 destination /shop",
+      "No receipt token in Location /shop",
+      "HEAD agrees /shop",
+      "308 destination /blog",
+      "No receipt token in Location /blog",
+      "HEAD agrees /blog",
+      "308 destination /custom-order",
+      "No receipt token in Location /custom-order",
+      "HEAD agrees /custom-order",
+      "308 destination /large-resin-art",
+      "No receipt token in Location /large-resin-art",
+      "HEAD agrees /large-resin-art",
+      "308 destination /shop/resin-furniture-surfaces",
+      "No receipt token in Location /shop/resin-furniture-surfaces",
+      "HEAD agrees /shop/resin-furniture-surfaces",
+      "308 destination /shop/varmala-preservation",
+      "No receipt token in Location /shop/varmala-preservation",
+      "HEAD agrees /shop/varmala-preservation",
+      "308 destination /shop/gift-collections",
+      "No receipt token in Location /shop/gift-collections",
+      "HEAD agrees /shop/gift-collections",
+      "Compatibility outcome /whatsapp-order",
+      "Private, token-free, noindex notice /whatsapp-order",
+      "Compatibility outcome /shop/wishlist",
+      "Private, token-free, noindex notice /shop/wishlist",
+      "Compatibility outcome /workshops",
+      "Private, token-free, noindex notice /workshops",
+      "Compatibility outcome /shop",
+      "Private, token-free, noindex notice /shop",
+      "Compatibility outcome /shop/print-filaments",
+      "Private, token-free, noindex notice /shop/print-filaments",
+      "Compatibility outcome /shop/unreviewed",
+      "Private, token-free, noindex notice /shop/unreviewed",
+      "Compatibility outcome /product/river-channel",
+      "Private, token-free, noindex notice /product/river-channel",
+      "Compatibility outcome /blog/unreviewed",
+      "Private, token-free, noindex notice /blog/unreviewed",
+      "Old receipt cannot accept a mutation",
+      "Anonymous diagnostics denied",
+      "Admin diagnostics read succeeds",
+      "Final-host canonical is explicit",
+      "QA indexing remains disabled",
+      "All 19 decisions visible",
+      "Published category counts match protected catalogue",
+      "Diagnostics not cached",
+      "All seven redirect targets exist in published sources",
+      "Isolated temporary editor created",
+      "Editor diagnostics denied by server",
+      "Temporary editor disabled; audit retained",
+      "Rendered canonical names final www host",
+      "Robots indexing hold unchanged",
+      "Catalogue/media/business rows unchanged",
+      "Content/inquiries/manual orders unchanged"
+    ],
+    "assertions": 53,
+    "productionWrites": false,
+    "protectedRecordsUnchanged": true,
+    "temporaryStaffDisabled": true,
+    "complete": true
+  },
+  "browser": {
+    "checkedAt": "2026-10-03T03:47:20.534Z",
+    "checks": [
+      "Registered Studio navigation opens live diagnostics",
+      "Studio fits 1440",
+      "Studio fits 1024",
+      "Studio fits 768",
+      "Studio fits 390",
+      "Studio fits 320",
+      "Old receipt search isolates its disposition",
+      "Mapping evidence opens with keyboard",
+      "Combined filters have an honest empty state",
+      "Redirect filter shows seven reviewed mappings",
+      "Failed recheck retains explicitly stale evidence",
+      "Successful retry clears failure",
+      "Redirect arrives at current search with explicit unsupported-filter notice",
+      "Honest compatibility page /whatsapp-order",
+      "No token in rendered text",
+      "Compatibility fits 1440",
+      "Compatibility fits 390",
+      "Compatibility fits 320",
+      "Honest compatibility page /shop/wishlist",
+      "No token in rendered text",
+      "Compatibility fits 1440",
+      "Compatibility fits 390",
+      "Compatibility fits 320",
+      "Honest compatibility page /workshops",
+      "No token in rendered text",
+      "Compatibility fits 1440",
+      "Compatibility fits 390",
+      "Compatibility fits 320",
+      "No browser page errors"
+    ],
+    "assertions": 29,
+    "layouts": [
+      {
+        "route": "/studio/route-review",
+        "width": 1440
+      },
+      {
+        "route": "/studio/route-review",
+        "width": 1024
+      },
+      {
+        "route": "/studio/route-review",
+        "width": 768
+      },
+      {
+        "route": "/studio/route-review",
+        "width": 390
+      },
+      {
+        "route": "/studio/route-review",
+        "width": 320
+      },
+      {
+        "route": "/whatsapp-order",
+        "width": 1440
+      },
+      {
+        "route": "/whatsapp-order",
+        "width": 390
+      },
+      {
+        "route": "/whatsapp-order",
+        "width": 320
+      },
+      {
+        "route": "/shop/wishlist",
+        "width": 1440
+      },
+      {
+        "route": "/shop/wishlist",
+        "width": 390
+      },
+      {
+        "route": "/shop/wishlist",
+        "width": 320
+      },
+      {
+        "route": "/workshops",
+        "width": 1440
+      },
+      {
+        "route": "/workshops",
+        "width": 390
+      },
+      {
+        "route": "/workshops",
+        "width": 320
+      }
+    ],
+    "errors": [],
+    "syntheticFailures": "One intercepted local diagnostics 503 to verify stale state and retry",
+    "productionWrites": false
+  },
+  "productionWrites": false,
+  "pushed": false,
+  "next": "P6B reviewed language journeys"
+}

@@ -1,0 +1,105 @@
+{
+  "at": "2026-10-03T05:17:11.561Z",
+  "environment": "Local compiled QA, remote isolated database",
+  "profile": "1440x1000, no CPU/network throttling; browser cache cold then warm; not field data",
+  "samples": [
+    {
+      "route": "/",
+      "state": "cold-browser",
+      "status": 200,
+      "lcp": 6128,
+      "cls": 0,
+      "events": [],
+      "ttfb": 3541.7000000011176,
+      "dom": 4067.300000000745,
+      "transfer": 621766,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "state": "warm-browser",
+      "status": 200,
+      "lcp": 3160,
+      "cls": 0,
+      "events": [],
+      "ttfb": 3065.9000000003725,
+      "dom": 3116.2999999988824,
+      "transfer": 23125,
+      "overflow": false
+    },
+    {
+      "route": "/collectible-design",
+      "state": "cold-browser",
+      "status": 200,
+      "lcp": 3628,
+      "cls": 0,
+      "events": [],
+      "ttfb": 3469.5,
+      "dom": 3586,
+      "transfer": 662386,
+      "overflow": false
+    },
+    {
+      "route": "/collectible-design",
+      "state": "warm-browser",
+      "status": 200,
+      "lcp": 4704,
+      "cls": 0,
+      "events": [],
+      "ttfb": 4618.5999999996275,
+      "dom": 4666.700000001118,
+      "transfer": 24627,
+      "overflow": false
+    },
+    {
+      "route": "/process",
+      "state": "cold-browser",
+      "status": 200,
+      "lcp": 2748,
+      "cls": 0,
+      "events": [],
+      "ttfb": 1575.5,
+      "dom": 2677.800000000745,
+      "transfer": 448246,
+      "overflow": false
+    },
+    {
+      "route": "/process",
+      "state": "warm-browser",
+      "status": 200,
+      "lcp": 3232,
+      "cls": 0,
+      "events": [],
+      "ttfb": 1362,
+      "dom": 2906.5999999996275,
+      "transfer": 22492,
+      "overflow": false
+    },
+    {
+      "route": "/journal",
+      "state": "cold-browser",
+      "status": 200,
+      "lcp": 2372,
+      "cls": 0,
+      "events": [],
+      "ttfb": 1250.6000000014901,
+      "dom": 2178.2000000011176,
+      "transfer": 458457,
+      "overflow": false
+    },
+    {
+      "route": "/journal",
+      "state": "warm-browser",
+      "status": 200,
+      "lcp": 1932,
+      "cls": 0,
+      "events": [],
+      "ttfb": 1441.3999999985099,
+      "dom": 1906.3999999985099,
+      "transfer": 32569,
+      "overflow": false
+    }
+  ],
+  "candidateSource": "2a84b1e7cc94118bea9f528f2ff41e8f5bf10a44",
+  "evidenceScopeNote": "P6 baseline, measured before the P7 repairs. Retained for comparison, not final-candidate acceptance."
+}

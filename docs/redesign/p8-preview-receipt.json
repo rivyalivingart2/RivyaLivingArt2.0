@@ -1,0 +1,69 @@
+{
+  "recordedAt": "2026-10-03T07:54:27.692Z",
+  "pr": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/36",
+  "state": "draft",
+  "testedSourceCommit": "a14f161a7bcc0d0489b2acffec1cb07d1fc5683f",
+  "preview": {
+    "id": "dpl_2Aw9bL1EdyWxFRoK1Li9USQFUPct",
+    "state": "READY",
+    "url": "https://rivya-living-art2-0-l7s2lqcv6-rivyalivingart20-4705.vercel.app",
+    "protection": "Unauthenticated request redirects to Vercel sign-in; checks used connected Vercel authenticated fetch"
+  },
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "h1": "Art for the wayyou live.",
+      "compiledCandidate": true
+    },
+    {
+      "path": "/collectible-design",
+      "status": 200,
+      "title": "Furniture &amp; spatial art | RivyaLivingArt",
+      "h1": "Presence, in every form.",
+      "compiledCandidate": true
+    },
+    {
+      "path": "/pieces/river-channel",
+      "status": 200,
+      "title": "River Channel | RivyaLivingArt",
+      "h1": "River Channel",
+      "compiledCandidate": true
+    },
+    {
+      "path": "/process",
+      "status": 200,
+      "title": "A piece, shaped together. | RivyaLivingArt",
+      "compiledCandidate": true,
+      "headings": [
+        "Opening this page.",
+        "A piece, shaped together."
+      ]
+    },
+    {
+      "path": "/studio/login",
+      "status": 200,
+      "title": "Private Studio | RivyaLivingArt",
+      "h1": "Studio sign in",
+      "compiledCandidate": true
+    },
+    {
+      "path": "/api/studio/content?view=editor",
+      "status": 401,
+      "compiledCandidate": false,
+      "anonymousStudioDenied": true
+    }
+  ],
+  "scope": "HTTP/server-rendered readbacks; not a hosted browser performance or human screen-reader pass",
+  "productionCommit": "c94427de88d45a216fdf545840efef2f875e5789",
+  "mainMerged": false,
+  "productionPublished": false,
+  "productionDataMutations": 0,
+  "open": [
+    "Mobile loading targets and field evidence",
+    "Human screen-reader and physical device",
+    "Independent recovery-key custody",
+    "Sustained daily backup history; local awake/connected dependency",
+    "Current authenticated Studio session and deployed-runtime verification"
+  ]
+}

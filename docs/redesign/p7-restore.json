@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-03T06:10:34.624Z",
+  "archiveSha256": "06882596ab729a94743a8e026044422452153da41093ce4d1f877b90bac05d80",
+  "checks": [
+    "Remote archive restores all 19 table counts and digests exactly",
+    "No completed source erasures need replay in this zero-erasure source; synthetic replay tested separately",
+    "Restored staff and sessions disabled before starting service",
+    "Restored application serves home, product, Process and contact pages",
+    "Independent temporary owner can sign in to restored service",
+    "Restored Studio reads content with intake still disabled",
+    "Historical staff remain disabled"
+  ],
+  "tableCount": 19,
+  "privateObjects": 0,
+  "durationMs": 87581,
+  "temporaryDatabaseRemoved": true,
+  "temporaryRoleRemoved": true,
+  "productionMutations": 0,
+  "limits": [
+    "Controlled laboratory service restoration is not a lost-device recovery proof.",
+    "Independent recovery-key custody is owner-confirmed unverified.",
+    "Current source archive has no private objects; real private upload/deletion is tested separately."
+  ],
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Evidence supports the recorded P7 candidate. Application logic checks preceded only later lossless font packaging unless the recorded scope specifies otherwise; backup/restore receipts are operational evidence, not deployed-source proof."
+}

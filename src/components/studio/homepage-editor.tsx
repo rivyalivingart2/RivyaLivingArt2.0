@@ -1,4 +1,5 @@
 'use client';
+import {TranslationEditor} from './translation-editor';
 import {ContentBlockers} from './content-blockers';
 import {homeSectionDisposition,missingHomeChapters,restoreMissingHomeChapters} from '@/lib/homepage-restoration';
 import {addHomeChapter,chapterTemplates,conditionalChapters} from '@/lib/homepage-chapters';
@@ -72,6 +73,7 @@ export function HomepageEditor({entry,admin,dirty,onChange,onSaved,onBusy,initia
  <div className={s.panel}><label>Approved section type<select value={template} onChange={e=>setTemplate(e.target.value)}>{chapterTemplates.map(t=><option key={t.key} value={t.key}>{t.label}</option>)}</select></label><p className={s.help}>{chapterTemplates.find(t=>t.key===template)?.needs}</p><button type="button" disabled={home.sections.length>=20} onClick={()=>{const id=template+'-'+crypto.randomUUID().slice(0,8);onChange(addHomeChapter(d,template,id));setSelected(id);}}>Add hidden chapter</button></div>
  <details className={s.panel}><summary>Conditional chapters — content needed</summary><p>These old-site chapters remain in the plan. They stay off the public page until genuine content is available and reviewed. No public placeholder is created for missing evidence.</p>{conditionalChapters.map(([name,need])=><p key={name}><strong>{name}</strong> · Content needed: {need}</p>)}</details>
 
+ <TranslationEditor document={d} onChange={onChange} version={entry.version} dirty={dirty}/>
  {entry.published&&<details className={s.panel}><summary>Compare public version with this draft</summary><ContentCompare before={entry.published} after={d}/></details>}
  <RevisionHistory<ContentDocument> key={d.id+':'+entry.version} kind="content" entityKey={d.id} currentVersion={entry.version} currentDocument={d} onRestore={(document,version)=>{onChange(document);setRestoredFrom(version);setMessage('Earlier content is in your editor. Save a new draft, preview it, then publish when ready.');}}/>
  <DraftRecovery value={d} busy={busy} onReload={async()=>{const data=await studioFetch('/api/studio/content');const next=data.entries.find((e:HomepageEntry)=>e.document.id===d.id);if(next){onSaved(next);setLatest(null);setMessage('Latest saved draft loaded.');setVerification('');setRestoredFrom(undefined);}}}/>

@@ -1,0 +1,2248 @@
+{
+  "families": [
+    {
+      "family": "W01",
+      "title": "Shared header, footer, navigation and search entry",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W02",
+      "title": "Homepage `/`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]",
+      "newRoutes": "/",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W03",
+      "title": "Collectible design `/collectible-design`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/large-resin-art; /[locale]/shop; /[locale]/shop/[category]",
+      "newRoutes": "/[collection]",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W04",
+      "title": "Memory art `/memory-art`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W05",
+      "title": "Personal art `/personal-art`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "/[collection]",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W06",
+      "title": "Search and catalogue discovery `/search`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/search; /[locale]/shop; /[locale]/shop/[category]",
+      "newRoutes": "/search",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W07",
+      "title": "Product detail `/pieces/[slug]`",
+      "disposition": "protected",
+      "decision": "Current published pieces retain IDs, facts and galleries. Unverified old product slugs return 404.",
+      "oldRoutes": "/[locale]/product/[slug]",
+      "newRoutes": "/pieces/[slug]",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "W08",
+      "title": "Product customization `/pieces/[slug]/customize`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/product/[slug]",
+      "newRoutes": "/pieces/[slug]/customize",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W09",
+      "title": "Commission entry `/commission`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/custom-order",
+      "newRoutes": "/commission",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W10",
+      "title": "Bespoke request `/commission/customize`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/custom-order",
+      "newRoutes": "/commission/customize",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W11",
+      "title": "Saved-request receipt `/inquiry/received`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/whatsapp-order",
+      "newRoutes": "/inquiry/received",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W12",
+      "title": "Atelier story `/our-story`; alias `/about`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/about",
+      "newRoutes": "/about; /our-story",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W13",
+      "title": "Process `/process`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/process",
+      "newRoutes": "/process",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W14",
+      "title": "Materials and care `/materials-care`; aliases `/materials`, `/care`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "/care; /materials-care; /materials",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W15",
+      "title": "Architects and collaborators `/architects`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/large-resin-art",
+      "newRoutes": "/architects",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W16",
+      "title": "Journey aliases `/preserve`, `/personalize`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "/personalize; /preserve",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W17",
+      "title": "Portfolio index `/portfolio`",
+      "disposition": "conditional",
+      "decision": "Index has an honest empty state. Only substantiated approved projects may appear.",
+      "oldRoutes": "/[locale]/portfolio",
+      "newRoutes": "/portfolio",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "W18",
+      "title": "Project detail `/portfolio/[slug]`",
+      "disposition": "conditional",
+      "decision": "No approved real projects exist. Unknown detail identities return 404; no fictional portfolio transfer.",
+      "oldRoutes": "/[locale]/portfolio/[slug]",
+      "newRoutes": "/portfolio/[slug]",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "W19",
+      "title": "Journal index `/journal`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/blog",
+      "newRoutes": "/journal",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W20",
+      "title": "Journal article `/journal/[slug]`",
+      "disposition": "adapted",
+      "decision": "Published journal articles remain governed. Unverified old article slugs return 404; no guessed equivalent.",
+      "oldRoutes": "/[locale]/blog/[slug]",
+      "newRoutes": "/journal/[slug]",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "W21",
+      "title": "Frequently asked questions `/faq`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/faq",
+      "newRoutes": "/faq",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W22",
+      "title": "Contact `/contact`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/contact",
+      "newRoutes": "/contact",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W23",
+      "title": "Shipping and delivery `/shipping-delivery`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "/shipping-delivery",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W24",
+      "title": "Returns and cancellations `/returns-cancellations`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "/returns-cancellations",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W25",
+      "title": "Privacy `/privacy`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/privacy",
+      "newRoutes": "/privacy",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W26",
+      "title": "Terms `/terms`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/terms",
+      "newRoutes": "/terms",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W27",
+      "title": "Imprint `/imprint` — first broken public destination",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "/imprint",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W28",
+      "title": "Accessibility `/accessibility`",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "/accessibility",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W29",
+      "title": "Loading, empty, unavailable, 404 and error states",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W30",
+      "title": "Authenticated preview and development state galleries",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/design-lab",
+      "newRoutes": "/[...path]; /[section]; /collectible-design; /; /pieces/[slug]; /preview/states/[kind]; /preview/states; /preview/studio/[...path]; /preview/studio/content/[id]; /preview/studio/content/new; /preview/studio/content; /preview/studio/media; /preview/studio/modules/[module]; /preview/studio; /preview/studio/products/[id]/form; /preview/studio/products/[id]; /preview/studio/products/new; /preview/studio/products",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "W31",
+      "title": "Conditional workshop pages — no new route until an actual offering exists",
+      "disposition": "conditional",
+      "decision": "Old workshops addresses explain retirement; dates, seats and booking require a genuine current offering.",
+      "oldRoutes": "/[locale]/workshops",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "W32",
+      "title": "Conditional 3D-printing/supplies or other legacy service pages",
+      "disposition": "conditional",
+      "decision": "Supplies and printing routes explain retirement. No supplier catalogue, machinery claims or scraper execution.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "W33",
+      "title": "Reviewed languages and legacy-URL journeys",
+      "disposition": "adapted",
+      "decision": "Priority interface translations, explicit editorial fallback, complete-record review, exact saved preview and safe verified locale compatibility.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "W34",
+      "title": "Saved pieces / legacy `/shop/wishlist`",
+      "disposition": "adapted",
+      "decision": "Current browser-local saved pieces are retained; old wishlist storage is not migrated.",
+      "oldRoutes": "/[locale]/shop/wishlist",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "W35",
+      "title": "Registered custom pages / legacy `/p/[slug]`",
+      "disposition": "adapted",
+      "decision": "Governed /p pages stay in the current draft/publication contract. Unknown old identities return 404.",
+      "oldRoutes": "/[locale]/p/[slug]",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "W36",
+      "title": "Gone, maintenance, rate-limit and environmental states",
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "oldRoutes": "/[locale]/gone; /[locale]/maintenance; /[locale]/too-many-requests",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P4 closure and P0 source inventory"
+    },
+    {
+      "family": "S01",
+      "title": "Staff sign-in and session renewal",
+      "disposition": "preserved",
+      "decision": "Existing sign-in/session provider, recovery link and retained draft on 401. No registration or new credential architecture.",
+      "oldRoutes": "/studio/login",
+      "newRoutes": "/studio/login",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S02",
+      "title": "Workspace shell, navigation and overview",
+      "disposition": "preserved",
+      "decision": "Grouped shell/finder; real task queue; recent editorial records; saved publication checks. Current 13 registered destinations; no invented counts.",
+      "oldRoutes": "/studio",
+      "newRoutes": "/studio/[...path]; /studio",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S03",
+      "title": "Inquiries: list, filters and saved views",
+      "disposition": "preserved",
+      "decision": "All inquiry filters/sort/page/view/record in URL; chips; 50-row paging; retained rows and return focus. No persistent named-view database added.",
+      "oldRoutes": "/studio/inquiries/[id]; /studio/inquiries",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S04",
+      "title": "Inquiry board and stage changes",
+      "disposition": "preserved",
+      "decision": "Board/list stage controls; phone one-stage view; pending/409/reason behavior. Stage meanings and transition service unchanged.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S05",
+      "title": "Inquiry detail, references, notes and amendments",
+      "disposition": "preserved",
+      "decision": "Grouped saved brief, references, task, notes, amendments and exact history. Original answers/messages preserved; private references remain authorized.",
+      "oldRoutes": "/studio/inquiries/[id]; /studio/inquiries",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S06",
+      "title": "Manual inquiry entry and saved-message preparation",
+      "disposition": "preserved",
+      "decision": "Existing customer-name/brief entry with concrete review and idempotent retry. No richer contact/product/consent/message contract invented.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S07",
+      "title": "Follow-ups and IST date controls",
+      "disposition": "preserved",
+      "decision": "IST presets, due/today/overdue/upcoming filters and calendar-string projections. Saved date-only values never converted through a timestamp.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S08",
+      "title": "Catalogue list and protected existing-product editor",
+      "disposition": "preserved",
+      "decision": "Protected default catalogue review, publication filter, record state and explicit existing-edit opt-in. No existing product data changed.",
+      "oldRoutes": "/studio/products/[id]; /studio/products",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S09",
+      "title": "Existing new-product screen and deferred media dependency",
+      "disposition": "conditional",
+      "decision": "Existing new-product UI retained; supported new-ID media associations remain an explicitly deferred dependency. No product creation or transfer.",
+      "oldRoutes": "/studio/products/[id]; /studio/products/new; /studio/products",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S10",
+      "title": "Product gallery review and responsive presentation",
+      "disposition": "preserved",
+      "decision": "Gallery/images editor uses shared tabs and state while retaining exact associations. No product-image substitution or gallery reordering.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S11",
+      "title": "Customization forms and schema comparison",
+      "disposition": "preserved",
+      "decision": "Actual public customization controls used for Studio preview; comparison remains available. Preview controls cannot validate/submit the product editor; current schemas unchanged.",
+      "oldRoutes": "/studio/forms",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S12",
+      "title": "Pages and the homepage section composer",
+      "disposition": "preserved",
+      "decision": "P2/P4 section editors plus identity/version/state, recovery and native record-switch dialog. Saved exact previews and explicit publication retained.",
+      "oldRoutes": "/studio/custom-pages/[id]; /studio/custom-pages/new; /studio/custom-pages; /studio/pages/[id]; /studio/pages; /studio/sections",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S13",
+      "title": "Global copy, FAQ, process, materials and policies",
+      "disposition": "preserved",
+      "decision": "Typed global/policy editors use common state, sections and recovery. No factual legal/business copy invented.",
+      "oldRoutes": "/studio/site-copy",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S14",
+      "title": "Journal index, article editing and editorial links",
+      "disposition": "preserved",
+      "decision": "Journal/content records share focused editor, direct recent links and comparison. No new unreviewed articles published.",
+      "oldRoutes": "/studio/blog/[id]; /studio/blog/new; /studio/blog",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S15",
+      "title": "Media library: assets, provenance and review",
+      "disposition": "preserved",
+      "decision": "Media identity/version/state, initial retry, current-draft revision comparison and provenance remain visible. Existing public media unchanged.",
+      "oldRoutes": "/studio/media",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S16",
+      "title": "Site images: page-slot assignment and crops",
+      "disposition": "preserved",
+      "decision": "P3 assignment/crop workspace retained under the common shell. No new asset assignment required for this operational phase.",
+      "oldRoutes": "/studio/site-images",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S17",
+      "title": "Navigation and destination management",
+      "disposition": "adapted",
+      "decision": "Existing navigation editor plus source-bound translation review and stale fallback; no destination or contact rewrites.",
+      "oldRoutes": "/studio/navigation",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S18",
+      "title": "Languages, translation coverage and review",
+      "disposition": "adapted",
+      "decision": "Language review coverage, complete editable source paths, stale detection, saved preview and revision recovery.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S19",
+      "title": "Content health and exact repair navigation",
+      "disposition": "preserved",
+      "decision": "Common readiness reader, exact repair links, URL filter entry and retained results on error. Readiness never implies unsaved work is approved.",
+      "oldRoutes": "/studio/content-gaps; /studio/content-health",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S20",
+      "title": "Taxonomy, categories and relationship review",
+      "disposition": "adapted",
+      "decision": "Read-only exact category keys, published counts, related records, normalized-label conflicts and collection-level aliases.",
+      "oldRoutes": "/studio/categories",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S21",
+      "title": "Portfolio and testimonials — conditional modules",
+      "disposition": "conditional",
+      "decision": "Genuine projects/testimonials require facts, consent and actual media. No false editor or invented content activated.",
+      "oldRoutes": "/studio/portfolio/[id]; /studio/portfolio/new; /studio/portfolio",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S22",
+      "title": "Imports, exports and bulk-operation review",
+      "disposition": "adapted",
+      "decision": "Editorial translation JSON dry run, protected-field validation and before/after review into unsaved drafts. Existing exports unchanged; catalogue imports excluded.",
+      "oldRoutes": "/studio/exports; /studio/import",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S23",
+      "title": "Staff access, roles and recovery assistance",
+      "disposition": "preserved",
+      "decision": "Review exact role/active/session effects; stale versions and revocation handled by current service. Temporary isolated accounts disabled; audits retained.",
+      "oldRoutes": "/studio/users",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S24",
+      "title": "Business settings and protected contact references",
+      "disposition": "preserved",
+      "decision": "Read-only canonical contact values, copy feedback and exact public/audit reference links. Phone/email/map/WhatsApp facts unchanged.",
+      "oldRoutes": "/studio/settings",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S25",
+      "title": "Revisions, concurrent edits and activity audit",
+      "disposition": "preserved",
+      "decision": "Known record links, explicit current revision, compare/restore and conflict-preserving recovery. Restore creates a draft; history is never replaced.",
+      "oldRoutes": "/studio/activity",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S26",
+      "title": "SEO, redirects and indexing diagnostics",
+      "disposition": "adapted",
+      "decision": "Reviewed redirect registry and read-only canonical/indexing diagnostics; indexing held and locale SEO migration not selected.",
+      "oldRoutes": "/studio/seo",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S27",
+      "title": "Privacy, retention, backup and recovery evidence",
+      "disposition": "preserved",
+      "decision": "Existing privacy/retention/recovery controls retained. Service execution/physical-device audit remains P7; P6 runs no cleanup or backup.",
+      "oldRoutes": "/studio/settings",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S28",
+      "title": "Analytics and preserved scraper surface",
+      "disposition": "conditional",
+      "decision": "Operational workload counts exist. Anonymous funnel instrumentation is unavailable, not zero; no permitted event source established. Scraper excluded.",
+      "oldRoutes": "/studio/analytics",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S29",
+      "title": "Publication, real preview and revision recovery: the first complete workflow",
+      "disposition": "preserved",
+      "decision": "Draft/save/real preview/publish/public read/stale rejection/restore/hide cycle retained. Only synthetic QA content published then hidden.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S30",
+      "title": "Shared loading, empty, error and unavailable-module states",
+      "disposition": "preserved",
+      "decision": "Initial loading, true empty, stale refresh, note failure, conflict, session expiry and unknown module states. Sampled matrix; no claim of exhaustive physical-device accessibility audit.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S31",
+      "title": "FAQ list and answer editor",
+      "disposition": "preserved",
+      "decision": "FAQ uses P4 typed section/question editor with common state and recovery. Business answers require factual review.",
+      "oldRoutes": "/studio/faqs",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S32",
+      "title": "Process-step editor",
+      "disposition": "preserved",
+      "decision": "Process chapters retain P4 typed sections, source notes and preview within shared Studio. No unreviewed process promises or video added.",
+      "oldRoutes": "/studio/process",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S33",
+      "title": "Materials and care editor",
+      "disposition": "preserved",
+      "decision": "Materials/care chapters retain structured content and source review controls. No unsupported material guarantees.",
+      "oldRoutes": "/studio/materials",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S34",
+      "title": "Genuine testimonial list/editor",
+      "disposition": "conditional",
+      "decision": "No authentic testimonial wording, attribution and consent supplied. Publication remains unavailable.",
+      "oldRoutes": "/studio/testimonials/[id]; /studio/testimonials/new; /studio/testimonials",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S35",
+      "title": "Project detail and new-project states",
+      "disposition": "conditional",
+      "decision": "No genuine project facts/media permissions supplied. Dedicated project editor remains conditional; existing governed page composition retained.",
+      "oldRoutes": "/studio/portfolio/[id]; /studio/portfolio/new; /studio/portfolio",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S36",
+      "title": "Legacy subscribers screen",
+      "disposition": "retired",
+      "decision": "No subscriber import, list, campaign or new subscription service activated.",
+      "oldRoutes": "/studio/subscribers",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S37",
+      "title": "Internal content lab",
+      "disposition": "internal",
+      "decision": "Content lab purpose is served by current drafts and authenticated exact previews, not a new generator.",
+      "oldRoutes": "/studio/content-lab",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S38",
+      "title": "Manual research/reference board",
+      "disposition": "internal",
+      "decision": "Manual Drive inventory, asset review and provenance remain the reference workflow; no automatic collection.",
+      "oldRoutes": "/studio/research",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S39",
+      "title": "Scraper and catalogue-ingestion legacy family — excluded",
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "oldRoutes": "/studio/catalog-fill/conflicts; /studio/catalog-fill; /studio/scraper/analytics; /studio/scraper/confirmed; /studio/scraper/explorer; /studio/scraper/large-format; /studio/scraper/mapping; /studio/scraper; /studio/scraper/quality; /studio/scraper/review; /studio/scraper/runs; /studio/scraper/sources/[key]; /studio/scraper/sources",
+      "newRoutes": "/studio/[...path]",
+      "evidence": "P6 checkpoint and source registry"
+    },
+    {
+      "family": "S40",
+      "title": "Supported staff recovery/reset and legacy signup routes",
+      "disposition": "preserved",
+      "decision": "Current sign-in help, renewal, staff session revocation and protected signup destinations. No public signup, new reset provider or credential change.",
+      "oldRoutes": "/studio/forgot-password; /studio/reset-password; /studio/signup",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S41",
+      "title": "Authorized private reference viewer",
+      "disposition": "preserved",
+      "decision": "Private viewer matches Studio palette and retains contained imagery and authorized access. No new upload/deletion or public exposure claimed.",
+      "oldRoutes": "Shared or no dedicated template mapped",
+      "newRoutes": "/studio/reference/[id]",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S42",
+      "title": "Internal preview, state galleries, demo and environment diagnostics",
+      "disposition": "preserved",
+      "decision": "Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "oldRoutes": "/design-lab",
+      "newRoutes": "/[...path]; /[section]; /collectible-design; /; /pieces/[slug]; /preview/states/[kind]; /preview/states; /preview/studio/[...path]; /preview/studio/content/[id]; /preview/studio/content/new; /preview/studio/content; /preview/studio/media; /preview/studio/modules/[module]; /preview/studio; /preview/studio/products/[id]/form; /preview/studio/products/[id]; /preview/studio/products/new; /preview/studio/products",
+      "evidence": "P5 family register"
+    },
+    {
+      "family": "S43",
+      "title": "Inquiry card / printable summary",
+      "disposition": "preserved",
+      "decision": "Ink-friendly authorized saved brief plus task metadata; no private images or edit controls. Request summary is not an invoice; only user-triggered print.",
+      "oldRoutes": "/studio/inquiries/[id]/card",
+      "newRoutes": "Shared, conditional or missing dedicated template; see specification",
+      "evidence": "P5 family register"
+    }
+  ],
+  "templates": [
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/about/page.tsx",
+      "route": "/[locale]/about",
+      "families": [
+        "W12"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/about/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/blog/(index)/page.tsx",
+      "route": "/[locale]/blog",
+      "families": [
+        "W19"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/blog/%28index%29/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/blog/[slug]/page.tsx",
+      "route": "/[locale]/blog/[slug]",
+      "families": [
+        "W20"
+      ],
+      "disposition": "adapted",
+      "decision": "Published journal articles remain governed. Unverified old article slugs return 404; no guessed equivalent.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/blog/%5Bslug%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/contact/page.tsx",
+      "route": "/[locale]/contact",
+      "families": [
+        "W22"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/contact/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/custom-order/page.tsx",
+      "route": "/[locale]/custom-order",
+      "families": [
+        "W09",
+        "W10"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/custom-order/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/faq/page.tsx",
+      "route": "/[locale]/faq",
+      "families": [
+        "W21"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/faq/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/large-resin-art/page.tsx",
+      "route": "/[locale]/large-resin-art",
+      "families": [
+        "W03",
+        "W15"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/large-resin-art/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/p/[slug]/page.tsx",
+      "route": "/[locale]/p/[slug]",
+      "families": [
+        "W35"
+      ],
+      "disposition": "adapted",
+      "decision": "Governed /p pages stay in the current draft/publication contract. Unknown old identities return 404.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/p/%5Bslug%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/page.tsx",
+      "route": "/[locale]",
+      "families": [
+        "W02"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/portfolio/(index)/page.tsx",
+      "route": "/[locale]/portfolio",
+      "families": [
+        "W17"
+      ],
+      "disposition": "conditional",
+      "decision": "Index has an honest empty state. Only substantiated approved projects may appear.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/portfolio/%28index%29/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/portfolio/[slug]/page.tsx",
+      "route": "/[locale]/portfolio/[slug]",
+      "families": [
+        "W18"
+      ],
+      "disposition": "conditional",
+      "decision": "No approved real projects exist. Unknown detail identities return 404; no fictional portfolio transfer.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/portfolio/%5Bslug%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/privacy/page.tsx",
+      "route": "/[locale]/privacy",
+      "families": [
+        "W25"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/privacy/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/process/page.tsx",
+      "route": "/[locale]/process",
+      "families": [
+        "W13"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/process/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/product/[slug]/page.tsx",
+      "route": "/[locale]/product/[slug]",
+      "families": [
+        "W07",
+        "W08"
+      ],
+      "disposition": "protected; preserved",
+      "decision": "Current published pieces retain IDs, facts and galleries. Unverified old product slugs return 404. Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/product/%5Bslug%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/search/page.tsx",
+      "route": "/[locale]/search",
+      "families": [
+        "W06"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/search/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/shop/(index)/page.tsx",
+      "route": "/[locale]/shop",
+      "families": [
+        "W03",
+        "W06"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/shop/%28index%29/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/shop/[category]/page.tsx",
+      "route": "/[locale]/shop/[category]",
+      "families": [
+        "W03",
+        "W06"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/shop/%5Bcategory%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/shop/wishlist/page.tsx",
+      "route": "/[locale]/shop/wishlist",
+      "families": [
+        "W34"
+      ],
+      "disposition": "adapted",
+      "decision": "Current browser-local saved pieces are retained; old wishlist storage is not migrated.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/shop/wishlist/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/terms/page.tsx",
+      "route": "/[locale]/terms",
+      "families": [
+        "W26"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/terms/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/whatsapp-order/page.tsx",
+      "route": "/[locale]/whatsapp-order",
+      "families": [
+        "W11"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/whatsapp-order/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/(v2)/workshops/page.tsx",
+      "route": "/[locale]/workshops",
+      "families": [
+        "W31"
+      ],
+      "disposition": "conditional",
+      "decision": "Old workshops addresses explain retirement; dates, seats and booking require a genuine current offering.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/%28v2%29/workshops/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/gone/page.tsx",
+      "route": "/[locale]/gone",
+      "families": [
+        "W36"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/gone/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/maintenance/page.tsx",
+      "route": "/[locale]/maintenance",
+      "families": [
+        "W36"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/maintenance/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/[locale]/too-many-requests/page.tsx",
+      "route": "/[locale]/too-many-requests",
+      "families": [
+        "W36"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/%5Blocale%5D/too-many-requests/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/design-lab/page.tsx",
+      "route": "/design-lab",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/design-lab/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/activity/page.tsx",
+      "route": "/studio/activity",
+      "families": [
+        "S25"
+      ],
+      "disposition": "preserved",
+      "decision": "Known record links, explicit current revision, compare/restore and conflict-preserving recovery. Restore creates a draft; history is never replaced.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/activity/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/analytics/page.tsx",
+      "route": "/studio/analytics",
+      "families": [
+        "S28"
+      ],
+      "disposition": "conditional",
+      "decision": "Operational workload counts exist. Anonymous funnel instrumentation is unavailable, not zero; no permitted event source established. Scraper excluded.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/analytics/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/blog/[id]/page.tsx",
+      "route": "/studio/blog/[id]",
+      "families": [
+        "S14"
+      ],
+      "disposition": "preserved",
+      "decision": "Journal/content records share focused editor, direct recent links and comparison. No new unreviewed articles published.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/blog/%5Bid%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/blog/new/page.tsx",
+      "route": "/studio/blog/new",
+      "families": [
+        "S14"
+      ],
+      "disposition": "preserved",
+      "decision": "Journal/content records share focused editor, direct recent links and comparison. No new unreviewed articles published.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/blog/new/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/blog/page.tsx",
+      "route": "/studio/blog",
+      "families": [
+        "S14"
+      ],
+      "disposition": "preserved",
+      "decision": "Journal/content records share focused editor, direct recent links and comparison. No new unreviewed articles published.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/blog/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/catalog-fill/conflicts/page.tsx",
+      "route": "/studio/catalog-fill/conflicts",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/catalog-fill/conflicts/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/catalog-fill/page.tsx",
+      "route": "/studio/catalog-fill",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/catalog-fill/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/categories/page.tsx",
+      "route": "/studio/categories",
+      "families": [
+        "S20"
+      ],
+      "disposition": "adapted",
+      "decision": "Read-only exact category keys, published counts, related records, normalized-label conflicts and collection-level aliases.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/categories/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/content-gaps/page.tsx",
+      "route": "/studio/content-gaps",
+      "families": [
+        "S19"
+      ],
+      "disposition": "preserved",
+      "decision": "Common readiness reader, exact repair links, URL filter entry and retained results on error. Readiness never implies unsaved work is approved.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/content-gaps/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/content-health/page.tsx",
+      "route": "/studio/content-health",
+      "families": [
+        "S19"
+      ],
+      "disposition": "preserved",
+      "decision": "Common readiness reader, exact repair links, URL filter entry and retained results on error. Readiness never implies unsaved work is approved.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/content-health/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/content-lab/page.tsx",
+      "route": "/studio/content-lab",
+      "families": [
+        "S37"
+      ],
+      "disposition": "internal",
+      "decision": "Content lab purpose is served by current drafts and authenticated exact previews, not a new generator.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/content-lab/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/custom-pages/[id]/page.tsx",
+      "route": "/studio/custom-pages/[id]",
+      "families": [
+        "S12"
+      ],
+      "disposition": "preserved",
+      "decision": "P2/P4 section editors plus identity/version/state, recovery and native record-switch dialog. Saved exact previews and explicit publication retained.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/custom-pages/%5Bid%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/custom-pages/new/page.tsx",
+      "route": "/studio/custom-pages/new",
+      "families": [
+        "S12"
+      ],
+      "disposition": "preserved",
+      "decision": "P2/P4 section editors plus identity/version/state, recovery and native record-switch dialog. Saved exact previews and explicit publication retained.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/custom-pages/new/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/custom-pages/page.tsx",
+      "route": "/studio/custom-pages",
+      "families": [
+        "S12"
+      ],
+      "disposition": "preserved",
+      "decision": "P2/P4 section editors plus identity/version/state, recovery and native record-switch dialog. Saved exact previews and explicit publication retained.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/custom-pages/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/exports/page.tsx",
+      "route": "/studio/exports",
+      "families": [
+        "S22"
+      ],
+      "disposition": "adapted",
+      "decision": "Editorial translation JSON dry run, protected-field validation and before/after review into unsaved drafts. Existing exports unchanged; catalogue imports excluded.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/exports/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/faqs/page.tsx",
+      "route": "/studio/faqs",
+      "families": [
+        "S31"
+      ],
+      "disposition": "preserved",
+      "decision": "FAQ uses P4 typed section/question editor with common state and recovery. Business answers require factual review.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/faqs/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/forms/page.tsx",
+      "route": "/studio/forms",
+      "families": [
+        "S11"
+      ],
+      "disposition": "preserved",
+      "decision": "Actual public customization controls used for Studio preview; comparison remains available. Preview controls cannot validate/submit the product editor; current schemas unchanged.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/forms/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/import/page.tsx",
+      "route": "/studio/import",
+      "families": [
+        "S22"
+      ],
+      "disposition": "adapted",
+      "decision": "Editorial translation JSON dry run, protected-field validation and before/after review into unsaved drafts. Existing exports unchanged; catalogue imports excluded.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/import/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/inquiries/[id]/page.tsx",
+      "route": "/studio/inquiries/[id]",
+      "families": [
+        "S03",
+        "S05"
+      ],
+      "disposition": "preserved",
+      "decision": "All inquiry filters/sort/page/view/record in URL; chips; 50-row paging; retained rows and return focus. No persistent named-view database added. Grouped saved brief, references, task, notes, amendments and exact history. Original answers/messages preserved; private references remain authorized.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/inquiries/%5Bid%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/inquiries/page.tsx",
+      "route": "/studio/inquiries",
+      "families": [
+        "S03",
+        "S05"
+      ],
+      "disposition": "preserved",
+      "decision": "All inquiry filters/sort/page/view/record in URL; chips; 50-row paging; retained rows and return focus. No persistent named-view database added. Grouped saved brief, references, task, notes, amendments and exact history. Original answers/messages preserved; private references remain authorized.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/inquiries/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/materials/page.tsx",
+      "route": "/studio/materials",
+      "families": [
+        "S33"
+      ],
+      "disposition": "preserved",
+      "decision": "Materials/care chapters retain structured content and source review controls. No unsupported material guarantees.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/materials/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/media/page.tsx",
+      "route": "/studio/media",
+      "families": [
+        "S15"
+      ],
+      "disposition": "preserved",
+      "decision": "Media identity/version/state, initial retry, current-draft revision comparison and provenance remain visible. Existing public media unchanged.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/media/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/navigation/page.tsx",
+      "route": "/studio/navigation",
+      "families": [
+        "S17"
+      ],
+      "disposition": "adapted",
+      "decision": "Existing navigation editor plus source-bound translation review and stale fallback; no destination or contact rewrites.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/navigation/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/page.tsx",
+      "route": "/studio",
+      "families": [
+        "S02"
+      ],
+      "disposition": "preserved",
+      "decision": "Grouped shell/finder; real task queue; recent editorial records; saved publication checks. Current 13 registered destinations; no invented counts.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/pages/[id]/page.tsx",
+      "route": "/studio/pages/[id]",
+      "families": [
+        "S12"
+      ],
+      "disposition": "preserved",
+      "decision": "P2/P4 section editors plus identity/version/state, recovery and native record-switch dialog. Saved exact previews and explicit publication retained.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/pages/%5Bid%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/pages/page.tsx",
+      "route": "/studio/pages",
+      "families": [
+        "S12"
+      ],
+      "disposition": "preserved",
+      "decision": "P2/P4 section editors plus identity/version/state, recovery and native record-switch dialog. Saved exact previews and explicit publication retained.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/pages/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/portfolio/[id]/page.tsx",
+      "route": "/studio/portfolio/[id]",
+      "families": [
+        "S21",
+        "S35"
+      ],
+      "disposition": "conditional",
+      "decision": "Genuine projects/testimonials require facts, consent and actual media. No false editor or invented content activated. No genuine project facts/media permissions supplied. Dedicated project editor remains conditional; existing governed page composition retained.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/portfolio/%5Bid%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/portfolio/new/page.tsx",
+      "route": "/studio/portfolio/new",
+      "families": [
+        "S21",
+        "S35"
+      ],
+      "disposition": "conditional",
+      "decision": "Genuine projects/testimonials require facts, consent and actual media. No false editor or invented content activated. No genuine project facts/media permissions supplied. Dedicated project editor remains conditional; existing governed page composition retained.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/portfolio/new/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/portfolio/page.tsx",
+      "route": "/studio/portfolio",
+      "families": [
+        "S21",
+        "S35"
+      ],
+      "disposition": "conditional",
+      "decision": "Genuine projects/testimonials require facts, consent and actual media. No false editor or invented content activated. No genuine project facts/media permissions supplied. Dedicated project editor remains conditional; existing governed page composition retained.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/portfolio/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/process/page.tsx",
+      "route": "/studio/process",
+      "families": [
+        "S32"
+      ],
+      "disposition": "preserved",
+      "decision": "Process chapters retain P4 typed sections, source notes and preview within shared Studio. No unreviewed process promises or video added.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/process/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/products/[id]/page.tsx",
+      "route": "/studio/products/[id]",
+      "families": [
+        "S08",
+        "S09"
+      ],
+      "disposition": "preserved; conditional",
+      "decision": "Protected default catalogue review, publication filter, record state and explicit existing-edit opt-in. No existing product data changed. Existing new-product UI retained; supported new-ID media associations remain an explicitly deferred dependency. No product creation or transfer.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/products/%5Bid%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/products/new/page.tsx",
+      "route": "/studio/products/new",
+      "families": [
+        "S09"
+      ],
+      "disposition": "conditional",
+      "decision": "Existing new-product UI retained; supported new-ID media associations remain an explicitly deferred dependency. No product creation or transfer.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/products/new/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/products/page.tsx",
+      "route": "/studio/products",
+      "families": [
+        "S08",
+        "S09"
+      ],
+      "disposition": "preserved; conditional",
+      "decision": "Protected default catalogue review, publication filter, record state and explicit existing-edit opt-in. No existing product data changed. Existing new-product UI retained; supported new-ID media associations remain an explicitly deferred dependency. No product creation or transfer.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/products/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/research/page.tsx",
+      "route": "/studio/research",
+      "families": [
+        "S38"
+      ],
+      "disposition": "internal",
+      "decision": "Manual Drive inventory, asset review and provenance remain the reference workflow; no automatic collection.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/research/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/scraper/analytics/page.tsx",
+      "route": "/studio/scraper/analytics",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/scraper/analytics/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/scraper/confirmed/page.tsx",
+      "route": "/studio/scraper/confirmed",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/scraper/confirmed/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/scraper/explorer/page.tsx",
+      "route": "/studio/scraper/explorer",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/scraper/explorer/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/scraper/large-format/page.tsx",
+      "route": "/studio/scraper/large-format",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/scraper/large-format/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/scraper/mapping/page.tsx",
+      "route": "/studio/scraper/mapping",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/scraper/mapping/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/scraper/page.tsx",
+      "route": "/studio/scraper",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/scraper/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/scraper/quality/page.tsx",
+      "route": "/studio/scraper/quality",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/scraper/quality/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/scraper/review/page.tsx",
+      "route": "/studio/scraper/review",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/scraper/review/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/scraper/runs/page.tsx",
+      "route": "/studio/scraper/runs",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/scraper/runs/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/scraper/sources/[key]/page.tsx",
+      "route": "/studio/scraper/sources/[key]",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/scraper/sources/%5Bkey%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/scraper/sources/page.tsx",
+      "route": "/studio/scraper/sources",
+      "families": [
+        "S39"
+      ],
+      "disposition": "excluded",
+      "decision": "Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/scraper/sources/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/sections/page.tsx",
+      "route": "/studio/sections",
+      "families": [
+        "S12"
+      ],
+      "disposition": "preserved",
+      "decision": "P2/P4 section editors plus identity/version/state, recovery and native record-switch dialog. Saved exact previews and explicit publication retained.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/sections/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/seo/page.tsx",
+      "route": "/studio/seo",
+      "families": [
+        "S26"
+      ],
+      "disposition": "adapted",
+      "decision": "Reviewed redirect registry and read-only canonical/indexing diagnostics; indexing held and locale SEO migration not selected.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/seo/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/settings/page.tsx",
+      "route": "/studio/settings",
+      "families": [
+        "S24",
+        "S27"
+      ],
+      "disposition": "preserved",
+      "decision": "Read-only canonical contact values, copy feedback and exact public/audit reference links. Phone/email/map/WhatsApp facts unchanged. Existing privacy/retention/recovery controls retained. Service execution/physical-device audit remains P7; P6 runs no cleanup or backup.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/settings/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/site-copy/page.tsx",
+      "route": "/studio/site-copy",
+      "families": [
+        "S13"
+      ],
+      "disposition": "preserved",
+      "decision": "Typed global/policy editors use common state, sections and recovery. No factual legal/business copy invented.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/site-copy/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/site-images/page.tsx",
+      "route": "/studio/site-images",
+      "families": [
+        "S16"
+      ],
+      "disposition": "preserved",
+      "decision": "P3 assignment/crop workspace retained under the common shell. No new asset assignment required for this operational phase.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/site-images/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/subscribers/page.tsx",
+      "route": "/studio/subscribers",
+      "families": [
+        "S36"
+      ],
+      "disposition": "retired",
+      "decision": "No subscriber import, list, campaign or new subscription service activated.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/subscribers/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/testimonials/[id]/page.tsx",
+      "route": "/studio/testimonials/[id]",
+      "families": [
+        "S34"
+      ],
+      "disposition": "conditional",
+      "decision": "No authentic testimonial wording, attribution and consent supplied. Publication remains unavailable.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/testimonials/%5Bid%5D/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/testimonials/new/page.tsx",
+      "route": "/studio/testimonials/new",
+      "families": [
+        "S34"
+      ],
+      "disposition": "conditional",
+      "decision": "No authentic testimonial wording, attribution and consent supplied. Publication remains unavailable.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/testimonials/new/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/testimonials/page.tsx",
+      "route": "/studio/testimonials",
+      "families": [
+        "S34"
+      ],
+      "disposition": "conditional",
+      "decision": "No authentic testimonial wording, attribution and consent supplied. Publication remains unavailable.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/testimonials/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/(dashboard)/users/page.tsx",
+      "route": "/studio/users",
+      "families": [
+        "S23"
+      ],
+      "disposition": "preserved",
+      "decision": "Review exact role/active/session effects; stale versions and revocation handled by current service. Temporary isolated accounts disabled; audits retained.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/users/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/forgot-password/page.tsx",
+      "route": "/studio/forgot-password",
+      "families": [
+        "S40"
+      ],
+      "disposition": "preserved",
+      "decision": "Current sign-in help, renewal, staff session revocation and protected signup destinations. No public signup, new reset provider or credential change.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/forgot-password/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/inquiries/[id]/card/page.tsx",
+      "route": "/studio/inquiries/[id]/card",
+      "families": [
+        "S43"
+      ],
+      "disposition": "preserved",
+      "decision": "Ink-friendly authorized saved brief plus task metadata; no private images or edit controls. Request summary is not an invoice; only user-triggered print.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/inquiries/%5Bid%5D/card/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/login/page.tsx",
+      "route": "/studio/login",
+      "families": [
+        "S01"
+      ],
+      "disposition": "preserved",
+      "decision": "Existing sign-in/session provider, recovery link and retained draft on 401. No registration or new credential architecture.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/login/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/reset-password/page.tsx",
+      "route": "/studio/reset-password",
+      "families": [
+        "S40"
+      ],
+      "disposition": "preserved",
+      "decision": "Current sign-in help, renewal, staff session revocation and protected signup destinations. No public signup, new reset provider or credential change.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/reset-password/page.tsx"
+    },
+    {
+      "repository": "OLDWEBSITE",
+      "source": "src/app/studio/signup/page.tsx",
+      "route": "/studio/signup",
+      "families": [
+        "S40"
+      ],
+      "disposition": "preserved",
+      "decision": "Current sign-in help, renewal, staff session revocation and protected signup destinations. No public signup, new reset provider or credential change.",
+      "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/signup/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "experiments/sites/rivyalivingart-studio-preview/app/[...path]/page.tsx",
+      "route": "/[...path]",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/experiments/sites/rivyalivingart-studio-preview/app/%5B...path%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "experiments/sites/rivyalivingart-studio-preview/app/[section]/page.tsx",
+      "route": "/[section]",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/experiments/sites/rivyalivingart-studio-preview/app/%5Bsection%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "experiments/sites/rivyalivingart-studio-preview/app/collectible-design/page.tsx",
+      "route": "/collectible-design",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/experiments/sites/rivyalivingart-studio-preview/app/collectible-design/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "experiments/sites/rivyalivingart-studio-preview/app/page.tsx",
+      "route": "/",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/experiments/sites/rivyalivingart-studio-preview/app/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "experiments/sites/rivyalivingart-studio-preview/app/pieces/[slug]/page.tsx",
+      "route": "/pieces/[slug]",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/experiments/sites/rivyalivingart-studio-preview/app/pieces/%5Bslug%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/[collection]/page.tsx",
+      "route": "/[collection]",
+      "families": [
+        "W03",
+        "W05"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/%5Bcollection%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/about/page.tsx",
+      "route": "/about",
+      "families": [
+        "W12"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/about/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/accessibility/page.tsx",
+      "route": "/accessibility",
+      "families": [
+        "W28"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/accessibility/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/architects/page.tsx",
+      "route": "/architects",
+      "families": [
+        "W15"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/architects/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/care/page.tsx",
+      "route": "/care",
+      "families": [
+        "W14"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/care/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/commission/customize/page.tsx",
+      "route": "/commission/customize",
+      "families": [
+        "W10"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/commission/customize/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/commission/page.tsx",
+      "route": "/commission",
+      "families": [
+        "W09"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/commission/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/contact/page.tsx",
+      "route": "/contact",
+      "families": [
+        "W22"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/contact/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/faq/page.tsx",
+      "route": "/faq",
+      "families": [
+        "W21"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/faq/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/imprint/page.tsx",
+      "route": "/imprint",
+      "families": [
+        "W27"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/imprint/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/inquiry/received/page.tsx",
+      "route": "/inquiry/received",
+      "families": [
+        "W11"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/inquiry/received/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/journal/[slug]/page.tsx",
+      "route": "/journal/[slug]",
+      "families": [
+        "W20"
+      ],
+      "disposition": "adapted",
+      "decision": "Published journal articles remain governed. Unverified old article slugs return 404; no guessed equivalent.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/journal/%5Bslug%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/journal/page.tsx",
+      "route": "/journal",
+      "families": [
+        "W19"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/journal/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/materials-care/page.tsx",
+      "route": "/materials-care",
+      "families": [
+        "W14"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/materials-care/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/materials/page.tsx",
+      "route": "/materials",
+      "families": [
+        "W14"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/materials/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/our-story/page.tsx",
+      "route": "/our-story",
+      "families": [
+        "W12"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/our-story/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/page.tsx",
+      "route": "/",
+      "families": [
+        "W02"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/personalize/page.tsx",
+      "route": "/personalize",
+      "families": [
+        "W16"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/personalize/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/pieces/[slug]/customize/page.tsx",
+      "route": "/pieces/[slug]/customize",
+      "families": [
+        "W08"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/pieces/%5Bslug%5D/customize/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/pieces/[slug]/page.tsx",
+      "route": "/pieces/[slug]",
+      "families": [
+        "W07"
+      ],
+      "disposition": "protected",
+      "decision": "Current published pieces retain IDs, facts and galleries. Unverified old product slugs return 404.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/pieces/%5Bslug%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/portfolio/[slug]/page.tsx",
+      "route": "/portfolio/[slug]",
+      "families": [
+        "W18"
+      ],
+      "disposition": "conditional",
+      "decision": "No approved real projects exist. Unknown detail identities return 404; no fictional portfolio transfer.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/portfolio/%5Bslug%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/portfolio/page.tsx",
+      "route": "/portfolio",
+      "families": [
+        "W17"
+      ],
+      "disposition": "conditional",
+      "decision": "Index has an honest empty state. Only substantiated approved projects may appear.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/portfolio/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preserve/page.tsx",
+      "route": "/preserve",
+      "families": [
+        "W16"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preserve/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/states/[kind]/page.tsx",
+      "route": "/preview/states/[kind]",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/states/%5Bkind%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/states/page.tsx",
+      "route": "/preview/states",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/states/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/studio/[...path]/page.tsx",
+      "route": "/preview/studio/[...path]",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/studio/%5B...path%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/studio/content/[id]/page.tsx",
+      "route": "/preview/studio/content/[id]",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/studio/content/%5Bid%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/studio/content/new/page.tsx",
+      "route": "/preview/studio/content/new",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/studio/content/new/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/studio/content/page.tsx",
+      "route": "/preview/studio/content",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/studio/content/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/studio/media/page.tsx",
+      "route": "/preview/studio/media",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/studio/media/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/studio/modules/[module]/page.tsx",
+      "route": "/preview/studio/modules/[module]",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/studio/modules/%5Bmodule%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/studio/page.tsx",
+      "route": "/preview/studio",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/studio/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/studio/products/[id]/form/page.tsx",
+      "route": "/preview/studio/products/[id]/form",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/studio/products/%5Bid%5D/form/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/studio/products/[id]/page.tsx",
+      "route": "/preview/studio/products/[id]",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/studio/products/%5Bid%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/studio/products/new/page.tsx",
+      "route": "/preview/studio/products/new",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/studio/products/new/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/preview/studio/products/page.tsx",
+      "route": "/preview/studio/products",
+      "families": [
+        "W30",
+        "S42"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts. Authenticated preview/state pages keep current environment guards and shared presentation. QA intake/retry/indexing paused; no production publication.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/preview/studio/products/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/privacy/page.tsx",
+      "route": "/privacy",
+      "families": [
+        "W25"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/privacy/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/process/page.tsx",
+      "route": "/process",
+      "families": [
+        "W13"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/process/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/returns-cancellations/page.tsx",
+      "route": "/returns-cancellations",
+      "families": [
+        "W24"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/returns-cancellations/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/search/page.tsx",
+      "route": "/search",
+      "families": [
+        "W06"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/search/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/shipping-delivery/page.tsx",
+      "route": "/shipping-delivery",
+      "families": [
+        "W23"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/shipping-delivery/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/studio/[...path]/page.tsx",
+      "route": "/studio/[...path]",
+      "families": [
+        "S02",
+        "S39"
+      ],
+      "disposition": "preserved; excluded",
+      "decision": "Grouped shell/finder; real task queue; recent editorial records; saved publication checks. Current 13 registered destinations; no invented counts. Owner excludes all scraper work and old-product transfer. Existing code, configuration and operating state remain untouched.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/studio/%5B...path%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/studio/login/page.tsx",
+      "route": "/studio/login",
+      "families": [
+        "S01"
+      ],
+      "disposition": "preserved",
+      "decision": "Existing sign-in/session provider, recovery link and retained draft on 401. No registration or new credential architecture.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/studio/login/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/studio/page.tsx",
+      "route": "/studio",
+      "families": [
+        "S02"
+      ],
+      "disposition": "preserved",
+      "decision": "Grouped shell/finder; real task queue; recent editorial records; saved publication checks. Current 13 registered destinations; no invented counts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/studio/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/studio/reference/[id]/page.tsx",
+      "route": "/studio/reference/[id]",
+      "families": [
+        "S41"
+      ],
+      "disposition": "preserved",
+      "decision": "Private viewer matches Studio palette and retains contained imagery and authorized access. No new upload/deletion or public exposure claimed.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/studio/reference/%5Bid%5D/page.tsx"
+    },
+    {
+      "repository": "RivyaLivingArt2.0",
+      "source": "src/app/terms/page.tsx",
+      "route": "/terms",
+      "families": [
+        "W26"
+      ],
+      "disposition": "preserved",
+      "decision": "Current P1–P4 implementation retained. P6 does not replace existing content, design, business facts or publication contracts.",
+      "reference": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7569bbf720e73c5fee0117618a702b297af116de/src/app/terms/page.tsx"
+    }
+  ],
+  "conditionalFacts": "No approvedProjects, testimonial consent, verified workshop/printing offering or permitted anonymous funnel source supplied. Missing instrumentation is not a zero count."
+}

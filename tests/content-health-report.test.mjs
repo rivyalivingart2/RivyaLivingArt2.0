@@ -26,7 +26,7 @@ test('missing mobile crop is blocking and links to the exact homepage chapter',(
 });
 test('unchanged translation after English draft changes is stale, never automatically reviewed',()=>{
  const e=entry('page:imprint',true);e.document.translations={hi:{title:'शीर्षक'}};e.published.translations=structuredClone(e.document.translations);e.document.title='Changed English title';
- assert.match(contentHealthReport([e],[],[],context)[0].translation,/hi: Stale after source draft change/);
+ assert.match(contentHealthReport([e],[],[],context)[0].translation,/hi: incomplete/);
 });
 test('unknown and unpublished journal navigation has an exact administrator repair target',()=>{
  const settings=structuredClone(defaultSiteSettings);settings.navigation.header=[{id:'missing-story',label:{en:'Missing story'},href:'/journal/missing-story',visible:true,newTab:false}];

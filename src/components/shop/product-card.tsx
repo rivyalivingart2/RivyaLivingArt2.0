@@ -3,11 +3,10 @@ import {formatPrice} from '@/lib/product-presentation';
 import {SavePieceButton} from './saved-piece-button';
 import pstyle from './detailed-pages.module.css';
 import Image from './public-image';
-import type {ShopProduct} from '@/lib/shop-model';
+import type {CardProduct} from '@/lib/product-card-model';
+export type {CardProduct} from '@/lib/product-card-model';
 import {imageSizes} from './image-sizes';
 import s from './shop.module.css';
-
-export type CardProduct = Pick<ShopProduct, 'id' | 'slug' | 'name' | 'subtitle' | 'category' | 'tier' | 'material' | 'image' | 'imageAlt' | 'imagePosition' | 'price'>;
 
 export function ProductCard({product: p}: {product: CardProduct}) {
   return (

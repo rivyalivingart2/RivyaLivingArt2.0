@@ -1,3 +1,4 @@
+import {translationStatus} from './translation-review';
 import {issueField} from './content-issues';
 import {contentHealthRows,type ContentHealthEntry,type ProductHealthEntry,type MediaHealthEntry,type HealthRow} from './content-health';
 import {baselineContent,validContent} from './content-model';
@@ -28,7 +29,6 @@ export function contentHealthReport(content:ContentHealthEntry[],products:Produc
   let valid=true,mediaState='Not applicable',translation='Not applicable';
   if(row.area==='Content'){
    const d=content.find(e=>e.document.id===row.id)!.document;
-   const published=content.find(e=>e.document.id===row.id)!.published;
    valid=safeValid(()=>validContent(d,baselineContent.find(b=>b.id===d.id)));
    const imagePaths=editorialSlots(d).flatMap(s=>s.path?[s.path]:[]);
    mediaState=imagePaths.length?(imagePaths.every(p=>publicImages.has(p))?'Published metadata; visual review unrecorded':'Missing published metadata'):'No image selected';
@@ -39,13 +39,9 @@ export function contentHealthReport(content:ContentHealthEntry[],products:Produc
    for(const action of hrefs){const issue=linkProblem(action.href);if(issue)issues.push({severity:'Blocker',reason:issue,href:studioRecordHref('content',d.id,action.field)});}
    for(const b of d.homepage?.sections||[])if(b.image&&!b.image.mobile)issues.push({severity:'Blocker',reason:`${d.sections.find(s=>s.id===b.id)?.heading||b.id}: mobile crop missing`,href:studioRecordHref('content',d.id,'section-'+b.id)});
    translation=context.settings.localization.enabled?context.settings.localization.enabledLocales.filter(l=>l!=='en').map(l=>{
-    const t=d.translations?.[l];const complete=!!t?.title?.trim()&&!!t?.eyebrow?.trim()&&!!t?.description?.trim()&&d.sections.every(b=>{const s=t.sections?.[b.id];return !!s?.heading?.trim()&&b.paragraphs.every((_,i)=>!!s.paragraphs?.[i]?.trim())&&(b.checklist||[]).every((_,i)=>!!s.checklist?.[i]?.trim());});
-    const sourceChanged=published&&JSON.stringify([d.title,d.eyebrow,d.description,d.sections])!==JSON.stringify([published.title,published.eyebrow,published.description,published.sections]);
-    const stale=t&&sourceChanged&&JSON.stringify(t)===JSON.stringify(published?.translations?.[l]);
-    return l+': '+(stale?'Stale after source draft change':complete?'Complete fields':t?'Partial':'English fallback');
+    const state=translationStatus(d,l);return l+': '+(state.state==='missing'?'English fallback':state.state)+' · '+(state.total-state.missing)+'/'+state.total+' fields';
    }).join(' · ')||'English only':'Language switcher disabled';
-   if(d.homepage)translation+=' · Homepage chapter translations not supported';
-   else if(translation!=='English only'&&translation!=='Language switcher disabled')translation+=' · Review freshness unrecorded';
+
   }else if(row.area==='Catalogue'){
    const p=products.find(e=>e.product.id===row.id)!.product;valid=safeValid(()=>validProduct(p,baselineProducts.find(b=>b.id===p.id)||p));
    mediaState=publicImages.has(p.image)?'Published primary metadata':'Missing primary metadata';

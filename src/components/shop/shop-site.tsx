@@ -24,8 +24,8 @@ import type {ContentDocument} from '@/lib/content-model';
 import {imageSizes} from './image-sizes';
 import s from './shop.module.css';
 import {HomepageDocument} from './homepage-document';
+import {productCard as card} from '@/lib/product-card-model';
 const button=(outline=false)=>`${s.button} ${outline?s.outline:''}`;
-const card=(p:ShopProduct)=>({id:p.id,slug:p.slug,name:p.name,subtitle:p.subtitle,category:p.category,tier:p.tier,material:p.material,image:p.image,imageAlt:p.imageAlt,imagePosition:p.imagePosition,price:p.price});
 export function Invitation(){return <section className={s.invitation}><span className={s.eyebrow}>A place for your idea</span><h2>Let’s make it<br/><em>meaningful.</em></h2><p>A room in mind. A memory to hold. A person to celebrate. Tell us where your piece begins.</p><div className={s.actions}><Link className={button()} href="/commission">Begin your piece ↗</Link></div></section>;}
 export function Intro({eyebrow,title,children}:{eyebrow:string;title:string;children?:React.ReactNode}){return <header className={s.pageIntro}><span className={s.eyebrow}>{eyebrow}</span><h1>{title}</h1>{children&&<p>{children}</p>}</header>;}
 function Home({products,articles}:{products:ShopProduct[];articles:ContentDocument[]}){
@@ -51,10 +51,10 @@ function Home({products,articles}:{products:ShopProduct[];articles:ContentDocume
 export async function ShopSite({route}:{route:string}){
  const locale=await publicLocale();
  const needsCatalogue=route==='/'||route.startsWith('/pieces/')||['/collectible-design','/memory-art','/personal-art','/search','/commission','/preserve','/personalize','/portfolio'].includes(route);
- const [products,documents,business]=await Promise.all([needsCatalogue?publishedProducts(locale):Promise.resolve([]),route==='/'||isDiscoveryRoute(route)?publishedContent(locale):Promise.resolve([]),publishedBusiness()]);let content:React.ReactNode;
+ const [products,documents,business]=await Promise.all([needsCatalogue?publishedProducts(locale):Promise.resolve([]),route==='/'||isDiscoveryRoute(route)?publishedContent(locale,route):Promise.resolve([]),publishedBusiness()]);let content:React.ReactNode;
  if(route==='/'){
   const home=documents.find(d=>d.id==='page:home'&&d.homepage&&d.homeSnapshot);
-  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={(await publishedCopy(locale)).values}/></>:<Home products={products} articles={documents.filter(a=>a.kind==='article')}/>;
+  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={(await publishedCopy(locale)).values}/></>:<Home products={products} articles={(await publishedContent(locale,undefined,'/')).filter(a=>a.kind==='article')}/>;
  }
  else if(isDiscoveryRoute(route)&&documents.some(d=>d.route===route)){content=<CollectionDocument document={documents.find(d=>d.route===route)!}/>;}
  else if(route.startsWith('/pieces/')){

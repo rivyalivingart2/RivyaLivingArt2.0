@@ -246,3 +246,4 @@
   align-content: start;
   align-self: start;
 }
+.routeDecisions{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}.routeDecisions .panel{margin:0}.routeDecisions h2{font-size:22px}.routeDecisions a{text-decoration:underline;text-underline-offset:4px}.routeDecisions details{margin-top:16px}

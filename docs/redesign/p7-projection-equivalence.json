@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-03T06:16:27.873Z",
+  "checks": [
+    {
+      "module": "shop-catalogue",
+      "records": 120,
+      "unchanged": true
+    },
+    {
+      "module": "published-content",
+      "records": 55,
+      "unchanged": true
+    },
+    {
+      "scope": "Per-route compilation matches full projection",
+      "routes": 4
+    },
+    {
+      "module": "business-settings",
+      "records": 1,
+      "unchanged": true
+    }
+  ],
+  "sourceDataUnchanged": true,
+  "productionWrites": false,
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Evidence supports the recorded P7 candidate. Application logic checks preceded only later lossless font packaging unless the recorded scope specifies otherwise; backup/restore receipts are operational evidence, not deployed-source proof."
+}

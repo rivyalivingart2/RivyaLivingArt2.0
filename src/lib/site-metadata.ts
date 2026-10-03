@@ -5,7 +5,8 @@ import {publishedProducts} from './shop-catalogue';
 import {isPublicWebsiteAvailable,isProductionWebsite} from './public-website';
 import {approvedProjects} from './project-model';
 import {findConcept} from './catalogue';
-export const siteOrigin='https://rivyalivingart.com';
+// The existing production host redirects apex to www; metadata must name the final host.
+export const siteOrigin='https://www.rivyalivingart.com';
 export function indexingEnabled(){return process.env.SITE_INDEXABLE==='true'&&isProductionWebsite(process.env)&&isPublicWebsiteAvailable(process.env);}
 const staticPages:Record<string,[string,string]>={
  '/':['Art for the way you live','Discover resin furniture, memory art and personal gifts. Choose a piece, share your brief and continue with RivyaLivingArt.'],

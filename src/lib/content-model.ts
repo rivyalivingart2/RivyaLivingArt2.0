@@ -1,4 +1,5 @@
 import journal from './reviewed-journal.json';
+import {applyReviewedTranslation,validTranslationFields} from './translation-review';
 import {isCustomPageId,isCustomPageRoute} from './custom-page-identity';
 import {isDiscoveryRoute,detailedPageCandidates} from './detailed-pages';
 import {allowedEditorialPath} from './editorial-media-model';
@@ -11,7 +12,7 @@ import {sharedCopyCandidate,sharedCopyId,validSharedCopy} from './shared-copy-mo
 import type {PageSnapshot} from './page-dependencies';
 export type ContentSection={layout?:'prose'|'split'|'reverse'|'statement';id:string;heading:string;paragraphs:string[];checklist?:string[];body?:EditorialBody;enabled?:boolean;group?:string;stage?:'customer'|'making';policyHref?:string;sourceNote?:string;image?:EditorialUsage;action?:HomeAction;material?:{appearance:string;limitations:string;care:string;placement:string}};
 export type ContentSectionTranslation={heading?:string;paragraphs?:string[];checklist?:string[]};
-export type ContentTranslation={title?:string;eyebrow?:string;description?:string;sections?:Record<string,ContentSectionTranslation>};
+export type ContentTranslation={title?:string;eyebrow?:string;description?:string;sections?:Record<string,ContentSectionTranslation>;fields?:Record<string,string>;reviewedRevision?:string};
 export type ContentDocument={
  id:string;kind:'page'|'article';route:string;title:string;eyebrow:string;description:string;
  sections:ContentSection[];headerImage?:EditorialUsage;image?:string;imageAlt?:string;relatedProductIds?:string[];
@@ -59,6 +60,7 @@ function checkContent(value:unknown,base?:ContentDocument):value is ContentDocum
   for(const [locale,value] of Object.entries(d.translations)){
    if(locale==='en'||!isLocale(locale)||!value||typeof value!=='object'||Array.isArray(value))return false;
    const t=value as ContentTranslation;
+   if(!validTranslationFields(d,t))return false;
    for(const [key,max] of [['title',120],['eyebrow',100],['description',300]] as const){const v=t[key];if(v!==undefined&&(typeof v!=='string'||v.length>max||/[<>]/.test(v)))return false;}
    if(t.sections!==undefined){
     if(!t.sections||typeof t.sections!=='object'||Array.isArray(t.sections))return false;
@@ -94,6 +96,7 @@ function checkContent(value:unknown,base?:ContentDocument):value is ContentDocum
 
 export function localizeContent(document:ContentDocument,locale:Locale):ContentDocument{
  if(locale==='en')return document;
+ if(locale==='hi'||locale==='gu')return applyReviewedTranslation(document,locale);
  const t=document.translations?.[locale];
  if(!t)return document;
  const text=(value:string|undefined,fallback:string)=>value?.trim()?value:fallback;

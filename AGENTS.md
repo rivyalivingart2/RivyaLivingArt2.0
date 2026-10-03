@@ -1,3 +1,47 @@
+# Authorized main and production release - 3 October 2026
+
+The owner explicitly requested: "if possible solve all of this and after this put all updated thing in git main branch and put it in production in vercel". This supersedes the previous draft-only hold. Complete available engineering and checks, publish through existing detailed PR #36, and verify Vercel production. Do not create another PR for this same candidate or push directly to main. This is authorization to release verified improvements, not evidence that human/device, independent key custody, future daily-backup history or performance acceptance have passed.
+
+Products, forms, original/gallery associations, phone, email, scraper, drafts and revision history stay protected. No old-product transfer, production fixtures, index activation, paid provisioning, external messaging, or copying QA content/media identities to production. The owner renewed Studio sign-in; use read-only production checks. Main/production status in older entries below is historical; see PR #36 and the final local production receipt for the outcome.
+
+---
+
+# Saved release candidate - draft PR 36, protected Preview READY
+
+3 October 2026. Draft PR https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/36 contains the complete P6/P7/P8 candidate. Read `docs/redesign/P8-FOLLOW-UP.md` and `p8-preview-receipt.json`. Six hosted HTTP checks pass for application source a14f161. Main is unchanged; the draft PR is held for the precise remaining performance, authenticated runtime, physical/device and key-custody gates. Backup schedule and receipt defects are repaired and the new Drive archive verified. Do not ask for a generic repeat approval, claim full acceptance, or create another PR for this same candidate.
+
+---
+
+# Current continuation - P8 follow-up candidate; technical release gates remain
+
+3 October 2026. The owner requested completing the remaining engineering, backups and authorized release, then delegated available actions. Read `docs/redesign/P8-FOLLOW-UP.md` and `docs/decisions/2026-10-03-release-follow-up.md`. Compact Studio record reads and public source reduction pass isolated regression checks. The paused backup automation is active with catch-up checks; same-day/idempotent receipt writing is repaired and a fresh remote backup verified. Prepare the detailed draft PR and protected Preview under the recorded instruction. Main/production publication remains held for failing performance and unresolved authenticated/device/key-custody evidence; do not claim full P7/P8 completion or repeat a generic approval question. Preserve all protected records, contacts, scraper and history. Earlier local-only and approval-pending statements below are historical.
+
+---
+
+# Current continuation — P7 repairs and P8 preparation saved; acceptance gates open
+
+3 October 2026. Read `docs/redesign/P7-CHECKPOINT.md`, `P7-VERIFICATION-REPORT.md` and `P8-RELEASE-PACKET.md`. Local branch `codex/p7-performance-release` includes completed P6 and P7 application repairs. Final build, recorded flow/privacy/security tests and protection comparisons pass. Full P4 performance/P7 acceptance is NOT complete: final desktop/mobile loading and some interaction diagnostics miss targets; field p75, human screen-reader/physical-device/full-family acceptance, independent key custody and daily backup/RPO proof remain open.
+
+The owner confirmed independent password-manager and sealed offline recovery-key copies are not verified. Do not ask for the key or mark custody complete. Fresh remote encrypted backup and controlled 19-table service restore passed; prior backup gap was 52.21 hours. P8 packet, detailed local PR draft, rollback and editing guide are prepared. No source push/PR/deployment/production publication occurred. Keep work local until a new explicit push-main instruction, then use a detailed PR. Preserve products/forms/originals/galleries/contacts/scraper/drafts/history; no product transfer. Earlier status entries below are historical.
+
+---
+
+# Current continuation — included P6 complete locally
+
+3 October 2026. The owner requested full P6. P6A–P6E included implementation and isolated QA are complete on `codex/p6-legacy-language-journeys`. Read `docs/redesign/P6-CLOSURE.md`, `P6-CHECKPOINT.md` and `p6-validation.json`. Conditional T34/T37/T45/T47 remain inactive; business editorial translations still require actual review/publication. Do not claim production is translated or updated. Earlier P6A-only notes below are historical.
+
+Keep work local until a new explicit push-main request, then use a detailed PR. Preserve products/forms/categories/galleries/originals/contacts/scraper/drafts/history and manual-send behavior. No old-product transfer, production publication or automatic service activation. No language-URL migration or indexing activation is selected. S09 new-product media remains deferred; P4 performance acceptance and P7/P8 remain open. P7 has not started.
+
+---
+
+# Current continuation — P6 started locally
+
+3 October 2026. The owner requested starting P6. Continue on `codex/p6-legacy-language-journeys` from main `c94427de88d45a216fdf545840efef2f875e5789` (PRs #34/#35 already merged and deployed). Read `docs/redesign/P6-CHECKPOINT.md`. P6A reviewed legacy routing and read-only publication/category diagnostics are implemented and verified locally. Continue P6B reviewed language journeys. Language journeys, exact unverified product/article mappings and remaining P6 slices stay open until evidenced; do not describe all P6 as complete.
+
+Keep work local until a new explicit push-main request, then use a detailed PR. Preserve products, forms, galleries, originals, contact values, scraper, drafts/history and manual-send behavior. No old-product transfer, scraper work, production content publication or automatic service activation. No language-URL migration or indexing activation is selected. P4 performance acceptance and P7/P8 remain open.
+
+---
+
 # Current owner instruction — publish all P3–P5 updates through a detailed PR
 
 1 October 2026. The owner explicitly requested all updated files in main through a PR containing full change details. Push `codex/p5-studio-workspace`, create the detailed PR, verify current checks and merge through the PR. Do not push directly to main or bypass required checks/reviews. This authorizes publication of the accumulated P3/P4/P5 source; later work stays local until a new instruction. Read `docs/decisions/2026-10-01-publish-p3-p5-main.md`, `docs/redesign/P3-P5-MAIN-SUMMARY.md` and the changed-file register. Earlier local-only statements below are historical for this delivery.

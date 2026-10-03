@@ -1,4 +1,6 @@
+import {journeyText} from './journey-text';
 export const locales=['en','hi','gu','ar','es','de','fr','zh','ja'] as const;
+export const publicJourneyLocales=(enabled:readonly Locale[]):Locale[]=>enabled.filter(l=>['en','hi','gu'].includes(l));
 export type Locale=(typeof locales)[number];
 export const defaultLocale:Locale='en';
 export const localeLabels:Record<Locale,string>={
@@ -9,7 +11,9 @@ export const localeDir=(locale:string):'ltr'|'rtl'=>(rtlLocales as readonly stri
 export const isLocale=(value:string):value is Locale=>(locales as readonly string[]).includes(value);
 
 export type LocalizedLabel=Partial<Record<Locale,string>>&{en:string};
-export type NavItem={id:string;label:LocalizedLabel;href:string;visible:boolean;newTab:boolean};
+export type NavItem={id:string;label:LocalizedLabel;href:string;visible:boolean;newTab:boolean;reviewedLabels?:Partial<Record<Locale,string>>};
+export const navigationReview=(label:LocalizedLabel,locale:Locale)=>JSON.stringify([label.en,label[locale]||'']);
+export function navigationLabel(item:NavItem,locale:Locale){return locale!=='en'&&item.reviewedLabels?.[locale]===navigationReview(item.label,locale)&&item.label[locale]?.trim()?item.label[locale]!:journeyText(locale,item.label.en);}
 export type NavMenuKey='collections'|'header'|'footerExplore'|'footerAtelier'|'footerLegal';
 export type NavigationSettings=Record<NavMenuKey,NavItem[]>;
 export type LocalizationSettings={enabled:boolean;enabledLocales:Locale[]};
@@ -84,6 +88,7 @@ const validLabel=(value:unknown):value is LocalizedLabel=>{
 const validItem=(value:unknown):value is NavItem=>{
  if(!value||typeof value!=='object'||Array.isArray(value))return false;
  const item=value as NavItem;
+ if(item.reviewedLabels!==undefined&&(!item.reviewedLabels||typeof item.reviewedLabels!=='object'||Array.isArray(item.reviewedLabels)||Object.entries(item.reviewedLabels).some(([code,value])=>!isLocale(code)||typeof value!=='string'||value.length>300)))return false;
  return /^[a-z0-9][a-z0-9-]{1,79}$/.test(item.id)&&validLabel(item.label)&&typeof item.href==='string'&&item.href.length<=500&&!describeHrefProblem(item.href)&&typeof item.visible==='boolean'&&typeof item.newTab==='boolean';
 };
 const menuKeys:NavMenuKey[]=['collections','header','footerExplore','footerAtelier','footerLegal'];
@@ -99,7 +104,7 @@ export function validSiteSettings(value:unknown):value is SiteSettings{
  }
  return true;
 }
-export function localizedLabel(label:LocalizedLabel,locale:string){return (isLocale(locale)&&label[locale]?.trim())||label.en;}
+export function localizedLabel(label:LocalizedLabel,locale:string){return (isLocale(locale)&&label[locale]?.trim())||journeyText(locale,label.en);}
 export function localePath(path:string,locale:string){
  if(locale==='en'||!isLocale(locale))return path;
  if(path==='/' )return '/'+locale;

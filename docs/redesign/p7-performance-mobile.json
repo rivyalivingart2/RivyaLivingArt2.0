@@ -1,0 +1,644 @@
+{
+  "at": "2026-10-03T06:47:02.510Z",
+  "environment": "Local compiled QA, remote isolated database",
+  "profile": "390x844, DPR3, mobile/touch, reduced motion, cold browser cache; CDP CPU4x, latency150ms, download1.6Mbps/upload750Kbps. Local server is not production CDN.",
+  "limits": "Single lab sample per route; event-duration maximum is a diagnostic, not real-user p75 INP. Studio editor opening measured, no publication during performance run.",
+  "samples": [
+    {
+      "route": "/",
+      "status": 200,
+      "lcp": 3632,
+      "cls": 0.015826572037957887,
+      "events": [
+        248,
+        248,
+        248,
+        104,
+        16
+      ],
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "/_next/image",
+        "size": 72540
+      },
+      "ttfb": 1923,
+      "transfer": 438990,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 29559
+        },
+        {
+          "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26716
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/collectible-design",
+      "status": 200,
+      "lcp": 4576,
+      "cls": 0,
+      "events": [
+        200,
+        200,
+        200,
+        96,
+        16
+      ],
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "/_next/image",
+        "size": 133380
+      },
+      "ttfb": 1526.2999999988824,
+      "transfer": 545418,
+      "largestResources": [
+        {
+          "path": "/_next/image",
+          "bytes": 89617
+        },
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 49836
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/memory-art",
+      "status": 200,
+      "lcp": 5696,
+      "cls": 0,
+      "events": [
+        152,
+        152,
+        152,
+        88,
+        16
+      ],
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "/_next/image",
+        "size": 143910
+      },
+      "ttfb": 3360.699999999255,
+      "transfer": 521102,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 62698
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 58553
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/personal-art",
+      "status": 200,
+      "lcp": 5848,
+      "cls": 0,
+      "events": [
+        136,
+        136,
+        136,
+        96,
+        16
+      ],
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "/_next/image",
+        "size": 148824
+      },
+      "ttfb": 2818.199999999255,
+      "transfer": 556205,
+      "largestResources": [
+        {
+          "path": "/_next/image",
+          "bytes": 120364
+        },
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 37318
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/pieces/river-channel",
+      "status": 200,
+      "lcp": 5480,
+      "cls": 0,
+      "events": [
+        136,
+        136,
+        136,
+        72
+      ],
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "/_next/image",
+        "size": 152207
+      },
+      "ttfb": 3858.9000000003725,
+      "transfer": 465506,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 49836
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        },
+        {
+          "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26716
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/pieces/vow-framed-varmala-keepsake",
+      "status": 200,
+      "lcp": 4432,
+      "cls": 0,
+      "events": [
+        144,
+        144,
+        144,
+        72
+      ],
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "/_next/image",
+        "size": 152207
+      },
+      "ttfb": 2599.4000000003725,
+      "transfer": 469227,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 58553
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        },
+        {
+          "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26716
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/pieces/botanical-resin-pendant",
+      "status": 200,
+      "lcp": 3236,
+      "cls": 0.0005739215763347632,
+      "events": [
+        136,
+        136,
+        136,
+        80,
+        16
+      ],
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "/_next/image",
+        "size": 152207
+      },
+      "ttfb": 1666,
+      "transfer": 434289,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 37318
+        },
+        {
+          "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26716
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/pieces/river-channel/customize",
+      "status": 200,
+      "lcp": 2708,
+      "cls": 5.788556855047949e-05,
+      "events": [
+        136,
+        136,
+        136,
+        80,
+        16
+      ],
+      "lcpElement": {
+        "tag": "P",
+        "url": null,
+        "size": 22875
+      },
+      "ttfb": 1503.5999999996275,
+      "transfer": 403602,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        },
+        {
+          "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26716
+        },
+        {
+          "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+          "bytes": 26451
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/pieces/vow-framed-varmala-keepsake/customize",
+      "status": 200,
+      "lcp": 2704,
+      "cls": 5.788556855047949e-05,
+      "events": [
+        136,
+        136,
+        136,
+        72
+      ],
+      "lcpElement": {
+        "tag": "P",
+        "url": null,
+        "size": 22875
+      },
+      "ttfb": 1484,
+      "transfer": 403119,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        },
+        {
+          "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26716
+        },
+        {
+          "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+          "bytes": 26451
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/pieces/botanical-resin-pendant/customize",
+      "status": 200,
+      "lcp": 2700,
+      "cls": 5.788556855047949e-05,
+      "events": [
+        136,
+        136,
+        136,
+        88,
+        16
+      ],
+      "lcpElement": {
+        "tag": "P",
+        "url": null,
+        "size": 22875
+      },
+      "ttfb": 1557.5999999996275,
+      "transfer": 400109,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        },
+        {
+          "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26716
+        },
+        {
+          "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+          "bytes": 26451
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/commission/customize",
+      "status": 200,
+      "lcp": 1752,
+      "cls": 5.788556855047949e-05,
+      "events": [
+        136,
+        136,
+        136,
+        72,
+        16
+      ],
+      "lcpElement": {
+        "tag": "P",
+        "url": null,
+        "size": 23180
+      },
+      "ttfb": 536.2999999988824,
+      "transfer": 392839,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        },
+        {
+          "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26716
+        },
+        {
+          "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+          "bytes": 26451
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/process",
+      "status": 200,
+      "lcp": 3104,
+      "cls": 0,
+      "events": [
+        152,
+        152,
+        152,
+        56
+      ],
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "/_next/image",
+        "size": 151983
+      },
+      "ttfb": 455.59999999962747,
+      "transfer": 430676,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 29559
+        },
+        {
+          "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26716
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/journal",
+      "status": 200,
+      "lcp": 2736,
+      "cls": 0,
+      "events": [
+        152,
+        152,
+        152,
+        80,
+        16
+      ],
+      "lcpElement": {
+        "tag": "P",
+        "url": null,
+        "size": 47628
+      },
+      "ttfb": 472,
+      "transfer": 554047,
+      "largestResources": [
+        {
+          "path": "/_next/image",
+          "bytes": 89617
+        },
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/image",
+          "bytes": 58553
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/studio/inquiries",
+      "status": 200,
+      "lcp": 4352,
+      "cls": 0.038472544818593246,
+      "events": [
+        280,
+        280,
+        280
+      ],
+      "lcpElement": {
+        "tag": "P",
+        "url": null,
+        "size": 14241
+      },
+      "ttfb": 991,
+      "transfer": 428218,
+      "largestResources": [
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+          "bytes": 44123
+        },
+        {
+          "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 38224
+        },
+        {
+          "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26716
+        },
+        {
+          "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+          "bytes": 26451
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/studio/content?record=page%3Ahome",
+      "status": 200,
+      "lcp": 4856,
+      "cls": 0.034793461366762105,
+      "events": [],
+      "lcpElement": {
+        "tag": "P",
+        "url": null,
+        "size": 16027
+      },
+      "ttfb": 913.2000000011176,
+      "transfer": 2493795,
+      "largestResources": [
+        {
+          "path": "/api/studio/content",
+          "bytes": 1810898
+        },
+        {
+          "path": "/api/studio/media",
+          "bytes": 130881
+        },
+        {
+          "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+          "bytes": 73578
+        },
+        {
+          "path": "/_next/static/chunks/1d6h126cyjix4.js",
+          "bytes": 55017
+        },
+        {
+          "path": "/_next/static/chunks/318xb356k3db8.js",
+          "bytes": 51993
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Final compiled application including WOFF2 font packaging. Final interaction checks were completed in a follow-up after fixing test selectors; prior passing checks are retained."
+}

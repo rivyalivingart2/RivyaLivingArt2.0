@@ -19,10 +19,10 @@ test('safe rich content preserves plain text identity while rejecting executable
  for(const href of ['javascript:alert(1)','//evil.test','/studio','/api/private','/care?x=1','/x%0a','https://evil.test'])assert.equal(safeEditorialHref(href),false);
  for(const mutate of [b=>b.blocks[0].runs[0].html='<b>x</b>',b=>b.blocks[0].kind='script',b=>b.blocks[0].runs[0].text='<img onerror=x>',b=>b.blocks.push(b.blocks[0]),b=>b.blocks[0].runs=[]]){const bad=structuredClone(body);mutate(bad);assert.equal(validEditorialBody(bad),false);}
 });
-test('rich body is canonical, not a competing copy store; translated text does not retain English marks',()=>{
+test('rich body is canonical, not a competing copy store; unreviewed translated text retains the English source',()=>{
  const d=clone('page:process');d.sections[0].body=bodyFromParagraphs(d.sections[0].paragraphs);assert.equal(validContent(d,clone(d.id)),true);
  d.sections[0].paragraphs=['different'];assert.equal(validContent(d,clone(d.id)),false);
- d.sections[0].paragraphs=bodyParagraphs(d.sections[0].body);d.translations={hi:{sections:{[d.sections[0].id]:{paragraphs:['अनुवाद']}}}};assert.equal(localizeContent(d,'hi').sections[0].body,undefined);
+ d.sections[0].paragraphs=bodyParagraphs(d.sections[0].body);d.translations={hi:{sections:{[d.sections[0].id]:{paragraphs:['अनुवाद']}}}};assert.deepEqual(localizeContent(d,'hi').sections[0].body,d.sections[0].body);
 });
 test('shared copy has a fixed inventory, protects structural labels and never exposes a contact-value field',()=>{
  assert.equal(validContent(sharedCopyCandidate,sharedCopyCandidate),true);assert.equal(sharedCopyValues().footerExplore,'Explore');

@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-03T08:17:21.528Z",
+  "checks": [
+    {
+      "route": "/",
+      "exactSelectedDocument": true,
+      "articleAndRouteListUnchanged": true,
+      "unrelatedSnapshotsAbsent": true,
+      "totalReadAndCompileMs": 3147
+    },
+    {
+      "route": "/process",
+      "exactSelectedDocument": true,
+      "articleAndRouteListUnchanged": true,
+      "unrelatedSnapshotsAbsent": true,
+      "totalReadAndCompileMs": 3123
+    },
+    {
+      "route": "/journal",
+      "exactSelectedDocument": true,
+      "articleAndRouteListUnchanged": true,
+      "unrelatedSnapshotsAbsent": true,
+      "totalReadAndCompileMs": 2872
+    },
+    {
+      "route": "/contact",
+      "exactSelectedDocument": true,
+      "articleAndRouteListUnchanged": true,
+      "unrelatedSnapshotsAbsent": true,
+      "totalReadAndCompileMs": 2760
+    },
+    {
+      "route": "/journal/a-room-begins-with-a-statement-table",
+      "exactSelectedDocument": true,
+      "articleAndRouteListUnchanged": true,
+      "unrelatedSnapshotsAbsent": true,
+      "totalReadAndCompileMs": 2757
+    }
+  ],
+  "discoveryQueries": 6,
+  "cardBytes": 40173,
+  "fullProductBytes": 275428,
+  "privacyRuntimePrerequisites": "Required added schema and permissions verified for this runtime",
+  "protectedDataUnchanged": true
+}

@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-03T07:39:06.980Z",
+  "checks": [
+    "Draft remains absent publicly",
+    "New page publishes on next public request",
+    "Saved homepage draft does not replace publication",
+    "Saved preview shows exact draft and dependencies",
+    "Published homepage visible immediately",
+    "Dependency withdrawal disappears on next homepage request",
+    "Prior saved preview retains its exact dependency snapshot",
+    "Stale homepage save conflicts",
+    "Recovery remains a draft until publication",
+    "Recovered original homepage is public",
+    "Products, media and contacts unchanged",
+    "Original draft and publication restored independently"
+  ],
+  "fixtureHidden": true,
+  "historyPreserved": true,
+  "productionWrites": false
+}

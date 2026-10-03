@@ -98,7 +98,7 @@ export async function POST(request:Request){
    if(prior.length)return json({saved:true,recovered:true});
    const rows=await sql`WITH changed AS (
     UPDATE rivya_studio_orders o SET version=version+1,updated_at=now() WHERE id=${body.id}::uuid AND version=${body.version}
-     AND EXISTS(SELECT 1 FROM rivya_inquiries i WHERE i.id=o.id AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)) RETURNING id
+     AND NOT EXISTS(SELECT 1 FROM rivya_privacy_controls p WHERE p.order_id=o.id AND p.erased_at IS NOT NULL) AND EXISTS(SELECT 1 FROM rivya_inquiries i WHERE i.id=o.id AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)) RETURNING id
    ), appended AS (
     INSERT INTO rivya_inquiry_notes(inquiry_id,actor,body) SELECT id,${session.adminId},${encoded} FROM changed RETURNING inquiry_id
    ), logged AS (
@@ -116,9 +116,10 @@ export async function POST(request:Request){
   }
   if(body.action==='note'){
    if(!uuid(body.id)||typeof body.note!=='string'||!body.note.trim()||body.note.length>2000||body.note.trim().startsWith(amendmentPrefix))return json({error:'Write a note within 2,000 characters.'},400);
-   const rows=await sql`INSERT INTO rivya_inquiry_notes(inquiry_id,actor,body)
-    SELECT id,${session.adminId},${body.note.trim()} FROM rivya_inquiries
-    WHERE id=${body.id}::uuid AND (${session.role==='admin'} OR assignee=${session.staffId}::uuid) RETURNING id`;
+   const rows=await sql`WITH allowed AS (
+    UPDATE rivya_privacy_controls p SET version=p.version+1 WHERE order_id=${body.id}::uuid AND erased_at IS NULL
+     AND EXISTS(SELECT 1 FROM rivya_inquiries i WHERE i.id=p.order_id AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)) RETURNING order_id
+   ) INSERT INTO rivya_inquiry_notes(inquiry_id,actor,body) SELECT order_id,${session.adminId},${body.note.trim()} FROM allowed RETURNING id`;
    return rows.length?json({saved:true}):json({error:'This inquiry is unavailable to your account.'},404);
   }
   if(body.action==='assign'||body.action==='follow-up'){
@@ -128,7 +129,7 @@ export async function POST(request:Request){
    if(body.assignee){const staff=await sql`SELECT id FROM rivya_staff WHERE id=${body.assignee}::uuid AND active=true`;if(!staff.length)return json({error:'Choose an active staff member.'},400);}
    const rows=await sql`WITH changed AS (
     UPDATE rivya_studio_orders o SET version=version+1,updated_at=now() WHERE id=${body.id}::uuid AND version=${body.version}
-    AND EXISTS(SELECT 1 FROM rivya_inquiries i WHERE i.id=o.id AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)) RETURNING id
+    AND NOT EXISTS(SELECT 1 FROM rivya_privacy_controls p WHERE p.order_id=o.id AND p.erased_at IS NOT NULL) AND EXISTS(SELECT 1 FROM rivya_inquiries i WHERE i.id=o.id AND (${session.role==='admin'} OR i.assignee=${session.staffId}::uuid)) RETURNING id
    ), assigned AS (
     UPDATE rivya_inquiries SET assignee=CASE WHEN ${body.action==='assign'} THEN ${body.assignee}::uuid ELSE assignee END,follow_up=${body.followUp}::date WHERE id IN(SELECT id FROM changed) RETURNING id
    ), logged AS (

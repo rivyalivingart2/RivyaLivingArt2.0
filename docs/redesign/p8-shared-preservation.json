@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-03T08:24:18.070Z",
+  "source": "Approved shared-source SELECT only, matching original Studio GET projections",
+  "catalogueCount": 120,
+  "mediaCount": 131,
+  "catalogueEqual": true,
+  "productIdsEqual": true,
+  "mediaEqual": true,
+  "galleryAssociationsEqual": true,
+  "businessRecordEqual": true,
+  "sourceMutations": 0,
+  "permissionInspectionScope": "Configured backup source role only; deployment runtime role still requires release-time verification"
+}

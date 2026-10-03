@@ -9,6 +9,7 @@ import type {OrderReceipt} from './order-receipt';
 export type OrderAccess={kind:'guest';guest:string;key:string}|{kind:'staff';admin:boolean;staffId:string|null};
 export async function readOrder(id:string|null,access:OrderAccess){
  const rows=await studioDb()`SELECT to_jsonb(i) AS record FROM rivya_inquiries i WHERE (${id}::uuid IS NULL OR i.id=${id}::uuid)
+  AND NOT EXISTS(SELECT 1 FROM rivya_privacy_controls p WHERE p.order_id=i.id AND p.erased_at IS NOT NULL)
   AND ((${access.kind==='guest'} AND i.guest_hash=${access.kind==='guest'?access.guest:null} AND i.request_key=${access.kind==='guest'?access.key:null}::uuid AND i.created_at>now()-interval '24 hours')
    OR (${access.kind==='staff'} AND (${access.kind==='staff'&&access.admin} OR i.assignee=${access.kind==='staff'?access.staffId:null}::uuid)))`;
  return rows[0]?.record as Record<string,unknown>|undefined;

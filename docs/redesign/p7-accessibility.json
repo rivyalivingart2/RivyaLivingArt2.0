@@ -1,0 +1,1318 @@
+{
+  "at": "2026-10-03T06:08:36.705Z",
+  "scope": "Automated axe, keyboard and accessible-tree checks in real Chrome. Human screen-reader and physical-device testing remain separate.",
+  "samples": [
+    {
+      "route": "/",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/collectible-design",
+      "status": 200,
+      "axePasses": 29,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/memory-art",
+      "status": 200,
+      "axePasses": 29,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/personal-art",
+      "status": 200,
+      "axePasses": 29,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/search",
+      "status": 200,
+      "axePasses": 29,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/saved-pieces",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/pieces/river-channel",
+      "status": 200,
+      "axePasses": 30,
+      "axeIncomplete": [
+        "aria-prohibited-attr",
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/pieces/river-channel/customize",
+      "status": 200,
+      "axePasses": 29,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/commission",
+      "status": 200,
+      "axePasses": 29,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/commission/customize",
+      "status": 200,
+      "axePasses": 29,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/preserve",
+      "status": 200,
+      "axePasses": 29,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/personalize",
+      "status": 200,
+      "axePasses": 29,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/our-story",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/process",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/materials-care",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/architects",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/journal",
+      "status": 200,
+      "axePasses": 29,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/journal/a-room-begins-with-a-statement-table",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/faq",
+      "status": 200,
+      "axePasses": 29,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/imprint",
+      "status": 200,
+      "axePasses": 30,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/shipping-delivery",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/returns-cancellations",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/accessibility",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/login",
+      "status": 200,
+      "axePasses": 24,
+      "axeIncomplete": [],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio",
+      "status": 200,
+      "axePasses": 25,
+      "axeIncomplete": [],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/inquiries",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "aria-prohibited-attr"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/follow-ups",
+      "status": 200,
+      "axePasses": 27,
+      "axeIncomplete": [
+        "aria-prohibited-attr",
+        "th-has-data-cells"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/products",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "color-contrast"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/content",
+      "status": 200,
+      "axePasses": 26,
+      "axeIncomplete": [],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/site-copy",
+      "status": 200,
+      "axePasses": 27,
+      "axeIncomplete": [
+        "aria-prohibited-attr"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/content-health",
+      "status": 200,
+      "axePasses": 31,
+      "axeIncomplete": [
+        "aria-prohibited-attr",
+        "color-contrast",
+        "link-in-text-block"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/media",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/site-images",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [
+        "aria-prohibited-attr"
+      ],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/navigation",
+      "status": 200,
+      "axePasses": 26,
+      "axeIncomplete": [],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/translations",
+      "status": 200,
+      "axePasses": 26,
+      "axeIncomplete": [],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/legacy",
+      "status": 200,
+      "axePasses": 27,
+      "axeIncomplete": [],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/route-review",
+      "status": 200,
+      "axePasses": 28,
+      "axeIncomplete": [],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/activity",
+      "status": 200,
+      "axePasses": 27,
+      "axeIncomplete": [],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/staff",
+      "status": 200,
+      "axePasses": 27,
+      "axeIncomplete": [],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "route": "/studio/settings",
+      "status": 200,
+      "axePasses": 25,
+      "axeIncomplete": [],
+      "layout": [
+        {
+          "width": 1440,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "overflow": false
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "Keyboard first reaches skip link",
+    "Skip link targets main content",
+    "Validation focus moves to invalid field",
+    "Accessible tree exposes invalid state and preferences",
+    "No uncaught page errors"
+  ],
+  "violations": [
+    {
+      "route": "/studio/inquiries",
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "nodes": [
+        {
+          "target": [
+            "div[aria-label=\"Applied inquiry filters\"]"
+          ],
+          "summary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "route": "/studio/content-health",
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "nodes": [
+        {
+          "target": [
+            ".workspace-module__qCfTQa__actions"
+          ],
+          "summary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Broad loaded-page scan before the two ARIA fixes and final font packaging. The two affected final-build routes were rescanned successfully in p7-interactions.json. Raw findings are retained."
+}

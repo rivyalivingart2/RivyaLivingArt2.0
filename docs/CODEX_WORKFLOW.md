@@ -1,3 +1,27 @@
+# Current continuation — P7 repairs and P8 preparation saved; acceptance gates open
+
+3 October 2026. Read `docs/redesign/P7-CHECKPOINT.md`, `P7-VERIFICATION-REPORT.md` and `P8-RELEASE-PACKET.md`. Local branch `codex/p7-performance-release` includes completed P6 and P7 application repairs. Final build, recorded flow/privacy/security tests and protection comparisons pass. Full P4 performance/P7 acceptance is NOT complete: final desktop/mobile loading and some interaction diagnostics miss targets; field p75, human screen-reader/physical-device/full-family acceptance, independent key custody and daily backup/RPO proof remain open.
+
+The owner confirmed independent password-manager and sealed offline recovery-key copies are not verified. Do not ask for the key or mark custody complete. Fresh remote encrypted backup and controlled 19-table service restore passed; prior backup gap was 52.21 hours. P8 packet, detailed local PR draft, rollback and editing guide are prepared. No source push/PR/deployment/production publication occurred. Keep work local until a new explicit push-main instruction, then use a detailed PR. Preserve products/forms/originals/galleries/contacts/scraper/drafts/history; no product transfer. Earlier status entries below are historical.
+
+---
+
+# Current continuation — included P6 complete locally
+
+3 October 2026. The owner requested full P6. P6A–P6E included implementation and isolated QA are complete on `codex/p6-legacy-language-journeys`. Read `docs/redesign/P6-CLOSURE.md`, `P6-CHECKPOINT.md` and `p6-validation.json`. Conditional T34/T37/T45/T47 remain inactive; business editorial translations still require actual review/publication. Do not claim production is translated or updated. Earlier P6A-only notes below are historical.
+
+Keep work local until a new explicit push-main request, then use a detailed PR. Preserve products/forms/categories/galleries/originals/contacts/scraper/drafts/history and manual-send behavior. No old-product transfer, production publication or automatic service activation. No language-URL migration or indexing activation is selected. S09 new-product media remains deferred; P4 performance acceptance and P7/P8 remain open. P7 has not started.
+
+---
+
+# Current continuation — P6 started locally
+
+3 October 2026. The owner requested starting P6. Continue on `codex/p6-legacy-language-journeys` from main `c94427de88d45a216fdf545840efef2f875e5789` (PRs #34/#35 already merged and deployed). Read `docs/redesign/P6-CHECKPOINT.md`. P6A reviewed legacy routing and read-only publication/category diagnostics are implemented and verified locally. Continue P6B reviewed language journeys. Language journeys, exact unverified product/article mappings and remaining P6 slices stay open until evidenced; do not describe all P6 as complete.
+
+Keep work local until a new explicit push-main request, then use a detailed PR. Preserve products, forms, galleries, originals, contact values, scraper, drafts/history and manual-send behavior. No old-product transfer, scraper work, production content publication or automatic service activation. No language-URL migration or indexing activation is selected. P4 performance acceptance and P7/P8 remain open.
+
+---
+
 # Current owner instruction — publish all P3–P5 updates through a detailed PR
 
 1 October 2026. The owner explicitly requested all updated files in main through a PR containing full change details. Push `codex/p5-studio-workspace`, create the detailed PR, verify current checks and merge through the PR. Do not push directly to main or bypass required checks/reviews. This authorizes publication of the accumulated P3/P4/P5 source; later work stays local until a new instruction. Read `docs/decisions/2026-10-01-publish-p3-p5-main.md`, `docs/redesign/P3-P5-MAIN-SUMMARY.md` and the changed-file register. Earlier local-only statements below are historical for this delivery.
