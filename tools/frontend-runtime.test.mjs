@@ -139,7 +139,10 @@ test('built frontend HTTP access and publication boundaries', async t => {
     for(const path of ['/studio','/studio/inquiries','/studio/follow-ups'])await t.test(`${path} requires staff sign-in`,async()=>{
       const {response}=await getPage(origin,path);assert.equal(response.status,307);assert.match(response.headers.get('location')||'',/\/studio\/login/);assertNoindex(response,path);
     });
-    for(const path of ['/api/studio/orders','/api/studio/workspace','/api/studio/privacy','/api/studio/work-queue'])await t.test(`${path} rejects anonymous access`,async()=>{
+    for(const path of ['/shop','/blog','/product/old-piece','/custom-order','/large-resin-art','/whatsapp-order?token=private-marker','/workshops'])await t.test(`${path.split('?')[0]} legacy handling respects the public availability boundary`,async()=>{
+      const {response,html}=await getPage(origin,path);assert.equal(response.status,404);assert.equal(response.headers.get('location'),null);assertNoindex(response,path);assert.equal(response.headers.get('referrer-policy'),'no-referrer');assert.match(response.headers.get('cache-control')||'',/no-store/);assert.doesNotMatch(html,/private-marker/);
+    });
+    for(const path of ['/api/studio/orders','/api/studio/workspace','/api/studio/privacy','/api/studio/work-queue','/api/studio/route-review'])await t.test(`${path} rejects anonymous access`,async()=>{
       const r=await fetch(origin+path);assert.equal(r.status,401);assert.match(r.headers.get('cache-control')||'',/no-store/);
     });
   });

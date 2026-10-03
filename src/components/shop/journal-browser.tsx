@@ -1,4 +1,5 @@
 'use client';
+import {LegacyFilterNotice} from './legacy-filter-notice';
 import {useRef,type ReactNode} from 'react';
 import {discoveryPreviewUrl} from '@/lib/discovery-preview-url';
 import {usePathname,useSearchParams} from 'next/navigation';
@@ -14,7 +15,7 @@ export function JournalBrowser({items,featuredIds=[]}:{items:{id:string;title:st
  const navigate=(url:string)=>{window.history.pushState(null,'',discoveryPreviewUrl(url,pathname,params));requestAnimationFrame(()=>status.current?.focus({preventScroll:true}));};
  const follow=(e:React.MouseEvent<HTMLAnchorElement>,url:string)=>{if(e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.altKey&&!e.shiftKey){e.preventDefault();navigate(url);}};
  const rest=results.filter(a=>a!==feature);
- return <section className={s.section}><form className={s.toolbar} key={q} action="/journal" onSubmit={e=>{e.preventDefault();const data=new FormData(e.currentTarget);navigate(href(topic,String(data.get('q')||'')));}}><label>Search the journal<input type="search" name="q" defaultValue={q} maxLength={100}/></label>{topic!=='all'&&<input type="hidden" name="topic" value={topic}/>}<button className={s.button}>Find stories</button></form>
+ return <section className={s.section}><LegacyFilterNotice/><form className={s.toolbar} key={q} action="/journal" onSubmit={e=>{e.preventDefault();const data=new FormData(e.currentTarget);navigate(href(topic,String(data.get('q')||'')));}}><label>Search the journal<input type="search" name="q" defaultValue={q} maxLength={100}/></label>{topic!=='all'&&<input type="hidden" name="topic" value={topic}/>}<button className={s.button}>Find stories</button></form>
  <nav className={p.chips} aria-label="Journal topics">{['all',...topics].map(t=><a key={t} href={href(t,q)} aria-current={topic===t?'page':undefined} onClick={e=>follow(e,href(t,q))}>{t==='all'?'All topics':t} · {t==='all'?items.length:items.filter(a=>a.topic===t).length}</a>)}</nav>
  <p ref={status} tabIndex={-1} role="status">{results.length} {results.length===1?'story':'stories'}{q?' for “'+q+'”':''}</p>
  {feature&&<div className={p.journalFeature}><span className={s.eyebrow}>From the notebook</span>{feature.card}</div>}

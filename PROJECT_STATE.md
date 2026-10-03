@@ -1,3 +1,11 @@
+# Current continuation — P6 started locally
+
+3 October 2026. The owner requested starting P6. Continue on `codex/p6-legacy-language-journeys` from main `c94427de88d45a216fdf545840efef2f875e5789` (PRs #34/#35 already merged and deployed). Read `docs/redesign/P6-CHECKPOINT.md`. P6A reviewed legacy routing and read-only publication/category diagnostics are implemented and verified locally. Continue P6B reviewed language journeys. Language journeys, exact unverified product/article mappings and remaining P6 slices stay open until evidenced; do not describe all P6 as complete.
+
+Keep work local until a new explicit push-main request, then use a detailed PR. Preserve products, forms, galleries, originals, contact values, scraper, drafts/history and manual-send behavior. No old-product transfer, scraper work, production content publication or automatic service activation. No language-URL migration or indexing activation is selected. P4 performance acceptance and P7/P8 remain open.
+
+---
+
 # Current owner instruction — publish all P3–P5 updates through a detailed PR
 
 1 October 2026. The owner explicitly requested all updated files in main through a PR containing full change details. Push `codex/p5-studio-workspace`, create the detailed PR, verify current checks and merge through the PR. Do not push directly to main or bypass required checks/reviews. This authorizes publication of the accumulated P3/P4/P5 source; later work stays local until a new instruction. Read `docs/decisions/2026-10-01-publish-p3-p5-main.md`, `docs/redesign/P3-P5-MAIN-SUMMARY.md` and the changed-file register. Earlier local-only statements below are historical for this delivery.

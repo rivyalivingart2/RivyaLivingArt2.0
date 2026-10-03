@@ -20,7 +20,11 @@ const nextConfig: NextConfig = {
       { key: "X-Content-Type-Options", value: "nosniff" },
       { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
       ...((process.env.SITE_INDEXABLE==='true'&&(process.env.VERCEL_ENV?process.env.VERCEL_ENV==='production':process.env.RIVYA_ENV==='production'))?[]:[{ key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' }]),
-    ] }, {source: '/studio/:path*', headers: [
+    ] }, ...['/shop/:path*','/blog/:path*','/product/:path*','/custom-order','/large-resin-art','/whatsapp-order','/workshops'].map(source=>({source,headers:[
+      // next.config headers take precedence over Route Handler headers.
+      // Old links can carry private tokens; never send their URL as a referrer.
+      {key:'Referrer-Policy',value:'no-referrer'},
+    ]})), {source: '/studio/:path*', headers: [
       {key: 'Cache-Control', value: 'private, no-store'},
       {key: 'X-Frame-Options', value: 'DENY'},
       {key: 'Content-Security-Policy', value: "frame-ancestors 'none'; form-action 'self'"},
