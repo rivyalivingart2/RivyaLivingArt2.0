@@ -1,0 +1,68 @@
+{
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "baseMain": "c94427de88d45a216fdf545840efef2f875e5789",
+  "branch": "codex/p7-performance-release",
+  "localOnly": true,
+  "p4PerformanceAccepted": false,
+  "p7FullyAccepted": false,
+  "p8Released": false,
+  "checks": {
+    "unit": 280,
+    "preflight": 12,
+    "compiledHttp": 401,
+    "journeys": 48,
+    "contentLifecycle": 12,
+    "erasureFailure": 5,
+    "privacyExportReplay": 9,
+    "interactionFollowup": 19,
+    "loadedPages": 43,
+    "layoutSamples": 215,
+    "fixedAxeFindings": 2,
+    "finalBuildAndTypeScript": "passed",
+    "lintErrors": 0,
+    "existingLintWarnings": 62
+  },
+  "finalDesktopLabUnder2500ms": 6,
+  "finalMobileLabUnder2500ms": 1,
+  "fieldCoreWebVitals": "unavailable",
+  "independentKeyCustody": "owner confirmed not verified",
+  "priorBackupGapHours": 52.212608055555556,
+  "tasks": {
+    "T24": {
+      "status": "CORE FLOWS VERIFIED IN ISOLATED QA",
+      "evidence": "48 journey checks and exact wrong-guest follow-up; one canonical saved request, preserved snapshot, bounded recovery and manual Send."
+    },
+    "T25": {
+      "status": "CORE FLOWS VERIFIED IN ISOLATED QA",
+      "evidence": "Real private upload/deletion; guest/staff scope, reassignment, failure retention and idempotent retry verified."
+    },
+    "T40": {
+      "status": "PARTIAL; HUMAN ASSISTIVE TESTS OPEN",
+      "evidence": "43-page automated scan and keyboard checks; two findings fixed and rescanned; screen-reader and physical-device tasks remain."
+    },
+    "T42": {
+      "status": "MEASURED; PERFORMANCE ACCEPTANCE OPEN",
+      "evidence": "Final desktop 6/8 and throttled mobile 1/15 meet laboratory LCP comparison; field p75 unavailable. See measured report."
+    },
+    "T43": {
+      "status": "REPAIRS AND ISOLATED QA VERIFIED",
+      "evidence": "Holds/version/request guards, both answer representations, private Blob deletion retry, export metadata and restore replay verified."
+    },
+    "T44": {
+      "status": "PARTIAL; CUSTODY AND RPO OPEN",
+      "evidence": "Fresh 19-table remote backup and 87.581-second service drill pass; 52.21-hour prior gap; independent key copies not verified."
+    },
+    "T62": {
+      "status": "PARTIAL; WHOLE-CANDIDATE GATES OPEN",
+      "evidence": "Fresh P0 product/media/business equality and source checks pass; performance/accessibility/recovery gates remain."
+    },
+    "T66": {
+      "status": "PARTIAL; FULL FAMILY ACCEPTANCE OPEN",
+      "evidence": "All 74 sections and 79 family decisions mapped; 43 fresh page samples supplement inherited evidence; full visual/device comparison remains."
+    },
+    "T48": {
+      "status": "RELEASE PACKET PREPARED; LIVE RELEASE HELD",
+      "evidence": "Source/rollback/destination revisions, PR draft and owner guide prepared. New explicit push/release authorization and acceptance gates required."
+    }
+  }
+}

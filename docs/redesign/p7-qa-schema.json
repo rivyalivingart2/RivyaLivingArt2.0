@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-03T05:46:52.562Z",
+  "database": "rivya_qa_20260924",
+  "applied": [
+    "phase11-erasure-engine.sql",
+    "p7-erasure-runtime-grants.sql"
+  ],
+  "protectedRowsUnchanged": true,
+  "productionMutations": 0,
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Evidence supports the recorded P7 candidate. Application logic checks preceded only later lossless font packaging unless the recorded scope specifies otherwise; backup/restore receipts are operational evidence, not deployed-source proof."
+}

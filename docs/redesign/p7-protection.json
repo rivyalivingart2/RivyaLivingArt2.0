@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-03T06:21:25.684697+00:00",
+  "wholeFilesMatchP0": 1882,
+  "intentionalCodeExceptions": [
+    {
+      "path": "src/app/api/locale/route.ts",
+      "reason": "P6 priority language journeys."
+    },
+    {
+      "path": "src/app/api/studio/operations/route.ts",
+      "reason": "P5 exact record navigation and date projection."
+    },
+    {
+      "path": "src/app/api/studio/orders/route.ts",
+      "reason": "P5 scoped queue changes plus P7 refusal to move erased inquiries."
+    },
+    {
+      "path": "src/app/api/studio/privacy/route.ts",
+      "reason": "P7 erasure confirmation/version/holds/request guards and truthful pending state."
+    },
+    {
+      "path": "src/app/api/studio/workspace/route.ts",
+      "reason": "P5 inquiry changes plus P7 refusal to append/assign erased inquiries."
+    },
+    {
+      "path": "src/lib/business-settings.ts",
+      "reason": "P7 uses shared request-scoped shell read; exact public projection matched prior code."
+    },
+    {
+      "path": "src/lib/shop-catalogue.ts",
+      "reason": "P7 shares published source read; all 120 product projections matched prior code, with no data mutation."
+    }
+  ],
+  "unauthorizedDifferences": [],
+  "oldRepositoryUnchanged": true,
+  "newSourceAssets": "No originals or galleries modified; no new Drive art added in P7.",
+  "protectedRows": "See projection-equivalence.json and per-workflow before/after QA fingerprints.",
+  "scraperWork": false,
+  "oldProductTransfer": false,
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Evidence supports the recorded P7 candidate. Application logic checks preceded only later lossless font packaging unless the recorded scope specifies otherwise; backup/restore receipts are operational evidence, not deployed-source proof."
+}

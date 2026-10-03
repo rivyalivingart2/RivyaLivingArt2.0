@@ -1,0 +1,32 @@
+{
+  "method": "Lossless WOFF2 packaging, FontTools 4.61.1; all glyphs and metrics retained. Original fonts and OFL licences unchanged.",
+  "fonts": [
+    {
+      "source": "public/fonts/instrument-serif-normal-400.ttf",
+      "derived": "src/styles/fonts/instrument-serif-normal-400.woff2",
+      "sourceBytes": 62284,
+      "woff2Bytes": 25200,
+      "cmapGlyphOrderMetricsMatch": true,
+      "sourceSha256": "a99e3db50076202713812ed541feeb23ffeebb61db1fa6b1cf48fe590d37ef18"
+    },
+    {
+      "source": "public/fonts/instrument-serif-italic-400.ttf",
+      "derived": "src/styles/fonts/instrument-serif-italic-400.woff2",
+      "sourceBytes": 64208,
+      "woff2Bytes": 26416,
+      "cmapGlyphOrderMetricsMatch": true,
+      "sourceSha256": "fecf4861d5202405b8bd45c683858b6870642a026784fe0dbf88ff55dedee8a0"
+    },
+    {
+      "source": "public/fonts/jetbrains-mono-normal-400.ttf",
+      "derived": "src/styles/fonts/jetbrains-mono-normal-400.woff2",
+      "sourceBytes": 112172,
+      "woff2Bytes": 37924,
+      "cmapGlyphOrderMetricsMatch": true,
+      "sourceSha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
+    }
+  ],
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Reopened WOFF2 copies have equal character maps, glyph order, horizontal metrics and every glyph outline coordinate against their unchanged TTF originals.",
+  "glyphOutlinesAlsoCompared": true
+}

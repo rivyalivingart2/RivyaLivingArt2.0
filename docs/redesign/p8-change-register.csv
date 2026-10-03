@@ -1,0 +1,137 @@
+gitStatus,path,reviewScope
+M,AGENTS.md,Documentation/evidence
+M,PROJECT_STATE.md,Documentation/evidence
+M,docs/CODEX_WORKFLOW.md,Documentation/evidence
+A,docs/decisions/2026-10-03-p6-completion.md,Documentation/evidence
+A,docs/decisions/2026-10-03-p6-start.md,Documentation/evidence
+A,docs/decisions/2026-10-03-p7-verification.md,Documentation/evidence
+A,docs/redesign/P6-CHECKPOINT.md,Documentation/evidence
+A,docs/redesign/P6-CLOSURE.md,Documentation/evidence
+A,docs/redesign/P7-CHECKPOINT.md,Documentation/evidence
+A,docs/redesign/P7-EVIDENCE-REPRODUCTION.md,Documentation/evidence
+A,docs/redesign/P7-VERIFICATION-REPORT.md,Documentation/evidence
+A,docs/redesign/P8-CHECKPOINT.md,Documentation/evidence
+A,docs/redesign/P8-OWNER-EDITING-GUIDE.md,Documentation/evidence
+A,docs/redesign/P8-PR-DRAFT.md,Documentation/evidence
+A,docs/redesign/P8-RELEASE-PACKET.md,Documentation/evidence
+M,docs/redesign/PENDING-WORK.md,Documentation/evidence
+A,docs/redesign/p6-family-disposition.csv,Documentation/evidence
+A,docs/redesign/p6-template-disposition.csv,Documentation/evidence
+A,docs/redesign/p6-validation.json,Documentation/evidence
+A,docs/redesign/p6a-validation.json,Documentation/evidence
+A,docs/redesign/p7-accessibility.json,Documentation/evidence
+A,docs/redesign/p7-backup-verification.json,Documentation/evidence
+A,docs/redesign/p7-content-lifecycle.json,Documentation/evidence
+A,docs/redesign/p7-erasure-failure.json,Documentation/evidence
+A,docs/redesign/p7-family-evidence.csv,Documentation/evidence
+A,docs/redesign/p7-final-privacy.json,Documentation/evidence
+A,docs/redesign/p7-font-conversion.json,Documentation/evidence
+A,docs/redesign/p7-interactions.json,Documentation/evidence
+A,docs/redesign/p7-journeys.json,Documentation/evidence
+A,docs/redesign/p7-performance-baseline.json,Documentation/evidence
+A,docs/redesign/p7-performance-before-fonts.json,Documentation/evidence
+A,docs/redesign/p7-performance-final.json,Documentation/evidence
+A,docs/redesign/p7-performance-mobile-before-fonts.json,Documentation/evidence
+A,docs/redesign/p7-performance-mobile.json,Documentation/evidence
+A,docs/redesign/p7-projection-equivalence.json,Documentation/evidence
+A,docs/redesign/p7-protection.json,Documentation/evidence
+A,docs/redesign/p7-qa-schema.json,Documentation/evidence
+A,docs/redesign/p7-restore.json,Documentation/evidence
+A,docs/redesign/p7-shared-preservation.json,Documentation/evidence
+A,docs/redesign/p7-validation.json,Documentation/evidence
+A,docs/redesign/p8-change-register.csv,Documentation/evidence
+A,docs/redesign/p8-content-release-checklist.csv,Documentation/evidence
+A,docs/redesign/p8-destination-content-inventory.json,Documentation/evidence
+M,next.config.ts,P6/P7 implementation
+A,scripts/p7-erasure-runtime-grants.sql,Operator-only grants
+M,src/app/api/locale/route.ts,P6/P7 implementation
+M,src/app/api/studio/orders/route.ts,P6/P7 implementation
+M,src/app/api/studio/privacy/route.ts,P6/P7 implementation
+A,src/app/api/studio/route-review/route.ts,P6/P7 implementation
+M,src/app/api/studio/workspace/route.ts,P6/P7 implementation
+A,src/app/ar/[[...legacyPath]]/route.ts,P6/P7 implementation
+A,src/app/blog/[[...legacy]]/route.ts,P6/P7 implementation
+A,src/app/custom-order/route.ts,P6/P7 implementation
+A,src/app/de/[[...legacyPath]]/route.ts,P6/P7 implementation
+A,src/app/en/[[...legacyPath]]/route.ts,P6/P7 implementation
+A,src/app/es/[[...legacyPath]]/route.ts,P6/P7 implementation
+A,src/app/fr/[[...legacyPath]]/route.ts,P6/P7 implementation
+A,src/app/gu/[[...legacyPath]]/route.ts,P6/P7 implementation
+A,src/app/hi/[[...legacyPath]]/route.ts,P6/P7 implementation
+A,src/app/ja/[[...legacyPath]]/route.ts,P6/P7 implementation
+A,src/app/large-resin-art/route.ts,P6/P7 implementation
+M,src/app/layout.tsx,P6/P7 implementation
+M,src/app/p/[slug]/page.tsx,P6/P7 implementation
+A,src/app/product/[slug]/route.ts,P6/P7 implementation
+A,src/app/shop/[[...legacy]]/route.ts,P6/P7 implementation
+M,src/app/studio/preview/frame/page.tsx,P6/P7 implementation
+A,src/app/whatsapp-order/route.ts,P6/P7 implementation
+A,src/app/workshops/route.ts,P6/P7 implementation
+A,src/app/zh/[[...legacyPath]]/route.ts,P6/P7 implementation
+M,src/components/shop/catalogue-browser.tsx,P6/P7 implementation
+M,src/components/shop/customization-fields.tsx,P6/P7 implementation
+M,src/components/shop/header.tsx,P6/P7 implementation
+M,src/components/shop/journal-browser.tsx,P6/P7 implementation
+A,src/components/shop/journey-language.tsx,P6/P7 implementation
+A,src/components/shop/legacy-filter-notice.tsx,P6/P7 implementation
+M,src/components/shop/locale-switcher.tsx,P6/P7 implementation
+M,src/components/shop/order-form.tsx,P6/P7 implementation
+M,src/components/shop/saved-order-actions.tsx,P6/P7 implementation
+M,src/components/shop/saved-piece-button.tsx,P6/P7 implementation
+M,src/components/shop/saved-pieces.tsx,P6/P7 implementation
+M,src/components/shop/saved-receipt.tsx,P6/P7 implementation
+M,src/components/shop/shop-frame.tsx,P6/P7 implementation
+M,src/components/shop/shop-shell.tsx,P6/P7 implementation
+M,src/components/shop/shop-site.tsx,P6/P7 implementation
+M,src/components/shop/shop.module.css,P6/P7 implementation
+M,src/components/studio/content-editor.tsx,P6/P7 implementation
+M,src/components/studio/content-health.tsx,P6/P7 implementation
+M,src/components/studio/homepage-editor.tsx,P6/P7 implementation
+M,src/components/studio/inquiry-workspace.tsx,P6/P7 implementation
+A,src/components/studio/legacy-disposition.tsx,P6/P7 implementation
+M,src/components/studio/privacy-controls.tsx,P6/P7 implementation
+A,src/components/studio/route-review.tsx,P6/P7 implementation
+M,src/components/studio/site-settings-editor.tsx,P6/P7 implementation
+A,src/components/studio/translation-editor.tsx,P6/P7 implementation
+A,src/components/studio/translation-workspace.tsx,P6/P7 implementation
+M,src/components/studio/workspace.module.css,P6/P7 implementation
+M,src/components/studio/workspace.tsx,P6/P7 implementation
+M,src/lib/business-settings.ts,P6/P7 implementation
+M,src/lib/content-health-report.ts,P6/P7 implementation
+M,src/lib/content-model.ts,P6/P7 implementation
+M,src/lib/data-erasure.ts,P6/P7 implementation
+A,src/lib/erasure-execution.ts,P6/P7 implementation
+A,src/lib/erasure-policy.ts,P6/P7 implementation
+M,src/lib/homepage-persistence.ts,P6/P7 implementation
+A,src/lib/journey-text-extra.ts,P6/P7 implementation
+A,src/lib/journey-text.ts,P6/P7 implementation
+A,src/lib/legacy-disposition.json,P6/P7 implementation
+A,src/lib/legacy-locale-handler.ts,P6/P7 implementation
+A,src/lib/legacy-locale.ts,P6/P7 implementation
+A,src/lib/legacy-route-handler.ts,P6/P7 implementation
+A,src/lib/legacy-routes.ts,P6/P7 implementation
+M,src/lib/order-handoff.ts,P6/P7 implementation
+M,src/lib/published-content.ts,P6/P7 implementation
+M,src/lib/published-copy.ts,P6/P7 implementation
+M,src/lib/published-navigation.ts,P6/P7 implementation
+A,src/lib/published-shell-source.ts,P6/P7 implementation
+A,src/lib/published-source.ts,P6/P7 implementation
+M,src/lib/shared-copy-model.ts,P6/P7 implementation
+M,src/lib/shop-catalogue.ts,P6/P7 implementation
+M,src/lib/site-metadata.ts,P6/P7 implementation
+M,src/lib/site-settings-model.ts,P6/P7 implementation
+M,src/lib/site-settings.ts,P6/P7 implementation
+M,src/lib/studio-modules.ts,P6/P7 implementation
+A,src/lib/taxonomy-review.ts,P6/P7 implementation
+A,src/lib/translation-review.ts,P6/P7 implementation
+A,src/styles/fonts/P7-FONTS.md,Documentation/evidence
+A,src/styles/fonts/instrument-serif-italic-400.woff2,Compressed existing font
+A,src/styles/fonts/instrument-serif-normal-400.woff2,Compressed existing font
+A,src/styles/fonts/jetbrains-mono-normal-400.woff2,Compressed existing font
+M,tests/content-health-report.test.mjs,Verification
+A,tests/erasure-policy.test.mjs,Verification
+M,tests/frontend-foundation.test.mjs,Verification
+M,tests/p2-content-foundation.test.mjs,Verification
+A,tests/p6-completion.test.mjs,Verification
+A,tests/p6-legacy-routes.test.mjs,Verification
+M,tools/frontend-runtime.test.mjs,Verification

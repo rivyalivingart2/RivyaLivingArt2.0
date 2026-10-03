@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-03T06:43:07.164Z",
+  "checks": [
+    "Tablet menu opens by keyboard with focus inside",
+    "Navigation dialog contains keyboard focus",
+    "Escape returns focus to menu trigger",
+    "Gallery changes image with arrow key",
+    "Gallery returns focus after closing zoom",
+    "Loaded Studio accessibility rescan /studio/inquiries",
+    "Loaded Studio accessibility rescan /studio/content-health",
+    "Board preference preserved in URL",
+    "Board fits 1440",
+    "Board fits 1050",
+    "Board fits 1024",
+    "Board fits 980",
+    "Board fits 768",
+    "Board fits 390",
+    "Board fits 320",
+    "Media workspace loaded without overflow",
+    "No-JavaScript page retains content and navigation",
+    "Different initialized guest receives 404 and no receipt data",
+    "Interaction pages have no uncaught browser errors"
+  ],
+  "rescans": [
+    {
+      "route": "/studio/inquiries",
+      "violations": []
+    },
+    {
+      "route": "/studio/content-health",
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "screenReaderHumanTest": false,
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Final compiled application including WOFF2 font packaging. Final interaction checks were completed in a follow-up after fixing test selectors; prior passing checks are retained."
+}

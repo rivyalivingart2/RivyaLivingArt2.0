@@ -1,0 +1,11 @@
+# P7 evidence reproduction
+
+Use Node 22 and the committed lockfile. Standard application checks are `npm test`, `npm run test:preflight`, `npm run lint`, `npm run build` and `npm run test:runtime`. Never start a build while an acceptance run is using the same `.next` output.
+
+The guarded integration harnesses are retained in the parent task workspace `work/` (two levels above this repository), not deployed or shipped. `verify-p2-qa.mjs` verifies the exact existing isolated database, restricted role and private store before any mutation. It reads the existing private QA configuration internally; never copy that configuration into Git or substitute shared Preview credentials. `start-p4-qa.mjs` starts the production build on loopback 4189.
+
+Recorded harnesses: `p7-journeys.mjs`, `p7-erasure-failure.mjs`, `p7-final-privacy.mjs`, `p7-content-lifecycle.mjs`, `p7-accessibility.mjs`, `p7-interactions.mjs`, `p7-performance.mjs`, `p7-mobile-performance.mjs`, `p7-projection.mjs`, `p7-protection.py`, `p7-shared-readback.mjs`, `p7-backup.mjs`, `p7-backup-verify.mjs`, `p7-restore.mjs` and `p7-fonts.py`. Read each harness before reuse: fixture-count guards intentionally refuse a different state; they are not blind rerun/cleanup scripts. Restore creates and deletes only its exact newly created disposable target. Shared readback uses SELECTs in a read-only transaction. Backup uses the approved pinned operator configuration.
+
+Some TypeScript QA helpers use the explicit local server-only test alias loader; that loader is not application code or a production guard bypass. Run these from the repository with its TS configuration. Browser checks use local Chrome via the existing Playwright dependency. Evidence is in the task's `outputs/P7/`; source and restoration credentials, encrypted archives and transient authenticated download URLs are not included in the release packet.
+
+Performance profile and raw values are recorded in the JSON receipts. Do not run unrelated acceptance/build work concurrently with a timed measurement. The reports identify desktop and throttled mobile samples separately; event maxima are not field p75 INP. Re-run only affected checks after an actual change, and retain failures rather than replacing them with a passing sample.

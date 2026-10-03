@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-03T06:47:36.304Z",
+  "source": "Approved shared-source SELECT only, matching original Studio GET projections",
+  "catalogueCount": 120,
+  "mediaCount": 131,
+  "catalogueEqual": true,
+  "productIdsEqual": true,
+  "mediaEqual": true,
+  "galleryAssociationsEqual": true,
+  "businessRecordEqual": true,
+  "sourceMutations": 0,
+  "permissionInspectionScope": "Configured backup source role only; deployment runtime role still requires release-time verification",
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Evidence supports the recorded P7 candidate. Application logic checks preceded only later lossless font packaging unless the recorded scope specifies otherwise; backup/restore receipts are operational evidence, not deployed-source proof."
+}

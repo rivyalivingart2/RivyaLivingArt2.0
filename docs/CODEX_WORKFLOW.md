@@ -1,3 +1,11 @@
+# Current continuation — P7 repairs and P8 preparation saved; acceptance gates open
+
+3 October 2026. Read `docs/redesign/P7-CHECKPOINT.md`, `P7-VERIFICATION-REPORT.md` and `P8-RELEASE-PACKET.md`. Local branch `codex/p7-performance-release` includes completed P6 and P7 application repairs. Final build, recorded flow/privacy/security tests and protection comparisons pass. Full P4 performance/P7 acceptance is NOT complete: final desktop/mobile loading and some interaction diagnostics miss targets; field p75, human screen-reader/physical-device/full-family acceptance, independent key custody and daily backup/RPO proof remain open.
+
+The owner confirmed independent password-manager and sealed offline recovery-key copies are not verified. Do not ask for the key or mark custody complete. Fresh remote encrypted backup and controlled 19-table service restore passed; prior backup gap was 52.21 hours. P8 packet, detailed local PR draft, rollback and editing guide are prepared. No source push/PR/deployment/production publication occurred. Keep work local until a new explicit push-main instruction, then use a detailed PR. Preserve products/forms/originals/galleries/contacts/scraper/drafts/history; no product transfer. Earlier status entries below are historical.
+
+---
+
 # Current continuation — included P6 complete locally
 
 3 October 2026. The owner requested full P6. P6A–P6E included implementation and isolated QA are complete on `codex/p6-legacy-language-journeys`. Read `docs/redesign/P6-CLOSURE.md`, `P6-CHECKPOINT.md` and `p6-validation.json`. Conditional T34/T37/T45/T47 remain inactive; business editorial translations still require actual review/publication. Do not claim production is translated or updated. Earlier P6A-only notes below are historical.

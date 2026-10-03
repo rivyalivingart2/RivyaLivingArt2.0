@@ -1,0 +1,105 @@
+{
+  "at": "2026-10-03T05:48:40.990Z",
+  "environment": "Local compiled QA, remote isolated database",
+  "profile": "1440x1000, no CPU/network throttling; browser cache cold then warm; not field data",
+  "samples": [
+    {
+      "route": "/",
+      "state": "cold-browser",
+      "status": 200,
+      "lcp": 1032,
+      "cls": 0,
+      "events": [],
+      "ttfb": 722.7999999988824,
+      "dom": 859.1999999992549,
+      "transfer": 628904,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "state": "warm-browser",
+      "status": 200,
+      "lcp": 584,
+      "cls": 0,
+      "events": [],
+      "ttfb": 508.40000000037253,
+      "dom": 554,
+      "transfer": 43354,
+      "overflow": false
+    },
+    {
+      "route": "/collectible-design",
+      "state": "cold-browser",
+      "status": 200,
+      "lcp": 2404,
+      "cls": 0,
+      "events": [],
+      "ttfb": 2246.4000000003725,
+      "dom": 2284.4000000003725,
+      "transfer": 672779,
+      "overflow": false
+    },
+    {
+      "route": "/collectible-design",
+      "state": "warm-browser",
+      "status": 200,
+      "lcp": 1964,
+      "cls": 0,
+      "events": [],
+      "ttfb": 1878.800000000745,
+      "dom": 1922.300000000745,
+      "transfer": 42136,
+      "overflow": false
+    },
+    {
+      "route": "/process",
+      "state": "cold-browser",
+      "status": 200,
+      "lcp": 1172,
+      "cls": 0,
+      "events": [],
+      "ttfb": 260.8999999985099,
+      "dom": 819.7999999988824,
+      "transfer": 456554,
+      "overflow": false
+    },
+    {
+      "route": "/process",
+      "state": "warm-browser",
+      "status": 200,
+      "lcp": 1156,
+      "cls": 0,
+      "events": [],
+      "ttfb": 264.80000000074506,
+      "dom": 837.2000000011176,
+      "transfer": 34258,
+      "overflow": false
+    },
+    {
+      "route": "/journal",
+      "state": "cold-browser",
+      "status": 200,
+      "lcp": 804,
+      "cls": 0,
+      "events": [],
+      "ttfb": 260.2000000011176,
+      "dom": 740,
+      "transfer": 469869,
+      "overflow": false
+    },
+    {
+      "route": "/journal",
+      "state": "warm-browser",
+      "status": 200,
+      "lcp": 964,
+      "cls": 0,
+      "events": [],
+      "ttfb": 243.7999999988824,
+      "dom": 924.2999999988824,
+      "transfer": 40518,
+      "overflow": false
+    }
+  ],
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Intermediate P7 sample before font packaging. Do not substitute it for the final desktop/mobile measurements."
+}

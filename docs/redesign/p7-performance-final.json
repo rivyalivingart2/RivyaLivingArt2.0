@@ -1,0 +1,105 @@
+{
+  "at": "2026-10-03T06:48:15.437Z",
+  "environment": "Local compiled QA, remote isolated database",
+  "profile": "1440x1000, no CPU/network throttling; browser cache cold then warm; not field data",
+  "samples": [
+    {
+      "route": "/",
+      "state": "cold-browser",
+      "status": 200,
+      "lcp": 2248,
+      "cls": 0,
+      "events": [],
+      "ttfb": 1981.7999999988824,
+      "dom": 2106.699999999255,
+      "transfer": 593197,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "state": "warm-browser",
+      "status": 200,
+      "lcp": 2136,
+      "cls": 0,
+      "events": [],
+      "ttfb": 2025.300000000745,
+      "dom": 2091.300000000745,
+      "transfer": 27014,
+      "overflow": false
+    },
+    {
+      "route": "/collectible-design",
+      "state": "cold-browser",
+      "status": 200,
+      "lcp": 1408,
+      "cls": 0,
+      "events": [],
+      "ttfb": 1272.2000000011176,
+      "dom": 1383.800000000745,
+      "transfer": 635293,
+      "overflow": false
+    },
+    {
+      "route": "/collectible-design",
+      "state": "warm-browser",
+      "status": 200,
+      "lcp": 3964,
+      "cls": 0,
+      "events": [],
+      "ttfb": 3869.300000000745,
+      "dom": 3919.5,
+      "transfer": 37396,
+      "overflow": false
+    },
+    {
+      "route": "/process",
+      "state": "cold-browser",
+      "status": 200,
+      "lcp": 3292,
+      "cls": 0,
+      "events": [],
+      "ttfb": 240.09999999962747,
+      "dom": 2929.199999999255,
+      "transfer": 414906,
+      "overflow": false
+    },
+    {
+      "route": "/process",
+      "state": "warm-browser",
+      "status": 200,
+      "lcp": 2332,
+      "cls": 0,
+      "events": [],
+      "ttfb": 452.40000000037253,
+      "dom": 2165.9000000003725,
+      "transfer": 23608,
+      "overflow": false
+    },
+    {
+      "route": "/journal",
+      "state": "cold-browser",
+      "status": 200,
+      "lcp": 2368,
+      "cls": 0,
+      "events": [],
+      "ttfb": 280,
+      "dom": 2199.7000000011176,
+      "transfer": 428210,
+      "overflow": false
+    },
+    {
+      "route": "/journal",
+      "state": "warm-browser",
+      "status": 200,
+      "lcp": 2332,
+      "cls": 0,
+      "events": [],
+      "ttfb": 462.90000000037253,
+      "dom": 2206.5,
+      "transfer": 25930,
+      "overflow": false
+    }
+  ],
+  "candidateSource": "dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c",
+  "evidenceScopeNote": "Final compiled application including WOFF2 font packaging. Final interaction checks were completed in a follow-up after fixing test selectors; prior passing checks are retained."
+}
