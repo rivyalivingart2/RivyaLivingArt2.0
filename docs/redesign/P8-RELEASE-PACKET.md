@@ -1,3 +1,5 @@
+> Update, 3 October 2026: see [P8-FOLLOW-UP.md](P8-FOLLOW-UP.md) for the owner release instruction, smaller Studio reads, repaired backup scheduling/receipts, fresh verification and remaining gates. The source candidate is being prepared as a detailed draft PR; main/production remain held. Earlier authorization/local-only statements below are historical.
+
 # P8 prepared release packet — held, not deployed
 
 3 October 2026. Application candidate **`dc744c3dd35a9f2bdc4641c4d7d551374dbf9d3c`**, branch `codex/p7-performance-release`, includes the local P6 changes. This is a reviewable release packet, **not approval or a released result**. Full P7 acceptance remains open. The owner's rule requires a new explicit push-main instruction before any branch push/PR, followed by the detailed PR process; manual promotion and production editorial publication have their own applicable authorization.

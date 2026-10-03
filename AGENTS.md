@@ -1,3 +1,9 @@
+# Current continuation - P8 follow-up candidate; technical release gates remain
+
+3 October 2026. The owner requested completing the remaining engineering, backups and authorized release, then delegated available actions. Read `docs/redesign/P8-FOLLOW-UP.md` and `docs/decisions/2026-10-03-release-follow-up.md`. Compact Studio record reads and public source reduction pass isolated regression checks. The paused backup automation is active with catch-up checks; same-day/idempotent receipt writing is repaired and a fresh remote backup verified. Prepare the detailed draft PR and protected Preview under the recorded instruction. Main/production publication remains held for failing performance and unresolved authenticated/device/key-custody evidence; do not claim full P7/P8 completion or repeat a generic approval question. Preserve all protected records, contacts, scraper and history. Earlier local-only and approval-pending statements below are historical.
+
+---
+
 # Current continuation — P7 repairs and P8 preparation saved; acceptance gates open
 
 3 October 2026. Read `docs/redesign/P7-CHECKPOINT.md`, `P7-VERIFICATION-REPORT.md` and `P8-RELEASE-PACKET.md`. Local branch `codex/p7-performance-release` includes completed P6 and P7 application repairs. Final build, recorded flow/privacy/security tests and protection comparisons pass. Full P4 performance/P7 acceptance is NOT complete: final desktop/mobile loading and some interaction diagnostics miss targets; field p75, human screen-reader/physical-device/full-family acceptance, independent key custody and daily backup/RPO proof remain open.
