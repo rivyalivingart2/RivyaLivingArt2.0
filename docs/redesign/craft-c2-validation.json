@@ -1,0 +1,362 @@
+{
+  "date": "2026-10-03",
+  "scope": "C2 core homepage and Studio image controls; local and isolated QA only",
+  "baseCommit": "1ffb1132f8304f55e43c959ee8077f017c388c32",
+  "typecheck": "passed",
+  "changedComponentLint": "passed",
+  "optimizedBuild": "passed",
+  "unitTests": {
+    "passed": 281,
+    "failed": 0
+  },
+  "preflightTests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "builtServerHttpTests": {
+    "passed": 401,
+    "failed": 0
+  },
+  "publicationWorkflow": "craft-c2-workflow-verification.json",
+  "publicResponsive": [
+    {
+      "bodyWidth": 1425,
+      "chapterCount": 13,
+      "doorwayFrames": [
+        {
+          "height": 510.40625,
+          "width": 408.328125
+        },
+        {
+          "height": 510.40625,
+          "width": 408.328125
+        },
+        {
+          "height": 510.421875,
+          "width": 408.34375
+        }
+      ],
+      "headings": [
+        {
+          "overflow": false,
+          "text": "Made around the way you live."
+        },
+        {
+          "overflow": false,
+          "text": "A room. A memory. A personal gesture."
+        },
+        {
+          "overflow": false,
+          "text": "Objects that hold a room."
+        },
+        {
+          "overflow": false,
+          "text": "Find your language."
+        },
+        {
+          "overflow": false,
+          "text": "Give the room a starting point."
+        },
+        {
+          "overflow": false,
+          "text": "The beauty is in the dialogue."
+        },
+        {
+          "overflow": false,
+          "text": "The personal part gives it direction."
+        },
+        {
+          "overflow": false,
+          "text": "Think about the space around it."
+        },
+        {
+          "overflow": false,
+          "text": "An idea is enough to begin."
+        },
+        {
+          "overflow": false,
+          "text": "Considered together. Made personal."
+        },
+        {
+          "overflow": false,
+          "text": "Clear choices. A considered conversation."
+        },
+        {
+          "overflow": false,
+          "text": "A closer look."
+        },
+        {
+          "overflow": false,
+          "text": "Let\u00e2\u20ac\u2122s make it meaningful."
+        }
+      ],
+      "videoCount": 0,
+      "width": 1440
+    },
+    {
+      "bodyWidth": 753,
+      "chapterCount": 13,
+      "doorwayFrames": [
+        {
+          "height": 845.265625,
+          "width": 676.21875
+        },
+        {
+          "height": 845.265625,
+          "width": 676.21875
+        },
+        {
+          "height": 845.265625,
+          "width": 676.21875
+        }
+      ],
+      "headings": [
+        {
+          "overflow": false,
+          "text": "Made around the way you live."
+        },
+        {
+          "overflow": false,
+          "text": "A room. A memory. A personal gesture."
+        },
+        {
+          "overflow": false,
+          "text": "Objects that hold a room."
+        },
+        {
+          "overflow": false,
+          "text": "Find your language."
+        },
+        {
+          "overflow": false,
+          "text": "Give the room a starting point."
+        },
+        {
+          "overflow": false,
+          "text": "The beauty is in the dialogue."
+        },
+        {
+          "overflow": false,
+          "text": "The personal part gives it direction."
+        },
+        {
+          "overflow": false,
+          "text": "Think about the space around it."
+        },
+        {
+          "overflow": false,
+          "text": "An idea is enough to begin."
+        },
+        {
+          "overflow": false,
+          "text": "Considered together. Made personal."
+        },
+        {
+          "overflow": false,
+          "text": "Clear choices. A considered conversation."
+        },
+        {
+          "overflow": false,
+          "text": "A closer look."
+        },
+        {
+          "overflow": false,
+          "text": "Let\u00e2\u20ac\u2122s make it meaningful."
+        }
+      ],
+      "videoCount": 0,
+      "width": 768
+    },
+    {
+      "bodyWidth": 375,
+      "chapterCount": 13,
+      "doorwayFrames": [
+        {
+          "height": 420,
+          "width": 336
+        },
+        {
+          "height": 420,
+          "width": 336
+        },
+        {
+          "height": 420,
+          "width": 336
+        }
+      ],
+      "headings": [
+        {
+          "overflow": false,
+          "text": "Made around the way you live."
+        },
+        {
+          "overflow": false,
+          "text": "A room. A memory. A personal gesture."
+        },
+        {
+          "overflow": false,
+          "text": "Objects that hold a room."
+        },
+        {
+          "overflow": false,
+          "text": "Find your language."
+        },
+        {
+          "overflow": false,
+          "text": "Give the room a starting point."
+        },
+        {
+          "overflow": false,
+          "text": "The beauty is in the dialogue."
+        },
+        {
+          "overflow": false,
+          "text": "The personal part gives it direction."
+        },
+        {
+          "overflow": false,
+          "text": "Think about the space around it."
+        },
+        {
+          "overflow": false,
+          "text": "An idea is enough to begin."
+        },
+        {
+          "overflow": false,
+          "text": "Considered together. Made personal."
+        },
+        {
+          "overflow": false,
+          "text": "Clear choices. A considered conversation."
+        },
+        {
+          "overflow": false,
+          "text": "A closer look."
+        },
+        {
+          "overflow": false,
+          "text": "Let\u00e2\u20ac\u2122s make it meaningful."
+        }
+      ],
+      "videoCount": 0,
+      "width": 390
+    },
+    {
+      "bodyWidth": 305,
+      "chapterCount": 13,
+      "doorwayFrames": [
+        {
+          "height": 341.25,
+          "width": 273
+        },
+        {
+          "height": 341.25,
+          "width": 273
+        },
+        {
+          "height": 341.25,
+          "width": 273
+        }
+      ],
+      "headings": [
+        {
+          "overflow": false,
+          "text": "Made around the way you live."
+        },
+        {
+          "overflow": false,
+          "text": "A room. A memory. A personal gesture."
+        },
+        {
+          "overflow": false,
+          "text": "Objects that hold a room."
+        },
+        {
+          "overflow": false,
+          "text": "Find your language."
+        },
+        {
+          "overflow": false,
+          "text": "Give the room a starting point."
+        },
+        {
+          "overflow": false,
+          "text": "The beauty is in the dialogue."
+        },
+        {
+          "overflow": false,
+          "text": "The personal part gives it direction."
+        },
+        {
+          "overflow": false,
+          "text": "Think about the space around it."
+        },
+        {
+          "overflow": false,
+          "text": "An idea is enough to begin."
+        },
+        {
+          "overflow": false,
+          "text": "Considered together. Made personal."
+        },
+        {
+          "overflow": false,
+          "text": "Clear choices. A considered conversation."
+        },
+        {
+          "overflow": false,
+          "text": "A closer look."
+        },
+        {
+          "overflow": false,
+          "text": "Let\u00e2\u20ac\u2122s make it meaningful."
+        }
+      ],
+      "videoCount": 0,
+      "width": 320
+    }
+  ],
+  "studioResponsive": [
+    {
+      "bodyWidth": 1425,
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "bodyWidth": 753,
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "bodyWidth": 375,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "bodyWidth": 305,
+      "overflow": false,
+      "width": 320
+    }
+  ],
+  "browserChecks": [
+    "Keyboard table of contents and category expansion; all 15 category destinations and counts visible",
+    "Studio composition disclosure and placement navigation by keyboard",
+    "Zero-result image search retains current assignment; clear restores options",
+    "Hero phone crop control and final three doorway portrait frames inspected",
+    "Homepage reduced motion: zero active CSS animations; h1 and all 13 h2 headings visible",
+    "All three doorway images loaded; no captured homepage/Studio console errors or warnings"
+  ],
+  "protectedRecordsUnchanged": true,
+  "otherContentUnchanged": true,
+  "productionWrites": false,
+  "pushOrDeployment": false,
+  "optionalVideo": "deferred; metadata reviewed, footage and performance not approved",
+  "remaining": [
+    "C3-C5 implementation",
+    "C6 mobile loading and human/device acceptance",
+    "Independent/offsite recovery-key custody not verified",
+    "Sustained daily-backup history",
+    "Production editorial checks and separately authorized C7 release"
+  ],
+  "visualReceipt": "workspace outputs/CRAFT/c2-implementation.html"
+}

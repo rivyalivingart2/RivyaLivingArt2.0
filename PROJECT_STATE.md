@@ -1,3 +1,11 @@
+# Current continuation — C2 homepage and Studio image controls verified locally
+
+3 October 2026. Read `docs/redesign/CRAFT-C2-CHECKPOINT.md` and `CRAFT-CHECKPOINT.md`. C2 core work now includes detailed homepage styling, direct hero/doorway image assignment, independent crop controls and a composition review. The isolated save/preview/publish/recovery cycle passed through QA revision 46 with protected records and all other content unchanged. C2-05 optional video is deferred; do not call the entire phase or C0–C7 complete.
+
+Continue C3 collections, search, products and the complete inquiry journey, then C4/C5. Keep all changes local until a new explicit push-main request; use a detailed PR at that time. Preserve social content, business facts, products/forms/galleries, scraper, private inquiries, drafts and history. No old-product transfer. Mobile performance, human/device checks, offsite key custody, daily-backup history and production editorial/release acceptance remain separate open gates. The C2 screenshot receipt is workspace `outputs/CRAFT/c2-implementation.html`.
+
+---
+
 # Current continuation — CRAFT visual plan and first local implementation
 
 3 October 2026. Read `docs/redesign/CRAFT-CHECKPOINT.md` and the workspace `outputs/CRAFT/Rivya-CRAFT-Visual-Report.html`. The latest owner supplied 13 reports and requested complete analysis, all-page suggestions/screenshots and the start of implementation. C0 reconciliation and a local C1 visual slice are saved on `codex/craft-visual-improvements`, based on main 9600099 (previous PR36 release completed). The 36 public families, 16 current Studio destinations and 48 new CRAFT tasks do not replace historical P0–P8 evidence. Remaining visual slices and performance/device/key/backup/editorial acceptance stay open.

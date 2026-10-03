@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-03T11:23:40.397Z",
+  "sourceFolder": "1wbayNeBOmE-q_MELHJCEax3YyEUyllLL",
+  "candidates": [
+    {
+      "id": "11iY9mANJFy4EZf54HgZ5NJ_g4AzDBLBX",
+      "title": "hero-pour-loop-poster.jpg",
+      "bytes": 98481,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "id": "1yrs4sM_KI-YxGt1INKKyTTrAnES41f9l",
+      "title": "hero-pour-loop-web.mp4",
+      "bytes": 4107569,
+      "mime_type": "video/mp4"
+    },
+    {
+      "id": "1LGYrxxEfbh0-7ptaJJjaRYeIfRipQi4Y",
+      "title": "hero-pour-loop.mp4",
+      "bytes": 4129243,
+      "mime_type": "video/mp4"
+    },
+    {
+      "id": "1xau1Vdp2i2QsD77eFvc7duYfDzrOBWL4",
+      "title": "hero-pour-loop.webm",
+      "bytes": 1649274,
+      "mime_type": "video/webm"
+    },
+    {
+      "id": "1oFjSX175IOeYr7SS7MbTp3yYxYCWL2Yt",
+      "title": "pour-swirl-loop-poster.jpg",
+      "bytes": 42308,
+      "mime_type": "image/jpeg"
+    },
+    {
+      "id": "1yxWTFd9reK9w1SJkbpX9TaR7L3cF7Qf8",
+      "title": "pour-swirl-loop-web.mp4",
+      "bytes": 4297269,
+      "mime_type": "video/mp4"
+    },
+    {
+      "id": "1k35azlksKOZogUxKqc4LpcE5UTUF6vQX",
+      "title": "pour-swirl-loop.mp4",
+      "bytes": 4318943,
+      "mime_type": "video/mp4"
+    },
+    {
+      "id": "1Nleyp0OMVdFMbZrdwYGjOGjKPM3hMtyD",
+      "title": "pour-swirl-loop.webm",
+      "bytes": 1547353,
+      "mime_type": "video/webm"
+    }
+  ],
+  "decision": "Keep reviewed static hero for this phase; no video request or autoplay added. Optional video integration remains deferred.",
+  "fullFootageReviewed": false,
+  "remaining": [
+    "Full footage and rights/provenance review",
+    "User-played controls and poster workflow",
+    "Reduced-motion, offscreen pause and data-saving behavior",
+    "Measured mobile loading and transfer budgets before activation"
+  ]
+}
