@@ -1,0 +1,131 @@
+{
+  "at": "2026-10-03T12:47:13.472Z",
+  "checks": [
+    "Published QA route and revision /journal",
+    "Published QA route and revision /process",
+    "Published QA route and revision /our-story",
+    "Published QA route and revision /privacy",
+    "Published QA route and revision /terms",
+    "Published QA route and revision /shipping-delivery",
+    "Published QA route and revision /returns-cancellations",
+    "Published QA route and revision /accessibility",
+    "Published QA route and revision /architects",
+    "Published QA route and revision /contact",
+    "Published QA route and revision /imprint",
+    "Published QA route and revision /materials-care",
+    "Published QA route and revision /faq",
+    "Published QA route and revision /journal/turning-a-wedding-memory-into-a-design-brief",
+    "Authenticated exact saved preview page:process",
+    "Anonymous saved preview denied page:process",
+    "Authenticated exact saved preview page:our-story",
+    "Anonymous saved preview denied page:our-story",
+    "Authenticated exact saved preview page:imprint",
+    "Anonymous saved preview denied page:imprint",
+    "Authenticated exact saved preview page:materials-care",
+    "Anonymous saved preview denied page:materials-care",
+    "Authenticated exact saved preview DB019",
+    "Anonymous saved preview denied DB019",
+    "Authenticated exact saved preview custom-page:072030e9-fb1a-4485-8ede-612acd8297b4",
+    "Anonymous saved preview denied custom-page:072030e9-fb1a-4485-8ede-612acd8297b4",
+    "Alias /about resolves exactly",
+    "Alias /materials resolves exactly",
+    "Alias /care resolves exactly",
+    "Alias /blog resolves exactly",
+    "Unavailable or retired route /p/c4-not-a-registered-page",
+    "Unavailable or retired route /portfolio/c4-not-an-approved-project",
+    "Unavailable or retired route /workshops",
+    "Unavailable or retired route /shop/wishlist",
+    "Portfolio shows honest empty state",
+    "QA Imprint uses protected phone and email"
+  ],
+  "publishedQaRoutes": [
+    {
+      "route": "/journal",
+      "version": 4
+    },
+    {
+      "route": "/process",
+      "version": 18
+    },
+    {
+      "route": "/our-story",
+      "version": 8
+    },
+    {
+      "route": "/privacy",
+      "version": 1
+    },
+    {
+      "route": "/terms",
+      "version": 3
+    },
+    {
+      "route": "/shipping-delivery",
+      "version": 1
+    },
+    {
+      "route": "/returns-cancellations",
+      "version": 1
+    },
+    {
+      "route": "/accessibility",
+      "version": 1
+    },
+    {
+      "route": "/architects",
+      "version": 3
+    },
+    {
+      "route": "/contact",
+      "version": 1
+    },
+    {
+      "route": "/imprint",
+      "version": 5
+    },
+    {
+      "route": "/materials-care",
+      "version": 9
+    },
+    {
+      "route": "/faq",
+      "version": 10
+    },
+    {
+      "route": "/journal/turning-a-wedding-memory-into-a-design-brief",
+      "version": 1
+    }
+  ],
+  "savedPreviews": [
+    {
+      "record": "page:process",
+      "version": 18
+    },
+    {
+      "record": "page:our-story",
+      "version": 8
+    },
+    {
+      "record": "page:imprint",
+      "version": 5
+    },
+    {
+      "record": "page:materials-care",
+      "version": 9
+    },
+    {
+      "record": "DB019",
+      "version": 1
+    },
+    {
+      "record": "custom-page:072030e9-fb1a-4485-8ede-612acd8297b4",
+      "version": 3
+    }
+  ],
+  "productionImprint": {
+    "status": 404,
+    "unavailable": true,
+    "publicationVerified": false
+  },
+  "productionWrites": false
+}

@@ -1,3 +1,11 @@
+# Current continuation — C4 editorial presentation verified locally; live Imprint open
+
+3 October 2026. Read `docs/redesign/CRAFT-C4-CHECKPOINT.md`, the four `craft-c4-*.json` evidence files and `craft-c4-page-acceptance.csv`. C4 refines story/process/materials, architects/portfolio, journal/articles, FAQ/contact and policies while retaining all protected records and content. Missing journal/portfolio details now return real 404. Sixty responsive checks, twenty browser checks, thirty-six isolated HTTP assertions and 403 built-server tests pass.
+
+C4-05 is PARTIAL: isolated QA Imprint and exact preview work, but a fresh live read returns 404. Production factual approval, exact preview, publication, footer/public and recovery evidence remain open. Do not certify C4 or the full CRAFT plan as complete. Next is C5 Studio. C2 optional video and C6 performance, human/device, independent key custody, sustained backups and full production editorial acceptance remain open. Keep work local until another explicit push-main request, then use a detailed PR. Preserve products/forms/galleries, social/business facts, scraper, private inquiries, drafts and history. Review screenshots in workspace `outputs/CRAFT/c4-implementation.html`.
+
+---
+
 # Current continuation — C3 collections and inquiry journey verified locally
 
 3 October 2026. Read `docs/redesign/CRAFT-C3-CHECKPOINT.md` and its three `craft-c3-*.json` evidence files. C3 refines collection chapters, search, product/gallery presentation, saved pieces and the inquiry layout. Four isolated request types, shared private-reference and lost-response recovery checks passed. All protected records and every content entry matched the baseline. Production was not written.

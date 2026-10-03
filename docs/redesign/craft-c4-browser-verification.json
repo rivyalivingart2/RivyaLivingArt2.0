@@ -1,0 +1,732 @@
+{
+  "at": "2026-10-03T13:11:23.560Z",
+  "checks": [
+    {
+      "name": "Story chapter index works by keyboard",
+      "pass": true
+    },
+    {
+      "name": "Journal topic filter preserves address and count",
+      "pass": true
+    },
+    {
+      "name": "Journal search combines with selected topic",
+      "pass": true
+    },
+    {
+      "name": "Journal Back restores topic results",
+      "pass": true
+    },
+    {
+      "name": "Journal no-match state offers reset",
+      "pass": true
+    },
+    {
+      "name": "Journal keyboard pagination preserves URL",
+      "pass": true
+    },
+    {
+      "name": "Journal Back restores initial card count",
+      "pass": true
+    },
+    {
+      "name": "Article chapter anchor clears fixed navigation",
+      "pass": true
+    },
+    {
+      "name": "FAQ group is keyboard selectable with pressed state",
+      "pass": true
+    },
+    {
+      "name": "FAQ no-result state offers all questions",
+      "pass": true
+    },
+    {
+      "name": "FAQ reset restores all published questions",
+      "pass": true
+    },
+    {
+      "name": "FAQ answer opens by keyboard",
+      "pass": true
+    },
+    {
+      "name": "FAQ deep-linked answer opens after reload",
+      "pass": true
+    },
+    {
+      "name": "Contact retains exact canonical phone and email",
+      "pass": true
+    },
+    {
+      "name": "Policy print emulation keeps title and black text on white; site header hidden",
+      "pass": true
+    },
+    {
+      "name": "Hindi interface shows explicit editorial English fallback notice",
+      "pass": true
+    },
+    {
+      "name": "Language selection persists on editorial navigation",
+      "pass": true
+    },
+    {
+      "name": "Gujarati interface preserves published editorial English fallback",
+      "pass": true
+    },
+    {
+      "name": "Reduced-motion journal heading stays visible without CSS animation",
+      "pass": true
+    },
+    {
+      "name": "Materials print emulation keeps guidance on a white background",
+      "pass": true
+    }
+  ],
+  "layouts": [
+    {
+      "route": "/our-story",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/our-story",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/our-story",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/our-story",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/process",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/process",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/process",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/process",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/materials-care",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/materials-care",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/materials-care",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/materials-care",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/architects",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/architects",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/architects",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/architects",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/journal",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/journal",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/journal",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/journal",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/journal/turning-a-wedding-memory-into-a-design-brief",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/journal/turning-a-wedding-memory-into-a-design-brief",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/journal/turning-a-wedding-memory-into-a-design-brief",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/journal/turning-a-wedding-memory-into-a-design-brief",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/faq",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/faq",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/faq",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/faq",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/contact",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/contact",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/contact",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/contact",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/privacy",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/privacy",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/privacy",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/privacy",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/terms",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/terms",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/terms",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/terms",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/shipping-delivery",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/shipping-delivery",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/shipping-delivery",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/shipping-delivery",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/returns-cancellations",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/returns-cancellations",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/returns-cancellations",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/returns-cancellations",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/accessibility",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/accessibility",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/accessibility",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/accessibility",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/imprint",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/imprint",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/imprint",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/imprint",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    },
+    {
+      "route": "/portfolio",
+      "width": 1440,
+      "body": 1425,
+      "headings": true
+    },
+    {
+      "route": "/portfolio",
+      "width": 768,
+      "body": 753,
+      "headings": true
+    },
+    {
+      "route": "/portfolio",
+      "width": 390,
+      "body": 375,
+      "headings": true
+    },
+    {
+      "route": "/portfolio",
+      "width": 320,
+      "body": 305,
+      "headings": true
+    }
+  ],
+  "renderedDesktopAndMobileChecks": [
+    {
+      "route": "/our-story",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "Art for the way you live."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/process",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "A piece, shaped together."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/materials-care",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "Texture, depth and everyday life."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/architects",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "A material partner for your vision."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/portfolio",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "The piece.The place. The story."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/journal",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "A closer look."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/journal/turning-a-wedding-memory-into-a-design-brief",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "Turning a Wedding Memory into a Design Brief"
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/faq",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "Your questions, considered."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/contact",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "Let’s begin a conversation."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/privacy",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "Your brief stays personal."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/terms",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "Clear from the beginning."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/shipping-delivery",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "A considered arrival."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/returns-cancellations",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "Clear choices when plans change."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/accessibility",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "A website for more people."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/imprint",
+      "body": 1425,
+      "headings": true,
+      "title": [
+        "Legal Imprint."
+      ],
+      "width": 1440
+    },
+    {
+      "route": "/our-story",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "Art for the way you live."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/process",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "A piece, shaped together."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/materials-care",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "Texture, depth and everyday life."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/architects",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "A material partner for your vision."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/portfolio",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "The piece.The place. The story."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/journal",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "A closer look."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/journal/turning-a-wedding-memory-into-a-design-brief",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "Turning a Wedding Memory into a Design Brief"
+      ],
+      "width": 390
+    },
+    {
+      "route": "/faq",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "Your questions, considered."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/contact",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "Let’s begin a conversation."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/privacy",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "Your brief stays personal."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/terms",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "Clear from the beginning."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/shipping-delivery",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "A considered arrival."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/returns-cancellations",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "Clear choices when plans change."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/accessibility",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "A website for more people."
+      ],
+      "width": 390
+    },
+    {
+      "route": "/imprint",
+      "body": 375,
+      "headings": true,
+      "title": [
+        "Legal Imprint."
+      ],
+      "width": 390
+    }
+  ],
+  "browserErrors": 0,
+  "performanceWarnings": [
+    "Existing journal image /media/product-hero-020-4x5.webp identified as a lazy LCP candidate; C6 performance acceptance remains open."
+  ],
+  "limitations": [
+    "Browser emulation, not physical-device or human screen-reader acceptance.",
+    "Print media emulation, not paper output or printer pagination.",
+    "Language selection and fallback behavior checked; human translation review remains open.",
+    "200% browser zoom not separately executed; 320 CSS-pixel reflow checked.",
+    "Exact saved-revision previews verified through authenticated QA HTTP. Browser Studio session expired; no authenticated browser preview screenshot claimed.",
+    "Production Imprint remains unavailable (404). No production writes."
+  ],
+  "productionWrites": false
+}
