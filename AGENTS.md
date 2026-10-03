@@ -1,3 +1,9 @@
+# Saved release candidate - draft PR 36, protected Preview READY
+
+3 October 2026. Draft PR https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/36 contains the complete P6/P7/P8 candidate. Read `docs/redesign/P8-FOLLOW-UP.md` and `p8-preview-receipt.json`. Six hosted HTTP checks pass for application source a14f161. Main is unchanged; the draft PR is held for the precise remaining performance, authenticated runtime, physical/device and key-custody gates. Backup schedule and receipt defects are repaired and the new Drive archive verified. Do not ask for a generic repeat approval, claim full acceptance, or create another PR for this same candidate.
+
+---
+
 # Current continuation - P8 follow-up candidate; technical release gates remain
 
 3 October 2026. The owner requested completing the remaining engineering, backups and authorized release, then delegated available actions. Read `docs/redesign/P8-FOLLOW-UP.md` and `docs/decisions/2026-10-03-release-follow-up.md`. Compact Studio record reads and public source reduction pass isolated regression checks. The paused backup automation is active with catch-up checks; same-day/idempotent receipt writing is repaired and a fresh remote backup verified. Prepare the detailed draft PR and protected Preview under the recorded instruction. Main/production publication remains held for failing performance and unresolved authenticated/device/key-custody evidence; do not claim full P7/P8 completion or repeat a generic approval question. Preserve all protected records, contacts, scraper and history. Earlier local-only and approval-pending statements below are historical.

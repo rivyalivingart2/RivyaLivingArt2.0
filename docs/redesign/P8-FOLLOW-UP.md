@@ -36,3 +36,8 @@ The existing production deployment remains `c94427de88d45a216fdf545840efef2f875e
 Receipts: `p8-editor-read-verification.json`, `p8-performance-mobile.json`, `p8-content-lifecycle.json`, `p8-backup-verified.json`, `p8-backup-schedule.json`, `p8-shared-preservation.json`. Root task harnesses: `work/p8-editor-check.mjs`, `p8-mobile-performance.mjs`, `p8-content-lifecycle.mjs`, `p8-backup.mjs`, `p8-backup-verify.mjs`; keep private configuration/download URLs outside Git. Existing source-projection harness was rerun after the change.
 
 The operator verifier uses `backup-receipts.mjs` next to its existing private configuration. A `.receipt-write.lock` left after an interrupted process must be investigated before removal; never discard a lock while a verifier is running. Keep historical receipts and the last good archive. See `P8-RELEASE-PACKET.md` for source/content rollback; no whole-database restoration is needed to revert these presentation changes.
+
+
+## Saved PR and hosted readback
+
+[Draft PR #36](https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/36) contains the full source/evidence candidate. Application source `a14f161a7bcc0d0489b2acffec1cb07d1fc5683f` built as protected Preview `dpl_2Aw9bL1EdyWxFRoK1Li9USQFUPct` (READY). Connected authenticated Vercel HTTP reads confirm the home, collection, product, Process and sign-in pages and anonymous Studio API denial. This is a server-rendered readback, not hosted browser performance acceptance. See `p8-preview-receipt.json`. Main remains `c94427de88d45a216fdf545840efef2f875e5789`; no main merge or production content publication.
