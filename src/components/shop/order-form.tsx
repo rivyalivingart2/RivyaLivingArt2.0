@@ -14,6 +14,8 @@ import {placeInquiry} from '@/app/actions/inquiry';
 import {readDraft,rememberDraft,forgetDraft,type Reference} from './order-draft';
 import s from './shop.module.css';
 import p from './detailed-pages.module.css';
+import c from './catalogue-journey.module.css';
+
 import {formatPrice,formErrorTarget} from '@/lib/product-presentation';
 const steps=['Your piece','Your details & references','Review'];
 type Props={product:ShopProduct;definition?:never}|{definition:InquiryDefinition;product?:never};
@@ -137,12 +139,13 @@ export function OrderForm(props:Props){
    if(!result.reference)throw Error();saved.current=true;forgetDraft(initial.schemaId);router.push('/inquiry/received?key='+encodeURIComponent(key)+'&continue=1');
   }catch{notify('We could not confirm the save. Editing is paused so retry sends the exact same brief. Your details are still here.',true);}finally{lock.current=false;setBusy(false);}
  }
- return <div className={s.formLayout}>
- <aside className={s.formAside}>{definition.product&&<div className={s.detailVisual}><Image src={definition.product.image} alt={definition.product.imageAlt||definition.title+' design visualization'} fill sizes="(max-width:780px) 100px, 340px"/></div>}<h2>{definition.title}</h2><p>{definition.subtitle}<br/>{definition.product?.tier==='personal'?formatPrice(definition.product.price):t('Price on request')}</p><p>{t("Final design, quotation and delivery are agreed with the atelier.")}</p><p className={s.help}>{t("Your unsaved brief is kept only in this tab’s temporary memory. Copy it before closing or reloading.")}</p><button type="button" className={s.textLink} onClick={()=>void copyBrief()}>{t("Copy my unsaved brief")}</button></aside>
- <form className={s.form} noValidate aria-busy={busy} onSubmit={e=>{e.preventDefault();if(step<2)next();else void submit();}}>
+ return <div className={s.formLayout+' '+c.briefLayout}>
+
+ <form className={s.form+' '+c.briefForm} noValidate aria-busy={busy} onSubmit={e=>{e.preventDefault();if(step<2)next();else void submit();}}>
  <noscript><p role="status">{t("JavaScript is needed to prepare a secure request. You can use the contact page to reach the atelier.")}</p></noscript>
  <div className={s.hidden} aria-hidden="true"><label>{t("Leave this field empty")}<input ref={honeypot} name="website" autoComplete="off" tabIndex={-1}/></label></div>
  {!ready&&<p className={s.serviceNotice} role="status">{t(reconnecting?'Preparing secure order saving…':'Saving is currently unavailable. You can prepare and copy your brief here. Nothing has been submitted.')}</p>}
+ <p className={c.requestContext}>{definition.title}{definition.product&&<span>{definition.product.id} · {definition.subtitle}</span>}</p>
  <ol className={s.stepper}>{steps.map((label,n)=><li key={label} aria-current={step===n?'step':undefined}><span>0{n+1}</span>{t(label)}</li>)}</ol>
  <div className={s.mobileStepper} aria-hidden="true"><div className={s.mobileStepHeader}><span className={s.mobileStepCounter}>{t("Step")} {step+1} / {steps.length}</span><span className={s.mobileStepName}>{t(steps[step])}</span></div><div className={s.mobileStepBar}><div className={s.mobileStepProgress} style={{width:`${((step+1)/steps.length)*100}%`}}/></div></div>
  <h2 ref={heading} tabIndex={-1}>{t(steps[step])}</h2><p className={p.stepContext}>{[t('Start with what you know. Use the available choices; the atelier will review feasibility with you.'),t('Add contact details and optional private references. Check spelling and your phone number before continuing.'),t('Review each answer before saving. Saving records your brief; you choose whether to send the prepared message.')][step]}</p><p className={s.help}>{t("Fields marked * are required. Ask for help where you are unsure; preferences are requests for review.")}</p>
@@ -163,5 +166,7 @@ export function OrderForm(props:Props){
  {<button type="button" className={s.textLink} disabled={editingLocked||refreshing||transferring} onClick={()=>void refreshSchema()}>{refreshing?t('Checking options…'):t('Check current options')}</button>}
  <div className={s.actions}>{step>0&&<button type="button" className={s.button+' '+s.outline} disabled={editingLocked} onClick={()=>go(step-1)}>{t("← Back")}</button>}<button type="submit" className={s.button} disabled={busy||transferring||!!review.length||!!replacement||(step===2&&!ready)}>{busy?t('Saving inquiry…'):step===2?(!ready?t('Saving temporarily unavailable'):sealed?t('Retry the same save'):t('Save order details →')):step===0?t('Your details →'):t('Review your brief →')}</button></div>
  {copyFallback&&<div><label className={s.field}>{t("Copy your unsaved brief")}<textarea ref={fallbackTextarea} readOnly rows={10} value={brief} onFocus={e=>e.currentTarget.select()}/></label><div style={{display:'flex',gap:'10px',margin:'8px 0 16px'}}><button type="button" className={s.button+' '+s.outline} style={{minHeight:'44px'}} onClick={()=>{if(fallbackTextarea.current){fallbackTextarea.current.focus();fallbackTextarea.current.select();fallbackTextarea.current.setSelectionRange(0,99999);}}}>{t("Select all text")}</button></div></div>}
- </form></div>;
+ </form>
+ <aside className={s.formAside+' '+c.briefSummary}>{definition.product&&<div className={s.detailVisual}><Image src={definition.product.image} alt={definition.product.imageAlt||definition.title+' design visualization'} fill sizes="(max-width:780px) 100px, 340px"/></div>}<h2>{definition.title}</h2><p>{definition.subtitle}<br/>{definition.product?.tier==='personal'?formatPrice(definition.product.price):t('Price on request')}</p><p>{t("Final design, quotation and delivery are agreed with the atelier.")}</p><p className={s.help}>{t("Your unsaved brief is kept only in this tab’s temporary memory. Copy it before closing or reloading.")}</p><button type="button" className={s.textLink} onClick={()=>void copyBrief()}>{t("Copy my unsaved brief")}</button></aside>
+ </div>;
 }

@@ -1,3 +1,11 @@
+# Current continuation — C3 collections and inquiry journey verified locally
+
+3 October 2026. Read `docs/redesign/CRAFT-C3-CHECKPOINT.md` and its three `craft-c3-*.json` evidence files. C3 refines collection chapters, search, product/gallery presentation, saved pieces and the inquiry layout. Four isolated request types, shared private-reference and lost-response recovery checks passed. All protected records and every content entry matched the baseline. Production was not written.
+
+Continue C4 editorial pages, then C5 Studio. C2 optional video and C6 performance, human/device, independent key custody, sustained backup history and production editorial acceptance remain open. Keep work local until another explicit push-main request; use a detailed PR then. Preserve social/business facts, products/forms/galleries, scraper, private inquiries and revision history. Review screenshots in workspace `outputs/CRAFT/c3-implementation.html`.
+
+---
+
 # Current continuation — C2 homepage and Studio image controls verified locally
 
 3 October 2026. Read `docs/redesign/CRAFT-C2-CHECKPOINT.md` and `CRAFT-CHECKPOINT.md`. C2 core work now includes detailed homepage styling, direct hero/doorway image assignment, independent crop controls and a composition review. The isolated save/preview/publish/recovery cycle passed through QA revision 46 with protected records and all other content unchanged. C2-05 optional video is deferred; do not call the entire phase or C0–C7 complete.

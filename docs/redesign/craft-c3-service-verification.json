@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-03T12:16:22.170Z",
+  "environment": "isolated QA only",
+  "checks": [
+    "Exactly one canonical inquiry per synthetic journey, including lost-response retry",
+    "All four saved answer and schema snapshots and prepared messages exist",
+    "One normalized private image linked to the large-piece inquiry",
+    "Authorized staff image response is private and uncached",
+    "Unauthenticated image read denied",
+    "Different initialized guest receives 404 without receipt data",
+    "Only the four named synthetic orders closed with history retained",
+    "Catalogue, forms, media associations and business settings match baseline",
+    "Every content record, draft, publication and social-copy record matches baseline"
+  ],
+  "syntheticInquiries": 4,
+  "privateReferences": 1,
+  "closedWithHistory": true,
+  "productionWrites": false
+}
