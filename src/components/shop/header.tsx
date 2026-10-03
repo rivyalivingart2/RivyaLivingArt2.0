@@ -30,7 +30,7 @@ function HeaderContent({pathname,navigation,locale,enabledLocales,copy}:{pathnam
  const active=(url:string)=>url.startsWith('/')&&(pathname===url||pathname.startsWith(url+'/'));
  const close=()=>setMenuPath(null);
  useEffect(()=>{
-  const desktop=window.matchMedia('(min-width: 981px)');
+  const desktop=window.matchMedia('(min-width: 1101px)');
   const closeOnDesktop=()=>{if(desktop.matches)setMenuPath(null);};
   const closeOutside=(event:PointerEvent)=>{if(collectionMenu.current&&!collectionMenu.current.contains(event.target as Node))collectionMenu.current.open=false;};
   document.addEventListener('pointerdown',closeOutside);

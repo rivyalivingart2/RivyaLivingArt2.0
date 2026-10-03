@@ -1,23 +1,24 @@
 import 'server-only';
 import {cache} from 'react';
-import {studioDb} from './studio-db';
+import {publishedSource} from './published-source';
 import {baselineContent,localizeContent,validContent,type ContentDocument} from './content-model';
 import type {Locale} from './site-settings-model';
-import {publishedMedia} from './published-media';
+import {validPageMedia} from './editorial-media-model';
+import type {PublicMedia} from './public-media';
 import {sharedCopyId} from './shared-copy-model';
 import {homepageDependencies} from './homepage-persistence';
 import {compileHomepageSnapshot} from './homepage-dependencies';
 import {compilePageSnapshot} from './page-dependencies';
 export type PublishedContentDocument=ContentDocument&{imagePosition?:string;publishedRevision?:number};
 /** Reads only durable published revisions. Source candidates never become a public fallback. */
-export const publishedContent=cache(async(locale:Locale='en'):Promise<PublishedContentDocument[]>=>{
- const sql=studioDb();
- const [rows,images,dependencies]=await Promise.all([
-  sql`SELECT content_key,kind,route,published-'pageSnapshot' AS published,published_version FROM rivya_content WHERE visible=true AND published IS NOT NULL ORDER BY content_key`,
-  publishedMedia(),homepageDependencies()
- ]);
+export const publishedContent=cache(async(locale:Locale='en',route?:string):Promise<PublishedContentDocument[]>=>{
+ const [source,dependencies]=await Promise.all([publishedSource(),homepageDependencies()]);
+ const images=new Map<string,PublicMedia>();
+ for(const row of source.media)if(validPageMedia(row.document)&&row.key===row.document.path)images.set(row.key,row.document);
+ const rows=source.content.map(row=>({content_key:row.key,kind:row.kind,route:row.route,published:row.document as ContentDocument,published_version:row.version}));
  const routes=new Set<string>(),documents:PublishedContentDocument[]=[];
  for(const row of rows){
+  if(route!==undefined&&row.route!==route)continue;
   const original=row.published,version=Number(row.published_version);
   const d:ContentDocument=original?localizeContent(original,locale):original;
   if(!d||d.id===sharedCopyId||d.id!==row.content_key||d.route!==row.route||d.kind!==row.kind||!Number.isSafeInteger(version)||version<1||!validContent(original,baselineContent.find(b=>b.id===d.id))||routes.has(d.route))continue;
@@ -39,4 +40,4 @@ export const publishedContent=cache(async(locale:Locale='en'):Promise<PublishedC
  }
  return documents;
 });
-export async function publishedPage(route:string,locale:Locale='en'){return (await publishedContent(locale)).find(d=>d.route===route);}
+export async function publishedPage(route:string,locale:Locale='en'){return (await publishedContent(locale,route)).find(d=>d.route===route);}

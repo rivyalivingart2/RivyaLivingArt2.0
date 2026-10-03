@@ -10,14 +10,14 @@ import "./globals.css";
 
 const displayFont = localFont({
   src: [
-    { path: "../../public/fonts/instrument-serif-normal-400.ttf", weight: "400", style: "normal" },
-    { path: "../../public/fonts/instrument-serif-italic-400.ttf", weight: "400", style: "italic" },
+    { path: "../styles/fonts/instrument-serif-normal-400.woff2", weight: "400", style: "normal" },
+    { path: "../styles/fonts/instrument-serif-italic-400.woff2", weight: "400", style: "italic" },
   ],
   variable: "--font-instrument",
   display: "swap",
   adjustFontFallback: "Times New Roman",
 });
-const dataFont = localFont({src: "../../public/fonts/jetbrains-mono-normal-400.ttf", variable: "--font-jetbrains", display: "swap", preload: false});
+const dataFont = localFont({src: "../styles/fonts/jetbrains-mono-normal-400.woff2", variable: "--font-jetbrains", display: "swap", preload: false});
 const bodyFont = localFont({
   src: [
     { path: "../styles/fonts/dm-sans-latin-400-normal.woff2", weight: "400", style: "normal" },

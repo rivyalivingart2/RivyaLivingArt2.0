@@ -51,10 +51,10 @@ function Home({products,articles}:{products:ShopProduct[];articles:ContentDocume
 export async function ShopSite({route}:{route:string}){
  const locale=await publicLocale();
  const needsCatalogue=route==='/'||route.startsWith('/pieces/')||['/collectible-design','/memory-art','/personal-art','/search','/commission','/preserve','/personalize','/portfolio'].includes(route);
- const [products,documents,business]=await Promise.all([needsCatalogue?publishedProducts(locale):Promise.resolve([]),route==='/'||isDiscoveryRoute(route)?publishedContent(locale):Promise.resolve([]),publishedBusiness()]);let content:React.ReactNode;
+ const [products,documents,business]=await Promise.all([needsCatalogue?publishedProducts(locale):Promise.resolve([]),route==='/'||isDiscoveryRoute(route)?publishedContent(locale,route):Promise.resolve([]),publishedBusiness()]);let content:React.ReactNode;
  if(route==='/'){
   const home=documents.find(d=>d.id==='page:home'&&d.homepage&&d.homeSnapshot);
-  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={(await publishedCopy(locale)).values}/></>:<Home products={products} articles={documents.filter(a=>a.kind==='article')}/>;
+  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={(await publishedCopy(locale)).values}/></>:<Home products={products} articles={(await publishedContent(locale)).filter(a=>a.kind==='article')}/>;
  }
  else if(isDiscoveryRoute(route)&&documents.some(d=>d.route===route)){content=<CollectionDocument document={documents.find(d=>d.route===route)!}/>;}
  else if(route.startsWith('/pieces/')){

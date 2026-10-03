@@ -124,7 +124,7 @@ export async function POST(request: NextRequest) {
     if(needsReason&&!reason)return json({error:'Add a reason for closing or moving this record back.'},400);
     const rows = await sql`WITH previous AS (
       SELECT o.id, o.status FROM rivya_studio_orders o WHERE o.id = ${body.id}::uuid AND o.version = ${body.version}
-      AND (${session.role==='admin'} OR EXISTS(SELECT 1 FROM rivya_inquiries i WHERE i.id=o.id AND i.assignee=${session.staffId}::uuid)) FOR UPDATE
+      AND NOT EXISTS(SELECT 1 FROM rivya_privacy_controls p WHERE p.order_id=o.id AND p.erased_at IS NOT NULL) AND (${session.role==='admin'} OR EXISTS(SELECT 1 FROM rivya_inquiries i WHERE i.id=o.id AND i.assignee=${session.staffId}::uuid)) FOR UPDATE
     ), changed AS (
       UPDATE rivya_studio_orders AS o SET status = ${body.status}, version = o.version + 1, updated_at = now()
       FROM previous AS p WHERE o.id = p.id AND o.version = ${body.version}

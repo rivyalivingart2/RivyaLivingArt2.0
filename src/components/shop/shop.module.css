@@ -77,7 +77,7 @@
 .site summary{min-height:44px}
 .footerBottom,.caption{font-size:13px}
 .footer a{display:inline-block;padding-block:5px}
-@media(max-width:980px){.nav{display:none}.mobileToggle{display:block}}
+@media(max-width:1100px){.nav{display:none}.mobileToggle{display:block}}
 @media(max-width:780px){.site{font-size:16px}.header .brand,.header .brand img{width:158px;height:45px}.header{padding-inline:20px;gap:10px}.headerActions{gap:6px}.headerActions>.navCta{display:none}.site h1,.site .pageIntro h1{font-size:clamp(42px,11vw,56px)}.site .hero h1{font-size:clamp(48px,12vw,72px)}.hero{min-height:620px}.pageIntro{padding:44px var(--gutter) 32px}.pageIntro p,.editorialCopy>p{font-size:16px}.card h3{font-size:27px}.card p,.card small{font-size:14px}.heroCopy>p{font-size:16px}.site h2{font-size:clamp(36px,9vw,48px)}.sectionHead p{font-size:16px}.dialog{padding:18px}.dialog:not(.mobileMenu){width:min(1100px,calc(100vw - 32px));max-height:88dvh}.dialogHead h2{font-size:28px}}
 @media(max-width:390px){.grid{grid-template-columns:1fr}.cardImage{aspect-ratio:5/6}.hero .actions{align-items:stretch;flex-direction:column}.hero .button{width:100%}}
 @media(prefers-reduced-motion:no-preference){.heroCopy{animation:arrive var(--motion-reveal) var(--motion-ease) both}.heroImage img{animation:settle var(--motion-reveal) var(--motion-ease) both}.card:focus-within .cardImage img{transform:scale(1.025)}}

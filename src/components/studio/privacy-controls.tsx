@@ -35,6 +35,7 @@ type State={
   canEraseReferences:boolean;
  };
  deletionAvailable:boolean;
+ pendingReferences:number;
  ledger?:LedgerEntry[];
 };
 
@@ -83,14 +84,15 @@ function PrivacyEditor({data,onReload}:{data:State;onReload:()=>Promise<void>}){
   if(!confirm("Are you sure you want to permanently erase this customer's personal details, reference photos, notes, and brief? This action is recorded in the minimal compliance erasure ledger and cannot be undone.")) return;
   setBusy(true);
   try{
-   await studioFetch('/api/studio/privacy',{
+   const result=await studioFetch('/api/studio/privacy',{
     id:r.id,
     action:'erase',
+    version:r.version,
     confirm:'confirm-erasure',
     reason:r.identityVerifiedAt?'customer_request':'retention_expiry'
    });
    await onReload();
-   setMessage('Customer data permanently erased. Ledger entry recorded.');
+   setMessage(result.erased?'Personal data erased. Previously downloaded copies still require operator removal.':'Personal fields removed and image access revoked. Private storage deletion needs another attempt.');
   }catch(e){
    setMessage(e instanceof Error?e.message:'Erasure failed.');
   }finally{
@@ -103,10 +105,11 @@ function PrivacyEditor({data,onReload}:{data:State;onReload:()=>Promise<void>}){
    <h2>Privacy & retention</h2>
    {r.erasedAt && (
     <div style={{padding:'12px',marginBottom:'16px',background:'rgba(22,101,52,0.2)',border:'1px solid #166534',borderRadius:'4px'}}>
-     <strong>✓ Customer personal data permanently erased</strong>
+     <strong>{data.pendingReferences?'Personal fields removed; private storage deletion pending':'Customer personal data erased from this service'}</strong>
      <p style={{margin:'4px 0 0 0',fontSize:'0.875rem'}}>Erased on: {formatBusinessTime(r.erasedAt)}. Compliance record preserved in minimal erasure ledger.</p>
     </div>
    )}
+   {r.erasedAt&&data.pendingReferences>0&&<p><button disabled={busy} onClick={()=>void handleErase()}>Retry private image deletion ({data.pendingReferences})</button></p>}
    <p>Record meaningful customer contact separately from internal notes. A documented hold or requested ongoing follow-up pauses policy deletion. Hold review dates do not automatically release a hold.</p>
    <fieldset disabled={busy || Boolean(r.erasedAt)}>
     <label>Last meaningful customer interaction (IST)<input type="datetime-local" value={contact} onChange={e=>setContact(e.target.value)}/></label>
@@ -120,7 +123,7 @@ function PrivacyEditor({data,onReload}:{data:State;onReload:()=>Promise<void>}){
 
    {data.deletionAvailable && !r.erasedAt && (
     <div style={{marginTop:'16px',padding:'12px',border:'1px solid #b91c1c',borderRadius:'4px',background:'rgba(185,28,28,0.08)'}}>
-     <h3 style={{margin:'0 0 8px 0',color:'#f87171'}}>Verified Customer Data Erasure (CR-04/18)</h3>
+     <h3 style={{margin:'0 0 8px 0',color:'#f87171'}}>Erase customer data</h3>
      <p style={{margin:'0 0 12px 0',fontSize:'0.875rem'}}>This inquiry is eligible for permanent customer data anonymization and reference purging.</p>
      <button style={{background:'#b91c1c',color:'#fff',borderColor:'#b91c1c'}} disabled={busy} onClick={()=>void handleErase()}>
       {busy?'Erasing…':'Permanently erase customer data'}

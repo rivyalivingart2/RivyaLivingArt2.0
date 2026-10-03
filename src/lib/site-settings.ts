@@ -1,17 +1,17 @@
 import 'server-only';
 import {cache} from 'react';
 import {cookies} from 'next/headers';
-import {studioDb} from './studio-db';
+import {publishedShellSource} from './published-shell-source';
 import {defaultSiteSettings,isLocale,validSiteSettings,publicJourneyLocales,type Locale,type SiteSettings} from './site-settings-model';
 export type {SiteSettings} from './site-settings-model';
 
 export const publishedSiteSettings=cache(async():Promise<{settings:SiteSettings;version:number}>=>{
  try{
-  const rows=await studioDb()`SELECT details,version FROM rivya_business_settings WHERE id=1`;
-  if(!rows.length)return {settings:defaultSiteSettings,version:0};
-  const details=rows[0].details as Record<string,unknown>;
+  const {business}=await publishedShellSource();
+  if(!business)return {settings:defaultSiteSettings,version:0};
+  const details=business.details as Record<string,unknown>;
   const site=details&&typeof details==='object'?details.site:undefined;
-  return {settings:validSiteSettings(site)?site:defaultSiteSettings,version:Number(rows[0].version)||0};
+  return {settings:validSiteSettings(site)?site:defaultSiteSettings,version:Number(business.version)||0};
  }catch{return {settings:defaultSiteSettings,version:0};}
 });
 
