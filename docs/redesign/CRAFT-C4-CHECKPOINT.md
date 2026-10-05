@@ -1,3 +1,11 @@
+# Current production follow-up — 5 October 2026
+
+C4 source shipped through PRs #37/#38. The earlier Imprint 404 is resolved: exact saved preview, public revision 2, footer destination and saved-draft recovery revision 3 are verified. Five fresh Drive editorial assets and nine pages of reviewed Hindi/Gujarati content are now published. Original products/media/business fingerprints are unchanged. Full remaining article, translation and gallery-crop review remains partial.
+
+See [FINAL-ACCEPTANCE-2026-10-05.md](FINAL-ACCEPTANCE-2026-10-05.md) for the current boundaries and receipt. The earlier QA-only page specifications and historical counts below are not evidence that those detailed chapters or every production image were published.
+
+---
+
 > Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
 
 # C4 — editorial pages and detailed reading

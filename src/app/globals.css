@@ -1,4 +1,5 @@
-@import "tailwindcss";
+/* Scan application sources; reports and registry examples are not UI entry points. */
+@import "tailwindcss" source("../");
 @import "tw-animate-css";
 @import "../styles/tokens.css";
 

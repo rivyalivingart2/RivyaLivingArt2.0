@@ -1,3 +1,29 @@
+# Current owner request — release and complete the pending acceptance work
+
+5 October 2026. The owner requested work on the table including release, hosted performance, indexing and remaining editorial work. Read `docs/decisions/2026-10-05-release-final-acceptance.md`. Release the existing acceptance candidate through a detailed PR into main, verify its exact checks and Vercel production, and apply Production-only indexing as previously approved. This supersedes the local-only hold for this candidate; no direct main push or bypass.
+
+Continue protected Studio editorial review/publication. Real human/device/field/business evidence cannot be manufactured. Product/form/gallery/business/social/customer protections and backup removal remain. Earlier entries below are historical where this instruction differs.
+
+---
+
+# Previous continuation — acceptance follow-up; source remains local
+
+5 October 2026. Read `docs/redesign/FINAL-ACCEPTANCE-2026-10-05.md` and `final-acceptance-evidence-2026-10-05.json`. The owner upgraded Neon to Launch; the former Free cap is historical. All 120 products, 131 original media/associations and business settings match baseline. The Imprint is published at revision 2 with recovery saved as draft 3; five fresh editorial assets and nine pages of Hindi/Gujarati copy were deliberately published and verified. Other translations/content/crop review remain partial.
+
+Local branch `codex/final-acceptance-traffic` reduces SQL payloads, scopes/splits CSS, fixes logo sizing and collection/journal preview markers, and prepares indexing. Broad QA now uses source-only loopback PostgreSQL, not the live Neon project. All seven local mobile medians pass; current hosted collection LCP is still 3.539s. Human phone/screen-reader and field evidence remain unavailable.
+
+PR #38 already released the prior base. New code stays local until another explicit push-main request, then use a detailed PR. The owner approved Production indexing with that next approved release, not now. Keep Preview/private routes closed. Preserve products/forms/galleries, business/social facts, customer records, drafts/history and manual sending. Backups/key custody remain removed. The prior status entries below are historical and superseded where this checkpoint differs.
+
+---
+
+# Current infrastructure status — shared database recovered; transfer allowance constrained
+
+5 October 2026. Preview/Production already share `neondb` in Neon `blue-haze-08978208` (historical name `rivya-studio-preview`). The owner accidentally deleted that database while consolidating. Neon point-in-time recovery to 07:29 UTC restored the existing connection, retaining an undo branch. Production and Preview homepages return 200; aggregate checks show 120 products, 47 content entries and 131 media records. Read `docs/redesign/shared-database-recovery-2026-10-05.json` and the current section of `SHARED-DATA-CONFIGURATION.md`.
+
+The latest usage panel showed 5.35 GB / 5 GB transfer; the billing period ends 1 November. QA uses a separate database on the same Neon project and shares its quota. Avoid large remote test suites, crawls, exports and full record inventories. Prefer local tests and small read-only checks. Do not delete the shared database or substitute QA/old Production data. No paid upgrade, new backup schedule, environment rewiring or source deployment was made. Existing backup-removal and protected-data boundaries remain; this was recovery of the deleted live data. PR38 already fulfilled the previous release request. Further source changes remain local until a new explicit push-main request.
+
+---
+
 # Current owner instruction — release C5/C6 through a detailed PR
 
 5 October 2026. The owner explicitly requests all updated files in main with a PR describing every change. Read `docs/decisions/2026-10-05-publish-c5-c6-main.md` and `docs/redesign/C5-C6-MAIN-RELEASE.md`. Push the accumulated C5 acceptance/C6 branch, check the final PR head and required checks/reviews, merge through the PR, then verify main and the existing Vercel Git deployment. No direct main push or review bypass.

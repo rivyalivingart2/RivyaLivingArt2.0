@@ -8,13 +8,17 @@ import {createHash} from 'node:crypto';
 
 assert.ok(process.env.RIVYA_QA_CONFIG_PATH,'Provide the existing isolated QA configuration-file path; never credentials on the command line.');
 export const qa=parseEnv(readFileSync(process.env.RIVYA_QA_CONFIG_PATH,'utf8'));
-assert.equal(new URL(qa.DATABASE_URL).pathname,'/rivya_qa_20260924');
-assert.equal(decodeURIComponent(new URL(qa.DATABASE_URL).username),'rivya_qa_runtime_20260924');
-assert.equal(qa.RIVYA_QA_BLOB_STORE_ID,'store_maHrpDDHXPR93N0w');
+const local=qa.RIVYA_QA_TARGET==='local',database=local?'rivya_acceptance_local':'rivya_qa_20260924',role=local?'rivya_local_qa':'rivya_qa_runtime_20260924';
+assert.equal(new URL(qa.DATABASE_URL).pathname,'/'+database);
+assert.equal(decodeURIComponent(new URL(qa.DATABASE_URL).username),role);
+assert.equal(qa.RIVYA_QA_BLOB_STORE_ID,local?'local-no-objects':'store_maHrpDDHXPR93N0w');
+if(local){assert.equal(new URL(qa.DATABASE_URL).hostname,'localhost');assert.equal(globalThis.__rivyaLocalSql,true,'Load the guarded local SQL transport before local QA');}
+else assert.ok(!new URL(qa.DATABASE_URL).hostname.includes('ep-delicate-silence-awjxadrd'),'Broad QA must not consume the shared live project allowance. Use local QA or a separately isolated project.');
 export const sql=neon(qa.DATABASE_URL);
 const identity=(await sql`SELECT current_database() AS database,current_user AS role`)[0];
-assert.equal(identity.database,'rivya_qa_20260924');assert.equal(identity.role,'rivya_qa_runtime_20260924');
-export const origin='http://127.0.0.1:4194';
+assert.equal(identity.database,database);assert.equal(identity.role,role);
+const port=Number(process.env.RIVYA_QA_PORT||4194);assert.ok(Number.isInteger(port)&&port>=1024&&port<=65535);
+export const origin='http://127.0.0.1:'+port;
 export const output=resolve('test-results/c6-acceptance');mkdirSync(output,{recursive:true});
 export function record(name,data){writeFileSync(resolve(output,name+'.json'),JSON.stringify(data,null,2));}
 export async function request(cookie,path,body,headers={}){

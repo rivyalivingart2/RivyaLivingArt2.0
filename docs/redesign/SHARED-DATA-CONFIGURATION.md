@@ -2,6 +2,25 @@
 
 # Shared Preview/Production data — configuration checkpoint
 
+## Current status — 5 October 2026, acceptance follow-up
+
+The owner upgraded Neon to Launch, verified in the signed-in console. The earlier 5 GB Free transfer cap is no longer the current plan constraint. Usage and cost still accumulate; this is not a promise of unlimited transfer. The agent made no paid-plan change.
+
+Preview and Production continue to share the recovered `neondb` in `blue-haze-08978208`. Broad QA now uses a dedicated loopback PostgreSQL database with source-only fixtures; it does not consume Neon transfer. Current C6 runners reject the former QA connection on the live Neon project. The local application candidate reduces list payloads inside PostgreSQL and sends a 32-character validation digest on warm published reads while preserving immediate withdrawal checks.
+
+Authenticated production content verification resumed and the Imprint is published. See `FINAL-ACCEPTANCE-2026-10-05.md` for the exact current scope and unresolved acceptance items. Application changes remain local until a new explicit push-main request. Indexing is authorized for the next approved release, not activated now.
+
+## Recovery incident — earlier on 5 October 2026 (historical)
+
+
+Preview and Production were already configured to share `neondb` in Neon project `blue-haze-08978208`, still named `rivya-studio-preview`. The Vercel Storage cards retain the original integration associations; their Preview/Production labels are not independent runtime database destinations. Both current environment markers remain `shared`. Sensitive URLs cannot be independently decrypted through the available Vercel API.
+
+The owner deleted `neondb` while trying to consolidate resources. Production then returned HTTP 500 with PostgreSQL error `3D000`. Read-only historic queries placed the deletion between 07:29 and 07:30 UTC on 5 October. Neon recovered the branch to the verified 07:29 UTC / 12:59 PM IST state and retained `main_old_2026-10-05T07:29:00Z` so this operation can be undone. The existing restricted runtime connection works again; aggregate checks found 120 products, 47 content entries and 131 media records. Production and protected Preview homepage requests both returned 200. This is a scoped recovery check, not a full preservation audit or authenticated Studio acceptance.
+
+The latest usage panel displayed **5.35 GB outbound transfer against a 5 GB monthly allowance**, while its delayed warning banner still showed 97.1%. The current billing period is 1 October–1 November 2026. After reloading Neon, the warning changed to **Limit reached** and the restored `neondb` appeared again. The transfer issue remains open; recovery or deleting an idle resource does not reset consumed transfer. The QA database is separate logically but resides in the same Neon project and uses the same allowance. Avoid broad hosted test/crawl/export loops; use local tests for ongoing work until a separate testing arrangement is approved. No paid upgrade, new database connection, recurring backup or application deployment was made.
+
+**Do not delete `neondb`, connect the app to QA, or disconnect the historical Vercel integration cards without preserving their environment variables.** The old Production project was shown inactive for 12 days. Read `shared-database-recovery-2026-10-05.json` for the sanitized incident and verification receipt. Earlier statuses below are historical.
+
 23 September 2026. Master revision 3.7. Owner-approved environment change after Phase 6; Phase 7 has not been executed. Production release is paused by the owner's latest free-only decision.
 
 ## Configured result

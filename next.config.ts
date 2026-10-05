@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Keep Studio-only styles out of public pages while retaining shared CSS chunks.
+  experimental: { cssChunking: 'graph' },
   images: {
     localPatterns: [{pathname:'/editorial/**',search:''},{pathname:'/media/**',search:''},{pathname:'/brand/**',search:''}],
     deviceSizes: [360,640,828,1080,1200,1440,1920],

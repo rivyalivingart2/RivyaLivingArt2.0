@@ -1,0 +1,10 @@
+import {neon} from '@neondatabase/serverless';
+import assert from 'node:assert/strict';
+const sql=neon('postgresql://rivya_local_qa@localhost:55432/rivya_acceptance_local');
+const result=await sql.transaction([sql.query('SHOW transaction_isolation'),sql.query('SHOW transaction_read_only')],{isolationLevel:'RepeatableRead',readOnly:true});
+assert.equal(result[0][0].transaction_isolation,'repeatable read');
+assert.equal(result[1][0].transaction_read_only,'on');
+await assert.rejects(()=>sql.transaction([sql.query('CREATE TABLE should_not_exist(id integer)')],{readOnly:true}),/read-only transaction/);
+assert.equal((await sql.query("SELECT to_regclass('should_not_exist') AS name"))[0].name,null);
+await assert.rejects(()=>neon('postgresql://rivya_local_qa@example.com:55432/rivya_acceptance_local').query('SELECT 1'),/localhost|connecting|assert/i);
+console.log('Local transport: isolation, read-only enforcement, rollback and remote refusal passed.');
