@@ -144,7 +144,7 @@ function PrivacyEditor({data,onReload}:{data:State;onReload:()=>Promise<void>}){
      ))}
     </div>
    )}
-   <p>Bhavya Gondaliya handles verified deletion requests, managed exports and backup expiry through the deletion procedure. Acknowledge requests within two business days; target completion within 30 calendar days after identity verification, explaining any lawful exception.</p>
+   <p>Bhavya Gondaliya handles verified deletion requests and managed exports through the deletion procedure. Acknowledge requests within two business days; target completion within 30 calendar days after identity verification, explaining any lawful exception.</p>
   </section>
  );
 }

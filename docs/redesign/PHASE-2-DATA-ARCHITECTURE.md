@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # Phase 2 — Foundation and data architecture
 
 Date: 23 September 2026. Implements P2.1–P2.7 of the approved master. This is its technical companion, not a replacement plan.

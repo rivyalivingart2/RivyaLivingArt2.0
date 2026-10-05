@@ -464,11 +464,11 @@
 
 .preservationNotice { background: var(--obsidian); color: var(--paper); padding: 16px; margin: 16px 0; border-left: 2px solid var(--gold); font-size: var(--text-sm); }
 /* SSENSE-Style Catalogue Overrides */
-.card { border: 1px solid var(--hairline); border-radius: 0; padding: 12px; background: transparent; transition: all 0.2s ease; }
+.card { border: 1px solid var(--hairline); border-radius: 0; padding: 12px; background: transparent; transition: background-color var(--motion-fast) ease, border-color var(--motion-fast) ease; }
 .cardImage { border: none; border-radius: 0; box-shadow: none; aspect-ratio: 3/4; }
 .card:hover { transform: none; background: rgba(255,255,255,0.02); }
 .card:hover .cardImage { border-color: transparent; box-shadow: none; }
-.card:hover img { filter: grayscale(50%) contrast(1.1); }
+.card:hover img { filter: none; }
 .header { border-bottom: 1px solid var(--hairline); background: transparent; backdrop-filter: blur(8px); }
 .nav { background: transparent; }
 .curatedGrid { gap: 0; border: 1px solid var(--hairline); }
@@ -512,6 +512,67 @@ html[dir="rtl"] .header,html[dir="rtl"] .footerTop,html[dir="rtl"] .footerBottom
 }
 
 .imprintContacts { margin: 1.5rem 0; }
+.linkArrow{display:inline-block;vertical-align:middle;flex-shrink:0;margin-inline-start:5px}
+
+/* CRAFT: shared composition for both the published homepage and its public fallback.
+   Native scrolling and visible first paint remain the baseline; no motion runtime. */
+.site .craftHome .hero{grid-template-columns:minmax(0,1fr);grid-template-areas:'scene';min-height:calc(100vh - var(--header-height));min-height:calc(100svh - var(--header-height));padding:0;align-items:stretch;background:var(--brand-midnight)}
+.craftHome .heroCopy{grid-area:scene;position:relative;z-index:2;width:60%;min-height:700px;max-width:880px;padding:clamp(52px,8vw,120px) var(--gutter) 56px;justify-content:flex-end;animation:none}
+.craftHome .heroCopy .eyebrow{margin-bottom:24px;max-width:36ch}
+.site .craftHome .hero h1{font-size:clamp(64px,7.5vw,112px);line-height:1.02;max-width:12ch;text-wrap:balance}
+.craftHome .heroCopy>p{color:var(--ivory);max-width:35ch;font-size:17px;line-height:1.65}
+.craftHome .heroCopy .actions{margin:28px 0 32px;gap:24px}
+.craftHome .heroAnnotation{margin-top:0;color:var(--stone)}
+.craftHome .heroVisual{grid-area:scene;min-height:0;width:100%;aspect-ratio:auto;max-height:none;position:relative;z-index:0;background:var(--brand-midnight)}
+.craftHome .heroVisual::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,rgba(5,12,16,.91),rgba(5,12,16,.68) 35%,rgba(5,12,16,.08) 75%),linear-gradient(0deg,rgba(5,12,16,.85),transparent 45%)}
+.craftHome .heroImage{z-index:-1}
+.craftHome .heroNote{position:absolute;z-index:1;bottom:56px;right:var(--gutter);width:28%;padding:0;background:none;align-items:flex-start;flex-direction:column;gap:18px}
+.craftHome .heroNote p{font-size:32px}
+.craftHome .heroNote a{margin:0;min-height:48px}
+.craftHome .curatedGrid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,calc((100% - 48px)/3));grid-template-columns:none;gap:24px;border:0;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding-inline:4px;padding:4px 4px 24px;scrollbar-color:var(--bronze) var(--surface);scrollbar-width:thin}
+.craftHome .curatedGrid>.card{scroll-snap-align:start;border:0;padding:0;margin:0!important;min-width:0}
+.craftHome .curatedGrid .cardImage{aspect-ratio:4/5}
+.craftHome .curatedGrid .card{background:none}
+.craftHome .categoryRow{min-height:96px;transition:background-color var(--motion-fast) ease;color:var(--ivory)}
+.craftHome .categoryRow:focus-visible,.craftHome .categoryRow:hover{background:var(--surface)}
+.craftHome .categoryRow:focus-visible h3{color:var(--bronze-highlight)}
+.productBreadcrumb{padding:24px var(--gutter) 0}
+.productBreadcrumb .breadcrumb{margin:0}
+.site .detail{padding-top:24px;gap:clamp(28px,5vw,72px)}
+.detailCopy{padding-top:0;position:static}
+.detailCopy>p{margin-top:18px;line-height:1.7}
+.detailCopy .actions{margin:24px 0}
+.form h2[tabindex],.form [id]{scroll-margin-top:var(--anchor-offset)}
+.formAside{top:var(--anchor-offset)}
+.site .button:active,.site button:active{transform:none}
+@media(min-width:1024px) and (min-height:760px){.detail>div:first-child{position:sticky;top:var(--anchor-offset)}}
+@media(max-width:980px){.craftHome .heroCopy{width:74%;padding-inline:32px}.craftHome .heroNote{right:32px;width:24%}.craftHome .heroNote p{font-size:26px}}
+@media(max-width:780px){
+ .craftHome .heroCopy{width:100%;min-height:calc(100svh - var(--header-height));padding:260px 24px 32px;max-width:none}
+ .site .craftHome .hero h1{font-size:clamp(46px,12vw,72px);max-width:12ch}
+ .craftHome .heroCopy .eyebrow{font-size:12px;margin-bottom:16px;max-width:30ch}
+ .craftHome .heroCopy>p{font-size:16px;max-width:34ch;margin-top:20px}
+ .craftHome .heroCopy .actions{flex-direction:row;gap:16px;margin:22px 0 24px;align-items:center}
+ .craftHome .heroVisual::after{background:linear-gradient(0deg,rgba(5,12,16,.99),rgba(5,12,16,.87) 45%,rgba(5,12,16,.05) 90%)}
+ .craftHome .heroNote{top:24px;bottom:auto;right:24px;width:calc(100% - 48px);align-items:flex-end;gap:4px;text-align:right}
+ .craftHome .heroNote p{font-size:25px}.craftHome .heroNote a{font-size:12px;min-height:48px}
+ .craftHome .curatedGrid{grid-auto-columns:minmax(0,84%);gap:18px}
+ .site :is(.button,.textLink,.saveButton,.mobileToggle,.searchTrigger),.site summary,.site .stepper button{min-height:48px}
+ .site .textLink{display:inline-flex;align-items:center;white-space:normal}
+ .site :is(.mobileToggle,.searchTrigger){min-width:48px}
+ .site .detail{padding-top:20px}.productBreadcrumb{padding-top:20px}.detailCopy .actions{gap:16px}
+ .formAside{position:static}
+}
+@media(prefers-reduced-motion:no-preference){
+ .craftHome .heroVisual img{animation:craftSettle 900ms var(--motion-ease) both}
+ .craftHome .heroCopy h1{animation:craftTitle 620ms var(--motion-ease) both}
+ .craftHome .categoryRow .linkArrow{transition:transform 180ms ease}
+ .craftHome .categoryRow:is(:hover,:focus-visible) .linkArrow{transform:translate(2px,-2px)}
+}
+@keyframes craftSettle{from{transform:scale(1.035)}to{transform:scale(1)}}
+@keyframes craftTitle{from{transform:translateY(12px)}to{transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.craftHome .curatedGrid{grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible}.craftHome .heroCopy h1{transform:none}}
+@media(prefers-reduced-motion:reduce) and (max-width:780px){.craftHome .curatedGrid{grid-template-columns:minmax(0,1fr)}}
 .imprintContacts > div { display: grid; grid-template-columns: minmax(6rem, 1fr) minmax(0, 3fr); gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--border); }
 .imprintContacts dt { font-weight: 600; }
 .imprintContacts dd { margin: 0; overflow-wrap: anywhere; }

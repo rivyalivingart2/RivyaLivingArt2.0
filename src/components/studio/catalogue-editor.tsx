@@ -216,7 +216,15 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           </div>
 
           
-          <div className={s.tabs} role="tablist" aria-label="Product editor sections" style={{ display: 'flex', gap: '10px', marginBottom: '20px', borderBottom: '1px solid #ffffff20', paddingBottom: '10px', overflowX: 'auto', flexWrap: 'nowrap', WebkitOverflowScrolling: 'touch' }}>
+          <div className={s.tabs} role="tablist" aria-label="Product editor sections" onKeyDown={event=>{
+            if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+            const tabs=Array.from(event.currentTarget.querySelectorAll<HTMLButtonElement>('[role="tab"]'));
+            const index=tabs.indexOf(event.target as HTMLButtonElement);
+            if(index<0)return;
+            event.preventDefault();
+            const next=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+(event.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;
+            tabs[next].focus();tabs[next].click();
+          }}>
             {([
               ['general','General Details'],
               ['details','Story & Specs'],
@@ -229,10 +237,12 @@ export function CatalogueEditor({admin}:{admin:boolean}){
                 key={value}
                 type="button"
                 role="tab"
+                id={`product-editor-tab-${value}`}
+                tabIndex={activeTab===value?0:-1}
                 aria-selected={activeTab===value}
                 aria-controls={`product-tab-${value}`}
                 aria-label={tabIssues[value].length?`${label}, ${tabIssues[value].length} issue${tabIssues[value].length===1?'':'s'}`:label}
-                style={{ padding: '8px 16px', background: activeTab === value ? '#d4b18d' : 'transparent', color: activeTab === value ? '#0b1728' : 'inherit', border: tabIssues[value].length ? '1px solid var(--error-text)' : '1px solid #d4b18d', borderRadius: '4px', whiteSpace: 'nowrap' }}
+                data-has-issues={tabIssues[value].length>0}
                 onClick={()=>setActiveTab(value)}
               >
                 {label}{tabIssues[value].length?` · ${tabIssues[value].length}`:''}
@@ -249,7 +259,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           )}
 
           <fieldset disabled={!editing}>{activeTab === 'general' && (
-          <div id="product-tab-general" role="tabpanel" className={s.grid}>
+          <div id="product-tab-general" role="tabpanel" aria-labelledby="product-editor-tab-general" tabIndex={0} className={s.grid}>
             <label>Name<input id="products-field-name" value={entry.product.name} maxLength={100} required onChange={e=>change({name:e.target.value})}/></label>
             <label>Subtitle<input id="products-field-subtitle" value={entry.product.subtitle} maxLength={120} required onChange={e=>change({subtitle:e.target.value})}/></label>
             <label>Public address<input value={entry.product.slug} disabled={!entry.product.id.startsWith('RLA-')||entry.version>0} onChange={e=>change({slug:e.target.value})}/></label>
@@ -264,14 +274,14 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           </div>
           )}
           {activeTab === 'details' && (
-          <div id="product-tab-details" role="tabpanel" className={s.grid}>
+          <div id="product-tab-details" role="tabpanel" aria-labelledby="product-editor-tab-details" tabIndex={0} className={s.grid}>
             <label>Design dimensions<input value={entry.product.dimensions||''} maxLength={200} onChange={e=>change({dimensions:e.target.value||undefined})}/></label>
             <label>Materials<input value={entry.product.material||''} maxLength={300} onChange={e=>change({material:e.target.value||undefined})}/></label>
             <label className={s.wide}>Product story<textarea id="products-field-story" value={entry.product.story} maxLength={1800} rows={7} required onChange={e=>change({story:e.target.value})}/></label>
           </div>
           )}
           {activeTab === 'images' && (
-          <div id="product-tab-images" role="tabpanel">
+          <div id="product-tab-images" role="tabpanel" aria-labelledby="product-editor-tab-images" tabIndex={0}>
           <div className={s.grid}>
             <label>Primary image
               <select id="products-field-image" value={entry.product.image} onChange={e=>change({image:e.target.value})}><option value="">Choose a reviewed product image</option>
@@ -302,7 +312,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           </div>
           )}
           {activeTab === 'translations' && (
-          <section id="product-tab-translations" role="tabpanel" className={s.panel}>
+          <section id="product-tab-translations" role="tabpanel" aria-labelledby="product-editor-tab-translations" tabIndex={0} className={s.panel}>
            <h2>Product translations</h2>
            <p className={s.help}>Optional public-language overrides. Leave any field blank to use the English product text. Translations publish with this product revision.</p>
            <label>Language<select value={translationLocale} onChange={e=>setTranslationLocale(e.target.value as Locale)}>{locales.filter(code=>code!=='en').map(code=><option key={code} value={code}>{localeLabels[code]}</option>)}</select></label>
@@ -317,13 +327,13 @@ export function CatalogueEditor({admin}:{admin:boolean}){
           </section>
           )}
           </fieldset>{activeTab === 'history' && (
-          <div id="product-tab-history" role="tabpanel">
+          <div id="product-tab-history" role="tabpanel" aria-labelledby="product-editor-tab-history" tabIndex={0}>
           <RevisionHistory<ShopProduct> key={entry.product.id+':'+entry.version} kind="product" entityKey={entry.product.id} currentVersion={entry.version} currentDocument={entry.product} onRestore={change}/>
           <ProductComparison draft={entry.product} published={entry.published}/>
           </div>
           )}
           <fieldset disabled={!editing}>{activeTab === 'customization' && (
-          <section id="product-tab-customization" role="tabpanel" className={s.fields}>
+          <section id="product-tab-customization" role="tabpanel" aria-labelledby="product-editor-tab-customization" tabIndex={0} className={s.fields}>
             <h2>Customization fields</h2>
             {hasReviewedCapabilities(entry.product.id)&&(
               <button type="button" disabled={busy} onClick={()=>{

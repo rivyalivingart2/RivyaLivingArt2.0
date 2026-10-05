@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # Owner guide — website and Studio editing
 
 This guide describes the implemented workflow. The P6/P7 candidate remains local; use the active QA preview for the new behavior until an authorized release. Existing products, galleries, contact facts and scraper behavior remain protected.
@@ -50,7 +52,7 @@ Select English, Gujarati or Hindi when enabled. Product names/options, contact v
 
 Translation JSON import is text only: dry run, inspect before/after, then apply to the unsaved draft. It cannot publish, change products/URLs/crops or bypass current-version checks. Save, exact locale preview and administrator publication still follow normal steps.
 
-## Inquiries, privacy and daily recovery checks
+## Inquiries and privacy
 
 Filters, list/board mode and the selected record stay in the URL where supported. Follow-ups use IST date presets. Record meaningful customer contact separately from internal notes. Assignment controls which editor can see private requests/images; reassignment revokes former access.
 
@@ -58,4 +60,4 @@ A saved request is not a confirmed order or a sent WhatsApp message. The custome
 
 Only an administrator handles a verified deletion request or eligible retention expiry. A hold, ongoing follow-up or open order blocks erasure. Review current controls and the irreversible confirmation. “Private storage deletion pending” means access is revoked but deletion is unfinished: use Retry and confirm pending count reaches zero. Never report completion from an API request that failed. Remove previously downloaded CSV copies under the seven-day procedure; metadata expiry cannot recall them.
 
-Check actual backup completion, age and failure/retention exceptions. The latest P7 backup is verified, but its previous gap was 52.21 hours. Verify an independent password-manager key copy and sealed offline copy by the approved private procedure; never send the key in chat, email, tickets or screenshots. Record status/date only. A configured schedule is not proof of a completed backup. Before any disaster restore is exposed, reconcile the latest erasure ledger and disable restored staff/sessions.
+Archive operations are no longer part of this project. Continue preserving source/content revisions and the privacy-erasure ledger. Previously downloaded CSVs still follow their existing deletion procedure.

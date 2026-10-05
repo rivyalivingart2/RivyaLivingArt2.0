@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # Owner continuation and release instruction — 3 October 2026
 
 The owner requested completion of the remaining performance targets, human screen-reader/physical-device checks, independent recovery-key copies, reliable daily backups and authorized production release. After being asked for the actual device/screen reader and independent password-manager/offline destinations, the owner replied: “do all of it by yourself”.

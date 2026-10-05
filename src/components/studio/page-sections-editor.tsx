@@ -5,7 +5,7 @@ import type {ContentDocument,ContentSection} from '@/lib/content-model';
 import {imprintContactId} from '@/lib/imprint-content';
 import {sharedCopyId,sharedCopyFields,copyFieldId} from '@/lib/shared-copy-model';
 import {EditorialBodyEditor} from './editorial-body-editor';
-import {CropFields} from './homepage-editor';
+import {CropFields} from './editorial-crop-fields';
 import type {PublicMedia} from '@/lib/public-media';
 import s from './workspace.module.css';
 export function PageSectionsEditor({document:d,initialSection,onChange,media}:{document:ContentDocument;initialSection?:string;onChange:(patch:Partial<ContentDocument>)=>void;media:PublicMedia[]}){

@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 Legacy visitors need correct destinations, Studio needs complete reviewed language journeys, and private-data removal must cover every stored answer and retry failed file deletion safely. This candidate adds those P6/P7 improvements, reduces public and Studio data transfers, and repairs backup receipt recording. The owner explicitly authorized releasing these verified improvements through this PR to main and Vercel production on 3 October. Full performance, human/device, key-custody and sustained-backup acceptance remain open and are disclosed below.
 
 ## Complete change scope

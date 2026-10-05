@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 > **Publication completed — 22 September 2026:** The owner authorized public publication.
 > GitHub implementation commit `d74ca0ee722011bd453b08bc8939892413b0bd86` on
 > `codex/sites-approved-design` was verified against the exact reviewed local Git tree.

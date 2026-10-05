@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # Phase 6 execution and publication authorization
 
 23 September 2026. After Phase 5, the owner instructed: “START TO WORK ON NEXT PHASE AND WANE IT COMPLETE PUSH ALL LETEST UPDATED DATA IN GITREPO” and supplied the existing RivyaLivingArt2.0 GitHub URL. This authorizes Phase 6 in the approved revision-3 plan and normal publication of current source and sanitized documentation to its work branch.

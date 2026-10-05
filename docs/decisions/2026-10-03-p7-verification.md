@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # P7 verification and P8 preparation decision
 
 The owner requested P4 performance acceptance and P7/P8. Local engineering, guarded isolated testing, read-only shared-source comparison, the existing approved encrypted-backup workflow, disposable recovery testing and release preparation were performed. The owner separately confirmed independent password-manager and sealed offline recovery-key copies are **not verified yet**. No key was requested in chat.

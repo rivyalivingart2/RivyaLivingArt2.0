@@ -1,4 +1,4 @@
--- Additive companion to phase2-order-contract.sql. Independent backup required.
+-- Additive companion to phase2-order-contract.sql. Verify the target identity and reconciled schema before an authorized migration.
 -- APPLIED in Phase 6 to the now-shared target; do not replay this historical migration.
 -- No build hook or seed invokes this file. Old evidence stays unknown.
 BEGIN;

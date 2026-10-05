@@ -21,7 +21,7 @@ export const shopPages:Record<string,{title:string;eyebrow:string;description?:s
 
 shopPages['/privacy'].sections.push(
  ['Unsubmitted and saved references','Images uploaded without a submitted inquiry become eligible for administrator cleanup after 24 hours; removal is not automatic at that deadline. Saved inquiries and their reference images do not currently have an automatic deletion deadline.'],
- ['Requests about your information','Email rivyalivingart2.0@gmail.com with your inquiry reference to request access, a correction or deletion. The atelier will review the request and may need to verify that it comes from the person concerned. Receipt expiry does not remove database records, private references or backup copies.'],
+ ['Requests about your information','Email rivyalivingart2.0@gmail.com with your inquiry reference to request access, a correction or deletion. The atelier will review the request and may need to verify that it comes from the person concerned. Receipt expiry does not remove database records or private references.'],
  ['Service protection','The service uses a protected identifier derived from the network address to limit repeated requests. Hosting and storage providers also process information needed to operate their services. Opening a map, email application or WhatsApp takes you to a separate service.']
 );
 shopPages['/architects'].sections.push(

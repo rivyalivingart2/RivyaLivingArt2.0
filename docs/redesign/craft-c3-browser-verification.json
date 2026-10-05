@@ -1,0 +1,326 @@
+{
+  "at": "2026-10-03T12:23:19.407Z",
+  "checks": [
+    {
+      "name": "Search combines collection/category/sort in URL",
+      "pass": true
+    },
+    {
+      "name": "Removing one chip preserves collection and sort",
+      "pass": true
+    },
+    {
+      "name": "Browser Back restores category, order and six results",
+      "pass": true
+    },
+    {
+      "name": "Applied chips remain visible when filters collapse",
+      "pass": true
+    },
+    {
+      "name": "Keyboard load-more displays 24 original records",
+      "pass": true
+    },
+    {
+      "name": "Back restores the first page size",
+      "pass": true
+    },
+    {
+      "name": "No-match search offers a reset",
+      "pass": true
+    },
+    {
+      "name": "Initial inquiry load has no autofocus jump",
+      "pass": true
+    },
+    {
+      "name": "Phone form precedes the product summary",
+      "pass": true
+    },
+    {
+      "name": "Required-field errors focus the first invalid answer",
+      "pass": true
+    },
+    {
+      "name": "Private reference upload completes in the isolated form",
+      "pass": true
+    },
+    {
+      "name": "Back retains the large-piece answers",
+      "pass": true
+    },
+    {
+      "name": "Forward retains contact and saved private reference",
+      "pass": true
+    },
+    {
+      "name": "Lost successful save response seals the brief and offers exact retry",
+      "pass": true
+    },
+    {
+      "name": "Retry reaches a saved receipt without automatic WhatsApp navigation",
+      "pass": true
+    },
+    {
+      "name": "Saved receipt survives reload",
+      "pass": true
+    },
+    {
+      "name": "Database confirms one inquiry after lost-response retry",
+      "pass": true
+    },
+    {
+      "name": "Memory preferences survive Back",
+      "pass": true
+    },
+    {
+      "name": "Memory inquiry saved to receipt",
+      "pass": true
+    },
+    {
+      "name": "Personal quantity bounds and focus",
+      "pass": true
+    },
+    {
+      "name": "Personal quantity retained through Back",
+      "pass": true
+    },
+    {
+      "name": "Personal inquiry saved to receipt",
+      "pass": true
+    },
+    {
+      "name": "Bespoke choices retained through Back",
+      "pass": true
+    },
+    {
+      "name": "Bespoke inquiry saved to receipt",
+      "pass": true
+    },
+    {
+      "name": "Gallery ArrowRight shows original second image",
+      "pass": true
+    },
+    {
+      "name": "Gallery End shows original third image",
+      "pass": true
+    },
+    {
+      "name": "Enlarged gallery preserves the entire image",
+      "pass": true
+    },
+    {
+      "name": "Gallery Escape restores focus to enlarge control",
+      "pass": true
+    },
+    {
+      "name": "Saved piece appears on saved collection",
+      "pass": true
+    },
+    {
+      "name": "Saved piece survives reload",
+      "pass": true
+    },
+    {
+      "name": "Removing the QA selection restores the empty saved state",
+      "pass": true
+    },
+    {
+      "name": "Keyboard chapter link reaches proportion guidance",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion keeps collection headings visible with no CSS animation",
+      "pass": true
+    },
+    {
+      "name": "Captured request events contain no automatic WhatsApp request",
+      "pass": true
+    }
+  ],
+  "layouts": [
+    {
+      "route": "/collectible-design",
+      "body": 1425,
+      "headings": true,
+      "image": true,
+      "width": 1440
+    },
+    {
+      "route": "/collectible-design",
+      "body": 753,
+      "headings": true,
+      "image": true,
+      "width": 768
+    },
+    {
+      "route": "/collectible-design",
+      "body": 375,
+      "headings": true,
+      "image": true,
+      "width": 390
+    },
+    {
+      "route": "/collectible-design",
+      "body": 305,
+      "headings": true,
+      "image": true,
+      "width": 320
+    },
+    {
+      "route": "/memory-art",
+      "body": 1425,
+      "headings": true,
+      "image": true,
+      "width": 1440
+    },
+    {
+      "route": "/memory-art",
+      "body": 753,
+      "headings": true,
+      "image": true,
+      "width": 768
+    },
+    {
+      "route": "/memory-art",
+      "body": 375,
+      "headings": true,
+      "image": true,
+      "width": 390
+    },
+    {
+      "route": "/memory-art",
+      "body": 305,
+      "headings": true,
+      "image": true,
+      "width": 320
+    },
+    {
+      "route": "/personal-art",
+      "body": 1425,
+      "headings": true,
+      "image": true,
+      "width": 1440
+    },
+    {
+      "route": "/personal-art",
+      "body": 753,
+      "headings": true,
+      "image": true,
+      "width": 768
+    },
+    {
+      "route": "/personal-art",
+      "body": 375,
+      "headings": true,
+      "image": true,
+      "width": 390
+    },
+    {
+      "route": "/personal-art",
+      "body": 305,
+      "headings": true,
+      "image": true,
+      "width": 320
+    },
+    {
+      "route": "/search",
+      "body": 1425,
+      "headings": true,
+      "width": 1440
+    },
+    {
+      "route": "/search",
+      "body": 753,
+      "headings": true,
+      "width": 768
+    },
+    {
+      "route": "/search",
+      "body": 375,
+      "headings": true,
+      "width": 390
+    },
+    {
+      "route": "/search",
+      "body": 305,
+      "headings": true,
+      "width": 320
+    },
+    {
+      "route": "/pieces/river-channel",
+      "body": 1425,
+      "headings": true,
+      "width": 1440
+    },
+    {
+      "route": "/pieces/river-channel",
+      "body": 753,
+      "headings": true,
+      "width": 768
+    },
+    {
+      "route": "/pieces/river-channel",
+      "body": 375,
+      "headings": true,
+      "width": 390
+    },
+    {
+      "route": "/pieces/river-channel",
+      "body": 305,
+      "headings": true,
+      "width": 320
+    },
+    {
+      "route": "/commission/customize",
+      "body": 1425,
+      "headings": true,
+      "width": 1440
+    },
+    {
+      "route": "/commission/customize",
+      "body": 753,
+      "headings": true,
+      "width": 768
+    },
+    {
+      "route": "/commission/customize",
+      "body": 375,
+      "headings": true,
+      "width": 390
+    },
+    {
+      "route": "/commission/customize",
+      "body": 305,
+      "headings": true,
+      "width": 320
+    },
+    {
+      "route": "/saved-pieces",
+      "body": 1425,
+      "headings": true,
+      "width": 1440
+    },
+    {
+      "route": "/saved-pieces",
+      "body": 753,
+      "headings": true,
+      "width": 768
+    },
+    {
+      "route": "/saved-pieces",
+      "body": 375,
+      "headings": true,
+      "width": 390
+    },
+    {
+      "route": "/saved-pieces",
+      "body": 305,
+      "headings": true,
+      "width": 320
+    }
+  ],
+  "networkEventsReviewed": 122,
+  "scope": "Local app and isolated QA. Emulation, not human/device acceptance.",
+  "warning": "Next.js reported lazy LCP candidate for the original product image on saved pieces. Full performance acceptance remains C6."
+}

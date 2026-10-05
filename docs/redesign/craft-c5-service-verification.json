@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-03T13:57:32.674Z",
+  "checks": [
+    "Authenticated QA read /api/studio/workspace",
+    "Anonymous access denied /api/studio/workspace",
+    "Authenticated QA read /api/studio/orders",
+    "Anonymous access denied /api/studio/orders",
+    "Authenticated QA read /api/studio/content?view=editor",
+    "Anonymous access denied /api/studio/content?view=editor",
+    "Authenticated QA read /api/studio/media",
+    "Anonymous access denied /api/studio/media",
+    "Authenticated QA read /api/studio/editorial-assets",
+    "Anonymous access denied /api/studio/editorial-assets",
+    "Authenticated QA read /api/studio/operations?view=activity",
+    "Anonymous access denied /api/studio/operations?view=activity",
+    "Authenticated QA read /api/studio/operations?view=settings",
+    "Anonymous access denied /api/studio/operations?view=settings",
+    "Invalid inquiry filter rejected sort=price",
+    "Invalid inquiry filter rejected from=2026-02-30",
+    "Invalid inquiry filter rejected page=1.2",
+    "Catalogue, media, business, content, inquiries and orders match baseline"
+  ],
+  "protectedRecordsUnchanged": true,
+  "allContentEntriesUnchanged": true,
+  "inquiriesUnchanged": true,
+  "ordersUnchanged": true,
+  "productionWrites": false
+}

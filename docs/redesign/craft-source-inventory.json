@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Rivya_Full_Implementation_Guide (1).pdf",
+    "sha256": "631c133108e302cb168e435d0c4e7749b2df82fe1dc163c8a2e33ecee8f2cb62",
+    "bytes": 3135445,
+    "pages": 5
+  },
+  {
+    "name": "Rivya_Full_Implementation_Guide (2).md",
+    "sha256": "f9a2b235115d6633c47de44cf536a1115843cae393efdbbabdd2562305ef4726",
+    "bytes": 10055
+  },
+  {
+    "name": "Rivya_Full_Implementation_Guide (1).md",
+    "sha256": "f9a2b235115d6633c47de44cf536a1115843cae393efdbbabdd2562305ef4726",
+    "bytes": 10055,
+    "duplicateOf": "Rivya_Full_Implementation_Guide (2).md"
+  },
+  {
+    "name": "RivyaLivingArt-CRAFT-Visual-Improvement-Prompt.md",
+    "sha256": "27d4737cc1c6e8a5b6f4120963d9fcc351a6aa0e265006a7e63726664ad5d0f3",
+    "bytes": 17453
+  },
+  {
+    "name": "Rivya-Visual-Review-Companion.pdf",
+    "sha256": "4d97f1761a0be3a8354f216f8aa73d5506a8e10124e40fb5069cadcf26b65042",
+    "bytes": 13782413,
+    "pages": 11
+  },
+  {
+    "name": "Rivya_Full_Implementation_Guide.md",
+    "sha256": "f9a2b235115d6633c47de44cf536a1115843cae393efdbbabdd2562305ef4726",
+    "bytes": 10055,
+    "duplicateOf": "Rivya_Full_Implementation_Guide (2).md"
+  },
+  {
+    "name": "Rivya_Full_Implementation_Guide.pdf",
+    "sha256": "631c133108e302cb168e435d0c4e7749b2df82fe1dc163c8a2e33ecee8f2cb62",
+    "bytes": 3135445,
+    "duplicateOf": "Rivya_Full_Implementation_Guide (1).pdf"
+  },
+  {
+    "name": "table.csv",
+    "sha256": "c783e90583c8a277a58db119515a7281bb523b88eb6a7682a685518a35f8a06a",
+    "bytes": 684
+  },
+  {
+    "name": "Rivya_Design_Report.html",
+    "sha256": "886e9ae807debdc121f02d69eba5b740de6452a629d0f777b1a3fe66c1db653c",
+    "bytes": 10002
+  },
+  {
+    "name": "Rivya_Craft_Prompt.md",
+    "sha256": "29493d4f6c792bc7ddabd46a27b45f736e9833d081257de1383feebe37630fad",
+    "bytes": 7613
+  },
+  {
+    "name": "Rivya_Design_Report.pdf",
+    "sha256": "7ea5cd2d05f9b4e633ee8379542454eadc287875c46d94d1f7044547aa63f732",
+    "bytes": 9104916,
+    "pages": 8
+  },
+  {
+    "name": "Rivya_Living_Art_Implementation_Plan.pdf",
+    "sha256": "aa7d67d7c865276fd3bc9daf4dc9c59d738642ffbd358c00b59f0c70b0b95b5b",
+    "bytes": 1750407,
+    "pages": 33
+  },
+  {
+    "name": "Rivya_Living_Art_Implementation_Plan.md",
+    "sha256": "f8dfe49925d72fa336aba36c02f4966c1ddfcf6eead623ce1f77d51bd1d2750d",
+    "bytes": 70673
+  }
+]

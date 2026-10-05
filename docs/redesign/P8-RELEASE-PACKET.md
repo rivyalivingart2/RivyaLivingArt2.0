@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 > Current release authority (3 October 2026): the owner now explicitly requests main through PR #36 and Vercel production after best-available fixes/checks. See P8-FINAL-RELEASE-CHECKS.md and docs/decisions/2026-10-03-authorized-main-production.md. Draft-only holds below are historical; unresolved acceptance evidence remains accurately open.
 
 > Update, 3 October 2026: see [P8-FOLLOW-UP.md](P8-FOLLOW-UP.md) for the owner release instruction, smaller Studio reads, repaired backup scheduling/receipts, fresh verification and remaining gates. The source candidate is being prepared as a detailed draft PR; main/production remain held. Earlier authorization/local-only statements below are historical.
@@ -36,8 +38,8 @@ The complete changed-file register is `p8-change-register.csv`, compared against
 
 1. **Performance:** final lab desktop 6/8 and throttled mobile 1/15 meet a 2.5s LCP comparison. Mobile menu/board durations include values above 200ms. Profile a candidate in the intended hosting/storage region and reduce payload/work before acceptance. Field p75 is unavailable; do not claim Core Web Vitals passed.
 2. **Accessibility/design:** human screen-reader tasks, physical mobile checks, manual contrast items and remaining per-family visual acceptance. Automated/keyboard checks and section registers supplement them.
-3. **Recovery:** verify independent password-manager and sealed offline key copies without sharing the key; close the missed daily-backup/RPO gap. The owner answered “Not verified yet.” Fresh remote backup and controlled service restore are recorded, not a lost-computer recovery guarantee.
-4. **Runtime preparation:** verify actual deployed runtime role privileges and required columns. The backup-source role's successful check is not runtime proof. Apply additive schema/grants deliberately only under the authorized release operation, after a current verified backup.
+3. **Revision recovery:** preserve destination draft/publication versions and source history. Archive operations and key-copy tasks were removed by the owner on 5 October 2026; they are no longer release gates.
+4. **Runtime preparation:** verify actual deployed runtime role privileges and required columns. A different role's successful check is not runtime proof. Apply additive schema/grants deliberately only under the exact authorized release operation.
 5. **Content/facts:** review current destination drafts and destination media IDs; supply or explicitly keep unsupplied business/legal facts as content-needed. Review editorial translations. Never import the QA database or its UUIDs.
 6. **Owner release instruction:** a new explicit push-main request, then detailed PR checks/merge. Resolve production editorial publication scope separately if the instruction only covers code.
 
@@ -47,8 +49,8 @@ This packet does not request a production approval while required technical chec
 
 1. Confirm this exact branch/commit set, intended scope and repository; compare with current main and keep later unrelated edits separate. Refresh the full change register and PR description.
 2. Confirm runtime configuration and source identities without printing credentials. Keep indexing off unless an explicit indexing decision exists. No scheduler, scraper, synchronization, external messaging, product import or service activation is part of this release.
-3. Create and verify a fresh encrypted backup. Preserve the last good/release archives. Record the latest independent erasure ledger and destination draft/publication versions.
-4. Inspect schema. `scripts/phase11-erasure-engine.sql` supplies the existing ledger/export tables and `erased_at`; its presence in a backup does not verify all deployed columns. Apply only missing authorized schema, then `scripts/p7-erasure-runtime-grants.sql` for the actual restricted runtime role. The latter grants only the required table/column operations. Do not put migrations or owner credentials into the app build. Do not apply the QA role name to production.
+3. Record the current erasure-ledger state and destination draft/publication versions. Preserve existing source and content history.
+4. Inspect schema. `scripts/phase11-erasure-engine.sql` supplies the existing ledger/export tables and `erased_at`; its presence in source does not verify all deployed columns. Apply only missing authorized schema, then `scripts/p7-erasure-runtime-grants.sql` for the actual restricted runtime role. The latter grants only the required table/column operations. Do not put migrations or owner credentials into the app build. Do not apply the QA role name to production.
 5. Under the explicit push request, push the `codex/` branch, open a detailed PR into main, attach it to this chat, complete required checks/review and merge through the PR. No direct main push, force push or review bypass. Existing Git deployment triggers remain unchanged.
 6. Wait for the intended deployment to be READY and confirm its Git SHA, environment, domain and source content versions. Build readiness alone is insufficient.
 7. Perform public/staff readbacks listed below. Use isolated resources for all synthetic submissions, uploads, destructive erasure and restore tests. A shared Preview is not isolation.
@@ -78,7 +80,7 @@ Canonical contacts remain **+91 8320404132** and **rivyalivingart2.0@gmail.com**
 | Privacy | Readiness/eligibility state and intended grants confirmed; no production erasure as a smoke test |
 | Metadata | Canonical final www host, private noindex/no-store, no fake indexability or hreflang activation |
 | Performance | Same recorded lab profile on the deployed candidate; later field p75 once eligible data exists |
-| Recovery | Preserved prior source/content revisions and current encrypted backup/ledger |
+| Recovery | Preserved prior source/content revisions and current erasure ledger |
 
 ## Application and editorial recovery
 
@@ -88,7 +90,7 @@ An application rollback must use the existing reviewed Git/Vercel procedure, wit
 
 Editorial rollback: compare the recorded prior revision, restore it into a **new draft**, preview against the actual destination, then publish deliberately and read back. Keep immutable originals/history; unpublishing an image or article can remove a current dependency while an older private saved preview intentionally keeps its captured appearance. Review destination availability before restoring links.
 
-Database disaster recovery: restore only into an isolated target first, disable intake and restored staff/sessions, reconcile the latest erasure ledger, replay deletion and finish storage cleanup before exposure. Verify counts/digests, application access and permission boundaries with new recovery credentials. Previously downloaded CSVs need operator removal; they are not revoked by metadata. Do not overwrite the current shared database or destroy later inquiries to recover a page.
+Retained-data privacy: project archive creation and restore drills are removed from scope. If a previously retained copy is separately restored, completed privacy erasures must still be reconciled before that data is exposed. Previously downloaded CSVs need operator removal; they are not revoked by metadata. Never overwrite the current shared database or destroy later inquiries to recover a page.
 
 ## Current handoff
 

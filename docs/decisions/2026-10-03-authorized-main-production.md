@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # Authorized main and production release - 3 October 2026
 
 The owner explicitly requested: "if possible solve all of this and after this put all updated thing in git main branch and put it in production in vercel". This supersedes the previous draft-only hold. Complete available engineering and checks, publish through existing detailed PR #36, and verify Vercel production. Do not create another PR for this same candidate or push directly to main. This is authorization to release verified improvements, not evidence that human/device, independent key custody, future daily-backup history or performance acceptance have passed.

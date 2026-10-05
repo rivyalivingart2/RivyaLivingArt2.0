@@ -26,6 +26,8 @@ const fixtureNames = new RegExp('demoFixtureKey|DEMO_FIXTURE|<(?:h1|h2|h3)[^>]*>
 const unknownRoutes = [
   '/not-an-existing-collection',
   '/pieces/not-an-existing-piece',
+  '/portfolio/not-an-approved-project',
+  '/journal/not-a-published-story',
   '/not-an-existing/nested/route',
 ];
 

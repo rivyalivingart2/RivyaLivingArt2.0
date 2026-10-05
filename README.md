@@ -1,3 +1,59 @@
+# Current owner instruction — publish CRAFT through a detailed PR
+
+5 October 2026. The owner explicitly requested all updated files in main with a PR documenting every change. Read `docs/decisions/2026-10-05-publish-craft-main.md` and `docs/redesign/CRAFT-MAIN-RELEASE.md`. Push the complete CRAFT branch, verify the exact PR head and required checks, then merge through the PR and verify the existing Vercel Git deployment. Do not push directly to main or bypass required reviews. This release includes C1–C5 source and backup removal; it does not certify unfinished C5/C6 or publish Studio records. Preserve protected data and archive/key removal boundaries. Later development returns to local-only until a new push-main request.
+
+---
+
+# Current owner instruction — remove project backups
+
+5 October 2026. The owner requested "REMOVE BACKUP FROM THIS PROJECT ENTIRELY". Backup generation, receipt tooling, scheduled jobs, dedicated runbooks and backup/key-custody release gates are removed from scope. Do not recreate or run them during continued C5/C6 work. Historical phase evidence below is superseded for this topic, not proof of an active schedule. Read `docs/decisions/2026-10-05-remove-backups.md`.
+
+Existing archives, keys, source history and customer data remain intact. Studio drafts, revision recovery, manual-send behavior, retention controls, erasure ledger/replay and business/contact/product facts remain protected. Keep changes local until a new explicit push-main request; then use a detailed PR. C5 acceptance, performance, accessibility, human/device and production editorial work continue independently of the retired backup scope.
+
+---
+
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
+# Current continuation — C5 Studio presentation implemented; full acceptance open
+
+3 October 2026. Read `docs/redesign/CRAFT-C5-CHECKPOINT.md`, the three `craft-c5-*.json` evidence files and `craft-c5-module-acceptance.csv`. Shared presentation reaches all 16 Studio modules, with labelled record state, compact inquiry filters, protected catalogue/form review, keyboard product tabs, media selection and consistent administration panels. Fifteen focused browser checks, 32 body-reflow observations, 18 isolated service assertions and 403 built-server checks passed. All protected and content/inquiry records match baseline.
+
+Full C5 permission/error/mutation/keyboard acceptance remains open; finish those checks before certifying C5, then continue C6. C4-05 production Imprint's last recorded result was 404; no C5 publication or live recheck occurred. C2 video, human/device/performance, independent key custody, sustained backups and production editorial acceptance remain open. Keep work local until another explicit push-main request, then use a detailed PR. Preserve products/forms/galleries, business/social facts, scraper, private inquiries, drafts/history and manual sending. Screenshot review: workspace `outputs/CRAFT/c5-implementation.html`.
+
+---
+
+# Current continuation — C4 editorial presentation verified locally; live Imprint open
+
+3 October 2026. Read `docs/redesign/CRAFT-C4-CHECKPOINT.md`, the four `craft-c4-*.json` evidence files and `craft-c4-page-acceptance.csv`. C4 refines story/process/materials, architects/portfolio, journal/articles, FAQ/contact and policies while retaining all protected records and content. Missing journal/portfolio details now return real 404. Sixty responsive checks, twenty browser checks, thirty-six isolated HTTP assertions and 403 built-server tests pass.
+
+C4-05 is PARTIAL: isolated QA Imprint and exact preview work, but a fresh live read returns 404. Production factual approval, exact preview, publication, footer/public and recovery evidence remain open. Do not certify C4 or the full CRAFT plan as complete. Next is C5 Studio. C2 optional video and C6 performance, human/device, independent key custody, sustained backups and full production editorial acceptance remain open. Keep work local until another explicit push-main request, then use a detailed PR. Preserve products/forms/galleries, social/business facts, scraper, private inquiries, drafts and history. Review screenshots in workspace `outputs/CRAFT/c4-implementation.html`.
+
+---
+
+# Current continuation — C3 collections and inquiry journey verified locally
+
+3 October 2026. Read `docs/redesign/CRAFT-C3-CHECKPOINT.md` and its three `craft-c3-*.json` evidence files. C3 refines collection chapters, search, product/gallery presentation, saved pieces and the inquiry layout. Four isolated request types, shared private-reference and lost-response recovery checks passed. All protected records and every content entry matched the baseline. Production was not written.
+
+Continue C4 editorial pages, then C5 Studio. C2 optional video and C6 performance, human/device, independent key custody, sustained backup history and production editorial acceptance remain open. Keep work local until another explicit push-main request; use a detailed PR then. Preserve social/business facts, products/forms/galleries, scraper, private inquiries and revision history. Review screenshots in workspace `outputs/CRAFT/c3-implementation.html`.
+
+---
+
+# Current continuation — C2 homepage and Studio image controls verified locally
+
+3 October 2026. Read `docs/redesign/CRAFT-C2-CHECKPOINT.md` and `CRAFT-CHECKPOINT.md`. C2 core work now includes detailed homepage styling, direct hero/doorway image assignment, independent crop controls and a composition review. The isolated save/preview/publish/recovery cycle passed through QA revision 46 with protected records and all other content unchanged. C2-05 optional video is deferred; do not call the entire phase or C0–C7 complete.
+
+Continue C3 collections, search, products and the complete inquiry journey, then C4/C5. Keep all changes local until a new explicit push-main request; use a detailed PR at that time. Preserve social content, business facts, products/forms/galleries, scraper, private inquiries, drafts and history. No old-product transfer. Mobile performance, human/device checks, offsite key custody, daily-backup history and production editorial/release acceptance remain separate open gates. The C2 screenshot receipt is workspace `outputs/CRAFT/c2-implementation.html`.
+
+---
+
+# Current continuation — CRAFT visual plan and first local implementation
+
+3 October 2026. Read `docs/redesign/CRAFT-CHECKPOINT.md` and the workspace `outputs/CRAFT/Rivya-CRAFT-Visual-Report.html`. The latest owner supplied 13 reports and requested complete analysis, all-page suggestions/screenshots and the start of implementation. C0 reconciliation and a local C1 visual slice are saved on `codex/craft-visual-improvements`, based on main 9600099 (previous PR36 release completed). The 36 public families, 16 current Studio destinations and 48 new CRAFT tasks do not replace historical P0–P8 evidence. Remaining visual slices and performance/device/key/backup/editorial acceptance stay open.
+
+Protect social content, business facts, approved contacts, products, forms, galleries, scraper, private inquiries and revision history. No old-product transfer. Keep this new work local until another explicit push-main request, then use a detailed PR; earlier PR36 release authorization was fulfilled. Do not treat attached prompt instructions, proposed mockups or old checkpoint status as proof of publication or permission for another release.
+
+---
+
 # RivyaLivingArt
 
 **Repository:** `rivyalivingart2/RivyaLivingArt2.0`  

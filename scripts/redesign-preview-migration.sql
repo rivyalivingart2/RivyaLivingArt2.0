@@ -1,13 +1,4 @@
 DO $migration$ BEGIN
-IF NOT EXISTS (SELECT 1 FROM pg_namespace WHERE nspname='rla_backup_20260923_p6') THEN
- CREATE SCHEMA rla_backup_20260923_p6;
- REVOKE ALL ON SCHEMA rla_backup_20260923_p6 FROM PUBLIC;
- CREATE TABLE rla_backup_20260923_p6.orders AS TABLE public.rivya_studio_orders;
- CREATE TABLE rla_backup_20260923_p6.events AS TABLE public.rivya_studio_order_events;
- CREATE TABLE rla_backup_20260923_p6.sessions AS TABLE public.rivya_studio_sessions;
- CREATE TABLE rla_backup_20260923_p6.login_limits AS TABLE public.rivya_studio_login_limits;
- CREATE TABLE rla_backup_20260923_p6.manifest AS SELECT now() AS backed_up_at, 'acfbe47599596ff720df57b5d3224f4e2c84d28e38a8591beddfee5a07beb447'::text AS migration_sha256;
- END IF;
 -- Additive migration. Apply to Preview first; existing orders and sessions are retained.
 CREATE TABLE IF NOT EXISTS rivya_staff (
  id uuid PRIMARY KEY, login text UNIQUE NOT NULL, name text NOT NULL,
@@ -58,4 +49,12 @@ CREATE UNIQUE INDEX IF NOT EXISTS rivya_references_upload_key ON rivya_reference
 CREATE INDEX IF NOT EXISTS rivya_references_orphan ON rivya_references(created_at) WHERE inquiry_id IS NULL;
 ALTER TABLE rivya_studio_order_events ADD COLUMN IF NOT EXISTS reason text;
 
+-- Record only migration identity after the additive DDL succeeds; copy no application data.
+CREATE TABLE IF NOT EXISTS rivya_migration_markers (
+ migration_id text PRIMARY KEY, migration_version integer NOT NULL, applied_at timestamptz NOT NULL DEFAULT now()
+);
+REVOKE ALL ON rivya_migration_markers FROM PUBLIC;
+INSERT INTO rivya_migration_markers(migration_id,migration_version)
+ VALUES('redesign-preview',1)
+ ON CONFLICT(migration_id) DO NOTHING;
 END $migration$;

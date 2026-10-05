@@ -1,0 +1,363 @@
+{
+  "phase": "C5",
+  "checks": [
+    {
+      "name": "Combined search and advanced kind filters retain URL and exact one synthetic result",
+      "pass": true
+    },
+    {
+      "name": "Advanced filters close by keyboard while applied chips stay visible",
+      "pass": true
+    },
+    {
+      "name": "Back restores all four matching synthetic inquiries",
+      "pass": true
+    },
+    {
+      "name": "Phone board shows one selected stage with the same four records",
+      "pass": true
+    },
+    {
+      "name": "IST follow-up preset changes only the unsaved date control",
+      "pass": true
+    },
+    {
+      "name": "Dirty content switch dialog focuses Keep editing and Escape retains unsaved title",
+      "pass": true
+    },
+    {
+      "name": "Recovery copy retains the unsaved content before explicit editor replacement",
+      "pass": true
+    },
+    {
+      "name": "Confirmed reload restores saved title and clears unsaved status without publication",
+      "pass": true
+    },
+    {
+      "name": "Existing product facts and publish controls remain disabled before deliberate editing opt-in",
+      "pass": true
+    },
+    {
+      "name": "Product editor tabs support arrow-key selection after repair",
+      "pass": true,
+      "initialFinding": "Arrow keys previously had no handler; added roving focus and named panels."
+    },
+    {
+      "name": "Actual product preview reveals dimensions only when that direction is chosen",
+      "pass": true
+    },
+    {
+      "name": "End selects the last product tab and Home returns to General Details",
+      "pass": true
+    },
+    {
+      "name": "Selected media exposes pressed state",
+      "pass": true
+    },
+    {
+      "name": "Business contact settings remain read-only",
+      "pass": true
+    },
+    {
+      "name": "Page image workspace switches between independent desktop and mobile crop previews without making a draft",
+      "pass": true
+    }
+  ],
+  "layouts": [
+    {
+      "body": 1425,
+      "headings": [
+        "Studio overview"
+      ],
+      "loading": 0,
+      "path": "/studio",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "Images, in their place."
+      ],
+      "loading": 0,
+      "path": "/studio/site-images",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "Words with purpose."
+      ],
+      "loading": 0,
+      "path": "/studio/site-copy",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "Follow-ups"
+      ],
+      "loading": 0,
+      "path": "/studio/follow-ups",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "Language review."
+      ],
+      "loading": 0,
+      "path": "/studio/translations",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "Navigation & languages."
+      ],
+      "loading": 0,
+      "path": "/studio/navigation",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "Legacy feature decisions."
+      ],
+      "loading": 0,
+      "path": "/studio/legacy",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "Old links and publication."
+      ],
+      "loading": 0,
+      "path": "/studio/route-review",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "The work, in sequence."
+      ],
+      "loading": 0,
+      "path": "/studio/activity",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "The people behind the pieces."
+      ],
+      "loading": 0,
+      "path": "/studio/staff",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "Atelier settings."
+      ],
+      "loading": 0,
+      "path": "/studio/settings",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "Pieces & possibilities."
+      ],
+      "loading": 0,
+      "path": "/studio/products",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "Words with purpose."
+      ],
+      "loading": 0,
+      "path": "/studio/content",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "Inquiries"
+      ],
+      "loading": 0,
+      "path": "/studio/inquiries",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "The public image collection."
+      ],
+      "loading": 0,
+      "path": "/studio/media",
+      "width": 1440
+    },
+    {
+      "body": 1425,
+      "headings": [
+        "Content health."
+      ],
+      "loading": 0,
+      "path": "/studio/content-health",
+      "width": 1440
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Content health."
+      ],
+      "loading": 0,
+      "path": "/studio/content-health",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Studio overview"
+      ],
+      "loading": 0,
+      "path": "/studio",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Follow-ups"
+      ],
+      "loading": 0,
+      "path": "/studio/follow-ups",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Inquiries"
+      ],
+      "loading": 0,
+      "path": "/studio/inquiries",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Pieces & possibilities."
+      ],
+      "loading": 0,
+      "path": "/studio/products",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Words with purpose."
+      ],
+      "loading": 0,
+      "path": "/studio/content",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Words with purpose."
+      ],
+      "loading": 0,
+      "path": "/studio/site-copy",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "The public image collection."
+      ],
+      "loading": 0,
+      "path": "/studio/media",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Images, in their place."
+      ],
+      "loading": 0,
+      "path": "/studio/site-images",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Language review."
+      ],
+      "loading": 0,
+      "path": "/studio/translations",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Navigation & languages."
+      ],
+      "loading": 0,
+      "path": "/studio/navigation",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Legacy feature decisions."
+      ],
+      "loading": 0,
+      "path": "/studio/legacy",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Old links and publication."
+      ],
+      "loading": 0,
+      "path": "/studio/route-review",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "The work, in sequence."
+      ],
+      "loading": 0,
+      "path": "/studio/activity",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "The people behind the pieces."
+      ],
+      "loading": 0,
+      "path": "/studio/staff",
+      "width": 390
+    },
+    {
+      "body": 375,
+      "headings": [
+        "Atelier settings."
+      ],
+      "loading": 0,
+      "path": "/studio/settings",
+      "width": 390
+    }
+  ],
+  "screenshots": "Selected settled captures in review; intermediate/loading captures excluded from acceptance claims",
+  "limitations": [
+    "Full permission and mutation error matrix not rerun",
+    "Native inquiry dirty-close dialog could not be exercised reliably by the browser controller; no saved changes",
+    "No physical phone or human screen reader test",
+    "No save/publish/revision restore mutations this pass"
+  ]
+}

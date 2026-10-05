@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 > Current authority: approved master revision 3.2 and PHASE-2-DATA-ARCHITECTURE.md / PHASE-2-MIGRATION-RUNBOOK.md. The prior phase numbering and observations below are historical. Phase 11 is final QA. Current environment evidence is phase-2-environments.json. The guest cookie is an opaque random bearer token whose HMAC is stored server-side; it is not itself a signed cookie.
 
 # Source of truth and remaining dependencies
@@ -10,7 +12,7 @@
 | Remote main | GitHub connector readback matches f9533bbbaf3cc2843025f1a1243442b0a9d920e8 | Codex; reconcile again at P10.2 |
 | Deployment trigger | Vercel lists READY production dpl_7HRC8CVEJ98ih86yRxoppxVgMgR2 from that main SHA; prior work branches produce Preview | Codex; do not push main before eligibility gate |
 | Dependencies | Existing lockfile, Next 16.3.5 / React 19.3.0 / Node 22; Neon, Blob, sharp, Tiptap already present | Retain pins; no new paid service |
-| Database | Existing studio-schema.sql applied according to earlier release record; new whatsapp-schema.sql remains unapplied according to handoff. No DATABASE_URL available in this shell | Codex P6.1: provider schema-only inspection, backup, isolated Preview migration; never infer from source |
+| Database | Existing studio-schema.sql applied according to earlier release record; new whatsapp-schema.sql remains unapplied according to handoff. No DATABASE_URL available in this shell | Codex P6.1: provider schema-only inspection and isolated Preview migration; never infer from source |
 | Private storage | Historical Preview-only linkage. BLOB_READ_WRITE_TOKEN is required. Current linkage cannot be confirmed from shell | Codex P6.3: inspect dashboard scope/limits before upload |
 | Authentication | Existing owner session system plus uncommitted staff drafts; scope defects discovered | Codex P7.2: enforce assigned-record permissions, then final QA |
 | Vercel configuration | get_project connector rejects its documented projectId because upstream expects idOrName, while connector rejects idOrName; deployments listing works | Codex: dashboard/CLI fallback; no repeat malformed requests |
@@ -20,9 +22,9 @@
 | Media | Existing public derivatives/provenance retained. Drive root and detail folder read successfully; 15 detail entries include originals and derivatives | Codex P8: inspect/crop/optimize only approved derivatives; no new rights inference |
 | Historic samples | 36 source articles, 8 project examples, 24 fictional quotes, 40 operational fixtures preserved | Codex: no fabricated live case studies/testimonials/orders |
 
-## Migration and backup path
+## Migration identity and target verification
 
-No migration was executed during Phase 2. Before any schema mutation, confirm the Preview database identity and separation from Production, obtain a provider restore point or private backup, inventory only table/column names and counts, review additive migration against actual schema, and record the migration digest/environment/receipt. Preserve orders, IDs, stages, sessions and all history. Initial publication must be deliberate and idempotent, never build-time fixture seeding. Production repeats the reviewed migration after final QA, its own backup and eligible release decision.
+No migration was executed during Phase 2. Before any schema mutation, confirm the Preview database identity and separation from Production, inventory only table/column names and counts, review additive migration against actual schema, and record the migration digest/environment/receipt. Preserve orders, IDs, stages, sessions and all history. Initial publication must be deliberate and idempotent, never build-time fixture seeding. Production repeats the reviewed migration after final QA and an eligible release decision. The historical Preview seed requires the metadata-only migration marker; it must not be used to transfer products or overwrite shared data.
 
 ## Known draft defects assigned to later phases
 
