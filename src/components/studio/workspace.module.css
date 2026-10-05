@@ -364,3 +364,14 @@
  .workspace .viewControls button { flex:1 1 auto; }
  .workspace .mediaGrid span { height:120px; }
 }
+
+/* Editors follow their available space when zoom or the sidebar narrows the main column. */
+.workspaceMain { container-type:inline-size; container-name:studio-workspace; }
+.workspace legend { max-width:100%; box-sizing:border-box; white-space:normal; }
+@container studio-workspace (max-width:640px){
+ .workspace .layout,.workspace .grid { grid-template-columns:minmax(0,1fr); }
+ .workspace .list { max-height:280px; }
+ .workspace .heading { flex-wrap:wrap; }
+ .workspace .heading > div { flex-basis:100%; min-width:0; }
+ .workspace .heading > button { max-width:100%; }
+}

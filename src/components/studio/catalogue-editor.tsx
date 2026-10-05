@@ -27,7 +27,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
  const [activeTab,setActiveTab]=useState<string>('general');
  const [translationLocale,setTranslationLocale]=useState<Locale>('hi');
  const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[tierFilter,setTierFilter]=useState<'all'|'large'|'memory'|'personal'>('all'),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading catalogue…'),[dirty,setDirty]=useState(false);
- async function load(id?:string){const data=await studioFetch('/api/studio/workspace?view=catalogue');setEntries(data.products);setLoaded(true);if(id)setEntry(data.products.find((e:Entry)=>e.product.id===id)||null);}
+ async function load(id?:string){const data=await studioFetch('/api/studio/workspace?view=catalogue');const next=id?data.products.find((e:Entry)=>e.product.id===id):null;if(id&&!next)throw Error('Saved product is unavailable. Your local draft is retained.');setEntries(data.products);setLoaded(true);if(next)setEntry(next);}
  useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia;reviewedMedia:PublicMedia})=>e.reviewedMedia||e.media))).catch(()=>setMessage('Approved image choices are temporarily unavailable.'));void studioFetch('/api/studio/workspace?view=catalogue').then(data=>{setEntries(data.products);setLoaded(true);setMessage('Drafts are shared across devices. Only published content appears on the website.');}).catch(e=>setMessage(e.message));},[]);
  useEffect(()=>{const warn=(e:BeforeUnloadEvent)=>{if(dirty){e.preventDefault();e.returnValue='';}};window.addEventListener('beforeunload',warn);return()=>window.removeEventListener('beforeunload',warn);},[dirty]);
  function change(p:Partial<ShopProduct>){if(!editing){setMessage('Protected review: open the existing editing controls only for an authorized catalogue change.');return;}setEntry(e=>e?{...e,product:{...e.product,...p}}:null);setDirty(true);}
@@ -55,8 +55,8 @@ export function CatalogueEditor({admin}:{admin:boolean}){
    const issueTab=(['general','details','images','customization'] as const).find(tab=>tabIssues[tab].length);
    if(issueTab){setActiveTab(issueTab);setMessage(tabIssues[issueTab].join(' '));return;}
   }
-  setBusy(true);setMessage('Saving…');
-  try{await studioFetch('/api/studio/workspace',{action:'catalogue',product:entry.product,version:entry.version,operation});setEntry({...entry,version:entry.version+1});setDirty(false);await load(entry.product.id);setMessage(operation==='publish'?'Published. New website requests now use this version.':operation==='hide'?'This piece is hidden from the public catalogue.':'Draft saved to the shared catalogue.');}catch(e){setMessage(e instanceof Error?e.message:'Unable to save.');}finally{setBusy(false);}
+  setBusy(true);setMessage('Saving…');let saved=false;
+  try{await studioFetch('/api/studio/workspace',{action:'catalogue',product:entry.product,version:entry.version,operation});saved=true;setEntry({...entry,version:entry.version+1});setDirty(false);await load(entry.product.id);setMessage(operation==='publish'?'Published. New website requests now use this version.':operation==='hide'?'This piece is hidden from the public catalogue.':'Draft saved to the shared catalogue.');}catch(e){setMessage(saved?'Catalogue changes were saved, but the saved record could not refresh. Reload it before making another change; do not repeat the save.':e instanceof Error?e.message:'Unable to save.');}finally{setBusy(false);}
  }
 
  const filteredEntries = entries.filter(e => {
