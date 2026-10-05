@@ -9,8 +9,8 @@ const nextConfig: NextConfig = {
     deviceSizes: [360,640,828,1080,1200,1440,1920],
     imageSizes: [32,64,96,160,256],
     qualities: [60,75],
-    // Prefer fast first-request encoding; responsive sizes still bound transfer.
-    formats: ['image/webp'],
+    // Hosted mobile evidence favours AVIF's smaller transfer despite encoding cost.
+    formats: ['image/avif', 'image/webp'],
   },
   async redirects() {
     return [
