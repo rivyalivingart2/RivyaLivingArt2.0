@@ -1,0 +1,144 @@
+status,file,area
+M,.env.example,Operations and contracts
+M,AGENTS.md,Documentation and evidence
+M,PROJECT_STATE.md,Documentation and evidence
+M,README.md,Documentation and evidence
+M,RivyaLivingArt_Codex_Start_Resume_v8.md,Documentation and evidence
+M,RivyaLivingArt_Frontend_First_Plan_v8.md,Documentation and evidence
+M,RivyaLivingArt_Git_Checkpoint_Workflow_v8.md,Documentation and evidence
+M,RivyaLivingArt_Master_Build_Prompt_v8.md,Documentation and evidence
+M,RivyaLivingArt_READ_FIRST_v8.md,Documentation and evidence
+M,RivyaLivingArt_Vercel_Deployment_Handoff_v8.md,Documentation and evidence
+M,docs/CODEX_WORKFLOW.md,Documentation and evidence
+M,docs/REDESIGN-DOC/RivyaLivingArt-Dark-Theme-Audit-and-Implementation-Plan.md,Documentation and evidence
+M,docs/REDESIGN-DOC/RivyaLivingArt-Dark-Theme-Master-Prompt.md,Documentation and evidence
+M,docs/decisions/2026-09-23-phase-6-execution.md,Documentation and evidence
+M,docs/decisions/2026-09-24-operating-policies.md,Documentation and evidence
+M,docs/decisions/2026-09-24-publish-current-stop-testing.md,Documentation and evidence
+M,docs/decisions/2026-10-03-authorized-main-production.md,Documentation and evidence
+M,docs/decisions/2026-10-03-p7-verification.md,Documentation and evidence
+M,docs/decisions/2026-10-03-release-follow-up.md,Documentation and evidence
+A,docs/decisions/2026-10-05-publish-craft-main.md,Documentation and evidence
+A,docs/decisions/2026-10-05-remove-backups.md,Documentation and evidence
+M,docs/redesign/CHECKPOINT.md,Documentation and evidence
+A,docs/redesign/CRAFT-C2-CHECKPOINT.md,Documentation and evidence
+A,docs/redesign/CRAFT-C3-CHECKPOINT.md,Documentation and evidence
+A,docs/redesign/CRAFT-C4-CHECKPOINT.md,Documentation and evidence
+A,docs/redesign/CRAFT-C5-CHECKPOINT.md,Documentation and evidence
+A,docs/redesign/CRAFT-CHECKPOINT.md,Documentation and evidence
+A,docs/redesign/CRAFT-MAIN-RELEASE.md,Documentation and evidence
+A,docs/redesign/CRAFT-THIRD-PARTY-NOTICES.md,Documentation and evidence
+M,docs/redesign/Current-State-Reconciliation.md,Documentation and evidence
+M,docs/redesign/DEPENDENCIES.md,Documentation and evidence
+M,docs/redesign/IMPLEMENTATION_PROGRESS.md,Documentation and evidence
+M,docs/redesign/INFRASTRUCTURE.json,Documentation and evidence
+M,docs/redesign/MIDNIGHT-ATELIER-CHECKPOINT.md,Documentation and evidence
+M,docs/redesign/P5-CLOSURE.md,Documentation and evidence
+M,docs/redesign/P7-CHECKPOINT.md,Documentation and evidence
+M,docs/redesign/P7-EVIDENCE-REPRODUCTION.md,Documentation and evidence
+M,docs/redesign/P7-VERIFICATION-REPORT.md,Documentation and evidence
+M,docs/redesign/P8-CHECKPOINT.md,Documentation and evidence
+M,docs/redesign/P8-FINAL-RELEASE-CHECKS.md,Documentation and evidence
+M,docs/redesign/P8-FOLLOW-UP.md,Documentation and evidence
+M,docs/redesign/P8-OWNER-EDITING-GUIDE.md,Documentation and evidence
+M,docs/redesign/P8-PR-DRAFT.md,Documentation and evidence
+M,docs/redesign/P8-RELEASE-PACKET.md,Documentation and evidence
+M,docs/redesign/PENDING-WORK.md,Documentation and evidence
+M,docs/redesign/PHASE-10-OPERATIONS-RUNBOOK.md,Documentation and evidence
+D,docs/redesign/PHASE-11-BACKUP-OPERATIONS.md,Documentation and evidence
+M,docs/redesign/PHASE-11-CHECKPOINT.md,Documentation and evidence
+M,docs/redesign/PHASE-2-DATA-ARCHITECTURE.md,Documentation and evidence
+M,docs/redesign/PHASE-2-MIGRATION-RUNBOOK.md,Documentation and evidence
+M,docs/redesign/PHASE-4-CATALOGUE.md,Documentation and evidence
+M,docs/redesign/PHASE-5-CUSTOMIZATION.md,Documentation and evidence
+M,docs/redesign/PHASE-6-ORDER-HANDOFF.md,Documentation and evidence
+M,docs/redesign/PHASE-7-STUDIO.md,Documentation and evidence
+M,docs/redesign/PHASE-8-PUBLIC-CONTENT.md,Documentation and evidence
+M,docs/redesign/PHASE-9-MEDIA-REFINEMENT.md,Documentation and evidence
+D,docs/redesign/RECOVERY-KEY-CUSTODY.md,Documentation and evidence
+M,docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md,Documentation and evidence
+M,docs/redesign/RivyaLivingArt-Commercial-Readiness-Report.md,Documentation and evidence
+M,docs/redesign/SHARED-DATA-CONFIGURATION.md,Documentation and evidence
+A,docs/redesign/backup-removal-verification.json,Documentation and evidence
+A,docs/redesign/craft-browser-validation.json,Documentation and evidence
+A,docs/redesign/craft-c2-validation.json,Documentation and evidence
+A,docs/redesign/craft-c2-video-decision.json,Documentation and evidence
+A,docs/redesign/craft-c2-workflow-verification.json,Documentation and evidence
+A,docs/redesign/craft-c3-browser-verification.json,Documentation and evidence
+A,docs/redesign/craft-c3-service-verification.json,Documentation and evidence
+A,docs/redesign/craft-c3-validation.json,Documentation and evidence
+A,docs/redesign/craft-c4-browser-verification.json,Documentation and evidence
+A,docs/redesign/craft-c4-http-verification.json,Documentation and evidence
+A,docs/redesign/craft-c4-page-acceptance.csv,Documentation and evidence
+A,docs/redesign/craft-c4-protection-verification.json,Documentation and evidence
+A,docs/redesign/craft-c4-validation.json,Documentation and evidence
+A,docs/redesign/craft-c5-browser-verification.json,Documentation and evidence
+A,docs/redesign/craft-c5-module-acceptance.csv,Documentation and evidence
+A,docs/redesign/craft-c5-service-verification.json,Documentation and evidence
+A,docs/redesign/craft-c5-validation.json,Documentation and evidence
+A,docs/redesign/craft-page-specifications.json,Documentation and evidence
+A,docs/redesign/craft-protected-verification.json,Documentation and evidence
+A,docs/redesign/craft-public-page-register.csv,Documentation and evidence
+A,docs/redesign/craft-release-files.csv,Documentation and evidence
+A,docs/redesign/craft-source-inventory.json,Documentation and evidence
+A,docs/redesign/craft-studio-family-traceability.csv,Documentation and evidence
+A,docs/redesign/craft-task-register.csv,Documentation and evidence
+A,docs/redesign/craft-validation.json,Documentation and evidence
+D,docs/redesign/p7-backup-verification.json,Documentation and evidence
+D,docs/redesign/p7-restore.json,Documentation and evidence
+D,docs/redesign/p8-backup-schedule.json,Documentation and evidence
+D,docs/redesign/p8-backup-verified.json,Documentation and evidence
+M,docs/sites/status.md,Documentation and evidence
+D,scripts/operations/backup-receipts.mjs,Operations and contracts
+D,scripts/operations/encrypted-backup.mjs,Operations and contracts
+M,scripts/p7-erasure-runtime-grants.sql,Operations and contracts
+M,scripts/phase2-order-contract.sql,Operations and contracts
+M,scripts/phase6-upload-identity.sql,Operations and contracts
+M,scripts/redesign-preview-migration.sql,Operations and contracts
+M,scripts/seed-reviewed-preview.mjs,Operations and contracts
+M,scripts/studio-migrate.mjs,Operations and contracts
+D,src/app/journal/loading.tsx,Public website
+M,src/app/journal/page.tsx,Public website
+D,src/app/portfolio/loading.tsx,Public website
+M,src/app/portfolio/page.tsx,Public website
+M,src/components/shop/catalogue-browser.tsx,Public website
+A,src/components/shop/catalogue-journey.module.css,Public website
+M,src/components/shop/collection-document.tsx,Public website
+M,src/components/shop/editorial-chapter.tsx,Public website
+M,src/components/shop/editorial-image.tsx,Public website
+A,src/components/shop/editorial-reading.module.css,Public website
+M,src/components/shop/editorial.tsx,Public website
+M,src/components/shop/faq-browser.tsx,Public website
+M,src/components/shop/hero-image.tsx,Public website
+M,src/components/shop/homepage-document.tsx,Public website
+M,src/components/shop/homepage.module.css,Public website
+M,src/components/shop/journal-browser.tsx,Public website
+M,src/components/shop/order-form.tsx,Public website
+M,src/components/shop/product-gallery.tsx,Public website
+M,src/components/shop/saved-pieces.tsx,Public website
+M,src/components/shop/saved-receipt.tsx,Public website
+M,src/components/shop/shop-site.tsx,Public website
+M,src/components/shop/shop.module.css,Public website
+M,src/components/studio/catalogue-editor.tsx,Studio
+A,src/components/studio/editorial-crop-fields.tsx,Studio
+A,src/components/studio/homepage-composition.module.css,Studio
+A,src/components/studio/homepage-composition.tsx,Studio
+M,src/components/studio/homepage-editor.tsx,Studio
+A,src/components/studio/homepage-image-fields.tsx,Studio
+M,src/components/studio/inquiry-workspace.tsx,Studio
+M,src/components/studio/media-library.tsx,Studio
+M,src/components/studio/overview-panel.tsx,Studio
+A,src/components/studio/overview-workspaces.tsx,Studio
+A,src/components/studio/overview.module.css,Studio
+M,src/components/studio/page-sections-editor.tsx,Studio
+M,src/components/studio/privacy-controls.tsx,Studio
+M,src/components/studio/record-status.tsx,Studio
+M,src/components/studio/site-images-editor.tsx,Studio
+M,src/components/studio/workspace.module.css,Studio
+M,src/components/studio/workspace.tsx,Studio
+M,src/lib/legacy-disposition.json,Operations and contracts
+M,src/lib/operating-policies.ts,Operations and contracts
+M,src/lib/order-service.ts,Operations and contracts
+M,src/lib/shop-editorial.ts,Operations and contracts
+D,tests/backup-receipts.test.mjs,Operations and contracts
+M,tools/frontend-runtime.test.mjs,Operations and contracts

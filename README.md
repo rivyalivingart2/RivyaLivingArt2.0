@@ -1,3 +1,9 @@
+# Current owner instruction — publish CRAFT through a detailed PR
+
+5 October 2026. The owner explicitly requested all updated files in main with a PR documenting every change. Read `docs/decisions/2026-10-05-publish-craft-main.md` and `docs/redesign/CRAFT-MAIN-RELEASE.md`. Push the complete CRAFT branch, verify the exact PR head and required checks, then merge through the PR and verify the existing Vercel Git deployment. Do not push directly to main or bypass required reviews. This release includes C1–C5 source and backup removal; it does not certify unfinished C5/C6 or publish Studio records. Preserve protected data and archive/key removal boundaries. Later development returns to local-only until a new push-main request.
+
+---
+
 # Current owner instruction — remove project backups
 
 5 October 2026. The owner requested "REMOVE BACKUP FROM THIS PROJECT ENTIRELY". Backup generation, receipt tooling, scheduled jobs, dedicated runbooks and backup/key-custody release gates are removed from scope. Do not recreate or run them during continued C5/C6 work. Historical phase evidence below is superseded for this topic, not proof of an active schedule. Read `docs/decisions/2026-10-05-remove-backups.md`.
