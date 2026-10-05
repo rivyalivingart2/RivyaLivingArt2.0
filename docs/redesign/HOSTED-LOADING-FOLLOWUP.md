@@ -34,3 +34,9 @@ The PR records exact checks, head/merge and production deployment, followed by t
 ## Editorial checkpoint
 
 Twelve pages / 472 Hindi-Gujarati values are current and published. Seven page records and 36 articles remain English fallback. The renewed Studio sign-in requested after expiry is still needed for further preview/publication. Independent native-reader, full crop/content sign-off and a legitimate business inquiry cannot be inferred from the release.
+
+## Hosted experiment outcome — 6 October IST
+
+PR41 merged as `1057294360cdac048f63da04eb5d261c90a081ca`; exact production `dpl_ELLv3rA4AyANUj3BcmcnSmZWJkVT` reached READY. Seven bounded public/robots/sitemap reads and an image HEAD passed. Studio remained noindex/nofollow/noarchive; sitemap retained 174 URLs. The served image negotiated WebP as intended.
+
+The 00:04 IST hosted audit regressed to LCP **3.901s**, FCP 1.351s, TBT 6ms, CLS 0 and performance 87. A single run is not a statistical comparison, but the larger transfer is an adverse signal and does not justify retaining the format experiment. Restore the prior AVIF-first preference, retaining PR40's responsive preload and authenticated caching of immutable editorial source bytes. No data rollback is needed. Follow the restoration PR for exact release and hosted results; the 2.5s target remains open.
