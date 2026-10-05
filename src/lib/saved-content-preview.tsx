@@ -22,8 +22,8 @@ export async function savedContentPreview(record:string,version:number):Promise<
 export async function SavedContentDocument({document,version}:{document:ContentDocument;version:number}){
  if(document.id===sharedCopyId)return <section data-saved-content-revision={version} style={{padding:40}}><h1>Shared website copy</h1><p>Inspect the actual navigation, search dialog and footer around this preview. Contact values remain current published settings.</p></section>;
  if(document.id===homeId)return <HomepageDocument document={document} revision={version} copy={(await publishedCopy()).values}/>;
- if(document.route==='/journal'&&document.pageSnapshot)return <JournalDocument content={{...document,publishedRevision:version}}/>;
- if(isDiscoveryRoute(document.route)&&document.pageSnapshot)return <CollectionDocument document={{...document,publishedRevision:version}}/>;
+ if(document.route==='/journal'&&document.pageSnapshot)return <div data-saved-content-revision={version}><JournalDocument content={{...document,publishedRevision:version}}/></div>;
+ if(isDiscoveryRoute(document.route)&&document.pageSnapshot)return <div data-saved-content-revision={version}><CollectionDocument document={{...document,publishedRevision:version}}/></div>;
  if(document.pageSnapshot)return <div data-saved-content-revision={version}><EditorialDocument content={{...document,publishedRevision:version,image:document.pageSnapshot.image?.path,imageAlt:document.pageSnapshot.image?.alt,imagePosition:document.pageSnapshot.image?.position}} documents={document.pageSnapshot.articles.map(a=>({...a,kind:'article'}))} snapshot={document.pageSnapshot}/></div>;
  const [documents,images]=await Promise.all([publishedContent(),publishedMedia()]);
  const image=document.image?images.get(document.image):undefined;

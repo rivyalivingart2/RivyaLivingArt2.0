@@ -2,7 +2,21 @@
 
 Run from the repository root with Node 22 and installed locked dependencies. `axe-core` 4.13.0 is present in the lockfile through the existing lint toolchain. Chrome is expected at the standard Windows path used by these runners. The full application check remains `npm run check`.
 
-Set `RIVYA_QA_CONFIG_PATH` to the existing private QA configuration file path, never put credentials on the command line. `common.mjs` verifies the database name, database role and object store identity before reads. Sign-in verifies the issued session hash in the pinned QA database; token/hash stay in memory. The compiled server keeps its production `__Host-` cookie. The browser harness stores its HTTPS-source cookie on the trustworthy loopback host; it does not disable or change production cookie security.
+Set `RIVYA_QA_CONFIG_PATH` to the private QA configuration file path, never put credentials on the command line. `common.mjs` verifies the database name, database role and object store identity before reads. The former QA database on the live Neon project is now explicitly rejected: a different database in the same project still consumes that project's transfer allowance. Sign-in verifies the issued session hash in the pinned QA database; token/hash stay in memory. The compiled server keeps its production `__Host-` cookie. The browser harness stores its HTTPS-source cookie on the trustworthy loopback host; it does not disable or change production cookie security.
+
+## Loopback PostgreSQL option
+
+The 5 October follow-up uses PostgreSQL 18.6 bound to `127.0.0.1:55432`, with a dedicated `rivya_local_qa` role and `rivya_acceptance_local` database. Keep it loopback-only. Do not initialize over an existing cluster or copy live data. Install the `pg` client in the separate workspace tooling directory, not application dependencies, and set `RIVYA_LOCAL_PG_MODULE` to its absolute entry point.
+
+`node --import tsx tools/final-acceptance/prepare-local-qa.mjs` applies repository schemas only to that fixed local database and seeds source-only products/content/static media. It refuses an existing populated database. The generated credential file is ignored at `test-results/final-acceptance/.env.local-qa`; preserve and reuse it instead of reseeding. Local fixtures are not proof of production records or private object storage.
+
+For both server and test processes set `RIVYA_LOCAL_SQL=true`, `RIVYA_QA_CONFIG_PATH` to that ignored file, `RIVYA_QA_PORT=4196`, and `NODE_OPTIONS=--import=<file URL of tools/final-acceptance/local-sql-preload.mjs>`. The preload translates the Neon HTTP SQL envelope into parameterized local PostgreSQL queries and preserves transaction isolation/read-only/deferrable options. It refuses remote SQL destinations and Vercel execution. Verify it with `node tools/final-acceptance/local-transport-check.mjs`. It does not reproduce Neon network latency, Vercel cold starts, Blob storage or CDN behavior.
+
+The commands below use port 4194 unless `RIVYA_QA_PORT` overrides it. Keep hosted production diagnostics bounded and separately labelled; do not use these broad QA runners against production.
+
+The follow-up contracts run with the same local environment: `node --import tsx tools/final-acceptance/local-query-contracts.mjs`, `node tools/final-acceptance/preview-frames.mjs`, and `node --import tsx --loader ./tools/c6-acceptance/server-only-loader.mjs tools/final-acceptance/indexing-contracts.mjs`. The last command sets production/Preview indexing flags in that test process only; it never changes Vercel configuration. The existing server-only test loader is required outside Next.
+
+`production-read.mjs` is a separate bounded, read-only audit pinned to the shared runtime host/database/role. Supply its private config-file path in `RIVYA_READONLY_CONFIG_PATH`; never use the local SQL preload for this audit. It records aggregate protected fingerprints, public editorial versions/review states and 17 anonymous public responses. Keep raw receipts ignored. Preserve the before-editorial baseline; compare the original 131 media records separately from the five deliberately imported editorial records.
 
 1. Build the current application (`npm run build`).
 2. Start `node tools/c6-acceptance/serve.mjs` in a separate terminal. This serves the compiled candidate on `http://127.0.0.1:4194` using only isolated QA settings. Keep the server and build source aligned; restart after a new build.

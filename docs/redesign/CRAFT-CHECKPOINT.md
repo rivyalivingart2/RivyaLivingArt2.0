@@ -1,3 +1,13 @@
+# Current continuation — acceptance follow-up; source remains local
+
+5 October 2026. Read `docs/redesign/FINAL-ACCEPTANCE-2026-10-05.md` and `final-acceptance-evidence-2026-10-05.json`. The owner upgraded Neon to Launch; the former Free cap is historical. All 120 products, 131 original media/associations and business settings match baseline. The Imprint is published at revision 2 with recovery saved as draft 3; five fresh editorial assets and nine pages of Hindi/Gujarati copy were deliberately published and verified. Other translations/content/crop review remain partial.
+
+Local branch `codex/final-acceptance-traffic` reduces SQL payloads, scopes/splits CSS, fixes logo sizing and collection/journal preview markers, and prepares indexing. Broad QA now uses source-only loopback PostgreSQL, not the live Neon project. All seven local mobile medians pass; current hosted collection LCP is still 3.539s. Human phone/screen-reader and field evidence remain unavailable.
+
+PR #38 already released the prior base. New code stays local until another explicit push-main request, then use a detailed PR. The owner approved Production indexing with that next approved release, not now. Keep Preview/private routes closed. Preserve products/forms/galleries, business/social facts, customer records, drafts/history and manual sending. Backups/key custody remain removed. The prior status entries below are historical and superseded where this checkpoint differs.
+
+---
+
 # Current owner instruction — release C5/C6 through a detailed PR
 
 5 October 2026. The owner explicitly requests all updated files in main with a PR describing every change. Read `docs/decisions/2026-10-05-publish-c5-c6-main.md` and `docs/redesign/C5-C6-MAIN-RELEASE.md`. Push the accumulated C5 acceptance/C6 branch, check the final PR head and required checks/reviews, merge through the PR, then verify main and the existing Vercel Git deployment. No direct main push or review bypass.

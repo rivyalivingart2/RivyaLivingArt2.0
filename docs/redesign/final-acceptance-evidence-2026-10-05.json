@@ -1,0 +1,646 @@
+{
+  "recordedAt": "2026-10-05T11:50:14.173Z",
+  "status": "Partial overall acceptance; local source candidate unreleased",
+  "base": {
+    "pr": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/38",
+    "main": "8628480d9e4939590293119800921225dc3b84c7",
+    "branch": "codex/final-acceptance-traffic",
+    "newPushOrDeployment": false
+  },
+  "neon": {
+    "plan": "Launch",
+    "upgradedBy": "owner",
+    "verified": "Signed-in Neon dashboard",
+    "counterLimitation": "Usage period since 5 October; counters delayed. Zero display is not zero usage."
+  },
+  "production": {
+    "at": "2026-10-05T11:50:14.173Z",
+    "counts": {
+      "products": 120,
+      "originalMedia": 131,
+      "mediaIncludingFiveNewEditorialAssets": 136,
+      "content": 55
+    },
+    "protectedComparisons": {
+      "catalogue": true,
+      "originalMediaAndAssociations": true,
+      "business": true,
+      "preExistingContentUnchangedExcept": [
+        "page:contact",
+        "page:process"
+      ],
+      "newContentKeys": [
+        "page:collectible-design",
+        "page:commission",
+        "page:home",
+        "page:journal",
+        "page:memory-art",
+        "page:personal-art",
+        "page:search"
+      ]
+    },
+    "http": [
+      {
+        "path": "/",
+        "status": 200
+      },
+      {
+        "path": "/collectible-design",
+        "status": 200
+      },
+      {
+        "path": "/memory-art",
+        "status": 200
+      },
+      {
+        "path": "/personal-art",
+        "status": 200
+      },
+      {
+        "path": "/pieces/river-channel",
+        "status": 200
+      },
+      {
+        "path": "/commission/customize",
+        "status": 200
+      },
+      {
+        "path": "/process",
+        "status": 200
+      },
+      {
+        "path": "/our-story",
+        "status": 200
+      },
+      {
+        "path": "/materials-care",
+        "status": 200
+      },
+      {
+        "path": "/journal",
+        "status": 200
+      },
+      {
+        "path": "/contact",
+        "status": 200
+      },
+      {
+        "path": "/imprint",
+        "status": 200
+      },
+      {
+        "path": "/privacy",
+        "status": 200
+      },
+      {
+        "path": "/terms",
+        "status": 200
+      },
+      {
+        "path": "/portfolio",
+        "status": 200
+      },
+      {
+        "path": "/robots.txt",
+        "status": 200
+      },
+      {
+        "path": "/sitemap.xml",
+        "status": 200
+      }
+    ],
+    "imprint": {
+      "saved": 3,
+      "public": 2,
+      "recoveredFrom": 1,
+      "recoveryChangedPublic": false
+    },
+    "publications": [
+      {
+        "id": "page:collectible-design",
+        "saved": 4,
+        "public": 4,
+        "visible": true
+      },
+      {
+        "id": "page:commission",
+        "saved": 4,
+        "public": 4,
+        "visible": true
+      },
+      {
+        "id": "page:contact",
+        "saved": 3,
+        "public": 3,
+        "visible": true
+      },
+      {
+        "id": "page:home",
+        "saved": 5,
+        "public": 5,
+        "visible": true
+      },
+      {
+        "id": "page:imprint",
+        "saved": 3,
+        "public": 2,
+        "visible": true
+      },
+      {
+        "id": "page:journal",
+        "saved": 4,
+        "public": 4,
+        "visible": true
+      },
+      {
+        "id": "page:memory-art",
+        "saved": 4,
+        "public": 4,
+        "visible": true
+      },
+      {
+        "id": "page:personal-art",
+        "saved": 4,
+        "public": 4,
+        "visible": true
+      },
+      {
+        "id": "page:process",
+        "saved": 5,
+        "public": 5,
+        "visible": true
+      },
+      {
+        "id": "page:search",
+        "saved": 4,
+        "public": 4,
+        "visible": true
+      }
+    ],
+    "editorialMedia": [
+      {
+        "path": "/editorial/665c4586-778d-496a-9a0f-96d175d991d7",
+        "version": 3,
+        "alt": "Blue material flowing into glossy folds with gold flecks",
+        "products": []
+      },
+      {
+        "path": "/editorial/7e816186-6c85-4810-96ef-3ae00e4b7b6f",
+        "version": 3,
+        "alt": "Timber and blue resin-style table in a dark interior",
+        "products": []
+      },
+      {
+        "path": "/editorial/8a9c3fe7-db89-45b4-87b5-89b6a8386e19",
+        "version": 3,
+        "alt": "A person polishing a blue and gold decorative object",
+        "products": []
+      },
+      {
+        "path": "/editorial/976cd5bd-4145-4bb8-93b4-b30d978789b3",
+        "version": 3,
+        "alt": "Blue and gold decorative jewellery and letter keychains",
+        "products": []
+      },
+      {
+        "path": "/editorial/bad6e272-87f1-4c8b-bd04-4ba57baa3563",
+        "version": 3,
+        "alt": "Red and pale flowers displayed within a clear decorative block",
+        "products": []
+      }
+    ],
+    "translations": [
+      {
+        "id": "page:collectible-design",
+        "hi": {
+          "state": "reviewed",
+          "total": 24,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 24,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:commission",
+        "hi": {
+          "state": "reviewed",
+          "total": 16,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 16,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:contact",
+        "hi": {
+          "state": "reviewed",
+          "total": 9,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 9,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:home",
+        "hi": {
+          "state": "reviewed",
+          "total": 63,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 63,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:journal",
+        "hi": {
+          "state": "reviewed",
+          "total": 5,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 5,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:memory-art",
+        "hi": {
+          "state": "reviewed",
+          "total": 24,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 24,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:personal-art",
+        "hi": {
+          "state": "reviewed",
+          "total": 20,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 20,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:process",
+        "hi": {
+          "state": "reviewed",
+          "total": 14,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 14,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:search",
+        "hi": {
+          "state": "reviewed",
+          "total": 8,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 8,
+          "missing": 0
+        }
+      }
+    ],
+    "reviewedTranslationValues": 366,
+    "nativeReaderSignoff": false,
+    "assetProvenance": [
+      {
+        "name": "hero-pour.jpg",
+        "sourceDriveId": "17rLJSM6v8z_MqArs8lyksy1hpN8ljfru",
+        "sha256": "be54fcd332bb12dae0923a86e3d9fa074a0e052fc04520d0bdb369bf499116b7",
+        "productionPath": "/editorial/665c4586-778d-496a-9a0f-96d175d991d7",
+        "version": 3,
+        "classification": "design-visualization",
+        "productAssociations": []
+      },
+      {
+        "name": "doorway-collectible.jpg",
+        "sourceDriveId": "1o5VSIpFgnyn4Obrfh3Bowhm4-bsxz1Mj",
+        "sha256": "6934feb5740e39a5192e89d9ae506952e7f8b8ba3609f39c7eec71387a29a8be",
+        "productionPath": "/editorial/7e816186-6c85-4810-96ef-3ae00e4b7b6f",
+        "version": 3,
+        "classification": "design-visualization",
+        "productAssociations": []
+      },
+      {
+        "name": "doorway-memory.jpg",
+        "sourceDriveId": "19KOc4hLTXevHis-A0b_8gtedAgsmWRoC",
+        "sha256": "5e14af18d1837fe803ad3dcec0a80e582b3f98d602a27bedcd6c64dfe7092d96",
+        "productionPath": "/editorial/bad6e272-87f1-4c8b-bd04-4ba57baa3563",
+        "version": 3,
+        "classification": "design-visualization",
+        "productAssociations": []
+      },
+      {
+        "name": "doorway-gifts.jpg",
+        "sourceDriveId": "1woyD_wMKVigC6rp2Vky9sCojxyHAKmM-",
+        "sha256": "174e2e812ed9d275de1e773b4dcb5ce09232c48321623d2ebcce2ec12242e7b7",
+        "productionPath": "/editorial/976cd5bd-4145-4bb8-93b4-b30d978789b3",
+        "version": 3,
+        "classification": "design-visualization",
+        "productAssociations": []
+      },
+      {
+        "name": "maker-hands.jpg",
+        "sourceDriveId": "1VK6Y7T8LDJi5eEGFBFjXg26VNNVGYyVh",
+        "sha256": "138776d5f9a02ec85a613ce32d892643aed732d356779bfd36792c0b89347cd5",
+        "productionPath": "/editorial/8a9c3fe7-db89-45b4-87b5-89b6a8386e19",
+        "version": 3,
+        "classification": "design-visualization",
+        "productAssociations": []
+      }
+    ]
+  },
+  "queryEvidence": {
+    "at": "2026-10-05T09:30:52.245Z",
+    "environment": "Loopback PostgreSQL 18; synthetic temporary tables; transaction rolled back",
+    "assertions": 45,
+    "passed": true,
+    "fullListBytes": 252857,
+    "compactListBytes": 1282,
+    "listReductionPercent": 99.49,
+    "identityBytes": 49,
+    "scope": "Actual SQL projection, exact selected detail, hidden body/translation/snapshot changes, membership/version/route invalidation, empty set and failed-record lookup. No remote queries or production data."
+  },
+  "productionProjectionSizes": {
+    "full_document_bytes": "1366786",
+    "compact_row_bytes": 75249,
+    "warm_identity_bytes": 32
+  },
+  "localVerification": {
+    "unit": 290,
+    "preflight": 12,
+    "builtServer": 403,
+    "sqlAssertions": 45,
+    "publicationRecovery": 13,
+    "indexingPolicy": 19,
+    "automatedA11yScans": 144,
+    "interactionAssertions": 73,
+    "mediaMotion": 10,
+    "typecheck": "passed",
+    "build": "passed",
+    "changedFileLint": "passed",
+    "sequenceLimit": "Full server/a11y/interaction matrix precedes only final footer sizes attribute. Final build, media and focused home/process loading include it. Preflight/publication checks precede CSS/SEO-only edits."
+  },
+  "localPerformance": {
+    "at": "2026-10-05T11:05:59.035Z",
+    "profile": "Cold browser cache each sample, 390x844 DPR3 touch, CPU4x, 150ms latency, 1.6Mbps down, 750Kbps up, reduced motion. Server/image caches may be warm.",
+    "routes": [
+      {
+        "route": "/",
+        "samplesMs": [
+          2224,
+          1608,
+          1592
+        ],
+        "medianLcpMs": 1608
+      },
+      {
+        "route": "/collectible-design",
+        "samplesMs": [
+          1708,
+          1688,
+          1708
+        ],
+        "medianLcpMs": 1708
+      },
+      {
+        "route": "/pieces/river-channel",
+        "samplesMs": [
+          1508,
+          1524,
+          1484
+        ],
+        "medianLcpMs": 1508
+      },
+      {
+        "route": "/commission/customize",
+        "samplesMs": [
+          1384,
+          1384,
+          1360
+        ],
+        "medianLcpMs": 1384
+      },
+      {
+        "route": "/process",
+        "samplesMs": [
+          1656,
+          1660,
+          1624
+        ],
+        "medianLcpMs": 1656
+      },
+      {
+        "route": "/studio/inquiries",
+        "samplesMs": [
+          1664,
+          1520,
+          1512
+        ],
+        "medianLcpMs": 1520
+      },
+      {
+        "route": "/studio/content?record=page%3Ahome",
+        "samplesMs": [
+          1524,
+          1548,
+          1524
+        ],
+        "medianLcpMs": 1524
+      }
+    ],
+    "allSamplesAtOrBelow2500": true,
+    "maxCls": 0.08314238024881948,
+    "maxInteractionDiagnosticMs": 176,
+    "postFooterFollowup": [
+      {
+        "route": "/",
+        "samplesMs": [
+          1844,
+          1604,
+          1724
+        ],
+        "medianLcpMs": 1724
+      },
+      {
+        "route": "/process",
+        "samplesMs": [
+          1700,
+          1664,
+          1688
+        ],
+        "medianLcpMs": 1688
+      }
+    ],
+    "limits": "Source-only local fixtures use representative static imagery, not current production Blob assets/translations. Server/image caches may be warm. Not hosted cold start or field p75."
+  },
+  "hostedPerformance": {
+    "url": "https://pagespeed.web.dev/analysis/https-www-rivyalivingart-com-collectible-design/s92bdjkvqc?form_factor=mobile",
+    "recordedLocalTime": "2026-10-05 16:06 IST",
+    "lcpMs": 3539,
+    "performanceScore": 90,
+    "fieldData": "none",
+    "candidateDeployed": false
+  },
+  "indexing": {
+    "ownerDecision": "Enable with the next approved release",
+    "productionChangedNow": false,
+    "localPolicyTests": 19
+  },
+  "pending": [
+    "New source release with explicit push-main instruction",
+    "Production-only indexing at that release",
+    "Hosted current-asset cold performance and field p75",
+    "Human screen reader and physical phone unavailable",
+    "Remaining ten page/36 article translations and native reader review",
+    "Remaining production gallery/content signoff",
+    "Legitimate business inquiry observation and genuine conditional content"
+  ],
+  "removed": [
+    "Backup operations",
+    "Recovery-key custody"
+  ],
+  "screenshots": [
+    "imprint-live-2026-10-05.jpg",
+    "home-gu-live-2026-10-05.jpg",
+    "collection-mobile-live-2026-10-05.jpg",
+    "memory-mobile-live-2026-10-05.jpg",
+    "personal-mobile-live-2026-10-05.jpg",
+    "process-mobile-live-2026-10-05.jpg",
+    "journal-gu-live-2026-10-05.jpg"
+  ],
+  "candidateSourceFiles": [
+    {
+      "path": "next.config.ts",
+      "sha256": "f1c150a9b1679c7d09ad52bcfffcd606640acaa64bba56f4182907a94193e340"
+    },
+    {
+      "path": "src/app/api/studio/content/route.ts",
+      "sha256": "fc3dc36094f0786a74ad500bba5bb963e3dceadb98684dd2fdf735d894ae2d6c"
+    },
+    {
+      "path": "src/app/globals.css",
+      "sha256": "8f79b879da74a1e2671db8ef8adb32589b431c409be9df2bdfe871ae34897eae"
+    },
+    {
+      "path": "src/app/robots.ts",
+      "sha256": "a11016b394307236327a5a2b3c402a3a8143992770e76e13302bce0b403732b0"
+    },
+    {
+      "path": "src/app/sitemap.ts",
+      "sha256": "f28f3b3fed552ea33f5041b1b86395976eb8b68738f5e4509dfc4c9473eda68b"
+    },
+    {
+      "path": "src/components/shop/shop-frame.tsx",
+      "sha256": "347df43286b17ab08eb3f5c96639017ac10de8d57bf81c84a1245e928457d9fd"
+    },
+    {
+      "path": "src/lib/content-read-query.ts",
+      "sha256": "763223e18716d270214fcb10e529c5834cac062a28ba022d140cebd0313de7f5"
+    },
+    {
+      "path": "src/lib/public-indexing.ts",
+      "sha256": "83aa102bbfe195a721e15f13a771fe204d4651bcce5b0a11a46d8ae44eb3f7e4"
+    },
+    {
+      "path": "src/lib/publication-read-query.ts",
+      "sha256": "a628831cc211d456ec9acd8b019113b17d7ab633704894e7684fcf56e996830d"
+    },
+    {
+      "path": "src/lib/published-source.ts",
+      "sha256": "820ad4079ee91133b8632e89699e4ab1af60ad8b8e2c67aeca3d23655914d1a5"
+    },
+    {
+      "path": "src/lib/saved-content-preview.tsx",
+      "sha256": "57e01f7df7265f87082919238749746f00bd975296a7a12ba87dd3fab24b0aaf"
+    },
+    {
+      "path": "src/lib/site-metadata.ts",
+      "sha256": "0047b977c269d8c64ce61b9081be256440578d6d3cabdba0b581c2c69ffbff14"
+    },
+    {
+      "path": "tests/frontend-foundation.test.mjs",
+      "sha256": "a749c2ba3266936c4f1c3e81a7aa924372a9da5475df49926be9956ada88bcb8"
+    },
+    {
+      "path": "tests/public-indexing.test.mjs",
+      "sha256": "2fb51ed0a17027c805942d354774e33edbe8bafffc526e4e989fa1450d0ecb6b"
+    },
+    {
+      "path": "tools/c6-acceptance/README.md",
+      "sha256": "3624c79f95c4703245de25065f6748ae3031e4192f93e7648e88dd7575db2f5b"
+    },
+    {
+      "path": "tools/c6-acceptance/common.mjs",
+      "sha256": "c1a8bc3ea37d8b0fb7b663af12a3e1a749653753f30ff831f48ab1a2f26293b2"
+    },
+    {
+      "path": "tools/c6-acceptance/performance.mjs",
+      "sha256": "7c1430574a89b91709242784689045f42025b1569c1f4169c8a1f7c2d3a2b4b4"
+    },
+    {
+      "path": "tools/c6-acceptance/serve.mjs",
+      "sha256": "2be1c7fa5d6fbc8424b58baf893f99ba7bb4dfc5078e60f37bc4e7c29eb4acdd"
+    },
+    {
+      "path": "tools/final-acceptance/indexing-contracts.mjs",
+      "sha256": "2f85f95b5a637fb3907f48e6a409b278a374f821e5a38f50298a80c81a4b66cb"
+    },
+    {
+      "path": "tools/final-acceptance/local-query-contracts.mjs",
+      "sha256": "7756430ec8bcfaae60b813eedff1fd0b4a3ffdd464938490f3b165c96bedd502"
+    },
+    {
+      "path": "tools/final-acceptance/local-sql-preload.mjs",
+      "sha256": "7996df13de65e4fa491e73cdc03477eec449dd71970628aec238771b6a089307"
+    },
+    {
+      "path": "tools/final-acceptance/local-transport-check.mjs",
+      "sha256": "82a28c0feca41651ca67537cd03071794207b10603bee8f3c29d61aaccb5372b"
+    },
+    {
+      "path": "tools/final-acceptance/prepare-local-qa.mjs",
+      "sha256": "98eec3357110763d3b905736fabe9654ad97f6c30180dd9a965d1707519e9df5"
+    },
+    {
+      "path": "tools/final-acceptance/prepare-performance-fixture.mjs",
+      "sha256": "2691222a8c71da23b5d1b1bcd5afd468df0364768609418935198f9931e4c857"
+    },
+    {
+      "path": "tools/final-acceptance/preview-frames.mjs",
+      "sha256": "700abbaa27772f4b5e7397b865c5149f4ac123f27c70a2965c5b235686adb3b4"
+    },
+    {
+      "path": "tools/final-acceptance/production-read.mjs",
+      "sha256": "b333f34fbefde370362ef1b6aca65c76876431a6f8790827f0632d7b14317ee7"
+    }
+  ]
+}

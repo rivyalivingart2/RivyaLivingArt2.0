@@ -1,3 +1,13 @@
+# Current C6 disposition — 5 October acceptance follow-up
+
+New local query/CSS/logo work passes seven of seven lab medians (21 samples): home 1.608s, collection 1.708s, product 1.508s, brief 1.384s, process 1.656s, inquiries 1.520s and homepage editor 1.524s. Focused tests after the final footer-size attribute give home 1.724s and process 1.688s. These are source-only loopback fixtures, not current production Blob imagery or hosted cold starts. A hosted collection audit still measured 3.539s and no field data. **C6 remains partial.**
+
+The 290-unit/403-server candidate also passes 144 automated scans, 73 interaction assertions and ten image/motion guards; see the sequence and scope limits in [FINAL-ACCEPTANCE-2026-10-05.md](FINAL-ACCEPTANCE-2026-10-05.md). Earlier native zoom/assistant contrast evidence remains scoped evidence. Human screen-reader/physical-phone tests remain NOT RUN; the owner has neither. Backups/key custody remain removed.
+
+PR #38 released the earlier source described below. This follow-up is local on `codex/final-acceptance-traffic`; indexing is approved only with the next explicitly approved release. Imprint/editorial outcomes now have separate production evidence. The earlier measurements below remain historical, not current release-pending status.
+
+---
+
 # C6 — loading, native zoom and contrast completion pass
 
 5 October 2026. Application/tool source `f1245c7b6362abbbc3b8a1735686b334090ea190` on `codex/c6-performance-accessibility`, continuing C5 and the earlier C6 pass. **C6 remains PARTIAL:** native browser zoom and the assistant contrast review are now complete for the recorded scope; collection loading, field p75 and human screen-reader/physical-phone acceptance remain open. Changes are local only.

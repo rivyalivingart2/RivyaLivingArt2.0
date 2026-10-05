@@ -79,7 +79,8 @@ test('public offers use published projections and fixture routes remain protecte
  assert.match(read('src/app/robots.ts'),/indexingEnabled/);
  assert.match(read('src/app/robots.ts'),/disallow: "\/"/);
  assert.match(read('src/lib/published-content.ts'),/publishedSource\(\)/);
- assert.match(read('src/lib/published-source.ts'),/visible=true AND published IS NOT NULL/);
+ assert.match(read('src/lib/published-source.ts'),/publishedSourceQuery/);
+ assert.match(read('src/lib/publication-read-query.ts'),/visible=true AND published IS NOT NULL/);
 });
 test('Studio requires a real server session before rendering its workspace',()=>{
  const s=read('src/app/studio/page.tsx');assert.match(s,/await requireStudioSession\(\)/);assert.match(s,/PrivateStudioEntry/);assert.doesNotMatch(s,/localStorage|BuildHoldingScreen/);

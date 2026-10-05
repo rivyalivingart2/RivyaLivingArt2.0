@@ -1,0 +1,109 @@
+{
+  "checkedAt": "2026-10-05T07:52:00Z",
+  "request": "Use one shared database for Preview and Production and reduce unnecessary transfer.",
+  "status": "Deleted shared database recovered; both homepage checks pass. Transfer allowance remains a risk.",
+  "shared": {
+    "projectId": "blue-haze-08978208",
+    "projectName": "rivya-studio-preview",
+    "branchId": "br-muddy-poetry-awe0sju1",
+    "branchName": "main",
+    "database": "neondb",
+    "runtimeRole": "rivya_runtime_20260924",
+    "vercelProjectId": "prj_J90SIW3OHaXYsmhan527F4n8PYUc",
+    "dataMode": {
+      "preview": "shared",
+      "production": "shared"
+    },
+    "note": "Shared environment configuration already existed. Vercel sensitive connection values were not readable, so no independent secret-value equality claim is made."
+  },
+  "incident": {
+    "ownerConfirmedDeletion": true,
+    "productionError": "NeonDbError 3D000: database neondb does not exist",
+    "productionRootStatusBefore": 500,
+    "historyQueries": {
+      "databasePresentAtUTC": [
+        "2026-10-05T07:20:00Z",
+        "2026-10-05T07:25:00Z",
+        "2026-10-05T07:27:00Z",
+        "2026-10-05T07:29:00Z"
+      ],
+      "databaseAbsentAtUTC": "2026-10-05T07:30:00Z"
+    },
+    "restorePointUTC": "2026-10-05T07:29:00Z",
+    "restorePointIST": "2026-10-05 12:59",
+    "restoreCompletedAtIST": "2026-10-05 13:18:01",
+    "undoBranchName": "main_old_2026-10-05T07:29:00Z",
+    "undoBranchId": "br-snowy-queen-awig4wob",
+    "note": "Neon branch recovery retains the pre-recovery branch. No empty replacement database, new application backup feature, schedule, credential rotation, grants or content publication was introduced."
+  },
+  "verification": {
+    "databaseConnection": "passed under existing restricted runtime role",
+    "counts": {
+      "products": 120,
+      "contentEntries": 47,
+      "media": 131
+    },
+    "productionHomepage": {
+      "status": 200,
+      "title": "Art for the way you live",
+      "deploymentId": "dpl_7P4vqs1ZZ8KjJUj1RogFkfNj8GyM"
+    },
+    "previewHomepage": {
+      "status": 200,
+      "deploymentId": "dpl_GnMCz31H2hBFVXjNphzJN6ZQspFq"
+    },
+    "scope": "Small read-only identity/count and homepage checks only. Not a full record-by-record preservation audit or authenticated Studio workflow.",
+    "neonDatabaseListAfterReload": [
+      "neondb",
+      "rivya_qa_20260924",
+      "rivya_restore_20260924"
+    ],
+    "screenshotWorkspacePath": "outputs/neon-database-recovered.jpg",
+    "laterHomepageRecheck": "Not completed: shell network approval timed out; connector check was then rejected by automatic approval review because it may create a temporary authentication bypass and consume the exhausted allowance. No retry or bypass after rejection. Earlier post-recovery Production and Preview requests returned 200; continued availability after the quota warning is not certified."
+  },
+  "quota": {
+    "initialGB": 4.86,
+    "initialPercent": 97.1,
+    "latestDisplayedGB": 5.35,
+    "monthlyAllowanceGB": 5,
+    "billingPeriodStart": "2026-10-01",
+    "billingPeriodEnd": "2026-11-01",
+    "metricDelay": "Console says metrics may be delayed by an hour; warning banner remained at 97.1% while usage panel updated to 5.35 GB.",
+    "resolved": false,
+    "latestBanner": "Limit reached: all monthly network transfer allowance used"
+  },
+  "otherResources": {
+    "oldProductionProject": "frosty-tree-67209980",
+    "oldProductionLastActive": "12 days ago as shown in Neon before recovery",
+    "qaDatabase": "rivya_qa_20260924",
+    "qaSharesProjectAllowance": true,
+    "existingRestoreDatabase": "rivya_restore_20260924"
+  },
+  "boundaries": [
+    "Do not delete neondb: it serves both Preview and Production.",
+    "Do not point either application at the QA or old empty Production database.",
+    "Do not run broad remote QA, crawl, export or inventory loops against this nearly exhausted Neon project.",
+    "Existing old resource associations were not disconnected because generated environment variables can be removed by disconnection.",
+    "No paid upgrade, new recurring backup or source deployment was made."
+  ],
+  "nextTransferWork": [
+    "Reduce database-side content list projections; current editor compaction occurs after full documents cross the database connection.",
+    "Shrink publication identity responses while retaining exact fresh publication/withdrawal checks.",
+    "Use local PostgreSQL for broad QA or a separately approved test project; a separate database in the same Neon project shares its allowance.",
+    "Inspect updated quota before further database-heavy work."
+  ],
+  "sources": [
+    "https://console.neon.tech/app/projects/blue-haze-08978208",
+    "https://console.neon.tech/app/org-empty-term-87062259/billing",
+    "https://neon.com/blog/how-to-make-the-most-of-neons-free-plan"
+  ],
+  "followUp": {
+    "date": "2026-10-05",
+    "status": "Owner upgraded Neon to Launch; former Free transfer-cap incident superseded. Shared database retained.",
+    "billingChangedByAgent": false,
+    "databaseTraffic": "Local candidate projects compact SQL lists and 32-character publication digest; broad QA now uses loopback PostgreSQL.",
+    "sourceRelease": "Local only; previous PR38 release instruction fulfilled.",
+    "acceptanceReport": "FINAL-ACCEPTANCE-2026-10-05.md",
+    "historicalQuotaNote": "The quota block above records the incident-time Free plan, not current Launch allowance or current billing usage."
+  }
+}
