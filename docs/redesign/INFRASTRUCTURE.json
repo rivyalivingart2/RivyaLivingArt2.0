@@ -35,7 +35,7 @@
     "file": "scripts/redesign-preview-migration.sql",
     "sha256": "2d022e0da6e92ff9bcf3faf606075fe05cab9d5016f545b2a4f9b88a4634da09",
     "status": "Applied to Preview via single transactional DO block; whitespace-condensed rendering of tracked schema.",
-    "backup": "Atomic private schema snapshot in the same Preview database before additive DDL; baseline schema retained in scripts/studio-schema.sql",
+    "migrationIdentity": "Metadata-only marker in rivya_migration_markers after additive DDL. Snapshot creation removed by owner on 2026-10-05; no database mutation was performed for this removal.",
     "sourceSchemaSha256": "acfbe47599596ff720df57b5d3224f4e2c84d28e38a8591beddfee5a07beb447",
     "receipt": {
       "backedUpAt": "2026-09-23T15:01:15.753363+05:30",

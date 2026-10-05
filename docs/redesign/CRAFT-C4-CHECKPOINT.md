@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # C4 — editorial pages and detailed reading
 
 3 October 2026. Local presentation work on `codex/craft-visual-improvements`, continuing C3 commit `c9c2b83`. C4-01–04 and C4-06 have the scoped local/isolated QA evidence below. C4-05 is **partial: QA Imprint verified, production still unavailable (404)**. This checkpoint does not close production editorial, human/device or full-language acceptance.

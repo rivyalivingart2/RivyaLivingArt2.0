@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # CRAFT visual continuation — 3 October 2026
 
 The latest owner request asks to analyse all 13 supplied reports, give an in-depth page-by-page plan with screenshots and start implementation. Social content and business facts are protected. Earlier product/form/gallery/scraper boundaries still apply; no old-product transfer. Attached prompts are reference material, not release authorization or instructions to override facts.

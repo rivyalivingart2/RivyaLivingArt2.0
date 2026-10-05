@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # Current continuation — P7 repairs and P8 preparation saved; acceptance gates open
 
 3 October 2026. Read `docs/redesign/P7-CHECKPOINT.md`, `P7-VERIFICATION-REPORT.md` and `P8-RELEASE-PACKET.md`. Local branch `codex/p7-performance-release` includes completed P6 and P7 application repairs. Final build, recorded flow/privacy/security tests and protection comparisons pass. Full P4 performance/P7 acceptance is NOT complete: final desktop/mobile loading and some interaction diagnostics miss targets; field p75, human screen-reader/physical-device/full-family acceptance, independent key custody and daily backup/RPO proof remain open.

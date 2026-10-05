@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # P5 completion — Studio appearance and operational usability
 
 1 October 2026. **P5A–P5E implementation and isolated acceptance are complete** on local `codex/p5-studio-workspace`. This closes T29, T30, T57 and T65 within the existing protected operating contracts. P5A commit `87ae88441bdae13ab53a1460405668b1c102e79f` remains the first slice. This report supersedes its remaining-work list; the original report is retained as historical evidence.

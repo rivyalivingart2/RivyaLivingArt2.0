@@ -1,6 +1,6 @@
 import 'server-only';
 import {studioDb} from './studio-db';
-/** Off until isolated migration/backup checks are recorded. These are not public build flags. */
+/** Off until isolated migration and application checks are recorded. These are not public build flags. */
 export const intakeEnabled=()=>process.env.RIVYA_ORDER_INTAKE_ENABLED==='true';
 export const messageRetryEnabled=()=>process.env.RIVYA_ORDER_MESSAGE_RETRY_ENABLED==='true';
 export async function requireOrderWrites(mode:'intake'|'message'='intake'){

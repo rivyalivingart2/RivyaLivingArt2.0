@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # Phase 7 — Studio, Kanban and durable publishing
 
 23 September 2026. Master revision 3.8. P7.1–P7.8 complete at the source implementation gate, including the conditional decision to leave real-project authoring inactive. No application QA or runtime integration proof is claimed. Next: **P8.1**.

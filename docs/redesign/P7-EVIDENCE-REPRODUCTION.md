@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # P7 evidence reproduction
 
 Use Node 22 and the committed lockfile. Standard application checks are `npm test`, `npm run test:preflight`, `npm run lint`, `npm run build` and `npm run test:runtime`. Never start a build while an acceptance run is using the same `.next` output.

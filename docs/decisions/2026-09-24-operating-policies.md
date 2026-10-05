@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # Owner-approved operating decisions — 24 September 2026
 
 These decisions were supplied explicitly by Bhavya Gondaliya during final verification. They supersede the missing-policy and timezone questions in earlier checkpoints. They are intended policies; configuration, publication, operation and verification must be recorded separately.

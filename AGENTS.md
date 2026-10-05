@@ -1,3 +1,13 @@
+# Current owner instruction — remove project backups
+
+5 October 2026. The owner requested "REMOVE BACKUP FROM THIS PROJECT ENTIRELY". Backup generation, receipt tooling, scheduled jobs, dedicated runbooks and backup/key-custody release gates are removed from scope. Do not recreate or run them during continued C5/C6 work. Historical phase evidence below is superseded for this topic, not proof of an active schedule. Read `docs/decisions/2026-10-05-remove-backups.md`.
+
+Existing archives, keys, source history and customer data remain intact. Studio drafts, revision recovery, manual-send behavior, retention controls, erasure ledger/replay and business/contact/product facts remain protected. Keep changes local until a new explicit push-main request; then use a detailed PR. C5 acceptance, performance, accessibility, human/device and production editorial work continue independently of the retired backup scope.
+
+---
+
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # Current continuation — C5 Studio presentation implemented; full acceptance open
 
 3 October 2026. Read `docs/redesign/CRAFT-C5-CHECKPOINT.md`, the three `craft-c5-*.json` evidence files and `craft-c5-module-acceptance.csv`. Shared presentation reaches all 16 Studio modules, with labelled record state, compact inquiry filters, protected catalogue/form review, keyboard product tabs, media selection and consistent administration panels. Fifteen focused browser checks, 32 body-reflow observations, 18 isolated service assertions and 403 built-server checks passed. All protected and content/inquiry records match baseline.

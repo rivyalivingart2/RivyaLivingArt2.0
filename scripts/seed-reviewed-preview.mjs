@@ -14,8 +14,8 @@ if(candidate.products.length!==120||candidate.content.length!==47)throw new Erro
 for(const image of candidate.media){if(!image.path.startsWith('/media/')||image.path.includes('..')||!fs.existsSync(path.join(root,'public',image.path)))throw new Error('A reviewed asset is unavailable.');}
 const sql=neon(process.env.DATABASE_URL);
 try{
- const marker=await sql`SELECT migration_sha256 FROM rla_backup_20260923_p6.manifest`;
- if(!marker.length||marker[0].migration_sha256!=='acfbe47599596ff720df57b5d3224f4e2c84d28e38a8591beddfee5a07beb447')throw new Error('Preview snapshot identity did not match.');
+ const marker=await sql`SELECT migration_version FROM rivya_migration_markers WHERE migration_id='redesign-preview'`;
+ if(!marker.length||marker[0].migration_version!==1)throw new Error('Preview migration identity did not match.');
  const products=JSON.stringify(candidate.products),content=JSON.stringify(candidate.content),media=JSON.stringify(candidate.media);
  const result=await sql`WITH products AS (
  INSERT INTO rivya_catalogue(product_id,draft,published,version,published_version,visible,updated_by)
@@ -30,4 +30,4 @@ try{
  INSERT INTO rivya_audit(actor,action,entity) VALUES('Approved redesign import','preview:initial-publication',${digest})
  ) SELECT (SELECT count(*)::integer FROM products) AS products,(SELECT count(*)::integer FROM content) AS content,(SELECT count(*)::integer FROM media) AS media`;
  console.log(JSON.stringify({target:'isolated Preview',imported:result[0],sourceSha256:digest,existingRecords:'Preserved without updates'}));
-}catch{console.error('Preview publication did not complete. No credentials are logged. Check the target snapshot, schema and connection, then retry the same candidate.');process.exitCode=1;}
+}catch{console.error('Preview publication did not complete. No credentials are logged. Check the target migration marker, schema and connection, then retry the same candidate.');process.exitCode=1;}

@@ -1,7 +1,7 @@
 -- APPLIED in Phase 6 to the database now shared by future Preview/Production.
 -- Historical one-time migration: do not replay. Read PHASE-10-OPERATIONS-RUNBOOK.md
 -- and phase-6-preview-migration.json before any separately reviewed schema change.
--- No build/seed hook invokes this file. Requires reconciled schema + independent backup.
+-- No build/seed hook invokes this file. Requires reconciled schema and explicit target authorization.
 -- One-time transaction: intentionally fail on existing columns (do not hide drift).
 BEGIN;
 SET LOCAL lock_timeout = '5s';

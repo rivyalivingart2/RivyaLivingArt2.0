@@ -560,9 +560,9 @@
     },
     {
       "family": "S27",
-      "title": "Privacy, retention, backup and recovery evidence",
+      "title": "Privacy, retention and revision recovery",
       "disposition": "preserved",
-      "decision": "Existing privacy/retention/recovery controls retained. Service execution/physical-device audit remains P7; P6 runs no cleanup or backup.",
+      "decision": "Existing privacy/retention and revision recovery controls retained. Archive operations were removed by the owner on 5 October 2026; they are not a release requirement.",
       "oldRoutes": "/studio/settings",
       "newRoutes": "Shared, conditional or missing dedicated template; see specification",
       "evidence": "P6 checkpoint and source registry"
@@ -1527,7 +1527,7 @@
         "S27"
       ],
       "disposition": "preserved",
-      "decision": "Read-only canonical contact values, copy feedback and exact public/audit reference links. Phone/email/map/WhatsApp facts unchanged. Existing privacy/retention/recovery controls retained. Service execution/physical-device audit remains P7; P6 runs no cleanup or backup.",
+      "decision": "Read-only canonical contact values, copy feedback and exact public/audit reference links. Phone/email/map/WhatsApp facts unchanged. Existing privacy/retention and revision recovery controls retained. Archive operations were removed by the owner on 5 October 2026; they are not a release requirement.",
       "reference": "https://github.com/rivyalivingart2/OLDWEBSITE/blob/2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6/src/app/studio/%28dashboard%29/settings/page.tsx"
     },
     {

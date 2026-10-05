@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # C2 — detailed homepage and Studio image controls
 
 3 October 2026. Local implementation on `codex/craft-visual-improvements`, continuing the CRAFT report. C2-01/02/03/04/06 have local and isolated QA evidence. C2-05 optional video is deferred. This is not a production publication or full C0–C7 closure.

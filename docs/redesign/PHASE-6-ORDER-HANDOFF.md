@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # Phase 6 — Durable order save and saved-order WhatsApp handoff
 
 23 September 2026. P6.1–P6.8 are complete at the source and isolated Preview schema gate. Formal application QA is deferred to Phase 11; intake remains disabled. Next: P7.1. This report supplements master revision 3.6, not a new implementation plan.

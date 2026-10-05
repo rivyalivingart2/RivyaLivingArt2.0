@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # Phase 11 / current-work release checkpoint
 
 Updated 24 September 2026. The latest owner instruction is to stop further development and testing, publish the completed current work to main and intentional Vercel Preview/Production, and list every pending item. Read ../decisions/2026-09-24-publish-current-stop-testing.md and PENDING-WORK.md. Do not resume the deferred programme automatically.

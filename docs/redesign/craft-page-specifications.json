@@ -823,9 +823,9 @@
     {
       "key": "settings",
       "title": "Atelier settings",
-      "design": "Well-separated protected business facts, operational controls and recovery evidence cards.",
-      "contract": "Phone, email, socials, legal facts and scraper settings stay unchanged. Recovery and backup statuses distinguish last success, age, interval and offsite custody.",
-      "status": "Protected read-only review. Independent key copies and sustained backup history remain unverified.",
+      "design": "Well-separated protected business facts and operational controls.",
+      "contract": "Phone, email, socials, legal facts and scraper settings stay unchanged. Keep record revisions, retention and privacy controls.",
+      "status": "Protected read-only review. Archive operations are removed from project scope.",
       "route": "/studio/settings"
     }
   ],
@@ -880,11 +880,11 @@
     ],
     [
       "C6",
-      "Performance, accessibility and operational recovery",
+      "Performance and accessibility",
       "Open from P4/P7",
       "3–6 days plus observation",
-      "Profile mobile TTFB/LCP; optimize measured bottlenecks; image/motion budgets; assistive tech/device checks; independent key custody; daily backup proof.",
-      "Measured targets met or precise exception recorded; real human/device evidence; independent key status and sustained backup intervals verified."
+      "Profile mobile TTFB/LCP; optimize measured bottlenecks; image/motion budgets; assistive tech/device checks.",
+      "Measured targets met or precise exception recorded; real human/device evidence."
     ],
     [
       "C7",
@@ -949,8 +949,8 @@
       "Enforce responsive-image and motion budgets",
       "Execute keyboard, zoom and automated accessibility matrix",
       "Obtain actual screen-reader and physical-phone evidence",
-      "Verify independent password-manager and offline key custody",
-      "Observe successful daily backup intervals and recovery evidence"
+      "REMOVED BY OWNER 2026-10-05 — former C6-05",
+      "REMOVED BY OWNER 2026-10-05 — former C6-06"
     ],
     "C7": [
       "Refresh protected fingerprints and final verification ledger",

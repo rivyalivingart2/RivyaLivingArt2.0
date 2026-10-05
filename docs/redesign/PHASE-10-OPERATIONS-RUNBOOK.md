@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 # Phase 10 — Operating and recovery runbook
 
 24 September 2026. Current candidate remains unpublished and intake/message preparation are off. This runbook prepares operation; it is not evidence that production activation or recovery rehearsal occurred. See the Commercial Readiness Report for open gates.
@@ -53,22 +55,16 @@ Refresh is manual. Counts do not show WhatsApp Sent/Read/Replied or establish qu
 | Unsubmitted upload sessions/references | Guest-owned; up to three references; 24-hour cleanup eligibility; explicit admin cleanup | Confirm operating responsibility; incomplete provider deletion must be retried safely |
 | Session tokens/rate-limit guest/IP hashes | HMAC/hash, server-only secrets, time-limited sessions and counters | Bounded expired-record housekeeping without resetting active limits; these are not anonymous public analytics |
 | Administrator CSV downloads | Explicit private export, at most 5,000 rows, no private file links | Restricted local custody, documented expiry and deletion; downloaded copies do not disappear when DB rows change |
-| Encrypted database/reference backups and rollback connection files | Outside Git/provider, owner-profile DPAPI, restricted local access | Backup schedule/expiry, portable/off-device custody, restore handling of erased records and independent key recovery |
+| Previously retained private copies | Existing access restrictions and recorded retention still apply | Do not expose erased data if a retained copy is separately restored; no new archive job or custody task |
 | WhatsApp handoff | User chooses Open/Copy, then manually Send in WhatsApp; content leaves the site at that action | Explain the handoff in privacy copy; the website cannot revoke copies held in WhatsApp or prove sending |
 
 Do not promise deletion after 24 hours for submitted orders: only guest access/unsubmitted eligibility currently uses that period. The owner has already been asked for exact retention, cancellation and delivery facts. Do not invent answers or re-request blanket approval.
 
-Submitted-data deletion needs a reviewed, identity-scoped impact preview covering every copy, explicit authorized scope, durable private-object retry/outcome tracking and backup policy. The current app has no such complete mechanism. A backup receipt or simple SQL DELETE is not sufficient. No submitted data was erased in this phase.
+Submitted-data deletion needs a reviewed, identity-scoped impact preview covering every copy, explicit authorized scope, durable private-object retry/outcome tracking and retained-copy policy. The current app has no such complete mechanism. A simple SQL DELETE is not sufficient. No submitted data was erased in this phase.
 
-## Backup and full-restore gate
+## Retired archive operations
 
-The local completion artifact records the private backup location. Six encrypted files are present for the two prior database targets. CurrentUser DPAPI means the same Windows profile is required; this is independent of the database provider but not independent of the workstation. Previous receipts show decryption roundtrip and archive listing, not recovery rehearsal.
-
-Before any future live migration, take a new independent encrypted database archive plus private-reference manifest/object copy and configuration snapshot. Confirm exact target, schema, row/reference totals, checksums and private custody. Use a consistent database snapshot and reconcile references modified during backup; do not assume DB and object-store clocks form one transaction.
-
-Full rehearsal requires a different disposable database and private store: restore archive, inspect schema/grants/counts, map private references without public exposure, invalidate all restored sessions/guest access, use independent secrets, exercise authorized reads and saved-order recovery, and measure elapsed recovery time and backup age. Inspect only sanitized results in shared reports. Do not restore over either original database. Do not claim portable/offsite recovery until custody and decryption are actually proved. Cleanup of disposable resources follows verified scope and the appropriate deletion authorization.
-
-The owner must establish recovery-point/recovery-time needs and a workable backup/custody schedule. They cannot be inferred from successful `pg_restore --list`.
+Project backup generation, schedules, independent-key tasks and restore-drill gates were removed by owner instruction on 5 October 2026. Preserve existing copies and keys. Studio revision recovery and privacy deletion replay continue; see the removal decision for boundaries.
 
 ## Deliberate publication and rollback
 
@@ -77,6 +73,6 @@ The owner must establish recovery-point/recovery-time needs and a workable backu
 3. Publish validated media metadata before associated products. Apply reviewed image associations for DP110, DP112, DP113, DP115, DP117 and DP120 deliberately. New product identities require an explicitly registered approved media association; the current public reader already fails closed without one.
 4. Publish reviewed product drafts and customization schema versions; publish approved content and exact business details. The new product gate rejects missing/wrong-owner media and keeps the draft available. A later invalidated media record still fails closed in the reader; inspect the whole published catalogue again before activation.
 5. Verify real published counts, instance routes/forms, contact destination, canonicals and policy text on the exact permitted candidate. Missing or malformed business settings are not an accepted order destination.
-6. Keep all release gates held until final QA, eligible commercial hosting, restricted runtime credentials, recovery and policies pass. Only then execute Phase 12. Git publication now is not production activation.
+6. Keep all release gates held until final QA, eligible commercial hosting, restricted runtime credentials, revision recovery and policies pass. Only then execute Phase 12. Git publication now is not production activation.
 
 To roll back a content change, restore the known revision to a draft, review and deliberately publish; never silently rewrite saved order/schema/message snapshots. To roll back configuration, use the encrypted saved values only after comparing target identities and confirming no newly saved records would be stranded. Both historical resources remain preserved. Integration reconnect/rotation may overwrite saved aliases, so recheck destinations before deployment.

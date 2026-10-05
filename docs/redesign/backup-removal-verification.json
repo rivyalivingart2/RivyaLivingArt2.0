@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-05",
+  "scope": "Owner-requested removal of project backup operations",
+  "baseCommit": "c51a01d",
+  "branch": "codex/craft-visual-improvements",
+  "checks": {
+    "applicationUnitTests": { "passed": 280, "failed": 0 },
+    "repositoryPreflightTests": { "passed": 12, "failed": 0 },
+    "builtServerHttpTests": { "passed": 403, "failed": 0, "databaseCredentialsBlanked": true },
+    "changedSourceLint": "passed",
+    "optimizedBuild": "passed",
+    "buildTypeScriptCheck": "passed",
+    "changedOperatorScriptSyntax": "passed",
+    "gitDiffWhitespace": "passed",
+    "changedJsonParsing": "passed",
+    "craftTaskRegister": { "totalStableIds": 48, "removedByOwner": ["C6-05", "C6-06"] },
+    "runnableSourceScan": "No encrypted-backup, backup-receipts, pg_dump, pg_restore, backup-schema or archive-key dependency in scripts/src/tools/tests. Editing revision recovery is retained."
+  },
+  "scheduling": {
+    "codexAutomationId": "rivya-daily-encrypted-backup",
+    "codexRemovalResult": "not_found; already absent",
+    "localAutomationConfigurations": 0,
+    "rivyaWindowsScheduledTasksFound": 0,
+    "vercelCronEntries": 0,
+    "packageBackupCommands": 0,
+    "unrelatedOperatingSystemTasks": "unchanged"
+  },
+  "preserved": [
+    "Existing archives, recovery keys and credential stores",
+    "Customer records and existing database/snapshot schemas",
+    "Studio drafts, autosave, revision comparison and restoration",
+    "Managed exports, privacy-erasure ledger and deletion replay",
+    "Products, forms, galleries, scraper, contact and social facts"
+  ],
+  "limitations": [
+    "Migration SQL and seed tool were edited but not executed against any database.",
+    "No database records or saved production policies were published or changed.",
+    "Provider-managed infrastructure and retained remote archives were not altered.",
+    "The checks cover this removal, not full C5/C6 or human/device acceptance."
+  ],
+  "pushed": false,
+  "deployed": false,
+  "productionWrites": false
+}

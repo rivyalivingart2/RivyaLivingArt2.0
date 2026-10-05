@@ -1,3 +1,5 @@
+> Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
+
 > Current release authority (3 October 2026): the owner now explicitly requests main through PR #36 and Vercel production after best-available fixes/checks. See P8-FINAL-RELEASE-CHECKS.md and docs/decisions/2026-10-03-authorized-main-production.md. Draft-only holds below are historical; unresolved acceptance evidence remains accurately open.
 
 # P8 engineering follow-up — 3 October 2026
