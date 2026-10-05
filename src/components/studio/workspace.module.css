@@ -175,6 +175,7 @@
 .healthDesktop table { min-width: 1450px; }
 .healthDesktop td { max-width: 24rem; overflow-wrap: anywhere; }
 .healthMobile article, .healthMobile dd { overflow-wrap: anywhere; }
+.healthTable a,.healthMobile a { color:var(--link-color); text-decoration:underline; text-underline-offset:3px; }
 @media (max-width: 720px) { .healthDesktop { display: none; } .healthMobile { display: block; } .healthMobile dd { margin: .3rem 0 1rem; } }
 
 /* Shared P2 authoring states: normal flow, touch targets and restrained feedback. */

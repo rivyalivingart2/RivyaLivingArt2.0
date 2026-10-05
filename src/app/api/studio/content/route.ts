@@ -11,6 +11,7 @@ import {sharedCopyId} from '@/lib/shared-copy-model';
 import {publishedBusiness} from '@/lib/business-settings';
 import {bindImprintContacts} from '@/lib/imprint-content';
 import {draftState} from '@/lib/content-health';
+import {contentListDocument} from '@/lib/content-list-document';
 export const dynamic='force-dynamic';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
 const editorialComparable=editorialDocument;
@@ -25,7 +26,7 @@ export async function GET(request:Request){
   const defaults=baselineContent.filter(d=>compact||record===null||d.id===record).map(document=>({document,version:0,publishedVersion:0,published:null,visible:false}));
   const entries=[...defaults.map(e=>{const r=byId.get(e.document.id);return r?{document:r.draft,version:r.version,publishedVersion:r.published_version,published:r.published,visible:r.visible,...(e.document.id!==homeId&&!isDeepStrictEqual(englishComparable(r.draft),englishComparable(JSON.parse(JSON.stringify(e.document))))?{reviewed:e.document}:{})}:e;}),...rows.filter(r=>!baselineContent.some(b=>b.id===r.content_key)).map(r=>({document:r.draft,version:r.version,publishedVersion:r.published_version,published:r.published,visible:r.visible}))];
   // List rows never drive an editor save. Selected records keep their complete captured snapshots.
-  return json({entries:compact?entries.map(e=>e.document.id===record?e:{...e,detailPending:true,draftStatus:draftState(e.document,e.published,e.version),document:editorialDocument(e.document),published:e.published?editorialDocument(e.published):null}):entries});
+  return json({entries:compact?entries.map(e=>e.document.id===record?e:{version:e.version,publishedVersion:e.publishedVersion,visible:e.visible,detailPending:true,draftStatus:draftState(e.document,e.published,e.version),document:contentListDocument(e.document),published:e.published?contentListDocument(e.published):null}):entries});
  }catch{return json({error:'Content is temporarily unavailable.'},503);}
 }
 export async function POST(request:Request){

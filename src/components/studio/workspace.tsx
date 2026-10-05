@@ -75,11 +75,11 @@ function NavigationLinks({admin,view,onNavigate}:{admin:boolean;view?:StudioModu
  return navGroups.map(group=>{const items=group.items.filter(item=>admin||!item.adminOnly);return items.length?<div key={group.title} className={s.navGroup}><span className={s.navGroupTitle}>{group.title}</span><div className={s.navGroupList}>{items.map(item=>{const Icon=moduleIcons[item.key];return <Link key={item.key} prefetch={false} href={studioModuleHref(item)} className={s.navLink} title={item.label} aria-label={item.label} aria-current={view===item.key?'page':undefined} onClick={e=>{if(e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey)onNavigate?.(studioModuleHref(item));}}><Icon size={18} className={s.navIcon} aria-hidden="true"/><span className={s.navLabel}>{item.label}</span></Link>;})}</div></div>:null;});
 }
 
-export function Workspace(){
+export function Workspace({initial}:{initial?:{session:WorkspaceIdentity;staff:StaffMember[]}}={}){
  const path=usePathname(),activeModule=studioModule(path.split('/')[2]||''),view=activeModule?.key;
- const [identity,setIdentity]=useState<WorkspaceIdentity|null>(null),[staff,setStaff]=useState<StaffMember[]>([]),[error,setError]=useState(''),[sessionMessage,setSessionMessage]=useState('');
+ const [identity,setIdentity]=useState<WorkspaceIdentity|null>(initial?.session||null),[staff,setStaff]=useState<StaffMember[]>(initial?.staff||[]),[error,setError]=useState(''),[sessionMessage,setSessionMessage]=useState('');
  const load=useCallback(async()=>{const data=await studioFetch('/api/studio/workspace');setIdentity(data.session);setStaff(data.staff);setSessionMessage('');},[]);
- useEffect(()=>{let active=true;void studioFetch('/api/studio/workspace').then(data=>{if(active){setIdentity(data.session);setStaff(data.staff);}}).catch(e=>{if(active)setError(e.message);});return()=>{active=false;};},[]);
+ useEffect(()=>{if(initial)return;let active=true;void studioFetch('/api/studio/workspace').then(data=>{if(active){setIdentity(data.session);setStaff(data.staff);}}).catch(e=>{if(active)setError(e.message);});return()=>{active=false;};},[initial]);
  useEffect(()=>{const expired=()=>setSessionMessage('Your session expired or access changed. Keep this tab open, renew sign-in, then check access before retrying.');const focus=()=>{void load().catch(()=>setSessionMessage('Access could not be refreshed. Your unsaved editors are retained; retry after renewing sign-in.'));};window.addEventListener('studio-session-expired',expired);window.addEventListener('focus',focus);return()=>{window.removeEventListener('studio-session-expired',expired);window.removeEventListener('focus',focus);};},[load]);
  const admin=identity?.role==='admin';
  const [mobileNav,setMobileNav]=useState(false),[palette,setPalette]=useState(false),[navigationQuery,setNavigationQuery]=useState(''),[collapsed,setCollapsed]=useState(false);

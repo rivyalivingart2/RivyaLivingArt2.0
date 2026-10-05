@@ -19,6 +19,7 @@ try{for(const route of routes)for(let run=1;run<=repeats;run++){
  });
  const response=await page.goto(origin+route,{waitUntil:'load',timeout:120000});await page.waitForLoadState('networkidle',{timeout:90000});await page.evaluate(()=>document.fonts.ready);
  assert.equal(new URL(page.url()).pathname,new URL(origin+route).pathname,'Measure the requested page, never a sign-in redirect');
+ if(route.startsWith('/studio/content?')){await page.locator('#content-field-title').waitFor();await page.locator('#homepage-destinations option').first().waitFor({state:'attached'});}
  const menu=page.getByRole('button',{name:route.startsWith('/studio')?'Open Studio navigation':'Open navigation',exact:true});
  await menu.waitFor();await menu.click();await page.locator('dialog[open]').waitFor();await page.keyboard.press('Escape');
  await page.waitForTimeout(250);

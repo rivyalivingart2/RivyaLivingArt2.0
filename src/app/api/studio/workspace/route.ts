@@ -4,6 +4,7 @@ import {decodeSavedBrief} from '@/lib/saved-brief';
 import {randomUUID} from 'node:crypto';
 import {studioSession,hashStaffPassword} from '@/lib/studio-auth';
 import {studioDb} from '@/lib/studio-db';
+import {workspaceStaff} from '@/lib/studio-staff';
 import {baselineProducts,validProduct} from '@/lib/shop-model';
 import {publishedMedia} from '@/lib/published-media';
 import {originAllowed,smallJson} from '@/lib/request-security';
@@ -44,8 +45,7 @@ export async function GET(request:Request){
    const evidence={contractVersion:saved_record.contract_version||1,schemaId:saved_record.schema_id||null,schemaVersion:saved_record.schema_version||null,source:saved_record.submission_source||null,route:saved_record.source_route||null,consentVersion:saved_record.consent_version||null,consentAcceptedAt:saved_record.consent_accepted_at||null,referenceCount:saved_record.reference_count??null,messageState:saved_record.message_state||null};
    return json({inquiry:{...record,requestKind:saved_record.request_kind||'product',savedAnswers,receipt,evidence},refs,notes:notes.filter(n=>!readAmendment(n.body)),amendments,events});
   }
-  const staff=await sql`SELECT id,login,name,role,active,version FROM rivya_staff ORDER BY name`;
-  return json({session,staff:session.role==='admin'?staff:staff.filter(s=>s.active).map(s=>({id:s.id,name:s.name,role:s.role,active:s.active}))});
+  return json({session,staff:await workspaceStaff(session)});
  }catch{return json({error:'Studio data is temporarily unavailable.'},503);}
 }
 export async function POST(request:Request){
