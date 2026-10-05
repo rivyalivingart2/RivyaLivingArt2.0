@@ -1,3 +1,13 @@
+# Current checkpoint — requested release complete; remaining acceptance in progress
+
+5 October 2026. PR39 merged main `0d03d8f` and exact Vercel production `dpl_5SiSZeGuU23F3EvjZrkNAnDJXoP2` is READY. Production indexing is enabled; Preview remains false. Eighteen live checks and the 174-URL sitemap passed. Protected catalogue, original media/associations and business fingerprints still match at 18:02 UTC.
+
+Twelve pages now have published, current Hindi/Gujarati review state (472 field values). Story/materials/FAQ are public revision 3. Seven pages and 36 articles remain English fallback; native-reader sign-off, gallery/content sign-off and real human/device/field/business evidence remain open. Studio expired; renewed sign-in was requested. Do not manufacture that evidence or use database credentials to bypass the Studio editorial workflow.
+
+Post-release hosted collection LCP is 3.545s. Branch `codex/hosted-loading-editorial` prepares responsive preloading of the single opening image; full local check passes 290/12/403. Check its PR/deployment receipt before describing this follow-up as released or the target as met. It continues the owner's same pending-work/release request. No unrelated scope, product/business/social changes, backups or direct main push.
+
+---
+
 # Current owner request — release and complete the pending acceptance work
 
 5 October 2026. The owner requested work on the table including release, hosted performance, indexing and remaining editorial work. Read `docs/decisions/2026-10-05-release-final-acceptance.md`. Release the existing acceptance candidate through a detailed PR into main, verify its exact checks and Vercel production, and apply Production-only indexing as previously approved. This supersedes the local-only hold for this candidate; no direct main push or bypass.

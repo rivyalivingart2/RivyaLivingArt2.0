@@ -1,14 +1,14 @@
 # Final acceptance follow-up — 5 October 2026
 
-**Overall acceptance remains partial.** Production content work below is complete. New application changes are local on `codex/final-acceptance-traffic`, based on released main `8628480d9e4939590293119800921225dc3b84c7` (PR #38). No new push, merge, deployment or environment change occurred.
+**Overall acceptance remains partial.** The database, CSS, preview and SEO improvements below were released through [PR #39](https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/39), main `0d03d8f099b8bf5026e010ee35a68bc47740ecde`. Its exact Vercel production deployment `dpl_5SiSZeGuU23F3EvjZrkNAnDJXoP2` reached READY. The opening-image preload follow-up is separately reviewed on `codex/hosted-loading-editorial`; its PR/deployment receipt establishes release status, not this source report.
 
-The owner authorized the listed production content work and renewed Studio sign-in. Indexing is approved **with the next approved release**, not immediately.
+The owner authorized the listed release and production content work. Production indexing is now enabled and verified; Preview remains excluded. Studio sign-in expired after the twelve-page editorial pass. Further publication needs renewed sign-in; saved and published revisions remain intact.
 
 ## Production verification
 
 - The signed-in Neon console confirms the owner's **Launch** upgrade. The previous Free 5 GB cap is historical. The new usage period begins 5 October; delayed zero counters are not evidence of zero consumption. The agent made no billing change.
 - Preview/Production still share the recovered `neondb`. No deletion, reconnection, migration or grant occurred.
-- The final bounded read at **11:50:14 UTC / 17:20:14 IST** returned 200 on 17 public routes/endpoints. Studio authenticated and normal content/media editors were exercised.
+- The latest bounded read at **18:02:48 UTC / 23:32:48 IST** returned 200 on 17 public routes/endpoints. Authenticated content/media workflows were exercised earlier; the session has since expired.
 - Fingerprints match for **120 catalogue records**, **131 original media records/associations** and **business settings**. Five deliberate new editorial records bring media to 136; content contains 55 records.
 - No customer inquiry/order, staff permission, protected product/form, social account, phone or email was edited. No real customer inquiry was manufactured.
 
@@ -49,12 +49,15 @@ Each language was translated, meaning-checked against English, marked reviewed, 
 | Process | 14 | 5 |
 | Journal landing | 5 | 4 |
 | Contact | 9 | 3 |
+| Our story | 10 | 3 |
+| Materials & care | 16 | 3 |
+| FAQ | 27 | 3 |
 
-Total: **366 translated field values**. This is assistant meaning review, not independent native-speaker sign-off. Product/business facts stay in their source values. Manual WhatsApp sending, specification/timing uncertainty and illustrative-image qualifications remain explicit.
+Total: **472 translated field values** across twelve pages. This is assistant meaning review, not independent native-speaker sign-off. Product/business facts stay in their source values. Manual WhatsApp sending, specification/timing uncertainty and illustrative-image qualifications remain explicit. The latest read confirms all 24 language records are current/reviewed with zero missing fields. Story, materials and FAQ saved revision 2 previews were inspected in both languages before publishing revision 3 and verifying anonymous publication.
 
-The remaining **36 journal articles and ten other page records** still use English fallback. Shared UI labels and complete language journeys need final native-reader review. No unreviewed translation was published.
+The remaining **36 journal articles and seven other page records** still use English fallback: architects, privacy, terms, shipping/delivery, returns/cancellations, accessibility and Imprint. Shared UI labels and complete language journeys need final native-reader review. No unreviewed translation was published.
 
-## Local application improvements
+## Released application improvements
 
 1. **Database list projection:** compact unselected records are produced inside SQL before transfer. Selected records retain complete exact drafts/snapshots. Original JSONB equality computes draft state, preserving body-, translation- and snapshot-only changes.
 2. **Publication validation:** warm reads transfer a 32-character digest of ordered membership, route/kind, revision and full-document fingerprints. Every request validates; withdrawals remain immediate; storage errors fail closed. Full source and digest share one SQL snapshot. No TTL/stale fallback was added.
@@ -63,7 +66,7 @@ The remaining **36 journal articles and ten other page records** still use Engli
 5. **Preview repair:** collection/journal exact previews now include the expected revision marker; the absent marker previously produced a false failure around otherwise rendered content.
 6. **SEO preparation:** sitemap/metadata exclude private, search, saved-piece and customization flows. Preview/hold remain closed. Share images follow the published approved hero. No social posts/accounts changed.
 
-Production full documents measure **1,366,786 bytes**, versus **75,249 bytes** of candidate compact rows. Different serialized envelopes make these indicative sizes, not guaranteed wire savings. The matching-envelope synthetic test measured **252,857 → 1,282 bytes (99.49%)**. The digest value is 32 bytes; its JSON envelope is larger.
+After the twelve-page language pass, production full documents measure **1,443,146 bytes**, versus **75,249 bytes** of compact rows. Different serialized envelopes make these indicative sizes, not guaranteed wire savings. The matching-envelope synthetic test measured **252,857 → 1,282 bytes (99.49%)**. The digest value is 32 bytes; its JSON envelope is larger.
 
 ## Validation
 
@@ -87,7 +90,13 @@ Server/image caches may be warm. Fixtures use representative static imagery, not
 
 ### Hosted loading: still open
 
-A bounded [PageSpeed collection audit](https://pagespeed.web.dev/analysis/https-www-rivyalivingart-com-collectible-design/s92bdjkvqc?form_factor=mobile), 16:06 IST, measured **LCP 3.539s**, FCP 1.501s, TBT 69ms, CLS 0, performance 90 and no real-user data. Local CSS/database fixes are not deployed.
+The [post-release PageSpeed collection audit](https://pagespeed.web.dev/analysis/https-www-rivyalivingart-com-collectible-design/p5am6z0vv1?form_factor=mobile), 17:49 IST, measured **LCP 3.545s**, FCP 1.351s, TBT 125ms, CLS 0, performance 88 and no real-user data. Accessibility, best-practices and SEO scores were 100. These are automated results only.
+
+The image breakdown reports 210ms TTFB, 960ms resource discovery delay, 1700ms load duration and 80ms render delay. The opening image, not animation, is the LCP element. The follow-up changes the single priority editorial image from eager/high fetch priority to Next's responsive preload; below-fold images remain lazy. It keeps quality, source, crop and protected media unchanged. A fresh full check passes (290 unit, 12 preflight, 403 built-server). Local rendered HTML contains one matching responsive opening-image preload; throttled browser inspection confirms it initiates through the link. This mechanism check does not certify the hosted 2.5s target.
+
+### Released indexing
+
+Production-only `SITE_INDEXABLE=true` was applied before the PR39 deployment. Preview remains false. Eighteen bounded live checks passed at 12:17:39 UTC: public pages return index/follow, private/transient routes noindex, protected API returns 401, unknown route returns 404, robots permits public crawling and the sitemap contains 174 unique allowed URLs. Preview robots separately returns `Disallow: /`. This enables crawling; it does not promise that Google has indexed the site.
 
 ### Other verification
 
@@ -109,12 +118,12 @@ The 403 built-server and 144/73 browser runs include graph CSS/SEO and precede o
 
 | Item | Next action |
 |---|---|
-| New source release | New explicit push-main request, detailed PR, exact-head checks, PR merge and verified Vercel deployment. No direct main push. |
-| Indexing | Owner approved next release: Production-only SITE_INDEXABLE=true, then verify robots/sitemap/canonical/private exclusions. |
-| Hosted mobile target | Test deployed candidate with current assets, intended region and cold CDN/image/server conditions. Current hosted collection: 3.539s. |
+| Requested source release | PR39 complete; exact main and READY production verified. Opening-image preload follow-up has separate PR/check/deployment evidence. No direct main push. |
+| Indexing | Complete for the PR39 release: Production enabled; Preview/private/transient exclusions verified. Search-engine inclusion itself takes external crawling. |
+| Hosted mobile target | Current post-PR39 collection: 3.545s. Verify preload follow-up with current assets and cold hosted conditions. |
 | Real-user performance | Eligible real traffic; lab menu timing is not p75 INP. No invented analytics or unapproved tracking. |
 | Human/device | NOT RUN; owner has neither available. Existing checklist awaits tester/equipment. |
-| Remaining editorial/language review | Ten other pages, 36 articles, shared labels and remaining gallery crops; native-reader review and deliberate publication. Keep English fallback meanwhile. |
+| Remaining editorial/language review | Seven other pages, 36 articles, shared labels and remaining gallery crops; native-reader review and deliberate publication. Keep English fallback meanwhile. Studio renewal requested after session expiry. |
 | Genuine business evidence | Real approved portfolio/testimonials/consent and observation of a legitimate inquiry; do not fabricate them. |
 
 Video, new-product media associations, workshops/supplies/3D offerings, unconfirmed legacy URL identities and conversion analytics remain conditional. **Backups/key custody remain removed by owner.** Draft/revision recovery remains supported.
@@ -125,5 +134,5 @@ Sanitized receipt: [final-acceptance-evidence-2026-10-05.json](final-acceptance-
 
 Workspace `outputs` screenshots: `imprint-live-2026-10-05.jpg`, `home-gu-live-2026-10-05.jpg`, collection/memory/personal/process mobile images and `journal-gu-live-2026-10-05.jpg`.
 
-PRs #37/#38 supersede older source-release-pending rows; the old Imprint 404 and Free quota state are historical. The register now separates the released base from this unreleased follow-up. C6 and overall acceptance remain partial for the explicit limits above.
+PRs #37/#38/#39 supersede their older source-release-pending rows; the old Imprint 404, Free quota and indexing hold are historical. The register separates released source from remaining acceptance. C6 and overall acceptance remain partial for the explicit limits above.
 
