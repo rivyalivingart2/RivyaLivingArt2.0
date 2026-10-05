@@ -29,8 +29,10 @@ export function SiteSettingsEditor(){
  const [dirty,setDirty]=useState(false),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading navigation…');
 
  async function load(){
-  const next=await studioFetch('/api/studio/site-settings');
-  setData(next);setDirty(false);setMessage('Navigation and language settings loaded.');
+  setBusy(true);
+  try{const next=await studioFetch('/api/studio/site-settings');setData(next);setDirty(false);setMessage('Navigation and language settings loaded.');return true;}
+  catch(e){setMessage((e instanceof Error?e.message:'Navigation could not be loaded.')+(data?' Previously loaded settings and any unsaved edits are retained; saved settings may be out of date.':' Use Reload to try again.'));return false;}
+  finally{setBusy(false);}
  }
  useEffect(()=>{let active=true;void studioFetch('/api/studio/site-settings').then(next=>{if(active){setData(next);setMessage('Changes publish across the public site after review.');}}).catch(e=>{if(active)setMessage(e.message);});return()=>{active=false;};},[]);
  useEffect(()=>{const warn=(e:BeforeUnloadEvent)=>{if(dirty){e.preventDefault();e.returnValue='';}};window.addEventListener('beforeunload',warn);return()=>window.removeEventListener('beforeunload',warn);},[dirty]);
@@ -52,8 +54,8 @@ export function SiteSettingsEditor(){
   setBusy(true);setMessage('Publishing navigation and language settings…');
   try{
    const saved=await studioFetch('/api/studio/site-settings',data);
-   setData({...data,version:saved.version});setDirty(false);await load();
-   setMessage('Navigation and language settings published.');
+   setData({...data,version:saved.version});setDirty(false);const refreshed=await load();
+   setMessage(refreshed?'Navigation and language settings published.':'Navigation was published, but saved settings could not refresh. Use Reload before making another change; do not publish again.');
   }catch(e){setMessage(e instanceof Error?e.message:'Settings were not saved.');}
   finally{setBusy(false);}
  }
@@ -61,7 +63,7 @@ export function SiteSettingsEditor(){
  return <>
   <div className={s.heading}><div><h1>Navigation &amp; languages.</h1><p>Control public menu order, destinations and translated labels without changing application routes.</p></div><button disabled={busy||dirty} onClick={()=>void load()}>Reload</button></div>
   <p className={s.status} role="status">{message}</p>
-  {!data?<p className={s.empty}>Loading site settings…</p>:<>
+  {!data?<p className={s.empty}>{busy||message==='Loading navigation…'?'Loading site settings…':'Saved settings are unavailable. Use Reload to try again.'}</p>:<fieldset disabled={busy} aria-label="Navigation and language settings editor">
    <section className={s.panel} data-unsaved={dirty}>
     <h2>Language availability</h2><p><Link href="/studio/translations">Review document translation coverage ↗</Link></p>
     <p className={s.help}>English is the authoritative fallback. Only English, Hindi and Gujarati are offered publicly. Other saved language settings are retained but held from the switcher. Missing or stale editorial translations use a visible English fallback.</p>
@@ -109,6 +111,6 @@ export function SiteSettingsEditor(){
    </section>
    {issues.length>0&&<div className={s.panel} role="alert"><h2>Correct these links before publishing</h2><ul>{issues.map(issue=><li key={issue.index}>{rows[issue.index]?.label.en}: {issue.message}</li>)}</ul></div>}
    <div className={s.actions}><button className={s.primary} disabled={busy||!dirty||issues.length>0} onClick={()=>void save()}>Publish navigation &amp; languages</button><button disabled={busy} onClick={()=>{if(!dirty||window.confirm('Discard unsaved navigation changes?'))void load();}}>Discard &amp; reload</button></div>
-  </>}
+  </fieldset>}
  </>;
 }

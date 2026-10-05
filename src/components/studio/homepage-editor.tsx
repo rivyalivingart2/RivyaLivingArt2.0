@@ -77,7 +77,7 @@ export function HomepageEditor({entry,admin,dirty,onChange,onSaved,onBusy,initia
  <TranslationEditor document={d} onChange={onChange} version={entry.version} dirty={dirty}/>
  {entry.published&&<details className={s.panel}><summary>Compare public version with this draft</summary><ContentCompare before={entry.published} after={d}/></details>}
  <RevisionHistory<ContentDocument> key={d.id+':'+entry.version} kind="content" entityKey={d.id} currentVersion={entry.version} currentDocument={d} onRestore={(document,version)=>{onChange(document);setRestoredFrom(version);setMessage('Earlier content is in your editor. Save a new draft, preview it, then publish when ready.');}}/>
- <DraftRecovery value={d} busy={busy} onReload={async()=>{const data=await studioFetch('/api/studio/content');const next=data.entries.find((e:HomepageEntry)=>e.document.id===d.id);if(next){onSaved(next);setLatest(null);setMessage('Latest saved draft loaded.');setVerification('');setRestoredFrom(undefined);}}}/>
+ <DraftRecovery value={d} busy={busy} onReload={async()=>{const data=await studioFetch('/api/studio/content');const next=data.entries.find((e:HomepageEntry)=>e.document.id===d.id);if(!next)throw Error('Saved homepage is unavailable. Your local draft is retained.');onSaved(next);setLatest(null);setMessage('Latest saved draft loaded.');setVerification('');setRestoredFrom(undefined);}}/>
  {admin&&entry.visible&&<details className={s.panel}><summary>Publication settings</summary><p>Hiding this document restores the established homepage until another homepage revision is published.</p><button type="button" disabled={dirty} onClick={()=>void save('hide')}>Hide homepage document</button></details>}
  </fieldset></section>;
 }

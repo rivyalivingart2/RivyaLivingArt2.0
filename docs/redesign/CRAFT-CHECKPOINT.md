@@ -1,3 +1,27 @@
+# Current owner instruction — release C5/C6 through a detailed PR
+
+5 October 2026. The owner explicitly requests all updated files in main with a PR describing every change. Read `docs/decisions/2026-10-05-publish-c5-c6-main.md` and `docs/redesign/C5-C6-MAIN-RELEASE.md`. Push the accumulated C5 acceptance/C6 branch, check the final PR head and required checks/reviews, merge through the PR, then verify main and the existing Vercel Git deployment. No direct main push or review bypass.
+
+C5 engineering acceptance is complete. C6 native zoom/assistant contrast are complete for recorded scope; collection loading, field p75 and human/physical-device evidence remain open. Release authorization does not change these results. Preserve protected products/media/business/social/customer/draft/history data. No production content publication, migration, grants, messages or backup operations. Further development returns to local-only after this release.
+
+---
+
+# Current continuation — C6 zoom/contrast complete; loading and human acceptance open
+
+5 October 2026. The owner requested full C6 completion. Local application source `f1245c7` on `codex/c6-performance-accessibility` improves Studio startup, content-list payloads and validated public reads; fixes badges, named groups and repair-link contrast. Read `docs/redesign/CRAFT-C6-CHECKPOINT.md` and `craft-c6-evidence.json`. The current candidate passes 288 unit, 12 preflight, 403 built-server checks, 144 accessibility scans, 73 interaction assertions, 99 native zoom observations, 98 contrast states and 13 isolated publishing/recovery checks. All pre-existing/protected records remain intact; one new QA fixture is hidden with history retained.
+
+C6 remains PARTIAL: 6/7 mobile lab medians meet 2.5s, but collection is 2.808s and field p75 is unavailable. Native 200%/400% zoom and assistant contrast review are complete for their recorded scope. The owner has no physical phone or screen reader available; human evidence remains NOT RUN. Backups/key custody remain removed. C7 has not started. Keep work local until a new explicit push-main request, then use a detailed PR. No production write or deployment occurred. Earlier C6 statuses below are historical.
+
+---
+
+# Current CRAFT checkpoint — C5 accepted locally, 5 October 2026
+
+C1–C5 presentation and backup removal were released through PR #37 at `1b3cbbc`. The subsequent C5 permission/error/publishing/recovery acceptance is now complete on local source `0c5dfc5`. See [CRAFT-C5-ACCEPTANCE.md](CRAFT-C5-ACCEPTANCE.md). These new fixes have not been pushed or deployed.
+
+C6 remains next: performance and wider accessibility/native zoom/human/device evidence. Optional C2 video and production editorial work, including the previously unavailable Imprint, remain separate. Backup/key-custody work is removed. The dated plan below is historical; use the current task register and C5 receipt for status.
+
+---
+
 > Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
 
 # CRAFT visual continuation — 3 October 2026

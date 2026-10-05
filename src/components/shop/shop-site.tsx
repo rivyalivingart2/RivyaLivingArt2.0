@@ -8,6 +8,7 @@ import {WebsiteStructuredData,ProductStructuredData,CollectionStructuredData} fr
 import Link from 'next/link';
 import {notFound} from 'next/navigation';
 import {publishedProducts} from '@/lib/shop-catalogue';
+import {publishedSource} from '@/lib/published-source';
 import type {ShopProduct} from '@/lib/shop-model';
 import {collectionLinks,collectionLabels,productCare,relatedProducts} from '@/lib/shop-discovery';
 import {ShopShell} from './shop-shell';
@@ -19,7 +20,7 @@ import {ProductCard} from './product-card';
 import {HeroImage} from './hero-image';
 import {publishedBusiness} from '@/lib/business-settings';
 import {publicLocale} from '@/lib/site-settings';
-import {OrderForm} from './order-form';
+import {OrderForm} from './order-form-entry';
 import {EditorialPage,ArticleCard} from './editorial';
 import {publishedContent} from '@/lib/published-content';
 import type {ContentDocument} from '@/lib/content-model';
@@ -51,7 +52,9 @@ function Home({products,articles}:{products:ShopProduct[];articles:ContentDocume
  </div>;
 }
 export async function ShopSite({route}:{route:string}){
- const locale=await publicLocale();
+ // Start the render-local publication read with the independent locale read.
+ // The publication reader still validates current state on every request.
+ const [locale]=await Promise.all([publicLocale(),publishedSource()]);
  const needsCatalogue=route==='/'||route.startsWith('/pieces/')||['/collectible-design','/memory-art','/personal-art','/search','/commission','/preserve','/personalize','/portfolio'].includes(route);
  const [products,documents,business]=await Promise.all([needsCatalogue?publishedProducts(locale):Promise.resolve([]),route==='/'||isDiscoveryRoute(route)?publishedContent(locale,route):Promise.resolve([]),publishedBusiness()]);let content:React.ReactNode;
  if(route==='/'){

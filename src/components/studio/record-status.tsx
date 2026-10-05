@@ -4,6 +4,6 @@ export function RecordStatus({id,version,publication,draft,dirty,busy}:{id:strin
   <div><dt>Record</dt><dd>{id}</dd></div>
   <div><dt>Saved revision</dt><dd>{version}</dd></div>
   <div><dt>Publication</dt><dd>{publication}</dd></div>
-  <div><dt>Editing state</dt><dd role="status">{busy?'Saving…':dirty?'Unsaved changes':draft}</dd></div>
+  <div><dt>Editing state</dt><dd><span role="status">{busy?'Saving…':dirty?'Unsaved changes':draft}</span></dd></div>
  </dl>;
 }

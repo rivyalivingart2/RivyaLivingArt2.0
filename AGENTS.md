@@ -1,3 +1,29 @@
+# Current owner instruction — release C5/C6 through a detailed PR
+
+5 October 2026. The owner explicitly requests all updated files in main with a PR describing every change. Read `docs/decisions/2026-10-05-publish-c5-c6-main.md` and `docs/redesign/C5-C6-MAIN-RELEASE.md`. Push the accumulated C5 acceptance/C6 branch, check the final PR head and required checks/reviews, merge through the PR, then verify main and the existing Vercel Git deployment. No direct main push or review bypass.
+
+C5 engineering acceptance is complete. C6 native zoom/assistant contrast are complete for recorded scope; collection loading, field p75 and human/physical-device evidence remain open. Release authorization does not change these results. Preserve protected products/media/business/social/customer/draft/history data. No production content publication, migration, grants, messages or backup operations. Further development returns to local-only after this release.
+
+---
+
+# Current continuation — C6 zoom/contrast complete; loading and human acceptance open
+
+5 October 2026. The owner requested full C6 completion. Local application source `f1245c7` on `codex/c6-performance-accessibility` improves Studio startup, content-list payloads and validated public reads; fixes badges, named groups and repair-link contrast. Read `docs/redesign/CRAFT-C6-CHECKPOINT.md` and `craft-c6-evidence.json`. The current candidate passes 288 unit, 12 preflight, 403 built-server checks, 144 accessibility scans, 73 interaction assertions, 99 native zoom observations, 98 contrast states and 13 isolated publishing/recovery checks. All pre-existing/protected records remain intact; one new QA fixture is hidden with history retained.
+
+C6 remains PARTIAL: 6/7 mobile lab medians meet 2.5s, but collection is 2.808s and field p75 is unavailable. Native 200%/400% zoom and assistant contrast review are complete for their recorded scope. The owner has no physical phone or screen reader available; human evidence remains NOT RUN. Backups/key custody remain removed. C7 has not started. Keep work local until a new explicit push-main request, then use a detailed PR. No production write or deployment occurred. Earlier C6 statuses below are historical.
+
+---
+
+# Current continuation — C5 acceptance complete locally; C6 next
+
+5 October 2026. The owner requested completion of C5 permission, error-handling and publishing/recovery acceptance before C6. That work is complete in isolated QA on `codex/c5-acceptance`, source `0c5dfc5`. Read `docs/redesign/CRAFT-C5-ACCEPTANCE.md` and `craft-c5-acceptance-evidence.json`. All six C5 task rows are accepted for their engineering scope. The new repairs and evidence are local; PR #37 already fulfilled the prior push instruction.
+
+The current candidate passes 283 unit, 12 preflight and 403 built-server tests, typecheck/build, 90 service assertions, real browser draft/preview/publish/public verification/recovery, protected-editor failures, all-module retry/layout and keyboard checks. All protected and pre-existing records remain intact. Synthetic fixtures are retired with history. No production publication, messages, exports or erasures occurred.
+
+C6 has not been started by this pass. Performance, wider accessibility, native browser zoom/human screen-reader/physical-phone verification, optional C2 video and production editorial acceptance remain separate. The last recorded production Imprint result was 404. Backup operations and key-custody gates remain removed. Keep further work local until a new explicit push-main request, then use a detailed PR. Never copy QA content/media identities to production.
+
+---
+
 # Current owner instruction — publish CRAFT through a detailed PR
 
 5 October 2026. The owner explicitly requested all updated files in main with a PR documenting every change. Read `docs/decisions/2026-10-05-publish-craft-main.md` and `docs/redesign/CRAFT-MAIN-RELEASE.md`. Push the complete CRAFT branch, verify the exact PR head and required checks, then merge through the PR and verify the existing Vercel Git deployment. Do not push directly to main or bypass required reviews. This release includes C1–C5 source and backup removal; it does not certify unfinished C5/C6 or publish Studio records. Preserve protected data and archive/key removal boundaries. Later development returns to local-only until a new push-main request.
