@@ -1,6 +1,6 @@
 {
   "recordedAt": "2026-10-05T11:50:14.173Z",
-  "status": "Partial overall acceptance; local source candidate unreleased",
+  "status": "PR39 released; indexing live; overall acceptance partial",
   "base": {
     "pr": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/38",
     "main": "8628480d9e4939590293119800921225dc3b84c7",
@@ -642,5 +642,356 @@
       "path": "tools/final-acceptance/production-read.mjs",
       "sha256": "b333f34fbefde370362ef1b6aca65c76876431a6f8790827f0632d7b14317ee7"
     }
-  ]
+  ],
+  "latest": {
+    "transfer": {
+      "full_document_bytes": "1443146",
+      "compact_row_bytes": 75249,
+      "warm_identity_bytes": 32
+    },
+    "translatedValues": 472,
+    "protected": {
+      "business": true,
+      "originalMedia": true,
+      "catalogue": true
+    },
+    "release": {
+      "at": "2026-10-05T12:17:39.864Z",
+      "main": "0d03d8f099b8bf5026e010ee35a68bc47740ecde",
+      "deployment": "dpl_5SiSZeGuU23F3EvjZrkNAnDJXoP2",
+      "checks": [
+        {
+          "path": "/",
+          "status": 200,
+          "robots": "index, follow",
+          "headerRobots": null,
+          "canonical": "https://www.rivyalivingart.com",
+          "deploymentMarker": true
+        },
+        {
+          "path": "/collectible-design",
+          "status": 200,
+          "robots": "index, follow",
+          "headerRobots": null,
+          "canonical": "https://www.rivyalivingart.com/collectible-design",
+          "deploymentMarker": true
+        },
+        {
+          "path": "/memory-art",
+          "status": 200,
+          "robots": "index, follow",
+          "headerRobots": null,
+          "canonical": "https://www.rivyalivingart.com/memory-art",
+          "deploymentMarker": true
+        },
+        {
+          "path": "/personal-art",
+          "status": 200,
+          "robots": "index, follow",
+          "headerRobots": null,
+          "canonical": "https://www.rivyalivingart.com/personal-art",
+          "deploymentMarker": true
+        },
+        {
+          "path": "/pieces/river-channel",
+          "status": 200,
+          "robots": "index, follow",
+          "headerRobots": null,
+          "canonical": "https://www.rivyalivingart.com/pieces/river-channel",
+          "deploymentMarker": true
+        },
+        {
+          "path": "/process",
+          "status": 200,
+          "robots": "index, follow",
+          "headerRobots": null,
+          "canonical": "https://www.rivyalivingart.com/process",
+          "deploymentMarker": true
+        },
+        {
+          "path": "/journal",
+          "status": 200,
+          "robots": "index, follow",
+          "headerRobots": null,
+          "canonical": "https://www.rivyalivingart.com/journal",
+          "deploymentMarker": true
+        },
+        {
+          "path": "/contact",
+          "status": 200,
+          "robots": "index, follow",
+          "headerRobots": null,
+          "canonical": "https://www.rivyalivingart.com/contact",
+          "deploymentMarker": true
+        },
+        {
+          "path": "/imprint",
+          "status": 200,
+          "robots": "index, follow",
+          "headerRobots": null,
+          "canonical": "https://www.rivyalivingart.com/imprint",
+          "deploymentMarker": true
+        },
+        {
+          "path": "/search",
+          "status": 200,
+          "robots": "noindex, nofollow",
+          "headerRobots": null,
+          "canonical": "https://www.rivyalivingart.com/search",
+          "deploymentMarker": true
+        },
+        {
+          "path": "/saved-pieces",
+          "status": 200,
+          "robots": "noindex, nofollow",
+          "headerRobots": null,
+          "canonical": null,
+          "deploymentMarker": true
+        },
+        {
+          "path": "/commission/customize",
+          "status": 200,
+          "robots": "noindex, nofollow",
+          "headerRobots": "noindex, nofollow, noarchive",
+          "canonical": null,
+          "deploymentMarker": true
+        },
+        {
+          "path": "/studio/login",
+          "status": 200,
+          "robots": "noindex, nofollow, noarchive",
+          "headerRobots": "noindex, nofollow, noarchive",
+          "canonical": null,
+          "deploymentMarker": true
+        },
+        {
+          "path": "/studio",
+          "status": 307,
+          "robots": "noindex, nofollow, noarchive",
+          "headerRobots": "noindex, nofollow, noarchive",
+          "canonical": null,
+          "deploymentMarker": true
+        },
+        {
+          "path": "/api/studio/content",
+          "status": 401,
+          "robots": null,
+          "headerRobots": "noindex, nofollow, noarchive",
+          "canonical": null,
+          "deploymentMarker": false
+        },
+        {
+          "path": "/missing-release-check-20261005",
+          "status": 404,
+          "robots": "noindex",
+          "headerRobots": null,
+          "canonical": null,
+          "deploymentMarker": true
+        },
+        {
+          "path": "/robots.txt",
+          "status": 200,
+          "robots": null,
+          "headerRobots": null,
+          "canonical": null,
+          "deploymentMarker": false,
+          "content": "User-Agent: *\nAllow: /\nDisallow: /studio\nDisallow: /api/\nDisallow: /inquiry/\nDisallow: /preview/\nDisallow: /search\nDisallow: /saved-pieces\nDisallow: /pieces/*/customize\nDisallow: /commission/customize\nDisallow: /personalize\nDisallow: /preserve\n\nSitemap: https://www.rivyalivingart.com/sitemap.xml\n"
+        },
+        {
+          "path": "/sitemap.xml",
+          "status": 200,
+          "robots": null,
+          "headerRobots": null,
+          "canonical": null,
+          "deploymentMarker": false,
+          "urls": 174,
+          "exclusionsVerified": true
+        }
+      ],
+      "scope": "18 bounded anonymous HTTP reads; no database writes, inquiries or messages"
+    },
+    "remainingPages": 7,
+    "preloadFollowup": {
+      "validation": "Full check: 290 unit, 12 preflight, 403 built-server; local responsive preload initiates image via link",
+      "branch": "codex/hosted-loading-editorial",
+      "hostedTarget": "not yet established"
+    },
+    "at": "2026-10-05T18:02:48.696Z",
+    "translations": [
+      {
+        "id": "page:collectible-design",
+        "hi": {
+          "state": "reviewed",
+          "total": 24,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 24,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:commission",
+        "hi": {
+          "state": "reviewed",
+          "total": 16,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 16,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:contact",
+        "hi": {
+          "state": "reviewed",
+          "total": 9,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 9,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:faq",
+        "hi": {
+          "state": "reviewed",
+          "total": 27,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 27,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:home",
+        "hi": {
+          "state": "reviewed",
+          "total": 63,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 63,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:journal",
+        "hi": {
+          "state": "reviewed",
+          "total": 5,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 5,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:materials-care",
+        "hi": {
+          "state": "reviewed",
+          "total": 16,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 16,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:memory-art",
+        "hi": {
+          "state": "reviewed",
+          "total": 24,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 24,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:our-story",
+        "hi": {
+          "state": "reviewed",
+          "total": 10,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 10,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:personal-art",
+        "hi": {
+          "state": "reviewed",
+          "total": 20,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 20,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:process",
+        "hi": {
+          "state": "reviewed",
+          "total": 14,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 14,
+          "missing": 0
+        }
+      },
+      {
+        "id": "page:search",
+        "hi": {
+          "state": "reviewed",
+          "total": 8,
+          "missing": 0
+        },
+        "gu": {
+          "state": "reviewed",
+          "total": 8,
+          "missing": 0
+        }
+      }
+    ],
+    "remainingArticles": 36,
+    "studio": "session expired; renewal requested",
+    "nativeReaderReview": "not performed",
+    "hosted": {
+      "cls": 0,
+      "lcpPartsMs": {
+        "discovery": 960,
+        "loading": 1700,
+        "ttfb": 210,
+        "render": 80
+      },
+      "fcpMs": 1351,
+      "lcpMs": 3545,
+      "url": "https://pagespeed.web.dev/analysis/https-www-rivyalivingart-com-collectible-design/p5am6z0vv1?form_factor=mobile",
+      "fieldData": "none",
+      "score": 88,
+      "tbtMs": 125
+    }
+  }
 }
