@@ -1,0 +1,6247 @@
+{
+  "at": "2026-10-05T05:33:54.275516+00:00",
+  "sourceCommit": "ccf1ac31b14db058a7b8b01f23637ba349fff9c0",
+  "branch": "codex/c6-performance-accessibility",
+  "phaseStatus": "PARTIAL \u2014 engineering pass complete, performance and manual evidence open",
+  "pushed": false,
+  "deployed": false,
+  "validation": {
+    "unit": 283,
+    "preflight": 12,
+    "builtServer": 403,
+    "typecheck": "pass",
+    "build": "pass",
+    "lintErrors": 0,
+    "existingLintWarnings": 62,
+    "changedFileLintWarnings": 0
+  },
+  "performanceSummary": [
+    {
+      "route": "/",
+      "medianLcp": 3088,
+      "minLcp": 3008,
+      "maxLcp": 4404,
+      "medianTtfb": 1467,
+      "maxCls": 0,
+      "maxInteraction": 168,
+      "medianTransfer": 440632
+    },
+    {
+      "route": "/collectible-design",
+      "medianLcp": 4620,
+      "minLcp": 4344,
+      "maxLcp": 4708,
+      "medianTtfb": 1808,
+      "maxCls": 0,
+      "maxInteraction": 136,
+      "medianTransfer": 492393
+    },
+    {
+      "route": "/pieces/river-channel",
+      "medianLcp": 3300,
+      "minLcp": 3244,
+      "maxLcp": 3716,
+      "medianTtfb": 1163,
+      "maxCls": 0.0003256539048988118,
+      "maxInteraction": 104,
+      "medianTransfer": 461832
+    },
+    {
+      "route": "/commission/customize",
+      "medianLcp": 1680,
+      "minLcp": 1504,
+      "maxLcp": 1708,
+      "medianTtfb": 459,
+      "maxCls": 0.05984964658891885,
+      "maxInteraction": 136,
+      "medianTransfer": 399734
+    },
+    {
+      "route": "/process",
+      "medianLcp": 2560,
+      "minLcp": 2120,
+      "maxLcp": 3044,
+      "medianTtfb": 271,
+      "maxCls": 0,
+      "maxInteraction": 120,
+      "medianTransfer": 444630
+    },
+    {
+      "route": "/studio/inquiries",
+      "medianLcp": 4124,
+      "minLcp": 3828,
+      "maxLcp": 6356,
+      "medianTtfb": 721,
+      "maxCls": 0.038472544818593246,
+      "maxInteraction": 176,
+      "medianTransfer": 402756
+    },
+    {
+      "route": "/studio/content?record=page%3Ahome",
+      "medianLcp": 5156,
+      "minLcp": 5080,
+      "maxLcp": 6116,
+      "medianTtfb": 1005,
+      "maxCls": 0.034793461366762105,
+      "maxInteraction": 160,
+      "medianTransfer": 1194089
+    }
+  ],
+  "performance": {
+    "at": "2026-10-05T05:17:19.879Z",
+    "environment": "Compiled local Next server, isolated remote QA database; no production CDN",
+    "profile": "Cold browser cache each sample, 390x844 DPR3 touch, CPU4x, 150ms latency, 1.6Mbps down, 750Kbps up, reduced motion. Server/image caches may be warm.",
+    "limits": "Repeated lab samples and event maxima are diagnostics, not field p75 INP or human/physical-phone evidence.",
+    "targets": {
+      "lcp": 2500,
+      "cls": 0.1,
+      "interactionDiagnostic": 200
+    },
+    "complete": true,
+    "expectedSamples": 21,
+    "samples": [
+      {
+        "route": "/",
+        "run": 1,
+        "status": 200,
+        "lcp": 4404,
+        "cls": 0,
+        "events": [
+          168,
+          168,
+          168,
+          80
+        ],
+        "lcpElement": {
+          "tag": "IMG",
+          "path": "/_next/image",
+          "size": 304200
+        },
+        "ttfb": 2599,
+        "transfer": 440632,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2346.7999999998137,
+            "start": 2645.399999999441
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 2051.399999999441,
+            "start": 2645.7999999998137
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1397.2000000001863,
+            "start": 3532.699999999255
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 34163,
+            "duration": 1727.7000000001863,
+            "start": 2643.399999999441
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 806.8000000007451,
+            "start": 2621.699999999255
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 850.7000000001863,
+            "start": 2623.199999999255
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 821.4000000003725,
+            "start": 2622.0999999996275
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 815.1999999992549,
+            "start": 2644
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2221,
+            "start": 2647.5999999996275
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 513,
+            "start": 2621
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 390,
+            "naturalWidth": 390,
+            "sizes": "100vw",
+            "requestedWidth": 1200,
+            "loading": "eager",
+            "priority": "high",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "status": 200,
+        "lcp": 3008,
+        "cls": 0,
+        "events": [
+          136,
+          136,
+          136,
+          96,
+          16
+        ],
+        "lcpElement": {
+          "tag": "IMG",
+          "path": "/_next/image",
+          "size": 304200
+        },
+        "ttfb": 1435.1000000005588,
+        "transfer": 440630,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2281.899999999441,
+            "start": 1484.4000000003725
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1955.199999999255,
+            "start": 1484.6000000005588
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1375.2000000001863,
+            "start": 2375.7999999998137
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 34163,
+            "duration": 1487.3999999994412,
+            "start": 1482.4000000003725
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 823.7000000001863,
+            "start": 1459.7000000001863
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 856,
+            "start": 1461.2000000001863
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 822.8999999994412,
+            "start": 1460.1000000005588
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 830.7000000001863,
+            "start": 1483.2000000001863
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2094.7000000001863,
+            "start": 1486.7000000001863
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 516,
+            "start": 1458.7999999998137
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 390,
+            "naturalWidth": 390,
+            "sizes": "100vw",
+            "requestedWidth": 1200,
+            "loading": "eager",
+            "priority": "high",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "status": 200,
+        "lcp": 3088,
+        "cls": 0,
+        "events": [
+          120,
+          120,
+          120,
+          80
+        ],
+        "lcpElement": {
+          "tag": "IMG",
+          "path": "/_next/image",
+          "size": 304200
+        },
+        "ttfb": 1466.5999999996275,
+        "transfer": 440632,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2230.5,
+            "start": 1521.2999999998137
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1949.7000000001863,
+            "start": 1521.699999999255
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1465,
+            "start": 2302.5
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 34163,
+            "duration": 1299.9000000003725,
+            "start": 1519.0999999996275
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 733.1000000005588,
+            "start": 1496.8999999994412
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 746.5,
+            "start": 1497.8999999994412
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 1182.5999999996275,
+            "start": 1497.0999999996275
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 710.1000000005588,
+            "start": 1519.699999999255
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2040.7999999998137,
+            "start": 1524.0999999996275
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 531.2000000001863,
+            "start": 1496.3999999994412
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 390,
+            "naturalWidth": 390,
+            "sizes": "100vw",
+            "requestedWidth": 1200,
+            "loading": "eager",
+            "priority": "high",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/collectible-design",
+        "run": 1,
+        "status": 200,
+        "lcp": 4344,
+        "cls": 0,
+        "events": [
+          120,
+          120,
+          120,
+          64
+        ],
+        "lcpElement": {
+          "tag": "IMG",
+          "path": "/_next/image",
+          "size": 99684
+        },
+        "ttfb": 1496.2999999998137,
+        "transfer": 492394,
+        "resources": [
+          {
+            "path": "/_next/image",
+            "bytes": 89617,
+            "duration": 2592,
+            "start": 1548
+          },
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2543.699999999255,
+            "start": 1550.2000000001863
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 2094.7000000001863,
+            "start": 1550.3999999994412
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1405.5,
+            "start": 2469.0999999996275
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 815.2999999998137,
+            "start": 1524
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 875.5,
+            "start": 1526.0999999996275
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 830.1000000005588,
+            "start": 1524.5999999996275
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 837.9000000003725,
+            "start": 1548.3999999994412
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2479.7000000001863,
+            "start": 1552.5
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 535,
+            "start": 1523.2999999998137
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 351,
+            "naturalWidth": 332,
+            "sizes": "(max-width: 780px) 90vw, 42vw",
+            "requestedWidth": 1080,
+            "loading": "eager",
+            "priority": "high",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/collectible-design",
+        "run": 2,
+        "status": 200,
+        "lcp": 4708,
+        "cls": 0,
+        "events": [
+          120,
+          120,
+          120,
+          72,
+          16
+        ],
+        "lcpElement": {
+          "tag": "IMG",
+          "path": "/_next/image",
+          "size": 99684
+        },
+        "ttfb": 1890.2999999998137,
+        "transfer": 492393,
+        "resources": [
+          {
+            "path": "/_next/image",
+            "bytes": 89617,
+            "duration": 2523.0999999996275,
+            "start": 1938.4000000003725
+          },
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2505.2999999998137,
+            "start": 1940.9000000003725
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 2069.5,
+            "start": 1941.2999999998137
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1524.7000000001863,
+            "start": 2811.7000000001863
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 742.3000000007451,
+            "start": 1915.2999999998137
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 756.2999999998137,
+            "start": 1916.7000000001863
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 1177.6000000005588,
+            "start": 1915.7999999998137
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 688,
+            "start": 1939.2000000001863
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2471.5999999996275,
+            "start": 1943.2000000001863
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 527,
+            "start": 1914.9000000003725
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 351,
+            "naturalWidth": 332,
+            "sizes": "(max-width: 780px) 90vw, 42vw",
+            "requestedWidth": 1080,
+            "loading": "eager",
+            "priority": "high",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/collectible-design",
+        "run": 3,
+        "status": 200,
+        "lcp": 4620,
+        "cls": 0,
+        "events": [
+          136,
+          136,
+          136,
+          80,
+          16
+        ],
+        "lcpElement": {
+          "tag": "IMG",
+          "path": "/_next/image",
+          "size": 99684
+        },
+        "ttfb": 1808.1000000005588,
+        "transfer": 492393,
+        "resources": [
+          {
+            "path": "/_next/image",
+            "bytes": 89617,
+            "duration": 2558.9000000003725,
+            "start": 1852
+          },
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2526,
+            "start": 1853.7999999998137
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 2076.2999999998137,
+            "start": 1854.1000000005588
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1405.5,
+            "start": 2756.9000000003725
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 822.4000000003725,
+            "start": 1830.7999999998137
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 852.0999999996275,
+            "start": 1832.4000000003725
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 806.2999999998137,
+            "start": 1831.4000000003725
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 816.1000000005588,
+            "start": 1852.5
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2476.2000000001863,
+            "start": 1856.2999999998137
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 510.5,
+            "start": 1830.4000000003725
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 351,
+            "naturalWidth": 332,
+            "sizes": "(max-width: 780px) 90vw, 42vw",
+            "requestedWidth": 1080,
+            "loading": "eager",
+            "priority": "high",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/pieces/river-channel",
+        "run": 1,
+        "status": 200,
+        "lcp": 3716,
+        "cls": 0.0003256539048988118,
+        "events": [
+          104,
+          104,
+          104,
+          48
+        ],
+        "lcpElement": {
+          "tag": "IMG",
+          "path": "/_next/image",
+          "size": 152207
+        },
+        "ttfb": 1838.2999999998137,
+        "transfer": 461830,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2421.7999999998137,
+            "start": 1897.2000000001863
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 49836,
+            "duration": 1770,
+            "start": 1895
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 2015.7999999998137,
+            "start": 1897.5999999996275
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1309.5999999996275,
+            "start": 2743.2999999998137
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 754.7000000001863,
+            "start": 1873.5
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 768.8999999994412,
+            "start": 1874.7000000001863
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 1217.2999999998137,
+            "start": 1873.7000000001863
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 652.9000000003725,
+            "start": 1895.5999999996275
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2434.2000000001863,
+            "start": 1900.0999999996275
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 550.2999999998137,
+            "start": 1873.0999999996275
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 349,
+            "naturalWidth": 349,
+            "sizes": "(max-width:780px) calc(100vw - 40px), (max-width:1200px) 48vw, 44vw",
+            "requestedWidth": 1080,
+            "loading": "eager",
+            "priority": "high",
+            "complete": true
+          },
+          {
+            "width": 68,
+            "naturalWidth": 70,
+            "sizes": "70px",
+            "requestedWidth": 1080,
+            "loading": "lazy",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 68,
+            "naturalWidth": 70,
+            "sizes": "70px",
+            "requestedWidth": 256,
+            "loading": "lazy",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 68,
+            "naturalWidth": 70,
+            "sizes": "70px",
+            "requestedWidth": 256,
+            "loading": "lazy",
+            "priority": "auto",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/pieces/river-channel",
+        "run": 2,
+        "status": 200,
+        "lcp": 3244,
+        "cls": 0.0003256539048988118,
+        "events": [
+          104,
+          104,
+          104,
+          64
+        ],
+        "lcpElement": {
+          "tag": "IMG",
+          "path": "/_next/image",
+          "size": 152207
+        },
+        "ttfb": 1162.8999999994412,
+        "transfer": 461834,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2500.7000000001863,
+            "start": 1207.5999999996275
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 49836,
+            "duration": 2006.5,
+            "start": 1205.2999999998137
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 2051.2999999998137,
+            "start": 1208.0999999996275
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1317.8999999994412,
+            "start": 2109.7000000001863
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 824.2000000001863,
+            "start": 1184.5
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 854,
+            "start": 1186
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 839.6999999992549,
+            "start": 1184.7000000001863
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 821.7000000001863,
+            "start": 1206
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2498.7000000001863,
+            "start": 1209.8999999994412
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 540.8000000007451,
+            "start": 1183.8999999994412
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 349,
+            "naturalWidth": 349,
+            "sizes": "(max-width:780px) calc(100vw - 40px), (max-width:1200px) 48vw, 44vw",
+            "requestedWidth": 1080,
+            "loading": "eager",
+            "priority": "high",
+            "complete": true
+          },
+          {
+            "width": 68,
+            "naturalWidth": 70,
+            "sizes": "70px",
+            "requestedWidth": 1080,
+            "loading": "lazy",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 68,
+            "naturalWidth": 70,
+            "sizes": "70px",
+            "requestedWidth": 256,
+            "loading": "lazy",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 68,
+            "naturalWidth": 70,
+            "sizes": "70px",
+            "requestedWidth": 256,
+            "loading": "lazy",
+            "priority": "auto",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/pieces/river-channel",
+        "run": 3,
+        "status": 200,
+        "lcp": 3300,
+        "cls": 0.0003256539048988118,
+        "events": [
+          104,
+          104,
+          104,
+          64
+        ],
+        "lcpElement": {
+          "tag": "IMG",
+          "path": "/_next/image",
+          "size": 152207
+        },
+        "ttfb": 1150.5,
+        "transfer": 461832,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2505.600000000559,
+            "start": 1212
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 49836,
+            "duration": 2059.199999999255,
+            "start": 1209.6000000005588
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 2087.600000000559,
+            "start": 1212.2999999998137
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1301.9000000003725,
+            "start": 2121.2999999998137
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 852,
+            "start": 1187.1000000005588
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 866,
+            "start": 1188.7999999998137
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 866.7999999998137,
+            "start": 1187.7000000001863
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 846.8999999994412,
+            "start": 1210.4000000003725
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2518.7999999998137,
+            "start": 1214.5
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 556.6000000005588,
+            "start": 1186.5
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 349,
+            "naturalWidth": 349,
+            "sizes": "(max-width:780px) calc(100vw - 40px), (max-width:1200px) 48vw, 44vw",
+            "requestedWidth": 1080,
+            "loading": "eager",
+            "priority": "high",
+            "complete": true
+          },
+          {
+            "width": 68,
+            "naturalWidth": 70,
+            "sizes": "70px",
+            "requestedWidth": 1080,
+            "loading": "lazy",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 68,
+            "naturalWidth": 70,
+            "sizes": "70px",
+            "requestedWidth": 256,
+            "loading": "lazy",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 68,
+            "naturalWidth": 70,
+            "sizes": "70px",
+            "requestedWidth": 256,
+            "loading": "lazy",
+            "priority": "auto",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/commission/customize",
+        "run": 1,
+        "status": 200,
+        "lcp": 1504,
+        "cls": 0.05984964658891885,
+        "events": [
+          136,
+          136,
+          136,
+          72
+        ],
+        "lcpElement": {
+          "tag": "P",
+          "path": null,
+          "size": 25331
+        },
+        "ttfb": 275.40000000037253,
+        "transfer": 399734,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2200.7000000001863,
+            "start": 339
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1953.2999999998137,
+            "start": 339.30000000074506
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1212,
+            "start": 1234.6000000005588
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 842.8000000007451,
+            "start": 313.5
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 841.0999999996275,
+            "start": 315.40000000037253
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 857.2999999998137,
+            "start": 314.1000000005588
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 848.9000000003725,
+            "start": 337.5
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2074.7000000001863,
+            "start": 341.5
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 551.2000000001863,
+            "start": 312.90000000037253
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_400_normal-s.p.0471snlmja818.woff2",
+            "bytes": 14500,
+            "duration": 550.7999999998137,
+            "start": 311.40000000037253
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/commission/customize",
+        "run": 2,
+        "status": 200,
+        "lcp": 1680,
+        "cls": 0.05984964658891885,
+        "events": [
+          88,
+          88,
+          88,
+          48
+        ],
+        "lcpElement": {
+          "tag": "P",
+          "path": null,
+          "size": 25331
+        },
+        "ttfb": 475.19999999925494,
+        "transfer": 399734,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2193.4000000003725,
+            "start": 537.3999999994412
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1946.4000000003725,
+            "start": 537.5999999996275
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1228.2000000001863,
+            "start": 1424.5999999996275
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 837.2000000001863,
+            "start": 513.0999999996275
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 849.4000000003725,
+            "start": 515.6999999992549
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 838.6000000005588,
+            "start": 514.1999999992549
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 832.5,
+            "start": 535.5
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2035.800000000745,
+            "start": 539.6999999992549
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 540.8999999994412,
+            "start": 512.5
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_400_normal-s.p.0471snlmja818.woff2",
+            "bytes": 14500,
+            "duration": 511.90000000037253,
+            "start": 511.09999999962747
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/commission/customize",
+        "run": 3,
+        "status": 200,
+        "lcp": 1708,
+        "cls": 0.05984964658891885,
+        "events": [
+          104,
+          104,
+          104,
+          48
+        ],
+        "lcpElement": {
+          "tag": "P",
+          "path": null,
+          "size": 25331
+        },
+        "ttfb": 459.40000000037253,
+        "transfer": 399736,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2197.899999999441,
+            "start": 511.6000000005588
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1949.2999999998137,
+            "start": 512
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1203.5999999996275,
+            "start": 1412.7000000001863
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 839.3000000007451,
+            "start": 486.79999999981374
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 853.4000000003725,
+            "start": 489.20000000018626
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 854.8000000007451,
+            "start": 487.29999999981374
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 836.3999999994412,
+            "start": 509.6000000005588
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2039.7000000001863,
+            "start": 514
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 543.3999999994412,
+            "start": 486.40000000037253
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_400_normal-s.p.0471snlmja818.woff2",
+            "bytes": 14500,
+            "duration": 529,
+            "start": 485.20000000018626
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/process",
+        "run": 1,
+        "status": 200,
+        "lcp": 2120,
+        "cls": 0,
+        "events": [
+          104,
+          104,
+          104,
+          56
+        ],
+        "lcpElement": {
+          "tag": "IMG",
+          "path": "/_next/image",
+          "size": 144963
+        },
+        "ttfb": 469.3999999994412,
+        "transfer": 444629,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2370.2999999998137,
+            "start": 525.0999999996275
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 2106.0999999996275,
+            "start": 525.5
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1288.1000000005588,
+            "start": 1483.8999999994412
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 29559,
+            "duration": 792.4000000003725,
+            "start": 1121.2999999998137
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 761.1000000005588,
+            "start": 502.3999999994412
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 881.9000000003725,
+            "start": 504.3999999994412
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 789.3999999994412,
+            "start": 503
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 923.9000000003725,
+            "start": 523.5999999996275
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2306.600000000559,
+            "start": 527.3999999994412
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 17220,
+            "duration": 764,
+            "start": 1603.3999999994412
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 351,
+            "naturalWidth": 351,
+            "sizes": "(max-width: 780px) 90vw, 42vw",
+            "requestedWidth": 1080,
+            "loading": "eager",
+            "priority": "high",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/process",
+        "run": 2,
+        "status": 200,
+        "lcp": 3044,
+        "cls": 0,
+        "events": [
+          120,
+          120,
+          120,
+          40
+        ],
+        "lcpElement": {
+          "tag": "IMG",
+          "path": "/_next/image",
+          "size": 144963
+        },
+        "ttfb": 270.79999999981374,
+        "transfer": 444630,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2299.5999999996275,
+            "start": 320.5
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1834.2999999998137,
+            "start": 320.90000000037253
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1156.7000000001863,
+            "start": 1232.5
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 29559,
+            "duration": 362.90000000037253,
+            "start": 2380.0999999996275
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 680.0999999996275,
+            "start": 297.20000000018626
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 818.7999999998137,
+            "start": 298.70000000018626
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 695.7999999998137,
+            "start": 297.70000000018626
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 877.1999999992549,
+            "start": 318.90000000037253
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2143.2999999998137,
+            "start": 323
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 17220,
+            "duration": 1235.2999999998137,
+            "start": 1353.4000000003725
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 351,
+            "naturalWidth": 351,
+            "sizes": "(max-width: 780px) 90vw, 42vw",
+            "requestedWidth": 1080,
+            "loading": "eager",
+            "priority": "high",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/process",
+        "run": 3,
+        "status": 200,
+        "lcp": 2560,
+        "cls": 0,
+        "events": [
+          104,
+          104,
+          104,
+          48
+        ],
+        "lcpElement": {
+          "tag": "IMG",
+          "path": "/_next/image",
+          "size": 144963
+        },
+        "ttfb": 239.3999999994412,
+        "transfer": 444631,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 2400.300000000745,
+            "start": 284.8999999994412
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1999.4000000003725,
+            "start": 285.09999999962747
+          },
+          {
+            "path": "/_next/static/media/jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+            "bytes": 38224,
+            "duration": 1265.7999999998137,
+            "start": 1142.0999999996275
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 29559,
+            "duration": 941.7000000001863,
+            "start": 1588.2999999998137
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 688.3000000007451,
+            "start": 263.3999999994412
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 810,
+            "start": 264.8999999994412
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 718.5999999996275,
+            "start": 263.79999999981374
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 822.5999999996275,
+            "start": 283.5
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 2352.2999999998137,
+            "start": 286.5
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 17220,
+            "duration": 742.5999999996275,
+            "start": 1262.2999999998137
+          }
+        ],
+        "images": [
+          {
+            "width": 158,
+            "naturalWidth": 158,
+            "sizes": "(max-width: 780px) 158px, 184px",
+            "requestedWidth": 640,
+            "loading": "eager",
+            "priority": "auto",
+            "complete": true
+          },
+          {
+            "width": 351,
+            "naturalWidth": 351,
+            "sizes": "(max-width: 780px) 90vw, 42vw",
+            "requestedWidth": 1080,
+            "loading": "eager",
+            "priority": "high",
+            "complete": true
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/studio/inquiries",
+        "run": 1,
+        "status": 200,
+        "lcp": 4124,
+        "cls": 0.038472544818593246,
+        "events": [
+          168,
+          168,
+          168,
+          128,
+          16
+        ],
+        "lcpElement": {
+          "tag": "P",
+          "path": null,
+          "size": 14544
+        },
+        "ttfb": 720.9000000003725,
+        "transfer": 402752,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 1808.2999999998137,
+            "start": 764.6000000005588
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1654.300000000745,
+            "start": 765
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 802.7000000001863,
+            "start": 742.5
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 816.5,
+            "start": 744
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 804.8999999994412,
+            "start": 742.8000000007451
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 890.7000000001863,
+            "start": 762.7000000001863
+          },
+          {
+            "path": "/api/studio/orders",
+            "bytes": 19732,
+            "duration": 829.2000000001863,
+            "start": 4107.9000000003725
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 321.1000000005588,
+            "start": 2764
+          },
+          {
+            "path": "/_next/static/chunks/38zl-x-8k5_9t.js",
+            "bytes": 14982,
+            "duration": 1606.2000000001863,
+            "start": 766.6000000005588
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 525.7000000001863,
+            "start": 742
+          }
+        ],
+        "images": [],
+        "overflow": false
+      },
+      {
+        "route": "/studio/inquiries",
+        "run": 2,
+        "status": 200,
+        "lcp": 3828,
+        "cls": 0.038472544818593246,
+        "events": [
+          176,
+          176,
+          176,
+          120,
+          16
+        ],
+        "lcpElement": {
+          "tag": "P",
+          "path": null,
+          "size": 14544
+        },
+        "ttfb": 459.29999999981374,
+        "transfer": 402758,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 1791.5999999996275,
+            "start": 505.29999999981374
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1653.0999999996275,
+            "start": 505.70000000018626
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 806.5,
+            "start": 484
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 835,
+            "start": 485.70000000018626
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 805.5,
+            "start": 484.59999999962747
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 894.3999999994412,
+            "start": 503.70000000018626
+          },
+          {
+            "path": "/api/studio/orders",
+            "bytes": 19732,
+            "duration": 783.5,
+            "start": 3816.2000000001863
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 334.79999999981374,
+            "start": 2464.2999999998137
+          },
+          {
+            "path": "/_next/static/chunks/38zl-x-8k5_9t.js",
+            "bytes": 14982,
+            "duration": 1605.7000000001863,
+            "start": 507.5
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 526.6000000005588,
+            "start": 483.59999999962747
+          }
+        ],
+        "images": [],
+        "overflow": false
+      },
+      {
+        "route": "/studio/inquiries",
+        "run": 3,
+        "status": 200,
+        "lcp": 6356,
+        "cls": 0.038472544818593246,
+        "events": [
+          176,
+          176,
+          176,
+          104,
+          16
+        ],
+        "lcpElement": {
+          "tag": "P",
+          "path": null,
+          "size": 14544
+        },
+        "ttfb": 2600.7999999998137,
+        "transfer": 402756,
+        "resources": [
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 1765.2999999998137,
+            "start": 2647.2000000001863
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1611.2000000001863,
+            "start": 2647.5
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 775.5999999996275,
+            "start": 2625.7000000001863
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 789.5,
+            "start": 2627.2000000001863
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 1025.3999999994412,
+            "start": 2626.2000000001863
+          },
+          {
+            "path": "/_next/static/chunks/1o9j6l3wm3zso.css",
+            "bytes": 20346,
+            "duration": 803,
+            "start": 2645.5999999996275
+          },
+          {
+            "path": "/api/studio/orders",
+            "bytes": 19732,
+            "duration": 1149.9000000003725,
+            "start": 6347.899999999441
+          },
+          {
+            "path": "/_next/static/chunks/0_nhsxhwl3w4e.js",
+            "bytes": 17460,
+            "duration": 339.29999999981374,
+            "start": 4597.799999999814
+          },
+          {
+            "path": "/_next/static/chunks/38zl-x-8k5_9t.js",
+            "bytes": 14982,
+            "duration": 1516.3999999994412,
+            "start": 2649.5
+          },
+          {
+            "path": "/_next/static/media/dm_sans_latin_500_normal-s.p.0brn-8r9pdr2e.woff2",
+            "bytes": 14604,
+            "duration": 512.0999999996275,
+            "start": 2625.2999999998137
+          }
+        ],
+        "images": [],
+        "overflow": false
+      },
+      {
+        "route": "/studio/content?record=page%3Ahome",
+        "run": 1,
+        "status": 200,
+        "lcp": 6116,
+        "cls": 0.034793461366762105,
+        "events": [
+          136,
+          136,
+          136,
+          88,
+          32
+        ],
+        "lcpElement": {
+          "tag": "P",
+          "path": null,
+          "size": 16368
+        },
+        "ttfb": 1985.5999999996275,
+        "transfer": 1194087,
+        "resources": [
+          {
+            "path": "/api/studio/content",
+            "bytes": 498397,
+            "duration": 11405.900000000373,
+            "start": 6119.5999999996275
+          },
+          {
+            "path": "/api/studio/media",
+            "bytes": 130881,
+            "duration": 2011.2000000001863,
+            "start": 6113.0999999996275
+          },
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 1776,
+            "start": 2045.5
+          },
+          {
+            "path": "/_next/static/chunks/39f-si7wp_iwe.js",
+            "bytes": 54081,
+            "duration": 987.4000000003725,
+            "start": 4994.5999999996275
+          },
+          {
+            "path": "/_next/static/chunks/318xb356k3db8.js",
+            "bytes": 51993,
+            "duration": 968.3000000007451,
+            "start": 4998.0999999996275
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1620.7999999998137,
+            "start": 2045.7000000001863
+          },
+          {
+            "path": "/api/studio/homepage-options",
+            "bytes": 35153,
+            "duration": 2894.9000000003725,
+            "start": 17780
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 790.0999999996275,
+            "start": 2022.2000000001863
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 808.2999999998137,
+            "start": 2023.7999999998137
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 805.9000000003725,
+            "start": 2022.5
+          }
+        ],
+        "images": [
+          {
+            "width": 0,
+            "naturalWidth": 0,
+            "sizes": "(max-width: 780px) 80vw, 400px",
+            "requestedWidth": 1920,
+            "loading": "lazy",
+            "priority": "auto",
+            "complete": false
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/studio/content?record=page%3Ahome",
+        "run": 2,
+        "status": 200,
+        "lcp": 5156,
+        "cls": 0.034793461366762105,
+        "events": [
+          160,
+          160,
+          160,
+          88,
+          16
+        ],
+        "lcpElement": {
+          "tag": "P",
+          "path": null,
+          "size": 16368
+        },
+        "ttfb": 1004.7999999998137,
+        "transfer": 1194091,
+        "resources": [
+          {
+            "path": "/api/studio/content",
+            "bytes": 498397,
+            "duration": 4843.0999999996275,
+            "start": 5150
+          },
+          {
+            "path": "/api/studio/media",
+            "bytes": 130881,
+            "duration": 2274.9000000003725,
+            "start": 5144.199999999255
+          },
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 1804.3999999994412,
+            "start": 1059.5
+          },
+          {
+            "path": "/_next/static/chunks/39f-si7wp_iwe.js",
+            "bytes": 54081,
+            "duration": 976.9000000003725,
+            "start": 4048.399999999441
+          },
+          {
+            "path": "/_next/static/chunks/318xb356k3db8.js",
+            "bytes": 51993,
+            "duration": 959,
+            "start": 4050.899999999441
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1647.4000000003725,
+            "start": 1059.699999999255
+          },
+          {
+            "path": "/api/studio/homepage-options",
+            "bytes": 35153,
+            "duration": 3489.7000000001863,
+            "start": 10247.199999999255
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 816.7000000001863,
+            "start": 1034.199999999255
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 830.9000000003725,
+            "start": 1035.699999999255
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 831.7000000001863,
+            "start": 1034.5999999996275
+          }
+        ],
+        "images": [
+          {
+            "width": 0,
+            "naturalWidth": 0,
+            "sizes": "(max-width: 780px) 80vw, 400px",
+            "requestedWidth": 1920,
+            "loading": "lazy",
+            "priority": "auto",
+            "complete": false
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "route": "/studio/content?record=page%3Ahome",
+        "run": 3,
+        "status": 200,
+        "lcp": 5080,
+        "cls": 0.034793461366762105,
+        "events": [
+          128,
+          128,
+          128,
+          80,
+          16
+        ],
+        "lcpElement": {
+          "tag": "P",
+          "path": null,
+          "size": 16368
+        },
+        "ttfb": 985.6999999992549,
+        "transfer": 1194089,
+        "resources": [
+          {
+            "path": "/api/studio/content",
+            "bytes": 498397,
+            "duration": 5373.600000000559,
+            "start": 5082.699999999255
+          },
+          {
+            "path": "/api/studio/media",
+            "bytes": 130881,
+            "duration": 1904,
+            "start": 5076.5999999996275
+          },
+          {
+            "path": "/_next/static/chunks/3z6h-42vc8z6q.js",
+            "bytes": 73578,
+            "duration": 1767.5,
+            "start": 1039.2999999998137
+          },
+          {
+            "path": "/_next/static/chunks/39f-si7wp_iwe.js",
+            "bytes": 54081,
+            "duration": 972.3999999994412,
+            "start": 3990.5
+          },
+          {
+            "path": "/_next/static/chunks/318xb356k3db8.js",
+            "bytes": 51993,
+            "duration": 954.5,
+            "start": 3993.0999999996275
+          },
+          {
+            "path": "/_next/static/chunks/2e_lrwr-bf1eq.js",
+            "bytes": 44123,
+            "duration": 1611.1000000005588,
+            "start": 1039.699999999255
+          },
+          {
+            "path": "/api/studio/homepage-options",
+            "bytes": 35153,
+            "duration": 3060.9000000003725,
+            "start": 10745.099999999627
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+            "bytes": 26716,
+            "duration": 776.7999999998137,
+            "start": 1018
+          },
+          {
+            "path": "/_next/static/chunks/44z2ck6sw_dq0.css",
+            "bytes": 26451,
+            "duration": 821.1999999992549,
+            "start": 1019.5
+          },
+          {
+            "path": "/_next/static/media/instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+            "bytes": 25500,
+            "duration": 806.6999999992549,
+            "start": 1018.5
+          }
+        ],
+        "images": [
+          {
+            "width": 0,
+            "naturalWidth": 0,
+            "sizes": "(max-width: 780px) 80vw, 400px",
+            "requestedWidth": 1920,
+            "loading": "lazy",
+            "priority": "auto",
+            "complete": false
+          }
+        ],
+        "overflow": false
+      }
+    ],
+    "errors": [],
+    "provenanceNote": "Measured after all loading/menu optimizations and before the final definition-list dd/span semantic repair. Final build and accessibility/interaction checks include that repair. No loading logic changed afterward."
+  },
+  "accessibility": {
+    "at": "2026-10-05T05:33:20.905Z",
+    "scope": "Compiled isolated QA, Chrome axe WCAG2.2 tags at 1440/390/320 CSS px and reduced motion; not human screen-reader or physical-device testing.",
+    "axeVersion": "4.13.0",
+    "protectedRecordsUnchanged": true,
+    "complete": true,
+    "samples": [
+      {
+        "route": "/",
+        "status": 200,
+        "finalPath": "/",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 91
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 90
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 90
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/collectible-design",
+        "status": 200,
+        "finalPath": "/collectible-design",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 41
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 40
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 40
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/memory-art",
+        "status": 200,
+        "finalPath": "/memory-art",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 53
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 52
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 52
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/personal-art",
+        "status": 200,
+        "finalPath": "/personal-art",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 51
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 50
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 50
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/search",
+        "status": 200,
+        "finalPath": "/search",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 32
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/saved-pieces",
+        "status": 200,
+        "finalPath": "/saved-pieces",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 33
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 32
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 32
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/pieces/river-channel",
+        "status": 200,
+        "finalPath": "/pieces/river-channel",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "aria-prohibited-attr",
+                "count": 1
+              },
+              {
+                "id": "color-contrast",
+                "count": 34
+              }
+            ],
+            "passes": 30,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "aria-prohibited-attr",
+                "count": 1
+              },
+              {
+                "id": "color-contrast",
+                "count": 33
+              }
+            ],
+            "passes": 30,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "aria-prohibited-attr",
+                "count": 1
+              },
+              {
+                "id": "color-contrast",
+                "count": 33
+              }
+            ],
+            "passes": 30,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/pieces/vow-framed-varmala-keepsake",
+        "status": 200,
+        "finalPath": "/pieces/vow-framed-varmala-keepsake",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "aria-prohibited-attr",
+                "count": 1
+              },
+              {
+                "id": "color-contrast",
+                "count": 37
+              }
+            ],
+            "passes": 30,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "aria-prohibited-attr",
+                "count": 1
+              },
+              {
+                "id": "color-contrast",
+                "count": 36
+              }
+            ],
+            "passes": 30,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "aria-prohibited-attr",
+                "count": 1
+              },
+              {
+                "id": "color-contrast",
+                "count": 36
+              }
+            ],
+            "passes": 30,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/pieces/botanical-resin-pendant",
+        "status": 200,
+        "finalPath": "/pieces/botanical-resin-pendant",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 35
+              }
+            ],
+            "passes": 30,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 34
+              }
+            ],
+            "passes": 30,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 34
+              }
+            ],
+            "passes": 30,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/pieces/river-channel/customize",
+        "status": 200,
+        "finalPath": "/pieces/river-channel/customize",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 34
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 33
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 33
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/commission",
+        "status": 200,
+        "finalPath": "/commission",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 36
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 35
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 35
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/commission/customize",
+        "status": 200,
+        "finalPath": "/commission/customize",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 34
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 33
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 33
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/preserve",
+        "status": 200,
+        "finalPath": "/preserve",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 53
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 52
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 52
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/personalize",
+        "status": 200,
+        "finalPath": "/personalize",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 52
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 51
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 51
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/our-story",
+        "status": 200,
+        "finalPath": "/our-story",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 34
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 33
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 33
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/process",
+        "status": 200,
+        "finalPath": "/process",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 45
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 44
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 44
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/materials-care",
+        "status": 200,
+        "finalPath": "/materials-care",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 37
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 36
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 36
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/architects",
+        "status": 200,
+        "finalPath": "/architects",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 40
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 39
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 39
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/portfolio",
+        "status": 200,
+        "finalPath": "/portfolio",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/journal",
+        "status": 200,
+        "finalPath": "/journal",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 32
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/journal/a-room-begins-with-a-statement-table",
+        "status": 200,
+        "finalPath": "/journal/a-room-begins-with-a-statement-table",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/faq",
+        "status": 200,
+        "finalPath": "/faq",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/contact",
+        "status": 200,
+        "finalPath": "/contact",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 29
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 29
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/imprint",
+        "status": 200,
+        "finalPath": "/imprint",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 30,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/privacy",
+        "status": 200,
+        "finalPath": "/privacy",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/terms",
+        "status": 200,
+        "finalPath": "/terms",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/shipping-delivery",
+        "status": 200,
+        "finalPath": "/shipping-delivery",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/returns-cancellations",
+        "status": 200,
+        "finalPath": "/returns-cancellations",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/accessibility",
+        "status": 200,
+        "finalPath": "/accessibility",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/inquiry/received",
+        "status": 200,
+        "finalPath": "/inquiry/received",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 31
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/c6-unavailable-page",
+        "status": 404,
+        "finalPath": "/c6-unavailable-page",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 30
+              }
+            ],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 29
+              }
+            ],
+            "passes": 25,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 29
+              }
+            ],
+            "passes": 25,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/login",
+        "status": 200,
+        "finalPath": "/studio/login",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 24,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 24,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 24,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio",
+        "status": 200,
+        "finalPath": "/studio",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/inquiries",
+        "status": 200,
+        "finalPath": "/studio/inquiries",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/follow-ups",
+        "status": 200,
+        "finalPath": "/studio/follow-ups",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "th-has-data-cells",
+                "count": 1
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/products",
+        "status": 200,
+        "finalPath": "/studio/products",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 2
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 2
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 2
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/content",
+        "status": 200,
+        "finalPath": "/studio/content",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/site-copy",
+        "status": 200,
+        "finalPath": "/studio/site-copy",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/media",
+        "status": 200,
+        "finalPath": "/studio/media",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/site-images",
+        "status": 200,
+        "finalPath": "/studio/site-images",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "aria-prohibited-attr",
+                "count": 1
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "aria-prohibited-attr",
+                "count": 1
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "aria-prohibited-attr",
+                "count": 1
+              }
+            ],
+            "passes": 28,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/content-health",
+        "status": 200,
+        "finalPath": "/studio/content-health",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "count": 54
+              },
+              {
+                "id": "link-in-text-block",
+                "count": 27
+              }
+            ],
+            "passes": 31,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 29,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/translations",
+        "status": 200,
+        "finalPath": "/studio/translations",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 25,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 25,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/navigation",
+        "status": 200,
+        "finalPath": "/studio/navigation",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/legacy",
+        "status": 200,
+        "finalPath": "/studio/legacy",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/route-review",
+        "status": 200,
+        "finalPath": "/studio/route-review",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/activity",
+        "status": 200,
+        "finalPath": "/studio/activity",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/staff",
+        "status": 200,
+        "finalPath": "/studio/staff",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 27,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 26,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      },
+      {
+        "route": "/studio/settings",
+        "status": 200,
+        "finalPath": "/studio/settings",
+        "checks": [
+          {
+            "width": 1440,
+            "violations": [],
+            "incomplete": [],
+            "passes": 25,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 390,
+            "violations": [],
+            "incomplete": [],
+            "passes": 24,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          },
+          {
+            "width": 320,
+            "violations": [],
+            "incomplete": [],
+            "passes": 24,
+            "overflow": false,
+            "activeAnimations": 0,
+            "missingImageNames": 0
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  "interactions": {
+    "at": "2026-10-05T05:29:54.400Z",
+    "complete": true,
+    "checks": [
+      "Skip link is first keyboard stop",
+      "Skip targets the main content",
+      "Mobile navigation has an accessible name",
+      "Mobile navigation has no automated violations",
+      "Mobile navigation exposes controls",
+      "Mobile navigation wraps backward",
+      "Mobile navigation wraps forward",
+      "Mobile navigation restores opener focus",
+      "Search dialog has an accessible name",
+      "Search dialog has no automated violations",
+      "Search dialog exposes controls",
+      "Search dialog wraps backward",
+      "Search dialog wraps forward",
+      "Search dialog restores opener focus",
+      "Gallery End selects last image",
+      "Gallery Home selects first image",
+      "Gallery Right selects next image",
+      "Enlarged gallery has an accessible name",
+      "Enlarged gallery has no automated violations",
+      "Enlarged gallery exposes controls",
+      "Enlarged gallery wraps backward",
+      "Enlarged gallery wraps forward",
+      "Enlarged gallery restores opener focus",
+      "Customization starts at the top without input autofocus",
+      "Invalid form field receives focus",
+      "Invalid field references a visible explanation",
+      "Customization validation has no automated violations",
+      "Applied filters expose named remove actions",
+      "Removing a filter focuses the result announcement",
+      "Search filter result has no automated violations",
+      "FAQ announces empty result",
+      "FAQ opens with Enter",
+      "Open FAQ answer has no automated violations",
+      "/ 720px reflow",
+      "/ 360px reflow",
+      "/collectible-design 720px reflow",
+      "/collectible-design 360px reflow",
+      "/search 720px reflow",
+      "/search 360px reflow",
+      "/pieces/river-channel 720px reflow",
+      "/pieces/river-channel 360px reflow",
+      "/pieces/river-channel/customize 720px reflow",
+      "/pieces/river-channel/customize 360px reflow",
+      "/commission/customize 720px reflow",
+      "/commission/customize 360px reflow",
+      "/our-story 720px reflow",
+      "/our-story 360px reflow",
+      "/process 720px reflow",
+      "/process 360px reflow",
+      "/materials-care 720px reflow",
+      "/materials-care 360px reflow",
+      "/journal 720px reflow",
+      "/journal 360px reflow",
+      "/faq 720px reflow",
+      "/faq 360px reflow",
+      "/contact 720px reflow",
+      "/contact 360px reflow",
+      "/privacy 720px reflow",
+      "/privacy 360px reflow",
+      "Studio navigation with an unsaved draft has an accessible name",
+      "Studio navigation with an unsaved draft has no automated violations",
+      "Studio navigation with an unsaved draft exposes controls",
+      "Studio navigation with an unsaved draft wraps backward",
+      "Studio navigation with an unsaved draft wraps forward",
+      "Studio navigation with an unsaved draft restores opener focus",
+      "Navigation retains the unsaved content title",
+      "Page-finder search retains the unsaved content title",
+      "Selected Studio record status has no automated violations",
+      "hi locale is valid or correctly falls back to English",
+      "hi customization has no automated violations",
+      "gu locale is valid or correctly falls back to English",
+      "gu customization has no automated violations",
+      "No uncaught browser errors"
+    ],
+    "states": [
+      {
+        "name": "Mobile navigation",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                "#_R_2klubtb_"
+              ],
+              [
+                "button[aria-label=\"Close navigation\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__mobilePageLinks > a[aria-current=\"page\"][href$=\"process\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__mobilePageLinks > a[href$=\"journal\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__mobilePageLinks > a[href$=\"contact\"]"
+              ],
+              [
+                "nav[aria-label=\"Mobile navigation\"] > .shop-module__Vq0a9q__button[href$=\"commission\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Search dialog",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                "#_R_34lubtb_"
+              ],
+              [
+                "button[type=\"submit\"]"
+              ],
+              [
+                "a[href$=\"search\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Enlarged gallery",
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "name": "Customization validation",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".shop-module__Vq0a9q__eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".shop-module__Vq0a9q__pageIntro > p"
+              ],
+              [
+                ".shop-module__Vq0a9q__button"
+              ],
+              [
+                "p[data-copy-field=\"footer-statement\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerTop > div > .shop-module__Vq0a9q__localeSwitcher > label > select[aria-label=\"Language\"]"
+              ],
+              [
+                "section:nth-child(2) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"collectible-design\"]"
+              ],
+              [
+                "li:nth-child(2) > a[href$=\"memory-art\"]"
+              ],
+              [
+                "li:nth-child(3) > a[href$=\"personal-art\"]"
+              ],
+              [
+                "section:nth-child(3) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"our-story\"]"
+              ],
+              [
+                "li:nth-child(2) > a[href$=\"process\"]"
+              ],
+              [
+                "li:nth-child(3) > a[href$=\"journal\"]"
+              ],
+              [
+                "a[href$=\"faq\"]"
+              ],
+              [
+                "section:nth-child(4) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"commission\"]"
+              ],
+              [
+                "a[href=\"tel:+918320404132\"]"
+              ],
+              [
+                "section:nth-child(4) > ul > li:nth-child(3) > a"
+              ],
+              [
+                "li:nth-child(4) > a[href$=\"contact\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerBottom > span:nth-child(1)"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerBottom > span:nth-child(2)"
+              ],
+              [
+                "a[href$=\"privacy\"]"
+              ],
+              [
+                "span:nth-child(3) > span:nth-child(2)"
+              ],
+              [
+                "a[href$=\"terms\"]"
+              ],
+              [
+                "span:nth-child(3) > span:nth-child(3)"
+              ],
+              [
+                "a[href$=\"accessibility\"]"
+              ],
+              [
+                "span:nth-child(4)"
+              ],
+              [
+                "a[href$=\"shipping-delivery\"]"
+              ],
+              [
+                "span:nth-child(5)"
+              ],
+              [
+                "a[href$=\"returns-cancellations\"]"
+              ],
+              [
+                "span:nth-child(6)"
+              ],
+              [
+                "a[href$=\"imprint\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Search filter result",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                "button[type=\"submit\"]"
+              ],
+              [
+                "a[href=\"/search?size=12&show=24\"]"
+              ],
+              [
+                "p[data-copy-field=\"footer-statement\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerTop > div > .shop-module__Vq0a9q__localeSwitcher > label > select[aria-label=\"Language\"]"
+              ],
+              [
+                "section:nth-child(2) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"collectible-design\"]"
+              ],
+              [
+                "li:nth-child(2) > a[href$=\"memory-art\"]"
+              ],
+              [
+                "li:nth-child(3) > a[href$=\"personal-art\"]"
+              ],
+              [
+                "section:nth-child(3) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"our-story\"]"
+              ],
+              [
+                "li:nth-child(2) > a[href$=\"process\"]"
+              ],
+              [
+                "li:nth-child(3) > a[href$=\"journal\"]"
+              ],
+              [
+                "a[href$=\"faq\"]"
+              ],
+              [
+                "section:nth-child(4) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"commission\"]"
+              ],
+              [
+                "a[href=\"tel:+918320404132\"]"
+              ],
+              [
+                "section:nth-child(4) > ul > li:nth-child(3) > a"
+              ],
+              [
+                "li:nth-child(4) > a[href$=\"contact\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerBottom > span:nth-child(1)"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerBottom > span:nth-child(2)"
+              ],
+              [
+                "a[href$=\"privacy\"]"
+              ],
+              [
+                "span:nth-child(3) > span:nth-child(2)"
+              ],
+              [
+                "a[href$=\"terms\"]"
+              ],
+              [
+                "span:nth-child(3) > span:nth-child(3)"
+              ],
+              [
+                "a[href$=\"accessibility\"]"
+              ],
+              [
+                "span:nth-child(4)"
+              ],
+              [
+                "a[href$=\"shipping-delivery\"]"
+              ],
+              [
+                "span:nth-child(5)"
+              ],
+              [
+                "a[href$=\"returns-cancellations\"]"
+              ],
+              [
+                "span:nth-child(6)"
+              ],
+              [
+                "a[href$=\"imprint\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Open FAQ answer",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".shop-module__Vq0a9q__button"
+              ],
+              [
+                "p[data-copy-field=\"footer-statement\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerTop > div > .shop-module__Vq0a9q__localeSwitcher > label > select"
+              ],
+              [
+                "section:nth-child(2) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"collectible-design\"]"
+              ],
+              [
+                "li:nth-child(2) > a[href$=\"memory-art\"]"
+              ],
+              [
+                "li:nth-child(3) > a[href$=\"personal-art\"]"
+              ],
+              [
+                "section:nth-child(3) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"our-story\"]"
+              ],
+              [
+                "li:nth-child(2) > a[href$=\"process\"]"
+              ],
+              [
+                "li:nth-child(3) > a[href$=\"journal\"]"
+              ],
+              [
+                "a[href$=\"faq\"]"
+              ],
+              [
+                "section:nth-child(4) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"commission\"]"
+              ],
+              [
+                "a[href=\"tel:+918320404132\"]"
+              ],
+              [
+                "section:nth-child(4) > ul > li:nth-child(3) > a"
+              ],
+              [
+                "li:nth-child(4) > a[href$=\"contact\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerBottom > span:nth-child(1)"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerBottom > span:nth-child(2)"
+              ],
+              [
+                "a[href$=\"privacy\"]"
+              ],
+              [
+                "span:nth-child(3) > span:nth-child(2)"
+              ],
+              [
+                "a[href$=\"terms\"]"
+              ],
+              [
+                "span:nth-child(3) > span:nth-child(3)"
+              ],
+              [
+                "a[href$=\"accessibility\"]"
+              ],
+              [
+                "span:nth-child(4)"
+              ],
+              [
+                "a[href$=\"shipping-delivery\"]"
+              ],
+              [
+                "span:nth-child(5)"
+              ],
+              [
+                "a[href$=\"returns-cancellations\"]"
+              ],
+              [
+                "span:nth-child(6)"
+              ],
+              [
+                "a[href$=\"imprint\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Studio navigation with an unsaved draft",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                "#_R_4av5ubtb_"
+              ],
+              [
+                ".workspace-module__qCfTQa__navGroup:nth-child(4) > .workspace-module__qCfTQa__navGroupList > a[title=\"Site images\"][aria-label=\"Site images\"][href$=\"site-images\"] > .workspace-module__qCfTQa__navLabel"
+              ],
+              [
+                ".workspace-module__qCfTQa__fullNavigation > .workspace-module__qCfTQa__navGroup:nth-child(5) > .workspace-module__qCfTQa__navGroupTitle"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Selected Studio record status",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                "button[aria-label=\"Move section manifesto down\"]"
+              ],
+              [
+                "button[aria-label=\"Move section journeys up\"]"
+              ],
+              [
+                "button[aria-label=\"Move section journeys down\"]"
+              ],
+              [
+                "button[aria-label=\"Move section selected up\"]"
+              ],
+              [
+                "button[aria-label=\"Move section selected down\"]"
+              ],
+              [
+                "button[aria-label=\"Move section categories up\"]"
+              ],
+              [
+                "button[aria-label=\"Move section categories down\"]"
+              ],
+              [
+                "button[aria-label=\"Move section large-format up\"]"
+              ],
+              [
+                "button[aria-label=\"Move section large-format down\"]"
+              ],
+              [
+                "button[aria-label=\"Move section material up\"]"
+              ],
+              [
+                "button[aria-label=\"Move section material down\"]"
+              ],
+              [
+                "button[aria-label=\"Move section atelier up\"]"
+              ],
+              [
+                "button[aria-label=\"Move section atelier down\"]"
+              ],
+              [
+                "button[aria-label=\"Move section in-the-room up\"]"
+              ],
+              [
+                "button[aria-label=\"Move section in-the-room down\"]"
+              ],
+              [
+                "button[aria-label=\"Move section bespoke up\"]"
+              ],
+              [
+                "button[aria-label=\"Move section bespoke down\"]"
+              ],
+              [
+                "button[aria-label=\"Move section process up\"]"
+              ],
+              [
+                "button[aria-label=\"Move section process down\"]"
+              ],
+              [
+                "button[aria-label=\"Move section principles up\"]"
+              ],
+              [
+                "button[aria-label=\"Move section principles down\"]"
+              ],
+              [
+                "button[aria-label=\"Move section journal up\"]"
+              ],
+              [
+                "button[aria-label=\"Move section journal down\"]"
+              ],
+              [
+                "button[aria-label=\"Move section invitation up\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "hi reviewed-language policy",
+        "htmlLang": "hi"
+      },
+      {
+        "name": "hi customization",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".shop-module__Vq0a9q__eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".shop-module__Vq0a9q__pageIntro > p"
+              ],
+              [
+                ".shop-module__Vq0a9q__button"
+              ],
+              [
+                "p[data-copy-field=\"footer-statement\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerTop > div > .shop-module__Vq0a9q__localeSwitcher > label > select[aria-label=\"Language\"]"
+              ],
+              [
+                "section:nth-child(2) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"collectible-design\"]"
+              ],
+              [
+                "li:nth-child(2) > a[href$=\"memory-art\"]"
+              ],
+              [
+                "li:nth-child(3) > a[href$=\"personal-art\"]"
+              ],
+              [
+                "section:nth-child(3) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"our-story\"]"
+              ],
+              [
+                "li:nth-child(2) > a[href$=\"process\"]"
+              ],
+              [
+                "li:nth-child(3) > a[href$=\"journal\"]"
+              ],
+              [
+                "a[href$=\"faq\"]"
+              ],
+              [
+                "section:nth-child(4) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"commission\"]"
+              ],
+              [
+                "a[href=\"tel:+918320404132\"]"
+              ],
+              [
+                "section:nth-child(4) > ul > li:nth-child(3) > a"
+              ],
+              [
+                "li:nth-child(4) > a[href$=\"contact\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerBottom > span:nth-child(1)"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerBottom > span:nth-child(2)"
+              ],
+              [
+                "a[href$=\"privacy\"]"
+              ],
+              [
+                "span:nth-child(3) > span:nth-child(2)"
+              ],
+              [
+                "a[href$=\"terms\"]"
+              ],
+              [
+                "span:nth-child(3) > span:nth-child(3)"
+              ],
+              [
+                "a[href$=\"accessibility\"]"
+              ],
+              [
+                "span:nth-child(4)"
+              ],
+              [
+                "a[href$=\"shipping-delivery\"]"
+              ],
+              [
+                "span:nth-child(5)"
+              ],
+              [
+                "a[href$=\"returns-cancellations\"]"
+              ],
+              [
+                "span:nth-child(6)"
+              ],
+              [
+                "a[href$=\"imprint\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "gu reviewed-language policy",
+        "htmlLang": "gu"
+      },
+      {
+        "name": "gu customization",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".shop-module__Vq0a9q__eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".shop-module__Vq0a9q__pageIntro > p"
+              ],
+              [
+                ".shop-module__Vq0a9q__button"
+              ],
+              [
+                "p[data-copy-field=\"footer-statement\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerTop > div > .shop-module__Vq0a9q__localeSwitcher > label > select[aria-label=\"Language\"]"
+              ],
+              [
+                "section:nth-child(2) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"collectible-design\"]"
+              ],
+              [
+                "li:nth-child(2) > a[href$=\"memory-art\"]"
+              ],
+              [
+                "li:nth-child(3) > a[href$=\"personal-art\"]"
+              ],
+              [
+                "section:nth-child(3) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"our-story\"]"
+              ],
+              [
+                "li:nth-child(2) > a[href$=\"process\"]"
+              ],
+              [
+                "li:nth-child(3) > a[href$=\"journal\"]"
+              ],
+              [
+                "a[href$=\"faq\"]"
+              ],
+              [
+                "section:nth-child(4) > h3"
+              ],
+              [
+                "li:nth-child(1) > a[href$=\"commission\"]"
+              ],
+              [
+                "a[href=\"tel:+918320404132\"]"
+              ],
+              [
+                "section:nth-child(4) > ul > li:nth-child(3) > a"
+              ],
+              [
+                "li:nth-child(4) > a[href$=\"contact\"]"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerBottom > span:nth-child(1)"
+              ],
+              [
+                ".shop-module__Vq0a9q__footerBottom > span:nth-child(2)"
+              ],
+              [
+                "a[href$=\"privacy\"]"
+              ],
+              [
+                "span:nth-child(3) > span:nth-child(2)"
+              ],
+              [
+                "a[href$=\"terms\"]"
+              ],
+              [
+                "span:nth-child(3) > span:nth-child(3)"
+              ],
+              [
+                "a[href$=\"accessibility\"]"
+              ],
+              [
+                "span:nth-child(4)"
+              ],
+              [
+                "a[href$=\"shipping-delivery\"]"
+              ],
+              [
+                "span:nth-child(5)"
+              ],
+              [
+                "a[href$=\"returns-cancellations\"]"
+              ],
+              [
+                "span:nth-child(6)"
+              ],
+              [
+                "a[href$=\"imprint\"]"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "layouts": [
+      {
+        "route": "/",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/collectible-design",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/collectible-design",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/search",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/search",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/pieces/river-channel",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/pieces/river-channel",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/pieces/river-channel/customize",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/pieces/river-channel/customize",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/commission/customize",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/commission/customize",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/our-story",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/our-story",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/process",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/process",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/materials-care",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/materials-care",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/journal",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/journal",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/faq",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/faq",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/contact",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/contact",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/privacy",
+        "width": 720,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      },
+      {
+        "route": "/privacy",
+        "width": 360,
+        "method": "Narrow CSS viewport equivalent of 1440px at 200%/400%; not native browser zoom",
+        "overflow": false,
+        "headingVisible": true
+      }
+    ],
+    "errors": [],
+    "limitations": "Automation only. No form submission, publication or external message. Narrow-viewport reflow does not replace native browser zoom, human assistive technology or physical devices. CSS zoom was rejected as a proxy because it does not trigger viewport media queries."
+  },
+  "mediaMotion": {
+    "at": "2026-10-05T05:29:16.644Z",
+    "scope": "Local compiled image and motion regression guards adopted for C6; not a field-performance certificate. Initial visible images only; 200KB each, selected width <=1.5x displayed device pixels with 640px floor, timed entrance <=1s once, native scroll timelines separate; reuse of an already loaded larger visible image is exempt from width guard, reduced motion static.",
+    "samples": [
+      {
+        "route": "/",
+        "width": 390,
+        "images": [
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 158,
+            "requestedWidth": 640,
+            "bytes": 12575,
+            "complete": true,
+            "loading": "eager",
+            "priority": "auto",
+            "sizes": "(max-width: 780px) 158px, 184px"
+          },
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 390,
+            "requestedWidth": 1200,
+            "bytes": 33863,
+            "complete": true,
+            "loading": "eager",
+            "priority": "high",
+            "sizes": "100vw"
+          }
+        ],
+        "animations": [
+          {
+            "name": "shop-module__Vq0a9q__panelSlide",
+            "timeline": "auto",
+            "durations": [
+              200
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__menuEnter",
+            "timeline": "auto",
+            "durations": [
+              250
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__craftTitle",
+            "timeline": "auto",
+            "durations": [
+              620
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__craftSettle",
+            "timeline": "auto",
+            "durations": [
+              900
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          }
+        ],
+        "overflow": false,
+        "reduced": {
+          "running": 0,
+          "runningNames": [],
+          "smoothScroll": false
+        },
+        "failures": []
+      },
+      {
+        "route": "/collectible-design",
+        "width": 390,
+        "images": [
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 158,
+            "requestedWidth": 640,
+            "bytes": 12575,
+            "complete": true,
+            "loading": "eager",
+            "priority": "auto",
+            "sizes": "(max-width: 780px) 158px, 184px"
+          },
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 351,
+            "requestedWidth": 1080,
+            "bytes": 89317,
+            "complete": true,
+            "loading": "eager",
+            "priority": "high",
+            "sizes": "(max-width: 780px) 90vw, 42vw"
+          }
+        ],
+        "animations": [
+          {
+            "name": "shop-module__Vq0a9q__panelSlide",
+            "timeline": "auto",
+            "durations": [
+              200
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__menuEnter",
+            "timeline": "auto",
+            "durations": [
+              250
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          }
+        ],
+        "overflow": false,
+        "reduced": {
+          "running": 0,
+          "runningNames": [],
+          "smoothScroll": false
+        },
+        "failures": []
+      },
+      {
+        "route": "/pieces/river-channel",
+        "width": 390,
+        "images": [
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 158,
+            "requestedWidth": 640,
+            "bytes": 12575,
+            "complete": true,
+            "loading": "eager",
+            "priority": "auto",
+            "sizes": "(max-width: 780px) 158px, 184px"
+          },
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 349,
+            "requestedWidth": 1080,
+            "bytes": 49536,
+            "complete": true,
+            "loading": "eager",
+            "priority": "high",
+            "sizes": "(max-width:780px) calc(100vw - 40px), (max-width:1200px) 48vw, 44vw"
+          },
+          {
+            "reusedForLargerSlot": true,
+            "altPresent": true,
+            "width": 68,
+            "requestedWidth": 1080,
+            "bytes": 49536,
+            "complete": true,
+            "loading": "lazy",
+            "priority": "auto",
+            "sizes": "70px"
+          },
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 68,
+            "requestedWidth": 256,
+            "bytes": 3659,
+            "complete": true,
+            "loading": "lazy",
+            "priority": "auto",
+            "sizes": "70px"
+          },
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 68,
+            "requestedWidth": 256,
+            "bytes": 7555,
+            "complete": true,
+            "loading": "lazy",
+            "priority": "auto",
+            "sizes": "70px"
+          }
+        ],
+        "animations": [
+          {
+            "name": "shop-module__Vq0a9q__panelSlide",
+            "timeline": "auto",
+            "durations": [
+              200
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__menuEnter",
+            "timeline": "auto",
+            "durations": [
+              250
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          }
+        ],
+        "overflow": false,
+        "reduced": {
+          "running": 0,
+          "runningNames": [],
+          "smoothScroll": false
+        },
+        "failures": []
+      },
+      {
+        "route": "/our-story",
+        "width": 390,
+        "images": [
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 158,
+            "requestedWidth": 640,
+            "bytes": 12575,
+            "complete": true,
+            "loading": "eager",
+            "priority": "auto",
+            "sizes": "(max-width: 780px) 158px, 184px"
+          },
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 351,
+            "requestedWidth": 1080,
+            "bytes": 25313,
+            "complete": true,
+            "loading": "eager",
+            "priority": "high",
+            "sizes": "(max-width: 780px) 90vw, 42vw"
+          }
+        ],
+        "animations": [
+          {
+            "name": "shop-module__Vq0a9q__panelSlide",
+            "timeline": "auto",
+            "durations": [
+              200
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__menuEnter",
+            "timeline": "auto",
+            "durations": [
+              250
+            ],
+            "iterations": [
+              1
+            ]
+          }
+        ],
+        "overflow": false,
+        "reduced": {
+          "running": 0,
+          "runningNames": [],
+          "smoothScroll": false
+        },
+        "failures": []
+      },
+      {
+        "route": "/process",
+        "width": 390,
+        "images": [
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 158,
+            "requestedWidth": 640,
+            "bytes": 12575,
+            "complete": true,
+            "loading": "eager",
+            "priority": "auto",
+            "sizes": "(max-width: 780px) 158px, 184px"
+          },
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 351,
+            "requestedWidth": 1080,
+            "bytes": 29259,
+            "complete": true,
+            "loading": "eager",
+            "priority": "high",
+            "sizes": "(max-width: 780px) 90vw, 42vw"
+          }
+        ],
+        "animations": [
+          {
+            "name": "shop-module__Vq0a9q__panelSlide",
+            "timeline": "auto",
+            "durations": [
+              200
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__menuEnter",
+            "timeline": "auto",
+            "durations": [
+              250
+            ],
+            "iterations": [
+              1
+            ]
+          }
+        ],
+        "overflow": false,
+        "reduced": {
+          "running": 0,
+          "runningNames": [],
+          "smoothScroll": false
+        },
+        "failures": []
+      },
+      {
+        "route": "/",
+        "width": 1440,
+        "images": [
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 184,
+            "requestedWidth": 256,
+            "bytes": 4725,
+            "complete": true,
+            "loading": "eager",
+            "priority": "auto",
+            "sizes": "(max-width: 780px) 158px, 184px"
+          },
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 1440,
+            "requestedWidth": 1440,
+            "bytes": 42768,
+            "complete": true,
+            "loading": "eager",
+            "priority": "high",
+            "sizes": "100vw"
+          }
+        ],
+        "animations": [
+          {
+            "name": "shop-module__Vq0a9q__panelSlide",
+            "timeline": "auto",
+            "durations": [
+              200
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__menuEnter",
+            "timeline": "auto",
+            "durations": [
+              250
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__craftTitle",
+            "timeline": "auto",
+            "durations": [
+              620
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__craftSettle",
+            "timeline": "auto",
+            "durations": [
+              900
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          }
+        ],
+        "overflow": false,
+        "reduced": {
+          "running": 0,
+          "runningNames": [],
+          "smoothScroll": false
+        },
+        "failures": []
+      },
+      {
+        "route": "/collectible-design",
+        "width": 1440,
+        "images": [
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 184,
+            "requestedWidth": 256,
+            "bytes": 4725,
+            "complete": true,
+            "loading": "eager",
+            "priority": "auto",
+            "sizes": "(max-width: 780px) 158px, 184px"
+          },
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 543,
+            "requestedWidth": 640,
+            "bytes": 32305,
+            "complete": true,
+            "loading": "eager",
+            "priority": "high",
+            "sizes": "(max-width: 780px) 90vw, 42vw"
+          }
+        ],
+        "animations": [
+          {
+            "name": "shop-module__Vq0a9q__panelSlide",
+            "timeline": "auto",
+            "durations": [
+              200
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__menuEnter",
+            "timeline": "auto",
+            "durations": [
+              250
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          }
+        ],
+        "overflow": false,
+        "reduced": {
+          "running": 0,
+          "runningNames": [],
+          "smoothScroll": false
+        },
+        "failures": []
+      },
+      {
+        "route": "/pieces/river-channel",
+        "width": 1440,
+        "images": [
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 184,
+            "requestedWidth": 256,
+            "bytes": 4725,
+            "complete": true,
+            "loading": "eager",
+            "priority": "auto",
+            "sizes": "(max-width: 780px) 158px, 184px"
+          },
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 653,
+            "requestedWidth": 640,
+            "bytes": 23461,
+            "complete": true,
+            "loading": "eager",
+            "priority": "high",
+            "sizes": "(max-width:780px) calc(100vw - 40px), (max-width:1200px) 48vw, 44vw"
+          }
+        ],
+        "animations": [
+          {
+            "name": "shop-module__Vq0a9q__panelSlide",
+            "timeline": "auto",
+            "durations": [
+              200
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__menuEnter",
+            "timeline": "auto",
+            "durations": [
+              250
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__section-arrival",
+            "timeline": "view()",
+            "durations": [
+              "auto"
+            ],
+            "iterations": [
+              1
+            ]
+          }
+        ],
+        "overflow": false,
+        "reduced": {
+          "running": 0,
+          "runningNames": [],
+          "smoothScroll": false
+        },
+        "failures": []
+      },
+      {
+        "route": "/our-story",
+        "width": 1440,
+        "images": [
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 184,
+            "requestedWidth": 256,
+            "bytes": 4725,
+            "complete": true,
+            "loading": "eager",
+            "priority": "auto",
+            "sizes": "(max-width: 780px) 158px, 184px"
+          },
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 590,
+            "requestedWidth": 640,
+            "bytes": 12178,
+            "complete": true,
+            "loading": "eager",
+            "priority": "high",
+            "sizes": "(max-width: 780px) 90vw, 42vw"
+          }
+        ],
+        "animations": [
+          {
+            "name": "shop-module__Vq0a9q__panelSlide",
+            "timeline": "auto",
+            "durations": [
+              200
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__menuEnter",
+            "timeline": "auto",
+            "durations": [
+              250
+            ],
+            "iterations": [
+              1
+            ]
+          }
+        ],
+        "overflow": false,
+        "reduced": {
+          "running": 0,
+          "runningNames": [],
+          "smoothScroll": false
+        },
+        "failures": []
+      },
+      {
+        "route": "/process",
+        "width": 1440,
+        "images": [
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 184,
+            "requestedWidth": 256,
+            "bytes": 4725,
+            "complete": true,
+            "loading": "eager",
+            "priority": "auto",
+            "sizes": "(max-width: 780px) 158px, 184px"
+          },
+          {
+            "reusedForLargerSlot": false,
+            "altPresent": true,
+            "width": 590,
+            "requestedWidth": 640,
+            "bytes": 13899,
+            "complete": true,
+            "loading": "eager",
+            "priority": "high",
+            "sizes": "(max-width: 780px) 90vw, 42vw"
+          }
+        ],
+        "animations": [
+          {
+            "name": "shop-module__Vq0a9q__panelSlide",
+            "timeline": "auto",
+            "durations": [
+              200
+            ],
+            "iterations": [
+              1
+            ]
+          },
+          {
+            "name": "shop-module__Vq0a9q__menuEnter",
+            "timeline": "auto",
+            "durations": [
+              250
+            ],
+            "iterations": [
+              1
+            ]
+          }
+        ],
+        "overflow": false,
+        "reduced": {
+          "running": 0,
+          "runningNames": [],
+          "smoothScroll": false
+        },
+        "failures": []
+      }
+    ]
+  },
+  "sourceProfile": {
+    "at": "2026-10-05T04:59:10.453Z",
+    "scope": "Read-only direct queries from this computer to the isolated QA database; no documents or connection details recorded.",
+    "samples": [
+      {
+        "run": 1,
+        "results": [
+          {
+            "name": "published",
+            "ms": 1828,
+            "bytes": 529618
+          },
+          {
+            "name": "shell",
+            "ms": 941,
+            "bytes": 23641
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "results": [
+          {
+            "name": "published",
+            "ms": 1461,
+            "bytes": 529618
+          },
+          {
+            "name": "shell",
+            "ms": 485,
+            "bytes": 23641
+          }
+        ]
+      },
+      {
+        "run": 3,
+        "results": [
+          {
+            "name": "published",
+            "ms": 968,
+            "bytes": 529618
+          },
+          {
+            "name": "shell",
+            "ms": 499,
+            "bytes": 23641
+          }
+        ]
+      }
+    ]
+  },
+  "humanEvidence": {
+    "status": "NOT AVAILABLE",
+    "ownerConfirmed": "Neither is available now",
+    "date": "2026-10-05",
+    "screenReaderTested": false,
+    "physicalPhoneTested": false,
+    "nativeBrowserZoomTested": false
+  },
+  "protection": {
+    "recordsUnchanged": true,
+    "productBusinessSocialFactsChanged": false,
+    "productionWrites": false,
+    "messagesSent": false,
+    "backupOperations": false
+  },
+  "excludedEvidence": "Provisional Studio scans redirected to login and are excluded. CSS zoom was rejected as a native-zoom proxy. Final scans assert exact routes and actual Studio controls."
+}

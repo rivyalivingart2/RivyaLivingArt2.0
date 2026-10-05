@@ -1,3 +1,11 @@
+# Current continuation — C6 engineering pass, acceptance still partial
+
+5 October 2026. The owner requested starting C6. Source `ccf1ac3` on `codex/c6-performance-accessibility` adds responsive image/loading improvements, a separate form entry and Studio menu-rendering repairs. Read `docs/redesign/CRAFT-C6-CHECKPOINT.md` and `craft-c6-evidence.json`. Full code checks and the exact-route automated accessibility/interaction matrix pass; protected records remain unchanged.
+
+C6 is not fully accepted: several mobile loading results exceed 2.5s, field p75 is unavailable, native browser zoom and manual contrast reviews remain, and the owner confirmed no real phone or screen reader is available now. Use the prepared checklist later; never turn emulation into human/device evidence. Backups/key custody remain removed. C7 has not started. Keep work local until a new explicit push-main request, then use a detailed PR. No production publication or deployment occurred.
+
+---
+
 # Current continuation — C5 acceptance complete locally; C6 next
 
 5 October 2026. The owner requested completion of C5 permission, error-handling and publishing/recovery acceptance before C6. That work is complete in isolated QA on `codex/c5-acceptance`, source `0c5dfc5`. Read `docs/redesign/CRAFT-C5-ACCEPTANCE.md` and `craft-c5-acceptance-evidence.json`. All six C5 task rows are accepted for their engineering scope. The new repairs and evidence are local; PR #37 already fulfilled the prior push instruction.
