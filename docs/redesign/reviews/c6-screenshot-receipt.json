@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-05T06:41:22.577944+00:00",
+  "source": "f1245c7b6362abbbc3b8a1735686b334090ea190",
+  "scope": "Public-only screenshots; before badge screenshot precedes repair; no private Studio screenshot",
+  "sha256": {
+    "badge-before.png": "947097a50cd829a7707363b878fca0a5f2fd6f39e67a4dce9389cf074877d146",
+    "badge-final.png": "d7736404ee239117f303a1e184554f679859bc7d164a9c0e822410507f726370",
+    "home-final.png": "4a76f169e2a8c2745aebd3fdd1a21aaf24272127ec0cd5ebf509d22164c02985",
+    "collection-final.png": "16e0b5bf943501451ff2c795cbd526497f1c8800b2fedb05499900ac5a503aa3",
+    "native-zoom-200.png": "803df2a97d9b88ae87dba0952c34d13b11c4e2d60fc43fea9c61911c884383ea",
+    "native-zoom-400.png": "96ca56c0a8e49ae1e847be489eed0dceb2b8b66712df7c86826124be55993ab7",
+    "closing-final.png": "6e4d0a8ff899087643aa8d78025868d089a7788568a1f7a82eef6e457e55fcc9",
+    "footer-final.png": "d8b5654cf678a912a1f082c62d9f1b61efcd64e26e7d11875b2eb950760b576b"
+  }
+}

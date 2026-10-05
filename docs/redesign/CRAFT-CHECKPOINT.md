@@ -1,3 +1,11 @@
+# Current owner instruction — release C5/C6 through a detailed PR
+
+5 October 2026. The owner explicitly requests all updated files in main with a PR describing every change. Read `docs/decisions/2026-10-05-publish-c5-c6-main.md` and `docs/redesign/C5-C6-MAIN-RELEASE.md`. Push the accumulated C5 acceptance/C6 branch, check the final PR head and required checks/reviews, merge through the PR, then verify main and the existing Vercel Git deployment. No direct main push or review bypass.
+
+C5 engineering acceptance is complete. C6 native zoom/assistant contrast are complete for recorded scope; collection loading, field p75 and human/physical-device evidence remain open. Release authorization does not change these results. Preserve protected products/media/business/social/customer/draft/history data. No production content publication, migration, grants, messages or backup operations. Further development returns to local-only after this release.
+
+---
+
 # Current continuation — C6 zoom/contrast complete; loading and human acceptance open
 
 5 October 2026. The owner requested full C6 completion. Local application source `f1245c7` on `codex/c6-performance-accessibility` improves Studio startup, content-list payloads and validated public reads; fixes badges, named groups and repair-link contrast. Read `docs/redesign/CRAFT-C6-CHECKPOINT.md` and `craft-c6-evidence.json`. The current candidate passes 288 unit, 12 preflight, 403 built-server checks, 144 accessibility scans, 73 interaction assertions, 99 native zoom observations, 98 contrast states and 13 isolated publishing/recovery checks. All pre-existing/protected records remain intact; one new QA fixture is hidden with history retained.

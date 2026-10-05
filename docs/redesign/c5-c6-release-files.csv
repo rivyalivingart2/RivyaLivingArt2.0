@@ -1,0 +1,85 @@
+status,path,area
+M,AGENTS.md,C5/C6 release documentation and evidence
+A,docs/decisions/2026-10-05-publish-c5-c6-main.md,C5/C6 release documentation and evidence
+A,docs/redesign/C5-C6-MAIN-RELEASE.md,C5/C6 release documentation and evidence
+A,docs/redesign/C6-HUMAN-DEVICE-CHECKLIST.md,C5/C6 release documentation and evidence
+A,docs/redesign/CRAFT-C5-ACCEPTANCE.md,C5/C6 release documentation and evidence
+M,docs/redesign/CRAFT-C5-CHECKPOINT.md,C5/C6 release documentation and evidence
+A,docs/redesign/CRAFT-C6-CHECKPOINT.md,C5/C6 release documentation and evidence
+M,docs/redesign/CRAFT-CHECKPOINT.md,C5/C6 release documentation and evidence
+A,docs/redesign/c5-c6-release-files.csv,C5/C6 release documentation and evidence
+A,docs/redesign/craft-c5-acceptance-evidence.json,C5/C6 release documentation and evidence
+M,docs/redesign/craft-c5-module-acceptance.csv,C5/C6 release documentation and evidence
+M,docs/redesign/craft-c5-validation.json,C5/C6 release documentation and evidence
+A,docs/redesign/craft-c6-evidence.json,C5/C6 release documentation and evidence
+M,docs/redesign/craft-task-register.csv,C5/C6 release documentation and evidence
+A,docs/redesign/reviews/c6-evidence/badge-before.png,C5/C6 release documentation and evidence
+A,docs/redesign/reviews/c6-evidence/badge-final.png,C5/C6 release documentation and evidence
+A,docs/redesign/reviews/c6-evidence/closing-final.png,C5/C6 release documentation and evidence
+A,docs/redesign/reviews/c6-evidence/collection-final.png,C5/C6 release documentation and evidence
+A,docs/redesign/reviews/c6-evidence/footer-final.png,C5/C6 release documentation and evidence
+A,docs/redesign/reviews/c6-evidence/home-final.png,C5/C6 release documentation and evidence
+A,docs/redesign/reviews/c6-evidence/native-zoom-200.png,C5/C6 release documentation and evidence
+A,docs/redesign/reviews/c6-evidence/native-zoom-400.png,C5/C6 release documentation and evidence
+A,docs/redesign/reviews/c6-implementation.html,C5/C6 release documentation and evidence
+A,docs/redesign/reviews/c6-screenshot-receipt.json,C5/C6 release documentation and evidence
+M,next.config.ts,Application/configuration
+M,src/app/api/studio/content/route.ts,Application/configuration
+M,src/app/api/studio/workspace/route.ts,Application/configuration
+M,src/app/studio/[...path]/page.tsx,Application/configuration
+M,src/app/studio/page.tsx,Application/configuration
+M,src/components/rivya/private-studio-entry.tsx,Application/configuration
+M,src/components/shop/editorial-image.tsx,Application/configuration
+M,src/components/shop/header.tsx,Application/configuration
+M,src/components/shop/hero-image.tsx,Application/configuration
+A,src/components/shop/order-form-entry.tsx,Application/configuration
+M,src/components/shop/product-gallery.tsx,Application/configuration
+M,src/components/shop/shop-site.tsx,Application/configuration
+M,src/components/shop/shop.module.css,Application/configuration
+M,src/components/studio/business-settings.tsx,Application/configuration
+M,src/components/studio/catalogue-editor.tsx,Application/configuration
+M,src/components/studio/content-editor.tsx,Application/configuration
+M,src/components/studio/homepage-editor.tsx,Application/configuration
+M,src/components/studio/media-library.tsx,Application/configuration
+M,src/components/studio/operations.tsx,Application/configuration
+M,src/components/studio/record-status.tsx,Application/configuration
+M,src/components/studio/site-images-editor.tsx,Application/configuration
+M,src/components/studio/site-settings-editor.tsx,Application/configuration
+M,src/components/studio/staff-editor.tsx,Application/configuration
+M,src/components/studio/workspace-api.ts,Application/configuration
+M,src/components/studio/workspace.module.css,Application/configuration
+M,src/components/studio/workspace.tsx,Application/configuration
+A,src/lib/content-list-document.ts,Application/configuration
+M,src/lib/published-source.ts,Application/configuration
+A,src/lib/studio-staff.ts,Application/configuration
+A,src/lib/verified-snapshot.ts,Application/configuration
+A,tests/c5-studio-requests.test.mjs,Regression tests
+A,tests/c6-content-list.test.mjs,Regression tests
+A,tests/c6-verified-snapshot.test.mjs,Regression tests
+A,tools/c5-acceptance/README.md,Isolated QA acceptance tooling
+A,tools/c5-acceptance/administration-browser.mjs,Isolated QA acceptance tooling
+A,tools/c5-acceptance/browser-run.mjs,Isolated QA acceptance tooling
+A,tools/c5-acceptance/busy-zoom.mjs,Isolated QA acceptance tooling
+A,tools/c5-acceptance/capture-review.mjs,Isolated QA acceptance tooling
+A,tools/c5-acceptance/common.mjs,Isolated QA acceptance tooling
+A,tools/c5-acceptance/layout-keyboard.mjs,Isolated QA acceptance tooling
+A,tools/c5-acceptance/mutation-browser.mjs,Isolated QA acceptance tooling
+A,tools/c5-acceptance/protected-browser.mjs,Isolated QA acceptance tooling
+A,tools/c5-acceptance/read-failures.mjs,Isolated QA acceptance tooling
+A,tools/c5-acceptance/read-ui.mjs,Isolated QA acceptance tooling
+A,tools/c5-acceptance/service.mjs,Isolated QA acceptance tooling
+A,tools/c5-acceptance/verify-fixtures.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/README.md,Isolated QA acceptance tooling
+A,tools/c6-acceptance/accessibility.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/capture-review.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/common.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/contrast-review.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/data-contracts.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/interactions.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/manual-cases.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/media-motion.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/native-zoom.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/performance.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/serve.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/server-only-loader.mjs,Isolated QA acceptance tooling
+A,tools/c6-acceptance/source-profile.mjs,Isolated QA acceptance tooling
