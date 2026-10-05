@@ -1,3 +1,13 @@
+# Current continuation — C5 acceptance complete locally; C6 next
+
+5 October 2026. The owner requested completion of C5 permission, error-handling and publishing/recovery acceptance before C6. That work is complete in isolated QA on `codex/c5-acceptance`, source `0c5dfc5`. Read `docs/redesign/CRAFT-C5-ACCEPTANCE.md` and `craft-c5-acceptance-evidence.json`. All six C5 task rows are accepted for their engineering scope. The new repairs and evidence are local; PR #37 already fulfilled the prior push instruction.
+
+The current candidate passes 283 unit, 12 preflight and 403 built-server tests, typecheck/build, 90 service assertions, real browser draft/preview/publish/public verification/recovery, protected-editor failures, all-module retry/layout and keyboard checks. All protected and pre-existing records remain intact. Synthetic fixtures are retired with history. No production publication, messages, exports or erasures occurred.
+
+C6 has not been started by this pass. Performance, wider accessibility, native browser zoom/human screen-reader/physical-phone verification, optional C2 video and production editorial acceptance remain separate. The last recorded production Imprint result was 404. Backup operations and key-custody gates remain removed. Keep further work local until a new explicit push-main request, then use a detailed PR. Never copy QA content/media identities to production.
+
+---
+
 # Current owner instruction — publish CRAFT through a detailed PR
 
 5 October 2026. The owner explicitly requested all updated files in main with a PR documenting every change. Read `docs/decisions/2026-10-05-publish-craft-main.md` and `docs/redesign/CRAFT-MAIN-RELEASE.md`. Push the complete CRAFT branch, verify the exact PR head and required checks, then merge through the PR and verify the existing Vercel Git deployment. Do not push directly to main or bypass required reviews. This release includes C1–C5 source and backup removal; it does not certify unfinished C5/C6 or publish Studio records. Preserve protected data and archive/key removal boundaries. Later development returns to local-only until a new push-main request.

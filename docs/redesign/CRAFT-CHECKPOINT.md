@@ -1,3 +1,11 @@
+# Current CRAFT checkpoint — C5 accepted locally, 5 October 2026
+
+C1–C5 presentation and backup removal were released through PR #37 at `1b3cbbc`. The subsequent C5 permission/error/publishing/recovery acceptance is now complete on local source `0c5dfc5`. See [CRAFT-C5-ACCEPTANCE.md](CRAFT-C5-ACCEPTANCE.md). These new fixes have not been pushed or deployed.
+
+C6 remains next: performance and wider accessibility/native zoom/human/device evidence. Optional C2 video and production editorial work, including the previously unavailable Imprint, remain separate. Backup/key-custody work is removed. The dated plan below is historical; use the current task register and C5 receipt for status.
+
+---
+
 > Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
 
 # CRAFT visual continuation — 3 October 2026

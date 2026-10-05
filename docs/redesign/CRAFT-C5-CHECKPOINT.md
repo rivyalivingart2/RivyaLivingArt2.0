@@ -1,3 +1,13 @@
+# C5 acceptance update — 5 October 2026
+
+**Permission, error-handling and publishing/recovery acceptance is complete in isolated QA.** Source `0c5dfc5` is saved locally on `codex/c5-acceptance`. See [the current acceptance report](CRAFT-C5-ACCEPTANCE.md) and `craft-c5-acceptance-evidence.json` for exact scope, final checks, cleanup and protection evidence.
+
+All six C5 engineering rows are accepted. All 16 modules pass automated viewport/keyboard checks and 200% CSS page zoom. Human screen-reader, physical-phone and native-browser-zoom certification remain in C6 alongside performance. C6 has not been started. Nothing from this acceptance pass was pushed or deployed; protected facts and existing records are unchanged.
+
+The record below is the historical 3 October presentation receipt, superseded by this update for C5 status. Backup-related gates remain removed by owner.
+
+---
+
 > Owner scope change, 5 October 2026: the project backup feature, scheduled archive jobs, archive-key custody tasks and backup/RPO/RTO acceptance gates are removed. Any earlier instruction below to run, verify, schedule or require them is historical and superseded. Existing archives/keys were not deleted. Studio draft/revision recovery and privacy-erasure safeguards remain. See the 2026-10-05 removal decision.
 
 # C5 — Studio presentation and scoped verification

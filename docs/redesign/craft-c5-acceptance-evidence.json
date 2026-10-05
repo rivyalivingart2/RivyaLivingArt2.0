@@ -1,0 +1,939 @@
+{
+  "phase": "C5",
+  "checkedAt": "2026-10-05T04:40:56.650184+00:00",
+  "status": "Requested permission, error-handling and publishing/recovery acceptance complete in isolated QA",
+  "sourceCommit": "0c5dfc5d86283f98c6e8fcf511c2331130924b47",
+  "baseCommit": "1b3cbbc576aff2d0d37138ebfc211ce3e3444ac2",
+  "branch": "codex/c5-acceptance",
+  "productionWrites": false,
+  "sourcePushed": false,
+  "sourceDeployed": false,
+  "c6Started": false,
+  "validation": {
+    "typecheck": true,
+    "lintErrors": 0,
+    "existingRepositoryLintWarnings": 62,
+    "changedComponentAndRunnerLintWarnings": 0,
+    "optimizedBuild": true,
+    "unitTests": 283,
+    "preflightTests": 12,
+    "builtServerTests": 403
+  },
+  "receipts": {
+    "service": {
+      "checkedAt": "2026-10-05T04:27:06.715Z",
+      "checks": [
+        "Anonymous denied /api/studio/workspace",
+        "Administrator reads /api/studio/workspace",
+        "Anonymous denied /api/studio/orders",
+        "Administrator reads /api/studio/orders",
+        "Anonymous denied /api/studio/work-queue",
+        "Administrator reads /api/studio/work-queue",
+        "Anonymous denied /api/studio/content",
+        "Administrator reads /api/studio/content",
+        "Anonymous denied /api/studio/media",
+        "Administrator reads /api/studio/media",
+        "Anonymous denied /api/studio/editorial-assets",
+        "Administrator reads /api/studio/editorial-assets",
+        "Anonymous denied /api/studio/health-context",
+        "Administrator reads /api/studio/health-context",
+        "Anonymous denied /api/studio/revisions?kind=content&key=page:home",
+        "Administrator reads /api/studio/revisions?kind=content&key=page:home",
+        "Anonymous denied /api/studio/operations?view=activity",
+        "Administrator reads /api/studio/operations?view=activity",
+        "Anonymous denied /api/studio/site-settings",
+        "Administrator reads /api/studio/site-settings",
+        "Anonymous denied /api/studio/settings",
+        "Administrator reads /api/studio/settings",
+        "Anonymous denied /api/studio/operations?view=settings",
+        "Administrator reads /api/studio/operations?view=settings",
+        "Anonymous denied /api/studio/operations?view=exports",
+        "Administrator reads /api/studio/operations?view=exports",
+        "Anonymous denied /api/studio/route-review",
+        "Administrator reads /api/studio/route-review",
+        "Synthetic editor created",
+        "Editor reads /api/studio/workspace",
+        "Editor reads /api/studio/orders",
+        "Editor reads /api/studio/work-queue",
+        "Editor reads /api/studio/content",
+        "Editor reads /api/studio/media",
+        "Editor reads /api/studio/editorial-assets",
+        "Editor reads /api/studio/health-context",
+        "Editor reads /api/studio/revisions?kind=content&key=page:home",
+        "Editor reads /api/studio/operations?view=activity",
+        "Editor denied /api/studio/site-settings",
+        "Editor denied /api/studio/settings",
+        "Editor denied /api/studio/operations?view=settings",
+        "Editor denied /api/studio/operations?view=exports",
+        "Editor denied /api/studio/route-review",
+        "Editor staff directory excludes logins, hashes and credential versions",
+        "Editor mutation denied /api/studio/workspace staff",
+        "Editor mutation denied /api/studio/workspace revoke-staff",
+        "Editor mutation denied /api/studio/orders create",
+        "Editor mutation denied /api/studio/settings settings",
+        "Editor mutation denied /api/studio/site-settings settings",
+        "Editor mutation denied /api/studio/operations export",
+        "Editor mutation denied /api/studio/cleanup settings",
+        "Foreign-origin write denied",
+        "Synthetic manual entry 0 created",
+        "Lost-response retry reuses the same manual entry",
+        "Synthetic manual entry 1 created",
+        "Synthetic manual entry 2 created",
+        "Editor list contains only assigned synthetic inquiry",
+        "Editor exact unassigned/manual record denied 2e39d6de-9d73-4daa-ad7e-526f5e2d02e5",
+        "Editor exact unassigned/manual record denied f3ed73d0-d43a-4137-b68c-3f45a9253bcc",
+        "Assigned editor reads original inquiry",
+        "Unassigned internal note denied",
+        "Assigned internal note saved",
+        "Assigned stage transition saved",
+        "Stale stage rejected",
+        "Amendment saves",
+        "Amendment retry is idempotent",
+        "Amendment preserves original customer answers and notes",
+        "Assigned follow-up saves",
+        "Stale follow-up rejected",
+        "Editor cannot reassign",
+        "Synthetic draft captures real preview snapshot",
+        "Draft is not publicly visible",
+        "Authenticated exact saved preview renders revision",
+        "Anonymous saved preview blocked",
+        "Editor cannot publish content",
+        "Anonymous public page matches published revision",
+        "Saving a changed draft keeps public version intact",
+        "Concurrent stale save rejected",
+        "Restored version publishes as a new revision",
+        "Original, edited and recovered revisions retained",
+        "Administrator unassigns synthetic inquiry",
+        "Assignment removal immediately revokes inquiry access",
+        "Editor session revoked",
+        "Revoked session denied",
+        "Editor role change succeeds",
+        "Role change invalidates old session",
+        "Stale staff update denied",
+        "Synthetic page hidden, history retained",
+        "Synthetic staff disabled",
+        "Every pre-existing content, inquiry, order, staff, product, media and business record unchanged"
+      ],
+      "assertions": 90,
+      "fixturePrefix": "C5QA-1791174327469",
+      "fixtureIds": [
+        "168721d4-cea5-4953-9725-e7e551b629d3",
+        "2e39d6de-9d73-4daa-ad7e-526f5e2d02e5",
+        "f3ed73d0-d43a-4137-b68c-3f45a9253bcc"
+      ],
+      "staffId": "5ea9b6a3-458b-4294-8b57-476b3b0eaed5",
+      "pageId": "custom-page:fa7d77f2-e63b-4323-b6ba-92421955d8b5",
+      "fixturesClosed": true,
+      "pageHidden": true,
+      "staffInactive": true,
+      "existingRecordsUnchanged": true,
+      "productionWrites": false,
+      "complete": true
+    },
+    "mutation-browser": {
+      "checkedAt": "2026-10-05T04:22:41.164Z",
+      "checks": [
+        "Content 503 retains edits with no automatic retry",
+        "Content 409 retains edits with no automatic retry",
+        "Content 401-html retains edits with no automatic retry",
+        "Content network retains edits with no automatic retry",
+        "Content truncated retains edits with no automatic retry",
+        "Conflict copy and cancel preserve the entire local draft",
+        "Missing saved record cannot erase the local draft",
+        "Explicit reload recovers latest saved record",
+        "Record-switch dialog cancel retains content and returns control",
+        "Native navigation cancel retains dirty content",
+        "Browser saved preview renders the exact server-saved revision",
+        "Committed publication is distinguished from failed public verification",
+        "Public verification retries without duplicate publication",
+        "Revision comparison and restoration create an unsaved draft without publishing",
+        "Recovered draft saves and publishes as a new verified revision",
+        "Native inquiry-close cancel preserves unsaved note",
+        "Failed inquiry note retains text",
+        "Inquiry note saves and returns through record refresh",
+        "Real concurrent inquiry change retains local date and blocks stale write",
+        "Browser Back preserves dirty inquiry record",
+        "No unhandled browser errors during mutations and recovery",
+        "Editor direct administrator routes denied in browser",
+        "Editor content controls exclude publication"
+      ],
+      "errors": [],
+      "complete": true
+    },
+    "protected-browser": {
+      "checkedAt": "2026-10-05T04:13:05.232Z",
+      "checks": [
+        "homepage 503 retains typed edit and sends one request",
+        "homepage 409 retains typed edit and sends one request",
+        "homepage 401 retains typed edit and sends one request",
+        "homepage failed reload retains editable value and copyable draft",
+        "homepage explicit reload recovers real saved record",
+        "site-copy 503 retains typed edit and sends one request",
+        "site-copy 409 retains typed edit and sends one request",
+        "site-copy 401 retains typed edit and sends one request",
+        "site-copy failed reload retains editable value and copyable draft",
+        "site-copy explicit reload recovers real saved record",
+        "media 503 retains typed edit and sends one request",
+        "media 409 retains typed edit and sends one request",
+        "media 401 retains typed edit and sends one request",
+        "media failed reload retains editable value and copyable draft",
+        "media explicit reload recovers real saved record",
+        "media simulated committed save plus failed refresh has explicit do-not-repeat message",
+        "site-images 503 retains typed edit and sends one request",
+        "site-images 409 retains typed edit and sends one request",
+        "site-images 401 retains typed edit and sends one request",
+        "site-images failed reload retains editable value and copyable draft",
+        "site-images explicit reload recovers real saved record",
+        "products 503 retains typed edit and sends one request",
+        "products 409 retains typed edit and sends one request",
+        "products 401 retains typed edit and sends one request",
+        "products failed reload retains editable value and copyable draft",
+        "products explicit reload recovers real saved record",
+        "products simulated committed save plus failed refresh has explicit do-not-repeat message",
+        "navigation 503 retains typed edit and sends one request",
+        "navigation 409 retains typed edit and sends one request",
+        "navigation 401 retains typed edit and sends one request",
+        "navigation simulated committed save plus failed refresh has explicit do-not-repeat message",
+        "settings 503 retains typed edit and sends one request",
+        "settings 409 retains typed edit and sends one request",
+        "settings 401 retains typed edit and sends one request",
+        "settings simulated committed save plus failed refresh has explicit do-not-repeat message",
+        "All protected and pre-existing records unchanged; every browser POST was intercepted"
+      ],
+      "errors": [],
+      "complete": true,
+      "actualWrites": 0
+    },
+    "administration-browser": {
+      "checkedAt": "2026-10-05T04:15:17.214Z",
+      "checks": [
+        "Export tracking initial failure is explicit and retry clears it",
+        "Export tracking stale read is labelled",
+        "Contact reload failure retains current facts and retry clears warning",
+        "Staff 503 keeps typed access change without committing",
+        "Staff 409 keeps typed access change without committing",
+        "Staff 401 keeps typed access change without committing",
+        "Simulated saved staff access plus failed refresh is distinguished",
+        "Simulated committed revocation plus failed refresh is distinguished"
+      ],
+      "errors": [],
+      "complete": true,
+      "actualWrites": 0,
+      "protectedRecordsUnchanged": true
+    },
+    "layout-keyboard": {
+      "checkedAt": "2026-10-05T04:36:48.887Z",
+      "rows": [
+        {
+          "module": "overview",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "overview",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "overview",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "inquiries",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "inquiries",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "inquiries",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "follow-ups",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "follow-ups",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "follow-ups",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "products",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "products",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "products",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "content",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "content",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "content",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "site-copy",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "site-copy",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "site-copy",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "media",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "media",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "media",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "site-images",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "site-images",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "site-images",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "content-health",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "content-health",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "content-health",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "translations",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "translations",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "translations",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "navigation",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "navigation",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "navigation",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "legacy",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "legacy",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "legacy",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "route-review",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "route-review",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "route-review",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "activity",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "activity",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "activity",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "staff",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "staff",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "staff",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        },
+        {
+          "module": "settings",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        {
+          "module": "settings",
+          "viewport": 720,
+          "scroll": 720,
+          "body": 720
+        },
+        {
+          "module": "settings",
+          "viewport": 390,
+          "scroll": 390,
+          "body": 390
+        }
+      ],
+      "keyboard": [
+        "overview mobile modal keyboard wrap, Escape and opener focus",
+        "inquiries mobile modal keyboard wrap, Escape and opener focus",
+        "follow-ups mobile modal keyboard wrap, Escape and opener focus",
+        "products mobile modal keyboard wrap, Escape and opener focus",
+        "content mobile modal keyboard wrap, Escape and opener focus",
+        "site-copy mobile modal keyboard wrap, Escape and opener focus",
+        "media mobile modal keyboard wrap, Escape and opener focus",
+        "site-images mobile modal keyboard wrap, Escape and opener focus",
+        "content-health mobile modal keyboard wrap, Escape and opener focus",
+        "translations mobile modal keyboard wrap, Escape and opener focus",
+        "navigation mobile modal keyboard wrap, Escape and opener focus",
+        "legacy mobile modal keyboard wrap, Escape and opener focus",
+        "route-review mobile modal keyboard wrap, Escape and opener focus",
+        "activity mobile modal keyboard wrap, Escape and opener focus",
+        "staff mobile modal keyboard wrap, Escape and opener focus",
+        "settings mobile modal keyboard wrap, Escape and opener focus",
+        "Product tabs support End, Home, ArrowRight with one selected tab and visible named panel",
+        "Page finder keyboard navigation focuses destination heading"
+      ],
+      "errors": [],
+      "complete": true,
+      "zoomNote": "720 CSS-pixel reflow is the layout-width equivalent of a 1440-pixel desktop at 200%. This does not certify human browser zoom, screen-reader use or a physical device."
+    },
+    "busy-zoom": {
+      "checkedAt": "2026-10-05T04:35:23.768Z",
+      "checks": [
+        "Navigation locks all editing controls while publishing and retains edits on failure"
+      ],
+      "zoom": [
+        {
+          "module": "overview",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "inquiries",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "follow-ups",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "products",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "content",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "site-copy",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "media",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "site-images",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "content-health",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "translations",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "navigation",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "legacy",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "route-review",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "activity",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "staff",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        },
+        {
+          "module": "settings",
+          "viewport": 1440,
+          "scroll": 1440,
+          "body": 720,
+          "zoom": "2",
+          "overflow": false,
+          "elements": []
+        }
+      ],
+      "errors": [],
+      "complete": true,
+      "method": "Automated 200% CSS page zoom plus separately verified 720 CSS-pixel viewport reflow. Native browser chrome zoom, human screen-reader use and physical hardware are not certified."
+    },
+    "browser-fixtures": {
+      "checkedAt": "2026-10-05T04:22:48.817Z",
+      "complete": true,
+      "checks": [
+        "Editor product publish/hide and media publication denied by real APIs",
+        "Content 503 retains edits with no automatic retry",
+        "Content 409 retains edits with no automatic retry",
+        "Content 401-html retains edits with no automatic retry",
+        "Content network retains edits with no automatic retry",
+        "Content truncated retains edits with no automatic retry",
+        "Conflict copy and cancel preserve the entire local draft",
+        "Missing saved record cannot erase the local draft",
+        "Explicit reload recovers latest saved record",
+        "Record-switch dialog cancel retains content and returns control",
+        "Native navigation cancel retains dirty content",
+        "Browser saved preview renders the exact server-saved revision",
+        "Committed publication is distinguished from failed public verification",
+        "Public verification retries without duplicate publication",
+        "Revision comparison and restoration create an unsaved draft without publishing",
+        "Recovered draft saves and publishes as a new verified revision",
+        "Native inquiry-close cancel preserves unsaved note",
+        "Failed inquiry note retains text",
+        "Inquiry note saves and returns through record refresh",
+        "Real concurrent inquiry change retains local date and blocks stale write",
+        "Browser Back preserves dirty inquiry record",
+        "No unhandled browser errors during mutations and recovery",
+        "Editor direct administrator routes denied in browser",
+        "Editor content controls exclude publication"
+      ],
+      "fixturePrefix": "C5UI-1791174081636",
+      "inquiryId": "f2a624de-0839-4bdf-bf59-2f5b7d4da816",
+      "pageId": "custom-page:6c85c2f2-b096-4429-bb45-0b1ddd1ff570",
+      "staffId": "7d704d33-76a8-4e67-b1b1-17de78e22147",
+      "staffInactive": true,
+      "inquiryClosed": true,
+      "pageHidden": true,
+      "existingRecordsUnchanged": true,
+      "productionWrites": false
+    },
+    "fixture-retirement": {
+      "checkedAt": "2026-10-05T04:38:25.889Z",
+      "complete": true,
+      "localAppSessionVerifiedInQaDatabase": true,
+      "retiredManualFixtures": [],
+      "supplementalClosures": [
+        {
+          "id": "26529210-a4ab-4795-9305-5594d735ec60",
+          "closedAt": "2026-10-05T04:24:23.852Z"
+        },
+        {
+          "id": "cd3b23cc-3ccb-4d58-a7f9-9145149a7ef4",
+          "closedAt": "2026-10-05T04:24:24.606Z"
+        }
+      ],
+      "open_orders": 0,
+      "active_staff": 0,
+      "visible_pages": 0,
+      "products": 120,
+      "media": 136,
+      "protectedRecordsUnchanged": true,
+      "productionWrites": false
+    }
+  },
+  "readFailures": [
+    {
+      "module": "shell",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": null,
+      "errors": []
+    },
+    {
+      "module": "overview",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": {
+        "retained": true,
+        "warning": [
+          "C5 simulated service interruption.Last successful read: 5 Oct 2026, 9:41 am IST. Counts below have not been replaced.Retry queue",
+          "All permitted records · Updated 5 Oct 2026, 9:41 am IST"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "module": "inquiries",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": {
+        "retained": true,
+        "warning": [
+          "C5 simulated service interruption. Previously loaded rows are retained and may be out of date."
+        ]
+      },
+      "errors": []
+    },
+    {
+      "module": "follow-ups",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": {
+        "retained": true,
+        "warning": [
+          "C5 simulated service interruption. Previously loaded rows are retained and may be out of date."
+        ]
+      },
+      "errors": []
+    },
+    {
+      "module": "products",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": {
+        "retained": true,
+        "warning": [
+          "C5 simulated service interruption."
+        ]
+      },
+      "errors": []
+    },
+    {
+      "module": "content",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": null,
+      "errors": []
+    },
+    {
+      "module": "site-copy",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": null,
+      "errors": []
+    },
+    {
+      "module": "media",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": null,
+      "errors": []
+    },
+    {
+      "module": "site-images",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": null,
+      "errors": []
+    },
+    {
+      "module": "content-health",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": {
+        "retained": true,
+        "warning": [
+          "C5 simulated service interruption.Previous results remain below and may be out of date.Retry checks",
+          "323 of 323 records"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "module": "translations",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": {
+        "retained": true,
+        "warning": [
+          "Translation coverage could not be refreshed. Any previous results are stale.",
+          "67 documents"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "module": "navigation",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": {
+        "retained": true,
+        "warning": [
+          "C5 simulated service interruption. Previously loaded settings and any unsaved edits are retained; saved settings may be out of date."
+        ]
+      },
+      "errors": []
+    },
+    {
+      "module": "route-review",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": {
+        "retained": true,
+        "warning": [
+          "The recheck failed. Any previous results below are stale.",
+          "19 route decisions"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "module": "activity",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": {
+        "retained": true,
+        "warning": [
+          "C5 simulated service interruption. Previously loaded records, if shown, may be out of date."
+        ]
+      },
+      "errors": []
+    },
+    {
+      "module": "settings",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": {
+        "retained": true,
+        "warning": [
+          "C5 simulated service interruption. Previously loaded records, if shown, may be out of date.",
+          "",
+          ""
+        ]
+      },
+      "errors": []
+    },
+    {
+      "module": "staff-shell",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": null,
+      "errors": []
+    },
+    {
+      "module": "legacy-shell",
+      "initialFailure": true,
+      "retry": true,
+      "staleFailure": null,
+      "errors": []
+    }
+  ],
+  "humanScreenReader": false,
+  "physicalPhone": false,
+  "nativeBrowserZoom": false,
+  "backupScope": "Removed by owner; not a release gate"
+}
