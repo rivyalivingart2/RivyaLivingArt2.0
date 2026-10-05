@@ -39,7 +39,7 @@ function HeaderContent({pathname,navigation,locale,enabledLocales,copy}:{pathnam
  },[]);
  return <header className={s.header}>
   <Link className={s.brand} href="/" aria-label="RivyaLivingArt home">
-   <Image src="/brand/rivyalivingart-logo-horizontal-transparent.png" width={410} height={116} alt="RivyaLivingArt" priority/>
+   <Image src="/brand/rivyalivingart-logo-horizontal-transparent.png" width={410} height={116} sizes="(max-width: 780px) 158px, 184px" alt="RivyaLivingArt" loading="eager"/>
   </Link>
   <nav className={s.nav} aria-label="Main navigation">
    {collections.length>0&&<details className={s.collectionMenu} ref={collectionMenu} onKeyDown={e=>{if(e.key==='Escape'){e.currentTarget.open=false;e.currentTarget.querySelector('summary')?.focus();}}} onBlur={e=>{if(!e.currentTarget.contains(e.relatedTarget))e.currentTarget.open=false;}}>

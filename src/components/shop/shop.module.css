@@ -573,6 +573,8 @@ html[dir="rtl"] .header,html[dir="rtl"] .footerTop,html[dir="rtl"] .footerBottom
 @keyframes craftTitle{from{transform:translateY(12px)}to{transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.craftHome .curatedGrid{grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible}.craftHome .heroCopy h1{transform:none}}
 @media(prefers-reduced-motion:reduce) and (max-width:780px){.craftHome .curatedGrid{grid-template-columns:minmax(0,1fr)}}
+/* Keep modal contrast without repainting a full-screen blur on small devices. */
+@media(max-width:780px){.mobileMenu::backdrop,.dialog::backdrop{backdrop-filter:none;-webkit-backdrop-filter:none}}
 .imprintContacts > div { display: grid; grid-template-columns: minmax(6rem, 1fr) minmax(0, 3fr); gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--border); }
 .imprintContacts dt { font-weight: 600; }
 .imprintContacts dd { margin: 0; overflow-wrap: anywhere; }

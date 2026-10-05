@@ -1,5 +1,5 @@
 'use client';
-import {useCallback,useEffect,useState,type ReactNode} from 'react';
+import {memo,useCallback,useEffect,useState,type ReactNode} from 'react';
 import {studioModules,studioModule,studioModuleHref,type StudioModuleKey} from '@/lib/studio-modules';
 import {usePathname} from 'next/navigation';
 import Link from 'next/link';
@@ -62,6 +62,13 @@ const moduleViews = {
  settings:({admin}:ModuleContext)=><Operations view="settings" admin={admin}/>,
 } satisfies Record<StudioModuleKey,(context:ModuleContext)=>ReactNode>;
 
+// Opening navigation or typing in the page finder must not re-render a large
+// editor. Identity, role, staff and module changes still update its real props;
+// the editor's own state and context subscriptions continue normally.
+const ModuleView=memo(function ModuleView({moduleKey,...context}:ModuleContext&{moduleKey:StudioModuleKey}){
+ return moduleViews[moduleKey](context);
+});
+
 // A route change can remount Workspace; retain only the requested focus destination.
 let pendingNavigationFocus:string|null=null;
 function NavigationLinks({admin,view,onNavigate}:{admin:boolean;view?:StudioModuleKey;onNavigate?:(href:string)=>void}){
@@ -123,7 +130,7 @@ export function Workspace(){
       </nav>
       <main id="main-content" tabIndex={-1} className={s.workspaceMain}>
         <nav className={s.workspaceCrumb} aria-label="Workspace breadcrumb"><Link href="/studio">Studio</Link><span aria-hidden> / </span><span aria-current="page">{activeModule?.label||'Unavailable page'}</span></nav>
-        {error?<div className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p className={s.status} role="status">Opening your workspace…</p>:!activeModule?<section className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>:activeModule.adminOnly&&!admin?<p className={s.empty}>Administrator access is required.</p>:<div key={activeModule.key}>{moduleViews[activeModule.key]({admin,staff,load,staffId:identity.staffId})}</div>}
+        {error?<div className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p className={s.status} role="status">Opening your workspace…</p>:!activeModule?<section className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>:activeModule.adminOnly&&!admin?<p className={s.empty}>Administrator access is required.</p>:<div key={activeModule.key}><ModuleView moduleKey={activeModule.key} admin={admin} staff={staff} load={load} staffId={identity.staffId}/></div>}
 
       </main>
     </div>

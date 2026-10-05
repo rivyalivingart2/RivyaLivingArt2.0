@@ -19,7 +19,7 @@ import {ProductCard} from './product-card';
 import {HeroImage} from './hero-image';
 import {publishedBusiness} from '@/lib/business-settings';
 import {publicLocale} from '@/lib/site-settings';
-import {OrderForm} from './order-form';
+import {OrderForm} from './order-form-entry';
 import {EditorialPage,ArticleCard} from './editorial';
 import {publishedContent} from '@/lib/published-content';
 import type {ContentDocument} from '@/lib/content-model';
