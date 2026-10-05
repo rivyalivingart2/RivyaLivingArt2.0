@@ -1,8 +1,8 @@
-# Current continuation — C6 engineering pass, acceptance still partial
+# Current continuation — C6 zoom/contrast complete; loading and human acceptance open
 
-5 October 2026. The owner requested starting C6. Source `ccf1ac3` on `codex/c6-performance-accessibility` adds responsive image/loading improvements, a separate form entry and Studio menu-rendering repairs. Read `docs/redesign/CRAFT-C6-CHECKPOINT.md` and `craft-c6-evidence.json`. Full code checks and the exact-route automated accessibility/interaction matrix pass; protected records remain unchanged.
+5 October 2026. The owner requested full C6 completion. Local application source `f1245c7` on `codex/c6-performance-accessibility` improves Studio startup, content-list payloads and validated public reads; fixes badges, named groups and repair-link contrast. Read `docs/redesign/CRAFT-C6-CHECKPOINT.md` and `craft-c6-evidence.json`. The current candidate passes 288 unit, 12 preflight, 403 built-server checks, 144 accessibility scans, 73 interaction assertions, 99 native zoom observations, 98 contrast states and 13 isolated publishing/recovery checks. All pre-existing/protected records remain intact; one new QA fixture is hidden with history retained.
 
-C6 is not fully accepted: several mobile loading results exceed 2.5s, field p75 is unavailable, native browser zoom and manual contrast reviews remain, and the owner confirmed no real phone or screen reader is available now. Use the prepared checklist later; never turn emulation into human/device evidence. Backups/key custody remain removed. C7 has not started. Keep work local until a new explicit push-main request, then use a detailed PR. No production publication or deployment occurred.
+C6 remains PARTIAL: 6/7 mobile lab medians meet 2.5s, but collection is 2.808s and field p75 is unavailable. Native 200%/400% zoom and assistant contrast review are complete for their recorded scope. The owner has no physical phone or screen reader available; human evidence remains NOT RUN. Backups/key custody remain removed. C7 has not started. Keep work local until a new explicit push-main request, then use a detailed PR. No production write or deployment occurred. Earlier C6 statuses below are historical.
 
 ---
 

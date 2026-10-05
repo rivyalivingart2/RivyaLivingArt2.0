@@ -34,7 +34,7 @@ Suggested coverage: Windows with NVDA and Chrome; an actual iPhone with Safari/V
 | D02 | Open keyboard in search and each brief step, then dismiss it | Active field and errors remain visible; iOS does not unexpectedly zoom ordinary text inputs; actions remain reachable | NOT RUN |
 | D03 | Swipe gallery horizontally and scroll vertically; pinch zoom | Horizontal gesture changes images; vertical gesture scrolls; pinch zoom stays available | NOT RUN |
 | D04 | Enable the phone's Reduce Motion setting | All content remains readable; no unnecessary entrance animation or forced scrolling | NOT RUN |
-| D05 | Use native desktop browser zoom at 200% and 400%, including open menus and Studio editors | Reflow and visible focus remain usable; content is not clipped or hidden by overlays. Narrow viewport and CSS zoom are not substitutes for this check | NOT RUN |
+| D05 | Use native desktop browser zoom at 200% and 400%, including open menus and Studio editors | 49 destinations passed actual native zoom geometry/reflow and assistant screenshot review; six dialog/focus checks passed. Human operation remains separate | AUTOMATED NATIVE PASS; HUMAN NOT RUN |
 | D06 | Use slow/mobile network, lose connectivity mid-brief and reconnect | Typed data remains available; retry/state messages are understandable; no duplicate save or automatic message | NOT RUN |
 
 ## Authenticated Studio
@@ -47,8 +47,8 @@ Suggested coverage: Windows with NVDA and Chrome; an actual iPhone with Safari/V
 | S04 | Renew an expired session and encounter a controlled conflicting edit | Local work stays available; sign-in and conflict messages are announced; no silent repeat publication | NOT RUN |
 | S05 | Inspect protected catalogue/media/settings controls as an editor role | Restricted actions are absent or explained; role restrictions are not conveyed only by colour | NOT RUN |
 
-## Manual review still required
+## Assistant review completed; human use still required
 
-Review axe's `incomplete` entries, particularly text over photographs/gradients and native disclosure semantics, using actual screenshots and assistive technology. Automated zero violations does not prove WCAG conformance. Source guidance: [W3C Easy Checks](https://www.w3.org/WAI/test-evaluate/preliminary/) and [Web Vitals lab versus field](https://web.dev/articles/vitals).
+The local candidate now has 98 desktop/mobile contrast states, 2,284 measured text cases (minimum 5.26:1), public screenshot inspection and 36 focused follow-up assertions. Badge surfaces, named groups and repair-link styles were fixed. Clipped scroll-container controls and an explicitly empty follow-up table have recorded dispositions. Actual native 200%/400% zoom passed 49 destinations. These results close the recorded assistant/browser scope, not human screen-reader use, phone testing or WCAG conformance. See `CRAFT-C6-CHECKPOINT.md` and `craft-c6-evidence.json`. Source guidance: [W3C Easy Checks](https://www.w3.org/WAI/test-evaluate/preliminary/) and [Web Vitals lab versus field](https://web.dev/articles/vitals).
 
 Performance acceptance requires eligible real-user p75 evidence after an authorized release. No tracking service, paid device service or production publication is activated by this checklist. Backup and recovery-key custody work remains removed from the project.

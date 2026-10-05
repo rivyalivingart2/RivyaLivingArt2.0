@@ -1,63 +1,61 @@
-# C6 — performance and accessibility engineering pass
+# C6 — loading, native zoom and contrast completion pass
 
-5 October 2026. Local source `ccf1ac31b14db058a7b8b01f23637ba349fff9c0` on `codex/c6-performance-accessibility`, continuing the accepted C5 candidate. **C6 remains PARTIAL.** Engineering improvements and the scoped automated matrix are complete; loading targets, real-user percentiles, native browser zoom and human/device evidence are not accepted. Nothing was pushed or deployed.
+5 October 2026. Application/tool source `f1245c7b6362abbbc3b8a1735686b334090ea190` on `codex/c6-performance-accessibility`, continuing C5 and the earlier C6 pass. **C6 remains PARTIAL:** native browser zoom and the assistant contrast review are now complete for the recorded scope; collection loading, field p75 and human screen-reader/physical-phone acceptance remain open. Changes are local only.
 
-## Implemented
+## What changed
 
-- The header logo requests a resource sized for its actual 158/184px slot. A 1200px responsive-image candidate avoids jumping from 1080 to 1440px for a 390px DPR3 hero.
-- Primary editorial images use eager loading and high fetch priority; below-fold editorial images stay lazy. Existing images, associations, crops, captions and alt text are retained.
-- Customization form code has a separate client entry, so ordinary browsing no longer includes that code in shared browsing chunks. Server rendering and the actual form component are retained.
-- Studio module rendering is memoized across shell-only menu/page-finder changes. Identity, role, staff, module and editor-local changes still update normally. Unsaved title retention across menu and finder use was checked without saving.
-- Small-screen modal backdrops keep their dark contrast layer without a full-screen blur repaint.
-- Editing-state announcements now sit inside a definition-list value rather than replacing its semantic role. This repairs the serious `definition-list` issue found on the actual Site copy screen; the final selected-record scan also checks it.
-- Repeatable compiled-QA runners, a screenshot report and a human/device checklist now accompany the phase.
+- Initial Studio identity/staff are rendered after the existing server authentication guard, using the same role-filtered projection as the access-refresh endpoint. This removes an initial request waterfall. The original retry/focus/access-renewal path remains; private data is not cached.
+- Unselected content rows carry compact search/state summaries with `detailPending`; choosing one fetches its complete exact record before editing. The selected homepage retains its full draft, snapshots and revision. Page section editor code is deferred separately. A read-only comparison measured 1,903,612 bytes for full content, 86,571 for the compact list and 137,904 for selected-home plus list. The database list query still reads complete records internally.
+- A single in-process published-data snapshot can be reused only after a fresh database identity/fingerprint check on every request. Membership and complete-publication fingerprints detect updates and withdrawals. There is no TTL, stale-on-error fallback or reused validation promise. Saved previews remain independent captured revisions. Unit checks cover storage failure, concurrent replacement, mutation isolation and updates/withdrawals; isolated QA verifies the real publication/recovery journey.
+- Public locale and publication reads start together. Initial hero/editorial and product-gallery display renditions use quality 60; enlarged product views retain 75. Source images, crops, associations, product and business content remain unchanged. Earlier logo sizing, 1200px image candidate, split form entry and menu-rendering improvements remain.
+- Product badges now use defined navy/ivory colours on an opaque surface; the old undefined tokens allowed unreadable text over photos. Product thumbnail and page-image lists have valid named group roles. Content-health repair links now have explicit underlines and readable link colour.
 
-## Performance — target still open
+## Mobile loading results
 
-The final run contains 21 cold-browser lab samples: three per route, 390×844 CSS px, DPR3, 4× CPU slowdown, 150ms latency, 1.6Mbps down/750Kbps up, reduced motion, local compiled server and isolated remote QA database. Server/image caches may be warm. Menu open/close is the sampled interaction. These observations do not establish field p75 or phone performance.
+21 completed samples: three per route; cold browser each time; 390×844 CSS pixels, DPR3, touch emulation, CPU4×, 150ms latency, 1.6Mbps down/750Kbps up and reduced motion. The compiled server is local and the isolated QA database is remote; server/image caches may be warm. Exact Studio destination and selected-editor controls are asserted. Menu open/close supplies an interaction diagnostic, not field INP.
 
-| Route | Median LCP | LCP range | Median TTFB | Maximum CLS | Maximum sampled interaction |
-|---|---:|---:|---:|---:|---:|
-| `/` | 3.09s | 3.01–4.40s | 1.47s | 0.0000 | 168ms |
-| `/collectible-design` | 4.62s | 4.34–4.71s | 1.81s | 0.0000 | 136ms |
-| `/pieces/river-channel` | 3.30s | 3.24–3.72s | 1.16s | 0.0003 | 104ms |
-| `/commission/customize` | 1.68s | 1.50–1.71s | 0.46s | 0.0598 | 136ms |
-| `/process` | 2.56s | 2.12–3.04s | 0.27s | 0.0000 | 120ms |
-| `/studio/inquiries` | 4.12s | 3.83–6.36s | 0.72s | 0.0385 | 176ms |
-| `/studio/content?record=page%3Ahome` | 5.16s | 5.08–6.12s | 1.00s | 0.0348 | 160ms |
+| Page | Earlier median LCP | Current median LCP | Current range | Median TTFB | Maximum CLS | Maximum menu event |
+|---|---:|---:|---:|---:|---:|---:|
+| Homepage | 3.09s | 2.25s | 1.93–2.54s | 0.55s | 0.0000 | 168ms |
+| Collection | 4.62s | 2.81s | 2.50–3.00s | 0.97s | 0.0000 | 152ms |
+| Product | 3.30s | 2.15s | 2.15–2.58s | 0.49s | 0.0003 | 136ms |
+| Custom brief | 1.68s | 1.70s | 1.68–1.76s | 0.48s | 0.0598 | 104ms |
+| Process | 2.56s | 2.20s | 2.04–2.33s | 0.49s | 0.0000 | 104ms |
+| Studio inquiries | 4.12s | 1.94s | 1.93–2.42s | 0.51s | 0.0000 | 176ms |
+| Homepage editor | 5.16s | 1.94s | 1.92–1.99s | 0.50s | 0.0141 | 144ms |
 
-Homepage transfer fell from approximately 461,721 to 440,632 bytes (about 21KB, 4.6%). The comparable collection/product reductions are about 12KB each. Timings vary; do not attribute every difference to code. Inquiry-menu diagnostics before the Studio optimization were 432/272/280ms; final results are recorded above. Neither series is real-user INP.
+Six of seven route medians meet the 2.5s lab comparison. Collection remains **2.808s**, with individual samples 2.500/2.808/3.004s and server response times 0.513/0.981/0.975s. Its measured LCP is the collection image (50,678 transferred bytes), whose load completes roughly 1.7–1.9s after request start under throttling. Do not hide the missed target or assume a hosted deployment will pass. Timing differences include variable network/database latency, not just code effects.
 
-The diagnostic published-data read returned 529,618 bytes and took 968–1,828ms; the shared shell returned 23,641 bytes and took 485–941ms. No cross-request cache was introduced: exact previews and immediate publication/withdrawal remain protected. Studio's full home editor still transfers approximately 1.19MB and needs further profiling.
+The homepage editor's measured transfer is approximately 0.836MB, versus approximately 1.19MB previously. The published source is still 529,618 bytes on a full miss; warm unchanged calls avoid transferring that document set and validate a 26,793-byte identity representation. That identity size is the serialized result, not an exact wire-transfer measurement. Read-only validated output equals a fresh complete read. The first profiled source read took 1,893ms; warm calls took 488/261ms.
 
-Performance samples include all loading/menu optimizations and precede only the final definition-list `dd`/`span` semantic repair. Final build and accessibility/interaction checks include that repair. No loading logic changed afterward.
+All sampled CLS values are below 0.1 and menu-event maxima below 200ms. Three lab runs do not establish the agreed real-user p75 targets: LCP ≤2.5s, INP ≤200ms and CLS ≤0.1. A hosted candidate in the intended deployment/database region and eligible field evidence remain necessary.
 
-The agreed field targets remain LCP ≤2.5s, INP ≤200ms and CLS ≤0.1 at the 75th percentile. Only one of the seven route medians meets the lab LCP comparison. All final sampled CLS and menu-event maxima meet their diagnostic thresholds; that is not field acceptance. See [Web Vitals](https://web.dev/articles/vitals) for the lab/field distinction.
+## Native zoom and contrast — recorded scope complete
 
-## Automated accessibility and interaction scope
+- **49 destinations at native Chrome 200% and 400%**, plus a 100% baseline: 99 observations and six dialog/focus-return interactions. Actual CSS viewport width/DPR changes are 1424/1 → 712/2 → 356/4; CSS zoom and visual-viewport scale remain 1. No horizontal page overflow or browser errors were found. Public screenshots were visually inspected. Vertical scrolling remains expected at high magnification.
+- **98 desktop/mobile contrast states**: 49 destinations at 1440/390px. Raster sampling covers 2,284 unresolved text cases over actual gradients/images; all measured cases pass, with minimum 5.26:1. Text paint was hidden in memory, geometry preserved, and 1000px screenshot tiles avoided giant-image texture limits. This is assistant review with measurement, not human accessibility certification.
+- Remaining cases were resolved through source repairs and **36 focused assertions / 11 targeted scans**. Thumbnail/page-image groups have appropriate roles. Catalogue pagination and health-table links can be scrolled into view and focused. Their measured text contrast is 16.65:1 and 6.97:1 respectively; repair links are underlined. An empty follow-up table has a caption/headers and an explicit empty-result message; it is not missing populated data cells. Repeated same-style cells share that disposition.
+- **144 automated scans** across 48 exact destinations at 1440/390/320px report zero violations, page overflow, missing image names, active reduced-motion animation or uncaught page errors. **73 interaction assertions, ten state scans and 26 reflow observations** cover menus, skip links, gallery, validation, filters, FAQ, reviewed-language fallback and unsaved Studio navigation.
+- **Ten image/motion observations** across five public routes and two sizes pass the C6 guards: visible images ≤200KB; width selection ≤1.5× device pixels with a 640px floor and already-loaded-resource reuse; finite entrance motion ≤1s once; static visible reduced-motion content. These are scoped regression guards, not full-page or field budgets.
 
-- 48 exact destinations: 32 public/system/login routes and all 16 authenticated Studio modules.
-- 144 axe observations at 1440, 390 and 320 CSS pixels, with zero automated violations, horizontal body overflow or uncaught browser errors. Reduced-motion checks find no active animation. The unavailable-route case correctly returns 404.
-- 73 focused keyboard/interaction assertions, 10 additional state scans and 26 public 720/360px reflow observations. Menus, search, gallery keys/focus, required-field errors, filter announcements, FAQ and unsaved Studio navigation are covered.
-- Ten image/motion observations across five public routes and two widths pass the new C6 regression guards: visible image ≤200KB; selected width ≤1.5× displayed device pixels with a 640px floor (reuse of an already loaded larger image is allowed); timed entrance motion ≤1 second once; native scroll timelines recorded separately; visible reduced-motion content static. Hidden closed-disclosure animation entries are not visual motion. These guards are a scoped regression policy, not a full-page download or field-performance certificate.
-- Hindi/Gujarati checks record the actual HTML language and reviewed-language fallback; they do not certify editorial translation or human pronunciation.
+Performance includes all loading changes and precedes only the badge contrast, named-group and repair-link presentation fixes. The full 144-scan accessibility and native zoom matrices include the badge repair and precede the final group/link fixes; 11 targeted scans verify those fixes. Final build, 73 interactions, 10 media/motion samples and public screenshots include all application changes. Only a comment changed after the build.
 
-axe's unresolved `incomplete` entries remain manual review, notably text over photos/gradients. Narrow viewport reflow does not prove native browser zoom. CSS `zoom` was deliberately rejected as a proxy because it does not trigger viewport media queries. Earlier provisional Studio scans that redirected to sign-in were discarded; only the final exact-route assertions appear in the accepted receipt.
+## Protected data and publication acceptance
 
-## Validation and protected data
+The full code check passes: **288 unit, 12 preflight and 403 built-server checks**, TypeScript and optimized build. Lint has zero errors and 62 existing warnings; changed-file lint is clean.
 
-The full `npm run check` passes: 283 unit tests, 12 preflight checks, 403 built-server checks, TypeScript and optimized build. Full lint has zero errors and 62 existing warnings; changed application/test files have zero scoped lint warnings. Protected catalogue/media/business fingerprints and every pre-existing content/inquiry/order/staff row remain unchanged in the read-only matrix. No product, scraper, contact, social, form schema, customer record or gallery association was changed. No production publication, external message, export, erasure or backup action occurred.
+Thirteen isolated-QA assertions verify anonymous denial, compact-list identity/detail safety, exact selected homepage content, private captured preview, draft isolation, immediate publication/update/withdrawal with a warm snapshot, and recovery as a new revision. One newly created synthetic page was published, recovered and hidden at revision 7 with history retained. Every pre-existing catalogue/media/business/content/inquiry/order/staff record matched baseline. No production write, customer message, export, erasure or backup operation occurred.
 
-## Remaining gates and next actions
+## Remaining acceptance
 
-| Task | Disposition | Next action |
+| Task | Current status | Evidence needed next |
 |---|---|---|
-| C6-01 loading | PARTIAL — measured fixes; target missed | Profile the 529KB published projection and the 1.19MB Studio editor; preserve immediate withdrawal and exact-preview behavior. Obtain an authorized hosted candidate in the intended region and repeat; collect eligible field p75 after release. |
-| C6-02 image/motion budgets | COMPLETE for recorded regression scope | Run the guards on subsequent image, crop, font or animation changes. |
-| C6-03 accessibility matrix | PARTIAL — automation passed | Review contrast/incomplete cases and actual native 200%/400% browser zoom; obtain assistive-technology observations. |
-| C6-04 human/device | NOT AVAILABLE — owner confirmed | Use [C6-HUMAN-DEVICE-CHECKLIST.md](C6-HUMAN-DEVICE-CHECKLIST.md) when a real phone and screen reader are available; do not invent results. |
-| C6-05/06 backups/key custody | REMOVED BY OWNER | Do not recreate. Studio draft/revision recovery remains supported. |
+| C6-01 loading | PARTIAL — 6/7 lab medians meet 2.5s | Improve/verify collection on an authorized hosted candidate in the intended region; repeat cold-cache and cold-start diagnostics; obtain eligible real-user p75. Do not introduce stale-publication caching to pass a benchmark. |
+| C6-02 image/motion | COMPLETE for scoped guards | Repeat on relevant future image, font or motion changes. |
+| C6-03 automated, native zoom and assistant contrast | COMPLETE for recorded scope | Human assistive-technology use remains separately unverified under C6-04; this is not WCAG certification. |
+| C6-04 human/device | NOT AVAILABLE — owner confirmed neither device nor screen reader | Run the existing [human/device checklist](C6-HUMAN-DEVICE-CHECKLIST.md) when equipment and a tester are available. |
+| C6-05/06 backup and key custody | REMOVED BY OWNER | Do not recreate. Studio drafts/revision recovery remain supported. |
 
-C7 is not started. A new explicit push-main instruction is required for a detailed PR and release; the previous PR #37 authorization is already fulfilled. Production editorial acceptance and optional C2 video remain separate. This pass did not publish or recheck production Imprint.
+C7 has not started. Keep changes local until a new explicit push-main instruction; then use a detailed PR. PR #37 fulfilled the prior release authorization. Optional C2 video and production editorial/Imprint acceptance remain separate and were not certified by this pass.
 
-Repeatable commands: `tools/c6-acceptance/README.md`. Full sanitized receipt: `craft-c6-evidence.json`. Screenshot report: workspace `outputs/CRAFT/c6-implementation.html`. Human checks follow [W3C Easy Checks](https://www.w3.org/WAI/test-evaluate/preliminary/); automated results alone are not a conformance certificate.
+Evidence: `craft-c6-evidence.json`. Repeatable checks: `tools/c6-acceptance/README.md`. Screenshot report: workspace `outputs/CRAFT/c6-implementation.html`. [Web Vitals lab/field guidance](https://web.dev/articles/vitals) and [W3C human review guidance](https://www.w3.org/WAI/test-evaluate/preliminary/).
