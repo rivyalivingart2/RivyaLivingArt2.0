@@ -1,4 +1,18 @@
-# Current checkpoint — requested release complete; remaining acceptance in progress
+# Current checkpoint — remaining language and editorial acceptance
+
+6 October 2026. Branch `codex/remaining-editorial-acceptance` is local work based on released main `b989e5870f390b2f0e8707f15c44014dabcb059e` (PR42; production `dpl_EhNy6qJ467PyqL3hcpEMSEZTvPJ1`). PR39–42 fulfilled the previous release request. Do not push this new candidate until the owner explicitly asks; then use a detailed PR.
+
+Read `docs/editorial-translations/IMPLEMENTATION-STATUS.md`, `acceptance-evidence.json`, `publication-receipts.json` and `HUMAN-ACCEPTANCE.md`. Seven additional pages were translated, exactly previewed and deliberately published through Studio. All 19 public pages now have current Hindi/Gujarati review state. Privacy's obsolete routine-backup promises were replaced with the already approved repository wording. DB010's unrelated console cover was replaced by Horizon wall art and published as revision 3. Protected 120-product, 131-original-media and business fingerprints still match.
+
+The 36 article translations are machine-assisted **drafts**, not approved/public translations. Complete meaning/native-reader review before marking them reviewed or publishing. The local side-by-side review packet and Studio dry-run imports preserve exact English source fingerprints. DB010 includes the documented image-description amendment. Do not overwrite newer work or bulk-mark machine drafts reviewed. Native-reader, owner crop, real human/phone/field/genuine-inquiry acceptance remain open.
+
+Local interface work adds Hindi/Gujarati controls and fixes translated snapshot labels, preview image alt text and the Imprint contact heading while retaining protected facts and exact captured dependencies. Full checks passed 294 unit / 12 preflight / 403 built-server; final small label additions also passed typecheck/lint/build and browser verification. Use loopback PostgreSQL for broad QA. The last passing hosted LCP sample is from the prior release, not proof of this local candidate's field performance.
+
+Backups/key custody remain removed. No scraper/old-product transfer, customer messages, fake business inquiries, new tracking, grants or infrastructure changes. Preserve products/forms/original galleries, business/social facts, customers, drafts and history.
+
+---
+
+# Historical checkpoint — requested release complete; remaining acceptance in progress
 
 5 October 2026. PR39 merged main `0d03d8f` and exact Vercel production `dpl_5SiSZeGuU23F3EvjZrkNAnDJXoP2` is READY. Production indexing is enabled; Preview remains false. Eighteen live checks and the 174-URL sitemap passed. Protected catalogue, original media/associations and business fingerprints still match at 18:02 UTC.
 

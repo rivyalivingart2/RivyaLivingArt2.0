@@ -1,15 +1,17 @@
 'use client';
 import {getImageProps} from 'next/image';
 import {useState,type CSSProperties} from 'react';
+import {useJourneyText} from './journey-language';
 import s from './shop.module.css';
 
 /** One browser-selected resource: the same published piece, composed for each viewport. */
 export function HeroImage({portrait,landscape,name,portraitPosition,landscapePosition}:{portrait:string;landscape:string;name:string;portraitPosition?:string;landscapePosition?:string}){
  const [failed,setFailed]=useState(false);
- const common={alt:name+' — design visualization',fill:true,quality:60,sizes:'100vw',loading:'eager' as const,fetchPriority:'high' as const};
+ const t=useJourneyText();
+ const common={alt:name+' — '+t('Design visualization'),fill:true,quality:60,sizes:'100vw',loading:'eager' as const,fetchPriority:'high' as const};
  const {props:mobile}=getImageProps({...common,src:portrait});
  const {props:desktop}=getImageProps({...common,src:landscape});
- if(failed)return <span className={s.heroImageFallback}>Image unavailable — explore {name} in the collection.</span>;
+ if(failed)return <span className={s.heroImageFallback}>{t('Image unavailable')} — {name}. {t('Explore the collection ↗')}</span>;
  return <picture>
   <source media="(max-width:780px)" srcSet={mobile.srcSet} sizes={mobile.sizes}/>
   {/* getImageProps supplies Next's optimized URLs; picture selects before requesting. */}

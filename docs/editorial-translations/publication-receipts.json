@@ -1,0 +1,91 @@
+{
+  "at": "2026-10-06T03:36:44.743Z",
+  "nativeReaderReview": "NOT PERFORMED",
+  "records": [
+    {
+      "id": "page:architects",
+      "saved": 2,
+      "published": 3,
+      "locales": [
+        "hi",
+        "gu"
+      ],
+      "nativeReader": false
+    },
+    {
+      "id": "page:accessibility",
+      "saved": 2,
+      "published": 3,
+      "locales": [
+        "hi",
+        "gu"
+      ],
+      "nativeReader": false
+    },
+    {
+      "id": "page:shipping-delivery",
+      "saved": 2,
+      "published": 3,
+      "locales": [
+        "hi",
+        "gu"
+      ],
+      "nativeReader": false
+    },
+    {
+      "id": "page:terms",
+      "saved": 2,
+      "published": 3,
+      "locales": [
+        "hi",
+        "gu"
+      ],
+      "nativeReader": false
+    },
+    {
+      "id": "page:returns-cancellations",
+      "saved": 2,
+      "published": 3,
+      "locales": [
+        "hi",
+        "gu"
+      ],
+      "nativeReader": false
+    },
+    {
+      "id": "page:imprint",
+      "saved": 4,
+      "published": 5,
+      "locales": [
+        "hi",
+        "gu"
+      ],
+      "nativeReader": false,
+      "interfaceFixPendingRelease": true
+    },
+    {
+      "id": "page:privacy",
+      "saved": 2,
+      "published": 3,
+      "locales": [
+        "hi",
+        "gu"
+      ],
+      "nativeReader": false,
+      "sourceCorrection": "Removed retired routine-backup promises; existing retained-copy and erasure obligations preserved."
+    }
+  ],
+  "articleCover": {
+    "id": "DB010",
+    "saved": 2,
+    "published": 3,
+    "verified": "Studio anonymous public verification and actual public image DOM",
+    "path": "/media/generated/dp057-horizon-band-wall-panel-portrait-4x5.webp",
+    "alt": "Horizon wall panel in an imagined interior — design visualization",
+    "preview": [
+      "saved revision 2 desktop",
+      "saved revision 2 mobile iframe"
+    ],
+    "translationsPublished": false
+  }
+}

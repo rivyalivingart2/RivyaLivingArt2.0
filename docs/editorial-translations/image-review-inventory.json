@@ -1,0 +1,2437 @@
+{
+  "at": "2026-10-06T04:12:54.507Z",
+  "status": "ASSISTANT CONTACT-SHEET REVIEW COMPLETE; OWNER SIGN-OFF NOT PERFORMED",
+  "scope": "136 public assets, 120 protected product records, all editorial assignments. Candidate crop sheet plus actual layout spot checks.",
+  "media": [
+    {
+      "path": "/editorial/665c4586-778d-496a-9a0f-96d175d991d7",
+      "version": 3,
+      "alt": "Blue material flowing into glossy folds with gold flecks",
+      "x": "50",
+      "y": "50",
+      "products": [],
+      "uses": [
+        {
+          "record": "page:home",
+          "title": "Art for the way you live.",
+          "route": "/",
+          "slot": "home hero",
+          "alt": "Blue material flowing into glossy folds with gold flecks",
+          "path": "/editorial/665c4586-778d-496a-9a0f-96d175d991d7",
+          "mobile": {
+            "x": 40,
+            "y": 52,
+            "ratio": "4/5"
+          },
+          "caption": "Design visualization",
+          "desktop": {
+            "x": 42,
+            "y": 54,
+            "ratio": "3/2"
+          }
+        }
+      ],
+      "productNames": []
+    },
+    {
+      "path": "/editorial/7e816186-6c85-4810-96ef-3ae00e4b7b6f",
+      "version": 3,
+      "alt": "Timber and blue resin-style table in a dark interior",
+      "x": "50",
+      "y": "50",
+      "products": [],
+      "uses": [
+        {
+          "record": "page:collectible-design",
+          "title": "Presence, in every form.",
+          "route": "/collectible-design",
+          "slot": "cover",
+          "alt": "Timber and blue resin-style table in a dark interior",
+          "path": "/editorial/7e816186-6c85-4810-96ef-3ae00e4b7b6f",
+          "mobile": {
+            "x": 50,
+            "y": 55,
+            "ratio": "4/5"
+          },
+          "caption": "Design visualization",
+          "desktop": {
+            "x": 50,
+            "y": 61,
+            "ratio": "3/2"
+          }
+        },
+        {
+          "record": "page:home",
+          "title": "Art for the way you live.",
+          "route": "/",
+          "slot": "journeys/large",
+          "alt": "Timber and blue resin-style table in a dark interior",
+          "path": "/editorial/7e816186-6c85-4810-96ef-3ae00e4b7b6f",
+          "mobile": {
+            "x": 50,
+            "y": 55,
+            "ratio": "4/5"
+          },
+          "caption": "Design visualization",
+          "desktop": {
+            "x": 50,
+            "y": 61,
+            "ratio": "3/2"
+          }
+        }
+      ],
+      "productNames": []
+    },
+    {
+      "path": "/editorial/8a9c3fe7-db89-45b4-87b5-89b6a8386e19",
+      "version": 3,
+      "alt": "A person polishing a blue and gold decorative object",
+      "x": "50",
+      "y": "50",
+      "products": [],
+      "uses": [
+        {
+          "record": "page:process",
+          "title": "A piece, shaped together.",
+          "route": "/process",
+          "slot": "cover",
+          "alt": "A person polishing a blue and gold decorative object",
+          "path": "/editorial/8a9c3fe7-db89-45b4-87b5-89b6a8386e19",
+          "mobile": {
+            "x": 53,
+            "y": 67,
+            "ratio": "4/5"
+          },
+          "caption": "Illustrative making scene; not a photograph of Rivya staff",
+          "desktop": {
+            "x": 52,
+            "y": 59,
+            "ratio": "3/2"
+          }
+        }
+      ],
+      "productNames": []
+    },
+    {
+      "path": "/editorial/976cd5bd-4145-4bb8-93b4-b30d978789b3",
+      "version": 3,
+      "alt": "Blue and gold decorative jewellery and letter keychains",
+      "x": "50",
+      "y": "50",
+      "products": [],
+      "uses": [
+        {
+          "record": "page:home",
+          "title": "Art for the way you live.",
+          "route": "/",
+          "slot": "journeys/personal",
+          "alt": "Blue and gold decorative jewellery and letter keychains",
+          "path": "/editorial/976cd5bd-4145-4bb8-93b4-b30d978789b3",
+          "mobile": {
+            "x": 50,
+            "y": 53,
+            "ratio": "4/5"
+          },
+          "caption": "Design visualization",
+          "desktop": {
+            "x": 50,
+            "y": 51,
+            "ratio": "3/2"
+          }
+        },
+        {
+          "record": "page:personal-art",
+          "title": "A little more personal.",
+          "route": "/personal-art",
+          "slot": "cover",
+          "alt": "Blue and gold decorative jewellery and letter keychains",
+          "path": "/editorial/976cd5bd-4145-4bb8-93b4-b30d978789b3",
+          "mobile": {
+            "x": 50,
+            "y": 53,
+            "ratio": "4/5"
+          },
+          "caption": "Design visualization",
+          "desktop": {
+            "x": 50,
+            "y": 51,
+            "ratio": "3/2"
+          }
+        }
+      ],
+      "productNames": []
+    },
+    {
+      "path": "/editorial/bad6e272-87f1-4c8b-bd04-4ba57baa3563",
+      "version": 3,
+      "alt": "Red and pale flowers displayed within a clear decorative block",
+      "x": "50",
+      "y": "50",
+      "products": [],
+      "uses": [
+        {
+          "record": "page:home",
+          "title": "Art for the way you live.",
+          "route": "/",
+          "slot": "journeys/memory",
+          "alt": "Red and pale flowers displayed within a clear decorative block",
+          "path": "/editorial/bad6e272-87f1-4c8b-bd04-4ba57baa3563",
+          "mobile": {
+            "x": 50,
+            "y": 43,
+            "ratio": "4/5"
+          },
+          "caption": "Design visualization",
+          "desktop": {
+            "x": 50,
+            "y": 40,
+            "ratio": "3/2"
+          }
+        },
+        {
+          "record": "page:memory-art",
+          "title": "For what stays with you.",
+          "route": "/memory-art",
+          "slot": "cover",
+          "alt": "Red and pale flowers displayed within a clear decorative block",
+          "path": "/editorial/bad6e272-87f1-4c8b-bd04-4ba57baa3563",
+          "mobile": {
+            "x": 50,
+            "y": 43,
+            "ratio": "4/5"
+          },
+          "caption": "Design visualization",
+          "desktop": {
+            "x": 50,
+            "y": 40,
+            "ratio": "3/2"
+          }
+        }
+      ],
+      "productNames": []
+    },
+    {
+      "path": "/media/generated/dp001-matching-detail-4x5.webp",
+      "version": 1,
+      "alt": "River Channel — matching detail, design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP001"
+      ],
+      "uses": [],
+      "productNames": [
+        "River Channel"
+      ]
+    },
+    {
+      "path": "/media/generated/dp002-stillwater-full-pour-dining-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Stillwater — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP002"
+      ],
+      "uses": [],
+      "productNames": [
+        "Stillwater"
+      ]
+    },
+    {
+      "path": "/media/generated/dp003-verdant-split-slab-dining-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Verdant — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP003"
+      ],
+      "uses": [],
+      "productNames": [
+        "Verdant"
+      ]
+    },
+    {
+      "path": "/media/generated/dp004-monolith-long-span-dining-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Monolith — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP004"
+      ],
+      "uses": [],
+      "productNames": [
+        "Monolith"
+      ]
+    },
+    {
+      "path": "/media/generated/dp005-estuary-oval-dining-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Estuary — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP005"
+      ],
+      "uses": [],
+      "productNames": [
+        "Estuary"
+      ]
+    },
+    {
+      "path": "/media/generated/dp006-canopy-round-dining-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Canopy — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP006"
+      ],
+      "uses": [],
+      "productNames": [
+        "Canopy"
+      ]
+    },
+    {
+      "path": "/media/generated/dp007-tidal-rectangular-dining-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Tidal — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP007"
+      ],
+      "uses": [],
+      "productNames": [
+        "Tidal"
+      ]
+    },
+    {
+      "path": "/media/generated/dp008-umber-twin-base-dining-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Umber — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP008"
+      ],
+      "uses": [],
+      "productNames": [
+        "Umber"
+      ]
+    },
+    {
+      "path": "/media/generated/dp009-lagoon-pedestal-dining-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Lagoon — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP009"
+      ],
+      "uses": [],
+      "productNames": [
+        "Lagoon"
+      ]
+    },
+    {
+      "path": "/media/generated/dp010-ridge-bronze-inlay-dining-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Ridge — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP010"
+      ],
+      "uses": [],
+      "productNames": [
+        "Ridge"
+      ]
+    },
+    {
+      "path": "/media/generated/dp011-dune-smoked-resin-dining-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Dune — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP011"
+      ],
+      "uses": [],
+      "productNames": [
+        "Dune"
+      ]
+    },
+    {
+      "path": "/media/generated/dp012-grove-communal-dining-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Grove — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP012"
+      ],
+      "uses": [],
+      "productNames": [
+        "Grove"
+      ]
+    },
+    {
+      "path": "/media/generated/dp013-matching-detail-4x5.webp",
+      "version": 1,
+      "alt": "Shallow Basin — matching detail, design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP013"
+      ],
+      "uses": [],
+      "productNames": [
+        "Shallow Basin"
+      ]
+    },
+    {
+      "path": "/media/generated/dp014-orbit-circular-centre-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Orbit — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP014"
+      ],
+      "uses": [],
+      "productNames": [
+        "Orbit"
+      ]
+    },
+    {
+      "path": "/media/generated/dp015-contour-oval-coffee-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Contour — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP015"
+      ],
+      "uses": [],
+      "productNames": [
+        "Contour"
+      ]
+    },
+    {
+      "path": "/media/generated/dp016-drift-nesting-coffee-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Drift — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP016"
+      ],
+      "uses": [],
+      "productNames": [
+        "Drift"
+      ]
+    },
+    {
+      "path": "/media/generated/dp017-pebble-sculptural-coffee-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Pebble Sculptural Coffee Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP017"
+      ],
+      "uses": [],
+      "productNames": [
+        "Pebble Sculptural Coffee Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp018-delta-two-level-coffee-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Delta Two-Level Coffee Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP018"
+      ],
+      "uses": [],
+      "productNames": [
+        "Delta Two-Level Coffee Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp019-cove-low-coffee-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Cove Low Coffee Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP019"
+      ],
+      "uses": [],
+      "productNames": [
+        "Cove Low Coffee Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp020-halo-ring-base-coffee-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Halo Ring-Base Coffee Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP020"
+      ],
+      "uses": [],
+      "productNames": [
+        "Halo Ring-Base Coffee Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp021-moss-square-coffee-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Moss Square Coffee Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP021"
+      ],
+      "uses": [],
+      "productNames": [
+        "Moss Square Coffee Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp022-slate-river-coffee-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Slate River Coffee Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP022"
+      ],
+      "uses": [],
+      "productNames": [
+        "Slate River Coffee Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp023-current-asymmetric-coffee-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Current Asymmetric Coffee Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP023"
+      ],
+      "uses": [],
+      "productNames": [
+        "Current Asymmetric Coffee Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp024-terra-plinth-coffee-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Terra Plinth Coffee Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP024"
+      ],
+      "uses": [],
+      "productNames": [
+        "Terra Plinth Coffee Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp025-twinleaf-matched-side-table-pair-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Twinleaf — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP025"
+      ],
+      "uses": [
+        {
+          "record": "DB005",
+          "title": "The Quiet Role of a Side Table",
+          "route": "/journal/the-quiet-role-of-a-side-table",
+          "slot": "cover",
+          "path": "/media/generated/dp025-twinleaf-matched-side-table-pair-portrait-4x5.webp",
+          "alt": "Twinleaf: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Twinleaf"
+      ]
+    },
+    {
+      "path": "/media/generated/dp026-dewdrop-pedestal-side-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Dewdrop Pedestal Side Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP026"
+      ],
+      "uses": [],
+      "productNames": [
+        "Dewdrop Pedestal Side Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp027-arc-c-shape-side-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Arc C-Shape Side Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP027"
+      ],
+      "uses": [],
+      "productNames": [
+        "Arc C-Shape Side Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp028-reed-tall-side-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Reed Tall Side Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP028"
+      ],
+      "uses": [],
+      "productNames": [
+        "Reed Tall Side Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp029-nocturne-bedside-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Nocturne Bedside Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP029"
+      ],
+      "uses": [],
+      "productNames": [
+        "Nocturne Bedside Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp030-loam-drum-side-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Loam Drum Side Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP030"
+      ],
+      "uses": [],
+      "productNames": [
+        "Loam Drum Side Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp031-lumen-translucent-side-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Lumen Translucent Side Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP031"
+      ],
+      "uses": [],
+      "productNames": [
+        "Lumen Translucent Side Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp032-brook-floating-top-side-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Brook Floating-Top Side Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP032"
+      ],
+      "uses": [],
+      "productNames": [
+        "Brook Floating-Top Side Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp033-silt-compact-bedside-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Silt Compact Bedside Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP033"
+      ],
+      "uses": [],
+      "productNames": [
+        "Silt Compact Bedside Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp034-eclipse-round-side-table-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Eclipse Round Side Table — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP034"
+      ],
+      "uses": [],
+      "productNames": [
+        "Eclipse Round Side Table"
+      ]
+    },
+    {
+      "path": "/media/generated/dp035-matching-detail-4x5.webp",
+      "version": 1,
+      "alt": "Narrow Span — matching detail, design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP035"
+      ],
+      "uses": [],
+      "productNames": [
+        "Narrow Span"
+      ]
+    },
+    {
+      "path": "/media/generated/dp036-root-sculptural-base-console-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Root Sculptural-Base Console — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP036"
+      ],
+      "uses": [],
+      "productNames": [
+        "Root Sculptural-Base Console"
+      ]
+    },
+    {
+      "path": "/media/generated/dp037-passage-entry-console-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Passage Entry Console — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP037"
+      ],
+      "uses": [],
+      "productNames": [
+        "Passage Entry Console"
+      ]
+    },
+    {
+      "path": "/media/generated/dp038-horizon-long-console-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Horizon Long Console — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP038"
+      ],
+      "uses": [],
+      "productNames": [
+        "Horizon Long Console"
+      ]
+    },
+    {
+      "path": "/media/generated/dp039-meadow-floating-effect-console-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Meadow Floating-Effect Console — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP039"
+      ],
+      "uses": [],
+      "productNames": [
+        "Meadow Floating-Effect Console"
+      ]
+    },
+    {
+      "path": "/media/generated/dp040-trace-metal-frame-console-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Trace Metal-Frame Console — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP040"
+      ],
+      "uses": [],
+      "productNames": [
+        "Trace Metal-Frame Console"
+      ]
+    },
+    {
+      "path": "/media/generated/dp041-sienna-curved-console-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Vertical Drop Wall Panel — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP058"
+      ],
+      "uses": [],
+      "productNames": [
+        "Vertical Drop Wall Panel"
+      ]
+    },
+    {
+      "path": "/media/generated/dp042-canyon-split-level-console-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Canyon Split-Level Console — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP042"
+      ],
+      "uses": [],
+      "productNames": [
+        "Canyon Split-Level Console"
+      ]
+    },
+    {
+      "path": "/media/generated/dp043-petal-sculptural-chair-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Petal — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP043"
+      ],
+      "uses": [],
+      "productNames": [
+        "Petal"
+      ]
+    },
+    {
+      "path": "/media/generated/dp044-crescent-lounge-chair-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Crescent Lounge Chair — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP044"
+      ],
+      "uses": [],
+      "productNames": [
+        "Crescent Lounge Chair"
+      ]
+    },
+    {
+      "path": "/media/generated/dp045-aster-dining-chair-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Aster Dining Chair — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP045"
+      ],
+      "uses": [],
+      "productNames": [
+        "Aster Dining Chair"
+      ]
+    },
+    {
+      "path": "/media/generated/dp046-rill-counter-stool-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Rill Counter Stool — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP046"
+      ],
+      "uses": [],
+      "productNames": [
+        "Rill Counter Stool"
+      ]
+    },
+    {
+      "path": "/media/generated/dp047-flint-accent-stool-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Flint Accent Stool — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP047"
+      ],
+      "uses": [],
+      "productNames": [
+        "Flint Accent Stool"
+      ]
+    },
+    {
+      "path": "/media/generated/dp048-matching-detail-4x5.webp",
+      "version": 1,
+      "alt": "Entryway — matching detail, design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP048"
+      ],
+      "uses": [],
+      "productNames": [
+        "Entryway"
+      ]
+    },
+    {
+      "path": "/media/generated/dp049-forest-long-bench-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Forest Long Bench — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP049"
+      ],
+      "uses": [],
+      "productNames": [
+        "Forest Long Bench"
+      ]
+    },
+    {
+      "path": "/media/generated/dp050-fold-sculptural-bench-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Fold Sculptural Bench — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP050"
+      ],
+      "uses": [],
+      "productNames": [
+        "Fold Sculptural Bench"
+      ]
+    },
+    {
+      "path": "/media/generated/dp051-single-slab-atelier-desk-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Single-Slab — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP051"
+      ],
+      "uses": [
+        {
+          "record": "DB016",
+          "title": "A Home Office with a Material Focal Point",
+          "route": "/journal/a-home-office-with-a-material-focal-point",
+          "slot": "cover",
+          "path": "/media/generated/dp051-single-slab-atelier-desk-portrait-4x5.webp",
+          "alt": "Single-Slab: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Single-Slab"
+      ]
+    },
+    {
+      "path": "/media/generated/dp052-meridian-writing-desk-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Meridian Writing Desk — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP052"
+      ],
+      "uses": [],
+      "productNames": [
+        "Meridian Writing Desk"
+      ]
+    },
+    {
+      "path": "/media/generated/dp053-stillpoint-study-desk-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Stillpoint Study Desk — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP053"
+      ],
+      "uses": [],
+      "productNames": [
+        "Stillpoint Study Desk"
+      ]
+    },
+    {
+      "path": "/media/generated/dp054-haven-compact-desk-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Haven Compact Desk — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP054"
+      ],
+      "uses": [],
+      "productNames": [
+        "Haven Compact Desk"
+      ]
+    },
+    {
+      "path": "/media/generated/dp055-linework-executive-desk-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Linework Executive Desk — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP055"
+      ],
+      "uses": [],
+      "productNames": [
+        "Linework Executive Desk"
+      ]
+    },
+    {
+      "path": "/media/generated/dp056-terrace-studio-desk-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Terrace Studio Desk — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP056"
+      ],
+      "uses": [],
+      "productNames": [
+        "Terrace Studio Desk"
+      ]
+    },
+    {
+      "path": "/media/generated/dp057-horizon-band-wall-panel-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Horizon — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP057"
+      ],
+      "uses": [
+        {
+          "record": "DB010",
+          "title": "Wall Art at Architectural Scale",
+          "route": "/journal/wall-art-at-architectural-scale",
+          "slot": "cover",
+          "path": "/media/generated/dp057-horizon-band-wall-panel-portrait-4x5.webp",
+          "alt": "Horizon wall panel in an imagined interior — design visualization"
+        }
+      ],
+      "productNames": [
+        "Horizon"
+      ]
+    },
+    {
+      "path": "/media/generated/dp058-vertical-drop-wall-panel-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Sienna Curved Console — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP041"
+      ],
+      "uses": [],
+      "productNames": [
+        "Sienna Curved Console"
+      ]
+    },
+    {
+      "path": "/media/generated/dp059-sequence-wall-triptych-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Sequence Wall Triptych — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP059"
+      ],
+      "uses": [],
+      "productNames": [
+        "Sequence Wall Triptych"
+      ]
+    },
+    {
+      "path": "/media/generated/dp060-strata-layered-wall-relief-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Strata Layered Wall Relief — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP060"
+      ],
+      "uses": [],
+      "productNames": [
+        "Strata Layered Wall Relief"
+      ]
+    },
+    {
+      "path": "/media/generated/dp061-solstice-circular-wall-piece-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Solstice Circular Wall Piece — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP061"
+      ],
+      "uses": [],
+      "productNames": [
+        "Solstice Circular Wall Piece"
+      ]
+    },
+    {
+      "path": "/media/generated/dp062-tide-botanical-wall-panel-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Tide Botanical Wall Panel — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP062"
+      ],
+      "uses": [],
+      "productNames": [
+        "Tide Botanical Wall Panel"
+      ]
+    },
+    {
+      "path": "/media/generated/dp063-mist-textured-wall-diptych-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Mist Textured Wall Diptych — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP063"
+      ],
+      "uses": [],
+      "productNames": [
+        "Mist Textured Wall Diptych"
+      ]
+    },
+    {
+      "path": "/media/generated/dp064-verdure-large-wall-disc-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Verdure Large Wall Disc — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP064"
+      ],
+      "uses": [],
+      "productNames": [
+        "Verdure Large Wall Disc"
+      ]
+    },
+    {
+      "path": "/media/generated/dp065-contour-flow-wall-relief-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Contour Flow Wall Relief — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP065"
+      ],
+      "uses": [],
+      "productNames": [
+        "Contour Flow Wall Relief"
+      ]
+    },
+    {
+      "path": "/media/generated/dp066-amber-veil-wall-panel-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Amber Veil Wall Panel — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP066"
+      ],
+      "uses": [],
+      "productNames": [
+        "Amber Veil Wall Panel"
+      ]
+    },
+    {
+      "path": "/media/generated/dp067-stonewave-oversized-wall-art-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Stonewave Oversized Wall Art — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP067"
+      ],
+      "uses": [],
+      "productNames": [
+        "Stonewave Oversized Wall Art"
+      ]
+    },
+    {
+      "path": "/media/generated/dp068-rivergrid-architectural-wall-set-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Rivergrid Architectural Wall Set — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP068"
+      ],
+      "uses": [],
+      "productNames": [
+        "Rivergrid Architectural Wall Set"
+      ]
+    },
+    {
+      "path": "/media/generated/dp069-matching-detail-4x5.webp",
+      "version": 1,
+      "alt": "Lattice Object — matching detail, design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP069"
+      ],
+      "uses": [],
+      "productNames": [
+        "Lattice Object"
+      ]
+    },
+    {
+      "path": "/media/generated/dp070-parametric-floor-vessel-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Parametric Floor Vessel — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP070"
+      ],
+      "uses": [],
+      "productNames": [
+        "Parametric Floor Vessel"
+      ]
+    },
+    {
+      "path": "/media/generated/dp071-cast-architectural-study-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Cast Architectural Study — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP071"
+      ],
+      "uses": [],
+      "productNames": [
+        "Cast Architectural Study"
+      ]
+    },
+    {
+      "path": "/media/generated/dp072-form-study-i-sculpture-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Form Study I Sculpture — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP072"
+      ],
+      "uses": [],
+      "productNames": [
+        "Form Study I Sculpture"
+      ]
+    },
+    {
+      "path": "/media/generated/dp073-form-study-ii-sculpture-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Form Study II Sculpture — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP073"
+      ],
+      "uses": [],
+      "productNames": [
+        "Form Study II Sculpture"
+      ]
+    },
+    {
+      "path": "/media/generated/dp074-material-column-sculpture-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Material Column Sculpture — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP074"
+      ],
+      "uses": [],
+      "productNames": [
+        "Material Column Sculpture"
+      ]
+    },
+    {
+      "path": "/media/generated/dp075-form-study-iii-sculpture-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Form Study III Sculpture — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP075"
+      ],
+      "uses": [],
+      "productNames": [
+        "Form Study III Sculpture"
+      ]
+    },
+    {
+      "path": "/media/generated/dp076-arc-freestanding-resin-sculpture-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Arc Freestanding Resin Sculpture — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP076"
+      ],
+      "uses": [],
+      "productNames": [
+        "Arc Freestanding Resin Sculpture"
+      ]
+    },
+    {
+      "path": "/media/generated/dp077-estuary-reception-counter-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Estuary — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP077"
+      ],
+      "uses": [],
+      "productNames": [
+        "Estuary"
+      ]
+    },
+    {
+      "path": "/media/generated/dp078-canopy-room-divider-concept-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Canopy Room-Divider — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP078"
+      ],
+      "uses": [],
+      "productNames": [
+        "Canopy Room-Divider"
+      ]
+    },
+    {
+      "path": "/media/generated/dp079-monsoon-feature-wall-concept-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Monsoon Feature-Wall — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP079"
+      ],
+      "uses": [],
+      "productNames": [
+        "Monsoon Feature-Wall"
+      ]
+    },
+    {
+      "path": "/media/generated/dp080-grove-resin-and-wood-screen-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Grove Resin-and-Wood Screen — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP080"
+      ],
+      "uses": [],
+      "productNames": [
+        "Grove Resin-and-Wood Screen"
+      ]
+    },
+    {
+      "path": "/media/generated/dp081-contour-hospitality-table-installation-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Contour Hospitality Table Installation — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP081"
+      ],
+      "uses": [],
+      "productNames": [
+        "Contour Hospitality Table Installation"
+      ]
+    },
+    {
+      "path": "/media/generated/dp082-stillwater-lobby-art-installation-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Stillwater Lobby Art Installation — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP082"
+      ],
+      "uses": [],
+      "productNames": [
+        "Stillwater Lobby Art Installation"
+      ]
+    },
+    {
+      "path": "/media/generated/dp083-bronzeleaf-display-plinth-set-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Tidal Architectural Panel Installation — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP084"
+      ],
+      "uses": [],
+      "productNames": [
+        "Tidal Architectural Panel Installation"
+      ]
+    },
+    {
+      "path": "/media/generated/dp084-tidal-architectural-panel-installation-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Bronzeleaf Display Plinth Set — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP083"
+      ],
+      "uses": [],
+      "productNames": [
+        "Bronzeleaf Display Plinth Set"
+      ]
+    },
+    {
+      "path": "/media/generated/dp085-matching-detail-4x5.webp",
+      "version": 1,
+      "alt": "Vow — matching detail, design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP085"
+      ],
+      "uses": [],
+      "productNames": [
+        "Vow"
+      ]
+    },
+    {
+      "path": "/media/generated/dp086-forever-solid-block-varmala-keepsake-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Forever Solid-Block Varmala Keepsake — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP086"
+      ],
+      "uses": [
+        {
+          "record": "DB020",
+          "title": "Choosing a Format for a Bouquet Keepsake",
+          "route": "/journal/choosing-a-format-for-a-bouquet-keepsake",
+          "slot": "cover",
+          "path": "/media/generated/dp086-forever-solid-block-varmala-keepsake-portrait-4x5.webp",
+          "alt": "Forever: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Forever Solid-Block Varmala Keepsake"
+      ]
+    },
+    {
+      "path": "/media/generated/dp087-petal-story-bouquet-frame-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Aster Single-Bloom Keepsake — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP089"
+      ],
+      "uses": [],
+      "productNames": [
+        "Aster Single-Bloom Keepsake"
+      ]
+    },
+    {
+      "path": "/media/generated/dp088-meadow-wedding-flower-disc-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Meadow Wedding-Flower Disc — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP088"
+      ],
+      "uses": [],
+      "productNames": [
+        "Meadow Wedding-Flower Disc"
+      ]
+    },
+    {
+      "path": "/media/generated/dp089-aster-single-bloom-keepsake-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Memory Garden Flower Shadowbox — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP090"
+      ],
+      "uses": [],
+      "productNames": [
+        "Memory Garden Flower Shadowbox"
+      ]
+    },
+    {
+      "path": "/media/generated/dp090-memory-garden-flower-shadowbox-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Petal Hour Round Clock — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP092"
+      ],
+      "uses": [],
+      "productNames": [
+        "Petal Hour Round Clock"
+      ]
+    },
+    {
+      "path": "/media/generated/dp091-hourglass-floral-wall-clock-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Hourglass — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP091"
+      ],
+      "uses": [
+        {
+          "record": "DB023",
+          "title": "A Preservation Clock as a Memory Object",
+          "route": "/journal/a-preservation-clock-as-a-memory-object",
+          "slot": "cover",
+          "path": "/media/generated/dp091-hourglass-floral-wall-clock-portrait-4x5.webp",
+          "alt": "Hourglass: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Hourglass"
+      ]
+    },
+    {
+      "path": "/media/generated/dp092-petal-hour-round-clock-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Evergreen Botanical Desk Clock — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP093"
+      ],
+      "uses": [],
+      "productNames": [
+        "Evergreen Botanical Desk Clock"
+      ]
+    },
+    {
+      "path": "/media/generated/dp093-evergreen-botanical-desk-clock-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Petal Story Bouquet Frame — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP087"
+      ],
+      "uses": [],
+      "productNames": [
+        "Petal Story Bouquet Frame"
+      ]
+    },
+    {
+      "path": "/media/generated/dp094-moment-preserved-flower-clock-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Promise Ring Platter — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP096"
+      ],
+      "uses": [],
+      "productNames": [
+        "Promise Ring Platter"
+      ]
+    },
+    {
+      "path": "/media/generated/dp095-union-engagement-tray-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Union — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP095"
+      ],
+      "uses": [],
+      "productNames": [
+        "Union"
+      ]
+    },
+    {
+      "path": "/media/generated/dp096-promise-ring-platter-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Moment Preserved-Flower Clock — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP094"
+      ],
+      "uses": [],
+      "productNames": [
+        "Moment Preserved-Flower Clock"
+      ]
+    },
+    {
+      "path": "/media/generated/dp097-gather-celebration-tray-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Gather Celebration Tray — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP097"
+      ],
+      "uses": [],
+      "productNames": [
+        "Gather Celebration Tray"
+      ]
+    },
+    {
+      "path": "/media/generated/dp098-bloom-paired-ring-dishes-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Bloom Paired Ring Dishes — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP098"
+      ],
+      "uses": [],
+      "productNames": [
+        "Bloom Paired Ring Dishes"
+      ]
+    },
+    {
+      "path": "/media/generated/dp099-letterlight-invitation-frame-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Letterlight — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP099"
+      ],
+      "uses": [
+        {
+          "record": "DB022",
+          "title": "Designing a Wedding-Invitation Keepsake",
+          "route": "/journal/designing-a-wedding-invitation-keepsake",
+          "slot": "cover",
+          "path": "/media/generated/dp099-letterlight-invitation-frame-portrait-4x5.webp",
+          "alt": "Letterlight: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Letterlight"
+      ]
+    },
+    {
+      "path": "/media/generated/dp100-our-chapter-wedding-card-block-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Our Chapter — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP100"
+      ],
+      "uses": [],
+      "productNames": [
+        "Our Chapter"
+      ]
+    },
+    {
+      "path": "/media/generated/dp101-together-couple-memory-frame-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Anniversary Story Display — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP102"
+      ],
+      "uses": [
+        {
+          "record": "DB026",
+          "title": "Photographs, Privacy and Memory Art",
+          "route": "/journal/photographs-privacy-and-memory-art",
+          "slot": "cover",
+          "path": "/media/generated/dp101-together-couple-memory-frame-portrait-4x5.webp",
+          "alt": "Together: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Anniversary Story Display"
+      ]
+    },
+    {
+      "path": "/media/generated/dp102-anniversary-story-display-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Together Couple-Memory Frame — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP101"
+      ],
+      "uses": [],
+      "productNames": [
+        "Together Couple-Memory Frame"
+      ]
+    },
+    {
+      "path": "/media/generated/dp103-threshold-family-nameplate-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Threshold — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP103"
+      ],
+      "uses": [
+        {
+          "record": "DB025",
+          "title": "A Family Nameplate with a Personal Story",
+          "route": "/journal/a-family-nameplate-with-a-personal-story",
+          "slot": "cover",
+          "path": "/media/generated/dp103-threshold-family-nameplate-portrait-4x5.webp",
+          "alt": "Threshold: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Threshold"
+      ]
+    },
+    {
+      "path": "/media/generated/dp104-welcome-botanical-nameplate-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Welcome Botanical Nameplate — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP104"
+      ],
+      "uses": [],
+      "productNames": [
+        "Welcome Botanical Nameplate"
+      ]
+    },
+    {
+      "path": "/media/generated/dp105-blessing-pooja-display-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Festival Memory Plaque — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP106"
+      ],
+      "uses": [],
+      "productNames": [
+        "Festival Memory Plaque"
+      ]
+    },
+    {
+      "path": "/media/generated/dp106-festival-memory-plaque-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Little Bloom Memory — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP108"
+      ],
+      "uses": [],
+      "productNames": [
+        "Little Bloom Memory"
+      ]
+    },
+    {
+      "path": "/media/generated/dp107-first-chapter-baby-keepsake-portrait-4x5.webp",
+      "version": 1,
+      "alt": "First Chapter — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP107"
+      ],
+      "uses": [],
+      "productNames": [
+        "First Chapter"
+      ]
+    },
+    {
+      "path": "/media/generated/dp108-little-bloom-memory-frame-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Blessing Pooja Display — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP105"
+      ],
+      "uses": [],
+      "productNames": [
+        "Blessing Pooja Display"
+      ]
+    },
+    {
+      "path": "/media/generated/dp109-botanical-resin-pendant-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Botanical — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP109"
+      ],
+      "uses": [
+        {
+          "record": "DB029",
+          "title": "Personalized Resin Jewellery: Preparing Your Brief",
+          "route": "/journal/personalized-resin-jewellery-preparing-your-brief",
+          "slot": "cover",
+          "path": "/media/generated/dp109-botanical-resin-pendant-portrait-4x5.webp",
+          "alt": "Botanical: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Botanical"
+      ]
+    },
+    {
+      "path": "/media/generated/dp110-petal-drop-earrings-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Initial Story — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP112"
+      ],
+      "uses": [],
+      "productNames": [
+        "Initial Story"
+      ]
+    },
+    {
+      "path": "/media/generated/dp111-thread-of-light-resin-rakhi-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Thread of Light — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP111"
+      ],
+      "uses": [
+        {
+          "record": "DB027",
+          "title": "Small Objects with a Personal Meaning",
+          "route": "/journal/small-objects-with-a-personal-meaning",
+          "slot": "cover",
+          "path": "/media/generated/dp111-thread-of-light-resin-rakhi-portrait-4x5.webp",
+          "alt": "Thread of Light: design visualization accompanying this article"
+        },
+        {
+          "record": "DB028",
+          "title": "A Cohesive Gift Set without Repeating Every Detail",
+          "route": "/journal/a-cohesive-gift-set-without-repeating-every-detail",
+          "slot": "cover",
+          "path": "/media/generated/dp111-thread-of-light-resin-rakhi-portrait-4x5.webp",
+          "alt": "Thread of Light: design visualization accompanying this article"
+        },
+        {
+          "record": "DB032",
+          "title": "Choosing Initials, Colours and a Short Message",
+          "route": "/journal/choosing-initials-colours-and-a-short-message",
+          "slot": "cover",
+          "path": "/media/generated/dp111-thread-of-light-resin-rakhi-portrait-4x5.webp",
+          "alt": "Thread of Light: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Thread of Light"
+      ]
+    },
+    {
+      "path": "/media/generated/dp112-initial-story-keychain-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Chaptermark — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP113"
+      ],
+      "uses": [],
+      "productNames": [
+        "Chaptermark"
+      ]
+    },
+    {
+      "path": "/media/generated/dp113-chaptermark-flower-bookmark-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Little Archive — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP120"
+      ],
+      "uses": [],
+      "productNames": [
+        "Little Archive"
+      ]
+    },
+    {
+      "path": "/media/generated/dp114-matching-detail-4x5.webp",
+      "version": 1,
+      "alt": "Everyday — matching detail, design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP114"
+      ],
+      "uses": [],
+      "productNames": [
+        "Everyday"
+      ]
+    },
+    {
+      "path": "/media/generated/dp115-palm-mini-serving-tray-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Twinleaf Mini Bookends — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP117"
+      ],
+      "uses": [],
+      "productNames": [
+        "Twinleaf Mini Bookends"
+      ]
+    },
+    {
+      "path": "/media/generated/dp116-still-form-catch-all-bowl-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Still Form Catch-All Bowl — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP116"
+      ],
+      "uses": [],
+      "productNames": [
+        "Still Form Catch-All Bowl"
+      ]
+    },
+    {
+      "path": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Palm Mini Serving Tray — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP115"
+      ],
+      "uses": [
+        {
+          "record": "DB031",
+          "title": "Corporate Gifts as Small Design Objects",
+          "route": "/journal/corporate-gifts-as-small-design-objects",
+          "slot": "cover",
+          "path": "/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
+          "alt": "Twinleaf: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Palm Mini Serving Tray"
+      ]
+    },
+    {
+      "path": "/media/generated/dp118-pocketworld-paperweight-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Pocketworld Paperweight — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP118"
+      ],
+      "uses": [],
+      "productNames": [
+        "Pocketworld Paperweight"
+      ]
+    },
+    {
+      "path": "/media/generated/dp119-promise-mini-ring-dish-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Promise Mini Ring Dish — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP119"
+      ],
+      "uses": [],
+      "productNames": [
+        "Promise Mini Ring Dish"
+      ]
+    },
+    {
+      "path": "/media/generated/dp120-little-archive-keepsake-box-portrait-4x5.webp",
+      "version": 1,
+      "alt": "Petal Drop Earrings — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP110"
+      ],
+      "uses": [],
+      "productNames": [
+        "Petal Drop Earrings"
+      ]
+    },
+    {
+      "path": "/media/product-hero-001-4x5.webp",
+      "version": 1,
+      "alt": "River Channel — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP001"
+      ],
+      "uses": [],
+      "productNames": [
+        "River Channel"
+      ]
+    },
+    {
+      "path": "/media/product-hero-003-4x5.webp",
+      "version": 1,
+      "alt": "Shallow Basin — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP013"
+      ],
+      "uses": [],
+      "productNames": [
+        "Shallow Basin"
+      ]
+    },
+    {
+      "path": "/media/product-hero-005-4x5.webp",
+      "version": 1,
+      "alt": "Narrow Span — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP035"
+      ],
+      "uses": [],
+      "productNames": [
+        "Narrow Span"
+      ]
+    },
+    {
+      "path": "/media/product-hero-009-4x5.webp",
+      "version": 1,
+      "alt": "Entryway — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP048"
+      ],
+      "uses": [
+        {
+          "record": "DB013",
+          "title": "Chairs, Benches and the Shape of a Room",
+          "route": "/journal/chairs-benches-and-the-shape-of-a-room",
+          "slot": "cover",
+          "path": "/media/product-hero-009-4x5.webp",
+          "alt": "Entryway: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Entryway"
+      ]
+    },
+    {
+      "path": "/media/product-hero-016-4x5.webp",
+      "version": 1,
+      "alt": "Lattice Object — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP069"
+      ],
+      "uses": [],
+      "productNames": [
+        "Lattice Object"
+      ]
+    },
+    {
+      "path": "/media/product-hero-020-4x5.webp",
+      "version": 1,
+      "alt": "Vow — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP085"
+      ],
+      "uses": [
+        {
+          "record": "DB019",
+          "title": "Turning a Wedding Memory into a Design Brief",
+          "route": "/journal/turning-a-wedding-memory-into-a-design-brief",
+          "slot": "cover",
+          "path": "/media/product-hero-020-4x5.webp",
+          "alt": "Vow: design visualization accompanying this article"
+        },
+        {
+          "record": "DB021",
+          "title": "Names and Dates: A Personalization Proofreading Checklist",
+          "route": "/journal/names-and-dates-a-personalization-proofreading-checklist",
+          "slot": "cover",
+          "path": "/media/product-hero-020-4x5.webp",
+          "alt": "Vow: design visualization accompanying this article"
+        },
+        {
+          "record": "DB024",
+          "title": "Before You Send Sentimental Materials",
+          "route": "/journal/before-you-send-sentimental-materials",
+          "slot": "cover",
+          "path": "/media/product-hero-020-4x5.webp",
+          "alt": "Vow: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Vow"
+      ]
+    },
+    {
+      "path": "/media/product-hero-026-4x5.webp",
+      "version": 1,
+      "alt": "Timber grain and resin in a sculptural design",
+      "x": "50",
+      "y": "50",
+      "products": [],
+      "uses": [
+        {
+          "record": "page:home",
+          "title": "Art for the way you live.",
+          "route": "/",
+          "slot": "material",
+          "alt": "Timber grain and resin in a sculptural design",
+          "path": "/media/product-hero-026-4x5.webp",
+          "mobile": {
+            "x": 50,
+            "y": 50,
+            "ratio": "1/1"
+          },
+          "caption": "Design visualization",
+          "desktop": {
+            "x": 50,
+            "y": 50,
+            "ratio": "4/5"
+          }
+        },
+        {
+          "record": "page:materials-care",
+          "title": "Texture, depth and everyday life.",
+          "route": "/materials-care",
+          "slot": "cover",
+          "path": "/media/product-hero-026-4x5.webp",
+          "alt": "Timber and resin design visualization"
+        },
+        {
+          "record": "page:our-story",
+          "title": "Art for the way you live.",
+          "route": "/our-story",
+          "slot": "cover",
+          "path": "/media/product-hero-026-4x5.webp",
+          "alt": "Timber grain and resin in a sculptural design visualization"
+        }
+      ],
+      "productNames": []
+    },
+    {
+      "path": "/media/product-hero-029-4x5.webp",
+      "version": 1,
+      "alt": "Everyday — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP114"
+      ],
+      "uses": [
+        {
+          "record": "DB030",
+          "title": "Seasonal Gifting without the Marketplace Clutter",
+          "route": "/journal/seasonal-gifting-without-the-marketplace-clutter",
+          "slot": "cover",
+          "path": "/media/product-hero-029-4x5.webp",
+          "alt": "Everyday: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Everyday"
+      ]
+    },
+    {
+      "path": "/media/product-scene-001-16x9.webp",
+      "version": 1,
+      "alt": "River Channel in a room — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP001"
+      ],
+      "uses": [
+        {
+          "record": "DB001",
+          "title": "A Room Begins with a Statement Table",
+          "route": "/journal/a-room-begins-with-a-statement-table",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        },
+        {
+          "record": "DB002",
+          "title": "Reading the Grain: Wood and Resin in a Shared Composition",
+          "route": "/journal/reading-the-grain-wood-and-resin-in-a-shared-composition",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        },
+        {
+          "record": "DB003",
+          "title": "Round, Oval or Rectangular: A Dining-Table Planning Notebook",
+          "route": "/journal/round-oval-or-rectangular-a-dining-table-planning-notebook",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        },
+        {
+          "record": "DB007",
+          "title": "Pairing Resin Art with Warm Neutral Interiors",
+          "route": "/journal/pairing-resin-art-with-warm-neutral-interiors",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        },
+        {
+          "record": "DB008",
+          "title": "A Guide to Describing Your Commission",
+          "route": "/journal/a-guide-to-describing-your-commission",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        },
+        {
+          "record": "DB011",
+          "title": "From a Mood Board to a Material Conversation",
+          "route": "/journal/from-a-mood-board-to-a-material-conversation",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        },
+        {
+          "record": "DB012",
+          "title": "Light, Transparency and the Look of Resin",
+          "route": "/journal/light-transparency-and-the-look-of-resin",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        },
+        {
+          "record": "DB014",
+          "title": "Planning a Large Piece for Delivery Access",
+          "route": "/journal/planning-a-large-piece-for-delivery-access",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        },
+        {
+          "record": "DB015",
+          "title": "Why a Visualization Is Not a Final Specification",
+          "route": "/journal/why-a-visualization-is-not-a-final-specification",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        },
+        {
+          "record": "DB033",
+          "title": "Inside a Material-Led Design Notebook",
+          "route": "/journal/inside-a-material-led-design-notebook",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        },
+        {
+          "record": "DB034",
+          "title": "How to Read a Product Specification",
+          "route": "/journal/how-to-read-a-product-specification",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        },
+        {
+          "record": "DB035",
+          "title": "Preparing a Clear WhatsApp Enquiry",
+          "route": "/journal/preparing-a-clear-whatsapp-enquiry",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        },
+        {
+          "record": "DB036",
+          "title": "From Draft to Approved Design: A Client Checklist",
+          "route": "/journal/from-draft-to-approved-design-a-client-checklist",
+          "slot": "cover",
+          "path": "/media/product-scene-001-16x9.webp",
+          "alt": "River Channel: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "River Channel"
+      ]
+    },
+    {
+      "path": "/media/product-scene-003-16x9.webp",
+      "version": 1,
+      "alt": "Shallow Basin in a room — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP013"
+      ],
+      "uses": [
+        {
+          "record": "DB004",
+          "title": "Coffee Tables as Sculptural Objects",
+          "route": "/journal/coffee-tables-as-sculptural-objects",
+          "slot": "cover",
+          "path": "/media/product-scene-003-16x9.webp",
+          "alt": "Shallow Basin: design visualization accompanying this article"
+        },
+        {
+          "record": "DB018",
+          "title": "The Project Story Behind a Collectible Interior",
+          "route": "/journal/the-project-story-behind-a-collectible-interior",
+          "slot": "cover",
+          "path": "/media/product-scene-003-16x9.webp",
+          "alt": "Shallow Basin: design visualization accompanying this article"
+        }
+      ],
+      "productNames": [
+        "Shallow Basin"
+      ]
+    },
+    {
+      "path": "/media/product-scene-005-16x9.webp",
+      "version": 1,
+      "alt": "Narrow Span in a room — design visualization",
+      "x": "50",
+      "y": "50",
+      "products": [
+        "DP035"
+      ],
+      "uses": [
+        {
+          "record": "DB006",
+          "title": "An Entryway Built Around One Console",
+          "route": "/journal/an-entryway-built-around-one-console",
+          "slot": "cover",
+          "path": "/media/product-scene-005-16x9.webp",
+          "alt": "Narrow Span: design visualization accompanying this article"
+        },
+        {
+          "record": "DB009",
+          "title": "What to Include in an Architect’s Enquiry",
+          "route": "/journal/what-to-include-in-an-architects-enquiry",
+          "slot": "cover",
+          "path": "/media/product-scene-005-16x9.webp",
+          "alt": "Narrow Span: design visualization accompanying this article"
+        },
+        {
+          "record": "DB017",
+          "title": "A Small Vocabulary of Finishes and Forms",
+          "route": "/journal/a-small-vocabulary-of-finishes-and-forms",
+          "slot": "cover",
+          "path": "/media/product-scene-005-16x9.webp",
+          "alt": "Narrow Span: design visualization accompanying this article"
+        },
+        {
+          "record": "page:architects",
+          "title": "A material partner for your vision.",
+          "route": "/architects",
+          "slot": "cover",
+          "path": "/media/product-scene-005-16x9.webp",
+          "alt": "Estuary dining table in a room, a design visualization"
+        }
+      ],
+      "productNames": [
+        "Narrow Span"
+      ]
+    }
+  ],
+  "review": {
+    "at": "2026-10-06T04:15:16.525Z",
+    "assets": 136,
+    "candidateRatios": [
+      "3/4",
+      "16/10"
+    ],
+    "actualLayouts": [
+      "River Channel gallery and enlargement in local QA",
+      "DB010 saved desktop cover",
+      "DB010 saved mobile cover",
+      "DB010 published cover"
+    ],
+    "limits": "Contact sheets do not certify every product page or every responsive crop. The enlarged product image uses contain; primary gallery images use cover.",
+    "findings": [
+      {
+        "id": "wall-topic",
+        "state": "FIXED AND PUBLISHED",
+        "record": "DB010",
+        "note": "Replaced the unrelated console cover with Horizon wall art. Full wall panel remains identifiable in saved desktop/mobile previews."
+      },
+      {
+        "id": "seating-topic",
+        "state": "RETAINED AFTER REVIEW",
+        "record": "DB013",
+        "note": "Entryway is a bench and fits the chairs-and-benches article. It was not changed."
+      },
+      {
+        "id": "portrait-to-wide",
+        "state": "OWNER REVIEW REQUIRED",
+        "note": "Wide candidate crops cut parts of tall chairs, standing sculptures, pendants and clocks. Preserve portrait/contain presentation when full shape matters; do not use the wide comparison as an approved cover for every asset."
+      },
+      {
+        "id": "cover-repetition",
+        "state": "EDITORIAL DECISION OPEN",
+        "note": "River Channel remains repeated in journal planning articles. The inventory lists all assignments for deliberate cover selection."
+      },
+      {
+        "id": "illustration-provenance",
+        "state": "LABEL RETAINED",
+        "note": "The maker image and design renderings remain visualizations; no claim of actual staff, completed customer work or physical product photography was added."
+      }
+    ]
+  }
+}

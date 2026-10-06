@@ -1,4 +1,5 @@
 'use client';
+import {journeyText} from '@/lib/journey-text';
 import {useEffect,useRef,useState} from 'react';
 import {Dialog} from './dialog';
 import {usePathname} from 'next/navigation';
@@ -38,10 +39,10 @@ function HeaderContent({pathname,navigation,locale,enabledLocales,copy}:{pathnam
   return()=>{desktop.removeEventListener('change',closeOnDesktop);document.removeEventListener('pointerdown',closeOutside);};
  },[]);
  return <header className={s.header}>
-  <Link className={s.brand} href="/" aria-label="RivyaLivingArt home">
+  <Link className={s.brand} href="/" aria-label={journeyText(locale,"RivyaLivingArt home")}>
    <Image src="/brand/rivyalivingart-logo-horizontal-transparent.png" width={410} height={116} sizes="(max-width: 780px) 158px, 184px" alt="RivyaLivingArt" loading="eager"/>
   </Link>
-  <nav className={s.nav} aria-label="Main navigation">
+  <nav className={s.nav} aria-label={journeyText(locale,"Main navigation")}>
    {collections.length>0&&<details className={s.collectionMenu} ref={collectionMenu} onKeyDown={e=>{if(e.key==='Escape'){e.currentTarget.open=false;e.currentTarget.querySelector('summary')?.focus();}}} onBlur={e=>{if(!e.currentTarget.contains(e.relatedTarget))e.currentTarget.open=false;}}>
     <summary data-active={collections.some(item=>active(item.href))}>{label('collections')} <ChevronDown size={14} aria-hidden="true"/></summary>
     <div className={s.collectionPanel}>{collections.map(item=><NavAnchor key={item.id} item={item} locale={locale} current={active(item.href)} onClick={()=>{if(collectionMenu.current)collectionMenu.current.open=false;}}/>)}</div>
@@ -56,13 +57,13 @@ function HeaderContent({pathname,navigation,locale,enabledLocales,copy}:{pathnam
   </div>
   <noscript>
    <style>{`.${s.headerActions}{display:none!important}`}</style>
-   <details className={s.staticMenu}><summary>{label('footerExplore')}</summary><nav aria-label="Navigation without JavaScript">
+   <details className={s.staticMenu}><summary>{label('footerExplore')}</summary><nav aria-label={journeyText(locale,"Navigation without JavaScript")}>
     {[...collections,...pages].map(item=><NavAnchor key={item.id} item={item} locale={locale}/>)}
     <Link href="/search">{label('searchPieces')}</Link><Link href="/commission">{label('beginPiece')}</Link>
    </nav></details>
   </noscript>
   <Dialog open={menuPath===pathname} title={label('exploreTitle')} onClose={close} variant="navigation" closeLabel={label('closeNavigation')}>
-   <nav aria-label="Mobile navigation">
+   <nav aria-label={journeyText(locale,"Mobile navigation")}>
     <span className={s.eyebrow}>{label('theCollections')}</span>
     {collections.map(item=><NavAnchor key={item.id} item={item} locale={locale} current={active(item.href)} onClick={close}/>)}
     <div className={s.mobilePageLinks}>{pages.map(item=><NavAnchor key={item.id} item={item} locale={locale} current={active(item.href)} onClick={close}/>)}</div>

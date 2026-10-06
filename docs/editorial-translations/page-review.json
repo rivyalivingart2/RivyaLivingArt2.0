@@ -1,0 +1,705 @@
+{
+  "sourceReadAt": "2026-10-06T02:53:13.333Z",
+  "scope": "Editorial fields only. Imports cannot alter products, URLs, media paths or business settings. No native-reader approval is claimed.",
+  "records": [
+    {
+      "id": "page:accessibility",
+      "route": "/accessibility",
+      "kind": "page",
+      "version": 1,
+      "publishedVersion": 3,
+      "aligned": true,
+      "sourceHash": "7a6a71db179e9db61ab3544588e803059f5347f44c76bb59f53bfca747d9ec79",
+      "fields": [
+        {
+          "path": "title",
+          "source": "A website for more people.",
+          "hi": "अधिक लोगों के लिए एक वेबसाइट.",
+          "gu": "વધુ લોકો માટેની વેબસાઇટ."
+        },
+        {
+          "path": "eyebrow",
+          "source": "Accessibility",
+          "hi": "सुगम्यता",
+          "gu": "સુલભતા"
+        },
+        {
+          "path": "description",
+          "source": "Our approach to access, the current evaluation status and a way to report a difficulty.",
+          "hi": "वेबसाइट को सुलभ बनाने का हमारा तरीका, मूल्यांकन की वर्तमान स्थिति और किसी कठिनाई की सूचना देने का माध्यम।",
+          "gu": "વેબસાઇટને સુલભ બનાવવાનો અમારો અભિગમ, મૂલ્યાંકનની હાલની સ્થિતિ અને મુશ્કેલી જણાવવાની રીત."
+        },
+        {
+          "path": "sections.0.heading",
+          "source": "Our approach",
+          "hi": "हमारा तरीका",
+          "gu": "અમારો અભિગમ"
+        },
+        {
+          "path": "sections.0.paragraphs.0",
+          "source": "We aim to make the collection and order forms usable with a keyboard, readable at larger text sizes and considerate of reduced-motion preferences. The redesign includes labelled fields, visible focus indicators and written error guidance.",
+          "hi": "हमारा उद्देश्य है कि संग्रह और अनुरोध फ़ॉर्म कीबोर्ड से इस्तेमाल किए जा सकें, बड़े अक्षरों में पढ़े जा सकें और कम गति वाले दृश्य पसंद करने वालों का ध्यान रखें। नए डिज़ाइन में नाम वाले फ़ील्ड, स्पष्ट फ़ोकस संकेत और त्रुटियों को सुधारने के लिखित निर्देश शामिल हैं।",
+          "gu": "અમારો હેતુ છે કે સંગ્રહ અને વિનંતીનાં ફોર્મ કીબોર્ડથી વાપરી શકાય, મોટા અક્ષરોમાં વાંચી શકાય અને ઓછી હલનચલન પસંદ કરનારાઓનું ધ્યાન રાખે. નવા ડિઝાઇનમાં નામ આપેલાં ક્ષેત્રો, સ્પષ્ટ ફોકસ સૂચકો અને ભૂલો સુધારવાની લેખિત સૂચનાઓ છે."
+        },
+        {
+          "path": "sections.1.heading",
+          "source": "If something gets in the way",
+          "hi": "अगर कोई कठिनाई आए",
+          "gu": "કોઈ મુશ્કેલી આવે તો"
+        },
+        {
+          "path": "sections.1.paragraphs.0",
+          "source": "Call +91 83204 04132 or email rivyalivingart2.0@gmail.com. Tell us the page and the difficulty you encountered so we can help with your inquiry.",
+          "hi": "+91 83204 04132 पर कॉल करें या rivyalivingart2.0@gmail.com पर ईमेल करें। पृष्ठ और आई कठिनाई बताएँ, ताकि हम आपके अनुरोध में मदद कर सकें।",
+          "gu": "+91 83204 04132 પર ફોન કરો અથવા rivyalivingart2.0@gmail.com પર ઈમેલ કરો. પાનું અને પડેલી મુશ્કેલી જણાવો, જેથી અમે તમારી વિનંતીમાં મદદ કરી શકીએ."
+        },
+        {
+          "path": "sections.2.heading",
+          "source": "Evaluation status",
+          "hi": "मूल्यांकन की स्थिति",
+          "gu": "મૂલ્યાંકનની સ્થિતિ"
+        },
+        {
+          "path": "sections.2.paragraphs.0",
+          "source": "A complete accessibility evaluation of this redesign has not yet been completed. We do not currently claim conformance with a particular accessibility standard.",
+          "hi": "इस नए डिज़ाइन का पूरा सुगम्यता मूल्यांकन अभी समाप्त नहीं हुआ है। हम फ़िलहाल किसी विशेष सुगम्यता मानक के पूर्ण अनुपालन का दावा नहीं करते।",
+          "gu": "આ નવા ડિઝાઇનનું સંપૂર્ણ સુલભતા મૂલ્યાંકન હજી પૂરું થયું નથી. અમે હાલમાં કોઈ ચોક્કસ સુલભતા ધોરણના સંપૂર્ણ પાલનનો દાવો કરતા નથી."
+        }
+      ],
+      "images": {
+        "cover": {},
+        "sections": []
+      },
+      "originalSourceHash": "7a6a71db179e9db61ab3544588e803059f5347f44c76bb59f53bfca747d9ec79",
+      "sourceAmendments": {},
+      "assistantReview": "English meaning checked; both exact saved-language previews inspected",
+      "nativeReaderReview": "NOT PERFORMED",
+      "publication": "PUBLISHED AND ANONYMOUSLY VERIFIED — revision 3"
+    },
+    {
+      "id": "page:architects",
+      "route": "/architects",
+      "kind": "page",
+      "version": 1,
+      "publishedVersion": 3,
+      "aligned": true,
+      "sourceHash": "cd8d423d67d30e4dfd341d5c9dc11ff68fb57c1cc4f87e3a6ef59c054abb3939",
+      "fields": [
+        {
+          "path": "title",
+          "source": "A material partner for your vision.",
+          "hi": "आपकी कल्पना के लिए सामग्री का सहयोगी.",
+          "gu": "તમારી કલ્પના માટે સામગ્રીનો સહયોગી."
+        },
+        {
+          "path": "eyebrow",
+          "source": "For architects & interior designers",
+          "hi": "वास्तुकारों और इंटीरियर डिज़ाइनरों के लिए",
+          "gu": "આર્કિટેક્ટ્સ અને ઇન્ટિરિયર ડિઝાઇનરો માટે"
+        },
+        {
+          "path": "description",
+          "source": "Prepare a clear project brief with dimensions, intended use and material references, then develop the specification with the atelier.",
+          "hi": "माप, उपयोग और सामग्री के संदर्भों के साथ परियोजना की स्पष्ट जानकारी तैयार करें। फिर एटेलियर के साथ मिलकर विवरण तय करें।",
+          "gu": "માપ, ઉપયોગ અને સામગ્રીના સંદર્ભો સાથે પ્રોજેક્ટની સ્પષ્ટ વિગતો તૈયાર કરો. પછી એટેલિયર સાથે મળીને વિશિષ્ટતાઓ નક્કી કરો."
+        },
+        {
+          "path": "imageAlt",
+          "source": "Estuary dining table in a room, a design visualization",
+          "hi": "कमरे में Estuary डाइनिंग टेबल का डिज़ाइन दृश्य",
+          "gu": "રૂમમાં Estuary ડાઇનિંગ ટેબલનું ડિઝાઇન દૃશ્ય"
+        },
+        {
+          "path": "sections.0.heading",
+          "source": "Begin with the space",
+          "hi": "जगह से शुरू करें",
+          "gu": "જગ્યાથી શરૂઆત કરો"
+        },
+        {
+          "path": "sections.0.paragraphs.0",
+          "source": "Share the piece, intended use, approximate dimensions and references. Include the delivery city and access constraints to help frame the design discussion.",
+          "hi": "कृति, उसका उपयोग, अनुमानित माप और संदर्भ साझा करें। डिज़ाइन पर चर्चा में मदद के लिए डिलीवरी का शहर और वहाँ पहुँचने की सीमाएँ भी बताएँ।",
+          "gu": "કૃતિ, તેનો ઉપયોગ, અંદાજિત માપ અને સંદર્ભો જણાવો. ડિઝાઇનની ચર્ચાને દિશા આપવા ડિલિવરીનું શહેર અને ત્યાં પહોંચવાની મર્યાદાઓ પણ જણાવો."
+        },
+        {
+          "path": "sections.1.heading",
+          "source": "Develop the specification together",
+          "hi": "मिलकर विवरण तय करें",
+          "gu": "મળીને વિશિષ્ટતાઓ નક્કી કરો"
+        },
+        {
+          "path": "sections.1.paragraphs.0",
+          "source": "Choose a design from the collection and use its customization form. Add project requirements in the notes; we will discuss feasibility and the quotation with you on WhatsApp.",
+          "hi": "संग्रह से कोई डिज़ाइन चुनें और उसका कस्टमाइज़ेशन फ़ॉर्म भरें। नोट्स में परियोजना की ज़रूरतें जोड़ें; हम WhatsApp पर आपके साथ व्यवहार्यता और कीमत पर चर्चा करेंगे।",
+          "gu": "સંગ્રહમાંથી ડિઝાઇન પસંદ કરીને તેનું કસ્ટમાઇઝેશન ફોર્મ ભરો. નોંધોમાં પ્રોજેક્ટની જરૂરિયાતો ઉમેરો; અમે WhatsApp પર તમારી સાથે શક્યતા અને ભાવપત્રકની ચર્ચા કરીશું."
+        },
+        {
+          "path": "sections.2.heading",
+          "source": "Make the brief useful",
+          "hi": "काम आने वाली जानकारी दें",
+          "gu": "ઉપયોગી વિગતો આપો"
+        },
+        {
+          "path": "sections.2.paragraphs.0",
+          "source": "Distinguish measured site dimensions from proposed product dimensions. Label references with what matters: a silhouette, a material relationship or an intended use. Do not include confidential client details that the design discussion does not need.",
+          "hi": "जगह के वास्तविक माप और उत्पाद के प्रस्तावित माप अलग-अलग बताएँ। हर संदर्भ में स्पष्ट करें कि क्या महत्वपूर्ण है: उसकी आकृति, सामग्रियों का मेल या उपयोग। ग्राहक की ऐसी गोपनीय जानकारी शामिल न करें जिसकी डिज़ाइन चर्चा में ज़रूरत नहीं है।",
+          "gu": "સ્થળનાં માપેલાં માપ અને ઉત્પાદનનાં સૂચિત માપ અલગ દર્શાવો. દરેક સંદર્ભમાં શું મહત્વનું છે તે જણાવો: આકાર, સામગ્રીનો મેળ કે ઉપયોગ. ડિઝાઇનની ચર્ચામાં જરૂરી ન હોય તેવી ગ્રાહકની ગોપનીય વિગતો આપશો નહીં."
+        },
+        {
+          "path": "sections.3.heading",
+          "source": "Keep responsibilities clear",
+          "hi": "ज़िम्मेदारियाँ स्पष्ट रखें",
+          "gu": "જવાબદારીઓ સ્પષ્ટ રાખો"
+        },
+        {
+          "path": "sections.3.paragraphs.0",
+          "source": "Ask the atelier to clarify the proposed scope, required drawings, material references and installation responsibilities. A catalogue visualization does not resolve construction, performance or site conditions.",
+          "hi": "एटेलियर से प्रस्तावित काम, आवश्यक ड्रॉइंग, सामग्री के संदर्भ और स्थापना की ज़िम्मेदारियाँ स्पष्ट करने को कहें। कैटलॉग का डिज़ाइन दृश्य निर्माण, कार्यक्षमता या स्थान की परिस्थितियाँ तय नहीं करता।",
+          "gu": "એટેલિયરને સૂચિત કામનો વ્યાપ, જરૂરી ડ્રોઇંગ, સામગ્રીના સંદર્ભો અને સ્થાપનની જવાબદારીઓ સ્પષ્ટ કરવા કહો. કૅટલૉગનું ડિઝાઇન દૃશ્ય બાંધકામ, કાર્યક્ષમતા કે સ્થળની પરિસ્થિતિઓ નક્કી કરતું નથી."
+        }
+      ],
+      "images": {
+        "cover": {
+          "path": "/media/product-scene-005-16x9.webp",
+          "alt": "Estuary dining table in a room, a design visualization"
+        },
+        "sections": []
+      },
+      "originalSourceHash": "cd8d423d67d30e4dfd341d5c9dc11ff68fb57c1cc4f87e3a6ef59c054abb3939",
+      "sourceAmendments": {},
+      "assistantReview": "English meaning checked; both exact saved-language previews inspected",
+      "nativeReaderReview": "NOT PERFORMED",
+      "publication": "PUBLISHED AND ANONYMOUSLY VERIFIED — revision 3"
+    },
+    {
+      "id": "page:imprint",
+      "route": "/imprint",
+      "kind": "page",
+      "version": 3,
+      "publishedVersion": 5,
+      "aligned": false,
+      "sourceHash": "be224c3dd6d1ac221119f1ba5555a55085ba83a9b97cd9e09a9d97c4fec35dce",
+      "fields": [
+        {
+          "path": "title",
+          "source": "Legal Imprint.",
+          "hi": "कानूनी व्यावसायिक जानकारी.",
+          "gu": "કાનૂની વ્યવસાયિક માહિતી."
+        },
+        {
+          "path": "eyebrow",
+          "source": "Impressum",
+          "hi": "व्यावसायिक पहचान",
+          "gu": "વ્યવસાયની ઓળખ"
+        },
+        {
+          "path": "description",
+          "source": "Business identity and contact details for RivyaLivingArt, the resin art and furniture atelier in Surat, Gujarat, India.",
+          "hi": "सूरत, गुजरात, भारत में रेज़िन कला और फ़र्नीचर एटेलियर RivyaLivingArt की व्यावसायिक पहचान और संपर्क विवरण।",
+          "gu": "સુરત, ગુજરાત, ભારતમાં રેઝિન કલા અને ફર્નિચરના એટેલિયર RivyaLivingArtની વ્યવસાયિક ઓળખ અને સંપર્કની વિગતો."
+        },
+        {
+          "path": "sections.0.heading",
+          "source": "Provider Identification",
+          "hi": "सेवा प्रदाता की पहचान",
+          "gu": "સેવા પ્રદાતાની ઓળખ"
+        },
+        {
+          "path": "sections.0.paragraphs.0",
+          "source": "RivyaLivingArt. Business owner: Bhavya Gondaliya. Based in Surat, Gujarat, India.",
+          "hi": "RivyaLivingArt. व्यवसाय के मालिक: Bhavya Gondaliya. स्थान: सूरत, गुजरात, भारत।",
+          "gu": "RivyaLivingArt. વ્યવસાયના માલિક: Bhavya Gondaliya. સ્થળ: સુરત, ગુજરાત, ભારત."
+        },
+        {
+          "path": "sections.1.heading",
+          "source": "Contact Information",
+          "hi": "संपर्क जानकारी",
+          "gu": "સંપર્કની માહિતી"
+        },
+        {
+          "path": "sections.1.paragraphs.0",
+          "source": "Phone: +91 8320404132. Email: rivyalivingart2.0@gmail.com",
+          "hi": "फ़ोन: +91 8320404132. ईमेल: rivyalivingart2.0@gmail.com",
+          "gu": "ફોન: +91 8320404132. ઈમેલ: rivyalivingart2.0@gmail.com"
+        },
+        {
+          "path": "sections.2.heading",
+          "source": "Disclaimer",
+          "hi": "स्पष्टीकरण",
+          "gu": "સ્પષ્ટતા"
+        },
+        {
+          "path": "sections.2.paragraphs.0",
+          "source": "All product images and visual concepts are for reference only. Exact materials, scale, and finish are confirmed individually prior to order placement.",
+          "hi": "सभी उत्पाद चित्र और दृश्य अवधारणाएँ केवल संदर्भ के लिए हैं। ऑर्डर देने से पहले प्रत्येक कृति की सही सामग्री, आकार और फ़िनिश की अलग से पुष्टि की जाती है।",
+          "gu": "ઉત્પાદનોનાં બધાં ચિત્રો અને દૃશ્ય ખ્યાલો ફક્ત સંદર્ભ માટે છે. ઓર્ડર આપતાં પહેલાં દરેક કૃતિની ચોક્કસ સામગ્રી, માપ અને ફિનિશની અલગથી પુષ્ટિ કરવામાં આવે છે."
+        }
+      ],
+      "images": {
+        "cover": {},
+        "sections": []
+      },
+      "originalSourceHash": "be224c3dd6d1ac221119f1ba5555a55085ba83a9b97cd9e09a9d97c4fec35dce",
+      "sourceAmendments": {},
+      "assistantReview": "English meaning checked; both exact saved-language previews inspected",
+      "nativeReaderReview": "NOT PERFORMED",
+      "publication": "PUBLISHED AND ANONYMOUSLY VERIFIED — revision 5"
+    },
+    {
+      "id": "page:shipping-delivery",
+      "route": "/shipping-delivery",
+      "kind": "page",
+      "version": 1,
+      "publishedVersion": 3,
+      "aligned": true,
+      "sourceHash": "4af1e829c4f3b546260a22b7d820e0f9717825d3a25577c6fdc0ef4ce47431b1",
+      "fields": [
+        {
+          "path": "title",
+          "source": "A considered arrival.",
+          "hi": "सोच-समझकर आपके द्वार तक.",
+          "gu": "વિચારપૂર્વક તમારા દ્વાર સુધી."
+        },
+        {
+          "path": "eyebrow",
+          "source": "Delivery & installation",
+          "hi": "डिलीवरी और स्थापना",
+          "gu": "ડિલિવરી અને સ્થાપન"
+        },
+        {
+          "path": "description",
+          "source": "Delivery from Surat, India, with serviceability, transport, installation and charges confirmed for your individual order.",
+          "hi": "सूरत, भारत से डिलीवरी; आपके प्रत्येक ऑर्डर के लिए सेवा की उपलब्धता, परिवहन, स्थापना और शुल्क की पुष्टि की जाती है।",
+          "gu": "સુરત, ભારતથી ડિલિવરી; તમારા દરેક ઓર્ડર માટે સેવાની ઉપલબ્ધતા, પરિવહન, સ્થાપન અને ખર્ચની પુષ્ટિ થાય છે."
+        },
+        {
+          "path": "sections.0.heading",
+          "source": "From Surat, with a plan",
+          "hi": "सूरत से, पूरी योजना के साथ",
+          "gu": "સુરતથી, આયોજન સાથે"
+        },
+        {
+          "path": "sections.0.paragraphs.0",
+          "source": "RivyaLivingArt is based in Surat, Gujarat, India. Local delivery within Surat is subject to confirming your address. For other Indian locations, we accept orders only after checking courier serviceability for your PIN code and whether the piece can travel safely. International delivery is unavailable at launch.",
+          "hi": "RivyaLivingArt सूरत, गुजरात, भारत में स्थित है। सूरत में स्थानीय डिलीवरी आपके पते की पुष्टि पर निर्भर है। भारत के अन्य स्थानों के लिए हम आपके पिन कोड पर कूरियर सेवा और कृति के सुरक्षित परिवहन की जाँच के बाद ही ऑर्डर स्वीकार करते हैं। शुरुआत में अंतरराष्ट्रीय डिलीवरी उपलब्ध नहीं है।",
+          "gu": "RivyaLivingArt સુરત, ગુજરાત, ભારતમાં સ્થિત છે. સુરતમાં સ્થાનિક ડિલિવરી તમારા સરનામાની પુષ્ટિને આધીન છે. ભારતનાં અન્ય સ્થળો માટે તમારા પિન કોડ પર કુરિયર સેવા અને કૃતિ સુરક્ષિત રીતે મોકલી શકાય છે કે નહીં તે તપાસ્યા પછી જ અમે ઓર્ડર સ્વીકારીએ છીએ. શરૂઆતમાં આંતરરાષ્ટ્રીય ડિલિવરી ઉપલબ્ધ નથી."
+        },
+        {
+          "path": "sections.1.heading",
+          "source": "Installation by arrangement",
+          "hi": "पूर्व व्यवस्था से स्थापना",
+          "gu": "પૂર્વ વ્યવસ્થાથી સ્થાપન"
+        },
+        {
+          "path": "sections.1.paragraphs.0",
+          "source": "Installation is available only by prior arrangement within Surat, after confirming the job and installer availability. We do not promise installation elsewhere. Tell us about doorways, lifts, stairs, mounting surfaces and access restrictions before accepting your quotation.",
+          "hi": "काम और इंस्टॉलर की उपलब्धता की पुष्टि के बाद, केवल सूरत में पूर्व व्यवस्था से स्थापना उपलब्ध है। हम अन्य स्थानों पर स्थापना का वादा नहीं करते। कीमत स्वीकार करने से पहले दरवाज़ों, लिफ़्ट, सीढ़ियों, लगाने की सतहों और पहुँच की पाबंदियों के बारे में बताएँ।",
+          "gu": "કામ અને સ્થાપન કરનારની ઉપલબ્ધતા નક્કી કર્યા પછી, ફક્ત સુરતમાં પૂર્વ વ્યવસ્થાથી સ્થાપન ઉપલબ્ધ છે. અન્ય સ્થળે સ્થાપનનું વચન આપતા નથી. ભાવપત્રક સ્વીકારતાં પહેલાં દરવાજા, લિફ્ટ, સીડી, લગાવવાની સપાટી અને પ્રવેશની મર્યાદાઓ જણાવો."
+        },
+        {
+          "path": "sections.2.heading",
+          "source": "Charges agreed before acceptance",
+          "hi": "स्वीकृति से पहले शुल्क तय",
+          "gu": "સ્વીકૃતિ પહેલાં ખર્ચ નક્કી"
+        },
+        {
+          "path": "sections.2.paragraphs.0",
+          "source": "Delivery is calculated individually using destination, actual or volumetric weight, dimensions, protective packaging and courier or local transport costs. Installation is quoted separately using product size, mounting requirements, access and labour. All applicable charges and taxes are shown in INR in the final quotation before you accept or pay. Delivery and installation are not universally free.",
+          "hi": "डिलीवरी का शुल्क गंतव्य, वास्तविक या आयतन-आधारित वज़न, माप, सुरक्षित पैकिंग और कूरियर या स्थानीय परिवहन की लागत के आधार पर अलग से तय होता है। स्थापना का शुल्क उत्पाद के आकार, लगाने की ज़रूरतों, पहुँच और श्रम के अनुसार अलग दिया जाता है। आपकी स्वीकृति या भुगतान से पहले सभी लागू शुल्क और कर अंतिम कीमत में INR में दिखाए जाते हैं। डिलीवरी और स्थापना हर स्थिति में निःशुल्क नहीं हैं।",
+          "gu": "ડિલિવરીનો ખર્ચ સ્થળ, વાસ્તવિક અથવા ઘનફળ આધારિત વજન, માપ, સુરક્ષિત પૅકિંગ અને કુરિયર કે સ્થાનિક પરિવહનના ખર્ચ મુજબ અલગથી ગણાય છે. સ્થાપનનો ભાવ ઉત્પાદનના કદ, લગાવવાની જરૂરિયાતો, પહોંચ અને મજૂરી મુજબ અલગથી અપાય છે. તમારી સ્વીકૃતિ કે ચુકવણી પહેલાં લાગુ પડતા બધા ખર્ચ અને કર અંતિમ ભાવપત્રકમાં INRમાં દર્શાવાય છે. ડિલિવરી અને સ્થાપન દરેક કિસ્સામાં મફત નથી."
+        },
+        {
+          "path": "sections.3.heading",
+          "source": "Timing for your piece",
+          "hi": "आपकी कृति का समय",
+          "gu": "તમારી કૃતિ માટેનો સમય"
+        },
+        {
+          "path": "sections.3.paragraphs.0",
+          "source": "We confirm production and delivery estimates individually before accepting an order. Share any important dates early so the proposed schedule can be discussed.",
+          "hi": "ऑर्डर स्वीकार करने से पहले निर्माण और डिलीवरी के अनुमानित समय की अलग-अलग पुष्टि होती है। महत्वपूर्ण तारीखें पहले बताएँ, ताकि प्रस्तावित समय-सारणी पर चर्चा हो सके।",
+          "gu": "ઓર્ડર સ્વીકારતાં પહેલાં ઉત્પાદન અને ડિલિવરીના અંદાજિત સમયની વ્યક્તિગત રીતે પુષ્ટિ કરીએ છીએ. મહત્વની તારીખો વહેલી જણાવો, જેથી સૂચિત સમયપત્રકની ચર્ચા કરી શકાય."
+        },
+        {
+          "path": "sections.4.heading",
+          "source": "Before sending a keepsake",
+          "hi": "यादगार वस्तु भेजने से पहले",
+          "gu": "યાદગાર વસ્તુ મોકલતાં પહેલાં"
+        },
+        {
+          "path": "sections.4.paragraphs.0",
+          "source": "Keep sentimental originals with you until we confirm suitability and provide current transfer instructions. Confirm the recipient, destination and transport arrangements for your particular item.",
+          "hi": "जब तक हम उपयुक्तता की पुष्टि और भेजने के वर्तमान निर्देश न दें, भावनात्मक महत्व वाली मूल वस्तुएँ अपने पास रखें। अपनी वस्तु के लिए प्राप्तकर्ता, गंतव्य और परिवहन व्यवस्था की पुष्टि करें।",
+          "gu": "અમે યોગ્યતાની પુષ્ટિ કરીને મોકલવાની હાલની સૂચનાઓ આપીએ ત્યાં સુધી લાગણીસભર મૂળ વસ્તુઓ તમારી પાસે રાખો. તમારી ચોક્કસ વસ્તુ માટે મેળવનાર, સ્થળ અને પરિવહનની વ્યવસ્થાની પુષ્ટિ કરો."
+        }
+      ],
+      "images": {
+        "cover": {},
+        "sections": []
+      },
+      "originalSourceHash": "4af1e829c4f3b546260a22b7d820e0f9717825d3a25577c6fdc0ef4ce47431b1",
+      "sourceAmendments": {},
+      "assistantReview": "English meaning checked; both exact saved-language previews inspected",
+      "nativeReaderReview": "NOT PERFORMED",
+      "publication": "PUBLISHED AND ANONYMOUSLY VERIFIED — revision 3"
+    },
+    {
+      "id": "page:terms",
+      "route": "/terms",
+      "kind": "page",
+      "version": 1,
+      "publishedVersion": 3,
+      "aligned": true,
+      "sourceHash": "e73a6a34dd2e74d7477959391d0997251a561ac930a5dca0e5701a8ab2434468",
+      "fields": [
+        {
+          "path": "title",
+          "source": "Clear from the beginning.",
+          "hi": "शुरू से स्पष्ट.",
+          "gu": "શરૂઆતથી સ્પષ્ટ."
+        },
+        {
+          "path": "eyebrow",
+          "source": "Ordering terms",
+          "hi": "ऑर्डर की शर्तें",
+          "gu": "ઓર્ડરની શરતો"
+        },
+        {
+          "path": "description",
+          "source": "How an order request becomes an agreed specification, with your recorded approval before production begins.",
+          "hi": "निर्माण शुरू होने से पहले आपकी दर्ज स्वीकृति के साथ, ऑर्डर का अनुरोध सहमत विवरण में कैसे बदलता है।",
+          "gu": "ઉત્પાદન શરૂ થાય તે પહેલાં તમારી નોંધાયેલ મંજૂરી સાથે ઓર્ડરની વિનંતી સંમત વિશિષ્ટતાઓમાં કેવી રીતે ફેરવાય છે."
+        },
+        {
+          "path": "sections.0.heading",
+          "source": "A request starts the conversation",
+          "hi": "अनुरोध से बातचीत शुरू होती है",
+          "gu": "વિનંતીથી વાતચીત શરૂ થાય છે"
+        },
+        {
+          "path": "sections.0.paragraphs.0",
+          "source": "Place Order saves your requirements in the database and Studio. It does not accept a quotation, confirm production or take payment. Choose Open WhatsApp or Copy on the saved receipt and press Send yourself to discuss your order. Opening WhatsApp is not proof that a message was sent, delivered or read.",
+          "hi": "Place Order आपकी ज़रूरतें डेटाबेस और Studio में सहेजता है। इससे कीमत स्वीकार नहीं होती, निर्माण की पुष्टि नहीं होती और भुगतान नहीं लिया जाता। ऑर्डर पर चर्चा के लिए सहेजी रसीद पर Open WhatsApp या Copy चुनें और Send स्वयं दबाएँ। WhatsApp खोलना इस बात का प्रमाण नहीं है कि संदेश भेजा गया, पहुँचा या पढ़ा गया।",
+          "gu": "Place Order તમારી જરૂરિયાતો ડેટાબેઝ અને Studioમાં સાચવે છે. તે ભાવપત્રક સ્વીકારતું નથી, ઉત્પાદનની પુષ્ટિ કરતું નથી કે ચુકવણી લેતું નથી. ઓર્ડરની ચર્ચા માટે સાચવેલી રસીદ પર Open WhatsApp અથવા Copy પસંદ કરો અને Send જાતે દબાવો. WhatsApp ખોલવું એ સંદેશ મોકલાયો, પહોંચ્યો કે વંચાયો હોવાનો પુરાવો નથી."
+        },
+        {
+          "path": "sections.1.heading",
+          "source": "Agree the details",
+          "hi": "विवरण पर सहमति",
+          "gu": "વિગતો પર સંમતિ"
+        },
+        {
+          "path": "sections.1.paragraphs.0",
+          "source": "Before production begins, we obtain your recorded approval of the final design, dimensions, spelling, colours, quotation and production commencement. All applicable charges and taxes are quoted in INR before acceptance or payment, with production and delivery estimates confirmed individually.",
+          "hi": "निर्माण से पहले हम अंतिम डिज़ाइन, माप, वर्तनी, रंग, कीमत और निर्माण शुरू करने की आपकी स्वीकृति दर्ज करते हैं। स्वीकृति या भुगतान से पहले सभी लागू शुल्क और कर INR में बताए जाते हैं। निर्माण और डिलीवरी के अनुमानित समय की अलग से पुष्टि होती है।",
+          "gu": "ઉત્પાદન પહેલાં અંતિમ ડિઝાઇન, માપ, જોડણી, રંગો, ભાવપત્રક અને ઉત્પાદન શરૂ કરવાની તમારી મંજૂરી નોંધીએ છીએ. સ્વીકૃતિ કે ચુકવણી પહેલાં લાગુ પડતા બધા ખર્ચ અને કર INRમાં જણાવીએ છીએ. ઉત્પાદન અને ડિલિવરીના અંદાજિત સમયની અલગથી પુષ્ટિ થાય છે."
+        },
+        {
+          "path": "sections.2.heading",
+          "source": "Images and specifications",
+          "hi": "चित्र और विवरण",
+          "gu": "ચિત્રો અને વિશિષ્ટતાઓ"
+        },
+        {
+          "path": "sections.2.paragraphs.0",
+          "source": "Collection images are design visualizations. Material selection, dimensions, colour, availability and feasibility must be confirmed for your individual piece. Prices are provided by quotation.",
+          "hi": "संग्रह के चित्र डिज़ाइन दृश्य हैं। आपकी कृति के लिए सामग्री, माप, रंग, उपलब्धता और व्यवहार्यता की अलग से पुष्टि आवश्यक है। कीमत पूछताछ पर दी जाती है।",
+          "gu": "સંગ્રહનાં ચિત્રો ડિઝાઇન દૃશ્યો છે. તમારી કૃતિ માટે સામગ્રી, માપ, રંગ, ઉપલબ્ધતા અને શક્યતાની વ્યક્તિગત પુષ્ટિ જરૂરી છે. પૂછપરછ પર ભાવપત્રક આપવામાં આવે છે."
+        },
+        {
+          "path": "sections.3.heading",
+          "source": "Your references",
+          "hi": "आपके संदर्भ",
+          "gu": "તમારા સંદર્ભો"
+        },
+        {
+          "path": "sections.3.paragraphs.0",
+          "source": "Only upload images you are entitled to share. Avoid unnecessary sensitive information in notes and references. Reference images remain private and are not added to the public catalogue.",
+          "hi": "केवल वही चित्र अपलोड करें जिन्हें साझा करने का आपको अधिकार है। नोट्स और संदर्भों में अनावश्यक संवेदनशील जानकारी न दें। संदर्भ चित्र निजी रहते हैं और सार्वजनिक कैटलॉग में नहीं जोड़े जाते।",
+          "gu": "શેર કરવાનો અધિકાર હોય એવાં ચિત્રો જ અપલોડ કરો. નોંધો અને સંદર્ભોમાં બિનજરૂરી સંવેદનશીલ માહિતી આપશો નહીં. સંદર્ભ ચિત્રો ખાનગી રહે છે અને જાહેર કૅટલૉગમાં ઉમેરાતાં નથી."
+        },
+        {
+          "path": "sections.4.heading",
+          "source": "Changes, delivery and your rights",
+          "hi": "बदलाव, डिलीवरी और आपके अधिकार",
+          "gu": "ફેરફારો, ડિલિવરી અને તમારા અધિકારો"
+        },
+        {
+          "path": "sections.4.paragraphs.0",
+          "source": "Our delivery and installation policy and cancellation, return and refund policy describe the applicable arrangements. Individual quotations record the agreed scope. Statutory consumer rights remain intact. The website has no payment gateway or customer accounts.",
+          "hi": "हमारी डिलीवरी और स्थापना नीति तथा रद्द करने, वापसी और धनवापसी की नीति लागू व्यवस्थाएँ बताती हैं। प्रत्येक कीमत प्रस्ताव में सहमत काम दर्ज होता है। आपके कानूनी उपभोक्ता अधिकार बने रहते हैं। वेबसाइट पर भुगतान गेटवे या ग्राहक खाते नहीं हैं।",
+          "gu": "અમારી ડિલિવરી અને સ્થાપન નીતિ તથા રદ કરવા, પરત કરવા અને રિફંડની નીતિ લાગુ વ્યવસ્થાઓ જણાવે છે. દરેક ભાવપત્રકમાં સંમત કામનો વ્યાપ નોંધાય છે. તમારા કાનૂની ગ્રાહક અધિકારો યથાવત્ રહે છે. વેબસાઇટ પર પેમેન્ટ ગેટવે કે ગ્રાહક ખાતાં નથી."
+        }
+      ],
+      "images": {
+        "cover": {},
+        "sections": []
+      },
+      "originalSourceHash": "e73a6a34dd2e74d7477959391d0997251a561ac930a5dca0e5701a8ab2434468",
+      "sourceAmendments": {},
+      "assistantReview": "English meaning checked; both exact saved-language previews inspected",
+      "nativeReaderReview": "NOT PERFORMED",
+      "publication": "PUBLISHED AND ANONYMOUSLY VERIFIED — revision 3"
+    },
+    {
+      "id": "page:returns-cancellations",
+      "route": "/returns-cancellations",
+      "kind": "page",
+      "version": 1,
+      "publishedVersion": 3,
+      "aligned": true,
+      "sourceHash": "9d9ef26721623cf88f1326054e5b95f080117677605c49560a4c2344bdcf7dde",
+      "fields": [
+        {
+          "path": "title",
+          "source": "Clear choices when plans change.",
+          "hi": "योजनाएँ बदलें, तो विकल्प स्पष्ट हों.",
+          "gu": "યોજના બદલાય ત્યારે સ્પષ્ટ વિકલ્પો."
+        },
+        {
+          "path": "eyebrow",
+          "source": "Cancellations, returns & refunds",
+          "hi": "रद्द करना, वापसी और धनवापसी",
+          "gu": "રદ કરવું, પરત કરવું અને રિફંડ"
+        },
+        {
+          "path": "description",
+          "source": "Submitting a website form creates an order request. It does not confirm a booking or require payment. Before production or specifically approved non-recoverable procurement begins, you may cancel for a full refund of any amount paid.",
+          "hi": "वेबसाइट फ़ॉर्म जमा करने से ऑर्डर का अनुरोध बनता है। इससे बुकिंग की पुष्टि नहीं होती और भुगतान आवश्यक नहीं होता। निर्माण या विशेष रूप से स्वीकृत, जिसकी लागत वापस नहीं मिल सकती ऐसी खरीद शुरू होने से पहले, आप रद्द करके दी गई पूरी राशि वापस पा सकते हैं।",
+          "gu": "વેબસાઇટનું ફોર્મ મોકલવાથી ઓર્ડરની વિનંતી બને છે. તે બુકિંગની પુષ્ટિ કરતું નથી કે ચુકવણી જરૂરી બનાવતું નથી. ઉત્પાદન અથવા ખાસ મંજૂર કરેલી, જેનો ખર્ચ પાછો મેળવી ન શકાય તેવી ખરીદી શરૂ થાય તે પહેલાં રદ કરીને ચૂકવેલી સંપૂર્ણ રકમ પરત મેળવી શકો છો."
+        },
+        {
+          "path": "sections.0.heading",
+          "source": "Before work begins",
+          "hi": "काम शुरू होने से पहले",
+          "gu": "કામ શરૂ થાય તે પહેલાં"
+        },
+        {
+          "path": "sections.0.paragraphs.0",
+          "source": "Submitting a website form creates an order request. It does not confirm a booking or require payment. Before production or specifically approved non-recoverable procurement begins, you may cancel for a full refund of any amount paid.",
+          "hi": "वेबसाइट फ़ॉर्म जमा करने से ऑर्डर का अनुरोध बनता है। इससे बुकिंग की पुष्टि नहीं होती और भुगतान आवश्यक नहीं होता। निर्माण या विशेष रूप से स्वीकृत, जिसकी लागत वापस नहीं मिल सकती ऐसी खरीद शुरू होने से पहले, आप रद्द करके दी गई पूरी राशि वापस पा सकते हैं।",
+          "gu": "વેબસાઇટનું ફોર્મ મોકલવાથી ઓર્ડરની વિનંતી બને છે. તે બુકિંગની પુષ્ટિ કરતું નથી કે ચુકવણી જરૂરી બનાવતું નથી. ઉત્પાદન અથવા ખાસ મંજૂર કરેલી, જેનો ખર્ચ પાછો મેળવી ન શકાય તેવી ખરીદી શરૂ થાય તે પહેલાં રદ કરીને ચૂકવેલી સંપૂર્ણ રકમ પરત મેળવી શકો છો."
+        },
+        {
+          "path": "sections.1.heading",
+          "source": "Your approval comes first",
+          "hi": "पहले आपकी स्वीकृति",
+          "gu": "પહેલાં તમારી મંજૂરી"
+        },
+        {
+          "path": "sections.1.paragraphs.0",
+          "source": "We obtain your recorded approval of the final design, dimensions, spelling, colours, quotation and production commencement. Please review these details carefully before work begins.",
+          "hi": "हम अंतिम डिज़ाइन, माप, वर्तनी, रंग, कीमत और निर्माण शुरू करने की आपकी स्वीकृति दर्ज करते हैं। काम शुरू होने से पहले इन्हें ध्यान से जाँचें।",
+          "gu": "અમે અંતિમ ડિઝાઇન, માપ, જોડણી, રંગો, ભાવપત્રક અને ઉત્પાદન શરૂ કરવાની તમારી મંજૂરી નોંધીએ છીએ. કામ શરૂ થાય તે પહેલાં આ વિગતો કાળજીથી તપાસો."
+        },
+        {
+          "path": "sections.2.heading",
+          "source": "After approved production starts",
+          "hi": "स्वीकृत निर्माण शुरू होने के बाद",
+          "gu": "મંજૂર ઉત્પાદન શરૂ થયા પછી"
+        },
+        {
+          "path": "sections.2.paragraphs.0",
+          "source": "Change-of-mind cancellation and design changes are not guaranteed; we assess each request individually. We do not apply automatic blanket deposit forfeiture. Any proposed deduction must be lawful, supported by actual non-recoverable costs and covered by terms disclosed before acceptance. We do not impose one-sided cancellation charges.",
+          "hi": "मन बदलने पर रद्द करना या डिज़ाइन बदलना सुनिश्चित नहीं है; हम हर अनुरोध का अलग मूल्यांकन करते हैं। जमा राशि अपने आप पूरी तरह ज़ब्त नहीं होती। प्रस्तावित कटौती कानून के अनुसार, वास्तव में वापस न मिल सकने वाली लागत पर आधारित और स्वीकृति से पहले बताई शर्तों के अंतर्गत होनी चाहिए। हम एकतरफ़ा रद्द करने के शुल्क नहीं लगाते।",
+          "gu": "મન બદલાય ત્યારે રદ કરવું કે ડિઝાઇન બદલવી નિશ્ચિત નથી; દરેક વિનંતીનું અલગ મૂલ્યાંકન કરીએ છીએ. જમા રકમ આપમેળે સંપૂર્ણ જપ્ત કરતા નથી. કોઈ સૂચિત કપાત કાયદેસર હોવી, ખરેખર પાછો ન મેળવી શકાય તેવા ખર્ચ પર આધારિત હોવી અને સ્વીકૃતિ પહેલાં જણાવેલી શરતોમાં આવરી લેવાયેલી હોવી જોઈએ. અમે એકતરફી રદ કરવાના ખર્ચ લાદતા નથી."
+        },
+        {
+          "path": "sections.3.heading",
+          "source": "Custom pieces and remedies",
+          "hi": "कस्टम कृतियाँ और समाधान",
+          "gu": "કસ્ટમ કૃતિઓ અને ઉપાયો"
+        },
+        {
+          "path": "sections.3.paragraphs.0",
+          "source": "Correctly supplied custom products are not eligible for change-of-mind returns. Damaged, defective, incorrect or materially non-conforming products remain eligible for appropriate remedies, including a refund where applicable. Nothing in these terms restricts your statutory consumer rights.",
+          "hi": "सही तरह से दिए गए कस्टम उत्पाद केवल मन बदलने के कारण वापस नहीं लिए जाते। क्षतिग्रस्त, दोषपूर्ण, गलत या सहमत विवरण से महत्वपूर्ण रूप से अलग उत्पाद उचित समाधान के पात्र रहते हैं, जहाँ लागू हो वहाँ धनवापसी सहित। ये शर्तें आपके कानूनी उपभोक्ता अधिकार सीमित नहीं करतीं।",
+          "gu": "યોગ્ય રીતે પૂરા પાડેલા કસ્ટમ ઉત્પાદનો માત્ર મન બદલાવાને કારણે પરત લઈ શકાતાં નથી. નુકસાન પામેલા, ખામીવાળા, ખોટા અથવા સંમત વિગતો કરતાં નોંધપાત્ર રીતે અલગ ઉત્પાદનો યોગ્ય ઉપાય માટે પાત્ર રહે છે, જેમાં લાગુ પડે ત્યારે રિફંડ પણ સામેલ છે. આ શરતો તમારા કાનૂની ગ્રાહક અધિકારો મર્યાદિત કરતી નથી."
+        },
+        {
+          "path": "sections.4.heading",
+          "source": "Report a concern",
+          "hi": "समस्या बताएँ",
+          "gu": "સમસ્યા જણાવો"
+        },
+        {
+          "path": "sections.4.paragraphs.0",
+          "source": "Please report visible damage promptly, preferably within seven days, with photographs where possible. This preferred reporting period is not an automatic rejection deadline. Include your inquiry reference and a description of the concern; discuss the piece with us before attempting repairs.",
+          "hi": "दिखने वाली क्षति की सूचना जल्द दें, बेहतर होगा कि सात दिनों के भीतर और संभव हो तो तस्वीरों के साथ। यह पसंदीदा अवधि अपने आप दावा अस्वीकार करने की अंतिम सीमा नहीं है। अनुरोध का संदर्भ और समस्या का विवरण दें; मरम्मत की कोशिश से पहले हमसे चर्चा करें।",
+          "gu": "દેખાતું નુકસાન વહેલી તકે જણાવો, શક્ય હોય તો સાત દિવસમાં અને ફોટા સાથે. આ પસંદગીની જાણ કરવાની અવધિ દાવો આપમેળે નકારવાની અંતિમ મર્યાદા નથી. વિનંતીનો સંદર્ભ અને સમસ્યાનું વર્ણન આપો; સમારકામ કરવાનો પ્રયાસ કરતાં પહેલાં અમારી સાથે ચર્ચા કરો."
+        },
+        {
+          "path": "sections.5.heading",
+          "source": "Refunds",
+          "hi": "धनवापसी",
+          "gu": "રિફંડ"
+        },
+        {
+          "path": "sections.5.paragraphs.0",
+          "source": "If we cannot fulfil the agreed order, we provide a full refund. We initiate approved refunds within seven business days. Your bank or payment provider may require additional processing time.",
+          "hi": "यदि हम सहमत ऑर्डर पूरा नहीं कर सकें, तो पूरी राशि लौटाते हैं। स्वीकृत धनवापसी की प्रक्रिया सात कार्य दिवसों के भीतर शुरू करते हैं। आपके बैंक या भुगतान प्रदाता को अतिरिक्त समय लग सकता है।",
+          "gu": "સંમત ઓર્ડર પૂરો ન કરી શકીએ તો સંપૂર્ણ રિફંડ આપીએ છીએ. મંજૂર રિફંડની પ્રક્રિયા સાત કામકાજના દિવસોમાં શરૂ કરીએ છીએ. તમારી બેંક કે ચુકવણી પ્રદાતાને વધારાનો સમય લાગી શકે છે."
+        }
+      ],
+      "images": {
+        "cover": {},
+        "sections": []
+      },
+      "originalSourceHash": "9d9ef26721623cf88f1326054e5b95f080117677605c49560a4c2344bdcf7dde",
+      "sourceAmendments": {},
+      "assistantReview": "English meaning checked; both exact saved-language previews inspected",
+      "nativeReaderReview": "NOT PERFORMED",
+      "publication": "PUBLISHED AND ANONYMOUSLY VERIFIED — revision 3"
+    },
+    {
+      "id": "page:privacy",
+      "route": "/privacy",
+      "kind": "page",
+      "version": 1,
+      "publishedVersion": 3,
+      "aligned": true,
+      "sourceHash": "e30e7daac73eeb7423bf8910e88b5d2e1e2aff14126493f490132b828e81a598",
+      "fields": [
+        {
+          "path": "title",
+          "source": "Your brief stays personal.",
+          "hi": "आपकी जानकारी निजी रहती है.",
+          "gu": "તમારી વિગતો ખાનગી રહે છે."
+        },
+        {
+          "path": "eyebrow",
+          "source": "Privacy & retention",
+          "hi": "गोपनीयता और डेटा रखने की अवधि",
+          "gu": "ગોપનીયતા અને માહિતી રાખવાની અવધિ"
+        },
+        {
+          "path": "description",
+          "source": "We collect your name, phone number, optional email, customization choices, notes and reference images to respond to your order request and manage the agreed work. Do not include information that the design discussion does not need.",
+          "hi": "आपके ऑर्डर अनुरोध का उत्तर देने और सहमत काम सँभालने के लिए हम नाम, फ़ोन नंबर, वैकल्पिक ईमेल, कस्टमाइज़ेशन की पसंद, नोट्स और संदर्भ चित्र लेते हैं। ऐसी जानकारी न दें जिसकी डिज़ाइन चर्चा में ज़रूरत नहीं है।",
+          "gu": "તમારી ઓર્ડરની વિનંતીનો જવાબ આપવા અને સંમત કામ સંભાળવા અમે નામ, ફોન નંબર, વૈકલ્પિક ઈમેલ, કસ્ટમાઇઝેશનની પસંદગીઓ, નોંધો અને સંદર્ભ ચિત્રો લઈએ છીએ. ડિઝાઇનની ચર્ચામાં જરૂરી ન હોય તેવી માહિતી આપશો નહીં."
+        },
+        {
+          "path": "sections.0.heading",
+          "source": "What we collect and why",
+          "hi": "हम क्या लेते हैं और क्यों",
+          "gu": "શું લઈએ છીએ અને શા માટે"
+        },
+        {
+          "path": "sections.0.paragraphs.0",
+          "source": "We collect your name, phone number, optional email, customization choices, notes and reference images to respond to your order request and manage the agreed work. Do not include information that the design discussion does not need.",
+          "hi": "आपके ऑर्डर अनुरोध का उत्तर देने और सहमत काम सँभालने के लिए हम नाम, फ़ोन नंबर, वैकल्पिक ईमेल, कस्टमाइज़ेशन की पसंद, नोट्स और संदर्भ चित्र लेते हैं। ऐसी जानकारी न दें जिसकी डिज़ाइन चर्चा में ज़रूरत नहीं है।",
+          "gu": "તમારી ઓર્ડરની વિનંતીનો જવાબ આપવા અને સંમત કામ સંભાળવા અમે નામ, ફોન નંબર, વૈકલ્પિક ઈમેલ, કસ્ટમાઇઝેશનની પસંદગીઓ, નોંધો અને સંદર્ભ ચિત્રો લઈએ છીએ. ડિઝાઇનની ચર્ચામાં જરૂરી ન હોય તેવી માહિતી આપશો નહીં."
+        },
+        {
+          "path": "sections.1.heading",
+          "source": "Private records and service providers",
+          "hi": "निजी रिकॉर्ड और सेवा प्रदाता",
+          "gu": "ખાનગી રેકોર્ડ અને સેવા પ્રદાતાઓ"
+        },
+        {
+          "path": "sections.1.paragraphs.0",
+          "source": "Inquiries are stored in our database and reference images in private file storage. Signed-in administrators and staff assigned to an inquiry can access its private details. They are not published in the catalogue. Our service infrastructure uses Vercel and Neon.",
+          "hi": "अनुरोध हमारे डेटाबेस में और संदर्भ चित्र निजी फ़ाइल स्टोरेज में रखे जाते हैं। साइन इन किए व्यवस्थापक और अनुरोध के लिए नियुक्त कर्मचारी उसके निजी विवरण देख सकते हैं। ये कैटलॉग में प्रकाशित नहीं होते। हमारी सेवा व्यवस्था Vercel और Neon का उपयोग करती है।",
+          "gu": "વિનંતીઓ અમારા ડેટાબેઝમાં અને સંદર્ભ ચિત્રો ખાનગી ફાઇલ સ્ટોરેજમાં રાખીએ છીએ. સાઇન ઇન કરેલા સંચાલકો અને વિનંતી માટે નિમાયેલા કર્મચારીઓ તેની ખાનગી વિગતો જોઈ શકે છે. તે કૅટલૉગમાં પ્રકાશિત થતી નથી. અમારી સેવા વ્યવસ્થા Vercel અને Neon વાપરે છે."
+        },
+        {
+          "path": "sections.2.heading",
+          "source": "You choose the WhatsApp handoff",
+          "hi": "WhatsApp पर जाना आपका चुनाव है",
+          "gu": "WhatsApp પર જવું તમારી પસંદગી છે"
+        },
+        {
+          "path": "sections.2.paragraphs.0",
+          "source": "After saving the inquiry, we prepare a message from its saved details. WhatsApp receives the prepared text when you choose Open WhatsApp. You must press Send yourself. You may instead copy the summary. Private image addresses are never included. WhatsApp applies its own privacy terms.",
+          "hi": "अनुरोध सहेजने के बाद हम उसके सहेजे विवरणों से संदेश तैयार करते हैं। Open WhatsApp चुनने पर तैयार पाठ WhatsApp को मिलता है। Send आपको स्वयं दबाना होता है। आप सारांश कॉपी भी कर सकते हैं। निजी चित्रों के पते कभी शामिल नहीं किए जाते। WhatsApp की अपनी गोपनीयता शर्तें लागू होती हैं।",
+          "gu": "વિનંતી સાચવ્યા પછી તેની સાચવેલી વિગતો પરથી સંદેશ તૈયાર કરીએ છીએ. Open WhatsApp પસંદ કરો ત્યારે તૈયાર લખાણ WhatsAppને મળે છે. Send તમારે જાતે દબાવવું પડે છે. તેના બદલે સારાંશ કૉપી પણ કરી શકો છો. ખાનગી ચિત્રોનાં સરનામાં ક્યારેય ઉમેરાતાં નથી. WhatsAppની પોતાની ગોપનીયતા શરતો લાગુ પડે છે."
+        },
+        {
+          "path": "sections.3.heading",
+          "source": "Inquiries and orders",
+          "hi": "अनुरोध और ऑर्डर",
+          "gu": "વિનંતીઓ અને ઓર્ડર"
+        },
+        {
+          "path": "sections.3.paragraphs.0",
+          "source": "For inquiries that do not become orders, we delete or anonymize personal details and reference images 90 days after the last meaningful customer interaction, unless you requested ongoing follow-up. For fulfilled or cancelled orders, necessary customer-service and customization records are retained for 12 months after closure.",
+          "hi": "जो अनुरोध ऑर्डर नहीं बनते, उनके निजी विवरण और संदर्भ चित्र अंतिम सार्थक ग्राहक बातचीत के 90 दिन बाद मिटा देते हैं या पहचानरहित कर देते हैं, जब तक आपने आगे संपर्क रखने को न कहा हो। पूरे या रद्द ऑर्डर के आवश्यक ग्राहक सेवा और कस्टमाइज़ेशन रिकॉर्ड बंद होने के बाद 12 महीने रखे जाते हैं।",
+          "gu": "ઓર્ડરમાં ન ફેરવાયેલી વિનંતીઓની વ્યક્તિગત વિગતો અને સંદર્ભ ચિત્રો છેલ્લી અર્થપૂર્ણ ગ્રાહક વાતચીતના 90 દિવસ પછી કાઢી નાખીએ છીએ અથવા ઓળખરહિત કરીએ છીએ, સિવાય કે તમે આગળ સંપર્ક રાખવા કહ્યું હોય. પૂરા કે રદ થયેલા ઓર્ડરના જરૂરી ગ્રાહક સેવા અને કસ્ટમાઇઝેશન રેકોર્ડ બંધ થયા પછી 12 મહિના રાખીએ છીએ."
+        },
+        {
+          "path": "sections.4.heading",
+          "source": "Reference images and temporary files",
+          "hi": "संदर्भ चित्र और अस्थायी फ़ाइलें",
+          "gu": "સંદર્ભ ચિત્રો અને કામચલાઉ ફાઇલો"
+        },
+        {
+          "path": "sections.4.paragraphs.0",
+          "source": "Customer reference images are deleted 90 days after order closure unless needed for an active complaint, agreed warranty work or another documented retention requirement. Temporary, unsubmitted uploads are removed after 24 hours through cleanup that excludes active uploads and references linked to saved orders. Generated exports expire after seven days; downloaded managed copies are included in our deletion procedure.",
+          "hi": "ग्राहक संदर्भ चित्र ऑर्डर बंद होने के 90 दिन बाद मिटाए जाते हैं, जब तक सक्रिय शिकायत, सहमत वारंटी कार्य या किसी अन्य दर्ज आवश्यकता के लिए उन्हें रखना आवश्यक न हो। बिना जमा किए अस्थायी अपलोड 24 घंटे बाद सफ़ाई प्रक्रिया में हटते हैं; सक्रिय अपलोड और सहेजे ऑर्डर से जुड़े संदर्भ इसमें शामिल नहीं होते। तैयार निर्यात सात दिन बाद समाप्त होते हैं; डाउनलोड की गई प्रबंधित प्रतियाँ हमारी मिटाने की प्रक्रिया में शामिल हैं।",
+          "gu": "ગ્રાહકનાં સંદર્ભ ચિત્રો ઓર્ડર બંધ થયાના 90 દિવસ પછી કાઢી નાખીએ છીએ, સિવાય કે ચાલુ ફરિયાદ, સંમત વોરંટીનું કામ અથવા અન્ય નોંધાયેલ જરૂરિયાત માટે રાખવાં જરૂરી હોય. સબમિટ ન થયેલા કામચલાઉ અપલોડ 24 કલાક પછી સફાઈ પ્રક્રિયામાં દૂર થાય છે; સક્રિય અપલોડ અને સાચવેલા ઓર્ડર સાથે જોડાયેલા સંદર્ભોને તેમાંથી બાકાત રાખીએ છીએ. તૈયાર કરેલા નિકાસ સાત દિવસ પછી સમાપ્ત થાય છે; ડાઉનલોડ કરેલી સંચાલિત નકલો અમારી કાઢી નાખવાની પ્રક્રિયામાં સામેલ છે."
+        },
+        {
+          "path": "sections.5.heading",
+          "source": "Required records and retained copies",
+          "hi": "आवश्यक रिकॉर्ड और रखी गई प्रतियाँ",
+          "gu": "જરૂરી રેકોર્ડ અને રાખેલી નકલો"
+        },
+        {
+          "path": "sections.5.paragraphs.0",
+          "source": "Invoices, accounting records and legally required evidence are retained separately for the applicable mandatory period. Necessary retention exceptions and legal holds are documented with restricted access. Applicable data is deleted from active systems and managed copies. Previously created recovery archives remain restricted under their recorded retention requirements or documented holds; completed deletions must be reapplied if retained data is restored.",
+          "hi": "बिल, लेखांकन रिकॉर्ड और कानूनन आवश्यक प्रमाण संबंधित अनिवार्य अवधि के लिए अलग रखे जाते हैं। आवश्यक अपवाद और कानूनी रोक दर्ज की जाती हैं तथा पहुँच सीमित रहती है। संबंधित डेटा सक्रिय प्रणालियों और प्रबंधित प्रतियों से मिटाया जाता है। पहले बनाए गए पुनर्प्राप्ति संग्रह अपनी दर्ज संरक्षण अवधि या दर्ज रोक के अधीन सीमित रहते हैं; रखा हुआ डेटा बहाल होने पर पहले की गई मिटाने की कार्रवाइयाँ दोबारा लागू करनी होंगी।",
+          "gu": "બિલ, હિસાબી રેકોર્ડ અને કાયદેસર જરૂરી પુરાવા લાગુ ફરજિયાત અવધિ માટે અલગ રાખીએ છીએ. જરૂરી અપવાદો અને કાનૂની રોક નોંધાય છે અને પહોંચ મર્યાદિત રહે છે. સંબંધિત માહિતી સક્રિય સિસ્ટમો અને સંચાલિત નકલોમાંથી કાઢી નાખીએ છીએ. અગાઉ બનાવેલા પુનઃપ્રાપ્તિ સંગ્રહો તેમની નોંધાયેલી જાળવણીની જરૂરિયાતો અથવા નોંધાયેલી રોક હેઠળ મર્યાદિત રહે છે; રાખેલી માહિતી પુનઃસ્થાપિત થાય તો અગાઉ કરેલી કાઢી નાખવાની કાર્યવાહી ફરી લાગુ કરવી પડે છે."
+        },
+        {
+          "path": "sections.6.heading",
+          "source": "Access, correction and deletion",
+          "hi": "पहुँच, सुधार और मिटाना",
+          "gu": "પહોંચ, સુધારો અને કાઢી નાખવું"
+        },
+        {
+          "path": "sections.6.paragraphs.0",
+          "source": "Email rivyalivingart2.0@gmail.com with your inquiry reference to request access, correction or deletion. Bhavya Gondaliya, business owner and Studio administrator, is responsible. We acknowledge requests within two business days and target completion within 30 calendar days after proportionate identity verification. We explain any lawful retention exception. Do not send passwords or unnecessary identity documents.",
+          "hi": "पहुँच, सुधार या मिटाने का अनुरोध अपने अनुरोध संदर्भ के साथ rivyalivingart2.0@gmail.com पर भेजें। व्यवसाय के मालिक और Studio व्यवस्थापक Bhavya Gondaliya इसके लिए ज़िम्मेदार हैं। हम दो कार्य दिवसों में प्राप्ति की पुष्टि करते हैं और उचित पहचान सत्यापन के बाद 30 कैलेंडर दिनों में पूरा करने का लक्ष्य रखते हैं। कानूनन डेटा रखना ज़रूरी हो तो कारण बताते हैं। पासवर्ड या अनावश्यक पहचान दस्तावेज़ न भेजें।",
+          "gu": "પહોંચ, સુધારો કે કાઢી નાખવાની વિનંતી માટે તમારા વિનંતી સંદર્ભ સાથે rivyalivingart2.0@gmail.com પર ઈમેલ કરો. વ્યવસાયના માલિક અને Studio સંચાલક Bhavya Gondaliya જવાબદાર છે. અમે બે કામકાજના દિવસમાં પ્રાપ્તીની પુષ્ટિ કરીએ છીએ અને પ્રમાણસર ઓળખ ચકાસણી પછી 30 કેલેન્ડર દિવસમાં પૂરું કરવાનો લક્ષ્ય રાખીએ છીએ. કાયદેસર માહિતી રાખવાના કોઈ અપવાદ હોય તો સમજાવીએ છીએ. પાસવર્ડ કે બિનજરૂરી ઓળખ દસ્તાવેજો મોકલશો નહીં."
+        },
+        {
+          "path": "sections.7.heading",
+          "source": "Cookies and browser control",
+          "hi": "कुकी और ब्राउज़र नियंत्रण",
+          "gu": "કુકી અને બ્રાઉઝરનું નિયંત્રણ"
+        },
+        {
+          "path": "sections.7.paragraphs.0",
+          "source": "An essential cookie links your form, uploads and private receipt for up to 24 hours. Clearing it or changing browsers may remove receipt access; it does not delete the saved inquiry. No customer account is created. Contact details and reference images are not stored in browser local storage. Unsaved form details remain in the current tab and may be lost when it closes.",
+          "hi": "एक आवश्यक कुकी आपके फ़ॉर्म, अपलोड और निजी रसीद को 24 घंटे तक जोड़ती है। उसे मिटाने या ब्राउज़र बदलने पर रसीद की पहुँच खो सकती है; सहेजा अनुरोध नहीं मिटता। ग्राहक खाता नहीं बनता। संपर्क विवरण और संदर्भ चित्र ब्राउज़र के लोकल स्टोरेज में नहीं रखे जाते। बिना सहेजे फ़ॉर्म विवरण वर्तमान टैब में रहते हैं और टैब बंद होने पर खो सकते हैं।",
+          "gu": "એક જરૂરી કુકી તમારા ફોર્મ, અપલોડ અને ખાનગી રસીદને 24 કલાક સુધી જોડે છે. તેને કાઢવાથી કે બ્રાઉઝર બદલવાથી રસીદની પહોંચ જતી રહી શકે છે; સાચવેલી વિનંતી કાઢી નખાતી નથી. ગ્રાહક ખાતું બનતું નથી. સંપર્ક વિગતો અને સંદર્ભ ચિત્રો બ્રાઉઝરના લોકલ સ્ટોરેજમાં રાખતાં નથી. સાચવ્યા વગરની ફોર્મ વિગતો હાલના ટૅબમાં રહે છે અને તે બંધ થતાં ખોવાઈ શકે છે."
+        },
+        {
+          "path": "sections.8.heading",
+          "source": "Service protection",
+          "hi": "सेवा की सुरक्षा",
+          "gu": "સેવાનું રક્ષણ"
+        },
+        {
+          "path": "sections.8.paragraphs.0",
+          "source": "A protected identifier derived from the network address limits repeated requests. Hosting and storage providers process information required to operate their services. Opening a map, email application or WhatsApp takes you to a separate service.",
+          "hi": "नेटवर्क पते से बना एक सुरक्षित पहचान संकेत बार-बार किए गए अनुरोधों को सीमित करता है। होस्टिंग और स्टोरेज प्रदाता अपनी सेवाएँ चलाने के लिए आवश्यक जानकारी संसाधित करते हैं। नक्शा, ईमेल ऐप या WhatsApp खोलने पर आप अलग सेवा पर जाते हैं।",
+          "gu": "નેટવર્ક સરનામામાંથી બનેલો સુરક્ષિત ઓળખ સંકેત વારંવાર આવતી વિનંતીઓ મર્યાદિત કરે છે. હોસ્ટિંગ અને સ્ટોરેજ પ્રદાતાઓ તેમની સેવા ચલાવવા જરૂરી માહિતી પ્રક્રિયા કરે છે. નકશો, ઈમેલ ઍપ કે WhatsApp ખોલો ત્યારે તમે અલગ સેવા પર જાઓ છો."
+        }
+      ],
+      "images": {
+        "cover": {},
+        "sections": []
+      },
+      "originalSourceHash": "e3eca085d978de1a3b0dc6c4cafcb7dcb489c4f359294015540a69152ea6d359",
+      "sourceAmendments": {
+        "sections.1.paragraphs.0": "Inquiries are stored in our database and reference images in private file storage. Signed-in administrators and staff assigned to an inquiry can access its private details. They are not published in the catalogue. Our service infrastructure uses Vercel and Neon.",
+        "sections.5.heading": "Required records and retained copies",
+        "sections.5.paragraphs.0": "Invoices, accounting records and legally required evidence are retained separately for the applicable mandatory period. Necessary retention exceptions and legal holds are documented with restricted access. Applicable data is deleted from active systems and managed copies. Previously created recovery archives remain restricted under their recorded retention requirements or documented holds; completed deletions must be reapplied if retained data is restored."
+      },
+      "assistantReview": "English meaning checked; both exact saved-language previews inspected",
+      "nativeReaderReview": "NOT PERFORMED",
+      "publication": "PUBLISHED AND ANONYMOUSLY VERIFIED — revision 3"
+    }
+  ]
+}

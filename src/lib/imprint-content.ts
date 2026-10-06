@@ -5,7 +5,7 @@ export const imprintContactId='section-2';
 export function bindImprintContacts<T extends ContentDocument>(document:T,business:BusinessSettings):T{
  if(document.id!=='page:imprint')return document;
  const phone=business.phone.replace(/^(\+91)(\d{10})$/,'$1 $2');
- const contact={id:imprintContactId,heading:'Contact Information',paragraphs:[`Phone: ${phone}. Email: ${business.email}`]};
+ const contact={id:imprintContactId,heading:document.sections.find(s=>s.id===imprintContactId)?.heading||'Contact Information',paragraphs:[`Phone: ${phone}. Email: ${business.email}`]};
  const sections=document.sections.some(s=>s.id===imprintContactId)?document.sections.map(s=>s.id===imprintContactId?contact:s):[...document.sections,contact];
  return {...document,sections};
 }
