@@ -1,4 +1,5 @@
 'use client';
+import {useJourneyText} from './journey-language';
 import {useEffect,useId,useRef,type ReactNode} from 'react';
 import s from './shop.module.css';
 
@@ -20,6 +21,7 @@ function lockScroll() {
 
 /** Native modal inertness with explicit keyboard wrap, Escape and opener recovery. */
 export function Dialog({open,title,onClose,children,variant='panel',closeLabel}:{open:boolean;title:string;onClose:()=>void;children:ReactNode;variant?:'panel'|'navigation';closeLabel?:string}) {
+  const tr=useJourneyText();
   const ref=useRef<HTMLDialogElement>(null);
   const titleId=useId();
   useEffect(()=>{
@@ -50,6 +52,6 @@ export function Dialog({open,title,onClose,children,variant='panel',closeLabel}:
     const rect=e.currentTarget.getBoundingClientRect();
     if(e.clientX<rect.left || e.clientX>rect.right || e.clientY<rect.top || e.clientY>rect.bottom) onClose();
   }}>
-    <div className={s.dialogHead}><h2 id={titleId}>{title}</h2><button className={s.closeButton} type="button" onClick={onClose} aria-label={closeLabel||(variant==='navigation'?'Close navigation':'Close dialog')}>{closeLabel||'Close'} ×</button></div>{open&&children}
+    <div className={s.dialogHead}><h2 id={titleId}>{title}</h2><button className={s.closeButton} type="button" onClick={onClose} aria-label={closeLabel||tr(variant==='navigation'?'Close navigation':'Close dialog')}>{closeLabel||tr('Close')} ×</button></div>{open&&children}
   </dialog>;
 }

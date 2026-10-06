@@ -1,7 +1,9 @@
 import {journeyExtra} from './journey-text-extra';
+import {journeyEditorial} from './journey-text-editorial';
 /** Presentation translations only. Never use translated values as IDs, answers or saved messages. */
 export const journeyCopy:Record<string,readonly [string,string]>={
  ...journeyExtra,
+ ...journeyEditorial,
  'Language':['भाषा','ભાષા'],
  'Language could not be changed. Please retry.':['भाषा नहीं बदली जा सकी। फिर से प्रयास करें।','ભાષા બદલી શકાઈ નથી. ફરી પ્રયાસ કરો.'],
  'Language guidance':['भाषा संबंधी जानकारी','ભાષા વિશે માહિતી'],

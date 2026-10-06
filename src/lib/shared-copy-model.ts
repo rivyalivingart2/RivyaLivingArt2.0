@@ -1,3 +1,4 @@
+import {journeyText} from './journey-text';
 import {applyReviewedTranslation} from './translation-review';
 import {uiText,type UiKey,type Locale} from './site-settings-model';
 import type {ContentDocument} from './content-model';
@@ -16,6 +17,6 @@ export const copyFieldId=(key:string)=>key.replace(/[A-Z]/g,v=>'-'+v.toLowerCase
 export type SharedCopy=Record<string,string>;
 export function sharedCopyValues(document?:ContentDocument,locale:Locale='en'):SharedCopy{
  if(document&&['hi','gu'].includes(locale)){const translated=applyReviewedTranslation(document,locale);if(translated!==document)return sharedCopyValues(translated,'en');document={...document,translations:undefined};}
- return Object.fromEntries(sharedCopyFields.map(f=>{const id=copyFieldId(f.id),s=document?.sections.find(s=>s.id===id);return [f.id,document?.translations?.[locale]?.sections?.[id]?.paragraphs?.[0]?.trim()||(locale==='en'?s?.paragraphs[0]:undefined)||(uiKeys.includes(f.id as UiKey)?uiText(locale,f.id as UiKey):f.value)];}));
+ return Object.fromEntries(sharedCopyFields.map(f=>{const id=copyFieldId(f.id),s=document?.sections.find(s=>s.id===id);return [f.id,document?.translations?.[locale]?.sections?.[id]?.paragraphs?.[0]?.trim()||(locale==='en'?s?.paragraphs[0]:undefined)||(uiKeys.includes(f.id as UiKey)?uiText(locale,f.id as UiKey):journeyText(locale,f.value))];}));
 }
 export function validSharedCopy(d:ContentDocument){return d.route===sharedCopyCandidate.route&&d.sections.length===sharedCopyFields.length&&sharedCopyFields.every(f=>{const s=d.sections.find(s=>s.id===copyFieldId(f.id));return s&&s.paragraphs.length===1&&s.paragraphs[0].length<=300&&!s.body&&!s.checklist&&!s.image&&!s.action&&!s.policyHref&&s.enabled!==false;});}

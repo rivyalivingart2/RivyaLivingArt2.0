@@ -13,5 +13,5 @@ export default async function PreviewFrame({searchParams}:{searchParams:Promise<
  const document=await savedContentPreview(params.record,version);
  if(!document)notFound();
  const locale=typeof params.locale==='string'&&isLocale(params.locale)&&['en','hi','gu'].includes(params.locale)?params.locale:'en';
- return <ShopShell previewLocale={locale} copyDocument={document.id===sharedCopyId?document:undefined} copyVersion={version}><div lang={locale}><SavedContentDocument document={localizeContent(document,locale)} version={version}/></div></ShopShell>;
+ return <ShopShell previewLocale={locale} copyDocument={document.id===sharedCopyId?document:undefined} copyVersion={version}><div lang={locale}><SavedContentDocument document={localizeContent(document,locale)} version={version} locale={locale}/></div></ShopShell>;
 }

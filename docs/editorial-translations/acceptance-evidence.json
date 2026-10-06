@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-06T04:15:16.527Z",
+  "sourceRelease": "LOCAL ONLY — based on main b989e5870f390b2f0e8707f15c44014dabcb059e",
+  "production": {
+    "pages": 19,
+    "articles": 36,
+    "completeCurrentHiGuPages": 19,
+    "articleTranslations": "NOT PUBLISHED",
+    "wallCoverPublicRevision": 3,
+    "protected": {
+      "products": 120,
+      "originalMedia": 131,
+      "totalMedia": 136,
+      "catalogueMatches": true,
+      "originalMediaMatches": true,
+      "businessMatches": true
+    },
+    "readAt": "2026-10-06T04:12:54.507Z"
+  },
+  "engineering": {
+    "fullCheck": {
+      "unit": 294,
+      "preflight": 12,
+      "builtServer": 403,
+      "passed": true
+    },
+    "finalAdditionalLabelEdits": {
+      "typecheck": "PASS",
+      "lint": "PASS — zero errors; existing warnings remain",
+      "build": "PASS"
+    },
+    "browser": {
+      "environment": "isolated local PostgreSQL; production build",
+      "passed": [
+        "Hindi FAQ search, zero results and reset",
+        "Gujarati FAQ search, zero results and reset",
+        "Gujarati navigation and footer labels",
+        "390px Gujarati FAQ DOM reflow: no horizontal body overflow",
+        "Gujarati gallery next-image counter",
+        "Enlarged gallery arrow-key navigation from gallery control",
+        "Escape closes gallery and returns focus to opener",
+        "Saved-piece add/remove translated feedback; original local list restored",
+        "Gujarati search dialog labels and Escape",
+        "Final-build visualization caption and related-card price labels",
+        "Final local product page console: no errors"
+      ],
+      "humanScreenReader": false,
+      "physicalPhone": false
+    }
+  },
+  "external": {
+    "nativeReader": "NOT PERFORMED",
+    "ownerCropSignoff": "NOT PERFORMED",
+    "physicalPhone": "NOT PERFORMED — owner confirmed unavailable",
+    "humanScreenReader": "NOT PERFORMED — owner confirmed unavailable",
+    "realUserPerformance": "NO DATA in retained PageSpeed report reopened this turn",
+    "legitimateInquiry": "NOT VERIFIED — no synthetic record counted"
+  },
+  "release": "No source push, PR, merge or deployment in this pass",
+  "articleDrafts": {
+    "articles": 36,
+    "locales": [
+      "hi",
+      "gu"
+    ],
+    "imports": 72,
+    "translatedFieldValues": 1002,
+    "meaningReview": "REQUIRED",
+    "nativeReview": "NOT PERFORMED",
+    "published": false,
+    "packetNavigation": "PASS — document selection and previous/next; native review unchecked"
+  }
+}
