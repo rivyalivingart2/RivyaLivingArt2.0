@@ -1,4 +1,40 @@
-# Current checkpoint — remaining language and editorial acceptance
+# Current owner instruction — release latest retained work through a detailed PR
+
+8 October 2026. The owner requested pushing all latest work to the Git repository. Following the standing release instruction, release the retained `codex/article-meaning-review` candidate through a detailed PR into `main`, verify the exact PR head/checks, and verify the existing Vercel Git deployment. Read `docs/decisions/2026-10-08-release-retained-work.md`. Do not push directly to main or bypass protections.
+
+This candidate includes the DB001/DB010 assistant-correction files and review tooling, the Studio content-list status repair, optional design resources, the isolated effects toolkit and the previously verified Mobbin connection documentation. It does not authorize publishing unreviewed Studio article drafts. Preserve all product/form/gallery, contact/business/social and customer data. Human/native-reader/device/performance acceptance remains open, and backups remain removed.
+
+The owner cancelled the subsequent design audit and requested its removal. The untracked `docs/redesign/DESIGN-AUDIT-2026-10-08.md` and workspace `outputs/design-audit-2026-10-08` are excluded from this release. Their local deletion was blocked by the session's command-approval policy; do not stage or restore them as part of a later all-files release. No design-audit application changes were made. Earlier local-only wording below describes historical checkpoints; consult the release PR for the retained candidate's actual state.
+
+---
+
+# Previous checkpoint — reference workflow and isolated effects toolkit
+
+6 October 2026. The owner requested useful compatible installations from additional design articles. Read `docs/redesign/DESIGN-TOOLS-EXTENSION.md`. The user-level `design-reference-workflow` skill is installed and validated; Aceternity's public registry is configured. The independent `experiments/design-effects-toolkit` package contains the optional ShaderGradient/Fiber/Three/Drei/Paper/Motion stack and vendored Liquid Glass source. Nine imports, vendor syntax and the dependency tree pass; a Node-only upstream Three.js deprecation warning remains. These are installed resources, not a rendered/accepted effect. Main application dependencies and page source remain unchanged.
+
+Mobbin's ChatGPT plugin page was inspected after the owner reported connecting it on 6 October 2026. The rendered account status explicitly shows Connected, so the account connection is verified. Mobbin tools are still absent from this Codex session and plugin search returns no matching entry; an actual design search remains unverified. Do not confuse the verified account connection with a successful tool search. No CLI MCP duplicate, paid plan, live content change, push or deployment occurred. Keep further work local and preserve the earlier checkpoints below.
+
+---
+
+# Previous checkpoint — optional design resources installed locally
+
+6 October 2026. The owner requested useful resources from a pasted design-resource article, then Codex-compatible design skills. Read `docs/redesign/DESIGN-RESOURCE-SETUP.md`. Poppins 400/600 with an opt-in local loader, shadcn configuration/Card/helper, one IRA outline illustration and pattern.css 1.0.0 are now available locally; existing Lucide is reused. The root fonts and actual public/Studio page designs remain unchanged. TypeScript/build pass; lint has 0 errors and 62 pre-existing warnings. These resources are not evidence that pending hosted performance or human acceptance is complete.
+
+Four user-level Codex skills were installed outside the repository: UI/UX Pro Max (Windows path adaptation), frontend-design, emil-design-eng and app-store-screenshots. Gstack remains uninstalled because its separate Bun/browser setup was not installed. Full receipt: workspace `outputs/design-skills-installation-2026-10-06.md`. No new screenshot-editor application, website release or production-data edit was performed. Preserve the local article corrections and content-list fix below. Further changes remain local until an explicit push-main request.
+
+---
+
+# Previous checkpoint — PR43 released; first article corrections saved
+
+6 October 2026. PR43 merged the full current candidate to main `9e163d775a1dcc8fe43714a8c084bf84709f3c0b`; exact Vercel Production `dpl_3eBxhZHYJdHHzp5aJtuLC3TSC6Jq` is READY on the custom domain. Read `docs/editorial-translations/RELEASE-43-AND-FOLLOWUP.md` first. Live language/Imprint/indexing checks passed. A new hosted mobile sample measured LCP 3.301s and no field data, so performance acceptance remains open.
+
+Follow-up branch `codex/article-meaning-review` contains complete assistant corrections for DB001 and DB010 (78 field values), generated packs and review tooling. Studio saved both languages as unreviewed drafts: DB001 draft 2/public 1, DB010 draft 4/public 3. Preserve these drafts. Source fingerprints matched immediately before import. No article translation has been published. Thirty-four articles still need full assistant meaning review; independent native review remains required for all 36. Read the explicit evidence gaps in the follow-up record. New follow-up code/files stay local until another explicit push instruction.
+
+A local follow-up fixes the content list's stale `Aligned` status after draft saves. Only compact rows trust the server summary; full saved records recompute the comparison. Seven focused tests, lint, TypeScript and production build pass. Local browser save/publish verification and release of this follow-up remain open; do not report it as already deployed.
+
+---
+
+# Previous checkpoint — remaining language and editorial acceptance
 
 6 October 2026. The owner explicitly requested pushing all current work through a detailed PR into main, deploying/verifying it, then continuing pending acceptance. This authorizes release of `codex/remaining-editorial-acceptance` (application commit `bcf0302`) from released main `b989e5870f390b2f0e8707f15c44014dabcb059e`. See `docs/decisions/2026-10-06-editorial-release.md`. Verify final checks, merge through the PR and verify the exact Vercel production commit. Do not bypass protection or push directly to main. Subsequent new editorial work remains local unless part of completing this release or separately authorized for publication.
 

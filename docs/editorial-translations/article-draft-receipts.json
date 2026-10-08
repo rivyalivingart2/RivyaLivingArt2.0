@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-06T05:17:28.137Z",
+  "method": "Authenticated Studio translation dry run, apply checked fields and Save draft; bounded read-only version verification afterward",
+  "independentNativeReview": "NOT PERFORMED",
+  "articlePublication": "NO TRANSLATION PUBLISHED",
+  "records": [
+    {"id":"DB001","draftVersion":2,"publicVersion":1,"sourceHash":"ab09e8950a7791db8ae917a7be8388caffc8433535e158cba0980df7528b253f","hi":{"filled":19,"state":"needs review"},"gu":{"filled":19,"state":"needs review"}},
+    {"id":"DB010","draftVersion":4,"publicVersion":3,"sourceHash":"114574c52c1d1d060ac59a28e8bbad8c0e6e56f4dcb9692f40690f23c1896f03","hi":{"filled":20,"state":"needs review"},"gu":{"filled":20,"state":"needs review"}}
+  ],
+  "protectedFingerprintComparison":{"catalogue":true,"originalMediaAndAssociations":true,"business":true}
+}

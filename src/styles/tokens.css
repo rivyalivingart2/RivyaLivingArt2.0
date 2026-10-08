@@ -42,6 +42,10 @@
   --surface-overlay: rgba(16, 28, 45, 0.94);
   --studio-panel: #112033;
   --control-surface: #122336;
+  /* Defaults for source-installed shadcn cards outside scoped public themes. */
+  --card: var(--surface-card);
+  --card-foreground: var(--foreground);
+  --muted-foreground: var(--text-muted);
   
   /* Interactive Accents */
   --bronze: #b79270;
