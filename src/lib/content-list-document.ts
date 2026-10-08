@@ -1,4 +1,10 @@
 import type {ContentDocument} from './content-model';
+import {draftState} from './content-health';
+
+/** A compact row needs the server comparison; a full saved record must be compared afresh. */
+export function contentListDraftState(entry:{document:ContentDocument;published:ContentDocument|null;version:number;detailPending?:boolean;draftStatus?:ReturnType<typeof draftState>}){
+ return entry.detailPending&&entry.draftStatus?entry.draftStatus:draftState(entry.document,entry.published,entry.version);
+}
 
 /** Search/selection only. detailPending requires a full record before editing. */
 export function contentListDocument(document:ContentDocument):ContentDocument {

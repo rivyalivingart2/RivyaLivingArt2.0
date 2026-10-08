@@ -1,9 +1,12 @@
-import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {readFileSync,writeFileSync,mkdirSync,existsSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 const snapshot=JSON.parse(readFileSync('docs/editorial-translations/source-baseline.json','utf8'));
 const drafts=JSON.parse(readFileSync('docs/editorial-translations/articles-machine-drafts.json','utf8'));
+const correctionsPath='docs/editorial-translations/article-corrections.json';
+const corrections=existsSync(correctionsPath)?JSON.parse(readFileSync(correctionsPath,'utf8')).records:[];
+assert.equal(new Set(corrections.map(r=>r.id)).size,corrections.length,'Duplicate corrections');
 assert.equal(drafts.completedBatches,drafts.totalBatches,'Finish the resumable translation batches first');
 const glossary={Spaces:['स्थान','જગ્યાઓ'],Materials:['सामग्री','સામગ્રી'],Commissioning:['कृति बनवाना','કૃતિ બનાવડાવવી']};
 const amendments={DB010:{imageAlt:'Horizon wall panel in an imagined interior — design visualization'}};
@@ -14,6 +17,12 @@ for(const original of snapshot.records.filter(r=>r.kind==='article')){
  assert.equal(draft.sourceHash,original.sourceHash,`Original source mismatch: ${original.id}`);
  const fields=original.fields.map(f=>({...f,source:amendments[original.id]?.[f.path]||f.source}));
  const sourceHash=createHash('sha256').update(JSON.stringify(fields)).digest('hex');
+ const correction=corrections.find(r=>r.id===original.id);
+ if(correction){
+  assert.equal(correction.sourceHash,sourceHash,`Re-review changed source: ${original.id}`);
+  assert.equal(correction.nativeReaderReview,'NOT PERFORMED','Record independent approval separately');
+  for(const locale of ['hi','gu'])assert.deepEqual(Object.keys(correction[locale]).sort(),fields.map(f=>f.path).sort(),`Incomplete full review: ${original.id}/${locale}`);
+ }
  const locales={};
  for(const [index,locale] of ['hi','gu'].entries()){
   assert.deepEqual(Object.keys(draft[locale]).sort(),fields.map(f=>f.path).sort(),`Missing/extra fields ${original.id}/${locale}`);
@@ -21,6 +30,7 @@ for(const original of snapshot.records.filter(r=>r.kind==='article')){
   const eyebrow=fields.find(f=>f.path==='eyebrow')?.source;
   if(glossary[eyebrow])translated.eyebrow=glossary[eyebrow][index];
   if(original.id==='DB010')translated.imageAlt=index===0?'काल्पनिक आंतरिक स्थान में Horizon दीवार पैनल — डिज़ाइन का दृश्य':'કલ્પિત આંતરિક જગ્યામાં Horizon દિવાલ પેનલ — ડિઝાઇનનું દૃશ્ય';
+  if(correction)Object.assign(translated,correction[locale]);
   for(const [path,value] of Object.entries(translated)){
    assert.ok(typeof value==='string'&&value.trim()&&value.length<=6000&&!/[<>\u0000-\u0008⟦⟧]/.test(value),`Invalid field ${original.id}/${locale}/${path}`);
    assert.ok((locale==='hi'?/[\u0900-\u097f]/:/[\u0a80-\u0aff]/).test(value),`Missing target script ${original.id}/${locale}/${path}`);
@@ -30,10 +40,11 @@ for(const original of snapshot.records.filter(r=>r.kind==='article')){
   writeFileSync(`docs/editorial-translations/article-imports/${original.id}.${locale}.json`,output+'\n');
   locales[locale]=translated;imports++;values+=fields.length;
  }
- review.push({id:original.id,route:original.route,sourceHash,originalSourceHash:original.sourceHash,sourceAmendments:amendments[original.id]||{},status:'DRAFT — meaning and native-reader review required',publication:'NOT PUBLISHED',fields:fields.map(f=>({...f,hi:locales.hi[f.path],gu:locales.gu[f.path]}))});
+ review.push({id:original.id,route:original.route,sourceHash,originalSourceHash:original.sourceHash,sourceAmendments:amendments[original.id]||{},status:correction?'DRAFT — assistant meaning review completed; independent native-reader review required':'DRAFT — meaning and native-reader review required',...(correction?{assistantReview:{at:correction.reviewedAt,notes:correction.notes}}:{}),publication:'NOT PUBLISHED',fields:fields.map(f=>({...f,hi:locales.hi[f.path],gu:locales.gu[f.path]}))});
 }
 assert.equal(review.length,36);
-const packet={at:new Date().toISOString(),engine:drafts.engine,status:'DRAFTS COMPLETE; NOT LANGUAGE ACCEPTANCE',records:review,imports,translatedValues:values,meaningReview:'REQUIRED — machine wording can misread commission, finish, brief and dates',nativeReaderReview:'NOT PERFORMED',publication:'NO ARTICLE TRANSLATION HAS BEEN PUBLISHED'};
+assert.ok(corrections.every(c=>review.some(r=>r.id===c.id)),'Unknown correction record');
+const packet={at:new Date().toISOString(),engine:drafts.engine,status:'DRAFTS COMPLETE; NOT LANGUAGE ACCEPTANCE',records:review,imports,translatedValues:values,meaningReview:{assistantCompleted:corrections.map(r=>r.id),remainingArticles:36-corrections.length,independentReview:'REQUIRED'},nativeReaderReview:'NOT PERFORMED',publication:'NO ARTICLE TRANSLATION HAS BEEN PUBLISHED'};
 writeFileSync('docs/editorial-translations/article-review.json',JSON.stringify(packet,null,2)+'\n');
 const pageReview=JSON.parse(readFileSync('docs/editorial-translations/page-review.json','utf8'));
 const receipts=JSON.parse(readFileSync('docs/editorial-translations/publication-receipts.json','utf8'));
@@ -42,7 +53,7 @@ writeFileSync('docs/editorial-translations/page-review.json',JSON.stringify(page
 const records=[...pageReview.records,...review];
 const folder=resolve('../../../outputs/CRAFT');mkdirSync(folder,{recursive:true});
 const data=JSON.stringify(records).replace(/</g,'\\u003c');
-writeFileSync(resolve(folder,'editorial-language-review.html'),`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Rivya editorial language review</title><style>body{margin:0;background:#101a23;color:#f5efe5;font:17px/1.65 system-ui}header,main{max-width:1400px;margin:auto;padding:24px}h1{font-size:32px;line-height:1.2}a{color:#efd096}select,input,textarea,button{font:inherit;color:inherit;background:#162c3a;border:1px solid #9aa6af;padding:10px;border-radius:4px}select{max-width:100%}button{cursor:pointer}fieldset{margin:25px 0;border:1px solid #71828e;padding:16px}legend{color:#efcc90}.columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.columns p{white-space:pre-wrap;overflow-wrap:anywhere;margin:0}.label{display:block;color:#b4c7d6;font-size:13px}textarea{width:100%;box-sizing:border-box;min-height:100px}.status{border-left:4px solid #dfad62;padding:12px;background:#192832}nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap}@media(max-width:800px){.columns{grid-template-columns:1fr}header,main{padding:16px}}</style><header><h1>Editorial language review</h1><p>Seven pages are published with assistant meaning review. All 36 article translations are complete machine-assisted drafts. Independent native-reader approval has not been performed. This local review page cannot publish website content.</p><p class="status">Review meaning against English, craft vocabulary, numbers, negation, names and dates. Do not turn estimates into guarantees, visualizations into real projects, or a prepared WhatsApp message into an automatic send. Products and business facts stay unchanged.</p><nav><label>Document <select id="record"></select></label><button id="previous">Previous</button><button id="next">Next</button><button id="export">Export review notes</button></nav></header><main id="review"></main><script>
+writeFileSync(resolve(folder,'editorial-language-review.html'),`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Rivya editorial language review</title><style>body{margin:0;background:#101a23;color:#f5efe5;font:17px/1.65 system-ui}header,main{max-width:1400px;margin:auto;padding:24px}h1{font-size:32px;line-height:1.2}a{color:#efd096}select,input,textarea,button{font:inherit;color:inherit;background:#162c3a;border:1px solid #9aa6af;padding:10px;border-radius:4px}select{max-width:100%}button{cursor:pointer}fieldset{margin:25px 0;border:1px solid #71828e;padding:16px}legend{color:#efcc90}.columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.columns p{white-space:pre-wrap;overflow-wrap:anywhere;margin:0}.label{display:block;color:#b4c7d6;font-size:13px}textarea{width:100%;box-sizing:border-box;min-height:100px}.status{border-left:4px solid #dfad62;padding:12px;background:#192832}nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap}@media(max-width:800px){.columns{grid-template-columns:1fr}header,main{padding:16px}}</style><header><h1>Editorial language review</h1><p>Seven pages are published with assistant meaning review. All 36 article translations remain unpublished drafts. ${corrections.length} complete articles have received assistant meaning corrections; ${36-corrections.length} still need full meaning review. Independent native-reader approval has not been performed. This local review page cannot publish website content.</p><p class="status">Review meaning against English, craft vocabulary, numbers, negation, names and dates. Do not turn estimates into guarantees, visualizations into real projects, or a prepared WhatsApp message into an automatic send. Products and business facts stay unchanged.</p><nav><label>Document <select id="record"></select></label><button id="previous">Previous</button><button id="next">Next</button><button id="export">Export review notes</button></nav></header><main id="review"></main><script>
 const records=${data},key='rivya-editorial-native-review-v1';let notes={};try{notes=JSON.parse(localStorage.getItem(key)||'{}')}catch{};
 const select=document.getElementById('record'),main=document.getElementById('review');
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

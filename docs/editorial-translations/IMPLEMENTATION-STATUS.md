@@ -1,5 +1,7 @@
 # Editorial and language acceptance — 6 October 2026
 
+**Update:** PR43 has now released the source improvements to main and Vercel Production. The first two full article meaning corrections (DB001/DB010, 78 values) are saved locally and as unreviewed Studio drafts; 34 articles still need complete meaning review. Current hosted mobile LCP is 3.301s in one fresh sample, with no field data. See `RELEASE-43-AND-FOLLOWUP.md` for current release identifiers, checks, draft revisions and remaining acceptance. The narrative below records the earlier pre-release handoff.
+
 The feasible production page work is published. Source improvements are local on `codex/remaining-editorial-acceptance`; this pass did not push, merge or deploy application code. Overall acceptance remains partial because independent language review, owner crop approval and real human/device/visitor/customer evidence have not occurred.
 
 ## Published through Studio
