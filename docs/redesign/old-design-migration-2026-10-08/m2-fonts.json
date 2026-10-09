@@ -1,0 +1,36 @@
+{
+  "license": "public/fonts/licenses/inter-OFL.txt",
+  "method": "FontTools 4.61.1 WOFF2 compression only, no subsetting or new runtime dependency",
+  "files": [
+    {
+      "weight": 400,
+      "source": "public\\fonts\\inter-normal-400.ttf",
+      "target": "src\\styles\\fonts\\inter-normal-400.woff2",
+      "sourceBytes": 324820,
+      "targetBytes": 108208,
+      "sourceSha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba",
+      "targetSha256": "2d7b3f5b7d7e232001995bcf563175b20d8c115ca49b35468992be8da823eacd",
+      "cmapGlyphOrderHorizontalMetrics": "unchanged"
+    },
+    {
+      "weight": 500,
+      "source": "public\\fonts\\inter-normal-500.ttf",
+      "target": "src\\styles\\fonts\\inter-normal-500.woff2",
+      "sourceBytes": 325304,
+      "targetBytes": 111876,
+      "sourceSha256": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63",
+      "targetSha256": "130d717b47ca2c701ca56c6bf917e459317f1810a1942e1a1b9c66cb953605c6",
+      "cmapGlyphOrderHorizontalMetrics": "unchanged"
+    },
+    {
+      "weight": 600,
+      "source": "public\\fonts\\inter-normal-600.ttf",
+      "target": "src\\styles\\fonts\\inter-normal-600.woff2",
+      "sourceBytes": 326048,
+      "targetBytes": 111964,
+      "sourceSha256": "e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7",
+      "targetSha256": "b4e6e655556fc2f16a5fa763c4ff129a1872881af30b56547718facff6b05d7d",
+      "cmapGlyphOrderHorizontalMetrics": "unchanged"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+import assert from 'node:assert/strict';
+import {writeFileSync} from 'node:fs';
+import {pathToFileURL} from 'node:url';
+import {expect} from '@playwright/test';
+import {localBrowser,origin} from './local-browser.mjs';
+import {localTarget} from './guard.mjs';
+import {publishedSourceQuery} from '../../src/lib/publication-read-query.ts';
+import {compileHomepageSnapshot} from '../../src/lib/homepage-dependencies.ts';
+import {referenceHomeSections} from '../../src/lib/home-reference-model.ts';
+import {candidateFingerprint} from './candidate-fingerprint.mjs';
+assert.equal(globalThis.__rivyaMigrationLocalSql,true);
+const {default:pg}=await import(pathToFileURL(process.env.RIVYA_MIGRATION_PG_MODULE).href),client=new pg.Client(localTarget);await client.connect();
+const {browser,context,api}=await localBrowser(),output='test-results/old-design-migration',key='presentation:home';
+const original=(await api('/api/studio/presentation')).entry;
+assert.ok(original.document.layout.composition,'Run the normal section workflow first');
+let fixtureVersion;
+const report={at:new Date().toISOString(),candidate:candidateFingerprint(),scope:'Private saved presentation fixture only; not new editorial records, business approval or public content',completed:false,checks:[]};
+const check=name=>{report.checks.push({name,passed:true});console.log('Passed: '+name);};
+try{
+ const source=(await client.query(publishedSourceQuery)).rows[0],document=structuredClone(original.document),article=source.content.find(r=>r.kind==='article');assert.ok(article);
+ document.layout.composition.hidden=[];
+ document.home.homepage.sections.find(s=>s.type==='journal').articleIds=[article.key];
+ document.home.homeSnapshot=compileHomepageSnapshot(document.home,source);
+ const usage=document.home.homepage.sections.find(s=>s.image)?.image;
+ document.reference.mediaPaths=document.home.homeSnapshot.mediaPaths;
+ document.reference.portfolio=[{id:'isolated-qa-concept',classification:'concept',title:'QA concept layout',description:'Isolated layout fixture. This does not represent a completed commission.',href:'/p/qa-concept',image:usage}];
+ document.reference.feedback=[{id:'isolated-qa-fiction',classification:'fictional-sample',quote:'Sample wording used only to check the quotation layout.',attribution:'DO NOT DISPLAY AS A REAL CUSTOMER',image:usage}];
+ document.reference.workshops={title:'QA workshop template',description:'Isolated layout fixture; no real workshop offering is asserted.',href:'/p/qa-workshop',confirmationSource:'Synthetic local test fixture only',facts:[{label:'Status',value:'Not a real offering'}],image:usage};
+ document.reference.printing={title:'QA printing template',description:'Isolated layout fixture; no real printing service is asserted.',href:'/p/qa-printing',confirmationSource:'Synthetic local test fixture only',facts:[{label:'Status',value:'Not a real offering'}],image:usage};
+ fixtureVersion=original.version+1;
+ await client.query('BEGIN');
+ const changed=await client.query('UPDATE rivya_presentations SET draft=$1::jsonb,version=version+1,updated_by=$2,updated_at=now() WHERE presentation_key=$3 AND version=$4 RETURNING version',[JSON.stringify(document),'isolated-qa-fixture',key,original.version]);assert.equal(changed.rows.length,1);
+ await client.query('INSERT INTO rivya_presentation_revisions(presentation_key,version,document,actor,operation) VALUES($1,$2,$3::jsonb,$4,$5)',[key,fixtureVersion,JSON.stringify(document),'isolated-qa-fixture','qa:conditional-templates']);await client.query('COMMIT');
+ const page=await context.newPage();await page.goto(origin+'/studio/presentation/preview?version='+fixtureVersion,{waitUntil:'networkidle'});
+ assert.deepEqual(await page.locator('[data-home-slot]').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('data-home-slot'))),referenceHomeSections.map(s=>s.key));assert.equal(await page.locator('h1').count(),1);
+ check('All 18 source slots render in order with explicit synthetic dependencies and one H1');
+ await expect(page.getByText('Concept project · not a completed commission',{exact:true})).toBeVisible();await expect(page.getByText('Fictional sample · not customer feedback',{exact:true})).toBeVisible();
+ assert.equal(await page.getByText('DO NOT DISPLAY AS A REAL CUSTOMER',{exact:true}).count(),0);const html=await page.content();assert.equal(/"@type"\s*:\s*"(?:Review|AggregateRating)"/.test(html),false);
+ check('Concept and fictional-sample disclosures are visible; fictional attribution and review schema are absent');
+ const doors=page.locator('#home-collections a[data-collection-door]');assert.equal(await doors.count(),6);
+ const first=doors.first(),before=await first.boundingBox();await first.focus();const after=await first.boundingBox();assert.ok(after.width>before.width);assert.ok(await first.getAttribute('href'));
+ check('Six collection doors expand on keyboard focus without changing destination or source categories');
+ await page.locator('#home-work').evaluate(node=>window.scrollTo(0,node.getBoundingClientRect().top+scrollY-100));await page.screenshot({path:output+'/screenshots/m4-conditional-concept-desktop.png'});
+ await page.locator('#home-words').evaluate(node=>window.scrollTo(0,node.getBoundingClientRect().top+scrollY-100));await page.screenshot({path:output+'/screenshots/m4-conditional-feedback-desktop.png'});
+ await page.setViewportSize({width:390,height:844});await page.reload({waitUntil:'networkidle'});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
+ await page.locator('#home-words').evaluate(node=>window.scrollTo(0,node.getBoundingClientRect().top+scrollY-100));await page.screenshot({path:output+'/screenshots/m4-conditional-feedback-mobile.png'});
+ check('Conditional layouts retain visible disclosures and no body overflow at 390 px');
+ const publicPage=await context.newPage();await publicPage.goto(origin+'/',{waitUntil:'networkidle'});assert.equal(await publicPage.locator('[data-presentation-revision]').getAttribute('data-presentation-revision'),String(original.publishedVersion));assert.equal(await publicPage.getByText('QA workshop template',{exact:true}).count(),0);
+ check('Synthetic offering and editorial fixtures are never published; actual public revision stays unchanged');report.completed=true;
+}finally{
+ await client.query('ROLLBACK');
+ if(fixtureVersion){const current=(await api('/api/studio/presentation')).entry;if(current.version===fixtureVersion)await api('/api/studio/presentation',{operation:'restore',version:fixtureVersion,restoredFrom:original.version});}
+ await browser.close();await client.end();writeFileSync(output+'/m4-conditional-workflow.json',JSON.stringify(report,null,2)+'\n');
+}
+console.log(JSON.stringify({checks:report.checks.length,completed:report.completed}));

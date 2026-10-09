@@ -7,6 +7,8 @@ export function studioTaskHref(task:StudioTask){return '/studio/inquiries?'+new 
 /** Navigation search shares the route/permission registry; it cannot invent a destination. */
 export function studioDestinations(admin:boolean,query=''){
  const words=query.toLocaleLowerCase('en').trim().split(/\s+/).filter(Boolean);
- return studioModules.filter(m=>(admin||!m.adminOnly)&&words.every(word=>(m.label+' '+m.group+' '+m.aliases.join(' ')).toLocaleLowerCase('en').includes(word))).map(m=>({...m,href:studioModuleHref(m)}));
+ // Keep familiar search terms after moving destinations into the old five groups.
+ const formerGroups={Today:'work administration',Catalogue:'catalogue media',Content:'website media administration',Editorial:'website',Settings:'administration website'};
+ return studioModules.filter(m=>(admin||!m.adminOnly)&&words.every(word=>(m.label+' '+m.group+' '+formerGroups[m.group]+' '+m.aliases.join(' ')).toLocaleLowerCase('en').includes(word))).map(m=>({...m,href:studioModuleHref(m)}));
 }
 export type WorkQueueData={asOf:string;businessDate:string;scope:'all'|'assigned';counts:Record<StudioTask,number>;stages:{status:string;count:number}[];followups:{id:string;reference:string;title:string;status:string;followUp:string}[];editorial:{id:string;title:string;version:number;updatedAt:string}[];recent:{id:string;reference:string|null;title:string;status:string;updatedAt:string}[]};

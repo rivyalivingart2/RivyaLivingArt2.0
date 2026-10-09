@@ -1,0 +1,24 @@
+{
+  "phase": "M4",
+  "date": "2026-10-09",
+  "authorization": "docs/decisions/2026-10-09-phase-permission-and-media.md",
+  "classification": "Material visualization, not a recording of a customer project or evidence of an actual making stage",
+  "source": "OLDWEBSITE public/redesign at 2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "driveFolderId": "1wbayNeBOmE-q_MELHJCEax3YyEUyllLL",
+  "newDriveFiles": 1,
+  "existingDriveFilesVerified": 2,
+  "verification": "Connector raw-byte fetch and SHA-256 comparison against each local copy; original files retained",
+  "files": [
+    {"path": "/media/migration/hero-pour-loop-poster.jpg", "driveId": "11iY9mANJFy4EZf54HgZ5NJ_g4AzDBLBX", "bytes": 98481, "sha256": "e7dec2a8d6972a0825caf57aae320db7b1a0c319eb2f7a3d5581ba9190040caf", "newDriveCopy": false, "driveReadbackMatches": true},
+    {"path": "/media/migration/hero-pour-loop.webm", "driveId": "1xau1Vdp2i2QsD77eFvc7duYfDzrOBWL4", "bytes": 1649274, "sha256": "ba77d14e1d380f382bbc86af1c5e8533ad3e8a0ad2bb604d06506b3da5b216c8", "newDriveCopy": false, "driveReadbackMatches": true},
+    {"path": "/media/migration/hero-pour-loop.mp4", "driveId": "1HVHyYusnysi_7aduW6xwFJHrwUlWGzIz", "bytes": 2135160, "sha256": "61d4633578353e813e64506877eed198bc682b6424701b7783720af51530869d", "newDriveCopy": true, "driveReadbackMatches": true}
+  ],
+  "studioOwnership": "The new local presentation document stores the selected film, poster, formats, sizes, hashes, Drive IDs and provenance. Studio Page design exposes the choice and matching Drive links. Website bytes are served from additive static files; binary media is not stored inside PostgreSQL.",
+  "limits": [
+    "No existing image/product associations or crop coordinates were changed.",
+    "No Drive sharing changes or replacement of originals.",
+    "No production database writes or deployment.",
+    "This is one film with two formats and one poster, not three distinct content entries.",
+    "The four batches of 120 new editorial records remain uncreated."
+  ]
+}

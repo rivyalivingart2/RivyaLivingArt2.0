@@ -20,11 +20,13 @@ const displayFont = localFont({
 const dataFont = localFont({src: "../styles/fonts/jetbrains-mono-normal-400.woff2", variable: "--font-jetbrains", display: "swap", preload: false});
 const bodyFont = localFont({
   src: [
-    { path: "../styles/fonts/dm-sans-latin-400-normal.woff2", weight: "400", style: "normal" },
-    { path: "../styles/fonts/dm-sans-latin-500-normal.woff2", weight: "500", style: "normal" },
+    { path: "../styles/fonts/inter-normal-400.woff2", weight: "400", style: "normal" },
+    { path: "../styles/fonts/inter-normal-500.woff2", weight: "500", style: "normal" },
+    { path: "../styles/fonts/inter-normal-600.woff2", weight: "600", style: "normal" },
   ],
-  variable: "--font-dm-sans",
+  variable: "--font-inter",
   display: "swap",
+  adjustFontFallback: "Arial",
 });
 
 export const metadata: Metadata = {
@@ -38,7 +40,7 @@ export const viewport: Viewport = {
   width: "device-width", 
   initialScale: 1, 
   viewportFit: "cover", 
-  themeColor: "#08111d", 
+    themeColor: "#080a0e",
   colorScheme: "dark" 
 };
 

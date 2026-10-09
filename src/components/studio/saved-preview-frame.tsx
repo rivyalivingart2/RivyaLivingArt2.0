@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-export function SavedPreviewFrame({href,revision}:{href:string;revision:number}){
+export function SavedPreviewFrame({href,revision,marker}:{href:string;revision:number;marker?:'data-presentation-revision'}){
  const frame=useRef<HTMLIFrameElement>(null);
  const [attempt,setAttempt]=useState(0),[status,setStatus]=useState<'loading'|'ready'|'failed'>('loading');
  useEffect(()=>{const timer=setTimeout(()=>setStatus(value=>value==='loading'?'failed':value),15000);return()=>clearTimeout(timer);},[attempt]);
@@ -15,7 +15,7 @@ export function SavedPreviewFrame({href,revision}:{href:string;revision:number})
   <iframe ref={frame} key={attempt} title={'Page revision '+revision+' at mobile width'} src={href} onLoad={()=>{
    try{
     const content=frame.current?.contentDocument;
-    setStatus(content?.querySelector(`[data-home-revision="${revision}"], [data-saved-content-revision="${revision}"]`)?'ready':'failed');
+    setStatus(content?.querySelector(marker?`[${marker}="${revision}"]`:`[data-home-revision="${revision}"], [data-saved-content-revision="${revision}"]`)?'ready':'failed');
    }catch{setStatus('failed');}
   }}/>
  </>;

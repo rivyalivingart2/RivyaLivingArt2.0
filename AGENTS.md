@@ -1,4 +1,20 @@
-# Current handoff — publish final old-design migration plan
+# Current release — M0–M4 through a detailed PR; await M5 permission
+
+9 October 2026. The owner explicitly requested pushing all completed local work into GitHub main through a detailed PR and then listing pending work. Read `docs/decisions/2026-10-09-release-m0-m4.md` and `docs/redesign/old-design-migration-2026-10-08/RELEASE-M0-M4.md`. This authorizes this candidate's branch push, PR, checked merge and deployment verification. Do not bypass branch protection or push directly to main. It does not authorize starting M5. The local-only wording below is historical for this candidate. The existing production runtime role cannot create the two missing presentation tables; report that activation gap honestly and never copy local QA revisions into production.
+
+---
+
+# Implementation checkpoint — M0–M4 verified for scope
+
+Latest owner steering: finish the already-started M4 phase, then obtain explicit permission before starting M5 or any subsequent phase. Add both website images and video. Read `docs/decisions/2026-10-09-phase-permission-and-media.md`. This supersedes automatic progression through the complete plan; local-only and preservation requirements still apply.
+
+9 October 2026. Read `docs/redesign/old-design-migration-2026-10-08/IMPLEMENTATION-CHECKPOINT.md`, `M4-PAGE-TEMPLATES.md`, `m4-evidence.json`, `m4-media-evidence.json` and the updated task register before continuing. M0 baseline/isolation, M1 source contracts, M2 shared frames, M3 saved design workflow and M4 page templates/media are verified for their recorded local engineering scope. The final M4 candidate passes 311 unit and 42 workflow checks; all 13 original protected local scopes match. M5 is the earliest unfinished phase and must not start without the owner's explicit permission. Whole-page parity and human acceptance are not complete. Keep all application work local until a new explicit release request.
+
+Preserve all existing records, contacts, media usages/crops, drafts, translations and history. Use the new dedicated loopback QA harness for writes; live access remains bounded and read-only. No scraper, old-product transfer, ingestion-dependent Catalog Fill or backup work. The owner now explicitly permits labelled concept Portfolio entries and labelled fictional Testimonial samples, with copies in Drive and Studio; read `docs/decisions/2026-10-09-labelled-editorial-content.md`. Never present them as genuine evidence or customer reviews. Human/device evidence cannot be invented. The cancelled audit stays excluded. The October 9 planning release below is historical and does not authorize a new release.
+
+---
+
+# Previous handoff — publish final old-design migration plan
 
 9 October 2026. The owner requested a continuation prompt and publication of the combined plan to `main` through the standing detailed-PR workflow. Read `docs/decisions/2026-10-09-publish-migration-handoff.md`, then `docs/redesign/old-design-migration-2026-10-08/README.md`. The combined Markdown plan and `CONTINUE-IN-NEW-CHAT.md` are the new migration handoff. M0–M11 and all 480 proposed content records are still planned, not implemented or published.
 

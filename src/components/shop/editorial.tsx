@@ -23,6 +23,16 @@ import {EditorialStructuredData} from './structured-data';
 import type {ContentDocument} from '@/lib/content-model';
 import type {Locale} from '@/lib/site-settings-model';
 import s from './shop.module.css';
+import r from './reference-pages.module.css';
+import {ReferenceChapters,ReferencePageAdditions} from './reference-chapters';
+import {SectionNavigation} from './section-navigation';
+import {isDesignPageRoute,type PageDesign} from '@/lib/page-design-model';
+import type {HomeReferenceSnapshot} from '@/lib/home-reference-model';
+import {compileHomeReference} from '@/lib/home-reference-dependencies';
+import {publishedPresentation} from '@/lib/presentation-store';
+import {publishedSource} from '@/lib/published-source';
+import {materialFilm,type PresentationFilm} from '@/lib/presentation-media';
+import {MaterialFilm} from './material-film';
 
 function Intro({eyebrow,title,children}:{eyebrow:string;title:string;children?:React.ReactNode}){return <header className={s.pageIntro+' '+e.intro}><span className={s.eyebrow}>{eyebrow}</span><h1>{title}</h1>{children&&<p>{children}</p>}</header>;}
 const minutes=(a:ContentDocument)=>Math.max(1,Math.ceil([a.description,...a.sections.flatMap(b=>[b.heading,...b.paragraphs,...(b.checklist||[])])].join(' ').trim().split(/\s+/).length/200));
@@ -46,36 +56,39 @@ export async function EditorialPage({route,locale='en'}:{route:string;locale?:Lo
   </div>;
  }
  const content=documents.find(d=>d.route===route);if(!content)notFound();
- return <EditorialDocument content={content} documents={documents} locale={locale}/>;
+ const presentation=isDesignPageRoute(route)?await publishedPresentation():null;
+ const design=isDesignPageRoute(route)?presentation?.layout.pages?.[route]:undefined;
+ const reference=design?.shared.length?compileHomeReference(await publishedSource(),presentation!.layout.pages):undefined;
+ return <EditorialDocument content={content} documents={documents} locale={locale} design={design} designVersion={design?presentation?.version:undefined} reference={reference} film={design?.film?materialFilm:undefined}/>;
 }
 export function JournalDocument({content:d,locale='en'}:{content:PublishedContentDocument;locale?:Locale}){
  const articles=(d.pageSnapshot?localizeSnapshot(d.pageSnapshot,locale).articles:[]).map(a=>({...a,kind:'article' as const}));
  return <div className={e.editorial+' '+e.journal} data-content-revision={d.publishedRevision}><Intro eyebrow={d.eyebrow} title={d.title}>{d.description}</Intro>{d.sections.filter(s=>s.enabled!==false).map(b=><div key={b.id} className={s.prose+' '+e.journalLead}><h2>{b.heading}</h2><SectionBody section={b} unavailable={d.pageSnapshot?.unavailableActionHrefs} mediaPaths={d.pageSnapshot?.mediaPaths}/></div>)}<JournalBrowser featuredIds={d.featuredArticleIds} items={articles.map(a=>({id:a.id,title:a.title,topic:a.eyebrow,search:[a.title,a.description,a.eyebrow].join(' '),card:<ArticleCard article={a}/>}))}/></div>;
 }
 /** Shared by public pages and authenticated saved-revision previews. */
-export async function EditorialDocument({content:source,documents,locale='en',snapshot}:{content:PublishedContentDocument;documents:PublishedContentDocument[];locale?:Locale;snapshot?:PageSnapshot}){
+export async function EditorialDocument({content:source,documents,locale='en',snapshot,design,designVersion,reference,film}:{content:PublishedContentDocument;documents:PublishedContentDocument[];locale?:Locale;snapshot?:PageSnapshot;design?:PageDesign;designVersion?:number;reference?:HomeReferenceSnapshot;film?:PresentationFilm}){
  const tr=(text:string)=>journeyText(locale,text);
  const route=source.route,articles=documents.filter(d=>d.kind==='article');
  const business=route==='/contact'||!!policies[route]?(await publishedBusiness()).details:null;
  const bound=business?bindImprintContacts(source,business):source;
  const content={...bound,sections:bound.sections.filter(b=>b.enabled!==false)};
- const article=content.kind==='article',faq=route==='/faq',policy=!!policies[route],story=route.startsWith('/p/')||['/our-story','/process','/materials-care','/architects'].includes(route);
+ const article=content.kind==='article',faq=route==='/faq',policy=!!policies[route],story=!!design||route.startsWith('/p/')||['/our-story','/process','/materials-care','/architects'].includes(route);
  const routeAvailable=(href:string)=>['/','/commission','/journal','/collectible-design','/commission/customize'].includes(href)||(snapshot||source.pageSnapshot)?.availableRoutes?.includes(href)||(!(snapshot||source.pageSnapshot)?.availableRoutes&&documents.some(d=>d.route===href));
  const products=snapshot?.products||source.pageSnapshot?.products||(content.relatedProductIds?.length?await publishedProducts(locale):[]);
  const related=(content.relatedProductIds||[]).flatMap(id=>products.filter(p=>p.id===id));
  const deps=snapshot||source.pageSnapshot;
  const more=articles.filter(a=>a.id!==content.id).sort((a,b)=>Number(b.eyebrow===content.eyebrow)-Number(a.eyebrow===content.eyebrow)).slice(0,3);
  const next=nextSteps[route]||['/commission','Begin your piece','/journal','Return to the journal'];
- return <div className={e.editorial+(policy?' '+e.policy:'')+(policy||route==='/materials-care'?' '+e.printable:'')} data-editorial={article?'article':route.slice(1)} data-content-revision={source.publishedRevision}>
+ return <div className={e.editorial+(policy?' '+e.policy:'')+(policy||route==='/materials-care'?' '+e.printable:'')+(design?' '+r.reference:'')} data-editorial={article?'article':route.slice(1)} data-content-revision={source.publishedRevision} data-presentation-revision={designVersion} data-page-hero={design?.hero}>
   <EditorialStructuredData document={content}/>
   <nav className={s.editorialBreadcrumb} aria-label={tr("Breadcrumb")}><Link href="/"><JourneyText text="Home"/></Link><span aria-hidden="true">/</span>{article&&<><Link href="/journal"><JourneyText text="Journal"/></Link><span aria-hidden="true">/</span></>}<span aria-current="page">{content.title}</span></nav>
-  <div className={e.opening} data-split={story&&!!(content.headerImage||content.image)}>
+  <div className={e.opening+(design?' '+r.opening:'')} data-split={story&&design?.hero!=='full'&&!!(content.headerImage||content.image)} data-has-image={!!(content.headerImage||content.image)}>
    <Intro eyebrow={content.eyebrow} title={content.title}>{content.description}</Intro>
-   {content.headerImage?<div className={e.leadImage}><EditorialImage usage={content.headerImage} available={deps?.mediaPaths.includes(content.headerImage.path)} priority sizes={story?'(max-width: 780px) 90vw, 42vw':'(max-width: 1200px) 90vw, 1080px'}/></div>:content.image&&<div className={e.leadImage}><figure className={e.legacyImage}><Image src={content.image} alt={content.imageAlt||''} style={{objectPosition:content.imagePosition}} fill priority sizes={story?'(max-width: 780px) 90vw, 42vw':imageSizes.story}/><figcaption><JourneyText text="Design visualization"/></figcaption></figure></div>}
+   {content.headerImage?<div className={e.leadImage} data-page-cover><EditorialImage usage={content.headerImage} available={deps?.mediaPaths.includes(content.headerImage.path)} priority sizes={design?.hero==='full'?'100vw':story?'(max-width: 780px) 90vw, 42vw':'(max-width: 1200px) 90vw, 1080px'}/></div>:content.image&&<div className={e.leadImage} data-page-cover><figure className={e.legacyImage}><Image src={content.image} alt={content.imageAlt||''} style={{objectPosition:content.imagePosition}} fill priority sizes={design?.hero==='full'?'100vw':story?'(max-width: 780px) 90vw, 42vw':imageSizes.story}/><figcaption><JourneyText text="Design visualization"/></figcaption></figure></div>}
   </div>
   {policy&&<p className={e.effective}>{content.effectiveDate?tr('Effective')+' '+content.effectiveDate:tr('Effective date not recorded')}</p>}
   {route==='/contact'&&business&&<div className={e.contactPanel}><div className={s.contactCards+' '+e.contactCards}><a href={'tel:'+business.phone}><span><JourneyText text="Call the atelier"/></span>{business.phone}</a><a href={'mailto:'+business.email}><span><JourneyText text="General questions & existing inquiries"/></span>{business.email}</a><a href={business.map} target="_blank" rel="noreferrer"><span><JourneyText text="Location"/></span><JourneyText text="Open the atelier map"/> <ArrowUpRight aria-hidden="true" size={16} className={s.linkArrow}/></a><Link href="/commission"><span><JourneyText text="Product & custom-piece requests"/></span><JourneyText text="Prepare your saved order brief"/> <ArrowUpRight aria-hidden="true" size={16} className={s.linkArrow}/></Link></div>{routeAvailable('/faq')&&<p><Link className={s.textLink} href="/faq"><JourneyText text="Read common questions before you write"/> <ArrowUpRight aria-hidden="true" size={16} className={s.linkArrow}/></Link></p>}</div>}
-  {story&&<><nav className={e.chapterNav} aria-label={tr("On this page")}><details><summary><JourneyText text="On this page"/></summary><ol>{content.sections.map(b=><li key={b.id}><a href={'#'+b.id}>{b.heading}</a></li>)}</ol></details></nav>{content.sections.map(b=><EditorialChapter key={b.id} section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>)}</>}
+  {story&&<><nav className={e.chapterNav} aria-label={tr("On this page")}><details><summary><JourneyText text="On this page"/></summary><ol>{content.sections.map(b=><li key={b.id}><a href={'#'+b.id}>{b.heading}</a></li>)}</ol></details></nav>{design?<><SectionNavigation label={tr("On this page")} items={content.sections.map(b=>({id:b.id,label:b.heading}))}/>{film&&<MaterialFilm film={film}/>}<ReferenceChapters document={{...content,pageSnapshot:deps}} design={design}/><ReferencePageAdditions design={design} reference={reference} locale={locale}/></>:content.sections.map(b=><EditorialChapter key={b.id} section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>)}</>}
   <div className={s.readingLayout+' '+e.reading}>{!story&&!faq&&content.sections.length>2&&<nav className={s.contents+' '+e.contents} aria-label={tr("On this page")}><p><JourneyText text="On this page"/></p>{content.sections.map(b=><a key={b.id} href={'#'+b.id}>{b.heading}</a>)}</nav>}
    <div className={s.prose+' '+e.prose}>{article&&<p className={s.eyebrow}><JourneyText text="By RivyaLivingArt"/> · <span className={s.productIndex} style={{display:'inline',margin:0}}>{minutes(content)} <JourneyText text="minute read"/></span></p>}
     {faq&&<FaqBrowser sections={content.sections} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>}

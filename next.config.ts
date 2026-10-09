@@ -34,6 +34,9 @@ const nextConfig: NextConfig = {
     ]}, {source:'/studio/preview/frame',headers:[
       {key:'X-Frame-Options',value:'SAMEORIGIN'},
       {key:'Content-Security-Policy',value:"frame-ancestors 'self'; form-action 'self'"},
+    ]}, {source:'/studio/presentation/preview/frame',headers:[
+      {key:'X-Frame-Options',value:'SAMEORIGIN'},
+      {key:'Content-Security-Policy',value:"frame-ancestors 'self'; form-action 'self'"},
     ]}, ...['/api/:path*','/studio/:path*','/inquiry/:path*','/pieces/:slug/customize','/commission/customize','/preview/:path*'].map(source=>({source,headers:[{key:'X-Robots-Tag',value:'noindex, nofollow, noarchive'}]}))];
   },
 };

@@ -29,6 +29,10 @@ import type {ContentDocument} from '@/lib/content-model';
 import {imageSizes} from './image-sizes';
 import s from './shop.module.css';
 import {HomepageDocument} from './homepage-document';
+import {publishedPresentation} from '@/lib/presentation-store';
+import {compileHomeReference} from '@/lib/home-reference-dependencies';
+import {isDesignPageRoute} from '@/lib/page-design-model';
+import {materialFilm} from '@/lib/presentation-media';
 import {productCard as card} from '@/lib/product-card-model';
 const button=(outline=false)=>`${s.button} ${outline?s.outline:''}`;
 export function Invitation(){return <section className={s.invitation}><span className={s.eyebrow}>A place for your idea</span><h2>Let’s make it<br/><em>meaningful.</em></h2><p>A room in mind. A memory to hold. A person to celebrate. Tell us where your piece begins.</p><div className={s.actions}><Link className={button()} href="/commission"><JourneyText text="Begin your piece"/> <ArrowUpRight aria-hidden="true" size={16} className={s.linkArrow}/></Link></div></section>;}
@@ -62,9 +66,15 @@ export async function ShopSite({route}:{route:string}){
  const [products,documents,business]=await Promise.all([needsCatalogue?publishedProducts(locale):Promise.resolve([]),route==='/'||isDiscoveryRoute(route)?publishedContent(locale,route):Promise.resolve([]),publishedBusiness()]);let content:React.ReactNode;
  if(route==='/'){
   const home=documents.find(d=>d.id==='page:home'&&d.homepage&&d.homeSnapshot);
-  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={(await publishedCopy(locale)).values} locale={locale}/></>:<Home products={products} articles={(await publishedContent(locale,undefined,'/')).filter(a=>a.kind==='article')}/>;
+  const [copy,presentation]=await Promise.all([publishedCopy(locale),publishedPresentation()]);
+  const reference=presentation?.layout.composition?compileHomeReference(await publishedSource()):undefined;
+  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={copy.values} locale={locale} presentation={presentation} reference={reference} film={presentation?.layout.film?materialFilm:undefined}/></>:<Home products={products} articles={(await publishedContent(locale,undefined,'/')).filter(a=>a.kind==='article')}/>;
  }
- else if(isDiscoveryRoute(route)&&documents.some(d=>d.route===route)){content=<CollectionDocument document={documents.find(d=>d.route===route)!}/>;}
+ else if(isDiscoveryRoute(route)&&documents.some(d=>d.route===route)){
+  const presentation=isDesignPageRoute(route)?await publishedPresentation():null;
+  const design=isDesignPageRoute(route)?presentation?.layout.pages?.[route]:undefined;
+  content=<CollectionDocument document={documents.find(d=>d.route===route)!} design={design} designVersion={design?presentation?.version:undefined}/>;
+ }
  else if(route.startsWith('/pieces/')){
   const slug=route.split('/')[2];const product=products.find(p=>p.slug===slug);if(!product)notFound();
    content=route.endsWith('/customize')?<><Intro eyebrow={tr("A brief for your piece")} title={tr("Make it yours.")}><JourneyText text="Your choices. Your references. One conversation with the studio."/></Intro><OrderForm key={product.id} product={product}/></>:<><ProductStructuredData product={product}/><div className={s.productBreadcrumb}><nav className={s.breadcrumb} aria-label={tr("Breadcrumb")}><Link href="/"><JourneyText text="Home"/></Link><span className={s.breadcrumbSeparator} aria-hidden="true">/</span><Link href={collectionLinks[product.tier]}>{tr(collectionLabels[product.tier])}</Link><span className={s.breadcrumbSeparator} aria-hidden="true">/</span><span className={s.breadcrumbCurrent} aria-current="page">{product.name}</span></nav></div><section className={s.detail+' '+c.productDetail}><div><Gallery key={product.id+':'+product.revision} product={{image:product.image,imageAlt:product.imageAlt,imagePosition:product.imagePosition,imageCaption:product.imageCaption,scene:product.scene,sceneAlt:product.sceneAlt,scenePosition:product.scenePosition,sceneCaption:product.sceneCaption,name:product.name,gallery:product.gallery}}/></div><div className={s.detailCopy}><span className={s.eyebrow}>{product.category} / {product.id}</span><h1>{product.name}</h1><p>{product.subtitle}</p><p>{product.story}</p><p>{product.tier === 'personal' && product.price ? (product.price.mode === 'fixed' ? `₹${product.price.amount.toLocaleString('en-IN')}` : product.price.mode === 'starting' ? `From ₹${product.price.amount.toLocaleString('en-IN')}` : tr('Price on request')) : tr('Price on request')} · <JourneyText text="Customized to your brief"/></p>

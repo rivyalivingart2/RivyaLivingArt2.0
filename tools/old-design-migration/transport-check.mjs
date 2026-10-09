@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {neon} from '@neondatabase/serverless';
+import {localUrl} from './guard.mjs';
+const sql=neon(localUrl);
+const result=await sql.transaction([sql.query('SHOW transaction_isolation'),sql.query('SHOW transaction_read_only')],{isolationLevel:'RepeatableRead',readOnly:true});
+assert.equal(result[0][0].transaction_isolation,'repeatable read');assert.equal(result[1][0].transaction_read_only,'on');
+await assert.rejects(()=>sql.transaction([sql.query('CREATE TABLE migration_readonly_probe(id integer)')],{readOnly:true}),/read-only transaction/);
+assert.equal((await sql.query("SELECT to_regclass('migration_readonly_probe') AS name"))[0].name,null);
+await assert.rejects(()=>neon('postgresql://user@example.com/neondb').query('SELECT 1'),/Remote SQL refused|connecting/i);
+console.log('Migration transport verified: repeatable read, read-only enforcement, no probe table and remote SQL refused.');
