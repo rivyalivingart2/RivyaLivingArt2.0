@@ -1,3 +1,15 @@
+# Current checkpoint — M9 drafts delivered; stop before M10
+
+9 October 2026. All 480 new English drafts are authored, saved in isolated local Studio in 48 ten-entry batches, and delivered to the dedicated Drive folder: 120 Journal, 120 labelled Portfolio concepts, 120 labelled fictional Testimonial examples and 120 FAQs. Production remains 0/480. Read `M9-EDITORIAL-DRAFT-PRODUCTION.md`, `m9-evidence.json` and `PENDING-AFTER-M9.md` under `docs/redesign/old-design-migration-2026-10-08/`. Build/type/lint, 337 unit, 403 built-server, 480 saved-render checks and 34 core Drive hash readbacks pass. Every pre-M9 row in all 13 protected scopes is unchanged. Human editorial, rights/crop, native-reader, physical-device and publication approvals remain open. Stop before M10. No push, release or production writes. Do not re-import existing M9 IDs or copy local QA media publication into production.
+
+---
+
+# Current authorization — M9 draft production and staging
+
+9 October 2026. The owner explicitly authorized M9. Read `docs/decisions/2026-10-09-m9.md`. Produce the new editorial drafts and media in ten-entry batches, stage additively in isolated local Studio and copy the delivery to a dedicated Drive folder. Preserve all pre-M9 records and Drive originals. Stop before M10. No push/release/production publication. Actual human/native/media-owner approvals remain distinct from assistant review. Earlier stops before M9 below are superseded for this phase only.
+
+---
+
 # Current checkpoint — M7 and M8 verified locally; stop before M9
 
 9 October 2026. The owner-authorized M7 and M8 are complete for their documented local engineering scopes. Read `M7-ORDERS-AND-EDITORIAL-ORDERING.md`, `M8-EDITORIAL-WORKFLOW.md`, `m8-evidence.json` and `PENDING-AFTER-M8.md` in this migration directory. M7 is commit `467e157`; M8 is the commit containing this checkpoint. Final M8 build/type/lint, 333 unit, 403 built-server and five workflow groups pass. All 13 pre-M8 protected scopes match row-for-row. M5–M8 remain local; production editorial remains 0/480. Stop before M9. No push, release or production writes until an applicable owner instruction. Human/native-reader/physical-device/field/full-parity acceptance remains open. Historical checkpoints below do not authorize further phases.

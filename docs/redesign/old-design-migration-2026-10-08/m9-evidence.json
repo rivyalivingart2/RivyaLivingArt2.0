@@ -1,0 +1,106 @@
+{
+  "phase": "M9",
+  "date": "2026-10-09",
+  "status": "Draft production, isolated staging and Drive delivery verified; human/publication acceptance open",
+  "authorization": "docs/decisions/2026-10-09-m9.md",
+  "branch": "codex/old-design-migration",
+  "baseCommit": "d540b16",
+  "counts": {
+    "Journal": {
+      "authored": 120,
+      "localStaged": 120,
+      "driveDelivered": 120,
+      "productionCreated": 0,
+      "productionPublished": 0
+    },
+    "Portfolio": {
+      "authored": 120,
+      "localStaged": 120,
+      "driveDelivered": 120,
+      "productionCreated": 0,
+      "productionPublished": 0
+    },
+    "Testimonials": {
+      "authored": 120,
+      "localStaged": 120,
+      "driveDelivered": 120,
+      "productionCreated": 0,
+      "productionPublished": 0
+    },
+    "FAQs": {
+      "authored": 120,
+      "localStaged": 120,
+      "driveDelivered": 120,
+      "productionCreated": 0,
+      "productionPublished": 0
+    }
+  },
+  "words": 62611,
+  "batches": 48,
+  "media": {
+    "newImages": 21,
+    "derivatives": 63,
+    "filmSelections": [
+      "J031",
+      "J032",
+      "J035",
+      "J040",
+      "P105",
+      "P109"
+    ],
+    "film": "Existing disclosed material visualization; both MP4/WebM and poster copied to M9 Drive",
+    "ownerRightsAndCropApproval": "Pending"
+  },
+  "checks": {
+    "build": "pass",
+    "typescript": "pass",
+    "editedApplicationLint": "pass",
+    "unit": 337,
+    "builtServer": 403,
+    "savedRevisionRender": 480,
+    "publicDraft404Probes": 4,
+    "driveCoreFilesHashVerified": 34,
+    "duplicateThreshold": 0.4,
+    "duplicateFlagged": 0,
+    "maxShingleContainment": 0.2581,
+    "protectedScopes": 13,
+    "allPreM9RowsUnchanged": true
+  },
+  "browser": {
+    "environment": "Codex in-app browser, isolated localhost; desktop and 390x844 viewport emulation",
+    "checked": [
+      "Journal editor optional film selection",
+      "User-initiated muted playback and Pause",
+      "Portfolio concept disclosure and image/caption",
+      "Fictional disclosure without customer portrait",
+      "FAQ current-policy link",
+      "Register shows 480 authored/local/Drive and zero production"
+    ],
+    "screenshots": [
+      "test-results/old-design-migration/m9/register-desktop.png",
+      "test-results/old-design-migration/m9/journal-video-desktop.png",
+      "test-results/old-design-migration/m9/portfolio-mobile.png",
+      "test-results/old-design-migration/m9/fictional-mobile.png",
+      "test-results/old-design-migration/m9/faq-mobile.png"
+    ],
+    "scope": "Assistant samples, not 480 per-usage visual approvals or physical-device evidence"
+  },
+  "gates": {
+    "independentEditorial": "pending",
+    "ownerRights": "pending",
+    "ownerCrops": "pending",
+    "nativeReader": "not performed",
+    "translations": "English fallback for Hindi/Gujarati",
+    "screenReader": "not performed",
+    "physicalDevice": "not performed",
+    "fieldPerformance": "not performed",
+    "productionImport": "not authorized/performed",
+    "publicationApproval": "pending",
+    "M10": "not started; permission required",
+    "M11": "not started; release permission required"
+  },
+  "deliveryFolder": "https://drive.google.com/drive/folders/1THI4I4cSuA5Af1AmxtqfDD_aWJT-dRQ1",
+  "zip": "https://drive.google.com/file/d/1dT7lb5IM8_7bH9mNxJtm_PySS6ZZfIO_/view",
+  "preservationEvidence": "docs/editorial-production/m9/preservation.json",
+  "noPushOrDeployment": true
+}

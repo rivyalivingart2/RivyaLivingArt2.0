@@ -1,0 +1,72 @@
+{
+  "before": "2026-10-09T11:02:02.875Z",
+  "after": "2026-10-09T13:09:56.568Z",
+  "allPreM9RowsUnchanged": true,
+  "scopes": {
+    "rivya_catalogue": {
+      "preM9Rows": 120,
+      "unchanged": 120,
+      "newRows": 0
+    },
+    "rivya_content": {
+      "preM9Rows": 97,
+      "unchanged": 97,
+      "newRows": 480
+    },
+    "rivya_public_media": {
+      "preM9Rows": 131,
+      "unchanged": 131,
+      "newRows": 21
+    },
+    "rivya_business_settings": {
+      "preM9Rows": 1,
+      "unchanged": 1,
+      "newRows": 0
+    },
+    "rivya_revisions": {
+      "preM9Rows": 116,
+      "unchanged": 116,
+      "newRows": 544
+    },
+    "rivya_inquiries": {
+      "preM9Rows": 2,
+      "unchanged": 2,
+      "newRows": 0
+    },
+    "rivya_studio_orders": {
+      "preM9Rows": 5,
+      "unchanged": 5,
+      "newRows": 0
+    },
+    "rivya_studio_order_events": {
+      "preM9Rows": 6,
+      "unchanged": 6,
+      "newRows": 0
+    },
+    "rivya_inquiry_notes": {
+      "preM9Rows": 0,
+      "unchanged": 0,
+      "newRows": 0
+    },
+    "rivya_references": {
+      "preM9Rows": 0,
+      "unchanged": 0,
+      "newRows": 0
+    },
+    "rivya_staff": {
+      "preM9Rows": 3,
+      "unchanged": 3,
+      "newRows": 0
+    },
+    "rivya_privacy_controls": {
+      "preM9Rows": 5,
+      "unchanged": 5,
+      "newRows": 0
+    },
+    "rivya_erasure_ledger": {
+      "preM9Rows": 0,
+      "unchanged": 0,
+      "newRows": 0
+    }
+  }
+}

@@ -1,0 +1,972 @@
+[
+  {
+    "id": "editorial:8bb88933-5fdf-5c95-a11e-6730e3a9ece2",
+    "kind": "page",
+    "route": "/portfolio/a-bench-along-a-bright-entry-wall",
+    "title": "A bench along a bright entry wall",
+    "eyebrow": "Room placements",
+    "description": "Imagine an entry arrangement where a dark horizontal form contrasts with a bright wall.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine an entry arrangement where a dark horizontal form contrasts with a bright wall. The concept focuses on the first view on arrival while leaving practical seating and storage questions open."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare the bench outline with the wall's openings and the path into the room. Keep accessories out of the initial study so the main relationship is clear."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What is the arrival viewpoint?",
+          "Which path must remain usable?",
+          "What function is actually required?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Room placements"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P031; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Room placements"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/83c63d21-d859-4c20-b815-2eaae8a48b54",
+      "alt": "Dark bench visualization with a blue channel beside a pale entry wall",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:df5557a3-f243-51de-aed1-6f4e22d4cc1b",
+    "kind": "page",
+    "route": "/portfolio/a-dining-focus-beside-a-broad-window",
+    "title": "A dining focus beside a broad window",
+    "eyebrow": "Room placements",
+    "description": "Explore a room composition where the window view is already a strong feature.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a room composition where the window view is already a strong feature. The table concept should support that view rather than imitate every colour outside."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Keep the table's colour accent limited and compare the silhouette against the window in daylight and evening sketches. The supplied scene is a visual reference, not a real site."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What remains the main focus?",
+          "How do evening conditions change the view?",
+          "What real room dimensions would guide the brief?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Room placements"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P032; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Room placements"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/4485d058-490e-4b79-8f40-935336fb84cc",
+      "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:7fb3bdd1-d4cc-5e29-aa6e-a9c195d2164a",
+    "kind": "page",
+    "route": "/portfolio/a-round-form-in-an-angular-corner",
+    "title": "A round form in an angular corner",
+    "eyebrow": "Room placements",
+    "description": "Consider a low circular object in a room dominated by straight edges.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a low circular object in a room dominated by straight edges. The idea is to create one contrasting outline while keeping other relationships quiet."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare the round footprint with nearby seating and wall lines. Test whether the contrast remains clear without adding a second strong colour or pattern."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which straight edges define the room?",
+          "What everyday use is intended?",
+          "Which clearances require actual assessment?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Room placements"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P033; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Room placements"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/29a6138d-fe1f-41f7-88f6-2358016536ec",
+      "alt": "Round low-table visualization with brown and blue patterns in a room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:d6ddf9f2-a3a4-57ed-a4e9-9313a39dc4fe",
+    "kind": "page",
+    "route": "/portfolio/a-console-at-the-end-of-a-sightline",
+    "title": "A console at the end of a sightline",
+    "eyebrow": "Room placements",
+    "description": "Imagine a console placed at the end of a hallway view.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a console placed at the end of a hallway view. The concept asks how one identifiable silhouette could provide a visual destination without filling the passage with detail."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Develop the distant outline before the surface pattern. Compare the end view with the side view encountered on approach."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What can be recognised from a distance?",
+          "What becomes visible on approach?",
+          "What access restrictions remain unknown?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Room placements"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P034; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Room placements"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/8542acee-a36f-4ea7-a6b6-b4b1a6498242",
+      "alt": "Brown and blue waterfall-end table visualization in a dark room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:9c1529bd-b8b2-5ad4-adcd-9099c0f47389",
+    "kind": "page",
+    "route": "/portfolio/a-tray-as-a-movable-visual-accent",
+    "title": "A tray as a movable visual accent",
+    "eyebrow": "Room placements",
+    "description": "Explore a room arrangement where a tray-like decorative form supplies a contained colour accent.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a room arrangement where a tray-like decorative form supplies a contained colour accent. The concept concerns composition and does not assume food, heat or carrying suitability."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Place the accent in two drawn positions and compare its relationship to nearby books and seating. Keep functional use questions separate from the styled reference."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Where does the accent work best?",
+          "What use is being proposed?",
+          "Which contact and handling properties need confirmation?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Room placements"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P035; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Room placements"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/ef5d89bb-a7be-4516-b4d8-846264c44404",
+      "alt": "Blue and gold-coloured rectangular tray with handles in a room scene",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:180eca71-36a3-50fc-a0a7-9bd4846544e4",
+    "kind": "page",
+    "route": "/portfolio/a-floral-object-away-from-the-room-s-main-focus",
+    "title": "A floral object away from the room's main focus",
+    "eyebrow": "Room placements",
+    "description": "Imagine a small floral display positioned for a more private, close viewing moment rather than the room's entrance.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a small floral display positioned for a more private, close viewing moment rather than the room's entrance. The concept gives the object a quieter role."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare a side-position composition with a central one. Keep the surrounding view simple enough to see the outline without suggesting the pictured plinth or room is part of a real commission."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Who would view it closely?",
+          "What meaning should remain private?",
+          "What actual placement conditions need review?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Room placements"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P036; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Room placements"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/e6a7162c-7d4d-4280-bb78-ff31fc426b7b",
+      "alt": "Clear upright floral block with red and cream roses on a dark plinth",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:9203a477-823a-587a-ab51-442d73a70f8d",
+    "kind": "page",
+    "route": "/portfolio/a-low-table-between-unlike-chairs",
+    "title": "A low table between unlike chairs",
+    "eyebrow": "Room placements",
+    "description": "Explore a shared centre between two visually different seats.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a shared centre between two visually different seats. The concept asks how the connecting object could relate to both without copying either."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Use a simple round outline and compare colour emphasis against each chair separately. Record each chair's practical relationship to the proposed piece as an unresolved use question."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What should connect the seats?",
+          "Which contrast should remain?",
+          "What dimensions and reach need checking?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Room placements"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P037; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Room placements"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/29a6138d-fe1f-41f7-88f6-2358016536ec",
+      "alt": "Round low-table visualization with brown and blue patterns in a room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:629a3977-1362-57e2-a7be-85701875f7fc",
+    "kind": "page",
+    "route": "/portfolio/a-bench-at-a-change-in-room-direction",
+    "title": "A bench at a change in room direction",
+    "eyebrow": "Room placements",
+    "description": "Consider an entry form positioned near a turn into another space.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider an entry form positioned near a turn into another space. The study focuses on how an elongated silhouette is seen progressively rather than all at once."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Draw the approach sequence in three views. Keep the end profile legible and avoid assuming that a visually appealing position is clear enough for movement."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What appears first?",
+          "Where does the full outline become visible?",
+          "What circulation and access assessment is needed?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Room placements"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P038; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Room placements"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/648d63af-46f5-4b18-92ca-f0fa1731b417",
+      "alt": "Portrait view of a dark bench with a blue channel",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:7f10a12f-65bd-57de-a151-ce928a88b40f",
+    "kind": "page",
+    "route": "/portfolio/a-console-beneath-an-asymmetrical-arrangement",
+    "title": "A console beneath an asymmetrical arrangement",
+    "eyebrow": "Room placements",
+    "description": "Imagine a console supporting a wall arrangement whose visual weight is off-centre.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a console supporting a wall arrangement whose visual weight is off-centre. The concept explores whether the horizontal object can provide calm without forcing symmetry."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare alignment to the wall's centre, the artwork's centre and one edge. State which relationship the chosen sketch intends to preserve."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What anchors the composition?",
+          "Which alignment feels deliberate?",
+          "What site and mounting details remain unknown?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Room placements"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P039; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Room placements"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/80786409-3a54-46bc-9a45-a3ca0784002b",
+      "alt": "Close view of a console corner and blue waterfall-like channel",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:4d4a2b11-bd5b-52f4-a5ff-8b9f9f8d2fbd",
+    "kind": "page",
+    "route": "/portfolio/a-blue-accent-repeated-across-a-room",
+    "title": "A blue accent repeated across a room",
+    "eyebrow": "Room placements",
+    "description": "Explore a room concept where a blue detail in a table relates to one existing artwork.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a room concept where a blue detail in a table relates to one existing artwork. The study limits repetition to two points rather than distributing matching accents everywhere."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Mark both accents on a room photograph or sketch and compare their relative strength. Leave other surfaces quieter until the relationship is resolved."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which accent leads?",
+          "Can both be seen together?",
+          "What actual colours and viewing conditions need confirmation?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Room placements"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P040; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Room placements"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/4485d058-490e-4b79-8f40-935336fb84cc",
+      "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+]

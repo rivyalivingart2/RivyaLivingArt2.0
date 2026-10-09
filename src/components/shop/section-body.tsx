@@ -10,5 +10,5 @@ export function SectionBody({section,unavailable=[],mediaPaths}:{section:Content
  {section.material&&<dl>{Object.entries(section.material).filter(([,v])=>v.trim()).map(([key,value])=><div key={key}><dt><JourneyText text={key[0].toUpperCase()+key.slice(1)}/></dt><dd>{value}</dd></div>)}</dl>}
  {section.image&&<EditorialImage usage={section.image} available={!mediaPaths||mediaPaths.includes(section.image.path)}/>}
  {section.action&&safeEditorialHref(section.action.href)&&!unavailable.includes(section.action.href)&&<p><Link href={section.action.href}>{section.action.label} ↗</Link></p>}
- {section.policyHref&&safeEditorialHref(section.policyHref)&&!unavailable.includes(section.policyHref)&&<p><Link href={section.policyHref}><JourneyText text="Read the related policy ↗"/></Link></p>}</>;
+ {section.policyHref&&section.policyHref!==section.action?.href&&safeEditorialHref(section.policyHref)&&!unavailable.includes(section.policyHref)&&<p><Link href={section.policyHref}><JourneyText text="Read the related policy ↗"/></Link></p>}</>;
 }

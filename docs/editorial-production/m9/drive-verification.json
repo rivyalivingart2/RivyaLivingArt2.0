@@ -1,0 +1,313 @@
+{
+  "at": "2026-10-09T13:15:18.072Z",
+  "folderId": "1THI4I4cSuA5Af1AmxtqfDD_aWJT-dRQ1",
+  "files": 34,
+  "checks": [
+    {
+      "name": "journal-drafts-v1.json",
+      "driveId": "1UkRdbwnzcdgDqhvLXkOvBqdHpxbWlVbB",
+      "kind": "delivery",
+      "bytes": 514685,
+      "sha256": "f948805043b1c21da27dae424d6950551c9077be546a2f43169f20ee110c66a3",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "portfolio-drafts-v1.json",
+      "driveId": "1oD-bKYJhgZubtCUV0LXGB5VfyXJyA0T2",
+      "kind": "delivery",
+      "bytes": 513670,
+      "sha256": "705f8a4ecf6559c92c0db1c5898ffd1d8ba8854e219004331086a23b91627b55",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "testimonials-drafts-v1.json",
+      "driveId": "1rnpehHa_vkXk95sMjkVg8bd9A8lLdCkW",
+      "kind": "delivery",
+      "bytes": 281510,
+      "sha256": "184bab13f322d94ca306620e4475640e1b199e06ece3e470339cfd0673eb7f9c",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "faqs-drafts-v1.json",
+      "driveId": "1usYZp1QnGfng09odOH96PnmjqpCm35vx",
+      "kind": "delivery",
+      "bytes": 241787,
+      "sha256": "2b527c1a6170f5cc65870c65b84e3d48ebb55aaabe7748eec4300e3754fac6ca",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "journal-review-v1.html",
+      "driveId": "1kXgOqXeMJh1xRWC5G8KoUamrAS3Zw1xg",
+      "kind": "delivery",
+      "bytes": 321752,
+      "sha256": "4d61e27b99b5812e8800a5890252fdf16b140b882de73a25238174e34cb73f55",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "portfolio-review-v1.html",
+      "driveId": "1kD16zJWtXnjRUw9OeujolF-5AslKqgDd",
+      "kind": "delivery",
+      "bytes": 292935,
+      "sha256": "82ecf7e57fb24c764c76e442c559d7b6dfa34cd5435500be2d5c097c146b4430",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "testimonials-review-v1.html",
+      "driveId": "1_0GsBQxMKtTohNJ9XOfb9KXZZ0RrHPxY",
+      "kind": "delivery",
+      "bytes": 182819,
+      "sha256": "a6c81337efbf7076d02f3e45097bd3082f5b8f9a508e5ae049577278d173d44b",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "faqs-review-v1.html",
+      "driveId": "1ND20QYHsoSn2_PERvObVG2aCM-IlN2uH",
+      "kind": "delivery",
+      "bytes": 141221,
+      "sha256": "92775c3ecdf7b7460d60d0cd3cf057d3029f3cb1b34fec6fc32cf81b94b28ef0",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "README.md",
+      "driveId": "1GrxsSHUa0OFbv30B9aupn-urDGUBnYOj",
+      "kind": "delivery",
+      "bytes": 2300,
+      "sha256": "3caa307e945f87adc766b656bdffd3a4f7350d3f0ae3edbd11e364eaab22bd7d",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "Rivya-M9-draft-delivery-v1.zip",
+      "driveId": "1dT7lb5IM8_7bH9mNxJtm_PySS6ZZfIO_",
+      "kind": "delivery",
+      "bytes": 11381612,
+      "sha256": "599e458ea0903ff9954b43ac151d1a3c77b97c837c69032cc30bad69cecd9be3",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "A08",
+      "driveId": "1gaGlckm2zalni3B-kF_eqvomT6F75KJk",
+      "kind": "image",
+      "bytes": 154816,
+      "sha256": "51ecf7459d5686061e08eb9adc6652b4bf9e356ac0e563259531d8131f8c803d",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "A03",
+      "driveId": "1oALYncS88GFtpPPifWOx4Mp1t6dJWXNh",
+      "kind": "image",
+      "bytes": 258778,
+      "sha256": "6934feb5740e39a5192e89d9ae506952e7f8b8ba3609f39c7eec71387a29a8be",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "A04",
+      "driveId": "13weWCZanJKnU42-1nwKGLaYTqqGvxhFJ",
+      "kind": "image",
+      "bytes": 229943,
+      "sha256": "53dfc87a74c50b6ca72a2e76e1d85df051afa01acfc434b26974f804e0cc81c8",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "A05",
+      "driveId": "1GBMEQ9cDOR00rAlYDS_XaSHGSpKf8_Vi",
+      "kind": "image",
+      "bytes": 181244,
+      "sha256": "5e14af18d1837fe803ad3dcec0a80e582b3f98d602a27bedcd6c64dfe7092d96",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "A06",
+      "driveId": "1YmRQq0Ytplnbn1eBF6p0G0_c9Zk_RKhC",
+      "kind": "image",
+      "bytes": 337148,
+      "sha256": "174e2e812ed9d275de1e773b4dcb5ce09232c48321623d2ebcce2ec12242e7b7",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "A07",
+      "driveId": "1aUfyEpQCz8gwvzK-3KGkRigW7-sLVj5u",
+      "kind": "image",
+      "bytes": 166580,
+      "sha256": "4aa4a43199f784cfc00194681a1ba9d9f46b5d4ad40c5c79151913df250fec56",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "A09",
+      "driveId": "16CUoD-mAQNIvDLdnR4asdCuGooXmpwGq",
+      "kind": "image",
+      "bytes": 239318,
+      "sha256": "0d6fc61ba74344d9df3946b4683459e543ae898a5bc3f86bd2dfa27d36083fc8",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "A10",
+      "driveId": "1jvuT1giK5nINkGJrWFIi6rzAsm21QoTD",
+      "kind": "image",
+      "bytes": 222318,
+      "sha256": "cc7e1bc615987e93d14e4c07fee1a4dc961ae1e6c185902ffb5dbbd5ae0d570e",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B01",
+      "driveId": "1hpbOSi0YnKJApRvYTTTgE7UZOILQFxLV",
+      "kind": "image",
+      "bytes": 177210,
+      "sha256": "e2b1a4fb6933d4d5332cef0f669b178fa6b9f4c03420989c7375004e4d88bd8c",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B02",
+      "driveId": "1kvUJO-pPx_se9qR61J3ReUqVQXlLqgbn",
+      "kind": "image",
+      "bytes": 170124,
+      "sha256": "92e6e4b693263a146a0ac81c5a568bfb937ad97c0fbed9797e55754469e28d08",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B03",
+      "driveId": "1yEh1wL5EENQ1n6E7byX74XHVFspr9U1j",
+      "kind": "image",
+      "bytes": 105278,
+      "sha256": "8960fe2400bf742c2ff9af63827f6601882eacee7f06e3248bde80dda0c761ed",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B04",
+      "driveId": "1lV1ok8vQJyvOHalpTslBsJEIeIVxQzs0",
+      "kind": "image",
+      "bytes": 117536,
+      "sha256": "c4ce5a49bb6b84de4bd24692890ce865d3777f827c7ea54b1e5e73e4e6f9159d",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B05",
+      "driveId": "1UApTINeM2uBvf1bssh4Ta30Khaau5cBr",
+      "kind": "image",
+      "bytes": 282274,
+      "sha256": "a08b5141e6fa7816ae648fe03308daf5c8a2e33786a1e441afe7ffa14c53dcc1",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B06",
+      "driveId": "15ZK8MnZRREQkkVPWf3q_sGHHdAYXLfL3",
+      "kind": "image",
+      "bytes": 271532,
+      "sha256": "e9a61ca186156814e46407ada1f4038b628be96e88ce213a3134e2188ec0166a",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B07",
+      "driveId": "1OychqhpXff0OkWK5AtNUVufQwH4CSVXU",
+      "kind": "image",
+      "bytes": 277074,
+      "sha256": "36d029dfc25995fd3babaee0f5db163d1c23227922d583a70a383ab61bc31cc0",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B08",
+      "driveId": "188sng8lekNbyJaklGAcpFOva7Jr8aZ90",
+      "kind": "image",
+      "bytes": 270340,
+      "sha256": "a7580f2e54ee64a58d9057b94ccbf8d71a593beeef41084ce990bf9655a0c577",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B09",
+      "driveId": "1Mkvj6r0xks2Hk_1h1RI_Ud1D8r_EfYbr",
+      "kind": "image",
+      "bytes": 138914,
+      "sha256": "2a640373e3a89fdd8b132514b619a83eafa8c1f5d5729d57aeb69f086beb83ac",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B10",
+      "driveId": "1xmFOottV25HIooMNlPLBLgPo2B4Rz3Tn",
+      "kind": "image",
+      "bytes": 149662,
+      "sha256": "8c32222ba38a27e8d15fc6a6729a99c479cc0f1778fb637f16e1920d1c58d344",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B11",
+      "driveId": "1G56AcY23XamdypLk8OThslv0FdXezV9B",
+      "kind": "image",
+      "bytes": 129885,
+      "sha256": "bcc867c8bb9b3a600468a4402805387d1cb8efaf8be43828666886a9882141c7",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B12",
+      "driveId": "1iKBoUArC_a7t_UhXyJtC_7z3i5_wat7T",
+      "kind": "image",
+      "bytes": 85377,
+      "sha256": "93dfc9509e97a21a34467bde29b111979be43282f303c6acb58c47444e505eb7",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "B13",
+      "driveId": "15SQHA8UyixNCVSDnVh4Ti3ELAX7BEXUv",
+      "kind": "image",
+      "bytes": 163614,
+      "sha256": "73f5185c1e8360bb074ff13e0dfe93ebaf815f9a677d8d156c5de73e5f2c7ceb",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "M9-material-visualization.mp4",
+      "driveId": "1gCAygdFVKghOVG6e18Ls4WdA2ANDbbap",
+      "kind": "film",
+      "bytes": 2135160,
+      "sha256": "61d4633578353e813e64506877eed198bc682b6424701b7783720af51530869d",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "M9-material-visualization.webm",
+      "driveId": "1fh_hMhg5Uf6MfBesDMDkuHS6aB96uggq",
+      "kind": "film",
+      "bytes": 1649274,
+      "sha256": "ba77d14e1d380f382bbc86af1c5e8533ad3e8a0ad2bb604d06506b3da5b216c8",
+      "parentVerified": true,
+      "bytesVerified": true
+    },
+    {
+      "name": "M9-material-visualization-poster.jpg",
+      "driveId": "1xte7tt0c-QIIwgISCEy5CmHL7YhDlxcl",
+      "kind": "film",
+      "bytes": 98481,
+      "sha256": "e7dec2a8d6972a0825caf57aae320db7b1a0c319eb2f7a3d5581ba9190040caf",
+      "parentVerified": true,
+      "bytesVerified": true
+    }
+  ]
+}

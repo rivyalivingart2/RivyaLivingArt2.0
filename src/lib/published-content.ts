@@ -33,6 +33,7 @@ export const publishedContent=cache(async(locale:Locale='en',route?:string,snaps
   // Only public fields leave the persistence layer. Drafts and extra stored keys never do.
   const publicDocument:PublishedContentDocument={id:d.id,kind:d.kind,route:d.route,title:d.title,eyebrow:d.eyebrow,description:d.description,publishedRevision:version,availableEditorialLanguages:publicDiscovery(original).languages,
    ...(d.discovery?{discovery:d.discovery}:{}),
+   ...(d.film?{film:d.film}:{}),
    sections:d.sections.map(b=>({id:b.id,heading:b.heading,paragraphs:[...b.paragraphs],checklist:b.checklist,body:b.body,enabled:b.enabled,group:b.group,stage:b.stage,layout:b.layout,policyHref:b.policyHref,image:b.image,action:b.action,material:b.material})),
    ...(d.headerImage?{headerImage:d.headerImage}:{}),
    ...(d.featuredArticleIds?{featuredArticleIds:[...d.featuredArticleIds]}:{}),

@@ -1,0 +1,892 @@
+[
+  {
+    "id": "article:9b3112fd-2661-5788-af19-22fc55c664ed",
+    "kind": "article",
+    "route": "/journal/comparing-a-colour-reference-in-daylight-and-evening-light",
+    "title": "Comparing a colour reference in daylight and evening light",
+    "eyebrow": "Colour and light",
+    "description": "A colour reference is more useful when the lighting around it is recorded.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A colour reference is more useful when the lighting around it is recorded. Comparing daylight and evening views can clarify which appearance you prefer without assuming either image is a precise match."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Photograph the reference in its surroundings at the times the room is normally used. Note which lamps are on and whether curtains are open. Keep the viewpoint consistent. Describe the difference in warmth, contrast and prominence rather than changing a colour name after every photograph."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A blue accent may feel quieter against a darker evening room and stronger beside a bright window. The preference may concern contrast more than the exact blue."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which viewing condition matters most?",
+          "What changed besides the colour?",
+          "What needs confirmation beyond the photographs?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Images and screens cannot guarantee a finished match. Confirm colour expectations with the atelier for the actual proposed piece."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J041; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/fc349ca1-d76a-4422-8548-db00d8a77fa4",
+      "alt": "Abstract navy flowing texture with gold-coloured streaks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:2ac1ca1d-4506-5227-a705-2e1e37a72f2f",
+    "kind": "article",
+    "route": "/journal/choosing-a-reference-colour-that-has-context",
+    "title": "Choosing a reference colour that has context",
+    "eyebrow": "Colour and light",
+    "description": "A colour swatch without context leaves out the surfaces that influence how it is perceived.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A colour swatch without context leaves out the surfaces that influence how it is perceived. Include the neighbouring colours that will actually remain in the room."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Place the reference beside photographs of the surrounding wall, floor and furniture. Label each image's source and lighting. Choose the relationship you want: close tonal agreement, a restrained accent or a stronger contrast. Keep that intention next to the reference."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A muted blue beside warm brown communicates a different relationship from the same blue against a pale wall. The brief should identify which pairing matters."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which surrounding colour is fixed?",
+          "Is contrast or similarity the aim?",
+          "Which reference shows that relationship clearly?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not treat photographed combinations as calibrated samples or evidence of material compatibility."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J042; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/4485d058-490e-4b79-8f40-935336fb84cc",
+      "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:f4d92243-e173-5e30-ab28-e79734370dc3",
+    "kind": "article",
+    "route": "/journal/why-screenshots-are-a-starting-point-for-colour-conversations",
+    "title": "Why screenshots are a starting point for colour conversations",
+    "eyebrow": "Colour and light",
+    "description": "A screenshot can begin a colour conversation, but it loses information about the original image, display and viewing conditions.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A screenshot can begin a colour conversation, but it loses information about the original image, display and viewing conditions. Preserve its context so it is not mistaken for an exact specification."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Record where the screenshot came from and which area interests you. Include the uncropped view where permitted. Describe the desired effect in words and flag any filters or edits you know about. Ask how the colour direction can be confirmed for the proposed work."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A screenshot of a room may be useful for the balance of dark and light areas even when the pictured hue cannot be reproduced exactly."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What is the original source?",
+          "Which part matters?",
+          "What should the screenshot help decide?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A digital reference does not establish pigment, finish, colour accuracy or a guaranteed match."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J043; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/bc94f146-d62a-4192-bf04-1a61190c6825",
+      "alt": "Single blue and clear bangle with gold-coloured flecks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:d01129ef-ef04-5f43-ac29-4a286614ef3c",
+    "kind": "article",
+    "route": "/journal/describing-subtle-contrasts-without-a-colour-code",
+    "title": "Describing subtle contrasts without a colour code",
+    "eyebrow": "Colour and light",
+    "description": "Subtle contrast is easier to discuss through relationships than through a single adjective.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Subtle contrast is easier to discuss through relationships than through a single adjective. Describe what should stand out and what should remain close in tone."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Choose two adjacent areas in a reference. Note whether their difference comes from lightness, apparent transparency, pattern or colour. Write one preferred relationship and one contrast that would feel too strong. Compare at the scale the object will normally be viewed."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A narrow blue channel may be distinct from surrounding grain without becoming the first thing noticed. That hierarchy is more informative than simply asking for “subtle blue.”"
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What should be noticed first?",
+          "Which contrast should remain quiet?",
+          "Does the whole-object view support the close-up?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A reference cannot determine how the finished materials will interact under every light. Keep the final review specific to the agreed proposal."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J044; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/faaa14a1-1fe7-4514-8a6d-2304701eb0cb",
+      "alt": "Stack of wavy-edged blue coasters with gold-coloured rims",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:0d427c6b-28b8-5725-aad2-399a8a9c2ccd",
+    "kind": "article",
+    "route": "/journal/organising-several-colour-references-by-priority",
+    "title": "Organising several colour references by priority",
+    "eyebrow": "Colour and light",
+    "description": "Several colour references need a hierarchy.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Several colour references need a hierarchy. Otherwise the reader may assume every colour is equally important or that all must appear in one piece."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Arrange references into primary direction, supporting relationship and optional idea. Give each a short reason. Remove examples that repeat the same point without adding information. Keep incompatible alternatives on separate pages so they are not read as one palette."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A dark blue room reference and a pale floral reference may represent two different directions. Labelling them as alternatives prevents an accidental combined brief."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which reference leads?",
+          "Which supports it?",
+          "Which is an alternative rather than an addition?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Priorities do not guarantee availability or exact matching. The proposed palette still requires discussion and approval."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J045; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/fc349ca1-d76a-4422-8548-db00d8a77fa4",
+      "alt": "Abstract navy flowing texture with gold-coloured streaks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:f7a93f41-d5b9-5137-a3a1-88a381ebb533",
+    "kind": "article",
+    "route": "/journal/a-note-taking-method-for-colour-decisions",
+    "title": "A note-taking method for colour decisions",
+    "eyebrow": "Colour and light",
+    "description": "A colour decision log should record why a choice changed.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A colour decision log should record why a choice changed. A folder of unlabeled images can preserve options while losing the reasoning behind them."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "For each decision, note the date, reference, observation and current status. Separate “preferred” from “agreed.” When a new reference replaces an earlier one, retain the earlier entry with a superseded label. Link the decision to the relevant proposal version."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "If a stronger accent is rejected because it competes with wall art, record that reason. It may remain useful when another reference is considered later."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Why was the option selected?",
+          "What is its status?",
+          "Which proposal does the note refer to?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A personal decision log is not proof of atelier acceptance. Agreed details belong in the confirmed specification."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J046; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/4485d058-490e-4b79-8f40-935336fb84cc",
+      "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:afe55536-3d63-5a05-aa96-e66500755661",
+    "kind": "article",
+    "route": "/journal/separating-a-camera-effect-from-a-colour-preference",
+    "title": "Separating a camera effect from a colour preference",
+    "eyebrow": "Colour and light",
+    "description": "Camera effects can make a reference attractive for reasons unrelated to the proposed material colour.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Camera effects can make a reference attractive for reasons unrelated to the proposed material colour. Identifying those effects keeps the brief focused on what you actually want."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Look for unusually bright highlights, darkened corners, shallow focus and strong surrounding colour casts. Record these as possible image effects, not certain diagnoses. Compare a second view where available. Describe the preferred object appearance separately from the photograph's mood."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A dramatic close-up may owe much of its contrast to lighting. You might prefer the narrow colour accent while not wanting the same dramatic room atmosphere."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What belongs to the object?",
+          "What may belong to the photograph?",
+          "Which preference survives a plainer view?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not assume you can reverse image processing or recover an accurate colour from a screenshot."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J047; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/bc94f146-d62a-4192-bf04-1a61190c6825",
+      "alt": "Single blue and clear bangle with gold-coloured flecks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:aec447b1-6682-5fbf-ad10-2dc541228fe8",
+    "kind": "article",
+    "route": "/journal/making-room-for-natural-variation-in-a-visual-brief",
+    "title": "Making room for natural variation in a visual brief",
+    "eyebrow": "Colour and light",
+    "description": "A visual brief can allow variation without becoming vague.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A visual brief can allow variation without becoming vague. State what should remain consistent and which differences are acceptable for discussion."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Identify the repeated relationship, such as a narrow accent beside a broader patterned area. List features that may vary in position or intensity. Ask how variation will be represented in the proposal and reviewed. Avoid promising that a generated pattern can be reproduced mark for mark."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A brief may value the direction of grain-like lines while allowing their exact arrangement to differ. That is a clearer instruction than “make it natural.”"
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What must remain consistent?",
+          "What may vary?",
+          "How will the proposed variation be reviewed?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "The appearance and extent of real variation depend on the confirmed materials and process. An illustration cannot establish those facts."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J048; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/faaa14a1-1fe7-4514-8a6d-2304701eb0cb",
+      "alt": "Stack of wavy-edged blue coasters with gold-coloured rims",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:d791ee4b-ebc5-5073-a6ee-d18e383f65da",
+    "kind": "article",
+    "route": "/journal/discussing-an-accent-colour-without-overwhelming-a-space",
+    "title": "Discussing an accent colour without overwhelming a space",
+    "eyebrow": "Colour and light",
+    "description": "An accent colour works through its relationship to the whole composition.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "An accent colour works through its relationship to the whole composition. Discussing its area and position can be as useful as naming the hue."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Mark the accent on a whole-object reference and compare it with the surrounding room. Try a quieter and a stronger version in a simple sketch. Describe whether the accent should guide attention, connect to another object or remain a small surprise."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A blue strip near an edge may connect visually to a nearby artwork without making the entire object blue. The brief can focus on that role."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What role does the accent play?",
+          "How much attention should it receive?",
+          "What existing feature does it relate to?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A sketch establishes an intention, not a final colour distribution or exact fabrication result."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J049; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/fc349ca1-d76a-4422-8548-db00d8a77fa4",
+      "alt": "Abstract navy flowing texture with gold-coloured streaks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:e711cda5-adbb-5272-a23f-870118c448bd",
+    "kind": "article",
+    "route": "/journal/reviewing-colour-notes-before-approving-a-proposal",
+    "title": "Reviewing colour notes before approving a proposal",
+    "eyebrow": "Colour and light",
+    "description": "Before approving a proposal, review colour notes as a set rather than as separate messages.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Before approving a proposal, review colour notes as a set rather than as separate messages. Contradictory references are easier to resolve before they become instructions."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Collect the current proposal, the leading reference and the decision log. Check that each uses the same version and status. Identify any remaining mismatch between words and images. Ask for clarification on unresolved points rather than assuming the latest image overrides earlier written detail."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A note asking for a quiet accent may conflict with a newly added saturated reference. State which intention should control the next revision."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Are the references current?",
+          "Do words and images agree?",
+          "What remains to be confirmed explicitly?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Approval should concern the actual agreed design and specification. A collection of inspiration images is not itself that specification."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J050; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/4485d058-490e-4b79-8f40-935336fb84cc",
+      "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+]

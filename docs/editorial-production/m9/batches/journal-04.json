@@ -1,0 +1,896 @@
+[
+  {
+    "id": "article:324812d4-1a64-53e0-af37-1523d21351a8",
+    "kind": "article",
+    "route": "/journal/a-vocabulary-for-transparency-and-depth",
+    "title": "A vocabulary for transparency and depth",
+    "eyebrow": "Material appearance",
+    "description": "Words about transparency can describe what is visible without claiming how a material is made.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Words about transparency can describe what is visible without claiming how a material is made. Start with the image's observable layers."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Describe whether background shapes can be seen, whether edges appear clear or cloudy and where colour seems concentrated. Compare a whole-object view with a detail. Use phrases such as “appears translucent in this image” when the evidence is only photographic."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A blue channel may show lighter areas near an edge and darker areas in its centre. That is an observation about the image, not a measurement of depth or a formula."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What can be seen through the surface?",
+          "Where does apparent depth change?",
+          "Which words describe appearance rather than properties?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "An image cannot certify composition, clarity, ageing behaviour or performance. Confirm material details separately."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J031; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/49508ae8-acd9-435f-b2b8-3676150e579c",
+      "alt": "Close view of a clear cube containing a gold-coloured lattice and blue forms",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    },
+    "film": "resin-pour"
+  },
+  {
+    "id": "article:6f2d191b-f703-575d-af92-a48e84f4365d",
+    "kind": "article",
+    "route": "/journal/reading-reflections-in-a-material-photograph",
+    "title": "Reading reflections in a material photograph",
+    "eyebrow": "Material appearance",
+    "description": "Reflections can reveal viewing conditions while also disguising surface details.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Reflections can reveal viewing conditions while also disguising surface details. Reading them carefully helps avoid confusing the room reflected in a surface with the surface itself."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Identify bright shapes that may come from windows or lights. Compare their direction with nearby features. Look for another angle before describing a mark as part of the material. If uncertain, record both interpretations and request clarification."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A pale stripe across a dark top might be a window reflection rather than a coloured band. Naming it as a reflection candidate keeps the brief accurate."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What might be reflected?",
+          "Does another view resolve it?",
+          "Which detail remains uncertain?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A photograph cannot establish gloss level, scratch resistance or surface condition with certainty. Do not diagnose a defect from a single reflected highlight."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J032; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/ac0740bf-ddaa-4d66-87e7-3b38c133e55e",
+      "alt": "Detail of overlapping brown and blue coaster forms",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    },
+    "film": "resin-pour"
+  },
+  {
+    "id": "article:f9b1bc7c-1897-5407-a6c3-7a5960cf5618",
+    "kind": "article",
+    "route": "/journal/separating-timber-grain-from-screen-colour",
+    "title": "Separating timber grain from screen colour",
+    "eyebrow": "Material appearance",
+    "description": "Grain-like pattern and screen colour are separate observations.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Grain-like pattern and screen colour are separate observations. A reference can communicate the rhythm of a pattern even when its displayed colour is unreliable."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Describe line direction, contrast and spacing before naming a hue. Record which of these matters most. Compare the same reference at whole-object and detail scale. Avoid assigning a timber species unless a reliable source identifies it."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A sweeping pattern may be the attraction even if the warm brown shown on one screen looks cooler on another. The brief can prioritise pattern while leaving colour confirmation open."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Is pattern or colour the priority?",
+          "What scale is the detail shown at?",
+          "What material information needs a source?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Screen images do not identify species, provenance, finish or an exact colour match. Those belong in the confirmed specification."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J033; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/fc349ca1-d76a-4422-8548-db00d8a77fa4",
+      "alt": "Abstract navy flowing texture with gold-coloured streaks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:828c06c7-8b21-5bb1-a3fa-e227d05ad875",
+    "kind": "article",
+    "route": "/journal/comparing-a-macro-image-with-a-whole-object-view",
+    "title": "Comparing a macro image with a whole-object view",
+    "eyebrow": "Material appearance",
+    "description": "A macro image explains a detail; a whole-object view explains where that detail belongs.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A macro image explains a detail; a whole-object view explains where that detail belongs. Pairing them prevents a small feature from being mistaken for the dominant appearance."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Label the detail's location on the wider image. Compare its visual importance from near and far. Note whether the close-up exaggerates texture, contrast or depth relative to normal viewing. Keep both views in the reference set with different captions."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A gold-coloured fleck may dominate a close-up yet be subtle across the object. The brief should say whether that subtlety or prominence is desired."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Where is the detail located?",
+          "How prominent is it in the whole?",
+          "Does the close-up change the intended emphasis?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A close-up does not establish the physical size of a feature unless a trustworthy scale reference is provided."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J034; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/f4438c18-ad91-4131-b5a1-53983954fed4",
+      "alt": "Close view of brown grain-like lines and a blue channel at a waterfall edge",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:ffac7367-1398-548f-a1dc-0abc344d4727",
+    "kind": "article",
+    "route": "/journal/why-a-visual-reference-is-not-a-material-certificate",
+    "title": "Why a visual reference is not a material certificate",
+    "eyebrow": "Material appearance",
+    "description": "A visual reference and a material certificate answer different questions.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A visual reference and a material certificate answer different questions. The first can show an appearance; the second must come from an appropriate source and identify what it covers."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "For each reference, write one visible observation and one claim it cannot support. Keep documents about material identity or testing separate from mood images. If a property matters to the intended use, ask what evidence is available for the actual proposed material and finish."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A glossy blue surface can suggest a colour direction. It cannot establish heat resistance, food-contact suitability or a certification simply because an image includes a cup."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What does the image actually show?",
+          "Which property matters to use?",
+          "What evidence would answer that question?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not create performance claims from props, filenames or generated imagery. Unverified properties remain questions."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J035; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/49508ae8-acd9-435f-b2b8-3676150e579c",
+      "alt": "Close view of a clear cube containing a gold-coloured lattice and blue forms",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    },
+    "film": "resin-pour"
+  },
+  {
+    "id": "article:46150b7e-e1d0-57ad-a0c5-a6df3f2f009a",
+    "kind": "article",
+    "route": "/journal/describing-a-polished-surface-without-assuming-its-specification",
+    "title": "Describing a polished surface without assuming its specification",
+    "eyebrow": "Material appearance",
+    "description": "A polished-looking surface can be described without guessing its finish system.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A polished-looking surface can be described without guessing its finish system. Focus on how light and surrounding shapes appear in the image."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Note whether reflections look sharp or diffuse and whether the edge reads as continuous or interrupted. Compare more than one angle if available. State which visual quality you prefer, then ask how the proposed finish would be specified and reviewed."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "“I prefer a calm, continuous reflection” is a visual preference. “This has a particular coating” is a technical claim that requires a source."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which reflection quality matters?",
+          "Is it consistent across views?",
+          "What finish information needs confirmation?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Appearance alone does not establish coating type, durability, cleaning method or maintenance needs."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J036; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/ac0740bf-ddaa-4d66-87e7-3b38c133e55e",
+      "alt": "Detail of overlapping brown and blue coaster forms",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:797d0129-d443-5c03-a778-b9e3bda6ecfa",
+    "kind": "article",
+    "route": "/journal/questions-to-ask-when-a-finish-looks-different-in-two-photographs",
+    "title": "Questions to ask when a finish looks different in two photographs",
+    "eyebrow": "Material appearance",
+    "description": "Different photographs can show the same surface differently because the viewing conditions differ.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Different photographs can show the same surface differently because the viewing conditions differ. Begin by comparing the conditions before deciding the finish has changed."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "List the light source, camera angle, surrounding colours and image crop where known. Mark unknowns rather than filling them in. Ask for a contextual view or clarification tied to the actual piece. Keep the preferred appearance separate from a claim about what caused the difference."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A warm room light and a daylight window can produce different-looking photographs. The useful request is for clarification under relevant conditions, not an automatic demand to reproduce one screenshot."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which conditions are known?",
+          "What remains unexplained?",
+          "Which view is relevant to the intended placement?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not diagnose a material problem or promise a colour match from this comparison."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J037; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/fc349ca1-d76a-4422-8548-db00d8a77fa4",
+      "alt": "Abstract navy flowing texture with gold-coloured streaks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:74315e65-5294-55aa-a05f-4e9de06b0b23",
+    "kind": "article",
+    "route": "/journal/recording-material-preferences-in-plain-language",
+    "title": "Recording material preferences in plain language",
+    "eyebrow": "Material appearance",
+    "description": "Plain language can produce a more useful material discussion than uncertain technical terms.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Plain language can produce a more useful material discussion than uncertain technical terms. Describe the visual relationship you want before attempting to name a process."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Write observations in pairs: clear beside opaque, fine pattern beside broad colour, quiet edge beside a stronger centre. Rank the pairs by importance. Add a reference for each and explain what part of the reference matters. Leave composition and performance as separate questions."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A request for “a restrained blue accent beside visible grain” communicates a direction without claiming a resin formula, timber species or finishing technique."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which relationship is essential?",
+          "Which reference explains it?",
+          "Which technical term needs clarification?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Descriptive language supports a brief but does not replace an agreed material specification or care instructions."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J038; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/f4438c18-ad91-4131-b5a1-53983954fed4",
+      "alt": "Close view of brown grain-like lines and a blue channel at a waterfall edge",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:649ab72e-67a6-5f23-a4b7-d575e22d9c7d",
+    "kind": "article",
+    "route": "/journal/what-a-reference-detail-leaves-outside-the-frame",
+    "title": "What a reference detail leaves outside the frame",
+    "eyebrow": "Material appearance",
+    "description": "A cropped detail can hide scale, supports and the surrounding room.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A cropped detail can hide scale, supports and the surrounding room. Before using it as the main reference, list what lies outside the frame."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Pair the crop with a wider view where available. Mark the area shown and identify missing context. Decide whether the detail is being used for colour, edge shape or another specific reason. Avoid treating absent information as evidence that a feature does not exist."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A close-up of a waterfall-like corner may omit the base and opposite side. It cannot establish the whole object's construction or whether the same detail repeats."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What does the crop exclude?",
+          "Why was this detail selected?",
+          "Which wider view would help?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Missing context remains unknown. Do not invent hidden structure or an unseen installation to complete the story."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J039; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/49508ae8-acd9-435f-b2b8-3676150e579c",
+      "alt": "Close view of a clear cube containing a gold-coloured lattice and blue forms",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:285f8914-4d6a-5163-ab9f-8d11419f0fca",
+    "kind": "article",
+    "route": "/journal/building-a-material-discussion-from-observations",
+    "title": "Building a material discussion from observations",
+    "eyebrow": "Material appearance",
+    "description": "A material discussion becomes clearer when observations, preferences and questions are kept apart.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A material discussion becomes clearer when observations, preferences and questions are kept apart. This allows the atelier to respond to the actual intention rather than to an unsupported technical assumption."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Create a three-row note for each reference. First describe what is visible. Then say what you like about it. Finally ask what would need confirmation for your proposed use. Use the same format for competing references so their differences are easy to compare."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "“Blue area beside brown grain-like lines” is an observation. “I prefer a narrow colour accent” is a preference. “Which material and finish suit this use?” is the question."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What is visible?",
+          "What do you prefer?",
+          "What must be confirmed for the intended use?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "This method does not verify properties or feasibility. It prepares an honest starting point for that discussion."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J040; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/ac0740bf-ddaa-4d66-87e7-3b38c133e55e",
+      "alt": "Detail of overlapping brown and blue coaster forms",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    },
+    "film": "resin-pour"
+  }
+]

@@ -1,0 +1,892 @@
+[
+  {
+    "id": "article:adfa4ff8-617e-5121-a758-e165cea289db",
+    "kind": "article",
+    "route": "/journal/making-a-room-photograph-useful",
+    "title": "Making a room photograph useful",
+    "eyebrow": "Room observation",
+    "description": "A useful room photograph explains a decision.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A useful room photograph explains a decision. A beautiful photograph may hide the very corner, opening or obstruction that matters to a proposed piece. Start by deciding what someone who has never visited the room needs to understand."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Take one view from the normal entrance, another facing the proposed position and a closer view of any obstruction. Keep the camera level where practical. Label the position on a small sketch so the three images can be related. Note objects temporarily moved for the photograph; an empty corner can otherwise look permanently available."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A chair removed for the photograph still needs space when the room is used. Write “chair usually here” on the accompanying sketch instead of expecting the reader to infer it."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Where was the camera?",
+          "What normally occupies the proposed position?",
+          "Which view explains the constraint best?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A photograph cannot confirm dimensions, structural suitability or accurate colour. Keep personal photographs, addresses and reflective views of private areas out of the frame."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J001; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/4485d058-490e-4b79-8f40-935336fb84cc",
+      "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:931ef065-2d5a-58bf-a2dd-54b6b635aaa7",
+    "kind": "article",
+    "route": "/journal/recording-daylight-before-choosing-a-focal-piece",
+    "title": "Recording daylight before choosing a focal piece",
+    "eyebrow": "Room observation",
+    "description": "Light observations are more useful when they include when and where they were made.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Light observations are more useful when they include when and where they were made. A single bright image can suggest a room is consistently sunny even if the proposed position is shaded for most of the day."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Choose the same viewpoint at two or three times you normally use the room. Record curtains, artificial lights and weather alongside each image. Compare where highlights appear rather than ranking the photographs by attractiveness. Describe the difference in ordinary words: direct light, reflected light or a darker corner."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A surface that appears bright near the window in the morning may read quietly from the sofa in the evening. Those are two viewing conditions to discuss, not two competing specifications."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "When is the room used?",
+          "Which lights were on?",
+          "Where does glare interrupt the view?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Phone exposure changes brightness automatically. These observations do not establish UV exposure, colour accuracy or the suitability of a material for a location."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J002; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/83c63d21-d859-4c20-b815-2eaae8a48b54",
+      "alt": "Dark bench visualization with a blue channel beside a pale entry wall",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:e345391b-a21a-58fe-a804-812219a9d737",
+    "kind": "article",
+    "route": "/journal/sketching-sightlines-from-the-doorway",
+    "title": "Sketching sightlines from the doorway",
+    "eyebrow": "Room observation",
+    "description": "A doorway view helps identify what a visitor sees before entering a room.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A doorway view helps identify what a visitor sees before entering a room. It is one viewpoint among several, but it can explain why a proposed focal piece feels hidden or crowded."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Draw a simple doorway rectangle and a line toward the proposed object. Mark the objects that interrupt that line. Then repeat from the main seated position. Use different line styles for each viewpoint so the drawing remains readable. Record whether doors are normally open or closed."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A console might be visible from the hall but concealed by the open door. Sketching both door positions makes that conflict clear before discussing the console's shape."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What is seen first?",
+          "What interrupts the line of sight?",
+          "Does the seated view tell a different story?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Sightline sketches describe visibility. They do not establish safe circulation, door clearance or a final installation position."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J003; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/29a6138d-fe1f-41f7-88f6-2358016536ec",
+      "alt": "Round low-table visualization with brown and blue patterns in a room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:03b37dc3-9d8c-5b30-a82a-12c933c2c884",
+    "kind": "article",
+    "route": "/journal/mapping-the-objects-a-room-already-holds",
+    "title": "Mapping the objects a room already holds",
+    "eyebrow": "Room observation",
+    "description": "An inventory of a room's existing objects can reveal what a new piece must work with.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "An inventory of a room's existing objects can reveal what a new piece must work with. The aim is to understand relationships, not to judge which belongings deserve to stay."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "List the objects that will remain, their main visual features and their everyday uses. Put movable accessories in a separate group from furniture or fittings. Mark any object whose position is still undecided. A quick annotated photograph can keep this inventory short and concrete."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A dark cabinet, patterned rug and bright wall art each draw attention differently. Calling all three “bold” loses information; describe the cabinet's mass, the rug's pattern and the artwork's colour separately."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which objects stay?",
+          "Which positions are fixed?",
+          "What is visually or functionally important about each?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "An inventory is a planning record, not permission to replace existing objects. Do not assume the new piece should match every material already present."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J004; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/8542acee-a36f-4ea7-a6b6-b4b1a6498242",
+      "alt": "Brown and blue waterfall-end table visualization in a dark room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:2271a419-54d7-546d-af8f-f16f71a49248",
+    "kind": "article",
+    "route": "/journal/noticing-what-a-room-needs-less-of",
+    "title": "Noticing what a room needs less of",
+    "eyebrow": "Room observation",
+    "description": "Sometimes a room brief becomes clearer by naming what should be reduced: competing outlines, repeated accents or a crowded view.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Sometimes a room brief becomes clearer by naming what should be reduced: competing outlines, repeated accents or a crowded view. This is a discussion about visual priorities, not a rule that rooms must be minimal."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Look from a usual seat and list the first few things you notice. Identify the one relationship that feels unresolved. Test the idea on a photograph by covering a small area with paper rather than immediately removing furniture. Write down what becomes easier to see and what is lost."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "If covering a bright accessory makes a favourite artwork more noticeable, the useful observation is about competition for attention. It does not automatically mean the accessory should be discarded."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What competes for attention?",
+          "What becomes clearer when one element is quieter?",
+          "What should remain expressive?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A photograph flattens depth and daily activity. Any change must still support the people using the room and the objects they value."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J005; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/4485d058-490e-4b79-8f40-935336fb84cc",
+      "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:4f1a8d3f-39b1-5bd2-a463-b49f06e18b79",
+    "kind": "article",
+    "route": "/journal/planning-around-a-favourite-existing-object",
+    "title": "Planning around a favourite existing object",
+    "eyebrow": "Room observation",
+    "description": "A favourite object provides a specific starting point for a room brief.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A favourite object provides a specific starting point for a room brief. Its importance may come from memory, use or appearance; these reasons can lead to different design decisions."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Describe why the object matters before describing its colour. Record the views from which it should remain visible and any space it needs for use. Select one relationship a future piece could share with it, such as a curve or a quiet tonal contrast. Keep other similarities optional."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A family chair might be valued for its familiar silhouette rather than its timber colour. A new table could leave that outline visible without imitating the chair's finish."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What must remain visible?",
+          "Which relationship is worth carrying forward?",
+          "Which differences would be welcome?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "The existing object is a reference, not a source of verified material information. Avoid inferring its species, age or construction from appearance alone."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J006; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/83c63d21-d859-4c20-b815-2eaae8a48b54",
+      "alt": "Dark bench visualization with a blue channel beside a pale entry wall",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:035d9660-b0ee-5391-aa45-19266dea7485",
+    "kind": "article",
+    "route": "/journal/comparing-two-possible-positions-without-moving-furniture",
+    "title": "Comparing two possible positions without moving furniture",
+    "eyebrow": "Room observation",
+    "description": "Comparing two positions on paper can reveal which questions deserve a site check.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Comparing two positions on paper can reveal which questions deserve a site check. Keeping the same proposed object outline in both options makes the comparison easier to understand."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Label the options A and B on one room sketch. Record nearby openings, seating and fixed fittings in each. Use the same stated scale if you have reliable dimensions; otherwise label the study approximate. Compare normal use, visibility and unresolved access questions in separate columns."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "Option A may offer a clearer doorway view while option B sits closer to seating. Neither advantage settles the decision until the intended use is agreed."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What improves in A?",
+          "What improves in B?",
+          "Which missing fact could change the choice?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A sketch cannot confirm fit or access. Do not present a paper comparison as an approved position or use it to avoid checking the room."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J007; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/29a6138d-fe1f-41f7-88f6-2358016536ec",
+      "alt": "Round low-table visualization with brown and blue patterns in a room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:1848806f-6eac-5cfe-acc9-e54bc8c81425",
+    "kind": "article",
+    "route": "/journal/a-room-brief-for-more-than-one-user",
+    "title": "A room brief for more than one user",
+    "eyebrow": "Room observation",
+    "description": "A shared room needs a brief that makes different uses visible.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A shared room needs a brief that makes different uses visible. Combining everyone's preferences into one vague sentence can conceal practical conflicts."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Ask each regular user to describe an ordinary activity, a valued feature and a difficulty. Group answers by activity rather than by person. Note where uses happen at different times and where they overlap. Keep a short list of decisions that require a shared choice rather than implying consensus."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "One person may read beside a window while another uses the same area for conversation. The brief can preserve both activities without prematurely choosing one piece to solve everything."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which activities overlap?",
+          "Whose needs are missing from the notes?",
+          "What still needs a shared decision?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "This exercise records perspectives; it does not replace accessibility advice or determine what every user can comfortably use."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J008; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/8542acee-a36f-4ea7-a6b6-b4b1a6498242",
+      "alt": "Brown and blue waterfall-end table visualization in a dark room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:fbd30b05-16a9-5657-a4e2-00a915ca32dd",
+    "kind": "article",
+    "route": "/journal/describing-atmosphere-without-naming-a-product",
+    "title": "Describing atmosphere without naming a product",
+    "eyebrow": "Room observation",
+    "description": "Atmosphere becomes easier to discuss when adjectives are connected to visible choices.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Atmosphere becomes easier to discuss when adjectives are connected to visible choices. Words such as calm, warm or dramatic mean different things to different people."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Choose two descriptive words, then give each a concrete example from the room or a reference. Explain what you mean by the word and what you do not mean. Rank the two if they conflict. Add one practical requirement so the mood discussion stays connected to everyday use."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "“Quiet” might mean an uncluttered outline rather than pale colour. A dark, simple object could fit that intention while a pale object with a busy edge might not."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which visible feature supports the word?",
+          "What interpretation would be wrong?",
+          "Which daily use must the atmosphere support?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Mood references are subjective. They do not establish a product, finish, material performance or an exact outcome."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J009; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/4485d058-490e-4b79-8f40-935336fb84cc",
+      "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:72671b8d-3b88-5096-a214-44d793576dad",
+    "kind": "article",
+    "route": "/journal/separating-room-constraints-from-personal-preferences",
+    "title": "Separating room constraints from personal preferences",
+    "eyebrow": "Room observation",
+    "description": "Separating a constraint from a preference makes a brief easier to revise.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Separating a constraint from a preference makes a brief easier to revise. A fixed opening and a preferred colour should not carry the same status merely because both appear in one list."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Create three columns: verified site facts, preferences and questions. Put the evidence beside each fact, including who measured it and when. Give preferences a reason and a priority. Move uncertain statements into questions rather than treating confident wording as proof."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "“This door opens into the proposed position” can be checked on site. “I would like a rounded edge” is a preference to discuss. “The piece will fit through the lift” remains a question until assessed."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which statements have evidence?",
+          "Which preferences can change?",
+          "Which unknowns block the next decision?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Calling something a requirement does not prove feasibility. Final specifications and access arrangements need their own confirmation."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J010; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/83c63d21-d859-4c20-b815-2eaae8a48b54",
+      "alt": "Dark bench visualization with a blue channel beside a pale entry wall",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+]

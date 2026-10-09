@@ -1,0 +1,412 @@
+[
+  {
+    "id": "editorial:71b8df56-1030-5a76-a001-fea33c74e16d",
+    "kind": "page",
+    "route": "/faq/how-can-i-describe-the-material-appearance-i-like",
+    "title": "How can I describe the material appearance I like?",
+    "eyebrow": "Material appearance",
+    "description": "Use visible relationships: clear beside opaque, a narrow blue accent beside grain-like lines, or a quiet edge around a stronger centre.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How can I describe the material appearance I like?",
+        "paragraphs": [
+          "Use visible relationships: clear beside opaque, a narrow blue accent beside grain-like lines, or a quiet edge around a stronger centre. Explain which relationship matters most and provide a contextual reference. Keep technical properties as questions unless supported by confirmed information. A description of appearance does not identify composition, certification or a care method."
+        ],
+        "group": "Material appearance",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F031; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:fa0a2c89-1425-5f2f-ae07-386c2cf6e24d",
+    "kind": "page",
+    "route": "/faq/can-a-photograph-confirm-the-exact-material-specification",
+    "title": "Can a photograph confirm the exact material specification?",
+    "eyebrow": "Material appearance",
+    "description": "No.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can a photograph confirm the exact material specification?",
+        "paragraphs": [
+          "No. A photograph may show colour, pattern and apparent texture, but it cannot certify composition, species, finish or performance. Ask for the relevant material details for the actual proposed piece. Keep the visual reference separate from any specification or supporting document so that an attractive image is not mistaken for technical evidence."
+        ],
+        "group": "Material appearance",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F032; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:1dd412ce-ac02-576d-a398-b9e1097a5c3f",
+    "kind": "page",
+    "route": "/faq/why-can-a-surface-look-different-from-another-angle",
+    "title": "Why can a surface look different from another angle?",
+    "eyebrow": "Material appearance",
+    "description": "Viewing angle, lighting, reflections and the surrounding room can change how a surface appears in photographs.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Why can a surface look different from another angle?",
+        "paragraphs": [
+          "Viewing angle, lighting, reflections and the surrounding room can change how a surface appears in photographs. Compare contextual views and describe what differs without diagnosing the cause from one image. If the difference matters to the proposal, ask for clarification. The photographs alone do not establish a change in material or finish."
+        ],
+        "group": "Material appearance",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F033; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:d28b56ae-c2a4-52ec-a847-7a3034ecf271",
+    "kind": "page",
+    "route": "/faq/should-i-provide-a-whole-object-photo-with-a-close-up",
+    "title": "Should I provide a whole-object photo with a close-up?",
+    "eyebrow": "Material appearance",
+    "description": "Usually both are useful because they answer different questions.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Should I provide a whole-object photo with a close-up?",
+        "paragraphs": [
+          "Usually both are useful because they answer different questions. The close-up can show a boundary or pattern, while the wider image shows where it belongs and how prominent it is. Label the detail's location and purpose. Without reliable scale information, a macro photograph should not be used to infer the physical size of the feature."
+        ],
+        "group": "Material appearance",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F034; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:5425db09-4528-57d4-a8ed-9040913c3443",
+    "kind": "page",
+    "route": "/faq/how-do-i-discuss-visible-timber-grain",
+    "title": "How do I discuss visible timber grain?",
+    "eyebrow": "Material appearance",
+    "description": "Describe the visible direction, spacing and contrast of the grain-like pattern, then explain which quality you prefer.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How do I discuss visible timber grain?",
+        "paragraphs": [
+          "Describe the visible direction, spacing and contrast of the grain-like pattern, then explain which quality you prefer. Keep colour as a separate observation if it is important. Do not identify a timber species or origin from appearance alone. Any confirmed material identity belongs in the actual specification and supporting source information."
+        ],
+        "group": "Material appearance",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F035; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:baaf25ef-0c80-52a5-a748-ab62cfd7257c",
+    "kind": "page",
+    "route": "/faq/can-i-ask-about-transparency-or-opacity",
+    "title": "Can I ask about transparency or opacity?",
+    "eyebrow": "Material appearance",
+    "description": "Yes.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I ask about transparency or opacity?",
+        "paragraphs": [
+          "Yes. Explain what you mean visually, such as seeing background shapes through an area or preferring a more solid-looking colour field. Use a whole view and detail if they help. A photograph's apparent transparency does not establish optical quality, thickness, ageing behaviour or another material property; those remain specific questions for the proposal."
+        ],
+        "group": "Material appearance",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F036; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:7e6cef06-7d65-5755-a98f-c14f5788ca85",
+    "kind": "page",
+    "route": "/faq/does-a-glossy-image-establish-the-final-finish",
+    "title": "Does a glossy image establish the final finish?",
+    "eyebrow": "Material appearance",
+    "description": "No.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Does a glossy image establish the final finish?",
+        "paragraphs": [
+          "No. Glossy-looking highlights may reflect lighting and image treatment as well as a surface. Describe the reflection quality you like, then ask how the finish would be specified and reviewed for the actual piece. Do not infer coating type, durability, cleaning instructions or a guaranteed result from a polished-looking reference photograph."
+        ],
+        "group": "Material appearance",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F037; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:36cee0b6-f788-55b9-a4f4-396cc6f13d33",
+    "kind": "page",
+    "route": "/faq/where-should-confirmed-material-details-be-recorded",
+    "title": "Where should confirmed material details be recorded?",
+    "eyebrow": "Material appearance",
+    "description": "Keep confirmed material details with the current agreed design and specification, clearly separated from inspiration images and early preferences.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Where should confirmed material details be recorded?",
+        "paragraphs": [
+          "Keep confirmed material details with the current agreed design and specification, clearly separated from inspiration images and early preferences. Identify the version and any later clarification. If a detail is still unknown, leave it as a question instead of filling it in from a similar-looking product. Approval concerns the actual proposed piece."
+        ],
+        "group": "Material appearance",
+        "policyHref": "/terms",
+        "action": {
+          "label": "Read the related page",
+          "href": "/terms"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F038; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /terms. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/terms"
+    }
+  },
+  {
+    "id": "editorial:58b486c7-bc8c-503e-a664-dff7ff208c08",
+    "kind": "page",
+    "route": "/faq/can-i-ask-for-a-sample-discussion",
+    "title": "Can I ask for a sample discussion?",
+    "eyebrow": "Material appearance",
+    "description": "You can ask whether a sample discussion or another way of reviewing the material direction is appropriate for your request.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I ask for a sample discussion?",
+        "paragraphs": [
+          "You can ask whether a sample discussion or another way of reviewing the material direction is appropriate for your request. Explain what uncertainty you want to resolve, such as colour relationship or apparent finish. Do not assume a sample service, availability, cost or exact matching guarantee from this question; those need individual confirmation."
+        ],
+        "group": "Material appearance",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F039; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:aa45bcae-201e-5777-af73-8d4da35d40b8",
+    "kind": "page",
+    "route": "/faq/how-do-i-distinguish-an-illustration-from-material-evidence",
+    "title": "How do I distinguish an illustration from material evidence?",
+    "eyebrow": "Material appearance",
+    "description": "Look at the stated classification and source, not just how realistic the image appears.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How do I distinguish an illustration from material evidence?",
+        "paragraphs": [
+          "Look at the stated classification and source, not just how realistic the image appears. A design visualization can explain a concept but cannot prove a material property or completed installation. For a factual claim, ask what evidence relates to the actual piece. Keep unverified identity, certification and performance claims out of the brief."
+        ],
+        "group": "Material appearance",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Material appearance"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F040; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  }
+]

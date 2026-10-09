@@ -1,0 +1,972 @@
+[
+  {
+    "id": "editorial:c7849db6-fba3-577a-a6e7-e1e63d0a7d88",
+    "kind": "page",
+    "route": "/portfolio/a-clear-block-with-a-single-visual-centre",
+    "title": "A clear block with a single visual centre",
+    "eyebrow": "Sculptural objects",
+    "description": "Imagine a sculptural clear block with one concentrated internal motif.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a sculptural clear block with one concentrated internal motif. The study explores how an object can read differently from the front and side without claiming any particular fabrication method."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Keep the surrounding volume visually quiet and compare the motif's overlap from three viewpoints. Use the supplied cube detail only as a reference for apparent depth."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which viewpoint leads?",
+          "How much overlap is desirable?",
+          "What optical and structural details remain unknown?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Sculptural objects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P011; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Sculptural objects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/49508ae8-acd9-435f-b2b8-3676150e579c",
+      "alt": "Close view of a clear cube containing a gold-coloured lattice and blue forms",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:1f1e17a5-27e6-575f-a0a8-fc9f0999b44a",
+    "kind": "page",
+    "route": "/portfolio/a-curved-accent-on-a-small-plinth",
+    "title": "A curved accent on a small plinth",
+    "eyebrow": "Sculptural objects",
+    "description": "Consider a sculptural study inspired by the circular outline of a bangle, enlarged only as an idea on paper.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a sculptural study inspired by the circular outline of a bangle, enlarged only as an idea on paper. The concept asks how a simple loop could create a focal point without a dense arrangement."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare upright and angled silhouettes in sketches. Treat the bangle image as a shape reference; it is not evidence that an enlarged object exists or can be fabricated."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which silhouette is strongest?",
+          "What supports the proposed orientation?",
+          "What scale would need feasibility review?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Sculptural objects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P012; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Sculptural objects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/bc94f146-d62a-4192-bf04-1a61190c6825",
+      "alt": "Single blue and clear bangle with gold-coloured flecks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:ff399168-fa8b-5d67-addc-1fca1a994b9c",
+    "kind": "page",
+    "route": "/portfolio/a-layered-object-read-from-above",
+    "title": "A layered object read from above",
+    "eyebrow": "Sculptural objects",
+    "description": "Explore a small sculptural arrangement whose layers are most legible from an elevated viewpoint.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a small sculptural arrangement whose layers are most legible from an elevated viewpoint. The concept separates visual stacking from any claim that the pictured objects are designed to stack safely."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare the visible edge rhythm and the amount of overlap in a drawing. Keep the arrangement's actual supports and intended use open for review."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Where will it be viewed from?",
+          "Which layers should remain visible?",
+          "What stability questions must be resolved?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Sculptural objects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P013; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Sculptural objects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/5afbd52d-a51d-4d7f-9573-5c818eebd8bf",
+      "alt": "Stacked round coasters with brown, blue and gold-coloured boundaries",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:be720f90-0730-583e-aa43-0af969403f4d",
+    "kind": "page",
+    "route": "/portfolio/an-open-centre-with-a-floral-perimeter",
+    "title": "An open centre with a floral perimeter",
+    "eyebrow": "Sculptural objects",
+    "description": "Imagine a circular decorative composition that leaves its centre comparatively quiet while floral forms gather toward the perimeter.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a circular decorative composition that leaves its centre comparatively quiet while floral forms gather toward the perimeter. The intention is to make empty space part of the object."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Use the supplied round floral display as a reference for the relationship between centre and edge. Sketch alternative distributions without claiming the image depicts the proposed result."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "How open should the centre remain?",
+          "Which flowers are only visual references?",
+          "What actual materials and use need assessment?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Sculptural objects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P014; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Sculptural objects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/8d88879a-9cc8-4862-afcc-faa806566587",
+      "alt": "Round clear floral display with a raised central ring",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:b144dac8-c24e-5db8-a11e-5fcd5114b937",
+    "kind": "page",
+    "route": "/portfolio/a-blue-fragment-beside-a-neutral-volume",
+    "title": "A blue fragment beside a neutral volume",
+    "eyebrow": "Sculptural objects",
+    "description": "Explore a sculptural pairing in which a concentrated blue form sits beside a visually quieter volume.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a sculptural pairing in which a concentrated blue form sits beside a visually quieter volume. The concept uses contrast between active texture and calm outline rather than identical materials."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Make a two-shape study with clearly different visual roles. Limit the textured reference to the accent area and leave material composition unassigned."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which form carries the accent?",
+          "What connects the pair?",
+          "Which properties cannot be inferred from the texture image?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Sculptural objects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P015; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Sculptural objects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/fc349ca1-d76a-4422-8548-db00d8a77fa4",
+      "alt": "Abstract navy flowing texture with gold-coloured streaks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:cecc8973-2973-5853-abc6-ba9c7159ab17",
+    "kind": "page",
+    "route": "/portfolio/a-transparent-object-against-a-dark-background",
+    "title": "A transparent object against a dark background",
+    "eyebrow": "Sculptural objects",
+    "description": "Consider how a clear floral form might be presented so its outline remains visible against a dark setting.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider how a clear floral form might be presented so its outline remains visible against a dark setting. This is a display-composition study, not a preservation proposal for specific flowers."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare edge visibility in a wider scene and a close view. Keep surrounding decoration sparse enough to read the silhouette, then record the actual lighting questions."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which edges disappear?",
+          "What viewing conditions matter?",
+          "What suitability and display details need confirmation?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Sculptural objects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P016; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Sculptural objects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/e6a7162c-7d4d-4280-bb78-ff31fc426b7b",
+      "alt": "Clear upright floral block with red and cream roses on a dark plinth",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:5a8e1858-4ee1-5a4d-a049-3a4ac9525771",
+    "kind": "page",
+    "route": "/portfolio/a-low-object-with-an-offset-centre",
+    "title": "A low object with an offset centre",
+    "eyebrow": "Sculptural objects",
+    "description": "Imagine a sculptural low form whose strongest visual area sits away from the geometric centre.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a sculptural low form whose strongest visual area sits away from the geometric centre. The study explores asymmetry without assuming it creates a functional advantage."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Draw the outline first, then compare two positions for the accent. Review from several approaches so the offset reads as intentional rather than an accidental crop."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which approach explains the offset?",
+          "What remains balanced visually?",
+          "What functional use, if any, is intended?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Sculptural objects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P017; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Sculptural objects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/29a6138d-fe1f-41f7-88f6-2358016536ec",
+      "alt": "Round low-table visualization with brown and blue patterns in a room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:6a2ff88b-2419-517b-a1e6-709e49429e34",
+    "kind": "page",
+    "route": "/portfolio/a-narrow-upright-floral-silhouette",
+    "title": "A narrow upright floral silhouette",
+    "eyebrow": "Sculptural objects",
+    "description": "Explore an upright decorative silhouette in which the flowers read as a vertical sequence.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore an upright decorative silhouette in which the flowers read as a vertical sequence. The study uses a supplied floral image as inspiration without claiming the specific arrangement has been made."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare generous and tighter margins around the floral forms. Keep the outline simple and note which details should remain recognisable at normal viewing distance."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which margin supports the composition?",
+          "What detail should remain visible?",
+          "What real material condition would need assessment?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Sculptural objects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P018; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Sculptural objects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/5ac0e7c8-4810-46b9-b33e-46466dbdf706",
+      "alt": "Clear rectangular floral arrangement with cream and red flowers on beige",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:9c63023b-b858-5290-a3c5-65c4c5582207",
+    "kind": "page",
+    "route": "/portfolio/a-small-object-with-a-continuous-colour-path",
+    "title": "A small object with a continuous colour path",
+    "eyebrow": "Sculptural objects",
+    "description": "Consider a sculptural study where a blue path appears to continue over an edge.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a sculptural study where a blue path appears to continue over an edge. The focus is on the viewer following one line around a form, not on a verified construction technique."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Use a simple two-view drawing to show the proposed continuation. Keep the wider shape intentionally unresolved until the path's visual role is clear."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Where does the eye begin?",
+          "Should the path continue on unseen sides?",
+          "What fabrication questions remain open?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Sculptural objects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P019; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Sculptural objects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/80786409-3a54-46bc-9a45-a3ca0784002b",
+      "alt": "Close view of a console corner and blue waterfall-like channel",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:c6863898-c289-5a35-a025-3ab6df7e25db",
+    "kind": "page",
+    "route": "/portfolio/three-forms-sharing-one-curve",
+    "title": "Three forms sharing one curve",
+    "eyebrow": "Sculptural objects",
+    "description": "Imagine three distinct decorative forms connected by a similar curved outline.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine three distinct decorative forms connected by a similar curved outline. The concept seeks a family resemblance without identical size or internal pattern."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Sketch the shared curve in each profile and vary only one other feature at a time. The bangle reference informs the curve, not a claim about the three proposed objects."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What exactly repeats?",
+          "Which differences are intentional?",
+          "How would scale and support be reviewed?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Concept study",
+      "tags": [
+        "Sculptural objects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P020; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Sculptural objects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/bc94f146-d62a-4192-bf04-1a61190c6825",
+      "alt": "Single blue and clear bangle with gold-coloured flecks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+]

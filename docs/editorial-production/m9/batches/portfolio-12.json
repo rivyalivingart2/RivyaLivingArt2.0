@@ -1,0 +1,972 @@
+[
+  {
+    "id": "editorial:ac3efed7-1bea-5987-afe7-9eec7214ae65",
+    "kind": "page",
+    "route": "/portfolio/a-room-object-with-a-private-memory-reference",
+    "title": "A room object with a private memory reference",
+    "eyebrow": "Cross-journey concepts",
+    "description": "Imagine a cross-journey brief where a room's focal object refers quietly to a personal memory.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a cross-journey brief where a room's focal object refers quietly to a personal memory. The concept avoids placing the full private story into the public design description."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Start with one abstract visual relationship, such as a curve or colour direction, and keep the original meaning in a private note. No actual person's memory is represented."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What meaning affects the design?",
+          "What can remain abstract?",
+          "What information must stay private?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Cross-journey concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P111; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Cross-journey concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/e6a7162c-7d4d-4280-bb78-ff31fc426b7b",
+      "alt": "Clear upright floral block with red and cream roses on a dark plinth",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:26f0eb66-af8e-54cd-ac92-bd7127886fe6",
+    "kind": "page",
+    "route": "/portfolio/a-gift-concept-connected-to-an-existing-room",
+    "title": "A gift concept connected to an existing room",
+    "eyebrow": "Cross-journey concepts",
+    "description": "Explore a personal gift idea intended to relate to a recipient's existing room without copying its furniture.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a personal gift idea intended to relate to a recipient's existing room without copying its furniture. The scenario is hypothetical and supplies no recipient identity or home photograph."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Describe one compatible visual relationship and keep the object format open. Separate design references from any eventual private delivery details."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What room feature matters?",
+          "What should remain distinct?",
+          "What actual preferences and permissions are needed?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Cross-journey concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P112; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Cross-journey concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/4485d058-490e-4b79-8f40-935336fb84cc",
+      "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:b28a1ef9-cd59-5f58-ae2f-20100512ddfc",
+    "kind": "page",
+    "route": "/portfolio/a-floral-motif-translated-into-a-room-accent",
+    "title": "A floral motif translated into a room accent",
+    "eyebrow": "Cross-journey concepts",
+    "description": "Consider a concept that carries the rhythm of a floral arrangement into a broader room composition.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a concept that carries the rhythm of a floral arrangement into a broader room composition. The study is abstract and does not promise transferring real flowers into furniture."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Extract a spacing or colour relationship in a sketch rather than duplicating the source image. Compare how subtle the reference can remain while still informing the idea."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which relationship is being carried forward?",
+          "How literal should it be?",
+          "What actual design and material feasibility needs discussion?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Cross-journey concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P113; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Cross-journey concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/635536b3-bbe2-4097-94a0-b697c42aa63a",
+      "alt": "Framed red and yellow flower-garland visualization against a blue wall",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:104de9bf-a30a-5be1-ae16-451c194f4e7e",
+    "kind": "page",
+    "route": "/portfolio/a-personal-inscription-kept-outside-the-focal-view",
+    "title": "A personal inscription kept outside the focal view",
+    "eyebrow": "Cross-journey concepts",
+    "description": "Imagine a concept in which personalization is meaningful at close range while the wider room view remains quiet.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a concept in which personalization is meaningful at close range while the wider room view remains quiet. The study separates the two viewing distances without specifying an inscription method."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Mark a proposed text area on a sketch and compare its prominence from near and far. Leave the actual wording and feasibility to a later brief."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Who should read the text?",
+          "What should the distant view show?",
+          "What exact wording and layout need approval?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Cross-journey concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P114; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Cross-journey concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:73403c68-fa5c-5093-a9ba-516f79aba0ca",
+    "kind": "page",
+    "route": "/portfolio/a-small-keepsake-and-a-larger-visual-companion",
+    "title": "A small keepsake and a larger visual companion",
+    "eyebrow": "Cross-journey concepts",
+    "description": "Explore a cross-scale concept pairing a private sentimental object with a separate room accent.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a cross-scale concept pairing a private sentimental object with a separate room accent. The study does not assume the original keepsake is embedded, altered or duplicated."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Keep the meaningful original and the proposed companion clearly distinct in the brief. Identify one visual cue that could connect them without claiming a preservation service."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Must the original remain untouched?",
+          "What cue could connect the forms?",
+          "Which methods are merely questions at this stage?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Cross-journey concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P115; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Cross-journey concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/5ac0e7c8-4810-46b9-b33e-46466dbdf706",
+      "alt": "Clear rectangular floral arrangement with cream and red flowers on beige",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:85eba7e8-337d-565c-a7f0-fef646b779c3",
+    "kind": "page",
+    "route": "/portfolio/an-entry-composition-prepared-as-a-family-gift",
+    "title": "An entry composition prepared as a family gift",
+    "eyebrow": "Cross-journey concepts",
+    "description": "Consider a hypothetical gift brief for an entry position used by several people.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a hypothetical gift brief for an entry position used by several people. The concept asks how shared practical needs can be recorded before a single person's visual preference dominates."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Collect the imagined use questions first, then compare a restrained horizontal form with the room's existing features. No actual household or completed gift is claimed."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Who would use the space?",
+          "Which preferences need shared review?",
+          "What actual dimensions and functions must be confirmed?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Cross-journey concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P116; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Cross-journey concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/83c63d21-d859-4c20-b815-2eaae8a48b54",
+      "alt": "Dark bench visualization with a blue channel beside a pale entry wall",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:06ca4df8-6038-566c-a7b8-5339c1d02547",
+    "kind": "page",
+    "route": "/portfolio/a-coordinated-concept-with-separate-privacy-choices",
+    "title": "A coordinated concept with separate privacy choices",
+    "eyebrow": "Cross-journey concepts",
+    "description": "Explore a multi-item brief in which each proposed item may have different personalization and public-use permissions.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a multi-item brief in which each proposed item may have different personalization and public-use permissions. The concept treats those differences as part of the planning record."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Use separate fields for exact text, private recipient information and any future public attribution. Keep the visual family relationship independent of those permissions."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What information belongs to each item?",
+          "Which uses are private?",
+          "Who can approve any public presentation?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Cross-journey concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P117; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Cross-journey concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:8528b1d8-b337-5b90-a653-fed9c91b99f1",
+    "kind": "page",
+    "route": "/portfolio/a-room-concept-informed-by-a-small-colour-reference",
+    "title": "A room concept informed by a small colour reference",
+    "eyebrow": "Cross-journey concepts",
+    "description": "Imagine a room-scale design conversation beginning with a small personal object whose colour relationship is valued.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a room-scale design conversation beginning with a small personal object whose colour relationship is valued. The study does not assume the object should be enlarged or copied."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Extract the relationship between blue, clear-looking and gold-coloured areas in a simple board. Discuss how restrained that relationship should remain in a larger context."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What quality is worth carrying forward?",
+          "What should not be copied?",
+          "How would actual colour and material choices be reviewed?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Cross-journey concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P118; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Cross-journey concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/bc94f146-d62a-4192-bf04-1a61190c6825",
+      "alt": "Single blue and clear bangle with gold-coloured flecks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:c4552273-f886-58c6-a4e8-1b830c136731",
+    "kind": "page",
+    "route": "/portfolio/a-memory-led-brief-with-an-undecided-format",
+    "title": "A memory-led brief with an undecided format",
+    "eyebrow": "Cross-journey concepts",
+    "description": "Consider a concept that begins with the meaning of a keepsake but leaves wall, tabletop or personal format open.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a concept that begins with the meaning of a keepsake but leaves wall, tabletop or personal format open. The study postpones the format choice until purpose and suitability are understood."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare what each format would allow the viewer to notice. Keep the actual materials, display conditions and preservation feasibility as unresolved inputs."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What should be experienced first?",
+          "Which format supports that intention?",
+          "What suitability questions precede a design choice?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Cross-journey concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P119; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Cross-journey concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/e6a7162c-7d4d-4280-bb78-ff31fc426b7b",
+      "alt": "Clear upright floral block with red and cream roses on a dark plinth",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:04563330-4403-5c38-a912-b1611028cf71",
+    "kind": "page",
+    "route": "/portfolio/a-three-journey-reference-board-with-one-purpose",
+    "title": "A three-journey reference board with one purpose",
+    "eyebrow": "Cross-journey concepts",
+    "description": "Explore a concept board drawing from collectible design, memory art and personal art while keeping one stated purpose.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a concept board drawing from collectible design, memory art and personal art while keeping one stated purpose. The challenge is to avoid turning a broad inspiration set into three unrelated requests."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Give each reference one role and remove images that repeat or contradict it. End the board with a concise purpose and the first question for the atelier."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What unites the references?",
+          "Which image adds a different question?",
+          "What actual brief would make the next step concrete?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Cross-journey concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P120; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Cross-journey concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+]

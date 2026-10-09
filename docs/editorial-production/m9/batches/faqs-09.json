@@ -1,0 +1,412 @@
+[
+  {
+    "id": "editorial:a59d6394-03b4-5485-a60b-101aeb17af7e",
+    "kind": "page",
+    "route": "/faq/how-do-i-move-between-the-three-collections",
+    "title": "How do I move between the three collections?",
+    "eyebrow": "Using the website and saved requests",
+    "description": "Use the collection navigation to browse collectible design, memory art and personal art.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How do I move between the three collections?",
+        "paragraphs": [
+          "Use the collection navigation to browse collectible design, memory art and personal art. Choose the starting point closest to the purpose of your request, and keep useful page links. If the idea crosses categories, explain that in a custom brief. A collection label helps browsing but does not determine every possible variation or confirm feasibility."
+        ],
+        "group": "Using the website and saved requests",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Using the website and saved requests"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F081; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:1be295ec-28ce-563b-a441-e0f0820cb91f",
+    "kind": "page",
+    "route": "/faq/can-i-search-without-knowing-a-product-name",
+    "title": "Can I search without knowing a product name?",
+    "eyebrow": "Using the website and saved requests",
+    "description": "Try an ordinary word describing the form, use or topic, then inspect the titles and result types.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I search without knowing a product name?",
+        "paragraphs": [
+          "Try an ordinary word describing the form, use or topic, then inspect the titles and result types. Refine a broad search or simplify an overly specific phrase. Keep the relevant page link for later discussion. Search results identify available website content; they do not confirm stock, suitability, price or an accepted service request."
+        ],
+        "group": "Using the website and saved requests",
+        "policyHref": "/search",
+        "action": {
+          "label": "Read the related page",
+          "href": "/search"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Using the website and saved requests"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F082; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /search. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/search"
+    }
+  },
+  {
+    "id": "editorial:69279f75-de00-56ee-aa96-6e377ff9b66b",
+    "kind": "page",
+    "route": "/faq/how-do-i-remove-an-applied-filter",
+    "title": "How do I remove an applied filter?",
+    "eyebrow": "Using the website and saved requests",
+    "description": "Use the active filter control or remove chip offered beside the selected choice, or choose Clear filters to begin again.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How do I remove an applied filter?",
+        "paragraphs": [
+          "Use the active filter control or remove chip offered beside the selected choice, or choose Clear filters to begin again. Check the remaining applied choices if the list is still narrow. Filters only change the displayed results. They do not alter saved content, create new entries or establish that a particular piece is suitable for your use."
+        ],
+        "group": "Using the website and saved requests",
+        "policyHref": "/journal",
+        "action": {
+          "label": "Read the related page",
+          "href": "/journal"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Using the website and saved requests"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F083; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /journal. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/journal"
+    }
+  },
+  {
+    "id": "editorial:e44705a8-d306-5f48-a841-319ec0d85c56",
+    "kind": "page",
+    "route": "/faq/where-are-saved-pieces-stored",
+    "title": "Where are saved pieces stored?",
+    "eyebrow": "Using the website and saved requests",
+    "description": "Saved pieces are kept in this browser's local storage.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Where are saved pieces stored?",
+        "paragraphs": [
+          "Saved pieces are kept in this browser's local storage. They provide a shortlist, not an order, reservation or confirmed quotation. Keep your own reference links and notes for anything important, particularly before changing browsers or clearing site data. Use the saved list to prepare the later conversation rather than treating it as a purchase record."
+        ],
+        "group": "Using the website and saved requests",
+        "policyHref": "/saved-pieces",
+        "action": {
+          "label": "Read the related page",
+          "href": "/saved-pieces"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Using the website and saved requests"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F084; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /saved-pieces. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/saved-pieces"
+    }
+  },
+  {
+    "id": "editorial:73669ca0-8b4c-552f-a64c-1a8d96c4e005",
+    "kind": "page",
+    "route": "/faq/are-saved-pieces-shared-across-devices",
+    "title": "Are saved pieces shared across devices?",
+    "eyebrow": "Using the website and saved requests",
+    "description": "No automatic cross-device sharing is provided by the current saved-pieces feature.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Are saved pieces shared across devices?",
+        "paragraphs": [
+          "No automatic cross-device sharing is provided by the current saved-pieces feature. It uses the browser's local storage, so another device or browser can have a different list. Keep useful links and your reasons for saving them separately if you need to continue elsewhere. Clearing browser data may also remove the local shortlist."
+        ],
+        "group": "Using the website and saved requests",
+        "policyHref": "/saved-pieces",
+        "action": {
+          "label": "Read the related page",
+          "href": "/saved-pieces"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Using the website and saved requests"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F085; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /saved-pieces. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/saved-pieces"
+    }
+  },
+  {
+    "id": "editorial:7f3a5a98-41a7-53e9-ab0a-8ac72b848499",
+    "kind": "page",
+    "route": "/faq/how-can-i-distinguish-a-receipt-reference-from-a-quotation-revision",
+    "title": "How can I distinguish a receipt reference from a quotation revision?",
+    "eyebrow": "Using the website and saved requests",
+    "description": "The RLA inquiry reference identifies a saved request.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How can I distinguish a receipt reference from a quotation revision?",
+        "paragraphs": [
+          "The RLA inquiry reference identifies a saved request. A quotation or proposal revision identifies a particular version of a later document. Keep both with their dates and use the relevant one in follow-up messages. Neither identifier alone proves payment, acceptance or a production booking. Ask for clarification if the current proposal version is unclear."
+        ],
+        "group": "Using the website and saved requests",
+        "policyHref": "/contact",
+        "action": {
+          "label": "Read the related page",
+          "href": "/contact"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Using the website and saved requests"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F086; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /contact. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/contact"
+    }
+  },
+  {
+    "id": "editorial:0c8c9f59-3585-5652-aeb3-65251efec6d5",
+    "kind": "page",
+    "route": "/faq/what-should-i-compare-between-my-reviewed-brief-and-copied-message",
+    "title": "What should I compare between my reviewed brief and copied message?",
+    "eyebrow": "Using the website and saved requests",
+    "description": "Compare the inquiry reference, names, exact personalization text, dimensions, dates, paragraph order and any added notes.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "What should I compare between my reviewed brief and copied message?",
+        "paragraphs": [
+          "Compare the inquiry reference, names, exact personalization text, dimensions, dates, paragraph order and any added notes. Check that the pasted message is complete and directed to the intended conversation. Clipboard content can differ from what you expect. The website prepares a summary, but you review and press Send yourself; it cannot verify that action."
+        ],
+        "group": "Using the website and saved requests",
+        "policyHref": "/faq",
+        "action": {
+          "label": "Read the related page",
+          "href": "/faq"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Using the website and saved requests"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F087; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/faq"
+    }
+  },
+  {
+    "id": "editorial:cbe5e72a-11fa-5468-a7dc-0e2a52a2e8a3",
+    "kind": "page",
+    "route": "/faq/how-can-i-check-paragraph-breaks-after-pasting-a-saved-summary",
+    "title": "How can I check paragraph breaks after pasting a saved summary?",
+    "eyebrow": "Using the website and saved requests",
+    "description": "Read the pasted message in the destination application before sending.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How can I check paragraph breaks after pasting a saved summary?",
+        "paragraphs": [
+          "Read the pasted message in the destination application before sending. Compare section boundaries and the order of details with the saved summary, especially around names, dates and long notes. Restore missing breaks without changing the meaning. Do not assume a correct website preview guarantees identical formatting after the text passes through a clipboard or another application."
+        ],
+        "group": "Using the website and saved requests",
+        "policyHref": "/faq",
+        "action": {
+          "label": "Read the related page",
+          "href": "/faq"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Using the website and saved requests"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F088; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/faq"
+    }
+  },
+  {
+    "id": "editorial:9246ea85-fd9d-5cc0-ab4c-a8c0bd4156c3",
+    "kind": "page",
+    "route": "/faq/how-should-i-handle-a-failed-submission",
+    "title": "How should I handle a failed submission?",
+    "eyebrow": "Using the website and saved requests",
+    "description": "Read the visible error and check whether a successful receipt or RLA reference exists.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How should I handle a failed submission?",
+        "paragraphs": [
+          "Read the visible error and check whether a successful receipt or RLA reference exists. A failed message handoff after saving is different from a failed save; use the existing receipt's Open WhatsApp or Copy controls in that case. If the outcome is uncertain, avoid repeated submissions and contact the atelier with the information you have."
+        ],
+        "group": "Using the website and saved requests",
+        "policyHref": "/contact",
+        "action": {
+          "label": "Read the related page",
+          "href": "/contact"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Using the website and saved requests"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F089; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /contact. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/contact"
+    }
+  },
+  {
+    "id": "editorial:0b297f03-e3e4-5e1a-aceb-2e93236baaef",
+    "kind": "page",
+    "route": "/faq/how-can-i-keep-website-references-separate-from-agreed-payment-information",
+    "title": "How can I keep website references separate from agreed payment information?",
+    "eyebrow": "Using the website and saved requests",
+    "description": "Keep catalogue links and inquiry references as identifiers for the discussion, and keep any agreed quotation and payment arrangements in their own current record.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How can I keep website references separate from agreed payment information?",
+        "paragraphs": [
+          "Keep catalogue links and inquiry references as identifiers for the discussion, and keep any agreed quotation and payment arrangements in their own current record. The website does not take payment or confirm a production booking. Do not treat a saved piece, receipt or price-related reference as proof that a later payment arrangement has been accepted."
+        ],
+        "group": "Using the website and saved requests",
+        "policyHref": "/terms",
+        "action": {
+          "label": "Read the related page",
+          "href": "/terms"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Using the website and saved requests"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F090; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /terms. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/terms"
+    }
+  }
+]

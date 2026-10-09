@@ -10,7 +10,7 @@ import {homeActions,homeProductIds,type HomeSnapshot,type HomeProduct,type HomeA
 
 export type DependencyRow={key:string;document:unknown;version:number;fingerprint:string;publishedAt?:string|null};
 export type DependencySource={products:DependencyRow[];content:DependencyRow[];media:DependencyRow[]};
-const publicRoutes=new Set(['/','/collectible-design','/memory-art','/personal-art','/search','/commission','/preserve','/personalize','/commission/customize','/journal','/saved-pieces']);
+const publicRoutes=new Set(['/','/collectible-design','/memory-art','/personal-art','/search','/commission','/preserve','/personalize','/commission/customize','/journal','/saved-pieces','/portfolio','/testimonials']);
 /** A single SQL snapshot feeds this pure compiler. Never copy a draft or arbitrary stored keys. */
 export function compileHomepageSnapshot(document:ContentDocument,source:DependencySource):HomeSnapshot{
  const home=document.homepage!;

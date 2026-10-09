@@ -1,0 +1,412 @@
+[
+  {
+    "id": "editorial:69398a0d-ebac-517e-a8db-08f3b0a252f1",
+    "kind": "page",
+    "route": "/faq/can-i-share-a-colour-screenshot",
+    "title": "Can I share a colour screenshot?",
+    "eyebrow": "Colour and light",
+    "description": "Yes, as a starting reference.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I share a colour screenshot?",
+        "paragraphs": [
+          "Yes, as a starting reference. Include the source where known, mark the area that interests you and explain the intended colour relationship in words. Screenshots can be affected by the original image, processing and display. They do not establish an exact finished match, so the final colour direction needs separate discussion and approval."
+        ],
+        "group": "Colour and light",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F041; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:7ec96f73-82f0-5db9-a6d8-cb7e3af8a10a",
+    "kind": "page",
+    "route": "/faq/should-colour-references-include-their-surroundings",
+    "title": "Should colour references include their surroundings?",
+    "eyebrow": "Colour and light",
+    "description": "Context is helpful when the relationship to walls, flooring or existing objects matters.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Should colour references include their surroundings?",
+        "paragraphs": [
+          "Context is helpful when the relationship to walls, flooring or existing objects matters. Label the surroundings that will remain and explain whether the aim is contrast, similarity or a small accent. A cropped swatch alone may not communicate that intention. Photographic context still does not make the reference a calibrated colour sample."
+        ],
+        "group": "Colour and light",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F042; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:485b443a-02ce-53a8-a93d-bfd9db31706a",
+    "kind": "page",
+    "route": "/faq/why-might-colours-differ-between-screens",
+    "title": "Why might colours differ between screens?",
+    "eyebrow": "Colour and light",
+    "description": "Displays, image processing and viewing conditions can make the same image look different.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Why might colours differ between screens?",
+        "paragraphs": [
+          "Displays, image processing and viewing conditions can make the same image look different. Treat the screenshot as a discussion reference and describe the effect you want in ordinary words. Avoid choosing a final specification solely by comparing uncalibrated screens. Ask how the actual proposed colour and finish will be reviewed before approval."
+        ],
+        "group": "Colour and light",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F043; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:51adaed3-05dd-5c9d-aec6-04071bc2e7f9",
+    "kind": "page",
+    "route": "/faq/how-can-i-identify-the-most-important-colour-reference",
+    "title": "How can I identify the most important colour reference?",
+    "eyebrow": "Colour and light",
+    "description": "Label one reference as the primary direction and explain why.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How can I identify the most important colour reference?",
+        "paragraphs": [
+          "Label one reference as the primary direction and explain why. Put supporting references and alternatives in separate groups. Identify the exact feature that matters so the reader does not assume every colour in the image is requested. A clear priority helps the discussion but does not guarantee material availability or an exact match."
+        ],
+        "group": "Colour and light",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F044; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:5dec7828-e913-5148-a186-111fee08e1f5",
+    "kind": "page",
+    "route": "/faq/can-i-discuss-several-palette-options",
+    "title": "Can I discuss several palette options?",
+    "eyebrow": "Colour and light",
+    "description": "Several options can be discussed if they are clearly labelled as alternatives.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I discuss several palette options?",
+        "paragraphs": [
+          "Several options can be discussed if they are clearly labelled as alternatives. Explain what changes between them and what should remain consistent. Keep each palette with its intended room or use context. Do not combine all alternatives into one apparent instruction; the final agreed direction should identify which option and version were selected."
+        ],
+        "group": "Colour and light",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F045; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:90f3354d-af68-5ad7-a37e-ec96a4f167f3",
+    "kind": "page",
+    "route": "/faq/does-a-colour-code-guarantee-a-finished-match",
+    "title": "Does a colour code guarantee a finished match?",
+    "eyebrow": "Colour and light",
+    "description": "No.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Does a colour code guarantee a finished match?",
+        "paragraphs": [
+          "No. A colour code can identify a reference, but it does not by itself guarantee how the finished material will look under different conditions. State the source of the code and the intended visual relationship. Confirm how colour expectations, material variation and the actual proposal will be reviewed before treating the choice as agreed."
+        ],
+        "group": "Colour and light",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F046; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:2e7bf4fb-21a6-51c3-a69b-87948608b252",
+    "kind": "page",
+    "route": "/faq/what-should-i-do-when-two-photos-show-different-colours",
+    "title": "What should I do when two photos show different colours?",
+    "eyebrow": "Colour and light",
+    "description": "Keep both images and note their sources and known conditions.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "What should I do when two photos show different colours?",
+        "paragraphs": [
+          "Keep both images and note their sources and known conditions. Explain the difference you see and which appearance you prefer. Ask for clarification tied to the actual proposed piece instead of assuming one image is wrong or that the finish changed. Differences in light, angle or processing may be relevant but should not be guessed as fact."
+        ],
+        "group": "Colour and light",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F047; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:b5af9623-8753-556f-a8e9-6fa71f8d464b",
+    "kind": "page",
+    "route": "/faq/can-i-ask-how-lighting-affects-the-appearance",
+    "title": "Can I ask how lighting affects the appearance?",
+    "eyebrow": "Colour and light",
+    "description": "Yes.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I ask how lighting affects the appearance?",
+        "paragraphs": [
+          "Yes. Describe the room's usual daylight and artificial lighting and provide contextual photographs if useful. Ask about the appearance of the actual proposed material and finish in relevant conditions. The answer should not be inferred from a generated room scene. A lighting discussion also does not establish technical exposure limits or placement suitability."
+        ],
+        "group": "Colour and light",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F048; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:6f966c0d-6063-5862-a36e-5c5cf5295f5c",
+    "kind": "page",
+    "route": "/faq/where-should-an-agreed-colour-decision-be-documented",
+    "title": "Where should an agreed colour decision be documented?",
+    "eyebrow": "Colour and light",
+    "description": "Record the agreed direction with the current proposal or specification, including the relevant reference and version.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Where should an agreed colour decision be documented?",
+        "paragraphs": [
+          "Record the agreed direction with the current proposal or specification, including the relevant reference and version. Keep earlier options marked superseded rather than allowing them to look equally current. A personal preference note or a saved website brief is not itself agreement. Ask for clarification if written notes and the current proposal appear inconsistent."
+        ],
+        "group": "Colour and light",
+        "policyHref": "/terms",
+        "action": {
+          "label": "Read the related page",
+          "href": "/terms"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F049; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /terms. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/terms"
+    }
+  },
+  {
+    "id": "editorial:a3bf9f64-0d74-5078-a31d-56674fbb2166",
+    "kind": "page",
+    "route": "/faq/how-do-i-explain-a-subtle-or-muted-colour-preference",
+    "title": "How do I explain a subtle or muted colour preference?",
+    "eyebrow": "Colour and light",
+    "description": "Explain what should remain quiet and what may stand out.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How do I explain a subtle or muted colour preference?",
+        "paragraphs": [
+          "Explain what should remain quiet and what may stand out. You might prefer a narrow accent, lower contrast against nearby colours or a softer relationship between patterned and plain areas. Add a whole-object reference so the scale of the effect is clear. “Muted” alone does not specify a colour, finish or exact outcome."
+        ],
+        "group": "Colour and light",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Colour and light"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F050; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  }
+]

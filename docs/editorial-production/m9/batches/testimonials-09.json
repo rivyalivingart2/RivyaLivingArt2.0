@@ -1,0 +1,482 @@
+[
+  {
+    "id": "editorial:f1857aee-fada-56a7-acdc-fd22b620bf99",
+    "kind": "page",
+    "route": "/testimonials/keeping-initials-readable-within-an-accent",
+    "title": "Keeping initials readable within an accent",
+    "eyebrow": "Personalized pieces",
+    "description": "A clearly fictional response-writing example about keeping initials readable within an accent.",
+    "sections": [
+      {
+        "id": "disclosure",
+        "heading": "Fictional sample — not customer feedback",
+        "paragraphs": [
+          "This text was created for an illustrative editorial exercise. It is not a quote from a customer, evidence of a commission, or a rating."
+        ]
+      },
+      {
+        "id": "sample",
+        "heading": "The fictional response",
+        "paragraphs": [
+          "I would make the initials the first thing to read and keep the colour secondary. The exact character order and punctuation should be checked independently of the decorative reference."
+        ]
+      },
+      {
+        "id": "context",
+        "heading": "How to read this example",
+        "paragraphs": [
+          "The example explores how someone might describe a design preference or an unresolved question. It reports no actual service experience or completed outcome. Its associated reference image is retained in the private production register only; it is not a customer portrait or testimony evidence."
+        ]
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Fictional example",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Fictional, no customer source"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 T081; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "testimonial",
+      "classification": "fictional"
+    }
+  },
+  {
+    "id": "editorial:ee8abc89-fd52-55ca-a8e4-51d5d96f07a2",
+    "kind": "page",
+    "route": "/testimonials/making-a-date-unambiguous",
+    "title": "Making a date unambiguous",
+    "eyebrow": "Personalized pieces",
+    "description": "A clearly fictional response-writing example about making a date unambiguous.",
+    "sections": [
+      {
+        "id": "disclosure",
+        "heading": "Fictional sample — not customer feedback",
+        "paragraphs": [
+          "This text was created for an illustrative editorial exercise. It is not a quote from a customer, evidence of a commission, or a rating."
+        ]
+      },
+      {
+        "id": "sample",
+        "heading": "The fictional response",
+        "paragraphs": [
+          "I would write the full date in words in the brief even if the design eventually uses digits. That gives the final proof a clear source instead of relying on an ambiguous short format."
+        ]
+      },
+      {
+        "id": "context",
+        "heading": "How to read this example",
+        "paragraphs": [
+          "The example explores how someone might describe a design preference or an unresolved question. It reports no actual service experience or completed outcome. Its associated reference image is retained in the private production register only; it is not a customer portrait or testimony evidence."
+        ]
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Fictional example",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Fictional, no customer source"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 T082; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "testimonial",
+      "classification": "fictional"
+    }
+  },
+  {
+    "id": "editorial:b5f7d6de-d088-58e1-abbb-2b12a6e28eaa",
+    "kind": "page",
+    "route": "/testimonials/using-line-breaks-to-preserve-the-message",
+    "title": "Using line breaks to preserve the message",
+    "eyebrow": "Personalized pieces",
+    "description": "A clearly fictional response-writing example about using line breaks to preserve the message.",
+    "sections": [
+      {
+        "id": "disclosure",
+        "heading": "Fictional sample — not customer feedback",
+        "paragraphs": [
+          "This text was created for an illustrative editorial exercise. It is not a quote from a customer, evidence of a commission, or a rating."
+        ]
+      },
+      {
+        "id": "sample",
+        "heading": "The fictional response",
+        "paragraphs": [
+          "I would keep the important words together and mark which breaks are flexible. A layout revision should trigger another reading of the actual proof, not just a glance at the original text."
+        ]
+      },
+      {
+        "id": "context",
+        "heading": "How to read this example",
+        "paragraphs": [
+          "The example explores how someone might describe a design preference or an unresolved question. It reports no actual service experience or completed outcome. Its associated reference image is retained in the private production register only; it is not a customer portrait or testimony evidence."
+        ]
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Fictional example",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Fictional, no customer source"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 T083; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "testimonial",
+      "classification": "fictional"
+    }
+  },
+  {
+    "id": "editorial:2ecdabee-2262-54d2-ad78-b02d7ef28cc8",
+    "kind": "page",
+    "route": "/testimonials/starting-with-the-exact-script",
+    "title": "Starting with the exact script",
+    "eyebrow": "Personalized pieces",
+    "description": "A clearly fictional response-writing example about starting with the exact script.",
+    "sections": [
+      {
+        "id": "disclosure",
+        "heading": "Fictional sample — not customer feedback",
+        "paragraphs": [
+          "This text was created for an illustrative editorial exercise. It is not a quote from a customer, evidence of a commission, or a rating."
+        ]
+      },
+      {
+        "id": "sample",
+        "heading": "The fictional response",
+        "paragraphs": [
+          "I would provide the preferred spelling in the intended script and ask a competent reader to check it. A pronunciation guide would stay separate so it cannot be mistaken for the inscription."
+        ]
+      },
+      {
+        "id": "context",
+        "heading": "How to read this example",
+        "paragraphs": [
+          "The example explores how someone might describe a design preference or an unresolved question. It reports no actual service experience or completed outcome. Its associated reference image is retained in the private production register only; it is not a customer portrait or testimony evidence."
+        ]
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Fictional example",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Fictional, no customer source"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 T084; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "testimonial",
+      "classification": "fictional"
+    }
+  },
+  {
+    "id": "editorial:d04348e2-a9aa-5094-a7bb-c99c168a45b5",
+    "kind": "page",
+    "route": "/testimonials/exploring-a-letter-without-inventing-a-recipient",
+    "title": "Exploring a letter without inventing a recipient",
+    "eyebrow": "Personalized pieces",
+    "description": "A clearly fictional response-writing example about exploring a letter without inventing a recipient.",
+    "sections": [
+      {
+        "id": "disclosure",
+        "heading": "Fictional sample — not customer feedback",
+        "paragraphs": [
+          "This text was created for an illustrative editorial exercise. It is not a quote from a customer, evidence of a commission, or a rating."
+        ]
+      },
+      {
+        "id": "sample",
+        "heading": "The fictional response",
+        "paragraphs": [
+          "The letter outline is the visual idea I would compare first. I would not attach a name or occasion to the concept until an actual requester supplies the information needed for the brief."
+        ]
+      },
+      {
+        "id": "context",
+        "heading": "How to read this example",
+        "paragraphs": [
+          "The example explores how someone might describe a design preference or an unresolved question. It reports no actual service experience or completed outcome. Its associated reference image is retained in the private production register only; it is not a customer portrait or testimony evidence."
+        ]
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Fictional example",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Fictional, no customer source"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 T085; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "testimonial",
+      "classification": "fictional"
+    }
+  },
+  {
+    "id": "editorial:8416c1b3-608f-5f13-aec3-46ea6e2f9920",
+    "kind": "page",
+    "route": "/testimonials/keeping-a-longer-sentiment-in-a-private-note",
+    "title": "Keeping a longer sentiment in a private note",
+    "eyebrow": "Personalized pieces",
+    "description": "A clearly fictional response-writing example about keeping a longer sentiment in a private note.",
+    "sections": [
+      {
+        "id": "disclosure",
+        "heading": "Fictional sample — not customer feedback",
+        "paragraphs": [
+          "This text was created for an illustrative editorial exercise. It is not a quote from a customer, evidence of a commission, or a rating."
+        ]
+      },
+      {
+        "id": "sample",
+        "heading": "The fictional response",
+        "paragraphs": [
+          "I would choose minimal text for the object and let the accompanying note carry the longer message. That distinction could keep the visual form clear without losing the intended sentiment."
+        ]
+      },
+      {
+        "id": "context",
+        "heading": "How to read this example",
+        "paragraphs": [
+          "The example explores how someone might describe a design preference or an unresolved question. It reports no actual service experience or completed outcome. Its associated reference image is retained in the private production register only; it is not a customer portrait or testimony evidence."
+        ]
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Fictional example",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Fictional, no customer source"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 T086; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "testimonial",
+      "classification": "fictional"
+    }
+  },
+  {
+    "id": "editorial:2a9abf81-2978-5126-a33e-ca89ddfe79d3",
+    "kind": "page",
+    "route": "/testimonials/giving-a-name-room-in-the-layout",
+    "title": "Giving a name room in the layout",
+    "eyebrow": "Personalized pieces",
+    "description": "A clearly fictional response-writing example about giving a name room in the layout.",
+    "sections": [
+      {
+        "id": "disclosure",
+        "heading": "Fictional sample — not customer feedback",
+        "paragraphs": [
+          "This text was created for an illustrative editorial exercise. It is not a quote from a customer, evidence of a commission, or a rating."
+        ]
+      },
+      {
+        "id": "sample",
+        "heading": "The fictional response",
+        "paragraphs": [
+          "I would review the margins with the actual text rather than a generic placeholder. The character count and script may change the balance, so the final proof needs its own careful check."
+        ]
+      },
+      {
+        "id": "context",
+        "heading": "How to read this example",
+        "paragraphs": [
+          "The example explores how someone might describe a design preference or an unresolved question. It reports no actual service experience or completed outcome. Its associated reference image is retained in the private production register only; it is not a customer portrait or testimony evidence."
+        ]
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Fictional example",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Fictional, no customer source"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 T087; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "testimonial",
+      "classification": "fictional"
+    }
+  },
+  {
+    "id": "editorial:d4de5ecb-7b76-5978-a1f1-7a54afea2dc7",
+    "kind": "page",
+    "route": "/testimonials/mapping-initials-to-individual-items",
+    "title": "Mapping initials to individual items",
+    "eyebrow": "Personalized pieces",
+    "description": "A clearly fictional response-writing example about mapping initials to individual items.",
+    "sections": [
+      {
+        "id": "disclosure",
+        "heading": "Fictional sample — not customer feedback",
+        "paragraphs": [
+          "This text was created for an illustrative editorial exercise. It is not a quote from a customer, evidence of a commission, or a rating."
+        ]
+      },
+      {
+        "id": "sample",
+        "heading": "The fictional response",
+        "paragraphs": [
+          "I would want one clear item reference for every set of initials. A shared motif can connect the group, but the individual text should never depend on remembering the order of a chat message."
+        ]
+      },
+      {
+        "id": "context",
+        "heading": "How to read this example",
+        "paragraphs": [
+          "The example explores how someone might describe a design preference or an unresolved question. It reports no actual service experience or completed outcome. Its associated reference image is retained in the private production register only; it is not a customer portrait or testimony evidence."
+        ]
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Fictional example",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Fictional, no customer source"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 T088; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "testimonial",
+      "classification": "fictional"
+    }
+  },
+  {
+    "id": "editorial:b6f16c57-1bdf-562b-a0b1-217489dcc860",
+    "kind": "page",
+    "route": "/testimonials/treating-punctuation-as-intentional-text",
+    "title": "Treating punctuation as intentional text",
+    "eyebrow": "Personalized pieces",
+    "description": "A clearly fictional response-writing example about treating punctuation as intentional text.",
+    "sections": [
+      {
+        "id": "disclosure",
+        "heading": "Fictional sample — not customer feedback",
+        "paragraphs": [
+          "This text was created for an illustrative editorial exercise. It is not a quote from a customer, evidence of a commission, or a rating."
+        ]
+      },
+      {
+        "id": "sample",
+        "heading": "The fictional response",
+        "paragraphs": [
+          "I would keep punctuation and spacing exactly as supplied until a change is discussed. Those small marks can affect the reading, so they deserve the same proof check as the names themselves."
+        ]
+      },
+      {
+        "id": "context",
+        "heading": "How to read this example",
+        "paragraphs": [
+          "The example explores how someone might describe a design preference or an unresolved question. It reports no actual service experience or completed outcome. Its associated reference image is retained in the private production register only; it is not a customer portrait or testimony evidence."
+        ]
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Fictional example",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Fictional, no customer source"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 T089; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "testimonial",
+      "classification": "fictional"
+    }
+  },
+  {
+    "id": "editorial:7bfa470a-8818-5eeb-ab61-dff0cbd0be2a",
+    "kind": "page",
+    "route": "/testimonials/reviewing-two-languages-separately",
+    "title": "Reviewing two languages separately",
+    "eyebrow": "Personalized pieces",
+    "description": "A clearly fictional response-writing example about reviewing two languages separately.",
+    "sections": [
+      {
+        "id": "disclosure",
+        "heading": "Fictional sample — not customer feedback",
+        "paragraphs": [
+          "This text was created for an illustrative editorial exercise. It is not a quote from a customer, evidence of a commission, or a rating."
+        ]
+      },
+      {
+        "id": "sample",
+        "heading": "The fictional response",
+        "paragraphs": [
+          "I would keep a review field for each language and compare the meanings before judging the combined layout. A balanced-looking design does not by itself verify the wording in either script."
+        ]
+      },
+      {
+        "id": "context",
+        "heading": "How to read this example",
+        "paragraphs": [
+          "The example explores how someone might describe a design preference or an unresolved question. It reports no actual service experience or completed outcome. Its associated reference image is retained in the private production register only; it is not a customer portrait or testimony evidence."
+        ]
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Fictional example",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Fictional, no customer source"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 T090; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "testimonial",
+      "classification": "fictional"
+    }
+  }
+]

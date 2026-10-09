@@ -1,0 +1,972 @@
+[
+  {
+    "id": "editorial:e5e3c30b-4a79-58d1-a193-3f021da71e74",
+    "kind": "page",
+    "route": "/portfolio/a-gift-set-with-a-clear-variation-map",
+    "title": "A gift set with a clear variation map",
+    "eyebrow": "Gifting projects",
+    "description": "Explore a gifting concept in which one shared design direction accommodates individual differences.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a gifting concept in which one shared design direction accommodates individual differences. The study uses a variation matrix rather than a group image that hides which item receives which detail."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Assign a reference to every proposed item and separate shared colour direction from individual text. Leave quantities, availability and timing open."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What is common to the set?",
+          "What varies by item?",
+          "Which commercial and production details need agreement?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Gifting projects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P091; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Gifting projects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/faaa14a1-1fe7-4514-8a6d-2304701eb0cb",
+      "alt": "Stack of wavy-edged blue coasters with gold-coloured rims",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:1b789ea3-903d-54be-a0eb-d09602ac7c38",
+    "kind": "page",
+    "route": "/portfolio/a-small-gift-built-around-one-curve",
+    "title": "A small gift built around one curve",
+    "eyebrow": "Gifting projects",
+    "description": "Imagine a personal gift concept whose character comes from a simple curved outline and a restrained accent.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a personal gift concept whose character comes from a simple curved outline and a restrained accent. No recipient, occasion or customer response is claimed."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare two profiles while keeping the colour relationship consistent. Use the bangle image as an outline reference and avoid implying an exact replica is available."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What visual feature matters most?",
+          "What use is intended?",
+          "What dimensions and feasibility need discussion?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Gifting projects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P092; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Gifting projects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/bc94f146-d62a-4192-bf04-1a61190c6825",
+      "alt": "Single blue and clear bangle with gold-coloured flecks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:1e1ccf58-2473-503f-a157-87b11ba7d33f",
+    "kind": "page",
+    "route": "/portfolio/a-floral-gift-with-a-private-occasion",
+    "title": "A floral gift with a private occasion",
+    "eyebrow": "Gifting projects",
+    "description": "Consider a decorative floral gift concept whose occasion remains private.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a decorative floral gift concept whose occasion remains private. The study separates visual meaning from any public story about the recipient."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Develop the composition without names or dates in the first sketch. Keep any later personalization and delivery information in the appropriate private brief."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What should the flowers suggest visually?",
+          "What personal details are necessary?",
+          "What public use would need separate permission?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Gifting projects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P093; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Gifting projects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/8d88879a-9cc8-4862-afcc-faa806566587",
+      "alt": "Round clear floral display with a raised central ring",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:3e500762-6ca7-578d-ab37-d74f2f1d9c6d",
+    "kind": "page",
+    "route": "/portfolio/a-paired-gift-with-different-colour-emphasis",
+    "title": "A paired gift with different colour emphasis",
+    "eyebrow": "Gifting projects",
+    "description": "Explore two related gift concepts where one uses a stronger blue accent and the other a quieter balance.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore two related gift concepts where one uses a stronger blue accent and the other a quieter balance. The pair is intended to acknowledge different preferences without inventing two recipients."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Sketch the shared outline relationship first, then vary only the accent strength. Keep all final colours and text subject to the actual request."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What connects the pair?",
+          "How different should the accents be?",
+          "Who would approve each individual version?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Gifting projects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P094; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Gifting projects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:8d64f933-f95e-546f-a69b-906365478595",
+    "kind": "page",
+    "route": "/portfolio/a-gift-brief-that-keeps-timing-honest",
+    "title": "A gift brief that keeps timing honest",
+    "eyebrow": "Gifting projects",
+    "description": "Imagine a set concept prepared for an important date whose feasibility has not been discussed.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a set concept prepared for an important date whose feasibility has not been discussed. The study includes timing as a question rather than presenting the occasion as a booked deadline."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Keep the design direction, occasion date and requested arrival period in separate fields. Record flexibility and ask for an individual schedule discussion."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What is the actual occasion date?",
+          "What flexibility exists?",
+          "Which timing has been confirmed, if any?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Gifting projects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P095; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Gifting projects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/faaa14a1-1fe7-4514-8a6d-2304701eb0cb",
+      "alt": "Stack of wavy-edged blue coasters with gold-coloured rims",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:b3dbc058-d574-548f-ae72-1ce6076a7a48",
+    "kind": "page",
+    "route": "/portfolio/a-decorative-tray-concept-for-a-personal-setting",
+    "title": "A decorative tray concept for a personal setting",
+    "eyebrow": "Gifting projects",
+    "description": "Consider a gift idea inspired by a tray's framed colour area.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a gift idea inspired by a tray's framed colour area. The concept concerns appearance and leaves carrying, food contact and heat-related uses unconfirmed."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare a stronger border with a quieter centre in a top-view sketch. State the intended use before asking about materials and practical suitability."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What use is proposed?",
+          "Which visual area should lead?",
+          "What suitability information is needed before agreement?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Gifting projects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P096; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Gifting projects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/ef5d89bb-a7be-4516-b4d8-846264c44404",
+      "alt": "Blue and gold-coloured rectangular tray with handles in a room scene",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:e94ab8c0-52fb-5ef8-ad0a-8be500e4bf56",
+    "kind": "page",
+    "route": "/portfolio/a-gift-with-minimal-public-attribution",
+    "title": "A gift with minimal public attribution",
+    "eyebrow": "Gifting projects",
+    "description": "Explore a concept delivery story that could show an object without naming its recipient.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a concept delivery story that could show an object without naming its recipient. The design and the possible public caption are treated as separate decisions."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Keep the initial brief private and draft any eventual public wording using only permitted facts. The supplied image remains a reference, not a photograph of a delivered gift."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What may be shown?",
+          "Which identity details stay private?",
+          "Who can approve the exact future public use?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Gifting projects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P097; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Gifting projects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/bc94f146-d62a-4192-bf04-1a61190c6825",
+      "alt": "Single blue and clear bangle with gold-coloured flecks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:c702410d-b3a0-5e8d-ac8e-a3a4d81217c0",
+    "kind": "page",
+    "route": "/portfolio/a-round-floral-form-as-a-shared-motif",
+    "title": "A round floral form as a shared motif",
+    "eyebrow": "Gifting projects",
+    "description": "Imagine a gifting concept where a circular floral arrangement supplies the shared visual language.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a gifting concept where a circular floral arrangement supplies the shared visual language. The study leaves the actual object type and use open."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare the motif at two proposed scales in drawings, without assuming the same construction works at both. Keep material and functional questions alongside the sketches."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What scale suits the intention?",
+          "What use is required?",
+          "What material and fabrication assessment would be needed?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Gifting projects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P098; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Gifting projects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/8d88879a-9cc8-4862-afcc-faa806566587",
+      "alt": "Round clear floral display with a raised central ring",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:ee4a9e0e-3e67-5d65-a088-6a55ca6abf0e",
+    "kind": "page",
+    "route": "/portfolio/a-gift-set-with-one-deliberate-exception",
+    "title": "A gift set with one deliberate exception",
+    "eyebrow": "Gifting projects",
+    "description": "Explore a coordinated set where one item differs for a stated reason while the rest share a common relationship.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a coordinated set where one item differs for a stated reason while the rest share a common relationship. The concept asks how the exception can remain intentional and easy to verify."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Mark the differing item clearly in the matrix and explain which feature changes. Avoid relying on a group photograph to communicate the exception."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which item differs?",
+          "Why does it differ?",
+          "How will that distinction be checked in the final proof?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Gifting projects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P099; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Gifting projects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/5afbd52d-a51d-4d7f-9573-5c818eebd8bf",
+      "alt": "Stacked round coasters with brown, blue and gold-coloured boundaries",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:144842ac-f943-531d-a876-6ff355b18a07",
+    "kind": "page",
+    "route": "/portfolio/a-gift-comparison-before-choosing-a-format",
+    "title": "A gift comparison before choosing a format",
+    "eyebrow": "Gifting projects",
+    "description": "Consider an early brief comparing a compact personal object with a larger decorative form.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider an early brief comparing a compact personal object with a larger decorative form. The study begins with purpose and privacy rather than assuming one format is already right."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "List what each option would communicate and the questions it raises. Use the supplied gift arrangement as a range-of-forms reference, not a catalogue of confirmed options."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What should the gift express?",
+          "Which format supports that purpose?",
+          "What feasibility and timing questions come first?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Gifting projects"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P100; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Gifting projects"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+]

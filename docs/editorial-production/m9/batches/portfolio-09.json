@@ -1,0 +1,972 @@
+[
+  {
+    "id": "editorial:e61955e3-fc7b-5870-a1b1-9142c59a6c91",
+    "kind": "page",
+    "route": "/portfolio/initials-with-a-quiet-colour-accent",
+    "title": "Initials with a quiet colour accent",
+    "eyebrow": "Personalized pieces",
+    "description": "Imagine a personal-art concept where initials remain the main readable feature and colour provides a restrained secondary accent.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a personal-art concept where initials remain the main readable feature and colour provides a restrained secondary accent. No recipient or approved inscription is supplied."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Keep the exact text source separate from the visual sketch. Compare a simple outline with a more expressive edge while preserving a clear area for the proposed characters."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What exact initials are intended?",
+          "Which punctuation matters?",
+          "How would the final layout be proofread?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P081; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Personalized pieces"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:c5ec974d-f306-5281-a64d-fba437037ccc",
+    "kind": "page",
+    "route": "/portfolio/a-date-expressed-in-words-and-digits",
+    "title": "A date expressed in words and digits",
+    "eyebrow": "Personalized pieces",
+    "description": "Explore a personalization concept that compares a compact numeric date with a more explicit written-month format.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a personalization concept that compares a compact numeric date with a more explicit written-month format. The study concerns interpretation, not an existing occasion."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Show both text alternatives beside the same outline reference. Keep the full intended date in words in the brief even if the visible design eventually uses digits."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which format is unambiguous?",
+          "What space is actually available?",
+          "Who would approve the final proof?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P082; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Personalized pieces"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/bc94f146-d62a-4192-bf04-1a61190c6825",
+      "alt": "Single blue and clear bangle with gold-coloured flecks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:7062603b-246a-5060-a37e-3edc02e07d02",
+    "kind": "page",
+    "route": "/portfolio/a-two-line-dedication-with-an-intentional-pause",
+    "title": "A two-line dedication with an intentional pause",
+    "eyebrow": "Personalized pieces",
+    "description": "Consider a personal-art concept in which a short dedication uses two lines to control how it is read.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a personal-art concept in which a short dedication uses two lines to control how it is read. The words remain hypothetical and no recipient identity is invented."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare line groupings before discussing decorative details. Mark essential breaks and flexible spacing separately so a later layout can be reviewed against the intended meaning."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which words must stay together?",
+          "What wording is exact?",
+          "What legibility and fabrication questions need review?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P083; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Personalized pieces"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:b379ef22-5981-58e4-aaaa-aa487269ca96",
+    "kind": "page",
+    "route": "/portfolio/a-script-first-personalization-brief",
+    "title": "A script-first personalization brief",
+    "eyebrow": "Personalized pieces",
+    "description": "Imagine a design discussion that begins with verified text in the intended script rather than an approximate transliteration.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a design discussion that begins with verified text in the intended script rather than an approximate transliteration. The concept prioritises accurate characters before ornament."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Reserve a clear text area in the sketch and keep pronunciation notes outside it. Require the actual future wording and a competent reader before any proof is treated as ready."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Who supplies the exact spelling?",
+          "Which script is requested?",
+          "What support and layout feasibility need confirmation?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P084; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Personalized pieces"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/bc94f146-d62a-4192-bf04-1a61190c6825",
+      "alt": "Single blue and clear bangle with gold-coloured flecks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:c53e3b66-d94e-5e71-a645-bcafbecf1109",
+    "kind": "page",
+    "route": "/portfolio/a-single-letter-form-with-no-implied-identity",
+    "title": "A single-letter form with no implied identity",
+    "eyebrow": "Personalized pieces",
+    "description": "Explore a letter-inspired decorative concept without assigning it to a named person.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a letter-inspired decorative concept without assigning it to a named person. The study focuses on the relationship between the letter outline and a small colour area."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Use the supplied letter-shaped references to discuss silhouette only. Keep the chosen character and any actual personalization as open inputs."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which character would be requested?",
+          "What part of its outline matters?",
+          "How would a final proof be checked?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P085; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Personalized pieces"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:3b9c4bbc-abc9-5984-a7b5-eb8576a9f96c",
+    "kind": "page",
+    "route": "/portfolio/a-personal-piece-with-a-separate-private-message",
+    "title": "A personal piece with a separate private message",
+    "eyebrow": "Personalized pieces",
+    "description": "Consider a concept where the object carries minimal text and a longer sentiment remains in a private note.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a concept where the object carries minimal text and a longer sentiment remains in a private note. The intention is to avoid compressing a whole message into a small visual space."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare initials-only and short-word options in sketches. Keep the full sentiment outside the proposed inscription until its purpose and privacy are discussed."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What belongs on the object?",
+          "What belongs in the note?",
+          "What wording and format can actually be supported?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P086; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Personalized pieces"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/bc94f146-d62a-4192-bf04-1a61190c6825",
+      "alt": "Single blue and clear bangle with gold-coloured flecks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:ae3e3966-c6ec-54ae-ab70-8f07d25292f4",
+    "kind": "page",
+    "route": "/portfolio/a-name-layout-with-generous-margins",
+    "title": "A name layout with generous margins",
+    "eyebrow": "Personalized pieces",
+    "description": "Imagine a personalized form where open space around the text is treated as part of the design.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a personalized form where open space around the text is treated as part of the design. The concept leaves the name unspecified rather than inventing a recipient."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare the text area's proportions with the outer outline using neutral marks. Add real text only after its exact source is supplied and reviewed."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "How much space should surround the text?",
+          "What is the actual character count?",
+          "What proof and feasibility review is needed?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P087; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Personalized pieces"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:91c05af6-c6d7-5019-a486-0e5be6f4da65",
+    "kind": "page",
+    "route": "/portfolio/a-shared-motif-with-individual-initials",
+    "title": "A shared motif with individual initials",
+    "eyebrow": "Personalized pieces",
+    "description": "Explore a small-set concept in which a common visual motif connects items while initials distinguish them.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a small-set concept in which a common visual motif connects items while initials distinguish them. No actual set quantity or production commitment is assumed."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Create an item-to-text matrix and a separate motif reference. Keep each future inscription tied to one item reference rather than copying loosely between messages."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What repeats across items?",
+          "Which initials belong to each?",
+          "How would the entire set be proofread?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P088; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Personalized pieces"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/faaa14a1-1fe7-4514-8a6d-2304701eb0cb",
+      "alt": "Stack of wavy-edged blue coasters with gold-coloured rims",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:f6b171ee-a6fe-5bd6-a384-09f545dc9be0",
+    "kind": "page",
+    "route": "/portfolio/a-punctuation-sensitive-inscription-study",
+    "title": "A punctuation-sensitive inscription study",
+    "eyebrow": "Personalized pieces",
+    "description": "Consider a personalization brief where punctuation changes the intended reading.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a personalization brief where punctuation changes the intended reading. The concept focuses on exact text handling rather than adding decorative complexity."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Keep a character-for-character source and compare the proposed layout against it. Mark punctuation and spacing as intentional instead of allowing automatic stylistic edits."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which marks are essential?",
+          "Who owns the wording decision?",
+          "Has the current proof been compared to the source?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P089; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Personalized pieces"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/bc94f146-d62a-4192-bf04-1a61190c6825",
+      "alt": "Single blue and clear bangle with gold-coloured flecks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:eb7296ea-d392-55f4-a0ee-876058c38054",
+    "kind": "page",
+    "route": "/portfolio/a-bilingual-concept-with-separate-review-fields",
+    "title": "A bilingual concept with separate review fields",
+    "eyebrow": "Personalized pieces",
+    "description": "Imagine a personal-art concept containing two language versions of a short message.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Imagine a personal-art concept containing two language versions of a short message. The study does not supply or certify translations; it prepares the review structure."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Give each language its own exact text field and reviewer status. Compare their visual relationship only after the actual wording is available and meaning has been checked."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Who reviews each language?",
+          "Are both meanings aligned?",
+          "What layout and script support remains to be confirmed?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Concept study",
+      "tags": [
+        "Personalized pieces"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P090; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Personalized pieces"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+]

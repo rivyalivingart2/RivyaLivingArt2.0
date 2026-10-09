@@ -22,7 +22,7 @@ export type ContentDocument={
  translations?:Partial<Record<Locale,ContentTranslation>>;
  homepage?:Homepage;homeSnapshot?:HomeSnapshot;
  pageSnapshot?:PageSnapshot;effectiveDate?:string;featuredArticleIds?:string[];
- editorial?:EditorialRecord;landing?:LandingDocument;discovery?:DiscoveryMetadata;review?:EditorialReview;
+ editorial?:EditorialRecord;landing?:LandingDocument;discovery?:DiscoveryMetadata;review?:EditorialReview;film?:'resin-pour';
 };
 export const articleAliases:Record<string,string>={
  'the-space-around-an-object':'a-room-begins-with-a-statement-table',
@@ -44,6 +44,7 @@ export function validContent(value:unknown,base?:ContentDocument):value is Conte
 function checkContent(value:unknown,base?:ContentDocument):value is ContentDocument{
  if(!value||typeof value!=='object')return false;
  const d=value as ContentDocument;
+ if(d.film!==undefined&&(d.film!=='resin-pour'||d.kind!=='article'&&d.editorial?.kind!=='portfolio'))return false;
  if(d.discovery!==undefined&&!validDiscovery(d.discovery)||d.review!==undefined&&!validEditorialReview(d.review))return false;
  if(!cleanText(d.id,100)||!['page','article'].includes(d.kind)||!cleanText(d.title,120)||!cleanText(d.eyebrow,100)||!cleanText(d.description,300)||!Array.isArray(d.sections)||(!d.landing&&d.sections.length<1)||d.sections.length>(d.id===sharedCopyId?40:20))return false;
  if(base&&(d.id!==base.id||d.route!==base.route||d.kind!==base.kind))return false;

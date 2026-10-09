@@ -1,0 +1,892 @@
+[
+  {
+    "id": "article:14e61156-11a0-5b7f-a249-e0d706e6e571",
+    "kind": "article",
+    "route": "/journal/measuring-a-proposed-position-clearly",
+    "title": "Measuring a proposed position clearly",
+    "eyebrow": "Dimensions and access",
+    "description": "A measurement is only useful when the reader knows what its endpoints represent.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A measurement is only useful when the reader knows what its endpoints represent. Start with the proposed position and the surrounding space rather than sending an isolated number."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Mark a reference corner or wall edge on a sketch. Record width, depth and height separately with units and the date. Label each measurement as approximate or checked. Add nearby openings and fixed obstructions so the available position is not confused with the desired object size."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A wall length of 240 centimetres does not mean a 240-centimetre piece is appropriate. The sketch should distinguish the wall, the proposed footprint and space whose use still needs discussion."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What are the endpoints?",
+          "Are the units visible?",
+          "Does the number describe the room or the proposed piece?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Initial measurements are discussion inputs, not approved manufacturing dimensions. Do not assume photographs correct a missing measurement."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J011; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/cafeb13e-843f-4311-830f-b4690c7e1cd3",
+      "alt": "Close view of the left corner of a bench with grain-like lines and a blue channel",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:304e6b18-cd0d-5ba8-a964-a91e17f2b9ff",
+    "kind": "article",
+    "route": "/journal/recording-a-doorway-and-its-opening-direction",
+    "title": "Recording a doorway and its opening direction",
+    "eyebrow": "Dimensions and access",
+    "description": "A doorway record needs more than a front-facing photograph.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A doorway record needs more than a front-facing photograph. The opening direction and what sits on either side can matter as much as the visible frame."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Photograph the doorway from both approaches. On a sketch, mark the hinge side, the usual open position and nearby obstacles. Record measured openings only where they can be checked safely. Note whether the door or fittings can change position; leave that as a question if unknown."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A wide-looking doorway may lead immediately into a narrow turn. Pairing the doorway view with the approach view prevents the opening from being considered in isolation."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which way does it open?",
+          "What happens immediately before and after it?",
+          "Which measurements remain uncertain?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "This is an access discussion aid. It does not certify that an object can pass through or authorize removing doors or fittings."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J012; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/8542acee-a36f-4ea7-a6b6-b4b1a6498242",
+      "alt": "Brown and blue waterfall-end table visualization in a dark room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:76bb096e-63c2-5d30-a68f-982729f38ff6",
+    "kind": "article",
+    "route": "/journal/a-first-look-at-lift-and-staircase-access",
+    "title": "A first look at lift and staircase access",
+    "eyebrow": "Dimensions and access",
+    "description": "A first access survey should identify the points that need professional confirmation.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A first access survey should identify the points that need professional confirmation. It is more useful to record uncertainty than to conclude that a staircase or lift “looks large enough.”"
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Sketch the sequence from arrival point to room. Identify lift entrances, internal lift space, landings and changes of direction. Record building restrictions you actually know and mark the rest as questions. Use photographs taken from safe positions; do not attempt to simulate carrying a heavy piece."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A lift may accommodate a footprint but still have a restrictive entrance or awkward approach. Recording these as separate locations helps the transport discussion."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Where does direction change?",
+          "Which building rules need checking?",
+          "Who can confirm the uncertain access details?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "No self-measured access sheet guarantees transport or installation. Serviceability, handling, charges and installation are confirmed individually under the current delivery policy."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J013; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/83c63d21-d859-4c20-b815-2eaae8a48b54",
+      "alt": "Dark bench visualization with a blue channel beside a pale entry wall",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:40baeb23-8a0d-5327-acc1-13ee78c649a9",
+    "kind": "article",
+    "route": "/journal/why-a-sketch-needs-units-and-a-reference-edge",
+    "title": "Why a sketch needs units and a reference edge",
+    "eyebrow": "Dimensions and access",
+    "description": "A sketch without units can turn a helpful drawing into an ambiguous instruction.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A sketch without units can turn a helpful drawing into an ambiguous instruction. A named reference edge also makes later revisions easier to compare."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Put the unit in the drawing title and beside unusual measurements. Name one reference corner and measure from it consistently. Distinguish object dimensions from clear room dimensions. If a value is estimated, write that next to the value rather than relying on a general disclaimer elsewhere."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "Two arrows labelled 90 and 120 could mean centimetres, millimetres or an unfinished note. “Approximate centimetres, measured from window-side corner” gives the numbers an interpretable context."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Are units repeated where needed?",
+          "Is the reference edge identifiable?",
+          "Are estimates visibly marked?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A clean drawing is not automatically an accurate one. The person responsible for final dimensions must confirm the measurements before they become specifications."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J014; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/648d63af-46f5-4b18-92ca-f0fa1731b417",
+      "alt": "Portrait view of a dark bench with a blue channel",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:be4153b2-1238-5990-a6da-853d608d2471",
+    "kind": "article",
+    "route": "/journal/preparing-photographs-of-a-difficult-turning-point",
+    "title": "Preparing photographs of a difficult turning point",
+    "eyebrow": "Dimensions and access",
+    "description": "A difficult turn needs a sequence of views.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A difficult turn needs a sequence of views. One close-up may show the obstruction while hiding how a piece would approach it."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Take an approach view, a view facing the turn and a view looking back, without entering an unsafe position. Number the photographs in travel order. Mark the same corner on an accompanying sketch and describe anything outside the frame, such as a railing or projecting fitting."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A corridor bend can look open in a photograph taken after the turn. Adding the approach view reveals why the turning point deserves closer assessment."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What lies outside the frame?",
+          "Can the sequence be followed?",
+          "Which restriction needs a measured check?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Photographs support a transport discussion but cannot establish turning clearance or a safe handling method. Do not attempt a risky trial movement."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J015; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/cafeb13e-843f-4311-830f-b4690c7e1cd3",
+      "alt": "Close view of the left corner of a bench with grain-like lines and a blue channel",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:fea6eb67-3f6c-5c6e-af72-6777ba45a874",
+    "kind": "article",
+    "route": "/journal/comparing-a-footprint-with-the-space-around-it",
+    "title": "Comparing a footprint with the space around it",
+    "eyebrow": "Dimensions and access",
+    "description": "The footprint of an object and the space used around it are different parts of a brief.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "The footprint of an object and the space used around it are different parts of a brief. Comparing both prevents a plan from considering only whether an outline fits."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Draw the proposed footprint separately from surrounding activities. Mark where chairs move, doors swing or people pause. Use paper shapes for a first comparison and label any dimensions approximate. Discuss the activity that creates the tightest condition rather than assuming an empty-room photograph represents daily life."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A table outline can fit between walls while chairs need additional space during use. The purpose of the sketch is to expose that question, not to prescribe a universal clearance."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What moves around the object?",
+          "When is the position most crowded?",
+          "Which activity determines the next measurement?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Paper layouts cannot certify accessibility, safety or fit. Final dimensions and movement space need a specific review of the room and users."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J016; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/8542acee-a36f-4ea7-a6b6-b4b1a6498242",
+      "alt": "Brown and blue waterfall-end table visualization in a dark room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:50e9628d-3690-59e8-a0fb-f52aa6e232df",
+    "kind": "article",
+    "route": "/journal/dimensions-to-discuss-before-a-final-specification",
+    "title": "Dimensions to discuss before a final specification",
+    "eyebrow": "Dimensions and access",
+    "description": "Dimensions become more meaningful when each is tied to a use or relationship.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Dimensions become more meaningful when each is tied to a use or relationship. A list of preferred sizes is a starting point for discussion, not a finished specification."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Separate overall dimensions, visible proportions and the room measurements supporting them. Record why each matters. Identify details that depend on another decision, such as a height related to existing seating. Leave unknown construction or mounting dimensions for the appropriate discussion."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A preferred console width may be about its relationship to a wall picture. Writing down that reason leaves room to revise the number while preserving the design intention."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which number supports which purpose?",
+          "What depends on another decision?",
+          "Who will confirm the final specification?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not infer structural dimensions, load limits or mounting requirements from a visualization. Final design and dimensions require recorded approval."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J017; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/83c63d21-d859-4c20-b815-2eaae8a48b54",
+      "alt": "Dark bench visualization with a blue channel beside a pale entry wall",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:9b186f21-1d06-5daa-a83c-a27883561f8d",
+    "kind": "article",
+    "route": "/journal/keeping-approximate-measurements-distinct-from-approved-dimensions",
+    "title": "Keeping approximate measurements distinct from approved dimensions",
+    "eyebrow": "Dimensions and access",
+    "description": "Approximate measurements are useful when their status stays visible.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Approximate measurements are useful when their status stays visible. Problems arise when an early estimate is copied into a later document without its qualification."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Add status, date and source columns to your measurement sheet. Keep the original estimate when a checked value arrives, but mark it superseded. Use one clearly labelled current sheet for discussion. If two sources disagree, record the disagreement and ask for confirmation rather than averaging them."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "An early sketch might say “about 180 cm.” A later checked value should not silently replace it in a screenshot that still appears to be the original drawing."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which values are estimated?",
+          "Which have been superseded?",
+          "Is the current sheet easy to identify?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Neither repetition nor a polished layout turns an estimate into approval. Production dimensions remain a separate agreed record."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J018; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/648d63af-46f5-4b18-92ca-f0fa1731b417",
+      "alt": "Portrait view of a dark bench with a blue channel",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:be390ca1-0c9d-5978-af7d-93e055c0d4f3",
+    "kind": "article",
+    "route": "/journal/documenting-a-change-of-room-before-a-commission",
+    "title": "Documenting a change of room before a commission",
+    "eyebrow": "Dimensions and access",
+    "description": "Changing the intended room can change the brief even when the preferred object stays the same.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Changing the intended room can change the brief even when the preferred object stays the same. The new position deserves its own record rather than an informal note added to an old photograph."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Date the location change and identify the new room without unnecessary private detail. Review dimensions, access, light and surrounding objects again. List which preferences carry over and which assumptions no longer apply. Send the change against the existing inquiry reference when one exists."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A piece discussed for an open living area may later be considered for a hallway. The visual intention may survive while access and everyday movement questions change substantially."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What is different about the new position?",
+          "Which old measurements are no longer relevant?",
+          "What needs renewed agreement?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A proposed relocation does not amend an agreed specification or confirm feasibility. Ask the atelier to review the change before treating it as accepted."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J019; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/cafeb13e-843f-4311-830f-b4690c7e1cd3",
+      "alt": "Close view of the left corner of a bench with grain-like lines and a blue channel",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:9816aee3-a166-56ea-a6d8-4cf80274d010",
+    "kind": "article",
+    "route": "/journal/a-measurement-sheet-an-architect-and-client-can-share",
+    "title": "A measurement sheet an architect and client can share",
+    "eyebrow": "Dimensions and access",
+    "description": "A shared measurement sheet should make responsibility visible.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A shared measurement sheet should make responsibility visible. An architect, client and atelier may each contribute information without all confirming the same facts."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Give the sheet a title, date and version. Include a small plan, units, named reference points and a column for who supplied each value. Separate site measurements from desired object dimensions. Add unresolved questions and a place to record the later confirmation, rather than leaving a blank that could be mistaken for approval."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A client can identify a preferred position while an architect supplies a measured wall length. Keeping those contributions distinct makes the handover easier to review."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Who supplied each value?",
+          "What version is current?",
+          "Which confirmation is still missing?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "The sheet does not allocate professional responsibility by itself. The parties still need to agree who verifies site conditions and final dimensions."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Worksheet",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J020; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/8542acee-a36f-4ea7-a6b6-b4b1a6498242",
+      "alt": "Brown and blue waterfall-end table visualization in a dark room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+]
