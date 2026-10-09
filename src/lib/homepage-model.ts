@@ -3,7 +3,7 @@ import {baselineProducts, type ShopProduct} from './shop-model';
 import {allowedEditorialPath} from './editorial-media-model';
 
 export type HomeAction={label:string;href:string};
-export type ImageCrop={x:number;y:number;ratio:'4/5'|'3/2'|'1/1'};
+export type ImageCrop={x:number;y:number;ratio:'4/5'|'3/2'|'1/1'|'16/9'|'21/9'};
 export type EditorialUsage={path:string;alt:string;caption:string;desktop:ImageCrop;mobile:ImageCrop};
 export const homeSectionTypes=['selected','categories','story','steps','journeys','journal','invitation'] as const;
 export type HomeSectionType=typeof homeSectionTypes[number];
@@ -47,7 +47,7 @@ const text=(v:unknown,max=300,required=true):v is string=>typeof v==='string'&&v
 export function validHomeHref(v:unknown):v is string{return typeof v==='string'&&/^\/(?:[a-z0-9]+(?:-[a-z0-9]+)*(?:\/[a-z0-9]+(?:-[a-z0-9]+)*)?)?(?:#[a-z0-9-]+)?$/.test(v)&&v.length<=240;}
 const action=(v:HomeAction|undefined)=>!v||(text(v.label,80)&&validHomeHref(v.href));
 const ids=(v:unknown,max:number)=>Array.isArray(v)&&v.length<=max&&new Set(v).size===v.length&&v.every(x=>text(x,100));
-export function validUsage(v:EditorialUsage){return !!v&&allowedEditorialPath(v.path)&&text(v.alt,180)&&text(v.caption,180,false)&&[v.desktop,v.mobile].every(c=>c&&['4/5','3/2','1/1'].includes(c.ratio)&&[c.x,c.y].every(n=>Number.isFinite(n)&&n>=0&&n<=100));}
+export function validUsage(v:EditorialUsage){return !!v&&allowedEditorialPath(v.path)&&text(v.alt,180)&&text(v.caption,180,false)&&[v.desktop,v.mobile].every(c=>c&&['4/5','3/2','1/1','16/9','21/9'].includes(c.ratio)&&[c.x,c.y].every(n=>Number.isFinite(n)&&n>=0&&n<=100));}
 export function validHomepage(d:ContentDocument):boolean{
  try{return checkHomepage(d);}catch{return false;}
 }

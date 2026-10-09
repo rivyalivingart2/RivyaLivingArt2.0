@@ -7,7 +7,7 @@ import {validPageMedia} from './editorial-media-model';
 import {baselineContent,validContent,type ContentDocument} from './content-model';
 import {homeActions,homeProductIds,type HomeSnapshot,type HomeProduct,type HomeArticle,type HomeDependency} from './homepage-model';
 
-export type DependencyRow={key:string;document:unknown;version:number;fingerprint:string};
+export type DependencyRow={key:string;document:unknown;version:number;fingerprint:string;publishedAt?:string|null};
 export type DependencySource={products:DependencyRow[];content:DependencyRow[];media:DependencyRow[]};
 const publicRoutes=new Set(['/','/collectible-design','/memory-art','/personal-art','/search','/commission','/preserve','/personalize','/commission/customize','/journal','/saved-pieces']);
 /** A single SQL snapshot feeds this pure compiler. Never copy a draft or arbitrary stored keys. */

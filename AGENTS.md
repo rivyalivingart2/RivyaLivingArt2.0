@@ -1,4 +1,10 @@
-# Production setup complete — stop before M5
+# Current authorization — implement M5, then M6 locally
+
+9 October 2026. The owner explicitly requested starting M5 and M6. Complete and verify M5, then M6, in dependency order. This supersedes the previous stop at Production setup for these two phases only. Do not start M7, push, release or publish production changes. Read `docs/decisions/2026-10-09-m5-m6.md`. Preserve all original records and use only the existing isolated loopback QA database for write tests.
+
+---
+
+# Previous checkpoint — Production setup complete
 
 9 October 2026. The owner requested only Production setup, followed by a stop. The two presentation tables now exist in the verified shared live database with narrow runtime grants. A real Studio administrator saved fresh production draft revision 1 and deliberately published revision 2 after exact preview review. The homepage composition, seven page layouts and disclosed material film are live. All eight routes return revision 2; all 13 original protected scopes have identical before/after counts and digests. Read `docs/redesign/old-design-migration-2026-10-08/PRODUCTION-SETUP.md` and the decision at `docs/decisions/2026-10-09-production-presentation-setup.md`.
 

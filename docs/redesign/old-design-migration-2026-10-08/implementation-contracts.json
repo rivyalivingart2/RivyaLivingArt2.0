@@ -33,8 +33,9 @@
       "referenceOnly": false,
       "protectedGuard": "Old intro/featured/archive structure; current article information intact.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/blog/[slug]",
@@ -49,8 +50,9 @@
       "referenceOnly": false,
       "protectedGuard": "Preserve current articles and URLs; absent old article identity gets truthful unavailable behavior.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/contact",
@@ -97,8 +99,9 @@
       "referenceOnly": false,
       "protectedGuard": "Old question index/search; new topic facets additive, existing answers unchanged.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/large-resin-art",
@@ -129,8 +132,9 @@
       "referenceOnly": false,
       "protectedGuard": "All 16 block types specified; no old content import or arbitrary executable HTML.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/",
@@ -163,8 +167,9 @@
       "overrides": [
         "2026-10-09-labelled-editorial-content"
       ],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/portfolio/[slug]",
@@ -181,8 +186,9 @@
       "overrides": [
         "2026-10-09-labelled-editorial-content"
       ],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/privacy",
@@ -197,8 +203,9 @@
       "referenceOnly": false,
       "protectedGuard": "Existing approved wording and metadata unchanged.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/process",
@@ -229,8 +236,9 @@
       "referenceOnly": false,
       "protectedGuard": "No product import or guessed slug mapping; preserve all current fields and galleries.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/search",
@@ -245,8 +253,9 @@
       "referenceOnly": false,
       "protectedGuard": "Collections, products, Journal and Portfolio groups; no private/draft results.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/shop",
@@ -261,8 +270,9 @@
       "referenceOnly": false,
       "protectedGuard": "Implement complete old shop composition using current catalogue; do not rely on a redirect alone.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/shop/[category]",
@@ -277,8 +287,9 @@
       "referenceOnly": false,
       "protectedGuard": "No broad dynamic redirect until each old category identity matches an existing destination.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/shop/wishlist",
@@ -293,8 +304,9 @@
       "referenceOnly": false,
       "protectedGuard": "Preserve browser-saved behavior; no invented cross-device account.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/terms",
@@ -309,8 +321,9 @@
       "referenceOnly": false,
       "protectedGuard": "Existing approved wording and metadata unchanged.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/whatsapp-order",
@@ -325,8 +338,9 @@
       "referenceOnly": false,
       "protectedGuard": "Not a blind redirect to a private receipt; saved reference and manual Send retained.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/workshops",
@@ -357,8 +371,9 @@
       "referenceOnly": false,
       "protectedGuard": "Actual 410 only where valid; no accidental indexing or homepage redirect.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/maintenance",
@@ -373,8 +388,9 @@
       "referenceOnly": false,
       "protectedGuard": "Operational state; do not expose drafts or replace healthy pages.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/too-many-requests",
@@ -389,8 +405,9 @@
       "referenceOnly": false,
       "protectedGuard": "Respect real 429/retry behavior; no bypass of current guard.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/design-lab",
@@ -405,8 +422,9 @@
       "referenceOnly": false,
       "protectedGuard": "Development/reference only; authenticated or otherwise safely isolated, noindex.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "oldRoute": "/studio/activity",
@@ -3737,8 +3755,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "richText",
@@ -3747,8 +3766,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "productGrid",
@@ -3757,8 +3777,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "imageCta",
@@ -3767,8 +3788,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "faqPicker",
@@ -3777,8 +3799,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "finalCta",
@@ -3787,8 +3810,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "collectionGrid",
@@ -3797,8 +3821,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "portfolioGrid",
@@ -3807,8 +3832,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "journalGrid",
@@ -3817,8 +3843,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "testimonial",
@@ -3827,8 +3854,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "testimonialGrid",
@@ -3837,8 +3865,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "videoHero",
@@ -3847,8 +3876,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "videoStory",
@@ -3857,8 +3887,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "masonryGallery",
@@ -3867,8 +3898,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "bentoGallery",
@@ -3877,8 +3909,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     },
     {
       "type": "fullscreenGallery",
@@ -3887,8 +3920,9 @@
       "oldSource": "src/lib/custom-blocks.ts",
       "owner": "new optional versioned landing presentation under current content revision service",
       "empty": "omits missing optional dependency; never imports an old record; editor explains omission",
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "not-run",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md"
     }
   ],
   "sharedContracts": [

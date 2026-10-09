@@ -33,6 +33,10 @@ import {publishedPresentation} from '@/lib/presentation-store';
 import {publishedSource} from '@/lib/published-source';
 import {materialFilm,type PresentationFilm} from '@/lib/presentation-media';
 import {MaterialFilm} from './material-film';
+import {LandingDocumentView} from './landing-document';
+import {editorialDisclosure} from '@/lib/editorial-record-model';
+import m from './migration-public.module.css';
+import {LandingGallery} from './landing-gallery';
 
 function Intro({eyebrow,title,children}:{eyebrow:string;title:string;children?:React.ReactNode}){return <header className={s.pageIntro+' '+e.intro}><span className={s.eyebrow}>{eyebrow}</span><h1>{title}</h1>{children&&<p>{children}</p>}</header>;}
 const minutes=(a:ContentDocument)=>Math.max(1,Math.ceil([a.description,...a.sections.flatMap(b=>[b.heading,...b.paragraphs,...(b.checklist||[])])].join(' ').trim().split(/\s+/).length/200));
@@ -68,6 +72,7 @@ export function JournalDocument({content:d,locale='en'}:{content:PublishedConten
 /** Shared by public pages and authenticated saved-revision previews. */
 export async function EditorialDocument({content:source,documents,locale='en',snapshot,design,designVersion,reference,film}:{content:PublishedContentDocument;documents:PublishedContentDocument[];locale?:Locale;snapshot?:PageSnapshot;design?:PageDesign;designVersion?:number;reference?:HomeReferenceSnapshot;film?:PresentationFilm}){
  const tr=(text:string)=>journeyText(locale,text);
+ if(source.landing)return <LandingDocumentView document={{...source,pageSnapshot:snapshot||source.pageSnapshot}}/>;
  const route=source.route,articles=documents.filter(d=>d.kind==='article');
  const business=route==='/contact'||!!policies[route]?(await publishedBusiness()).details:null;
  const bound=business?bindImprintContacts(source,business):source;
@@ -81,6 +86,7 @@ export async function EditorialDocument({content:source,documents,locale='en',sn
  const next=nextSteps[route]||['/commission','Begin your piece','/journal','Return to the journal'];
  return <div className={e.editorial+(policy?' '+e.policy:'')+(policy||route==='/materials-care'?' '+e.printable:'')+(design?' '+r.reference:'')} data-editorial={article?'article':route.slice(1)} data-content-revision={source.publishedRevision} data-presentation-revision={designVersion} data-page-hero={design?.hero}>
   <EditorialStructuredData document={content}/>
+  {content.editorial&&<p className={m.disclosure}>{editorialDisclosure(content.editorial)}</p>}
   <nav className={s.editorialBreadcrumb} aria-label={tr("Breadcrumb")}><Link href="/"><JourneyText text="Home"/></Link><span aria-hidden="true">/</span>{article&&<><Link href="/journal"><JourneyText text="Journal"/></Link><span aria-hidden="true">/</span></>}<span aria-current="page">{content.title}</span></nav>
   <div className={e.opening+(design?' '+r.opening:'')} data-split={story&&design?.hero!=='full'&&!!(content.headerImage||content.image)} data-has-image={!!(content.headerImage||content.image)}>
    <Intro eyebrow={content.eyebrow} title={content.title}>{content.description}</Intro>
@@ -91,12 +97,15 @@ export async function EditorialDocument({content:source,documents,locale='en',sn
   {story&&<><nav className={e.chapterNav} aria-label={tr("On this page")}><details><summary><JourneyText text="On this page"/></summary><ol>{content.sections.map(b=><li key={b.id}><a href={'#'+b.id}>{b.heading}</a></li>)}</ol></details></nav>{design?<><SectionNavigation label={tr("On this page")} items={content.sections.map(b=>({id:b.id,label:b.heading}))}/>{film&&<MaterialFilm film={film}/>}<ReferenceChapters document={{...content,pageSnapshot:deps}} design={design}/><ReferencePageAdditions design={design} reference={reference} locale={locale}/></>:content.sections.map(b=><EditorialChapter key={b.id} section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>)}</>}
   <div className={s.readingLayout+' '+e.reading}>{!story&&!faq&&content.sections.length>2&&<nav className={s.contents+' '+e.contents} aria-label={tr("On this page")}><p><JourneyText text="On this page"/></p>{content.sections.map(b=><a key={b.id} href={'#'+b.id}>{b.heading}</a>)}</nav>}
    <div className={s.prose+' '+e.prose}>{article&&<p className={s.eyebrow}><JourneyText text="By RivyaLivingArt"/> · <span className={s.productIndex} style={{display:'inline',margin:0}}>{minutes(content)} <JourneyText text="minute read"/></span></p>}
-    {faq&&<FaqBrowser sections={content.sections} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>}
+    {faq&&<FaqBrowser sections={[...content.sections,...(deps?.faqEntries||[]).map(d=>({id:d.id.replace(':','-'),heading:d.title,paragraphs:d.sections.flatMap(s=>s.paragraphs),group:d.eyebrow,policyHref:d.editorial?.policyHref}))]} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>}
     {!story&&!faq&&content.sections.map(b=><section id={b.id} key={b.id}>{b.stage&&<p className={s.eyebrow}>{tr(b.stage==='customer'?'Customer steps':'Making steps')}</p>}<h2>{b.heading}</h2>{!(route==='/imprint'&&b.id===imprintContactId)&&<SectionBody section={b} unavailable={deps?.unavailableActionHrefs} mediaPaths={deps?.mediaPaths}/>} {route==='/imprint'&&b.id===imprintContactId&&business&&<dl className={s.imprintContacts}><div><dt><JourneyText text="Telephone"/></dt><dd><a href={'tel:'+business.phone}>{business.phone}</a></dd></div><div><dt><JourneyText text="Email"/></dt><dd><a href={'mailto:'+business.email}>{business.email}</a></dd></div></dl>}</section>)}
     {policy?<><nav className={s.policyLinks} aria-label={tr("Policies and help")}>{Object.entries(policies).filter(([p])=>p!==route&&routeAvailable(p)).map(([p,label])=><Link key={p} href={p}>{tr(label)}</Link>)}</nav><div className={s.actions}><Link className={s.button} href="/contact"><JourneyText text="Contact the atelier"/> <ArrowUpRight aria-hidden="true" size={16} className={s.linkArrow}/></Link>{business&&<a className={s.textLink} href={'mailto:'+business.email}><JourneyText text="Email about this page"/></a>}</div></>:route!=='/contact'&&<div className={s.actions}>{routeAvailable(next[0])&&<Link className={s.button} href={next[0]}>{tr(next[1])} <ArrowUpRight aria-hidden="true" size={16} className={s.linkArrow}/></Link>}{routeAvailable(next[2])&&<Link className={s.textLink} href={next[2]}>{tr(next[3])}</Link>}</div>}
 
    </div>
   </div>
+  {content.editorial?.gallery?.length? <section className={s.section} aria-label="Story gallery"><LandingGallery images={content.editorial.gallery.filter(i=>deps?.mediaPaths.includes(i.path))} layout="fullscreenGallery"/></section>:null}
+  {content.editorial?.details?.length? <dl className={s.section}>{content.editorial.details.map((detail,i)=><div key={i}><dt>{detail.label}</dt><dd>{detail.value}</dd></div>)}</dl>:null}
+  {content.editorial?.attribution&&<p className={s.section}>{content.editorial.attribution}</p>}
   {related.length>0&&<section className={s.section}><div className={s.sectionHead}><h2><JourneyText text="Ideas to explore."/></h2></div><div className={s.grid}>{related.map(p=><ProductCard key={p.id} product={p}/>)}</div></section>}
   {article&&more.length>0&&<section className={s.section}><div className={s.sectionHead}><h2><JourneyText text="Keep exploring."/></h2><Link className={s.textLink} href="/journal"><JourneyText text="All stories"/> <ArrowUpRight aria-hidden="true" size={16} className={s.linkArrow}/></Link></div><div className={s.grid}>{more.map(a=><ArticleCard key={a.id} article={a}/>)}</div></section>}
  </div>;

@@ -1,0 +1,46 @@
+.intro { padding:clamp(48px,7vw,110px) 5vw; border-bottom:1px solid var(--hairline); }
+.intro h1 { font-size:clamp(3rem,6.8vw,6rem); max-width:15ch; text-wrap:balance; margin:16px 0 28px; }
+.intro p { max-width:64ch; line-height:1.8; }
+.landing { overflow-wrap:anywhere; }
+.block { padding:clamp(56px,7vw,112px) 5vw; border-bottom:1px solid var(--hairline); scroll-margin-top:100px; }
+.block:nth-child(even) { background:var(--surface); }
+.block h2 { font-size:clamp(2.2rem,4vw,4rem); max-width:22ch; text-wrap:balance; }
+.blockCopy { max-width:72ch; margin-bottom:32px; }
+.blockCopy p { line-height:1.8; }
+.block[data-block=imageCta], .block[data-block=videoStory] { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(24px,5vw,80px); align-items:center; }
+.block[data-side=end] .blockCopy { order:1; }
+.block[data-block=hero],.block[data-block=videoHero] { min-height:100svh; }
+.block[data-block=finalCta] { padding-block:clamp(96px,12vw,180px); }
+.entries { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px 28px; }
+.entry { min-width:0; border-bottom:1px solid var(--hairline); padding-bottom:28px; }
+.entry h3 { font-size:clamp(1.8rem,2.5vw,2.5rem); line-height:1.15; margin-block:24px 16px; }
+.entry p { line-height:1.75; }
+.entry a:focus-visible { outline:2px solid var(--bronze); outline-offset:5px; }
+.disclosure { font-size:14px; color:var(--ivory); padding:12px 16px; border-inline-start:3px solid var(--bronze); background:var(--surface); }
+.quotes { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px; }
+.block[data-block=testimonial][data-variant=featured] .quotes { grid-template-columns:1fr; max-width:72ch; margin-inline:auto; text-align:center; }
+.quotes figure { margin:0; padding:24px; border-top:1px solid var(--control-border); }
+.quotes blockquote { margin:20px 0; font-size:1.25rem; line-height:1.7; }
+.answers details { border-bottom:1px solid var(--hairline); padding-block:16px; }
+.answers summary { min-height:48px; cursor:pointer; font-size:1.25rem; }
+.answers p { max-width:70ch; line-height:1.8; }
+.gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.gallery[data-layout=bentoGallery] > :first-child { grid-column:span 2; }
+.gallery[data-layout=masonryGallery] { align-items:start; }
+.gallery[data-layout=masonryGallery] > :nth-child(3n+2) { padding-top:48px; }
+.gallery[data-layout=fullscreenGallery] { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.gallery button,.controls button { min-height:48px; padding:12px 18px; }
+.enlarged { position:relative; height:60svh; }
+.controls { display:flex; gap:20px; align-items:center; flex-wrap:wrap; }
+.srOnly { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+.discovery { padding-block:48px; border-top:1px solid var(--hairline); }
+.discovery h2 { font-size:clamp(2rem,3vw,3rem); }
+.groupNav { display:flex; flex-wrap:wrap; gap:12px; margin-block:24px; }
+.groupNav a { display:inline-flex; align-items:center; padding:12px 18px; min-height:48px; border:1px solid var(--control-border); }
+.archive { padding:48px 5vw 96px; }
+.archive .entries { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.archive .entry:first-child { grid-column:1 / -1; display:grid; grid-template-columns:1.2fr 1fr; gap:40px; align-items:center; }
+.entry > .disclosure { grid-column:1 / -1; }
+@media (max-width:900px) { .entries { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:600px) { .entries,.quotes,.gallery,.gallery[data-layout=fullscreenGallery],.archive .entries,.archive .entry:first-child,.block[data-block=imageCta],.block[data-block=videoStory] { grid-template-columns:minmax(0,1fr); } .gallery[data-layout=bentoGallery] > :first-child { grid-column:auto; } .gallery[data-layout=masonryGallery] > :nth-child(3n+2) { padding-top:0; } .block[data-side=end] .blockCopy { order:0; } .intro h1 { font-size:clamp(2.8rem,12vw,4rem); } }
+@media print { .block,.intro,.archive { padding:20px 0; } .gallery button,.controls { display:none; } }

@@ -800,9 +800,9 @@
         "M4"
       ],
       "acceptance": "Current catalogue filters and identities retained; published Journal/Portfolio groups added without private/draft leaks.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-local-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md; full visual and human acceptance remains open"
     },
     {
       "id": "M5-02",
@@ -813,9 +813,9 @@
         "M4"
       ],
       "acceptance": "Protected product/form/gallery and immutable saved-brief contracts unchanged; WhatsApp still requires customer Send.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-local-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md; full visual and human acceptance remains open"
     },
     {
       "id": "M5-03",
@@ -826,9 +826,9 @@
         "M4"
       ],
       "acceptance": "Detail/index/empty/pagination states work with existing and new records; genuine proof separated from concept imagery.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-local-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md; full visual and human acceptance remains open"
     },
     {
       "id": "M5-04",
@@ -839,9 +839,9 @@
         "M4"
       ],
       "acceptance": "Hero, text, product/collection/editorial/quote readers, video and galleries adapt to current services; media/product selections remain frozen.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-local-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md; full visual and human acceptance remains open"
     },
     {
       "id": "M5-05",
@@ -852,9 +852,9 @@
         "M4"
       ],
       "acceptance": "Approved text/SEO/routes preserved; errors, maintenance, rate limiting and private design preview do not leak drafts or gain unwanted indexing.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-local-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m5-evidence.json; M5-PUBLIC-JOURNEYS.md; full visual and human acceptance remains open"
     },
     {
       "id": "M6-01",
@@ -1261,10 +1261,11 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "M0–M4 verified for recorded local engineering scope. M5 not started and requires explicit owner permission. M5–M11 unfinished. New content 0/480; one MP4 copied to Drive and verified, two existing matching media files verified; no production writes or release.",
+  "note": "M0-M5 verified for their recorded engineering scopes. M6 authorized next. No production write or new release; editorial production remains 0/480.",
   "nextPhaseAuthorization": {
-    "phase": "M5",
-    "state": "awaiting-owner-permission",
-    "source": "docs/decisions/2026-10-09-phase-permission-and-media.md"
+    "phase": "M6",
+    "state": "authorized-local",
+    "source": "docs/decisions/2026-10-09-m5-m6.md",
+    "stopBefore": "M7"
   }
 }

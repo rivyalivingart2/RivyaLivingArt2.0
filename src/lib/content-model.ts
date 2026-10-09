@@ -10,6 +10,8 @@ import {validEditorialBody,bodyParagraphs,safeEditorialHref,type EditorialBody} 
 import {validUsage,type EditorialUsage,type HomeAction} from './homepage-model';
 import {sharedCopyCandidate,sharedCopyId,validSharedCopy} from './shared-copy-model';
 import type {PageSnapshot} from './page-dependencies';
+import {isEditorialId,validEditorialRecord,type EditorialRecord} from './editorial-record-model';
+import {validLanding,type LandingDocument} from './landing-model';
 export type ContentSection={layout?:'prose'|'split'|'reverse'|'statement';id:string;heading:string;paragraphs:string[];checklist?:string[];body?:EditorialBody;enabled?:boolean;group?:string;stage?:'customer'|'making';policyHref?:string;sourceNote?:string;image?:EditorialUsage;action?:HomeAction;material?:{appearance:string;limitations:string;care:string;placement:string}};
 export type ContentSectionTranslation={heading?:string;paragraphs?:string[];checklist?:string[]};
 export type ContentTranslation={title?:string;eyebrow?:string;description?:string;sections?:Record<string,ContentSectionTranslation>;fields?:Record<string,string>;reviewedRevision?:string};
@@ -19,6 +21,7 @@ export type ContentDocument={
  translations?:Partial<Record<Locale,ContentTranslation>>;
  homepage?:Homepage;homeSnapshot?:HomeSnapshot;
  pageSnapshot?:PageSnapshot;effectiveDate?:string;featuredArticleIds?:string[];
+ editorial?:EditorialRecord;landing?:LandingDocument;
 };
 export const articleAliases:Record<string,string>={
  'the-space-around-an-object':'a-room-begins-with-a-statement-table',
@@ -47,7 +50,10 @@ function checkContent(value:unknown,base?:ContentDocument):value is ContentDocum
  if(!cleanText(d.route,240)||(d.route!=='/'||d.id!==homeId)&&!/^\/(?:[a-z0-9]+(?:-[a-z0-9]+)*)(?:\/[a-z0-9]+(?:-[a-z0-9]+)*)?$/.test(d.route))return false;
  if(d.kind==='article'&&(!/^\/journal\/[a-z0-9]+(?:-[a-z0-9]+)*$/.test(d.route)||Object.hasOwn(articleAliases,d.route.slice('/journal/'.length))))return false;
  if(isCustomPageId(d.id)&&(d.kind!=='page'||!isCustomPageRoute(d.route)))return false;
- if(!base&&!(d.kind==='article'&&/^article:[0-9a-f-]{36}$/.test(d.id))&&!isCustomPageId(d.id))return false;
+ if(!base&&!(d.kind==='article'&&/^article:[0-9a-f-]{36}$/.test(d.id))&&!isCustomPageId(d.id)&&!isEditorialId(d.id))return false;
+ if(isEditorialId(d.id)?d.kind!=='page'||!validEditorialRecord(d.editorial,d.route):d.editorial!==undefined)return false;
+ if(d.editorial?.kind==='testimonial'&&(d.image||d.headerImage||d.sections.some(s=>s.image)||d.relatedProductIds?.length))return false;
+ if(d.landing!==undefined&&(!isCustomPageId(d.id)||!validLanding(d.landing)))return false;
  if(d.id===sharedCopyId&&!validSharedCopy(d))return false;
  if(isDiscoveryRoute(d.route)&&!d.sections.some(s=>s.id==='browse'&&s.enabled!==false))return false;
  if(d.featuredArticleIds!==undefined&&(!Array.isArray(d.featuredArticleIds)||d.route!=='/journal'||d.featuredArticleIds.length>3||new Set(d.featuredArticleIds).size!==d.featuredArticleIds.length||d.featuredArticleIds.some(id=>!cleanText(id,100))))return false;
@@ -91,7 +97,7 @@ function checkContent(value:unknown,base?:ContentDocument):value is ContentDocum
   if(!s.paragraphs.length&&!s.checklist?.length)return false;
   ids.add(s.id);chars+=s.paragraphs.join('').length+(s.checklist?.join('').length||0);
  }
- return chars<=24000&&!/\b(demo fixture|fictional project|sample content|private design trial)\b/i.test(JSON.stringify(d));
+ return chars<=24000&&!/\b(demo fixture|sample content|private design trial)\b/i.test(JSON.stringify(d))&&(!!d.editorial||!/\bfictional project\b/i.test(JSON.stringify(d)));
 }
 
 export function localizeContent(document:ContentDocument,locale:Locale):ContentDocument{
