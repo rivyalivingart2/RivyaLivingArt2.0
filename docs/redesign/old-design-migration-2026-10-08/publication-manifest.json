@@ -1,0 +1,123 @@
+{
+  "prepared": "2026-10-09",
+  "scope": "documentation_only",
+  "applicationChanged": false,
+  "applicationTests": "Not rerun for a documentation-only package; PR and Vercel checks separately verified during publication.",
+  "validation": {
+    "phases": 12,
+    "tasks": 60,
+    "contentEntries": 480,
+    "perSection": 120,
+    "oldPageTemplates": 85,
+    "registeredSections": 74,
+    "homeSections": 18,
+    "studioDestinations": 32,
+    "driveRows": 111,
+    "screenshotPixelsIncluded": false,
+    "jsonReadable": true,
+    "htmlCompanionLinksResolve": true,
+    "machinePathsAndCredentialPatternsAbsent": true
+  },
+  "files": [
+    {
+      "path": "CONTINUE-IN-NEW-CHAT.md",
+      "bytes": 4420,
+      "sha256": "965606cef6b7a15e7752552f5cdda8751e18f230c0307bc73ccc8fb66e96eede"
+    },
+    {
+      "path": "drive-inventory.json",
+      "bytes": 45331,
+      "sha256": "81506130ef4996c10d8be7270735b04c0a5490c9e0c6545bfcd5d0f31708772c"
+    },
+    {
+      "path": "editorial-production-register.json",
+      "bytes": 499101,
+      "sha256": "117f15c792f61d94fa26ec93a065e673c2be70c9e58bb8451906a83ad24c2129"
+    },
+    {
+      "path": "editorial_topics.json",
+      "bytes": 13308,
+      "sha256": "488b3ee18c7f6b958d8f1bd2eeed62e0cd5c2c8f1971df171048b8a1bfe285fc"
+    },
+    {
+      "path": "EVIDENCE-NOTES.md",
+      "bytes": 2015,
+      "sha256": "8b15a8c8954bb987c34017ee4aee4131dcdb6b4b7d5d6b42df4ae3cfa6073a72"
+    },
+    {
+      "path": "implementation-tracker.json",
+      "bytes": 43804,
+      "sha256": "baf6e7defe8a2c1f86a11ba3bfd0b51331758c49e21edbadce5e6fbb35895ce4"
+    },
+    {
+      "path": "old-route-parity.json",
+      "bytes": 77837,
+      "sha256": "cbe906061b34ff5a43f6d0713c008139779eb4fab7a03a2791b31bdcdbb5f56e"
+    },
+    {
+      "path": "old-section-manifest.json",
+      "bytes": 32924,
+      "sha256": "db91a3698fdcfa571d1baa4e5f6bb9a3b4c18268de4cdd7b2b015d830aa60b97"
+    },
+    {
+      "path": "phases.json",
+      "bytes": 14459,
+      "sha256": "ec5382e479e50b0aad6ab9fbc463954bfec422b346c2cf5709cd80e25b07bc5e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3433,
+      "sha256": "3e52c216ebcb2655f2429f71676c0045734c7d063fdc203a798668d4be032cd1"
+    },
+    {
+      "path": "reviewed-reference-images.json",
+      "bytes": 1528,
+      "sha256": "06806efe81f1cde120e4f70974b3f660ebd1255c23bec81999665d5de8ef0171"
+    },
+    {
+      "path": "Rivya-Combined-Final-Implementation-and-Phase-Wise-Plan.md",
+      "bytes": 279214,
+      "sha256": "8f6da132c1561984b89bc0ad0610b31e3aa9e080b0a1ab74b2f3e043be39db0b"
+    },
+    {
+      "path": "Rivya-Editorial-Production-Register.html",
+      "bytes": 435007,
+      "sha256": "c40a19e94cafbba10e62e86ece913b066c2da1a557e7ea4ee63f8339a5adbed4"
+    },
+    {
+      "path": "Rivya-Final-Phase-Wise-Guide.html",
+      "bytes": 16396,
+      "sha256": "6f98f109cfa758b42202a2680c861cc9a9c9535dc3cdefb1c279e92cb8723707"
+    },
+    {
+      "path": "Rivya-Final-Phase-Wise-Guide.md",
+      "bytes": 13297,
+      "sha256": "fd3764309d9bb88dfdca99f4bd5c7dbf715ff0a777f05a9b98aead9ba3f662dc"
+    },
+    {
+      "path": "Rivya-Master-Implementation-Prompt.md",
+      "bytes": 6010,
+      "sha256": "3aaf7d10c5b1c0b3ff38e9ab91a5d4c234daf1b3f4f3e2664cdd51bc90e2ac01"
+    },
+    {
+      "path": "Rivya-Old-Design-Migration-Plan.html",
+      "bytes": 217459,
+      "sha256": "b95635bc7f21c85b13af14a52270340ca0ddb4d2cafea9377e7136abcea3b977"
+    },
+    {
+      "path": "Rivya-Old-Design-Migration-Plan.md",
+      "bytes": 177288,
+      "sha256": "e1a7a5f55f2711f4ab9b8bf1c79862d25d5022f79d0e584e49ba0af1837252f3"
+    },
+    {
+      "path": "screenshot-manifest.json",
+      "bytes": 1423,
+      "sha256": "f19c3c1f58dca4a885e565687798a3da4d90e9fe7c7aabbf0e8ac4c9dbbdbc1d"
+    },
+    {
+      "path": "source-route-inventory.json",
+      "bytes": 56770,
+      "sha256": "1d0ac5ac5a0a75830a95390866acf20bcc730daa06693bbb87a0d78e766d3605"
+    }
+  ]
+}

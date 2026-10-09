@@ -1,0 +1,1218 @@
+[
+  {
+    "group": "HOME",
+    "sections": [
+      {
+        "key": "pour",
+        "label": "Hero",
+        "description": "The full-bleed opening, with the headline and two buttons.",
+        "dark": true,
+        "hideable": false,
+        "movable": false,
+        "ownsH1": true,
+        "copyPrefixes": [
+          "Home.hero"
+        ],
+        "imageKeys": [
+          "home.hero"
+        ],
+        "cureLabelKey": "cure.pour",
+        "source": "src/lib/page-sections.ts",
+        "line": 110
+      },
+      {
+        "key": "manifesto",
+        "label": "Manifesto",
+        "description": "The two-line statement under the hero.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Home.manifesto"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.manifesto",
+        "source": "src/lib/page-sections.ts",
+        "line": 122
+      },
+      {
+        "key": "pieces",
+        "label": "Featured pieces",
+        "description": "Four products — one large, three beside it.",
+        "hideable": true,
+        "movable": true,
+        "conditional": true,
+        "copyPrefixes": [
+          "Home.featured"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.pieces",
+        "source": "src/lib/page-sections.ts",
+        "line": 132
+      },
+      {
+        "key": "large-format",
+        "label": "Large format",
+        "description": "Four tiles pointing at work commissioned at scale.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Home.largeFormat"
+        ],
+        "imageKeys": [
+          "largeFormat.k1",
+          "largeFormat.k2",
+          "largeFormat.k3",
+          "largeFormat.k4"
+        ],
+        "cureLabelKey": "cure.largeFormat",
+        "source": "src/lib/page-sections.ts",
+        "line": 143
+      },
+      {
+        "key": "material",
+        "label": "The material story",
+        "description": "The pinned pour scrub and its four stages.",
+        "dark": true,
+        "hideable": true,
+        "movable": false,
+        "copyPrefixes": [
+          "Home.showcase"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.material",
+        "source": "src/lib/page-sections.ts",
+        "line": 158
+      },
+      {
+        "key": "collections",
+        "label": "The collections",
+        "description": "Six editorial tiles, each a doorway into the catalogue.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Home.collections"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.collections",
+        "source": "src/lib/page-sections.ts",
+        "line": 171
+      },
+      {
+        "key": "furniture",
+        "label": "What we commission",
+        "description": "Six kinds of furniture the studio takes on, as concepts.",
+        "hideable": true,
+        "movable": true,
+        "defaultVisible": false,
+        "copyPrefixes": [
+          "Home.furniture"
+        ],
+        "imageKeys": [
+          "home.furniture.dining",
+          "home.furniture.coffee",
+          "home.furniture.side",
+          "home.furniture.console",
+          "home.furniture.chair",
+          "home.furniture.bench"
+        ],
+        "cureLabelKey": "cure.furniture",
+        "source": "src/lib/page-sections.ts",
+        "line": 181
+      },
+      {
+        "key": "maker",
+        "label": "The maker",
+        "description": "The portrait and the paragraph beside it.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Home.maker"
+        ],
+        "imageKeys": [
+          "home.maker"
+        ],
+        "cureLabelKey": "cure.maker",
+        "source": "src/lib/page-sections.ts",
+        "line": 205
+      },
+      {
+        "key": "rooms",
+        "label": "In the room",
+        "description": "Four rooms shown with a commissioned piece in place.",
+        "hideable": true,
+        "movable": true,
+        "defaultVisible": false,
+        "copyPrefixes": [
+          "Home.rooms"
+        ],
+        "imageKeys": [
+          "home.rooms.living",
+          "home.rooms.dining",
+          "home.rooms.study",
+          "home.rooms.bedroom"
+        ],
+        "cureLabelKey": "cure.rooms",
+        "source": "src/lib/page-sections.ts",
+        "line": 215
+      },
+      {
+        "key": "work",
+        "label": "Recent commissions",
+        "description": "A mosaic of published portfolio cases.",
+        "hideable": true,
+        "movable": true,
+        "conditional": true,
+        "copyPrefixes": [
+          "Home.portfolio"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.work",
+        "source": "src/lib/page-sections.ts",
+        "line": 234
+      },
+      {
+        "key": "words",
+        "label": "In their words",
+        "description": "Customer quotes, with the photograph when one is set.",
+        "hideable": true,
+        "movable": true,
+        "conditional": true,
+        "copyPrefixes": [
+          "Home.testimonials"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.words",
+        "source": "src/lib/page-sections.ts",
+        "line": 245
+      },
+      {
+        "key": "bespoke",
+        "label": "Commission band",
+        "description": "The dark band inviting a bespoke enquiry.",
+        "dark": true,
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Home.custom"
+        ],
+        "imageKeys": [
+          "home.bespoke"
+        ],
+        "cureLabelKey": "cure.bespoke",
+        "source": "src/lib/page-sections.ts",
+        "line": 264
+      },
+      {
+        "key": "workshops",
+        "label": "Workshops",
+        "description": "The invitation to come and pour one yourself.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Home.workshops"
+        ],
+        "imageKeys": [
+          "home.workshops"
+        ],
+        "cureLabelKey": "cure.workshops",
+        "source": "src/lib/page-sections.ts",
+        "line": 275
+      },
+      {
+        "key": "print",
+        "label": "Print studio",
+        "description": "The 3D-printing block.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Home.printStudio"
+        ],
+        "imageKeys": [
+          "home.print"
+        ],
+        "cureLabelKey": "cure.print",
+        "source": "src/lib/page-sections.ts",
+        "line": 285
+      },
+      {
+        "key": "process",
+        "label": "How it works",
+        "description": "The four steps from idea to delivery.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Home.how"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.process",
+        "source": "src/lib/page-sections.ts",
+        "line": 295
+      },
+      {
+        "key": "why",
+        "label": "Why Rivya Living Art",
+        "description": "Four reasons, each with a picture.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Home.why"
+        ],
+        "imageKeys": [
+          "home.why.handcrafted",
+          "home.why.bespoke",
+          "home.why.slowMade",
+          "home.why.heirloom"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 305
+      },
+      {
+        "key": "journal",
+        "label": "Journal",
+        "description": "The latest writing from the studio.",
+        "hideable": true,
+        "movable": true,
+        "conditional": true,
+        "copyPrefixes": [
+          "Home.journal"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.journal",
+        "source": "src/lib/page-sections.ts",
+        "line": 319
+      },
+      {
+        "key": "closing",
+        "label": "Closing invitation",
+        "description": "The last word and the commission button.",
+        "hideable": false,
+        "movable": false,
+        "copyPrefixes": [
+          "Home.cta"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 330
+      }
+    ]
+  },
+  {
+    "group": "ABOUT",
+    "sections": [
+      {
+        "key": "hero",
+        "label": "Hero",
+        "description": "The full-bleed opening and the page's heading.",
+        "dark": true,
+        "hideable": false,
+        "movable": false,
+        "ownsH1": true,
+        "copyPrefixes": [
+          "About.hero"
+        ],
+        "imageKeys": [
+          "about.hero"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 349
+      },
+      {
+        "key": "story",
+        "label": "The story",
+        "description": "Three chapters of running prose, with what the studio holds to inside the third.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "About.story",
+          "About.chapterLabels",
+          "About.values"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 360
+      },
+      {
+        "key": "maker",
+        "label": "The maker",
+        "description": "The portrait and the paragraph beside it.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "About.maker"
+        ],
+        "imageKeys": [
+          "about.maker"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 378
+      },
+      {
+        "key": "craft",
+        "label": "The craft",
+        "description": "The sticky four-panel story — pour, embed, cure, polish — and the link into Process.",
+        "dark": true,
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "About.craft",
+          "About.chapters"
+        ],
+        "imageKeys": [
+          "about.chapter1",
+          "about.chapter2",
+          "about.chapter3",
+          "about.chapter4"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 387
+      },
+      {
+        "key": "materials",
+        "label": "Materials",
+        "description": "Four cards, each revealing a macro of the surface.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "About.materials",
+          "About.sustain"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 408
+      },
+      {
+        "key": "studio",
+        "label": "The studio",
+        "description": "Three photographs and the studio facts.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "About.studio"
+        ],
+        "imageKeys": [
+          "about.studio1",
+          "about.studio2",
+          "about.studio3"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 417
+      },
+      {
+        "key": "closing",
+        "label": "Closing invitation",
+        "description": "The last word and the commission button.",
+        "hideable": false,
+        "movable": false,
+        "copyPrefixes": [
+          "About.cta"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 426
+      }
+    ]
+  },
+  {
+    "group": "PROCESS",
+    "sections": [
+      {
+        "key": "pour",
+        "label": "Hero",
+        "description": "The full-bleed pour and the page's heading.",
+        "dark": true,
+        "hideable": false,
+        "movable": false,
+        "ownsH1": true,
+        "copyPrefixes": [
+          "Process.hero"
+        ],
+        "imageKeys": [
+          "process.heroVideo",
+          "process.heroPoster"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 444
+      },
+      {
+        "key": "stages",
+        "label": "The ten stages",
+        "description": "Idea to delivery, one numbered stage at a time.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.timeline"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 457
+      },
+      {
+        "key": "materials",
+        "label": "Materials",
+        "description": "What the studio works in, and why.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.materials"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 466
+      },
+      {
+        "key": "timelines",
+        "label": "Timelines",
+        "description": "The published lead-time bands, as two cards.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.timelines"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 475
+      },
+      {
+        "key": "closing",
+        "label": "Closing invitation",
+        "description": "The last word and the commission button.",
+        "hideable": false,
+        "movable": false,
+        "copyPrefixes": [
+          "Process.cta"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 484
+      }
+    ]
+  },
+  {
+    "group": "PROCESS_STEPS_LIST",
+    "sections": [
+      {
+        "key": "step1",
+        "label": "01 · Concept",
+        "description": "The opening WhatsApp conversation and the brief.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.timeline.step1Title",
+          "Process.timeline.step1Copy",
+          "Process.timeline.step1Meta",
+          "Process.timeline.step1Alt"
+        ],
+        "imageKeys": [
+          "process.step1"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 508
+      },
+      {
+        "key": "step2",
+        "label": "02 · Material selection",
+        "description": "Choosing the resin, wood, pigment and any preserved botanicals.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.timeline.step2"
+        ],
+        "imageKeys": [
+          "process.step2"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 522
+      },
+      {
+        "key": "step3",
+        "label": "03 · Wood preparation",
+        "description": "Planing, sanding and sealing the wood before resin ever meets it.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.timeline.step3"
+        ],
+        "imageKeys": [
+          "process.step3"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 532
+      },
+      {
+        "key": "step4",
+        "label": "04 · Resin composition",
+        "description": "Mixing and testing pigment before a full pour.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.timeline.step4"
+        ],
+        "imageKeys": [
+          "process.step4"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 542
+      },
+      {
+        "key": "step5",
+        "label": "05 · Casting",
+        "description": "Pouring the resin into the mould, layer by layer.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.timeline.step5"
+        ],
+        "imageKeys": [
+          "process.step5"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 551
+      },
+      {
+        "key": "step6",
+        "label": "06 · Curing",
+        "description": "Each layer left to cure before the next goes in.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.timeline.step6"
+        ],
+        "imageKeys": [
+          "process.step6"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 560
+      },
+      {
+        "key": "step7",
+        "label": "07 · Surface refinement",
+        "description": "Sanding from 400 up to 3000 grit, then polishing.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.timeline.step7"
+        ],
+        "imageKeys": [
+          "process.step7"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 569
+      },
+      {
+        "key": "step8",
+        "label": "08 · Hand finishing",
+        "description": "Hardware fitted and every edge checked by hand.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.timeline.step8"
+        ],
+        "imageKeys": [
+          "process.step8"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 578
+      },
+      {
+        "key": "step9",
+        "label": "09 · Quality inspection",
+        "description": "Checked against the brief before photographs go to you.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.timeline.step9"
+        ],
+        "imageKeys": [
+          "process.step9"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 587
+      },
+      {
+        "key": "step10",
+        "label": "10 · Delivery",
+        "description": "Packed fragile-proof and sent with tracked shipping.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.timeline.step10Title",
+          "Process.timeline.step10Copy",
+          "Process.timeline.step10Meta",
+          "Process.timeline.step10Alt"
+        ],
+        "imageKeys": [
+          "process.step10"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 596
+      }
+    ]
+  },
+  {
+    "group": "MATERIALS_LIST",
+    "sections": [
+      {
+        "key": "m1",
+        "label": "Material 1",
+        "description": "Epoxy resin — shown on Process and About.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.materials.m1Title",
+          "Process.materials.m1Copy",
+          "Process.materials.alt1"
+        ],
+        "imageKeys": [
+          "process.material1",
+          "about.material1.image",
+          "about.material1.macro"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 622
+      },
+      {
+        "key": "m2",
+        "label": "Material 2",
+        "description": "Teak & river wood — shown on Process and About.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.materials.m2Title",
+          "Process.materials.m2Copy",
+          "Process.materials.alt2"
+        ],
+        "imageKeys": [
+          "process.material2",
+          "about.material2.image",
+          "about.material2.macro"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 639
+      },
+      {
+        "key": "m3",
+        "label": "Material 3",
+        "description": "Mineral pigments — shown on Process and About.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.materials.m3Title",
+          "Process.materials.m3Copy",
+          "Process.materials.alt3"
+        ],
+        "imageKeys": [
+          "process.material3",
+          "about.material3.image",
+          "about.material3.macro"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 656
+      },
+      {
+        "key": "m4",
+        "label": "Material 4",
+        "description": "Preserved botanicals — shown on Process and About.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.materials.m4Title",
+          "Process.materials.m4Copy",
+          "Process.materials.alt4"
+        ],
+        "imageKeys": [
+          "process.material4",
+          "about.material4.image",
+          "about.material4.macro"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 673
+      }
+    ]
+  },
+  {
+    "group": "CUSTOM_ORDER",
+    "sections": [
+      {
+        "key": "commission",
+        "cureLabelKey": "page.cure.commission",
+        "label": "Hero",
+        "description": "The split-screen opening and the page's heading.",
+        "dark": true,
+        "hideable": false,
+        "movable": false,
+        "ownsH1": true,
+        "copyPrefixes": [
+          "CustomOrder.page.hero"
+        ],
+        "imageKeys": [
+          "customOrder.hero"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 701
+      },
+      {
+        "key": "kinds",
+        "cureLabelKey": "page.cure.kinds",
+        "label": "What people commission",
+        "description": "The four kinds of commission, as tiles.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "CustomOrder.page.kinds"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 713
+      },
+      {
+        "key": "how",
+        "cureLabelKey": "page.cure.how",
+        "label": "How a commission runs",
+        "description": "The four steps from brief to delivery.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "CustomOrder.page.how"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 723
+      },
+      {
+        "key": "brief",
+        "cureLabelKey": "page.cure.brief",
+        "label": "The brief",
+        "description": "The form itself — where a commission actually starts.",
+        "hideable": false,
+        "movable": false,
+        "copyPrefixes": [
+          "CustomOrder.page.form",
+          "CustomOrder.form"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 733
+      },
+      {
+        "key": "questions",
+        "cureLabelKey": "page.cure.questions",
+        "label": "Questions",
+        "description": "Questions answered on the FAQ, shown here too.",
+        "hideable": true,
+        "movable": true,
+        "conditional": true,
+        "copyPrefixes": [
+          "Faq.hero"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 743
+      },
+      {
+        "key": "work",
+        "cureLabelKey": "page.cure.work",
+        "label": "Commissioned before",
+        "description": "A gallery of finished commissions.",
+        "hideable": true,
+        "movable": true,
+        "conditional": true,
+        "copyPrefixes": [
+          "CustomOrder.page.seeCommissions",
+          "Portfolio.hero"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 756
+      },
+      {
+        "key": "words",
+        "cureLabelKey": "page.cure.words",
+        "label": "In their words",
+        "description": "What previous clients said.",
+        "hideable": true,
+        "movable": true,
+        "conditional": true,
+        "copyPrefixes": [
+          "CustomOrder.page.proof"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 767
+      }
+    ]
+  },
+  {
+    "group": "CONTACT",
+    "sections": [
+      {
+        "key": "hero",
+        "label": "Hero",
+        "description": "The split-screen opening and the page's heading.",
+        "dark": true,
+        "hideable": false,
+        "movable": false,
+        "ownsH1": true,
+        "copyPrefixes": [
+          "Contact.page.hero"
+        ],
+        "imageKeys": [
+          "contact.hero"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 782
+      },
+      {
+        "key": "channels",
+        "label": "Four ways in",
+        "description": "WhatsApp, phone, email and the studio address.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Contact.page.channels"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 793
+      },
+      {
+        "key": "write",
+        "label": "The form",
+        "description": "The message form — the reason the page exists.",
+        "hideable": false,
+        "movable": false,
+        "copyPrefixes": [
+          "Contact.page.form",
+          "Contact.form"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 802
+      },
+      {
+        "key": "faq",
+        "label": "Asked often",
+        "description": "Questions answered on the FAQ, shown here too.",
+        "hideable": true,
+        "movable": true,
+        "conditional": true,
+        "copyPrefixes": [
+          "Contact.page.faq"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 811
+      }
+    ]
+  },
+  {
+    "group": "WORKSHOPS",
+    "sections": [
+      {
+        "key": "hero",
+        "label": "Hero",
+        "description": "The full-bleed table and the page's heading.",
+        "dark": true,
+        "hideable": false,
+        "movable": false,
+        "ownsH1": true,
+        "copyPrefixes": [
+          "Workshops.hero"
+        ],
+        "imageKeys": [
+          "workshops.hero"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 831
+      },
+      {
+        "key": "facts",
+        "label": "The facts strip",
+        "description": "Duration, group size and what is included.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Workshops.facts"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 842
+      },
+      {
+        "key": "why",
+        "label": "Why come",
+        "description": "Three reasons, each with a photograph.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Workshops.intro"
+        ],
+        "imageKeys": [
+          "workshops.benefit1",
+          "workshops.benefit2",
+          "workshops.benefit3"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 851
+      },
+      {
+        "key": "session",
+        "label": "The session",
+        "description": "The workshop beat by beat.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Workshops.experience"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 870
+      },
+      {
+        "key": "sessions",
+        "label": "Sessions",
+        "description": "The dated sessions an owner has listed.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Workshops.sessions"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 879
+      },
+      {
+        "key": "private",
+        "label": "Private workshops",
+        "description": "The dark band inviting a private booking.",
+        "dark": true,
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Workshops.private"
+        ],
+        "imageKeys": [
+          "workshops.private"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 888
+      },
+      {
+        "key": "room",
+        "label": "The room",
+        "description": "Four photographs of the space.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Workshops.room"
+        ],
+        "imageKeys": [
+          "workshops.room1",
+          "workshops.room2",
+          "workshops.room3",
+          "workshops.room4"
+        ],
+        "source": "src/lib/page-sections.ts",
+        "line": 898
+      }
+    ]
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "sections": [
+      {
+        "key": "scale",
+        "label": "Hero",
+        "description": "The full-height opening band and the page's h1.",
+        "dark": true,
+        "hideable": false,
+        "movable": false,
+        "ownsH1": true,
+        "copyPrefixes": [
+          "LargeFormat.hero"
+        ],
+        "imageKeys": [
+          "largeFormat.hero"
+        ],
+        "cureLabelKey": "cure.scale",
+        "source": "src/lib/page-sections.ts",
+        "line": 931
+      },
+      {
+        "key": "scope",
+        "label": "Four kinds of large work",
+        "description": "The shapes a large brief usually takes, with one picture each.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "LargeFormat.scope"
+        ],
+        "imageKeys": [
+          "largeFormat.k1",
+          "largeFormat.k2",
+          "largeFormat.k3",
+          "largeFormat.k4"
+        ],
+        "cureLabelKey": "cure.scope",
+        "source": "src/lib/page-sections.ts",
+        "line": 943
+      },
+      {
+        "key": "philosophy",
+        "label": "Philosophy",
+        "description": "Why large work is planned before it is priced.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "LargeFormat.philosophy"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.philosophy",
+        "source": "src/lib/page-sections.ts",
+        "line": 959
+      },
+      {
+        "key": "how",
+        "label": "How it runs",
+        "description": "The four stages of a large commission, in order.",
+        "dark": true,
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "LargeFormat.how"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.how",
+        "source": "src/lib/page-sections.ts",
+        "line": 969
+      },
+      {
+        "key": "brief",
+        "label": "What to send",
+        "description": "What makes a quote quick — the room, the measurements, the use.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "LargeFormat.brief"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.brief",
+        "source": "src/lib/page-sections.ts",
+        "line": 980
+      },
+      {
+        "key": "materials",
+        "label": "Materials",
+        "description": "The same four materials the small work is made of, in more of it.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "Process.materials"
+        ],
+        "imageKeys": [
+          "process.material1",
+          "process.material2",
+          "process.material3",
+          "process.material4"
+        ],
+        "cureLabelKey": "cure.materials",
+        "source": "src/lib/page-sections.ts",
+        "line": 991
+      },
+      {
+        "key": "pieces",
+        "label": "Pieces we commission",
+        "description": "The six furniture tiles, shown again for a visitor who came in here.",
+        "hideable": true,
+        "movable": true,
+        "defaultVisible": false,
+        "copyPrefixes": [
+          "LargeFormat.pieces",
+          "Home.furniture"
+        ],
+        "imageKeys": [
+          "home.furniture.dining",
+          "home.furniture.coffee",
+          "home.furniture.side",
+          "home.furniture.console",
+          "home.furniture.chair",
+          "home.furniture.bench"
+        ],
+        "cureLabelKey": "cure.pieces",
+        "source": "src/lib/page-sections.ts",
+        "line": 1010
+      },
+      {
+        "key": "work",
+        "label": "Commissioned before",
+        "description": "Published portfolio cases, when there are any to show.",
+        "hideable": true,
+        "movable": true,
+        "conditional": true,
+        "copyPrefixes": [
+          "LargeFormat.work"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.work",
+        "source": "src/lib/page-sections.ts",
+        "line": 1032
+      },
+      {
+        "key": "words",
+        "label": "In their words",
+        "description": "Testimonials given about large-format work.",
+        "hideable": true,
+        "movable": true,
+        "conditional": true,
+        "copyPrefixes": [
+          "LargeFormat.words"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.words",
+        "source": "src/lib/page-sections.ts",
+        "line": 1043
+      },
+      {
+        "key": "faq",
+        "label": "Questions",
+        "description": "Large-format questions answered on the FAQ, shown here too.",
+        "hideable": true,
+        "movable": true,
+        "conditional": true,
+        "copyPrefixes": [
+          "LargeFormat.faq"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.faq",
+        "source": "src/lib/page-sections.ts",
+        "line": 1054
+      },
+      {
+        "key": "gallery",
+        "label": "Large pieces",
+        "description": "Published products in the large-format categories. Renders an invitation instead of a grid when there are none.",
+        "hideable": true,
+        "movable": true,
+        "copyPrefixes": [
+          "LargeFormat.gallery"
+        ],
+        "imageKeys": [],
+        "cureLabelKey": "cure.gallery",
+        "source": "src/lib/page-sections.ts",
+        "line": 1065
+      },
+      {
+        "key": "commission",
+        "label": "Start the conversation",
+        "description": "The closing invitation into the existing commission flow.",
+        "hideable": false,
+        "movable": false,
+        "copyPrefixes": [
+          "LargeFormat.cta"
+        ],
+        "imageKeys": [],
+        "source": "src/lib/page-sections.ts",
+        "line": 1076
+      }
+    ]
+  }
+]

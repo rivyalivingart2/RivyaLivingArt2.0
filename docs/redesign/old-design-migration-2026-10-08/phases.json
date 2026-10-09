@@ -1,0 +1,86 @@
+[
+  {"id":"M0","name":"Protect the current site and establish the baseline","days":[2,4],"depends":[],"gate":"Protected field hashes and existing route/publication identities are recorded; no app or data reset.","tickets":[
+    ["Record exact old/current source revisions and deployment identities","Source snapshots and live observations are labelled separately; current work and cancelled audit are not mixed."],
+    ["Inventory existing products, content, drafts, translations, settings and media usages read-only","Private scoped IDs/revisions/hashes cover protected fields without exporting customer values into this report."],
+    ["Establish isolated QA and a codex/ feature branch","QA writes cannot reach the shared live database; no old bootstrap, seed or scraper executes."],
+    ["Record current visual, keyboard and performance baselines","Representative desktop/phone screenshots and cold/warm timings name the candidate and environment."],
+    ["Confirm source, asset and content ownership boundaries","Current contacts and all existing information frozen; unknown rights/offerings stay unresolved rather than inferred."]
+  ]},
+  {"id":"M1","name":"Map every old page, section and supporting state","days":[2,4],"depends":["M0"],"gate":"All 85 old page templates and 74 registry definitions have explicit target, dependency and disposition.","tickets":[
+    ["Complete public and utility route parity ledger","All 25 templates map to preserved canonical routes, new supported templates or explicit conditional states; dynamic records are not copied."],
+    ["Complete Studio parent and child view ledger","All 60 page files, including create/edit/detail/print/auth, have a real destination or documented exclusion."],
+    ["Specify all 74 registered sections and 16 landing-page blocks","Stable keys, order, conditions, existing data ownership and empty states recorded; Home has all 18 templates."],
+    ["Inventory shared overlays and failure states","Header/menu, footer, cookie preferences, search, language, dialogs, loading, empty, forbidden and error states mapped from actual components."],
+    ["Create before/target screenshot acceptance sheets","Compare same viewport and content; annotate content variance and accessibility/performance adaptations instead of silently changing design."]
+  ]},
+  {"id":"M2","name":"Restore the old design system and shared frames","days":[4,6],"depends":["M1"],"gate":"Public and Studio frames reflect the old visual language and remain usable with keyboard, touch and reduced motion.","tickets":[
+    ["Port palette, type roles, spacing and surface tokens","Old source tokens drive the system; font licensing/loading and semantic contrast checked."],
+    ["Build public header, menu, footer and section navigation","Current links/contact values preserved; mobile focus, Escape and scroll behavior verified."],
+    ["Build all five Studio groups and collapsed/mobile sidebar","All 32 destinations accounted for; only authorized, supported destinations become active links."],
+    ["Unify forms, tables, cards, dialogs and status components","Contain thumbnails, support long text, keep sticky actions clear of focus and show errors beside the relevant field."],
+    ["Port restrained motion with static fallbacks","Narrative motion matches reference where useful; frequent Studio actions stay brief; no LCP element hidden awaiting animation."]
+  ]},
+  {"id":"M3","name":"Connect content and prove one complete editing workflow","days":[5,8],"depends":["M2"],"gate":"A new homepage presentation draft saves, previews in the real renderer, publishes in isolated QA and restores into a draft without changing protected content.","tickets":[
+    ["Add compatible section, media-usage and layout manifests","Read adapters preserve existing payloads and IDs; new schema fields are optional/versioned and migrations idempotent."],
+    ["Create shared saved-preview and dependency resolution","Preview binds to exact draft revision, locale, selected asset and layout; it cannot show unrelated live editor state."],
+    ["Implement homepage hero/manifesto/featured-layout vertical slice","Use existing exact content/product selections; new sample copy belongs only to isolated QA fixtures."],
+    ["Verify save, publish, comparison and restore-as-draft","Public projection matches intended revision; recovery does not publish, alter product records or reset settings."],
+    ["Exercise permissions, concurrency and partial failure","401/403/409, missing asset, failed save/publish and unsaved navigation preserve data; lightweight list summaries remain bounded."]
+  ]},
+  {"id":"M4","name":"Complete the homepage and long-form story templates","days":[5,8],"depends":["M3"],"gate":"All 18 home templates plus About, Process, Materials, Custom Order, Contact, Large Format and Workshop structures are implemented with honest conditional visibility.","tickets":[
+    ["Complete all 18 homepage sections in source order","Furniture and Rooms stay distinct; separate Testimonials, Workshops and Printing templates have explicit evidence conditions."],
+    ["Port About, maker, craft and studio-story compositions","Current copy and stored image usage preserved; generated people are never represented as actual staff."],
+    ["Port Process sections, ten steps and four material entries","Reuse current stage wording and chronology; unknown process claims remain unpublished."],
+    ["Port commission, contact and large-format story structures","Current form contracts and factual channels remain authoritative; filter discovery remains easy on phones."],
+    ["Complete conditional workshop/printing and shared section editing","All templates have Studio ownership and preview; no invented dates, services, pricing or availability becomes public."]
+  ]},
+  {"id":"M5","name":"Complete the remaining public pages and customer journey","days":[5,8],"depends":["M3","M4"],"gate":"Every public/utility ledger row renders its reference structure or documented conditional state, with no product/content change.","tickets":[
+    ["Port shop/category/three-journey and grouped search layouts","Current catalogue filters and identities retained; published Journal/Portfolio groups added without private/draft leaks."],
+    ["Port product, saved-pieces, commission variants and receipt presentation","Protected product/form/gallery and immutable saved-brief contracts unchanged; WhatsApp still requires customer Send."],
+    ["Port Journal, Portfolio, FAQ and testimonial presentations","Detail/index/empty/pagination states work with existing and new records; genuine proof separated from concept imagery."],
+    ["Port all 16 validated custom landing-page block types","Hero, text, product/collection/editorial/quote readers, video and galleries adapt to current services; media/product selections remain frozen."],
+    ["Finish policies, Imprint, aliases and system states","Approved text/SEO/routes preserved; errors, maintenance, rate limiting and private design preview do not leak drafts or gain unwanted indexing."]
+  ]},
+  {"id":"M6","name":"Complete every Studio workspace and supporting view","days":[6,10],"depends":["M2","M3"],"gate":"All 32 requested destinations and 60 old page-file dispositions are reconciled with current server permissions and real services.","tickets":[
+    ["Complete Today group: overview, commissions, analytics and activity","Linked scoped counts, correct periods and source labels; no fake revenue, conversions or order activity."],
+    ["Complete Catalogue group and its explicit exclusions","Products/categories/media/forms/import/export views preserve records; scraper and ingestion-dependent Catalog Fill remain on hold, not mock successes."],
+    ["Complete Content group: copy, images, sections, process, materials, navigation and forms","Exact-record links and actual preview; existing values are viewable and preserved during migration, with additive new-record editing."],
+    ["Complete Editorial group with list/new/edit/detail/revision views","Journal, Portfolio, Testimonials, FAQs, Pages and Landing Pages support genuine record lifecycle and source requirements."],
+    ["Complete Settings, access and conditional subscribers/research tooling","Current auth/staff policy retained; no new public signup or bulk outreach; non-supported services have explicit prerequisites."]
+  ]},
+  {"id":"M7","name":"Complete orders and editorial display ordering","days":[3,5],"depends":["M5","M6"],"gate":"Current eight-stage order workflow remains intact; editorial reordering is an independent, versioned presentation change.","tickets":[
+    ["Finish commission board/list/detail and scoped filters","Saved brief, assignee, stage, notes, references and follow-ups render from current records with server authorization."],
+    ["Add or adapt protected order print/card view","Print only authorized saved facts; no unknown care/material/timing guarantees and no private data in screenshots."],
+    ["Verify submission, receipt and manual messaging end-to-end in QA","Duplicate-submit/error handling and customer consent preserved; synthetic records never count as genuine inquiry evidence."],
+    ["Implement editorial order manifests and accessible reorder controls","Drag plus Move up/down, stable IDs, curated/default sort distinction, concurrency guard and correct full-list behavior."],
+    ["Connect order preview, publication and revision restore","First default equals current order; later editorial layout revisions are explicit; product/gallery order and selections unchanged."]
+  ]},
+  {"id":"M8","name":"Build editorial filters and the 480-entry production register","days":[3,5],"depends":["M6","M7"],"gate":"120 planned entries per editorial section are tracked independently and filter coverage reflects real metadata.","tickets":[
+    ["Reconcile 120 Journal and 120 FAQ proposals against existing records","Duplicates replaced with distinct useful proposals; existing content is never rewritten or counted as new."],
+    ["Prepare 120 Portfolio and 120 Testimonial evidence slots","No invented project titles, quotes, ratings or people; required sources, rights, attribution and consent tracked privately."],
+    ["Implement appropriate public and Studio filter facets","URL/applied chips/clear/pagination and visible counts; existing categories unchanged; empty combinations remain honest."],
+    ["Add publication evidence and language-review workflow","Author/meaning/native review states distinct; publication does not imply native review; fallback and SEO locales correct."],
+    ["Bound queries and enforce import/create collision checks","Summaries for lists, record detail on demand, stable pagination, dry-run review and new-ID-only writes."]
+  ]},
+  {"id":"M9","name":"Produce, review and stage all new content and media","days":[4,7],"depends":["M8"],"gate":"480 is complete only when each section has 120 unique approved new entries; evidence shortages remain open and are not filled with fiction.","tickets":[
+    ["Create Journal and FAQ content in small reviewed batches","Ten-entry batches with factual sources, useful depth, duplicate check, exact draft preview and current policy links."],
+    ["Build genuine Portfolio stories and Testimonial records","One real project/feedback source per record; original quote preserved and translations linked to it, not counted twice."],
+    ["Review Drive assets for new usages and responsive crops","Verify identity/rights/disclosure, optimized size, alt/caption, focal point and desktop/mobile composition; existing assignments untouched."],
+    ["Complete language, factual and publication review records","Native-review evidence supplied by a real reviewer; unresolved entries remain draft with reason."],
+    ["Stage approved new records and reconcile counts","Review new IDs and publication revisions before any authorized production batch; no existing record mutation or false completion count."]
+  ]},
+  {"id":"M10","name":"Complete regression, visual and acceptance checks","days":[5,8],"depends":["M4","M5","M6","M7","M8"],"gate":"Current candidate has reproducible engineering evidence; human, field and genuine-customer evidence is separately recorded without false passes.","tickets":[
+    ["Compare all templates and sections at required viewports","Reference/current screenshots, long locales, empty/full lists, error/loading states and cropped subjects covered."],
+    ["Run protected-data and real publication/permission regressions","Before/after field comparison, role scope, stale saves, exact draft preview and revision recovery pass in isolated QA."],
+    ["Measure loading, interaction and layout stability","Record hosted/local cold/warm samples and media/bundle budgets; field p75 remains separate from lab measurements."],
+    ["Run automated and actual human accessibility checks","Keyboard, contrast, zoom, reduced motion, screen-reader task log and physical-phone task log name actual evidence; unavailable equipment stays open."],
+    ["Reconcile factual, native-language, consent and remaining gaps","No pending item silently marked done; real inquiry and real-user evidence require actual consent-safe observations."]
+  ]},
+  {"id":"M11","name":"Release through a detailed PR and verify production","days":[1,3],"depends":["M10"],"gate":"Explicit release instruction, checked PR, exact main commit and READY deployment verified; content and external acceptance status remain separate.","tickets":[
+    ["Prepare final change report, reviewable commits and release gate","List all module/template changes, protected baseline, migrations, licenses, test evidence, exclusions and remaining content dependencies."],
+    ["Open detailed PR only under the applicable release instruction","No secrets/raw customer evidence; application changes and content publication steps distinguished; approved scope explicit."],
+    ["Merge approved candidate and verify Vercel deployment","Required repository checks pass; exact main SHA matches READY deployment; no automatic reset/seed/import."],
+    ["Verify public pages, signed-in Studio and approved content batches","Current contacts/SEO/indexing/Imprint, routes, records and media verified using small read-only production checks."],
+    ["Record observation and reversible rollback decisions","Prior compatible code and draft revisions available; missing genuine inquiry/field/human evidence remains open until observed."]
+  ]}
+]

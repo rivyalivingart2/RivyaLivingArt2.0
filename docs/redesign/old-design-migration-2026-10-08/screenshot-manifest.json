@@ -1,0 +1,74 @@
+[
+  {
+    "file": "screenshots/current-collection-desktop.png",
+    "width": 1161,
+    "height": 918,
+    "bytes": 63034
+  },
+  {
+    "file": "screenshots/current-home-desktop.png",
+    "width": 1161,
+    "height": 918,
+    "bytes": 85157
+  },
+  {
+    "file": "screenshots/current-journal-desktop.png",
+    "width": 1161,
+    "height": 918,
+    "bytes": 61841
+  },
+  {
+    "file": "screenshots/current-journal-mobile.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 41355
+  },
+  {
+    "file": "screenshots/current-process-desktop.png",
+    "width": 1161,
+    "height": 918,
+    "bytes": 58982
+  },
+  {
+    "file": "screenshots/current-studio-editorial.png",
+    "width": 1161,
+    "height": 918,
+    "bytes": 91895
+  },
+  {
+    "file": "screenshots/old-home-desktop.png",
+    "width": 1163,
+    "height": 920,
+    "bytes": 104653
+  },
+  {
+    "file": "screenshots/old-journal-desktop.png",
+    "width": 1163,
+    "height": 920,
+    "bytes": 62317
+  },
+  {
+    "file": "screenshots/old-journal-mobile.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 39994
+  },
+  {
+    "file": "screenshots/old-process-desktop.png",
+    "width": 1163,
+    "height": 920,
+    "bytes": 60147
+  },
+  {
+    "file": "screenshots/old-shop-desktop.png",
+    "width": 1163,
+    "height": 920,
+    "bytes": 85826
+  },
+  {
+    "file": "screenshots/old-studio-editorial.png",
+    "width": 1166,
+    "height": 922,
+    "bytes": 89623
+  }
+]
