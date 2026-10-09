@@ -1,3 +1,11 @@
+# Current handoff — publish final old-design migration plan
+
+9 October 2026. The owner requested a continuation prompt and publication of the combined plan to `main` through the standing detailed-PR workflow. Read `docs/decisions/2026-10-09-publish-migration-handoff.md`, then `docs/redesign/old-design-migration-2026-10-08/README.md`. The combined Markdown plan and `CONTINUE-IN-NEW-CHAT.md` are the new migration handoff. M0–M11 and all 480 proposed content records are still planned, not implemented or published.
+
+This handoff release changes documentation only. A new-chat implementation instruction can start the planned phases, but future application work remains local until a later applicable push/release request. Preserve all existing product/content/draft/translation/image/crop/contact/business/social/customer/order values. New content/configuration is additive. Scraper work, old-product transfer, ingestion-dependent Catalog Fill and backups/key custody remain excluded; keep draft/revision recovery. Retain the cancelled audit exclusion below. Screenshots/raw/private evidence remain outside Git. Keep source observations and historic tests distinct from fresh acceptance evidence.
+
+---
+
 # Current owner instruction — release latest retained work through a detailed PR
 
 8 October 2026. The owner requested pushing all latest work to the Git repository. Following the standing release instruction, release the retained `codex/article-meaning-review` candidate through a detailed PR into `main`, verify the exact PR head/checks, and verify the existing Vercel Git deployment. Read `docs/decisions/2026-10-08-release-retained-work.md`. Do not push directly to main or bypass protections.

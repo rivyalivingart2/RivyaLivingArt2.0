@@ -1,0 +1,1880 @@
+{
+  "sourceSnapshot": "2dd6d5d local; not freshly fetched",
+  "status": "planning_only",
+  "oldPages": 85,
+  "publicUtilityTemplates": 25,
+  "studioPageFiles": 60,
+  "rows": [
+    {
+      "oldRoute": "/about",
+      "oldSource": "src/app/[locale]/(v2)/about/page.tsx",
+      "componentSources": [
+        "@/components/storefront/accordion-gallery",
+        "@/components/storefront/button",
+        "@/components/storefront/craft-chapters",
+        "@/components/storefront/meniscus-image",
+        "@/components/motion/reveal",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/studio-gallery",
+        "@/components/storefront/slot-image",
+        "@/components/sections/studio-map"
+      ],
+      "literalSectionIds": [
+        "about-heading",
+        "story-heading",
+        "maker-heading",
+        "materials-heading",
+        "about-cta-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/our-story",
+      "module": "ABOUT",
+      "phase": "M4",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Current biographical text preserved; /about alias decision retained.",
+      "registeredSectionKeys": [
+        "hero",
+        "story",
+        "maker",
+        "craft",
+        "materials",
+        "studio",
+        "closing"
+      ]
+    },
+    {
+      "oldRoute": "/blog",
+      "oldSource": "src/app/[locale]/(v2)/blog/(index)/page.tsx",
+      "componentSources": [
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/demo-mark",
+        "@/components/storefront/empty-state",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/newsletter-signup",
+        "@/components/storefront/pagination",
+        "@/components/storefront/section-heading"
+      ],
+      "literalSectionIds": [
+        "journal-heading",
+        "archive-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/journal",
+      "module": "JOURNAL_INDEX",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Old intro/featured/archive structure; current article information intact.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/blog/[slug]",
+      "oldSource": "src/app/[locale]/(v2)/blog/[slug]/page.tsx",
+      "componentSources": [
+        "@/components/blog/article-toc",
+        "@/components/product/share-buttons",
+        "@/components/seo/json-ld",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/catalog-product-card",
+        "@/components/storefront/collection-card",
+        "@/components/storefront/demo-mark",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading"
+      ],
+      "literalSectionIds": [
+        "article-heading",
+        "article-pieces-heading",
+        "article-collections-heading",
+        "article-related-heading",
+        "article-cta-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/journal/[slug] — verified identity only",
+      "module": "JOURNAL_DETAIL",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Preserve current articles and URLs; absent old article identity gets truthful unavailable behavior.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/contact",
+      "oldSource": "src/app/[locale]/(v2)/contact/page.tsx",
+      "componentSources": [
+        "@/components/sections/contact-form",
+        "@/components/sections/studio-map",
+        "@/components/storefront/accordion",
+        "@/components/storefront/button",
+        "@/components/storefront/section-heading"
+      ],
+      "literalSectionIds": [
+        "contact-heading",
+        "channels-heading",
+        "write",
+        "write-heading",
+        "contact-faq-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/contact",
+      "module": "CONTACT",
+      "phase": "M4",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Current contacts/settings only.",
+      "registeredSectionKeys": [
+        "hero",
+        "channels",
+        "write",
+        "faq"
+      ]
+    },
+    {
+      "oldRoute": "/custom-order",
+      "oldSource": "src/app/[locale]/(v2)/custom-order/page.tsx",
+      "componentSources": [
+        "@/components/sections/custom-order-form",
+        "@/components/storefront/accordion",
+        "@/components/storefront/button",
+        "@/components/storefront/collection-card",
+        "@/components/storefront/cure-line",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/testimonial-wall"
+      ],
+      "literalSectionIds": [
+        "commission",
+        "commission-heading",
+        "kinds",
+        "kinds-heading",
+        "how",
+        "how-heading",
+        "brief",
+        "brief-heading",
+        "questions",
+        "questions-heading",
+        "work",
+        "work-heading",
+        "proof-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/commission",
+      "module": "CUSTOM_ORDER",
+      "phase": "M4",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Existing form variants and immutable saved-brief schema retained.",
+      "registeredSectionKeys": [
+        "commission",
+        "kinds",
+        "how",
+        "brief",
+        "questions",
+        "work",
+        "words"
+      ]
+    },
+    {
+      "oldRoute": "/faq",
+      "oldSource": "src/app/[locale]/(v2)/faq/page.tsx",
+      "componentSources": [
+        "@/components/seo/json-ld",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/empty-state",
+        "@/components/storefront/faq-explorer",
+        "@/components/storefront/section-heading"
+      ],
+      "literalSectionIds": [
+        "faq-heading",
+        "faq-close-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/faq",
+      "module": "FAQ",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Old question index/search; new topic facets additive, existing answers unchanged.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/large-resin-art",
+      "oldSource": "src/app/[locale]/(v2)/large-resin-art/page.tsx",
+      "componentSources": [
+        "@/components/storefront/accordion",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/catalog-product-card",
+        "@/components/storefront/button",
+        "@/components/storefront/cure-line",
+        "@/components/storefront/demo-mark",
+        "@/components/storefront/hero-media",
+        "@/components/storefront/meniscus-image",
+        "@/components/motion/reveal",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/testimonial-wall",
+        "@/components/seo/json-ld"
+      ],
+      "literalSectionIds": [
+        "scale",
+        "large-format-heading",
+        "scope",
+        "scope-heading",
+        "philosophy",
+        "philosophy-heading",
+        "how",
+        "how-heading",
+        "brief",
+        "brief-heading",
+        "materials",
+        "materials-heading",
+        "pieces",
+        "pieces-heading",
+        "work",
+        "work-heading",
+        "words",
+        "lf-words-heading",
+        "faq",
+        "lf-faq-heading",
+        "gallery",
+        "gallery-heading",
+        "commission",
+        "commission-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/collectible-design",
+      "module": "LARGE_FORMAT",
+      "phase": "M4",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Current products/categories only; legacy alias depends on verified destination.",
+      "registeredSectionKeys": [
+        "scale",
+        "scope",
+        "philosophy",
+        "how",
+        "brief",
+        "materials",
+        "pieces",
+        "work",
+        "words",
+        "faq",
+        "gallery",
+        "commission"
+      ]
+    },
+    {
+      "oldRoute": "/p/[slug]",
+      "oldSource": "src/app/[locale]/(v2)/p/[slug]/page.tsx",
+      "componentSources": [
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/demo-mark",
+        "@/components/storefront/custom-page-blocks"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/p/[slug] — verified identity only",
+      "module": "LANDING_BLOCKS",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "All 16 block types specified; no old content import or arbitrary executable HTML.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/",
+      "oldSource": "src/app/[locale]/(v2)/page.tsx",
+      "componentSources": [
+        "@/components/storefront/button",
+        "@/components/storefront/collection-doors",
+        "@/components/storefront/demo-mark",
+        "@/components/storefront/featured-rail",
+        "@/components/storefront/featured-testimonial",
+        "@/components/storefront/quote-rotator",
+        "@/components/storefront/cure-line",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/hero-media",
+        "@/components/storefront/journal-list",
+        "@/components/ui/magnetic",
+        "@/components/motion/hero-parallax",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/pour-cure-showcase",
+        "@/components/motion/reveal",
+        "@/components/storefront/slot-image"
+      ],
+      "literalSectionIds": [
+        "pour",
+        "hero-heading",
+        "manifesto",
+        "manifesto-heading",
+        "pieces",
+        "pieces-heading",
+        "large-format",
+        "large-format-heading",
+        "material",
+        "collections",
+        "collections-heading",
+        "furniture",
+        "furniture-heading",
+        "maker",
+        "maker-heading",
+        "rooms",
+        "rooms-heading",
+        "work",
+        "work-heading",
+        "words",
+        "words-heading",
+        "bespoke",
+        "bespoke-heading",
+        "workshops",
+        "workshops-heading",
+        "print",
+        "print-heading",
+        "process",
+        "how-heading",
+        "why-heading",
+        "journal",
+        "journal-heading",
+        "closing-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/",
+      "module": "HOME",
+      "phase": "M4",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Old 18-section structure; conditional templates do not force unsupported offerings live.",
+      "registeredSectionKeys": [
+        "pour",
+        "manifesto",
+        "pieces",
+        "large-format",
+        "material",
+        "collections",
+        "furniture",
+        "maker",
+        "rooms",
+        "work",
+        "words",
+        "bespoke",
+        "workshops",
+        "print",
+        "process",
+        "why",
+        "journal",
+        "closing"
+      ]
+    },
+    {
+      "oldRoute": "/portfolio",
+      "oldSource": "src/app/[locale]/(v2)/portfolio/(index)/page.tsx",
+      "componentSources": [
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/empty-state",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/pagination",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/slot-image"
+      ],
+      "literalSectionIds": [
+        "archive-heading",
+        "wall-heading",
+        "commission-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/portfolio",
+      "module": "PORTFOLIO_INDEX",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Only genuine approved project records; empty state acceptable.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/portfolio/[slug]",
+      "oldSource": "src/app/[locale]/(v2)/portfolio/[slug]/page.tsx",
+      "componentSources": [
+        "@/components/portfolio/before-after",
+        "@/components/portfolio/lightbox-gallery",
+        "@/components/seo/json-ld",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading"
+      ],
+      "literalSectionIds": [
+        "case-heading",
+        "story-heading",
+        "brief-heading",
+        "material-heading",
+        "process-heading",
+        "final-heading",
+        "related-heading",
+        "commission-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/portfolio/[slug] — verified identity only",
+      "module": "PORTFOLIO_DETAIL",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Actual brief, factual response and matched gallery; no fabricated project.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/privacy",
+      "oldSource": "src/app/[locale]/(v2)/privacy/page.tsx",
+      "componentSources": [
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/error-state",
+        "@/components/storefront/section-heading"
+      ],
+      "literalSectionIds": [
+        "legal-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/privacy",
+      "module": "POLICY",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Existing approved wording and metadata unchanged.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/process",
+      "oldSource": "src/app/[locale]/(v2)/process/page.tsx",
+      "componentSources": [
+        "@/components/storefront/accordion-gallery",
+        "@/components/storefront/button",
+        "@/components/storefront/cure-line",
+        "@/components/storefront/hero-media",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading"
+      ],
+      "literalSectionIds": [
+        "process-heading",
+        "stages-heading",
+        "materials-heading",
+        "timelines-heading",
+        "process-cta-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/process",
+      "module": "PROCESS",
+      "phase": "M4",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Also preserve PROCESS_STEPS_LIST and MATERIALS_LIST definitions.",
+      "registeredSectionKeys": [
+        "pour",
+        "stages",
+        "materials",
+        "timelines",
+        "closing"
+      ]
+    },
+    {
+      "oldRoute": "/product/[slug]",
+      "oldSource": "src/app/[locale]/(v2)/product/[slug]/page.tsx",
+      "componentSources": [
+        "@/components/icons",
+        "@/components/product/gallery",
+        "@/components/product/order-panel",
+        "@/components/product/share-buttons",
+        "@/components/product/spec-sheet",
+        "@/components/product/sticky-mobile-cta",
+        "@/components/storefront/accordion",
+        "@/components/product/product-testimonials",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/catalog-product-card",
+        "@/components/storefront/demo-mark",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/snap-rail",
+        "@/components/seo/json-ld"
+      ],
+      "literalSectionIds": [
+        "pdp-actions",
+        "room-context-heading",
+        "order-panel",
+        "order-heading",
+        "piece-heading",
+        "related-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/pieces/[slug] — verified identity only",
+      "module": "PRODUCT",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "No product import or guessed slug mapping; preserve all current fields and galleries.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/search",
+      "oldSource": "src/app/[locale]/(v2)/search/page.tsx",
+      "componentSources": [
+        "@/components/motion/reveal",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/empty-state",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/button",
+        "@/components/storefront/catalog-product-card",
+        "@/components/storefront/collection-card"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/search",
+      "module": "SEARCH",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Collections, products, Journal and Portfolio groups; no private/draft results.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/shop",
+      "oldSource": "src/app/[locale]/(v2)/shop/(index)/page.tsx",
+      "componentSources": [
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/collection-card",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/pagination",
+        "@/components/storefront/shop-explorer",
+        "@/components/storefront/snap-rail"
+      ],
+      "literalSectionIds": [
+        "shop-heading",
+        "collections",
+        "collections-heading",
+        "pieces"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/search plus current collection discovery — final alias audited in M1",
+      "module": "CATALOGUE",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Implement complete old shop composition using current catalogue; do not rely on a redirect alone.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/shop/[category]",
+      "oldSource": "src/app/[locale]/(v2)/shop/[category]/page.tsx",
+      "componentSources": [
+        "@/components/portfolio/before-after",
+        "@/components/motion/reveal",
+        "@/components/seo/json-ld",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/collection-card",
+        "@/components/storefront/pagination",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/shop-explorer",
+        "@/components/storefront/snap-rail"
+      ],
+      "literalSectionIds": [
+        "collection-heading",
+        "collection-transformation-heading",
+        "pieces",
+        "related-collections-heading",
+        "collection-commission-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/[collection] or category-filter view — identity mapping required",
+      "module": "CATEGORY",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "No broad dynamic redirect until each old category identity matches an existing destination.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/shop/wishlist",
+      "oldSource": "src/app/[locale]/(v2)/shop/wishlist/page.tsx",
+      "componentSources": [
+        "@/components/shop/wishlist-panel",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/section-heading"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/saved-pieces",
+      "module": "WISHLIST",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Preserve browser-saved behavior; no invented cross-device account.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/terms",
+      "oldSource": "src/app/[locale]/(v2)/terms/page.tsx",
+      "componentSources": [
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/error-state",
+        "@/components/storefront/section-heading"
+      ],
+      "literalSectionIds": [
+        "legal-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/terms",
+      "module": "POLICY",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Existing approved wording and metadata unchanged.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/whatsapp-order",
+      "oldSource": "src/app/[locale]/(v2)/whatsapp-order/page.tsx",
+      "componentSources": [
+        "@/components/storefront/button",
+        "@/components/storefront/section-heading"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/inquiry/received — current authorization required",
+      "module": "RECEIPT",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Not a blind redirect to a private receipt; saved reference and manual Send retained.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/workshops",
+      "oldSource": "src/app/[locale]/(v2)/workshops/page.tsx",
+      "componentSources": [
+        "@/components/storefront/button",
+        "@/components/storefront/empty-state",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/studio-gallery",
+        "@/components/storefront/slot-image"
+      ],
+      "literalSectionIds": [
+        "workshops-heading",
+        "benefits-heading",
+        "experience-heading",
+        "sessions-heading",
+        "private-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/workshops — proposed conditional template",
+      "module": "WORKSHOPS",
+      "phase": "M4",
+      "disposition": "Conditional template",
+      "guard": "Draft/template only until a real offering and approved facts exist.",
+      "registeredSectionKeys": [
+        "hero",
+        "facts",
+        "why",
+        "session",
+        "sessions",
+        "private",
+        "room"
+      ]
+    },
+    {
+      "oldRoute": "/gone",
+      "oldSource": "src/app/[locale]/gone/page.tsx",
+      "componentSources": [
+        "@/components/storefront/system-page"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "Existing gone/legacy handler and private state preview",
+      "module": "SYSTEM",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Actual 410 only where valid; no accidental indexing or homepage redirect.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/maintenance",
+      "oldSource": "src/app/[locale]/maintenance/page.tsx",
+      "componentSources": [
+        "@/components/storefront/cure-loop",
+        "@/components/storefront/newsletter-signup",
+        "@/components/storefront/system-page"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "Existing holding state and private state preview",
+      "module": "SYSTEM",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Operational state; do not expose drafts or replace healthy pages.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/too-many-requests",
+      "oldSource": "src/app/[locale]/too-many-requests/page.tsx",
+      "componentSources": [
+        "@/components/storefront/system-page",
+        "@/components/storefront/retry-countdown"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "Existing rate-limit state and private state preview",
+      "module": "SYSTEM",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Respect real 429/retry behavior; no bypass of current guard.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/design-lab",
+      "oldSource": "src/app/design-lab/page.tsx",
+      "componentSources": [
+        "@/components/design-lab/components",
+        "@/components/design-lab/sections",
+        "@/components/design-lab/motion",
+        "@/components/design-lab/frames",
+        "@/components/design-lab/states",
+        "@/components/design-lab/content",
+        "@/components/design-lab/icons"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Public / utility",
+      "target": "/preview/states — private reference equivalent",
+      "module": "PREVIEW",
+      "phase": "M5",
+      "disposition": "Preserve/adapt presentation",
+      "guard": "Development/reference only; authenticated or otherwise safely isolated, noindex.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/activity",
+      "oldSource": "src/app/studio/(dashboard)/activity/page.tsx",
+      "componentSources": [
+        "@/components/studio/studio-table-head",
+        "@/components/studio/studio-row",
+        "@/components/studio/activity/activity-filter",
+        "@/components/studio/page-header",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/activity; list or workspace",
+      "module": "Activity",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/analytics",
+      "oldSource": "src/app/studio/(dashboard)/analytics/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/dashboard/stat-card",
+        "@/components/studio/dashboard/inquiries-chart"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/analytics — proposed; list or workspace",
+      "module": "Analytics",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/blog/[id]",
+      "oldSource": "src/app/studio/(dashboard)/blog/[id]/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/blog/blog-post-form"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/journal — current alias; dedicated view proposed; record detail/edit",
+      "module": "Journal",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/blog/new",
+      "oldSource": "src/app/studio/(dashboard)/blog/new/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/blog/blog-post-form"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/journal — current alias; dedicated view proposed; new record",
+      "module": "Journal",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/blog",
+      "oldSource": "src/app/studio/(dashboard)/blog/page.tsx",
+      "componentSources": [
+        "@/components/ui/button",
+        "@/components/studio/page-header",
+        "@/components/studio/blog/blog-post-list",
+        "@/components/studio/blog/blog-taxonomy-list"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/journal — current alias; dedicated view proposed; list or workspace",
+      "module": "Journal",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/catalog-fill/conflicts",
+      "oldSource": "src/app/studio/(dashboard)/catalog-fill/conflicts/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/catalog-fill/conflict-list",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Catalog Fill",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/catalog-fill",
+      "oldSource": "src/app/studio/(dashboard)/catalog-fill/page.tsx",
+      "componentSources": [
+        "@/components/ui/badge",
+        "@/components/ui/button",
+        "@/components/studio/page-header",
+        "@/components/studio/catalog-fill/fill-preview",
+        "@/components/studio/catalog-fill-policy",
+        "@/components/studio/studio-table-head",
+        "@/components/studio/products/product-filter-links"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Catalog Fill",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/categories",
+      "oldSource": "src/app/studio/(dashboard)/categories/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/categories/category-list"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/categories — proposed; list or workspace",
+      "module": "Categories",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/content-gaps",
+      "oldSource": "src/app/studio/(dashboard)/content-gaps/page.tsx",
+      "componentSources": [
+        "@/components/studio/products/product-filter-links",
+        "@/components/studio/page-header"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/content-gaps — proposed; list or workspace",
+      "module": "Content Gaps",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/content-health",
+      "oldSource": "src/app/studio/(dashboard)/content-health/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/form-section",
+        "@/components/studio/content-health/starter-panel"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/content-health; list or workspace",
+      "module": "Content Health",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/content-lab",
+      "oldSource": "src/app/studio/(dashboard)/content-lab/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/form-section",
+        "@/components/ui/badge",
+        "@/components/studio/content-lab/counts-table",
+        "@/components/studio/content-lab/actions-panel",
+        "@/components/studio/content-lab/public-toggle",
+        "@/components/studio/content-lab/demo-manager"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/content-lab — proposed; list or workspace",
+      "module": "Content Lab",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/custom-pages/[id]",
+      "oldSource": "src/app/studio/(dashboard)/custom-pages/[id]/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/custom-pages/block-board",
+        "@/components/studio/custom-pages/custom-page-form",
+        "@/components/ui/button",
+        "@/components/studio/draft-preview"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/landing-pages — proposed; record detail/edit",
+      "module": "Landing Pages",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/custom-pages/new",
+      "oldSource": "src/app/studio/(dashboard)/custom-pages/new/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/custom-pages/custom-page-form"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/landing-pages — proposed; new record",
+      "module": "Landing Pages",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/custom-pages",
+      "oldSource": "src/app/studio/(dashboard)/custom-pages/page.tsx",
+      "componentSources": [
+        "@/components/studio/custom-pages/duplicate-button",
+        "@/components/studio/demo-badge",
+        "@/components/studio/page-header",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/landing-pages — proposed; list or workspace",
+      "module": "Landing Pages",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/exports",
+      "oldSource": "src/app/studio/(dashboard)/exports/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/exports — proposed; list or workspace",
+      "module": "Exports",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/faqs",
+      "oldSource": "src/app/studio/(dashboard)/faqs/page.tsx",
+      "componentSources": [
+        "@/components/studio/faqs/faq-list",
+        "@/components/studio/page-header"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/faqs — proposed; list or workspace",
+      "module": "FAQs",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/forms",
+      "oldSource": "src/app/studio/(dashboard)/forms/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/forms/form-options-board"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/forms — current alias; dedicated view proposed; list or workspace",
+      "module": "Commission Form",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/import",
+      "oldSource": "src/app/studio/(dashboard)/import/page.tsx",
+      "componentSources": [
+        "@/components/studio/import/import-wizard",
+        "@/components/studio/page-header",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/import — proposed, existing product mutations held; list or workspace",
+      "module": "Bulk Import",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/inquiries/[id]",
+      "oldSource": "src/app/studio/(dashboard)/inquiries/[id]/page.tsx",
+      "componentSources": [
+        "@/components/ui/badge",
+        "@/components/ui/button",
+        "@/components/studio/inquiries/labels",
+        "@/components/studio/inquiries/whatsapp-reply-button",
+        "@/components/studio/inquiries/inquiry-detail-controls"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/inquiries; record detail/edit",
+      "module": "Commissions",
+      "phase": "M7",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/inquiries",
+      "oldSource": "src/app/studio/(dashboard)/inquiries/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/inquiries/labels",
+        "@/components/studio/dashboard/action-queue",
+        "@/components/studio/inquiries/commission-board",
+        "@/components/studio/inquiries/board-filter",
+        "@/components/studio/inquiries/inquiry-list"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/inquiries; list or workspace",
+      "module": "Commissions",
+      "phase": "M7",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/materials",
+      "oldSource": "src/app/studio/(dashboard)/materials/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/sections/sections-board"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/materials — proposed; list or workspace",
+      "module": "Materials",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/media",
+      "oldSource": "src/app/studio/(dashboard)/media/page.tsx",
+      "componentSources": [
+        "@/components/studio/media/media-grid",
+        "@/components/studio/page-header"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/media; list or workspace",
+      "module": "Media Library",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/navigation",
+      "oldSource": "src/app/studio/(dashboard)/navigation/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/navigation/nav-menus-board"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/navigation; list or workspace",
+      "module": "Navigation",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio",
+      "oldSource": "src/app/studio/(dashboard)/page.tsx",
+      "componentSources": [
+        "@/components/studio/products/product-filter-links",
+        "@/components/studio/products/product-filter",
+        "@/components/studio/dashboard/action-queue",
+        "@/components/ui/badge",
+        "@/components/ui/button",
+        "@/components/studio/page-header",
+        "@/components/studio/studio-table-head",
+        "@/components/studio/dashboard/stat-card",
+        "@/components/studio/dashboard/activity-panel",
+        "@/components/studio/dashboard/inquiries-chart",
+        "@/components/studio/dashboard/top-products-card",
+        "@/components/studio/inquiries/labels"
+      ],
+      "literalSectionIds": [
+        "queue-heading",
+        "inquiries-chart-heading",
+        "recent-inquiries-heading",
+        "quick-actions-heading"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio",
+      "module": "Overview",
+      "phase": "M6",
+      "disposition": "Adapt existing module",
+      "guard": "Current scoped counts, IST follow-ups and real action destinations only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/pages/[id]",
+      "oldSource": "src/app/studio/(dashboard)/pages/[id]/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/pages/page-form"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/pages — current alias; dedicated view proposed; record detail/edit",
+      "module": "Pages",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/pages",
+      "oldSource": "src/app/studio/(dashboard)/pages/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/pages/legal",
+        "@/components/studio/pages/page-list"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/pages — current alias; dedicated view proposed; list or workspace",
+      "module": "Pages",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/portfolio/[id]",
+      "oldSource": "src/app/studio/(dashboard)/portfolio/[id]/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/portfolio/portfolio-form"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/portfolio — proposed; record detail/edit",
+      "module": "Portfolio",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/portfolio/new",
+      "oldSource": "src/app/studio/(dashboard)/portfolio/new/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/portfolio/portfolio-form"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/portfolio — proposed; new record",
+      "module": "Portfolio",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/portfolio",
+      "oldSource": "src/app/studio/(dashboard)/portfolio/page.tsx",
+      "componentSources": [
+        "@/components/ui/button",
+        "@/components/studio/page-header",
+        "@/components/studio/portfolio/portfolio-list"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/portfolio — proposed; list or workspace",
+      "module": "Portfolio",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/process",
+      "oldSource": "src/app/studio/(dashboard)/process/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/sections/sections-board"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/process — proposed; list or workspace",
+      "module": "Process Steps",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/products/[id]",
+      "oldSource": "src/app/studio/(dashboard)/products/[id]/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/products/product-form"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/products; record detail/edit",
+      "module": "Products",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/products/new",
+      "oldSource": "src/app/studio/(dashboard)/products/new/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/products/product-form"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/products; new record",
+      "module": "Products",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/products",
+      "oldSource": "src/app/studio/(dashboard)/products/page.tsx",
+      "componentSources": [
+        "@/components/ui/button",
+        "@/components/studio/page-header",
+        "@/components/studio/products/suggest-size-tiers-button",
+        "@/components/studio/products/product-list",
+        "@/components/studio/products/product-filter"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/products; list or workspace",
+      "module": "Products",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/research",
+      "oldSource": "src/app/studio/(dashboard)/research/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/research/research-form",
+        "@/components/studio/research/research-list"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/research — proposed; list or workspace",
+      "module": "Research",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/scraper/analytics",
+      "oldSource": "src/app/studio/(dashboard)/scraper/analytics/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/recompute-analytics-button",
+        "@/components/studio/scraper/recompute-embeddings-button",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Product Scraper",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/scraper/confirmed",
+      "oldSource": "src/app/studio/(dashboard)/scraper/confirmed/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Product Scraper",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/scraper/explorer",
+      "oldSource": "src/app/studio/(dashboard)/scraper/explorer/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Product Scraper",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/scraper/large-format",
+      "oldSource": "src/app/studio/(dashboard)/scraper/large-format/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Product Scraper",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/scraper/mapping",
+      "oldSource": "src/app/studio/(dashboard)/scraper/mapping/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Product Scraper",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/scraper",
+      "oldSource": "src/app/studio/(dashboard)/scraper/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/all-websites",
+        "@/components/studio/scraper/job-dashboard",
+        "@/components/studio/scraper/scraper-kpis",
+        "@/components/studio/scraper/stage-rail",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Product Scraper",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/scraper/quality",
+      "oldSource": "src/app/studio/(dashboard)/scraper/quality/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/quality-triage"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Product Scraper",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/scraper/review",
+      "oldSource": "src/app/studio/(dashboard)/scraper/review/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/shortlist-view",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Product Scraper",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/scraper/runs",
+      "oldSource": "src/app/studio/(dashboard)/scraper/runs/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/run-actions",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Product Scraper",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/scraper/sources/[key]",
+      "oldSource": "src/app/studio/(dashboard)/scraper/sources/[key]/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/source-detail",
+        "@/components/studio/scraper/source-policy",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Product Scraper",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/scraper/sources",
+      "oldSource": "src/app/studio/(dashboard)/scraper/sources/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/purge-tier",
+        "@/components/studio/scraper/source-list"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "Scope ledger only; no activated production route",
+      "module": "Product Scraper",
+      "phase": "M1 / M6",
+      "disposition": "Excluded implementation / reference only",
+      "guard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/sections",
+      "oldSource": "src/app/studio/(dashboard)/sections/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/sections/sections-board"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/sections — proposed; list or workspace",
+      "module": "Page Sections",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/seo",
+      "oldSource": "src/app/studio/(dashboard)/seo/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/settings/seo-form",
+        "@/components/studio/settings/site-settings-values"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/seo — proposed; list or workspace",
+      "module": "SEO",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/settings",
+      "oldSource": "src/app/studio/(dashboard)/settings/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/settings/settings-form",
+        "@/components/studio/settings/site-settings-values"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/settings; list or workspace",
+      "module": "Site Settings",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/site-copy",
+      "oldSource": "src/app/studio/(dashboard)/site-copy/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/publish/publish-bar",
+        "@/components/studio/publish/revision-history",
+        "@/components/studio/sections/sections-board",
+        "@/components/studio/site-copy/site-copy-board",
+        "@/components/studio/site-copy/surface-switcher",
+        "@/components/studio/site-copy/surface-tabs",
+        "@/components/studio/site-images/site-image-board"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/site-copy; list or workspace",
+      "module": "Site Copy",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/site-images",
+      "oldSource": "src/app/studio/(dashboard)/site-images/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/site-images/site-image-board"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/site-images; list or workspace",
+      "module": "Site Images",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/subscribers",
+      "oldSource": "src/app/studio/(dashboard)/subscribers/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/studio-table-head",
+        "@/components/studio/studio-row",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/subscribers — conditional proposal; list or workspace",
+      "module": "Subscribers",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/testimonials/[id]",
+      "oldSource": "src/app/studio/(dashboard)/testimonials/[id]/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/testimonials/testimonial-form"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/testimonials — proposed; record detail/edit",
+      "module": "Testimonials",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/testimonials/new",
+      "oldSource": "src/app/studio/(dashboard)/testimonials/new/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/testimonials/testimonial-form"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/testimonials — proposed; new record",
+      "module": "Testimonials",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/testimonials",
+      "oldSource": "src/app/studio/(dashboard)/testimonials/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/ui/button",
+        "@/components/studio/testimonials/testimonial-list"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/testimonials — proposed; list or workspace",
+      "module": "Testimonials",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/users",
+      "oldSource": "src/app/studio/(dashboard)/users/page.tsx",
+      "componentSources": [
+        "@/components/studio/page-header",
+        "@/components/studio/users/user-list"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/staff; list or workspace",
+      "module": "Users",
+      "phase": "M6",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/forgot-password",
+      "oldSource": "src/app/studio/forgot-password/page.tsx",
+      "componentSources": [
+        "@/components/ui/input",
+        "@/components/ui/label",
+        "@/components/studio/auth-shell",
+        "@/components/studio/submit-button"
+      ],
+      "literalSectionIds": [
+        "email"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/login and current supported recovery/access flow",
+      "module": "Authentication",
+      "phase": "M2 / M6",
+      "disposition": "Presentation parity under current auth policy",
+      "guard": "Match forms/states where supported; preserve current auth mechanisms, no old Auth.js actions or new public signup. Unsupported recovery stays an explicit scope decision.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/inquiries/[id]/card",
+      "oldSource": "src/app/studio/inquiries/[id]/card/page.tsx",
+      "componentSources": [
+        "@/components/studio/inquiries/print-button",
+        "@/components/ui/button"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/inquiries; print/card",
+      "module": "Commissions",
+      "phase": "M7",
+      "disposition": "Adapt or add supported view",
+      "guard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/login",
+      "oldSource": "src/app/studio/login/page.tsx",
+      "componentSources": [
+        "@/components/studio/auth-shell",
+        "@/components/studio/login-fields"
+      ],
+      "literalSectionIds": [],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/login and current supported recovery/access flow",
+      "module": "Authentication",
+      "phase": "M2 / M6",
+      "disposition": "Presentation parity under current auth policy",
+      "guard": "Match forms/states where supported; preserve current auth mechanisms, no old Auth.js actions or new public signup. Unsupported recovery stays an explicit scope decision.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/reset-password",
+      "oldSource": "src/app/studio/reset-password/page.tsx",
+      "componentSources": [
+        "@/components/studio/auth-shell",
+        "@/components/studio/password-field",
+        "@/components/studio/submit-button"
+      ],
+      "literalSectionIds": [
+        "password",
+        "confirm"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/login and current supported recovery/access flow",
+      "module": "Authentication",
+      "phase": "M2 / M6",
+      "disposition": "Presentation parity under current auth policy",
+      "guard": "Match forms/states where supported; preserve current auth mechanisms, no old Auth.js actions or new public signup. Unsupported recovery stays an explicit scope decision.",
+      "registeredSectionKeys": []
+    },
+    {
+      "oldRoute": "/studio/signup",
+      "oldSource": "src/app/studio/signup/page.tsx",
+      "componentSources": [
+        "@/components/ui/input",
+        "@/components/ui/label",
+        "@/components/studio/auth-shell",
+        "@/components/studio/password-field",
+        "@/components/studio/submit-button"
+      ],
+      "literalSectionIds": [
+        "name",
+        "email",
+        "password",
+        "confirm"
+      ],
+      "status": "Planned; not implemented in this update",
+      "area": "Studio",
+      "target": "/studio/login and current supported recovery/access flow",
+      "module": "Authentication",
+      "phase": "M2 / M6",
+      "disposition": "Presentation parity under current auth policy",
+      "guard": "Match forms/states where supported; preserve current auth mechanisms, no old Auth.js actions or new public signup. Unsupported recovery stays an explicit scope decision.",
+      "registeredSectionKeys": []
+    }
+  ]
+}

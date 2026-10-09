@@ -1,0 +1,38 @@
+[
+  {
+    "name": "hero-pour.jpg",
+    "source": "OLDWEBSITE/public/redesign/hero-pour.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 211806,
+    "sha256": "be54fcd332bb12dae0923a86e3d9fa074a0e052fc04520d0bdb369bf499116b7",
+    "review": "Visually inspected local reference; not independently established as a Drive byte-for-byte match or real commission."
+  },
+  {
+    "name": "maker-hands.jpg",
+    "source": "OLDWEBSITE/public/redesign/maker-hands.jpg",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 136116,
+    "sha256": "138776d5f9a02ec85a613ce32d892643aed732d356779bfd36792c0b89347cd5",
+    "review": "Visually inspected local reference; not independently established as a Drive byte-for-byte match or real commission."
+  },
+  {
+    "name": "doorway-collectible.jpg",
+    "source": "OLDWEBSITE/public/redesign/doorway-collectible.jpg",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 258778,
+    "sha256": "6934feb5740e39a5192e89d9ae506952e7f8b8ba3609f39c7eec71387a29a8be",
+    "review": "Visually inspected local reference; not independently established as a Drive byte-for-byte match or real commission."
+  },
+  {
+    "name": "texture-resin-flow.jpg",
+    "source": "OLDWEBSITE/public/redesign/texture-resin-flow.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 229943,
+    "sha256": "53dfc87a74c50b6ca72a2e76e1d85df051afa01acfc434b26974f804e0cc81c8",
+    "review": "Visually inspected local reference; not independently established as a Drive byte-for-byte match or real commission."
+  }
+]

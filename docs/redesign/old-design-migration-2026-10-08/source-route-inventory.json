@@ -1,0 +1,2028 @@
+{
+  "old": [
+    {
+      "route": "/[locale]/about",
+      "file": "src/app/[locale]/(v2)/about/page.tsx",
+      "kind": "page",
+      "sections": [
+        "about-heading",
+        "story-heading",
+        "maker-heading",
+        "materials-heading",
+        "about-cta-heading"
+      ],
+      "components": [
+        "@/components/storefront/accordion-gallery",
+        "@/components/storefront/button",
+        "@/components/storefront/craft-chapters",
+        "@/components/storefront/meniscus-image",
+        "@/components/motion/reveal",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/studio-gallery",
+        "@/components/storefront/slot-image",
+        "@/components/sections/studio-map"
+      ]
+    },
+    {
+      "route": "/[locale]/blog",
+      "file": "src/app/[locale]/(v2)/blog/(index)/page.tsx",
+      "kind": "page",
+      "sections": [
+        "journal-heading",
+        "archive-heading"
+      ],
+      "components": [
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/demo-mark",
+        "@/components/storefront/empty-state",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/newsletter-signup",
+        "@/components/storefront/pagination",
+        "@/components/storefront/section-heading"
+      ]
+    },
+    {
+      "route": "/[locale]/blog/[slug]",
+      "file": "src/app/[locale]/(v2)/blog/[slug]/page.tsx",
+      "kind": "page",
+      "sections": [
+        "article-heading",
+        "article-pieces-heading",
+        "article-collections-heading",
+        "article-related-heading",
+        "article-cta-heading"
+      ],
+      "components": [
+        "@/components/blog/article-toc",
+        "@/components/product/share-buttons",
+        "@/components/seo/json-ld",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/catalog-product-card",
+        "@/components/storefront/collection-card",
+        "@/components/storefront/demo-mark",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading"
+      ]
+    },
+    {
+      "route": "/[locale]/contact",
+      "file": "src/app/[locale]/(v2)/contact/page.tsx",
+      "kind": "page",
+      "sections": [
+        "contact-heading",
+        "channels-heading",
+        "write",
+        "write-heading",
+        "contact-faq-heading"
+      ],
+      "components": [
+        "@/components/sections/contact-form",
+        "@/components/sections/studio-map",
+        "@/components/storefront/accordion",
+        "@/components/storefront/button",
+        "@/components/storefront/section-heading"
+      ]
+    },
+    {
+      "route": "/[locale]/custom-order",
+      "file": "src/app/[locale]/(v2)/custom-order/page.tsx",
+      "kind": "page",
+      "sections": [
+        "commission",
+        "commission-heading",
+        "kinds",
+        "kinds-heading",
+        "how",
+        "how-heading",
+        "brief",
+        "brief-heading",
+        "questions",
+        "questions-heading",
+        "work",
+        "work-heading",
+        "proof-heading"
+      ],
+      "components": [
+        "@/components/sections/custom-order-form",
+        "@/components/storefront/accordion",
+        "@/components/storefront/button",
+        "@/components/storefront/collection-card",
+        "@/components/storefront/cure-line",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/testimonial-wall"
+      ]
+    },
+    {
+      "route": "/[locale]/faq",
+      "file": "src/app/[locale]/(v2)/faq/page.tsx",
+      "kind": "page",
+      "sections": [
+        "faq-heading",
+        "faq-close-heading"
+      ],
+      "components": [
+        "@/components/seo/json-ld",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/empty-state",
+        "@/components/storefront/faq-explorer",
+        "@/components/storefront/section-heading"
+      ]
+    },
+    {
+      "route": "/[locale]/large-resin-art",
+      "file": "src/app/[locale]/(v2)/large-resin-art/page.tsx",
+      "kind": "page",
+      "sections": [
+        "scale",
+        "large-format-heading",
+        "scope",
+        "scope-heading",
+        "philosophy",
+        "philosophy-heading",
+        "how",
+        "how-heading",
+        "brief",
+        "brief-heading",
+        "materials",
+        "materials-heading",
+        "pieces",
+        "pieces-heading",
+        "work",
+        "work-heading",
+        "words",
+        "lf-words-heading",
+        "faq",
+        "lf-faq-heading",
+        "gallery",
+        "gallery-heading",
+        "commission",
+        "commission-heading"
+      ],
+      "components": [
+        "@/components/storefront/accordion",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/catalog-product-card",
+        "@/components/storefront/button",
+        "@/components/storefront/cure-line",
+        "@/components/storefront/demo-mark",
+        "@/components/storefront/hero-media",
+        "@/components/storefront/meniscus-image",
+        "@/components/motion/reveal",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/testimonial-wall",
+        "@/components/seo/json-ld"
+      ]
+    },
+    {
+      "route": "/[locale]/p/[slug]",
+      "file": "src/app/[locale]/(v2)/p/[slug]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/demo-mark",
+        "@/components/storefront/custom-page-blocks"
+      ]
+    },
+    {
+      "route": "/[locale]",
+      "file": "src/app/[locale]/(v2)/page.tsx",
+      "kind": "page",
+      "sections": [
+        "pour",
+        "hero-heading",
+        "manifesto",
+        "manifesto-heading",
+        "pieces",
+        "pieces-heading",
+        "large-format",
+        "large-format-heading",
+        "material",
+        "collections",
+        "collections-heading",
+        "furniture",
+        "furniture-heading",
+        "maker",
+        "maker-heading",
+        "rooms",
+        "rooms-heading",
+        "work",
+        "work-heading",
+        "words",
+        "words-heading",
+        "bespoke",
+        "bespoke-heading",
+        "workshops",
+        "workshops-heading",
+        "print",
+        "print-heading",
+        "process",
+        "how-heading",
+        "why-heading",
+        "journal",
+        "journal-heading",
+        "closing-heading"
+      ],
+      "components": [
+        "@/components/storefront/button",
+        "@/components/storefront/collection-doors",
+        "@/components/storefront/demo-mark",
+        "@/components/storefront/featured-rail",
+        "@/components/storefront/featured-testimonial",
+        "@/components/storefront/quote-rotator",
+        "@/components/storefront/cure-line",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/hero-media",
+        "@/components/storefront/journal-list",
+        "@/components/ui/magnetic",
+        "@/components/motion/hero-parallax",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/pour-cure-showcase",
+        "@/components/motion/reveal",
+        "@/components/storefront/slot-image"
+      ]
+    },
+    {
+      "route": "/[locale]/portfolio",
+      "file": "src/app/[locale]/(v2)/portfolio/(index)/page.tsx",
+      "kind": "page",
+      "sections": [
+        "archive-heading",
+        "wall-heading",
+        "commission-heading"
+      ],
+      "components": [
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/empty-state",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/pagination",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/slot-image"
+      ]
+    },
+    {
+      "route": "/[locale]/portfolio/[slug]",
+      "file": "src/app/[locale]/(v2)/portfolio/[slug]/page.tsx",
+      "kind": "page",
+      "sections": [
+        "case-heading",
+        "story-heading",
+        "brief-heading",
+        "material-heading",
+        "process-heading",
+        "final-heading",
+        "related-heading",
+        "commission-heading"
+      ],
+      "components": [
+        "@/components/portfolio/before-after",
+        "@/components/portfolio/lightbox-gallery",
+        "@/components/seo/json-ld",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading"
+      ]
+    },
+    {
+      "route": "/[locale]/privacy",
+      "file": "src/app/[locale]/(v2)/privacy/page.tsx",
+      "kind": "page",
+      "sections": [
+        "legal-heading"
+      ],
+      "components": [
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/error-state",
+        "@/components/storefront/section-heading"
+      ]
+    },
+    {
+      "route": "/[locale]/process",
+      "file": "src/app/[locale]/(v2)/process/page.tsx",
+      "kind": "page",
+      "sections": [
+        "process-heading",
+        "stages-heading",
+        "materials-heading",
+        "timelines-heading",
+        "process-cta-heading"
+      ],
+      "components": [
+        "@/components/storefront/accordion-gallery",
+        "@/components/storefront/button",
+        "@/components/storefront/cure-line",
+        "@/components/storefront/hero-media",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading"
+      ]
+    },
+    {
+      "route": "/[locale]/product/[slug]",
+      "file": "src/app/[locale]/(v2)/product/[slug]/page.tsx",
+      "kind": "page",
+      "sections": [
+        "pdp-actions",
+        "room-context-heading",
+        "order-panel",
+        "order-heading",
+        "piece-heading",
+        "related-heading"
+      ],
+      "components": [
+        "@/components/icons",
+        "@/components/product/gallery",
+        "@/components/product/order-panel",
+        "@/components/product/share-buttons",
+        "@/components/product/spec-sheet",
+        "@/components/product/sticky-mobile-cta",
+        "@/components/storefront/accordion",
+        "@/components/product/product-testimonials",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/catalog-product-card",
+        "@/components/storefront/demo-mark",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/snap-rail",
+        "@/components/seo/json-ld"
+      ]
+    },
+    {
+      "route": "/[locale]/search",
+      "file": "src/app/[locale]/(v2)/search/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/motion/reveal",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/empty-state",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/button",
+        "@/components/storefront/catalog-product-card",
+        "@/components/storefront/collection-card"
+      ]
+    },
+    {
+      "route": "/[locale]/shop",
+      "file": "src/app/[locale]/(v2)/shop/(index)/page.tsx",
+      "kind": "page",
+      "sections": [
+        "shop-heading",
+        "collections",
+        "collections-heading",
+        "pieces"
+      ],
+      "components": [
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/collection-card",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/pagination",
+        "@/components/storefront/shop-explorer",
+        "@/components/storefront/snap-rail"
+      ]
+    },
+    {
+      "route": "/[locale]/shop/[category]",
+      "file": "src/app/[locale]/(v2)/shop/[category]/page.tsx",
+      "kind": "page",
+      "sections": [
+        "collection-heading",
+        "collection-transformation-heading",
+        "pieces",
+        "related-collections-heading",
+        "collection-commission-heading"
+      ],
+      "components": [
+        "@/components/portfolio/before-after",
+        "@/components/motion/reveal",
+        "@/components/seo/json-ld",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/button",
+        "@/components/storefront/collection-card",
+        "@/components/storefront/pagination",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/shop-explorer",
+        "@/components/storefront/snap-rail"
+      ]
+    },
+    {
+      "route": "/[locale]/shop/wishlist",
+      "file": "src/app/[locale]/(v2)/shop/wishlist/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/shop/wishlist-panel",
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/section-heading"
+      ]
+    },
+    {
+      "route": "/[locale]/terms",
+      "file": "src/app/[locale]/(v2)/terms/page.tsx",
+      "kind": "page",
+      "sections": [
+        "legal-heading"
+      ],
+      "components": [
+        "@/components/storefront/breadcrumb",
+        "@/components/storefront/error-state",
+        "@/components/storefront/section-heading"
+      ]
+    },
+    {
+      "route": "/[locale]/whatsapp-order",
+      "file": "src/app/[locale]/(v2)/whatsapp-order/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/storefront/button",
+        "@/components/storefront/section-heading"
+      ]
+    },
+    {
+      "route": "/[locale]/workshops",
+      "file": "src/app/[locale]/(v2)/workshops/page.tsx",
+      "kind": "page",
+      "sections": [
+        "workshops-heading",
+        "benefits-heading",
+        "experience-heading",
+        "sessions-heading",
+        "private-heading"
+      ],
+      "components": [
+        "@/components/storefront/button",
+        "@/components/storefront/empty-state",
+        "@/components/storefront/meniscus-image",
+        "@/components/storefront/section-heading",
+        "@/components/storefront/studio-gallery",
+        "@/components/storefront/slot-image"
+      ]
+    },
+    {
+      "route": "/[locale]/gone",
+      "file": "src/app/[locale]/gone/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/storefront/system-page"
+      ]
+    },
+    {
+      "route": "/[locale]/maintenance",
+      "file": "src/app/[locale]/maintenance/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/storefront/cure-loop",
+        "@/components/storefront/newsletter-signup",
+        "@/components/storefront/system-page"
+      ]
+    },
+    {
+      "route": "/[locale]/too-many-requests",
+      "file": "src/app/[locale]/too-many-requests/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/storefront/system-page",
+        "@/components/storefront/retry-countdown"
+      ]
+    },
+    {
+      "route": "/api/auth/[...nextauth]",
+      "file": "src/app/api/auth/[...nextauth]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/cron/mirror-images",
+      "file": "src/app/api/cron/mirror-images/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/cron/publish-scheduled",
+      "file": "src/app/api/cron/publish-scheduled/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/cron/scrape-drain",
+      "file": "src/app/api/cron/scrape-drain/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/csp-report",
+      "file": "src/app/api/csp-report/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/draft",
+      "file": "src/app/api/draft/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/form-token",
+      "file": "src/app/api/form-token/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/scraper/export",
+      "file": "src/app/api/scraper/export/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/scraper/export-confirmed",
+      "file": "src/app/api/scraper/export-confirmed/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/export/confirmed",
+      "file": "src/app/api/studio/export/confirmed/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/subscribers/export",
+      "file": "src/app/api/subscribers/export/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/upload",
+      "file": "src/app/api/upload/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/design-lab",
+      "file": "src/app/design-lab/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/design-lab/components",
+        "@/components/design-lab/sections",
+        "@/components/design-lab/motion",
+        "@/components/design-lab/frames",
+        "@/components/design-lab/states",
+        "@/components/design-lab/content",
+        "@/components/design-lab/icons"
+      ]
+    },
+    {
+      "route": "/studio/activity",
+      "file": "src/app/studio/(dashboard)/activity/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/studio-table-head",
+        "@/components/studio/studio-row",
+        "@/components/studio/activity/activity-filter",
+        "@/components/studio/page-header",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/analytics",
+      "file": "src/app/studio/(dashboard)/analytics/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/dashboard/stat-card",
+        "@/components/studio/dashboard/inquiries-chart"
+      ]
+    },
+    {
+      "route": "/studio/blog/[id]",
+      "file": "src/app/studio/(dashboard)/blog/[id]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/blog/blog-post-form"
+      ]
+    },
+    {
+      "route": "/studio/blog/new",
+      "file": "src/app/studio/(dashboard)/blog/new/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/blog/blog-post-form"
+      ]
+    },
+    {
+      "route": "/studio/blog",
+      "file": "src/app/studio/(dashboard)/blog/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/ui/button",
+        "@/components/studio/page-header",
+        "@/components/studio/blog/blog-post-list",
+        "@/components/studio/blog/blog-taxonomy-list"
+      ]
+    },
+    {
+      "route": "/studio/catalog-fill/conflicts",
+      "file": "src/app/studio/(dashboard)/catalog-fill/conflicts/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/catalog-fill/conflict-list",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/catalog-fill",
+      "file": "src/app/studio/(dashboard)/catalog-fill/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/ui/badge",
+        "@/components/ui/button",
+        "@/components/studio/page-header",
+        "@/components/studio/catalog-fill/fill-preview",
+        "@/components/studio/catalog-fill-policy",
+        "@/components/studio/studio-table-head",
+        "@/components/studio/products/product-filter-links"
+      ]
+    },
+    {
+      "route": "/studio/categories",
+      "file": "src/app/studio/(dashboard)/categories/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/categories/category-list"
+      ]
+    },
+    {
+      "route": "/studio/content-gaps",
+      "file": "src/app/studio/(dashboard)/content-gaps/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/products/product-filter-links",
+        "@/components/studio/page-header"
+      ]
+    },
+    {
+      "route": "/studio/content-health",
+      "file": "src/app/studio/(dashboard)/content-health/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/form-section",
+        "@/components/studio/content-health/starter-panel"
+      ]
+    },
+    {
+      "route": "/studio/content-lab",
+      "file": "src/app/studio/(dashboard)/content-lab/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/form-section",
+        "@/components/ui/badge",
+        "@/components/studio/content-lab/counts-table",
+        "@/components/studio/content-lab/actions-panel",
+        "@/components/studio/content-lab/public-toggle",
+        "@/components/studio/content-lab/demo-manager"
+      ]
+    },
+    {
+      "route": "/studio/custom-pages/[id]",
+      "file": "src/app/studio/(dashboard)/custom-pages/[id]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/custom-pages/block-board",
+        "@/components/studio/custom-pages/custom-page-form",
+        "@/components/ui/button",
+        "@/components/studio/draft-preview"
+      ]
+    },
+    {
+      "route": "/studio/custom-pages/new",
+      "file": "src/app/studio/(dashboard)/custom-pages/new/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/custom-pages/custom-page-form"
+      ]
+    },
+    {
+      "route": "/studio/custom-pages",
+      "file": "src/app/studio/(dashboard)/custom-pages/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/custom-pages/duplicate-button",
+        "@/components/studio/demo-badge",
+        "@/components/studio/page-header",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/exports",
+      "file": "src/app/studio/(dashboard)/exports/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/faqs",
+      "file": "src/app/studio/(dashboard)/faqs/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/faqs/faq-list",
+        "@/components/studio/page-header"
+      ]
+    },
+    {
+      "route": "/studio/forms",
+      "file": "src/app/studio/(dashboard)/forms/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/forms/form-options-board"
+      ]
+    },
+    {
+      "route": "/studio/import",
+      "file": "src/app/studio/(dashboard)/import/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/import/import-wizard",
+        "@/components/studio/page-header",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/inquiries/[id]",
+      "file": "src/app/studio/(dashboard)/inquiries/[id]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/ui/badge",
+        "@/components/ui/button",
+        "@/components/studio/inquiries/labels",
+        "@/components/studio/inquiries/whatsapp-reply-button",
+        "@/components/studio/inquiries/inquiry-detail-controls"
+      ]
+    },
+    {
+      "route": "/studio/inquiries",
+      "file": "src/app/studio/(dashboard)/inquiries/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/inquiries/labels",
+        "@/components/studio/dashboard/action-queue",
+        "@/components/studio/inquiries/commission-board",
+        "@/components/studio/inquiries/board-filter",
+        "@/components/studio/inquiries/inquiry-list"
+      ]
+    },
+    {
+      "route": "/studio/materials",
+      "file": "src/app/studio/(dashboard)/materials/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/sections/sections-board"
+      ]
+    },
+    {
+      "route": "/studio/media",
+      "file": "src/app/studio/(dashboard)/media/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/media/media-grid",
+        "@/components/studio/page-header"
+      ]
+    },
+    {
+      "route": "/studio/navigation",
+      "file": "src/app/studio/(dashboard)/navigation/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/navigation/nav-menus-board"
+      ]
+    },
+    {
+      "route": "/studio",
+      "file": "src/app/studio/(dashboard)/page.tsx",
+      "kind": "page",
+      "sections": [
+        "queue-heading",
+        "inquiries-chart-heading",
+        "recent-inquiries-heading",
+        "quick-actions-heading"
+      ],
+      "components": [
+        "@/components/studio/products/product-filter-links",
+        "@/components/studio/products/product-filter",
+        "@/components/studio/dashboard/action-queue",
+        "@/components/ui/badge",
+        "@/components/ui/button",
+        "@/components/studio/page-header",
+        "@/components/studio/studio-table-head",
+        "@/components/studio/dashboard/stat-card",
+        "@/components/studio/dashboard/activity-panel",
+        "@/components/studio/dashboard/inquiries-chart",
+        "@/components/studio/dashboard/top-products-card",
+        "@/components/studio/inquiries/labels"
+      ]
+    },
+    {
+      "route": "/studio/pages/[id]",
+      "file": "src/app/studio/(dashboard)/pages/[id]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/pages/page-form"
+      ]
+    },
+    {
+      "route": "/studio/pages",
+      "file": "src/app/studio/(dashboard)/pages/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/pages/legal",
+        "@/components/studio/pages/page-list"
+      ]
+    },
+    {
+      "route": "/studio/portfolio/[id]",
+      "file": "src/app/studio/(dashboard)/portfolio/[id]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/portfolio/portfolio-form"
+      ]
+    },
+    {
+      "route": "/studio/portfolio/new",
+      "file": "src/app/studio/(dashboard)/portfolio/new/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/portfolio/portfolio-form"
+      ]
+    },
+    {
+      "route": "/studio/portfolio",
+      "file": "src/app/studio/(dashboard)/portfolio/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/ui/button",
+        "@/components/studio/page-header",
+        "@/components/studio/portfolio/portfolio-list"
+      ]
+    },
+    {
+      "route": "/studio/process",
+      "file": "src/app/studio/(dashboard)/process/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/sections/sections-board"
+      ]
+    },
+    {
+      "route": "/studio/products/[id]",
+      "file": "src/app/studio/(dashboard)/products/[id]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/products/product-form"
+      ]
+    },
+    {
+      "route": "/studio/products/new",
+      "file": "src/app/studio/(dashboard)/products/new/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/products/product-form"
+      ]
+    },
+    {
+      "route": "/studio/products",
+      "file": "src/app/studio/(dashboard)/products/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/ui/button",
+        "@/components/studio/page-header",
+        "@/components/studio/products/suggest-size-tiers-button",
+        "@/components/studio/products/product-list",
+        "@/components/studio/products/product-filter"
+      ]
+    },
+    {
+      "route": "/studio/research",
+      "file": "src/app/studio/(dashboard)/research/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/research/research-form",
+        "@/components/studio/research/research-list"
+      ]
+    },
+    {
+      "route": "/studio/scraper/analytics",
+      "file": "src/app/studio/(dashboard)/scraper/analytics/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/recompute-analytics-button",
+        "@/components/studio/scraper/recompute-embeddings-button",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/scraper/confirmed",
+      "file": "src/app/studio/(dashboard)/scraper/confirmed/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/scraper/explorer",
+      "file": "src/app/studio/(dashboard)/scraper/explorer/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/scraper/large-format",
+      "file": "src/app/studio/(dashboard)/scraper/large-format/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/scraper/mapping",
+      "file": "src/app/studio/(dashboard)/scraper/mapping/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/scraper",
+      "file": "src/app/studio/(dashboard)/scraper/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/all-websites",
+        "@/components/studio/scraper/job-dashboard",
+        "@/components/studio/scraper/scraper-kpis",
+        "@/components/studio/scraper/stage-rail",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/scraper/quality",
+      "file": "src/app/studio/(dashboard)/scraper/quality/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/quality-triage"
+      ]
+    },
+    {
+      "route": "/studio/scraper/review",
+      "file": "src/app/studio/(dashboard)/scraper/review/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/shortlist-view",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/scraper/runs",
+      "file": "src/app/studio/(dashboard)/scraper/runs/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/run-actions",
+        "@/components/ui/badge",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/scraper/sources/[key]",
+      "file": "src/app/studio/(dashboard)/scraper/sources/[key]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/source-detail",
+        "@/components/studio/scraper/source-policy",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/scraper/sources",
+      "file": "src/app/studio/(dashboard)/scraper/sources/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/scraper/purge-tier",
+        "@/components/studio/scraper/source-list"
+      ]
+    },
+    {
+      "route": "/studio/sections",
+      "file": "src/app/studio/(dashboard)/sections/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/sections/sections-board"
+      ]
+    },
+    {
+      "route": "/studio/seo",
+      "file": "src/app/studio/(dashboard)/seo/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/settings/seo-form",
+        "@/components/studio/settings/site-settings-values"
+      ]
+    },
+    {
+      "route": "/studio/settings",
+      "file": "src/app/studio/(dashboard)/settings/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/settings/settings-form",
+        "@/components/studio/settings/site-settings-values"
+      ]
+    },
+    {
+      "route": "/studio/site-copy",
+      "file": "src/app/studio/(dashboard)/site-copy/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/publish/publish-bar",
+        "@/components/studio/publish/revision-history",
+        "@/components/studio/sections/sections-board",
+        "@/components/studio/site-copy/site-copy-board",
+        "@/components/studio/site-copy/surface-switcher",
+        "@/components/studio/site-copy/surface-tabs",
+        "@/components/studio/site-images/site-image-board"
+      ]
+    },
+    {
+      "route": "/studio/site-images",
+      "file": "src/app/studio/(dashboard)/site-images/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/site-images/site-image-board"
+      ]
+    },
+    {
+      "route": "/studio/subscribers",
+      "file": "src/app/studio/(dashboard)/subscribers/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/studio-table-head",
+        "@/components/studio/studio-row",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/testimonials/[id]",
+      "file": "src/app/studio/(dashboard)/testimonials/[id]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/testimonials/testimonial-form"
+      ]
+    },
+    {
+      "route": "/studio/testimonials/new",
+      "file": "src/app/studio/(dashboard)/testimonials/new/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/testimonials/testimonial-form"
+      ]
+    },
+    {
+      "route": "/studio/testimonials",
+      "file": "src/app/studio/(dashboard)/testimonials/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/ui/button",
+        "@/components/studio/testimonials/testimonial-list"
+      ]
+    },
+    {
+      "route": "/studio/users",
+      "file": "src/app/studio/(dashboard)/users/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/page-header",
+        "@/components/studio/users/user-list"
+      ]
+    },
+    {
+      "route": "/studio/forgot-password",
+      "file": "src/app/studio/forgot-password/page.tsx",
+      "kind": "page",
+      "sections": [
+        "email"
+      ],
+      "components": [
+        "@/components/ui/input",
+        "@/components/ui/label",
+        "@/components/studio/auth-shell",
+        "@/components/studio/submit-button"
+      ]
+    },
+    {
+      "route": "/studio/inquiries/[id]/card",
+      "file": "src/app/studio/inquiries/[id]/card/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/inquiries/print-button",
+        "@/components/ui/button"
+      ]
+    },
+    {
+      "route": "/studio/login",
+      "file": "src/app/studio/login/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/auth-shell",
+        "@/components/studio/login-fields"
+      ]
+    },
+    {
+      "route": "/studio/reset-password",
+      "file": "src/app/studio/reset-password/page.tsx",
+      "kind": "page",
+      "sections": [
+        "password",
+        "confirm"
+      ],
+      "components": [
+        "@/components/studio/auth-shell",
+        "@/components/studio/password-field",
+        "@/components/studio/submit-button"
+      ]
+    },
+    {
+      "route": "/studio/signup",
+      "file": "src/app/studio/signup/page.tsx",
+      "kind": "page",
+      "sections": [
+        "name",
+        "email",
+        "password",
+        "confirm"
+      ],
+      "components": [
+        "@/components/ui/input",
+        "@/components/ui/label",
+        "@/components/studio/auth-shell",
+        "@/components/studio/password-field",
+        "@/components/studio/submit-button"
+      ]
+    },
+    {
+      "route": "/uploads/[...path]",
+      "file": "src/app/uploads/[...path]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    }
+  ],
+  "current": [
+    {
+      "route": "/[collection]",
+      "file": "src/app/[collection]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/about",
+      "file": "src/app/about/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/accessibility",
+      "file": "src/app/accessibility/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/api/inquiry/receipt",
+      "file": "src/app/api/inquiry/receipt/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/inquiry/reference",
+      "file": "src/app/api/inquiry/reference/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/inquiry/schema",
+      "file": "src/app/api/inquiry/schema/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/inquiry/session",
+      "file": "src/app/api/inquiry/session/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/locale",
+      "file": "src/app/api/locale/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/cleanup",
+      "file": "src/app/api/studio/cleanup/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/content",
+      "file": "src/app/api/studio/content/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/editorial-assets/image",
+      "file": "src/app/api/studio/editorial-assets/image/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/editorial-assets",
+      "file": "src/app/api/studio/editorial-assets/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/health-context",
+      "file": "src/app/api/studio/health-context/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/homepage-options",
+      "file": "src/app/api/studio/homepage-options/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/inquiry-handoff",
+      "file": "src/app/api/studio/inquiry-handoff/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/media",
+      "file": "src/app/api/studio/media/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/operations",
+      "file": "src/app/api/studio/operations/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/orders",
+      "file": "src/app/api/studio/orders/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/privacy",
+      "file": "src/app/api/studio/privacy/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/references/[id]",
+      "file": "src/app/api/studio/references/[id]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/revisions",
+      "file": "src/app/api/studio/revisions/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/route-review",
+      "file": "src/app/api/studio/route-review/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/settings",
+      "file": "src/app/api/studio/settings/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/site-settings",
+      "file": "src/app/api/studio/site-settings/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/work-queue",
+      "file": "src/app/api/studio/work-queue/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/api/studio/workspace",
+      "file": "src/app/api/studio/workspace/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/ar/[[...legacyPath]]",
+      "file": "src/app/ar/[[...legacyPath]]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/architects",
+      "file": "src/app/architects/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/blog/[[...legacy]]",
+      "file": "src/app/blog/[[...legacy]]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/care",
+      "file": "src/app/care/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/commission/customize",
+      "file": "src/app/commission/customize/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/shop/shop-shell",
+        "@/components/shop/order-form",
+        "@/components/shop/shop-site"
+      ]
+    },
+    {
+      "route": "/commission",
+      "file": "src/app/commission/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/contact",
+      "file": "src/app/contact/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/custom-order",
+      "file": "src/app/custom-order/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/de/[[...legacyPath]]",
+      "file": "src/app/de/[[...legacyPath]]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/editorial/[id]",
+      "file": "src/app/editorial/[id]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/en/[[...legacyPath]]",
+      "file": "src/app/en/[[...legacyPath]]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/es/[[...legacyPath]]",
+      "file": "src/app/es/[[...legacyPath]]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/faq",
+      "file": "src/app/faq/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/fr/[[...legacyPath]]",
+      "file": "src/app/fr/[[...legacyPath]]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/gu/[[...legacyPath]]",
+      "file": "src/app/gu/[[...legacyPath]]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/hi/[[...legacyPath]]",
+      "file": "src/app/hi/[[...legacyPath]]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/imprint",
+      "file": "src/app/imprint/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/inquiry/received",
+      "file": "src/app/inquiry/received/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/shop/shop-site",
+        "@/components/shop/saved-receipt",
+        "@/components/shop/feedback"
+      ]
+    },
+    {
+      "route": "/ja/[[...legacyPath]]",
+      "file": "src/app/ja/[[...legacyPath]]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/journal/[slug]",
+      "file": "src/app/journal/[slug]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/journal",
+      "file": "src/app/journal/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/shop/reading-loading",
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/large-resin-art",
+      "file": "src/app/large-resin-art/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/materials",
+      "file": "src/app/materials/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/materials-care",
+      "file": "src/app/materials-care/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/our-story",
+      "file": "src/app/our-story/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/p/[slug]",
+      "file": "src/app/p/[slug]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/shop/editorial",
+        "@/components/shop/shop-shell"
+      ]
+    },
+    {
+      "route": "/",
+      "file": "src/app/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/homepage",
+        "@/components/build-state"
+      ]
+    },
+    {
+      "route": "/personalize",
+      "file": "src/app/personalize/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/pieces/[slug]/customize",
+      "file": "src/app/pieces/[slug]/customize/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/pieces/[slug]",
+      "file": "src/app/pieces/[slug]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/portfolio/[slug]",
+      "file": "src/app/portfolio/[slug]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/shop/project-story",
+        "@/components/shop/shop-shell"
+      ]
+    },
+    {
+      "route": "/portfolio",
+      "file": "src/app/portfolio/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/shop/reading-loading",
+        "@/components/shop/public-image",
+        "@/components/shop/shop-shell",
+        "@/components/shop/shop.module.css",
+        "@/components/shop/editorial-reading.module.css"
+      ]
+    },
+    {
+      "route": "/preserve",
+      "file": "src/app/preserve/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/preview/states/[kind]",
+      "file": "src/app/preview/states/[kind]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/preview/states",
+      "file": "src/app/preview/states/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/preview/studio/[...path]",
+      "file": "src/app/preview/studio/[...path]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/preview/studio/content/[id]",
+      "file": "src/app/preview/studio/content/[id]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/preview/studio/content/new",
+      "file": "src/app/preview/studio/content/new/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/preview/studio/content",
+      "file": "src/app/preview/studio/content/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/preview/studio/media",
+      "file": "src/app/preview/studio/media/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/preview/studio/modules/[module]",
+      "file": "src/app/preview/studio/modules/[module]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/preview/studio",
+      "file": "src/app/preview/studio/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/preview/studio/products/[id]/form",
+      "file": "src/app/preview/studio/products/[id]/form/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/preview/studio/products/[id]",
+      "file": "src/app/preview/studio/products/[id]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/preview/studio/products/new",
+      "file": "src/app/preview/studio/products/new/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/preview/studio/products",
+      "file": "src/app/preview/studio/products/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/privacy",
+      "file": "src/app/privacy/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/process",
+      "file": "src/app/process/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/product/[slug]",
+      "file": "src/app/product/[slug]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/returns-cancellations",
+      "file": "src/app/returns-cancellations/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/saved-pieces",
+      "file": "src/app/saved-pieces/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/shop/shop-shell",
+        "@/components/shop/shop-site",
+        "@/components/shop/saved-pieces"
+      ]
+    },
+    {
+      "route": "/search",
+      "file": "src/app/search/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/shipping-delivery",
+      "file": "src/app/shipping-delivery/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/shop/[[...legacy]]",
+      "file": "src/app/shop/[[...legacy]]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/studio/[...path]",
+      "file": "src/app/studio/[...path]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/private-studio-entry"
+      ]
+    },
+    {
+      "route": "/studio/login",
+      "file": "src/app/studio/login/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio-login"
+      ]
+    },
+    {
+      "route": "/studio",
+      "file": "src/app/studio/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/private-studio-entry"
+      ]
+    },
+    {
+      "route": "/studio/preview/frame",
+      "file": "src/app/studio/preview/frame/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/shop/shop-shell"
+      ]
+    },
+    {
+      "route": "/studio/preview",
+      "file": "src/app/studio/preview/page.tsx",
+      "kind": "page",
+      "sections": [
+        "main-content"
+      ],
+      "components": [
+        "@/components/shop/shop-shell",
+        "@/components/studio/saved-preview-frame"
+      ]
+    },
+    {
+      "route": "/studio/preview/states",
+      "file": "src/app/studio/preview/states/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/authoring-states"
+      ]
+    },
+    {
+      "route": "/studio/reference/[id]",
+      "file": "src/app/studio/reference/[id]/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/studio/reference-viewer"
+      ]
+    },
+    {
+      "route": "/terms",
+      "file": "src/app/terms/page.tsx",
+      "kind": "page",
+      "sections": [],
+      "components": [
+        "@/components/rivya/approved-entry"
+      ]
+    },
+    {
+      "route": "/whatsapp-order",
+      "file": "src/app/whatsapp-order/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/workshops",
+      "file": "src/app/workshops/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    },
+    {
+      "route": "/zh/[[...legacyPath]]",
+      "file": "src/app/zh/[[...legacyPath]]/route.ts",
+      "kind": "handler",
+      "sections": [],
+      "components": []
+    }
+  ]
+}
