@@ -34,6 +34,9 @@ const nextConfig: NextConfig = {
     ]}, {source:'/studio/preview/frame',headers:[
       {key:'X-Frame-Options',value:'SAMEORIGIN'},
       {key:'Content-Security-Policy',value:"frame-ancestors 'self'; form-action 'self'"},
+    ]}, {source:'/studio/editorial-order/preview/frame',headers:[
+      {key:'X-Frame-Options',value:'SAMEORIGIN'},
+      {key:'Content-Security-Policy',value:"frame-ancestors 'self'; form-action 'self'"},
     ]}, {source:'/studio/presentation/preview/frame',headers:[
       {key:'X-Frame-Options',value:'SAMEORIGIN'},
       {key:'Content-Security-Policy',value:"frame-ancestors 'self'; form-action 'self'"},

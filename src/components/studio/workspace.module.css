@@ -382,3 +382,5 @@
  .workspace .heading > div { flex-basis:100%; min-width:0; }
  .workspace .heading > button { max-width:100%; }
 }
+
+.orderList{padding-left:28px;max-width:980px}.orderList li{padding:18px 8px;border-bottom:1px solid var(--line,#d9d3c8)}.orderList strong{display:block;margin-bottom:12px}.orderList strong:focus{outline:2px solid #735332;outline-offset:4px}

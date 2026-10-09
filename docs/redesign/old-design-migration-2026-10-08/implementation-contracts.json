@@ -747,7 +747,8 @@
       "overrides": [],
       "implementation": "retained-current-service; M7-detail-and-print-pending",
       "visual": "M10-full-parity-not-run",
-      "evidence": "m6-evidence.json"
+      "evidence": "m6-evidence.json",
+      "m7Disposition": "Protected current inquiry list/detail and explicit /studio/inquiries/[id]/card implemented and verified locally; see m7-evidence.json"
     },
     {
       "oldRoute": "/studio/inquiries",
@@ -764,7 +765,8 @@
       "overrides": [],
       "implementation": "retained-current-service; M7-detail-and-print-pending",
       "visual": "M10-full-parity-not-run",
-      "evidence": "m6-evidence.json"
+      "evidence": "m6-evidence.json",
+      "m7Disposition": "Protected current inquiry list/detail and explicit /studio/inquiries/[id]/card implemented and verified locally; see m7-evidence.json"
     },
     {
       "oldRoute": "/studio/materials",
@@ -1405,7 +1407,8 @@
       "overrides": [],
       "implementation": "retained-current-service; M7-detail-and-print-pending",
       "visual": "M10-full-parity-not-run",
-      "evidence": "m6-evidence.json"
+      "evidence": "m6-evidence.json",
+      "m7Disposition": "Protected current inquiry list/detail and explicit /studio/inquiries/[id]/card implemented and verified locally; see m7-evidence.json"
     },
     {
       "oldRoute": "/studio/login",

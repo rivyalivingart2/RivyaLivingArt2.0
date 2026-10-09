@@ -11,7 +11,7 @@ export function readInquiryView(params:{get:(key:string)=>string|null},followups
 }
 export function inquiryViewParams(view:InquiryView,includeSelection=true){
  const params=new URLSearchParams();
- for(const key of inquiryFilterKeys)if(view[key])params.set(key,view[key]);
+ for(const key of inquiryFilterKeys)if(key!=='q'&&view[key])params.set(key,view[key]);
  params.set('page',String(view.page));params.set('mode',view.mode);params.set('column',view.column);
  if(includeSelection&&view.record)params.set('record',view.record);
  return params;
@@ -22,5 +22,5 @@ export function inquiryViewHref(path:string,view:InquiryView,patch:Partial<Inqui
 }
 
 export function inquiryRequestQuery(view:InquiryView){
- const params=inquiryViewParams(view,false);params.delete('mode');params.delete('column');return params.toString();
+ const params=inquiryViewParams(view,false);params.delete('mode');params.delete('column');if(view.q)params.set('q',view.q);return params.toString();
 }

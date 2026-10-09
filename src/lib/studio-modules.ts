@@ -6,6 +6,7 @@ export const studioModules = [
  {key:'inquiries',segment:'inquiries',label:'Inquiries & orders',group:'Today',aliases:['orders','kanban','enquiries'],adminOnly:false},
  {key:'follow-ups',segment:'follow-ups',label:'Follow-ups due',group:'Today',aliases:[],adminOnly:false},
  {key:'products',segment:'products',label:'Products',group:'Catalogue',aliases:[],adminOnly:false},
+ {key:'editorial-order',segment:'editorial-order',label:'Editorial ordering',group:'Editorial',aliases:[],adminOnly:false},
  {key:'content',segment:'content',label:'All content',group:'Editorial',aliases:[],adminOnly:false},
  {key:'media',segment:'media',label:'Public media',group:'Catalogue',aliases:[],adminOnly:false},
  {key:'site-copy',segment:'site-copy',label:'Site copy',group:'Content',aliases:[],adminOnly:false},
@@ -51,7 +52,7 @@ export function studioRoute(path:readonly string[]) { return path.length===1?stu
 /** Old child views resolve only for supported current records; no old data or ingest is imported. */
 export function studioChildHref(path:readonly string[]){
  const selectedModule=studioModule(path[0]);
- if(!selectedModule||path.length!==2||!['products','journal','portfolio','testimonials','faqs','pages','landing-pages'].includes(selectedModule.key))return null;
+ if(!selectedModule||path.length!==2||!['inquiries','products','journal','portfolio','testimonials','faqs','pages','landing-pages'].includes(selectedModule.key))return null;
  const id=path[1];if(!id||id.length>240||!/^[a-zA-Z0-9:_-]+$/.test(id))return null;
  return studioModuleHref(selectedModule)+'?'+new URLSearchParams(id==='new'?{create:'1'}:{record:id});
 }

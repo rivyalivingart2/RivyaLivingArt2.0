@@ -28,6 +28,7 @@ import s from './workspace.module.css';
 const InquiryBoard=dynamic(()=>import('./inquiry-board').then(m=>m.InquiryBoard),{loading:WorkspaceLoading});
 const CatalogueEditor=dynamic(()=>import('./catalogue-editor').then(m=>m.CatalogueEditor),{loading:WorkspaceLoading});
 const StaffEditor=dynamic(()=>import('./staff-editor').then(m=>m.StaffEditor),{loading:WorkspaceLoading});
+const EditorialOrderEditor=dynamic(()=>import('./editorial-order-editor').then(m=>m.EditorialOrderEditor),{loading:WorkspaceLoading});
 const ContentEditor=dynamic(()=>import('./content-editor').then(m=>m.ContentEditor),{loading:WorkspaceLoading});
 const PresentationEditor=dynamic(()=>import('./presentation-editor').then(m=>m.PresentationEditor),{loading:WorkspaceLoading});
 const MediaLibrary=dynamic(()=>import('./media-library').then(m=>m.MediaLibrary),{loading:WorkspaceLoading});
@@ -45,10 +46,11 @@ const EditorialDesk=dynamic(()=>import('./editorial-desk').then(m=>m.EditorialDe
 const ConditionalWorkspace=dynamic(()=>import('./conditional-workspace').then(m=>m.ConditionalWorkspace),{loading:WorkspaceLoading});
 function WorkspaceLoading(){return <p className={s.status} role="status">Opening this workspace page…</p>;}
 
-const moduleIcons = {'analytics':Activity,'categories':Boxes,'import':Boxes,'exports':Boxes,'research':Boxes,'content-gaps':Boxes,'process':FileText,'materials':FileText,'forms':FileText,'journal':FileText,'portfolio':FileText,'testimonials':FileText,'faqs':FileText,'pages':FileText,'landing-pages':FileText,'seo':FileText,'subscribers':FileText,'content-lab':FileText,overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,sections:LayoutDashboard,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,legacy:FileText,translations:Languages,'route-review':ExternalLink,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
+const moduleIcons = {'editorial-order':FileText,'analytics':Activity,'categories':Boxes,'import':Boxes,'exports':Boxes,'research':Boxes,'content-gaps':Boxes,'process':FileText,'materials':FileText,'forms':FileText,'journal':FileText,'portfolio':FileText,'testimonials':FileText,'faqs':FileText,'pages':FileText,'landing-pages':FileText,'seo':FileText,'subscribers':FileText,'content-lab':FileText,overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,sections:LayoutDashboard,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,legacy:FileText,translations:Languages,'route-review':ExternalLink,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
 const navGroups = ['Today','Catalogue','Content','Editorial','Settings'].map(title=>({title,items:studioModules.filter(module=>module.group===title)}));
 type ModuleContext={staffId?:string|null;admin:boolean;staff:StaffMember[];load:()=>Promise<void>};
 const moduleViews = {
+ 'editorial-order':({admin}:ModuleContext)=><EditorialOrderEditor admin={admin}/>,
  analytics:()=> <AnalyticsPanel/>,
  categories:()=> <CatalogueCategories/>,
  import:()=> <ConditionalWorkspace view="import"/>,

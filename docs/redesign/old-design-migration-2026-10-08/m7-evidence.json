@@ -1,0 +1,79 @@
+{
+  "phase": "M7",
+  "date": "2026-10-09",
+  "status": "local_engineering_verified",
+  "build": true,
+  "typecheck": true,
+  "targetedLint": true,
+  "unitTests": 329,
+  "runtimeChecks": 403,
+  "workflowGroups": 7,
+  "preservation": {
+    "rivya_catalogue": {
+      "preserved": 120,
+      "added": 0
+    },
+    "rivya_content": {
+      "preserved": 92,
+      "added": 1
+    },
+    "rivya_public_media": {
+      "preserved": 131,
+      "added": 0
+    },
+    "rivya_business_settings": {
+      "preserved": 1,
+      "added": 0
+    },
+    "rivya_revisions": {
+      "preserved": 104,
+      "added": 2
+    },
+    "rivya_inquiries": {
+      "preserved": 0,
+      "added": 2
+    },
+    "rivya_studio_orders": {
+      "preserved": 2,
+      "added": 3
+    },
+    "rivya_studio_order_events": {
+      "preserved": 2,
+      "added": 4
+    },
+    "rivya_inquiry_notes": {
+      "preserved": 0,
+      "added": 0
+    },
+    "rivya_references": {
+      "preserved": 0,
+      "added": 0
+    },
+    "rivya_staff": {
+      "preserved": 2,
+      "added": 1
+    },
+    "rivya_privacy_controls": {
+      "preserved": 2,
+      "added": 3
+    },
+    "rivya_erasure_ledger": {
+      "preserved": 0,
+      "added": 0
+    }
+  },
+  "browser": [
+    "Complete scope, keyboard move and draft save",
+    "Saved phone preview revision 4 in a same-origin 390px frame",
+    "Required fields and consent gate; synthetic customer brief saved with receipt",
+    "Receipt refresh; Studio customer search absent from share URL",
+    "Authorized saved card renders exact saved facts"
+  ],
+  "limitations": [
+    "No physical printing or physical-device check",
+    "No human screen-reader or native-language approval",
+    "No external WhatsApp send",
+    "No production writes or release",
+    "M9 production content remains 0/480"
+  ]
+}

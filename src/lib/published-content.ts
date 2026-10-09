@@ -1,3 +1,5 @@
+import {publishedOrders} from './editorial-order-store';
+import {orderedItems} from './editorial-order';
 import 'server-only';
 import {cache} from 'react';
 import {publishedSource} from './published-source';
@@ -10,12 +12,12 @@ import {homepageDependencies} from './homepage-persistence';
 import {compileHomepageSnapshot} from './homepage-dependencies';
 import {compilePageSnapshot} from './page-dependencies';
 import {editorialPublicationIssues,publicEditorial} from './editorial-record-model';
-export type PublishedContentDocument=ContentDocument&{imagePosition?:string;publishedRevision?:number};
+export type PublishedContentDocument=ContentDocument&{imagePosition?:string;publishedRevision?:number;editorialOrders?:Record<string,string[]>};
 /** Reads only durable published revisions. Source candidates never become a public fallback.
  * snapshotRoute retains the complete article/route list while compiling dependencies only for the rendered page.
  */
 export const publishedContent=cache(async(locale:Locale='en',route?:string,snapshotRoute?:string):Promise<PublishedContentDocument[]>=>{
- const [source,dependencies]=await Promise.all([publishedSource(),homepageDependencies()]);
+ const [source,dependencies,orders]=await Promise.all([publishedSource(),homepageDependencies(),publishedOrders()]);
  const images=new Map<string,PublicMedia>();
  for(const row of source.media)if(validPageMedia(row.document)&&row.key===row.document.path)images.set(row.key,row.document);
  const rows=source.content.map(row=>({content_key:row.key,kind:row.kind,route:row.route,published:row.document as ContentDocument,published_version:row.version}));
@@ -40,6 +42,8 @@ export const publishedContent=cache(async(locale:Locale='en',route?:string,snaps
    ...(d.translations?{translations:d.translations}:{}),
    // Public references follow current publication/withdrawal. Private saved previews retain their exact snapshot.
    ...(d.homepage&&d.homeSnapshot?.schemaVersion===1&&(snapshotRoute===undefined||d.route===snapshotRoute)?{homepage:d.homepage,homeSnapshot:compileHomepageSnapshot(d,dependencies)}:{})};
+  publicDocument.editorialOrders=Object.fromEntries(Object.entries(orders).filter(([key])=>key==='related:'+d.id||d.route==='/journal'&&(key.endsWith(':journal')||key.startsWith('category:journal:'))||d.route==='/faq'&&(key==='faq:groups'||key.endsWith(':faq')||key.startsWith('category:faq:'))));
+  if(d.route==='/journal'&&publicDocument.pageSnapshot)publicDocument.pageSnapshot.articles=orderedItems(publicDocument.pageSnapshot.articles,orders['archive:journal']);
   documents.push(publicDocument);
   routes.add(d.route);
  }

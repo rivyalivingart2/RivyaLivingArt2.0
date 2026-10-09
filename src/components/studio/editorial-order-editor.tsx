@@ -1,0 +1,38 @@
+'use client';
+import {useEffect,useRef,useState} from 'react';
+import {moveOrder,type OrderScope,type EditorialOrder} from '@/lib/editorial-order';
+import {studioFetch} from './workspace-api';
+import {useUnsavedWork} from './use-unsaved-work';
+import s from './workspace.module.css';
+type Entry={document:EditorialOrder|null;version:number;publishedVersion:number};
+type Data={entry:Entry;scopes:OrderScope[];entries:{id:string;title:string}[];history:{version:number;operation:string}[];complete:boolean};
+export function EditorialOrderEditor({admin}:{admin:boolean}){
+ const [scope,setScope]=useState('archive:journal'),[data,setData]=useState<Data|null>(null),[ids,setIds]=useState<string[]>([]),[message,setMessage]=useState('Loading the complete ordering scope…'),[busy,setBusy]=useState(false),[latest,setLatest]=useState<Entry|null>(null),[curated,setCurated]=useState(false),[reviewed,setReviewed]=useState(false);
+ const drag=useRef<string|null>(null),flight=useRef(false);
+ const current=data?.scopes.find(s=>s.key===scope),dirty=!!data&&JSON.stringify(ids)!==JSON.stringify(data.entry.document?.ids||current?.defaults||[]);
+ useUnsavedWork(dirty);
+ async function read(key:string){const result=await studioFetch('/api/studio/editorial-order?scope='+encodeURIComponent(key)) as Data;setData(result);setIds(result.entry.document?.ids||result.scopes.find(s=>s.key===key)?.defaults||[]);setLatest(null);setReviewed(false);setMessage('Complete scope loaded. Default order is unchanged until an administrator publishes.');}
+ useEffect(()=>{let active=true;void studioFetch('/api/studio/editorial-order?scope='+encodeURIComponent(scope)).then((result:Data)=>{if(active){setData(result);setIds(result.entry.document?.ids||result.scopes.find(s=>s.key===scope)?.defaults||[]);setMessage('Complete scope loaded. Choose Curated order to arrange records.');}}).catch(e=>{if(active)setMessage(e.message);});return()=>{active=false;};},[scope]);
+ const title=(id:string)=>data?.entries.find(e=>e.id===id)?.title||(id.startsWith('faq-group:')?decodeURIComponent(id.slice(10)):id);
+ const change=(next:string[])=>{setIds(next);setReviewed(false);};
+ function move(id:string,to:number){change(moveOrder(ids,id,to));setMessage(title(id)+' moved to position '+(to+1)+'. Save a draft to preview.');requestAnimationFrame(()=>document.getElementById('order-'+id)?.focus());}
+ async function save(operation:'draft'|'publish'|'restore',restoredFrom?:number){
+  if(!data||flight.current)return;if(operation==='restore'&&dirty&&!window.confirm('Replace this unsaved arrangement with the saved revision as a new draft?'))return;
+  flight.current=true;setBusy(true);
+  try{const result=await studioFetch('/api/studio/editorial-order',{scope,version:data.entry.version,operation,...(operation==='draft'?{ids}:operation==='restore'?{restoredFrom}:{})});setData({...data,entry:result.entry,history:[{version:result.entry.version,operation},...data.history]});setIds(result.entry.document.ids);setLatest(null);setReviewed(false);setMessage(operation==='publish'?'Ordering published. Public pages use this order with current published records.':operation==='restore'?'Restored into a new draft. Review its preview before publishing.':'Draft saved. Open the exact saved preview at both widths.');}
+  catch(e){setMessage((e as Error).message);try{const result=await studioFetch('/api/studio/editorial-order?scope='+encodeURIComponent(scope));setLatest(result.entry);}catch{/* Retain the local arrangement. */}}
+  finally{flight.current=false;setBusy(false);}
+ }
+ const locked=busy||!curated||!data?.complete;
+ const preview='/studio/editorial-order/preview?'+new URLSearchParams({scope,version:String(data?.entry.version||0)});
+ return <section data-unsaved={dirty} data-studio-saving={busy}><header className={s.heading}><div><h1>Editorial ordering</h1><p>Arrange stories, projects, questions and feedback. Each placement has its own saved history.</p></div></header><p className={s.status} role="status">{message}</p><label>Ordering scope<select disabled={busy||dirty} value={scope} onChange={e=>{setData(null);setScope(e.target.value);setCurated(false);setLatest(null);setReviewed(false);}}>{(data?.scopes||[{key:scope,label:scope}]).map(s=><option key={s.key} value={s.key}>{s.label}</option>)}</select></label>
+ {!data?<button onClick={()=>void read(scope).catch(e=>setMessage(e.message))}>Retry loading</button>:<><p>Draft {data.entry.version} · Public {data.entry.publishedVersion||'original default'} · {current?.candidates.length} available records · Complete scope</p><div className={s.actions}><button aria-pressed={!curated} disabled={busy} onClick={()=>setCurated(false)}>View only</button><button aria-pressed={curated} disabled={busy} onClick={()=>setCurated(true)}>Curated order</button><button disabled={locked} onClick={()=>change(current?.defaults||[])}>Use current default order</button><button disabled={busy} onClick={()=>{if(!dirty||window.confirm('Discard your unsaved arrangement and load the latest saved version?'))void read(scope).catch(e=>setMessage(e.message));}}>Reload saved order</button></div>
+ <p>Move controls also work with a keyboard. Reordering is available only in this complete scope; archive searches and page slices cannot change it.</p>
+ <ol className={s.orderList}>{ids.map((id,index)=><li key={id} draggable={!locked} onDragStart={()=>{drag.current=id;}} onDragEnd={()=>{drag.current=null;}} onDragOver={e=>{if(!locked)e.preventDefault();}} onDrop={e=>{e.preventDefault();if(!locked&&drag.current)move(drag.current,index);drag.current=null;}}><strong id={'order-'+id} tabIndex={-1}>{title(id)}</strong><div className={s.actions}><button disabled={locked||index===0} aria-label={'Move '+title(id)+' up'} onClick={()=>move(id,index-1)}>Move up</button><button disabled={locked||index===ids.length-1} aria-label={'Move '+title(id)+' down'} onClick={()=>move(id,index+1)}>Move down</button>{current?.mode==='selection'&&<button disabled={locked} onClick={()=>change(ids.filter(other=>other!==id))}>Remove</button>}</div></li>)}</ol>
+ {current?.mode==='selection'&&<label>Add to this placement<select value="" disabled={locked||ids.length>=current.limit} onChange={e=>{if(e.target.value)change([...ids,e.target.value]);}}><option value="">Choose a published record ({ids.length}/{current.limit})</option>{current.candidates.filter(id=>!ids.includes(id)).map(id=><option key={id} value={id}>{title(id)}</option>)}</select></label>}
+ <div className={s.actions}><button className={s.primary} disabled={locked} onClick={()=>void save('draft')}>Save ordering draft</button>{data.entry.version>0&&<><a href={preview} target="_blank" rel="noreferrer">Preview saved desktop order</a><a href={preview+'&viewport=mobile'} target="_blank" rel="noreferrer">Preview saved phone order</a></>}</div>
+ {admin&&data.entry.document&&<div className={s.panel}><label><input type="checkbox" checked={reviewed} disabled={busy||dirty} onChange={e=>setReviewed(e.target.checked)}/> I reviewed this saved order preview</label><button disabled={busy||dirty||!reviewed} onClick={()=>void save('publish')}>Publish saved ordering</button></div>}
+ {latest&&<aside className={s.panel}><h2>Latest saved revision {latest.version}</h2><p>Your arrangement is retained above. Reload after comparing to start from this revision.</p><ol>{latest.document?.ids.map(id=><li key={id}>{title(id)}</li>)}</ol></aside>}
+ <details className={s.panel}><summary>Ordering history</summary>{data.history.map(h=><p key={h.version}>Revision {h.version} · {h.operation} <button disabled={busy} onClick={()=>void save('restore',h.version)}>Restore revision {h.version} as draft</button></p>)}</details></>}
+ </section>;
+}

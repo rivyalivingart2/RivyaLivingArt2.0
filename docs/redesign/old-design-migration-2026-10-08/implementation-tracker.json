@@ -1,5 +1,5 @@
 {
-  "status": "local_m5_m6_verified_stop_before_m7",
+  "status": "local_m7_verified_m8_authorized",
   "existingContentFrozen": true,
   "oldPageTemplates": 85,
   "oldSectionDefinitions": 74,
@@ -930,9 +930,12 @@
         "M6"
       ],
       "acceptance": "Saved brief, assignee, stage, notes, references and follow-ups render from current records with server authorization.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "local_engineering_verified",
+      "owner": "Codex",
+      "evidence": [
+        "M7-ORDERS-AND-EDITORIAL-ORDERING.md",
+        "m7-evidence.json"
+      ]
     },
     {
       "id": "M7-02",
@@ -943,9 +946,12 @@
         "M6"
       ],
       "acceptance": "Print only authorized saved facts; no unknown care/material/timing guarantees and no private data in screenshots.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "local_engineering_verified",
+      "owner": "Codex",
+      "evidence": [
+        "M7-ORDERS-AND-EDITORIAL-ORDERING.md",
+        "m7-evidence.json"
+      ]
     },
     {
       "id": "M7-03",
@@ -956,9 +962,12 @@
         "M6"
       ],
       "acceptance": "Duplicate-submit/error handling and customer consent preserved; synthetic records never count as genuine inquiry evidence.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "local_engineering_verified",
+      "owner": "Codex",
+      "evidence": [
+        "M7-ORDERS-AND-EDITORIAL-ORDERING.md",
+        "m7-evidence.json"
+      ]
     },
     {
       "id": "M7-04",
@@ -969,9 +978,12 @@
         "M6"
       ],
       "acceptance": "Drag plus Move up/down, stable IDs, curated/default sort distinction, concurrency guard and correct full-list behavior.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "local_engineering_verified",
+      "owner": "Codex",
+      "evidence": [
+        "M7-ORDERS-AND-EDITORIAL-ORDERING.md",
+        "m7-evidence.json"
+      ]
     },
     {
       "id": "M7-05",
@@ -982,9 +994,12 @@
         "M6"
       ],
       "acceptance": "First default equals current order; later editorial layout revisions are explicit; product/gallery order and selections unchanged.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "local_engineering_verified",
+      "owner": "Codex",
+      "evidence": [
+        "M7-ORDERS-AND-EDITORIAL-ORDERING.md",
+        "m7-evidence.json"
+      ]
     },
     {
       "id": "M8-01",
@@ -1262,9 +1277,5 @@
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
   "note": "M0–M6 verified for their recorded engineering scopes. M5/M6 remain local. STOP before M7; permission required. Full parity and human/device acceptance remain M10. Production editorial remains 0/480.",
-  "nextPhaseAuthorization": {
-    "phase": "M7",
-    "state": "requires-explicit-owner-permission",
-    "source": "docs/decisions/2026-10-09-m5-m6.md"
-  }
+  "nextPhaseAuthorization": "M8 authorized; stop before M9; local only"
 }

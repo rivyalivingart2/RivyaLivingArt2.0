@@ -1,0 +1,28 @@
+import assert from 'node:assert/strict';
+import {randomUUID} from 'node:crypto';
+import {writeFileSync} from 'node:fs';
+import {neon} from '@neondatabase/serverless';
+import {registerHooks} from 'node:module';
+import {decodeSavedBrief} from '../../src/lib/saved-brief.ts';
+import {localApi} from './local-api.mjs';
+assert.equal(globalThis.__rivyaMigrationLocalSql,true);
+// Next supplies this compile-time server marker. This isolated Node-only test runs no client code.
+const marker=registerHooks({resolve(specifier,context,next){return specifier==='server-only'?{url:'data:text/javascript,export%20{}',shortCircuit:true}:next(specifier,context);}});
+const {commitOrder}=await import('../../src/lib/order-persistence.ts');
+marker.deregister();
+const sql=neon(process.env.DATABASE_URL),{api}=await localApi();
+const rows=await sql`SELECT * FROM rivya_inquiries WHERE name='M7 isolated QA' ORDER BY created_at LIMIT 1`;
+assert.equal(rows.length,1,'Complete the isolated browser brief first');const row=rows[0],brief=decodeSavedBrief(JSON.parse(JSON.stringify(row)));
+assert.equal(brief.evidence.source,'website');assert.equal(row.message_state,'handoff_ready');assert.ok(row.summary.includes('M7 isolated QA'));
+const detail=await api('/api/studio/workspace?view=inquiry&id='+row.id);assert.equal(detail.inquiry.receipt.reference,row.reference);assert.ok(detail.inquiry.receipt.handoffAllowed);
+await api('/api/studio/orders',{action:'move',id:row.id,version:detail.inquiry.version,status:'CONTACTED',reason:''});
+await api('/api/studio/orders',{action:'move',id:row.id,version:detail.inquiry.version,status:'QUALIFIED',reason:''},409);
+const after=(await sql`SELECT * FROM rivya_inquiries WHERE id=${row.id}::uuid`)[0];assert.deepEqual(after,row,'Stage changes must not alter the saved original inquiry');
+const key=randomUUID(),guest='m7-duplicate-'+randomUUID();await sql`INSERT INTO rivya_inquiry_upload_sessions(request_key,guest_hash) VALUES(${key}::uuid,${guest})`;
+const input={errors:{},snapshot:brief.definition,answers:brief.answers,references:[],route:brief.evidence.route,contact:{...brief.customer,notes:brief.notes},labelAnswers:row.answers,hash:row.payload_hash};
+const results=await Promise.all([commitOrder(input,guest,key,{number:row.message_destination,version:row.destination_config_version}),commitOrder(input,guest,key,{number:row.message_destination,version:row.destination_config_version})]);
+assert.equal(results.filter(Boolean).length,1);
+const count=(await sql`SELECT count(*)::integer AS count FROM rivya_inquiries WHERE request_key=${key}::uuid`)[0].count;assert.equal(count,1);
+assert.equal((await sql`SELECT count(*)::integer AS count FROM rivya_studio_order_events WHERE order_id=${results.find(Boolean)}::uuid`)[0].count,1);
+const report={at:new Date().toISOString(),checks:['Browser-origin saved V2 consent and receipt confirmed','Stage change and stale version rejection preserve original brief','Concurrent duplicate commit creates one inquiry, one initial history event'],completed:true,syntheticOnly:true,messagesSent:0};
+writeFileSync('test-results/old-design-migration/m7-inquiry-check.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

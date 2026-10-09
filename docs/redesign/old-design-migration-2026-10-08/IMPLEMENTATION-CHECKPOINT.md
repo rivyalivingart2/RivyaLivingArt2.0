@@ -1,3 +1,15 @@
+# M7 checkpoint — verified locally; M8 authorized next
+
+9 October 2026. M7 is complete for its recorded engineering scope. Read `M7-ORDERS-AND-EDITORIAL-ORDERING.md` and `m7-evidence.json` in this migration directory. All 13 pre-M7 protected scopes match. Continue with authorized M8, then stop before M9. Local only; no release or production writes.
+
+---
+
+# Current authorization — M7 then M8 locally
+
+9 October 2026. The owner explicitly requested M7 and M8. Complete and verify M7 before M8; stop before M9. No push, release or production writes are authorized. Preserve existing records and test additively only in the existing loopback QA database. Read `docs/decisions/2026-10-09-m7-m8.md`. Earlier stops before M7 are superseded for these two phases.
+
+---
+
 # Implementation checkpoint — 9 October 2026
 
 **Current: M5 and M6 verified locally; STOP before M7.** The owner explicitly authorized these two phases only. M5 is saved at `edd8347`; M6 is the following local checkpoint. Read `M5-PUBLIC-JOURNEYS.md`, `M6-STUDIO-WORKSPACES.md`, `m6-evidence.json`, `m6-studio-dispositions.json` and `PENDING-AFTER-M6.md`. Final M6 checks: build/type/lint, 326 unit, 403 built-server and five workflow groups pass. All 13 original/pre-M6 protected scopes match. M5/M6 are not deployed; new production editorial remains 0/480. M7 requires explicit permission. The following previous checkpoints are historical.

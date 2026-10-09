@@ -1,3 +1,9 @@
+# Current authorization — M7 then M8 locally
+
+9 October 2026. The owner explicitly requested M7 and M8. Complete and verify M7 before M8; stop before M9. No push, release or production writes are authorized. Preserve existing records and test additively only in the existing loopback QA database. Read `docs/decisions/2026-10-09-m7-m8.md`. Earlier stops before M7 are superseded for these two phases.
+
+---
+
 # Current checkpoint — M5 and M6 local work complete; stop before M7
 
 9 October 2026. The owner authorized M5 and M6. Both are verified for their recorded local engineering scope. Read `docs/redesign/old-design-migration-2026-10-08/IMPLEMENTATION-CHECKPOINT.md`, `M6-STUDIO-WORKSPACES.md`, `m6-evidence.json` and `PENDING-AFTER-M6.md`. Final M6: build/type/lint, 326 unit, 403 built-server and five workflow groups pass; all 13 original and pre-M6 protected scopes match. M5/M6 remain local. Stop before M7, with no push/release/production changes until a new applicable owner instruction. New production editorial stays 0/480. Full visual, human, native-reader, physical-device and field checks remain open.
