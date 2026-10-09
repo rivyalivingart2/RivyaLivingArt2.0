@@ -1,6 +1,6 @@
 # Local implementation checkpoint — 9 October 2026
 
-**M0 baseline/isolation, M1 source contracts, M2 shared frames and M3 homepage design workflow are verified for their recorded scopes. M4 is next. M4–M11 remain unfinished.** Continue the existing authorization; do not repeat the planning/release permission discussion.
+**M0–M4 are verified for their recorded local engineering scopes. M5–M11 remain unfinished. M5 has not started and requires the owner's explicit permission.** The latest phase-by-phase instruction supersedes automatic progression through the original plan; see `docs/decisions/2026-10-09-phase-permission-and-media.md`. Release also remains separately unauthorized.
 
 Branch: `codex/old-design-migration`, based on main `afba59f6adf6d3cdcc168f0d784d093a4cb4a294`. Old reference: `2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6`. Both remote main revisions and their READY production deployments were verified read-only. The original checkout was on main with only the cancelled audit untracked. That file was not copied, staged, changed or deleted.
 
@@ -33,9 +33,15 @@ The final candidate passes a production build/type validation, 298 unit tests, 2
 
 The separate presentation record, additive schema, `/studio/sections` editor and exact saved desktop/mobile preview now work through current authentication and public rendering. All 17 workflow checks and 301 unit tests pass, with production build/type validation and changed-source lint. All 13 protected local scopes still match. See `M3-PRESENTATION-WORKFLOW.md` and `m3-evidence.json` for the failure simulations, iframe fix, recovery and limits. The new schema exists only in isolated local QA. The original records and live database are unchanged.
 
-## Earliest unfinished work
+## Completed M4 local engineering scope
 
-Start M4-01: expand the accepted presentation pattern to all 18 homepage sections in source order. Furniture and Rooms stay distinct/default-off; Portfolio concepts and fictional Testimonial samples require their explicit labels; workshop/printing business claims remain evidence-gated. Then complete M4 story/process/commission/contact structures and shared section editing before the dependent M5–M10 phases. Existing wording, selections and stored media usage remain frozen. Unbound source slots are not permission to invent business facts.
+Read `M4-PAGE-TEMPLATES.md`, `m4-evidence.json` and `m4-media-evidence.json`. All 18 home slots, seven current page designs, a private seven-slot workshop structure, shared page editing and labelled material film are implemented. Studio saves exact snapshots, previews pages/locale/mobile frames, publishes deliberately, verifies actual public revision and restores earlier layouts as new drafts. Commission filtering retains the saved preview identity. Video waits for Play; fresh sessions verify format recovery and a still-image fallback.
+
+The final candidate passes 311 unit tests, 42 workflow checks, production build/type validation, changed-source lint and scoped screenshot review. All 13 original protected local scopes match M0. These are engineering checks on source fixtures, not full 85-template visual parity or human acceptance. Furniture/Rooms remain distinct/default-off. Making/material bindings and conditional service templates do not invent factual evidence. Public workshop availability remains unconfirmed and its route stays 410.
+
+## Earliest unfinished work — permission required
+
+M5 is next in dependency order. Do not start it until the owner explicitly authorizes M5. Preserve this checkout, the dedicated loopback database and presentation history; do not restart M0 or re-seed records. After approval, continue the five M5 tickets in the existing combined plan and registers. Require fresh permission again at every subsequent phase boundary.
 
 ## Content and external evidence
 
@@ -46,6 +52,6 @@ Start M4-01: expand the accepted presentation pattern to all 18 homepage section
 | Testimonials | 120 labelled fictional samples or evidenced feedback | 0 | 0 | 0 |
 | FAQs | 120 | 0 | 0 | 0 |
 
-The owner explicitly selected labelled concepts and fictional samples on 9 October; see `docs/decisions/2026-10-09-labelled-editorial-content.md`. The original genuine-only plan is superseded for these new clearly labelled entries. Matching new copies are requested in Drive and Studio; no files or new records have yet been delivered. No genuine source pack or consent was inferred from intake slots or Drive images. Native-reader, human screen-reader, physical-phone, field-performance and genuine-inquiry checks remain open. Do not count source fixtures or assistant review as that evidence.
+The owner explicitly selected labelled concepts and fictional samples on 9 October; see `docs/decisions/2026-10-09-labelled-editorial-content.md`. The original genuine-only plan is superseded for these new clearly labelled entries. Matching new copies are requested in Drive and Studio. M4 delivered one MP4 derivative to Drive and verified matching existing WebM/poster files; the local Studio presentation stores their metadata and references. That one material film is not an editorial-production entry. All 480 requested new content records remain outstanding. No genuine source pack or consent was inferred from intake slots or Drive images. Native-reader, human screen-reader, physical-phone, field-performance and genuine-inquiry checks remain open.
 
 Release state: local only. No push, PR, merge, deployment, production data migration, product transfer, scraper run, customer message or production content publication.

@@ -2,22 +2,23 @@ import {studioSession} from '@/lib/studio-auth';
 import {studioDb} from '@/lib/studio-db';
 import {originAllowed,smallJson} from '@/lib/request-security';
 import {revalidatePath} from 'next/cache';
-import {capturePresentation,presentationEntry,presentationHistory,savedPresentation} from '@/lib/presentation-store';
+import {capturePresentation,presentationEntry,presentationHistory,presentationPageSources,savedPresentation} from '@/lib/presentation-store';
+import {designPages} from '@/lib/page-design-model';
 import {homePresentationId,validPresentationChange} from '@/lib/presentation-model';
 export const dynamic='force-dynamic';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
 export async function GET(){
  try{
   if(!await studioSession())return json({error:'Sign in to continue.'},401);
-  const [entry,history]=await Promise.all([presentationEntry(),presentationHistory()]);
-  return json({entry,history});
+  const [entry,history,pageSources]=await Promise.all([presentationEntry(),presentationHistory(),presentationPageSources()]);
+  return json({entry,history,pageSources});
  }catch{return json({error:'Homepage design is temporarily unavailable. Your saved content is unchanged.'},503);}
 }
 export async function POST(request:Request){
  if(!originAllowed(request))return json({error:'Request not allowed.'},403);
  try{
   const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);
-  let body;try{body=await smallJson(request,4000);}catch{return json({error:'Choose a valid design change.'},400);}
+  let body;try{body=await smallJson(request,24000);}catch{return json({error:'Choose a valid design change.'},400);}
   if(!validPresentationChange(body))return json({error:'Choose a valid design change.'},400);
   const publish=body.operation==='publish';
   if(publish&&session.role!=='admin')return json({error:'Administrator access is required to publish.'},403);
@@ -27,7 +28,8 @@ export async function POST(request:Request){
   if(body.operation==='restore'&&!restored)return json({error:'The selected revision is unavailable.'},404);
   const document=publish?entry.document:await capturePresentation(body.operation==='restore'?restored!.layout:body.layout!);
   if(!document)return json({error:'Save and preview a design before publishing.'},409);
-  if(publish&&document.home.homeSnapshot!.issues.length)return json({error:'The saved preview has unavailable references. Save again after resolving them.',issues:document.home.homeSnapshot!.issues},409);
+  const issues=[...document.home.homeSnapshot!.issues,...document.reference?.issues||[]];
+  if(publish&&issues.length)return json({error:'The saved preview has unavailable references. Save again after resolving them.',issues},409);
   const dependencies=publish?document.dependencies:[];
   // All successful changes and their immutable history share a statement. Publication
   // also checks the captured home/media/product fingerprints in that same snapshot.
@@ -56,7 +58,7 @@ export async function POST(request:Request){
    FROM (SELECT * FROM created UNION ALL SELECT * FROM changed) saved
   ) SELECT version FROM created UNION ALL SELECT version FROM changed`;
   if(!rows.length)return json({error:'A newer design or changed published reference exists. Compare, save and preview again.'},409);
-  let refreshPending=false;if(publish){try{revalidatePath('/');}catch{refreshPending=true;}}
+  let refreshPending=false;if(publish){try{for(const route of ['/',...designPages.map(p=>p.route)])revalidatePath(route);}catch{refreshPending=true;}}
   return json({saved:true,entry:{document,version:body.version+1,publishedVersion:publish?body.version+1:entry.publishedVersion,publishedLayout:publish?document.layout:entry.publishedLayout},refreshPending});
  }catch{return json({error:'Design was not saved. Your edits remain here. Check the saved revision before retrying.'},503);}
 }

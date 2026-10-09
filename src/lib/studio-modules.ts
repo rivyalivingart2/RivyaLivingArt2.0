@@ -9,7 +9,7 @@ export const studioModules = [
  {key:'content',segment:'content',label:'Pages & journal',group:'Editorial',aliases:['pages','journal'],adminOnly:false},
  {key:'media',segment:'media',label:'Public media',group:'Catalogue',aliases:[],adminOnly:false},
  {key:'site-copy',segment:'site-copy',label:'Site copy',group:'Content',aliases:[],adminOnly:false},
- {key:'sections',segment:'sections',label:'Homepage design',group:'Content',aliases:[],adminOnly:false},
+ {key:'sections',segment:'sections',label:'Page design',group:'Content',aliases:[],adminOnly:false},
  {key:'site-images',segment:'site-images',label:'Site images',group:'Content',aliases:[],adminOnly:false},
  {key:'content-health',segment:'content-health',label:'Content health',group:'Settings',aliases:[],adminOnly:false},
  {key:'site-settings',segment:'navigation',label:'Navigation & languages',group:'Content',aliases:[],adminOnly:true},

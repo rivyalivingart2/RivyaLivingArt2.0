@@ -739,9 +739,9 @@
         "M3"
       ],
       "acceptance": "Furniture and Rooms stay distinct; separate Testimonials, Workshops and Printing templates have explicit evidence conditions.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m4-evidence.json; M4-PAGE-TEMPLATES.md; conditional factual and human gates remain open"
     },
     {
       "id": "M4-02",
@@ -751,9 +751,9 @@
         "M3"
       ],
       "acceptance": "Current copy and stored image usage preserved; generated people are never represented as actual staff.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m4-evidence.json; M4-PAGE-TEMPLATES.md; conditional factual and human gates remain open"
     },
     {
       "id": "M4-03",
@@ -763,9 +763,9 @@
         "M3"
       ],
       "acceptance": "Reuse current stage wording and chronology; unknown process claims remain unpublished.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m4-evidence.json; M4-PAGE-TEMPLATES.md; conditional factual and human gates remain open"
     },
     {
       "id": "M4-04",
@@ -775,9 +775,9 @@
         "M3"
       ],
       "acceptance": "Current form contracts and factual channels remain authoritative; filter discovery remains easy on phones.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m4-evidence.json; M4-PAGE-TEMPLATES.md; conditional factual and human gates remain open"
     },
     {
       "id": "M4-05",
@@ -787,9 +787,9 @@
         "M3"
       ],
       "acceptance": "All templates have Studio ownership and preview; no invented dates, services, pricing or availability becomes public.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m4-evidence.json; M4-PAGE-TEMPLATES.md; conditional factual and human gates remain open"
     },
     {
       "id": "M5-01",
@@ -1261,5 +1261,10 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "M0–M3 verified for recorded local engineering scope. Earliest unfinished phase M4. New content 0/480; Drive deliveries 0; no release or production writes."
+  "note": "M0–M4 verified for recorded local engineering scope. M5 not started and requires explicit owner permission. M5–M11 unfinished. New content 0/480; one MP4 copied to Drive and verified, two existing matching media files verified; no production writes or release.",
+  "nextPhaseAuthorization": {
+    "phase": "M5",
+    "state": "awaiting-owner-permission",
+    "source": "docs/decisions/2026-10-09-phase-permission-and-media.md"
+  }
 }

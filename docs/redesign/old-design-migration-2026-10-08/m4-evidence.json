@@ -1,0 +1,350 @@
+{
+  "phase": "M4",
+  "at": "2026-10-09T07:02:59.593Z",
+  "status": "verified-for-stated-local-engineering-scope",
+  "candidate": {
+    "base": "e89002d78109bffe0791508713a855af115e171b",
+    "applicationSha256": "05d8a9e8d61b3042c738bd97e1b5d673d89e00445a1a8828317ed5f210157f5f"
+  },
+  "workflows": [
+    {
+      "at": "2026-10-09T06:42:26.116Z",
+      "candidate": {
+        "base": "e89002d78109bffe0791508713a855af115e171b",
+        "applicationSha256": "05d8a9e8d61b3042c738bd97e1b5d673d89e00445a1a8828317ed5f210157f5f"
+      },
+      "scope": "Compiled loopback app, source fixtures and new presentation record only",
+      "completed": true,
+      "human": false,
+      "physicalDevice": false,
+      "checks": [
+        {
+          "name": "Anonymous reads/writes return 401 and cross-origin writes return 403",
+          "passed": true
+        },
+        {
+          "name": "Authenticated editor cannot publish through the API",
+          "passed": true
+        },
+        {
+          "name": "Client content/snapshot injection and unsaved publish payloads are rejected",
+          "passed": true
+        },
+        {
+          "name": "Editor saves an additive design; stale revision returns 409 without changes",
+          "passed": true
+        },
+        {
+          "name": "Saved preview uses the real shared renderer with unchanged heading and product selection order",
+          "passed": true
+        },
+        {
+          "name": "Saved composition has one H1 and no body overflow at 320, 390, 800 and 1440 px",
+          "passed": true
+        },
+        {
+          "name": "Later drafts do not change historical preview or public layout; explicit Gujarati preview uses captured review state",
+          "passed": true
+        },
+        {
+          "name": "Mobile preview loads the exact saved revision in an actual 390 px iframe",
+          "passed": true
+        },
+        {
+          "name": "Simulated missing saved media reference prevents publication atomically",
+          "passed": true
+        },
+        {
+          "name": "Simulated changed homepage fingerprint prevents publishing a stale captured design",
+          "passed": true
+        },
+        {
+          "name": "History failure rolls back both draft and publication writes without changing the saved row",
+          "passed": true
+        },
+        {
+          "name": "Cancelled unsaved Studio navigation retains all design choices",
+          "passed": true
+        },
+        {
+          "name": "Lost post-save response keeps edits; latest comparison safely reconciles the committed revision",
+          "passed": true
+        },
+        {
+          "name": "Browser saves and previews the exact revision, publishes it, and confirms actual public revision and unchanged selections",
+          "passed": true,
+          "saved": 43,
+          "published": 44
+        },
+        {
+          "name": "Revision recovery creates a new draft while leaving the public composition unchanged",
+          "passed": true
+        },
+        {
+          "name": "History list is bounded and Studio editor fits a 390 px viewport",
+          "passed": true
+        },
+        {
+          "name": "No browser runtime errors or protected content changes",
+          "passed": true
+        }
+      ],
+      "browserErrors": [],
+      "final": {
+        "version": 45,
+        "publishedVersion": 44
+      }
+    },
+    {
+      "at": "2026-10-09T06:42:57.419Z",
+      "candidate": {
+        "base": "e89002d78109bffe0791508713a855af115e171b",
+        "applicationSha256": "05d8a9e8d61b3042c738bd97e1b5d673d89e00445a1a8828317ed5f210157f5f"
+      },
+      "scope": "M4 homepage section adapter only",
+      "completed": true,
+      "checks": [
+        {
+          "name": "Studio exposes all 18 source slots with fixed hero and separate default-off furniture/room controls",
+          "passed": true
+        },
+        {
+          "name": "Saved preview follows source order with exact current text/selections; unbound sections are explained privately",
+          "passed": true,
+          "rendered": [
+            "pour",
+            "manifesto",
+            "pieces",
+            "large-format",
+            "material",
+            "collections",
+            "maker",
+            "bespoke",
+            "process",
+            "why",
+            "closing"
+          ]
+        },
+        {
+          "name": "Changing section visibility leaves the previous saved preview and public design unchanged",
+          "passed": true
+        },
+        {
+          "name": "Studio publishes the section composition; public readback matches and omits private dependency explanations",
+          "passed": true
+        },
+        {
+          "name": "Actual public homepage has one H1 and no overflow at four viewports",
+          "passed": true
+        },
+        {
+          "name": "Progress links resolve only to visible sections and work with keyboard activation",
+          "passed": true
+        },
+        {
+          "name": "Section editor fits mobile and the browser reports no runtime errors",
+          "passed": true
+        }
+      ],
+      "browserErrors": [],
+      "human": false,
+      "physicalDevice": false
+    },
+    {
+      "at": "2026-10-09T06:43:21.880Z",
+      "candidate": {
+        "base": "e89002d78109bffe0791508713a855af115e171b",
+        "applicationSha256": "05d8a9e8d61b3042c738bd97e1b5d673d89e00445a1a8828317ed5f210157f5f"
+      },
+      "scope": "Private saved presentation fixture only; not new editorial records, business approval or public content",
+      "completed": true,
+      "checks": [
+        {
+          "name": "All 18 source slots render in order with explicit synthetic dependencies and one H1",
+          "passed": true
+        },
+        {
+          "name": "Concept and fictional-sample disclosures are visible; fictional attribution and review schema are absent",
+          "passed": true
+        },
+        {
+          "name": "Six collection doors expand on keyboard focus without changing destination or source categories",
+          "passed": true
+        },
+        {
+          "name": "Conditional layouts retain visible disclosures and no body overflow at 390 px",
+          "passed": true
+        },
+        {
+          "name": "Synthetic offering and editorial fixtures are never published; actual public revision stays unchanged",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-09T06:43:27.947Z",
+      "candidate": {
+        "base": "e89002d78109bffe0791508713a855af115e171b",
+        "applicationSha256": "05d8a9e8d61b3042c738bd97e1b5d673d89e00445a1a8828317ed5f210157f5f"
+      },
+      "scope": "M4 seven current pages, saved snapshots and additive film; synthetic bindings remain private",
+      "completed": true,
+      "checks": [
+        {
+          "name": "Studio saves all seven page layouts and exact image/video metadata in a separate database revision",
+          "passed": true
+        },
+        {
+          "name": "Seven-slot workshop draft previews its missing facts privately; the public route remains 410 with no booking",
+          "passed": true
+        },
+        {
+          "name": "Seven exact saved pages retain all enabled source paragraphs and anchors, one H1 and no overflow at four widths",
+          "passed": true
+        },
+        {
+          "name": "Materials accordion opens through keyboard activation with source wording and native expanded state",
+          "passed": true
+        },
+        {
+          "name": "Commission filters work inside the real mobile iframe and keep the exact saved page/revision",
+          "passed": true
+        },
+        {
+          "name": "Gujarati preview uses captured reviewed page translation without changing English source",
+          "passed": true
+        },
+        {
+          "name": "Historical page layout stays fixed; customer-to-making binding is blocked from publication; restoration refreshes references",
+          "passed": true
+        },
+        {
+          "name": "Studio publication reads back on all eight public pages and preserves the original contact links",
+          "passed": true
+        },
+        {
+          "name": "Film waits for Play, decodes real media, supports pause/native controls and fits mobile with reduced motion",
+          "passed": true,
+          "media": {
+            "width": 1280,
+            "height": 720,
+            "duration": 8.042,
+            "muted": true,
+            "controls": true
+          }
+        },
+        {
+          "name": "MP4 fallback plays when WebM is unavailable",
+          "passed": true
+        },
+        {
+          "name": "Both video failures retain the still image and a clear unavailable state",
+          "passed": true
+        },
+        {
+          "name": "All ten making and four material bindings render in a private synthetic preview, never as current public claims",
+          "passed": true
+        },
+        {
+          "name": "No browser runtime errors",
+          "passed": true
+        }
+      ],
+      "browserErrors": [],
+      "human": false,
+      "physicalDevice": false
+    }
+  ],
+  "validation": {
+    "unitTests": 311,
+    "workflowChecks": 42,
+    "browserErrors": 0,
+    "productionBuild": "passed",
+    "typeValidation": "passed",
+    "changedSourceLint": "passed",
+    "diffCheck": "passed"
+  },
+  "protectedComparison": {
+    "target": "dedicated loopback QA",
+    "all13ScopesUnchanged": true,
+    "summary": {
+      "rivya_catalogue": {
+        "count": 120,
+        "digest": "0f7bbce050fe4c830c32a28c351cb1e090788b9a58bba6737c5a581b7b323e58"
+      },
+      "rivya_content": {
+        "count": 56,
+        "digest": "e7cdfa7f700a18dbde8d53cbe3d0798788f2ea033140ec3fab94d132ffef2d0d"
+      },
+      "rivya_public_media": {
+        "count": 131,
+        "digest": "a3a399464c13206cab40df659efe4ea921835f2f01bc97ed7ce6651566e9206a"
+      },
+      "rivya_business_settings": {
+        "count": 1,
+        "digest": "03be771ace76ef6f0ec49e09b90a1d25910251d9511cd1ae25ac53f302004fb6"
+      },
+      "rivya_revisions": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_inquiries": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_studio_orders": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_studio_order_events": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_inquiry_notes": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_references": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_staff": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_privacy_controls": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_erasure_ledger": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  },
+  "mediaEvidence": "m4-media-evidence.json",
+  "visualReview": {
+    "reviewer": "assistant",
+    "reviewed": [
+      "Homepage desktop/mobile",
+      "Concept and fictional-feedback labels",
+      "Our story mobile full-image opening",
+      "Process desktop full-image opening",
+      "Material film desktop/mobile"
+    ],
+    "actualHumanAcceptance": false
+  },
+  "phaseBoundary": {
+    "next": "M5",
+    "authorization": "required from owner; not yet received",
+    "source": "docs/decisions/2026-10-09-phase-permission-and-media.md"
+  },
+  "limits": [
+    "Source fixtures are local QA only; no production data mutation or deployment.",
+    "The 18-slot full-content test and ten-making/four-material test use private synthetic presentation revisions, not new public editorial records or factual approval.",
+    "Workshop structure remains private and unconfirmed; its public route remains 410. Printing remains conditional with no invented current offering.",
+    "Unavailable real maker/studio facts, actual making claims and structured material evidence remain unbound.",
+    "Full 85-template parity, all long locales, human screen-reader, native-reader, physical-device, field performance and genuine-inquiry acceptance remain open for their later gates.",
+    "New editorial production remains 0/480. One material film and poster do not count toward those targets."
+  ]
+}

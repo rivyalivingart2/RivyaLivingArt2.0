@@ -7,9 +7,9 @@ import {bodyLinks} from './editorial-body';
 export type PageSnapshot=HomeSnapshot&{availableRoutes?:string[];image?:{path:string;alt:string;position:string}};
 export function sectionHrefs(d:ContentDocument){return d.sections.filter(s=>s.enabled!==false).flatMap(s=>[...bodyLinks(s.body),...(s.policyHref?[s.policyHref]:[]),...(s.action?[s.action.href]:[])]);}
 /** Reuse the same public projection and dependency gate as home. Older revisions stay readable. */
-export function compilePageSnapshot(document:ContentDocument,source:DependencySource):PageSnapshot{
+export function compilePageSnapshot(document:ContentDocument,source:DependencySource,options:{includeCatalogue?:boolean}={}):PageSnapshot{
  const tier=discoveryTier(document.route);
- const related=isDiscoveryRoute(document.route)?source.products.filter(r=>!tier||(r.document as ShopProduct).tier===tier).map(r=>r.key):document.relatedProductIds||[];const coverPath=document.headerImage?.path||document.image;
+ const related=isDiscoveryRoute(document.route)&&options.includeCatalogue!==false?source.products.filter(r=>!tier||(r.document as ShopProduct).tier===tier).map(r=>r.key):document.relatedProductIds||[];const coverPath=document.headerImage?.path||document.image;
  const recommendations=source.content.map(r=>r.document as ContentDocument).filter(d=>d?.kind==='article'&&d.id!==document.id).sort((a,b)=>Number(b.eyebrow===document.eyebrow)-Number(a.eyebrow===document.eyebrow)).slice(0,3);
  const visible=document.sections.filter(s=>s.enabled!==false);
  const actions=sectionHrefs(document).filter(h=>h.split('#')[0]!==document.route).map(href=>({label:href,href}));

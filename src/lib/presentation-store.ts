@@ -4,10 +4,14 @@ import {baselineContent,validContent} from './content-model';
 import {compileHomepageSnapshot} from './homepage-dependencies';
 import {publishedSource} from './published-source';
 import {homeId} from './homepage-model';
+import {compileHomeReference} from './home-reference-dependencies';
+import {pageDesignSource,type PageDesignSource} from './page-design-model';
+import {materialFilm,validSavedFilm} from './presentation-media';
 import {homePresentationId,validHomepageLayout,type HomepageLayout,type PresentationDocument,type PresentationEntry,type PresentationRevision} from './presentation-model';
 
 export function validPresentationDocument(d:PresentationDocument|undefined|null):d is PresentationDocument{
- return !!d&&d.schemaVersion===1&&d.id===homePresentationId&&validHomepageLayout(d.layout)&&d.home?.id===homeId&&validContent(d.home,baselineContent.find(b=>b.id===homeId))&&!!d.home.homeSnapshot?.products&&Array.isArray(d.home.homeSnapshot.issues)&&Array.isArray(d.dependencies)&&Number.isSafeInteger(d.homeVersion)&&d.homeVersion>0;
+ if(d&&(d.layout?.film||Object.values(d.layout?.pages||{}).some(p=>p?.film))&&(!Array.isArray(d.media)||d.media.length!==1||!validSavedFilm(d.media[0])))return false;
+ return !!d&&d.schemaVersion===1&&d.id===homePresentationId&&validHomepageLayout(d.layout)&&d.home?.id===homeId&&validContent(d.home,baselineContent.find(b=>b.id===homeId))&&!!d.home.homeSnapshot?.products&&Array.isArray(d.home.homeSnapshot.issues)&&Array.isArray(d.dependencies)&&Number.isSafeInteger(d.homeVersion)&&d.homeVersion>0&&(!(d.layout.composition||d.layout.pages)||(d.reference?.schemaVersion===1&&Array.isArray(d.reference.pages)&&Array.isArray(d.reference.dependencies)&&Array.isArray(d.reference.issues)));
 }
 /** Capture one coherent current publication, never a draft or a client snapshot. */
 export async function capturePresentation(layout:HomepageLayout):Promise<PresentationDocument>{
@@ -16,7 +20,11 @@ export async function capturePresentation(layout:HomepageLayout):Promise<Present
  const document=home as PresentationDocument['home'];
  if(!document.homepage)throw new Error('Homepage structure is unavailable');
  const snapshot=compileHomepageSnapshot(document,{...source,content:source.content.filter(r=>r.key!==homeId)});
- return {schemaVersion:1,id:homePresentationId,layout,home:{...document,homeSnapshot:snapshot},homeVersion:row.version,dependencies:[...snapshot.dependencies,{kind:'content',key:homeId,version:row.version,fingerprint:row.fingerprint}]};
+ const reference=layout.composition||layout.pages?compileHomeReference(source,layout.pages):undefined;
+ const dependencies=[...snapshot.dependencies,{kind:'content' as const,key:homeId,version:row.version,fingerprint:row.fingerprint}];
+ for(const dep of reference?.dependencies||[])if(!dependencies.some(other=>other.kind===dep.kind&&other.key===dep.key))dependencies.push(dep);
+ const media=layout.film||Object.values(layout.pages||{}).some(p=>p.film)?[structuredClone(materialFilm)]:undefined;
+ return {schemaVersion:1,id:homePresentationId,layout,home:{...document,homeSnapshot:snapshot},homeVersion:row.version,dependencies,...(reference?{reference}:{}),...(media?{media}:{})};
 }
 export async function presentationEntry():Promise<PresentationEntry>{
  const rows=await studioDb()`SELECT draft,version,published_version,published->'layout' AS published_layout FROM rivya_presentations WHERE presentation_key=${homePresentationId}`;
@@ -27,6 +35,15 @@ export async function presentationEntry():Promise<PresentationEntry>{
 export async function presentationHistory():Promise<PresentationRevision[]>{
  const rows=await studioDb()`SELECT version,operation,created_at,document->'layout' AS layout FROM rivya_presentation_revisions WHERE presentation_key=${homePresentationId} ORDER BY version DESC LIMIT 30`;
  return rows.map(r=>({version:Number(r.version),operation:r.operation,createdAt:r.created_at,layout:r.layout}));
+}
+/** Bounded labels for the authenticated designer; saved previews use captured documents. */
+export async function presentationPageSources():Promise<PageDesignSource[]>{
+ const source=await publishedSource();
+ return source.content.flatMap(row=>{
+  if(!validContent(row.document,baselineContent.find(b=>b.id===row.key)))return [];
+  const summary=pageDesignSource(row.document);
+  return summary?[summary]:[];
+ });
 }
 export async function savedPresentation(version:number):Promise<PresentationDocument|null>{
  if(!Number.isSafeInteger(version)||version<1)return null;

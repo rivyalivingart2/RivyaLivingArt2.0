@@ -1,0 +1,24 @@
+'use client';
+import {defaultPageDesign,designPages,eligibleSlotSections,pageSlotKeys,type DesignPageRoute,type PageDesign,type PageDesigns,type PageDesignSource} from '@/lib/page-design-model';
+import s from './workspace.module.css';
+
+export function PageDesignControls({value,sources,onChange}:{value:PageDesigns|undefined;sources:PageDesignSource[];onChange:(next:PageDesigns)=>void}){
+ const update=(route:DesignPageRoute,design:PageDesign)=>onChange({...value,[route]:design});
+ return <section className={s.panel}><h2>Story and journey pages</h2><p>Choose a layout for each page. Its published wording, images, crops, customer steps and forms retain their current owners.</p>
+  {designPages.map(({route,label})=>{
+   const design=value?.[route],source=sources.find(p=>p.route===route),visible=source?.sections.filter(b=>b.enabled!==false)||[],slots=pageSlotKeys(route),eligible=source?eligibleSlotSections(source):[];
+   return <details key={route} className={s.panel} data-page-design={route}><summary>{label} · {design?'Reference layout':'Original layout'}</summary>
+    <label><span><input type="checkbox" checked={!!design} disabled={!source} onChange={e=>{if(e.target.checked)update(route,defaultPageDesign(route));else{const next={...value};delete next[route];onChange(next);}}}/> Use reference layout for {label}</span></label>
+    {!source&&<p>This page is not currently published.</p>}
+    {design&&<><div className={s.grid}>
+     <label>Opening layout<select value={design.hero} onChange={e=>update(route,{...design,hero:e.target.value as PageDesign['hero']})}><option value="split">Split image and heading</option><option value="full">Full image opening</option></select></label>
+     {['/our-story','/process','/materials-care'].includes(route)&&<label>Material film<select value={design.film||''} onChange={e=>{const next={...design};if(e.target.value)next.film='resin-pour';else delete next.film;update(route,next);}}><option value="">Still images only</option><option value="resin-pour">Resin in motion · with still image</option></select></label>}<label>Chapter layout<select value={design.chapters} onChange={e=>update(route,{...design,chapters:e.target.value as PageDesign['chapters']})}><option value="numbered">Numbered editorial chapters</option><option value="timeline">Sticky process stages</option><option value="accordion">Expandable material chapters</option><option value="alternating">Alternating image chapters</option></select></label>
+    </div>
+    {['/our-story','/process'].includes(route)&&<fieldset><legend>Shared page sections</legend>{(route==='/our-story'?['process','materials'] as const:['materials'] as const).map(key=><label key={key}><span><input type="checkbox" checked={design.shared.includes(key)} onChange={e=>update(route,{...design,shared:e.target.checked?[...design.shared,key]:design.shared.filter(k=>k!==key)})}/> Include current {key==='process'?'process':'materials and care'} chapters</span></label>)}</fieldset>}
+    <details><summary>Individual chapter styles</summary><p>These choices keep every enabled chapter in its existing order. Image layouts use the chapter’s own saved image.</p>{visible.filter(b=>b.id!=='browse').map(b=><label key={b.id}>{b.heading}<select value={design.styles[b.id]||''} onChange={e=>{const styles={...design.styles};if(e.target.value)styles[b.id]=e.target.value as PageDesign['styles'][string];else delete styles[b.id];update(route,{...design,styles});}}><option value="">Follow chapter layout</option><option value="prose">Editorial text</option><option value="split">Image on the left</option><option value="reverse">Image on the right</option><option value="statement">Centered statement</option></select></label>)}</details>
+    {slots.length>0&&<details><summary>Source section bindings · {Object.keys(design.bindings||{}).length}/{slots.length}</summary><p>{route==='/process'?'The ten old making-stage slots require published making chapters. Customer steps cannot fill them.':route==='/materials-care'?'The four old material slots require published structured material entries. General care guidance stays in its original chapters.':'Bind existing published text to the maker, craft and studio roles only when it accurately describes that role. No names, portraits or business facts are added by this layout.'}</p>{slots.map(slot=><label key={slot}>{slot.replaceAll('-',' ')}<select value={design.bindings?.[slot]||''} onChange={e=>{const bindings={...design.bindings};if(e.target.value)bindings[slot]=e.target.value;else delete bindings[slot];update(route,{...design,bindings});}}><option value="">Unbound · no additional claim</option>{eligible.map(b=><option key={b.id} value={b.id} disabled={Object.entries(design.bindings||{}).some(([key,id])=>key!==slot&&id===b.id)}>{b.heading}</option>)}</select></label>)}</details>}
+    </>}
+   </details>;
+  })}
+ </section>;
+}
