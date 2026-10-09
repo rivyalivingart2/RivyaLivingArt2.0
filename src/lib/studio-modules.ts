@@ -2,22 +2,22 @@
  * Authentication and API permissions remain server-owned.
  */
 export const studioModules = [
- {key:'overview',segment:'',label:'Overview',group:'Work',aliases:[],adminOnly:false},
- {key:'inquiries',segment:'inquiries',label:'Inquiries & orders',group:'Work',aliases:['orders','kanban','enquiries'],adminOnly:false},
- {key:'follow-ups',segment:'follow-ups',label:'Follow-ups due',group:'Work',aliases:[],adminOnly:false},
+ {key:'overview',segment:'',label:'Overview',group:'Today',aliases:[],adminOnly:false},
+ {key:'inquiries',segment:'inquiries',label:'Inquiries & orders',group:'Today',aliases:['orders','kanban','enquiries'],adminOnly:false},
+ {key:'follow-ups',segment:'follow-ups',label:'Follow-ups due',group:'Today',aliases:[],adminOnly:false},
  {key:'products',segment:'products',label:'Catalogue & forms',group:'Catalogue',aliases:['forms'],adminOnly:false},
- {key:'content',segment:'content',label:'Pages & journal',group:'Website',aliases:['pages','journal'],adminOnly:false},
- {key:'media',segment:'media',label:'Public media',group:'Media',aliases:[],adminOnly:false},
- {key:'site-copy',segment:'site-copy',label:'Site copy',group:'Website',aliases:[],adminOnly:false},
- {key:'site-images',segment:'site-images',label:'Site images',group:'Media',aliases:[],adminOnly:false},
- {key:'content-health',segment:'content-health',label:'Content health',group:'Website',aliases:[],adminOnly:false},
- {key:'site-settings',segment:'navigation',label:'Navigation & languages',group:'Administration',aliases:[],adminOnly:true},
- {key:'legacy',segment:'legacy',label:'Legacy decisions',group:'Administration',aliases:[],adminOnly:true},
- {key:'translations',segment:'translations',label:'Language review',group:'Website',aliases:[],adminOnly:false},
- {key:'route-review',segment:'route-review',label:'Old links & publication',group:'Administration',aliases:[],adminOnly:true},
- {key:'activity',segment:'activity',label:'Activity & logs',group:'Administration',aliases:[],adminOnly:false},
- {key:'staff',segment:'staff',label:'Staff access',group:'Administration',aliases:[],adminOnly:true},
- {key:'settings',segment:'settings',label:'Atelier settings',group:'Administration',aliases:[],adminOnly:true},
+ {key:'content',segment:'content',label:'Pages & journal',group:'Editorial',aliases:['pages','journal'],adminOnly:false},
+ {key:'media',segment:'media',label:'Public media',group:'Catalogue',aliases:[],adminOnly:false},
+ {key:'site-copy',segment:'site-copy',label:'Site copy',group:'Content',aliases:[],adminOnly:false},
+ {key:'site-images',segment:'site-images',label:'Site images',group:'Content',aliases:[],adminOnly:false},
+ {key:'content-health',segment:'content-health',label:'Content health',group:'Settings',aliases:[],adminOnly:false},
+ {key:'site-settings',segment:'navigation',label:'Navigation & languages',group:'Content',aliases:[],adminOnly:true},
+ {key:'legacy',segment:'legacy',label:'Legacy decisions',group:'Settings',aliases:[],adminOnly:true},
+ {key:'translations',segment:'translations',label:'Language review',group:'Content',aliases:[],adminOnly:false},
+ {key:'route-review',segment:'route-review',label:'Old links & publication',group:'Settings',aliases:[],adminOnly:true},
+ {key:'activity',segment:'activity',label:'Activity & logs',group:'Today',aliases:[],adminOnly:false},
+ {key:'staff',segment:'staff',label:'Staff access',group:'Settings',aliases:[],adminOnly:true},
+ {key:'settings',segment:'settings',label:'Atelier settings',group:'Settings',aliases:[],adminOnly:true},
 ] as const;
 export type StudioModule = typeof studioModules[number];
 export type StudioModuleKey = StudioModule['key'];

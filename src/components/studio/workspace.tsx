@@ -41,7 +41,7 @@ const RouteReview=dynamic(()=>import('./route-review').then(m=>m.RouteReview),{l
 function WorkspaceLoading(){return <p className={s.status} role="status">Opening this workspace page…</p>;}
 
 const moduleIcons = {overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,legacy:FileText,translations:Languages,'route-review':ExternalLink,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
-const navGroups = ['Work','Website','Catalogue','Media','Administration'].map(title=>({title,items:studioModules.filter(module=>module.group===title)}));
+const navGroups = ['Today','Catalogue','Content','Editorial','Settings'].map(title=>({title,items:studioModules.filter(module=>module.group===title)}));
 type ModuleContext={staffId?:string|null;admin:boolean;staff:StaffMember[];load:()=>Promise<void>};
 const moduleViews = {
  overview:({admin}:ModuleContext)=><Operations view="overview" admin={admin}/>,
@@ -75,14 +75,15 @@ function NavigationLinks({admin,view,onNavigate}:{admin:boolean;view?:StudioModu
  return navGroups.map(group=>{const items=group.items.filter(item=>admin||!item.adminOnly);return items.length?<div key={group.title} className={s.navGroup}><span className={s.navGroupTitle}>{group.title}</span><div className={s.navGroupList}>{items.map(item=>{const Icon=moduleIcons[item.key];return <Link key={item.key} prefetch={false} href={studioModuleHref(item)} className={s.navLink} title={item.label} aria-label={item.label} aria-current={view===item.key?'page':undefined} onClick={e=>{if(e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey)onNavigate?.(studioModuleHref(item));}}><Icon size={18} className={s.navIcon} aria-hidden="true"/><span className={s.navLabel}>{item.label}</span></Link>;})}</div></div>:null;});
 }
 
-export function Workspace({initial}:{initial?:{session:WorkspaceIdentity;staff:StaffMember[]}}={}){
+export function Workspace({initial,initialCollapsed=false}:{initial?:{session:WorkspaceIdentity;staff:StaffMember[]};initialCollapsed?:boolean}={}){
  const path=usePathname(),activeModule=studioModule(path.split('/')[2]||''),view=activeModule?.key;
  const [identity,setIdentity]=useState<WorkspaceIdentity|null>(initial?.session||null),[staff,setStaff]=useState<StaffMember[]>(initial?.staff||[]),[error,setError]=useState(''),[sessionMessage,setSessionMessage]=useState('');
  const load=useCallback(async()=>{const data=await studioFetch('/api/studio/workspace');setIdentity(data.session);setStaff(data.staff);setSessionMessage('');},[]);
  useEffect(()=>{if(initial)return;let active=true;void studioFetch('/api/studio/workspace').then(data=>{if(active){setIdentity(data.session);setStaff(data.staff);}}).catch(e=>{if(active)setError(e.message);});return()=>{active=false;};},[initial]);
  useEffect(()=>{const expired=()=>setSessionMessage('Your session expired or access changed. Keep this tab open, renew sign-in, then check access before retrying.');const focus=()=>{void load().catch(()=>setSessionMessage('Access could not be refreshed. Your unsaved editors are retained; retry after renewing sign-in.'));};window.addEventListener('studio-session-expired',expired);window.addEventListener('focus',focus);return()=>{window.removeEventListener('studio-session-expired',expired);window.removeEventListener('focus',focus);};},[load]);
  const admin=identity?.role==='admin';
- const [mobileNav,setMobileNav]=useState(false),[palette,setPalette]=useState(false),[navigationQuery,setNavigationQuery]=useState(''),[collapsed,setCollapsed]=useState(false);
+ const [mobileNav,setMobileNav]=useState(false),[palette,setPalette]=useState(false),[navigationQuery,setNavigationQuery]=useState(''),[collapsed,setCollapsed]=useState(initialCollapsed);
+ const toggleSidebar=()=>{const next=!collapsed;setCollapsed(next);document.cookie='rivya-studio-sidebar='+(next?'collapsed':'expanded')+'; Path=/studio; Max-Age=31536000; SameSite=Lax'+(location.protocol==='https:'?'; Secure':'');};
  const destinations=studioDestinations(admin,navigationQuery);
  const navigate=(href:string)=>{pendingNavigationFocus=href;setMobileNav(false);setPalette(false);setNavigationQuery('');if(path===href)requestAnimationFrame(()=>{const heading=document.querySelector<HTMLElement>('#main-content h1');if(heading){heading.tabIndex=-1;heading.focus();pendingNavigationFocus=null;}});};
  useEffect(()=>{const shortcut=(e:KeyboardEvent)=>{if(identity&&(e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'&&!document.querySelector('dialog[open]')){e.preventDefault();setPalette(true);}};window.addEventListener('keydown',shortcut);return()=>window.removeEventListener('keydown',shortcut);},[identity]);
@@ -105,7 +106,7 @@ export function Workspace({initial}:{initial?:{session:WorkspaceIdentity;staff:S
         <ExternalLink size={13} aria-hidden="true" />
       </a>
       <div className={s.headerActions}>
-        <button type="button" className={s.commandTrigger} disabled={!identity} onClick={()=>setPalette(true)} aria-haspopup="dialog"><Search size={16} aria-hidden="true"/><span>Find a Studio page</span><kbd>Ctrl K</kbd></button>
+        <button type="button" className={s.commandTrigger} aria-label="Find a Studio page" disabled={!identity} onClick={()=>setPalette(true)} aria-haspopup="dialog"><Search size={16} aria-hidden="true"/><span>Find a Studio page</span><kbd>Ctrl K</kbd></button>
         {identity && (
           <div className={s.userBadge}>
             <span className={s.userAvatar}>{(identity.adminId || 'ST').slice(0, 2).toUpperCase()}</span>
@@ -125,7 +126,7 @@ export function Workspace({initial}:{initial?:{session:WorkspaceIdentity;staff:S
     {sessionMessage&&<aside className={s.panel} role="alert"><p><AlertCircle size={16} style={{display:'inline',verticalAlign:'text-bottom',marginRight:6}} />{sessionMessage}</p><button onClick={()=>void load().catch(e=>setSessionMessage(e.message))}>Check renewed access</button></aside>}
     <div className={s.workspaceLayout}>
       <nav className={s.sideNav} aria-label="Studio navigation">
-        <button type="button" className={s.collapseNav} onClick={()=>setCollapsed(value=>!value)} aria-expanded={!collapsed} aria-label={collapsed?'Expand Studio sidebar':'Collapse Studio sidebar'}>{collapsed?<PanelLeftOpen size={18} aria-hidden="true"/>:<PanelLeftClose size={18} aria-hidden="true"/>}<span className={s.navLabel}>Collapse sidebar</span></button>
+        <button type="button" className={s.collapseNav} onClick={toggleSidebar} aria-expanded={!collapsed} aria-label={collapsed?'Expand Studio sidebar':'Collapse Studio sidebar'}>{collapsed?<PanelLeftOpen size={18} aria-hidden="true"/>:<PanelLeftClose size={18} aria-hidden="true"/>}<span className={s.navLabel}>Collapse sidebar</span></button>
         <NavigationLinks admin={admin} view={view}/>
       </nav>
       <main id="main-content" tabIndex={-1} className={s.workspaceMain}>

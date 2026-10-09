@@ -1,5 +1,5 @@
 {
-  "status": "planned_not_implemented",
+  "status": "local_implementation_in_progress",
   "existingContentFrozen": true,
   "oldPageTemplates": 85,
   "oldSectionDefinitions": 74,
@@ -492,9 +492,10 @@
       "title": "Record exact old/current source revisions and deployment identities",
       "dependsOnPhases": [],
       "acceptance": "Source snapshots and live observations are labelled separately; current work and cancelled audit are not mixed.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "m0-evidence.json",
+      "protectedFieldComparison": "All captured local and live rows unchanged"
     },
     {
       "id": "M0-02",
@@ -502,9 +503,10 @@
       "title": "Inventory existing products, content, drafts, translations, settings and media usages read-only",
       "dependsOnPhases": [],
       "acceptance": "Private scoped IDs/revisions/hashes cover protected fields without exporting customer values into this report.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "m0-evidence.json",
+      "protectedFieldComparison": "All captured local and live rows unchanged"
     },
     {
       "id": "M0-03",
@@ -512,9 +514,10 @@
       "title": "Establish isolated QA and a codex/ feature branch",
       "dependsOnPhases": [],
       "acceptance": "QA writes cannot reach the shared live database; no old bootstrap, seed or scraper executes.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "m0-evidence.json",
+      "protectedFieldComparison": "All captured local and live rows unchanged"
     },
     {
       "id": "M0-04",
@@ -522,9 +525,10 @@
       "title": "Record current visual, keyboard and performance baselines",
       "dependsOnPhases": [],
       "acceptance": "Representative desktop/phone screenshots and cold/warm timings name the candidate and environment.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "m0-evidence.json",
+      "protectedFieldComparison": "All captured local and live rows unchanged"
     },
     {
       "id": "M0-05",
@@ -532,9 +536,10 @@
       "title": "Confirm source, asset and content ownership boundaries",
       "dependsOnPhases": [],
       "acceptance": "Current contacts and all existing information frozen; unknown rights/offerings stay unresolved rather than inferred.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "m0-evidence.json",
+      "protectedFieldComparison": "All captured local and live rows unchanged"
     },
     {
       "id": "M1-01",
@@ -544,9 +549,10 @@
         "M0"
       ],
       "acceptance": "All 25 templates map to preserved canonical routes, new supported templates or explicit conditional states; dynamic records are not copied.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "implementation-contracts.json; M1-CONTRACT-REVIEW.md; PARITY-ACCEPTANCE-SHEETS.html",
+      "note": "Complete specification coverage; visual target captures explicitly not-run"
     },
     {
       "id": "M1-02",
@@ -556,9 +562,10 @@
         "M0"
       ],
       "acceptance": "All 60 page files, including create/edit/detail/print/auth, have a real destination or documented exclusion.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "implementation-contracts.json; M1-CONTRACT-REVIEW.md; PARITY-ACCEPTANCE-SHEETS.html",
+      "note": "Complete specification coverage; visual target captures explicitly not-run"
     },
     {
       "id": "M1-03",
@@ -568,9 +575,10 @@
         "M0"
       ],
       "acceptance": "Stable keys, order, conditions, existing data ownership and empty states recorded; Home has all 18 templates.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "implementation-contracts.json; M1-CONTRACT-REVIEW.md; PARITY-ACCEPTANCE-SHEETS.html",
+      "note": "Complete specification coverage; visual target captures explicitly not-run"
     },
     {
       "id": "M1-04",
@@ -580,9 +588,10 @@
         "M0"
       ],
       "acceptance": "Header/menu, footer, cookie preferences, search, language, dialogs, loading, empty, forbidden and error states mapped from actual components.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "implementation-contracts.json; M1-CONTRACT-REVIEW.md; PARITY-ACCEPTANCE-SHEETS.html",
+      "note": "Complete specification coverage; visual target captures explicitly not-run"
     },
     {
       "id": "M1-05",
@@ -592,9 +601,10 @@
         "M0"
       ],
       "acceptance": "Compare same viewport and content; annotate content variance and accessibility/performance adaptations instead of silently changing design.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "implementation-contracts.json; M1-CONTRACT-REVIEW.md; PARITY-ACCEPTANCE-SHEETS.html",
+      "note": "Complete specification coverage; visual target captures explicitly not-run"
     },
     {
       "id": "M2-01",
@@ -604,9 +614,10 @@
         "M1"
       ],
       "acceptance": "Old source tokens drive the system; font licensing/loading and semantic contrast checked.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "m2-evidence.json",
+      "note": "Shared frames only; 32 planned destinations accounted for, 16 supported destinations active; detailed module parity remains M6"
     },
     {
       "id": "M2-02",
@@ -616,9 +627,10 @@
         "M1"
       ],
       "acceptance": "Current links/contact values preserved; mobile focus, Escape and scroll behavior verified.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "m2-evidence.json",
+      "note": "Shared frames only; 32 planned destinations accounted for, 16 supported destinations active; detailed module parity remains M6"
     },
     {
       "id": "M2-03",
@@ -628,9 +640,10 @@
         "M1"
       ],
       "acceptance": "All 32 destinations accounted for; only authorized, supported destinations become active links.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "m2-evidence.json",
+      "note": "Shared frames only; 32 planned destinations accounted for, 16 supported destinations active; detailed module parity remains M6"
     },
     {
       "id": "M2-04",
@@ -640,9 +653,10 @@
         "M1"
       ],
       "acceptance": "Contain thumbnails, support long text, keep sticky actions clear of focus and show errors beside the relevant field.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "m2-evidence.json",
+      "note": "Shared frames only; 32 planned destinations accounted for, 16 supported destinations active; detailed module parity remains M6"
     },
     {
       "id": "M2-05",
@@ -652,9 +666,10 @@
         "M1"
       ],
       "acceptance": "Narrative motion matches reference where useful; frequent Studio actions stay brief; no LCP element hidden awaiting animation.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex",
+      "evidence": "m2-evidence.json",
+      "note": "Shared frames only; 32 planned destinations accounted for, 16 supported destinations active; detailed module parity remains M6"
     },
     {
       "id": "M3-01",
@@ -1246,5 +1261,5 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "No application or production change in this planning update. Evidence-dependent work remains explicit."
+  "note": "M0 baseline, M1 contracts and M2 shared-frame engineering scope verified locally. Earliest unfinished phase M3. New content 0/480; no release or production writes. Labelled concepts/samples authorized in owner decision of 9 October."
 }

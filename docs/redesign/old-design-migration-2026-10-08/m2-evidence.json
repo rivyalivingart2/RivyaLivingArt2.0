@@ -1,0 +1,586 @@
+{
+  "at": "2026-10-09T04:57:34.282Z",
+  "candidate": {
+    "base": "afba59f6adf6d3cdcc168f0d784d093a4cb4a294",
+    "applicationSha256": "171ec35748336889280f5f76a78ddca3cd63b7f43ba662941f61c792e397dbb0"
+  },
+  "scope": "M2 shared-frame engineering verification; not full template/section parity or external acceptance",
+  "status": "verified-for-stated-scope",
+  "build": "Node 22.23.2 / Next 16.3.5 production build and type validation passed",
+  "unitTests": {
+    "pass": 298,
+    "fail": 0
+  },
+  "lint": "Changed TS/TSX and migration JS tools pass",
+  "fontEvidence": "m2-fonts.json",
+  "contrast": {
+    "method": "WCAG relative luminance for named semantic token pairs; not a whole-page contrast audit",
+    "pairs": [
+      {
+        "role": "body",
+        "foreground": "#f4f1e9",
+        "background": "#080a0e",
+        "ratio": 17.551,
+        "floor": 4.5,
+        "pass": true
+      },
+      {
+        "role": "body",
+        "foreground": "#f4f1e9",
+        "background": "#08283a",
+        "ratio": 13.532,
+        "floor": 4.5,
+        "pass": true
+      },
+      {
+        "role": "body",
+        "foreground": "#f4f1e9",
+        "background": "#0f3247",
+        "ratio": 11.869,
+        "floor": 4.5,
+        "pass": true
+      },
+      {
+        "role": "body",
+        "foreground": "#f4f1e9",
+        "background": "#164e6b",
+        "ratio": 7.964,
+        "floor": 4.5,
+        "pass": true
+      },
+      {
+        "role": "body",
+        "foreground": "#f4f1e9",
+        "background": "#1d6389",
+        "ratio": 5.817,
+        "floor": 4.5,
+        "pass": true
+      },
+      {
+        "role": "secondary",
+        "foreground": "#a9b4bc",
+        "background": "#080a0e",
+        "ratio": 9.378,
+        "floor": 4.5,
+        "pass": true
+      },
+      {
+        "role": "secondary",
+        "foreground": "#a9b4bc",
+        "background": "#08283a",
+        "ratio": 7.231,
+        "floor": 4.5,
+        "pass": true
+      },
+      {
+        "role": "secondary",
+        "foreground": "#a9b4bc",
+        "background": "#0f3247",
+        "ratio": 6.342,
+        "floor": 4.5,
+        "pass": true
+      },
+      {
+        "role": "links",
+        "foreground": "#5fafd6",
+        "background": "#080a0e",
+        "ratio": 8.103,
+        "floor": 4.5,
+        "pass": true
+      },
+      {
+        "role": "links",
+        "foreground": "#5fafd6",
+        "background": "#08283a",
+        "ratio": 6.247,
+        "floor": 4.5,
+        "pass": true
+      },
+      {
+        "role": "links",
+        "foreground": "#5fafd6",
+        "background": "#0f3247",
+        "ratio": 5.48,
+        "floor": 4.5,
+        "pass": true
+      },
+      {
+        "role": "control boundary",
+        "foreground": "#78828c",
+        "background": "#080a0e",
+        "ratio": 5.066,
+        "floor": 3,
+        "pass": true
+      },
+      {
+        "role": "control boundary",
+        "foreground": "#78828c",
+        "background": "#08283a",
+        "ratio": 3.906,
+        "floor": 3,
+        "pass": true
+      },
+      {
+        "role": "control boundary",
+        "foreground": "#78828c",
+        "background": "#0f3247",
+        "ratio": 3.426,
+        "floor": 3,
+        "pass": true
+      }
+    ]
+  },
+  "frames": [
+    {
+      "name": "Five groups contain exactly the 16 supported current destinations",
+      "passed": true
+    },
+    {
+      "name": "Unsupported and excluded destinations are not active links",
+      "passed": true
+    },
+    {
+      "name": "Sidebar preference survives reload and module navigation with matching server markup",
+      "passed": true
+    },
+    {
+      "name": "Former group search terms still locate the same permitted page",
+      "passed": true
+    },
+    {
+      "name": "Section rail contains only existing sections and supports keyboard links",
+      "passed": true
+    },
+    {
+      "name": "Current phone and email remain in footer",
+      "passed": true
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/",
+      "width": 320
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/studio",
+      "width": 320
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/studio/content",
+      "width": 320
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/studio/media",
+      "width": 320
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/",
+      "width": 390
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/studio",
+      "width": 390
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/studio/content",
+      "width": 390
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/studio/media",
+      "width": 390
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/",
+      "width": 800
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/studio",
+      "width": 800
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/studio/content",
+      "width": 800
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/studio/media",
+      "width": 800
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/",
+      "width": 1440
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/studio",
+      "width": 1440
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/studio/content",
+      "width": 1440
+    },
+    {
+      "name": "Responsive frame",
+      "passed": true,
+      "route": "/studio/media",
+      "width": 1440
+    }
+  ],
+  "browser": {
+    "profile": "1440x1000 desktop and 390x844 touch emulation, DPR1, reduced motion; no CPU/network throttle; cold and warm browser navigation, server cache may be warm",
+    "samples": [
+      {
+        "route": "/",
+        "width": 1440,
+        "cache": "cold",
+        "lcp": 516,
+        "cls": 0,
+        "ttfb": 301.40000000596046,
+        "load": 533.5999999940395,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/",
+        "width": 1440,
+        "cache": "warm",
+        "lcp": 120,
+        "cls": 0,
+        "ttfb": 46.099999994039536,
+        "load": 105.3999999910593,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/process",
+        "width": 1440,
+        "cache": "cold",
+        "lcp": 128,
+        "cls": 0,
+        "ttfb": 42.400000005960464,
+        "load": 130.79999999701977,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/process",
+        "width": 1440,
+        "cache": "warm",
+        "lcp": 104,
+        "cls": 0,
+        "ttfb": 41.79999999701977,
+        "load": 88.09999999403954,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/journal",
+        "width": 1440,
+        "cache": "cold",
+        "lcp": 144,
+        "cls": 0,
+        "ttfb": 48.70000000298023,
+        "load": 140.79999999701977,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/journal",
+        "width": 1440,
+        "cache": "warm",
+        "lcp": 112,
+        "cls": 0,
+        "ttfb": 44.400000005960464,
+        "load": 96.6000000089407,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/studio",
+        "width": 1440,
+        "cache": "cold",
+        "lcp": 164,
+        "cls": 0.00919046902126736,
+        "ttfb": 67.29999999701977,
+        "load": 160.6000000089407,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/studio",
+        "width": 1440,
+        "cache": "warm",
+        "lcp": 76,
+        "cls": 0.00919046902126736,
+        "ttfb": 19.099999994039536,
+        "load": 63.599999994039536,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/studio/content",
+        "width": 1440,
+        "cache": "cold",
+        "lcp": 176,
+        "cls": 0.021813282455632715,
+        "ttfb": 36.29999999701977,
+        "load": 120.59999999403954,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/studio/content",
+        "width": 1440,
+        "cache": "warm",
+        "lcp": 80,
+        "cls": 0.021813282455632715,
+        "ttfb": 18.099999994039536,
+        "load": 63.79999999701977,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "cache": "cold",
+        "lcp": 200,
+        "cls": 0,
+        "ttfb": 36.6000000089407,
+        "load": 233.29999999701977,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "cache": "warm",
+        "lcp": 88,
+        "cls": 0,
+        "ttfb": 43.29999999701977,
+        "load": 91.70000000298023,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/process",
+        "width": 390,
+        "cache": "cold",
+        "lcp": 116,
+        "cls": 0,
+        "ttfb": 35.900000005960464,
+        "load": 109.40000000596046,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/process",
+        "width": 390,
+        "cache": "warm",
+        "lcp": 88,
+        "cls": 0,
+        "ttfb": 42.400000005960464,
+        "load": 83.20000000298023,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/journal",
+        "width": 390,
+        "cache": "cold",
+        "lcp": 148,
+        "cls": 0,
+        "ttfb": 40.29999999701977,
+        "load": 137.59999999403954,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/journal",
+        "width": 390,
+        "cache": "warm",
+        "lcp": 108,
+        "cls": 0,
+        "ttfb": 44.70000000298023,
+        "load": 97.59999999403954,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/studio",
+        "width": 390,
+        "cache": "cold",
+        "lcp": 116,
+        "cls": 0,
+        "ttfb": 22.200000002980232,
+        "load": 109.90000000596046,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/studio",
+        "width": 390,
+        "cache": "warm",
+        "lcp": 80,
+        "cls": 0,
+        "ttfb": 22.400000005960464,
+        "load": 64.09999999403954,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/studio/content",
+        "width": 390,
+        "cache": "cold",
+        "lcp": 88,
+        "cls": 0,
+        "ttfb": 18,
+        "load": 86,
+        "overflow": false,
+        "h1": 1
+      },
+      {
+        "route": "/studio/content",
+        "width": 390,
+        "cache": "warm",
+        "lcp": 76,
+        "cls": 0,
+        "ttfb": 19.900000005960464,
+        "load": 63.400000005960464,
+        "overflow": false,
+        "h1": 1
+      }
+    ],
+    "screenshots": [
+      {
+        "route": "/",
+        "width": 1440,
+        "path": "screenshots/m2-final-home-1440.png",
+        "scope": "first viewport; local source fixtures"
+      },
+      {
+        "route": "/process",
+        "width": 1440,
+        "path": "screenshots/m2-final-process-1440.png",
+        "scope": "first viewport; local source fixtures"
+      },
+      {
+        "route": "/journal",
+        "width": 1440,
+        "path": "screenshots/m2-final-journal-1440.png",
+        "scope": "first viewport; local source fixtures"
+      },
+      {
+        "route": "/studio",
+        "width": 1440,
+        "path": "screenshots/m2-final-studio-1440.png",
+        "scope": "first viewport; local source fixtures"
+      },
+      {
+        "route": "/studio/content",
+        "width": 1440,
+        "path": "screenshots/m2-final-studio-content-1440.png",
+        "scope": "first viewport; local source fixtures"
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "path": "screenshots/m2-final-home-390.png",
+        "scope": "first viewport; local source fixtures"
+      },
+      {
+        "route": "/process",
+        "width": 390,
+        "path": "screenshots/m2-final-process-390.png",
+        "scope": "first viewport; local source fixtures"
+      },
+      {
+        "route": "/journal",
+        "width": 390,
+        "path": "screenshots/m2-final-journal-390.png",
+        "scope": "first viewport; local source fixtures"
+      },
+      {
+        "route": "/studio",
+        "width": 390,
+        "path": "screenshots/m2-final-studio-390.png",
+        "scope": "first viewport; local source fixtures"
+      },
+      {
+        "route": "/studio/content",
+        "width": 390,
+        "path": "screenshots/m2-final-studio-content-390.png",
+        "scope": "first viewport; local source fixtures"
+      }
+    ],
+    "keyboard": [
+      {
+        "route": "/",
+        "width": 1440,
+        "searchOpened": true,
+        "escapeClosed": true,
+        "focusReturned": true
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "openedWithKeyboard": true,
+        "focusContained": true,
+        "escapeClosed": true,
+        "focusReturned": true
+      },
+      {
+        "route": "/studio",
+        "width": 390,
+        "openedWithKeyboard": true,
+        "focusContained": true,
+        "escapeClosed": true,
+        "focusReturned": true
+      }
+    ],
+    "errors": []
+  },
+  "protected": {
+    "mode": "local isolated QA",
+    "scopes": 13,
+    "result": "Every captured row and publication identity unchanged; live M0 evidence remains historical, no production writes in M2"
+  },
+  "content": {
+    "Journal": 0,
+    "Portfolio": 0,
+    "Testimonials": 0,
+    "FAQs": 0
+  },
+  "externalAcceptance": {
+    "humanScreenReader": "not-run",
+    "physicalPhone": "not-run",
+    "nativeReader": "not-run",
+    "fieldPerformance": "not-observed"
+  },
+  "remaining": "M3 saved presentation workflow; M4–M10 detailed pages/modules and full acceptance; M11 explicit release request"
+}
