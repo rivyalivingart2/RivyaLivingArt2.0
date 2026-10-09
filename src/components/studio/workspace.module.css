@@ -384,3 +384,5 @@
 }
 
 .orderList{padding-left:28px;max-width:980px}.orderList li{padding:18px 8px;border-bottom:1px solid var(--line,#d9d3c8)}.orderList strong{display:block;margin-bottom:12px}.orderList strong:focus{outline:2px solid #735332;outline-offset:4px}
+
+.libraryRows{display:grid;gap:12px;margin:24px 0}.libraryRows>a{display:grid;gap:8px;border:1px solid var(--control-border);padding:20px;min-height:44px;overflow-wrap:anywhere}.libraryRows span,.libraryRows small{font-size:14px}.singleEditor{max-width:1100px}.singleEditor>[hidden]{display:none}

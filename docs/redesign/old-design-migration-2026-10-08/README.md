@@ -6,14 +6,14 @@ Planning prepared 8 October 2026; repository handoff prepared 9 October 2026.
 
 **Continue in another chat:** [Copy the continuation prompt](CONTINUE-IN-NEW-CHAT.md).
 
-Current implementation: M0–M4 and Production setup are delivered; M5 and M6 are verified locally for their documented engineering scope. Read [the checkpoint](IMPLEMENTATION-CHECKPOINT.md) and [pending list](PENDING-AFTER-M6.md). Stop before M7 without explicit permission. Production content remains 0/480. The planning materials below remain the full reference; historical observations are not fresh acceptance evidence.
+Current implementation: M0–M4 and Production setup are delivered; M5–M8 are verified locally for their documented engineering scopes. Read [the checkpoint](IMPLEMENTATION-CHECKPOINT.md), [M8 report](M8-EDITORIAL-WORKFLOW.md) and [pending list](PENDING-AFTER-M8.md). Stop before M9 without explicit permission. M5–M8 are not pushed or deployed. Production content remains 0/480. The planning materials below remain the full reference; historical observations are not fresh acceptance evidence.
 
 ## What is included
 
 - Complete public/Studio design specifications and motion/image/video guidance.
 - 12 phases and 60 tasks with dependencies, acceptance checks and realistic evidence boundaries.
 - 85 old page templates, 74 registered section definitions, 18 homepage sections, 16 landing blocks and 32 Studio destinations, including conditional/excluded scope.
-- 480 planned new entries: 120 Journal ideas, 120 FAQ questions, 120 genuine-project intake slots and 120 genuine-feedback intake slots.
+- 480 planned new entries: 120 Journal ideas, 120 FAQ questions, 120 labelled concept Portfolio slots and 120 labelled fictional Testimonial slots under the later owner decision; genuine claims still need approved evidence.
 - Both commissions/orders and versioned editorial display ordering.
 - Drive media candidates, source inventories, structured progress registers and a phase handoff template.
 - Existing product/content/contact protection, no scraper/product-transfer/ingestion work, and continued exclusion of backups/key custody.

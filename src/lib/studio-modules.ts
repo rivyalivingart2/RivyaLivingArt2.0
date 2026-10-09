@@ -6,6 +6,7 @@ export const studioModules = [
  {key:'inquiries',segment:'inquiries',label:'Inquiries & orders',group:'Today',aliases:['orders','kanban','enquiries'],adminOnly:false},
  {key:'follow-ups',segment:'follow-ups',label:'Follow-ups due',group:'Today',aliases:[],adminOnly:false},
  {key:'products',segment:'products',label:'Products',group:'Catalogue',aliases:[],adminOnly:false},
+ {key:'content-register',segment:'content-register',label:'Production register',group:'Editorial',aliases:[],adminOnly:false},
  {key:'editorial-order',segment:'editorial-order',label:'Editorial ordering',group:'Editorial',aliases:[],adminOnly:false},
  {key:'content',segment:'content',label:'All content',group:'Editorial',aliases:[],adminOnly:false},
  {key:'media',segment:'media',label:'Public media',group:'Catalogue',aliases:[],adminOnly:false},

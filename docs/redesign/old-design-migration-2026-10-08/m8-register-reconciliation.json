@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-09",
+  "sourceRecords": 93,
+  "sourceInventoryHash": "99d908ae18ef78d108bb4a3bfadb83da7ac92bdfbb4bf39570ddfcac7ee86d87",
+  "changedProposals": [
+    {
+      "id": "J026",
+      "previousTitle": "Exploring a console as an arrival point",
+      "newTitle": "Recording three doorway views of the same console position",
+      "overlapWith": "DB006",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "J059",
+      "previousTitle": "Preparing an architect-to-atelier context note",
+      "newTitle": "A drawing legend for separating site facts from proposal marks",
+      "overlapWith": "DB009",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "J078",
+      "previousTitle": "Planning a coordinated set without copying every detail",
+      "newTitle": "A variation matrix for shared and individual gift details",
+      "overlapWith": "DB028",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "J085",
+      "previousTitle": "Understanding a saved inquiry receipt",
+      "newTitle": "A one-page index linking a saved reference to later decisions",
+      "overlapWith": "page:faq",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "J091",
+      "previousTitle": "A care discussion based on the individual piece",
+      "newTitle": "A placement-condition worksheet to accompany a care question",
+      "overlapWith": "page:materials-care",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "J101",
+      "previousTitle": "Reading a project story from brief to outcome",
+      "newTitle": "A source ledger for brief, proposal and verified outcome",
+      "overlapWith": "DB018",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "J110",
+      "previousTitle": "Keeping a public project story respectful of privacy",
+      "newTitle": "An image-by-image permission ledger for a public case study",
+      "overlapWith": "DB026",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "F052",
+      "previousTitle": "Can I begin without selecting a product?",
+      "newTitle": "How can I separate a room request from a keepsake request in one brief?",
+      "overlapWith": "page:faq",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "F061",
+      "previousTitle": "What should I discuss before sending a keepsake?",
+      "newTitle": "Which details belong in a condition photograph of a fragile keepsake?",
+      "overlapWith": "page:shipping-delivery",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "F086",
+      "previousTitle": "What does the inquiry receipt confirm?",
+      "newTitle": "How can I distinguish a receipt reference from a quotation revision?",
+      "overlapWith": "page:faq",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "F087",
+      "previousTitle": "Does Open WhatsApp send the message automatically?",
+      "newTitle": "What should I compare between my reviewed brief and copied message?",
+      "overlapWith": "page:faq",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "F088",
+      "previousTitle": "What can I do if WhatsApp does not open?",
+      "newTitle": "How can I check paragraph breaks after pasting a saved summary?",
+      "overlapWith": "page:faq",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "F090",
+      "previousTitle": "Does the site require a customer account or online payment?",
+      "newTitle": "How can I keep website references separate from agreed payment information?",
+      "overlapWith": "page:terms",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "F101",
+      "previousTitle": "Are all website images completed customer projects?",
+      "newTitle": "How should a caption distinguish a material close-up from an installation photograph?",
+      "overlapWith": "page:faq",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "F111",
+      "previousTitle": "Does an initial enquiry confirm an order?",
+      "newTitle": "What belongs in a list of decisions still awaiting confirmation?",
+      "overlapWith": "page:faq",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "F112",
+      "previousTitle": "Where is pricing agreed?",
+      "newTitle": "How should I describe an optional feature when requesting separate pricing?",
+      "overlapWith": "page:terms",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "F113",
+      "previousTitle": "Where is a completion date agreed?",
+      "newTitle": "How can I describe a flexible date range without implying a booked production slot?",
+      "overlapWith": "page:faq",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    },
+    {
+      "id": "F114",
+      "previousTitle": "How should I refer to an existing inquiry?",
+      "newTitle": "How should I label two design versions when asking about a change?",
+      "overlapWith": "page:contact",
+      "decision": "Replace generic overlapping proposal with a specific comparison, worksheet or evidence question."
+    }
+  ],
+  "plannedCounts": {
+    "Journal": 120,
+    "Portfolio": 120,
+    "Testimonials": 120,
+    "FAQs": 120
+  },
+  "createdProduction": 0,
+  "humanReviewComplete": false
+}

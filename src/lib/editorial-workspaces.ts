@@ -4,6 +4,7 @@ export type EditorialArea=typeof editorialAreas[number];
 export const editorialAreaLabels:Record<EditorialArea,string>={journal:'Journal',portfolio:'Portfolio',testimonials:'Testimonials',faqs:'FAQs',pages:'Pages','landing-pages':'Landing pages'};
 export function inEditorialArea(area:EditorialArea|'all',d:ContentDocument){
  if(area==='all')return true;
+ if(area==='faqs'&&d.id==='page:faq')return true;
  if(area==='journal')return d.kind==='article';
  if(area==='landing-pages')return !!d.landing;
  if(area==='pages')return d.kind==='page'&&!d.editorial&&!d.landing;

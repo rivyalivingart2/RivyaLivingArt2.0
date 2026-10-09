@@ -1,3 +1,4 @@
+import {reviewPublicationIssues} from './editorial-metadata';
 import type {ContentDocument} from './content-model';
 import {validUsage,type EditorialUsage} from './homepage-model';
 import {safeEditorialHref} from './editorial-body';
@@ -26,6 +27,7 @@ export function validEditorialRecord(value:unknown,route:string):value is Editor
  }catch{return false;}
 }
 export function editorialPublicationIssues(d:ContentDocument):string[]{
+ const reviewIssues=reviewPublicationIssues(d);if(reviewIssues.length)return reviewIssues;
  const e=d.editorial;if(!e)return [];
  if(e.classification==='genuine'){
   const evidence=e.evidence;

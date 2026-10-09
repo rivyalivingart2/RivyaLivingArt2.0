@@ -1,3 +1,4 @@
+import {publicDiscovery,type DiscoveryMetadata} from './editorial-metadata';
 import {bodyLinks} from './editorial-body';
 import {baselineContent,validContent,type ContentDocument,type ContentSection} from './content-model';
 import {editorialPublicationIssues,publicEditorial,type PublicEditorialRecord} from './editorial-record-model';
@@ -5,11 +6,12 @@ import {landingLimit,type LandingBlock} from './landing-model';
 import {validPageMedia} from './editorial-media-model';
 import type {DependencySource} from './homepage-dependencies';
 import type {EditorialUsage,HomeDependency} from './homepage-model';
-export type LandingEntry={id:string;route:string;title:string;description:string;eyebrow:string;sections:ContentSection[];image?:EditorialUsage;editorial?:PublicEditorialRecord};
+export type LandingEntry={id:string;route:string;title:string;description:string;eyebrow:string;sections:ContentSection[];image?:EditorialUsage;editorial?:PublicEditorialRecord;discovery?:DiscoveryMetadata;languages?:string[]};
 export type LandingSnapshot={entries:Record<string,LandingEntry[]>;productIds:Record<string,string[]>};
-export function publicEntry(d:ContentDocument&{imagePosition?:string}):LandingEntry{
+export function publicEntry(d:ContentDocument&{imagePosition?:string;availableEditorialLanguages?:string[]}):LandingEntry{
  const [x,y]=(d.imagePosition||'50% 50%').split(' ').map(n=>parseFloat(n));
- return {id:d.id,route:d.route,title:d.title,description:d.description,eyebrow:d.eyebrow,sections:d.sections.filter(s=>s.enabled!==false).map(s=>({id:s.id,heading:s.heading,paragraphs:s.paragraphs,checklist:s.checklist,body:s.body,group:s.group,policyHref:s.policyHref})),...(d.headerImage?{image:d.headerImage}:d.image?{image:{path:d.image,alt:d.imageAlt||d.title,caption:'Design visualization',desktop:{x,y,ratio:'3/2'},mobile:{x,y,ratio:'4/5'}} as EditorialUsage}:{}),...(d.editorial?{editorial:publicEditorial(d.editorial)}:{})};
+ const discovery=publicDiscovery(d);
+ return {discovery:discovery.metadata,languages:d.availableEditorialLanguages||discovery.languages,id:d.id,route:d.route,title:d.title,description:d.description,eyebrow:d.eyebrow,sections:d.sections.filter(s=>s.enabled!==false).map(s=>({id:s.id,heading:s.heading,paragraphs:s.paragraphs,checklist:s.checklist,body:s.body,group:s.group,policyHref:s.policyHref})),...(d.headerImage?{image:d.headerImage}:d.image?{image:{path:d.image,alt:d.imageAlt||d.title,caption:'Design visualization',desktop:{x,y,ratio:'3/2'},mobile:{x,y,ratio:'4/5'}} as EditorialUsage}:{}),...(d.editorial?{editorial:publicEditorial(d.editorial)}:{})};
 }
 /** Resolve published records once. Exact previews store these copies and fingerprints. */
 export function compileLanding(d:ContentDocument,source:DependencySource){

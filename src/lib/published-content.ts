@@ -1,3 +1,4 @@
+import {publicDiscovery} from './editorial-metadata';
 import {publishedOrders} from './editorial-order-store';
 import {orderedItems} from './editorial-order';
 import 'server-only';
@@ -12,7 +13,7 @@ import {homepageDependencies} from './homepage-persistence';
 import {compileHomepageSnapshot} from './homepage-dependencies';
 import {compilePageSnapshot} from './page-dependencies';
 import {editorialPublicationIssues,publicEditorial} from './editorial-record-model';
-export type PublishedContentDocument=ContentDocument&{imagePosition?:string;publishedRevision?:number;editorialOrders?:Record<string,string[]>};
+export type PublishedContentDocument=ContentDocument&{imagePosition?:string;publishedRevision?:number;availableEditorialLanguages?:string[];editorialOrders?:Record<string,string[]>};
 /** Reads only durable published revisions. Source candidates never become a public fallback.
  * snapshotRoute retains the complete article/route list while compiling dependencies only for the rendered page.
  */
@@ -30,7 +31,8 @@ export const publishedContent=cache(async(locale:Locale='en',route?:string,snaps
   const coverPath=d.headerImage?.path||d.image;const image=coverPath?images.get(coverPath):undefined;
   if(editorialPublicationIssues(original).length)continue;
   // Only public fields leave the persistence layer. Drafts and extra stored keys never do.
-  const publicDocument:PublishedContentDocument={id:d.id,kind:d.kind,route:d.route,title:d.title,eyebrow:d.eyebrow,description:d.description,publishedRevision:version,
+  const publicDocument:PublishedContentDocument={id:d.id,kind:d.kind,route:d.route,title:d.title,eyebrow:d.eyebrow,description:d.description,publishedRevision:version,availableEditorialLanguages:publicDiscovery(original).languages,
+   ...(d.discovery?{discovery:d.discovery}:{}),
    sections:d.sections.map(b=>({id:b.id,heading:b.heading,paragraphs:[...b.paragraphs],checklist:b.checklist,body:b.body,enabled:b.enabled,group:b.group,stage:b.stage,layout:b.layout,policyHref:b.policyHref,image:b.image,action:b.action,material:b.material})),
    ...(d.headerImage?{headerImage:d.headerImage}:{}),
    ...(d.featuredArticleIds?{featuredArticleIds:[...d.featuredArticleIds]}:{}),

@@ -1,5 +1,5 @@
 {
-  "status": "local_m7_verified_m8_authorized",
+  "status": "local_m7_m8_verified_stop_before_m9",
   "existingContentFrozen": true,
   "oldPageTemplates": 85,
   "oldSectionDefinitions": 74,
@@ -1010,9 +1010,13 @@
         "M7"
       ],
       "acceptance": "Duplicates replaced with distinct useful proposals; existing content is never rewritten or counted as new.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "local_engineering_verified",
+      "owner": "Codex",
+      "evidence": [
+        "M8-EDITORIAL-WORKFLOW.md",
+        "m8-evidence.json",
+        "m8-register-reconciliation.json"
+      ]
     },
     {
       "id": "M8-02",
@@ -1023,9 +1027,14 @@
         "M7"
       ],
       "acceptance": "No invented project titles, quotes, ratings or people; required sources, rights, attribution and consent tracked privately.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "local_engineering_verified",
+      "owner": "Codex",
+      "evidence": [
+        "M8-EDITORIAL-WORKFLOW.md",
+        "m8-evidence.json",
+        "m8-register-reconciliation.json"
+      ],
+      "scopeNote": "Later owner decision allows explicitly labelled concepts/fictional samples. No fabricated genuine evidence; no production records created."
     },
     {
       "id": "M8-03",
@@ -1036,9 +1045,13 @@
         "M7"
       ],
       "acceptance": "URL/applied chips/clear/pagination and visible counts; existing categories unchanged; empty combinations remain honest.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "local_engineering_verified",
+      "owner": "Codex",
+      "evidence": [
+        "M8-EDITORIAL-WORKFLOW.md",
+        "m8-evidence.json",
+        "m8-register-reconciliation.json"
+      ]
     },
     {
       "id": "M8-04",
@@ -1049,9 +1062,14 @@
         "M7"
       ],
       "acceptance": "Author/meaning/native review states distinct; publication does not imply native review; fallback and SEO locales correct.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "local_engineering_verified",
+      "owner": "Codex",
+      "evidence": [
+        "M8-EDITORIAL-WORKFLOW.md",
+        "m8-evidence.json",
+        "m8-register-reconciliation.json"
+      ],
+      "scopeNote": "Evidence workflow implemented; actual human/native-language review remains unperformed."
     },
     {
       "id": "M8-05",
@@ -1062,9 +1080,13 @@
         "M7"
       ],
       "acceptance": "Summaries for lists, record detail on demand, stable pagination, dry-run review and new-ID-only writes.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "local_engineering_verified",
+      "owner": "Codex",
+      "evidence": [
+        "M8-EDITORIAL-WORKFLOW.md",
+        "m8-evidence.json",
+        "m8-register-reconciliation.json"
+      ]
     },
     {
       "id": "M9-01",
@@ -1276,6 +1298,6 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "M0–M6 verified for their recorded engineering scopes. M5/M6 remain local. STOP before M7; permission required. Full parity and human/device acceptance remain M10. Production editorial remains 0/480.",
-  "nextPhaseAuthorization": "M8 authorized; stop before M9; local only"
+  "note": "M0–M8 verified for their recorded engineering scopes. M5–M8 remain local. STOP before M9; permission required. Full parity and human/device acceptance remain M10. Production editorial remains 0/480. Labelled concepts and fictional samples are permitted by the later owner decision.",
+  "nextPhaseAuthorization": "M9 requires explicit owner permission; no push/release/production writes authorized"
 }
