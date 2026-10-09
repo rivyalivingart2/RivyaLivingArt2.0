@@ -1,5 +1,7 @@
 # M0–M4 interim release — 9 October 2026
 
+**Subsequent activation completed:** PR #46 merged to main `6605b1b19283f7725eee1bc1639cc277556428bf` and its production deployment was verified. The owner then authorized only Production setup: the two presentation tables now exist, and fresh Studio revision 2 activates the homepage, seven page layouts and film. See `PRODUCTION-SETUP.md`. The activation boundary below records the earlier pre-setup state; it is not an outstanding setup task. M5 is still unauthorized.
+
 The owner requested all completed work on `codex/old-design-migration` through a detailed PR into `main`. This release contains implementation commits `01453fb`, `e89002d` and `cfabb70`, plus the release documentation and read-only verification tool. It is not completion of M5–M11. The PR description records the exact final head, checks, merge commit and resulting deployment after verification.
 
 ## Included

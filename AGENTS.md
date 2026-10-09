@@ -1,4 +1,12 @@
-# Current release — M0–M4 through a detailed PR; await M5 permission
+# Production setup complete — stop before M5
+
+9 October 2026. The owner requested only Production setup, followed by a stop. The two presentation tables now exist in the verified shared live database with narrow runtime grants. A real Studio administrator saved fresh production draft revision 1 and deliberately published revision 2 after exact preview review. The homepage composition, seven page layouts and disclosed material film are live. All eight routes return revision 2; all 13 original protected scopes have identical before/after counts and digests. Read `docs/redesign/old-design-migration-2026-10-08/PRODUCTION-SETUP.md` and the decision at `docs/decisions/2026-10-09-production-presentation-setup.md`.
+
+Stop here. M5 and subsequent phases require explicit permission. New editorial production remains 0/480. Full parity, native-reader, human screen-reader, physical-device and field checks remain open. No local QA records were transferred. This setup used the already deployed PR #46 application; its new local receipt/tooling does not imply another push or deployment.
+
+---
+
+# Previous release — M0–M4 through a detailed PR; await M5 permission
 
 9 October 2026. The owner explicitly requested pushing all completed local work into GitHub main through a detailed PR and then listing pending work. Read `docs/decisions/2026-10-09-release-m0-m4.md` and `docs/redesign/old-design-migration-2026-10-08/RELEASE-M0-M4.md`. This authorizes this candidate's branch push, PR, checked merge and deployment verification. Do not bypass branch protection or push directly to main. It does not authorize starting M5. The local-only wording below is historical for this candidate. The existing production runtime role cannot create the two missing presentation tables; report that activation gap honestly and never copy local QA revisions into production.
 

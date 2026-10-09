@@ -1,5 +1,7 @@
 # Rivya Living Art — continuation prompt
 
+**Current continuation override, 9 October 2026:** M0–M4 are delivered through PR #46; production setup is complete at presentation revision 2. Read `IMPLEMENTATION-CHECKPOINT.md`, `PRODUCTION-SETUP.md` and `PENDING-AFTER-M4.md` first. The owner now requires permission at every phase boundary and specifically requested a stop after Production setup. Do not restart M0 or start M5 without new explicit permission. The later labelled-concept/fictional-sample decision supersedes the genuine-only requirement in the historical prompt below; new entries remain 0/480. Future implementation remains local until a new applicable release request.
+
 Prepared 9 October 2026. Copy the instruction below into the new implementation chat. Its presence in the repository does not itself run implementation or authorize a later release.
 
 ```text
