@@ -1,4 +1,10 @@
-# Current implementation — M0–M4 verified for scope; await M5 permission, local only
+# Current release — M0–M4 through a detailed PR; await M5 permission
+
+9 October 2026. The owner explicitly requested pushing all completed local work into GitHub main through a detailed PR and then listing pending work. Read `docs/decisions/2026-10-09-release-m0-m4.md` and `docs/redesign/old-design-migration-2026-10-08/RELEASE-M0-M4.md`. This authorizes this candidate's branch push, PR, checked merge and deployment verification. Do not bypass branch protection or push directly to main. It does not authorize starting M5. The local-only wording below is historical for this candidate. The existing production runtime role cannot create the two missing presentation tables; report that activation gap honestly and never copy local QA revisions into production.
+
+---
+
+# Implementation checkpoint — M0–M4 verified for scope
 
 Latest owner steering: finish the already-started M4 phase, then obtain explicit permission before starting M5 or any subsequent phase. Add both website images and video. Read `docs/decisions/2026-10-09-phase-permission-and-media.md`. This supersedes automatic progression through the complete plan; local-only and preservation requirements still apply.
 
