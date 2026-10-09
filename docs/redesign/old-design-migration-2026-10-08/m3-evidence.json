@@ -1,0 +1,186 @@
+{
+  "phase": "M3",
+  "at": "2026-10-09T05:22:40.358Z",
+  "status": "verified-for-stated-scope",
+  "candidate": {
+    "base": "01453fb58d120b9dc251a895db6b72a683e41baf",
+    "applicationSha256": "e2b9f374c908b80c2464518d38a20b8503663b41446e9503d0c3dea95b967c45"
+  },
+  "schema": {
+    "at": "2026-10-09T05:06:25.623Z",
+    "target": "dedicated loopback QA",
+    "applications": 2,
+    "tables": [
+      "rivya_presentation_revisions",
+      "rivya_presentations"
+    ],
+    "existingRecordsUpdated": 0
+  },
+  "workflow": {
+    "at": "2026-10-09T05:19:30.251Z",
+    "candidate": {
+      "base": "01453fb58d120b9dc251a895db6b72a683e41baf",
+      "applicationSha256": "e2b9f374c908b80c2464518d38a20b8503663b41446e9503d0c3dea95b967c45"
+    },
+    "scope": "Compiled loopback app, source fixtures and new presentation record only",
+    "completed": true,
+    "human": false,
+    "physicalDevice": false,
+    "checks": [
+      {
+        "name": "Anonymous reads/writes return 401 and cross-origin writes return 403",
+        "passed": true
+      },
+      {
+        "name": "Authenticated editor cannot publish through the API",
+        "passed": true
+      },
+      {
+        "name": "Client content/snapshot injection and unsaved publish payloads are rejected",
+        "passed": true
+      },
+      {
+        "name": "Editor saves an additive design; stale revision returns 409 without changes",
+        "passed": true
+      },
+      {
+        "name": "Saved preview uses the real shared renderer with unchanged heading and product selection order",
+        "passed": true
+      },
+      {
+        "name": "Saved composition has one H1 and no body overflow at 320, 390, 800 and 1440 px",
+        "passed": true
+      },
+      {
+        "name": "Later drafts do not change historical preview or public layout; explicit Gujarati preview uses captured review state",
+        "passed": true
+      },
+      {
+        "name": "Mobile preview loads the exact saved revision in an actual 390 px iframe",
+        "passed": true
+      },
+      {
+        "name": "Simulated missing saved media reference prevents publication atomically",
+        "passed": true
+      },
+      {
+        "name": "Simulated changed homepage fingerprint prevents publishing a stale captured design",
+        "passed": true
+      },
+      {
+        "name": "History failure rolls back both draft and publication writes without changing the saved row",
+        "passed": true
+      },
+      {
+        "name": "Cancelled unsaved Studio navigation retains all design choices",
+        "passed": true
+      },
+      {
+        "name": "Lost post-save response keeps edits; latest comparison safely reconciles the committed revision",
+        "passed": true
+      },
+      {
+        "name": "Browser saves and previews the exact revision, publishes it, and confirms actual public revision and unchanged selections",
+        "passed": true,
+        "saved": 8,
+        "published": 9
+      },
+      {
+        "name": "Revision recovery creates a new draft while leaving the public composition unchanged",
+        "passed": true
+      },
+      {
+        "name": "History list is bounded and Studio editor fits a 390 px viewport",
+        "passed": true
+      },
+      {
+        "name": "No browser runtime errors or protected content changes",
+        "passed": true
+      }
+    ],
+    "browserErrors": [],
+    "final": {
+      "version": 10,
+      "publishedVersion": 9
+    }
+  },
+  "protectedComparison": {
+    "target": "dedicated loopback QA",
+    "all13ScopesUnchanged": true,
+    "summary": {
+      "rivya_catalogue": {
+        "count": 120,
+        "digest": "0f7bbce050fe4c830c32a28c351cb1e090788b9a58bba6737c5a581b7b323e58"
+      },
+      "rivya_content": {
+        "count": 56,
+        "digest": "e7cdfa7f700a18dbde8d53cbe3d0798788f2ea033140ec3fab94d132ffef2d0d"
+      },
+      "rivya_public_media": {
+        "count": 131,
+        "digest": "a3a399464c13206cab40df659efe4ea921835f2f01bc97ed7ce6651566e9206a"
+      },
+      "rivya_business_settings": {
+        "count": 1,
+        "digest": "03be771ace76ef6f0ec49e09b90a1d25910251d9511cd1ae25ac53f302004fb6"
+      },
+      "rivya_revisions": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_inquiries": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_studio_orders": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_studio_order_events": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_inquiry_notes": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_references": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_staff": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_privacy_controls": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_erasure_ledger": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  },
+  "validation": {
+    "unitTests": 301,
+    "failures": 0,
+    "productionBuild": "passed",
+    "typeValidation": "passed",
+    "changedSourceLint": "passed",
+    "diffCheck": "passed"
+  },
+  "visualReview": {
+    "reviewer": "assistant",
+    "desktopAndMobile": "reviewed",
+    "featuredLayout": "reviewed; existing three selections retained rather than fabricating a fourth old product",
+    "actualHumanAcceptance": false
+  },
+  "limits": [
+    "Fault injection affects only new QA presentation records/tables; missing-reference tests simulate saved dependency mismatch, not a real production withdrawal.",
+    "No live writes or release. The schema is not installed in production.",
+    "No human, native-reader, physical-device or field acceptance.",
+    "The full 18-section and other-page templates are M4 onward.",
+    "Editorial content remains 0 of 480; Drive deliveries remain 0."
+  ]
+}

@@ -1,6 +1,6 @@
 # Local implementation checkpoint — 9 October 2026
 
-**M0 baseline/isolation, M1 source contracts and M2 shared frames are verified for their recorded scopes. M3 is next. M3–M11 remain unfinished.** Continue the existing authorization; do not repeat the planning/release permission discussion.
+**M0 baseline/isolation, M1 source contracts, M2 shared frames and M3 homepage design workflow are verified for their recorded scopes. M4 is next. M4–M11 remain unfinished.** Continue the existing authorization; do not repeat the planning/release permission discussion.
 
 Branch: `codex/old-design-migration`, based on main `afba59f6adf6d3cdcc168f0d784d093a4cb4a294`. Old reference: `2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6`. Both remote main revisions and their READY production deployments were verified read-only. The original checkout was on main with only the cancelled audit untracked. That file was not copied, staged, changed or deleted.
 
@@ -29,9 +29,13 @@ The old blue/ivory/champagne palette, local Inter fonts, public header/footer/se
 
 The final candidate passes a production build/type validation, 298 unit tests, 22 frame checks, 20 cold/warm browser samples, ten route screenshots and three keyboard flows. No body overflow or browser errors occurred. All 13 protected local scopes still match baseline. Fourteen semantic contrast pairs and converted font metrics pass. Desktop Studio sample CLS is about 0.009, down from the M0 sample of 0.112; these are local unthrottled samples, not field evidence. See `M2-SHARED-FRAMES.md`, `m2-fonts.json` and `m2-evidence.json`. Full-page contrast/parity and human/device acceptance remain open.
 
+## Completed M3 homepage design workflow
+
+The separate presentation record, additive schema, `/studio/sections` editor and exact saved desktop/mobile preview now work through current authentication and public rendering. All 17 workflow checks and 301 unit tests pass, with production build/type validation and changed-source lint. All 13 protected local scopes still match. See `M3-PRESENTATION-WORKFLOW.md` and `m3-evidence.json` for the failure simulations, iframe fix, recovery and limits. The new schema exists only in isolated local QA. The original records and live database are unchanged.
+
 ## Earliest unfinished work
 
-Start M3's complete presentation-only homepage save → actual saved preview → isolated publication → public readback → restore-to-draft flow. Use a new additive presentation record and revision store so existing content, products, crops and history remain unchanged. Verify permission, stale-version, dependency and recovery states before marking this phase complete. Then proceed through the remaining phases in dependency order.
+Start M4-01: expand the accepted presentation pattern to all 18 homepage sections in source order. Furniture and Rooms stay distinct/default-off; Portfolio concepts and fictional Testimonial samples require their explicit labels; workshop/printing business claims remain evidence-gated. Then complete M4 story/process/commission/contact structures and shared section editing before the dependent M5–M10 phases. Existing wording, selections and stored media usage remain frozen. Unbound source slots are not permission to invent business facts.
 
 ## Content and external evidence
 

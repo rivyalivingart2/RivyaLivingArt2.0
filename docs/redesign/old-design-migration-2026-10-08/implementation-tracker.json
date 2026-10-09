@@ -679,9 +679,9 @@
         "M2"
       ],
       "acceptance": "Read adapters preserve existing payloads and IDs; new schema fields are optional/versioned and migrations idempotent.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m3-evidence.json; M3-PRESENTATION-WORKFLOW.md"
     },
     {
       "id": "M3-02",
@@ -691,9 +691,9 @@
         "M2"
       ],
       "acceptance": "Preview binds to exact draft revision, locale, selected asset and layout; it cannot show unrelated live editor state.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m3-evidence.json; M3-PRESENTATION-WORKFLOW.md"
     },
     {
       "id": "M3-03",
@@ -703,9 +703,9 @@
         "M2"
       ],
       "acceptance": "Use existing exact content/product selections; new sample copy belongs only to isolated QA fixtures.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m3-evidence.json; M3-PRESENTATION-WORKFLOW.md"
     },
     {
       "id": "M3-04",
@@ -715,9 +715,9 @@
         "M2"
       ],
       "acceptance": "Public projection matches intended revision; recovery does not publish, alter product records or reset settings.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m3-evidence.json; M3-PRESENTATION-WORKFLOW.md"
     },
     {
       "id": "M3-05",
@@ -727,9 +727,9 @@
         "M2"
       ],
       "acceptance": "401/403/409, missing asset, failed save/publish and unsaved navigation preserve data; lightweight list summaries remain bounded.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-for-stated-scope",
+      "owner": "Codex local implementation",
+      "evidence": "m3-evidence.json; M3-PRESENTATION-WORKFLOW.md"
     },
     {
       "id": "M4-01",
@@ -1261,5 +1261,5 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "M0 baseline, M1 contracts and M2 shared-frame engineering scope verified locally. Earliest unfinished phase M3. New content 0/480; no release or production writes. Labelled concepts/samples authorized in owner decision of 9 October."
+  "note": "M0–M3 verified for recorded local engineering scope. Earliest unfinished phase M4. New content 0/480; Drive deliveries 0; no release or production writes."
 }
