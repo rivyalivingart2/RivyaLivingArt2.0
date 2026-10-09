@@ -439,8 +439,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/analytics",
@@ -448,15 +449,16 @@
       "phase": "M6",
       "destination": {
         "path": "/studio/analytics",
-        "owner": "src/lib/studio-work-queue.ts",
+        "owner": "src/app/api/studio/analytics/route.ts",
         "selection": "bounded role-scoped list",
         "state": "new aggregate-only view; no tracking"
       },
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/blog/[id]",
@@ -471,8 +473,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/blog/new",
@@ -487,8 +490,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/blog",
@@ -503,8 +507,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/catalog-fill/conflicts",
@@ -519,8 +524,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/catalog-fill",
@@ -535,8 +541,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/categories",
@@ -551,8 +558,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/content-gaps",
@@ -567,8 +575,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/content-health",
@@ -583,8 +592,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/content-lab",
@@ -599,8 +609,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/custom-pages/[id]",
@@ -615,8 +626,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/custom-pages/new",
@@ -631,8 +643,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/custom-pages",
@@ -647,8 +660,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/exports",
@@ -663,8 +677,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/faqs",
@@ -679,24 +694,26 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/forms",
       "oldSource": "src/app/studio/(dashboard)/forms/page.tsx",
       "phase": "M6",
       "destination": {
-        "path": "/studio/products",
+        "path": "/studio/forms",
         "owner": "src/app/api/studio/workspace/route.ts",
-        "selection": "bounded role-scoped list",
-        "state": "existing forms alias; immutable existing form schemas"
+        "selection": "exact current product selected by record query; existing customization tab",
+        "state": "current forms editor view; no product mutation during migration"
       },
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/import",
@@ -711,8 +728,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-prerequisite-view; service-not-activated",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/inquiries/[id]",
@@ -727,8 +745,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "retained-current-service; M7-detail-and-print-pending",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/inquiries",
@@ -743,8 +762,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "retained-current-service; M7-detail-and-print-pending",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/materials",
@@ -759,8 +779,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/media",
@@ -775,8 +796,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/navigation",
@@ -791,8 +813,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio",
@@ -807,8 +830,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current scoped counts, IST follow-ups and real action destinations only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/pages/[id]",
@@ -823,8 +847,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/pages",
@@ -839,8 +864,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/portfolio/[id]",
@@ -857,8 +883,9 @@
       "overrides": [
         "2026-10-09-labelled-editorial-content"
       ],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/portfolio/new",
@@ -875,8 +902,9 @@
       "overrides": [
         "2026-10-09-labelled-editorial-content"
       ],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/portfolio",
@@ -893,8 +921,9 @@
       "overrides": [
         "2026-10-09-labelled-editorial-content"
       ],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/process",
@@ -909,8 +938,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/products/[id]",
@@ -925,8 +955,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/products/new",
@@ -941,8 +972,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/products",
@@ -957,8 +989,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/research",
@@ -973,8 +1006,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/scraper/analytics",
@@ -989,8 +1023,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/scraper/confirmed",
@@ -1005,8 +1040,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/scraper/explorer",
@@ -1021,8 +1057,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/scraper/large-format",
@@ -1037,8 +1074,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/scraper/mapping",
@@ -1053,8 +1091,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/scraper",
@@ -1069,8 +1108,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/scraper/quality",
@@ -1085,8 +1125,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/scraper/review",
@@ -1101,8 +1142,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/scraper/runs",
@@ -1117,8 +1159,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/scraper/sources/[key]",
@@ -1133,8 +1176,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/scraper/sources",
@@ -1149,8 +1193,9 @@
       "referenceOnly": true,
       "protectedGuard": "Earlier scraper and ingestion exclusion remains. No run, installation, credential, ingest or product mutation. Account for child layout in source ledger only.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "excluded-reference-only",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/sections",
@@ -1165,8 +1210,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/seo",
@@ -1181,8 +1227,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/settings",
@@ -1197,8 +1244,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/site-copy",
@@ -1213,8 +1261,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/site-images",
@@ -1229,8 +1278,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/subscribers",
@@ -1245,8 +1295,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-prerequisite-view; service-not-activated",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/testimonials/[id]",
@@ -1263,8 +1314,9 @@
       "overrides": [
         "2026-10-09-labelled-editorial-content"
       ],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/testimonials/new",
@@ -1281,8 +1333,9 @@
       "overrides": [
         "2026-10-09-labelled-editorial-content"
       ],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/testimonials",
@@ -1299,8 +1352,9 @@
       "overrides": [
         "2026-10-09-labelled-editorial-content"
       ],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/users",
@@ -1315,8 +1369,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/forgot-password",
@@ -1331,8 +1386,9 @@
       "referenceOnly": false,
       "protectedGuard": "Match forms/states where supported; preserve current auth mechanisms, no old Auth.js actions or new public signup. Unsupported recovery stays an explicit scope decision.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-current-login-adapter; old-auth-mutation-excluded",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/inquiries/[id]/card",
@@ -1347,8 +1403,9 @@
       "referenceOnly": false,
       "protectedGuard": "Current catch-all admits only module segments. Record/new/print selection needs validated query/state or an explicitly implemented new route; no guessed nested path. Server authorization and existing fields preserved.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "retained-current-service; M7-detail-and-print-pending",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/login",
@@ -1363,8 +1420,9 @@
       "referenceOnly": false,
       "protectedGuard": "Match forms/states where supported; preserve current auth mechanisms, no old Auth.js actions or new public signup. Unsupported recovery stays an explicit scope decision.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-local-scope",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/reset-password",
@@ -1379,8 +1437,9 @@
       "referenceOnly": false,
       "protectedGuard": "Match forms/states where supported; preserve current auth mechanisms, no old Auth.js actions or new public signup. Unsupported recovery stays an explicit scope decision.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-current-login-adapter; old-auth-mutation-excluded",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     },
     {
       "oldRoute": "/studio/signup",
@@ -1395,8 +1454,9 @@
       "referenceOnly": false,
       "protectedGuard": "Match forms/states where supported; preserve current auth mechanisms, no old Auth.js actions or new public signup. Unsupported recovery stays an explicit scope decision.",
       "overrides": [],
-      "implementation": "not-accepted",
-      "visual": "not-run"
+      "implementation": "verified-current-login-adapter; old-auth-mutation-excluded",
+      "visual": "M10-full-parity-not-run",
+      "evidence": "m6-evidence.json"
     }
   ],
   "studioDestinationContracts": [
@@ -1409,7 +1469,9 @@
         "selection": "role-scoped counts, current eight-stage orders and IST due work",
         "state": "existing"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Commissions — Today",
@@ -1420,18 +1482,22 @@
         "selection": "bounded role-scoped list",
         "state": "existing scoped order service"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-current-workspace; M7-enhancements-pending",
+      "implementation": "verified-current-workspace; M7-enhancements-pending",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Analytics — Today",
       "oldRoute": "/studio/analytics",
       "destination": {
         "path": "/studio/analytics",
-        "owner": "src/lib/studio-work-queue.ts",
+        "owner": "src/app/api/studio/analytics/route.ts",
         "selection": "bounded role-scoped list",
         "state": "new aggregate-only view; no tracking"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Activity — Today",
@@ -1442,7 +1508,9 @@
         "selection": "bounded role-scoped list",
         "state": "existing"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Products — Catalogue",
@@ -1453,7 +1521,9 @@
         "selection": "bounded role-scoped list",
         "state": "existing; query-selected editor proposed; no old transfer"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Categories — Catalogue",
@@ -1464,7 +1534,9 @@
         "selection": "bounded role-scoped list",
         "state": "new read-only category projection"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Media Library — Catalogue",
@@ -1475,7 +1547,9 @@
         "selection": "bounded role-scoped list",
         "state": "existing public assets; private references remain order-scoped"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Bulk Import — Catalogue",
@@ -1486,7 +1560,9 @@
         "selection": "bounded role-scoped list",
         "state": "conditional reference form only; product ingest excluded"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-prerequisite-view; service-not-activated",
+      "implementation": "verified-prerequisite-view; service-not-activated",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Catalog Fill — Catalogue",
@@ -1497,7 +1573,9 @@
         "selection": "Reference-only source/layout coverage; no route, action, credential, import or ingest",
         "state": "excluded"
       },
-      "activation": "excluded"
+      "activation": "excluded-reference-only",
+      "implementation": "excluded-reference-only",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Exports — Catalogue",
@@ -1508,7 +1586,9 @@
         "selection": "bounded role-scoped list",
         "state": "new view of existing scoped managed exports; admin-only; no export executed by migration"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Product Scraper — Catalogue",
@@ -1519,7 +1599,9 @@
         "selection": "Reference-only source/layout coverage; no route, action, credential, import or ingest",
         "state": "excluded"
       },
-      "activation": "excluded"
+      "activation": "excluded-reference-only",
+      "implementation": "excluded-reference-only",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Research — Catalogue",
@@ -1530,7 +1612,9 @@
         "selection": "bounded role-scoped list",
         "state": "new editorial research notes only; ingestion excluded"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Content Gaps — Catalogue",
@@ -1541,7 +1625,9 @@
         "selection": "bounded role-scoped list",
         "state": "new read-only view"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Site Copy — Content",
@@ -1552,7 +1638,9 @@
         "selection": "bounded role-scoped list",
         "state": "existing"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Site Images — Content",
@@ -1563,7 +1651,9 @@
         "selection": "bounded role-scoped list",
         "state": "existing"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Page Sections — Content",
@@ -1574,7 +1664,9 @@
         "selection": "bounded role-scoped list",
         "state": "new separate versioned presentation adapter"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Process Steps — Content",
@@ -1585,7 +1677,9 @@
         "selection": "bounded role-scoped list",
         "state": "new process-section view"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Materials — Content",
@@ -1596,7 +1690,9 @@
         "selection": "bounded role-scoped list",
         "state": "new material-section view"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Navigation — Content",
@@ -1607,18 +1703,22 @@
         "selection": "bounded role-scoped list",
         "state": "existing admin-only"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Commission Form — Content",
       "oldRoute": "/studio/forms",
       "destination": {
-        "path": "/studio/products",
+        "path": "/studio/forms",
         "owner": "src/app/api/studio/workspace/route.ts",
-        "selection": "bounded role-scoped list",
-        "state": "existing forms alias; immutable existing form schemas"
+        "selection": "exact current product customization tab",
+        "state": "current forms view, protected records retained"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Journal — Editorial",
@@ -1629,7 +1729,9 @@
         "selection": "bounded role-scoped list",
         "state": "existing alias; dedicated article filter proposed"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Portfolio — Editorial",
@@ -1640,7 +1742,9 @@
         "selection": "bounded role-scoped list",
         "state": "new classified editorial adapter"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Testimonials — Editorial",
@@ -1651,7 +1755,9 @@
         "selection": "bounded role-scoped list",
         "state": "new classified editorial adapter; no fabricated ratings"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "FAQs — Editorial",
@@ -1662,7 +1768,9 @@
         "selection": "bounded role-scoped list",
         "state": "new additive editorial adapter"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Pages — Editorial",
@@ -1673,7 +1781,9 @@
         "selection": "bounded role-scoped list",
         "state": "existing alias; dedicated page filter proposed"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Landing Pages — Editorial",
@@ -1684,7 +1794,9 @@
         "selection": "bounded role-scoped list",
         "state": "new block editor under current revision permissions"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Site Settings — Settings",
@@ -1695,7 +1807,9 @@
         "selection": "bounded role-scoped list",
         "state": "existing admin-only"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "SEO — Settings",
@@ -1706,7 +1820,9 @@
         "selection": "bounded role-scoped list",
         "state": "new existing-document audit view; protected fields read-only"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Users — Settings",
@@ -1717,7 +1833,9 @@
         "selection": "bounded role-scoped list",
         "state": "existing admin-only"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Subscribers — Settings",
@@ -1728,7 +1846,9 @@
         "selection": "bounded role-scoped list",
         "state": "conditional; no collection/service/export activation"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-prerequisite-view; service-not-activated",
+      "implementation": "verified-prerequisite-view; service-not-activated",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Content Health — Settings",
@@ -1739,7 +1859,9 @@
         "selection": "bounded role-scoped list",
         "state": "existing"
       },
-      "activation": "current supported view; detailed parity pending"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     },
     {
       "label": "Content Lab — Settings",
@@ -1750,7 +1872,9 @@
         "selection": "bounded role-scoped list",
         "state": "new planning/review view; no automatic publish"
       },
-      "activation": "activate only after current-service adapter and authorization checks"
+      "activation": "verified-local-scope",
+      "implementation": "verified-local-scope",
+      "evidence": "m6-evidence.json"
     }
   ],
   "sectionContracts": [

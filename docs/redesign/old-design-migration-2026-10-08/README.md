@@ -6,7 +6,7 @@ Planning prepared 8 October 2026; repository handoff prepared 9 October 2026.
 
 **Continue in another chat:** [Copy the continuation prompt](CONTINUE-IN-NEW-CHAT.md).
 
-This is a documentation release. It does not implement M0–M11, create 480 content records, change the application, or publish Studio content. All implementation tasks remain planned. Historical source/live observations are dated; verify current repository and runtime state before starting.
+Current implementation: M0–M4 and Production setup are delivered; M5 and M6 are verified locally for their documented engineering scope. Read [the checkpoint](IMPLEMENTATION-CHECKPOINT.md) and [pending list](PENDING-AFTER-M6.md). Stop before M7 without explicit permission. Production content remains 0/480. The planning materials below remain the full reference; historical observations are not fresh acceptance evidence.
 
 ## What is included
 

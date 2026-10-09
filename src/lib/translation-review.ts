@@ -8,7 +8,7 @@ const textArrays=new Set(['paragraphs','checklist','strip']);
 export function translationFields(document:ContentDocument):TranslationField[]{
  const result:TranslationField[]=[];
  const visit=(value:unknown,path:string,key:string)=>{
-  if(typeof value==='string'){if(value.trim()&&(textKeys.has(key)||textArrays.has(key)))result.push({path,source:value});return;}
+  if(typeof value==='string'){if(value.trim()&&(textKeys.has(key)||textArrays.has(key)||key==='value'&&/^editorial\.details\.\d+\.value$/.test(path)))result.push({path,source:value});return;}
   if(Array.isArray(value)){value.forEach((v,i)=>visit(v,path+'.'+i,key));return;}
   if(value&&typeof value==='object')for(const [k,v] of Object.entries(value)){
    if(['sourceNote','evidence','translations','homeSnapshot','pageSnapshot','relatedProductIds','productIds','categories'].includes(k))continue;

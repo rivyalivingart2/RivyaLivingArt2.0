@@ -1,5 +1,5 @@
 {
-  "status": "local_implementation_in_progress",
+  "status": "local_m5_m6_verified_stop_before_m7",
   "existingContentFrozen": true,
   "oldPageTemplates": 85,
   "oldSectionDefinitions": 74,
@@ -865,9 +865,9 @@
         "M3"
       ],
       "acceptance": "Linked scoped counts, correct periods and source labels; no fake revenue, conversions or order activity.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-local-scope",
+      "owner": "Codex",
+      "evidence": "M6-STUDIO-WORKSPACES.md; m6-evidence.json; m6-studio-dispositions.json"
     },
     {
       "id": "M6-02",
@@ -878,9 +878,9 @@
         "M3"
       ],
       "acceptance": "Products/categories/media/forms/import/export views preserve records; scraper and ingestion-dependent Catalog Fill remain on hold, not mock successes.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-local-scope",
+      "owner": "Codex",
+      "evidence": "M6-STUDIO-WORKSPACES.md; m6-evidence.json; m6-studio-dispositions.json"
     },
     {
       "id": "M6-03",
@@ -891,9 +891,9 @@
         "M3"
       ],
       "acceptance": "Exact-record links and actual preview; existing values are viewable and preserved during migration, with additive new-record editing.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-local-scope",
+      "owner": "Codex",
+      "evidence": "M6-STUDIO-WORKSPACES.md; m6-evidence.json; m6-studio-dispositions.json"
     },
     {
       "id": "M6-04",
@@ -904,9 +904,9 @@
         "M3"
       ],
       "acceptance": "Journal, Portfolio, Testimonials, FAQs, Pages and Landing Pages support genuine record lifecycle and source requirements.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-local-scope",
+      "owner": "Codex",
+      "evidence": "M6-STUDIO-WORKSPACES.md; m6-evidence.json; m6-studio-dispositions.json"
     },
     {
       "id": "M6-05",
@@ -917,9 +917,9 @@
         "M3"
       ],
       "acceptance": "Current auth/staff policy retained; no new public signup or bulk outreach; non-supported services have explicit prerequisites.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified-local-scope",
+      "owner": "Codex",
+      "evidence": "M6-STUDIO-WORKSPACES.md; m6-evidence.json; m6-studio-dispositions.json"
     },
     {
       "id": "M7-01",
@@ -1261,11 +1261,10 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "M0-M5 verified for their recorded engineering scopes. M6 authorized next. No production write or new release; editorial production remains 0/480.",
+  "note": "M0–M6 verified for their recorded engineering scopes. M5/M6 remain local. STOP before M7; permission required. Full parity and human/device acceptance remain M10. Production editorial remains 0/480.",
   "nextPhaseAuthorization": {
-    "phase": "M6",
-    "state": "authorized-local",
-    "source": "docs/decisions/2026-10-09-m5-m6.md",
-    "stopBefore": "M7"
+    "phase": "M7",
+    "state": "requires-explicit-owner-permission",
+    "source": "docs/decisions/2026-10-09-m5-m6.md"
   }
 }

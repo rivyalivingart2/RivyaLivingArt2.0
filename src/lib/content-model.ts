@@ -43,7 +43,7 @@ export function validContent(value:unknown,base?:ContentDocument):value is Conte
 function checkContent(value:unknown,base?:ContentDocument):value is ContentDocument{
  if(!value||typeof value!=='object')return false;
  const d=value as ContentDocument;
- if(!cleanText(d.id,100)||!['page','article'].includes(d.kind)||!cleanText(d.title,120)||!cleanText(d.eyebrow,100)||!cleanText(d.description,300)||!Array.isArray(d.sections)||d.sections.length<1||d.sections.length>(d.id===sharedCopyId?40:20))return false;
+ if(!cleanText(d.id,100)||!['page','article'].includes(d.kind)||!cleanText(d.title,120)||!cleanText(d.eyebrow,100)||!cleanText(d.description,300)||!Array.isArray(d.sections)||(!d.landing&&d.sections.length<1)||d.sections.length>(d.id===sharedCopyId?40:20))return false;
  if(base&&(d.id!==base.id||d.route!==base.route||d.kind!==base.kind))return false;
  if(d.id===homeId){if(!validHomepage(d)||!base)return false;}
  else if(d.homepage!==undefined||d.homeSnapshot!==undefined)return false;

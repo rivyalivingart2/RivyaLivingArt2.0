@@ -1,6 +1,8 @@
 // Fixed SQL fragments only. Request values are bound parameters, never SQL text.
 const summary = (column: 'draft' | 'published') => `jsonb_build_object(
  'id',${column}->'id','kind',${column}->'kind','route',${column}->'route',
+ 'editorial',CASE WHEN ${column}->'editorial' IS NOT NULL THEN jsonb_build_object('schemaVersion',1,'kind',${column}->'editorial'->'kind','classification',${column}->'editorial'->'classification') ELSE NULL END,
+ 'landing',CASE WHEN ${column}->'landing' IS NOT NULL THEN jsonb_build_object('schemaVersion',1,'blocks','[]'::jsonb) ELSE NULL END,
  'title',${column}->'title','eyebrow',${column}->'eyebrow','description','',
  'sections',COALESCE((SELECT jsonb_agg(jsonb_strip_nulls(jsonb_build_object(
   'id',section->'id','heading',section->'heading','group',section->'group','paragraphs','[]'::jsonb)) ORDER BY position)

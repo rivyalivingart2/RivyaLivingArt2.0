@@ -3,9 +3,13 @@ import type {ContentDocument} from './content-model';
 import {validContent,baselineContent} from './content-model';
 import {bodyLinks,safeEditorialHref,validEditorialBody} from './editorial-body';
 import {validUsage} from './homepage-model';
+import {editorialPublicationIssues} from './editorial-record-model';
+import {validLanding} from './landing-model';
 import {editorialSlots} from './editorial-slots';
 export type ContentIssue={message:string;field:string};
 export function issueField(d:ContentDocument,message:string){
+ if(d.editorial&&/genuine|permission|attribution|source or related policy/i.test(message))return 'editorial';
+ for(const b of d.landing?.blocks||[])if(message.startsWith(b.id+':')||message.includes('Block '+b.id)||message.startsWith(b.heading+':'))return 'block-'+b.id;
  for(const s of d.sections)if(message.startsWith(s.id+':')||[...bodyLinks(s.body),s.policyHref,s.action?.href].some(h=>h&&message.includes(h)))return 'section-'+s.id;
  for(const s of d.homepage?.sections||[])if(message.startsWith(s.id+':')||[s.action?.href,...(s.items||[]).map(i=>i.action?.href),...(s.productIds||[]),...(s.articleIds||[])].some(v=>v&&message.includes(v)))return 'section-'+s.id;
  if(message.startsWith('Product ')&&d.relatedProductIds?.some(id=>message.includes(id)))return 'relatedProductIds';
@@ -14,7 +18,10 @@ export function issueField(d:ContentDocument,message:string){
 export function contentIssues(d:ContentDocument):ContentIssue[]{
  const issues:ContentIssue[]=[];
  const add=(field:string,message:string)=>issues.push({field,message});
- for(const slot of editorialSlots(d))if(slot.usage&&!validUsage(slot.usage))add(slot.key==='header'?'image':'section-'+(slot.sectionId||'hero'),slot.label+': complete the image description and both crops.');
+ for(const message of editorialPublicationIssues(d))add('editorial',message);
+ const firstBlock=d.landing?.blocks[0]?.id;
+ if(d.landing&&!validLanding(d.landing))add('block-'+firstBlock,'Check block headings, unique opening/closing blocks, images, links and selection limits.');
+ for(const slot of editorialSlots(d))if(slot.usage&&!validUsage(slot.usage))add(slot.blockId?'block-'+slot.blockId:slot.key.startsWith('portfolio-gallery:')?'editorial':slot.key==='header'?'image':'section-'+(slot.sectionId||'hero'),slot.label+': complete the image description and both crops.');
  if(!d.title.trim()||d.title.length>120)add('title','Enter a title of up to 120 characters.');
  if(!d.eyebrow.trim()||d.eyebrow.length>100)add('eyebrow','Enter an eyebrow of up to 100 characters.');
  if(d.id===sharedCopyId)for(const f of sharedCopyFields){const b=d.sections.find(s=>s.id===copyFieldId(f.id));if(!b?.paragraphs[0]?.trim()||b.paragraphs[0].length>300)add('section-'+copyFieldId(f.id),f.label+': enter a label of up to 300 characters.');}

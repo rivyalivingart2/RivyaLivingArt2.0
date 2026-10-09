@@ -6,6 +6,7 @@ import {DraftRecovery} from './draft-recovery';
 import {useLinkedRecord,LinkedRecordNotice} from './linked-record';
 import {publicationState,draftState} from '@/lib/content-health';
 import {useEffect,useState} from 'react';
+import {useSearchParams} from 'next/navigation';
 import type {ShopProduct,CustomField,ProductTranslation} from '@/lib/shop-model';
 import {localeLabels,locales,type Locale} from '@/lib/site-settings-model';
 import {fieldVisible,productFields,hasReviewedCapabilities} from '@/lib/product-form';
@@ -20,15 +21,19 @@ import {Plus,RefreshCw,X,ExternalLink} from 'lucide-react';
 
 type Entry={product:ShopProduct;reviewedImages?:{image:string;scene:string|null;gallery:NonNullable<ShopProduct['gallery']>};version:number;publishedVersion:number;visible:boolean;hasDraft:boolean;published:ShopProduct|null};
 
-export function CatalogueEditor({admin}:{admin:boolean}){
+export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly?:boolean}){
+ const params=useSearchParams();
+ const [createRequested]=useState(()=>params.get('create')==='1');
+ const newEntry=():Entry=>({version:0,publishedVersion:0,published:null,visible:false,hasDraft:true,product:{id:'RLA-'+crypto.randomUUID(),slug:'new-piece-'+crypto.randomUUID().slice(0,8),name:'New piece',subtitle:'',category:'Tables',tier:'large',image:'',story:'',fields:[{id:'brief',label:'Your requirements',type:'text',required:true,maxLength:240}],revision:1}});
+ const [categoryFilter,setCategoryFilter]=useState(params.get('category')||'');
  const [editing,setEditing]=useState(false);
  const [loaded,setLoaded]=useState(false),[publicationFilter,setPublicationFilter]=useState('all');
  const [media,setMedia]=useState<PublicMedia[]>([]),[preview,setPreview]=useState(false),[previewAnswers,setPreviewAnswers]=useState<Record<string,string>>({});
- const [activeTab,setActiveTab]=useState<string>('general');
+ const [activeTab,setActiveTab]=useState<string>(formsOnly?'customization':'general');
  const [translationLocale,setTranslationLocale]=useState<Locale>('hi');
- const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(''),[tierFilter,setTierFilter]=useState<'all'|'large'|'memory'|'personal'>('all'),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading catalogue…'),[dirty,setDirty]=useState(false);
+ const [entries,setEntries]=useState<Entry[]>([]),[entry,setEntry]=useState<Entry|null>(null),[query,setQuery]=useState(params.get('q')||''),[tierFilter,setTierFilter]=useState<'all'|'large'|'memory'|'personal'>('all'),[busy,setBusy]=useState(false),[message,setMessage]=useState('Loading catalogue…'),[dirty,setDirty]=useState(false);
  async function load(id?:string){const data=await studioFetch('/api/studio/workspace?view=catalogue');const next=id?data.products.find((e:Entry)=>e.product.id===id):null;if(id&&!next)throw Error('Saved product is unavailable. Your local draft is retained.');setEntries(data.products);setLoaded(true);if(next)setEntry(next);}
- useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia;reviewedMedia:PublicMedia})=>e.reviewedMedia||e.media))).catch(()=>setMessage('Approved image choices are temporarily unavailable.'));void studioFetch('/api/studio/workspace?view=catalogue').then(data=>{setEntries(data.products);setLoaded(true);setMessage('Drafts are shared across devices. Only published content appears on the website.');}).catch(e=>setMessage(e.message));},[]);
+ useEffect(()=>{void studioFetch('/api/studio/media').then(d=>setMedia(d.media.map((e:{media:PublicMedia;reviewedMedia:PublicMedia})=>e.reviewedMedia||e.media))).catch(()=>setMessage('Approved image choices are temporarily unavailable.'));void studioFetch('/api/studio/workspace?view=catalogue').then(data=>{setEntries(data.products);setLoaded(true);if(createRequested){setEntry(newEntry());setEditing(true);setDirty(true);}setMessage('Drafts are shared across devices. Only published content appears on the website.');}).catch(e=>setMessage(e.message));},[createRequested]);
  useEffect(()=>{const warn=(e:BeforeUnloadEvent)=>{if(dirty){e.preventDefault();e.returnValue='';}};window.addEventListener('beforeunload',warn);return()=>window.removeEventListener('beforeunload',warn);},[dirty]);
  function change(p:Partial<ShopProduct>){if(!editing){setMessage('Protected review: open the existing editing controls only for an authorized catalogue change.');return;}setEntry(e=>e?{...e,product:{...e.product,...p}}:null);setDirty(true);}
  function field(index:number,patch:Partial<CustomField>){if(entry)change({fields:entry.product.fields.map((f,i)=>i===index?{...f,...patch}:f)});}
@@ -60,6 +65,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
  }
 
  const filteredEntries = entries.filter(e => {
+  if(categoryFilter&&e.product.category!==categoryFilter)return false;
   if(publicationFilter!=='all'&&publicationState(e.published,e.visible)!==publicationFilter)return false;
   if (tierFilter !== 'all' && e.product.tier !== tierFilter) return false;
   if (!query) return true;
@@ -69,15 +75,15 @@ export function CatalogueEditor({admin}:{admin:boolean}){
  const {page, setPage, totalPages, paginatedItems} = usePagination(filteredEntries, 20);
  const switching=useRecordSwitch(dirty);
  const linked=useLinkedRecord({editor:'products',records:entries,loaded,selectedId:entry?.product.id,idOf:e=>e.product.id,busy,onSelect:(next,target)=>{
-  if(next.product.id===entry?.product.id){setActiveTab(target.tab);return true;}
-  return switching.request(()=>{setEditing(false);setEntry(structuredClone(next));setDirty(false);setPreview(false);setPreviewAnswers({});setQuery('');setTierFilter('all');setPage(Math.floor(entries.findIndex(e=>e.product.id===next.product.id)/20)+1);setActiveTab(target.tab);});
+  if(next.product.id===entry?.product.id){setActiveTab(formsOnly?'customization':target.tab);return true;}
+  return switching.request(()=>{setEditing(false);setEntry(structuredClone(next));setDirty(false);setPreview(false);setPreviewAnswers({});setQuery('');setTierFilter('all');setPage(Math.floor(entries.findIndex(e=>e.product.id===next.product.id)/20)+1);setActiveTab(formsOnly?'customization':target.tab);});
  }});
 
  return (
   <>
    <div className={s.heading}>
     <div>
-     <h1>Pieces &amp; possibilities.</h1>
+     <h1>{formsOnly?'Commission forms.':'Pieces & possibilities.'}</h1>
      <p>Review existing product details, forms and publication state.</p>
     </div>
     <button
@@ -92,6 +98,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
 
    <p className={s.protectedNote}>Protected product records: review without changing existing facts, gallery associations or forms. No old products are imported. Editing controls remain available for a deliberate, separately authorized catalogue change.</p><p className={s.status} role="status">{message}</p><LinkedRecordNotice {...linked}/><RecordSwitchNotice control={switching}/>
 
+   <label>Category<select value={categoryFilter} onChange={e=>setCategoryFilter(e.target.value)}><option value="">All categories</option>{[...new Set(entries.map(e=>e.product.category))].sort().map(category=><option key={category}>{category}</option>)}</select></label>
    {/* Collection Filter Tabs */}
    <div className={s.categoryTabs} role="tablist" aria-label="Filter by collection">
     <button
@@ -139,7 +146,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
       onClick={()=>switching.request(()=>{
         setEditing(true);setEntry({version:0,publishedVersion:0,published:null,visible:false,hasDraft:true,product:{id:'RLA-'+crypto.randomUUID(),slug:'new-piece-'+crypto.randomUUID().slice(0,8),name:'New piece',subtitle:'',category:'Tables',tier:tierFilter === 'all' ? 'large' : tierFilter,image:'',story:'',fields:[{id:'brief',label:'Your requirements',type:'text',required:true,maxLength:240}],revision:1}});
         setDirty(true);
-        setActiveTab('general');
+        setActiveTab(formsOnly?'customization':'general');
       })}
       style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
     >
@@ -179,7 +186,7 @@ export function CatalogueEditor({admin}:{admin:boolean}){
             setEditing(false);setEntry(structuredClone(e));
             setPreviewAnswers({});
             setDirty(false);
-            setActiveTab('general');
+            setActiveTab(formsOnly?'customization':'general');
           });}}
         >
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
