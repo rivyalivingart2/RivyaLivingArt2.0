@@ -34,6 +34,6 @@ export async function routeMetadata(route:string):Promise<Metadata>{
   if(p){title=p.title;description=p.description;image=p.image;imageAlt=p.imageAlt;}
  }else {const d=await publishedPage(route);if(d){title=d.title;description=d.description;const share=publishedShareImage(d);if(share){image=share.path;imageAlt=share.alt;}}}
  if(!title)return {title:'Page unavailable',robots:{index:false,follow:false}};
- const index=indexingEnabled()&&isIndexablePublicPath(route)&&(route!=='/portfolio'||approvedProjects.some(p=>!!p.approvalRecord)||(await publishedContent()).some(p=>p.editorial?.kind==='portfolio'));
+ const index=indexingEnabled()&&isIndexablePublicPath(route)&&(route!=='/portfolio'||approvedProjects.some(p=>!!p.approvalRecord)||(await publishedContent('en',undefined,'')).some(p=>p.editorial?.kind==='portfolio'));
  return {title,description,alternates:{canonical:siteOrigin+route},robots:{index,follow:index},openGraph:{type:route.startsWith('/journal/')?'article':'website',title,description,url:siteOrigin+route,siteName:'RivyaLivingArt',images:[{url:siteOrigin+image,alt:imageAlt}]},twitter:{card:'summary_large_image',title,description,images:[{url:siteOrigin+image,alt:imageAlt}]}};
 }

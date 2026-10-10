@@ -1,3 +1,4 @@
+import {localizeSnapshot} from './editorial-language-presentation';
 import {publicDiscovery} from './editorial-metadata';
 import {publishedOrders} from './editorial-order-store';
 import {orderedItems} from './editorial-order';
@@ -39,7 +40,7 @@ export const publishedContent=cache(async(locale:Locale='en',route?:string,snaps
    ...(d.featuredArticleIds?{featuredArticleIds:[...d.featuredArticleIds]}:{}),
    ...(d.effectiveDate?{effectiveDate:d.effectiveDate}:{}),
    ...(d.editorial?{editorial:publicEditorial(d.editorial)}:{}),...(d.landing?{landing:d.landing}:{}),
-   ...(!d.homepage&&(snapshotRoute===undefined||d.route===snapshotRoute)?{pageSnapshot:compilePageSnapshot(d,dependencies)}:{}),
+   ...(!d.homepage&&(snapshotRoute===undefined||d.route===snapshotRoute)?{pageSnapshot:localizeSnapshot(compilePageSnapshot(d,dependencies),locale)}:{}),
    ...(image?{image:image.path,imageAlt:d.headerImage?.alt||d.imageAlt||image.alt,imagePosition:image.focalX+'% '+image.focalY+'%'}:{}),
    ...(d.relatedProductIds?{relatedProductIds:[...d.relatedProductIds]}:{}),
    ...(d.translations?{translations:d.translations}:{}),

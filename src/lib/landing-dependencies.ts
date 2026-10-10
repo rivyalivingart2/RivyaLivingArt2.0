@@ -1,3 +1,4 @@
+import {applyReviewedTranslation,translationStatus} from './translation-review';
 import {publicDiscovery,type DiscoveryMetadata} from './editorial-metadata';
 import {bodyLinks} from './editorial-body';
 import {baselineContent,validContent,type ContentDocument,type ContentSection} from './content-model';
@@ -6,12 +7,22 @@ import {landingLimit,type LandingBlock} from './landing-model';
 import {validPageMedia} from './editorial-media-model';
 import type {DependencySource} from './homepage-dependencies';
 import type {EditorialUsage,HomeDependency} from './homepage-model';
-export type LandingEntry={id:string;route:string;title:string;description:string;eyebrow:string;sections:ContentSection[];image?:EditorialUsage;editorial?:PublicEditorialRecord;discovery?:DiscoveryMetadata;languages?:string[]};
+export type LandingEntry={id:string;route:string;title:string;description:string;eyebrow:string;sections:ContentSection[];image?:EditorialUsage;editorial?:PublicEditorialRecord;discovery?:DiscoveryMetadata;languages?:string[];localizedCopy?:Partial<Record<'hi'|'gu',Pick<LandingEntry,'title'|'description'|'eyebrow'|'sections'|'image'|'editorial'>>>};
 export type LandingSnapshot={entries:Record<string,LandingEntry[]>;productIds:Record<string,string[]>};
-export function publicEntry(d:ContentDocument&{imagePosition?:string;availableEditorialLanguages?:string[]}):LandingEntry{
+function entryCopy(d:ContentDocument&{imagePosition?:string;availableEditorialLanguages?:string[]}):LandingEntry{
  const [x,y]=(d.imagePosition||'50% 50%').split(' ').map(n=>parseFloat(n));
  const discovery=publicDiscovery(d);
  return {discovery:discovery.metadata,languages:d.availableEditorialLanguages||discovery.languages,id:d.id,route:d.route,title:d.title,description:d.description,eyebrow:d.eyebrow,sections:d.sections.filter(s=>s.enabled!==false).map(s=>({id:s.id,heading:s.heading,paragraphs:s.paragraphs,checklist:s.checklist,body:s.body,group:s.group,policyHref:s.policyHref})),...(d.headerImage?{image:d.headerImage}:d.image?{image:{path:d.image,alt:d.imageAlt||d.title,caption:'Design visualization',desktop:{x,y,ratio:'3/2'},mobile:{x,y,ratio:'4/5'}} as EditorialUsage}:{}),...(d.editorial?{editorial:publicEditorial(d.editorial)}:{})};
+}
+/** Capture only currently reviewed public text; exact previews never consult newer records. */
+export function publicEntry(d:ContentDocument&{imagePosition?:string;availableEditorialLanguages?:string[]}):LandingEntry{
+ const entry=entryCopy(d),localizedCopy:NonNullable<LandingEntry['localizedCopy']>={};
+ for(const locale of ['hi','gu'] as const)if(translationStatus(d,locale).state==='reviewed'){
+  const translated=entryCopy({...applyReviewedTranslation(d,locale),imagePosition:d.imagePosition});
+  const {title,description,eyebrow,sections,image,editorial}=translated;
+  localizedCopy[locale]={title,description,eyebrow,sections,image,editorial};
+ }
+ return {...entry,...(Object.keys(localizedCopy).length?{localizedCopy}:{})};
 }
 /** Resolve published records once. Exact previews store these copies and fingerprints. */
 export function compileLanding(d:ContentDocument,source:DependencySource){
@@ -39,7 +50,7 @@ export function compileLanding(d:ContentDocument,source:DependencySource){
   picked=picked.slice(0,b.limit||landingLimit(b.type));
   const entries=picked.map(publicEntry);
   // Existing FAQ page sections are addressable by stable IDs without rewriting that document.
-  if(b.type==='faqPicker')for(const id of b.ids||[]){if(!id.startsWith('page:faq#'))continue;const faq=docs.find(p=>p.id==='page:faq'),section=faq?.sections.find(s=>s.id===id.slice(9)&&s.enabled!==false);if(faq&&section){entries.push({id,route:'/faq#'+section.id,title:section.heading,description:'',eyebrow:section.group||'Questions',sections:[{id:section.id,heading:section.heading,paragraphs:section.paragraphs,body:section.body,checklist:section.checklist,policyHref:section.policyHref}]});add('content',faq.id);}}
+  if(b.type==='faqPicker')for(const id of b.ids||[]){if(!id.startsWith('page:faq#'))continue;const faq=docs.find(p=>p.id==='page:faq'),section=faq?.sections.find(s=>s.id===id.slice(9)&&s.enabled!==false);if(faq&&section){const entry=publicEntry(faq);const sectionEntry=(copy:LandingEntry)=>{const selected=copy.sections.find(s=>s.id===section.id)!;return {...copy,id,route:'/faq#'+section.id,title:selected.heading,description:'',eyebrow:selected.group||'Questions',sections:[selected]};};const selected=sectionEntry(entry);selected.localizedCopy=Object.fromEntries(Object.entries(entry.localizedCopy||{}).map(([locale,copy])=>[locale,((c)=>({title:c.title,description:c.description,eyebrow:c.eyebrow,sections:c.sections}))(sectionEntry({...entry,...copy}))]));entries.push(selected);add('content',faq.id);}}
   if(!b.mode||['manual','featured'].includes(b.mode))entries.sort((a,c)=>(b.ids||[]).indexOf(a.id)-(b.ids||[]).indexOf(c.id));
   result.entries[b.id]=entries.slice(0,b.limit||landingLimit(b.type));
   for(const entry of result.entries[b.id])hrefs.push(...entry.sections.flatMap(s=>[...bodyLinks(s.body),...(s.policyHref?[s.policyHref]:[])]),...(entry.editorial?.policyHref?[entry.editorial.policyHref]:[]));

@@ -24,7 +24,7 @@ Concepts/fictional samples retain conspicuous labels, no invented identities, ra
 ## Validation
 
 - Prior complete M9 candidate: 337 unit tests, 403 built-server checks, production build/type/lint, all 480 exact saved previews, 63 derivative hashes and 34 core Drive readback hashes passed.
-- Fresh release: 337 unit tests, production build/type and edited-source lint passed. The new batch control checked and published two disposable isolated drafts, then verified their anonymous public pages. Production counts correctly remain zero in the isolated register.
+- Fresh reviewed release: 338 unit tests, production build/type and edited-source lint passed. The new batch control checked and published two disposable isolated drafts, then verified their anonymous public pages. Production counts correctly remain zero in the isolated register.
 - Thirteen protected scopes retain all pre-M9 local rows. A fresh, read-only production fingerprint baseline was captured on 10 October before any approved new writes.
 - The exact candidate Vercel Preview/check state, merge SHA, production deployment, public route checks and original-record comparison will be added to the release receipt after execution.
 
@@ -37,3 +37,9 @@ Publication is optimistic-version checked, checks current dependencies and retai
 ## Still pending after activation
 
 M10 covers full old/new visual comparison, permissions/publication regression, loading and interaction measurements, accessibility and reconciliation of evidence gaps. Actual native readers, physical devices, human screen-reader task logs, field performance, independent editorial review and real customer/consent evidence remain separate. The owner's publication instruction is recorded; it is not fabricated evidence for those gates. Full M11 final-plan acceptance remains pending.
+
+## PR47 review corrections
+
+The reviewed candidate captures only currently reviewed translated text for FAQ, discovery and landing references. Exact saved previews use the captured revision; stale/unreviewed translations retain English fallback. Malformed historical v2 inquiry briefs print safely using their persisted plain-text answers without inventing schema labels, consent or care promises. Portfolio indexing checks request the lightweight publication list rather than compiling every page snapshot. Focused regressions cover saved-language immutability, private-field exclusion and damaged historical briefs.
+
+All 21 M9 image references are now published through the production Studio: 18 additive media records and 3 pre-existing records reused unchanged. The 480 authored identities remain unpublished until the checked application merge. Production-only intake files replace local image UUIDs with verified production paths; no local snapshots, history or QA content are included.

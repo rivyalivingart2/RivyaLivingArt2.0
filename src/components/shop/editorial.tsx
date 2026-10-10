@@ -74,8 +74,9 @@ export function JournalDocument({content:d,locale='en'}:{content:PublishedConten
  return <div className={e.editorial+' '+e.journal} data-content-revision={d.publishedRevision}><Intro eyebrow={d.eyebrow} title={d.title}>{d.description}</Intro>{d.sections.filter(s=>s.enabled!==false).map(b=><div key={b.id} className={s.prose+' '+e.journalLead}><h2>{b.heading}</h2><SectionBody section={b} unavailable={d.pageSnapshot?.unavailableActionHrefs} mediaPaths={d.pageSnapshot?.mediaPaths}/></div>)}<JournalBrowser featuredIds={d.editorialOrders?.['featured:journal']||d.featuredArticleIds} orders={d.editorialOrders} items={articles.map(a=>({id:a.id,title:a.title,topic:a.eyebrow,discovery:a.discovery,languages:a.languages,search:[a.title,a.description,a.eyebrow].join(' '),card:<ArticleCard article={a}/>}))}/></div>;
 }
 /** Shared by public pages and authenticated saved-revision previews. */
-export async function EditorialDocument({content:source,documents,locale='en',snapshot,design,designVersion,reference,film}:{content:PublishedContentDocument;documents:PublishedContentDocument[];locale?:Locale;snapshot?:PageSnapshot;design?:PageDesign;designVersion?:number;reference?:HomeReferenceSnapshot;film?:PresentationFilm}){
+export async function EditorialDocument({content:source,documents,locale='en',snapshot:savedSnapshot,design,designVersion,reference,film}:{content:PublishedContentDocument;documents:PublishedContentDocument[];locale?:Locale;snapshot?:PageSnapshot;design?:PageDesign;designVersion?:number;reference?:HomeReferenceSnapshot;film?:PresentationFilm}){
  const tr=(text:string)=>journeyText(locale,text);
+ const captured=savedSnapshot||source.pageSnapshot,snapshot=captured?localizeSnapshot(captured,locale):undefined;
  if(source.landing)return <LandingDocumentView document={{...source,pageSnapshot:snapshot||source.pageSnapshot}}/>;
  const route=source.route,articles=documents.filter(d=>d.kind==='article');
  const business=route==='/contact'||!!policies[route]?(await publishedBusiness()).details:null;

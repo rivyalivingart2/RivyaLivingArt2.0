@@ -1,3 +1,4 @@
+import type {LandingEntry} from './landing-dependencies';
 import {applyReviewedTranslation,translationStatus} from './translation-review';
 import type {ContentDocument} from './content-model';
 import type {HomeArticle,HomeSnapshot} from './homepage-model';
@@ -16,7 +17,12 @@ export function reviewedArticleLabels(document:ContentDocument):HomeArticle['loc
 /** Old snapshots retain English labels. Never pull new dependencies into an exact saved preview. */
 export function localizeSnapshot<T extends HomeSnapshot>(snapshot:T,locale:string):T{
  if(locale!=='hi'&&locale!=='gu')return snapshot;
- return {...snapshot,articles:snapshot.articles.map(a=>({...a,...a.localizedCopy?.[locale]}))};
+ const page=snapshot as PageSnapshot;
+ const entry=(e:LandingEntry)=>({...e,...e.localizedCopy?.[locale]});
+ return {...snapshot,articles:snapshot.articles.map(a=>({...a,...a.localizedCopy?.[locale]})),
+  ...(page.faqEntries?{faqEntries:page.faqEntries.map(entry)}:{}),
+  ...(page.discovery?{discovery:page.discovery.map(entry)}:{}),
+  ...(page.landing?{landing:{...page.landing,entries:Object.fromEntries(Object.entries(page.landing.entries).map(([id,entries])=>[id,entries.map(entry)]))}}:{})};
 }
 export function savedEditorialImage(document:ContentDocument,snapshot:PageSnapshot){
  const image=snapshot.image;

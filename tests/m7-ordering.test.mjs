@@ -15,5 +15,7 @@ test('withdrawn IDs vanish, newly published IDs retain fallback order, selection
 test('legacy card retains exact saved answers and excludes inferred care, price, staff notes and product promises',()=>{
  const facts=inquiryCard({name:'QA only',phone:'9999999999',answers:{Width:'Unknown'},notes:'Original note',product_snapshot:{id:'p',name:'Saved piece',care:'unapproved generic care'},internal:'private note',summary:'untrusted summary'});
  assert.deepEqual(facts,[{label:'Customer',value:'QA only'},{label:'Phone',value:'9999999999'},{label:'Catalogue starting point',value:'Saved piece'},{label:'Product reference',value:'p'},{label:'Width',value:'Unknown'},{label:'Customer notes',value:'Original note'}]);
- assert.throws(()=>inquiryCard({contract_version:2}));
+ assert.deepEqual(inquiryCard({contract_version:2}),[]);
+ const damaged={contract_version:2,name:'Saved customer',schema_snapshot:{},answers:{Width:'Unconfirmed',privateObject:{secret:'excluded'}},notes:'Original note',answer_snapshot:[{label:'Unvalidated label',value:'not trusted'}]};
+ assert.deepEqual(inquiryCard(damaged),[{label:'Customer',value:'Saved customer'},{label:'Width',value:'Unconfirmed'},{label:'Customer notes',value:'Original note'}]);
 });
