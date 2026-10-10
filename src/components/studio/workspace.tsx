@@ -52,7 +52,7 @@ const moduleIcons = {'content-register':FileText,'editorial-order':FileText,'ana
 const navGroups = ['Today','Catalogue','Content','Editorial','Settings'].map(title=>({title,items:studioModules.filter(module=>module.group===title)}));
 type ModuleContext={staffId?:string|null;admin:boolean;staff:StaffMember[];load:()=>Promise<void>};
 const moduleViews = {
- 'content-register':()=> <ContentRegister/>,
+ 'content-register':({admin}:ModuleContext)=> <ContentRegister admin={admin}/>,
  'editorial-order':({admin}:ModuleContext)=><EditorialOrderEditor admin={admin}/>,
  analytics:()=> <AnalyticsPanel/>,
  categories:()=> <CatalogueCategories/>,

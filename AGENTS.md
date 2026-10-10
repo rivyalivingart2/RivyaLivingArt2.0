@@ -1,3 +1,9 @@
+# Current authorization — publish M5–M9 and begin M10
+
+10 October 2026. The owner approved the displayed work and requested putting it on the website, followed by M10. Read `docs/decisions/2026-10-10-release-m5-m9-and-m10.md`. Use a detailed PR into main, verify the exact deployment, ingest the 21 M9 images through real production storage, and publish the 480 new documents through the signed-in Studio workflow with fresh dependencies. Preserve every pre-existing record. Owner publication authorization does not invent native-reader, physical-device, independent editorial or genuine-customer evidence. The older local-only/stop-before-M10 checkpoints below are historical for this request.
+
+---
+
 # Current checkpoint — M9 drafts delivered; stop before M10
 
 9 October 2026. All 480 new English drafts are authored, saved in isolated local Studio in 48 ten-entry batches, and delivered to the dedicated Drive folder: 120 Journal, 120 labelled Portfolio concepts, 120 labelled fictional Testimonial examples and 120 FAQs. Production remains 0/480. Read `M9-EDITORIAL-DRAFT-PRODUCTION.md`, `m9-evidence.json` and `PENDING-AFTER-M9.md` under `docs/redesign/old-design-migration-2026-10-08/`. Build/type/lint, 337 unit, 403 built-server, 480 saved-render checks and 34 core Drive hash readbacks pass. Every pre-M9 row in all 13 protected scopes is unchanged. Human editorial, rights/crop, native-reader, physical-device and publication approvals remain open. Stop before M10. No push, release or production writes. Do not re-import existing M9 IDs or copy local QA media publication into production.
