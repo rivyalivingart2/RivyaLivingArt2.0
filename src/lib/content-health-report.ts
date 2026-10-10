@@ -26,10 +26,12 @@ export function contentHealthReport(content:ContentHealthEntry[],products:Produc
  };
  const rows:DetailedHealthRow[]=contentHealthRows(content,products,media).map(row=>{
   const issues:HealthIssue[]=row.readiness==='Needs review'?[{severity:'Advisory',reason:row.detail,href:row.href}]:[];
+  let editorialState='Review not recorded';
   let valid=true,mediaState='Not applicable',translation='Not applicable';
   if(row.area==='Content'){
    const d=content.find(e=>e.document.id===row.id)!.document;
    valid=safeValid(()=>validContent(d,baselineContent.find(b=>b.id===d.id)));
+   if(d.editorial)editorialState=d.editorial.classification==='genuine'?(d.editorial.evidence?'Approval fields recorded; evidence not independently verified':'Approval evidence missing'):d.editorial.classification==='guidance'?'Guidance source requires review':'Disclosed '+d.editorial.classification+'; no customer claim';
    const imagePaths=editorialSlots(d).flatMap(s=>s.path?[s.path]:[]);
    mediaState=imagePaths.length?(imagePaths.every(p=>publicImages.has(p))?'Published metadata; visual review unrecorded':'Missing published metadata'):'No image selected';
    if(d.image&&content.filter(e=>e.document.image===d.image).length>1)issues.push({severity:'Advisory',reason:'Editorial cover is reused on other documents. Review visual variety.',href:studioRecordHref('content',d.id,'image')});
@@ -50,7 +52,7 @@ export function contentHealthReport(content:ContentHealthEntry[],products:Produc
    const m=media.find(e=>e.media.path===row.id)!;valid=safeValid(()=>validPageMedia(m.media)||validEditorialMedia(m.media));mediaState=isEditorialPath(m.media.path)?(m.published?'Published reviewed editorial image':validPublishedEditorialMedia(m.media)?'Reviewed; not published':'Needs visual review'):(m.published?'Published metadata; visual review unrecorded':'Unpublished metadata');if(isEditorialPath(m.media.path))row.href='/studio/media';
   }
   if(!valid)issues.unshift({severity:'Blocker',reason:'The saved record fails its content contract. Open it to repair the required fields.',href:row.href});
-  return {...row,validation:valid?'Valid structure':'Blocking issue',editorial:'Review not recorded',media:mediaState,translation,owner:context.owners[row.area+':'+row.id]||'Unassigned',issues};
+  return {...row,validation:valid?'Valid structure':'Blocking issue',editorial:editorialState,media:mediaState,translation,owner:context.owners[row.area+':'+row.id]||'Unassigned',issues};
  });
  for(const [menu,items] of Object.entries(context.settings.navigation))for(const item of items.filter(i=>i.visible)){
   const problem=linkProblem(item.href);if(!problem)continue;

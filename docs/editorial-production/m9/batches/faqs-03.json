@@ -1,0 +1,412 @@
+[
+  {
+    "id": "editorial:a37c714e-542e-55a8-a2ff-44291bfc70a4",
+    "kind": "page",
+    "route": "/faq/how-can-i-compare-two-possible-shapes",
+    "title": "How can I compare two possible shapes?",
+    "eyebrow": "Form and composition",
+    "description": "Place the two outlines in the same room sketch at a stated scale, or clearly label the comparison approximate.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How can I compare two possible shapes?",
+        "paragraphs": [
+          "Place the two outlines in the same room sketch at a stated scale, or clearly label the comparison approximate. Explain whether you are comparing edge shape, visual mass or relationship to nearby objects. Keep other differences from distracting from that question. The comparison supports discussion; it does not confirm construction, fit or practical suitability."
+        ],
+        "group": "Form and composition",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Form and composition"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F021; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:16cc21df-c603-5e44-a43a-e957f91d1645",
+    "kind": "page",
+    "route": "/faq/can-i-discuss-a-pair-of-related-pieces",
+    "title": "Can I discuss a pair of related pieces?",
+    "eyebrow": "Form and composition",
+    "description": "Describe how the pair should relate and what each piece is intended to do.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I discuss a pair of related pieces?",
+        "paragraphs": [
+          "Describe how the pair should relate and what each piece is intended to do. Identify shared features and intentional differences, such as height or colour emphasis. Do not assume that a visual pair can nest, stack or support one another. Those functional details, along with feasibility and the final specification, need separate confirmation."
+        ],
+        "group": "Form and composition",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Form and composition"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F022; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:104160a5-f6d5-534b-abc3-46de7b9103f8",
+    "kind": "page",
+    "route": "/faq/should-reference-images-show-different-viewpoints",
+    "title": "Should reference images show different viewpoints?",
+    "eyebrow": "Form and composition",
+    "description": "Different viewpoints are helpful when they reveal different information.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Should reference images show different viewpoints?",
+        "paragraphs": [
+          "Different viewpoints are helpful when they reveal different information. A whole-object view can explain proportions, while a side view may show an edge or opening hidden from the front. Label which feature matters in each. Several photographs of the same source remain one reference or project, not evidence of several completed commissions."
+        ],
+        "group": "Form and composition",
+        "policyHref": "/portfolio",
+        "action": {
+          "label": "Read the related page",
+          "href": "/portfolio"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Form and composition"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F023; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /portfolio. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/portfolio"
+    }
+  },
+  {
+    "id": "editorial:6fd1eceb-25af-5a50-acd8-d23440e35575",
+    "kind": "page",
+    "route": "/faq/how-do-i-explain-a-preference-for-a-lighter-looking-form",
+    "title": "How do I explain a preference for a lighter-looking form?",
+    "eyebrow": "Form and composition",
+    "description": "Describe the feature creating that impression: a narrower outline, more visible empty space, a quieter colour relationship or a less dominant position.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How do I explain a preference for a lighter-looking form?",
+        "paragraphs": [
+          "Describe the feature creating that impression: a narrower outline, more visible empty space, a quieter colour relationship or a less dominant position. Add a reference and explain the specific part you mean. “Lighter-looking” is a visual preference; it does not establish actual weight, stability, construction or the suitability of a proposed design."
+        ],
+        "group": "Form and composition",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Form and composition"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F024; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:6319eb00-526e-556f-abd0-8bbddff9802e",
+    "kind": "page",
+    "route": "/faq/can-i-send-a-paper-outline-or-mock-layout",
+    "title": "Can I send a paper outline or mock layout?",
+    "eyebrow": "Form and composition",
+    "description": "A paper outline or mock layout can help compare positions and proportions.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I send a paper outline or mock layout?",
+        "paragraphs": [
+          "A paper outline or mock layout can help compare positions and proportions. Label the scale, units and assumptions, and explain which question it tests. Keep any physical marker out of normal movement routes. The exercise does not represent height, weight, stability or real access, so final dimensions and practical suitability still need review."
+        ],
+        "group": "Form and composition",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Form and composition"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F025; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:a3d0510f-0281-536c-ac1b-e37315e5614a",
+    "kind": "page",
+    "route": "/faq/what-surrounding-objects-should-i-mention",
+    "title": "What surrounding objects should I mention?",
+    "eyebrow": "Form and composition",
+    "description": "Mention the objects that affect use or composition: nearby seating, doors, fixed fittings, wall art and pieces that must remain.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "What surrounding objects should I mention?",
+        "paragraphs": [
+          "Mention the objects that affect use or composition: nearby seating, doors, fixed fittings, wall art and pieces that must remain. Explain which positions are fixed and which may change. Include the relationship that matters rather than listing everything in the room. Existing objects are references, not automatic instructions to duplicate their materials or finish."
+        ],
+        "group": "Form and composition",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Form and composition"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F026; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:188df921-6204-539c-a4ef-ab174c854099",
+    "kind": "page",
+    "route": "/faq/how-should-i-describe-a-wall-composition",
+    "title": "How should I describe a wall composition?",
+    "eyebrow": "Form and composition",
+    "description": "Show the whole wall and its relationship to furniture, openings and the normal viewing position.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How should I describe a wall composition?",
+        "paragraphs": [
+          "Show the whole wall and its relationship to furniture, openings and the normal viewing position. Mark the proposed composition on a copy of the photograph or a sketch. Explain the intended visual anchor. Keep mounting suitability, fixing methods and installation arrangements as separate questions; a balanced-looking image does not establish any of those facts."
+        ],
+        "group": "Form and composition",
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related page",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Form and composition"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F027; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/shipping-delivery"
+    }
+  },
+  {
+    "id": "editorial:86cd9d48-eee7-539c-ac90-329f5aaec391",
+    "kind": "page",
+    "route": "/faq/can-one-brief-include-several-placement-options",
+    "title": "Can one brief include several placement options?",
+    "eyebrow": "Form and composition",
+    "description": "Yes, if the alternatives are clearly labelled and their differences are explained.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can one brief include several placement options?",
+        "paragraphs": [
+          "Yes, if the alternatives are clearly labelled and their differences are explained. Give each a reference, contextual image and unresolved question. State whether you prefer one or want advice about both. Avoid combining measurements from different options into a single apparent specification. The final position and design must be agreed separately."
+        ],
+        "group": "Form and composition",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Form and composition"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F028; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:2fb3266a-f433-56f9-adf4-52898c1b3f1a",
+    "kind": "page",
+    "route": "/faq/can-i-request-a-variation-without-changing-a-catalogue-product",
+    "title": "Can I request a variation without changing a catalogue product?",
+    "eyebrow": "Form and composition",
+    "description": "Describe the variation in a product or custom-piece request and identify the catalogue reference that inspired it.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I request a variation without changing a catalogue product?",
+        "paragraphs": [
+          "Describe the variation in a product or custom-piece request and identify the catalogue reference that inspired it. Explain what you want to retain and what you would like to change. That starts a feasibility discussion; it does not edit the public catalogue product or confirm that every requested variation can be made."
+        ],
+        "group": "Form and composition",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Form and composition"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F029; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:54d88164-a66e-5937-a39b-713a91356712",
+    "kind": "page",
+    "route": "/faq/does-an-inspiration-image-guarantee-an-identical-result",
+    "title": "Does an inspiration image guarantee an identical result?",
+    "eyebrow": "Form and composition",
+    "description": "No.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Does an inspiration image guarantee an identical result?",
+        "paragraphs": [
+          "No. An inspiration image communicates a direction and may omit important context about materials, dimensions or construction. State which feature interests you rather than requesting an unexplained identical result. The collection uses design visualizations, and final details are agreed individually. Do not infer a finished appearance or performance guarantee from the image alone."
+        ],
+        "group": "Form and composition",
+        "policyHref": "/faq",
+        "action": {
+          "label": "Read the related page",
+          "href": "/faq"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Form and composition"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F030; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/faq"
+    }
+  }
+]

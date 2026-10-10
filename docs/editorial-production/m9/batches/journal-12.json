@@ -1,0 +1,892 @@
+[
+  {
+    "id": "article:7d6be532-375b-5784-a0db-f9c06754fdc3",
+    "kind": "article",
+    "route": "/journal/a-decision-log-for-a-longer-commission-conversation",
+    "title": "A decision log for a longer commission conversation",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "A decision log helps a long conversation remain understandable.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A decision log helps a long conversation remain understandable. It should distinguish a suggestion, a response and an agreement rather than flattening them into a single timeline."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Record the date, subject, proposal version and decision status. Link to the message or document that supports an agreement. Keep unresolved questions visible at the top. When an idea changes, note what it replaces without deleting the earlier context."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A new colour reference may be a suggestion awaiting review, while the previously agreed dimensions remain current. The log should not imply both changed together."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What is the current status?",
+          "What source supports agreement?",
+          "Which questions still affect the next step?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A personal log does not create agreement. Confirm changes with the atelier and keep the actual approved specification identifiable."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J111; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:65aba38b-3685-5b78-a1ac-f1a83dc3b6d2",
+    "kind": "article",
+    "route": "/journal/recording-what-has-and-has-not-been-agreed",
+    "title": "Recording what has and has not been agreed",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "A useful summary states both what is agreed and what remains open.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A useful summary states both what is agreed and what remains open. Silence on a topic should not be interpreted as acceptance."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Make separate lists for confirmed decisions, current preferences and unanswered questions. Attach each confirmation to its source or proposal version. Ask the other party to correct the summary where needed. Keep later changes dated and specific."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A preferred finish may remain under discussion even after a dimension has been agreed. Naming both statuses prevents an all-or-nothing interpretation of the conversation."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What is explicitly confirmed?",
+          "What is only preferred?",
+          "What answer is still needed?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "The website's saved inquiry does not confirm production, payment or delivery. Those require separate agreement."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J112; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/8542acee-a36f-4ea7-a6b6-b4b1a6498242",
+      "alt": "Brown and blue waterfall-end table visualization in a dark room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:c0843d1c-b0d1-57cc-aa0c-d880061a680b",
+    "kind": "article",
+    "route": "/journal/preparing-a-concise-follow-up-message",
+    "title": "Preparing a concise follow-up message",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "A concise follow-up is easiest to answer when it concerns one decision and identifies the current reference.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A concise follow-up is easiest to answer when it concerns one decision and identifies the current reference. Repeating the entire brief can hide the new question."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Begin with the inquiry reference and relevant proposal version. State the specific question, why it matters and any date by which you hope to receive clarification. Include only the references needed for that question. Avoid presenting a requested response date as an agreed deadline."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A message asking whether one dimension can change should identify the current dimension and the proposed alternative, rather than attaching several unlabeled drawings."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which record is this about?",
+          "What changed or needs an answer?",
+          "Which attachment directly supports the question?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A follow-up is a request for discussion, not an automatic amendment or confirmation of availability."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J113; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/4485d058-490e-4b79-8f40-935336fb84cc",
+      "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:f1379981-f5f2-507b-a758-99cc3b73c045",
+    "kind": "article",
+    "route": "/journal/identifying-the-reference-number-in-a-conversation",
+    "title": "Identifying the reference number in a conversation",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "Reference numbers serve different purposes.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Reference numbers serve different purposes. An inquiry identifier locates a saved request, while a proposal version identifies a particular design or quotation document."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Keep a small index with the inquiry reference, current proposal version and date. Use the relevant identifier in each follow-up. If a message concerns both the request and a specific revision, include both. Do not treat a website receipt number as proof that a quotation is accepted."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "An RLA reference can help find the conversation, but “proposal v2” explains which set of details the question concerns. One cannot replace the other."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which identifier locates the inquiry?",
+          "Which identifies the proposal?",
+          "What status does neither identifier prove?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A reference is an identifier, not evidence of payment, approval or a production booking."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J114; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/e6a7162c-7d4d-4280-bb78-ff31fc426b7b",
+      "alt": "Clear upright floral block with red and cream roses on a dark plinth",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:637ccbef-d3da-59d4-ad74-666cfa1a3f92",
+    "kind": "article",
+    "route": "/journal/keeping-an-agreed-specification-separate-from-new-ideas",
+    "title": "Keeping an agreed specification separate from new ideas",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "New ideas should remain separate from an agreed specification until the change is accepted.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "New ideas should remain separate from an agreed specification until the change is accepted. This protects the meaning of the existing agreement while allowing discussion."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Label the new idea as a proposed change and identify the current specification version. Describe exactly what would change and what should stay the same. Ask about feasibility, implications and the revised approval step. Keep the response with the decision log."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A proposed wider top should not silently replace the approved dimension in an old screenshot. Show the current and proposed values separately."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What is currently agreed?",
+          "What is proposed?",
+          "What response is needed before updating the specification?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Submitting a new preference does not guarantee a change can be made. Consult the current changes and cancellations policy and the atelier."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J115; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:8adf07af-06db-533b-ad00-005e8dbf0125",
+    "kind": "article",
+    "route": "/journal/questions-to-resolve-before-discussing-completion-dates",
+    "title": "Questions to resolve before discussing completion dates",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "A completion-date discussion needs the design and practical questions that influence timing.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A completion-date discussion needs the design and practical questions that influence timing. A preferred date alone cannot establish a schedule."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "List unresolved design choices, material questions, approvals and delivery arrangements. Identify which are still awaiting information from you. State the desired date and any flexibility. Ask for an individual estimate once the relevant scope is clear."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "If the final dimensions and destination are undecided, a date request should acknowledge those unknowns rather than assuming a fixed production and transport plan."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which decisions affect timing?",
+          "What information is still missing?",
+          "What date has actually been confirmed?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "The website does not confirm a production booking. Production and delivery estimates are agreed individually."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J116; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/8542acee-a36f-4ea7-a6b6-b4b1a6498242",
+      "alt": "Brown and blue waterfall-end table visualization in a dark room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:04e8d5df-258c-5d71-a9b4-9f21e4761a87",
+    "kind": "article",
+    "route": "/journal/finding-the-right-policy-before-asking-about-a-change",
+    "title": "Finding the right policy before asking about a change",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "A change question is easier to discuss when it refers to the relevant current policy.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A change question is easier to discuss when it refers to the relevant current policy. Read the whole applicable section rather than relying on a remembered sentence."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Identify whether the question concerns design changes, cancellation, delivery or a reported concern. Open the corresponding policy and note the part that seems relevant. Describe the actual stage of the request and ask for clarification where needed. Keep the inquiry reference with the message."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A request before approved production begins is not automatically the same as a change after work has started. The policy distinguishes stages and circumstances."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which policy applies?",
+          "What stage is the request at?",
+          "Which condition needs clarification?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "This worksheet does not replace the policy or determine legal rights in an individual case. Do not shorten conditions into a blanket promise."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J117; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/4485d058-490e-4b79-8f40-935336fb84cc",
+      "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:2f55790b-a7f5-5022-a036-799b7cbf5c07",
+    "kind": "article",
+    "route": "/journal/documenting-a-change-of-contact-preference",
+    "title": "Documenting a change of contact preference",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "A contact-preference change should be explicit and linked to the existing inquiry.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A contact-preference change should be explicit and linked to the existing inquiry. This helps avoid treating a communication update as a new design request."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Identify the inquiry and state the preferred channel or corrected contact detail through an appropriate private route. Explain whether the previous detail should no longer be used. Keep unrelated design changes in a separate paragraph. Ask for confirmation when needed."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "Changing the preferred contact number does not itself change the delivery address or personalization text. State those separately if they also need discussion."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which detail is changing?",
+          "Which details stay the same?",
+          "Has the correction been acknowledged?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not post private contact details in public comments or captions. A preference update does not establish that every record has already been changed."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J118; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/e6a7162c-7d4d-4280-bb78-ff31fc426b7b",
+      "alt": "Clear upright floral block with red and cream roses on a dark plinth",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:253f2869-8cf7-5cee-a924-85114231a914",
+    "kind": "article",
+    "route": "/journal/reviewing-a-summary-before-manually-sending-it",
+    "title": "Reviewing a summary before manually sending it",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "The final Send action is a useful review point.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "The final Send action is a useful review point. The prepared summary may have passed through a clipboard, another application or an edited conversation window."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Compare the recipient, inquiry reference, names, dates, paragraphs and attachments with the saved summary. Check that no unrelated clipboard text was included. Read any added sentence as a new request rather than part of an already agreed specification. Press Send only after that review."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A pasted summary can lose line breaks or be followed by an old draft message. Checking the whole composer catches errors that the original website preview cannot see."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Is the destination correct?",
+          "Is the entire summary present?",
+          "Does any added wording change the request?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "The website prepares the message but cannot confirm that it was sent or read. Saving remains distinct from agreement."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J119; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:926181f2-4180-5dc3-a81b-8043fed35285",
+    "kind": "article",
+    "route": "/journal/closing-a-conversation-with-clear-outstanding-questions",
+    "title": "Closing a conversation with clear outstanding questions",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "A conversation can pause productively when the outstanding decisions are clear.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A conversation can pause productively when the outstanding decisions are clear. Closing with a named next step prevents an unanswered question from looking settled."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Summarise the current decision, the remaining question and who will supply the next piece of information. Identify the relevant version or reference. If a date is only a preference, label it that way. Keep the summary short enough to be checked against the conversation."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "“I will send the checked doorway dimensions; the proposed width remains open” is clearer than “Everything looks good” when access has not been assessed."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What happens next?",
+          "Who supplies the information?",
+          "Which decision must remain open until then?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "A closing summary does not replace recorded approval or create a delivery commitment. Keep unanswered items visibly pending."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J120; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/8542acee-a36f-4ea7-a6b6-b4b1a6498242",
+      "alt": "Brown and blue waterfall-end table visualization in a dark room",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+]

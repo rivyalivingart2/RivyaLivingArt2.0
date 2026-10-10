@@ -1,0 +1,412 @@
+[
+  {
+    "id": "editorial:a22520e6-c993-5cbf-a65f-0de359a3401a",
+    "kind": "page",
+    "route": "/faq/which-room-photographs-help-with-a-first-enquiry",
+    "title": "Which room photographs help with a first enquiry?",
+    "eyebrow": "Room observation",
+    "description": "Include a view from the normal entrance, one facing the proposed position and a detail of any obstruction.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Which room photographs help with a first enquiry?",
+        "paragraphs": [
+          "Include a view from the normal entrance, one facing the proposed position and a detail of any obstruction. Explain where each photograph was taken and what normally occupies the area. Keep addresses, family photographs and other unnecessary private details outside the frame. Photographs help explain the brief; they do not confirm dimensions or suitability."
+        ],
+        "group": "Room observation",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F001; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:5485186c-efa6-5353-a184-6eba0a15815a",
+    "kind": "page",
+    "route": "/faq/should-photographs-show-the-whole-room-or-just-the-proposed-position",
+    "title": "Should photographs show the whole room or just the proposed position?",
+    "eyebrow": "Room observation",
+    "description": "Use both when they answer different questions.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Should photographs show the whole room or just the proposed position?",
+        "paragraphs": [
+          "Use both when they answer different questions. A whole-room view explains the relationship to doors, seating and existing objects; a closer view can show the proposed position or a specific constraint. Label their relationship on a simple sketch. Avoid sending several near-identical close-ups that leave the surrounding space unclear. Keep measured facts separate from visual estimates."
+        ],
+        "group": "Room observation",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F002; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:7c4b8737-4355-5a6b-a6c9-8993d09fac9d",
+    "kind": "page",
+    "route": "/faq/how-can-i-describe-the-light-in-my-room",
+    "title": "How can I describe the light in my room?",
+    "eyebrow": "Room observation",
+    "description": "Describe when the room is used, where daylight enters and which artificial lights are normally on.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How can I describe the light in my room?",
+        "paragraphs": [
+          "Describe when the room is used, where daylight enters and which artificial lights are normally on. A pair of photographs from the same position at different times can help explain the change. Note curtains and weather where relevant. Do not treat camera brightness or screen colour as an exact measurement of the room's lighting conditions."
+        ],
+        "group": "Room observation",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F003; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:90b0c486-6f65-563e-a8e4-2aeebbe952ab",
+    "kind": "page",
+    "route": "/faq/can-i-send-a-simple-room-sketch",
+    "title": "Can I send a simple room sketch?",
+    "eyebrow": "Room observation",
+    "description": "Yes, a simple labelled sketch can explain a proposed position and nearby openings.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I send a simple room sketch?",
+        "paragraphs": [
+          "Yes, a simple labelled sketch can explain a proposed position and nearby openings. Include units for any measurements, a reference corner and a note identifying estimates. Distinguish existing features from proposed outlines. The sketch is a discussion aid; it does not become an approved manufacturing or installation drawing merely because it accompanies the brief."
+        ],
+        "group": "Room observation",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F004; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:8b086631-ec93-55ea-a5d8-9cb0d3dafa9b",
+    "kind": "page",
+    "route": "/faq/should-existing-furniture-be-included-in-my-references",
+    "title": "Should existing furniture be included in my references?",
+    "eyebrow": "Room observation",
+    "description": "Include the furniture and objects that will remain relevant to the proposed piece.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Should existing furniture be included in my references?",
+        "paragraphs": [
+          "Include the furniture and objects that will remain relevant to the proposed piece. Explain whether their position is fixed and what relationship matters: use, outline, colour or visibility. You do not need a complete household inventory. A favourite existing object may be a useful reference without requiring the new piece to match every material or detail."
+        ],
+        "group": "Room observation",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F005; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:db8ab0fc-cc49-55a0-ab92-a7aa5d4aabd2",
+    "kind": "page",
+    "route": "/faq/how-do-i-describe-two-possible-locations-for-a-piece",
+    "title": "How do I describe two possible locations for a piece?",
+    "eyebrow": "Room observation",
+    "description": "Label the locations A and B on the same sketch and provide a contextual photograph of each.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How do I describe two possible locations for a piece?",
+        "paragraphs": [
+          "Label the locations A and B on the same sketch and provide a contextual photograph of each. Explain the advantage and unresolved question for each option. Keep the proposed object assumptions consistent so the comparison is understandable. Neither location should be treated as confirmed until the relevant dimensions, access and intended use have been reviewed."
+        ],
+        "group": "Room observation",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F006; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:5ae903c5-6363-55c3-a7be-1179f59375b4",
+    "kind": "page",
+    "route": "/faq/can-i-discuss-a-room-before-deciding-on-an-object",
+    "title": "Can I discuss a room before deciding on an object?",
+    "eyebrow": "Room observation",
+    "description": "You can begin with the room's purpose and an open question through the custom-piece brief.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I discuss a room before deciding on an object?",
+        "paragraphs": [
+          "You can begin with the room's purpose and an open question through the custom-piece brief. Describe the activity, proposed position and what you would like to improve or explore. Add a small number of relevant references. This starts a conversation; it does not confirm a room-design service, feasibility, a quotation or a production booking."
+        ],
+        "group": "Room observation",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F007; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:d758361b-5a62-5517-ab00-46d9b96b46ae",
+    "kind": "page",
+    "route": "/faq/what-if-several-people-use-the-same-space",
+    "title": "What if several people use the same space?",
+    "eyebrow": "Room observation",
+    "description": "Describe the main activities and any different priorities among the people using the space.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "What if several people use the same space?",
+        "paragraphs": [
+          "Describe the main activities and any different priorities among the people using the space. Identify which choices are shared and which remain unresolved. A consolidated brief is useful when the actual decision-makers have reviewed it. Do not present one person's preference as everyone's agreement or assume a generic layout meets every user's needs."
+        ],
+        "group": "Room observation",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F008; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:78d2a806-f1b2-5b71-a03f-c15e5f5d1e78",
+    "kind": "page",
+    "route": "/faq/which-private-details-should-i-leave-out-of-room-photos",
+    "title": "Which private details should I leave out of room photos?",
+    "eyebrow": "Room observation",
+    "description": "Leave out details unnecessary to the design discussion, such as visible addresses, private documents, family photographs and identifying views through mirrors.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Which private details should I leave out of room photos?",
+        "paragraphs": [
+          "Leave out details unnecessary to the design discussion, such as visible addresses, private documents, family photographs and identifying views through mirrors. Check the background as carefully as the main subject. Share only references you are entitled to provide. Private inquiry references are not automatically public catalogue images or permission to publish a room story."
+        ],
+        "group": "Room observation",
+        "policyHref": "/privacy",
+        "action": {
+          "label": "Read the related page",
+          "href": "/privacy"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F009; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /privacy. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/privacy"
+    }
+  },
+  {
+    "id": "editorial:c6638992-d807-544f-ad75-be2f91027daf",
+    "kind": "page",
+    "route": "/faq/how-can-i-explain-the-atmosphere-i-want",
+    "title": "How can I explain the atmosphere I want?",
+    "eyebrow": "Room observation",
+    "description": "Choose a few words and explain each with a visible example.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How can I explain the atmosphere I want?",
+        "paragraphs": [
+          "Choose a few words and explain each with a visible example. “Quiet” might mean a simple outline rather than a pale colour; “warm” might describe a relationship between materials rather than a specific hue. State which interpretation matters and add the room's practical use. The description is a preference for discussion, not an exact specification."
+        ],
+        "group": "Room observation",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Room observation"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F010; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  }
+]

@@ -1,4 +1,54 @@
-# Current release — M0–M4 through a detailed PR; await M5 permission
+# Current authorization — publish M5–M9 and begin M10
+
+10 October 2026. The owner approved the displayed work and requested putting it on the website, followed by M10. Read `docs/decisions/2026-10-10-release-m5-m9-and-m10.md`. Use a detailed PR into main, verify the exact deployment, ingest the 21 M9 images through real production storage, and publish the 480 new documents through the signed-in Studio workflow with fresh dependencies. Preserve every pre-existing record. Owner publication authorization does not invent native-reader, physical-device, independent editorial or genuine-customer evidence. The older local-only/stop-before-M10 checkpoints below are historical for this request.
+
+---
+
+# Current checkpoint — M9 drafts delivered; stop before M10
+
+9 October 2026. All 480 new English drafts are authored, saved in isolated local Studio in 48 ten-entry batches, and delivered to the dedicated Drive folder: 120 Journal, 120 labelled Portfolio concepts, 120 labelled fictional Testimonial examples and 120 FAQs. Production remains 0/480. Read `M9-EDITORIAL-DRAFT-PRODUCTION.md`, `m9-evidence.json` and `PENDING-AFTER-M9.md` under `docs/redesign/old-design-migration-2026-10-08/`. Build/type/lint, 337 unit, 403 built-server, 480 saved-render checks and 34 core Drive hash readbacks pass. Every pre-M9 row in all 13 protected scopes is unchanged. Human editorial, rights/crop, native-reader, physical-device and publication approvals remain open. Stop before M10. No push, release or production writes. Do not re-import existing M9 IDs or copy local QA media publication into production.
+
+---
+
+# Current authorization — M9 draft production and staging
+
+9 October 2026. The owner explicitly authorized M9. Read `docs/decisions/2026-10-09-m9.md`. Produce the new editorial drafts and media in ten-entry batches, stage additively in isolated local Studio and copy the delivery to a dedicated Drive folder. Preserve all pre-M9 records and Drive originals. Stop before M10. No push/release/production publication. Actual human/native/media-owner approvals remain distinct from assistant review. Earlier stops before M9 below are superseded for this phase only.
+
+---
+
+# Current checkpoint — M7 and M8 verified locally; stop before M9
+
+9 October 2026. The owner-authorized M7 and M8 are complete for their documented local engineering scopes. Read `M7-ORDERS-AND-EDITORIAL-ORDERING.md`, `M8-EDITORIAL-WORKFLOW.md`, `m8-evidence.json` and `PENDING-AFTER-M8.md` under `docs/redesign/old-design-migration-2026-10-08/`. M7 is commit `467e157`; M8 is the commit containing this checkpoint. Final M8 build/type/lint, 333 unit, 403 built-server and five workflow groups pass. All 13 pre-M8 protected scopes match row-for-row. M5–M8 remain local; production editorial remains 0/480. Stop before M9. No push, release or production writes until an applicable owner instruction. Human/native-reader/physical-device/field/full-parity acceptance remains open. Historical checkpoints below do not authorize further phases.
+
+---
+
+# Current authorization — M7 then M8 locally
+
+9 October 2026. The owner explicitly requested M7 and M8. Complete and verify M7 before M8; stop before M9. No push, release or production writes are authorized. Preserve existing records and test additively only in the existing loopback QA database. Read `docs/decisions/2026-10-09-m7-m8.md`. Earlier stops before M7 are superseded for these two phases.
+
+---
+
+# Current checkpoint — M5 and M6 local work complete; stop before M7
+
+9 October 2026. The owner authorized M5 and M6. Both are verified for their recorded local engineering scope. Read `docs/redesign/old-design-migration-2026-10-08/IMPLEMENTATION-CHECKPOINT.md`, `M6-STUDIO-WORKSPACES.md`, `m6-evidence.json` and `PENDING-AFTER-M6.md`. Final M6: build/type/lint, 326 unit, 403 built-server and five workflow groups pass; all 13 original and pre-M6 protected scopes match. M5/M6 remain local. Stop before M7, with no push/release/production changes until a new applicable owner instruction. New production editorial stays 0/480. Full visual, human, native-reader, physical-device and field checks remain open.
+
+---
+
+# Current authorization — implement M5, then M6 locally
+
+9 October 2026. The owner explicitly requested starting M5 and M6. Complete and verify M5, then M6, in dependency order. This supersedes the previous stop at Production setup for these two phases only. Do not start M7, push, release or publish production changes. Read `docs/decisions/2026-10-09-m5-m6.md`. Preserve all original records and use only the existing isolated loopback QA database for write tests.
+
+---
+
+# Previous checkpoint — Production setup complete
+
+9 October 2026. The owner requested only Production setup, followed by a stop. The two presentation tables now exist in the verified shared live database with narrow runtime grants. A real Studio administrator saved fresh production draft revision 1 and deliberately published revision 2 after exact preview review. The homepage composition, seven page layouts and disclosed material film are live. All eight routes return revision 2; all 13 original protected scopes have identical before/after counts and digests. Read `docs/redesign/old-design-migration-2026-10-08/PRODUCTION-SETUP.md` and the decision at `docs/decisions/2026-10-09-production-presentation-setup.md`.
+
+Stop here. M5 and subsequent phases require explicit permission. New editorial production remains 0/480. Full parity, native-reader, human screen-reader, physical-device and field checks remain open. No local QA records were transferred. This setup used the already deployed PR #46 application; its new local receipt/tooling does not imply another push or deployment.
+
+---
+
+# Previous release — M0–M4 through a detailed PR; await M5 permission
 
 9 October 2026. The owner explicitly requested pushing all completed local work into GitHub main through a detailed PR and then listing pending work. Read `docs/decisions/2026-10-09-release-m0-m4.md` and `docs/redesign/old-design-migration-2026-10-08/RELEASE-M0-M4.md`. This authorizes this candidate's branch push, PR, checked merge and deployment verification. Do not bypass branch protection or push directly to main. It does not authorize starting M5. The local-only wording below is historical for this candidate. The existing production runtime role cannot create the two missing presentation tables; report that activation gap honestly and never copy local QA revisions into production.
 

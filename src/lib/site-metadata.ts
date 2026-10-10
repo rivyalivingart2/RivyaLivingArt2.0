@@ -1,6 +1,6 @@
 import 'server-only';
 import type {Metadata} from 'next';
-import {publishedPage} from './published-content';
+import {publishedPage,publishedContent} from './published-content';
 import {publishedProducts} from './shop-catalogue';
 import {isPublicWebsiteAvailable,isProductionWebsite} from './public-website';
 import {approvedProjects} from './project-model';
@@ -17,7 +17,8 @@ const staticPages:Record<string,[string,string]>={
  '/commission':['Begin your piece','Choose a starting design and share a product-specific brief with RivyaLivingArt.'],
  '/journal':['The journal','Original notes on spaces, materials and preparing a thoughtful commission.'],
  '/search':['Find your piece','Search the published RivyaLivingArt collection.'],
- '/portfolio':['Projects in context','Explore approved RivyaLivingArt project stories when their details and photographs are available.']
+ '/portfolio':['Projects in context','Explore approved RivyaLivingArt project stories when their details and photographs are available.'],
+ '/testimonials':['Words & perspectives','Genuine feedback and clearly labelled fictional samples, each with its own context.']
 };
 export async function routeMetadata(route:string):Promise<Metadata>{
  if(!isPublicWebsiteAvailable(process.env))return {title:'Unavailable',robots:{index:false,follow:false}};
@@ -27,10 +28,12 @@ export async function routeMetadata(route:string):Promise<Metadata>{
   const p=products.find(p=>p.slug===slug)||products.find(p=>p.id===findConcept(slug)?.id);
   if(p){route='/pieces/'+p.slug;title=p.name;description=p.story.slice(0,170);image=p.scene||p.image;imageAlt=p.sceneAlt||p.imageAlt||p.name;}
  }else if(route.startsWith('/portfolio/')){
+  const document=await publishedPage(route);
+  if(document?.editorial?.kind==='portfolio'){title=document.title;description=document.description;const share=publishedShareImage(document);if(share){image=share.path;imageAlt=share.alt;}}
   const p=approvedProjects.find(p=>'/portfolio/'+p.slug===route&&p.approvalRecord);
   if(p){title=p.title;description=p.description;image=p.image;imageAlt=p.imageAlt;}
  }else {const d=await publishedPage(route);if(d){title=d.title;description=d.description;const share=publishedShareImage(d);if(share){image=share.path;imageAlt=share.alt;}}}
  if(!title)return {title:'Page unavailable',robots:{index:false,follow:false}};
- const index=indexingEnabled()&&isIndexablePublicPath(route)&&(route!=='/portfolio'||approvedProjects.some(p=>!!p.approvalRecord));
+ const index=indexingEnabled()&&isIndexablePublicPath(route)&&(route!=='/portfolio'||approvedProjects.some(p=>!!p.approvalRecord)||(await publishedContent('en',undefined,'')).some(p=>p.editorial?.kind==='portfolio'));
  return {title,description,alternates:{canonical:siteOrigin+route},robots:{index,follow:index},openGraph:{type:route.startsWith('/journal/')?'article':'website',title,description,url:siteOrigin+route,siteName:'RivyaLivingArt',images:[{url:siteOrigin+image,alt:imageAlt}]},twitter:{card:'summary_large_image',title,description,images:[{url:siteOrigin+image,alt:imageAlt}]}};
 }

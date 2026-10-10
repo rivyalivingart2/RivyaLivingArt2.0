@@ -8,14 +8,14 @@ const textArrays=new Set(['paragraphs','checklist','strip']);
 export function translationFields(document:ContentDocument):TranslationField[]{
  const result:TranslationField[]=[];
  const visit=(value:unknown,path:string,key:string)=>{
-  if(typeof value==='string'){if(value.trim()&&(textKeys.has(key)||textArrays.has(key)))result.push({path,source:value});return;}
+  if(typeof value==='string'){if(value.trim()&&(textKeys.has(key)||textArrays.has(key)||key==='value'&&/^editorial\.details\.\d+\.value$/.test(path)))result.push({path,source:value});return;}
   if(Array.isArray(value)){value.forEach((v,i)=>visit(v,path+'.'+i,key));return;}
   if(value&&typeof value==='object')for(const [k,v] of Object.entries(value)){
-   if(['sourceNote','translations','homeSnapshot','pageSnapshot','relatedProductIds','productIds','categories'].includes(k))continue;
+   if(['sourceNote','evidence','translations','homeSnapshot','pageSnapshot','relatedProductIds','productIds','categories'].includes(k))continue;
    visit(v,path?path+'.'+k:k,k);
   }
  };
- for(const key of ['title','eyebrow','description','imageAlt','sections','headerImage','homepage'] as const){
+ for(const key of ['title','eyebrow','description','imageAlt','sections','headerImage','homepage','landing','editorial'] as const){
   if(key==='imageAlt'&&document.imageAlt)result.push({path:key,source:document.imageAlt});else visit(document[key],key,key);
  }
  return result;

@@ -1,0 +1,178 @@
+{
+  "phase": "M5",
+  "at": "2026-10-09T09:24:48.936Z",
+  "status": "verified-local-engineering-scope",
+  "candidate": {
+    "base": "ac7aa382bca15435e2b9219f22a5293548669e3f",
+    "applicationSha256": "386e2e094cef7cf1e0328304ac23cc9a5049e4bbe7156431f638666685369faf"
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "lint": "passed - 0 errors",
+  "unitTests": 319,
+  "builtServerChecks": 403,
+  "http": {
+    "file": "m5-contract-check-5fbbce86.json",
+    "checks": [
+      {
+        "name": "Anonymous content/history requests remain denied",
+        "passed": true
+      },
+      {
+        "name": "Concept, fictional testimonial and FAQ save, exact-preview and publish without review-schema claims",
+        "passed": true
+      },
+      {
+        "name": "Genuine feedback without its source and permission remains a draft",
+        "passed": true
+      },
+      {
+        "name": "Fifteen block renderers use captured dependencies; stale publication is refused and saved preview remains unchanged",
+        "passed": true
+      },
+      {
+        "name": "The exclusive video-hero block renders with the same disclosed controlled film",
+        "passed": true
+      },
+      {
+        "name": "Version conflicts preserve later drafts; restore creates a new draft without publishing",
+        "passed": true
+      },
+      {
+        "name": "Grouped search and FAQ index include only published approved projections",
+        "passed": true
+      },
+      {
+        "name": "Sixteen existing customer/policy routes remain available; unknown records, unavailable workshop and private preview retain their boundaries",
+        "passed": true
+      }
+    ]
+  },
+  "browser": {
+    "viewports": [
+      {
+        "blocks": 15,
+        "h1": 1,
+        "overflow": false,
+        "unlabelledImages": 0,
+        "width": 1440
+      },
+      {
+        "blocks": 15,
+        "h1": 1,
+        "overflow": false,
+        "unlabelledImages": 0,
+        "width": 768
+      },
+      {
+        "blocks": 15,
+        "h1": 1,
+        "overflow": false,
+        "unlabelledImages": 0,
+        "width": 390
+      },
+      {
+        "blocks": 15,
+        "h1": 1,
+        "overflow": false,
+        "unlabelledImages": 0,
+        "width": 320
+      }
+    ],
+    "archiveFilterEmptyAndBack": true,
+    "galleryKeyboardWrapEscapeAndFocusReturn": true,
+    "videoDeliberatePlayPause": true,
+    "mobileActionRepairedAndNavigated": true,
+    "searchGroupsBeforeResults": true,
+    "human": false,
+    "physicalDevice": false
+  },
+  "protection": [
+    {
+      "scope": "rivya_catalogue",
+      "originalCount": 120,
+      "unchanged": true,
+      "addedLocalQA": 0
+    },
+    {
+      "scope": "rivya_content",
+      "originalCount": 56,
+      "unchanged": true,
+      "addedLocalQA": 21
+    },
+    {
+      "scope": "rivya_public_media",
+      "originalCount": 131,
+      "unchanged": true,
+      "addedLocalQA": 0
+    },
+    {
+      "scope": "rivya_business_settings",
+      "originalCount": 1,
+      "unchanged": true,
+      "addedLocalQA": 0
+    },
+    {
+      "scope": "rivya_revisions",
+      "originalCount": 0,
+      "unchanged": true,
+      "addedLocalQA": 50
+    },
+    {
+      "scope": "rivya_inquiries",
+      "originalCount": 0,
+      "unchanged": true,
+      "addedLocalQA": 0
+    },
+    {
+      "scope": "rivya_studio_orders",
+      "originalCount": 0,
+      "unchanged": true,
+      "addedLocalQA": 0
+    },
+    {
+      "scope": "rivya_studio_order_events",
+      "originalCount": 0,
+      "unchanged": true,
+      "addedLocalQA": 0
+    },
+    {
+      "scope": "rivya_inquiry_notes",
+      "originalCount": 0,
+      "unchanged": true,
+      "addedLocalQA": 0
+    },
+    {
+      "scope": "rivya_references",
+      "originalCount": 0,
+      "unchanged": true,
+      "addedLocalQA": 0
+    },
+    {
+      "scope": "rivya_staff",
+      "originalCount": 0,
+      "unchanged": true,
+      "addedLocalQA": 0
+    },
+    {
+      "scope": "rivya_privacy_controls",
+      "originalCount": 0,
+      "unchanged": true,
+      "addedLocalQA": 0
+    },
+    {
+      "scope": "rivya_erasure_ledger",
+      "originalCount": 0,
+      "unchanged": true,
+      "addedLocalQA": 0
+    }
+  ],
+  "productionWrites": 0,
+  "editorialProduction": 0,
+  "fullVisualParity": false,
+  "human": false,
+  "physicalDevice": false,
+  "nativeReader": false,
+  "fieldPerformance": false,
+  "nextPhase": "M6 - explicitly authorized; stop before M7"
+}

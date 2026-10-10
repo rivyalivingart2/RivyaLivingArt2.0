@@ -1,4 +1,44 @@
-# Local implementation checkpoint — 9 October 2026
+# Current authorization — publish M5–M9 and begin M10
+
+10 October 2026. The owner approved the displayed work and requested putting it on the website, followed by M10. Read `docs/decisions/2026-10-10-release-m5-m9-and-m10.md`. Use a detailed PR into main, verify the exact deployment, ingest the 21 M9 images through real production storage, and publish the 480 new documents through the signed-in Studio workflow with fresh dependencies. Preserve every pre-existing record. Owner publication authorization does not invent native-reader, physical-device, independent editorial or genuine-customer evidence. The older local-only/stop-before-M10 checkpoints below are historical for this request.
+
+---
+
+# Current checkpoint — M9 drafts delivered; stop before M10
+
+9 October 2026. All 480 new English drafts are authored, saved in isolated local Studio in 48 ten-entry batches, and delivered to the dedicated Drive folder: 120 Journal, 120 labelled Portfolio concepts, 120 labelled fictional Testimonial examples and 120 FAQs. Production remains 0/480. Read `M9-EDITORIAL-DRAFT-PRODUCTION.md`, `m9-evidence.json` and `PENDING-AFTER-M9.md` under `docs/redesign/old-design-migration-2026-10-08/`. Build/type/lint, 337 unit, 403 built-server, 480 saved-render checks and 34 core Drive hash readbacks pass. Every pre-M9 row in all 13 protected scopes is unchanged. Human editorial, rights/crop, native-reader, physical-device and publication approvals remain open. Stop before M10. No push, release or production writes. Do not re-import existing M9 IDs or copy local QA media publication into production.
+
+---
+
+# Current authorization — M9 draft production and staging
+
+9 October 2026. The owner explicitly authorized M9. Read `docs/decisions/2026-10-09-m9.md`. Produce the new editorial drafts and media in ten-entry batches, stage additively in isolated local Studio and copy the delivery to a dedicated Drive folder. Preserve all pre-M9 records and Drive originals. Stop before M10. No push/release/production publication. Actual human/native/media-owner approvals remain distinct from assistant review. Earlier stops before M9 below are superseded for this phase only.
+
+---
+
+# Current checkpoint — M7 and M8 verified locally; stop before M9
+
+9 October 2026. The owner-authorized M7 and M8 are complete for their documented local engineering scopes. Read `M7-ORDERS-AND-EDITORIAL-ORDERING.md`, `M8-EDITORIAL-WORKFLOW.md`, `m8-evidence.json` and `PENDING-AFTER-M8.md` in this migration directory. M7 is commit `467e157`; M8 is the commit containing this checkpoint. Final M8 build/type/lint, 333 unit, 403 built-server and five workflow groups pass. All 13 pre-M8 protected scopes match row-for-row. M5–M8 remain local; production editorial remains 0/480. Stop before M9. No push, release or production writes until an applicable owner instruction. Human/native-reader/physical-device/field/full-parity acceptance remains open. Historical checkpoints below do not authorize further phases.
+
+---
+
+# M7 checkpoint — verified locally; M8 authorized next
+
+9 October 2026. M7 is complete for its recorded engineering scope. Read `M7-ORDERS-AND-EDITORIAL-ORDERING.md` and `m7-evidence.json` in this migration directory. All 13 pre-M7 protected scopes match. Continue with authorized M8, then stop before M9. Local only; no release or production writes.
+
+---
+
+# Current authorization — M7 then M8 locally
+
+9 October 2026. The owner explicitly requested M7 and M8. Complete and verify M7 before M8; stop before M9. No push, release or production writes are authorized. Preserve existing records and test additively only in the existing loopback QA database. Read `docs/decisions/2026-10-09-m7-m8.md`. Earlier stops before M7 are superseded for these two phases.
+
+---
+
+# Implementation checkpoint — 9 October 2026
+
+**Current: M5 and M6 verified locally; STOP before M7.** The owner explicitly authorized these two phases only. M5 is saved at `edd8347`; M6 is the following local checkpoint. Read `M5-PUBLIC-JOURNEYS.md`, `M6-STUDIO-WORKSPACES.md`, `m6-evidence.json`, `m6-studio-dispositions.json` and `PENDING-AFTER-M6.md`. Final M6 checks: build/type/lint, 326 unit, 403 built-server and five workflow groups pass. All 13 original/pre-M6 protected scopes match. M5/M6 are not deployed; new production editorial remains 0/480. M7 requires explicit permission. The following previous checkpoints are historical.
+
+**Production setup is complete; stop before M5.** PR #46 is merged at `6605b1b19283f7725eee1bc1639cc277556428bf`; its existing production application now serves Studio presentation revision 2. Two additive tables, narrow grants, fresh saved previews and deliberate publication are verified. Homepage images/video and all seven enabled page layouts are live; all 13 original protected scopes match their pre-activation counts and digests. Read `PRODUCTION-SETUP.md` for the exact evidence and limitations. No new application deployment or editorial production was needed. M5 still requires explicit permission.
 
 **M0–M4 are verified for their recorded local engineering scopes. M5–M11 remain unfinished. M5 has not started and requires the owner's explicit permission.** The latest phase-by-phase instruction supersedes automatic progression through the original plan; see `docs/decisions/2026-10-09-phase-permission-and-media.md`. The subsequent owner request authorizes releasing the completed M0–M4 candidate through a detailed PR into main; see `RELEASE-M0-M4.md` for release scope and production activation limits.
 
@@ -54,4 +94,4 @@ M5 is next in dependency order. Do not start it until the owner explicitly autho
 
 The owner explicitly selected labelled concepts and fictional samples on 9 October; see `docs/decisions/2026-10-09-labelled-editorial-content.md`. The original genuine-only plan is superseded for these new clearly labelled entries. Matching new copies are requested in Drive and Studio. M4 delivered one MP4 derivative to Drive and verified matching existing WebM/poster files; the local Studio presentation stores their metadata and references. That one material film is not an editorial-production entry. All 480 requested new content records remain outstanding. No genuine source pack or consent was inferred from intake slots or Drive images. Native-reader, human screen-reader, physical-phone, field-performance and genuine-inquiry checks remain open.
 
-Release scope: the owner has now requested a checked PR into main and deployment verification for the completed candidate. The PR description is the receipt for exact head, merge and deployment results. Production presentation-table setup and authenticated design publication remain separate activation steps; the existing restricted runtime role cannot create the missing tables. Local QA records/history must never be transferred. No product transfer, scraper run, backup work or customer message is authorized. Read `PENDING-AFTER-M4.md` before continuing.
+Release scope: PR #46 records the exact head, checked merge and deployment results. The subsequent owner-authorized production setup is now complete, as recorded above and in `PRODUCTION-SETUP.md`. The earlier phase paragraphs retain their historical local evidence scope. Local QA records/history must never be transferred. No product transfer, scraper run, backup work or customer message is authorized. Read `PENDING-AFTER-M4.md` before continuing.

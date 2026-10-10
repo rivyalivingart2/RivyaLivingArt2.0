@@ -1,0 +1,412 @@
+[
+  {
+    "id": "editorial:091bc971-018b-57c7-a413-1b6bdfe557f3",
+    "kind": "page",
+    "route": "/faq/what-belongs-in-a-list-of-decisions-still-awaiting-confirmation",
+    "title": "What belongs in a list of decisions still awaiting confirmation?",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "List the decision, why it matters, the relevant proposal version and who may provide the missing information.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "What belongs in a list of decisions still awaiting confirmation?",
+        "paragraphs": [
+          "List the decision, why it matters, the relevant proposal version and who may provide the missing information. Separate unanswered questions from preferences and confirmed agreements. Put questions that affect other choices first. A tidy list does not create agreement; keep each item pending until an actual answer or approval supports a change of status."
+        ],
+        "group": "Communication and agreed next steps",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F111; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:56479b6f-1239-571a-a57b-032e21af1362",
+    "kind": "page",
+    "route": "/faq/how-should-i-describe-an-optional-feature-when-requesting-separate-pricing",
+    "title": "How should I describe an optional feature when requesting separate pricing?",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "Label the feature optional and identify the current proposal.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How should I describe an optional feature when requesting separate pricing?",
+        "paragraphs": [
+          "Label the feature optional and identify the current proposal. Explain what would change and what should remain the same, then ask whether separate pricing and feasibility review are appropriate. Do not assume the option is available or included. Any revised quotation and specification need their own clear version and agreement."
+        ],
+        "group": "Communication and agreed next steps",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F112; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:8b07293f-f322-5ab0-a36c-9ac4e20a2c6c",
+    "kind": "page",
+    "route": "/faq/how-can-i-describe-a-flexible-date-range-without-implying-a-booked-production-slot",
+    "title": "How can I describe a flexible date range without implying a booked production slot?",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "State the preferred period, the occasion it relates to and the amount of flexibility, if any.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How can I describe a flexible date range without implying a booked production slot?",
+        "paragraphs": [
+          "State the preferred period, the occasion it relates to and the amount of flexibility, if any. Ask for an individual timing discussion rather than describing the range as booked. Production and delivery estimates depend on the actual request and are confirmed separately. A saved inquiry, reference number or preferred date does not reserve a production slot."
+        ],
+        "group": "Communication and agreed next steps",
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related page",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F113; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/shipping-delivery"
+    }
+  },
+  {
+    "id": "editorial:3a2582c6-ecbc-55b5-a7e6-66a0bc5760b4",
+    "kind": "page",
+    "route": "/faq/how-should-i-label-two-design-versions-when-asking-about-a-change",
+    "title": "How should I label two design versions when asking about a change?",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "Give each version a distinct label and date, identify which is currently agreed and mark the other as a proposed change.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How should I label two design versions when asking about a change?",
+        "paragraphs": [
+          "Give each version a distinct label and date, identify which is currently agreed and mark the other as a proposed change. Describe the exact difference rather than sending two unexplained images. Keep the response with the decision log. A new attachment does not automatically supersede an approved specification or confirm that the requested change is feasible."
+        ],
+        "group": "Communication and agreed next steps",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F114; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:2fd8e54d-94e1-5141-a2fc-684c66976436",
+    "kind": "page",
+    "route": "/faq/can-i-propose-a-change-without-altering-a-saved-specification",
+    "title": "Can I propose a change without altering a saved specification?",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "Yes, as a clearly labelled proposal for discussion.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I propose a change without altering a saved specification?",
+        "paragraphs": [
+          "Yes, as a clearly labelled proposal for discussion. Identify the current specification and explain the requested change without editing the old record as though approval already exists. Ask about feasibility, cost, timing and the next approval step where relevant. Changes after approved production starts are assessed individually under the current policy and are not guaranteed."
+        ],
+        "group": "Communication and agreed next steps",
+        "policyHref": "/returns-cancellations",
+        "action": {
+          "label": "Read the related page",
+          "href": "/returns-cancellations"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F115; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /returns-cancellations. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/returns-cancellations"
+    }
+  },
+  {
+    "id": "editorial:fd470f60-ee81-5fb2-a74d-c8529563b7b3",
+    "kind": "page",
+    "route": "/faq/which-policy-explains-changes-or-cancellations",
+    "title": "Which policy explains changes or cancellations?",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "Read the current cancellations, returns and refunds page in full.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Which policy explains changes or cancellations?",
+        "paragraphs": [
+          "Read the current cancellations, returns and refunds page in full. It distinguishes requests before production or approved non-recoverable procurement from changes after approved work begins, and it preserves remedies for damaged, defective, incorrect or materially non-conforming products. Do not reduce those conditions to a blanket “no returns” statement. Ask about your actual circumstances using the inquiry reference."
+        ],
+        "group": "Communication and agreed next steps",
+        "policyHref": "/returns-cancellations",
+        "action": {
+          "label": "Read the related page",
+          "href": "/returns-cancellations"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F116; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /returns-cancellations. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/returns-cancellations"
+    }
+  },
+  {
+    "id": "editorial:2c028c6f-74a6-5b55-a34c-6ed4fceada45",
+    "kind": "page",
+    "route": "/faq/where-can-delivery-arrangements-be-discussed",
+    "title": "Where can delivery arrangements be discussed?",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "Describe the destination, relevant access and preferred timing in the request, then discuss the actual arrangements with the atelier.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Where can delivery arrangements be discussed?",
+        "paragraphs": [
+          "Describe the destination, relevant access and preferred timing in the request, then discuss the actual arrangements with the atelier. Serviceability, transport, installation and charges are confirmed individually. Under the current policy, installation requires prior arrangement within Surat and international delivery is unavailable at launch. Read the full delivery page before relying on an arrangement."
+        ],
+        "group": "Communication and agreed next steps",
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related page",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F117; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/shipping-delivery"
+    }
+  },
+  {
+    "id": "editorial:3ed41c54-abf9-52d8-a704-ff96e89e2482",
+    "kind": "page",
+    "route": "/faq/how-should-i-correct-a-contact-preference-with-the-atelier",
+    "title": "How should I correct a contact preference with the atelier?",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "Contact the atelier through an appropriate private channel, identify the existing inquiry and state the corrected detail or preferred channel.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How should I correct a contact preference with the atelier?",
+        "paragraphs": [
+          "Contact the atelier through an appropriate private channel, identify the existing inquiry and state the corrected detail or preferred channel. Explain whether the previous detail should no longer be used. Keep delivery-address or design changes separate unless they also need correction. Do not assume sending the preference means every relevant record has already been updated."
+        ],
+        "group": "Communication and agreed next steps",
+        "policyHref": "/contact",
+        "action": {
+          "label": "Read the related page",
+          "href": "/contact"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F118; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /contact. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/contact"
+    }
+  },
+  {
+    "id": "editorial:93d4c7dc-bd4b-59c5-ab75-920d5bc0a1ca",
+    "kind": "page",
+    "route": "/faq/what-should-i-check-before-pressing-send-in-whatsapp",
+    "title": "What should I check before pressing Send in WhatsApp?",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "Check the destination, inquiry reference, contact details, exact personalization text, dates, dimensions and completeness of the pasted summary.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "What should I check before pressing Send in WhatsApp?",
+        "paragraphs": [
+          "Check the destination, inquiry reference, contact details, exact personalization text, dates, dimensions and completeness of the pasted summary. Review attachments and any extra text in the composer. Correct formatting without changing the intended meaning. You press Send yourself; the website cannot confirm that the prepared message was sent, received or read."
+        ],
+        "group": "Communication and agreed next steps",
+        "policyHref": "/faq",
+        "action": {
+          "label": "Read the related page",
+          "href": "/faq"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F119; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/faq"
+    }
+  },
+  {
+    "id": "editorial:f191f6f0-ad3b-5f25-a96e-4292d3e74dcc",
+    "kind": "page",
+    "route": "/faq/how-can-i-identify-the-next-step-that-still-needs-agreement",
+    "title": "How can I identify the next step that still needs agreement?",
+    "eyebrow": "Communication and agreed next steps",
+    "description": "End the summary with the unresolved decision, the information needed and who will provide it.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How can I identify the next step that still needs agreement?",
+        "paragraphs": [
+          "End the summary with the unresolved decision, the information needed and who will provide it. Identify the current reference or proposal version and distinguish a preferred date from an agreed one. Keep the item visibly pending until there is an actual response. A closing message does not replace recorded approval or confirm production or delivery."
+        ],
+        "group": "Communication and agreed next steps",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Communication and agreed next steps"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F120; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  }
+]

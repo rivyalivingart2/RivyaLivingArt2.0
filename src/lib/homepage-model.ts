@@ -3,14 +3,14 @@ import {baselineProducts, type ShopProduct} from './shop-model';
 import {allowedEditorialPath} from './editorial-media-model';
 
 export type HomeAction={label:string;href:string};
-export type ImageCrop={x:number;y:number;ratio:'4/5'|'3/2'|'1/1'};
+export type ImageCrop={x:number;y:number;ratio:'4/5'|'3/2'|'1/1'|'16/9'|'21/9'};
 export type EditorialUsage={path:string;alt:string;caption:string;desktop:ImageCrop;mobile:ImageCrop};
 export const homeSectionTypes=['selected','categories','story','steps','journeys','journal','invitation'] as const;
 export type HomeSectionType=typeof homeSectionTypes[number];
 export type HomeSection={id:string;type:HomeSectionType;enabled:boolean;contentNeeded?:boolean;eyebrow:string;layout?:'split'|'reverse'|'statement';action?:HomeAction;secondaryAction?:HomeAction;productIds?:string[];articleIds?:string[];categories?:string[];image?:EditorialUsage;items?:{id:string;title:string;body:string;productId?:string;image?:EditorialUsage;action?:HomeAction}[]};
 export type Homepage={schemaVersion:1;heroProductId:string;heroImage?:EditorialUsage;primary:HomeAction;secondary:HomeAction;annotation:string;strip:string[];sections:HomeSection[]};
 export type HomeProduct=Pick<ShopProduct,'id'|'slug'|'name'|'subtitle'|'category'|'tier'|'material'|'image'|'imageAlt'|'imagePosition'|'price'|'scene'|'sceneAlt'|'scenePosition'|'revision'>;
-export type HomeArticle=Pick<ContentDocument,'id'|'route'|'title'|'description'|'eyebrow'|'image'|'imageAlt'|'sections'>&{imagePosition?:string;localizedCopy?:Partial<Record<'hi'|'gu',Pick<ContentDocument,'title'|'description'|'eyebrow'|'imageAlt'>>>};
+export type HomeArticle=Pick<ContentDocument,'id'|'route'|'title'|'description'|'eyebrow'|'image'|'imageAlt'|'sections'|'discovery'>&{languages?:string[]}&{imagePosition?:string;localizedCopy?:Partial<Record<'hi'|'gu',Pick<ContentDocument,'title'|'description'|'eyebrow'|'imageAlt'>>>};
 export type HomeDependency={kind:'product'|'content'|'media';key:string;version:number;fingerprint:string};
 /** Server-created, public-only dependencies saved in the same revision as the document. */
 export type HomeSnapshot={schemaVersion:1;products:HomeProduct[];articles:HomeArticle[];mediaPaths:string[];categories:{name:string;count:number;tiers:string[]}[];dependencies:HomeDependency[];issues:string[];unavailableActionHrefs?:string[]};
@@ -47,7 +47,7 @@ const text=(v:unknown,max=300,required=true):v is string=>typeof v==='string'&&v
 export function validHomeHref(v:unknown):v is string{return typeof v==='string'&&/^\/(?:[a-z0-9]+(?:-[a-z0-9]+)*(?:\/[a-z0-9]+(?:-[a-z0-9]+)*)?)?(?:#[a-z0-9-]+)?$/.test(v)&&v.length<=240;}
 const action=(v:HomeAction|undefined)=>!v||(text(v.label,80)&&validHomeHref(v.href));
 const ids=(v:unknown,max:number)=>Array.isArray(v)&&v.length<=max&&new Set(v).size===v.length&&v.every(x=>text(x,100));
-export function validUsage(v:EditorialUsage){return !!v&&allowedEditorialPath(v.path)&&text(v.alt,180)&&text(v.caption,180,false)&&[v.desktop,v.mobile].every(c=>c&&['4/5','3/2','1/1'].includes(c.ratio)&&[c.x,c.y].every(n=>Number.isFinite(n)&&n>=0&&n<=100));}
+export function validUsage(v:EditorialUsage){return !!v&&allowedEditorialPath(v.path)&&text(v.alt,180)&&text(v.caption,180,false)&&[v.desktop,v.mobile].every(c=>c&&['4/5','3/2','1/1','16/9','21/9'].includes(c.ratio)&&[c.x,c.y].every(n=>Number.isFinite(n)&&n>=0&&n<=100));}
 export function validHomepage(d:ContentDocument):boolean{
  try{return checkHomepage(d);}catch{return false;}
 }

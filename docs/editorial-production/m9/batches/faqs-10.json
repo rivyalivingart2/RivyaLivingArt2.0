@@ -1,0 +1,412 @@
+[
+  {
+    "id": "editorial:8a637cbe-43c5-55b4-a107-15ee474243f5",
+    "kind": "page",
+    "route": "/faq/where-can-i-find-care-information-for-an-individual-piece",
+    "title": "Where can I find care information for an individual piece?",
+    "eyebrow": "Care questions and placement",
+    "description": "Start with the care information supplied for the actual piece and its confirmed material and finish.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Where can I find care information for an individual piece?",
+        "paragraphs": [
+          "Start with the care information supplied for the actual piece and its confirmed material and finish. Use the materials and care page for general context, then ask the atelier about anything unclear. A similar-looking product or editorial image does not establish interchangeable care instructions. Include the piece or inquiry reference in the question."
+        ],
+        "group": "Care questions and placement",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F091; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:0ab013ce-b3d9-5540-ab87-da04a54c27e5",
+    "kind": "page",
+    "route": "/faq/should-care-questions-mention-the-confirmed-material-and-finish",
+    "title": "Should care questions mention the confirmed material and finish?",
+    "eyebrow": "Care questions and placement",
+    "description": "Yes.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Should care questions mention the confirmed material and finish?",
+        "paragraphs": [
+          "Yes. Include the confirmed material and finish where known, the piece reference and the actual use or concern. If those details are unknown, say so rather than identifying them from appearance. Photographs can explain context but cannot certify composition. Ask for guidance tied to the actual piece before choosing a cleaning or treatment method."
+        ],
+        "group": "Care questions and placement",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F092; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:52a55ce6-a5cf-523c-aa3e-6970c95ac2e2",
+    "kind": "page",
+    "route": "/faq/can-an-image-establish-heat-resistance",
+    "title": "Can an image establish heat resistance?",
+    "eyebrow": "Care questions and placement",
+    "description": "No.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can an image establish heat resistance?",
+        "paragraphs": [
+          "No. A photograph, visualization or prop does not establish heat resistance or a temperature limit. Describe the intended use and ask for guidance based on the actual confirmed material and finish. Do not test heat exposure because a reference scene contains a candle, cup or other warm-looking object. Appearance is not performance evidence."
+        ],
+        "group": "Care questions and placement",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F093; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:60416eec-d012-5235-af12-bb6311847bec",
+    "kind": "page",
+    "route": "/faq/can-i-infer-food-contact-suitability-from-a-product-photograph",
+    "title": "Can I infer food-contact suitability from a product photograph?",
+    "eyebrow": "Care questions and placement",
+    "description": "No.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I infer food-contact suitability from a product photograph?",
+        "paragraphs": [
+          "No. A product name, plate-like shape or photograph containing food does not establish food-contact suitability for a proposed piece. Ask about the actual material, finish and intended use before making that assumption. A decorative illustration communicates appearance; it cannot replace the appropriate specification or supporting information for a suitability claim."
+        ],
+        "group": "Care questions and placement",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F094; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:00b6255a-f0ce-562e-a842-21c78887dfb9",
+    "kind": "page",
+    "route": "/faq/where-should-cleaning-questions-be-directed",
+    "title": "Where should cleaning questions be directed?",
+    "eyebrow": "Care questions and placement",
+    "description": "Ask the atelier with the piece reference, confirmed specification and the specific cleaning question.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Where should cleaning questions be directed?",
+        "paragraphs": [
+          "Ask the atelier with the piece reference, confirmed specification and the specific cleaning question. Include relevant photographs if they help explain a concern. Do not choose chemicals, abrasives or repair methods from an inspiration image or a general article. Follow the instructions for the actual piece and request clarification when their scope is unclear."
+        ],
+        "group": "Care questions and placement",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F095; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:a167ab04-d546-50a1-ab8a-02d177942bfb",
+    "kind": "page",
+    "route": "/faq/what-placement-conditions-should-i-describe",
+    "title": "What placement conditions should I describe?",
+    "eyebrow": "Care questions and placement",
+    "description": "Describe nearby windows, heat sources, moisture, frequent contact and normal use where relevant.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "What placement conditions should I describe?",
+        "paragraphs": [
+          "Describe nearby windows, heat sources, moisture, frequent contact and normal use where relevant. Note any recent move or change in conditions. Keep observations separate from a diagnosis of what caused a concern. These details support a piece-specific discussion; they do not establish technical exposure values or prove that the material is suitable for the location."
+        ],
+        "group": "Care questions and placement",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F096; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:f4e4afcf-bccc-5785-a2f5-ac4a3b336689",
+    "kind": "page",
+    "route": "/faq/how-do-i-photograph-a-surface-concern",
+    "title": "How do I photograph a surface concern?",
+    "eyebrow": "Care questions and placement",
+    "description": "Take a whole-piece view and a closer view of the area in useful light, without filters where possible.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How do I photograph a surface concern?",
+        "paragraphs": [
+          "Take a whole-piece view and a closer view of the area in useful light, without filters where possible. Record when it was noticed and relevant changes in use or placement. Describe what is visible rather than assigning a cause. Include the inquiry reference and consult the current concern-reporting policy before attempting repairs."
+        ],
+        "group": "Care questions and placement",
+        "policyHref": "/returns-cancellations",
+        "action": {
+          "label": "Read the related page",
+          "href": "/returns-cancellations"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F097; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /returns-cancellations. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/returns-cancellations"
+    }
+  },
+  {
+    "id": "editorial:4fce8c72-a011-5b5d-a195-d1da721ba4c0",
+    "kind": "page",
+    "route": "/faq/does-general-guidance-replace-piece-specific-instructions",
+    "title": "Does general guidance replace piece-specific instructions?",
+    "eyebrow": "Care questions and placement",
+    "description": "No.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Does general guidance replace piece-specific instructions?",
+        "paragraphs": [
+          "No. General guidance provides context but does not replace instructions for the actual confirmed material, finish and use. Keep piece-specific notes with the current specification and ask about any apparent conflict. Do not strengthen a broad suggestion into a warranty, certification or performance limit, or borrow instructions from an unrelated similar-looking object."
+        ],
+        "group": "Care questions and placement",
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related page",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F098; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/materials-care"
+    }
+  },
+  {
+    "id": "editorial:dbed3e35-fd4e-54e8-aebc-f6eb8218da74",
+    "kind": "page",
+    "route": "/faq/can-i-discuss-relocation-before-moving-a-piece",
+    "title": "Can I discuss relocation before moving a piece?",
+    "eyebrow": "Care questions and placement",
+    "description": "Discuss the proposed move before assuming the original handling or installation arrangement applies.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I discuss relocation before moving a piece?",
+        "paragraphs": [
+          "Discuss the proposed move before assuming the original handling or installation arrangement applies. Describe the current and new positions, route, turns, stairs or lifts, and the piece's confirmed dimensions. Ask what assessment is needed. This is not a moving instruction, and the website does not promise installation at every destination."
+        ],
+        "group": "Care questions and placement",
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related page",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F099; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/shipping-delivery"
+    }
+  },
+  {
+    "id": "editorial:e0bc132b-e422-59d8-aff3-7133fdb004bd",
+    "kind": "page",
+    "route": "/faq/where-can-i-ask-about-a-care-instruction-i-do-not-understand",
+    "title": "Where can I ask about a care instruction I do not understand?",
+    "eyebrow": "Care questions and placement",
+    "description": "Contact the atelier with the piece reference, the instruction you are trying to understand and the action you are considering.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Where can I ask about a care instruction I do not understand?",
+        "paragraphs": [
+          "Contact the atelier with the piece reference, the instruction you are trying to understand and the action you are considering. Include the confirmed material and finish if available. Asking a specific question is safer than guessing from a general article or photograph. Keep any clarification with the care record for that piece."
+        ],
+        "group": "Care questions and placement",
+        "policyHref": "/contact",
+        "action": {
+          "label": "Read the related page",
+          "href": "/contact"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F100; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /contact. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/contact"
+    }
+  }
+]

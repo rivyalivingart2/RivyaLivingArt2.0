@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-export function SavedPreviewFrame({href,revision,marker}:{href:string;revision:number;marker?:'data-presentation-revision'}){
+export function SavedPreviewFrame({href,revision,marker}:{href:string;revision:number;marker?:'data-presentation-revision'|'data-order-preview-version'}){
  const frame=useRef<HTMLIFrameElement>(null);
  const [attempt,setAttempt]=useState(0),[status,setStatus]=useState<'loading'|'ready'|'failed'>('loading');
  useEffect(()=>{const timer=setTimeout(()=>setStatus(value=>value==='loading'?'failed':value),15000);return()=>clearTimeout(timer);},[attempt]);

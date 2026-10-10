@@ -17,7 +17,7 @@ export function CropFields({usage,onChange,hero=false}:{usage:EditorialUsage;onC
     <legend>{device==='desktop'?'Desktop crop':'Mobile crop'}</legend>
     <div className={s.cropPreview} style={{aspectRatio:hero?(device==='desktop'?'16/10':'9/16'):crop.ratio}}><Image src={usage.path} alt={usage.alt} fill sizes="(max-width: 780px) 80vw, 400px" style={{objectFit:'cover',objectPosition:`${crop.x}% ${crop.y}%`}}/></div>
     {(['x','y'] as const).map(axis=><label key={axis}>{axis==='x'?'Horizontal':'Vertical'} focus: {crop[axis]}%<input type="range" min={0} max={100} step={1} value={crop[axis]} onChange={e=>onChange({...usage,[device]:{...crop,[axis]:Number(e.target.value)}})}/></label>)}
-    {!hero&&<label>Frame shape<select value={crop.ratio} onChange={e=>onChange({...usage,[device]:{...crop,ratio:e.target.value as ImageCrop['ratio']}})}><option value="4/5">Portrait 4:5</option><option value="3/2">Landscape 3:2</option><option value="1/1">Square</option></select></label>}
+    {!hero&&<label>Frame shape<select value={crop.ratio} onChange={e=>onChange({...usage,[device]:{...crop,ratio:e.target.value as ImageCrop['ratio']}})}><option value="4/5">Portrait 4:5</option><option value="3/2">Landscape 3:2</option><option value="1/1">Square</option><option value="16/9">Wide 16:9</option><option value="21/9">Panoramic 21:9</option></select></label>}
    </fieldset>;
   })}</div>
  </>;

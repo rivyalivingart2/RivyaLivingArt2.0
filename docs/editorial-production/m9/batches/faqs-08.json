@@ -1,0 +1,412 @@
+[
+  {
+    "id": "editorial:677bd77f-4091-5665-a491-29ec8b67c1de",
+    "kind": "page",
+    "route": "/faq/how-should-i-provide-exact-personalization-text",
+    "title": "How should I provide exact personalization text?",
+    "eyebrow": "Personalization and gifting",
+    "description": "Provide the exact text in a clearly labelled field, preserving capitalization, punctuation and spacing.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How should I provide exact personalization text?",
+        "paragraphs": [
+          "Provide the exact text in a clearly labelled field, preserving capitalization, punctuation and spacing. Keep pronunciation notes and explanatory context separate. If a specific layout matters, show preferred line breaks in addition to the complete text. Review the actual final proof against the source before approval; do not rely on memory or a paraphrase."
+        ],
+        "group": "Personalization and gifting",
+        "policyHref": "/personal-art",
+        "action": {
+          "label": "Read the related page",
+          "href": "/personal-art"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Question and answer",
+      "tags": [
+        "Personalization and gifting"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F071; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /personal-art. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/personal-art"
+    }
+  },
+  {
+    "id": "editorial:1cb4bea6-fa19-5295-a961-926a6858e687",
+    "kind": "page",
+    "route": "/faq/can-i-ask-about-text-in-another-script",
+    "title": "Can I ask about text in another script?",
+    "eyebrow": "Personalization and gifting",
+    "description": "You can ask about the intended script and provide the exact preferred text.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I ask about text in another script?",
+        "paragraphs": [
+          "You can ask about the intended script and provide the exact preferred text. Have a fluent reader check spelling and meaning, then review the actual proposed layout. Do not assume that an English transliteration determines one approved spelling or that every script is supported. Feasibility and the final proof need individual confirmation."
+        ],
+        "group": "Personalization and gifting",
+        "policyHref": "/personal-art",
+        "action": {
+          "label": "Read the related page",
+          "href": "/personal-art"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Question and answer",
+      "tags": [
+        "Personalization and gifting"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F072; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /personal-art. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/personal-art"
+    }
+  },
+  {
+    "id": "editorial:5ed386c6-4997-565d-a7ff-24f02364aae5",
+    "kind": "page",
+    "route": "/faq/which-date-format-should-i-use",
+    "title": "Which date format should I use?",
+    "eyebrow": "Personalization and gifting",
+    "description": "State the full intended date in words alongside the preferred visible format.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Which date format should I use?",
+        "paragraphs": [
+          "State the full intended date in words alongside the preferred visible format. This prevents ambiguous numeric dates from being read in the wrong order. Identify separators, month style and any essential line breaks. Keep the occasion date separate from the requested delivery period; a personalization date does not confirm a production or delivery commitment."
+        ],
+        "group": "Personalization and gifting",
+        "policyHref": "/personal-art",
+        "action": {
+          "label": "Read the related page",
+          "href": "/personal-art"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Question and answer",
+      "tags": [
+        "Personalization and gifting"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F073; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /personal-art. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/personal-art"
+    }
+  },
+  {
+    "id": "editorial:43a1d5fa-a59f-56e8-a66d-7a05cd4f6c34",
+    "kind": "page",
+    "route": "/faq/how-do-i-communicate-preferred-line-breaks",
+    "title": "How do I communicate preferred line breaks?",
+    "eyebrow": "Personalization and gifting",
+    "description": "Provide the complete text and a second version showing preferred breaks.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How do I communicate preferred line breaks?",
+        "paragraphs": [
+          "Provide the complete text and a second version showing preferred breaks. Mark which groupings are essential and which can change with the design. Check the final proof after any layout revision, including punctuation and spacing. Preferred line breaks do not establish that the wording will fit or remain legible in every proposed format."
+        ],
+        "group": "Personalization and gifting",
+        "policyHref": "/personal-art",
+        "action": {
+          "label": "Read the related page",
+          "href": "/personal-art"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Question and answer",
+      "tags": [
+        "Personalization and gifting"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F074; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /personal-art. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/personal-art"
+    }
+  },
+  {
+    "id": "editorial:0454d3a5-235e-5f1e-aa64-46f65c956df9",
+    "kind": "page",
+    "route": "/faq/can-i-request-initials-instead-of-a-full-name",
+    "title": "Can I request initials instead of a full name?",
+    "eyebrow": "Personalization and gifting",
+    "description": "You can describe initials as a preference in the personalization brief.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I request initials instead of a full name?",
+        "paragraphs": [
+          "You can describe initials as a preference in the personalization brief. Supply the exact characters, order, capitalization and punctuation, and explain whether they replace a full name. Do not leave the atelier to infer the initials from private recipient details. The design, layout and feasibility still need discussion and a reviewed final proof."
+        ],
+        "group": "Personalization and gifting",
+        "policyHref": "/personal-art",
+        "action": {
+          "label": "Read the related page",
+          "href": "/personal-art"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Question and answer",
+      "tags": [
+        "Personalization and gifting"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F075; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /personal-art. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/personal-art"
+    }
+  },
+  {
+    "id": "editorial:0e2059c4-3252-5468-aa7c-c99a5a5d44ff",
+    "kind": "page",
+    "route": "/faq/how-should-several-names-be-listed",
+    "title": "How should several names be listed?",
+    "eyebrow": "Personalization and gifting",
+    "description": "Use one item reference per name and keep shared wording separate.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How should several names be listed?",
+        "paragraphs": [
+          "Use one item reference per name and keep shared wording separate. Include the source of each spelling and mark whether it has been checked. Review the list in the same order as the proposed set. Blank fields should say whether no text is requested or a decision is pending. Quantity, feasibility and timing require separate agreement."
+        ],
+        "group": "Personalization and gifting",
+        "policyHref": "/personal-art",
+        "action": {
+          "label": "Read the related page",
+          "href": "/personal-art"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Question and answer",
+      "tags": [
+        "Personalization and gifting"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F076; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /personal-art. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/personal-art"
+    }
+  },
+  {
+    "id": "editorial:7447a7d7-661f-5114-a3c9-50228184d14e",
+    "kind": "page",
+    "route": "/faq/does-an-occasion-date-confirm-a-delivery-commitment",
+    "title": "Does an occasion date confirm a delivery commitment?",
+    "eyebrow": "Personalization and gifting",
+    "description": "No.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Does an occasion date confirm a delivery commitment?",
+        "paragraphs": [
+          "No. An occasion date explains the purpose and urgency of a request but does not book production or delivery. State your preferred arrival period and any flexibility, then ask what is feasible. Production and delivery estimates are confirmed individually before an order is accepted. A saved website receipt is not a timing commitment."
+        ],
+        "group": "Personalization and gifting",
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related page",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Question and answer",
+      "tags": [
+        "Personalization and gifting"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F077; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/shipping-delivery"
+    }
+  },
+  {
+    "id": "editorial:c92285b0-9749-5cbb-af2d-c41ecc29ec15",
+    "kind": "page",
+    "route": "/faq/can-recipient-details-remain-private",
+    "title": "Can recipient details remain private?",
+    "eyebrow": "Personalization and gifting",
+    "description": "Share only the recipient information needed for the current private design or delivery discussion.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can recipient details remain private?",
+        "paragraphs": [
+          "Share only the recipient information needed for the current private design or delivery discussion. Keep public attribution and story permission separate. A style reference often does not need a recipient's address, workplace or private photographs. If a public image is later proposed, check both its caption and background for identifying details before permission is given."
+        ],
+        "group": "Personalization and gifting",
+        "policyHref": "/privacy",
+        "action": {
+          "label": "Read the related page",
+          "href": "/privacy"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Question and answer",
+      "tags": [
+        "Personalization and gifting"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F078; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /privacy. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/privacy"
+    }
+  },
+  {
+    "id": "editorial:5f7a4b47-e51b-5d61-a8bf-940af6b19b9b",
+    "kind": "page",
+    "route": "/faq/where-should-i-review-the-final-spelling",
+    "title": "Where should I review the final spelling?",
+    "eyebrow": "Personalization and gifting",
+    "description": "Review spelling in the actual current proof or proposed layout, comparing it with the exact text source.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Where should I review the final spelling?",
+        "paragraphs": [
+          "Review spelling in the actual current proof or proposed layout, comparing it with the exact text source. Check names, dates, punctuation, spacing, script and line breaks. A second competent reader can help, especially for another language. Repeat the check after relevant changes; approval of an earlier version does not verify a later revision."
+        ],
+        "group": "Personalization and gifting",
+        "policyHref": "/personal-art",
+        "action": {
+          "label": "Read the related page",
+          "href": "/personal-art"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Question and answer",
+      "tags": [
+        "Personalization and gifting"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F079; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /personal-art. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/personal-art"
+    }
+  },
+  {
+    "id": "editorial:08b2e962-b1ee-58fd-a015-cfeea880fc0a",
+    "kind": "page",
+    "route": "/faq/can-i-request-a-coordinated-gift-set-subject-to-discussion",
+    "title": "Can I request a coordinated gift set subject to discussion?",
+    "eyebrow": "Personalization and gifting",
+    "description": "Describe the shared design direction and the details that would vary between items.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I request a coordinated gift set subject to discussion?",
+        "paragraphs": [
+          "Describe the shared design direction and the details that would vary between items. A small matrix with item references, exact text and optional differences can help. The request is subject to feasibility, quotation and timing discussion. Do not infer availability, a quantity discount or a delivery promise from an illustrative gift-set image."
+        ],
+        "group": "Personalization and gifting",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Personal art",
+      "format": "Question and answer",
+      "tags": [
+        "Personalization and gifting"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F080; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  }
+]

@@ -1,0 +1,947 @@
+[
+  {
+    "key": "A08",
+    "sourceDriveId": "1aHGWxqebzQ3aN45MGFbd0UI0qzBfxtyu",
+    "deliveryDriveId": "1gaGlckm2zalni3B-kF_eqvomT6F75KJk",
+    "path": "/editorial/4485d058-490e-4b79-8f40-935336fb84cc",
+    "version": 3,
+    "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+    "metadata": {
+      "id": "4485d058-490e-4b79-8f40-935336fb84cc",
+      "bytes": 154816,
+      "width": 1672,
+      "format": "webp",
+      "height": 941,
+      "sha256": "51ecf7459d5686061e08eb9adc6652b4bf9e356ac0e563259531d8131f8c803d",
+      "driveId": "1gaGlckm2zalni3B-kF_eqvomT6F75KJk",
+      "filename": "A08-product-scene-001-16x9.webp",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:34:53.580Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 38360,
+          "width": 640,
+          "height": 360,
+          "sha256": "8dc6b7efdbe6a95c2240bf85a9bc37a41f606c2fca1a05019bbe807280cca38f"
+        },
+        {
+          "bytes": 72294,
+          "width": 960,
+          "height": 540,
+          "sha256": "3df3609b0bf841e777b348d7b40305dfc998905fa1c92d1be5de14f8d8908eab"
+        },
+        {
+          "bytes": 136128,
+          "width": 1600,
+          "height": 900,
+          "sha256": "ddfd0a7703b297ac1307f35ef6d7d64c4fb1b7c404d27395525a6260a9f7621e"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "A03",
+    "sourceDriveId": "1o5VSIpFgnyn4Obrfh3Bowhm4-bsxz1Mj",
+    "deliveryDriveId": "1oALYncS88GFtpPPifWOx4Mp1t6dJWXNh",
+    "path": "/editorial/8542acee-a36f-4ea7-a6b6-b4b1a6498242",
+    "version": 3,
+    "alt": "Brown and blue waterfall-end table visualization in a dark room",
+    "metadata": {
+      "id": "8542acee-a36f-4ea7-a6b6-b4b1a6498242",
+      "bytes": 258778,
+      "width": 1024,
+      "format": "jpeg",
+      "height": 1536,
+      "sha256": "6934feb5740e39a5192e89d9ae506952e7f8b8ba3609f39c7eec71387a29a8be",
+      "driveId": "1oALYncS88GFtpPPifWOx4Mp1t6dJWXNh",
+      "filename": "A03-doorway-collectible.jpg",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:09.674Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 91186,
+          "width": 640,
+          "height": 960,
+          "sha256": "18e421fc04f52ea8bb78bc7bbf7dd0e28d1947575d376897c567f0611de1316b"
+        },
+        {
+          "bytes": 192010,
+          "width": 960,
+          "height": 1440,
+          "sha256": "95c64a59cdff2a082d7314b991bd9890d83eef76c05487986f3f875d3f63cbed"
+        },
+        {
+          "bytes": 219238,
+          "width": 1024,
+          "height": 1536,
+          "sha256": "3b2e30461f07a3119166f982f3cd42ee739e9a24e19b2ac785fe8087c5ebe528"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "A04",
+    "sourceDriveId": "1RNN4QxbJXw9VsRrb9x3EMZ9Rtzkqfmxf",
+    "deliveryDriveId": "13weWCZanJKnU42-1nwKGLaYTqqGvxhFJ",
+    "path": "/editorial/fc349ca1-d76a-4422-8548-db00d8a77fa4",
+    "version": 3,
+    "alt": "Abstract navy flowing texture with gold-coloured streaks",
+    "metadata": {
+      "id": "fc349ca1-d76a-4422-8548-db00d8a77fa4",
+      "bytes": 229943,
+      "width": 1920,
+      "format": "jpeg",
+      "height": 1080,
+      "sha256": "53dfc87a74c50b6ca72a2e76e1d85df051afa01acfc434b26974f804e0cc81c8",
+      "driveId": "13weWCZanJKnU42-1nwKGLaYTqqGvxhFJ",
+      "filename": "A04-texture-resin-flow.jpg",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:09.969Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 22592,
+          "width": 640,
+          "height": 360,
+          "sha256": "35637f4536ae5b70b3550f5db49f746a373664f292c20df536714d5a6f0a851d"
+        },
+        {
+          "bytes": 48996,
+          "width": 960,
+          "height": 540,
+          "sha256": "49b83af6e9198a1dada3de6e14d5e9fff61553eb072d957ddc490b9ca4fe4588"
+        },
+        {
+          "bytes": 117226,
+          "width": 1600,
+          "height": 900,
+          "sha256": "9ac7e448a91dba537eb299862a03a324a1a04c9f5237b5677650fffb5e0dc60f"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "A05",
+    "sourceDriveId": "19KOc4hLTXevHis-A0b_8gtedAgsmWRoC",
+    "deliveryDriveId": "1GBMEQ9cDOR00rAlYDS_XaSHGSpKf8_Vi",
+    "path": "/editorial/e6a7162c-7d4d-4280-bb78-ff31fc426b7b",
+    "version": 3,
+    "alt": "Clear upright floral block with red and cream roses on a dark plinth",
+    "metadata": {
+      "id": "e6a7162c-7d4d-4280-bb78-ff31fc426b7b",
+      "bytes": 181244,
+      "width": 1024,
+      "format": "jpeg",
+      "height": 1536,
+      "sha256": "5e14af18d1837fe803ad3dcec0a80e582b3f98d602a27bedcd6c64dfe7092d96",
+      "driveId": "1GBMEQ9cDOR00rAlYDS_XaSHGSpKf8_Vi",
+      "filename": "A05-doorway-memory.jpg",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:10.234Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 65642,
+          "width": 640,
+          "height": 960,
+          "sha256": "4d3b9bee11842bb4db4ea6c4b58cc23506914e9f5d0cfcd28fb7d330a6ee03ef"
+        },
+        {
+          "bytes": 124196,
+          "width": 960,
+          "height": 1440,
+          "sha256": "ff229e3e9f5d9a023c174d3286556474c64d5adc44c2e638c171eef8646009a9"
+        },
+        {
+          "bytes": 140602,
+          "width": 1024,
+          "height": 1536,
+          "sha256": "f8aa369eb3e9b19b304a54f7208962895a0cd555abbdc190628ac192eb0348c1"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "A06",
+    "sourceDriveId": "1woyD_wMKVigC6rp2Vky9sCojxyHAKmM-",
+    "deliveryDriveId": "1YmRQq0Ytplnbn1eBF6p0G0_c9Zk_RKhC",
+    "path": "/editorial/3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+    "version": 3,
+    "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+    "metadata": {
+      "id": "3b5ace6e-fe0d-48ee-8891-96f8eeba51a6",
+      "bytes": 337148,
+      "width": 1024,
+      "format": "jpeg",
+      "height": 1536,
+      "sha256": "174e2e812ed9d275de1e773b4dcb5ce09232c48321623d2ebcce2ec12242e7b7",
+      "driveId": "1YmRQq0Ytplnbn1eBF6p0G0_c9Zk_RKhC",
+      "filename": "A06-doorway-gifts.jpg",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:10.550Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 145288,
+          "width": 640,
+          "height": 960,
+          "sha256": "cdf94eccbdbea75ab98d9ba46bd441ef00732801fc7d58b57a8a03c3281ad464"
+        },
+        {
+          "bytes": 272468,
+          "width": 960,
+          "height": 1440,
+          "sha256": "0e7e4823f788cf2b989a2b93b44bf49e68665f577cb25db1ff6165b2a10919df"
+        },
+        {
+          "bytes": 304040,
+          "width": 1024,
+          "height": 1536,
+          "sha256": "18b21c2a9f43695730a5a71b86ad8214282ee97df601ae8cf6267363c141bd48"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "A07",
+    "sourceDriveId": "1-bPjADvOIcSv4u-bIEhtIYgbZpvcunqQ",
+    "deliveryDriveId": "1aUfyEpQCz8gwvzK-3KGkRigW7-sLVj5u",
+    "path": "/editorial/ef5d89bb-a7be-4516-b4d8-846264c44404",
+    "version": 3,
+    "alt": "Blue and gold-coloured rectangular tray with handles in a room scene",
+    "metadata": {
+      "id": "ef5d89bb-a7be-4516-b4d8-846264c44404",
+      "bytes": 166580,
+      "width": 1536,
+      "format": "jpeg",
+      "height": 1024,
+      "sha256": "4aa4a43199f784cfc00194681a1ba9d9f46b5d4ad40c5c79151913df250fec56",
+      "driveId": "1aUfyEpQCz8gwvzK-3KGkRigW7-sLVj5u",
+      "filename": "A07-insitu-tray-table.jpg",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:10.813Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 30172,
+          "width": 640,
+          "height": 427,
+          "sha256": "b6d230072bc2bd6615004991a61b62208788bfb1d79ce9dba3da88f2b997322c"
+        },
+        {
+          "bytes": 53294,
+          "width": 960,
+          "height": 640,
+          "sha256": "9a0d17a2b409290768df2d2b4063b616da4557d43d692e8b4cba08153ce60ea1"
+        },
+        {
+          "bytes": 103366,
+          "width": 1536,
+          "height": 1024,
+          "sha256": "8c6c0023472094939d7a6ca98a7d2223ff22da627544a8b0ddb3bdc84212527d"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "A09",
+    "sourceDriveId": "1ISezdnR77iNaQUbXzlUvZHXmqkqEVbBE",
+    "deliveryDriveId": "16CUoD-mAQNIvDLdnR4asdCuGooXmpwGq",
+    "path": "/editorial/83c63d21-d859-4c20-b815-2eaae8a48b54",
+    "version": 3,
+    "alt": "Dark bench visualization with a blue channel beside a pale entry wall",
+    "metadata": {
+      "id": "83c63d21-d859-4c20-b815-2eaae8a48b54",
+      "bytes": 239318,
+      "width": 2560,
+      "format": "webp",
+      "height": 1440,
+      "sha256": "0d6fc61ba74344d9df3946b4683459e543ae898a5bc3f86bd2dfa27d36083fc8",
+      "driveId": "16CUoD-mAQNIvDLdnR4asdCuGooXmpwGq",
+      "filename": "A09-entryway-bench-room.webp",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:11.559Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 38638,
+          "width": 640,
+          "height": 360,
+          "sha256": "b95eca8b05182335e2f96f033a163490433a6b3ee74386a07c850e0132066639"
+        },
+        {
+          "bytes": 72544,
+          "width": 960,
+          "height": 540,
+          "sha256": "6fed64f2febfc241656727d55fbe67f9d76398b09c47748cab9c8eb542a8e09f"
+        },
+        {
+          "bytes": 146324,
+          "width": 1600,
+          "height": 900,
+          "sha256": "73327b87aa21c1f13f0b9305c9c07427ea416613821e84d08555d1fb845a2dd2"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "A10",
+    "sourceDriveId": "1-1I_6vqd0fGYG90hi435v-eqO8HLxGBh",
+    "deliveryDriveId": "1jvuT1giK5nINkGJrWFIi6rzAsm21QoTD",
+    "path": "/editorial/f4438c18-ad91-4131-b5a1-53983954fed4",
+    "version": 3,
+    "alt": "Close view of brown grain-like lines and a blue channel at a waterfall edge",
+    "metadata": {
+      "id": "f4438c18-ad91-4131-b5a1-53983954fed4",
+      "bytes": 222318,
+      "width": 2048,
+      "format": "webp",
+      "height": 2560,
+      "sha256": "cc7e1bc615987e93d14e4c07fee1a4dc961ae1e6c185902ffb5dbbd5ae0d570e",
+      "driveId": "1jvuT1giK5nINkGJrWFIi6rzAsm21QoTD",
+      "filename": "A10-river-channel-edge-detail.webp",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:12.392Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 65516,
+          "width": 640,
+          "height": 800,
+          "sha256": "c9be9124f504c3f7cdbf20a8b4c7f49e83f221bbe9c3a3e645f57bf3636c86c4"
+        },
+        {
+          "bytes": 107302,
+          "width": 960,
+          "height": 1200,
+          "sha256": "9b5d77aa10b980528845adb09d06f754ca75d306b32d7b318bca206cc95d866f"
+        },
+        {
+          "bytes": 179952,
+          "width": 1600,
+          "height": 2000,
+          "sha256": "d041f97b9e4e90046d92c75f28bfb4ad78318caf17f98bbebb1ece1316cbb1a2"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B01",
+    "sourceDriveId": "1CHjwPVf64jbo2esIYhbgWarf8jqu2aYq",
+    "deliveryDriveId": "1hpbOSi0YnKJApRvYTTTgE7UZOILQFxLV",
+    "path": "/editorial/29a6138d-fe1f-41f7-88f6-2358016536ec",
+    "version": 3,
+    "alt": "Round low-table visualization with brown and blue patterns in a room",
+    "metadata": {
+      "id": "29a6138d-fe1f-41f7-88f6-2358016536ec",
+      "bytes": 177210,
+      "width": 1122,
+      "format": "webp",
+      "height": 1402,
+      "sha256": "e2b1a4fb6933d4d5332cef0f669b178fa6b9f4c03420989c7375004e4d88bd8c",
+      "driveId": "1hpbOSi0YnKJApRvYTTTgE7UZOILQFxLV",
+      "filename": "B01-product-hero-003-4x5.webp",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:12.860Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 79762,
+          "width": 640,
+          "height": 800,
+          "sha256": "1ddefd91d928a5a06ca7ae5cd724b1e44b6e01deb4a95979cbaf4bfa4b2fadae"
+        },
+        {
+          "bytes": 132270,
+          "width": 960,
+          "height": 1200,
+          "sha256": "48d1579246d1cbddfb52a7466749e6f55b737b51ce6c315b6f0b499fe4042799"
+        },
+        {
+          "bytes": 179166,
+          "width": 1122,
+          "height": 1402,
+          "sha256": "98b36255c2948c013b9f904f495a1e77669f5bce802fe24b917124661c156d5f"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B02",
+    "sourceDriveId": "1SuaGnzFaFWGY94Q-sdj1Bbgely-qdBha",
+    "deliveryDriveId": "1kvUJO-pPx_se9qR61J3ReUqVQXlLqgbn",
+    "path": "/editorial/648d63af-46f5-4b18-92ca-f0fa1731b417",
+    "version": 3,
+    "alt": "Portrait view of a dark bench with a blue channel",
+    "metadata": {
+      "id": "648d63af-46f5-4b18-92ca-f0fa1731b417",
+      "bytes": 170124,
+      "width": 1122,
+      "format": "webp",
+      "height": 1402,
+      "sha256": "92e6e4b693263a146a0ac81c5a568bfb937ad97c0fbed9797e55754469e28d08",
+      "driveId": "1kvUJO-pPx_se9qR61J3ReUqVQXlLqgbn",
+      "filename": "B02-product-hero-009-4x5.webp",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:13.299Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 68398,
+          "width": 640,
+          "height": 800,
+          "sha256": "480706a44b295c3310add41d01e9439aeada3d5f0fd511c43d1296cd25cb94d2"
+        },
+        {
+          "bytes": 122242,
+          "width": 960,
+          "height": 1200,
+          "sha256": "34265314903f289c2e5ad08e24aba2209967e45516c3f90b0ed9ed795f5617e2"
+        },
+        {
+          "bytes": 169910,
+          "width": 1122,
+          "height": 1402,
+          "sha256": "b9ad0c183c2ee4dda5803bbabae631d03af159bb1e270ef53bf52034c0d6e808"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B03",
+    "sourceDriveId": "1_r-sBU3-WhG3Voc7eQ9-nhtpLNCIRvGW",
+    "deliveryDriveId": "1yEh1wL5EENQ1n6E7byX74XHVFspr9U1j",
+    "path": "/editorial/635536b3-bbe2-4097-94a0-b697c42aa63a",
+    "version": 3,
+    "alt": "Framed red and yellow flower-garland visualization against a blue wall",
+    "metadata": {
+      "id": "635536b3-bbe2-4097-94a0-b697c42aa63a",
+      "bytes": 105278,
+      "width": 1122,
+      "format": "webp",
+      "height": 1402,
+      "sha256": "8960fe2400bf742c2ff9af63827f6601882eacee7f06e3248bde80dda0c761ed",
+      "driveId": "1yEh1wL5EENQ1n6E7byX74XHVFspr9U1j",
+      "filename": "B03-product-hero-020-4x5.webp",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:13.704Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 48120,
+          "width": 640,
+          "height": 800,
+          "sha256": "f9eb6cfe79f1381db7a102ee22a710693b9df9d1fd525d777bc0b27fcef6adaf"
+        },
+        {
+          "bytes": 82672,
+          "width": 960,
+          "height": 1200,
+          "sha256": "ba8ceb9085b36ac7c2d1f782e6ea7fb0fefa48bcfe1d1b3c98e5d4d6df5d19e9"
+        },
+        {
+          "bytes": 105854,
+          "width": 1122,
+          "height": 1402,
+          "sha256": "68a9388890c87bd32f8cc9f2b408a5da55aec56cd1a5b1f7ec05c39a339eda18"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B04",
+    "sourceDriveId": "1nqNEjc9MLbzob_bvQzEKb1ZeRfTVjM5v",
+    "deliveryDriveId": "1lV1ok8vQJyvOHalpTslBsJEIeIVxQzs0",
+    "path": "/editorial/5afbd52d-a51d-4d7f-9573-5c818eebd8bf",
+    "version": 3,
+    "alt": "Stacked round coasters with brown, blue and gold-coloured boundaries",
+    "metadata": {
+      "id": "5afbd52d-a51d-4d7f-9573-5c818eebd8bf",
+      "bytes": 117536,
+      "width": 1122,
+      "format": "webp",
+      "height": 1402,
+      "sha256": "c4ce5a49bb6b84de4bd24692890ce865d3777f827c7ea54b1e5e73e4e6f9159d",
+      "driveId": "1lV1ok8vQJyvOHalpTslBsJEIeIVxQzs0",
+      "filename": "B04-product-hero-029-4x5.webp",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:14.143Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 56046,
+          "width": 640,
+          "height": 800,
+          "sha256": "6dea3adce2774f961cfb086f6abb9362ff4a649df3254ca2aeb7011f4e688aa0"
+        },
+        {
+          "bytes": 90696,
+          "width": 960,
+          "height": 1200,
+          "sha256": "fe2b0066425149554bf87f4098a6ae18388322c20c402e9b786a253a6fc58aa0"
+        },
+        {
+          "bytes": 115928,
+          "width": 1122,
+          "height": 1402,
+          "sha256": "4a178633d59eb51c9300576f136d0669258e5eb3d12d86c094a1ed5bce686082"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B05",
+    "sourceDriveId": "1IulrKL5VBQJjA694IOBL2tNQOG9m4QTu",
+    "deliveryDriveId": "1UApTINeM2uBvf1bssh4Ta30Khaau5cBr",
+    "path": "/editorial/49508ae8-acd9-435f-b2b8-3676150e579c",
+    "version": 3,
+    "alt": "Close view of a clear cube containing a gold-coloured lattice and blue forms",
+    "metadata": {
+      "id": "49508ae8-acd9-435f-b2b8-3676150e579c",
+      "bytes": 282274,
+      "width": 2048,
+      "format": "webp",
+      "height": 2560,
+      "sha256": "a08b5141e6fa7816ae648fe03308daf5c8a2e33786a1e441afe7ffa14c53dcc1",
+      "driveId": "1UApTINeM2uBvf1bssh4Ta30Khaau5cBr",
+      "filename": "B05-dp069-matching-detail-4x5.webp",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:15.028Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 81996,
+          "width": 640,
+          "height": 800,
+          "sha256": "dad75316dc43f15ec3f5722cb77ef63d6858b8afe99d46bd0265963b29e44362"
+        },
+        {
+          "bytes": 136270,
+          "width": 960,
+          "height": 1200,
+          "sha256": "4c28028bfbe3ee2c4defd8443a32b5f49997ecf5ff433b8e9de890a3836486e5"
+        },
+        {
+          "bytes": 236710,
+          "width": 1600,
+          "height": 2000,
+          "sha256": "58d825c88d50ba9663d0b34f8407e72ee09d9df00fff4ca82f8c05eaa4f46869"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B06",
+    "sourceDriveId": "1MNhFSqoHcW4XqhBDJcTRZ-4lH-QdwVF_",
+    "deliveryDriveId": "15ZK8MnZRREQkkVPWf3q_sGHHdAYXLfL3",
+    "path": "/editorial/cb26983f-dd45-42c3-ac23-c6040484eeff",
+    "version": 3,
+    "alt": "Close view of red and yellow petals at the lower edge of a garland frame",
+    "metadata": {
+      "id": "cb26983f-dd45-42c3-ac23-c6040484eeff",
+      "bytes": 271532,
+      "width": 2048,
+      "format": "webp",
+      "height": 2560,
+      "sha256": "e9a61ca186156814e46407ada1f4038b628be96e88ce213a3134e2188ec0166a",
+      "driveId": "15ZK8MnZRREQkkVPWf3q_sGHHdAYXLfL3",
+      "filename": "B06-dp085-matching-detail-4x5.webp",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:15.873Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 76028,
+          "width": 640,
+          "height": 800,
+          "sha256": "eb65ebc1a10a5f21caa58ca616d99b6be3809f0494d7c868a7625b970bbc9b85"
+        },
+        {
+          "bytes": 128086,
+          "width": 960,
+          "height": 1200,
+          "sha256": "1bdbfadadea331ea09b23aef2b7b95a08dc40a7c11991b74fa7c20db7ffab913"
+        },
+        {
+          "bytes": 222440,
+          "width": 1600,
+          "height": 2000,
+          "sha256": "b646d7b180f324976dc2e1b277e10c3e9fa843bb188ef8402ab3bc92954a8101"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B07",
+    "sourceDriveId": "1sxW03X6ltxEsXDXe59GZiO9ZJp5MDt5I",
+    "deliveryDriveId": "1OychqhpXff0OkWK5AtNUVufQwH4CSVXU",
+    "path": "/editorial/ac0740bf-ddaa-4d66-87e7-3b38c133e55e",
+    "version": 3,
+    "alt": "Detail of overlapping brown and blue coaster forms",
+    "metadata": {
+      "id": "ac0740bf-ddaa-4d66-87e7-3b38c133e55e",
+      "bytes": 277074,
+      "width": 2048,
+      "format": "webp",
+      "height": 2560,
+      "sha256": "36d029dfc25995fd3babaee0f5db163d1c23227922d583a70a383ab61bc31cc0",
+      "driveId": "1OychqhpXff0OkWK5AtNUVufQwH4CSVXU",
+      "filename": "B07-dp114-matching-detail-4x5.webp",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:16.802Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 77422,
+          "width": 640,
+          "height": 800,
+          "sha256": "7d2bad9afa12f00b7afade18463d98e59562c2ac5ef3ac45f9fc4d5153829049"
+        },
+        {
+          "bytes": 131488,
+          "width": 960,
+          "height": 1200,
+          "sha256": "adde9c07d7b7e86d413fe69b10654f829e3baa9f2c73ca32c36a90415cd02d7a"
+        },
+        {
+          "bytes": 226888,
+          "width": 1600,
+          "height": 2000,
+          "sha256": "74b61fa7bc6fe5abc9e8691888b455a1ca7d2bc24e54aa02b79ab749111a8c65"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B08",
+    "sourceDriveId": "12pkItvt0V0MJBM4lCD3YmLWW6qc8X4nC",
+    "deliveryDriveId": "188sng8lekNbyJaklGAcpFOva7Jr8aZ90",
+    "path": "/editorial/cafeb13e-843f-4311-830f-b4690c7e1cd3",
+    "version": 3,
+    "alt": "Close view of the left corner of a bench with grain-like lines and a blue channel",
+    "metadata": {
+      "id": "cafeb13e-843f-4311-830f-b4690c7e1cd3",
+      "bytes": 270340,
+      "width": 2048,
+      "format": "webp",
+      "height": 2560,
+      "sha256": "a7580f2e54ee64a58d9057b94ccbf8d71a593beeef41084ce990bf9655a0c577",
+      "driveId": "188sng8lekNbyJaklGAcpFOva7Jr8aZ90",
+      "filename": "B08-dp048-matching-detail-4x5.webp",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:17.686Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 73618,
+          "width": 640,
+          "height": 800,
+          "sha256": "ee1d020a0500e293bc15eb56c397f2e12e6d1d6594ec6956236decbe63d7b34e"
+        },
+        {
+          "bytes": 126286,
+          "width": 960,
+          "height": 1200,
+          "sha256": "8dcfe86a7ccb768991b87f62bd8812796cf6e0e36c38b19f8ab3700455042afb"
+        },
+        {
+          "bytes": 215560,
+          "width": 1600,
+          "height": 2000,
+          "sha256": "ac1c9b7a05b2b7022c4b8fa7f2c22c2666f16770f20ef6ba0e56f2987b2395bc"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B09",
+    "sourceDriveId": "1IwGSb1BFUXm5zHqR2CtbQ4_T3BoAlDzv",
+    "deliveryDriveId": "1Mkvj6r0xks2Hk_1h1RI_Ud1D8r_EfYbr",
+    "path": "/editorial/80786409-3a54-46bc-9a45-a3ca0784002b",
+    "version": 3,
+    "alt": "Close view of a console corner and blue waterfall-like channel",
+    "metadata": {
+      "id": "80786409-3a54-46bc-9a45-a3ca0784002b",
+      "bytes": 138914,
+      "width": 2048,
+      "format": "webp",
+      "height": 2560,
+      "sha256": "2a640373e3a89fdd8b132514b619a83eafa8c1f5d5729d57aeb69f086beb83ac",
+      "driveId": "1Mkvj6r0xks2Hk_1h1RI_Ud1D8r_EfYbr",
+      "filename": "B09-dp035-matching-detail-4x5.webp",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:18.448Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 30306,
+          "width": 640,
+          "height": 800,
+          "sha256": "a814604eb1f2ea347e7ef03b1ea4f2fd3171fa4e1d2dc8f66bba96eeb65d6318"
+        },
+        {
+          "bytes": 53164,
+          "width": 960,
+          "height": 1200,
+          "sha256": "544293177a185a9e19be08147c47d77c58e92ae6b3cc9dccd558c6319fd538b1"
+        },
+        {
+          "bytes": 98054,
+          "width": 1600,
+          "height": 2000,
+          "sha256": "89eee5065b62aeefd02362ff780bd51aa9f3b0681e2da8422191c7deafa19570"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B10",
+    "sourceDriveId": "1Dq9QL-EiOqh-nwkh-eBnd7PC1TZcqoGz",
+    "deliveryDriveId": "1xmFOottV25HIooMNlPLBLgPo2B4Rz3Tn",
+    "path": "/editorial/5ac0e7c8-4810-46b9-b33e-46466dbdf706",
+    "version": 3,
+    "alt": "Clear rectangular floral arrangement with cream and red flowers on beige",
+    "metadata": {
+      "id": "5ac0e7c8-4810-46b9-b33e-46466dbdf706",
+      "bytes": 149662,
+      "width": 1024,
+      "format": "jpeg",
+      "height": 1280,
+      "sha256": "8c32222ba38a27e8d15fc6a6729a99c479cc0f1778fb637f16e1920d1c58d344",
+      "driveId": "1xmFOottV25HIooMNlPLBLgPo2B4Rz3Tn",
+      "filename": "B10-product-varmala-frame.jpg",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:18.681Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 54626,
+          "width": 640,
+          "height": 800,
+          "sha256": "009aca88070c994c131a1ecb8b0626cf0aee7e6ef6de89dd5c8ead6c1b1f411e"
+        },
+        {
+          "bytes": 97536,
+          "width": 960,
+          "height": 1200,
+          "sha256": "522be3c670293a7dbdcf43086a1684b941ba47b6ae76938afde865863457d36b"
+        },
+        {
+          "bytes": 110070,
+          "width": 1024,
+          "height": 1280,
+          "sha256": "62d0cd52cf748b47c3b0c3349484e9d116768e8be8a0f5357890f3a5c8822eb8"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B11",
+    "sourceDriveId": "1qzxkgNYdwbO0q7dwerV_AskMFFfdPKIq",
+    "deliveryDriveId": "1G56AcY23XamdypLk8OThslv0FdXezV9B",
+    "path": "/editorial/faaa14a1-1fe7-4514-8a6d-2304701eb0cb",
+    "version": 3,
+    "alt": "Stack of wavy-edged blue coasters with gold-coloured rims",
+    "metadata": {
+      "id": "faaa14a1-1fe7-4514-8a6d-2304701eb0cb",
+      "bytes": 129885,
+      "width": 1024,
+      "format": "jpeg",
+      "height": 1280,
+      "sha256": "bcc867c8bb9b3a600468a4402805387d1cb8efaf8be43828666886a9882141c7",
+      "driveId": "1G56AcY23XamdypLk8OThslv0FdXezV9B",
+      "filename": "B11-product-coasters.jpg",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:18.946Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 41020,
+          "width": 640,
+          "height": 800,
+          "sha256": "0741d4afbae5327a7b05b69972a3c591d7799f3e60b5a8fba1d63e7f17325ec6"
+        },
+        {
+          "bytes": 80868,
+          "width": 960,
+          "height": 1200,
+          "sha256": "e3547a5fcc30185344552281c54ffce0e16f2b181e7707381baf62f53e3d3e39"
+        },
+        {
+          "bytes": 92718,
+          "width": 1024,
+          "height": 1280,
+          "sha256": "96bf4cbe0b72586bab207ffdf1b3e70d68ed2f65a1a1c537b10f9505ed696475"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B12",
+    "sourceDriveId": "1LKrYl_brj_VYIUx4SpKlf6bx_myTE-ra",
+    "deliveryDriveId": "1iKBoUArC_a7t_UhXyJtC_7z3i5_wat7T",
+    "path": "/editorial/bc94f146-d62a-4192-bf04-1a61190c6825",
+    "version": 3,
+    "alt": "Single blue and clear bangle with gold-coloured flecks",
+    "metadata": {
+      "id": "bc94f146-d62a-4192-bf04-1a61190c6825",
+      "bytes": 85377,
+      "width": 1024,
+      "format": "jpeg",
+      "height": 1280,
+      "sha256": "93dfc9509e97a21a34467bde29b111979be43282f303c6acb58c47444e505eb7",
+      "driveId": "1iKBoUArC_a7t_UhXyJtC_7z3i5_wat7T",
+      "filename": "B12-product-bangle.jpg",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:19.196Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 25856,
+          "width": 640,
+          "height": 800,
+          "sha256": "0a5f9b82a0510c6d49ccd22a53df0bf4cdc89194ec1ee42e309eed71e52dce04"
+        },
+        {
+          "bytes": 49676,
+          "width": 960,
+          "height": 1200,
+          "sha256": "18646e9a131b816c584352c47b6d28ebf525a854b5bee4a85650ef086006ff9b"
+        },
+        {
+          "bytes": 57594,
+          "width": 1024,
+          "height": 1280,
+          "sha256": "2ae6762b46d62481ee600dc58e0f99b6a8999e410cfc33a1d07154705895b05e"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  },
+  {
+    "key": "B13",
+    "sourceDriveId": "1NmRs-SxxfZJnH1BdX1ajIKXI29MjATUk",
+    "deliveryDriveId": "15SQHA8UyixNCVSDnVh4Ti3ELAX7BEXUv",
+    "path": "/editorial/8d88879a-9cc8-4862-afcc-faa806566587",
+    "version": 3,
+    "alt": "Round clear floral display with a raised central ring",
+    "metadata": {
+      "id": "8d88879a-9cc8-4862-afcc-faa806566587",
+      "bytes": 163614,
+      "width": 1024,
+      "format": "jpeg",
+      "height": 1280,
+      "sha256": "73f5185c1e8360bb074ff13e0dfe93ebaf815f9a677d8d156c5de73e5f2c7ceb",
+      "driveId": "15SQHA8UyixNCVSDnVh4Ti3ELAX7BEXUv",
+      "filename": "B13-product-platter.jpg",
+      "reviewNote": "Codex AI visual inspection, 9 October 2026: observed the supplied image; no customer, installation or material-performance claim. Isolated local preview approval only. Owner rights and final crop approval remain pending.",
+      "reviewedAt": "2026-10-09T12:35:19.444Z",
+      "reviewedBy": "migration-local-admin",
+      "derivatives": [
+        {
+          "bytes": 60098,
+          "width": 640,
+          "height": 800,
+          "sha256": "fdde5e3ec56d5bc6d91454edb1338f7c9c97b0545127db0c3e4d7b14ad4be98c"
+        },
+        {
+          "bytes": 107226,
+          "width": 960,
+          "height": 1200,
+          "sha256": "5c8aa8e69bc85376bbc1cb3a6648b17fc86279de9cb5c6fcd42cd97157379019"
+        },
+        {
+          "bytes": 121874,
+          "width": 1024,
+          "height": 1280,
+          "sha256": "886be104eee07ea9d7f46498807ffdec6e52a3cac6fbe4fc22a7511bfac77e9a"
+        }
+      ],
+      "classification": "design-visualization"
+    },
+    "localOnly": true,
+    "ownerRightsApproval": "Pending",
+    "cropApproval": "Pending"
+  }
+]

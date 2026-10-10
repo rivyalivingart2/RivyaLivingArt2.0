@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {writeFileSync} from 'node:fs';
+import {neon} from '@neondatabase/serverless';
+assert.equal(globalThis.__rivyaMigrationLocalSql,true);
+const sql=neon(process.env.DATABASE_URL);
+const result=await sql.transaction([sql`SHOW transaction_read_only`,sql`SELECT content_key AS id,route,version,published_version,visible,draft,published FROM rivya_content ORDER BY content_key LIMIT 2001`],{readOnly:true,isolationLevel:'RepeatableRead'});
+assert.equal(result[0][0].transaction_read_only,'on');assert.ok(result[1].length<=2000);
+const project=d=>d?{id:d.id,route:d.route,title:d.title,description:d.description,eyebrow:d.eyebrow,sections:d.sections.map(s=>({id:s.id,heading:s.heading,paragraphs:s.paragraphs,checklist:s.checklist,body:s.body,policyHref:s.policyHref})),editorial:d.editorial?{kind:d.editorial.kind,classification:d.editorial.classification}:undefined}:null;
+writeFileSync('test-results/old-design-migration/m9/source-content.json',JSON.stringify(result[1].map(r=>({...r,draft:project(r.draft),published:project(r.published)})),null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({readOnly:true,records:result[1].length,customerData:false,privateReviewNotes:false}));

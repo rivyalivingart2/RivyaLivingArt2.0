@@ -2,11 +2,13 @@
 
 9 October 2026. Do not start M5 or any later phase without the owner's explicit permission. Releasing the current candidate does not satisfy M11's full-plan acceptance gate.
 
-## Current production activation
+## Production activation — completed 9 October 2026
 
-- Apply the two additive presentation tables through the database owner's authorized workflow and give the existing runtime role narrowly scoped table access. A read-only inspection confirmed the tables are missing and the runtime role cannot create them.
-- Save, preview and publish a real production design through authenticated Studio, including the material film selection. Website assets and code deployment do not copy the local QA design into production.
-- Verify signed-in production editing, saved previews, deliberate publication, history recovery and public revision/media readback. Preserve every existing draft, crop, association and order.
+- Both additive presentation tables now exist with exactly five explicit runtime table grants; schema CREATE and history UPDATE/DELETE remain unavailable.
+- Authenticated Studio captured current production content, saved draft 1, previewed the homepage/seven pages/mobile frame and published revision 2. The homepage film and all seven page layouts are active.
+- All eight public routes show revision 2; the live 1280×720 film plays with native controls. All 13 original protected scopes have identical before/after counts and digests. No local QA records were copied.
+- See `PRODUCTION-SETUP.md`. Immutable revisions 1 and 2 exist; restore-as-new-draft has prior isolated-QA evidence only and was not exercised against live data. It remains part of broader M10/M11 acceptance, not a fabricated production pass.
+- The owner requested a stop after this setup. Await explicit M5 permission.
 
 ## Remaining phases
 

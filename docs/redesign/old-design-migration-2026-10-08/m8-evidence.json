@@ -1,0 +1,113 @@
+{
+  "phase": "M8",
+  "date": "2026-10-09",
+  "status": "local_engineering_verified",
+  "candidate": {
+    "base": "467e157e33fbfb9c487672334dbc2c7eb676a5d0",
+    "applicationSha256": "97314b51a32bc8bc359af68d9aef6cda9fe8ce0b32a3c05ce0bce142e79a84f7"
+  },
+  "build": true,
+  "typecheck": true,
+  "targetedLint": true,
+  "unitTests": 333,
+  "runtimeChecks": 403,
+  "workflowGroups": 5,
+  "productionCreated": 0,
+  "planningSlots": {
+    "Journal": 120,
+    "Portfolio": 120,
+    "Testimonials": 120,
+    "FAQs": 120
+  },
+  "proposalReconciliation": {
+    "sourceRecords": 93,
+    "changedProposals": 18,
+    "scope": "Saved local draft/public titles and headings; full-text draft review remains M9"
+  },
+  "preservation": {
+    "rivya_catalogue": {
+      "preserved": 120,
+      "added": 0
+    },
+    "rivya_content": {
+      "preserved": 93,
+      "added": 4
+    },
+    "rivya_public_media": {
+      "preserved": 131,
+      "added": 0
+    },
+    "rivya_business_settings": {
+      "preserved": 1,
+      "added": 0
+    },
+    "rivya_revisions": {
+      "preserved": 106,
+      "added": 10
+    },
+    "rivya_inquiries": {
+      "preserved": 2,
+      "added": 0
+    },
+    "rivya_studio_orders": {
+      "preserved": 5,
+      "added": 0
+    },
+    "rivya_studio_order_events": {
+      "preserved": 6,
+      "added": 0
+    },
+    "rivya_inquiry_notes": {
+      "preserved": 0,
+      "added": 0
+    },
+    "rivya_references": {
+      "preserved": 0,
+      "added": 0
+    },
+    "rivya_staff": {
+      "preserved": 3,
+      "added": 0
+    },
+    "rivya_privacy_controls": {
+      "preserved": 5,
+      "added": 0
+    },
+    "rivya_erasure_ledger": {
+      "preserved": 0,
+      "added": 0
+    }
+  },
+  "browser": [
+    "Selected full record and bounded filtered library",
+    "Unsaved browser Back preserves local draft and selection",
+    "New QA metadata saved as draft; prior publication retained",
+    "Repeated identical filters finish loading",
+    "390px drawer applies filters, closes, returns focus and has no horizontal overflow",
+    "URL Back restores filter results",
+    "Existing question-0 FAQ anchor opens on page two",
+    "Studio register shows 120 Portfolio slots and 0/480 production count",
+    "Review evidence remains Not performed on published and edited QA records"
+  ],
+  "localReceipts": [
+    "test-results/old-design-migration/m8-build-final.log",
+    "test-results/old-design-migration/m8-type-final.log",
+    "test-results/old-design-migration/m8-lint.log",
+    "test-results/old-design-migration/m8-lint-final.log",
+    "test-results/old-design-migration/m8-unit-final.log",
+    "test-results/old-design-migration/m8-runtime-final.log",
+    "test-results/old-design-migration/m8-contract-final.log",
+    "test-results/old-design-migration/m8-preservation.json",
+    "test-results/old-design-migration/m8-register-final.png",
+    "test-results/old-design-migration/m8-public-mobile.png"
+  ],
+  "limitations": [
+    "No production changes, push or release",
+    "No M9 production content or Drive upload",
+    "No human or native-reader approval",
+    "No physical-device or screen-reader acceptance",
+    "No full visual parity or hosted/field performance claim",
+    "No catalogue ingestion, scraper, old-product transfer or backup work"
+  ],
+  "registerSha256": "022a6e19e5d72aaffa14d5ee8ba3f40097ab322804eb69a58b1342bed8228443"
+}

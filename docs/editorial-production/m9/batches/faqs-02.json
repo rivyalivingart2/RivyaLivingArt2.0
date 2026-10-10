@@ -1,0 +1,412 @@
+[
+  {
+    "id": "editorial:7ad54eca-8ec5-5c7d-a5f4-e13ddcd50c0b",
+    "kind": "page",
+    "route": "/faq/which-dimensions-should-i-include-initially",
+    "title": "Which dimensions should I include initially?",
+    "eyebrow": "Dimensions and access",
+    "description": "Start with the proposed position's width, depth and relevant height, plus nearby openings or fixed obstructions.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Which dimensions should I include initially?",
+        "paragraphs": [
+          "Start with the proposed position's width, depth and relevant height, plus nearby openings or fixed obstructions. State units, the date and whether the values are approximate. Distinguish room measurements from desired object dimensions. The atelier will need to discuss the actual design and access before initial numbers can become a confirmed specification."
+        ],
+        "group": "Dimensions and access",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F011; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:ec839bb8-9eeb-58b0-aa31-2bd734294327",
+    "kind": "page",
+    "route": "/faq/can-initial-measurements-be-approximate",
+    "title": "Can initial measurements be approximate?",
+    "eyebrow": "Dimensions and access",
+    "description": "Initial estimates can help explain an idea if they are clearly labelled approximate.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can initial measurements be approximate?",
+        "paragraphs": [
+          "Initial estimates can help explain an idea if they are clearly labelled approximate. Record how and when they were obtained and identify what still needs checking. Do not remove the qualification when copying the numbers into another message. Final dimensions require recorded approval; an estimate in a saved inquiry is not that approval."
+        ],
+        "group": "Dimensions and access",
+        "policyHref": "/terms",
+        "action": {
+          "label": "Read the related page",
+          "href": "/terms"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F012; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /terms. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/terms"
+    }
+  },
+  {
+    "id": "editorial:71e3ed64-bf3c-5fc0-a10e-f4be47a4aff9",
+    "kind": "page",
+    "route": "/faq/which-units-should-i-use",
+    "title": "Which units should I use?",
+    "eyebrow": "Dimensions and access",
+    "description": "Use a consistent unit and write it explicitly, such as centimetres or millimetres.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Which units should I use?",
+        "paragraphs": [
+          "Use a consistent unit and write it explicitly, such as centimetres or millimetres. Put it in the drawing title and beside any value that could be ambiguous. Avoid mixing units without labels. Identify what each arrow measures and whether it concerns the room or the proposed object. Clear notation does not replace checking the measurements."
+        ],
+        "group": "Dimensions and access",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F013; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:719671c4-1bbb-5416-aaa8-32a41ec2e3e7",
+    "kind": "page",
+    "route": "/faq/should-i-measure-doorways-as-well-as-the-room",
+    "title": "Should I measure doorways as well as the room?",
+    "eyebrow": "Dimensions and access",
+    "description": "Doorways and the route to the proposed room can be relevant, not just the room itself.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Should I measure doorways as well as the room?",
+        "paragraphs": [
+          "Doorways and the route to the proposed room can be relevant, not just the room itself. Record the opening direction, approach and nearby turns or obstructions where you can do so safely. These observations support an access discussion. They do not guarantee that a piece will fit through or that installation is available at the destination."
+        ],
+        "group": "Dimensions and access",
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related page",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F014; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/shipping-delivery"
+    }
+  },
+  {
+    "id": "editorial:5264b9c2-06d9-5eeb-a171-d3161c39d394",
+    "kind": "page",
+    "route": "/faq/what-access-details-are-helpful-for-stairs-or-lifts",
+    "title": "What access details are helpful for stairs or lifts?",
+    "eyebrow": "Dimensions and access",
+    "description": "Identify lift entrances, internal space, staircase turns, landings and any known building restrictions.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "What access details are helpful for stairs or lifts?",
+        "paragraphs": [
+          "Identify lift entrances, internal space, staircase turns, landings and any known building restrictions. Pair photographs with a simple route sketch and label uncertain measurements. Do not attempt risky access trials. Delivery and installation arrangements are reviewed individually; installation is available only by prior arrangement within Surat under the current delivery policy."
+        ],
+        "group": "Dimensions and access",
+        "policyHref": "/shipping-delivery",
+        "action": {
+          "label": "Read the related page",
+          "href": "/shipping-delivery"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F015; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /shipping-delivery. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/shipping-delivery"
+    }
+  },
+  {
+    "id": "editorial:57a81bfd-49d9-5f3b-ab39-6e0a351d717a",
+    "kind": "page",
+    "route": "/faq/how-should-i-label-a-measurement-photograph",
+    "title": "How should I label a measurement photograph?",
+    "eyebrow": "Dimensions and access",
+    "description": "Give the photograph a reference and show its location on a sketch.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How should I label a measurement photograph?",
+        "paragraphs": [
+          "Give the photograph a reference and show its location on a sketch. State units and the endpoints of each measurement. Mark estimates clearly and include the date. Keep the original image if you annotate a copy. A labelled photograph explains where a number belongs but does not independently verify that the measurement is accurate."
+        ],
+        "group": "Dimensions and access",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F016; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:db44b3c1-5a03-56dc-acdf-6ab9a9c696c7",
+    "kind": "page",
+    "route": "/faq/who-confirms-final-dimensions",
+    "title": "Who confirms final dimensions?",
+    "eyebrow": "Dimensions and access",
+    "description": "Final design and dimensions require recorded approval before work begins.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Who confirms final dimensions?",
+        "paragraphs": [
+          "Final design and dimensions require recorded approval before work begins. The brief should identify who supplied the site measurements and which values still need verification. Do not assume a polished drawing or a website submission has already confirmed them. Ask the atelier how the final specification and any site checks will be agreed for your request."
+        ],
+        "group": "Dimensions and access",
+        "policyHref": "/returns-cancellations",
+        "action": {
+          "label": "Read the related page",
+          "href": "/returns-cancellations"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F017; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /returns-cancellations. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/returns-cancellations"
+    }
+  },
+  {
+    "id": "editorial:0f9323a5-1072-5f3f-acfe-4c899fb9b3bc",
+    "kind": "page",
+    "route": "/faq/can-i-discuss-an-unusual-shaped-space",
+    "title": "Can I discuss an unusual-shaped space?",
+    "eyebrow": "Dimensions and access",
+    "description": "Describe the unusual shape with a labelled sketch and contextual photographs.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I discuss an unusual-shaped space?",
+        "paragraphs": [
+          "Describe the unusual shape with a labelled sketch and contextual photographs. Mark the reference edges, openings and any areas whose dimensions are uncertain. Explain the intended use before suggesting a solution. This provides material for a feasibility discussion; it does not confirm that a particular form, size or installation method can be supplied."
+        ],
+        "group": "Dimensions and access",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F018; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:1d5a692f-95af-5315-ae11-c34d75bd75c6",
+    "kind": "page",
+    "route": "/faq/what-if-the-intended-location-changes",
+    "title": "What if the intended location changes?",
+    "eyebrow": "Dimensions and access",
+    "description": "Tell the atelier which location has changed and identify the existing inquiry or proposal.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "What if the intended location changes?",
+        "paragraphs": [
+          "Tell the atelier which location has changed and identify the existing inquiry or proposal. Review dimensions, access, lighting and surrounding objects for the new position. State which preferences should carry over. A location change may affect the discussion, so do not assume the earlier specification or delivery arrangement automatically applies to the new room."
+        ],
+        "group": "Dimensions and access",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F019; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:d727b1c9-c479-5bc8-a74a-d7323123d07c",
+    "kind": "page",
+    "route": "/faq/does-a-visualization-establish-the-exact-finished-dimensions",
+    "title": "Does a visualization establish the exact finished dimensions?",
+    "eyebrow": "Dimensions and access",
+    "description": "No.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Does a visualization establish the exact finished dimensions?",
+        "paragraphs": [
+          "No. A visualization communicates an appearance or proposed arrangement, not verified finished dimensions. Perspective and cropping can make proportions difficult to judge. Use the confirmed dimensioned specification for the actual piece and keep approximate sketches labelled. If an image and a written dimension seem inconsistent, ask for clarification before approving the proposal."
+        ],
+        "group": "Dimensions and access",
+        "policyHref": "/terms",
+        "action": {
+          "label": "Read the related page",
+          "href": "/terms"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "Collectible design",
+      "format": "Question and answer",
+      "tags": [
+        "Dimensions and access"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F020; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /terms. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/terms"
+    }
+  }
+]

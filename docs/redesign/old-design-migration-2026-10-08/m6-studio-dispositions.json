@@ -1,0 +1,559 @@
+{
+  "meaning": "Route/service reconciliation, not full visual or human acceptance. Old record IDs are never copied or assumed to exist.",
+  "plannedDestinations": [
+    {
+      "label": "Overview — Today",
+      "oldRoute": "/studio",
+      "destination": "/studio",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Commissions — Today",
+      "oldRoute": "/studio/inquiries",
+      "destination": "/studio/inquiries",
+      "disposition": "verified-current-workspace; M7-enhancements-pending"
+    },
+    {
+      "label": "Analytics — Today",
+      "oldRoute": "/studio/analytics",
+      "destination": "/studio/analytics",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Activity — Today",
+      "oldRoute": "/studio/activity",
+      "destination": "/studio/activity",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Products — Catalogue",
+      "oldRoute": "/studio/products",
+      "destination": "/studio/products",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Categories — Catalogue",
+      "oldRoute": "/studio/categories",
+      "destination": "/studio/categories",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Media Library — Catalogue",
+      "oldRoute": "/studio/media",
+      "destination": "/studio/media",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Bulk Import — Catalogue",
+      "oldRoute": "/studio/import",
+      "destination": "/studio/import",
+      "disposition": "verified-prerequisite-view; service-not-activated"
+    },
+    {
+      "label": "Catalog Fill — Catalogue",
+      "oldRoute": "/studio/catalog-fill",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "label": "Exports — Catalogue",
+      "oldRoute": "/studio/exports",
+      "destination": "/studio/exports",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Product Scraper — Catalogue",
+      "oldRoute": "/studio/scraper",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "label": "Research — Catalogue",
+      "oldRoute": "/studio/research",
+      "destination": "/studio/research",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Content Gaps — Catalogue",
+      "oldRoute": "/studio/content-gaps",
+      "destination": "/studio/content-gaps",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Site Copy — Content",
+      "oldRoute": "/studio/site-copy",
+      "destination": "/studio/site-copy",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Site Images — Content",
+      "oldRoute": "/studio/site-images",
+      "destination": "/studio/site-images",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Page Sections — Content",
+      "oldRoute": "/studio/sections",
+      "destination": "/studio/sections",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Process Steps — Content",
+      "oldRoute": "/studio/process",
+      "destination": "/studio/process",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Materials — Content",
+      "oldRoute": "/studio/materials",
+      "destination": "/studio/materials",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Navigation — Content",
+      "oldRoute": "/studio/navigation",
+      "destination": "/studio/navigation",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Commission Form — Content",
+      "oldRoute": "/studio/forms",
+      "destination": "/studio/forms",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Journal — Editorial",
+      "oldRoute": "/studio/blog",
+      "destination": "/studio/journal",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Portfolio — Editorial",
+      "oldRoute": "/studio/portfolio",
+      "destination": "/studio/portfolio",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Testimonials — Editorial",
+      "oldRoute": "/studio/testimonials",
+      "destination": "/studio/testimonials",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "FAQs — Editorial",
+      "oldRoute": "/studio/faqs",
+      "destination": "/studio/faqs",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Pages — Editorial",
+      "oldRoute": "/studio/pages",
+      "destination": "/studio/pages",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Landing Pages — Editorial",
+      "oldRoute": "/studio/custom-pages",
+      "destination": "/studio/landing-pages",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Site Settings — Settings",
+      "oldRoute": "/studio/settings",
+      "destination": "/studio/settings",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "SEO — Settings",
+      "oldRoute": "/studio/seo",
+      "destination": "/studio/seo",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Users — Settings",
+      "oldRoute": "/studio/users",
+      "destination": "/studio/staff",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Subscribers — Settings",
+      "oldRoute": "/studio/subscribers",
+      "destination": "/studio/subscribers",
+      "disposition": "verified-prerequisite-view; service-not-activated"
+    },
+    {
+      "label": "Content Health — Settings",
+      "oldRoute": "/studio/content-health",
+      "destination": "/studio/content-health",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "label": "Content Lab — Settings",
+      "oldRoute": "/studio/content-lab",
+      "destination": "/studio/content-lab",
+      "disposition": "verified-local-scope"
+    }
+  ],
+  "oldStudioPageFiles": [
+    {
+      "source": "src/app/studio/(dashboard)/activity/page.tsx",
+      "oldRoute": "/studio/activity",
+      "destination": "/studio/activity",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/analytics/page.tsx",
+      "oldRoute": "/studio/analytics",
+      "destination": "/studio/analytics",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/blog/[id]/page.tsx",
+      "oldRoute": "/studio/blog/[id]",
+      "destination": "/studio/journal?record=[id]",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/blog/new/page.tsx",
+      "oldRoute": "/studio/blog/new",
+      "destination": "/studio/journal?create=1",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/blog/page.tsx",
+      "oldRoute": "/studio/blog",
+      "destination": "/studio/journal",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/catalog-fill/conflicts/page.tsx",
+      "oldRoute": "/studio/catalog-fill/conflicts",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/catalog-fill/page.tsx",
+      "oldRoute": "/studio/catalog-fill",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/categories/page.tsx",
+      "oldRoute": "/studio/categories",
+      "destination": "/studio/categories",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/content-gaps/page.tsx",
+      "oldRoute": "/studio/content-gaps",
+      "destination": "/studio/content-gaps",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/content-health/page.tsx",
+      "oldRoute": "/studio/content-health",
+      "destination": "/studio/content-health",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/content-lab/page.tsx",
+      "oldRoute": "/studio/content-lab",
+      "destination": "/studio/content-lab",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/custom-pages/[id]/page.tsx",
+      "oldRoute": "/studio/custom-pages/[id]",
+      "destination": "/studio/landing-pages?record=[id]",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/custom-pages/new/page.tsx",
+      "oldRoute": "/studio/custom-pages/new",
+      "destination": "/studio/landing-pages?create=1",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/custom-pages/page.tsx",
+      "oldRoute": "/studio/custom-pages",
+      "destination": "/studio/landing-pages",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/exports/page.tsx",
+      "oldRoute": "/studio/exports",
+      "destination": "/studio/exports",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/faqs/page.tsx",
+      "oldRoute": "/studio/faqs",
+      "destination": "/studio/faqs",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/forms/page.tsx",
+      "oldRoute": "/studio/forms",
+      "destination": "/studio/forms",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/import/page.tsx",
+      "oldRoute": "/studio/import",
+      "destination": "/studio/import",
+      "disposition": "verified-prerequisite-view; service-not-activated"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/inquiries/[id]/page.tsx",
+      "oldRoute": "/studio/inquiries/[id]",
+      "destination": "/studio/inquiries?record=[id]",
+      "disposition": "retained-current-service; M7-detail-and-print-pending"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/inquiries/page.tsx",
+      "oldRoute": "/studio/inquiries",
+      "destination": "/studio/inquiries",
+      "disposition": "retained-current-service; M7-detail-and-print-pending"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/materials/page.tsx",
+      "oldRoute": "/studio/materials",
+      "destination": "/studio/materials",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/media/page.tsx",
+      "oldRoute": "/studio/media",
+      "destination": "/studio/media",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/navigation/page.tsx",
+      "oldRoute": "/studio/navigation",
+      "destination": "/studio/navigation",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/page.tsx",
+      "oldRoute": "/studio",
+      "destination": "/studio",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/pages/[id]/page.tsx",
+      "oldRoute": "/studio/pages/[id]",
+      "destination": "/studio/pages?record=[id]",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/pages/page.tsx",
+      "oldRoute": "/studio/pages",
+      "destination": "/studio/pages",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/portfolio/[id]/page.tsx",
+      "oldRoute": "/studio/portfolio/[id]",
+      "destination": "/studio/portfolio?record=[id]",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/portfolio/new/page.tsx",
+      "oldRoute": "/studio/portfolio/new",
+      "destination": "/studio/portfolio?create=1",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/portfolio/page.tsx",
+      "oldRoute": "/studio/portfolio",
+      "destination": "/studio/portfolio",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/process/page.tsx",
+      "oldRoute": "/studio/process",
+      "destination": "/studio/process",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/products/[id]/page.tsx",
+      "oldRoute": "/studio/products/[id]",
+      "destination": "/studio/products?record=[id]",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/products/new/page.tsx",
+      "oldRoute": "/studio/products/new",
+      "destination": "/studio/products?create=1",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/products/page.tsx",
+      "oldRoute": "/studio/products",
+      "destination": "/studio/products",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/research/page.tsx",
+      "oldRoute": "/studio/research",
+      "destination": "/studio/research",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/scraper/analytics/page.tsx",
+      "oldRoute": "/studio/scraper/analytics",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/scraper/confirmed/page.tsx",
+      "oldRoute": "/studio/scraper/confirmed",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/scraper/explorer/page.tsx",
+      "oldRoute": "/studio/scraper/explorer",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/scraper/large-format/page.tsx",
+      "oldRoute": "/studio/scraper/large-format",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/scraper/mapping/page.tsx",
+      "oldRoute": "/studio/scraper/mapping",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/scraper/page.tsx",
+      "oldRoute": "/studio/scraper",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/scraper/quality/page.tsx",
+      "oldRoute": "/studio/scraper/quality",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/scraper/review/page.tsx",
+      "oldRoute": "/studio/scraper/review",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/scraper/runs/page.tsx",
+      "oldRoute": "/studio/scraper/runs",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/scraper/sources/[key]/page.tsx",
+      "oldRoute": "/studio/scraper/sources/[key]",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/scraper/sources/page.tsx",
+      "oldRoute": "/studio/scraper/sources",
+      "destination": null,
+      "disposition": "excluded-reference-only"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/sections/page.tsx",
+      "oldRoute": "/studio/sections",
+      "destination": "/studio/sections",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/seo/page.tsx",
+      "oldRoute": "/studio/seo",
+      "destination": "/studio/seo",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/settings/page.tsx",
+      "oldRoute": "/studio/settings",
+      "destination": "/studio/settings",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/site-copy/page.tsx",
+      "oldRoute": "/studio/site-copy",
+      "destination": "/studio/site-copy",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/site-images/page.tsx",
+      "oldRoute": "/studio/site-images",
+      "destination": "/studio/site-images",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/subscribers/page.tsx",
+      "oldRoute": "/studio/subscribers",
+      "destination": "/studio/subscribers",
+      "disposition": "verified-prerequisite-view; service-not-activated"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/testimonials/[id]/page.tsx",
+      "oldRoute": "/studio/testimonials/[id]",
+      "destination": "/studio/testimonials?record=[id]",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/testimonials/new/page.tsx",
+      "oldRoute": "/studio/testimonials/new",
+      "destination": "/studio/testimonials?create=1",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/testimonials/page.tsx",
+      "oldRoute": "/studio/testimonials",
+      "destination": "/studio/testimonials",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/(dashboard)/users/page.tsx",
+      "oldRoute": "/studio/users",
+      "destination": "/studio/staff",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/forgot-password/page.tsx",
+      "oldRoute": "/studio/forgot-password",
+      "destination": "/studio/login",
+      "disposition": "verified-current-login-adapter; old-auth-mutation-excluded"
+    },
+    {
+      "source": "src/app/studio/inquiries/[id]/card/page.tsx",
+      "oldRoute": "/studio/inquiries/[id]/card",
+      "destination": "/studio/inquiries?record=[id]&view=print",
+      "disposition": "retained-current-service; M7-detail-and-print-pending"
+    },
+    {
+      "source": "src/app/studio/login/page.tsx",
+      "oldRoute": "/studio/login",
+      "destination": "/studio/login",
+      "disposition": "verified-local-scope"
+    },
+    {
+      "source": "src/app/studio/reset-password/page.tsx",
+      "oldRoute": "/studio/reset-password",
+      "destination": "/studio/login",
+      "disposition": "verified-current-login-adapter; old-auth-mutation-excluded"
+    },
+    {
+      "source": "src/app/studio/signup/page.tsx",
+      "oldRoute": "/studio/signup",
+      "destination": "/studio/login",
+      "disposition": "verified-current-login-adapter; old-auth-mutation-excluded"
+    }
+  ]
+}

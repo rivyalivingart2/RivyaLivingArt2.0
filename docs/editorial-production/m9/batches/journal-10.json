@@ -1,0 +1,892 @@
+[
+  {
+    "id": "article:22e2be3b-a6fc-588e-a920-010c63ca9de2",
+    "kind": "article",
+    "route": "/journal/a-placement-condition-worksheet-to-accompany-a-care-question",
+    "title": "A placement-condition worksheet to accompany a care question",
+    "eyebrow": "Care questions and placement",
+    "description": "A care question is easier to answer when the placement and use are described.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A care question is easier to answer when the placement and use are described. A worksheet can gather those facts without guessing a cleaning method."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Record the piece reference, confirmed material and finish if known, current location and the activity that raises the question. Add relevant photographs and the care instruction you are trying to understand. Leave unknown properties marked as unknown. Ask one specific question at a time."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A concern about a surface near a window should include that placement context, while avoiding an unsupported claim that light caused the concern."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What is the confirmed specification?",
+          "What use or placement prompted the question?",
+          "Which instruction needs clarification?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "This worksheet is not a care instruction. Do not infer heat, moisture, chemical or food-contact suitability from photographs."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J091; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/f4438c18-ad91-4131-b5a1-53983954fed4",
+      "alt": "Close view of brown grain-like lines and a blue channel at a waterfall edge",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:42862009-64df-5d4b-ab3c-2d9f9e1e8150",
+    "kind": "article",
+    "route": "/journal/recording-placement-conditions-before-asking-for-guidance",
+    "title": "Recording placement conditions before asking for guidance",
+    "eyebrow": "Care questions and placement",
+    "description": "Placement conditions belong in a care discussion because the same general question may concern very different settings.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Placement conditions belong in a care discussion because the same general question may concern very different settings. Describe the real situation in plain language."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Note whether the piece is near a window, a heat source, moisture or frequent contact, without estimating technical exposure values you cannot verify. Explain normal use and any recent change. Include the piece's existing care information so the answer can be tied to the correct specification."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "“The piece was moved beside this window last week” is useful context. “The window damaged it” is a diagnosis that has not yet been established."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What is nearby?",
+          "Has the placement changed?",
+          "Which facts are observed rather than inferred?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not treat a placement photograph as proof that a material is suitable for that location. Ask for specific guidance."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J092; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/5afbd52d-a51d-4d7f-9573-5c818eebd8bf",
+      "alt": "Stacked round coasters with brown, blue and gold-coloured boundaries",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:67a6bad3-f31c-576f-a802-147f6aebdc6e",
+    "kind": "article",
+    "route": "/journal/why-an-inspiration-photograph-is-not-a-cleaning-instruction",
+    "title": "Why an inspiration photograph is not a cleaning instruction",
+    "eyebrow": "Care questions and placement",
+    "description": "Inspiration photographs describe an appearance, not a cleaning routine.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Inspiration photographs describe an appearance, not a cleaning routine. Props and styling should not be read as evidence that a surface tolerates a particular use."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Find the care information for the actual piece and compare the confirmed material and finish. If an instruction is unclear, ask the atelier before trying a product or technique. Use the inspiration image only to explain the visual reference, with its source and limits labelled."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A tray shown beside candles does not prove heat resistance. A cup in a scene does not establish food-contact suitability or a safe cleaning chemical."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What instruction applies to this piece?",
+          "What claim is only implied by a prop?",
+          "Which question should be asked before acting?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not experiment on a piece based on an editorial image. General imagery cannot replace item-specific care guidance."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J093; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/ef5d89bb-a7be-4516-b4d8-846264c44404",
+      "alt": "Blue and gold-coloured rectangular tray with handles in a room scene",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:7fbe82e3-a8aa-5227-a81e-6937ef01f116",
+    "kind": "article",
+    "route": "/journal/keeping-care-notes-with-the-confirmed-specification",
+    "title": "Keeping care notes with the confirmed specification",
+    "eyebrow": "Care questions and placement",
+    "description": "Care notes are easier to use when they stay with the specification they concern.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Care notes are easier to use when they stay with the specification they concern. A loose instruction copied from another piece can be misleading."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Keep the piece reference, confirmed materials, finish and supplied care notes together. Date any later clarification and note who provided it. Mark superseded instructions clearly without silently combining them. If the specification is unknown, ask before borrowing guidance from a similar-looking object."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "Two objects may look alike while having different confirmed finishes. A shared photograph does not establish that their care instructions are interchangeable."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "Which piece does the note cover?",
+          "What specification does it reference?",
+          "Is a later clarification current?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not infer a care method from appearance or an unrelated product description. Use guidance for the actual piece."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J094; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/8d88879a-9cc8-4862-afcc-faa806566587",
+      "alt": "Round clear floral display with a raised central ring",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:51f22fb6-667b-5143-adb2-d06b3183fd58",
+    "kind": "article",
+    "route": "/journal/questions-about-everyday-contact-and-use",
+    "title": "Questions about everyday contact and use",
+    "eyebrow": "Care questions and placement",
+    "description": "Everyday contact is a specific use question, not a property that can be assumed from an object's name.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Everyday contact is a specific use question, not a property that can be assumed from an object's name. Describe what is intended to touch the surface and under what circumstances."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "List the actual activities you want to discuss. Separate occasional placement from repeated use and identify any heat, moisture or cleaning questions. Refer to the confirmed piece and finish. Ask for clarification before treating an illustrative scene as permission."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "Calling something a coaster or platter in a reference does not by itself establish temperature limits or food-contact suitability for a proposed custom piece."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What will contact the surface?",
+          "How often?",
+          "Which suitability question remains unanswered?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "This article supplies no performance limits. Those require the appropriate confirmed specification and guidance."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J095; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/f4438c18-ad91-4131-b5a1-53983954fed4",
+      "alt": "Close view of brown grain-like lines and a blue channel at a waterfall edge",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:727659af-eff7-53b7-a97b-3eee4d814771",
+    "kind": "article",
+    "route": "/journal/describing-a-concern-with-useful-photographs",
+    "title": "Describing a concern with useful photographs",
+    "eyebrow": "Care questions and placement",
+    "description": "Useful concern photographs show context and detail without attempting a diagnosis.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Useful concern photographs show context and detail without attempting a diagnosis. They help the atelier understand what you are reporting."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Take a whole-piece view and a closer view of the area, avoiding filters where possible. Note when the concern was first noticed and any relevant change in use or placement. Keep the wording observational. Include the inquiry reference if available and ask before attempting repairs."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "“A lighter area is visible beside the edge in this light” describes an observation. It leaves room for the cause to be assessed appropriately."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What is visible?",
+          "When was it noticed?",
+          "What context and reference will help the review?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "The current returns policy asks for prompt reporting, preferably within seven days for visible damage; that preference is not an automatic rejection deadline. Consult the policy for full terms."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J096; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/5afbd52d-a51d-4d7f-9573-5c818eebd8bf",
+      "alt": "Stacked round coasters with brown, blue and gold-coloured boundaries",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:6fb69d86-8261-5a42-a5dc-af51545ca8d2",
+    "kind": "article",
+    "route": "/journal/distinguishing-appearance-changes-from-a-diagnosis",
+    "title": "Distinguishing appearance changes from a diagnosis",
+    "eyebrow": "Care questions and placement",
+    "description": "An appearance change is an observation; its cause is a separate question.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "An appearance change is an observation; its cause is a separate question. Keeping those apart helps avoid an inaccurate diagnosis in a support request."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Describe the location, extent and viewing conditions of the change. Compare earlier photographs only if they show a relevant view. Note differences in lighting or camera angle. Provide the confirmed specification and any recent handling or placement changes you actually know."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A reflection visible in one photograph and absent in another may not show a material change. The comparison should acknowledge the different conditions."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What changed in the image?",
+          "What changed in the conditions?",
+          "Which cause remains unconfirmed?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not identify a defect, prescribe a treatment or make a warranty conclusion from photographs alone. Ask for piece-specific assessment."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J097; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/ef5d89bb-a7be-4516-b4d8-846264c44404",
+      "alt": "Blue and gold-coloured rectangular tray with handles in a room scene",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:9c2f2bea-635e-55e1-a569-4173468ab597",
+    "kind": "article",
+    "route": "/journal/preparing-a-relocation-discussion-for-an-existing-piece",
+    "title": "Preparing a relocation discussion for an existing piece",
+    "eyebrow": "Care questions and placement",
+    "description": "Relocating an existing piece creates a new set of access and placement questions.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "Relocating an existing piece creates a new set of access and placement questions. Discuss them before treating the original delivery arrangement as reusable."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Record the current and proposed positions, the route between them and any stairs, lifts or turns. Gather the piece's confirmed dimensions and any handling information already supplied. Ask what additional assessment is needed. Keep the new placement's use and conditions visible in the discussion."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "Moving within the same building can still introduce a tighter turn or a different mounting surface. The distance alone does not describe the task."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What changes along the route?",
+          "What handling information exists?",
+          "What must be assessed at the new position?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not attempt heavy handling or reuse a mounting method based on this worksheet. Obtain appropriate piece-specific guidance."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J098; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/8d88879a-9cc8-4862-afcc-faa806566587",
+      "alt": "Round clear floral display with a raised central ring",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:fdc8464a-6a25-5666-a7cc-02f22983da3c",
+    "kind": "article",
+    "route": "/journal/reading-care-guidance-without-turning-it-into-a-guarantee",
+    "title": "Reading care guidance without turning it into a guarantee",
+    "eyebrow": "Care questions and placement",
+    "description": "General care guidance should be read within its stated scope.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "General care guidance should be read within its stated scope. A sentence about ordinary use is not automatically a guarantee covering every material, finish or condition."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Identify the piece and specification the guidance concerns. Read any limits and related instructions together. If a phrase seems broad, ask how it applies to your actual use rather than extending it yourself. Keep the answer with the current care record."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "A general discussion of protecting surfaces does not establish an exact temperature limit or a lifetime performance promise."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What is the guidance's scope?",
+          "Which limit matters?",
+          "What specific use still needs an answer?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not strengthen general advice into a warranty or certification. Confirm specific questions with the atelier and consult the applicable terms."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J099; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/f4438c18-ad91-4131-b5a1-53983954fed4",
+      "alt": "Close view of brown grain-like lines and a blue channel at a waterfall edge",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "article:0cefda13-539e-5456-a105-c12ac497ba00",
+    "kind": "article",
+    "route": "/journal/when-general-advice-needs-a-specific-question",
+    "title": "When general advice needs a specific question",
+    "eyebrow": "Care questions and placement",
+    "description": "A general article reaches its limit when a decision depends on the actual piece.",
+    "sections": [
+      {
+        "id": "question",
+        "heading": "The question behind the worksheet",
+        "paragraphs": [
+          "A general article reaches its limit when a decision depends on the actual piece. Recognising that point helps turn broad reading into a useful question."
+        ]
+      },
+      {
+        "id": "method",
+        "heading": "Work through the observation",
+        "paragraphs": [
+          "Write the exact action you are considering and the information missing before you act. Gather the piece reference, confirmed specification and relevant photographs. Quote the short instruction you do not understand in your private message. Ask for clarification rather than testing an assumption."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A worked example to compare",
+        "paragraphs": [
+          "“Which supplied instruction applies to this finish?” is more answerable than “Is this safe?” without a piece reference or description of the intended action."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Questions to put in your notes",
+        "paragraphs": [
+          "Use these prompts to produce a short record you can revisit. Date the sheet, identify the reference you used and leave unknowns explicitly unanswered. Keep site facts, personal preferences and requests for confirmation separate."
+        ],
+        "checklist": [
+          "What action is being considered?",
+          "What fact is missing?",
+          "What can the atelier use to identify the piece?"
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "What this exercise cannot establish",
+        "paragraphs": [
+          "Do not use general editorial guidance to select chemicals, repair methods or performance limits. Those require specific information."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Choose the next question",
+        "paragraphs": [
+          "Keep the resulting note with your current brief. Before sending it, check that it explains one decision clearly and does not turn a preference into an agreed detail. Use the current linked page for the relevant website guidance, and bring any piece-specific uncertainty to the atelier."
+        ],
+        "policyHref": "/materials-care",
+        "action": {
+          "label": "Read the related guidance",
+          "href": "/materials-care"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Worksheet",
+      "tags": [
+        "Care questions and placement"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 J100; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /materials-care. No human approval asserted."
+    },
+    "headerImage": {
+      "path": "/editorial/5afbd52d-a51d-4d7f-9573-5c818eebd8bf",
+      "alt": "Stacked round coasters with brown, blue and gold-coloured boundaries",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+]

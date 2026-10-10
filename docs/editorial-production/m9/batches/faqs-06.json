@@ -1,0 +1,412 @@
+[
+  {
+    "id": "editorial:85ef1ae8-76a7-5401-a23f-f7dce9d0c023",
+    "kind": "page",
+    "route": "/faq/what-should-my-first-commission-message-contain",
+    "title": "What should my first commission message contain?",
+    "eyebrow": "Preparing a commission brief",
+    "description": "Describe the purpose, proposed position or occasion, leading preferences and the questions you want to discuss.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "What should my first commission message contain?",
+        "paragraphs": [
+          "Describe the purpose, proposed position or occasion, leading preferences and the questions you want to discuss. Include only a few relevant references and identify what each explains. Check your contact details and exact personalization text before saving. The saved brief starts an inquiry; feasibility, quotation, payment arrangements and delivery are agreed separately."
+        ],
+        "group": "Preparing a commission brief",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Preparing a commission brief"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F051; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:46fa3aab-6131-559e-a2b1-790be2215346",
+    "kind": "page",
+    "route": "/faq/how-can-i-separate-a-room-request-from-a-keepsake-request-in-one-brief",
+    "title": "How can I separate a room request from a keepsake request in one brief?",
+    "eyebrow": "Preparing a commission brief",
+    "description": "Use separate labelled sections for the room idea and the keepsake idea.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How can I separate a room request from a keepsake request in one brief?",
+        "paragraphs": [
+          "Use separate labelled sections for the room idea and the keepsake idea. Explain whether they are related or independent, and identify the different references and questions for each. Do not assume a room measurement applies to the keepsake or that one feasibility answer covers both. Ask how the atelier would like the discussion organized."
+        ],
+        "group": "Preparing a commission brief",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Preparing a commission brief"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F052; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:6c863fc7-806f-5239-ae83-fb95993acefe",
+    "kind": "page",
+    "route": "/faq/how-many-references-are-useful",
+    "title": "How many references are useful?",
+    "eyebrow": "Preparing a commission brief",
+    "description": "A small set with clear reasons is usually more useful than many unexplained images.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How many references are useful?",
+        "paragraphs": [
+          "A small set with clear reasons is usually more useful than many unexplained images. Choose references that answer different questions, such as outline, colour relationship and placement. The current inquiry upload accepts up to three JPG, PNG or WebP images, each up to 3 MB. Label alternatives so they are not read as simultaneous requirements."
+        ],
+        "group": "Preparing a commission brief",
+        "policyHref": "/faq",
+        "action": {
+          "label": "Read the related page",
+          "href": "/faq"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Preparing a commission brief"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F053; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/faq"
+    }
+  },
+  {
+    "id": "editorial:83a43ecb-79e9-54cb-ae89-1e2207dc0055",
+    "kind": "page",
+    "route": "/faq/how-should-i-label-must-haves-and-preferences",
+    "title": "How should I label must-haves and preferences?",
+    "eyebrow": "Preparing a commission brief",
+    "description": "Use separate lists and give each must-have a reason.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How should I label must-haves and preferences?",
+        "paragraphs": [
+          "Use separate lists and give each must-have a reason. Distinguish verified site constraints from desired design responses. Mark optional ideas and unresolved questions clearly. This makes it easier to preserve the purpose if a preferred solution is unsuitable. Calling something essential does not confirm feasibility; the final design still needs discussion and recorded approval."
+        ],
+        "group": "Preparing a commission brief",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Preparing a commission brief"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F054; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:50ac60d5-b8cb-5eb8-a0d5-c17c70caadb4",
+    "kind": "page",
+    "route": "/faq/can-i-send-a-brief-prepared-by-an-architect",
+    "title": "Can I send a brief prepared by an architect?",
+    "eyebrow": "Preparing a commission brief",
+    "description": "You can provide an architect-prepared brief as relevant context.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I send a brief prepared by an architect?",
+        "paragraphs": [
+          "You can provide an architect-prepared brief as relevant context. Identify its author, date, version and which measurements or proposals it contains. Keep site facts separate from preferences and make the decision-making roles clear. The brief does not automatically establish a partnership, installation commitment or accepted specification; those arrangements need individual discussion."
+        ],
+        "group": "Preparing a commission brief",
+        "policyHref": "/architects",
+        "action": {
+          "label": "Read the related page",
+          "href": "/architects"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Preparing a commission brief"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F055; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /architects. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/architects"
+    }
+  },
+  {
+    "id": "editorial:33ac18a0-6314-5971-a29a-17a7cf4be544",
+    "kind": "page",
+    "route": "/faq/how-do-i-record-unanswered-questions",
+    "title": "How do I record unanswered questions?",
+    "eyebrow": "Preparing a commission brief",
+    "description": "Give each question a short label, explain why it matters and identify who may be able to answer it.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How do I record unanswered questions?",
+        "paragraphs": [
+          "Give each question a short label, explain why it matters and identify who may be able to answer it. Put questions that affect other decisions first. When an answer arrives, record its source and date. Leave unresolved items visibly open rather than converting a tentative response or silence into an approved detail."
+        ],
+        "group": "Preparing a commission brief",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Preparing a commission brief"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F056; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:13b6b9d6-78df-5943-aef4-c75923d43867",
+    "kind": "page",
+    "route": "/faq/should-several-decision-makers-submit-separate-messages",
+    "title": "Should several decision-makers submit separate messages?",
+    "eyebrow": "Preparing a commission brief",
+    "description": "A consolidated summary can reduce contradictions when the actual decision-makers have reviewed it.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Should several decision-makers submit separate messages?",
+        "paragraphs": [
+          "A consolidated summary can reduce contradictions when the actual decision-makers have reviewed it. Collect comments against the same proposal version and preserve unresolved differences. Agree who will communicate the summary where appropriate. Do not create several duplicate inquiries simply to repeat one brief, and do not imply consent from someone who has not reviewed the choices."
+        ],
+        "group": "Preparing a commission brief",
+        "policyHref": "/contact",
+        "action": {
+          "label": "Read the related page",
+          "href": "/contact"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Preparing a commission brief"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F057; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /contact. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/contact"
+    }
+  },
+  {
+    "id": "editorial:5297dead-190b-50fd-a0f3-12c2a7935750",
+    "kind": "page",
+    "route": "/faq/can-i-save-a-brief-before-sending-it",
+    "title": "Can I save a brief before sending it?",
+    "eyebrow": "Preparing a commission brief",
+    "description": "Keep a private copy of important wording while preparing it; do not assume every unsaved form field will be recovered later.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Can I save a brief before sending it?",
+        "paragraphs": [
+          "Keep a private copy of important wording while preparing it; do not assume every unsaved form field will be recovered later. When the website reports a successful save, the inquiry is recorded and a message can be opened or copied. Saving does not send WhatsApp automatically or confirm the order. Review the receipt before the handoff."
+        ],
+        "group": "Preparing a commission brief",
+        "policyHref": "/faq",
+        "action": {
+          "label": "Read the related page",
+          "href": "/faq"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Preparing a commission brief"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F058; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /faq. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/faq"
+    }
+  },
+  {
+    "id": "editorial:b65ea8a3-4998-5ec3-a37e-a4ca8c587142",
+    "kind": "page",
+    "route": "/faq/how-can-i-identify-the-latest-version-of-a-brief",
+    "title": "How can I identify the latest version of a brief?",
+    "eyebrow": "Preparing a commission brief",
+    "description": "Use a clear title, date and version, with a short note describing what changed.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "How can I identify the latest version of a brief?",
+        "paragraphs": [
+          "Use a clear title, date and version, with a short note describing what changed. Maintain one index pointing to the current reference set and keep superseded ideas labelled. Distinguish a brief version from an approved specification or quotation. A file named “final” does not establish that the atelier has accepted its contents."
+        ],
+        "group": "Preparing a commission brief",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Preparing a commission brief"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F059; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  },
+  {
+    "id": "editorial:eabf01af-45e7-5f08-a937-55b106aef6bf",
+    "kind": "page",
+    "route": "/faq/where-can-i-discuss-feasibility-without-assuming-a-new-service",
+    "title": "Where can I discuss feasibility without assuming a new service?",
+    "eyebrow": "Preparing a commission brief",
+    "description": "Use the custom-piece brief to describe the idea and ask whether it is feasible.",
+    "sections": [
+      {
+        "id": "answer",
+        "heading": "Where can I discuss feasibility without assuming a new service?",
+        "paragraphs": [
+          "Use the custom-piece brief to describe the idea and ask whether it is feasible. State the purpose, relevant constraints and the uncertainty you want resolved. Existing page examples and visualizations are references, not promises of every possible service or variation. Wait for an individual discussion before assuming availability, price, timing or a production booking."
+        ],
+        "group": "Preparing a commission brief",
+        "policyHref": "/commission",
+        "action": {
+          "label": "Read the related page",
+          "href": "/commission"
+        }
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Question and answer",
+      "tags": [
+        "Preparing a commission brief"
+      ],
+      "context": "Preparation and discussion"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 F060; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /commission. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "faq",
+      "classification": "guidance",
+      "policyHref": "/commission"
+    }
+  }
+]

@@ -1,4 +1,42 @@
+# Current authorization — publish M5–M9 and begin M10
+
+10 October 2026. The owner approved the displayed work and requested putting it on the website, followed by M10. Read `docs/decisions/2026-10-10-release-m5-m9-and-m10.md`. Use a detailed PR into main, verify the exact deployment, ingest the 21 M9 images through real production storage, and publish the 480 new documents through the signed-in Studio workflow with fresh dependencies. Preserve every pre-existing record. Owner publication authorization does not invent native-reader, physical-device, independent editorial or genuine-customer evidence. The older local-only/stop-before-M10 checkpoints below are historical for this request.
+
+---
+
+# Current checkpoint — M9 drafts delivered; stop before M10
+
+9 October 2026. All 480 new English drafts are authored, saved in isolated local Studio in 48 ten-entry batches, and delivered to the dedicated Drive folder: 120 Journal, 120 labelled Portfolio concepts, 120 labelled fictional Testimonial examples and 120 FAQs. Production remains 0/480. Read `M9-EDITORIAL-DRAFT-PRODUCTION.md`, `m9-evidence.json` and `PENDING-AFTER-M9.md` under `docs/redesign/old-design-migration-2026-10-08/`. Build/type/lint, 337 unit, 403 built-server, 480 saved-render checks and 34 core Drive hash readbacks pass. Every pre-M9 row in all 13 protected scopes is unchanged. Human editorial, rights/crop, native-reader, physical-device and publication approvals remain open. Stop before M10. No push, release or production writes. Do not re-import existing M9 IDs or copy local QA media publication into production.
+
+---
+
+# Current authorization — M9 draft production and staging
+
+9 October 2026. The owner explicitly authorized M9. Read `docs/decisions/2026-10-09-m9.md`. Produce the new editorial drafts and media in ten-entry batches, stage additively in isolated local Studio and copy the delivery to a dedicated Drive folder. Preserve all pre-M9 records and Drive originals. Stop before M10. No push/release/production publication. Actual human/native/media-owner approvals remain distinct from assistant review. Earlier stops before M9 below are superseded for this phase only.
+
+---
+
+# Current checkpoint — M7 and M8 verified locally; stop before M9
+
+9 October 2026. The owner-authorized M7 and M8 are complete for their documented local engineering scopes. Read `M7-ORDERS-AND-EDITORIAL-ORDERING.md`, `M8-EDITORIAL-WORKFLOW.md`, `m8-evidence.json` and `PENDING-AFTER-M8.md` in this migration directory. M7 is commit `467e157`; M8 is the commit containing this checkpoint. Final M8 build/type/lint, 333 unit, 403 built-server and five workflow groups pass. All 13 pre-M8 protected scopes match row-for-row. M5–M8 remain local; production editorial remains 0/480. Stop before M9. No push, release or production writes until an applicable owner instruction. Human/native-reader/physical-device/field/full-parity acceptance remains open. Historical checkpoints below do not authorize further phases.
+
+---
+
+# M7 checkpoint — verified locally; M8 authorized next
+
+9 October 2026. M7 is complete for its recorded engineering scope. Read `M7-ORDERS-AND-EDITORIAL-ORDERING.md` and `m7-evidence.json` in this migration directory. All 13 pre-M7 protected scopes match. Continue with authorized M8, then stop before M9. Local only; no release or production writes.
+
+---
+
+# Current authorization — M7 then M8 locally
+
+9 October 2026. The owner explicitly requested M7 and M8. Complete and verify M7 before M8; stop before M9. No push, release or production writes are authorized. Preserve existing records and test additively only in the existing loopback QA database. Read `docs/decisions/2026-10-09-m7-m8.md`. Earlier stops before M7 are superseded for these two phases.
+
+---
+
 # Rivya Living Art — continuation prompt
+
+**Current continuation override, 9 October 2026:** M5 and M6 are implemented and verified locally. Read `IMPLEMENTATION-CHECKPOINT.md`, `M6-STUDIO-WORKSPACES.md`, `m6-evidence.json` and `PENDING-AFTER-M6.md` first. **Stop before M7 unless the owner explicitly authorizes it.** Do not restart completed phases. M0–M4/Production setup are live from PR #46; M5/M6 have no new push or release. The labelled concept/fictional sample decision supersedes the genuine-only wording in the historical prompt below. New production entries remain 0/480. Human/device/whole-page parity checks remain open.
 
 Prepared 9 October 2026. Copy the instruction below into the new implementation chat. Its presence in the repository does not itself run implementation or authorize a later release.
 

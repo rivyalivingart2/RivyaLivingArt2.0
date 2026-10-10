@@ -28,6 +28,9 @@ import s from './workspace.module.css';
 const InquiryBoard=dynamic(()=>import('./inquiry-board').then(m=>m.InquiryBoard),{loading:WorkspaceLoading});
 const CatalogueEditor=dynamic(()=>import('./catalogue-editor').then(m=>m.CatalogueEditor),{loading:WorkspaceLoading});
 const StaffEditor=dynamic(()=>import('./staff-editor').then(m=>m.StaffEditor),{loading:WorkspaceLoading});
+const EditorialOrderEditor=dynamic(()=>import('./editorial-order-editor').then(m=>m.EditorialOrderEditor),{loading:WorkspaceLoading});
+const ContentRegister=dynamic(()=>import('./content-register').then(m=>m.ContentRegister),{loading:WorkspaceLoading});
+const EditorialLibrary=dynamic(()=>import('./editorial-library').then(m=>m.EditorialLibrary),{loading:WorkspaceLoading});
 const ContentEditor=dynamic(()=>import('./content-editor').then(m=>m.ContentEditor),{loading:WorkspaceLoading});
 const PresentationEditor=dynamic(()=>import('./presentation-editor').then(m=>m.PresentationEditor),{loading:WorkspaceLoading});
 const MediaLibrary=dynamic(()=>import('./media-library').then(m=>m.MediaLibrary),{loading:WorkspaceLoading});
@@ -39,17 +42,42 @@ const SiteSettingsEditor=dynamic(()=>import('./site-settings-editor').then(m=>m.
 const TranslationWorkspace=dynamic(()=>import('./translation-workspace').then(m=>m.TranslationWorkspace),{loading:WorkspaceLoading});
 const LegacyDisposition=dynamic(()=>import('./legacy-disposition').then(m=>m.LegacyDisposition),{loading:WorkspaceLoading});
 const RouteReview=dynamic(()=>import('./route-review').then(m=>m.RouteReview),{loading:WorkspaceLoading});
+const AnalyticsPanel=dynamic(()=>import('./analytics-panel').then(m=>m.AnalyticsPanel),{loading:WorkspaceLoading});
+const CatalogueCategories=dynamic(()=>import('./catalogue-categories').then(m=>m.CatalogueCategories),{loading:WorkspaceLoading});
+const EditorialDesk=dynamic(()=>import('./editorial-desk').then(m=>m.EditorialDesk),{loading:WorkspaceLoading});
+const ConditionalWorkspace=dynamic(()=>import('./conditional-workspace').then(m=>m.ConditionalWorkspace),{loading:WorkspaceLoading});
 function WorkspaceLoading(){return <p className={s.status} role="status">Opening this workspace page…</p>;}
 
-const moduleIcons = {overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,sections:LayoutDashboard,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,legacy:FileText,translations:Languages,'route-review':ExternalLink,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
+const moduleIcons = {'content-register':FileText,'editorial-order':FileText,'analytics':Activity,'categories':Boxes,'import':Boxes,'exports':Boxes,'research':Boxes,'content-gaps':Boxes,'process':FileText,'materials':FileText,'forms':FileText,'journal':FileText,'portfolio':FileText,'testimonials':FileText,'faqs':FileText,'pages':FileText,'landing-pages':FileText,'seo':FileText,'subscribers':FileText,'content-lab':FileText,overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,sections:LayoutDashboard,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,legacy:FileText,translations:Languages,'route-review':ExternalLink,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
 const navGroups = ['Today','Catalogue','Content','Editorial','Settings'].map(title=>({title,items:studioModules.filter(module=>module.group===title)}));
 type ModuleContext={staffId?:string|null;admin:boolean;staff:StaffMember[];load:()=>Promise<void>};
 const moduleViews = {
+ 'content-register':({admin}:ModuleContext)=> <ContentRegister admin={admin}/>,
+ 'editorial-order':({admin}:ModuleContext)=><EditorialOrderEditor admin={admin}/>,
+ analytics:()=> <AnalyticsPanel/>,
+ categories:()=> <CatalogueCategories/>,
+ import:()=> <ConditionalWorkspace view="import"/>,
+ subscribers:()=> <ConditionalWorkspace view="subscribers"/>,
+ exports:({admin}:ModuleContext)=><Operations view="activity" admin={admin} exportOnly/>,
+ forms:({admin}:ModuleContext)=><CatalogueEditor admin={admin} formsOnly/>,
+ 'content-gaps':()=> <ContentHealth gapsOnly/>,
+ process:({admin}:ModuleContext)=><ContentEditor admin={admin} initialRecord="page:process" title="Process steps."/>,
+ materials:({admin}:ModuleContext)=><ContentEditor admin={admin} initialRecord="page:materials-care" title="Materials and care."/>,
+ 'journal':({admin}:ModuleContext)=><EditorialLibrary admin={admin} area="journal"/>,
+ 'portfolio':({admin}:ModuleContext)=><EditorialLibrary admin={admin} area="portfolio"/>,
+ 'testimonials':({admin}:ModuleContext)=><EditorialLibrary admin={admin} area="testimonials"/>,
+ 'faqs':({admin}:ModuleContext)=><EditorialLibrary admin={admin} area="faqs"/>,
+ 'pages':({admin}:ModuleContext)=><EditorialLibrary admin={admin} area="pages"/>,
+ 'landing-pages':({admin}:ModuleContext)=><EditorialLibrary admin={admin} area="landing-pages"/>,
+ 'research':()=> <EditorialDesk view="research"/>,
+ 'seo':()=> <EditorialDesk view="seo"/>,
+ 'content-lab':()=> <EditorialDesk view="content-lab"/>,
+
  overview:({admin}:ModuleContext)=><Operations view="overview" admin={admin}/>,
  inquiries:({admin,staff,staffId}:ModuleContext)=><InquiryBoard staff={staff} admin={admin} staffId={staffId} dueOnly={false}/>,
  'follow-ups':({admin,staff,staffId}:ModuleContext)=><InquiryBoard staff={staff} admin={admin} staffId={staffId} dueOnly/>,
  products:({admin}:ModuleContext)=><CatalogueEditor admin={admin}/>,
- content:({admin}:ModuleContext)=><ContentEditor admin={admin}/>,
+ content:({admin}:ModuleContext)=><EditorialLibrary admin={admin}/>,
  sections:({admin}:ModuleContext)=><PresentationEditor admin={admin}/>,
  media:({admin}:ModuleContext)=><MediaLibrary admin={admin}/>,
  'site-copy':({admin}:ModuleContext)=><SiteCopyEditor admin={admin}/>,

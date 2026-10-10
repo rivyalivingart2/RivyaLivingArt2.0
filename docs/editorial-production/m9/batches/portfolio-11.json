@@ -1,0 +1,974 @@
+[
+  {
+    "id": "editorial:907a8d5d-e3fd-56e8-ab11-fd2b71a9518a",
+    "kind": "page",
+    "route": "/portfolio/the-boundary-between-blue-and-grain",
+    "title": "The boundary between blue and grain",
+    "eyebrow": "Material and detail concepts",
+    "description": "Explore a detail study focused on the meeting of a blue area and grain-like lines.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a detail study focused on the meeting of a blue area and grain-like lines. It is an independent unbuilt concept, not a detail extracted from a claimed real commission."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare a narrow and broad boundary in sketches. Keep the visual preference separate from any assertion about timber species, resin composition or joining method."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "How sharp should the boundary appear?",
+          "What does the wider form contribute?",
+          "Which material facts require confirmation?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Material and detail concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P101; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /portfolio. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Material and detail concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/f4438c18-ad91-4131-b5a1-53983954fed4",
+      "alt": "Close view of brown grain-like lines and a blue channel at a waterfall edge",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:cee65a0a-25d7-5381-a9d1-010892364adb",
+    "kind": "page",
+    "route": "/portfolio/a-gold-coloured-accent-at-the-perimeter",
+    "title": "A gold-coloured accent at the perimeter",
+    "eyebrow": "Material and detail concepts",
+    "description": "Consider a detail concept where a fine perimeter accent defines an irregular outline.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a detail concept where a fine perimeter accent defines an irregular outline. The study uses colour language without claiming the accent is a particular metal."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare the edge from close and normal viewing distances. Decide whether it should be a quiet finishing line or a stronger part of the composition."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "How prominent should the edge be?",
+          "What outline is intended?",
+          "What actual material and use need review?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Material and detail concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P102; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /portfolio. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Material and detail concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/faaa14a1-1fe7-4514-8a6d-2304701eb0cb",
+      "alt": "Stack of wavy-edged blue coasters with gold-coloured rims",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:5a3e751c-9942-514c-a6bf-87170fa0cd72",
+    "kind": "page",
+    "route": "/portfolio/a-transparent-looking-layer-around-a-motif",
+    "title": "A transparent-looking layer around a motif",
+    "eyebrow": "Material and detail concepts",
+    "description": "Explore a concept about apparent depth around a central motif.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a concept about apparent depth around a central motif. The reference's visual clarity is treated as an image observation rather than a guaranteed optical result."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Draw the motif with different surrounding margins and compare overlap from two angles. Leave composition, thickness and fabrication unspecified."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "How much surrounding space is wanted?",
+          "Which view explains the depth?",
+          "What optical and structural questions remain?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Material and detail concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P103; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /portfolio. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Material and detail concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/49508ae8-acd9-435f-b2b8-3676150e579c",
+      "alt": "Close view of a clear cube containing a gold-coloured lattice and blue forms",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:1e0b02f9-cc90-539b-ac7d-e052ef2c7558",
+    "kind": "page",
+    "route": "/portfolio/a-floral-detail-against-an-open-margin",
+    "title": "A floral detail against an open margin",
+    "eyebrow": "Material and detail concepts",
+    "description": "Consider a detail study that contrasts a dense cluster of petals with a quiet adjacent area.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a detail study that contrasts a dense cluster of petals with a quiet adjacent area. The concept concerns visual rhythm, not preservation of actual flowers."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare where the density begins and ends in a cropped sketch, then reconnect it to a wider composition. Keep the source image's limits visible."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Where should the eye pause?",
+          "What wider context is needed?",
+          "What actual flower condition would require assessment?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Material and detail concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P104; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /portfolio. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Material and detail concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/cb26983f-dd45-42c3-ac23-c6040484eeff",
+      "alt": "Close view of red and yellow petals at the lower edge of a garland frame",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:be155272-7be8-5c85-a619-e60d31878087",
+    "kind": "page",
+    "route": "/portfolio/following-a-flowing-colour-gesture",
+    "title": "Following a flowing colour gesture",
+    "eyebrow": "Material and detail concepts",
+    "description": "Explore a material-appearance concept inspired by a flowing blue gesture.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a material-appearance concept inspired by a flowing blue gesture. The study asks how movement can be suggested in a still composition without describing a verified workshop process."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Pair the still texture reference with the optional disclosed material film. Compare direction, concentration and quiet areas as visual observations only."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Which direction leads the eye?",
+          "What should remain still and quiet?",
+          "Which process or performance claims are unsupported?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Material and detail concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P105; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /portfolio. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Material and detail concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/fc349ca1-d76a-4422-8548-db00d8a77fa4",
+      "alt": "Abstract navy flowing texture with gold-coloured streaks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    },
+    "film": "resin-pour"
+  },
+  {
+    "id": "editorial:1505a5a1-312a-556b-acf7-621797eccaa6",
+    "kind": "page",
+    "route": "/portfolio/a-corner-that-changes-the-visible-pattern",
+    "title": "A corner that changes the visible pattern",
+    "eyebrow": "Material and detail concepts",
+    "description": "Consider an edge study where a pattern is read differently across the top and side.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider an edge study where a pattern is read differently across the top and side. The concept focuses on viewpoint rather than asserting a continuous fabrication method."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Sketch the corner from the approach and from above. Identify which lines should visually relate and which can remain different."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What changes across the corner?",
+          "Which viewpoint matters most?",
+          "What construction detail needs an actual specification?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Material and detail concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P106; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /portfolio. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Material and detail concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/cafeb13e-843f-4311-830f-b4690c7e1cd3",
+      "alt": "Close view of the left corner of a bench with grain-like lines and a blue channel",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:2bb59fff-e277-5519-ac30-8ed9ec45bd7d",
+    "kind": "page",
+    "route": "/portfolio/a-layered-blue-edge-in-close-view",
+    "title": "A layered blue edge in close view",
+    "eyebrow": "Material and detail concepts",
+    "description": "Explore a detail concept using overlapping blue and brown-looking areas to create visual depth.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore a detail concept using overlapping blue and brown-looking areas to create visual depth. The study distinguishes image layering from a claim about actual material layers."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Compare the close view with a simplified whole-object outline. Decide how much of the detail should remain noticeable at ordinary viewing distance."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What should be visible from afar?",
+          "What belongs only in close inspection?",
+          "What material information remains unknown?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Material and detail concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P107; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /portfolio. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Material and detail concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/ac0740bf-ddaa-4d66-87e7-3b38c133e55e",
+      "alt": "Detail of overlapping brown and blue coaster forms",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:90b4497e-d95b-5bf2-a5cf-2ce4039ade71",
+    "kind": "page",
+    "route": "/portfolio/a-clear-area-beside-a-concentrated-floral-form",
+    "title": "A clear area beside a concentrated floral form",
+    "eyebrow": "Material and detail concepts",
+    "description": "Consider a concept about the contrast between an apparently clear area and a concentrated floral silhouette.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a concept about the contrast between an apparently clear area and a concentrated floral silhouette. It does not promise transparency or a preservation result for real materials."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Test the relative area of each in a paper composition. Keep the reference labelled and leave exact colour and clarity for a future specific proposal."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "How much open area is useful?",
+          "Which floral feature leads?",
+          "What suitability and optical questions need review?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Material and detail concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P108; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /portfolio. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Material and detail concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/5ac0e7c8-4810-46b9-b33e-46466dbdf706",
+      "alt": "Clear rectangular floral arrangement with cream and red flowers on beige",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  {
+    "id": "editorial:b193ea74-c8ce-5747-a5ba-e1eac3b08278",
+    "kind": "page",
+    "route": "/portfolio/a-still-image-and-motion-reference-compared",
+    "title": "A still image and motion reference compared",
+    "eyebrow": "Material and detail concepts",
+    "description": "Explore how a still texture and a short material visualization communicate different aspects of a colour idea.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Explore how a still texture and a short material visualization communicate different aspects of a colour idea. This is a media-led concept study, not documentation of making a real piece."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Use the still image to discuss composition and the optional film to discuss perceived movement. State explicitly that neither verifies a manufacturing method or completed outcome."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "What does motion add?",
+          "Can the idea be understood from the still alone?",
+          "Which factual claims must remain unmade?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Material and detail concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P109; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /portfolio. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Material and detail concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/fc349ca1-d76a-4422-8548-db00d8a77fa4",
+      "alt": "Abstract navy flowing texture with gold-coloured streaks",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "16/9",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "3/2",
+        "x": 50,
+        "y": 50
+      }
+    },
+    "film": "resin-pour"
+  },
+  {
+    "id": "editorial:e8efd0e7-562d-53ab-a2be-f1f54183f437",
+    "kind": "page",
+    "route": "/portfolio/a-narrow-colour-path-around-a-turn",
+    "title": "A narrow colour path around a turn",
+    "eyebrow": "Material and detail concepts",
+    "description": "Consider a detail concept where a colour path turns from one plane to another.",
+    "sections": [
+      {
+        "id": "brief",
+        "heading": "The imagined brief",
+        "paragraphs": [
+          "Consider a detail concept where a colour path turns from one plane to another. The intention is to study continuity of attention rather than prescribe a joint or material technique."
+        ]
+      },
+      {
+        "id": "response",
+        "heading": "A proposed design response",
+        "paragraphs": [
+          "Draw the path in two views and mark which parts are proposed. Compare a continuous-looking gesture with one that deliberately stops at the edge."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Questions before this could become a real brief",
+        "paragraphs": [
+          "These are design prompts, not confirmed dimensions, materials, engineering, pricing or delivery arrangements. No customer, site, fabrication or installation is being reported."
+        ],
+        "checklist": [
+          "Where should the path stop?",
+          "What is gained by continuity?",
+          "What construction and finish questions require confirmation?"
+        ]
+      },
+      {
+        "id": "reference",
+        "heading": "How the reference is being used",
+        "paragraphs": [
+          "The supplied image is an illustrative reference for the visual relationship discussed here. It is not a rendering of this specific concept and does not show a completed commission. Similar images may inform other distinct studies; image count is not project count."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Discuss your own requirements",
+        "paragraphs": [
+          "Use the idea as a starting question, then describe your actual purpose, constraints and preferences. Feasibility and the final design would need a separate conversation and recorded agreement."
+        ],
+        "action": {
+          "label": "Begin a piece",
+          "href": "/commission"
+        },
+        "policyHref": "/commission"
+      }
+    ],
+    "discovery": {
+      "journey": "All journeys",
+      "format": "Concept study",
+      "tags": [
+        "Material and detail concepts"
+      ],
+      "context": "Unbuilt concept"
+    },
+    "review": {
+      "author": "Codex (AI), owner-authorized M9 drafting",
+      "source": "M9 P110; authored source in docs/editorial-production/m9; current local source inventory captured 9 October 2026; related guidance /portfolio. No human approval asserted."
+    },
+    "editorial": {
+      "schemaVersion": 1,
+      "kind": "portfolio",
+      "classification": "concept",
+      "details": [
+        {
+          "label": "Status",
+          "value": "Unbuilt educational concept; no customer or completed-project claim."
+        },
+        {
+          "label": "Design focus",
+          "value": "Material and detail concepts"
+        }
+      ]
+    },
+    "headerImage": {
+      "path": "/editorial/80786409-3a54-46bc-9a45-a3ca0784002b",
+      "alt": "Close view of a console corner and blue waterfall-like channel",
+      "caption": "Design visualization — a reference for this discussion, not a completed project or a rendering of the proposed brief.",
+      "desktop": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      },
+      "mobile": {
+        "ratio": "4/5",
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+]

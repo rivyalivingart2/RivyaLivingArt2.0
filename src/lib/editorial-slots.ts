@@ -3,10 +3,14 @@ import type {EditorialUsage} from './homepage-model';
 import {validUsage} from './homepage-model';
 import {sharedCopyId} from './shared-copy-model';
 
-export type EditorialSlot={key:string;sectionId?:string;itemId?:string;label:string;editable:boolean;usage?:EditorialUsage;path?:string;productId?:string;reason?:string};
+export type EditorialSlot={key:string;sectionId?:string;itemId?:string;blockId?:string;galleryIndex?:number;label:string;editable:boolean;usage?:EditorialUsage;path?:string;productId?:string;reason?:string};
 /** Inventory only slots consumed by the current renderer; do not invent inactive placements. */
 export function editorialSlots(document:ContentDocument):EditorialSlot[]{
- if(document.id===sharedCopyId)return [];
+ if(document.id===sharedCopyId||document.editorial?.kind==='testimonial')return [];
+ if(document.landing)return document.landing.blocks.flatMap<EditorialSlot>(block=>[
+  ...(['hero','imageCta'].includes(block.type)?[{key:'landing:'+block.id,blockId:block.id,label:block.heading,editable:true,usage:block.image,path:block.image?.path}]:[]),
+  ...(block.gallery||[]).map((usage,galleryIndex)=>({key:'landing-gallery:'+block.id+':'+galleryIndex,blockId:block.id,galleryIndex,label:block.heading+' · image '+(galleryIndex+1),editable:true,usage,path:usage.path}))
+ ]);
  if(document.homepage)return [
   {key:'hero',label:'Homepage hero',editable:true,usage:document.homepage.heroImage,path:document.homepage.heroImage?.path,productId:document.homepage.heroProductId},
   ...document.homepage.sections.flatMap<EditorialSlot>(section=>{
@@ -18,7 +22,7 @@ export function editorialSlots(document:ContentDocument):EditorialSlot[]{
    return slots;
   })
  ];
- return [{key:'header',label:'Page header',editable:true,usage:document.headerImage,path:document.headerImage?.path||document.image},...document.sections.map(section=>({key:'section:'+section.id,sectionId:section.id,label:section.heading,editable:true,usage:section.image,path:section.image?.path}))];
+ return [{key:'header',label:'Page header',editable:true,usage:document.headerImage,path:document.headerImage?.path||document.image},...(document.editorial?.gallery||[]).map((usage,galleryIndex)=>({key:'portfolio-gallery:'+galleryIndex,galleryIndex,label:'Portfolio gallery · image '+(galleryIndex+1),editable:true,usage,path:usage.path})),...document.sections.map(section=>({key:'section:'+section.id,sectionId:section.id,label:section.heading,editable:true,usage:section.image,path:section.image?.path}))];
 }
 
 /** A cloned page owns its usage. Never update shared media or product records. */
@@ -27,7 +31,9 @@ export function assignEditorialSlot(document:ContentDocument,key:string,usage?:E
  if(!slot?.editable)throw Error('This placement is unavailable. Reload its owning page.');
  if(usage&&!validUsage({...usage,alt:usage.alt===''?'Description needed':usage.alt}))throw Error('Choose an approved public image with a description and valid crops.');
  const next=structuredClone(document);
- if(key==='hero')next.homepage!.heroImage=usage?structuredClone(usage):undefined;
+ if(slot.blockId)next.landing!.blocks=next.landing!.blocks.map(block=>block.id!==slot.blockId?block:slot.galleryIndex!==undefined?{...block,gallery:usage?block.gallery!.map((image,i)=>i===slot.galleryIndex?structuredClone(usage):image):block.gallery!.filter((_,i)=>i!==slot.galleryIndex)}:{...block,image:usage?structuredClone(usage):undefined});
+ else if(key.startsWith('portfolio-gallery:'))next.editorial!.gallery=usage?next.editorial!.gallery!.map((image,i)=>i===slot.galleryIndex?structuredClone(usage):image):next.editorial!.gallery!.filter((_,i)=>i!==slot.galleryIndex);
+ else if(key==='hero')next.homepage!.heroImage=usage?structuredClone(usage):undefined;
  else if(key==='header')next.headerImage=usage?structuredClone(usage):undefined;
  else if(key.startsWith('journey:'))next.homepage!.sections=next.homepage!.sections.map(s=>s.id===slot.sectionId?{...s,items:s.items?.map(i=>i.id===slot.itemId?{...i,image:usage?structuredClone(usage):undefined}:i)}:s);
  else if(key.startsWith('home:'))next.homepage!.sections=next.homepage!.sections.map(s=>s.id===slot.sectionId?{...s,image:usage?structuredClone(usage):undefined}:s);
