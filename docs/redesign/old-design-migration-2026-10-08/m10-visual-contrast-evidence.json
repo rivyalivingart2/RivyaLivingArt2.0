@@ -1,0 +1,3295 @@
+{
+  "date": "2026-10-12",
+  "scope": "Local M10 contrast follow-up and partial visual comparison; not full acceptance or deployment",
+  "branch": "codex/m10-visual-contrast",
+  "candidate": {
+    "base": "b6d290a039864494c572b76c1ac444701f4ca009",
+    "applicationSha256": "a352a269ed90522ab2ebfe86978b807670ddcae55d49ca95ae473084368e9482"
+  },
+  "oldSourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "contrast": {
+    "confirmedViolations": 0,
+    "manualTargets": 104,
+    "applicablePassed": 101,
+    "decorativeExcluded": 3,
+    "minimumRatio": 6.097239268798492,
+    "method": "Computed foreground; conservative composite/opaque gradient background; unrounded WCAG luminance; all text threshold 4.5 and four symbols 3",
+    "routes": [
+      {
+        "route": "/",
+        "confirmedViolations": 0,
+        "manualTargets": 40
+      },
+      {
+        "route": "/our-story",
+        "confirmedViolations": 0,
+        "manualTargets": 4
+      },
+      {
+        "route": "/process",
+        "confirmedViolations": 0,
+        "manualTargets": 5
+      },
+      {
+        "route": "/saved-pieces",
+        "confirmedViolations": 0,
+        "manualTargets": 3
+      },
+      {
+        "route": "/pieces/river-channel",
+        "confirmedViolations": 0,
+        "manualTargets": 3
+      },
+      {
+        "route": "/memory-art",
+        "confirmedViolations": 0,
+        "manualTargets": 8
+      },
+      {
+        "route": "/personal-art",
+        "confirmedViolations": 0,
+        "manualTargets": 7
+      },
+      {
+        "route": "/pieces/river-channel/customize",
+        "confirmedViolations": 0,
+        "manualTargets": 3
+      },
+      {
+        "route": "/commission/customize",
+        "confirmedViolations": 0,
+        "manualTargets": 3
+      },
+      {
+        "route": "/preserve",
+        "confirmedViolations": 0,
+        "manualTargets": 7
+      },
+      {
+        "route": "/personalize",
+        "confirmedViolations": 0,
+        "manualTargets": 7
+      },
+      {
+        "route": "/studio/analytics",
+        "confirmedViolations": 0,
+        "manualTargets": 10
+      },
+      {
+        "route": "/studio/products",
+        "confirmedViolations": 0,
+        "manualTargets": 2
+      },
+      {
+        "route": "/studio/forms",
+        "confirmedViolations": 0,
+        "manualTargets": 2
+      }
+    ],
+    "groups": [
+      {
+        "rule": "hero scrim at text, over white; geometry checked separately",
+        "count": 5,
+        "minimum": 6.097239268798492
+      },
+      {
+        "rule": "caption plate over white",
+        "count": 4,
+        "minimum": 10.19101810795125
+      },
+      {
+        "rule": "componentwise maximum of opaque gradient stops",
+        "count": 6,
+        "minimum": 8.553214437763446
+      },
+      {
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "count": 44,
+        "minimum": 7.458643755652788
+      },
+      {
+        "rule": "category label plate over white",
+        "count": 18,
+        "minimum": 10.706038099615032
+      },
+      {
+        "rule": "brightest radial-gradient stop",
+        "count": 3,
+        "minimum": 6.643963555745592
+      },
+      {
+        "rule": "full-image page minimum scrim over white",
+        "count": 6,
+        "minimum": 6.172459656800676
+      },
+      {
+        "rule": "gallery control plate over white",
+        "count": 1,
+        "minimum": 10.333805494572763
+      },
+      {
+        "rule": "componentwise maximum of opaque analytics gradient",
+        "count": 10,
+        "minimum": 14.555439729324963
+      },
+      {
+        "rule": "pagination badge over workspace; also conservative for transparent next control",
+        "count": 4,
+        "minimum": 14.02730758971161
+      }
+    ],
+    "dispositions": [
+      {
+        "route": "/",
+        "selector": ".shop-module__Vq0a9q__heroCopy > .shop-module__Vq0a9q__eyebrow",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          54.999999999999986,
+          60.59999999999999,
+          63.79999999999998
+        ],
+        "rule": "hero scrim at text, over white; geometry checked separately",
+        "ratio": 6.097239268798492,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "h1",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          54.999999999999986,
+          60.59999999999999,
+          63.79999999999998
+        ],
+        "rule": "hero scrim at text, over white; geometry checked separately",
+        "ratio": 9.818080603250504,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".shop-module__Vq0a9q__heroCopy > p",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          54.999999999999986,
+          60.59999999999999,
+          63.79999999999998
+        ],
+        "rule": "hero scrim at text, over white; geometry checked separately",
+        "ratio": 9.818080603250504,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".shop-module__Vq0a9q__actions > .shop-module__Vq0a9q__textLink[href$=\"process\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          54.999999999999986,
+          60.59999999999999,
+          63.79999999999998
+        ],
+        "rule": "hero scrim at text, over white; geometry checked separately",
+        "ratio": 9.818080603250504,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".shop-module__Vq0a9q__heroAnnotation",
+        "foreground": [
+          221,
+          214,
+          203
+        ],
+        "worstBackground": [
+          54.999999999999986,
+          60.59999999999999,
+          63.79999999999998
+        ],
+        "rule": "hero scrim at text, over white; geometry checked separately",
+        "ratio": 7.680911710025131,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".shop-module__Vq0a9q__heroNote > div > span",
+        "foreground": [
+          221,
+          214,
+          203
+        ],
+        "worstBackground": [
+          35,
+          41.16,
+          44.68
+        ],
+        "rule": "caption plate over white",
+        "ratio": 10.19101810795125,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "div > span > span[lang=\"en\"]",
+        "foreground": [
+          221,
+          214,
+          203
+        ],
+        "worstBackground": [
+          35,
+          41.16,
+          44.68
+        ],
+        "rule": "caption plate over white",
+        "ratio": 10.19101810795125,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".shop-module__Vq0a9q__heroNote > div > p",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          35,
+          41.16,
+          44.68
+        ],
+        "rule": "caption plate over white",
+        "ratio": 13.026609469089111,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".shop-module__Vq0a9q__heroNote > a[href$=\"river-channel\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          35,
+          41.16,
+          44.68
+        ],
+        "rule": "caption plate over white",
+        "ratio": 13.026609469089111,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".homepage-module__HJ8Faq__figure > figcaption",
+        "foreground": [
+          169,
+          180,
+          188
+        ],
+        "worstBackground": [
+          16,
+          23,
+          29
+        ],
+        "rule": "componentwise maximum of opaque gradient stops",
+        "ratio": 8.553214437763446,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".shop-module__Vq0a9q__editorialCopy > .shop-module__Vq0a9q__eyebrow",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          16,
+          23,
+          29
+        ],
+        "rule": "componentwise maximum of opaque gradient stops",
+        "ratio": 9.940653277487359,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "#material-heading",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          16,
+          23,
+          29
+        ],
+        "rule": "componentwise maximum of opaque gradient stops",
+        "ratio": 16.006938685640534,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".shop-module__Vq0a9q__editorialCopy > p:nth-child(3)",
+        "foreground": [
+          169,
+          180,
+          188
+        ],
+        "worstBackground": [
+          16,
+          23,
+          29
+        ],
+        "rule": "componentwise maximum of opaque gradient stops",
+        "ratio": 8.553214437763446,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "p:nth-child(4)",
+        "foreground": [
+          169,
+          180,
+          188
+        ],
+        "worstBackground": [
+          16,
+          23,
+          29
+        ],
+        "rule": "componentwise maximum of opaque gradient stops",
+        "ratio": 8.553214437763446,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href$=\"materials-care#materials\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          16,
+          23,
+          29
+        ],
+        "rule": "componentwise maximum of opaque gradient stops",
+        "ratio": 16.006938685640534,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "button[aria-controls=\"_R_1aqdbtb_-video\"] > span[aria-hidden=\"true\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Tables\"] > .reference-homepage-module__xVowkG__doorCopy > span",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Tables\"] > .reference-homepage-module__xVowkG__doorCopy > span > span[lang=\"en\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Tables\"] > .reference-homepage-module__xVowkG__doorCopy > strong",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Consoles\"] > .reference-homepage-module__xVowkG__doorCopy > span",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Consoles\"] > .reference-homepage-module__xVowkG__doorCopy > span > span[lang=\"en\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Consoles\"] > .reference-homepage-module__xVowkG__doorCopy > strong",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Seating\"] > .reference-homepage-module__xVowkG__monogram[aria-hidden=\"true\"]",
+        "decision": "decorative monogram; category text remains separate"
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Seating\"] > .reference-homepage-module__xVowkG__doorCopy > span",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Seating\"] > .reference-homepage-module__xVowkG__doorCopy > span > span[lang=\"en\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Seating\"] > .reference-homepage-module__xVowkG__doorCopy > strong",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Spatial%20art\"] > .reference-homepage-module__xVowkG__monogram[aria-hidden=\"true\"]",
+        "decision": "decorative monogram; category text remains separate"
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Spatial%20art\"] > .reference-homepage-module__xVowkG__doorCopy > span",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Spatial%20art\"] > .reference-homepage-module__xVowkG__doorCopy > span > span[lang=\"en\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "a[href=\"/search?category=Spatial%20art\"] > .reference-homepage-module__xVowkG__doorCopy > strong",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".reference-homepage-module__xVowkG__door[data-collection-door=\"true\"]:nth-child(5) > .reference-homepage-module__xVowkG__doorCopy > span",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".reference-homepage-module__xVowkG__door[data-collection-door=\"true\"]:nth-child(5) > .reference-homepage-module__xVowkG__doorCopy > span > span[lang=\"en\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".reference-homepage-module__xVowkG__door[data-collection-door=\"true\"]:nth-child(5) > .reference-homepage-module__xVowkG__doorCopy > strong",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".reference-homepage-module__xVowkG__door[data-collection-door=\"true\"]:nth-child(6) > .reference-homepage-module__xVowkG__monogram[aria-hidden=\"true\"]",
+        "decision": "decorative monogram; category text remains separate"
+      },
+      {
+        "route": "/",
+        "selector": ".reference-homepage-module__xVowkG__door[data-collection-door=\"true\"]:nth-child(6) > .reference-homepage-module__xVowkG__doorCopy > span",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".reference-homepage-module__xVowkG__door[data-collection-door=\"true\"]:nth-child(6) > .reference-homepage-module__xVowkG__doorCopy > span > span[lang=\"en\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": ".reference-homepage-module__xVowkG__door[data-collection-door=\"true\"]:nth-child(6) > .reference-homepage-module__xVowkG__doorCopy > strong",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          52.460000000000015,
+          54.10000000000001,
+          57.38000000000001
+        ],
+        "rule": "category label plate over white",
+        "ratio": 10.706038099615032,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "#invitation > .shop-module__Vq0a9q__eyebrow",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          22,
+          48,
+          46
+        ],
+        "rule": "brightest radial-gradient stop",
+        "ratio": 7.72169791562001,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "#invitation-heading",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          22,
+          48,
+          46
+        ],
+        "rule": "brightest radial-gradient stop",
+        "ratio": 12.433865424547797,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "selector": "#invitation > p",
+        "foreground": [
+          169,
+          180,
+          188
+        ],
+        "worstBackground": [
+          22,
+          48,
+          46
+        ],
+        "rule": "brightest radial-gradient stop",
+        "ratio": 6.643963555745592,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/our-story",
+        "selector": ".shop-module__Vq0a9q__eyebrow",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          57.399999999999984,
+          58.999999999999986,
+          62.19999999999999
+        ],
+        "rule": "full-image page minimum scrim over white",
+        "ratio": 6.172459656800676,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/our-story",
+        "selector": "h1",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          57.399999999999984,
+          58.999999999999986,
+          62.19999999999999
+        ],
+        "rule": "full-image page minimum scrim over white",
+        "ratio": 9.939204246239628,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/our-story",
+        "selector": ".shop-module__Vq0a9q__pageIntro > p",
+        "foreground": [
+          189,
+          198,
+          205
+        ],
+        "worstBackground": [
+          57.399999999999984,
+          58.999999999999986,
+          62.19999999999999
+        ],
+        "rule": "full-image page minimum scrim over white",
+        "ratio": 6.476219353466878,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/our-story",
+        "selector": "figcaption > span[lang=\"en\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/process",
+        "selector": ".shop-module__Vq0a9q__eyebrow",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          57.399999999999984,
+          58.999999999999986,
+          62.19999999999999
+        ],
+        "rule": "full-image page minimum scrim over white",
+        "ratio": 6.172459656800676,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/process",
+        "selector": "h1",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          57.399999999999984,
+          58.999999999999986,
+          62.19999999999999
+        ],
+        "rule": "full-image page minimum scrim over white",
+        "ratio": 9.939204246239628,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/process",
+        "selector": ".shop-module__Vq0a9q__pageIntro > p",
+        "foreground": [
+          189,
+          198,
+          205
+        ],
+        "worstBackground": [
+          57.399999999999984,
+          58.999999999999986,
+          62.19999999999999
+        ],
+        "rule": "full-image page minimum scrim over white",
+        "ratio": 6.476219353466878,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/process",
+        "selector": "figcaption > span[lang=\"en\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/process",
+        "selector": "button[aria-controls=\"_R_2jmlubtb_-video\"] > span[aria-hidden=\"true\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "route": "/saved-pieces",
+        "selector": ".shop-module__Vq0a9q__eyebrow",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 10.899471413248394,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/saved-pieces",
+        "selector": "h1",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/saved-pieces",
+        "selector": ".shop-module__Vq0a9q__pageIntro > p",
+        "foreground": [
+          189,
+          198,
+          205
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 11.435857281183957,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/pieces/river-channel",
+        "selector": ".shop-module__Vq0a9q__zoomButton",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          51.85000000000001,
+          57.80000000000001,
+          54.400000000000006
+        ],
+        "rule": "gallery control plate over white",
+        "ratio": 10.333805494572763,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/pieces/river-channel",
+        "selector": "button[aria-label=\"Previous image\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "route": "/pieces/river-channel",
+        "selector": "button[aria-label=\"Next image\"]",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "route": "/memory-art",
+        "selector": "#prepare-heading",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/memory-art",
+        "selector": "#prepare > div > p:nth-child(2)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/memory-art",
+        "selector": "#prepare > div > p:nth-child(3)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/memory-art",
+        "selector": "div > ul > li:nth-child(1)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/memory-art",
+        "selector": "div > ul > li:nth-child(2)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/memory-art",
+        "selector": "div > ul > li:nth-child(3)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/memory-art",
+        "selector": "div > ul > li:nth-child(4)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/memory-art",
+        "selector": "p:nth-child(5) > a[href$=\"process\"]",
+        "foreground": [
+          184,
+          155,
+          99
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 7.458643755652788,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personal-art",
+        "selector": "#personalize-heading",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personal-art",
+        "selector": "#personalize > div > p:nth-child(2)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personal-art",
+        "selector": "#personalize > div > p:nth-child(3)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personal-art",
+        "selector": "div > ul > li:nth-child(1)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personal-art",
+        "selector": "div > ul > li:nth-child(2)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personal-art",
+        "selector": "div > ul > li:nth-child(3)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personal-art",
+        "selector": "div > ul > li:nth-child(4)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/pieces/river-channel/customize",
+        "selector": ".shop-module__Vq0a9q__eyebrow",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 10.899471413248394,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/pieces/river-channel/customize",
+        "selector": "h1",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/pieces/river-channel/customize",
+        "selector": "span[lang=\"en\"]",
+        "foreground": [
+          189,
+          198,
+          205
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 11.435857281183957,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/commission/customize",
+        "selector": ".shop-module__Vq0a9q__eyebrow",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 10.899471413248394,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/commission/customize",
+        "selector": "h1",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/commission/customize",
+        "selector": ".shop-module__Vq0a9q__pageIntro > p",
+        "foreground": [
+          189,
+          198,
+          205
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 11.435857281183957,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/preserve",
+        "selector": ".shop-module__Vq0a9q__pageIntro > .shop-module__Vq0a9q__eyebrow",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 10.899471413248394,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/preserve",
+        "selector": "h1",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/preserve",
+        "selector": ".shop-module__Vq0a9q__pageIntro > p",
+        "foreground": [
+          189,
+          198,
+          205
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 11.435857281183957,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/preserve",
+        "selector": ".shop-module__Vq0a9q__invitation > .shop-module__Vq0a9q__eyebrow",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 10.899471413248394,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/preserve",
+        "selector": ".shop-module__Vq0a9q__invitation > h2",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/preserve",
+        "selector": "em",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 10.899471413248394,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/preserve",
+        "selector": ".shop-module__Vq0a9q__invitation > p",
+        "foreground": [
+          169,
+          180,
+          188
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 9.378208217654505,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personalize",
+        "selector": ".shop-module__Vq0a9q__pageIntro > .shop-module__Vq0a9q__eyebrow",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 10.899471413248394,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personalize",
+        "selector": "h1",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personalize",
+        "selector": ".shop-module__Vq0a9q__pageIntro > p",
+        "foreground": [
+          189,
+          198,
+          205
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 11.435857281183957,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personalize",
+        "selector": ".shop-module__Vq0a9q__invitation > .shop-module__Vq0a9q__eyebrow",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 10.899471413248394,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personalize",
+        "selector": ".shop-module__Vq0a9q__invitation > h2",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 17.55087575711703,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personalize",
+        "selector": "em",
+        "foreground": [
+          216,
+          189,
+          136
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 10.899471413248394,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/personalize",
+        "selector": ".shop-module__Vq0a9q__invitation > p",
+        "foreground": [
+          169,
+          180,
+          188
+        ],
+        "worstBackground": [
+          8,
+          10,
+          14
+        ],
+        "rule": "opaque midnight backing; transparent gradients have no effect",
+        "ratio": 9.378208217654505,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/analytics",
+        "selector": "div > .workspace-module__qCfTQa__metrics > a:nth-child(1)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          17,
+          32,
+          51
+        ],
+        "rule": "componentwise maximum of opaque analytics gradient",
+        "ratio": 14.555439729324963,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/analytics",
+        "selector": "div > .workspace-module__qCfTQa__metrics > a:nth-child(1) > strong",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          17,
+          32,
+          51
+        ],
+        "rule": "componentwise maximum of opaque analytics gradient",
+        "ratio": 14.555439729324963,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/analytics",
+        "selector": "div > .workspace-module__qCfTQa__metrics > a:nth-child(2)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          17,
+          32,
+          51
+        ],
+        "rule": "componentwise maximum of opaque analytics gradient",
+        "ratio": 14.555439729324963,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/analytics",
+        "selector": "div > .workspace-module__qCfTQa__metrics > a:nth-child(2) > strong",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          17,
+          32,
+          51
+        ],
+        "rule": "componentwise maximum of opaque analytics gradient",
+        "ratio": 14.555439729324963,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/analytics",
+        "selector": ".workspace-module__qCfTQa__metrics > a:nth-child(3)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          17,
+          32,
+          51
+        ],
+        "rule": "componentwise maximum of opaque analytics gradient",
+        "ratio": 14.555439729324963,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/analytics",
+        "selector": "a:nth-child(3) > strong",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          17,
+          32,
+          51
+        ],
+        "rule": "componentwise maximum of opaque analytics gradient",
+        "ratio": 14.555439729324963,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/analytics",
+        "selector": "section:nth-child(5) > .workspace-module__qCfTQa__metrics > a:nth-child(1)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          17,
+          32,
+          51
+        ],
+        "rule": "componentwise maximum of opaque analytics gradient",
+        "ratio": 14.555439729324963,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/analytics",
+        "selector": "section:nth-child(5) > .workspace-module__qCfTQa__metrics > a:nth-child(1) > strong",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          17,
+          32,
+          51
+        ],
+        "rule": "componentwise maximum of opaque analytics gradient",
+        "ratio": 14.555439729324963,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/analytics",
+        "selector": "section:nth-child(5) > .workspace-module__qCfTQa__metrics > a:nth-child(2)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          17,
+          32,
+          51
+        ],
+        "rule": "componentwise maximum of opaque analytics gradient",
+        "ratio": 14.555439729324963,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/analytics",
+        "selector": "section:nth-child(5) > .workspace-module__qCfTQa__metrics > a:nth-child(2) > strong",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          17,
+          32,
+          51
+        ],
+        "rule": "componentwise maximum of opaque analytics gradient",
+        "ratio": 14.555439729324963,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/products",
+        "selector": ".workspace-module__qCfTQa__list > div > span",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          32.7,
+          34.5,
+          38.1
+        ],
+        "rule": "pagination badge over workspace; also conservative for transparent next control",
+        "ratio": 14.02730758971161,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/products",
+        "selector": ".workspace-module__qCfTQa__list > div > button[type=\"button\"]:nth-child(3)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          32.7,
+          34.5,
+          38.1
+        ],
+        "rule": "pagination badge over workspace; also conservative for transparent next control",
+        "ratio": 14.02730758971161,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/forms",
+        "selector": ".workspace-module__qCfTQa__list > div > span",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          32.7,
+          34.5,
+          38.1
+        ],
+        "rule": "pagination badge over workspace; also conservative for transparent next control",
+        "ratio": 14.02730758971161,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "route": "/studio/forms",
+        "selector": ".workspace-module__qCfTQa__list > div > button[type=\"button\"]:nth-child(3)",
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "worstBackground": [
+          32.7,
+          34.5,
+          38.1
+        ],
+        "rule": "pagination badge over workspace; also conservative for transparent next control",
+        "ratio": 14.02730758971161,
+        "required": 4.5,
+        "pass": true
+      }
+    ],
+    "geometry": [
+      {
+        "scrollWidth": 305,
+        "targets": [
+          {
+            "right": 0.7868852459016393,
+            "selector": ".shop-module__Vq0a9q__heroCopy > .shop-module__Vq0a9q__eyebrow",
+            "top": 0.34277474508188277
+          },
+          {
+            "right": 0.9111680327868852,
+            "selector": "h1",
+            "top": 0.4161164898547739
+          },
+          {
+            "right": 0.921311475409836,
+            "selector": ".shop-module__Vq0a9q__heroCopy > p",
+            "top": 0.5645071583067257
+          },
+          {
+            "right": 0.46526639344262294,
+            "selector": ".shop-module__Vq0a9q__actions > .shop-module__Vq0a9q__textLink[href$=\"process\"]",
+            "top": 0.8122978679575652
+          },
+          {
+            "right": 0.921311475409836,
+            "selector": ".shop-module__Vq0a9q__heroAnnotation",
+            "top": 0.9072201050571634
+          }
+        ],
+        "width": 320,
+        "contained": true,
+        "mode": "mobile gradient"
+      },
+      {
+        "scrollWidth": 375,
+        "targets": [
+          {
+            "right": 0.64,
+            "selector": ".shop-module__Vq0a9q__heroCopy > .shop-module__Vq0a9q__eyebrow",
+            "top": 0.35320088300220753
+          },
+          {
+            "right": 0.7410833333333333,
+            "selector": "h1",
+            "top": 0.4275900215178723
+          },
+          {
+            "right": 0.936,
+            "selector": ".shop-module__Vq0a9q__heroCopy > p",
+            "top": 0.5816777041942605
+          },
+          {
+            "right": 0.3784166666666667,
+            "selector": ".shop-module__Vq0a9q__actions > .shop-module__Vq0a9q__textLink[href$=\"process\"]",
+            "top": 0.8065885549329258
+          },
+          {
+            "right": 0.832,
+            "selector": ".shop-module__Vq0a9q__heroAnnotation",
+            "top": 0.9043980302258448
+          }
+        ],
+        "width": 390,
+        "contained": true,
+        "mode": "mobile gradient"
+      },
+      {
+        "scrollWidth": 765,
+        "targets": [
+          {
+            "right": 0.3137254901960784,
+            "selector": ".shop-module__Vq0a9q__heroCopy > .shop-module__Vq0a9q__eyebrow",
+            "top": 0.35852796690511074
+          },
+          {
+            "right": 0.5508986928104576,
+            "selector": "h1",
+            "top": 0.4336765259388736
+          },
+          {
+            "right": 0.47998366013071897,
+            "selector": ".shop-module__Vq0a9q__heroCopy > p",
+            "top": 0.6636214772041713
+          },
+          {
+            "right": 0.5444035947712418,
+            "selector": ".shop-module__Vq0a9q__actions > .shop-module__Vq0a9q__textLink[href$=\"process\"]",
+            "top": 0.8033913643023356
+          },
+          {
+            "right": 0.4078431372549019,
+            "selector": ".shop-module__Vq0a9q__heroAnnotation",
+            "top": 0.9029561320348186
+          }
+        ],
+        "width": 780,
+        "contained": true,
+        "mode": "mobile gradient"
+      },
+      {
+        "scrollWidth": 965,
+        "targets": [
+          {
+            "right": 0.3017487046632124,
+            "selector": ".shop-module__Vq0a9q__heroCopy > .shop-module__Vq0a9q__eyebrow",
+            "top": 0.2501339285714286
+          },
+          {
+            "right": 0.4471178756476684,
+            "selector": "h1",
+            "top": 0.3392795235770089
+          },
+          {
+            "right": 0.42213406735751297,
+            "selector": ".shop-module__Vq0a9q__heroCopy > p",
+            "top": 0.5901339285714285
+          },
+          {
+            "right": 0.46577072538860104,
+            "selector": ".shop-module__Vq0a9q__actions > .shop-module__Vq0a9q__textLink[href$=\"process\"]",
+            "top": 0.7534598214285714
+          },
+          {
+            "right": 0.3316062176165803,
+            "selector": ".shop-module__Vq0a9q__heroAnnotation",
+            "top": 0.8651785714285715
+          }
+        ],
+        "width": 980,
+        "contained": true,
+        "mode": "desktop gradient"
+      },
+      {
+        "scrollWidth": 1265,
+        "targets": [
+          {
+            "right": 0.2548913043478261,
+            "selector": ".shop-module__Vq0a9q__heroCopy > .shop-module__Vq0a9q__eyebrow",
+            "top": 0.18455357142857143
+          },
+          {
+            "right": 0.46396986166007903,
+            "selector": "h1",
+            "top": 0.27366202218191965
+          },
+          {
+            "right": 0.3467267786561265,
+            "selector": ".shop-module__Vq0a9q__heroCopy > p",
+            "top": 0.5901339285714285
+          },
+          {
+            "right": 0.38001482213438736,
+            "selector": ".shop-module__Vq0a9q__actions > .shop-module__Vq0a9q__textLink[href$=\"process\"]",
+            "top": 0.7534598214285714
+          },
+          {
+            "right": 0.2776679841897233,
+            "selector": ".shop-module__Vq0a9q__heroAnnotation",
+            "top": 0.8651785714285715
+          }
+        ],
+        "width": 1280,
+        "contained": true,
+        "mode": "desktop gradient"
+      },
+      {
+        "scrollWidth": 1905,
+        "targets": [
+          {
+            "right": 0.182250656167979,
+            "selector": ".shop-module__Vq0a9q__heroCopy > .shop-module__Vq0a9q__eyebrow",
+            "top": 0.165346193592835
+          },
+          {
+            "right": 0.3707267060367454,
+            "selector": "h1",
+            "top": 0.251291767137444
+          },
+          {
+            "right": 0.24323326771653545,
+            "selector": ".shop-module__Vq0a9q__heroCopy > p",
+            "top": 0.6046761970375474
+          },
+          {
+            "right": 0.26533792650918636,
+            "selector": ".shop-module__Vq0a9q__actions > .shop-module__Vq0a9q__textLink[href$=\"process\"]",
+            "top": 0.7622071994488461
+          },
+          {
+            "right": 0.1973753280839895,
+            "selector": ".shop-module__Vq0a9q__heroAnnotation",
+            "top": 0.8699621081639684
+          }
+        ],
+        "width": 1920,
+        "contained": true,
+        "mode": "desktop gradient"
+      }
+    ],
+    "liveForegroundValidation": [
+      {
+        "route": "/",
+        "targets": 40,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/our-story",
+        "targets": 4,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/process",
+        "targets": 5,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/saved-pieces",
+        "targets": 3,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/pieces/river-channel",
+        "targets": 3,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/memory-art",
+        "targets": 8,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/personal-art",
+        "targets": 7,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/pieces/river-channel/customize",
+        "targets": 3,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/commission/customize",
+        "targets": 3,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/preserve",
+        "targets": 7,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/personalize",
+        "targets": 7,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/studio/analytics",
+        "targets": 10,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/studio/products",
+        "targets": 2,
+        "missingOrChanged": 0
+      },
+      {
+        "route": "/studio/forms",
+        "targets": 2,
+        "missingOrChanged": 0
+      }
+    ],
+    "galleryModal": {
+      "confirmedViolations": 0,
+      "incomplete": 0,
+      "escapeCloses": true,
+      "focusRestoredToOpener": true
+    },
+    "limits": [
+      "Named final QA states only; not every future Studio composition",
+      "Split hero and all interaction states not exhaustively repeated",
+      "Native 200/400 percent zoom remains open"
+    ]
+  },
+  "visual": {
+    "status": "partially verified",
+    "studioPairs": [
+      {
+        "oldRoute": "/studio",
+        "destination": "/studio",
+        "label": "Overview — Today",
+        "oldCapture": "old-studio.jpg",
+        "currentCapture": "local-studio.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/inquiries",
+        "destination": "/studio/inquiries",
+        "label": "Commissions — Today",
+        "oldCapture": "old-studio-inquiries.jpg",
+        "currentCapture": "local-studio-inquiries.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/analytics",
+        "destination": "/studio/analytics",
+        "label": "Analytics — Today",
+        "oldCapture": "old-studio-analytics.jpg",
+        "currentCapture": "local-studio-analytics.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/activity",
+        "destination": "/studio/activity",
+        "label": "Activity — Today",
+        "oldCapture": "old-studio-activity.jpg",
+        "currentCapture": "local-studio-activity.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/products",
+        "destination": "/studio/products",
+        "label": "Products — Catalogue",
+        "oldCapture": "old-studio-products.jpg",
+        "currentCapture": "local-studio-products.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/categories",
+        "destination": "/studio/categories",
+        "label": "Categories — Catalogue",
+        "oldCapture": "old-studio-categories.jpg",
+        "currentCapture": "local-studio-categories.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/media",
+        "destination": "/studio/media",
+        "label": "Media Library — Catalogue",
+        "oldCapture": "old-studio-media.jpg",
+        "currentCapture": "local-studio-media.jpg",
+        "status": "reference capture unreliable; comparison remains open"
+      },
+      {
+        "oldRoute": "/studio/import",
+        "destination": "/studio/import",
+        "label": "Bulk Import — Catalogue",
+        "oldCapture": "old-studio-import.jpg",
+        "currentCapture": "local-studio-import.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/exports",
+        "destination": "/studio/exports",
+        "label": "Exports — Catalogue",
+        "oldCapture": "old-studio-exports.jpg",
+        "currentCapture": "local-studio-exports.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/research",
+        "destination": "/studio/research",
+        "label": "Research — Catalogue",
+        "oldCapture": "old-studio-research.jpg",
+        "currentCapture": "local-studio-research.jpg",
+        "status": "reference capture unreliable; comparison remains open"
+      },
+      {
+        "oldRoute": "/studio/content-gaps",
+        "destination": "/studio/content-gaps",
+        "label": "Content Gaps — Catalogue",
+        "oldCapture": "old-studio-content-gaps.jpg",
+        "currentCapture": "local-studio-content-gaps.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/site-copy",
+        "destination": "/studio/site-copy",
+        "label": "Site Copy — Content",
+        "oldCapture": "old-studio-site-copy.jpg",
+        "currentCapture": "local-studio-site-copy.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/site-images",
+        "destination": "/studio/site-images",
+        "label": "Site Images — Content",
+        "oldCapture": "old-studio-site-images.jpg",
+        "currentCapture": "local-studio-site-images.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/sections",
+        "destination": "/studio/sections",
+        "label": "Page Sections — Content",
+        "oldCapture": "old-studio-sections.jpg",
+        "currentCapture": "local-studio-sections.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/process",
+        "destination": "/studio/process",
+        "label": "Process Steps — Content",
+        "oldCapture": "old-studio-process.jpg",
+        "currentCapture": "local-studio-process.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/materials",
+        "destination": "/studio/materials",
+        "label": "Materials — Content",
+        "oldCapture": "old-studio-materials.jpg",
+        "currentCapture": "local-studio-materials.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/navigation",
+        "destination": "/studio/navigation",
+        "label": "Navigation — Content",
+        "oldCapture": "old-studio-navigation.jpg",
+        "currentCapture": "local-studio-navigation.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/forms",
+        "destination": "/studio/forms",
+        "label": "Commission Form — Content",
+        "oldCapture": "old-studio-forms.jpg",
+        "currentCapture": "local-studio-forms.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/blog",
+        "destination": "/studio/journal",
+        "label": "Journal — Editorial",
+        "oldCapture": "old-studio-blog.jpg",
+        "currentCapture": "local-studio-journal.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/portfolio",
+        "destination": "/studio/portfolio",
+        "label": "Portfolio — Editorial",
+        "oldCapture": "old-studio-portfolio.jpg",
+        "currentCapture": "local-studio-portfolio.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/testimonials",
+        "destination": "/studio/testimonials",
+        "label": "Testimonials — Editorial",
+        "oldCapture": "old-studio-testimonials.jpg",
+        "currentCapture": "local-studio-testimonials.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/faqs",
+        "destination": "/studio/faqs",
+        "label": "FAQs — Editorial",
+        "oldCapture": "old-studio-faqs.jpg",
+        "currentCapture": "local-studio-faqs.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/pages",
+        "destination": "/studio/pages",
+        "label": "Pages — Editorial",
+        "oldCapture": "old-studio-pages.jpg",
+        "currentCapture": "local-studio-pages.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/custom-pages",
+        "destination": "/studio/landing-pages",
+        "label": "Landing Pages — Editorial",
+        "oldCapture": "old-studio-custom-pages.jpg",
+        "currentCapture": "local-studio-landing-pages.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/settings",
+        "destination": "/studio/settings",
+        "label": "Site Settings — Settings",
+        "oldCapture": "old-studio-settings.jpg",
+        "currentCapture": "local-studio-settings.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/seo",
+        "destination": "/studio/seo",
+        "label": "SEO — Settings",
+        "oldCapture": "old-studio-seo.jpg",
+        "currentCapture": "local-studio-seo.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/users",
+        "destination": "/studio/staff",
+        "label": "Users — Settings",
+        "oldCapture": "old-studio-users.jpg",
+        "currentCapture": "local-studio-staff.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/subscribers",
+        "destination": "/studio/subscribers",
+        "label": "Subscribers — Settings",
+        "oldCapture": "old-studio-subscribers.jpg",
+        "currentCapture": "local-studio-subscribers.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/content-health",
+        "destination": "/studio/content-health",
+        "label": "Content Health — Settings",
+        "oldCapture": "old-studio-content-health.jpg",
+        "currentCapture": "local-studio-content-health.jpg",
+        "status": "opening compared; sections and child states remain open"
+      },
+      {
+        "oldRoute": "/studio/content-lab",
+        "destination": "/studio/content-lab",
+        "label": "Content Lab — Settings",
+        "oldCapture": "old-studio-content-lab.jpg",
+        "currentCapture": "local-studio-content-lab.jpg",
+        "status": "opening compared; sections and child states remain open"
+      }
+    ],
+    "publicPairs": [
+      {
+        "oldRoute": "/",
+        "destination": "/",
+        "oldCapture": "old-public-home.jpg",
+        "currentCapture": "local-public-home.jpg",
+        "status": "opening compared; full visual parity remains open"
+      },
+      {
+        "oldRoute": "/about",
+        "destination": "/our-story",
+        "oldCapture": "old-public-about.jpg",
+        "currentCapture": "local-public-about.jpg",
+        "status": "opening compared; full visual parity remains open"
+      },
+      {
+        "oldRoute": "/process",
+        "destination": "/process",
+        "oldCapture": "old-public-process.jpg",
+        "currentCapture": "local-public-process.jpg",
+        "status": "opening compared; full visual parity remains open"
+      },
+      {
+        "oldRoute": "/large-resin-art",
+        "destination": "/collectible-design",
+        "oldCapture": "old-public-large-resin-art.jpg",
+        "currentCapture": "local-public-large-resin-art.jpg",
+        "status": "opening compared; full visual parity remains open"
+      },
+      {
+        "oldRoute": "/shop",
+        "destination": "/search",
+        "oldCapture": "old-public-shop.jpg",
+        "currentCapture": "local-public-shop.jpg",
+        "status": "opening compared; full visual parity remains open"
+      },
+      {
+        "oldRoute": "/custom-order",
+        "destination": "/commission",
+        "oldCapture": "old-public-custom-order.jpg",
+        "currentCapture": "local-public-custom-order.jpg",
+        "status": "opening compared; full visual parity remains open"
+      },
+      {
+        "oldRoute": "/contact",
+        "destination": "/contact",
+        "oldCapture": "old-public-contact.jpg",
+        "currentCapture": "local-public-contact.jpg",
+        "status": "opening compared; full visual parity remains open"
+      },
+      {
+        "oldRoute": "/faq",
+        "destination": "/faq",
+        "oldCapture": "old-public-faq.jpg",
+        "currentCapture": "local-public-faq.jpg",
+        "status": "opening compared; full visual parity remains open"
+      },
+      {
+        "oldRoute": "/blog",
+        "destination": "/journal",
+        "oldCapture": "old-public-blog.jpg",
+        "currentCapture": "local-public-blog.jpg",
+        "status": "current opening captured; old comparison unavailable"
+      },
+      {
+        "oldRoute": "/portfolio",
+        "destination": "/portfolio",
+        "oldCapture": "old-public-portfolio.jpg",
+        "currentCapture": "local-public-portfolio.jpg",
+        "status": "current opening captured; old comparison unavailable"
+      },
+      {
+        "oldRoute": "/shop/wishlist",
+        "destination": "/saved-pieces",
+        "oldCapture": "old-public-shop-wishlist.jpg",
+        "currentCapture": "local-public-shop-wishlist.jpg",
+        "status": "current opening captured; old comparison unavailable"
+      },
+      {
+        "oldRoute": "/privacy",
+        "destination": "/privacy",
+        "oldCapture": "old-public-privacy.jpg",
+        "currentCapture": "local-public-privacy.jpg",
+        "status": "current opening captured; old comparison unavailable"
+      },
+      {
+        "oldRoute": "/terms",
+        "destination": "/terms",
+        "oldCapture": "old-public-terms.jpg",
+        "currentCapture": "local-public-terms.jpg",
+        "status": "current opening captured; old comparison unavailable"
+      },
+      {
+        "oldRoute": "/workshops",
+        "destination": "/workshops",
+        "oldCapture": "old-public-workshops.jpg",
+        "currentCapture": "local-public-workshops.jpg",
+        "status": "current opening captured; old comparison unavailable"
+      },
+      {
+        "oldRoute": "/whatsapp-order",
+        "destination": "/inquiry/received",
+        "oldCapture": "old-public-whatsapp-order.jpg",
+        "currentCapture": "local-public-whatsapp-order.jpg",
+        "status": "current opening captured; old comparison unavailable"
+      }
+    ],
+    "homepageChapters": [
+      {
+        "key": "old-chapter-manifesto",
+        "heading": "Objects made slowly.Memories made permanent.",
+        "index": 1,
+        "scope": "bounded chapter opening; not every scroll frame"
+      },
+      {
+        "key": "local-chapter-manifesto",
+        "heading": "Designed around your briefFurniture · Memory art · Personal gifts",
+        "index": 1,
+        "scope": "bounded chapter opening; not every scroll frame"
+      },
+      {
+        "key": "old-chapter-featured",
+        "heading": "Featured pieces",
+        "index": 2,
+        "scope": "bounded chapter opening; not every scroll frame"
+      },
+      {
+        "key": "local-chapter-featured",
+        "heading": "Objects that hold a room.",
+        "index": 2,
+        "scope": "bounded chapter opening; not every scroll frame"
+      },
+      {
+        "key": "old-chapter-large-format",
+        "heading": "Made at scale, too",
+        "index": 3,
+        "scope": "bounded chapter opening; not every scroll frame"
+      },
+      {
+        "key": "local-chapter-large-format",
+        "heading": "A material partner for your vision.",
+        "index": 3,
+        "scope": "bounded chapter opening; not every scroll frame"
+      },
+      {
+        "key": "old-chapter-material",
+        "heading": "From liquid to light",
+        "index": 4,
+        "scope": "bounded chapter opening; not every scroll frame"
+      },
+      {
+        "key": "local-chapter-material",
+        "heading": "The beauty is in the dialogue.",
+        "index": 4,
+        "scope": "bounded chapter opening; not every scroll frame"
+      },
+      {
+        "key": "old-chapter-collections",
+        "heading": "The collections",
+        "index": 7,
+        "scope": "bounded chapter opening; not every scroll frame"
+      },
+      {
+        "key": "local-chapter-collections",
+        "heading": "Find your language.",
+        "index": 5,
+        "scope": "bounded chapter opening; not every scroll frame"
+      }
+    ],
+    "referenceBlocker": "Old Journal navigation timed out; further navigation unavailable. Cached old homepage supported chapter captures.",
+    "unreliableReferenceCaptures": [
+      "old-studio-media.jpg",
+      "old-studio-research.jpg"
+    ],
+    "differences": [
+      "Workspace heading font and scale",
+      "Larger revision-aware editors and controls",
+      "Homepage band colours, spacing and card arrangements",
+      "Large-format image rail versus material-partner brief",
+      "Scroll-driven material stage versus split image/text",
+      "Centered current closing invitation"
+    ],
+    "remaining": [
+      "Seven public pairs without an old capture",
+      "Two unreliable old Studio captures",
+      "Remaining sections, mobile/long-locale comparisons and child/create/edit/print/error states",
+      "Image crop acceptance where old image was blurred/unavailable"
+    ]
+  },
+  "verification": {
+    "build": "pass including TypeScript; command output retained in conversation, no separate log",
+    "unit": {
+      "passed": 344,
+      "failed": 0,
+      "log": "m10-visual-unit.log"
+    },
+    "runtime": {
+      "passed": 403,
+      "failed": 0,
+      "log": "m10-visual-runtime.log"
+    },
+    "lint": {
+      "errors": 0,
+      "warnings": 62,
+      "log": "m10-visual-lint.log"
+    },
+    "protectedScopes": [
+      {
+        "scope": "rivya_catalogue",
+        "before": 120,
+        "after": 120,
+        "unchanged": true
+      },
+      {
+        "scope": "rivya_content",
+        "before": 601,
+        "after": 601,
+        "unchanged": true
+      },
+      {
+        "scope": "rivya_public_media",
+        "before": 152,
+        "after": 152,
+        "unchanged": true
+      },
+      {
+        "scope": "rivya_business_settings",
+        "before": 1,
+        "after": 1,
+        "unchanged": true
+      },
+      {
+        "scope": "rivya_revisions",
+        "before": 732,
+        "after": 732,
+        "unchanged": true
+      },
+      {
+        "scope": "rivya_inquiries",
+        "before": 2,
+        "after": 2,
+        "unchanged": true
+      },
+      {
+        "scope": "rivya_studio_orders",
+        "before": 7,
+        "after": 7,
+        "unchanged": true
+      },
+      {
+        "scope": "rivya_studio_order_events",
+        "before": 8,
+        "after": 8,
+        "unchanged": true
+      },
+      {
+        "scope": "rivya_inquiry_notes",
+        "before": 0,
+        "after": 0,
+        "unchanged": true
+      },
+      {
+        "scope": "rivya_references",
+        "before": 0,
+        "after": 0,
+        "unchanged": true
+      },
+      {
+        "scope": "rivya_staff",
+        "before": 8,
+        "after": 8,
+        "unchanged": true
+      },
+      {
+        "scope": "rivya_privacy_controls",
+        "before": 7,
+        "after": 7,
+        "unchanged": true
+      },
+      {
+        "scope": "rivya_erasure_ledger",
+        "before": 0,
+        "after": 0,
+        "unchanged": true
+      }
+    ],
+    "sqlAndLifecycle": "Prior loading-candidate evidence only; not rerun for CSS-only follow-up"
+  },
+  "release": {
+    "pushed": false,
+    "pullRequestCreated": false,
+    "deployed": false,
+    "productionMutated": false
+  },
+  "humanGates": {
+    "nativeZoom": "not run",
+    "screenReader": "not run",
+    "physicalPhone": "not run",
+    "independentNativeReader": "not run",
+    "fieldPerformance": "not verified"
+  },
+  "localArtifacts": {
+    "directory": "test-results/old-design-migration/m10-visual/",
+    "screenshots": [
+      {
+        "file": "home-before.jpg",
+        "sha256": "f7ea8bbf3fa8f9baced2c7b6256b745279b0d519ad9606cf4b9ada9587d5d74f"
+      },
+      {
+        "file": "home-chapters-1.png",
+        "sha256": "31044e7ffd265f7e6b950f469bdb031793a5f3511e3898195167dd133c3106cc"
+      },
+      {
+        "file": "home-chapters-2.png",
+        "sha256": "778ba70c08cd01b4321ddfc59cc57f7e55f42d5fac242f4c24beb58020484450"
+      },
+      {
+        "file": "home-final-1280.png",
+        "sha256": "9e25bd31dc7c2e72fc0a720ad462910265ddda1803233e82a5896bce4428fc06"
+      },
+      {
+        "file": "home-final-390.png",
+        "sha256": "7507cac3a5adb2f354d961b6baf08f6b40db7c8ec09c8b17dc3f195a02c55343"
+      },
+      {
+        "file": "local-chapter-bespoke.jpg",
+        "sha256": "d257712da21beaa04209520a1e3f13245b7e8a063b9a93b8f24874268817747d"
+      },
+      {
+        "file": "local-chapter-closing.jpg",
+        "sha256": "d188b6bcffb3677b22911201e8fc2b3154bdbf60958471f2ab119dbf3c56b758"
+      },
+      {
+        "file": "local-chapter-collections.jpg",
+        "sha256": "1296397a841972d26ad766d89760104bc466efa9e88716a8f231b8c052d23f1f"
+      },
+      {
+        "file": "local-chapter-featured.jpg",
+        "sha256": "11269062f11337d510d6bd6ec09ca8a35bf7ef96d4a05b77a650a949a21d0303"
+      },
+      {
+        "file": "local-chapter-large-format.jpg",
+        "sha256": "d047bdd8990d7805a74176777731154d0df7204219a9bb1e9019a8688a2966d1"
+      },
+      {
+        "file": "local-chapter-maker.jpg",
+        "sha256": "9090aab7f9c84d26456f5268edb9914777380480818ed64d30e79a98cafe8c64"
+      },
+      {
+        "file": "local-chapter-manifesto.jpg",
+        "sha256": "7c05a59d4ebe3684809113cf1aa04aaa195eaebaa54f89bdcdcb8eff2117652a"
+      },
+      {
+        "file": "local-chapter-material.jpg",
+        "sha256": "740ed76154774fe6def664a5f458f58f84b3699c24fd8ed267137151746639d3"
+      },
+      {
+        "file": "local-chapter-process.jpg",
+        "sha256": "64d86fc2dd9483d056671f9d717e6cdb4baafafa11b8327e48ef2f824395946a"
+      },
+      {
+        "file": "local-product-gallery-modal.jpg",
+        "sha256": "20c713bf215f5b8d7c927f4fc5801648e0aa1f575af1533689be4e9e65028e3d"
+      },
+      {
+        "file": "local-public-about.jpg",
+        "sha256": "7d54f7ca38ff0f5e742b2d13b0316edb9b2ab9ce6cb2e2a1718cbad2f26aebd3"
+      },
+      {
+        "file": "local-public-blog.jpg",
+        "sha256": "11799bf648bcd5407069473f4d8b09c5b0d4e2f2dc4a2d30d38e69594c2bcf90"
+      },
+      {
+        "file": "local-public-contact.jpg",
+        "sha256": "3a2e608998f3189b4ae80f3989c786c141fbb381ba8b3350d13d6eb61a14f830"
+      },
+      {
+        "file": "local-public-custom-order.jpg",
+        "sha256": "3f89a0c13f2e14f12888b12109086496f1ba6ecfea43e9930b5ae076cb2bfb7a"
+      },
+      {
+        "file": "local-public-faq.jpg",
+        "sha256": "eea4e8c77b18b01639e12a202291459667ddf44e2ca8a261922b8078424ef68e"
+      },
+      {
+        "file": "local-public-home.jpg",
+        "sha256": "f6b37608ca019d103210bc5d87438a41ef0f6e1905145dd18ca595fc6cdfed99"
+      },
+      {
+        "file": "local-public-large-resin-art.jpg",
+        "sha256": "596d326b1adb01ce2184424727d63c1cc6614ebfec9ef669feaf5994e9887e64"
+      },
+      {
+        "file": "local-public-portfolio.jpg",
+        "sha256": "6214270bb886bb4292be68399c7ff69b4d9d4603748a823b65007aac3ff7bf12"
+      },
+      {
+        "file": "local-public-privacy.jpg",
+        "sha256": "5692128a54062d85400584eca516f92614a4800f6f98468990ea277c2ae58458"
+      },
+      {
+        "file": "local-public-process.jpg",
+        "sha256": "1af26a835c7c4d5cb30099d87020bc00b0543a7d4eeb779a0fb13f99cf396b9d"
+      },
+      {
+        "file": "local-public-shop-wishlist.jpg",
+        "sha256": "1e3b1360313139651608ab53ef8456f462f3031e03d561d2a6cfa82b9e27317a"
+      },
+      {
+        "file": "local-public-shop.jpg",
+        "sha256": "a99ceca25c150457d6557e9b2f79fedef89b84506c868cccb50412a888de96c9"
+      },
+      {
+        "file": "local-public-terms.jpg",
+        "sha256": "7c3ba83303309296c0323d0116c5ed27f451f2dca0d85f5e04b749fc4373b3c4"
+      },
+      {
+        "file": "local-public-whatsapp-order.jpg",
+        "sha256": "86badaa5bfa15cf7ace23684648570c01c0457cb07f32e37121b7cc63e7dc62a"
+      },
+      {
+        "file": "local-public-workshops.jpg",
+        "sha256": "27812773dd192346a44dc8c51fa9c047c218eb8eb98c89fcbfd5e31bd3cb045d"
+      },
+      {
+        "file": "local-studio-activity.jpg",
+        "sha256": "f66b1a706b5fac4741e6120289439dd7bdfe61e9737212c20aec511414118c86"
+      },
+      {
+        "file": "local-studio-analytics.jpg",
+        "sha256": "fd2132da84f4ac06aa066a24eb9e6f9508e82eedd475de3cb585e76923765c97"
+      },
+      {
+        "file": "local-studio-categories.jpg",
+        "sha256": "751686db23375fb13b77e56a64691e3789a64a54ac1aa350f40932bebe05c041"
+      },
+      {
+        "file": "local-studio-content-gaps.jpg",
+        "sha256": "b8bb34f5c74a868e76b26cf9b5df9309ebc7765d12a4a31e34c3c88752177b6c"
+      },
+      {
+        "file": "local-studio-content-health.jpg",
+        "sha256": "36b9c495ccf4b0f86edb6384ca32df89bd4b0f3fd1a09f7036002267a7ca68fc"
+      },
+      {
+        "file": "local-studio-content-lab.jpg",
+        "sha256": "436c9be6c862c892aa9158926ecfd9d43cb181dea540362a45f4641c0fb1fba4"
+      },
+      {
+        "file": "local-studio-exports.jpg",
+        "sha256": "6fef29f59307aeb173d342afbcb184ef2fce06b2f7fe3ccaaa12a01e19c803fe"
+      },
+      {
+        "file": "local-studio-faqs.jpg",
+        "sha256": "5840ebdefcf2bf70353793481599000e2dd3cb1d5350b566ce29a95c6aac6dad"
+      },
+      {
+        "file": "local-studio-forms.jpg",
+        "sha256": "8fafdec5c3d7e8cbb24353952698b4e7322f47839817f273c77f9fca069d8f2e"
+      },
+      {
+        "file": "local-studio-full-before.png",
+        "sha256": "a2500436c72eacb265530e74f15c5804da162c998c097dfbe5ca71bac0a28f0b"
+      },
+      {
+        "file": "local-studio-import.jpg",
+        "sha256": "221907cd862de27449eb9b2e30947157fd8f739ff6572b8fa54d68590e0ecb9b"
+      },
+      {
+        "file": "local-studio-inquiries.jpg",
+        "sha256": "8f169761259c86a81cf4123e57d18ab3f759116f4a53bd68f9c5e07626992b76"
+      },
+      {
+        "file": "local-studio-journal.jpg",
+        "sha256": "50bdbf7f70f2babfa2acdd48360b2c8fed0f5311129e15e26f6460c7051bcc60"
+      },
+      {
+        "file": "local-studio-landing-pages.jpg",
+        "sha256": "cab2eb2fbce6bfdc42d1b5e0ca1a150eaab43922bb9a3a017b9657b42f67c0cd"
+      },
+      {
+        "file": "local-studio-materials.jpg",
+        "sha256": "6d21f94baff3e4c117144aeed747e092873b5472bebdebf0ecedd2b00a2c1e4c"
+      },
+      {
+        "file": "local-studio-media.jpg",
+        "sha256": "3030842d78d599dbfaa4fb2b551c1d5067a7e7a52a9cf44ea2ac1b96d846517e"
+      },
+      {
+        "file": "local-studio-navigation.jpg",
+        "sha256": "ccfc213b3a8c5ba3c238bb9b984c818dfd31c956666dcc0506a6025b723c9590"
+      },
+      {
+        "file": "local-studio-pages.jpg",
+        "sha256": "e01414521776451593ead4c3cb3589c6fe4f2b5a1076948304e46dd888e23937"
+      },
+      {
+        "file": "local-studio-portfolio.jpg",
+        "sha256": "fb31402c46d4692b8889be6ca0ad3c5e546adb5fc3c301dad01277736f54d778"
+      },
+      {
+        "file": "local-studio-process.jpg",
+        "sha256": "366c8ed0243043cbaf2def81e9ea9e5669ba1460e48209d65579c93348cb56b0"
+      },
+      {
+        "file": "local-studio-products.jpg",
+        "sha256": "7325c1c3beadcac4fe6fb6082f688f104bb04b50ee7dc5e0026a49f03f7da4ce"
+      },
+      {
+        "file": "local-studio-research.jpg",
+        "sha256": "39d33d9aa0dd893331400937a3388e4ef003dc924c084c735df64bdb4c7c4a87"
+      },
+      {
+        "file": "local-studio-sections.jpg",
+        "sha256": "72374c923f9ee2ad61b0a014ee7d94962df73669f73f8caa8f6f5c1c51c78b11"
+      },
+      {
+        "file": "local-studio-seo.jpg",
+        "sha256": "ec2154b3f0a414d7626ab5efe89d5d1de15cfd2f515017618fcdd5001c3dfa65"
+      },
+      {
+        "file": "local-studio-settings.jpg",
+        "sha256": "b76e9f3b4a7eb85359d41a9a9e0f3e70ad019c22e3337ed28dadcde426090a40"
+      },
+      {
+        "file": "local-studio-site-copy.jpg",
+        "sha256": "1f8737ebfd67d0a2d1e605f36e4989007dc1c215f09c62a366509c0bcd768a5c"
+      },
+      {
+        "file": "local-studio-site-images.jpg",
+        "sha256": "bc3aecab80716cf51c1982dcb62dd09471df8384cd1441d63dbad54adf90114f"
+      },
+      {
+        "file": "local-studio-staff.jpg",
+        "sha256": "4fc6cac938701f058e69dfa42eb68e68e624b8bbad0bb7542ade055f83fde69e"
+      },
+      {
+        "file": "local-studio-subscribers.jpg",
+        "sha256": "8469db0153c829089bbc3ae124832c1b2cbbb9dcddfa373ee17c12f233718b57"
+      },
+      {
+        "file": "local-studio-testimonials.jpg",
+        "sha256": "9acc7827b168fba37b5a2aa893c965d3c1e8b50ad620ee31ad14ad666cae1c52"
+      },
+      {
+        "file": "local-studio.jpg",
+        "sha256": "2dbd6044891520e505e625b6be04985778fbc36846ed019293c9a80bcf0446c1"
+      },
+      {
+        "file": "old-chapter-bespoke.jpg",
+        "sha256": "162090774b00c459bbd6b6aba1d6a2651418d40dad3f72df9743a96293020205"
+      },
+      {
+        "file": "old-chapter-closing.jpg",
+        "sha256": "5d789d805296c880e1ebc420a0eb076a16a25aaeafd7f1a84340145ff7bf69db"
+      },
+      {
+        "file": "old-chapter-collections.jpg",
+        "sha256": "7d1ea1b106e33145071671b8bedf96acb2d074e2da65238e7cda1d577ad87cb8"
+      },
+      {
+        "file": "old-chapter-featured.jpg",
+        "sha256": "da724f7b4643976671970eee68d8b9ec223c8850c1b5feb597ca348aa25810bc"
+      },
+      {
+        "file": "old-chapter-large-format.jpg",
+        "sha256": "221c9d4da462571f335005bf82d3e3c4c69aff058b2e273f096f3fa30138e94e"
+      },
+      {
+        "file": "old-chapter-maker.jpg",
+        "sha256": "6ca305d377ab29fb9f43d8b768339f1ae5a82c068932293d6405a49742e8eb2d"
+      },
+      {
+        "file": "old-chapter-manifesto.jpg",
+        "sha256": "148b168ad966cf52e9bcda76ff5f8619bed7f7fb5d19adbc75b8fbe89ced6f37"
+      },
+      {
+        "file": "old-chapter-material.jpg",
+        "sha256": "ec5a176de39a52c937b6e6ae05140e64c0dff50978cd6c0b14e55e4ff399ca60"
+      },
+      {
+        "file": "old-chapter-process.jpg",
+        "sha256": "38c1fef300a831eb32dc8d5c7aa28f499baf4bdf440c6c88a88777f13bfc2609"
+      },
+      {
+        "file": "old-public-about.jpg",
+        "sha256": "d35cfff5061692b7904c5b3d77aee94ee02fd010da5af194935ff1f17215b114"
+      },
+      {
+        "file": "old-public-contact.jpg",
+        "sha256": "1d88a26cce9a073f96ef30cb55f8a019d7817204a58714d5b2b0e7869d2ed3da"
+      },
+      {
+        "file": "old-public-custom-order.jpg",
+        "sha256": "3805ec61338dcfca6f145116088753386c6e95a3f2f9300b38adce48e7907631"
+      },
+      {
+        "file": "old-public-faq.jpg",
+        "sha256": "05759a7b9b23f726641fac65a38870589f6e4f7c54e64e550b1c1b392db318d2"
+      },
+      {
+        "file": "old-public-home.jpg",
+        "sha256": "1aedbeb5733dbc779773502db7ed75102450e08a293bbdfbe8f24e82f74c3b66"
+      },
+      {
+        "file": "old-public-large-resin-art.jpg",
+        "sha256": "fa57f7efc409dc5db7640c73410489982ace661b6cb9e1f3531a63288018e387"
+      },
+      {
+        "file": "old-public-process.jpg",
+        "sha256": "ca28c727f2df74c30fdfde47a3bb0681ed428642a07af08e5a7beca63cb0f934"
+      },
+      {
+        "file": "old-public-shop.jpg",
+        "sha256": "3b7f1d8c28afdebdff603ef2f83d804eab7a87351113a334f75676fac682b83f"
+      },
+      {
+        "file": "old-studio-activity.jpg",
+        "sha256": "f2779022aa4c8de6c42d9afb6dceaa21c0ac07d170727f94c042ac1d1840ca5e"
+      },
+      {
+        "file": "old-studio-analytics.jpg",
+        "sha256": "5d9e8e6ff7741f3855cee14099daa4dda071e5a0761a27d9a1c64a7b78761fe5"
+      },
+      {
+        "file": "old-studio-blog.jpg",
+        "sha256": "e8d3b13d4a2d0b59f29e8209c6ba2aaeaa86e639f65bdf5d0785fa103f737810"
+      },
+      {
+        "file": "old-studio-categories.jpg",
+        "sha256": "c555e0e2a0cb80673eecc963e27a83ee7e86b6a11631a09222296df559907a32"
+      },
+      {
+        "file": "old-studio-content-gaps.jpg",
+        "sha256": "3bd60ded0f9d79f2c81b9a5effd0a9a4a8cb6b992768b0a223f98b4737c7ad3c"
+      },
+      {
+        "file": "old-studio-content-health.jpg",
+        "sha256": "74284d315c35bce3dd2375635fed7c51c84de455f8f35206aeed2edde00f04af"
+      },
+      {
+        "file": "old-studio-content-lab.jpg",
+        "sha256": "7e82b09e8bd090f94e3f607e76329dadb3f9aa8feaa644ff98f1351cfe5b9b4f"
+      },
+      {
+        "file": "old-studio-custom-pages.jpg",
+        "sha256": "85e47f60539912f3aa09d6bd5a14cb1a5ff85c2200e86adaecbd7ac87e15968b"
+      },
+      {
+        "file": "old-studio-exports.jpg",
+        "sha256": "a5a277cb9a6acf29c643830415fc6e99079d219ee103103d5109620b1e01cb4c"
+      },
+      {
+        "file": "old-studio-faqs.jpg",
+        "sha256": "408025d5a4a7e2220b8d49f8563b46188a8f49ad1b093bfab3a8e774b0d219d3"
+      },
+      {
+        "file": "old-studio-forms.jpg",
+        "sha256": "0091304de186f6669f0a01cbb60f00c2e0581b59dd3282818f9e2471918d0da2"
+      },
+      {
+        "file": "old-studio-import.jpg",
+        "sha256": "e80b27908a2d945b61b5d10331bae2aeeb05838ebc31bb68a9996ad5fdae28e4"
+      },
+      {
+        "file": "old-studio-inquiries.jpg",
+        "sha256": "1afc73c8d832fec19519cb5506a36810739f5bbafd888861566724ddc63ab235"
+      },
+      {
+        "file": "old-studio-materials.jpg",
+        "sha256": "09cdbf8acec02fc689fa36323506da388333c3f7e5eaf4456cc96d37e357a876"
+      },
+      {
+        "file": "old-studio-media.jpg",
+        "sha256": "1efca19b6e2017adb680f8eab5722acb447fffd832b460f8852dbafeff7cea1f"
+      },
+      {
+        "file": "old-studio-navigation.jpg",
+        "sha256": "81407471bc5d23cda56bd533262cc5d9e7967933226595b16d12fbd371e56f5a"
+      },
+      {
+        "file": "old-studio-overview.jpg",
+        "sha256": "7f19973b49e99f21dca7fca965693bf5ab4e959d368233e05217a10561cbaf2a"
+      },
+      {
+        "file": "old-studio-pages.jpg",
+        "sha256": "14ee1638a3e5db4f05c3a106f001211fee48f5d3d0775668c6c10d4f34adf942"
+      },
+      {
+        "file": "old-studio-portfolio.jpg",
+        "sha256": "5ab1e1818926a1480c40b10a099f5bfd8d5c8ef361dee7cf58dfaa8f9828743d"
+      },
+      {
+        "file": "old-studio-process.jpg",
+        "sha256": "11704c06e7f104db8f294bfc3928883e2962c79d8ffffb7150812e193f3c1628"
+      },
+      {
+        "file": "old-studio-products.jpg",
+        "sha256": "d857f958d6b3a08516992ce093e6ec5fc07d032f98b9538d1c3754bb34c30685"
+      },
+      {
+        "file": "old-studio-research.jpg",
+        "sha256": "bb4ca0927e8d1d0c4d9f1ccd8102121b06fa7a1cd3a1f2aa37a6a22e2e885475"
+      },
+      {
+        "file": "old-studio-sections.jpg",
+        "sha256": "9a79e2f1c519e2c6fe116bf022ae4bdefd5647ac0dc082151c9659f269dac267"
+      },
+      {
+        "file": "old-studio-seo.jpg",
+        "sha256": "d7916728d7d33a3cc8a890fa44d038a3a7861d9788b0a83a4c75fb13677050d9"
+      },
+      {
+        "file": "old-studio-settings.jpg",
+        "sha256": "03826cc55826cd4d1bbc26cdf974ae27508760c8cfdd53dec6258acc5dcad81e"
+      },
+      {
+        "file": "old-studio-site-copy.jpg",
+        "sha256": "2a13eb00c4f6cc4c5445595d62e58aea5b55b699b9878e7b9c6e801b4d0897dd"
+      },
+      {
+        "file": "old-studio-site-images.jpg",
+        "sha256": "202132ece6f65a921b752f8361e109c284b1e877221e70b679de0bdfc08e17ff"
+      },
+      {
+        "file": "old-studio-subscribers.jpg",
+        "sha256": "d9427eb3f072544dbdf4f622576ff7a61a377762b96f720b5f7485836d57358f"
+      },
+      {
+        "file": "old-studio-testimonials.jpg",
+        "sha256": "0b99b40ee2d34b01182a9aabc7458a93488890f03ceaf0ca0428b451db9dbbc5"
+      },
+      {
+        "file": "old-studio-users.jpg",
+        "sha256": "cdb3f7ac6d57aaf5aaff8888e7efc998effa8abb47ad70827bf607b468b1f954"
+      },
+      {
+        "file": "old-studio.jpg",
+        "sha256": "a3d8edbbe6ccee775110240539c2953d1c759fbe40c3fe84c0e11b8b9ceb8964"
+      },
+      {
+        "file": "public-compare-1.png",
+        "sha256": "425a2e01fcd1aaff5e544e32e6a6c8a460a391862e36b6445c90b5e6d7dc67f4"
+      },
+      {
+        "file": "public-compare-2.png",
+        "sha256": "b607f8f83ec314afec3cf00a6717a3683c8a232b206446f59a20efd2c46c4691"
+      },
+      {
+        "file": "public-compare-pages-loaded.png",
+        "sha256": "b754f1eab121e3f332f6a800ba2fa33c650bb27e4f654023fa440f0f3a97b456"
+      },
+      {
+        "file": "studio-compare-1.png",
+        "sha256": "fed270a0566280558cd14478a30bffe54dfd73ffa4dcb691476d8c6016205570"
+      },
+      {
+        "file": "studio-compare-2.png",
+        "sha256": "be988c2ec8ab11ef618eff3e6835117b84caf1f18631fac8e797e6014d1c1a8b"
+      },
+      {
+        "file": "studio-compare-3.png",
+        "sha256": "6125c44d9efe8d68630f7d174906378068f973cb7c679902e494f04e50308998"
+      },
+      {
+        "file": "studio-compare-4.png",
+        "sha256": "7d73584f0a17ac86e76af0686c4e9abe04500085e25bff86b550480e6b0364a1"
+      },
+      {
+        "file": "studio-compare-5.png",
+        "sha256": "3230f23536843e297ad8be42ef25460a99af180dd67ed8c5d2491e493967fabe"
+      },
+      {
+        "file": "studio-compare-6.png",
+        "sha256": "39f36d9733b329507b36e84a3628555ce46caaeb676df89dcac99b66675158e1"
+      },
+      {
+        "file": "studio-loaded-replacements-1.png",
+        "sha256": "d1085cdb5b3334148fbbe356e4f3adf8a2b7b5418920fdaf74a066479de145d4"
+      },
+      {
+        "file": "studio-loaded-replacements-2.png",
+        "sha256": "b0441a3f8560c18fe799119daec87ccdb6c1a4443408b0852cc9e026c12f3700"
+      },
+      {
+        "file": "studio-loaded-replacements-3.png",
+        "sha256": "5928906a0cb3491102eeba12ce6e7b6f8a75a4ace707ca6cabbb847ae0c61473"
+      }
+    ],
+    "warning": "Ignored evidence only; authenticated screenshots are not in Git"
+  }
+}

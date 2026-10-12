@@ -22,9 +22,11 @@
       "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
       "evidence": [
         "m10-evidence.json",
-        "M10-REGRESSION-REPORT.md"
+        "M10-REGRESSION-REPORT.md",
+        "m10-visual-contrast-evidence.json"
       ],
-      "excluded": false
+      "excluded": false,
+      "contrastFollowUp": "Named route targets resolved in m10-visual-contrast-evidence.json; native zoom and untested states remain open"
     },
     {
       "id": "W02",
@@ -46,9 +48,11 @@
       "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
       "evidence": [
         "m10-evidence.json",
-        "M10-REGRESSION-REPORT.md"
+        "M10-REGRESSION-REPORT.md",
+        "m10-visual-contrast-evidence.json"
       ],
-      "excluded": false
+      "excluded": false,
+      "contrastFollowUp": "Named route targets resolved in m10-visual-contrast-evidence.json; native zoom and untested states remain open"
     },
     {
       "id": "W03",
@@ -94,9 +98,11 @@
       "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
       "evidence": [
         "m10-evidence.json",
-        "M10-REGRESSION-REPORT.md"
+        "M10-REGRESSION-REPORT.md",
+        "m10-visual-contrast-evidence.json"
       ],
-      "excluded": false
+      "excluded": false,
+      "contrastFollowUp": "Named route targets resolved in m10-visual-contrast-evidence.json; native zoom and untested states remain open"
     },
     {
       "id": "W05",
@@ -118,9 +124,11 @@
       "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
       "evidence": [
         "m10-evidence.json",
-        "M10-REGRESSION-REPORT.md"
+        "M10-REGRESSION-REPORT.md",
+        "m10-visual-contrast-evidence.json"
       ],
-      "excluded": false
+      "excluded": false,
+      "contrastFollowUp": "Named route targets resolved in m10-visual-contrast-evidence.json; native zoom and untested states remain open"
     },
     {
       "id": "W06",
@@ -240,9 +248,11 @@
       "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
       "evidence": [
         "m10-evidence.json",
-        "M10-REGRESSION-REPORT.md"
+        "M10-REGRESSION-REPORT.md",
+        "m10-visual-contrast-evidence.json"
       ],
-      "excluded": false
+      "excluded": false,
+      "contrastFollowUp": "Named route targets resolved in m10-visual-contrast-evidence.json; native zoom and untested states remain open"
     },
     {
       "id": "W11",
@@ -264,9 +274,11 @@
       "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
       "evidence": [
         "m10-evidence.json",
-        "M10-REGRESSION-REPORT.md"
+        "M10-REGRESSION-REPORT.md",
+        "m10-visual-contrast-evidence.json"
       ],
-      "excluded": false
+      "excluded": false,
+      "contrastFollowUp": "Named route targets resolved in m10-visual-contrast-evidence.json; native zoom and untested states remain open"
     },
     {
       "id": "W12",
@@ -312,9 +324,11 @@
       "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
       "evidence": [
         "m10-evidence.json",
-        "M10-REGRESSION-REPORT.md"
+        "M10-REGRESSION-REPORT.md",
+        "m10-visual-contrast-evidence.json"
       ],
-      "excluded": false
+      "excluded": false,
+      "contrastFollowUp": "Named route targets resolved in m10-visual-contrast-evidence.json; native zoom and untested states remain open"
     },
     {
       "id": "W14",
@@ -336,9 +350,11 @@
       "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
       "evidence": [
         "m10-evidence.json",
-        "M10-REGRESSION-REPORT.md"
+        "M10-REGRESSION-REPORT.md",
+        "m10-visual-contrast-evidence.json"
       ],
-      "excluded": false
+      "excluded": false,
+      "contrastFollowUp": "Named route targets resolved in m10-visual-contrast-evidence.json; native zoom and untested states remain open"
     },
     {
       "id": "W15",
@@ -1491,5 +1507,10 @@
     "date": "2026-10-12",
     "file": "m10-loading-evidence.json",
     "scope": "Eight local homepage/collection scans in three languages at mobile size plus two English desktop cases; zero confirmed violations, overlay/video manual items retained. Twelve exact typography metric comparisons, font coverage/outline verification, local timing comparison and fresh publication/preservation contracts. Family statuses, full visual parity and all human/native/device/field gates remain unchanged."
+  },
+  "visualContrastFollowUpEvidence": {
+    "date": "2026-10-12",
+    "file": "m10-visual-contrast-evidence.json",
+    "scope": "104 manual contrast targets disposed: 101 pass, 3 decorative. Thirty Studio opening pairs (two reference captures unreliable), eight public pairs and nine homepage chapter openings reviewed. Full section/child/mobile visual parity remains open."
   }
 }

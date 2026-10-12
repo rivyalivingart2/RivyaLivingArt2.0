@@ -1,3 +1,17 @@
+# Current checkpoint — M10 contrast resolved for tested states; visual comparison partial
+
+12 October 2026: continue on local branch `codex/m10-visual-contrast`, based on loading commit `b6d290a039864494c572b76c1ac444701f4ca009`. Read `M10-VISUAL-CONTRAST.md`, `m10-visual-contrast-evidence.json` and `M10-CONTINUATION.md` in the migration directory first. Application fingerprint: `a352a269ed90522ab2ebfe86978b807670ddcae55d49ca95ae473084368e9482`. Three CSS modules now provide robust image-hero overlays and caption/category-label backings. The earlier loading improvements remain included.
+
+All 104 recorded manual colour-contrast targets have explicit dispositions: 101 pass, three decorative exclusions; minimum 6.0972:1. Fourteen route scans and the gallery modal have no confirmed contrast violations. Six viewport geometry checks and 104 live foreground checks support the bounds. Fresh build/typecheck, 344 unit and 403 built-server checks pass; lint has zero errors/62 warnings. Exact original ID/digest maps and counts match in all 13 local protected scopes.
+
+Visual comparison remains partial: 30 Studio opening pairs inspected, with two old captures rejected as unreliable; eight public opening pairs and nine homepage chapter openings compared. Seven public pairs still need old-reference captures, after reference navigation timed out. Continue the remaining section/scroll/mobile and child/create/edit/print/error work. Actual native zoom, screen-reader/physical-phone, independent native-reader, factual/media-rights and hosted/field performance evidence remain open. Do not call this full-plan acceptance.
+
+No push, PR, deployment or production mutation occurred. Preserve both local loading and contrast work for an applicable release instruction. All 480 entries and homepage revision 4 were already published in the prior PR48/49 release; never replay those workflows. Scrapers, old-product transfers and backups remain excluded.
+
+QA server and isolated PostgreSQL are stopped at handoff, data retained; temporary emulations reset. No scheduled continuation is running. Historical checkpoints below retain their original candidate scope.
+
+---
+
 # Current checkpoint — M11 released, M10 acceptance partially verified
 
 12 October 2026: PR48 is merged at 0f1b1457f1bf870a3742d206a43f04fa781bdf02; exact Vercel production dpl_G1muuWBRGoo8DLBQG3sHxM94uzKt is READY on www.rivyalivingart.com. The real Studio administrator saved design draft 3, reviewed desktop/mobile previews and published revision 4, selecting three labelled Portfolio concepts and three labelled fictional Testimonial samples. Images and the described silent material film are live. All 480 M9 entries remain published; do not replay import or publication.

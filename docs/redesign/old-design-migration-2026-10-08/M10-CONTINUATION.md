@@ -1,5 +1,15 @@
 # M10 continuation — 12 October 2026
 
+## Latest visual and contrast follow-up
+
+The owner's request to complete visual comparison and remaining contrast work produced local branch `codex/m10-visual-contrast`, based on loading commit `b6d290a039864494c572b76c1ac444701f4ca009`. Read `M10-VISUAL-CONTRAST.md` and `m10-visual-contrast-evidence.json` first. Application fingerprint: `a352a269ed90522ab2ebfe86978b807670ddcae55d49ca95ae473084368e9482`. Only three CSS modules change application behavior: stronger image-hero overlays and caption/category-label backings. The preceding local loading work remains included.
+
+All 104 recorded manual contrast targets on 14 routes have explicit dispositions: 101 pass, three decorative monograms excluded; minimum 6.0972:1 under conservative bright-image bounds. Six viewport geometry checks and 104 fresh foreground checks support the calculation. The gallery dialog has zero confirmed/incomplete contrast issues and returns focus on Escape. Final build/typecheck, 344 unit and 403 built-server checks pass; lint has zero errors and 62 warnings. Every original ID/digest and count is unchanged in all 13 local protected scopes.
+
+Visual acceptance remains **partial**. Thirty Studio opening pairs were inspected, with old Media Library/Research captures rejected as unreliable; eight public opening pairs and nine homepage chapter openings were compared. Completed local views replaced initial loading captures. Seven additional public pairs still need an old reference, after Journal navigation timed out; the already-loaded old homepage remained available for chapter inspection. Spacing, band colours, cards and Studio heading differences are recorded, not silently accepted. Continue section/scroll/mobile and child/create/edit/print/error comparisons from the detailed report. Native zoom, real screen-reader/phone, native-reader, factual/media-rights and hosted/field evidence remain open.
+
+No push, PR, deployment or production mutation occurred. QA server/PostgreSQL are stopped with data retained; emulations are reset. Do not replay any of the 480 entries or homepage revision 4 activation. The following loading and released checkpoints retain their original scope.
+
 ## Latest local follow-up
 
 The owner requested the next step after the completed PR48/49 release. The remaining loading work is now implemented locally on `codex/m10-loading-performance`, based on main `26b1e4b18c6ca8e5d9f10804072c1d50512fcae8`. Read `M10-LOADING-PERFORMANCE.md` and `m10-loading-evidence.json` first. Current application fingerprint: `66964b6ef89ac9475a5a59f2142d0ff25ec8acd6736136059cc73918b371f1cd`. Earlier fingerprints below identify the released application, not this follow-up.
@@ -26,7 +36,7 @@ The owner authorized M10 and M11. PR48 released the tested application and Studi
 ## Remaining M10 acceptance
 
 1. Complete section-by-section visual comparison for all materially distinct templates and child/create/edit/print/error states. Four opening comparisons and a responsive DOM matrix do not prove full old/new parity. Use the matrix's evidence columns rather than marking all 85 templates/74 sections accepted.
-2. Resolve the remaining image/overlay contrast manual-review items. Silent-video alternatives and empty table semantics were repaired and checked in the released candidate. Record actual native 200%/400% browser zoom behavior; the IAB Ctrl+plus attempt did not change scale, and viewport emulation is not that test.
+2. The 104 recorded image/overlay/gradient manual contrast targets are now resolved for the named local states in `M10-VISUAL-CONTRAST.md`. Newly encountered variants or interaction states still need their own evidence. Record actual native 200%/400% browser zoom behavior; the IAB Ctrl+plus attempt did not change scale, and viewport emulation is not that test. Silent-video alternatives and empty table semantics were repaired in the released candidate.
 3. Obtain real screen-reader and physical-phone task evidence. No available native/physical device was controlled in this session. The owner's request to complete checks independently does not turn emulation into a physical-phone or human test.
 4. Obtain independent Hindi/Gujarati native-reader review and any outstanding factual/media-rights review. Keep all original unreviewed translation drafts unpublished. Concepts/fictional samples remain correctly disclosed, never customer evidence.
 5. Hosted mobile LCP remains above target after the exact released candidate was retested: homepage 7.056s/11.488s and collection 6.628s/4.064s, all CLS 0. Preserve all samples, including the slow repeat. Investigate server/transport and font/media budgets; the local-to-production read-only query profile is not a Vercel server trace. Preserve publication freshness and optimistic concurrency. Field p75 and consent-safe real inquiry observations remain separate. See M11-RELEASE.md for method and limits.
