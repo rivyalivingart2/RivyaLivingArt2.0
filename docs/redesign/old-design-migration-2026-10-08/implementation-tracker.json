@@ -1342,10 +1342,13 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "PR48/49 production release and homepage revision 4 remain complete for their recorded scope. New local M10 font/read optimization is verified in m10-loading-evidence.json; hosted/full visual/human/native/device/field acceptance remains open. No new release or production writes.",
-  "nextPhaseAuthorization": "Owner requested the next step on 12 October 2026; continue remaining M10 work locally. Earlier M11 release authorization was exercised for PR48/49; no new release in this checkpoint.",
+  "note": "PR50 released the M10 loading, contrast and Studio usability follow-ups at main 620aa806fa8d7bbf820b41796cee9ddf90ca0591, READY production dpl_5gNeX33TEQwyiJSyS1toGiavZTSS. All 26 production checks and 13 protected-scope comparisons pass. Hosted samples are recorded; cold LCP remains above target. Full visual/human/native/device/rights/field acceptance remains open. No production content writes or publication replay occurred.",
+  "nextPhaseAuthorization": "The owner requested all pending work after explicitly authorizing detailed PR/main/M11 release. PR50 release is complete; continue the outstanding M10 acceptance work from m10-pending-release-evidence.json without replaying the 480 entries, homepage revision 4 or completed release steps.",
   "m10Evidence": "m10-evidence.json",
   "acceptanceMatrix": "m10-acceptance-matrix.json",
-  "releaseEvidence": "m11-evidence.json",
-  "loadingFollowUpEvidence": "m10-loading-evidence.json"
+  "releaseEvidence": "m10-pending-release-evidence.json",
+  "priorReleaseEvidence": "m11-evidence.json",
+  "loadingFollowUpEvidence": "m10-loading-evidence.json",
+  "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
+  "pendingFollowUpEvidence": "m10-pending-evidence.json"
 }
