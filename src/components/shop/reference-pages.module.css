@@ -3,7 +3,7 @@
 .reference .opening h1{font:400 clamp(52px,7vw,104px)/1.03 var(--font-display);max-width:14ch}
 .reference[data-page-hero=full] .opening{position:relative;isolation:isolate;display:grid;grid-template-columns:1fr;align-content:end;padding:var(--page-space) var(--gutter);background:var(--studio-panel)}
 .reference[data-page-hero=full] .opening>header,.reference[data-page-hero=full] .opening>div:first-child{position:relative;z-index:2;padding:0;max-width:70ch}
-.reference[data-page-hero=full] .opening[data-has-image=true]::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,10,14,.94),rgba(8,10,14,.55));z-index:1}
+.reference[data-page-hero=full] .opening[data-has-image=true]::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,10,14,.94),rgba(8,10,14,.8));z-index:1}
 .reference[data-page-hero=full] .opening>[data-page-cover]{position:absolute;inset:0;margin:0;max-width:none;width:100%;height:100%;padding:0}
 .reference[data-page-hero=full] .opening>[data-page-cover] figure{width:100%;height:100%;margin:0}
 .reference[data-page-hero=full] .opening>[data-page-cover] figure>div{height:100%;max-height:none;aspect-ratio:auto}
@@ -36,7 +36,7 @@
 @media(max-width:780px){
  .reference .opening{padding-top:40px}.reference .opening h1{font-size:clamp(42px,11vw,72px)}
  .reference[data-page-hero=full] .opening{padding-block:64px 88px}
- .reference[data-page-hero=full] .opening[data-has-image=true]::after{background:linear-gradient(0deg,rgba(8,10,14,.96),rgba(8,10,14,.7))}
+ .reference[data-page-hero=full] .opening[data-has-image=true]::after{background:linear-gradient(0deg,rgba(8,10,14,.96),rgba(8,10,14,.8))}
  .chapter,.chapter[data-has-image=true]{grid-template-columns:1fr;min-height:0;gap:28px;padding-block:64px}
  .chapters[data-chapter-template=timeline] .chapter{min-height:80svh}.chapters[data-chapter-template=timeline] .chapterMarker{position:static}
  .chapter[data-chapter-style=reverse][data-has-image=true] .chapterMarker,.chapter[data-chapter-style=reverse][data-has-image=true] .chapterBody{order:initial}

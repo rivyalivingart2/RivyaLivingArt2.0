@@ -257,7 +257,7 @@
  background:var(--elev-0); font-variant-numeric:tabular-nums;
 }
 .workspace .top { background:var(--elev-0); border-color:var(--workbench-line); }
-.workspace .heading h1 { font-size:clamp(28px,3vw,38px); letter-spacing:-.025em; }
+.workspace .heading h1 { font:400 clamp(32px,3vw,44px)/1.12 var(--font-display); letter-spacing:-.025em; }
 .workspace .heading p { color:var(--workbench-muted); line-height:1.7; }
 .workspace .sideNav { background:var(--elev-0); border-color:var(--workbench-line); }
 .workspace .sideNav .navLink { color:var(--workbench-muted); }
@@ -387,3 +387,8 @@
 .orderList{padding-left:28px;max-width:980px}.orderList li{padding:18px 8px;border-bottom:1px solid var(--line,#d9d3c8)}.orderList strong{display:block;margin-bottom:12px}.orderList strong:focus{outline:2px solid #735332;outline-offset:4px}
 
 .libraryRows{display:grid;gap:12px;margin:24px 0}.libraryRows>a{display:grid;gap:8px;border:1px solid var(--control-border);padding:20px;min-height:44px;overflow-wrap:anywhere}.libraryRows span,.libraryRows small{font-size:14px}.singleEditor{max-width:1100px}.singleEditor>[hidden]{display:none}
+
+/* Keep summary labels readable in the available workspace, including narrow sidebars. */
+.workspace .metrics{grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr))}
+.workspace .metrics>a{padding:18px;overflow-wrap:normal}
+@media(max-width:540px){.workspace .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.workspace .metrics>a{padding:14px;font-size:14px}}

@@ -1,5 +1,11 @@
 # M10 regression — 12 October 2026
 
+## Latest follow-up
+
+Read `M10-VISUAL-CONTRAST.md` and `m10-visual-contrast-evidence.json` for the current local candidate `a352a269ed90522ab2ebfe86978b807670ddcae55d49ca95ae473084368e9482`, which includes the preceding loading improvements. Three CSS modules strengthen image-dependent contrast. All 104 named manual targets have explicit dispositions (101 pass, three decorative); fresh build/typecheck, 344 unit, 403 built-server and protected-data comparisons pass, with lint at zero errors/62 warnings. Visual comparison is expanded but still partial, with unreliable/unavailable references and remaining section/child/mobile views explicitly recorded. No new release occurred. PR48/49 had already completed the earlier documented M11 release; the text below is its preceding historical regression report.
+
+## Historical regression candidate
+
 The paused M10 work is resumed. The local candidate passes the engineering checks described below. **M10 full acceptance is not complete:** hosted loading performance, complete visual parity and the independent human/device/field gates remain open. M11 has not started. No new push, PR, deployment or production content change occurred during this resumed work.
 
 M5–M9 activation was already completed through [PR47](https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/47) on 10 October. Its release receipt records 480 published entries, 120 per section, 21 image references and 63 verified derivatives. Concepts and fictional samples remain labelled. Do not replay those batches. The public homepage and collection were observed again on 12 October; the full 480-page and production preservation checks retain their actual 10 October observation date.

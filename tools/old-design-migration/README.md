@@ -14,3 +14,9 @@ Use Node 22 and the repository's pinned dependencies. Read the implementation ch
 Keep all database files, configuration, sessions, screenshots, logs and private receipts under ignored `test-results/old-design-migration/`. Existing labels use exclusive creation and must not be overwritten. Do not initialize an existing database or rerun preparation against a populated target. A failed schema preparation must be inspected and resumed deliberately, never reset automatically.
 
 The tooling is development-only. It does not run from a build hook, application request or deployment migration. Baseline snapshots are verification fingerprints and contain no recoverable record bodies.
+
+## M10 loading follow-up
+
+- `split-inter-fonts.py` runs from the repository root with Python, FontTools 4.61.1 and Brotli. It derives the three common Inter WOFF2 files from the unchanged original files, updates the two static CSS unicode ranges in `src/app/layout.tsx` and writes `m10-font-split.json`. It verifies all retained outlines/metrics and complete original coverage. The font dependencies are development tooling, not new application dependencies. Do not replace the original fonts or their OFL notice.
+- `run-local.mjs tools/old-design-migration/m10-design-read-check.mjs` verifies the real published-design SQL in a transaction with a temporary relation that shadows only that connection's table. It tests published-only projection, draft isolation, immediate publication/withdrawal and rollback. Run only through the guarded local runner with the existing QA database; no production writes.
+- Read `M10-LOADING-PERFORMANCE.md` before interpreting local performance samples. Font probes/accessibility tools can request extra font faces; capture navigation resource budgets before injecting them. Local timings do not verify hosted/field targets.

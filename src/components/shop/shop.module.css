@@ -524,9 +524,10 @@ html[dir="rtl"] .header,html[dir="rtl"] .footerTop,html[dir="rtl"] .footerBottom
 .craftHome .heroCopy .actions{margin:28px 0 32px;gap:24px}
 .craftHome .heroAnnotation{margin-top:0;color:var(--stone)}
 .craftHome .heroVisual{grid-area:scene;min-height:0;width:100%;aspect-ratio:auto;max-height:none;position:relative;z-index:0;background:var(--brand-midnight)}
-.craftHome .heroVisual::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,rgba(5,12,16,.91),rgba(5,12,16,.68) 35%,rgba(5,12,16,.08) 75%),linear-gradient(0deg,rgba(5,12,16,.85),transparent 45%)}
+.craftHome .heroVisual::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,rgba(5,12,16,.91),rgba(5,12,16,.8) 74%,rgba(5,12,16,.08)),linear-gradient(0deg,rgba(5,12,16,.85),transparent 45%)}
 .craftHome .heroImage{z-index:-1}
-.craftHome .heroNote{position:absolute;z-index:1;bottom:56px;right:var(--gutter);width:28%;padding:0;background:none;align-items:flex-start;flex-direction:column;gap:18px}
+/* Keep captions readable over any selected photograph, including a white image. */
+.craftHome .heroNote{position:absolute;z-index:1;bottom:56px;right:var(--gutter);width:28%;padding:14px 18px;background:rgba(5,12,16,.88);align-items:flex-start;flex-direction:column;gap:18px}
 .craftHome .heroNote p{font-size:32px}
 .craftHome .heroNote a{margin:0;min-height:48px}
 .craftHome .curatedGrid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,calc((100% - 48px)/3));grid-template-columns:none;gap:24px;border:0;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding-inline:4px;padding:4px 4px 24px;scrollbar-color:var(--bronze) var(--surface);scrollbar-width:thin}
@@ -553,7 +554,7 @@ html[dir="rtl"] .header,html[dir="rtl"] .footerTop,html[dir="rtl"] .footerBottom
  .craftHome .heroCopy .eyebrow{font-size:12px;margin-bottom:16px;max-width:30ch}
  .craftHome .heroCopy>p{font-size:16px;max-width:34ch;margin-top:20px}
  .craftHome .heroCopy .actions{flex-direction:row;gap:16px;margin:22px 0 24px;align-items:center}
- .craftHome .heroVisual::after{background:linear-gradient(0deg,rgba(5,12,16,.99),rgba(5,12,16,.87) 45%,rgba(5,12,16,.05) 90%)}
+ .craftHome .heroVisual::after{background:linear-gradient(0deg,rgba(5,12,16,.99),rgba(5,12,16,.8) 75%,rgba(5,12,16,.05))}
  .craftHome .heroNote{top:24px;bottom:auto;right:24px;width:calc(100% - 48px);align-items:flex-end;gap:4px;text-align:right}
  .craftHome .heroNote p{font-size:25px}.craftHome .heroNote a{font-size:12px;min-height:48px}
  .craftHome .curatedGrid{grid-auto-columns:minmax(0,84%);gap:18px}

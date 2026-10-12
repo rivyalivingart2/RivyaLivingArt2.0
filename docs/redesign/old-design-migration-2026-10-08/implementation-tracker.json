@@ -1,5 +1,5 @@
 {
-  "status": "m11_released_m10_partially_verified",
+  "status": "m10_pending_followup_verified_for_named_states_release_prepared",
   "existingContentFrozen": true,
   "oldPageTemplates": 85,
   "oldSectionDefinitions": 74,
@@ -1168,8 +1168,11 @@
       "status": "partially verified",
       "owner": "Codex",
       "evidence": "m10-evidence.json",
-      "note": "Recorded scope passes where stated; full acceptance remains open. See M10-REGRESSION-REPORT.md.",
-      "followUpEvidence": "m11-evidence.json"
+      "note": "All seven outstanding public opening pairs captured at 390/1280; old Media/Research recaptured reliably. Full section/child-state acceptance remains partial. Studio typography/cards repaired. See M10-PENDING-COMPLETION.md.",
+      "followUpEvidence": "m11-evidence.json",
+      "loadingFollowUpEvidence": "m10-loading-evidence.json",
+      "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
+      "pendingFollowUpEvidence": "m10-pending-evidence.json"
     },
     {
       "id": "M10-02",
@@ -1187,7 +1190,10 @@
       "owner": "Codex",
       "evidence": "m10-evidence.json",
       "note": "All original local rows unchanged; final permission/snapshot/recovery contract passes.",
-      "followUpEvidence": "m11-evidence.json"
+      "followUpEvidence": "m11-evidence.json",
+      "loadingFollowUpEvidence": "m10-loading-evidence.json",
+      "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
+      "pendingFollowUpEvidence": "m10-pending-evidence.json"
     },
     {
       "id": "M10-03",
@@ -1204,8 +1210,10 @@
       "status": "partially verified",
       "owner": "Codex",
       "evidence": "m10-evidence.json",
-      "note": "Recorded scope passes where stated; full acceptance remains open. See M10-REGRESSION-REPORT.md.",
-      "followUpEvidence": "m11-evidence.json"
+      "note": "Local initial Inter payload 332048 -> 156860 bytes; observed reads 4 -> 3; matched local homepage bypassed LCP 2.712s -> 1.732s, collection repeat 0.468s -> 0.476s. Hosted/field target remains open.",
+      "followUpEvidence": "m11-evidence.json",
+      "loadingFollowUpEvidence": "m10-loading-evidence.json",
+      "pendingFollowUpEvidence": "m10-pending-evidence.json"
     },
     {
       "id": "M10-04",
@@ -1222,8 +1230,11 @@
       "status": "partially verified",
       "owner": "Codex",
       "evidence": "m10-evidence.json",
-      "note": "Recorded scope passes where stated; full acceptance remains open. See M10-REGRESSION-REPORT.md.",
-      "followUpEvidence": "m11-evidence.json"
+      "note": "Prior 104 manual targets retained; 74 additional named Studio targets all pass, minimum 6.2472:1. Ten fresh focused scans have zero confirmed violations. Native zoom/human screen-reader/physical-phone gates remain open.",
+      "followUpEvidence": "m11-evidence.json",
+      "loadingFollowUpEvidence": "m10-loading-evidence.json",
+      "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
+      "pendingFollowUpEvidence": "m10-pending-evidence.json"
     },
     {
       "id": "M10-05",
@@ -1241,7 +1252,10 @@
       "owner": "Codex",
       "evidence": "m10-evidence.json",
       "note": "Evidence gaps reconciled explicitly; no unperformed human/native/device/field check marked passed.",
-      "followUpEvidence": "m11-evidence.json"
+      "followUpEvidence": "m11-evidence.json",
+      "loadingFollowUpEvidence": "m10-loading-evidence.json",
+      "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
+      "pendingFollowUpEvidence": "m10-pending-evidence.json"
     },
     {
       "id": "M11-01",
@@ -1318,9 +1332,10 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "PR48 application released at main 0f1b145 with exact READY production verified. Real Studio published homepage design revision 4. All 480 entries remain live and all original protected rows match. M10 full visual/human/native/device/field/performance acceptance remains open.",
-  "nextPhaseAuthorization": "Owner explicitly authorized M10 and M11 on 12 October 2026; detailed PR, checked release and Studio activation authorized.",
+  "note": "PR48/49 production release and homepage revision 4 remain complete for their recorded scope. New local M10 font/read optimization is verified in m10-loading-evidence.json; hosted/full visual/human/native/device/field acceptance remains open. No new release or production writes.",
+  "nextPhaseAuthorization": "Owner requested the next step on 12 October 2026; continue remaining M10 work locally. Earlier M11 release authorization was exercised for PR48/49; no new release in this checkpoint.",
   "m10Evidence": "m10-evidence.json",
   "acceptanceMatrix": "m10-acceptance-matrix.json",
-  "releaseEvidence": "m11-evidence.json"
+  "releaseEvidence": "m11-evidence.json",
+  "loadingFollowUpEvidence": "m10-loading-evidence.json"
 }

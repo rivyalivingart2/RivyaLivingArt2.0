@@ -1,3 +1,41 @@
+# Current checkpoint — M10 Studio fixes and recovered comparisons; release prepared
+
+12 October 2026: branch `codex/m10-pending-completion` includes the prior loading and contrast work plus 25-row Content Health/Content Gaps pagination, display-serif Studio headings and responsive summary cards. Read `M10-PENDING-COMPLETION.md`, `m10-pending-evidence.json` and `docs/decisions/2026-10-12-m10-pending-completion.md`. Application fingerprint: `1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b`.
+
+Fresh build/typecheck, 344 unit and 403 runtime checks pass; lint zero errors/62 warnings. Ten focused scans have zero confirmed violations. All 74 additional manual contrast targets pass (minimum 6.2472:1). Pagination/filter/empty/error/retry and unsaved/saved Journal states were checked. All original local IDs/digests/counts remain unchanged in 13 scopes.
+
+All seven missing public opening pairs and both unreliable Studio references were captured and reviewed at desktop/mobile widths. The old reference is reachable but slow. Full section/child-state, native zoom, human/physical/native-reader/rights/factual and field acceptance remain open. No blanket full-parity claim.
+
+The owner has requested all pending work and previously explicitly authorized detailed PR/main/M11 release. Prepare and verify that release; generated local-only notes below are historical, not a revocation. No new push had occurred when this checkpoint was prepared. Never replay the 480 entries or homepage revision 4. Scrapers, old-product transfers and backups remain excluded.
+
+---
+
+# Current checkpoint — M10 contrast resolved for tested states; visual comparison partial
+
+12 October 2026: continue on local branch `codex/m10-visual-contrast`, based on loading commit `b6d290a039864494c572b76c1ac444701f4ca009`. Read `M10-VISUAL-CONTRAST.md`, `m10-visual-contrast-evidence.json` and `M10-CONTINUATION.md` in the migration directory first. Application fingerprint: `a352a269ed90522ab2ebfe86978b807670ddcae55d49ca95ae473084368e9482`. Three CSS modules now provide robust image-hero overlays and caption/category-label backings. The earlier loading improvements remain included.
+
+All 104 recorded manual colour-contrast targets have explicit dispositions: 101 pass, three decorative exclusions; minimum 6.0972:1. Fourteen route scans and the gallery modal have no confirmed contrast violations. Six viewport geometry checks and 104 live foreground checks support the bounds. Fresh build/typecheck, 344 unit and 403 built-server checks pass; lint has zero errors/62 warnings. Exact original ID/digest maps and counts match in all 13 local protected scopes.
+
+Visual comparison remains partial: 30 Studio opening pairs inspected, with two old captures rejected as unreliable; eight public opening pairs and nine homepage chapter openings compared. Seven public pairs still need old-reference captures, after reference navigation timed out. Continue the remaining section/scroll/mobile and child/create/edit/print/error work. Actual native zoom, screen-reader/physical-phone, independent native-reader, factual/media-rights and hosted/field performance evidence remain open. Do not call this full-plan acceptance.
+
+No push, PR, deployment or production mutation occurred. Preserve both local loading and contrast work for an applicable release instruction. All 480 entries and homepage revision 4 were already published in the prior PR48/49 release; never replay those workflows. Scrapers, old-product transfers and backups remain excluded.
+
+QA server and isolated PostgreSQL are stopped at handoff, data retained; temporary emulations reset. No scheduled continuation is running. Historical checkpoints below retain their original candidate scope.
+
+---
+
+# Current checkpoint — M10 loading improvements verified locally
+
+12 October 2026: the owner's “START TO WORKING ON NEXT STEP” request resumed the remaining M10 performance work. Read M10-LOADING-PERFORMANCE.md, m10-loading-evidence.json and M10-CONTINUATION.md first. Branch: codex/m10-loading-performance, based on main 26b1e4b18c6ca8e5d9f10804072c1d50512fcae8 after PR49. Initial Inter files are reduced from 332,048 to 156,860 bytes with full original coverage retained; published layout and editorial ordering now share one request-local read (three observed SQL calls instead of four). No cross-request stale cache, schema or content change.
+
+Final build/type/lint, 344 unit checks, 403 built-server checks, six SQL contract groups and six Studio lifecycle groups pass. Eight focused accessibility scans have zero confirmed violations; overlay/manual items remain explicit. Twelve browser typography comparisons match exactly, and all original rows in 13 local scopes are unchanged. One matched local homepage cache-bypassed LCP sample improved from 2.712s to 1.732s; hosted performance and field p75 are not verified for this follow-up. The collection repeat was 8ms slower; preserve all samples.
+
+This new candidate is local only: no new push, PR, deployment or production writes. The previous PR48/49 production release and homepage revision 4 remain complete for their documented scope; all 480 entries were already published, so never replay import/publication. M10 full visual/child-state comparison, remaining overlay contrast, native zoom, human screen-reader/physical-device/native-reader, factual/media-rights and real-world evidence remain open. Keep explicit approval requirements for a new release. Scrapers, old-product transfers and backups stay excluded.
+
+QA server and isolated PostgreSQL are stopped, data retained, temporary local testing tabs/emulations reset. No scheduled continuation is running. Historical authorization and checkpoints below apply to their recorded candidates, not a new automatic release.
+
+---
+
 # Current checkpoint — M11 released, M10 acceptance partially verified
 
 12 October 2026: PR48 is merged at 0f1b1457f1bf870a3742d206a43f04fa781bdf02; exact Vercel production dpl_G1muuWBRGoo8DLBQG3sHxM94uzKt is READY on www.rivyalivingart.com. The real Studio administrator saved design draft 3, reviewed desktop/mobile previews and published revision 4, selecting three labelled Portfolio concepts and three labelled fictional Testimonial samples. Images and the described silent material film are live. All 480 M9 entries remain published; do not replay import or publication.
