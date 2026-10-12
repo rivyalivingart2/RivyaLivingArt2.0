@@ -1,9 +1,10 @@
 {
-  "date": "2026-10-12T04:31:22.224Z",
-  "status": "candidate_verified_release_in_progress",
+  "date": "2026-10-12T04:54:20.876Z",
+  "status": "m11_released_m10_partially_verified",
   "candidate": {
     "base": "e3e03fcaa75f693fd799fef08e7da449b4fb22cd",
-    "applicationSha256": "6096a9dd5ff37a875a8041eaaa25bddfe963a54899679bab9d3d1f5f6170ad46"
+    "applicationSha256": "6096a9dd5ff37a875a8041eaaa25bddfe963a54899679bab9d3d1f5f6170ad46",
+    "applicationCommit": "db41fb3780211a2c2169e7fd0024c73181a3aa37"
   },
   "authorization": "docs/decisions/2026-10-12-m10-m11.md",
   "tests": {
@@ -82,6 +83,45 @@
         "manualItems": [],
         "width": 1280,
         "height": 720
+      },
+      {
+        "route": "/process final film alternative",
+        "violations": 0,
+        "manualItems": [
+          {
+            "id": "color-contrast",
+            "count": 5
+          },
+          {
+            "id": "video-caption",
+            "count": 1
+          }
+        ],
+        "width": 1575,
+        "height": 930
+      },
+      {
+        "route": "/studio/sections final candidate",
+        "violations": 0,
+        "manualItems": [],
+        "width": 1575,
+        "height": 930
+      },
+      {
+        "route": "production homepage revision 4 desktop",
+        "violations": 0,
+        "manualItems": [
+          {
+            "id": "color-contrast",
+            "count": 38
+          },
+          {
+            "id": "video-caption",
+            "count": 1
+          }
+        ],
+        "width": 1575,
+        "height": 930
       }
     ],
     "emptyInquiryTableOmitted": true,
@@ -139,9 +179,152 @@
     },
     "privateDigestFile": "test-results/old-design-migration/live-read-only-m11-before-private.json"
   },
-  "release": null,
-  "activation": null,
-  "productionAfter": null,
+  "release": {
+    "pr": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/48",
+    "head": "db41fb3780211a2c2169e7fd0024c73181a3aa37",
+    "main": "0f1b1457f1bf870a3742d206a43f04fa781bdf02",
+    "deployment": "dpl_G1muuWBRGoo8DLBQG3sHxM94uzKt",
+    "state": "READY",
+    "target": "production",
+    "domain": "https://www.rivyalivingart.com",
+    "headChecks": "Vercel success; Vercel Preview Comments success with zero unresolved feedback",
+    "merge": "Expected-head checked merge; no direct main push or protection bypass",
+    "exactDeploymentVerified": true
+  },
+  "activation": {
+    "method": "Real signed-in administrator Studio save, exact preview, then publish",
+    "previousPublicVersion": 2,
+    "savedDraftVersion": 3,
+    "publicVersion": 4,
+    "desktopPreview": true,
+    "mobilePreview": {
+      "frameViewport": 390,
+      "contentWidth": 373,
+      "scrollWidth": 373,
+      "scope": "Browser iframe emulation; not a physical phone"
+    },
+    "readback": {
+      "at": "2026-10-12T04:41:10.475Z",
+      "concepts": 3,
+      "media": [
+        {
+          "alt": "Wide dining-table visualization with a blue channel, chairs and a window view",
+          "loaded": true,
+          "src": "https://www.rivyalivingart.com/_next/image?url=%2Feditorial%2F7d66f7aa-f7a2-416e-8f6f-a6ffa4b1b94b&w=828&q=75&dpl=dpl_G1muuWBRGoo8DLBQG3sHxM94uzKt"
+        },
+        {
+          "alt": "Close view of a console corner and blue waterfall-like channel",
+          "loaded": true,
+          "src": "https://www.rivyalivingart.com/_next/image?url=%2Feditorial%2F9e1f7611-f757-49c1-a103-52a570eb918b&w=828&q=75&dpl=dpl_G1muuWBRGoo8DLBQG3sHxM94uzKt"
+        },
+        {
+          "alt": "Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric",
+          "loaded": true,
+          "src": "https://www.rivyalivingart.com/_next/image?url=%2Feditorial%2F976cd5bd-4145-4bb8-93b4-b30d978789b3&w=828&q=75&dpl=dpl_G1muuWBRGoo8DLBQG3sHxM94uzKt"
+        }
+      ],
+      "portfolioLinks": [
+        "/portfolio/a-narrow-blue-line-at-the-dining-table",
+        "/portfolio/a-console-and-small-object-sharing-an-edge-rhythm",
+        "/portfolio/initials-with-a-quiet-colour-accent"
+      ],
+      "revision": "4",
+      "samples": 3,
+      "testimonialLinks": [
+        "/testimonials/a-preference-for-a-quieter-dining-accent",
+        "/testimonials/repeating-a-detail-at-two-scales",
+        "/testimonials/keeping-initials-readable-within-an-accent"
+      ]
+    },
+    "video": {
+      "description": "Silent, eight-second material visualization: a ribbon of deep blue resin with gold-toned streaks pours into a pool against a dark background. The sequence repeats. This is not a recording of a customer commission.",
+      "duration": 8.042,
+      "muted": true,
+      "playing": true,
+      "readyState": 4,
+      "time": 0.696722
+    },
+    "pausedAfterControl": true,
+    "editorialPublished": 480,
+    "perKind": 120,
+    "driveDeliveries": 480,
+    "sourceVersion": 5,
+    "existingPageLayouts": 7,
+    "protectedContentWrites": 0,
+    "addedPresentationRevisions": 2,
+    "qaIdentitiesCopied": false
+  },
+  "productionAfter": {
+    "at": "2026-10-12T04:41:00.430Z",
+    "scopes": {
+      "rivya_catalogue": {
+        "before": 120,
+        "after": 120,
+        "originalRowsUnchanged": true
+      },
+      "rivya_content": {
+        "before": 535,
+        "after": 535,
+        "originalRowsUnchanged": true
+      },
+      "rivya_public_media": {
+        "before": 154,
+        "after": 154,
+        "originalRowsUnchanged": true
+      },
+      "rivya_business_settings": {
+        "before": 1,
+        "after": 1,
+        "originalRowsUnchanged": true
+      },
+      "rivya_revisions": {
+        "before": 1389,
+        "after": 1389,
+        "originalRowsUnchanged": true
+      },
+      "rivya_inquiries": {
+        "before": 2,
+        "after": 2,
+        "originalRowsUnchanged": true
+      },
+      "rivya_studio_orders": {
+        "before": 2,
+        "after": 2,
+        "originalRowsUnchanged": true
+      },
+      "rivya_studio_order_events": {
+        "before": 2,
+        "after": 2,
+        "originalRowsUnchanged": true
+      },
+      "rivya_inquiry_notes": {
+        "before": 0,
+        "after": 0,
+        "originalRowsUnchanged": true
+      },
+      "rivya_references": {
+        "before": 0,
+        "after": 0,
+        "originalRowsUnchanged": true
+      },
+      "rivya_staff": {
+        "before": 0,
+        "after": 0,
+        "originalRowsUnchanged": true
+      },
+      "rivya_privacy_controls": {
+        "before": 2,
+        "after": 2,
+        "originalRowsUnchanged": true
+      },
+      "rivya_erasure_ledger": {
+        "before": 0,
+        "after": 0,
+        "originalRowsUnchanged": true
+      }
+    },
+    "allOriginalRowsUnchanged": true
+  },
   "remaining": [
     "Full old/current section and child/error-state visual parity",
     "Remaining image/overlay contrast manual review",
@@ -157,5 +340,509 @@
     "backup work",
     "unreviewed translation publication",
     "fabricated customer evidence"
-  ]
+  ],
+  "localPreservation": [
+    {
+      "baseline": "local-m11-before-private.json",
+      "scopes": {
+        "rivya_catalogue": {
+          "originalRows": 120,
+          "currentRows": 120,
+          "unchanged": true
+        },
+        "rivya_content": {
+          "originalRows": 599,
+          "currentRows": 599,
+          "unchanged": true
+        },
+        "rivya_public_media": {
+          "originalRows": 152,
+          "currentRows": 152,
+          "unchanged": true
+        },
+        "rivya_business_settings": {
+          "originalRows": 1,
+          "currentRows": 1,
+          "unchanged": true
+        },
+        "rivya_revisions": {
+          "originalRows": 725,
+          "currentRows": 725,
+          "unchanged": true
+        },
+        "rivya_inquiries": {
+          "originalRows": 2,
+          "currentRows": 2,
+          "unchanged": true
+        },
+        "rivya_studio_orders": {
+          "originalRows": 7,
+          "currentRows": 7,
+          "unchanged": true
+        },
+        "rivya_studio_order_events": {
+          "originalRows": 8,
+          "currentRows": 8,
+          "unchanged": true
+        },
+        "rivya_inquiry_notes": {
+          "originalRows": 0,
+          "currentRows": 0,
+          "unchanged": true
+        },
+        "rivya_references": {
+          "originalRows": 0,
+          "currentRows": 0,
+          "unchanged": true
+        },
+        "rivya_staff": {
+          "originalRows": 7,
+          "currentRows": 7,
+          "unchanged": true
+        },
+        "rivya_privacy_controls": {
+          "originalRows": 7,
+          "currentRows": 7,
+          "unchanged": true
+        },
+        "rivya_erasure_ledger": {
+          "originalRows": 0,
+          "currentRows": 0,
+          "unchanged": true
+        }
+      }
+    },
+    {
+      "baseline": "local-m10-before-private.json",
+      "scopes": {
+        "rivya_catalogue": {
+          "originalRows": 120,
+          "currentRows": 120,
+          "unchanged": true
+        },
+        "rivya_content": {
+          "originalRows": 579,
+          "currentRows": 599,
+          "unchanged": true
+        },
+        "rivya_public_media": {
+          "originalRows": 152,
+          "currentRows": 152,
+          "unchanged": true
+        },
+        "rivya_business_settings": {
+          "originalRows": 1,
+          "currentRows": 1,
+          "unchanged": true
+        },
+        "rivya_revisions": {
+          "originalRows": 664,
+          "currentRows": 725,
+          "unchanged": true
+        },
+        "rivya_inquiries": {
+          "originalRows": 2,
+          "currentRows": 2,
+          "unchanged": true
+        },
+        "rivya_studio_orders": {
+          "originalRows": 5,
+          "currentRows": 7,
+          "unchanged": true
+        },
+        "rivya_studio_order_events": {
+          "originalRows": 6,
+          "currentRows": 8,
+          "unchanged": true
+        },
+        "rivya_inquiry_notes": {
+          "originalRows": 0,
+          "currentRows": 0,
+          "unchanged": true
+        },
+        "rivya_references": {
+          "originalRows": 0,
+          "currentRows": 0,
+          "unchanged": true
+        },
+        "rivya_staff": {
+          "originalRows": 3,
+          "currentRows": 7,
+          "unchanged": true
+        },
+        "rivya_privacy_controls": {
+          "originalRows": 5,
+          "currentRows": 7,
+          "unchanged": true
+        },
+        "rivya_erasure_ledger": {
+          "originalRows": 0,
+          "currentRows": 0,
+          "unchanged": true
+        }
+      }
+    },
+    {
+      "baseline": "local-m10-resume-before-private.json",
+      "scopes": {
+        "rivya_catalogue": {
+          "originalRows": 120,
+          "currentRows": 120,
+          "unchanged": true
+        },
+        "rivya_content": {
+          "originalRows": 595,
+          "currentRows": 599,
+          "unchanged": true
+        },
+        "rivya_public_media": {
+          "originalRows": 152,
+          "currentRows": 152,
+          "unchanged": true
+        },
+        "rivya_business_settings": {
+          "originalRows": 1,
+          "currentRows": 1,
+          "unchanged": true
+        },
+        "rivya_revisions": {
+          "originalRows": 711,
+          "currentRows": 725,
+          "unchanged": true
+        },
+        "rivya_inquiries": {
+          "originalRows": 2,
+          "currentRows": 2,
+          "unchanged": true
+        },
+        "rivya_studio_orders": {
+          "originalRows": 7,
+          "currentRows": 7,
+          "unchanged": true
+        },
+        "rivya_studio_order_events": {
+          "originalRows": 8,
+          "currentRows": 8,
+          "unchanged": true
+        },
+        "rivya_inquiry_notes": {
+          "originalRows": 0,
+          "currentRows": 0,
+          "unchanged": true
+        },
+        "rivya_references": {
+          "originalRows": 0,
+          "currentRows": 0,
+          "unchanged": true
+        },
+        "rivya_staff": {
+          "originalRows": 5,
+          "currentRows": 7,
+          "unchanged": true
+        },
+        "rivya_privacy_controls": {
+          "originalRows": 7,
+          "currentRows": 7,
+          "unchanged": true
+        },
+        "rivya_erasure_ledger": {
+          "originalRows": 0,
+          "currentRows": 0,
+          "unchanged": true
+        }
+      }
+    }
+  ],
+  "productionPublic": {
+    "at": "2026-10-12T04:48:29.182Z",
+    "deployment": "dpl_G1muuWBRGoo8DLBQG3sHxM94uzKt",
+    "checks": [
+      {
+        "path": "/",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/process",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/collectible-design",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/journal",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/portfolio",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/testimonials",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/faq",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/pieces/river-channel",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/commission/customize",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "noindex, nofollow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/contact",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/imprint",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/privacy",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/terms",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/studio/login",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "noindex, nofollow, noarchive",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/studio",
+        "status": 307,
+        "deploymentMatched": true,
+        "robots": "noindex, nofollow, noarchive",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/api/studio/content",
+        "status": 401,
+        "deploymentMatched": false,
+        "cacheControl": "private, no-store"
+      },
+      {
+        "path": "/workshops",
+        "status": 410,
+        "deploymentMatched": false,
+        "robots": "noindex,nofollow",
+        "cacheControl": "private, no-store"
+      },
+      {
+        "path": "/m11-check-route-not-found",
+        "status": 404,
+        "deploymentMatched": true,
+        "robots": "noindex",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/robots.txt",
+        "status": 200,
+        "deploymentMatched": false,
+        "cacheControl": "public, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/sitemap.xml",
+        "status": 200,
+        "deploymentMatched": false,
+        "cacheControl": "public, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/portfolio/a-narrow-blue-line-at-the-dining-table",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/portfolio/a-console-and-small-object-sharing-an-edge-rhythm",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/portfolio/initials-with-a-quiet-colour-accent",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/testimonials/a-preference-for-a-quieter-dining-accent",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/testimonials/repeating-a-detail-at-two-scales",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/testimonials/keeping-initials-readable-within-an-accent",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      }
+    ],
+    "passed": true,
+    "contractNote": "Retired /workshops intentionally returns 410 under the existing production legacy-route contract. Initial probe expectation was corrected from 404 after inspecting that contract; no application change."
+  },
+  "hostedPerformance": {
+    "status": "target_not_met",
+    "setup": {
+      "viewport": [
+        390,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "cpuSlowdown": 4,
+      "latencyMs": 150,
+      "downloadBytesPerSecond": 200000,
+      "uploadBytesPerSecond": 93750
+    },
+    "samples": [
+      {
+        "label": "production homepage browser-cache-bypassed",
+        "at": "2026-10-12T04:42:11.944Z",
+        "route": "/",
+        "lcpMs": 7056,
+        "cls": 0,
+        "ttfbMs": 3465.7000000001863,
+        "maximumObservedEventMs": 136,
+        "encodedResourceBytes": 872125
+      },
+      {
+        "label": "production homepage cache-enabled repeat",
+        "at": "2026-10-12T04:43:06.517Z",
+        "route": "/",
+        "lcpMs": 11488,
+        "cls": 0,
+        "ttfbMs": 10236.799999999814,
+        "maximumObservedEventMs": 112,
+        "encodedResourceBytes": 745026
+      },
+      {
+        "label": "production collection browser-cache-bypassed",
+        "at": "2026-10-12T04:43:57.202Z",
+        "route": "/collectible-design",
+        "lcpMs": 6628,
+        "cls": 0,
+        "ttfbMs": 3076,
+        "maximumObservedEventMs": 112,
+        "encodedResourceBytes": 736722
+      },
+      {
+        "label": "production collection cache-enabled repeat",
+        "at": "2026-10-12T04:44:29.964Z",
+        "route": "/collectible-design",
+        "lcpMs": 4064,
+        "cls": 0,
+        "ttfbMs": 3192.0999999996275,
+        "maximumObservedEventMs": 80,
+        "encodedResourceBytes": 738710
+      }
+    ],
+    "limitations": [
+      "Browser cache bypass does not guarantee a cold server or CDN.",
+      "Cache-enabled repeat is not proof that every resource was cached.",
+      "Observed menu event durations are not field INP.",
+      "No real-user field p75 is available."
+    ]
+  },
+  "queryProfile": {
+    "at": "2026-10-12T04:45:21.819Z",
+    "readOnly": true,
+    "report": [
+      {
+        "label": "identity",
+        "roundTripMs": 2744.9700000000003,
+        "planningMs": 0.165,
+        "executionMs": 71.395
+      },
+      {
+        "label": "shell",
+        "roundTripMs": 1012.9232999999999,
+        "planningMs": 0.271,
+        "executionMs": 61.494
+      },
+      {
+        "label": "publishedSource",
+        "roundTripMs": 5349.8529,
+        "planningMs": 0.248,
+        "executionMs": 182.465
+      }
+    ],
+    "interpretation": "Read-only local-machine to production-database samples; not a Vercel server trace and not a causal attribution of all hosted latency."
+  },
+  "runtimeObservation": {
+    "at": "2026-10-12T04:46:00Z",
+    "routes": [
+      "/",
+      "/collectible-design"
+    ],
+    "window": "preceding 30 minutes",
+    "errorsFound": 0,
+    "limit": "Bounded connector observation, not an uptime or full-site guarantee."
+  },
+  "cleanup": {
+    "qaServerStopped": true,
+    "qaPostgresStopped": true,
+    "temporaryQaTabsClosed": true,
+    "emulationReset": true,
+    "scheduledContinuation": false,
+    "savedQaDataPreserved": true
+  }
 }

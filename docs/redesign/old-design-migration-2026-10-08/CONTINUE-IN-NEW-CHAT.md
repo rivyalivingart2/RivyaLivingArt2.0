@@ -1,3 +1,13 @@
+# Current checkpoint — M11 released, M10 acceptance partially verified
+
+12 October 2026: PR48 is merged at 0f1b1457f1bf870a3742d206a43f04fa781bdf02; exact Vercel production dpl_G1muuWBRGoo8DLBQG3sHxM94uzKt is READY on www.rivyalivingart.com. The real Studio administrator saved design draft 3, reviewed desktop/mobile previews and published revision 4, selecting three labelled Portfolio concepts and three labelled fictional Testimonial samples. Images and the described silent material film are live. All 480 M9 entries remain published; do not replay import or publication.
+
+Read M11-RELEASE.md, m11-evidence.json and M10-CONTINUATION.md in the migration directory. Fresh build/type/lint, 344 unit and 403 built-server checks pass; nine focused accessibility scans have zero confirmed violations, and 26 production checks pass. Every original production row in 13 protected scopes is unchanged. M10 remains partially verified: full section/child-state visual comparison, remaining overlay contrast, native zoom, human screen-reader/physical-phone/native-reader review, rights/factual evidence and hosted/field performance remain open. Four new hosted LCP samples range from 4.064 to 11.488 seconds; none meets 2.5 seconds. Preserve the explicit gaps. The completed release supersedes older local-only/M11-not-authorized wording below; historic checkpoints are not current instructions.
+
+QA server and isolated PostgreSQL are stopped, data retained, temporary testing tabs/emulations reset. No scheduled continuation is running. Resume the remaining M10 evidence gaps without restarting earlier phases. Scrapers, old-product transfers and backups remain excluded.
+
+---
+
 # Current checkpoint — M10 resumed and verified for stated scope
 
 12 October: read `M10-CONTINUATION.md`, `M10-REGRESSION-REPORT.md`, `m10-evidence.json` and `m10-acceptance-matrix.json` first. The local homepage selection workflow and accessibility/filter repairs pass the final build/type/lint, 344 unit and 403 built-server checks. All original local rows are preserved in 13 scopes. The browser matrix records 73 accessibility scans and 544 responsive checks. Full visual/human/native/device/field acceptance and hosted performance remain open, so M10 is partially verified. M5–M9 is already live; do not replay publication. M11/new M10 release still requires explicit permission. The old pause below is historical.

@@ -1,5 +1,5 @@
 {
-  "status": "m10_verified_scopes_m11_authorized_in_progress",
+  "status": "m11_released_m10_partially_verified",
   "existingContentFrozen": true,
   "oldPageTemplates": 85,
   "oldSectionDefinitions": 74,
@@ -1168,7 +1168,8 @@
       "status": "partially verified",
       "owner": "Codex",
       "evidence": "m10-evidence.json",
-      "note": "Recorded scope passes where stated; full acceptance remains open. See M10-REGRESSION-REPORT.md."
+      "note": "Recorded scope passes where stated; full acceptance remains open. See M10-REGRESSION-REPORT.md.",
+      "followUpEvidence": "m11-evidence.json"
     },
     {
       "id": "M10-02",
@@ -1185,7 +1186,8 @@
       "status": "verified for stated scope",
       "owner": "Codex",
       "evidence": "m10-evidence.json",
-      "note": "All original local rows unchanged; final permission/snapshot/recovery contract passes."
+      "note": "All original local rows unchanged; final permission/snapshot/recovery contract passes.",
+      "followUpEvidence": "m11-evidence.json"
     },
     {
       "id": "M10-03",
@@ -1202,7 +1204,8 @@
       "status": "partially verified",
       "owner": "Codex",
       "evidence": "m10-evidence.json",
-      "note": "Recorded scope passes where stated; full acceptance remains open. See M10-REGRESSION-REPORT.md."
+      "note": "Recorded scope passes where stated; full acceptance remains open. See M10-REGRESSION-REPORT.md.",
+      "followUpEvidence": "m11-evidence.json"
     },
     {
       "id": "M10-04",
@@ -1219,7 +1222,8 @@
       "status": "partially verified",
       "owner": "Codex",
       "evidence": "m10-evidence.json",
-      "note": "Recorded scope passes where stated; full acceptance remains open. See M10-REGRESSION-REPORT.md."
+      "note": "Recorded scope passes where stated; full acceptance remains open. See M10-REGRESSION-REPORT.md.",
+      "followUpEvidence": "m11-evidence.json"
     },
     {
       "id": "M10-05",
@@ -1236,7 +1240,8 @@
       "status": "verified for stated scope",
       "owner": "Codex",
       "evidence": "m10-evidence.json",
-      "note": "Evidence gaps reconciled explicitly; no unperformed human/native/device/field check marked passed."
+      "note": "Evidence gaps reconciled explicitly; no unperformed human/native/device/field check marked passed.",
+      "followUpEvidence": "m11-evidence.json"
     },
     {
       "id": "M11-01",
@@ -1248,7 +1253,8 @@
       "acceptance": "List all module/template changes, protected baseline, migrations, licenses, test evidence, exclusions and remaining content dependencies.",
       "status": "verified for stated scope",
       "owner": "Codex",
-      "evidence": "M11-RELEASE.md"
+      "evidence": "m11-evidence.json",
+      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md."
     },
     {
       "id": "M11-02",
@@ -1258,9 +1264,10 @@
         "M10"
       ],
       "acceptance": "No secrets/raw customer evidence; application changes and content publication steps distinguished; approved scope explicit.",
-      "status": "in progress",
+      "status": "verified for stated scope",
       "owner": "Codex",
-      "evidence": "M11-RELEASE.md"
+      "evidence": "m11-evidence.json",
+      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md."
     },
     {
       "id": "M11-03",
@@ -1270,9 +1277,10 @@
         "M10"
       ],
       "acceptance": "Required repository checks pass; exact main SHA matches READY deployment; no automatic reset/seed/import.",
-      "status": "in progress",
+      "status": "verified for stated scope",
       "owner": "Codex",
-      "evidence": "M11-RELEASE.md"
+      "evidence": "m11-evidence.json",
+      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md."
     },
     {
       "id": "M11-04",
@@ -1282,9 +1290,10 @@
         "M10"
       ],
       "acceptance": "Current contacts/SEO/indexing/Imprint, routes, records and media verified using small read-only production checks.",
-      "status": "in progress",
+      "status": "verified for stated scope",
       "owner": "Codex",
-      "evidence": "M11-RELEASE.md"
+      "evidence": "m11-evidence.json",
+      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md."
     },
     {
       "id": "M11-05",
@@ -1294,9 +1303,10 @@
         "M10"
       ],
       "acceptance": "Prior compatible code and draft revisions available; missing genuine inquiry/field/human evidence remains open until observed.",
-      "status": "in progress",
+      "status": "verified for stated scope",
       "owner": "Codex",
-      "evidence": "M11-RELEASE.md"
+      "evidence": "m11-evidence.json",
+      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md."
     }
   ],
   "editorialTargets": {
@@ -1308,9 +1318,9 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "M5-M9 and all 480 entries already live. M10 retains explicit visual/human/native/device/field gaps. M11 now authorized; see M11-RELEASE.md.",
+  "note": "PR48 application released at main 0f1b145 with exact READY production verified. Real Studio published homepage design revision 4. All 480 entries remain live and all original protected rows match. M10 full visual/human/native/device/field/performance acceptance remains open.",
   "nextPhaseAuthorization": "Owner explicitly authorized M10 and M11 on 12 October 2026; detailed PR, checked release and Studio activation authorized.",
   "m10Evidence": "m10-evidence.json",
   "acceptanceMatrix": "m10-acceptance-matrix.json",
-  "releaseEvidence": "release-m5-m9-evidence.json"
+  "releaseEvidence": "m11-evidence.json"
 }
