@@ -4,7 +4,17 @@
   "pr": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/50",
   "head": "0d8c736d34c0720bd0a53b5a8243a08b154e2b8e",
   "main": "620aa806fa8d7bbf820b41796cee9ddf90ca0591",
-  "applicationSha256": "1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b",
+  "applicationSha256": "fe08e9f6aed1a2c6162532d2f7a612b2b39fa5c4877bb29cd0d701e897594300",
+  "fingerprintBasis": "SHA-256 of sorted committed paths followed by NUL and exact Git blob bytes, using candidate-fingerprint.mjs source scopes, at main 620aa806fa8d7bbf820b41796cee9ddf90ca0591.",
+  "workspaceFingerprintReconciliation": {
+    "windowsWorkingTreeSha256": "1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b",
+    "committedSourceSha256": "fe08e9f6aed1a2c6162532d2f7a612b2b39fa5c4877bb29cd0d701e897594300",
+    "fileCount": 580,
+    "filesWithCheckoutLineEndingDifference": 493,
+    "allDifferencesAreCrLfConversion": true,
+    "meaning": "The original helper hashes raw working-tree bytes. Its Windows CRLF fingerprint remains the identifier for the local test evidence; exact Git blob bytes provide the portable released-source identifier. No missing or substantive changed application files were found.",
+    "privateEvidence": "test-results/old-design-migration/m10-pending/fingerprint-reconciliation.json"
+  },
   "preview": {
     "id": "dpl_CiTRhPmQSZr3g6b1dvMU4LmbD9wH",
     "state": "READY",

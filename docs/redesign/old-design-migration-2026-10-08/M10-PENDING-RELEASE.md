@@ -1,6 +1,8 @@
 # M10 follow-up production receipt — 12 October 2026
 
-The loading, image-contrast and Studio usability follow-ups are released through [PR50](https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/50). Main commit `620aa806fa8d7bbf820b41796cee9ddf90ca0591` produced READY production deployment `dpl_5gNeX33TEQwyiJSyS1toGiavZTSS`; its aliases include [the live website](https://www.rivyalivingart.com). Application fingerprint: `1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b`.
+The loading, image-contrast and Studio usability follow-ups are released through [PR50](https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/50). Main commit `620aa806fa8d7bbf820b41796cee9ddf90ca0591` produced READY production deployment `dpl_5gNeX33TEQwyiJSyS1toGiavZTSS`; its aliases include [the live website](https://www.rivyalivingart.com). Committed-source fingerprint: `fe08e9f6aed1a2c6162532d2f7a612b2b39fa5c4877bb29cd0d701e897594300`.
+
+The local QA reports retain Windows working-tree fingerprint `1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b`. The existing helper hashes raw file bytes, which include checkout line-ending conversion. Review exposed this platform distinction. A byte-level reconciliation of all 580 application files against the committed PR50 tree found 493 differences, each entirely explained by CRLF conversion; no substantive or missing application files were found. The portable released-source fingerprint hashes the same sorted path list, each path followed by NUL and its exact Git blob bytes. `m10-pending-release-evidence.json` records both identities and the reconciliation; do not treat the historical local hash as the Git-tree hash.
 
 ## Release verification
 

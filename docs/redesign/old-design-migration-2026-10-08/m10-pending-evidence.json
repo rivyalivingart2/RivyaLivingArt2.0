@@ -3,7 +3,8 @@
   "status": "verified-for-named-local-states-full-acceptance-open",
   "candidate": {
     "base": "a97c771ad95f609dd2a7de010b52d767a1d326b5",
-    "applicationSha256": "1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b"
+    "applicationSha256": "1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b",
+    "fingerprintBasis": "Windows working-tree bytes, including Git CRLF checkout conversion. The portable committed-source fingerprint and byte-level reconciliation are in m10-pending-release-evidence.json."
   },
   "branch": "codex/m10-pending-completion",
   "tests": {
