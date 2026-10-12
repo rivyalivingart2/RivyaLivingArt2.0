@@ -11,7 +11,7 @@ import {homePresentationId,validHomepageLayout,type HomepageLayout,type Presenta
 
 export function validPresentationDocument(d:PresentationDocument|undefined|null):d is PresentationDocument{
  if(d&&(d.layout?.film||Object.values(d.layout?.pages||{}).some(p=>p?.film))&&(!Array.isArray(d.media)||d.media.length!==1||!validSavedFilm(d.media[0])))return false;
- return !!d&&d.schemaVersion===1&&d.id===homePresentationId&&validHomepageLayout(d.layout)&&d.home?.id===homeId&&validContent(d.home,baselineContent.find(b=>b.id===homeId))&&!!d.home.homeSnapshot?.products&&Array.isArray(d.home.homeSnapshot.issues)&&Array.isArray(d.dependencies)&&Number.isSafeInteger(d.homeVersion)&&d.homeVersion>0&&(!(d.layout.composition||d.layout.pages)||(d.reference?.schemaVersion===1&&Array.isArray(d.reference.pages)&&Array.isArray(d.reference.dependencies)&&Array.isArray(d.reference.issues)));
+ return !!d&&d.schemaVersion===1&&d.id===homePresentationId&&validHomepageLayout(d.layout)&&d.home?.id===homeId&&validContent(d.home,baselineContent.find(b=>b.id===homeId))&&!!d.home.homeSnapshot?.products&&Array.isArray(d.home.homeSnapshot.issues)&&Array.isArray(d.dependencies)&&Number.isSafeInteger(d.homeVersion)&&d.homeVersion>0&&(!(d.layout.composition||d.layout.pages||d.layout.editorial)||(d.reference?.schemaVersion===1&&Array.isArray(d.reference.pages)&&Array.isArray(d.reference.dependencies)&&Array.isArray(d.reference.issues)));
 }
 /** Capture one coherent current publication, never a draft or a client snapshot. */
 export async function capturePresentation(layout:HomepageLayout):Promise<PresentationDocument>{
@@ -20,7 +20,7 @@ export async function capturePresentation(layout:HomepageLayout):Promise<Present
  const document=home as PresentationDocument['home'];
  if(!document.homepage)throw new Error('Homepage structure is unavailable');
  const snapshot=compileHomepageSnapshot(document,{...source,content:source.content.filter(r=>r.key!==homeId)});
- const reference=layout.composition||layout.pages?compileHomeReference(source,layout.pages):undefined;
+ const reference=layout.composition||layout.pages||layout.editorial?compileHomeReference(source,layout.pages,layout.editorial):undefined;
  const dependencies=[...snapshot.dependencies,{kind:'content' as const,key:homeId,version:row.version,fingerprint:row.fingerprint}];
  for(const dep of reference?.dependencies||[])if(!dependencies.some(other=>other.kind===dep.kind&&other.key===dep.key))dependencies.push(dep);
  const media=layout.film||Object.values(layout.pages||{}).some(p=>p.film)?[structuredClone(materialFilm)]:undefined;

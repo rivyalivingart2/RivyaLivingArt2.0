@@ -1,5 +1,5 @@
 {
-  "status": "local_m7_m8_verified_stop_before_m9",
+  "status": "m10_verified_scopes_m11_authorized_in_progress",
   "existingContentFrozen": true,
   "oldPageTemplates": 85,
   "oldSectionDefinitions": 74,
@@ -1096,9 +1096,10 @@
         "M8"
       ],
       "acceptance": "Ten-entry batches with factual sources, useful depth, duplicate check, exact draft preview and current policy links.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified for stated scope",
+      "owner": "Codex",
+      "evidence": "release-m5-m9-evidence.json",
+      "note": "120 per section published under owner approval; concepts/fictional samples explicitly permitted. Independent native/media/factual acceptance not inferred."
     },
     {
       "id": "M9-02",
@@ -1108,9 +1109,10 @@
         "M8"
       ],
       "acceptance": "One real project/feedback source per record; original quote preserved and translations linked to it, not counted twice.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified for stated scope",
+      "owner": "Codex",
+      "evidence": "release-m5-m9-evidence.json",
+      "note": "120 per section published under owner approval; concepts/fictional samples explicitly permitted. Independent native/media/factual acceptance not inferred."
     },
     {
       "id": "M9-03",
@@ -1120,9 +1122,10 @@
         "M8"
       ],
       "acceptance": "Verify identity/rights/disclosure, optimized size, alt/caption, focal point and desktop/mobile composition; existing assignments untouched.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified for stated scope",
+      "owner": "Codex",
+      "evidence": "release-m5-m9-evidence.json",
+      "note": "120 per section published under owner approval; concepts/fictional samples explicitly permitted. Independent native/media/factual acceptance not inferred."
     },
     {
       "id": "M9-04",
@@ -1132,9 +1135,10 @@
         "M8"
       ],
       "acceptance": "Native-review evidence supplied by a real reviewer; unresolved entries remain draft with reason.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "partially verified",
+      "owner": "Codex",
+      "evidence": "release-m5-m9-evidence.json",
+      "note": "120 per section published under owner approval; concepts/fictional samples explicitly permitted. Independent native/media/factual acceptance not inferred."
     },
     {
       "id": "M9-05",
@@ -1144,9 +1148,10 @@
         "M8"
       ],
       "acceptance": "Review new IDs and publication revisions before any authorized production batch; no existing record mutation or false completion count.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified for stated scope",
+      "owner": "Codex",
+      "evidence": "release-m5-m9-evidence.json",
+      "note": "120 per section published under owner approval; concepts/fictional samples explicitly permitted. Independent native/media/factual acceptance not inferred."
     },
     {
       "id": "M10-01",
@@ -1160,9 +1165,10 @@
         "M8"
       ],
       "acceptance": "Reference/current screenshots, long locales, empty/full lists, error/loading states and cropped subjects covered.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "partially verified",
+      "owner": "Codex",
+      "evidence": "m10-evidence.json",
+      "note": "Recorded scope passes where stated; full acceptance remains open. See M10-REGRESSION-REPORT.md."
     },
     {
       "id": "M10-02",
@@ -1176,9 +1182,10 @@
         "M8"
       ],
       "acceptance": "Before/after field comparison, role scope, stale saves, exact draft preview and revision recovery pass in isolated QA.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified for stated scope",
+      "owner": "Codex",
+      "evidence": "m10-evidence.json",
+      "note": "All original local rows unchanged; final permission/snapshot/recovery contract passes."
     },
     {
       "id": "M10-03",
@@ -1192,9 +1199,10 @@
         "M8"
       ],
       "acceptance": "Record hosted/local cold/warm samples and media/bundle budgets; field p75 remains separate from lab measurements.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "partially verified",
+      "owner": "Codex",
+      "evidence": "m10-evidence.json",
+      "note": "Recorded scope passes where stated; full acceptance remains open. See M10-REGRESSION-REPORT.md."
     },
     {
       "id": "M10-04",
@@ -1208,9 +1216,10 @@
         "M8"
       ],
       "acceptance": "Keyboard, contrast, zoom, reduced motion, screen-reader task log and physical-phone task log name actual evidence; unavailable equipment stays open.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "partially verified",
+      "owner": "Codex",
+      "evidence": "m10-evidence.json",
+      "note": "Recorded scope passes where stated; full acceptance remains open. See M10-REGRESSION-REPORT.md."
     },
     {
       "id": "M10-05",
@@ -1224,9 +1233,10 @@
         "M8"
       ],
       "acceptance": "No pending item silently marked done; real inquiry and real-user evidence require actual consent-safe observations.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified for stated scope",
+      "owner": "Codex",
+      "evidence": "m10-evidence.json",
+      "note": "Evidence gaps reconciled explicitly; no unperformed human/native/device/field check marked passed."
     },
     {
       "id": "M11-01",
@@ -1236,9 +1246,9 @@
         "M10"
       ],
       "acceptance": "List all module/template changes, protected baseline, migrations, licenses, test evidence, exclusions and remaining content dependencies.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified for stated scope",
+      "owner": "Codex",
+      "evidence": "M11-RELEASE.md"
     },
     {
       "id": "M11-02",
@@ -1248,9 +1258,9 @@
         "M10"
       ],
       "acceptance": "No secrets/raw customer evidence; application changes and content publication steps distinguished; approved scope explicit.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "in progress",
+      "owner": "Codex",
+      "evidence": "M11-RELEASE.md"
     },
     {
       "id": "M11-03",
@@ -1260,9 +1270,9 @@
         "M10"
       ],
       "acceptance": "Required repository checks pass; exact main SHA matches READY deployment; no automatic reset/seed/import.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "in progress",
+      "owner": "Codex",
+      "evidence": "M11-RELEASE.md"
     },
     {
       "id": "M11-04",
@@ -1272,9 +1282,9 @@
         "M10"
       ],
       "acceptance": "Current contacts/SEO/indexing/Imprint, routes, records and media verified using small read-only production checks.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "in progress",
+      "owner": "Codex",
+      "evidence": "M11-RELEASE.md"
     },
     {
       "id": "M11-05",
@@ -1284,9 +1294,9 @@
         "M10"
       ],
       "acceptance": "Prior compatible code and draft revisions available; missing genuine inquiry/field/human evidence remains open until observed.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "in progress",
+      "owner": "Codex",
+      "evidence": "M11-RELEASE.md"
     }
   ],
   "editorialTargets": {
@@ -1298,6 +1308,9 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "M0–M8 verified for their recorded engineering scopes. M5–M8 remain local. STOP before M9; permission required. Full parity and human/device acceptance remain M10. Production editorial remains 0/480. Labelled concepts and fictional samples are permitted by the later owner decision.",
-  "nextPhaseAuthorization": "M9 requires explicit owner permission; no push/release/production writes authorized"
+  "note": "M5-M9 and all 480 entries already live. M10 retains explicit visual/human/native/device/field gaps. M11 now authorized; see M11-RELEASE.md.",
+  "nextPhaseAuthorization": "Owner explicitly authorized M10 and M11 on 12 October 2026; detailed PR, checked release and Studio activation authorized.",
+  "m10Evidence": "m10-evidence.json",
+  "acceptanceMatrix": "m10-acceptance-matrix.json",
+  "releaseEvidence": "release-m5-m9-evidence.json"
 }

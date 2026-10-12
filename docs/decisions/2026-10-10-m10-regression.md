@@ -1,0 +1,7 @@
+# M10 regression after the authorized M5–M9 release
+
+The owner instructed: “all thing looking nice now put all of this in website and after it start to working on M10”. PR47 is merged and its exact production deployment is READY. All 480 new approved records are published through real Studio; 21 media references and 63 derivatives are available. Portfolio concepts and fictional testimonials remain labelled.
+
+M10 is now authorized. Run reproducible engineering checks, record and fix findings locally on `codex/m10-regression`, and maintain the acceptance matrix. Use the existing isolated QA environment for write tests. Production checks are read-only after the approved content activation. Existing products, content, translations, crops, contacts, customer records and history remain protected. Human/native-reader/physical-device/field evidence is never inferred from automated checks. This instruction does not turn an interim release into full M11 acceptance.
+
+On 12 October the owner explicitly resumed the paused work and asked the assistant to complete available checks independently. That lifts the pause and authorizes continued M10 engineering. It does not supply physical-device, actual screen-reader, independent native-reader or real-world evidence. The completed local candidate and exact remaining acceptance gaps are recorded in `docs/redesign/old-design-migration-2026-10-08/M10-CONTINUATION.md`. No additional release or production publication occurred in this resumed work.

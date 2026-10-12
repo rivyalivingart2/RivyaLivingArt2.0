@@ -1,3 +1,35 @@
+# Current authorization — M10 and M11, 12 October 2026
+
+The owner explicitly requested starting M10 and M11. Read `docs/decisions/2026-10-12-m10-m11.md`. Finish feasible M10 checks, release through a detailed PR into main, verify the exact Vercel production deployment and activate approved homepage editorial selections through real Studio save/preview/publish. Earlier M11 permission and local-only holds are superseded for this candidate. Do not replay the 480-entry release. Preserve protected data and retain honest human/native/device/field acceptance gaps.
+
+---
+
+# Previous checkpoint — M10 local regression candidate, 12 October 2026
+
+Read `docs/redesign/old-design-migration-2026-10-08/M10-CONTINUATION.md`, `M10-REGRESSION-REPORT.md` and `m10-evidence.json`. The new homepage editorial selections and three accessibility/responsive repairs are complete locally. Final build/type/lint, 344 unit tests, 403 built-server checks and six publication/recovery groups pass; every original local row matches both M10 baselines in all 13 scopes. The final browser evidence contains 73 accessibility scans with no confirmed violations and 544 responsive DOM checks. M10 remains partially verified: full visual/child-state comparison, scanner manual-review items, native zoom, real screen-reader/physical-phone/native-reader evidence and hosted/field performance remain open. M5–M9/480-entry production activation is already complete; never replay it. M11 and any new M10 release require explicit owner permission. Earlier pause and stop-before-M9 statements below are historical.
+
+---
+
+# Current authorization - M10 resumed 12 October 2026
+
+The owner explicitly requested "resume pending M10 work" and completion of the earlier website activation followed by M10. The pause is lifted. Continue from the preserved `codex/m10-regression` working tree and `M10-PAUSED-CHECKPOINT.md`; do not replay the completed 480-entry release. Finish M10 engineering, document actual evidence and retain separate human/native/device/field gates. New M10 changes remain local pending an applicable release instruction; M11 remains a separate phase.
+
+---
+
+# Paused at owner request - 10 October 2026
+
+The owner said: "stop wok i will stsrt it after some time at that time resume pending work". Stop implementation and testing until the owner resumes. No scheduled restart was requested. Resume from `M10-PAUSED-CHECKPOINT.md` in this migration directory; do not replay publication or restart earlier phases.
+
+PR47 is merged and the exact production deployment is READY. All 480 new records are live, all 480 public pages verified, and all original rows in 13 protected scopes match the pre-release digests. New M10 code remains local and uncommitted on `codex/m10-regression`.
+
+---
+
+# Current checkpoint — M5–M9 live, M10 in progress
+
+10 October 2026. PR47 merged to `f39136580bdfeb09ee37003b5a9a48fe111b0d21`; exact Vercel production `dpl_3FCaDo3ERESQkRLfb3Y4WpHaJM3a` is READY. All 480 authored M9 identities are now published (120 per section). All 21 image references and 63 derivatives are verified. Read `release-m5-m9-evidence.json`, `RELEASE-M5-M9.md` and `docs/decisions/2026-10-10-m10-regression.md`. Continue the authorized M10 checks on `codex/m10-regression`; new M10 work is local. Never replay the completed intake or publish existing translation drafts. Full visual/human/native/device/field acceptance and M11 remain separate.
+
+---
+
 # Current authorization — publish M5–M9 and begin M10
 
 10 October 2026. The owner approved the displayed work and requested putting it on the website, followed by M10. Read `docs/decisions/2026-10-10-release-m5-m9-and-m10.md`. Use a detailed PR into main, verify the exact deployment, ingest the 21 M9 images through real production storage, and publish the 480 new documents through the signed-in Studio workflow with fresh dependencies. Preserve every pre-existing record. Owner publication authorization does not invent native-reader, physical-device, independent editorial or genuine-customer evidence. The older local-only/stop-before-M10 checkpoints below are historical for this request.

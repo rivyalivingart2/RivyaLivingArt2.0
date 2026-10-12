@@ -287,6 +287,7 @@
 .workspace .list button { padding:16px; background:var(--elev-1); border-color:var(--workbench-line); border-radius:0; font-size:15px; line-height:1.5; }
 .workspace .list button[aria-pressed=true] { background:var(--elev-2); box-shadow:inset 3px 0 var(--workbench-accent); }
 .workspace .list small { margin-top:7px; font-size:12px; line-height:1.65; }
+.workspace button:is(:hover,[aria-pressed=true]) small { color:var(--ivory); }
 .workspace .editor h2 { font-size:24px; }
 .workspace .editor h3 { font-size:18px; }
 .workspace .tabs { display:flex; gap:10px; margin-bottom:20px; padding-bottom:12px; border-bottom:1px solid var(--workbench-line); overflow-x:auto; flex-wrap:nowrap; }
