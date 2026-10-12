@@ -71,3 +71,8 @@ node tools/old-design-migration/run-local.mjs tools/old-design-migration/m10-hom
 `RIVYA_MIGRATION_PG_MODULE` must identify the already-installed local PostgreSQL client module. Browser checks use CUA, the current built server, and actual completion of loading states. Accessibility scans use the installed axe-core with WCAG A/AA tags. Record actual `innerWidth` before interpreting emulation evidence. Detailed logs, lifecycle reports, performance samples and screenshots are under ignored `test-results/old-design-migration/`, with precise filenames in `m10-evidence.json`.
 
 Read `M10-CONTINUATION.md` and `m10-acceptance-matrix.json` before continuing. The matrix has all W01–W28 families and all 32 original Studio destinations; it preserves exclusions and unperformed checks rather than assigning a misleading completion percentage.
+
+
+## 12 October production follow-up
+
+PR48 released the tested candidate and the real Studio published homepage design revision 4. See M11-RELEASE.md and m11-evidence.json for nine additional focused accessibility scans, 26 passing production checks, all-original-row preservation across 13 scopes and four hosted timing samples. The silent film now has a visible associated sequence description; empty inquiry tables are omitted. Analytics gradient contrast is measured at a minimum 14.56:1. Remaining image/overlay contrast, full visual parity, native zoom, human/device/native-language and field evidence stay open. Hosted mobile LCP remains above target. Earlier evidence retains its own candidate and date; this follow-up does not relabel it as a fresh full-suite browser run.

@@ -1481,5 +1481,10 @@
   ],
   "humanScreenReader": "not run",
   "physicalDevice": "not run",
-  "independentNativeReader": "not run"
+  "independentNativeReader": "not run",
+  "followUpEvidence": {
+    "date": "2026-10-12T04:54:20.876Z",
+    "file": "m11-evidence.json",
+    "scope": "Nine focused scans; new-editor form, saved synthetic-order dialog, print CSS, empty follow-ups, silent-film description, analytics gradient contrast, Studio selections and live homepage. Existing family statuses remain partial; these samples do not establish all child/error-state parity."
+  }
 }
