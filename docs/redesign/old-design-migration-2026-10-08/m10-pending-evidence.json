@@ -1669,6 +1669,12 @@
       "Workshops stay unavailable until business confirmation; private receipt keeps authorization and expiration safeguards.",
       "Media and research use current provenance and revision-aware workflows, not the old upload/notes database.",
       "Studio serif heading mismatch corrected; current shell/control sizes remain adaptations."
+    ],
+    "reviewedRegion": "Top 720px of each opening; any extra duplicated paint in original 800px captures excluded.",
+    "rejectedAsFinalScreenshot": [
+      "health-mobile-390.png",
+      "health-mobile-390.jpg",
+      "health-desktop-1280.png"
     ]
   },
   "preservation": {
@@ -1690,14 +1696,19 @@
       "rivya_erasure_ledger": 0
     },
     "productionBeforeRecorded": true,
-    "productionWrites": false
+    "productionWrites": false,
+    "productionBeforeAfterOriginalRowsUnchanged": true
   },
   "release": {
     "authorization": "Owner requested all pending work, with prior explicit detailed PR to main and M10/M11 release instructions. These user instructions take precedence over generated local-only follow-up notes.",
-    "state": "prepared-not-yet-pushed",
+    "state": "released-through-PR50",
     "priorPublishedEntries": 480,
     "priorHomepageRevision": 4,
-    "replayForbidden": true
+    "replayForbidden": true,
+    "pr": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/50",
+    "main": "620aa806fa8d7bbf820b41796cee9ddf90ca0591",
+    "deployment": "dpl_5gNeX33TEQwyiJSyS1toGiavZTSS",
+    "receipt": "m10-pending-release-evidence.json"
   },
   "remaining": [
     "Full section/scroll/child/create/edit/print/hover/focus variant comparison and disposition across the full route/section registers.",

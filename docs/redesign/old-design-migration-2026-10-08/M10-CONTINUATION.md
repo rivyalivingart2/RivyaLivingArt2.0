@@ -1,3 +1,15 @@
+# Current checkpoint — PR50 released; remaining acceptance evidence explicit
+
+12 October 2026: PR50 merged at `620aa806fa8d7bbf820b41796cee9ddf90ca0591`; READY production `dpl_5gNeX33TEQwyiJSyS1toGiavZTSS` and the live domain match. Application fingerprint `1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b`. Read `M10-PENDING-RELEASE.md`, `m10-pending-release-evidence.json`, `M10-PENDING-COMPLETION.md` and `m10-pending-evidence.json` first. The local loading, contrast and Studio pagination/typography/card fixes are now released. Earlier prepared/local-only follow-up notes below are historical.
+
+All 26 production checks pass; every original production ID/digest is unchanged in 13 scopes. Images and play/pause of the described eight-second film verified. The 480 entries and homepage revision 4 were not replayed. Fresh local build/type, 344 unit and 403 runtime checks pass; ten focused accessibility scans have no confirmed violations; 74 additional manual contrast targets pass.
+
+All seven previously missing public opening pairs and two unreliable Studio references now have inspected desktop/mobile captures. Full section/child-state visual acceptance remains partial. Native zoom, human screen-reader/physical-phone, independent Hindi/Gujarati and factual/media-rights evidence remain open. Fresh hosted cold LCP home3.256s/collection2.928s still exceeds2.5s; repeats1.448s/0.972s pass that sample target. Field p75 and real inquiries remain separate.
+
+QA server and isolated PostgreSQL stopped with data retained. Temporary browser overrides reset. No automation scheduled. Continue from this evidence; do not repeat imports/publications, reset protected data, or include excluded scrapers/old-product transfers/backups.
+
+---
+
 # Current checkpoint — M10 Studio fixes and recovered comparisons; release prepared
 
 12 October 2026: branch `codex/m10-pending-completion` includes the prior loading and contrast work plus 25-row Content Health/Content Gaps pagination, display-serif Studio headings and responsive summary cards. Read `M10-PENDING-COMPLETION.md`, `m10-pending-evidence.json` and `docs/decisions/2026-10-12-m10-pending-completion.md`. Application fingerprint: `1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b`.
