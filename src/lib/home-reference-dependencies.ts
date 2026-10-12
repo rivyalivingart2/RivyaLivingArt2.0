@@ -1,3 +1,5 @@
+import type {HomeEditorialSelection} from './home-editorial-model';
+import {captureHomeEditorial,localizeHomeEditorial} from './home-editorial';
 import {baselineContent,localizeContent,validContent,type ContentDocument} from './content-model';
 import {compilePageSnapshot} from './page-dependencies';
 import type {DependencySource} from './homepage-dependencies';
@@ -7,7 +9,7 @@ import type {HomeReferenceSnapshot} from './home-reference-model';
 import {pageDesignSource,pageDesignIssues,sharedPageRoutes,type PageDesigns} from './page-design-model';
 const routes=['/architects','/our-story','/commission'];
 /** Immutable read adapter: only current validated publications; no old facts/defaults. */
-export function compileHomeReference(source:DependencySource,designs:PageDesigns={}):HomeReferenceSnapshot{
+export function compileHomeReference(source:DependencySource,designs:PageDesigns={},selection?:HomeEditorialSelection):HomeReferenceSnapshot{
  const pages:HomeReferenceSnapshot['pages']=[],dependencies:HomeDependency[]=[],issues:string[]=[];
  const designed=Object.entries(designs),required=new Set(designed.flatMap(([route,design])=>[route,...sharedPageRoutes(design)]));
  for(const route of new Set([...routes,...required])){
@@ -20,6 +22,8 @@ export function compileHomeReference(source:DependencySource,designs:PageDesigns
   for(const dep of [{kind:'content' as const,key:row.key,version:row.version,fingerprint:row.fingerprint},...pageSnapshot.dependencies])if(!dependencies.some(other=>other.kind===dep.kind&&other.key===dep.key))dependencies.push(dep);
   issues.push(...pageSnapshot.issues.map(issue=>route+': '+issue));
  }
- return {schemaVersion:1,pages,dependencies,issues:[...new Set(issues)]};
+ const editorial=captureHomeEditorial(source,selection);
+ for(const dep of editorial.dependencies)if(!dependencies.some(d=>d.kind===dep.kind&&d.key===dep.key))dependencies.push(dep);
+ return {schemaVersion:1,pages,dependencies,issues:[...new Set([...issues,...editorial.issues])],...(selection?{portfolio:editorial.portfolio,feedback:editorial.feedback,mediaPaths:editorial.mediaPaths}:{})};
 }
-export function localizeHomeReference(reference:HomeReferenceSnapshot,locale:Locale):HomeReferenceSnapshot{return {...reference,pages:reference.pages.map(p=>({...p,document:localizeContent(p.document,locale)}))};}
+export function localizeHomeReference(reference:HomeReferenceSnapshot,locale:Locale):HomeReferenceSnapshot{return {...localizeHomeEditorial(reference,locale),pages:reference.pages.map(p=>({...p,document:localizeContent(p.document,locale)}))};}

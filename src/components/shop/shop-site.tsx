@@ -61,18 +61,17 @@ function Home({products,articles}:{products:ShopProduct[];articles:ContentDocume
 export async function ShopSite({route}:{route:string}){
  // Start the render-local publication read with the independent locale read.
  // The publication reader still validates current state on every request.
- const [locale]=await Promise.all([publicLocale(),publishedSource()]);
+ const [locale,presentation]=await Promise.all([publicLocale(),route==='/'||isDesignPageRoute(route)?publishedPresentation():Promise.resolve(null),publishedSource()]);
  const tr=(text:string)=>journeyText(locale,text);
  const needsCatalogue=route==='/'||route.startsWith('/pieces/')||['/collectible-design','/memory-art','/personal-art','/search','/commission','/preserve','/personalize','/portfolio'].includes(route);
  const [products,documents,business]=await Promise.all([needsCatalogue?publishedProducts(locale):Promise.resolve([]),route==='/'||isDiscoveryRoute(route)?publishedContent(locale,route):Promise.resolve([]),publishedBusiness()]);let content:React.ReactNode;
  if(route==='/'){
   const home=documents.find(d=>d.id==='page:home'&&d.homepage&&d.homeSnapshot);
-  const [copy,presentation]=await Promise.all([publishedCopy(locale),publishedPresentation()]);
-  const reference=presentation?.layout.composition?compileHomeReference(await publishedSource()):undefined;
+  const copy=await publishedCopy(locale);
+  const reference=presentation?.layout.composition?compileHomeReference(await publishedSource(),{},presentation.layout.editorial):undefined;
   content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={copy.values} locale={locale} presentation={presentation} reference={reference} film={presentation?.layout.film?materialFilm:undefined}/></>:<Home products={products} articles={(await publishedContent(locale,undefined,'/')).filter(a=>a.kind==='article')}/>;
  }
  else if(isDiscoveryRoute(route)&&documents.some(d=>d.route===route)){
-  const presentation=isDesignPageRoute(route)?await publishedPresentation():null;
   const design=isDesignPageRoute(route)?presentation?.layout.pages?.[route]:undefined;
   content=<CollectionDocument document={documents.find(d=>d.route===route)!} design={design} designVersion={design?presentation?.version:undefined}/>;
  }

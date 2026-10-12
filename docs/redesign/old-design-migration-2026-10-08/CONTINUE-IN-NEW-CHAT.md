@@ -1,3 +1,23 @@
+# Current checkpoint — M10 resumed and verified for stated scope
+
+12 October: read `M10-CONTINUATION.md`, `M10-REGRESSION-REPORT.md`, `m10-evidence.json` and `m10-acceptance-matrix.json` first. The local homepage selection workflow and accessibility/filter repairs pass the final build/type/lint, 344 unit and 403 built-server checks. All original local rows are preserved in 13 scopes. The browser matrix records 73 accessibility scans and 544 responsive checks. Full visual/human/native/device/field acceptance and hosted performance remain open, so M10 is partially verified. M5–M9 is already live; do not replay publication. M11/new M10 release still requires explicit permission. The old pause below is historical.
+
+---
+
+# Current authorization - M10 resumed 12 October 2026
+
+The owner explicitly requested "resume pending M10 work" and completion of the earlier website activation followed by M10. The pause is lifted. Continue from the preserved `codex/m10-regression` working tree and `M10-PAUSED-CHECKPOINT.md`; do not replay the completed 480-entry release. Finish M10 engineering, document actual evidence and retain separate human/native/device/field gates. New M10 changes remain local pending an applicable release instruction; M11 remains a separate phase.
+
+---
+
+# Paused at owner request - 10 October 2026
+
+The owner said: "stop wok i will stsrt it after some time at that time resume pending work". Stop implementation and testing until the owner resumes. No scheduled restart was requested. Resume from `M10-PAUSED-CHECKPOINT.md` in this migration directory; do not replay publication or restart earlier phases.
+
+PR47 is merged and the exact production deployment is READY. All 480 new records are live, all 480 public pages verified, and all original rows in 13 protected scopes match the pre-release digests. New M10 code remains local and uncommitted on `codex/m10-regression`.
+
+---
+
 # Current authorization — publish M5–M9 and begin M10
 
 10 October 2026. The owner approved the displayed work and requested putting it on the website, followed by M10. Read `docs/decisions/2026-10-10-release-m5-m9-and-m10.md`. Use a detailed PR into main, verify the exact deployment, ingest the 21 M9 images through real production storage, and publish the 480 new documents through the signed-in Studio workflow with fresh dependencies. Preserve every pre-existing record. Owner publication authorization does not invent native-reader, physical-device, independent editorial or genuine-customer evidence. The older local-only/stop-before-M10 checkpoints below are historical for this request.

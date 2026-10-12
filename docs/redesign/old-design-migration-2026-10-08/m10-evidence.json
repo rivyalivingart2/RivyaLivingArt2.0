@@ -1,0 +1,1044 @@
+{
+  "date": "2026-10-12",
+  "phase": "M10",
+  "status": "partially verified; engineering candidate local; acceptance gaps explicit",
+  "candidate": {
+    "base": "f39136580bdfeb09ee37003b5a9a48fe111b0d21",
+    "applicationSha256": "21bdace151948dcebd98b5d79d72d4f8a8e401d91fbdfd9b06a903621b2548c2"
+  },
+  "release": "No M10 push, PR, merge, deployment or production content change",
+  "priorProduction": "release-m5-m9-evidence.json",
+  "changes": [
+    "Explicit ordered homepage Portfolio and Testimonial selections with preserved disclosures, crops and exact dependency snapshots",
+    "Saved preview, stale publication rejection, safe withdrawal and restore-to-draft",
+    "Hindi/Gujarati disclosure interface labels with existing reviewed-content fallback",
+    "Independent presentation/source reads start together",
+    "Selected/hovered Studio record status contrast",
+    "Public and Studio applied-filter groups have an accessible role",
+    "Mobile editorial filter trigger hidden on desktop"
+  ],
+  "validation": {
+    "build": "PASS",
+    "typescript": "PASS in final production build",
+    "editedSourceLint": "PASS",
+    "unitTests": 344,
+    "builtServerChecks": 403,
+    "homepageWorkflowGroups": 6,
+    "workflowChecks": [
+      {
+        "name": "Anonymous and cross-origin requests denied; editor cannot publish",
+        "passed": true
+      },
+      {
+        "name": "Editor saves explicit choices; exact private preview preserves disclosures and desktop/mobile crops",
+        "passed": true
+      },
+      {
+        "name": "Changed source refuses stale publication while old saved preview remains exact",
+        "passed": true
+      },
+      {
+        "name": "Fresh saved design publishes and the anonymous homepage shows both explicitly selected sections",
+        "passed": true
+      },
+      {
+        "name": "Restore creates a new draft with fresh dependencies and does not republish",
+        "passed": true
+      },
+      {
+        "name": "Withdrawal removes the public selection and blocks old or newly unresolved presentation publication",
+        "passed": true
+      }
+    ],
+    "priorM5M6M7M8": "Fresh isolated contracts passed 10 October, retained in M10-PAUSED-CHECKPOINT.md; not relabelled as 12 October reruns",
+    "logs": [
+      "test-results/old-design-migration/m10-final-candidate-build.log",
+      "test-results/old-design-migration/m10-final-candidate-lint.log",
+      "test-results/old-design-migration/m10-final-candidate-unit.log",
+      "test-results/old-design-migration/m10-final-candidate-runtime.log",
+      "test-results/old-design-migration/m10-final-candidate-workflow.log"
+    ]
+  },
+  "preservation": {
+    "comparisons": [
+      {
+        "before": "local-m10-before-private.json",
+        "beforeAt": "2026-10-10T12:32:53.624Z",
+        "afterAt": "2026-10-12T03:57:11.900Z",
+        "scopes": {
+          "rivya_catalogue": {
+            "originalRows": 120,
+            "afterRows": 120,
+            "originalRowsUnchanged": true
+          },
+          "rivya_content": {
+            "originalRows": 579,
+            "afterRows": 599,
+            "originalRowsUnchanged": true
+          },
+          "rivya_public_media": {
+            "originalRows": 152,
+            "afterRows": 152,
+            "originalRowsUnchanged": true
+          },
+          "rivya_business_settings": {
+            "originalRows": 1,
+            "afterRows": 1,
+            "originalRowsUnchanged": true
+          },
+          "rivya_revisions": {
+            "originalRows": 664,
+            "afterRows": 725,
+            "originalRowsUnchanged": true
+          },
+          "rivya_inquiries": {
+            "originalRows": 2,
+            "afterRows": 2,
+            "originalRowsUnchanged": true
+          },
+          "rivya_studio_orders": {
+            "originalRows": 5,
+            "afterRows": 7,
+            "originalRowsUnchanged": true
+          },
+          "rivya_studio_order_events": {
+            "originalRows": 6,
+            "afterRows": 8,
+            "originalRowsUnchanged": true
+          },
+          "rivya_inquiry_notes": {
+            "originalRows": 0,
+            "afterRows": 0,
+            "originalRowsUnchanged": true
+          },
+          "rivya_references": {
+            "originalRows": 0,
+            "afterRows": 0,
+            "originalRowsUnchanged": true
+          },
+          "rivya_staff": {
+            "originalRows": 3,
+            "afterRows": 7,
+            "originalRowsUnchanged": true
+          },
+          "rivya_privacy_controls": {
+            "originalRows": 5,
+            "afterRows": 7,
+            "originalRowsUnchanged": true
+          },
+          "rivya_erasure_ledger": {
+            "originalRows": 0,
+            "afterRows": 0,
+            "originalRowsUnchanged": true
+          }
+        },
+        "allOriginalRowsUnchanged": true
+      },
+      {
+        "before": "local-m10-resume-before-private.json",
+        "beforeAt": "2026-10-12T03:21:08.868Z",
+        "afterAt": "2026-10-12T03:57:11.900Z",
+        "scopes": {
+          "rivya_catalogue": {
+            "originalRows": 120,
+            "afterRows": 120,
+            "originalRowsUnchanged": true
+          },
+          "rivya_content": {
+            "originalRows": 595,
+            "afterRows": 599,
+            "originalRowsUnchanged": true
+          },
+          "rivya_public_media": {
+            "originalRows": 152,
+            "afterRows": 152,
+            "originalRowsUnchanged": true
+          },
+          "rivya_business_settings": {
+            "originalRows": 1,
+            "afterRows": 1,
+            "originalRowsUnchanged": true
+          },
+          "rivya_revisions": {
+            "originalRows": 711,
+            "afterRows": 725,
+            "originalRowsUnchanged": true
+          },
+          "rivya_inquiries": {
+            "originalRows": 2,
+            "afterRows": 2,
+            "originalRowsUnchanged": true
+          },
+          "rivya_studio_orders": {
+            "originalRows": 7,
+            "afterRows": 7,
+            "originalRowsUnchanged": true
+          },
+          "rivya_studio_order_events": {
+            "originalRows": 8,
+            "afterRows": 8,
+            "originalRowsUnchanged": true
+          },
+          "rivya_inquiry_notes": {
+            "originalRows": 0,
+            "afterRows": 0,
+            "originalRowsUnchanged": true
+          },
+          "rivya_references": {
+            "originalRows": 0,
+            "afterRows": 0,
+            "originalRowsUnchanged": true
+          },
+          "rivya_staff": {
+            "originalRows": 5,
+            "afterRows": 7,
+            "originalRowsUnchanged": true
+          },
+          "rivya_privacy_controls": {
+            "originalRows": 7,
+            "afterRows": 7,
+            "originalRowsUnchanged": true
+          },
+          "rivya_erasure_ledger": {
+            "originalRows": 0,
+            "afterRows": 0,
+            "originalRowsUnchanged": true
+          }
+        },
+        "allOriginalRowsUnchanged": true
+      }
+    ]
+  },
+  "accessibility": {
+    "tool": "Existing axe-core in CUA browser; WCAG 2 A/AA, 2.1 AA and 2.2 AA tag sets",
+    "scans": 73,
+    "confirmedViolations": 0,
+    "scopes": [
+      {
+        "route": "/journal",
+        "width": 1163,
+        "height": 920,
+        "passes": 30,
+        "manualReview": []
+      },
+      {
+        "route": "/journal (open filter dialog)",
+        "width": 390,
+        "height": 844,
+        "passes": 17,
+        "manualReview": []
+      },
+      {
+        "route": "/journal?q=m10-no-result-unique-query",
+        "width": 390,
+        "height": 844,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/process",
+        "width": 1163,
+        "height": 920,
+        "passes": 29,
+        "manualReview": []
+      },
+      {
+        "route": "/studio",
+        "width": 1440,
+        "height": 900,
+        "passes": 29,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/inquiries",
+        "width": 1440,
+        "height": 900,
+        "passes": 29,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/analytics",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 10
+          }
+        ]
+      },
+      {
+        "route": "/studio/activity",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/products",
+        "width": 1440,
+        "height": 900,
+        "passes": 28,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "route": "/studio/categories",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/media",
+        "width": 1440,
+        "height": 900,
+        "passes": 28,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/import",
+        "width": 1440,
+        "height": 900,
+        "passes": 25,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/exports",
+        "width": 1440,
+        "height": 900,
+        "passes": 26,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/research",
+        "width": 1440,
+        "height": 900,
+        "passes": 25,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/content-gaps",
+        "width": 1440,
+        "height": 900,
+        "passes": 23,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/site-copy",
+        "width": 1440,
+        "height": 900,
+        "passes": 28,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/site-images",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/sections",
+        "width": 1440,
+        "height": 900,
+        "passes": 31,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/process",
+        "width": 1440,
+        "height": 900,
+        "passes": 29,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/materials",
+        "width": 1440,
+        "height": 900,
+        "passes": 29,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/navigation",
+        "width": 1440,
+        "height": 900,
+        "passes": 26,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/forms",
+        "width": 1440,
+        "height": 900,
+        "passes": 28,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "route": "/studio/journal",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/portfolio",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/testimonials",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/faqs",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/pages",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/landing-pages",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/settings",
+        "width": 1440,
+        "height": 900,
+        "passes": 23,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/seo",
+        "width": 1440,
+        "height": 900,
+        "passes": 25,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/staff",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/subscribers",
+        "width": 1440,
+        "height": 900,
+        "passes": 25,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/content-health",
+        "width": 1440,
+        "height": 900,
+        "passes": 23,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/content-lab",
+        "width": 1440,
+        "height": 900,
+        "passes": 25,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/follow-ups",
+        "width": 1440,
+        "height": 900,
+        "passes": 28,
+        "manualReview": [
+          {
+            "id": "th-has-data-cells",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "route": "/studio/translations",
+        "width": 1440,
+        "height": 900,
+        "passes": 26,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/content-register",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/editorial-order",
+        "width": 1440,
+        "height": 900,
+        "passes": 29,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/content",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/legacy",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/studio/route-review",
+        "width": 1440,
+        "height": 900,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "height": 844,
+        "passes": 29,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 40
+          },
+          {
+            "id": "video-caption",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "route": "/our-story",
+        "width": 390,
+        "height": 844,
+        "passes": 29,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "route": "/process",
+        "width": 390,
+        "height": 844,
+        "passes": 29,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 5
+          },
+          {
+            "id": "video-caption",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "route": "/materials-care",
+        "width": 390,
+        "height": 844,
+        "passes": 29,
+        "manualReview": []
+      },
+      {
+        "route": "/architects",
+        "width": 390,
+        "height": 844,
+        "passes": 29,
+        "manualReview": []
+      },
+      {
+        "route": "/contact",
+        "width": 390,
+        "height": 844,
+        "passes": 29,
+        "manualReview": []
+      },
+      {
+        "route": "/search",
+        "width": 390,
+        "height": 844,
+        "passes": 30,
+        "manualReview": []
+      },
+      {
+        "route": "/saved-pieces",
+        "width": 390,
+        "height": 844,
+        "passes": 27,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "route": "/journal",
+        "width": 390,
+        "height": 844,
+        "passes": 28,
+        "manualReview": []
+      },
+      {
+        "route": "/portfolio",
+        "width": 390,
+        "height": 844,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/testimonials",
+        "width": 390,
+        "height": 844,
+        "passes": 27,
+        "manualReview": []
+      },
+      {
+        "route": "/pieces/river-channel",
+        "width": 390,
+        "height": 844,
+        "passes": 31,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "route": "/privacy",
+        "width": 390,
+        "height": 844,
+        "passes": 28,
+        "manualReview": []
+      },
+      {
+        "route": "/terms",
+        "width": 390,
+        "height": 844,
+        "passes": 28,
+        "manualReview": []
+      },
+      {
+        "route": "/accessibility",
+        "width": 390,
+        "height": 844,
+        "passes": 28,
+        "manualReview": []
+      },
+      {
+        "route": "/shipping-delivery",
+        "width": 390,
+        "height": 844,
+        "passes": 28,
+        "manualReview": []
+      },
+      {
+        "route": "/returns-cancellations",
+        "width": 390,
+        "height": 844,
+        "passes": 28,
+        "manualReview": []
+      },
+      {
+        "route": "/imprint",
+        "width": 390,
+        "height": 844,
+        "passes": 30,
+        "manualReview": []
+      },
+      {
+        "route": "/large-format",
+        "width": 390,
+        "height": 844,
+        "passes": 26,
+        "manualReview": []
+      },
+      {
+        "route": "/memory-art",
+        "width": 390,
+        "height": 844,
+        "passes": 30,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 8
+          }
+        ]
+      },
+      {
+        "route": "/personal-art",
+        "width": 390,
+        "height": 844,
+        "passes": 30,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 7
+          }
+        ]
+      },
+      {
+        "route": "/faq",
+        "width": 390,
+        "height": 844,
+        "passes": 29,
+        "manualReview": []
+      },
+      {
+        "route": "/commission",
+        "width": 390,
+        "height": 844,
+        "passes": 30,
+        "manualReview": []
+      },
+      {
+        "route": "/collectible-design",
+        "width": 390,
+        "height": 844,
+        "passes": 30,
+        "manualReview": []
+      },
+      {
+        "route": "/pieces/river-channel/customize",
+        "width": 390,
+        "height": 844,
+        "passes": 29,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "route": "/commission/customize",
+        "width": 390,
+        "height": 844,
+        "passes": 28,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "route": "/preserve",
+        "width": 390,
+        "height": 844,
+        "passes": 30,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 7
+          }
+        ]
+      },
+      {
+        "route": "/personalize",
+        "width": 390,
+        "height": 844,
+        "passes": 30,
+        "manualReview": [
+          {
+            "id": "color-contrast",
+            "count": 7
+          }
+        ]
+      },
+      {
+        "route": "/journal/m6-qa-452c7722-373af31d",
+        "width": 390,
+        "height": 844,
+        "passes": 28,
+        "manualReview": []
+      },
+      {
+        "route": "/portfolio/m7-qa-67ab77cc",
+        "width": 390,
+        "height": 844,
+        "passes": 28,
+        "manualReview": []
+      },
+      {
+        "route": "/testimonials/m5-qa-0ad81e67-fictional",
+        "width": 390,
+        "height": 844,
+        "passes": 28,
+        "manualReview": []
+      },
+      {
+        "route": "/workshops (unconfirmed / 404)",
+        "width": 390,
+        "height": 844,
+        "passes": 10,
+        "manualReview": []
+      }
+    ],
+    "evidence": "test-results/old-design-migration/m10-resume/accessibility-final.json",
+    "limits": "Loaded representative states only, not all child/edit/error states or a human screen-reader certification. Image-overlay contrast, captions and empty table review items remain unresolved."
+  },
+  "responsive": {
+    "samples": 544,
+    "distinctRoutes": 68,
+    "widths": [
+      1920,
+      1440,
+      1200,
+      992,
+      768,
+      512,
+      390,
+      320
+    ],
+    "height": 900,
+    "horizontalOverflow": 0,
+    "visibleH1Failures": 0,
+    "missingAltAttributes": 0,
+    "evidence": "test-results/old-design-migration/m10-resume/layout-grid-final.json",
+    "limits": "DOM layout checks; semantic alt quality, complete old/new visual parity, native zoom and physical devices are separate."
+  },
+  "interactions": {
+    "at": "2026-10-12T03:55:02.804Z",
+    "environment": "CUA desktop browser with simulated viewport; not human or physical-device acceptance",
+    "filterDesktopHidden": true,
+    "filterPhoneVisible": true,
+    "filterTabLoop": true,
+    "noResultsStatusFocused": true,
+    "clearFiltersRecovered": true,
+    "filmPlay": {
+      "currentTime": 7.458135,
+      "duration": 8.042,
+      "muted": true,
+      "readyState": 4,
+      "autoplay": false
+    },
+    "filmPauseButtonVerified": true,
+    "hindiDisclosureObserved": true,
+    "gujaratiDisclosureObserved": true,
+    "reducedMotion": {
+      "matches": true,
+      "films": [
+        {
+          "paused": true,
+          "autoplay": false,
+          "preload": "none",
+          "currentTime": 0
+        }
+      ],
+      "transitions": [
+        "0s",
+        "0s",
+        "0s",
+        "0s",
+        "0s",
+        "0s",
+        "0s",
+        "0s"
+      ]
+    }
+  },
+  "performance": {
+    "samples": [
+      {
+        "site": "hosted",
+        "route": "/",
+        "cache": "bypassed",
+        "profile": "CPU4x, 150ms latency, 1.6Mbps down, 750Kbps up; unexpected 1280x1000 viewport retained after timeout",
+        "width": 1280,
+        "height": 720,
+        "lcpMs": 36496,
+        "cls": 0,
+        "ttfbMs": 4138,
+        "maxObservedMenuEventMs": 0,
+        "resourceTransferBytes": 885686
+      },
+      {
+        "site": "hosted",
+        "route": "/",
+        "cache": "bypassed-repeat",
+        "profile": "CPU4x, 150ms latency, 1.6Mbps down, 750Kbps up; actual 1280x720",
+        "width": 1280,
+        "height": 720,
+        "lcpMs": 6900,
+        "cls": 0,
+        "ttfbMs": 3237,
+        "maxObservedMenuEventMs": 0,
+        "resourceTransferBytes": 920600
+      },
+      {
+        "site": "hosted",
+        "route": "/",
+        "cache": "bypassed",
+        "profile": "390x844 DPR1 desktop emulation, CPU4x, 150ms latency, 1.6Mbps down, 750Kbps up",
+        "width": 390,
+        "height": 844,
+        "lcpMs": 7600,
+        "cls": 0,
+        "ttfbMs": 3357,
+        "maxObservedMenuEventMs": 144,
+        "resourceTransferBytes": 902286
+      },
+      {
+        "site": "hosted",
+        "route": "/",
+        "cache": "enabled-warm",
+        "profile": "390x844 DPR1 desktop emulation, CPU4x, 150ms latency, 1.6Mbps down, 750Kbps up",
+        "width": 390,
+        "height": 844,
+        "lcpMs": 4940,
+        "cls": 0,
+        "ttfbMs": 3541,
+        "maxObservedMenuEventMs": 96,
+        "resourceTransferBytes": 9634
+      },
+      {
+        "site": "hosted",
+        "route": "/collectible-design",
+        "cache": "bypassed",
+        "profile": "390x844 DPR1 desktop emulation, CPU4x, 150ms latency, 1.6Mbps down, 750Kbps up",
+        "width": 390,
+        "height": 844,
+        "lcpMs": 13884,
+        "cls": 0,
+        "ttfbMs": 10405,
+        "maxObservedMenuEventMs": 112,
+        "resourceTransferBytes": 745247
+      },
+      {
+        "site": "hosted",
+        "route": "/collectible-design",
+        "cache": "enabled-warm",
+        "profile": "390x844 DPR1 desktop emulation, CPU4x, 150ms latency, 1.6Mbps down, 750Kbps up",
+        "width": 390,
+        "height": 844,
+        "lcpMs": 4236,
+        "cls": 0,
+        "ttfbMs": 2909,
+        "maxObservedMenuEventMs": 96,
+        "resourceTransferBytes": 3836
+      },
+      {
+        "site": "local",
+        "route": "/",
+        "cache": "cache-bypassed",
+        "profile": "390x844 DPR1 desktop emulation, CPU4x, 150ms latency, 1.6Mbps down, 750Kbps up",
+        "width": 390,
+        "height": 844,
+        "lcpMs": 2288,
+        "cls": 0.00007000734204083466,
+        "ttfbMs": 670,
+        "maxObservedMenuEventMs": 120,
+        "resourceTransferBytes": 903426
+      },
+      {
+        "site": "local",
+        "route": "/",
+        "cache": "warm",
+        "profile": "390x844 DPR1 desktop emulation, CPU4x, 150ms latency, 1.6Mbps down, 750Kbps up",
+        "width": 390,
+        "height": 844,
+        "lcpMs": 472,
+        "cls": 0,
+        "ttfbMs": 165,
+        "maxObservedMenuEventMs": 120,
+        "resourceTransferBytes": 3244
+      },
+      {
+        "site": "local",
+        "route": "/collectible-design",
+        "cache": "cache-bypassed",
+        "profile": "390x844 DPR1 desktop emulation, CPU4x, 150ms latency, 1.6Mbps down, 750Kbps up",
+        "width": 390,
+        "height": 844,
+        "lcpMs": 1536,
+        "cls": 0,
+        "ttfbMs": 249,
+        "maxObservedMenuEventMs": 120,
+        "resourceTransferBytes": 741977
+      },
+      {
+        "site": "local",
+        "route": "/collectible-design",
+        "cache": "warm",
+        "profile": "390x844 DPR1 desktop emulation, CPU4x, 150ms latency, 1.6Mbps down, 750Kbps up",
+        "width": 390,
+        "height": 844,
+        "lcpMs": 456,
+        "cls": 0,
+        "ttfbMs": 123,
+        "maxObservedMenuEventMs": 80,
+        "resourceTransferBytes": 1229
+      }
+    ],
+    "candidateTiming": "Local samples precede only the final contrast/filter CSS and role changes; same server-render performance change. Hosted samples are the existing PR47 production application.",
+    "protocol": "Cache-bypassed is browser cache disabled, not a globally cold server/CDN. Warm uses enabled browser cache. DPR1 desktop emulation with CPU4x, 150ms RTT, 1.6Mbps down and 750Kbps up. One pair per route, not a distribution. Two accidental desktop homepage diagnostics are retained separately.",
+    "acceptance": "Hosted mobile LCP exceeds 2500ms; local samples pass that target. Observed menu event duration is not field INP. Field p75 is unavailable.",
+    "evidence": "test-results/old-design-migration/m10-resume/performance.json"
+  },
+  "visual": {
+    "reference": "8 October saved OLDWEBSITE screenshots from source register; not new live old-site capture",
+    "reviewed": [
+      "Homepage opening",
+      "Journal opening",
+      "Process opening",
+      "Studio Journal opening",
+      "Homepage editor controls",
+      "Gujarati footer at 320px"
+    ],
+    "differences": "Current logo, text, image ownership and eligible services retained. Public display type/dark surfaces and Studio blue panels follow the reference. Studio navigation/filter layout is adapted to the functional base. Full 85-template/74-section visual acceptance is not established.",
+    "evidence": [
+      "test-results/old-design-migration/m10-resume/compare-home.png",
+      "test-results/old-design-migration/m10-resume/compare-journal.png",
+      "test-results/old-design-migration/m10-resume/compare-process.png",
+      "test-results/old-design-migration/m10-resume/compare-studio-editorial.png",
+      "test-results/old-design-migration/m10-resume/final-studio-selections.png",
+      "test-results/old-design-migration/m10-resume/gujarati-mobile.png"
+    ]
+  },
+  "openGates": [
+    "Hosted performance and final-candidate hosted measurement after an authorized release",
+    "Full section-by-section old/new visual comparison and materially different child/edit/print/error states",
+    "Manual resolution of scanner image-overlay contrast, video-caption and empty-table review items",
+    "Native 200%/400% browser zoom and actual screen-reader task log",
+    "Physical-phone testing",
+    "Independent Hindi/Gujarati native-reader review; existing draft translations remain unpublished",
+    "Independent editorial/media-rights/factual evidence as applicable; labelled fiction/concepts never genuine customer evidence",
+    "Real-user field performance and consent-safe real inquiry observation",
+    "M11 release authorization, detailed PR and exact deployment verification"
+  ]
+}

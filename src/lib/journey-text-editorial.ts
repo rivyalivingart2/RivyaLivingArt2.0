@@ -1,5 +1,11 @@
 /** Public navigation and reading controls; English keys never replace stored content. */
 export const journeyEditorial:Record<string,readonly [string,string]>={
+ 'Read the statement':['यह कथन पढ़ें','આ નિવેદન વાંચો'],
+ 'Concept project · not a completed commission':['संकल्पना परियोजना · पूरा किया गया ग्राहक कार्य नहीं','કલ્પિત પ્રોજેક્ટ · પૂર્ણ કરેલું ગ્રાહકનું કામ નથી'],
+ 'Documented project':['दस्तावेज़ित परियोजना','દસ્તાવેજીકૃત પ્રોજેક્ટ'],
+ 'Fictional sample · not customer feedback':['काल्पनिक नमूना · ग्राहक की प्रतिक्रिया नहीं','કાલ્પનિક નમૂનો · ગ્રાહકનો પ્રતિભાવ નથી'],
+ 'Approved customer feedback':['अनुमोदित ग्राहक प्रतिक्रिया','મંજૂર કરેલો ગ્રાહક પ્રતિભાવ'],
+ 'Illustrative voice':['उदाहरण के लिए काल्पनिक कथन','ઉદાહરણ માટેનું કાલ્પનિક નિવેદન'],
  'Find an answer':['उत्तर खोजें','જવાબ શોધો'],
  'Question groups':['प्रश्न समूह','પ્રશ્નોના સમૂહ'],
  'All questions':['सभी प्रश्न','બધા પ્રશ્નો'],

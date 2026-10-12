@@ -1,0 +1,1485 @@
+{
+  "date": "2026-10-12",
+  "meaning": "Per-family/module acceptance, not an all-green parity certificate. Exclusions and unperformed checks remain visible.",
+  "public": [
+    {
+      "id": "W01",
+      "label": "Shared header, footer and navigation",
+      "routes": [
+        "/"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W02",
+      "label": "Homepage section sequence",
+      "routes": [
+        "/"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W03",
+      "label": "/collectible-design",
+      "routes": [
+        "/collectible-design"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W04",
+      "label": "/memory-art",
+      "routes": [
+        "/memory-art"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W05",
+      "label": "/personal-art",
+      "routes": [
+        "/personal-art"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W06",
+      "label": "/search",
+      "routes": [
+        "/search"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W07",
+      "label": "/pieces/[slug]",
+      "routes": [
+        "/pieces/[slug]"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "See prior phase HTTP/workflow evidence; no new exact route grid claim",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W08",
+      "label": "/pieces/[slug]/customize",
+      "routes": [
+        "/pieces/[slug]/customize"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "See prior phase HTTP/workflow evidence; no new exact route grid claim",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W09",
+      "label": "/commission",
+      "routes": [
+        "/commission"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W10",
+      "label": "/commission/customize, /preserve, /personalize",
+      "routes": [
+        "/commission/customize",
+        "/preserve",
+        "/personalize"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W11",
+      "label": "/saved-pieces",
+      "routes": [
+        "/saved-pieces"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W12",
+      "label": "/inquiry/received",
+      "routes": [
+        "/inquiry/received"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "See prior phase HTTP/workflow evidence; no new exact route grid claim",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W13",
+      "label": "/our-story",
+      "routes": [
+        "/our-story"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W14",
+      "label": "/process",
+      "routes": [
+        "/process"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W15",
+      "label": "/materials-care",
+      "routes": [
+        "/materials-care"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W16",
+      "label": "/portfolio",
+      "routes": [
+        "/portfolio"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W17",
+      "label": "/portfolio/[slug]",
+      "routes": [
+        "/portfolio/[slug]"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "See prior phase HTTP/workflow evidence; no new exact route grid claim",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W18",
+      "label": "/journal",
+      "routes": [
+        "/journal"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W19",
+      "label": "/journal/[slug]",
+      "routes": [
+        "/journal/[slug]"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "See prior phase HTTP/workflow evidence; no new exact route grid claim",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W20",
+      "label": "/faq",
+      "routes": [
+        "/faq"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W21",
+      "label": "/contact",
+      "routes": [
+        "/contact"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W22",
+      "label": "/architects",
+      "routes": [
+        "/architects"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W23",
+      "label": "/privacy, /terms, /imprint",
+      "routes": [
+        "/privacy",
+        "/terms",
+        "/imprint"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W24",
+      "label": "/shipping-delivery, /returns-cancellations, /accessibility",
+      "routes": [
+        "/shipping-delivery",
+        "/returns-cancellations",
+        "/accessibility"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W25",
+      "label": "/p/[slug]",
+      "routes": [
+        "/p/[slug]"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "See prior phase HTTP/workflow evidence; no new exact route grid claim",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W26",
+      "label": "legacy/conditional routes",
+      "routes": [],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "See prior phase HTTP/workflow evidence; no new exact route grid claim",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W27",
+      "label": "system and auth states",
+      "routes": [],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "See prior phase HTTP/workflow evidence; no new exact route grid claim",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "W28",
+      "label": "private preview/reference",
+      "routes": [],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "See prior phase HTTP/workflow evidence; no new exact route grid claim",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    }
+  ],
+  "studio": [
+    {
+      "id": "S01",
+      "label": "Overview — Today",
+      "routes": [
+        "/studio"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S02",
+      "label": "Commissions — Today",
+      "routes": [
+        "/studio/inquiries"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S03",
+      "label": "Analytics — Today",
+      "routes": [
+        "/studio/analytics"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S04",
+      "label": "Activity — Today",
+      "routes": [
+        "/studio/activity"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S05",
+      "label": "Products — Catalogue",
+      "routes": [
+        "/studio/products"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S06",
+      "label": "Categories — Catalogue",
+      "routes": [
+        "/studio/categories"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S07",
+      "label": "Media Library — Catalogue",
+      "routes": [
+        "/studio/media"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S08",
+      "label": "Bulk Import — Catalogue",
+      "routes": [
+        "/studio/import"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S09",
+      "label": "Catalog Fill — Catalogue",
+      "routes": [],
+      "status": "excluded",
+      "structure": "reference only",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "See prior phase HTTP/workflow evidence; no new exact route grid claim",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": true
+    },
+    {
+      "id": "S10",
+      "label": "Exports — Catalogue",
+      "routes": [
+        "/studio/exports"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S11",
+      "label": "Product Scraper — Catalogue",
+      "routes": [],
+      "status": "excluded",
+      "structure": "reference only",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "See prior phase HTTP/workflow evidence; no new exact route grid claim",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": true
+    },
+    {
+      "id": "S12",
+      "label": "Research — Catalogue",
+      "routes": [
+        "/studio/research"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S13",
+      "label": "Content Gaps — Catalogue",
+      "routes": [
+        "/studio/content-gaps"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S14",
+      "label": "Site Copy — Content",
+      "routes": [
+        "/studio/site-copy"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S15",
+      "label": "Site Images — Content",
+      "routes": [
+        "/studio/site-images"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S16",
+      "label": "Page Sections — Content",
+      "routes": [
+        "/studio/sections"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S17",
+      "label": "Process Steps — Content",
+      "routes": [
+        "/studio/process"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S18",
+      "label": "Materials — Content",
+      "routes": [
+        "/studio/materials"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S19",
+      "label": "Navigation — Content",
+      "routes": [
+        "/studio/navigation"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S20",
+      "label": "Commission Form — Content",
+      "routes": [
+        "/studio/forms"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S21",
+      "label": "Journal — Editorial",
+      "routes": [
+        "/studio/journal"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S22",
+      "label": "Portfolio — Editorial",
+      "routes": [
+        "/studio/portfolio"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S23",
+      "label": "Testimonials — Editorial",
+      "routes": [
+        "/studio/testimonials"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S24",
+      "label": "FAQs — Editorial",
+      "routes": [
+        "/studio/faqs"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S25",
+      "label": "Pages — Editorial",
+      "routes": [
+        "/studio/pages"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S26",
+      "label": "Landing Pages — Editorial",
+      "routes": [
+        "/studio/landing-pages"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S27",
+      "label": "Site Settings — Settings",
+      "routes": [
+        "/studio/settings"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S28",
+      "label": "SEO — Settings",
+      "routes": [
+        "/studio/seo"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S29",
+      "label": "Users — Settings",
+      "routes": [
+        "/studio/staff"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S30",
+      "label": "Subscribers — Settings",
+      "routes": [
+        "/studio/subscribers"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S31",
+      "label": "Content Health — Settings",
+      "routes": [
+        "/studio/content-health"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    },
+    {
+      "id": "S32",
+      "label": "Content Lab — Settings",
+      "routes": [
+        "/studio/content-lab"
+      ],
+      "status": "partially verified",
+      "structure": "Implemented in earlier phase; representative state checked where evidence names route",
+      "typography": "Four opening comparisons; full visual acceptance open",
+      "palette": "Reference dark/blue palette retained; confirmed selected-status contrast defect repaired",
+      "spacing": "Representative views inspected; complete section comparison open",
+      "imagery": "Original associations/crops protected; meaningful-alt/crop acceptance separate",
+      "motion": "Play/pause and reduced-motion sample verified; no physical-device assertion",
+      "responsive": "Eight-width DOM check on named route(s)",
+      "keyboard": "Shared menu/filter and homepage workflow tested; full module task log open",
+      "loadingErrorEmpty": "Loading frames observed; public filter no-results/clear tested; stale saves/permission failures checked in QA; remaining child states open",
+      "contentOwnership": "All original rows unchanged in 13 scopes",
+      "permissionPublication": "M5-M8 contracts retained; fresh six-group homepage lifecycle passes",
+      "evidence": [
+        "m10-evidence.json",
+        "M10-REGRESSION-REPORT.md"
+      ],
+      "excluded": false
+    }
+  ],
+  "additionalStudioRoutes": [
+    "/studio/process",
+    "/studio/inquiries",
+    "/studio/analytics",
+    "/studio/activity",
+    "/studio/products",
+    "/studio/categories",
+    "/studio/media",
+    "/studio/import",
+    "/studio/exports",
+    "/studio/research",
+    "/studio/content-gaps",
+    "/studio/site-copy",
+    "/studio/site-images",
+    "/studio/sections",
+    "/studio/materials",
+    "/studio/navigation",
+    "/studio/forms",
+    "/studio/journal",
+    "/studio/portfolio",
+    "/studio/testimonials",
+    "/studio/faqs",
+    "/studio/pages",
+    "/studio/landing-pages",
+    "/studio/settings",
+    "/studio/seo",
+    "/studio/staff",
+    "/studio/subscribers",
+    "/studio/content-health",
+    "/studio/content-lab",
+    "/studio/follow-ups",
+    "/studio/translations",
+    "/studio/content-register",
+    "/studio/editorial-order",
+    "/studio/content",
+    "/studio/legacy",
+    "/studio/route-review"
+  ],
+  "humanScreenReader": "not run",
+  "physicalDevice": "not run",
+  "independentNativeReader": "not run"
+}
