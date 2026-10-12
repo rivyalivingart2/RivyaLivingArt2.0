@@ -1,5 +1,5 @@
 {
-  "status": "m11_released_m10_local_visual_contrast_followup_partially_verified",
+  "status": "m10_pending_followup_verified_for_named_states_release_prepared",
   "existingContentFrozen": true,
   "oldPageTemplates": 85,
   "oldSectionDefinitions": 74,
@@ -1168,10 +1168,11 @@
       "status": "partially verified",
       "owner": "Codex",
       "evidence": "m10-evidence.json",
-      "note": "Opening comparisons expanded to 30 Studio pairs (two unreliable reference captures), eight public pairs and nine homepage chapter openings. Full sections/child/mobile parity remains open; reference navigation became unavailable. See M10-VISUAL-CONTRAST.md.",
+      "note": "All seven outstanding public opening pairs captured at 390/1280; old Media/Research recaptured reliably. Full section/child-state acceptance remains partial. Studio typography/cards repaired. See M10-PENDING-COMPLETION.md.",
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
-      "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json"
+      "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
+      "pendingFollowUpEvidence": "m10-pending-evidence.json"
     },
     {
       "id": "M10-02",
@@ -1191,7 +1192,8 @@
       "note": "All original local rows unchanged; final permission/snapshot/recovery contract passes.",
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
-      "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json"
+      "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
+      "pendingFollowUpEvidence": "m10-pending-evidence.json"
     },
     {
       "id": "M10-03",
@@ -1210,7 +1212,8 @@
       "evidence": "m10-evidence.json",
       "note": "Local initial Inter payload 332048 -> 156860 bytes; observed reads 4 -> 3; matched local homepage bypassed LCP 2.712s -> 1.732s, collection repeat 0.468s -> 0.476s. Hosted/field target remains open.",
       "followUpEvidence": "m11-evidence.json",
-      "loadingFollowUpEvidence": "m10-loading-evidence.json"
+      "loadingFollowUpEvidence": "m10-loading-evidence.json",
+      "pendingFollowUpEvidence": "m10-pending-evidence.json"
     },
     {
       "id": "M10-04",
@@ -1227,10 +1230,11 @@
       "status": "partially verified",
       "owner": "Codex",
       "evidence": "m10-evidence.json",
-      "note": "104 named manual contrast targets resolved: 101 pass, three decorative exclusions; minimum 6.0972:1. Native zoom, human screen-reader and physical-phone task evidence remain open.",
+      "note": "Prior 104 manual targets retained; 74 additional named Studio targets all pass, minimum 6.2472:1. Ten fresh focused scans have zero confirmed violations. Native zoom/human screen-reader/physical-phone gates remain open.",
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
-      "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json"
+      "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
+      "pendingFollowUpEvidence": "m10-pending-evidence.json"
     },
     {
       "id": "M10-05",
@@ -1250,7 +1254,8 @@
       "note": "Evidence gaps reconciled explicitly; no unperformed human/native/device/field check marked passed.",
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
-      "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json"
+      "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
+      "pendingFollowUpEvidence": "m10-pending-evidence.json"
     },
     {
       "id": "M11-01",

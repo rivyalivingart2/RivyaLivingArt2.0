@@ -1,3 +1,15 @@
+# Current checkpoint — M10 Studio fixes and recovered comparisons; release prepared
+
+12 October 2026: branch `codex/m10-pending-completion` includes the prior loading and contrast work plus 25-row Content Health/Content Gaps pagination, display-serif Studio headings and responsive summary cards. Read `M10-PENDING-COMPLETION.md`, `m10-pending-evidence.json` and `docs/decisions/2026-10-12-m10-pending-completion.md`. Application fingerprint: `1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b`.
+
+Fresh build/typecheck, 344 unit and 403 runtime checks pass; lint zero errors/62 warnings. Ten focused scans have zero confirmed violations. All 74 additional manual contrast targets pass (minimum 6.2472:1). Pagination/filter/empty/error/retry and unsaved/saved Journal states were checked. All original local IDs/digests/counts remain unchanged in 13 scopes.
+
+All seven missing public opening pairs and both unreliable Studio references were captured and reviewed at desktop/mobile widths. The old reference is reachable but slow. Full section/child-state, native zoom, human/physical/native-reader/rights/factual and field acceptance remain open. No blanket full-parity claim.
+
+The owner has requested all pending work and previously explicitly authorized detailed PR/main/M11 release. Prepare and verify that release; generated local-only notes below are historical, not a revocation. No new push had occurred when this checkpoint was prepared. Never replay the 480 entries or homepage revision 4. Scrapers, old-product transfers and backups remain excluded.
+
+---
+
 # Current checkpoint — M10 contrast resolved for tested states; visual comparison partial
 
 12 October 2026: continue on local branch `codex/m10-visual-contrast`, based on loading commit `b6d290a039864494c572b76c1ac444701f4ca009`. Read `M10-VISUAL-CONTRAST.md`, `m10-visual-contrast-evidence.json` and `M10-CONTINUATION.md` in the migration directory first. Application fingerprint: `a352a269ed90522ab2ebfe86978b807670ddcae55d49ca95ae473084368e9482`. Three CSS modules now provide robust image-hero overlays and caption/category-label backings. The earlier loading improvements remain included.

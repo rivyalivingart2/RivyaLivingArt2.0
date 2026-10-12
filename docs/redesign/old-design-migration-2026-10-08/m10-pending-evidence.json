@@ -1,0 +1,1906 @@
+{
+  "date": "2026-10-12T13:01:03.776Z",
+  "status": "verified-for-named-local-states-full-acceptance-open",
+  "candidate": {
+    "base": "a97c771ad95f609dd2a7de010b52d767a1d326b5",
+    "applicationSha256": "1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b"
+  },
+  "branch": "codex/m10-pending-completion",
+  "tests": {
+    "build": "pass",
+    "typeScript": "pass",
+    "unit": {
+      "passed": 344,
+      "failed": 0
+    },
+    "runtime": {
+      "passed": 403,
+      "failed": 0
+    },
+    "lint": {
+      "errors": 0,
+      "warnings": 62
+    }
+  },
+  "changes": [
+    "Content Health and Content Gaps paginate both desktop rows and mobile cards at 25 records; filtering and totals use all records; filter changes reset to page 1.",
+    "Studio workspace headings use the display serif.",
+    "Summary cards adapt to available width and keep labels readable."
+  ],
+  "accessibility": {
+    "scans": [
+      {
+        "url": "/studio/content-lab",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 14
+          }
+        ],
+        "passes": 24,
+        "key": "content-lab-mobile"
+      },
+      {
+        "url": "/studio/content-lab",
+        "width": 1280,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 14
+          }
+        ],
+        "passes": 24,
+        "key": "content-lab-desktop"
+      },
+      {
+        "url": "/studio/content-health",
+        "width": 1280,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 16
+          }
+        ],
+        "passes": 30,
+        "key": "health-desktop"
+      },
+      {
+        "url": "/studio/content-health",
+        "width": 390,
+        "violations": [],
+        "incomplete": [],
+        "passes": 28,
+        "key": "health-mobile"
+      },
+      {
+        "url": "/studio/content-gaps",
+        "width": 390,
+        "violations": [],
+        "incomplete": [],
+        "passes": 28,
+        "key": "gaps-mobile"
+      },
+      {
+        "url": "/studio/content-gaps",
+        "width": 1280,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 44
+          }
+        ],
+        "passes": 30,
+        "key": "gaps-desktop"
+      },
+      {
+        "url": "/studio/journal",
+        "width": 390,
+        "violations": [],
+        "incomplete": [],
+        "passes": 29,
+        "key": "journal-new-mobile"
+      },
+      {
+        "url": "/studio/journal",
+        "width": 1280,
+        "violations": [],
+        "incomplete": [],
+        "passes": 30,
+        "key": "journal-new-desktop"
+      },
+      {
+        "url": "/studio/journal",
+        "width": 1280,
+        "violations": [],
+        "incomplete": [],
+        "passes": 28,
+        "key": "journal-saved-desktop"
+      },
+      {
+        "url": "/studio/content-health",
+        "width": 1280,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 16
+          }
+        ],
+        "passes": 30,
+        "key": "health-error-desktop"
+      }
+    ],
+    "manualTargets": [
+      {
+        "key": "content-lab",
+        "target": [
+          ".workspace-module__qCfTQa__metrics > a[href$=\"journal\"]"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          17,
+          32,
+          51
+        ],
+        "ratio": 14.555439729324963,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          "a[href$=\"journal\"] > strong"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          17,
+          32,
+          51
+        ],
+        "ratio": 14.555439729324963,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          ".workspace-module__qCfTQa__metrics > a[href$=\"portfolio\"]"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          17,
+          32,
+          51
+        ],
+        "ratio": 14.555439729324963,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          "a[href$=\"portfolio\"] > strong"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          17,
+          32,
+          51
+        ],
+        "ratio": 14.555439729324963,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          ".workspace-module__qCfTQa__metrics > a[href$=\"testimonials\"]"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          17,
+          32,
+          51
+        ],
+        "ratio": 14.555439729324963,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          "a[href$=\"testimonials\"] > strong"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          17,
+          32,
+          51
+        ],
+        "ratio": 14.555439729324963,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          ".workspace-module__qCfTQa__metrics > a[href$=\"faqs\"]"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          17,
+          32,
+          51
+        ],
+        "ratio": 14.555439729324963,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          "a[href$=\"faqs\"] > strong"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          17,
+          32,
+          51
+        ],
+        "ratio": 14.555439729324963,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          "a[href$=\"pages\"]:nth-child(5)"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          17,
+          32,
+          51
+        ],
+        "ratio": 14.555439729324963,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          "a[href$=\"pages\"]:nth-child(5) > strong"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          17,
+          32,
+          51
+        ],
+        "ratio": 14.555439729324963,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          ".workspace-module__qCfTQa__metrics > a[href$=\"landing-pages\"]"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          17,
+          32,
+          51
+        ],
+        "ratio": 14.555439729324963,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          "a[href$=\"landing-pages\"] > strong"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          17,
+          32,
+          51
+        ],
+        "ratio": 14.555439729324963,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          ".workspace-module__qCfTQa__list > div > span"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          32.7,
+          34.5,
+          38.1
+        ],
+        "ratio": 14.02730758971161,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-lab",
+        "target": [
+          "button[type=\"button\"]:nth-child(3)"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          10,
+          14
+        ],
+        "ratio": 17.55087575711703,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(9) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(9) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(10) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(10) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(16) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(16) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(19) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(19) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(21) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(21) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(22) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(22) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(23) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(23) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(24) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-health",
+        "target": [
+          "tr:nth-child(24) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(2) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(2) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(3) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(3) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(6) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(6) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(7) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(7) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(8) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(8) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(9) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(9) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(10) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(10) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(11) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(11) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(12) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(12) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(13) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(13) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(14) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(14) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "td:nth-child(8) > ul > li:nth-child(2)"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "td:nth-child(8) > ul > li:nth-child(2) > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(16) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(16) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(17) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(17) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(18) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(18) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(19) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(19) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(20) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(20) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(21) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(21) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(22) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(22) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(23) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(23) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(24) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(24) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(25) > td:nth-child(8) > ul > li"
+        ],
+        "foreground": [
+          244,
+          241,
+          233
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 13.531781524662955,
+        "threshold": 4.5,
+        "pass": true
+      },
+      {
+        "key": "content-gaps",
+        "target": [
+          "tr:nth-child(25) > td:nth-child(8) > ul > li > a"
+        ],
+        "foreground": [
+          95,
+          175,
+          214
+        ],
+        "background": [
+          8,
+          40,
+          58
+        ],
+        "ratio": 6.247240711797402,
+        "threshold": 4.5,
+        "pass": true
+      }
+    ],
+    "uniqueManualTargets": 74,
+    "minimumRatio": 6.247240711797402,
+    "scope": "Named local states only; scanner incomplete targets have explicit calculated dispositions, not zero-incomplete claims."
+  },
+  "interactions": {
+    "pagination": [
+      {
+        "check": "initial health page",
+        "cards": 25,
+        "page": " Prev1 / 35Next ",
+        "rows": 25,
+        "status": [
+          "Checks complete. Nothing was edited or published.",
+          "873 of 873 records · Showing 1–25"
+        ]
+      },
+      {
+        "check": "second health page",
+        "cards": 25,
+        "page": " Prev2 / 35Next ",
+        "rows": 25,
+        "status": [
+          "Checks complete. Nothing was edited or published.",
+          "873 of 873 records · Showing 26–50"
+        ]
+      },
+      {
+        "check": "filter from second page",
+        "cards": 4,
+        "rows": 4,
+        "status": [
+          "Checks complete. Nothing was edited or published.",
+          "4 of 873 records · Showing 1–4"
+        ]
+      },
+      {
+        "check": "entity filter resets page",
+        "cards": 25,
+        "page": " Prev1 / 7Next ",
+        "rows": 25,
+        "status": [
+          "Checks complete. Nothing was edited or published.",
+          "152 of 873 records · Showing 1–25"
+        ]
+      },
+      {
+        "check": "last page bounded",
+        "cards": 2,
+        "page": " Prev7 / 7Next ",
+        "rows": 2,
+        "status": [
+          "Checks complete. Nothing was edited or published.",
+          "152 of 873 records · Showing 151–152"
+        ],
+        "nextDisabled": true
+      },
+      {
+        "check": "no results",
+        "cards": 0,
+        "rows": 0,
+        "status": [
+          "Checks complete. Nothing was edited or published.",
+          "0 of 873 records · Showing 0–0"
+        ],
+        "empty": true
+      },
+      {
+        "check": "clear restores first page",
+        "cards": 25,
+        "page": " Prev1 / 35Next ",
+        "rows": 25,
+        "status": [
+          "Checks complete. Nothing was edited or published.",
+          "873 of 873 records · Showing 1–25"
+        ]
+      }
+    ],
+    "recovery": {
+      "offline": {
+        "statuses": [
+          "The connection was interrupted. Your edits remain here. Check the saved record before retrying.Previous results remain below and may be out of date.Retry checks",
+          "873 of 873 records · Showing 1–25"
+        ],
+        "rows": 25
+      },
+      "recovered": {
+        "cards": 25,
+        "page": " Prev1 / 35Next ",
+        "rows": 25,
+        "status": [
+          "Checks complete. Nothing was edited or published.",
+          "873 of 873 records · Showing 1–25"
+        ]
+      }
+    },
+    "newArticle": "Unsaved new article: zero confirmed violations at 390/1280; publication blocker moved focus to the Introduction textarea; no save.",
+    "savedArticle": "Existing published article editor opened read-only with saved-preview and public-revision links; zero confirmed violations at 1280."
+  },
+  "visual": {
+    "publicPairs": [
+      "Journal",
+      "Portfolio",
+      "Saved pieces",
+      "Privacy",
+      "Terms",
+      "Workshops conditional fallback",
+      "Unavailable private receipt"
+    ],
+    "studioRecaptures": [
+      "Media Library",
+      "Research"
+    ],
+    "widths": [
+      390,
+      1280
+    ],
+    "viewHeight": 720,
+    "disposition": "All seven previously missing public opening pairs and two unreliable Studio reference pairs captured and inspected. Full section/child-state acceptance remains partial. Old empty libraries cannot supply populated-record comparison evidence.",
+    "differences": [
+      "Journal retains current introduction, six metadata filters and content instead of the old category-chip opening.",
+      "Portfolio keeps explicit concept disclosures and current text-led opening; old image-led hero and zero-project dataset differ.",
+      "Policies retain current approved wording/retention/contacts and table of contents; old dates, claims and blue bands are not copied.",
+      "Saved-piece empty state retains current browser-local collection semantics.",
+      "Workshops stay unavailable until business confirmation; private receipt keeps authorization and expiration safeguards.",
+      "Media and research use current provenance and revision-aware workflows, not the old upload/notes database.",
+      "Studio serif heading mismatch corrected; current shell/control sizes remain adaptations."
+    ]
+  },
+  "preservation": {
+    "allOriginalIdsDigestsAndCountsUnchanged": true,
+    "scopes": 13,
+    "counts": {
+      "rivya_catalogue": 120,
+      "rivya_content": 601,
+      "rivya_public_media": 152,
+      "rivya_business_settings": 1,
+      "rivya_revisions": 732,
+      "rivya_inquiries": 2,
+      "rivya_studio_orders": 7,
+      "rivya_studio_order_events": 8,
+      "rivya_inquiry_notes": 0,
+      "rivya_references": 0,
+      "rivya_staff": 8,
+      "rivya_privacy_controls": 7,
+      "rivya_erasure_ledger": 0
+    },
+    "productionBeforeRecorded": true,
+    "productionWrites": false
+  },
+  "release": {
+    "authorization": "Owner requested all pending work, with prior explicit detailed PR to main and M10/M11 release instructions. These user instructions take precedence over generated local-only follow-up notes.",
+    "state": "prepared-not-yet-pushed",
+    "priorPublishedEntries": 480,
+    "priorHomepageRevision": 4,
+    "replayForbidden": true
+  },
+  "remaining": [
+    "Full section/scroll/child/create/edit/print/hover/focus variant comparison and disposition across the full route/section registers.",
+    "Actual native browser 200%/400% zoom; human screen-reader and physical-phone task evidence.",
+    "Independent Hindi/Gujarati meaning review and factual/media-rights confirmation.",
+    "Exact-candidate hosted timing after release; field p75 and consent-safe real inquiry observations."
+  ],
+  "artifacts": [
+    {
+      "path": "test-results/old-design-migration/m10-pending/content-lab-1280.png",
+      "sha256": "1adda2243d10ca50ca5c638fd5c68a96d64817ffcf3ddb7766287f7a9277555f"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/content-lab-390.png",
+      "sha256": "265d466b44ef4b38a084187de6dea390a27234d51fa6bce8c58c0aaa8ae78c4d"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-journal-1280.png",
+      "sha256": "bf8e67f5bbd5a63cf2e89ae4ce2edc80240e25ea284f14fc9fbe0aaa8e983bbd"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-journal-390.png",
+      "sha256": "cd651a75f7db0aae0af5de103a398614ba6f3f65052bc9e7d232eae01db65631"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-media-1280.png",
+      "sha256": "e140bd09f5c0e97f6a556da9cedffe7f0e6e6657aefdcf5eb4b6e87d22496355"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-media-390.png",
+      "sha256": "fe6e9392ba49ba9aee4259c30e9f2865f8b12d330aa630a93419670b7760f0a8"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-portfolio-1280.png",
+      "sha256": "cefc0794110dfc96e506b23e0a202498387137347d488f4cc69da852268db49f"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-portfolio-390.png",
+      "sha256": "3793a98e3b7ed30b188087e070de085ab9570a5c9d0de7ce20c9c1af2bed2196"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-privacy-1280.png",
+      "sha256": "fd07ffd2d05b43ccae72d512afc86a863e5e374ddac9ff84d2569016de8b2fe4"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-privacy-390.png",
+      "sha256": "28a21e456d41e110d2bc66595843426ba061f0f64683bdb86df3b1e0e0ce0a33"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-receipt-1280.png",
+      "sha256": "33f3fd5441e5de6bf9a1fbc4daa3074c6cdce70f8cb1216c3dc99c702425297a"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-receipt-390.png",
+      "sha256": "8090f837aa76dc0fc403427529d35240ec116896782938b45d49bd94ae1121be"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-research-1280.png",
+      "sha256": "59a2a352a79a6b8a9bcf613cd74a77fefc8a5987a97698d68f4330f744e24826"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-research-390.png",
+      "sha256": "7f289a4b88afbbead00555a723348671691d892e179d9a8383fb06d594a406f2"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-saved-1280.png",
+      "sha256": "1ec50b7c8e47846f57ca117bd8932478b7c33a488f3253c521e417f8adceb3d7"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-saved-390.png",
+      "sha256": "0adc08b12489464d04fc433af83d88eb4affa9210d6886e64cd79d43d91d890b"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-terms-1280.png",
+      "sha256": "26e5a7e1b2a79efce548e2ab6dff19b71a121da9a8f1d17f359f406d201438fb"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-terms-390.png",
+      "sha256": "32e9c9a2f07494f96ddff21b0f561012daf2fbaa3e8e51d7b16f2b7b589a864c"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-workshops-1280.png",
+      "sha256": "9a7bc49d75c5c0035011f2b389b71008a8740c1e2aabb1ecc17f6f71891fc939"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/current-workshops-390.png",
+      "sha256": "df22076e2bff3e3acbfc8c6ab5b7d32688f214c1a6603439ef673eaebb51cdc1"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/health-desktop-1280.png",
+      "sha256": "d596fb0b171bf88ba91d68483b1570d7f32a9d8ac8651c13c02e2c24b42cf66c"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/health-mobile-390.png",
+      "sha256": "cf08ae0eead5c4c62364b25d905415d85e5198e6c85779c98fc2a28e6be14da3"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/journal-new-390.png",
+      "sha256": "9a0a5740e1efde7e567837f9c090ec59cbd52cf637585ac6c8f536237d5ba4ec"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/journal-portfolio-comparison.png",
+      "sha256": "b6f108ff36235854f526da7756734c0faac53c2b04b6e6e63a0ad6bed3742d1f"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/journal-portfolio-mobile.png",
+      "sha256": "6896759f53b4b928e71566e850445619c961b250599340d4c5f09d869d0635a5"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/media-research-comparison.png",
+      "sha256": "b045a59cfa7b12e6b735bd03d3fdca8d8a9c6ee1b98bd2599789fceb1bafe515"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-journal-1280.png",
+      "sha256": "5d2d1592341bab1e17227898f82444df9c29bec7f96cac8fd0363fe46e1d602a"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-journal-390.png",
+      "sha256": "05a8b0627fb586813f35c2e79a93f44ef0e037ef8814a7511c19faf8e7293522"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-media-1280.png",
+      "sha256": "287eca105a55255c713758ae665c8e772c50e2146e12a7d702cf4dd572e6a8eb"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-media-390.png",
+      "sha256": "c5166c8c0702c056087bd859ee612ea85cd0eb297fb2620dd0193ca6bfadd390"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-portfolio-1280.png",
+      "sha256": "7fbbc64a71e5167a16a725bd8f8e86421fdb63962c982b3d66c7d3b71b926bf8"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-portfolio-390.png",
+      "sha256": "b6d9d95ad021222797d7ce815923e5c5e29e9b0705480b5838437d3b24e12ab6"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-privacy-1280.png",
+      "sha256": "122ed3f755fb3fae276c7c58670dd4380e17a053b6f1222b3d406f3f1673e1db"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-privacy-390.png",
+      "sha256": "ce173a90bc7b1dbfc387a5f2ef3237711b9df8a406ceaaab2389016b3ed013b0"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-receipt-1280.png",
+      "sha256": "06b838467dd2dcb0958fc93c62683adec29430a5c91f691a079f9dde2265efeb"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-receipt-390.png",
+      "sha256": "dbf47157b689a3640b3aaf3fe0c4fd1413bfc4feb8a05243565697d73a4ade33"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-research-1280.png",
+      "sha256": "63cb1e4f31edb51d88a5f89fc13b7801e41e77d4079cbfc66d28c4f7e8fca7af"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-research-390.png",
+      "sha256": "8d9beebb1cf4e822586ba60ca659f4af250b548068bab47f997f7774541dfd3a"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-saved-1280.png",
+      "sha256": "242f7c0047d2c67cab6c2d13181efa6130f4ee834f13c45a5c7eff53309ed4d7"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-saved-390.png",
+      "sha256": "3d00a3a9652346abc78b15967044c7e75082624a352190f4ede602d24e994e02"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-terms-1280.png",
+      "sha256": "bcd9d56b844adb54fc52c2ef53814d1e169f8b9ed035122d89b0efbb85c71b66"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-terms-390.png",
+      "sha256": "ecdda480845a87ff9b5153c1f12232994bbaebd14c58f4bfcf277166cf7bd389"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-workshops-1280.png",
+      "sha256": "6dccefe6fc259971563f2833b2f6536dd114c34debb08e1e8267f854de8831af"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/old-workshops-390.png",
+      "sha256": "0c9d8ba16e70e7fe954098c54debfc8bd489e2ede7f331bffeb3022ef36a8d57"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/policies-saved-comparison.png",
+      "sha256": "72d41b6a90022373df82ce54bed26d7d01d560c2ea00a66010dd1ff314c51b81"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/policies-saved-mobile.png",
+      "sha256": "da755b216936d89da9472ae237857ee99cf2cfd0ae93dd6aa502524d31309dd9"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/remaining-mobile-0.png",
+      "sha256": "79b25287b47e3f66b5fc9f7180394a121474f0b8cd2c341ace0710e4d38723a1"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/remaining-mobile-1.png",
+      "sha256": "b7f4325d47a1ca7c053d170b353dbe4dcd13b8cddf44d7ce5226be85136d37fb"
+    },
+    {
+      "path": "test-results/old-design-migration/m10-pending/utility-comparison.png",
+      "sha256": "e600f3b35856c67a890ee32d0eaeb3cc22250b7a2fb23bb33f892c2726b6eea9"
+    }
+  ]
+}
