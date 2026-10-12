@@ -3,7 +3,8 @@
   "status": "verified-for-named-local-states-full-acceptance-open",
   "candidate": {
     "base": "a97c771ad95f609dd2a7de010b52d767a1d326b5",
-    "applicationSha256": "1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b"
+    "applicationSha256": "1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b",
+    "fingerprintBasis": "Windows working-tree bytes, including Git CRLF checkout conversion. The portable committed-source fingerprint and byte-level reconciliation are in m10-pending-release-evidence.json."
   },
   "branch": "codex/m10-pending-completion",
   "tests": {
@@ -1669,6 +1670,12 @@
       "Workshops stay unavailable until business confirmation; private receipt keeps authorization and expiration safeguards.",
       "Media and research use current provenance and revision-aware workflows, not the old upload/notes database.",
       "Studio serif heading mismatch corrected; current shell/control sizes remain adaptations."
+    ],
+    "reviewedRegion": "Top 720px of each opening; any extra duplicated paint in original 800px captures excluded.",
+    "rejectedAsFinalScreenshot": [
+      "health-mobile-390.png",
+      "health-mobile-390.jpg",
+      "health-desktop-1280.png"
     ]
   },
   "preservation": {
@@ -1690,20 +1697,25 @@
       "rivya_erasure_ledger": 0
     },
     "productionBeforeRecorded": true,
-    "productionWrites": false
+    "productionWrites": false,
+    "productionBeforeAfterOriginalRowsUnchanged": true
   },
   "release": {
     "authorization": "Owner requested all pending work, with prior explicit detailed PR to main and M10/M11 release instructions. These user instructions take precedence over generated local-only follow-up notes.",
-    "state": "prepared-not-yet-pushed",
+    "state": "released-through-PR50",
     "priorPublishedEntries": 480,
     "priorHomepageRevision": 4,
-    "replayForbidden": true
+    "replayForbidden": true,
+    "pr": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/50",
+    "main": "620aa806fa8d7bbf820b41796cee9ddf90ca0591",
+    "deployment": "dpl_5gNeX33TEQwyiJSyS1toGiavZTSS",
+    "receipt": "m10-pending-release-evidence.json"
   },
   "remaining": [
     "Full section/scroll/child/create/edit/print/hover/focus variant comparison and disposition across the full route/section registers.",
     "Actual native browser 200%/400% zoom; human screen-reader and physical-phone task evidence.",
     "Independent Hindi/Gujarati meaning review and factual/media-rights confirmation.",
-    "Exact-candidate hosted timing after release; field p75 and consent-safe real inquiry observations."
+    "Cold-loading diagnosis: exact PR50 hosted samples are complete, but homepage LCP 3.256s and collection LCP 2.928s still exceed the 2.5s target. Field p75 and consent-safe real inquiry observations remain open."
   ],
   "artifacts": [
     {

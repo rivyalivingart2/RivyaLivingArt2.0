@@ -1,0 +1,505 @@
+{
+  "date": "2026-10-12T13:26:22.662Z",
+  "status": "application-released-m10-acceptance-partial",
+  "pr": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/50",
+  "head": "0d8c736d34c0720bd0a53b5a8243a08b154e2b8e",
+  "main": "620aa806fa8d7bbf820b41796cee9ddf90ca0591",
+  "applicationSha256": "fe08e9f6aed1a2c6162532d2f7a612b2b39fa5c4877bb29cd0d701e897594300",
+  "fingerprintBasis": "SHA-256 of sorted committed paths followed by NUL and exact Git blob bytes, using candidate-fingerprint.mjs source scopes, at main 620aa806fa8d7bbf820b41796cee9ddf90ca0591.",
+  "workspaceFingerprintReconciliation": {
+    "windowsWorkingTreeSha256": "1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b",
+    "committedSourceSha256": "fe08e9f6aed1a2c6162532d2f7a612b2b39fa5c4877bb29cd0d701e897594300",
+    "fileCount": 580,
+    "filesWithCheckoutLineEndingDifference": 493,
+    "allDifferencesAreCrLfConversion": true,
+    "meaning": "The original helper hashes raw working-tree bytes. Its Windows CRLF fingerprint remains the identifier for the local test evidence; exact Git blob bytes provide the portable released-source identifier. No missing or substantive changed application files were found.",
+    "privateEvidence": "test-results/old-design-migration/m10-pending/fingerprint-reconciliation.json"
+  },
+  "preview": {
+    "id": "dpl_CiTRhPmQSZr3g6b1dvMU4LmbD9wH",
+    "state": "READY",
+    "exactHead": true,
+    "method": "Existing connected Git source requested explicitly after no automatic preview appeared; no configuration or protection changed."
+  },
+  "production": {
+    "id": "dpl_5gNeX33TEQwyiJSyS1toGiavZTSS",
+    "state": "READY",
+    "target": "production",
+    "alias": "https://www.rivyalivingart.com",
+    "exactMain": true,
+    "checks": [
+      {
+        "path": "/",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/process",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/collectible-design",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/journal",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/portfolio",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/testimonials",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/faq",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/pieces/river-channel",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/commission/customize",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "noindex, nofollow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/contact",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/imprint",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/privacy",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/terms",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/studio/login",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "noindex, nofollow, noarchive",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/studio",
+        "status": 307,
+        "deploymentMatched": true,
+        "robots": "noindex, nofollow, noarchive",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/api/studio/content",
+        "status": 401,
+        "deploymentMatched": false,
+        "cacheControl": "private, no-store"
+      },
+      {
+        "path": "/workshops",
+        "status": 410,
+        "deploymentMatched": false,
+        "robots": "noindex,nofollow",
+        "cacheControl": "private, no-store"
+      },
+      {
+        "path": "/m11-check-route-not-found",
+        "status": 404,
+        "deploymentMatched": true,
+        "robots": "noindex",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/robots.txt",
+        "status": 200,
+        "deploymentMatched": false,
+        "cacheControl": "public, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/sitemap.xml",
+        "status": 200,
+        "deploymentMatched": false,
+        "cacheControl": "public, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/portfolio/a-narrow-blue-line-at-the-dining-table",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/portfolio/a-console-and-small-object-sharing-an-edge-rhythm",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/portfolio/initials-with-a-quiet-colour-accent",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/testimonials/a-preference-for-a-quieter-dining-accent",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/testimonials/repeating-a-detail-at-two-scales",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/testimonials/keeping-initials-readable-within-an-accent",
+        "status": 200,
+        "deploymentMatched": true,
+        "robots": "index, follow",
+        "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+      }
+    ],
+    "passed": true
+  },
+  "reviews": {
+    "code": "completed without findings",
+    "security": "completed without findings",
+    "head": "0d8c736d34c0720bd0a53b5a8243a08b154e2b8e",
+    "vercel": "success",
+    "previewFeedbackUnresolved": 0
+  },
+  "preservation": {
+    "scopeCount": 13,
+    "allOriginalIdsAndDigestsUnchanged": true,
+    "counts": {
+      "rivya_catalogue": 120,
+      "rivya_content": 535,
+      "rivya_public_media": 154,
+      "rivya_business_settings": 1,
+      "rivya_revisions": 1389,
+      "rivya_inquiries": 2,
+      "rivya_studio_orders": 2,
+      "rivya_studio_order_events": 2,
+      "rivya_inquiry_notes": 0,
+      "rivya_references": 0,
+      "rivya_staff": 0,
+      "rivya_privacy_controls": 2,
+      "rivya_erasure_ledger": 0
+    },
+    "schemaChanges": 0,
+    "productionContentWrites": 0,
+    "entriesReplayed": 0,
+    "homepageRevision": 4
+  },
+  "media": {
+    "at": "2026-10-12T13:23:25.382Z",
+    "film": {
+      "duration": 8.042,
+      "muted": true,
+      "playVerified": true,
+      "pauseVerified": true,
+      "visibleSequenceDescription": true
+    },
+    "visibleImagesLoaded": true,
+    "production": "dpl_5gNeX33TEQwyiJSyS1toGiavZTSS",
+    "contentWrites": 0
+  },
+  "performance": {
+    "profile": "390x844 CSS viewport, DPR1, configured CPU4x, 150ms latency, 200000 bytes/s down and 93750 bytes/s up. Buffered performance observers. Browser-cache bypassed versus cache-enabled repeat; no server/CDN cache-state claim.",
+    "samples": [
+      {
+        "lcp": 3312,
+        "cls": 0,
+        "events": [],
+        "lastLcp": 3389.7000000029802,
+        "element": "IMG",
+        "route": "/",
+        "width": 390,
+        "height": 844,
+        "ready": true,
+        "ttfb": 32.100000001490116,
+        "transfer": 895090,
+        "fonts": [
+          {
+            "bytes": 26716,
+            "path": "/_next/static/immutable/media/instrument_serif_italic_400-s.p.0wnmdje6zcwev.woff2"
+          },
+          {
+            "bytes": 25500,
+            "path": "/_next/static/immutable/media/instrument_serif_normal_400-s.p.18vle3lcyniec.woff2"
+          },
+          {
+            "bytes": 108508,
+            "path": "/_next/static/immutable/media/inter_normal_400-s.p.3to6rkv6ix3_5.woff2"
+          },
+          {
+            "bytes": 112176,
+            "path": "/_next/static/immutable/media/inter_normal_500-s.p.0cnwkkxvcr34w.woff2"
+          },
+          {
+            "bytes": 112264,
+            "path": "/_next/static/immutable/media/inter_normal_600-s.p.3n9z5qx3r9gxc.woff2"
+          },
+          {
+            "bytes": 38224,
+            "path": "/_next/static/immutable/media/jetbrains_mono_normal_400-s.3p2aaikm0te22.woff2"
+          }
+        ],
+        "overflow": false,
+        "label": "before release home cache-bypassed",
+        "cacheDisabled": true,
+        "at": "2026-10-12T13:18:30.509Z"
+      },
+      {
+        "lcp": 3256,
+        "cls": 0,
+        "events": [],
+        "lastLcp": 3355.10000000149,
+        "element": "IMG",
+        "route": "/",
+        "width": 390,
+        "height": 844,
+        "ready": true,
+        "ttfb": 34.19999999552965,
+        "transfer": 720713,
+        "fonts": [
+          {
+            "bytes": 26716,
+            "path": "/_next/static/immutable/media/instrument_serif_italic_400-s.p.0wnmdje6zcwev.woff2"
+          },
+          {
+            "bytes": 25500,
+            "path": "/_next/static/immutable/media/instrument_serif_normal_400-s.p.18vle3lcyniec.woff2"
+          },
+          {
+            "bytes": 51428,
+            "path": "/_next/static/immutable/media/inter_common_400.p.0o0ng46tm1dow.woff2"
+          },
+          {
+            "bytes": 53072,
+            "path": "/_next/static/immutable/media/inter_common_500.p.2rmtguq84la8t.woff2"
+          },
+          {
+            "bytes": 53260,
+            "path": "/_next/static/immutable/media/inter_common_600.p.12orsel4k55m_.woff2"
+          },
+          {
+            "bytes": 38224,
+            "path": "/_next/static/immutable/media/jetbrains_mono_normal_400-s.3p2aaikm0te22.woff2"
+          }
+        ],
+        "overflow": false,
+        "label": "PR50 homepage cache-bypassed",
+        "cacheDisabled": true,
+        "at": "2026-10-12T13:20:55.762Z"
+      },
+      {
+        "lcp": 1448,
+        "cls": 0.023951753105276162,
+        "events": [],
+        "lastLcp": 1817.5,
+        "element": "IMG",
+        "route": "/",
+        "width": 390,
+        "height": 844,
+        "ready": true,
+        "ttfb": 67.70000000298023,
+        "transfer": 29890,
+        "fonts": [
+          {
+            "bytes": 0,
+            "path": "/_next/static/immutable/media/instrument_serif_italic_400-s.p.0wnmdje6zcwev.woff2"
+          },
+          {
+            "bytes": 0,
+            "path": "/_next/static/immutable/media/instrument_serif_normal_400-s.p.18vle3lcyniec.woff2"
+          },
+          {
+            "bytes": 0,
+            "path": "/_next/static/immutable/media/inter_common_400.p.0o0ng46tm1dow.woff2"
+          },
+          {
+            "bytes": 0,
+            "path": "/_next/static/immutable/media/inter_common_500.p.2rmtguq84la8t.woff2"
+          },
+          {
+            "bytes": 0,
+            "path": "/_next/static/immutable/media/inter_common_600.p.12orsel4k55m_.woff2"
+          },
+          {
+            "bytes": 0,
+            "path": "/_next/static/immutable/media/jetbrains_mono_normal_400-s.3p2aaikm0te22.woff2"
+          }
+        ],
+        "overflow": false,
+        "label": "PR50 homepage cache-enabled repeat",
+        "cacheDisabled": false,
+        "at": "2026-10-12T13:20:59.683Z"
+      },
+      {
+        "lcp": 2928,
+        "cls": 0,
+        "events": [],
+        "lastLcp": 2942.39999999851,
+        "element": "IMG",
+        "route": "/collectible-design",
+        "width": 390,
+        "height": 844,
+        "ready": true,
+        "ttfb": 89.39999999850988,
+        "transfer": 587648,
+        "fonts": [
+          {
+            "bytes": 26716,
+            "path": "/_next/static/immutable/media/instrument_serif_italic_400-s.p.0wnmdje6zcwev.woff2"
+          },
+          {
+            "bytes": 25500,
+            "path": "/_next/static/immutable/media/instrument_serif_normal_400-s.p.18vle3lcyniec.woff2"
+          },
+          {
+            "bytes": 51428,
+            "path": "/_next/static/immutable/media/inter_common_400.p.0o0ng46tm1dow.woff2"
+          },
+          {
+            "bytes": 53072,
+            "path": "/_next/static/immutable/media/inter_common_500.p.2rmtguq84la8t.woff2"
+          },
+          {
+            "bytes": 53260,
+            "path": "/_next/static/immutable/media/inter_common_600.p.12orsel4k55m_.woff2"
+          },
+          {
+            "bytes": 38224,
+            "path": "/_next/static/immutable/media/jetbrains_mono_normal_400-s.3p2aaikm0te22.woff2"
+          }
+        ],
+        "overflow": false,
+        "label": "PR50 collection cache-bypassed",
+        "cacheDisabled": true,
+        "at": "2026-10-12T13:21:17.138Z"
+      },
+      {
+        "lcp": 972,
+        "cls": 0,
+        "events": [],
+        "lastLcp": 1173.2999999970198,
+        "element": "IMG",
+        "route": "/collectible-design",
+        "width": 390,
+        "height": 844,
+        "ready": true,
+        "ttfb": 34,
+        "transfer": 22421,
+        "fonts": [
+          {
+            "bytes": 0,
+            "path": "/_next/static/immutable/media/instrument_serif_italic_400-s.p.0wnmdje6zcwev.woff2"
+          },
+          {
+            "bytes": 0,
+            "path": "/_next/static/immutable/media/instrument_serif_normal_400-s.p.18vle3lcyniec.woff2"
+          },
+          {
+            "bytes": 0,
+            "path": "/_next/static/immutable/media/inter_common_400.p.0o0ng46tm1dow.woff2"
+          },
+          {
+            "bytes": 0,
+            "path": "/_next/static/immutable/media/inter_common_500.p.2rmtguq84la8t.woff2"
+          },
+          {
+            "bytes": 0,
+            "path": "/_next/static/immutable/media/inter_common_600.p.12orsel4k55m_.woff2"
+          },
+          {
+            "bytes": 0,
+            "path": "/_next/static/immutable/media/jetbrains_mono_normal_400-s.3p2aaikm0te22.woff2"
+          }
+        ],
+        "overflow": false,
+        "label": "PR50 collection cache-enabled repeat",
+        "cacheDisabled": false,
+        "at": "2026-10-12T13:21:20.342Z"
+      }
+    ],
+    "initialFontTransferReductionBytes": 175188,
+    "coldLcpTargetMet": false,
+    "repeatLcpTargetMet": true,
+    "fieldP75": "not observed",
+    "notes": "Fresh same-session before/after homepage cold samples are 3312/3256ms. This small change is not a statistically established latency improvement. All samples, including misses, are retained."
+  },
+  "runtimeLogObservation": {
+    "deployment": "dpl_5gNeX33TEQwyiJSyS1toGiavZTSS",
+    "window": "15m lookback at observation time",
+    "levels": [
+      "error",
+      "fatal"
+    ],
+    "groupsReturned": 0,
+    "limitation": "A bounded log query, not a full-site uptime guarantee."
+  },
+  "cleanup": {
+    "qaServerStopped": true,
+    "isolatedPostgresStopped": true,
+    "dataRetained": true,
+    "temporaryBrowserOverridesReset": true,
+    "scheduledContinuation": false
+  },
+  "remaining": [
+    "Full section/scroll/child/create/edit/print/hover/focus variants across the complete visual register; populated reference records are absent in several old libraries.",
+    "Actual native 200%/400% browser zoom, human screen-reader and physical-phone tasks.",
+    "Independent Hindi/Gujarati meaning review; outstanding factual/media-rights evidence.",
+    "Further cold-loading diagnosis: homepage 3256ms and collection 2928ms exceed 2500ms.",
+    "Field p75 and consent-safe real inquiry observations."
+  ]
+}

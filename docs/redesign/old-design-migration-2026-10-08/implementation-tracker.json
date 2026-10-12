@@ -1,5 +1,5 @@
 {
-  "status": "m10_pending_followup_verified_for_named_states_release_prepared",
+  "status": "m11_followup_released_m10_acceptance_partially_verified",
   "existingContentFrozen": true,
   "oldPageTemplates": 85,
   "oldSectionDefinitions": 74,
@@ -1172,7 +1172,8 @@
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
       "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
-      "pendingFollowUpEvidence": "m10-pending-evidence.json"
+      "pendingFollowUpEvidence": "m10-pending-evidence.json",
+      "pendingReleaseEvidence": "m10-pending-release-evidence.json"
     },
     {
       "id": "M10-02",
@@ -1193,7 +1194,8 @@
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
       "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
-      "pendingFollowUpEvidence": "m10-pending-evidence.json"
+      "pendingFollowUpEvidence": "m10-pending-evidence.json",
+      "pendingReleaseEvidence": "m10-pending-release-evidence.json"
     },
     {
       "id": "M10-03",
@@ -1210,10 +1212,11 @@
       "status": "partially verified",
       "owner": "Codex",
       "evidence": "m10-evidence.json",
-      "note": "Local initial Inter payload 332048 -> 156860 bytes; observed reads 4 -> 3; matched local homepage bypassed LCP 2.712s -> 1.732s, collection repeat 0.468s -> 0.476s. Hosted/field target remains open.",
+      "note": "Font reduction verified live: 175188 bytes. New cold LCP home3256ms/collection2928ms still miss2500ms; cache-enabled repeats1448ms/972ms. Field p75 remains unavailable. All samples retained.",
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
-      "pendingFollowUpEvidence": "m10-pending-evidence.json"
+      "pendingFollowUpEvidence": "m10-pending-evidence.json",
+      "pendingReleaseEvidence": "m10-pending-release-evidence.json"
     },
     {
       "id": "M10-04",
@@ -1234,7 +1237,8 @@
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
       "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
-      "pendingFollowUpEvidence": "m10-pending-evidence.json"
+      "pendingFollowUpEvidence": "m10-pending-evidence.json",
+      "pendingReleaseEvidence": "m10-pending-release-evidence.json"
     },
     {
       "id": "M10-05",
@@ -1255,7 +1259,8 @@
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
       "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
-      "pendingFollowUpEvidence": "m10-pending-evidence.json"
+      "pendingFollowUpEvidence": "m10-pending-evidence.json",
+      "pendingReleaseEvidence": "m10-pending-release-evidence.json"
     },
     {
       "id": "M11-01",
@@ -1268,7 +1273,8 @@
       "status": "verified for stated scope",
       "owner": "Codex",
       "evidence": "m11-evidence.json",
-      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md."
+      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md.",
+      "pendingReleaseEvidence": "m10-pending-release-evidence.json"
     },
     {
       "id": "M11-02",
@@ -1281,7 +1287,8 @@
       "status": "verified for stated scope",
       "owner": "Codex",
       "evidence": "m11-evidence.json",
-      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md."
+      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md.",
+      "pendingReleaseEvidence": "m10-pending-release-evidence.json"
     },
     {
       "id": "M11-03",
@@ -1294,7 +1301,8 @@
       "status": "verified for stated scope",
       "owner": "Codex",
       "evidence": "m11-evidence.json",
-      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md."
+      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md.",
+      "pendingReleaseEvidence": "m10-pending-release-evidence.json"
     },
     {
       "id": "M11-04",
@@ -1307,7 +1315,8 @@
       "status": "verified for stated scope",
       "owner": "Codex",
       "evidence": "m11-evidence.json",
-      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md."
+      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md.",
+      "pendingReleaseEvidence": "m10-pending-release-evidence.json"
     },
     {
       "id": "M11-05",
@@ -1320,7 +1329,8 @@
       "status": "verified for stated scope",
       "owner": "Codex",
       "evidence": "m11-evidence.json",
-      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md."
+      "note": "Recorded release execution verified; outstanding M10 external and performance acceptance remains explicit in M10-CONTINUATION.md.",
+      "pendingReleaseEvidence": "m10-pending-release-evidence.json"
     }
   ],
   "editorialTargets": {
@@ -1332,10 +1342,13 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "PR48/49 production release and homepage revision 4 remain complete for their recorded scope. New local M10 font/read optimization is verified in m10-loading-evidence.json; hosted/full visual/human/native/device/field acceptance remains open. No new release or production writes.",
-  "nextPhaseAuthorization": "Owner requested the next step on 12 October 2026; continue remaining M10 work locally. Earlier M11 release authorization was exercised for PR48/49; no new release in this checkpoint.",
+  "note": "PR50 released the M10 loading, contrast and Studio usability follow-ups at main 620aa806fa8d7bbf820b41796cee9ddf90ca0591, READY production dpl_5gNeX33TEQwyiJSyS1toGiavZTSS. All 26 production checks and 13 protected-scope comparisons pass. Hosted samples are recorded; cold LCP remains above target. Full visual/human/native/device/rights/field acceptance remains open. No production content writes or publication replay occurred.",
+  "nextPhaseAuthorization": "The owner requested all pending work after explicitly authorizing detailed PR/main/M11 release. PR50 release is complete; continue the outstanding M10 acceptance work from m10-pending-release-evidence.json without replaying the 480 entries, homepage revision 4 or completed release steps.",
   "m10Evidence": "m10-evidence.json",
   "acceptanceMatrix": "m10-acceptance-matrix.json",
-  "releaseEvidence": "m11-evidence.json",
-  "loadingFollowUpEvidence": "m10-loading-evidence.json"
+  "releaseEvidence": "m10-pending-release-evidence.json",
+  "priorReleaseEvidence": "m11-evidence.json",
+  "loadingFollowUpEvidence": "m10-loading-evidence.json",
+  "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
+  "pendingFollowUpEvidence": "m10-pending-evidence.json"
 }
