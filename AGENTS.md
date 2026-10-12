@@ -1,4 +1,10 @@
-# Current checkpoint — M10 local regression candidate, 12 October 2026
+# Current authorization — M10 and M11, 12 October 2026
+
+The owner explicitly requested starting M10 and M11. Read `docs/decisions/2026-10-12-m10-m11.md`. Finish feasible M10 checks, release through a detailed PR into main, verify the exact Vercel production deployment and activate approved homepage editorial selections through real Studio save/preview/publish. Earlier M11 permission and local-only holds are superseded for this candidate. Do not replay the 480-entry release. Preserve protected data and retain honest human/native/device/field acceptance gaps.
+
+---
+
+# Previous checkpoint — M10 local regression candidate, 12 October 2026
 
 Read `docs/redesign/old-design-migration-2026-10-08/M10-CONTINUATION.md`, `M10-REGRESSION-REPORT.md` and `m10-evidence.json`. The new homepage editorial selections and three accessibility/responsive repairs are complete locally. Final build/type/lint, 344 unit tests, 403 built-server checks and six publication/recovery groups pass; every original local row matches both M10 baselines in all 13 scopes. The final browser evidence contains 73 accessibility scans with no confirmed violations and 544 responsive DOM checks. M10 remains partially verified: full visual/child-state comparison, scanner manual-review items, native zoom, real screen-reader/physical-phone/native-reader evidence and hosted/field performance remain open. M5–M9/480-entry production activation is already complete; never replay it. M11 and any new M10 release require explicit owner permission. Earlier pause and stop-before-M9 statements below are historical.
 

@@ -20,9 +20,9 @@ The owner resumed M10. The former pause is historical. Branch: `codex/m10-regres
 
 M10-02 is verified for the protected-data/publication scope. M10-05 is verified for explicit reconciliation of gaps. M10-01, M10-03 and M10-04 remain partially verified. This is not full-plan acceptance.
 
-## Release boundary
+## Authorized M11 release (supersedes the earlier hold)
 
-New M10 work remains local. M11 is a separate phase requiring the owner's explicit permission. When release is requested, use a detailed PR into main, review exact checks and verify the exact deployment; never push directly to main. Homepage editorial selection activation is a separate Studio save → preview → publish step after the new code is deployed. Select only the approved production identities; never copy QA IDs or QA presentation revisions. Do not infer automatic selections from this code release.
+The owner explicitly authorized M10 and M11 on 12 October 2026. Continue the detailed PR into main, review exact checks and verify the exact deployment; never push directly to main. Read M11-RELEASE.md and docs/decisions/2026-10-12-m10-m11.md. Homepage editorial selection activation is a separate Studio save → preview → publish step after the new code is deployed. Select only the approved production identities; never copy QA IDs or QA presentation revisions. Do not infer automatic selections from this code release.
 
 The previous automatic approval rejection for a protected Vercel fetch concerned creation of an authentication-bypass share link. Do not retry that mechanism. Public verification and the normal Studio administrator workflow are available alternatives.
 

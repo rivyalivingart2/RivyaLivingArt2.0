@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-12T04:31:22.224Z",
+  "status": "candidate_verified_release_in_progress",
+  "candidate": {
+    "base": "e3e03fcaa75f693fd799fef08e7da449b4fb22cd",
+    "applicationSha256": "6096a9dd5ff37a875a8041eaaa25bddfe963a54899679bab9d3d1f5f6170ad46"
+  },
+  "authorization": "docs/decisions/2026-10-12-m10-m11.md",
+  "tests": {
+    "build": "pass",
+    "typescript": "pass",
+    "editedSourceLint": "pass",
+    "unit": {
+      "passed": 344,
+      "failed": 0
+    },
+    "builtServer": {
+      "passed": 403,
+      "failed": 0
+    },
+    "priorM10": "m10-evidence.json"
+  },
+  "focusedBrowser": {
+    "scans": [
+      {
+        "route": "/studio/analytics",
+        "violations": 0,
+        "manualItems": [
+          {
+            "id": "color-contrast",
+            "count": 10
+          }
+        ],
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "route": "/",
+        "violations": 0,
+        "manualItems": [
+          {
+            "id": "color-contrast",
+            "count": 40
+          },
+          {
+            "id": "video-caption",
+            "count": 1
+          }
+        ],
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "route": "/studio/follow-ups",
+        "violations": 0,
+        "manualItems": [],
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "route": "/studio/journal/new",
+        "violations": 0,
+        "manualItems": [],
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "route": "/studio/inquiries (saved manual QA record dialog)",
+        "violations": 0,
+        "manualItems": [
+          {
+            "id": "color-contrast",
+            "count": 2
+          }
+        ],
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "route": "saved QA order card (print CSS emulation)",
+        "violations": 0,
+        "manualItems": [],
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "emptyInquiryTableOmitted": true,
+    "video": {
+      "mp4HandlerTypes": [
+        "vide"
+      ],
+      "webmAudioDecodedBytes": 0,
+      "durationSeconds": 8.042,
+      "alternative": "Visible sequence description referenced with aria-describedby",
+      "humanScreenReader": false
+    },
+    "studioGradientContrast": {
+      "foreground": [
+        244,
+        241,
+        233
+      ],
+      "backgroundStops": [
+        [
+          17,
+          32,
+          51
+        ],
+        [
+          13,
+          22,
+          34
+        ]
+      ],
+      "minimumRatio": 14.555439729324963,
+      "basis": "Computed current analytics metric-card gradient stops; inspected numbers are actual text."
+    },
+    "nativeZoom": {
+      "status": "unverified",
+      "attempt": "IAB Ctrl+plus did not change innerWidth 1280 or devicePixelRatio 1. Reset Ctrl+0; no emulation counted as native zoom."
+    }
+  },
+  "productionBefore": {
+    "at": "2026-10-12T04:23:24.925Z",
+    "counts": {
+      "rivya_catalogue": 120,
+      "rivya_content": 535,
+      "rivya_public_media": 154,
+      "rivya_business_settings": 1,
+      "rivya_revisions": 1389,
+      "rivya_inquiries": 2,
+      "rivya_studio_orders": 2,
+      "rivya_studio_order_events": 2,
+      "rivya_inquiry_notes": 0,
+      "rivya_references": 0,
+      "rivya_staff": 0,
+      "rivya_privacy_controls": 2,
+      "rivya_erasure_ledger": 0
+    },
+    "privateDigestFile": "test-results/old-design-migration/live-read-only-m11-before-private.json"
+  },
+  "release": null,
+  "activation": null,
+  "productionAfter": null,
+  "remaining": [
+    "Full old/current section and child/error-state visual parity",
+    "Remaining image/overlay contrast manual review",
+    "Native browser 200%/400% zoom",
+    "Actual human screen-reader and physical-phone task evidence",
+    "Independent Hindi/Gujarati native review and outstanding factual/media-owner review",
+    "Hosted LCP target and field p75",
+    "Consent-safe genuine-inquiry/real-user evidence"
+  ],
+  "exclusions": [
+    "scraper",
+    "old-product transfers",
+    "backup work",
+    "unreviewed translation publication",
+    "fabricated customer evidence"
+  ]
+}

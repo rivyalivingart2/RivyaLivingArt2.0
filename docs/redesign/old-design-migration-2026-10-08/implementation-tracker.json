@@ -1,5 +1,5 @@
 {
-  "status": "m5_m9_live_m10_partially_verified_local",
+  "status": "m10_verified_scopes_m11_authorized_in_progress",
   "existingContentFrozen": true,
   "oldPageTemplates": 85,
   "oldSectionDefinitions": 74,
@@ -1246,9 +1246,9 @@
         "M10"
       ],
       "acceptance": "List all module/template changes, protected baseline, migrations, licenses, test evidence, exclusions and remaining content dependencies.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "verified for stated scope",
+      "owner": "Codex",
+      "evidence": "M11-RELEASE.md"
     },
     {
       "id": "M11-02",
@@ -1258,9 +1258,9 @@
         "M10"
       ],
       "acceptance": "No secrets/raw customer evidence; application changes and content publication steps distinguished; approved scope explicit.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "in progress",
+      "owner": "Codex",
+      "evidence": "M11-RELEASE.md"
     },
     {
       "id": "M11-03",
@@ -1270,9 +1270,9 @@
         "M10"
       ],
       "acceptance": "Required repository checks pass; exact main SHA matches READY deployment; no automatic reset/seed/import.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "in progress",
+      "owner": "Codex",
+      "evidence": "M11-RELEASE.md"
     },
     {
       "id": "M11-04",
@@ -1282,9 +1282,9 @@
         "M10"
       ],
       "acceptance": "Current contacts/SEO/indexing/Imprint, routes, records and media verified using small read-only production checks.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "in progress",
+      "owner": "Codex",
+      "evidence": "M11-RELEASE.md"
     },
     {
       "id": "M11-05",
@@ -1294,9 +1294,9 @@
         "M10"
       ],
       "acceptance": "Prior compatible code and draft revisions available; missing genuine inquiry/field/human evidence remains open until observed.",
-      "status": "planned",
-      "owner": null,
-      "evidence": null
+      "status": "in progress",
+      "owner": "Codex",
+      "evidence": "M11-RELEASE.md"
     }
   ],
   "editorialTargets": {
@@ -1308,8 +1308,8 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "M5-M9 released through PR47; 480/480 approved labelled records published. M10 local candidate passes its engineering checks; full visual/human/native/device/field and hosted-performance acceptance remain open. Read m10-evidence.json and M10-CONTINUATION.md. Older stop-before-M9 notes are superseded.",
-  "nextPhaseAuthorization": "M10 remains authorized; M11/new release requires explicit owner permission.",
+  "note": "M5-M9 and all 480 entries already live. M10 retains explicit visual/human/native/device/field gaps. M11 now authorized; see M11-RELEASE.md.",
+  "nextPhaseAuthorization": "Owner explicitly authorized M10 and M11 on 12 October 2026; detailed PR, checked release and Studio activation authorized.",
   "m10Evidence": "m10-evidence.json",
   "acceptanceMatrix": "m10-acceptance-matrix.json",
   "releaseEvidence": "release-m5-m9-evidence.json"
