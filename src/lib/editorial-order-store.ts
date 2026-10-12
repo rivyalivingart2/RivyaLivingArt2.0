@@ -6,6 +6,7 @@ import {publicEntry,type LandingEntry} from './landing-dependencies';
 import {editorialPublicationIssues} from './editorial-record-model';
 import {orderScopes,orderKey,groupId,validOrderIds,type EditorialOrder} from './editorial-order';
 import {studioDb} from './studio-db';
+import {publishedDesignSource} from './published-design-source';
 export async function orderSource(){
  const source=await publishedSource();
  const docs=source.content.filter(r=>validContent(r.document,baselineContent.find(d=>d.id===r.key))&&!editorialPublicationIssues(r.document as ContentDocument).length).map(r=>r.document as ContentDocument);
@@ -35,8 +36,8 @@ export async function orderEntry(scope:string){
 export async function orderHistory(scope:string){return studioDb()`SELECT version,operation,created_at AS "createdAt" FROM rivya_presentation_revisions WHERE presentation_key=${orderKey(scope)} ORDER BY version DESC LIMIT 30`;}
 export async function savedOrder(scope:string,version:number):Promise<EditorialOrder|null>{const rows=await studioDb()`SELECT document FROM rivya_presentation_revisions WHERE presentation_key=${orderKey(scope)} AND version=${version}`;return rows[0]?.document||null;}
 export const publishedOrders=cache(async():Promise<Record<string,string[]>>=>{
- try{const rows=await studioDb()`SELECT published FROM rivya_presentations WHERE presentation_key LIKE 'editorial-order:%' AND published IS NOT NULL`;return Object.fromEntries(rows.map(r=>[r.published.scope.key,r.published.ids]));}
- catch(e){if((e as {code?:string}).code==='42P01')return {};throw e;}
+ const {orders}=await publishedDesignSource();
+ return Object.fromEntries(orders.map((row:{scope:string;ids:string[]})=>[row.scope,row.ids]));
 });
 export function orderedFaqSections<T extends {id:string;group?:string}>(sections:T[],orders:Record<string,string[]>){
  const groups=[...new Set(sections.map(s=>s.group||'Useful questions'))];

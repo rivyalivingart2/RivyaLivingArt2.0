@@ -1,0 +1,436 @@
+{
+  "date": "2026-10-12T05:33:52.458Z",
+  "status": "local performance candidate verified; M10 remains partially verified",
+  "candidate": {
+    "base": "26b1e4b18c6ca8e5d9f10804072c1d50512fcae8",
+    "applicationSha256": "66964b6ef89ac9475a5a59f2142d0ff25ec8acd6736136059cc73918b371f1cd"
+  },
+  "branch": "codex/m10-loading-performance",
+  "released": false,
+  "implementation": {
+    "fontSplit": "Same original Inter version, shapes, metrics and complete character coverage; common subset preloaded, remaining supported glyphs on demand",
+    "combinedRead": "One request-local React-cached read for published layout and editorial IDs; no cross-request TTL or stale fallback",
+    "schemaChanges": false,
+    "dependencyChanges": false,
+    "productionWrites": false
+  },
+  "fontBudget": {
+    "beforeInterBytes": 332048,
+    "afterCommonInterBytes": 156860,
+    "allRetainedGlyphOutlinesAndMetricsUnchanged": true,
+    "completeOriginalCoverage": true,
+    "originalFontFilesUnchanged": true,
+    "canvasMetricComparisons": 12,
+    "canvasMetricsIdentical": true,
+    "cleanGujaratiResourceCheck": {
+      "lang": "gu",
+      "width": 1280,
+      "fonts": [
+        {
+          "file": "instrument_serif_italic_400-s.p.3-d6dgyin-0mt.woff2",
+          "bytes": 26416
+        },
+        {
+          "file": "instrument_serif_normal_400-s.p.110427suu0jwy.woff2",
+          "bytes": 25200
+        },
+        {
+          "file": "inter_common_400.p.0gihhb4bxhup_.woff2",
+          "bytes": 51128
+        },
+        {
+          "file": "inter_common_600.p.3vrgjmlwpo99f.woff2",
+          "bytes": 52960
+        },
+        {
+          "file": "inter_common_500.p.22o0ybxfq06d7.woff2",
+          "bytes": 52772
+        },
+        {
+          "file": "jetbrains_mono_normal_400-s.147w6_uciosde.woff2",
+          "bytes": 37924
+        }
+      ]
+    },
+    "evidence": "m10-font-split.json"
+  },
+  "requestBudget": {
+    "baseline": 4,
+    "candidate": 3,
+    "scope": "Observed local homepage and collection render SQL calls",
+    "before": [
+      "shell",
+      "layout",
+      "order",
+      "source-or-identity"
+    ],
+    "after": [
+      "shell",
+      "design",
+      "source-or-identity"
+    ],
+    "baselineAlreadyConcurrent": true,
+    "productionServerTrace": false
+  },
+  "performance": {
+    "scope": "Local built application only; one sample per route/cache mode/candidate, warmed server",
+    "emulation": {
+      "width": 390,
+      "height": 844,
+      "deviceScaleFactor": 1,
+      "mobile": true,
+      "cpuRate": 4,
+      "latencyMs": 150,
+      "downloadBytesPerSecond": 200000,
+      "uploadBytesPerSecond": 93750
+    },
+    "samples": [
+      {
+        "label": "baseline homepage cache bypassed",
+        "at": "2026-10-12T05:11:35.497Z",
+        "route": "/",
+        "lcpMs": 2712,
+        "cls": 0.00018996522780376186,
+        "ttfbMs": 250.09999999962747,
+        "encodedResourceBodyBytes": 855763
+      },
+      {
+        "label": "baseline homepage cache-enabled repeat",
+        "at": "2026-10-12T05:12:24.409Z",
+        "route": "/",
+        "lcpMs": 528,
+        "cls": 0,
+        "ttfbMs": 216.40000000037253,
+        "encodedResourceBodyBytes": 757278
+      },
+      {
+        "label": "baseline collection cache bypassed",
+        "at": "2026-10-12T05:13:13.335Z",
+        "route": "/collectible-design",
+        "lcpMs": 1464,
+        "cls": 0,
+        "ttfbMs": 118.09999999962747,
+        "encodedResourceBodyBytes": 731226
+      },
+      {
+        "label": "baseline collection cache-enabled repeat",
+        "at": "2026-10-12T05:13:28.153Z",
+        "route": "/collectible-design",
+        "lcpMs": 468,
+        "cls": 0,
+        "ttfbMs": 134.09999999962747,
+        "encodedResourceBodyBytes": 735706
+      },
+      {
+        "label": "final homepage cache bypassed",
+        "at": "2026-10-12T05:22:47.410Z",
+        "route": "/",
+        "lcpMs": 1732,
+        "cls": 0.00018996522780376186,
+        "ttfbMs": 155.09999999962747,
+        "encodedResourceBodyBytes": 681463
+      },
+      {
+        "label": "final homepage cache-enabled repeat",
+        "at": "2026-10-12T05:22:48.134Z",
+        "route": "/",
+        "lcpMs": 448,
+        "cls": 0,
+        "ttfbMs": 158.59999999962747,
+        "encodedResourceBodyBytes": 570155
+      },
+      {
+        "label": "final collection cache bypassed",
+        "at": "2026-10-12T05:23:00.293Z",
+        "route": "/collectible-design",
+        "lcpMs": 1384,
+        "cls": 0,
+        "ttfbMs": 139.60000000149012,
+        "encodedResourceBodyBytes": 554563
+      },
+      {
+        "label": "final collection cache-enabled repeat",
+        "at": "2026-10-12T05:23:01.039Z",
+        "route": "/collectible-design",
+        "lcpMs": 476,
+        "cls": 0,
+        "ttfbMs": 113.19999999925494,
+        "encodedResourceBodyBytes": 554563
+      }
+    ],
+    "limitations": [
+      "No statistical confidence or field p75 conclusion from single samples",
+      "Cache-enabled encoded body sizes are not transferred-byte measurements",
+      "Hosted database/network conditions are absent locally",
+      "The intermediate font-range probe is superseded and excluded from the before/after comparison"
+    ]
+  },
+  "verification": {
+    "buildAndTypecheck": "pass, final font ranges included",
+    "lint": "exit 0; 0 errors and 62 existing warnings in unchanged files",
+    "unitTests": 344,
+    "builtServerChecks": 403,
+    "designQueryGroups": [
+      "Empty design store has no invented selection or order",
+      "Published versions and exact order only; no draft or saved preview bodies",
+      "Saving a draft cannot change public display",
+      "A fresh read immediately sees new published layout and order",
+      "Withdrawal immediately removes both published projections",
+      "Temporary fixture rolled back; original presentation table retained"
+    ],
+    "homepageLifecycleGroups": [
+      "Anonymous and cross-origin requests denied; editor cannot publish",
+      "Editor saves explicit choices; exact private preview preserves disclosures and desktop/mobile crops",
+      "Changed source refuses stale publication while old saved preview remains exact",
+      "Fresh saved design publishes and the anonymous homepage shows both explicitly selected sections",
+      "Restore creates a new draft with fresh dependencies and does not republish",
+      "Withdrawal removes the public selection and blocks old or newly unresolved presentation publication"
+    ],
+    "focusedAccessibilityScans": [
+      {
+        "label": "collection en mobile",
+        "heading": "Presence, in every form.",
+        "lang": "en",
+        "missingImageAlt": 0,
+        "scrollWidth": 390,
+        "width": 390,
+        "violations": [],
+        "manual": []
+      },
+      {
+        "label": "collection hi mobile",
+        "heading": "Presence, in every form.",
+        "lang": "hi",
+        "missingImageAlt": 0,
+        "scrollWidth": 390,
+        "width": 390,
+        "violations": [],
+        "manual": []
+      },
+      {
+        "label": "collection gu mobile",
+        "heading": "Presence, in every form.",
+        "lang": "gu",
+        "missingImageAlt": 0,
+        "scrollWidth": 390,
+        "width": 390,
+        "violations": [],
+        "manual": []
+      },
+      {
+        "label": "home-en-mobile",
+        "heading": "Art for the way you live.",
+        "lang": "en",
+        "missingImageAlt": 0,
+        "scrollWidth": 390,
+        "width": 390,
+        "violations": [],
+        "manual": [
+          {
+            "id": "color-contrast",
+            "nodes": 40
+          },
+          {
+            "id": "video-caption",
+            "nodes": 1
+          }
+        ]
+      },
+      {
+        "label": "home-hi-mobile",
+        "heading": "Art for the way you live.",
+        "lang": "hi",
+        "missingImageAlt": 0,
+        "scrollWidth": 390,
+        "width": 390,
+        "violations": [],
+        "manual": [
+          {
+            "id": "color-contrast",
+            "nodes": 40
+          },
+          {
+            "id": "video-caption",
+            "nodes": 1
+          }
+        ]
+      },
+      {
+        "label": "home-gu-mobile",
+        "heading": "Art for the way you live.",
+        "lang": "gu",
+        "missingImageAlt": 0,
+        "scrollWidth": 390,
+        "width": 390,
+        "violations": [],
+        "manual": [
+          {
+            "id": "color-contrast",
+            "nodes": 40
+          },
+          {
+            "id": "video-caption",
+            "nodes": 1
+          }
+        ]
+      },
+      {
+        "label": "home-en-desktop",
+        "heading": "Art for the way you live.",
+        "lang": "en",
+        "missingImageAlt": 0,
+        "scrollWidth": 1425,
+        "width": 1440,
+        "violations": [],
+        "manual": [
+          {
+            "id": "color-contrast",
+            "nodes": 40
+          },
+          {
+            "id": "video-caption",
+            "nodes": 1
+          }
+        ]
+      },
+      {
+        "label": "collection-en-desktop",
+        "heading": "Presence, in every form.",
+        "lang": "en",
+        "missingImageAlt": 0,
+        "scrollWidth": 1425,
+        "width": 1440,
+        "violations": [],
+        "manual": []
+      }
+    ],
+    "confirmedAccessibilityViolations": 0,
+    "overflowCases": 0,
+    "typographyProbe": "12 identical canvas width/ascent/descent comparisons across English, Hindi, Gujarati, Greek and Cyrillic samples at three weights",
+    "visualScope": "Inspected final 390x700 collection English/Gujarati and 1280x720 homepage openings only; no full old/new visual parity claim",
+    "screenshotLimit": "Initial 390x844 wrapper captures were scaled; clipped capture was distorted and an oversized surface repeated pixels. Only the final unscaled 390x700 and default 1280x720 images support opening inspection."
+  },
+  "preservation": {
+    "mode": "Isolated local QA, read-only before/after digests",
+    "scopes": [
+      {
+        "scope": "rivya_catalogue",
+        "originalRows": 120,
+        "afterRows": 120,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      },
+      {
+        "scope": "rivya_content",
+        "originalRows": 599,
+        "afterRows": 601,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      },
+      {
+        "scope": "rivya_public_media",
+        "originalRows": 152,
+        "afterRows": 152,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      },
+      {
+        "scope": "rivya_business_settings",
+        "originalRows": 1,
+        "afterRows": 1,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      },
+      {
+        "scope": "rivya_revisions",
+        "originalRows": 725,
+        "afterRows": 732,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      },
+      {
+        "scope": "rivya_inquiries",
+        "originalRows": 2,
+        "afterRows": 2,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      },
+      {
+        "scope": "rivya_studio_orders",
+        "originalRows": 7,
+        "afterRows": 7,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      },
+      {
+        "scope": "rivya_studio_order_events",
+        "originalRows": 8,
+        "afterRows": 8,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      },
+      {
+        "scope": "rivya_inquiry_notes",
+        "originalRows": 0,
+        "afterRows": 0,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      },
+      {
+        "scope": "rivya_references",
+        "originalRows": 0,
+        "afterRows": 0,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      },
+      {
+        "scope": "rivya_staff",
+        "originalRows": 7,
+        "afterRows": 8,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      },
+      {
+        "scope": "rivya_privacy_controls",
+        "originalRows": 7,
+        "afterRows": 7,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      },
+      {
+        "scope": "rivya_erasure_ledger",
+        "originalRows": 0,
+        "afterRows": 0,
+        "changedOriginals": 0,
+        "missingOriginals": 0
+      }
+    ],
+    "allOriginalRowsUnchanged": true,
+    "additions": "Two synthetic content fixtures, seven immutable revisions and one QA staff fixture from the bounded lifecycle; no production writes"
+  },
+  "acceptance": {
+    "m10": "partially verified",
+    "m11": "Previous PR48/49 release remains the historical deployed candidate; this follow-up is local",
+    "pending": [
+      "Hosted performance retest of this candidate after an authorized release",
+      "Full old/new section and child/error-state visual comparison",
+      "Remaining image-overlay contrast manual review and actual 200%/400% browser zoom",
+      "Human screen-reader and physical-phone task evidence",
+      "Independent Hindi/Gujarati native-reader and factual/media-rights review",
+      "Consent-safe real inquiry observations and field p75"
+    ]
+  },
+  "evidenceFiles": {
+    "build": "test-results/old-design-migration/m10-loading-build-final2.log",
+    "lint": "test-results/old-design-migration/m10-loading-lint-final.log",
+    "unit": "test-results/old-design-migration/m10-loading-unit-final.log",
+    "runtime": "test-results/old-design-migration/m10-loading-runtime.log",
+    "lifecycle": "test-results/old-design-migration/m10-home-editorial-724ecf38.json",
+    "query": "test-results/old-design-migration/m10-loading-design-read.json",
+    "localSamples": "test-results/old-design-migration/m10-loading/performance.json",
+    "fontComparison": "test-results/old-design-migration/m10-loading/font-comparison.json",
+    "ui": "test-results/old-design-migration/m10-loading/ui-checks.json",
+    "sqlBefore": "test-results/old-design-migration/m10-loading-sql.jsonl",
+    "sqlAfter": "test-results/old-design-migration/m10-loading-sql-final.jsonl"
+  }
+}

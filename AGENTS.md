@@ -1,3 +1,15 @@
+# Current checkpoint — M10 loading improvements verified locally
+
+12 October 2026: the owner's “START TO WORKING ON NEXT STEP” request resumed the remaining M10 performance work. Read M10-LOADING-PERFORMANCE.md, m10-loading-evidence.json and M10-CONTINUATION.md first. Branch: codex/m10-loading-performance, based on main 26b1e4b18c6ca8e5d9f10804072c1d50512fcae8 after PR49. Initial Inter files are reduced from 332,048 to 156,860 bytes with full original coverage retained; published layout and editorial ordering now share one request-local read (three observed SQL calls instead of four). No cross-request stale cache, schema or content change.
+
+Final build/type/lint, 344 unit checks, 403 built-server checks, six SQL contract groups and six Studio lifecycle groups pass. Eight focused accessibility scans have zero confirmed violations; overlay/manual items remain explicit. Twelve browser typography comparisons match exactly, and all original rows in 13 local scopes are unchanged. One matched local homepage cache-bypassed LCP sample improved from 2.712s to 1.732s; hosted performance and field p75 are not verified for this follow-up. The collection repeat was 8ms slower; preserve all samples.
+
+This new candidate is local only: no new push, PR, deployment or production writes. The previous PR48/49 production release and homepage revision 4 remain complete for their documented scope; all 480 entries were already published, so never replay import/publication. M10 full visual/child-state comparison, remaining overlay contrast, native zoom, human screen-reader/physical-device/native-reader, factual/media-rights and real-world evidence remain open. Keep explicit approval requirements for a new release. Scrapers, old-product transfers and backups stay excluded.
+
+QA server and isolated PostgreSQL are stopped, data retained, temporary local testing tabs/emulations reset. No scheduled continuation is running. Historical authorization and checkpoints below apply to their recorded candidates, not a new automatic release.
+
+---
+
 # Current checkpoint — M11 released, M10 acceptance partially verified
 
 12 October 2026: PR48 is merged at 0f1b1457f1bf870a3742d206a43f04fa781bdf02; exact Vercel production dpl_G1muuWBRGoo8DLBQG3sHxM94uzKt is READY on www.rivyalivingart.com. The real Studio administrator saved design draft 3, reviewed desktop/mobile previews and published revision 4, selecting three labelled Portfolio concepts and three labelled fictional Testimonial samples. Images and the described silent material film are live. All 480 M9 entries remain published; do not replay import or publication.

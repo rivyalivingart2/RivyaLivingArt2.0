@@ -83,7 +83,7 @@
   
   /* Typography Variables */
   --font-display: var(--font-instrument), Georgia, serif;
-  --font-body: var(--font-inter), Arial, Helvetica, sans-serif;
+  --font-body: var(--font-inter-common), var(--font-inter), Arial, Helvetica, sans-serif;
   --font-brand: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   --font-data: var(--font-jetbrains), Consolas, monospace;
   

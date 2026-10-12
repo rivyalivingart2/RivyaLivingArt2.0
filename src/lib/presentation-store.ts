@@ -3,6 +3,7 @@ import {studioDb} from './studio-db';
 import {baselineContent,validContent} from './content-model';
 import {compileHomepageSnapshot} from './homepage-dependencies';
 import {publishedSource} from './published-source';
+import {publishedDesignSource} from './published-design-source';
 import {homeId} from './homepage-model';
 import {compileHomeReference} from './home-reference-dependencies';
 import {pageDesignSource,type PageDesignSource} from './page-design-model';
@@ -53,10 +54,8 @@ export async function savedPresentation(version:number):Promise<PresentationDocu
 /** Missing additive tables preserve the old renderer before the explicit migration.
  * Other storage failures propagate; never claim the latest design was read. */
 export async function publishedPresentation():Promise<{layout:HomepageLayout;version:number}|null>{
- try{
-  const rows=await studioDb()`SELECT published->'layout' AS layout,published_version FROM rivya_presentations WHERE presentation_key=${homePresentationId} AND published IS NOT NULL`;
-  if(!rows.length)return null;
-  if(!validHomepageLayout(rows[0].layout))throw new Error('Unsupported published layout');
-  return {layout:rows[0].layout,version:Number(rows[0].published_version)};
- }catch(error){if((error as {code?:string}).code==='42P01')return null;throw error;}
+ const {presentation}=await publishedDesignSource();
+ if(!presentation)return null;
+ if(!validHomepageLayout(presentation.layout))throw new Error('Unsupported published layout');
+ return {layout:presentation.layout,version:Number(presentation.version)};
 }

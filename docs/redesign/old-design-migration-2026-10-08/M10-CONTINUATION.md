@@ -1,5 +1,17 @@
 # M10 continuation — 12 October 2026
 
+## Latest local follow-up
+
+The owner requested the next step after the completed PR48/49 release. The remaining loading work is now implemented locally on `codex/m10-loading-performance`, based on main `26b1e4b18c6ca8e5d9f10804072c1d50512fcae8`. Read `M10-LOADING-PERFORMANCE.md` and `m10-loading-evidence.json` first. Current application fingerprint: `66964b6ef89ac9475a5a59f2142d0ff25ec8acd6736136059cc73918b371f1cd`. Earlier fingerprints below identify the released application, not this follow-up.
+
+Common Inter files save 175,188 initial bytes while preserving all original character coverage, glyph outlines, metrics and native-script fallbacks. Published layout and editorial ordering share one request-local database read; fresh publication and withdrawal still take effect on the next request. Final build/type/lint, 344 unit, 403 built-server, six SQL and six Studio lifecycle groups pass. Eight focused scans have no confirmed violations; manual overlay/video items remain recorded. Every original row in 13 local scopes is unchanged. Twelve browser typography metric comparisons match exactly.
+
+One matched local mobile homepage cache-bypassed LCP sample improved from 2.712s to 1.732s. The collection repeat was 8ms slower. These local samples do not close hosted or field performance. No new push, PR, deployment or production write is part of this follow-up. Preserve it for review and an applicable release instruction, then measure the exact deployed candidate. Continue the other outstanding M10 acceptance work below; never replay the 480-entry or homepage activation workflows.
+
+QA server/PostgreSQL are stopped with data retained; temporary local tabs/emulations reset. Evidence is under ignored `test-results/old-design-migration/m10-loading/`, with logs prefixed `m10-loading-`. The final local Studio contract is `m10-home-editorial-724ecf38.json`. Historical checkpoints below describe the already completed release and its preceding candidate.
+
+## Previous released candidate
+
 The owner authorized M10 and M11. PR48 released the tested application and Studio published homepage design revision 4. The earlier pause/local-only/M11-not-authorized statements are historical. Receipt branch: `codex/m11-release-receipt`, based on merged main `0f1b1457f1bf870a3742d206a43f04fa781bdf02`. Read `M11-RELEASE.md`, `m11-evidence.json`, `M10-REGRESSION-REPORT.md` and `m10-acceptance-matrix.json` first. Preserve application fingerprint `6096a9dd5ff37a875a8041eaaa25bddfe963a54899679bab9d3d1f5f6170ad46` and any later user edits. No automated restart is scheduled.
 
 ## Completed

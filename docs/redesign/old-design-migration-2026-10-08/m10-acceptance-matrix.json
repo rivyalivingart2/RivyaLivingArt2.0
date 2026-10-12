@@ -1486,5 +1486,10 @@
     "date": "2026-10-12T04:54:20.876Z",
     "file": "m11-evidence.json",
     "scope": "Nine focused scans; new-editor form, saved synthetic-order dialog, print CSS, empty follow-ups, silent-film description, analytics gradient contrast, Studio selections and live homepage. Existing family statuses remain partial; these samples do not establish all child/error-state parity."
+  },
+  "loadingFollowUpEvidence": {
+    "date": "2026-10-12",
+    "file": "m10-loading-evidence.json",
+    "scope": "Eight local homepage/collection scans in three languages at mobile size plus two English desktop cases; zero confirmed violations, overlay/video manual items retained. Twelve exact typography metric comparisons, font coverage/outline verification, local timing comparison and fresh publication/preservation contracts. Family statuses, full visual parity and all human/native/device/field gates remain unchanged."
   }
 }
