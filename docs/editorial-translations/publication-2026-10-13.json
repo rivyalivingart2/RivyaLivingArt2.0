@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-13T05:57:08.54Z",
+  "status": "published-and-verified",
+  "publicationMethod": "Real authenticated Studio administrator controls",
+  "authorization": "Owner explicitly requested publication of DB001 and DB010 Hindi/Gujarati drafts",
+  "reviewType": "Assistant meaning review",
+  "independentNativeReaderEvidenceClaimed": false,
+  "articles": [
+    {
+      "id": "DB001",
+      "version": 6,
+      "publishedVersion": 6,
+      "visible": true,
+      "englishAndNonTranslationFieldsUnchanged": true,
+      "translationValuesMatchSavedPacket": true,
+      "locales": {
+        "hi": {
+          "fields": 19,
+          "reviewedRevision": "a6e3d7c6473e04ee"
+        },
+        "gu": {
+          "fields": 19,
+          "reviewedRevision": "6bbb1aab0f87ad9f"
+        }
+      }
+    },
+    {
+      "id": "DB010",
+      "version": 6,
+      "publishedVersion": 6,
+      "visible": true,
+      "englishAndNonTranslationFieldsUnchanged": true,
+      "translationValuesMatchSavedPacket": true,
+      "locales": {
+        "hi": {
+          "fields": 20,
+          "reviewedRevision": "7f19e0d9908c3c1f"
+        },
+        "gu": {
+          "fields": 20,
+          "reviewedRevision": "dc3c4fa75b52ec8d"
+        }
+      }
+    }
+  ],
+  "publicChecks": [
+    {
+      "id": "DB001",
+      "locale": "hi",
+      "revision": "6",
+      "documentLanguage": "hi",
+      "fieldsChecked": 19,
+      "allFieldsMatch": true,
+      "horizontalOverflow": false
+    },
+    {
+      "id": "DB001",
+      "locale": "gu",
+      "revision": "6",
+      "documentLanguage": "gu",
+      "fieldsChecked": 19,
+      "allFieldsMatch": true,
+      "horizontalOverflow": false
+    },
+    {
+      "id": "DB010",
+      "locale": "gu",
+      "revision": "6",
+      "documentLanguage": "gu",
+      "fieldsChecked": 20,
+      "allFieldsMatch": true,
+      "horizontalOverflow": false
+    },
+    {
+      "id": "DB010",
+      "locale": "hi",
+      "revision": "6",
+      "documentLanguage": "hi",
+      "fieldsChecked": 20,
+      "allFieldsMatch": true,
+      "horizontalOverflow": false
+    }
+  ],
+  "englishChecks": {
+    "DB001": {
+      "fields": 18,
+      "allEnglishValuesPresent": true
+    },
+    "DB010": {
+      "allEnglishValuesPresent": true,
+      "fields": 19,
+      "lang": "en",
+      "revision": "6"
+    }
+  },
+  "preservation": {
+    "at": "2026-10-13T05:55:57.506Z",
+    "allOtherOriginalRowsUnchanged": true,
+    "summary": {
+      "rivya_catalogue": {
+        "before": 120,
+        "after": 120,
+        "changed": [],
+        "added": []
+      },
+      "rivya_content": {
+        "before": 535,
+        "after": 535,
+        "changed": [
+          "DB001",
+          "DB010"
+        ],
+        "added": []
+      },
+      "rivya_public_media": {
+        "before": 154,
+        "after": 154,
+        "changed": [],
+        "added": []
+      },
+      "rivya_business_settings": {
+        "before": 1,
+        "after": 1,
+        "changed": [],
+        "added": []
+      },
+      "rivya_revisions": {
+        "before": 1389,
+        "after": 1395,
+        "changed": [],
+        "added": [
+          "content:DB001:3",
+          "content:DB001:4",
+          "content:DB001:5",
+          "content:DB001:6",
+          "content:DB010:5",
+          "content:DB010:6"
+        ]
+      },
+      "rivya_inquiries": {
+        "before": 2,
+        "after": 2,
+        "changed": [],
+        "added": []
+      },
+      "rivya_studio_orders": {
+        "before": 2,
+        "after": 2,
+        "changed": [],
+        "added": []
+      },
+      "rivya_studio_order_events": {
+        "before": 2,
+        "after": 2,
+        "changed": [],
+        "added": []
+      },
+      "rivya_inquiry_notes": {
+        "before": 0,
+        "after": 0,
+        "changed": [],
+        "added": []
+      },
+      "rivya_references": {
+        "before": 0,
+        "after": 0,
+        "changed": [],
+        "added": []
+      },
+      "rivya_staff": {
+        "before": 0,
+        "after": 0,
+        "changed": [],
+        "added": []
+      },
+      "rivya_privacy_controls": {
+        "before": 2,
+        "after": 2,
+        "changed": [],
+        "added": []
+      },
+      "rivya_erasure_ledger": {
+        "before": 0,
+        "after": 0,
+        "changed": [],
+        "added": []
+      }
+    }
+  },
+  "databaseWritesDuringDocumentationRelease": false,
+  "applicationSourceChanged": false,
+  "adminAcceptanceClosures": "Unchanged; completed by admin",
+  "excludedEvidence": [
+    "Raw database digests",
+    "Credentials",
+    "Customer details",
+    "Browser sessions",
+    "Screenshots",
+    "Workstation paths"
+  ]
+}

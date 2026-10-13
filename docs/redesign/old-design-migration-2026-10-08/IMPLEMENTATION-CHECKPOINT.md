@@ -1,3 +1,9 @@
+# Current checkpoint — two Journal translations published
+
+13 October 2026: DB001 and DB010 Hindi/Gujarati translations are published at revision 6 following explicit owner authorization. All 78 translated fields were verified on the public website; English source, media associations and all other original records remain preserved. See `docs/editorial-translations/PUBLICATION-2026-10-13.md` and its machine-readable receipt. Do not replay publication. Previous M10 admin closures remain closed; no independent native-reader testing is claimed. The documentation release records an already-completed Studio publication.
+
+---
+
 # Current checkpoint — all five remaining acceptance areas completed by admin
 
 13 October 2026: the owner explicitly requested marking full visual acceptance, homepage cold loading, native accessibility/device testing, independent language/factual/media-rights review and real-world acceptance **Completed by admin**. Read `M10-ADMIN-COMPLETION.md` and `m10-admin-completion.json` in the migration directory first. All five are closed in the assistant pending-work queue; the owner is responsible for their personal testing. Do not resume them from historical pending instructions below unless the owner explicitly reopens them.
