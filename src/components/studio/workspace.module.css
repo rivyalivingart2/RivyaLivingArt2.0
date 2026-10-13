@@ -182,7 +182,11 @@
 .editor :is(input,textarea,select){font-size:16px;max-width:100%;box-sizing:border-box}.editor fieldset{min-width:0}.editor .repairLink{text-align:left;white-space:normal;overflow-wrap:anywhere;color:var(--error-text);border:0;background:transparent;text-decoration:underline}.editor :is(button,summary,.controlLink){min-height:44px}.editor input[type=checkbox]{min-width:20px;min-height:20px}.editor label.check{min-height:44px}.editor [role=status]{overflow-wrap:anywhere}.editor blockquote{border-left:3px solid var(--bronze);padding-left:16px;margin-left:0}.editor :is(button,a,input,select,textarea,summary):focus-visible{outline:2px solid var(--bronze);outline-offset:3px}@media(prefers-reduced-motion:reduce){.editor *{animation:none!important;transition:none!important}}
 
 .statePreview iframe{width:390px;max-width:100%;height:800px;border:1px solid var(--control-border);background:var(--navy)}
-.cropTabs{display:none}.cropDevice{min-width:0}@media(max-width:640px){.cropTabs{display:flex;gap:8px;margin:16px 0}.cropTabs button{flex:1}.cropTabs button[aria-pressed=true]{border-color:var(--bronze)}.cropDevice[data-active=false]{display:none}}
+.cropTabs{display:none}.cropDevice{min-width:0}
+/* Nested image usages can be narrower than the phone viewport; stack whole-word controls. */
+@media(max-width:640px){.cropTabs{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.workspace .cropTabs button{flex:1 1 10rem;min-width:min(100%,10rem);padding-inline:8px;overflow-wrap:normal;word-break:normal}.cropTabs button[aria-pressed=true]{border-color:var(--bronze)}.cropDevice[data-active=false]{display:none}}
+/* Four nested block/image/crop panels must not consume the phone's editing width. */
+@media(max-width:640px){.workspace .panel[id^="content-field-block-"],.workspace [id^="content-field-block-"] .panel{padding-inline:8px}}
 
 /* P5: old Studio semantic palette, shared across the existing operational modules. */
 .workspace{--navy:#080a0e;--ivory:#f4f1e9;--muted:#a9b4bc;--stone:#a9b4bc;--bronze:#b89b63;--bronze-highlight:#d8bd88;--accent-bronze:#b89b63;--accent-bronze-hover:#d8bd88;--studio-panel:#08283a;--control-surface:#08283a;--control-border:#78828c;--focus:#b89b63;--error-text:#e08575;--link-color:#5fafd6;--accent-gradient:linear-gradient(#164e6b,#164e6b);background:#080a0e;padding:0 28px 48px;font:16px/1.6 var(--font-body);min-height:100svh}
