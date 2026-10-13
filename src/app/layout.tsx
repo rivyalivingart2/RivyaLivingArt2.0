@@ -15,6 +15,8 @@ const displayFont = localFont({
   ],
   variable: "--font-instrument",
   display: "swap",
+  // Avoid preloading both display styles ahead of render-blocking route CSS.
+  preload: false,
   adjustFontFallback: "Times New Roman",
 });
 const dataFont = localFont({src: "../styles/fonts/jetbrains-mono-normal-400.woff2", variable: "--font-jetbrains", display: "swap", preload: false});
