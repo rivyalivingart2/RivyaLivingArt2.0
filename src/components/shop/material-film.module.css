@@ -3,3 +3,5 @@
 .intro button{min-height:48px;padding:12px 22px;background:var(--navy);border:1px solid var(--control-border);color:var(--ivory);font:inherit;white-space:nowrap;cursor:pointer}.intro button span{margin-left:16px}
 .frame{position:relative;aspect-ratio:16/9;background:var(--navy)}.frame video{display:block;width:100%;height:100%;object-fit:contain}.film figcaption{font-size:14px;line-height:1.7;margin-top:20px;color:var(--muted)}
 @media(max-width:780px){.intro{display:block}.intro button{margin-top:24px}.film{min-height:0}.frame{aspect-ratio:4/3}.frame video{object-fit:contain}}
+.printStill{display:none}
+@media print{.film{min-height:0;padding:20px 0;background:white;color:black;break-inside:avoid}.film .frame,.intro button{display:none}.film .printStill{display:block}.printStill img{display:block;width:100%;height:auto}.film .intro p,.film figcaption{color:black}.intro{margin-bottom:16px}}

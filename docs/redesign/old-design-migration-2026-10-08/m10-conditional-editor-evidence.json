@@ -1,0 +1,3362 @@
+{
+  "date": "2026-10-12",
+  "environment": "isolated local QA",
+  "status": "sixteen-default-public-blocks-and-custom-conflict-recovery-verified-with-bounded-visual-scope",
+  "fixtureDiscovery": {
+    "at": "2026-10-12T15:15:03.913Z",
+    "mode": "repeatable-read-read-only",
+    "identityGuardPassed": true,
+    "transactionReadOnlyVerified": true,
+    "selectedRowsVerified": 8,
+    "localEvidence": "test-results/old-design-migration/m10-completion/studio-editorial/fixture-discovery.json",
+    "landingFixtures": [
+      {
+        "id": "custom-page:f0b56cc7-9eb0-4d03-993e-c8484412ffd9",
+        "route": "/p/m5-qa-5fbbce86",
+        "version": 4,
+        "publishedVersion": 3,
+        "visible": true,
+        "enabledBlockTypes": [
+          "hero",
+          "richText",
+          "productGrid",
+          "imageCta",
+          "faqPicker",
+          "finalCta",
+          "collectionGrid",
+          "portfolioGrid",
+          "journalGrid",
+          "testimonial",
+          "testimonialGrid",
+          "videoStory",
+          "masonryGallery",
+          "bentoGallery",
+          "fullscreenGallery"
+        ],
+        "rowDigest": "a5ec82d787ed4ed91ab4351fb92a4525ecc7ecc9bbdee71db96efc04a13a0285"
+      },
+      {
+        "id": "custom-page:fd93ff80-d97b-4b43-ab71-3b5c3ec403da",
+        "route": "/p/m5-qa-5fbbce86-video",
+        "version": 2,
+        "publishedVersion": 2,
+        "visible": true,
+        "enabledBlockTypes": [
+          "videoHero"
+        ],
+        "rowDigest": "59d5105bb386897449ea263c1fec4dfc9c07665255b5fc6d6f654355718ca56c"
+      }
+    ]
+  },
+  "newConflictFixture": {
+    "initialTitle": "M10 local conflict verification",
+    "authorizedLocalAdditiveOnly": true,
+    "created": true,
+    "createdBy": "root coordinating agent through local Studio",
+    "id": "article:f5032839-ad8f-474d-a729-f1e9ca37a97e",
+    "savedVersion": 2,
+    "savedTitle": "M10 local conflict verification — saved B",
+    "published": false,
+    "retained": true,
+    "expectedNewContentRows": 1,
+    "expectedNewRevisionRows": 2,
+    "finalProtectedDigestComparison": "Coordinating agent release receipt verifies the original baseline separately"
+  },
+  "acceptedNewScreenshots": 72,
+  "writes": {
+    "successfulLocalDraftSaves": 2,
+    "newContentRowsExpected": 1,
+    "newRevisionRowsExpected": 2,
+    "published": false,
+    "originalRecordsEdited": false,
+    "productionWrites": 0,
+    "subagentStudioWrites": 0
+  },
+  "browserBlocker": {
+    "scope": "language-rights-subagent-only",
+    "selectedBrowser": "2",
+    "subagentInventoryBrowsers": 0,
+    "subagentInventoryApps": 0,
+    "selectedFreshTabFailed": true,
+    "explicitIabFreshTabFailed": true,
+    "reason": "Browser is not available",
+    "rootInventoryBrowser2Available": true,
+    "rootInventoryTabs": 11,
+    "globalBrowserOutage": false,
+    "automaticApprovalRejection": false,
+    "handedToRoot": true
+  },
+  "pending": [
+    "videoHero1440 intermediate selector view",
+    "other reference-selection modes and public block interactions",
+    "native browser Return-link cancellation remains unverified",
+    "final new-row delta and original-ID-digest comparison in coordinating release receipt",
+    "rebuilt register reliable 320px visual capture"
+  ],
+  "previousAcceptedEvidenceUnchanged": {
+    "source": "m10-studio-editorial-visual.json",
+    "groups": 31,
+    "frames": 215
+  },
+  "completeVisualAcceptance": false,
+  "nativeDeviceEvidence": false,
+  "publicDefaultVisual": {
+    "candidate": "cd0fdd4000013ab71fc23318f433e9b0c32e0fa8",
+    "scope": "V17 sixteen default public block renderers only",
+    "capturedBy": "root agent browser",
+    "reviewedBy": "language-rights subagent disk-image inspection",
+    "contactSheetsInspected": 9,
+    "acceptedGroups": 6,
+    "acceptedFrames": 66,
+    "allSixteenTypesVisible": true,
+    "screenshotArtifactsObserved": false,
+    "method": "CDP Page.captureScreenshot fromSurface:true captureBeyondViewport:false explicit clip x:0 y:actualScrollY width:actualViewportWidth height:720 scale:1",
+    "groups": [
+      {
+        "route": "/p/m5-qa-5fbbce86",
+        "label": "blocks15",
+        "width": 390,
+        "geometry": {
+          "h": 720,
+          "headings": [
+            "M5 complete block study",
+            "M5 hero",
+            "M5 richText",
+            "M5 productGrid",
+            "Shallow Basin",
+            "River Channel",
+            "M5 imageCta",
+            "M5 faqPicker",
+            "M5 finalCta",
+            "M5 collectionGrid",
+            "Presence, in every form.",
+            "M5 portfolioGrid",
+            "M5 isolated concept study",
+            "M5 journalGrid",
+            "A Room Begins with a Statement Table",
+            "M5 testimonial",
+            "M5 testimonialGrid",
+            "M5 videoStory",
+            "Resin in motion",
+            "M5 masonryGallery",
+            "Gallery",
+            "M5 bentoGallery",
+            "Gallery",
+            "M5 fullscreenGallery",
+            "Gallery"
+          ],
+          "sh": 11392,
+          "sw": 375,
+          "w": 390
+        },
+        "frames": [
+          {
+            "file": "blocks15-390-0.png",
+            "sha256": "ae4c76632f23a6178d6e129db3ac29c245ed93844a6587ca28ad958dcfbca57d",
+            "w": 390,
+            "y": 0,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-640.png",
+            "sha256": "e51d7ae4059f1200cbeefd0fe7bdc1792497afc043e9a57644826c25e82d26d8",
+            "w": 390,
+            "y": 640,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-1280.png",
+            "sha256": "43cf106044bdb340b83e545e674a7eeb2963ce270414f1a10ea5293d9a0d5bf2",
+            "w": 390,
+            "y": 1280,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-1920.png",
+            "sha256": "c1a97c6a5ea984cf35b91974f097ff3715620f2185834bc0e59f04002cbd717b",
+            "w": 390,
+            "y": 1920,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-2560.png",
+            "sha256": "5909c23b7a1f569d5acb5779d37816b1b773525248cb1b7a4faafbe642ad94d2",
+            "w": 390,
+            "y": 2560,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-3200.png",
+            "sha256": "f5def6b2d25e1f67278dae0acf1155d212d525982d0614b9b764f1a058d5ba6c",
+            "w": 390,
+            "y": 3200,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-3840.png",
+            "sha256": "7cbee5dbcab1ab4a6aed14ab7cef0ae7914c3e493f5267f1936b4a6acd3d752e",
+            "w": 390,
+            "y": 3840,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-4480.png",
+            "sha256": "038f2c1b159083a0324ec4c17e6ca4fdd65323abab3c18ee92478bc7014b7294",
+            "w": 390,
+            "y": 4480,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-5120.png",
+            "sha256": "53d63a4f00caea538f8d2759bc4daae7f3fa2fe5fb7922a78eba0c9859720a28",
+            "w": 390,
+            "y": 5120,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-5760.png",
+            "sha256": "b823e761760dbc3545d01218b672065f72b40bfef7d992f8425c762c22176493",
+            "w": 390,
+            "y": 5760,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-6400.png",
+            "sha256": "55a67fe753de9d16a3dbe57680c2529af4c180d80f57b08332a2c0df1556f943",
+            "w": 390,
+            "y": 6400,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-7040.png",
+            "sha256": "6aeb1726e03bdbd99238d5c8179f073cb3ab14866d43687b8af1f1787fc95fd8",
+            "w": 390,
+            "y": 7040,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-7680.png",
+            "sha256": "29849445639fcc981dd9306ad283f8666df0232b5abe2a648afc429c5014f3f2",
+            "w": 390,
+            "y": 7680,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-8320.png",
+            "sha256": "f77fc575ffeabbf00a2b5613df1617f65547c6d98637d9f7ab7be4e649046542",
+            "w": 390,
+            "y": 8320,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-8960.png",
+            "sha256": "8b228a8cefc10c6792ce5a7ad902dc0adb101cf3c217816a87e33c12223d07f9",
+            "w": 390,
+            "y": 8960,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-9600.png",
+            "sha256": "7ac00c43a6fc6135aca63d5150bdc7fc1e78de0e112bc4fb8fea3dae89fe351e",
+            "w": 390,
+            "y": 9600,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-10240.png",
+            "sha256": "3f979b185766628637d59690321fffd4056e27a2599be98cbc51f4341872d0c3",
+            "w": 390,
+            "y": 10240,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-390-10672.png",
+            "sha256": "4decf4c2fed99bbfe3e9c20c42edcc15670d75451dbe01d1790b68310ae80039",
+            "w": 390,
+            "y": 10672,
+            "scrollHeight": 11392,
+            "unloadedImages": 0
+          }
+        ]
+      },
+      {
+        "route": "/p/m5-qa-5fbbce86-video",
+        "label": "blocks-video",
+        "width": 390,
+        "geometry": {
+          "h": 720,
+          "headings": [
+            "M5 complete block study",
+            "Material film",
+            "Resin in motion"
+          ],
+          "sh": 2608,
+          "sw": 375,
+          "w": 390
+        },
+        "frames": [
+          {
+            "file": "blocks-video-390-0.png",
+            "sha256": "23941242fc8f5b1c42db5eb08a3f9d692ff844cc6faf074fbdae2673df37be61",
+            "w": 390,
+            "y": 0,
+            "scrollHeight": 2608,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks-video-390-640.png",
+            "sha256": "9bcd2ac7532ff247dfd5d6584013e3487dd85a3079ed029beee64205cb79b615",
+            "w": 390,
+            "y": 640,
+            "scrollHeight": 2608,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks-video-390-1280.png",
+            "sha256": "dcc6ef6ad13b4c9fe9f4f7737c5727b9745e4c49e5b7b0273c68068ec94182c2",
+            "w": 390,
+            "y": 1280,
+            "scrollHeight": 2608,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks-video-390-1888.png",
+            "sha256": "8520c9fecb70a61c2cd4adf5131536a4144bb5dc8fa4dde775a8b134294f8df7",
+            "w": 390,
+            "y": 1888,
+            "scrollHeight": 2608,
+            "unloadedImages": 0
+          }
+        ]
+      },
+      {
+        "route": "/p/m5-qa-5fbbce86",
+        "label": "blocks15",
+        "width": 1440,
+        "geometry": {
+          "h": 720,
+          "headings": [
+            "M5 complete block study",
+            "M5 hero",
+            "M5 richText",
+            "M5 productGrid",
+            "Shallow Basin",
+            "River Channel",
+            "M5 imageCta",
+            "M5 faqPicker",
+            "M5 finalCta",
+            "M5 collectionGrid",
+            "Presence, in every form.",
+            "M5 portfolioGrid",
+            "M5 isolated concept study",
+            "M5 journalGrid",
+            "A Room Begins with a Statement Table",
+            "M5 testimonial",
+            "M5 testimonialGrid",
+            "M5 videoStory",
+            "Resin in motion",
+            "M5 masonryGallery",
+            "Gallery",
+            "M5 bentoGallery",
+            "Gallery",
+            "M5 fullscreenGallery",
+            "Gallery"
+          ],
+          "sh": 11586,
+          "sw": 1425,
+          "w": 1440
+        },
+        "frames": [
+          {
+            "file": "blocks15-1440-0.png",
+            "sha256": "2eecf5222465526368743762638451804860a1e2c51ab0ea04a10072ce41adb9",
+            "w": 1440,
+            "y": 0,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-640.png",
+            "sha256": "c6f606ddb835cb4555f07fc1abfaf783774e3042388151977b8944a1ae750d12",
+            "w": 1440,
+            "y": 640,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-1280.png",
+            "sha256": "e116b0e33c12b4cd9a1d48eb9c7d404145106236693f3d6c95b5c86d41e82d9f",
+            "w": 1440,
+            "y": 1280,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-1920.png",
+            "sha256": "547814f7a9a7e39217ddfdecca7d45bc0963da790bfa38a0481bd6898688a840",
+            "w": 1440,
+            "y": 1920,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-2560.png",
+            "sha256": "366c77837e7442dd8fc34c4e5567f3bcd0fa708ea486c26ac85a134e19ede4cd",
+            "w": 1440,
+            "y": 2560,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-3200.png",
+            "sha256": "55cd76399237aa0f8ad3ddb3955c8e5c9c9dc26bfcadf1741a76b36c538d0af9",
+            "w": 1440,
+            "y": 3200,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-3840.png",
+            "sha256": "b2728cfd71c32ce023251ea9b28972831cce01b9ff9d2cf6cf6fc6508566d7ad",
+            "w": 1440,
+            "y": 3840,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-4480.png",
+            "sha256": "fc253af57cd442d5a431116e0e1c21bcef610e678dc0541b7c0ee9173f236c79",
+            "w": 1440,
+            "y": 4480,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-5120.png",
+            "sha256": "bf7732636d8328c235af8c346afeb6e284acd4996598d10eccf359e8140a71bb",
+            "w": 1440,
+            "y": 5120,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-5760.png",
+            "sha256": "9947c8bbd872d685166418cd1535443de3713295737a3526e93eda0d0cf1f6b6",
+            "w": 1440,
+            "y": 5760,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-6400.png",
+            "sha256": "94fe56d42dc125315ca5bc611a0df2828b066696513d835e4be1c10bce6a8dbf",
+            "w": 1440,
+            "y": 6400,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-7040.png",
+            "sha256": "f0692e78001196d0d8dffc82e77e6ef59b1d0fe32e79046c7edde8e8ca934ae3",
+            "w": 1440,
+            "y": 7040,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-7680.png",
+            "sha256": "f49efcaf01bd33a9bf226624ad215d7c1764b84c974c7b88182560d96d53567d",
+            "w": 1440,
+            "y": 7680,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-8320.png",
+            "sha256": "b119b35b95acfc93719dc33e97db1d1778292f4fc91d2fbca4d7d7c520cf3ca4",
+            "w": 1440,
+            "y": 8320,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-8960.png",
+            "sha256": "1570fe4bec1588e56291e46ca01c73609265ec48474f9fb10da961bb761977cf",
+            "w": 1440,
+            "y": 8960,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-9600.png",
+            "sha256": "5bbe7f037dc59ec7b8de38e22ef5fae53a1f76d20d7db7086b0debe9742064d4",
+            "w": 1440,
+            "y": 9600,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-10240.png",
+            "sha256": "7cfd0f6002b3546134aa82a069f93ba6b16b4ad61f66ca0cf1a13811be582c99",
+            "w": 1440,
+            "y": 10240,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-1440-10866.png",
+            "sha256": "a627836c8bc062ea71dbd92383b475c9025a16f0d86b0ea2684be4917da22250",
+            "w": 1440,
+            "y": 10866,
+            "scrollHeight": 11586,
+            "unloadedImages": 0
+          }
+        ]
+      },
+      {
+        "route": "/p/m5-qa-5fbbce86-video",
+        "label": "blocks-video",
+        "width": 1440,
+        "geometry": {
+          "h": 720,
+          "headings": [
+            "M5 complete block study",
+            "Material film",
+            "Resin in motion"
+          ],
+          "sh": 2505,
+          "sw": 1425,
+          "w": 1440
+        },
+        "frames": [
+          {
+            "file": "blocks-video-1440-0.png",
+            "sha256": "81b545a2d2a407d9013be69ea4d045c11e35c82031ce0d3f689b9b90b815156c",
+            "w": 1440,
+            "y": 0,
+            "scrollHeight": 2505,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks-video-1440-640.png",
+            "sha256": "ddf8250c99285e756b6d24aeb56a3b7dc5abb891a2d37c4b8eaeea1a33831a41",
+            "w": 1440,
+            "y": 640,
+            "scrollHeight": 2505,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks-video-1440-1280.png",
+            "sha256": "6db06eacb12db16b5b1b001f08a8a08543a50005e9df10c6eae0d845287e864c",
+            "w": 1440,
+            "y": 1280,
+            "scrollHeight": 2505,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks-video-1440-1785.png",
+            "sha256": "3acbf8f33032091fea443f2ef2ae7cdd9137edc544a1437b34bfc2031be03e3f",
+            "w": 1440,
+            "y": 1785,
+            "scrollHeight": 2505,
+            "unloadedImages": 0
+          }
+        ]
+      },
+      {
+        "route": "/p/m5-qa-5fbbce86",
+        "label": "blocks15",
+        "width": 320,
+        "geometry": {
+          "h": 720,
+          "headings": [
+            "M5 complete block study",
+            "M5 hero",
+            "M5 richText",
+            "M5 productGrid",
+            "Shallow Basin",
+            "River Channel",
+            "M5 imageCta",
+            "M5 faqPicker",
+            "M5 finalCta",
+            "M5 collectionGrid",
+            "Presence, in every form.",
+            "M5 portfolioGrid",
+            "M5 isolated concept study",
+            "M5 journalGrid",
+            "A Room Begins with a Statement Table",
+            "M5 testimonial",
+            "M5 testimonialGrid",
+            "M5 videoStory",
+            "Resin in motion",
+            "M5 masonryGallery",
+            "Gallery",
+            "M5 bentoGallery",
+            "Gallery",
+            "M5 fullscreenGallery",
+            "Gallery"
+          ],
+          "sh": 11080,
+          "sw": 305,
+          "w": 320
+        },
+        "frames": [
+          {
+            "file": "blocks15-320-0.png",
+            "sha256": "f42d85b4207fde908c4c509109059c3c29bc473170fc62d2b41d991fc94a9543",
+            "w": 320,
+            "y": 0,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-640.png",
+            "sha256": "5b90cd7b34ef8ba338d5c30b3345f6708c27f8f34f93c1c0473a3ff37023c210",
+            "w": 320,
+            "y": 640,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-1280.png",
+            "sha256": "d4d44c80c7eddab31210fd2ed179ee407114422bcac371b1a507fdf1215174aa",
+            "w": 320,
+            "y": 1280,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-1920.png",
+            "sha256": "5e689124f6d8e9b74c71322b9a972946151220f9e09fa406097633cfade16751",
+            "w": 320,
+            "y": 1920,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-2560.png",
+            "sha256": "020a9047ca9dfbb04cdaa362349fa7a290bd061bfb0b6571aafd9f971df770fd",
+            "w": 320,
+            "y": 2560,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-3200.png",
+            "sha256": "4096e3fb96edc3aa3bd29ec69177a78fbb7097bc4d38e7cd448ab16c9691358f",
+            "w": 320,
+            "y": 3200,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-3840.png",
+            "sha256": "8bc22464e13211bde62d0647e75822fad7ab0cbf58e3c443e161063ac7c46b48",
+            "w": 320,
+            "y": 3840,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-4480.png",
+            "sha256": "03b7e2f2b804e47b19fd55e0593229ea91cede6dfb5cd5da0bc6b5722aef1758",
+            "w": 320,
+            "y": 4480,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-5120.png",
+            "sha256": "818bafccf904c791770421f0fe1847ba194cfcebfb03b25a383cfba4a38ddb29",
+            "w": 320,
+            "y": 5120,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-5760.png",
+            "sha256": "b6e7d4092ee4f5656dff1ec8541926050101ecdfd4bbb7bb28b018befe5032f3",
+            "w": 320,
+            "y": 5760,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-6400.png",
+            "sha256": "cb33665a510afe9f7454286cb7f4aa64a0f77da7123104cf653ac9e7fcf4822e",
+            "w": 320,
+            "y": 6400,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-7040.png",
+            "sha256": "4707f8c3cbe459d529200ee8c2f5b0c9346f8f76bbef93c5e72d165883e3b1db",
+            "w": 320,
+            "y": 7040,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-7680.png",
+            "sha256": "ee13b8fe37e221f943e239f7d7797b812cfba6354e1f3ec99c0996704412b583",
+            "w": 320,
+            "y": 7680,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-8320.png",
+            "sha256": "010b7e3cc747df0055d31d31bc689ddc9ac5bfaf929bff01880b2a2a52e09109",
+            "w": 320,
+            "y": 8320,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-8960.png",
+            "sha256": "ba28a2a33e2870c1d1892d18bd5eceb8d5f0d887ba53c6a9d6131099fed7b09a",
+            "w": 320,
+            "y": 8960,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-9600.png",
+            "sha256": "43036a00bd47db60a82980fbc48b569cea546aea48f6f885d7cc077141d5b811",
+            "w": 320,
+            "y": 9600,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-10240.png",
+            "sha256": "b13b2f0aeda819f82f18695d209054039e0edebd82a4b080fabd41d094865b0a",
+            "w": 320,
+            "y": 10240,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks15-320-10360.png",
+            "sha256": "3596519118288364b533b98bbda0e980da9fcf2e1304f3da83e069c303319565",
+            "w": 320,
+            "y": 10360,
+            "scrollHeight": 11080,
+            "unloadedImages": 0
+          }
+        ]
+      },
+      {
+        "route": "/p/m5-qa-5fbbce86-video",
+        "label": "blocks-video",
+        "width": 320,
+        "geometry": {
+          "h": 720,
+          "headings": [
+            "M5 complete block study",
+            "Material film",
+            "Resin in motion"
+          ],
+          "sh": 2633,
+          "sw": 305,
+          "w": 320
+        },
+        "frames": [
+          {
+            "file": "blocks-video-320-0.png",
+            "sha256": "76ba49bbae6c27db9033dc1ce152f8bdc955b462a92e70ed3211f888272f4f48",
+            "w": 320,
+            "y": 0,
+            "scrollHeight": 2633,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks-video-320-640.png",
+            "sha256": "f00ffac2041ea22bd3338df9d4e62324ca1ecc62dc238ef468e002472ee7518f",
+            "w": 320,
+            "y": 640,
+            "scrollHeight": 2633,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks-video-320-1280.png",
+            "sha256": "6aa1e5882b1b72b1c98ff4dbf2ecb446216f364f0fcbd95f505878d4a54e769f",
+            "w": 320,
+            "y": 1280,
+            "scrollHeight": 2633,
+            "unloadedImages": 0
+          },
+          {
+            "file": "blocks-video-320-1913.png",
+            "sha256": "b8727b146cea2ee8b3b81ceaee4c998d17e25de28f4b8be71a2d1cfa3227d5f8",
+            "w": 320,
+            "y": 1913,
+            "scrollHeight": 2633,
+            "unloadedImages": 0
+          }
+        ]
+      }
+    ],
+    "doesNotProve": [
+      "Studio block editor UI",
+      "old/current parity",
+      "hover/focus/FAQ/lightbox/playback interactions",
+      "fully populated gallery variants",
+      "other five plan widths"
+    ]
+  },
+  "conflictUi": {
+    "source": "test-results/old-design-migration/m10-completion/conflict-ui-evidence.json",
+    "rootActualUiObserved": true,
+    "independentScreenshotReview": "language-rights subagent viewed all six images",
+    "customRecordSwitchCancel": {
+      "dialogObserved": true,
+      "keepEditingRetainedTitle": true,
+      "width": 1280
+    },
+    "staleSave": {
+      "oldVersion": 1,
+      "newSavedVersion": 2,
+      "newerRecordComparisonDisplayed": true,
+      "unsavedTitleRetained": "M10 local conflict verification — retained A",
+      "savedTitle": "M10 local conflict verification — saved B",
+      "overwriteOccurred": false,
+      "screens": [
+        {
+          "file": "C:/Users/gonda/.codex/.chatgpt-projects/g-p-6ac865e9ce14819185b0694637a1fba9/work/RivyaLivingArt2.0/test-results/old-design-migration/m10-completion/conflict-retained-1440.png",
+          "h": 720,
+          "sw": 1425,
+          "title": "M10 local conflict verification — retained A",
+          "w": 1440,
+          "y": 254
+        },
+        {
+          "file": "C:/Users/gonda/.codex/.chatgpt-projects/g-p-6ac865e9ce14819185b0694637a1fba9/work/RivyaLivingArt2.0/test-results/old-design-migration/m10-completion/conflict-retained-390.png",
+          "h": 720,
+          "sw": 375,
+          "title": "M10 local conflict verification — retained A",
+          "w": 390,
+          "y": 519
+        },
+        {
+          "file": "C:/Users/gonda/.codex/.chatgpt-projects/g-p-6ac865e9ce14819185b0694637a1fba9/work/RivyaLivingArt2.0/test-results/old-design-migration/m10-completion/conflict-retained-320.png",
+          "h": 720,
+          "sw": 305,
+          "title": "M10 local conflict verification — retained A",
+          "w": 320,
+          "y": 615
+        }
+      ],
+      "screenshotScope": "1440 complete title comparison;390/320 visible upper comparison, retained A suffix below captured viewport"
+    },
+    "recovery": {
+      "loadLatestExpandedWarning": true,
+      "keepMyEditsRetained": true,
+      "screenshotWidth": 320,
+      "screenshotScope": "Upper explanation plus separate lower screenshot covering full warning, both replacement/cancel controls and local-copy textarea",
+      "replaceWithSavedB": true,
+      "replacementDatabaseWrites": 0,
+      "cleanNavigationAfterReplacement": true,
+      "lowerScreenshotVerified": true
+    },
+    "nativeReturnLinkCancel": {
+      "status": "unverified",
+      "attempt": "timed out and navigation occurred",
+      "acceptedEvidence": false,
+      "nativeDialogDefectInferred": false
+    },
+    "screens": [
+      {
+        "file": "dirty-record-switch-dialog.png",
+        "sha256": "0b9b6e34b97bf6d223ad11d56c6af0255fd0fe63a5c5ece4d5f00b30b9dd7106"
+      },
+      {
+        "file": "conflict-retained-1440.png",
+        "sha256": "2485c62ee2ca2c6cbda9ae83b24c380492c70aebe086be07f86e638092491716"
+      },
+      {
+        "file": "conflict-retained-390.png",
+        "sha256": "589f0d8492f361d7c907e27744d9145c6ab2675244bd8bd649e69952b65fcff7"
+      },
+      {
+        "file": "conflict-retained-320.png",
+        "sha256": "9f716f847ef7ba67e3371abf0b40a1e33e0ba9ec7bb9fde435a8016b8e388410"
+      },
+      {
+        "file": "conflict-recovery-320.png",
+        "sha256": "2f8e05a47e786c1a57f29ad91a517df8ab9823e52b3e55402b8d88b41628ab70"
+      },
+      {
+        "file": "conflict-recovery-lower-320.png",
+        "sha256": "732a506ecaeccf0f4a7d4995f9831ae54c66629c13f497db59965d46508aff5e",
+        "review": "Full warning, Replace editor, Keep my edits and contained local-copy textarea independently viewed; readable at320"
+      }
+    ]
+  },
+  "narrowBlockEditorBaseline": {
+    "source": "test-results/old-design-migration/m10-completion/block-editor-index.json",
+    "reviewedBy": "language-rights subagent independent disk-image inspection",
+    "reviewedPanels": 30,
+    "reviewedFrames": 97,
+    "frames390": 45,
+    "frames320": 52,
+    "acceptedDefaultPanels": 20,
+    "panelsRequiringRepair": 10,
+    "findings": [
+      {
+        "id": "CROP-NARROW",
+        "status": "resolved-in-rebuilt-narrow-panels",
+        "indices": [
+          0,
+          3,
+          12,
+          13,
+          14
+        ],
+        "widths": [
+          390,
+          320
+        ],
+        "description": "Nested image/gallery fields squeeze preview labels;320 gallery nearly single-letter tabs and unreadable Frame shape value",
+        "source": "src/components/studio/workspace.module.css cropTabs and nested panels",
+        "screenshotPaintArtifact": false,
+        "resolutionEvidence": "narrowBlockEditorFinal"
+      }
+    ],
+    "inputChanges": 0,
+    "draftSaves": 0,
+    "groups": [
+      {
+        "width": 390,
+        "index": 0,
+        "panel": {
+          "bottom": 5132.21875,
+          "name": "Image opening · block-0",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "needs-crop-control-layout-repair",
+        "sheet": "block-editor-390-0-sheet.png",
+        "sheetSha256": "1dbdeee0cde188184db3c9c6db8cd7ad6e708727645b8bb0fd029414ce4188c9",
+        "frames": [
+          {
+            "file": "block-editor-390-0-3301.png",
+            "sha256": "f6d93df52ae412e022d4d15a5929a90825fdf63c0e57204cbeb545227835d5ea"
+          },
+          {
+            "file": "block-editor-390-0-3941.png",
+            "sha256": "87597e7f06004b0c758258381ddf8b161e08d005d2a3f1179f1ea7f742ea8bf9"
+          },
+          {
+            "file": "block-editor-390-0-4581.png",
+            "sha256": "18e84102a69780ba46f0b2d76010a8b006ebd11240ae5d7a66353c80d6d32574"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "panel": {
+          "bottom": 4137.0625,
+          "name": "Reading column · block-1",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-390-1-sheet.png",
+        "sheetSha256": "5dd715b535e667e19abca72cbebed12d1baf183e7d6ed2c2fb044d705163dc08",
+        "frames": [
+          {
+            "file": "block-editor-390-1-3301.png",
+            "sha256": "6fd010c5519ccac17551fa0aca7ce3a8ed5946044d80c5a1de30381a66107d94"
+          },
+          {
+            "file": "block-editor-390-1-3941.png",
+            "sha256": "8ae0670dfa50c6b0b2f7504e7ae3ad54f6f006c2aacf29585f97fba50f047b75"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 2,
+        "panel": {
+          "bottom": 4953.953125,
+          "name": "Selected pieces · block-2",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-390-2-sheet.png",
+        "sheetSha256": "db18d9d4b9b5544112fb5181e7eabf82b00d6ffa072ae315bccd062ee6e06ff1",
+        "frames": [
+          {
+            "file": "block-editor-390-2-3301.png",
+            "sha256": "a3b5a0c505cb3913f24707450b2467efd8f8ab3fd52fbe566e4c8f845bf10974"
+          },
+          {
+            "file": "block-editor-390-2-3941.png",
+            "sha256": "369f6fe82986538ff2c2d72db060bbebb92473a15756432349681da3fbdc1366"
+          },
+          {
+            "file": "block-editor-390-2-4581.png",
+            "sha256": "dff01e813d04ed9c0abe718b15225ca48574ecad2d7719357111c10c41704304"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "panel": {
+          "bottom": 5235.203125,
+          "name": "Image and invitation · block-3",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "needs-crop-control-layout-repair",
+        "sheet": "block-editor-390-3-sheet.png",
+        "sheetSha256": "b0db7d42d685ba6a494392ca6fae0c03def3ee3ba420a4b41ed765a7fef09384",
+        "frames": [
+          {
+            "file": "block-editor-390-3-3301.png",
+            "sha256": "804a904fa2bb9730b27936f840c8f1846046e0b4426ea72c3d082d702e79aca8"
+          },
+          {
+            "file": "block-editor-390-3-3941.png",
+            "sha256": "e9f3fc3dd19afe6c82ff83ab9f41dbebf6da844f066aa4a1fd9e23f12f993a0e"
+          },
+          {
+            "file": "block-editor-390-3-4581.png",
+            "sha256": "2fe07e0289fa044bea9b8a06720f013d81c42ad4d1d3d4c42808236d7366666c"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 4,
+        "panel": {
+          "bottom": 4979.546875,
+          "name": "Selected answers · block-4",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-390-4-sheet.png",
+        "sheetSha256": "aac8cb2283d5bf062493de154bd7554e0f0434146a55fab9640048b426b11bc8",
+        "frames": [
+          {
+            "file": "block-editor-390-4-3301.png",
+            "sha256": "4f4bbb9c8a4ead6eafd4b64909ede9229c129333c7de220eee3d5f6d69fd3e43"
+          },
+          {
+            "file": "block-editor-390-4-3941.png",
+            "sha256": "f4761198b1e1d30e8e6e9a4777f63e09dbc7422ac1832d561042aacd20f97c24"
+          },
+          {
+            "file": "block-editor-390-4-4581.png",
+            "sha256": "9e35260e63d2dfadd483ad7003e86a172331fbb774835b371c0ff7902181bfdf"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 5,
+        "panel": {
+          "bottom": 4251.03125,
+          "name": "Closing invitation · block-5",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-390-5-sheet.png",
+        "sheetSha256": "a0377c4c3091a7554e843965a5d3d33861b464e73f6efd110e7eccb68927e121",
+        "frames": [
+          {
+            "file": "block-editor-390-5-3301.png",
+            "sha256": "02a85a4edf6ab6dc5fe7d902d77e0e68295f2689a76647a4d2d9faccf025df7e"
+          },
+          {
+            "file": "block-editor-390-5-3941.png",
+            "sha256": "34356b0e4bffc5ed6ab898086a0575ba202322469530c7eadc95eb79dee5b0be"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 6,
+        "panel": {
+          "bottom": 4683.984375,
+          "name": "Collections · block-6",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-390-6-sheet.png",
+        "sheetSha256": "cf2aa5aad865784a7b3d9d877d10a4997c928b5abc5daf4a70bda23edf4aeddf",
+        "frames": [
+          {
+            "file": "block-editor-390-6-3301.png",
+            "sha256": "b9fa41fe0babf66bf234d642981802253425ce1f7cb095c524ad82ca3e741296"
+          },
+          {
+            "file": "block-editor-390-6-3941.png",
+            "sha256": "e1771c2e0ef613650eb6b568b715b60ef8bf660aac421c9884402a7dfcaad9da"
+          },
+          {
+            "file": "block-editor-390-6-4581.png",
+            "sha256": "f197751ed36c657e91f2605ff4b52ac052612bb8e96c132a50f4f211b1ef57ed"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 7,
+        "panel": {
+          "bottom": 4709.578125,
+          "name": "Portfolio stories · block-7",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-390-7-sheet.png",
+        "sheetSha256": "e4a9699908eabac154624335c3c25ecd56308af486340430e2c9f26a4d300532",
+        "frames": [
+          {
+            "file": "block-editor-390-7-3301.png",
+            "sha256": "be5d6447bf3e9f1aa9839ff45c36799670662786721b5d8bc8193c57b80f5dbb"
+          },
+          {
+            "file": "block-editor-390-7-3941.png",
+            "sha256": "db2865e6e252aa41139c616558a093ef778273869523b9e1732cf5782795bafc"
+          },
+          {
+            "file": "block-editor-390-7-4581.png",
+            "sha256": "e99749db77aef573f9c8e8c8481f8871d06dda88c9f97100e3a90710dce2abe0"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 8,
+        "panel": {
+          "bottom": 4709.578125,
+          "name": "Journal stories · block-8",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-390-8-sheet.png",
+        "sheetSha256": "db4d686da6d48b7b6841fcf7453c66c2cdbae32b2ad1171e2861246e3dbbf09f",
+        "frames": [
+          {
+            "file": "block-editor-390-8-3301.png",
+            "sha256": "e77823081991beb7cfead918850fe4c156bf6dfdc89519bf29c4d865ae11b08b"
+          },
+          {
+            "file": "block-editor-390-8-3941.png",
+            "sha256": "8f587afbd6cbbbca7953f97cbcec3e9f4ef9753777477380e74e09a8c02c4b9d"
+          },
+          {
+            "file": "block-editor-390-8-4581.png",
+            "sha256": "e99749db77aef573f9c8e8c8481f8871d06dda88c9f97100e3a90710dce2abe0"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 9,
+        "panel": {
+          "bottom": 4802.96875,
+          "name": "Single statement · block-9",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-390-9-sheet.png",
+        "sheetSha256": "78370e963077ce648437d8e41098952455ddd85acd1efbfaf2502ecdf8f7eefd",
+        "frames": [
+          {
+            "file": "block-editor-390-9-3301.png",
+            "sha256": "06b178c44afba1dc6efe758fba641908ecc080644d02a109f9182835cdc3a388"
+          },
+          {
+            "file": "block-editor-390-9-3941.png",
+            "sha256": "ee39be71715c871ccef455d23af5525e2106d8113a3719865fc7e5ac31606d6c"
+          },
+          {
+            "file": "block-editor-390-9-4581.png",
+            "sha256": "cd72408a6898bf9bdc5824605ea6c8db661097c6a9cabbd1edf8839360e788b3"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 10,
+        "panel": {
+          "bottom": 4709.578125,
+          "name": "Statements · block-10",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-390-10-sheet.png",
+        "sheetSha256": "83c3224f586fc81b8c0f5d7c1e05cacf41979dc7c6d2a167cc4e4feed893b67b",
+        "frames": [
+          {
+            "file": "block-editor-390-10-3301.png",
+            "sha256": "6073c3e353bfed646f10fda035131c96c985c11adba9386e5e6bb0116ef0c486"
+          },
+          {
+            "file": "block-editor-390-10-3941.png",
+            "sha256": "25caa56328d44cb98fdd4b8b4ebc4e1ad2fba363a28cbd12e44504b3378196de"
+          },
+          {
+            "file": "block-editor-390-10-4581.png",
+            "sha256": "e99749db77aef573f9c8e8c8481f8871d06dda88c9f97100e3a90710dce2abe0"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 11,
+        "panel": {
+          "bottom": 4405.21875,
+          "name": "Film and story · block-11",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-390-11-sheet.png",
+        "sheetSha256": "2b1b9df84587c1fd1a563e8d28f332bf5b0d8795850a91b75e6fea7a4c985541",
+        "frames": [
+          {
+            "file": "block-editor-390-11-3301.png",
+            "sha256": "f05a49dbac81653cddc0f1b17d39bfbd33c8596e9a11ab978fbdcfc6e4774c4e"
+          },
+          {
+            "file": "block-editor-390-11-3941.png",
+            "sha256": "75d6248a95affb2990de97319ebc601eb55d12526af10cef2cf898837ca6137c"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 12,
+        "panel": {
+          "bottom": 5537.765625,
+          "name": "Masonry gallery · block-12",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "needs-crop-control-layout-repair",
+        "sheet": "block-editor-390-12-sheet.png",
+        "sheetSha256": "da5e272c12ba6e2a4a681c7c39b2821918bd8a18f6092d8814184ce89863a032",
+        "frames": [
+          {
+            "file": "block-editor-390-12-3301.png",
+            "sha256": "6fffb09bbd6828ab1f87669ae4dc8461f5c065c3f666452623f37a935e32145a"
+          },
+          {
+            "file": "block-editor-390-12-3941.png",
+            "sha256": "6ff805b5313233065a95d81079a6bad1f455e3f3f80f72dedf8a63b59c0f4525"
+          },
+          {
+            "file": "block-editor-390-12-4581.png",
+            "sha256": "d257fda6550e3b43871e5c87b08686a01494b8e49a21f9f34d1b9c840294f524"
+          },
+          {
+            "file": "block-editor-390-12-5221.png",
+            "sha256": "64845f1d4180df10c1061ea369b13033d8c42410cfdac7125b93006dcc945371"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 13,
+        "panel": {
+          "bottom": 5537.765625,
+          "name": "Bento gallery · block-13",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "needs-crop-control-layout-repair",
+        "sheet": "block-editor-390-13-sheet.png",
+        "sheetSha256": "3699ef7cbc487d3fa347aa5a1207a5779f8db11a2ac05a902dda4aa79873e6f6",
+        "frames": [
+          {
+            "file": "block-editor-390-13-3301.png",
+            "sha256": "f5a035790dafa3349d17540ef3899e3a2d3a085cc96a105b478afadb0629ca35"
+          },
+          {
+            "file": "block-editor-390-13-3941.png",
+            "sha256": "6ff805b5313233065a95d81079a6bad1f455e3f3f80f72dedf8a63b59c0f4525"
+          },
+          {
+            "file": "block-editor-390-13-4581.png",
+            "sha256": "9e5bf4e895bc7a560f81796c0a6166dc84777a870a23fc3fcbbb78233d4beacd"
+          },
+          {
+            "file": "block-editor-390-13-5221.png",
+            "sha256": "98e1f7e23cc9a752e95d87a354815c0d1a48fe78022750664499dbd0d5a6f9ca"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 14,
+        "panel": {
+          "bottom": 5563.359375,
+          "name": "Fullscreen gallery · block-14",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "disposition": "needs-crop-control-layout-repair",
+        "sheet": "block-editor-390-14-sheet.png",
+        "sheetSha256": "2b80a28a01ad206ff4c2ac6ce51288698956f0f2e91a873e3b1170856f39c3d1",
+        "frames": [
+          {
+            "file": "block-editor-390-14-3301.png",
+            "sha256": "06647e833c7406b0c3f55db2c09ba85df9e2178597170e7c93f551525f002532"
+          },
+          {
+            "file": "block-editor-390-14-3941.png",
+            "sha256": "b0f5d9192c04707036e797a33a2c568d8a0afebdda74000a5615fd3537338b68"
+          },
+          {
+            "file": "block-editor-390-14-4581.png",
+            "sha256": "14b50256a0481a22dbb268450ec8f3aace1dca6e43b9c8237248e9111f4f1023"
+          },
+          {
+            "file": "block-editor-390-14-5221.png",
+            "sha256": "6515fc02bd36c3624988fcb55953e59c94002b1b5152eefa43a9e4afbed38f4c"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 0,
+        "panel": {
+          "bottom": 5552.09375,
+          "name": "Image opening · block-0",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "needs-crop-control-layout-repair",
+        "sheet": "block-editor-320-0-sheet.png",
+        "sheetSha256": "2d9809b20b317846f066b11830ffef421e1e08a6c63beb26246919c4309ceb78",
+        "frames": [
+          {
+            "file": "block-editor-320-0-3542.png",
+            "sha256": "5cf43511fdc5165cf12a9c06d6e27b332c706b105c648c3c38eed63faa910cfe"
+          },
+          {
+            "file": "block-editor-320-0-4182.png",
+            "sha256": "e1870c0b7d332a3e8b95eb95a6518b39ebdd5187e285a3477ae0994660ba541e"
+          },
+          {
+            "file": "block-editor-320-0-4822.png",
+            "sha256": "8a31c1d563118671124c62998f228d4ad73ce730dcba49130cb65d9d37cfe5d4"
+          },
+          {
+            "file": "block-editor-320-0-5462.png",
+            "sha256": "4583bf2dcae53788566cb60c15b11681e4ec84bf9a426921910f4c0b70a8c787"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 1,
+        "panel": {
+          "bottom": 4455.5625,
+          "name": "Reading column · block-1",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-320-1-sheet.png",
+        "sheetSha256": "d5019a18dc7ec6c5773c0eefea101f6d94c406fe4cc75c970d3ba1b7eaeada18",
+        "frames": [
+          {
+            "file": "block-editor-320-1-3542.png",
+            "sha256": "9964658d3f399bdfafe37d978fb67281e21f892e3f33b977f446ad0e3296a848"
+          },
+          {
+            "file": "block-editor-320-1-4182.png",
+            "sha256": "eb72ea894d30c49294840911479429f0dd664c1673ff9301522cff376f248247"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 2,
+        "panel": {
+          "bottom": 5624.359375,
+          "name": "Selected pieces · block-2",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-320-2-sheet.png",
+        "sheetSha256": "e71ece6af703eaca11ecc6af339999016b7bb796ff85291fc95af28c476664b2",
+        "frames": [
+          {
+            "file": "block-editor-320-2-3542.png",
+            "sha256": "95ca7445ef48faa7c3f48f97263163907869385204b1d9ea0f20e9098e59c31b"
+          },
+          {
+            "file": "block-editor-320-2-4182.png",
+            "sha256": "0cfd924135e23ea92b097f1dc48922df89d7698a6d50447091d8459eb5d37534"
+          },
+          {
+            "file": "block-editor-320-2-4822.png",
+            "sha256": "d10a9c1bf6dd7f2d0858fbff6d5c9d6d78b5c7a4d0c0df4a20aaedf1ef440481"
+          },
+          {
+            "file": "block-editor-320-2-5462.png",
+            "sha256": "1aa14ff606998f2c244e6198314b580252266d1dcc147b17862a35041487cf5c"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 3,
+        "panel": {
+          "bottom": 5655.078125,
+          "name": "Image and invitation · block-3",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "needs-crop-control-layout-repair",
+        "sheet": "block-editor-320-3-sheet.png",
+        "sheetSha256": "9f95b27b4fe06373de8da3b9a1076e2b66150449e1d5d3c9313b225dce57ecda",
+        "frames": [
+          {
+            "file": "block-editor-320-3-3542.png",
+            "sha256": "fbc5b412a08daf7bf930c76173bf2ee3f68d4856a80ab736eadda4f9aed0f421"
+          },
+          {
+            "file": "block-editor-320-3-4182.png",
+            "sha256": "3c40e39cf73d205346460787fc8a5cb2b74c75458198149d0f43b871a088cf29"
+          },
+          {
+            "file": "block-editor-320-3-4822.png",
+            "sha256": "7129aafc97124b619d9a7e2651c58d96ed9f4dcc857c416062004e81681affe7"
+          },
+          {
+            "file": "block-editor-320-3-5462.png",
+            "sha256": "7e9077e15e41feb077c3af799c43d7b1be8fc5967d21f3b31daa3b5682385d0c"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 4,
+        "panel": {
+          "bottom": 5675.546875,
+          "name": "Selected answers · block-4",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-320-4-sheet.png",
+        "sheetSha256": "153a36156844835d51b188dfca62825bb41780d6200c7a70e2cf2d59b7a941da",
+        "frames": [
+          {
+            "file": "block-editor-320-4-3542.png",
+            "sha256": "706dea89f7b4d9d77daf99189e2de9a06d50fade1e190050c2316c59fb4788bc"
+          },
+          {
+            "file": "block-editor-320-4-4182.png",
+            "sha256": "b7e94ac3e9f96804d14666e2f7ce5f3fed71129ef0ddede80f5b2f27c630630a"
+          },
+          {
+            "file": "block-editor-320-4-4822.png",
+            "sha256": "ec514c4f7755c6b60227594b3668e5897e5072d1a1c22352b3518cc3fdf6cd19"
+          },
+          {
+            "file": "block-editor-320-4-5462.png",
+            "sha256": "fe4389a3405e9a9d667ca288488add5b1ae12c05179c1a92150e20089779e3a3"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 5,
+        "panel": {
+          "bottom": 4611.109375,
+          "name": "Closing invitation · block-5",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-320-5-sheet.png",
+        "sheetSha256": "4df1e662ea5a557663279f8258839f34b2aca775e264812bce39012775084342",
+        "frames": [
+          {
+            "file": "block-editor-320-5-3542.png",
+            "sha256": "a3697924e85b5b5e4f472805708813aa1d67e5e27fc640f79f8c12f726c0c397"
+          },
+          {
+            "file": "block-editor-320-5-4182.png",
+            "sha256": "09448bb8e229f7b0a666e26556a747be270346c802e0fc679702b4bd430bf3b2"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 6,
+        "panel": {
+          "bottom": 5277.609375,
+          "name": "Collections · block-6",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-320-6-sheet.png",
+        "sheetSha256": "ba75d4944df4d4d1fe42644cc703bf85fa816a0ab87064803e98584a2549a70f",
+        "frames": [
+          {
+            "file": "block-editor-320-6-3542.png",
+            "sha256": "976e00e6a666e0608e14df0654c2b8530fffd4502ad299307420831025d7fa32"
+          },
+          {
+            "file": "block-editor-320-6-4182.png",
+            "sha256": "36bb3c2795c3f9f55e16a99cd5841f51a6ab5d23dff5f9e0da83264076162cf3"
+          },
+          {
+            "file": "block-editor-320-6-4822.png",
+            "sha256": "ccea51d329fb86bef039e5816cd400daab4fcdba938822964242dc75d7b39c82"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 7,
+        "panel": {
+          "bottom": 5277.609375,
+          "name": "Portfolio stories · block-7",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-320-7-sheet.png",
+        "sheetSha256": "a3bcc1d2c3843813190911c4b6a28e5306af55edacd87fbca767a954515e6bbd",
+        "frames": [
+          {
+            "file": "block-editor-320-7-3542.png",
+            "sha256": "074876c78df94350cb80b2599fe799c03118e347b97ff06ff73f8ef6528846d5"
+          },
+          {
+            "file": "block-editor-320-7-4182.png",
+            "sha256": "c89cd26d3d98872933894a20dc43ceb74fe470643d5f5bf3b52e135bc0685f96"
+          },
+          {
+            "file": "block-editor-320-7-4822.png",
+            "sha256": "ccea51d329fb86bef039e5816cd400daab4fcdba938822964242dc75d7b39c82"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 8,
+        "panel": {
+          "bottom": 5328.796875,
+          "name": "Journal stories · block-8",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-320-8-sheet.png",
+        "sheetSha256": "e73ada088c44ce376fdfb65b8497edf41f6e6f05e3dea1f3d7cf08c8992bee62",
+        "frames": [
+          {
+            "file": "block-editor-320-8-3542.png",
+            "sha256": "7063075d6b80789afd5ec197965c5666c6e9d5c56f751f66c09e839f69d1dad7"
+          },
+          {
+            "file": "block-editor-320-8-4182.png",
+            "sha256": "8a45d12431d3e09727c35471d185ecc3c82260fdf0fb891bf44852e9e384fe8f"
+          },
+          {
+            "file": "block-editor-320-8-4822.png",
+            "sha256": "cf2cacd4da9f07f0af88efdc5cb1132b38bc916e33a9ea17483684ebbfa45aec"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 9,
+        "panel": {
+          "bottom": 5396.59375,
+          "name": "Single statement · block-9",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-320-9-sheet.png",
+        "sheetSha256": "80172d45b086805f3ed7451cd856c0edc93710751eac4ee9dc2a5fdb3e3923ce",
+        "frames": [
+          {
+            "file": "block-editor-320-9-3542.png",
+            "sha256": "e559aff89fe5f9a066857bf7dbce29bd072d1521935babfe6f1b6efc367e2818"
+          },
+          {
+            "file": "block-editor-320-9-4182.png",
+            "sha256": "d522702f411c1e8abe60047ca241c82d7ee88bccc13f28454103fc4874587e6b"
+          },
+          {
+            "file": "block-editor-320-9-4822.png",
+            "sha256": "4161b0a42fd5895de3791af62fca242514dea1bd429de22a2c65642961f874ea"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 10,
+        "panel": {
+          "bottom": 5303.203125,
+          "name": "Statements · block-10",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-320-10-sheet.png",
+        "sheetSha256": "c8a768edf0c1434a6a141762566ba2bb7dd1b38c2f5a7bba0869ec27caecff5c",
+        "frames": [
+          {
+            "file": "block-editor-320-10-3542.png",
+            "sha256": "63edc3b3df3a9f33d98d1a16437575f371efcad33ce3a5c83d8e82220ae6fa2e"
+          },
+          {
+            "file": "block-editor-320-10-4182.png",
+            "sha256": "e08b0abbc2d7476d26a51fd52add03432adc2276ff3ca6cb0b2cd82e65dc43fd"
+          },
+          {
+            "file": "block-editor-320-10-4822.png",
+            "sha256": "7a34e1483718005313eec6ab93dbb27cb732f039911758982c76ab92d857af2a"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 11,
+        "panel": {
+          "bottom": 4771.703125,
+          "name": "Film and story · block-11",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-320-11-sheet.png",
+        "sheetSha256": "89dc8d8c05fd99df33e2933d7357784dd50d4fdd3863b685e89d16d525513a65",
+        "frames": [
+          {
+            "file": "block-editor-320-11-3542.png",
+            "sha256": "d339a368028c1b8fe8572f9c4c6c8856f299a6783a849da2acec7fa056bd6c0b"
+          },
+          {
+            "file": "block-editor-320-11-4182.png",
+            "sha256": "05a3f2f265aac8a78d256667eb45a8206c25d635334f86c5121316fef263cfd8"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 12,
+        "panel": {
+          "bottom": 6504.6875,
+          "name": "Masonry gallery · block-12",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "needs-crop-control-layout-repair",
+        "sheet": "block-editor-320-12-sheet.png",
+        "sheetSha256": "81e7d6731b9fb796b4f63ca622e279e51c39dec94487b754a0fc2ca00caa0378",
+        "frames": [
+          {
+            "file": "block-editor-320-12-3542.png",
+            "sha256": "d3e48ad1027ff83d0c1eeea0db96ab9dda7daf30548df3ad4b558d6a1ff30850"
+          },
+          {
+            "file": "block-editor-320-12-4182.png",
+            "sha256": "50370ba9d15c416fdb9ed31f79e48eececab5ea828de2e89184e5300ffee0d08"
+          },
+          {
+            "file": "block-editor-320-12-4822.png",
+            "sha256": "6027295cf2260e48dc091926eb30159494aacf39462c3a12679513980923c727"
+          },
+          {
+            "file": "block-editor-320-12-5462.png",
+            "sha256": "0353d6b83880519b2a8050eddfb7fdd680cc32c0cc1990da3062c043f5748458"
+          },
+          {
+            "file": "block-editor-320-12-6102.png",
+            "sha256": "859247839ff54210aaea051652dc85e28e76cebe2a113a92676e54fe08a04e84"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 13,
+        "panel": {
+          "bottom": 6504.6875,
+          "name": "Bento gallery · block-13",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "needs-crop-control-layout-repair",
+        "sheet": "block-editor-320-13-sheet.png",
+        "sheetSha256": "d4ba5aa98a394c38c94e145dd945461bbeb1bf0510cd0b53ac2950a0e35557e8",
+        "frames": [
+          {
+            "file": "block-editor-320-13-3542.png",
+            "sha256": "6c9ad25b4a7e6520e16ebd312f7d1d7ee00b83616c76d9fe33a7d9f2ef5a30d4"
+          },
+          {
+            "file": "block-editor-320-13-4182.png",
+            "sha256": "50370ba9d15c416fdb9ed31f79e48eececab5ea828de2e89184e5300ffee0d08"
+          },
+          {
+            "file": "block-editor-320-13-4822.png",
+            "sha256": "6027295cf2260e48dc091926eb30159494aacf39462c3a12679513980923c727"
+          },
+          {
+            "file": "block-editor-320-13-5462.png",
+            "sha256": "0353d6b83880519b2a8050eddfb7fdd680cc32c0cc1990da3062c043f5748458"
+          },
+          {
+            "file": "block-editor-320-13-6102.png",
+            "sha256": "662e0add18b0e591e1892314709e938fcc14e0908007fa59b4253475722d61dc"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 14,
+        "panel": {
+          "bottom": 6504.6875,
+          "name": "Fullscreen gallery · block-14",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "disposition": "needs-crop-control-layout-repair",
+        "sheet": "block-editor-320-14-sheet.png",
+        "sheetSha256": "5faa503b454c21b66f47567669b3a4ca9b6af02e2eb5778965dea6bb7aefe254",
+        "frames": [
+          {
+            "file": "block-editor-320-14-3542.png",
+            "sha256": "25757e4cfa8471c8cdaf43bfc2db6a2e9de0a15b137cae513e18450fecbf2eb1"
+          },
+          {
+            "file": "block-editor-320-14-4182.png",
+            "sha256": "50370ba9d15c416fdb9ed31f79e48eececab5ea828de2e89184e5300ffee0d08"
+          },
+          {
+            "file": "block-editor-320-14-4822.png",
+            "sha256": "6027295cf2260e48dc091926eb30159494aacf39462c3a12679513980923c727"
+          },
+          {
+            "file": "block-editor-320-14-5462.png",
+            "sha256": "0353d6b83880519b2a8050eddfb7fdd680cc32c0cc1990da3062c043f5748458"
+          },
+          {
+            "file": "block-editor-320-14-6102.png",
+            "sha256": "b41ed2d77beef658883fdeee6cff735e4879d264abd472a11593717f8f7aa767"
+          }
+        ]
+      }
+    ]
+  },
+  "videoHeroEditor": {
+    "reviewedBy": "language-rights subagent independent disk-image inspection",
+    "panelsViewed": 3,
+    "framesViewed": 6,
+    "narrowPanelsAccepted": 2,
+    "desktopSelectorCoverageGap": true,
+    "groups": [
+      {
+        "width": 1440,
+        "panel": {
+          "bottom": 2466.3125,
+          "name": "Film opening · film",
+          "sw": 1425,
+          "top": 1634.984375,
+          "width": 1440
+        },
+        "disposition": "intermediate-selector-view-needed",
+        "sheet": "block-editor-video-1440-sheet.png",
+        "sheetSha256": "2b5a74300a280482570c3f398f00da36140d5692d7741f07406bb4a58446ad40",
+        "frames": [
+          {
+            "file": "block-editor-video-1440-1635.png",
+            "sha256": "8a426fa2f8355cf9fd8790f8c6cf35a148cc781280b1be8048dcae6a20eb37e2"
+          },
+          {
+            "file": "block-editor-video-1440-2275.png",
+            "sha256": "f18be3cc85a1680c0e9c0574f20540a27699f72174ad514d5b4bc645c0ef0eeb"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "panel": {
+          "bottom": 3274.953125,
+          "name": "Film opening · film",
+          "sw": 375,
+          "top": 2263.65625,
+          "width": 390
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-video-390-sheet.png",
+        "sheetSha256": "a9baf3583b80922cf491c60e5c051f04ca0c012e4fa7f81bfae54c6815e25a2e",
+        "frames": [
+          {
+            "file": "block-editor-video-390-2264.png",
+            "sha256": "6099e52b2dfdbb9cf47f6dec0a5489f7e6cb9894df68711a2b332d18d943935d"
+          },
+          {
+            "file": "block-editor-video-390-2904.png",
+            "sha256": "cba198bda7916a92d1c846b5f450494eaa2123a67aa35eb53f7e7da74bcd3a89"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "panel": {
+          "bottom": 3518.59375,
+          "name": "Film opening · film",
+          "sw": 305,
+          "top": 2408.125,
+          "width": 320
+        },
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "block-editor-video-320-sheet.png",
+        "sheetSha256": "d9dd832fc7d2968e0c89b8091ad1ed8e604011e3ec7a13420ac542ffd206f1e4",
+        "frames": [
+          {
+            "file": "block-editor-video-320-2408.png",
+            "sha256": "ad35e48d5b2dd0cd9b8f69297d3c5f333aa6151368ebc4150b69eb2b64c15b2e"
+          },
+          {
+            "file": "block-editor-video-320-3048.png",
+            "sha256": "dbd0fe413b70be196d7dddd1e6997ca37ed25a8bf12d158b79d9dc62abc621fe"
+          }
+        ]
+      }
+    ]
+  },
+  "acceptedNewScreenshotCountScope": "66 public default +6 conflict/cancel frames; block-editor baseline/videoHero evidence is separately enumerated",
+  "supplementalBrowser": {
+    "font": {
+      "source": "test-results/old-design-migration/m10-completion/final-font-browser-metrics.json",
+      "sha256": "99784768660e4cd449be6b3c941cdcd4da15316c8e1e34e7e6bbb914b02416fd",
+      "currentFamily": "commonBodyFont, bodyFont, \"bodyFont Fallback\", Arial, Helvetica, sans-serif",
+      "baselineFamily": "bodyFont, \"bodyFont Fallback\", Arial, Helvetica, sans-serif",
+      "exactMatchedSamples": 12,
+      "currentOnlyAdditionalSamples": 3,
+      "comparisons": [
+        {
+          "text": "A quiet room · ₹1,200 → café",
+          "weight": 400,
+          "widthEqual": true,
+          "ascentEqual": true,
+          "descentEqual": true
+        },
+        {
+          "text": "हिन्दी भाषा और कला",
+          "weight": 400,
+          "widthEqual": true,
+          "ascentEqual": true,
+          "descentEqual": true
+        },
+        {
+          "text": "ગુજરાતી ભાષા અને કલા",
+          "weight": 400,
+          "widthEqual": true,
+          "ascentEqual": true,
+          "descentEqual": true
+        },
+        {
+          "text": "Ελληνικά Привет ∑ ≤",
+          "weight": 400,
+          "widthEqual": true,
+          "ascentEqual": true,
+          "descentEqual": true
+        },
+        {
+          "text": "A quiet room · ₹1,200 → café",
+          "weight": 500,
+          "widthEqual": true,
+          "ascentEqual": true,
+          "descentEqual": true
+        },
+        {
+          "text": "हिन्दी भाषा और कला",
+          "weight": 500,
+          "widthEqual": true,
+          "ascentEqual": true,
+          "descentEqual": true
+        },
+        {
+          "text": "ગુજરાતી ભાષા અને કલા",
+          "weight": 500,
+          "widthEqual": true,
+          "ascentEqual": true,
+          "descentEqual": true
+        },
+        {
+          "text": "Ελληνικά Привет ∑ ≤",
+          "weight": 500,
+          "widthEqual": true,
+          "ascentEqual": true,
+          "descentEqual": true
+        },
+        {
+          "text": "A quiet room · ₹1,200 → café",
+          "weight": 600,
+          "widthEqual": true,
+          "ascentEqual": true,
+          "descentEqual": true
+        },
+        {
+          "text": "हिन्दी भाषा और कला",
+          "weight": 600,
+          "widthEqual": true,
+          "ascentEqual": true,
+          "descentEqual": true
+        },
+        {
+          "text": "ગુજરાતી ભાષા અને કલા",
+          "weight": 600,
+          "widthEqual": true,
+          "ascentEqual": true,
+          "descentEqual": true
+        },
+        {
+          "text": "Ελληνικά Привет ∑ ≤",
+          "weight": 600,
+          "widthEqual": true,
+          "ascentEqual": true,
+          "descentEqual": true
+        }
+      ],
+      "allGlyphOrNativeMeaningAcceptance": false
+    },
+    "film": {
+      "source": "test-results/old-design-migration/m10-completion/final-film-controls.json",
+      "sha256": "592d21c22a9f711e4b9769ea64285205953e136b11375f82546d906740db0d8a",
+      "observations": {
+        "initialNoPosterRequest": true,
+        "playing": [
+          {
+            "paused": false,
+            "currentTime": 0.354973,
+            "readyState": 4,
+            "poster": true,
+            "controls": true
+          }
+        ],
+        "paused": [
+          {
+            "paused": true,
+            "currentTime": 0.412969,
+            "readyState": 4
+          }
+        ],
+        "offscreen": [
+          {
+            "paused": true,
+            "currentTime": 0.904019,
+            "top": 5128.125
+          }
+        ]
+      },
+      "scope": "Recorded browser poster deferral, playing, paused and offscreen-paused states only",
+      "physicalDeviceOrFieldEvidence": false
+    }
+  },
+  "finalPrintRecheck": {
+    "scope": "Care page1 and home film page9 actual PDF renders",
+    "sourceReport": "M10-TECHNICAL-REVIEW.md",
+    "independentlyViewedBy": "language-rights subagent",
+    "careCaptionBlackOnWhite": true,
+    "careParagraphUnobscured": true,
+    "filmPosterAndFullDisclosureVisible": true,
+    "skipLinkOverlayGone": true,
+    "physicalPrinterEvidence": false,
+    "allPdfPagesVisuallyInspected": false,
+    "images": [
+      {
+        "file": "pdf-review-care-clean-1.png",
+        "sha256": "52160858e6019e04446191f5d3960e82af1725668ca052fa912a38c3688e1bbb"
+      },
+      {
+        "file": "pdf-review-home-clean-09.png",
+        "sha256": "5fea43d9922f5aa63522d8aae09671c7b6fd1875dc7fc9a2619f60258ccb90f0"
+      }
+    ]
+  },
+  "narrowBlockEditorFinal": {
+    "source": "test-results/old-design-migration/m10-completion/editor-fixed-index.json",
+    "reviewedBy": "language-rights subagent independent disk-image inspection of all30contact sheets",
+    "acceptedPanels": 30,
+    "acceptedFrames": 151,
+    "frames320": 81,
+    "frames390": 70,
+    "captureMethod": "460px increments and bottom-focused frame to overlap fixed actions",
+    "cropNarrowFindingResolved": true,
+    "observations": [
+      "Preview tabs stack with whole-word labels",
+      "Nested crop legends and sliders readable",
+      "Frame shape selected value visible at320 and390",
+      "Bottom movement/removal and following add-block area covered",
+      "No new clipped control or paint artifact observed"
+    ],
+    "inputChanges": 0,
+    "draftSaves": 0,
+    "groups": [
+      {
+        "width": 320,
+        "index": 0,
+        "panel": {
+          "bottom": 5477.828125,
+          "name": "Image opening · block-0",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4397,
+          4857,
+          4958,
+          5317
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-0-sheet.png",
+        "sheetSha256": "537e92cc748fe4513630fb9d61289a1a89625536b30d6f0d47efb9d558e93848",
+        "frames": [
+          {
+            "file": "editor-fixed-320-0-3477.png",
+            "sha256": "c87ff3a6ab111bcec0a1ef8b709109b3c9d9bd32f142fbd66986c0b9266c39b2"
+          },
+          {
+            "file": "editor-fixed-320-0-3937.png",
+            "sha256": "14efe9b3e793c8bb58968add259a6439dfb8e27d976e10f5cb46cbe3acb46937"
+          },
+          {
+            "file": "editor-fixed-320-0-4397.png",
+            "sha256": "5636e2521942df4a30c55b55bcb660ba12df51fddaa24784956ee2dd31402f44"
+          },
+          {
+            "file": "editor-fixed-320-0-4857.png",
+            "sha256": "a9e5039f5b99b2bed9dfd08b90013a7bc0ca55f1adc64f3d2a7585b3c5a992c1"
+          },
+          {
+            "file": "editor-fixed-320-0-4958.png",
+            "sha256": "1d579031b311b4a6965007fd516f812d2040ba276522a68b82c8f1d218ed6d81"
+          },
+          {
+            "file": "editor-fixed-320-0-5317.png",
+            "sha256": "19555f149a58fc346ed650daa25f60deae2d8c9af690b9ddc9a0c256da5072eb"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 1,
+        "panel": {
+          "bottom": 4455.5625,
+          "name": "Reading column · block-1",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3936,
+          3937
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-1-sheet.png",
+        "sheetSha256": "1c090a89dfea6faef61e25d0501bdea861ff521918ec8cb13437b9cb11aca174",
+        "frames": [
+          {
+            "file": "editor-fixed-320-1-3477.png",
+            "sha256": "ba198e52cf83043734b5136a4dea301ff3148413b766993e45e7699351c8d12d"
+          },
+          {
+            "file": "editor-fixed-320-1-3936.png",
+            "sha256": "6ffdf439b5f069ff07555009f99f547cd1a6ac7b54ae437ad1c49aa85d2a33b8"
+          },
+          {
+            "file": "editor-fixed-320-1-3937.png",
+            "sha256": "04ccb8d271310bce8af0b98be499c4061e652912607a8c7cea83495bed7dc5eb"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 2,
+        "panel": {
+          "bottom": 5547.578125,
+          "name": "Selected pieces · block-2",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4397,
+          4857,
+          5028,
+          5317
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-2-sheet.png",
+        "sheetSha256": "aa4f1d59eb347b951415426e268365802d726530b74e9f6976b658159ae2ac6c",
+        "frames": [
+          {
+            "file": "editor-fixed-320-2-3477.png",
+            "sha256": "4704ed1534e8b178e38f96d5e23facce225c1bc8463fdeeefe6a971182eeefc4"
+          },
+          {
+            "file": "editor-fixed-320-2-3937.png",
+            "sha256": "712807cfcbc675fd8cf1770ee01e1b61466219993d4a44f20491c0c005e572c7"
+          },
+          {
+            "file": "editor-fixed-320-2-4397.png",
+            "sha256": "c56a76070a033cd470e8b65f530e4939e1e485b920cb7ea3f885bf9d3bea7388"
+          },
+          {
+            "file": "editor-fixed-320-2-4857.png",
+            "sha256": "81ba56b09a1a01ae1b72cae95afc15f00d3d123cacaf779e2eddcb095320e11c"
+          },
+          {
+            "file": "editor-fixed-320-2-5028.png",
+            "sha256": "deb0a5c6bb0f34be66add39563f7d53cead3abe8f1a2f42c034d072d2d361e8f"
+          },
+          {
+            "file": "editor-fixed-320-2-5317.png",
+            "sha256": "395e9896d3a7502e5fe8e876b703ba84d7127020a0aae4670679b3341e7383fc"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 3,
+        "panel": {
+          "bottom": 5580.8125,
+          "name": "Image and invitation · block-3",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4397,
+          4857,
+          5061,
+          5317
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-3-sheet.png",
+        "sheetSha256": "1a65d925dc0c004bf4b453401b868d2052879c993d44f859039ae2adc8864dac",
+        "frames": [
+          {
+            "file": "editor-fixed-320-3-3477.png",
+            "sha256": "23075759d20af6010e7b20fefc1f433046bebb78d50b6faf9862482956e0dc15"
+          },
+          {
+            "file": "editor-fixed-320-3-3937.png",
+            "sha256": "ec33b7e1f1426acb03ec1d3812adbfa77353c611e6fe8787bdac2a6349c85af0"
+          },
+          {
+            "file": "editor-fixed-320-3-4397.png",
+            "sha256": "5760156a0a624c78dabdc3ac8e217a45503533e1c4edaa605a883b1d5bb116b9"
+          },
+          {
+            "file": "editor-fixed-320-3-4857.png",
+            "sha256": "bedd7a89b5b3cf9b3db8255a9984b8f1241d8a8a0b8f5991851dd300fa6270bf"
+          },
+          {
+            "file": "editor-fixed-320-3-5061.png",
+            "sha256": "f5a7fa5736022cd29206eef5d2ab55b3f4f67433fd0a178be3ec44723116c0f2"
+          },
+          {
+            "file": "editor-fixed-320-3-5317.png",
+            "sha256": "909f343a757a9ff6a7d33332a181e33e6f66d932337872f22214f79d7da904e0"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 4,
+        "panel": {
+          "bottom": 5598.765625,
+          "name": "Selected answers · block-4",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4397,
+          4857,
+          5079,
+          5317
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-4-sheet.png",
+        "sheetSha256": "9ded6d56ddd87479919d5463de5bbd5ec96c2ea43b5d234e122447d3d1419098",
+        "frames": [
+          {
+            "file": "editor-fixed-320-4-3477.png",
+            "sha256": "e24d9da7863f95baf77bae2b01b651f52340f9b05aed980ee5a43b9eb1e8bfd0"
+          },
+          {
+            "file": "editor-fixed-320-4-3937.png",
+            "sha256": "9a5d7cb11298992f21e88c50b2f6ad32510018f18a60e4d587e436ebf06bacde"
+          },
+          {
+            "file": "editor-fixed-320-4-4397.png",
+            "sha256": "11684ae8871638ca22f25426e24a4b8b3792ed393e3b4b8d805ba8811aafac59"
+          },
+          {
+            "file": "editor-fixed-320-4-4857.png",
+            "sha256": "568f2e346897adb1aeb4eb91174dd2f0ac51113636abf0ce86a895f9097a0e5d"
+          },
+          {
+            "file": "editor-fixed-320-4-5079.png",
+            "sha256": "21f0ae71c7617d9f4df82746072e7f73333f8a3832457a71ee6951db216e6c29"
+          },
+          {
+            "file": "editor-fixed-320-4-5317.png",
+            "sha256": "6f254c4f430280c84ccfc39515cca1d429ebde8140e93066a06064cea316ebf1"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 5,
+        "panel": {
+          "bottom": 4611.109375,
+          "name": "Closing invitation · block-5",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4091,
+          4397
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-5-sheet.png",
+        "sheetSha256": "759bd670cca5b655a62045b219f896ca0574943ea2bcf385ffdb7874225221a5",
+        "frames": [
+          {
+            "file": "editor-fixed-320-5-3477.png",
+            "sha256": "309f4fa5e14998fa8873041b5dd970f26cb651eab0b0e02f7aef8129d7e9c286"
+          },
+          {
+            "file": "editor-fixed-320-5-3937.png",
+            "sha256": "ed972f82ac9bf7c0fe04e3a145665e263270d585d1e58b75f76d7db5af28ef0f"
+          },
+          {
+            "file": "editor-fixed-320-5-4091.png",
+            "sha256": "15d42baf0d6b351e40bff5fd399b7ca484041eb90d0d1e3a28955496ae6fee77"
+          },
+          {
+            "file": "editor-fixed-320-5-4397.png",
+            "sha256": "6c4601d7f145d436e853202486fe13f5a2c2b533396481d00f467f1b383d341c"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 6,
+        "panel": {
+          "bottom": 5200.828125,
+          "name": "Collections · block-6",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4397,
+          4681,
+          4857
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-6-sheet.png",
+        "sheetSha256": "32b64a1bf088212ff57a4f76da767581c4b0d67b3438c71d5ba62940666f8aca",
+        "frames": [
+          {
+            "file": "editor-fixed-320-6-3477.png",
+            "sha256": "28afed2c9fcf18d976a37d36d90849a0f4a651c539229d8f110024840a98dd54"
+          },
+          {
+            "file": "editor-fixed-320-6-3937.png",
+            "sha256": "5850ad0ff11a59064631002f6734295e48b658f720e578ffee86c8f2b90095ba"
+          },
+          {
+            "file": "editor-fixed-320-6-4397.png",
+            "sha256": "a505b250fe903f2ee033c5658bf4646e966451a89ccb4b3c04e69d5234149fb0"
+          },
+          {
+            "file": "editor-fixed-320-6-4681.png",
+            "sha256": "8fa13e6ec6fc5a2ab11fd742de9697295b33a39e8f3ebf3c2a9d9fd82ef41db5"
+          },
+          {
+            "file": "editor-fixed-320-6-4857.png",
+            "sha256": "6d29c99b874bcbdcfe377e6105d21e151b97d0179968d91ffd692b0c803ef8bb"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 7,
+        "panel": {
+          "bottom": 5200.828125,
+          "name": "Portfolio stories · block-7",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4397,
+          4681,
+          4857
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-7-sheet.png",
+        "sheetSha256": "c6f8ac49616d2349e59c97b88ef1c787cb62c1d332d2124b80d4a740eb4e3f18",
+        "frames": [
+          {
+            "file": "editor-fixed-320-7-3477.png",
+            "sha256": "e13b5fbeffa033d1326b5904bfe8b7c54794abba4240c785c2abf729daa0056f"
+          },
+          {
+            "file": "editor-fixed-320-7-3937.png",
+            "sha256": "93c0e357cc5790d78d0b1944fb0e00ceb42d06bdea12faeb00ca5c3b9381f4de"
+          },
+          {
+            "file": "editor-fixed-320-7-4397.png",
+            "sha256": "a505b250fe903f2ee033c5658bf4646e966451a89ccb4b3c04e69d5234149fb0"
+          },
+          {
+            "file": "editor-fixed-320-7-4681.png",
+            "sha256": "ede74a8633a532cbef131306e1d0270781c71308b0de31f14ca7cd0dea071e2e"
+          },
+          {
+            "file": "editor-fixed-320-7-4857.png",
+            "sha256": "6d29c99b874bcbdcfe377e6105d21e151b97d0179968d91ffd692b0c803ef8bb"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 8,
+        "panel": {
+          "bottom": 5226.421875,
+          "name": "Journal stories · block-8",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4397,
+          4706,
+          4857
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-8-sheet.png",
+        "sheetSha256": "d2c39ef298bfa1d1ea47ce11a11ac3b6b3ff284b2146bf0a9949f737dcc7084e",
+        "frames": [
+          {
+            "file": "editor-fixed-320-8-3477.png",
+            "sha256": "f8c96423c3e361e174ed54af97d98b2cd960b99de37a631c24dbfedbc9851f87"
+          },
+          {
+            "file": "editor-fixed-320-8-3937.png",
+            "sha256": "d3750231157cb25dfe7eea64544a60b7c5cc633ca78c4afa634d4ddd30f4b82d"
+          },
+          {
+            "file": "editor-fixed-320-8-4397.png",
+            "sha256": "de6b51fea7ea54fc58f29956fb5dd6e1200abd8a72c2b832e89f26cc31815c2d"
+          },
+          {
+            "file": "editor-fixed-320-8-4706.png",
+            "sha256": "81229416ea8f06e37382111b01c95110e1cfec8018e3dc28953759278c1de034"
+          },
+          {
+            "file": "editor-fixed-320-8-4857.png",
+            "sha256": "0f71f30ab529c6042290457b05405bd063ed5379ff6d5deef02886112af1cc24"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 9,
+        "panel": {
+          "bottom": 5294.21875,
+          "name": "Single statement · block-9",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4397,
+          4774,
+          4857
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-9-sheet.png",
+        "sheetSha256": "0ffb22e4d4494720deecaf996d2f92e83a7bb9d18499ecd254732012a8cdabed",
+        "frames": [
+          {
+            "file": "editor-fixed-320-9-3477.png",
+            "sha256": "1daa0b2e07a6e475e0321a0a7da165099c53d7e170428700e1b6f78310568eae"
+          },
+          {
+            "file": "editor-fixed-320-9-3937.png",
+            "sha256": "eb52f3b8b7865cc320f94b0fb4f179c7076cc02614dc547fee64af4d40843575"
+          },
+          {
+            "file": "editor-fixed-320-9-4397.png",
+            "sha256": "e7cf60a5dca6691acdf64eed6408441a4c4c5e7d36e7bf83339b9de711f7669a"
+          },
+          {
+            "file": "editor-fixed-320-9-4774.png",
+            "sha256": "17b3db02ff76328514576ddf2787ffbac45e85fd3dbfd7f5e127c96fa52ad45c"
+          },
+          {
+            "file": "editor-fixed-320-9-4857.png",
+            "sha256": "a8b567dcefd1e095ab4e1bc4e27e2254cf4cb57b192c5de447ded43a9187ad7b"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 10,
+        "panel": {
+          "bottom": 5200.828125,
+          "name": "Statements · block-10",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4397,
+          4681,
+          4857
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-10-sheet.png",
+        "sheetSha256": "40399731b7ff44f90db7a060c8f415e2c4f0407e2e5676cc1a98818ff96eb6ff",
+        "frames": [
+          {
+            "file": "editor-fixed-320-10-3477.png",
+            "sha256": "f260a784f5b3623a40662e4d2c980527c38154fd233e7ad46075aa83cc96cd7b"
+          },
+          {
+            "file": "editor-fixed-320-10-3937.png",
+            "sha256": "48e08284f63fc907e2a2b9239253646d91c22ad8fc0e97927848563bbdd43b50"
+          },
+          {
+            "file": "editor-fixed-320-10-4397.png",
+            "sha256": "a505b250fe903f2ee033c5658bf4646e966451a89ccb4b3c04e69d5234149fb0"
+          },
+          {
+            "file": "editor-fixed-320-10-4681.png",
+            "sha256": "8fa13e6ec6fc5a2ab11fd742de9697295b33a39e8f3ebf3c2a9d9fd82ef41db5"
+          },
+          {
+            "file": "editor-fixed-320-10-4857.png",
+            "sha256": "6d29c99b874bcbdcfe377e6105d21e151b97d0179968d91ffd692b0c803ef8bb"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 11,
+        "panel": {
+          "bottom": 4771.703125,
+          "name": "Film and story · block-11",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4252,
+          4397
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-11-sheet.png",
+        "sheetSha256": "0278c15a38a05766bf896bdfe952580034198eda4986479ab0fc62529b2289de",
+        "frames": [
+          {
+            "file": "editor-fixed-320-11-3477.png",
+            "sha256": "7540fff41860663170da8318f213f409632764ba0cfbd795f0992e0386072c8f"
+          },
+          {
+            "file": "editor-fixed-320-11-3937.png",
+            "sha256": "9e4ca50094365c8fd2041536e8a68792acf85a0226306a7f126c638122ee3de6"
+          },
+          {
+            "file": "editor-fixed-320-11-4252.png",
+            "sha256": "59de56d6d6218ef84eb767726c674527e5800cf2a7e7027b4203a53343f3c35b"
+          },
+          {
+            "file": "editor-fixed-320-11-4397.png",
+            "sha256": "4abe375d9529701aaf3f60b2b25397795b5b9854700cbf3fb44b698a7cdb53fe"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 12,
+        "panel": {
+          "bottom": 6000.203125,
+          "name": "Masonry gallery · block-12",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4397,
+          4857,
+          5317,
+          5480,
+          5777
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-12-sheet.png",
+        "sheetSha256": "2fe5faf9ccac7eeb47f5fd6cdb47b71079b149b3965426dee71109d9eca57fa5",
+        "frames": [
+          {
+            "file": "editor-fixed-320-12-3477.png",
+            "sha256": "f04f2e508f0a23e46f6a0c3ef04aba997585838ccd028c127c1f750852176379"
+          },
+          {
+            "file": "editor-fixed-320-12-3937.png",
+            "sha256": "eb2004f54380d35f219f3042097f1c1e75b4a934f2c5edbd6e9c48e5a4630678"
+          },
+          {
+            "file": "editor-fixed-320-12-4397.png",
+            "sha256": "080d8055ab0956b6628e8613bc33bd007d44e5b302f8deda2210047736411d7c"
+          },
+          {
+            "file": "editor-fixed-320-12-4857.png",
+            "sha256": "ac459b1191bbe0c9f6e89842918a0975de15af29b6d0e6ac9722cf72a2bf2055"
+          },
+          {
+            "file": "editor-fixed-320-12-5317.png",
+            "sha256": "ce169c629216e5abeb90a8b84ffe1508ac8187dd433f27edf870f8687a48aee7"
+          },
+          {
+            "file": "editor-fixed-320-12-5480.png",
+            "sha256": "6a929e6d75d965dca331e3f8420dbcd6e513ac7055d1d452442031554528cedf"
+          },
+          {
+            "file": "editor-fixed-320-12-5777.png",
+            "sha256": "557da05410c4a6934230ce3cbcd4ad097f7e07d68a83b8bf4824564f9acdbd7c"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 13,
+        "panel": {
+          "bottom": 6000.203125,
+          "name": "Bento gallery · block-13",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4397,
+          4857,
+          5317,
+          5480,
+          5777
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-13-sheet.png",
+        "sheetSha256": "447e9b56fbb209dd1d087b46f14200cfb011e7a445edc21693c514c6e22f255d",
+        "frames": [
+          {
+            "file": "editor-fixed-320-13-3477.png",
+            "sha256": "762d6e752291bc26ba851c1ec4dfbba968f840ef587c6ddf8cf7eafb8ab4b8b1"
+          },
+          {
+            "file": "editor-fixed-320-13-3937.png",
+            "sha256": "eb2004f54380d35f219f3042097f1c1e75b4a934f2c5edbd6e9c48e5a4630678"
+          },
+          {
+            "file": "editor-fixed-320-13-4397.png",
+            "sha256": "080d8055ab0956b6628e8613bc33bd007d44e5b302f8deda2210047736411d7c"
+          },
+          {
+            "file": "editor-fixed-320-13-4857.png",
+            "sha256": "ac459b1191bbe0c9f6e89842918a0975de15af29b6d0e6ac9722cf72a2bf2055"
+          },
+          {
+            "file": "editor-fixed-320-13-5317.png",
+            "sha256": "5b89fbc767aac3fa6826ff164af7e868b885643709f91ec917cb2163fc21d959"
+          },
+          {
+            "file": "editor-fixed-320-13-5480.png",
+            "sha256": "2271753c7ba9ca336c50669fbdf82c970e6f1041b4b0936c178b8ca35ac844ae"
+          },
+          {
+            "file": "editor-fixed-320-13-5777.png",
+            "sha256": "557da05410c4a6934230ce3cbcd4ad097f7e07d68a83b8bf4824564f9acdbd7c"
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "index": 14,
+        "panel": {
+          "bottom": 6000.203125,
+          "name": "Fullscreen gallery · block-14",
+          "sw": 305,
+          "top": 3542.25,
+          "width": 320
+        },
+        "positions": [
+          3477,
+          3937,
+          4397,
+          4857,
+          5317,
+          5480,
+          5777
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-320-14-sheet.png",
+        "sheetSha256": "5e98302ace685944074aca12784cb4ccc83fc5493920f878be17975e69671acc",
+        "frames": [
+          {
+            "file": "editor-fixed-320-14-3477.png",
+            "sha256": "23b3177c303af950ea74675ede1c0a3fc1f3895987b0f07eeba7e21dc068f00a"
+          },
+          {
+            "file": "editor-fixed-320-14-3937.png",
+            "sha256": "eb2004f54380d35f219f3042097f1c1e75b4a934f2c5edbd6e9c48e5a4630678"
+          },
+          {
+            "file": "editor-fixed-320-14-4397.png",
+            "sha256": "080d8055ab0956b6628e8613bc33bd007d44e5b302f8deda2210047736411d7c"
+          },
+          {
+            "file": "editor-fixed-320-14-4857.png",
+            "sha256": "ac459b1191bbe0c9f6e89842918a0975de15af29b6d0e6ac9722cf72a2bf2055"
+          },
+          {
+            "file": "editor-fixed-320-14-5317.png",
+            "sha256": "d212ddfc65bb8c1d74fb79a3cca4fc3b02b1606eaa567cf223a9923299d5a7f6"
+          },
+          {
+            "file": "editor-fixed-320-14-5480.png",
+            "sha256": "aaebea2458b33bae2848c40b38588f26bb9d6976d1a071b9d3d893aa3abcee59"
+          },
+          {
+            "file": "editor-fixed-320-14-5777.png",
+            "sha256": "34696553ec3a7afe55aa9b7802ddc7209e4634a288cd5cae5c6823cfe7de78e0"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 0,
+        "panel": {
+          "bottom": 5109.140625,
+          "name": "Image opening · block-0",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          4156,
+          4589,
+          4616
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-0-sheet.png",
+        "sheetSha256": "9942cfedada0634da8cc0b8830eb14059689a5037e7ae9cd2cafb451e820a0ad",
+        "frames": [
+          {
+            "file": "editor-fixed-390-0-3236.png",
+            "sha256": "20206e66a90c7c38152b7d1932879a099362945a419fa94593d6de9f821a7bc2"
+          },
+          {
+            "file": "editor-fixed-390-0-3696.png",
+            "sha256": "5467f889c08f1aeeddaa557d78b0ab72e64cf2ffa485cabaef6ce5144aa39b3b"
+          },
+          {
+            "file": "editor-fixed-390-0-4156.png",
+            "sha256": "74571f36755eae8f5509e01bbefddbb28e8d7e08ef190f8e0eea4f47f2ce1e52"
+          },
+          {
+            "file": "editor-fixed-390-0-4589.png",
+            "sha256": "de8e3b9ff6f96048ffc3236a8c2f9420d937a6b853135384f2d70de537ba2c55"
+          },
+          {
+            "file": "editor-fixed-390-0-4616.png",
+            "sha256": "a29f5131a24cf2ae6413fdb8609e7c3366ffb6a2c8f27a4f759d7e1bcb0f64bb"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "panel": {
+          "bottom": 4137.0625,
+          "name": "Reading column · block-1",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3617,
+          3696
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-1-sheet.png",
+        "sheetSha256": "9877239c5d85c3257cdc45c7edad780027f58556c882c0cdb0619c18a62cdf20",
+        "frames": [
+          {
+            "file": "editor-fixed-390-1-3236.png",
+            "sha256": "252601bcc2ec733edd0f8e4566bad3b2ab8cb6a0aaf35a6da4545e27ba9adfd5"
+          },
+          {
+            "file": "editor-fixed-390-1-3617.png",
+            "sha256": "b4a29bf7016996433a9526cd57a44ef5bdbb77ff76ba4207f157d6d7fa3d37aa"
+          },
+          {
+            "file": "editor-fixed-390-1-3696.png",
+            "sha256": "fecde5bea8750341ddc9740c2fdc8f4c32922369fed71aa344acae93103b6fb3"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 2,
+        "panel": {
+          "bottom": 4928.359375,
+          "name": "Selected pieces · block-2",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          4156,
+          4408,
+          4616
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-2-sheet.png",
+        "sheetSha256": "32fe72281b370bb5be7cd69dbd85846c396d33cff041fe9bfc5355f061c66d9a",
+        "frames": [
+          {
+            "file": "editor-fixed-390-2-3236.png",
+            "sha256": "ce6212348054069bd9b332d17535354ba06ccc8827785e44b4f43c0845853c5d"
+          },
+          {
+            "file": "editor-fixed-390-2-3696.png",
+            "sha256": "15bb2ccb24554486e6ba13ca7b43dff0154071c9819f471fefd342baec4047a6"
+          },
+          {
+            "file": "editor-fixed-390-2-4156.png",
+            "sha256": "44902bbcbe73b6ae3ac8e2a619ebfcba785eec8608d0a7adefb07738e7e3452a"
+          },
+          {
+            "file": "editor-fixed-390-2-4408.png",
+            "sha256": "84f86f6691603a5d10ab87fba24c70612a4957fd132a61ae2e294c06c37d0f59"
+          },
+          {
+            "file": "editor-fixed-390-2-4616.png",
+            "sha256": "918698eed290ded8b0fea1cb49dc877d576903a4518a72c80e8d23364ab7caa6"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "panel": {
+          "bottom": 5212.125,
+          "name": "Image and invitation · block-3",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          4156,
+          4616,
+          4692,
+          5076
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-3-sheet.png",
+        "sheetSha256": "5037b066bf56dc1f6b97278f271cf1c6e4f76c915345c90daa88969d225d3f23",
+        "frames": [
+          {
+            "file": "editor-fixed-390-3-3236.png",
+            "sha256": "b662033a70d578d53dc1a7b5918f89d8d5f0c0b39fc182f745c2a214f9b4d7a9"
+          },
+          {
+            "file": "editor-fixed-390-3-3696.png",
+            "sha256": "f2a1f843822534708885e1e7a7bf27c02f88279692adce05f98ac3773e4b7a57"
+          },
+          {
+            "file": "editor-fixed-390-3-4156.png",
+            "sha256": "745370cdad70815a18ad82adfd5bab140a72c97333bbe3575032e210feffd821"
+          },
+          {
+            "file": "editor-fixed-390-3-4616.png",
+            "sha256": "36887e9e4a17fb6edb7e54fd42bab4974565e8310d3d6fdc52cad7e48ccae3d2"
+          },
+          {
+            "file": "editor-fixed-390-3-4692.png",
+            "sha256": "92732d4d0484c7714fa6e905458c05c75c13e4215243bda55bd151c2c818d08f"
+          },
+          {
+            "file": "editor-fixed-390-3-5076.png",
+            "sha256": "c6b647860074d4b92ac142567121d202ebf63024459f44792b96e1b7c69e4294"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 4,
+        "panel": {
+          "bottom": 4928.359375,
+          "name": "Selected answers · block-4",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          4156,
+          4408,
+          4616
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-4-sheet.png",
+        "sheetSha256": "d54e13b40b39cda7d8f8b46e6f46d4091eb793557d69c398016cd566eeed2bea",
+        "frames": [
+          {
+            "file": "editor-fixed-390-4-3236.png",
+            "sha256": "e6ffaf9493771650117638801eeba0a597fd86c294630fd23d074090a0232f49"
+          },
+          {
+            "file": "editor-fixed-390-4-3696.png",
+            "sha256": "39fd3b66cf507658a70a717744f90ff3371c089536e24d93fe66b32cd55714e1"
+          },
+          {
+            "file": "editor-fixed-390-4-4156.png",
+            "sha256": "3dc3b616a92fc9a3867371960736410140bfe3877fd420d18e7d9d51560f1fdf"
+          },
+          {
+            "file": "editor-fixed-390-4-4408.png",
+            "sha256": "84f86f6691603a5d10ab87fba24c70612a4957fd132a61ae2e294c06c37d0f59"
+          },
+          {
+            "file": "editor-fixed-390-4-4616.png",
+            "sha256": "918698eed290ded8b0fea1cb49dc877d576903a4518a72c80e8d23364ab7caa6"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 5,
+        "panel": {
+          "bottom": 4251.03125,
+          "name": "Closing invitation · block-5",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          3731
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-5-sheet.png",
+        "sheetSha256": "c5a92a0b1df057ae75245ca9c81475f89c7e898d3b252daff2030f0938c9e67c",
+        "frames": [
+          {
+            "file": "editor-fixed-390-5-3236.png",
+            "sha256": "aea4c8993029b6158045637be652fc0b06d47766374826bcd35b1bc2ca0149af"
+          },
+          {
+            "file": "editor-fixed-390-5-3696.png",
+            "sha256": "f1c6d4207d214b4cc3a45b3f7a929e124dee18afe14be287c7a6fe455479421a"
+          },
+          {
+            "file": "editor-fixed-390-5-3731.png",
+            "sha256": "3e34635015cc3ef7d62713d0a0e7c3726341799dbff8a071dfe5f6be4fc57809"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 6,
+        "panel": {
+          "bottom": 4658.390625,
+          "name": "Collections · block-6",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          4138,
+          4156
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-6-sheet.png",
+        "sheetSha256": "9204d142fdbf2bed85e18a420f86f0cafe5d67b95bab42337945792c83214a4a",
+        "frames": [
+          {
+            "file": "editor-fixed-390-6-3236.png",
+            "sha256": "126927a6525a385ca649fb6bcdd97fd73d99237c83306b49b72503c20fdeccae"
+          },
+          {
+            "file": "editor-fixed-390-6-3696.png",
+            "sha256": "1c58498ab38dbf6b16c101551ecad6926f4c9f8c882b9c82ad3558a5ba71f393"
+          },
+          {
+            "file": "editor-fixed-390-6-4138.png",
+            "sha256": "7437dff1109d71721784e4385ee3b155ab81a64b17d82c460affd070dc0f6bad"
+          },
+          {
+            "file": "editor-fixed-390-6-4156.png",
+            "sha256": "ebc0dac5cdb6aa9e846ed524b77272b6631c1ee4a09507b8906caec70b4704df"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 7,
+        "panel": {
+          "bottom": 4658.390625,
+          "name": "Portfolio stories · block-7",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          4138,
+          4156
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-7-sheet.png",
+        "sheetSha256": "6a66f08be1cc7ffc199d19cd3dcf888eb9929204be2170e2b2260e679b7f68d4",
+        "frames": [
+          {
+            "file": "editor-fixed-390-7-3236.png",
+            "sha256": "1ccdfd87c348fc8757423be91fd8787c117bd8325067ff3074a47ed281bd3cf9"
+          },
+          {
+            "file": "editor-fixed-390-7-3696.png",
+            "sha256": "6ccfedc6807a97502432131fbed821efc1d84f098d34d429645dafe6a6441b03"
+          },
+          {
+            "file": "editor-fixed-390-7-4138.png",
+            "sha256": "7437dff1109d71721784e4385ee3b155ab81a64b17d82c460affd070dc0f6bad"
+          },
+          {
+            "file": "editor-fixed-390-7-4156.png",
+            "sha256": "ebc0dac5cdb6aa9e846ed524b77272b6631c1ee4a09507b8906caec70b4704df"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 8,
+        "panel": {
+          "bottom": 4683.984375,
+          "name": "Journal stories · block-8",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          4156,
+          4164
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-8-sheet.png",
+        "sheetSha256": "03aaf87ea7464d8fafe4fcf0ac1654aafcd36354abd5873c30e2d2b6d25dcd19",
+        "frames": [
+          {
+            "file": "editor-fixed-390-8-3236.png",
+            "sha256": "4070ddbcd43066abc269b2eb9a5b4d91cf6bba9bb4b6689bff070f0e0afcb047"
+          },
+          {
+            "file": "editor-fixed-390-8-3696.png",
+            "sha256": "d3b5ec6b29676d95f03c899de9302a639041b8a2c9e35b0a82dd4185fb2717a9"
+          },
+          {
+            "file": "editor-fixed-390-8-4156.png",
+            "sha256": "4065296185fbe5bc1f8e481dec038c5a87052c0d0daec585184daf6499365af2"
+          },
+          {
+            "file": "editor-fixed-390-8-4164.png",
+            "sha256": "af61000e2abd6b9e6a77c09e4c34062b5fa94400c7c99be216bddbfe7af5278f"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 9,
+        "panel": {
+          "bottom": 4777.375,
+          "name": "Single statement · block-9",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          4156,
+          4257,
+          4616
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-9-sheet.png",
+        "sheetSha256": "2d8231394626ed5d997469709764c3459ec42eb974c8f1116c9e221eba75e135",
+        "frames": [
+          {
+            "file": "editor-fixed-390-9-3236.png",
+            "sha256": "d6e764861d0b917917e924d268030e8cba14783c0625e54b9b15c05324e3362b"
+          },
+          {
+            "file": "editor-fixed-390-9-3696.png",
+            "sha256": "e91f9d56635b4dd7513f13a9fe93a91250a39e3c711588684bec7745664b0066"
+          },
+          {
+            "file": "editor-fixed-390-9-4156.png",
+            "sha256": "2cd5bb015c7b77c41e581fcf440514296512e87b1f947d44c63ec756cf9ed086"
+          },
+          {
+            "file": "editor-fixed-390-9-4257.png",
+            "sha256": "76c723ee87ebb9b6552653eff307c3ea31b53de2595f9720eb2864ee0199d192"
+          },
+          {
+            "file": "editor-fixed-390-9-4616.png",
+            "sha256": "dab1b15827e20b5e188f714317c68b7d183e83ee6da34e0f0b61443b958e627d"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 10,
+        "panel": {
+          "bottom": 4683.984375,
+          "name": "Statements · block-10",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          4156,
+          4164
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-10-sheet.png",
+        "sheetSha256": "a03b2f81da6cf5fb898b6c0518e4dca749d154b5f7549a2d01ef28242309c098",
+        "frames": [
+          {
+            "file": "editor-fixed-390-10-3236.png",
+            "sha256": "5fda21ab2394c1e38f901d980974bf8611b02e4f6f010ca288c8a80a45097dcd"
+          },
+          {
+            "file": "editor-fixed-390-10-3696.png",
+            "sha256": "a7c50a8a93b3aa6b8bcbfb4e39ce7b03a6f1d5083ad1a00d10962fbde2c4e989"
+          },
+          {
+            "file": "editor-fixed-390-10-4156.png",
+            "sha256": "4065296185fbe5bc1f8e481dec038c5a87052c0d0daec585184daf6499365af2"
+          },
+          {
+            "file": "editor-fixed-390-10-4164.png",
+            "sha256": "af61000e2abd6b9e6a77c09e4c34062b5fa94400c7c99be216bddbfe7af5278f"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 11,
+        "panel": {
+          "bottom": 4405.21875,
+          "name": "Film and story · block-11",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          3885,
+          4156
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-11-sheet.png",
+        "sheetSha256": "e8503c864fe0b552882644f80d5baadad630991c5032c0ba3cab1d18e6fc20c6",
+        "frames": [
+          {
+            "file": "editor-fixed-390-11-3236.png",
+            "sha256": "b60a925941014d0b0f7dbae1ab118a337b50c7676fe137220d4d6d948210cf7a"
+          },
+          {
+            "file": "editor-fixed-390-11-3696.png",
+            "sha256": "db819b8ff01d8628e365f5cf828212e841aeb390866f74c6baf74db4fd83aaac"
+          },
+          {
+            "file": "editor-fixed-390-11-3885.png",
+            "sha256": "d3f39c48082f69055f083be7f9d2f097e66d931ed1c19ba5d7102318d7a1b473"
+          },
+          {
+            "file": "editor-fixed-390-11-4156.png",
+            "sha256": "86481bef50dc3f299f87ee102a9b3019011b0f005f5435d00f4f14d80f2004bb"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 12,
+        "panel": {
+          "bottom": 5452.359375,
+          "name": "Masonry gallery · block-12",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          4156,
+          4616,
+          4932,
+          5076
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-12-sheet.png",
+        "sheetSha256": "302ac27fa4bccc6e525ec129057a64287ede3ad0133a492d0cd8f0ed517138bc",
+        "frames": [
+          {
+            "file": "editor-fixed-390-12-3236.png",
+            "sha256": "597cfa26faf097f7296842202ce726ad917cbdb40462841105cf5f974936a7c9"
+          },
+          {
+            "file": "editor-fixed-390-12-3696.png",
+            "sha256": "93860f79c780612643814a99b034640db25a30d09f04b685bfba87031668b4b1"
+          },
+          {
+            "file": "editor-fixed-390-12-4156.png",
+            "sha256": "94d2237b9c7a206fbbe47dcc57615faaf109d1996da188054cac20f50fd2f288"
+          },
+          {
+            "file": "editor-fixed-390-12-4616.png",
+            "sha256": "b9df3b6f91614de173c92cb61bf030b302bdabb6a4dffe23594e60b5f2e0e5d7"
+          },
+          {
+            "file": "editor-fixed-390-12-4932.png",
+            "sha256": "be006a5ab06bf4c9cd6b3f653e02869eea2e83bdcc4f10bc864c3e7cde5d66a3"
+          },
+          {
+            "file": "editor-fixed-390-12-5076.png",
+            "sha256": "c114a061ec723152fa20f71027365d62656b764c85bb54cdb22d8568daad533b"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 13,
+        "panel": {
+          "bottom": 5452.359375,
+          "name": "Bento gallery · block-13",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          4156,
+          4616,
+          4932,
+          5076
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-13-sheet.png",
+        "sheetSha256": "219b228bfd105caccbaa84e653cd015ddf26eadcc74bb0302635bb9d8d2ef46b",
+        "frames": [
+          {
+            "file": "editor-fixed-390-13-3236.png",
+            "sha256": "2d357da5bf51bd5e653a8ead418c6fd771dba776e570e396ffdac2e3f91a83c6"
+          },
+          {
+            "file": "editor-fixed-390-13-3696.png",
+            "sha256": "93860f79c780612643814a99b034640db25a30d09f04b685bfba87031668b4b1"
+          },
+          {
+            "file": "editor-fixed-390-13-4156.png",
+            "sha256": "94d2237b9c7a206fbbe47dcc57615faaf109d1996da188054cac20f50fd2f288"
+          },
+          {
+            "file": "editor-fixed-390-13-4616.png",
+            "sha256": "8fb9fed35aff469d0419dac8527dcb76b568b12bc4ffe98d938c2b6d10e8d069"
+          },
+          {
+            "file": "editor-fixed-390-13-4932.png",
+            "sha256": "adda653eb2006d4b73e504d2f993df1e2369defe7ac8923ea26332692d170337"
+          },
+          {
+            "file": "editor-fixed-390-13-5076.png",
+            "sha256": "f4cc371718e86e5809a1e70c4f994f3a9f30553b2637c68e07dbfb7f6f7dc752"
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "index": 14,
+        "panel": {
+          "bottom": 5477.953125,
+          "name": "Fullscreen gallery · block-14",
+          "sw": 375,
+          "top": 3300.53125,
+          "width": 390
+        },
+        "positions": [
+          3236,
+          3696,
+          4156,
+          4616,
+          4958,
+          5076
+        ],
+        "disposition": "accepted-default-panel-layout",
+        "sheet": "editor-fixed-390-14-sheet.png",
+        "sheetSha256": "2fa0da9f72b0d4379ae1bef5a26be75ca3b800bc27230c76c67dec08f3f54e83",
+        "frames": [
+          {
+            "file": "editor-fixed-390-14-3236.png",
+            "sha256": "f620133ce0a88a5e884dbf1d896048060989441e3524c619c64e4dc3e02a28f8"
+          },
+          {
+            "file": "editor-fixed-390-14-3696.png",
+            "sha256": "bd86e8097b3b180c70f758802eaa58a6d47b031956528367d65f3c3b8ed81f8c"
+          },
+          {
+            "file": "editor-fixed-390-14-4156.png",
+            "sha256": "8f752fda0249c4e40fc671e1ac2575082dddf6f841cb785b8bc72bc87f23b70d"
+          },
+          {
+            "file": "editor-fixed-390-14-4616.png",
+            "sha256": "8bc0cf8cf397af88ec4dde938b793c1a0708e2f1c478869540dde8acf9b4ae15"
+          },
+          {
+            "file": "editor-fixed-390-14-4958.png",
+            "sha256": "fadc78036c8166aad93db7dd04c2f041916cfb7609d1a0b04b02867eba8829d9"
+          },
+          {
+            "file": "editor-fixed-390-14-5076.png",
+            "sha256": "8c177fee4204ac31703c927f318a786b79e53e2fb6e3f0963d102774d6a25afd"
+          }
+        ]
+      }
+    ]
+  }
+}

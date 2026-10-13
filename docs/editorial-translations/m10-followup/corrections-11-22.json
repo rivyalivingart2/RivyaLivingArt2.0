@@ -1,0 +1,63 @@
+{
+  "records": {
+    "DB011": {
+      "notes": "Reviewed all 20 fields. Keep inspiration/render/sample distinctions, sharing entitlement, no implied specification approval and conflicting references. Correct bespoke commission and annotation wording.",
+      "replace": {"hi": [["कमीशन वाली वस्तु", "खास तौर पर बनवाई जाने वाली वस्तु"]], "gu": [["કમિશ્ડ ઑબ્જેક્ટ", "ખાસ બનાવડાવેલી વસ્તુ"], ["તેની ટીકા કરો", "તેની નોંધ લખો"], ["સંક્ષિપ્ત સંક્ષિપ્તમાં", "ટૂંકા જરૂરિયાત-વર્ણનમાં"]]}
+    },
+    "DB012": {
+      "notes": "Reviewed all 19 fields. Correct material property (not real estate), apparent versus verified, grain and finish. Preserve uncertain image interpretation and lack of material/lighting-performance promises.",
+      "replace": {"hi": [["संपत्ति", "गुणधर्म"], ["दृश्यमान अनाज", "दिखते लकड़ी के रेशों"], ["सूत्रीकरण या समापन", "संरचना या सतह की फ़िनिश"], ["एक पीली पृष्ठभूमि", "एक हल्के रंग की पृष्ठभूमि"], ["असमर्थित समाप्ति दावे", "सतह की फ़िनिश से जुड़े अप्रमाणित दावे"], ["अन्य लोग आपको", "अन्य छवियाँ आपको"]], "gu": [["મિલકત", "ગુણધર્મ"], ["દૃશ્યમાન અનાજ", "દેખાતા લાકડાના રેસા"], ["પૂર્ણાહુતિ", "સપાટીની ફિનિશ"], ["અસમર્થિત સમાપ્તિ દાવામાં", "સપાટીની ફિનિશ વિશેના અપ્રમાણિત દાવામાં"], ["અન્ય લોકો તમને", "અન્ય છબીઓ તમને"]]},
+      "override": {
+        "hi": {"description": "बताएँ कि संदर्भ तस्वीर में क्या दिखाई देता है, फिर पूछें कि किन बातों के लिए असली नमूना देखना आवश्यक होगा। पृष्ठभूमि, देखने के कोण, प्रतिबिंब और गहराई के आभास पर दृश्य नोट्स।"},
+        "gu": {"description": "સંદર્ભ છબીમાં શું દેખાય છે તે વર્ણવો, પછી પૂછો કે કઈ બાબતો માટે વાસ્તવિક નમૂનો જોવો જરૂરી હશે. પૃષ્ઠભૂમિ, જોવાના ખૂણા, પ્રતિબિંબ અને ઊંડાણના આભાસ વિશેની દૃશ્ય નોંધો."}
+      }
+    },
+    "DB013": {
+      "notes": "Reviewed all 12 fields. Correct changing-room ambiguity and comfort/strength warning. Preserve lack of rendered evidence, individual requirements and privacy limits.",
+      "replace": {"hi": [["तालिका", "मेज़"], ["एक बार सब कुछ हटाकर", "एक बार हर चीज़ को उसकी जगह व्यवस्थित करके"], ["प्रदान की गई छवि भी प्रदर्शित नहीं करती है।", "डिज़ाइन की बनाई गई छवि इन दोनों में से किसी बात को सिद्ध नहीं करती।"]], "gu": [["એકવાર બધું દૂર રાખીને", "એકવાર બધું તેની જગ્યાએ વ્યવસ્થિત રાખીને"]]},
+      "override": {
+        "hi": {"description": "बैठने की व्यवस्था को ऐसे कमरे का हिस्सा मानें जिसका रूप इस्तेमाल के साथ बदलता है: कुर्सी की पीठ की रेखा, समूह की लय और हर व्यक्ति की ज़रूरी जगह।"},
+        "gu": {"description": "બેઠકની ગોઠવણીને ઉપયોગ સાથે બદલાતા રૂમના ભાગ તરીકે જુઓ: ખુરશીની પીઠની રેખા, જૂથની લય અને દરેક વ્યક્તિને જરૂરી જગ્યા.", "sections.2.paragraphs.0": "શિલ્પ જેવી બેઠક ચિત્રમાં આકર્ષક હોઈ શકે, છતાં મહત્વના પ્રશ્નો વણઉકેલાયેલા રહે. બેઠકની ઇચ્છિત ઊંચાઈ, નજીકના ફર્નિચર સાથેનો સંબંધ અને તેના ઉપયોગની પ્રવૃત્તિઓ નોંધો. અંતિમ આકાર નક્કી કરતાં પહેલાં કયું વાસ્તવિક મૂલ્યાંકન શક્ય છે તે પૂછો. નરમ દેખાતા વળાંક પરથી આરામ કે મજબૂત દેખાતા આધાર પરથી તાકાત માની ન લો. બનાવેલી ડિઝાઇન છબી આ બેમાંથી કંઈ સાબિત કરતી નથી. ઘણા લોકો નિયમિત રીતે બેઠક વાપરવાના હોય તો બિનજરૂરી વ્યક્તિગત માહિતી આપ્યા વિના તેમની વ્યવહારિક જરૂરિયાતો વર્ણનમાં ઉમેરો. હેતુ ચોક્કસ વાતચીત કરવાનો છે, સૌ માટે એકસરખો શરીરને અનુકૂળ ઉકેલ સૂચવવાનો નથી."}
+      }
+    },
+    "DB014": {
+      "notes": "Reviewed all 12 fields. Correct a reversed reason for not removing building elements, difficult physical move and openings. Owner agreement and qualified assessment condition remain exactly conditional.",
+      "replace": {"hi": [["किसी कठिन कदम उठाने", "किसी वस्तु को कठिन रास्ते से ले जाने"], ["ऐसा करने से पहुंच में समस्या होगी", "ऐसा करने से वस्तु को अंदर पहुँचाने की समस्या हल हो जाएगी"], ["संदर्भ के साथ उद्घाटन रिकॉर्ड करें", "दरवाज़ों और रास्ते के खुले हिस्सों के माप संदर्भ सहित लिखें"]], "gu": [["મુશ્કેલ ચાલનો પ્રયાસ", "વસ્તુને મુશ્કેલ માર્ગેથી ખસેડવાનો પ્રયાસ"]]},
+      "override": {"hi": {"title": "बड़ी कृति को डिलीवरी के समय अंदर पहुँचाने की योजना"}, "gu": {"title": "મોટી કૃતિને ડિલિવરી વખતે અંદર પહોંચાડવાનું આયોજન"}}
+    },
+    "DB015": {
+      "notes": "Reviewed all 12 fields. Preserve no fabricated/installed/for-sale claim and exact revision/specification distinctions. Correct surface finish and material property terms.",
+      "replace": {"hi": [["प्रत्येक संपत्ति", "हर गुणधर्म"], ["यदि कोई अंत बदलता है", "यदि सतह की फ़िनिश बदलती है"]], "gu": [["પૂર્ણાહુતિ", "સપાટીની ફિનિશ"], ["દરેક મિલકત", "દરેક ગુણધર્મ"]]}
+    },
+    "DB016": {
+      "notes": "Reviewed all 14 fields. Correct wood-grain, finish-name and accessory job meanings. Preserve unknown ergonomic suitability, no implied drawers/cable features and real equipment requirements.",
+      "replace": {"hi": [["लकड़ी का कण", "लकड़ी के रेशों की रेखाएँ"], ["अंतिम नाम", "सतह की फ़िनिश का नाम"]], "gu": [["લાકડાના દાણા", "લાકડાના રેસાની રેખાઓ"], ["અંતિમ નામ", "સપાટીની ફિનિશનું નામ"], ["નોકરી", "કામ"]]}
+    },
+    "DB017": {
+      "notes": "Reviewed all 14 fields. Correct material finish, pale colour, visual views versus opinions and light-versus-mass meanings. Preserve no strength/stability/assembly certification and original design boundaries.",
+      "replace": {"hi": [["एक पीली सतह", "एक हल्के रंग की सतह"], ["यह अंतिम निर्णय को", "यह सतह की फ़िनिश के निर्णय को"], ["कौन से अन्य विचार", "कौन से अन्य कोणों से लिए गए दृश्य"], ["यदि वे प्रकाश कहते हैं", "यदि वे हल्का कहते हैं"]], "gu": [["પૂર્ણાહુતિ", "સપાટીની ફિનિશ"], ["અન્ય કયા મંતવ્યો", "અન્ય કયા ખૂણાના દૃશ્યો"], ["જો તેઓ પ્રકાશ કહે છે", "જો તેઓ હળવું કહે છે"], ["વાસ્તવિક સમૂહ", "વાસ્તવિક દ્રવ્યમાન"]]},
+      "override": {"gu": {"title": "સપાટીની ફિનિશ અને આકારોની નાની શબ્દાવલી"}}
+    },
+    "DB018": {
+      "notes": "Reviewed all 12 fields. Future-interior proposal remains distinct from completed installation; measured-versus-approximate dimensions retained. Clarified the final design-requirements heading.",
+      "override": {"hi": {"sections.3.heading": "कहानी को डिज़ाइन की ज़रूरतों के विवरण में बदलें"}, "gu": {"sections.3.heading": "વાર્તાને ડિઝાઇનની જરૂરિયાતોના વર્ણનમાં ફેરવો"}}
+    },
+    "DB019": {
+      "notes": "Reviewed all 10 fields. No material-treatment, drying, packing or shipping recipe added; irreplaceable originals remain with owner until actual assessment/current instructions. No concrete semantic correction required; native fluency review still open."
+    },
+    "DB020": {
+      "notes": "Reviewed all 12 fields. Correct keepsake versus gift, visual balance versus bank balance, blooms versus peacocks and fabricated versus counterfeit. Preserve no order/technical approval/outcome guarantee and originals transfer boundary.",
+      "replace": {"hi": [["गुलदस्ता उपहार", "गुलदस्ते के स्मृति-चिह्न"], ["उपहारों", "स्मृति-चिह्नों"], ["तैयार उपहार", "तैयार स्मृति-चिह्न"], ["शेष राशि", "दृश्य संतुलन"], ["सचित्र प्रारूप गढ़ा गया है", "चित्र में दिखाया गया रूप वास्तव में बनाया गया है"]], "gu": [["પસંદ કરેલા મોર", "પસંદ કરેલા ફૂલો"], ["સચિત્ર ફોર્મેટ બનાવટી કરવામાં આવ્યું છે", "છબીમાં દર્શાવેલો આકાર ખરેખર બનાવવામાં આવ્યો છે"], ["સમાપ્ત થયેલી ભેટ", "તૈયાર સ્મૃતિચિહ્ન"]]},
+      "override": {"hi": {"title": "गुलदस्ते के स्मृति-चिह्न का रूप चुनना", "sections.2.heading": "गोलाकार रूप से नज़र की गति तय करें"}, "gu": {"title": "ફૂલોના ગુચ્છના સ્મૃતિચિહ્નનો આકાર પસંદ કરવો"}}
+    },
+    "DB021": {
+      "notes": "Reviewed all 12 fields. Correct Gujarati reversal of unambiguous into ambiguous, and letter/accent terms. Preserve exact authoritative spelling, local calendar date without timezone conversion and reapproval after layout changes.",
+      "replace": {"hi": [["उच्चारणों और पात्रों", "मात्राओं, उच्चारण-चिह्नों और अक्षरों"]], "gu": [["અસ્પષ્ટ તારીખ", "સ્પષ્ટ તારીખ"], ["તારીખને અસ્પષ્ટ બનાવો", "તારીખને સ્પષ્ટ બનાવો"], ["ઉચ્ચારો અને પાત્રો", "માત્રાઓ, ઉચ્ચારણ-ચિહ્નો અને અક્ષરો"]]}
+    },
+    "DB022": {
+      "notes": "Reviewed all 10 fields. Correct keepsake and image crop meanings, retaining permission for reproductions, original paper assessment and personal-address privacy.",
+      "replace": {"hi": [["शादी-निमंत्रण उपहार", "शादी के निमंत्रण का स्मृति-चिह्न"], ["कौन से विचार गहराई", "कौन से कोणों से लिए गए दृश्य गहराई"], ["एक फसल निमंत्रण के उस हिस्से को रखते हुए एक पते को हटा सकती है जिसमें स्मृति होती है।", "तस्वीर की सीमा काटकर पता हटाया जा सकता है और निमंत्रण का यादों से जुड़ा हिस्सा रखा जा सकता है।"]], "gu": [["પાક સરનામું દૂર કરી શકે છે", "છબીનો જરૂરી ભાગ રાખીને તેની કિનારીઓ કાપવાથી સરનામું દૂર કરી શકાય છે"], ["આમંત્રણની ભેટ", "આમંત્રણનું સ્મૃતિચિહ્ન"]]}
+    }
+  }
+}
+

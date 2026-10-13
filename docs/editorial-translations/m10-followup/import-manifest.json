@@ -1,0 +1,682 @@
+[
+  {
+    "file": "draft-imports/DB002.hi.json",
+    "documentId": "DB002",
+    "locale": "hi",
+    "fieldCount": 20,
+    "sha256": "ac65d749c8b7a89d694074300e5763916ad9c5f6a14f359e358696244935e338",
+    "sourceHash": "e8b7ac82d3fb04cfe1987f5f6f8b8d87c62755ffac6b53f0601e0ca9cfe645af",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB002.gu.json",
+    "documentId": "DB002",
+    "locale": "gu",
+    "fieldCount": 20,
+    "sha256": "e2726c7a7f9f639c2225137a92f86a4b8f7f6c14f9e3f00f6221b3f05691f3bd",
+    "sourceHash": "e8b7ac82d3fb04cfe1987f5f6f8b8d87c62755ffac6b53f0601e0ca9cfe645af",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB003.hi.json",
+    "documentId": "DB003",
+    "locale": "hi",
+    "fieldCount": 20,
+    "sha256": "2eeafe4ef431774111f34b442c7e0e241eeeb5bfc0b7b9b9ee6037ec1092a99f",
+    "sourceHash": "0d07838b9fd191410177528d4de547f40037abd5d06a47fc8264834fd40c82e8",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB003.gu.json",
+    "documentId": "DB003",
+    "locale": "gu",
+    "fieldCount": 20,
+    "sha256": "3da588ebad5fd21c3285708db5fab84021b636b462a36a6dc76b7a1314c790de",
+    "sourceHash": "0d07838b9fd191410177528d4de547f40037abd5d06a47fc8264834fd40c82e8",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB004.hi.json",
+    "documentId": "DB004",
+    "locale": "hi",
+    "fieldCount": 20,
+    "sha256": "3ef6cefc075c0855b83ebec0f702e0de2ae6fa7969bbdaa2fbbfb32c11794f40",
+    "sourceHash": "a5837d6224c83f6df3003841da67c32c860feb1767adeead555ea1d7a107c621",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB004.gu.json",
+    "documentId": "DB004",
+    "locale": "gu",
+    "fieldCount": 20,
+    "sha256": "2f5c811597673cc6591c73226dac5e91ad5a8b673f6ffef7479f6f54a6e810ca",
+    "sourceHash": "a5837d6224c83f6df3003841da67c32c860feb1767adeead555ea1d7a107c621",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB005.hi.json",
+    "documentId": "DB005",
+    "locale": "hi",
+    "fieldCount": 19,
+    "sha256": "45d4268df46b6b89578c6b19678e04b85010fa277250b4fde2566c831539d2ca",
+    "sourceHash": "b3eb8f82e0351e3ef5860dd795e3356c26b985e055e1e1f25de033b30f09221d",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB005.gu.json",
+    "documentId": "DB005",
+    "locale": "gu",
+    "fieldCount": 19,
+    "sha256": "4cd1ca29b3da0f06c30fc6c743f314a1131937ac8be15ce1279cea613233cc51",
+    "sourceHash": "b3eb8f82e0351e3ef5860dd795e3356c26b985e055e1e1f25de033b30f09221d",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB006.hi.json",
+    "documentId": "DB006",
+    "locale": "hi",
+    "fieldCount": 19,
+    "sha256": "3ff3ef5ca279ca8b9b74e9636782bdd1f329daeec4b9e92918cf117a0489a725",
+    "sourceHash": "8f07720293fa7927d0d61dc07c43206d1d10139781adef0e7be17fd9c9169e3e",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB006.gu.json",
+    "documentId": "DB006",
+    "locale": "gu",
+    "fieldCount": 19,
+    "sha256": "2bc358297816c68032d4903405638ccf16810bec109daaee410162cea7787db0",
+    "sourceHash": "8f07720293fa7927d0d61dc07c43206d1d10139781adef0e7be17fd9c9169e3e",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB007.hi.json",
+    "documentId": "DB007",
+    "locale": "hi",
+    "fieldCount": 20,
+    "sha256": "11319faa864ad134c874b94b41cac955664507043f4d8c8756e600405bbf75a1",
+    "sourceHash": "2955e8a3a6683c19087ff4c4b6e786987d1e2a5e12679a503ca088490eca4675",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB007.gu.json",
+    "documentId": "DB007",
+    "locale": "gu",
+    "fieldCount": 20,
+    "sha256": "6663c44fd1f95b370c5003691576540ec50149434defb087b3e675c5316cd67c",
+    "sourceHash": "2955e8a3a6683c19087ff4c4b6e786987d1e2a5e12679a503ca088490eca4675",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB008.hi.json",
+    "documentId": "DB008",
+    "locale": "hi",
+    "fieldCount": 18,
+    "sha256": "c7efbfe1724a615a5e2bc0ce87c5c052542543a4628a4ef2506e698ad9556d3a",
+    "sourceHash": "e4f555a2e908b1ed9bfb442da1f179cb9f7313a17d478e8c108f4cb538b912e0",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB008.gu.json",
+    "documentId": "DB008",
+    "locale": "gu",
+    "fieldCount": 18,
+    "sha256": "af1837cbd4316e7613effe7036b93150f80f2b84084bd0dc3a17504af6d06cdd",
+    "sourceHash": "e4f555a2e908b1ed9bfb442da1f179cb9f7313a17d478e8c108f4cb538b912e0",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB009.hi.json",
+    "documentId": "DB009",
+    "locale": "hi",
+    "fieldCount": 17,
+    "sha256": "bf0c670129049c791cdf22d069e8cce7b26c6780f883515dcf42ee14d73a05dc",
+    "sourceHash": "81987be255767c344d746629bdee059104ca1e500eb0c47db2b794c52e55bed0",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB009.gu.json",
+    "documentId": "DB009",
+    "locale": "gu",
+    "fieldCount": 17,
+    "sha256": "993fc3ab23af6cd6aca8b0afc8c39386973660a5a709e60197ad02aae87e0fb4",
+    "sourceHash": "81987be255767c344d746629bdee059104ca1e500eb0c47db2b794c52e55bed0",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB011.hi.json",
+    "documentId": "DB011",
+    "locale": "hi",
+    "fieldCount": 20,
+    "sha256": "7dd0acd41003dc9f932ef10b8dbcea70c56cb4506bf34d30017529c3341fdc0a",
+    "sourceHash": "8683304c3cad364df7edadc7a1db68ee0521db472c8b8f5e9161630152534c13",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB011.gu.json",
+    "documentId": "DB011",
+    "locale": "gu",
+    "fieldCount": 20,
+    "sha256": "478399b5b63083c3ad302a7a62a3c40e1673a9773fc573cd587983e0133af2ac",
+    "sourceHash": "8683304c3cad364df7edadc7a1db68ee0521db472c8b8f5e9161630152534c13",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB012.hi.json",
+    "documentId": "DB012",
+    "locale": "hi",
+    "fieldCount": 19,
+    "sha256": "071b2e0e7a705df5a375ef08893ffb690b66ac178f1fd37caef348fcd0c97073",
+    "sourceHash": "876f2b7465555d028ac041cab9488fb48db27f78e9e65d986a8bca00582154bf",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB012.gu.json",
+    "documentId": "DB012",
+    "locale": "gu",
+    "fieldCount": 19,
+    "sha256": "b7a11108a2f24c2ffbb1a8ae929dc7970f38269f996cad0a62d5ac25792ad23c",
+    "sourceHash": "876f2b7465555d028ac041cab9488fb48db27f78e9e65d986a8bca00582154bf",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB013.hi.json",
+    "documentId": "DB013",
+    "locale": "hi",
+    "fieldCount": 12,
+    "sha256": "80adf5f82cd7924b0da686691876a4fc55b47ac29af6790188d100e0bd7f0d1b",
+    "sourceHash": "b06ce0a4b737b987fa1eacda1125a953bad1d505f47a6816f27c37fde8260955",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB013.gu.json",
+    "documentId": "DB013",
+    "locale": "gu",
+    "fieldCount": 12,
+    "sha256": "6e81c9b21a6bc5d6e1152bff6355cdd900f2318d11dfcd048fe0dad0f17c9751",
+    "sourceHash": "b06ce0a4b737b987fa1eacda1125a953bad1d505f47a6816f27c37fde8260955",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB014.hi.json",
+    "documentId": "DB014",
+    "locale": "hi",
+    "fieldCount": 12,
+    "sha256": "bd1efdabc8d3a6934fca6360280eeca6210b7191c287ad696e61d8985831cfb1",
+    "sourceHash": "8e6f834018d0ada8230d5612e71a23840839e0faa1dbca6fab0e5558b59b5cd0",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB014.gu.json",
+    "documentId": "DB014",
+    "locale": "gu",
+    "fieldCount": 12,
+    "sha256": "52ac40e49a03793a41e17f9b20da7987f439e9d4abaed4a6d67086ecb4dc66be",
+    "sourceHash": "8e6f834018d0ada8230d5612e71a23840839e0faa1dbca6fab0e5558b59b5cd0",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB015.hi.json",
+    "documentId": "DB015",
+    "locale": "hi",
+    "fieldCount": 12,
+    "sha256": "7c6debe019004fb8599d229acf23bc85e0fac6f5062c1ce5adf4baaa5c228dba",
+    "sourceHash": "aa4a21f6322e64c023caa319ea6252e2273f65aebacdcfb3adac61e7d8539dd7",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB015.gu.json",
+    "documentId": "DB015",
+    "locale": "gu",
+    "fieldCount": 12,
+    "sha256": "1dda2989a650d10c27221d150b7d93c19cc04d2f7a059f33b9f49c7a6623af1a",
+    "sourceHash": "aa4a21f6322e64c023caa319ea6252e2273f65aebacdcfb3adac61e7d8539dd7",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB016.hi.json",
+    "documentId": "DB016",
+    "locale": "hi",
+    "fieldCount": 14,
+    "sha256": "003d63855d75a38d9ddec765f9fa3622a8d29a7f493a905bcdcf2db70e109c0a",
+    "sourceHash": "1d2b31f5dbd8897d5724095631d0f65283d592bb0b01ba6dd746c6e3ceafeb85",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB016.gu.json",
+    "documentId": "DB016",
+    "locale": "gu",
+    "fieldCount": 14,
+    "sha256": "710966705afb8f53c9972433b8ddcfeea8bb758f70c6944e727289e063fa8837",
+    "sourceHash": "1d2b31f5dbd8897d5724095631d0f65283d592bb0b01ba6dd746c6e3ceafeb85",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB017.hi.json",
+    "documentId": "DB017",
+    "locale": "hi",
+    "fieldCount": 14,
+    "sha256": "534a5fa3a1be88e5c7e291fbae5e09df814e56776cf3966586b89591fcf93a66",
+    "sourceHash": "9620ee8b837ceddbea6b47124c58bc1d1b70e9286322a75a13d66d8b0acd4a65",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB017.gu.json",
+    "documentId": "DB017",
+    "locale": "gu",
+    "fieldCount": 14,
+    "sha256": "147ce7a10d1dcb242ce0bb83d658e2182a42efb16461dccc5f3d9f58c88173ff",
+    "sourceHash": "9620ee8b837ceddbea6b47124c58bc1d1b70e9286322a75a13d66d8b0acd4a65",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB018.hi.json",
+    "documentId": "DB018",
+    "locale": "hi",
+    "fieldCount": 12,
+    "sha256": "82423c30843e628e1ea34925087201a1d3110fa552aa83f3d5390f0b61a356c1",
+    "sourceHash": "c7f7af4385d3a1d913c11737a60986d7ab5947ad0a1344e8c30b65f93d65f85f",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB018.gu.json",
+    "documentId": "DB018",
+    "locale": "gu",
+    "fieldCount": 12,
+    "sha256": "fdcc4a5de3aa80a8b2dd8a0910ed0abf5d97f39b149adb93a29bdd3a738b6d23",
+    "sourceHash": "c7f7af4385d3a1d913c11737a60986d7ab5947ad0a1344e8c30b65f93d65f85f",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB019.hi.json",
+    "documentId": "DB019",
+    "locale": "hi",
+    "fieldCount": 10,
+    "sha256": "0d3c4ce7cb7e0ecc51fdae3d3d1a06e742d0b03d95f64efb3956767a1b287bfb",
+    "sourceHash": "814748821e238a04a81883afde0608c724600a626e025de14b1e9c573f0df9c3",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB019.gu.json",
+    "documentId": "DB019",
+    "locale": "gu",
+    "fieldCount": 10,
+    "sha256": "7a6522548545e3dc5687a2db0becb2dffe387121a5d1c0bbb01b8ab92541f7be",
+    "sourceHash": "814748821e238a04a81883afde0608c724600a626e025de14b1e9c573f0df9c3",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB020.hi.json",
+    "documentId": "DB020",
+    "locale": "hi",
+    "fieldCount": 12,
+    "sha256": "650a32b066c9f1e0b37778b422353487ba8b5c7516825748360d7fac7518f369",
+    "sourceHash": "6bed95bb8703d8726945ef7a35725daa5aefe1d20c54c9dda9c03fe8d993a939",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB020.gu.json",
+    "documentId": "DB020",
+    "locale": "gu",
+    "fieldCount": 12,
+    "sha256": "99f646fa04d12299fbdda31b042dea9ca82de1a14dd6ece1d42bc10fa3e2a175",
+    "sourceHash": "6bed95bb8703d8726945ef7a35725daa5aefe1d20c54c9dda9c03fe8d993a939",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB021.hi.json",
+    "documentId": "DB021",
+    "locale": "hi",
+    "fieldCount": 12,
+    "sha256": "9449a805f99fd7ccebe21f13161417149bba3096d4df6020acc483096f2ababc",
+    "sourceHash": "798e08c1b1ef30e2c61c3f44ac4f99fd033f3cec92edc6db9c9d0cc5a94661e1",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB021.gu.json",
+    "documentId": "DB021",
+    "locale": "gu",
+    "fieldCount": 12,
+    "sha256": "a9ed2061971b600113038e754709b05607d337f3caf58f1b62b173a4ff1be074",
+    "sourceHash": "798e08c1b1ef30e2c61c3f44ac4f99fd033f3cec92edc6db9c9d0cc5a94661e1",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB022.hi.json",
+    "documentId": "DB022",
+    "locale": "hi",
+    "fieldCount": 10,
+    "sha256": "bec74f1829d0de12a6201bcb22e2f18a31c7402305bc162b10b802c3404df761",
+    "sourceHash": "ec3e56f7a87345466ba3e6d648cf12b28c7c4a9c4fdeea516fa80d842a5846f9",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB022.gu.json",
+    "documentId": "DB022",
+    "locale": "gu",
+    "fieldCount": 10,
+    "sha256": "4769fe6cbc989a548986a28c368221ff8ca78ea4e504f82ace082cf110e2024e",
+    "sourceHash": "ec3e56f7a87345466ba3e6d648cf12b28c7c4a9c4fdeea516fa80d842a5846f9",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB023.hi.json",
+    "documentId": "DB023",
+    "locale": "hi",
+    "fieldCount": 10,
+    "sha256": "95dc08a83483a842253e3bd93d6f511e4911a46e04c8791a9d6606188d081866",
+    "sourceHash": "49132a9732b3fea7586945aa22bd6801ee376254add57a2d1cd36f93f44e34b5",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB023.gu.json",
+    "documentId": "DB023",
+    "locale": "gu",
+    "fieldCount": 10,
+    "sha256": "e749b3b6082c132f1216c0b991d118cc23417bc181f57f8a6a8866cddd668364",
+    "sourceHash": "49132a9732b3fea7586945aa22bd6801ee376254add57a2d1cd36f93f44e34b5",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB024.hi.json",
+    "documentId": "DB024",
+    "locale": "hi",
+    "fieldCount": 10,
+    "sha256": "beb961c934c953c3a290ce614a26b3cea172bd1a224fd06b9dc452bbe7e65298",
+    "sourceHash": "8a9b162658385318f21be1cbe2e756c2799e1ba95552e2a7f10863f2f258ed85",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB024.gu.json",
+    "documentId": "DB024",
+    "locale": "gu",
+    "fieldCount": 10,
+    "sha256": "860f1ac0ce4eeca95e4f05aa7e7d4b21079c0c3eb042246508a04d3c6ce9d45d",
+    "sourceHash": "8a9b162658385318f21be1cbe2e756c2799e1ba95552e2a7f10863f2f258ed85",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB025.hi.json",
+    "documentId": "DB025",
+    "locale": "hi",
+    "fieldCount": 10,
+    "sha256": "de3dcd19c0d76f8fdbbdb7ab98efc62ff82dcae68211ba564e920efe304f23c6",
+    "sourceHash": "c7656fe6ceedf11c2a797036cc665401e4398b1eeb926f9276725219acf4e0bb",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB025.gu.json",
+    "documentId": "DB025",
+    "locale": "gu",
+    "fieldCount": 10,
+    "sha256": "3924feb3155d4f6e20ede8ec712cccd3363c49561b39beffdbac896982cab722",
+    "sourceHash": "c7656fe6ceedf11c2a797036cc665401e4398b1eeb926f9276725219acf4e0bb",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB026.hi.json",
+    "documentId": "DB026",
+    "locale": "hi",
+    "fieldCount": 10,
+    "sha256": "117cb2787205300348fb69a614dcc75464a11da086829f92839c26882562b180",
+    "sourceHash": "160770882220a6a09639d446a1aec886439d252830e79dba777fce6f665b9e92",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB026.gu.json",
+    "documentId": "DB026",
+    "locale": "gu",
+    "fieldCount": 10,
+    "sha256": "42d099c78edb8b1d06f62f39b427da0ecf80bf96b32e5f6ce115e89cae2a47ca",
+    "sourceHash": "160770882220a6a09639d446a1aec886439d252830e79dba777fce6f665b9e92",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB027.hi.json",
+    "documentId": "DB027",
+    "locale": "hi",
+    "fieldCount": 10,
+    "sha256": "908e4821f3d3642ebb72cdcffc27347dc8676508d70dda763a38e07fc0eba370",
+    "sourceHash": "fa6b2982742785493faf5354b64cdff9f3235fc8e1b046f79e00d65bd7cfbf85",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB027.gu.json",
+    "documentId": "DB027",
+    "locale": "gu",
+    "fieldCount": 10,
+    "sha256": "ca314e1325322699c5845f6bc353b4c478f48457050af652d1e54e2ef94dda85",
+    "sourceHash": "fa6b2982742785493faf5354b64cdff9f3235fc8e1b046f79e00d65bd7cfbf85",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB028.hi.json",
+    "documentId": "DB028",
+    "locale": "hi",
+    "fieldCount": 10,
+    "sha256": "8d6cfa413bda2fbc9c058d8c3e1f36fb7e2a06b637fecc8808eec34fe01403f5",
+    "sourceHash": "7f2ec524888dad7cecf67f70add974a9a656442a97006f9a782aa9f783a46a5b",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB028.gu.json",
+    "documentId": "DB028",
+    "locale": "gu",
+    "fieldCount": 10,
+    "sha256": "50c0d14f556c645078664ffba1ce7f7eac552436c43cd30c7fb93a31dcc8a6ef",
+    "sourceHash": "7f2ec524888dad7cecf67f70add974a9a656442a97006f9a782aa9f783a46a5b",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB029.hi.json",
+    "documentId": "DB029",
+    "locale": "hi",
+    "fieldCount": 12,
+    "sha256": "92dcac0dd5b45d1d6dfe0a6d90b1d42eb8cb2e28d6f06298c7d00c4a6a3751f6",
+    "sourceHash": "4e3696c25615db2a204a2de0e0be574587441af9705e9aa105776cf8cda22bde",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB029.gu.json",
+    "documentId": "DB029",
+    "locale": "gu",
+    "fieldCount": 12,
+    "sha256": "6b2ca1f60c60ee3df5299367b19cce436fc291ba827c7765ffe68b52b9c6b480",
+    "sourceHash": "4e3696c25615db2a204a2de0e0be574587441af9705e9aa105776cf8cda22bde",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB030.hi.json",
+    "documentId": "DB030",
+    "locale": "hi",
+    "fieldCount": 10,
+    "sha256": "ec2d0cb7fc0ca95bb77df34caf4f67997b3d62e07617cb9a4272d0be3b40a5bb",
+    "sourceHash": "5dd079358290bf38ff435c81c3c966f58489cb4abf71222e867a379f3d9b43e6",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB030.gu.json",
+    "documentId": "DB030",
+    "locale": "gu",
+    "fieldCount": 10,
+    "sha256": "a6228ad72a916d55cb2451998aa23a478220c459b43711d8ae397c7d3a5624fa",
+    "sourceHash": "5dd079358290bf38ff435c81c3c966f58489cb4abf71222e867a379f3d9b43e6",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB031.hi.json",
+    "documentId": "DB031",
+    "locale": "hi",
+    "fieldCount": 10,
+    "sha256": "d58864f633ce8691050368c54da7790a275b926bf6e1267e46b88aaa122ff694",
+    "sourceHash": "461a62d047485ea703ec2f301bb291161f98b748be57a985b6a922c1d93240fb",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB031.gu.json",
+    "documentId": "DB031",
+    "locale": "gu",
+    "fieldCount": 10,
+    "sha256": "60b0aabd270feef17c2f3268eb48bdb17b180db3d495e3dbeafd2620709f12c1",
+    "sourceHash": "461a62d047485ea703ec2f301bb291161f98b748be57a985b6a922c1d93240fb",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB032.hi.json",
+    "documentId": "DB032",
+    "locale": "hi",
+    "fieldCount": 12,
+    "sha256": "d559930e06c8a503baa02be9719cfde15f3eb42941bc6399d9bc51ae8845c750",
+    "sourceHash": "ee5cabb8900b2f63959ac7c2ddf5a2cde36135ac0610f51eb75d0999636b79ed",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB032.gu.json",
+    "documentId": "DB032",
+    "locale": "gu",
+    "fieldCount": 12,
+    "sha256": "ad66bf4e1e17160a7c4a5f79193d84ab64b9bac6ae789d6180b75efcb8bc39b9",
+    "sourceHash": "ee5cabb8900b2f63959ac7c2ddf5a2cde36135ac0610f51eb75d0999636b79ed",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB033.hi.json",
+    "documentId": "DB033",
+    "locale": "hi",
+    "fieldCount": 12,
+    "sha256": "dff63e230bcfbabfcbd15cb6cc73a42b7577a6e6ba9288fe6cedf15ede455bd4",
+    "sourceHash": "cbab22005ae43f7b6eed12e6cf571fbc6837409c4d04d915b7298596a28916e5",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB033.gu.json",
+    "documentId": "DB033",
+    "locale": "gu",
+    "fieldCount": 12,
+    "sha256": "d40df118b757ccf3e0ef93995e47ea7f88f7f8cbfe397cdefb0a4962d78e3bb7",
+    "sourceHash": "cbab22005ae43f7b6eed12e6cf571fbc6837409c4d04d915b7298596a28916e5",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB034.hi.json",
+    "documentId": "DB034",
+    "locale": "hi",
+    "fieldCount": 10,
+    "sha256": "e31ccb311db7cebd914b8759885b4ae524233bfac4f03d10e6898cea3aa19216",
+    "sourceHash": "7c8edac8d6c3d1ba184bb83cbd49950cb9198dfcee7239f04f3ea8c6b87a150b",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB034.gu.json",
+    "documentId": "DB034",
+    "locale": "gu",
+    "fieldCount": 10,
+    "sha256": "52cbef28a083211a4382a410ae19116b2d6d9e1b7b84887228ced64b778c810f",
+    "sourceHash": "7c8edac8d6c3d1ba184bb83cbd49950cb9198dfcee7239f04f3ea8c6b87a150b",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB035.hi.json",
+    "documentId": "DB035",
+    "locale": "hi",
+    "fieldCount": 12,
+    "sha256": "44b10b164abbf34ee430bd5124efce9ec19e40f2a74611911d57027877623802",
+    "sourceHash": "0520cf7deef10928cf2b5e71bdb995d65fd1d866e660d7dfe07ce14663264ff9",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB035.gu.json",
+    "documentId": "DB035",
+    "locale": "gu",
+    "fieldCount": 12,
+    "sha256": "1222732c06c0194602402db00df55c7d67e12cdf0f7fc2a0966c088e0921ee66",
+    "sourceHash": "0520cf7deef10928cf2b5e71bdb995d65fd1d866e660d7dfe07ce14663264ff9",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB036.hi.json",
+    "documentId": "DB036",
+    "locale": "hi",
+    "fieldCount": 12,
+    "sha256": "5e4775e896da3149d6fd314ece6b9741e935f6f5db303d843f52740e3eac532b",
+    "sourceHash": "7cb8bb0745b1051dbf9d18515351a5ca43d16d28285160f37d189ec68310a6c6",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  },
+  {
+    "file": "draft-imports/DB036.gu.json",
+    "documentId": "DB036",
+    "locale": "gu",
+    "fieldCount": 12,
+    "sha256": "9e904471b51762f1b8b0f066aed37a42376745ba60991aa28e57645d177d7782",
+    "sourceHash": "7cb8bb0745b1051dbf9d18515351a5ca43d16d28285160f37d189ec68310a6c6",
+    "reviewed": false,
+    "publication": "NOT IMPORTED OR PUBLISHED"
+  }
+]

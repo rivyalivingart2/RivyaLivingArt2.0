@@ -1,3 +1,15 @@
+# Current checkpoint — M10 completion candidate verified for PR52
+
+13 October 2026: continue the authorized detailed-PR/main release in [PR52](https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/52), branch `codex/m10-completion-evidence`. Application commit `e6ea81243747197c62c668245f33020128767ec8`; committed application fingerprint `d8e448811577734ca5737f3e96f83bdf5608d88b1309007047864b40cf67acc0`; Windows bytes `fa94b1c1c6c8109d5e11521b8b4248faae9b313c6db8ca2b8c697dda31cb69cc`. The 539 byte differences are only CRLF conversion. Read `M10-COMPLETION-PASS.md`, `M10-SUPPLEMENTAL-PUBLIC-REVIEW.md`, `M10-CONDITIONAL-EDITOR-CHECKS.md` and `M10-EXTERNAL-ACCEPTANCE-HANDOFF.md` in the migration directory.
+
+Verified repairs: lighter font/image/poster scheduling; printed care answers, caption backing and film still; print skip-link overlap; saved-card focus; mobile nested crop controls; related-product label spacing; clearer Studio intake/current-state wording. Final build/type and 403 runtime checks pass; preceding 344 unit and 12 preflight passes cover unchanged logic. All16 landing editors have inspected default panels at1440/390/320; supplementary public evidence accepts42 sets/382 scroll tiles. Full visual acceptance across every plan width and alternate state is still partial.
+
+Every original local and production row ID/digest is unchanged in13 scopes. QA added only one unpublished synthetic article and two revisions for a real conflict test. No production data was written, no protected translation imported/reviewed/published, and no480-entry or homepage revision4 publication was replayed. All36 historical articles have assistant language review and72 unreviewed import candidates; independent Hindi/Gujarati acceptance remains open.
+
+Next: push final evidence, mark detailed PR ready, merge the pinned checked head, verify exact READY deployment and hosted cold samples. Human/native zoom/reader/phone, missing source-specific rights/facts, field performance and a genuine inquiry remain explicit evidence gates. Keep scrapers/old-product transfers/backups excluded. QA services are running; stop gracefully at final handoff, retaining the database.
+
+---
+
 # Current checkpoint — PR50 released; remaining acceptance evidence explicit
 
 12 October 2026: PR50 merged at `620aa806fa8d7bbf820b41796cee9ddf90ca0591`; READY production `dpl_5gNeX33TEQwyiJSyS1toGiavZTSS` and the live domain match. Committed-source fingerprint `fe08e9f6aed1a2c6162532d2f7a612b2b39fa5c4877bb29cd0d701e897594300`; the earlier Windows working-tree fingerprint `1ef8bfa429bd27a3964b55e359cc4d1691e86d9eb6a60a3b11339a267f5dc24b` differs only through CRLF checkout conversion, as reconciled in the release receipt. Read `M10-PENDING-RELEASE.md`, `m10-pending-release-evidence.json`, `M10-PENDING-COMPLETION.md` and `m10-pending-evidence.json` first. The local loading, contrast and Studio pagination/typography/card fixes are now released. Earlier prepared/local-only follow-up notes below are historical.

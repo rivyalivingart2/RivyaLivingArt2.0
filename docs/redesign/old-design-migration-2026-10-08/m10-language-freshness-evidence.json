@@ -1,0 +1,1813 @@
+{
+  "at": "2026-10-12T14:48:20.424Z",
+  "mode": "production-read-only",
+  "transaction": {
+    "readOnly": true,
+    "isolationLevel": "RepeatableRead",
+    "endpointAndRolePinned": true,
+    "serverReadOnlyVerified": true
+  },
+  "scope": {
+    "articles": 34,
+    "targetPackets": 68,
+    "sourceFields": 462,
+    "targetValues": 924
+  },
+  "rawProtectedDocumentsExported": false,
+  "rawSourceOrTargetTextExported": false,
+  "credentialsExported": false,
+  "writes": 0,
+  "imports": 0,
+  "approvals": 0,
+  "publications": 0,
+  "historicalSourceSnapshotSha256": "0a5f935fde9634e9aa4d5b840108ab3a0f8f7ac262b8f8302f7af9b7b03ecd08",
+  "candidatePacketSha256": "ee0e4ee3e98adda29fae18ee48483da8667459774bcc1ff92628c7107e22b70d",
+  "summary": {
+    "draftSourceMatches": 34,
+    "publishedSourceMatches": 34,
+    "targetBeforeMatches": 0,
+    "draftSourceDriftIds": [],
+    "publishedSourceDriftIds": [],
+    "targetBeforeMismatchIds": [
+      "DB002",
+      "DB003",
+      "DB004",
+      "DB005",
+      "DB006",
+      "DB007",
+      "DB008",
+      "DB009",
+      "DB011",
+      "DB012",
+      "DB013",
+      "DB014",
+      "DB015",
+      "DB016",
+      "DB017",
+      "DB018",
+      "DB019",
+      "DB020",
+      "DB021",
+      "DB022",
+      "DB023",
+      "DB024",
+      "DB025",
+      "DB026",
+      "DB027",
+      "DB028",
+      "DB029",
+      "DB030",
+      "DB031",
+      "DB032",
+      "DB033",
+      "DB034",
+      "DB035",
+      "DB036"
+    ],
+    "currentTargetValues": 0,
+    "missingExpectedTargetValues": 924,
+    "changedExistingTargetValues": 0,
+    "targetConclusion": "All 68 current target maps are empty; differences are missing values, not evidence of newer edited translations."
+  },
+  "records": [
+    {
+      "id": "DB002",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "e8b7ac82d3fb04cfe1987f5f6f8b8d87c62755ffac6b53f0601e0ca9cfe645af",
+      "draft": {
+        "sourceHash": "e8b7ac82d3fb04cfe1987f5f6f8b8d87c62755ffac6b53f0601e0ca9cfe645af",
+        "expectedFieldCount": 20,
+        "currentFieldCount": 20,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "e8b7ac82d3fb04cfe1987f5f6f8b8d87c62755ffac6b53f0601e0ca9cfe645af",
+        "expectedFieldCount": 20,
+        "currentFieldCount": 20,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "342dc32249d1cb677ccd80af6b27243224c6a986328a1ab6f5c5953402ed4e6b",
+          "currentBeforeHash": "bcfa36bf4aa62e490fed22bda4866eab0762b9ed137a8cc57e8828f3704411d9",
+          "expectedValues": 20,
+          "currentValues": 0,
+          "changedExpectedValues": 20,
+          "missingExpectedValues": 20,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "deb595598a29be257f002d836572d16f385c724a71ac0c9243392aee3822fce2",
+          "currentBeforeHash": "bcfa36bf4aa62e490fed22bda4866eab0762b9ed137a8cc57e8828f3704411d9",
+          "expectedValues": 20,
+          "currentValues": 0,
+          "changedExpectedValues": 20,
+          "missingExpectedValues": 20,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB003",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "0d07838b9fd191410177528d4de547f40037abd5d06a47fc8264834fd40c82e8",
+      "draft": {
+        "sourceHash": "0d07838b9fd191410177528d4de547f40037abd5d06a47fc8264834fd40c82e8",
+        "expectedFieldCount": 20,
+        "currentFieldCount": 20,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "0d07838b9fd191410177528d4de547f40037abd5d06a47fc8264834fd40c82e8",
+        "expectedFieldCount": 20,
+        "currentFieldCount": 20,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "fc7a25224e3c38c4117bca538599b34bf806d75cbed21b5367906ad9c904738e",
+          "currentBeforeHash": "f3b7449ee83f49ba1ebbdedd2b2a0213551299ef6b830111bcf42d13ee92374b",
+          "expectedValues": 20,
+          "currentValues": 0,
+          "changedExpectedValues": 20,
+          "missingExpectedValues": 20,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "e21e0c7376e63599a2c76fcd6ba9990934272bce4563faa0fb4af3613884faae",
+          "currentBeforeHash": "f3b7449ee83f49ba1ebbdedd2b2a0213551299ef6b830111bcf42d13ee92374b",
+          "expectedValues": 20,
+          "currentValues": 0,
+          "changedExpectedValues": 20,
+          "missingExpectedValues": 20,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB004",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "a5837d6224c83f6df3003841da67c32c860feb1767adeead555ea1d7a107c621",
+      "draft": {
+        "sourceHash": "a5837d6224c83f6df3003841da67c32c860feb1767adeead555ea1d7a107c621",
+        "expectedFieldCount": 20,
+        "currentFieldCount": 20,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "a5837d6224c83f6df3003841da67c32c860feb1767adeead555ea1d7a107c621",
+        "expectedFieldCount": 20,
+        "currentFieldCount": 20,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "c43ed13aa8ccb63f419cbfd7cc5eb49a8c39523dec126f5ed245bff5a8c1e7ae",
+          "currentBeforeHash": "70649a44a243c0a4a9d19548732638ee80689475de802f280435a8cf11574aed",
+          "expectedValues": 20,
+          "currentValues": 0,
+          "changedExpectedValues": 20,
+          "missingExpectedValues": 20,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "fd46cde44036c548bf91f9c57136e5fd3b66b004edce7f01a3e285fedb3d134f",
+          "currentBeforeHash": "70649a44a243c0a4a9d19548732638ee80689475de802f280435a8cf11574aed",
+          "expectedValues": 20,
+          "currentValues": 0,
+          "changedExpectedValues": 20,
+          "missingExpectedValues": 20,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB005",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "b3eb8f82e0351e3ef5860dd795e3356c26b985e055e1e1f25de033b30f09221d",
+      "draft": {
+        "sourceHash": "b3eb8f82e0351e3ef5860dd795e3356c26b985e055e1e1f25de033b30f09221d",
+        "expectedFieldCount": 19,
+        "currentFieldCount": 19,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "b3eb8f82e0351e3ef5860dd795e3356c26b985e055e1e1f25de033b30f09221d",
+        "expectedFieldCount": 19,
+        "currentFieldCount": 19,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "83dd6b3b7f9aed3293bdd66d539163c04f2a3fc72e1a87f3fc8ff6b5b0302723",
+          "currentBeforeHash": "65cc278658085c7c493ed635e92dbe4fe9a74d7be91d0af7e6d1bd178e392821",
+          "expectedValues": 19,
+          "currentValues": 0,
+          "changedExpectedValues": 19,
+          "missingExpectedValues": 19,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "52b84829c4240d6defa6f99b7fc46b335c8558e8c96e2a20a692865a478a4d4e",
+          "currentBeforeHash": "65cc278658085c7c493ed635e92dbe4fe9a74d7be91d0af7e6d1bd178e392821",
+          "expectedValues": 19,
+          "currentValues": 0,
+          "changedExpectedValues": 19,
+          "missingExpectedValues": 19,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB006",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "8f07720293fa7927d0d61dc07c43206d1d10139781adef0e7be17fd9c9169e3e",
+      "draft": {
+        "sourceHash": "8f07720293fa7927d0d61dc07c43206d1d10139781adef0e7be17fd9c9169e3e",
+        "expectedFieldCount": 19,
+        "currentFieldCount": 19,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "8f07720293fa7927d0d61dc07c43206d1d10139781adef0e7be17fd9c9169e3e",
+        "expectedFieldCount": 19,
+        "currentFieldCount": 19,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "5740ce15ca55448b029e5d7d00d2eb3f3131dab0a3694f78f1261a3a9e55d0a5",
+          "currentBeforeHash": "7ada58686d041923ae315248bc4b9c56c213dde245512d0dfbcb029fe729a4e4",
+          "expectedValues": 19,
+          "currentValues": 0,
+          "changedExpectedValues": 19,
+          "missingExpectedValues": 19,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "d716242b9d337f705800f98c10527cc033ec0d18ed4d68809835146de9d13e41",
+          "currentBeforeHash": "7ada58686d041923ae315248bc4b9c56c213dde245512d0dfbcb029fe729a4e4",
+          "expectedValues": 19,
+          "currentValues": 0,
+          "changedExpectedValues": 19,
+          "missingExpectedValues": 19,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB007",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "2955e8a3a6683c19087ff4c4b6e786987d1e2a5e12679a503ca088490eca4675",
+      "draft": {
+        "sourceHash": "2955e8a3a6683c19087ff4c4b6e786987d1e2a5e12679a503ca088490eca4675",
+        "expectedFieldCount": 20,
+        "currentFieldCount": 20,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "2955e8a3a6683c19087ff4c4b6e786987d1e2a5e12679a503ca088490eca4675",
+        "expectedFieldCount": 20,
+        "currentFieldCount": 20,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "a6be1681532f7c96968bc5c2f91b5558e95759d0deae00b843be46c86ec2b066",
+          "currentBeforeHash": "784dfc7c7b7bde15ee30e1de0ab610a7cd90668670e1de1f7b8d0d72fee58c42",
+          "expectedValues": 20,
+          "currentValues": 0,
+          "changedExpectedValues": 20,
+          "missingExpectedValues": 20,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "252e1912c83a6c3e854743f168fc46e796995eabe0b4f4f0adb2830a8be180e3",
+          "currentBeforeHash": "784dfc7c7b7bde15ee30e1de0ab610a7cd90668670e1de1f7b8d0d72fee58c42",
+          "expectedValues": 20,
+          "currentValues": 0,
+          "changedExpectedValues": 20,
+          "missingExpectedValues": 20,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB008",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "e4f555a2e908b1ed9bfb442da1f179cb9f7313a17d478e8c108f4cb538b912e0",
+      "draft": {
+        "sourceHash": "e4f555a2e908b1ed9bfb442da1f179cb9f7313a17d478e8c108f4cb538b912e0",
+        "expectedFieldCount": 18,
+        "currentFieldCount": 18,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "e4f555a2e908b1ed9bfb442da1f179cb9f7313a17d478e8c108f4cb538b912e0",
+        "expectedFieldCount": 18,
+        "currentFieldCount": 18,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "6ad0f66de468e816ba7a02d21efb614cf2a2ceb1efe51b9bc82f3ba1c25d6a2c",
+          "currentBeforeHash": "bc19b2ecdfbd36fae6611cbba51441ec98840e55cc7b7f4fffcbc39765bbdda5",
+          "expectedValues": 18,
+          "currentValues": 0,
+          "changedExpectedValues": 18,
+          "missingExpectedValues": 18,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "1fa73a28f70ed911c1d0022e7e300d01412202ec0f28fd9b76210eea8834163a",
+          "currentBeforeHash": "bc19b2ecdfbd36fae6611cbba51441ec98840e55cc7b7f4fffcbc39765bbdda5",
+          "expectedValues": 18,
+          "currentValues": 0,
+          "changedExpectedValues": 18,
+          "missingExpectedValues": 18,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB009",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "81987be255767c344d746629bdee059104ca1e500eb0c47db2b794c52e55bed0",
+      "draft": {
+        "sourceHash": "81987be255767c344d746629bdee059104ca1e500eb0c47db2b794c52e55bed0",
+        "expectedFieldCount": 17,
+        "currentFieldCount": 17,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "81987be255767c344d746629bdee059104ca1e500eb0c47db2b794c52e55bed0",
+        "expectedFieldCount": 17,
+        "currentFieldCount": 17,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "f7dd32cd551c22283558f982db71cc04c1d5ba234b9d55556e41ee3c05b297ed",
+          "currentBeforeHash": "48669c1123c5613d5015bd1b5cd35a78497412ad2982ccdea6cb887cedce703d",
+          "expectedValues": 17,
+          "currentValues": 0,
+          "changedExpectedValues": 17,
+          "missingExpectedValues": 17,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "2e983eb7bfbc52c0617f9150f2a3990ac1cd66761c9ad932298d06f2f05fc586",
+          "currentBeforeHash": "48669c1123c5613d5015bd1b5cd35a78497412ad2982ccdea6cb887cedce703d",
+          "expectedValues": 17,
+          "currentValues": 0,
+          "changedExpectedValues": 17,
+          "missingExpectedValues": 17,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB011",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "8683304c3cad364df7edadc7a1db68ee0521db472c8b8f5e9161630152534c13",
+      "draft": {
+        "sourceHash": "8683304c3cad364df7edadc7a1db68ee0521db472c8b8f5e9161630152534c13",
+        "expectedFieldCount": 20,
+        "currentFieldCount": 20,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "8683304c3cad364df7edadc7a1db68ee0521db472c8b8f5e9161630152534c13",
+        "expectedFieldCount": 20,
+        "currentFieldCount": 20,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "b03f4f0bc81a831c0ebb09bb99df48ab67511d20be1875801207fde61577a80a",
+          "currentBeforeHash": "d9a71c6bfd382341f9772c40bc3d63e09f36d1f2217fcc1e3bbb12fc8a9e7051",
+          "expectedValues": 20,
+          "currentValues": 0,
+          "changedExpectedValues": 20,
+          "missingExpectedValues": 20,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "0b39b4edb08728ee4a9208309aaae22d8621fee72bc032759cf0df92e36d7f88",
+          "currentBeforeHash": "d9a71c6bfd382341f9772c40bc3d63e09f36d1f2217fcc1e3bbb12fc8a9e7051",
+          "expectedValues": 20,
+          "currentValues": 0,
+          "changedExpectedValues": 20,
+          "missingExpectedValues": 20,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB012",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "876f2b7465555d028ac041cab9488fb48db27f78e9e65d986a8bca00582154bf",
+      "draft": {
+        "sourceHash": "876f2b7465555d028ac041cab9488fb48db27f78e9e65d986a8bca00582154bf",
+        "expectedFieldCount": 19,
+        "currentFieldCount": 19,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "876f2b7465555d028ac041cab9488fb48db27f78e9e65d986a8bca00582154bf",
+        "expectedFieldCount": 19,
+        "currentFieldCount": 19,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "95af4071881942dace92e123586db47e06f1cbc89d5f0e40ce7da8acf5aeb96d",
+          "currentBeforeHash": "76f59b6638654a2c0ffd697471603d222ea467d9d9ac0b176239f7f857bad8c1",
+          "expectedValues": 19,
+          "currentValues": 0,
+          "changedExpectedValues": 19,
+          "missingExpectedValues": 19,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "02894583c54eada7ee509064a9a4e5f7bec07b1ed8ffa889f1bd7158ced15c49",
+          "currentBeforeHash": "76f59b6638654a2c0ffd697471603d222ea467d9d9ac0b176239f7f857bad8c1",
+          "expectedValues": 19,
+          "currentValues": 0,
+          "changedExpectedValues": 19,
+          "missingExpectedValues": 19,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB013",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "b06ce0a4b737b987fa1eacda1125a953bad1d505f47a6816f27c37fde8260955",
+      "draft": {
+        "sourceHash": "b06ce0a4b737b987fa1eacda1125a953bad1d505f47a6816f27c37fde8260955",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "b06ce0a4b737b987fa1eacda1125a953bad1d505f47a6816f27c37fde8260955",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "d0ab1750273f094b35f4ea017b37de9d3594e0cd02e788eb2df45ea08f1b4820",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "dec2fcd54598982b1d05be062fe5957954a894d823f6ceb448aff306c09f63c4",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB014",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "8e6f834018d0ada8230d5612e71a23840839e0faa1dbca6fab0e5558b59b5cd0",
+      "draft": {
+        "sourceHash": "8e6f834018d0ada8230d5612e71a23840839e0faa1dbca6fab0e5558b59b5cd0",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "8e6f834018d0ada8230d5612e71a23840839e0faa1dbca6fab0e5558b59b5cd0",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "c5ac5701381a8ef7d3582a0fbd31fa944dc96310f09c22c2464af63f191b1aca",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "0c7850759ca2ee42564a1f098796e641fa12b7cd74dbbb48a66b8858bebb15ce",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB015",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "aa4a21f6322e64c023caa319ea6252e2273f65aebacdcfb3adac61e7d8539dd7",
+      "draft": {
+        "sourceHash": "aa4a21f6322e64c023caa319ea6252e2273f65aebacdcfb3adac61e7d8539dd7",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "aa4a21f6322e64c023caa319ea6252e2273f65aebacdcfb3adac61e7d8539dd7",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "305ef487cb0be38fe766b8af215c9df565fb78e109136e03365c1760a46bb087",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "6f337af530d7b2019748aa51e50a49ba365a0dccf15bc84cb46beaf45d484df8",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB016",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "1d2b31f5dbd8897d5724095631d0f65283d592bb0b01ba6dd746c6e3ceafeb85",
+      "draft": {
+        "sourceHash": "1d2b31f5dbd8897d5724095631d0f65283d592bb0b01ba6dd746c6e3ceafeb85",
+        "expectedFieldCount": 14,
+        "currentFieldCount": 14,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "1d2b31f5dbd8897d5724095631d0f65283d592bb0b01ba6dd746c6e3ceafeb85",
+        "expectedFieldCount": 14,
+        "currentFieldCount": 14,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "f40d49bcccccf8d828bbcb460b28229ca033442bb044254c39698584fdc72eed",
+          "currentBeforeHash": "ac083d5e3f48718c7f4beb737c02390b1db2b5653c71c264c79abb97872f5128",
+          "expectedValues": 14,
+          "currentValues": 0,
+          "changedExpectedValues": 14,
+          "missingExpectedValues": 14,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "98341a950cd29a547bd3b8fb581c7126de32f9aca8eaf0b46c8d293f18ce2fa7",
+          "currentBeforeHash": "ac083d5e3f48718c7f4beb737c02390b1db2b5653c71c264c79abb97872f5128",
+          "expectedValues": 14,
+          "currentValues": 0,
+          "changedExpectedValues": 14,
+          "missingExpectedValues": 14,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB017",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "9620ee8b837ceddbea6b47124c58bc1d1b70e9286322a75a13d66d8b0acd4a65",
+      "draft": {
+        "sourceHash": "9620ee8b837ceddbea6b47124c58bc1d1b70e9286322a75a13d66d8b0acd4a65",
+        "expectedFieldCount": 14,
+        "currentFieldCount": 14,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "9620ee8b837ceddbea6b47124c58bc1d1b70e9286322a75a13d66d8b0acd4a65",
+        "expectedFieldCount": 14,
+        "currentFieldCount": 14,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "192e504d814af750c09c1065e3ad04370cad09b7f8113491632500e71a5d3c13",
+          "currentBeforeHash": "ac083d5e3f48718c7f4beb737c02390b1db2b5653c71c264c79abb97872f5128",
+          "expectedValues": 14,
+          "currentValues": 0,
+          "changedExpectedValues": 14,
+          "missingExpectedValues": 14,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "678e83a3f8ce09115f18410cf32a27edbf914de3ed2b55201035ac7826ac4799",
+          "currentBeforeHash": "ac083d5e3f48718c7f4beb737c02390b1db2b5653c71c264c79abb97872f5128",
+          "expectedValues": 14,
+          "currentValues": 0,
+          "changedExpectedValues": 14,
+          "missingExpectedValues": 14,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB018",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "c7f7af4385d3a1d913c11737a60986d7ab5947ad0a1344e8c30b65f93d65f85f",
+      "draft": {
+        "sourceHash": "c7f7af4385d3a1d913c11737a60986d7ab5947ad0a1344e8c30b65f93d65f85f",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "c7f7af4385d3a1d913c11737a60986d7ab5947ad0a1344e8c30b65f93d65f85f",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "e01807929046dea6d8dfc1512638cd60a8dbda73ee15a6135b0274ada5a49ddf",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "5ac2e666b3075e9a22cbefdff0fde5ebde9e343e3b7c524921f3382d2ec935f8",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB019",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "814748821e238a04a81883afde0608c724600a626e025de14b1e9c573f0df9c3",
+      "draft": {
+        "sourceHash": "814748821e238a04a81883afde0608c724600a626e025de14b1e9c573f0df9c3",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "814748821e238a04a81883afde0608c724600a626e025de14b1e9c573f0df9c3",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "776a2261d5dd8296ebd39b7ac04ab8427a0e0bce1b269fbe451944491353f041",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "f9d8889bc2c6c254e6261a280d1d4b55aaa5af733c72c568c4eebd1966f6f572",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB020",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "6bed95bb8703d8726945ef7a35725daa5aefe1d20c54c9dda9c03fe8d993a939",
+      "draft": {
+        "sourceHash": "6bed95bb8703d8726945ef7a35725daa5aefe1d20c54c9dda9c03fe8d993a939",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "6bed95bb8703d8726945ef7a35725daa5aefe1d20c54c9dda9c03fe8d993a939",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "47d1f813d78198ec15e7eba51bd32ebd2928392494870d7c26f89cf99caf0e07",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "6936a7b5650d21c27c4326dd4ef0a7841a9b1b5959c88416cccefd36d491803b",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB021",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "798e08c1b1ef30e2c61c3f44ac4f99fd033f3cec92edc6db9c9d0cc5a94661e1",
+      "draft": {
+        "sourceHash": "798e08c1b1ef30e2c61c3f44ac4f99fd033f3cec92edc6db9c9d0cc5a94661e1",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "798e08c1b1ef30e2c61c3f44ac4f99fd033f3cec92edc6db9c9d0cc5a94661e1",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "80285b92cd70c5843c3286c0dbaf06e784bf390547f18889f0befa76f41a8753",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "a04a7901585f50d833491110c57b1a17f89b66010afbba3db95426cf37e2537a",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB022",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "ec3e56f7a87345466ba3e6d648cf12b28c7c4a9c4fdeea516fa80d842a5846f9",
+      "draft": {
+        "sourceHash": "ec3e56f7a87345466ba3e6d648cf12b28c7c4a9c4fdeea516fa80d842a5846f9",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "ec3e56f7a87345466ba3e6d648cf12b28c7c4a9c4fdeea516fa80d842a5846f9",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "469e4e7613dda16a33f6007208794a0950e4daf77a80cfc8992462a44afc8974",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "84f2bfdc2c5e08c7386b86bcd367325dd887c996a0c49a6bd149bd7f5cde2a82",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB023",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "49132a9732b3fea7586945aa22bd6801ee376254add57a2d1cd36f93f44e34b5",
+      "draft": {
+        "sourceHash": "49132a9732b3fea7586945aa22bd6801ee376254add57a2d1cd36f93f44e34b5",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "49132a9732b3fea7586945aa22bd6801ee376254add57a2d1cd36f93f44e34b5",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "efb9e39a4a9be0b6358acff77e63e02d6193cb390e301fb8e480f1ca9f67e5b1",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "20d0c75deba9077fc4f0220e88ff1240206c78abb225cd879e8b1b7f72e7b927",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB024",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "8a9b162658385318f21be1cbe2e756c2799e1ba95552e2a7f10863f2f258ed85",
+      "draft": {
+        "sourceHash": "8a9b162658385318f21be1cbe2e756c2799e1ba95552e2a7f10863f2f258ed85",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "8a9b162658385318f21be1cbe2e756c2799e1ba95552e2a7f10863f2f258ed85",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "d15d3dc2c3d35c8b42cd4c19e838f5a8ddfe52ff2fb06b947ec59852eee56a93",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "de63defb2c8a261f5437737d21ae1f5d9f6fa6bd7477a852b1f12c193afa22f6",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB025",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "c7656fe6ceedf11c2a797036cc665401e4398b1eeb926f9276725219acf4e0bb",
+      "draft": {
+        "sourceHash": "c7656fe6ceedf11c2a797036cc665401e4398b1eeb926f9276725219acf4e0bb",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "c7656fe6ceedf11c2a797036cc665401e4398b1eeb926f9276725219acf4e0bb",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "d0865d00eb0d5bc978fd7ecdbc5aaf73116026e4feda83b8f10a6977b310d243",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "f97a6e0224e723b8cd4b95ed828f4ab1235dfc841dbb8bb8fa87cabe9202101c",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB026",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "160770882220a6a09639d446a1aec886439d252830e79dba777fce6f665b9e92",
+      "draft": {
+        "sourceHash": "160770882220a6a09639d446a1aec886439d252830e79dba777fce6f665b9e92",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "160770882220a6a09639d446a1aec886439d252830e79dba777fce6f665b9e92",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "e034a58a372abd5dcaa6afc79f3a0954bc91ed7ded7b92d99f89dc395e413227",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "61e76a9025258d6515e56583807b2a16b5342ecfab223e781c6cdc41441f6542",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB027",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "fa6b2982742785493faf5354b64cdff9f3235fc8e1b046f79e00d65bd7cfbf85",
+      "draft": {
+        "sourceHash": "fa6b2982742785493faf5354b64cdff9f3235fc8e1b046f79e00d65bd7cfbf85",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "fa6b2982742785493faf5354b64cdff9f3235fc8e1b046f79e00d65bd7cfbf85",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "50a897f37d9cba6c3e6837bf8745eed7dd3d9ef634b40428498fcf89592f5a86",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "78da665852085801b9d0cba9cad2159812cfc9e4efd2eb1cd24dacfaf72b11c0",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB028",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "7f2ec524888dad7cecf67f70add974a9a656442a97006f9a782aa9f783a46a5b",
+      "draft": {
+        "sourceHash": "7f2ec524888dad7cecf67f70add974a9a656442a97006f9a782aa9f783a46a5b",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "7f2ec524888dad7cecf67f70add974a9a656442a97006f9a782aa9f783a46a5b",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "447bb9ce9bb6366ca964c0f27220864b9d3eaaf7705c8fd0203a90a223626ce0",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "c895308bbb3a7804e6ab85751d8b308287d2493c02741f09014c8561af8a62a8",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB029",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "4e3696c25615db2a204a2de0e0be574587441af9705e9aa105776cf8cda22bde",
+      "draft": {
+        "sourceHash": "4e3696c25615db2a204a2de0e0be574587441af9705e9aa105776cf8cda22bde",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "4e3696c25615db2a204a2de0e0be574587441af9705e9aa105776cf8cda22bde",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "5f861db68e569947fe6596ff06064deae7b7e5167dc4999daec5074a092c3794",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "c4f5d1c7df772439af139d90635fe6dfe07c6b1e2335e7077b904a3f5ae6a5be",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB030",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "5dd079358290bf38ff435c81c3c966f58489cb4abf71222e867a379f3d9b43e6",
+      "draft": {
+        "sourceHash": "5dd079358290bf38ff435c81c3c966f58489cb4abf71222e867a379f3d9b43e6",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "5dd079358290bf38ff435c81c3c966f58489cb4abf71222e867a379f3d9b43e6",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "c7fea8b1d8df123b62802457274e1e249768a9be07bcba0e3f90881ad369f4a8",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "cf5b73898d202d4c4c12f135c6fd753858fc03735b656586123101f20af57404",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB031",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "461a62d047485ea703ec2f301bb291161f98b748be57a985b6a922c1d93240fb",
+      "draft": {
+        "sourceHash": "461a62d047485ea703ec2f301bb291161f98b748be57a985b6a922c1d93240fb",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "461a62d047485ea703ec2f301bb291161f98b748be57a985b6a922c1d93240fb",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "1e4c1a2ab12cc66b85b77bbd94371a9472732c1ebf3ccfdb53c7f68930ca2e53",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "267068d820d06bff8ffb969c724b6a43e4c990e1486675e5d83d4ef782265384",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB032",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "ee5cabb8900b2f63959ac7c2ddf5a2cde36135ac0610f51eb75d0999636b79ed",
+      "draft": {
+        "sourceHash": "ee5cabb8900b2f63959ac7c2ddf5a2cde36135ac0610f51eb75d0999636b79ed",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "ee5cabb8900b2f63959ac7c2ddf5a2cde36135ac0610f51eb75d0999636b79ed",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "3cc0ad3f96186109a1f3f00383af585f3f3d4f6f52e90bb6ab70082c672f96bd",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "63b1ddc57996863d55dbf3c5dd8b902cba6e6bf9e4cf44ec5f37d9da229301ae",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB033",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "cbab22005ae43f7b6eed12e6cf571fbc6837409c4d04d915b7298596a28916e5",
+      "draft": {
+        "sourceHash": "cbab22005ae43f7b6eed12e6cf571fbc6837409c4d04d915b7298596a28916e5",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "cbab22005ae43f7b6eed12e6cf571fbc6837409c4d04d915b7298596a28916e5",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "34ab9ed7e221b7d3de35928f8e3710ff14a71d1ac0db3d698b438c0371372a55",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "b2e0c8498530a6d0376693c9587874db31b2db1086ed01b8610b82cec4f7c4f8",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB034",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "7c8edac8d6c3d1ba184bb83cbd49950cb9198dfcee7239f04f3ea8c6b87a150b",
+      "draft": {
+        "sourceHash": "7c8edac8d6c3d1ba184bb83cbd49950cb9198dfcee7239f04f3ea8c6b87a150b",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "7c8edac8d6c3d1ba184bb83cbd49950cb9198dfcee7239f04f3ea8c6b87a150b",
+        "expectedFieldCount": 10,
+        "currentFieldCount": 10,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "8722e373c0f39649050f90c5264dd2675819b1aa4e6ffc94399315246d417d55",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "dab8e310f94ec5df74aba3f86afbfa2e5385ee08a372eb18602db570115476d8",
+          "currentBeforeHash": "84a7f2805d6fdf0f34dac56b78424d276125ef8dcd12c88df7bfbf854b34a25d",
+          "expectedValues": 10,
+          "currentValues": 0,
+          "changedExpectedValues": 10,
+          "missingExpectedValues": 10,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB035",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "0520cf7deef10928cf2b5e71bdb995d65fd1d866e660d7dfe07ce14663264ff9",
+      "draft": {
+        "sourceHash": "0520cf7deef10928cf2b5e71bdb995d65fd1d866e660d7dfe07ce14663264ff9",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "0520cf7deef10928cf2b5e71bdb995d65fd1d866e660d7dfe07ce14663264ff9",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "0034b7a79c64f4a9883f24057d269487532d532e58c922ff13f801f689d6b461",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "1e23558b1744ac8313b6334d82fc7f5775795bcc3cacf31d88de6dc2d9517877",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    },
+    {
+      "id": "DB036",
+      "version": 1,
+      "publishedVersion": 1,
+      "publishedPresent": true,
+      "historicalSourceHash": "7cb8bb0745b1051dbf9d18515351a5ca43d16d28285160f37d189ec68310a6c6",
+      "draft": {
+        "sourceHash": "7cb8bb0745b1051dbf9d18515351a5ca43d16d28285160f37d189ec68310a6c6",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "published": {
+        "sourceHash": "7cb8bb0745b1051dbf9d18515351a5ca43d16d28285160f37d189ec68310a6c6",
+        "expectedFieldCount": 12,
+        "currentFieldCount": 12,
+        "changedExpectedFields": 0,
+        "missingExpectedFields": 0,
+        "additionalFields": 0,
+        "exactMatch": true
+      },
+      "targets": {
+        "hi": {
+          "historicalBeforeHash": "5c41a80a528c77521024aa57557c2a1917dbc2ebfecaf7a49e8e8d38a4d6d6a4",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        },
+        "gu": {
+          "historicalBeforeHash": "f9142a5ce7af0d0d35fb4f409519899aebce50401a876634c0abb9d6979f85d1",
+          "currentBeforeHash": "ea930a5f87e9d3264f160c9fd0ab2196761bb987db112b93d6a3cfe415e72970",
+          "expectedValues": 12,
+          "currentValues": 0,
+          "changedExpectedValues": 12,
+          "missingExpectedValues": 12,
+          "additionalValues": 0,
+          "exactMatch": false,
+          "changedExistingValues": 0,
+          "state": "missing"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Snapshot freshness expires when Studio source or target text changes. Recheck immediately before any later application.",
+    "No native-reader approval, semantic approval, import or publication follows from source/target equality.",
+    "Only the 34 supplemental articles and their 68 Hindi/Gujarati target packets were checked; DB001, DB010 and seven pages are excluded."
+  ]
+}

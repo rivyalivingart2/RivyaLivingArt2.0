@@ -1,0 +1,313 @@
+{
+  "records": {
+    "DB023": {
+      "notes": "Reviewed all 10 fields. Correct clock hands versus human hands and the non-order statement. Preserve unresolved mechanism, legibility, mounting, stability and no confirmed sale.",
+      "replace": {
+        "hi": [
+          [
+            "हाथ और मार्कर",
+            "घड़ी की सुइयाँ और समय के निशान"
+          ],
+          [
+            "कोई आदेश नहीं बनाता",
+            "कोई ऑर्डर दर्ज नहीं करता"
+          ]
+        ],
+        "gu": [
+          [
+            "હાથ અને માર્કર",
+            "ઘડિયાળના કાંટા અને સમયના નિશાન"
+          ]
+        ]
+      }
+    },
+    "DB024": {
+      "notes": "Reviewed all 10 fields. Correct sentimental items versus thoughts and actual custody before transfer. Preserve real-channel instructions, unresolved risks, no packing recipe and no preservation guarantee.",
+      "replace": {
+        "hi": [
+          [
+            "भावनात्मक बातें",
+            "भावनात्मक महत्व की वस्तुएँ"
+          ],
+          [
+            "इससे पहले कि कोई भी बात आपकी चिंता से छूट जाए",
+            "कोई भी वस्तु आपकी देखरेख से बाहर भेजने से पहले"
+          ]
+        ]
+      }
+    },
+    "DB025": {
+      "notes": "Reviewed all 10 fields. Correct motif, typeface, visual hierarchy and mounting versus increasing. Preserve exact inscription proof, private details and unconfirmed material/installation suitability.",
+      "replace": {
+        "hi": [
+          [
+            "प्रकार के चुनाव",
+            "अक्षरशैली के चुनाव"
+          ],
+          [
+            "बढ़ते दृष्टिकोण",
+            "लगाने की विधि"
+          ]
+        ],
+        "gu": [
+          [
+            "શબ્દોની સ્પષ્ટ વંશવેલો",
+            "શબ્દોનું મહત્વ દર્શાવતો સ્પષ્ટ ક્રમ"
+          ],
+          [
+            "એક નાનો ઉદ્દેશ",
+            "એક નાનું સુશોભન ચિહ્ન"
+          ],
+          [
+            "પ્રકારની પસંદગી",
+            "અક્ષરશૈલીની પસંદગી"
+          ]
+        ]
+      }
+    },
+    "DB026": {
+      "notes": "Reviewed all 10 fields. Correct image crop versus harvest. Preserve separate private/public permissions, minimal sharing, original-versus-proof files and no legal guidance claim.",
+      "replace": {
+        "hi": [
+          [
+            "प्रस्तावित फसल",
+            "तस्वीर के प्रस्तावित काटे गए हिस्से"
+          ]
+        ],
+        "gu": [
+          [
+            "પાકની",
+            "છબીની કિનારીઓ કાપવાની પસંદગીની"
+          ]
+        ]
+      }
+    },
+    "DB027": {
+      "notes": "Reviewed all 10 fields. Correct Gujarati checkout sentence. Keep food-contact, skin compatibility and durability unconfirmed; scope, price, timing and presentation require actual agreement.",
+      "replace": {
+        "gu": [
+          [
+            "તપાસને તપાસમાં ફેરવ્યા વિના",
+            "પૂછપરછને ખરીદીની ચુકવણીની પ્રક્રિયામાં ફેરવ્યા વિના"
+          ]
+        ]
+      }
+    },
+    "DB028": {
+      "notes": "Reviewed all 10 fields. Correct name initials and price quotation versus quoted text. Preserve no recoloured fabricated variants, exact quantities and no matching-material guarantee.",
+      "replace": {
+        "hi": [
+          [
+            "एक प्रारंभिक शैली",
+            "नाम के शुरुआती अक्षरों की एक शैली"
+          ],
+          [
+            "विशिष्टता और उद्धरण",
+            "विनिर्देश और मूल्य-प्रस्ताव"
+          ]
+        ],
+        "gu": [
+          [
+            "પ્રારંભિક શૈલી",
+            "નામના આદ્યાક્ષરોની શૈલી"
+          ],
+          [
+            "સ્પષ્ટીકરણ અને અવતરણ",
+            "સ્પષ્ટીકરણ અને ભાવપત્રક"
+          ]
+        ]
+      }
+    },
+    "DB029": {
+      "notes": "Reviewed all 12 fields. Correct name initials, motif and thoughtful versus assumed object. Preserve fitting/material uncertainty, medical-advice boundary, timing confirmation and no preservation guarantee.",
+      "replace": {
+        "hi": [
+          [
+            "एक प्रारंभिक या छोटा रूपांकन",
+            "नाम का शुरुआती अक्षर या छोटा सजावटी रूपांकन"
+          ],
+          [
+            "एक मानी जाने वाली छोटी वस्तु",
+            "एक सोच-समझकर बनाई जाने वाली छोटी वस्तु"
+          ]
+        ],
+        "gu": [
+          [
+            "પ્રારંભિક અથવા નાનો ઉદ્દેશ્ય",
+            "નામનો આદ્યાક્ષર અથવા નાનું સુશોભન ચિહ્ન"
+          ],
+          [
+            "માનવામાં આવેલ નાનો પદાર્થ",
+            "વિચારપૂર્વક બનાવવાની નાની વસ્તુ"
+          ]
+        ]
+      },
+      "override": {
+        "gu": {
+          "title": "વ્યક્તિગત રેઝિન આભૂષણ: તમારી જરૂરિયાતોનું વર્ણન તૈયાર કરવું"
+        }
+      }
+    },
+    "DB030": {
+      "notes": "Reviewed all 10 fields. Correct outlast-the-occasion, visual accent and price quotation. Preserve no unapproved variants, no assumed packaging and minimal recipient information.",
+      "replace": {
+        "hi": [
+          [
+            "एक उच्चारण पर्याप्त",
+            "रंग का एक छोटा सजावटी बिंदु पर्याप्त"
+          ]
+        ],
+        "gu": [
+          [
+            "એક ઉચ્ચાર પૂરતો",
+            "રંગનો એક નાનો સુશોભન બિંદુ પૂરતો"
+          ],
+          [
+            "પૂર્ણાહુતિ",
+            "સપાટીની ફિનિશ"
+          ],
+          [
+            "અવતરણની વિનંતી",
+            "ભાવપત્રકની વિનંતી"
+          ]
+        ]
+      },
+      "override": {
+        "hi": {
+          "description": "मौसमी उपहार चुनते समय शुरुआत उसे पाने वाले व्यक्ति से करें। सीमित रंगों और स्पष्ट संदेश वाला उपहार उस अवसर के बाद भी अर्थपूर्ण रह सकता है।"
+        },
+        "gu": {
+          "description": "મોસમી ભેટ પસંદ કરતી વખતે શરૂઆત તેને મેળવનાર વ્યક્તિથી કરો. સંયમિત રંગો અને સ્પષ્ટ સંદેશ ધરાવતી ભેટ પ્રસંગ પછી પણ અર્થપૂર્ણ રહી શકે છે."
+        }
+      }
+    },
+    "DB031": {
+      "notes": "Reviewed all 10 fields. Correct Gujarati opposite meaning in quantities heading. Preserve individual-versus-set counts, real capacity/availability/price confirmation, authorized branding and review roles.",
+      "replace": {
+        "gu": [
+          [
+            "જથ્થાને અસ્પષ્ટ બનાવો",
+            "જથ્થો સ્પષ્ટ જણાવો"
+          ]
+        ]
+      }
+    },
+    "DB032": {
+      "notes": "Reviewed all 12 fields. Clarified Hindi size-versus-shape and order-of-initials. Preserve permitted person-specific order, no screen colour guarantee, no invented variants and exact reproof after changes.",
+      "replace": {
+        "hi": [
+          [
+            "इच्छित आदेश",
+            "इच्छित क्रम"
+          ],
+          [
+            "आकार या आकार बदलता है",
+            "माप या आकृति बदलती है"
+          ]
+        ]
+      }
+    },
+    "DB033": {
+      "notes": "Reviewed all 12 fields. Correct Gujarati as-though/all-authoritative logic and openings, clarify observation heading. Preserve illustrative non-workshop status, source permissions and original design.",
+      "replace": {
+        "gu": [
+          [
+            "બધા સમાન અધિકૃત હોવા છતાં છબીઓ એકત્રિત કરવાનું ટાળો",
+            "બધી છબીઓ સમાન પ્રમાણભૂત માહિતી આપતી હોય તેમ માનીને તેમને એકત્રિત કરવાનું ટાળો"
+          ],
+          [
+            "નક્કર વિસ્તારો, મુખ",
+            "નક્કર વિસ્તારો, ખાલી ખુલ્લા ભાગો"
+          ]
+        ]
+      },
+      "override": {
+        "hi": {
+          "sections.0.heading": "अपने अवलोकनों को लिखने की जगह दें"
+        },
+        "gu": {
+          "sections.0.heading": "તમારાં અવલોકનો નોંધવા માટે જગ્યા રાખો"
+        }
+      }
+    },
+    "DB034": {
+      "notes": "Reviewed all 10 fields. Correct uncertain figure as measurement, absence of necessary completeness, and finish reference. Preserve unknown rather than zero, no technical approval and version authority.",
+      "replace": {
+        "hi": [
+          [
+            "किसी अस्पष्ट आकृति को विश्वसनीय आकृति में न बदलें",
+            "किसी अस्पष्ट माप को निश्चित मानकर न लिखें"
+          ],
+          [
+            "कोई अंतिम संदर्भ",
+            "सतह की फ़िनिश का कोई संदर्भ"
+          ]
+        ],
+        "gu": [
+          [
+            "અસ્પષ્ટ આકૃતિને આત્મવિશ્વાસમાં રૂપાંતરિત કરશો નહીં",
+            "અસ્પષ્ટ માપને નિશ્ચિત માનીને લખશો નહીં"
+          ],
+          [
+            "કોઈ પણ એક શીટ ઑબ્જેક્ટ વિશેના દરેક પ્રશ્નનો જવાબ આપતી નથી",
+            "કોઈ એક શીટ વસ્તુ વિશેના દરેક પ્રશ્નનો જવાબ આપે જ એવું જરૂરી નથી"
+          ],
+          [
+            "સમાપ્ત સંદર્ભ",
+            "સપાટીની ફિનિશનો સંદર્ભ"
+          ]
+        ]
+      }
+    },
+    "DB035": {
+      "notes": "Reviewed all 12 fields. Preserve three reference files, JPG/PNG/WebP, 3 MB per file, private storage, receipt and user-controlled send. Correct keepsake brief, quotation and taking-payment meaning; no automatic message or sale implied.",
+      "replace": {
+        "hi": [
+          [
+            "एक तालिका संक्षिप्त",
+            "मेज़ बनवाने का विवरण"
+          ],
+          [
+            "भुगतान नहीं मिलता",
+            "भुगतान नहीं लिया जाता"
+          ]
+        ],
+        "gu": [
+          [
+            "એક સંક્ષિપ્ત સંક્ષિપ્ત તમે શું સાચવવા માંગો છો",
+            "સ્મૃતિચિહ્ન માટેનું વર્ણન તમે શું સાચવવા માંગો છો"
+          ],
+          [
+            "અવતરણ",
+            "ભાવપત્રક"
+          ]
+        ]
+      },
+      "override": {
+        "hi": {
+          "sections.0.paragraphs.0": "संग्रह से शुरुआत करें और वह कृति खोलें जो आपके विचार को सबसे अच्छी तरह व्यक्त करती हो। उसका फ़ॉर्म उस डिज़ाइन से जुड़े विवरण पूछता है। मेज़ बनवाने का विवरण उसके आयामों और कमरे पर केंद्रित हो सकता है; स्मृति चिह्न बनवाने का विवरण इस पर कि आप क्या सहेजना चाहते हैं। जो जानकारी आपको मालूम है, वह भरें और जिन सवालों पर चर्चा करना चाहते हैं, उन्हें टिप्पणियों में समझाएँ।"
+        },
+        "gu": {
+          "sections.0.paragraphs.0": "સંગ્રહથી શરૂઆત કરો અને તમારા વિચારને સૌથી સારી રીતે વ્યક્ત કરતી કૃતિ ખોલો. તેનું ફોર્મ તે ડિઝાઇનને લગતી વિગતો પૂછે છે. ટેબલ બનાવડાવવા માટેનું વર્ણન તેના માપ અને રૂમ પર કેન્દ્રિત હોઈ શકે; સ્મૃતિચિહ્ન માટેનું વર્ણન તમે શું સાચવવા માગો છો તેના પર કેન્દ્રિત હોઈ શકે. તમને જે જાણકારી હોય તે આપો અને જે પ્રશ્નોની ચર્ચા કરવા માગો છો તે નોંધોમાં સમજાવો."
+        }
+      }
+    },
+    "DB036": {
+      "notes": "Reviewed all 12 fields. Correct material property versus property ownership. Preserve distinct revision approvals, no inferred engineering, unresolved questions and no invented contractual process.",
+      "replace": {
+        "hi": [
+          [
+            "दावा की गई संपत्ति",
+            "बताए गए गुणधर्म"
+          ]
+        ],
+        "gu": [
+          [
+            "દાવો કરેલ મિલકત",
+            "જણાવેલ ગુણધર્મ"
+          ]
+        ]
+      }
+    }
+  }
+}

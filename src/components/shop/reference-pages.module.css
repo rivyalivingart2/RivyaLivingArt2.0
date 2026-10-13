@@ -44,4 +44,4 @@
  .accordion summary{grid-template-columns:32px minmax(0,1fr) 24px;gap:12px;padding:24px 0}.accordion h2{font-size:28px}
  .accordionBody{grid-template-columns:1fr;padding:12px 0 40px;gap:28px}
 }
-@media print{.chapter,.chapters[data-chapter-template=timeline] .chapter{display:block;min-height:0;padding:24px 0}.chapterMarker{position:static!important}.accordion{margin:0}.accordionBody{display:block;padding:16px 0}.shared{break-before:page}}
+@media print{.chapter,.chapters[data-chapter-template=timeline] .chapter{display:block;min-height:0;padding:24px 0}.chapterMarker{position:static!important}.accordion{margin:0}.accordion::details-content{content-visibility:visible;height:auto}.accordionBody{display:block;padding:16px 0}.toggle{display:none}.shared{break-before:page}}

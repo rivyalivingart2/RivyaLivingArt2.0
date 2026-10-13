@@ -43,6 +43,7 @@ em { font-weight: 400; color: var(--primary-hover); }
 }
 .skip-link { position: fixed; z-index: 100; top: 8px; left: 12px; transform: translateY(-200%); padding: 12px 20px; background: var(--primary); color: var(--primary-foreground); }
 .skip-link:focus { transform: translateY(0); }
+@media print { .skip-link { display: none !important; } }
 .preview-notice { text-align: center; background: var(--surface-elevated); color: var(--muted); font-size: 11px; padding: 7px 16px; letter-spacing: .03em; }
 .preview-notice span { margin: 0 10px; color: var(--primary); }
 .site-header { min-height: 106px; display: flex; justify-content: space-between; align-items: center; gap: 32px; padding: 20px 4.7vw; border-bottom: 1px solid var(--border); }

@@ -1,0 +1,2541 @@
+{
+  "date": "2026-10-12",
+  "status": "source-audit-with-scoped-reference-and-candidate-comparison-evidence",
+  "finalSourceCandidate": {"commit":"cd0fdd4","portableFingerprint":"b0c5bc41c922718e601cb4bb010540267ead382ce892778001418f3e549b4b11","providedBy":"coordinating agent","limit":"Candidate supplied at the earlier capture stage. Later skip-link print and responsive crop fixes need updated final binding. Earlier screen captures retain actual times."},
+  "landingBlockEvidence": {
+    "publicDefaults":{"report":"M10-CONDITIONAL-EDITOR-CHECKS.md","types":16,"groups":6,"tiles":66,"widths":[1440,390,320],"status":"independently-inspected-by-language-rights-agent-for-observed-default-scope","limit":"Not populated galleries, conditional selection modes, Studio editors, interactions or old parity."},
+    "desktopEditors":{"index":"test-results/old-design-migration/m10-completion/editor-fixed-index.json","sheets":"editor-fixed-1440-{0..14,film}-sheet.png","types":16,"tiles":70,"width":1440,"status":"all-selected-default-panels-independently-inspected-full-overlap-and-tails","notes":"Fifteen panels67frames plus videoHero3. Button destination values, Reading column move/remove, complete crop/frame controls, references and gallery add/move tails visible. No paint artifacts or collision. Initial38frame set remains baseline with fixed-footer seam gap; corrected overlap/tails close it.","excluded":"Alternate dropdown modes, mutations, other widths and old parity require separate evidence."},
+    "narrowEditors":{"report":"M10-CONDITIONAL-EDITOR-CHECKS.md","types":15,"groups":30,"tiles":151,"widths":[390,320],"status":"independently-accepted-by-language-rights-agent-after-crop-fix","notes":"Five image/gallery crop variants repaired; baseline97frames retained. Separate narrow videoHero review belongs to conditional receipt."}
+  },
+  "independentCurrentComparisons": {
+    "index": "test-results/old-design-migration/m10-completion/accepted-public-scroll-index.json",
+    "groups": 9,
+    "scrollTilesInspected": 125,
+    "oldWidth": 1280,
+    "scope": "Independent inspection of complete accepted contact sheets; composition/adaptation across observed sizes, not pixel parity. No repeated paint strips observed. No interaction, contrast, native zoom or physical-device claim from screenshots.",
+    "excludedCurrentEvidence": ["earlier public-scroll-index.json","earlier *-valid* captures","earlier home-1440* captures identified as corrupt by root"],
+    "rows": [
+      {"task":"V02","route":"/","widths":[1440,390],"sheets":["home-final-1440-accepted-sheet.png","home-final-390-accepted-sheet.png"],"tiles":[21,29],"old":["home-stable-warm"],"status":"observed-enabled-default-composition-adaptation-inspected","notes":"Paired full old1280 reference17tiles throughfooter. Image hero/manifesto/selected designs/architect brief/material film/categories/story/commission/foursteps/values/closing retain longform dark-blue rhythm. Current3selecteddesigns/15categories/3journeys adapt old4featured/6collections. Unconfirmed old maker/manufacturing/printing claims not copied. Old Journal band depends on eligible content; localabsence does not verify productionenabledstate. Initial-lettercategory artwork is fallback. Conditional/interaction states separate."},
+      {"task":"V03","route":"/our-story","widths":[1440],"sheets":["story-1440-accepted-sheet.png"],"tiles":[12],"old":["about-reduced"],"status":"observed-default-composition-adaptation-inspected","notes":"Three factual story chapters plus four customer steps and six care accordions; old maker/craft/material/gallery compositions not asserted as duplicated. No missing facts invented."},
+      {"task":"V04","route":"/process","widths":[390],"sheets":["process-final-390-accepted-sheet.png"],"tiles":[11],"old":["process-final-reduced"],"status":"observed-default-composition-adaptation-inspected","notes":"Disclosed film, four customer steps and care band fit; four current steps do not count as ten old factual manufacturing stages. Playback separate."},
+      {"task":"V04","route":"/materials-care","widths":[390],"sheets":["care-screen-390-accepted-sheet.png"],"tiles":[5],"old":["process-final-reduced","about-reduced"],"status":"closed-accordion-default-composition-inspected","notes":"Six closed accordions and labelled visualization; expanded and print states separate."},
+      {"task":"V06","route":"/commission","widths":[1440,390],"sheets":["commission-1440-accepted-sheet.png","commission-390-accepted-sheet.png"],"tiles":[12,21],"old":["custom-reduced","large-reduced"],"status":"observed-default-composition-adaptation-inspected","notes":"Twelve first-page cards, three desktop columns/single mobile column; landing uses existing customization journeys instead of old inline form. Child forms/filter/pagination interactions separate."},
+      {"task":"V06","route":"/architects","widths":[390],"sheets":["architects-390-accepted-sheet.png"],"tiles":[7],"old":["large-reduced"],"status":"observed-default-composition-adaptation-inspected","notes":"Four numbered brief/responsibility chapters, labelled image, CTA/footer; old timings and conditional evidence not copied."},
+      {"task":"V07","route":"/contact","widths":[320],"sheets":["contact-320-accepted-sheet.png"],"tiles":[7],"old":["contact-reduced"],"status":"observed-default-composition-adaptation-inspected","notes":"Four channel/action cards and three guidance chapters; phone/email fit320. Existing saved-inquiry behavior retained; no contact action."}
+    ]
+  },
+  "oldReferenceCaptures": {
+    "date": "2026-10-12",
+    "directory": "test-results/old-design-migration/m10-full-reference",
+    "receipt": "test-results/old-design-migration/m10-full-reference/reference-captures.json",
+    "viewport": {"width":1280,"height":720},
+    "mode": "tab-scoped prefers-reduced-motion reduce; original site Pause animations preference restored unpressed",
+    "scope": "Old reference only. No current/old comparison, candidate acceptance, animation acceptance or other viewport acceptance.",
+    "inspected": [
+      {"route":"/privacy","key":"old-supplement-privacy","tiles":9,"documentHeight":5448,"width":1280,"directory":"test-results/old-design-migration/m10-completion","index":"old-supplement-index.json","status":"root-captured-all-eleven-legal-sections-contents-closing-footer-independently-inspected"},
+      {"route":"/terms","key":"old-supplement-terms","tiles":8,"documentHeight":4840,"width":1280,"directory":"test-results/old-design-migration/m10-completion","index":"old-supplement-index.json","status":"root-captured-all-ten-legal-sections-contents-closing-footer-independently-inspected"},
+      {"route":"/","key":"home-stable-warm","tiles":17,"documentHeight":11012,"status":"full-eleven-enabled-chapters-through-footer-inspected"},
+      {"route":"/shop","key":"shop-reference-warm","tiles":14,"documentHeight":8854,"status":"full-first-page-default-scroll-through-footer-inspected-warmed-images","limit":"No old-product transfer; filter/quickview/laterpages separate"},
+      {"route":"/product/lord-khatu-shyam-ji-spiritual-puja-vastu-figurine-3018-inch","key":"product-reference","tiles":10,"documentHeight":6637,"status":"full-default-gallery-emptyform-description-details-related-footer-inspected","interaction":"product-care-expanded.png inspected; no data entry or submission"},
+      {"route":"/blog","key":"blog-reference-final","tiles":9,"documentHeight":5374,"status":"full-final-height-intro-lead-elevenarchivecards-pagination-newsletter-footer-inspected"},
+      {"route":"/faq","key":"faq-reference","tiles":5,"documentHeight":2830,"status":"full-sixquestion-index-search-closed-list-closing-footer-inspected","interaction":"faq-expanded.png care answer inspected"},
+      {"route":"/about","key":"about-reduced","tiles":14,"documentHeight":8979,"compositions":7,"unloadedImageObservations":1,"status":"reference-layout-inspected-media-observation-remains"},
+      {"route":"/process","key":"process-final-reduced","tiles":16,"documentHeight":10532,"processSteps":10,"unloadedImageObservations":0,"status":"reference-layout-inspected-stated-scope"},
+      {"route":"/large-resin-art","key":"large-reduced","tiles":14,"documentHeight":9077,"unloadedImageObservations":18,"status":"reference-layout-inspected-gallery-media-warmed-and-first-FAQ-expanded-in-additional-evidence"}
+    ],
+    "rejected": [
+      {"key":"home","reason":"Smooth scrolling caused unintended screenshot positions"},
+      {"key":"home-paused","reason":"Smooth scrolling caused unintended screenshot positions"},
+      {"key":"home-final","reason":"Pause animations froze incomplete reveal opacity"},
+      {"key":"home-reduced-warm","reason":"Wrong target: priorStudioJournal tab; not homepage evidence"}
+    ],
+    "superseded": ["about","process-reduced","blog-reduced","shop-reference"],
+    "additionalInspectedEvidence": [
+      {"route":"/large-resin-art","key":"large-final-reduced","inspectedTiles":[8,9,10,11,12,13],"status":"warmed-gallery-principal-images-visible","interaction":"large-faq-expanded.png first FAQ expanded"},
+      {"route":"/custom-order","key":"custom-reduced","tiles":10,"status":"complete-default-empty-form-reference-layout-inspected"},
+      {"route":"/contact","key":"contact-reduced","tiles":7,"status":"complete-default-reference-layout-inspected"},
+      {"route":"/workshops","key":"workshops-reduced","tiles":10,"status":"complete-visible-reference-layout-inspected-upcoming-dates-empty"},
+      {"route":"/portfolio","key":"portfolio-reduced","tiles":6,"status":"reference-empty-zero-commissions-zero-collections-no-child"},
+      {"route":"/blog/why-resin-art-cannot-be-rushed","key":"article-reduced","tiles":13,"status":"complete-reading-layout-inspected-two-related-images-unresolved"},
+      {"route":"/studio/portfolio","key":"studio-portfolio-empty","tiles":2,"status":"all-statuses-zero-no-saved-child"},
+      {"route":"/studio/portfolio/new","key":"studio-portfolio-new","tiles":4,"status":"default-Story-panel-only-inspected"},
+      {"route":"/studio/testimonials","key":"studio-testimonial-empty","tiles":1,"status":"no-testimonials-no-saved-child"},
+      {"route":"/studio/testimonials/new","key":"studio-testimonial-new","tiles":3,"status":"default-Quote-panel-only-inspected"},
+      {"route":"/studio/custom-pages","key":"studio-landing-empty","tiles":1,"status":"no-landing-pages-no-saved-child"},
+      {"route":"/studio/custom-pages/new","key":"studio-landing-new","tiles":4,"status":"complete-metadata-creation-form-blocks-require-save-not-done"},
+      {"route":"/studio/media","key":"studio-media-empty","tiles":2,"status":"all-zero-no-saved-asset-crop-usage-detail"},
+      {"route":"/studio/research","key":"studio-research-empty","tiles":1,"status":"no-research-no-saved-child"},
+      {"route":"/studio/blog/new","keys":["studio-blog-new","studio-blog-media","studio-blog-taxonomy","studio-blog-seo"],"tiles":[4,2,4,2],"status":"all-four-default-panels-inspected","interaction":"studio-blog-leave-guard.png inspected; Stay and keep editing chosen; prior local draft untouched"}
+    ],
+    "partial": [{"route":"/blog","key":"blog-reduced","reason":"Streamed height grew from3681to5374aftercapture; now superseded byblog-reference-final"}],
+    "browserReleased": "Tab-scoped reduced-motion reset; no viewport override installed; no source, database or saved content changed by capture work.",
+    "continuation": "Article warm related media; search/modal/saved receipt; Portfolio Media/Results/Taxonomy and Testimonial Attribution/Links/Media/Review; saved editorial/FAQ/page editors remain open. Empty Portfolio/Testimonial/Media/Research/landing children are reference-limited. Old privacy/terms full-scroll references are now independently inspected and ready for current pairing. No entire-group promotion from old-only pictures."
+  },
+  "requiredWidths": [
+    1920,
+    1440,
+    1200,
+    992,
+    768,
+    512,
+    390,
+    320
+  ],
+  "captureHeight": 720,
+  "prioritizedRemainingCaptureQueue": {
+    "geometryEvidence":{"index":"test-results/old-design-migration/m10-resume/layout-grid-final.json","checks":544,"routes":68,"widths":[320,390,512,768,992,1200,1440,1920],"limit":"DOM geometry/heading/alt counts, not full scroll pixel acceptance; historical candidate."},
+    "nextPixelSizes":[1440,390],
+    "narrowEdgeSize":320,
+    "limit":"This finite priority queue does not promote three-size pixel inspection to complete eight-width visual acceptance or restart every36group.",
+    "batches":[
+      {"priority":"P0","label":"Current editor repair proof","routes":["/studio/landing-pages?record=custom-page%3Af0b56cc7-9eb0-4d03-993e-c8484412ffd9","/studio/landing-pages?record=custom-page%3Afd93ff80-d97b-4b43-ab71-3b5c3ec403da"],"status":"default-panel-repair-proof-recorded","states":"All16desktop panels70frames inspected; fifteen narrow panels at2widths151frames accepted. Separate narrow videoHero recorded by conditional receipt. No fixture save; alternate modes/actions distinct."},
+      {"priority":"P1","label":"Catalogue/product full pixels","routes":["/collectible-design","/memory-art","/personal-art","/search","/pieces/river-channel"],"states":"Full own chapters, browse, related/footer; product gallery/specifications/care. Reuse unchanged historical interaction receipts with original limits."},
+      {"priority":"P1","label":"Four customer variants","routes":["/pieces/river-channel/customize","/commission/customize","/preserve","/personalize","/saved-pieces"],"states":"Complete visible variant fields, invalid/review summaries, long narrow wrapping and default desktop composition; no external Send or genuine inquiry fabricated."},
+      {"priority":"P2","label":"Editorial archives","routes":["/journal","/portfolio","/testimonials","/faq"],"states":"Full default cards/questions/filter/pagination/footer; shared no-results/clear once; FAQ open/hash target."},
+      {"priority":"P2","label":"Observed local children","routes":["/journal/m6-qa-452c7722-373af31d","/portfolio/m6-qa-452c7722-71bcab92","/testimonials/m6-qa-452c7722-c790254e","/faq/m6-qa-452c7722-2bc0f182"],"source":"test-results/old-design-migration/m10-completion/studio-editorial/fixture-discovery.json","availability":"Read-only verified visible2026-10-12","states":"Full actual body/metadata/disclosure/related. Short fixtures do not prove long production reading or populated galleries."},
+      {"priority":"P3","label":"Policy reading tails","routes":["/privacy","/terms","/imprint","/shipping-delivery","/returns-cancellations","/accessibility"],"states":"Full narrow reading for each; desktop privacy/terms navigation and long policy PDF pages if not evidenced. Current approved wording preserved."},
+      {"priority":"P4","label":"Shared overlay and fallback gaps","routes":["/","/search?q=zzm10nomatch","/a-missing-m10-page","/workshops","/inquiry/received"],"states":"Navigation/search modal, narrow drawer edges/focus/Escape; noresults/clear;404/410/unavailable receipt. Reuse unchanged historical openings. Private receipt uses existing authorized local identity only."}
+    ],
+    "doNotRepeatWithoutNewConcern":"Nine accepted public default groups,16public block defaults, final film controls, repaired Home/Care print PDFs; later source changes may require bounded recapture.",
+    "observedProductionChildren":["/portfolio/a-narrow-blue-line-at-the-dining-table","/testimonials/a-preference-for-a-quieter-dining-accent"],
+    "productionChildSource":"m10-pending-release-evidence.json; does not establish local QA record availability"
+  },
+  "method": "For each distinct template inspect complete scroll tiles and section boundaries at plan widths. Interaction states: 1440/390 plus 320 long/dialog edges, repeating any width with materially different layout. Every pass names actual viewport/state/candidate/screenshots. DOM geometry alone is not visual acceptance.",
+  "summary": {
+    "oldRoutes": 85,
+    "excluded": 13,
+    "sections": 74,
+    "landingTypes": 16,
+    "executionGroups": 36
+  },
+  "priorEvidence": {
+    "publicOpeningPairs": 15,
+    "studioOpeningPairs": 30,
+    "homeChapterOpenings": 9,
+    "scope": "Historical openings and named controls only; no new browser passes in this file."
+  },
+  "tasks": [
+    {
+      "id": "V01",
+      "label": "Shared public frame",
+      "routes": [
+        "/"
+      ],
+      "reference": [
+        "/"
+      ],
+      "states": [
+        "header and footer",
+        "desktop Collections open",
+        "mobile menu open and scrolled",
+        "search modal",
+        "Tab/ShiftTab/Escape and focus restoration",
+        "card/link/action hover",
+        "reduced motion"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V02",
+      "label": "Homepage",
+      "routes": [
+        "/"
+      ],
+      "reference": [
+        "/"
+      ],
+      "states": [
+        "all visible home slots through closing",
+        "film poster/play/pause",
+        "categories expanded",
+        "section-rail anchors and focus",
+        "default-off furniture/rooms",
+        "unavailable workshop/printing"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V03",
+      "label": "Story and shared bands",
+      "routes": [
+        "/our-story"
+      ],
+      "reference": [
+        "/about"
+      ],
+      "states": [
+        "every own chapter",
+        "shared process and materials",
+        "accordions closed/open",
+        "contents expanded/anchor",
+        "captions and crop edges"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V04",
+      "label": "Process and materials",
+      "routes": [
+        "/process",
+        "/materials-care"
+      ],
+      "reference": [
+        "/process"
+      ],
+      "states": [
+        "full customer/making/material/timing/care sequence",
+        "eligible stage/material bindings",
+        "sticky timeline marker",
+        "every material accordion open",
+        "print with closed accordions"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V05",
+      "label": "Three collection journeys",
+      "routes": [
+        "/collectible-design",
+        "/memory-art",
+        "/personal-art"
+      ],
+      "reference": [
+        "/large-resin-art",
+        "/shop",
+        "/shop/[observed category]"
+      ],
+      "states": [
+        "full story/browse/related of each journey",
+        "filters and phone drawer",
+        "chips/no results/clear",
+        "sort/page/Back",
+        "card hover/focus"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V06",
+      "label": "Commission and architects",
+      "routes": [
+        "/commission",
+        "/architects"
+      ],
+      "reference": [
+        "/custom-order",
+        "/large-resin-art"
+      ],
+      "states": [
+        "full kinds/brief/process/constraints/CTA",
+        "actual form destination",
+        "architects adaptation"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V07",
+      "label": "Contact",
+      "routes": [
+        "/contact"
+      ],
+      "reference": [
+        "/contact"
+      ],
+      "states": [
+        "all channels/questions",
+        "long contact wrapping at 320",
+        "focus",
+        "inspect tel/mail/map without contacting anyone"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V08",
+      "label": "Search",
+      "routes": [
+        "/search",
+        "/search?q=resin",
+        "/search?q=zzm10nomatch"
+      ],
+      "reference": [
+        "/search",
+        "/shop"
+      ],
+      "states": [
+        "all collection/product/Journal/Portfolio groups",
+        "no results",
+        "filter/chips",
+        "query/sort/page/Back"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V09",
+      "label": "Product detail",
+      "routes": [
+        "/pieces/river-channel"
+      ],
+      "reference": [
+        "/product/[observed real slug]"
+      ],
+      "states": [
+        "full gallery/specifications/care/related",
+        "thumbnails and next/previous",
+        "enlarged first/middle/last",
+        "Home/End/arrows/Escape",
+        "save",
+        "QA image retry"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V10",
+      "label": "Four inquiry variants",
+      "routes": [
+        "/pieces/river-channel/customize",
+        "/commission/customize",
+        "/preserve",
+        "/personalize"
+      ],
+      "reference": [
+        "/custom-order"
+      ],
+      "states": [
+        "all groups and conditional fields per variant",
+        "invalid/empty review",
+        "QA references",
+        "review summary",
+        "QA failure retains values",
+        "successful QA receipt"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V11",
+      "label": "Saved pieces and receipt",
+      "routes": [
+        "/saved-pieces",
+        "/inquiry/received"
+      ],
+      "reference": [
+        "/shop/wishlist",
+        "/whatsapp-order"
+      ],
+      "states": [
+        "saved empty/populated/remove",
+        "unavailable receipt",
+        "existing authorized QA receipt and copy/manual controls",
+        "never Send"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V12",
+      "label": "Journal archive",
+      "routes": [
+        "/journal"
+      ],
+      "reference": [
+        "/blog"
+      ],
+      "states": [
+        "full intro/featured/filters/archive/pagination",
+        "expanded filters",
+        "first/last/no results",
+        "long title",
+        "hover/focus cards"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V13",
+      "label": "Article reading",
+      "routes": [
+        "/journal/[observed published slug]"
+      ],
+      "reference": [
+        "/blog/[observed real slug]"
+      ],
+      "states": [
+        "full title/cover/caption/TOC/body/related",
+        "longest title",
+        "TOC target",
+        "structured lists/quotes/links/media",
+        "actual reviewed locales/fallback"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V14",
+      "label": "Portfolio and testimonials",
+      "routes": [
+        "/portfolio",
+        "/portfolio/[observed published slug]",
+        "/testimonials",
+        "/testimonials/[observed published slug]"
+      ],
+      "reference": [
+        "/portfolio",
+        "/portfolio/[observed real slug]"
+      ],
+      "states": [
+        "archive full/filtered-empty",
+        "concept/fictional disclosure",
+        "detail body/gallery/facts/related",
+        "gallery dialog",
+        "attribution wrapping"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V15",
+      "label": "FAQ index/detail",
+      "routes": [
+        "/faq",
+        "/faq/[observed published slug]"
+      ],
+      "reference": [
+        "/faq"
+      ],
+      "states": [
+        "filters/count/page",
+        "questions closed/open",
+        "cross-page hash",
+        "filtered hash navigation",
+        "no results/clear",
+        "detail guidance/policy"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V16",
+      "label": "Six policies and print",
+      "routes": [
+        "/privacy",
+        "/terms",
+        "/imprint",
+        "/shipping-delivery",
+        "/returns-cancellations",
+        "/accessibility"
+      ],
+      "reference": [
+        "/privacy",
+        "/terms"
+      ],
+      "states": [
+        "full content and lower links for every policy",
+        "TOC focus",
+        "print first/middle/last pages",
+        "no omitted/clipped text"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V17",
+      "label": "Sixteen landing blocks",
+      "routes": [
+        "/p/m5-qa-5fbbce86",
+        "/p/m5-qa-5fbbce86-video"
+      ],
+      "reference": [
+        "/p/[observed real slug]"
+      ],
+      "states": [
+        "all 16 types",
+        "imageCta start/end",
+        "testimonial editorial/featured",
+        "masonry/bento/fullscreen",
+        "gallery dialog keyboard",
+        "FAQ open",
+        "films",
+        "QA disabled/unavailable reference states"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V18",
+      "label": "Conditional/system states",
+      "routes": [
+        "/workshops",
+        "/a-missing-m10-page",
+        "/preview/states",
+        "/studio/preview/states"
+      ],
+      "reference": [
+        "/workshops",
+        "/gone",
+        "/maintenance",
+        "/too-many-requests",
+        "/design-lab"
+      ],
+      "states": [
+        "real 410/404;14 public gallery presentations;10 authoring gallery presentations",
+        "long/missing/error/loading/retry"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V19",
+      "label": "Authentication",
+      "routes": [
+        "/studio/login"
+      ],
+      "reference": [
+        "/studio/login",
+        "/studio/signup",
+        "/studio/forgot-password",
+        "/studio/reset-password"
+      ],
+      "states": [
+        "initial and error",
+        "focus",
+        "supported access flow",
+        "old signup/recovery policy redirects",
+        "QA session-expiry"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V20",
+      "label": "Studio navigation",
+      "routes": [
+        "/studio"
+      ],
+      "reference": [
+        "/studio"
+      ],
+      "states": [
+        "five groups expanded/collapsed",
+        "mobile drawer scroll/Escape",
+        "finder results/empty",
+        "focus restoration"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V21",
+      "label": "Overview analytics activity exports",
+      "routes": [
+        "/studio",
+        "/studio/analytics",
+        "/studio/activity",
+        "/studio/exports"
+      ],
+      "reference": [
+        "/studio",
+        "/studio/analytics",
+        "/studio/activity",
+        "/studio/exports"
+      ],
+      "states": [
+        "all modules full",
+        "analytics dates/stages/empty",
+        "activity histories bottom",
+        "export filters/retention/table scroller"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V22",
+      "label": "Orders and follow-ups",
+      "routes": [
+        "/studio/inquiries",
+        "/studio/follow-ups"
+      ],
+      "reference": [
+        "/studio/inquiries",
+        "/studio/inquiries/[observed real id]"
+      ],
+      "states": [
+        "list/board",
+        "stages/more filters/IST",
+        "no results/clear",
+        "QA dialog every section",
+        "notes/history/reference state",
+        "unsaved manual create"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V23",
+      "label": "Saved order card",
+      "routes": [
+        "/studio/inquiries/[existing QA uuid]/card"
+      ],
+      "reference": [
+        "/studio/inquiries/[observed real id]/card"
+      ],
+      "states": [
+        "screen desktop/mobile",
+        "Return/Print focus",
+        "print first/middle/last",
+        "long facts",
+        "unavailable/unauthorized"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V24",
+      "label": "Catalogue forms categories",
+      "routes": [
+        "/studio/products",
+        "/studio/products?record=DP001",
+        "/studio/products?create=1",
+        "/studio/forms?record=DP001",
+        "/studio/categories"
+      ],
+      "reference": [
+        "/studio/products",
+        "/studio/products/[observed real id]",
+        "/studio/products/new",
+        "/studio/forms",
+        "/studio/categories"
+      ],
+      "states": [
+        "list/full/empty/page",
+        "saved protected editor",
+        "unsaved new",
+        "General/Details/Images/Translations/History/Customization tabs",
+        "condition form preview",
+        "category groups",
+        "keyboard tabs"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V25",
+      "label": "Media and usage",
+      "routes": [
+        "/studio/media",
+        "/studio/site-images"
+      ],
+      "reference": [
+        "/studio/media",
+        "/studio/site-images"
+      ],
+      "states": [
+        "library/selected detail",
+        "metadata/crop/history/usages",
+        "header/section usages",
+        "desktop/mobile crop preview",
+        "unavailable choice"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V26",
+      "label": "Page design and workshop",
+      "routes": [
+        "/studio/sections"
+      ],
+      "reference": [
+        "/studio/sections"
+      ],
+      "states": [
+        "full 18 slots",
+        "seven design panels/bindings/shared",
+        "comparison",
+        "preview/publish/history",
+        "expanded workshop template",
+        "existing saved private workshop seven slots"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V27",
+      "label": "Copy process material editors",
+      "routes": [
+        "/studio/site-copy",
+        "/studio/process",
+        "/studio/materials"
+      ],
+      "reference": [
+        "/studio/site-copy",
+        "/studio/process",
+        "/studio/materials"
+      ],
+      "states": [
+        "full fields/sections",
+        "selected section",
+        "structured material/stage fields",
+        "revisions/comparison",
+        "long locales"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V28",
+      "label": "Editorial lists",
+      "routes": [
+        "/studio/journal",
+        "/studio/portfolio",
+        "/studio/testimonials",
+        "/studio/faqs",
+        "/studio/pages",
+        "/studio/landing-pages",
+        "/studio/content"
+      ],
+      "reference": [
+        "/studio/blog",
+        "/studio/portfolio",
+        "/studio/testimonials",
+        "/studio/faqs",
+        "/studio/pages",
+        "/studio/custom-pages"
+      ],
+      "states": [
+        "each area full or empty",
+        "More filters;12 parameter controls/chips",
+        "first/last/zero",
+        "return retains filters",
+        "loading/error/retry"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V29",
+      "label": "Six editorial editor kinds",
+      "routes": [
+        "/studio/journal?create=1",
+        "/studio/portfolio?create=1",
+        "/studio/testimonials?create=1",
+        "/studio/faqs?create=1",
+        "/studio/pages?create=1",
+        "/studio/landing-pages?create=1",
+        "/studio/journal?record=DB028"
+      ],
+      "reference": [
+        "/studio/blog/new",
+        "/studio/blog/[observed id]",
+        "/studio/portfolio/new",
+        "/studio/portfolio/[observed id]",
+        "/studio/testimonials/new",
+        "/studio/testimonials/[observed id]",
+        "/studio/pages/[observed id]",
+        "/studio/custom-pages/new",
+        "/studio/custom-pages/[observed id]"
+      ],
+      "states": [
+        "six unsaved editor kinds full",
+        "saved editor/history",
+        "portfolio facts/gallery",
+        "testimonial evidence/attribution",
+        "FAQ policy",
+        "page sections;16 landing controls",
+        "blocker focus",
+        "dirty-leave cancel"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V30",
+      "label": "Ordering and register",
+      "routes": [
+        "/studio/editorial-order",
+        "/studio/content-register"
+      ],
+      "reference": [],
+      "states": [
+        "all ordering scopes",
+        "move first/last states",
+        "previews/history",
+        "four 120-entry groups/filter/list/batch panels",
+        "dependency/review fields"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V31",
+      "label": "Research SEO Lab",
+      "routes": [
+        "/studio/research",
+        "/studio/seo",
+        "/studio/content-lab"
+      ],
+      "reference": [
+        "/studio/research",
+        "/studio/seo",
+        "/studio/content-lab"
+      ],
+      "states": [
+        "every full panel",
+        "record links",
+        "metric wrapping",
+        "list/page/empty"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V32",
+      "label": "Health and gaps",
+      "routes": [
+        "/studio/content-health",
+        "/studio/content-gaps"
+      ],
+      "reference": [
+        "/studio/content-health",
+        "/studio/content-gaps"
+      ],
+      "states": [
+        "25-row/card pages",
+        "filters/chips",
+        "first/last/zero",
+        "wide table scroll/focus",
+        "failed-refresh/stale/retry"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V33",
+      "label": "Settings staff navigation",
+      "routes": [
+        "/studio/settings",
+        "/studio/staff",
+        "/studio/navigation"
+      ],
+      "reference": [
+        "/studio/settings",
+        "/studio/users",
+        "/studio/navigation"
+      ],
+      "states": [
+        "protected business fields",
+        "service/privacy/cleanup",
+        "staff role/status",
+        "navigation ordering/language",
+        "no mutations"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V34",
+      "label": "Retained workspaces",
+      "routes": [
+        "/studio/translations",
+        "/studio/legacy",
+        "/studio/route-review"
+      ],
+      "reference": [],
+      "states": [
+        "translation record/locale/status/compare",
+        "legacy decisions",
+        "publication/route reports",
+        "empty and scrollers"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V35",
+      "label": "Conditional Studio tools",
+      "routes": [
+        "/studio/import",
+        "/studio/subscribers"
+      ],
+      "reference": [
+        "/studio/import",
+        "/studio/subscribers"
+      ],
+      "states": [
+        "full conditional/disabled reasons",
+        "focus on valid next links",
+        "no ingestion/subscription"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    },
+    {
+      "id": "V36",
+      "label": "Saved previews and references",
+      "routes": [
+        "/studio/preview",
+        "/studio/presentation/preview",
+        "/studio/editorial-order/preview",
+        "/studio/reference/[existing QA id]"
+      ],
+      "reference": [
+        "/design-lab"
+      ],
+      "states": [
+        "read exact saved links from Studio",
+        "desktop/mobile viewport/notice",
+        "loading/error/retry/unavailable revision",
+        "QA reference viewer"
+      ],
+      "status": "awaiting-browser-evidence",
+      "evidence": []
+    }
+  ],
+  "oldRouteRows": [
+    {
+      "oldRoute": "/about",
+      "oldSource": "src/app/[locale]/(v2)/about/page.tsx",
+      "target": "/our-story",
+      "task": "V03",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/blog",
+      "oldSource": "src/app/[locale]/(v2)/blog/(index)/page.tsx",
+      "target": "/journal",
+      "task": "V12",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/blog/[slug]",
+      "oldSource": "src/app/[locale]/(v2)/blog/[slug]/page.tsx",
+      "target": "/journal/[slug] — verified identity only",
+      "task": "V13",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": "Observe an actual old record; if absent, record reference-limited rather than pixel parity."
+    },
+    {
+      "oldRoute": "/contact",
+      "oldSource": "src/app/[locale]/(v2)/contact/page.tsx",
+      "target": "/contact",
+      "task": "V07",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/custom-order",
+      "oldSource": "src/app/[locale]/(v2)/custom-order/page.tsx",
+      "target": "/commission",
+      "task": "V06",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/faq",
+      "oldSource": "src/app/[locale]/(v2)/faq/page.tsx",
+      "target": "/faq",
+      "task": "V15",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/large-resin-art",
+      "oldSource": "src/app/[locale]/(v2)/large-resin-art/page.tsx",
+      "target": "/collectible-design",
+      "task": "V05",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/p/[slug]",
+      "oldSource": "src/app/[locale]/(v2)/p/[slug]/page.tsx",
+      "target": "/p/[slug] — verified identity only",
+      "task": "V17",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": "Observe an actual old record; if absent, record reference-limited rather than pixel parity."
+    },
+    {
+      "oldRoute": "/",
+      "oldSource": "src/app/[locale]/(v2)/page.tsx",
+      "target": "/",
+      "task": "V02",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/portfolio",
+      "oldSource": "src/app/[locale]/(v2)/portfolio/(index)/page.tsx",
+      "target": "/portfolio",
+      "task": "V14",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/portfolio/[slug]",
+      "oldSource": "src/app/[locale]/(v2)/portfolio/[slug]/page.tsx",
+      "target": "/portfolio/[slug] — verified identity only",
+      "task": "V14",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": "Observe an actual old record; if absent, record reference-limited rather than pixel parity."
+    },
+    {
+      "oldRoute": "/privacy",
+      "oldSource": "src/app/[locale]/(v2)/privacy/page.tsx",
+      "target": "/privacy",
+      "task": "V16",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/process",
+      "oldSource": "src/app/[locale]/(v2)/process/page.tsx",
+      "target": "/process",
+      "task": "V04",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/product/[slug]",
+      "oldSource": "src/app/[locale]/(v2)/product/[slug]/page.tsx",
+      "target": "/pieces/[slug] — verified identity only",
+      "task": "V09",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": "Observe an actual old record; if absent, record reference-limited rather than pixel parity."
+    },
+    {
+      "oldRoute": "/search",
+      "oldSource": "src/app/[locale]/(v2)/search/page.tsx",
+      "target": "/search",
+      "task": "V08",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/shop",
+      "oldSource": "src/app/[locale]/(v2)/shop/(index)/page.tsx",
+      "target": "/search plus current collection discovery — final alias audited in M1",
+      "task": "V08",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/shop/[category]",
+      "oldSource": "src/app/[locale]/(v2)/shop/[category]/page.tsx",
+      "target": "/[collection] or category-filter view — identity mapping required",
+      "task": "V05",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/shop/wishlist",
+      "oldSource": "src/app/[locale]/(v2)/shop/wishlist/page.tsx",
+      "target": "/saved-pieces",
+      "task": "V11",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/terms",
+      "oldSource": "src/app/[locale]/(v2)/terms/page.tsx",
+      "target": "/terms",
+      "task": "V16",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/whatsapp-order",
+      "oldSource": "src/app/[locale]/(v2)/whatsapp-order/page.tsx",
+      "target": "/inquiry/received — current authorization required",
+      "task": "V11",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/workshops",
+      "oldSource": "src/app/[locale]/(v2)/workshops/page.tsx",
+      "target": "/workshops — proposed conditional template",
+      "task": "V18",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/gone",
+      "oldSource": "src/app/[locale]/gone/page.tsx",
+      "target": "Existing gone/legacy handler and private state preview",
+      "task": "V18",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/maintenance",
+      "oldSource": "src/app/[locale]/maintenance/page.tsx",
+      "target": "Existing holding state and private state preview",
+      "task": "V18",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/too-many-requests",
+      "oldSource": "src/app/[locale]/too-many-requests/page.tsx",
+      "target": "Existing rate-limit state and private state preview",
+      "task": "V18",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/design-lab",
+      "oldSource": "src/app/design-lab/page.tsx",
+      "target": "/preview/states — private reference equivalent",
+      "task": "V18",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/activity",
+      "oldSource": "src/app/studio/(dashboard)/activity/page.tsx",
+      "target": "/studio/activity; list or workspace",
+      "task": "V21",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/analytics",
+      "oldSource": "src/app/studio/(dashboard)/analytics/page.tsx",
+      "target": "/studio/analytics — proposed; list or workspace",
+      "task": "V21",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/blog/[id]",
+      "oldSource": "src/app/studio/(dashboard)/blog/[id]/page.tsx",
+      "target": "/studio/journal — current alias; dedicated view proposed; record detail/edit",
+      "task": "V29",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": "Observe an actual old record; if absent, record reference-limited rather than pixel parity."
+    },
+    {
+      "oldRoute": "/studio/blog/new",
+      "oldSource": "src/app/studio/(dashboard)/blog/new/page.tsx",
+      "target": "/studio/journal — current alias; dedicated view proposed; new record",
+      "task": "V29",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/blog",
+      "oldSource": "src/app/studio/(dashboard)/blog/page.tsx",
+      "target": "/studio/journal — current alias; dedicated view proposed; list or workspace",
+      "task": "V28",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/catalog-fill/conflicts",
+      "oldSource": "src/app/studio/(dashboard)/catalog-fill/conflicts/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/catalog-fill",
+      "oldSource": "src/app/studio/(dashboard)/catalog-fill/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/categories",
+      "oldSource": "src/app/studio/(dashboard)/categories/page.tsx",
+      "target": "/studio/categories — proposed; list or workspace",
+      "task": "V24",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/content-gaps",
+      "oldSource": "src/app/studio/(dashboard)/content-gaps/page.tsx",
+      "target": "/studio/content-gaps — proposed; list or workspace",
+      "task": "V32",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/content-health",
+      "oldSource": "src/app/studio/(dashboard)/content-health/page.tsx",
+      "target": "/studio/content-health; list or workspace",
+      "task": "V32",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/content-lab",
+      "oldSource": "src/app/studio/(dashboard)/content-lab/page.tsx",
+      "target": "/studio/content-lab — proposed; list or workspace",
+      "task": "V31",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/custom-pages/[id]",
+      "oldSource": "src/app/studio/(dashboard)/custom-pages/[id]/page.tsx",
+      "target": "/studio/landing-pages — proposed; record detail/edit",
+      "task": "V29",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": "Observe an actual old record; if absent, record reference-limited rather than pixel parity."
+    },
+    {
+      "oldRoute": "/studio/custom-pages/new",
+      "oldSource": "src/app/studio/(dashboard)/custom-pages/new/page.tsx",
+      "target": "/studio/landing-pages — proposed; new record",
+      "task": "V29",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/custom-pages",
+      "oldSource": "src/app/studio/(dashboard)/custom-pages/page.tsx",
+      "target": "/studio/landing-pages — proposed; list or workspace",
+      "task": "V28",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/exports",
+      "oldSource": "src/app/studio/(dashboard)/exports/page.tsx",
+      "target": "/studio/exports — proposed; list or workspace",
+      "task": "V21",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/faqs",
+      "oldSource": "src/app/studio/(dashboard)/faqs/page.tsx",
+      "target": "/studio/faqs — proposed; list or workspace",
+      "task": "V28",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/forms",
+      "oldSource": "src/app/studio/(dashboard)/forms/page.tsx",
+      "target": "/studio/forms — current alias; dedicated view proposed; list or workspace",
+      "task": "V24",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/import",
+      "oldSource": "src/app/studio/(dashboard)/import/page.tsx",
+      "target": "/studio/import — proposed, existing product mutations held; list or workspace",
+      "task": "V35",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/inquiries/[id]",
+      "oldSource": "src/app/studio/(dashboard)/inquiries/[id]/page.tsx",
+      "target": "/studio/inquiries; record detail/edit",
+      "task": "V22",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": "Observe an actual old record; if absent, record reference-limited rather than pixel parity."
+    },
+    {
+      "oldRoute": "/studio/inquiries",
+      "oldSource": "src/app/studio/(dashboard)/inquiries/page.tsx",
+      "target": "/studio/inquiries; list or workspace",
+      "task": "V22",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/materials",
+      "oldSource": "src/app/studio/(dashboard)/materials/page.tsx",
+      "target": "/studio/materials — proposed; list or workspace",
+      "task": "V27",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/media",
+      "oldSource": "src/app/studio/(dashboard)/media/page.tsx",
+      "target": "/studio/media; list or workspace",
+      "task": "V25",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/navigation",
+      "oldSource": "src/app/studio/(dashboard)/navigation/page.tsx",
+      "target": "/studio/navigation; list or workspace",
+      "task": "V33",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio",
+      "oldSource": "src/app/studio/(dashboard)/page.tsx",
+      "target": "/studio",
+      "task": "V21",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/pages/[id]",
+      "oldSource": "src/app/studio/(dashboard)/pages/[id]/page.tsx",
+      "target": "/studio/pages — current alias; dedicated view proposed; record detail/edit",
+      "task": "V29",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": "Observe an actual old record; if absent, record reference-limited rather than pixel parity."
+    },
+    {
+      "oldRoute": "/studio/pages",
+      "oldSource": "src/app/studio/(dashboard)/pages/page.tsx",
+      "target": "/studio/pages — current alias; dedicated view proposed; list or workspace",
+      "task": "V28",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/portfolio/[id]",
+      "oldSource": "src/app/studio/(dashboard)/portfolio/[id]/page.tsx",
+      "target": "/studio/portfolio — proposed; record detail/edit",
+      "task": "V29",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": "Observe an actual old record; if absent, record reference-limited rather than pixel parity."
+    },
+    {
+      "oldRoute": "/studio/portfolio/new",
+      "oldSource": "src/app/studio/(dashboard)/portfolio/new/page.tsx",
+      "target": "/studio/portfolio — proposed; new record",
+      "task": "V29",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/portfolio",
+      "oldSource": "src/app/studio/(dashboard)/portfolio/page.tsx",
+      "target": "/studio/portfolio — proposed; list or workspace",
+      "task": "V28",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/process",
+      "oldSource": "src/app/studio/(dashboard)/process/page.tsx",
+      "target": "/studio/process — proposed; list or workspace",
+      "task": "V27",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/products/[id]",
+      "oldSource": "src/app/studio/(dashboard)/products/[id]/page.tsx",
+      "target": "/studio/products; record detail/edit",
+      "task": "V24",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": "Observe an actual old record; if absent, record reference-limited rather than pixel parity."
+    },
+    {
+      "oldRoute": "/studio/products/new",
+      "oldSource": "src/app/studio/(dashboard)/products/new/page.tsx",
+      "target": "/studio/products; new record",
+      "task": "V24",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/products",
+      "oldSource": "src/app/studio/(dashboard)/products/page.tsx",
+      "target": "/studio/products; list or workspace",
+      "task": "V24",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/research",
+      "oldSource": "src/app/studio/(dashboard)/research/page.tsx",
+      "target": "/studio/research — proposed; list or workspace",
+      "task": "V31",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/scraper/analytics",
+      "oldSource": "src/app/studio/(dashboard)/scraper/analytics/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/scraper/confirmed",
+      "oldSource": "src/app/studio/(dashboard)/scraper/confirmed/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/scraper/explorer",
+      "oldSource": "src/app/studio/(dashboard)/scraper/explorer/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/scraper/large-format",
+      "oldSource": "src/app/studio/(dashboard)/scraper/large-format/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/scraper/mapping",
+      "oldSource": "src/app/studio/(dashboard)/scraper/mapping/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/scraper",
+      "oldSource": "src/app/studio/(dashboard)/scraper/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/scraper/quality",
+      "oldSource": "src/app/studio/(dashboard)/scraper/quality/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/scraper/review",
+      "oldSource": "src/app/studio/(dashboard)/scraper/review/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/scraper/runs",
+      "oldSource": "src/app/studio/(dashboard)/scraper/runs/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/scraper/sources/[key]",
+      "oldSource": "src/app/studio/(dashboard)/scraper/sources/[key]/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/scraper/sources",
+      "oldSource": "src/app/studio/(dashboard)/scraper/sources/page.tsx",
+      "target": "Scope ledger only; no activated production route",
+      "task": null,
+      "status": "excluded-scraper-or-ingestion",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/sections",
+      "oldSource": "src/app/studio/(dashboard)/sections/page.tsx",
+      "target": "/studio/sections — proposed; list or workspace",
+      "task": "V26",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/seo",
+      "oldSource": "src/app/studio/(dashboard)/seo/page.tsx",
+      "target": "/studio/seo — proposed; list or workspace",
+      "task": "V31",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/settings",
+      "oldSource": "src/app/studio/(dashboard)/settings/page.tsx",
+      "target": "/studio/settings; list or workspace",
+      "task": "V33",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/site-copy",
+      "oldSource": "src/app/studio/(dashboard)/site-copy/page.tsx",
+      "target": "/studio/site-copy; list or workspace",
+      "task": "V27",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/site-images",
+      "oldSource": "src/app/studio/(dashboard)/site-images/page.tsx",
+      "target": "/studio/site-images; list or workspace",
+      "task": "V25",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/subscribers",
+      "oldSource": "src/app/studio/(dashboard)/subscribers/page.tsx",
+      "target": "/studio/subscribers — conditional proposal; list or workspace",
+      "task": "V35",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/testimonials/[id]",
+      "oldSource": "src/app/studio/(dashboard)/testimonials/[id]/page.tsx",
+      "target": "/studio/testimonials — proposed; record detail/edit",
+      "task": "V29",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": "Observe an actual old record; if absent, record reference-limited rather than pixel parity."
+    },
+    {
+      "oldRoute": "/studio/testimonials/new",
+      "oldSource": "src/app/studio/(dashboard)/testimonials/new/page.tsx",
+      "target": "/studio/testimonials — proposed; new record",
+      "task": "V29",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/testimonials",
+      "oldSource": "src/app/studio/(dashboard)/testimonials/page.tsx",
+      "target": "/studio/testimonials — proposed; list or workspace",
+      "task": "V28",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/users",
+      "oldSource": "src/app/studio/(dashboard)/users/page.tsx",
+      "target": "/studio/staff; list or workspace",
+      "task": "V33",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/forgot-password",
+      "oldSource": "src/app/studio/forgot-password/page.tsx",
+      "target": "/studio/login and current supported recovery/access flow",
+      "task": "V19",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/inquiries/[id]/card",
+      "oldSource": "src/app/studio/inquiries/[id]/card/page.tsx",
+      "target": "/studio/inquiries; print/card",
+      "task": "V23",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": "Observe an actual old record; if absent, record reference-limited rather than pixel parity."
+    },
+    {
+      "oldRoute": "/studio/login",
+      "oldSource": "src/app/studio/login/page.tsx",
+      "target": "/studio/login and current supported recovery/access flow",
+      "task": "V19",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/reset-password",
+      "oldSource": "src/app/studio/reset-password/page.tsx",
+      "target": "/studio/login and current supported recovery/access flow",
+      "task": "V19",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    },
+    {
+      "oldRoute": "/studio/signup",
+      "oldSource": "src/app/studio/signup/page.tsx",
+      "target": "/studio/login and current supported recovery/access flow",
+      "task": "V19",
+      "status": "awaiting-browser-evidence",
+      "referenceLimit": null
+    }
+  ],
+  "oldSectionRows": [
+    {
+      "group": "HOME",
+      "key": "pour",
+      "label": "Hero",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "manifesto",
+      "label": "Manifesto",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "pieces",
+      "label": "Featured pieces",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "large-format",
+      "label": "Large format",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "material",
+      "label": "The material story",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "collections",
+      "label": "The collections",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "furniture",
+      "label": "What we commission",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": true,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "maker",
+      "label": "The maker",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "rooms",
+      "label": "In the room",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": true,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "work",
+      "label": "Recent commissions",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "words",
+      "label": "In their words",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "bespoke",
+      "label": "Commission band",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "workshops",
+      "label": "Workshops",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": true,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "print",
+      "label": "Print studio",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": true,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "process",
+      "label": "How it works",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "why",
+      "label": "Why Rivya Living Art",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "journal",
+      "label": "Journal",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "HOME",
+      "key": "closing",
+      "label": "Closing invitation",
+      "task": "V02",
+      "target": "/",
+      "selector": "[data-home-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "ABOUT",
+      "key": "hero",
+      "label": "Hero",
+      "task": "V03",
+      "target": "/our-story",
+      "selector": "[data-chapter-template], [data-shared-page]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "ABOUT",
+      "key": "story",
+      "label": "The story",
+      "task": "V03",
+      "target": "/our-story",
+      "selector": "[data-chapter-template], [data-shared-page]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "ABOUT",
+      "key": "maker",
+      "label": "The maker",
+      "task": "V03",
+      "target": "/our-story",
+      "selector": "[data-chapter-template], [data-shared-page]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "ABOUT",
+      "key": "craft",
+      "label": "The craft",
+      "task": "V03",
+      "target": "/our-story",
+      "selector": "[data-chapter-template], [data-shared-page]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "ABOUT",
+      "key": "materials",
+      "label": "Materials",
+      "task": "V03",
+      "target": "/our-story",
+      "selector": "[data-chapter-template], [data-shared-page]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "ABOUT",
+      "key": "studio",
+      "label": "The studio",
+      "task": "V03",
+      "target": "/our-story",
+      "selector": "[data-chapter-template], [data-shared-page]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "ABOUT",
+      "key": "closing",
+      "label": "Closing invitation",
+      "task": "V03",
+      "target": "/our-story",
+      "selector": "[data-chapter-template], [data-shared-page]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "PROCESS",
+      "key": "pour",
+      "label": "Hero",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-editorial=\"process\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "PROCESS",
+      "key": "stages",
+      "label": "The ten stages",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-editorial=\"process\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "PROCESS",
+      "key": "materials",
+      "label": "Materials",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-editorial=\"process\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "PROCESS",
+      "key": "timelines",
+      "label": "Timelines",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-editorial=\"process\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "PROCESS",
+      "key": "closing",
+      "label": "Closing invitation",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-editorial=\"process\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "PROCESS_STEPS_LIST",
+      "key": "step1",
+      "label": "01 · Concept",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-stage=\"making\"][data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "PROCESS_STEPS_LIST",
+      "key": "step2",
+      "label": "02 · Material selection",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-stage=\"making\"][data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "PROCESS_STEPS_LIST",
+      "key": "step3",
+      "label": "03 · Wood preparation",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-stage=\"making\"][data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "PROCESS_STEPS_LIST",
+      "key": "step4",
+      "label": "04 · Resin composition",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-stage=\"making\"][data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "PROCESS_STEPS_LIST",
+      "key": "step5",
+      "label": "05 · Casting",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-stage=\"making\"][data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "PROCESS_STEPS_LIST",
+      "key": "step6",
+      "label": "06 · Curing",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-stage=\"making\"][data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "PROCESS_STEPS_LIST",
+      "key": "step7",
+      "label": "07 · Surface refinement",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-stage=\"making\"][data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "PROCESS_STEPS_LIST",
+      "key": "step8",
+      "label": "08 · Hand finishing",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-stage=\"making\"][data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "PROCESS_STEPS_LIST",
+      "key": "step9",
+      "label": "09 · Quality inspection",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-stage=\"making\"][data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "PROCESS_STEPS_LIST",
+      "key": "step10",
+      "label": "10 · Delivery",
+      "task": "V04",
+      "target": "/process",
+      "selector": "[data-stage=\"making\"][data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "MATERIALS_LIST",
+      "key": "m1",
+      "label": "Material 1",
+      "task": "V04",
+      "target": "/materials-care",
+      "selector": "[data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "MATERIALS_LIST",
+      "key": "m2",
+      "label": "Material 2",
+      "task": "V04",
+      "target": "/materials-care",
+      "selector": "[data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "MATERIALS_LIST",
+      "key": "m3",
+      "label": "Material 3",
+      "task": "V04",
+      "target": "/materials-care",
+      "selector": "[data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "MATERIALS_LIST",
+      "key": "m4",
+      "label": "Material 4",
+      "task": "V04",
+      "target": "/materials-care",
+      "selector": "[data-reference-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Binding requires eligible existing published facts; empty slots do not authorize invented facts."
+    },
+    {
+      "group": "CUSTOM_ORDER",
+      "key": "commission",
+      "label": "Hero",
+      "task": "V06",
+      "target": "/commission",
+      "selector": "[data-editorial=\"commission\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "CUSTOM_ORDER",
+      "key": "kinds",
+      "label": "What people commission",
+      "task": "V06",
+      "target": "/commission",
+      "selector": "[data-editorial=\"commission\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "CUSTOM_ORDER",
+      "key": "how",
+      "label": "How a commission runs",
+      "task": "V06",
+      "target": "/commission",
+      "selector": "[data-editorial=\"commission\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "CUSTOM_ORDER",
+      "key": "brief",
+      "label": "The brief",
+      "task": "V06",
+      "target": "/commission",
+      "selector": "[data-editorial=\"commission\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "CUSTOM_ORDER",
+      "key": "questions",
+      "label": "Questions",
+      "task": "V06",
+      "target": "/commission",
+      "selector": "[data-editorial=\"commission\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "CUSTOM_ORDER",
+      "key": "work",
+      "label": "Commissioned before",
+      "task": "V06",
+      "target": "/commission",
+      "selector": "[data-editorial=\"commission\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "CUSTOM_ORDER",
+      "key": "words",
+      "label": "In their words",
+      "task": "V06",
+      "target": "/commission",
+      "selector": "[data-editorial=\"commission\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "CONTACT",
+      "key": "hero",
+      "label": "Hero",
+      "task": "V07",
+      "target": "/contact",
+      "selector": "[data-editorial=\"contact\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "CONTACT",
+      "key": "channels",
+      "label": "Four ways in",
+      "task": "V07",
+      "target": "/contact",
+      "selector": "[data-editorial=\"contact\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "CONTACT",
+      "key": "write",
+      "label": "The form",
+      "task": "V07",
+      "target": "/contact",
+      "selector": "[data-editorial=\"contact\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "CONTACT",
+      "key": "faq",
+      "label": "Asked often",
+      "task": "V07",
+      "target": "/contact",
+      "selector": "[data-editorial=\"contact\"]",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "WORKSHOPS",
+      "key": "hero",
+      "label": "Hero",
+      "task": "V26",
+      "target": "Existing saved workshop preview link",
+      "selector": "[data-workshop-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": true,
+      "contentGuard": "Private unconfirmed template; no booking, venue or date claims."
+    },
+    {
+      "group": "WORKSHOPS",
+      "key": "facts",
+      "label": "The facts strip",
+      "task": "V26",
+      "target": "Existing saved workshop preview link",
+      "selector": "[data-workshop-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": true,
+      "contentGuard": "Private unconfirmed template; no booking, venue or date claims."
+    },
+    {
+      "group": "WORKSHOPS",
+      "key": "why",
+      "label": "Why come",
+      "task": "V26",
+      "target": "Existing saved workshop preview link",
+      "selector": "[data-workshop-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": true,
+      "contentGuard": "Private unconfirmed template; no booking, venue or date claims."
+    },
+    {
+      "group": "WORKSHOPS",
+      "key": "session",
+      "label": "The session",
+      "task": "V26",
+      "target": "Existing saved workshop preview link",
+      "selector": "[data-workshop-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": true,
+      "contentGuard": "Private unconfirmed template; no booking, venue or date claims."
+    },
+    {
+      "group": "WORKSHOPS",
+      "key": "sessions",
+      "label": "Sessions",
+      "task": "V26",
+      "target": "Existing saved workshop preview link",
+      "selector": "[data-workshop-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": true,
+      "contentGuard": "Private unconfirmed template; no booking, venue or date claims."
+    },
+    {
+      "group": "WORKSHOPS",
+      "key": "private",
+      "label": "Private workshops",
+      "task": "V26",
+      "target": "Existing saved workshop preview link",
+      "selector": "[data-workshop-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": true,
+      "contentGuard": "Private unconfirmed template; no booking, venue or date claims."
+    },
+    {
+      "group": "WORKSHOPS",
+      "key": "room",
+      "label": "The room",
+      "task": "V26",
+      "target": "Existing saved workshop preview link",
+      "selector": "[data-workshop-slot]",
+      "status": "awaiting-browser-evidence",
+      "conditional": true,
+      "contentGuard": "Private unconfirmed template; no booking, venue or date claims."
+    },
+    {
+      "group": "LARGE_FORMAT",
+      "key": "scale",
+      "label": "Hero",
+      "task": "V05",
+      "target": "/collectible-design",
+      "selector": "Current story/browse/related chapters",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "LARGE_FORMAT",
+      "key": "scope",
+      "label": "Four kinds of large work",
+      "task": "V05",
+      "target": "/collectible-design",
+      "selector": "Current story/browse/related chapters",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "LARGE_FORMAT",
+      "key": "philosophy",
+      "label": "Philosophy",
+      "task": "V05",
+      "target": "/collectible-design",
+      "selector": "Current story/browse/related chapters",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "LARGE_FORMAT",
+      "key": "how",
+      "label": "How it runs",
+      "task": "V05",
+      "target": "/collectible-design",
+      "selector": "Current story/browse/related chapters",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "LARGE_FORMAT",
+      "key": "brief",
+      "label": "What to send",
+      "task": "V05",
+      "target": "/collectible-design",
+      "selector": "Current story/browse/related chapters",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "LARGE_FORMAT",
+      "key": "materials",
+      "label": "Materials",
+      "task": "V05",
+      "target": "/collectible-design",
+      "selector": "Current story/browse/related chapters",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "LARGE_FORMAT",
+      "key": "pieces",
+      "label": "Pieces we commission",
+      "task": "V05",
+      "target": "/collectible-design",
+      "selector": "Current story/browse/related chapters",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "LARGE_FORMAT",
+      "key": "work",
+      "label": "Commissioned before",
+      "task": "V05",
+      "target": "/collectible-design",
+      "selector": "Current story/browse/related chapters",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "LARGE_FORMAT",
+      "key": "words",
+      "label": "In their words",
+      "task": "V05",
+      "target": "/collectible-design",
+      "selector": "Current story/browse/related chapters",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "LARGE_FORMAT",
+      "key": "faq",
+      "label": "Questions",
+      "task": "V05",
+      "target": "/collectible-design",
+      "selector": "Current story/browse/related chapters",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "LARGE_FORMAT",
+      "key": "gallery",
+      "label": "Large pieces",
+      "task": "V05",
+      "target": "/collectible-design",
+      "selector": "Current story/browse/related chapters",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    },
+    {
+      "group": "LARGE_FORMAT",
+      "key": "commission",
+      "label": "Start the conversation",
+      "task": "V05",
+      "target": "/collectible-design",
+      "selector": "Current story/browse/related chapters",
+      "status": "awaiting-browser-evidence",
+      "conditional": false,
+      "contentGuard": "Preserve current words, IDs, crops and media."
+    }
+  ],
+  "landingBlocks": [
+    {
+      "type": "hero",
+      "task": "V17",
+      "selector": "[data-block=\"hero\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "richText",
+      "task": "V17",
+      "selector": "[data-block=\"richText\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "productGrid",
+      "task": "V17",
+      "selector": "[data-block=\"productGrid\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "imageCta",
+      "task": "V17",
+      "selector": "[data-block=\"imageCta\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "faqPicker",
+      "task": "V17",
+      "selector": "[data-block=\"faqPicker\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "finalCta",
+      "task": "V17",
+      "selector": "[data-block=\"finalCta\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "collectionGrid",
+      "task": "V17",
+      "selector": "[data-block=\"collectionGrid\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "portfolioGrid",
+      "task": "V17",
+      "selector": "[data-block=\"portfolioGrid\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "journalGrid",
+      "task": "V17",
+      "selector": "[data-block=\"journalGrid\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "testimonial",
+      "task": "V17",
+      "selector": "[data-block=\"testimonial\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "testimonialGrid",
+      "task": "V17",
+      "selector": "[data-block=\"testimonialGrid\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "videoHero",
+      "task": "V17",
+      "selector": "[data-block=\"videoHero\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "videoStory",
+      "task": "V17",
+      "selector": "[data-block=\"videoStory\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "masonryGallery",
+      "task": "V17",
+      "selector": "[data-block=\"masonryGallery\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "bentoGallery",
+      "task": "V17",
+      "selector": "[data-block=\"bentoGallery\"]",
+      "status": "awaiting-browser-evidence"
+    },
+    {
+      "type": "fullscreenGallery",
+      "task": "V17",
+      "selector": "[data-block=\"fullscreenGallery\"]",
+      "status": "awaiting-browser-evidence"
+    }
+  ],
+  "sourceFindings": [
+    {
+      "id": "SF01",
+      "file": "src/components/studio/inquiry-card.module.css",
+      "finding": "Initial light #fffdf8 card inherited global #b89b63 focus outline: 2.6126412665:1. Root scoped #29261f focus ring gives14.847523:1.",
+      "status": "resolved-for-observed-scope",
+      "evidence": "M10-TECHNICAL-REVIEW.md independently inspected inquiry-card-focus-after.png; all four Return control ring edges visible. Other paths and widths separate."
+    },
+    {
+      "id": "SF02",
+      "file": "src/components/shop/reference-pages.module.css",
+      "finding": "Initial closed material-care details omitted bodies in print. Root revealed closed print bodies while preserving closed screen state.",
+      "status": "reproduced-and-repaired-for-Chromium-print-media",
+      "evidence": "M10-COMPLETION-PASS.md and M10-TECHNICAL-REVIEW.md distinguish before/after viewport pixels from the six-body DOM observation. Full PDF, default background and physical printing separate."
+    },
+    {
+      "id":"SF03",
+      "file":"src/components/shop/material-film.tsx",
+      "finding":"Fresh unscrolled homepage print omitted deferred film still. Root added print-only picture source.",
+      "status":"resolved-poster-omission-independently-rendered-and-inspected",
+      "evidence":"test-results/old-design-migration/m10-full-reference/local-home-film-print-unscrolled.pdf and local-home-film-print-fixed-unscrolled.pdf",
+      "screenBeforePrint":{"scrollY":0,"posterOrMp4ResourceEntries":0,"videoPoster":null,"videoSrc":null},
+      "printAfter":{"scrollY":0,"printPicture":"/media/migration/hero-pour-loop-poster.jpg","naturalWidth":1280},
+      "pixelReview":"Independent technical reviewer used Poppler: 22-page baseline shows heading on page9 and blank native video/0:00 on page10; 21-page final shows blue/gold poster on page9 with controls hidden and description below. Separately discovered skip-link overlay is repaired under SF04.",
+      "excluded":"local-home-film-print-fresh.pdf retained scroll after reload and is not fresh-unscrolled regression proof"
+    },
+    {
+      "id":"SF04",
+      "finding":"Fixed Skip to main content link overlays first words of film description and care text in rendered PDFs.",
+      "status":"resolved-by-independent-final-PDF-pixel-review",
+      "evidence":"M10-TECHNICAL-REVIEW.md; pdf-review-care-clean-1.png and pdf-review-home-clean-09.png opened and inspected. Care title/body unobscured and white caption backing present with print backgrounds off; film poster and both disclosure lines unobscured.",
+      "pdfHashes":{"care-print-clean.pdf":"6f6b57ac670680018bf4526e027101572d34b968d4ab685c038e19f2ead8b331","home-print-clean.pdf":"ecfce2d58a537d9d3a748e0e517ba349050e2afe3a4cdff253d2f403911e3d0e"},
+      "additionalEvidence":"Text extraction found zero skip-link occurrences across3care and21home pages.",
+      "limit":"Observed Chromium PDF defect resolved; physical printing and other browsers separate."
+    }
+  ],
+  "externalGates": [
+    "Actual native browser zoom",
+    "Real screen-reader and physical-phone task logs",
+    "Independent Hindi/Gujarati meaning review",
+    "Factual permission and media-rights evidence",
+    "Field p75 and genuine consent-safe inquiry"
+  ]
+}
+

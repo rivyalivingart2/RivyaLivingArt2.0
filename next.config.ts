@@ -6,7 +6,8 @@ const nextConfig: NextConfig = {
   experimental: { cssChunking: 'graph' },
   images: {
     localPatterns: [{pathname:'/editorial/**',search:''},{pathname:'/media/**',search:''},{pathname:'/brand/**',search:''}],
-    deviceSizes: [360,640,828,1080,1200,1440,1920],
+    // Avoid jumping from 360 to 640 pixels for a 390–420px, DPR 1 viewport.
+    deviceSizes: [360,420,512,640,828,1080,1200,1440,1920],
     imageSizes: [32,64,96,160,256],
     qualities: [60,75],
     // Hosted mobile evidence favours AVIF's smaller transfer despite encoding cost.

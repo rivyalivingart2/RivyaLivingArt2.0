@@ -1,0 +1,227 @@
+{
+  "checkedAt": "2026-10-13T03:40:03.203Z",
+  "productionWrites": false,
+  "localAdditions": "One unpublished synthetic conflict-test article and two saved revisions. No original row modified.",
+  "preservation": [
+    {
+      "mode": "local",
+      "readOnly": true,
+      "scopes": [
+        {
+          "table": "rivya_catalogue",
+          "originalCount": 120,
+          "afterCount": 120,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_content",
+          "originalCount": 601,
+          "afterCount": 602,
+          "missing": 0,
+          "changed": 0,
+          "added": 1
+        },
+        {
+          "table": "rivya_public_media",
+          "originalCount": 152,
+          "afterCount": 152,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_business_settings",
+          "originalCount": 1,
+          "afterCount": 1,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_revisions",
+          "originalCount": 732,
+          "afterCount": 734,
+          "missing": 0,
+          "changed": 0,
+          "added": 2
+        },
+        {
+          "table": "rivya_inquiries",
+          "originalCount": 2,
+          "afterCount": 2,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_studio_orders",
+          "originalCount": 7,
+          "afterCount": 7,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_studio_order_events",
+          "originalCount": 8,
+          "afterCount": 8,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_inquiry_notes",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_references",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_staff",
+          "originalCount": 8,
+          "afterCount": 8,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_privacy_controls",
+          "originalCount": 7,
+          "afterCount": 7,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_erasure_ledger",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        }
+      ]
+    },
+    {
+      "mode": "live-read-only",
+      "readOnly": true,
+      "scopes": [
+        {
+          "table": "rivya_catalogue",
+          "originalCount": 120,
+          "afterCount": 120,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_content",
+          "originalCount": 535,
+          "afterCount": 535,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_public_media",
+          "originalCount": 154,
+          "afterCount": 154,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_business_settings",
+          "originalCount": 1,
+          "afterCount": 1,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_revisions",
+          "originalCount": 1389,
+          "afterCount": 1389,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_inquiries",
+          "originalCount": 2,
+          "afterCount": 2,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_studio_orders",
+          "originalCount": 2,
+          "afterCount": 2,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_studio_order_events",
+          "originalCount": 2,
+          "afterCount": 2,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_inquiry_notes",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_references",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_staff",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_privacy_controls",
+          "originalCount": 2,
+          "afterCount": 2,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_erasure_ledger",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        }
+      ]
+    }
+  ]
+}
