@@ -1,3 +1,12 @@
+# Current checkpoint — modern redesign Phase 5 ready for owner review
+
+13 October 2026: owner approved Phase 4 and authorized Phase 5 only. Studio shell and 24 content/editing workspaces implemented locally on codex/redesign-phase5-studio-editing, parent 157ea4b. Read docs/redesign/modern-design-2026-10-13/CONTINUE.md, PHASE-5-REVIEW.md, phase5-verification.json and phase5-preservation.json first. Gallery: http://127.0.0.1:4182/review; local Studio: http://127.0.0.1:4199/studio/products.
+
+All 1,641 original rows in 13 protected local scopes unchanged. One labelled synthetic FAQ and four revisions added for a guarded local lifecycle check; it ends hidden. Build/types/focused lint, 344 unit/403 runtime and scoped browser checks pass. Reviewer resolved sole F1 and returned ship at local preview scope. Detector unavailable; no new human/native/field or production certification.
+
+**Stop before Phase 6 pending owner preview approval.** Shared shell surrounds operations, but their bodies remain outside Phase 5. No push, PR, release, production publication or Drive changes. Preserve logo/palette/content/functionality and historical evidence below; do not replay old imports/publications. Scrapers, old-product transfers and backups excluded.
+
+---
 # Current checkpoint — modern redesign Phase 4 ready for owner review
 
 13 October 2026: the owner approved Phase 3 and authorized Phase 4 only. Remaining public page families are implemented locally on `codex/redesign-phase4-public-pages`, parent `2a3c9a3`. Read `docs/redesign/modern-design-2026-10-13/CONTINUE.md`, `PHASE-4-REVIEW.md` and `phase4-verification.json` first. Review: http://127.0.0.1:4181/review; app: http://127.0.0.1:4199/.

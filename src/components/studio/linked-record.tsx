@@ -29,5 +29,5 @@ export function useLinkedRecord<T>({editor,records,loaded,selectedId,onSelect,id
 }
 export function LinkedRecordNotice({requested,missing}:{requested:boolean;missing:boolean}){
  if(!requested)return null;
- return <div className={s.panel}>{missing&&<p role="alert">The linked record is unavailable. It may have been removed or your access may have changed. No other record was selected automatically.</p>}<Link href="/studio/content-health">← Return to Content health</Link></div>;
+ return <div data-studio-part="panel" className={s.panel}>{missing&&<p role="alert">The linked record is unavailable. It may have been removed or your access may have changed. No other record was selected automatically.</p>}<Link href="/studio/content-health">← Return to Content health</Link></div>;
 }

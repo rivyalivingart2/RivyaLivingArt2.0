@@ -81,7 +81,7 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "content-register",
@@ -99,7 +99,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "editorial-order",
@@ -117,7 +117,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "content",
@@ -135,7 +135,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "media",
@@ -153,7 +153,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "site-copy",
@@ -171,7 +171,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "sections",
@@ -189,7 +189,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "site-images",
@@ -207,7 +207,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "content-health",
@@ -225,7 +225,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "site-settings",
@@ -279,7 +279,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "route-review",
@@ -387,7 +387,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "import",
@@ -441,7 +441,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "content-gaps",
@@ -459,7 +459,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "process",
@@ -477,7 +477,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "materials",
@@ -495,7 +495,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "forms",
@@ -513,7 +513,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "journal",
@@ -537,7 +537,7 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "portfolio",
@@ -561,7 +561,7 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "testimonials",
@@ -585,7 +585,7 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "faqs",
@@ -609,7 +609,7 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "pages",
@@ -633,7 +633,7 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "landing-pages",
@@ -657,7 +657,7 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "seo",
@@ -675,7 +675,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   },
   {
     "key": "subscribers",
@@ -711,6 +711,6 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "mapped; implementation pending phase approval"
+    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner review pending"
   }
 ]

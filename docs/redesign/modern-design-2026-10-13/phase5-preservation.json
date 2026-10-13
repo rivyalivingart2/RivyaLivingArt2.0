@@ -1,0 +1,96 @@
+{
+  "at": "2026-10-13T12:54:32.688Z",
+  "scope": "Isolated local QA database; 13 inventoried scopes",
+  "originalRows": 1641,
+  "originalsUnchanged": true,
+  "addedRows": 5,
+  "scopes": {
+    "rivya_catalogue": {
+      "original": 120,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 120
+    },
+    "rivya_content": {
+      "original": 602,
+      "originalsUnchanged": true,
+      "added": 1,
+      "after": 603
+    },
+    "rivya_public_media": {
+      "original": 152,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 152
+    },
+    "rivya_business_settings": {
+      "original": 1,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 1
+    },
+    "rivya_revisions": {
+      "original": 734,
+      "originalsUnchanged": true,
+      "added": 4,
+      "after": 738
+    },
+    "rivya_inquiries": {
+      "original": 2,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 2
+    },
+    "rivya_studio_orders": {
+      "original": 7,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 7
+    },
+    "rivya_studio_order_events": {
+      "original": 8,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 8
+    },
+    "rivya_inquiry_notes": {
+      "original": 0,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 0
+    },
+    "rivya_references": {
+      "original": 0,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 0
+    },
+    "rivya_staff": {
+      "original": 8,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 8
+    },
+    "rivya_privacy_controls": {
+      "original": 7,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 7
+    },
+    "rivya_erasure_ledger": {
+      "original": 0,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 0
+    }
+  },
+  "fixture": {
+    "id": "editorial:5dd0187a-a4a7-4bd3-bee3-f29c29f21cbf",
+    "route": "/faq/phase5-qa-5dd0187a",
+    "version": 4,
+    "publishedVersion": 3,
+    "visible": false,
+    "purpose": "Clearly labelled synthetic local save/publish/hide check"
+  },
+  "limits": "No production snapshot. Session and rate-limit bookkeeping outside this inventory. Private IDs and hashes remain ignored."
+}

@@ -3,6 +3,7 @@ import {memo,useCallback,useEffect,useState,type ReactNode} from 'react';
 import {studioModules,studioModule,studioModuleHref,type StudioModuleKey} from '@/lib/studio-modules';
 import {usePathname} from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import {Dialog} from '@/components/shop/dialog';
 import {studioDestinations} from '@/lib/studio-work-queue';
 import {
@@ -24,6 +25,11 @@ import dynamic from 'next/dynamic';
 import {logoutAdmin} from '@/app/studio/login/actions';
 import {studioFetch,type StaffMember,type WorkspaceIdentity} from './workspace-api';
 import s from './workspace.module.css';
+import design from './studio-editing.module.css';
+
+// Phase 5 changes shared navigation and content authoring only. Operational
+// workspace bodies keep their current presentation until Phase 6 is approved.
+const contentWorkspaces=new Set<StudioModuleKey>(['products','content-register','editorial-order','content','media','site-copy','sections','site-images','content-health','translations','categories','research','content-gaps','process','materials','forms','journal','portfolio','testimonials','faqs','pages','landing-pages','seo','content-lab']);
 
 const InquiryBoard=dynamic(()=>import('./inquiry-board').then(m=>m.InquiryBoard),{loading:WorkspaceLoading});
 const CatalogueEditor=dynamic(()=>import('./catalogue-editor').then(m=>m.CatalogueEditor),{loading:WorkspaceLoading});
@@ -46,7 +52,7 @@ const AnalyticsPanel=dynamic(()=>import('./analytics-panel').then(m=>m.Analytics
 const CatalogueCategories=dynamic(()=>import('./catalogue-categories').then(m=>m.CatalogueCategories),{loading:WorkspaceLoading});
 const EditorialDesk=dynamic(()=>import('./editorial-desk').then(m=>m.EditorialDesk),{loading:WorkspaceLoading});
 const ConditionalWorkspace=dynamic(()=>import('./conditional-workspace').then(m=>m.ConditionalWorkspace),{loading:WorkspaceLoading});
-function WorkspaceLoading(){return <p className={s.status} role="status">Opening this workspace page…</p>;}
+function WorkspaceLoading(){return <p data-studio-part="status" className={s.status} role="status">Opening this workspace page…</p>;}
 
 const moduleIcons = {'content-register':FileText,'editorial-order':FileText,'analytics':Activity,'categories':Boxes,'import':Boxes,'exports':Boxes,'research':Boxes,'content-gaps':Boxes,'process':FileText,'materials':FileText,'forms':FileText,'journal':FileText,'portfolio':FileText,'testimonials':FileText,'faqs':FileText,'pages':FileText,'landing-pages':FileText,'seo':FileText,'subscribers':FileText,'content-lab':FileText,overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,sections:LayoutDashboard,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,legacy:FileText,translations:Languages,'route-review':ExternalLink,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
 const navGroups = ['Today','Catalogue','Content','Editorial','Settings'].map(title=>({title,items:studioModules.filter(module=>module.group===title)}));
@@ -102,7 +108,7 @@ const ModuleView=memo(function ModuleView({moduleKey,...context}:ModuleContext&{
 // A route change can remount Workspace; retain only the requested focus destination.
 let pendingNavigationFocus:string|null=null;
 function NavigationLinks({admin,view,onNavigate}:{admin:boolean;view?:StudioModuleKey;onNavigate?:(href:string)=>void}){
- return navGroups.map(group=>{const items=group.items.filter(item=>admin||!item.adminOnly);return items.length?<div key={group.title} className={s.navGroup}><span className={s.navGroupTitle}>{group.title}</span><div className={s.navGroupList}>{items.map(item=>{const Icon=moduleIcons[item.key];return <Link key={item.key} prefetch={false} href={studioModuleHref(item)} className={s.navLink} title={item.label} aria-label={item.label} aria-current={view===item.key?'page':undefined} onClick={e=>{if(e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey)onNavigate?.(studioModuleHref(item));}}><Icon size={18} className={s.navIcon} aria-hidden="true"/><span className={s.navLabel}>{item.label}</span></Link>;})}</div></div>:null;});
+ return navGroups.map(group=>{const items=group.items.filter(item=>admin||!item.adminOnly);return items.length?<div key={group.title} className={s.navGroup}><span data-studio-part="navGroupTitle" className={s.navGroupTitle}>{group.title}</span><div className={s.navGroupList}>{items.map(item=>{const Icon=moduleIcons[item.key];return <Link key={item.key} prefetch={false} href={studioModuleHref(item)} data-studio-part="navLink" className={s.navLink} title={item.label} aria-label={item.label} aria-current={view===item.key?'page':undefined} onClick={e=>{if(e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey)onNavigate?.(studioModuleHref(item));}}><Icon size={18} className={s.navIcon} aria-hidden="true"/><span className={s.navLabel}>{item.label}</span></Link>;})}</div></div>:null;});
 }
 
 export function Workspace({initial,initialCollapsed=false}:{initial?:{session:WorkspaceIdentity;staff:StaffMember[]};initialCollapsed?:boolean}={}){
@@ -120,12 +126,12 @@ export function Workspace({initial,initialCollapsed=false}:{initial?:{session:Wo
  useEffect(()=>{if(pendingNavigationFocus!==path)return;const main=document.getElementById('main-content');if(!main)return;const focus=()=>{const heading=main.querySelector<HTMLElement>('h1');if(!heading)return false;heading.tabIndex=-1;heading.focus();pendingNavigationFocus=null;return true;};if(focus())return;const observer=new MutationObserver(()=>{if(focus())observer.disconnect();});observer.observe(main,{subtree:true,childList:true});return()=>observer.disconnect();},[path]);
 
  return (
-  <div className={s.workspace} data-module={view} data-collapsed={collapsed} onClickCapture={e=>{const a=(e.target as HTMLElement).closest('a');if(a&&a.target!=='_blank'&&a.getAttribute('href')?.startsWith('/studio')&&document.querySelector('[data-unsaved="true"]')&&!window.confirm('Leave this page and discard unsaved edits?')){e.preventDefault();e.stopPropagation();}}}>
-    <header className={s.top}>
+  <div className={s.workspace+' '+design.shell} data-module={view} data-collapsed={collapsed} onClickCapture={e=>{const a=(e.target as HTMLElement).closest('a');if(a&&a.target!=='_blank'&&a.getAttribute('href')?.startsWith('/studio')&&document.querySelector('[data-unsaved="true"]')&&!window.confirm('Leave this page and discard unsaved edits?')){e.preventDefault();e.stopPropagation();}}}>
+    <header data-studio-part="top" className={s.top}>
       <button type="button" className={s.mobileNavToggle} aria-label="Open Studio navigation" aria-haspopup="dialog" aria-expanded={mobileNav} onClick={()=>setMobileNav(true)}><Menu size={20} aria-hidden="true"/><span>Menu</span></button>
-      <div className={s.brandGroup}>
-        <Link href="/studio" className={s.brandLink}>
-          <strong>RivyaLivingArt</strong>
+      <div data-studio-part="brandGroup" className={s.brandGroup}>
+        <Link href="/studio" data-studio-part="brandLink" className={s.brandLink}>
+          <Image className={design.logo} src="/brand/rivyalivingart-logo-horizontal-transparent.png" width={410} height={116} sizes="145px" alt=""/><strong className={design.brandName}>RivyaLivingArt</strong>
           <span className={s.brandSlash}>/</span>
           <span className={s.brandStudio}>Studio</span>
         </Link>
@@ -135,10 +141,10 @@ export function Workspace({initial,initialCollapsed=false}:{initial?:{session:Wo
         <span>Storefront</span>
         <ExternalLink size={13} aria-hidden="true" />
       </a>
-      <div className={s.headerActions}>
+      <div data-studio-part="headerActions" className={s.headerActions}>
         <button type="button" className={s.commandTrigger} aria-label="Find a Studio page" disabled={!identity} onClick={()=>setPalette(true)} aria-haspopup="dialog"><Search size={16} aria-hidden="true"/><span>Find a Studio page</span><kbd>Ctrl K</kbd></button>
         {identity && (
-          <div className={s.userBadge}>
+          <div data-studio-part="userBadge" className={s.userBadge}>
             <span className={s.userAvatar}>{(identity.adminId || 'ST').slice(0, 2).toUpperCase()}</span>
             <span className={s.userName}>{identity.adminId}</span>
             <span className={admin ? s.rolePillAdmin : s.rolePillEditor}>{admin ? 'Administrator' : 'Editor'}</span>
@@ -153,15 +159,15 @@ export function Workspace({initial,initialCollapsed=false}:{initial?:{session:Wo
         </form>
       </div>
     </header>
-    {sessionMessage&&<aside className={s.panel} role="alert"><p><AlertCircle size={16} style={{display:'inline',verticalAlign:'text-bottom',marginRight:6}} />{sessionMessage}</p><button onClick={()=>void load().catch(e=>setSessionMessage(e.message))}>Check renewed access</button></aside>}
-    <div className={s.workspaceLayout}>
-      <nav className={s.sideNav} aria-label="Studio navigation">
+    {sessionMessage&&<aside data-studio-part="panel" className={s.panel} role="alert"><p><AlertCircle size={16} style={{display:'inline',verticalAlign:'text-bottom',marginRight:6}} />{sessionMessage}</p><button onClick={()=>void load().catch(e=>setSessionMessage(e.message))}>Check renewed access</button></aside>}
+    <div data-studio-part="workspaceLayout" className={s.workspaceLayout}>
+      <nav data-studio-part="sideNav" className={s.sideNav} aria-label="Studio navigation">
         <button type="button" className={s.collapseNav} onClick={toggleSidebar} aria-expanded={!collapsed} aria-label={collapsed?'Expand Studio sidebar':'Collapse Studio sidebar'}>{collapsed?<PanelLeftOpen size={18} aria-hidden="true"/>:<PanelLeftClose size={18} aria-hidden="true"/>}<span className={s.navLabel}>Collapse sidebar</span></button>
         <NavigationLinks admin={admin} view={view}/>
       </nav>
-      <main id="main-content" tabIndex={-1} className={s.workspaceMain}>
-        <nav className={s.workspaceCrumb} aria-label="Workspace breadcrumb"><Link href="/studio">Studio</Link><span aria-hidden> / </span><span aria-current="page">{activeModule?.label||'Unavailable page'}</span></nav>
-        {error?<div className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p className={s.status} role="status">Opening your workspace…</p>:!activeModule?<section className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>:activeModule.adminOnly&&!admin?<p className={s.empty}>Administrator access is required.</p>:<div key={activeModule.key}><ModuleView moduleKey={activeModule.key} admin={admin} staff={staff} load={load} staffId={identity.staffId}/></div>}
+      <main id="main-content" tabIndex={-1} className={s.workspaceMain+(view&&contentWorkspaces.has(view)?' '+design.content:'')} data-studio-design={view&&contentWorkspaces.has(view)?'content':undefined}>
+        <nav data-studio-part="workspaceCrumb" className={s.workspaceCrumb} aria-label="Workspace breadcrumb"><Link href="/studio">Studio</Link><span aria-hidden> / </span><span aria-current="page">{activeModule?.label||'Unavailable page'}</span></nav>
+        {error?<div data-studio-part="panel" className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p data-studio-part="status" className={s.status} role="status">Opening your workspace…</p>:!activeModule?<section data-studio-part="empty" className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>:activeModule.adminOnly&&!admin?<p data-studio-part="empty" className={s.empty}>Administrator access is required.</p>:<div key={activeModule.key}><ModuleView moduleKey={activeModule.key} admin={admin} staff={staff} load={load} staffId={identity.staffId}/></div>}
 
       </main>
     </div>

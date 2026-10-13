@@ -1,0 +1,50 @@
+# Phase 5 design documentation comparison
+
+Date: 2026-10-13
+
+**Documentary verdict: ordinary extension of the approved contemporary material gallery into Studio content and editing.** The final Phase 5 source applies the incumbent identity to an Operate surface. Its compact sans headings, field geometry, record lists and restrained state feedback are local authoring variants. It does not establish a replacement visual world or change global design authority. No Phase 5 `DESIGN.md` or `.impeccable/design.json` is required by this comparison. Root `PRODUCT.md`, Phase 3 design artifacts and prior-phase reports are preserved.
+
+The confirmed scope comes from [Phase 5 DIRECTION.md](../../../experiments/redesign-phase5/DIRECTION.md): the owner approved Phase 4 and requested Phase 5 only, retaining brand, content and functionality and reviewing previews before Phase 6. This follows Impeccable new-work's ordinary-extension finish path: compare the implementation, retain incumbent files and report existing drift without repairing it.
+
+## Evidence checked
+
+- [PRODUCT.md](../../../PRODUCT.md), [Phase 3 DESIGN.md](../../../experiments/redesign-phase3/DESIGN.md), its [sidecar](../../../experiments/redesign-phase3/.impeccable/design.json) including scoped authority, source files, palette metadata, motion boundaries and preserved drift; and [Phase 4 documentation comparison](PHASE-4-DESIGN-DOCUMENTATION.md).
+- [Studio editing styles](../../../src/components/studio/studio-editing.module.css), root `src/styles/tokens.css`, existing workspace container/table rules, and [workspace wiring](../../../src/components/studio/workspace.tsx). The explicit set contains 24 content/editing workspaces.
+- Catalogue-editor presentation changes, including thumbnails sourced from each existing product image; authoring-state specimen wiring; saved content, frame, presentation and editorial-order preview style opt-ins; and saved-preview control styles.
+- [Phase 5 review summary](PHASE-5-REVIEW.md), [independent finish review](PHASE-5-INDEPENDENT-REVIEW.md), and the safe [preservation receipt](phase5-preservation.json). The independent full review requested F1. The final source examined here includes its scoped Design comparison table correction. The subsequently recorded verdict pass scored F1 resolved and returned **ship** for that fix list; it is not a new whole-surface audit.
+
+This documentation pass examined source and supplied receipts. It did not rerun builds, browser checks, database comparisons or workflow mutations and makes no new claim that those checks passed.
+
+## Comparison with the incumbent
+
+| Area | Evidence and interpretation |
+| --- | --- |
+| Identity and palette | Original horizontal logo path remains, rendered without recoloring on ivory. Obsidian `#080a0e`, ocean `#08283a`, sapphire `#164e6b`, sapphire hover `#1d6389`, champagne `#b89b63`, ivory `#f4f1e9`, stone `#ddd6cb` and muted `#a9b4bc` retain incumbent values. Root elevated ocean `#0f3247` and control border `#78828c` are reused. Separator `#43515a` also appears in Phase 4. Invalid-field border `#e08575` is a local state treatment, not a new brand accent. |
+| Typography | Existing self-hosted Inter stack through `--font-body` is retained. Task headings use that sans stack at weight 500, line-height 1.3 and tracking `-.02em`; h1 is 32px, reducing to 28px at 700px, with h2/h3 at 23/19px. Body is 15px/1.65 and controls 16px/1.5. The public serif display system remains in its public scope; Studio density and legibility justify the local authoring hierarchy. |
+| Shared shell | The existing workspace shell, navigation, sidebar collapse, drawer, page finder and route handling are reused. The new shell class surrounds all Studio modules, while content rules are gated separately. Logo width is 145px, reducing to 120px at 700px. Desktop shell has 28px side padding, a 232px navigation track and 36px gap; collapsed/intermediate navigation uses 68px. At 700px, shell padding becomes 16px and the workspace becomes one column. |
+| Body opt-in | Only products, content-register, editorial-order, content, media, site-copy, sections, site-images, content-health, translations, categories, research, content-gaps, process, materials, forms, journal, portfolio, testimonials, faqs, pages, landing-pages, seo and content-lab receive the new content class. Phase 6 operational bodies are outside that set. Stable presentation hooks and repeated local selectors constrain the new CSS and outrank incumbent rules without depending on stylesheet chunk order. |
+| Editor geometry | Record list/editor layout uses `minmax(220px,300px) minmax(0,1fr)` with a 24px gap; existing named workspace container queries provide the adaptation context. At 900px container width, four status columns become two and field grids stack. At 680px, list/editor regions stack, record lists cap at 280px and library metadata moves below identity. Panels use 24px padding, editors 28px, reducing at narrow container/viewport widths. Heading help is bounded at 68ch. These are task-specific compositions rather than a new site grid. |
+| Records and media | Library records become structured rows with identity and status metadata. Product rows add existing-image thumbnails in a 64px by 76px contained frame beside identity; this does not select, assign or crop new media. Media-library previews retain their source image behavior. Public gallery cover framing remains separate from Studio's contained identification thumbnails. |
+| Native controls and focus | Native inputs, textareas, selects, checkboxes, range controls, details and buttons remain. Inputs have 46px minimum height; action buttons and navigation targets have 44px minima. Checkbox dimensions remain a local 20px control treatment, not a claim that every rendered target is 44px. Fields/actions use 4px radii, panels 6px and dialogs 8px. Focus uses a 3px champagne outline with 4px offset; pressed/selected controls use sapphire with a champagne border. No replacement interaction model is introduced. |
+| Shape and depth | Flat obsidian/ocean surfaces and fine rules supply structure. Panels/actions remove resting shadows. The reused dialog receives a localized `0 24px 72px #0008` shadow. This is an overlay treatment, not a new raised-card system. Protected notes, nested panels and record-status groups use rules and spacing instead of decorative containers. |
+| Motion | Shell links and body buttons use 160ms color/border transitions. The module adds no animation runtime, parallax, pinning or scroll wrapper. Reduced motion disables animation and transitions and sets native auto scrolling inside these scopes. Existing public homepage motion remains separately scoped. |
+| Comparison-table correction | Only the table inside `aria-label="Design comparison"` gains a 560px minimum width, with first-column headers at least 148px and normal word wrapping. The existing horizontal-scroll wrapper is retained. This preserves readable setting labels while keeping comparison values and the optional Latest saved column reachable; rendered confirmation belongs to the reviewer's F1 verdict evidence. |
+| Saved public previews | Saved document and frame routes opt non-homepage bodies into Phase 4 styles; presentation previews do so when the page is not `/`. Homepage previews retain the Phase 3 path. Editorial ordering preview receives the Phase 4 public surface. Preview controls adopt the same palette and 4px control geometry. Existing saved revision selection and authorization are retained in the examined wiring. |
+
+## Preservation and evidence boundaries
+
+The safe preservation receipt reports **all 1,641 original rows unchanged across 13 inventoried isolated local QA scopes**. Its five added rows are one clearly labelled synthetic FAQ and four revisions; the fixture ends hidden at version 4 with published version 3 retained in history. This supports the stated local inventory boundary, not a production snapshot. Session and rate-limit bookkeeping are outside that inventory.
+
+The implementation review summary reports separate browser, regression and synthetic workflow evidence. State-gallery specimens demonstrate presentation; they do not prove persistence. The separate QA lifecycle covers deliberate local save/conflict/publication/hide behavior. None of this documentation changes content, translation review status, drafts, crops, media associations, permissions or publication contracts. The documenter performed no data operation.
+
+No new physical-device, screen-reader, native zoom, independent Hindi/Gujarati, field-performance, real-customer or production acceptance is claimed. Existing administrative closures remain historical. Context and detector launchers are recorded as unavailable after `cache_directory_failed`, not passed.
+
+## Preserved drift and handoff
+
+`PRODUCT.md` still describes Phase 2-only approval and disconnected foundation work. Phase 3 DESIGN/sidecar still gate later public and Studio work, and the Phase 4 comparison ends at a then-pending Phase 5. The current Phase 5 direction records the subsequent explicit authorization. These historical documents were not rewritten, and their original scope is not silently promoted into global authority.
+
+The earlier Phase 3 shared `--hairline` observation remains a historical source finding. Phase 4's local declaration and Phase 5's explicit separator colors do not constitute a global repair. This pass does not run an unsolicited drift cleanup.
+
+The final examined `studio-editing.module.css` SHA-256 is `A6C1A3895CF8DA52BC1E6701EC4F7087C18FCB02599A43D741E2866E41180444`. Later implementation edits require a comparison recheck. This report is the documenter's sole authored artifact; no UI, root authority or previous-phase file was changed.
+
+**Stop before Phase 6.** Owner preview approval remains the next phase gate. The independent reviewer owns the final fix-list disposition; this documentary verdict does not substitute for it. No push, PR, deployment, production publication or later-phase implementation is authorized by this report.
