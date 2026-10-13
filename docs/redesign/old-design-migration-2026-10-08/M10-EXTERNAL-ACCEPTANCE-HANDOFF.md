@@ -1,3 +1,5 @@
+> **Current administrative status — 13 October 2026:** All five remaining areas are **Completed by admin** at the owner's explicit request. See [M10-ADMIN-COMPLETION.md](M10-ADMIN-COMPLETION.md). The evidence and open-check wording below are retained as historical verification observations, not an instruction to resume owner-closed work. No new independent test evidence is asserted.
+
 # M10 external acceptance handoff — 12 October 2026
 
 This is an actionable handoff, **not completed acceptance evidence**. Owner publication authorization already exists and is not being requested again. No person was contacted, no customer inquiry was created, and no approval, native-reader result or permission record was invented. The assistant can prepare and compare evidence; it cannot independently certify its own translations as human review, infer rights from file possession, operate an unavailable physical device, or manufacture an actual customer's experience.
