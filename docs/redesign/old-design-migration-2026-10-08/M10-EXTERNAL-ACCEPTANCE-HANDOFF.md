@@ -1,0 +1,44 @@
+# M10 external acceptance handoff — 12 October 2026
+
+This is an actionable handoff, **not completed acceptance evidence**. Owner publication authorization already exists and is not being requested again. No person was contacted, no customer inquiry was created, and no approval, native-reader result or permission record was invented. The assistant can prepare and compare evidence; it cannot independently certify its own translations as human review, infer rights from file possession, operate an unavailable physical device, or manufacture an actual customer's experience.
+
+## Give independent Hindi and Gujarati reviewers these exact packets
+
+The article scope is **36 articles / 501 English fields / 1,002 target values**, with **72 draft import files** across the two locations below. All remain subject to independent meaning acceptance; an import file is not an approval.
+
+| Records | Complete source/candidate comparison | Exact draft files and provenance |
+| --- | --- | --- |
+| DB001, 19 fields; DB010, 20 fields | Select those two IDs in [article-review.json](../../editorial-translations/article-review.json). Their complete assistant corrections and source hashes are in [article-corrections.json](../../editorial-translations/article-corrections.json). | [DB001 Hindi](../../editorial-translations/article-imports/DB001.hi.json), [DB001 Gujarati](../../editorial-translations/article-imports/DB001.gu.json), [DB010 Hindi](../../editorial-translations/article-imports/DB010.hi.json), [DB010 Gujarati](../../editorial-translations/article-imports/DB010.gu.json). These four files match the correction maps and review text. Their earlier saves are historical evidence in [RELEASE-43-AND-FOLLOWUP.md](../../editorial-translations/RELEASE-43-AND-FOLLOWUP.md); current source/target state must be read before any later use. |
+| DB002–DB009 and DB011–DB036, 462 fields | [candidate-review.json](../../editorial-translations/m10-followup/candidate-review.json) contains every English/Hindi/Gujarati field. [correction-diff.json](../../editorial-translations/m10-followup/correction-diff.json) isolates the 200 changes; reviewers must still read the entire candidate. | [import-manifest.json](../../editorial-translations/m10-followup/import-manifest.json) lists every exact path, source hash and file hash for the 68 files under `docs/editorial-translations/m10-followup/draft-imports/DBnnn.{hi,gu}.json`. Follow [README.md](../../editorial-translations/m10-followup/README.md). |
+
+The [fresh production-source check](M10-LANGUAGE-FRESHNESS.md) matched all 34 supplemental English sources at 2026-10-12 14:48:20 UTC, but found all 68 production target maps empty. Their historical before-values are not current Studio drafts. DB001/DB010 were excluded from that query. Recheck exact English source hashes and current target state immediately before later draft application; preserve any intervening editor work. The original packet hashes stay unchanged.
+
+Ask each actual reviewer to return: **reviewer identity or controlled private reference; language and competence; review date; article IDs; exact source/candidate hashes; full-text corrections by field path; terminology/idiom or meaning concerns; and an explicit accepted / changes required / not assessed decision for each record and language**. Preserve uncertainty instead of signing off a whole batch from a sample. Do not mark reviewed or publish until the applicable independent evidence and exact saved-revision checks are satisfied. The [seven-page comparison packet](../../editorial-translations/page-review.json) remains a separate protected-page review scope; its earlier publication does not supply independent native acceptance.
+
+## Obtain only the missing source-specific media and factual records
+
+Use the existing [rights evidence register](M10-RIGHTS-EVIDENCE-REGISTER.md), which already maps all 21 original Drive IDs, hashes, public usages and known approvals. Do not repeat general owner permission requests or treat concepts as unfinished genuine-project testimonials.
+
+| Source group | Specific record still needed |
+| --- | --- |
+| A03, A05, A06 | The exact Higgsfield generation/source job or account record and its applicable permitted output use, including any relevant third-party input conditions. Prior source identity and illustration classification are already documented. |
+| A10, B05–B09 | Any remaining creator/generation and permitted-use provenance beyond the exact older approved-set match and inherited owner authorization. The identity match itself is already closed. |
+| A04, A07–A09, B01–B04, B10–B13 | Creator or generation origin for the exact source bytes, allowed public use, restrictions/attribution and any actually applicable third-party consent. Old-site or Drive possession alone does not identify that record. |
+| Film/poster family | Origin and permitted-use record for the single resin-pour animation and original still, linking the MP4 derivative to the original WebM. Exact Drive IDs/byte hashes are in the register's Film and poster table. This is one disclosed material illustration, not customer or workshop evidence. |
+| Public crops | Dated acceptance for the register's **240 Journal/Portfolio header usages and 480 named desktop/mobile crop states**, plus any separately assessed archive/home usages. Link the exact source, candidate/record revision, slot and crop; do not invent a sign-off from a shared image approval. |
+
+For factual review, return the exact claimed sentence/field, source record, accountable reviewer/date and disposition. The register names the conditional maker/studio identity, ten making-stage bindings, four material bindings, seven workshop slots and printing service. Activate those only when corresponding business facts exist; a private synthetic template does not supply them. Existing protected contact/policy wording stays preserved. Concepts/fictional samples do **not** require fabricated customer records; future genuine classification would require actual source and permission evidence.
+
+## Use the existing device, reader, field and inquiry schemas
+
+[M10-FIELD-EVIDENCE.md](M10-FIELD-EVIDENCE.md) already defines the minimum receipts for native 200%/400% zoom, physical-phone tasks, actual human screen-reader use, real field p75 and a consent-safe genuine inquiry. Use its exact required environment/version/task/outcome fields and controlled/redacted evidence locations. Its CrUX section distinguishes quota/error/no-data outcomes and gives the official dashboard continuation; do not interpret a failed lookup as insufficient data or passing performance.
+
+An actual prospective customer must originate a genuine inquiry. The next naturally occurring consented inquiry can supply evidence. Synthetic QA, an assistant posing as a customer, repeated lab visits, viewport resizing and accessibility-tree extraction cannot supply these external observations. Keep personal details out of public Git receipts. No outgoing message is authorized or sent by this handoff.
+
+## Highest-priority remaining conditional software check
+
+The [36-group visual register](M10-FULL-VISUAL-COVERAGE.md) remains the full execution map. [M10-CONDITIONAL-EDITOR-CHECKS.md](M10-CONDITIONAL-EDITOR-CHECKS.md) now records actual custom record-switch cancellation, stale-save comparison, retained input and recovery cancellation on one new unpublished local record, `article:f5032839-ad8f-474d-a729-f1e9ca37a97e`. The saved `B` draft is revision 2; retain it and reconcile the one new content row/two new revisions separately from every original ID/digest. Do not rerun that creation. Native Return-link dialog cancellation remains unverified; a timed-out navigation attempt does not close it or establish a product defect.
+
+The same receipt verifies the two retained M5 fixture identities and accepts their sixteen default public renderers at 1440/390/320, with six groups / 66 inspected frames. It also records the Studio block-editor inspection and repair: fifteen types were rechecked at both 320/390 across 151 final frames, and the separate Film opening editor has bounded coverage. The next engineering scope is **V29/V17 conditional states**: untested reference-selection variants, full gallery populations, remaining comparison/width gaps and actual interaction outcomes. Default panel/public captures do not close those states. Unsaved genuine-evidence fields can be inspected empty, without inventing approval information. QA error/expired-session/inquiry branches require isolated synthetic context; presentation galleries alone do not prove real failed-request recovery.
+
+These remaining engineering checks are independent of the external human/device/rights evidence above. Follow each receipt's actual bounds rather than marking the entire visual group complete from a representative state.

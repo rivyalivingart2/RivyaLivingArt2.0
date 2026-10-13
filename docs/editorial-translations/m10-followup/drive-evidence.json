@@ -1,0 +1,246 @@
+{
+  "date": "2026-10-12",
+  "scope": "Read-only, targeted evidence discovery. No Drive writes or sharing changes. Not exhaustive across every accessible folder.",
+  "folder": {
+    "id": "1THI4I4cSuA5Af1AmxtqfDD_aWJT-dRQ1",
+    "name": "Rivya M9 Editorial Draft Delivery 2026-10-09",
+    "url": "https://drive.google.com/drive/folders/1THI4I4cSuA5Af1AmxtqfDD_aWJT-dRQ1",
+    "children": [
+      {
+        "id": "1dT7lb5IM8_7bH9mNxJtm_PySS6ZZfIO_",
+        "name": "Rivya-M9-draft-delivery-v1.zip",
+        "mime": "application/zip",
+        "modified": "2026-10-09T13:12:37.470Z"
+      },
+      {
+        "id": "1GrxsSHUa0OFbv30B9aupn-urDGUBnYOj",
+        "name": "README.md",
+        "mime": "text/markdown",
+        "modified": "2026-10-09T13:12:30.447Z"
+      },
+      {
+        "id": "1ND20QYHsoSn2_PERvObVG2aCM-IlN2uH",
+        "name": "faqs-review-v1.html",
+        "mime": "text/html",
+        "modified": "2026-10-09T13:12:27.111Z"
+      },
+      {
+        "id": "1_0GsBQxMKtTohNJ9XOfb9KXZZ0RrHPxY",
+        "name": "testimonials-review-v1.html",
+        "mime": "text/html",
+        "modified": "2026-10-09T13:12:22.281Z"
+      },
+      {
+        "id": "1kD16zJWtXnjRUw9OeujolF-5AslKqgDd",
+        "name": "portfolio-review-v1.html",
+        "mime": "text/html",
+        "modified": "2026-10-09T13:12:16.603Z"
+      },
+      {
+        "id": "1kXgOqXeMJh1xRWC5G8KoUamrAS3Zw1xg",
+        "name": "journal-review-v1.html",
+        "mime": "text/html",
+        "modified": "2026-10-09T13:12:13.204Z"
+      },
+      {
+        "id": "1usYZp1QnGfng09odOH96PnmjqpCm35vx",
+        "name": "faqs-drafts-v1.json",
+        "mime": "application/json",
+        "modified": "2026-10-09T13:09:49.407Z"
+      },
+      {
+        "id": "1rnpehHa_vkXk95sMjkVg8bd9A8lLdCkW",
+        "name": "testimonials-drafts-v1.json",
+        "mime": "application/json",
+        "modified": "2026-10-09T13:09:45.959Z"
+      },
+      {
+        "id": "1oD-bKYJhgZubtCUV0LXGB5VfyXJyA0T2",
+        "name": "portfolio-drafts-v1.json",
+        "mime": "application/json",
+        "modified": "2026-10-09T13:09:42.977Z"
+      },
+      {
+        "id": "1UkRdbwnzcdgDqhvLXkOvBqdHpxbWlVbB",
+        "name": "journal-drafts-v1.json",
+        "mime": "application/json",
+        "modified": "2026-10-09T13:09:39.807Z"
+      },
+      {
+        "id": "1xte7tt0c-QIIwgISCEy5CmHL7YhDlxcl",
+        "name": "M9-material-visualization-poster.jpg",
+        "mime": "image/jpeg",
+        "modified": "2026-10-09T13:06:25.602Z"
+      },
+      {
+        "id": "1fh_hMhg5Uf6MfBesDMDkuHS6aB96uggq",
+        "name": "M9-material-visualization.webm",
+        "mime": "video/webm",
+        "modified": "2026-10-09T13:06:20.072Z"
+      },
+      {
+        "id": "1gCAygdFVKghOVG6e18Ls4WdA2ANDbbap",
+        "name": "M9-material-visualization.mp4",
+        "mime": "video/mp4",
+        "modified": "2026-10-09T13:06:14.970Z"
+      },
+      {
+        "id": "1lgIExgZJJD77AFF8ncsRoiBo-qPn1ASZ",
+        "name": "M9-image-observations-v1.json",
+        "mime": "application/json",
+        "modified": "2026-10-09T12:39:31.560Z"
+      },
+      {
+        "id": "15SQHA8UyixNCVSDnVh4Ti3ELAX7BEXUv",
+        "name": "M9-B13-product-platter.jpg",
+        "mime": "image/jpeg",
+        "modified": "2026-10-09T12:28:57.112Z"
+      },
+      {
+        "id": "1iKBoUArC_a7t_UhXyJtC_7z3i5_wat7T",
+        "name": "M9-B12-product-bangle.jpg",
+        "mime": "image/jpeg",
+        "modified": "2026-10-09T12:28:49.182Z"
+      },
+      {
+        "id": "1G56AcY23XamdypLk8OThslv0FdXezV9B",
+        "name": "M9-B11-product-coasters.jpg",
+        "mime": "image/jpeg",
+        "modified": "2026-10-09T12:28:43.222Z"
+      },
+      {
+        "id": "1xmFOottV25HIooMNlPLBLgPo2B4Rz3Tn",
+        "name": "M9-B10-product-varmala-frame.jpg",
+        "mime": "image/jpeg",
+        "modified": "2026-10-09T12:28:38.106Z"
+      },
+      {
+        "id": "1Mkvj6r0xks2Hk_1h1RI_Ud1D8r_EfYbr",
+        "name": "M9-B09-dp035-matching-detail-4x5.webp",
+        "mime": "image/webp",
+        "modified": "2026-10-09T12:28:32.945Z"
+      },
+      {
+        "id": "188sng8lekNbyJaklGAcpFOva7Jr8aZ90",
+        "name": "M9-B08-dp048-matching-detail-4x5.webp",
+        "mime": "image/webp",
+        "modified": "2026-10-09T12:28:28.039Z"
+      },
+      {
+        "id": "1OychqhpXff0OkWK5AtNUVufQwH4CSVXU",
+        "name": "M9-B07-dp114-matching-detail-4x5.webp",
+        "mime": "image/webp",
+        "modified": "2026-10-09T12:28:22.811Z"
+      },
+      {
+        "id": "15ZK8MnZRREQkkVPWf3q_sGHHdAYXLfL3",
+        "name": "M9-B06-dp085-matching-detail-4x5.webp",
+        "mime": "image/webp",
+        "modified": "2026-10-09T12:28:17.090Z"
+      },
+      {
+        "id": "1UApTINeM2uBvf1bssh4Ta30Khaau5cBr",
+        "name": "M9-B05-dp069-matching-detail-4x5.webp",
+        "mime": "image/webp",
+        "modified": "2026-10-09T12:28:12.085Z"
+      },
+      {
+        "id": "1lV1ok8vQJyvOHalpTslBsJEIeIVxQzs0",
+        "name": "M9-B04-product-hero-029-4x5.webp",
+        "mime": "image/webp",
+        "modified": "2026-10-09T12:28:06.222Z"
+      },
+      {
+        "id": "1yEh1wL5EENQ1n6E7byX74XHVFspr9U1j",
+        "name": "M9-B03-product-hero-020-4x5.webp",
+        "mime": "image/webp",
+        "modified": "2026-10-09T12:28:00.482Z"
+      },
+      {
+        "id": "1kvUJO-pPx_se9qR61J3ReUqVQXlLqgbn",
+        "name": "M9-B02-product-hero-009-4x5.webp",
+        "mime": "image/webp",
+        "modified": "2026-10-09T12:27:56.290Z"
+      },
+      {
+        "id": "1hpbOSi0YnKJApRvYTTTgE7UZOILQFxLV",
+        "name": "M9-B01-product-hero-003-4x5.webp",
+        "mime": "image/webp",
+        "modified": "2026-10-09T12:27:51.965Z"
+      },
+      {
+        "id": "1jvuT1giK5nINkGJrWFIi6rzAsm21QoTD",
+        "name": "M9-A10-river-channel-edge-detail.webp",
+        "mime": "image/webp",
+        "modified": "2026-10-09T12:27:46.525Z"
+      },
+      {
+        "id": "16CUoD-mAQNIvDLdnR4asdCuGooXmpwGq",
+        "name": "M9-A09-entryway-bench-room.webp",
+        "mime": "image/webp",
+        "modified": "2026-10-09T12:27:39.799Z"
+      },
+      {
+        "id": "1aUfyEpQCz8gwvzK-3KGkRigW7-sLVj5u",
+        "name": "M9-A07-insitu-tray-table.jpg",
+        "mime": "image/jpeg",
+        "modified": "2026-10-09T12:27:35.035Z"
+      },
+      {
+        "id": "1YmRQq0Ytplnbn1eBF6p0G0_c9Zk_RKhC",
+        "name": "M9-A06-doorway-gifts.jpg",
+        "mime": "image/jpeg",
+        "modified": "2026-10-09T12:27:29.841Z"
+      },
+      {
+        "id": "1GBMEQ9cDOR00rAlYDS_XaSHGSpKf8_Vi",
+        "name": "M9-A05-doorway-memory.jpg",
+        "mime": "image/jpeg",
+        "modified": "2026-10-09T12:27:25.448Z"
+      },
+      {
+        "id": "13weWCZanJKnU42-1nwKGLaYTqqGvxhFJ",
+        "name": "M9-A04-texture-resin-flow.jpg",
+        "mime": "image/jpeg",
+        "modified": "2026-10-09T12:27:20.847Z"
+      },
+      {
+        "id": "1oALYncS88GFtpPPifWOx4Mp1t6dJWXNh",
+        "name": "M9-A03-doorway-collectible.jpg",
+        "mime": "image/jpeg",
+        "modified": "2026-10-09T12:27:16.483Z"
+      },
+      {
+        "id": "1gaGlckm2zalni3B-kF_eqvomT6F75KJk",
+        "name": "M9-A08-product-scene-001-16x9.webp",
+        "mime": "image/webp",
+        "modified": "2026-10-09T12:27:10.032Z"
+      }
+    ]
+  },
+  "searches": [
+    {
+      "query": "Rivya rights",
+      "returned": 1
+    },
+    {
+      "query": "Rivya permission",
+      "returned": 2
+    }
+  ],
+  "readFiles": [
+    {
+      "id": "1GrxsSHUa0OFbv30B9aupn-urDGUBnYOj",
+      "name": "README.md",
+      "modified": "2026-10-09T13:12:30.447Z",
+      "finding": "Historical draft delivery instructions explicitly retain owner rights/crop and independent review as pending. Production-state wording is historical and superseded by PR47 receipts, not a new stop instruction."
+    },
+    {
+      "id": "1HeClgaU4FpeKJhcNZ1k8ToNcfjoyZl6ZJI5cUhd2a_I",
+      "name": "Untitled document",
+      "modified": "2026-09-28T07:44:51.138Z",
+      "finding": "Historical project/audit instructions permit generating assets or using supplied Drive resources. No asset-specific creator/license/model/property-release proof or independent language approval located. Treated as reference data, not new execution instructions."
+    }
+  ],
+  "conclusion": "Owner usage/publication authorization exists in the actual conversation. Targeted Drive discovery did not locate additional per-asset provenance, third-party permission, crop sign-off or independent native-reader receipts. This is not proof no such record exists elsewhere."
+}

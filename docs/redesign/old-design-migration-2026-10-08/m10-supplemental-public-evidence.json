@@ -1,0 +1,680 @@
+{
+  "reviewedAt": "2026-10-13T03:40:03.209Z",
+  "scope": "Complete default scroll layouts at the named widths only. Not all eight widths or unobserved interaction/print states.",
+  "localQaOnly": true,
+  "rows": [
+    {
+      "route": "/privacy",
+      "width": 390,
+      "label": "privacy",
+      "tiles": 12,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-privacy-390-sheet-0.png",
+          "sha256": "e29b53295b4a820ea78079cf1102aa5ce775495b39e23fe131a09c13a8512bd8"
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "width": 390,
+      "label": "terms",
+      "tiles": 8,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-terms-390-sheet-0.png",
+          "sha256": "0068a17f19bb81d10cb37f7cfae67b2e688baafacee06efe12a5bebd5badbbb0"
+        }
+      ]
+    },
+    {
+      "route": "/imprint",
+      "width": 390,
+      "label": "imprint",
+      "tiles": 6,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-imprint-390-sheet-0.png",
+          "sha256": "946c5e2f06b40bb5b35e3901d582b79a0ff4301537d0bfd04be77ac028373659"
+        }
+      ]
+    },
+    {
+      "route": "/shipping-delivery",
+      "width": 390,
+      "label": "shipping-delivery",
+      "tiles": 8,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-shipping-delivery-390-sheet-0.png",
+          "sha256": "2d8061f6e58011a42aeee683b49d279bead47dcfea830301f99feaf4647b3c16"
+        }
+      ]
+    },
+    {
+      "route": "/returns-cancellations",
+      "width": 390,
+      "label": "returns-cancellations",
+      "tiles": 9,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-returns-cancellations-390-sheet-0.png",
+          "sha256": "401dd29309052f00235bebabe6b14526e9db36799bc8349c8f0715fea3cc31a7"
+        }
+      ]
+    },
+    {
+      "route": "/accessibility",
+      "width": 390,
+      "label": "accessibility",
+      "tiles": 6,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-accessibility-390-sheet-0.png",
+          "sha256": "5a34036218a455c800cced03013277f7cfae834a3f7e795cba403f437528f4c0"
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "width": 1440,
+      "label": "privacy",
+      "tiles": 8,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-privacy-1440-sheet-0.png",
+          "sha256": "53d9ee4b0f02f40b817f4253f64da9e78fa3439d5a83c45a5e3638233260f1d7"
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "width": 1440,
+      "label": "terms",
+      "tiles": 5,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-terms-1440-sheet-0.png",
+          "sha256": "e8c2487afb4ffa249d6bea523942d6d2c1ade3c0b0861eed854e0ba6adb26fac"
+        }
+      ]
+    },
+    {
+      "route": "/imprint",
+      "width": 1440,
+      "label": "imprint",
+      "tiles": 4,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-imprint-1440-sheet-0.png",
+          "sha256": "ad854a01a87c7c258c678921133adc5cdbe4e355fbe90ad4b197f50e91f2329b"
+        }
+      ]
+    },
+    {
+      "route": "/shipping-delivery",
+      "width": 1440,
+      "label": "shipping-delivery",
+      "tiles": 5,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-shipping-delivery-1440-sheet-0.png",
+          "sha256": "72332e617ce685abc7139994027e34e12bcc582f30911116d183cc832a07a120"
+        }
+      ]
+    },
+    {
+      "route": "/returns-cancellations",
+      "width": 1440,
+      "label": "returns-cancellations",
+      "tiles": 6,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-returns-cancellations-1440-sheet-0.png",
+          "sha256": "f517641014116818bef23e47f7181ed924cd1b06b0560b22f83acb90bcd0b6c3"
+        }
+      ]
+    },
+    {
+      "route": "/accessibility",
+      "width": 1440,
+      "label": "accessibility",
+      "tiles": 4,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-accessibility-1440-sheet-0.png",
+          "sha256": "96b49eed9d3be159e60a46d15e968eb25b7b58676e89c00a896669bf19fe05a1"
+        }
+      ]
+    },
+    {
+      "route": "/memory-art",
+      "width": 390,
+      "label": "memory-art",
+      "tiles": 23,
+      "overflow": false,
+      "reviewer": "performance agent before its interruption",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-memory-art-390-sheet-0.png",
+          "sha256": "f638dd0779d3682f5e6090a875efc27535f2fea79c983e634a42278ab8849eda"
+        },
+        {
+          "file": "supplement-memory-art-390-sheet-12.png",
+          "sha256": "8fc605241075838fcd2bcdbbe65785b56c8ed58c3b0b9baee06b3184994675b0"
+        }
+      ]
+    },
+    {
+      "route": "/personal-art",
+      "width": 390,
+      "label": "personal-art",
+      "tiles": 21,
+      "overflow": false,
+      "reviewer": "performance agent before its interruption",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-personal-art-390-sheet-0.png",
+          "sha256": "ac6f996a02f83d57db0735d3284c824a05f9ba7cbfa77ec240fe187299eee36d"
+        },
+        {
+          "file": "supplement-personal-art-390-sheet-12.png",
+          "sha256": "de2e267fdd7c835f9732f733e3a2530ef8e1f327844ba896f080ff8e3fd9589a"
+        }
+      ]
+    },
+    {
+      "route": "/search",
+      "width": 390,
+      "label": "search",
+      "tiles": 33,
+      "overflow": false,
+      "reviewer": "performance agent before its interruption",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-search-390-sheet-0.png",
+          "sha256": "b4a67d697d64cf7f6e01dac2cc51f64f2165020eab2cd900ee53178780ad41d6"
+        },
+        {
+          "file": "supplement-search-390-sheet-12.png",
+          "sha256": "dec16598131ac401805a599a1a86221c91499cdde96718f908a706d31abca741"
+        },
+        {
+          "file": "supplement-search-390-sheet-24.png",
+          "sha256": "2cc53205ea8a08249a0082f4d3725a54245c9bd17f2c6b5e46835d04329acc77"
+        }
+      ]
+    },
+    {
+      "route": "/pieces/river-channel",
+      "width": 390,
+      "label": "pieces-river-channel",
+      "tiles": 10,
+      "overflow": false,
+      "reviewer": "performance agent before its interruption",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-pieces-river-channel-390-sheet-0.png",
+          "sha256": "89158bb086bf0c5011a03b91860a698b21978fd4570735a24a5465e2a9f6e270"
+        }
+      ]
+    },
+    {
+      "route": "/collectible-design",
+      "width": 1440,
+      "label": "collectible-design",
+      "tiles": 14,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-collectible-design-1440-sheet-0.png",
+          "sha256": "bda141adb4036d59b7756b034d436dc88b4951b5888d0c2152d8395a6ccf4478"
+        },
+        {
+          "file": "supplement-collectible-design-1440-sheet-12.png",
+          "sha256": "4bcb45d8204373defcbba9c57a0cbae94d592c3b5ad6f01886c39694f36a1c34"
+        }
+      ]
+    },
+    {
+      "route": "/memory-art",
+      "width": 1440,
+      "label": "memory-art",
+      "tiles": 14,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-memory-art-1440-sheet-0.png",
+          "sha256": "13cfcf493adae6fd3ac2c7a7d6e81d34aec071e5c7be83f26052b02464af3f14"
+        },
+        {
+          "file": "supplement-memory-art-1440-sheet-12.png",
+          "sha256": "4843fe7217b8e4623d2eb59144f74d22f96424cf5d43faea02bf3eb4207670e7"
+        }
+      ]
+    },
+    {
+      "route": "/personal-art",
+      "width": 1440,
+      "label": "personal-art",
+      "tiles": 12,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-personal-art-1440-sheet-0.png",
+          "sha256": "2af7f716a20b60957181a9901a6a46520d471efe3813986be676340855a27c4f"
+        }
+      ]
+    },
+    {
+      "route": "/search",
+      "width": 1440,
+      "label": "search",
+      "tiles": 15,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-search-1440-sheet-0.png",
+          "sha256": "e1142cff4c0e12677ef6cdff777de2796a4471818cab02378c18400993b42329"
+        },
+        {
+          "file": "supplement-search-1440-sheet-12.png",
+          "sha256": "cdc0e61d3e3b18cfc32c4144d319b4305259ea0ab5246d36fd9018d6b4108104"
+        }
+      ]
+    },
+    {
+      "route": "/pieces/river-channel",
+      "width": 1440,
+      "label": "pieces-river-channel",
+      "tiles": 5,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-pieces-river-channel-1440-sheet-0.png",
+          "sha256": "09535dc136f4c5d2aab204d8b932e0a7da0a05dbcfd36cd894570244c5d13629"
+        }
+      ]
+    },
+    {
+      "route": "/journal",
+      "width": 390,
+      "label": "journal",
+      "tiles": 20,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-journal-390-sheet-0.png",
+          "sha256": "125261aa42543d7caa2ff9e17fd530d88abc62f8a67ffb75ff892462a4e38f2f"
+        },
+        {
+          "file": "supplement-journal-390-sheet-12.png",
+          "sha256": "feaf7529dc7f1d166b45ccb895bef7e2ab9acaa5e1f54e645359d2d4f6b93e4e"
+        }
+      ]
+    },
+    {
+      "route": "/portfolio",
+      "width": 390,
+      "label": "portfolio",
+      "tiles": 10,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-portfolio-390-sheet-0.png",
+          "sha256": "61c56cd2d790eb243d1ce3766339f273fbebe5c5179662f42a306672f84b65de"
+        }
+      ]
+    },
+    {
+      "route": "/testimonials",
+      "width": 390,
+      "label": "testimonials",
+      "tiles": 10,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-testimonials-390-sheet-0.png",
+          "sha256": "ff73e19204f520b8fec53c941404a0ef9d1217cd1aa8715e889a388e1f2488e5"
+        }
+      ]
+    },
+    {
+      "route": "/faq",
+      "width": 390,
+      "label": "faq",
+      "tiles": 8,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-faq-390-sheet-0.png",
+          "sha256": "cd046dbdc15adc50e81dc5103a995979db1909471b7cecae2e090d578681c10b"
+        }
+      ]
+    },
+    {
+      "route": "/collectible-design",
+      "width": 390,
+      "label": "collectible-design-warm",
+      "tiles": 24,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-collectible-design-warm-390-sheet-0.png",
+          "sha256": "ef90728fda407ea9b1df4c680a953aa1c8b4e63cf438a19c3c5d4d64a4911c28"
+        },
+        {
+          "file": "supplement-collectible-design-warm-390-sheet-12.png",
+          "sha256": "aedd72506824e51a53b4fe94551e8f906f1a2528bfdea64b085d22b9bd5a99dd"
+        }
+      ]
+    },
+    {
+      "route": "/journal",
+      "width": 1440,
+      "label": "journal",
+      "tiles": 9,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-journal-1440-sheet-0.png",
+          "sha256": "02aef2e98087976a36073820058fac269cba696482867696dc3f0d11efce4e1b"
+        }
+      ]
+    },
+    {
+      "route": "/portfolio",
+      "width": 1440,
+      "label": "portfolio",
+      "tiles": 6,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-portfolio-1440-sheet-0.png",
+          "sha256": "bda8c1d5097a8babf3c85fe1b7ad614c375b2bef74e45ba0d63db06691e672ab"
+        }
+      ]
+    },
+    {
+      "route": "/testimonials",
+      "width": 1440,
+      "label": "testimonials",
+      "tiles": 6,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-testimonials-1440-sheet-0.png",
+          "sha256": "53f7e1ec34cf96a95d0c8dcb1b54bf4d5fcb88ad1235949283b0a90658db6f6d"
+        }
+      ]
+    },
+    {
+      "route": "/faq",
+      "width": 1440,
+      "label": "faq",
+      "tiles": 6,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-faq-1440-sheet-0.png",
+          "sha256": "b10a655c1b9fd34f9779deeeadaee3e8c7af93f026b6a12de2813a195d206cee"
+        }
+      ]
+    },
+    {
+      "route": "/journal/m6-qa-452c7722-373af31d",
+      "width": 390,
+      "label": "journal-child",
+      "tiles": 5,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-journal-child-390-sheet-0.png",
+          "sha256": "9fe9a4f64c2edaae3e9f9c525b826599e474515fd7c04a3547af800ada42b8d8"
+        }
+      ]
+    },
+    {
+      "route": "/journal/m6-qa-452c7722-373af31d",
+      "width": 1440,
+      "label": "journal-child",
+      "tiles": 4,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-journal-child-1440-sheet-0.png",
+          "sha256": "aa138bd88a20c404befea4da8478a04706111ce73a27706bc9e7bde57ad95955"
+        }
+      ]
+    },
+    {
+      "route": "/portfolio/m6-qa-452c7722-71bcab92",
+      "width": 390,
+      "label": "portfolio-child",
+      "tiles": 6,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-portfolio-child-390-sheet-0.png",
+          "sha256": "9e493035a32fd459a5aca230daeaa3a1cf8624f4e8934c98f26b47a9389178b0"
+        }
+      ]
+    },
+    {
+      "route": "/portfolio/m6-qa-452c7722-71bcab92",
+      "width": 1440,
+      "label": "portfolio-child",
+      "tiles": 4,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-portfolio-child-1440-sheet-0.png",
+          "sha256": "bcbcb9235d6626c5bf6633d95a50f96cb353ced9996097bd3852839b7f8a4827"
+        }
+      ]
+    },
+    {
+      "route": "/testimonials/m6-qa-452c7722-c790254e",
+      "width": 390,
+      "label": "testimonials-child",
+      "tiles": 4,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-testimonials-child-390-sheet-0.png",
+          "sha256": "92737831dfa0d90541318ce5ba71df82cbaa41369c4b3490626e3862835c811c"
+        }
+      ]
+    },
+    {
+      "route": "/testimonials/m6-qa-452c7722-c790254e",
+      "width": 1440,
+      "label": "testimonials-child",
+      "tiles": 3,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-testimonials-child-1440-sheet-0.png",
+          "sha256": "a329bf91d981299baef1e2c0b335c6e0c91c549c41a89de4ccb260df3edcc1e4"
+        }
+      ]
+    },
+    {
+      "route": "/faq/m6-qa-452c7722-2bc0f182",
+      "width": 390,
+      "label": "faq-child",
+      "tiles": 4,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-faq-child-390-sheet-0.png",
+          "sha256": "c1356702edaed6ec0103826bba1dc72fa858f7c66bcf95c3652960b5fe2d71db"
+        }
+      ]
+    },
+    {
+      "route": "/faq/m6-qa-452c7722-2bc0f182",
+      "width": 1440,
+      "label": "faq-child",
+      "tiles": 3,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-faq-child-1440-sheet-0.png",
+          "sha256": "03eb79117f8b1314f1f339b75c8e6dc3f8e55f6831494de4b99fbadf49ee4de3"
+        }
+      ]
+    },
+    {
+      "route": "/pieces/river-channel/customize",
+      "width": 390,
+      "label": "pieces-river-channel-customize",
+      "tiles": 7,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-pieces-river-channel-customize-390-sheet-0.png",
+          "sha256": "a464c1b907f4255ad86e75d3163e58b3aed1b65e2d779c4172f527de5db8fa74"
+        }
+      ]
+    },
+    {
+      "route": "/pieces/river-channel/customize",
+      "width": 1440,
+      "label": "pieces-river-channel-customize",
+      "tiles": 4,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-pieces-river-channel-customize-1440-sheet-0.png",
+          "sha256": "74eba0dd63dc919b6b5f6941f45186a9011897ccac0883e891046c7735952209"
+        }
+      ]
+    },
+    {
+      "route": "/commission/customize",
+      "width": 390,
+      "label": "commission-customize",
+      "tiles": 7,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-commission-customize-390-sheet-0.png",
+          "sha256": "4e1b49cac0a78ec3fa9a8cea320339bef3380d54fdd310cd6f92913bae05478c"
+        }
+      ]
+    },
+    {
+      "route": "/commission/customize",
+      "width": 1440,
+      "label": "commission-customize",
+      "tiles": 4,
+      "overflow": false,
+      "reviewer": "coordinating agent",
+      "disposition": "default visible layout accepted",
+      "sheets": [
+        {
+          "file": "supplement-commission-customize-1440-sheet-0.png",
+          "sha256": "b14ad0261bb162aa72ffd3378c93c9f084ce2fc47acd9913ecab050ef22b9e30"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Initial collectible-design390 images captured before decode are superseded by the warm decoded set.",
+    "Local M6 children use retained simple QA content, without a populated customer gallery. They do not prove production M9 data or old empty detail parity.",
+    "Preserve and personalize routes are catalogue entry journeys, not separate submitted forms. Their new captures remain unreviewed.",
+    "No customer form submitted and no WhatsApp message sent.",
+    "Alternate filters, all-width coverage, focus/hover and long-policy print remain separate states."
+  ]
+}

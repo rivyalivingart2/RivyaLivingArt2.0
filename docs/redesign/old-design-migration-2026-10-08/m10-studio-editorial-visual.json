@@ -1,0 +1,1942 @@
+{
+  "date": "2026-10-12",
+  "environment": "isolated local QA",
+  "baseUrl": "http://127.0.0.1:4199",
+  "reviewer": "AI visual inspection",
+  "nativeDeviceEvidence": false,
+  "completeVisualAcceptance": false,
+  "source": "M10-STUDIO-EDITORIAL-VISUAL.md",
+  "captureRoot": "test-results/old-design-migration/m10-completion/studio-editorial",
+  "countGroups": 31,
+  "countFrames": 215.0,
+  "widths": [
+    1440,
+    390,
+    320
+  ],
+  "viewportHeight": 720,
+  "method": "Actual browser viewport capability with exclusive browser ownership; CDP scroll only; each frame emitted and visually inspected",
+  "excluded": [
+    {
+      "name": "portfolio-create",
+      "reason": "Initial partial loading capture; superseded by portfolio-create-details desktop full capture",
+      "width": 1440
+    },
+    {
+      "reason": "Rejected geometry or wrong tab; files not in accepted rows do not count",
+      "name": "Unlisted earlier CDP-only and wrong-tab captures"
+    }
+  ],
+  "scopes": {
+    "V30": "Four ordering representatives and four filtered register entries verified only for named states; all scope/list states pending",
+    "V29": "Six default editors and saved DB028/history/compare verified only for named states; conditional variants and five widths pending",
+    "V28": "Unverified in this pass"
+  },
+  "writes": {
+    "saved": false,
+    "reviewApproved": false,
+    "imported": false,
+    "protectedDataChanged": false,
+    "restored": false,
+    "published": false
+  },
+  "groups": [
+    {
+      "name": "journal-create",
+      "url": "http://127.0.0.1:4199/studio/journal?create=1",
+      "width": 1440,
+      "geometry": {
+        "h": 720,
+        "sh": 3940,
+        "sw": 1425,
+        "w": 1440
+      },
+      "images": [
+        {
+          "file": "journal-create-1440-0.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "file": "journal-create-1440-640.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 640
+        },
+        {
+          "file": "journal-create-1440-1280.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 1280
+        },
+        {
+          "file": "journal-create-1440-1920.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 1920
+        },
+        {
+          "file": "journal-create-1440-2560.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 2560
+        },
+        {
+          "file": "journal-create-1440-3200.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 3200
+        },
+        {
+          "file": "journal-create-1440-3220.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 3220
+        }
+      ]
+    },
+    {
+      "name": "journal-create",
+      "url": "http://127.0.0.1:4199/studio/journal?create=1",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 5104,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "journal-create-390-0.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "journal-create-390-640.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "journal-create-390-1280.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 1280
+        },
+        {
+          "file": "journal-create-390-1920.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 1920
+        },
+        {
+          "file": "journal-create-390-2560.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 2560
+        },
+        {
+          "file": "journal-create-390-3200.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 3200
+        },
+        {
+          "file": "journal-create-390-3840.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 3840
+        },
+        {
+          "file": "journal-create-390-4384.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 4384
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "journal-create",
+      "url": "http://127.0.0.1:4199/studio/journal?create=1",
+      "width": 320,
+      "geometry": {
+        "h": 720,
+        "sh": 5567,
+        "sw": 305,
+        "w": 320
+      },
+      "images": [
+        {
+          "file": "journal-create-320-0.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 0
+        },
+        {
+          "file": "journal-create-320-640.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 640
+        },
+        {
+          "file": "journal-create-320-1280.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 1280
+        },
+        {
+          "file": "journal-create-320-1920.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 1920
+        },
+        {
+          "file": "journal-create-320-2560.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 2560
+        },
+        {
+          "file": "journal-create-320-3200.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 3200
+        },
+        {
+          "file": "journal-create-320-3840.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 3840
+        },
+        {
+          "file": "journal-create-320-4480.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 4480
+        },
+        {
+          "file": "journal-create-320-4847.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 4847
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "portfolio-create",
+      "url": "http://127.0.0.1:4199/studio/portfolio?create=1",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 5793,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "portfolio-create-390-0.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "portfolio-create-390-640.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "portfolio-create-390-1280.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 1280
+        },
+        {
+          "file": "portfolio-create-390-1920.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 1920
+        },
+        {
+          "file": "portfolio-create-390-2560.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 2560
+        },
+        {
+          "file": "portfolio-create-390-3200.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 3200
+        },
+        {
+          "file": "portfolio-create-390-3840.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 3840
+        },
+        {
+          "file": "portfolio-create-390-4480.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 4480
+        },
+        {
+          "file": "portfolio-create-390-5073.jpg",
+          "h": 720,
+          "w": 390,
+          "y": 5073
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "portfolio-create",
+      "url": "http://127.0.0.1:4199/studio/portfolio?create=1",
+      "width": 320,
+      "geometry": {
+        "h": 720,
+        "sh": 6384,
+        "sw": 305,
+        "w": 320
+      },
+      "images": [
+        {
+          "file": "portfolio-create-320-0.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 0
+        },
+        {
+          "file": "portfolio-create-320-640.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 640
+        },
+        {
+          "file": "portfolio-create-320-1280.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 1280
+        },
+        {
+          "file": "portfolio-create-320-1920.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 1920
+        },
+        {
+          "file": "portfolio-create-320-2560.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 2560
+        },
+        {
+          "file": "portfolio-create-320-3200.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 3200
+        },
+        {
+          "file": "portfolio-create-320-3840.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 3840
+        },
+        {
+          "file": "portfolio-create-320-4480.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 4480
+        },
+        {
+          "file": "portfolio-create-320-5120.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 5120
+        },
+        {
+          "file": "portfolio-create-320-5664.jpg",
+          "h": 720,
+          "w": 320,
+          "y": 5664
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "portfolio-create-details",
+      "url": "http://127.0.0.1:4199/studio/portfolio?create=1",
+      "width": 1440,
+      "geometry": {
+        "h": 720,
+        "sh": 4712,
+        "sw": 1425,
+        "w": 1440
+      },
+      "images": [
+        {
+          "file": "portfolio-create-details-1440-0.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "file": "portfolio-create-details-1440-640.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 640
+        },
+        {
+          "file": "portfolio-create-details-1440-1280.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 1280
+        },
+        {
+          "file": "portfolio-create-details-1440-1920.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 1920
+        },
+        {
+          "file": "portfolio-create-details-1440-2560.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 2560
+        },
+        {
+          "file": "portfolio-create-details-1440-3200.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 3200
+        },
+        {
+          "file": "portfolio-create-details-1440-3840.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 3840
+        },
+        {
+          "file": "portfolio-create-details-1440-3992.jpg",
+          "h": 720,
+          "w": 1440,
+          "y": 3992
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "testimonials-create",
+      "url": "http://127.0.0.1:4199/studio/testimonials?create=1",
+      "width": 1440,
+      "geometry": {
+        "h": 720,
+        "sh": 3849,
+        "sw": 1425,
+        "w": 1440
+      },
+      "images": [
+        {
+          "file": "testimonials-create-1440-0.jpg",
+          "h": 720,
+          "sh": 3849,
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "file": "testimonials-create-1440-640.jpg",
+          "h": 720,
+          "sh": 3849,
+          "w": 1440,
+          "y": 640
+        },
+        {
+          "file": "testimonials-create-1440-1280.jpg",
+          "h": 720,
+          "sh": 3849,
+          "w": 1440,
+          "y": 1280
+        },
+        {
+          "file": "testimonials-create-1440-1920.jpg",
+          "h": 720,
+          "sh": 3849,
+          "w": 1440,
+          "y": 1920
+        },
+        {
+          "file": "testimonials-create-1440-2560.jpg",
+          "h": 720,
+          "sh": 3849,
+          "w": 1440,
+          "y": 2560
+        },
+        {
+          "file": "testimonials-create-1440-3129.jpg",
+          "h": 720,
+          "sh": 3849,
+          "w": 1440,
+          "y": 3129
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "testimonials-create",
+      "url": "http://127.0.0.1:4199/studio/testimonials?create=1",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 4854,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "testimonials-create-390-0.jpg",
+          "h": 720,
+          "sh": 4854,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "testimonials-create-390-640.jpg",
+          "h": 720,
+          "sh": 4854,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "testimonials-create-390-1280.jpg",
+          "h": 720,
+          "sh": 4854,
+          "w": 390,
+          "y": 1280
+        },
+        {
+          "file": "testimonials-create-390-1920.jpg",
+          "h": 720,
+          "sh": 4854,
+          "w": 390,
+          "y": 1920
+        },
+        {
+          "file": "testimonials-create-390-2560.jpg",
+          "h": 720,
+          "sh": 4854,
+          "w": 390,
+          "y": 2560
+        },
+        {
+          "file": "testimonials-create-390-3200.jpg",
+          "h": 720,
+          "sh": 4854,
+          "w": 390,
+          "y": 3200
+        },
+        {
+          "file": "testimonials-create-390-3840.jpg",
+          "h": 720,
+          "sh": 4854,
+          "w": 390,
+          "y": 3840
+        },
+        {
+          "file": "testimonials-create-390-4134.jpg",
+          "h": 720,
+          "sh": 4854,
+          "w": 390,
+          "y": 4134
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "testimonials-create",
+      "url": "http://127.0.0.1:4199/studio/testimonials?create=1",
+      "width": 320,
+      "geometry": {
+        "h": 720,
+        "sh": 5295,
+        "sw": 305,
+        "w": 320
+      },
+      "images": [
+        {
+          "file": "testimonials-create-320-0.jpg",
+          "h": 720,
+          "sh": 5295,
+          "w": 320,
+          "y": 0
+        },
+        {
+          "file": "testimonials-create-320-640.jpg",
+          "h": 720,
+          "sh": 5295,
+          "w": 320,
+          "y": 640
+        },
+        {
+          "file": "testimonials-create-320-1280.jpg",
+          "h": 720,
+          "sh": 5295,
+          "w": 320,
+          "y": 1280
+        },
+        {
+          "file": "testimonials-create-320-1920.jpg",
+          "h": 720,
+          "sh": 5295,
+          "w": 320,
+          "y": 1920
+        },
+        {
+          "file": "testimonials-create-320-2560.jpg",
+          "h": 720,
+          "sh": 5295,
+          "w": 320,
+          "y": 2560
+        },
+        {
+          "file": "testimonials-create-320-3200.jpg",
+          "h": 720,
+          "sh": 5295,
+          "w": 320,
+          "y": 3200
+        },
+        {
+          "file": "testimonials-create-320-3840.jpg",
+          "h": 720,
+          "sh": 5295,
+          "w": 320,
+          "y": 3840
+        },
+        {
+          "file": "testimonials-create-320-4480.jpg",
+          "h": 720,
+          "sh": 5295,
+          "w": 320,
+          "y": 4480
+        },
+        {
+          "file": "testimonials-create-320-4575.jpg",
+          "h": 720,
+          "sh": 5295,
+          "w": 320,
+          "y": 4575
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "faqs-create",
+      "url": "http://127.0.0.1:4199/studio/faqs?create=1",
+      "width": 1440,
+      "geometry": {
+        "h": 720,
+        "sh": 4314,
+        "sw": 1425,
+        "w": 1440
+      },
+      "images": [
+        {
+          "file": "faqs-create-1440-0.jpg",
+          "h": 720,
+          "sh": 4314,
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "file": "faqs-create-1440-640.jpg",
+          "h": 720,
+          "sh": 4314,
+          "w": 1440,
+          "y": 640
+        },
+        {
+          "file": "faqs-create-1440-1280.jpg",
+          "h": 720,
+          "sh": 4314,
+          "w": 1440,
+          "y": 1280
+        },
+        {
+          "file": "faqs-create-1440-1920.jpg",
+          "h": 720,
+          "sh": 4314,
+          "w": 1440,
+          "y": 1920
+        },
+        {
+          "file": "faqs-create-1440-2560.jpg",
+          "h": 720,
+          "sh": 4314,
+          "w": 1440,
+          "y": 2560
+        },
+        {
+          "file": "faqs-create-1440-3200.jpg",
+          "h": 720,
+          "sh": 4314,
+          "w": 1440,
+          "y": 3200
+        },
+        {
+          "file": "faqs-create-1440-3594.jpg",
+          "h": 720,
+          "sh": 4314,
+          "w": 1440,
+          "y": 3594
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "faqs-create",
+      "url": "http://127.0.0.1:4199/studio/faqs?create=1",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 5362,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "faqs-create-390-0.jpg",
+          "h": 720,
+          "sh": 5362,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "faqs-create-390-640.jpg",
+          "h": 720,
+          "sh": 5362,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "faqs-create-390-1280.jpg",
+          "h": 720,
+          "sh": 5362,
+          "w": 390,
+          "y": 1280
+        },
+        {
+          "file": "faqs-create-390-1920.jpg",
+          "h": 720,
+          "sh": 5362,
+          "w": 390,
+          "y": 1920
+        },
+        {
+          "file": "faqs-create-390-2560.jpg",
+          "h": 720,
+          "sh": 5362,
+          "w": 390,
+          "y": 2560
+        },
+        {
+          "file": "faqs-create-390-3200.jpg",
+          "h": 720,
+          "sh": 5362,
+          "w": 390,
+          "y": 3200
+        },
+        {
+          "file": "faqs-create-390-3840.jpg",
+          "h": 720,
+          "sh": 5362,
+          "w": 390,
+          "y": 3840
+        },
+        {
+          "file": "faqs-create-390-4480.jpg",
+          "h": 720,
+          "sh": 5362,
+          "w": 390,
+          "y": 4480
+        },
+        {
+          "file": "faqs-create-390-4642.jpg",
+          "h": 720,
+          "sh": 5362,
+          "w": 390,
+          "y": 4642
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "faqs-create",
+      "url": "http://127.0.0.1:4199/studio/faqs?create=1",
+      "width": 320,
+      "geometry": {
+        "h": 720,
+        "sh": 5898,
+        "sw": 305,
+        "w": 320
+      },
+      "images": [
+        {
+          "file": "faqs-create-320-0.jpg",
+          "h": 720,
+          "sh": 5898,
+          "w": 320,
+          "y": 0
+        },
+        {
+          "file": "faqs-create-320-640.jpg",
+          "h": 720,
+          "sh": 5898,
+          "w": 320,
+          "y": 640
+        },
+        {
+          "file": "faqs-create-320-1280.jpg",
+          "h": 720,
+          "sh": 5898,
+          "w": 320,
+          "y": 1280
+        },
+        {
+          "file": "faqs-create-320-1920.jpg",
+          "h": 720,
+          "sh": 5898,
+          "w": 320,
+          "y": 1920
+        },
+        {
+          "file": "faqs-create-320-2560.jpg",
+          "h": 720,
+          "sh": 5898,
+          "w": 320,
+          "y": 2560
+        },
+        {
+          "file": "faqs-create-320-3200.jpg",
+          "h": 720,
+          "sh": 5898,
+          "w": 320,
+          "y": 3200
+        },
+        {
+          "file": "faqs-create-320-3840.jpg",
+          "h": 720,
+          "sh": 5898,
+          "w": 320,
+          "y": 3840
+        },
+        {
+          "file": "faqs-create-320-4480.jpg",
+          "h": 720,
+          "sh": 5898,
+          "w": 320,
+          "y": 4480
+        },
+        {
+          "file": "faqs-create-320-5120.jpg",
+          "h": 720,
+          "sh": 5898,
+          "w": 320,
+          "y": 5120
+        },
+        {
+          "file": "faqs-create-320-5178.jpg",
+          "h": 720,
+          "sh": 5898,
+          "w": 320,
+          "y": 5178
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "pages-create",
+      "url": "http://127.0.0.1:4199/studio/pages?create=1",
+      "width": 1440,
+      "geometry": {
+        "h": 720,
+        "sh": 3915,
+        "sw": 1425,
+        "w": 1440
+      },
+      "images": [
+        {
+          "file": "pages-create-1440-0.jpg",
+          "h": 720,
+          "sh": 3915,
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "file": "pages-create-1440-640.jpg",
+          "h": 720,
+          "sh": 3915,
+          "w": 1440,
+          "y": 640
+        },
+        {
+          "file": "pages-create-1440-1280.jpg",
+          "h": 720,
+          "sh": 3915,
+          "w": 1440,
+          "y": 1280
+        },
+        {
+          "file": "pages-create-1440-1920.jpg",
+          "h": 720,
+          "sh": 3915,
+          "w": 1440,
+          "y": 1920
+        },
+        {
+          "file": "pages-create-1440-2560.jpg",
+          "h": 720,
+          "sh": 3915,
+          "w": 1440,
+          "y": 2560
+        },
+        {
+          "file": "pages-create-1440-3195.jpg",
+          "h": 720,
+          "sh": 3915,
+          "w": 1440,
+          "y": 3195
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "pages-create",
+      "url": "http://127.0.0.1:4199/studio/pages?create=1",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 4946,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "pages-create-390-0.jpg",
+          "h": 720,
+          "sh": 4946,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "pages-create-390-640.jpg",
+          "h": 720,
+          "sh": 4946,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "pages-create-390-1280.jpg",
+          "h": 720,
+          "sh": 4946,
+          "w": 390,
+          "y": 1280
+        },
+        {
+          "file": "pages-create-390-1920.jpg",
+          "h": 720,
+          "sh": 4946,
+          "w": 390,
+          "y": 1920
+        },
+        {
+          "file": "pages-create-390-2560.jpg",
+          "h": 720,
+          "sh": 4946,
+          "w": 390,
+          "y": 2560
+        },
+        {
+          "file": "pages-create-390-3200.jpg",
+          "h": 720,
+          "sh": 4946,
+          "w": 390,
+          "y": 3200
+        },
+        {
+          "file": "pages-create-390-3840.jpg",
+          "h": 720,
+          "sh": 4946,
+          "w": 390,
+          "y": 3840
+        },
+        {
+          "file": "pages-create-390-4226.jpg",
+          "h": 720,
+          "sh": 4946,
+          "w": 390,
+          "y": 4226
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "pages-create",
+      "url": "http://127.0.0.1:4199/studio/pages?create=1",
+      "width": 320,
+      "geometry": {
+        "h": 720,
+        "sh": 5432,
+        "sw": 305,
+        "w": 320
+      },
+      "images": [
+        {
+          "file": "pages-create-320-0.jpg",
+          "h": 720,
+          "sh": 5432,
+          "w": 320,
+          "y": 0
+        },
+        {
+          "file": "pages-create-320-640.jpg",
+          "h": 720,
+          "sh": 5432,
+          "w": 320,
+          "y": 640
+        },
+        {
+          "file": "pages-create-320-1280.jpg",
+          "h": 720,
+          "sh": 5432,
+          "w": 320,
+          "y": 1280
+        },
+        {
+          "file": "pages-create-320-1920.jpg",
+          "h": 720,
+          "sh": 5432,
+          "w": 320,
+          "y": 1920
+        },
+        {
+          "file": "pages-create-320-2560.jpg",
+          "h": 720,
+          "sh": 5432,
+          "w": 320,
+          "y": 2560
+        },
+        {
+          "file": "pages-create-320-3200.jpg",
+          "h": 720,
+          "sh": 5432,
+          "w": 320,
+          "y": 3200
+        },
+        {
+          "file": "pages-create-320-3840.jpg",
+          "h": 720,
+          "sh": 5432,
+          "w": 320,
+          "y": 3840
+        },
+        {
+          "file": "pages-create-320-4480.jpg",
+          "h": 720,
+          "sh": 5432,
+          "w": 320,
+          "y": 4480
+        },
+        {
+          "file": "pages-create-320-4712.jpg",
+          "h": 720,
+          "sh": 5432,
+          "w": 320,
+          "y": 4712
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "landing-create",
+      "url": "http://127.0.0.1:4199/studio/landing-pages?create=1",
+      "width": 1440,
+      "geometry": {
+        "h": 720,
+        "sh": 3430,
+        "sw": 1425,
+        "w": 1440
+      },
+      "images": [
+        {
+          "file": "landing-create-1440-0.jpg",
+          "h": 720,
+          "sh": 3430,
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "file": "landing-create-1440-640.jpg",
+          "h": 720,
+          "sh": 3430,
+          "w": 1440,
+          "y": 640
+        },
+        {
+          "file": "landing-create-1440-1280.jpg",
+          "h": 720,
+          "sh": 3430,
+          "w": 1440,
+          "y": 1280
+        },
+        {
+          "file": "landing-create-1440-1920.jpg",
+          "h": 720,
+          "sh": 3430,
+          "w": 1440,
+          "y": 1920
+        },
+        {
+          "file": "landing-create-1440-2560.jpg",
+          "h": 720,
+          "sh": 3430,
+          "w": 1440,
+          "y": 2560
+        },
+        {
+          "file": "landing-create-1440-2710.jpg",
+          "h": 720,
+          "sh": 3430,
+          "w": 1440,
+          "y": 2710
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "landing-create",
+      "url": "http://127.0.0.1:4199/studio/landing-pages?create=1",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 4505,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "landing-create-390-0.jpg",
+          "h": 720,
+          "sh": 4505,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "landing-create-390-640.jpg",
+          "h": 720,
+          "sh": 4505,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "landing-create-390-1280.jpg",
+          "h": 720,
+          "sh": 4505,
+          "w": 390,
+          "y": 1280
+        },
+        {
+          "file": "landing-create-390-1920.jpg",
+          "h": 720,
+          "sh": 4505,
+          "w": 390,
+          "y": 1920
+        },
+        {
+          "file": "landing-create-390-2560.jpg",
+          "h": 720,
+          "sh": 4505,
+          "w": 390,
+          "y": 2560
+        },
+        {
+          "file": "landing-create-390-3200.jpg",
+          "h": 720,
+          "sh": 4505,
+          "w": 390,
+          "y": 3200
+        },
+        {
+          "file": "landing-create-390-3785.jpg",
+          "h": 720,
+          "sh": 4505,
+          "w": 390,
+          "y": 3785
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "landing-create",
+      "url": "http://127.0.0.1:4199/studio/landing-pages?create=1",
+      "width": 320,
+      "geometry": {
+        "h": 720,
+        "sh": 5005,
+        "sw": 305,
+        "w": 320
+      },
+      "images": [
+        {
+          "file": "landing-create-320-0.jpg",
+          "h": 720,
+          "sh": 5005,
+          "w": 320,
+          "y": 0
+        },
+        {
+          "file": "landing-create-320-640.jpg",
+          "h": 720,
+          "sh": 5005,
+          "w": 320,
+          "y": 640
+        },
+        {
+          "file": "landing-create-320-1280.jpg",
+          "h": 720,
+          "sh": 5005,
+          "w": 320,
+          "y": 1280
+        },
+        {
+          "file": "landing-create-320-1920.jpg",
+          "h": 720,
+          "sh": 5005,
+          "w": 320,
+          "y": 1920
+        },
+        {
+          "file": "landing-create-320-2560.jpg",
+          "h": 720,
+          "sh": 5005,
+          "w": 320,
+          "y": 2560
+        },
+        {
+          "file": "landing-create-320-3200.jpg",
+          "h": 720,
+          "sh": 5005,
+          "w": 320,
+          "y": 3200
+        },
+        {
+          "file": "landing-create-320-3840.jpg",
+          "h": 720,
+          "sh": 5005,
+          "w": 320,
+          "y": 3840
+        },
+        {
+          "file": "landing-create-320-4285.jpg",
+          "h": 720,
+          "sh": 5005,
+          "w": 320,
+          "y": 4285
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "journal-db028-history",
+      "url": "http://127.0.0.1:4199/studio/journal?record=DB028",
+      "width": 1440,
+      "geometry": {
+        "h": 720,
+        "sh": 4318,
+        "sw": 1425,
+        "w": 1440
+      },
+      "images": [
+        {
+          "file": "journal-db028-history-1440-0.jpg",
+          "h": 720,
+          "sh": 4318,
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "file": "journal-db028-history-1440-640.jpg",
+          "h": 720,
+          "sh": 4318,
+          "w": 1440,
+          "y": 640
+        },
+        {
+          "file": "journal-db028-history-1440-1280.jpg",
+          "h": 720,
+          "sh": 4318,
+          "w": 1440,
+          "y": 1280
+        },
+        {
+          "file": "journal-db028-history-1440-1920.jpg",
+          "h": 720,
+          "sh": 4318,
+          "w": 1440,
+          "y": 1920
+        },
+        {
+          "file": "journal-db028-history-1440-2560.jpg",
+          "h": 720,
+          "sh": 4318,
+          "w": 1440,
+          "y": 2560
+        },
+        {
+          "file": "journal-db028-history-1440-3200.jpg",
+          "h": 720,
+          "sh": 4318,
+          "w": 1440,
+          "y": 3200
+        },
+        {
+          "file": "journal-db028-history-1440-3598.jpg",
+          "h": 720,
+          "sh": 4318,
+          "w": 1440,
+          "y": 3598
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "journal-db028-history",
+      "url": "http://127.0.0.1:4199/studio/journal?record=DB028",
+      "width": 320,
+      "geometry": {
+        "h": 720,
+        "sh": 6004,
+        "sw": 305,
+        "w": 320
+      },
+      "images": [
+        {
+          "file": "journal-db028-history-320-0.jpg",
+          "h": 720,
+          "sh": 6004,
+          "w": 320,
+          "y": 0
+        },
+        {
+          "file": "journal-db028-history-320-640.jpg",
+          "h": 720,
+          "sh": 6004,
+          "w": 320,
+          "y": 640
+        },
+        {
+          "file": "journal-db028-history-320-1280.jpg",
+          "h": 720,
+          "sh": 6004,
+          "w": 320,
+          "y": 1280
+        },
+        {
+          "file": "journal-db028-history-320-1920.jpg",
+          "h": 720,
+          "sh": 6004,
+          "w": 320,
+          "y": 1920
+        },
+        {
+          "file": "journal-db028-history-320-2560.jpg",
+          "h": 720,
+          "sh": 6004,
+          "w": 320,
+          "y": 2560
+        },
+        {
+          "file": "journal-db028-history-320-3200.jpg",
+          "h": 720,
+          "sh": 6004,
+          "w": 320,
+          "y": 3200
+        },
+        {
+          "file": "journal-db028-history-320-3840.jpg",
+          "h": 720,
+          "sh": 6004,
+          "w": 320,
+          "y": 3840
+        },
+        {
+          "file": "journal-db028-history-320-4480.jpg",
+          "h": 720,
+          "sh": 6004,
+          "w": 320,
+          "y": 4480
+        },
+        {
+          "file": "journal-db028-history-320-5120.jpg",
+          "h": 720,
+          "sh": 6004,
+          "w": 320,
+          "y": 5120
+        },
+        {
+          "file": "journal-db028-history-320-5284.jpg",
+          "h": 720,
+          "sh": 6004,
+          "w": 320,
+          "y": 5284
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "journal-db028-history-loaded",
+      "url": "http://127.0.0.1:4199/studio/journal?record=DB028",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 7455,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "journal-db028-history-loaded-390-0.jpg",
+          "h": 720,
+          "sh": 7455,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "journal-db028-history-loaded-390-640.jpg",
+          "h": 720,
+          "sh": 7455,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "journal-db028-history-loaded-390-1280.jpg",
+          "h": 720,
+          "sh": 7455,
+          "w": 390,
+          "y": 1280
+        },
+        {
+          "file": "journal-db028-history-loaded-390-1920.jpg",
+          "h": 720,
+          "sh": 7455,
+          "w": 390,
+          "y": 1920
+        },
+        {
+          "file": "journal-db028-history-loaded-390-2560.jpg",
+          "h": 720,
+          "sh": 7455,
+          "w": 390,
+          "y": 2560
+        },
+        {
+          "file": "journal-db028-history-loaded-390-3200.jpg",
+          "h": 720,
+          "sh": 7455,
+          "w": 390,
+          "y": 3200
+        },
+        {
+          "file": "journal-db028-history-loaded-390-3840.jpg",
+          "h": 720,
+          "sh": 7455,
+          "w": 390,
+          "y": 3840
+        },
+        {
+          "file": "journal-db028-history-loaded-390-4480.jpg",
+          "h": 720,
+          "sh": 7455,
+          "w": 390,
+          "y": 4480
+        },
+        {
+          "file": "journal-db028-history-loaded-390-5120.jpg",
+          "h": 720,
+          "sh": 7455,
+          "w": 390,
+          "y": 5120
+        },
+        {
+          "file": "journal-db028-history-loaded-390-5760.jpg",
+          "h": 720,
+          "sh": 7455,
+          "w": 390,
+          "y": 5760
+        },
+        {
+          "file": "journal-db028-history-loaded-390-6400.jpg",
+          "h": 720,
+          "sh": 7455,
+          "w": 390,
+          "y": 6400
+        },
+        {
+          "file": "journal-db028-history-loaded-390-6735.jpg",
+          "h": 720,
+          "sh": 7455,
+          "w": 390,
+          "y": 6735
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "order-portfolio-curated",
+      "url": "http://127.0.0.1:4199/studio/editorial-order",
+      "width": 1440,
+      "geometry": {
+        "h": 720,
+        "sh": 2726,
+        "sw": 1425,
+        "w": 1440
+      },
+      "images": [
+        {
+          "file": "order-portfolio-curated-1440-0.jpg",
+          "h": 720,
+          "sh": 2726,
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "file": "order-portfolio-curated-1440-640.jpg",
+          "h": 720,
+          "sh": 2726,
+          "w": 1440,
+          "y": 640
+        },
+        {
+          "file": "order-portfolio-curated-1440-1280.jpg",
+          "h": 720,
+          "sh": 2726,
+          "w": 1440,
+          "y": 1280
+        },
+        {
+          "file": "order-portfolio-curated-1440-1920.jpg",
+          "h": 720,
+          "sh": 2726,
+          "w": 1440,
+          "y": 1920
+        },
+        {
+          "file": "order-portfolio-curated-1440-2006.jpg",
+          "h": 720,
+          "sh": 2726,
+          "w": 1440,
+          "y": 2006
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "order-portfolio-curated",
+      "url": "http://127.0.0.1:4199/studio/editorial-order",
+      "width": 320,
+      "geometry": {
+        "h": 720,
+        "sh": 3295,
+        "sw": 305,
+        "w": 320
+      },
+      "images": [
+        {
+          "file": "order-portfolio-curated-320-0.jpg",
+          "h": 720,
+          "sh": 3295,
+          "w": 320,
+          "y": 0
+        },
+        {
+          "file": "order-portfolio-curated-320-640.jpg",
+          "h": 720,
+          "sh": 3295,
+          "w": 320,
+          "y": 640
+        },
+        {
+          "file": "order-portfolio-curated-320-1280.jpg",
+          "h": 720,
+          "sh": 3295,
+          "w": 320,
+          "y": 1280
+        },
+        {
+          "file": "order-portfolio-curated-320-1920.jpg",
+          "h": 720,
+          "sh": 3295,
+          "w": 320,
+          "y": 1920
+        },
+        {
+          "file": "order-portfolio-curated-320-2560.jpg",
+          "h": 720,
+          "sh": 3295,
+          "w": 320,
+          "y": 2560
+        },
+        {
+          "file": "order-portfolio-curated-320-2575.jpg",
+          "h": 720,
+          "sh": 3295,
+          "w": 320,
+          "y": 2575
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "order-faq-groups",
+      "url": "http://127.0.0.1:4199/studio/editorial-order",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 1790,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "order-faq-groups-390-0.jpg",
+          "h": 720,
+          "sh": 1790,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "order-faq-groups-390-640.jpg",
+          "h": 720,
+          "sh": 1790,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "order-faq-groups-390-1070.jpg",
+          "h": 720,
+          "sh": 1790,
+          "w": 390,
+          "y": 1070
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "order-related-db028",
+      "url": "http://127.0.0.1:4199/studio/editorial-order",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 1866,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "order-related-db028-390-0.jpg",
+          "h": 720,
+          "sh": 1866,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "order-related-db028-390-640.jpg",
+          "h": 720,
+          "sh": 1866,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "order-related-db028-390-1146.jpg",
+          "h": 720,
+          "sh": 1866,
+          "w": 390,
+          "y": 1146
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "order-testimonial-opening",
+      "url": "http://127.0.0.1:4199/studio/editorial-order",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 1835,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "order-testimonial-opening-390-0.jpg",
+          "h": 720,
+          "sh": 1835,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "order-testimonial-opening-390-640.jpg",
+          "h": 720,
+          "sh": 1835,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "order-testimonial-opening-390-1115.jpg",
+          "h": 720,
+          "sh": 1835,
+          "w": 390,
+          "y": 1115
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "register-journal-j001",
+      "url": "http://127.0.0.1:4199/studio/content-register?kind=Journal&page=1&q=J001",
+      "width": 1440,
+      "geometry": {
+        "h": 720,
+        "sh": 2155,
+        "sw": 1425,
+        "w": 1440
+      },
+      "images": [
+        {
+          "file": "register-journal-j001-1440-0.jpg",
+          "h": 720,
+          "sh": 2155,
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "file": "register-journal-j001-1440-640.jpg",
+          "h": 720,
+          "sh": 2155,
+          "w": 1440,
+          "y": 640
+        },
+        {
+          "file": "register-journal-j001-1440-1280.jpg",
+          "h": 720,
+          "sh": 2155,
+          "w": 1440,
+          "y": 1280
+        },
+        {
+          "file": "register-journal-j001-1440-1435.jpg",
+          "h": 720,
+          "sh": 2155,
+          "w": 1440,
+          "y": 1435
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "register-journal-j001",
+      "url": "http://127.0.0.1:4199/studio/content-register?kind=Journal&page=1&q=J001",
+      "width": 320,
+      "geometry": {
+        "h": 720,
+        "sh": 3591,
+        "sw": 305,
+        "w": 320
+      },
+      "images": [
+        {
+          "file": "register-journal-j001-320-0.jpg",
+          "h": 720,
+          "sh": 3591,
+          "w": 320,
+          "y": 0
+        },
+        {
+          "file": "register-journal-j001-320-640.jpg",
+          "h": 720,
+          "sh": 3591,
+          "w": 320,
+          "y": 640
+        },
+        {
+          "file": "register-journal-j001-320-1280.jpg",
+          "h": 720,
+          "sh": 3591,
+          "w": 320,
+          "y": 1280
+        },
+        {
+          "file": "register-journal-j001-320-1920.jpg",
+          "h": 720,
+          "sh": 3591,
+          "w": 320,
+          "y": 1920
+        },
+        {
+          "file": "register-journal-j001-320-2560.jpg",
+          "h": 720,
+          "sh": 3591,
+          "w": 320,
+          "y": 2560
+        },
+        {
+          "file": "register-journal-j001-320-2871.jpg",
+          "h": 720,
+          "sh": 3591,
+          "w": 320,
+          "y": 2871
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "register-portfolio-p001",
+      "url": "http://127.0.0.1:4199/studio/content-register?kind=Portfolio&page=1&q=P001",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 2204,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "register-portfolio-p001-390-0.jpg",
+          "h": 720,
+          "sh": 2204,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "register-portfolio-p001-390-640.jpg",
+          "h": 720,
+          "sh": 2204,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "register-portfolio-p001-390-1280.jpg",
+          "h": 720,
+          "sh": 2204,
+          "w": 390,
+          "y": 1280
+        },
+        {
+          "file": "register-portfolio-p001-390-1484.jpg",
+          "h": 720,
+          "sh": 2204,
+          "w": 390,
+          "y": 1484
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "register-testimonials-t001",
+      "url": "http://127.0.0.1:4199/studio/content-register?kind=Testimonials&page=1&q=T001",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 2204,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "register-testimonials-t001-390-0.jpg",
+          "h": 720,
+          "sh": 2204,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "register-testimonials-t001-390-640.jpg",
+          "h": 720,
+          "sh": 2204,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "register-testimonials-t001-390-1280.jpg",
+          "h": 720,
+          "sh": 2204,
+          "w": 390,
+          "y": 1280
+        },
+        {
+          "file": "register-testimonials-t001-390-1484.jpg",
+          "h": 720,
+          "sh": 2204,
+          "w": 390,
+          "y": 1484
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    },
+    {
+      "name": "register-faq-f001",
+      "url": "http://127.0.0.1:4199/studio/content-register?kind=FAQs&page=1&q=F001",
+      "width": 390,
+      "geometry": {
+        "h": 720,
+        "sh": 2233,
+        "sw": 375,
+        "w": 390
+      },
+      "images": [
+        {
+          "file": "register-faq-f001-390-0.jpg",
+          "h": 720,
+          "sh": 2233,
+          "w": 390,
+          "y": 0
+        },
+        {
+          "file": "register-faq-f001-390-640.jpg",
+          "h": 720,
+          "sh": 2233,
+          "w": 390,
+          "y": 640
+        },
+        {
+          "file": "register-faq-f001-390-1280.jpg",
+          "h": 720,
+          "sh": 2233,
+          "w": 390,
+          "y": 1280
+        },
+        {
+          "file": "register-faq-f001-390-1513.jpg",
+          "h": 720,
+          "sh": 2233,
+          "w": 390,
+          "y": 1513
+        }
+      ],
+      "method": "actual browser viewport capability; CDP scroll only"
+    }
+  ],
+  "followupSourceFix": {
+    "file": "src/components/studio/content-register.tsx",
+    "issue": "Historical intake permission/media text was presented as current requirements",
+    "change": "Historical intake notes explicitly labelled; current status tied to connected saved record; misleading missing Studio identity removed; local counters explained",
+    "manifestsChanged": false,
+    "dataChanged": false,
+    "browserVerification": "PENDING REBUILT CANDIDATE",
+    "tests": "Existing m8-editorial tests: 4/4 pass",
+    "screenshotScope": "All accepted captures remain evidence of the prior rendered wording"
+  }
+}
