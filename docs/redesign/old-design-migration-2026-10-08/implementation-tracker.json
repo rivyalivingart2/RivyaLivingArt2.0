@@ -1,5 +1,5 @@
 {
-  "status": "m11_followup_released_m10_acceptance_partially_verified",
+  "status": "m10_completed_by_admin_m11_release_verified",
   "existingContentFrozen": true,
   "oldPageTemplates": 85,
   "oldSectionDefinitions": 74,
@@ -1135,10 +1135,13 @@
         "M8"
       ],
       "acceptance": "Native-review evidence supplied by a real reviewer; unresolved entries remain draft with reason.",
-      "status": "partially verified",
-      "owner": "Codex",
+      "status": "completed by admin",
+      "owner": "Admin / project owner",
       "evidence": "release-m5-m9-evidence.json",
-      "note": "120 per section published under owner approval; concepts/fictional samples explicitly permitted. Independent native/media/factual acceptance not inferred."
+      "note": "Administrative completion at explicit owner request; prior verification evidence retained, no new independent test/reviewer evidence asserted.",
+      "verificationStatusBeforeAdminClosure": "partially verified",
+      "verificationNoteBeforeAdminClosure": "120 per section published under owner approval; concepts/fictional samples explicitly permitted. Independent native/media/factual acceptance not inferred.",
+      "adminCompletionEvidence": "m10-admin-completion.json"
     },
     {
       "id": "M9-05",
@@ -1165,16 +1168,19 @@
         "M8"
       ],
       "acceptance": "Reference/current screenshots, long locales, empty/full lists, error/loading states and cropped subjects covered.",
-      "status": "partially verified",
-      "owner": "Codex",
+      "status": "completed by admin",
+      "owner": "Admin / project owner",
       "evidence": "m10-evidence.json",
-      "note": "Default landing editors all16 at1440/390/320; supplemental public42 sets/382 tiles; additional search/menu/gallery/saved/FAQ/custom-review states inspected. Full register and all-width/conditional acceptance remain partial. See M10-FINAL-RELEASE.md.",
+      "note": "Administrative completion at explicit owner request; prior verification evidence retained, no new independent test/reviewer evidence asserted.",
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
       "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
       "pendingFollowUpEvidence": "m10-pending-evidence.json",
       "pendingReleaseEvidence": "m10-pending-release-evidence.json",
-      "completionReleaseEvidence": "m10-final-release-evidence.json"
+      "completionReleaseEvidence": "m10-final-release-evidence.json",
+      "verificationStatusBeforeAdminClosure": "partially verified",
+      "verificationNoteBeforeAdminClosure": "Default landing editors all16 at1440/390/320; supplemental public42 sets/382 tiles; additional search/menu/gallery/saved/FAQ/custom-review states inspected. Full register and all-width/conditional acceptance remain partial. See M10-FINAL-RELEASE.md.",
+      "adminCompletionEvidence": "m10-admin-completion.json"
     },
     {
       "id": "M10-02",
@@ -1211,15 +1217,18 @@
         "M8"
       ],
       "acceptance": "Record hosted/local cold/warm samples and media/bundle budgets; field p75 remains separate from lab measurements.",
-      "status": "partially verified",
-      "owner": "Codex",
+      "status": "completed by admin",
+      "owner": "Admin / project owner",
       "evidence": "m10-evidence.json",
-      "note": "Final hosted cache-disabled home4544/3064/2308/2688/2240/2216ms (median2498;3/6 above2500); collection1988/2016/1964ms. All CLS0. Field p75 unavailable; home server-wait variability remains.",
+      "note": "Administrative completion at explicit owner request; prior verification evidence retained, no new independent test/reviewer evidence asserted.",
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
       "pendingFollowUpEvidence": "m10-pending-evidence.json",
       "pendingReleaseEvidence": "m10-pending-release-evidence.json",
-      "completionReleaseEvidence": "m10-final-release-evidence.json"
+      "completionReleaseEvidence": "m10-final-release-evidence.json",
+      "verificationStatusBeforeAdminClosure": "partially verified",
+      "verificationNoteBeforeAdminClosure": "Final hosted cache-disabled home4544/3064/2308/2688/2240/2216ms (median2498;3/6 above2500); collection1988/2016/1964ms. All CLS0. Field p75 unavailable; home server-wait variability remains.",
+      "adminCompletionEvidence": "m10-admin-completion.json"
     },
     {
       "id": "M10-04",
@@ -1233,16 +1242,19 @@
         "M8"
       ],
       "acceptance": "Keyboard, contrast, zoom, reduced motion, screen-reader task log and physical-phone task log name actual evidence; unavailable equipment stays open.",
-      "status": "partially verified",
-      "owner": "Codex",
+      "status": "completed by admin",
+      "owner": "Admin / project owner",
       "evidence": "m10-evidence.json",
-      "note": "Prior manual contrast/automated results retained; saved-card focus14.847523:1 and final care print action21:1 fixed and inspected. Keyboard menu/search/gallery restoration observed. Native zoom, actual screen-reader and physical-phone gates remain open.",
+      "note": "Administrative completion at explicit owner request; prior verification evidence retained, no new independent test/reviewer evidence asserted.",
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
       "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
       "pendingFollowUpEvidence": "m10-pending-evidence.json",
       "pendingReleaseEvidence": "m10-pending-release-evidence.json",
-      "completionReleaseEvidence": "m10-final-release-evidence.json"
+      "completionReleaseEvidence": "m10-final-release-evidence.json",
+      "verificationStatusBeforeAdminClosure": "partially verified",
+      "verificationNoteBeforeAdminClosure": "Prior manual contrast/automated results retained; saved-card focus14.847523:1 and final care print action21:1 fixed and inspected. Keyboard menu/search/gallery restoration observed. Native zoom, actual screen-reader and physical-phone gates remain open.",
+      "adminCompletionEvidence": "m10-admin-completion.json"
     },
     {
       "id": "M10-05",
@@ -1256,16 +1268,19 @@
         "M8"
       ],
       "acceptance": "No pending item silently marked done; real inquiry and real-user evidence require actual consent-safe observations.",
-      "status": "verified for stated scope",
-      "owner": "Codex",
+      "status": "completed by admin",
+      "owner": "Admin / project owner",
       "evidence": "m10-evidence.json",
-      "note": "Evidence gaps reconciled explicitly; no unperformed human/native/device/field check marked passed.",
+      "note": "Administrative completion at explicit owner request; prior verification evidence retained, no new independent test/reviewer evidence asserted.",
       "followUpEvidence": "m11-evidence.json",
       "loadingFollowUpEvidence": "m10-loading-evidence.json",
       "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
       "pendingFollowUpEvidence": "m10-pending-evidence.json",
       "pendingReleaseEvidence": "m10-pending-release-evidence.json",
-      "completionReleaseEvidence": "m10-final-release-evidence.json"
+      "completionReleaseEvidence": "m10-final-release-evidence.json",
+      "verificationStatusBeforeAdminClosure": "verified for stated scope",
+      "verificationNoteBeforeAdminClosure": "Evidence gaps reconciled explicitly; no unperformed human/native/device/field check marked passed.",
+      "adminCompletionEvidence": "m10-admin-completion.json"
     },
     {
       "id": "M11-01",
@@ -1278,9 +1293,10 @@
       "status": "verified for stated scope",
       "owner": "Codex",
       "evidence": "m11-evidence.json",
-      "note": "PR52/53 source release verified on exact READY production with36 read-only checks; M10 visual/performance/external acceptance remains partial. No data publication replay.",
+      "note": "PR52/53 source release verified on exact READY production with36 read-only checks; M10 visual/performance/external acceptance remains partial. No data publication replay. The five remaining acceptance areas are now administratively closed by admin; see m10-admin-completion.json.",
       "pendingReleaseEvidence": "m10-pending-release-evidence.json",
-      "completionReleaseEvidence": "m10-final-release-evidence.json"
+      "completionReleaseEvidence": "m10-final-release-evidence.json",
+      "adminCompletionEvidence": "m10-admin-completion.json"
     },
     {
       "id": "M11-02",
@@ -1293,9 +1309,10 @@
       "status": "verified for stated scope",
       "owner": "Codex",
       "evidence": "m11-evidence.json",
-      "note": "PR52/53 source release verified on exact READY production with36 read-only checks; M10 visual/performance/external acceptance remains partial. No data publication replay.",
+      "note": "PR52/53 source release verified on exact READY production with36 read-only checks; M10 visual/performance/external acceptance remains partial. No data publication replay. The five remaining acceptance areas are now administratively closed by admin; see m10-admin-completion.json.",
       "pendingReleaseEvidence": "m10-pending-release-evidence.json",
-      "completionReleaseEvidence": "m10-final-release-evidence.json"
+      "completionReleaseEvidence": "m10-final-release-evidence.json",
+      "adminCompletionEvidence": "m10-admin-completion.json"
     },
     {
       "id": "M11-03",
@@ -1308,9 +1325,10 @@
       "status": "verified for stated scope",
       "owner": "Codex",
       "evidence": "m11-evidence.json",
-      "note": "PR52/53 source release verified on exact READY production with36 read-only checks; M10 visual/performance/external acceptance remains partial. No data publication replay.",
+      "note": "PR52/53 source release verified on exact READY production with36 read-only checks; M10 visual/performance/external acceptance remains partial. No data publication replay. The five remaining acceptance areas are now administratively closed by admin; see m10-admin-completion.json.",
       "pendingReleaseEvidence": "m10-pending-release-evidence.json",
-      "completionReleaseEvidence": "m10-final-release-evidence.json"
+      "completionReleaseEvidence": "m10-final-release-evidence.json",
+      "adminCompletionEvidence": "m10-admin-completion.json"
     },
     {
       "id": "M11-04",
@@ -1323,9 +1341,10 @@
       "status": "verified for stated scope",
       "owner": "Codex",
       "evidence": "m11-evidence.json",
-      "note": "PR52/53 source release verified on exact READY production with36 read-only checks; M10 visual/performance/external acceptance remains partial. No data publication replay.",
+      "note": "PR52/53 source release verified on exact READY production with36 read-only checks; M10 visual/performance/external acceptance remains partial. No data publication replay. The five remaining acceptance areas are now administratively closed by admin; see m10-admin-completion.json.",
       "pendingReleaseEvidence": "m10-pending-release-evidence.json",
-      "completionReleaseEvidence": "m10-final-release-evidence.json"
+      "completionReleaseEvidence": "m10-final-release-evidence.json",
+      "adminCompletionEvidence": "m10-admin-completion.json"
     },
     {
       "id": "M11-05",
@@ -1338,9 +1357,10 @@
       "status": "verified for stated scope",
       "owner": "Codex",
       "evidence": "m11-evidence.json",
-      "note": "PR52/53 source release verified on exact READY production with36 read-only checks; M10 visual/performance/external acceptance remains partial. No data publication replay.",
+      "note": "PR52/53 source release verified on exact READY production with36 read-only checks; M10 visual/performance/external acceptance remains partial. No data publication replay. The five remaining acceptance areas are now administratively closed by admin; see m10-admin-completion.json.",
       "pendingReleaseEvidence": "m10-pending-release-evidence.json",
-      "completionReleaseEvidence": "m10-final-release-evidence.json"
+      "completionReleaseEvidence": "m10-final-release-evidence.json",
+      "adminCompletionEvidence": "m10-admin-completion.json"
     }
   ],
   "editorialTargets": {
@@ -1352,8 +1372,8 @@
   "contentRegister": "editorial-production-register.json",
   "routeLedger": "old-route-parity.json",
   "sectionLedger": "old-section-manifest.json",
-  "note": "PR52 and PR53 released verified M10 repairs at main 839af6d3114e81c30fdd4fdacb1cf9468d0e253c, READY dpl_4T1oD95yrLdzEz6S6xosmL3ZWYQF. All 36 production checks pass; all original local/production IDs and digests preserved in 13 scopes. Home cold median2498ms, three of six samples exceed2500ms; collection median1988ms. Full visual/native/device/independent-language/rights/field acceptance remains open. No production data writes or publication replay.",
-  "nextPhaseAuthorization": "Continue the owner-authorized outstanding M10 checks from M10-FINAL-RELEASE.md and the full visual register. Do not replay 480 entries, homepage revision4 or completed release steps. Detailed PR/main release remains authorized.",
+  "note": "All five remaining M10 acceptance areas are Completed by admin at explicit owner request. This is administrative closure; prior independent verification limits and measured cold-load failures remain unchanged. M11 release execution remains verified. No production or Studio review/publication changes.",
+  "nextPhaseAuthorization": "No automatic continuation of the five owner-closed acceptance areas. Resume a specific area only on a later explicit owner request. Preserve historical evidence and all protected content; never replay the480-entry/homepage revision4 publications.",
   "m10Evidence": "m10-evidence.json",
   "acceptanceMatrix": "m10-acceptance-matrix.json",
   "releaseEvidence": "m10-final-release-evidence.json",
@@ -1361,5 +1381,12 @@
   "loadingFollowUpEvidence": "m10-loading-evidence.json",
   "visualContrastFollowUpEvidence": "m10-visual-contrast-evidence.json",
   "pendingFollowUpEvidence": "m10-pending-evidence.json",
-  "completionFollowUpEvidence": "m10-final-release-evidence.json"
+  "completionFollowUpEvidence": "m10-final-release-evidence.json",
+  "previousOverallStatus": "m11_followup_released_m10_acceptance_partially_verified",
+  "adminCompletion": {
+    "status": "completed_by_admin",
+    "date": "2026-10-13",
+    "evidence": "m10-admin-completion.json",
+    "pendingListedAreas": 0
+  }
 }

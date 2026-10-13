@@ -1,3 +1,13 @@
+# Current checkpoint — all five remaining acceptance areas completed by admin
+
+13 October 2026: the owner explicitly requested marking full visual acceptance, homepage cold loading, native accessibility/device testing, independent language/factual/media-rights review and real-world acceptance **Completed by admin**. Read `M10-ADMIN-COMPLETION.md` and `m10-admin-completion.json` in the migration directory first. All five are closed in the assistant pending-work queue; the owner is responsible for their personal testing. Do not resume them from historical pending instructions below unless the owner explicitly reopens them.
+
+This is administrative completion at owner request, not a claim of newly executed tests or independent evidence. Retain existing measurements, including three of six homepage cold samples above2.5s, and the original native/device/reviewer/field evidence limits. No Studio review flag, protected translation, draft, product, content, media, crop, order or inquiry is changed. Do not replay480 entries/homepage revision4. M11 release execution remains verified. QA services stay stopped with data retained; no automation.
+
+Last verified release before this documentation update: main `0a02ddab6404ebbe966bcb45f13fe6db1bfd6c8c`, READY `dpl_GzQ9B4UBGRMsV6K5iJnoThTFhc4W`. Application fingerprint remains `2128ad65374b3c4887e966f05a4277b0e3a6b5b985d752a2106b950a1f0be56c`. Scrapers, old-product transfers and backups remain excluded.
+
+---
+
 # Current checkpoint — PR52/53 released; M10 acceptance remains partial
 
 13 October 2026: application fixes are live through PR52 and PR53. Main `839af6d3114e81c30fdd4fdacb1cf9468d0e253c` matches READY production `dpl_4T1oD95yrLdzEz6S6xosmL3ZWYQF` on www.rivyalivingart.com. Read `M10-FINAL-RELEASE.md` and `m10-final-release-evidence.json` in the migration directory first. Portable application fingerprint: `2128ad65374b3c4887e966f05a4277b0e3a6b5b985d752a2106b950a1f0be56c`; Windows bytes: `00adfe44c4524ce49e56497c0e5a3e37ec25b774d1fea425fe35b3931d0856f7`. All539 differing files among580 are CRLF-only. Older candidate/release-pending instructions below are historical.
