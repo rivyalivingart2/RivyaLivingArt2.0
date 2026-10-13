@@ -1,0 +1,642 @@
+{
+  "phase": 2,
+  "date": "2026-10-13",
+  "scope": "Local shortlist; proposals only, no Studio writes or publication",
+  "driveRoot": "1P2HCTmPge6HsEwtoo-xGEzPTSn68oZOW",
+  "inspectedFolder": "1wbayNeBOmE-q_MELHJCEax3YyEUyllLL",
+  "directChildrenInspected": 38,
+  "images": [
+    {
+      "id": "hero-pour",
+      "driveId": "17rLJSM6v8z_MqArs8lyksy1hpN8ljfru",
+      "title": "Material study",
+      "alt": "Resin pour in warm light",
+      "width": 1920,
+      "height": 1080,
+      "sourceBytes": 211806,
+      "sha256": "be54fcd332bb12dae0923a86e3d9fa074a0e052fc04520d0bdb369bf499116b7",
+      "desktop": [
+        50,
+        50
+      ],
+      "mobile": [
+        54,
+        50
+      ],
+      "slot": "hero / material feature",
+      "variants": [
+        {
+          "src": "/media/hero-pour-640.avif",
+          "width": 640,
+          "format": "avif",
+          "bytes": 16714,
+          "sha256": "d483f0c93d4aaf3cdd52c8492ce609e3a7f5d41a2ab968cf091759b9338773d2"
+        },
+        {
+          "src": "/media/hero-pour-640.webp",
+          "width": 640,
+          "format": "webp",
+          "bytes": 24694,
+          "sha256": "5ce47d81454d26bd279598c709c1bef137142eccbe3cd41cc97e5741d3f45623"
+        },
+        {
+          "src": "/media/hero-pour-960.avif",
+          "width": 960,
+          "format": "avif",
+          "bytes": 30666,
+          "sha256": "7a485b80556aba01b49c37e09e910a9e5fbe2e52f4d9e8b8d507c456f1f1adc4"
+        },
+        {
+          "src": "/media/hero-pour-960.webp",
+          "width": 960,
+          "format": "webp",
+          "bytes": 45826,
+          "sha256": "c6de9855805f3eca13683af932158dfb961a2bf96054b7a0e4212be5df591e62"
+        },
+        {
+          "src": "/media/hero-pour-1440.avif",
+          "width": 1440,
+          "format": "avif",
+          "bytes": 53105,
+          "sha256": "31f8dfb35b6711682e490f3ec3ee19f4c73df93b482ed8dc97819617654529d9"
+        },
+        {
+          "src": "/media/hero-pour-1440.webp",
+          "width": 1440,
+          "format": "webp",
+          "bytes": 79310,
+          "sha256": "0af600747248bf80e970de214397d032807d314859ed7273056d8fa5fdab2d6c"
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/17rLJSM6v8z_MqArs8lyksy1hpN8ljfru/view",
+      "classification": "Supplied visualization; not evidence of a customer or completed project",
+      "rights": "Owner-supplied preview selection; source-specific creator/permission evidence not established by this download",
+      "studioId": null,
+      "status": "Local preview only; existing Studio associations untouched"
+    },
+    {
+      "id": "maker-hands",
+      "driveId": "1VK6Y7T8LDJi5eEGFBFjXg26VNNVGYyVh",
+      "title": "Making study",
+      "alt": "Visual study of a person polishing a blue and gold resin bowl",
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 136116,
+      "sha256": "138776d5f9a02ec85a613ce32d892643aed732d356779bfd36792c0b89347cd5",
+      "desktop": [
+        50,
+        50
+      ],
+      "mobile": [
+        50,
+        50
+      ],
+      "slot": "craft / Journal",
+      "variants": [
+        {
+          "src": "/media/maker-hands-640.avif",
+          "width": 640,
+          "format": "avif",
+          "bytes": 14857,
+          "sha256": "dde9b9ad88d4954865873c8d08e0dc562a9778969f2b632d06d413f463c30cd3"
+        },
+        {
+          "src": "/media/maker-hands-640.webp",
+          "width": 640,
+          "format": "webp",
+          "bytes": 21030,
+          "sha256": "534fc1b002413fbfbd0a1311bbc45e93a0e7d69d26a98a9136a887fe94f1bddb"
+        },
+        {
+          "src": "/media/maker-hands-960.avif",
+          "width": 960,
+          "format": "avif",
+          "bytes": 25236,
+          "sha256": "69e041a983d60c34435bc02bbd3dde9c897d83cfb1cf9e2528b756ca26f8ced4"
+        },
+        {
+          "src": "/media/maker-hands-960.webp",
+          "width": 960,
+          "format": "webp",
+          "bytes": 36840,
+          "sha256": "e942f5803fc94c1ce4be867a9770634fc9775e931699204e11447d0a9b2af202"
+        },
+        {
+          "src": "/media/maker-hands-1440.avif",
+          "width": 1440,
+          "format": "avif",
+          "bytes": 43993,
+          "sha256": "9d8b4d43a1e8c7c1355e611f8dea483690478532bce7aeee70065eb6498ccfd3"
+        },
+        {
+          "src": "/media/maker-hands-1440.webp",
+          "width": 1440,
+          "format": "webp",
+          "bytes": 63538,
+          "sha256": "62495bbf349d12443f40874860e1fbf5d92e2c1d0cfa4ccbe60d20f9f129bbdd"
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1VK6Y7T8LDJi5eEGFBFjXg26VNNVGYyVh/view",
+      "classification": "Supplied visualization; not evidence of a customer or completed project",
+      "rights": "Owner-supplied preview selection; source-specific creator/permission evidence not established by this download",
+      "studioId": null,
+      "status": "Local preview only; existing Studio associations untouched"
+    },
+    {
+      "id": "doorway-memory",
+      "driveId": "19KOc4hLTXevHis-A0b_8gtedAgsmWRoC",
+      "title": "Memory study",
+      "alt": "Red and ivory flowers encased in a clear resin block",
+      "width": 1024,
+      "height": 1536,
+      "sourceBytes": 181244,
+      "sha256": "5e14af18d1837fe803ad3dcec0a80e582b3f98d602a27bedcd6c64dfe7092d96",
+      "desktop": [
+        50,
+        50
+      ],
+      "mobile": [
+        50,
+        50
+      ],
+      "slot": "memory doorway",
+      "variants": [
+        {
+          "src": "/media/doorway-memory-640.avif",
+          "width": 640,
+          "format": "avif",
+          "bytes": 33047,
+          "sha256": "b1d65edfaeedf74e36e1c19c894998f748bbcab503864d8e477e5bdaaccf6855"
+        },
+        {
+          "src": "/media/doorway-memory-640.webp",
+          "width": 640,
+          "format": "webp",
+          "bytes": 54944,
+          "sha256": "9b714439971f6ac2a7aee794ed298df6719b85844fef85aa2744e2cc488a7eb9"
+        },
+        {
+          "src": "/media/doorway-memory-960.avif",
+          "width": 960,
+          "format": "avif",
+          "bytes": 62743,
+          "sha256": "b8d3768d4b4d7a14dd7380abd8f8b9174edc05cd9c0a0a8dee7483b7dc691f1e"
+        },
+        {
+          "src": "/media/doorway-memory-960.webp",
+          "width": 960,
+          "format": "webp",
+          "bytes": 101994,
+          "sha256": "1bf6c2b2fc2c81f162dabf3445f330c6c32d506489d5c77273b118ad7c2171c1"
+        },
+        {
+          "src": "/media/doorway-memory-1024.avif",
+          "width": 1024,
+          "format": "avif",
+          "bytes": 73076,
+          "sha256": "898f616b5806b3a2f2e3084fe50c7bae938eef880edc89228b7ff4d177327a7c"
+        },
+        {
+          "src": "/media/doorway-memory-1024.webp",
+          "width": 1024,
+          "format": "webp",
+          "bytes": 114866,
+          "sha256": "5ef9df7fecbbd8baa787939dd387281c5d7e74c614d6a217ad39f52b905754e2"
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/19KOc4hLTXevHis-A0b_8gtedAgsmWRoC/view",
+      "classification": "Supplied visualization; not evidence of a customer or completed project",
+      "rights": "Owner-supplied preview selection; source-specific creator/permission evidence not established by this download",
+      "studioId": null,
+      "status": "Local preview only; existing Studio associations untouched"
+    },
+    {
+      "id": "texture-resin-flow",
+      "driveId": "1RNN4QxbJXw9VsRrb9x3EMZ9Rtzkqfmxf",
+      "title": "Flow study",
+      "alt": "Close view of resin surface and flowing colour",
+      "width": 1920,
+      "height": 1080,
+      "sourceBytes": 229943,
+      "sha256": "53dfc87a74c50b6ca72a2e76e1d85df051afa01acfc434b26974f804e0cc81c8",
+      "desktop": [
+        50,
+        50
+      ],
+      "mobile": [
+        50,
+        50
+      ],
+      "slot": "material detail",
+      "variants": [
+        {
+          "src": "/media/texture-resin-flow-640.avif",
+          "width": 640,
+          "format": "avif",
+          "bytes": 15112,
+          "sha256": "326ab84276ea42d26255774b2ca89d0da22a00bf15ca98f3a72c0cb54a0ba1b6"
+        },
+        {
+          "src": "/media/texture-resin-flow-640.webp",
+          "width": 640,
+          "format": "webp",
+          "bytes": 18744,
+          "sha256": "82a2d2aa997e5a61e8f66f8ade751fd7bf2b76cad6990a5cb80e9ea5939aa7d7"
+        },
+        {
+          "src": "/media/texture-resin-flow-960.avif",
+          "width": 960,
+          "format": "avif",
+          "bytes": 31269,
+          "sha256": "774054d2e8e0ac33e268480dce240c6aa1bc9f1a0d250a20e5dc0bf64d8432f3"
+        },
+        {
+          "src": "/media/texture-resin-flow-960.webp",
+          "width": 960,
+          "format": "webp",
+          "bytes": 39594,
+          "sha256": "798bafdd38c2c92314a7c99715e4ad4b1420a788288ff853dc00f09eabb50449"
+        },
+        {
+          "src": "/media/texture-resin-flow-1440.avif",
+          "width": 1440,
+          "format": "avif",
+          "bytes": 62015,
+          "sha256": "061a8e33b6721d235f79c574780ff39d01e6d49486758ba6074217f442a84ce7"
+        },
+        {
+          "src": "/media/texture-resin-flow-1440.webp",
+          "width": 1440,
+          "format": "webp",
+          "bytes": 77970,
+          "sha256": "b306f4bcdc8e3efab7ca24aef0ad704ecd4a24997d8b983996d29cf0e8ff235f"
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1RNN4QxbJXw9VsRrb9x3EMZ9Rtzkqfmxf/view",
+      "classification": "Supplied visualization; not evidence of a customer or completed project",
+      "rights": "Owner-supplied preview selection; source-specific creator/permission evidence not established by this download",
+      "studioId": null,
+      "status": "Local preview only; existing Studio associations untouched"
+    },
+    {
+      "id": "doorway-collectible",
+      "driveId": "1o5VSIpFgnyn4Obrfh3Bowhm4-bsxz1Mj",
+      "title": "Collectible study",
+      "alt": "Live-edge dining table with a blue resin channel in a dark interior",
+      "width": 1024,
+      "height": 1536,
+      "sourceBytes": 258778,
+      "sha256": "6934feb5740e39a5192e89d9ae506952e7f8b8ba3609f39c7eec71387a29a8be",
+      "desktop": [
+        50,
+        50
+      ],
+      "mobile": [
+        50,
+        50
+      ],
+      "slot": "collectible doorway",
+      "variants": [
+        {
+          "src": "/media/doorway-collectible-640.avif",
+          "width": 640,
+          "format": "avif",
+          "bytes": 43207,
+          "sha256": "7bdf38b574512ef30b156d376c27524b559f50dc96d8a410d2fab261196bf622"
+        },
+        {
+          "src": "/media/doorway-collectible-640.webp",
+          "width": 640,
+          "format": "webp",
+          "bytes": 73046,
+          "sha256": "5b32f4a789dec6a2f9954979629d2f950f121a681804ba44671114253f890a61"
+        },
+        {
+          "src": "/media/doorway-collectible-960.avif",
+          "width": 960,
+          "format": "avif",
+          "bytes": 91419,
+          "sha256": "57189dcee4240062e476f575a8c7726766f700141fc0a78d5484ce8335168599"
+        },
+        {
+          "src": "/media/doorway-collectible-960.webp",
+          "width": 960,
+          "format": "webp",
+          "bytes": 154934,
+          "sha256": "d80583eac054b679868e59b4fa44cc278478134f8e3c11e6b0e717d0bcc3ad95"
+        },
+        {
+          "src": "/media/doorway-collectible-1024.avif",
+          "width": 1024,
+          "format": "avif",
+          "bytes": 110909,
+          "sha256": "babff5452646c6091d0120182f5b38b2dcdabf26b4b38376151f0abaeacc27cd"
+        },
+        {
+          "src": "/media/doorway-collectible-1024.webp",
+          "width": 1024,
+          "format": "webp",
+          "bytes": 178844,
+          "sha256": "6bc0d8c86cd96dbadd29ba08c05b6d20845179f9bb3e1212310781538c468b24"
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1o5VSIpFgnyn4Obrfh3Bowhm4-bsxz1Mj/view",
+      "classification": "Supplied visualization; not evidence of a customer or completed project",
+      "rights": "Owner-supplied preview selection; source-specific creator/permission evidence not established by this download",
+      "studioId": null,
+      "status": "Local preview only; existing Studio associations untouched"
+    },
+    {
+      "id": "doorway-gifts",
+      "driveId": "1woyD_wMKVigC6rp2Vky9sCojxyHAKmM-",
+      "title": "Gift study",
+      "alt": "Blue and gold resin jewellery arranged on a dark surface",
+      "width": 1024,
+      "height": 1536,
+      "sourceBytes": 337148,
+      "sha256": "174e2e812ed9d275de1e773b4dcb5ce09232c48321623d2ebcce2ec12242e7b7",
+      "desktop": [
+        50,
+        50
+      ],
+      "mobile": [
+        50,
+        50
+      ],
+      "slot": "gift doorway",
+      "variants": [
+        {
+          "src": "/media/doorway-gifts-640.avif",
+          "width": 640,
+          "format": "avif",
+          "bytes": 66299,
+          "sha256": "82337dd1ded23495863919cc0fd783ecdc2de7fa55ceb46d961501fba0910594"
+        },
+        {
+          "src": "/media/doorway-gifts-640.webp",
+          "width": 640,
+          "format": "webp",
+          "bytes": 123606,
+          "sha256": "43ae5cf5e6108a7a075da588b53928c9ab2fba950ccabefd67ee9c4496cc20e5"
+        },
+        {
+          "src": "/media/doorway-gifts-960.avif",
+          "width": 960,
+          "format": "avif",
+          "bytes": 124367,
+          "sha256": "d5c30d7670e1f9442bb284f4a436705bc236da8f0bc827e916f3aa41eb408082"
+        },
+        {
+          "src": "/media/doorway-gifts-960.webp",
+          "width": 960,
+          "format": "webp",
+          "bytes": 229482,
+          "sha256": "83a159a076ac6e9479031a522a763399a1cc36a3905e97a2f51f58054608bb8f"
+        },
+        {
+          "src": "/media/doorway-gifts-1024.avif",
+          "width": 1024,
+          "format": "avif",
+          "bytes": 145994,
+          "sha256": "b7aa5a8025e362d61c91808fd988fc51370d5ac15bd59e05a828dcb0ca942368"
+        },
+        {
+          "src": "/media/doorway-gifts-1024.webp",
+          "width": 1024,
+          "format": "webp",
+          "bytes": 256496,
+          "sha256": "a3740b3c1ce9621cf4b5ddb856c62c20a953b4eb52f121cad16af54331e5c9df"
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1woyD_wMKVigC6rp2Vky9sCojxyHAKmM-/view",
+      "classification": "Supplied visualization; not evidence of a customer or completed project",
+      "rights": "Owner-supplied preview selection; source-specific creator/permission evidence not established by this download",
+      "studioId": null,
+      "status": "Local preview only; existing Studio associations untouched"
+    }
+  ],
+  "sections": [
+    {
+      "key": "pour",
+      "label": "Hero",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [
+        "hero-pour"
+      ],
+      "usageLimit": "Retain selected hero/room associations; pour image or film is an optional labelled material chapter.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "manifesto",
+      "label": "Manifesto",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [],
+      "usageLimit": "Typography only; preserve the published statement.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "pieces",
+      "label": "Featured pieces",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [],
+      "usageLimit": "Keep exact selected product images and IDs. Do not substitute concept imagery.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "large-format",
+      "label": "Large format",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [
+        "doorway-collectible"
+      ],
+      "usageLimit": "Optional clearly labelled interior concept; keep architects/project evidence intact.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "material",
+      "label": "Material story",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [
+        "hero-pour",
+        "texture-resin-flow"
+      ],
+      "usageLimit": "Material visualization shortlist; film resin-pour remains available with poster and controls.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "collections",
+      "label": "Collections",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [
+        "doorway-memory",
+        "doorway-collectible",
+        "doorway-gifts"
+      ],
+      "usageLimit": "Optional category doorway images only; preserve current collection selection and visibility.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "furniture",
+      "label": "Furniture concepts",
+      "sourceDefaultVisible": false,
+      "candidateImageIds": [
+        "doorway-collectible"
+      ],
+      "usageLimit": "Concept display only. Keep disabled unless its existing visibility is enabled by the owner.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "maker",
+      "label": "Atelier story",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [],
+      "usageLimit": "Preserve genuine existing atelier/person imagery. maker-hands is a visualization and must not identify a real maker.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "rooms",
+      "label": "Room concepts",
+      "sourceDefaultVisible": false,
+      "candidateImageIds": [
+        "doorway-collectible"
+      ],
+      "usageLimit": "Concept-only room imagery; never activate a currently hidden slot.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "work",
+      "label": "Portfolio",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [],
+      "usageLimit": "Retain project-specific published media and all concept labels; no image becomes evidence of a real project.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "words",
+      "label": "Testimonials",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [],
+      "usageLimit": "Preserve genuine or explicitly fictional testimonial records and labels; no new person/quote imagery.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "bespoke",
+      "label": "Commission band",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [
+        "texture-resin-flow"
+      ],
+      "usageLimit": "Optional decorative material detail; preserve commission actions and factual wording.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "workshops",
+      "label": "Workshops",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [],
+      "usageLimit": "Retain existing imagery and availability; no synthetic process image presented as an actual workshop.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "print",
+      "label": "Printing",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [],
+      "usageLimit": "Retain existing service imagery and availability; no source gap needs generation for this foundation phase.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "process",
+      "label": "How it works",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [],
+      "usageLimit": "Keep customer-step sequence and chronology. The material film is not proof of a making stage.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "why",
+      "label": "The approach",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [],
+      "usageLimit": "Typography and existing story media; preserve factual explanations.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "journal",
+      "label": "Journal",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [
+        "texture-resin-flow",
+        "maker-hands"
+      ],
+      "usageLimit": "Optional future editorial concept selection only; all current article media associations remain unchanged.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    },
+    {
+      "key": "closing",
+      "label": "Closing invitation",
+      "sourceDefaultVisible": true,
+      "candidateImageIds": [
+        "texture-resin-flow"
+      ],
+      "usageLimit": "Optional low-distraction material image; preserve invitation and contact paths.",
+      "existingStudioAssociation": "Retain; not reassigned in Phase 2",
+      "candidateStatus": "Owner-review proposal"
+    }
+  ],
+  "existingFilm": {
+    "studioPresentationId": "resin-pour",
+    "studioEvidence": "src/lib/presentation-media.ts; source-defined presentation choice, not a fresh private database assertion",
+    "classification": "material-visualization",
+    "files": [
+      {
+        "path": "/media/migration/hero-pour-loop-poster.jpg",
+        "driveId": "11iY9mANJFy4EZf54HgZ5NJ_g4AzDBLBX",
+        "bytes": 98481,
+        "sha256": "e7dec2a8d6972a0825caf57aae320db7b1a0c319eb2f7a3d5581ba9190040caf",
+        "newDriveCopy": false,
+        "driveReadbackMatches": true,
+        "phase2LocalHashMatches": true
+      },
+      {
+        "path": "/media/migration/hero-pour-loop.webm",
+        "driveId": "1xau1Vdp2i2QsD77eFvc7duYfDzrOBWL4",
+        "bytes": 1649274,
+        "sha256": "ba77d14e1d380f382bbc86af1c5e8533ad3e8a0ad2bb604d06506b3da5b216c8",
+        "newDriveCopy": false,
+        "driveReadbackMatches": true,
+        "phase2LocalHashMatches": true
+      },
+      {
+        "path": "/media/migration/hero-pour-loop.mp4",
+        "driveId": "1HVHyYusnysi_7aduW6xwFJHrwUlWGzIz",
+        "bytes": 2135160,
+        "sha256": "61d4633578353e813e64506877eed198bc682b6424701b7783720af51530869d",
+        "newDriveCopy": true,
+        "driveReadbackMatches": true,
+        "phase2LocalHashMatches": true
+      }
+    ]
+  },
+  "rightsNote": "User authorized Drive use for redesign previews. Files were fetched and inspected; creator/source-specific permission evidence is not newly established. Preserve historical admin closures without manufacturing external evidence.",
+  "newGeneration": "None required for the foundation preview",
+  "productionWrites": 0,
+  "driveWrites": 0
+}

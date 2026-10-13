@@ -1,4 +1,16 @@
-# Current checkpoint — modern redesign Phase 1 previews awaiting owner review
+# Current checkpoint — modern redesign Phase 2 ready for owner review
+
+13 October 2026: the owner approved Phase 1 design previews and explicitly authorized **Phase 2 only**. The additive design/motion/media foundation and isolated animation/media/Studio-control preview are complete locally. Read `docs/redesign/modern-design-2026-10-13/PHASE-2-REVIEW.md`, `phase2-verification.json`, `phase2-media-register.json` and `CONTINUE.md` first. Branch: `codex/redesign-phase2-foundation`.
+
+Preserve original logo/main colours/content/functionality. Of 934 baseline files, 932 are byte-identical; only the two dependency manifests add GSAP and its React adapter. All existing routes/data/media/schema/publication code remain unchanged. Six Drive images have 36 local responsive derivatives and all 18 homepage slots have media decisions. No Studio association/crop, database, Drive original, publication or deployment was changed. No fresh private database audit is claimed.
+
+Verified: 57 primary + 22 edge browser checks, 344 existing unit tests, application/preview TypeScript, focused lint and full Next.js build. Independent finish reviewer scored all three requested corrections resolved and returned ship at local-preview scope. Detector launcher failed; its limitation is recorded. Native/human/physical evidence is not invented. ScrollSmoother was tested and rejected for focus/click issues; retained native smooth anchors and scoped desktop GSAP transforms, with static touch/reduced-motion paths and native Studio scrolling.
+
+**Stop before Phase 3 until the owner explicitly approves the animation/media previews.** Preview command and URLs are in the Phase 2 README. No push, PR, merge, release or production integration is authorized by this phase. Do not replay historical M0–M11 publications/admin closures. Scrapers, old-product transfers and backups remain excluded.
+
+---
+
+# Historical checkpoint — modern redesign Phase 1 previews awaiting owner review
 
 13 October 2026: the owner approved a new seven-phase redesign plan and authorized **Phase 1 only**. New compositions replace the old visual-matching goal; logo, main colours, all content and functionality remain fixed. Read `docs/redesign/modern-design-2026-10-13/CONTINUE.md` and `PHASE-1-REVIEW.md` before continuing.
 
