@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-13",
+  "scope": "Final read-only production verification",
+  "site": "https://www.rivyalivingart.com",
+  "mainCommit": "6c3fd6b339bea2d4b2ecac26c96a1907e899ce06",
+  "deployment": "dpl_EKa6VH4gtmKAVqgPZuZ32dXdJWsd",
+  "productionStatus": "READY",
+  "result": "No broken published public routes or media found in the tested scope.",
+  "checks": {
+    "publicRoutes": {
+      "passed": 781,
+      "details": "All currently published content routes, all 120 product pages, all 120 product customization routes and additional public journeys. Twelve initial loading-shell markers were resolved through completed browser rendering and exact published revision checks."
+    },
+    "publishedContent": {
+      "visibleRecords": 535,
+      "products": 120,
+      "pendingSavedContentChanges": 0
+    },
+    "m9": {
+      "total": 480,
+      "journal": 120,
+      "portfolio": 120,
+      "testimonials": 120,
+      "faqs": 120,
+      "allPublishedAndAligned": true
+    },
+    "media": {
+      "imageUrls": 371,
+      "videoUrls": 2,
+      "passed": 373,
+      "coverage": "All published image sources, three editorial image sizes, static assets and 145 representative optimized image URLs. Not every possible image-optimizer width permutation."
+    },
+    "video": {
+      "durationSeconds": 8.042,
+      "play": true,
+      "advancingTime": true,
+      "pause": true,
+      "browserError": null,
+      "webmAndMp4HashesMatch": true
+    },
+    "staticResources": {
+      "tested": 19,
+      "passed": 19
+    },
+    "studio": {
+      "workspaces": 37,
+      "allLoaded": true,
+      "alertErrors": 0,
+      "publicationBlockers": 0,
+      "pendingChanges": 0,
+      "unpublishedSourceCandidates": 1,
+      "note": "The existing unsaved Shared website copy source candidate is revision 0; it is not an unpublished saved production record. Existing editorial/reviewer reminders retain their documented meaning."
+    },
+    "interactive": {
+      "galleryNext": true,
+      "galleryEnlarge": true,
+      "galleryClose": true,
+      "searchFiltering": true,
+      "customizationFormReady": true,
+      "currentOptionsCheck": true,
+      "articleEditorAligned": true,
+      "productEditorAligned": true,
+      "mobileNavigationOpenClose": true
+    },
+    "responsive": {
+      "emulatedWidth": 390,
+      "publicPages": [
+        "/",
+        "/journal",
+        "/pieces/river-channel",
+        "/pieces/river-channel/customize"
+      ],
+      "horizontalOverflow": false,
+      "brokenLoadedImages": 0,
+      "physicalPhoneTest": false
+    },
+    "translations": {
+      "articles": [
+        "DB001",
+        "DB010"
+      ],
+      "languages": [
+        "hi",
+        "gu"
+      ],
+      "fields": 78,
+      "allMatch": true,
+      "publicRevision": 6
+    },
+    "authentication": {
+      "anonymousStudioApiStatus": 401,
+      "anonymousStudioPageStatus": 307,
+      "realAdminSessionVerified": true
+    }
+  },
+  "limits": [
+    "Read-only production verification: no new order/inquiry submission, draft save, publication or destructive operation was tested.",
+    "All Studio navigation workspaces were opened; representative product and article editors were inspected. Every conditional editor state was not re-exercised.",
+    "Small-screen checks used browser emulation, not a physical phone.",
+    "No new independent language, screen-reader or field-performance evidence is claimed. Admin acceptance closures remain unchanged."
+  ],
+  "artifacts": [
+    "pages.json",
+    "inventory.json",
+    "summary.json",
+    "media.json",
+    "resources.json",
+    "studio-workspaces.json",
+    "streamed-pages-browser.json",
+    "interactive-checks.json",
+    "translation-verification.json",
+    "video-playback.json",
+    "studio-health-summary.txt"
+  ],
+  "repository": "Clean working tree; no application changes or deployment performed during this audit."
+}

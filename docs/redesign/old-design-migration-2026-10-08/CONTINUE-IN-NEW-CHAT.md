@@ -1,3 +1,13 @@
+# Current checkpoint — final live verification complete
+
+13 October 2026: final read-only website and authenticated Studio verification found no broken published routes or media in the tested scope. Read `docs/redesign/old-design-migration-2026-10-08/FINAL-LIVE-VERIFICATION.md` and its `final-live-verification.json` receipt first. Verified main `6c3fd6b339bea2d4b2ecac26c96a1907e899ce06`, READY production `dpl_EKa6VH4gtmKAVqgPZuZ32dXdJWsd`: 781 public routes, 373 media URLs, 19 shared resources and all 37 Studio workspaces passed. All 480 M9 entries are published/aligned; 535 content records and 120 published products are visible, with zero saved pending content changes or publication blockers. All 78 DB001/DB010 Hindi/Gujarati fields match public revision 6.
+
+The five owner-closed acceptance areas remain **Completed by admin**, with original independent/native/device/field evidence limits preserved. The unsaved Shared website copy candidate at revision 0 and existing editorial reminders are not new publication failures. No approved implementation/publication/verification task remains in the assistant queue. The owner has authorized this documentation-only PR/main release; its PR records the subsequent merge/deployment receipt.
+
+Do not replay imports, the 480 publications, homepage revision 4 or the two Journal translation publications. No production data was written during this audit. Read-only and representative-coverage limits are explicit in the report. QA services remain stopped with data retained; no automation. Scrapers, old-product transfers and backups remain excluded. Older pending instructions below are historical unless the owner explicitly reopens them.
+
+---
+
 # Current checkpoint — two Journal translation drafts published
 
 13 October 2026: the owner explicitly authorized publishing the saved Hindi and Gujarati translations for DB001 and DB010. Both are now saved/public revision 6 with current meaning-review fingerprints. All 78 translated fields were verified on the live website; English and non-translation editorial fields remain unchanged. Read `docs/editorial-translations/PUBLICATION-2026-10-13.md` for the publication receipt and preservation evidence. This supersedes historical unpublished holds only for these two records. Do not replay publication or claim independent native-reader testing. All prior admin acceptance closures remain closed; no application release was needed.
