@@ -1,3 +1,5 @@
+> **Current administrative status — 13 October 2026:** All five remaining areas are **Completed by admin** at the owner's explicit request. See [M10-ADMIN-COMPLETION.md](M10-ADMIN-COMPLETION.md). The evidence and open-check wording below are retained as historical verification observations, not an instruction to resume owner-closed work. No new independent test evidence is asserted.
+
 # M10 verified fixes released — 13 October 2026
 
 The application fixes are released through [PR52](https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/52) and [PR53](https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/53). M10 acceptance remains partial. This receipt supersedes the pending-release instructions in older checkpoint sections without deleting their historical evidence. It does not certify missing human, device, rights or field results.
