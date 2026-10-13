@@ -15,8 +15,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "inquiries",
@@ -40,8 +40,8 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "follow-ups",
@@ -59,8 +59,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "products",
@@ -84,7 +84,8 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "content-register",
@@ -102,7 +103,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "editorial-order",
@@ -120,7 +122,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "content",
@@ -138,7 +141,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "media",
@@ -156,7 +160,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "site-copy",
@@ -174,7 +179,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "sections",
@@ -192,7 +198,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "site-images",
@@ -210,7 +217,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "content-health",
@@ -228,7 +236,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "site-settings",
@@ -246,8 +255,8 @@
       "keyboard/focus"
     ],
     "adminOnly": true,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "legacy",
@@ -265,8 +274,8 @@
       "keyboard/focus"
     ],
     "adminOnly": true,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "translations",
@@ -284,7 +293,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "route-review",
@@ -302,8 +312,8 @@
       "keyboard/focus"
     ],
     "adminOnly": true,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "activity",
@@ -321,8 +331,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "staff",
@@ -340,8 +350,8 @@
       "keyboard/focus"
     ],
     "adminOnly": true,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "settings",
@@ -359,8 +369,8 @@
       "keyboard/focus"
     ],
     "adminOnly": true,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "analytics",
@@ -378,8 +388,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "categories",
@@ -397,7 +407,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "import",
@@ -415,8 +426,8 @@
       "keyboard/focus"
     ],
     "adminOnly": true,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "exports",
@@ -434,8 +445,8 @@
       "keyboard/focus"
     ],
     "adminOnly": true,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "research",
@@ -453,7 +464,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "content-gaps",
@@ -471,7 +483,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "process",
@@ -489,7 +502,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "materials",
@@ -507,7 +521,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "forms",
@@ -525,7 +540,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "journal",
@@ -549,7 +565,8 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "portfolio",
@@ -573,7 +590,8 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "testimonials",
@@ -597,7 +615,8 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "faqs",
@@ -621,7 +640,8 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "pages",
@@ -645,7 +665,8 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "landing-pages",
@@ -669,7 +690,8 @@
       "preview/print where supported"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "seo",
@@ -687,7 +709,8 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "subscribers",
@@ -705,8 +728,8 @@
       "keyboard/focus"
     ],
     "adminOnly": true,
-    "status": "Phase 6 implemented locally; responsive opening verified; representative child states in phase6-verification.json; awaiting owner preview approval",
-    "evidence": "PHASE-6-REVIEW.md"
+    "status": "Owner-approved Phase 6 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   },
   {
     "key": "content-lab",
@@ -724,6 +747,7 @@
       "keyboard/focus"
     ],
     "adminOnly": false,
-    "status": "implemented locally; four-width openings and representative editing evidence in phase5-verification.json; owner approved Phase 5"
+    "status": "Owner-approved Phase 5 implementation; Phase 7 four-width opening and access checks passed; release pending authorization",
+    "evidence": "PHASE-7-FINAL-REPORT.md"
   }
 ]

@@ -1,0 +1,63 @@
+[
+  {
+    "area": "Homepage and shared frame",
+    "coverage": "Four widths, navigation/focus, language selection, controlled film, motion/reduced motion, original section order",
+    "evidence": "home/homeEdges",
+    "status": "passed; inactive sections retain prior conditional-fixture evidence"
+  },
+  {
+    "area": "All registered public routes",
+    "coverage": "665 HTTP/status/destination checks plus 299 linked paths",
+    "status": "passed against local baseline; 480 known local drafts remain unpublished"
+  },
+  {
+    "area": "Public page families and child journeys",
+    "coverage": "30 representative routes at four widths, gallery/search/shortlist/unsaved form/FAQ/editorial filters",
+    "status": "passed"
+  },
+  {
+    "area": "Conditional public/detail/landing/error specimens",
+    "coverage": "100 static layout checks across ten families/four widths, includes 16 landing blocks",
+    "status": "passed; illustrative fixtures are not published content"
+  },
+  {
+    "area": "All Studio modules",
+    "coverage": "37 modules at four widths, 148 rendered pages, anonymous routes/APIs denied, nested scroll checks",
+    "status": "passed"
+  },
+  {
+    "area": "Studio authoring and operations",
+    "coverage": "Current unsaved editing, child editors, translation controls, crop preview, confirmation cancellation, original brief, print and training board",
+    "status": "passed; actual mutating lifecycle evidence carried from unchanged Phase5/6 source"
+  },
+  {
+    "area": "Accessibility/languages",
+    "coverage": "71 axe scans, focus/contrast, seven increased-spacing checks, English/Hindi/Gujarati layout/locale behavior",
+    "status": "automated checks passed; human/native evidence separate"
+  },
+  {
+    "area": "Media and identity",
+    "coverage": "163 original public hashes, 145 raster decodes, 232 HTTP assets, 52 rendered image instances and two video encodings",
+    "status": "passed"
+  },
+  {
+    "area": "Print",
+    "coverage": "Six policy PDFs/15 pages/65 source blocks retained and one private QA inquiry card",
+    "status": "passed scoped PDF inspection; not physical printer or tagged-PDF certification"
+  },
+  {
+    "area": "Performance",
+    "coverage": "24 samples over homepage, collection and Journal; desktop and throttled mobile",
+    "status": "local thresholds passed; production/field checks remain release-stage evidence"
+  },
+  {
+    "area": "Protected records",
+    "coverage": "1657 phase-start records unchanged; all1641 pre-redesign originals unchanged",
+    "status": "passed; zero protected writes in Phase7"
+  },
+  {
+    "area": "Release",
+    "coverage": "Local PR body/checklist prepared, remote main read-only checked",
+    "status": "awaiting explicit owner authorization; no push, PR, merge or deployment"
+  }
+]

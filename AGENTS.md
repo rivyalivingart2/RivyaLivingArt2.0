@@ -1,4 +1,13 @@
-# Current checkpoint — modern redesign Phase 6 ready for owner review
+# Current checkpoint — Phase 7 final local report ready; release NOT authorized
+
+13 October 2026: owner approved Phase 6 and requested Phase 7 verification and the final report before pushing/releasing. Branch codex/redesign-phase7-verification; approved application remains 15a0307, remote main read-only verified 4cadf21b380a8f3753232318fbb78027aa09ffc5. Read docs/redesign/modern-design-2026-10-13/PHASE-7-FINAL-REPORT.md, phase7-verification.json, phase7-preservation.json and CONTINUE.md first. Report: http://127.0.0.1:4184/review. Local app: http://127.0.0.1:4199.
+
+Fresh build/types, 344 unit/12 preflight/403 runtime, scoped public/Studio/browser/media/print/language-layout checks pass. 665 registered local routes (480 known unpublished QA drafts), 232 assets and 299 additional links checked. All 37 Studio modules at four widths. 71 axe scans: zero detected violations, 14 incomplete contextual rules; full source lint zero errors/62 existing warnings. 24 local performance samples pass observed LCP/CLS thresholds; no field/production guarantee. All 1,657 Phase 7 start rows unchanged; all 1,641 pre-redesign originals unchanged. No new original or synthetic protected records added.
+
+**STOP for owner report review and explicit push/release authorization.** Local PR body and release checklist prepared; no push, PR, merge, deployment, publication, Drive change or message. No application source change in Phase7; only generated output excluded from ESLint. Historical human/native/admin acceptance remains accurately scoped. Do not replay any publication/import/lifecycle. Scrapers, old-product transfers and backups excluded.
+
+---
+# Historical checkpoint — modern redesign Phase 6 owner review (approved)
 
 13 October 2026: owner approved Phase 5 and authorized Phase 6 only. The 13 remaining Studio operational/admin bodies, sign-in, dialogs and printable inquiry cards are implemented locally on codex/redesign-phase6-studio-operations, parent da435d3. Read docs/redesign/modern-design-2026-10-13/CONTINUE.md, PHASE-6-REVIEW.md, phase6-verification.json and phase6-preservation.json first. Gallery: http://127.0.0.1:4183/review; local Studio: http://127.0.0.1:4199/studio.
 

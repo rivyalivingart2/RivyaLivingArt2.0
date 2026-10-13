@@ -1,4 +1,28 @@
-# Continuation — modern redesign Phase 6 ready for owner review
+# Continuation — Phase 7 final local verification complete; release held
+
+## Current instruction and stop
+The owner approved Phase 6 and authorized **Phase 7 only**, asking to verify the entire website/Studio and show the final report **before pushing or releasing**. The local verification/report package is complete. **Stop for owner report review and an explicit later push/release instruction.** No push, PR, merge, deployment, production publication, Drive operation or customer message occurred.
+
+## Candidate and evidence
+- Branch: codex/redesign-phase7-verification. Approved application source remains Phase6 `15a0307`; Phase7 changes no application/source asset/dependency/API/schema. ESLint excludes generated output bundles; source rules remain enabled.
+- Remote main checked read-only: `4cadf21b380a8f3753232318fbb78027aa09ffc5`; matches local origin/main. Recheck before any later release.
+- Read PHASE-7-FINAL-REPORT.md, phase7-verification.json, phase7-preservation.json, phase7-route-media-coverage.json, phase7-completion-matrix.json, PHASE-7-PR-DRAFT.md and PHASE-7-RELEASE-CHECKLIST.md.
+- Report gallery: http://127.0.0.1:4184/review. App: http://127.0.0.1:4199. Phase6 gallery: http://127.0.0.1:4183/review. Restart/reproduction: experiments/redesign-phase7/README.md.
+- Fresh build/types, 344 unit, 12 preflight and 403 runtime checks pass. Full source lint: 0 errors/62 existing warnings. Public matrix: 570 checks; Studio: 489 checks over 37 modules/four widths; other editing/state/media/language/print checks in receipt.
+- HTTP: 665 registered routes, 232 assets, 299 additional links; 480 existing draft URLs are unpublished in this older isolated QA database. Do not publish them to make a local report green or copy fixtures to production.
+- Axe: 71 scans, 0 detected violations and 14 incomplete contrast/caption rule instances. Computed text contrast: 1,462 samples pass; no full WCAG/native/device certification. Context/detector remains unavailable.
+- Local performance: 24 samples, worst LCP 1.888s, maximum CLS <0.014; local server/cache and emulated mobile, not field/production/INP evidence.
+- All 1,657 phase-start records unchanged across 13 scopes; all 1,641 pre-redesign originals still unchanged. Earlier 16 synthetic additions remain as documented in Phase 5/6 receipts. No mutating lifecycle repeated. Temporary session cache removed at handoff; future tests sign in normally and respect throttling.
+- Raw private DOM/captures/hashes remain ignored. Receipt hashes 280 PNG/PDF files. Policy PDF extraction retains 65 blocks across 15 pages; representative renders inspected. Native print/device/reader/human observations remain separate.
+- Current screenshots match approved layouts. Two overview heights reflect the previously created QA order; a 0.005% login delta is native validation-tooltip text. No new independent visual verdict claimed.
+
+## Next only when explicitly authorized
+Review the report findings/limits with the owner. A later release instruction permits rechecking the base/candidate, pushing the branch, opening a detailed PR into main (attach it), checking repository/hosting gates, normal merge and exact deployed-commit verification. Then check public routes/media and authenticated Studio with the owner's real session. Do not request credentials in chat or bypass branch protection.
+
+No production verification of this redesign has yet occurred because the candidate is local. Historical M0–M11 publications/admin closures remain historical and must not be replayed. Scrapers, old-product transfers and backups remain excluded.
+
+---
+# Historical continuation — Phase 6 owner-review checkpoint (approved)
 
 ## Current stop
 The owner approved Phase 5 and authorized **Phase 6 only**. All 13 remaining Studio operational/admin bodies, sign-in, dialogs and saved inquiry cards are implemented locally. **Stop before Phase 7 until the owner reviews these previews and explicitly approves it.** The earlier Phase 5 stop and historical M0–M11 tasks below are superseded, not to be replayed.
