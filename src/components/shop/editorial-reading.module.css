@@ -116,6 +116,7 @@
  :global(body):has(.printable) :global(header):has(:global(a[aria-label="RivyaLivingArt home"])), :global(body):has(.printable) :global(footer) { display: none !important; }
  .printable, .printable * { color: black !important; background: transparent !important; text-shadow: none !important; box-shadow: none !important; }
  .printable figcaption { background: white !important; color: black !important; padding: 6px 10px !important; }
+ .printable .prose a { color: black !important; }
  .printable { padding: 0 20px; }
  .printable nav { display: none !important; }
  .printable .opening, .printable .opening[data-split=true] { display: block; min-height: 0; padding: 0; }
