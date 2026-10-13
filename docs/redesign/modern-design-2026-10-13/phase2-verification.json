@@ -1,0 +1,524 @@
+{
+  "phase": 2,
+  "date": "2026-10-13T10:24:54.565448+00:00",
+  "scope": "Local foundation and isolated preview; no Phase 3 or release",
+  "authorization": "Owner approved Phase1 previews and Phase2 only",
+  "baselineCommit": "4cadf21b380a8f3753232318fbb78027aa09ffc5",
+  "parentLocalCommit": "e54390c",
+  "branch": "codex/redesign-phase2-foundation",
+  "primary": {
+    "at": "2026-10-13T10:19:48.809Z",
+    "scope": "Local Phase 2 harness; browser emulation, not native/device/production acceptance",
+    "checks": [
+      {
+        "name": "desktop: motion capability",
+        "pass": true,
+        "detail": {
+          "triggers": 3,
+          "smooth": true
+        }
+      },
+      {
+        "name": "desktop: controls report effective capability",
+        "pass": true
+      },
+      {
+        "name": "desktop: video starts paused with preload none",
+        "pass": true
+      },
+      {
+        "name": "desktop: no opening overflow",
+        "pass": true
+      },
+      {
+        "name": "desktop: hash navigation reaches film",
+        "pass": true
+      },
+      {
+        "name": "desktop: video plays",
+        "pass": true
+      },
+      {
+        "name": "desktop: video pauses",
+        "pass": true
+      },
+      {
+        "name": "desktop: crop dialog opens",
+        "pass": true
+      },
+      {
+        "name": "desktop: modal suspends motion",
+        "pass": true
+      },
+      {
+        "name": "desktop: Escape closes and restores focus",
+        "pass": true
+      },
+      {
+        "name": "desktop: motion off removes all triggers and smooth anchors",
+        "pass": true,
+        "detail": {
+          "triggers": 0,
+          "smooth": false
+        }
+      },
+      {
+        "name": "desktop: teardown clears picture transform",
+        "pass": true
+      },
+      {
+        "name": "desktop: motion can be re-enabled",
+        "pass": true
+      },
+      {
+        "name": "desktop: live reduced motion change tears down smooth anchors",
+        "pass": true
+      },
+      {
+        "name": "desktop: unmount cleans triggers and smooth anchors",
+        "pass": true,
+        "detail": {
+          "triggers": 0,
+          "smooth": false
+        }
+      },
+      {
+        "name": "desktop: Studio disclosure uses dark-surface foreground",
+        "pass": true
+      },
+      {
+        "name": "desktop: Studio uses native scrolling",
+        "pass": true
+      },
+      {
+        "name": "desktop: Studio no horizontal overflow",
+        "pass": true
+      },
+      {
+        "name": "desktop: search empty state",
+        "pass": true
+      },
+      {
+        "name": "desktop: search restores six images",
+        "pass": true
+      },
+      {
+        "name": "desktop: local confirmation discloses no write",
+        "pass": true
+      },
+      {
+        "name": "mobile: motion capability",
+        "pass": true,
+        "detail": {
+          "triggers": 0,
+          "smooth": false
+        }
+      },
+      {
+        "name": "mobile: controls report effective capability",
+        "pass": true
+      },
+      {
+        "name": "mobile: video starts paused with preload none",
+        "pass": true
+      },
+      {
+        "name": "mobile: no opening overflow",
+        "pass": true
+      },
+      {
+        "name": "mobile: hash navigation reaches film",
+        "pass": true
+      },
+      {
+        "name": "mobile: video plays",
+        "pass": true
+      },
+      {
+        "name": "mobile: video pauses",
+        "pass": true
+      },
+      {
+        "name": "mobile: crop dialog opens",
+        "pass": true
+      },
+      {
+        "name": "mobile: Escape closes and restores focus",
+        "pass": true
+      },
+      {
+        "name": "mobile: unmount cleans triggers and smooth anchors",
+        "pass": true,
+        "detail": {
+          "triggers": 0,
+          "smooth": false
+        }
+      },
+      {
+        "name": "mobile: Studio disclosure uses dark-surface foreground",
+        "pass": true
+      },
+      {
+        "name": "mobile: Studio uses native scrolling",
+        "pass": true
+      },
+      {
+        "name": "mobile: Studio no horizontal overflow",
+        "pass": true
+      },
+      {
+        "name": "mobile: search empty state",
+        "pass": true
+      },
+      {
+        "name": "mobile: search restores six images",
+        "pass": true
+      },
+      {
+        "name": "mobile: local confirmation discloses no write",
+        "pass": true
+      },
+      {
+        "name": "reduced: motion capability",
+        "pass": true,
+        "detail": {
+          "triggers": 0,
+          "smooth": false
+        }
+      },
+      {
+        "name": "reduced: controls report effective capability",
+        "pass": true
+      },
+      {
+        "name": "reduced: video starts paused with preload none",
+        "pass": true
+      },
+      {
+        "name": "reduced: no opening overflow",
+        "pass": true
+      },
+      {
+        "name": "reduced: hash navigation reaches film",
+        "pass": true
+      },
+      {
+        "name": "reduced: video plays",
+        "pass": true
+      },
+      {
+        "name": "reduced: video pauses",
+        "pass": true
+      },
+      {
+        "name": "reduced: crop dialog opens",
+        "pass": true
+      },
+      {
+        "name": "reduced: Escape closes and restores focus",
+        "pass": true
+      },
+      {
+        "name": "reduced: unmount cleans triggers and smooth anchors",
+        "pass": true,
+        "detail": {
+          "triggers": 0,
+          "smooth": false
+        }
+      },
+      {
+        "name": "reduced: Studio disclosure uses dark-surface foreground",
+        "pass": true
+      },
+      {
+        "name": "reduced: Studio uses native scrolling",
+        "pass": true
+      },
+      {
+        "name": "reduced: Studio no horizontal overflow",
+        "pass": true
+      },
+      {
+        "name": "reduced: search empty state",
+        "pass": true
+      },
+      {
+        "name": "reduced: search restores six images",
+        "pass": true
+      },
+      {
+        "name": "reduced: local confirmation discloses no write",
+        "pass": true
+      },
+      {
+        "name": "No JavaScript: heading and content visible",
+        "pass": true
+      },
+      {
+        "name": "All original source and asset files preserved except two authorized dependency files",
+        "pass": true,
+        "detail": {
+          "total": 934,
+          "changed": [
+            "package-lock.json",
+            "package.json"
+          ]
+        }
+      },
+      {
+        "name": "No browser runtime errors",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "No external requests from preview",
+        "pass": true
+      }
+    ],
+    "pages": [
+      {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "name": "reduced",
+        "width": 1440,
+        "height": 1000
+      }
+    ],
+    "errors": [],
+    "externalRequests": []
+  },
+  "edgeCases": {
+    "at": "2026-10-13T10:14:06.435Z",
+    "checks": [
+      {
+        "name": "Direct hash retains reading target",
+        "pass": true
+      },
+      {
+        "name": "Hash survives reload",
+        "pass": true
+      },
+      {
+        "name": "Back restores opening",
+        "pass": true
+      },
+      {
+        "name": "Keyboard activates film",
+        "pass": true
+      },
+      {
+        "name": "Offscreen film pauses",
+        "pass": true
+      },
+      {
+        "name": "Modal traps keyboard focus",
+        "pass": true
+      },
+      {
+        "name": "Independent smooth setting restores native anchor behavior",
+        "pass": true
+      },
+      {
+        "name": "Computed text contrast: .opening-copy .rv-button",
+        "pass": true,
+        "detail": {
+          "selector": ".opening-copy .rv-button",
+          "fg": "rgb(8, 10, 14)",
+          "bg": "#b89b63",
+          "ratio": 7.46
+        }
+      },
+      {
+        "name": "Computed text contrast: .opening-copy>p",
+        "pass": true,
+        "detail": {
+          "selector": ".opening-copy>p",
+          "fg": "rgb(221, 214, 203)",
+          "bg": "#080a0e",
+          "ratio": 13.73
+        }
+      },
+      {
+        "name": "Computed text contrast: .material-section .small",
+        "pass": true,
+        "detail": {
+          "selector": ".material-section .small",
+          "fg": "rgb(169, 180, 188)",
+          "bg": "#08283a",
+          "ratio": 7.23
+        }
+      },
+      {
+        "name": "Computed text contrast: .media-item figcaption p",
+        "pass": true,
+        "detail": {
+          "selector": ".media-item figcaption p",
+          "fg": "rgb(169, 180, 188)",
+          "bg": "#080a0e",
+          "ratio": 9.38
+        }
+      },
+      {
+        "name": "Computed text contrast: .reading-intro",
+        "pass": true,
+        "detail": {
+          "selector": ".reading-intro",
+          "fg": "rgb(64, 83, 99)",
+          "bg": "#f4f1e9",
+          "ratio": 7.06
+        }
+      },
+      {
+        "name": "All 36 responsive variants return exact registered bytes",
+        "pass": true,
+        "detail": {
+          "variants": 36
+        }
+      },
+      {
+        "name": "320px /: no horizontal overflow",
+        "pass": true
+      },
+      {
+        "name": "320px /studio: no horizontal overflow",
+        "pass": true
+      },
+      {
+        "name": "768px /: no horizontal overflow",
+        "pass": true
+      },
+      {
+        "name": "768px /studio: no horizontal overflow",
+        "pass": true
+      },
+      {
+        "name": "1024px /: no horizontal overflow",
+        "pass": true
+      },
+      {
+        "name": "1024px /studio: no horizontal overflow",
+        "pass": true
+      },
+      {
+        "name": "Mobile Studio logo clears review toolbar",
+        "pass": true
+      },
+      {
+        "name": "Image failure shows accessible fallback",
+        "pass": true
+      },
+      {
+        "name": "Video failure retains description and recovery status",
+        "pass": true
+      }
+    ]
+  },
+  "commands": {
+    "nextBuild": "PASS; Node22; 52 static pages; normal-process retry after sandboxed compile stalled",
+    "applicationTypeScript": "PASS",
+    "previewTypeScript": "PASS",
+    "foundationESLint": "PASS; zero reported warnings/errors",
+    "existingUnitTests": {
+      "passed": 344,
+      "failed": 0
+    }
+  },
+  "previewBundle": {
+    "bytes": 385294,
+    "gzipBytes": 126128,
+    "productionIntegration": false,
+    "gzipLevel": 6,
+    "baselineGzipBytes": 6874,
+    "deltaGzipBytes": 119254
+  },
+  "screenshots": [
+    {
+      "path": "output/playwright/redesign-phase2/desktop-crop.png",
+      "sha256": "db29f02c9571583e734260f67af0fa981827409ac4e56ef87b4de7738ae555b5"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/desktop-film.png",
+      "sha256": "ccdf8db05579d43d262cb95f985268252fdd494bd6529e6a921a6e0ba0a9977e"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/desktop-media.png",
+      "sha256": "20cf9c161dcac7a3918fbe03453bd23681738544a8471c09d9418cda83fea427"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/desktop-opening.png",
+      "sha256": "df4d680f20c8e48028e8fd09acb16883742830a7e91e35058691e179762c2f55"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/desktop-studio.png",
+      "sha256": "c1db78f999f0735d187657a90f6fc741b3a0ae2c9bd36401b1fc57f303bceba3"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/mobile-crop.png",
+      "sha256": "228776b932c622cdd50635f3ec520e627ce926e3437462d6bfa7b8cfa4d67da6"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/mobile-film.png",
+      "sha256": "ab8cb91a2a57b03b698cf9b8df32d8d5f400703ae418c8c470a3c3f639594af6"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/mobile-media.png",
+      "sha256": "f4abf9e2cee357c8693e0c6c7075259ce9ade1ec6437ee54860b0e0500189667"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/mobile-opening.png",
+      "sha256": "ca79ccc155dc54fc9d8b2abe08f0330eb8eec094e9478e8a87e08c446c5764a3"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/mobile-studio.png",
+      "sha256": "b3cb5a87409a6cbe93a2416c55c486365888c0ffd5319fe6f62083a7d3500e0b"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/reduced-crop.png",
+      "sha256": "e28c1600a4a1ebacd99e5572d00fb50a04a410158f3657057beda6c01fa23791"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/reduced-film.png",
+      "sha256": "79c073e2c4136fbbf22070b2ba7db8114d6ce171102fb4a7d3efa982676831db"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/reduced-media.png",
+      "sha256": "1353c045d6b552bb48319584ca6acd142d342ebedc1266297b0eaa5ce94aed2b"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/reduced-opening.png",
+      "sha256": "c1cfc498b8d41727c2c2a46171338d0860042ea849cb16c82b6cd8a76ae020e9"
+    },
+    {
+      "path": "output/playwright/redesign-phase2/reduced-studio.png",
+      "sha256": "c1db78f999f0735d187657a90f6fc741b3a0ae2c9bd36401b1fc57f303bceba3"
+    }
+  ],
+  "independentReview": {
+    "initialDisposition": "fix",
+    "fixes": [
+      "Studio disclosure foreground",
+      "effective capability labels",
+      "PRODUCT authorization checkpoint"
+    ],
+    "finalDisposition": "ship",
+    "allThreeScored": "resolved",
+    "scope": "Local Phase2 scored fixes; all15 refreshed captures reopened; no production/native acceptance"
+  },
+  "impeccableDetector": {
+    "status": "unavailable",
+    "error": "The system cannot find the batch label specified - cache_directory_failed"
+  },
+  "productionWrites": 0,
+  "driveWrites": 0,
+  "push": false,
+  "phase3Started": false,
+  "performanceComparison": "phase2-performance.json"
+}

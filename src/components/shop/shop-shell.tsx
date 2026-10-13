@@ -7,8 +7,8 @@ import type {ContentDocument} from '@/lib/content-model';
 import {ShopFrame} from './shop-frame';
 import {navigationDestinations} from '@/lib/published-navigation';
 import {availableNavigation,destinationAvailable} from '@/lib/navigation-availability';
-export async function ShopShell({children,business,copyDocument,copyVersion,previewLocale}:{children:React.ReactNode;business?:BusinessSettings;copyDocument?:ContentDocument;copyVersion?:number;previewLocale?:Locale}){
+export async function ShopShell({children,business,copyDocument,copyVersion,previewLocale,publicDesign=false}:{children:React.ReactNode;business?:BusinessSettings;copyDocument?:ContentDocument;copyVersion?:number;previewLocale?:Locale;publicDesign?:boolean}){
  const [{details},{settings},locale,destinations]=await Promise.all([business?Promise.resolve({details:business}):publishedBusiness(),publishedSiteSettings(),previewLocale?Promise.resolve(previewLocale):publicLocale(),navigationDestinations()]);
  const copy=copyDocument?{values:sharedCopyValues(copyDocument,locale),version:copyVersion||0}:await publishedCopy(locale);
- return <ShopFrame copy={copy.values} copyVersion={copy.version} business={details} navigation={availableNavigation(settings.navigation,destinations.documents,destinations.products)} contactAvailable={destinationAvailable('/contact',destinations.documents,destinations.products)} locale={locale} enabledLocales={settings.localization.enabled?publicJourneyLocales(settings.localization.enabledLocales):['en']}>{children}</ShopFrame>;
+ return <ShopFrame publicDesign={publicDesign} copy={copy.values} copyVersion={copy.version} business={details} navigation={availableNavigation(settings.navigation,destinations.documents,destinations.products)} contactAvailable={destinationAvailable('/contact',destinations.documents,destinations.products)} locale={locale} enabledLocales={settings.localization.enabled?publicJourneyLocales(settings.localization.enabledLocales):['en']}>{children}</ShopFrame>;
 }

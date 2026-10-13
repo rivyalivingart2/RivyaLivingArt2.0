@@ -1,0 +1,252 @@
+{
+  "phase": 1,
+  "status": "prepared-for-owner-visual-review",
+  "phase2": "not-authorized-not-started",
+  "sourceCommit": "4cadf21b380a8f3753232318fbb78027aa09ffc5",
+  "originalSourceFilesChecked": 934,
+  "originalSourceFilesChanged": [],
+  "logoAndAssets": "exact existing bytes, unfiltered logo",
+  "runtimeChanges": 0,
+  "dependencyChanges": 0,
+  "productionWrites": 0,
+  "driveWrites": 0,
+  "pushes": 0,
+  "privateDatabaseBaseline": "not accessed; refresh before integration",
+  "sitemapRoutes": 656,
+  "journalStringsMatchedToLive": 17,
+  "productStoryMatchesLive": true,
+  "browser": {
+    "scope": "Standalone Phase 1 prototype only; browser emulation, no production writes",
+    "at": "2026-10-13T09:36:54.957Z",
+    "pages": [
+      {
+        "view": "home",
+        "width": 1440,
+        "h1": "Art for the way you live.",
+        "overflow": false,
+        "brokenImages": [],
+        "bodyWidth": 1440,
+        "contentHeight": 3990,
+        "logoFilter": "none"
+      },
+      {
+        "view": "product",
+        "width": 1440,
+        "h1": "River Channel",
+        "overflow": false,
+        "brokenImages": [],
+        "bodyWidth": 1440,
+        "contentHeight": 1790,
+        "logoFilter": "none"
+      },
+      {
+        "view": "journal",
+        "width": 1440,
+        "h1": "A Room Begins with a Statement Table",
+        "overflow": false,
+        "brokenImages": [],
+        "bodyWidth": 1440,
+        "contentHeight": 3391,
+        "logoFilter": "none"
+      },
+      {
+        "view": "studio",
+        "width": 1440,
+        "h1": "Inquiries & orders",
+        "overflow": false,
+        "brokenImages": [],
+        "bodyWidth": 1440,
+        "contentHeight": 1136,
+        "logoFilter": "none"
+      },
+      {
+        "view": "home",
+        "width": 390,
+        "h1": "Art for the way you live.",
+        "overflow": false,
+        "brokenImages": [],
+        "bodyWidth": 390,
+        "contentHeight": 4452,
+        "logoFilter": "none"
+      },
+      {
+        "view": "product",
+        "width": 390,
+        "h1": "River Channel",
+        "overflow": false,
+        "brokenImages": [],
+        "bodyWidth": 390,
+        "contentHeight": 2465,
+        "logoFilter": "none"
+      },
+      {
+        "view": "journal",
+        "width": 390,
+        "h1": "A Room Begins with a Statement Table",
+        "overflow": false,
+        "brokenImages": [],
+        "bodyWidth": 390,
+        "contentHeight": 4811,
+        "logoFilter": "none"
+      },
+      {
+        "view": "studio",
+        "width": 390,
+        "h1": "Inquiries & orders",
+        "overflow": false,
+        "brokenImages": [],
+        "bodyWidth": 390,
+        "contentHeight": 1656,
+        "logoFilter": "none"
+      }
+    ],
+    "interactions": [
+      {
+        "width": 1440,
+        "test": "Shallow Basin does not open wrong product",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "test": "film control clears caption",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "test": "film starts on request",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "test": "film pauses",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "test": "product gallery switches image",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "test": "preview save toggle",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "test": "safe prototype notice",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "test": "ordering explanation expands",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "test": "studio NEW shows three examples",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "test": "studio COMPLETED shows three examples",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "test": "studio CLOSED shows three examples",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "test": "search empty state",
+        "pass": true
+      },
+      {
+        "width": 1440,
+        "test": "history does not invent events",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "Shallow Basin does not open wrong product",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "film control clears caption",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "film starts on request",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "film pauses",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "product gallery switches image",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "preview save toggle",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "safe prototype notice",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "ordering explanation expands",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "studio NEW shows three examples",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "studio COMPLETED shows three examples",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "studio CLOSED shows three examples",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "search empty state",
+        "pass": true
+      },
+      {
+        "width": 390,
+        "test": "history does not invent events",
+        "pass": true
+      }
+    ],
+    "errors": [],
+    "externalRequests": []
+  },
+  "independentReview": {
+    "disposition": "ship Phase 1 previews for user review",
+    "scope": "all eight initial captures; homepage/Studio corrections rechecked; not production acceptance",
+    "resolved": [
+      "film/caption overlap",
+      "wrong-product preview navigation",
+      "Windows text-encoding regression"
+    ]
+  },
+  "toolingLimits": {
+    "impeccableContext": "launcher probe exit 1; existing source/context used",
+    "conceptSeed": "launcher probe exit 1; user-approved direction used directly",
+    "detector": "launcher probe exit 1; independent review and browser observations recorded"
+  }
+}

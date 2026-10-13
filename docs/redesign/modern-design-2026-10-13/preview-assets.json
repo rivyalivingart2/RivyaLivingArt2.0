@@ -1,0 +1,90 @@
+[
+  {
+    "key": "logo",
+    "source": "public/brand/rivyalivingart-logo-horizontal-transparent.png",
+    "sha256": "01bd3efc7602fe1642e13e414d4be4ab544bb6b47e824f29f22ede4ddbf9a9f7",
+    "transformation": "none; original bytes served read-only",
+    "classification": "unchanged logo",
+    "driveId": null
+  },
+  {
+    "key": "room",
+    "source": "public/media/product-scene-001-16x9.webp",
+    "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+    "transformation": "none; original bytes served read-only",
+    "classification": "existing design visualization",
+    "driveId": null
+  },
+  {
+    "key": "product",
+    "source": "public/media/product-hero-001-4x5.webp",
+    "sha256": "fd1ddaa3af08bdc26edfd505edeb25404b5ab17de18d44d9315b877b941d157f",
+    "transformation": "none; original bytes served read-only",
+    "classification": "existing design visualization",
+    "driveId": null
+  },
+  {
+    "key": "basin",
+    "source": "public/media/product-hero-003-4x5.webp",
+    "sha256": "fa0fbc55cfda871b13e4e35e1f78123a7b87102c8b751cca9d630675b17ac42e",
+    "transformation": "none; original bytes served read-only",
+    "classification": "existing design visualization",
+    "driveId": null
+  },
+  {
+    "key": "console",
+    "source": "public/media/product-hero-005-4x5.webp",
+    "sha256": "bfdbed581d115b4efb88c75f0a48cbe378eed4e5567c29a783e5248c3d52691a",
+    "transformation": "none; original bytes served read-only",
+    "classification": "existing design visualization",
+    "driveId": null
+  },
+  {
+    "key": "detail",
+    "source": "public/media/generated/dp001-matching-detail-4x5.webp",
+    "sha256": "cc7e1bc615987e93d14e4c07fee1a4dc961ae1e6c185902ffb5dbbd5ae0d570e",
+    "transformation": "none; original bytes served read-only",
+    "classification": "existing design visualization",
+    "driveId": null
+  },
+  {
+    "key": "film-poster",
+    "source": "public/media/migration/hero-pour-loop-poster.jpg",
+    "sha256": "e7dec2a8d6972a0825caf57aae320db7b1a0c319eb2f7a3d5581ba9190040caf",
+    "transformation": "none; original bytes served read-only",
+    "classification": "material visualization",
+    "driveId": "11iY9mANJFy4EZf54HgZ5NJ_g4AzDBLBX"
+  },
+  {
+    "key": "film",
+    "source": "public/media/migration/hero-pour-loop.mp4",
+    "sha256": "61d4633578353e813e64506877eed198bc682b6424701b7783720af51530869d",
+    "transformation": "none; original bytes served read-only",
+    "classification": "material visualization",
+    "driveId": "1HVHyYusnysi_7aduW6xwFJHrwUlWGzIz"
+  },
+  {
+    "key": "display-font",
+    "source": "src/styles/fonts/instrument-serif-normal-400.woff2",
+    "sha256": "bc7e9fb97a508688fe68998905ee62ceea62354c0381c906818f25fbd7da6d29",
+    "transformation": "none; original bytes served read-only",
+    "classification": "font",
+    "driveId": null
+  },
+  {
+    "key": "body-font",
+    "source": "src/styles/fonts/inter-common-400.woff2",
+    "sha256": "a0d54e1869a5cca2062297f33d7d7ad8c306cb6893ef4f4eccc8020411ff125e",
+    "transformation": "none; original bytes served read-only",
+    "classification": "font",
+    "driveId": null
+  },
+  {
+    "key": "medium-font",
+    "source": "src/styles/fonts/inter-common-500.woff2",
+    "sha256": "a8d2e3ae506ece6b9d1abf72b77ff9c124baec83b16d6f1e99213707b4436622",
+    "transformation": "none; original bytes served read-only",
+    "classification": "font",
+    "driveId": null
+  }
+]

@@ -24,9 +24,9 @@ export function ReferenceChapter({section:b,design,index,prefix='',mediaPaths,un
   <summary><span className={r.number} aria-hidden>{String(index+1).padStart(2,'0')}</span><h2>{b.heading}</h2><span className={r.toggle} aria-hidden/></summary>
   <div className={r.accordionBody} data-has-image={!!picture}>{picture}<div>{label}{body}</div></div>
  </details>;
- return <section className={r.chapter} id={id} aria-labelledby={id+'-heading'} data-reference-slot={slot} data-stage={b.stage} data-chapter-style={layout} data-has-image={!!picture}>
-  <div className={r.chapterMarker}><span className={r.number} aria-hidden>{String(index+1).padStart(2,'0')}</span>{picture}</div>
-  <div className={r.chapterBody}>{label}<h2 id={id+'-heading'}>{b.heading}</h2>{body}</div>
+ return <section data-public-part="chapter" className={r.chapter} id={id} aria-labelledby={id+'-heading'} data-reference-slot={slot} data-stage={b.stage} data-chapter-style={layout} data-has-image={!!picture}>
+  <div data-public-part="chapter-marker" className={r.chapterMarker}><span className={r.number} aria-hidden>{String(index+1).padStart(2,'0')}</span>{picture}</div>
+  <div data-public-part="chapter-copy" className={r.chapterBody}>{label}<h2 id={id+'-heading'}>{b.heading}</h2>{body}</div>
  </section>;
 }
 /** Shared bands read the same current pages publicly and the same frozen pages in preview. */

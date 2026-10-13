@@ -1,3 +1,68 @@
+# Current checkpoint — all seven redesign phases authorized for GitHub release
+
+13 October 2026: after receiving the Phase 7 report and confirming redesign completion, the owner explicitly instructed: "PUSH ALL THINGS INTO GITHUB". This authorizes the prepared detailed PR into main and normal release verification. The former local-only hold is superseded. Candidate application remains approved Phase 6 `15a0307`; verified package is `b1ae2d9`. Main was freshly fetched at `4cadf21b380a8f3753232318fbb78027aa09ffc5`; no drift or working-tree changes were found.
+
+Publish all seven phases through a detailed PR, verify hosting checks, merge without bypassing protection, and confirm the exact production commit. Record live verification and any session-related limits. Preserve the Phase 7 report findings (14 inconclusive accessibility instances, 62 existing lint warnings) and all content/data. Do not replay imports, publications, training fixtures or migrations. GitHub PR/deployment receipt will record completion; until verified, do not claim release complete.
+
+---
+# Current checkpoint — Phase 7 final local report ready; release NOT authorized
+
+13 October 2026: owner approved Phase 6 and requested Phase 7 verification and the final report before pushing/releasing. Branch codex/redesign-phase7-verification; approved application remains 15a0307, remote main read-only verified 4cadf21b380a8f3753232318fbb78027aa09ffc5. Read docs/redesign/modern-design-2026-10-13/PHASE-7-FINAL-REPORT.md, phase7-verification.json, phase7-preservation.json and CONTINUE.md first. Report: http://127.0.0.1:4184/review. Local app: http://127.0.0.1:4199.
+
+Fresh build/types, 344 unit/12 preflight/403 runtime, scoped public/Studio/browser/media/print/language-layout checks pass. 665 registered local routes (480 known unpublished QA drafts), 232 assets and 299 additional links checked. All 37 Studio modules at four widths. 71 axe scans: zero detected violations, 14 incomplete contextual rules; full source lint zero errors/62 existing warnings. 24 local performance samples pass observed LCP/CLS thresholds; no field/production guarantee. All 1,657 Phase 7 start rows unchanged; all 1,641 pre-redesign originals unchanged. No new original or synthetic protected records added.
+
+**STOP for owner report review and explicit push/release authorization.** Local PR body and release checklist prepared; no push, PR, merge, deployment, publication, Drive change or message. No application source change in Phase7; only generated output excluded from ESLint. Historical human/native/admin acceptance remains accurately scoped. Do not replay any publication/import/lifecycle. Scrapers, old-product transfers and backups excluded.
+
+---
+# Historical checkpoint — modern redesign Phase 6 owner review (approved)
+
+13 October 2026: owner approved Phase 5 and authorized Phase 6 only. The 13 remaining Studio operational/admin bodies, sign-in, dialogs and printable inquiry cards are implemented locally on codex/redesign-phase6-studio-operations, parent da435d3. Read docs/redesign/modern-design-2026-10-13/CONTINUE.md, PHASE-6-REVIEW.md, phase6-verification.json and phase6-preservation.json first. Gallery: http://127.0.0.1:4183/review; local Studio: http://127.0.0.1:4199/studio.
+
+All 1,646 original local rows in 13 protected scopes unchanged. One clearly fictional QA order, eight stage events, its privacy row and one temporary editor added; order ends Closed and editor disabled. The 24 training examples are browser-only fixtures, not imported. Build/types, zero-error lint, 344 unit/403 runtime and scoped browser checks pass; six pre-existing lint warnings retained. Independent full review returned ship after one evidence-only Closed-stage recapture. Detector unavailable; no new human/native/field or production certification.
+
+**Stop before Phase 7 pending owner preview approval.** No push, PR, release, production publication or Drive changes. Preserve logo/palette/content/functionality and historical evidence below; do not replay lifecycle/import/publication actions. Scrapers, old-product transfers and backups excluded.
+
+---
+# Historical checkpoint — modern redesign Phase 5 ready for owner review
+
+13 October 2026: owner approved Phase 4 and authorized Phase 5 only. Studio shell and 24 content/editing workspaces implemented locally on codex/redesign-phase5-studio-editing, parent 157ea4b. Read docs/redesign/modern-design-2026-10-13/CONTINUE.md, PHASE-5-REVIEW.md, phase5-verification.json and phase5-preservation.json first. Gallery: http://127.0.0.1:4182/review; local Studio: http://127.0.0.1:4199/studio/products.
+
+All 1,641 original rows in 13 protected local scopes unchanged. One labelled synthetic FAQ and four revisions added for a guarded local lifecycle check; it ends hidden. Build/types/focused lint, 344 unit/403 runtime and scoped browser checks pass. Reviewer resolved sole F1 and returned ship at local preview scope. Detector unavailable; no new human/native/field or production certification.
+
+**Stop before Phase 6 pending owner preview approval.** Shared shell surrounds operations, but their bodies remain outside Phase 5. No push, PR, release, production publication or Drive changes. Preserve logo/palette/content/functionality and historical evidence below; do not replay old imports/publications. Scrapers, old-product transfers and backups excluded.
+
+---
+# Current checkpoint — modern redesign Phase 4 ready for owner review
+
+13 October 2026: the owner approved Phase 3 and authorized Phase 4 only. Remaining public page families are implemented locally on `codex/redesign-phase4-public-pages`, parent `2a3c9a3`. Read `docs/redesign/modern-design-2026-10-13/CONTINUE.md`, `PHASE-4-REVIEW.md` and `phase4-verification.json` first. Review: http://127.0.0.1:4181/review; app: http://127.0.0.1:4199/.
+
+Logo, palette, content, records, media/crops and functionality preserved. All 13 protected local scope hashes match, 1,641 rows unchanged. Final build/types/lint and 344 unit/403 runtime tests pass. Browser evidence records one local form-session rate-limit difference. Reviewer scored F1/F2 resolved and returned ship for that fix-list verdict. Do not turn this into native/device/human or production certification.
+
+**Stop before Phase 5 pending owner preview approval.** Studio redesign/preview reconciliation remains Phase 5. No release, push, PR, publication, production or Drive record changes authorized by this phase. Preserve older records below as historical; do not replay old holds/publications. Scrapers, old-product transfers and backups excluded.
+
+---
+# Current checkpoint — modern redesign Phase 2 ready for owner review
+
+13 October 2026: the owner approved Phase 1 design previews and explicitly authorized **Phase 2 only**. The additive design/motion/media foundation and isolated animation/media/Studio-control preview are complete locally. Read `docs/redesign/modern-design-2026-10-13/PHASE-2-REVIEW.md`, `phase2-verification.json`, `phase2-media-register.json` and `CONTINUE.md` first. Branch: `codex/redesign-phase2-foundation`.
+
+Preserve original logo/main colours/content/functionality. Of 934 baseline files, 932 are byte-identical; only the two dependency manifests add GSAP and its React adapter. All existing routes/data/media/schema/publication code remain unchanged. Six Drive images have 36 local responsive derivatives and all 18 homepage slots have media decisions. No Studio association/crop, database, Drive original, publication or deployment was changed. No fresh private database audit is claimed.
+
+Verified: 57 primary + 22 edge browser checks, 344 existing unit tests, application/preview TypeScript, focused lint and full Next.js build. Independent finish reviewer scored all three requested corrections resolved and returned ship at local-preview scope. Detector launcher failed; its limitation is recorded. Native/human/physical evidence is not invented. ScrollSmoother was tested and rejected for focus/click issues; retained native smooth anchors and scoped desktop GSAP transforms, with static touch/reduced-motion paths and native Studio scrolling.
+
+**Stop before Phase 3 until the owner explicitly approves the animation/media previews.** Preview command and URLs are in the Phase 2 README. No push, PR, merge, release or production integration is authorized by this phase. Do not replay historical M0–M11 publications/admin closures. Scrapers, old-product transfers and backups remain excluded.
+
+---
+
+# Historical checkpoint — modern redesign Phase 1 previews awaiting owner review
+
+13 October 2026: the owner approved a new seven-phase redesign plan and authorized **Phase 1 only**. New compositions replace the old visual-matching goal; logo, main colours, all content and functionality remain fixed. Read `docs/redesign/modern-design-2026-10-13/CONTINUE.md` and `PHASE-1-REVIEW.md` before continuing.
+
+Local branch `codex/redesign-phase1-previews` contains an isolated four-view prototype, source/public baselines and route/section/Studio coverage. Desktop/mobile specimens are ready for owner review. **Stop before Phase 2 until explicitly authorized.** No production source, runtime dependency, database, publication, Drive media or deployment change occurred. Prototype controls cannot write live records. Fresh private database baselines remain required before later integration; do not represent source/public inventories as current private-row evidence.
+
+Keep all historical releases and admin closures below intact. Do not replay publications, imports or obsolete phases. No push, PR, merge or release is authorized by this Phase 1 request.
+
+---
+
 # Current checkpoint — final live verification complete
 
 13 October 2026: final read-only website and authenticated Studio verification found no broken published routes or media in the tested scope. Read `docs/redesign/old-design-migration-2026-10-08/FINAL-LIVE-VERIFICATION.md` and its `final-live-verification.json` receipt first. Verified main `6c3fd6b339bea2d4b2ecac26c96a1907e899ce06`, READY production `dpl_EKa6VH4gtmKAVqgPZuZ32dXdJWsd`: 781 public routes, 373 media URLs, 19 shared resources and all 37 Studio workspaces passed. All 480 M9 entries are published/aligned; 535 content records and 120 published products are visible, with zero saved pending content changes or publication blockers. All 78 DB001/DB010 Hindi/Gujarati fields match public revision 6.

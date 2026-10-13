@@ -1,0 +1,462 @@
+{
+  "at": "2026-10-13T11:04:24.961Z",
+  "phase": 3,
+  "scope": "Local homepage and shared public frame only",
+  "branch": "codex/redesign-phase3-homepage",
+  "parent": "4cf0e1b",
+  "productionChanged": false,
+  "phase4Started": false,
+  "validation": {
+    "build": "passed",
+    "typescript": "passed",
+    "focusedApplicationLint": "passed",
+    "unitTests": {
+      "passed": 344,
+      "failed": 0
+    },
+    "browser": {
+      "checks": [
+        "1440 one H1",
+        "1440 no horizontal overflow",
+        "1440 original slot order retained",
+        "1440 original content links and labels retained",
+        "1440 logo not recolored",
+        "1440 reduced motion static",
+        "1440 film not autoplaying",
+        "1440 search dialog opens",
+        "1440 search restores focus",
+        "1440 native chapter anchor",
+        "Material film plays after deliberate click",
+        "Material film pauses",
+        "768 one H1",
+        "768 no horizontal overflow",
+        "768 original slot order retained",
+        "768 original content links and labels retained",
+        "768 logo not recolored",
+        "768 reduced motion static",
+        "768 film not autoplaying",
+        "768 search dialog opens",
+        "768 search restores focus",
+        "768 menu opens",
+        "768 body locked in menu",
+        "768 menu restores focus",
+        "768 native chapter anchor",
+        "390 one H1",
+        "390 no horizontal overflow",
+        "390 original slot order retained",
+        "390 original content links and labels retained",
+        "390 logo not recolored",
+        "390 reduced motion static",
+        "390 film not autoplaying",
+        "390 search dialog opens",
+        "390 search restores focus",
+        "390 menu opens",
+        "390 body locked in menu",
+        "390 menu restores focus",
+        "390 native chapter anchor",
+        "320 one H1",
+        "320 no horizontal overflow",
+        "320 original slot order retained",
+        "320 original content links and labels retained",
+        "320 logo not recolored",
+        "320 reduced motion static",
+        "320 film not autoplaying",
+        "320 search dialog opens",
+        "320 search restores focus",
+        "320 menu opens",
+        "320 body locked in menu",
+        "320 menu restores focus",
+        "320 native chapter anchor",
+        "Eligible desktop activates deferred motion",
+        "Parallax is bounded image transform",
+        "Live reduced-motion change cleans transforms",
+        "Live reduced-motion restores anchor behavior",
+        "Route exit restores native scrolling",
+        "Commission route remains functional",
+        "No browser runtime errors"
+      ],
+      "errors": [],
+      "captures": [
+        "1440-opening.png",
+        "1440-pieces.png",
+        "1440-material.png",
+        "1440-collections.png",
+        "1440-closing.png",
+        "1440-footer.png",
+        "1440-full.png",
+        "768-opening.png",
+        "768-footer.png",
+        "390-opening.png",
+        "390-pieces.png",
+        "390-material.png",
+        "390-collections.png",
+        "390-closing.png",
+        "390-footer.png",
+        "390-full.png",
+        "390-menu.png"
+      ],
+      "scope": "Local browser emulation; no production or record writes"
+    },
+    "fixtures": {
+      "checks": [
+        "all 1440 one H1",
+        "all 1440 no overflow",
+        "1440 all 18 conditional slots render",
+        "1440 truthful disclosures remain",
+        "classic 1440 one H1",
+        "classic 1440 no overflow",
+        "editorial 1440 one H1",
+        "editorial 1440 no overflow",
+        "empty 1440 one H1",
+        "empty 1440 no overflow",
+        "all 768 one H1",
+        "all 768 no overflow",
+        "768 all 18 conditional slots render",
+        "768 truthful disclosures remain",
+        "classic 768 one H1",
+        "classic 768 no overflow",
+        "editorial 768 one H1",
+        "editorial 768 no overflow",
+        "empty 768 one H1",
+        "empty 768 no overflow",
+        "all 390 one H1",
+        "all 390 no overflow",
+        "390 all 18 conditional slots render",
+        "390 truthful disclosures remain",
+        "classic 390 one H1",
+        "classic 390 no overflow",
+        "editorial 390 one H1",
+        "editorial 390 no overflow",
+        "empty 390 one H1",
+        "empty 390 no overflow",
+        "all 320 one H1",
+        "all 320 no overflow",
+        "320 all 18 conditional slots render",
+        "320 truthful disclosures remain",
+        "classic 320 one H1",
+        "classic 320 no overflow",
+        "editorial 320 one H1",
+        "editorial 320 no overflow",
+        "empty 320 one H1",
+        "empty 320 no overflow"
+      ],
+      "captures": [
+        "1440-fixture-work.png",
+        "1440-fixture-words.png",
+        "1440-fixture-workshops.png",
+        "1440-fixture-journal.png",
+        "390-fixture-work.png",
+        "390-fixture-words.png",
+        "390-fixture-workshops.png",
+        "390-fixture-journal.png"
+      ],
+      "scope": "Static synthetic fixtures; no database writes"
+    },
+    "edge": {
+      "checks": [
+        "Shared header copy unchanged",
+        "Shared footer copy unchanged",
+        "All original main image associations, alt text and inline crops retained",
+        "Category keyboard focus preserves stable target size",
+        "Save-piece local shortlist works",
+        "Search GET reaches real results",
+        "hi locale selector persists",
+        "hi retains homepage with no overflow",
+        "gu locale selector persists",
+        "gu retains homepage with no overflow",
+        "en locale selector persists",
+        "en retains homepage with no overflow",
+        "Every image loads after scrolling",
+        "JavaScript-disabled homepage keeps original heading",
+        "JavaScript-disabled navigation fallback remains available",
+        "JavaScript-disabled chapter navigation works"
+      ],
+      "scope": "Local browser checks; locale cookie and saved-piece localStorage only; no business writes"
+    },
+    "contrast": [
+      {
+        "name": "body on obsidian",
+        "foreground": "#f4f1e9",
+        "background": "#080a0e",
+        "ratio": 17.55,
+        "minimum": 4.5
+      },
+      {
+        "name": "muted on obsidian",
+        "foreground": "#a9b4bc",
+        "background": "#080a0e",
+        "ratio": 9.38,
+        "minimum": 4.5
+      },
+      {
+        "name": "body on ocean",
+        "foreground": "#f4f1e9",
+        "background": "#08283a",
+        "ratio": 13.53,
+        "minimum": 4.5
+      },
+      {
+        "name": "muted on ocean",
+        "foreground": "#a9b4bc",
+        "background": "#08283a",
+        "ratio": 7.23,
+        "minimum": 4.5
+      },
+      {
+        "name": "body on sapphire",
+        "foreground": "#f4f1e9",
+        "background": "#164e6b",
+        "ratio": 7.96,
+        "minimum": 4.5
+      },
+      {
+        "name": "ink on ivory",
+        "foreground": "#18202a",
+        "background": "#f4f1e9",
+        "ratio": 14.55,
+        "minimum": 4.5
+      },
+      {
+        "name": "secondary on ivory",
+        "foreground": "#384856",
+        "background": "#f4f1e9",
+        "ratio": 8.35,
+        "minimum": 4.5
+      },
+      {
+        "name": "closing label on ivory",
+        "foreground": "#64512f",
+        "background": "#f4f1e9",
+        "ratio": 6.74,
+        "minimum": 4.5
+      },
+      {
+        "name": "gold on obsidian",
+        "foreground": "#b89b63",
+        "background": "#080a0e",
+        "ratio": 7.46,
+        "minimum": 4.5
+      }
+    ]
+  },
+  "preservation": {
+    "originalBaselineCount": 934,
+    "byteIdentical": 924,
+    "changedOriginalFiles": [
+      ".gitignore",
+      "package-lock.json",
+      "package.json",
+      "src/components/shop/header.tsx",
+      "src/components/shop/hero-image.tsx",
+      "src/components/shop/homepage-document.tsx",
+      "src/components/shop/reference-homepage.module.css",
+      "src/components/shop/reference-homepage.tsx",
+      "src/components/shop/shop-frame.tsx",
+      "src/components/shop/shop-site.tsx"
+    ],
+    "allPublicMediaAndLogoIdentical": true,
+    "allLibAndApiFilesIdentical": true,
+    "localDatabase": {
+      "readOnly": true,
+      "tables": 13,
+      "records": 1641,
+      "summary": {
+        "rivya_catalogue": {
+          "count": 120,
+          "digest": "0f7bbce050fe4c830c32a28c351cb1e090788b9a58bba6737c5a581b7b323e58"
+        },
+        "rivya_content": {
+          "count": 602,
+          "digest": "2d7a13d93d7d8800d9138cb09ab1110975facbe9189aa4bcb0b6271c41c811ad"
+        },
+        "rivya_public_media": {
+          "count": 152,
+          "digest": "9530592c6d34caf0f149f4309d367bdb917fbac8b8c5ba568a8cccb6b1ef4d94"
+        },
+        "rivya_business_settings": {
+          "count": 1,
+          "digest": "03be771ace76ef6f0ec49e09b90a1d25910251d9511cd1ae25ac53f302004fb6"
+        },
+        "rivya_revisions": {
+          "count": 734,
+          "digest": "a214e6521c7b70c43c1cdc7c9ea6253fe7cdf75c6a8c9eb64cf37e5b9e6931a4"
+        },
+        "rivya_inquiries": {
+          "count": 2,
+          "digest": "f553f216c7881b2c4bcbba77eadced625ff88b062439009cc41560b08df3a6c5"
+        },
+        "rivya_studio_orders": {
+          "count": 7,
+          "digest": "357d5d4c98efc12a66bf231a8677c834e3dd122d1de3a2d139a362e032d7d341"
+        },
+        "rivya_studio_order_events": {
+          "count": 8,
+          "digest": "ec1ceb4ac969bf853449384344a3b38ce3a6d688514164a8cd41f77ef8d134b3"
+        },
+        "rivya_inquiry_notes": {
+          "count": 0,
+          "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "rivya_references": {
+          "count": 0,
+          "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "rivya_staff": {
+          "count": 8,
+          "digest": "96a1e7f7ee9c265a20a31113d1b507dcae26e37eea74cc0970bccb94445e5812"
+        },
+        "rivya_privacy_controls": {
+          "count": 7,
+          "digest": "6a2568abd4d21c4e280dfb3591a8d6678f15b0d1d2a1dcfaed2939e795226a72"
+        },
+        "rivya_erasure_ledger": {
+          "count": 0,
+          "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      },
+      "allDigestsMatch": true
+    },
+    "presentationPublishedVersion": 82
+  },
+  "review": {
+    "disposition": "ship",
+    "scope": "Independent full source and screenshot review at local Phase 3 scope",
+    "earlierRecapture": "Corrected oversized Chromium mobile screenshot using settled viewport tiles",
+    "detector": "unavailable: Windows batch cache_directory_failed",
+    "nativeDeviceAcceptance": false,
+    "humanAcceptance": false,
+    "productionAcceptance": false
+  },
+  "captures": [
+    {
+      "path": "output/playwright/redesign-phase3/1440-opening.png",
+      "bytes": 981583,
+      "sha256": "ced37b055ebc8d19bc0004f6be168b4ce90837460d50e3c3e56c09e9dfc75cbd"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/1440-pieces.png",
+      "bytes": 737321,
+      "sha256": "fe87520db57f8013edbfcd3e101f0268cd48b0d9bb9f0e2d6762a6acf6c85735"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/1440-material.png",
+      "bytes": 742832,
+      "sha256": "315809e2f6c8fdf11cf2cf7fba582fd10123f737b8d9270de4a6c8aba9f43ea5"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/1440-collections.png",
+      "bytes": 477658,
+      "sha256": "23f064dedabfd897faf125169b6b9ae71c94e1062c64e644555420e7a2f77ab0"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/1440-closing.png",
+      "bytes": 66439,
+      "sha256": "d86d25b895b5c3547cc5d755cee015e9e438346cb5a5eb87d4fe3ac0f8e5dab2"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/1440-footer.png",
+      "bytes": 79178,
+      "sha256": "5427b436274fbb6b9d1d9c9bdd94d6ae2494dccccd4a10710df85ee8ac9fb43f"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/1440-full.png",
+      "bytes": 6929356,
+      "sha256": "a2e74d6cf2d0b8c19800d503af2d6b483b471590ed9070ce13ad852d2bcbf1e7"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/768-opening.png",
+      "bytes": 382362,
+      "sha256": "a73ebb52b71ba6ec8050f3342fd1fa4e8e06a73008968c334a1e6b60829a8475"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/768-footer.png",
+      "bytes": 58923,
+      "sha256": "fe8ca294f7729415c9211e3448dec91c70ccd89807f3ff3013bf8a9395e03c6a"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-opening.png",
+      "bytes": 98583,
+      "sha256": "c9cf507d64804ea28d7c68b7f5d78f7fecff2f96f4bab84f53b6211101a45e51"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-pieces.png",
+      "bytes": 153521,
+      "sha256": "741557d4718cddc20b1929eaf208c380fcdffb6d92e7ce0815ef09d2394844b0"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-material.png",
+      "bytes": 202993,
+      "sha256": "27e4ea2086aef8fd2cb14c3ce7cad25b5c9fe37b1ad71d1acd80aa024dddfbcf"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-collections.png",
+      "bytes": 169555,
+      "sha256": "c64edfafbf048d353b47dfc4d5fedab64a7ebbc612c892f701f987f5b3f8250e"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-closing.png",
+      "bytes": 40133,
+      "sha256": "39b8c04110bba05214f73ffb0a17da753bd98645e72bb719c51c1a2957a12bf8"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-footer.png",
+      "bytes": 42747,
+      "sha256": "83e1fdd8dbac16d820110f3ec6bdd044f25a0cc35c4ee84d775ed86b6cea2b09"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-full.png",
+      "bytes": 3428605,
+      "sha256": "1d822a8348164f46c10d849892cfbafcc573744e05388fccaf8052afaf97c237"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-menu.png",
+      "bytes": 54246,
+      "sha256": "8d1d37811314b3dc77459946a83a3726dda5812199f6c470363c2f20e39ac3a3"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/1440-fixture-work.png",
+      "bytes": 645433,
+      "sha256": "0193bc9770fe88ffc7dacd4a59f1f6a09ec68d3f53f402fab11da998ae47d41d"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/1440-fixture-words.png",
+      "bytes": 595569,
+      "sha256": "371bb463b6660a6e6133b9c385995656898fa824ce73d6231776cbbbf1290a0f"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/1440-fixture-workshops.png",
+      "bytes": 690294,
+      "sha256": "2abd11af9345629cf84e2b5706d12c40c4e7b7849770c949632b10681b991eb6"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/1440-fixture-journal.png",
+      "bytes": 265717,
+      "sha256": "684574d32469efb5e91416970fa5966a0dade3856c44f66f01acdbf2fb4c5ff4"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-fixture-work.png",
+      "bytes": 195089,
+      "sha256": "e4d1746e51bac2681b5d1859f33ec6097d06676f5dde57b07d234b05c2fc1799"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-fixture-words.png",
+      "bytes": 198018,
+      "sha256": "daf0e77c52b5eb22b1e1329c21012df54a86e60905c606414edc16d2e2f22b8e"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-fixture-workshops.png",
+      "bytes": 194240,
+      "sha256": "1b92ec8572e387f7d2e88f04d3a38570bfa3952cb52e26e4cac1457c5943abee"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-fixture-journal.png",
+      "bytes": 149122,
+      "sha256": "3a446e863f9b27eeef49e22093e866dcee7ee1b455277c8f2d321760da175c2d"
+    },
+    {
+      "path": "output/playwright/redesign-phase3/390-full-ending.png",
+      "bytes": 71460,
+      "sha256": "45209190b17c1720e067a796431d30e77fef31ef8cb563fd87f48d375381c1a6"
+    }
+  ]
+}

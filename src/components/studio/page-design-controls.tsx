@@ -4,13 +4,13 @@ import s from './workspace.module.css';
 
 export function PageDesignControls({value,sources,onChange}:{value:PageDesigns|undefined;sources:PageDesignSource[];onChange:(next:PageDesigns)=>void}){
  const update=(route:DesignPageRoute,design:PageDesign)=>onChange({...value,[route]:design});
- return <section className={s.panel}><h2>Story and journey pages</h2><p>Choose a layout for each page. Its published wording, images, crops, customer steps and forms retain their current owners.</p>
+ return <section data-studio-part="panel" className={s.panel}><h2>Story and journey pages</h2><p>Choose a layout for each page. Its published wording, images, crops, customer steps and forms retain their current owners.</p>
   {designPages.map(({route,label})=>{
    const design=value?.[route],source=sources.find(p=>p.route===route),visible=source?.sections.filter(b=>b.enabled!==false)||[],slots=pageSlotKeys(route),eligible=source?eligibleSlotSections(source):[];
-   return <details key={route} className={s.panel} data-page-design={route}><summary>{label} · {design?'Reference layout':'Original layout'}</summary>
+   return <details key={route} data-studio-part="panel" className={s.panel} data-page-design={route}><summary>{label} · {design?'Reference layout':'Original layout'}</summary>
     <label><span><input type="checkbox" checked={!!design} disabled={!source} onChange={e=>{if(e.target.checked)update(route,defaultPageDesign(route));else{const next={...value};delete next[route];onChange(next);}}}/> Use reference layout for {label}</span></label>
     {!source&&<p>This page is not currently published.</p>}
-    {design&&<><div className={s.grid}>
+    {design&&<><div data-studio-part="grid" className={s.grid}>
      <label>Opening layout<select value={design.hero} onChange={e=>update(route,{...design,hero:e.target.value as PageDesign['hero']})}><option value="split">Split image and heading</option><option value="full">Full image opening</option></select></label>
      {['/our-story','/process','/materials-care'].includes(route)&&<label>Material film<select value={design.film||''} onChange={e=>{const next={...design};if(e.target.value)next.film='resin-pour';else delete next.film;update(route,next);}}><option value="">Still images only</option><option value="resin-pour">Resin in motion · with still image</option></select></label>}<label>Chapter layout<select value={design.chapters} onChange={e=>update(route,{...design,chapters:e.target.value as PageDesign['chapters']})}><option value="numbered">Numbered editorial chapters</option><option value="timeline">Sticky process stages</option><option value="accordion">Expandable material chapters</option><option value="alternating">Alternating image chapters</option></select></label>
     </div>

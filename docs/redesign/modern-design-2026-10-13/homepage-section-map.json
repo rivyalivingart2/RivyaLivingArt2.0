@@ -1,0 +1,182 @@
+[
+  {
+    "key": "pour",
+    "label": "Hero",
+    "source": "Current homepage opening",
+    "defaultVisible": true,
+    "proposedTreatment": "Large split composition: original headline and actions beside room imagery; preserve film as a separate controlled chapter",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "representative"
+  },
+  {
+    "key": "manifesto",
+    "label": "Manifesto",
+    "source": "Current homepage three-line statement",
+    "defaultVisible": true,
+    "proposedTreatment": "Quiet full-width statement between opening and selected works",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "pieces",
+    "label": "Featured pieces",
+    "source": "Current selected product IDs, in their existing order",
+    "defaultVisible": true,
+    "proposedTreatment": "Asymmetric gallery with preserved selected IDs and order",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "representative"
+  },
+  {
+    "key": "large-format",
+    "label": "Large format",
+    "source": "Published architects page",
+    "defaultVisible": true,
+    "proposedTreatment": "Architect brief with larger image and grouped specification text",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "material",
+    "label": "Material story",
+    "source": "Current material chapter",
+    "defaultVisible": true,
+    "proposedTreatment": "Large material close-up paired with exact material paragraphs",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "representative"
+  },
+  {
+    "key": "collections",
+    "label": "Collections",
+    "source": "Current categories and three journeys",
+    "defaultVisible": true,
+    "proposedTreatment": "Three clearly distinguished collection entries and existing categories",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "furniture",
+    "label": "Furniture concepts",
+    "source": "Existing selected pieces; always labelled design visualizations",
+    "defaultVisible": false,
+    "proposedTreatment": "Conditional concept gallery; preserve current hidden/visible selection",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "maker",
+    "label": "Atelier story",
+    "source": "Published story text; no invented person or staff portrait",
+    "defaultVisible": true,
+    "proposedTreatment": "Editorial story spread, exact current story and no invented maker identity",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "rooms",
+    "label": "Room concepts",
+    "source": "Existing selected scene images; always labelled design visualizations",
+    "defaultVisible": false,
+    "proposedTreatment": "Conditional wide room gallery; keep design-visualization disclosure",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "work",
+    "label": "Portfolio",
+    "source": "Reviewed new Portfolio records",
+    "defaultVisible": true,
+    "proposedTreatment": "Portfolio index preview; preserve concept/evidence classification",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "words",
+    "label": "Testimonials",
+    "source": "Reviewed feedback or explicitly labelled fictional samples",
+    "defaultVisible": true,
+    "proposedTreatment": "Quiet quotation treatment; retain fictional-sample disclosure",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "bespoke",
+    "label": "Commission band",
+    "source": "Published commission page and current inquiry destination",
+    "defaultVisible": true,
+    "proposedTreatment": "Prominent commission entry with current destination",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "workshops",
+    "label": "Workshops",
+    "source": "Confirmed current workshop offering",
+    "defaultVisible": true,
+    "proposedTreatment": "Conditional offering only when current confirmation exists",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "print",
+    "label": "Printing",
+    "source": "Confirmed current printing offering",
+    "defaultVisible": true,
+    "proposedTreatment": "Conditional offering only when current confirmation exists",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "process",
+    "label": "How it works",
+    "source": "Current customer steps, wording and chronology",
+    "defaultVisible": true,
+    "proposedTreatment": "Sequential customer steps retaining chronology and meaning",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "why",
+    "label": "The approach",
+    "source": "Published story chapters",
+    "defaultVisible": true,
+    "proposedTreatment": "Grouped story principles in a reading-led layout",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "mapped for Phase 3"
+  },
+  {
+    "key": "journal",
+    "label": "Journal",
+    "source": "Existing selected article IDs; no automatic replacement",
+    "defaultVisible": true,
+    "proposedTreatment": "Large lead article with smaller companion stories, selected IDs intact",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "representative"
+  },
+  {
+    "key": "closing",
+    "label": "Closing invitation",
+    "source": "Current final invitation",
+    "defaultVisible": true,
+    "proposedTreatment": "Spacious final invitation and existing actions",
+    "phase": 3,
+    "preservation": "Retain current published selection, order, visibility, copy and dependencies; do not activate conditional content",
+    "previewCoverage": "representative"
+  }
+]

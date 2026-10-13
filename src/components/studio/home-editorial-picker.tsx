@@ -11,7 +11,7 @@ export function HomeEditorialPicker({value,onChange}:{value?:HomeEditorialSelect
   void studioFetch('/api/studio/homepage-options').then(data=>{if(active){setChoices(data.entries);setError('');}}).catch(e=>{if(active)setError(e.message);});
   return()=>{active=false;};
  },[attempt]);
- return <section className={s.panel}>
+ return <section data-studio-part="panel" className={s.panel}>
   <h2>Homepage editorial selections</h2>
   <p>Choose up to three published entries in each section, in display order. These sections appear in the old-site section sequence. Concepts and fictional samples keep their labels. Save the design to capture these exact records, then preview and publish separately.</p>
   {!choices&&!error&&<p role="status">Loading published editorial choices…</p>}

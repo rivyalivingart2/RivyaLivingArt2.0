@@ -1,0 +1,61 @@
+{
+  "scope": "Local desktop prototype comparison; fresh contexts, no network/CPU throttling; not production LCP, field INP or an identical-content A/B test",
+  "samples": [
+    {
+      "phase": 1,
+      "run": 1,
+      "lcp": 308,
+      "cls": 0.000054793595679012344,
+      "uncompressedResponseBytes": 1515335
+    },
+    {
+      "phase": 2,
+      "run": 1,
+      "lcp": 96,
+      "cls": 0.025103085711443866,
+      "uncompressedResponseBytes": 1420993
+    },
+    {
+      "phase": 1,
+      "run": 2,
+      "lcp": 104,
+      "cls": 0.000590596622419946,
+      "uncompressedResponseBytes": 1515335
+    },
+    {
+      "phase": 2,
+      "run": 2,
+      "lcp": 172,
+      "cls": 0.025103085711443866,
+      "uncompressedResponseBytes": 1420993
+    },
+    {
+      "phase": 1,
+      "run": 3,
+      "lcp": 108,
+      "cls": 0.0005700790895061728,
+      "uncompressedResponseBytes": 1515335
+    },
+    {
+      "phase": 2,
+      "run": 3,
+      "lcp": 100,
+      "cls": 0.025103085711443866,
+      "uncompressedResponseBytes": 1420993
+    }
+  ],
+  "bundles": [
+    {
+      "phase": 1,
+      "path": "experiments/redesign-phase1/preview.js",
+      "raw": 19715,
+      "gzipLevel6": 6874
+    },
+    {
+      "phase": 2,
+      "path": "output/redesign-phase2/client.js",
+      "raw": 385294,
+      "gzipLevel6": 126128
+    }
+  ]
+}

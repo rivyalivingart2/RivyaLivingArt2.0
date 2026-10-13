@@ -20,6 +20,7 @@
     "check": "npm run lint && npm run typecheck && npm test && npm run test:preflight && npm run build && npm run test:runtime"
   },
   "dependencies": {
+    "@gsap/react": "2.1.2",
     "@neondatabase/serverless": "1.0.2",
     "@tiptap/core": "3.31.3",
     "@tiptap/pm": "3.31.3",
@@ -29,6 +30,7 @@
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "fflate": "0.8.3",
+    "gsap": "3.15.0",
     "lucide-react": "1.31.0",
     "next": "16.3.5",
     "pattern.css": "1.0.0",

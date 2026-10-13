@@ -10,6 +10,7 @@ import {LocaleSwitcher} from './locale-switcher';
 import {navigationLabel,uiText,type Locale,type NavigationSettings,type NavItem} from '@/lib/site-settings-model';
 import type {SharedCopy} from '@/lib/shared-copy-model';
 import s from './shop.module.css';
+import f from './public-frame.module.css';
 
 function NavAnchor({item,locale,className,onClick,current}:{item:NavItem;locale:Locale;className?:string;onClick?:()=>void;current?:boolean}){
  const label=navigationLabel(item,locale);
@@ -38,7 +39,7 @@ function HeaderContent({pathname,navigation,locale,enabledLocales,copy}:{pathnam
   desktop.addEventListener('change',closeOnDesktop);
   return()=>{desktop.removeEventListener('change',closeOnDesktop);document.removeEventListener('pointerdown',closeOutside);};
  },[]);
- return <header className={s.header}>
+ return <header className={s.header+' '+f.header}>
   <Link className={s.brand} href="/" aria-label={journeyText(locale,"RivyaLivingArt home")}>
    <Image src="/brand/rivyalivingart-logo-horizontal-transparent.png" width={410} height={116} sizes="(max-width: 780px) 158px, 184px" alt="RivyaLivingArt" loading="eager"/>
   </Link>

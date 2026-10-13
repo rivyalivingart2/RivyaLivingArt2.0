@@ -1,0 +1,975 @@
+{
+  "scope": "Local design prototype only; exact reviewed source copy and explicitly fictional existing training examples; no backend connection",
+  "products": {
+    "DP001": {
+      "name": "River Channel",
+      "subtitle": "Live-Edge Dining Table",
+      "story": "Two natural edges trace the course of a deep blue resin channel. This dining-table design explores the meeting of an organic silhouette and an architectural base — a place around which a room can gather. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+      "dimensions": "240 × 100 × 75 cm",
+      "category": "Tables"
+    },
+    "DP013": {
+      "name": "Shallow Basin",
+      "subtitle": "Coffee Table",
+      "story": "A quiet, low circular form holds a pool of colour. The Shallow Basin design brings the movement of resin close to the floor, inviting a slower look at its depth and the grain around it. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+      "dimensions": "110 × 110 × 35 cm",
+      "category": "Tables"
+    },
+    "DP035": {
+      "name": "Narrow Span",
+      "subtitle": "Console Table",
+      "story": "A fine line of blue runs through a narrow, purposeful surface. Designed for transitional spaces, Narrow Span gives an entrance or a quiet wall its own moment. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation.",
+      "dimensions": "160 × 38 × 80 cm",
+      "category": "Consoles"
+    }
+  },
+  "article": {
+    "id": "DB001",
+    "slug": "a-room-begins-with-a-statement-table",
+    "title": "A Room Begins with a Statement Table",
+    "category": "Spaces",
+    "image": "/media/product-scene-001-16x9.webp",
+    "imageAlt": "River Channel: design visualization accompanying this article",
+    "intro": "Begin with the room around the object: sightlines, everyday movement and the kind of gathering you want a table to hold. A planning notebook for a future commission.",
+    "sections": [
+      {
+        "id": "begin-with-the-room",
+        "heading": "Begin with the room, before the object",
+        "paragraphs": [
+          "A statement table gives a room somewhere to begin looking. That does not mean it must be the largest or brightest thing in view. Its presence might come from an unusually quiet outline, a visible meeting of materials, or the space deliberately left around it. Before choosing a design, stand at the room’s usual entrance and describe what you notice first. Then consider what you would like to notice first.",
+          "Write down the room’s ordinary activities as well as its occasional gatherings. A dining space used for conversation, reading and homework presents a different brief from one opened mainly for guests. These observations are more useful than declaring a style immediately. They give the eventual discussion a purpose that can survive changes of colour, shape or finish."
+        ]
+      },
+      {
+        "id": "draw-the-visible-weight",
+        "heading": "Draw the visible weight",
+        "paragraphs": [
+          "On a simple plan, mark the furniture that is staying. Include cupboards, a large sofa, open shelving and anything else that occupies a strong visual area. A substantial table beside another substantial object may feel concentrated; the same table in an open setting may read as a calm centre. Neither arrangement is inherently wrong. The useful question is whether that concentration matches the atmosphere you are trying to make."
+        ]
+      },
+      {
+        "id": "map-everyday-movement",
+        "heading": "Map everyday movement",
+        "paragraphs": [
+          "Sketch the routes between doorways and the places people actually use. Add the opening direction of doors, drawers and cabinets. A table footprint alone misses the changing outline made by someone pulling out a chair, carrying a tray or moving toward a window. Record the situations you need a designer to consider instead of treating an attractive overhead composition as a complete plan.",
+          "Where appropriate, represent a proposed outline on the floor with a removable marker that will not damage the surface. Observe it during normal use and note awkward moments. This is a conversation aid, not a clearance certification. Ask the project team to confirm the dimensions and any relevant access or accessibility requirements for the particular room and the people who use it."
+        ]
+      },
+      {
+        "id": "make-a-material-conversation",
+        "heading": "Make a material conversation",
+        "paragraphs": [
+          "Bring the table into a conversation with the room’s existing surfaces. Identify the most visible wood tone, the largest fabric area and the metal details you intend to keep. A reference board becomes more useful when each image carries a short explanation: the warmth of this timber, the restraint of that outline, or the relationship between an opaque area and a translucent one."
+        ]
+      },
+      {
+        "id": "leave-space-for-change",
+        "heading": "Leave space for the rest of the room",
+        "paragraphs": [
+          "A focal object does not need every surrounding choice to repeat it. Try describing the room in three layers: the table, the supporting furniture and the quieter background. Repetition can happen through one small relationship, such as a warm tone or a curve, while other elements remain distinct. This keeps the brief specific without turning the whole room into a matching set.",
+          "Consider what is likely to change later. A rug, pendant or chair may be easier to replace than the commissioned object, but your own priorities should lead that decision. Make a list of fixed elements and flexible elements. It helps the conversation stay anchored when a reference image contains an appealing room whose architecture, light or proportions are very different from yours."
+        ]
+      },
+      {
+        "id": "prepare-the-first-conversation",
+        "heading": "Prepare the first conversation",
+        "paragraphs": [
+          "A useful initial brief is a small set of clear observations. Include a measured room sketch with its units, photographs you are entitled to share, and a description of how the space is used. Label proposed dimensions as proposals. If an event or move influences the timing, state that context and ask what can realistically be assessed before committing to a date."
+        ]
+      }
+    ],
+    "relatedProductIds": [
+      "DP001",
+      "DP002",
+      "DP013"
+    ],
+    "author": "RivyaLivingArt",
+    "publicationState": "draft"
+  },
+  "orders": [
+    {
+      "number": 1,
+      "stage": "NEW",
+      "label": "New",
+      "client": "TEST FLOW 01 - Fictional training customer",
+      "title": "TEST FLOW 01 | Dining table | 180 x 90 cm; blue channel; six-seat room. Next: acknowledge the brief and ask for dimensions. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 2,
+      "stage": "NEW",
+      "label": "New",
+      "client": "TEST FLOW 02 - Fictional training customer",
+      "title": "TEST FLOW 02 | Flower keepsake | Wedding-flower block; clear finish; display shelf. Next: acknowledge the brief and ask for dimensions. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 3,
+      "stage": "NEW",
+      "label": "New",
+      "client": "TEST FLOW 03 - Fictional training customer",
+      "title": "TEST FLOW 03 | Personal gift | Initial keyring set; teal and gold; sample packaging. Next: acknowledge the brief and ask for dimensions. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 4,
+      "stage": "CONTACTED",
+      "label": "Contacted",
+      "client": "TEST FLOW 04 - Fictional training customer",
+      "title": "TEST FLOW 04 | Dining table | 180 x 90 cm; blue channel; six-seat room. Next: collect dimensions, colour and intended use. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 5,
+      "stage": "CONTACTED",
+      "label": "Contacted",
+      "client": "TEST FLOW 05 - Fictional training customer",
+      "title": "TEST FLOW 05 | Flower keepsake | Wedding-flower block; clear finish; display shelf. Next: collect dimensions, colour and intended use. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 6,
+      "stage": "CONTACTED",
+      "label": "Contacted",
+      "client": "TEST FLOW 06 - Fictional training customer",
+      "title": "TEST FLOW 06 | Personal gift | Initial keyring set; teal and gold; sample packaging. Next: collect dimensions, colour and intended use. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 7,
+      "stage": "QUALIFIED",
+      "label": "Qualified",
+      "client": "TEST FLOW 07 - Fictional training customer",
+      "title": "TEST FLOW 07 | Dining table | 180 x 90 cm; blue channel; six-seat room. Next: prepare the scope, estimate and delivery assumptions. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 8,
+      "stage": "QUALIFIED",
+      "label": "Qualified",
+      "client": "TEST FLOW 08 - Fictional training customer",
+      "title": "TEST FLOW 08 | Flower keepsake | Wedding-flower block; clear finish; display shelf. Next: prepare the scope, estimate and delivery assumptions. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 9,
+      "stage": "QUALIFIED",
+      "label": "Qualified",
+      "client": "TEST FLOW 09 - Fictional training customer",
+      "title": "TEST FLOW 09 | Personal gift | Initial keyring set; teal and gold; sample packaging. Next: prepare the scope, estimate and delivery assumptions. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 10,
+      "stage": "QUOTED",
+      "label": "Quoted",
+      "client": "TEST FLOW 10 - Fictional training customer",
+      "title": "TEST FLOW 10 | Dining table | 180 x 90 cm; blue channel; six-seat room. Next: discuss the sample quote; record changes before agreement. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 11,
+      "stage": "QUOTED",
+      "label": "Quoted",
+      "client": "TEST FLOW 11 - Fictional training customer",
+      "title": "TEST FLOW 11 | Flower keepsake | Wedding-flower block; clear finish; display shelf. Next: discuss the sample quote; record changes before agreement. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 12,
+      "stage": "QUOTED",
+      "label": "Quoted",
+      "client": "TEST FLOW 12 - Fictional training customer",
+      "title": "TEST FLOW 12 | Personal gift | Initial keyring set; teal and gold; sample packaging. Next: discuss the sample quote; record changes before agreement. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 13,
+      "stage": "CONFIRMED",
+      "label": "Confirmed",
+      "client": "TEST FLOW 13 - Fictional training customer",
+      "title": "TEST FLOW 13 | Dining table | 180 x 90 cm; blue channel; six-seat room. Next: approve drawings and schedule production. No real payment. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 14,
+      "stage": "CONFIRMED",
+      "label": "Confirmed",
+      "client": "TEST FLOW 14 - Fictional training customer",
+      "title": "TEST FLOW 14 | Flower keepsake | Wedding-flower block; clear finish; display shelf. Next: approve drawings and schedule production. No real payment. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 15,
+      "stage": "CONFIRMED",
+      "label": "Confirmed",
+      "client": "TEST FLOW 15 - Fictional training customer",
+      "title": "TEST FLOW 15 | Personal gift | Initial keyring set; teal and gold; sample packaging. Next: approve drawings and schedule production. No real payment. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 16,
+      "stage": "IN_PRODUCTION",
+      "label": "In production",
+      "client": "TEST FLOW 16 - Fictional training customer",
+      "title": "TEST FLOW 16 | Dining table | 180 x 90 cm; blue channel; six-seat room. Next: review finish and arrange quality checks before dispatch. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 17,
+      "stage": "IN_PRODUCTION",
+      "label": "In production",
+      "client": "TEST FLOW 17 - Fictional training customer",
+      "title": "TEST FLOW 17 | Flower keepsake | Wedding-flower block; clear finish; display shelf. Next: review finish and arrange quality checks before dispatch. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 18,
+      "stage": "IN_PRODUCTION",
+      "label": "In production",
+      "client": "TEST FLOW 18 - Fictional training customer",
+      "title": "TEST FLOW 18 | Personal gift | Initial keyring set; teal and gold; sample packaging. Next: review finish and arrange quality checks before dispatch. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 19,
+      "stage": "COMPLETED",
+      "label": "Completed",
+      "client": "TEST FLOW 19 - Fictional training customer",
+      "title": "TEST FLOW 19 | Dining table | 180 x 90 cm; blue channel; six-seat room. Next: review the sample handover and care steps. No real delivery. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 20,
+      "stage": "COMPLETED",
+      "label": "Completed",
+      "client": "TEST FLOW 20 - Fictional training customer",
+      "title": "TEST FLOW 20 | Flower keepsake | Wedding-flower block; clear finish; display shelf. Next: review the sample handover and care steps. No real delivery. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 21,
+      "stage": "COMPLETED",
+      "label": "Completed",
+      "client": "TEST FLOW 21 - Fictional training customer",
+      "title": "TEST FLOW 21 | Personal gift | Initial keyring set; teal and gold; sample packaging. Next: review the sample handover and care steps. No real delivery. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 22,
+      "stage": "CLOSED",
+      "label": "Closed",
+      "client": "TEST FLOW 22 - Fictional training customer",
+      "title": "TEST FLOW 22 | Dining table | 180 x 90 cm; blue channel; six-seat room. Closed for training: brief withdrawn. Reopen only to practise. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 23,
+      "stage": "CLOSED",
+      "label": "Closed",
+      "client": "TEST FLOW 23 - Fictional training customer",
+      "title": "TEST FLOW 23 | Flower keepsake | Wedding-flower block; clear finish; display shelf. Closed for training: brief withdrawn. Reopen only to practise. Fictional demo only; do not contact or fulfil."
+    },
+    {
+      "number": 24,
+      "stage": "CLOSED",
+      "label": "Closed",
+      "client": "TEST FLOW 24 - Fictional training customer",
+      "title": "TEST FLOW 24 | Personal gift | Initial keyring set; teal and gold; sample packaging. Closed for training: brief withdrawn. Reopen only to practise. Fictional demo only; do not contact or fulfil."
+    }
+  ],
+  "studio": [
+    {
+      "key": "overview",
+      "segment": "",
+      "label": "Overview",
+      "group": "Today",
+      "phase": 6,
+      "route": "/studio",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "inquiries",
+      "segment": "inquiries",
+      "label": "Inquiries & orders",
+      "group": "Today",
+      "phase": 6,
+      "route": "/studio/inquiries",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus",
+        "record selection",
+        "editor/detail",
+        "validation",
+        "unsaved changes",
+        "conflict/revision",
+        "preview/print where supported"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "follow-ups",
+      "segment": "follow-ups",
+      "label": "Follow-ups due",
+      "group": "Today",
+      "phase": 6,
+      "route": "/studio/follow-ups",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "products",
+      "segment": "products",
+      "label": "Products",
+      "group": "Catalogue",
+      "phase": 5,
+      "route": "/studio/products",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus",
+        "record selection",
+        "editor/detail",
+        "validation",
+        "unsaved changes",
+        "conflict/revision",
+        "preview/print where supported"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "content-register",
+      "segment": "content-register",
+      "label": "Production register",
+      "group": "Editorial",
+      "phase": 5,
+      "route": "/studio/content-register",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "editorial-order",
+      "segment": "editorial-order",
+      "label": "Editorial ordering",
+      "group": "Editorial",
+      "phase": 5,
+      "route": "/studio/editorial-order",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "content",
+      "segment": "content",
+      "label": "All content",
+      "group": "Editorial",
+      "phase": 5,
+      "route": "/studio/content",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "media",
+      "segment": "media",
+      "label": "Public media",
+      "group": "Catalogue",
+      "phase": 5,
+      "route": "/studio/media",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "site-copy",
+      "segment": "site-copy",
+      "label": "Site copy",
+      "group": "Content",
+      "phase": 5,
+      "route": "/studio/site-copy",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "sections",
+      "segment": "sections",
+      "label": "Page design",
+      "group": "Content",
+      "phase": 5,
+      "route": "/studio/sections",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "site-images",
+      "segment": "site-images",
+      "label": "Site images",
+      "group": "Content",
+      "phase": 5,
+      "route": "/studio/site-images",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "content-health",
+      "segment": "content-health",
+      "label": "Content health",
+      "group": "Settings",
+      "phase": 5,
+      "route": "/studio/content-health",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "site-settings",
+      "segment": "navigation",
+      "label": "Navigation & languages",
+      "group": "Content",
+      "phase": 6,
+      "route": "/studio/navigation",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": true,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "legacy",
+      "segment": "legacy",
+      "label": "Legacy decisions",
+      "group": "Settings",
+      "phase": 6,
+      "route": "/studio/legacy",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": true,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "translations",
+      "segment": "translations",
+      "label": "Language review",
+      "group": "Content",
+      "phase": 5,
+      "route": "/studio/translations",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "route-review",
+      "segment": "route-review",
+      "label": "Old links & publication",
+      "group": "Settings",
+      "phase": 6,
+      "route": "/studio/route-review",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": true,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "activity",
+      "segment": "activity",
+      "label": "Activity & logs",
+      "group": "Today",
+      "phase": 6,
+      "route": "/studio/activity",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "staff",
+      "segment": "staff",
+      "label": "Staff access",
+      "group": "Settings",
+      "phase": 6,
+      "route": "/studio/staff",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": true,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "settings",
+      "segment": "settings",
+      "label": "Atelier settings",
+      "group": "Settings",
+      "phase": 6,
+      "route": "/studio/settings",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": true,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "analytics",
+      "segment": "analytics",
+      "label": "Analytics",
+      "group": "Today",
+      "phase": 6,
+      "route": "/studio/analytics",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "categories",
+      "segment": "categories",
+      "label": "Categories",
+      "group": "Catalogue",
+      "phase": 5,
+      "route": "/studio/categories",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "import",
+      "segment": "import",
+      "label": "Bulk import",
+      "group": "Catalogue",
+      "phase": 6,
+      "route": "/studio/import",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": true,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "exports",
+      "segment": "exports",
+      "label": "Exports",
+      "group": "Catalogue",
+      "phase": 6,
+      "route": "/studio/exports",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": true,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "research",
+      "segment": "research",
+      "label": "Research",
+      "group": "Catalogue",
+      "phase": 5,
+      "route": "/studio/research",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "content-gaps",
+      "segment": "content-gaps",
+      "label": "Content gaps",
+      "group": "Catalogue",
+      "phase": 5,
+      "route": "/studio/content-gaps",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "process",
+      "segment": "process",
+      "label": "Process steps",
+      "group": "Content",
+      "phase": 5,
+      "route": "/studio/process",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "materials",
+      "segment": "materials",
+      "label": "Materials",
+      "group": "Content",
+      "phase": 5,
+      "route": "/studio/materials",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "forms",
+      "segment": "forms",
+      "label": "Commission forms",
+      "group": "Content",
+      "phase": 5,
+      "route": "/studio/forms",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "journal",
+      "segment": "journal",
+      "label": "Journal",
+      "group": "Editorial",
+      "phase": 5,
+      "route": "/studio/journal",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus",
+        "record selection",
+        "editor/detail",
+        "validation",
+        "unsaved changes",
+        "conflict/revision",
+        "preview/print where supported"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "portfolio",
+      "segment": "portfolio",
+      "label": "Portfolio",
+      "group": "Editorial",
+      "phase": 5,
+      "route": "/studio/portfolio",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus",
+        "record selection",
+        "editor/detail",
+        "validation",
+        "unsaved changes",
+        "conflict/revision",
+        "preview/print where supported"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "testimonials",
+      "segment": "testimonials",
+      "label": "Testimonials",
+      "group": "Editorial",
+      "phase": 5,
+      "route": "/studio/testimonials",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus",
+        "record selection",
+        "editor/detail",
+        "validation",
+        "unsaved changes",
+        "conflict/revision",
+        "preview/print where supported"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "faqs",
+      "segment": "faqs",
+      "label": "FAQs",
+      "group": "Editorial",
+      "phase": 5,
+      "route": "/studio/faqs",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus",
+        "record selection",
+        "editor/detail",
+        "validation",
+        "unsaved changes",
+        "conflict/revision",
+        "preview/print where supported"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "pages",
+      "segment": "pages",
+      "label": "Pages",
+      "group": "Editorial",
+      "phase": 5,
+      "route": "/studio/pages",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus",
+        "record selection",
+        "editor/detail",
+        "validation",
+        "unsaved changes",
+        "conflict/revision",
+        "preview/print where supported"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "landing-pages",
+      "segment": "landing-pages",
+      "label": "Landing pages",
+      "group": "Editorial",
+      "phase": 5,
+      "route": "/studio/landing-pages",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus",
+        "record selection",
+        "editor/detail",
+        "validation",
+        "unsaved changes",
+        "conflict/revision",
+        "preview/print where supported"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "seo",
+      "segment": "seo",
+      "label": "SEO",
+      "group": "Settings",
+      "phase": 5,
+      "route": "/studio/seo",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "subscribers",
+      "segment": "subscribers",
+      "label": "Subscribers",
+      "group": "Settings",
+      "phase": 6,
+      "route": "/studio/subscribers",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": true,
+      "status": "mapped; implementation pending phase approval"
+    },
+    {
+      "key": "content-lab",
+      "segment": "content-lab",
+      "label": "Content lab",
+      "group": "Settings",
+      "phase": 5,
+      "route": "/studio/content-lab",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "narrow viewport",
+        "keyboard/focus"
+      ],
+      "adminOnly": false,
+      "status": "mapped; implementation pending phase approval"
+    }
+  ]
+}

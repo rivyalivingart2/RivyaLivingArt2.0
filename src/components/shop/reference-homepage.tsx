@@ -7,7 +7,7 @@ import {referenceSectionStates,type HomeComposition,type HomeReferenceKey,type H
 import {localizeHomeReference} from '@/lib/home-reference-dependencies';
 import type {Locale} from '@/lib/site-settings-model';
 import {journeyText} from '@/lib/journey-text';
-import {SectionNavigation} from './section-navigation';
+import {HomepageContents} from './homepage-contents';
 import {SectionBody} from './section-body';
 import {EditorialImage} from './editorial-image';
 import Image from './public-image';
@@ -71,5 +71,5 @@ export function ReferenceHomepage({document:d,reference:raw,composition,locale,h
   closing:renderExisting('invitation'),
  };
  const visible=states.filter(s=>s.visible);
- return <div className={r.reference} data-home-composition="reference"><SectionNavigation label={journeyText(locale,'On this page')} items={visible.map(s=>({id:'home-'+s.key,label:s.heading}))}/>{visible.map(slot=><div id={'home-'+slot.key} data-home-slot={slot.key} key={slot.key} className={r.slot}>{nodes[slot.key]}</div>)}</div>;
+ return <div className={r.reference} data-home-composition="reference">{visible.map(slot=><div id={'home-'+slot.key} data-home-slot={slot.key} key={slot.key} className={r.slot}>{nodes[slot.key]}{slot.key==='pour'&&<HomepageContents label={journeyText(locale,'On this page')} items={visible.map(s=>({id:'home-'+s.key,label:s.heading}))}/>}</div>)}</div>;
 }

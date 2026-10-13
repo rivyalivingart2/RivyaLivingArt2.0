@@ -1,0 +1,13 @@
+{
+  "logo": "public/brand/rivyalivingart-logo-horizontal-transparent.png",
+  "room": "public/media/product-scene-001-16x9.webp",
+  "product": "public/media/product-hero-001-4x5.webp",
+  "basin": "public/media/product-hero-003-4x5.webp",
+  "console": "public/media/product-hero-005-4x5.webp",
+  "detail": "public/media/generated/dp001-matching-detail-4x5.webp",
+  "film-poster": "public/media/migration/hero-pour-loop-poster.jpg",
+  "film": "public/media/migration/hero-pour-loop.mp4",
+  "display-font": "src/styles/fonts/instrument-serif-normal-400.woff2",
+  "body-font": "src/styles/fonts/inter-common-400.woff2",
+  "medium-font": "src/styles/fonts/inter-common-500.woff2"
+}

@@ -1,0 +1,38 @@
+import {renderToStaticMarkup} from 'react-dom/server';
+import {writeFileSync} from 'node:fs';
+import {ImageConfigContext} from 'next/dist/shared/lib/image-config-context.shared-runtime.js';
+import {imageConfigDefault} from 'next/dist/shared/lib/image-config.js';
+import nextConfig from '../../next.config';
+import {ShopFrame} from '../../src/components/shop/shop-frame';
+import {EditorialArchive} from '../../src/components/shop/editorial-archive';
+import {EditorialDocument} from '../../src/components/shop/editorial';
+import {LandingDocumentView} from '../../src/components/shop/landing-document';
+import {SavedReceipt} from '../../src/components/shop/saved-receipt';
+import {Feedback} from '../../src/components/shop/feedback';
+import {Intro} from '../../src/components/shop/shop-site';
+import {baselineContent,type ContentDocument} from '../../src/lib/content-model';
+import {baselineProducts} from '../../src/lib/shop-model';
+import {approvedPublicMedia} from '../../src/lib/public-media';
+import {compilePageSnapshot} from '../../src/lib/page-dependencies';
+import {publicEntry} from '../../src/lib/landing-dependencies';
+import {homeCandidate} from '../../src/lib/homepage-model';
+import {landingTypes} from '../../src/lib/landing-model';
+import {ReadingLoading} from '../../src/components/shop/reading-loading';
+const row=(key:string,document:unknown)=>({key,document,version:1,fingerprint:'phase4-layout-fixture'});
+const image=homeCandidate.homepage!.sections.find(s=>s.image)!.image!;
+const source={products:baselineProducts.map(p=>row(p.id,p)),content:baselineContent.map(d=>row(d.id,d)),media:approvedPublicMedia.map(m=>row(m.path,m))};
+const doc=(kind:'portfolio'|'testimonial'|'faq',n=1):ContentDocument=>({id:'phase4-fixture-'+kind+n,kind:'page',route:'/'+(kind==='testimonial'?'testimonials':kind)+'/layout-fixture-'+n,title:kind==='portfolio'?'A material study for an imagined room':kind==='testimonial'?'A perspective on a personal piece':'How is a visual reference used?',eyebrow:'Local layout fixture',description:'Synthetic layout demonstration only. This is not a new published record.',sections:[{id:'intention',heading:'The starting point',paragraphs:['This copy tests the page layout. It does not describe a completed customer project, real feedback or confirmed specifications.']},{id:'details',heading:'The details in context',paragraphs:['The existing design visualization is reused only to check the layout and crop behavior. No media association is saved.']}],editorial:{schemaVersion:1,kind,classification:kind==='portfolio'?'concept':kind==='testimonial'?'fictional':'guidance',...(kind==='testimonial'?{attribution:'Illustrative voice — not a customer'}:kind==='portfolio'?{gallery:[image,{...image,alt:'Second layout detail'}],details:[{label:'Status',value:'Illustrative layout only'}]}:{})},...(kind==='portfolio'?{headerImage:image}:{})});
+const capture=async(name:string,body:React.ReactNode,framed=true)=>{const markup=renderToStaticMarkup(<ImageConfigContext.Provider value={{...imageConfigDefault,...nextConfig.images}}>{framed?<ShopFrame publicDesign>{body}</ShopFrame>:body}</ImageConfigContext.Provider>);writeFileSync('output/redesign-phase4/'+name+'.markup.html',markup);};
+for(const kind of ['portfolio','testimonial','faq'] as const){
+ const d=doc(kind);d.pageSnapshot=compilePageSnapshot(d,source);
+ await capture(kind+'-detail',await EditorialDocument({content:d,documents:[]}));
+ if(kind!=='faq')await capture(kind+'-archive',<><Intro eyebrow="Local layout fixture" title={kind==='portfolio'?'Ideas, in context.':'Words & perspectives.'}>Illustrative records only; no customer evidence or publication is implied.</Intro><EditorialArchive entries={Array.from({length:14},(_,i)=>publicEntry({...doc(kind,i+1),headerImage:undefined,...(kind==='portfolio'?{image:image.path,imageAlt:image.alt}:{})}))} label={kind==='portfolio'?'Portfolio':'Testimonials'}/></>);
+}
+const landing:ContentDocument={...doc('portfolio'),id:'phase4-landing',route:'/p/phase4-layout',title:'A world of material.',editorial:undefined,landing:{schemaVersion:1,blocks:landingTypes.map((type,i)=>({id:'block-'+type,type,enabled:true,heading:type==='hero'?'A considered place for your idea.':type.replace(/([A-Z])/g,' $1'),paragraphs:['Local layout fixture: this section demonstrates the existing block type without changing Studio content.'],...(['hero','imageCta'].includes(type)?{image}:{}),...(['videoHero','videoStory'].includes(type)?{film:'resin-pour' as const}:{}),...(type==='productGrid'?{ids:baselineProducts.slice(0,3).map(p=>p.id)}:{}),...(type.includes('Gallery')?{gallery:[image,{...image,alt:'Second layout example'}]}:{}),...(['collectionGrid','portfolioGrid','journalGrid','testimonial','testimonialGrid','faqPicker'].includes(type)?{ids:[type==='faqPicker'?'phase4-fixture-faq1':type.startsWith('testimonial')?'phase4-fixture-testimonial1':'phase4-fixture-portfolio1']}:{})}))}};
+landing.pageSnapshot=compilePageSnapshot(landing,{...source,content:[...source.content,...(['portfolio','testimonial','faq'] as const).map(k=>row('phase4-fixture-'+k+'1',doc(k)))]},{includeCatalogue:true});
+await capture('landing',await LandingDocumentView({document:landing}));
+const receipt={reference:'LOCAL-LAYOUT-ONLY',state:'handoff_ready' as const,summary:'LOCAL LAYOUT FIXTURE\nA demonstration brief, not a customer order.\nNo contact details or customer records are used.',retryAvailable:false,handoffAllowed:true,reason:'Layout fixture only; no message will be sent.',brief:null};
+await capture('receipt',<SavedReceipt receipt={receipt} requestKey="local-layout-only" saveReceiptLocation={false}/>);
+await capture('receipt-recovery',<SavedReceipt receipt={{...receipt,state:'handoff_failed',summary:null,retryAvailable:true,handoffAllowed:false,reason:'Layout fixture: message preparation needs a retry.'}} requestKey="local-layout-only" saveReceiptLocation={false}/>);
+await capture('loading',<ReadingLoading/>,false);
+await capture('error',<Feedback title="This page could not load." retry={()=>{}}>This page could not be loaded. Please try again. If you just submitted a brief, retry the same inquiry rather than starting another.</Feedback>);

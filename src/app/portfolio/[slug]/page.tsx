@@ -16,8 +16,8 @@ export default async function Page({params}:{params:Promise<{slug:string}>}){
  const {slug}=await params;
  const route='/portfolio/'+slug;
  const document=await publishedPage(route);
- if(document?.editorial?.kind==='portfolio')return <ShopShell><EditorialPage route={route} locale={await publicLocale()}/></ShopShell>;
+ if(document?.editorial?.kind==='portfolio')return <ShopShell publicDesign><EditorialPage route={route} locale={await publicLocale()}/></ShopShell>;
  const project=approvedProjects.find(project=>project.slug===slug&&!!project.approvalRecord);
  if(!project)notFound();
- return <ShopShell><ProjectStory project={project}/></ShopShell>;
+ return <ShopShell publicDesign><ProjectStory project={project}/></ShopShell>;
 }

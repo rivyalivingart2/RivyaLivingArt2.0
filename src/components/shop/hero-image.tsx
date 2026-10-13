@@ -5,10 +5,10 @@ import {useJourneyText} from './journey-language';
 import s from './shop.module.css';
 
 /** One browser-selected resource: the same published piece, composed for each viewport. */
-export function HeroImage({portrait,landscape,name,portraitPosition,landscapePosition}:{portrait:string;landscape:string;name:string;portraitPosition?:string;landscapePosition?:string}){
+export function HeroImage({portrait,landscape,name,portraitPosition,landscapePosition,sizes='100vw'}:{portrait:string;landscape:string;name:string;portraitPosition?:string;landscapePosition?:string;sizes?:string}){
  const [failed,setFailed]=useState(false);
  const t=useJourneyText();
- const common={alt:name+' — '+t('Design visualization'),fill:true,quality:60,sizes:'100vw',loading:'eager' as const,fetchPriority:'high' as const};
+ const common={alt:name+' — '+t('Design visualization'),fill:true,quality:60,sizes,loading:'eager' as const,fetchPriority:'high' as const};
  const {props:mobile}=getImageProps({...common,src:portrait});
  const {props:desktop}=getImageProps({...common,src:landscape});
  if(failed)return <span className={s.heroImageFallback}>{t('Image unavailable')} — {name}. {t('Explore the collection ↗')}</span>;

@@ -1,0 +1,135 @@
+{
+  "at": "2026-10-13T14:22:02.445Z",
+  "scope": "Per-ID row hashes across 13 protected isolated QA scopes; no production snapshot",
+  "phase7Rows": 1657,
+  "phase7Added": 0,
+  "phase7Changed": 0,
+  "phase7Deleted": 0,
+  "preRedesignOriginalRows": 1641,
+  "originalsUnchanged": true,
+  "earlierSyntheticAdditions": 16,
+  "earlierSyntheticReceipts": [
+    "phase5-preservation.json",
+    "phase6-preservation.json"
+  ],
+  "scopes": {
+    "rivya_catalogue": {
+      "preRedesignOriginals": 120,
+      "current": 120,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 0
+    },
+    "rivya_content": {
+      "preRedesignOriginals": 602,
+      "current": 603,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 1
+    },
+    "rivya_public_media": {
+      "preRedesignOriginals": 152,
+      "current": 152,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 0
+    },
+    "rivya_business_settings": {
+      "preRedesignOriginals": 1,
+      "current": 1,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 0
+    },
+    "rivya_revisions": {
+      "preRedesignOriginals": 734,
+      "current": 738,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 4
+    },
+    "rivya_inquiries": {
+      "preRedesignOriginals": 2,
+      "current": 2,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 0
+    },
+    "rivya_studio_orders": {
+      "preRedesignOriginals": 7,
+      "current": 8,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 1
+    },
+    "rivya_studio_order_events": {
+      "preRedesignOriginals": 8,
+      "current": 16,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 8
+    },
+    "rivya_inquiry_notes": {
+      "preRedesignOriginals": 0,
+      "current": 0,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 0
+    },
+    "rivya_references": {
+      "preRedesignOriginals": 0,
+      "current": 0,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 0
+    },
+    "rivya_staff": {
+      "preRedesignOriginals": 8,
+      "current": 9,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 1
+    },
+    "rivya_privacy_controls": {
+      "preRedesignOriginals": 7,
+      "current": 8,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 1
+    },
+    "rivya_erasure_ledger": {
+      "preRedesignOriginals": 0,
+      "current": 0,
+      "originalsUnchanged": true,
+      "phase7Added": 0,
+      "phase7Changed": 0,
+      "phase7Deleted": 0,
+      "earlierSyntheticAdditions": 0
+    }
+  },
+  "limits": "Authentication, session, rate-limit and audit bookkeeping are outside these scopes. No original private values are exported."
+}

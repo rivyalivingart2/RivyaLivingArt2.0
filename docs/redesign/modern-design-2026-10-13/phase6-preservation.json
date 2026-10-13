@@ -1,0 +1,99 @@
+{
+  "at": "2026-10-13T13:47:47.279Z",
+  "scope": "Isolated local QA database; 13 inventoried scopes",
+  "originalRows": 1646,
+  "originalsUnchanged": true,
+  "addedRows": 11,
+  "scopes": {
+    "rivya_catalogue": {
+      "original": 120,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 120
+    },
+    "rivya_content": {
+      "original": 603,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 603
+    },
+    "rivya_public_media": {
+      "original": 152,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 152
+    },
+    "rivya_business_settings": {
+      "original": 1,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 1
+    },
+    "rivya_revisions": {
+      "original": 738,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 738
+    },
+    "rivya_inquiries": {
+      "original": 2,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 2
+    },
+    "rivya_studio_orders": {
+      "original": 7,
+      "originalsUnchanged": true,
+      "added": 1,
+      "after": 8
+    },
+    "rivya_studio_order_events": {
+      "original": 8,
+      "originalsUnchanged": true,
+      "added": 8,
+      "after": 16
+    },
+    "rivya_inquiry_notes": {
+      "original": 0,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 0
+    },
+    "rivya_references": {
+      "original": 0,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 0
+    },
+    "rivya_staff": {
+      "original": 8,
+      "originalsUnchanged": true,
+      "added": 1,
+      "after": 9
+    },
+    "rivya_privacy_controls": {
+      "original": 7,
+      "originalsUnchanged": true,
+      "added": 1,
+      "after": 8
+    },
+    "rivya_erasure_ledger": {
+      "original": 0,
+      "originalsUnchanged": true,
+      "added": 0,
+      "after": 0
+    }
+  },
+  "fixture": {
+    "id": "440c980e-4e58-4d79-9497-39a3f6e6b5de",
+    "version": 8,
+    "status": "CLOSED"
+  },
+  "temporaryEditor": {
+    "id": "c23f8a6d-5992-4df5-bbdb-9231d59dad3e",
+    "active": false,
+    "version": 2
+  },
+  "additionPurpose": "One clearly fictional local QA order, eight stage events, its privacy row and one temporary editor retained disabled. No original record changed.",
+  "limits": "No production snapshot. Session, audit and rate-limit bookkeeping outside this inventory. Private original IDs and hashes remain ignored."
+}

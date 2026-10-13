@@ -1,12 +1,15 @@
 'use client';
 import {useActionState, useState} from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import design from './studio/studio-access.module.css';
 import {loginAdmin} from '@/app/studio/login/actions';
 
 export function StudioLogin({configured, unavailable}: {configured: boolean; unavailable: boolean}) {
   const [state, action, pending] = useActionState(loginAdmin, {error: ''});
   const [visible, setVisible] = useState(false);
-  return <main id="main-content" tabIndex={-1} className="studio-login"><form action={action} className="studio-login-card" aria-busy={pending}>
+  return <main id="main-content" tabIndex={-1} className={'studio-login '+design.login}><form action={action} className="studio-login-card" aria-busy={pending}>
+    <Image className={design.logo} src="/brand/rivyalivingart-logo-horizontal-transparent.png" width={410} height={116} sizes="180px" alt="RivyaLivingArt"/>
     <p className="eyebrow">RivyaLivingArt · Private Studio</p><h1>Studio sign in</h1>
     <p>Use your Studio staff account. Contact your administrator if you cannot sign in.</p>
     {!configured ? <p role="status">Studio setup is pending. The owner must finish configuration before sign-in is available.</p> : <>

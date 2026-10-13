@@ -1,5 +1,6 @@
 'use client';
 import {CustomizationFields} from '@/components/shop/customization-fields';
+import Image from 'next/image';
 import {useRecordSwitch,RecordSwitchNotice} from './record-switch';
 import {RecordStatus} from './record-status';
 import {DraftRecovery} from './draft-recovery';
@@ -81,7 +82,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
 
  return (
   <>
-   <div className={s.heading}>
+   <div data-studio-part="heading" className={s.heading}>
     <div>
      <h1>{formsOnly?'Commission forms.':'Pieces & possibilities.'}</h1>
      <p>Review existing product details, forms and publication state.</p>
@@ -96,7 +97,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
     </button>
    </div>
 
-   <p className={s.protectedNote}>Protected product records: review without changing existing facts, gallery associations or forms. No old products are imported. Editing controls remain available for a deliberate, separately authorized catalogue change.</p><p className={s.status} role="status">{message}</p><LinkedRecordNotice {...linked}/><RecordSwitchNotice control={switching}/>
+   <p data-studio-part="protectedNote" className={s.protectedNote}>Protected product records: review without changing existing facts, gallery associations or forms. No old products are imported. Editing controls remain available for a deliberate, separately authorized catalogue change.</p><p data-studio-part="status" className={s.status} role="status">{message}</p><LinkedRecordNotice {...linked}/><RecordSwitchNotice control={switching}/>
 
    <label>Category<select value={categoryFilter} onChange={e=>setCategoryFilter(e.target.value)}><option value="">All categories</option>{[...new Set(entries.map(e=>e.product.category))].sort().map(category=><option key={category}>{category}</option>)}</select></label>
    {/* Collection Filter Tabs */}
@@ -139,7 +140,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
     </button>
    </div>
 
-   <div className={s.toolbar}><label>Publication state<select value={publicationFilter} onChange={e=>setPublicationFilter(e.target.value)}>{['all','Published','Hidden','Unpublished'].map(v=><option key={v} value={v}>{v==='all'?'All publication states':v}</option>)}</select></label>
+   <div data-studio-part="toolbar" className={s.toolbar}><label>Publication state<select value={publicationFilter} onChange={e=>setPublicationFilter(e.target.value)}>{['all','Published','Hidden','Unpublished'].map(v=><option key={v} value={v}>{v==='all'?'All publication states':v}</option>)}</select></label>
     <button
       type="button"
       disabled={busy||!media.length}
@@ -175,11 +176,11 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
     </div>
    </div>
 
-   <div className={s.layout}>
-    <div className={s.list}>
+   <div data-studio-part="layout" className={s.layout}>
+    <div data-studio-part="list" className={s.list}>
       {paginatedItems.map(e => (
         <button
-          key={e.product.id}
+          key={e.product.id} data-studio-part="product-row"
           aria-pressed={entry?.product.id===e.product.id}
           disabled={busy}
           onClick={()=>{if(e.product.id===entry?.product.id)return;switching.request(()=>{
@@ -189,6 +190,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
             setActiveTab(formsOnly?'customization':'general');
           });}}
         >
+          {e.product.image&&<Image data-studio-part="thumbnail" src={e.product.image} width={64} height={64} sizes="64px" alt=""/>}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
             <strong>{e.product.name}</strong>
             {e.visible&&e.published ? (
@@ -206,24 +208,24 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
         </button>
       ))}
       {filteredEntries.length === 0 && (
-        <p className={s.help} style={{ padding: '16px' }}>No pieces match the selected filter or search.</p>
+        <p data-studio-part="help" className={s.help} style={{ padding: '16px' }}>No pieces match the selected filter or search.</p>
       )}
       <Pagination page={page} totalPages={totalPages} setPage={setPage} />
     </div>
 
     {entry ? (
-      <form data-unsaved={dirty} className={s.editor} onSubmit={e=>{e.preventDefault();void save('draft');}}>
+      <form data-unsaved={dirty} data-studio-part="editor" className={s.editor} onSubmit={e=>{e.preventDefault();void save('draft');}}>
         <fieldset disabled={busy}>
-          <h2>{entry.product.name}</h2><RecordStatus id={entry.product.id} version={entry.version} publication={publicationState(entry.published,entry.visible)} draft={draftState(entry.product,entry.published,entry.version)} dirty={dirty} busy={busy}/><p className={s.help}>{publicationState(entry.published,entry.visible)} · {draftState(entry.product,entry.published,entry.version)}</p>
-          <p className={s.help}>Shared version {entry.version} · Published form {entry.publishedVersion}. Choose from the approved asset collection. Saved product addresses stay stable.</p>
-          <div className={s.actions}>{!editing&&<button type="button" onClick={()=>setEditing(true)}>Open existing product editing controls</button>}
+          <h2>{entry.product.name}</h2><RecordStatus id={entry.product.id} version={entry.version} publication={publicationState(entry.published,entry.visible)} draft={draftState(entry.product,entry.published,entry.version)} dirty={dirty} busy={busy}/><p data-studio-part="help" className={s.help}>{publicationState(entry.published,entry.visible)} · {draftState(entry.product,entry.published,entry.version)}</p>
+          <p data-studio-part="help" className={s.help}>Shared version {entry.version} · Published form {entry.publishedVersion}. Choose from the approved asset collection. Saved product addresses stay stable.</p>
+          <div data-studio-part="actions" className={s.actions}>{!editing&&<button type="button" onClick={()=>setEditing(true)}>Open existing product editing controls</button>}
             <button type="button" onClick={()=>setPreview(v=>!v)}>
               {preview?'Close form preview':'Preview this form'}
             </button>
           </div>
 
           
-          <div className={s.tabs} role="tablist" aria-label="Product editor sections" onKeyDown={event=>{
+          <div data-studio-part="tabs" className={s.tabs} role="tablist" aria-label="Product editor sections" onKeyDown={event=>{
             if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
             const tabs=Array.from(event.currentTarget.querySelectorAll<HTMLButtonElement>('[role="tab"]'));
             const index=tabs.indexOf(event.target as HTMLButtonElement);
@@ -258,7 +260,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
           </div>
 
           {preview && (
-            <div className={s.panel}>
+            <div data-studio-part="panel" className={s.panel}>
               <h3>Draft form preview</h3>
               <p>These are the same field controls used on the public form, with this draft’s labels, conditions and limits. Preview answers stay in this editor; no files are uploaded and no inquiry is submitted.</p>
               <CustomizationFields formId="studio-product-preview" fields={entry.product.fields.filter(f=>fieldVisible(f,previewAnswers))} answers={previewAnswers} onChange={(id,value)=>setPreviewAnswers(v=>({...v,[id]:value}))} styles={{fields:s.grid,field:'',fieldError:'',error:s.status,help:s.help}}/>
@@ -266,7 +268,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
           )}
 
           <fieldset disabled={!editing}>{activeTab === 'general' && (
-          <div id="product-tab-general" role="tabpanel" aria-labelledby="product-editor-tab-general" tabIndex={0} className={s.grid}>
+          <div id="product-tab-general" role="tabpanel" aria-labelledby="product-editor-tab-general" tabIndex={0} data-studio-part="grid" className={s.grid}>
             <label>Name<input id="products-field-name" value={entry.product.name} maxLength={100} required onChange={e=>change({name:e.target.value})}/></label>
             <label>Subtitle<input id="products-field-subtitle" value={entry.product.subtitle} maxLength={120} required onChange={e=>change({subtitle:e.target.value})}/></label>
             <label>Public address<input value={entry.product.slug} disabled={!entry.product.id.startsWith('RLA-')||entry.version>0} onChange={e=>change({slug:e.target.value})}/></label>
@@ -281,7 +283,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
           </div>
           )}
           {activeTab === 'details' && (
-          <div id="product-tab-details" role="tabpanel" aria-labelledby="product-editor-tab-details" tabIndex={0} className={s.grid}>
+          <div id="product-tab-details" role="tabpanel" aria-labelledby="product-editor-tab-details" tabIndex={0} data-studio-part="grid" className={s.grid}>
             <label>Design dimensions<input value={entry.product.dimensions||''} maxLength={200} onChange={e=>change({dimensions:e.target.value||undefined})}/></label>
             <label>Materials<input value={entry.product.material||''} maxLength={300} onChange={e=>change({material:e.target.value||undefined})}/></label>
             <label className={s.wide}>Product story<textarea id="products-field-story" value={entry.product.story} maxLength={1800} rows={7} required onChange={e=>change({story:e.target.value})}/></label>
@@ -289,7 +291,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
           )}
           {activeTab === 'images' && (
           <div id="product-tab-images" role="tabpanel" aria-labelledby="product-editor-tab-images" tabIndex={0}>
-          <div className={s.grid}>
+          <div data-studio-part="grid" className={s.grid}>
             <label>Primary image
               <select id="products-field-image" value={entry.product.image} onChange={e=>change({image:e.target.value})}><option value="">Choose a reviewed product image</option>
                 {media.map(m=><option key={m.path} value={m.path}>{m.alt} · {m.products.join(', ')}</option>)}
@@ -303,10 +305,10 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
             </label>
           </div>
           {entry.reviewedImages&&entry.product.image!==entry.reviewedImages.image&&(
-            <section className={s.panel}>
+            <section data-studio-part="panel" className={s.panel}>
               <h3>A reviewed image assignment is available.</h3>
               <p>Keep your written draft and customization fields. Apply the reviewed primary image and gallery only after comparing the product below. Metadata for its corrected product association must also be published in Public media.</p>
-              <p className={s.help}>Reviewed image: {entry.reviewedImages.image}</p>
+              <p data-studio-part="help" className={s.help}>Reviewed image: {entry.reviewedImages.image}</p>
               <button type="button" onClick={()=>{
                 const images=entry.reviewedImages!;
                 change({image:images.image,scene:images.scene||undefined,gallery:images.gallery,imageAlt:undefined,imageCaption:undefined,imagePosition:undefined});
@@ -319,11 +321,11 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
           </div>
           )}
           {activeTab === 'translations' && (
-          <section id="product-tab-translations" role="tabpanel" aria-labelledby="product-editor-tab-translations" tabIndex={0} className={s.panel}>
+          <section id="product-tab-translations" role="tabpanel" aria-labelledby="product-editor-tab-translations" tabIndex={0} data-studio-part="panel" className={s.panel}>
            <h2>Product translations</h2>
-           <p className={s.help}>Optional public-language overrides. Leave any field blank to use the English product text. Translations publish with this product revision.</p>
+           <p data-studio-part="help" className={s.help}>Optional public-language overrides. Leave any field blank to use the English product text. Translations publish with this product revision.</p>
            <label>Language<select value={translationLocale} onChange={e=>setTranslationLocale(e.target.value as Locale)}>{locales.filter(code=>code!=='en').map(code=><option key={code} value={code}>{localeLabels[code]}</option>)}</select></label>
-           {translationLocale!=='en'&&<div className={s.grid} dir={translationLocale==='ar'?'rtl':'ltr'}>
+           {translationLocale!=='en'&&<div data-studio-part="grid" className={s.grid} dir={translationLocale==='ar'?'rtl':'ltr'}>
             <label>Name<small dir="ltr">English: {entry.product.name}</small><input maxLength={100} value={entry.product.translations?.[translationLocale]?.name||''} onChange={e=>productTranslation({name:e.target.value})}/></label>
             <label>Subtitle<small dir="ltr">English: {entry.product.subtitle}</small><input maxLength={120} value={entry.product.translations?.[translationLocale]?.subtitle||''} onChange={e=>productTranslation({subtitle:e.target.value})}/></label>
             <label>Category<small dir="ltr">English: {entry.product.category}</small><input maxLength={80} value={entry.product.translations?.[translationLocale]?.category||''} onChange={e=>productTranslation({category:e.target.value})}/></label>
@@ -340,7 +342,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
           </div>
           )}
           <fieldset disabled={!editing}>{activeTab === 'customization' && (
-          <section id="product-tab-customization" role="tabpanel" aria-labelledby="product-editor-tab-customization" tabIndex={0} className={s.fields}>
+          <section id="product-tab-customization" role="tabpanel" aria-labelledby="product-editor-tab-customization" tabIndex={0} data-studio-part="fields" className={s.fields}>
             <h2>Customization fields</h2>
             {hasReviewedCapabilities(entry.product.id)&&(
               <button type="button" disabled={busy} onClick={()=>{
@@ -356,11 +358,11 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
                 <ul>{schemaIssues.map((issue,i)=><li key={i}>{issue}</li>)}</ul>
               </div>
             )}
-            <p className={s.help}>These exact fields appear on this piece’s public order form after publishing. Contact details, notes and references are included automatically.</p>
+            <p data-studio-part="help" className={s.help}>These exact fields appear on this piece’s public order form after publishing. Contact details, notes and references are included automatically.</p>
             {entry.product.fields.map((f,i)=>(
-              <div key={f.id} className={s.fieldRow}>
-                <p className={s.help}>Stable field ID: {f.id}</p>
-                <div className={s.grid}>
+              <div key={f.id} data-studio-part="fieldRow" className={s.fieldRow}>
+                <p data-studio-part="help" className={s.help}>Stable field ID: {f.id}</p>
+                <div data-studio-part="grid" className={s.grid}>
                   <label>Field label<input value={f.label} maxLength={100} required onChange={e=>field(i,{label:e.target.value})}/></label>
                   <label>Answer type
                     <select value={f.type} onChange={e=>field(i,{type:e.target.value as CustomField['type'],options:e.target.value==='select'?(f.options||['Discuss with the studio']):undefined})}>
@@ -406,7 +408,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
                   <label className={s.check}>
                     <input type="checkbox" checked={f.required} onChange={e=>field(i,{required:e.target.checked})}/>Required
                   </label>
-                  <div className={s.actions}>
+                  <div data-studio-part="actions" className={s.actions}>
                     <button type="button" disabled={i===0} onClick={()=>moveField(i,-1)}>Move up</button>
                     <button type="button" disabled={i===entry.product.fields.length-1} onClick={()=>moveField(i,1)}>Move down</button>
                     <button type="button" title="Clear dependent conditions before removing a parent field" disabled={entry.product.fields.length===1||entry.product.fields.some(child=>child.visibleWhen?.field===f.id)} onClick={()=>change({fields:entry.product.fields.filter((_,n)=>i!==n)})}>Remove field</button>
@@ -418,8 +420,8 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
           </section>
           )}
 
-          </fieldset><div className={s.actions}>
-            <button className={s.primary} disabled={busy||!editing}>Save draft</button>
+          </fieldset><div data-studio-part="actions" className={s.actions}>
+            <button data-studio-action="primary" className={s.primary} disabled={busy||!editing}>Save draft</button>
             {admin&&(
               <>
                 <button type="button" disabled={busy||!editing} onClick={()=>void save('publish')}>Publish to website</button>
@@ -432,7 +434,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
             </a>
           </div>
 
-          {dirty&&<p className={s.help}>You have unsaved changes.</p>}
+          {dirty&&<p data-studio-part="help" className={s.help}>You have unsaved changes.</p>}
           <DraftRecovery value={entry.product} busy={busy} onReload={async()=>{
             setBusy(true);
             try{await load(entry.product.id);setDirty(false);}finally{setBusy(false);}
@@ -440,7 +442,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
         </fieldset>
       </form>
     ):(
-      <div className={s.empty}>Select a piece to edit its details and customization form.</div>
+      <div data-studio-part="empty" className={s.empty}>Select a piece to edit its details and customization form.</div>
     )}
    </div>
   

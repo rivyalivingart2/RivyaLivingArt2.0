@@ -1,0 +1,374 @@
+[
+  {
+    "id": "hero-pour",
+    "driveId": "17rLJSM6v8z_MqArs8lyksy1hpN8ljfru",
+    "title": "Material study",
+    "alt": "Resin pour in warm light",
+    "width": 1920,
+    "height": 1080,
+    "sourceBytes": 211806,
+    "sha256": "be54fcd332bb12dae0923a86e3d9fa074a0e052fc04520d0bdb369bf499116b7",
+    "desktop": [
+      50,
+      50
+    ],
+    "mobile": [
+      54,
+      50
+    ],
+    "slot": "hero / material feature",
+    "variants": [
+      {
+        "src": "/media/hero-pour-640.avif",
+        "width": 640,
+        "format": "avif",
+        "bytes": 16714
+      },
+      {
+        "src": "/media/hero-pour-640.webp",
+        "width": 640,
+        "format": "webp",
+        "bytes": 24694
+      },
+      {
+        "src": "/media/hero-pour-960.avif",
+        "width": 960,
+        "format": "avif",
+        "bytes": 30666
+      },
+      {
+        "src": "/media/hero-pour-960.webp",
+        "width": 960,
+        "format": "webp",
+        "bytes": 45826
+      },
+      {
+        "src": "/media/hero-pour-1440.avif",
+        "width": 1440,
+        "format": "avif",
+        "bytes": 53105
+      },
+      {
+        "src": "/media/hero-pour-1440.webp",
+        "width": 1440,
+        "format": "webp",
+        "bytes": 79310
+      }
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/17rLJSM6v8z_MqArs8lyksy1hpN8ljfru/view",
+    "classification": "Supplied visualization; not evidence of a customer or completed project",
+    "rights": "Owner-supplied preview selection; source-specific creator/permission evidence not established by this download",
+    "studioId": null,
+    "status": "Local preview only; existing Studio associations untouched"
+  },
+  {
+    "id": "maker-hands",
+    "driveId": "1VK6Y7T8LDJi5eEGFBFjXg26VNNVGYyVh",
+    "title": "Making study",
+    "alt": "Visual study of a person polishing a blue and gold resin bowl",
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 136116,
+    "sha256": "138776d5f9a02ec85a613ce32d892643aed732d356779bfd36792c0b89347cd5",
+    "desktop": [
+      50,
+      50
+    ],
+    "mobile": [
+      50,
+      50
+    ],
+    "slot": "craft / Journal",
+    "variants": [
+      {
+        "src": "/media/maker-hands-640.avif",
+        "width": 640,
+        "format": "avif",
+        "bytes": 14857
+      },
+      {
+        "src": "/media/maker-hands-640.webp",
+        "width": 640,
+        "format": "webp",
+        "bytes": 21030
+      },
+      {
+        "src": "/media/maker-hands-960.avif",
+        "width": 960,
+        "format": "avif",
+        "bytes": 25236
+      },
+      {
+        "src": "/media/maker-hands-960.webp",
+        "width": 960,
+        "format": "webp",
+        "bytes": 36840
+      },
+      {
+        "src": "/media/maker-hands-1440.avif",
+        "width": 1440,
+        "format": "avif",
+        "bytes": 43993
+      },
+      {
+        "src": "/media/maker-hands-1440.webp",
+        "width": 1440,
+        "format": "webp",
+        "bytes": 63538
+      }
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1VK6Y7T8LDJi5eEGFBFjXg26VNNVGYyVh/view",
+    "classification": "Supplied visualization; not evidence of a customer or completed project",
+    "rights": "Owner-supplied preview selection; source-specific creator/permission evidence not established by this download",
+    "studioId": null,
+    "status": "Local preview only; existing Studio associations untouched"
+  },
+  {
+    "id": "doorway-memory",
+    "driveId": "19KOc4hLTXevHis-A0b_8gtedAgsmWRoC",
+    "title": "Memory study",
+    "alt": "Red and ivory flowers encased in a clear resin block",
+    "width": 1024,
+    "height": 1536,
+    "sourceBytes": 181244,
+    "sha256": "5e14af18d1837fe803ad3dcec0a80e582b3f98d602a27bedcd6c64dfe7092d96",
+    "desktop": [
+      50,
+      50
+    ],
+    "mobile": [
+      50,
+      50
+    ],
+    "slot": "memory doorway",
+    "variants": [
+      {
+        "src": "/media/doorway-memory-640.avif",
+        "width": 640,
+        "format": "avif",
+        "bytes": 33047
+      },
+      {
+        "src": "/media/doorway-memory-640.webp",
+        "width": 640,
+        "format": "webp",
+        "bytes": 54944
+      },
+      {
+        "src": "/media/doorway-memory-960.avif",
+        "width": 960,
+        "format": "avif",
+        "bytes": 62743
+      },
+      {
+        "src": "/media/doorway-memory-960.webp",
+        "width": 960,
+        "format": "webp",
+        "bytes": 101994
+      },
+      {
+        "src": "/media/doorway-memory-1024.avif",
+        "width": 1024,
+        "format": "avif",
+        "bytes": 73076
+      },
+      {
+        "src": "/media/doorway-memory-1024.webp",
+        "width": 1024,
+        "format": "webp",
+        "bytes": 114866
+      }
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/19KOc4hLTXevHis-A0b_8gtedAgsmWRoC/view",
+    "classification": "Supplied visualization; not evidence of a customer or completed project",
+    "rights": "Owner-supplied preview selection; source-specific creator/permission evidence not established by this download",
+    "studioId": null,
+    "status": "Local preview only; existing Studio associations untouched"
+  },
+  {
+    "id": "texture-resin-flow",
+    "driveId": "1RNN4QxbJXw9VsRrb9x3EMZ9Rtzkqfmxf",
+    "title": "Flow study",
+    "alt": "Close view of resin surface and flowing colour",
+    "width": 1920,
+    "height": 1080,
+    "sourceBytes": 229943,
+    "sha256": "53dfc87a74c50b6ca72a2e76e1d85df051afa01acfc434b26974f804e0cc81c8",
+    "desktop": [
+      50,
+      50
+    ],
+    "mobile": [
+      50,
+      50
+    ],
+    "slot": "material detail",
+    "variants": [
+      {
+        "src": "/media/texture-resin-flow-640.avif",
+        "width": 640,
+        "format": "avif",
+        "bytes": 15112
+      },
+      {
+        "src": "/media/texture-resin-flow-640.webp",
+        "width": 640,
+        "format": "webp",
+        "bytes": 18744
+      },
+      {
+        "src": "/media/texture-resin-flow-960.avif",
+        "width": 960,
+        "format": "avif",
+        "bytes": 31269
+      },
+      {
+        "src": "/media/texture-resin-flow-960.webp",
+        "width": 960,
+        "format": "webp",
+        "bytes": 39594
+      },
+      {
+        "src": "/media/texture-resin-flow-1440.avif",
+        "width": 1440,
+        "format": "avif",
+        "bytes": 62015
+      },
+      {
+        "src": "/media/texture-resin-flow-1440.webp",
+        "width": 1440,
+        "format": "webp",
+        "bytes": 77970
+      }
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1RNN4QxbJXw9VsRrb9x3EMZ9Rtzkqfmxf/view",
+    "classification": "Supplied visualization; not evidence of a customer or completed project",
+    "rights": "Owner-supplied preview selection; source-specific creator/permission evidence not established by this download",
+    "studioId": null,
+    "status": "Local preview only; existing Studio associations untouched"
+  },
+  {
+    "id": "doorway-collectible",
+    "driveId": "1o5VSIpFgnyn4Obrfh3Bowhm4-bsxz1Mj",
+    "title": "Collectible study",
+    "alt": "Live-edge dining table with a blue resin channel in a dark interior",
+    "width": 1024,
+    "height": 1536,
+    "sourceBytes": 258778,
+    "sha256": "6934feb5740e39a5192e89d9ae506952e7f8b8ba3609f39c7eec71387a29a8be",
+    "desktop": [
+      50,
+      50
+    ],
+    "mobile": [
+      50,
+      50
+    ],
+    "slot": "collectible doorway",
+    "variants": [
+      {
+        "src": "/media/doorway-collectible-640.avif",
+        "width": 640,
+        "format": "avif",
+        "bytes": 43207
+      },
+      {
+        "src": "/media/doorway-collectible-640.webp",
+        "width": 640,
+        "format": "webp",
+        "bytes": 73046
+      },
+      {
+        "src": "/media/doorway-collectible-960.avif",
+        "width": 960,
+        "format": "avif",
+        "bytes": 91419
+      },
+      {
+        "src": "/media/doorway-collectible-960.webp",
+        "width": 960,
+        "format": "webp",
+        "bytes": 154934
+      },
+      {
+        "src": "/media/doorway-collectible-1024.avif",
+        "width": 1024,
+        "format": "avif",
+        "bytes": 110909
+      },
+      {
+        "src": "/media/doorway-collectible-1024.webp",
+        "width": 1024,
+        "format": "webp",
+        "bytes": 178844
+      }
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1o5VSIpFgnyn4Obrfh3Bowhm4-bsxz1Mj/view",
+    "classification": "Supplied visualization; not evidence of a customer or completed project",
+    "rights": "Owner-supplied preview selection; source-specific creator/permission evidence not established by this download",
+    "studioId": null,
+    "status": "Local preview only; existing Studio associations untouched"
+  },
+  {
+    "id": "doorway-gifts",
+    "driveId": "1woyD_wMKVigC6rp2Vky9sCojxyHAKmM-",
+    "title": "Gift study",
+    "alt": "Blue and gold resin jewellery arranged on a dark surface",
+    "width": 1024,
+    "height": 1536,
+    "sourceBytes": 337148,
+    "sha256": "174e2e812ed9d275de1e773b4dcb5ce09232c48321623d2ebcce2ec12242e7b7",
+    "desktop": [
+      50,
+      50
+    ],
+    "mobile": [
+      50,
+      50
+    ],
+    "slot": "gift doorway",
+    "variants": [
+      {
+        "src": "/media/doorway-gifts-640.avif",
+        "width": 640,
+        "format": "avif",
+        "bytes": 66299
+      },
+      {
+        "src": "/media/doorway-gifts-640.webp",
+        "width": 640,
+        "format": "webp",
+        "bytes": 123606
+      },
+      {
+        "src": "/media/doorway-gifts-960.avif",
+        "width": 960,
+        "format": "avif",
+        "bytes": 124367
+      },
+      {
+        "src": "/media/doorway-gifts-960.webp",
+        "width": 960,
+        "format": "webp",
+        "bytes": 229482
+      },
+      {
+        "src": "/media/doorway-gifts-1024.avif",
+        "width": 1024,
+        "format": "avif",
+        "bytes": 145994
+      },
+      {
+        "src": "/media/doorway-gifts-1024.webp",
+        "width": 1024,
+        "format": "webp",
+        "bytes": 256496
+      }
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1woyD_wMKVigC6rp2Vky9sCojxyHAKmM-/view",
+    "classification": "Supplied visualization; not evidence of a customer or completed project",
+    "rights": "Owner-supplied preview selection; source-specific creator/permission evidence not established by this download",
+    "studioId": null,
+    "status": "Local preview only; existing Studio associations untouched"
+  }
+]

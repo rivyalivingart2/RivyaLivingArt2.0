@@ -1,0 +1,13 @@
+import {chromium} from 'playwright';
+import {mkdir,writeFile} from 'node:fs/promises';
+const out='output/playwright/redesign-phase3';
+await mkdir(out,{recursive:true});
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
+await page.goto('http://127.0.0.1:4199/',{waitUntil:'networkidle'});
+await page.evaluate(()=>document.fonts.ready);
+const result=await page.evaluate(()=>({title:document.title,home:!!document.querySelector('[data-home-revision]'),slots:[...document.querySelectorAll('[data-home-slot]')].map(n=>n.dataset.homeSlot),presentation:document.querySelector('[data-home-revision]')?.outerHTML.slice(0,450),text:document.querySelector('main')?.textContent,links:[...document.querySelectorAll('main a')].map(a=>[a.textContent,a.getAttribute('href')]),media:[...document.querySelectorAll('main img')].map(i=>[i.alt,i.getAttribute('style'),i.getAttribute('src')]),header:document.querySelector('header')?.textContent,footer:document.querySelector('footer')?.textContent}));
+await writeFile(out+'/baseline.json',JSON.stringify(result,null,2));
+await page.screenshot({path:out+'/before-desktop.png'});
+console.log(JSON.stringify({title:result.title,home:result.home,slots:result.slots,presentation:result.presentation}));
+await browser.close();

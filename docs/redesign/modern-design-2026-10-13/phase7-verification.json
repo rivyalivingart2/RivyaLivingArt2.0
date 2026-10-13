@@ -1,0 +1,2219 @@
+{
+  "at": "2026-10-13T14:35:09.353Z",
+  "phase": 7,
+  "status": "Local verification complete; owner report/release approval pending",
+  "branch": "codex/redesign-phase7-verification",
+  "approvedApplicationCommit": "15a0307",
+  "remoteMainVerified": "4cadf21b380a8f3753232318fbb78027aa09ffc5",
+  "productionChanged": false,
+  "pushed": false,
+  "released": false,
+  "applicationSourceChangedInPhase7": false,
+  "configurationChange": "Exclude generated output/** bundles from source ESLint scan; no source rule disabled",
+  "validation": {
+    "build": "passed",
+    "typescript": "passed in fresh Next production build",
+    "unit": {
+      "pass": 344,
+      "fail": 0
+    },
+    "preflight": {
+      "pass": 12,
+      "fail": 0
+    },
+    "runtime": {
+      "pass": 403,
+      "fail": 0
+    },
+    "lint": {
+      "errors": 0,
+      "warnings": 62,
+      "scope": "Full repository source; warnings pre-existing, including six previously reported Studio warnings"
+    },
+    "suites": {
+      "home": {
+        "checks": 58,
+        "issues": [],
+        "contrastSamples": 0,
+        "captures": 17,
+        "evidence": "output/playwright/redesign-phase7/redesign-phase3-browser/verification.json"
+      },
+      "homeEdges": {
+        "checks": 16,
+        "issues": [],
+        "contrastSamples": 0,
+        "captures": 0,
+        "evidence": "output/playwright/redesign-phase7/redesign-phase3-edge/edge-verification.json"
+      },
+      "publicPages": {
+        "checks": 570,
+        "issues": [],
+        "contrastSamples": 0,
+        "captures": 74,
+        "evidence": "output/playwright/redesign-phase7/redesign-phase4-browser/browser-verification.json"
+      },
+      "publicFixtures": {
+        "checks": 100,
+        "issues": [],
+        "contrastSamples": 0,
+        "captures": 30,
+        "evidence": "output/playwright/redesign-phase7/redesign-phase4-fixtures/fixtures-verification.json"
+      },
+      "publicInteractions": {
+        "checks": 64,
+        "issues": [],
+        "contrastSamples": 163,
+        "captures": 32,
+        "evidence": "output/playwright/redesign-phase7/redesign-phase4-interactions/interaction-verification.json"
+      },
+      "publicFocus": {
+        "checks": 20,
+        "issues": [],
+        "contrastSamples": 0,
+        "captures": 12,
+        "evidence": "output/playwright/redesign-phase7/redesign-phase4-review-fixes/review-fixes-verification.json"
+      },
+      "studioEditing": {
+        "checks": 35,
+        "issues": [],
+        "contrastSamples": 0,
+        "captures": 28,
+        "evidence": "output/playwright/redesign-phase7/redesign-phase5-interactions/interactions.json"
+      },
+      "editorStates": {
+        "checks": 52,
+        "issues": [],
+        "contrastSamples": 686,
+        "captures": 18,
+        "evidence": "output/playwright/redesign-phase7/redesign-phase5-states/states-contrast.json"
+      },
+      "childEditors": {
+        "checks": 36,
+        "issues": [],
+        "contrastSamples": 0,
+        "captures": 16,
+        "evidence": "output/playwright/redesign-phase7/redesign-phase5-coverage/coverage.json"
+      },
+      "operationStates": {
+        "checks": 58,
+        "issues": [],
+        "contrastSamples": 613,
+        "captures": 4,
+        "evidence": "output/playwright/redesign-phase7/redesign-phase6-states/states.json"
+      },
+      "operationPreviews": {
+        "checks": 59,
+        "issues": [],
+        "contrastSamples": 0,
+        "captures": 33,
+        "evidence": "output/playwright/redesign-phase7/redesign-phase6-previews/previews.json"
+      }
+    },
+    "studio": {
+      "checks": 489,
+      "renderedPages": 148,
+      "modules": 37,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "issues": [],
+      "backgroundRequestWaits": [
+        {
+          "width": 1440,
+          "route": "/studio/categories"
+        },
+        {
+          "width": 768,
+          "route": "/studio/categories"
+        },
+        {
+          "width": 390,
+          "route": "/studio/categories"
+        },
+        {
+          "width": 320,
+          "route": "/studio/categories"
+        }
+      ]
+    },
+    "accessibility": {
+      "engine": "installed axe-core / Chromium",
+      "scans": 71,
+      "violations": 0,
+      "errors": [],
+      "incompleteRuleInstances": 14,
+      "scope": "axe WCAG A/AA automated checks in Chromium; this is not screen-reader, physical-device or full conformance certification",
+      "initialNavigationFailures": [
+        {
+          "width": 1440,
+          "route": "/studio/categories",
+          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4199/studio/categories\", waiting until \"networkidle\"\u001b[22m\n"
+        }
+      ],
+      "incompleteDetails": [
+        {
+          "route": "/",
+          "width": 1440,
+          "rules": [
+            {
+              "id": "color-contrast",
+              "count": 24
+            },
+            {
+              "id": "video-caption",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "route": "/pieces/amber-veil-wall-panel",
+          "width": 1440,
+          "rules": [
+            {
+              "id": "color-contrast",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "route": "/our-story",
+          "width": 1440,
+          "rules": [
+            {
+              "id": "color-contrast",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "route": "/process",
+          "width": 1440,
+          "rules": [
+            {
+              "id": "color-contrast",
+              "count": 5
+            },
+            {
+              "id": "video-caption",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "route": "/studio/content-health",
+          "width": 1440,
+          "rules": [
+            {
+              "id": "color-contrast",
+              "count": 16
+            }
+          ]
+        },
+        {
+          "route": "/studio/navigation",
+          "width": 1440,
+          "rules": [
+            {
+              "id": "color-contrast",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "route": "/studio/research",
+          "width": 1440,
+          "rules": [
+            {
+              "id": "color-contrast",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "route": "/studio/content-gaps",
+          "width": 1440,
+          "rules": [
+            {
+              "id": "color-contrast",
+              "count": 44
+            }
+          ]
+        },
+        {
+          "route": "/studio/seo",
+          "width": 1440,
+          "rules": [
+            {
+              "id": "color-contrast",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "route": "/studio/content-lab",
+          "width": 1440,
+          "rules": [
+            {
+              "id": "color-contrast",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "route": "/",
+          "width": 390,
+          "rules": [
+            {
+              "id": "color-contrast",
+              "count": 19
+            },
+            {
+              "id": "video-caption",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    "reading": {
+      "checks": 7
+    },
+    "print": {
+      "scope": "All prose headings and text blocks found in six browser print PDFs; visual inspection separate; not a tagged-PDF or physical-printer certification",
+      "policies": [
+        {
+          "route": "/privacy",
+          "pages": 4,
+          "sourceBlocks": 18,
+          "missingBlocks": []
+        },
+        {
+          "route": "/terms",
+          "pages": 2,
+          "sourceBlocks": 10,
+          "missingBlocks": []
+        },
+        {
+          "route": "/shipping-delivery",
+          "pages": 2,
+          "sourceBlocks": 10,
+          "missingBlocks": []
+        },
+        {
+          "route": "/returns-cancellations",
+          "pages": 3,
+          "sourceBlocks": 12,
+          "missingBlocks": []
+        },
+        {
+          "route": "/accessibility",
+          "pages": 2,
+          "sourceBlocks": 6,
+          "missingBlocks": []
+        },
+        {
+          "route": "/imprint",
+          "pages": 2,
+          "sourceBlocks": 9,
+          "missingBlocks": []
+        }
+      ]
+    },
+    "media": {
+      "scope": "Local media-library images decode and both existing film encodings play in Chromium; no media selection or upload",
+      "videos": [
+        {
+          "path": "public/media/migration/hero-pour-loop.mp4",
+          "duration": 8.041667,
+          "width": 1280,
+          "height": 720,
+          "progress": 0.410196
+        },
+        {
+          "path": "public/media/migration/hero-pour-loop.webm",
+          "duration": 8.042,
+          "width": 1280,
+          "height": 720,
+          "progress": 0.418419
+        }
+      ],
+      "images": [
+        {
+          "route": "/",
+          "count": 15,
+          "broken": []
+        },
+        {
+          "route": "/collectible-design",
+          "count": 14,
+          "broken": []
+        },
+        {
+          "route": "/pieces/amber-veil-wall-panel",
+          "count": 6,
+          "broken": []
+        },
+        {
+          "route": "/our-story",
+          "count": 3,
+          "broken": []
+        },
+        {
+          "route": "/journal",
+          "count": 14,
+          "broken": []
+        }
+      ],
+      "errors": []
+    },
+    "http": {
+      "routes": 665,
+      "available": 185,
+      "unpublishedLocalDrafts": 480,
+      "assets": 232,
+      "additionalLinks": 299,
+      "errors": []
+    },
+    "assetPreservation": {
+      "originalPublicFiles": 163,
+      "unchanged": true,
+      "currentRastersDecoded": 145,
+      "videos": [
+        "public/media/migration/hero-pour-loop.mp4",
+        "public/media/migration/hero-pour-loop.webm"
+      ]
+    },
+    "performance": {
+      "scope": "Local browser lab only; fresh context/cache for cold-browser samples, running server/cache may be warm. Not field Core Web Vitals or INP.",
+      "profiles": {
+        "desktop": {
+          "width": 1440,
+          "cpu": 1,
+          "network": "unthrottled localhost"
+        },
+        "mobile": {
+          "width": 390,
+          "cpu": 4,
+          "network": "CDP 150ms latency, 1.6Mbps down / 750Kbps up; emulated touch"
+        }
+      },
+      "samples": 24,
+      "summary": [
+        {
+          "profile": "desktop",
+          "route": "/",
+          "coldSamples": 3,
+          "coldMedianLcpMs": 360,
+          "coldWorstLcpMs": 436,
+          "repeatLcpMs": 192,
+          "maxCls": 0.0006020945909288195,
+          "maxObservedLongTaskBlockingMs": 0
+        },
+        {
+          "profile": "desktop",
+          "route": "/collectible-design",
+          "coldSamples": 3,
+          "coldMedianLcpMs": 288,
+          "coldWorstLcpMs": 300,
+          "repeatLcpMs": 168,
+          "maxCls": 0.00007524342478057483,
+          "maxObservedLongTaskBlockingMs": 77
+        },
+        {
+          "profile": "desktop",
+          "route": "/journal",
+          "coldSamples": 3,
+          "coldMedianLcpMs": 240,
+          "coldWorstLcpMs": 292,
+          "repeatLcpMs": 116,
+          "maxCls": 0.000027575939790702158,
+          "maxObservedLongTaskBlockingMs": 24
+        },
+        {
+          "profile": "mobile",
+          "route": "/",
+          "coldSamples": 3,
+          "coldMedianLcpMs": 1792,
+          "coldWorstLcpMs": 1888,
+          "repeatLcpMs": 340,
+          "maxCls": 0.013742138136410995,
+          "maxObservedLongTaskBlockingMs": 178
+        },
+        {
+          "profile": "mobile",
+          "route": "/collectible-design",
+          "coldSamples": 3,
+          "coldMedianLcpMs": 1368,
+          "coldWorstLcpMs": 1400,
+          "repeatLcpMs": 344,
+          "maxCls": 0,
+          "maxObservedLongTaskBlockingMs": 160
+        },
+        {
+          "profile": "mobile",
+          "route": "/journal",
+          "coldSamples": 3,
+          "coldMedianLcpMs": 1584,
+          "coldWorstLcpMs": 1588,
+          "repeatLcpMs": 652,
+          "maxCls": 0,
+          "maxObservedLongTaskBlockingMs": 173
+        }
+      ],
+      "allObservedLcpUnder2500": true,
+      "allObservedClsUnder01": true
+    },
+    "visual": {
+      "scope": "Pixel comparison with approved local captures; runtime record counts and captures may differ. Deltas require interpretation, not automatic visual failure.",
+      "comparisons": [
+        {
+          "before": "output/playwright/redesign-phase3/1440-opening.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase3-browser/1440-opening.png",
+          "width": 1440,
+          "height": 1000,
+          "beforeHeight": 1000,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase3/390-opening.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase3-browser/390-opening.png",
+          "width": 390,
+          "height": 844,
+          "beforeHeight": 844,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase3/1440-material.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase3-browser/1440-material.png",
+          "width": 1440,
+          "height": 1000,
+          "beforeHeight": 1000,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase3/390-closing.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase3-browser/390-closing.png",
+          "width": 390,
+          "height": 844,
+          "beforeHeight": 844,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase4/1440-collectible-design.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase4-browser/1440-collectible-design.png",
+          "width": 1440,
+          "height": 1000,
+          "beforeHeight": 1000,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase4/390-collectible-design.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase4-browser/390-collectible-design.png",
+          "width": 390,
+          "height": 844,
+          "beforeHeight": 844,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase4/1440-privacy.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase4-browser/1440-privacy.png",
+          "width": 1440,
+          "height": 1000,
+          "beforeHeight": 1000,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase4/390-privacy.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase4-browser/390-privacy.png",
+          "width": 390,
+          "height": 844,
+          "beforeHeight": 844,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase4/1440-journal.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase4-browser/1440-journal.png",
+          "width": 1440,
+          "height": 1000,
+          "beforeHeight": 1000,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase4/390-journal.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase4-browser/390-journal.png",
+          "width": 390,
+          "height": 844,
+          "beforeHeight": 844,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase5/1440-product-general-details.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase5-interactions/1440-product-general-details.png",
+          "width": 1440,
+          "height": 1000,
+          "beforeHeight": 1000,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase5/390-translation-editor.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase5-interactions/390-translation-editor.png",
+          "width": 390,
+          "height": 844,
+          "beforeHeight": 844,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase6/1440-full-overview.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase6-previews/1440-full-overview.png",
+          "width": 1440,
+          "height": 3499,
+          "beforeHeight": 3418,
+          "sameSize": false,
+          "changedPixelPercent": null,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase6/390-full-overview.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase6-previews/390-full-overview.png",
+          "width": 390,
+          "height": 5211,
+          "beforeHeight": 5109,
+          "sameSize": false,
+          "changedPixelPercent": null,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase6/1440-full-settings.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase6-previews/1440-full-settings.png",
+          "width": 1440,
+          "height": 2733,
+          "beforeHeight": 2733,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase6/390-inquiry-record.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase6-previews/390-inquiry-record.png",
+          "width": 390,
+          "height": 844,
+          "beforeHeight": 844,
+          "sameSize": true,
+          "changedPixelPercent": 0,
+          "changedBounds": null
+        },
+        {
+          "before": "output/playwright/redesign-phase6/1440-login.png",
+          "after": "output/playwright/redesign-phase7/redesign-phase6-previews/1440-login.png",
+          "width": 1440,
+          "height": 1000,
+          "beforeHeight": 1000,
+          "sameSize": true,
+          "changedPixelPercent": 0.005,
+          "changedBounds": {
+            "minX": 639,
+            "minY": 531,
+            "maxX": 795,
+            "maxY": 540
+          }
+        }
+      ],
+      "errors": [],
+      "interpretation": "14 comparison pairs have zero changed pixels at the chosen >24 channel threshold; two overview heights include the earlier known QA order and updated timestamps; the 0.005% login difference is confined to native required-field tooltip text. Application source and palette remain identical to approved Phase 6."
+    }
+  },
+  "preservation": {
+    "at": "2026-10-13T14:22:02.445Z",
+    "scope": "Per-ID row hashes across 13 protected isolated QA scopes; no production snapshot",
+    "phase7Rows": 1657,
+    "phase7Added": 0,
+    "phase7Changed": 0,
+    "phase7Deleted": 0,
+    "preRedesignOriginalRows": 1641,
+    "originalsUnchanged": true,
+    "earlierSyntheticAdditions": 16,
+    "earlierSyntheticReceipts": [
+      "phase5-preservation.json",
+      "phase6-preservation.json"
+    ],
+    "scopes": {
+      "rivya_catalogue": {
+        "preRedesignOriginals": 120,
+        "current": 120,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 0
+      },
+      "rivya_content": {
+        "preRedesignOriginals": 602,
+        "current": 603,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 1
+      },
+      "rivya_public_media": {
+        "preRedesignOriginals": 152,
+        "current": 152,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 0
+      },
+      "rivya_business_settings": {
+        "preRedesignOriginals": 1,
+        "current": 1,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 0
+      },
+      "rivya_revisions": {
+        "preRedesignOriginals": 734,
+        "current": 738,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 4
+      },
+      "rivya_inquiries": {
+        "preRedesignOriginals": 2,
+        "current": 2,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 0
+      },
+      "rivya_studio_orders": {
+        "preRedesignOriginals": 7,
+        "current": 8,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 1
+      },
+      "rivya_studio_order_events": {
+        "preRedesignOriginals": 8,
+        "current": 16,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 8
+      },
+      "rivya_inquiry_notes": {
+        "preRedesignOriginals": 0,
+        "current": 0,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 0
+      },
+      "rivya_references": {
+        "preRedesignOriginals": 0,
+        "current": 0,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 0
+      },
+      "rivya_staff": {
+        "preRedesignOriginals": 8,
+        "current": 9,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 1
+      },
+      "rivya_privacy_controls": {
+        "preRedesignOriginals": 7,
+        "current": 8,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 1
+      },
+      "rivya_erasure_ledger": {
+        "preRedesignOriginals": 0,
+        "current": 0,
+        "originalsUnchanged": true,
+        "phase7Added": 0,
+        "phase7Changed": 0,
+        "phase7Deleted": 0,
+        "earlierSyntheticAdditions": 0
+      }
+    },
+    "limits": "Authentication, session, rate-limit and audit bookkeeping are outside these scopes. No original private values are exported."
+  },
+  "historicalEvidence": {
+    "phase5ActualLifecycle": "10 guarded draft/save/conflict/publish/hide checks; retained hidden synthetic FAQ, not rerun",
+    "phase6ActualLifecycle": "21 guarded order/permissions assertions; retained Closed order and disabled editor, not rerun",
+    "authority": "Application/API/domain files unchanged since those approved checks; no new genuine inquiry or production proof inferred"
+  },
+  "limits": [
+    "Current local QA has 480 registered editorial drafts not published locally; no production publication performed",
+    "71 automated accessibility scans and emulated widths do not replace actual screen readers, native zoom or physical devices; incomplete axe rules need human context",
+    "Independent Hindi/Gujarati meaning, factual/media rights and field observations are not newly supplied; historical admin acceptance is preserved",
+    "Lab LCP uses a local running server and three routes; no production server-wait, field Core Web Vitals or INP claim",
+    "No exhaustive visual review of every content record or every conditional permutation",
+    "62 pre-existing lint warnings and unavailable Impeccable detector retained transparently"
+  ],
+  "next": "Owner reviews final report; only an explicit later push/release instruction authorizes detailed GitHub PR, merge and deployment verification",
+  "evidence": [
+    {
+      "path": "output/playwright/redesign-phase7//print/card-1.png",
+      "bytes": 104931,
+      "sha256": "55a02f213938cadd37a8db51ec192df3c0e2130f334f2df5c6975cf0c3f6cfab"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//print/privacy-1.png",
+      "bytes": 115178,
+      "sha256": "c893b63c65ea7bb12dd057752c8b342dbf02e3c6ba07f0a9daa85d59907a2ab6"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//print/privacy-2.png",
+      "bytes": 126140,
+      "sha256": "006f8522c80c986938bfc98de5d036f60af55fff0c59d2098a46a02283c9453e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//print/privacy-3.png",
+      "bytes": 143207,
+      "sha256": "7e22015134e6015dcc4f36ba536156a2efdefdbd54fed879f8c62ac84fa6b60b"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//print/privacy-4.png",
+      "bytes": 67649,
+      "sha256": "01597ea801bcd8d04e34d156943406979b9e9e612f5c5a767cbf26412e420608"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//print/terms-1.png",
+      "bytes": 109950,
+      "sha256": "89770e5d3f0984bc550e153f7a0295758ff6970b8ddfd5461b0258919d137640"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//print/terms-2.png",
+      "bytes": 100580,
+      "sha256": "eefb2eb08741e4aa66e4fdac650f999a6237e2b30cf317c252d89e7400fe590c"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/1440-closing.png",
+      "bytes": 66439,
+      "sha256": "d86d25b895b5c3547cc5d755cee015e9e438346cb5a5eb87d4fe3ac0f8e5dab2"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/1440-collections.png",
+      "bytes": 477658,
+      "sha256": "23f064dedabfd897faf125169b6b9ae71c94e1062c64e644555420e7a2f77ab0"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/1440-footer.png",
+      "bytes": 79178,
+      "sha256": "5427b436274fbb6b9d1d9c9bdd94d6ae2494dccccd4a10710df85ee8ac9fb43f"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/1440-full.png",
+      "bytes": 6929356,
+      "sha256": "a2e74d6cf2d0b8c19800d503af2d6b483b471590ed9070ce13ad852d2bcbf1e7"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/1440-material.png",
+      "bytes": 742832,
+      "sha256": "315809e2f6c8fdf11cf2cf7fba582fd10123f737b8d9270de4a6c8aba9f43ea5"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/1440-opening.png",
+      "bytes": 981583,
+      "sha256": "ced37b055ebc8d19bc0004f6be168b4ce90837460d50e3c3e56c09e9dfc75cbd"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/1440-pieces.png",
+      "bytes": 737321,
+      "sha256": "fe87520db57f8013edbfcd3e101f0268cd48b0d9bb9f0e2d6762a6acf6c85735"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/390-closing.png",
+      "bytes": 40133,
+      "sha256": "39b8c04110bba05214f73ffb0a17da753bd98645e72bb719c51c1a2957a12bf8"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/390-collections.png",
+      "bytes": 169555,
+      "sha256": "c64edfafbf048d353b47dfc4d5fedab64a7ebbc612c892f701f987f5b3f8250e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/390-footer.png",
+      "bytes": 42747,
+      "sha256": "83e1fdd8dbac16d820110f3ec6bdd044f25a0cc35c4ee84d775ed86b6cea2b09"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/390-full.png",
+      "bytes": 3030003,
+      "sha256": "5d677e8f3e5e6b847ccb060756d0724a3230fe3937f3445badcfb00c3bfe6335"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/390-material.png",
+      "bytes": 202993,
+      "sha256": "27e4ea2086aef8fd2cb14c3ce7cad25b5c9fe37b1ad71d1acd80aa024dddfbcf"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/390-menu.png",
+      "bytes": 54246,
+      "sha256": "8d1d37811314b3dc77459946a83a3726dda5812199f6c470363c2f20e39ac3a3"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/390-opening.png",
+      "bytes": 98583,
+      "sha256": "c9cf507d64804ea28d7c68b7f5d78f7fecff2f96f4bab84f53b6211101a45e51"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/390-pieces.png",
+      "bytes": 153521,
+      "sha256": "741557d4718cddc20b1929eaf208c380fcdffb6d92e7ce0815ef09d2394844b0"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/768-footer.png",
+      "bytes": 58923,
+      "sha256": "fe8ca294f7729415c9211e3448dec91c70ccd89807f3ff3013bf8a9395e03c6a"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase3-browser/768-opening.png",
+      "bytes": 382362,
+      "sha256": "a73ebb52b71ba6ec8050f3342fd1fa4e8e06a73008968c334a1e6b60829a8475"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-accessibility.png",
+      "bytes": 78981,
+      "sha256": "2769ccd768c1da7211c5384499d19f011d65644be55e4dff3622b2329d250370"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-architects.png",
+      "bytes": 416702,
+      "sha256": "bb01c5771be61f767a1b6efe8eda2166c8f0b60d91f3ef58847426c8b5efa7a3"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-collectible-design-body.png",
+      "bytes": 281787,
+      "sha256": "8c4894783fa89f326dbaf908b1520bc7bfe49d3e6113ec3efc2d85389336536e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-collectible-design.png",
+      "bytes": 106933,
+      "sha256": "17ff5371577d7779c2cfea52f4034feed650d68759af5aaf75806ae73bc68932"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-commission-customize.png",
+      "bytes": 114636,
+      "sha256": "eec06627588824af08ad002cbdbd55f0c20a6803859cb2c59e42da270aa25571"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-commission.png",
+      "bytes": 101285,
+      "sha256": "d02387e680c8cbed9cffd221dcce83b8fcc37cd75bd284bf4464fe671dc6af3c"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-contact.png",
+      "bytes": 84801,
+      "sha256": "069ee5367a15ac182ef5acfbf388efe1b2406f95e64085b265c74f79f0471a6a"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-faq-body.png",
+      "bytes": 85710,
+      "sha256": "e68fddda4104f02be952d1743c4b6418a3c83e0d2de40f0fd766ff2c66d35515"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-faq.png",
+      "bytes": 73143,
+      "sha256": "deb19ceaa10167c0e0753c239ce58c19d6a0e76a8343fafe4789534eb3fd85e7"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-home.png",
+      "bytes": 981583,
+      "sha256": "ced37b055ebc8d19bc0004f6be168b4ce90837460d50e3c3e56c09e9dfc75cbd"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-imprint.png",
+      "bytes": 80736,
+      "sha256": "973a9fa6a3d1ac659ab7fc5315b8d4725516bc5ead1b0e0d8eba6b84371b336e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-inquiry-received.png",
+      "bytes": 76593,
+      "sha256": "e0d8c5062763c609e6d0c6c804dd5f7bb087ddf148df3369d5b75397fccb9dac"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-journal-a-cohesive-gift-set-without-repeating-every-detail.png",
+      "bytes": 519822,
+      "sha256": "5bba97da16618b287b69954272f6a7fd0684658da15c1b025b39c4844785da51"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-journal-body.png",
+      "bytes": 81912,
+      "sha256": "48448287cbff3cd0be7c805c89d0872268857b02b39ecc98b92a34c7418500a4"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-journal.png",
+      "bytes": 91435,
+      "sha256": "a0a43fd4704e867cbbe0f5551a51e1d3a07303295ae74eee6a9d14dcfd53a71c"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-materials-care.png",
+      "bytes": 708655,
+      "sha256": "d948a48dfa1f303e21bd4ae93b38c42d92792b1dbb67347a64b3305e5e9fee86"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-memory-art.png",
+      "bytes": 105203,
+      "sha256": "2091e66f8ef3ec39ea73ada62bf6dcec7c0d048027f5f638c1c8dd3e9e27027b"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-our-story-body.png",
+      "bytes": 95757,
+      "sha256": "4a1eee78ff0cec84f8850c44c717470262de79e507ab6a1e134de9edda185cf5"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-our-story.png",
+      "bytes": 863009,
+      "sha256": "982640ee7b5cfd15931bed5a3a2b400948304ba847accbed3b344ae8a6584a79"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-personal-art.png",
+      "bytes": 107870,
+      "sha256": "3d74327360442dd83cd3ea2cfaa69863e7017beb08e67f3b2611814520fff17f"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-personalize.png",
+      "bytes": 450548,
+      "sha256": "ac1c07e6384cdc78e76ecb8355abbb6e76d5f23341ea40148b542bbc87883211"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-phase4-unavailable.png",
+      "bytes": 60445,
+      "sha256": "10e05e882a75673cfd7acbb437ac95a320793c7c26fa671c75d16e70a57f9525"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-pieces-amber-veil-wall-panel-customize.png",
+      "bytes": 150932,
+      "sha256": "68df37be22202bc748c9646c2928300fafabddb5be0c68e9808381311453e03b"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-pieces-amber-veil-wall-panel.png",
+      "bytes": 644433,
+      "sha256": "69c0c9f0658fb5191c56ad98393dfd4211ad92b47f20315bc8c0c4cd06e5ef8c"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-portfolio.png",
+      "bytes": 86752,
+      "sha256": "6ec64956bbfd079dbca01a36ac060b1bfb5874d30db4a2e99deff2d23dd54950"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-preserve.png",
+      "bytes": 484518,
+      "sha256": "59f62a2ce31572f2fc81bc0ec3714978a4acca06473ed7e6596e71387b5d0750"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-privacy-body.png",
+      "bytes": 131491,
+      "sha256": "19481eb2b2c35b7e855ea71d1b24b9614cee8136abffe54460f6d9bfc5aa7ac2"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-privacy.png",
+      "bytes": 91697,
+      "sha256": "5a858db925155211ca55c8b73a217d4c976783f8146655852cbe2186cfa7eed6"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-process.png",
+      "bytes": 809190,
+      "sha256": "b399cbbd7a683f400047f97ab84a7e5d601f494f48f55c5ebcfa2ee416c332ed"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-returns-cancellations.png",
+      "bytes": 96216,
+      "sha256": "b179d7ed82381bea0fae4504b349ed9dd264f731be8e42b60b0583c99a2aca8f"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-saved-pieces.png",
+      "bytes": 89870,
+      "sha256": "68e088220e5aab31e91ba126438e649ebacd23c436d949fc5b3ee19702f3acf2"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-search.png",
+      "bytes": 76816,
+      "sha256": "21e10397036a3cdc9ad58f37f7effa6fce135f308de014d71d8ba20f67861d9d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-shipping-delivery.png",
+      "bytes": 84116,
+      "sha256": "25ffb321b419e6773117a5213d44d99610d5a98f94db872586431f2b811f200e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-terms.png",
+      "bytes": 87881,
+      "sha256": "a964aa10196afb7d27b5f8a0036eeab158b31de5aed262b9d0e4cf4178326ad7"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/1440-testimonials.png",
+      "bytes": 91755,
+      "sha256": "6ac6dffcaabe9d8e36deaed694b2102df6f03fa8624106d9a73c9ad8872673f3"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-accessibility.png",
+      "bytes": 43805,
+      "sha256": "d9f7b53b4545a2f6d46d64dc8b10f66816cef28ef9894696ab6706643e186891"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-architects.png",
+      "bytes": 140149,
+      "sha256": "0acd28e79a8422fd5d52918b43c48ad2caa810b71169dd70fc349c75b2649a0d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-collectible-design-body.png",
+      "bytes": 50334,
+      "sha256": "d663a92e3ce6fbbae280547665fcb7240dd8e4299b333b8d32dc46df91ddbabc"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-collectible-design.png",
+      "bytes": 51857,
+      "sha256": "4963b8e5af528abfebe4881205318e86101e996469c766995b70fd8270c95c86"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-commission-customize.png",
+      "bytes": 52747,
+      "sha256": "65930cb1d9bf48fef6ed9862cf80357a4ea39e60822278037332cdab7b497214"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-commission.png",
+      "bytes": 43876,
+      "sha256": "1385aa85c8a8f0f7e72d610ab0e46e254fba6f7781e38e5bb75b18f0e525dfc6"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-contact.png",
+      "bytes": 47854,
+      "sha256": "9cd79a2d2b0889b417776da58cb3ef01f5d9a8c077169b5a11564b7f9a2d9e3c"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-faq-body.png",
+      "bytes": 51288,
+      "sha256": "ac11adb539acccaea43d37b740bb6fd1b9b8dffce7232ab5342e1aee94bf98af"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-faq.png",
+      "bytes": 47418,
+      "sha256": "64a89bbffa1ed9f6949c1522f5fd1dd8d5ba264a55d3bde512d37b46850b2d72"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-home.png",
+      "bytes": 98583,
+      "sha256": "c9cf507d64804ea28d7c68b7f5d78f7fecff2f96f4bab84f53b6211101a45e51"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-imprint.png",
+      "bytes": 40428,
+      "sha256": "a804f56f2d7c8888c94ed6ef734d00af9198ca55f93d840861b84547cd435c3e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-inquiry-received.png",
+      "bytes": 41278,
+      "sha256": "ae96f2556a62dbdbbcc74cd422a809ac4f0ae744b378035e9341ede2e5cd35f5"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-journal-a-cohesive-gift-set-without-repeating-every-detail.png",
+      "bytes": 164282,
+      "sha256": "3fe37c9fb1ad71856ecc4fdc4becc83d9323e37e75eaeb490332a0154aa9f877"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-journal-body.png",
+      "bytes": 58510,
+      "sha256": "987b5d65d1d05ae26d68c81bec8e1cb815791f1034be50edf866008410735ccb"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-journal.png",
+      "bytes": 58510,
+      "sha256": "987b5d65d1d05ae26d68c81bec8e1cb815791f1034be50edf866008410735ccb"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-materials-care.png",
+      "bytes": 197019,
+      "sha256": "a0aa9bb8d899bc5abd3f31cba1eecfd732ba3328aeb15f00def90adfaebc7317"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-memory-art.png",
+      "bytes": 48998,
+      "sha256": "909db3cf87c639236505ffba8bd0be6e656c95185c12cca8f090b41a04e0e304"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-our-story-body.png",
+      "bytes": 49742,
+      "sha256": "74f81edcc9aca10bc21d064b0a076e8471997948bde3c31315bf1ebc7e3a2b0f"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-our-story.png",
+      "bytes": 157895,
+      "sha256": "af1fc58e3fbb895d708085cfce90be1cea1755b7c0176191a8975bf8a3dc7fe4"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-personal-art.png",
+      "bytes": 49861,
+      "sha256": "32be5b2f0362973fcf423859b7fe2c843b510478cfd85778bf5e3767578bd329"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-personalize.png",
+      "bytes": 130530,
+      "sha256": "d73a5dd03fb1729e2a2fb1d255a3c7b28fe2ba818d02a39a509733315a63b57d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-phase4-unavailable.png",
+      "bytes": 33230,
+      "sha256": "7d8760844e6f4dc6d49974be654264042fc7f8f40778a8667180c3fdc525b312"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-pieces-amber-veil-wall-panel-customize.png",
+      "bytes": 48993,
+      "sha256": "6fea109edbbe158db17441677512e9a8602c8d939e05774ca738d0f60d809a0d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-pieces-amber-veil-wall-panel.png",
+      "bytes": 182630,
+      "sha256": "5d470908b72ff3bf6ab5b9cbf35af961a872d618d64e2fe5ec9278eb013a3f95"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-portfolio.png",
+      "bytes": 56428,
+      "sha256": "8bd21f2dc1049c9dc3c9ad82065a9e9c43837ef74f4a0b17b3b3d60accbb5352"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-preserve.png",
+      "bytes": 156262,
+      "sha256": "4ed16e8f69e1abd3e5374b600b436a6698e33d42d873981b0147ae4034fd8bcf"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-privacy-body.png",
+      "bytes": 46107,
+      "sha256": "96cd1a79a23130d67f8a64524848852167af05c1168062625f10278419aea687"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-privacy.png",
+      "bytes": 57838,
+      "sha256": "f3b1bcac1b6e4832ed044c067c3f5c64a115cbe9f371c252cd5a6aa4ecdb7085"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-process.png",
+      "bytes": 144192,
+      "sha256": "aa93008041d9401811f00cba3f20d2942c124f080a0712fc2433ad1cd981af59"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-returns-cancellations.png",
+      "bytes": 59373,
+      "sha256": "c97b30fe13499209ad2122f5bb712bdbddc991b5d38e33f147cd9718e61497db"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-saved-pieces.png",
+      "bytes": 61664,
+      "sha256": "2ff16eb9766c407e6c02bd8b8e7c1372aa045f55cfad2d8964e73deec2f27c69"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-search.png",
+      "bytes": 40844,
+      "sha256": "15c6480d8688c1c2b0fbb44b4fe9aab451122f33c572d91d9f5ae6f8dd22825a"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-shipping-delivery.png",
+      "bytes": 49608,
+      "sha256": "4ab08524880360251f7a6d10068541291a3054a009bf727864638c4bce49a496"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-terms.png",
+      "bytes": 49757,
+      "sha256": "2b56c7ef2e6eba7d43432af2dfd7d1d035cd8081aad1c2b08ae8f6866edb6b29"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/390-testimonials.png",
+      "bytes": 56250,
+      "sha256": "e8d81632019dd3567f9daa1919d71adce89b01a25f79661a0eefe3259437fd0c"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/768-collectible-design-body.png",
+      "bytes": 56417,
+      "sha256": "6ea3ca768560031f45eb5062029c82599f9cbe4756317694ff99987ee581e3b8"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/768-collectible-design.png",
+      "bytes": 75788,
+      "sha256": "eddc0c8e6ef25fe34db4ec4cd462456c987cdbe7722c609e616768a297a3c170"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/768-commission-customize.png",
+      "bytes": 71717,
+      "sha256": "2f221bc7abcaba45466109a712b81fc6fb8d3fbc365f3614ad30edc9279fa957"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-browser/768-pieces-amber-veil-wall-panel.png",
+      "bytes": 564582,
+      "sha256": "017d663d79e4a56f8b2e4262231ab2057ec357929d9cf8c9f12d60120b55441d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-error.png",
+      "bytes": 68979,
+      "sha256": "c5160dd5bb477637f9cd8eb5353d2e1779c9cd9ba437163ea4b8bd80bb5370d9"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-faq-detail.png",
+      "bytes": 73023,
+      "sha256": "10256afc06f8de2dfbbbe72ab55ac5e4e2903d6305a644e6a2c0e3ef07e417ed"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-landing-bentoGallery.png",
+      "bytes": 1078376,
+      "sha256": "763646f28f224179f9c7feba3b5bce6c4e2c124fca978c80a72c2b0c2fd87435"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-landing-imageCta.png",
+      "bytes": 725913,
+      "sha256": "c2fbb6ffd951c9fb07799a96b10f7ccd9d4d1a437f1651bef0b9c4eeab100a9e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-landing-productGrid.png",
+      "bytes": 516993,
+      "sha256": "c2a12c5506afe359408bcff6fad6532bf2acfae0a6b5702f49e8f6e05775fa7d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-landing-testimonialGrid.png",
+      "bytes": 70751,
+      "sha256": "000af5d1b8bd452369e331b8d5b7764d3f588ca210040ba292f59c0e6f0e1191"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-landing-videoStory.png",
+      "bytes": 76197,
+      "sha256": "b5d4691c43c9cbdadc7a506a77323d1ab3644d1010e6d17ef434371bc64855cb"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-landing.png",
+      "bytes": 337396,
+      "sha256": "dd4999d5c3df9a58ac4d2be6269835e17c74eefdff587a78130dfb0aac59f5dd"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-loading.png",
+      "bytes": 52110,
+      "sha256": "e0a9d95fe6717a041cb46c928a5b0cb3ba2cf910a0854555823cc4b7753a00ab"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-portfolio-archive.png",
+      "bytes": 91138,
+      "sha256": "7579fc71626cdd65a08bd5b0cd41cfe909ede845309eef9ed601c6ed0f4f6267"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-portfolio-detail.png",
+      "bytes": 359836,
+      "sha256": "b7bbd0c305ac77fdcec6787b4f25a5b8e819130bad30b84dbcf99332bfb8b2fe"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-receipt-recovery.png",
+      "bytes": 118460,
+      "sha256": "e3f244205e063425a1ace6394a5a688cfffbc9560481ae9252d9dbc7ce7308ba"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-receipt.png",
+      "bytes": 107680,
+      "sha256": "a6e9e292f164b4e45ee93c39814928d2fde33619c5c965c98a372b29ac531a3e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-testimonial-archive.png",
+      "bytes": 95680,
+      "sha256": "d00a8935b51dcfda329c1609ad5fe4d14f08a71a4d59c836ac8e1cae7d88ee9a"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/1440-fixture-testimonial-detail.png",
+      "bytes": 77716,
+      "sha256": "1e14ad7e270f78f0a62b6ae3f8b0f3a15e472d833bebbe9170c3fdbffb8de11b"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-error.png",
+      "bytes": 42476,
+      "sha256": "2327ef01d640a84a4918645537e10d5240ef4bc58ec7ae301340d56679973529"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-faq-detail.png",
+      "bytes": 45495,
+      "sha256": "c3a5a0997472a10e4ff4e6fae82decb28b86237ead6df89bd18e53cce1d5d7c5"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-landing-bentoGallery.png",
+      "bytes": 270274,
+      "sha256": "311436698cad948da1ccd2805225194c1c3b5336f24f8e3c9ab957de6484452c"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-landing-imageCta.png",
+      "bytes": 198478,
+      "sha256": "b7f3041ab63d15c8bd645a9c5c0f1a44cc98dfa02c07d834754005198f9fd2bb"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-landing-productGrid.png",
+      "bytes": 148003,
+      "sha256": "fe917d89e46e8dcbf14c6b98478403cb68769e7ed78813c60c7067b3b3c7abc1"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-landing-testimonialGrid.png",
+      "bytes": 48921,
+      "sha256": "71dcf00d42264eaeade34e198bab7baa9e349f2c8d87b81b4c243287389fb4cc"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-landing-videoStory.png",
+      "bytes": 37996,
+      "sha256": "3219b2e02690ed5ecac1acbd6708690dc540b30d7b6788620be1ce5a8c1239e1"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-landing.png",
+      "bytes": 123795,
+      "sha256": "d486c53438435e00273ee9cdd4d7a8fb8a92bc19859b39d5986f9c72e4ba4412"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-loading.png",
+      "bytes": 29399,
+      "sha256": "650fbd1180e6cd401fa97c4bc4275a7acfaddb4369a8f80f6a2fc45a199cf5f3"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-portfolio-archive.png",
+      "bytes": 92625,
+      "sha256": "27b8e2b97b07c5e3a3353752838507f6c5b67c5a32973b91c1287597f474e624"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-portfolio-detail.png",
+      "bytes": 143712,
+      "sha256": "9e1175392a0b386d61c4188c54b3bd093e621e733606bcceb664b7eee39f2610"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-receipt-recovery.png",
+      "bytes": 65578,
+      "sha256": "f6edfe20454f0214e56b83eac246a97586b4dea196de49d412310fc5ae5482ba"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-receipt.png",
+      "bytes": 63796,
+      "sha256": "d1a670a15f3686dc0f407e090de573bfb48d63010bd81f450db2acd56b207a15"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-testimonial-archive.png",
+      "bytes": 55314,
+      "sha256": "a29e3860ea9e99efe024bc903c4c636858d218ed48152035885718b9486154ec"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-fixtures/390-fixture-testimonial-detail.png",
+      "bytes": 46763,
+      "sha256": "1d523f4d20d183f6dab541d1d6e8f497d0fba3c202b1c104534c41ba2af9c994"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-brief-contact.png",
+      "bytes": 94813,
+      "sha256": "23bd300cc4c434cb4f9a476b664b866ff53e96496100ea27a262cbb0eea0f04f"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-brief-errors.png",
+      "bytes": 129932,
+      "sha256": "f7e5e6df62eca873cd6f802ea7d7184e117fa40ce660fc6395aaa67e6d257e15"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-brief-review.png",
+      "bytes": 135167,
+      "sha256": "7636aff610e2ed7017a66a90d82a3d11c7349b3c45f7605d888863e59c4aee2b"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-faq-expanded.png",
+      "bytes": 87104,
+      "sha256": "acd6ca90c8275cbcb5fe20d3e47e32b09caf0b5d0d1cb3083b0b7340961d11c5"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-gallery-enlarged.png",
+      "bytes": 838576,
+      "sha256": "ec3246790bb367f96386e8f2689c8c55c2901233b1ade9c76a6de7e03dbac813"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-gu-commission-customize.png",
+      "bytes": 101576,
+      "sha256": "46436e4ee0a8245718f7ed706158882677772817ca160de518d5b79c03c1fb62"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-gu-journal.png",
+      "bytes": 94898,
+      "sha256": "c4ac7699e3bde86c83b87e0d13e506c71caa6d9dcd82466aeb05168086a8108f"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-gu-our-story.png",
+      "bytes": 809933,
+      "sha256": "3cfdf121d1b322c0a99ea909490828797afec9c25bc4e341c39e98ef7a44de56"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-hi-commission-customize.png",
+      "bytes": 101003,
+      "sha256": "d60321c2a7b04452a92e21eeb840225929e345c147442c30c6bcc37da4e231e7"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-hi-journal.png",
+      "bytes": 94416,
+      "sha256": "944708d092bc9dfd9595bb4b99babc73a291e460a3c2fa5791c09fe0e1937784"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-hi-our-story.png",
+      "bytes": 809439,
+      "sha256": "206b5333b87656b5633c94b0c8e6e1838d89fe5759b6a1b2531d8721d6046570"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-journal-empty.png",
+      "bytes": 93126,
+      "sha256": "f39a00b993505a7ab9faa20399af7eef239de0c0da7782d2520c0b5101fa3262"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-print-accessibility.png",
+      "bytes": 73538,
+      "sha256": "923725d2518607d0ea2effa970581be1590b7ab40f427e842027bd187c61f35d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-print-imprint.png",
+      "bytes": 59872,
+      "sha256": "577d7f2f7c6b3f557982282206540cda02157b3a3514497d35e9242c09af499a"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-print-privacy.png",
+      "bytes": 82775,
+      "sha256": "55ce719766eda15b8bb0053f391bf881fbbe51e1db3f3416f2c8478771678ebb"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-print-returns-cancellations.png",
+      "bytes": 81351,
+      "sha256": "69cece2e0aa019a97c654bd28752202592e7518a203097c0c5787e7967fd098b"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-print-shipping-delivery.png",
+      "bytes": 81678,
+      "sha256": "7e092e8c4186df928dc56cf333e27359d82fc609ae563c5f9bb588737eb5640e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-print-terms.png",
+      "bytes": 83286,
+      "sha256": "584ec25da48b6636cbb2f53647d79ecb12f105bf6ef57ee41cb6d75061a6580d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/1440-search-empty.png",
+      "bytes": 89832,
+      "sha256": "b51e9a9438793e61c5bf7a3b62ecbb55b214f3c7f09ec7f6b1c84e5a2e64c9f6"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-brief-contact.png",
+      "bytes": 51086,
+      "sha256": "4255f60098d0bdb1d53a695d3d9b99b1e9dd2a7efbd5bd757f65536335743675"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-brief-errors.png",
+      "bytes": 2743,
+      "sha256": "944f9a0883a12f20e61ac3e5636a5b3c42b6eba21ada43d3c2149762c664efe1"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-brief-review.png",
+      "bytes": 2743,
+      "sha256": "944f9a0883a12f20e61ac3e5636a5b3c42b6eba21ada43d3c2149762c664efe1"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-faq-expanded.png",
+      "bytes": 48726,
+      "sha256": "35f4d464a416edf5a2dabe6f45b77481d3d3dd20cc82de9dc94adce6325707c0"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-gallery-enlarged.png",
+      "bytes": 100640,
+      "sha256": "48e1a7980a919025741274f76fcb2012c475ceb134c75cf0ef687da785f108a9"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-gu-commission-customize.png",
+      "bytes": 49018,
+      "sha256": "261e82b06b99617dabce617f8ee893bde5a62e2228e5e4ac508f303ef12fae51"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-gu-journal.png",
+      "bytes": 61842,
+      "sha256": "101a213bdccfef206d09a3bffdeb148843a641c25f59723094b80523e19f4380"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-gu-our-story.png",
+      "bytes": 153512,
+      "sha256": "a687e5337b5f970d2de9cd2c4849d195a7c27ce1646f886e4e428fa6c85376ad"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-hi-commission-customize.png",
+      "bytes": 47815,
+      "sha256": "c2df614cb18faebb82b29e27516a74df44427d591b5cbac3e6b331f80887c58a"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-hi-journal.png",
+      "bytes": 61234,
+      "sha256": "8bfdd45a81bcd86a77dfadd6cef27c9498a9b94630a747118b82eade18cdd180"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-hi-our-story.png",
+      "bytes": 153104,
+      "sha256": "1fb7be24538aabf12e40e4b2338358232f20dd4921f6ca24f815062eb47231e8"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-journal-empty.png",
+      "bytes": 60440,
+      "sha256": "2e76c470f07d6f723c6aa4bdd6c1fe0fa368d611bf0affde3b02ed60caed0e21"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/390-search-empty.png",
+      "bytes": 34963,
+      "sha256": "d587b7a2255925142226ae89e4f679896034a840807707fc42d7db45a74837a9"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/accessibility.pdf",
+      "bytes": 27174,
+      "sha256": "3c15df0248bb7ff4fb1de6fc76b2babde9d1ac921357b7e3696d4d68022cff32"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/imprint.pdf",
+      "bytes": 26755,
+      "sha256": "280019787b6714eb1ffba0571f1825ec90a58a2fa205aad748dc7a7c2c6e1069"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/privacy.pdf",
+      "bytes": 37499,
+      "sha256": "b6eac73c1574900acb9b13a715447051be8c74b507bcf7059f6815e3a528230a"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/returns-cancellations.pdf",
+      "bytes": 30883,
+      "sha256": "457d8bda9ea522237164e2746928d564959202bb7c2a2bb8967a44208aae7be7"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/shipping-delivery.pdf",
+      "bytes": 30130,
+      "sha256": "d1110787a14497b955861c60a319d9558d42bd83adbf2aa4e9dbb49a23c1042f"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-interactions/terms.pdf",
+      "bytes": 28963,
+      "sha256": "6c410615839196f315c508144a12541a2e2935a747a0afcc672f56ce2ae6f9c4"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-review-fixes/1440-focus-dark-filter.png",
+      "bytes": 85018,
+      "sha256": "aab62728cc0025588c63f119205d13934a33516a289b5193ea3e9411eb7dc263"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-review-fixes/1440-focus-dark.png",
+      "bytes": 105796,
+      "sha256": "73095872729bdb41deb6318efefd230b32f37f7d39637cd548b0b41c0e08d8db"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-review-fixes/1440-focus-faq.png",
+      "bytes": 62072,
+      "sha256": "f3daf81dd5786af9d10143d44f4dccdd70b427acc6cf32e7ad9930a131b19dcf"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-review-fixes/1440-focus-ivory.png",
+      "bytes": 148445,
+      "sha256": "4b7580ffba30a767a34a9ebd4816e1e70a7d2c446486896766c962433ba8cbcb"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-review-fixes/320-focus-dark.png",
+      "bytes": 46421,
+      "sha256": "774ad6eb89460e9a7e0d584fc54537aea562f03557b91d199b93d4293ec2729c"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-review-fixes/320-focus-ivory.png",
+      "bytes": 39016,
+      "sha256": "16a2530139b30f74c4c13293da89299e0e0dc23ce6a2bcea72c2f0643d376fde"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-review-fixes/390-focus-dark-filter.png",
+      "bytes": 33907,
+      "sha256": "5779c89932e146d136f90f761e5f1d669150cdeb201a768e228cc89282192eb9"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-review-fixes/390-focus-dark.png",
+      "bytes": 49452,
+      "sha256": "54ec1e6f3301673c43b6d7caf2fa5035f6e4c3249afa1232d6702e4615b28531"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-review-fixes/390-focus-faq.png",
+      "bytes": 41291,
+      "sha256": "ec27669c01b4883c93ec3405a57a23c59d9b8a4908aa1704d5c8bc55caf198ff"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-review-fixes/390-focus-ivory.png",
+      "bytes": 47544,
+      "sha256": "0b1690d9990de8233eec60430f47f4876c1810050fa9369077e199b50ad69a85"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-review-fixes/768-focus-dark.png",
+      "bytes": 52380,
+      "sha256": "39222c72ac21fe202c763f6b8a26a6c9bc7870c07fd03e066f348b1600f4925f"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase4-review-fixes/768-focus-ivory.png",
+      "bytes": 65924,
+      "sha256": "a6d646c58e14a12af351db9a6c915c0b93e2d9753c7dd8ed07ced16e5728967a"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/1440-faqs-editor.png",
+      "bytes": 132862,
+      "sha256": "4063f11edd6dfbbc2b0c6c43a1bbb672d0dbdac1e4aaba9896275a1db91c8728"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/1440-landing-pages-editor.png",
+      "bytes": 118357,
+      "sha256": "f1dda7b57b24db3c57b5b474312f5d0028ab475a0f7d7a463817f43c081d7a9f"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/1440-pages-editor.png",
+      "bytes": 128486,
+      "sha256": "fbcb31a338079f9d1b48c801dace49b713117260ca419a5124e70085f7a7d0a0"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/1440-portfolio-editor.png",
+      "bytes": 133252,
+      "sha256": "a87077a37fea9856ff2d54bb9aab2901ae1d0deef2f7fbdb5795a5e0b88194ad"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/1440-testimonials-editor.png",
+      "bytes": 124474,
+      "sha256": "c01a408d2fb27b7b71ee9a0405be3fe8d64c62c62e56baa53b94a4f69a7ef41a"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/320-journal.png",
+      "bytes": 36130,
+      "sha256": "3606189d3a9ba29b16c9c1a5e5270c3bb14f49dd7d8385152b1c3e0408d9001b"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/320-products.png",
+      "bytes": 54736,
+      "sha256": "695803f703d0b9ae8157574d8f34adb388898743363a140bfb4e6524520d6d42"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/320-sections.png",
+      "bytes": 46990,
+      "sha256": "0a48ef0e1aed58d7754b98d62d4e18ad0c66270a319a931d3db94f9430989729"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/390-faqs-editor.png",
+      "bytes": 48438,
+      "sha256": "dd11539184112a5861a4aab4918da301a2dc689555124d0a1c33874490b1d2d2"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/390-landing-pages-editor.png",
+      "bytes": 42594,
+      "sha256": "7b8b179e27f3f81ed88dd7bf9d414c3ffd34a2974ceed1afd1f73240c83e53bc"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/390-pages-editor.png",
+      "bytes": 43520,
+      "sha256": "bd1c9dc25bcc18536e70b9db205ad7db83a2b12e5a966827f2282a51c584eb7e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/390-portfolio-editor.png",
+      "bytes": 47281,
+      "sha256": "cd95a0cf2ea6108852d77ef4ba34ffb13225882547c5d3fd5b18f88bb5e53695"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/390-testimonials-editor.png",
+      "bytes": 47459,
+      "sha256": "adc28d634631dc4851a778ab275b87284723659b1320f9e5538718366c4ba886"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/768-journal.png",
+      "bytes": 84121,
+      "sha256": "20481af23992af275778723b4d274dffccc836980bf1e07b0eb9ca30f8684161"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/768-products.png",
+      "bytes": 102985,
+      "sha256": "7d7f02a2ab8e3553a8f02d1629c394417e2d37ca1a38ac0b5a99523e43b1e351"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-coverage/768-sections.png",
+      "bytes": 81131,
+      "sha256": "6cb612981886cca4547f640e9edd2687184719261625af1f6d0f787ffa8950bf"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-article-editor.png",
+      "bytes": 140438,
+      "sha256": "d51f26ee46ba2c0de5faf0f4335d8a586c08e78643fa3260740d9de6b59a0cef"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-editorial-empty.png",
+      "bytes": 114622,
+      "sha256": "07213b2951061a9cd4d28aff3c2644a5d714ad310795d8a1868be58eb4ed463a"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-image-editor.png",
+      "bytes": 435626,
+      "sha256": "69961f940e40cacdbb0a6e06cdfd6fec86d4a80c64cf5ceae5335a9b6c6f1895"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-page-finder.png",
+      "bytes": 145961,
+      "sha256": "1de39611926851de967055d8c03c0facb0d1fac75417fa473b7d68228be579e1"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-product-customization-form.png",
+      "bytes": 117940,
+      "sha256": "e913c5ca1cc28be4c95851b825bcdb885f25cc1e26602df93817844e9d23313d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-product-general-details.png",
+      "bytes": 114460,
+      "sha256": "22f383ecdcc4f43a8657084860ad75eff8b23916eb3b9475ddb7e7f480035028"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-product-history-compare.png",
+      "bytes": 115960,
+      "sha256": "cdba71c6e2c0d0a3069ed6291107c8dc73c127e814409547553065f91b015d7e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-product-images-visuals.png",
+      "bytes": 242708,
+      "sha256": "134694a64f3e795b56840a02552998d1d82bb1fbb456609362af3079908dfdeb"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-product-story-specs.png",
+      "bytes": 130185,
+      "sha256": "d79783d1ba459d0d09d5495cba29bc9a731771f2dcc206d1f52bdbd77cf6fc58"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-product-translations.png",
+      "bytes": 102960,
+      "sha256": "ba1244104a99e88e93ce26b44fee0c1f7a6c1d6d5d94d29ffa339f98b96692e5"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-product-unsaved.png",
+      "bytes": 145104,
+      "sha256": "4ff04a3ee3ef2265a6faf92756a0ba0db7f1a28ce327066f4f9ae8770a40d9bb"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-saved-public-preview.png",
+      "bytes": 94919,
+      "sha256": "7cab13fcd6f8e530ff34c2e5759562453131a54657540c76f5fc3c46231cf3b9"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/1440-translation-editor.png",
+      "bytes": 118102,
+      "sha256": "e250b24bad113961a639d0eb9c9419e17bc1f68d66155a79680cbac0f1f0b693"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-article-editor.png",
+      "bytes": 45395,
+      "sha256": "d90a046de6f063b75e60475a0fd116c5d40d2224b743befc7d6bafbd41824599"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-editorial-empty.png",
+      "bytes": 39058,
+      "sha256": "7e97acb6bb0312f305c1f019b02a747913e9d8bcf81c508eb0f9b883e102597b"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-image-editor.png",
+      "bytes": 63550,
+      "sha256": "e95c14b23b8300a75e9bf6d6ba24be3779e13f3af185ef1dbe030e8adee723ff"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-mobile-crop.png",
+      "bytes": 164789,
+      "sha256": "38e5e145cd7e1e493e22cb52e52393f500f41cb0e571bf87b94994ff898f5ac6"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-navigation.png",
+      "bytes": 47015,
+      "sha256": "cfa6e63bd5baebeaea9f326d7621c823b57a329ebd79d476a259cd8722d6633d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-page-finder.png",
+      "bytes": 54811,
+      "sha256": "18284143469eb20298c15d258e958d5f0d9f594ac18caf9eb1c2f7824886a5b6"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-product-customization-form.png",
+      "bytes": 42109,
+      "sha256": "310050c254d2045fa6f9a039bedf6dae873d8771b36a4d38a477fe5a92f8891e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-product-general-details.png",
+      "bytes": 32089,
+      "sha256": "5f6c2f2e7ab47fe679b641c21f13b561ec6cc579d1e796929a902f3cb966cfe7"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-product-history-compare.png",
+      "bytes": 43095,
+      "sha256": "94cda0d449ecdf2b5e3ab4fbcdfe588b5bde3ef41ce750f6359c16ca83d71646"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-product-images-visuals.png",
+      "bytes": 114202,
+      "sha256": "0fd28fac7060ace77c5d5f97c9cbfae3c008c35f6ae306fd798da52e899c7220"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-product-story-specs.png",
+      "bytes": 50565,
+      "sha256": "38c0ff6627e2693b790e6dea94aef1f42426c1b3340872553a8b0328a7a105e5"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-product-translations.png",
+      "bytes": 30728,
+      "sha256": "3012a5f155ae1b94a85df2f530fd94f53386057a90740d6e96982d2b586ebddd"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-product-unsaved.png",
+      "bytes": 44238,
+      "sha256": "5ac20e2fc05c72a50ff3b0fa4442877c7a3343fc8e585161c4a57838d8693bdd"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-saved-public-preview.png",
+      "bytes": 61143,
+      "sha256": "92b9bd3a3294354c0d0772d15d07f483b29e267456037ec49041cf0c366fb34c"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-interactions/390-translation-editor.png",
+      "bytes": 35262,
+      "sha256": "d925e7627373861e6f5df6d886c235735d989fc70f1cbeb1cf15aef4e3888422"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/1440-state-conflict.png",
+      "bytes": 43841,
+      "sha256": "53fbf1c0c2ad5c31c030c36828ba32fabffb096946ff0137d8cf292447437090"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/1440-state-draft-saved.png",
+      "bytes": 40010,
+      "sha256": "88a34de81bd688420e4e5e333fc354fdb535a096f065de9c434dc44f06e93fec"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/1440-state-empty.png",
+      "bytes": 37905,
+      "sha256": "74425a0c165269b744ffd065447991864be120541e493ba6aa6187123fdfe826"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/1440-state-loading.png",
+      "bytes": 37211,
+      "sha256": "07d7fad4fd41a20455e3ea4fc474e0ad7381eec22a8f71a3c1bff1484b56e15a"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/1440-state-long-content.png",
+      "bytes": 110310,
+      "sha256": "86d5f73074ff5d158ad104fe13174a4560df2980c0f9eca8ccb7ed20a4caf935"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/1440-state-published-verification-needed.png",
+      "bytes": 47424,
+      "sha256": "641877eb868b3c9bd1e40985e0002bcabdc6af1334487859871105ed8fb195e9"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/1440-state-session-expired.png",
+      "bytes": 41846,
+      "sha256": "a0bf483a22e0858e84c320be1387a3c9c95aaafd3e3c6446f3949a4458d3f0a0"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/1440-state-unavailable-image.png",
+      "bytes": 42902,
+      "sha256": "9293304d4e40ca857bce803998990d4f66618694d04d2d331c6e0aa822556b6e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/1440-state-validation-error.png",
+      "bytes": 44591,
+      "sha256": "0b4f84eed119de3813ac5285203be0670cd60d38d4989f6c12386d56bae8883d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/390-state-conflict.png",
+      "bytes": 37689,
+      "sha256": "64b6cbf4f220fe8cee0a853dc568331ee6c68b69f839525915abe9fd2609e0cd"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/390-state-draft-saved.png",
+      "bytes": 33857,
+      "sha256": "bacdbf47fc6f89b4e6cc65d26163c7d4599b2556f97376dba1ab782e85957c64"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/390-state-empty.png",
+      "bytes": 31664,
+      "sha256": "5126239ee92c444fcb15fc808795b18940cbac2e27a534a10151bc6914df5f26"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/390-state-loading.png",
+      "bytes": 30776,
+      "sha256": "edadd941d8cbfc9ea9f0db61292c1888a3756617736c1c412c4ef8e33f71c30b"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/390-state-long-content.png",
+      "bytes": 67040,
+      "sha256": "9f0eaf45c7279737b476f55afc48fa00be4c8eceb131906535a4200426de4c5f"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/390-state-published-verification-needed.png",
+      "bytes": 40805,
+      "sha256": "af422eaab32f7adbb2753ffaace6c385c201dab64b6f6b0cdeaa83f117c0e32b"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/390-state-session-expired.png",
+      "bytes": 35681,
+      "sha256": "4418752e483353675f1e8dafa72a54b1d59fb0c11bc43f0964405c0ea6f8c7ce"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/390-state-unavailable-image.png",
+      "bytes": 35378,
+      "sha256": "429edab4a7bc8b2e7e78b65afe04a5b428730567864b572b9d8d2680d1a29d2d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase5-states/390-state-validation-error.png",
+      "bytes": 37978,
+      "sha256": "38d7e40e0d2ceedb05a281607911dab885a392c469c8fd1c8ec37b3dc7622c4e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-cleanup-review.png",
+      "bytes": 138981,
+      "sha256": "afc9f98ffae4602901ac6968ec18db12b27fabe9d34863300bc4b63d77a69f11"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-filter-empty.png",
+      "bytes": 134385,
+      "sha256": "6a4a62ff51715bcc881808ca96a1e533dd96703cd407b0f5125cd2f9a35083bb"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-full-analytics.png",
+      "bytes": 173581,
+      "sha256": "7c5e2f9da03e43359238914fba692011520e8c41c65e6e8bc414f2cdc0142ed8"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-full-exports.png",
+      "bytes": 138373,
+      "sha256": "5904aa6db2f8e8984bf7fb0ed3f70966035d88e8ed56aaf157a738c0477cead3"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-full-inquiries.png",
+      "bytes": 263542,
+      "sha256": "b4cb22a88ca3dad3c827641f00d0f71f281d0458bfb3f44c7c7ad3f2a102e6aa"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-full-navigation.png",
+      "bytes": 206485,
+      "sha256": "8c3ba6ea973a182c6ce517a617d59ea6349449ac0d18c4c13a29d1ec4e07da0c"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-full-overview.png",
+      "bytes": 414679,
+      "sha256": "39b3333df4bc64e7285e1e98ad8b86b1321879698587a57a4ff7051b1a1bc533"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-full-settings.png",
+      "bytes": 325689,
+      "sha256": "f5d83ff1463392d457ba46d385f471c24796ac7e998d273e6c150369ee232444"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-full-staff.png",
+      "bytes": 212724,
+      "sha256": "dedeff3019659608236d1b13b60471173b9aa6c67991f35fb7de9607a838f043"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-inquiry-record.png",
+      "bytes": 155345,
+      "sha256": "ff718a42f48fa9953dffb7dcedeb10993ad27d795a28ddfb54027f84b5149d78"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-login-unavailable.png",
+      "bytes": 50290,
+      "sha256": "04a74afa3216748ec24448bc9b0fe8c0a6b2fa03d96e938ca6e50080bab9ca8e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-login.png",
+      "bytes": 47683,
+      "sha256": "99632287ef8c5e35116675ce215379b2f7050c4cda96e72ecfe69bb50babd8f8"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-manual-review.png",
+      "bytes": 151502,
+      "sha256": "b567f2ba27485250bb09eacda5495080f6fa049570054cb1579686abe64647ab"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-saved-card.png",
+      "bytes": 86424,
+      "sha256": "32e534300710f59348390e3cec86723bb92baecdc9a5fbf303ff718796603187"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-staff-review.png",
+      "bytes": 164076,
+      "sha256": "46b2ee5c341821e51eb843fedc25c765f09d17a95e7cc80dd87f5419d0f76770"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-training-board-end.png",
+      "bytes": 135801,
+      "sha256": "de902b81cecab582176092e02aeb167aeb73814101a68d50769233d68ee45d41"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/1440-training-board.png",
+      "bytes": 376696,
+      "sha256": "3bdc9be92b8287f61492381e0d5d36273c71b4c77cf26321c5d0b10071f1548f"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-cleanup-review.png",
+      "bytes": 48842,
+      "sha256": "6dbcae27d65a1220b5c38d5259e2559803e15632876583d522413f9b9f631b8e"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-filter-empty.png",
+      "bytes": 42681,
+      "sha256": "0fea24ff3293ab3b9b85b6636b8795ef4648a363b2d4b396cf56f781198a08fc"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-full-analytics.png",
+      "bytes": 112505,
+      "sha256": "fa7da4f01422a11afa99916b624a24d704a410fcde03080543c75890cb099dcb"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-full-exports.png",
+      "bytes": 77916,
+      "sha256": "0e72ad78e8a74bb51c6207b3dfc02e83725f0bf3dd3b8ba67b47f1ceb7cdf5d1"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-full-inquiries.png",
+      "bytes": 213117,
+      "sha256": "53e15558ace901e78637aabe4b8939c13a005edaaef20e59eae0951071734661"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-full-navigation.png",
+      "bytes": 126119,
+      "sha256": "69f4e58f881402267d484b9440091abd5843c91eff6a8e5f4eb5e5b28c13760f"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-full-overview.png",
+      "bytes": 329360,
+      "sha256": "b962b25213294bbc8b304250910f361836f574a46d56bec04aaa36ce125f7bb5"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-full-settings.png",
+      "bytes": 259906,
+      "sha256": "71f35d0ae434bbfcf52138c99fdaf5f5e7722ee2a4e632ddff658c7239ed4425"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-full-staff.png",
+      "bytes": 148000,
+      "sha256": "46fc9191f21ff121548ec138ac618ee5555139d41f4b68ed610b117a3d89f7a8"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-inquiry-record.png",
+      "bytes": 56125,
+      "sha256": "df181171eeadada3eb43c13969bcf1d17890acaa63be52a06c3db8dd253ebbcb"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-login.png",
+      "bytes": 38372,
+      "sha256": "93fefbafb3b9f3433be7d92cead5697779d34f7b54ad7408e0429969aafe3eda"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-manual-review.png",
+      "bytes": 59940,
+      "sha256": "c48861daeef9237cacf3c84a531ac4bb08b951241a39ff2c72efc39506a2b473"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-saved-card.png",
+      "bytes": 80739,
+      "sha256": "c8adfc45ae78a04be47813df48d5c656af44190821727c4665c6d05515c9b306"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-staff-review.png",
+      "bytes": 60273,
+      "sha256": "62318c540a1e8c05b18bf490ca25166cac8126f98e6a508bbf95307ebc015c2d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-training-board.png",
+      "bytes": 167080,
+      "sha256": "53b10b86020761c40edbde2aa0b7421a1a1f1c7ce64ac4ac06d300b945830afc"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/390-training-closed.png",
+      "bytes": 171483,
+      "sha256": "ac076e7e83b7704f032ddf7b24793dd05f029895187afa6a8d715e3ddb28ed14"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-previews/saved-inquiry-card.pdf",
+      "bytes": 37133,
+      "sha256": "406e3bfa3f1f8e99a382432a6558e596b9e56c5d8186352d05da75664f8cf698"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-states/1440-session-expired.png",
+      "bytes": 277625,
+      "sha256": "ad471a363e036ef426923bf40cdfc4fe2a113f42d7643db6ffd2583e703fb74b"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-states/1440-unavailable.png",
+      "bytes": 141790,
+      "sha256": "72d79bb5d62951f48f590bc46ccbdacd6a6d33b78e524a14891149da6f87948d"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-states/390-session-expired.png",
+      "bytes": 228405,
+      "sha256": "38982d7ad34a826489cb26b44efa1e49a56228d003ba91f21452845d2599b5fc"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//redesign-phase6-states/390-unavailable.png",
+      "bytes": 83025,
+      "sha256": "9f01435cab6a3fa6ed55d539131f9658c913aa73437291d29ea0b0ddcd96243b"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//studio-analytics-end.png",
+      "bytes": 173695,
+      "sha256": "9725550396fc256bc5ca75c7c94ac73d3b3059fa1a7870a4e423c44cf350a9ab"
+    },
+    {
+      "path": "output/playwright/redesign-phase7//studio-navigation-end.png",
+      "bytes": 204938,
+      "sha256": "8d7e5c8218450cd6468a208b96b5a30c0fb774708bb7d51abbcf64d8db06fe33"
+    }
+  ],
+  "reportPresentation": {
+    "checks": [
+      "1440 report opens",
+      "1440 report images decode",
+      "1440 no document overflow",
+      "1440 release hold visible",
+      "390 report opens",
+      "390 report images decode",
+      "390 no document overflow",
+      "390 release hold visible",
+      "/report.md resolves",
+      "/verification.json resolves",
+      "/release-checklist.md resolves",
+      "Report server rejects mutation"
+    ]
+  }
+}

@@ -1,0 +1,946 @@
+[
+  {
+    "routePattern": "/[collection]",
+    "source": "src/app/[collection]/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/about",
+    "source": "src/app/about/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/accessibility",
+    "source": "src/app/accessibility/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/architects",
+    "source": "src/app/architects/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/care",
+    "source": "src/app/care/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/commission/customize",
+    "source": "src/app/commission/customize/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/commission",
+    "source": "src/app/commission/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/contact",
+    "source": "src/app/contact/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/faq/[slug]",
+    "source": "src/app/faq/[slug]/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/faq",
+    "source": "src/app/faq/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/imprint",
+    "source": "src/app/imprint/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/inquiry/received",
+    "source": "src/app/inquiry/received/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/journal/[slug]",
+    "source": "src/app/journal/[slug]/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/journal",
+    "source": "src/app/journal/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/materials",
+    "source": "src/app/materials/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/materials-care",
+    "source": "src/app/materials-care/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/our-story",
+    "source": "src/app/our-story/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/p/[slug]",
+    "source": "src/app/p/[slug]/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/",
+    "source": "src/app/page.tsx",
+    "phase": 3,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/personalize",
+    "source": "src/app/personalize/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/pieces/[slug]/customize",
+    "source": "src/app/pieces/[slug]/customize/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/pieces/[slug]",
+    "source": "src/app/pieces/[slug]/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/portfolio/[slug]",
+    "source": "src/app/portfolio/[slug]/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/portfolio",
+    "source": "src/app/portfolio/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preserve",
+    "source": "src/app/preserve/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/states/[kind]",
+    "source": "src/app/preview/states/[kind]/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/states",
+    "source": "src/app/preview/states/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/studio/[...path]",
+    "source": "src/app/preview/studio/[...path]/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/studio/content/[id]",
+    "source": "src/app/preview/studio/content/[id]/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/studio/content/new",
+    "source": "src/app/preview/studio/content/new/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/studio/content",
+    "source": "src/app/preview/studio/content/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/studio/media",
+    "source": "src/app/preview/studio/media/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/studio/modules/[module]",
+    "source": "src/app/preview/studio/modules/[module]/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/studio",
+    "source": "src/app/preview/studio/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/studio/products/[id]/form",
+    "source": "src/app/preview/studio/products/[id]/form/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/studio/products/[id]",
+    "source": "src/app/preview/studio/products/[id]/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/studio/products/new",
+    "source": "src/app/preview/studio/products/new/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/preview/studio/products",
+    "source": "src/app/preview/studio/products/page.tsx",
+    "phase": 4,
+    "classification": "preview-harness-preserve",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/privacy",
+    "source": "src/app/privacy/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/process",
+    "source": "src/app/process/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/returns-cancellations",
+    "source": "src/app/returns-cancellations/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/saved-pieces",
+    "source": "src/app/saved-pieces/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/search",
+    "source": "src/app/search/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/shipping-delivery",
+    "source": "src/app/shipping-delivery/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/studio/[...path]",
+    "source": "src/app/studio/[...path]/page.tsx",
+    "phase": 6,
+    "classification": "studio-shell/child",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/studio/editorial-order/preview/frame",
+    "source": "src/app/studio/editorial-order/preview/frame/page.tsx",
+    "phase": 6,
+    "classification": "studio-shell/child",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/studio/editorial-order/preview",
+    "source": "src/app/studio/editorial-order/preview/page.tsx",
+    "phase": 6,
+    "classification": "studio-shell/child",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/studio/inquiries/[id]/card",
+    "source": "src/app/studio/inquiries/[id]/card/page.tsx",
+    "phase": 6,
+    "classification": "studio-shell/child",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/studio/login",
+    "source": "src/app/studio/login/page.tsx",
+    "phase": 6,
+    "classification": "studio-shell/child",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/studio",
+    "source": "src/app/studio/page.tsx",
+    "phase": 6,
+    "classification": "studio-shell/child",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/studio/presentation/preview/frame",
+    "source": "src/app/studio/presentation/preview/frame/page.tsx",
+    "phase": 6,
+    "classification": "studio-shell/child",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/studio/presentation/preview",
+    "source": "src/app/studio/presentation/preview/page.tsx",
+    "phase": 6,
+    "classification": "studio-shell/child",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/studio/preview/frame",
+    "source": "src/app/studio/preview/frame/page.tsx",
+    "phase": 6,
+    "classification": "studio-shell/child",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/studio/preview",
+    "source": "src/app/studio/preview/page.tsx",
+    "phase": 6,
+    "classification": "studio-shell/child",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/studio/preview/states",
+    "source": "src/app/studio/preview/states/page.tsx",
+    "phase": 6,
+    "classification": "studio-shell/child",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/studio/reference/[id]",
+    "source": "src/app/studio/reference/[id]/page.tsx",
+    "phase": 6,
+    "classification": "studio-shell/child",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/terms",
+    "source": "src/app/terms/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/testimonials/[slug]",
+    "source": "src/app/testimonials/[slug]/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  },
+  {
+    "routePattern": "/testimonials",
+    "source": "src/app/testimonials/page.tsx",
+    "phase": 4,
+    "classification": "public",
+    "states": [
+      "opening",
+      "full scroll",
+      "links/actions",
+      "keyboard/focus",
+      "mobile",
+      "language layout where supported",
+      "loading/error/empty where supported"
+    ],
+    "status": "mapped; no runtime route changed"
+  }
+]

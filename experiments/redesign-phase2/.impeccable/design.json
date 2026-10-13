@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T10:27:31Z",
+  "title": "Design System: RivyaLivingArt Phase 2 local motion and media foundation",
+  "extensions": {
+    "scope": {
+      "designDocument": "../DESIGN.md",
+      "status": "Phase 1 previews approved; Phase 2 local foundation awaits owner animation/media review before Phase 3",
+      "productionAuthority": false,
+      "integration": "Additive components; no existing public or Studio route integration",
+      "sourceFiles": [
+        "../../../PRODUCT.md",
+        "../DIRECTION.md",
+        "../README.md",
+        "../App.tsx",
+        "../styles.css",
+        "../media-manifest.json",
+        "../../../src/components/design-foundation/foundation.css",
+        "../../../src/components/design-foundation/primitives.tsx",
+        "../../../src/components/design-foundation/MotionSurface.tsx",
+        "../../../src/components/design-foundation/motion-capability.ts",
+        "../../../src/components/design-foundation/ResponsivePicture.tsx",
+        "../../../src/components/design-foundation/MaterialFilm.tsx"
+      ],
+      "method": "Source extraction; no browser run in this documentation pass",
+      "verificationLimits": "Local-preview finish disposition supplied by the parent reviewer. No private database audit, native/device/human acceptance, production verification or Phase 3 authorization is inferred.",
+      "detector": "DIRECTION.md records Windows launcher failure: The system cannot find the batch label specified - cache_directory_failed. This is not a successful detector result.",
+      "preservedDrift": [
+        "Phase 1 DESIGN.md and sidecar retain historical approval-pending and Phase-2-not-started wording."
+      ]
+    },
+    "colorMeta": {
+      "obsidian": {
+        "role": "neutral",
+        "displayName": "Obsidian"
+      },
+      "ocean": {
+        "role": "neutral",
+        "displayName": "Deep ocean"
+      },
+      "sapphire": {
+        "role": "primary",
+        "displayName": "Sapphire"
+      },
+      "champagne": {
+        "role": "primary",
+        "displayName": "Champagne"
+      },
+      "ivory": {
+        "role": "neutral",
+        "displayName": "Ivory"
+      },
+      "stone": {
+        "role": "neutral",
+        "displayName": "Stone"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted dark-surface copy"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Dark control separator"
+      },
+      "light-muted": {
+        "role": "neutral",
+        "displayName": "Muted light-surface copy"
+      },
+      "field-border": {
+        "role": "neutral",
+        "displayName": "Field border"
+      },
+      "studio-divider": {
+        "role": "neutral",
+        "displayName": "Studio row divider"
+      }
+    },
+    "tonalRampPolicy": "No tonal ramps exist in the source. Synthetic ramps are omitted to preserve this extraction's actual-source-only boundary.",
+    "typographyMeta": {
+      "display": {
+        "displayName": "Public display baseline",
+        "purpose": "Foundation h1; opening overrides and breakpoints appear in DESIGN.md."
+      },
+      "headline": {
+        "displayName": "Public headline",
+        "purpose": "Foundation h2; page-specific overrides are documented."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Readable foundation text, 70ch maximum paragraphs."
+      },
+      "button": {
+        "displayName": "Action label",
+        "purpose": "All three foundation button variants."
+      },
+      "media-title": {
+        "displayName": "Media title",
+        "purpose": "Image card figcaption headings."
+      },
+      "studio-title": {
+        "displayName": "Studio page title",
+        "purpose": "Media library h1."
+      },
+      "studio-row": {
+        "displayName": "Studio media row",
+        "purpose": "Functional image titles."
+      },
+      "caption": {
+        "displayName": "Small disclosure",
+        "purpose": "Small disclosure class; other captions retain documented source-specific line heights."
+      }
+    },
+    "shadows": [
+      {
+        "name": "current-preview",
+        "value": "inset 0 -2px #b89b63",
+        "purpose": "Current preview link indicator, not elevation."
+      },
+      {
+        "name": "pressed-button",
+        "value": "inset 0 -3px currentColor",
+        "purpose": "Foundation aria-pressed=true state, not elevation."
+      }
+    ],
+    "backdrop": {
+      "value": "rgb(8 10 14 / .87)",
+      "purpose": "Native crop dialog backdrop"
+    },
+    "motion": [
+      {
+        "name": "heading-settle",
+        "value": "y:28; duration:.85; ease:expo.out; start:top 90%; once:true",
+        "purpose": "Scoped data-rv-reveal headings; never changes opacity."
+      },
+      {
+        "name": "shallow-parallax",
+        "value": "yPercent:-3 to 3; ease:none; start:top bottom; end:bottom top; scrub:true",
+        "purpose": "Scoped data-rv-parallax picture transforms."
+      },
+      {
+        "name": "native-anchor",
+        "value": "scroll-behavior:smooth",
+        "purpose": "Only when enabled, smooth preference true, unpaused and capability query matches; restores prior inline value."
+      },
+      {
+        "name": "button-colours",
+        "value": "background-color .18s,border-color .18s,color .18s",
+        "purpose": "Only under prefers-reduced-motion:no-preference; default CSS ease."
+      },
+      {
+        "name": "image-hover",
+        "value": "transform .4s ease-out; scale(1.025)",
+        "purpose": "Image inspect buttons only under hover:hover and no reduced motion; separate from GSAP capability query."
+      }
+    ],
+    "motionCapability": {
+      "query": "(min-width: 900px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)",
+      "serverSnapshot": false,
+      "staticLabels": [
+        "Static motion",
+        "Native scrolling"
+      ],
+      "staticControls": "Disabled; aria-pressed=false. Touch, reduced-motion and narrow viewports keep native scrolling and static compositions.",
+      "cleanup": "useGSAP scope and revertOnUpdate; matchMedia reversion; query listener and animation-frame cleanup; restore prior document scrollBehavior.",
+      "dialog": "Opening crop dialog pauses scoped transforms and smoothing; close restores prior scrolling and opener focus.",
+      "smoother": "None. ScrollSmoother prototype was rejected; no transformed full-page wrapper or pinning remains.",
+      "studio": "Does not mount MotionSurface. Native scrolling."
+    },
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "stacked-layout",
+        "value": "800px"
+      },
+      {
+        "name": "minimum-gsap-width",
+        "value": "900px"
+      }
+    ],
+    "breakpointPolicy": "Layout queries use max-width; GSAP uses min-width plus hover, pointer and reduced-motion capability. Focal selection follows the 800px layout query.",
+    "focus": {
+      "outline": "3px solid var(--rv-champagne)",
+      "offset": "5px",
+      "lightSurface": "var(--rv-sapphire)"
+    },
+    "media": {
+      "picture": "AVIF source first; WebP srcset/fallback; intrinsic dimensions; async decoding; lazy by default; priority eager/high. Cover and separate focal pairs; readable image failure fallback.",
+      "parallaxOverscan": "Picture height 110%, absolute top -5%; clipped frame remains in static composition.",
+      "film": "4:3 cover; poster; native controls; MP4 before optional WebM; muted loop playsInline preload=none; no autoplay. Explicit Play/Pause button; status errors; pause offscreen, hidden or on unmount; no automatic resume.",
+      "crop": "Native modal dialog, contained source composition versus proposed 4:5 cover; body overflow lock, Escape/Close, restore opener focus without scrolling.",
+      "provenance": "Six supplied Drive sources, hashes and 36 responsive derivatives; new studioId values remain null. Visualization assets do not establish customer, worker, completed-project or permission evidence."
+    },
+    "snippets": "Static source-derived component specimens only. Scoped source variables use literal fallbacks because foundation tokens are not root globals. Local font files are not embedded; fallbacks remain explicit. No React, GSAP, external assets, publication or persistence is embedded."
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Champagne action with original source hover, focus and disabled treatment.",
+      "html": "<button class=\"ds-primary\" type=\"button\">Explore the material <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:12px 22px;border:1px solid var(--rv-champagne,#b89b63);border-radius:0;cursor:pointer;background:var(--rv-champagne,#b89b63);color:var(--rv-obsidian,#080a0e);font:500 13px/1.4 Inter,Arial,sans-serif}.ds-primary:focus-visible{outline:3px solid var(--rv-champagne,#b89b63);outline-offset:5px}.ds-primary:disabled{opacity:.55;cursor:not-allowed}.ds-primary[aria-pressed=true]{box-shadow:inset 0 -3px currentColor}@media(hover:hover){.ds-primary:hover{background:var(--rv-stone,#ddd6cb);border-color:var(--rv-stone,#ddd6cb)}}@media(prefers-reduced-motion:no-preference){.ds-primary{transition:background-color .18s,border-color .18s,color .18s}}"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Transparent action shown on its ocean context; native focus and hover.",
+      "html": "<div class=\"ds-ocean\"><button class=\"ds-secondary\" type=\"button\">Play film</button></div>",
+      "css": ".ds-ocean{background:var(--rv-ocean,#08283a);color:var(--rv-ivory,#f4f1e9);padding:20px}.ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:12px 22px;border:1px solid var(--rv-line,#41505c);border-radius:0;cursor:pointer;background:transparent;color:inherit;font:500 13px/1.4 Inter,Arial,sans-serif}.ds-secondary:focus-visible{outline:3px solid var(--rv-champagne,#b89b63);outline-offset:5px}.ds-secondary:disabled{opacity:.55;cursor:not-allowed}@media(hover:hover){.ds-secondary:hover{border-color:currentColor}}@media(prefers-reduced-motion:no-preference){.ds-secondary{transition:background-color .18s,border-color .18s,color .18s}}"
+    },
+    {
+      "name": "Studio action",
+      "kind": "button",
+      "refersTo": "button-studio",
+      "description": "Sapphire action and disabled publication specimen; static snippet does not save anything.",
+      "html": "<div class=\"ds-workspace\"><button class=\"ds-studio\" type=\"button\">Test local confirmation</button><button class=\"ds-studio\" type=\"button\" disabled>Publish unavailable in preview</button></div>",
+      "css": ".ds-workspace{display:flex;gap:12px;flex-wrap:wrap;background:var(--rv-ivory,#f4f1e9);padding:20px}.ds-studio{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:12px 22px;border:1px solid var(--rv-sapphire,#164e6b);border-radius:0;cursor:pointer;background:var(--rv-sapphire,#164e6b);color:var(--rv-ivory,#f4f1e9);font:500 13px/1.4 Inter,Arial,sans-serif}.ds-studio:focus-visible{outline:3px solid var(--rv-sapphire,#164e6b);outline-offset:5px}.ds-studio:disabled{opacity:.55;cursor:not-allowed}@media(hover:hover){.ds-studio:hover{background:var(--rv-ocean,#08283a)}}@media(prefers-reduced-motion:no-preference){.ds-studio{transition:background-color .18s,border-color .18s,color .18s}}"
+    },
+    {
+      "name": "Labelled field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Local caption field with associated hint; source has no special hover treatment.",
+      "html": "<div class=\"ds-light\"><div class=\"ds-field\"><label for=\"ds-caption\">Caption example</label><input id=\"ds-caption\" value=\"Material visualization\" aria-describedby=\"ds-caption-hint\"><p id=\"ds-caption-hint\">This field is a local interaction sample.</p></div></div>",
+      "css": ".ds-light{background:var(--rv-ivory,#f4f1e9);color:var(--rv-ink,#18202a);padding:20px;font:400 15px/1.75 Inter,Arial,sans-serif}.ds-field{display:grid;gap:8px;max-width:38rem}.ds-field label{font-weight:500}.ds-field input{min-height:48px;width:100%;border:1px solid #74838b;border-radius:0;background:transparent;color:inherit;padding:10px 12px;caret-color:var(--rv-sapphire,#164e6b);font:inherit}.ds-field input::placeholder{color:#405363}.ds-field input:focus-visible{outline:3px solid var(--rv-sapphire,#164e6b);outline-offset:5px}.ds-field input[aria-invalid=true]{border-width:2px}.ds-field p{font-size:13px;margin:0}"
+    },
+    {
+      "name": "Public section navigation",
+      "kind": "nav",
+      "description": "Native anchor navigation; review links and diagnostics are not production navigation primitives.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Preview sections\"><a href=\"#material\">Material film</a><a href=\"#media\">Explore media</a><a href=\"#reading\">Reading rhythm</a></nav>",
+      "css": ".ds-nav{display:flex;gap:32px;background:var(--rv-obsidian,#080a0e);color:var(--rv-ivory,#f4f1e9);padding:20px;font:400 13px/1.75 Inter,Arial,sans-serif}.ds-nav a{color:inherit;text-decoration:none;text-underline-offset:5px}.ds-nav a:hover{text-decoration:underline}.ds-nav a:focus-visible{outline:3px solid var(--rv-champagne,#b89b63);outline-offset:5px}@media(max-width:800px){.ds-nav{gap:10px;flex-direction:column;font-size:11px}.ds-nav a:last-child{display:none}}"
+    },
+    {
+      "name": "Readable media fallback",
+      "kind": "custom",
+      "description": "Actual ResponsivePicture error surface; no fabricated media or external asset is needed.",
+      "html": "<div class=\"ds-fallback\" role=\"img\" aria-label=\"River Channel design visualization\">Image unavailable. River Channel design visualization</div>",
+      "css": ".ds-fallback{min-height:220px;display:grid;place-content:center;background:var(--rv-ocean,#08283a);color:var(--rv-ivory,#f4f1e9);padding:24px;font:400 15px/1.75 Inter,Arial,sans-serif}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Contemporary material gallery",
+    "overview": "The owner approved the Phase 1 previews and authorized Phase 2 only. This record extracts the additive foundation and its local animation/media specimen. It extends the approved palette and direction; it does not establish root design authority, public or Studio route integration, or authorization for Phase 3. Animation and media remain subject to owner review before that next phase.\n\nResin imagery leads the public experience within dark ocean framing, restrained champagne actions and generous spacing. Ivory reading and working surfaces support sustained attention; serif public headings pair with functional Inter controls. The original logo, main colours, existing product story and Journal excerpt remain intact. Qualitative language follows the approved direction rather than an invented research or creative interview.",
+    "keyCharacteristics": [
+      "Original identity and existing content remain intact.",
+      "Public image movement is shallow, optional and capability-aware.",
+      "Reading copy stays visible and does not animate.",
+      "Media playback begins only by explicit user action.",
+      "Studio uses native scrolling and local, clearly labelled controls.",
+      "Foundation components remain opt-in and disconnected from operational routes."
+    ],
+    "rules": [
+      {
+        "name": "The Original Identity Rule",
+        "body": "Preserve original logo bytes, main colour values, product identity and media disclosures. The logo remains contained on ivory without recolouring or filters.",
+        "section": "colors"
+      },
+      {
+        "name": "The Visible Content Rule",
+        "body": "Text remains readable before JavaScript and throughout motion; motion never gates content access.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep this foundation scoped to the authorized Phase 2 local preview until owner animation/media review and explicit Phase 3 authorization.",
+      "**Do** preserve logo bytes, main colours, existing content, stored media associations and manual sending boundaries.",
+      "**Do** report effective static motion states and keep Studio and reading text on native, readable layouts.",
+      "**Do** preserve explicit film playback, visible focus, media failure messages and crop-dialog focus restoration.",
+      "**Do** distinguish source extraction, local browser receipts, owner review and native/device/human evidence."
+    ],
+    "donts": [
+      "**Don't** promote these files to root design authority or claim full-site implementation, private database verification or production acceptance.",
+      "**Don't** add ScrollSmoother, transformed page scrolling, hidden text reveals or Studio parallax from this specimen.",
+      "**Don't** publish selections, assign fabricated Studio IDs, save proposed crops or infer business evidence from visualization assets.",
+      "**Don't** ship experiment labels, review controls or diagnostics as public product UI."
+    ]
+  }
+}
