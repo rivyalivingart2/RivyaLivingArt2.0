@@ -1,6 +1,6 @@
 # Draft PR: Redesign the public website and Studio with preserved content and controlled motion
 
-This is a local PR body draft. No GitHub PR has been created; owner release authorization is still required.
+Owner authorized the complete GitHub release after reviewing the final Phase 7 report. This PR includes all seven approved redesign phases and their verification documentation.
 
 ## Problem and resulting behavior
 
@@ -32,4 +32,4 @@ All 1,657 Phase 7 start rows in 13 protected local scopes are unchanged. All 1,6
 
 The local QA database has 480 older unpublished editorial drafts; this PR must not publish, import or overwrite them into production. Native device/reader/zoom, independent language/media-rights, genuine-inquiry and field evidence are not supplied by automated tests. Existing admin closures remain historical. Full report: `PHASE-7-FINAL-REPORT.md`; machine receipts and exact coverage are alongside it.
 
-After explicit owner authorization, recheck the main base and source candidate, run PR checks, use the normal detailed-PR merge workflow, verify the deployment's exact commit and inspect public routes/media plus authenticated Studio. Do not bypass branch protection or treat a documentation merge as proof of production publication.
+Owner authorization is recorded in AGENTS.md and CONTINUE.md. The main base and unchanged application candidate were freshly rechecked. Run PR checks, use the normal detailed-PR merge workflow, verify the deployment's exact commit and inspect public routes/media plus authenticated Studio. Do not bypass branch protection or treat a documentation merge as proof of production publication.

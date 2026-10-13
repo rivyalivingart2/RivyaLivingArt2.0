@@ -1,3 +1,10 @@
+# Current checkpoint — all seven redesign phases authorized for GitHub release
+
+13 October 2026: after receiving the Phase 7 report and confirming redesign completion, the owner explicitly instructed: "PUSH ALL THINGS INTO GITHUB". This authorizes the prepared detailed PR into main and normal release verification. The former local-only hold is superseded. Candidate application remains approved Phase 6 `15a0307`; verified package is `b1ae2d9`. Main was freshly fetched at `4cadf21b380a8f3753232318fbb78027aa09ffc5`; no drift or working-tree changes were found.
+
+Publish all seven phases through a detailed PR, verify hosting checks, merge without bypassing protection, and confirm the exact production commit. Record live verification and any session-related limits. Preserve the Phase 7 report findings (14 inconclusive accessibility instances, 62 existing lint warnings) and all content/data. Do not replay imports, publications, training fixtures or migrations. GitHub PR/deployment receipt will record completion; until verified, do not claim release complete.
+
+---
 # Continuation — Phase 7 final local verification complete; release held
 
 ## Current instruction and stop
