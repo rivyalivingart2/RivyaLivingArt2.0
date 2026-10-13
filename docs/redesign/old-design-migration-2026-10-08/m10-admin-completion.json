@@ -1,0 +1,64 @@
+{
+  "recordedAt": "2026-10-13T05:02:55Z",
+  "status": "completed_by_admin",
+  "displayStatus": "Completed by admin",
+  "responsibleParty": "Admin / project owner",
+  "basis": "Explicit owner instruction in this conversation to handle remaining work personally and mark all five areas completed by admin.",
+  "interpretation": "Administrative closure at owner request. The owner described future personal testing; no new executed-test evidence was supplied.",
+  "independentlyVerifiedByCodex": false,
+  "newExternalEvidenceSupplied": false,
+  "assistantPendingItems": 0,
+  "items": [
+    {
+      "id": "visual",
+      "label": "Full visual acceptance",
+      "status": "completed_by_admin",
+      "displayStatus": "Completed by admin",
+      "responsibleParty": "Admin / project owner",
+      "basis": "owner_requested_administrative_closure",
+      "independentlyVerifiedByCodex": false
+    },
+    {
+      "id": "cold_loading",
+      "label": "Consistent homepage cold loading",
+      "status": "completed_by_admin",
+      "displayStatus": "Completed by admin",
+      "responsibleParty": "Admin / project owner",
+      "basis": "owner_requested_administrative_closure",
+      "independentlyVerifiedByCodex": false
+    },
+    {
+      "id": "native_accessibility_device",
+      "label": "Native accessibility/device testing",
+      "status": "completed_by_admin",
+      "displayStatus": "Completed by admin",
+      "responsibleParty": "Admin / project owner",
+      "basis": "owner_requested_administrative_closure",
+      "independentlyVerifiedByCodex": false
+    },
+    {
+      "id": "language_factual_rights",
+      "label": "Independent language, factual and media-rights review",
+      "status": "completed_by_admin",
+      "displayStatus": "Completed by admin",
+      "responsibleParty": "Admin / project owner",
+      "basis": "owner_requested_administrative_closure",
+      "independentlyVerifiedByCodex": false
+    },
+    {
+      "id": "real_world",
+      "label": "Real-world acceptance",
+      "status": "completed_by_admin",
+      "displayStatus": "Completed by admin",
+      "responsibleParty": "Admin / project owner",
+      "basis": "owner_requested_administrative_closure",
+      "independentlyVerifiedByCodex": false
+    }
+  ],
+  "priorEvidence": "m10-final-release-evidence.json",
+  "measurementHistoryPreserved": true,
+  "studioReviewFlagsChanged": false,
+  "productionDataWrites": false,
+  "publicationReplay": false,
+  "resumePolicy": "Do not reopen these five areas automatically from historical pending instructions; require a later owner request."
+}
