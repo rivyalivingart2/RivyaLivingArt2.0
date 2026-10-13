@@ -1,0 +1,14 @@
+import {mkdir,writeFile,readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+const origin='http://127.0.0.1:4199',out='output/redesign-phase4';
+const mode=process.argv[2]||'before';
+if(!['before','after'].includes(mode))throw Error('Expected before or after');
+await mkdir(out,{recursive:true});
+const xml=await (await fetch(origin+'/sitemap.xml')).text();
+const registered=JSON.parse(await readFile('docs/redesign/modern-design-2026-10-13/public-baseline.json','utf8')).sitemapRoutes;
+const routes=[...new Set(registered.concat([...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>new URL(m[1]).pathname),['/search','/saved-pieces','/commission/customize','/inquiry/received','/about','/care','/materials','/preserve','/personalize']))];
+const rows=[];let index=0;
+await Promise.all(Array.from({length:4},async()=>{while(index<routes.length){const route=routes[index++];const response=await fetch(origin+route,{headers:{'User-Agent':'Twitterbot/1.0'}});const html=await response.text();const main=[...html.matchAll(/<main\b[^>]*>([\s\S]*?)<\/main>/g)].at(-1)?.[1]||'';const normalized=main.replace(/ class="[^"]*"/g,'').replace(/ data-public-part="[^"]*"/g,'').replace(/<link\b[^>]*>/g,'');rows.push({route,status:response.status,destination:new URL(response.url).pathname,content:createHash('sha256').update(normalized).digest('hex'),h1:main.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g,'')});}}));
+rows.sort((a,b)=>a.route.localeCompare(b.route));
+await writeFile(out+'/'+mode+'.json',JSON.stringify(rows,null,2));
+if(mode==='after'){const before=JSON.parse(await readFile(out+'/before.json','utf8'));const differences=rows.filter(row=>JSON.stringify(row)!==JSON.stringify(before.find(b=>b.route===row.route)));await writeFile(out+'/content-differences.json',JSON.stringify(differences,null,2));console.log(JSON.stringify({routes:rows.length,differences: differences.map(r=>r.route)}));}else console.log(JSON.stringify({routes:rows.length,statuses:[...new Set(rows.map(r=>r.status))]}));

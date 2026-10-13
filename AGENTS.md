@@ -1,3 +1,12 @@
+# Current checkpoint — modern redesign Phase 4 ready for owner review
+
+13 October 2026: the owner approved Phase 3 and authorized Phase 4 only. Remaining public page families are implemented locally on `codex/redesign-phase4-public-pages`, parent `2a3c9a3`. Read `docs/redesign/modern-design-2026-10-13/CONTINUE.md`, `PHASE-4-REVIEW.md` and `phase4-verification.json` first. Review: http://127.0.0.1:4181/review; app: http://127.0.0.1:4199/.
+
+Logo, palette, content, records, media/crops and functionality preserved. All 13 protected local scope hashes match, 1,641 rows unchanged. Final build/types/lint and 344 unit/403 runtime tests pass. Browser evidence records one local form-session rate-limit difference. Reviewer scored F1/F2 resolved and returned ship for that fix-list verdict. Do not turn this into native/device/human or production certification.
+
+**Stop before Phase 5 pending owner preview approval.** Studio redesign/preview reconciliation remains Phase 5. No release, push, PR, publication, production or Drive record changes authorized by this phase. Preserve older records below as historical; do not replay old holds/publications. Scrapers, old-product transfers and backups excluded.
+
+---
 # Current checkpoint — modern redesign Phase 2 ready for owner review
 
 13 October 2026: the owner approved Phase 1 design previews and explicitly authorized **Phase 2 only**. The additive design/motion/media foundation and isolated animation/media/Studio-control preview are complete locally. Read `docs/redesign/modern-design-2026-10-13/PHASE-2-REVIEW.md`, `phase2-verification.json`, `phase2-media-register.json` and `CONTINUE.md` first. Branch: `codex/redesign-phase2-foundation`.

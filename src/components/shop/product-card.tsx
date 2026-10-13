@@ -11,8 +11,8 @@ import s from './shop.module.css';
 
 export function ProductCard({product: p}: {product: CardProduct}) {
   return (
-    <article className={pstyle.savedCard}><Link className={s.card} prefetch={false} href={'/pieces/' + p.slug}>
-      <div className={s.cardImage}>
+    <article className={pstyle.savedCard}><Link data-public-part="card" className={s.card} prefetch={false} href={'/pieces/' + p.slug}>
+      <div data-public-part="card-image" className={s.cardImage}>
         <Image 
           src={p.image} 
           alt={p.imageAlt || p.name + ' — ' + p.subtitle} 

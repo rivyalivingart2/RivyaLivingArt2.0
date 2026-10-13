@@ -1,0 +1,2656 @@
+{
+  "at": "2026-10-13T12:09:51.546Z",
+  "phase": 4,
+  "scope": "Local remaining public page bodies and representative template states",
+  "branch": "codex/redesign-phase4-public-pages",
+  "parent": "2a3c9a3",
+  "productionChanged": false,
+  "phase5Started": false,
+  "validation": {
+    "build": "passed final source",
+    "typescript": "passed via final build and preceding explicit typecheck",
+    "focusedLint": "passed",
+    "unitTests": {
+      "passed": 344,
+      "failed": 0
+    },
+    "runtimeTests": {
+      "passed": 403,
+      "failed": 0
+    },
+    "browser": {
+      "checks": [
+        "1440 / H1",
+        "1440 / no overflow (-15)",
+        "1440 / logo unchanged",
+        "1440 / video manual",
+        "1440 /collectible-design H1",
+        "1440 /collectible-design no overflow (-15)",
+        "1440 /collectible-design logo unchanged",
+        "1440 /collectible-design video manual",
+        "1440 /memory-art H1",
+        "1440 /memory-art no overflow (-15)",
+        "1440 /memory-art logo unchanged",
+        "1440 /memory-art video manual",
+        "1440 /personal-art H1",
+        "1440 /personal-art no overflow (-15)",
+        "1440 /personal-art logo unchanged",
+        "1440 /personal-art video manual",
+        "1440 /commission H1",
+        "1440 /commission no overflow (-15)",
+        "1440 /commission logo unchanged",
+        "1440 /commission video manual",
+        "1440 /preserve H1",
+        "1440 /preserve no overflow (-15)",
+        "1440 /preserve logo unchanged",
+        "1440 /preserve video manual",
+        "1440 /personalize H1",
+        "1440 /personalize no overflow (-15)",
+        "1440 /personalize logo unchanged",
+        "1440 /personalize video manual",
+        "1440 /search H1",
+        "1440 /search no overflow (-15)",
+        "1440 /search logo unchanged",
+        "1440 /search video manual",
+        "1440 /saved-pieces H1",
+        "1440 /saved-pieces no overflow (-15)",
+        "1440 /saved-pieces logo unchanged",
+        "1440 /saved-pieces video manual",
+        "1440 /commission/customize H1",
+        "1440 /commission/customize no overflow (-15)",
+        "1440 /commission/customize logo unchanged",
+        "1440 /commission/customize video manual",
+        "1440 /inquiry/received H1",
+        "1440 /inquiry/received no overflow (-15)",
+        "1440 /inquiry/received logo unchanged",
+        "1440 /inquiry/received video manual",
+        "1440 /our-story H1",
+        "1440 /our-story no overflow (-15)",
+        "1440 /our-story logo unchanged",
+        "1440 /our-story video manual",
+        "1440 /process H1",
+        "1440 /process no overflow (-15)",
+        "1440 /process logo unchanged",
+        "1440 /process video manual",
+        "1440 /architects H1",
+        "1440 /architects no overflow (-15)",
+        "1440 /architects logo unchanged",
+        "1440 /architects video manual",
+        "1440 /materials-care H1",
+        "1440 /materials-care no overflow (-15)",
+        "1440 /materials-care logo unchanged",
+        "1440 /materials-care video manual",
+        "1440 /journal H1",
+        "1440 /journal no overflow (-15)",
+        "1440 /journal logo unchanged",
+        "1440 /journal video manual",
+        "1440 /portfolio H1",
+        "1440 /portfolio no overflow (-15)",
+        "1440 /portfolio logo unchanged",
+        "1440 /portfolio video manual",
+        "1440 /testimonials H1",
+        "1440 /testimonials no overflow (-15)",
+        "1440 /testimonials logo unchanged",
+        "1440 /testimonials video manual",
+        "1440 /faq H1",
+        "1440 /faq no overflow (-15)",
+        "1440 /faq logo unchanged",
+        "1440 /faq video manual",
+        "1440 /contact H1",
+        "1440 /contact no overflow (-15)",
+        "1440 /contact logo unchanged",
+        "1440 /contact video manual",
+        "1440 /privacy H1",
+        "1440 /privacy no overflow (-15)",
+        "1440 /privacy logo unchanged",
+        "1440 /privacy video manual",
+        "1440 /terms H1",
+        "1440 /terms no overflow (-15)",
+        "1440 /terms logo unchanged",
+        "1440 /terms video manual",
+        "1440 /shipping-delivery H1",
+        "1440 /shipping-delivery no overflow (-15)",
+        "1440 /shipping-delivery logo unchanged",
+        "1440 /shipping-delivery video manual",
+        "1440 /returns-cancellations H1",
+        "1440 /returns-cancellations no overflow (-15)",
+        "1440 /returns-cancellations logo unchanged",
+        "1440 /returns-cancellations video manual",
+        "1440 /accessibility H1",
+        "1440 /accessibility no overflow (-15)",
+        "1440 /accessibility logo unchanged",
+        "1440 /accessibility video manual",
+        "1440 /imprint H1",
+        "1440 /imprint no overflow (-15)",
+        "1440 /imprint logo unchanged",
+        "1440 /imprint video manual",
+        "1440 /pieces/amber-veil-wall-panel H1",
+        "1440 /pieces/amber-veil-wall-panel no overflow (-15)",
+        "1440 /pieces/amber-veil-wall-panel logo unchanged",
+        "1440 /pieces/amber-veil-wall-panel video manual",
+        "1440 /pieces/amber-veil-wall-panel/customize H1",
+        "1440 /pieces/amber-veil-wall-panel/customize no overflow (-15)",
+        "1440 /pieces/amber-veil-wall-panel/customize logo unchanged",
+        "1440 /pieces/amber-veil-wall-panel/customize video manual",
+        "1440 /journal/a-cohesive-gift-set-without-repeating-every-detail H1",
+        "1440 /journal/a-cohesive-gift-set-without-repeating-every-detail no overflow (-15)",
+        "1440 /journal/a-cohesive-gift-set-without-repeating-every-detail logo unchanged",
+        "1440 /journal/a-cohesive-gift-set-without-repeating-every-detail video manual",
+        "1440 /phase4-unavailable H1",
+        "1440 /phase4-unavailable no overflow (-15)",
+        "1440 /phase4-unavailable logo unchanged",
+        "1440 /phase4-unavailable video manual",
+        "768 / H1",
+        "768 / no overflow (-15)",
+        "768 / logo unchanged",
+        "768 / video manual",
+        "768 /collectible-design H1",
+        "768 /collectible-design no overflow (-15)",
+        "768 /collectible-design logo unchanged",
+        "768 /collectible-design video manual",
+        "768 /memory-art H1",
+        "768 /memory-art no overflow (-15)",
+        "768 /memory-art logo unchanged",
+        "768 /memory-art video manual",
+        "768 /personal-art H1",
+        "768 /personal-art no overflow (-15)",
+        "768 /personal-art logo unchanged",
+        "768 /personal-art video manual",
+        "768 /commission H1",
+        "768 /commission no overflow (-15)",
+        "768 /commission logo unchanged",
+        "768 /commission video manual",
+        "768 /preserve H1",
+        "768 /preserve no overflow (-15)",
+        "768 /preserve logo unchanged",
+        "768 /preserve video manual",
+        "768 /personalize H1",
+        "768 /personalize no overflow (-15)",
+        "768 /personalize logo unchanged",
+        "768 /personalize video manual",
+        "768 /search H1",
+        "768 /search no overflow (-15)",
+        "768 /search logo unchanged",
+        "768 /search video manual",
+        "768 /saved-pieces H1",
+        "768 /saved-pieces no overflow (-15)",
+        "768 /saved-pieces logo unchanged",
+        "768 /saved-pieces video manual",
+        "768 /commission/customize H1",
+        "768 /commission/customize no overflow (-15)",
+        "768 /commission/customize logo unchanged",
+        "768 /commission/customize video manual",
+        "768 /inquiry/received H1",
+        "768 /inquiry/received no overflow (-15)",
+        "768 /inquiry/received logo unchanged",
+        "768 /inquiry/received video manual",
+        "768 /our-story H1",
+        "768 /our-story no overflow (-15)",
+        "768 /our-story logo unchanged",
+        "768 /our-story video manual",
+        "768 /process H1",
+        "768 /process no overflow (-15)",
+        "768 /process logo unchanged",
+        "768 /process video manual",
+        "768 /architects H1",
+        "768 /architects no overflow (-15)",
+        "768 /architects logo unchanged",
+        "768 /architects video manual",
+        "768 /materials-care H1",
+        "768 /materials-care no overflow (-15)",
+        "768 /materials-care logo unchanged",
+        "768 /materials-care video manual",
+        "768 /journal H1",
+        "768 /journal no overflow (-15)",
+        "768 /journal logo unchanged",
+        "768 /journal video manual",
+        "768 /portfolio H1",
+        "768 /portfolio no overflow (-15)",
+        "768 /portfolio logo unchanged",
+        "768 /portfolio video manual",
+        "768 /testimonials H1",
+        "768 /testimonials no overflow (-15)",
+        "768 /testimonials logo unchanged",
+        "768 /testimonials video manual",
+        "768 /faq H1",
+        "768 /faq no overflow (-15)",
+        "768 /faq logo unchanged",
+        "768 /faq video manual",
+        "768 /contact H1",
+        "768 /contact no overflow (-15)",
+        "768 /contact logo unchanged",
+        "768 /contact video manual",
+        "768 /privacy H1",
+        "768 /privacy no overflow (-15)",
+        "768 /privacy logo unchanged",
+        "768 /privacy video manual",
+        "768 /terms H1",
+        "768 /terms no overflow (-15)",
+        "768 /terms logo unchanged",
+        "768 /terms video manual",
+        "768 /shipping-delivery H1",
+        "768 /shipping-delivery no overflow (-15)",
+        "768 /shipping-delivery logo unchanged",
+        "768 /shipping-delivery video manual",
+        "768 /returns-cancellations H1",
+        "768 /returns-cancellations no overflow (-15)",
+        "768 /returns-cancellations logo unchanged",
+        "768 /returns-cancellations video manual",
+        "768 /accessibility H1",
+        "768 /accessibility no overflow (-15)",
+        "768 /accessibility logo unchanged",
+        "768 /accessibility video manual",
+        "768 /imprint H1",
+        "768 /imprint no overflow (-15)",
+        "768 /imprint logo unchanged",
+        "768 /imprint video manual",
+        "768 /pieces/amber-veil-wall-panel H1",
+        "768 /pieces/amber-veil-wall-panel no overflow (-15)",
+        "768 /pieces/amber-veil-wall-panel logo unchanged",
+        "768 /pieces/amber-veil-wall-panel video manual",
+        "768 /pieces/amber-veil-wall-panel/customize H1",
+        "768 /pieces/amber-veil-wall-panel/customize no overflow (-15)",
+        "768 /pieces/amber-veil-wall-panel/customize logo unchanged",
+        "768 /pieces/amber-veil-wall-panel/customize video manual",
+        "768 /journal/a-cohesive-gift-set-without-repeating-every-detail H1",
+        "768 /journal/a-cohesive-gift-set-without-repeating-every-detail no overflow (-15)",
+        "768 /journal/a-cohesive-gift-set-without-repeating-every-detail logo unchanged",
+        "768 /journal/a-cohesive-gift-set-without-repeating-every-detail video manual",
+        "768 /phase4-unavailable H1",
+        "768 /phase4-unavailable no overflow (-15)",
+        "768 /phase4-unavailable logo unchanged",
+        "768 /phase4-unavailable video manual",
+        "390 / H1",
+        "390 / no overflow (-15)",
+        "390 / logo unchanged",
+        "390 / video manual",
+        "390 /collectible-design H1",
+        "390 /collectible-design no overflow (-15)",
+        "390 /collectible-design logo unchanged",
+        "390 /collectible-design video manual",
+        "390 /memory-art H1",
+        "390 /memory-art no overflow (-15)",
+        "390 /memory-art logo unchanged",
+        "390 /memory-art video manual",
+        "390 /personal-art H1",
+        "390 /personal-art no overflow (-15)",
+        "390 /personal-art logo unchanged",
+        "390 /personal-art video manual",
+        "390 /commission H1",
+        "390 /commission no overflow (-15)",
+        "390 /commission logo unchanged",
+        "390 /commission video manual",
+        "390 /preserve H1",
+        "390 /preserve no overflow (-15)",
+        "390 /preserve logo unchanged",
+        "390 /preserve video manual",
+        "390 /personalize H1",
+        "390 /personalize no overflow (-15)",
+        "390 /personalize logo unchanged",
+        "390 /personalize video manual",
+        "390 /search H1",
+        "390 /search no overflow (-15)",
+        "390 /search logo unchanged",
+        "390 /search video manual",
+        "390 /saved-pieces H1",
+        "390 /saved-pieces no overflow (-15)",
+        "390 /saved-pieces logo unchanged",
+        "390 /saved-pieces video manual",
+        "390 /commission/customize H1",
+        "390 /commission/customize no overflow (-15)",
+        "390 /commission/customize logo unchanged",
+        "390 /commission/customize video manual",
+        "390 /inquiry/received H1",
+        "390 /inquiry/received no overflow (-15)",
+        "390 /inquiry/received logo unchanged",
+        "390 /inquiry/received video manual",
+        "390 /our-story H1",
+        "390 /our-story no overflow (-15)",
+        "390 /our-story logo unchanged",
+        "390 /our-story video manual",
+        "390 /process H1",
+        "390 /process no overflow (-15)",
+        "390 /process logo unchanged",
+        "390 /process video manual",
+        "390 /architects H1",
+        "390 /architects no overflow (-15)",
+        "390 /architects logo unchanged",
+        "390 /architects video manual",
+        "390 /materials-care H1",
+        "390 /materials-care no overflow (-15)",
+        "390 /materials-care logo unchanged",
+        "390 /materials-care video manual",
+        "390 /journal H1",
+        "390 /journal no overflow (-15)",
+        "390 /journal logo unchanged",
+        "390 /journal video manual",
+        "390 /portfolio H1",
+        "390 /portfolio no overflow (-15)",
+        "390 /portfolio logo unchanged",
+        "390 /portfolio video manual",
+        "390 /testimonials H1",
+        "390 /testimonials no overflow (-15)",
+        "390 /testimonials logo unchanged",
+        "390 /testimonials video manual",
+        "390 /faq H1",
+        "390 /faq no overflow (-15)",
+        "390 /faq logo unchanged",
+        "390 /faq video manual",
+        "390 /contact H1",
+        "390 /contact no overflow (-15)",
+        "390 /contact logo unchanged",
+        "390 /contact video manual",
+        "390 /privacy H1",
+        "390 /privacy no overflow (-15)",
+        "390 /privacy logo unchanged",
+        "390 /privacy video manual",
+        "390 /terms H1",
+        "390 /terms no overflow (-15)",
+        "390 /terms logo unchanged",
+        "390 /terms video manual",
+        "390 /shipping-delivery H1",
+        "390 /shipping-delivery no overflow (-15)",
+        "390 /shipping-delivery logo unchanged",
+        "390 /shipping-delivery video manual",
+        "390 /returns-cancellations H1",
+        "390 /returns-cancellations no overflow (-15)",
+        "390 /returns-cancellations logo unchanged",
+        "390 /returns-cancellations video manual",
+        "390 /accessibility H1",
+        "390 /accessibility no overflow (-15)",
+        "390 /accessibility logo unchanged",
+        "390 /accessibility video manual",
+        "390 /imprint H1",
+        "390 /imprint no overflow (-15)",
+        "390 /imprint logo unchanged",
+        "390 /imprint video manual",
+        "390 /pieces/amber-veil-wall-panel H1",
+        "390 /pieces/amber-veil-wall-panel no overflow (-15)",
+        "390 /pieces/amber-veil-wall-panel logo unchanged",
+        "390 /pieces/amber-veil-wall-panel video manual",
+        "390 /pieces/amber-veil-wall-panel/customize H1",
+        "390 /pieces/amber-veil-wall-panel/customize no overflow (-15)",
+        "390 /pieces/amber-veil-wall-panel/customize logo unchanged",
+        "390 /pieces/amber-veil-wall-panel/customize video manual",
+        "390 /journal/a-cohesive-gift-set-without-repeating-every-detail H1",
+        "390 /journal/a-cohesive-gift-set-without-repeating-every-detail no overflow (-15)",
+        "390 /journal/a-cohesive-gift-set-without-repeating-every-detail logo unchanged",
+        "390 /journal/a-cohesive-gift-set-without-repeating-every-detail video manual",
+        "390 /phase4-unavailable H1",
+        "390 /phase4-unavailable no overflow (-15)",
+        "390 /phase4-unavailable logo unchanged",
+        "390 /phase4-unavailable video manual",
+        "320 / H1",
+        "320 / no overflow (-15)",
+        "320 / logo unchanged",
+        "320 / video manual",
+        "320 /collectible-design H1",
+        "320 /collectible-design no overflow (-15)",
+        "320 /collectible-design logo unchanged",
+        "320 /collectible-design video manual",
+        "320 /memory-art H1",
+        "320 /memory-art no overflow (-15)",
+        "320 /memory-art logo unchanged",
+        "320 /memory-art video manual",
+        "320 /personal-art H1",
+        "320 /personal-art no overflow (-15)",
+        "320 /personal-art logo unchanged",
+        "320 /personal-art video manual",
+        "320 /commission H1",
+        "320 /commission no overflow (-15)",
+        "320 /commission logo unchanged",
+        "320 /commission video manual",
+        "320 /preserve H1",
+        "320 /preserve no overflow (-15)",
+        "320 /preserve logo unchanged",
+        "320 /preserve video manual",
+        "320 /personalize H1",
+        "320 /personalize no overflow (-15)",
+        "320 /personalize logo unchanged",
+        "320 /personalize video manual",
+        "320 /search H1",
+        "320 /search no overflow (-15)",
+        "320 /search logo unchanged",
+        "320 /search video manual",
+        "320 /saved-pieces H1",
+        "320 /saved-pieces no overflow (-15)",
+        "320 /saved-pieces logo unchanged",
+        "320 /saved-pieces video manual",
+        "320 /commission/customize H1",
+        "320 /commission/customize no overflow (-15)",
+        "320 /commission/customize logo unchanged",
+        "320 /commission/customize video manual",
+        "320 /inquiry/received H1",
+        "320 /inquiry/received no overflow (-15)",
+        "320 /inquiry/received logo unchanged",
+        "320 /inquiry/received video manual",
+        "320 /our-story H1",
+        "320 /our-story no overflow (-15)",
+        "320 /our-story logo unchanged",
+        "320 /our-story video manual",
+        "320 /process H1",
+        "320 /process no overflow (-15)",
+        "320 /process logo unchanged",
+        "320 /process video manual",
+        "320 /architects H1",
+        "320 /architects no overflow (-15)",
+        "320 /architects logo unchanged",
+        "320 /architects video manual",
+        "320 /materials-care H1",
+        "320 /materials-care no overflow (-15)",
+        "320 /materials-care logo unchanged",
+        "320 /materials-care video manual",
+        "320 /journal H1",
+        "320 /journal no overflow (-15)",
+        "320 /journal logo unchanged",
+        "320 /journal video manual",
+        "320 /portfolio H1",
+        "320 /portfolio no overflow (-15)",
+        "320 /portfolio logo unchanged",
+        "320 /portfolio video manual",
+        "320 /testimonials H1",
+        "320 /testimonials no overflow (-15)",
+        "320 /testimonials logo unchanged",
+        "320 /testimonials video manual",
+        "320 /faq H1",
+        "320 /faq no overflow (-15)",
+        "320 /faq logo unchanged",
+        "320 /faq video manual",
+        "320 /contact H1",
+        "320 /contact no overflow (-15)",
+        "320 /contact logo unchanged",
+        "320 /contact video manual",
+        "320 /privacy H1",
+        "320 /privacy no overflow (-15)",
+        "320 /privacy logo unchanged",
+        "320 /privacy video manual",
+        "320 /terms H1",
+        "320 /terms no overflow (-15)",
+        "320 /terms logo unchanged",
+        "320 /terms video manual",
+        "320 /shipping-delivery H1",
+        "320 /shipping-delivery no overflow (-15)",
+        "320 /shipping-delivery logo unchanged",
+        "320 /shipping-delivery video manual",
+        "320 /returns-cancellations H1",
+        "320 /returns-cancellations no overflow (-15)",
+        "320 /returns-cancellations logo unchanged",
+        "320 /returns-cancellations video manual",
+        "320 /accessibility H1",
+        "320 /accessibility no overflow (-15)",
+        "320 /accessibility logo unchanged",
+        "320 /accessibility video manual",
+        "320 /imprint H1",
+        "320 /imprint no overflow (-15)",
+        "320 /imprint logo unchanged",
+        "320 /imprint video manual",
+        "320 /pieces/amber-veil-wall-panel H1",
+        "320 /pieces/amber-veil-wall-panel no overflow (-15)",
+        "320 /pieces/amber-veil-wall-panel logo unchanged",
+        "320 /pieces/amber-veil-wall-panel video manual",
+        "320 /pieces/amber-veil-wall-panel/customize H1",
+        "320 /pieces/amber-veil-wall-panel/customize no overflow (-15)",
+        "320 /pieces/amber-veil-wall-panel/customize logo unchanged",
+        "320 /pieces/amber-veil-wall-panel/customize video manual",
+        "320 /journal/a-cohesive-gift-set-without-repeating-every-detail H1",
+        "320 /journal/a-cohesive-gift-set-without-repeating-every-detail no overflow (-15)",
+        "320 /journal/a-cohesive-gift-set-without-repeating-every-detail logo unchanged",
+        "320 /journal/a-cohesive-gift-set-without-repeating-every-detail video manual",
+        "320 /phase4-unavailable H1",
+        "320 /phase4-unavailable no overflow (-15)",
+        "320 /phase4-unavailable logo unchanged",
+        "320 /phase4-unavailable video manual",
+        "/ exact public text retained",
+        "/ links retained",
+        "/ media and crop attributes retained",
+        "/collectible-design exact public text retained",
+        "/collectible-design links retained",
+        "/collectible-design media and crop attributes retained",
+        "/memory-art exact public text retained",
+        "/memory-art links retained",
+        "/memory-art media and crop attributes retained",
+        "/personal-art exact public text retained",
+        "/personal-art links retained",
+        "/personal-art media and crop attributes retained",
+        "/commission exact public text retained",
+        "/commission links retained",
+        "/commission media and crop attributes retained",
+        "/preserve exact public text retained",
+        "/preserve links retained",
+        "/preserve media and crop attributes retained",
+        "/personalize exact public text retained",
+        "/personalize links retained",
+        "/personalize media and crop attributes retained",
+        "/search exact public text retained",
+        "/search links retained",
+        "/search media and crop attributes retained",
+        "/saved-pieces exact public text retained",
+        "/saved-pieces links retained",
+        "/saved-pieces media and crop attributes retained",
+        "/commission/customize exact public text retained",
+        "/commission/customize links retained",
+        "/commission/customize media and crop attributes retained",
+        "/inquiry/received exact public text retained",
+        "/inquiry/received links retained",
+        "/inquiry/received media and crop attributes retained",
+        "/our-story exact public text retained",
+        "/our-story links retained",
+        "/our-story media and crop attributes retained",
+        "/process exact public text retained",
+        "/process links retained",
+        "/process media and crop attributes retained",
+        "/architects exact public text retained",
+        "/architects links retained",
+        "/architects media and crop attributes retained",
+        "/materials-care exact public text retained",
+        "/materials-care links retained",
+        "/materials-care media and crop attributes retained",
+        "/journal exact public text retained",
+        "/journal links retained",
+        "/journal media and crop attributes retained",
+        "/portfolio exact public text retained",
+        "/portfolio links retained",
+        "/portfolio media and crop attributes retained",
+        "/testimonials exact public text retained",
+        "/testimonials links retained",
+        "/testimonials media and crop attributes retained",
+        "/faq exact public text retained",
+        "/faq links retained",
+        "/faq media and crop attributes retained",
+        "/contact exact public text retained",
+        "/contact links retained",
+        "/contact media and crop attributes retained",
+        "/privacy exact public text retained",
+        "/privacy links retained",
+        "/privacy media and crop attributes retained",
+        "/terms exact public text retained",
+        "/terms links retained",
+        "/terms media and crop attributes retained",
+        "/shipping-delivery exact public text retained",
+        "/shipping-delivery links retained",
+        "/shipping-delivery media and crop attributes retained",
+        "/returns-cancellations exact public text retained",
+        "/returns-cancellations links retained",
+        "/returns-cancellations media and crop attributes retained",
+        "/accessibility exact public text retained",
+        "/accessibility links retained",
+        "/accessibility media and crop attributes retained",
+        "/imprint exact public text retained",
+        "/imprint links retained",
+        "/imprint media and crop attributes retained",
+        "/pieces/amber-veil-wall-panel exact public text retained",
+        "/pieces/amber-veil-wall-panel links retained",
+        "/pieces/amber-veil-wall-panel media and crop attributes retained",
+        "/pieces/amber-veil-wall-panel/customize links retained",
+        "/pieces/amber-veil-wall-panel/customize media and crop attributes retained",
+        "/journal/a-cohesive-gift-set-without-repeating-every-detail exact public text retained",
+        "/journal/a-cohesive-gift-set-without-repeating-every-detail links retained",
+        "/journal/a-cohesive-gift-set-without-repeating-every-detail media and crop attributes retained",
+        "/phase4-unavailable exact public text retained",
+        "/phase4-unavailable links retained",
+        "/phase4-unavailable media and crop attributes retained"
+      ],
+      "rawIssues": [
+        "/pieces/amber-veil-wall-panel/customize exact public text retained"
+      ],
+      "routeCount": 30,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "runtimeReconciliation": {
+        "route": "/pieces/amber-veil-wall-panel/customize",
+        "rawComparison": "29 route texts match exactly; one form runtime session state differs",
+        "dynamicBefore": [
+          "Your secure form is ready."
+        ],
+        "dynamicAfter": [
+          "Saving is currently unavailable. You can prepare and copy your brief here. Nothing has been submitted.",
+          "Please try again later.",
+          "Reconnect form"
+        ],
+        "normalizedTextMatches": true,
+        "linksMatch": true,
+        "mediaMatch": true,
+        "source": "original built-browser baseline and final browser-verification.json",
+        "limit": "Original failed raw-text comparison retained. Supplemental comparison removes only the listed session availability labels."
+      }
+    },
+    "fixtures": {
+      "checks": [
+        "1440 portfolio-detail single H1",
+        "1440 portfolio-detail no overflow",
+        "1440 portfolio-detail concept disclosure",
+        "1440 testimonial-detail single H1",
+        "1440 testimonial-detail no overflow",
+        "1440 testimonial-detail fiction disclosure",
+        "1440 faq-detail single H1",
+        "1440 faq-detail no overflow",
+        "1440 portfolio-archive single H1",
+        "1440 portfolio-archive no overflow",
+        "1440 portfolio-archive concept disclosure",
+        "1440 testimonial-archive single H1",
+        "1440 testimonial-archive no overflow",
+        "1440 testimonial-archive fiction disclosure",
+        "1440 landing single H1",
+        "1440 landing no overflow",
+        "1440 landing all 16 landing block types",
+        "1440 receipt single H1",
+        "1440 receipt no overflow",
+        "1440 receipt-recovery single H1",
+        "1440 receipt-recovery no overflow",
+        "1440 loading single H1",
+        "1440 loading no overflow",
+        "1440 error single H1",
+        "1440 error no overflow",
+        "768 portfolio-detail single H1",
+        "768 portfolio-detail no overflow",
+        "768 portfolio-detail concept disclosure",
+        "768 testimonial-detail single H1",
+        "768 testimonial-detail no overflow",
+        "768 testimonial-detail fiction disclosure",
+        "768 faq-detail single H1",
+        "768 faq-detail no overflow",
+        "768 portfolio-archive single H1",
+        "768 portfolio-archive no overflow",
+        "768 portfolio-archive concept disclosure",
+        "768 testimonial-archive single H1",
+        "768 testimonial-archive no overflow",
+        "768 testimonial-archive fiction disclosure",
+        "768 landing single H1",
+        "768 landing no overflow",
+        "768 landing all 16 landing block types",
+        "768 receipt single H1",
+        "768 receipt no overflow",
+        "768 receipt-recovery single H1",
+        "768 receipt-recovery no overflow",
+        "768 loading single H1",
+        "768 loading no overflow",
+        "768 error single H1",
+        "768 error no overflow",
+        "390 portfolio-detail single H1",
+        "390 portfolio-detail no overflow",
+        "390 portfolio-detail concept disclosure",
+        "390 testimonial-detail single H1",
+        "390 testimonial-detail no overflow",
+        "390 testimonial-detail fiction disclosure",
+        "390 faq-detail single H1",
+        "390 faq-detail no overflow",
+        "390 portfolio-archive single H1",
+        "390 portfolio-archive no overflow",
+        "390 portfolio-archive concept disclosure",
+        "390 testimonial-archive single H1",
+        "390 testimonial-archive no overflow",
+        "390 testimonial-archive fiction disclosure",
+        "390 landing single H1",
+        "390 landing no overflow",
+        "390 landing all 16 landing block types",
+        "390 receipt single H1",
+        "390 receipt no overflow",
+        "390 receipt-recovery single H1",
+        "390 receipt-recovery no overflow",
+        "390 loading single H1",
+        "390 loading no overflow",
+        "390 error single H1",
+        "390 error no overflow",
+        "320 portfolio-detail single H1",
+        "320 portfolio-detail no overflow",
+        "320 portfolio-detail concept disclosure",
+        "320 testimonial-detail single H1",
+        "320 testimonial-detail no overflow",
+        "320 testimonial-detail fiction disclosure",
+        "320 faq-detail single H1",
+        "320 faq-detail no overflow",
+        "320 portfolio-archive single H1",
+        "320 portfolio-archive no overflow",
+        "320 portfolio-archive concept disclosure",
+        "320 testimonial-archive single H1",
+        "320 testimonial-archive no overflow",
+        "320 testimonial-archive fiction disclosure",
+        "320 landing single H1",
+        "320 landing no overflow",
+        "320 landing all 16 landing block types",
+        "320 receipt single H1",
+        "320 receipt no overflow",
+        "320 receipt-recovery single H1",
+        "320 receipt-recovery no overflow",
+        "320 loading single H1",
+        "320 loading no overflow",
+        "320 error single H1",
+        "320 error no overflow"
+      ],
+      "issues": [],
+      "hydrated": false,
+      "families": 10
+    },
+    "interaction": {
+      "checks": [
+        "1440 search empty state",
+        "1440 catalogue load more",
+        "1440 saves shortlist",
+        "1440 gallery next",
+        "1440 native gallery dialog opens",
+        "1440 gallery Escape restores focus",
+        "1440 saved page contains selected product",
+        "1440 shortlist clear",
+        "1440 required fields validation",
+        "1440 unsaved review retains answers",
+        "1440 no automatic handoff",
+        "1440 journal filters update",
+        "1440 editorial pagination",
+        "1440 FAQ expands",
+        "1440 /journal computed flat-surface text contrast",
+        "1440 /faq computed flat-surface text contrast",
+        "1440 /privacy computed flat-surface text contrast",
+        "1440 /contact computed flat-surface text contrast",
+        "1440 /commission/customize computed flat-surface text contrast",
+        "1440 hi /our-story no overflow",
+        "1440 hi /journal no overflow",
+        "1440 hi /commission/customize no overflow",
+        "1440 gu /our-story no overflow",
+        "1440 gu /journal no overflow",
+        "1440 gu /commission/customize no overflow",
+        "/privacy print black on white",
+        "/terms print black on white",
+        "/shipping-delivery print black on white",
+        "/returns-cancellations print black on white",
+        "/accessibility print black on white",
+        "/imprint print black on white",
+        "1440 /collectible-design images load after scrolling",
+        "1440 /journal images load after scrolling",
+        "1440 /pieces/river-channel images load after scrolling",
+        "1440 /our-story images load after scrolling",
+        "390 search empty state",
+        "390 catalogue load more",
+        "390 saves shortlist",
+        "390 gallery next",
+        "390 native gallery dialog opens",
+        "390 gallery Escape restores focus",
+        "390 saved page contains selected product",
+        "390 shortlist clear",
+        "390 required fields validation",
+        "390 unsaved review retains answers",
+        "390 no automatic handoff",
+        "390 journal filters update",
+        "390 editorial pagination",
+        "390 FAQ expands",
+        "390 /journal computed flat-surface text contrast",
+        "390 /faq computed flat-surface text contrast",
+        "390 /privacy computed flat-surface text contrast",
+        "390 /contact computed flat-surface text contrast",
+        "390 /commission/customize computed flat-surface text contrast",
+        "390 hi /our-story no overflow",
+        "390 hi /journal no overflow",
+        "390 hi /commission/customize no overflow",
+        "390 gu /our-story no overflow",
+        "390 gu /journal no overflow",
+        "390 gu /commission/customize no overflow",
+        "390 /collectible-design images load after scrolling",
+        "390 /journal images load after scrolling",
+        "390 /pieces/river-channel images load after scrolling",
+        "390 /our-story images load after scrolling"
+      ],
+      "contrast": [
+        {
+          "width": 1440,
+          "route": "/journal",
+          "samples": [
+            {
+              "text": "The journal",
+              "ratio": 6.51,
+              "minimum": 4.5
+            },
+            {
+              "text": "A closer look.",
+              "ratio": 14.55,
+              "minimum": 3
+            },
+            {
+              "text": "Notes on materials, spaces and preparing a thought",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Search journal",
+              "ratio": 13.53,
+              "minimum": 4.5
+            },
+            {
+              "text": "TopicAllCommissioning (19)From the atelier (7)Mate",
+              "ratio": 13.53,
+              "minimum": 4.5
+            },
+            {
+              "text": "JourneyAllM8 QA journey (3)Unclassified (40)",
+              "ratio": 13.53,
+              "minimum": 4.5
+            },
+            {
+              "text": "FormatAllUnclassified (40)Worksheet (3)",
+              "ratio": 13.53,
+              "minimum": 4.5
+            },
+            {
+              "text": "TagAllQA (3)Unclassified (40)",
+              "ratio": 13.53,
+              "minimum": 4.5
+            },
+            {
+              "text": "Available languageAllen (43)",
+              "ratio": 13.53,
+              "minimum": 4.5
+            },
+            {
+              "text": "SortCurated orderTitle",
+              "ratio": 13.53,
+              "minimum": 4.5
+            }
+          ]
+        },
+        {
+          "width": 1440,
+          "route": "/faq",
+          "samples": [
+            {
+              "text": "Before we begin",
+              "ratio": 10.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Your questions, considered.",
+              "ratio": 13.53,
+              "minimum": 3
+            },
+            {
+              "text": "Answers about customization, saving an inquiry, pr",
+              "ratio": 10.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Search faqs",
+              "ratio": 13.53,
+              "minimum": 4.5
+            },
+            {
+              "text": "TopicAllFrom the atelier (3)Local verification (4)",
+              "ratio": 13.53,
+              "minimum": 4.5
+            },
+            {
+              "text": "JourneyAllUnclassified (19)",
+              "ratio": 13.53,
+              "minimum": 4.5
+            },
+            {
+              "text": "Available languageAllen (19)",
+              "ratio": 13.53,
+              "minimum": 4.5
+            },
+            {
+              "text": "SortCurated orderTitle",
+              "ratio": 13.53,
+              "minimum": 4.5
+            },
+            {
+              "text": "19 faqs records · Page 1 of 2",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "M5 isolated guidance study",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "M5 isolated guidance study",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "M5 isolated guidance study",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "M5 isolated guidance study",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "M6 local faqs 7532d5f1",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "M6 local faqs 82793ada",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "M6 local faqs 452c7722",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Can I use WhatsApp for a general website question?",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Does my receipt expiring delete the inquiry?",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "What if WhatsApp does not open?",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Does the website send a WhatsApp message for me?",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Can I start without choosing a catalogue piece?",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "This record exercises the isolated publication wor",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Link to this answer",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "This record exercises the isolated publication wor",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Link to this answer",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "This record exercises the isolated publication wor",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Link to this answer",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "This record exercises the isolated publication wor",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Link to this answer",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "This synthetic record checks the local saved editi",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 7.96,
+              "minimum": 4.5
+            }
+          ]
+        },
+        {
+          "width": 1440,
+          "route": "/privacy",
+          "samples": [
+            {
+              "text": "Privacy & retention",
+              "ratio": 10.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Your brief stays personal.",
+              "ratio": 13.53,
+              "minimum": 3
+            },
+            {
+              "text": "We collect your name, phone number, optional email",
+              "ratio": 10.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "On this page",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "What we collect and why",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Private records and service providers",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "You choose the WhatsApp handoff",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Inquiries and orders",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Reference images and temporary files",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Required records and retained copies",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Access, correction and deletion",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Cookies and browser control",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Service protection",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "We collect your name, phone number, optional email",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Inquiries are stored in our database and reference",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "After saving the inquiry, we prepare a message fro",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "For inquiries that do not become orders, we delete",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Customer reference images are deleted 90 days afte",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Invoices, accounting records and legally required ",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Email rivyalivingart2.0@gmail.com with your inquir",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "An essential cookie links your form, uploads and p",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "A protected identifier derived from the network ad",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Ordering terms",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Delivery",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Changes & cancellations",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Accessibility",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Imprint",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Contact the atelier",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Email about this page",
+              "ratio": 7.96,
+              "minimum": 4.5
+            }
+          ]
+        },
+        {
+          "width": 1440,
+          "route": "/contact",
+          "samples": [
+            {
+              "text": "Contact the atelier",
+              "ratio": 10.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Let’s begin a conversation.",
+              "ratio": 13.53,
+              "minimum": 3
+            },
+            {
+              "text": "Call or email the atelier for general questions. F",
+              "ratio": 10.59,
+              "minimum": 4.5
+            }
+          ]
+        },
+        {
+          "width": 1440,
+          "route": "/commission/customize",
+          "samples": [
+            {
+              "text": "A brief for your idea",
+              "ratio": 6.51,
+              "minimum": 4.5
+            },
+            {
+              "text": "A piece of your own.",
+              "ratio": 14.55,
+              "minimum": 3
+            },
+            {
+              "text": "Share its purpose, scale and material direction. Y",
+              "ratio": 8.59,
+              "minimum": 4.5
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "route": "/journal",
+          "samples": [
+            {
+              "text": "The journal",
+              "ratio": 6.51,
+              "minimum": 4.5
+            },
+            {
+              "text": "A closer look.",
+              "ratio": 14.55,
+              "minimum": 3
+            },
+            {
+              "text": "Notes on materials, spaces and preparing a thought",
+              "ratio": 8.59,
+              "minimum": 4.5
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "route": "/faq",
+          "samples": [
+            {
+              "text": "Before we begin",
+              "ratio": 10.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Your questions, considered.",
+              "ratio": 13.53,
+              "minimum": 3
+            },
+            {
+              "text": "Answers about customization, saving an inquiry, pr",
+              "ratio": 10.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "19 faqs records · Page 1 of 2",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "M5 isolated guidance study",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "M5 isolated guidance study",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "M5 isolated guidance study",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "M5 isolated guidance study",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "M6 local faqs 7532d5f1",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "M6 local faqs 82793ada",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "M6 local faqs 452c7722",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Can I use WhatsApp for a general website question?",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Does my receipt expiring delete the inquiry?",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "What if WhatsApp does not open?",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Does the website send a WhatsApp message for me?",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Can I start without choosing a catalogue piece?",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "This record exercises the isolated publication wor",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Link to this answer",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "This record exercises the isolated publication wor",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Link to this answer",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "This record exercises the isolated publication wor",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Link to this answer",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "This record exercises the isolated publication wor",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Link to this answer",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "This synthetic record checks the local saved editi",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Link to this answer",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "This synthetic record checks the local saved editi",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Read the related policy ↗",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Link to this answer",
+              "ratio": 7.96,
+              "minimum": 4.5
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "route": "/privacy",
+          "samples": [
+            {
+              "text": "Privacy & retention",
+              "ratio": 10.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Your brief stays personal.",
+              "ratio": 13.53,
+              "minimum": 3
+            },
+            {
+              "text": "We collect your name, phone number, optional email",
+              "ratio": 10.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "On this page",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "What we collect and why",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Private records and service providers",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "You choose the WhatsApp handoff",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Inquiries and orders",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Reference images and temporary files",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Required records and retained copies",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Access, correction and deletion",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Cookies and browser control",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Service protection",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "We collect your name, phone number, optional email",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Inquiries are stored in our database and reference",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "After saving the inquiry, we prepare a message fro",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "For inquiries that do not become orders, we delete",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Customer reference images are deleted 90 days afte",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Invoices, accounting records and legally required ",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Email rivyalivingart2.0@gmail.com with your inquir",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "An essential cookie links your form, uploads and p",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "A protected identifier derived from the network ad",
+              "ratio": 8.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Ordering terms",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Delivery",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Changes & cancellations",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Accessibility",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Imprint",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Contact the atelier",
+              "ratio": 7.96,
+              "minimum": 4.5
+            },
+            {
+              "text": "Email about this page",
+              "ratio": 7.96,
+              "minimum": 4.5
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "route": "/contact",
+          "samples": [
+            {
+              "text": "Contact the atelier",
+              "ratio": 10.59,
+              "minimum": 4.5
+            },
+            {
+              "text": "Let’s begin a conversation.",
+              "ratio": 13.53,
+              "minimum": 3
+            },
+            {
+              "text": "Call or email the atelier for general questions. F",
+              "ratio": 10.59,
+              "minimum": 4.5
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "route": "/commission/customize",
+          "samples": [
+            {
+              "text": "A brief for your idea",
+              "ratio": 6.51,
+              "minimum": 4.5
+            },
+            {
+              "text": "A piece of your own.",
+              "ratio": 14.55,
+              "minimum": 3
+            },
+            {
+              "text": "Share its purpose, scale and material direction. Y",
+              "ratio": 8.59,
+              "minimum": 4.5
+            }
+          ]
+        }
+      ]
+    },
+    "reviewFixes": {
+      "checks": [
+        {
+          "width": 1440,
+          "route": "/privacy",
+          "kind": "opening label",
+          "fg": "rgb(221, 214, 203)",
+          "bg": "rgb(8, 40, 58)",
+          "ratio": 10.59
+        },
+        {
+          "width": 1440,
+          "route": "/our-story",
+          "kind": "opening label",
+          "fg": "rgb(221, 214, 203)",
+          "bg": "rgb(8, 40, 58)",
+          "ratio": 10.59
+        },
+        {
+          "width": 1440,
+          "kind": "ivory focus",
+          "fg": "rgb(22, 78, 107)",
+          "bg": "rgb(244, 241, 233)",
+          "outlineWidth": "3px",
+          "ratio": 7.96
+        },
+        {
+          "width": 1440,
+          "kind": "dark focus",
+          "fg": "rgb(184, 155, 99)",
+          "bg": "rgb(8, 10, 14)",
+          "outlineWidth": "3px",
+          "ratio": 7.46
+        },
+        {
+          "width": 768,
+          "route": "/privacy",
+          "kind": "opening label",
+          "fg": "rgb(221, 214, 203)",
+          "bg": "rgb(8, 40, 58)",
+          "ratio": 10.59
+        },
+        {
+          "width": 768,
+          "route": "/our-story",
+          "kind": "opening label",
+          "fg": "rgb(221, 214, 203)",
+          "bg": "rgb(8, 40, 58)",
+          "ratio": 10.59
+        },
+        {
+          "width": 768,
+          "kind": "ivory focus",
+          "fg": "rgb(22, 78, 107)",
+          "bg": "rgb(244, 241, 233)",
+          "outlineWidth": "3px",
+          "ratio": 7.96
+        },
+        {
+          "width": 768,
+          "kind": "dark focus",
+          "fg": "rgb(184, 155, 99)",
+          "bg": "rgb(8, 10, 14)",
+          "outlineWidth": "3px",
+          "ratio": 7.46
+        },
+        {
+          "width": 390,
+          "route": "/privacy",
+          "kind": "opening label",
+          "fg": "rgb(221, 214, 203)",
+          "bg": "rgb(8, 40, 58)",
+          "ratio": 10.59
+        },
+        {
+          "width": 390,
+          "route": "/our-story",
+          "kind": "opening label",
+          "fg": "rgb(221, 214, 203)",
+          "bg": "rgb(8, 40, 58)",
+          "ratio": 10.59
+        },
+        {
+          "width": 390,
+          "kind": "ivory focus",
+          "fg": "rgb(22, 78, 107)",
+          "bg": "rgb(244, 241, 233)",
+          "outlineWidth": "3px",
+          "ratio": 7.96
+        },
+        {
+          "width": 390,
+          "kind": "dark focus",
+          "fg": "rgb(184, 155, 99)",
+          "bg": "rgb(8, 10, 14)",
+          "outlineWidth": "3px",
+          "ratio": 7.46
+        },
+        {
+          "width": 320,
+          "route": "/privacy",
+          "kind": "opening label",
+          "fg": "rgb(221, 214, 203)",
+          "bg": "rgb(8, 40, 58)",
+          "ratio": 10.59
+        },
+        {
+          "width": 320,
+          "route": "/our-story",
+          "kind": "opening label",
+          "fg": "rgb(221, 214, 203)",
+          "bg": "rgb(8, 40, 58)",
+          "ratio": 10.59
+        },
+        {
+          "width": 320,
+          "kind": "ivory focus",
+          "fg": "rgb(22, 78, 107)",
+          "bg": "rgb(244, 241, 233)",
+          "outlineWidth": "3px",
+          "ratio": 7.96
+        },
+        {
+          "width": 320,
+          "kind": "dark focus",
+          "fg": "rgb(184, 155, 99)",
+          "bg": "rgb(8, 10, 14)",
+          "outlineWidth": "3px",
+          "ratio": 7.46
+        },
+        {
+          "width": 1440,
+          "kind": "FAQ ivory focus",
+          "fg": "rgb(22, 78, 107)",
+          "bg": "rgb(244, 241, 233)",
+          "outlineWidth": "3px",
+          "ratio": 7.96
+        },
+        {
+          "width": 1440,
+          "kind": "nested dark filter focus",
+          "fg": "rgb(184, 155, 99)",
+          "bg": "rgb(8, 40, 58)",
+          "outlineWidth": "3px",
+          "ratio": 5.75
+        },
+        {
+          "width": 390,
+          "kind": "FAQ ivory focus",
+          "fg": "rgb(22, 78, 107)",
+          "bg": "rgb(244, 241, 233)",
+          "outlineWidth": "3px",
+          "ratio": 7.96
+        },
+        {
+          "width": 390,
+          "kind": "nested dark filter focus",
+          "fg": "rgb(184, 155, 99)",
+          "bg": "rgb(8, 40, 58)",
+          "outlineWidth": "3px",
+          "ratio": 5.75
+        }
+      ],
+      "captures": [
+        "1440-focus-ivory.png",
+        "1440-focus-dark.png",
+        "768-focus-ivory.png",
+        "768-focus-dark.png",
+        "390-focus-ivory.png",
+        "390-focus-dark.png",
+        "320-focus-ivory.png",
+        "320-focus-dark.png",
+        "1440-focus-faq.png",
+        "1440-focus-dark-filter.png",
+        "390-focus-faq.png",
+        "390-focus-dark-filter.png"
+      ],
+      "scope": "Independent review fix verification: opening label text and light/dark focus rings"
+    },
+    "mediaHandoff": {
+      "checks": [
+        "Review hub screenshot thumbnails load",
+        "Preserved film starts paused",
+        "Preserved film plays after deliberate click",
+        "Preserved film pauses"
+      ]
+    },
+    "recapture": [
+      {
+        "file": "1440-brief-errors.png",
+        "scope": "Settled validation context; no submit"
+      },
+      {
+        "file": "1440-brief-review.png",
+        "headingY": 111.640625,
+        "scope": "Built app; synthetic answers remain unsaved"
+      },
+      {
+        "file": "1440-brief-review-controls.png",
+        "label": "Saving temporarily unavailable",
+        "disabled": true,
+        "scope": "Final save control shown, never clicked; local session rate limiting may disable saving"
+      },
+      {
+        "file": "1440-journal-body.png",
+        "scope": "Settled visible archive results, not hidden desktop filter"
+      },
+      {
+        "file": "1440-gallery-enlarged.png",
+        "decoded": true
+      },
+      {
+        "file": "390-brief-errors.png",
+        "scope": "Settled validation context; no submit"
+      },
+      {
+        "file": "390-brief-review.png",
+        "headingY": 112.03125,
+        "scope": "Built app; synthetic answers remain unsaved"
+      },
+      {
+        "file": "390-brief-review-controls.png",
+        "label": "Saving temporarily unavailable",
+        "disabled": true,
+        "scope": "Final save control shown, never clicked; local session rate limiting may disable saving"
+      },
+      {
+        "file": "390-journal-body.png",
+        "scope": "Settled visible archive results, not hidden desktop filter"
+      }
+    ],
+    "independentReview": {
+      "disposition": "ship",
+      "scope": "F1 and F2 verdict pass only",
+      "fixes": {
+        "F1": "resolved",
+        "F2": "resolved"
+      },
+      "report": "PHASE-4-INDEPENDENT-REVIEW.md"
+    },
+    "designDocumentation": "Ordinary extension; incumbent design documents preserved",
+    "detector": {
+      "status": "unavailable",
+      "reason": "Windows cache_directory_failed launcher error; not a pass"
+    }
+  },
+  "preservation": {
+    "protectedTables": 13,
+    "protectedRows": 1641,
+    "allProtectedDigestsMatch": true,
+    "beforeAt": "2026-10-13T11:21:02.381Z",
+    "afterAt": "2026-10-13T12:07:38.738Z",
+    "summary": {
+      "rivya_catalogue": {
+        "count": 120,
+        "digest": "0f7bbce050fe4c830c32a28c351cb1e090788b9a58bba6737c5a581b7b323e58"
+      },
+      "rivya_content": {
+        "count": 602,
+        "digest": "2d7a13d93d7d8800d9138cb09ab1110975facbe9189aa4bcb0b6271c41c811ad"
+      },
+      "rivya_public_media": {
+        "count": 152,
+        "digest": "9530592c6d34caf0f149f4309d367bdb917fbac8b8c5ba568a8cccb6b1ef4d94"
+      },
+      "rivya_business_settings": {
+        "count": 1,
+        "digest": "03be771ace76ef6f0ec49e09b90a1d25910251d9511cd1ae25ac53f302004fb6"
+      },
+      "rivya_revisions": {
+        "count": 734,
+        "digest": "a214e6521c7b70c43c1cdc7c9ea6253fe7cdf75c6a8c9eb64cf37e5b9e6931a4"
+      },
+      "rivya_inquiries": {
+        "count": 2,
+        "digest": "f553f216c7881b2c4bcbba77eadced625ff88b062439009cc41560b08df3a6c5"
+      },
+      "rivya_studio_orders": {
+        "count": 7,
+        "digest": "357d5d4c98efc12a66bf231a8677c834e3dd122d1de3a2d139a362e032d7d341"
+      },
+      "rivya_studio_order_events": {
+        "count": 8,
+        "digest": "ec1ceb4ac969bf853449384344a3b38ce3a6d688514164a8cd41f77ef8d134b3"
+      },
+      "rivya_inquiry_notes": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_references": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "rivya_staff": {
+        "count": 8,
+        "digest": "96a1e7f7ee9c265a20a31113d1b507dcae26e37eea74cc0970bccb94445e5812"
+      },
+      "rivya_privacy_controls": {
+        "count": 7,
+        "digest": "6a2568abd4d21c4e280dfb3591a8d6678f15b0d1d2a1dcfaed2939e795226a72"
+      },
+      "rivya_erasure_ledger": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "scope": "13 protected scopes, not every database table; normal local form-session and rate-limit bookkeeping may be written by the existing application",
+    "unchanged": "No Phase4 edits to public assets/logo, lib models, APIs, dependencies, Studio records or publication status"
+  },
+  "routeInventory": {
+    "registered": 665,
+    "available": 185,
+    "unpublishedLocalDrafts": 480,
+    "statusAndDestinationChanges": 0,
+    "coarseHtmlDifferences": [
+      "/about",
+      "/architects",
+      "/materials",
+      "/our-story"
+    ],
+    "limitation": "Local QA is older than production. 480 draft URLs are locally unpublished; this is not a live outage or publication task. Four streamed HTML differences are coarse serialization differences; resolved representative DOM checks are authoritative."
+  },
+  "evidence": {
+    "screenshots": 156,
+    "printPDFs": 6,
+    "files": [
+      {
+        "file": "1440-accessibility.png",
+        "sha256": "2769ccd768c1da7211c5384499d19f011d65644be55e4dff3622b2329d250370"
+      },
+      {
+        "file": "1440-architects.png",
+        "sha256": "bb01c5771be61f767a1b6efe8eda2166c8f0b60d91f3ef58847426c8b5efa7a3"
+      },
+      {
+        "file": "1440-brief-contact.png",
+        "sha256": "23bd300cc4c434cb4f9a476b664b866ff53e96496100ea27a262cbb0eea0f04f"
+      },
+      {
+        "file": "1440-brief-errors.png",
+        "sha256": "b7018d8a20fce04d18fdd962d73b971ee7f19c08f15f114ba8c8ad55683354f4"
+      },
+      {
+        "file": "1440-brief-review-controls.png",
+        "sha256": "ea14d55458178374c71052c5d683635af7a25ec334662dbddc0802dc6084137f"
+      },
+      {
+        "file": "1440-brief-review.png",
+        "sha256": "7faac99ae799d1ad91669634ba07b512f5112710b1587dd45291272e2d7d7b1d"
+      },
+      {
+        "file": "1440-collectible-design-body.png",
+        "sha256": "8c4894783fa89f326dbaf908b1520bc7bfe49d3e6113ec3efc2d85389336536e"
+      },
+      {
+        "file": "1440-collectible-design.png",
+        "sha256": "17ff5371577d7779c2cfea52f4034feed650d68759af5aaf75806ae73bc68932"
+      },
+      {
+        "file": "1440-commission-customize.png",
+        "sha256": "eec06627588824af08ad002cbdbd55f0c20a6803859cb2c59e42da270aa25571"
+      },
+      {
+        "file": "1440-commission.png",
+        "sha256": "d02387e680c8cbed9cffd221dcce83b8fcc37cd75bd284bf4464fe671dc6af3c"
+      },
+      {
+        "file": "1440-contact.png",
+        "sha256": "069ee5367a15ac182ef5acfbf388efe1b2406f95e64085b265c74f79f0471a6a"
+      },
+      {
+        "file": "1440-faq-body.png",
+        "sha256": "e68fddda4104f02be952d1743c4b6418a3c83e0d2de40f0fd766ff2c66d35515"
+      },
+      {
+        "file": "1440-faq-expanded.png",
+        "sha256": "acd6ca90c8275cbcb5fe20d3e47e32b09caf0b5d0d1cb3083b0b7340961d11c5"
+      },
+      {
+        "file": "1440-faq.png",
+        "sha256": "deb19ceaa10167c0e0753c239ce58c19d6a0e76a8343fafe4789534eb3fd85e7"
+      },
+      {
+        "file": "1440-fixture-error.png",
+        "sha256": "c5160dd5bb477637f9cd8eb5353d2e1779c9cd9ba437163ea4b8bd80bb5370d9"
+      },
+      {
+        "file": "1440-fixture-faq-detail.png",
+        "sha256": "10256afc06f8de2dfbbbe72ab55ac5e4e2903d6305a644e6a2c0e3ef07e417ed"
+      },
+      {
+        "file": "1440-fixture-landing-bentoGallery.png",
+        "sha256": "763646f28f224179f9c7feba3b5bce6c4e2c124fca978c80a72c2b0c2fd87435"
+      },
+      {
+        "file": "1440-fixture-landing-imageCta.png",
+        "sha256": "c2fbb6ffd951c9fb07799a96b10f7ccd9d4d1a437f1651bef0b9c4eeab100a9e"
+      },
+      {
+        "file": "1440-fixture-landing-productGrid.png",
+        "sha256": "c2a12c5506afe359408bcff6fad6532bf2acfae0a6b5702f49e8f6e05775fa7d"
+      },
+      {
+        "file": "1440-fixture-landing-testimonialGrid.png",
+        "sha256": "000af5d1b8bd452369e331b8d5b7764d3f588ca210040ba292f59c0e6f0e1191"
+      },
+      {
+        "file": "1440-fixture-landing-videoStory.png",
+        "sha256": "b5d4691c43c9cbdadc7a506a77323d1ab3644d1010e6d17ef434371bc64855cb"
+      },
+      {
+        "file": "1440-fixture-landing.png",
+        "sha256": "dd4999d5c3df9a58ac4d2be6269835e17c74eefdff587a78130dfb0aac59f5dd"
+      },
+      {
+        "file": "1440-fixture-loading.png",
+        "sha256": "e0a9d95fe6717a041cb46c928a5b0cb3ba2cf910a0854555823cc4b7753a00ab"
+      },
+      {
+        "file": "1440-fixture-portfolio-archive.png",
+        "sha256": "7579fc71626cdd65a08bd5b0cd41cfe909ede845309eef9ed601c6ed0f4f6267"
+      },
+      {
+        "file": "1440-fixture-portfolio-detail.png",
+        "sha256": "b7bbd0c305ac77fdcec6787b4f25a5b8e819130bad30b84dbcf99332bfb8b2fe"
+      },
+      {
+        "file": "1440-fixture-receipt-recovery.png",
+        "sha256": "e3f244205e063425a1ace6394a5a688cfffbc9560481ae9252d9dbc7ce7308ba"
+      },
+      {
+        "file": "1440-fixture-receipt.png",
+        "sha256": "a6e9e292f164b4e45ee93c39814928d2fde33619c5c965c98a372b29ac531a3e"
+      },
+      {
+        "file": "1440-fixture-testimonial-archive.png",
+        "sha256": "d00a8935b51dcfda329c1609ad5fe4d14f08a71a4d59c836ac8e1cae7d88ee9a"
+      },
+      {
+        "file": "1440-fixture-testimonial-detail.png",
+        "sha256": "1e14ad7e270f78f0a62b6ae3f8b0f3a15e472d833bebbe9170c3fdbffb8de11b"
+      },
+      {
+        "file": "1440-focus-dark-filter.png",
+        "sha256": "aab62728cc0025588c63f119205d13934a33516a289b5193ea3e9411eb7dc263"
+      },
+      {
+        "file": "1440-focus-dark.png",
+        "sha256": "5e2a0ec19c73ced9550f80f9ccc2fb768c9a00db97986db8b0e837bac5a6e0d7"
+      },
+      {
+        "file": "1440-focus-faq.png",
+        "sha256": "f3daf81dd5786af9d10143d44f4dccdd70b427acc6cf32e7ad9930a131b19dcf"
+      },
+      {
+        "file": "1440-focus-ivory.png",
+        "sha256": "4b7580ffba30a767a34a9ebd4816e1e70a7d2c446486896766c962433ba8cbcb"
+      },
+      {
+        "file": "1440-gallery-enlarged.png",
+        "sha256": "62b98edfb4c491e6ef5f1d062c192121d98764e68acfebe9063f79ef4eaa6ac1"
+      },
+      {
+        "file": "1440-gu-commission-customize.png",
+        "sha256": "ca6d2f2ac2342c6056592be4c48f0c327a6d2e81bf5387b56ab8b2e842d3eca2"
+      },
+      {
+        "file": "1440-gu-journal.png",
+        "sha256": "c4ac7699e3bde86c83b87e0d13e506c71caa6d9dcd82466aeb05168086a8108f"
+      },
+      {
+        "file": "1440-gu-our-story.png",
+        "sha256": "3cfdf121d1b322c0a99ea909490828797afec9c25bc4e341c39e98ef7a44de56"
+      },
+      {
+        "file": "1440-hi-commission-customize.png",
+        "sha256": "e61c62615d6b33c1e49c6bd4fc7902dce5bfe2fcf5ad56144f8a0ffdb5fb048c"
+      },
+      {
+        "file": "1440-hi-journal.png",
+        "sha256": "944708d092bc9dfd9595bb4b99babc73a291e460a3c2fa5791c09fe0e1937784"
+      },
+      {
+        "file": "1440-hi-our-story.png",
+        "sha256": "206b5333b87656b5633c94b0c8e6e1838d89fe5759b6a1b2531d8721d6046570"
+      },
+      {
+        "file": "1440-home.png",
+        "sha256": "ced37b055ebc8d19bc0004f6be168b4ce90837460d50e3c3e56c09e9dfc75cbd"
+      },
+      {
+        "file": "1440-imprint.png",
+        "sha256": "973a9fa6a3d1ac659ab7fc5315b8d4725516bc5ead1b0e0d8eba6b84371b336e"
+      },
+      {
+        "file": "1440-inquiry-received.png",
+        "sha256": "e0d8c5062763c609e6d0c6c804dd5f7bb087ddf148df3369d5b75397fccb9dac"
+      },
+      {
+        "file": "1440-journal-a-cohesive-gift-set-without-repeating-every-detail.png",
+        "sha256": "5bba97da16618b287b69954272f6a7fd0684658da15c1b025b39c4844785da51"
+      },
+      {
+        "file": "1440-journal-body.png",
+        "sha256": "7d7b03a2e2b5761232765e9f3d7dd48a8686daa23885628bfcb50f4fe5725f4b"
+      },
+      {
+        "file": "1440-journal-empty.png",
+        "sha256": "f39a00b993505a7ab9faa20399af7eef239de0c0da7782d2520c0b5101fa3262"
+      },
+      {
+        "file": "1440-journal.png",
+        "sha256": "a0a43fd4704e867cbbe0f5551a51e1d3a07303295ae74eee6a9d14dcfd53a71c"
+      },
+      {
+        "file": "1440-materials-care.png",
+        "sha256": "d948a48dfa1f303e21bd4ae93b38c42d92792b1dbb67347a64b3305e5e9fee86"
+      },
+      {
+        "file": "1440-memory-art.png",
+        "sha256": "2091e66f8ef3ec39ea73ada62bf6dcec7c0d048027f5f638c1c8dd3e9e27027b"
+      },
+      {
+        "file": "1440-our-story-body.png",
+        "sha256": "4a1eee78ff0cec84f8850c44c717470262de79e507ab6a1e134de9edda185cf5"
+      },
+      {
+        "file": "1440-our-story.png",
+        "sha256": "982640ee7b5cfd15931bed5a3a2b400948304ba847accbed3b344ae8a6584a79"
+      },
+      {
+        "file": "1440-personal-art.png",
+        "sha256": "3d74327360442dd83cd3ea2cfaa69863e7017beb08e67f3b2611814520fff17f"
+      },
+      {
+        "file": "1440-personalize.png",
+        "sha256": "ac1c07e6384cdc78e76ecb8355abbb6e76d5f23341ea40148b542bbc87883211"
+      },
+      {
+        "file": "1440-phase4-unavailable.png",
+        "sha256": "10e05e882a75673cfd7acbb437ac95a320793c7c26fa671c75d16e70a57f9525"
+      },
+      {
+        "file": "1440-pieces-amber-veil-wall-panel-customize.png",
+        "sha256": "fa0bef2323ce7657360fbbd6f534950efd2f3e73c89832ef4dba1a56f7a45709"
+      },
+      {
+        "file": "1440-pieces-amber-veil-wall-panel.png",
+        "sha256": "69c0c9f0658fb5191c56ad98393dfd4211ad92b47f20315bc8c0c4cd06e5ef8c"
+      },
+      {
+        "file": "1440-portfolio.png",
+        "sha256": "6ec64956bbfd079dbca01a36ac060b1bfb5874d30db4a2e99deff2d23dd54950"
+      },
+      {
+        "file": "1440-preserve.png",
+        "sha256": "59f62a2ce31572f2fc81bc0ec3714978a4acca06473ed7e6596e71387b5d0750"
+      },
+      {
+        "file": "1440-print-accessibility.png",
+        "sha256": "923725d2518607d0ea2effa970581be1590b7ab40f427e842027bd187c61f35d"
+      },
+      {
+        "file": "1440-print-imprint.png",
+        "sha256": "577d7f2f7c6b3f557982282206540cda02157b3a3514497d35e9242c09af499a"
+      },
+      {
+        "file": "1440-print-privacy.png",
+        "sha256": "55ce719766eda15b8bb0053f391bf881fbbe51e1db3f3416f2c8478771678ebb"
+      },
+      {
+        "file": "1440-print-returns-cancellations.png",
+        "sha256": "69cece2e0aa019a97c654bd28752202592e7518a203097c0c5787e7967fd098b"
+      },
+      {
+        "file": "1440-print-shipping-delivery.png",
+        "sha256": "7e092e8c4186df928dc56cf333e27359d82fc609ae563c5f9bb588737eb5640e"
+      },
+      {
+        "file": "1440-print-terms.png",
+        "sha256": "584ec25da48b6636cbb2f53647d79ecb12f105bf6ef57ee41cb6d75061a6580d"
+      },
+      {
+        "file": "1440-privacy-body.png",
+        "sha256": "19481eb2b2c35b7e855ea71d1b24b9614cee8136abffe54460f6d9bfc5aa7ac2"
+      },
+      {
+        "file": "1440-privacy.png",
+        "sha256": "5a858db925155211ca55c8b73a217d4c976783f8146655852cbe2186cfa7eed6"
+      },
+      {
+        "file": "1440-process.png",
+        "sha256": "b399cbbd7a683f400047f97ab84a7e5d601f494f48f55c5ebcfa2ee416c332ed"
+      },
+      {
+        "file": "1440-returns-cancellations.png",
+        "sha256": "b179d7ed82381bea0fae4504b349ed9dd264f731be8e42b60b0583c99a2aca8f"
+      },
+      {
+        "file": "1440-saved-pieces.png",
+        "sha256": "68e088220e5aab31e91ba126438e649ebacd23c436d949fc5b3ee19702f3acf2"
+      },
+      {
+        "file": "1440-search-empty.png",
+        "sha256": "b51e9a9438793e61c5bf7a3b62ecbb55b214f3c7f09ec7f6b1c84e5a2e64c9f6"
+      },
+      {
+        "file": "1440-search.png",
+        "sha256": "21e10397036a3cdc9ad58f37f7effa6fce135f308de014d71d8ba20f67861d9d"
+      },
+      {
+        "file": "1440-shipping-delivery.png",
+        "sha256": "25ffb321b419e6773117a5213d44d99610d5a98f94db872586431f2b811f200e"
+      },
+      {
+        "file": "1440-terms.png",
+        "sha256": "a964aa10196afb7d27b5f8a0036eeab158b31de5aed262b9d0e4cf4178326ad7"
+      },
+      {
+        "file": "1440-testimonials.png",
+        "sha256": "6ac6dffcaabe9d8e36deaed694b2102df6f03fa8624106d9a73c9ad8872673f3"
+      },
+      {
+        "file": "320-collectible-design.png",
+        "sha256": "115f794b2d416510f05c332202f45b5de106a90bd36ca09fa43b53a179e5b761"
+      },
+      {
+        "file": "320-commission-customize.png",
+        "sha256": "04a8ca7248dd50e1368209edd663eef9c1845864c171af2b0cd9db6d0547c5a1"
+      },
+      {
+        "file": "320-focus-dark.png",
+        "sha256": "fae58a1cadba5c14800e627d0d73936d5b5e1aeea7da33da2e7d1568915fe946"
+      },
+      {
+        "file": "320-focus-ivory.png",
+        "sha256": "16a2530139b30f74c4c13293da89299e0e0dc23ce6a2bcea72c2f0643d376fde"
+      },
+      {
+        "file": "320-journal.png",
+        "sha256": "1c9c3b913d743cad35a6fcf57d0b8da1dca33748f70cab5c153037ae865c79ad"
+      },
+      {
+        "file": "320-our-story.png",
+        "sha256": "71947e6b80ab4b2fbd7f9149ffb4703320bcde879a5876755e684d98e69c1042"
+      },
+      {
+        "file": "320-pieces-amber-veil-wall-panel.png",
+        "sha256": "fbdb74a62aaef0babf08f2abe697d6bd43adec8ad177c327c9b0e47c6c000dbb"
+      },
+      {
+        "file": "320-privacy.png",
+        "sha256": "29d5601617d610da4aa72317cdd39e6ba0823b95d1c42769ec3219beed60c777"
+      },
+      {
+        "file": "390-accessibility.png",
+        "sha256": "d9f7b53b4545a2f6d46d64dc8b10f66816cef28ef9894696ab6706643e186891"
+      },
+      {
+        "file": "390-architects.png",
+        "sha256": "0acd28e79a8422fd5d52918b43c48ad2caa810b71169dd70fc349c75b2649a0d"
+      },
+      {
+        "file": "390-brief-contact.png",
+        "sha256": "737000573fd31f53c49da8d16af14c630ddad99737058a83fb3530813317cbbf"
+      },
+      {
+        "file": "390-brief-errors.png",
+        "sha256": "5c684abca28404745b5fc85ddb791c1d12c3ce8d298356c168dfea4a63d1c045"
+      },
+      {
+        "file": "390-brief-review-controls.png",
+        "sha256": "42e98ded62d22d617be8db9c09df46864a0f62fabd73da9bda90eafe13dda8be"
+      },
+      {
+        "file": "390-brief-review.png",
+        "sha256": "edc70c14fe9b160b31bf0db29734c2ab2fb16ed14fbb219e9b916e38200a2efd"
+      },
+      {
+        "file": "390-collectible-design-body.png",
+        "sha256": "d663a92e3ce6fbbae280547665fcb7240dd8e4299b333b8d32dc46df91ddbabc"
+      },
+      {
+        "file": "390-collectible-design.png",
+        "sha256": "4963b8e5af528abfebe4881205318e86101e996469c766995b70fd8270c95c86"
+      },
+      {
+        "file": "390-commission-customize.png",
+        "sha256": "16475ea154ec8707ab6bddb29648e31b028a11d8f1e7dec46ab91ce7b17f30d2"
+      },
+      {
+        "file": "390-commission.png",
+        "sha256": "1385aa85c8a8f0f7e72d610ab0e46e254fba6f7781e38e5bb75b18f0e525dfc6"
+      },
+      {
+        "file": "390-contact.png",
+        "sha256": "9cd79a2d2b0889b417776da58cb3ef01f5d9a8c077169b5a11564b7f9a2d9e3c"
+      },
+      {
+        "file": "390-faq-body.png",
+        "sha256": "ac11adb539acccaea43d37b740bb6fd1b9b8dffce7232ab5342e1aee94bf98af"
+      },
+      {
+        "file": "390-faq-expanded.png",
+        "sha256": "35f4d464a416edf5a2dabe6f45b77481d3d3dd20cc82de9dc94adce6325707c0"
+      },
+      {
+        "file": "390-faq.png",
+        "sha256": "64a89bbffa1ed9f6949c1522f5fd1dd8d5ba264a55d3bde512d37b46850b2d72"
+      },
+      {
+        "file": "390-fixture-error.png",
+        "sha256": "2327ef01d640a84a4918645537e10d5240ef4bc58ec7ae301340d56679973529"
+      },
+      {
+        "file": "390-fixture-faq-detail.png",
+        "sha256": "c3a5a0997472a10e4ff4e6fae82decb28b86237ead6df89bd18e53cce1d5d7c5"
+      },
+      {
+        "file": "390-fixture-landing-bentoGallery.png",
+        "sha256": "311436698cad948da1ccd2805225194c1c3b5336f24f8e3c9ab957de6484452c"
+      },
+      {
+        "file": "390-fixture-landing-imageCta.png",
+        "sha256": "b7f3041ab63d15c8bd645a9c5c0f1a44cc98dfa02c07d834754005198f9fd2bb"
+      },
+      {
+        "file": "390-fixture-landing-productGrid.png",
+        "sha256": "fe917d89e46e8dcbf14c6b98478403cb68769e7ed78813c60c7067b3b3c7abc1"
+      },
+      {
+        "file": "390-fixture-landing-testimonialGrid.png",
+        "sha256": "71dcf00d42264eaeade34e198bab7baa9e349f2c8d87b81b4c243287389fb4cc"
+      },
+      {
+        "file": "390-fixture-landing-videoStory.png",
+        "sha256": "3219b2e02690ed5ecac1acbd6708690dc540b30d7b6788620be1ce5a8c1239e1"
+      },
+      {
+        "file": "390-fixture-landing.png",
+        "sha256": "d486c53438435e00273ee9cdd4d7a8fb8a92bc19859b39d5986f9c72e4ba4412"
+      },
+      {
+        "file": "390-fixture-loading.png",
+        "sha256": "650fbd1180e6cd401fa97c4bc4275a7acfaddb4369a8f80f6a2fc45a199cf5f3"
+      },
+      {
+        "file": "390-fixture-portfolio-archive.png",
+        "sha256": "27b8e2b97b07c5e3a3353752838507f6c5b67c5a32973b91c1287597f474e624"
+      },
+      {
+        "file": "390-fixture-portfolio-detail.png",
+        "sha256": "9e1175392a0b386d61c4188c54b3bd093e621e733606bcceb664b7eee39f2610"
+      },
+      {
+        "file": "390-fixture-receipt-recovery.png",
+        "sha256": "f6edfe20454f0214e56b83eac246a97586b4dea196de49d412310fc5ae5482ba"
+      },
+      {
+        "file": "390-fixture-receipt.png",
+        "sha256": "d1a670a15f3686dc0f407e090de573bfb48d63010bd81f450db2acd56b207a15"
+      },
+      {
+        "file": "390-fixture-testimonial-archive.png",
+        "sha256": "a29e3860ea9e99efe024bc903c4c636858d218ed48152035885718b9486154ec"
+      },
+      {
+        "file": "390-fixture-testimonial-detail.png",
+        "sha256": "1d523f4d20d183f6dab541d1d6e8f497d0fba3c202b1c104534c41ba2af9c994"
+      },
+      {
+        "file": "390-focus-dark-filter.png",
+        "sha256": "5779c89932e146d136f90f761e5f1d669150cdeb201a768e228cc89282192eb9"
+      },
+      {
+        "file": "390-focus-dark.png",
+        "sha256": "2ec2c6ede8ce57a98cdef7030b456227f413d796b8793492d9372bc490f1c745"
+      },
+      {
+        "file": "390-focus-faq.png",
+        "sha256": "ec27669c01b4883c93ec3405a57a23c59d9b8a4908aa1704d5c8bc55caf198ff"
+      },
+      {
+        "file": "390-focus-ivory.png",
+        "sha256": "0b1690d9990de8233eec60430f47f4876c1810050fa9369077e199b50ad69a85"
+      },
+      {
+        "file": "390-gallery-enlarged.png",
+        "sha256": "48e1a7980a919025741274f76fcb2012c475ceb134c75cf0ef687da785f108a9"
+      },
+      {
+        "file": "390-gu-commission-customize.png",
+        "sha256": "3231f33042677cc95f79a98b664461ee4d94cd07dbbc3223d0c09e7b3fa189c9"
+      },
+      {
+        "file": "390-gu-journal.png",
+        "sha256": "101a213bdccfef206d09a3bffdeb148843a641c25f59723094b80523e19f4380"
+      },
+      {
+        "file": "390-gu-our-story.png",
+        "sha256": "a687e5337b5f970d2de9cd2c4849d195a7c27ce1646f886e4e428fa6c85376ad"
+      },
+      {
+        "file": "390-hi-commission-customize.png",
+        "sha256": "aa199c5a167b62f18a4c825cfa81f5652e420e840b2b8467f8a089d0957922f1"
+      },
+      {
+        "file": "390-hi-journal.png",
+        "sha256": "8bfdd45a81bcd86a77dfadd6cef27c9498a9b94630a747118b82eade18cdd180"
+      },
+      {
+        "file": "390-hi-our-story.png",
+        "sha256": "1fb7be24538aabf12e40e4b2338358232f20dd4921f6ca24f815062eb47231e8"
+      },
+      {
+        "file": "390-home.png",
+        "sha256": "c9cf507d64804ea28d7c68b7f5d78f7fecff2f96f4bab84f53b6211101a45e51"
+      },
+      {
+        "file": "390-imprint.png",
+        "sha256": "a804f56f2d7c8888c94ed6ef734d00af9198ca55f93d840861b84547cd435c3e"
+      },
+      {
+        "file": "390-inquiry-received.png",
+        "sha256": "ae96f2556a62dbdbbcc74cd422a809ac4f0ae744b378035e9341ede2e5cd35f5"
+      },
+      {
+        "file": "390-journal-a-cohesive-gift-set-without-repeating-every-detail.png",
+        "sha256": "3fe37c9fb1ad71856ecc4fdc4becc83d9323e37e75eaeb490332a0154aa9f877"
+      },
+      {
+        "file": "390-journal-body.png",
+        "sha256": "d68d1c64ccd8de98bbcfd4a45c9f9d9ce93bd0f99f31af7a4660e32159b028df"
+      },
+      {
+        "file": "390-journal-empty.png",
+        "sha256": "2e76c470f07d6f723c6aa4bdd6c1fe0fa368d611bf0affde3b02ed60caed0e21"
+      },
+      {
+        "file": "390-journal.png",
+        "sha256": "987b5d65d1d05ae26d68c81bec8e1cb815791f1034be50edf866008410735ccb"
+      },
+      {
+        "file": "390-materials-care.png",
+        "sha256": "a0aa9bb8d899bc5abd3f31cba1eecfd732ba3328aeb15f00def90adfaebc7317"
+      },
+      {
+        "file": "390-memory-art.png",
+        "sha256": "909db3cf87c639236505ffba8bd0be6e656c95185c12cca8f090b41a04e0e304"
+      },
+      {
+        "file": "390-our-story-body.png",
+        "sha256": "74f81edcc9aca10bc21d064b0a076e8471997948bde3c31315bf1ebc7e3a2b0f"
+      },
+      {
+        "file": "390-our-story.png",
+        "sha256": "af1fc58e3fbb895d708085cfce90be1cea1755b7c0176191a8975bf8a3dc7fe4"
+      },
+      {
+        "file": "390-personal-art.png",
+        "sha256": "32be5b2f0362973fcf423859b7fe2c843b510478cfd85778bf5e3767578bd329"
+      },
+      {
+        "file": "390-personalize.png",
+        "sha256": "d73a5dd03fb1729e2a2fb1d255a3c7b28fe2ba818d02a39a509733315a63b57d"
+      },
+      {
+        "file": "390-phase4-unavailable.png",
+        "sha256": "7d8760844e6f4dc6d49974be654264042fc7f8f40778a8667180c3fdc525b312"
+      },
+      {
+        "file": "390-pieces-amber-veil-wall-panel-customize.png",
+        "sha256": "c58110d0e43c0360d87adffc0c95d5c34e062f0b4ec932158dd7274d2a35ee7f"
+      },
+      {
+        "file": "390-pieces-amber-veil-wall-panel.png",
+        "sha256": "5d470908b72ff3bf6ab5b9cbf35af961a872d618d64e2fe5ec9278eb013a3f95"
+      },
+      {
+        "file": "390-portfolio.png",
+        "sha256": "8bd21f2dc1049c9dc3c9ad82065a9e9c43837ef74f4a0b17b3b3d60accbb5352"
+      },
+      {
+        "file": "390-preserve.png",
+        "sha256": "4ed16e8f69e1abd3e5374b600b436a6698e33d42d873981b0147ae4034fd8bcf"
+      },
+      {
+        "file": "390-privacy-body.png",
+        "sha256": "96cd1a79a23130d67f8a64524848852167af05c1168062625f10278419aea687"
+      },
+      {
+        "file": "390-privacy.png",
+        "sha256": "f3b1bcac1b6e4832ed044c067c3f5c64a115cbe9f371c252cd5a6aa4ecdb7085"
+      },
+      {
+        "file": "390-process.png",
+        "sha256": "aa93008041d9401811f00cba3f20d2942c124f080a0712fc2433ad1cd981af59"
+      },
+      {
+        "file": "390-returns-cancellations.png",
+        "sha256": "c97b30fe13499209ad2122f5bb712bdbddc991b5d38e33f147cd9718e61497db"
+      },
+      {
+        "file": "390-saved-pieces.png",
+        "sha256": "2ff16eb9766c407e6c02bd8b8e7c1372aa045f55cfad2d8964e73deec2f27c69"
+      },
+      {
+        "file": "390-search-empty.png",
+        "sha256": "d587b7a2255925142226ae89e4f679896034a840807707fc42d7db45a74837a9"
+      },
+      {
+        "file": "390-search.png",
+        "sha256": "15c6480d8688c1c2b0fbb44b4fe9aab451122f33c572d91d9f5ae6f8dd22825a"
+      },
+      {
+        "file": "390-shipping-delivery.png",
+        "sha256": "4ab08524880360251f7a6d10068541291a3054a009bf727864638c4bce49a496"
+      },
+      {
+        "file": "390-terms.png",
+        "sha256": "2b56c7ef2e6eba7d43432af2dfd7d1d035cd8081aad1c2b08ae8f6866edb6b29"
+      },
+      {
+        "file": "390-testimonials.png",
+        "sha256": "e8d81632019dd3567f9daa1919d71adce89b01a25f79661a0eefe3259437fd0c"
+      },
+      {
+        "file": "768-collectible-design-body.png",
+        "sha256": "6ea3ca768560031f45eb5062029c82599f9cbe4756317694ff99987ee581e3b8"
+      },
+      {
+        "file": "768-collectible-design.png",
+        "sha256": "eddc0c8e6ef25fe34db4ec4cd462456c987cdbe7722c609e616768a297a3c170"
+      },
+      {
+        "file": "768-commission-customize.png",
+        "sha256": "4defc29169444faf10dc7b89b53fa11f9e40cfa6a3f9872257fde02a3005a350"
+      },
+      {
+        "file": "768-focus-dark.png",
+        "sha256": "9935181433df7426ba3514b80b78abb9ae7152f7a405de0dfd2899c04bae5e36"
+      },
+      {
+        "file": "768-focus-ivory.png",
+        "sha256": "a6d646c58e14a12af351db9a6c915c0b93e2d9753c7dd8ed07ced16e5728967a"
+      },
+      {
+        "file": "768-pieces-amber-veil-wall-panel.png",
+        "sha256": "017d663d79e4a56f8b2e4262231ab2057ec357929d9cf8c9f12d60120b55441d"
+      },
+      {
+        "file": "accessibility.pdf",
+        "sha256": "59007ccf44fba7852e2ed031e9b5e1122a08cd443b0c1ba57d7de91f680fd010"
+      },
+      {
+        "file": "imprint.pdf",
+        "sha256": "dd5c1446841f0b2bb7f21460c562057732ef72ab8a2d0f0880fa232629eff5e7"
+      },
+      {
+        "file": "privacy.pdf",
+        "sha256": "a34ba07afd1e22c0a2cac980ce3906e65af6685914d0c51aec97f35956554eaf"
+      },
+      {
+        "file": "returns-cancellations.pdf",
+        "sha256": "a008fadd3bced52f48fce2a80276bfa90e569b5be405839d1a307761bd2c3661"
+      },
+      {
+        "file": "shipping-delivery.pdf",
+        "sha256": "adc6d458bb5d0ea42590b8cbc2b23d1a500b1ab44bbc0dde092bdf709b61af39"
+      },
+      {
+        "file": "terms.pdf",
+        "sha256": "362c466fdb1903627da05c6c67ba0cb132c8caac447d9fea9624176cc0a05ede"
+      }
+    ]
+  },
+  "limits": [
+    "No genuine inquiry submitted or automatic WhatsApp sent",
+    "Repeated local form-session requests reached existing rate limit; fallback stays usable and Save is disabled",
+    "No new physical-device, screen-reader, independent language, rights, field-performance or production evidence",
+    "Static fixtures preserve concept/fictional labels and do not prove hydrated editing, playback or database saving",
+    "Phase5 must reconcile Studio public previews; no Studio redesign in Phase4"
+  ]
+}

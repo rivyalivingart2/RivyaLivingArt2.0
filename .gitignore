@@ -28,3 +28,7 @@ OLDWEBSITE/
 # Generated Phase 3 review evidence and static fixture builds.
 /output/playwright/redesign-phase3/
 /output/redesign-phase3/
+
+# Generated Phase 4 local verification evidence.
+/output/playwright/redesign-phase4/
+/output/redesign-phase4/
