@@ -1,0 +1,316 @@
+{
+  "at": "2026-10-13T04:08:33.603Z",
+  "applicationSource": "f984d3b822cc5b0073f82497289cd5d3ecfed628",
+  "importFilesVerified": 68,
+  "gitBlobHashesVerified": true,
+  "fontCommonBytes": 187088,
+  "fontBrowser": {
+    "at": "2026-10-13T04:07:23.863Z",
+    "rows": [
+      {
+        "text": "ẹ́",
+        "weight": 400,
+        "width": 23.3203125,
+        "ascent": 31,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ḍ̇",
+        "weight": 400,
+        "width": 24.4921875,
+        "ascent": 33.6328125,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ậ́",
+        "weight": 400,
+        "width": 22.4609375,
+        "ascent": 39.59375,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "á",
+        "weight": 400,
+        "width": 22.4609375,
+        "ascent": 31,
+        "descent": 1,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ë",
+        "weight": 400,
+        "width": 23.3203125,
+        "ascent": 30,
+        "descent": 1,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "Ångström",
+        "weight": 400,
+        "width": 183.37890625,
+        "ascent": 40,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ά",
+        "weight": 400,
+        "width": 26.5625,
+        "ascent": 31,
+        "descent": 1,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "Й",
+        "weight": 400,
+        "width": 30.13671875,
+        "ascent": 38,
+        "descent": 0,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "RivyaLivingArt 120",
+        "weight": 400,
+        "width": 348.80859375,
+        "ascent": 30,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "हिन्दी",
+        "weight": 400,
+        "width": 81.484375,
+        "ascent": 41,
+        "descent": 5,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ગુજરાતી",
+        "weight": 400,
+        "width": 132.1875,
+        "ascent": 40,
+        "descent": 8,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ẹ́",
+        "weight": 500,
+        "width": 23.49609375,
+        "ascent": 31,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ḍ̇",
+        "weight": 500,
+        "width": 24.7265625,
+        "ascent": 34.6328125,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ậ́",
+        "weight": 500,
+        "width": 22.71484375,
+        "ascent": 39.671875,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "á",
+        "weight": 500,
+        "width": 22.71484375,
+        "ascent": 31,
+        "descent": 1,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ë",
+        "weight": 500,
+        "width": 23.49609375,
+        "ascent": 31,
+        "descent": 1,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "Ångström",
+        "weight": 500,
+        "width": 186.7578125,
+        "ascent": 40,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ά",
+        "weight": 500,
+        "width": 26.953125,
+        "ascent": 31,
+        "descent": 1,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "Й",
+        "weight": 500,
+        "width": 30.25390625,
+        "ascent": 38,
+        "descent": 0,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "RivyaLivingArt 120",
+        "weight": 500,
+        "width": 354.921875,
+        "ascent": 31,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "हिन्दी",
+        "weight": 500,
+        "width": 81.484375,
+        "ascent": 41,
+        "descent": 5,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ગુજરાતી",
+        "weight": 500,
+        "width": 132.1875,
+        "ascent": 40,
+        "descent": 8,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ẹ́",
+        "weight": 600,
+        "width": 23.65234375,
+        "ascent": 31,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ḍ̇",
+        "weight": 600,
+        "width": 24.9609375,
+        "ascent": 34.6328125,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ậ́",
+        "weight": 600,
+        "width": 22.96875,
+        "ascent": 39.76953125,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "á",
+        "weight": 600,
+        "width": 22.96875,
+        "ascent": 31,
+        "descent": 1,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ë",
+        "weight": 600,
+        "width": 23.65234375,
+        "ascent": 31,
+        "descent": 1,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "Ångström",
+        "weight": 600,
+        "width": 190.05859375,
+        "ascent": 40,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ά",
+        "weight": 600,
+        "width": 27.36328125,
+        "ascent": 31,
+        "descent": 1,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "Й",
+        "weight": 600,
+        "width": 30.37109375,
+        "ascent": 38,
+        "descent": 0,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "RivyaLivingArt 120",
+        "weight": 600,
+        "width": 360.859375,
+        "ascent": 31,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "हिन्दी",
+        "weight": 600,
+        "width": 89.16015625,
+        "ascent": 42,
+        "descent": 6,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      },
+      {
+        "text": "ગુજરાતી",
+        "weight": 600,
+        "width": 141.54296875,
+        "ascent": 42,
+        "descent": 9,
+        "sameMetrics": true,
+        "pixelDifferences": 0
+      }
+    ],
+    "allExact": true
+  },
+  "build": true,
+  "runtime": {
+    "passed": 403,
+    "failed": 0
+  },
+  "protectedWrites": 0
+}
