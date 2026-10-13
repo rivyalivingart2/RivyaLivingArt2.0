@@ -1,3 +1,19 @@
+# Current checkpoint — PR52/53 released; M10 acceptance remains partial
+
+13 October 2026: application fixes are live through PR52 and PR53. Main `839af6d3114e81c30fdd4fdacb1cf9468d0e253c` matches READY production `dpl_4T1oD95yrLdzEz6S6xosmL3ZWYQF` on www.rivyalivingart.com. Read `M10-FINAL-RELEASE.md` and `m10-final-release-evidence.json` in the migration directory first. Portable application fingerprint: `2128ad65374b3c4887e966f05a4277b0e3a6b5b985d752a2106b950a1f0be56c`; Windows bytes: `00adfe44c4524ce49e56497c0e5a3e37ec25b774d1fea425fe35b3931d0856f7`. All539 differing files among580 are CRLF-only. Older candidate/release-pending instructions below are historical.
+
+Final build/type and403 runtime checks pass; preceding344 unit/12 preflight passes cover unchanged logic. All36 final production checks pass, including selected concept/fictional disclosures, authentication and three media hashes. Live video play/pause verified. Common fonts are187,088 bytes with33 exact canvas comparisons; do not reuse the discarded109,952-byte candidate's performance claims. All68 supplemental import hashes match on-disk and Git bytes.
+
+Every original local and production ID/digest remains unchanged in13 scopes. Only one unpublished local conflict article and two revisions were added. No production data writes, protected translation approval/publication, genuine inquiry submission or replay of480 entries/homepage revision4 occurred.
+
+Final hosted cache-disabled LCP: home4544/3064/2308/2688/2240/2216ms (median2498; three of six exceed2500); collection1988/2016/1964ms. CLS0 throughout. Home variable final-header/server wait remains unresolved; field p75 is unavailable. Full visual/all-width/conditional-state acceptance remains partial despite expanded default/editor/print/interaction proof. Continue V29/V17 conditional selectors/gallery states and remaining print/width gaps from the full register; do not repeat accepted unchanged captures.
+
+Actual native200/400% zoom, human screen-reader/physical-phone, independent Hindi/Gujarati, source-specific rights/facts, field data and a genuine consent-safe inquiry remain evidence gates. Use `M10-EXTERNAL-ACCEPTANCE-HANDOFF.md` for exact packets and required evidence. Do not manufacture acceptance. Detailed PR/main release remains authorized. Scrapers/old-product transfers/backups remain excluded; no automation scheduled.
+
+QA application and isolated PostgreSQL stopped gracefully with data retained; ports4199/55439 have no listeners. Temporary browser CPU/network/cache/media/viewport overrides reset and completed local testing tabs closed. No automation is running.
+
+---
+
 # Current checkpoint — M10 completion candidate verified for PR52
 
 13 October 2026: continue the authorized detailed-PR/main release in [PR52](https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/52), branch `codex/m10-completion-evidence`. Application commit `e6ea81243747197c62c668245f33020128767ec8`; committed application fingerprint `d8e448811577734ca5737f3e96f83bdf5608d88b1309007047864b40cf67acc0`; Windows bytes `fa94b1c1c6c8109d5e11521b8b4248faae9b313c6db8ca2b8c697dda31cb69cc`. The 539 byte differences are only CRLF conversion. Read `M10-COMPLETION-PASS.md`, `M10-SUPPLEMENTAL-PUBLIC-REVIEW.md`, `M10-CONDITIONAL-EDITOR-CHECKS.md` and `M10-EXTERNAL-ACCEPTANCE-HANDOFF.md` in the migration directory.

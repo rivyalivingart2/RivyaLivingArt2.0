@@ -185,3 +185,8 @@ Dialog source has Tab wrap/Escape/opener recovery and catalogue tabs have keyboa
 
 This register is complete as an actionable source map, not full M10 acceptance. Actual native zoom, real screen-reader, physical phone, independent language/rights, field performance and genuine inquiries remain distinct gates. Browser viewport changes and automated language audit cannot satisfy them.
 
+
+
+## Released follow-up — 13 October
+
+Read [M10-FINAL-RELEASE.md](M10-FINAL-RELEASE.md) and [the final receipt](m10-final-release-evidence.json) for PR52/53 production verification, corrected final font sizes, complete hosted sample series, all13 protected-scope digest comparisons and sixteen additional interaction-state captures. This supersedes older pending-release instructions while retaining their historical scope. Full visual/native/device/independent-language/rights/field acceptance remains partial.

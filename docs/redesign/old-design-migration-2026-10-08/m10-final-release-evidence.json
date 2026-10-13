@@ -1,0 +1,772 @@
+{
+  "at": "2026-10-13T04:39:31.424Z",
+  "status": "released; M10 acceptance remains partial",
+  "release": {
+    "prs": [
+      52,
+      53
+    ],
+    "main": "839af6d3114e81c30fdd4fdacb1cf9468d0e253c",
+    "applicationSource": "e71cfc8e952704b505a7f843e554177d1b60b6ae",
+    "deployment": "dpl_4T1oD95yrLdzEz6S6xosmL3ZWYQF",
+    "ready": true,
+    "canonical": "https://www.rivyalivingart.com",
+    "portableApplicationSha256": "2128ad65374b3c4887e966f05a4277b0e3a6b5b985d752a2106b950a1f0be56c",
+    "windowsApplicationSha256": "00adfe44c4524ce49e56497c0e5a3e37ec25b774d1fea425fe35b3931d0856f7",
+    "files": 580,
+    "crlfOnlyDifferences": 539
+  },
+  "production": {
+    "at": "2026-10-13T04:30:24.694Z",
+    "origin": "https://www.rivyalivingart.com",
+    "deployment": "dpl_4T1oD95yrLdzEz6S6xosmL3ZWYQF",
+    "readOnly": true,
+    "requests": [
+      {
+        "path": "/process",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/our-story",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/architects",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/collectible-design",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/materials-care",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/commission",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/journal",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/contact",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/testimonials",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/portfolio",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/faq",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/commission/customize",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/pieces/river-channel/customize",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/pieces/river-channel",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/privacy",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/imprint",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/terms",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/studio/login",
+        "status": 200,
+        "exactDeployment": true
+      },
+      {
+        "path": "/portfolio/a-narrow-blue-line-at-the-dining-table",
+        "status": 200,
+        "exactDeployment": true,
+        "disclosure": "concept"
+      },
+      {
+        "path": "/portfolio/a-console-and-small-object-sharing-an-edge-rhythm",
+        "status": 200,
+        "exactDeployment": true,
+        "disclosure": "concept"
+      },
+      {
+        "path": "/portfolio/initials-with-a-quiet-colour-accent",
+        "status": 200,
+        "exactDeployment": true,
+        "disclosure": "concept"
+      },
+      {
+        "path": "/testimonials/a-preference-for-a-quieter-dining-accent",
+        "status": 200,
+        "exactDeployment": true,
+        "disclosure": "fictional"
+      },
+      {
+        "path": "/testimonials/repeating-a-detail-at-two-scales",
+        "status": 200,
+        "exactDeployment": true,
+        "disclosure": "fictional"
+      },
+      {
+        "path": "/testimonials/keeping-initials-readable-within-an-accent",
+        "status": 200,
+        "exactDeployment": true,
+        "disclosure": "fictional"
+      },
+      {
+        "path": "/api/studio/presentation",
+        "status": 401,
+        "authenticationRequired": true
+      },
+      {
+        "path": "/api/studio/content",
+        "status": 401,
+        "authenticationRequired": true
+      },
+      {
+        "path": "/studio",
+        "status": 307,
+        "redirectsToSignIn": true
+      },
+      {
+        "path": "/studio/presentation/preview",
+        "status": 307,
+        "redirectsToSignIn": true
+      },
+      {
+        "path": "/workshops",
+        "status": 410
+      },
+      {
+        "path": "/missing-m10-release-check",
+        "status": 404
+      },
+      {
+        "path": "/robots.txt",
+        "status": 200
+      },
+      {
+        "path": "/sitemap.xml",
+        "status": 200
+      },
+      {
+        "path": "/media/migration/hero-pour-loop-poster.jpg",
+        "status": 200,
+        "bytes": 98481,
+        "sha256Matches": true
+      },
+      {
+        "path": "/media/migration/hero-pour-loop.webm",
+        "status": 200,
+        "bytes": 1649274,
+        "sha256Matches": true
+      },
+      {
+        "path": "/media/migration/hero-pour-loop.mp4",
+        "status": 200,
+        "bytes": 2135160,
+        "sha256Matches": true
+      }
+    ],
+    "completed": true
+  },
+  "preservation": [
+    {
+      "mode": "local",
+      "beforeAt": "2026-10-12T14:21:40.175Z",
+      "afterAt": "2026-10-13T03:38:07.188Z",
+      "readOnly": true,
+      "scopes": [
+        {
+          "table": "rivya_catalogue",
+          "originalCount": 120,
+          "afterCount": 120,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_content",
+          "originalCount": 601,
+          "afterCount": 602,
+          "missing": 0,
+          "changed": 0,
+          "added": 1
+        },
+        {
+          "table": "rivya_public_media",
+          "originalCount": 152,
+          "afterCount": 152,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_business_settings",
+          "originalCount": 1,
+          "afterCount": 1,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_revisions",
+          "originalCount": 732,
+          "afterCount": 734,
+          "missing": 0,
+          "changed": 0,
+          "added": 2
+        },
+        {
+          "table": "rivya_inquiries",
+          "originalCount": 2,
+          "afterCount": 2,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_studio_orders",
+          "originalCount": 7,
+          "afterCount": 7,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_studio_order_events",
+          "originalCount": 8,
+          "afterCount": 8,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_inquiry_notes",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_references",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_staff",
+          "originalCount": 8,
+          "afterCount": 8,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_privacy_controls",
+          "originalCount": 7,
+          "afterCount": 7,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_erasure_ledger",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        }
+      ]
+    },
+    {
+      "mode": "live-read-only",
+      "beforeAt": "2026-10-12T14:42:32.152Z",
+      "afterAt": "2026-10-13T04:30:21.495Z",
+      "readOnly": true,
+      "scopes": [
+        {
+          "table": "rivya_catalogue",
+          "originalCount": 120,
+          "afterCount": 120,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_content",
+          "originalCount": 535,
+          "afterCount": 535,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_public_media",
+          "originalCount": 154,
+          "afterCount": 154,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_business_settings",
+          "originalCount": 1,
+          "afterCount": 1,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_revisions",
+          "originalCount": 1389,
+          "afterCount": 1389,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_inquiries",
+          "originalCount": 2,
+          "afterCount": 2,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_studio_orders",
+          "originalCount": 2,
+          "afterCount": 2,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_studio_order_events",
+          "originalCount": 2,
+          "afterCount": 2,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_inquiry_notes",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_references",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_staff",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_privacy_controls",
+          "originalCount": 2,
+          "afterCount": 2,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        },
+        {
+          "table": "rivya_erasure_ledger",
+          "originalCount": 0,
+          "afterCount": 0,
+          "missing": 0,
+          "changed": 0,
+          "added": 0
+        }
+      ]
+    }
+  ],
+  "performance": {
+    "protocol": {
+      "viewport": "390x844",
+      "dpr": 1,
+      "cpuSlowdown": 4,
+      "latencyMs": 150,
+      "downloadBytesPerSecond": 200000,
+      "uploadBytesPerSecond": 93750,
+      "cacheDisabled": true,
+      "collection": "Wait for load and document.fonts.ready, then buffered PerformanceObserver entries. Third collection retained from the navigation completed during a tool timeout."
+    },
+    "home": [
+      {
+        "file": "test-results/old-design-migration/m10-completion/production-display-home-1.json",
+        "sha256": "ccb84597db8bb76730ab408b57b7afb3dd8c675ca2b5e154b8f3a667b501eead",
+        "at": "2026-10-13T04:23:19.268Z",
+        "lcpMs": 4544,
+        "cls": 0,
+        "finalHeadersMs": 2263.4000000059605,
+        "documentEndMs": 2534.1000000089407
+      },
+      {
+        "file": "test-results/old-design-migration/m10-completion/production-display-home-2.json",
+        "sha256": "f450ef26377ed58085cbbd0a5a549effbf1a56d4fc0e8ea235c524f2543481c8",
+        "at": "2026-10-13T04:23:41.372Z",
+        "lcpMs": 3064,
+        "cls": 0,
+        "finalHeadersMs": 1455.199999988079,
+        "documentEndMs": 1923.5
+      },
+      {
+        "file": "test-results/old-design-migration/m10-completion/production-display-home-3.json",
+        "sha256": "ec7b649ae29dd1b74a4fb35688d07f96226b2cdb1a8571ea1ad6db1a8888794f",
+        "at": "2026-10-13T04:23:46.385Z",
+        "lcpMs": 2308,
+        "cls": 0,
+        "finalHeadersMs": 842.2000000029802,
+        "documentEndMs": 1196.5999999940395
+      },
+      {
+        "file": "test-results/old-design-migration/m10-completion/production-display-home-4.json",
+        "sha256": "6e527d7b56168d917a4311207d5b361dea6dad8be65fba291290d1d1d9bac0de",
+        "at": "2026-10-13T04:25:27.833Z",
+        "lcpMs": 2688,
+        "cls": 0,
+        "finalHeadersMs": 1217.0999999940395,
+        "documentEndMs": 1590.8999999910593
+      },
+      {
+        "file": "test-results/old-design-migration/m10-completion/production-display-home-5.json",
+        "sha256": "67b22f3fbfd8982672bb0f12163afb2a047a3586a31495bd4d1610393302c341",
+        "at": "2026-10-13T04:25:32.934Z",
+        "lcpMs": 2240,
+        "cls": 0,
+        "finalHeadersMs": 804.7000000029802,
+        "documentEndMs": 1157.5999999940395
+      },
+      {
+        "file": "test-results/old-design-migration/m10-completion/production-display-home-6.json",
+        "sha256": "e43d0b8df41bae8bbf27d9f5e54c171ec4f46068b441dc917431df38ddb2b0a7",
+        "at": "2026-10-13T04:25:37.974Z",
+        "lcpMs": 2216,
+        "cls": 0,
+        "finalHeadersMs": 753.9000000059605,
+        "documentEndMs": 1131.2000000029802
+      }
+    ],
+    "collection": [
+      {
+        "file": "test-results/old-design-migration/m10-completion/production-display-collection-1.json",
+        "sha256": "1882389e16613b7f16676156710a5f42a30d50f09b3ab0845a1a996ce50b20f1",
+        "at": "2026-10-13T04:25:44.954Z",
+        "lcpMs": 1988,
+        "cls": 0,
+        "finalHeadersMs": 573.5,
+        "documentEndMs": 928.3999999910593
+      },
+      {
+        "file": "test-results/old-design-migration/m10-completion/production-display-collection-2.json",
+        "sha256": "eeb32357b35efd03204f3d052dcba4cf79c3d4d958d1032df9ff20ecda74fea3",
+        "at": "2026-10-13T04:25:49.602Z",
+        "lcpMs": 2016,
+        "cls": 0,
+        "finalHeadersMs": 579.3999999910593,
+        "documentEndMs": 947.5
+      },
+      {
+        "file": "test-results/old-design-migration/m10-completion/production-display-collection-3.json",
+        "sha256": "2d2fdf24333efe8b453eace3608687e4d06c16a388e1f9b4892ad9d1eb3df0e9",
+        "at": "2026-10-13T04:29:36.091Z",
+        "lcpMs": 1964,
+        "cls": 0,
+        "finalHeadersMs": 546.2999999970198,
+        "documentEndMs": 887
+      }
+    ],
+    "homeMedianMs": 2498,
+    "homeOver2500": 3,
+    "collectionMedianMs": 1988,
+    "fieldP75": null,
+    "allColdSamplesPass": false,
+    "diagnosis": "Home final response headers vary about 754–2263 ms. Removed two competing display-font preloads. Keep failed samples; do not infer field acceptance or add stale publication caching."
+  },
+  "validation": {
+    "buildAndTypes": "passed final display-font source",
+    "runtime": {
+      "passed": 403,
+      "failed": 0,
+      "seconds": 12.273
+    },
+    "unit": {
+      "passed": 344,
+      "scope": "preceding unchanged logic"
+    },
+    "preflight": {
+      "passed": 12
+    },
+    "lint": {
+      "errors": 0,
+      "existingWarnings": 62
+    },
+    "fontComparisons": {
+      "pixelAndMetricsMatches": 33,
+      "commonFontBytes": 187088,
+      "originalGlyphCoverageRetained": true
+    },
+    "importHashes": {
+      "onDiskAndGitBlobMatches": 68
+    },
+    "print": {
+      "homePagesInspected": 21,
+      "carePagesInspected": 3,
+      "finalCareActionContrast": 21
+    }
+  },
+  "liveFilm": {
+    "deliberatePlay": true,
+    "pausedAfterTest": true,
+    "durationSeconds": 8.042,
+    "muted": true,
+    "nativeControls": true,
+    "readyState": 4,
+    "currentSource": "/media/migration/hero-pour-loop.webm",
+    "screenshot": "test-results/old-design-migration/m10-completion/production-film-desktop-final.png",
+    "sha256": "04c6af6751bea9cfdcc856be5fea63b7131a1e4b02f2ba7a4c05611394a71e55"
+  },
+  "extraStates": [
+    {
+      "label": "search-dialog-390",
+      "width": 390,
+      "height": 720,
+      "y": 0,
+      "scrollWidth": 375,
+      "active": "<input data-dialog-autofocus=\"true\" maxlength=\"100\" placeholder=\"Search pieces\" type=\"search\" name=\"q\">",
+      "screenshot": "test-results/old-design-migration/m10-completion/search-dialog-390.png",
+      "sha256": "63ce35231e09232a2c93fd40b33662e97368d9af375518a7130e5ab54ae3b72a",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "navigation-open-390",
+      "width": 390,
+      "height": 720,
+      "y": 0,
+      "scrollWidth": 375,
+      "active": "<button class=\"shop-module__Vq0a9q__closeButton\" type=\"button\" aria-label=\"Close navigation\">Close navigation<!-- --> ×</button>",
+      "screenshot": "test-results/old-design-migration/m10-completion/navigation-open-390.png",
+      "sha256": "a47e18da195a85176e5570a1ff262caa168abeae60a60a25f1a492942c45bc69",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "navigation-last-focus-390",
+      "width": 390,
+      "height": 720,
+      "y": 0,
+      "scrollWidth": 375,
+      "active": "<a class=\"shop-module__Vq0a9q__button\" href=\"/commission\">Begin a piece <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap",
+      "screenshot": "test-results/old-design-migration/m10-completion/navigation-last-focus-390.png",
+      "sha256": "099d44ab74899cc751218c7d58f3ac35265d1de40ff74859b4dcafc764696723",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "search-no-results-390",
+      "width": 390,
+      "height": 720,
+      "y": 1535,
+      "scrollWidth": 375,
+      "active": "<p id=\"catalogue-results\" tabindex=\"-1\" class=\"shop-module__Vq0a9q__resultsCount catalogue-journey-module___ufMSW__resultCount\" role=\"status\" aria-live=\"polite\">No pieces to show<!-- --> · Search term: “zzm10nomatch”</p>",
+      "screenshot": "test-results/old-design-migration/m10-completion/search-no-results-390.png",
+      "sha256": "b3219b9ad392092ef63179448bac1d79bbc2bf92721e993de3943583ce0dc306",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "saved-empty-390",
+      "width": 390,
+      "height": 720,
+      "y": 0,
+      "scrollWidth": 375,
+      "active": "<body><div hidden=\"\"><!--$--><!--/$--></div><a class=\"skip-link\" href=\"#main-content\">Skip to main content</a><div class=\"shop-module__Vq0a9q__site\" data-site-copy-revision=\"1\"><header class=\"shop-module__Vq0a9q__header\"",
+      "screenshot": "test-results/old-design-migration/m10-completion/saved-empty-390.png",
+      "sha256": "11c84e308893cc3588ab360c8f6684c094b9da49fc35ef84f37753bcacccad00",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "product-lightbox-third-390",
+      "width": 390,
+      "height": 720,
+      "y": 161,
+      "scrollWidth": 375,
+      "active": "<button class=\"shop-module__Vq0a9q__closeButton\" type=\"button\" aria-label=\"Close dialog\">Close<!-- --> ×</button>",
+      "screenshot": "test-results/old-design-migration/m10-completion/product-lightbox-third-390.png",
+      "sha256": "d6d6c7b99d4778ca685b9f33977c0b822eb913916bf4ea35d192a87c91622ccf",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "product-lightbox-wrap-390",
+      "width": 390,
+      "height": 720,
+      "y": 161,
+      "scrollWidth": 375,
+      "active": "<button type=\"button\">Next →</button>",
+      "screenshot": "test-results/old-design-migration/m10-completion/product-lightbox-wrap-390.png",
+      "sha256": "45f9ffdee7156ee52357e36f39c88d39b81a1e7448c7db9cd2d770faae2cdfa5",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "saved-populated-390",
+      "width": 390,
+      "height": 720,
+      "y": 540,
+      "scrollWidth": 375,
+      "active": "<body><div hidden=\"\"><!--$--><!--/$--></div><a class=\"skip-link\" href=\"#main-content\">Skip to main content</a><div class=\"shop-module__Vq0a9q__site\" data-site-copy-revision=\"1\"><header class=\"shop-module__Vq0a9q__header\"",
+      "screenshot": "test-results/old-design-migration/m10-completion/saved-populated-390.png",
+      "sha256": "725cbdd6e05dce7f4c19e17c87850ba252b4d2c13a839ca42be02c00e2d68887",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "faq-expanded-390",
+      "width": 390,
+      "height": 720,
+      "y": 2181,
+      "scrollWidth": 375,
+      "active": "<summary>Can I use WhatsApp for a general website question?</summary>",
+      "screenshot": "test-results/old-design-migration/m10-completion/faq-expanded-390.png",
+      "sha256": "72fbee54ff9d930aa52793a7d1ccf21d673669cabe9a6b0ffdec6cd7fb775e70",
+      "disposition": "Closed-state capture; do not use as expanded-answer proof"
+    },
+    {
+      "label": "faq-page-two-390",
+      "width": 390,
+      "height": 720,
+      "y": 1463,
+      "scrollWidth": 375,
+      "active": "<p role=\"status\" tabindex=\"-1\">19<!-- --> <!-- -->faqs<!-- --> records · Page <!-- -->2<!-- --> of <!-- -->2</p>",
+      "screenshot": "test-results/old-design-migration/m10-completion/faq-page-two-390.png",
+      "sha256": "db7c6088d54889f2fd8482b10d3a1d7fa0076715abaa0a9c633d279e93dc41be",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "faq-filter-panel-390",
+      "width": 390,
+      "height": 720,
+      "y": 92,
+      "scrollWidth": 375,
+      "active": "<button class=\"shop-module__Vq0a9q__closeButton\" type=\"button\" aria-label=\"Close dialog\">Close<!-- --> ×</button>",
+      "screenshot": "test-results/old-design-migration/m10-completion/faq-filter-panel-390.png",
+      "sha256": "2d49f9ef73725d1aebb5a3a84cf0cdafde255d8b581c1babc9395fe1399dd534",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "faq-no-match-390",
+      "width": 390,
+      "height": 720,
+      "y": 92,
+      "scrollWidth": 375,
+      "active": "<p role=\"status\" tabindex=\"-1\">0<!-- --> <!-- -->faqs<!-- --> records · Page <!-- -->1<!-- --> of <!-- -->1</p>",
+      "screenshot": "test-results/old-design-migration/m10-completion/faq-no-match-390.png",
+      "sha256": "82fa3a3df9693baee5403652dac0cb1c808c3996e49d87ca843cf2763d013973",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "faq-hash-open-390",
+      "width": 390,
+      "height": 720,
+      "y": 2352,
+      "scrollWidth": 375,
+      "active": "<body style=\"\"><div hidden=\"\"><!--$--><!--/$--></div><a class=\"skip-link\" href=\"#main-content\">Skip to main content</a><!--$--><div class=\"shop-module__Vq0a9q__site\" data-site-copy-revision=\"1\"><header class=\"shop-module",
+      "screenshot": "test-results/old-design-migration/m10-completion/faq-hash-open-390.png",
+      "sha256": "49ed1bcb653066731cfd757b3423d9faa46dc18ebbb912c2c6ebfa79c7701c36",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "custom-invalid-390",
+      "width": 390,
+      "height": 720,
+      "y": 735,
+      "scrollWidth": 375,
+      "active": "<select id=\"answer-piece_type\" required=\"\" aria-invalid=\"true\" aria-describedby=\"help-piece_type\"><option value=\"\" selected=\"\">Choose a direction</option><option>Furniture or a spatial piece</option><option>Wall art</opt",
+      "screenshot": "test-results/old-design-migration/m10-completion/custom-invalid-390.png",
+      "sha256": "9c1e17b59fc494b9ecb48f04a11680062f16483e18ba4596e67fc879fd11df0e",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "custom-details-390",
+      "width": 390,
+      "height": 720,
+      "y": 85,
+      "scrollWidth": 375,
+      "active": "<h2 tabindex=\"-1\">Your details &amp; references</h2>",
+      "screenshot": "test-results/old-design-migration/m10-completion/custom-details-390.png",
+      "sha256": "c5fa051f73cf6b3313e6ec1051c267d859e74fc9e8c2b1cdbd2cd32cceac0462",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    },
+    {
+      "label": "custom-review-390",
+      "width": 390,
+      "height": 720,
+      "y": 85,
+      "scrollWidth": 375,
+      "active": "<h2 tabindex=\"-1\">Review</h2>",
+      "screenshot": "test-results/old-design-migration/m10-completion/custom-review-390.png",
+      "sha256": "0db94d912821f8b2e77a16099cd0ab95dc6c5fdc234d5d5de9b888635c9891bb",
+      "disposition": "Visible pixels inspected for the recorded state only"
+    }
+  ],
+  "limitations": [
+    "Full 36-group/all-width/conditional visual acceptance is incomplete; old empty collections cannot supply populated reference pixels.",
+    "Native 200/400 percent browser zoom, actual screen-reader tasks and physical-phone checks have no new evidence.",
+    "All 36 article translation candidates remain subject to independent Hindi/Gujarati acceptance; no protected translation imported or published.",
+    "Source-specific media permitted-use records and factual substantiation remain open as listed in the rights register.",
+    "No CrUX Phone data available; no field p75 or genuine consent-safe inquiry observed."
+  ],
+  "productionDataWrites": false,
+  "publicationReplay": false
+}
