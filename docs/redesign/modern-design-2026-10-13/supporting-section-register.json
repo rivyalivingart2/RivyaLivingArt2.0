@@ -1,0 +1,668 @@
+[
+  {
+    "group": "HOME",
+    "key": "pour",
+    "label": "Hero",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "manifesto",
+    "label": "Manifesto",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "pieces",
+    "label": "Featured pieces",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "large-format",
+    "label": "Large format",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "material",
+    "label": "The material story",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "collections",
+    "label": "The collections",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "furniture",
+    "label": "What we commission",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "maker",
+    "label": "The maker",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "rooms",
+    "label": "In the room",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "work",
+    "label": "Recent commissions",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "words",
+    "label": "In their words",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "bespoke",
+    "label": "Commission band",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "workshops",
+    "label": "Workshops",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "print",
+    "label": "Print studio",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "process",
+    "label": "How it works",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "why",
+    "label": "Why Rivya Living Art",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "journal",
+    "label": "Journal",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "HOME",
+    "key": "closing",
+    "label": "Closing invitation",
+    "source": "src/lib/page-sections.ts",
+    "phase": 3,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "ABOUT",
+    "key": "hero",
+    "label": "Hero",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "ABOUT",
+    "key": "story",
+    "label": "The story",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "ABOUT",
+    "key": "maker",
+    "label": "The maker",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "ABOUT",
+    "key": "craft",
+    "label": "The craft",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "ABOUT",
+    "key": "materials",
+    "label": "Materials",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "ABOUT",
+    "key": "studio",
+    "label": "The studio",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "ABOUT",
+    "key": "closing",
+    "label": "Closing invitation",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS",
+    "key": "pour",
+    "label": "Hero",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS",
+    "key": "stages",
+    "label": "The ten stages",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS",
+    "key": "materials",
+    "label": "Materials",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS",
+    "key": "timelines",
+    "label": "Timelines",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS",
+    "key": "closing",
+    "label": "Closing invitation",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS_STEPS_LIST",
+    "key": "step1",
+    "label": "01 · Concept",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS_STEPS_LIST",
+    "key": "step2",
+    "label": "02 · Material selection",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS_STEPS_LIST",
+    "key": "step3",
+    "label": "03 · Wood preparation",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS_STEPS_LIST",
+    "key": "step4",
+    "label": "04 · Resin composition",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS_STEPS_LIST",
+    "key": "step5",
+    "label": "05 · Casting",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS_STEPS_LIST",
+    "key": "step6",
+    "label": "06 · Curing",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS_STEPS_LIST",
+    "key": "step7",
+    "label": "07 · Surface refinement",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS_STEPS_LIST",
+    "key": "step8",
+    "label": "08 · Hand finishing",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS_STEPS_LIST",
+    "key": "step9",
+    "label": "09 · Quality inspection",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "PROCESS_STEPS_LIST",
+    "key": "step10",
+    "label": "10 · Delivery",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "MATERIALS_LIST",
+    "key": "m1",
+    "label": "Material 1",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "MATERIALS_LIST",
+    "key": "m2",
+    "label": "Material 2",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "MATERIALS_LIST",
+    "key": "m3",
+    "label": "Material 3",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "MATERIALS_LIST",
+    "key": "m4",
+    "label": "Material 4",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "CUSTOM_ORDER",
+    "key": "commission",
+    "label": "Hero",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "CUSTOM_ORDER",
+    "key": "kinds",
+    "label": "What people commission",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "CUSTOM_ORDER",
+    "key": "how",
+    "label": "How a commission runs",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "CUSTOM_ORDER",
+    "key": "brief",
+    "label": "The brief",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "CUSTOM_ORDER",
+    "key": "questions",
+    "label": "Questions",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "CUSTOM_ORDER",
+    "key": "work",
+    "label": "Commissioned before",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "CUSTOM_ORDER",
+    "key": "words",
+    "label": "In their words",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "CONTACT",
+    "key": "hero",
+    "label": "Hero",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "CONTACT",
+    "key": "channels",
+    "label": "Four ways in",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "CONTACT",
+    "key": "write",
+    "label": "The form",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "CONTACT",
+    "key": "faq",
+    "label": "Asked often",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "WORKSHOPS",
+    "key": "hero",
+    "label": "Hero",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "WORKSHOPS",
+    "key": "facts",
+    "label": "The facts strip",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "WORKSHOPS",
+    "key": "why",
+    "label": "Why come",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "WORKSHOPS",
+    "key": "session",
+    "label": "The session",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "WORKSHOPS",
+    "key": "sessions",
+    "label": "Sessions",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "WORKSHOPS",
+    "key": "private",
+    "label": "Private workshops",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "WORKSHOPS",
+    "key": "room",
+    "label": "The room",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "key": "scale",
+    "label": "Hero",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "key": "scope",
+    "label": "Four kinds of large work",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "key": "philosophy",
+    "label": "Philosophy",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "key": "how",
+    "label": "How it runs",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "key": "brief",
+    "label": "What to send",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "key": "materials",
+    "label": "Materials",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "key": "pieces",
+    "label": "Pieces we commission",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "key": "work",
+    "label": "Commissioned before",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "key": "words",
+    "label": "In their words",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "key": "faq",
+    "label": "Questions",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "key": "gallery",
+    "label": "Large pieces",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  },
+  {
+    "group": "LARGE_FORMAT",
+    "key": "commission",
+    "label": "Start the conversation",
+    "source": "src/lib/page-sections.ts",
+    "phase": 4,
+    "disposition": "coverage reference only; preserve current applicable content and conditions; new composition required",
+    "status": "mapped, current activation to be retained"
+  }
+]

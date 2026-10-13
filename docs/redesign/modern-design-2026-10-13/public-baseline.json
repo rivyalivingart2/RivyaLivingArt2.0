@@ -1,0 +1,1344 @@
+{
+  "at": "2026-10-13T09:33:35.557208+00:00",
+  "scope": "Anonymous GETs: sitemap and three representative public pages. Semantic text fingerprints exclude Next streaming IDs. Not a full live route audit or private database baseline.",
+  "sitemapStatus": 200,
+  "sitemapRoutes": [
+    "/",
+    "/accessibility",
+    "/architects",
+    "/collectible-design",
+    "/commission",
+    "/contact",
+    "/faq",
+    "/faq/are-saved-pieces-shared-across-devices",
+    "/faq/can-a-photograph-confirm-the-exact-material-specification",
+    "/faq/can-a-room-image-alone-prove-an-installation",
+    "/faq/can-a-testimonial-be-published-without-attribution-permission",
+    "/faq/can-an-arrangement-reference-guarantee-the-final-appearance",
+    "/faq/can-an-image-establish-heat-resistance",
+    "/faq/can-i-ask-about-text-in-another-script",
+    "/faq/can-i-ask-about-transparency-or-opacity",
+    "/faq/can-i-ask-for-a-sample-discussion",
+    "/faq/can-i-ask-how-lighting-affects-the-appearance",
+    "/faq/can-i-discuss-a-pair-of-related-pieces",
+    "/faq/can-i-discuss-a-room-before-deciding-on-an-object",
+    "/faq/can-i-discuss-an-unusual-shaped-space",
+    "/faq/can-i-discuss-relocation-before-moving-a-piece",
+    "/faq/can-i-discuss-several-palette-options",
+    "/faq/can-i-infer-food-contact-suitability-from-a-product-photograph",
+    "/faq/can-i-propose-a-change-without-altering-a-saved-specification",
+    "/faq/can-i-request-a-coordinated-gift-set-subject-to-discussion",
+    "/faq/can-i-request-a-variation-without-changing-a-catalogue-product",
+    "/faq/can-i-request-initials-instead-of-a-full-name",
+    "/faq/can-i-save-a-brief-before-sending-it",
+    "/faq/can-i-search-without-knowing-a-product-name",
+    "/faq/can-i-send-a-brief-prepared-by-an-architect",
+    "/faq/can-i-send-a-paper-outline-or-mock-layout",
+    "/faq/can-i-send-a-simple-room-sketch",
+    "/faq/can-i-share-a-colour-screenshot",
+    "/faq/can-i-supply-photographs-before-handing-anything-over",
+    "/faq/can-initial-measurements-be-approximate",
+    "/faq/can-one-brief-include-several-placement-options",
+    "/faq/can-personal-names-be-kept-out-of-a-public-project-story",
+    "/faq/can-recipient-details-remain-private",
+    "/faq/can-several-photographs-represent-one-project",
+    "/faq/do-translated-quotes-count-as-different-reviews",
+    "/faq/does-a-colour-code-guarantee-a-finished-match",
+    "/faq/does-a-glossy-image-establish-the-final-finish",
+    "/faq/does-a-visualization-establish-the-exact-finished-dimensions",
+    "/faq/does-an-inspiration-image-guarantee-an-identical-result",
+    "/faq/does-an-occasion-date-confirm-a-delivery-commitment",
+    "/faq/does-general-guidance-replace-piece-specific-instructions",
+    "/faq/how-are-design-visualizations-labelled",
+    "/faq/how-can-i-check-paragraph-breaks-after-pasting-a-saved-summary",
+    "/faq/how-can-i-compare-two-possible-shapes",
+    "/faq/how-can-i-describe-a-flexible-date-range-without-implying-a-booked-production-slot",
+    "/faq/how-can-i-describe-the-light-in-my-room",
+    "/faq/how-can-i-describe-the-material-appearance-i-like",
+    "/faq/how-can-i-distinguish-a-receipt-reference-from-a-quotation-revision",
+    "/faq/how-can-i-explain-the-atmosphere-i-want",
+    "/faq/how-can-i-explain-which-objects-matter-most",
+    "/faq/how-can-i-identify-the-latest-version-of-a-brief",
+    "/faq/how-can-i-identify-the-most-important-colour-reference",
+    "/faq/how-can-i-identify-the-next-step-that-still-needs-agreement",
+    "/faq/how-can-i-keep-website-references-separate-from-agreed-payment-information",
+    "/faq/how-can-i-separate-a-room-request-from-a-keepsake-request-in-one-brief",
+    "/faq/how-do-i-ask-about-the-source-of-a-pictured-piece",
+    "/faq/how-do-i-communicate-preferred-line-breaks",
+    "/faq/how-do-i-describe-two-possible-locations-for-a-piece",
+    "/faq/how-do-i-discuss-visible-timber-grain",
+    "/faq/how-do-i-distinguish-an-illustration-from-material-evidence",
+    "/faq/how-do-i-explain-a-preference-for-a-lighter-looking-form",
+    "/faq/how-do-i-explain-a-subtle-or-muted-colour-preference",
+    "/faq/how-do-i-move-between-the-three-collections",
+    "/faq/how-do-i-photograph-a-surface-concern",
+    "/faq/how-do-i-record-unanswered-questions",
+    "/faq/how-do-i-remove-an-applied-filter",
+    "/faq/how-many-references-are-useful",
+    "/faq/how-should-a-caption-distinguish-a-material-close-up-from-an-installation-photograph",
+    "/faq/how-should-i-correct-a-contact-preference-with-the-atelier",
+    "/faq/how-should-i-describe-a-wall-composition",
+    "/faq/how-should-i-describe-an-optional-feature-when-requesting-separate-pricing",
+    "/faq/how-should-i-handle-a-failed-submission",
+    "/faq/how-should-i-label-a-measurement-photograph",
+    "/faq/how-should-i-label-must-haves-and-preferences",
+    "/faq/how-should-i-label-two-design-versions-when-asking-about-a-change",
+    "/faq/how-should-i-provide-exact-personalization-text",
+    "/faq/how-should-several-names-be-listed",
+    "/faq/should-care-questions-mention-the-confirmed-material-and-finish",
+    "/faq/should-colour-references-include-their-surroundings",
+    "/faq/should-existing-furniture-be-included-in-my-references",
+    "/faq/should-i-arrange-transport-before-speaking-with-the-atelier",
+    "/faq/should-i-describe-the-current-condition-of-an-item",
+    "/faq/should-i-measure-doorways-as-well-as-the-room",
+    "/faq/should-i-provide-a-whole-object-photo-with-a-close-up",
+    "/faq/should-photographs-show-the-whole-room-or-just-the-proposed-position",
+    "/faq/should-reference-images-show-different-viewpoints",
+    "/faq/should-several-decision-makers-submit-separate-messages",
+    "/faq/what-access-details-are-helpful-for-stairs-or-lifts",
+    "/faq/what-belongs-in-a-list-of-decisions-still-awaiting-confirmation",
+    "/faq/what-if-family-members-have-different-preferences",
+    "/faq/what-if-several-people-use-the-same-space",
+    "/faq/what-if-the-intended-location-changes",
+    "/faq/what-placement-conditions-should-i-describe",
+    "/faq/what-qualifies-as-a-genuine-portfolio-project",
+    "/faq/what-should-i-check-before-pressing-send-in-whatsapp",
+    "/faq/what-should-i-compare-between-my-reviewed-brief-and-copied-message",
+    "/faq/what-should-i-do-when-two-photos-show-different-colours",
+    "/faq/what-should-my-first-commission-message-contain",
+    "/faq/what-surrounding-objects-should-i-mention",
+    "/faq/where-are-saved-pieces-stored",
+    "/faq/where-can-delivery-arrangements-be-discussed",
+    "/faq/where-can-i-ask-about-a-care-instruction-i-do-not-understand",
+    "/faq/where-can-i-discuss-feasibility-without-assuming-a-new-service",
+    "/faq/where-can-i-find-care-information-for-an-individual-piece",
+    "/faq/where-can-i-find-related-project-information",
+    "/faq/where-do-i-ask-about-suitability-for-preservation",
+    "/faq/where-should-an-agreed-colour-decision-be-documented",
+    "/faq/where-should-cleaning-questions-be-directed",
+    "/faq/where-should-confirmed-material-details-be-recorded",
+    "/faq/where-should-i-review-the-final-spelling",
+    "/faq/where-will-the-agreed-preservation-details-be-recorded",
+    "/faq/which-date-format-should-i-use",
+    "/faq/which-details-belong-in-a-condition-photograph-of-a-fragile-keepsake",
+    "/faq/which-dimensions-should-i-include-initially",
+    "/faq/which-policy-explains-changes-or-cancellations",
+    "/faq/which-private-details-should-i-leave-out-of-room-photos",
+    "/faq/which-room-photographs-help-with-a-first-enquiry",
+    "/faq/which-units-should-i-use",
+    "/faq/who-confirms-final-dimensions",
+    "/faq/why-can-a-surface-look-different-from-another-angle",
+    "/faq/why-might-a-project-omit-a-customer-s-name-or-location",
+    "/faq/why-might-colours-differ-between-screens",
+    "/imprint",
+    "/journal",
+    "/journal/a-brief-that-starts-with-purpose",
+    "/journal/a-cohesive-gift-set-without-repeating-every-detail",
+    "/journal/a-condition-note-before-discussing-preservation",
+    "/journal/a-consent-checklist-for-a-memory-art-project-story",
+    "/journal/a-date-format-checklist-for-personalized-art",
+    "/journal/a-decision-log-for-a-longer-commission-conversation",
+    "/journal/a-drawing-legend-for-separating-site-facts-from-proposal-marks",
+    "/journal/a-family-nameplate-with-a-personal-story",
+    "/journal/a-final-review-of-a-brief-before-sending",
+    "/journal/a-first-look-at-lift-and-staircase-access",
+    "/journal/a-guide-to-describing-your-commission",
+    "/journal/a-home-office-with-a-material-focal-point",
+    "/journal/a-measurement-sheet-an-architect-and-client-can-share",
+    "/journal/a-note-taking-method-for-colour-decisions",
+    "/journal/a-one-page-index-linking-a-saved-reference-to-later-decisions",
+    "/journal/a-placement-condition-worksheet-to-accompany-a-care-question",
+    "/journal/a-preservation-clock-as-a-memory-object",
+    "/journal/a-project-caption-that-says-only-what-is-known",
+    "/journal/a-room-begins-with-a-statement-table",
+    "/journal/a-room-brief-for-more-than-one-user",
+    "/journal/a-scale-study-using-paper-outlines",
+    "/journal/a-small-vocabulary-of-finishes-and-forms",
+    "/journal/a-source-ledger-for-brief-proposal-and-verified-outcome",
+    "/journal/a-variation-matrix-for-shared-and-individual-gift-details",
+    "/journal/a-vocabulary-for-transparency-and-depth",
+    "/journal/an-entryway-built-around-one-console",
+    "/journal/an-image-by-image-permission-ledger-for-a-public-case-study",
+    "/journal/balancing-a-low-object-with-nearby-seating",
+    "/journal/before-you-send-sentimental-materials",
+    "/journal/building-a-material-discussion-from-observations",
+    "/journal/chairs-benches-and-the-shape-of-a-room",
+    "/journal/checking-line-breaks-before-approving-text",
+    "/journal/checking-the-language-of-your-saved-request",
+    "/journal/choosing-a-format-for-a-bouquet-keepsake",
+    "/journal/choosing-a-reference-colour-that-has-context",
+    "/journal/choosing-a-short-message-that-fits-its-purpose",
+    "/journal/choosing-a-visual-priority-in-a-crowded-room",
+    "/journal/choosing-images-that-explain-a-design-decision",
+    "/journal/choosing-initials-colours-and-a-short-message",
+    "/journal/closing-a-conversation-with-clear-outstanding-questions",
+    "/journal/coffee-tables-as-sculptural-objects",
+    "/journal/combining-several-people-s-feedback-in-one-brief",
+    "/journal/comparing-a-colour-reference-in-daylight-and-evening-light",
+    "/journal/comparing-a-footprint-with-the-space-around-it",
+    "/journal/comparing-a-macro-image-with-a-whole-object-view",
+    "/journal/comparing-curved-and-straight-outlines-in-a-room-sketch",
+    "/journal/comparing-two-possible-positions-without-moving-furniture",
+    "/journal/considering-a-sculptural-object-from-several-viewpoints",
+    "/journal/corporate-gifts-as-small-design-objects",
+    "/journal/describing-a-concern-with-useful-photographs",
+    "/journal/describing-a-polished-surface-without-assuming-its-specification",
+    "/journal/describing-atmosphere-without-naming-a-product",
+    "/journal/describing-subtle-contrasts-without-a-colour-code",
+    "/journal/designing-a-wedding-invitation-keepsake",
+    "/journal/dimensions-to-discuss-before-a-final-specification",
+    "/journal/discussing-an-accent-colour-without-overwhelming-a-space",
+    "/journal/discussing-visible-arrangement-before-handing-over-materials",
+    "/journal/distinguishing-an-actual-installation-from-a-concept-scene",
+    "/journal/distinguishing-an-arrangement-reference-from-a-preservation-promise",
+    "/journal/distinguishing-appearance-changes-from-a-diagnosis",
+    "/journal/documenting-a-change-of-contact-preference",
+    "/journal/documenting-a-change-of-room-before-a-commission",
+    "/journal/finding-a-starting-point-in-the-three-collections",
+    "/journal/finding-the-right-policy-before-asking-about-a-change",
+    "/journal/following-related-reading-without-repeating-the-same-story",
+    "/journal/framing-the-view-around-a-wall-piece",
+    "/journal/from-a-mood-board-to-a-material-conversation",
+    "/journal/from-draft-to-approved-design-a-client-checklist",
+    "/journal/how-negative-space-affects-an-object-arrangement",
+    "/journal/how-to-read-a-product-specification",
+    "/journal/identifying-the-reference-number-in-a-conversation",
+    "/journal/inside-a-material-led-design-notebook",
+    "/journal/keeping-a-list-of-items-and-their-priorities",
+    "/journal/keeping-a-receipt-reference-easy-to-find",
+    "/journal/keeping-an-agreed-specification-separate-from-new-ideas",
+    "/journal/keeping-approximate-measurements-distinct-from-approved-dimensions",
+    "/journal/keeping-care-notes-with-the-confirmed-specification",
+    "/journal/keeping-occasion-information-separate-from-delivery-commitments",
+    "/journal/keeping-versions-of-a-reference-collection-understandable",
+    "/journal/light-transparency-and-the-look-of-resin",
+    "/journal/making-a-room-photograph-useful",
+    "/journal/making-room-for-natural-variation-in-a-visual-brief",
+    "/journal/mapping-the-objects-a-room-already-holds",
+    "/journal/measuring-a-proposed-position-clearly",
+    "/journal/names-and-dates-a-personalization-proofreading-checklist",
+    "/journal/noticing-what-a-room-needs-less-of",
+    "/journal/organising-individual-names-for-a-gift-set",
+    "/journal/organising-several-colour-references-by-priority",
+    "/journal/pairing-resin-art-with-warm-neutral-interiors",
+    "/journal/personalized-resin-jewellery-preparing-your-brief",
+    "/journal/photographs-privacy-and-memory-art",
+    "/journal/planning-a-large-piece-for-delivery-access",
+    "/journal/planning-a-pair-with-different-heights",
+    "/journal/planning-around-a-favourite-existing-object",
+    "/journal/planning-which-names-and-dates-may-appear-publicly",
+    "/journal/preparing-a-clear-whatsapp-enquiry",
+    "/journal/preparing-a-concise-follow-up-message",
+    "/journal/preparing-a-relocation-discussion-for-an-existing-piece",
+    "/journal/preparing-a-shortlist-for-a-later-conversation",
+    "/journal/preparing-names-in-more-than-one-script",
+    "/journal/preparing-photographs-of-a-difficult-turning-point",
+    "/journal/proofreading-a-personalization-request-with-a-second-reader",
+    "/journal/questions-about-everyday-contact-and-use",
+    "/journal/questions-to-ask-when-a-finish-looks-different-in-two-photographs",
+    "/journal/questions-to-resolve-before-discussing-completion-dates",
+    "/journal/questions-to-resolve-before-transporting-keepsakes",
+    "/journal/reading-applied-filter-chips",
+    "/journal/reading-care-guidance-without-turning-it-into-a-guarantee",
+    "/journal/reading-reflections-in-a-material-photograph",
+    "/journal/reading-the-grain-wood-and-resin-in-a-shared-composition",
+    "/journal/recognising-an-error-without-submitting-twice",
+    "/journal/recording-a-doorway-and-its-opening-direction",
+    "/journal/recording-a-preferred-spelling-and-pronunciation-separately",
+    "/journal/recording-daylight-before-choosing-a-focal-piece",
+    "/journal/recording-material-preferences-in-plain-language",
+    "/journal/recording-placement-conditions-before-asking-for-guidance",
+    "/journal/recording-the-meaning-of-a-keepsake-without-oversharing",
+    "/journal/recording-three-doorway-views-of-the-same-console-position",
+    "/journal/recording-what-has-and-has-not-been-agreed",
+    "/journal/returning-to-an-unfinished-form-safely",
+    "/journal/reviewing-a-preservation-brief-with-family-members",
+    "/journal/reviewing-a-summary-before-manually-sending-it",
+    "/journal/reviewing-colour-notes-before-approving-a-proposal",
+    "/journal/round-oval-or-rectangular-a-dining-table-planning-notebook",
+    "/journal/seasonal-gifting-without-the-marketplace-clutter",
+    "/journal/selecting-photographs-that-explain-a-sentimental-object",
+    "/journal/separating-a-camera-effect-from-a-colour-preference",
+    "/journal/separating-a-testimonial-from-a-marketing-headline",
+    "/journal/separating-requirements-from-preferences",
+    "/journal/separating-room-constraints-from-personal-preferences",
+    "/journal/separating-timber-grain-from-screen-colour",
+    "/journal/sharing-a-gift-reference-without-revealing-private-recipient-details",
+    "/journal/sketching-sightlines-from-the-doorway",
+    "/journal/small-objects-with-a-personal-meaning",
+    "/journal/the-project-story-behind-a-collectible-interior",
+    "/journal/the-quiet-role-of-a-side-table",
+    "/journal/turning-a-wedding-memory-into-a-design-brief",
+    "/journal/turning-ten-references-into-three-clear-priorities",
+    "/journal/understanding-customer-attribution-choices",
+    "/journal/using-a-search-term-when-you-do-not-know-the-product-name",
+    "/journal/using-repetition-without-identical-objects",
+    "/journal/wall-art-at-architectural-scale",
+    "/journal/what-a-reference-detail-leaves-outside-the-frame",
+    "/journal/what-genuine-before-and-after-evidence-requires",
+    "/journal/what-makes-a-comparison-reference-useful",
+    "/journal/what-open-whatsapp-and-copy-each-do",
+    "/journal/what-to-include-in-an-architects-enquiry",
+    "/journal/when-general-advice-needs-a-specific-question",
+    "/journal/why-a-detail-photograph-needs-a-wider-context",
+    "/journal/why-a-sketch-needs-units-and-a-reference-edge",
+    "/journal/why-a-visual-reference-is-not-a-material-certificate",
+    "/journal/why-a-visualization-is-not-a-final-specification",
+    "/journal/why-an-inspiration-photograph-is-not-a-cleaning-instruction",
+    "/journal/why-screenshots-are-a-starting-point-for-colour-conversations",
+    "/journal/writing-a-short-description-before-adding-images",
+    "/journal/writing-a-useful-list-of-unresolved-questions",
+    "/materials-care",
+    "/memory-art",
+    "/our-story",
+    "/personal-art",
+    "/pieces/amber-veil-wall-panel",
+    "/pieces/anniversary-story-display",
+    "/pieces/arc-c-shape-side-table",
+    "/pieces/arc-freestanding-resin-sculpture",
+    "/pieces/aster-dining-chair",
+    "/pieces/aster-single-bloom-keepsake",
+    "/pieces/blessing-pooja-display",
+    "/pieces/bloom-paired-ring-dishes",
+    "/pieces/botanical-resin-pendant",
+    "/pieces/bronzeleaf-display-plinth-set",
+    "/pieces/brook-floating-top-side-table",
+    "/pieces/canopy-room-divider-concept",
+    "/pieces/canopy-round-dining-table",
+    "/pieces/canyon-split-level-console",
+    "/pieces/cast-architectural-study",
+    "/pieces/chaptermark-flower-bookmark",
+    "/pieces/contour-flow-wall-relief",
+    "/pieces/contour-hospitality-table-installation",
+    "/pieces/contour-oval-coffee-table",
+    "/pieces/cove-low-coffee-table",
+    "/pieces/crescent-lounge-chair",
+    "/pieces/current-asymmetric-coffee-table",
+    "/pieces/delta-two-level-coffee-table",
+    "/pieces/dewdrop-pedestal-side-table",
+    "/pieces/drift-nesting-coffee-table",
+    "/pieces/dune-smoked-resin-dining-table",
+    "/pieces/eclipse-round-side-table",
+    "/pieces/entryway-bench",
+    "/pieces/estuary-oval-dining-table",
+    "/pieces/estuary-reception-counter",
+    "/pieces/evergreen-botanical-desk-clock",
+    "/pieces/everyday-resin-coaster-set",
+    "/pieces/festival-memory-plaque",
+    "/pieces/first-chapter-baby-keepsake",
+    "/pieces/flint-accent-stool",
+    "/pieces/fold-sculptural-bench",
+    "/pieces/forest-long-bench",
+    "/pieces/forever-solid-block-varmala-keepsake",
+    "/pieces/form-study-i-sculpture",
+    "/pieces/form-study-ii-sculpture",
+    "/pieces/form-study-iii-sculpture",
+    "/pieces/gather-celebration-tray",
+    "/pieces/grove-communal-dining-table",
+    "/pieces/grove-resin-and-wood-screen",
+    "/pieces/halo-ring-base-coffee-table",
+    "/pieces/haven-compact-desk",
+    "/pieces/horizon-band-wall-panel",
+    "/pieces/horizon-long-console",
+    "/pieces/hourglass-floral-wall-clock",
+    "/pieces/initial-story-keychain",
+    "/pieces/lagoon-pedestal-dining-table",
+    "/pieces/lattice-object",
+    "/pieces/letterlight-invitation-frame",
+    "/pieces/linework-executive-desk",
+    "/pieces/little-archive-keepsake-box",
+    "/pieces/little-bloom-memory-frame",
+    "/pieces/loam-drum-side-table",
+    "/pieces/lumen-translucent-side-table",
+    "/pieces/material-column-sculpture",
+    "/pieces/meadow-floating-effect-console",
+    "/pieces/meadow-wedding-flower-disc",
+    "/pieces/memory-garden-flower-shadowbox",
+    "/pieces/meridian-writing-desk",
+    "/pieces/mist-textured-wall-diptych",
+    "/pieces/moment-preserved-flower-clock",
+    "/pieces/monolith-long-span-dining-table",
+    "/pieces/monsoon-feature-wall-concept",
+    "/pieces/moss-square-coffee-table",
+    "/pieces/narrow-span",
+    "/pieces/nocturne-bedside-table",
+    "/pieces/orbit-circular-centre-table",
+    "/pieces/our-chapter-wedding-card-block",
+    "/pieces/palm-mini-serving-tray",
+    "/pieces/parametric-floor-vessel",
+    "/pieces/passage-entry-console",
+    "/pieces/pebble-sculptural-coffee-table",
+    "/pieces/petal-drop-earrings",
+    "/pieces/petal-hour-round-clock",
+    "/pieces/petal-sculptural-chair",
+    "/pieces/petal-story-bouquet-frame",
+    "/pieces/pocketworld-paperweight",
+    "/pieces/promise-mini-ring-dish",
+    "/pieces/promise-ring-platter",
+    "/pieces/reed-tall-side-table",
+    "/pieces/ridge-bronze-inlay-dining-table",
+    "/pieces/rill-counter-stool",
+    "/pieces/river-channel",
+    "/pieces/rivergrid-architectural-wall-set",
+    "/pieces/root-sculptural-base-console",
+    "/pieces/sequence-wall-triptych",
+    "/pieces/shallow-basin",
+    "/pieces/sienna-curved-console",
+    "/pieces/silt-compact-bedside-table",
+    "/pieces/single-slab-atelier-desk",
+    "/pieces/slate-river-coffee-table",
+    "/pieces/solstice-circular-wall-piece",
+    "/pieces/still-form-catch-all-bowl",
+    "/pieces/stillpoint-study-desk",
+    "/pieces/stillwater-full-pour-dining-table",
+    "/pieces/stillwater-lobby-art-installation",
+    "/pieces/stonewave-oversized-wall-art",
+    "/pieces/strata-layered-wall-relief",
+    "/pieces/terra-plinth-coffee-table",
+    "/pieces/terrace-studio-desk",
+    "/pieces/thread-of-light-resin-rakhi",
+    "/pieces/threshold-family-nameplate",
+    "/pieces/tidal-architectural-panel-installation",
+    "/pieces/tidal-rectangular-dining-table",
+    "/pieces/tide-botanical-wall-panel",
+    "/pieces/together-couple-memory-frame",
+    "/pieces/trace-metal-frame-console",
+    "/pieces/twinleaf-matched-side-table-pair",
+    "/pieces/twinleaf-mini-bookends",
+    "/pieces/umber-twin-base-dining-table",
+    "/pieces/union-engagement-tray",
+    "/pieces/verdant-split-slab-dining-table",
+    "/pieces/verdure-large-wall-disc",
+    "/pieces/vertical-drop-wall-panel",
+    "/pieces/vow-framed-varmala-keepsake",
+    "/pieces/welcome-botanical-nameplate",
+    "/portfolio",
+    "/portfolio/a-bench-along-a-bright-entry-wall",
+    "/portfolio/a-bench-and-console-with-different-visual-weights",
+    "/portfolio/a-bench-at-a-change-in-room-direction",
+    "/portfolio/a-bilingual-concept-with-separate-review-fields",
+    "/portfolio/a-blue-accent-repeated-across-a-room",
+    "/portfolio/a-blue-field-beside-a-floral-outline",
+    "/portfolio/a-blue-fragment-beside-a-neutral-volume",
+    "/portfolio/a-brief-organized-around-one-existing-object",
+    "/portfolio/a-clear-area-beside-a-concentrated-floral-form",
+    "/portfolio/a-clear-block-with-a-single-visual-centre",
+    "/portfolio/a-coaster-like-set-with-a-shared-perimeter",
+    "/portfolio/a-concise-handover-for-a-personal-art-idea",
+    "/portfolio/a-console-aligned-with-a-wall-composition",
+    "/portfolio/a-console-and-small-object-sharing-an-edge-rhythm",
+    "/portfolio/a-console-at-the-end-of-a-sightline",
+    "/portfolio/a-console-beneath-an-asymmetrical-arrangement",
+    "/portfolio/a-coordinated-concept-with-separate-privacy-choices",
+    "/portfolio/a-corner-that-changes-the-visible-pattern",
+    "/portfolio/a-curved-accent-on-a-small-plinth",
+    "/portfolio/a-date-expressed-in-words-and-digits",
+    "/portfolio/a-decorative-tray-concept-for-a-personal-setting",
+    "/portfolio/a-dining-focus-beside-a-broad-window",
+    "/portfolio/a-family-review-of-two-floral-arrangements",
+    "/portfolio/a-floral-arrangement-without-public-names",
+    "/portfolio/a-floral-composition-read-from-two-sides",
+    "/portfolio/a-floral-detail-against-an-open-margin",
+    "/portfolio/a-floral-detail-reserved-for-close-viewing",
+    "/portfolio/a-floral-display-with-a-quieter-companion",
+    "/portfolio/a-floral-frame-above-a-quiet-console",
+    "/portfolio/a-floral-frame-and-small-keepsake-reference",
+    "/portfolio/a-floral-gift-with-a-private-occasion",
+    "/portfolio/a-floral-memory-block-with-an-open-upper-margin",
+    "/portfolio/a-floral-memory-study-with-a-private-caption",
+    "/portfolio/a-floral-motif-translated-into-a-room-accent",
+    "/portfolio/a-floral-object-away-from-the-room-s-main-focus",
+    "/portfolio/a-frame-related-to-a-seated-viewpoint",
+    "/portfolio/a-garland-detail-within-a-wider-story",
+    "/portfolio/a-garland-remembered-through-its-outline",
+    "/portfolio/a-gift-brief-that-keeps-timing-honest",
+    "/portfolio/a-gift-comparison-before-choosing-a-format",
+    "/portfolio/a-gift-concept-connected-to-an-existing-room",
+    "/portfolio/a-gift-pair-connected-by-one-curve",
+    "/portfolio/a-gift-set-with-a-clear-variation-map",
+    "/portfolio/a-gift-set-with-one-deliberate-exception",
+    "/portfolio/a-gift-with-minimal-public-attribution",
+    "/portfolio/a-gold-coloured-accent-at-the-perimeter",
+    "/portfolio/a-horizontal-floral-band-in-a-tall-space",
+    "/portfolio/a-keepsake-composition-with-no-implied-event",
+    "/portfolio/a-keepsake-concept-with-an-undecided-orientation",
+    "/portfolio/a-keepsake-discussion-before-any-transfer",
+    "/portfolio/a-keepsake-represented-without-embedding-the-original",
+    "/portfolio/a-layered-blue-edge-in-close-view",
+    "/portfolio/a-layered-object-read-from-above",
+    "/portfolio/a-lighting-note-attached-to-a-colour-brief",
+    "/portfolio/a-low-object-with-an-offset-centre",
+    "/portfolio/a-low-table-between-unlike-chairs",
+    "/portfolio/a-material-board-with-claims-left-open",
+    "/portfolio/a-memory-display-intended-for-close-viewing",
+    "/portfolio/a-memory-led-brief-with-an-undecided-format",
+    "/portfolio/a-memory-object-planned-around-its-viewing-side",
+    "/portfolio/a-memory-object-with-text-kept-separate",
+    "/portfolio/a-name-layout-with-generous-margins",
+    "/portfolio/a-narrow-blue-line-at-the-dining-table",
+    "/portfolio/a-narrow-colour-path-around-a-turn",
+    "/portfolio/a-narrow-upright-floral-silhouette",
+    "/portfolio/a-pair-of-wall-studies-with-unequal-emphasis",
+    "/portfolio/a-paired-gift-with-different-colour-emphasis",
+    "/portfolio/a-personal-inscription-kept-outside-the-focal-view",
+    "/portfolio/a-personal-piece-with-a-separate-private-message",
+    "/portfolio/a-punctuation-sensitive-inscription-study",
+    "/portfolio/a-quiet-border-around-dense-flowers",
+    "/portfolio/a-remembered-ribbon-as-a-visual-line",
+    "/portfolio/a-restrained-border-around-a-vivid-garland",
+    "/portfolio/a-room-concept-informed-by-a-small-colour-reference",
+    "/portfolio/a-room-object-with-a-private-memory-reference",
+    "/portfolio/a-room-pair-united-by-a-narrow-channel",
+    "/portfolio/a-room-plan-with-two-alternative-focal-positions",
+    "/portfolio/a-round-centre-between-two-seats",
+    "/portfolio/a-round-floral-form-as-a-shared-motif",
+    "/portfolio/a-round-form-in-an-angular-corner",
+    "/portfolio/a-script-first-personalization-brief",
+    "/portfolio/a-sculptural-focal-point-with-three-viewing-studies",
+    "/portfolio/a-sentimental-pair-with-different-priorities",
+    "/portfolio/a-set-of-keepsake-priorities-before-a-design",
+    "/portfolio/a-shared-drawing-with-a-visible-change-log",
+    "/portfolio/a-shared-motif-with-individual-initials",
+    "/portfolio/a-single-letter-form-with-no-implied-identity",
+    "/portfolio/a-small-floral-grouping-with-one-leading-bloom",
+    "/portfolio/a-small-gift-built-around-one-curve",
+    "/portfolio/a-small-keepsake-and-a-larger-visual-companion",
+    "/portfolio/a-small-object-grouped-with-an-empty-space",
+    "/portfolio/a-small-object-with-a-continuous-colour-path",
+    "/portfolio/a-small-round-form-beside-a-reading-seat",
+    "/portfolio/a-still-image-and-motion-reference-compared",
+    "/portfolio/a-table-and-wall-piece-with-unequal-colour",
+    "/portfolio/a-table-composed-around-an-existing-rug",
+    "/portfolio/a-table-with-two-different-approach-views",
+    "/portfolio/a-three-journey-reference-board-with-one-purpose",
+    "/portfolio/a-threshold-brief-with-two-reference-axes",
+    "/portfolio/a-transparent-looking-layer-around-a-motif",
+    "/portfolio/a-transparent-object-against-a-dark-background",
+    "/portfolio/a-tray-and-low-table-with-restrained-contrast",
+    "/portfolio/a-tray-as-a-movable-visual-accent",
+    "/portfolio/a-two-line-dedication-with-an-intentional-pause",
+    "/portfolio/a-wall-and-console-composition-on-one-drawing",
+    "/portfolio/a-wall-piece-framed-by-an-existing-doorway",
+    "/portfolio/a-wall-sequence-with-one-shared-accent",
+    "/portfolio/a-waterfall-edge-as-the-focal-detail",
+    "/portfolio/an-access-first-console-proposal-sheet",
+    "/portfolio/an-entry-bench-with-a-quiet-front",
+    "/portfolio/an-entry-composition-prepared-as-a-family-gift",
+    "/portfolio/an-off-centre-memory-composition",
+    "/portfolio/an-open-centre-with-a-floral-perimeter",
+    "/portfolio/following-a-flowing-colour-gesture",
+    "/portfolio/initials-with-a-quiet-colour-accent",
+    "/portfolio/the-bench-as-an-entry-wall-rhythm",
+    "/portfolio/the-boundary-between-blue-and-grain",
+    "/portfolio/the-console-seen-from-the-side",
+    "/portfolio/three-decorative-forms-with-changing-openness",
+    "/portfolio/three-forms-sharing-one-curve",
+    "/privacy",
+    "/process",
+    "/returns-cancellations",
+    "/shipping-delivery",
+    "/terms",
+    "/testimonials",
+    "/testimonials/a-preference-for-a-quieter-dining-accent",
+    "/testimonials/aligning-with-the-artwork-rather-than-the-wall",
+    "/testimonials/allowing-a-memory-object-a-quieter-position",
+    "/testimonials/allowing-different-colour-preferences-within-a-pair",
+    "/testimonials/allowing-empty-space-to-carry-meaning",
+    "/testimonials/allowing-variation-inside-a-common-perimeter",
+    "/testimonials/assigning-different-roles-to-two-entry-forms",
+    "/testimonials/attaching-lighting-context-to-a-colour-preference",
+    "/testimonials/balancing-a-tray-like-accent-with-a-low-table",
+    "/testimonials/balancing-floral-density-and-an-open-margin",
+    "/testimonials/balancing-the-entrance-and-seated-views",
+    "/testimonials/borrowing-a-floral-rhythm-rather-than-an-image",
+    "/testimonials/building-a-sequence-through-changing-openness",
+    "/testimonials/carrying-a-private-memory-through-an-abstract-cue",
+    "/testimonials/carrying-a-small-colour-relationship-into-a-larger-idea",
+    "/testimonials/checking-the-arrival-view-of-a-bench-concept",
+    "/testimonials/choosing-a-gift-format-from-its-purpose",
+    "/testimonials/choosing-a-memory-format-after-understanding-purpose",
+    "/testimonials/choosing-a-primary-view-for-a-sculptural-idea",
+    "/testimonials/choosing-an-alignment-for-an-asymmetrical-wall",
+    "/testimonials/choosing-an-off-centre-floral-arrangement",
+    "/testimonials/choosing-how-strongly-an-edge-should-read",
+    "/testimonials/choosing-one-leading-bloom",
+    "/testimonials/choosing-the-controlling-axis-in-an-entry-brief",
+    "/testimonials/choosing-the-shared-centre-between-seats",
+    "/testimonials/comparing-a-floral-motif-at-different-scales",
+    "/testimonials/comparing-a-floral-silhouette-with-clear-looking-space",
+    "/testimonials/comparing-family-preferences-without-claiming-agreement",
+    "/testimonials/connecting-a-wall-sequence-with-one-accent",
+    "/testimonials/connecting-room-forms-with-a-narrow-path",
+    "/testimonials/connecting-two-different-chairs",
+    "/testimonials/connecting-wall-and-tabletop-memory-ideas",
+    "/testimonials/considering-a-memory-form-from-opposite-sides",
+    "/testimonials/considering-an-upright-curved-silhouette",
+    "/testimonials/deciding-where-a-colour-path-ends",
+    "/testimonials/designing-for-a-nearby-viewing-moment",
+    "/testimonials/discussing-a-blue-boundary-without-naming-a-process",
+    "/testimonials/discussing-a-tray-like-form-s-intended-use",
+    "/testimonials/exploring-a-letter-without-inventing-a-recipient",
+    "/testimonials/finding-a-family-resemblance-through-a-curve",
+    "/testimonials/following-one-edge-around-a-form",
+    "/testimonials/framing-vivid-flowers-quietly",
+    "/testimonials/giving-a-broad-reference-board-one-clear-purpose",
+    "/testimonials/giving-a-clear-looking-form-one-centre",
+    "/testimonials/giving-a-floral-form-a-quiet-companion",
+    "/testimonials/giving-a-name-room-in-the-layout",
+    "/testimonials/giving-a-pair-unequal-emphasis",
+    "/testimonials/giving-a-vertical-floral-form-space",
+    "/testimonials/giving-dense-flowers-a-generous-border",
+    "/testimonials/giving-two-memory-concepts-different-emphases",
+    "/testimonials/including-shared-use-in-a-family-gift-brief",
+    "/testimonials/interrupting-a-tall-space-with-a-band",
+    "/testimonials/introducing-one-round-outline",
+    "/testimonials/keeping-a-broad-field-and-a-fine-outline-distinct",
+    "/testimonials/keeping-a-close-detail-proportionate-to-the-whole",
+    "/testimonials/keeping-a-colour-path-understandable",
+    "/testimonials/keeping-a-floral-detail-connected-to-its-whole",
+    "/testimonials/keeping-a-gift-pair-related-but-individual",
+    "/testimonials/keeping-a-longer-sentiment-in-a-private-note",
+    "/testimonials/keeping-a-sentimental-original-distinct-from-a-companion",
+    "/testimonials/keeping-access-questions-ahead-of-decoration",
+    "/testimonials/keeping-an-entry-form-visually-calm",
+    "/testimonials/keeping-initials-readable-within-an-accent",
+    "/testimonials/keeping-one-set-variation-deliberate",
+    "/testimonials/keeping-personal-names-out-of-the-public-story",
+    "/testimonials/keeping-personalization-quiet-from-a-distance",
+    "/testimonials/keeping-the-idea-understandable-without-motion",
+    "/testimonials/keeping-the-occasion-private",
+    "/testimonials/keeping-the-rug-visible",
+    "/testimonials/keeping-the-story-outside-the-object-view",
+    "/testimonials/keeping-the-window-view-primary",
+    "/testimonials/keeping-two-focal-positions-genuinely-open",
+    "/testimonials/leaving-a-favourite-chair-in-the-lead",
+    "/testimonials/leaving-an-occasion-undefined-until-the-owner-supplies-it",
+    "/testimonials/leaving-apparent-depth-open-to-review",
+    "/testimonials/leaving-orientation-open-until-placement-is-understood",
+    "/testimonials/leaving-space-above-a-floral-grouping",
+    "/testimonials/letting-a-simple-curve-carry-a-gift-idea",
+    "/testimonials/letting-one-coordinated-piece-lead",
+    "/testimonials/letting-the-wall-composition-lead",
+    "/testimonials/making-a-date-unambiguous",
+    "/testimonials/making-a-distant-console-silhouette-legible",
+    "/testimonials/making-a-proposed-change-visible",
+    "/testimonials/making-an-offset-feel-deliberate",
+    "/testimonials/making-gift-variations-easy-to-audit",
+    "/testimonials/making-room-for-an-open-centre",
+    "/testimonials/mapping-initials-to-individual-items",
+    "/testimonials/naming-the-primary-side-of-a-keepsake-study",
+    "/testimonials/pairing-a-strong-texture-with-a-calm-volume",
+    "/testimonials/preparing-a-discussion-while-originals-stay-home",
+    "/testimonials/preserving-the-idea-of-a-garland-outline",
+    "/testimonials/ranking-keepsakes-before-arranging-them",
+    "/testimonials/reading-a-console-from-the-side",
+    "/testimonials/reading-a-pattern-across-a-corner",
+    "/testimonials/reading-an-entry-form-through-a-turn",
+    "/testimonials/recording-privacy-choices-item-by-item",
+    "/testimonials/relating-a-gift-idea-to-an-existing-room",
+    "/testimonials/remembering-a-ribbon-through-a-line",
+    "/testimonials/repeating-a-detail-at-two-scales",
+    "/testimonials/repeating-an-accent-only-where-it-helps",
+    "/testimonials/representing-a-memory-while-retaining-the-original",
+    "/testimonials/reserving-a-detail-for-closer-attention",
+    "/testimonials/reviewing-the-wall-and-console-on-one-sheet",
+    "/testimonials/reviewing-two-languages-separately",
+    "/testimonials/seeing-a-floral-outline-against-darkness",
+    "/testimonials/separating-a-gift-date-from-a-confirmed-schedule",
+    "/testimonials/separating-appearance-from-material-evidence",
+    "/testimonials/separating-text-approval-from-visual-approval",
+    "/testimonials/separating-visual-layers-from-practical-stacking",
+    "/testimonials/showing-a-gift-without-naming-its-recipient",
+    "/testimonials/starting-a-proposal-from-a-cherished-object",
+    "/testimonials/starting-from-the-seated-viewpoint",
+    "/testimonials/starting-with-the-exact-script",
+    "/testimonials/treating-punctuation-as-intentional-text",
+    "/testimonials/using-a-contained-room-accent",
+    "/testimonials/using-a-long-line-at-the-threshold",
+    "/testimonials/using-a-private-note-to-explain-a-detail",
+    "/testimonials/using-line-breaks-to-preserve-the-message",
+    "/testimonials/using-motion-as-a-visual-reference-only",
+    "/testimonials/using-the-doorway-as-a-frame"
+  ],
+  "sitemapRouteCount": 656,
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "copy": [
+        {
+          "tag": "h2",
+          "text": "Explore RivyaLivingArt"
+        },
+        {
+          "tag": "h2",
+          "text": "Find your piece"
+        },
+        {
+          "tag": "h1",
+          "text": "Art for the way you live."
+        },
+        {
+          "tag": "p",
+          "text": "Furniture with presence. Objects with meaning. Discover a piece, then make its story your own."
+        },
+        {
+          "tag": "h2",
+          "text": "Designed around your briefFurniture · Memory art · Personal gifts"
+        },
+        {
+          "tag": "p",
+          "text": "A conversation, then a creation"
+        },
+        {
+          "tag": "h2",
+          "text": "Objects that hold a room."
+        },
+        {
+          "tag": "p",
+          "text": "A natural edge. A pool of colour. A silhouette that draws you closer. Begin with a design and explore its place in your space."
+        },
+        {
+          "tag": "h3",
+          "text": "River Channel"
+        },
+        {
+          "tag": "p",
+          "text": "Live-Edge Dining Table"
+        },
+        {
+          "tag": "h3",
+          "text": "Shallow Basin"
+        },
+        {
+          "tag": "p",
+          "text": "Coffee Table"
+        },
+        {
+          "tag": "h3",
+          "text": "Narrow Span"
+        },
+        {
+          "tag": "p",
+          "text": "Console Table"
+        },
+        {
+          "tag": "p",
+          "text": "For architects & interior designers"
+        },
+        {
+          "tag": "h2",
+          "text": "A material partner for your vision."
+        },
+        {
+          "tag": "p",
+          "text": "Prepare a clear project brief with dimensions, intended use and material references, then develop the specification with the atelier."
+        },
+        {
+          "tag": "h3",
+          "text": "Begin with the space"
+        },
+        {
+          "tag": "p",
+          "text": "Share the piece, intended use, approximate dimensions and references. Include the delivery city and access constraints to help frame the design discussion."
+        },
+        {
+          "tag": "h3",
+          "text": "Develop the specification together"
+        },
+        {
+          "tag": "p",
+          "text": "Choose a design from the collection and use its customization form. Add project requirements in the notes; we will discuss feasibility and the quotation with you on WhatsApp."
+        },
+        {
+          "tag": "h3",
+          "text": "Make the brief useful"
+        },
+        {
+          "tag": "p",
+          "text": "Distinguish measured site dimensions from proposed product dimensions. Label references with what matters: a silhouette, a material relationship or an intended use. Do not include confidential client details that the design discussion does not need."
+        },
+        {
+          "tag": "h3",
+          "text": "Keep responsibilities clear"
+        },
+        {
+          "tag": "p",
+          "text": "Ask the atelier to clarify the proposed scope, required drawings, material references and installation responsibilities. A catalogue visualization does not resolve construction, performance or site conditions."
+        },
+        {
+          "tag": "h2",
+          "text": "The beauty is in the dialogue."
+        },
+        {
+          "tag": "p",
+          "text": "Wood brings its grain. Resin brings depth, colour and light. Together, they invite a different way of looking at an everyday object."
+        },
+        {
+          "tag": "p",
+          "text": "Your room, your references and your preferences give that conversation direction."
+        },
+        {
+          "tag": "p",
+          "text": "Material visualization"
+        },
+        {
+          "tag": "h2",
+          "text": "Resin in motion"
+        },
+        {
+          "tag": "p",
+          "text": "A material visualization of deep blue resin and gold-toned pigment."
+        },
+        {
+          "tag": "p",
+          "text": "02 / Explore by form"
+        },
+        {
+          "tag": "h2",
+          "text": "Find your language."
+        },
+        {
+          "tag": "p",
+          "text": "Distinct forms. A shared attention to material, proportion and personal meaning."
+        },
+        {
+          "tag": "h2",
+          "text": "A room. A memory. A personal gesture."
+        },
+        {
+          "tag": "p",
+          "text": "The worlds of Rivya."
+        },
+        {
+          "tag": "h3",
+          "text": "A presence in your space."
+        },
+        {
+          "tag": "p",
+          "text": "Furniture and sculptural forms, considered around the way you live."
+        },
+        {
+          "tag": "h3",
+          "text": "A moment. A lasting form."
+        },
+        {
+          "tag": "p",
+          "text": "Flowers, keepsakes and the stories they carry. Begin a preservation conversation."
+        },
+        {
+          "tag": "h3",
+          "text": "For someone. Like no one else."
+        },
+        {
+          "tag": "p",
+          "text": "A name, a message, a colour only they would choose. Give a piece personal meaning."
+        },
+        {
+          "tag": "p",
+          "text": "RivyaLivingArt"
+        },
+        {
+          "tag": "h2",
+          "text": "Art for the way you live."
+        },
+        {
+          "tag": "p",
+          "text": "Furniture, resin art and personal expression. Discover how your space, references and story give a piece its direction."
+        },
+        {
+          "tag": "h3",
+          "text": "Objects with a point of view"
+        },
+        {
+          "tag": "p",
+          "text": "RivyaLivingArt brings furniture, resin art and personal expression into one conversation. A dining table can anchor a room. A preserved flower can hold a memory. A small object can say something that a conventional gift cannot."
+        },
+        {
+          "tag": "h2",
+          "text": "Portfolio"
+        },
+        {
+          "tag": "p",
+          "text": "Concept project · not a completed commission"
+        },
+        {
+          "tag": "h3",
+          "text": "A narrow blue line at the dining table"
+        },
+        {
+          "tag": "p",
+          "text": "Explore a dining-table composition in which the blue area remains a restrained accent beside a broad grain-like field."
+        },
+        {
+          "tag": "p",
+          "text": "Concept project · not a completed commission"
+        },
+        {
+          "tag": "h3",
+          "text": "A console and small object sharing an edge rhythm"
+        },
+        {
+          "tag": "p",
+          "text": "Imagine a console and a separate decorative object connected by a similar edge rhythm."
+        },
+        {
+          "tag": "p",
+          "text": "Concept project · not a completed commission"
+        },
+        {
+          "tag": "h3",
+          "text": "Initials with a quiet colour accent"
+        },
+        {
+          "tag": "p",
+          "text": "Imagine a personal-art concept where initials remain the main readable feature and colour provides a restrained secondary accent."
+        },
+        {
+          "tag": "h2",
+          "text": "Testimonials"
+        },
+        {
+          "tag": "p",
+          "text": "Fictional sample · not customer feedback"
+        },
+        {
+          "tag": "p",
+          "text": "I would keep the blue line narrow so the window remains the strongest view. Before choosing the table size, I would want to compare the outline with the chairs we actually use."
+        },
+        {
+          "tag": "p",
+          "text": "Fictional sample · not customer feedback"
+        },
+        {
+          "tag": "p",
+          "text": "I would carry the edge rhythm into the smaller object without making it a miniature console. A shared detail is more interesting to me when the main forms remain distinct."
+        },
+        {
+          "tag": "p",
+          "text": "Fictional sample · not customer feedback"
+        },
+        {
+          "tag": "p",
+          "text": "I would make the initials the first thing to read and keep the colour secondary. The exact character order and punctuation should be checked independently of the decorative reference."
+        },
+        {
+          "tag": "p",
+          "text": "Begin a piece"
+        },
+        {
+          "tag": "h2",
+          "text": "Choose your starting point."
+        },
+        {
+          "tag": "p",
+          "text": "Start from an existing design or describe an idea of your own. Both paths preserve your brief before you choose to send the prepared message."
+        },
+        {
+          "tag": "h2",
+          "text": "Considered together. Made personal."
+        },
+        {
+          "tag": "p",
+          "text": "From an idea to your piece."
+        },
+        {
+          "tag": "h3",
+          "text": "Find your starting point"
+        },
+        {
+          "tag": "p",
+          "text": "Explore furniture, preservation pieces and gifts. Choose a design or begin a custom brief."
+        },
+        {
+          "tag": "h3",
+          "text": "Make it your own"
+        },
+        {
+          "tag": "p",
+          "text": "Share dimensions, colour choices and reference images through the customization form."
+        },
+        {
+          "tag": "h3",
+          "text": "Save your brief"
+        },
+        {
+          "tag": "p",
+          "text": "Your choices and references are saved for the atelier before your message is prepared."
+        },
+        {
+          "tag": "h3",
+          "text": "Begin the conversation"
+        },
+        {
+          "tag": "p",
+          "text": "Open or copy the prepared WhatsApp message, then tap Send yourself. The atelier reviews the details with you before an order is agreed."
+        },
+        {
+          "tag": "p",
+          "text": "RivyaLivingArt"
+        },
+        {
+          "tag": "h2",
+          "text": "Art for the way you live."
+        },
+        {
+          "tag": "p",
+          "text": "Furniture, resin art and personal expression. Discover how your space, references and story give a piece its direction."
+        },
+        {
+          "tag": "h3",
+          "text": "Objects with a point of view"
+        },
+        {
+          "tag": "p",
+          "text": "RivyaLivingArt brings furniture, resin art and personal expression into one conversation. A dining table can anchor a room. A preserved flower can hold a memory. A small object can say something that a conventional gift cannot."
+        },
+        {
+          "tag": "h3",
+          "text": "A starting point, not a fixed answer"
+        },
+        {
+          "tag": "p",
+          "text": "The collection helps you articulate what you like. Each piece opens a conversation about proportion, colour and purpose. We develop the final details with you."
+        },
+        {
+          "tag": "h3",
+          "text": "The personal part matters"
+        },
+        {
+          "tag": "p",
+          "text": "Your references, the space around a piece and the story behind it give the design its direction. Every order is finalized in a direct WhatsApp conversation with the studio."
+        },
+        {
+          "tag": "h2",
+          "text": "A closer look."
+        },
+        {
+          "tag": "p",
+          "text": "Notes on material, proportion and preparing a thoughtful brief."
+        },
+        {
+          "tag": "h3",
+          "text": "Reading the Grain: Wood and Resin in a Shared Composition"
+        },
+        {
+          "tag": "p",
+          "text": "Follow line, contrast and the meeting of surfaces. A visual vocabulary for discussing wood and resin without mistaking a design image for a material specification."
+        },
+        {
+          "tag": "h3",
+          "text": "Turning a Wedding Memory into a Design Brief"
+        },
+        {
+          "tag": "p",
+          "text": "Begin with the detail that holds the memory. Turn the meaning of a wedding flower, colour or invitation into questions the atelier can help you explore."
+        },
+        {
+          "tag": "h3",
+          "text": "A Guide to Describing Your Commission"
+        },
+        {
+          "tag": "p",
+          "text": "Turn a collection of preferences into a useful first brief: what the piece is for, where it will live, what is known and which questions still need a conversation."
+        },
+        {
+          "tag": "h2",
+          "text": "Let’s make it meaningful."
+        },
+        {
+          "tag": "p",
+          "text": "A room in mind. A memory to hold. A person to celebrate. Tell us where your piece begins."
+        },
+        {
+          "tag": "p",
+          "text": "Objects for the spaces we inhabit. Art for the stories we keep."
+        },
+        {
+          "tag": "h3",
+          "text": "Explore"
+        },
+        {
+          "tag": "h3",
+          "text": "The atelier"
+        },
+        {
+          "tag": "h3",
+          "text": "Let’s talk"
+        }
+      ],
+      "copySha256": "f0da4063b152575a7e7cc1a8abbac32efec1215321bf43703721416cdcc54179"
+    },
+    {
+      "route": "/pieces/river-channel",
+      "status": 200,
+      "copy": [
+        {
+          "tag": "h2",
+          "text": "Explore RivyaLivingArt"
+        },
+        {
+          "tag": "h2",
+          "text": "Find your piece"
+        },
+        {
+          "tag": "p",
+          "text": "Design visualization — final materials, proportions and colour are agreed with you."
+        },
+        {
+          "tag": "h2",
+          "text": "River Channel"
+        },
+        {
+          "tag": "h1",
+          "text": "River Channel"
+        },
+        {
+          "tag": "p",
+          "text": "Live-Edge Dining Table"
+        },
+        {
+          "tag": "p",
+          "text": "Two natural edges trace the course of a deep blue resin channel. This dining-table design explores the meeting of an organic silhouette and an architectural base — a place around which a room can gather. Final materials, dimensions and feasibility are reviewed with the atelier before confirmation."
+        },
+        {
+          "tag": "p",
+          "text": "Price on request · Customized to your brief"
+        },
+        {
+          "tag": "p",
+          "text": "Complete this piece's customization form. Its saved order summary is prepared for you to send to the atelier on WhatsApp."
+        },
+        {
+          "tag": "p",
+          "text": "The displayed design is a starting point. Confirm the final specification and care guidance with the atelier."
+        },
+        {
+          "tag": "p",
+          "text": "Where and how will you use River Channel? · Dimensions · Preferred dimensions, with units · Colour direction · Describe your colour references · Finish direction · How many people should it seat? · Delivery city · Doorway, lift, stair or access notes · Preferred timing. All selections are reviewed for feasibility with the studio."
+        },
+        {
+          "tag": "p",
+          "text": "Images communicate the design direction. Final materials, colour, dimensions and finish are agreed with you before confirmation."
+        },
+        {
+          "tag": "p",
+          "text": "Discuss sunlight, heat, moisture and cleaning for the chosen material and finish. Confirm support, installation and everyday use before agreeing the final specification."
+        },
+        {
+          "tag": "p",
+          "text": "Your customization details and references are saved for the atelier. You can then open WhatsApp and tap Send to share the prepared message. Submitting a brief does not confirm an order."
+        },
+        {
+          "tag": "h2",
+          "text": "In the same spirit."
+        },
+        {
+          "tag": "h3",
+          "text": "Stillwater"
+        },
+        {
+          "tag": "p",
+          "text": "Dining table"
+        },
+        {
+          "tag": "h3",
+          "text": "Verdant"
+        },
+        {
+          "tag": "p",
+          "text": "Dining table"
+        },
+        {
+          "tag": "h3",
+          "text": "Monolith"
+        },
+        {
+          "tag": "p",
+          "text": "Dining table"
+        },
+        {
+          "tag": "p",
+          "text": "Objects for the spaces we inhabit. Art for the stories we keep."
+        },
+        {
+          "tag": "h3",
+          "text": "Explore"
+        },
+        {
+          "tag": "h3",
+          "text": "The atelier"
+        },
+        {
+          "tag": "h3",
+          "text": "Let’s talk"
+        }
+      ],
+      "copySha256": "7f433021201406b37ed391acda9b8261baa5da14fbfbcfe3c1fb344741d8c361"
+    },
+    {
+      "route": "/journal/a-room-begins-with-a-statement-table",
+      "status": 200,
+      "copy": [
+        {
+          "tag": "h2",
+          "text": "Explore RivyaLivingArt"
+        },
+        {
+          "tag": "h2",
+          "text": "Find your piece"
+        },
+        {
+          "tag": "h1",
+          "text": "A Room Begins with a Statement Table"
+        },
+        {
+          "tag": "p",
+          "text": "Begin with the room around the object: sightlines, everyday movement and the kind of gathering you want a table to hold. A planning notebook for a future commission."
+        },
+        {
+          "tag": "p",
+          "text": "On this page"
+        },
+        {
+          "tag": "p",
+          "text": "By RivyaLivingArt · 4 minute read"
+        },
+        {
+          "tag": "h2",
+          "text": "Begin with the room, before the object"
+        },
+        {
+          "tag": "p",
+          "text": "A statement table gives a room somewhere to begin looking. That does not mean it must be the largest or brightest thing in view. Its presence might come from an unusually quiet outline, a visible meeting of materials, or the space deliberately left around it. Before choosing a design, stand at the room’s usual entrance and describe what you notice first. Then consider what you would like to notice first."
+        },
+        {
+          "tag": "p",
+          "text": "Write down the room’s ordinary activities as well as its occasional gatherings. A dining space used for conversation, reading and homework presents a different brief from one opened mainly for guests. These observations are more useful than declaring a style immediately. They give the eventual discussion a purpose that can survive changes of colour, shape or finish."
+        },
+        {
+          "tag": "h2",
+          "text": "Draw the visible weight"
+        },
+        {
+          "tag": "p",
+          "text": "On a simple plan, mark the furniture that is staying. Include cupboards, a large sofa, open shelving and anything else that occupies a strong visual area. A substantial table beside another substantial object may feel concentrated; the same table in an open setting may read as a calm centre. Neither arrangement is inherently wrong. The useful question is whether that concentration matches the atmosphere you are trying to make."
+        },
+        {
+          "tag": "h2",
+          "text": "Map everyday movement"
+        },
+        {
+          "tag": "p",
+          "text": "Sketch the routes between doorways and the places people actually use. Add the opening direction of doors, drawers and cabinets. A table footprint alone misses the changing outline made by someone pulling out a chair, carrying a tray or moving toward a window. Record the situations you need a designer to consider instead of treating an attractive overhead composition as a complete plan."
+        },
+        {
+          "tag": "p",
+          "text": "Where appropriate, represent a proposed outline on the floor with a removable marker that will not damage the surface. Observe it during normal use and note awkward moments. This is a conversation aid, not a clearance certification. Ask the project team to confirm the dimensions and any relevant access or accessibility requirements for the particular room and the people who use it."
+        },
+        {
+          "tag": "h2",
+          "text": "Make a material conversation"
+        },
+        {
+          "tag": "p",
+          "text": "Bring the table into a conversation with the room’s existing surfaces. Identify the most visible wood tone, the largest fabric area and the metal details you intend to keep. A reference board becomes more useful when each image carries a short explanation: the warmth of this timber, the restraint of that outline, or the relationship between an opaque area and a translucent one."
+        },
+        {
+          "tag": "h2",
+          "text": "Leave space for the rest of the room"
+        },
+        {
+          "tag": "p",
+          "text": "A focal object does not need every surrounding choice to repeat it. Try describing the room in three layers: the table, the supporting furniture and the quieter background. Repetition can happen through one small relationship, such as a warm tone or a curve, while other elements remain distinct. This keeps the brief specific without turning the whole room into a matching set."
+        },
+        {
+          "tag": "p",
+          "text": "Consider what is likely to change later. A rug, pendant or chair may be easier to replace than the commissioned object, but your own priorities should lead that decision. Make a list of fixed elements and flexible elements. It helps the conversation stay anchored when a reference image contains an appealing room whose architecture, light or proportions are very different from yours."
+        },
+        {
+          "tag": "h2",
+          "text": "Prepare the first conversation"
+        },
+        {
+          "tag": "p",
+          "text": "A useful initial brief is a small set of clear observations. Include a measured room sketch with its units, photographs you are entitled to share, and a description of how the space is used. Label proposed dimensions as proposals. If an event or move influences the timing, state that context and ask what can realistically be assessed before committing to a date."
+        },
+        {
+          "tag": "h2",
+          "text": "Ideas to explore."
+        },
+        {
+          "tag": "h3",
+          "text": "River Channel"
+        },
+        {
+          "tag": "p",
+          "text": "Live-Edge Dining Table"
+        },
+        {
+          "tag": "h3",
+          "text": "Stillwater"
+        },
+        {
+          "tag": "p",
+          "text": "Dining table"
+        },
+        {
+          "tag": "h3",
+          "text": "Shallow Basin"
+        },
+        {
+          "tag": "p",
+          "text": "Coffee Table"
+        },
+        {
+          "tag": "h2",
+          "text": "Keep exploring."
+        },
+        {
+          "tag": "h3",
+          "text": "Coffee Tables as Sculptural Objects"
+        },
+        {
+          "tag": "p",
+          "text": "Study a low table through silhouette, the space beneath it and its relationship with seating. An editorial exercise in making an object belong to a larger composition."
+        },
+        {
+          "tag": "h3",
+          "text": "An Entryway Built Around One Console"
+        },
+        {
+          "tag": "p",
+          "text": "Plan an arrival space through rhythm, everyday objects and the view beyond the doorway. A console can anchor the composition while leaving the practical questions visible."
+        },
+        {
+          "tag": "h3",
+          "text": "Pairing Resin Art with Warm Neutral Interiors"
+        },
+        {
+          "tag": "p",
+          "text": "Build a palette from the room you already have, then explore how a material-led object can introduce contrast, repetition and a little visual breathing space."
+        },
+        {
+          "tag": "p",
+          "text": "Objects for the spaces we inhabit. Art for the stories we keep."
+        },
+        {
+          "tag": "h3",
+          "text": "Explore"
+        },
+        {
+          "tag": "h3",
+          "text": "The atelier"
+        },
+        {
+          "tag": "h3",
+          "text": "Let’s talk"
+        }
+      ],
+      "copySha256": "625613705dce36de3563259eb8e0852403fec87a4474e08286b272c80f00795e"
+    }
+  ],
+  "database": "Not accessed. Private record baseline must be refreshed through authorized read-only access before production integration; no Phase 1 database writes."
+}

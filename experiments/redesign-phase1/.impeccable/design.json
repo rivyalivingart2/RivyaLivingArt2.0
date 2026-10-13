@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T09:40:56Z",
+  "title": "Design System: RivyaLivingArt Phase 1 local composition prototype",
+  "extensions": {
+    "scope": {
+      "designDocument": "../DESIGN.md",
+      "status": "Proposed composition awaiting owner approval",
+      "authorization": "Phase 1 only; Phase 2 not started",
+      "productionAuthority": false,
+      "sourceFiles": ["../styles.css", "../preview.js", "../index.html", "../asset-map.json", "../serve.mjs", "../DIRECTION.md", "../../../PRODUCT.md"],
+      "method": "Source extraction; no user research or approval inferred",
+      "surfaceModeAuthority": "../DIRECTION.md",
+      "verificationLimits": "Review targets are desktop 1440x1000 and mobile browser emulation 390x844. This source extraction does not establish visual acceptance, native-device testing, full keyboard or screen-reader acceptance, production readiness or owner approval.",
+      "contextToolStatus": "Parent session reported context launcher and concept-seed probe failed with exit 1; existing context and owner-pinned direction were used directly."
+    },
+    "colorMeta": {
+      "obsidian": {"role": "neutral", "displayName": "Obsidian"},
+      "ocean": {"role": "neutral", "displayName": "Deep ocean"},
+      "sapphire": {"role": "primary", "displayName": "Sapphire"},
+      "champagne": {"role": "primary", "displayName": "Champagne"},
+      "ivory": {"role": "neutral", "displayName": "Ivory"},
+      "stone": {"role": "neutral", "displayName": "Stone"},
+      "muted": {"role": "neutral", "displayName": "Muted dark-surface copy"},
+      "ink": {"role": "neutral", "displayName": "Ink"},
+      "line": {"role": "neutral", "displayName": "Dark-surface separator"},
+      "light-muted": {"role": "neutral", "displayName": "Muted light-surface copy"}
+    },
+    "typographyMeta": {
+      "display": {"displayName": "Public display", "purpose": "Shared public h1 baseline; page and breakpoint overrides are recorded in DESIGN.md."},
+      "headline": {"displayName": "Public headline", "purpose": "Shared public h2 baseline."},
+      "title": {"displayName": "Functional title", "purpose": "Shared h3 baseline; Studio h1 and detail h2 have their own observed sizes."},
+      "body": {"displayName": "Body", "purpose": "Shared paragraphs, maximum 70ch."},
+      "article-body": {"displayName": "Article body", "purpose": "Desktop Journal reading paragraphs; 15px at the mobile breakpoint."},
+      "button": {"displayName": "Action label", "purpose": "Shared primary and secondary action labels."},
+      "caption": {"displayName": "Caption", "purpose": "Image disclosures and supporting annotations."}
+    },
+    "shadows": [
+      {"name": "current-tab-underline", "value": "inset 0 -2px var(--champagne)", "purpose": "Current preview switcher and selected detail tab; state indicator, not elevation."},
+      {"name": "selected-order-edge", "value": "inset 3px 0 var(--sapphire)", "purpose": "Selected order row; state indicator, not elevation."}
+    ],
+    "motion": [
+      {"name": "state-colours", "value": "background-color .18s, color .18s, border-color .18s", "purpose": "Links and buttons only when prefers-reduced-motion is no-preference; omitted timing function uses CSS ease."},
+      {"name": "opening-image-arrive", "value": "arrive 1s cubic-bezier(.22,1,.36,1) both", "purpose": "Home opening image scales from 1.035 to 1 only when prefers-reduced-motion is no-preference."},
+      {"name": "anchor-navigation", "value": "scroll-behavior: smooth", "purpose": "Native anchor scrolling only when prefers-reduced-motion is no-preference."}
+    ],
+    "breakpoints": [
+      {"name": "compact-desktop", "value": "1100px"},
+      {"name": "stacked-mobile", "value": "800px"}
+    ],
+    "breakpointPolicy": "Both are max-width queries; mobile overrides follow compact-desktop overrides.",
+    "focus": {
+      "outline": "3px solid var(--champagne)",
+      "offset": "5px",
+      "lightSurfaces": "Studio main controls and Journal links use var(--sapphire).",
+      "darkDetailOverride": "Order detail controls restore var(--champagne)."
+    },
+    "reducedMotion": "All CSS motion is inside prefers-reduced-motion:no-preference. Film begins paused and is controlled by explicit play/pause; reduced motion does not disable user-requested playback.",
+    "logo": {
+      "source": "public/brand/rivyalivingart-logo-horizontal-transparent.png",
+      "preservation": "Local asset map serves the existing file; no recolouring or filters. Ivory backing, contained image.",
+      "desktop": "206px support width; 8px 12px padding; 57px image height",
+      "mobile": "167px support width; 5px 9px padding; 47px image height",
+      "studio": "184px support width; 5px 9px padding; 51px image height. Width becomes 152px at 1100px and 165px at 800px."
+    },
+    "snippets": "Representative source-derived static primitives with native hover/focus. CSS custom properties use actual root token names with literal fallbacks for standalone rendering. Inter remains dependent on an available font; Arial fallback is explicit. No framework, external icon assets, persistence or operational behavior is embedded."
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Champagne action with source hover and focus; prototype panel specimen only.",
+      "html": "<button class=\"ds-button\" type=\"button\">Explore the collection <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:22px;background:var(--champagne,#b89b63);color:var(--obsidian,#080a0e);border:1px solid var(--champagne,#b89b63);min-height:50px;padding:12px 22px;font:500 13px/1.4 Inter,Arial,sans-serif;cursor:pointer}.ds-button:hover{background:var(--stone,#ddd6cb);border-color:var(--stone,#ddd6cb)}.ds-button:focus-visible{outline:3px solid var(--champagne,#b89b63);outline-offset:5px}.ds-icon{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.5;flex-shrink:0}@media(prefers-reduced-motion:no-preference){.ds-button{transition:background-color .18s,color .18s,border-color .18s}}"
+    },
+    {
+      "name": "Secondary action on deep ocean",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Transparent action, source border hover and dark-surface focus; backing supplies its intended context.",
+      "html": "<div class=\"ds-dark\"><button class=\"ds-secondary\" type=\"button\">Print card</button></div>",
+      "css": ".ds-dark{background:var(--ocean,#08283a);padding:16px}.ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:22px;background:transparent;color:var(--ivory,#f4f1e9);border:1px solid var(--line,#41505c);min-height:50px;padding:12px 22px;font:500 13px/1.4 Inter,Arial,sans-serif;cursor:pointer}.ds-secondary:hover{border-color:var(--champagne,#b89b63)}.ds-secondary:focus-visible{outline:3px solid var(--champagne,#b89b63);outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-secondary{transition:background-color .18s,color .18s,border-color .18s}}"
+    },
+    {
+      "name": "Studio order search",
+      "kind": "input",
+      "refersTo": "order-search",
+      "description": "Search field on the proposed ivory workspace; actual source has no dedicated hover state.",
+      "html": "<div class=\"ds-light\"><input class=\"ds-search\" type=\"search\" aria-label=\"Find a training order\" placeholder=\"Find a training order\"></div>",
+      "css": ".ds-light{background:var(--ivory,#f4f1e9);padding:16px;color-scheme:dark}.ds-search{width:100%;min-width:0;border:1px solid #7b909a;background:transparent;padding:12px;font:12px Inter,Arial,sans-serif;color:var(--ink,#18202a);height:44px;caret-color:var(--champagne,#b89b63)}.ds-search:focus-visible{outline:3px solid var(--sapphire,#164e6b);outline-offset:5px}"
+    },
+    {
+      "name": "Selected order row",
+      "kind": "custom",
+      "description": "Source-selected row state using a fictional demonstration label; no fabricated customer details or operational behavior.",
+      "html": "<div class=\"ds-orders\"><button type=\"button\" class=\"ds-order\" aria-pressed=\"true\"><span class=\"ds-row-title\">Training brief</span><p class=\"ds-row-copy\">Fictional demo only; do not contact or fulfil.</p><small class=\"ds-row-meta\">Staff-entered training example</small></button></div>",
+      "css": ".ds-orders{background:var(--ivory,#f4f1e9);padding:16px}.ds-order{width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid #b9c4c9;padding:20px 17px;color:var(--ink,#18202a);min-height:119px;font-family:Inter,Arial,sans-serif;cursor:pointer}.ds-order[aria-pressed=true]{background:var(--stone,#ddd6cb);box-shadow:inset 3px 0 var(--sapphire,#164e6b)}.ds-row-title{display:flex;justify-content:space-between;gap:8px;font-size:13px;font-weight:500}.ds-row-copy{font-size:12px;color:#405363;line-height:1.6;margin:9px 0 0}.ds-row-meta{font-size:11px;color:#405363;display:block;margin-top:10px;line-height:1.6}.ds-order:focus-visible{outline:3px solid var(--sapphire,#164e6b);outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-order{transition:background-color .18s,color .18s,border-color .18s}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Contemporary material gallery",
+    "overview": "This is a source-extracted record of the isolated Phase 1 prototype, not a root production design system. The owner approved the seven-phase plan and authorized Phase 1 only. This composition, including the ivory Studio and Journal surfaces, remains proposed and awaits owner approval. Phase 2 has not started. Extraction establishes what the prototype implements; it does not establish visual acceptance, user research, native-device acceptance or production readiness.\n\nExisting resin furniture imagery leads the public experience. Dark framing, restrained champagne actions and generous compositions support the work; the proposed ivory reading and working surfaces use an existing brand colour for sustained reading and task clarity. Qualitative language follows the existing direction contract rather than an invented user interview.",
+    "keyCharacteristics": [
+      "Original logo and image identity remain intact.",
+      "Serif public display type pairs with functional Inter text.",
+      "Public imagery is dominant; Studio task controls remain compact.",
+      "Ivory reading and working surfaces are proposed within the retained dark brand framing.",
+      "Content is visible at initial render; motion is optional and limited.",
+      "Prototype actions disclose their scope and do not save or publish records."
+    ],
+    "rules": [
+      {"name": "The Original Identity Rule", "body": "Preserve the current logo bytes and primary colour values. The logo uses `public/brand/rivyalivingart-logo-horizontal-transparent.png` through the local asset map, with no recolouring or CSS filters. Its ivory support is part of this proposed composition.", "section": "colors"}
+    ],
+    "dos": [
+      "**Do** keep this system scoped to the Phase 1 experiment until the owner approves the composition and authorizes the next phase.",
+      "**Do** preserve the original logo bytes, main colours, content identity, image disclosures and manual sending boundaries.",
+      "**Do** use the actual source values and responsive overrides when reproducing these specimens.",
+      "**Do** keep the ivory Journal and Studio treatment explicitly proposed.",
+      "**Do** retain visible focus, readable initial content, reduced-motion behavior and explicit prototype action notices.",
+      "**Do** keep browser emulation, independent review, owner approval and native/device evidence distinct."
+    ],
+    "donts": [
+      "**Don't** promote this file or its sidecar into a production-wide visual authority or start Phase 2 from this extraction.",
+      "**Don't** recolour the logo, distort product identity or silently turn visualization/training content into real business evidence.",
+      "**Don't** treat four specimens as complete homepage, route, Studio or state coverage.",
+      "**Don't** claim parallax, saved records, publication, authenticated administration, full accessibility acceptance or production integration from this prototype.",
+      "**Don't** invent user research, owner composition approval, events, customer contact information or factual claims."
+    ]
+  }
+}

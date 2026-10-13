@@ -1,0 +1,716 @@
+[
+  {
+    "key": "overview",
+    "segment": "",
+    "label": "Overview",
+    "group": "Today",
+    "phase": 6,
+    "route": "/studio",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "inquiries",
+    "segment": "inquiries",
+    "label": "Inquiries & orders",
+    "group": "Today",
+    "phase": 6,
+    "route": "/studio/inquiries",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus",
+      "record selection",
+      "editor/detail",
+      "validation",
+      "unsaved changes",
+      "conflict/revision",
+      "preview/print where supported"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "follow-ups",
+    "segment": "follow-ups",
+    "label": "Follow-ups due",
+    "group": "Today",
+    "phase": 6,
+    "route": "/studio/follow-ups",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "products",
+    "segment": "products",
+    "label": "Products",
+    "group": "Catalogue",
+    "phase": 5,
+    "route": "/studio/products",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus",
+      "record selection",
+      "editor/detail",
+      "validation",
+      "unsaved changes",
+      "conflict/revision",
+      "preview/print where supported"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "content-register",
+    "segment": "content-register",
+    "label": "Production register",
+    "group": "Editorial",
+    "phase": 5,
+    "route": "/studio/content-register",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "editorial-order",
+    "segment": "editorial-order",
+    "label": "Editorial ordering",
+    "group": "Editorial",
+    "phase": 5,
+    "route": "/studio/editorial-order",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "content",
+    "segment": "content",
+    "label": "All content",
+    "group": "Editorial",
+    "phase": 5,
+    "route": "/studio/content",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "media",
+    "segment": "media",
+    "label": "Public media",
+    "group": "Catalogue",
+    "phase": 5,
+    "route": "/studio/media",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "site-copy",
+    "segment": "site-copy",
+    "label": "Site copy",
+    "group": "Content",
+    "phase": 5,
+    "route": "/studio/site-copy",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "sections",
+    "segment": "sections",
+    "label": "Page design",
+    "group": "Content",
+    "phase": 5,
+    "route": "/studio/sections",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "site-images",
+    "segment": "site-images",
+    "label": "Site images",
+    "group": "Content",
+    "phase": 5,
+    "route": "/studio/site-images",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "content-health",
+    "segment": "content-health",
+    "label": "Content health",
+    "group": "Settings",
+    "phase": 5,
+    "route": "/studio/content-health",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "site-settings",
+    "segment": "navigation",
+    "label": "Navigation & languages",
+    "group": "Content",
+    "phase": 6,
+    "route": "/studio/navigation",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": true,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "legacy",
+    "segment": "legacy",
+    "label": "Legacy decisions",
+    "group": "Settings",
+    "phase": 6,
+    "route": "/studio/legacy",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": true,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "translations",
+    "segment": "translations",
+    "label": "Language review",
+    "group": "Content",
+    "phase": 5,
+    "route": "/studio/translations",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "route-review",
+    "segment": "route-review",
+    "label": "Old links & publication",
+    "group": "Settings",
+    "phase": 6,
+    "route": "/studio/route-review",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": true,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "activity",
+    "segment": "activity",
+    "label": "Activity & logs",
+    "group": "Today",
+    "phase": 6,
+    "route": "/studio/activity",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "staff",
+    "segment": "staff",
+    "label": "Staff access",
+    "group": "Settings",
+    "phase": 6,
+    "route": "/studio/staff",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": true,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "settings",
+    "segment": "settings",
+    "label": "Atelier settings",
+    "group": "Settings",
+    "phase": 6,
+    "route": "/studio/settings",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": true,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "analytics",
+    "segment": "analytics",
+    "label": "Analytics",
+    "group": "Today",
+    "phase": 6,
+    "route": "/studio/analytics",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "categories",
+    "segment": "categories",
+    "label": "Categories",
+    "group": "Catalogue",
+    "phase": 5,
+    "route": "/studio/categories",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "import",
+    "segment": "import",
+    "label": "Bulk import",
+    "group": "Catalogue",
+    "phase": 6,
+    "route": "/studio/import",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": true,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "exports",
+    "segment": "exports",
+    "label": "Exports",
+    "group": "Catalogue",
+    "phase": 6,
+    "route": "/studio/exports",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": true,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "research",
+    "segment": "research",
+    "label": "Research",
+    "group": "Catalogue",
+    "phase": 5,
+    "route": "/studio/research",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "content-gaps",
+    "segment": "content-gaps",
+    "label": "Content gaps",
+    "group": "Catalogue",
+    "phase": 5,
+    "route": "/studio/content-gaps",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "process",
+    "segment": "process",
+    "label": "Process steps",
+    "group": "Content",
+    "phase": 5,
+    "route": "/studio/process",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "materials",
+    "segment": "materials",
+    "label": "Materials",
+    "group": "Content",
+    "phase": 5,
+    "route": "/studio/materials",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "forms",
+    "segment": "forms",
+    "label": "Commission forms",
+    "group": "Content",
+    "phase": 5,
+    "route": "/studio/forms",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "journal",
+    "segment": "journal",
+    "label": "Journal",
+    "group": "Editorial",
+    "phase": 5,
+    "route": "/studio/journal",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus",
+      "record selection",
+      "editor/detail",
+      "validation",
+      "unsaved changes",
+      "conflict/revision",
+      "preview/print where supported"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "portfolio",
+    "segment": "portfolio",
+    "label": "Portfolio",
+    "group": "Editorial",
+    "phase": 5,
+    "route": "/studio/portfolio",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus",
+      "record selection",
+      "editor/detail",
+      "validation",
+      "unsaved changes",
+      "conflict/revision",
+      "preview/print where supported"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "testimonials",
+    "segment": "testimonials",
+    "label": "Testimonials",
+    "group": "Editorial",
+    "phase": 5,
+    "route": "/studio/testimonials",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus",
+      "record selection",
+      "editor/detail",
+      "validation",
+      "unsaved changes",
+      "conflict/revision",
+      "preview/print where supported"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "faqs",
+    "segment": "faqs",
+    "label": "FAQs",
+    "group": "Editorial",
+    "phase": 5,
+    "route": "/studio/faqs",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus",
+      "record selection",
+      "editor/detail",
+      "validation",
+      "unsaved changes",
+      "conflict/revision",
+      "preview/print where supported"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "pages",
+    "segment": "pages",
+    "label": "Pages",
+    "group": "Editorial",
+    "phase": 5,
+    "route": "/studio/pages",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus",
+      "record selection",
+      "editor/detail",
+      "validation",
+      "unsaved changes",
+      "conflict/revision",
+      "preview/print where supported"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "landing-pages",
+    "segment": "landing-pages",
+    "label": "Landing pages",
+    "group": "Editorial",
+    "phase": 5,
+    "route": "/studio/landing-pages",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus",
+      "record selection",
+      "editor/detail",
+      "validation",
+      "unsaved changes",
+      "conflict/revision",
+      "preview/print where supported"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "seo",
+    "segment": "seo",
+    "label": "SEO",
+    "group": "Settings",
+    "phase": 5,
+    "route": "/studio/seo",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "subscribers",
+    "segment": "subscribers",
+    "label": "Subscribers",
+    "group": "Settings",
+    "phase": 6,
+    "route": "/studio/subscribers",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": true,
+    "status": "mapped; implementation pending phase approval"
+  },
+  {
+    "key": "content-lab",
+    "segment": "content-lab",
+    "label": "Content lab",
+    "group": "Settings",
+    "phase": 5,
+    "route": "/studio/content-lab",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "error",
+      "narrow viewport",
+      "keyboard/focus"
+    ],
+    "adminOnly": false,
+    "status": "mapped; implementation pending phase approval"
+  }
+]

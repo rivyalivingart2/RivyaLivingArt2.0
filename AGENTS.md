@@ -1,3 +1,13 @@
+# Current checkpoint — modern redesign Phase 1 previews awaiting owner review
+
+13 October 2026: the owner approved a new seven-phase redesign plan and authorized **Phase 1 only**. New compositions replace the old visual-matching goal; logo, main colours, all content and functionality remain fixed. Read `docs/redesign/modern-design-2026-10-13/CONTINUE.md` and `PHASE-1-REVIEW.md` before continuing.
+
+Local branch `codex/redesign-phase1-previews` contains an isolated four-view prototype, source/public baselines and route/section/Studio coverage. Desktop/mobile specimens are ready for owner review. **Stop before Phase 2 until explicitly authorized.** No production source, runtime dependency, database, publication, Drive media or deployment change occurred. Prototype controls cannot write live records. Fresh private database baselines remain required before later integration; do not represent source/public inventories as current private-row evidence.
+
+Keep all historical releases and admin closures below intact. Do not replay publications, imports or obsolete phases. No push, PR, merge or release is authorized by this Phase 1 request.
+
+---
+
 # Current checkpoint — final live verification complete
 
 13 October 2026: final read-only website and authenticated Studio verification found no broken published routes or media in the tested scope. Read `docs/redesign/old-design-migration-2026-10-08/FINAL-LIVE-VERIFICATION.md` and its `final-live-verification.json` receipt first. Verified main `6c3fd6b339bea2d4b2ecac26c96a1907e899ce06`, READY production `dpl_EKa6VH4gtmKAVqgPZuZ32dXdJWsd`: 781 public routes, 373 media URLs, 19 shared resources and all 37 Studio workspaces passed. All 480 M9 entries are published/aligned; 535 content records and 120 published products are visible, with zero saved pending content changes or publication blockers. All 78 DB001/DB010 Hindi/Gujarati fields match public revision 6.
