@@ -60,7 +60,7 @@ for (const original of source.records.filter(r => rules[r.id])) {
     }
     const filename = `draft-imports/${original.id}.${locale}.json`;
     await save(filename, packet);
-    imports.push({ file: filename, documentId: original.id, locale, fieldCount: fields.length, sha256: hash(packet), sourceHash: original.sourceHash, reviewed: false, publication: 'NOT IMPORTED OR PUBLISHED' });
+    imports.push({ file: filename, documentId: original.id, locale, fieldCount: fields.length, sha256: hash(await readFile(path.join(here, filename))), sourceHash: original.sourceHash, reviewed: false, publication: 'NOT IMPORTED OR PUBLISHED' });
   }
   assert.deepEqual(fields.map(({ path, source }) => ({ path, source })), english);
   records.push({

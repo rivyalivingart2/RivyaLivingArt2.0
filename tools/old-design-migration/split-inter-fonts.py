@@ -1,7 +1,8 @@
 """Create smaller common-script Inter files, retaining the original for other glyphs.
 
 Development-only: FontTools 4.61.1 with Brotli. No runtime dependency or font upgrade.
-The disjoint CSS ranges in layout.tsx retain the original font's entire coverage.
+The common face is first in the CSS family list; the full fallback retains
+complete grapheme clusters, including extended bases with combining marks.
 """
 import hashlib
 import json
@@ -11,12 +12,10 @@ from fontTools import subset
 from fontTools.pens.recordingPen import DecomposingRecordingPen
 from fontTools.ttLib import TTFont
 
-# Basic Latin, combining marks, punctuation, currencies and navigation symbols.
-# Extended Latin and uncommon symbols remain in the unchanged complete face.
-# Combining marks stay with the common base letters for cluster shaping.
-RANGES = [(0, 0xFF), (0x131, 0x131), (0x152, 0x153), (0x2BB, 0x2BC),
-          (0x2C6, 0x2C6), (0x2DA, 0x2DA), (0x2DC, 0x2DC),
-          (0x300, 0x36F), (0x2000, 0x206F), (0x20A0, 0x20CF),
+# Latin bases and their combining marks stay together for cluster shaping.
+# Other scripts and uncommon symbols remain in the unchanged complete face.
+RANGES = [(0, 0x36F), (0x1D00, 0x1EFF),
+          (0x2000, 0x206F), (0x20A0, 0x20CF),
           (0x2161, 0x2161), (0x2190, 0x21FF), (0x2212, 0x2212), (0x2215, 0x2215),
           (0x2304, 0x2304), (0x2318, 0x2318), (0x25B7, 0x25B7),
           (0x25C7, 0x25C7), (0x26A0, 0x26A0), (0x2713, 0x2713),
@@ -35,8 +34,7 @@ def css_ranges(points):
 # Do not advertise absent characters: that would download Inter unnecessarily
 # for Hindi/Gujarati, whose native fallback is intentionally unchanged.
 original_points = set(TTFont("src/styles/fonts/inter-normal-400.woff2").getBestCmap())
-extended = original_points - common
-assert not (extended & common)
+extended = original_points
 assert (original_points & common) | extended == original_points
 css = [css_ranges(common), css_ranges(extended)]
 layout = Path("src/app/layout.tsx")
@@ -90,8 +88,8 @@ for weight in (400, 500, 600):
                  "originalCodepoints": len(original.getBestCmap()), "commonCodepoints": len(expected),
                  "retainedGlyphs": len(result.getGlyphOrder()),
                  "outlinesAndHorizontalAndVerticalMetrics": "unchanged for all retained glyphs",
-                 "otherCodepoints": "Original full font remains available under complementary unicode-range"})
-report = {"license": "public/fonts/licenses/inter-OFL.txt", "method": "FontTools 4.61.1; preserve layout-feature closure, hints, names, outlines and metrics; no original font modified", "ranges": RANGES, "commonCssRange": css[0], "extendedCssRange": css[1], "completeOriginalCoverage": True, "disjointCssRanges": True, "files": rows}
+                 "otherCodepoints": "Original full font remains available with its complete cmap range for cluster-safe fallback"})
+report = {"license": "public/fonts/licenses/inter-OFL.txt", "method": "FontTools 4.61.1; preserve layout-feature closure, hints, names, outlines and metrics; no original font modified", "ranges": RANGES, "commonCssRange": css[0], "extendedCssRange": css[1], "completeOriginalCoverage": True, "disjointCssRanges": False, "fullFallbackRetainsCombiningClusters": True, "files": rows}
 layout.write_bytes(text.encode("utf8"))
 Path("docs/redesign/old-design-migration-2026-10-08/m10-font-core-split.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf8")
 print(json.dumps({"beforeBytes": sum(r["sourceBytes"] for r in rows), "commonBytes": sum(r["targetBytes"] for r in rows), "files": rows}))
