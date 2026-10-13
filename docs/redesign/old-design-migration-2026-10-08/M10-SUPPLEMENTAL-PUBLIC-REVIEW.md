@@ -17,3 +17,8 @@ The `/preserve` and `/personalize` routes were also captured. They are catalogue
 The final application build and its existing 403 built-runtime checks pass after the link fix. Earlier 344 unit and 12 preflight passes remain applicable to unchanged logic. Final source changes are presentation-only; the protected before/after comparison reports every original local and production ID/digest unchanged across thirteen scopes. Local testing added only one unpublished synthetic article and two revisions for the actual editor conflict test. See `m10-completion-preservation.json`.
 
 Remaining visual acceptance is specifically the unobserved alternate filters, later customer steps, hover/focus/dialog states, long-policy print pages and the remaining plan widths. Empty old collections remain reference-limited. Native zoom, real screen-reader/phone, independent Hindi/Gujarati meaning review, missing source-specific rights/facts, field p75 and a real consent-safe inquiry remain evidence gates in `M10-EXTERNAL-ACCEPTANCE-HANDOFF.md`.
+
+
+## Released follow-up — 13 October
+
+Read [M10-FINAL-RELEASE.md](M10-FINAL-RELEASE.md) and [the final receipt](m10-final-release-evidence.json) for PR52/53 production verification, corrected final font sizes, complete hosted sample series, all13 protected-scope digest comparisons and sixteen additional interaction-state captures. This supersedes older pending-release instructions while retaining their historical scope. Full visual/native/device/independent-language/rights/field acceptance remains partial.
