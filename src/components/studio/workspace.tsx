@@ -26,9 +26,9 @@ import {logoutAdmin} from '@/app/studio/login/actions';
 import {studioFetch,type StaffMember,type WorkspaceIdentity} from './workspace-api';
 import s from './workspace.module.css';
 import design from './studio-editing.module.css';
+import operationsDesign from './studio-operations.module.css';
 
-// Phase 5 changes shared navigation and content authoring only. Operational
-// workspace bodies keep their current presentation until Phase 6 is approved.
+// Content and operational pages share controls while retaining scoped layouts.
 const contentWorkspaces=new Set<StudioModuleKey>(['products','content-register','editorial-order','content','media','site-copy','sections','site-images','content-health','translations','categories','research','content-gaps','process','materials','forms','journal','portfolio','testimonials','faqs','pages','landing-pages','seo','content-lab']);
 
 const InquiryBoard=dynamic(()=>import('./inquiry-board').then(m=>m.InquiryBoard),{loading:WorkspaceLoading});
@@ -165,7 +165,7 @@ export function Workspace({initial,initialCollapsed=false}:{initial?:{session:Wo
         <button type="button" className={s.collapseNav} onClick={toggleSidebar} aria-expanded={!collapsed} aria-label={collapsed?'Expand Studio sidebar':'Collapse Studio sidebar'}>{collapsed?<PanelLeftOpen size={18} aria-hidden="true"/>:<PanelLeftClose size={18} aria-hidden="true"/>}<span className={s.navLabel}>Collapse sidebar</span></button>
         <NavigationLinks admin={admin} view={view}/>
       </nav>
-      <main id="main-content" tabIndex={-1} className={s.workspaceMain+(view&&contentWorkspaces.has(view)?' '+design.content:'')} data-studio-design={view&&contentWorkspaces.has(view)?'content':undefined}>
+      <main id="main-content" tabIndex={-1} className={s.workspaceMain+' '+design.content+(view&&!contentWorkspaces.has(view)?' '+operationsDesign.operations:'')} data-studio-design={view&&contentWorkspaces.has(view)?'content':'operations'}>
         <nav data-studio-part="workspaceCrumb" className={s.workspaceCrumb} aria-label="Workspace breadcrumb"><Link href="/studio">Studio</Link><span aria-hidden> / </span><span aria-current="page">{activeModule?.label||'Unavailable page'}</span></nav>
         {error?<div data-studio-part="panel" className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p data-studio-part="status" className={s.status} role="status">Opening your workspace…</p>:!activeModule?<section data-studio-part="empty" className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>:activeModule.adminOnly&&!admin?<p data-studio-part="empty" className={s.empty}>Administrator access is required.</p>:<div key={activeModule.key}><ModuleView moduleKey={activeModule.key} admin={admin} staff={staff} load={load} staffId={identity.staffId}/></div>}
 

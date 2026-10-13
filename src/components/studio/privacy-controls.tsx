@@ -49,7 +49,7 @@ export function PrivacyControls({id}:{id:string}){
   return()=>{active=false;};
  },[id]);
 
- if(!data)return <section className={s.panel}><h2>Privacy & retention</h2><p role="status">{error||'Loading retention controls…'}</p></section>;
+ if(!data)return <section data-studio-part="panel" className={s.panel}><h2>Privacy & retention</h2><p role="status">{error||'Loading retention controls…'}</p></section>;
  return <PrivacyEditor key={data.record.version} data={data} onReload={async()=>setData(await studioFetch('/api/studio/privacy?id='+encodeURIComponent(id)))}/>;
 }
 
@@ -101,7 +101,7 @@ function PrivacyEditor({data,onReload}:{data:State;onReload:()=>Promise<void>}){
  }
 
  return (
-  <section className={s.panel} data-unsaved={dirty?'true':undefined} data-studio-saving={busy}>
+  <section data-studio-part="panel" className={s.panel} data-unsaved={dirty?'true':undefined} data-studio-saving={busy}>
    <h2>Privacy & retention</h2>
    {r.erasedAt && (
     <div style={{padding:'12px',marginBottom:'16px',background:'rgba(22,101,52,0.2)',border:'1px solid #166534',borderRadius:'4px'}}>

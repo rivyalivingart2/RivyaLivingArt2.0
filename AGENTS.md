@@ -1,4 +1,13 @@
-# Current checkpoint — modern redesign Phase 5 ready for owner review
+# Current checkpoint — modern redesign Phase 6 ready for owner review
+
+13 October 2026: owner approved Phase 5 and authorized Phase 6 only. The 13 remaining Studio operational/admin bodies, sign-in, dialogs and printable inquiry cards are implemented locally on codex/redesign-phase6-studio-operations, parent da435d3. Read docs/redesign/modern-design-2026-10-13/CONTINUE.md, PHASE-6-REVIEW.md, phase6-verification.json and phase6-preservation.json first. Gallery: http://127.0.0.1:4183/review; local Studio: http://127.0.0.1:4199/studio.
+
+All 1,646 original local rows in 13 protected scopes unchanged. One clearly fictional QA order, eight stage events, its privacy row and one temporary editor added; order ends Closed and editor disabled. The 24 training examples are browser-only fixtures, not imported. Build/types, zero-error lint, 344 unit/403 runtime and scoped browser checks pass; six pre-existing lint warnings retained. Independent full review returned ship after one evidence-only Closed-stage recapture. Detector unavailable; no new human/native/field or production certification.
+
+**Stop before Phase 7 pending owner preview approval.** No push, PR, release, production publication or Drive changes. Preserve logo/palette/content/functionality and historical evidence below; do not replay lifecycle/import/publication actions. Scrapers, old-product transfers and backups excluded.
+
+---
+# Historical checkpoint — modern redesign Phase 5 ready for owner review
 
 13 October 2026: owner approved Phase 4 and authorized Phase 5 only. Studio shell and 24 content/editing workspaces implemented locally on codex/redesign-phase5-studio-editing, parent 157ea4b. Read docs/redesign/modern-design-2026-10-13/CONTINUE.md, PHASE-5-REVIEW.md, phase5-verification.json and phase5-preservation.json first. Gallery: http://127.0.0.1:4182/review; local Studio: http://127.0.0.1:4199/studio/products.
 

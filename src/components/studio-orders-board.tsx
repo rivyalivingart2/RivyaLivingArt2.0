@@ -1,6 +1,7 @@
 'use client';
 import {useCallback, useEffect, useRef, useState} from 'react';
 import {businessDate} from '@/lib/business-time';
+import {Copy,GripVertical,Camera,TriangleAlert} from 'lucide-react';
 import {isOrderStage, orderStages, stageLabel, type OrderStage, type StudioOrder} from '@/lib/studio-orders';
 
 export function OrderKanban({orders, busy, onMove, onOpen,mobileStage}: {
@@ -26,14 +27,14 @@ export function OrderKanban({orders, busy, onMove, onOpen,mobileStage}: {
         <div className="order-card-top">
           <small className="order-ref-code">{refCode}</small>
           <div style={{display:'flex',alignItems:'center',gap:4}}>
-            <button type="button" className="order-copy-ref" title="Copy reference ID" onClick={(e)=>{e.stopPropagation();void navigator.clipboard?.writeText(order.reference || order.id);}}>📋</button>
+            <button type="button" className="order-copy-ref" title="Copy reference ID" aria-label="Copy reference ID" onClick={(e)=>{e.stopPropagation();void navigator.clipboard?.writeText(order.reference || order.id);}}><Copy size={16} aria-hidden="true"/></button>
             <button type="button" className="order-grip" aria-label={`Drag ${order.client} to another stage`} disabled={busy}
               draggable={!busy} onDragStart={event => { event.dataTransfer.setData('text/plain', order.id); event.dataTransfer.effectAllowed = 'move'; setDragged(order.id); }}
               onDragEnd={() => { setDragged(null); setOver(null); }}
               onPointerDown={event => { if (event.pointerType !== 'mouse' && !busy) { event.currentTarget.setPointerCapture(event.pointerId); setDragged(order.id); } }}
               onPointerMove={event => { if (event.pointerType !== 'mouse' && dragged === order.id) { const target = document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-order-stage]')?.getAttribute('data-order-stage'); setOver(isOrderStage(target) ? target : null); } }}
               onPointerUp={event => { if (event.pointerType !== 'mouse' && dragged === order.id) { const target = document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-order-stage]')?.getAttribute('data-order-stage'); finish(order.id,target); } }}
-              onPointerCancel={() => { setDragged(null); setOver(null); }}>⠿</button>
+              onPointerCancel={() => { setDragged(null); setOver(null); }}><GripVertical size={18} aria-hidden="true"/></button>
           </div>
         </div>
         {onOpen ? <button type="button" className="order-open" data-inquiry-record={order.id} disabled={busy} onClick={() => onOpen(order.id)}>{order.client}</button> : <h3>{order.client}</h3>}
@@ -42,11 +43,11 @@ export function OrderKanban({orders, busy, onMove, onOpen,mobileStage}: {
           <span className="order-source-badge">{order.source === 'manual' ? 'Staff manual' : order.requestKind === 'bespoke' ? 'Bespoke' : 'Piece'}</span>
           {order.followUp && (
             <span className={isDue ? "order-due-urgent" : "order-due-normal"}>
-              {isDue ? '⚠️ Due ' : 'Follow-up: '}{order.followUp.slice(0, 10)}
+              {isDue ? <><TriangleAlert size={14} aria-hidden="true"/>Due </> : 'Follow-up: '}{order.followUp.slice(0, 10)}
             </span>
           )}
           {Boolean(order.referenceCount) && (
-            <span className="order-ref-badge">📷 {order.referenceCount} refs</span>
+            <span className="order-ref-badge"><Camera size={14} aria-hidden="true"/> {order.referenceCount} refs</span>
           )}
         </div>
         {order.source&&<p><small>{order.assigneeName||'Unassigned'}{order.createdAt?' · '+order.createdAt.slice(0,10):''}</small></p>}

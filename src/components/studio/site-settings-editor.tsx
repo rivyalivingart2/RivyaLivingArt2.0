@@ -61,14 +61,14 @@ export function SiteSettingsEditor(){
  }
 
  return <>
-  <div className={s.heading}><div><h1>Navigation &amp; languages.</h1><p>Control public menu order, destinations and translated labels without changing application routes.</p></div><button disabled={busy||dirty} onClick={()=>void load()}>Reload</button></div>
-  <p className={s.status} role="status">{message}</p>
-  {!data?<p className={s.empty}>{busy||message==='Loading navigation…'?'Loading site settings…':'Saved settings are unavailable. Use Reload to try again.'}</p>:<fieldset disabled={busy} aria-label="Navigation and language settings editor">
-   <section className={s.panel} data-unsaved={dirty}>
+  <div data-studio-part="heading" className={s.heading}><div><h1>Navigation &amp; languages.</h1><p>Control public menu order, destinations and translated labels without changing application routes.</p></div><button disabled={busy||dirty} onClick={()=>void load()}>Reload</button></div>
+  <p data-studio-part="status" className={s.status} role="status">{message}</p>
+  {!data?<p data-studio-part="empty" className={s.empty}>{busy||message==='Loading navigation…'?'Loading site settings…':'Saved settings are unavailable. Use Reload to try again.'}</p>:<fieldset disabled={busy} aria-label="Navigation and language settings editor">
+   <section data-studio-part="panel" className={s.panel} data-unsaved={dirty}>
     <h2>Language availability</h2><p><Link href="/studio/translations">Review document translation coverage ↗</Link></p>
-    <p className={s.help}>English is the authoritative fallback. Only English, Hindi and Gujarati are offered publicly. Other saved language settings are retained but held from the switcher. Missing or stale editorial translations use a visible English fallback.</p>
+    <p data-studio-part="help" className={s.help}>English is the authoritative fallback. Only English, Hindi and Gujarati are offered publicly. Other saved language settings are retained but held from the switcher. Missing or stale editorial translations use a visible English fallback.</p>
     <label className={s.check}><input type="checkbox" checked={data.settings.localization.enabled} onChange={e=>patchSettings({...data.settings,localization:{...data.settings.localization,enabled:e.target.checked}})}/>Show the public language switcher</label>
-    <div className={s.grid}>
+    <div data-studio-part="grid" className={s.grid}>
      {locales.map(code=><label className={s.check} key={code}><input type="checkbox" disabled={code==='en'} checked={enabled.includes(code)} onChange={e=>{
       const next=e.target.checked?[...enabled,code]:enabled.filter(v=>v!==code);
       patchSettings({...data.settings,localization:{...data.settings.localization,enabledLocales:locales.filter(v=>next.includes(v))}});
@@ -76,25 +76,25 @@ export function SiteSettingsEditor(){
     </div>
    </section>
 
-   <section className={s.panel} data-unsaved={dirty}>
-    <div className={s.toolbar}>
+   <section data-studio-part="panel" className={s.panel} data-unsaved={dirty}>
+    <div data-studio-part="toolbar" className={s.toolbar}>
      <label>Menu<select value={menu} onChange={e=>setMenu(e.target.value as NavMenuKey)}>{menuKeys.map(key=><option key={key} value={key}>{menuLabels[key].title}</option>)}</select></label>
      <label>Label language<select value={locale} onChange={e=>setLocale(e.target.value as Locale)}>{data.settings.localization.enabledLocales.map(code=><option key={code} value={code}>{localeLabels[code]}</option>)}</select></label>
      <span>{rows.length} {rows.length===1?'link':'links'}</span>
     </div>
-    <h2>{menuLabels[menu].title}</h2><p className={s.help}>{menuLabels[menu].where}. Hidden links remain saved so they can be restored later.</p>
+    <h2>{menuLabels[menu].title}</h2><p data-studio-part="help" className={s.help}>{menuLabels[menu].where}. Hidden links remain saved so they can be restored later.</p>
 
     <div className={s.list}>
      {rows.map((item,index)=>{
       const hrefIssue=describeHrefProblem(item.href);
       const translated=item.label[locale]||'';
-      return <div className={s.panel} key={item.id}>
-       <div className={s.grid}>
+      return <div data-studio-part="panel" className={s.panel} key={item.id}>
+       <div data-studio-part="grid" className={s.grid}>
         <label>English label<input value={item.label.en} maxLength={60} onChange={e=>patchItem(index,{label:{...item.label,en:e.target.value}})}/></label>
         {locale!=='en'&&<label>{localeLabels[locale]} label<input dir={locale==='ar'?'rtl':'ltr'} value={translated} maxLength={60} placeholder={item.label.en+' · English fallback'} onChange={e=>patchItem(index,{label:{...item.label,[locale]:e.target.value}})}/><small>{item.reviewedLabels?.[locale]===navigationReview(item.label,locale)?'Reviewed against current English':'Unreviewed or stale — English fallback'}</small><button type="button" disabled={!translated.trim()} onClick={()=>patchItem(index,{reviewedLabels:{...item.reviewedLabels,[locale]:navigationReview(item.label,locale)}})}>Review this label</button></label>}
         <label className={s.wide}>Destination<input id={'navigation-field-'+item.id+'-href'} value={item.href} maxLength={500} aria-invalid={!!hrefIssue} onChange={e=>patchItem(index,{href:e.target.value})}/>{hrefIssue&&<small className={s.error}>{hrefIssue}</small>}</label>
        </div>
-       <div className={s.actions}>
+       <div data-studio-part="actions" className={s.actions}>
         <label className={s.check}><input type="checkbox" checked={item.visible} onChange={e=>patchItem(index,{visible:e.target.checked})}/>Visible</label>
         <label className={s.check}><input type="checkbox" checked={item.newTab} onChange={e=>patchItem(index,{newTab:e.target.checked})}/>Open in new tab</label>
         <button type="button" disabled={index===0} onClick={()=>move(index,-1)}>Move up</button>
@@ -104,13 +104,13 @@ export function SiteSettingsEditor(){
       </div>;
      })}
     </div>
-    <div className={s.actions}>
+    <div data-studio-part="actions" className={s.actions}>
      <button type="button" disabled={rows.length>=12} onClick={add}>Add link</button>
      <button type="button" onClick={()=>{if(window.confirm('Restore this menu to the shipped links?'))patchRows(structuredClone(defaultNavigation[menu]));}}>Reset this menu</button>
     </div>
    </section>
-   {issues.length>0&&<div className={s.panel} role="alert"><h2>Correct these links before publishing</h2><ul>{issues.map(issue=><li key={issue.index}>{rows[issue.index]?.label.en}: {issue.message}</li>)}</ul></div>}
-   <div className={s.actions}><button className={s.primary} disabled={busy||!dirty||issues.length>0} onClick={()=>void save()}>Publish navigation &amp; languages</button><button disabled={busy} onClick={()=>{if(!dirty||window.confirm('Discard unsaved navigation changes?'))void load();}}>Discard &amp; reload</button></div>
+   {issues.length>0&&<div data-studio-part="panel" className={s.panel} role="alert"><h2>Correct these links before publishing</h2><ul>{issues.map(issue=><li key={issue.index}>{rows[issue.index]?.label.en}: {issue.message}</li>)}</ul></div>}
+   <div data-studio-part="actions" className={s.actions}><button data-studio-action="primary" className={s.primary} disabled={busy||!dirty||issues.length>0} onClick={()=>void save()}>Publish navigation &amp; languages</button><button disabled={busy} onClick={()=>{if(!dirty||window.confirm('Discard unsaved navigation changes?'))void load();}}>Discard &amp; reload</button></div>
   </fieldset>}
  </>;
 }
