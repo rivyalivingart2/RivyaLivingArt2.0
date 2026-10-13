@@ -24,3 +24,7 @@ tools/download-cache/
 
 .local-audit
 OLDWEBSITE/
+
+# Generated Phase 3 review evidence and static fixture builds.
+/output/playwright/redesign-phase3/
+/output/redesign-phase3/

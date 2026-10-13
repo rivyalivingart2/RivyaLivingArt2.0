@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T11:09:23.905Z",
+  "title": "Design System: RivyaLivingArt Phase 3 homepage and shared public frame",
+  "extensions": {
+    "scope": {
+      "designDocument": "../DESIGN.md",
+      "status": "Phase 3 local implementation following Phase 1/2 approval; independent finish disposition ship; Phase 4 and release gated",
+      "authority": "Homepage renderers and shared public header, navigation, search entry, mobile menu and footer only",
+      "productionAuthority": false,
+      "method": "Source extraction and validation of existing receipt counts; no browser rerun in this documentation pass",
+      "excluded": "Other website page bodies, Studio, publication, data mutation, GitHub push/PR and release",
+      "sourceFiles": [
+        "../../../src/components/shop/modern-homepage.module.css",
+        "../../../src/components/shop/public-frame.module.css",
+        "../../../src/components/shop/reference-homepage.module.css",
+        "../../../src/components/shop/homepage.module.css",
+        "../../../src/components/shop/shop.module.css",
+        "../../../src/styles/tokens.css",
+        "../../../src/components/shop/homepage-document.tsx",
+        "../../../src/components/shop/reference-homepage.tsx",
+        "../../../src/components/shop/homepage-motion.tsx",
+        "../../../src/components/shop/homepage-motion-runtime.ts",
+        "../../../src/components/shop/header.tsx",
+        "../../../src/components/shop/shop-frame.tsx",
+        "../../../src/components/shop/shop-site.tsx",
+        "../../../src/components/shop/dialog.tsx",
+        "../../../src/components/shop/material-film.tsx",
+        "../../../src/components/shop/material-film.module.css"
+      ],
+      "preservedDrift": [
+        "PRODUCT.md still says Phase 2 only, pending Phase 3 approval and disconnected routes.",
+        "Phase 2 DESIGN.md and sidecar retain their historical local foundation boundary.",
+        "Phase 1 documentation retains historical approval-pending wording.",
+        "Existing shared card/chapter styles reference --hairline, but no declaration was found under src. Reported without repair."
+      ],
+      "detector": "Unavailable: The system cannot find the batch label specified - cache_directory_failed. Not passed."
+    },
+    "colorMeta": {
+      "obsidian": {
+        "role": "neutral",
+        "displayName": "Obsidian"
+      },
+      "ocean": {
+        "role": "neutral",
+        "displayName": "Deep ocean"
+      },
+      "sapphire": {
+        "role": "primary",
+        "displayName": "Sapphire"
+      },
+      "sapphire-hover": {
+        "role": "primary",
+        "displayName": "Sapphire hover"
+      },
+      "champagne": {
+        "role": "primary",
+        "displayName": "Champagne"
+      },
+      "ivory": {
+        "role": "neutral",
+        "displayName": "Ivory"
+      },
+      "stone": {
+        "role": "neutral",
+        "displayName": "Stone"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted supporting text"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink"
+      },
+      "light-copy": {
+        "role": "neutral",
+        "displayName": "Light-surface copy"
+      },
+      "control-border": {
+        "role": "neutral",
+        "displayName": "Control border"
+      },
+      "chapter-line": {
+        "role": "neutral",
+        "displayName": "Chapter separator"
+      },
+      "strong-line": {
+        "role": "neutral",
+        "displayName": "Emphasized separator"
+      }
+    },
+    "tonalRampPolicy": "No source tonal ramps exist. Synthetic ramps are omitted from this actual-source-only extraction, consistent with the Phase 2 record.",
+    "typographyMeta": {
+      "display": {
+        "displayName": "Homepage opening",
+        "purpose": "Modern homepage h1; breakpoint overrides and max-width in DESIGN.md."
+      },
+      "headline": {
+        "displayName": "Homepage chapter",
+        "purpose": "Modern homepage h2, including reference composition through the outer scope."
+      },
+      "title": {
+        "displayName": "Reference title baseline",
+        "purpose": "Reference h3; tiles, quotes, products and journal have local overrides."
+      },
+      "body": {
+        "displayName": "Shared public body",
+        "purpose": "Shared site baseline; modern homepage paragraphs use 1.8 line-height."
+      },
+      "action": {
+        "displayName": "Inherited primary action",
+        "purpose": "Public sapphire primary button typography."
+      },
+      "reference-eyebrow": {
+        "displayName": "Reference eyebrow",
+        "purpose": "Normal-case reference label; inherited legacy eyebrows retain their case."
+      },
+      "footer-title": {
+        "displayName": "Footer heading",
+        "purpose": "Serif footer navigation group headings."
+      }
+    },
+    "shadows": [
+      {
+        "name": "collection-dropdown",
+        "value": "0 18px 40px #0005",
+        "purpose": "Desktop collections panel only."
+      },
+      {
+        "name": "native-dialog",
+        "value": "0 12px 32px #0004",
+        "purpose": "Inherited native modal panel depth."
+      }
+    ],
+    "backdrop": {
+      "value": "#080a0ecc",
+      "filter": "none",
+      "purpose": "Shared public modal backdrop"
+    },
+    "motion": [
+      {
+        "name": "deferred-enhancement",
+        "value": "600ms setTimeout then dynamic import",
+        "purpose": "Load optional GSAP only when capability query matches."
+      },
+      {
+        "name": "heading-settle",
+        "value": "y:28; duration:.85; ease:expo.out; start:top 90%; once:true",
+        "purpose": "Selected/story h2 selector matches; no opacity changes."
+      },
+      {
+        "name": "image-parallax",
+        "value": "yPercent:-3 to 3; ease:none; start:top bottom; end:bottom top; scrub:true",
+        "purpose": "First child of homepage parallax frames."
+      },
+      {
+        "name": "native-anchor",
+        "value": "scroll-behavior:smooth",
+        "purpose": "Temporary document style while eligible homepage enhancement is active; restore prior value on cleanup."
+      },
+      {
+        "name": "dialog-entry",
+        "value": "translateY(8px) to translateY(0); 180ms ease-out",
+        "purpose": "Public frame native dialog, no reduced-motion preference."
+      },
+      {
+        "name": "category-caption",
+        "value": "background-color 180ms ease",
+        "purpose": "Stable category caption background; no reduced-motion preference."
+      },
+      {
+        "name": "inherited-primary-hover",
+        "value": "background-color 150ms ease",
+        "purpose": "Existing shared primary action hover; root reduced-motion rule reduces transition duration."
+      }
+    ],
+    "motionCapability": {
+      "query": "(min-width: 900px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)",
+      "overscan": "height:108%; top:-4%; bottom:-4%",
+      "cleanup": "Revert GSAP context; cancel requestAnimationFrame refresh; restore prior inline document scrollBehavior; data-home-motion returns static; dispose timeout/query listener on unmount.",
+      "failure": "Dynamic import failure leaves server-rendered static content readable.",
+      "scope": "Selected/story heading categories; standard composition has two moments, fallback may match several selected headings. Shared incumbent CSS effects remain separate.",
+      "excluded": "No ScrollSmoother, pinning, transformed page wrapper or Studio motion integration."
+    },
+    "breakpoints": [
+      {
+        "name": "root-header-intermediate",
+        "value": "1200px"
+      },
+      {
+        "name": "frame-and-reference-intermediate",
+        "value": "1100px"
+      },
+      {
+        "name": "desktop-menu-close",
+        "value": "1101px"
+      },
+      {
+        "name": "atelier-sticky-minimum",
+        "value": "1000px"
+      },
+      {
+        "name": "classic-contents-intermediate",
+        "value": "980px"
+      },
+      {
+        "name": "motion-minimum",
+        "value": "900px"
+      },
+      {
+        "name": "homepage-stack",
+        "value": "780px"
+      },
+      {
+        "name": "compact-frame",
+        "value": "600px"
+      },
+      {
+        "name": "compact-process",
+        "value": "480px"
+      }
+    ],
+    "breakpointPolicy": "Layout queries use max-width unless the name states minimum or desktop-menu-close. Root header-height and scoped actual frame heights are distinct; see DESIGN.md.",
+    "focus": {
+      "outline": "2px solid #b89b63",
+      "offset": "5px",
+      "invitation": "#164e6b"
+    },
+    "slots": [
+      "pour",
+      "manifesto",
+      "pieces",
+      "large-format",
+      "material",
+      "collections",
+      "furniture",
+      "maker",
+      "rooms",
+      "work",
+      "words",
+      "bespoke",
+      "workshops",
+      "print",
+      "process",
+      "why",
+      "journal",
+      "closing"
+    ],
+    "media": {
+      "images": "Cover imagery; preserve stored associations and inline positions. Logo and film use contain. Editorial crops switch at 780px.",
+      "film": "Native controls, muted loop, playsInline, preload=none, no autoplay; deliberate input; near-frame poster loading at 800px; pause offscreen/hidden; original still and unavailable message on failure; print-only still retained.",
+      "categoryFallback": "Existing first-letter monogram; no invented image association.",
+      "provenance": "Six Phase 2 candidate images remain proposals with null Studio IDs; visualization or fixture assets do not establish customer or completed-project evidence."
+    },
+    "evidence": {
+      "base": "../../../output/playwright/redesign-phase3/",
+      "receipts": [
+        {
+          "path": "verification.json",
+          "checks": 58,
+          "scope": "Local route browser emulation; no record writes."
+        },
+        {
+          "path": "fixtures-verification.json",
+          "checks": 40,
+          "scope": "Four synthetic fixture variants and all 18 conditional slots; no database writes."
+        },
+        {
+          "path": "edge-verification.json",
+          "checks": 16,
+          "scope": "Local browser, locale cookie and saved-piece localStorage only."
+        }
+      ],
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "captures": "Opening, selected gallery, material, collections, closing, footer, menu and fixture work/words/workshops/journal captures are listed in the existing receipts.",
+      "mobileFull": {
+        "path": "full-capture-receipt.json",
+        "width": 390,
+        "height": 19881,
+        "tiles": 20,
+        "method": "Settled viewport tiles; sticky header once; no layout/content modifications"
+      },
+      "finishReview": "Parent-supplied independent finish disposition ship across five review sections; no material local Phase 3 fixes.",
+      "limits": "No new browser run by documenter; no native/device/screen-reader/language/human or production certification. Synthetic fixtures do not prove optional source content is published."
+    },
+    "snippets": "Static source-derived specimens. Root CSS variables have literal fallbacks for standalone rendering. No React, external assets, app mutations or fonts are embedded. Sample labels do not replace source copy."
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Inherited sapphire action with integrated square corners.",
+      "html": "<button class=\"ds-primary\" type=\"button\">Explore the collection <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M7 7h10v10M7 17 17 7\"/></svg></button>",
+      "css": ".ds-primary{font-family:var(--font-body,Arial,sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:35px;min-height:48px;min-width:48px;padding:12px 18px;background:var(--sapphire,#164e6b);color:var(--ivory,#f4f1e9);border:1px solid var(--control-border,#78828c);border-radius:0;font-size:14px;font-weight:600;letter-spacing:.025em;cursor:pointer;transition:background-color 150ms ease}.ds-primary:hover:not(:disabled){background:var(--sapphire-hover,#1d6389)}.ds-primary:active{transform:none}.ds-primary:disabled{opacity:.55;cursor:not-allowed}.ds-primary:focus-visible,.ds-text:focus-visible,.ds-field input:focus-visible,.ds-nav a:focus-visible,.ds-nav summary:focus-visible,.ds-contents a:focus-visible,.ds-contents summary:focus-visible,.ds-card:focus-visible{outline:2px solid var(--champagne,#b89b63);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Film action",
+      "kind": "button",
+      "refersTo": "film-action",
+      "description": "Ivory deliberate playback control; static specimen does not play media.",
+      "html": "<div class=\"ds-film\"><button class=\"ds-film-action\" type=\"button\">Play film <span aria-hidden=\"true\">▷</span></button></div>",
+      "css": ".ds-film{background:#080a0e;padding:20px}.ds-film-action{font-family:var(--font-body,Arial,sans-serif);min-height:48px;padding:12px 24px;border:1px solid #f4f1e9;border-radius:0;background:#f4f1e9;color:#18202a;font-size:17px;cursor:pointer;white-space:nowrap}.ds-film-action span{margin-left:16px}.ds-film-action:focus-visible{outline:2px solid #b89b63;outline-offset:5px}"
+    },
+    {
+      "name": "Labelled search field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Source search field inside its obsidian modal context.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-search\">Search the collection</label><input id=\"ds-search\" type=\"search\" name=\"q\" maxlength=\"100\" placeholder=\"Search pieces\"></div>",
+      "css": ".ds-field{font-family:var(--font-body,Arial,sans-serif);display:grid;gap:12px;background:#080a0e;color:#f4f1e9;padding:24px;font-size:16px}.ds-field input{font:inherit;min-height:56px;padding:14px;border:1px solid #a9b4bc;border-radius:0;background:#08283a;color:#f4f1e9;caret-color:#b89b63}.ds-primary:focus-visible,.ds-text:focus-visible,.ds-field input:focus-visible,.ds-nav a:focus-visible,.ds-nav summary:focus-visible,.ds-contents a:focus-visible,.ds-contents summary:focus-visible,.ds-card:focus-visible{outline:2px solid var(--champagne,#b89b63);outline-offset:5px}"
+    },
+    {
+      "name": "Collections navigation",
+      "kind": "nav",
+      "description": "Native disclosure and existing current-page treatment.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navigation specimen\"><details><summary>Collections</summary><div><a href=\"#ds-collection\" aria-current=\"page\">Furniture &amp; spatial art</a><a href=\"#ds-memory\">Memory art</a></div></details><a href=\"#ds-story\">Our Atelier</a></nav>",
+      "css": ".ds-nav{font-family:var(--font-body,Arial,sans-serif);display:flex;gap:24px;align-items:start;background:#080a0e;color:#ddd6cb;padding:24px;font-size:14px}.ds-nav a{color:inherit;text-decoration:none}.ds-nav [aria-current=page]{color:#f4f1e9}.ds-nav summary{min-height:44px;cursor:pointer}.ds-nav details>div{display:grid;background:#08283a;border:0;border-radius:0;padding:16px 20px;box-shadow:0 18px 40px #0005}.ds-nav details a{display:flex;align-items:center;min-height:48px}.ds-nav a:hover{color:#ddd6cb}.ds-primary:focus-visible,.ds-text:focus-visible,.ds-field input:focus-visible,.ds-nav a:focus-visible,.ds-nav summary:focus-visible,.ds-contents a:focus-visible,.ds-contents summary:focus-visible,.ds-card:focus-visible{outline:2px solid var(--champagne,#b89b63);outline-offset:5px}"
+    },
+    {
+      "name": "Homepage contents",
+      "kind": "nav",
+      "description": "Native details/anchor pattern stays useful without JavaScript.",
+      "html": "<nav class=\"ds-contents\" aria-label=\"On this page\"><details><summary>On this page <span aria-hidden=\"true\">+</span></summary><ol><li><a href=\"#ds-pieces\">Objects that hold a room.</a></li><li><a href=\"#ds-material\">The beauty is in the dialogue.</a></li></ol></details></nav>",
+      "css": ".ds-contents{font-family:var(--font-body,Arial,sans-serif);padding:22px 24px;background:#080a0e;border-block:1px solid #b89b633b;color:#f4f1e9}.ds-contents summary{display:flex;justify-content:space-between;align-items:center;min-height:44px;cursor:pointer;font-size:15px}.ds-contents summary::-webkit-details-marker{display:none}.ds-contents summary>span{font-size:24px}.ds-contents details[open] summary>span{transform:rotate(45deg)}.ds-contents ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 36px;padding:24px 0;margin:0;list-style:none}.ds-contents a{display:flex;align-items:center;min-height:48px;font-size:15px;color:#ddd6cb;text-decoration:underline;text-decoration-color:#b89b634d;text-underline-offset:6px}.ds-primary:focus-visible,.ds-text:focus-visible,.ds-field input:focus-visible,.ds-nav a:focus-visible,.ds-nav summary:focus-visible,.ds-contents a:focus-visible,.ds-contents summary:focus-visible,.ds-card:focus-visible{outline:2px solid var(--champagne,#b89b63);outline-offset:5px}@media(max-width:780px){.ds-contents ol{grid-template-columns:minmax(0,1fr)}}"
+    },
+    {
+      "name": "Flat product card",
+      "kind": "card",
+      "description": "Existing text and visual frame pattern without fabricated product photography. The unresolved inherited hairline variable is preserved; it does not fabricate a border.",
+      "html": "<a class=\"ds-card\" href=\"#ds-piece\"><div class=\"ds-card-image\" role=\"img\" aria-label=\"Image frame specimen\"></div><h3>River Channel <span aria-hidden=\"true\">↗</span></h3><p>Live-Edge Dining Table</p><small>DP001 / Price on request</small></a>",
+      "css": ".ds-card{font-family:var(--font-body,Arial,sans-serif);display:block;max-width:360px;background:#080a0e;color:#f4f1e9;border:1px solid var(--hairline);border-radius:0;padding:12px;text-decoration:none;transition:background-color 150ms ease,border-color 150ms ease}.ds-card-image{aspect-ratio:4/5;background:#08283a;border:0;border-radius:0;box-shadow:none}.ds-card h3{display:flex;justify-content:space-between;gap:18px;font:400 clamp(30px,3vw,44px)/1.03 var(--font-display,Georgia,serif);letter-spacing:-.035em;margin:12px 0}.ds-card p{font-size:14px;color:#a9b4bc;letter-spacing:.02em}.ds-card small{display:block;margin-top:14px;font:12px var(--font-data,Consolas,monospace);color:#a9b4bc}.ds-card:hover{transform:none;background:rgba(255,255,255,.02)}.ds-primary:focus-visible,.ds-text:focus-visible,.ds-field input:focus-visible,.ds-nav a:focus-visible,.ds-nav summary:focus-visible,.ds-contents a:focus-visible,.ds-contents summary:focus-visible,.ds-card:focus-visible{outline:2px solid var(--champagne,#b89b63);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-card{transition:none}}"
+    },
+    {
+      "name": "Editorial disclosure",
+      "kind": "custom",
+      "description": "Visible source disclosure for fictional feedback, with no fabricated endorsement.",
+      "html": "<div class=\"ds-disclosure-context\"><p class=\"ds-disclosure\">Fictional sample · not customer feedback</p></div>",
+      "css": ".ds-disclosure-context{font-family:var(--font-body,Arial,sans-serif);background:#080a0e;padding:24px}.ds-disclosure{display:inline-block;background:transparent;color:#ddd6cb;border:0;border-bottom:1px solid #b89b6366;padding:0 0 12px;margin:0 0 24px;font-size:14px;line-height:1.6}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Contemporary material gallery",
+    "overview": "Resin imagery leads within obsidian and ocean framing, with warm ivory reading intervals and restrained champagne details. Large serif headings, asymmetrical photographic groups and generous chapter spacing give existing content a deliberate reading rhythm. This language carries forward the owner-approved Phase 1 and Phase 2 direction; it does not introduce a new visual-world choice.\n\nPhase 3 brings that direction into the real homepage renderers and shared public header, navigation, search entry, mobile menu and footer. This document governs that local implementation only. Other website page bodies and Studio remain incumbent or future-phase work; Phase 4 and release remain gated. Original logo assets, main colours, published text, saved conditions, media associations, focal positions and functionality constrain the visual treatment.",
+    "keyCharacteristics": [
+      "Original identity, source content and stored presentation choices remain intact.",
+      "Dark photographic chapters alternate with quiet ivory reading and closing surfaces.",
+      "Category images keep stable targets; asymmetry comes from composition, not hover expansion.",
+      "Content is server rendered and visible before optional motion loads.",
+      "Film playback requires deliberate input; navigation and dialogs retain native behavior.",
+      "Local integration and browser evidence remain separate from native, human and release acceptance."
+    ],
+    "rules": [
+      {
+        "name": "The Original Identity Rule",
+        "body": "Preserve original logo bytes and main colour values; keep the logo contained on ivory without filters or recolouring.",
+        "section": "colors"
+      },
+      {
+        "name": "The Visible Content Rule",
+        "body": "Text remains readable before JavaScript and throughout motion; enhancement never gates access to content or controls.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep this authority limited to the Phase 3 homepage and shared public frame, with further phases and release gated.",
+      "**Do** preserve original identity, content, stored conditions, selected media, crops, routes and manual sending boundaries.",
+      "**Do** keep image frames filled while retaining logo and film containment and existing focal positions.",
+      "**Do** keep text visible, native scrolling intact, film playback deliberate and dialog focus recoverable.",
+      "**Do** distinguish local browser receipts, synthetic fixtures, independent finish review, owner acceptance and native/device/human evidence."
+    ],
+    "donts": [
+      "**Don't** promote this scoped extraction into root design authority or redesign other page bodies or Studio from it.",
+      "**Don't** activate optional offerings, relabel fictional feedback, assign proposed media to records or infer customer evidence from visualizations.",
+      "**Don't** add hidden text reveals, expanding category columns, scroll hijacking or autoplay.",
+      "**Don't** equate the local ship disposition or unavailable detector with production, physical-device, screen-reader or language acceptance.",
+      "**Don't** repair historical Phase 1/2 or PRODUCT.md status wording as part of this documentation-only extraction."
+    ]
+  }
+}

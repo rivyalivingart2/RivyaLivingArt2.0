@@ -1,0 +1,272 @@
+[
+  {
+    "key": "pour",
+    "label": "Hero",
+    "source": "Current homepage opening",
+    "localPublishedVisible": true,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "manifesto",
+    "label": "Manifesto",
+    "source": "Current homepage three-line statement",
+    "localPublishedVisible": true,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "pieces",
+    "label": "Featured pieces",
+    "source": "Current selected product IDs, in their existing order",
+    "localPublishedVisible": true,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "large-format",
+    "label": "Large format",
+    "source": "Published architects page",
+    "localPublishedVisible": true,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "material",
+    "label": "Material story",
+    "source": "Current material chapter",
+    "localPublishedVisible": true,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "collections",
+    "label": "Collections",
+    "source": "Current categories and three journeys",
+    "localPublishedVisible": true,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "furniture",
+    "label": "Furniture concepts",
+    "source": "Existing selected pieces; always labelled design visualizations",
+    "localPublishedVisible": false,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "maker",
+    "label": "Atelier story",
+    "source": "Published story text; no invented person or staff portrait",
+    "localPublishedVisible": true,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "rooms",
+    "label": "Room concepts",
+    "source": "Existing selected scene images; always labelled design visualizations",
+    "localPublishedVisible": false,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "work",
+    "label": "Portfolio",
+    "source": "Reviewed new Portfolio records",
+    "localPublishedVisible": false,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "words",
+    "label": "Testimonials",
+    "source": "Reviewed feedback or explicitly labelled fictional samples",
+    "localPublishedVisible": false,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "bespoke",
+    "label": "Commission band",
+    "source": "Published commission page and current inquiry destination",
+    "localPublishedVisible": true,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "workshops",
+    "label": "Workshops",
+    "source": "Confirmed current workshop offering",
+    "localPublishedVisible": false,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "print",
+    "label": "Printing",
+    "source": "Confirmed current printing offering",
+    "localPublishedVisible": false,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "process",
+    "label": "How it works",
+    "source": "Current customer steps, wording and chronology",
+    "localPublishedVisible": true,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "why",
+    "label": "The approach",
+    "source": "Published story chapters",
+    "localPublishedVisible": true,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "journal",
+    "label": "Journal",
+    "source": "Existing selected article IDs; no automatic replacement",
+    "localPublishedVisible": false,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  },
+  {
+    "key": "closing",
+    "label": "Closing invitation",
+    "source": "Current final invitation",
+    "localPublishedVisible": true,
+    "conditionalFixtureVerified": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "visibilityChanged": false,
+    "recordsChanged": false
+  }
+]
