@@ -41,6 +41,7 @@
  padding:20px 0 0;background:transparent;border-top:1px solid #b89b6380;text-align:left;
  display:flex;flex-direction:column;align-items:flex-start;gap:14px;color:#f4f1e9;
 }
+.home.home .heroCaption {position:absolute;right:40px;bottom:28px;z-index:3;margin:0;max-width:min(34%,500px);padding:8px 12px;background:#080a0ee6;color:#f4f1e9;font-size:12px;line-height:1.6}
 .home.home .heroNote p {font:400 32px/1.2 var(--font-display);margin:8px 0}
 .home.home .heroNote span {font-size:11px;margin:0;color:#ddd6cb}
 .home.home .heroNote a {font-size:13px;min-height:44px;display:inline-flex;align-items:center;gap:12px}
@@ -96,7 +97,7 @@
  .home.home .heroVisual::after {background:linear-gradient(0deg,#080a0ef2 4%,#080a0ea6 60%,#080a0e38),linear-gradient(90deg,#080a0e73,transparent)}
  .home.home .heroNote,.home.home[data-home-hero=cinematic] .heroNote {left:24px;right:24px;bottom:20px;width:auto;max-width:none;flex-direction:row;align-items:center;justify-content:space-between;gap:12px;padding:16px 0 0}
  .home.home .heroNote p {font-size:26px}
- .home.home .heroVisual figcaption {top:auto;bottom:24px;left:24px;right:24px;max-width:none;z-index:3}
+ .home.home .heroCaption {bottom:24px;left:24px;right:24px;max-width:none;width:fit-content}
  .home.home [data-home-chapter] {padding:72px 24px}
  .home.home [data-home-products],.home.home[data-home-featured=bento] [data-home-products] {grid-template-columns:minmax(0,1fr);gap:48px}
  .home.home[data-home-featured=bento] [data-home-products]>article:nth-child(even) {margin-top:0}
