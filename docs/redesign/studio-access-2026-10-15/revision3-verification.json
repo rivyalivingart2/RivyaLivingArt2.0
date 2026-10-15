@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-15",
+  "scope": "Revision 3: requested white frosted panel, inside logo, website copy and display font",
+  "base": "0a0bee8",
+  "build": "passed",
+  "focusedEslint": "passed",
+  "browser": {
+    "loginWidths": [
+      1408,
+      390,
+      320
+    ],
+    "requestWidths": [
+      1408,
+      390
+    ],
+    "recoveryWidths": [
+      1408,
+      320
+    ],
+    "horizontalOverflow": "none in observed DOM checks",
+    "panel": "rgba(255,255,255,.82); blur(24px) saturate(115%)",
+    "logoInsidePanel": true,
+    "imagesLoaded": true,
+    "passwordToggle": "passed",
+    "keyboardFocus": "solid visible outline",
+    "signupNavigation": "passed"
+  },
+  "contrastWorstCaseOverBlack": {
+    "background": "#d1d1d1",
+    "bodyAndPlaceholder": 5.25,
+    "controlBoundary": 3.8,
+    "primaryText": 10.0
+  },
+  "capturesDirectory": "test-results/studio-access/revision3",
+  "limits": [
+    "No database or production writes",
+    "No full authentication regression rerun for presentation-only change",
+    "No physical-device or native assistive testing",
+    "Detector unavailable: cache_directory_failed",
+    "No push or release"
+  ],
+  "typecheck": "passed",
+  "freshVisualReview": "PASS for local refinement"
+}

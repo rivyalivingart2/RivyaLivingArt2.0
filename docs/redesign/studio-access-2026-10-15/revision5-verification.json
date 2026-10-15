@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-15",
+  "scope": "CSS-only account navigation visibility fix",
+  "base": "5edf6a3",
+  "buildAndTypeCheck": "passed",
+  "browser": {
+    "desktopWidth": 1408,
+    "mobileWidth": 320,
+    "horizontalOverflow": false,
+    "loginActiveLabel": "Sign in",
+    "signupActiveLabel": "Request an account",
+    "activeColors": "white on #08283a",
+    "desktopTargetHeight": 48,
+    "mobileTargetHeight": 55.09,
+    "navigationBothDirections": "passed",
+    "keyboardFocus": "visible solid outline"
+  },
+  "captures": "test-results/studio-access/revision5",
+  "limits": [
+    "No authentication forms submitted",
+    "No database or production changes",
+    "No physical-device certification",
+    "Design detector launcher unavailable"
+  ],
+  "release": "local only"
+}

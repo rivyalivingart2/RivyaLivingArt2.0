@@ -1,14 +1,80 @@
-.login.login{background:#080a0e;min-height:100svh;padding:40px 20px}
-.login.login form{border:1px solid #43515a;border-radius:6px;background:#08283a;box-shadow:none;max-width:520px;width:100%;gap:14px;padding:40px}
-.logo{width:180px;height:auto;padding:12px;background:#f4f1e9;margin-bottom:10px;object-fit:contain}
-.login.login h1{font:500 32px/1.3 var(--font-body);letter-spacing:-.02em}
-.login.login p{font:400 14px/1.7 var(--font-body);color:#a9b4bc}
-.login.login :global(.eyebrow){letter-spacing:0;text-transform:none;color:#ddd6cb}
-.login.login label{font-size:14px;margin-top:8px}
-.login.login input{min-height:48px;border-color:#78828c;caret-color:#b89b63}
-.login.login :global(.studio-button){margin-top:8px;min-height:48px;background:#164e6b;color:#f4f1e9;border-color:#78828c}
-.login.login :global(.studio-login-error){color:#fca5a5}
-.login.login a{color:#ddd6cb}
-.login.login :focus-visible{outline:3px solid #b89b63;outline-offset:4px}
-.login.login ::selection{background:#b89b63;color:#080a0e}
-@media(max-width:540px){.login.login{padding:24px 16px}.login.login form{padding:26px 20px}.login.login h1{font-size:28px}}
+.access{min-height:100svh;padding:22px;background:#080a0e;color:#f4f1e9;font:400 15px/1.6 var(--font-body);caret-color:#164e6b}
+.frame{position:relative;isolation:isolate;min-height:calc(100svh - 44px);display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,.88fr);gap:clamp(32px,5vw,80px);padding:36px clamp(32px,4vw,64px);overflow:hidden;background:#08283a;align-items:center}
+.backdrop{object-fit:cover;object-position:50% 42%;z-index:-3}
+.scrim{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(8,40,58,.78),rgba(8,40,58,.2) 58%,rgba(8,40,58,.24))}
+.welcome{align-self:stretch;display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.brand{display:inline-flex;padding:0;margin-bottom:22px;border-radius:3px}
+.logo{width:180px;height:auto;object-fit:contain}
+.introduction{margin:auto 0;padding:54px 0 72px}
+.welcomeTitle{font:400 clamp(48px,5.65vw,86px)/1.02 var(--font-display);letter-spacing:-.02em;margin:0 0 22px;max-width:10ch}
+.welcomeCopy{font-size:16px;line-height:1.6;max-width:31ch;margin:0 0 26px;color:#f4f1e9}
+.explore{display:inline-flex;align-items:center;gap:24px;padding:11px 24px;background:#08283a;border:1px solid #b89b63;border-radius:999px;min-height:46px;color:#f4f1e9;text-decoration:none;font-size:14px}
+.explore:hover{background:#164e6b}
+.signature{font-size:12px;letter-spacing:.02em;margin:0;color:#f4f1e9}.signature span{padding:0 12px;color:#b89b63}
+.panel{position:relative;align-self:center;background:#fff;color:#08283a;border-radius:26px;box-shadow:0 18px 64px rgba(8,40,58,.18);padding:26px 32px 28px;min-width:0;color-scheme:light}
+.accountNav{display:flex;align-items:stretch;gap:32px;padding:0;margin:0 0 30px;border-bottom:1px solid rgba(8,40,58,.35);clear:both}
+.panel a{color:#164e6b;text-underline-offset:4px;text-decoration-thickness:1px}
+.panel a:hover{text-decoration-thickness:2px;color:#08283a}
+.panel .accountNav a{position:relative;display:flex;align-items:center;min-height:48px;padding:10px 0 14px;border-radius:0;text-decoration:none;font-size:16px;font-weight:500;line-height:1.4;color:#080a0e}
+.panel .accountNav a::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:3px;background:transparent}
+.panel .accountNav a:hover::after{background:#08283a}
+.panel .accountNav a[aria-current=page]{font-weight:600;color:#080a0e}
+.panel .accountNav a[aria-current=page]::after{background:#b89b63;border-bottom:1px solid #08283a}
+.panel .accountNav a:focus-visible{border-radius:3px}
+.panel h1{font:400 clamp(36px,3.8vw,56px)/1.06 var(--font-display);letter-spacing:-.02em;margin:0 0 14px;text-wrap:balance}
+.description{color:#40535f;font-size:13px;line-height:1.6;margin:0 0 34px;max-width:47ch}
+.form{display:grid;gap:21px;min-width:0}
+.form label{display:grid;gap:4px;font-size:12px;color:#08283a}
+.form input:not([type=checkbox]){width:100%;min-width:0;min-height:50px;padding:9px 0;border:0;border-bottom:1px solid #526972;border-radius:0;background:transparent;color:#08283a;font:400 18px/1.5 var(--font-body);box-sizing:border-box;transition:border-color 150ms ease}
+.form input::placeholder{color:#40535f;font-size:16px;opacity:1}
+.form input:hover{border-color:#164e6b}
+.password{position:relative;display:block}.passwordField{display:grid;gap:4px}
+.password input{padding-right:48px!important}
+.password button{position:absolute;right:0;top:3px;height:44px;width:44px;border:0;background:transparent;color:#164e6b;display:grid;place-items:center;border-radius:50%;cursor:pointer}
+.password button:hover{background:#e2e5dd}
+.forgot{justify-self:end;min-height:38px;display:flex;align-items:center;font-size:12px}
+.primary{display:flex;align-items:center;justify-content:center;gap:12px;border:1px solid #164e6b;border-radius:999px;background:#164e6b;color:#f4f1e9;min-height:48px;padding:12px 22px;font:500 14px/1.4 var(--font-body);cursor:pointer;transition:background 150ms ease}
+.primary:hover:not(:disabled){background:#08283a}
+.access :disabled{opacity:.6;cursor:not-allowed}
+.error{color:#9c2929;margin:0;font-size:13px;overflow-wrap:anywhere}.error:empty{display:none}
+.join{font-size:0;margin:10px 0 20px}
+.join a{display:flex;align-items:center;justify-content:center;border:1px solid #526972;border-radius:999px;min-height:46px;padding:9px 18px;font-size:14px;font-weight:500;text-decoration:none;color:#08283a}
+.join a:hover{background:#e7e7df}
+.note{font-size:11px;line-height:1.7;color:#40535f;margin:0;max-width:52ch}
+.panel>.note{text-align:center;margin:0 auto}.form>.note{font-size:12px}
+.success{border-top:1px solid #526972;border-bottom:1px solid #526972;padding:24px 0;margin-bottom:20px}
+.success h2{font:500 28px/1.2 var(--font-body);margin:0 0 12px}.success p{color:#40535f;margin:0 0 18px}
+.form .consent{display:flex;gap:12px;align-items:flex-start;font-size:12px;line-height:1.6}
+.consent input{width:20px;height:20px;flex-shrink:0;accent-color:#164e6b;margin:2px 0 0}
+.access :focus-visible{outline:3px solid #164e6b;outline-offset:4px}.welcome :focus-visible{outline-color:#f4f1e9}
+.access ::selection{background:#b89b63;color:#080a0e}
+@media(min-width:1600px){.panel{max-width:620px;width:100%;justify-self:end;padding:32px 40px}.frame{gap:80px}.accountNav{margin-bottom:34px}}
+@media(max-width:1050px){.frame{padding:28px;gap:28px;grid-template-columns:minmax(0,1fr) minmax(370px,1fr)}.panel{padding:22px 26px}.welcomeTitle{font-size:clamp(44px,5.7vw,60px)}.accountNav{margin-bottom:28px}.description{margin-bottom:38px}}
+@media(max-width:760px){.access{padding:0}.frame{display:flex;flex-direction:column;gap:0;padding:24px 20px;min-height:100svh;align-items:stretch}.backdrop{object-position:45% top}.scrim{background:rgba(8,40,58,.68)}.welcome{align-self:auto}.brand{padding:0;margin-bottom:20px}.logo{width:148px}.introduction{padding:38px 0 32px}.welcomeTitle{font-size:48px;max-width:none;margin-bottom:16px}.welcomeCopy{font-size:14px;max-width:34ch;margin-bottom:16px}.explore{font-size:12px;min-height:42px;padding:8px 18px}.signature{display:none}.panel{align-self:stretch;border-radius:22px;padding:20px 24px 26px}.accountNav{margin-bottom:26px;gap:26px}.panel .accountNav a{font-size:15px;padding:10px 0 14px}.panel h1{font-size:42px}.description{margin-bottom:32px}.form{gap:18px}}
+@media(max-width:360px){.frame{padding:20px 14px}.welcomeTitle{font-size:41px}.panel{padding:18px 20px 24px}.panel h1{font-size:36px}.accountNav{gap:22px}.panel .accountNav a{font-size:14px}.note{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.access *{transition:none!important}}
+
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .panel{
+    color:#080a0e;
+    /* Lift the backdrop's darkest tones so navy copy stays readable even
+       at the 30% opacity end of the white glass gradient. */
+    background:linear-gradient(120deg,rgba(255,255,255,.50) 0%,rgba(255,255,255,.30) 38%,rgba(255,255,255,.44) 65%,rgba(255,255,255,.50) 100%);
+    background-size:240% 240%;
+    -webkit-backdrop-filter:blur(20px) saturate(120%) brightness(112%) contrast(45%);
+    backdrop-filter:blur(20px) saturate(120%) brightness(112%) contrast(45%);
+    animation:glass-flow 16s ease-in-out infinite alternate;
+  }
+  .panel:hover,.panel:focus-within,.panel[data-motion-paused=true]{animation-play-state:paused}
+  .panel .description,.panel .note,.panel .success p,.panel a,.panel .form label,.panel .form input,.panel .password button{color:#080a0e}
+  .panel .form input::placeholder{color:#080a0e}
+  .panel .form input,.panel .join a,.panel .success{border-color:#080a0e}
+  .panel :focus-visible{outline-color:#080a0e}
+  .panel h1{color:#08283a}
+  .panel .error{color:#200606}
+}
+.motionToggle{display:none}
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.motionToggle{display:block;float:right;margin:-4px -8px 8px 12px;padding:10px 8px;min-height:44px;border:0;border-radius:4px;background:transparent;color:#080a0e;font:400 11px/1.4 var(--font-body);text-decoration:underline;text-underline-offset:4px;cursor:pointer}.motionToggle:hover{background:rgba(255,255,255,.25)}}
+@keyframes glass-flow{from{background-position:0% 15%}to{background-position:100% 85%}}
+@media(max-width:360px){.motionToggle{float:none;margin:0 0 12px auto;padding:4px 0;min-height:28px}}
+@media(prefers-reduced-motion:reduce){.panel{animation:none;background-position:50% 50%}.motionToggle{display:none}}

@@ -1,3 +1,53 @@
+# Current checkpoint - Studio access source release authorized
+
+15 October 2026: owner requested "push all things into main branch". Publish final revision 6 and all pending Studio access source through a detailed PR into main and verify deployment. Read docs/redesign/studio-access-2026-10-15/RELEASE.md. Source release is authorized; production request-table setup and real administrator acceptance remain distinct outstanding activation work. Do not replay fixtures or publications, create real staff accounts, send links, or claim migration completion without evidence. Earlier local-only checkpoints below are historical.
+
+---
+
+# Current checkpoint - Studio access revision 6, refined account navigation
+
+15 October 2026: owner rejected the boxed revision 5 switcher. Replaced it with larger open text links, a fine baseline and gold active indicator. Read docs/redesign/studio-access-2026-10-15/REVISION-6.md. CSS-only; build/types and desktop/mobile navigation checks passed. Local preview http://127.0.0.1:4199/studio/login. No push or release. Preserve authentication, records, logo and glass animation. Earlier visual versions below are historical.
+
+---
+
+# Current checkpoint - Studio access revision 5, account navigation visibility
+
+15 October 2026: owner highlighted low-visibility account navigation. Added light-backed, larger navigation with navy/white active state. Read docs/redesign/studio-access-2026-10-15/REVISION-5.md and revision5-verification.json. CSS-only; build/type and desktop/320px browser checks passed. Logo, glass animation, text, authentication and records unchanged. Local preview http://127.0.0.1:4199/studio/login. No push or release; older checkpoints remain historical.
+
+---
+
+# Current checkpoint - Studio access revision 4, animated glass
+
+15 October 2026: owner requested 30-50% opacity and frosted gradient animation. Read docs/redesign/studio-access-2026-10-15/REVISION-4.md and revision4-verification.json. Local presentation refinement with pause control, reduced-motion fallback and unchanged authentication/data. Build/type checks, focused lint and scoped browser checks passed. Preview: http://127.0.0.1:4199/studio/login. No push or release. Older checkpoints below are historical; do not replay fixtures or publications.
+
+---
+
+# Current checkpoint - Studio access revision 3, requested visual refinement
+
+15 October 2026: white frosted access panel, original logo inside every access form, main website short copy and existing display font. Read `docs/redesign/studio-access-2026-10-15/REVISION-3.md`, `REVISION-3-VISUAL-REVIEW.md` and `revision3-verification.json` first. Independent local screenshot/source review: PASS. Build, focused lint and TypeScript passed; detector unavailable. Earlier reviews below remain historical.
+
+Presentation only; existing authentication and media unchanged. Local preview: http://127.0.0.1:4199/studio/login. No database changes, push or release. Production migration/PR/release still require explicit authorization; do not replay fixtures or publications.
+
+---
+
+# Current checkpoint - Studio access revision 2, new owner reference
+
+15 October 2026: owner rejected the first Studio login design and requested the new full-image background / light right-side panel reference. Read `docs/redesign/studio-access-2026-10-15/REVISION-2.md`, `REVISION-2-VISUAL-REVIEW.md`, `REVISION-2-DESIGN-NOTES.md` and `revision2-verification.json` first. Earlier revision1 design/review below is historical and is not current owner approval.
+
+Presentation only: original logo/navy/ivory/gold, new supplied making-study background, large sans welcome, underlined fields and pill actions. Sign-in, approval and administrator-assisted reset backend unchanged from fdcd476. No database, production or Drive writes. Local preview stays http://127.0.0.1:4199/studio/login. Keep awaiting explicit production migration/PR/release authorization; do not replay test fixtures or publications.
+
+---
+
+# Current checkpoint - Studio access redesign ready for local review
+
+15 October 2026: owner requested creative image-led Studio login matching the newest rounded reference, Forgot password and administrator-approved registration; selected administrator-assisted reset. Local branch `codex/studio-access-redesign`, based on released main `ba3564949089fbe993e21275ad324014cbdd6a3d`. Read `docs/redesign/studio-access-2026-10-15/SETUP-AND-CONTINUATION.md`, `DIRECTION.md`, `VISUAL-REVIEW.md`, `DESIGN-NOTES.md` and `verification.json` first.
+
+Preserved original logo/main palette/content/functionality. All 1,657 original isolated QA rows across 13 scopes match before/after hashes. One synthetic staff account ends disabled; two fictional requests remain in local QA for preview. New additive access-request migration/runtime grants are prepared but not applied to production. Owner login remains hosting-managed. No automatic emails, Drive writes, live accounts, push, PR or deployment in this task.
+
+Public visual review returned ship for local owner review; admin queue and disabled-until-verified dialog inspected separately by builder. 350 unit, 403 runtime, 12 preflight, 30 DB security and 21 HTTP access-flow checks passed. Detector unavailable; no new native/human/physical certification. Local preview: http://127.0.0.1:4199/studio/login. Do not replay fixture creation or previous publications/releases. Await explicit authorization before production migration/PR/release.
+
+---
+
 # Current checkpoint — all seven redesign phases authorized for GitHub release
 
 13 October 2026: after receiving the Phase 7 report and confirming redesign completion, the owner explicitly instructed: "PUSH ALL THINGS INTO GITHUB". This authorizes the prepared detailed PR into main and normal release verification. The former local-only hold is superseded. Candidate application remains approved Phase 6 `15a0307`; verified package is `b1ae2d9`. Main was freshly fetched at `4cadf21b380a8f3753232318fbb78027aa09ffc5`; no drift or working-tree changes were found.

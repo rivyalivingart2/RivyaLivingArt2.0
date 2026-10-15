@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-15",
+  "base": "570aa0c",
+  "scope": "30-50% white animated glass gradient",
+  "buildWithTypeCheck": "passed",
+  "focusedEslint": "passed",
+  "browser": {
+    "desktopWidth": 1408,
+    "mobileLoginWidth": 390,
+    "signupWidths": [
+      390,
+      320
+    ],
+    "horizontalOverflow": false,
+    "imagesLoaded": true,
+    "panelOpacity": 1,
+    "whiteGradientAlphaStops": [
+      0.5,
+      0.3,
+      0.44,
+      0.5
+    ],
+    "animation": "16s alternate infinite",
+    "observedPositions": [
+      "0.213134% 15.1492%",
+      "84.0634% 73.8444%"
+    ],
+    "pauseToggle": "pressed true and computed animation-play-state paused",
+    "reducedMotion": "emulated preference: animation none, pause control hidden; emulation reset",
+    "logoInside": true
+  },
+  "contrast": {
+    "model": "backdrop contrast(.45) maps black to .275; white .30 alpha yields .4925 minimum; conservative #7d7d7d",
+    "smallInkText": 4.81,
+    "largeNavyHeading": 3.71
+  },
+  "limits": [
+    "Offscreen/document-hidden pause verified in source, not simulated",
+    "No backend authentication regression rerun",
+    "No physical-device or native accessibility certification",
+    "Detector launcher unavailable: cache_directory_failed",
+    "No production changes, push or release"
+  ],
+  "captures": "test-results/studio-access/revision4/"
+}
