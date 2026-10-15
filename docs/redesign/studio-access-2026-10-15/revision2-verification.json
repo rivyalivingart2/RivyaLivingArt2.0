@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-15",
+  "revision": 2,
+  "base": "fdcd476",
+  "scope": "local presentation change only",
+  "databaseWrites": 0,
+  "backendUnchanged": [
+    "src/lib/studio-auth.ts",
+    "src/lib/studio-access.ts",
+    "src/app/studio/login/actions.ts",
+    "src/app/studio/login/access-actions.ts",
+    "src/app/api/studio/access-requests/route.ts",
+    "src/components/studio/access-password-form.tsx",
+    "src/components/studio/access-requests.tsx"
+  ],
+  "media": {
+    "asset": "public/media/studio-access/making-study.webp",
+    "sha256": "62495bbf349d12443f40874860e1fbf5d92e2c1d0cfa4ccbe60d20f9f129bbdd",
+    "existingDerivativeByteIdentical": true
+  },
+  "buildTypes": "passed final build",
+  "focusedLint": "passed",
+  "accessValidationTests": 6,
+  "contrast": {
+    "panel text": 13.53,
+    "secondary text": 7.1,
+    "placeholder": 5.45,
+    "button": 7.96,
+    "error": 6.73,
+    "input line": 3.23
+  },
+  "browserWidths": [
+    1408,
+    1440,
+    390,
+    320
+  ],
+  "overflow": false,
+  "detector": "unavailable: cache_directory_failed",
+  "productionChanged": false,
+  "finalBrowserConfirmation": {
+    "inputBoundary": "rgb(123, 137, 134)",
+    "keyboardFocus": "visible solid outline",
+    "passwordToggle": "passed",
+    "requestAndRecoveryNavigation": "passed",
+    "consoleErrors": 0,
+    "screenshots": "test-results/studio-access/revision2/",
+    "mobileCaptureMethod": "320/390 width with tall viewport to show complete content; browser reflow only"
+  }
+}

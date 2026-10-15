@@ -1,0 +1,10 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {parseAccessInput,validAccessPassword,validAccessToken} from '../src/lib/studio-access-validation.ts';
+const request={kind:'access',login:'staff.editor',name:'Test editor',contact:'test@example.invalid'};
+test('public access input trims safe fields and never accepts a role',()=>assert.deepEqual(parseAccessInput({...request,login:' staff.editor ',role:'admin'}),request));
+test('recovery accepts the existing Staff ID contract',()=>assert.equal(parseAccessInput({...request,kind:'recovery',login:'editor@example.invalid'}).kind,'recovery'));
+test('rejects missing and malformed fields',()=>{for(const value of [null,{},[],{...request,kind:'admin'},{...request,login:'a b'},{...request,login:'a'},{...request,contact:'x'},{...request,name:'\n'},{...request,contact:'a\r\nb'}])assert.equal(parseAccessInput(value),null);});
+test('caps public input',()=>{for(const [field,n] of [['login',81],['name',101],['contact',161]])assert.equal(parseAccessInput({...request,[field]:'a'.repeat(n)}),null);});
+test('tokens require the full opaque base64url value',()=>{assert.equal(validAccessToken('a'.repeat(43)),true);for(const value of [undefined,'a'.repeat(42),'a'.repeat(44),'!'.repeat(43)])assert.equal(validAccessToken(value),false);});
+test('new passwords use the existing 16 to 200 character contract',()=>{for(const n of [16,100,200])assert.equal(validAccessPassword('a'.repeat(n)),true);for(const value of ['',15, 'a'.repeat(15),'a'.repeat(201)])assert.equal(validAccessPassword(value),false);});

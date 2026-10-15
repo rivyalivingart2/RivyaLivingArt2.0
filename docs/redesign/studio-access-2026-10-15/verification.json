@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-15",
+  "scope": "local implementation and isolated QA only",
+  "base": "ba3564949089fbe993e21275ad324014cbdd6a3d",
+  "branch": "codex/studio-access-redesign",
+  "tests": {
+    "unit": 350,
+    "runtime": 403,
+    "preflight": 12,
+    "databaseSecurity": 30,
+    "httpAccessFlow": 21
+  },
+  "preservation": {
+    "originalRows": 1657,
+    "protectedScopes": 13,
+    "changedOriginalRows": 0,
+    "addedRows": {
+      "rivya_catalogue": 0,
+      "rivya_content": 0,
+      "rivya_public_media": 0,
+      "rivya_business_settings": 0,
+      "rivya_revisions": 0,
+      "rivya_inquiries": 0,
+      "rivya_studio_orders": 0,
+      "rivya_studio_order_events": 0,
+      "rivya_inquiry_notes": 0,
+      "rivya_references": 0,
+      "rivya_staff": 1,
+      "rivya_privacy_controls": 0,
+      "rivya_erasure_ledger": 0
+    },
+    "scope": "isolated localhost QA only"
+  },
+  "asset": {
+    "file": "public/media/studio-access/resin-flow.webp",
+    "sha256": "b306f4bcdc8e3efab7ca24aef0ad704ecd4a24997d8b983996d29cf0e8ff235f",
+    "existingDerivative": "experiments/redesign-phase2/media/texture-resin-flow-1440.webp",
+    "driveId": "1RNN4QxbJXw9VsRrb9x3EMZ9Rtzkqfmxf",
+    "originalUnchanged": true
+  },
+  "detector": "unavailable: Windows cache_directory_failed",
+  "productionChanged": false,
+  "productionActivationPending": [
+    "database owner migration and runtime grants",
+    "explicitly authorized PR and deployment",
+    "production administrator acceptance"
+  ],
+  "humanOrPhysicalAcceptanceClaimed": false,
+  "staticContrast": {
+    "body": {
+      "ratio": 17.55,
+      "foreground": "#f4f1e9",
+      "background": "#080a0e"
+    },
+    "description": {
+      "ratio": 9.38,
+      "foreground": "#a9b4bc",
+      "background": "#080a0e"
+    },
+    "label": {
+      "ratio": 13.73,
+      "foreground": "#ddd6cb",
+      "background": "#080a0e"
+    },
+    "placeholder": {
+      "ratio": 8.17,
+      "foreground": "#a9b4bc",
+      "background": "#101c26"
+    },
+    "button": {
+      "ratio": 7.96,
+      "foreground": "#f4f1e9",
+      "background": "#164e6b"
+    },
+    "error": {
+      "ratio": 10.44,
+      "foreground": "#fca5a5",
+      "background": "#080a0e"
+    }
+  },
+  "browser": {
+    "desktopWidths": [
+      1440,
+      1408
+    ],
+    "mobileWidths": [
+      390,
+      320
+    ],
+    "adminReviewConfirmation": "disabled until verified",
+    "passwordVisibilityToggle": "passed",
+    "replacementResetLinkSameTab": "passed; fragment removed",
+    "resetCredentialsEntered": false,
+    "savedCaptures": "test-results/studio-access/",
+    "consoleErrorsOnInspectedTab": 0
+  },
+  "focusedLint": "passed; zero errors/warnings",
+  "buildAndTypecheck": "passed"
+}
