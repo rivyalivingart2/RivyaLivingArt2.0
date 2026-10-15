@@ -1,3 +1,15 @@
+# Current checkpoint - homepage hero release authorized
+
+15 October 2026: owner explicitly requested "push to main branch" for the approved homepage hero/navigation redesign. Publish the prepared changes through a detailed PR into main, verify hosting checks and the exact production commit. Local implementation 649ba79 is verified in docs/redesign/home-hero-2026-10-15/REVIEW.md. This authorization supersedes its local-only release hold. Preserve all data/media and do not replay fixtures, migrations or publications. Existing Studio access-table activation remains separate. Record the release result with its PR and deployment receipt.
+
+---
+
+# Current checkpoint - homepage hero and navigation local review
+
+15 October 2026: owner requested redesign of the homepage hero and navigation. Implemented on codex/home-hero-navigation based on released main bf6370832bab8b01b8b3e1549a0b497b287deb35. Read docs/redesign/home-hero-2026-10-15/REVIEW.md and DIRECTION.md. Local preview http://127.0.0.1:4199/. Build/types, focused lint and scoped desktop/mobile navigation checks passed. Logo, colors, copy, destinations, media selections/crops and records preserved. No push, release, migration or publication in this request; await owner design review and release authorization. The earlier Studio source release is complete, while its production access-table activation remains separate. Historical checkpoints below remain unchanged.
+
+---
+
 # Current checkpoint - Studio access source release authorized
 
 15 October 2026: owner requested "push all things into main branch". Publish final revision 6 and all pending Studio access source through a detailed PR into main and verify deployment. Read docs/redesign/studio-access-2026-10-15/RELEASE.md. Source release is authorized; production request-table setup and real administrator acceptance remain distinct outstanding activation work. Do not replay fixtures or publications, create real staff accounts, send links, or claim migration completion without evidence. Earlier local-only checkpoints below are historical.
