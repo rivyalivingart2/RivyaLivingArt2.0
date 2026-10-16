@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "environment": "isolated local QA, production-mode Next build",
+  "branch": "codex/cinematic-sections",
+  "baseCommit": "ffd863928744df0ae2cf985f6504421842a074db",
+  "committed": false,
+  "status": "implemented and scoped verification passed; local owner review ready",
+  "scope": [
+    "homepage composition and optional section variants",
+    "shared cinematic material-film presentation",
+    "shared Studio workspace and overview surfaces"
+  ],
+  "release": {
+    "pushed": false,
+    "pullRequestCreated": false,
+    "deployed": false,
+    "productionMutations": false,
+    "publicationChanged": false,
+    "driveWrites": false
+  },
+  "sourceFingerprint": "b0ffc26a4e55bfe3d548330f28db482dcc875e6678c4142585162c00575e82c1",
+  "sourceFiles": [
+    {
+      "file": "src/components/shop/cinematic-video.module.css",
+      "sha256": "56273c53bee1025b9e97ccdff56cdf1afad309c7a113b88eec199253ae4f230f"
+    },
+    {
+      "file": "src/components/shop/cinematic-video.tsx",
+      "sha256": "4f62aadb2c7990edd01c2c4c5c0b5b16407d917cbe5a162890179ca8f38e74b2"
+    },
+    {
+      "file": "src/components/shop/homepage-document.tsx",
+      "sha256": "d79a8a6151dac3effbba1ef32a5d5be68f05ea16be91e9a7813c0787b8081b22"
+    },
+    {
+      "file": "src/components/shop/homepage-motion-runtime.ts",
+      "sha256": "4a80fd16e17426b4bac0fc30a95adb86edd5e99bb108a2d2c2dfa079bc1e46fa"
+    },
+    {
+      "file": "src/components/shop/homepage-motion.tsx",
+      "sha256": "f9752ffb2abe9f0e6fd70053d29d4fe86d52b53b5a99ec9217ca8350d76ffa33"
+    },
+    {
+      "file": "src/components/shop/immersive-image.module.css",
+      "sha256": "59c55f8d60a36aeed172cf66af4267b28f39979782979bcd1dcb8c651b3cda90"
+    },
+    {
+      "file": "src/components/shop/immersive-image.tsx",
+      "sha256": "c651a2f7b4d163649cf4f2852e1b32ba1cb521c645b5ba37535980ba4356fee1"
+    },
+    {
+      "file": "src/components/shop/material-film.module.css",
+      "sha256": "9651c688ccf3a67fc94020a25315e4686b35d7a4c9bb3d6372c7cf46a4b16141"
+    },
+    {
+      "file": "src/components/shop/material-film.tsx",
+      "sha256": "c96f835211dbe76522277969997b5c13f3a390a53fff3f25b55c3f9330c85a83"
+    },
+    {
+      "file": "src/components/shop/modern-homepage.module.css",
+      "sha256": "5af37705e1df66a33a0988379e9473c4026d69c4d7ba2c5e9b1ec9e6a9b41d7f"
+    },
+    {
+      "file": "src/components/shop/reference-homepage.module.css",
+      "sha256": "6fde9b10fe3bc2a6418bb7fa381aa46a20035a685828a909ebe6ec5995100e8b"
+    },
+    {
+      "file": "src/components/shop/reference-homepage.tsx",
+      "sha256": "80bf4710229e38e5737236c9036458eaa4200db2fbe48542a1baf31f13afaf3c"
+    },
+    {
+      "file": "src/components/shop/section-atmosphere.module.css",
+      "sha256": "40f9047b0d752b802dd58409957b34586bb60c912098c0f5832630d29e5b815f"
+    },
+    {
+      "file": "src/components/shop/shop.module.css",
+      "sha256": "20f84a0f3c30ab4f3dbd570707045fa0faeb8581ca28d34aad8ad5ff83db5a72"
+    },
+    {
+      "file": "src/components/studio/overview.module.css",
+      "sha256": "dab6c00c90ef8f65b925f312eb8df6ecdd6863e58e9165a7fc3b4cdf5ae4fece"
+    },
+    {
+      "file": "src/components/studio/studio-editing.module.css",
+      "sha256": "9614ea7d35bf695485dbf30dae836ccd6cd4a5953846a4f6857a5a03c04aba3e"
+    }
+  ],
+  "checks": {
+    "buildAndTypes": "passed",
+    "lint": {
+      "errors": 0,
+      "existingWarnings": 62
+    },
+    "unit": {
+      "passed": 350,
+      "failed": 0
+    },
+    "runtime": {
+      "passed": 403,
+      "failed": 0
+    },
+    "preflight": {
+      "passed": 12,
+      "failed": 0
+    },
+    "responsive": {
+      "widths": [
+        1920,
+        1440,
+        1200,
+        992,
+        768,
+        512,
+        390,
+        320
+      ],
+      "homepageChecks": 8,
+      "conditionalChecks": 32,
+      "conditionalVariants": [
+        "all",
+        "classic",
+        "editorial",
+        "empty"
+      ],
+      "studioWorkspaceOpenings": 74,
+      "studioWorkspaces": 37,
+      "studioBreakpointChecks": 24,
+      "overflowFailures": 0
+    },
+    "relatedPublicPages": {
+      "routes": [
+        {
+          "brokenLoadedImages": 0,
+          "films": 0,
+          "h1": "Art for the way you live.",
+          "main": true,
+          "overflow": false,
+          "path": "/our-story",
+          "title": "Art for the way you live. | RivyaLivingArt"
+        },
+        {
+          "brokenLoadedImages": 0,
+          "films": 0,
+          "h1": "Texture, depth and everyday life.",
+          "main": true,
+          "overflow": false,
+          "path": "/materials-care",
+          "title": "Texture, depth and everyday life. | RivyaLivingArt"
+        },
+        {
+          "brokenLoadedImages": 0,
+          "films": 0,
+          "h1": "Choose your starting point.",
+          "main": true,
+          "overflow": false,
+          "path": "/commission",
+          "title": "Choose your starting point. | RivyaLivingArt"
+        },
+        {
+          "brokenLoadedImages": 0,
+          "films": 0,
+          "h1": "Presence, in every form.",
+          "main": true,
+          "overflow": false,
+          "path": "/collectible-design",
+          "title": "Presence, in every form. | RivyaLivingArt"
+        }
+      ],
+      "exceptions": [],
+      "truncated": true
+    },
+    "motion": {
+      "observedPlayback": true,
+      "observedParallaxTransform": true,
+      "offscreenPause": true,
+      "explicitPausePersists": true,
+      "reducedMotionFreshVisitNoVideoSources": true,
+      "expandedPlayerEscapeAndFocus": true,
+      "blockedVideoPosterFallback": true,
+      "printPosterAndContrast": true
+    },
+    "accessibility": {
+      "homepage": {
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 143
+          },
+          {
+            "id": "video-caption",
+            "nodes": 2
+          }
+        ],
+        "passes": 29,
+        "violations": []
+      },
+      "studio": {
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 53
+          }
+        ],
+        "passes": 27,
+        "violations": []
+      },
+      "completeWcagCertification": false,
+      "contextualIncompleteResultsPassed": false
+    },
+    "performance": {
+      "lcpMs": 1788,
+      "cls": 0.0000372842,
+      "longTasks": [
+        {
+          "durationMs": 114
+        }
+      ],
+      "videoTransferBytes": 1649574,
+      "belowFoldVideoSources": 0,
+      "conditions": "One cache-disabled, unthrottled localhost browser sample, warm application server",
+      "productionOrFieldGuarantee": false
+    },
+    "preservation": {
+      "environment": "isolated local QA",
+      "readOnly": true,
+      "scopes": 13,
+      "counts": {
+        "rivya_catalogue": 120,
+        "rivya_content": 603,
+        "rivya_public_media": 152,
+        "rivya_business_settings": 1,
+        "rivya_revisions": 738,
+        "rivya_inquiries": 2,
+        "rivya_studio_orders": 8,
+        "rivya_studio_order_events": 16,
+        "rivya_inquiry_notes": 0,
+        "rivya_references": 0,
+        "rivya_staff": 10,
+        "rivya_privacy_controls": 8,
+        "rivya_erasure_ledger": 0
+      },
+      "totalRows": 1658,
+      "allRecordHashesEqual": true,
+      "contentIdentitiesEqual": true,
+      "productionMutations": false
+    },
+    "content": {
+      "title": true,
+      "canonical": true,
+      "beforeLinkCount": 42,
+      "afterLinkCount": 42,
+      "missingLinks": [],
+      "sameSlotOrder": true,
+      "unchangedSections": [
+        "manifesto",
+        "pieces",
+        "selected",
+        "large-format",
+        "story",
+        "collections",
+        "journeys",
+        "bespoke",
+        "process",
+        "steps",
+        "why",
+        "closing",
+        "invitation"
+      ],
+      "changedSections": [
+        "pour",
+        "material",
+        "maker"
+      ]
+    },
+    "gallery": {
+      "url": "http://127.0.0.1:4185/review",
+      "screenshots": 28,
+      "brokenLoadedImages": 0,
+      "horizontalOverflow": false
+    }
+  },
+  "limits": [
+    "Optional unpublished sections use explicitly synthetic, unhydrated rendering specimens; no publication or DB writes.",
+    "Browser responsive emulation does not certify physical devices or native zoom.",
+    "Contextual contrast and silent-video-caption checks remain incomplete; no full accessibility certification.",
+    "One local performance sample does not certify production or real-user performance.",
+    "Existing human/language/rights and historical Studio activation gates are not changed."
+  ],
+  "evidenceDirectory": "test-results/cinematic-sections",
+  "receipts": [
+    {
+      "file": "test-results/cinematic-sections/after-content.json",
+      "sha256": "afb63fa061c33127b4f0bee9a75dd886b1f766eea5e50b8b8a1e051010116006"
+    },
+    {
+      "file": "test-results/cinematic-sections/before-content.json",
+      "sha256": "5ffef740d2b043da84aa24d44055e6d8eb34a77bf402ff995fd4ec1e3a99e225"
+    },
+    {
+      "file": "test-results/cinematic-sections/build.log",
+      "sha256": "976360c52a1fa8a0ffe2a5a42fe7be9402c77334279eedc6f4abb845f92c426c"
+    },
+    {
+      "file": "test-results/cinematic-sections/conditional-responsive-matrix.json",
+      "sha256": "c19e46c41a778152d38f475d3ab46c4bca7be02eb73d496edcb8f7a5d8f25163"
+    },
+    {
+      "file": "test-results/cinematic-sections/content-comparison.json",
+      "sha256": "d6837195bd31207265f059ee0471e9ecaeef71be9316042e61dbec74c488af8b"
+    },
+    {
+      "file": "test-results/cinematic-sections/lint.log",
+      "sha256": "4cc7fcd7c0da7e14eaae744879e33350a151ad06ee93e681ad53483c49b2e1d9"
+    },
+    {
+      "file": "test-results/cinematic-sections/local-performance-sample.json",
+      "sha256": "b8d53185aa394df59b54e7c42171ec82eba2b9eda34ea05d792406034ea0b14e"
+    },
+    {
+      "file": "test-results/cinematic-sections/parallax-and-loading.json",
+      "sha256": "9174d409e2c005b61cc8b025e1b7a6513960a6c0829edf73529903edb67cd1c5"
+    },
+    {
+      "file": "test-results/cinematic-sections/preflight.log",
+      "sha256": "b2707af6ca9dfc5d71dceec1aa76c7d2fef0a017c1e33574ac8821996867c10b"
+    },
+    {
+      "file": "test-results/cinematic-sections/print-smoke.json",
+      "sha256": "c402f0df6e0f573587a95e559de8131facf41089e9c49e198554b836ba72928c"
+    },
+    {
+      "file": "test-results/cinematic-sections/public-axe.json",
+      "sha256": "680a024afc5fc3d8eab07ea0fc8072322c85d981d56fddf3161800924937815f"
+    },
+    {
+      "file": "test-results/cinematic-sections/public-route-smoke.json",
+      "sha256": "1f0f0774379710f509db7cd1b9d013d6d2d16204fa7edd747540737282448323"
+    },
+    {
+      "file": "test-results/cinematic-sections/reduced-motion.json",
+      "sha256": "834209d97d39c6e3c8b692cee795b3a1a6fdae2dccfecd821febf47aa0e91c80"
+    },
+    {
+      "file": "test-results/cinematic-sections/reference-provenance.json",
+      "sha256": "a393fc4d54feacb57cad4ac56f40c91bca620a0101aef678ed7f05275d980676"
+    },
+    {
+      "file": "test-results/cinematic-sections/responsive-matrix.json",
+      "sha256": "e7ef101bed0b8436430c6f8708a71b99b4bd49442d2ddda20785d018ca873421"
+    },
+    {
+      "file": "test-results/cinematic-sections/runtime-tests.log",
+      "sha256": "ab9c3e868f67668417cbf8c9c13021020b1aa0b729910905727e70bc5fb29e66"
+    },
+    {
+      "file": "test-results/cinematic-sections/section-screenshot-index.json",
+      "sha256": "cc78c8d9044d5f9c574141e69af34787d7761895c214d40fd21c9bf0b0a4db17"
+    },
+    {
+      "file": "test-results/cinematic-sections/studio-axe.json",
+      "sha256": "67bb279312b1429f133521d06d9999b565a34cbef12ecd633662ae5147342d42"
+    },
+    {
+      "file": "test-results/cinematic-sections/studio-responsive-matrix.json",
+      "sha256": "3ab35e67ef7aa6bb854dcc0e5f55be645a1826d5f68bcda7936d9a71760cee8e"
+    },
+    {
+      "file": "test-results/cinematic-sections/studio-workspace-checks.json",
+      "sha256": "9513863d9c5f96966e924c1c53990ff5b8d15653ce3a0363a680731453b88901"
+    },
+    {
+      "file": "test-results/cinematic-sections/unit-tests.log",
+      "sha256": "7110747693895d9f26481e67a4e70b2756fedf66bf26da769c125f76acf4b9b9"
+    },
+    {
+      "file": "test-results/cinematic-sections/video-controls.json",
+      "sha256": "8335026b6f4d60558cc10bd84a95ebc49936fa92ef792437ff702997fda7e14e"
+    },
+    {
+      "file": "test-results/cinematic-sections/video-fallback.json",
+      "sha256": "b16bacff31739bf84210c993fbd403c66aa9b09e152633dcf5c56f4f3b9f1c76"
+    }
+  ]
+}

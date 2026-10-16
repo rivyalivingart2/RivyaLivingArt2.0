@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-16T07:21:47.172Z",
+  "scope": "Source CSS syntax parsing only; browser and production build remain parent verification.",
+  "files": [
+    {
+      "path": "src/components/studio/studio-editing.module.css",
+      "rules": 145,
+      "sha256": "c1da1c65124ce8d25f81637ca224fde234db572a42ed57a97c4c82e9dab33d78",
+      "parsed": true
+    },
+    {
+      "path": "src/components/studio/studio-operations.module.css",
+      "rules": 85,
+      "sha256": "e5b09f4a8c1e051640e767ac40d3786fcab338d1f3c19c2739aaff61ec96afd7",
+      "parsed": true
+    },
+    {
+      "path": "src/components/studio/overview.module.css",
+      "rules": 111,
+      "sha256": "cb4a354dd92eaee43cf632970a92b0b2fc31468d1687ed8e86459bffb70ce496",
+      "parsed": true
+    },
+    {
+      "path": "src/components/studio/studio-access.module.css",
+      "rules": 123,
+      "sha256": "4e21c73e18f60a73729da1717d24387b6099ee2b1e09a4492f2ddf2da10ea5c0",
+      "parsed": true
+    },
+    {
+      "path": "src/components/studio/homepage-composition.module.css",
+      "rules": 24,
+      "sha256": "560f3ae007350bc01cd4f21cf999dee8d16f5e3c77ee27468e7eaff7bfd9a9fe",
+      "parsed": true
+    },
+    {
+      "path": "src/components/studio/workspace.module.css",
+      "rules": 630,
+      "sha256": "01745017c5c0b9f3cf4a0cbdf8e035b19042bd771067e8065132d7713a1e8473",
+      "parsed": true
+    },
+    {
+      "path": "src/components/studio/workshop-template-preview.module.css",
+      "rules": 36,
+      "sha256": "dd5c964f493b4b8ba49162d6e49196e94b9934869e969c830d42703ae06a39bf",
+      "parsed": true
+    },
+    {
+      "path": "src/components/studio-private.css",
+      "rules": 77,
+      "sha256": "cc7f7e8d50cea646086fc098c46bcbe66c1630a5405bb131b11f3af18db5db00",
+      "parsed": true
+    },
+    {
+      "path": "src/app/studio/preview/preview.module.css",
+      "rules": 33,
+      "sha256": "3bd4075df728dcdd7a57ebcd53a1637f4b28d0cdced71698f43e011cb4d83bd7",
+      "parsed": true
+    }
+  ]
+}

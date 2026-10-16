@@ -1,0 +1,11 @@
+/* One continuous material palette; typography and business colours remain unchanged. */
+:root{--cinema-canvas:#080a0e;--cinema-navy:#08283a;--cinema-sapphire:#164e6b;--cinema-gold:#b89b63;--cinema-ivory:#f4f1e9;--cinema-muted:#c4ccd1;--cinema-duration-fast:180ms;--cinema-duration-reveal:750ms;--cinema-ease:cubic-bezier(.22,1,.36,1);--cinema-edge:linear-gradient(180deg,#080a0e,transparent 22%,transparent 75%,#080a0e);--cinema-primary:radial-gradient(ellipse at 72% 45%,#164e6b45,transparent 60%),linear-gradient(180deg,#080a0e,#08283a 50%,#080a0e);--cinema-ambient:radial-gradient(ellipse at 12% 52%,#164e6b28,transparent 62%),radial-gradient(ellipse at 90% 35%,#b89b630a,transparent 55%);--cinema-media-overlay:linear-gradient(90deg,#080a0ed9,transparent 75%),var(--cinema-edge);--cinema-hover:linear-gradient(120deg,#164e6b28,#b89b6310,transparent)}
+[data-atmosphere]{--section-edge:var(--cinema-canvas);scroll-margin-top:var(--anchor-offset,120px)}
+[data-lighting-card]{position:relative;isolation:isolate}
+[data-lighting-card]::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:3;border:1px solid transparent;background:radial-gradient(220px circle at var(--card-light-x,50%) var(--card-light-y,50%),#e6c9879c,transparent 75%) border-box;padding:1px;mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude;opacity:0;transition:opacity var(--cinema-duration-fast) ease}
+[data-lighting-card][data-lighting-active=true]::after,[data-lighting-card]:focus-within::after{opacity:1}
+[data-lighting-card]:focus-within{outline-color:#e6c987}
+[data-visual-effects=paused] [data-lighting-card]::after{transition:none;opacity:0}
+[data-visual-effects=paused] [data-motion-paused]::before,[data-visual-effects=paused] [data-motion-paused]::after{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce),(hover:none),(pointer:coarse){[data-lighting-card]::after{display:none}}
+@media(prefers-contrast:more),(forced-colors:active),print{[data-lighting-card]::after{display:none}}

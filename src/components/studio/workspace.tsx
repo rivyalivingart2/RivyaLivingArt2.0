@@ -5,6 +5,7 @@ import {usePathname} from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import {Dialog} from '@/components/shop/dialog';
+import {CinematicCanvas,VisualEffectsControl} from '../design-foundation/cinematic-canvas';
 import {studioDestinations} from '@/lib/studio-work-queue';
 import {
   LayoutDashboard,
@@ -126,7 +127,7 @@ export function Workspace({initial,initialCollapsed=false}:{initial?:{session:Wo
  useEffect(()=>{if(pendingNavigationFocus!==path)return;const main=document.getElementById('main-content');if(!main)return;const focus=()=>{const heading=main.querySelector<HTMLElement>('h1');if(!heading)return false;heading.tabIndex=-1;heading.focus();pendingNavigationFocus=null;return true;};if(focus())return;const observer=new MutationObserver(()=>{if(focus())observer.disconnect();});observer.observe(main,{subtree:true,childList:true});return()=>observer.disconnect();},[path]);
 
  return (
-  <div className={s.workspace+' '+design.shell} data-module={view} data-collapsed={collapsed} onClickCapture={e=>{const a=(e.target as HTMLElement).closest('a');if(a&&a.target!=='_blank'&&a.getAttribute('href')?.startsWith('/studio')&&document.querySelector('[data-unsaved="true"]')&&!window.confirm('Leave this page and discard unsaved edits?')){e.preventDefault();e.stopPropagation();}}}>
+  <CinematicCanvas mode="studio"><div data-atmosphere="studio" className={s.workspace+' '+design.shell} data-module={view} data-collapsed={collapsed} onClickCapture={e=>{const a=(e.target as HTMLElement).closest('a');if(a&&a.target!=='_blank'&&a.getAttribute('href')?.startsWith('/studio')&&document.querySelector('[data-unsaved="true"]')&&!window.confirm('Leave this page and discard unsaved edits?')){e.preventDefault();e.stopPropagation();}}}>
     <header data-studio-part="top" className={s.top}>
       <button type="button" className={s.mobileNavToggle} aria-label="Open Studio navigation" aria-haspopup="dialog" aria-expanded={mobileNav} onClick={()=>setMobileNav(true)}><Menu size={20} aria-hidden="true"/><span>Menu</span></button>
       <div data-studio-part="brandGroup" className={s.brandGroup}>
@@ -166,13 +167,13 @@ export function Workspace({initial,initialCollapsed=false}:{initial?:{session:Wo
         <NavigationLinks admin={admin} view={view}/>
       </nav>
       <main id="main-content" tabIndex={-1} className={s.workspaceMain+' '+design.content+(view&&!contentWorkspaces.has(view)?' '+operationsDesign.operations:'')} data-studio-design={view&&contentWorkspaces.has(view)?'content':'operations'}>
-        <nav data-studio-part="workspaceCrumb" className={s.workspaceCrumb} aria-label="Workspace breadcrumb"><Link href="/studio">Studio</Link><span aria-hidden> / </span><span aria-current="page">{activeModule?.label||'Unavailable page'}</span></nav>
+        <nav data-studio-part="workspaceCrumb" className={s.workspaceCrumb} aria-label="Workspace breadcrumb"><Link href="/studio">Studio</Link><span aria-hidden> / </span><span aria-current="page">{activeModule?.label||'Unavailable page'}</span><VisualEffectsControl/></nav>
         {error?<div data-studio-part="panel" className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p data-studio-part="status" className={s.status} role="status">Opening your workspace…</p>:!activeModule?<section data-studio-part="empty" className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>:activeModule.adminOnly&&!admin?<p data-studio-part="empty" className={s.empty}>Administrator access is required.</p>:<div key={activeModule.key}><ModuleView moduleKey={activeModule.key} admin={admin} staff={staff} load={load} staffId={identity.staffId}/></div>}
 
       </main>
     </div>
     <Dialog open={mobileNav} title="Studio navigation" closeLabel="Close navigation" onClose={()=>setMobileNav(false)}><nav className={s.fullNavigation} aria-label="Mobile Studio pages"><NavigationLinks admin={admin} view={view} onNavigate={navigate}/></nav></Dialog>
     <Dialog open={palette} title="Find a Studio page" onClose={()=>setPalette(false)}><label className={s.paletteSearch}>Page name<input type="search" data-dialog-autofocus onKeyDown={e=>{if(e.key==='Escape'){e.preventDefault();setPalette(false);}}} value={navigationQuery} onChange={e=>setNavigationQuery(e.target.value)} placeholder="Inquiries, pages, images…" maxLength={80}/></label><p role="status">{destinations.length} permitted {destinations.length===1?'page':'pages'}</p><nav className={s.commandResults} aria-label="Matching Studio pages">{destinations.map(item=><Link key={item.key} prefetch={false} href={item.href} onClick={e=>{if(e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey)navigate(item.href);}}><span>{item.label}</span><small>{item.group}</small></Link>)}</nav>{!destinations.length&&<p>No matching page. Try a different name.</p>}</Dialog>
-  </div>
+  </div></CinematicCanvas>
  );
 }

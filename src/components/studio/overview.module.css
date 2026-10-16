@@ -62,7 +62,7 @@
 .metric small svg{display:inline-block;vertical-align:middle;margin-left:4px}
 .metric:hover,.workspaceCard:hover{background:#08283a}
 .activityGrid{grid-template-columns:minmax(0,1.7fr) minmax(270px,1fr);gap:28px}
-.panel{border-radius:6px;padding:24px;background:#08283a}
+.panel{border-radius:6px;padding:24px;background:var(--studio-surface-gradient,#08283a)}
 .table small{font:12px/1.5 var(--font-body)}
 .table time{white-space:normal;font:12px/1.6 var(--font-body)}
 .track{height:3px;background:#080a0e;border-radius:0}
@@ -78,3 +78,42 @@
 .kicker{font:13px/1.5 var(--font-body);letter-spacing:0;text-transform:none;color:#a9b4bc}
 @container studio-workspace (max-width:950px){.activityGrid{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:700px){.metricGrid,.workspaceGrid{grid-template-columns:minmax(0,1fr)}.metric,.metric[data-attention=true]{padding:18px 0;min-height:100px}.metric strong{font-size:26px}.panel{padding:18px}.workspaceCard{padding:18px 0}.activityGrid{gap:20px}}
+
+/* Overview is a useful workbench, with the same quiet material light as the
+   public atelier. No viewport height is imposed on queues or activity. */
+.dashboard {
+ --overview-surface:var(--studio-navy,var(--cinema-navy,#08283a));
+ --overview-accent:#ddd6cb;
+}
+.dashboard.dashboard.dashboard.dashboard h1 {
+ font:400 clamp(34px,3.4vw,48px)/1.12 var(--font-display);
+ letter-spacing:-.02em;
+}
+.metricGrid {
+ background:linear-gradient(120deg,#164e6b22,#164e6b00 72%);
+}
+.metric[data-attention=true] {
+ box-shadow:inset 2px 0 var(--studio-gold,var(--cinema-gold,#b89b63));
+}
+.metric:is(:hover,:focus-visible) {
+ background:var(--studio-navy,var(--cinema-navy,#08283a));
+}
+.metricHeader svg { color:#b89b63; }
+.panel { box-shadow:inset 0 1px #ffffff06; }
+.panelHeader { padding-bottom:12px; border-bottom:1px solid var(--overview-line); }
+.panelHeader h2 { margin:0; }
+.workspaceCard {
+ padding-inline:12px;
+ border-radius:4px;
+}
+.workspaceCard:is(:hover,:focus-visible) {
+ background:linear-gradient(100deg,#164e6b40,#164e6b00);
+}
+.workspaceCard:is(:hover,:focus-visible) .workspaceIcon { color:#ddd6cb; }
+.workspaceCard:is(:hover,:focus-visible) .workspaceArrow { color:#b89b63; }
+.track span { background:var(--studio-gold,var(--cinema-gold,#b89b63)); }
+@media(max-width:700px) {
+ .metric,.metric[data-attention=true] { padding-inline:14px; }
+ .workspaceCard { padding-inline:12px; }
+ .dashboard.dashboard.dashboard.dashboard h1 { font-size:36px; }
+}

@@ -4,3 +4,15 @@
 
 /* Phase 5 saved-preview controls inherit the approved Studio palette. */
 .banner,.message{background:#08283a;color:#f4f1e9;border-color:#43515a}.banner strong{font-weight:500}.banner p{color:#ddd6cb;max-width:70ch}.banner a,.message a{border-color:#78828c;border-radius:4px;font-size:14px}.banner a[aria-current]{background:#f4f1e9;color:#18202a}.banner a:focus-visible,.message a:focus-visible{outline-color:#b89b63}.message h1{font:500 28px/1.3 var(--font-body)}.mobile{background:#080a0e;padding:32px 12px}.mobile iframe{border-color:#78828c}@media(max-width:640px){.banner{gap:16px}.banner nav{gap:10px}}
+
+/* Only the preview controls use the Studio treatment. The embedded public
+   document remains an unmodified representation of its own design. */
+.banner,.message {
+ background:linear-gradient(115deg,var(--cinema-navy,#08283a),var(--cinema-canvas,#080a0e));
+}
+.banner nav { align-items:center; }
+.banner a,.message a { background:#080a0e40; }
+.banner a[aria-current] { background:#f4f1e9; }
+.mobile { background:var(--cinema-canvas,#080a0e); }
+.mobile iframe { box-shadow:0 16px 48px #0003; }
+@media print { .banner { display:none; } .mobile { background:white; padding:0; } .mobile iframe { box-shadow:none; } }

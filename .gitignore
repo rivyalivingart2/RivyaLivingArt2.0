@@ -41,3 +41,9 @@ OLDWEBSITE/
 
 # Local Studio access design review captures.
 /.impeccable/review/
+
+# Generated cinematic section layout specimens.
+/output/cinematic-sections/
+
+# Generated website-wide cinematic review evidence.
+/output/sitewide-cinematic/

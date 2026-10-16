@@ -1,3 +1,29 @@
+# Current checkpoint - website-wide cinematic release authorized
+
+16 October 2026: owner explicitly requested push of all pending changes into main. Release both cinematic redesign stages through a detailed PR, exact-head hosting checks and normal merge, followed by live public/Studio verification. Read docs/redesign/sitewide-cinematic-2026-10-16/RELEASE.md for scope, evidence and boundaries. The previous local-only holds below are historical and superseded for this release. Do not replay fixtures, migrate tables, publish records or alter business data. Existing access-table activation and native/device/field certification remain separate. All previous checkpoint bytes are preserved below.
+
+---
+
+# Current checkpoint - website-wide cinematic implementation ready for local review
+
+16 October 2026: owner approved direct implementation of the complete website-wide CRAFT master prompt. Implemented locally on codex/cinematic-sections, based on released main ffd863928744df0ae2cf985f6504421842a074db. Read docs/redesign/sitewide-cinematic-2026-10-16/FINAL-REPORT.md, FINAL-SECTION-AUDIT.md, verification.json, preservation.json and CONTINUE.md. Application http://127.0.0.1:4199/; visual review http://127.0.0.1:4186/review. Includes the preceding homepage cinematic work.
+
+Shared cursor/ambient gradients, safe viewport storytelling, public inner-page media and restrained Studio surfaces cover the actual templates and 37 workspaces. Build/types, zero-error lint (62 existing warnings), 350 unit, 403 runtime and 12 preflight checks pass. 562 layout observations, 12 interaction checks and 9 automated accessibility scans recorded; contextual gradient/media contrast and native/device/field acceptance are not certified. All 1,658 protected local rows and sampled content/links/SEO remain unchanged.
+
+No push, PR, deployment, publication, production table change or Drive write. Await owner local visual review and a new explicit release request. Do not replay fixtures/imports or historical publications. Existing Studio access-request production-table activation remains separate. Earlier checkpoints below are historical and their original bytes are preserved.
+
+---
+
+# Current checkpoint - cinematic sections local implementation complete
+
+16 October 2026: owner authorized the fullscreen, seamless-gradient and parallax-media redesign. Implemented locally on codex/cinematic-sections based on released main ffd863928744df0ae2cf985f6504421842a074db. Read docs/redesign/cinematic-sections-2026-10-16/FINAL-REPORT.md, verification.json, preservation.json and CONTINUE.md. Working preview http://127.0.0.1:4199/; before/after gallery http://127.0.0.1:4185/review.
+
+Build/types, zero-error lint (62 existing warnings), 350 unit, 403 runtime and 12 preflight tests pass. Homepage at eight widths, 32 optional-layout checks, 74 Studio workspace openings and 24 Studio breakpoint checks pass. Video/parallax, pause, reduced motion, fallback, expanded-player keyboard and print behavior verified. All 1,658 existing local rows and 42 homepage destinations preserved. Contextual accessibility checks remain incomplete; no new native/physical/human/field certification.
+
+Local owner review is ready; no push, PR, release, publication, migration or Drive write in this request. Keep work local until a new explicit release request. Historical Studio access-table activation remains separate. Do not replay fixtures, imports, lifecycle tests or earlier publications/releases. Earlier checkpoints below are historical and their bytes are preserved.
+
+---
+
 # Current checkpoint - homepage hero release authorized
 
 15 October 2026: owner explicitly requested "push to main branch" for the approved homepage hero/navigation redesign. Publish the prepared changes through a detailed PR into main, verify hosting checks and the exact production commit. Local implementation 649ba79 is verified in docs/redesign/home-hero-2026-10-15/REVIEW.md. This authorization supersedes its local-only release hold. Preserve all data/media and do not replay fixtures, migrations or publications. Existing Studio access-table activation remains separate. Record the release result with its PR and deployment receipt.

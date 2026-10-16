@@ -1,0 +1,590 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-16T08:28:46.745Z",
+  "branch": "codex/cinematic-sections",
+  "baseHead": "ffd863928744df0ae2cf985f6504421842a074db",
+  "scope": "Local implementation and representative template/state evidence, not production or exhaustive dynamic-record acceptance",
+  "build": {
+    "passed": true,
+    "typescriptPassed": true,
+    "file": "build.txt"
+  },
+  "lint": {
+    "errors": 0,
+    "existingWarnings": 62,
+    "full": "lint.txt",
+    "finalFocused": "final-focused-lint.txt"
+  },
+  "suites": [
+    {
+      "file": "unit.txt",
+      "passed": 350,
+      "failed": 0
+    },
+    {
+      "file": "final-runtime.txt",
+      "passed": 403,
+      "failed": 0
+    },
+    {
+      "file": "preflight.txt",
+      "passed": 12,
+      "failed": 0
+    }
+  ],
+  "layoutObservations": 562,
+  "layouts": [
+    {
+      "file": "public-breakpoints.json",
+      "observations": 240,
+      "issues": 0,
+      "widths": [
+        1920,
+        1440,
+        1200,
+        992,
+        768,
+        512,
+        390,
+        320
+      ],
+      "staticOnly": false
+    },
+    {
+      "file": "studio-workspaces.json",
+      "observations": 74,
+      "issues": 0,
+      "widths": [
+        1440,
+        390
+      ],
+      "staticOnly": false
+    },
+    {
+      "file": "studio-breakpoints.json",
+      "observations": 24,
+      "issues": 0,
+      "widths": [
+        1920,
+        1440,
+        1200,
+        992,
+        768,
+        512,
+        390,
+        320
+      ],
+      "staticOnly": false
+    },
+    {
+      "file": "saved-previews.json",
+      "observations": 24,
+      "issues": 0,
+      "widths": [
+        1920,
+        1440,
+        1200,
+        992,
+        768,
+        512,
+        390,
+        320
+      ],
+      "staticOnly": false
+    },
+    {
+      "file": "access-breakpoints.json",
+      "observations": 24,
+      "issues": 0,
+      "widths": [
+        1920,
+        1440,
+        1200,
+        992,
+        768,
+        512,
+        390,
+        320
+      ],
+      "staticOnly": false
+    },
+    {
+      "file": "specimen-breakpoints.json",
+      "observations": 176,
+      "issues": 0,
+      "widths": [
+        1920,
+        1440,
+        1200,
+        992,
+        768,
+        512,
+        390,
+        320
+      ],
+      "staticOnly": true
+    }
+  ],
+  "interactionChecks": 12,
+  "allInteractionsPassed": true,
+  "motionReceipt": "motion-checks.json",
+  "accessibility": {
+    "views": 9,
+    "automaticViolations": 0,
+    "contextualChecksIncomplete": true,
+    "details": [
+      {
+        "path": "/",
+        "passes": 29,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 173
+          },
+          {
+            "id": "video-caption",
+            "nodes": 2
+          }
+        ]
+      },
+      {
+        "path": "/our-story",
+        "passes": 29,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 71
+          }
+        ]
+      },
+      {
+        "path": "/pieces/river-channel",
+        "passes": 31,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 76
+          }
+        ]
+      },
+      {
+        "path": "/commission/customize",
+        "passes": 29,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 68
+          }
+        ]
+      },
+      {
+        "path": "/faq",
+        "passes": 30,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 73
+          }
+        ]
+      },
+      {
+        "path": "/privacy",
+        "passes": 29,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 72
+          }
+        ]
+      },
+      {
+        "path": "/studio",
+        "passes": 30,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 165
+          }
+        ]
+      },
+      {
+        "path": "/studio/products",
+        "passes": 29,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 59
+          }
+        ]
+      },
+      {
+        "path": "/studio/login",
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 17
+          }
+        ]
+      }
+    ]
+  },
+  "localPerformance": {
+    "scope": "Local Chromium three cache-disabled route samples; buffered observers for LCP/CLS/longtasks, no network throttle or field claims",
+    "samples": [
+      {
+        "cls": 0.00006392059095106186,
+        "lcp": 1348,
+        "lightingPlanes": 1,
+        "longTasks": [],
+        "nav": [
+          {
+            "dom": 360.800000011921,
+            "ttfb": 148.19999998807907
+          }
+        ],
+        "path": "/",
+        "videos": [
+          {
+            "paused": false,
+            "sources": 2
+          },
+          {
+            "paused": true,
+            "sources": 0
+          }
+        ],
+        "viewport": [
+          1440,
+          1000
+        ],
+        "webglCanvases": 0
+      },
+      {
+        "cls": 0,
+        "lcp": 612,
+        "lightingPlanes": 1,
+        "longTasks": [],
+        "nav": [
+          {
+            "dom": 307.59999999403954,
+            "ttfb": 71.19999998807907
+          }
+        ],
+        "path": "/our-story",
+        "videos": [],
+        "viewport": [
+          1440,
+          1000
+        ],
+        "webglCanvases": 0
+      },
+      {
+        "cls": 0,
+        "lcp": 384,
+        "lightingPlanes": 1,
+        "longTasks": [
+          51
+        ],
+        "nav": [
+          {
+            "dom": 299,
+            "ttfb": 182.39999997615817
+          }
+        ],
+        "path": "/pieces/river-channel",
+        "videos": [],
+        "viewport": [
+          1440,
+          1000
+        ],
+        "webglCanvases": 0
+      }
+    ]
+  },
+  "solidTokenContrast": [
+    {
+      "foreground": "#f4f1e9",
+      "background": "#080a0e",
+      "ratio": 17.55
+    },
+    {
+      "foreground": "#c4ccd1",
+      "background": "#08283a",
+      "ratio": 9.39
+    },
+    {
+      "foreground": "#f4f1e9",
+      "background": "#164e6b",
+      "ratio": 7.96
+    },
+    {
+      "foreground": "#b89b63",
+      "background": "#080a0e",
+      "ratio": 7.46
+    }
+  ],
+  "preservation": {
+    "protectedTables": 13,
+    "protectedRows": 1658,
+    "allProtectedRowsEqual": true,
+    "publicPaths": 17,
+    "publicNormalizedTextEqual": true,
+    "publicOrderedLinksEqual": true,
+    "publicTitlesH1CanonicalsEqual": true,
+    "whitespaceOnlyPaths": [
+      "/our-story",
+      "/process"
+    ],
+    "allLocalFilmAssetsMatch": true,
+    "allProtectedSourceGroupsUnchanged": true
+  },
+  "sourceFiles": [
+    {
+      "path": "src/app/globals.css",
+      "bytes": 15191,
+      "sha256": "130e2ee4bf1a6de49d35faba9bcd60b377399917e2c7e8f7ee4a7dcfbe598900"
+    },
+    {
+      "path": "src/app/studio/preview/preview.module.css",
+      "bytes": 2462,
+      "sha256": "3bd4075df728dcdd7a57ebcd53a1637f4b28d0cdced71698f43e011cb4d83bd7"
+    },
+    {
+      "path": "src/components/design-foundation/cinematic-canvas.module.css",
+      "bytes": 2778,
+      "sha256": "3c8f5c2581a46d3636e8b7231f832cc2ee263550eec76c4d9dd66411e6249f3e"
+    },
+    {
+      "path": "src/components/design-foundation/cinematic-canvas.tsx",
+      "bytes": 7095,
+      "sha256": "2ad70738faa2e513eb09ece834b3bfaad7c80e84ce5d6a9c3dfec5dd37f66cc2"
+    },
+    {
+      "path": "src/components/design-foundation/cinematic-motion-runtime.ts",
+      "bytes": 1197,
+      "sha256": "90317748f618a3ffb11e55b374e6c43eb777e42eb2ce6f1b9e7e1c9a7dee2c6e"
+    },
+    {
+      "path": "src/components/design-foundation/cinematic-preference.ts",
+      "bytes": 1080,
+      "sha256": "bee70631c2f4b6f117ea35b85af15515465aecbffed6b31d9456e6add27bee33"
+    },
+    {
+      "path": "src/components/design-foundation/cinematic-tokens.css",
+      "bytes": 2049,
+      "sha256": "aa69aec796b8d931b7d37984a9e80679a03103ad7523aacb387e3d4805b01906"
+    },
+    {
+      "path": "src/components/shop/chapter-media.tsx",
+      "bytes": 1566,
+      "sha256": "ba34a9a7241bd40f357b669297b20dbb42b63ff24928733b0fe0026356865bfc"
+    },
+    {
+      "path": "src/components/shop/cinematic-video.module.css",
+      "bytes": 2062,
+      "sha256": "56273c53bee1025b9e97ccdff56cdf1afad309c7a113b88eec199253ae4f230f"
+    },
+    {
+      "path": "src/components/shop/cinematic-video.tsx",
+      "bytes": 6626,
+      "sha256": "47fe4dbc6b9021bf2f6047c7cddb4e67fa1a8be2caa312f626bf7ad7efefc012"
+    },
+    {
+      "path": "src/components/shop/collection-document.tsx",
+      "bytes": 5116,
+      "sha256": "3f57967133e93abaeaaaa6c4cbf3792531a9a4eaeea24c8bb27b4d682d6c5fef"
+    },
+    {
+      "path": "src/components/shop/editorial-chapter.tsx",
+      "bytes": 1524,
+      "sha256": "555090d1334f75084f94cd71d1a60e9052e1b5a694f1bc291bf647564fd83e23"
+    },
+    {
+      "path": "src/components/shop/editorial-entry-card.tsx",
+      "bytes": 1016,
+      "sha256": "2f0010ec393c90fc261c8526a55070570c09994987851402283a895d3f160b55"
+    },
+    {
+      "path": "src/components/shop/editorial-reading.module.css",
+      "bytes": 10672,
+      "sha256": "60de3f84305bac4a824e54191a14f50bc221c433c0be74c212ebb8c1b0078e7d"
+    },
+    {
+      "path": "src/components/shop/editorial.tsx",
+      "bytes": 18690,
+      "sha256": "3fcd82009e62685de96e72d287dfa9d64a293edacc0849d5a06cb90d739ea511"
+    },
+    {
+      "path": "src/components/shop/homepage-document.tsx",
+      "bytes": 10759,
+      "sha256": "d79a8a6151dac3effbba1ef32a5d5be68f05ea16be91e9a7813c0787b8081b22"
+    },
+    {
+      "path": "src/components/shop/homepage-motion-runtime.ts",
+      "bytes": 1846,
+      "sha256": "4a80fd16e17426b4bac0fc30a95adb86edd5e99bb108a2d2c2dfa079bc1e46fa"
+    },
+    {
+      "path": "src/components/shop/homepage-motion.tsx",
+      "bytes": 1780,
+      "sha256": "a6144439e749a78bcc9cc4e32a88b8f80732867723ffaa180b79e8541d361152"
+    },
+    {
+      "path": "src/components/shop/immersive-image.module.css",
+      "bytes": 1175,
+      "sha256": "68947b136300bbf7b717895f8dfeecc1d6e0ea8ae504e0a2569505fa3e4197bd"
+    },
+    {
+      "path": "src/components/shop/immersive-image.tsx",
+      "bytes": 741,
+      "sha256": "c651a2f7b4d163649cf4f2852e1b32ba1cb521c645b5ba37535980ba4356fee1"
+    },
+    {
+      "path": "src/components/shop/landing-document.tsx",
+      "bytes": 4372,
+      "sha256": "6778a8d364d7315f0a6138a81809fa283578d61bef57c1704f1f8511bb10b939"
+    },
+    {
+      "path": "src/components/shop/material-film.module.css",
+      "bytes": 2190,
+      "sha256": "9651c688ccf3a67fc94020a25315e4686b35d7a4c9bb3d6372c7cf46a4b16141"
+    },
+    {
+      "path": "src/components/shop/material-film.tsx",
+      "bytes": 1373,
+      "sha256": "acbe73e64a7506e61f9011d72224e6a6891e3d8dc429c48f429cae0691b1b96c"
+    },
+    {
+      "path": "src/components/shop/modern-homepage.module.css",
+      "bytes": 13607,
+      "sha256": "e29b29c8887febbe7a841d58cb2d29f2d6716f9d0eb540e6451e27c517544ada"
+    },
+    {
+      "path": "src/components/shop/product-card.tsx",
+      "bytes": 1889,
+      "sha256": "90fd8910257f3f71cfac6b200aaccfaffd84543539a387bff7e1e3281860bb8d"
+    },
+    {
+      "path": "src/components/shop/project-story.tsx",
+      "bytes": 2204,
+      "sha256": "e15bcd5ba3bf314c428629d5b3607f8a59998e5d73b7c71f9e37a19f36d09b0b"
+    },
+    {
+      "path": "src/components/shop/public-pages.module.css",
+      "bytes": 25923,
+      "sha256": "5c797aa6793f5ae0f5c5381386186b76cb26ef32c6c5ab75ef3b9028fe8ad722"
+    },
+    {
+      "path": "src/components/shop/reference-chapters.tsx",
+      "bytes": 4370,
+      "sha256": "e2f45e4f94382d5129efc6c2b74414118acccbcf588af6b8a4a4601b978b8891"
+    },
+    {
+      "path": "src/components/shop/reference-homepage.module.css",
+      "bytes": 10378,
+      "sha256": "c481c8f6a088377bd6c96d20fc79cc30edd39487b955c37814c8b84844f85b02"
+    },
+    {
+      "path": "src/components/shop/reference-homepage.tsx",
+      "bytes": 10787,
+      "sha256": "80bf4710229e38e5737236c9036458eaa4200db2fbe48542a1baf31f13afaf3c"
+    },
+    {
+      "path": "src/components/shop/reference-pages.module.css",
+      "bytes": 8420,
+      "sha256": "c5988e3a840d89fa3738ca995a90b90513ac075afb9412f895addd85970f065d"
+    },
+    {
+      "path": "src/components/shop/section-atmosphere.module.css",
+      "bytes": 563,
+      "sha256": "21bcbfad670d25a4c02ef1667b3894b1d55bc99a3f2636ce56382eabf2e892ec"
+    },
+    {
+      "path": "src/components/shop/shop-frame.tsx",
+      "bytes": 3512,
+      "sha256": "2d76f2531dbf62463eb38adaf09973dedf83c17ec50f862b11ab64b10ab20430"
+    },
+    {
+      "path": "src/components/shop/shop-site.tsx",
+      "bytes": 21911,
+      "sha256": "9a38c37c2b7ac7b777e24f6bab2bfa10ac786287b40bfaa1bb1c1646517922bd"
+    },
+    {
+      "path": "src/components/shop/shop.module.css",
+      "bytes": 75531,
+      "sha256": "d3883668dbd85ba989fec47710a3e30171750dc5c7a609315b2cc836d7111a21"
+    },
+    {
+      "path": "src/components/studio-private.css",
+      "bytes": 9986,
+      "sha256": "cc7f7e8d50cea646086fc098c46bcbe66c1630a5405bb131b11f3af18db5db00"
+    },
+    {
+      "path": "src/components/studio/access-shell.tsx",
+      "bytes": 2912,
+      "sha256": "634b1099c0cdf93e397241dcf534c4cfa3b80f4b4be7dcff5b55af77b9140192"
+    },
+    {
+      "path": "src/components/studio/homepage-composition.module.css",
+      "bytes": 1725,
+      "sha256": "560f3ae007350bc01cd4f21cf999dee8d16f5e3c77ee27468e7eaff7bfd9a9fe"
+    },
+    {
+      "path": "src/components/studio/overview.module.css",
+      "bytes": 9341,
+      "sha256": "cb4a354dd92eaee43cf632970a92b0b2fc31468d1687ed8e86459bffb70ce496"
+    },
+    {
+      "path": "src/components/studio/studio-access.module.css",
+      "bytes": 9776,
+      "sha256": "5d7de3afcf82f0dce723826d631c7fdca21a4322981db55bf5621bdbe482f441"
+    },
+    {
+      "path": "src/components/studio/studio-editing.module.css",
+      "bytes": 19273,
+      "sha256": "c1da1c65124ce8d25f81637ca224fde234db572a42ed57a97c4c82e9dab33d78"
+    },
+    {
+      "path": "src/components/studio/studio-operations.module.css",
+      "bytes": 11511,
+      "sha256": "e5b09f4a8c1e051640e767ac40d3786fcab338d1f3c19c2739aaff61ec96afd7"
+    },
+    {
+      "path": "src/components/studio/workshop-template-preview.module.css",
+      "bytes": 2921,
+      "sha256": "dd5c964f493b4b8ba49162d6e49196e94b9934869e969c830d42703ae06a39bf"
+    },
+    {
+      "path": "src/components/studio/workspace.module.css",
+      "bytes": 55405,
+      "sha256": "66ae91025c323d4af801359e5ac690acefe833d270601ab018c75062a6d35eee"
+    },
+    {
+      "path": "src/components/studio/workspace.tsx",
+      "bytes": 18753,
+      "sha256": "35e8e42555449651e3ed7acf38d949795e08b63093d2b7aee5acecd0140a67b1"
+    }
+  ],
+  "screenshotCount": 102,
+  "screenshotLimits": [
+    "Before desktop capture overscan repeats are disclosed and gallery comparisons use equal display-only crops; raw evidence retained",
+    "After captures show local source/data and are not production publication evidence",
+    "Static component specimens have no hydration or working interactions"
+  ],
+  "externalState": {
+    "push": false,
+    "pr": false,
+    "deployment": false,
+    "publication": false,
+    "productionDatabaseWrite": false,
+    "driveWrite": false
+  },
+  "remaining": [
+    "Owner visual review and separately authorized release",
+    "Contextual contrast over gradients/media; no blanket WCAG certification",
+    "Native screen-reader/physical-device/field-performance observations not performed",
+    "No exhaustive opening of all historical dynamic URLs or every conditional record/permission state",
+    "Historical Studio access-request production-table activation remains separate"
+  ]
+}
