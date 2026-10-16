@@ -1,0 +1,10 @@
+/* Every chapter meets the same charcoal at its top and bottom. The glow stays
+   inside that boundary, independent of saved composition order. */
+.canvas{
+ --home-edge:#080a0e;
+ --home-edge-fade:linear-gradient(180deg,#080a0e 0%,#080a0e00 22%,#080a0e00 72%,#080a0e 100%);
+ --cinema-glow:radial-gradient(ellipse at 78% 48%,#164e6b36,transparent 65%);
+ --cinema-warmth:radial-gradient(ellipse at 24% 50%,#b89b6312,transparent 66%);
+ --home-canvas:var(--home-edge-fade),var(--cinema-glow),var(--cinema-warmth),#080a0e;
+ background:var(--home-edge);color:#f4f1e9;
+}

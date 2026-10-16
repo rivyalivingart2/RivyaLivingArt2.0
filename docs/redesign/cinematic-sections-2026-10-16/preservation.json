@@ -1,0 +1,24 @@
+{
+  "environment": "isolated local QA",
+  "readOnly": true,
+  "scopes": 13,
+  "counts": {
+    "rivya_catalogue": 120,
+    "rivya_content": 603,
+    "rivya_public_media": 152,
+    "rivya_business_settings": 1,
+    "rivya_revisions": 738,
+    "rivya_inquiries": 2,
+    "rivya_studio_orders": 8,
+    "rivya_studio_order_events": 16,
+    "rivya_inquiry_notes": 0,
+    "rivya_references": 0,
+    "rivya_staff": 10,
+    "rivya_privacy_controls": 8,
+    "rivya_erasure_ledger": 0
+  },
+  "totalRows": 1658,
+  "allRecordHashesEqual": true,
+  "contentIdentitiesEqual": true,
+  "productionMutations": false
+}

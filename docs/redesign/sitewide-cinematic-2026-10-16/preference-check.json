@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-16",
+  "type": "isolated module behavior; not native browser storage certification",
+  "results": [
+    {
+      "mode": "normal",
+      "pauseAndResume": "pass"
+    },
+    {
+      "mode": "missing-read-blocked",
+      "pauseAndResume": "pass"
+    },
+    {
+      "mode": "stale-false-write-blocked",
+      "pauseAndResume": "pass"
+    }
+  ]
+}

@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-16T08:13:13.753Z",
+  "sourceHead": "ffd863928744df0ae2cf985f6504421842a074db",
+  "environment": "Existing isolated QA database at 127.0.0.1:55439/rivya_migration_local and local application captures",
+  "scope": "Current local source/media/preservation evidence only; no production or fresh Drive verification",
+  "summary": {
+    "protectedTables": 13,
+    "protectedRows": 1658,
+    "allProtectedRowsEqual": true,
+    "publicPaths": 17,
+    "publicNormalizedTextEqual": true,
+    "publicOrderedLinksEqual": true,
+    "publicTitlesH1CanonicalsEqual": true,
+    "whitespaceOnlyPaths": [
+      "/our-story",
+      "/process"
+    ],
+    "allLocalFilmAssetsMatch": true,
+    "allProtectedSourceGroupsUnchanged": true
+  },
+  "protectedSnapshot": {
+    "beforeAt": "2026-10-16T07:20:06.431Z",
+    "afterAt": "2026-10-16T08:09:08.427Z",
+    "readOnly": true,
+    "sameLocalDatabaseIdentity": true,
+    "rawRowValuesExported": false,
+    "privateArtifacts": [
+      "test-results/old-design-migration/local-sitewide-before-private.json",
+      "test-results/old-design-migration/local-sitewide-after-private.json"
+    ],
+    "publicSummaryArtifacts": [
+      "test-results/old-design-migration/local-sitewide-before-summary.json",
+      "test-results/old-design-migration/local-sitewide-after-summary.json"
+    ],
+    "tables": [
+      {
+        "table": "rivya_catalogue",
+        "beforeCount": 120,
+        "afterCount": 120,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "0f7bbce050fe4c830c32a28c351cb1e090788b9a58bba6737c5a581b7b323e58",
+        "afterDigest": "0f7bbce050fe4c830c32a28c351cb1e090788b9a58bba6737c5a581b7b323e58",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      },
+      {
+        "table": "rivya_content",
+        "beforeCount": 603,
+        "afterCount": 603,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "b119fb10edfed755788dc8f8c5c1572ca749b5a855b96655fcd9124a61746770",
+        "afterDigest": "b119fb10edfed755788dc8f8c5c1572ca749b5a855b96655fcd9124a61746770",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      },
+      {
+        "table": "rivya_public_media",
+        "beforeCount": 152,
+        "afterCount": 152,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "9530592c6d34caf0f149f4309d367bdb917fbac8b8c5ba568a8cccb6b1ef4d94",
+        "afterDigest": "9530592c6d34caf0f149f4309d367bdb917fbac8b8c5ba568a8cccb6b1ef4d94",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      },
+      {
+        "table": "rivya_business_settings",
+        "beforeCount": 1,
+        "afterCount": 1,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "03be771ace76ef6f0ec49e09b90a1d25910251d9511cd1ae25ac53f302004fb6",
+        "afterDigest": "03be771ace76ef6f0ec49e09b90a1d25910251d9511cd1ae25ac53f302004fb6",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      },
+      {
+        "table": "rivya_revisions",
+        "beforeCount": 738,
+        "afterCount": 738,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "e9e1f4220db38f70d23a601f38b1a05d80227606875680a0fe5c561101479a27",
+        "afterDigest": "e9e1f4220db38f70d23a601f38b1a05d80227606875680a0fe5c561101479a27",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      },
+      {
+        "table": "rivya_inquiries",
+        "beforeCount": 2,
+        "afterCount": 2,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "f553f216c7881b2c4bcbba77eadced625ff88b062439009cc41560b08df3a6c5",
+        "afterDigest": "f553f216c7881b2c4bcbba77eadced625ff88b062439009cc41560b08df3a6c5",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      },
+      {
+        "table": "rivya_studio_orders",
+        "beforeCount": 8,
+        "afterCount": 8,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "95f29eb45b8ce69d60eb1951ce793520aca51af52c26c9fad2f796f64681c98b",
+        "afterDigest": "95f29eb45b8ce69d60eb1951ce793520aca51af52c26c9fad2f796f64681c98b",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      },
+      {
+        "table": "rivya_studio_order_events",
+        "beforeCount": 16,
+        "afterCount": 16,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "f6689f56133c74dd4521f60e7fed60e7b0fd577fc87439f38c3efa30f39a9e8c",
+        "afterDigest": "f6689f56133c74dd4521f60e7fed60e7b0fd577fc87439f38c3efa30f39a9e8c",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      },
+      {
+        "table": "rivya_inquiry_notes",
+        "beforeCount": 0,
+        "afterCount": 0,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "afterDigest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      },
+      {
+        "table": "rivya_references",
+        "beforeCount": 0,
+        "afterCount": 0,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "afterDigest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      },
+      {
+        "table": "rivya_staff",
+        "beforeCount": 10,
+        "afterCount": 10,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "8afa83812d2ee7b94a443a8264aaa585b99cdfecdd11a515aaafd740c8436ded",
+        "afterDigest": "8afa83812d2ee7b94a443a8264aaa585b99cdfecdd11a515aaafd740c8436ded",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      },
+      {
+        "table": "rivya_privacy_controls",
+        "beforeCount": 8,
+        "afterCount": 8,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "f43a47383a46880548e5d7d21bd282f21a30e79d44b5a1a3812a179c0406dc5d",
+        "afterDigest": "f43a47383a46880548e5d7d21bd282f21a30e79d44b5a1a3812a179c0406dc5d",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      },
+      {
+        "table": "rivya_erasure_ledger",
+        "beforeCount": 0,
+        "afterCount": 0,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "beforeDigest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "afterDigest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "aggregateDigestEqual": true,
+        "allRowsEqual": true
+      }
+    ],
+    "contentIdentityRowsEqual": true
+  },
+  "publicContentComparison": {
+    "inputs": [
+      "test-results/sitewide-cinematic/before-public-content.json",
+      "test-results/sitewide-cinematic/after-public-content.json"
+    ],
+    "method": "Match by route path; compare before.text with after.main; collapse only whitespace for normalized text; adapt before [text,href] tuples and after objects to the same ordered link representation, trimming/collapsing label whitespace only; compare title, h1 and canonical exactly",
+    "rows": [
+      {
+        "path": "/",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 5994,
+        "afterTextLength": 5994,
+        "normalizedMainTextSha256Before": "fe597e2e71adf5a0c11ee6818aea894c320b705667d9b493618a75789ac752dd",
+        "normalizedMainTextSha256After": "fe597e2e71adf5a0c11ee6818aea894c320b705667d9b493618a75789ac752dd",
+        "linksEqual": true,
+        "beforeLinkCount": 42,
+        "afterLinkCount": 42,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/our-story",
+        "rawMainTextEqual": false,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 2217,
+        "afterTextLength": 2218,
+        "normalizedMainTextSha256Before": "eeb1ec27ecf596b5fd2e395b44ce0d67d6c0fe1ab066e9da8637857de32d409a",
+        "normalizedMainTextSha256After": "eeb1ec27ecf596b5fd2e395b44ce0d67d6c0fe1ab066e9da8637857de32d409a",
+        "linksEqual": true,
+        "beforeLinkCount": 11,
+        "afterLinkCount": 11,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true,
+        "textDifference": {
+          "atCharacter": 217,
+          "beforeChangedText": "",
+          "afterChangedText": "\n",
+          "contextBefore": "nces and story give a piece its direction.\n\nDesign visualization\nOn this page\n01\n02\n03\n01\nObjects with a point of view\n\nRivyaLivin",
+          "contextAfter": "nces and story give a piece its direction.\n\nDesign visualization\n\nOn this page\n01\n02\n03\n01\nObjects with a point of view\n\nRivyaLivin"
+        },
+        "differenceClassification": "Whitespace-only rendering change"
+      },
+      {
+        "path": "/materials-care",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 409,
+        "afterTextLength": 409,
+        "normalizedMainTextSha256Before": "e993d1bb0f18941d47743db180624718b43d7dad70b9d5cf17f5e6c3fed93dbe",
+        "normalizedMainTextSha256After": "e993d1bb0f18941d47743db180624718b43d7dad70b9d5cf17f5e6c3fed93dbe",
+        "linksEqual": true,
+        "beforeLinkCount": 15,
+        "afterLinkCount": 15,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/collectible-design",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 3458,
+        "afterTextLength": 3458,
+        "normalizedMainTextSha256Before": "3d6130e4907902af487dc01e9d2894d20591e01b578e585a3421cd3d87f9b051",
+        "normalizedMainTextSha256After": "3d6130e4907902af487dc01e9d2894d20591e01b578e585a3421cd3d87f9b051",
+        "linksEqual": true,
+        "beforeLinkCount": 27,
+        "afterLinkCount": 27,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/memory-art",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 3499,
+        "afterTextLength": 3499,
+        "normalizedMainTextSha256Before": "00da9221b9ce6d97802c475b53727b7924392ad4ff61b1446c6611f8cc87eac5",
+        "normalizedMainTextSha256After": "00da9221b9ce6d97802c475b53727b7924392ad4ff61b1446c6611f8cc87eac5",
+        "linksEqual": true,
+        "beforeLinkCount": 27,
+        "afterLinkCount": 27,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/personal-art",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 2988,
+        "afterTextLength": 2988,
+        "normalizedMainTextSha256Before": "79d587744bb322f5c350621fe4dffd4e9aaa9bef795e9e8da65998266c33dcb9",
+        "normalizedMainTextSha256After": "79d587744bb322f5c350621fe4dffd4e9aaa9bef795e9e8da65998266c33dcb9",
+        "linksEqual": true,
+        "beforeLinkCount": 23,
+        "afterLinkCount": 23,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/pieces/river-channel",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 1343,
+        "afterTextLength": 1343,
+        "normalizedMainTextSha256Before": "a25e3d97c812847104e4b05913269891e108476983b02169ae641abed9c2d26d",
+        "normalizedMainTextSha256After": "a25e3d97c812847104e4b05913269891e108476983b02169ae641abed9c2d26d",
+        "linksEqual": true,
+        "beforeLinkCount": 8,
+        "afterLinkCount": 8,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/commission",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 3022,
+        "afterTextLength": 3022,
+        "normalizedMainTextSha256Before": "3ba40c5e3a5da2a6771419717df985c6504b57db109869e873f89c3702515c80",
+        "normalizedMainTextSha256After": "3ba40c5e3a5da2a6771419717df985c6504b57db109869e873f89c3702515c80",
+        "linksEqual": true,
+        "beforeLinkCount": 24,
+        "afterLinkCount": 24,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/contact",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 986,
+        "afterTextLength": 986,
+        "normalizedMainTextSha256Before": "437da30254f5448554f289ad398dad6f28e080577ac2c37c842d0a6ba2a2644e",
+        "normalizedMainTextSha256After": "437da30254f5448554f289ad398dad6f28e080577ac2c37c842d0a6ba2a2644e",
+        "linksEqual": true,
+        "beforeLinkCount": 12,
+        "afterLinkCount": 12,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/journal",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 3723,
+        "afterTextLength": 3723,
+        "normalizedMainTextSha256Before": "d2b72721511169dcd0afad11e76cff11b4bd4212393a3e8c9d98e2c37c78cec1",
+        "normalizedMainTextSha256After": "d2b72721511169dcd0afad11e76cff11b4bd4212393a3e8c9d98e2c37c78cec1",
+        "linksEqual": true,
+        "beforeLinkCount": 14,
+        "afterLinkCount": 14,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/portfolio",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 2456,
+        "afterTextLength": 2456,
+        "normalizedMainTextSha256Before": "20744c7c49b88bf8831d8953b961c601eaf631bcced7ac22294439fbeec92c83",
+        "normalizedMainTextSha256After": "20744c7c49b88bf8831d8953b961c601eaf631bcced7ac22294439fbeec92c83",
+        "linksEqual": true,
+        "beforeLinkCount": 24,
+        "afterLinkCount": 24,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/testimonials",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 2489,
+        "afterTextLength": 2489,
+        "normalizedMainTextSha256Before": "e1b3522ba547e5fd6e5dff46f95a9fc2af2b9cf0b8d377a4c687d13173a91677",
+        "normalizedMainTextSha256After": "e1b3522ba547e5fd6e5dff46f95a9fc2af2b9cf0b8d377a4c687d13173a91677",
+        "linksEqual": true,
+        "beforeLinkCount": 26,
+        "afterLinkCount": 26,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/faq",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 1336,
+        "afterTextLength": 1336,
+        "normalizedMainTextSha256Before": "21ba679ba60a5455292f99018bdeb150ae524039c916069d2414d01f482af333",
+        "normalizedMainTextSha256After": "21ba679ba60a5455292f99018bdeb150ae524039c916069d2414d01f482af333",
+        "linksEqual": true,
+        "beforeLinkCount": 34,
+        "afterLinkCount": 34,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/privacy",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 4051,
+        "afterTextLength": 4051,
+        "normalizedMainTextSha256Before": "c64d5094558f09faf2348d50b68605f4b51ffeb5aa794f0bf6bef58cebdfdd56",
+        "normalizedMainTextSha256After": "c64d5094558f09faf2348d50b68605f4b51ffeb5aa794f0bf6bef58cebdfdd56",
+        "linksEqual": true,
+        "beforeLinkCount": 17,
+        "afterLinkCount": 17,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/search",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 6995,
+        "afterTextLength": 6995,
+        "normalizedMainTextSha256Before": "092bb70e50f5e5522ae1d04983f48fc50134537ec43da49e8b4082ed2c4f725d",
+        "normalizedMainTextSha256After": "092bb70e50f5e5522ae1d04983f48fc50134537ec43da49e8b4082ed2c4f725d",
+        "linksEqual": true,
+        "beforeLinkCount": 50,
+        "afterLinkCount": 50,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/saved-pieces",
+        "rawMainTextEqual": true,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 460,
+        "afterTextLength": 460,
+        "normalizedMainTextSha256Before": "1295ff55d675035d1691e8f1fbc76f3bfb02a9028d3b5abc6a79bd18eb5c15b7",
+        "normalizedMainTextSha256After": "1295ff55d675035d1691e8f1fbc76f3bfb02a9028d3b5abc6a79bd18eb5c15b7",
+        "linksEqual": true,
+        "beforeLinkCount": 1,
+        "afterLinkCount": 1,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true
+      },
+      {
+        "path": "/process",
+        "rawMainTextEqual": false,
+        "normalizedMainTextEqual": true,
+        "beforeTextLength": 1695,
+        "afterTextLength": 1696,
+        "normalizedMainTextSha256Before": "c4b3d70ac90e6596fae75c2c6ccb440806d23d117e9e85a2079a1586153290b7",
+        "normalizedMainTextSha256After": "c4b3d70ac90e6596fae75c2c6ccb440806d23d117e9e85a2079a1586153290b7",
+        "linksEqual": true,
+        "beforeLinkCount": 12,
+        "afterLinkCount": 12,
+        "addedLinks": [],
+        "removedLinks": [],
+        "titleEqual": true,
+        "h1Equal": true,
+        "canonicalEqual": true,
+        "textDifference": {
+          "atCharacter": 207,
+          "beforeChangedText": "",
+          "afterChangedText": "\n",
+          "contextBefore": "ails. The final design is agreed with you.\n\nDesign visualization\nOn this page\n01\n02\n03\n04\n▷\nPlay film\nView film\n↗\n\nMATERIAL VISUAL",
+          "contextAfter": "ails. The final design is agreed with you.\n\nDesign visualization\n\nOn this page\n01\n02\n03\n04\n▷\nPlay film\nView film\n↗\n\nMATERIAL VISUAL"
+        },
+        "differenceClassification": "Whitespace-only rendering change"
+      }
+    ]
+  },
+  "localFilmAssets": {
+    "manifest": "src/lib/presentation-media.ts",
+    "manifestSha256": "b35eb2652104d75e3c4694f3a7fb284b78c0a081c31729217d52d6d4904fbdec",
+    "assets": [
+      {
+        "path": "/media/migration/hero-pour-loop-poster.jpg",
+        "expectedSha256": "e7dec2a8d6972a0825caf57aae320db7b1a0c319eb2f7a3d5581ba9190040caf",
+        "expectedBytes": 98481,
+        "actualBytes": 98481,
+        "actualSha256": "e7dec2a8d6972a0825caf57aae320db7b1a0c319eb2f7a3d5581ba9190040caf",
+        "byteCountMatches": true,
+        "hashMatches": true
+      },
+      {
+        "path": "/media/migration/hero-pour-loop.webm",
+        "expectedSha256": "ba77d14e1d380f382bbc86af1c5e8533ad3e8a0ad2bb604d06506b3da5b216c8",
+        "expectedBytes": 1649274,
+        "actualBytes": 1649274,
+        "actualSha256": "ba77d14e1d380f382bbc86af1c5e8533ad3e8a0ad2bb604d06506b3da5b216c8",
+        "byteCountMatches": true,
+        "hashMatches": true
+      },
+      {
+        "path": "/media/migration/hero-pour-loop.mp4",
+        "expectedSha256": "61d4633578353e813e64506877eed198bc682b6424701b7783720af51530869d",
+        "expectedBytes": 2135160,
+        "actualBytes": 2135160,
+        "actualSha256": "61d4633578353e813e64506877eed198bc682b6424701b7783720af51530869d",
+        "byteCountMatches": true,
+        "hashMatches": true
+      }
+    ],
+    "driveStatus": "Not re-fetched. The manifest records historical owner Drive byte verification on 2026-10-09; this task verified local bytes only."
+  },
+  "protectedSourcePaths": [
+    {
+      "name": "Business, contact and social source",
+      "paths": [
+        "src/lib/business-settings.ts",
+        "src/lib/business-settings-model.ts",
+        "src/lib/contact.ts",
+        "src/lib/site-settings-model.ts",
+        "src/lib/shared-copy-model.ts"
+      ],
+      "trackedFileCount": 5,
+      "unchangedAgainstHead": true,
+      "changes": []
+    },
+    {
+      "name": "All library models, persistence, authentication and data source files",
+      "paths": [
+        "src/lib"
+      ],
+      "trackedFileCount": 167,
+      "unchangedAgainstHead": true,
+      "changes": []
+    },
+    {
+      "name": "API handlers",
+      "paths": [
+        "src/app/api"
+      ],
+      "trackedFileCount": 30,
+      "unchangedAgainstHead": true,
+      "changes": []
+    },
+    {
+      "name": "Public route adapters and SEO metadata",
+      "paths": [
+        ":(glob)src/app/**/page.tsx",
+        ":(glob)src/app/**/route.ts",
+        "src/app/robots.ts",
+        "src/app/sitemap.ts",
+        "src/lib/site-metadata.ts"
+      ],
+      "trackedFileCount": 112,
+      "unchangedAgainstHead": true,
+      "changes": []
+    },
+    {
+      "name": "Dependencies and application configuration",
+      "paths": [
+        "package.json",
+        "package-lock.json",
+        "next.config.ts",
+        "tsconfig.json"
+      ],
+      "trackedFileCount": 4,
+      "unchangedAgainstHead": true,
+      "changes": []
+    },
+    {
+      "name": "Approved media and original brand assets",
+      "paths": [
+        "public/media",
+        "public/brand"
+      ],
+      "trackedFileCount": 151,
+      "unchangedAgainstHead": true,
+      "changes": []
+    },
+    {
+      "name": "Database schema/migration scripts and guarded runner",
+      "paths": [
+        ":(glob)scripts/*.sql",
+        "tools/old-design-migration/guard.mjs",
+        "tools/old-design-migration/local-sql.mjs",
+        "tools/old-design-migration/run-local.mjs",
+        "tools/old-design-migration/protected-snapshot.mjs"
+      ],
+      "trackedFileCount": 22,
+      "unchangedAgainstHead": true,
+      "changes": []
+    }
+  ],
+  "limits": [
+    "The 13-table snapshot is the exact existing protected-snapshot.mjs scope; it is not an inventory of every possible database table.",
+    "Public captures cover 17 local routes and their captured main content/links; this is not an all-record or production publication audit.",
+    "Whitespace normalization does not alter punctuation or words. Raw rendering differences are retained below.",
+    "No snapshot private identifiers, customer fields, credentials or raw record values are copied into this report. Private snapshot files remain under ignored test-results.",
+    "No protected rows, fixtures, media assignments or publication state were mutated for this audit."
+  ]
+}

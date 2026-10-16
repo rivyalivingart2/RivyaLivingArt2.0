@@ -73,8 +73,50 @@
   .panel h1{color:#08283a}
   .panel .error{color:#200606}
 }
-.motionToggle{display:none}
-@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.motionToggle{display:block;float:right;margin:-4px -8px 8px 12px;padding:10px 8px;min-height:44px;border:0;border-radius:4px;background:transparent;color:#080a0e;font:400 11px/1.4 var(--font-body);text-decoration:underline;text-underline-offset:4px;cursor:pointer}.motionToggle:hover{background:rgba(255,255,255,.25)}}
+.motionToggle{display:block;float:right;margin:-4px -8px 8px 12px;padding:10px 8px;min-height:44px;border:0;border-radius:4px;background:transparent;color:#080a0e;font:400 11px/1.4 var(--font-body);text-decoration:underline;text-underline-offset:4px;cursor:pointer}.motionToggle:hover{background:rgba(255,255,255,.25)}
 @keyframes glass-flow{from{background-position:0% 15%}to{background-position:100% 85%}}
-@media(max-width:360px){.motionToggle{float:none;margin:0 0 12px auto;padding:4px 0;min-height:28px}}
+@media(max-width:360px){.motionToggle{float:none;margin:0 0 12px auto;padding:10px 0;min-height:44px}}
 @media(prefers-reduced-motion:reduce){.panel{animation:none;background-position:50% 50%}.motionToggle{display:none}}
+
+/* The access family remains image-led and keeps the approved light glass.
+   Its surrounding image now meets the global canvas without a hard frame. */
+.access {
+ padding:0;
+ background:var(--cinema-canvas,#080a0e);
+}
+.frame {
+ min-height:100svh;
+ padding:clamp(32px,4vw,64px);
+ background:var(--cinema-navy,#08283a);
+}
+.scrim {
+ background:
+  linear-gradient(180deg,#080a0e55 0%,#080a0e00 22%,#080a0e00 75%,var(--cinema-canvas,#080a0e) 100%),
+  linear-gradient(90deg,#08283ac7 0%,#08283a33 58%,#08283a3d 100%);
+}
+.panel {
+ border:1px solid #ffffff55;
+ box-shadow:0 24px 80px #080a0e38,inset 0 1px #ffffff66;
+}
+.explore {
+ background:linear-gradient(110deg,var(--cinema-navy,#08283a),#123c50);
+ border-color:var(--cinema-gold,#b89b63);
+}
+.form label { font-size:13px; gap:6px; }
+.note { font-size:12px; }
+.motionToggle { font-size:12px; }
+@media(max-width:1050px) { .frame { padding:28px; } }
+@media(max-width:760px) {
+ .frame { padding:24px 20px; }
+ .scrim {
+  background:linear-gradient(180deg,#08283ac7 0%,#08283a8a 55%,var(--cinema-canvas,#080a0e) 100%);
+ }
+ .panel { box-shadow:0 16px 48px #080a0e30,inset 0 1px #ffffff66; }
+}
+@media(max-width:360px) { .frame { padding:20px 14px; } }
+@media print {
+ .access,.frame { min-height:0; padding:0; background:white; }
+ .frame { display:block; }
+ .backdrop,.scrim,.welcome,.motionToggle { display:none; }
+ .panel { background:white; color:#08283a; animation:none; backdrop-filter:none; -webkit-backdrop-filter:none; box-shadow:none; border:0; }
+}
