@@ -1,5 +1,7 @@
 # Continue — website-wide cinematic redesign
 
+**Release update, 16 October 2026:** the owner subsequently authorized pushing all changes into main. PR #62 merged as `224b2ca0e192b8d8ceced3045d6f8a193b734362`; exact-head production is READY and live public/Studio checks passed within the recorded scope. Read `RELEASE.md` and `live-verification.json` first. The local-only status and instructions below are the historical pre-release checkpoint, superseded by that explicit authorization and completed release. Do not replay fixtures, data publications or migrations. The current follow-up contains documentation only.
+
 16 October 2026. Owner directly authorized implementation of the website-wide CRAFT master prompt. Implementation is local on `codex/cinematic-sections`, based on released main `ffd863928744df0ae2cf985f6504421842a074db`. Earlier homepage cinematic work is included in this uncommitted branch; preserve it.
 
 ## Read first

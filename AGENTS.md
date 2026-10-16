@@ -1,3 +1,9 @@
+# Current checkpoint - cinematic redesign released and live verified
+
+16 October 2026: PR #62 merged all cinematic implementation and reports into main as 224b2ca0e192b8d8ceced3045d6f8a193b734362. Production deployment dpl_DuMXE1zs914eaG6FLCVazZJYQSvb is READY and assigned to www.rivyalivingart.com with that exact SHA. Fresh live verification covers 64 desktop/mobile layouts, all 37 authenticated Studio workspace loading states, Hero/Resin playback and parallax, cursor lighting, mobile navigation/focus, reduced motion and persistent effects pause. Read docs/redesign/sitewide-cinematic-2026-10-16/RELEASE.md and live-verification.json. No production content, records, media associations or settings were edited. This receipt is a documentation-only follow-up; no application source changed after the verified deployment. Prior local-only checkpoints below are historical. Historical access-table activation and independent native/device/field evidence remain separate; do not manufacture or claim them.
+
+---
+
 # Current checkpoint - website-wide cinematic release authorized
 
 16 October 2026: owner explicitly requested push of all pending changes into main. Release both cinematic redesign stages through a detailed PR, exact-head hosting checks and normal merge, followed by live public/Studio verification. Read docs/redesign/sitewide-cinematic-2026-10-16/RELEASE.md for scope, evidence and boundaries. The previous local-only holds below are historical and superseded for this release. Do not replay fixtures, migrate tables, publish records or alter business data. Existing access-table activation and native/device/field certification remain separate. All previous checkpoint bytes are preserved below.
