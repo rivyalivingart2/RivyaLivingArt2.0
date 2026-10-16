@@ -1,0 +1,1320 @@
+{
+  "verifiedAt": "2026-10-16T09:15:48.167Z",
+  "commit": "224b2ca0e192b8d8ceced3045d6f8a193b734362",
+  "pr": "https://github.com/rivyalivingart2/RivyaLivingArt2.0/pull/62",
+  "production": "https://www.rivyalivingart.com",
+  "deployment": {
+    "id": "dpl_DuMXE1zs914eaG6FLCVazZJYQSvb",
+    "state": "READY",
+    "target": "production",
+    "domainAssigned": true
+  },
+  "scope": "Read-only live production layout, loading, media and interaction verification; no business submissions or data writes",
+  "layouts": [
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Art for the way you live.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/",
+      "title": "Art for the way you live.",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Studio overview",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Presence, in every form.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/collectible-design",
+      "title": "Presence, in every form. | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "River Channel",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/pieces/river-channel",
+      "title": "River Channel | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Reading the Grain: Wood and Resin in a Shared Composition",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/journal/reading-the-grain-wood-and-resin-in-a-shared-composition",
+      "title": "Reading the Grain: Wood and Resin in a Shared Composition | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "A narrow blue line at the dining table",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/portfolio/a-narrow-blue-line-at-the-dining-table",
+      "title": "A narrow blue line at the dining table | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "A preference for a quieter dining accent",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/testimonials/a-preference-for-a-quieter-dining-accent",
+      "title": "A preference for a quieter dining accent | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Art for the way you live.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/our-story",
+      "title": "Art for the way you live. | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "A closer look.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/journal",
+      "title": "A closer look. | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Your questions, considered.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/faq",
+      "title": "Your questions, considered. | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Let’s begin a conversation.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/contact",
+      "title": "Let’s begin a conversation. | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Choose your starting point.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/commission",
+      "title": "Choose your starting point. | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Your brief stays personal.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/privacy",
+      "title": "Your brief stays personal. | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Texture, depth and everyday life.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/materials-care",
+      "title": "Texture, depth and everyday life. | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "A piece, shaped together.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/process",
+      "title": "A piece, shaped together. | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "A piece of your own.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/commission/customize",
+      "title": "A custom piece | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Art for the way you live.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/",
+      "title": "Art for the way you live.",
+      "width": 390
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Art for the way you live.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/our-story",
+      "title": "Art for the way you live. | RivyaLivingArt",
+      "width": 390
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "River Channel",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/pieces/river-channel",
+      "title": "River Channel | RivyaLivingArt",
+      "width": 390
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Reading the Grain: Wood and Resin in a Shared Composition",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/journal/reading-the-grain-wood-and-resin-in-a-shared-composition",
+      "title": "Reading the Grain: Wood and Resin in a Shared Composition | RivyaLivingArt",
+      "width": 390
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "A narrow blue line at the dining table",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/portfolio/a-narrow-blue-line-at-the-dining-table",
+      "title": "A narrow blue line at the dining table | RivyaLivingArt",
+      "width": 390
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Your questions, considered.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/faq",
+      "title": "Your questions, considered. | RivyaLivingArt",
+      "width": 390
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "public",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "A piece of your own.",
+      "loggedIn": false,
+      "overflow": false,
+      "path": "/commission/customize",
+      "title": "A custom piece | RivyaLivingArt",
+      "width": 390
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Inquiries",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/inquiries",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Follow-ups",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/follow-ups",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "The work, in sequence.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/activity",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Inquiry analytics.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/analytics",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Pieces & possibilities.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/products",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "The public image collection.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/media",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Catalogue categories.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/categories",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Bulk import.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/import",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Managed exports.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/exports",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Editorial research.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/research",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Content gaps.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/content-gaps",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Words with purpose.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/site-copy",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Page design",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/sections",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Images, in their place.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/site-images",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Navigation & languages.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/navigation",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Language review.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/translations",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Process steps.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/process",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Materials and care.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/materials",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Commission forms.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/forms",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Editorial production register",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/content-register",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Editorial ordering",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/editorial-order",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Editorial library",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/content",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Journal",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/journal",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Portfolio",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/portfolio",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Testimonials",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/testimonials",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "FAQs",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/faqs",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Pages",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/pages",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Landing pages",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/landing-pages",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Content health.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/content-health",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Legacy feature decisions.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/legacy",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Old links and publication.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/route-review",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "The people behind the pieces.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/staff",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Atelier settings.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/settings",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Search presentation.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/seo",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Subscribers.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/subscribers",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Content lab.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/content-lab",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 1440
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Studio overview",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 390
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Pieces & possibilities.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/products",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 390
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Inquiries",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/inquiries",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 390
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Journal",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/journal",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 390
+    },
+    {
+      "brokenVisibleImages": [],
+      "canvas": "studio",
+      "canvasCount": 1,
+      "clippedHeadings": 0,
+      "heading": "Atelier settings.",
+      "loggedIn": true,
+      "overflow": false,
+      "path": "/studio/settings",
+      "title": "Private Studio | RivyaLivingArt",
+      "width": 390
+    }
+  ],
+  "studioSettledStates": [
+    {
+      "path": "/studio",
+      "canvas": "studio",
+      "heading": "Studio overview",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/inquiries",
+      "canvas": "studio",
+      "heading": "Inquiries",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/follow-ups",
+      "canvas": "studio",
+      "heading": "Follow-ups",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/activity",
+      "canvas": "studio",
+      "heading": "The work, in sequence.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/analytics",
+      "canvas": "studio",
+      "heading": "Inquiry analytics.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/products",
+      "canvas": "studio",
+      "heading": "Pieces & possibilities.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/media",
+      "canvas": "studio",
+      "heading": "The public image collection.",
+      "settled": true,
+      "alerts": [],
+      "note": "Verified after the initial load completed; no duration claim."
+    },
+    {
+      "path": "/studio/categories",
+      "canvas": "studio",
+      "heading": "Catalogue categories.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/import",
+      "canvas": "studio",
+      "heading": "Bulk import.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/exports",
+      "canvas": "studio",
+      "heading": "Managed exports.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/research",
+      "canvas": "studio",
+      "heading": "Editorial research.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/content-gaps",
+      "canvas": "studio",
+      "heading": "Content gaps.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/site-copy",
+      "canvas": "studio",
+      "heading": "Words with purpose.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/sections",
+      "canvas": "studio",
+      "heading": "Page design",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/site-images",
+      "canvas": "studio",
+      "heading": "Images, in their place.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/navigation",
+      "canvas": "studio",
+      "heading": "Navigation & languages.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/translations",
+      "canvas": "studio",
+      "heading": "Language review.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/process",
+      "canvas": "studio",
+      "heading": "Process steps.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/materials",
+      "canvas": "studio",
+      "heading": "Materials and care.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/forms",
+      "canvas": "studio",
+      "heading": "Commission forms.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/content-register",
+      "canvas": "studio",
+      "heading": "Editorial production register",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/editorial-order",
+      "canvas": "studio",
+      "heading": "Editorial ordering",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/content",
+      "canvas": "studio",
+      "heading": "Editorial library",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/journal",
+      "canvas": "studio",
+      "heading": "Journal",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/portfolio",
+      "canvas": "studio",
+      "heading": "Portfolio",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/testimonials",
+      "canvas": "studio",
+      "heading": "Testimonials",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/faqs",
+      "canvas": "studio",
+      "heading": "FAQs",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/pages",
+      "canvas": "studio",
+      "heading": "Pages",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/landing-pages",
+      "canvas": "studio",
+      "heading": "Landing pages",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/content-health",
+      "canvas": "studio",
+      "heading": "Content health.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/legacy",
+      "canvas": "studio",
+      "heading": "Legacy feature decisions.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/route-review",
+      "canvas": "studio",
+      "heading": "Old links and publication.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/staff",
+      "canvas": "studio",
+      "heading": "The people behind the pieces.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/settings",
+      "canvas": "studio",
+      "heading": "Atelier settings.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/seo",
+      "canvas": "studio",
+      "heading": "Search presentation.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/subscribers",
+      "canvas": "studio",
+      "heading": "Subscribers.",
+      "settled": true,
+      "alerts": []
+    },
+    {
+      "path": "/studio/content-lab",
+      "canvas": "studio",
+      "heading": "Content lab.",
+      "settled": true,
+      "alerts": []
+    }
+  ],
+  "motion": [
+    {
+      "films": [
+        {
+          "id": "resin-pour",
+          "top": 0,
+          "transform": "matrix(1, 0, 0, 1, 0, -29.7)",
+          "video": {
+            "error": null,
+            "paused": false,
+            "ready": 4,
+            "sources": 2,
+            "time": 2.956011
+          }
+        },
+        {
+          "id": "resin-pour",
+          "top": 4383.578125,
+          "transform": "matrix(1, 0, 0, 1, 0, -29.7)",
+          "video": {
+            "error": null,
+            "paused": true,
+            "ready": 0,
+            "sources": 0,
+            "time": 0
+          }
+        }
+      ],
+      "label": "hero-pointer-left",
+      "scroll": 0,
+      "spotlight": "transform: translate3d(678.3px, 331.87px, 0px);",
+      "state": "active"
+    },
+    {
+      "films": [
+        {
+          "id": "resin-pour",
+          "top": 0,
+          "transform": "matrix(1, 0, 0, 1, 0, -29.7)",
+          "video": {
+            "error": null,
+            "paused": false,
+            "ready": 4,
+            "sources": 2,
+            "time": 3.02254
+          }
+        },
+        {
+          "id": "resin-pour",
+          "top": 4383.578125,
+          "transform": "matrix(1, 0, 0, 1, 0, -29.7)",
+          "video": {
+            "error": null,
+            "paused": true,
+            "ready": 0,
+            "sources": 0,
+            "time": 0
+          }
+        }
+      ],
+      "label": "hero-pointer-right",
+      "scroll": 0,
+      "spotlight": "transform: translate3d(779.28px, 386.64px, 0px);",
+      "state": "active"
+    },
+    {
+      "films": [
+        {
+          "id": "resin-pour",
+          "top": -360,
+          "transform": "matrix(1, 0, 0, 1, 0, -5.94)",
+          "video": {
+            "error": null,
+            "paused": false,
+            "ready": 4,
+            "sources": 2,
+            "time": 3.606979
+          }
+        },
+        {
+          "id": "resin-pour",
+          "top": 4023.578125,
+          "transform": "matrix(1, 0, 0, 1, 0, -29.7)",
+          "video": {
+            "error": null,
+            "paused": true,
+            "ready": 0,
+            "sources": 0,
+            "time": 0
+          }
+        }
+      ],
+      "label": "hero-scroll-360",
+      "scroll": 360,
+      "spotlight": "transform: translate3d(1097.99px, 499.29px, 0px);",
+      "state": "active"
+    },
+    {
+      "films": [
+        {
+          "id": "resin-pour",
+          "top": -4176,
+          "transform": "matrix(1, 0, 0, 1, 0, 29.7)",
+          "video": {
+            "error": null,
+            "paused": true,
+            "ready": 4,
+            "sources": 2,
+            "time": 3.630106
+          }
+        },
+        {
+          "id": "resin-pour",
+          "top": 207.578125,
+          "transform": "matrix(1, 0, 0, 1, 0, -6.86367)",
+          "video": {
+            "error": null,
+            "paused": false,
+            "ready": 4,
+            "sources": 2,
+            "time": 0.721242
+          }
+        }
+      ],
+      "label": "resin-visible",
+      "scroll": 4176,
+      "spotlight": "transform: translate3d(1099.87px, 499.95px, 0px);",
+      "state": "active"
+    },
+    {
+      "films": [
+        {
+          "id": "resin-pour",
+          "top": -4456,
+          "transform": "matrix(1, 0, 0, 1, 0, 29.7)",
+          "video": {
+            "error": null,
+            "paused": true,
+            "ready": 4,
+            "sources": 2,
+            "time": 3.630106
+          }
+        },
+        {
+          "id": "resin-pour",
+          "top": -72.421875,
+          "transform": "matrix(1, 0, 0, 1, 0, 2.376)",
+          "video": {
+            "error": null,
+            "paused": false,
+            "ready": 4,
+            "sources": 2,
+            "time": 7.574948
+          }
+        }
+      ],
+      "label": "resin-scroll-280",
+      "scroll": 4456,
+      "spotlight": "transform: translate3d(1099.89px, 499.96px, 0px);",
+      "state": "active"
+    },
+    {
+      "films": [
+        {
+          "id": "resin-pour",
+          "top": -4655,
+          "transform": "matrix(1, 0, 0, 1, 0, 29.7)",
+          "video": {
+            "error": null,
+            "paused": true,
+            "ready": 4,
+            "sources": 2,
+            "time": 3.630106
+          }
+        },
+        {
+          "id": "resin-pour",
+          "top": -271.421875,
+          "transform": "matrix(1, 0, 0, 1, 0, 8.91297)",
+          "video": {
+            "error": null,
+            "paused": true,
+            "ready": 4,
+            "sources": 2,
+            "time": 7.668306
+          }
+        }
+      ],
+      "label": "resin-manual-pause",
+      "scroll": 4655,
+      "spotlight": "transform: translate3d(1162.16px, 501.8px, 0px);",
+      "state": "active"
+    },
+    {
+      "films": [
+        {
+          "id": "resin-pour",
+          "top": 0,
+          "transform": "none",
+          "video": {
+            "error": null,
+            "paused": true,
+            "ready": 0,
+            "sources": 0,
+            "time": 0
+          }
+        },
+        {
+          "id": "resin-pour",
+          "top": 4383.578125,
+          "transform": "none",
+          "video": {
+            "error": null,
+            "paused": true,
+            "ready": 0,
+            "sources": 0,
+            "time": 0
+          }
+        }
+      ],
+      "label": "system-reduced-motion",
+      "scroll": 0,
+      "spotlight": null,
+      "state": "reduced-motion"
+    }
+  ],
+  "interactions": [
+    {
+      "name": "mobile-navigation-open-Escape-focus",
+      "open": {
+        "expanded": "true",
+        "focus": "Close navigation",
+        "navigationVisible": true
+      },
+      "closed": {
+        "expanded": "false",
+        "focus": "Open navigation"
+      }
+    },
+    {
+      "name": "system-reduced-motion",
+      "state": "reduced-motion",
+      "videos": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 0,
+          "sources": 0,
+          "time": 0
+        },
+        {
+          "error": null,
+          "paused": true,
+          "ready": 0,
+          "sources": 0,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "name": "effects-pause-persists-across-routes",
+      "pressed": "true",
+      "state": "paused"
+    }
+  ],
+  "consoleErrors": {
+    "public": 0,
+    "studio": 0
+  },
+  "notes": [
+    "Studio media and site-image mapping were rechecked after slow initial loading; these are not response-time guarantees.",
+    "No production records, media associations, crops, drafts, publications, settings or accounts were edited.",
+    "Screenshots remain local and ignored by Git.",
+    "Native screen readers, physical devices, exhaustive conditional state/record coverage and production field metrics are not certified."
+  ]
+}
