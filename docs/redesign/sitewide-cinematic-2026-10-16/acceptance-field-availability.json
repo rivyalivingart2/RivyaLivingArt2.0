@@ -1,0 +1,30 @@
+{
+  "source": "Vercel Speed Insights, scoped read-only production project queries",
+  "result": "No LCP, INP or CLS field observations returned for the released checkpoint window. Empty results do not establish passing field performance.",
+  "queries": [
+    {
+      "metric": "lcp_ms",
+      "data": [],
+      "summary": [],
+      "start": "2026-10-16T09:20:00.000Z",
+      "end": "2026-10-16T10:00:00.000Z",
+      "queryId": "2575433798"
+    },
+    {
+      "metric": "inp_ms",
+      "data": [],
+      "summary": [],
+      "start": "2026-10-16T09:20:00.000Z",
+      "end": "2026-10-16T10:00:00.000Z",
+      "queryId": "530526657"
+    },
+    {
+      "metric": "cls",
+      "data": [],
+      "summary": [],
+      "start": "2026-10-16T09:20:00.000Z",
+      "end": "2026-10-16T10:00:00.000Z",
+      "queryId": "4231361387"
+    }
+  ]
+}

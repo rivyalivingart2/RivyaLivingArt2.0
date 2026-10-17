@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-16",
+  "ownerConstraints": {"screenReader": "Use an existing screen reader only", "physicalDevice": "No physical device is available"},
+  "screenReader": {"application": "Windows Narrator, already installed", "attempted": true, "result": "Unverified", "reason": "Narrator's window ran at a higher integrity level than the available Windows automation helper. Speech output and Speech Recap could not be observed. Browser accessibility trees and keyboard tests cannot substitute for native spoken-output evidence.", "cleanup": "Narrator was stopped; no Narrator process remained in the final process check.", "softwareInstalled": false},
+  "physicalDevices": {"result": "Unavailable", "reason": "Owner confirms no physical phone or tablet is available; no authorized connected real-device service was supplied."},
+  "lowerPoweredDevice": {"result": "Emulated fallback verified separately, actual hardware unverified", "reason": "Browser CPU/network/capability emulation is not an observation from real low-powered hardware."},
+  "noCertificationClaimed": true
+}

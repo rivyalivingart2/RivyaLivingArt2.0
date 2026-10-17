@@ -33,7 +33,7 @@ const commonBodyFont = localFont({
   adjustFontFallback: false,
   // Let critical styles and the hero load first; CSS still requests these same faces.
   preload: false,
-  declarations: [{ prop: "unicode-range", value: "U+0000-036F,U+1D00-1EFF,U+2000-206F,U+20A0-20CF,U+2161,U+2190-21FF,U+2212,U+2215,U+2304,U+2318,U+25B7,U+25C7,U+26A0,U+2713,U+FEFF,U+FFFD" }],
+  declarations: [{ prop: "unicode-range", value: "U+0000-00FF,U+0300-036F,U+2000-206F,U+20A0-20CF,U+2161,U+2190-21FF,U+2212,U+2215,U+2304,U+2318,U+25B7,U+25C7,U+26A0,U+2713,U+FEFF,U+FFFD" }],
 });
 const bodyFont = localFont({
   src: [

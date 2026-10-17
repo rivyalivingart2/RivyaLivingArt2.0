@@ -30,12 +30,15 @@ export function CinematicVideo({film,priority=false,className='',controlClassNam
   const element=root.current,player=video.current;if(!element||!player)return;
   const preference=window.matchMedia('(prefers-reduced-motion: reduce)');
   const connection=(navigator as Navigator&{connection?:Connection}).connection;
-  let visible=false,disposed=false,autoplayBlocked=false,timer:ReturnType<typeof setTimeout>|undefined;
+  let visible=false,disposed=false,autoplayBlocked=false,openingReady=!priority,timer:ReturnType<typeof setTimeout>|undefined;
   const mayAutoplay=()=>!preference.matches&&!connection?.saveData&&!['slow-2g','2g'].includes(connection?.effectiveType||'');
   const sync=()=>{
    if(disposed)return;
    const wantsPlayback=intent.current==='play'||(intent.current==='auto'&&mayAutoplay()&&!autoplayBlocked);
    if(!visible||document.hidden||!wantsPlayback){player.pause();return;}
+   // On a slow connection, the decorative film must not compete with the
+   // opening text and poster. An explicit Play always remains immediate.
+   if(intent.current==='auto'&&!openingReady)return;
    if(!sourcesMounted.current){setLoadSources(true);return;}
    void player.play().catch(error=>{
     if(disposed||(error as DOMException).name==='AbortError')return;
@@ -45,6 +48,15 @@ export function CinematicVideo({film,priority=false,className='',controlClassNam
    });
   };
   syncPlayback.current=sync;
+  if(priority){
+   const poster=element.querySelector('img');
+   void Promise.all([document.fonts.ready,poster?.decode().catch(()=>{})]).then(()=>{
+    if(disposed)return;
+    openingReady=true;
+    clearTimeout(timer);
+    timer=setTimeout(sync,160);
+   });
+  }
   const observer=new IntersectionObserver(entries=>{
    visible=entries.some(entry=>entry.isIntersecting&&entry.intersectionRatio>=.12);
    clearTimeout(timer);

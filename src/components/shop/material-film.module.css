@@ -1,5 +1,5 @@
 .film{position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:center;gap:clamp(36px,6vh,72px);min-height:100vh;min-height:100svh;margin:0;padding:clamp(112px,14vh,180px) var(--gutter,6vw) 56px;overflow:hidden;background:#080a0e;color:#f4f1e9}
-.film::before{content:"";position:absolute;z-index:1;inset:0;pointer-events:none;background:linear-gradient(180deg,#080a0e 0%,#080a0e30 23%,#080a0e12 54%,#080a0ee0 85%,#080a0e 100%),linear-gradient(90deg,#080a0ee8 0%,#080a0eae 32%,#080a0e24 68%,#080a0e2e 100%)}
+.film::before{content:"";position:absolute;z-index:1;inset:0;pointer-events:none;background:linear-gradient(180deg,#080a0e 0%,#080a0e30 23%,#080a0e12 54%,#080a0ee0 85%,#080a0e 100%),linear-gradient(90deg,#080a0ef0 0%,#080a0ed6 60%,#080a0e24 85%,#080a0e2e 100%)}
 .intro{position:relative;z-index:2;max-width:min(650px,60%);margin:auto 0}
 .intro .eyebrow{font:400 11px/1.7 var(--font-mono,monospace);letter-spacing:.13em;text-transform:uppercase;color:#d4ba81;margin:0 0 24px}
 .intro h2{font:400 clamp(64px,7.5vw,120px)/.98 var(--font-display);letter-spacing:-.035em;max-width:10ch;margin:0 0 28px;text-wrap:balance}
@@ -7,6 +7,6 @@
 .film figcaption{position:relative;z-index:2;width:calc(100% - 320px);max-width:720px;margin:0;font-size:12px;line-height:1.8;color:#c1cbd0}
 .filmControl{bottom:56px}
 .printStill{display:none}
-@media(max-width:780px){.film{min-height:100svh;padding:100px 24px 100px;gap:56px}.intro{max-width:100%;margin:auto 0}.intro h2{font-size:clamp(58px,12vw,88px);max-width:10ch}.intro p{max-width:32ch}.film::before{background:linear-gradient(180deg,#080a0e 0%,#080a0e48 25%,#080a0e5c 50%,#080a0ee8 82%,#080a0e 100%),linear-gradient(90deg,#080a0ec4,#080a0e38)}.film figcaption{width:100%;font-size:11px;max-width:52ch}.filmControl{bottom:28px}}
+@media(max-width:780px){.film{min-height:100svh;padding:100px 24px 100px;gap:56px}.intro{max-width:100%;margin:auto 0}.intro h2{font-size:clamp(58px,12vw,88px);max-width:10ch}.intro p{max-width:32ch}.film::before{background:linear-gradient(180deg,#080a0e 0%,#080a0e48 25%,#080a0e5c 50%,#080a0ee8 82%,#080a0e 100%),linear-gradient(90deg,#080a0edb,#080a0ebd)}.film figcaption{width:100%;font-size:11px;max-width:52ch}.filmControl{bottom:28px}}
 @media(max-width:360px){.film{padding-inline:20px}.intro h2{font-size:54px}.intro p{font-size:15px}}
 @media print{.film>div:first-child{display:none}.film{min-height:0;display:block;padding:20px 0;background:white;color:black;break-inside:avoid}.film::before{display:none}.film .printStill{display:block}.printStill img{display:block;width:100%;height:auto}.film .intro{max-width:none;margin:0 0 16px}.film .intro p,.film figcaption{width:100%;color:black}.intro h2{font-size:32px;max-width:none}.film figcaption{margin-top:12px}.filmControl{display:none}}

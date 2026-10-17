@@ -34,13 +34,13 @@
 .home.home[data-home-hero=cinematic] .heroVisual {
  position:absolute;inset:0;min-width:0;min-height:0;max-height:none;aspect-ratio:auto;margin:0;overflow:hidden;background:#08283a;display:block;isolation:auto;
 }
-.home.home .heroVisual::after {content:'';display:block;position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#080a0ee6 0%,#080a0e94 42%,#080a0e14 78%),var(--home-edge-fade);z-index:1}
+.home.home .heroVisual::after {content:'';display:block;position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#080a0ef0 0%,#080a0edb 40%,#080a0e2e 78%),var(--home-edge-fade);z-index:1}
 .home.home .heroImage {position:absolute;inset:0;z-index:0}
 .home.home .heroImage img {object-fit:cover}
 .home.home .heroNote,
 .home.home[data-home-hero=cinematic] .heroNote {
  position:absolute;inset:auto 40px 132px auto;z-index:3;max-width:300px;width:26%;
- padding:20px 0 0;background:transparent;border-top:1px solid #b89b6380;text-align:left;
+ padding:20px;background:linear-gradient(135deg,#080a0ef2,#080a0ee6);border-top:1px solid #b89b6380;text-align:left;
  display:flex;flex-direction:column;align-items:flex-start;gap:14px;color:#f4f1e9;
 }
 .home.home .heroCaption {position:absolute;right:40px;bottom:120px;z-index:3;margin:0;max-width:min(34%,500px);padding:8px 12px;background:#080a0ee6;color:#f4f1e9;font-size:12px;line-height:1.6}
@@ -136,7 +136,7 @@
  .home.home .heroCopy>div {gap:12px 24px;margin:26px 0 32px}
  .home.home .heroCopy>div>a:first-child {padding:14px 20px;gap:20px}
  .home.home .heroVisual,.home.home[data-home-hero=cinematic] .heroVisual {position:absolute;inset:0;min-height:0}
- .home.home .heroVisual::after {background:linear-gradient(0deg,#080a0ef2 4%,#080a0ea6 60%,#080a0e38),linear-gradient(90deg,#080a0e73,transparent)}
+ .home.home .heroVisual::after {background:linear-gradient(0deg,#080a0ef2 4%,#080a0ed6 60%,#080a0ec4),linear-gradient(90deg,#080a0e38,transparent)}
  .home.home .heroNote,.home.home[data-home-hero=cinematic] .heroNote {position:relative;inset:auto;grid-column:1;grid-row:2;align-self:end;margin:0 24px 112px;width:auto;max-width:none;flex-direction:row;align-items:center;justify-content:space-between;gap:12px;padding:16px 0 0}
  .home.home .heroNote p {font-size:26px}
  .home.home .heroCaption {position:relative;inset:auto;grid-column:1;grid-row:2;align-self:end;margin:0 24px 112px;max-width:none;width:fit-content}

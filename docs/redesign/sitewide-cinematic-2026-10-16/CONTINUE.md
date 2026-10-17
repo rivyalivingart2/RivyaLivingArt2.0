@@ -1,3 +1,19 @@
+# Continue — cinematic acceptance follow-up
+
+**Latest checkpoint, 16 October 2026:** local repairs on `codex/cinematic-acceptance`, base `66e82ef04f76b8460654bab4329ccbadfb47f28e`. Read `ACCEPTANCE-FOLLOWUP.md`, `acceptance-verification.json`, `acceptance-preservation.json`, `acceptance-production-studio.json`, `acceptance-font-subset.json`, `acceptance-field-availability.json` and `acceptance-native-limitations.json`.
+
+Source and verification are complete for the documented local scope: contrast scrims, dual-edge focus, 41.6% smaller common fonts and poster/font-first automatic hero loading. No new dependencies. 600 merged contrast samples, 66 interaction checks, 1,051 conditional assertions/321 states, all 656 current published URLs in a mobile browser and all 246 referenced media URLs pass. Build/types, zero-error lint, 350 unit, 403 runtime and 12 preflight checks pass; 62 existing lint warnings remain. Protected snapshot: all 1,658 original local rows unchanged.
+
+Local app: `http://127.0.0.1:4199/`. Evidence: `test-results/cinematic-acceptance/`. Tools: `tools/cinematic-acceptance/`. `summarize.mjs` verifies the merged final contrast matrix and hashes source/evidence. Original failed diagnostic samples remain labelled historical; repair runs replace, rather than add to, their counts. No production data was changed. The owner renewed Studio sign-in; actual Public media, child media metadata, image placements, saved page/article previews and Hindi/Gujarati panels were checked read-only.
+
+**Next work requires a release instruction or new external evidence.** The new source has not been pushed or deployed. Prepare a detailed PR using `ACCEPTANCE-PR.md`, verify exact-head production and rerun public/Studio and slow-mobile performance after an authorized release. Initial production 32-sample and dedicated production/mobile 16-sample runs remain distinct from the 16-sample local candidate run. All 12 local cold samples pass 2.5s; production cold samples still exceed it. Do not present local results as production field acceptance.
+
+Native Narrator speech could not be observed through the available helper; it was stopped. Owner allows existing screen readers only and confirms no physical device is available. Do not install NVDA or manufacture device/native/field proof. Field metric queries returned empty results. Historical access-request schema activation remains separate; do not replay migrations, publications, imports, fixture creation or staff changes.
+
+All prior checkpoint text is preserved below as historical context.
+
+---
+
 # Continue — website-wide cinematic redesign
 
 **Release update, 16 October 2026:** the owner subsequently authorized pushing all changes into main. PR #62 merged as `224b2ca0e192b8d8ceced3045d6f8a193b734362`; exact-head production is READY and live public/Studio checks passed within the recorded scope. Read `RELEASE.md` and `live-verification.json` first. The local-only status and instructions below are the historical pre-release checkpoint, superseded by that explicit authorization and completed release. Do not replay fixtures, data publications or migrations. The current follow-up contains documentation only.

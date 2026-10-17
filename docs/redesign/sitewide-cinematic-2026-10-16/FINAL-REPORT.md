@@ -1,3 +1,7 @@
+**Latest acceptance follow-up:** read [ACCEPTANCE-FOLLOWUP.md](./ACCEPTANCE-FOLLOWUP.md) and `acceptance-verification.json` for the subsequent contrast repairs, production inventory, conditional tests and performance measurements. The implementation report below is preserved as the earlier pre-release record; its original release was completed in `RELEASE.md`, while the new acceptance repairs remain local.
+
+---
+
 # Rivya Living Art — website-wide cinematic implementation
 
 16 October 2026 · Local branch `codex/cinematic-sections` · Based on released main `ffd863928744df0ae2cf985f6504421842a074db`.
