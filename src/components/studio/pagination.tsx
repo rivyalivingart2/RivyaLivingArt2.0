@@ -34,7 +34,7 @@ export function Pagination({page, totalPages, setPage}: {page: number; totalPage
       >
         <ChevronLeft size={14}/> Prev
       </button>
-      <span style={{ height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 12px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid #ffffff40', borderRadius: '4px', fontSize: '13px', fontWeight: 500 }}>
+      <span aria-live="polite" aria-label={`Page ${page} of ${totalPages}`} style={{ minHeight: '44px', flex: '0 0 auto', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 12px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid #ffffff40', borderRadius: '4px', fontSize: '13px', fontWeight: 500 }}>
         {page} / {totalPages}
       </span>
       <button 

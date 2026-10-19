@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-10-17",
+  "specialist": "performance-seo-source",
+  "baseCommit": "66e82ef04f76b8460654bab4329ccbadfb47f28e",
+  "measurementScope": "Source/file verification only. Browser profiling belongs to root audit. No field or current lab pass inferred.",
+  "fontVerification": [
+    {
+      "weight": 400,
+      "source": "src/styles/fonts/inter-normal-400.woff2",
+      "common": "src/styles/fonts/inter-common-400.woff2",
+      "fullBytes": 108208,
+      "releasedCommonBytes": 61016,
+      "localCommonBytes": 35784,
+      "fullSha256": "2d7b3f5b7d7e232001995bcf563175b20d8c115ca49b35468992be8da823eacd",
+      "localCommonSha256": "f45afaccb99d782507835d8fbfdd0ca355885fcd11e6c74ab3662bbf2995f107",
+      "fullCodepoints": 2849,
+      "commonCodepoints": 399,
+      "retainedGlyphs": 886,
+      "fullOriginalUnchanged": true,
+      "allRetainedOutlinesHorizontalVerticalMetricsEqual": true
+    },
+    {
+      "weight": 500,
+      "source": "src/styles/fonts/inter-normal-500.woff2",
+      "common": "src/styles/fonts/inter-common-500.woff2",
+      "fullBytes": 111876,
+      "releasedCommonBytes": 62836,
+      "localCommonBytes": 36716,
+      "fullSha256": "130d717b47ca2c701ca56c6bf917e459317f1810a1942e1a1b9c66cb953605c6",
+      "localCommonSha256": "95bfac2d6c2bf22ae0f7ae720564347c5bbe29280d173e3451b6c21124bf6fa9",
+      "fullCodepoints": 2849,
+      "commonCodepoints": 399,
+      "retainedGlyphs": 886,
+      "fullOriginalUnchanged": true,
+      "allRetainedOutlinesHorizontalVerticalMetricsEqual": true
+    },
+    {
+      "weight": 600,
+      "source": "src/styles/fonts/inter-normal-600.woff2",
+      "common": "src/styles/fonts/inter-common-600.woff2",
+      "fullBytes": 111964,
+      "releasedCommonBytes": 63236,
+      "localCommonBytes": 36752,
+      "fullSha256": "b4e6e655556fc2f16a5fa763c4ff129a1872881af30b56547718facff6b05d7d",
+      "localCommonSha256": "73754c8c140b2e85e1fa8f1b407bada30149fdf3278712c29b615d0d0bf9ccfe",
+      "fullCodepoints": 2849,
+      "commonCodepoints": 399,
+      "retainedGlyphs": 886,
+      "fullOriginalUnchanged": true,
+      "allRetainedOutlinesHorizontalVerticalMetricsEqual": true
+    }
+  ],
+  "commonBeforeBytes": 187088,
+  "commonLocalBytes": 109252,
+  "mediaFiles": [
+    {
+      "path": "public/media/migration/hero-pour-loop-poster.jpg",
+      "bytes": 98481,
+      "sha256": "e7dec2a8d6972a0825caf57aae320db7b1a0c319eb2f7a3d5581ba9190040caf"
+    },
+    {
+      "path": "public/media/migration/hero-pour-loop.webm",
+      "bytes": 1649274,
+      "sha256": "ba77d14e1d380f382bbc86af1c5e8533ad3e8a0ad2bb604d06506b3da5b216c8"
+    },
+    {
+      "path": "public/media/migration/hero-pour-loop.mp4",
+      "bytes": 2135160,
+      "sha256": "61d4633578353e813e64506877eed198bc682b6424701b7783720af51530869d"
+    }
+  ],
+  "labMetrics": {
+    "status": "NOT_MEASURED_BY_SPECIALIST",
+    "lcpMs": null,
+    "cls": null,
+    "inpMs": null,
+    "ttfbMs": null,
+    "bundleBytes": null
+  },
+  "fieldMetrics": {
+    "status": "NOT_QUERIED_BY_SPECIALIST",
+    "lcpP75Ms": null,
+    "clsP75": null,
+    "inpP75Ms": null
+  },
+  "findings": [
+    {
+      "id": "SEO-LANGUAGE-01",
+      "severity": "P2",
+      "status": "VERIFIED_OPEN",
+      "evidenceLevel": "SOURCE_CONFIRMED_RENDERED_REPRODUCTION_PENDING",
+      "summary": "Editorial JSON-LD hardcodes English even when supplied reviewed localized document",
+      "source": "src/components/shop/structured-data.tsx:15",
+      "relatedSources": [
+        "src/components/shop/editorial.tsx:58",
+        "src/components/shop/editorial.tsx:97",
+        "src/lib/published-content.ts:35",
+        "src/lib/editorial-metadata.ts:26"
+      ],
+      "confirmationNeeded": "Rendered Hindi/Gujarati reviewed article headline and JSON-LD inLanguage comparison",
+      "safeFix": "Derive effective document language from original reviewed-language eligibility before localization; do not recompute review hash on localized text. Pass explicit effective language to schema renderer, keep en for unavailable translations."
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "PERF-SSR-01",
+      "status": "UNMEASURED_HYPOTHESIS",
+      "summary": "Root published locale/copy read and current-publication identity checks can contribute to first-byte time; trace before changing",
+      "constraint": "No TTL/stale publication fallback, no weakening withdrawn/private data guards"
+    },
+    {
+      "id": "PERF-GALLERY-01",
+      "status": "UNMEASURED_HYPOTHESIS",
+      "summary": "Media-heavy public and Studio grids need network/decoding investigation on first open",
+      "constraint": "Retain approved subject/crop/provenance and product controls; do not optimize from raw asset bytes alone"
+    },
+    {
+      "id": "PERF-CSS-01",
+      "status": "UNMEASURED_HYPOTHESIS",
+      "summary": "Global legacy rules may contribute unused CSS; verify built coverage and actual consumers before removing",
+      "constraint": "No broad deletion based on class search alone; shared conditional/error/preview surfaces may still consume them"
+    }
+  ]
+}

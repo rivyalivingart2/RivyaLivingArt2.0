@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-17",
+  "baseline": "66e82ef04f76b8460654bab4329ccbadfb47f28e",
+  "evidence": "Fresh inspected public reference screenshots plus root-captured local layouts; no source-only visual claims",
+  "findings": [
+    {
+      "id": "VIS-01",
+      "severity": "P2",
+      "status": "VERIFIED_FIXED",
+      "title": "Related-product section retains hard navy background edges",
+      "route": "/pieces/river-channel",
+      "viewports": [
+        "1440x1000",
+        "390x844"
+      ],
+      "environment": "isolated local published QA",
+      "screenshots": [
+        "test-results/rivya-master-audit/screenshots/1440-pieces-river-channel.png",
+        "test-results/rivya-master-audit/screenshots/390-pieces-river-channel.png"
+      ],
+      "actual": "Flat navy recommendation block meets charcoal detail/footer with abrupt horizontal edges",
+      "expected": "Use the existing seamless public atmosphere while preserving natural grid height",
+      "source": "src/components/shop/shop-site.tsx:85",
+      "relatedSource": [
+        "src/components/shop/shop.module.css:338",
+        "src/components/shop/public-pages.module.css:8"
+      ],
+      "reproduction": "Open published product with related records and scroll across detail-to-related and related-to-footer edges",
+      "recommendedFix": "Dedicated related-section public-part hook and scoped existing --page-atmosphere; do not change all elevated panels",
+      "risk": "Low, presentation only; preserve all product/media data",
+      "effort": "Small",
+      "validation": "Fresh 1440/390 comparison, 320/768 overflow, unchanged related text/cards/links/media",
+      "baselineStatus": "VERIFIED_OPEN",
+      "finalEvidence": "screenshots/390-pieces-river-channel.png; after-related-390.png; studio-regressions.json"
+    },
+    {
+      "id": "VIS-02",
+      "severity": "P3",
+      "status": "VERIFIED_FIXED",
+      "title": "Studio pagination count wraps outside its fixed-height badge",
+      "route": "/studio/products",
+      "viewports": [
+        "1440x1000",
+        "390x844"
+      ],
+      "environment": "isolated local published QA; synthetic retained catalogue, no product edits",
+      "screenshots": [
+        "test-results/rivya-master-audit/screenshots/1440-studio-products.png",
+        "test-results/rivya-master-audit/screenshots/390-studio-products.png"
+      ],
+      "actual": "1 / 6 wraps to three lines and extends outside the 32px count badge",
+      "expected": "Legible one-line page count and usable adjacent navigation",
+      "source": "src/components/studio/pagination.tsx:37",
+      "reproduction": "Open catalogue with more than 20 records and inspect list footer at 390 or 1440",
+      "recommendedFix": "Nonshrinking no-wrap count and flexible adjacent controls; retain page state and button semantics",
+      "risk": "Low, local layout change only",
+      "effort": "Small",
+      "validation": "320/390/768/1440 layouts, multi-digit page count, keyboard Previous/Next and last-page state",
+      "baselineStatus": "VERIFIED_OPEN",
+      "finalEvidence": "screenshots/390-studio-products.png; after-pagination-390.png; studio-regressions.json"
+    }
+  ],
+  "referenceCapture": {
+    "screenshots": 38,
+    "observations": 12,
+    "http200": 12,
+    "pageExceptions": 0,
+    "browser": "Chrome 155.0.8059.40",
+    "dpr": 1,
+    "widths": [
+      1440,
+      390
+    ],
+    "rawEvidence": "test-results/rivya-master-audit/visual-reference/reference-evidence.json",
+    "limits": "No interaction certification; local and production content differ; preloader and settled Era states distinguished"
+  },
+  "broadLayoutReview": {
+    "automatedObservations": 588,
+    "routeWidthMatrix": "73 routes x 8 widths + 4 short-height cases",
+    "overflowFlags": 0,
+    "captureErrors": 0,
+    "evidence": "test-results/rivya-master-audit/layouts.json",
+    "additionalScreenshotsVisuallyInspectedByThisSpecialist": 16,
+    "families": [
+      "product detail",
+      "collection",
+      "contact",
+      "commission form",
+      "public Journal",
+      "brand story",
+      "unavailable state",
+      "Studio overview",
+      "Studio catalogue",
+      "Studio inquiries",
+      "Studio editorial list",
+      "Studio settings"
+    ],
+    "limits": "Selected representative screenshots only; not all 588 screenshots manually inspected. Reduced full-page overviews support composition assessment, not fine text contrast or interaction certification."
+  },
+  "decisions": {
+    "keep": "Current original logo, dark palette, serif hierarchy, full-bleed Hero/Resin, seamless homepage transitions, natural product/form growth and operational Studio layouts",
+    "improve": "Related-product edge continuity, count-badge layout, and already-pending scoped media contrast repairs after quantitative verification",
+    "doNotCopy": "External branding/copy/assets, Era preloader or bright palette, legacy hard section bands, automatic additional bottom navigation, legacy imports/backend/motion dependencies"
+  },
+  "safety": {
+    "appEdits": 0,
+    "productionWrites": 0,
+    "formsSubmitted": 0,
+    "cmsPublications": 0,
+    "packagesAdded": 0,
+    "assetsImported": 0,
+    "externalMessages": 0
+  },
+  "finalCoordinatorVerification": {
+    "at": "2026-10-19T05:52:58.919Z",
+    "candidate": "2f7fc8e634fea4593b3bf1c44ed90d16fe7c6ef48bd21b977e1737a46341071b",
+    "authoritative": "ISSUE-REGISTER.csv / FINAL-VERIFICATION.md",
+    "note": "Original specialist sections remain before/source evidence; this status applies only to local candidate."
+  }
+}

@@ -1,25 +1,35 @@
 import { defineConfig } from "@playwright/test";
+import {existsSync} from 'node:fs';
 
 if (process.env.VERCEL_ENV !== undefined) {
   throw new Error("These browser tests start a local preview only; run them outside a Vercel deployment.");
 }
 
-// A separate local production process exercises the real built application.
-// Run `npm run build` first; an existing server is never silently reused.
+const listing=process.argv.includes('--list');
+if(!listing&&process.env.RIVYA_E2E_ISOLATED_QA!=='1')throw new Error('Set RIVYA_E2E_ISOLATED_QA=1 to run against the guarded local QA database. See tools/master-audit/E2E-README.md.');
+if(!listing&&(!process.versions.node.startsWith('22.')||Number(process.versions.node.split('.')[1])<16))throw new Error('Browser tests require the project Node 22 runtime (22.16 or newer).');
+if(!listing&&(!existsSync('test-results/old-design-migration/.env.qa')||!process.env.RIVYA_MIGRATION_PG_MODULE||!existsSync(process.env.RIVYA_MIGRATION_PG_MODULE)))throw new Error('Existing isolated QA configuration and RIVYA_MIGRATION_PG_MODULE are required. No fixture or database is created by this suite.');
+
+// Own a separate process; the existing owner preview at 4199 is never reused.
+// run-local validates the actual fixed loopback database identity before startup.
 const port = 4173;
 const baseURL = `http://127.0.0.1:${port}`;
 
 export default defineConfig({
   testDir: "./e2e",
-  fullyParallel: true,
+  fullyParallel: false,
   forbidOnly: Boolean(process.env.CI),
   retries: 0,
   workers: 2,
-  reporter: [["list"], ["html", { open: "never" }]],
-  outputDir: "test-results",
+  reporter: [["list"], ["html", { open: "never",outputFolder:'test-results/rivya-master-audit/e2e-final-report' }],['json',{outputFile:'test-results/rivya-master-audit/e2e-final-results.json'}]],
+  outputDir: "test-results/rivya-master-audit/e2e-final",
+  globalSetup:'./tools/master-audit/e2e-setup.ts',
+  timeout:60_000,
+  expect:{timeout:10_000},
   use: {
     baseURL,
     browserName: "chromium",
+    contextOptions:{reducedMotion:'reduce'},
     launchOptions: process.env.RIVYA_BROWSER_EXECUTABLE
       ? { executablePath: process.env.RIVYA_BROWSER_EXECUTABLE }
       : {},
@@ -33,27 +43,9 @@ export default defineConfig({
     { name: "narrow-320", use: { viewport: { width: 320, height: 740 }, isMobile: true, hasTouch: true } },
   ],
   webServer: {
-    command: `npm start -- --hostname 127.0.0.1 --port ${port}`,
+    command: `"${process.execPath}" tools/old-design-migration/run-local.mjs node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port ${port}`,
     url: `${baseURL}/robots.txt`,
     reuseExistingServer: false,
-    timeout: 30_000,
-    env: {
-      NODE_ENV: "production",
-      NEXT_TELEMETRY_DISABLED: "1",
-      RIVYA_VISUAL_PREVIEW: "1",
-      VERCEL_ENV: "",
-      VERCEL: "",
-      RIVYA_DATA_MODE: "isolated",
-      RIVYA_ENV: "preview",
-      DATABASE_URL: "",
-      DATABASE_URL_UNPOOLED: "",
-      BLOB_READ_WRITE_TOKEN: "",
-      STUDIO_ADMIN_ID: "",
-      STUDIO_ADMIN_PASSWORD: "",
-      STUDIO_SESSION_SECRET: "",
-      RIVYA_ORDER_INTAKE_ENABLED: "false",
-      RIVYA_ORDER_MESSAGE_RETRY_ENABLED: "false",
-      SITE_INDEXABLE: "false",
-    },
+    timeout: 60_000,
   },
 });

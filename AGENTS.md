@@ -1,4 +1,16 @@
-# Current checkpoint - cinematic acceptance repairs verified locally
+# Current checkpoint — master audit continuation, 19 October 2026
+
+The owner's current request is the full website, Studio and codebase audit, verified narrow local fixes and the report under `docs/audits/rivya-master-audit/`. This checkpoint takes precedence over historical release and phase instructions below. Work is on `codex/rivya-master-audit`; the pre-existing acceptance changes were preserved in local checkpoint `40907ff` before the new audit fixes. Released main remains `66e82ef04f76b8460654bab4329ccbadfb47f28e`; its GitHub identity and READY production alias were rechecked read-only on 19 October.
+
+Read `EXECUTIVE-SUMMARY.md`, `FINAL-VERIFICATION.md`, `ISSUE-REGISTER.csv` and `SECURITY-RELEASE-REVIEW.md` in the audit folder for final evidence and gates. Broad public/Studio/layout/conditional/contrast/interaction observations are dated 17 October. The patched candidate's package, build, type, unit, workflow, E2E, accessibility, motion, Studio and performance checks are separately dated 19 October. Earlier 600-sample/350-test checkpoint counts below are historical, not this audit's current totals. Follow final receipts rather than treating a source statement as a passing test.
+
+Existing Next/ESLint config, Sharp and source-map-js received compatible local security updates. Production source has not changed; a development-only braces advisory remains disclosed. The settled production Staff account/password-request failure and released mobile performance observations remain open. The 19 October browser inventory had no accessible production Studio session, and repository environment discovery found no production database configuration for schema/grant diagnosis. Read-only diagnosis is authorized when appropriate existing access is available; a production repair is not.
+
+Do not push, create a release PR, merge, deploy, write production data or publish CMS content without fresh explicit authorization. Preserve the original logo, palette, business content, protected records, media/crops, draft/revision and manual WhatsApp contracts. Raw evidence stays in ignored `test-results/rivya-master-audit/`. Use the guarded isolated QA database for local writes. No newly installed reader or physical device was authorized/available, so native/device/field gates remain separate. Do not replay historical imports, publications, fixtures or migrations; excluded checkout/customer-account/scraping/legacy-transfer/backup features remain excluded.
+
+---
+
+# Historical checkpoint - cinematic acceptance repairs verified locally
 
 16 October 2026: owner asked to finish the four remaining cinematic acceptance areas. Local branch codex/cinematic-acceptance is based on released main 66e82ef04f76b8460654bab4329ccbadfb47f28e. Read docs/redesign/sitewide-cinematic-2026-10-16/ACCEPTANCE-FOLLOWUP.md, acceptance-verification.json and CONTINUE.md first. New source strengthens image/video text scrims and keyboard focus, reduces common font bytes by 41.6% without changing retained glyphs, and defers automatic hero video until opening fonts/poster are ready. No release or production mutation in this follow-up.
 

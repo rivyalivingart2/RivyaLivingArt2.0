@@ -6,6 +6,7 @@ import {referenceSectionStates} from '@/lib/home-reference-model';
 import {isDesignPageRoute} from '@/lib/page-design-model';
 import {isDiscoveryRoute} from '@/lib/detailed-pages';
 import {localizeContent} from '@/lib/content-model';
+import {localizeEditorialContent} from '@/lib/editorial-content-language';
 import {isLocale} from '@/lib/site-settings-model';
 import {publishedCopy} from '@/lib/published-copy';
 import {ShopShell} from '@/components/shop/shop-shell';
@@ -27,7 +28,7 @@ export default async function PresentationPreview({searchParams}:{searchParams:P
  const design=isDesignPageRoute(page)?saved?.layout.pages?.[page]:undefined;
  const workshop=page==='/workshops'?saved?.layout.serviceTemplates?.workshops:undefined;
  if(!saved||(page!=='/'&&!workshop&&(!design||!captured)))return <main id="main-content" className={s.message}><h1>Choose an available saved design</h1><p>Save this page’s design, then open its exact revision.</p><Link href="/studio/sections">Return to editing</Link></main>;
- const capturedPage=captured?{...localizeContent(captured.document,locale),publishedRevision:captured.version,image:captured.document.pageSnapshot?.image?.path,imageAlt:captured.document.pageSnapshot?.image?.alt,imagePosition:captured.document.pageSnapshot?.image?.position}:undefined;
+ const capturedPage=captured?{...localizeEditorialContent(captured.document,locale),publishedRevision:captured.version,image:captured.document.pageSnapshot?.image?.path,imageAlt:captured.document.pageSnapshot?.image?.alt,imagePosition:captured.document.pageSnapshot?.image?.position}:undefined;
  const rendered=workshop?<WorkshopTemplatePreview design={workshop} version={version}/>:capturedPage&&design?(isDiscoveryRoute(page)?<CollectionDocument document={capturedPage} design={design} designVersion={version}/>:<EditorialDocument content={capturedPage} documents={[]} design={design} designVersion={version} reference={saved.reference} locale={locale} film={design.film?saved.media?.[0]:undefined}/>):<HomepageDocument document={localizeContent(saved.home,locale)} revision={saved.homeVersion} presentation={{layout:saved.layout,version}} reference={saved.reference} locale={locale} film={saved.layout.film?saved.media?.[0]:undefined} copy={(await publishedCopy(locale)).values}/>;
  const content=<ShopShell publicDesign={page!=='/'} previewLocale={locale}><div lang={locale}>{rendered}</div></ShopShell>;
  const waiting=page==='/'&&saved.layout.composition?referenceSectionStates(saved.home,saved.reference,saved.layout.composition).filter(s=>s.enabled&&!s.ready):[];

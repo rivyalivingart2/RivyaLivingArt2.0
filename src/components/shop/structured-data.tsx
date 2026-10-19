@@ -1,21 +1,11 @@
 import type {ContentDocument} from '@/lib/content-model';
 import type {ShopProduct} from '@/lib/shop-model';
+import type {Locale} from '@/lib/site-settings-model';
 import {siteOrigin} from '@/lib/site-metadata';
-/** Escape markup boundaries even when an administrator supplied the visible text. */
-export function StructuredData({value}:{value:Record<string,unknown>}){
- return <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(value).replace(/</g,'\\u003c')}}/>;
-}
-export function EditorialStructuredData({document:d}:{document:ContentDocument}){
- const article=d.kind==='article',url=siteOrigin+d.route;
- return <StructuredData value={{'@context':'https://schema.org','@graph':[
-  {'@type':'BreadcrumbList',itemListElement:[
-   {'@type':'ListItem',position:1,name:'Home',item:siteOrigin+'/'},
-   ...(article?[{'@type':'ListItem',position:2,name:'Journal',item:siteOrigin+'/journal'}]:[]),
-   {'@type':'ListItem',position:article?3:2,name:d.title,item:url}]},
-  {'@type':article?'Article':'WebPage','@id':url,url,name:d.title,description:d.description,inLanguage:'en',
-   ...(article?{headline:d.title,author:{'@type':'Organization',name:'RivyaLivingArt',url:siteOrigin},mainEntityOfPage:url,articleSection:d.eyebrow}:{}),
-   ...(d.image?{image:siteOrigin+d.image}:{})}
- ]}}/>;
+import {StructuredData,editorialStructuredDataValue} from './structured-data-markup';
+export {StructuredData} from './structured-data-markup';
+export function EditorialStructuredData({document:d}:{document:ContentDocument&{contentLanguage?:Locale}}){
+ return <StructuredData value={editorialStructuredDataValue(d,siteOrigin)}/>;
 }
 export function WebsiteStructuredData(){return <StructuredData value={{'@context':'https://schema.org','@graph':[
  {'@type':'Organization','@id':siteOrigin+'/#atelier',name:'RivyaLivingArt',url:siteOrigin+'/'},

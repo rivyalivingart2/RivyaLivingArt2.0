@@ -1,4 +1,22 @@
-# Current owner instruction — publish CRAFT through a detailed PR
+# Current state — 19 October 2026 master audit continuation
+
+Current local branch: `codex/rivya-master-audit`. Pre-existing cinematic acceptance work is preserved at `40907ff`; the new audit fixes and compatible security updates remain local. GitHub main and the READY production alias were rechecked unchanged at `66e82ef04f76b8460654bab4329ccbadfb47f28e` on 19 October. No push, PR, merge, deployment, production business-data write or publication is authorized by the current audit request.
+
+Use `docs/audits/rivya-master-audit/FINAL-VERIFICATION.md` for exact final counts and dates, `ISSUE-REGISTER.csv` for current statuses, and `SECURITY-RELEASE-REVIEW.md` for dependency applicability. Broad public/private/layout/contrast/conditional evidence is from 17 October; post-patch execution is separately dated 19 October. The historical same-page Studio stress failure was not reproduced in the bounded patched-candidate retest; do not claim that dependency changes caused its resolution. Production access-request availability, released mobile performance, the development-only advisory and native/device/field/provider/lifecycle gates remain distinct.
+
+Read-only production diagnosis is already within scope, but no accessible Studio session or production database configuration was present in the current tools/check-out on 19 October. Do not infer the request-panel failure's cause or run setup SQL without evidence and fresh write authorization. Preserve all historical checkpoints below, protected data, excluded features and raw-evidence ignore rules.
+
+---
+
+# Historical state — 17 October 2026 master audit
+
+Released baseline: `66e82ef04f76b8460654bab4329ccbadfb47f28e` (PR #63 documentation after PR #62 cinematic implementation). The seven redesign phases and shared cinematic system are already implemented. Current source has 37 Studio workspaces, authenticated staff access, published content and persisted inquiry workflows. The audit maps actual routes and states rather than reactivating historical plans.
+
+Current work is on `codex/rivya-master-audit`, with the existing local acceptance repairs preserved at `40907ff` before new narrow fixes. The latest owner request forbids pushing, merging, deploying, modifying production data or publishing CMS content without fresh explicit authorization. Read `docs/audits/rivya-master-audit/EXECUTIVE-SUMMARY.md` and `FINAL-VERIFICATION.md` for exact current results and limits. Historical results below are not automatically fresh evidence. Native assistive/device and real-user field acceptance remain distinct from automated/browser checks.
+
+---
+
+# Historical owner instruction — publish CRAFT through a detailed PR
 
 5 October 2026. The owner explicitly requested all updated files in main with a PR documenting every change. Read `docs/decisions/2026-10-05-publish-craft-main.md` and `docs/redesign/CRAFT-MAIN-RELEASE.md`. Push the complete CRAFT branch, verify the exact PR head and required checks, then merge through the PR and verify the existing Vercel Git deployment. Do not push directly to main or bypass required reviews. This release includes C1–C5 source and backup removal; it does not certify unfinished C5/C6 or publish Studio records. Preserve protected data and archive/key removal boundaries. Later development returns to local-only until a new push-main request.
 

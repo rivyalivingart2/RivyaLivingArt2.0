@@ -1,0 +1,207 @@
+{
+  "auditDate": "2026-10-17",
+  "reviewer": "Motion and media source specialist",
+  "baselineSha": "66e82ef04f76b8460654bab4329ccbadfb47f28e",
+  "scope": "Source audit, pre-existing acceptance diff, approved film integrity, fresh local motion reproductions and anonymous production article-language GETs; followed by explicitly authorized narrow local memory/language corrections. No database, publication or release changes.",
+  "localFixBaselineSha": "40907ff",
+  "applicationFilesChangedByReviewer": [
+    "src/components/shop/homepage-motion.tsx",
+    "src/components/shop/structured-data.tsx",
+    "src/components/shop/structured-data-markup.tsx",
+    "src/components/shop/editorial.tsx",
+    "src/lib/published-content.ts",
+    "src/lib/saved-content-preview.tsx",
+    "src/lib/editorial-content-language.ts",
+    "src/app/studio/preview/frame/page.tsx",
+    "src/app/studio/presentation/preview/page.tsx"
+  ],
+  "localFixVerification": {
+    "newTestFile": "tests/editorial-content-language.test.mjs",
+    "testCommand": "node --import tsx --test tests/editorial-content-language.test.mjs tests/editorial-language-presentation.test.mjs tests/p6-completion.test.mjs",
+    "passed": 29,
+    "failed": 0,
+    "skipped": 0,
+    "newRegressionCases": 14,
+    "targetedLintExitCode": 0,
+    "browserRetest": "PENDING coordinator rebuild; before-fix evidence retained",
+    "typecheck": "Concurrent outside-scope E2E/config errors reported to coordinator; no type errors in specialist-owned files observed."
+  },
+  "findings": [
+    {
+      "id": "MOTION-01",
+      "severity": "P2",
+      "status": "VERIFIED_FIXED",
+      "evidenceLevel": "source and fresh Chrome reproduction confirmed",
+      "browserEvidence": "test-results/rivya-master-audit/motion-seo-repro-before.json",
+      "observed": "4GB/8-core: canvas=low-power, home=active, hero translateY -29.7px to -5.94px after scrolling. Normal 8GB/8-core and static 8GB/4-core controls verified.",
+      "title": "Homepage motion omits the existing low-memory hardware gate",
+      "localImplementation": "Reported deviceMemory <=4 now joins the existing <=4-core guard. Browser after-fix verification pending rebuild.",
+      "page": "/",
+      "viewport": "Desktop 1440x900, fine pointer, no reduced motion, reported 4 GB memory and 8 CPU cores",
+      "actual": "Canvas treats the device as low-power; HomepageMotion eligibility checks CPU cores but not memory and can mount the scroll runtime.",
+      "expected": "Existing low-power policy applies consistently to decorative homepage motion and global page motion.",
+      "rootCause": [
+        "src/components/shop/homepage-motion.tsx:15",
+        "src/components/design-foundation/cinematic-canvas.tsx:27"
+      ],
+      "reproduce": [
+        "Before hydration override reported deviceMemory to 4 and hardwareConcurrency to 8.",
+        "Use fine pointer, hover, normal motion, no Save-Data at 1440x900.",
+        "Wait for optional runtimes and inspect canvas cinema-state, home-motion state and media transforms."
+      ],
+      "recommendation": "Reuse or align the existing hardware capability predicate without new dependencies or composition changes.",
+      "risk": "Low implementation risk. Do not infer a measured performance regression from this policy mismatch.",
+      "effort": "Small focused local change plus capability regression checks",
+      "validation": [
+        "4 GB / 8 core is static",
+        "8 GB / 8 core still permits desktop enhancement",
+        "4-core, touch, reduced motion and Save-Data stay static",
+        "Pause and resume still work"
+      ],
+      "baselineStatus": "VERIFIED_OPEN",
+      "finalEvidence": "motion-seo-repro-before.json; motion-seo-repro-after.json"
+    },
+    {
+      "id": "MOTION-02",
+      "severity": "P2",
+      "status": "VERIFIED_FIXED",
+      "evidenceLevel": "source and fresh Chrome reproduction confirmed",
+      "browserEvidence": "test-results/rivya-master-audit/motion-seo-repro-before.json",
+      "observed": "Collection #browse section-arrival view() transform changed 10.1497px to 5.83243px to 0 while canvas and preference were paused; repeated after persisted paused reload.",
+      "title": "Global decorative-effects pause does not cover legacy CSS section entrances",
+      "page": "Public pages using shop.module.css .section or .storyImage, such as /journal and collection pages",
+      "viewport": "Desktop browser supporting CSS view timelines",
+      "actual": "The control pauses canvas and GSAP while CSS section-arrival view-timeline transforms remain eligible under prefers-reduced-motion:no-preference.",
+      "expected": "Effects paused suppresses decorative scroll entrances as well as the shared GSAP enhancement; explicit film playback remains independent.",
+      "rootCause": [
+        "src/components/shop/shop.module.css:128",
+        "src/components/shop/shop.module.css:129",
+        "src/components/design-foundation/cinematic-tokens.css:8",
+        "src/components/design-foundation/cinematic-tokens.css:9"
+      ],
+      "reproduce": [
+        "Scroll a live .section through the entry 0%-22% range and record computed animationName, animationTimeline and transform.",
+        "Activate Pause effects.",
+        "Scroll through the same range and compare transforms; also reload with persisted pause."
+      ],
+      "recommendation": "Scope animation:none!important and transform:none!important to legacy .section/.storyImage under paused canvas. Avoid animation-play-state-only fixes that freeze intermediate displacement, and avoid freezing necessary operation feedback or explicit films.",
+      "risk": "Low scoped CSS risk; verify final static transform and resume behavior rather than freezing a displaced intermediate frame.",
+      "effort": "Small local preference rule plus focused interaction regression",
+      "validation": [
+        "Section entrances static after pause and on persisted paused visit",
+        "Unpaused view timelines still function where supported",
+        "Reduced-motion fallback remains static",
+        "Film controls and operational feedback remain usable"
+      ],
+      "baselineStatus": "VERIFIED_OPEN",
+      "finalEvidence": "motion-seo-repro-before.json; motion-seo-repro-after.json"
+    }
+  ],
+  "linkedLanguageFindings": [
+    {
+      "id": "SEO-LANGUAGE-01",
+      "severity": "P2",
+      "status": "VERIFIED_OPEN",
+      "localImplementation": "Resolved language is now captured from the original revision before localization/projection and used in Article JSON-LD. 14 new render/unit regressions pass; browser verification pending rebuild.",
+      "localResult": "NOT_REPRODUCED: exact local article falls back to English under hi/gu, so inLanguage=en is correct for that content.",
+      "productionResult": "VERIFIED_OPEN: actual Hindi and Gujarati headings match their translated JSON-LD headlines while Article inLanguage remains en. All three language requests returned 200.",
+      "rootCause": "src/components/shop/structured-data.tsx:15",
+      "evidence": "test-results/rivya-master-audit/motion-seo-repro-production-language.json",
+      "recommendation": "Render the resolved editorial content language, derived from reviewed source availability, rather than hard-coding English or blindly using the interface cookie. No database schema change needed."
+    },
+    {
+      "id": "A11Y-LANGUAGE-FALLBACK-01",
+      "severity": "P2",
+      "status": "VERIFIED_OPEN",
+      "localImplementation": "Editorial headings and content regions explicitly mark resolved language while JourneyText controls retain their own boundaries. Original saved-preview and captured card language rules preserved. Browser verification pending rebuild.",
+      "observed": "Local English fallback article H1 inherits hi/gu from html without a nearer lang=en boundary. This is a DOM finding, not an observed native-reader failure.",
+      "rootCause": [
+        "src/app/layout.tsx:70",
+        "src/lib/content-model.ts:106",
+        "src/components/shop/editorial.tsx:96"
+      ],
+      "evidence": "test-results/rivya-master-audit/motion-seo-repro-before.json",
+      "recommendation": "Mark actual fallback editorial text with its resolved language while preserving translated navigation/control language. Use transient render metadata, not a schema migration."
+    }
+  ],
+  "browserEnvironment": {
+    "browser": "Chrome 155.0.8059.40",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "dpr": 1,
+    "errors": 0,
+    "writeAttempts": 0,
+    "nativeDeviceEvidence": false
+  },
+  "freshChecks": [
+    {
+      "name": "approved poster integrity",
+      "result": "MATCH",
+      "path": "public/media/migration/hero-pour-loop-poster.jpg",
+      "bytes": 98481,
+      "sha256": "e7dec2a8d6972a0825caf57aae320db7b1a0c319eb2f7a3d5581ba9190040caf"
+    },
+    {
+      "name": "approved WebM integrity",
+      "result": "MATCH",
+      "path": "public/media/migration/hero-pour-loop.webm",
+      "bytes": 1649274,
+      "sha256": "ba77d14e1d380f382bbc86af1c5e8533ad3e8a0ad2bb604d06506b3da5b216c8"
+    },
+    {
+      "name": "approved MP4 integrity",
+      "result": "MATCH",
+      "path": "public/media/migration/hero-pour-loop.mp4",
+      "bytes": 2135160,
+      "sha256": "61d4633578353e813e64506877eed198bc682b6424701b7783720af51530869d"
+    },
+    {
+      "name": "current common font sizes",
+      "result": "READ",
+      "bytesByWeight": {
+        "400": 35784,
+        "500": 36716,
+        "600": 36752
+      },
+      "totalBytes": 109252,
+      "note": "Pre-existing local acceptance optimization; glyph preservation not independently rerun by this specialist."
+    }
+  ],
+  "remainingEvidence": [
+    {
+      "gate": "Moving-frame, gradient and glass contrast",
+      "status": "BLOCKED",
+      "reason": "Await current browser measurements from coordinating audit; historical acceptance samples are not rerun by this specialist."
+    },
+    {
+      "gate": "Native screen-reader tasks",
+      "status": "BLOCKED",
+      "reason": "Only existing readers authorized; no new observed native speech/task evidence provided to this specialist."
+    },
+    {
+      "gate": "Physical phone/tablet and low-power hardware",
+      "status": "BLOCKED",
+      "reason": "Owner states no physical device is available; emulation is separate evidence."
+    },
+    {
+      "gate": "Heap, rendering and production field performance",
+      "status": "BLOCKED",
+      "reason": "Source cleanup and media byte checks do not establish measured runtime or field performance; coordinator owns performance pass."
+    }
+  ],
+  "intentional": [
+    "Separate explicit film controls and decorative-effects preference",
+    "No full-screen operational tables or forms",
+    "No new Framer Motion or WebGL dependency",
+    "Preserved white 30-50 percent Studio access glass",
+    "Existing visualization and fictional/concept labels retained"
+  ],
+  "finalCoordinatorVerification": {
+    "at": "2026-10-19T05:52:58.913Z",
+    "candidate": "2f7fc8e634fea4593b3bf1c44ed90d16fe7c6ef48bd21b977e1737a46341071b",
+    "authoritative": "ISSUE-REGISTER.csv / FINAL-VERIFICATION.md",
+    "note": "Original specialist sections remain before/source evidence; this status applies only to local candidate."
+  }
+}
