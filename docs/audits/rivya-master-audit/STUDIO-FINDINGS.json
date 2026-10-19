@@ -1,0 +1,124 @@
+{
+  "auditDate": "2026-10-17",
+  "specialist": "Studio QA and administration UX",
+  "baselineHead": "66e82ef04f76b8460654bab4329ccbadfb47f28e",
+  "branchObserved": "codex/rivya-master-audit",
+  "evidenceType": "current source inspection; browser/runtime/DB execution owned by primary agent",
+  "applicationEdits": false,
+  "productionWrites": false,
+  "releases": false,
+  "moduleCounts": {
+    "registered": 37,
+    "administratorOnly": 8
+  },
+  "skillsRead": [
+    ".agents/skills/studio-admin-ux/SKILL.md",
+    ".agents/skills/fixing-accessibility/SKILL.md",
+    ".agents/skills/mobile-native/SKILL.md"
+  ],
+  "findings": [
+    {
+      "id": "STUDIO-01",
+      "severity": "P2",
+      "title": "Collection filters declare an incomplete tab pattern",
+      "status": "VERIFIED_FIXED",
+      "verificationScope": "Source-confirmed semantic and keyboard implementation mismatch; browser reproduction pending primary agent",
+      "route": "/studio/products",
+      "viewport": "all",
+      "source": [
+        {
+          "file": "src/components/studio/catalogue-editor.tsx",
+          "line": 104
+        }
+      ],
+      "actual": "Four role=tab buttons in role=tablist use aria-selected but no arrow/Home/End handling, roving tab index or associated panels.",
+      "expected": "A filter button group with aria-pressed, or a complete tab pattern.",
+      "reproduce": [
+        "Open local Studio Products.",
+        "Focus All pieces and press ArrowRight.",
+        "Tab through the filters and inspect their roles and selection states."
+      ],
+      "recommendedFix": "Use a labelled ordinary button group and aria-pressed for collection filtering; leave the lower six editor tabs intact.",
+      "risk": "Low; UI semantics only; no business logic, database or package dependency.",
+      "effort": "Under one hour plus focused verification",
+      "validation": "Keyboard and mouse select all filters; correct counts and selected pressed state; lower product tabs unchanged.",
+      "freshBrowserEvidence": null,
+      "baselineStatus": "VERIFIED_OPEN",
+      "finalEvidence": "studio-repro-before.json; studio-regressions.json"
+    },
+    {
+      "id": "STUDIO-02",
+      "severity": "P3",
+      "title": "Editorial record return is covered by two independent dirty-edit confirmations",
+      "status": "VERIFIED_FIXED",
+      "verificationScope": "Competing capture and link handlers confirmed in source; browser confirmation count pending primary agent",
+      "route": "/studio/journal?record=<isolated-test-record>",
+      "viewport": "all",
+      "source": [
+        {
+          "file": "src/components/studio/workspace.tsx",
+          "line": 130
+        },
+        {
+          "file": "src/components/studio/editorial-library.tsx",
+          "line": 23
+        }
+      ],
+      "actual": "Workspace capture asks to discard dirty edits; accepting leaves the dirty marker set so the record-return link independently asks again.",
+      "expected": "One deliberate leave decision, with typed edits preserved on cancel.",
+      "reproduce": [
+        "Open a local test Journal record.",
+        "Edit a field without saving.",
+        "Select Return to filtered records and accept the first prompt.",
+        "Count prompts; also cancel and verify typed text is retained."
+      ],
+      "recommendedFix": "Let the record-return link own its dirty/saving guard and mark it for the workspace capture handler, preserving protection elsewhere.",
+      "risk": "Low-to-medium; navigation guard changes require explicit cancel/discard and in-flight-save regression coverage.",
+      "effort": "One to two hours including focused verification",
+      "validation": "Exactly one prompt for ordinary return; cancel retains edits; discard returns with filters; history, new-tab and saving-state behavior unchanged.",
+      "freshBrowserEvidence": null,
+      "baselineStatus": "VERIFIED_OPEN",
+      "finalEvidence": "studio-repro-before.json; studio-regressions.json"
+    },
+    {
+      "id": "STUDIO-03",
+      "severity": "P2",
+      "title": "Translation overview has no request or DOM pagination",
+      "status": "DEFERRED",
+      "verificationScope": "Implementation property confirmed; current performance impact not measured by this specialist",
+      "route": "/studio/translations",
+      "viewport": "390px and throttled desktop measurement requested",
+      "source": [
+        {
+          "file": "src/components/studio/translation-workspace.tsx",
+          "line": 10
+        },
+        {
+          "file": "src/components/studio/translation-workspace.tsx",
+          "line": 16
+        }
+      ],
+      "actual": "Fetches complete content entries and mounts all matching document cards while computing review states.",
+      "expected": "No change required unless measured current scale harms usability; preserve complete review semantics if paginating.",
+      "recommendedFix": "Measure first; plan a review-summary endpoint or pagination only if current evidence justifies it.",
+      "risk": "Medium; summary completeness, current source fingerprints and published review state must remain accurate.",
+      "effort": "Measurement first; implementation estimate depends on result",
+      "validation": "Transfer bytes, opening latency, node count, filter response, long tasks and complete coverage at current record count.",
+      "freshBrowserEvidence": null
+    }
+  ],
+  "intentionalBoundaries": [
+    "Bulk import and Subscribers are administrator-only inactive prerequisite screens.",
+    "Scraper and Catalog Fill are absent/excluded; no old-product transfer is reactivated.",
+    "Access requests are embedded in Staff access; the oldest 100-open-request limit is explicitly disclosed.",
+    "Operational status changes wait for server confirmation rather than optimistic mutation.",
+    "Workshop choices prepare a private template and do not activate a public offering.",
+    "No real-device or native-reader certification is inferred from source or browser emulation."
+  ],
+  "finalCoordinatorVerification": {
+    "at": "2026-10-19T05:52:58.916Z",
+    "candidate": "2f7fc8e634fea4593b3bf1c44ed90d16fe7c6ef48bd21b977e1737a46341071b",
+    "authoritative": "ISSUE-REGISTER.csv / FINAL-VERIFICATION.md",
+    "note": "Original specialist sections remain before/source evidence; this status applies only to local candidate."
+  }
+}

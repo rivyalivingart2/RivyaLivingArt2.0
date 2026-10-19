@@ -12,6 +12,7 @@ import {revalidatePath} from 'next/cache';
 export const dynamic='force-dynamic';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
 const uuid=(v:unknown):v is string=>typeof v==='string'&&/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(v);
+const validDate=(v:unknown):v is string=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v)&&!v.startsWith('0000-')&&Number.isFinite(Date.parse(v))&&new Date(v).toISOString().slice(0,10)===v;
 export async function GET(request:Request){
  try{
   const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);
@@ -125,7 +126,8 @@ export async function POST(request:Request){
   if(body.action==='assign'||body.action==='follow-up'){
    if(body.action==='assign'&&session.role!=='admin')return json({error:'Only an administrator can reassign an inquiry.'},403);
    if(body.action==='follow-up')body.assignee=session.staffId;
-   if(!uuid(body.id)||!Number.isSafeInteger(body.version)||(body.assignee!==null&&!uuid(body.assignee))||(body.followUp!==null&&(typeof body.followUp!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(body.followUp))))return json({error:'Invalid assignment.'},400);
+   if(!uuid(body.id)||!Number.isSafeInteger(body.version)||(body.assignee!==null&&!uuid(body.assignee)))return json({error:'Invalid assignment.'},400);
+   if(body.followUp!==null&&!validDate(body.followUp))return json({error:'Choose a valid follow-up date.'},400);
    if(body.assignee){const staff=await sql`SELECT id FROM rivya_staff WHERE id=${body.assignee}::uuid AND active=true`;if(!staff.length)return json({error:'Choose an active staff member.'},400);}
    const rows=await sql`WITH changed AS (
     UPDATE rivya_studio_orders o SET version=version+1,updated_at=now() WHERE id=${body.id}::uuid AND version=${body.version}
@@ -133,7 +135,7 @@ export async function POST(request:Request){
    ), assigned AS (
     UPDATE rivya_inquiries SET assignee=CASE WHEN ${body.action==='assign'} THEN ${body.assignee}::uuid ELSE assignee END,follow_up=${body.followUp}::date WHERE id IN(SELECT id FROM changed) RETURNING id
    ), logged AS (
-    INSERT INTO rivya_inquiry_notes(inquiry_id,actor,body) SELECT id,${session.adminId},${`Assignment updated. Staff: ${body.assignee||'unassigned'}; follow-up: ${body.followUp||'none'}.`} FROM assigned
+    INSERT INTO rivya_inquiry_notes(inquiry_id,actor,body) SELECT id,${session.adminId},${body.action==='follow-up'?`Follow-up updated: ${body.followUp||'none'}.`:`Assignment updated. Staff: ${body.assignee||'unassigned'}; follow-up: ${body.followUp||'none'}.`} FROM assigned
    ) SELECT id FROM assigned`;
    return rows.length?json({saved:true}):json({error:'This inquiry changed elsewhere. Reload and try again.'},409);
   }

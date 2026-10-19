@@ -1,6 +1,6 @@
 'use client';
 import {memo,useCallback,useEffect,useState,type ReactNode} from 'react';
-import {studioModules,studioModule,studioModuleHref,type StudioModuleKey} from '@/lib/studio-modules';
+import {studioNavigationModules,studioModule,studioModuleHref,type StudioModuleKey} from '@/lib/studio-modules';
 import {usePathname} from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -56,7 +56,7 @@ const ConditionalWorkspace=dynamic(()=>import('./conditional-workspace').then(m=
 function WorkspaceLoading(){return <p data-studio-part="status" className={s.status} role="status">Opening this workspace page…</p>;}
 
 const moduleIcons = {'content-register':FileText,'editorial-order':FileText,'analytics':Activity,'categories':Boxes,'import':Boxes,'exports':Boxes,'research':Boxes,'content-gaps':Boxes,'process':FileText,'materials':FileText,'forms':FileText,'journal':FileText,'portfolio':FileText,'testimonials':FileText,'faqs':FileText,'pages':FileText,'landing-pages':FileText,'seo':FileText,'subscribers':FileText,'content-lab':FileText,overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,sections:LayoutDashboard,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,legacy:FileText,translations:Languages,'route-review':ExternalLink,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
-const navGroups = ['Today','Catalogue','Content','Editorial','Settings'].map(title=>({title,items:studioModules.filter(module=>module.group===title)}));
+const navGroups = ['Today','Catalogue','Content','Editorial','Settings'].map(title=>({title,items:studioNavigationModules.filter(module=>module.group===title)}));
 type ModuleContext={staffId?:string|null;admin:boolean;staff:StaffMember[];load:()=>Promise<void>};
 const moduleViews = {
  'content-register':({admin}:ModuleContext)=> <ContentRegister admin={admin}/>,
@@ -127,7 +127,7 @@ export function Workspace({initial,initialCollapsed=false}:{initial?:{session:Wo
  useEffect(()=>{if(pendingNavigationFocus!==path)return;const main=document.getElementById('main-content');if(!main)return;const focus=()=>{const heading=main.querySelector<HTMLElement>('h1');if(!heading)return false;heading.tabIndex=-1;heading.focus();pendingNavigationFocus=null;return true;};if(focus())return;const observer=new MutationObserver(()=>{if(focus())observer.disconnect();});observer.observe(main,{subtree:true,childList:true});return()=>observer.disconnect();},[path]);
 
  return (
-  <CinematicCanvas mode="studio"><div data-atmosphere="studio" className={s.workspace+' '+design.shell} data-module={view} data-collapsed={collapsed} onClickCapture={e=>{const a=(e.target as HTMLElement).closest('a');if(a&&a.target!=='_blank'&&a.getAttribute('href')?.startsWith('/studio')&&document.querySelector('[data-unsaved="true"]')&&!window.confirm('Leave this page and discard unsaved edits?')){e.preventDefault();e.stopPropagation();}}}>
+  <CinematicCanvas mode="studio"><div data-atmosphere="studio" className={s.workspace+' '+design.shell} data-module={view} data-collapsed={collapsed} onClickCapture={e=>{const a=(e.target as HTMLElement).closest('a');if(e.defaultPrevented||e.button!==0||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey||a?.hasAttribute('data-studio-leave-guard'))return;if(a&&a.target!=='_blank'&&a.getAttribute('href')?.startsWith('/studio')&&document.querySelector('[data-unsaved="true"]')&&!window.confirm('Leave this page and discard unsaved edits?')){e.preventDefault();e.stopPropagation();}}}>
     <header data-studio-part="top" className={s.top}>
       <button type="button" className={s.mobileNavToggle} aria-label="Open Studio navigation" aria-haspopup="dialog" aria-expanded={mobileNav} onClick={()=>setMobileNav(true)}><Menu size={20} aria-hidden="true"/><span>Menu</span></button>
       <div data-studio-part="brandGroup" className={s.brandGroup}>

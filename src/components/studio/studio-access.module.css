@@ -92,7 +92,7 @@
 .scrim {
  background:
   linear-gradient(180deg,#080a0e55 0%,#080a0e00 22%,#080a0e00 75%,var(--cinema-canvas,#080a0e) 100%),
-  linear-gradient(90deg,#08283ac7 0%,#08283a33 58%,#08283a3d 100%);
+  linear-gradient(90deg,#08283ae6 0%,#08283acf 36%,#08283a33 70%,#08283a3d 100%);
 }
 .panel {
  border:1px solid #ffffff55;
@@ -109,7 +109,7 @@
 @media(max-width:760px) {
  .frame { padding:24px 20px; }
  .scrim {
-  background:linear-gradient(180deg,#08283ac7 0%,#08283a8a 55%,var(--cinema-canvas,#080a0e) 100%);
+  background:linear-gradient(180deg,#08283adb 0%,#08283ab3 55%,var(--cinema-canvas,#080a0e) 100%);
  }
  .panel { box-shadow:0 16px 48px #080a0e30,inset 0 1px #ffffff66; }
 }

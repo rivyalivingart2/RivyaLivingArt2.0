@@ -1,6 +1,5 @@
 import {chromium} from 'playwright';
 import {mkdirSync,writeFileSync,readFileSync} from 'node:fs';
-import {createHash} from 'node:crypto';
 const out='output/playwright/redesign-phase2';mkdirSync(out,{recursive:true});
 const report={at:new Date().toISOString(),scope:'Local Phase 2 harness; browser emulation, not native/device/production acceptance',checks:[],pages:[],errors:[],externalRequests:[]};
 const check=(name,pass,detail)=>{report.checks.push({name,pass,...(detail?{detail}:{})});if(!pass)console.log('FAIL',name,detail??'');};
@@ -42,9 +41,11 @@ try{
   report.pages.push({name,width,height});await context.close();
  }
  const nojs=await browser.newContext({javaScriptEnabled:false,viewport:{width:1440,height:1000}}),p=await nojs.newPage();await p.goto('http://127.0.0.1:4179/');check('No JavaScript: heading and content visible',await p.getByRole('heading',{level:1}).isVisible()&&await p.locator('#reading article').textContent().then(t=>t.includes('A statement table')));await nojs.close();
- const baseline=JSON.parse(readFileSync('docs/redesign/modern-design-2026-10-13/source-baseline.json','utf8'));const changed=[];
- for(const [file,hash] of Object.entries(baseline.files)){if(createHash('sha256').update(readFileSync(file)).digest('hex')!==hash)changed.push(file);}
- check('All original source and asset files preserved except two authorized dependency files',changed.length===2&&changed.every(f=>['package.json','package-lock.json'].includes(f)),{total:Object.keys(baseline.files).length,changed});
+ // The original whole-application fingerprint belongs to the dated Phase 2
+ // receipt. Subsequent approved application releases intentionally changed it.
+ const inputs=Object.keys(JSON.parse(readFileSync('output/redesign-phase2/bundle-meta.json','utf8')).inputs).map(path=>path.replaceAll('\\','/'));
+ const prototypeFiles=['MaterialFilm.tsx','MotionSurface.tsx','ResponsivePicture.tsx','primitives.tsx','motion-capability.ts'];
+ check('Preview bundles its archived foundation without application source or removed GSAP wrapper',prototypeFiles.every(file=>inputs.includes(`experiments/redesign-phase2/foundation/${file}`))&&!inputs.some(path=>path.startsWith('src/')||path.includes('node_modules/@gsap/react/')));
  check('No browser runtime errors',report.errors.length===0,report.errors);check('No external requests from preview',report.externalRequests.length===0);
 }finally{await browser.close();writeFileSync(`${out}/review.json`,JSON.stringify(report,null,2));}
 console.log(JSON.stringify({checks:report.checks.length,failed:report.checks.filter(c=>!c.pass),errors:report.errors},null,2));

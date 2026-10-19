@@ -1,0 +1,13 @@
+{
+  "verifiedAt": "2026-10-16T10:24:00Z",
+  "origin": "https://www.rivyalivingart.com",
+  "method": "Existing administrator session in the in-app browser, renewed by owner. Read-only navigation and preview-language controls; no save, publish, crop, permission or business-record operation.",
+  "observations": [
+    {"workspace": "Public media", "heading": "The public image collection.", "listedProductAssets": 131, "brokenCompletedImages": 0, "firstMediaApiMs": 1355, "latestMediaApiMs": 398, "firstEditorialAssetsApiMs": 565, "latestEditorialAssetsApiMs": 761, "imageRequestRangeMs": [333, 1913]},
+    {"workspace": "Public media child editor", "asset": "B13-product-platter.jpg", "state": "Published", "savedUsages": 18, "result": "Existing image, description, caption, provenance and review controls rendered. No edits."},
+    {"workspace": "Site images", "page": "home", "publishedImageOptions": 154, "desktopFocus": [42, 54], "mobileFocus": [40, 52], "result": "Saved desktop/mobile crop previews rendered. No sliders moved."},
+    {"workspace": "Site images", "page": "our-story", "placements": 4, "state": "Published", "savedRevision": 3, "result": "Full-width and mobile iframe saved previews rendered with content and image."},
+    {"workspace": "Journal child editor", "record": "DB001", "revision": 6, "state": "Published and aligned", "translationPanels": {"hi": "reviewed; 19/19 fields", "gu": "reviewed; 19/19 fields"}, "result": "Both translation panels and exact saved revision preview rendered; zero broken completed images. This observes existing review status, not a new independent linguistic review."}
+  ],
+  "limitations": ["Timing samples describe this browser session, not a field-performance percentile or service-level guarantee.", "The local DB001 fixture has no saved revision; its safe unavailable state is tested separately. Production revision 6 exists and opened successfully.", "Historical Studio access-request table activation is a separate release prerequisite; no schema changes attempted."]
+}

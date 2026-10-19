@@ -1,0 +1,86 @@
+{
+  "verifiedAt": "2026-10-16T10:29:59.8181623Z",
+  "scope": "Local protected business/content snapshots; session tables excluded",
+  "scopes": [
+    {
+      "scope": "rivya_catalogue",
+      "unchanged": true,
+      "after": 120,
+      "before": 120
+    },
+    {
+      "scope": "rivya_content",
+      "unchanged": true,
+      "after": 603,
+      "before": 603
+    },
+    {
+      "scope": "rivya_public_media",
+      "unchanged": true,
+      "after": 152,
+      "before": 152
+    },
+    {
+      "scope": "rivya_business_settings",
+      "unchanged": true,
+      "after": 1,
+      "before": 1
+    },
+    {
+      "scope": "rivya_revisions",
+      "unchanged": true,
+      "after": 738,
+      "before": 738
+    },
+    {
+      "scope": "rivya_inquiries",
+      "unchanged": true,
+      "after": 2,
+      "before": 2
+    },
+    {
+      "scope": "rivya_studio_orders",
+      "unchanged": true,
+      "after": 8,
+      "before": 8
+    },
+    {
+      "scope": "rivya_studio_order_events",
+      "unchanged": true,
+      "after": 16,
+      "before": 16
+    },
+    {
+      "scope": "rivya_inquiry_notes",
+      "unchanged": true,
+      "after": 0,
+      "before": 0
+    },
+    {
+      "scope": "rivya_references",
+      "unchanged": true,
+      "after": 0,
+      "before": 0
+    },
+    {
+      "scope": "rivya_staff",
+      "unchanged": true,
+      "after": 10,
+      "before": 10
+    },
+    {
+      "scope": "rivya_privacy_controls",
+      "unchanged": true,
+      "after": 8,
+      "before": 8
+    },
+    {
+      "scope": "rivya_erasure_ledger",
+      "unchanged": true,
+      "after": 0,
+      "before": 0
+    }
+  ],
+  "allUnchanged": true,
+  "rows": 1658.0
+}

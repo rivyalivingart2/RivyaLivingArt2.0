@@ -94,7 +94,8 @@ test('saved handoff only opens WhatsApp through the explicit customer action',()
 });
 test('dependency and configuration files do not include rejected integrations', () => {
   const pkg=JSON.parse(read('package.json'));
-  assert.equal(pkg.private,true); assert.equal(pkg.dependencies.next,'16.3.5');
+  assert.equal(pkg.private,true); assert.equal(pkg.dependencies.next,'16.3.8');
+  assert.equal(pkg.devDependencies['eslint-config-next'],pkg.dependencies.next);
   assert.equal(pkg.dependencies.react,pkg.dependencies['react-dom']);
   assert.doesNotMatch(JSON.stringify(pkg), /sanity|higgsfield|stripe|razorpay|puppeteer|auth0/i);
   assert.equal(existsSync(new URL('tailwind.config.js',root)),false);

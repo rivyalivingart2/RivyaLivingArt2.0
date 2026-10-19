@@ -1,0 +1,29 @@
+{
+  "status": "VERIFIED_LOCAL_PROPOSAL",
+  "completedAt": "2026-10-19T07:30:54.978Z",
+  "productionExecuted": false,
+  "productionApprovalRequired": true,
+  "checksPassed": 37,
+  "checksFailed": 0,
+  "environment": "Windows; existing Node22 runtime; newly created PostgreSQL18.6 cluster on127.0.0.1:55442",
+  "proposalSha256": "36bd04cba2b5c3ec122be23c0e0a4460eab6a015a035805ea895e14051551ce8",
+  "verificationSqlSha256": "bb4fc565fc38e77f547460677a7af6f7e8d22ad7c8ba3df0796663f81ac9803d",
+  "rawEvidence": "test-results/audit-access-repair/run-2026-10-19T07-30-45-735Z/results.json",
+  "stoppedReceipt": "test-results/audit-access-repair/run-2026-10-19T07-30-45-735Z/cluster-stopped.json",
+  "clusterStoppedAt": "2026-10-19T07:30:56.324Z",
+  "privateRecordsCopied": 0,
+  "preservation": {
+    "syntheticExistingRows": 2,
+    "rowAndSelectedMetadataHashBefore": "648c79238f163fbbcab96600d62df4ecce2091ae2a175cfd33f995f141560562",
+    "rowAndSelectedMetadataHashAfter": "648c79238f163fbbcab96600d62df4ecce2091ae2a175cfd33f995f141560562",
+    "unchanged": true
+  },
+  "focusedLint": {"exitCode": 0, "errors": 0, "warnings": 0},
+  "limitations": [
+    "Actual proposed SQL and real local PostgreSQL were tested; no production DDL was executed.",
+    "Synthetic bootstrap owner is a local superuser, not an emulation of every Neon owner capability.",
+    "SQL database/role names cannot identify a Neon project or endpoint; verify the live owner-console selection separately.",
+    "No browser, HTTP, real-account approval/recovery, provider or message acceptance is inferred from SQL tests.",
+    "Earlier sandbox connection and verification-count failures remain archived, not counted as passes."
+  ]
+}

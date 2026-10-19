@@ -1,0 +1,44 @@
+/** New synthetic cluster and existing built Next server; never reuses QA55439. */
+import assert from 'node:assert/strict';
+import {existsSync,mkdirSync,writeFileSync,appendFileSync,readFileSync,openSync,closeSync} from 'node:fs';
+import {resolve,sep} from 'node:path';
+import {promisify} from 'node:util';
+import {execFile,spawn} from 'node:child_process';
+import {createServer} from 'node:net';
+import {get as httpsGet} from 'node:https';
+import {pathToFileURL} from 'node:url';
+import {randomBytes,randomUUID,scrypt} from 'node:crypto';
+const run=promisify(execFile),derive=promisify(scrypt),base=resolve('test-results/audit-pending-http'),root=resolve(base,'run-'+new Date().toISOString().replace(/[:.]/g,'-'));
+assert.ok(root.startsWith(resolve('test-results')+sep));assert.ok(!existsSync(root));assert.ok(existsSync('.next/BUILD_ID'));
+const buildId=readFileSync('.next/BUILD_ID','utf8').trim();
+const bin='C:/Users/gonda/Documents/Codex/2026-09-23/continue-the-approved-rivyalivingart-redesign-read/work/tooling/postgresql-18.6/pgsql/bin';
+const pgModule='C:/Users/gonda/Documents/Codex/2026-09-30/keep-rivyalivingart2-0-as-the-base/work/tooling/local-postgres/node_modules/pg/lib/index.js';
+for(const name of ['initdb.exe','pg_ctl.exe','postgres.exe'])assert.ok(existsSync(resolve(bin,name)));
+for(const port of [55441,4207,4208])await new Promise((accept,reject)=>{const server=createServer();server.once('error',reject);server.listen(port,'127.0.0.1',()=>server.close(accept));});
+const env={...process.env};for(const key of Object.keys(env))if(/DATABASE|BLOB|NEON|VERCEL|STUDIO_|^RIVYA_|^SITE_INDEXABLE$|^NODE_OPTIONS$/.test(key))delete env[key];
+Object.assign(env,{RIVYA_HTTP_AUDIT:'true',RIVYA_HTTP_OUTPUT:root,RIVYA_HTTP_PG_MODULE:pgModule,DATABASE_URL:'postgresql://rivya_http_qa@localhost:55441/rivya_http_disposable',RIVYA_DATA_MODE:'isolated',RIVYA_QA_TARGET:'http-disposable',RIVYA_ENV:'production',STUDIO_ADMIN_ID:'synthetic-http-owner',STUDIO_ADMIN_PASSWORD:randomBytes(24).toString('hex'),STUDIO_SESSION_SECRET:randomBytes(32).toString('hex'),NODE_ENV:'production',NEXT_TELEMETRY_DISABLED:'1',SITE_INDEXABLE:'true',RIVYA_HTTP_EDITOR_ID:'synthetic-http-editor',RIVYA_HTTP_EDITOR_PASSWORD:randomBytes(24).toString('hex')});
+mkdirSync(root,{recursive:true});writeFileSync(resolve(root,'SYNTHETIC-ONLY.txt'),'New local HTTP lifecycle audit. Synthetic data only. Production-mode indexing flags are simulated only on loopback; there is no deployment or real database access.\n',{flag:'wx'});
+const data=resolve(root,'pgdata'),ctl=resolve(bin,'pg_ctl.exe');
+const control=args=>new Promise((accept,reject)=>{const child=spawn(ctl,args,{env,windowsHide:true,stdio:'ignore'});child.once('error',reject);child.once('exit',code=>code===0?accept():reject(Error('pg_ctl exited '+code)));});
+let started=false,app,appLog;
+try{
+ const init=await run(resolve(bin,'initdb.exe'),['-D',data,'-U','rivya_http_qa','--auth-local=trust','--auth-host=trust','--encoding=UTF8','--locale=C'],{env,windowsHide:true,maxBuffer:2_000_000});writeFileSync(resolve(root,'init.log'),init.stdout+init.stderr);
+ appendFileSync(resolve(data,'postgresql.conf'),"\nlisten_addresses = '127.0.0.1'\nport = 55441\nmax_connections = 25\nshared_buffers = '16MB'\n");await control(['start','-D',data,'-l',resolve(root,'postgres.log'),'-w','-t','30']);started=true;
+ const {default:pg}=await import(pathToFileURL(pgModule).href);const admin=new pg.Client({host:'127.0.0.1',port:55441,user:'rivya_http_qa',database:'postgres'});await admin.connect();
+ try{assert.deepEqual((await admin.query('SELECT current_user AS role,host(inet_server_addr()) AS host,inet_server_port() AS port')).rows[0],{role:'rivya_http_qa',host:'127.0.0.1',port:55441});assert.equal(resolve((await admin.query('SHOW data_directory')).rows[0].data_directory).toLowerCase(),data.toLowerCase());assert.equal((await admin.query("SELECT count(*)::int AS n FROM pg_database WHERE datname='rivya_http_disposable'")).rows[0].n,0);await admin.query('CREATE DATABASE rivya_http_disposable');}finally{await admin.end();}
+ const db=new pg.Client({connectionString:env.DATABASE_URL});await db.connect();
+ try{
+  const schemas=['studio-schema.sql','redesign-preview-migration.sql','business-settings-schema.sql','content-schema.sql','revision-schema.sql','storage-provider-schema.sql','phase2-order-contract.sql','phase6-upload-identity.sql','phase11-privacy-controls.sql','phase11-erasure-engine.sql','studio-access-migration.sql','presentation-schema.sql'];for(const file of schemas)await db.query(readFileSync(resolve('scripts',file),'utf8'));
+  const salt=randomBytes(16).toString('hex'),passwordHash=salt+':'+(await derive(env.RIVYA_HTTP_EDITOR_PASSWORD,salt,64)).toString('hex');await db.query("INSERT INTO rivya_staff(id,login,name,password_hash,role) VALUES($1,$2,'SYNTHETIC HTTP EDITOR',$3,'editor')",[randomUUID(),env.RIVYA_HTTP_EDITOR_ID,passwordHash]);
+  const orderIds=[];for(const hasReference of [false,true]){const id=randomUUID(),key=randomUUID(),referenceId=randomUUID();orderIds.push({id,key,referenceId,hasReference});await db.query("INSERT INTO rivya_studio_orders(id,client,title) VALUES($1,'SYNTHETIC HTTP PERSON','SYNTHETIC HTTP BRIEF')",[id]);await db.query("INSERT INTO rivya_inquiries(id,reference,guest_hash,request_key,payload_hash,product_id,product_snapshot,name,phone,email,answers,notes,summary) VALUES($1,$2,'synthetic-guest',$3,'synthetic-payload','synthetic-piece','{\"id\":\"synthetic-piece\"}','SYNTHETIC HTTP PERSON','0000000000','synthetic@example.invalid','{}','SYNTHETIC NOTE','SYNTHETIC BRIEF')",[id,'LOCAL-HTTP-'+id,key]);await db.query("INSERT INTO rivya_inquiry_notes(inquiry_id,actor,body) VALUES($1,'synthetic','SYNTHETIC NOTE')",[id]);if(hasReference){await db.query("INSERT INTO rivya_inquiry_upload_sessions(request_key,guest_hash,used_slots,finalized) VALUES($1,'synthetic-guest',1,true)",[key]);await db.query("INSERT INTO rivya_references(id,guest_hash,request_key,pathname,bytes,inquiry_id,storage_provider,state,normalized_mime,linked_at) VALUES($1,'synthetic-guest',$2,$3,128,$4,'vercel','ready','image/jpeg',now())",[referenceId,key,'references/'+referenceId+'.jpg',id]);await db.query('UPDATE rivya_storage_budget SET bytes=bytes+128 WHERE id=1');}}
+  writeFileSync(resolve(root,'fixture-identities.json'),JSON.stringify(orderIds,null,2));writeFileSync(resolve(root,'schemas.json'),JSON.stringify({schemas,sourceOnly:true,privateRecordsCopied:0,buildId},null,2));
+ }finally{await db.end();}
+ const tlsConfig=resolve(root,'localhost.cnf');writeFileSync(tlsConfig,'[req]\ndistinguished_name=dn\nprompt=no\nx509_extensions=ext\n[dn]\nCN=127.0.0.1\n[ext]\nsubjectAltName=IP:127.0.0.1\n');
+ await run('C:/Program Files/Git/usr/bin/openssl.exe',['req','-x509','-newkey','rsa:2048','-nodes','-keyout',resolve(root,'localhost.key'),'-out',resolve(root,'localhost.crt'),'-days','1','-config',tlsConfig],{env,windowsHide:true});
+ appLog=openSync(resolve(root,'next-server.log'),'w');app=spawn(process.execPath,['tools/audit-pending/http-server.mjs'],{env:{...env,NODE_OPTIONS:'--import='+pathToFileURL(resolve('tools/audit-pending/http-transport.mjs')).href},stdio:['ignore',appLog,appLog],windowsHide:true});
+ let ready=false;for(let attempt=0;attempt<60;attempt++){if(app.exitCode!==null)throw Error('Owned Next server exited before readiness.');try{await new Promise((accept,reject)=>{const r=httpsGet('https://127.0.0.1:4207/studio/login',{rejectUnauthorized:false,timeout:2000},response=>{response.resume();if(response.statusCode===200)accept();else reject(Error('not ready'));});r.on('error',reject);r.on('timeout',()=>r.destroy(Error('readiness timeout')));});ready=true;break;}catch{}await new Promise(resolve=>setTimeout(resolve,500));}assert.ok(ready,'Owned Next server became ready.');
+ const code=await new Promise((accept,reject)=>{const child=spawn(process.execPath,['tools/audit-pending/http-tests.mjs'],{env,stdio:'inherit',windowsHide:true});child.once('error',reject);child.once('exit',accept);});process.exitCode=code??1;assert.equal(readFileSync('.next/BUILD_ID','utf8').trim(),buildId,'Existing build must not change during this pass.');writeFileSync(resolve(root,'execution.json'),JSON.stringify({at:new Date().toISOString(),exitCode:process.exitCode,buildId},null,2));
+}finally{
+ for(const child of [app])if(child&&child.exitCode===null){const stopped=new Promise(resolve=>child.once('exit',resolve));child.kill('SIGTERM');await stopped;}if(appLog!==undefined)closeSync(appLog);
+ if(started)await control(['stop','-D',data,'-m','fast','-w','-t','30']);writeFileSync(resolve(root,'stopped.json'),JSON.stringify({at:new Date().toISOString(),postgresStopped:started,nextStopped:!!app,directHttps:true,port:55441,appPort:4207,dataDirectory:data},null,2));writeFileSync(resolve(base,'latest-run.json'),JSON.stringify({root,results:resolve(root,'results.json')},null,2));
+}

@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-17",
+  "baseline": "66e82ef04f76b8460654bab4329ccbadfb47f28e",
+  "scope": "Fresh source review plus root-executed guarded local integration: 48 checks passed; 21 tables and 2,657 original rows preserved",
+  "confirmedP0P1": [],
+  "findings": [
+    {
+      "id": "SEC-OBS-01",
+      "severity": "P2",
+      "status": "VERIFIED_FIXED",
+      "title": "Follow-up-only audit note names the actor as assigned staff",
+      "source": "src/app/api/studio/workspace/route.ts:127",
+      "relatedLines": [
+        134,
+        137
+      ],
+      "actualSource": "follow-up replaces the body assignee with the acting session.staffId; SQL preserves the stored assignee; note nevertheless reports Assignment updated and body.assignee",
+      "expected": "A date-only update should describe the follow-up change without implying staff reassignment",
+      "reproduction": "On a new synthetic inquiry assigned to editor A, administrator B submits follow-up with the current version; compare stored assignee and newest note",
+      "evidence": "test-results/rivya-master-audit/workflow.json (2026-10-17T05:29:57.200Z): reproduced true; date-only update preserved actual assignee while note named the acting administrator",
+      "recommendedFix": "Use follow-up-specific note wording, keeping the assignment branch unchanged",
+      "risk": "Low; audit-note wording only, no historical row rewrite",
+      "effort": "Small",
+      "validation": "Fresh local follow-up and assignment checks, stored assignee preserved, accurate note text, stale-version refusal",
+      "baselineStatus": "VERIFIED_OPEN",
+      "finalEvidence": "workflow-before.json; workflow.json"
+    },
+    {
+      "id": "SEC-OBS-02",
+      "severity": "P3",
+      "status": "VERIFIED_FIXED",
+      "title": "Impossible calendar date reaches database cast and generic error",
+      "source": "src/app/api/studio/workspace/route.ts:128",
+      "relatedLines": [
+        134,
+        153
+      ],
+      "actualSource": "followUp accepts any YYYY-MM-DD shape before the PostgreSQL date cast",
+      "expected": "An invalid calendar date returns an actionable validation response before any mutation",
+      "reproduction": "Submit 2026-02-30 for a newly created local inquiry with a valid current version",
+      "evidence": "test-results/rivya-master-audit/workflow.json (2026-10-17T05:29:57.200Z): reproduced true; impossible date 2026-02-30 returned 503, expected 400; inquiry version unchanged",
+      "recommendedFix": "Use calendar-valid date validation consistent with the existing inquiry list filters",
+      "risk": "Low; reject inputs PostgreSQL already cannot save",
+      "effort": "Small",
+      "validation": "Impossible date returns 400 and leaves version unchanged; valid leap-day and ordinary dates work",
+      "baselineStatus": "VERIFIED_OPEN",
+      "finalEvidence": "workflow-before.json; workflow.json"
+    }
+  ],
+  "gates": [
+    {
+      "id": "SEC-GATE-01",
+      "status": "BLOCKED",
+      "requirement": "Real private Blob upload, byte retrieval and provider deletion in isolated QA",
+      "reason": "Guarded harness deliberately has no remote Blob credential; metadata-only tests cannot certify bytes"
+    },
+    {
+      "id": "SEC-GATE-02",
+      "status": "DEFERRED",
+      "requirement": "Fresh complete erasure and restore-replay integration",
+      "reason": "Actual erasure invalidates all managed-export metadata; use a wholly disposable database/store to preserve existing QA records"
+    },
+    {
+      "id": "SEC-GATE-03",
+      "status": "BLOCKED",
+      "requirement": "Production access-request schema/grant activation",
+      "reason": "Existing checkpoint lists it as separate; current source does not prove current production activation and no production mutation is authorized"
+    },
+    {
+      "id": "SEC-GATE-04",
+      "status": "DEFERRED",
+      "requirement": "Production least-privilege ownership and inherited-role verification",
+      "reason": "Grant scripts are source intent; live database privilege inventory not performed by this source-review specialist"
+    }
+  ],
+  "runtime": {
+    "status": "pass",
+    "checks": 48,
+    "evidence": "test-results/rivya-master-audit/workflow.json",
+    "cleanup": "pass",
+    "protectedTables": 21,
+    "protectedRows": 2657,
+    "fingerprint": "602d1ef7ebe0853927308b6ccd3faf450870c64f4fba3f4ec60ed5a1edb4b38d",
+    "exclusions": "Session idle timestamps and rate-limit metadata; identity sequence advances are not reset",
+    "privateReferenceScope": "Metadata-only; no provider bytes or deletion claimed"
+  },
+  "safety": {
+    "productionWrites": 0,
+    "cmsPublications": 0,
+    "externalMessages": 0,
+    "appEdits": 0
+  },
+  "finalCoordinatorVerification": {
+    "at": "2026-10-19T05:52:58.917Z",
+    "candidate": "2f7fc8e634fea4593b3bf1c44ed90d16fe7c6ef48bd21b977e1737a46341071b",
+    "authoritative": "ISSUE-REGISTER.csv / FINAL-VERIFICATION.md",
+    "note": "Original specialist sections remain before/source evidence; this status applies only to local candidate."
+  }
+}

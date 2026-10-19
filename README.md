@@ -1,4 +1,44 @@
-# Current owner instruction — publish CRAFT through a detailed PR
+# Current checkpoint — approved request-table repair and final local audit checks, 19 October 2026
+
+Continue on `codex/audit-pending-completion` from local checkpoint `016d332`. Read [the final continuation report](docs/audits/rivya-master-audit/PENDING-FINAL-REPORT.md) and [its verification receipt](docs/audits/rivya-master-audit/pending-final-verification.json). The shared pagination now exposes meaningful accessible page status while preserving its design; final build `AVszvoAaWRdzkbTXvBAcW` passed the bounded desktop/mobile checks. Fresh checks: 377 unit, 403 runtime, 12 preflight, lint/type/build, 34 actual browser/HTTP lifecycle checks and 37 exact repair-SQL checks.
+
+The owner explicitly approved **this database repair only**. The missing live request table, three secondary indexes and runtime SELECT/INSERT/UPDATE grants were applied once on the recorded shared live Neon target, verified read-only, and the renewed production Studio session successfully loaded/refreshed its empty request queue. Do not replay the creation transaction or interpret approval as release authority. No existing business-record DML, account decision, reset or production publication occurred; normal session bookkeeping is distinct. No full production row-hash comparison is claimed.
+
+No push, PR, merge, deployment or further production mutation/publication is authorized. Production performance after source release, real provider, native/zoom/device/field acceptance and the development-only upstream advisory remain separate. Preserve active functions, logo/colors/content/media and manual WhatsApp behavior; cleanup remains limited to the earlier confirmed-unused/duplicate/excluded manifest. Raw evidence stays Git-ignored. Everything below is historical and retains its original date and scope.
+
+---
+
+# Current checkpoint — pending audit completion, 19 October 2026
+
+[Pending audit completion report](docs/audits/rivya-master-audit/PENDING-COMPLETION.md) records the latest local changes on `codex/audit-pending-completion` after `e7000c4`: 96.7% smaller language-review entry data, complete record/status parity, newly executed disposable lifecycle checks, fresh responsive/regression verification and the live request-queue diagnosis boundary. [Verification receipt](docs/audits/rivya-master-audit/pending-verification.json) distinguishes actual tests from blocked external gates. All work remains local; no release or production mutation is authorized.
+
+---
+
+# Current checkpoint — 19 October 2026 audit cleanup
+
+The owner-approved local cleanup is on `codex/audit-followup-cleanup`, based on audit checkpoint `ad84a2a`. Read [the follow-up report](docs/audits/rivya-master-audit/FOLLOWUP-CLEANUP.md) for confirmed unused source/package removal, inactive Studio menu cleanup, bounded language review, request-error recovery and current verification. All active website/Studio features and protected records remain; 37 registered workspaces now provide 35 everyday administrator menu destinations. Production repair, release and external acceptance gates remain open where documented. No push or deployment is authorized.
+
+---
+
+# Historical checkpoint — 19 October 2026 master audit continuation
+
+Continue the 17–19 October full audit on `codex/rivya-master-audit`. The delivered cinematic design remains the baseline; only reproduced local fixes, compatible dependency security patches and verification/documentation are in scope. Read [the executive summary](docs/audits/rivya-master-audit/EXECUTIVE-SUMMARY.md), [final verification](docs/audits/rivya-master-audit/FINAL-VERIFICATION.md), [issue register](docs/audits/rivya-master-audit/ISSUE-REGISTER.csv) and [independent security review](docs/audits/rivya-master-audit/SECURITY-RELEASE-REVIEW.md). Their dated receipts distinguish preserved 17 October broad evidence from 19 October post-patch retesting.
+
+GitHub main and the READY production alias were rechecked unchanged at `66e82ef04f76b8460654bab4329ccbadfb47f28e` on 19 October. No release or production data change is authorized by this audit. The Staff account/password-request queue failure, released mobile performance and external acceptance gates remain visible in the report. There was no accessible private Studio session or production database configuration for a fresh private schema check on 19 October. Read-only diagnosis is permitted when appropriate existing access is available; actual production repairs or release require fresh approval. Preserve all earlier checkpoint bytes and do not reactivate excluded work.
+
+---
+
+# Historical checkpoint — 17 October 2026 master audit
+
+The production baseline is PR #62's sitewide cinematic implementation and PR #63's verification documentation, merge SHA `66e82ef04f76b8460654bab4329ccbadfb47f28e`. Current source includes published database-backed catalogue/editorial pages, private Studio with 37 workspaces, staff access and recovery, saved inquiries, private reference controls and customer-initiated WhatsApp sending. The early placeholder/Phase 2/C5 statements below are historical, not the current capability inventory.
+
+The latest owner instruction authorizes a complete audit and safe, reproduced **local** fixes. It does **not** authorize a push, PR merge, deployment, production write or CMS publication. Existing local acceptance repairs were preserved before this audit's fixes. Read [the master audit](docs/audits/rivya-master-audit/EXECUTIVE-SUMMARY.md), [verification](docs/audits/rivya-master-audit/FINAL-VERIFICATION.md) and [route inventory](docs/audits/rivya-master-audit/ROUTE-STUDIO-INVENTORY.csv). Raw screenshots, traces and private test evidence stay in ignored `test-results/rivya-master-audit/`.
+
+Use the pinned Node 22 toolchain and isolated QA guard for database-facing tests. Never run mutation tests against a shared or production database. Preserve the logo, brand palette, content, media/crops, revisions, private records and manual-send boundary. Removed backup tooling, payments, customer accounts, new scraping and legacy product transfers remain excluded. Earlier release instructions below were fulfilled and do not grant fresh release authority.
+
+---
+
+# Historical owner instruction — publish CRAFT through a detailed PR
 
 5 October 2026. The owner explicitly requested all updated files in main with a PR documenting every change. Read `docs/decisions/2026-10-05-publish-craft-main.md` and `docs/redesign/CRAFT-MAIN-RELEASE.md`. Push the complete CRAFT branch, verify the exact PR head and required checks, then merge through the PR and verify the existing Vercel Git deployment. Do not push directly to main or bypass required reviews. This release includes C1–C5 source and backup removal; it does not certify unfinished C5/C6 or publish Studio records. Preserve protected data and archive/key removal boundaries. Later development returns to local-only until a new push-main request.
 

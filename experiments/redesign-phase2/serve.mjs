@@ -13,7 +13,7 @@ const root=process.cwd(), assets={
  '/':'output/redesign-phase2/index.html','/studio':'output/redesign-phase2/studio.html',
  '/client.js':'output/redesign-phase2/client.js',
  '/styles.css':'experiments/redesign-phase2/styles.css',
- '/foundation.css':'src/components/design-foundation/foundation.css'
+ '/foundation.css':'experiments/redesign-phase2/foundation/foundation.css'
 };
 const media=JSON.parse(readFileSync('experiments/redesign-phase2/media-manifest.json','utf8'));
 for(const a of media)for(const v of a.variants)assets[v.src]=`experiments/redesign-phase2/media/${v.src.split('/').at(-1)}`;

@@ -12,7 +12,8 @@ export function HomepageMotion({children}:{children:ReactNode}) {
   const node=root.current;if(!node)return;
   const query=matchMedia(MOTION_QUERY);
   const connection=(navigator as Navigator&{connection?:EventTarget&{saveData?:boolean;effectiveType?:string}}).connection;
-  const modestDevice=navigator.hardwareConcurrency>0&&navigator.hardwareConcurrency<=4;
+  const device=navigator as Navigator&{deviceMemory?:number};
+  const modestDevice=(device.deviceMemory!==undefined&&device.deviceMemory<=4)||(device.hardwareConcurrency>0&&device.hardwareConcurrency<=4);
   const eligible=()=>!paused&&!modestDevice&&query.matches&&!connection?.saveData&&!['slow-2g','2g'].includes(connection?.effectiveType||'');
   let disposed=false,version=0,cleanup:(()=>void)|undefined;
   const enable=async()=>{

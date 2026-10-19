@@ -46,6 +46,7 @@
 .chapter[data-immersive=true][data-chapter-style=reverse]{--chapter-shade-direction:270deg}
 .chapter[data-immersive=true][data-chapter-style=reverse] .chapterBody,.chapter[data-immersive=true][data-chapter-style=reverse] .chapterMarker{margin-left:auto;order:initial}
 @media(min-width:900px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.mediaLayer{inset:-4% 0;height:108%}}
+@media(min-width:781px) and (max-width:1100px){.mediaShade{background:linear-gradient(180deg,#080a0e,#080a0e00 24%,#080a0e00 70%,#080a0e),linear-gradient(var(--chapter-shade-direction,90deg),#080a0ef2,#080a0ed6 70%,#080a0eb3)}}
 @media(max-width:780px){
  .reference .opening{padding-top:40px}.reference .opening h1{font-size:clamp(42px,11vw,72px)}
  .reference[data-page-hero=full] .opening{padding-block:64px 88px}

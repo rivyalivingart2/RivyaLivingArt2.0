@@ -1,3 +1,61 @@
+# Current checkpoint — complete audit bundle release authorized, 19 October 2026
+
+The owner explicitly requested **"push all things into main git branch"**. This supersedes the earlier local-only release holds for the accumulated five-commit bundle through `bd6467538863e72350f3fb6bd3e0dcd8bdb827fb`, based on released main `66e82ef04f76b8460654bab4329ccbadfb47f28e`. Release through a detailed PR, verify its exact head and hosting checks, merge normally, and verify the production deployment and read-only public/Studio behavior.
+
+Read [the release scope and evidence](docs/audits/rivya-master-audit/RELEASE.md). The already approved and verified request-table repair must not be replayed. No additional production database write, fixture import, CMS publication, account/password decision, or business-content change is part of this release. Raw screenshots, traces and private QA records remain ignored. Earlier reports retain their original dates and authorization scope; they are historical evidence, not current release restrictions.
+
+Native-reader, physical-device, real-provider and field-performance acceptance, and the development-only upstream advisory remain separate. A successful release does not certify those gates. The PR and its linked deployment record provide the final remote commit/deployment receipt.
+
+---
+
+# Historical checkpoint — approved request-table repair and final local audit checks, 19 October 2026
+
+Continue on `codex/audit-pending-completion` from local checkpoint `016d332`. Read [the final continuation report](docs/audits/rivya-master-audit/PENDING-FINAL-REPORT.md) and [its verification receipt](docs/audits/rivya-master-audit/pending-final-verification.json). The shared pagination now exposes meaningful accessible page status while preserving its design; final build `AVszvoAaWRdzkbTXvBAcW` passed the bounded desktop/mobile checks. Fresh checks: 377 unit, 403 runtime, 12 preflight, lint/type/build, 34 actual browser/HTTP lifecycle checks and 37 exact repair-SQL checks.
+
+The owner explicitly approved **this database repair only**. The missing live request table, three secondary indexes and runtime SELECT/INSERT/UPDATE grants were applied once on the recorded shared live Neon target, verified read-only, and the renewed production Studio session successfully loaded/refreshed its empty request queue. Do not replay the creation transaction or interpret approval as release authority. No existing business-record DML, account decision, reset or production publication occurred; normal session bookkeeping is distinct. No full production row-hash comparison is claimed.
+
+No push, PR, merge, deployment or further production mutation/publication is authorized. Production performance after source release, real provider, native/zoom/device/field acceptance and the development-only upstream advisory remain separate. Preserve active functions, logo/colors/content/media and manual WhatsApp behavior; cleanup remains limited to the earlier confirmed-unused/duplicate/excluded manifest. Raw evidence stays Git-ignored. Everything below is historical and retains its original date and scope.
+
+---
+
+# Current checkpoint — pending audit completion, 19 October 2026
+
+The owner requested completion of pending audit changes. Continue from `codex/audit-pending-completion`, based on local cleanup commit `e7000c4`. Read `docs/audits/rivya-master-audit/PENDING-COMPLETION.md` and `pending-verification.json`: translation overview now sends 206,124 instead of 6,256,425 parsed entry bytes with all 603 records and both language statuses preserved. Actual disposable SQL/service tests close the bounded erasure/replay/CMS lifecycle gap; real provider and HTTP/framework behavior remain separately scoped.
+
+Production Staff request failure was reproduced again after owner sign-in on 19 October. Fresh logs contain no cause, and production runtime-role database access is unavailable. Prepared read-only SQL is local-validated only; do not assume its production results or apply migrations/grants. Production release, repair, field/native/device/provider and upstream advisory gates remain distinct. No push, PR, merge, deploy or production mutation/publication is authorized. Historical checkpoints below retain their dates and scope.
+
+---
+
+# Current checkpoint — approved audit cleanup, 19 October 2026
+
+The owner authorized audit follow-up implementation and selected removal of **confirmed unused, duplicate and already-excluded features only**. Work is on `codex/audit-followup-cleanup`, based on local audit commit `ad84a2a`. Read `docs/audits/rivya-master-audit/FOLLOWUP-CLEANUP.md` for the exact 14-file/two-package removal manifest, two inactive navigation entries, translation pagination, accurate request-queue errors, verification and remaining gates. Active business functions, all 37 route registrations, protected records, logo, colors and media remain intact. Raw follow-up evidence stays ignored in `test-results/audit-followup-cleanup/`.
+
+No push, PR, merge, deployment, production mutation or CMS publication is authorized. The production request-queue failure, deployed performance, development-only advisory and native/device/field/provider gates remain distinct. Do not claim the local queue UI repair fixes its production database cause. The earlier audit and historical checkpoints below retain their dates and are not instructions to replay releases or imports.
+
+---
+
+# Historical checkpoint — master audit continuation, 19 October 2026
+
+The owner's current request is the full website, Studio and codebase audit, verified narrow local fixes and the report under `docs/audits/rivya-master-audit/`. This checkpoint takes precedence over historical release and phase instructions below. Work is on `codex/rivya-master-audit`; the pre-existing acceptance changes were preserved in local checkpoint `40907ff` before the new audit fixes. Released main remains `66e82ef04f76b8460654bab4329ccbadfb47f28e`; its GitHub identity and READY production alias were rechecked read-only on 19 October.
+
+Read `EXECUTIVE-SUMMARY.md`, `FINAL-VERIFICATION.md`, `ISSUE-REGISTER.csv` and `SECURITY-RELEASE-REVIEW.md` in the audit folder for final evidence and gates. Broad public/Studio/layout/conditional/contrast/interaction observations are dated 17 October. The patched candidate's package, build, type, unit, workflow, E2E, accessibility, motion, Studio and performance checks are separately dated 19 October. Earlier 600-sample/350-test checkpoint counts below are historical, not this audit's current totals. Follow final receipts rather than treating a source statement as a passing test.
+
+Existing Next/ESLint config, Sharp and source-map-js received compatible local security updates. Production source has not changed; a development-only braces advisory remains disclosed. The settled production Staff account/password-request failure and released mobile performance observations remain open. The 19 October browser inventory had no accessible production Studio session, and repository environment discovery found no production database configuration for schema/grant diagnosis. Read-only diagnosis is authorized when appropriate existing access is available; a production repair is not.
+
+Do not push, create a release PR, merge, deploy, write production data or publish CMS content without fresh explicit authorization. Preserve the original logo, palette, business content, protected records, media/crops, draft/revision and manual WhatsApp contracts. Raw evidence stays in ignored `test-results/rivya-master-audit/`. Use the guarded isolated QA database for local writes. No newly installed reader or physical device was authorized/available, so native/device/field gates remain separate. Do not replay historical imports, publications, fixtures or migrations; excluded checkout/customer-account/scraping/legacy-transfer/backup features remain excluded.
+
+---
+
+# Historical checkpoint - cinematic acceptance repairs verified locally
+
+16 October 2026: owner asked to finish the four remaining cinematic acceptance areas. Local branch codex/cinematic-acceptance is based on released main 66e82ef04f76b8460654bab4329ccbadfb47f28e. Read docs/redesign/sitewide-cinematic-2026-10-16/ACCEPTANCE-FOLLOWUP.md, acceptance-verification.json and CONTINUE.md first. New source strengthens image/video text scrims and keyboard focus, reduces common font bytes by 41.6% without changing retained glyphs, and defers automatic hero video until opening fonts/poster are ready. No release or production mutation in this follow-up.
+
+600 contrast samples, 66 behavior checks, 1,051 conditional assertions across 321 states, 656 published URL browser visits and 246 referenced media responses verified. Build/types, lint (0 errors; 62 existing warnings), 350 unit/403 runtime/12 preflight checks pass. All 1,658 protected local rows unchanged. Renewed production Studio media, crop previews, saved page/article revisions and translation panels checked read-only. Twelve local slow-mobile cold samples pass 2.5s; released production samples still exceed that target. Field queries returned no observations. Existing Narrator was attempted but speech output was inaccessible; owner permits existing readers only and confirms no physical device. Do not mark native/device/field acceptance complete.
+
+Keep these new repairs local until release is requested; then use a detailed PR, exact deployment verification and new production performance/Studio checks. No migrations, publications, fixtures, customer records, access changes or Drive writes are needed. Preserve all historical checkpoints below; their release statements describe earlier completed bundles, not this new uncommitted follow-up.
+
+---
+
 # Current checkpoint - cinematic redesign released and live verified
 
 16 October 2026: PR #62 merged all cinematic implementation and reports into main as 224b2ca0e192b8d8ceced3045d6f8a193b734362. Production deployment dpl_DuMXE1zs914eaG6FLCVazZJYQSvb is READY and assigned to www.rivyalivingart.com with that exact SHA. Fresh live verification covers 64 desktop/mobile layouts, all 37 authenticated Studio workspace loading states, Hero/Resin playback and parallax, cursor lighting, mobile navigation/focus, reduced motion and persistent effects pause. Read docs/redesign/sitewide-cinematic-2026-10-16/RELEASE.md and live-verification.json. No production content, records, media associations or settings were edited. This receipt is a documentation-only follow-up; no application source changed after the verified deployment. Prior local-only checkpoints below are historical. Historical access-table activation and independent native/device/field evidence remain separate; do not manufacture or claim them.

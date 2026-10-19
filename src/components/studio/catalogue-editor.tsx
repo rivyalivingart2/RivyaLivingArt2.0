@@ -100,12 +100,10 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
    <p data-studio-part="protectedNote" className={s.protectedNote}>Protected product records: review without changing existing facts, gallery associations or forms. No old products are imported. Editing controls remain available for a deliberate, separately authorized catalogue change.</p><p data-studio-part="status" className={s.status} role="status">{message}</p><LinkedRecordNotice {...linked}/><RecordSwitchNotice control={switching}/>
 
    <label>Category<select value={categoryFilter} onChange={e=>setCategoryFilter(e.target.value)}><option value="">All categories</option>{[...new Set(entries.map(e=>e.product.category))].sort().map(category=><option key={category}>{category}</option>)}</select></label>
-   {/* Collection Filter Tabs */}
-   <div className={s.categoryTabs} role="tablist" aria-label="Filter by collection">
+   <div className={s.categoryTabs} role="group" aria-label="Filter by collection">
     <button
       type="button"
-      role="tab"
-      aria-selected={tierFilter === 'all'}
+      aria-pressed={tierFilter === 'all'}
       className={tierFilter === 'all' ? `${s.categoryTabBtn} ${s.categoryTabBtnActive}` : s.categoryTabBtn}
       onClick={() => setTierFilter('all')}
     >
@@ -113,8 +111,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
     </button>
     <button
       type="button"
-      role="tab"
-      aria-selected={tierFilter === 'large'}
+      aria-pressed={tierFilter === 'large'}
       className={tierFilter === 'large' ? `${s.categoryTabBtn} ${s.categoryTabBtnActive}` : s.categoryTabBtn}
       onClick={() => setTierFilter('large')}
     >
@@ -122,8 +119,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
     </button>
     <button
       type="button"
-      role="tab"
-      aria-selected={tierFilter === 'memory'}
+      aria-pressed={tierFilter === 'memory'}
       className={tierFilter === 'memory' ? `${s.categoryTabBtn} ${s.categoryTabBtnActive}` : s.categoryTabBtn}
       onClick={() => setTierFilter('memory')}
     >
@@ -131,8 +127,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
     </button>
     <button
       type="button"
-      role="tab"
-      aria-selected={tierFilter === 'personal'}
+      aria-pressed={tierFilter === 'personal'}
       className={tierFilter === 'personal' ? `${s.categoryTabBtn} ${s.categoryTabBtnActive}` : s.categoryTabBtn}
       onClick={() => setTierFilter('personal')}
     >
