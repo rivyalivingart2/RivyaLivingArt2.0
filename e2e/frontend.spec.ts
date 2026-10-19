@@ -1,4 +1,4 @@
-import {test,expect,cards,decoded,noOverflow,publicPage,openMenu,expectContainsFocus,productPath} from './helpers';
+import {test,expect,cards,decoded,noOverflow,publicPage,openMenu,expectContainsFocus,productPath,resourceErrorKey} from './helpers';
 
 const routes=[['home','/'],['collectible-design','/collectible-design'],['memory-art','/memory-art'],['personal-art','/personal-art'],['first furniture','first'],['second furniture','second'],['studio sign in','/studio']] as const;
 for(const [name,destination] of routes)test(`${name}: responsive layout, decoded media and current publication`,async({page,products},testInfo)=>{
@@ -36,8 +36,9 @@ test('furniture and collection journeys navigate through current published links
  }
 });
 
-test('unknown collection, piece and nested routes return actual 404s with recovery',async({page})=>{
+test('unknown collection, piece and nested routes return actual 404s with recovery',async({page,expectedHttpErrors})=>{
  for(const path of ['/not-an-existing-collection','/pieces/not-an-existing-piece','/not-an-existing/nested/route']){
+  expectedHttpErrors.add(resourceErrorKey('http://127.0.0.1:4173'+path,404));
   expect((await page.goto(path))?.status(),path).toBe(404);
   await expect(page.getByRole('heading',{level:1,name:'This page is unavailable.'})).toBeVisible();
   await noOverflow(page);

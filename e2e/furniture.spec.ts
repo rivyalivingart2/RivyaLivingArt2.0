@@ -1,4 +1,4 @@
-import {test,expect,cards,titles,filterForm,results,applyFilters,noOverflow,publicPage,decoded,expectContainsFocus,productPath} from './helpers';
+import {test,expect,cards,titles,filterForm,results,applyFilters,noOverflow,publicPage,decoded,expectContainsFocus,productPath,resourceErrorKey} from './helpers';
 
 test('display and body typography use distinct loaded local fonts',async({page})=>{
  await publicPage(page,'/');
@@ -95,18 +95,18 @@ test('gallery zoom decodes media and restores keyboard focus and scroll on dismi
  await expect(page.locator('body')).not.toHaveCSS('overflow','hidden');expect(await page.evaluate(()=>window.scrollY)).toBe(before);
 });
 
-test('failed product media keeps written details and offers a working image retry',async({page,products})=>{
+test('failed product media keeps written details and offers a working image retry',async({page,products,expectedHttpErrors})=>{
  const product=products.find(p=>p.tier==='large')!;let fail=true;
- await page.route('**/*',async route=>{const url=new URL(route.request().url());const image=url.pathname==='/_next/image'?url.searchParams.get('url'):url.pathname;if(fail&&product.images.includes(image||''))return route.fulfill({status:503,body:'Intentional image-failure test'});return route.fallback();});
+ await page.route('**/*',async route=>{const url=new URL(route.request().url());const image=url.pathname==='/_next/image'?url.searchParams.get('url'):url.pathname;if(fail&&product.images.includes(image||'')){expectedHttpErrors.add(resourceErrorKey(url.href,503));return route.fulfill({status:503,body:'Intentional image-failure test'});}return route.fallback();});
  await publicPage(page,productPath(product));const visual=page.locator('[data-public-part="gallery-image"]');
  await expect(visual.getByRole('img',{name:/Image unavailable/})).toBeVisible();await expect(page.getByRole('heading',{level:1,name:product.name,exact:true})).toBeVisible();
  fail=false;await visual.getByRole('button',{name:'Retry image',exact:true}).click();await decoded(visual.locator('img'));
  await expect(page.getByRole('link',{name:/Customize this piece/}).first()).toHaveAttribute('href',productPath(product)+'/customize');
 });
 
-test('failed card media preserves the product destination and honest fallback',async({page,products},testInfo)=>{
+test('failed card media preserves the product destination and honest fallback',async({page,products,expectedHttpErrors},testInfo)=>{
  const product=products.find(p=>p.tier==='large')!;
- await page.route('**/_next/image?**',async route=>{const path=new URL(route.request().url()).searchParams.get('url');if(product.images.includes(path||''))return route.fulfill({status:503,body:'Intentional card-image failure'});return route.fallback();});
+ await page.route('**/_next/image?**',async route=>{const url=new URL(route.request().url()),path=url.searchParams.get('url');if(product.images.includes(path||'')){expectedHttpErrors.add(resourceErrorKey(url.href,503));return route.fulfill({status:503,body:'Intentional card-image failure'});}return route.fallback();});
  await publicPage(page,'/search?q='+encodeURIComponent(product.name));const card=cards(page).filter({has:page.getByRole('heading',{name:product.name,exact:true})});
  await card.scrollIntoViewIfNeeded();await expect(card.getByRole('img',{name:/Image unavailable/})).toBeVisible();
  await expect(card.getByRole('link')).toHaveAttribute('href',productPath(product));await expect(card.locator('img')).toHaveCount(0);await noOverflow(page);

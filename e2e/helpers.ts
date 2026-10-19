@@ -1,31 +1,36 @@
 import {test as base,expect,type Page,type Locator} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
 import {fixturePath} from './report-paths';
+import {collectBrowserErrors,resourceErrorKey} from './browser-errors';
 
 export type ProductFixture={id:string;slug:string;name:string;tier:'large'|'memory'|'personal';category:string;material:string;images:string[];fields:{id:string;label:string;type:string;options?:string[];visibleWhen?:unknown}[]};
-type Fixtures={products:ProductFixture[];readOnlyBoundary:void};
+type Fixtures={products:ProductFixture[];expectedHttpErrors:Set<string>;readOnlyBoundary:void};
 export const test=base.extend<Fixtures>({
+ expectedHttpErrors:async({},provide)=>{await provide(new Set<string>());},
  products:async({},provide)=>{const fixture=JSON.parse(await readFile(fixturePath,'utf8'));await provide(fixture.products);},
- readOnlyBoundary:[async({context,page},provide)=>{
-  const blocked:string[]=[],errors:string[]=[];
-  page.on('pageerror',error=>errors.push(error.message));
+ readOnlyBoundary:[async({context,page,expectedHttpErrors},provide)=>{
+  const blocked:string[]=[],guard=collectBrowserErrors(page,expectedHttpErrors);
   await context.route('**/*',async route=>{
    const request=route.request(),url=new URL(request.url());
    if(['http:','https:'].includes(url.protocol)&&url.origin!=='http://127.0.0.1:4173'){blocked.push('External '+request.method()+' '+url.origin);return route.abort('blockedbyclient');}
    if(!['GET','HEAD'].includes(request.method())){
     // Opening a customization form normally prepares a session with POST.
     // This suite verifies the explicit unavailable-saving UI, never writes it.
-    if(url.origin==='http://127.0.0.1:4173'&&url.pathname==='/api/inquiry/session'&&request.method()==='POST')return route.fulfill({status:503,contentType:'application/json',body:JSON.stringify({error:'Read-only browser test: saving is unavailable.'})});
+    if(url.origin==='http://127.0.0.1:4173'&&url.pathname==='/api/inquiry/session'&&request.method()==='POST'){
+     expectedHttpErrors.add(resourceErrorKey(url.href,503));
+     return route.fulfill({status:503,contentType:'application/json',body:JSON.stringify({error:'Read-only browser test: saving is unavailable.'})});
+    }
     blocked.push(request.method()+' '+url.pathname);return route.abort('blockedbyclient');
    }
    return route.continue();
   });
-  await provide();
+  try{await provide();}finally{guard.stop();}
   expect(blocked,'No persistent mutation or external message is attempted').toEqual([]);
-  expect(errors,'No uncaught browser errors').toEqual([]);
+  expect(guard.errors,'No uncaught exceptions or unexpected error-level console messages').toEqual([]);
  },{auto:true}],
 });
 export {expect};
+export {resourceErrorKey};
 export const cards=(page:Page)=>page.locator('[data-lighting-card="product"]');
 export const titles=(page:Page)=>cards(page).getByRole('heading',{level:3}).allTextContents();
 export const filterForm=(page:Page)=>page.getByRole('form',{name:'Filter the collection'});

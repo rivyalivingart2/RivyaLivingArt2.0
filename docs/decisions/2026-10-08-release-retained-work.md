@@ -1,5 +1,7 @@
 # Release retained local work — 8 October 2026
 
+**19 October cleanup update:** this is the historical 8 October release inventory, not a current installation list. The confirmed-unused cleanup subsequently removed the Poppins loader and `pattern.css` dependency; font files, licenses and source notices remain. See [current resource availability](../redesign/DESIGN-RESOURCE-SETUP.md) and [the cleanup scope and correction](../audits/rivya-master-audit/FOLLOWUP-CLEANUP.md). This note preserves the original release record below without instructing anyone to restore removed resources.
+
 The owner requested: “push all latest thing in gitrepo”. The standing instruction is to use a detailed PR for a main-branch release. Release the existing `codex/article-meaning-review` work through that process, without a direct main push or protection bypass.
 
 ## Included

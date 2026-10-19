@@ -11,5 +11,5 @@
     "esModuleInterop": true,
     "jsx": "react-jsx"
   },
-  "include": ["*.tsx", "../../src/components/design-foundation/*.tsx"]
+  "include": ["*.tsx", "foundation/**/*.tsx", "foundation/**/*.ts"]
 }

@@ -11,7 +11,7 @@ No push, PR, merge, deployment, production data change or CMS publication was pe
 | Studio navigation | Remove inactive Bulk import and Subscribers from desktop/mobile menus and page search. | 35 everyday administrator destinations. All 37 route registrations and the two administrator-only status bookmarks remain. Editors retain their previous permitted destinations. No working importer or subscriber service was deleted. |
 | Language review | Reuse existing pagination for 20 cards per page; memoize draft/public review calculations by saved entries and language. | All 603 QA records are reachable across 31 pages. Search/state filtering operates on all records; filter/language changes return to page 1. Hindi/Gujarati counts and exact-record links preserve existing review semantics. |
 | Account/password request errors | Separate queue-load failure from decision feedback; show an explicit error/retry state; disable review while loading or stale. | A failed GET no longer also says “No open requests.” Refresh exposes loading feedback and recovers to successful empty/results states. Existing rows remain visible but cannot be acted on until a successful refresh. |
-| Unused source | Delete the 14 files in the manifest below. | No remaining source reference to a deleted file or package, and no unresolved relative/alias imports in the independent scan. Current public pages, Studio, films, fonts and order board remain. |
+| Unused application source | Remove the 14 application-tree files in the manifest below. | Application entry points do not consume them. PR #64 review subsequently found a retained experimental consumer of five prototype files; those files are now archived beside the runnable preview, as corrected below. Current public pages, Studio, films, fonts and order board remain. |
 | Packages | Remove `pattern.css` and `@gsap/react`. | Neither has a retained consumer. Core `gsap` and the active motion system remain. No replacement package, new service or new dependency was introduced. |
 | Evidence tooling | Allow a validated dedicated local report folder for checks and browser reports, including the public QA fixture manifest. | Follow-up receipts live in ignored `test-results/audit-followup-cleanup/`. Existing fixed-loopback, production-environment rejection and blocked-write guards remain. |
 
@@ -36,17 +36,25 @@ The existing full-content API and server queries remain unchanged. A summary-onl
 | `src/components/studio-overview.tsx` | Superseded overview; no retained consumer. |
 | `src/components/studio-overview.module.css` | Used only by the removed overview. |
 | `src/lib/studio-overview.ts` | Used only by the removed overview. |
-| `src/components/design-foundation/MaterialFilm.tsx` | Disconnected prototype; active `shop/material-film.tsx` retained. |
-| `src/components/design-foundation/MotionSurface.tsx` | Disconnected prototype; sole `@gsap/react` consumer. |
-| `src/components/design-foundation/ResponsivePicture.tsx` | Disconnected prototype. |
-| `src/components/design-foundation/primitives.tsx` | Disconnected prototype composition. |
-| `src/components/design-foundation/foundation.css` | Styles used only by the disconnected prototype cluster. |
+| `src/components/design-foundation/MaterialFilm.tsx` | Unused by the application; relocated into the historical Phase 2 experiment after PR review. Active `shop/material-film.tsx` retained. |
+| `src/components/design-foundation/MotionSurface.tsx` | Unused by the application; relocated into the experiment with existing core GSAP lifecycle cleanup, removing its `@gsap/react` requirement. |
+| `src/components/design-foundation/ResponsivePicture.tsx` | Unused by the application; relocated into the retained experiment. |
+| `src/components/design-foundation/primitives.tsx` | Unused by the application; relocated into the retained experiment. |
+| `src/components/design-foundation/foundation.css` | Scoped prototype styles relocated into the retained experiment. |
 | `src/components/homepage.module.css` | Orphaned historical stylesheet; active `shop/homepage.module.css` retained. |
 | `src/app/pieces/[slug]/piece.module.css` | Orphaned historical stylesheet; current shared product presentation retained. |
 | `src/app/preview/studio/modules/[module]/page.module.css` | Orphaned stylesheet; the preview route itself is retained. |
 | `src/lib/fonts/poppins.ts` | Unused font loader; actual font assets and active typography retained. |
 
-These deletions remove **53,648 committed source bytes**, a repository-maintenance figure measured from the parent Git objects. The files were unreachable, so this is **not** a measured shipped-bundle saving. Import/re-export/literal dynamic-import and CSS reachability were checked from 130 Next entrypoints and against executable tool/test references before deletion; the independent final scan found no remaining broken references.
+The original cleanup removed **53,648 committed source bytes from the application tree**, measured from the parent Git objects. This is **not** a shipped-bundle saving or the final repository-wide byte reduction: five prototype files and a motion-hook snapshot are now retained under the experiment. The original reachability review covered 130 Next entrypoints and tool/test consumers but missed `experiments/redesign-phase2`. Its earlier claim of no remaining broken references was therefore too broad. The correction below preserves that runnable historical consumer without restoring unused application components or packages.
+
+### PR #64 review correction — 19 October
+
+Automated review found that the Phase 2 README still advertised a runnable preview whose imports and stylesheet pointed at removed prototype files. The five components/styles were relocated to `experiments/redesign-phase2/foundation/`, alongside a snapshot of the existing motion hook. The application does not import this archive. The experimental `MotionSurface` now uses an isomorphic React layout effect with core GSAP `matchMedia`; the match-media context reverts its animations, triggers and inline styles. This preserves the prior hook's cleanup ordering without reinstalling `@gsap/react`.
+
+Preview imports, its explicit asset allowlist and its isolated TypeScript include list now target the archive. Its current browser review checks those bundle boundaries instead of requiring the entire application to match a superseded 13 October source fingerprint. Original dated verification records remain historical evidence. The obsolete Poppins-loader and `pattern.css` import examples were removed from `DESIGN-RESOURCE-SETUP.md`; a dated note in the 8 October retained-work decision distinguishes its original inventory from current availability. Actual font assets, source notices, media and published functionality remain intact.
+
+Fresh correction verification: the standalone preview builds (384,242 raw JavaScript bytes; 125,754 gzip bytes) and passes its isolated TypeScript project. Its existing browser review passes **57/57 checks**, and its edge-case suite passes **22/22 checks**, using installed Chrome on desktop, mobile and reduced-motion contexts. This includes GSAP teardown and live reduced-motion changes, keyboard film controls, modal focus, image/video failure recovery, 320/768/1024 px reflow and all 36 responsive media variants returning their registered byte lengths. The first adaptation used a passive effect and failed two smooth-scroll cleanup checks; restoring the original layout-effect ordering fixed those checks before the final passing run. No production application, dependency or database change was required. Final local raw receipts/screenshots remain ignored at `output/playwright/redesign-phase2/review.json` and `edge-cases.json`; the loopback preview server was stopped after verification.
 
 ### Deliberately retained
 

@@ -1,5 +1,13 @@
 # Canonical browser checks against existing isolated QA
 
+## PR #64 browser-error guard correction — 19 October 2026
+
+The shared guard now records both `pageerror` and error-level `console` events, including non-throwing hydration errors. Only exact Chrome resource diagnostics for an explicitly declared URL/status in an intentional 404 or 503 test are exempted; application console errors and unexpected resource failures still fail. Listeners are removed during fixture teardown. A separate real-browser regression verifies console errors, uncaught exceptions, strict resource matching and listener cleanup at all four widths.
+
+Fresh execution against the unchanged final application build `AVszvoAaWRdzkbTXvBAcW`, Node 22.23.2 and installed Chrome: **159 passed, 5 intentional skips, 0 failed, 0 flaky**, no retries, start `2026-10-19T08:43:00.174Z`, duration `170916.595ms`. Raw results remain ignored at `test-results/audit-release-review/e2e-final-results.json`. The earlier attempt was blocked by sandbox loopback access before tests ran; the authorized unrestricted-local retry passed. Server navigation can still log the previously disclosed destination-stream-close notice; this is not a claim of an empty server log. Focused E2E lint and application TypeScript checks also passed. Older result counts below retain their dated scope.
+
+---
+
 For a separate local follow-up, set `RIVYA_E2E_REPORT_ROOT=test-results/audit-followup-cleanup`. The optional value accepts exactly one lowercase alphanumeric/hyphenated folder below `test-results/`; traversal, absolute paths and nested paths are rejected. Reporter output, screenshot/trace output and the read-only public fixture writer/reader share this location. Omission retains the original master-audit folder. This changes evidence storage only; all isolated-QA and blocked-write guards below remain.
 
 The former suite started a published-content server with an empty database URL. On 17 October 2026 its existing desktop home check returned HTTP 500 (`Studio storage is not configured`) before any visual assertion. Evidence is local in `test-results/rivya-master-audit/e2e-before/` and `e2e-before-retry.log`. This was a test-environment failure, not evidence of a production outage.

@@ -1,5 +1,7 @@
 # Phase 2 local animation and media review
 
+This is a **historical, runnable local specimen**, retained for design comparison. The released cinematic site supersedes its presentation. It is not a current public/Studio route or a prerequisite to future releases.
+
 Run from the repository root with Node 22:
 
 ```powershell
@@ -11,7 +13,9 @@ Open `http://127.0.0.1:4179/` for animation, film, image crops and an unchanged 
 
 ## Source boundaries
 
-Reusable, opt-in components live in `src/components/design-foundation/`. Existing public/Studio route code imports none of them yet. Import `foundation.css` at a future authorized presentation boundary and use `.rv-foundation`; tokens do not replace production globals. `MotionSurface` is for one public presentation region per document, not Studio or an application-wide wrapper. Its cleanup restores native scroll behaviour and removes its scoped GSAP effects. Keep Studio on native scrolling; do not combine multiple smoothing engines.
+The specimen's archived components and scoped styles live in `experiments/redesign-phase2/foundation/`. They were relocated from the former application prototype directory after PR #64 review found that application-only reachability had missed this runnable consumer. Public/Studio application routes do not import this archive. For current product work, use the active components in `src/components/shop/` and `src/components/studio/`, rather than reintroducing these historical prototypes.
+
+The archive retains the 13 October component appearance and media behavior from commit `ad84a2a`, including its motion-capability hook. Its only motion integration adaptation replaces the removed `@gsap/react` wrapper with an isomorphic React layout effect and the existing core GSAP `matchMedia` lifecycle. Cleanup reverts scoped animations, triggers and styles; no package was restored. `MotionSurface` remains limited to one specimen presentation region, while Studio controls use native scrolling.
 
 The experiment hydrates the actual components over server-rendered HTML. Text, images and native video controls remain available without scripting. React/GSAP diagnostics and the unmount helper exist only in the experiment client. Neither diagnostics nor review labels belong in future public UI.
 
@@ -33,8 +37,10 @@ node node_modules/typescript/bin/tsc --project experiments/redesign-phase2/tscon
 
 Browser checks use installed Chrome through the repository's existing Playwright dependency. Screenshots and detailed receipts are ignored under `output/playwright/redesign-phase2/`; committed summarized evidence belongs in the modern redesign documentation directory. These checks are local browser emulation, not independent language review, physical-device or native screen-reader evidence.
 
+The current review checks the experiment's bundled dependency boundary and interactions. The original whole-application source fingerprint in `docs/redesign/modern-design-2026-10-13/source-baseline.json` is historical: later approved releases deliberately changed the application. It is not a current preview pass/fail condition. The separately recorded original receipt is preserved. `performance.mjs` is also a historical two-preview comparison requiring Phase 1 on port 4178; it is not part of the current runnable-preview verification and must not overwrite the dated committed performance receipt.
+
 ## Smoothing decision
 
 ScrollSmoother was prototyped, then rejected after a focus test reproduced `pointerdown` on Play film followed by `pointerup` on a different section. The retained implementation uses browser-native scrolling and smooth anchor navigation. GSAP handles only shallow image transforms and a few headings. There is no transformed full-page scroll wrapper, scroll-jacking, long pinning, custom pointer suppression or inertial Studio scrolling.
 
-Owner approval of this preview is the stop gate before Phase 3. No push/release is authorized by this phase.
+At its creation, owner approval of this preview was the stop gate before Phase 3. That historical phase gate has been superseded by later owner-approved work; this archive itself grants no production write or release permission.

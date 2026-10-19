@@ -1,9 +1,9 @@
 import {useEffect,useRef,useState} from 'react';
-import {Button,Field,Section,Status} from '../../src/components/design-foundation/primitives';
-import {ResponsivePicture,type PictureAsset} from '../../src/components/design-foundation/ResponsivePicture';
-import {MaterialFilm} from '../../src/components/design-foundation/MaterialFilm';
-import {MotionSurface} from '../../src/components/design-foundation/MotionSurface';
-import {useMotionCapability} from '../../src/components/design-foundation/motion-capability';
+import {Button,Field,Section,Status} from './foundation/primitives';
+import {ResponsivePicture,type PictureAsset} from './foundation/ResponsivePicture';
+import {MaterialFilm} from './foundation/MaterialFilm';
+import {MotionSurface} from './foundation/MotionSurface';
+import {useMotionCapability} from './foundation/motion-capability';
 import manifest from './media-manifest.json';
 import content from '../redesign-phase1/preview-data.json';
 

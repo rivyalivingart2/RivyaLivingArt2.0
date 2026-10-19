@@ -24,6 +24,8 @@ Owner instruction: **"push all things into main git branch"**. This authorizes t
 
 ## Evidence and review
 
+PR #64's automated review subsequently identified three P2 gaps in the first candidate: an experimental preview consumer missed by application-only reachability, stale optional-resource instructions, and missing console-error capture in the consolidated browser guard. All three were corrected before merge; see [PR-64-REVIEW-FOLLOWUP.md](PR-64-REVIEW-FOLLOWUP.md). The corrected suite freshly passed **159 tests with 5 intentional skips**, and the archived preview passed **57 browser and 22 edge checks**. These changes affect experiments, tests and documentation only; the final application build below remains the same. The earlier independent no-blocker verdict must not be read as proof that the first PR head had no issues.
+
 Application build `AVszvoAaWRdzkbTXvBAcW` includes the final application changes. Its fresh 19 October checks passed:
 
 | Check | Result |

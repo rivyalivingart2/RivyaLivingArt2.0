@@ -1,5 +1,5 @@
 import {build} from 'esbuild';
-import {mkdir,readFile,writeFile,stat} from 'node:fs/promises';
+import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import {gzipSync} from 'node:zlib';
 const dir='output/redesign-phase2';await mkdir(dir,{recursive:true});
 await build({entryPoints:['experiments/redesign-phase2/client.tsx'],outfile:`${dir}/client.js`,bundle:true,format:'esm',jsx:'automatic',minify:true,define:{'process.env.NODE_ENV':'"production"'},metafile:true}).then(async r=>writeFile(`${dir}/bundle-meta.json`,JSON.stringify(r.metafile,null,2)));
