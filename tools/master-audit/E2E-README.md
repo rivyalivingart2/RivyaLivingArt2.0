@@ -1,5 +1,7 @@
 # Canonical browser checks against existing isolated QA
 
+For a separate local follow-up, set `RIVYA_E2E_REPORT_ROOT=test-results/audit-followup-cleanup`. The optional value accepts exactly one lowercase alphanumeric/hyphenated folder below `test-results/`; traversal, absolute paths and nested paths are rejected. Reporter output, screenshot/trace output and the read-only public fixture writer/reader share this location. Omission retains the original master-audit folder. This changes evidence storage only; all isolated-QA and blocked-write guards below remain.
+
 The former suite started a published-content server with an empty database URL. On 17 October 2026 its existing desktop home check returned HTTP 500 (`Studio storage is not configured`) before any visual assertion. Evidence is local in `test-results/rivya-master-audit/e2e-before/` and `e2e-before-retry.log`. This was a test-environment failure, not evidence of a production outage.
 
 The repaired suite exercises current published catalogue contracts. It does not recreate the superseded sample catalogue, provision a database, seed records, authenticate staff, send messages, or publish content.

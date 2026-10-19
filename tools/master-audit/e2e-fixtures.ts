@@ -6,6 +6,7 @@ import {parseEnv} from 'node:util';
 import {baselineProducts,validProduct,type ShopProduct} from '../../src/lib/shop-model';
 import {validPageMedia} from '../../src/lib/editorial-media-model';
 import type {PublicMedia} from '../../src/lib/public-media';
+import {fixturePath,reportRoot} from '../../e2e/report-paths';
 
 /** Read published local fixtures only. No seeds, authentication or record changes. */
 async function readFixtures(){
@@ -33,8 +34,8 @@ async function readFixtures(){
   assert.ok(products.filter(p=>p.tier==='large').length>=2,'Two published furniture fixtures are required');
   assert.ok(products.some(p=>p.images.length>1),'A published multi-image fixture is required');
   assert.ok(products.length>12,'Published QA catalogue must exercise incremental loading');
-  await mkdir('test-results/rivya-master-audit/e2e-final',{recursive:true});
-  await writeFile('test-results/rivya-master-audit/e2e-final/public-fixtures.json',JSON.stringify({at:new Date().toISOString(),scope:'Existing fixed loopback QA; published public descriptors only; read-only transaction',products},null,2)+'\n');
+  await mkdir(`${reportRoot}/e2e-final`,{recursive:true});
+  await writeFile(fixturePath,JSON.stringify({at:new Date().toISOString(),scope:'Existing fixed loopback QA; published public descriptors only; read-only transaction',products},null,2)+'\n');
  }finally{await client.query('ROLLBACK');await client.end();}
 }
 await readFixtures();

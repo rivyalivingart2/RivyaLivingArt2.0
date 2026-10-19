@@ -1,5 +1,7 @@
 # Final verification — 17–19 October 2026
 
+**Subsequent local change set:** [FOLLOWUP-CLEANUP.md](FOLLOWUP-CLEANUP.md) records the later owner-approved cleanup and its fresh 365-unit/403-runtime/50-focused-browser checks. Counts and application fingerprint below describe the original audit checkpoint `ad84a2a`, not the later cleanup. Refer to the follow-up for its exact source manifest, current test results and unchanged release gates.
+
 This is a completed audit and a locally verified candidate, **not a production release or complete accessibility/performance certification**.
 
 - Production base: 66e82ef04f76b8460654bab4329ccbadfb47f28e, Vercel READY deployment dpl_7u2Yji4v5cpAbPde4DRq3Ua1LfDw and its production alias rechecked read-only on 19 October (release-identity-2026-10-19.json). Broad public/private browser evidence remains dated 17 October; no new private Studio session was available on 19 October.

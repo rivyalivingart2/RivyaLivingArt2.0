@@ -20,7 +20,6 @@
     "check": "npm run lint && npm run typecheck && npm test && npm run test:preflight && npm run build && npm run test:runtime"
   },
   "dependencies": {
-    "@gsap/react": "2.1.2",
     "@neondatabase/serverless": "1.0.2",
     "@tiptap/core": "3.31.3",
     "@tiptap/pm": "3.31.3",
@@ -33,7 +32,6 @@
     "gsap": "3.15.0",
     "lucide-react": "1.31.0",
     "next": "16.3.8",
-    "pattern.css": "1.0.0",
     "radix-ui": "1.6.7",
     "react": "19.3.0",
     "react-dom": "19.3.0",

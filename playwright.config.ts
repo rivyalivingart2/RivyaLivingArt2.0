@@ -1,5 +1,6 @@
 import { defineConfig } from "@playwright/test";
 import {existsSync} from 'node:fs';
+import {reportRoot} from './e2e/report-paths';
 
 if (process.env.VERCEL_ENV !== undefined) {
   throw new Error("These browser tests start a local preview only; run them outside a Vercel deployment.");
@@ -21,8 +22,8 @@ export default defineConfig({
   forbidOnly: Boolean(process.env.CI),
   retries: 0,
   workers: 2,
-  reporter: [["list"], ["html", { open: "never",outputFolder:'test-results/rivya-master-audit/e2e-final-report' }],['json',{outputFile:'test-results/rivya-master-audit/e2e-final-results.json'}]],
-  outputDir: "test-results/rivya-master-audit/e2e-final",
+  reporter: [["list"], ["html", { open: "never",outputFolder:`${reportRoot}/e2e-final-report` }],['json',{outputFile:`${reportRoot}/e2e-final-results.json`}]],
+  outputDir: `${reportRoot}/e2e-final`,
   globalSetup:'./tools/master-audit/e2e-setup.ts',
   timeout:60_000,
   expect:{timeout:10_000},

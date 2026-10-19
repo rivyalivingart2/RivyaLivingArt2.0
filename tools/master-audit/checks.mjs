@@ -3,7 +3,8 @@ import {mkdir, writeFile} from 'node:fs/promises';
 
 // Run only through the repository's fixed-target local QA guard.
 if (!globalThis.__rivyaMigrationLocalSql) throw new Error('Isolated QA guard required');
-const out='test-results/rivya-master-audit';
+const out=process.argv[2]||'test-results/rivya-master-audit';
+if(!/^test-results\/[a-z0-9-]+$/.test(out))throw new Error('Use one dedicated test-results folder');
 await mkdir(out,{recursive:true});
 const checks=[
  ['lint',['node_modules/eslint/bin/eslint.js','.']],

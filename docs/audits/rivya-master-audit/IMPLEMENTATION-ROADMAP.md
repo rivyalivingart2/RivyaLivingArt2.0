@@ -1,5 +1,7 @@
 # Implementation roadmap — 17–19 October 2026 and production gate
 
+**19 October follow-up completed locally:** See [FOLLOWUP-CLEANUP.md](FOLLOWUP-CLEANUP.md). The measured translation overview now renders 20 cards per page and memoizes coverage; all 603 records remain accessible. Confirmed unused source/packages and two inactive menu entries were removed, and failed request loads no longer claim an empty queue. The initial translation payload remains unchanged. Production, release and external evidence steps below remain applicable.
+
 ## Completed locally
 
 Retained the released cinematic design and isolated the existing acceptance bundle in 40907ff. Reproduced and corrected narrowly scoped memory/pause, content language, filter semantics, leave confirmation, table focus, pagination, related-section continuity, date validation, note accuracy and current E2E/documentation defects. No schema, stored product/content/crop/published-revision data or business information changed. Existing Next and matched lint config were patched to 16.3.8, Sharp to 0.35.5 and transitive source-map-js to 1.2.2; no new direct dependency or framework major migration was introduced.

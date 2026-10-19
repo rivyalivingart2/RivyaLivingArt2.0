@@ -1,4 +1,12 @@
-# Current state — 19 October 2026 master audit continuation
+# Current state — 19 October 2026 audit cleanup
+
+Branch `codex/audit-followup-cleanup` follows the completed local audit at `ad84a2a`. The owner explicitly chose confirmed unused, duplicate and excluded removals only. See `docs/audits/rivya-master-audit/FOLLOWUP-CLEANUP.md` for the complete manifest and test evidence: unused source/packages removed, inactive menu entries hidden with guarded bookmarks retained, language review paginated, and request-load failures separated from successful empty states. The prior verified audit/security fixes are inherited unchanged. Protected QA records remain unchanged.
+
+All changes remain local. Release, production request-queue diagnosis/repair, production performance, upstream development advisory and unavailable native/device/field/provider evidence have not been relabelled complete. Earlier dated checkpoints below remain reference material.
+
+---
+
+# Historical state — 19 October 2026 master audit continuation
 
 Current local branch: `codex/rivya-master-audit`. Pre-existing cinematic acceptance work is preserved at `40907ff`; the new audit fixes and compatible security updates remain local. GitHub main and the READY production alias were rechecked unchanged at `66e82ef04f76b8460654bab4329ccbadfb47f28e` on 19 October. No push, PR, merge, deployment, production business-data write or publication is authorized by the current audit request.
 

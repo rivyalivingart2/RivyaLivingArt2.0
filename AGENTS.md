@@ -1,4 +1,12 @@
-# Current checkpoint — master audit continuation, 19 October 2026
+# Current checkpoint — approved audit cleanup, 19 October 2026
+
+The owner authorized audit follow-up implementation and selected removal of **confirmed unused, duplicate and already-excluded features only**. Work is on `codex/audit-followup-cleanup`, based on local audit commit `ad84a2a`. Read `docs/audits/rivya-master-audit/FOLLOWUP-CLEANUP.md` for the exact 14-file/two-package removal manifest, two inactive navigation entries, translation pagination, accurate request-queue errors, verification and remaining gates. Active business functions, all 37 route registrations, protected records, logo, colors and media remain intact. Raw follow-up evidence stays ignored in `test-results/audit-followup-cleanup/`.
+
+No push, PR, merge, deployment, production mutation or CMS publication is authorized. The production request-queue failure, deployed performance, development-only advisory and native/device/field/provider gates remain distinct. Do not claim the local queue UI repair fixes its production database cause. The earlier audit and historical checkpoints below retain their dates and are not instructions to replay releases or imports.
+
+---
+
+# Historical checkpoint — master audit continuation, 19 October 2026
 
 The owner's current request is the full website, Studio and codebase audit, verified narrow local fixes and the report under `docs/audits/rivya-master-audit/`. This checkpoint takes precedence over historical release and phase instructions below. Work is on `codex/rivya-master-audit`; the pre-existing acceptance changes were preserved in local checkpoint `40907ff` before the new audit fixes. Released main remains `66e82ef04f76b8460654bab4329ccbadfb47f28e`; its GitHub identity and READY production alias were rechecked read-only on 19 October.
 

@@ -1,4 +1,10 @@
-# Current audit authority — 19 October 2026
+# Current cleanup authority — 19 October 2026
+
+The owner authorized audit follow-up changes and removal only of confirmed unused, duplicate and already-excluded features. [The follow-up report](docs/audits/rivya-master-audit/FOLLOWUP-CLEANUP.md) records the implemented bounded cleanup and retained functions. No active business feature, protected content/media, core workflow, logo or palette was removed. The previous audit's local-only release boundary remains: fresh authorization is required for a push, PR, merge, deployment, production write or CMS publication. Native/device/field evidence remains separate.
+
+---
+
+# Historical audit authority — 19 October 2026
 
 The current scope is the 17–19 October full project audit and narrowly verified local repairs, including compatible security patch versions for existing dependencies. The accepted cinematic design, logo, palette, real content, data and manual inquiry/WhatsApp workflow remain protected. [Final verification](docs/audits/rivya-master-audit/FINAL-VERIFICATION.md) and the [independent security review](docs/audits/rivya-master-audit/SECURITY-RELEASE-REVIEW.md) distinguish source implementation, local execution, dated production observations and remaining acceptance gates. No release, production write or CMS publication is authorized without a fresh explicit instruction. The historical product/checkpoint sections below remain preserved.
 

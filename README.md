@@ -1,4 +1,10 @@
-# Current checkpoint — 19 October 2026 master audit continuation
+# Current checkpoint — 19 October 2026 audit cleanup
+
+The owner-approved local cleanup is on `codex/audit-followup-cleanup`, based on audit checkpoint `ad84a2a`. Read [the follow-up report](docs/audits/rivya-master-audit/FOLLOWUP-CLEANUP.md) for confirmed unused source/package removal, inactive Studio menu cleanup, bounded language review, request-error recovery and current verification. All active website/Studio features and protected records remain; 37 registered workspaces now provide 35 everyday administrator menu destinations. Production repair, release and external acceptance gates remain open where documented. No push or deployment is authorized.
+
+---
+
+# Historical checkpoint — 19 October 2026 master audit continuation
 
 Continue the 17–19 October full audit on `codex/rivya-master-audit`. The delivered cinematic design remains the baseline; only reproduced local fixes, compatible dependency security patches and verification/documentation are in scope. Read [the executive summary](docs/audits/rivya-master-audit/EXECUTIVE-SUMMARY.md), [final verification](docs/audits/rivya-master-audit/FINAL-VERIFICATION.md), [issue register](docs/audits/rivya-master-audit/ISSUE-REGISTER.csv) and [independent security review](docs/audits/rivya-master-audit/SECURITY-RELEASE-REVIEW.md). Their dated receipts distinguish preserved 17 October broad evidence from 19 October post-patch retesting.
 

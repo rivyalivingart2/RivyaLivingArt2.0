@@ -1,10 +1,11 @@
 import {test as base,expect,type Page,type Locator} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
+import {fixturePath} from './report-paths';
 
 export type ProductFixture={id:string;slug:string;name:string;tier:'large'|'memory'|'personal';category:string;material:string;images:string[];fields:{id:string;label:string;type:string;options?:string[];visibleWhen?:unknown}[]};
 type Fixtures={products:ProductFixture[];readOnlyBoundary:void};
 export const test=base.extend<Fixtures>({
- products:async({},provide)=>{const fixture=JSON.parse(await readFile('test-results/rivya-master-audit/e2e-final/public-fixtures.json','utf8'));await provide(fixture.products);},
+ products:async({},provide)=>{const fixture=JSON.parse(await readFile(fixturePath,'utf8'));await provide(fixture.products);},
  readOnlyBoundary:[async({context,page},provide)=>{
   const blocked:string[]=[],errors:string[]=[];
   page.on('pageerror',error=>errors.push(error.message));
