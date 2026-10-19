@@ -1,3 +1,5 @@
+> **Final continuation, 19 October 2026:** [PENDING-FINAL-REPORT.md](PENDING-FINAL-REPORT.md) and [pending-final-verification.json](pending-final-verification.json) record the owner-approved production request-table repair and successful live queue refresh, the final pagination accessibility correction, and 34 additional real browser/HTTP lifecycle checks. They supersede earlier open request-table, pagination-ARIA and framework-adapter-only statements. Source release and external provider/device/native/field acceptance remain separate. The historical results below were not rerun or silently upgraded by this continuation.
+
 # Pending audit follow-up — 19 October 2026
 
 The owner requested completion of pending audit changes. This local follow-up starts from `e7000c4b3acf9515c140eea2c0cea8c1051ac2a6` on `codex/audit-pending-completion`. It retains the completed audit and confirmed-unused cleanup, closes the remaining translation-overview transfer issue, and supplies actual disposable-database evidence for previously blocked lifecycle cases. It does not release the candidate or mark external acceptance complete.

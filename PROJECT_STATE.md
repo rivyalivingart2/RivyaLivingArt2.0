@@ -1,3 +1,13 @@
+# Current checkpoint — approved request-table repair and final local audit checks, 19 October 2026
+
+Continue on `codex/audit-pending-completion` from local checkpoint `016d332`. Read [the final continuation report](docs/audits/rivya-master-audit/PENDING-FINAL-REPORT.md) and [its verification receipt](docs/audits/rivya-master-audit/pending-final-verification.json). The shared pagination now exposes meaningful accessible page status while preserving its design; final build `AVszvoAaWRdzkbTXvBAcW` passed the bounded desktop/mobile checks. Fresh checks: 377 unit, 403 runtime, 12 preflight, lint/type/build, 34 actual browser/HTTP lifecycle checks and 37 exact repair-SQL checks.
+
+The owner explicitly approved **this database repair only**. The missing live request table, three secondary indexes and runtime SELECT/INSERT/UPDATE grants were applied once on the recorded shared live Neon target, verified read-only, and the renewed production Studio session successfully loaded/refreshed its empty request queue. Do not replay the creation transaction or interpret approval as release authority. No existing business-record DML, account decision, reset or production publication occurred; normal session bookkeeping is distinct. No full production row-hash comparison is claimed.
+
+No push, PR, merge, deployment or further production mutation/publication is authorized. Production performance after source release, real provider, native/zoom/device/field acceptance and the development-only upstream advisory remain separate. Preserve active functions, logo/colors/content/media and manual WhatsApp behavior; cleanup remains limited to the earlier confirmed-unused/duplicate/excluded manifest. Raw evidence stays Git-ignored. Everything below is historical and retains its original date and scope.
+
+---
+
 # Current state — pending audit completion, 19 October 2026
 
 Branch `codex/audit-pending-completion` follows `e7000c4`. See `docs/audits/rivya-master-audit/PENDING-COMPLETION.md` for the summary-only translation response and new disposable erasure/replay/CMS verification. Existing 1,658 protected QA rows remain unchanged. No additional active features, media or content were removed. Both language statuses and all 603 records remain available.

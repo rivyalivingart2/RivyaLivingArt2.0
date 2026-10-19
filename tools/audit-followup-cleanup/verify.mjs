@@ -65,7 +65,8 @@ try{
   check('Every saved record remains reachable across pages',links.size===entries.length&&entries.every(e=>links.has('/studio/content?record='+encodeURIComponent(e.document.id)+'&translation=hi')));
   await expect(page.getByRole('button',{name:'Next',exact:true})).toBeDisabled();
   await page.getByRole('combobox',{name:/^Review language/}).selectOption('gu');
-  await expect(page.locator('[aria-label^="Page "][aria-live="polite"]')).toHaveAttribute('aria-label',/^Page 1 of/);
+  await expect(page.getByRole('status').filter({hasText:/Page 1 of \d+/})).toBeAttached();
+  check('Pagination exposes a meaningful page announcement',/Page 1 of \d+/.test(await page.getByRole('status').filter({hasText:/Page 1 of \d+/}).ariaSnapshot()));
   check('Changing review language resets the last page',true);
   for(const width of [1920,1440,1200,992,768,512,390,320]){
    await page.setViewportSize({width,height:width<768?844:1000});

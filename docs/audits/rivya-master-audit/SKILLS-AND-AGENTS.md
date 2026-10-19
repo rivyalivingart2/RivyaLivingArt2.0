@@ -1,3 +1,5 @@
+> **Final continuation, 19 October 2026:** [PENDING-FINAL-REPORT.md](PENDING-FINAL-REPORT.md) and [pending-final-verification.json](pending-final-verification.json) record the owner-approved production request-table repair and successful live queue refresh, the final pagination accessibility correction, and 34 additional real browser/HTTP lifecycle checks. They supersede earlier open request-table, pagination-ARIA and framework-adapter-only statements. Source release and external provider/device/native/field acceptance remain separate. The historical results below were not rerun or silently upgraded by this continuation.
+
 # Skills, specialist responsibilities and evidence ownership
 
 **Latest continuation — 19 October:** [PENDING-COMPLETION.md](PENDING-COMPLETION.md) and [pending-verification.json](pending-verification.json) supersede the previous translation-transfer and disposable-service-lifecycle pending statements. They include the renewed-session production request failure, fresh tests and exact remaining gates. Results below retain their original date and scope.
@@ -76,3 +78,9 @@ These are guidance sources. Their generic examples cannot override the user's ne
 Open [the local evidence gallery](../../../test-results/rivya-master-audit/index.html). It labels local baseline, after-fix captures, production, old references and diagnostics separately. Its complete route/width accordion is derived from `layouts.json`, and after-image links are included only when the actual files exist. Screenshots remain Git-ignored; this Markdown link intentionally points to local-only evidence rather than a public upload.
 
 Regenerate after the coordinator saves more evidence with `node tools/master-audit/build-gallery.mjs`. The current exact image/route/reference counts are stored in the ignored `gallery-index.json`, rather than silently assuming future captures exist.
+
+## Final pending-work continuation — 19 October 2026
+
+Existing Vercel env-vars guidance was read for protected environment metadata and credential boundaries; no secret was pulled or changed. The existing WCAG audit and Playwright guidance supported bounded semantic, focus, contrast and local browser verification. No new skill, dependency, reader or browser was installed.
+
+The user-requested specialists divided work without overlapping application edits: Studio QA reproduced/fixed/verified the shared pagination semantics; lifecycle QA built and verified the real browser/HTTP runner and independently reviewed the exact repair SQL; repair QA tested the SQL and reviewed the execution receipt. The coordinator alone operated the production console after the concrete repair approval and verified the renewed-session Studio queue. Source and report review remained separate from those production actions. See the final continuation for exact results and limits.
