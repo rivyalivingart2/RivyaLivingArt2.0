@@ -1,4 +1,14 @@
-# Current checkpoint — approved request-table repair and final local audit checks, 19 October 2026
+# Current checkpoint — complete audit bundle release authorized, 19 October 2026
+
+The owner explicitly requested **"push all things into main git branch"**. This supersedes the earlier local-only release holds for the accumulated five-commit bundle through `bd6467538863e72350f3fb6bd3e0dcd8bdb827fb`, based on released main `66e82ef04f76b8460654bab4329ccbadfb47f28e`. Release through a detailed PR, verify its exact head and hosting checks, merge normally, and verify the production deployment and read-only public/Studio behavior.
+
+Read [the release scope and evidence](docs/audits/rivya-master-audit/RELEASE.md). The already approved and verified request-table repair must not be replayed. No additional production database write, fixture import, CMS publication, account/password decision, or business-content change is part of this release. Raw screenshots, traces and private QA records remain ignored. Earlier reports retain their original dates and authorization scope; they are historical evidence, not current release restrictions.
+
+Native-reader, physical-device, real-provider and field-performance acceptance, and the development-only upstream advisory remain separate. A successful release does not certify those gates. The PR and its linked deployment record provide the final remote commit/deployment receipt.
+
+---
+
+# Historical checkpoint — approved request-table repair and final local audit checks, 19 October 2026
 
 Continue on `codex/audit-pending-completion` from local checkpoint `016d332`. Read [the final continuation report](docs/audits/rivya-master-audit/PENDING-FINAL-REPORT.md) and [its verification receipt](docs/audits/rivya-master-audit/pending-final-verification.json). The shared pagination now exposes meaningful accessible page status while preserving its design; final build `AVszvoAaWRdzkbTXvBAcW` passed the bounded desktop/mobile checks. Fresh checks: 377 unit, 403 runtime, 12 preflight, lint/type/build, 34 actual browser/HTTP lifecycle checks and 37 exact repair-SQL checks.
 
