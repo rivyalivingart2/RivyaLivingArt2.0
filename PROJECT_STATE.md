@@ -1,3 +1,11 @@
+# Current state — pending audit completion, 19 October 2026
+
+Branch `codex/audit-pending-completion` follows `e7000c4`. See `docs/audits/rivya-master-audit/PENDING-COMPLETION.md` for the summary-only translation response and new disposable erasure/replay/CMS verification. Existing 1,658 protected QA rows remain unchanged. No additional active features, media or content were removed. Both language statuses and all 603 records remain available.
+
+The owner-renewed production Studio session reproduced the account/password-request error on 19 October; logs supplied no database cause. The prepared metadata-only SQL passed local validation but has not run in production. Local release, real provider/native/device/field acceptance and upstream advisory remain separate. No push, PR, merge, deploy or production write is authorized. Historical checkpoints below remain dated references.
+
+---
+
 # Current state — 19 October 2026 audit cleanup
 
 Branch `codex/audit-followup-cleanup` follows the completed local audit at `ad84a2a`. The owner explicitly chose confirmed unused, duplicate and excluded removals only. See `docs/audits/rivya-master-audit/FOLLOWUP-CLEANUP.md` for the complete manifest and test evidence: unused source/packages removed, inactive menu entries hidden with guarded bookmarks retained, language review paginated, and request-load failures separated from successful empty states. The prior verified audit/security fixes are inherited unchanged. Protected QA records remain unchanged.

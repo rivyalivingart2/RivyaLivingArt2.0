@@ -1,3 +1,9 @@
+# Current checkpoint — pending audit completion, 19 October 2026
+
+[Pending audit completion report](docs/audits/rivya-master-audit/PENDING-COMPLETION.md) records the latest local changes on `codex/audit-pending-completion` after `e7000c4`: 96.7% smaller language-review entry data, complete record/status parity, newly executed disposable lifecycle checks, fresh responsive/regression verification and the live request-queue diagnosis boundary. [Verification receipt](docs/audits/rivya-master-audit/pending-verification.json) distinguishes actual tests from blocked external gates. All work remains local; no release or production mutation is authorized.
+
+---
+
 # Current checkpoint — 19 October 2026 audit cleanup
 
 The owner-approved local cleanup is on `codex/audit-followup-cleanup`, based on audit checkpoint `ad84a2a`. Read [the follow-up report](docs/audits/rivya-master-audit/FOLLOWUP-CLEANUP.md) for confirmed unused source/package removal, inactive Studio menu cleanup, bounded language review, request-error recovery and current verification. All active website/Studio features and protected records remain; 37 registered workspaces now provide 35 everyday administrator menu destinations. Production repair, release and external acceptance gates remain open where documented. No push or deployment is authorized.

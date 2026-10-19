@@ -1,5 +1,8 @@
 # Skills, specialist responsibilities and evidence ownership
 
+**Latest continuation — 19 October:** [PENDING-COMPLETION.md](PENDING-COMPLETION.md) and [pending-verification.json](pending-verification.json) supersede the previous translation-transfer and disposable-service-lifecycle pending statements. They include the renewed-session production request failure, fresh tests and exact remaining gates. Results below retain their original date and scope.
+
+
 Audit interval: 17–19 October 2026. This records actual repository skill availability and selective uses documented by the specialists. The first discovery/source passes were on 17 October; independent final reviews and patched-candidate retests continued on 19 October. Availability does not mean every recipe was applied, and source inspection does not establish browser, native-device or production acceptance.
 
 ## Coordinated specialist work

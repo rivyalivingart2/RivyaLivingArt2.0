@@ -1,0 +1,202 @@
+{
+  "at": "2026-10-19T06:58:57.2329670Z",
+  "branch": "codex/audit-pending-completion",
+  "baseCommit": "e7000c4b3acf9515c140eea2c0cea8c1051ac2a6",
+  "productionCommit": "66e82ef04f76b8460654bab4329ccbadfb47f28e",
+  "released": false,
+  "scope": "Local translation summary and bounded lifecycle verification; production diagnostics read-only",
+  "checks": [
+    {
+      "name": "lint",
+      "args": [
+        "node_modules/eslint/bin/eslint.js",
+        "."
+      ],
+      "startedAt": "2026-10-19T06:44:53.881Z",
+      "finishedAt": "2026-10-19T06:45:51.184Z",
+      "exitCode": 0
+    },
+    {
+      "name": "unit",
+      "args": [
+        "--import",
+        "tsx",
+        "--test",
+        "tests/*.test.mjs"
+      ],
+      "startedAt": "2026-10-19T06:45:51.186Z",
+      "finishedAt": "2026-10-19T06:45:55.407Z",
+      "exitCode": 0,
+      "tests": 377,
+      "pass": 377,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "name": "preflight",
+      "args": [
+        "--test",
+        "tools/codex-preflight.test.mjs"
+      ],
+      "startedAt": "2026-10-19T06:45:55.409Z",
+      "finishedAt": "2026-10-19T06:45:59.788Z",
+      "exitCode": 0,
+      "tests": 12,
+      "pass": 12,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "name": "build",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "build"
+      ],
+      "startedAt": "2026-10-19T06:45:59.789Z",
+      "finishedAt": "2026-10-19T06:46:37.584Z",
+      "exitCode": 0
+    },
+    {
+      "name": "typegen",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "typegen"
+      ],
+      "startedAt": "2026-10-19T06:46:37.585Z",
+      "finishedAt": "2026-10-19T06:46:38.616Z",
+      "exitCode": 0
+    },
+    {
+      "name": "typecheck",
+      "args": [
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "startedAt": "2026-10-19T06:46:38.617Z",
+      "finishedAt": "2026-10-19T06:46:46.016Z",
+      "exitCode": 0
+    },
+    {
+      "name": "runtime",
+      "args": [
+        "--import",
+        "tsx",
+        "--test",
+        "tools/frontend-runtime.test.mjs"
+      ],
+      "startedAt": "2026-10-19T06:46:46.017Z",
+      "finishedAt": "2026-10-19T06:47:00.918Z",
+      "exitCode": 0,
+      "tests": 403,
+      "pass": 403,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    }
+  ],
+  "finalLint": {
+    "errors": 0,
+    "existingWarnings": 62,
+    "exitCode": 0
+  },
+  "translation": {
+    "records": 603,
+    "reductionPercent": 96.705,
+    "studioMutationAttempts": 0,
+    "summaryParsedEntriesBytes": 206124,
+    "checks": 39,
+    "status": "PASS",
+    "automatedAccessibility": [
+      {
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 179
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 135
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 135
+          }
+        ]
+      }
+    ],
+    "fullParsedEntriesBytes": 6256425,
+    "browserRuntimeErrors": 0
+  },
+  "e2e": {
+    "startTime": "2026-10-19T06:48:42.353Z",
+    "duration": 164952.332,
+    "expected": 155,
+    "skipped": 5,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "lifecycle": {
+    "evidence": "test-results/audit-pending/lifecycle/run-2026-10-19T06-53-42-920Z/results.json",
+    "actual": "Application services and route handlers with real disposable PostgreSQL",
+    "sqlRequests": 151,
+    "adapters": "Next cookie/cache context and in-memory Blob SDK",
+    "checks": 46,
+    "stopped": true,
+    "status": "pass",
+    "networkBoundary": "Guarded fetch/SQL transport, not OS-wide egress",
+    "privateRecordsCopied": 0
+  },
+  "preservation": {
+    "scopes": 13,
+    "existingRows": 1658.0,
+    "unchanged": true
+  },
+  "productionAccess": {
+    "databaseDiagnosis": "BLOCKED: no existing runtime-role connection",
+    "productionSqlExecuted": false,
+    "feature": "VERIFIED_OPEN",
+    "freshLogs": "Successful query, zero matching events",
+    "reproduced": "2026-10-19 approximately 06:47 UTC after owner renewed sign-in",
+    "preparedReadOnlySql": "tools/audit-pending/access-diagnostics.sql"
+  },
+  "externalGates": [
+    "Production repair and released performance acceptance",
+    "Upstream development-only braces patch",
+    "Real provider scope",
+    "Native reader and physical devices",
+    "Field performance and manual incomplete contrast evaluations",
+    "Fresh release authorization"
+  ],
+  "rawEvidenceRoot": "test-results/audit-pending (Git-ignored)"
+}

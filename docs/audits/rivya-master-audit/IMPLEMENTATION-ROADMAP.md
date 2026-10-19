@@ -1,5 +1,8 @@
 # Implementation roadmap — 17–19 October 2026 and production gate
 
+**Latest continuation — 19 October:** [PENDING-COMPLETION.md](PENDING-COMPLETION.md) and [pending-verification.json](pending-verification.json) supersede the previous translation-transfer and disposable-service-lifecycle pending statements. They include the renewed-session production request failure, fresh tests and exact remaining gates. Results below retain their original date and scope.
+
+
 **19 October follow-up completed locally:** See [FOLLOWUP-CLEANUP.md](FOLLOWUP-CLEANUP.md). The measured translation overview now renders 20 cards per page and memoizes coverage; all 603 records remain accessible. Confirmed unused source/packages and two inactive menu entries were removed, and failed request loads no longer claim an empty queue. The initial translation payload remains unchanged. Production, release and external evidence steps below remain applicable.
 
 ## Completed locally

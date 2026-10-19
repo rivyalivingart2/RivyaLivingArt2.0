@@ -1,3 +1,11 @@
+# Current checkpoint — pending audit completion, 19 October 2026
+
+The owner requested completion of pending audit changes. Continue from `codex/audit-pending-completion`, based on local cleanup commit `e7000c4`. Read `docs/audits/rivya-master-audit/PENDING-COMPLETION.md` and `pending-verification.json`: translation overview now sends 206,124 instead of 6,256,425 parsed entry bytes with all 603 records and both language statuses preserved. Actual disposable SQL/service tests close the bounded erasure/replay/CMS lifecycle gap; real provider and HTTP/framework behavior remain separately scoped.
+
+Production Staff request failure was reproduced again after owner sign-in on 19 October. Fresh logs contain no cause, and production runtime-role database access is unavailable. Prepared read-only SQL is local-validated only; do not assume its production results or apply migrations/grants. Production release, repair, field/native/device/provider and upstream advisory gates remain distinct. No push, PR, merge, deploy or production mutation/publication is authorized. Historical checkpoints below retain their dates and scope.
+
+---
+
 # Current checkpoint — approved audit cleanup, 19 October 2026
 
 The owner authorized audit follow-up implementation and selected removal of **confirmed unused, duplicate and already-excluded features only**. Work is on `codex/audit-followup-cleanup`, based on local audit commit `ad84a2a`. Read `docs/audits/rivya-master-audit/FOLLOWUP-CLEANUP.md` for the exact 14-file/two-package removal manifest, two inactive navigation entries, translation pagination, accurate request-queue errors, verification and remaining gates. Active business functions, all 37 route registrations, protected records, logo, colors and media remain intact. Raw follow-up evidence stays ignored in `test-results/audit-followup-cleanup/`.

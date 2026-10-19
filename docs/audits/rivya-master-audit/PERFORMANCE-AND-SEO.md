@@ -1,5 +1,8 @@
 # Performance and SEO audit
 
+**Latest continuation — 19 October:** [PENDING-COMPLETION.md](PENDING-COMPLETION.md) and [pending-verification.json](pending-verification.json) supersede the previous translation-transfer and disposable-service-lifecycle pending statements. They include the renewed-session production request failure, fresh tests and exact remaining gates. Results below retain their original date and scope.
+
+
 > Final status authority: this document retains the dated 17 October source/before review. The 19 October coordinator sections and [FINAL-VERIFICATION.md](FINAL-VERIFICATION.md) provide the final candidate results; [SECURITY-RELEASE-REVIEW.md](SECURITY-RELEASE-REVIEW.md) covers later dependency patches. Earlier source-only requests and issue labels below are not new current passing or open-test claims.
 
 Audit date: 17 October 2026. Repository baseline: `66e82ef04f76b8460654bab4329ccbadfb47f28e`, branch `codex/cinematic-acceptance`. This report inspects that baseline plus the preserved local acceptance work. Those local files are not evidence of a deployed optimization. The audit lead separately verified the GitHub PR #62/#63 receipts and the production deployment identity; no release operation was performed for this audit.
