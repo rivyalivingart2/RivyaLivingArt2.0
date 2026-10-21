@@ -57,3 +57,9 @@ test('diff preserves section identity and reports order, crop and reference chan
  assert.ok(fields.includes('homepage.sections.order'));assert.ok(fields.includes('homepage.sections.material.image.mobile.x'));assert.ok(fields.includes('homepage.sections.selected.productIds'));assert.ok(!fields.some(f=>f.startsWith('homeSnapshot')));
  assert.equal(previewHref('page:home',5,true),'/studio/preview?record=page%3Ahome&version=5&viewport=mobile');
 });
+
+ test('category doors keep a published media dependency even when the category has no featured product',()=>{
+ const d=structuredClone(homeCandidate),data=source(),result=compileHomepageSnapshot(d,data);
+ for(const category of result.categories){assert.ok(category.image,category.name);assert.ok(result.mediaPaths.includes(category.image.image));assert.ok(result.dependencies.some(r=>r.kind==='media'&&r.key===category.image.image));}
+ const without=structuredClone(data);without.media=without.media.filter(r=>r.key!==result.categories[0].image.image);const next=compileHomepageSnapshot(d,without);assert.ok(next.categories.every(c=>c.image?.image!==result.categories[0].image.image));
+});

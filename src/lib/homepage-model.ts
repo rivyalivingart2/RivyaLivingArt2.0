@@ -13,7 +13,7 @@ export type HomeProduct=Pick<ShopProduct,'id'|'slug'|'name'|'subtitle'|'category
 export type HomeArticle=Pick<ContentDocument,'id'|'route'|'title'|'description'|'eyebrow'|'image'|'imageAlt'|'sections'|'discovery'>&{languages?:string[]}&{imagePosition?:string;localizedCopy?:Partial<Record<'hi'|'gu',Pick<ContentDocument,'title'|'description'|'eyebrow'|'imageAlt'>>>};
 export type HomeDependency={kind:'product'|'content'|'media';key:string;version:number;fingerprint:string};
 /** Server-created, public-only dependencies saved in the same revision as the document. */
-export type HomeSnapshot={schemaVersion:1;products:HomeProduct[];articles:HomeArticle[];mediaPaths:string[];categories:{name:string;count:number;tiers:string[]}[];dependencies:HomeDependency[];issues:string[];unavailableActionHrefs?:string[]};
+export type HomeSnapshot={schemaVersion:1;products:HomeProduct[];articles:HomeArticle[];mediaPaths:string[];categories:{name:string;count:number;tiers:string[];image?:Pick<HomeProduct,'image'|'imageAlt'|'imagePosition'>}[];dependencies:HomeDependency[];issues:string[];unavailableActionHrefs?:string[]};
 export const homeId='page:home';
 export const homeCandidate:ContentDocument={
  id:homeId,kind:'page',route:'/',title:'Art for the way you live.',eyebrow:'RivyaLivingArt / A material-led atelier',description:'Furniture with presence. Objects with meaning. Discover a piece, then make its story your own.',

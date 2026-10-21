@@ -48,6 +48,12 @@ export function compileHomepageSnapshot(document:ContentDocument,source:Dependen
   if(anchor&&!(route==='/'?document.sections.some(s=>s.id===anchor&&home.sections.some(h=>h.id===anchor&&h.enabled)):page?.sections.some(s=>s.id===anchor&&s.enabled!==false))){issues.push(`“${a.label}” points to a missing section: ${a.href}.`);unavailableActionHrefs.add(a.href);}
   if(page)depend('content',page.id);if(product)depend('product',product.id);
  }
- const categories=[...new Set(products.map(p=>p.category))].map(name=>({name,count:products.filter(p=>p.category===name).length,tiers:[...new Set(products.filter(p=>p.category===name).map(p=>p.tier))]}));
+ const categoryBlock=home.sections.find(s=>s.type==='categories'&&s.enabled&&!s.contentNeeded);
+ const categories=[...new Set(products.map(p=>p.category))].map(name=>{
+  const members=products.filter(p=>p.category===name),cover=members[0];
+  const shown=categoryBlock&&(!categoryBlock.categories?.length||categoryBlock.categories.includes(name));
+  if(shown&&cover){depend('product',cover.id);depend('media',cover.image);mediaPaths.add(cover.image);}
+  return {name,count:members.length,tiers:[...new Set(members.map(p=>p.tier))],...(shown&&cover?{image:{image:cover.image,imageAlt:cover.imageAlt,imagePosition:cover.imagePosition}}:{})};
+ });
  return {schemaVersion:1,products:selected,articles,mediaPaths:[...mediaPaths],categories,dependencies,issues:[...new Set(issues)],unavailableActionHrefs:[...unavailableActionHrefs]};
 }

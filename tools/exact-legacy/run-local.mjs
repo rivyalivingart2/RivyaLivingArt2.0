@@ -7,7 +7,7 @@ import {spawn} from 'node:child_process';
 import {createServer} from 'node:net';
 import {target,localRoot,localEnvironment,assertNoEnvironmentFiles,verifyDatabase} from './local-guard.mjs';
 assert.ok(process.versions.node.startsWith('22.'));assertNoEnvironmentFiles();
-const command=process.argv[2]||'start';assert.ok(['build','start','verify','stop'].includes(command));
+const command=process.argv[2]||'start';assert.ok(['build','start','verify','stop','newsletter-schema'].includes(command));
 const stopFile=resolve(localRoot,'preview.stop');
 if(command==='stop'){writeFileSync(stopFile,new Date().toISOString());console.log('Requested task-owned preview shutdown');process.exit(0);}
 const config=JSON.parse(readFileSync(resolve(localRoot,'config.json'),'utf8'));
@@ -24,7 +24,9 @@ try{
  const {default:pg}=await import(pathToFileURL(config.pgModule).href);
  const client=new pg.Client(target);await client.connect();try{await verifyDatabase(client);}finally{await client.end();}
  if(stopping)throw Error('Stopped before app startup');
- if(command==='verify'){
+ if(command==='newsletter-schema'){
+  const setup=new pg.Client(target);await setup.connect();try{await verifyDatabase(setup);await setup.query(readFileSync('scripts/newsletter-schema.sql','utf8'));console.log('Additive newsletter schema applied to verified loopback database only');}finally{await setup.end();}
+ }else if(command==='verify'){
   Object.assign(process.env,env);({closeLocalTransport}=await import('./local-transport.mjs'));
   const {neon}=await import('@neondatabase/serverless');const sql=neon(env.DATABASE_URL);
   const rows=await sql`SELECT (SELECT count(*)::int FROM rivya_catalogue) AS products,(SELECT count(*)::int FROM rivya_content) AS content,(SELECT count(*)::int FROM rivya_public_media) AS media`;

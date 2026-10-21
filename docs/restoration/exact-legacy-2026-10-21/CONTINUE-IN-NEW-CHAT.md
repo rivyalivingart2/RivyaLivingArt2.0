@@ -1,5 +1,13 @@
 # Continue exact OLDWEBSITE restoration in a new Codex chat
 
+## Latest continuation — finish remaining Phase 1 and 2
+
+Preserve the local descendant of `f3a7c04` on `codex/exact-legacy-restoration`. Read [PHASE-1-2-FINISH-CHECKPOINT.md](PHASE-1-2-FINISH-CHECKPOINT.md), [phase12-finish-verification.json](phase12-finish-verification.json) and [VISUAL-EXCEPTIONS.csv](VISUAL-EXCEPTIONS.csv). Do not declare both phases complete or advance to Phase 3 on older instructions. Real old database baseline access and final content mapping/exact-design acceptance remain open.
+
+The owner is signing into the OLDWEBSITE team's Vercel Storage page. Check existing access without exposing credentials, creating access, rotating passwords or activating unrelated services. The pinned old checkout is clean; the disposable source build on port 4212 has only synthetic records and documented runtime adapters. Local destination and comparison run on 4210 and 4211, with latest comparison families `finish-`. Newsletter capture has genuine local API/SQL evidence; production activation and subscriber management remain separate.
+
+Keep everything local, preserve protected data and current login, retain private evidence, and do not reseed either populated local cluster or replay the production request-table repair. The sections below retain historical checkpoints.
+
 ## Latest continuation — Phase 1 discovery and Phase 2 foundations
 
 Preserve the local descendant of `13f1ff2` on `codex/exact-legacy-restoration`. Read [PHASE-1-2-CHECKPOINT.md](PHASE-1-2-CHECKPOINT.md), [phase12-verification.json](phase12-verification.json) and [VISUAL-EXCEPTIONS.csv](VISUAL-EXCEPTIONS.csv). The representative Phase 2 foundations, sequence, public templates, Studio table/editor and eight useful Markdown adaptations are implemented locally. Phase 1 discovery is accounted for, but old live SQL export remains unavailable and full live-data acceptance is open. A scraper register preview is not operational scraper parity.

@@ -16,7 +16,7 @@ export function localEnvironment(config,inherited=process.env){
  const env={};
  for(const key of ['PATH','Path','SystemRoot','SYSTEMROOT','WINDIR','COMSPEC','TEMP','TMP','USERPROFILE','APPDATA','LOCALAPPDATA'])if(inherited[key])env[key]=inherited[key];
  for(const key of ['DATABASE_URL','RIVYA_DATA_MODE','RIVYA_QA_TARGET','STUDIO_ADMIN_ID','STUDIO_ADMIN_PASSWORD','STUDIO_SESSION_SECRET'])env[key]=config[key];
- return {...env,RIVYA_ENV:'production',RIVYA_PUBLISHED_PREVIEW:'1',RIVYA_RESTORATION_LOCAL:'true',RIVYA_ORDER_INTAKE_ENABLED:'false',RIVYA_ORDER_MESSAGE_RETRY_ENABLED:'false',BLOB_READ_WRITE_TOKEN:'',DATABASE_URL_UNPOOLED:'',VERCEL:'',NEXT_TELEMETRY_DISABLED:'1',SITE_INDEXABLE:'false',NODE_ENV:'production'};
+ return {...env,RIVYA_ENV:'production',RIVYA_PUBLISHED_PREVIEW:'1',RIVYA_RESTORATION_LOCAL:'true',RIVYA_NEWSLETTER_ENABLED:'true',RIVYA_ORDER_INTAKE_ENABLED:'false',RIVYA_ORDER_MESSAGE_RETRY_ENABLED:'false',BLOB_READ_WRITE_TOKEN:'',DATABASE_URL_UNPOOLED:'',VERCEL:'',NEXT_TELEMETRY_DISABLED:'1',SITE_INDEXABLE:'false',NODE_ENV:'production'};
 }
 export function assertNoEnvironmentFiles(root=process.cwd()){
  assert.equal(readdirSync(root).filter(name=>/^\.env(?:\.|$)/.test(name)&&name!=='.env.example').length,0,'Next may reload root .env files; use a separate checkout');

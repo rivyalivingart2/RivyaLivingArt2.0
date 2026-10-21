@@ -24,6 +24,10 @@
 .concepts,.portfolio,.roomGrid,.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}.roomGrid figure{margin:0}.roomGrid figure>div{position:relative;aspect-ratio:3/2}.roomGrid figcaption{padding-top:12px;font-size:14px}.portfolio article{min-width:0}.portfolio h3{margin-top:24px}.portfolio p,.quotes figcaption{color:var(--muted)}.quotes>figure{margin:0;padding-top:24px;border-top:1px solid #f4f1e929}.quotes blockquote{font:400 clamp(24px,3vw,40px)/1.4 var(--font-display);margin:24px 0}.disclosure{font-size:13px;color:var(--champagne)}
 .offering{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.facts{display:flex;flex-wrap:wrap;gap:24px;margin:32px 0}.facts dt{color:var(--muted);font-size:14px}.facts dd{margin:8px 0 0}
 .mobileContents{display:none}
+.scopeImages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-bottom:32px}.scopeImages a{min-width:0}.scopeImage{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:2px}.scopeImages>a>span{display:block;margin-top:12px;color:var(--muted);font:12px/1.6 var(--font-mono)}
+.tileGrid[data-protected-copy=true]{margin-top:32px}
+@media(max-width:1023px){.scopeImages{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:639px){.scopeImages{grid-template-columns:1fr}}
 @media(hover:hover) and (min-width:1024px){.door:hover,.door:focus-visible{flex:2.4 1 0%}.doors:has(.door:hover) .door:not(:hover) [data-legacy-meniscus]{filter:brightness(.55) saturate(.8)}.door:hover img{transform:scale(1.05)}.door:hover svg,.door:focus-visible svg{opacity:1}}
 @media(prefers-reduced-motion:no-preference){.door{transition:flex 800ms cubic-bezier(.16,1,.3,1)}.door [data-legacy-meniscus]{transition:filter 800ms cubic-bezier(.16,1,.3,1)}.door img{transition:transform 900ms cubic-bezier(.16,1,.3,1)}}
 :global([data-visual-effects=paused]) .door,:global([data-visual-effects=paused]) .door img,:global([data-visual-effects=paused]) .door [data-legacy-meniscus]{transition:none!important;transform:none!important;filter:none!important}

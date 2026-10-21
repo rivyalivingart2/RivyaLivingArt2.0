@@ -1,4 +1,14 @@
-# Current execution checkpoint — Phase 1 discovery / Phase 2 foundations, 21 October 2026
+# Current execution checkpoint — remaining Phase 1 and 2 work, 21 October 2026
+
+Preserve the local descendant of `f3a7c04` on `codex/exact-legacy-restoration`. Read [the latest pending-work checkpoint](docs/restoration/exact-legacy-2026-10-21/PHASE-1-2-FINISH-CHECKPOINT.md), [verification receipt](docs/restoration/exact-legacy-2026-10-21/phase12-finish-verification.json) and [visual exceptions](docs/restoration/exact-legacy-2026-10-21/VISUAL-EXCEPTIONS.csv). The owner requested Phase 1 and 2 completion before moving on. Both phases are **not yet fully accepted**: real old database access and remaining exact-design/content mapping acceptance remain open.
+
+This continuation reproduces the old project/Studio/error states in a guarded isolated source build, refines footer/project/scope images, and implements local newsletter capture and desktop WhatsApp behavior. Final local build `-PQ1q3ySBQe05yA-S1mEm` passes 411 unit/isolation, 403 HTTP and 12 preflight checks, 64 responsive measurements, unchanged 21 protected source hashes, and 28 accepted captures (11 on the final candidate build). The current Studio login remains unchanged. Original old source remains clean.
+
+**Local only.** No production migration, publication, push/PR/merge/deploy, external messages or paid services. Preserve the populated isolated databases; never reseed or replay the request-table repair. The owner is signing into the OLDWEBSITE Vercel team's Storage page; continue the real read-only source baseline when access is available. Do not replace missing evidence with synthetic records or advance to Phase 3 based on older prose. Raw screenshots, SQL evidence and credentials remain ignored.
+
+---
+
+# Historical checkpoint — Phase 1 discovery / Phase 2 foundations, 21 October 2026
 
 Continue the local descendant of `13f1ff2` on `codex/exact-legacy-restoration`. Read [the latest checkpoint](docs/restoration/exact-legacy-2026-10-21/PHASE-1-2-CHECKPOINT.md), [verification receipt](docs/restoration/exact-legacy-2026-10-21/phase12-verification.json), and [visual exceptions](docs/restoration/exact-legacy-2026-10-21/VISUAL-EXCEPTIONS.csv) first. The 98-route / 45-entity / 156-action discovery is accounted for. Phase 1 complete live-data acceptance remains blocked by the unavailable old SQL export. Do not fabricate it or equate UI counts with a database snapshot.
 

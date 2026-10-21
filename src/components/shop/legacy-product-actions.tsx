@@ -12,6 +12,11 @@ const Contact=createContext('');
 export function PublicContact({whatsapp,children}:{whatsapp:string;children:ReactNode}){
  return <Contact.Provider value={whatsapp}>{children}</Contact.Provider>;
 }
+export function AtelierWhatsApp(){
+ const phone=useContext(Contact),t=useJourneyText();
+ if(!/^\d{7,15}$/.test(phone))return null;
+ return <a href={'https://wa.me/'+phone} target="_blank" rel="noopener noreferrer">{t('Ask on WhatsApp')} ↗</a>;
+}
 /** Opens a prepared conversation only. Sending remains an explicit customer action. */
 export function PieceWhatsApp({name,slug}:{name:string;slug:string}){
  const phone=useContext(Contact),t=useJourneyText();

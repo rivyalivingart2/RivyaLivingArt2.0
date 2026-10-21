@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   // Keep Studio-only styles out of public pages while retaining shared CSS chunks.
   experimental: { cssChunking: 'graph' },
   images: {
-    localPatterns: [{pathname:'/editorial/**',search:''},{pathname:'/media/**',search:''},{pathname:'/brand/**',search:''}],
+    localPatterns: [{pathname:'/editorial/**',search:''},{pathname:'/media/**',search:''},{pathname:'/brand/**',search:''},{pathname:'/legacy-reference/foundation/**',search:''}],
     // Avoid jumping from 360 to 640 pixels for a 390–420px, DPR 1 viewport.
     deviceSizes: [360,420,512,640,828,1080,1200,1440,1920],
     imageSizes: [32,64,96,160,256],
