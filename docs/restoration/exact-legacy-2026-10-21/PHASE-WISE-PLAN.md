@@ -5,6 +5,19 @@ Authority: [OWNER-DECISION.md](OWNER-DECISION.md). Full specification: [MASTER-C
 
 ## Current execution — 21 October 2026
 
+**Latest restriction:** No product additions or imports from archived catalogue/Sheets files, samples or saved product rewrites. The owner explicitly excluded these after the file inventory. No archive rows were imported. Preserve the existing catalogue and use existing fixtures only. This restriction applies across all seven phases, including older product-transfer and product-population text below.
+
+**Latest owner amendment and checkpoint:** the old database was accidentally deleted; continue from the remaining files. [FILE-BASED-CONTINUATION.md](FILE-BASED-CONTINUATION.md) and [its receipt](phase12-files-verification.json) supersede the access handoff below. Phase 1 is complete as an available-file baseline with the lost-source limitation. Phase 2 representative design foundations are complete locally with explicit protected-content exceptions. The final build is `v2CaXW2W1igYEi5x4rN2P`; current protected data/login remain authoritative. Full feature restoration is not complete.
+
+| Phase | Current disposition |
+|---|---|
+| 1 | Available-file baseline complete; deleted database rows/IDs/relationships/overrides remain unknown. 105 source files, 45 entities, 575 field contracts accounted for; historical archives counted without importing. |
+| 2 | Representative design foundations verified locally; workshop/printing/proof geometry closed, protected three chapters retained, unavailable service/media mappings explicitly deferred to their data/workflow phases. |
+| 3 | Next: compatible field/non-product mapping against protected current data and original media preparation. Product additions, archived catalogue/Sheets lists and saved product rewrites are excluded. Do not run old seeds. |
+| 4–7 | Complete public/Studio workflows, operational scraping, catalogue system, integration/release verification remain to implement/verify as specified below. |
+
+No real records were imported, no production mutation/publication occurred, and nothing was pushed or deployed. The earlier execution paragraphs are historical.
+
 Latest status: [PHASE-1-2-FINISH-CHECKPOINT.md](PHASE-1-2-FINISH-CHECKPOINT.md), [verification](phase12-finish-verification.json) and [exceptions](VISUAL-EXCEPTIONS.csv). The owner requested completion of Phase 1 and 2 before moving on. Source discovery is accounted for, and isolated original components now supply matched project/Studio/error-state evidence. Footer, project geometry, image slots, local newsletter capture and desktop WhatsApp were restored/refined. Real old database acceptance remains blocked by access, and final Phase 2 content mapping/exact-design acceptance remains open. No real migration, publication or release occurred. The earlier paragraphs below are historical; they do not authorize skipping these remaining gates.
 
 Latest continuation: [PHASE-2-HOME-CHECKPOINT.md](PHASE-2-HOME-CHECKPOINT.md). Phase 2 is **IN_PROGRESS_LOCALLY** after the working homepage composition/motion slice. The material sequence, richer product flows, remaining public templates and authenticated Studio are still pending. Phase 1's old live export gap remains open. No production migration/publication or release has occurred; the earlier destination digest evidence below was not refreshed by this UI-only slice.

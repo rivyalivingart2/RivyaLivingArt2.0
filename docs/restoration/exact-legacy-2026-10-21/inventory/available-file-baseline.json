@@ -1,0 +1,1643 @@
+{
+  "at": "2026-10-21T13:56:11.920Z",
+  "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "authority": "Owner reported accidental deletion on 2026-10-21 and instructed continuation from files.",
+  "scope": "AVAILABLE_FILES_BASELINE_NOT_DELETED_DATABASE_RECOVERY",
+  "database": {
+    "availability": "OWNER_REPORTED_DELETED",
+    "verifiedRecovery": false,
+    "sourceRecordCount": null,
+    "sourceRelationshipVerification": false,
+    "exportFound": false
+  },
+  "schema": {
+    "models": 45,
+    "fields": 575,
+    "fieldEvidence": "inventory/legacy-fields.csv"
+  },
+  "files": {
+    "total": 105,
+    "groups": {
+      "OWNER_EXCLUDED_PRODUCT_DATA": 14,
+      "ARCHIVE_DOCUMENTATION": 1,
+      "HISTORICAL_IMPORT_LOG_NOT_DATABASE_EXPORT": 2,
+      "BUNDLED_COPY_NOT_DATABASE_OVERRIDE": 9,
+      "MIGRATION_SOURCE_NOT_EXECUTION_PROOF": 72,
+      "SCHEMA_CONTRACT": 1,
+      "SEED_RECIPE_NOT_RECORD_EXPORT": 6
+    },
+    "entries": [
+      {
+        "path": "data/rewrites/rewrites-1.json",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 102626,
+        "sha256": "a480c4f7012ad98af466f324912b2a6f2e44d013c353e44875f7aaae87263512",
+        "fileContent": {
+          "records": 188,
+          "scope": "SAVED_REWRITE_CANDIDATES_NOT_CURRENT_APPROVAL",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "data/rewrites/rewrites-2.json",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 95256,
+        "sha256": "b39b772967337891fb8a42e31872bd67338490efec5471466b8ebc297d4b3a01",
+        "fileContent": {
+          "records": 185,
+          "scope": "SAVED_REWRITE_CANDIDATES_NOT_CURRENT_APPROVAL",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "data/rewrites/rewrites-3.json",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 91776,
+        "sha256": "cb3b1d1c81c7a01d2750d3f3d9c7131ef6debb85296c1e9279aacb673fe4f756",
+        "fileContent": {
+          "records": 187,
+          "scope": "SAVED_REWRITE_CANDIDATES_NOT_CURRENT_APPROVAL",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "data/tiers/OwnerSheet_gid630660076.csv.gz",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 76893,
+        "sha256": "f6752627f2a6a2d500382e5cffcafff60ad4b874413c28a45cb2f1d862818705",
+        "fileContent": {
+          "records": 373,
+          "columns": 26,
+          "headers": [
+            "sourceKey",
+            "vertical",
+            "externalId",
+            "title",
+            "slug",
+            "category",
+            "shortTagline",
+            "description",
+            "priceMin",
+            "priceMax",
+            "currency",
+            "showPrice",
+            "timeline",
+            "materials",
+            "dimensions",
+            "status",
+            "featured",
+            "images",
+            "imageAlts",
+            "fields",
+            "seoTitle",
+            "seoDescription",
+            "url",
+            "firstSeen",
+            "lastSeen",
+            "contentHash"
+          ],
+          "nonconformingRows": 0,
+          "uncompressedBytes": 372319,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "data/tiers/README.md",
+        "classification": "ARCHIVE_DOCUMENTATION",
+        "bytes": 3964,
+        "sha256": "7cd8dc1d3519547a1bc202bea51fd8367f036a679c355b4be0187f9bcccb428a",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "data/tiers/Tier1_Owner.csv.gz",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 77595,
+        "sha256": "f5e1d3e3609d1176c9f57d404ccf5a89b11243b782c6d09fb82f98b6a3dab75a",
+        "fileContent": {
+          "records": 373,
+          "columns": 26,
+          "headers": [
+            "sourceKey",
+            "vertical",
+            "externalId",
+            "title",
+            "slug",
+            "category",
+            "shortTagline",
+            "description",
+            "priceMin",
+            "priceMax",
+            "currency",
+            "showPrice",
+            "timeline",
+            "materials",
+            "dimensions",
+            "status",
+            "featured",
+            "images",
+            "imageAlts",
+            "fields",
+            "seoTitle",
+            "seoDescription",
+            "url",
+            "firstSeen",
+            "lastSeen",
+            "contentHash"
+          ],
+          "nonconformingRows": 0,
+          "uncompressedBytes": 389974,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "data/tiers/Tier2_ResinGoods.csv.gz",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 7577462,
+        "sha256": "cf2d95e3721dfc0b34f4099716ac500c07173e6bf5f8cb12ca15555554eee233",
+        "fileContent": {
+          "records": 34930,
+          "columns": 26,
+          "headers": [
+            "sourceKey",
+            "vertical",
+            "externalId",
+            "title",
+            "slug",
+            "category",
+            "shortTagline",
+            "description",
+            "priceMin",
+            "priceMax",
+            "currency",
+            "showPrice",
+            "timeline",
+            "materials",
+            "dimensions",
+            "status",
+            "featured",
+            "images",
+            "imageAlts",
+            "fields",
+            "seoTitle",
+            "seoDescription",
+            "url",
+            "firstSeen",
+            "lastSeen",
+            "contentHash"
+          ],
+          "nonconformingRows": 0,
+          "uncompressedBytes": 57317620,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "data/tiers/Tier3_Supplies.csv.gz",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 4548337,
+        "sha256": "0a65d82e31ac3a887154774e753da7af7557e8f58ca5c0ed6aa4228a9d08a9f2",
+        "fileContent": {
+          "records": 21508,
+          "columns": 26,
+          "headers": [
+            "sourceKey",
+            "vertical",
+            "externalId",
+            "title",
+            "slug",
+            "category",
+            "shortTagline",
+            "description",
+            "priceMin",
+            "priceMax",
+            "currency",
+            "showPrice",
+            "timeline",
+            "materials",
+            "dimensions",
+            "status",
+            "featured",
+            "images",
+            "imageAlts",
+            "fields",
+            "seoTitle",
+            "seoDescription",
+            "url",
+            "firstSeen",
+            "lastSeen",
+            "contentHash"
+          ],
+          "nonconformingRows": 0,
+          "uncompressedBytes": 29895667,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "data/tiers/Tier4_3DPrint.csv.gz",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 2977193,
+        "sha256": "db9e585b0f8c76e235d6606155c50272237a88c2d177884e39ad90b5ad83acc8",
+        "fileContent": {
+          "records": 7685,
+          "columns": 26,
+          "headers": [
+            "sourceKey",
+            "vertical",
+            "externalId",
+            "title",
+            "slug",
+            "category",
+            "shortTagline",
+            "description",
+            "priceMin",
+            "priceMax",
+            "currency",
+            "showPrice",
+            "timeline",
+            "materials",
+            "dimensions",
+            "status",
+            "featured",
+            "images",
+            "imageAlts",
+            "fields",
+            "seoTitle",
+            "seoDescription",
+            "url",
+            "firstSeen",
+            "lastSeen",
+            "contentHash"
+          ],
+          "nonconformingRows": 0,
+          "uncompressedBytes": 12509730,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "data/tiers/sample/OwnerImportReady.sample.csv",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 23021,
+        "sha256": "7a55632fe1326378a92a8298079d6411de480bc8e0ad47d79e857ed3d57cd592",
+        "fileContent": {
+          "records": 12,
+          "columns": 45,
+          "headers": [
+            "title",
+            "slug",
+            "category_slug",
+            "short_tagline",
+            "description",
+            "price_min",
+            "price_max",
+            "show_price",
+            "timeline",
+            "materials",
+            "dimensions",
+            "occasions",
+            "care_notes",
+            "status",
+            "featured",
+            "video_url",
+            "model3d_url",
+            "seo_title",
+            "seo_description",
+            "images",
+            "image_alts",
+            "custom1_label",
+            "custom1_type",
+            "custom1_options",
+            "custom1_required",
+            "custom2_label",
+            "custom2_type",
+            "custom2_options",
+            "custom2_required",
+            "custom3_label",
+            "custom3_type",
+            "custom3_options",
+            "custom3_required",
+            "custom4_label",
+            "custom4_type",
+            "custom4_options",
+            "custom4_required",
+            "custom5_label",
+            "custom5_type",
+            "custom5_options",
+            "custom5_required",
+            "custom6_label",
+            "custom6_type",
+            "custom6_options",
+            "custom6_required"
+          ],
+          "nonconformingRows": 0,
+          "uncompressedBytes": 23021,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "data/tiers/sample/Tier1_Owner.sample.csv",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 64680,
+        "sha256": "4183c66034f137ac0cb8a32c44b3df64d39e0ca201320ba395f07c1e750efc68",
+        "fileContent": {
+          "records": 94,
+          "columns": 26,
+          "headers": [
+            "sourceKey",
+            "vertical",
+            "externalId",
+            "title",
+            "slug",
+            "category",
+            "shortTagline",
+            "description",
+            "priceMin",
+            "priceMax",
+            "currency",
+            "showPrice",
+            "timeline",
+            "materials",
+            "dimensions",
+            "status",
+            "featured",
+            "images",
+            "imageAlts",
+            "fields",
+            "seoTitle",
+            "seoDescription",
+            "url",
+            "firstSeen",
+            "lastSeen",
+            "contentHash"
+          ],
+          "nonconformingRows": 0,
+          "uncompressedBytes": 64680,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "data/tiers/sample/Tier2_ResinGoods.sample.csv",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 194957,
+        "sha256": "0ee35a8e49ccadfcd86f0c7338fe63e72712a06d07a0dee844fabc304dd34055",
+        "fileContent": {
+          "records": 94,
+          "columns": 26,
+          "headers": [
+            "sourceKey",
+            "vertical",
+            "externalId",
+            "title",
+            "slug",
+            "category",
+            "shortTagline",
+            "description",
+            "priceMin",
+            "priceMax",
+            "currency",
+            "showPrice",
+            "timeline",
+            "materials",
+            "dimensions",
+            "status",
+            "featured",
+            "images",
+            "imageAlts",
+            "fields",
+            "seoTitle",
+            "seoDescription",
+            "url",
+            "firstSeen",
+            "lastSeen",
+            "contentHash"
+          ],
+          "nonconformingRows": 0,
+          "uncompressedBytes": 194957,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "data/tiers/sample/Tier3_Supplies.sample.csv",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 188825,
+        "sha256": "a8b0201da7028bcc4f2a422cf32010f0588fff07651265720d32a783978546e3",
+        "fileContent": {
+          "records": 94,
+          "columns": 26,
+          "headers": [
+            "sourceKey",
+            "vertical",
+            "externalId",
+            "title",
+            "slug",
+            "category",
+            "shortTagline",
+            "description",
+            "priceMin",
+            "priceMax",
+            "currency",
+            "showPrice",
+            "timeline",
+            "materials",
+            "dimensions",
+            "status",
+            "featured",
+            "images",
+            "imageAlts",
+            "fields",
+            "seoTitle",
+            "seoDescription",
+            "url",
+            "firstSeen",
+            "lastSeen",
+            "contentHash"
+          ],
+          "nonconformingRows": 0,
+          "uncompressedBytes": 188825,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "data/tiers/sample/Tier4_3DPrint.sample.csv",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 59291,
+        "sha256": "430e376c682eed310a3d12e2adb5385b239cf4d246d9435ba07c29edd34e2256",
+        "fileContent": {
+          "records": 94,
+          "columns": 26,
+          "headers": [
+            "sourceKey",
+            "vertical",
+            "externalId",
+            "title",
+            "slug",
+            "category",
+            "shortTagline",
+            "description",
+            "priceMin",
+            "priceMax",
+            "currency",
+            "showPrice",
+            "timeline",
+            "materials",
+            "dimensions",
+            "status",
+            "featured",
+            "images",
+            "imageAlts",
+            "fields",
+            "seoTitle",
+            "seoDescription",
+            "url",
+            "firstSeen",
+            "lastSeen",
+            "contentHash"
+          ],
+          "nonconformingRows": 0,
+          "uncompressedBytes": 59291,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "docs/archive/sheets-2026-09-15/import-conflicts.csv",
+        "classification": "HISTORICAL_IMPORT_LOG_NOT_DATABASE_EXPORT",
+        "bytes": 95,
+        "sha256": "def3c445c1dc8a34c4367918252df4b0ab4bd78c0a799d7f1a21d244885d64f1",
+        "fileContent": {
+          "records": 0,
+          "columns": 10,
+          "headers": [
+            "id",
+            "productId",
+            "importRunId",
+            "field",
+            "importedValue",
+            "dbValue",
+            "status",
+            "createdAt",
+            "resolvedAt",
+            "resolvedById"
+          ],
+          "nonconformingRows": 0,
+          "uncompressedBytes": 95,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "docs/archive/sheets-2026-09-15/sheet-sync-runs.csv",
+        "classification": "HISTORICAL_IMPORT_LOG_NOT_DATABASE_EXPORT",
+        "bytes": 180,
+        "sha256": "2ac3b775696c244576e5de723cd85cf3257729fed729c609dfd7e0fb5a243553",
+        "fileContent": {
+          "records": 1,
+          "columns": 8,
+          "headers": [
+            "id",
+            "direction",
+            "tab",
+            "rows",
+            "status",
+            "error",
+            "startedAt",
+            "finishedAt"
+          ],
+          "nonconformingRows": 0,
+          "uncompressedBytes": 180,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "docs/import/tier1-owner-products.csv",
+        "classification": "OWNER_EXCLUDED_PRODUCT_DATA",
+        "bytes": 23033,
+        "sha256": "66a0f2ecfb352962bc82b47bc9e26bdea4931d1b1412386d23663b37cc079ab5",
+        "fileContent": {
+          "records": 12,
+          "columns": 45,
+          "headers": [
+            "title",
+            "slug",
+            "category_slug",
+            "short_tagline",
+            "description",
+            "price_min",
+            "price_max",
+            "show_price",
+            "timeline",
+            "materials",
+            "dimensions",
+            "occasions",
+            "care_notes",
+            "status",
+            "featured",
+            "video_url",
+            "model3d_url",
+            "seo_title",
+            "seo_description",
+            "images",
+            "image_alts",
+            "custom1_label",
+            "custom1_type",
+            "custom1_options",
+            "custom1_required",
+            "custom2_label",
+            "custom2_type",
+            "custom2_options",
+            "custom2_required",
+            "custom3_label",
+            "custom3_type",
+            "custom3_options",
+            "custom3_required",
+            "custom4_label",
+            "custom4_type",
+            "custom4_options",
+            "custom4_required",
+            "custom5_label",
+            "custom5_type",
+            "custom5_options",
+            "custom5_required",
+            "custom6_label",
+            "custom6_type",
+            "custom6_options",
+            "custom6_required"
+          ],
+          "nonconformingRows": 1,
+          "uncompressedBytes": 23033,
+          "scope": "FILE_RECORDS_NOT_DATABASE_ROWS",
+          "imported": 0
+        },
+        "disposition": "Owner excluded: do not import, add products, repair for import or place in a future import backlog. Retain original historical files only."
+      },
+      {
+        "path": "messages/ar.json",
+        "classification": "BUNDLED_COPY_NOT_DATABASE_OVERRIDE",
+        "bytes": 118217,
+        "sha256": "77d4d7e3338473152d7b02801c0744ad346f2207728babb61a0588e5689fb397",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "messages/de.json",
+        "classification": "BUNDLED_COPY_NOT_DATABASE_OVERRIDE",
+        "bytes": 97231,
+        "sha256": "8b9c82e108a42b03f495d9521659615e8988390c6a75c75690c54cf9510d5551",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "messages/en.json",
+        "classification": "BUNDLED_COPY_NOT_DATABASE_OVERRIDE",
+        "bytes": 87206,
+        "sha256": "ebd30ce5fa8bfc92a13c8d079e12999867cf4eec21548399ab300ed120c9ab8e",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "messages/es.json",
+        "classification": "BUNDLED_COPY_NOT_DATABASE_OVERRIDE",
+        "bytes": 94148,
+        "sha256": "c93c25077b5aa0b9ae62b5bea3ba4ff54f15eb2ff3a5607989d46bcb5800dbca",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "messages/fr.json",
+        "classification": "BUNDLED_COPY_NOT_DATABASE_OVERRIDE",
+        "bytes": 98727,
+        "sha256": "ac86aef1a18292500b3ac5548592ebaf29ea2e645a3f7370825708015301aa96",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "messages/gu.json",
+        "classification": "BUNDLED_COPY_NOT_DATABASE_OVERRIDE",
+        "bytes": 157475,
+        "sha256": "72b551d78ad48f1136834282be3818007cba4f31e4f20aacfaaf92a6a7c18c0f",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "messages/hi.json",
+        "classification": "BUNDLED_COPY_NOT_DATABASE_OVERRIDE",
+        "bytes": 162016,
+        "sha256": "9da1d0ac58395aefca75e48843e94c3e3ff2514ab17e698da7904a26b98a3d64",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "messages/ja.json",
+        "classification": "BUNDLED_COPY_NOT_DATABASE_OVERRIDE",
+        "bytes": 107705,
+        "sha256": "58ad9fbdf5acda718233f18069952344f92d5fb4282942ab3bbe189233789c1b",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "messages/zh.json",
+        "classification": "BUNDLED_COPY_NOT_DATABASE_OVERRIDE",
+        "bytes": 87744,
+        "sha256": "68094ce5f1a625d6919d5733983a34c565995ea79e864020ff9bd9e8cd8d6fd0",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260705183035_init/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 14763,
+        "sha256": "77545e50ce814c29fed8676f5a7e3fe67dc7f509943e7b381070d5238123c214",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260706062409_add_password_reset/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 122,
+        "sha256": "b12a0444439e59c7dd12f1eedc68b67c4358009c86a607823ff367110f82491a",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260706114326_add_product_import_keys/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 227,
+        "sha256": "1a08f5c304243de9775bd765900ae635b68f9291cb3e52aebc2b6832c56b9e5b",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260713065931_add_subscriber/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 420,
+        "sha256": "18eeb07c7314739d8220dcfd6ccffde34f664a931f4a8548fd5f66a587aa3762",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260719141500_phase0_safety/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 772,
+        "sha256": "27beadb1c74671c33feef41edc6f08b97c55f01d35808c47c98ffc4cca46e386",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260719160000_inquiry_attribution/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 124,
+        "sha256": "69cda5209e4bd5251e919e15c03ad609e28ec58dccb8f764f058bd3c4eec2075",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260719170000_inquiry_closed/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 110,
+        "sha256": "ef3fabbf91b0cf67f079b159fe6898351ef79dd2e86e577acd0edbea67d25c1b",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260719180000_portfolio_indexes/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 564,
+        "sha256": "06040c4d3624e8a69f369fb5ea321f436bf75b94f3fb354a2ecd25e4aea410a2",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260720060000_content_translations/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 622,
+        "sha256": "fb20e4de2cfc21da0c7961ab38fdc086351dd7504acb4a1629c3f289146692ee",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260813100000_catalog_scale/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 711,
+        "sha256": "15f1a95351329734746d6e86cbebe7ade16547a9c5341b95e5ba0aa7e8459f4c",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260813180000_import_tombstones/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 511,
+        "sha256": "e3ae9688109e791098830d3b89df13c68d82f0bd65902a9e8c97236e86f833f6",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260814050000_search_trgm/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 993,
+        "sha256": "f62cf9be20649a1366c7fac7dd2031cba7858cf4436a5c0a4df7f0d51d843b54",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260819130000_inquiry_number/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 278,
+        "sha256": "d714e3b2fa2e7e9c97fabbcc25a278ab5bd29e4d3a3ff99918b2ccdbe04b50e6",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260819143000_inquiry_pipeline_fields/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 467,
+        "sha256": "96b44a98f9ae283345fbe2b2c3c4488a5161452e7099c9238d0d777cd7b8eb8f",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260820120000_search_trgm_description/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 474,
+        "sha256": "2b4cf5344f06065c2f29e806748019b7c7c9fd2c77542bed1a935904769c90c5",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260821100000_backfill_category_translations/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 28705,
+        "sha256": "0f1bb1df5334d06966b48d37d87926625e7df5102b30fc789135ff3194fb2e42",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260821120000_translations_faq_testimonial_page/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 597,
+        "sha256": "9faabbd115e429a033c181218432381f9e304f6f8954e15c1ed2043ec41d7efc",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260821123000_backfill_faq_translations/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 26902,
+        "sha256": "3c2bc6ac53f89aecb42c97ce060aa2ee5b8d81c7c9781bb5b2ef470576a7362c",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260822130000_product_display_name/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 206,
+        "sha256": "c9acd38db403c921aa73384a1776d357a1a5e459c2d946e631ec483f5abe97eb",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260822143000_portfolio_case_study/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 397,
+        "sha256": "0352842011e110e6884f6fce7e2a4d3f0070c44b3eab6cc4dec311444e3eda1b",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260822150000_inquiry_pipeline_statuses/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 410,
+        "sha256": "94b2d3bf18e56cccc02620b337c7fbaca938a83b7384ad5dd50841ef04df59a4",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260822160000_product_lexical/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 200,
+        "sha256": "c70dd51fe8577049649f23e010380af6ea0c3050575f67090be74c12dd8ac5fe",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260822161000_product_provenance/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 856,
+        "sha256": "c7fdc052217c02b580bda0ca4695212094607fcadcad7193964085ae7af6c6d8",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260822162000_product_owner_touched/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 206,
+        "sha256": "8c8a6b53bd49c156b6ba494909d41a3cdbd0eaf5c856187b633cdd6d3c6ad60a",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260822170000_chart_timezone/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 207,
+        "sha256": "ec9f6ca5f0a4111deba6d2b09d04be3b854d3670028e61f01588623a0c2c9f02",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260823050000_site_image/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 423,
+        "sha256": "a16c9e4b521323f3d7eaa7c188ec3c8b2231f87b6b6691264e4ecd0ef90f6ba9",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260823160000_site_copy/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 754,
+        "sha256": "63d62a092691af928ee2bbff75154c6c38c66200262a19f8691ee3f9181b55d5",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260823170000_site_image_crops/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 608,
+        "sha256": "4f2e7e10880a735d966f8b4e91be03a8fd1bd12c3478b4d2cc07ec162a498fd1",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260824030000_form_options/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 959,
+        "sha256": "964d6361c3b29e046218684d2b9b2968fa8d1632b9de32c99e49c32dbf85c2c5",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260824040000_settings_hours_announcement/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 576,
+        "sha256": "be331378820e0294cf8e4e5e0b09e3dfc5e2bbd4cc614d7a2b90741fe92d2028",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260824050000_nav_menus/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1021,
+        "sha256": "11afd3d596557b35ace3791e87f8d8ec68311f20d4ace96fafcc5d923dda5d17",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260824060000_content_drafts/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 804,
+        "sha256": "0890b6d8f3bb2c97ec10a965c6f1f546f6ca39bfdaa21f58220b5521c793bf6a",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260824070000_page_sections/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 874,
+        "sha256": "f7a9b1923fd330eec6d8177ff068e31c6f8a1e2f77f08d6b6b01f1d0d9d7bb74",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260824090000_custom_pages/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1470,
+        "sha256": "0fc1f283fed183f564fad32bb89a4861fe44c56c7e452e9c23d98ff893424d78",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260824100000_media_depth/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1191,
+        "sha256": "95aabe47e98baf3d765d2b1ea96060fbfdc4fcb26583a74a2dfaf61cf4082aed",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260824110000_content_gaps/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1419,
+        "sha256": "966d30e5398414fdb2a190bb2ef67db4b1da41223685767ed11e06692520f221",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260824170000_sheet_sync_policy/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1212,
+        "sha256": "7b8d885a7de361b8b977f186c7a9ce571b62952068d6dda45f072f96addfa160",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260824180000_product_confirmation/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 607,
+        "sha256": "9e48e6fb1d4e8b9c4a7d219cfc4500e478c069a6737081ca09e5daaba085d8a7",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260824190000_sheet_fill_policy/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1367,
+        "sha256": "acbd791f6efec5ca831c75d38c1d9baad0797745eac6790b336b2b9513e72c1a",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260824200000_source_circuit_breaker/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 504,
+        "sha256": "405bbc8183a6aadb2037ad512adf91f4c61d83b6de7715b1ae5e8a4c67c0d8fc",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260825020000_studio_edited_at/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 436,
+        "sha256": "114698a8b9b3340fd43ab8cc804c25ba3a71daee38389ecb265717f6c2780794",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260825030000_price_history/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1216,
+        "sha256": "fce5026bae1f93a5b572a3c9c340030970708624534260e82c5d77453a1a6500",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260825040000_validation_failures/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1367,
+        "sha256": "cab186cf1c05a03f39334820b5c904fc1b117a19722217dfcbc22570dfd4edf9",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260831080000_brand_rivya_living_art/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1382,
+        "sha256": "fb04ae498dc9ee181e4b37827bbbfaf1b7eedc67e8fb50396ac110de02492578",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260904100000_testimonial_system/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 3658,
+        "sha256": "fcf29fc67f04d768d34c16dba2ad26a259485baa71eda6333037b9e68c7d4431",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260904101000_content_status_review_archived/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1017,
+        "sha256": "fbdad442c1f186edde03cf2e87c8c428b0f88456ae5a264d65dce899bd3ec20e",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260904102000_is_demo_marker/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 2092,
+        "sha256": "082853730d1a46bc4401985e9bdf5fbff9cb3e56ade486be10878ee4683971dc",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260904103000_faq_status/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 576,
+        "sha256": "1185f2c9ff93be7e0289deb838683d588aff3d9c384a4bad96d82f08d38d68e2",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260904104000_category_seo_visible/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 719,
+        "sha256": "8cb37f931c771bb4eb6c8b97067789fe1bbfc8cfd99669988832ef76cff0e5d0",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260904105000_media_metadata/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 725,
+        "sha256": "fd53a4aab10e52c34e767458cc205be3cbe32041faf2299967c0b6886faf05be",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260904106000_scraper_scope_notes/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 907,
+        "sha256": "7bfe4ab744f10253fe45aac49f3914e7e9a017e81864d4af43c7db55f6c6f981",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260904107000_sheet_conflicts_sync_runs/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 2194,
+        "sha256": "5b55b52ddcc4f55282ad96f0029c3150b73e970e2727a2806a7db3b4a7f0ef40",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260904108000_blog_post_category/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 661,
+        "sha256": "4f93610fcbc44bae88b8694e04b00790ea29740bc4e3b60ba8175503c37f4aaf",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260904109000_product_image_role/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 436,
+        "sha256": "a0ba555029c3fc52d5b5965553dec1c3ce4a21a2be4c2cd4231d67d89a033341",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260904110000_research_record/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1249,
+        "sha256": "43e57307859d497783b37e7e8616a97700c6dae31441ca7c523e00a5d3a0ae4c",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260915090000_import_conflict_rename/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 2109,
+        "sha256": "3b625e8cec3c95e4bbb502dcf0e18c5bee65aa4a2fe7847d1cc746788b2d78ef",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260915093000_import_conflict_map_not_rename/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 2409,
+        "sha256": "c854cfe19c3ee6ac153df58e1153919b6e405291a1e1681befc5aa420de1b471",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260915113000_research_product_snapshots/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 2509,
+        "sha256": "2e5f1b98f7bc407f49d89948a8a736852fcf5e87c25be9f8c06c98c6f0393d0f",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260915114500_product_variants_price_basis/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1821,
+        "sha256": "642f4f1569af047e1c558ce1eb8076f4922b537b8940025ff25d2490c0d95be3",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260915120000_normalization_alias/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1360,
+        "sha256": "8a650ac11b53e8e53ed79ed5b295736fe72f708ff2711db5c4d70a210a73a533",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260915140000_source_policy_gate/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 2672,
+        "sha256": "80a4117a28c214cd2db079a1e13871b37231237f41d6561aafdfd4815dff61d5",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260915150000_drop_sheets_schema/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 2879,
+        "sha256": "c267afed3ff109d567493905b268f9904e67be7a4bfa776d985888ffa1612e00",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260915160000_size_source_tiers/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 833,
+        "sha256": "f7a18632a49af84b8293646d4eade54c0e9a90d91256b8235c5bfc655cf293e7",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260915170000_product_size_tier/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1686,
+        "sha256": "ec82c89bb8998cbf92758814bc24665c32e7d371104528ec251e7d7de3937b72",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260916120000_analytics_league/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 2010,
+        "sha256": "aacebcb21c3b662a4546a81a43798e4f3cdff6976baa610a47cc438ab1fccbf7",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260916190000_shortlist_entries/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 3715,
+        "sha256": "131043e9db80e838808d87c9ba342107090ffa51ea4e8c0c9d14b85143c6be1a",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260917090000_analytics_opportunity/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 3324,
+        "sha256": "6c24ffb923f90d171ce3cbb6f6099aa86921957ec7a137eea760fed43812eb95",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260917100000_product_embeddings/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1979,
+        "sha256": "0061380f2f1f9482404b8ffe674de2b65f21c1de6227c90f24c5ad404e64b641",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260917110000_drop_sheets_settings_columns/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 1022,
+        "sha256": "f4e102353090db698d8e0f26caa68a339b93b4f4d7da78e468d4886caa40e16a",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260917120000_shortlist_stray_link_column/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 2062,
+        "sha256": "589943189a15b84c75f538e7003a97a3cabe59466fb9954dccaa7123884a2219",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260917130000_catalog_fill_off_after_purge/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 808,
+        "sha256": "b7fd9a80face27fab6f1997fce41271f72a48fd9d5bade881845a79e93ee63db",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/migrations/20260917140000_scrape_source_max_products/migration.sql",
+        "classification": "MIGRATION_SOURCE_NOT_EXECUTION_PROOF",
+        "bytes": 368,
+        "sha256": "e236ea8679cacc94a7f73f2ba9114bd1af98a5e853bdb668703c457695bff9a9",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/schema.prisma",
+        "classification": "SCHEMA_CONTRACT",
+        "bytes": 73166,
+        "sha256": "356901a46e4f90723708eaf3f758377a68e4409036f2b8d70bf4675ef3eea3ee",
+        "disposition": "Retain field and relationship contract"
+      },
+      {
+        "path": "prisma/seed-blogs.ts",
+        "classification": "SEED_RECIPE_NOT_RECORD_EXPORT",
+        "bytes": 5058,
+        "sha256": "3f1cb04ae0ad2a7fb48b18b0ce7c2656ca8d9515e77b5358214b02cf37866b37",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/seed-category-images.ts",
+        "classification": "SEED_RECIPE_NOT_RECORD_EXPORT",
+        "bytes": 4036,
+        "sha256": "c047efc1fb26bafa4532aae1f10dae1c4f43f8a507cdc24f0eddcef0b7f52b5f",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/seed-portfolio-cases.ts",
+        "classification": "SEED_RECIPE_NOT_RECORD_EXPORT",
+        "bytes": 32949,
+        "sha256": "2b78a1d85a59525df29ede98083ff8a099ee7f063581e0dba442262a8ef78ec2",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/seed-scrape-backlog.ts",
+        "classification": "SEED_RECIPE_NOT_RECORD_EXPORT",
+        "bytes": 2462,
+        "sha256": "45a1e2636bd81d41b29f84b732239010b7ddf23011d245c95dc4644505422ae0",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/seed-sources.ts",
+        "classification": "SEED_RECIPE_NOT_RECORD_EXPORT",
+        "bytes": 2004,
+        "sha256": "886cf6032fcace0d6db28d6e122364237618f474143ee2dda17ee28533fff609",
+        "disposition": "Retain provenance; no automatic import or publication"
+      },
+      {
+        "path": "prisma/seed.ts",
+        "classification": "SEED_RECIPE_NOT_RECORD_EXPORT",
+        "bytes": 18923,
+        "sha256": "dee2017a22449ee03d09bcad90226f8cbe04feede6ae2e22f71a69fab7f93be7",
+        "disposition": "Retain provenance; no automatic import or publication"
+      }
+    ]
+  },
+  "entities": [
+    {
+      "entity": "User",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "Category",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "Product",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ProductImage",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "CustomizationField",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "Inquiry",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "Portfolio",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "PortfolioImage",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "BlogCategory",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "Tag",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "BlogPost",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "Testimonial",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "Faq",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "Media",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "RateLimitHit",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "Page",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "SiteSettings",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ImportRun",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ActivityLog",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "DeletedImport",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ScrapeSource",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ScrapeJob",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ScrapedProduct",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ResearchProduct",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ProductSnapshot",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ProductVariant",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "NormalizationAlias",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ShortlistEntry",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ValidationFailure",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "AnalyticsSnapshot",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "OpportunityScore",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ProductEmbedding",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "PriceHistory",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "Subscriber",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "SiteImage",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "SiteCopy",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "FormOption",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "NavMenu",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "NavItem",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ContentRevision",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "PageSection",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "CustomPage",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "CustomBlock",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ImportConflict",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    },
+    {
+      "entity": "ResearchRecord",
+      "recordCount": null,
+      "recordCountStatus": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+      "relationships": "SCHEMA_ONLY_NOT_RECORD_VERIFIED",
+      "destination": "See legacy-entities.csv",
+      "importedRecords": 0
+    }
+  ],
+  "limitations": [
+    "Seed definitions, sample files and prior UI observations cannot establish the deleted database rows, IDs, overrides or publication state.",
+    "docs/import/tier1-owner-products.csv includes third-party descriptions; its filename does not establish ownership or completed projects.",
+    "No import, auth/session recovery, business-content publication or production mutation was performed."
+  ],
+  "ownerRestrictions": {
+    "productAdditionsAllowed": false,
+    "productArchiveImportsAllowed": false,
+    "newProductFixturesAllowed": false,
+    "authority": "Latest owner instruction: DONT ADD PDODUCT AND THIS; quoted catalogue/Sheets archive counts.",
+    "excludedFiles": [
+      "data/rewrites/rewrites-1.json",
+      "data/rewrites/rewrites-2.json",
+      "data/rewrites/rewrites-3.json",
+      "data/tiers/OwnerSheet_gid630660076.csv.gz",
+      "data/tiers/Tier1_Owner.csv.gz",
+      "data/tiers/Tier2_ResinGoods.csv.gz",
+      "data/tiers/Tier3_Supplies.csv.gz",
+      "data/tiers/Tier4_3DPrint.csv.gz",
+      "data/tiers/sample/OwnerImportReady.sample.csv",
+      "data/tiers/sample/Tier1_Owner.sample.csv",
+      "data/tiers/sample/Tier2_ResinGoods.sample.csv",
+      "data/tiers/sample/Tier3_Supplies.sample.csv",
+      "data/tiers/sample/Tier4_3DPrint.sample.csv",
+      "docs/import/tier1-owner-products.csv"
+    ]
+  }
+}

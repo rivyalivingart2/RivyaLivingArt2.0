@@ -2,6 +2,14 @@
 
 ## Latest instruction
 
+**Latest restriction, 21 October 2026:** The owner said **"DONT ADD PDODUCT AND THIS"**, quoting the historical catalogue archive counts. Do not add products or import the archived catalogue/Sheets files, samples or saved product rewrites. None was imported. These sources are excluded from migration; preserve them only as existing read-only historical reference, not a future import backlog. Use the existing destination catalogue for design work and testing; no new product fixtures or product additions are authorized. This overrides earlier old-only-product transfer and product-population targets unless the owner later explicitly changes this restriction.
+
+**Execution update, 21 October 2026:** The owner reported: "OLD WEBSITE DATABASE WAS IN VERCEL BUT I ACCEDENTLY REMOVE IT SO YOU HAVE NOW ONLY FILDE SO WORK ACCORDING IT". Continue from the available files, code, assets and saved observations. The Vercel login/export request is superseded as a prerequisite. This is owner-reported deletion, not an independently verified recovery failure. Do not create another database and call it the lost source, execute old seeds into the destination, or infer deleted record IDs/counts/relationships/publication states. The existing destination data and current Studio login remain protected. Keep all work local.
+
+The revised Phase 1 baseline is **available-file discovery with a documented lost-source limitation**. Schema, bundled content and candidate files remain recoverable; deleted database records and overrides are unknown. Phase 2 representative layout acceptance may use the pinned source and clearly labelled isolated specimens; this does not certify recovered data, current business offerings or later full-workflow parity. See [FILE-BASED-CONTINUATION.md](FILE-BASED-CONTINUATION.md).
+
+The original handoff instruction below remains the design/feature target; its publication authorization was for that earlier documentation handoff only.
+
 The owner said: **"I NEED SAME COPY PASTE OLD WEBSITE TYPE DESIGN AND ALL FEATURES IN NEW WEBSITE"**, allowed earlier website rules to be changed where they conflict, requested a prompt for a new Codex chat, and requested publication of this handoff to GitHub main.
 
 This is an **exact visual and functional parity target**, not permission to invent a fresh design inspired by the reference. The new repository remains the destination; old components, styles, assets and feature logic may be ported or adapted where required. Do not preserve the newer presentation merely because an older checkpoint called it approved.

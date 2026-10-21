@@ -3,7 +3,8 @@ import Link from 'next/link';
 import {ArrowUpRight} from 'lucide-react';
 import type {ContentDocument} from '@/lib/content-model';
 import type {HomeSectionType} from '@/lib/homepage-model';
-import {referenceSectionStates,type HomeComposition,type HomeReferenceKey,type HomeReferenceSnapshot,type ReferenceOffering} from '@/lib/home-reference-model';
+import {referenceSectionStates,type HomeComposition,type HomeReferenceKey,type HomeReferenceSnapshot} from '@/lib/home-reference-model';
+import {LegacyOfferingBand,LegacyPrinciplesBand} from './legacy-home-offerings';
 import {localizeHomeReference} from '@/lib/home-reference-dependencies';
 import type {Locale} from '@/lib/site-settings-model';
 import {journeyText} from '@/lib/journey-text';
@@ -43,10 +44,6 @@ function PageBand({document:d,kind}:{document?:ContentDocument;kind:'scope'|'ate
   </>}
  </section>;
 }
-function OfferingBand({offering,mediaPaths}:{offering?:ReferenceOffering;mediaPaths:string[]}){
- if(!offering?.confirmationSource)return null;
- return <section className={r.band+' '+r.offering}><div><h2>{offering.title}</h2><p>{offering.description}</p><dl className={r.facts}>{offering.facts.map(fact=><div key={fact.label}><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}</dl><Link className={s.button} href={offering.href}>{offering.title} <ArrowUpRight aria-hidden size={18}/></Link></div>{offering.image&&<EditorialImage usage={offering.image} available={mediaPaths.includes(offering.image.path)}/>}</section>;
-}
 function CollectionDoors({document:d}:{document:ContentDocument}){
  const h=d.homepage!,snapshot=d.homeSnapshot!,block=h.sections.find(b=>b.type==='categories'&&b.enabled&&!b.contentNeeded),copy=d.sections.find(s=>s.id===block?.id);
  if(!block||!copy)return null;
@@ -74,10 +71,10 @@ export function ReferenceHomepage({document:d,reference:raw,composition,locale,h
   work:<section className={r.band} data-band="portfolio"><header className={r.heading}><h2><JourneyText text="Portfolio"/></h2></header><div className={r.portfolio}>{reference.portfolio?.map(item=><article key={item.id}><p className={r.disclosure}>{<JourneyText text={item.classification==='concept'?'Concept project · not a completed commission':'Documented project'}/>}</p>{item.image&&<EditorialImage usage={item.image} available={mediaPaths.includes(item.image.path)}/>}<h3><Link href={item.href}>{item.title}</Link></h3><p>{item.description}</p></article>)}</div></section>,
   words:<section className={r.band} data-band="testimonials"><header className={r.heading}><h2><JourneyText text="Testimonials"/></h2></header><div className={r.quotes}>{reference.feedback?.map(item=><figure key={item.id}><p className={r.disclosure}>{<JourneyText text={item.classification==='fictional-sample'?'Fictional sample · not customer feedback':'Approved customer feedback'}/>}</p>{item.image&&<EditorialImage usage={item.image} available={mediaPaths.includes(item.image.path)}/>}<blockquote><p>{item.quote}</p></blockquote><figcaption>{item.classification==='fictional-sample'?<JourneyText text="Illustrative voice"/>:item.attribution}</figcaption>{item.href&&<Link href={item.href}><JourneyText text="Read the statement"/></Link>}</figure>)}</div></section>,
   bespoke:<PageBand document={page('/commission')} kind="commission"/>,
-  workshops:<OfferingBand offering={reference.workshops} mediaPaths={mediaPaths}/>,
-  print:<OfferingBand offering={reference.printing} mediaPaths={mediaPaths}/>,
+  workshops:<LegacyOfferingBand offering={reference.workshops} mediaPaths={mediaPaths} kind="workshops"/>,
+  print:<LegacyOfferingBand offering={reference.printing} mediaPaths={mediaPaths} kind="print"/>,
   process:renderExisting('steps'),
-  why:<PageBand document={page('/our-story')} kind="principles"/>,
+  why:<LegacyPrinciplesBand document={page('/our-story')}/>,
   journal:renderExisting('journal'),
   closing:renderExisting('invitation'),
  };

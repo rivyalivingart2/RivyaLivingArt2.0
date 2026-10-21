@@ -6,8 +6,8 @@
   "fieldInventory": 575,
   "allHaveDestinationOrExplainedGap": true,
   "recordMatching": "Source namespace + immutable source ID -> explicit destination ID; no title-only joins",
-  "sourceRows": "UNAVAILABLE_READ_ONLY_CONNECTION_REQUIRED",
-  "sourceExportAttempt": "Correct Vercel project returned DATABASE_URL metadata but no value; existing secret access cannot be assumed",
+  "sourceRows": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+  "sourceExportAttempt": "Historical access investigation superseded by owner instruction to continue from files; no export recovered",
   "databaseWrites": 0,
-  "status": "DISCOVERY_ACCOUNTED_FOR_WITH_EXPLICIT_ACCESS_AND_RUNTIME_GAPS"
+  "status": "AVAILABLE_FILE_DISCOVERY_COMPLETE_WITH_DECLARED_LOST_SOURCE_LIMITATION"
 }

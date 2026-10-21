@@ -1,4 +1,11 @@
-# Current execution checkpoint — remaining Phase 1 and 2 work, 21 October 2026
+# Current execution — available files after old database deletion, 21 October 2026
+
+The owner reports accidental deletion of the old Vercel database and directs continuation using files. Read [the updated owner decision](docs/restoration/exact-legacy-2026-10-21/OWNER-DECISION.md), [file-based continuation](docs/restoration/exact-legacy-2026-10-21/FILE-BASED-CONTINUATION.md) and [105-file baseline](docs/restoration/exact-legacy-2026-10-21/inventory/available-file-baseline.json). Continue from local `7d2556e` on `codex/exact-legacy-restoration`. The Vercel login/export handoff is superseded as a prerequisite; do not ask for it again. Deleted record counts, identities, relationships and overrides remain unknown, never fabricated from seeds or samples.
+
+Latest owner restriction: **do not add products or import archived catalogue/Sheets lists, samples or saved product rewrites**. No such rows were imported. These sources are excluded from migration; use the existing catalogue and existing fixtures only. Preserve the current destination data, media, relationships and Studio login. Work remains local: no push, production migration, CMS publication or deployment. Do not reseed populated clusters or replay the request-table repair. Phase 1 available-file discovery is complete with the lost-source limitation; Phase 2 representative design foundations are verified locally. Read the final file-based receipt linked in the continuation report. Full operational feature parity remains in later phases. Earlier checkpoints below retain their historical evidence and access assumptions.
+
+---
+# Historical execution checkpoint — remaining Phase 1 and 2 work, 21 October 2026
 
 Preserve the local descendant of `f3a7c04` on `codex/exact-legacy-restoration`. Read [the latest pending-work checkpoint](docs/restoration/exact-legacy-2026-10-21/PHASE-1-2-FINISH-CHECKPOINT.md), [verification receipt](docs/restoration/exact-legacy-2026-10-21/phase12-finish-verification.json) and [visual exceptions](docs/restoration/exact-legacy-2026-10-21/VISUAL-EXCEPTIONS.csv). The owner requested Phase 1 and 2 completion before moving on. Both phases are **not yet fully accepted**: real old database access and remaining exact-design/content mapping acceptance remain open.
 

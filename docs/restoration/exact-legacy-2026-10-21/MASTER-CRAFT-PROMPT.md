@@ -1,7 +1,11 @@
 # RIVYA LIVING ART — EXACT LEGACY RESTORATION MASTER CRAFT PROMPT
 
 Version: 21 October 2026. Read [OWNER-DECISION.md](OWNER-DECISION.md) first.
+
+**Latest owner restriction:** Do not add products. Archived catalogue/Sheets lists, their samples and saved product rewrites are excluded from migration and population. Preserve the existing destination products and use existing fixtures only. Earlier instructions to transfer old-only products or populate product records are superseded by this restriction. No archived product rows have been imported.
 Plan: [PHASE-WISE-PLAN.md](PHASE-WISE-PLAN.md). Entry prompt: [CONTINUE-IN-NEW-CHAT.md](CONTINUE-IN-NEW-CHAT.md).
+
+**Current execution amendment, 21 October 2026:** The owner reports that the old Vercel database was accidentally deleted and directs work from the available files. [The updated owner decision](OWNER-DECISION.md) supersedes waiting for old SQL access. Recover contracts and candidate content from tracked source, retain provenance, and use the current destination as authoritative. Deleted rows/IDs/overrides/counts remain unknown; seeds and samples are not a recovered export. All implementation stays local. Phase 3 becomes an additive file-derived mapping/reconciliation against protected current data; import only independently supported candidate content after conflict/provenance checks. Full old data transfer cannot be asserted without an actual recovered source.
 
 ## C — CONTEXT
 

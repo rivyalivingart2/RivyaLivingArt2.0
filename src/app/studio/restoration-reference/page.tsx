@@ -6,12 +6,22 @@ import {publishedProducts} from '@/lib/shop-catalogue';
 import {ShopShell} from '@/components/shop/shop-shell';
 import {LegacyProjectDocument} from '@/components/shop/legacy-project-document';
 import type {PublishedContentDocument} from '@/lib/published-content';
+import type {ContentDocument} from '@/lib/content-model';
+import type {ReferenceOffering} from '@/lib/home-reference-model';
+import {LegacyOfferingBand,LegacyPrinciplesBand} from '@/components/shop/legacy-home-offerings';
+import {publishedContent} from '@/lib/published-content';
+import specimen from '@/components/shop/legacy-foundation-specimen.json';
 export const dynamic='force-dynamic';
 export const metadata={title:'Legacy scraper reference',robots:{index:false,follow:false,noarchive:true}};
 export default async function RestorationReference({searchParams}:{searchParams:Promise<{view?:string;fixture?:string}>}){
  const session=await requireStudioSession();
  if(process.env.RIVYA_DATA_MODE!=='isolated'||process.env.RIVYA_QA_TARGET!=='exact-legacy-local'||process.env.RIVYA_RESTORATION_LOCAL!=='true'||process.env.VERCEL)notFound();
  const query=await searchParams;
+ if(query.view==='foundations'){
+  const mediaPaths=[specimen.workshops.image.path,specimen.printing.image.path,...specimen.principles.sections.map(s=>s.image.path)];
+  const principles:ContentDocument=query.fixture==='current'?(await publishedContent('en','/our-story'))[0]:{...specimen.principles,pageSnapshot:{schemaVersion:1,products:[],articles:[],categories:[],mediaPaths,unavailableActionHrefs:[],dependencies:[],issues:[]}} as ContentDocument;
+  return <ShopShell publicDesign><header id="reference-note" style={{padding:'32px var(--legacy-pad) 0 var(--legacy-start)'}}><h1>Source layout specimen</h1><p>Isolated layout only. Source copy and generated imagery are not current service confirmation or customer evidence. No record was published.</p></header><LegacyOfferingBand kind="workshops" offering={specimen.workshops as ReferenceOffering} mediaPaths={mediaPaths}/><LegacyOfferingBand kind="print" offering={specimen.printing as ReferenceOffering} mediaPaths={mediaPaths}/><LegacyPrinciplesBand document={principles}/></ShopShell>;
+ }
  if(query.view==='project'){
   const product=(await publishedProducts('en'))[0];if(!product)notFound();
   const document:PublishedContentDocument={id:'editorial:8e43c7e7-192f-439f-beb2-789c0401a128',kind:'page',route:'/portfolio/local-restoration-study',title:product.name+' · layout study',eyebrow:'Isolated design reference',description:'Synthetic local template preview using an existing design visualization. This is not a completed customer project.',image:product.image,imageAlt:product.imageAlt,imagePosition:product.imagePosition,sections:[{id:'study',heading:'Material and proportion',paragraphs:[product.story]}],editorial:{schemaVersion:1,kind:'portfolio',classification:'concept',details:[{label:'Template evidence',value:'Local rendering only; no customer or installation claim'},{label:'Existing product reference',value:product.id},{label:'Material direction',value:product.material||'Not recorded'}]}};

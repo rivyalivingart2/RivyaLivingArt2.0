@@ -1,0 +1,176 @@
+{
+  "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "classification": "LAYOUT_SPECIMEN_NOT_CONFIRMED_BUSINESS_CONTENT",
+  "workshops": {
+    "title": "Pour one yourself",
+    "eyebrow": "at the bench",
+    "actionLabel": "See the sessions",
+    "description": "An afternoon at the studio bench in Surat: you mix the resin, choose the pigments and make the pour. Everything is laid out before you arrive, no experience is needed, and you leave with the piece you made.",
+    "href": "#reference-note",
+    "confirmationSource": "isolated-layout-specimen-only",
+    "image": {
+      "path": "/legacy-reference/foundation/workshop-table.avif",
+      "alt": "A long studio table set for eight places, with mixing cups, gloves, pigment jars and empty moulds laid out in a row",
+      "caption": "",
+      "desktop": {
+        "x": 50,
+        "y": 50,
+        "ratio": "16/9"
+      },
+      "mobile": {
+        "x": 50,
+        "y": 50,
+        "ratio": "16/9"
+      }
+    },
+    "facts": [
+      {
+        "label": "",
+        "value": "2.5 hours"
+      },
+      {
+        "label": "",
+        "value": "Max 8 seats"
+      },
+      {
+        "label": "",
+        "value": "Materials included"
+      }
+    ]
+  },
+  "printing": {
+    "title": "From digital form\nto physical object.",
+    "eyebrow": "the printed studio",
+    "actionLabel": "Browse 3D printing",
+    "description": "Alongside the pours runs a printer bay — lithophane lamps lit by your photographs, sculptural printed forms, and the filaments and parts that make them.",
+    "href": "#reference-note",
+    "confirmationSource": "isolated-layout-specimen-only",
+    "image": {
+      "path": "/legacy-reference/foundation/print-head.avif",
+      "alt": "An FDM print head laying translucent blue filament, layer by layer",
+      "caption": "",
+      "desktop": {
+        "x": 50,
+        "y": 50,
+        "ratio": "3/2"
+      },
+      "mobile": {
+        "x": 50,
+        "y": 50,
+        "ratio": "3/2"
+      }
+    },
+    "facts": [
+      {
+        "label": "01",
+        "value": "The form is modelled, or your photograph is mapped to depth."
+      },
+      {
+        "label": "02",
+        "value": "It prints in translucent filament, layer by layer."
+      },
+      {
+        "label": "03",
+        "value": "Seams are cut back, sanded and finished by hand."
+      }
+    ]
+  },
+  "principles": {
+    "id": "local-foundation-reference",
+    "kind": "page",
+    "route": "/studio/restoration-reference",
+    "title": "Why Rivya Living Art",
+    "eyebrow": "what we hold to",
+    "description": "",
+    "sections": [
+      {
+        "id": "handcrafted",
+        "heading": "Handcrafted",
+        "paragraphs": [
+          "Every piece passes through human hands."
+        ],
+        "image": {
+          "path": "/legacy-reference/foundation/maker-hands.jpg",
+          "alt": "A maker at a lamplit bench, polishing a blue and gold resin vessel with a cloth",
+          "caption": "",
+          "desktop": {
+            "x": 50,
+            "y": 50,
+            "ratio": "4/5"
+          },
+          "mobile": {
+            "x": 50,
+            "y": 50,
+            "ratio": "4/5"
+          }
+        }
+      },
+      {
+        "id": "bespoke",
+        "heading": "Bespoke",
+        "paragraphs": [
+          "Built around your story, not a catalogue."
+        ],
+        "image": {
+          "path": "/legacy-reference/foundation/doorway-memory.jpg",
+          "alt": "A fresh varmala garland of roses and marigolds beside a pair of shears",
+          "caption": "",
+          "desktop": {
+            "x": 50,
+            "y": 50,
+            "ratio": "4/5"
+          },
+          "mobile": {
+            "x": 50,
+            "y": 50,
+            "ratio": "4/5"
+          }
+        }
+      },
+      {
+        "id": "slowMade",
+        "heading": "Slow made",
+        "paragraphs": [
+          "Time is part of the process, not an obstacle to it."
+        ],
+        "image": {
+          "path": "/legacy-reference/foundation/texture-resin-flow.jpg",
+          "alt": "Filled moulds curing overnight under a work lamp",
+          "caption": "",
+          "desktop": {
+            "x": 50,
+            "y": 50,
+            "ratio": "4/5"
+          },
+          "mobile": {
+            "x": 50,
+            "y": 50,
+            "ratio": "4/5"
+          }
+        }
+      },
+      {
+        "id": "heirloom",
+        "heading": "Heirloom",
+        "paragraphs": [
+          "Made to be kept, gifted and passed on."
+        ],
+        "image": {
+          "path": "/legacy-reference/foundation/hero-pour.jpg",
+          "alt": "Deep blue resin catching the light across a finished surface",
+          "caption": "",
+          "desktop": {
+            "x": 50,
+            "y": 50,
+            "ratio": "4/5"
+          },
+          "mobile": {
+            "x": 50,
+            "y": 50,
+            "ratio": "4/5"
+          }
+        }
+      }
+    ]
+  }
+}

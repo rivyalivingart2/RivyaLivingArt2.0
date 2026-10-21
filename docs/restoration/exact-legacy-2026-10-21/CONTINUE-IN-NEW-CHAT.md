@@ -1,5 +1,17 @@
 # Continue exact OLDWEBSITE restoration in a new Codex chat
 
+## Latest continuation — owner-reported database deletion; work from files
+
+**Subsequent owner restriction:** Do not add products or import the historical catalogue/Sheets archives, samples or saved product rewrites. They are excluded, not waiting for approval in an import queue. No such row was imported. Preserve current products; use existing fixtures for design/testing. This overrides old-only-product transfer and product-population targets below.
+
+Preserve the local descendant of `7d2556e` on `codex/exact-legacy-restoration`. Read [the amended owner decision](OWNER-DECISION.md), [FILE-BASED-CONTINUATION.md](FILE-BASED-CONTINUATION.md), [file-based verification](phase12-files-verification.json) and [available-file inventory](inventory/available-file-baseline.json). The owner says the old Vercel database was accidentally deleted and instructs continuation from files. The earlier login/export prerequisite is superseded; do not request it again or recreate a database and present it as recovered source data.
+
+Phase 1 is complete on that revised available-file basis, with the deleted records/IDs/relationships/overrides explicitly unknown. Phase 2 representative design foundations are verified locally with protected-content exceptions. Historical product files were inventoried and then explicitly excluded by the owner. Source filenames and seed comments do not establish current ownership, approval or published state. No business record was imported.
+
+Final local build `v2CaXW2W1igYEi5x4rN2P`: 29 targeted unit/isolation, 403 HTTP, 48 matched layout and eight public-homepage checks pass; 12 matched captures are in the latest `files-` comparison families. The 21 protected source hashes match; current login is unchanged. Prior broader test and login-geometry receipts remain dated history. Full route/workflow parity belongs to Phases 4–7, not this representative foundation checkpoint.
+
+Keep everything local. Continue with explicit field/source-ID mapping and conflict review for Phase 3 when proceeding within the owner's scope; preserve current records and media, do not reseed populated local clusters, replay request-table DDL, publish, migrate production or release. Current preview/comparison run on 4210/4211; isolated source on 4212. Earlier paragraphs below are historical.
+
 ## Latest continuation — finish remaining Phase 1 and 2
 
 Preserve the local descendant of `f3a7c04` on `codex/exact-legacy-restoration`. Read [PHASE-1-2-FINISH-CHECKPOINT.md](PHASE-1-2-FINISH-CHECKPOINT.md), [phase12-finish-verification.json](phase12-finish-verification.json) and [VISUAL-EXCEPTIONS.csv](VISUAL-EXCEPTIONS.csv). Do not declare both phases complete or advance to Phase 3 on older instructions. Real old database baseline access and final content mapping/exact-design acceptance remain open.
