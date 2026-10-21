@@ -4,6 +4,7 @@ import {readFileSync, writeFileSync, mkdirSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
+import {stripPrismaComments} from './phase3/schema.mjs';
 
 const destination=process.cwd(), reference=resolve(process.argv[2]||'../OLDWEBSITE-reference');
 const output=resolve('docs/restoration/exact-legacy-2026-10-21/inventory');
@@ -71,7 +72,7 @@ const modelMap={
  CustomBlock:['landing blocks','MAP_DRAFT','src/lib/landing-model.ts'],
  Subscriber:['new consent-aware subscriber store','RESTORE_PRIVATE_STORE','src/components/studio/conditional-workspace.tsx'],
 };
-const schema=read(reference,'prisma/schema.prisma');
+const schema=stripPrismaComments(read(reference,'prisma/schema.prisma'));
 const models=[...schema.matchAll(/^model\s+(\w+)\s*\{([\s\S]*?)^\}/gm)];
 const fieldRows=[];
 const entityRows=models.map(m=>{

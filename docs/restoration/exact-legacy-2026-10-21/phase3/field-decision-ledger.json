@@ -1,0 +1,5662 @@
+[
+  {
+    "key": "User.id",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "User.name",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "User.email",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "User.hashedPassword",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "User.role",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "User.tokenVersion",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "User.createdAt",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "User.resetTokenHash",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "User.resetTokenExpiry",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "User.activityLogs",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.id",
+    "target": "crosswalk.Category.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.name",
+    "target": "categoryMetadata.label",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.slug",
+    "target": "categoryMetadata.slug",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.image",
+    "target": "categoryMetadata.image",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.description",
+    "target": "categoryMetadata.description",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.order",
+    "target": "categoryMetadata.order",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.translations",
+    "target": "categoryMetadata.translations",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.seoTitle",
+    "target": "categoryMetadata.seo.title",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.seoDescription",
+    "target": "categoryMetadata.seo.description",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.visible",
+    "target": "categoryMetadata.visibility",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.products",
+    "target": "relationships.Category.products",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.portfolios",
+    "target": "relationships.Category.portfolios",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Category.posts",
+    "target": "relationships.Category.posts",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.id",
+    "target": "crosswalk.Product.sourceId",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.title",
+    "target": "ShopProduct.name",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.displayName",
+    "target": "ShopProduct.name",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.slug",
+    "target": "ShopProduct.slug",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.shortTagline",
+    "target": "ShopProduct.subtitle",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.description",
+    "target": "ShopProduct.story",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.priceMin",
+    "target": "ShopProduct.price.amount",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.priceMax",
+    "target": "product.priceRange.max",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.showPrice",
+    "target": "ShopProduct.price.mode",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.timeline",
+    "target": "product.timeline",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.materials",
+    "target": "ShopProduct.material",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.dimensions",
+    "target": "ShopProduct.dimensions",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.occasions",
+    "target": "product.occasions",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.lexical",
+    "target": "product.richDescription",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.madeWith",
+    "target": "relationships.Product.madeWith",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.usedIn",
+    "target": "relationships.Product.usedIn",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.careNotes",
+    "target": "product.careNotes",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.status",
+    "target": "provenance.Product.status",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.featured",
+    "target": "product.featured",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.videoUrl",
+    "target": "product.video",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.model3dUrl",
+    "target": "product.model3d",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.categoryId",
+    "target": "ShopProduct.category",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.category",
+    "target": "relationships.Product.category",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.seoTitle",
+    "target": "product.seo.title",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.seoDescription",
+    "target": "product.seo.description",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.ogImage",
+    "target": "product.seo.image",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.translations",
+    "target": "ShopProduct.translations",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.needsRewrite",
+    "target": "product.review.needsRewrite",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.importSource",
+    "target": "product.provenance.source",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.importRef",
+    "target": "product.provenance.reference",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.tier",
+    "target": "ShopProduct.tier",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.sizeTier",
+    "target": "product.sizeTier",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.inStock",
+    "target": "product.availability",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.sourceHash",
+    "target": "product.provenance.hash",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.ownerTouched",
+    "target": "product.review.ownerTouched",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.studioEditedAt",
+    "target": "product.review.editedAt",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.confirmedAt",
+    "target": "product.review.confirmedAt",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.confirmedById",
+    "target": "product.review.confirmedBy",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.createdAt",
+    "target": "provenance.Product.createdAt",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.updatedAt",
+    "target": "provenance.Product.updatedAt",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.images",
+    "target": "relationships.Product.images",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.customFields",
+    "target": "relationships.Product.customFields",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.inquiries",
+    "target": "relationships.Product.inquiries",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.testimonials",
+    "target": "relationships.Product.testimonials",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.isDemo",
+    "target": "provenance.Product.isDemo",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Product.importConflicts",
+    "target": "relationships.Product.importConflicts",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductImage.id",
+    "target": "crosswalk.ProductImage.sourceId",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductImage.url",
+    "target": "ShopProduct.gallery[].src",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductImage.alt",
+    "target": "ShopProduct.gallery[].alt",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductImage.order",
+    "target": "ShopProduct.gallery[] array order",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductImage.productId",
+    "target": "crosswalk.Product",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductImage.product",
+    "target": "relationships.ProductImage.product",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductImage.role",
+    "target": "product.mediaRole",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomizationField.id",
+    "target": "crosswalk.CustomizationField.sourceId",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomizationField.productId",
+    "target": "crosswalk.Product",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomizationField.product",
+    "target": "relationships.CustomizationField.product",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomizationField.label",
+    "target": "CustomField.label",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomizationField.type",
+    "target": "CustomField.type",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomizationField.options",
+    "target": "CustomField.options",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomizationField.required",
+    "target": "CustomField.required",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomizationField.helpText",
+    "target": "CustomField.hint",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomizationField.order",
+    "target": "CustomField[] array order",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.id",
+    "target": "crosswalk.Inquiry.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.number",
+    "target": "privateLegacyInquiry.number",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.source",
+    "target": "privateLegacyInquiry.source",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.productId",
+    "target": "rivya_inquiries.product_id",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.product",
+    "target": "relationships.Inquiry.product",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.customerName",
+    "target": "rivya_inquiries.name",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.phone",
+    "target": "rivya_inquiries.phone",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.email",
+    "target": "rivya_inquiries.email",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.selections",
+    "target": "rivya_inquiries.answers",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.referenceImageUrls",
+    "target": "privateReferenceCrosswalk",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.budgetRange",
+    "target": "privateLegacyInquiry.budgetRange",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.timeline",
+    "target": "privateLegacyInquiry.timeline",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.notes",
+    "target": "rivya_inquiries.notes",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.whatsappMessage",
+    "target": "rivya_inquiries.summary",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.claimTokenHash",
+    "target": null,
+    "disposition": "EXCLUDE_SECRET",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.attribution",
+    "target": "privateLegacyInquiry.attribution",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.quotedPrice",
+    "target": "privateLegacyInquiry.quotedPrice",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.finalPrice",
+    "target": "privateLegacyInquiry.finalPrice",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.staffNotes",
+    "target": "rivya_inquiry_notes.body",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.status",
+    "target": "provenance.Inquiry.status",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.createdAt",
+    "target": "provenance.Inquiry.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Inquiry.isDemo",
+    "target": "provenance.Inquiry.isDemo",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.id",
+    "target": "crosswalk.Portfolio.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.title",
+    "target": "ContentDocument.title",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.slug",
+    "target": "ContentDocument.route",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.story",
+    "target": "ContentDocument.sections[].paragraphs",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.brief",
+    "target": "ContentDocument.sections[].paragraphs",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.process",
+    "target": "ContentDocument.sections[].paragraphs",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.clientNote",
+    "target": "portfolio.privateClientNote",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.location",
+    "target": "EditorialRecord.details[]",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.year",
+    "target": "EditorialRecord.details[]",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.beforeImageUrl",
+    "target": "EditorialRecord.gallery[]",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.afterImageUrl",
+    "target": "EditorialRecord.gallery[]",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.videoUrl",
+    "target": "portfolio.video",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.resultsMeta",
+    "target": "portfolio.resultsMeta",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.translations",
+    "target": "ContentDocument.translations",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.categoryId",
+    "target": "categoryCrosswalk",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.category",
+    "target": "relationships.Portfolio.category",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.status",
+    "target": "provenance.Portfolio.status",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.createdAt",
+    "target": "provenance.Portfolio.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.images",
+    "target": "relationships.Portfolio.images",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.testimonials",
+    "target": "relationships.Portfolio.testimonials",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Portfolio.isDemo",
+    "target": "provenance.Portfolio.isDemo",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PortfolioImage.id",
+    "target": "crosswalk.PortfolioImage.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PortfolioImage.url",
+    "target": "EditorialUsage.path",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PortfolioImage.alt",
+    "target": "EditorialUsage.alt",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PortfolioImage.caption",
+    "target": "EditorialUsage.caption",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PortfolioImage.translations",
+    "target": "mediaUsage.translations",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PortfolioImage.order",
+    "target": "EditorialRecord.gallery[] array order",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PortfolioImage.portfolioId",
+    "target": "crosswalk.Portfolio",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PortfolioImage.portfolio",
+    "target": "relationships.PortfolioImage.portfolio",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogCategory.id",
+    "target": "crosswalk.BlogCategory.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogCategory.name",
+    "target": "DiscoveryMetadata.format",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogCategory.slug",
+    "target": "blogTaxonomy.slug",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogCategory.translations",
+    "target": "blogTaxonomy.translations",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogCategory.posts",
+    "target": "relationships.BlogCategory.posts",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogCategory.isDemo",
+    "target": "provenance.BlogCategory.isDemo",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Tag.id",
+    "target": "crosswalk.Tag.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Tag.name",
+    "target": "DiscoveryMetadata.tags[]",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Tag.slug",
+    "target": "tagTaxonomy.slug",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Tag.translations",
+    "target": "tagTaxonomy.translations",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Tag.posts",
+    "target": "relationships.Tag.posts",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.id",
+    "target": "crosswalk.BlogPost.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.title",
+    "target": "ContentDocument.title",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.slug",
+    "target": "ContentDocument.route",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.excerpt",
+    "target": "ContentDocument.description",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.content",
+    "target": "ContentDocument.sections[].body",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.coverImage",
+    "target": "ContentDocument.headerImage",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.authorName",
+    "target": "EditorialReview.author",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.blogCategoryId",
+    "target": "blogCategoryCrosswalk",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.blogCategory",
+    "target": "relationships.BlogPost.blogCategory",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.tags",
+    "target": "relationships.BlogPost.tags",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.status",
+    "target": "provenance.BlogPost.status",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.publishedAt",
+    "target": "publication.legacyPublishedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.seoTitle",
+    "target": "content.seo.title",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.seoDescription",
+    "target": "content.seo.description",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.translations",
+    "target": "ContentDocument.translations",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.createdAt",
+    "target": "provenance.BlogPost.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.updatedAt",
+    "target": "provenance.BlogPost.updatedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.isDemo",
+    "target": "provenance.BlogPost.isDemo",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.categoryId",
+    "target": "categoryCrosswalk",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "BlogPost.category",
+    "target": "relationships.BlogPost.category",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.id",
+    "target": "crosswalk.Testimonial.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.name",
+    "target": "EditorialRecord.attribution",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.location",
+    "target": "EditorialRecord.details[]",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.quote",
+    "target": "ContentDocument.sections[].paragraphs",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.rating",
+    "target": "testimonial.rating",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.avatarUrl",
+    "target": "testimonial.avatar",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.order",
+    "target": "testimonial.order",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.translations",
+    "target": "ContentDocument.translations",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.status",
+    "target": "provenance.Testimonial.status",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.featured",
+    "target": "testimonial.featured",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.isDemo",
+    "target": "provenance.Testimonial.isDemo",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.designation",
+    "target": "EditorialRecord.details[]",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.category",
+    "target": "DiscoveryMetadata.tags[]",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.givenAt",
+    "target": "testimonial.givenAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.language",
+    "target": "testimonial.language",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.productId",
+    "target": "testimonial.productId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.product",
+    "target": "relationships.Testimonial.product",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.portfolioId",
+    "target": "testimonial.portfolioId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.portfolio",
+    "target": "relationships.Testimonial.portfolio",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.productTitle",
+    "target": "testimonial.productTitle",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.purchaseType",
+    "target": "testimonial.purchaseType",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.mediaId",
+    "target": "testimonial.avatarMediaId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.installationImageUrl",
+    "target": "testimonial.installationImage",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.installationMediaId",
+    "target": "testimonial.installationMediaId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.videoUrl",
+    "target": "testimonial.video",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.videoPosterUrl",
+    "target": "testimonial.videoPoster",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.internalNotes",
+    "target": "testimonial.privateNotes",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.permissionStatus",
+    "target": "EditorialRecord.evidence.permission",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.verifiedAt",
+    "target": "EditorialRecord.evidence.approvedOn",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.verifiedById",
+    "target": "EditorialRecord.evidence.reviewer",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.createdAt",
+    "target": "provenance.Testimonial.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Testimonial.updatedAt",
+    "target": "provenance.Testimonial.updatedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Faq.id",
+    "target": "crosswalk.Faq.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Faq.question",
+    "target": "ContentDocument.sections[].heading",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Faq.answer",
+    "target": "ContentDocument.sections[].paragraphs",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Faq.order",
+    "target": "faq.order",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Faq.status",
+    "target": "provenance.Faq.status",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Faq.translations",
+    "target": "ContentDocument.translations",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Faq.isDemo",
+    "target": "provenance.Faq.isDemo",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.id",
+    "target": "crosswalk.Media.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.url",
+    "target": "EditorialMedia.path",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.pathname",
+    "target": "media.privateOriginalPath",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.type",
+    "target": "media.type",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.folder",
+    "target": "media.folder",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.bytes",
+    "target": "EditorialMedia.editorial.bytes",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.width",
+    "target": "EditorialMedia.editorial.width",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.height",
+    "target": "EditorialMedia.editorial.height",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.originalName",
+    "target": "EditorialMedia.editorial.filename",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.alt",
+    "target": "PublicMedia.alt",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.checksum",
+    "target": "EditorialMedia.editorial.sha256",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.blurDataUrl",
+    "target": "media.blurDataUrl",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.dominantHex",
+    "target": "media.dominantHex",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.provenance",
+    "target": "EditorialMedia.editorial.classification",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.createdAt",
+    "target": "provenance.Media.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.isDemo",
+    "target": "provenance.Media.isDemo",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.tags",
+    "target": "media.tags",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.caption",
+    "target": "PublicMedia.caption",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.favourite",
+    "target": "media.favourite",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.duration",
+    "target": "media.video.duration",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Media.posterUrl",
+    "target": "media.video.poster",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "RateLimitHit.id",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "RateLimitHit.key",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "RateLimitHit.at",
+    "target": null,
+    "disposition": "EXCLUDE_AUTH_RUNTIME",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Page.id",
+    "target": "crosswalk.Page.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Page.slug",
+    "target": "ContentDocument.route",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Page.title",
+    "target": "ContentDocument.title",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Page.content",
+    "target": "ContentDocument.sections[].body",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Page.seoTitle",
+    "target": "content.seo.title",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Page.seoDescription",
+    "target": "content.seo.description",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Page.translations",
+    "target": "ContentDocument.translations",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Page.updatedAt",
+    "target": "provenance.Page.updatedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.id",
+    "target": "crosswalk.SiteSettings.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.brandName",
+    "target": "current brand",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.tagline",
+    "target": "ContentDocument (shared copy)",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.logoUrl",
+    "target": "current logo",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.heroVideoUrl",
+    "target": "PresentationDocument.media[]",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.announcement",
+    "target": "announcement.text",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.chartTimezone",
+    "target": "analytics.timezone",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.phone",
+    "target": "BusinessSettings.phone",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.whatsappNumber",
+    "target": "BusinessSettings.whatsapp",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.email",
+    "target": "BusinessSettings.email",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.mapsUrl",
+    "target": "BusinessSettings.map",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.address",
+    "target": "current contact address",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.socials",
+    "target": "current social destinations",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.defaultSeo",
+    "target": "seo.defaults",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.faviconUrl",
+    "target": "current favicon",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.appIconUrl",
+    "target": "current app icon",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.defaultCareNotes",
+    "target": "care.defaults",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.businessHours",
+    "target": "business.hours",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.responseNote",
+    "target": "business.responseNote",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.announcementStartsAt",
+    "target": "announcement.startsAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.announcementEndsAt",
+    "target": "announcement.endsAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.announcementHref",
+    "target": "announcement.href",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.catalogFillEnabled",
+    "target": "OWNER_DISABLED_PRODUCT_FILL",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.catalogFillOnDeploy",
+    "target": "OWNER_DISABLED_PRODUCT_FILL",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.catalogFillMaxCreates",
+    "target": "OWNER_DISABLED_PRODUCT_FILL",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteSettings.demoContentPublic",
+    "target": "current publication policy",
+    "disposition": "KEEP_PROTECTED_DESTINATION",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.id",
+    "target": "crosswalk.ImportRun.sourceId",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.trigger",
+    "target": "excludedProductHistory.ImportRun.trigger",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.dryRun",
+    "target": "excludedProductHistory.ImportRun.dryRun",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.rowsRead",
+    "target": "excludedProductHistory.ImportRun.rowsRead",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.created",
+    "target": "excludedProductHistory.ImportRun.created",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.updated",
+    "target": "excludedProductHistory.ImportRun.updated",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.unchanged",
+    "target": "excludedProductHistory.ImportRun.unchanged",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.failed",
+    "target": "excludedProductHistory.ImportRun.failed",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.abortedReason",
+    "target": "excludedProductHistory.ImportRun.abortedReason",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.detail",
+    "target": "excludedProductHistory.ImportRun.detail",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.startedAt",
+    "target": "excludedProductHistory.ImportRun.startedAt",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.finishedAt",
+    "target": "excludedProductHistory.ImportRun.finishedAt",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.isDemo",
+    "target": "provenance.ImportRun.isDemo",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportRun.conflicts",
+    "target": "relationships.ImportRun.conflicts",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ActivityLog.id",
+    "target": "crosswalk.ActivityLog.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ActivityLog.userId",
+    "target": "privateLegacyHistory.actorSourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ActivityLog.user",
+    "target": "relationships.ActivityLog.user",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ActivityLog.action",
+    "target": "privateLegacyHistory.action",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ActivityLog.entity",
+    "target": "privateLegacyHistory.entity",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ActivityLog.entityId",
+    "target": "privateLegacyHistory.entitySourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ActivityLog.meta",
+    "target": "privateLegacyHistory.metadata",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ActivityLog.createdAt",
+    "target": "provenance.ActivityLog.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "DeletedImport.id",
+    "target": "crosswalk.DeletedImport.sourceId",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "DeletedImport.importSource",
+    "target": "excludedProductHistory.DeletedImport.importSource",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "DeletedImport.importRef",
+    "target": "excludedProductHistory.DeletedImport.importRef",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "DeletedImport.deletedAt",
+    "target": "excludedProductHistory.DeletedImport.deletedAt",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.id",
+    "target": "crosswalk.ScrapeSource.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.key",
+    "target": "research.ScrapeSource.key",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.name",
+    "target": "research.ScrapeSource.name",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.baseUrl",
+    "target": "research.ScrapeSource.baseUrl",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.tier",
+    "target": "research.ScrapeSource.tier",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.vertical",
+    "target": "research.ScrapeSource.vertical",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.country",
+    "target": "research.ScrapeSource.country",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.platform",
+    "target": "research.ScrapeSource.platform",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.supply",
+    "target": "research.ScrapeSource.supply",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.enabled",
+    "target": "research.ScrapeSource.enabled",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.verifiedAt",
+    "target": "research.ScrapeSource.verifiedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.notes",
+    "target": "research.ScrapeSource.notes",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.requestDelayMs",
+    "target": "research.ScrapeSource.requestDelayMs",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.maxProducts",
+    "target": "research.ScrapeSource.maxProducts",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.consecutiveFailures",
+    "target": "research.ScrapeSource.consecutiveFailures",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.pausedAt",
+    "target": "research.ScrapeSource.pausedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.pausedReason",
+    "target": "research.ScrapeSource.pausedReason",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.collectionMode",
+    "target": "research.ScrapeSource.collectionMode",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.policyReviewStatus",
+    "target": "research.ScrapeSource.policyReviewStatus",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.policyReviewedAt",
+    "target": "research.ScrapeSource.policyReviewedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.policyReviewedBy",
+    "target": "research.ScrapeSource.policyReviewedBy",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.policyReviewNote",
+    "target": "research.ScrapeSource.policyReviewNote",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.analyticsLeague",
+    "target": "research.ScrapeSource.analyticsLeague",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeSource.jobs",
+    "target": "relationships.ScrapeSource.jobs",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.id",
+    "target": "crosswalk.ScrapeJob.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.sourceId",
+    "target": "research.ScrapeJob.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.source",
+    "target": "relationships.ScrapeJob.source",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.inputUrl",
+    "target": "research.ScrapeJob.inputUrl",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.sourceKey",
+    "target": "research.ScrapeJob.sourceKey",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.sourceName",
+    "target": "research.ScrapeJob.sourceName",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.platform",
+    "target": "research.ScrapeJob.platform",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.vertical",
+    "target": "research.ScrapeJob.vertical",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.status",
+    "target": "provenance.ScrapeJob.status",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.cursorPage",
+    "target": "research.ScrapeJob.cursorPage",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.totalScraped",
+    "target": "research.ScrapeJob.totalScraped",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.newCount",
+    "target": "research.ScrapeJob.newCount",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.updatedCount",
+    "target": "research.ScrapeJob.updatedCount",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.error",
+    "target": "research.ScrapeJob.error",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.createdAt",
+    "target": "provenance.ScrapeJob.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.finishedAt",
+    "target": "research.ScrapeJob.finishedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.products",
+    "target": "relationships.ScrapeJob.products",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.isDemo",
+    "target": "provenance.ScrapeJob.isDemo",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.scope",
+    "target": "research.ScrapeJob.scope",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapeJob.updatedAt",
+    "target": "provenance.ScrapeJob.updatedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.id",
+    "target": "crosswalk.ScrapedProduct.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.jobId",
+    "target": "research.ScrapedProduct.jobId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.job",
+    "target": "relationships.ScrapedProduct.job",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.sourceKey",
+    "target": "research.ScrapedProduct.sourceKey",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.externalId",
+    "target": "research.ScrapedProduct.externalId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.url",
+    "target": "research.ScrapedProduct.url",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.vertical",
+    "target": "research.ScrapedProduct.vertical",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.currency",
+    "target": "research.ScrapedProduct.currency",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.title",
+    "target": "research.ScrapedProduct.title",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.slug",
+    "target": "research.ScrapedProduct.slug",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.category",
+    "target": "research.ScrapedProduct.category",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.shortTagline",
+    "target": "research.ScrapedProduct.shortTagline",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.description",
+    "target": "research.ScrapedProduct.description",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.priceMin",
+    "target": "research.ScrapedProduct.priceMin",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.priceMax",
+    "target": "research.ScrapedProduct.priceMax",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.showPrice",
+    "target": "research.ScrapedProduct.showPrice",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.timeline",
+    "target": "research.ScrapedProduct.timeline",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.materials",
+    "target": "research.ScrapedProduct.materials",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.dimensions",
+    "target": "research.ScrapedProduct.dimensions",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.status",
+    "target": "provenance.ScrapedProduct.status",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.featured",
+    "target": "research.ScrapedProduct.featured",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.images",
+    "target": "research.ScrapedProduct.images",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.imageAlts",
+    "target": "research.ScrapedProduct.imageAlts",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.fields",
+    "target": "research.ScrapedProduct.fields",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.seoTitle",
+    "target": "research.ScrapedProduct.seoTitle",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.seoDescription",
+    "target": "research.ScrapedProduct.seoDescription",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.contentHash",
+    "target": "research.ScrapedProduct.contentHash",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.firstSeen",
+    "target": "research.ScrapedProduct.firstSeen",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.lastSeen",
+    "target": "research.ScrapedProduct.lastSeen",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.reviewStatus",
+    "target": "research.ScrapedProduct.reviewStatus",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.importedProductId",
+    "target": "research.ScrapedProduct.importedProductId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ScrapedProduct.notes",
+    "target": "research.ScrapedProduct.notes",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchProduct.id",
+    "target": "crosswalk.ResearchProduct.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchProduct.sourceKey",
+    "target": "research.ResearchProduct.sourceKey",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchProduct.externalId",
+    "target": "research.ResearchProduct.externalId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchProduct.canonicalUrl",
+    "target": "research.ResearchProduct.canonicalUrl",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchProduct.firstSeen",
+    "target": "research.ResearchProduct.firstSeen",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchProduct.lastSeen",
+    "target": "research.ResearchProduct.lastSeen",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchProduct.snapshots",
+    "target": "relationships.ResearchProduct.snapshots",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchProduct.shortlistEntry",
+    "target": "relationships.ResearchProduct.shortlistEntry",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchProduct.opportunityScores",
+    "target": "relationships.ResearchProduct.opportunityScores",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchProduct.embeddings",
+    "target": "relationships.ResearchProduct.embeddings",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductSnapshot.id",
+    "target": "crosswalk.ProductSnapshot.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductSnapshot.researchProductId",
+    "target": "research.ProductSnapshot.researchProductId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductSnapshot.researchProduct",
+    "target": "relationships.ProductSnapshot.researchProduct",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductSnapshot.jobId",
+    "target": "research.ProductSnapshot.jobId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductSnapshot.capturedAt",
+    "target": "research.ProductSnapshot.capturedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductSnapshot.contentHash",
+    "target": "research.ProductSnapshot.contentHash",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductSnapshot.rawPayload",
+    "target": "research.ProductSnapshot.rawPayload",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductSnapshot.variants",
+    "target": "relationships.ProductSnapshot.variants",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductVariant.id",
+    "target": "crosswalk.ProductVariant.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductVariant.snapshotId",
+    "target": "research.ProductVariant.snapshotId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductVariant.snapshot",
+    "target": "relationships.ProductVariant.snapshot",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductVariant.label",
+    "target": "research.ProductVariant.label",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductVariant.optionsJson",
+    "target": "research.ProductVariant.optionsJson",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductVariant.priceMinor",
+    "target": "research.ProductVariant.priceMinor",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductVariant.currency",
+    "target": "research.ProductVariant.currency",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductVariant.priceBasis",
+    "target": "research.ProductVariant.priceBasis",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductVariant.available",
+    "target": "research.ProductVariant.available",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductVariant.isReference",
+    "target": "research.ProductVariant.isReference",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductVariant.referenceReason",
+    "target": "research.ProductVariant.referenceReason",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NormalizationAlias.id",
+    "target": "crosswalk.NormalizationAlias.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NormalizationAlias.kind",
+    "target": "research.NormalizationAlias.kind",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NormalizationAlias.rawValue",
+    "target": "research.NormalizationAlias.rawValue",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NormalizationAlias.canonicalValue",
+    "target": "research.NormalizationAlias.canonicalValue",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NormalizationAlias.createdBy",
+    "target": "research.NormalizationAlias.createdBy",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NormalizationAlias.createdAt",
+    "target": "provenance.NormalizationAlias.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ShortlistEntry.id",
+    "target": "crosswalk.ShortlistEntry.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ShortlistEntry.researchProductId",
+    "target": "research.ShortlistEntry.researchProductId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ShortlistEntry.researchProduct",
+    "target": "relationships.ShortlistEntry.researchProduct",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ShortlistEntry.state",
+    "target": "research.ShortlistEntry.state",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ShortlistEntry.changedBy",
+    "target": "research.ShortlistEntry.changedBy",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ShortlistEntry.changedAt",
+    "target": "research.ShortlistEntry.changedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ShortlistEntry.note",
+    "target": "research.ShortlistEntry.note",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ShortlistEntry.reason",
+    "target": "research.ShortlistEntry.reason",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ShortlistEntry.tags",
+    "target": "research.ShortlistEntry.tags",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ValidationFailure.id",
+    "target": "crosswalk.ValidationFailure.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ValidationFailure.scrapedProductId",
+    "target": "research.ValidationFailure.scrapedProductId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ValidationFailure.sourceKey",
+    "target": "research.ValidationFailure.sourceKey",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ValidationFailure.jobId",
+    "target": "research.ValidationFailure.jobId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ValidationFailure.field",
+    "target": "research.ValidationFailure.field",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ValidationFailure.reason",
+    "target": "research.ValidationFailure.reason",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ValidationFailure.severity",
+    "target": "research.ValidationFailure.severity",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ValidationFailure.status",
+    "target": "provenance.ValidationFailure.status",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ValidationFailure.createdAt",
+    "target": "provenance.ValidationFailure.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ValidationFailure.updatedAt",
+    "target": "provenance.ValidationFailure.updatedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ValidationFailure.resolvedAt",
+    "target": "research.ValidationFailure.resolvedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ValidationFailure.resolvedById",
+    "target": "research.ValidationFailure.resolvedById",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "AnalyticsSnapshot.id",
+    "target": "crosswalk.AnalyticsSnapshot.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "AnalyticsSnapshot.view",
+    "target": "research.AnalyticsSnapshot.view",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "AnalyticsSnapshot.league",
+    "target": "research.AnalyticsSnapshot.league",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "AnalyticsSnapshot.scope",
+    "target": "research.AnalyticsSnapshot.scope",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "AnalyticsSnapshot.sourceKey",
+    "target": "research.AnalyticsSnapshot.sourceKey",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "AnalyticsSnapshot.payload",
+    "target": "research.AnalyticsSnapshot.payload",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "AnalyticsSnapshot.includedCount",
+    "target": "research.AnalyticsSnapshot.includedCount",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "AnalyticsSnapshot.consideredCount",
+    "target": "research.AnalyticsSnapshot.consideredCount",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "AnalyticsSnapshot.computedAt",
+    "target": "research.AnalyticsSnapshot.computedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "AnalyticsSnapshot.scrapeRunId",
+    "target": "research.AnalyticsSnapshot.scrapeRunId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "AnalyticsSnapshot.normalizerVersion",
+    "target": "research.AnalyticsSnapshot.normalizerVersion",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "AnalyticsSnapshot.analyticsVersion",
+    "target": "research.AnalyticsSnapshot.analyticsVersion",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "OpportunityScore.id",
+    "target": "crosswalk.OpportunityScore.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "OpportunityScore.researchProductId",
+    "target": "research.OpportunityScore.researchProductId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "OpportunityScore.researchProduct",
+    "target": "relationships.OpportunityScore.researchProduct",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "OpportunityScore.component",
+    "target": "research.OpportunityScore.component",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "OpportunityScore.value",
+    "target": "research.OpportunityScore.value",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "OpportunityScore.weight",
+    "target": "research.OpportunityScore.weight",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "OpportunityScore.contribution",
+    "target": "research.OpportunityScore.contribution",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "OpportunityScore.detail",
+    "target": "research.OpportunityScore.detail",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "OpportunityScore.analyticsVersion",
+    "target": "research.OpportunityScore.analyticsVersion",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "OpportunityScore.computedAt",
+    "target": "research.OpportunityScore.computedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductEmbedding.id",
+    "target": "crosswalk.ProductEmbedding.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductEmbedding.researchProductId",
+    "target": "research.ProductEmbedding.researchProductId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductEmbedding.researchProduct",
+    "target": "relationships.ProductEmbedding.researchProduct",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductEmbedding.model",
+    "target": "research.ProductEmbedding.model",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductEmbedding.version",
+    "target": "research.ProductEmbedding.version",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductEmbedding.hash",
+    "target": "research.ProductEmbedding.hash",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductEmbedding.dimensions",
+    "target": "research.ProductEmbedding.dimensions",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductEmbedding.features",
+    "target": "research.ProductEmbedding.features",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductEmbedding.vector",
+    "target": "research.ProductEmbedding.vector",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ProductEmbedding.computedAt",
+    "target": "research.ProductEmbedding.computedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PriceHistory.id",
+    "target": "crosswalk.PriceHistory.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PriceHistory.scrapedProductId",
+    "target": "research.PriceHistory.scrapedProductId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PriceHistory.productId",
+    "target": "research.PriceHistory.productId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PriceHistory.sourceKey",
+    "target": "research.PriceHistory.sourceKey",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PriceHistory.priceMin",
+    "target": "research.PriceHistory.priceMin",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PriceHistory.priceMax",
+    "target": "research.PriceHistory.priceMax",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PriceHistory.currency",
+    "target": "research.PriceHistory.currency",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PriceHistory.capturedAt",
+    "target": "research.PriceHistory.capturedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Subscriber.id",
+    "target": "crosswalk.Subscriber.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Subscriber.email",
+    "target": "rivya_newsletter_subscribers.email",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Subscriber.source",
+    "target": "rivya_newsletter_subscribers.source",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "Subscriber.createdAt",
+    "target": "provenance.Subscriber.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteImage.key",
+    "target": "placementCrosswalk.key",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteImage.url",
+    "target": "EditorialUsage.path",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteImage.mediaId",
+    "target": "mediaCrosswalk",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteImage.mobileUrl",
+    "target": "mediaUsage.mobilePath",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteImage.mobileMediaId",
+    "target": "mediaCrosswalk.mobile",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteImage.focalX",
+    "target": "EditorialUsage.desktop.x",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteImage.focalY",
+    "target": "EditorialUsage.desktop.y",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteImage.draft",
+    "target": "placementDraftSeparateFromPublished",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteImage.updatedAt",
+    "target": "provenance.SiteImage.updatedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteCopy.key",
+    "target": "copyKeyCrosswalk",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteCopy.locale",
+    "target": "ContentDocument.translations[locale]",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteCopy.value",
+    "target": "ContentDocument published text",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteCopy.draftValue",
+    "target": "ContentDocument draft text",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteCopy.updatedById",
+    "target": "provenance.source.actorId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "SiteCopy.updatedAt",
+    "target": "provenance.SiteCopy.updatedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "FormOption.id",
+    "target": "crosswalk.FormOption.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "FormOption.list",
+    "target": "commissionOptions.list",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "FormOption.value",
+    "target": "commissionOptions.value",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "FormOption.label",
+    "target": "commissionOptions.localizedLabel",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "FormOption.order",
+    "target": "commissionOptions.order",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "FormOption.enabled",
+    "target": "commissionOptions.enabled",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NavMenu.key",
+    "target": "SiteSettings.navigation menu key",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NavMenu.items",
+    "target": "relationships.NavMenu.items",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NavItem.id",
+    "target": "crosswalk.NavItem.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NavItem.menuKey",
+    "target": "SiteSettings.navigation menu key",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NavItem.menu",
+    "target": "relationships.NavItem.menu",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NavItem.key",
+    "target": "NavItem.id",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NavItem.label",
+    "target": "NavItem.label",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NavItem.href",
+    "target": "NavItem.href",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NavItem.order",
+    "target": "NavItem[] array order",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NavItem.visible",
+    "target": "NavItem.visible",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "NavItem.newTab",
+    "target": "NavItem.newTab",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ContentRevision.id",
+    "target": "crosswalk.ContentRevision.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ContentRevision.surface",
+    "target": "privateLegacyHistory.surface",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ContentRevision.payload",
+    "target": "privateLegacyHistory.payload",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ContentRevision.summary",
+    "target": "privateLegacyHistory.summary",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ContentRevision.authorId",
+    "target": "privateLegacyHistory.actorSourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ContentRevision.createdAt",
+    "target": "provenance.ContentRevision.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PageSection.id",
+    "target": "crosswalk.PageSection.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PageSection.pageKey",
+    "target": "pageCrosswalk",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PageSection.key",
+    "target": "ContentSection.id",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PageSection.order",
+    "target": "ContentDocument published sections[] array order",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PageSection.visible",
+    "target": "ContentSection published enabled",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PageSection.draftOrder",
+    "target": "ContentDocument draft sections[] array order",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PageSection.draftVisible",
+    "target": "ContentSection draft enabled",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PageSection.notes",
+    "target": "ContentSection.sourceNote",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PageSection.updatedById",
+    "target": "provenance.source.actorId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "PageSection.updatedAt",
+    "target": "provenance.PageSection.updatedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.id",
+    "target": "crosswalk.CustomPage.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.slug",
+    "target": "ContentDocument.route",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.title",
+    "target": "ContentDocument.title",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.status",
+    "target": "provenance.CustomPage.status",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.publishAt",
+    "target": "publication.schedule",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.noindex",
+    "target": "content.seo.noindex",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.seoTitle",
+    "target": "content.seo.title",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.seoDescription",
+    "target": "content.seo.description",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.ogImage",
+    "target": "content.seo.image",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.translations",
+    "target": "ContentDocument.translations",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.blocks",
+    "target": "relationships.CustomPage.blocks",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.createdAt",
+    "target": "provenance.CustomPage.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.updatedAt",
+    "target": "provenance.CustomPage.updatedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.updatedById",
+    "target": "provenance.source.actorId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomPage.isDemo",
+    "target": "provenance.CustomPage.isDemo",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomBlock.id",
+    "target": "crosswalk.CustomBlock.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomBlock.pageId",
+    "target": "crosswalk.CustomPage",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomBlock.page",
+    "target": "relationships.CustomBlock.page",
+    "disposition": "RELATIONSHIP_CROSSWALK_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomBlock.type",
+    "target": "LandingBlock.type",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomBlock.order",
+    "target": "LandingDocument.blocks[] array order",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomBlock.data",
+    "target": "LandingBlock",
+    "disposition": "EXISTING_CONTRACT_ADAPTER",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "CustomBlock.translations",
+    "target": "landingBlock.translations",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportConflict.id",
+    "target": "crosswalk.ImportConflict.sourceId",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportConflict.productId",
+    "target": "excludedProductHistory.ImportConflict.productId",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportConflict.product",
+    "target": "relationships.ImportConflict.product",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportConflict.importRunId",
+    "target": "excludedProductHistory.ImportConflict.importRunId",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportConflict.importRun",
+    "target": "relationships.ImportConflict.importRun",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportConflict.field",
+    "target": "excludedProductHistory.ImportConflict.field",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportConflict.importedValue",
+    "target": "excludedProductHistory.ImportConflict.importedValue",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportConflict.dbValue",
+    "target": "excludedProductHistory.ImportConflict.dbValue",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportConflict.status",
+    "target": "provenance.ImportConflict.status",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportConflict.createdAt",
+    "target": "provenance.ImportConflict.createdAt",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportConflict.resolvedAt",
+    "target": "excludedProductHistory.ImportConflict.resolvedAt",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ImportConflict.resolvedById",
+    "target": "excludedProductHistory.ImportConflict.resolvedById",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_DATA",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "EXCLUDED_FROM_MERGE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.id",
+    "target": "crosswalk.ResearchRecord.sourceId",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.source",
+    "target": "research.ResearchRecord.source",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.url",
+    "target": "research.ResearchRecord.url",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.title",
+    "target": "research.ResearchRecord.title",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.category",
+    "target": "research.ResearchRecord.category",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.materials",
+    "target": "research.ResearchRecord.materials",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.dimensions",
+    "target": "research.ResearchRecord.dimensions",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.price",
+    "target": "research.ResearchRecord.price",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.images",
+    "target": "research.ResearchRecord.images",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.description",
+    "target": "research.ResearchRecord.description",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.tags",
+    "target": "research.ResearchRecord.tags",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.extractedAt",
+    "target": "research.ResearchRecord.extractedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.notes",
+    "target": "research.ResearchRecord.notes",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.status",
+    "target": "provenance.ResearchRecord.status",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.isDemo",
+    "target": "provenance.ResearchRecord.isDemo",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.createdById",
+    "target": "research.ResearchRecord.createdById",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.createdAt",
+    "target": "provenance.ResearchRecord.createdAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  },
+  {
+    "key": "ResearchRecord.updatedAt",
+    "target": "provenance.ResearchRecord.updatedAt",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "sourceValueAvailable": false,
+    "sourceDigest": null,
+    "destinationDigest": null,
+    "decision": "KEEP_DESTINATION_NO_SOURCE_VALUE",
+    "replacementApproved": false
+  }
+]

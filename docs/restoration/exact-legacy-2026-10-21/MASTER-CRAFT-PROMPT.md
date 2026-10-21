@@ -2,6 +2,8 @@
 
 Version: 21 October 2026. Read [OWNER-DECISION.md](OWNER-DECISION.md) first.
 
+**Current checkpoint:** Phase 3 field/media mapping was authorized from `39b948c` and completed on the available-file/contract basis. Read [the mapping report](phase3/PHASE-3-MAPPING.md) and [verification receipt](phase3/verification.json). There are 566 actual source fields (the historical 575 count included nine comment lines), 45 entities, 48 relationship contracts and 78 media placements. No products, archive imports, data writes, media edits/relinks, Studio login changes or release occurred. Additive extensions, derivatives and justified record associations remain subsequent work; unavailable source records and unassigned media remain explicitly unknown.
+
 **Latest owner restriction:** Do not add products. Archived catalogue/Sheets lists, their samples and saved product rewrites are excluded from migration and population. Preserve the existing destination products and use existing fixtures only. Earlier instructions to transfer old-only products or populate product records are superseded by this restriction. No archived product rows have been imported.
 Plan: [PHASE-WISE-PLAN.md](PHASE-WISE-PLAN.md). Entry prompt: [CONTINUE-IN-NEW-CHAT.md](CONTINUE-IN-NEW-CHAT.md).
 

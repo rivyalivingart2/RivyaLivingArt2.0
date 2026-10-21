@@ -1,4 +1,13 @@
-# Current execution — available files after old database deletion, 21 October 2026
+# Current execution — Phase 3 field and media mapping, 21 October 2026
+
+The owner authorized Phase 3 from `39b948c`, limited to local field/media mapping while preserving current data and Studio login. Read [the mapping checkpoint](docs/restoration/exact-legacy-2026-10-21/phase3/PHASE-3-MAPPING.md) and [verification](docs/restoration/exact-legacy-2026-10-21/phase3/verification.json). The package maps 45 entities, 566 real fields, 48 relationship contracts and 78 media placements. The earlier 575-field count included nine block-comment prose lines; the corrected mapping is authoritative.
+
+**No products or archived catalogue/Sheets imports.** No products/fixtures, database writes, media edits/relinks or app/login changes occurred. All 13 inspected isolated business tables and 897 tracked application/media files are unchanged. The deleted source database remains unavailable; no real source IDs or relationships were invented. Drive lineage is explicit where evidenced, with 787 originals unassigned. Proposed extensions are mapped requirements, not installed features. See the report for complete evidence limits.
+
+The requested contract/available-file mapping is complete; Phase 3 additive non-product implementation, derivatives and replay/recovery remain subsequent work. Keep everything local and preserve this branch and ignored evidence. No push, PR, deploy, production migration, CMS publication or cloud write is authorized. Do not reseed populated clusters or repeat the request-table repair. Mapping preview: `http://127.0.0.1:4213/`; existing app/comparisons: 4210/4211. Earlier entries below are historical.
+
+---
+# Historical execution — available files after old database deletion, 21 October 2026
 
 The owner reports accidental deletion of the old Vercel database and directs continuation using files. Read [the updated owner decision](docs/restoration/exact-legacy-2026-10-21/OWNER-DECISION.md), [file-based continuation](docs/restoration/exact-legacy-2026-10-21/FILE-BASED-CONTINUATION.md) and [105-file baseline](docs/restoration/exact-legacy-2026-10-21/inventory/available-file-baseline.json). Continue from local `7d2556e` on `codex/exact-legacy-restoration`. The Vercel login/export handoff is superseded as a prerequisite; do not ask for it again. Deleted record counts, identities, relationships and overrides remain unknown, never fabricated from seeds or samples.
 

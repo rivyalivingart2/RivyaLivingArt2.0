@@ -1,0 +1,31 @@
+{
+  "sourcePublicFiles": 326,
+  "destinationPublicFiles": 297,
+  "sourceFilesWithExactByteMatches": 135,
+  "sourceFilesWithoutByteMatches": 191,
+  "samePathDifferentBytes": 0,
+  "localRasterDimensions": 597,
+  "metadataErrors": 0,
+  "slots": 78,
+  "unsupportedRatioSlots": 13,
+  "currentUsageReferences": 866,
+  "missingBundledUsages": 0,
+  "drive": {
+    "inventoried": 813,
+    "freshMetadataObserved": 280,
+    "historicalOnly": 533,
+    "explicitLineage": 26,
+    "unassignedOriginals": 787,
+    "byteDeduplicationComplete": false,
+    "remoteDimensionsVerified": false,
+    "photos": "Previously observed album; no file-level Photos identifiers/export; not inferred equivalent to Drive"
+  },
+  "writes": {
+    "productRecords": 0,
+    "database": 0,
+    "mediaBytes": 0,
+    "mediaAssociations": 0,
+    "drive": 0,
+    "publication": 0
+  }
+}

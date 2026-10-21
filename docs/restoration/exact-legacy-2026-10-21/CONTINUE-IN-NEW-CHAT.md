@@ -1,6 +1,14 @@
 # Continue exact OLDWEBSITE restoration in a new Codex chat
 
-## Latest continuation — owner-reported database deletion; work from files
+## Current continuation — Phase 3 mapping from 39b948c
+
+Preserve the current local descendant of `39b948c` on `codex/exact-legacy-restoration`. Read [phase3/PHASE-3-MAPPING.md](phase3/PHASE-3-MAPPING.md) and [phase3/verification.json](phase3/verification.json) first. The owner's latest request was to complete local field/media mapping with no product additions or archived catalogue/Sheets imports. That contract/available-file mapping package is complete: 45 entities, 566 real fields, 48 relationship contracts, 78 image/video placements, explicit asset evidence and field conflicts. Nine comment lines explain the earlier 575 count.
+
+All existing isolated business rows and 897 tracked application/media files are unchanged. Studio login and app build remain unchanged. The lost source database cannot provide source IDs or record edges; keep the empty real-record crosswalk. Do not reintroduce the Vercel-login/export prerequisite or use product archives/seeds to fill it. Private Drive evidence accounts for 813 file IDs with mixed fresh/historical metadata and 787 unassigned originals; do not fabricate project/product/review associations. Proposed media/schema extensions are not yet implemented.
+
+The read-only mapping viewer is on 4213, unchanged app on 4210, Phase 2 comparisons on 4211 and isolated old source on 4212. Reproduction commands and precise remaining Phase 3 boundary are in the mapping report. Keep everything local, retain the branch and ignored evidence, and never reseed a populated cluster, replay request-table DDL, import excluded products, publish or release. The earlier continuations below are historical.
+
+## Historical continuation — owner-reported database deletion; work from files
 
 **Subsequent owner restriction:** Do not add products or import the historical catalogue/Sheets archives, samples or saved product rewrites. They are excluded, not waiting for approval in an import queue. No such row was imported. Preserve current products; use existing fixtures for design/testing. This overrides old-only-product transfer and product-population targets below.
 
