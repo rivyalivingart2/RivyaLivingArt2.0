@@ -1,5 +1,13 @@
 # Continue exact OLDWEBSITE restoration in a new Codex chat
 
+## Execution checkpoint added 21 October
+
+Phase 1 has started locally on `codex/exact-legacy-restoration` from main `1936cbb`. Read [PHASE-1-BASELINE.md](PHASE-1-BASELINE.md) and the current-execution section of [PHASE-WISE-PLAN.md](PHASE-WISE-PLAN.md) before using the original prompt below. Preserve this branch and its local evidence; do not reset it to main and lose the checkpoint. Both live Studios were authenticated for read-only comparison; recheck session state instead of assuming it persists. No credentials belong in chat.
+
+The source inventory, dry-run planner and isolated current-app preview exist. They do not mean the legacy UI, workflows or real data migration is implemented. Complete the listed remaining baseline states and continue scoped source porting without another phase-start question. Real production data/migrations/publication and release remain separate gates. The old reference's normal build runs migration/bootstrap, so it must not be pointed at a real database for convenience. Private evidence is ignored under `test-results/exact-legacy-2026-10-21/`.
+
+The following is the original handoff prompt, retained for scope and context.
+
 Copy the prompt below into a new Codex chat attached to the **RivyaLivingArt2.0** repository. No prior conversation context is required.
 
 ---

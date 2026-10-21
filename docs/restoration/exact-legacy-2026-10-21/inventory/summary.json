@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "destinationBaseline": "1936cbbe25c1c7ccd75cab82057354ae94f6ebc0",
+  "sourceCounts": {
+    "routes": 98,
+    "publicPages": 25,
+    "studioPages": 60,
+    "handlers": 13,
+    "models": 45,
+    "fields": 575,
+    "actions": 156,
+    "markdown": 286
+  },
+  "destinationCounts": {
+    "routes": 109,
+    "studioModules": 37,
+    "uniqueTables": 23,
+    "protectedSourceFiles": 21
+  },
+  "limits": [
+    "Static source inventory, not a claim of working feature parity.",
+    "No database records read or migrated.",
+    "Draft field mappings require explicit validation before writes.",
+    "Markdown paths inventoried; content adaptation is Phase 2."
+  ],
+  "networkRequests": 0,
+  "databaseWrites": 0
+}

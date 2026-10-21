@@ -3,7 +3,25 @@
 Date: 21 October 2026. This is a prospective execution plan, not a completion report.
 Authority: [OWNER-DECISION.md](OWNER-DECISION.md). Full specification: [MASTER-CRAFT-PROMPT.md](MASTER-CRAFT-PROMPT.md).
 
-## Status at handoff
+## Current execution — 21 October 2026
+
+Phase 1 is **IN_PROGRESS** on `codex/exact-legacy-restoration`, based on freshly fetched main `1936cbb`. Read [PHASE-1-BASELINE.md](PHASE-1-BASELINE.md) for verified source/deployment identities, authenticated observations, gaps, local tools and the private comparison preview. The source inventory covers 98 legacy routes, 45 entities, 575 fields and 156 actions. This is not a parity completion count.
+
+All work below has one integration owner: the current execution agent. Preserve the existing current-service contracts and all explicit owner exceptions while adapting the old components. No routine phase-start confirmation is required.
+
+| Phase | Concrete source and edit areas | Deliverable and passing evidence | Current state |
+|---|---|---|---|
+| 1 | Old `src/app/`, `src/actions/`, `prisma/schema.prisma`; new `src/app/`, `src/lib/studio-modules.ts`, SQL schemas; `tools/exact-legacy/` | Route/action/field inventory, protected hashes, real rendered comparisons, defects and private data reconciliation prerequisites | IN_PROGRESS; working isolated baseline and comparison viewer; unobserved states and exact live data snapshot remain open |
+| 2 | Old `src/components/storefront/`, `src/components/motion/`, `src/components/studio/`, `(v2)` pages, `src/styles/tokens.css`, `src/app/globals.css`; adapt new `src/components/shop/`, Studio shell/styles | Exact header/footer/home/card/form/table/editor compositions, responsive and motion parity; current login stays unchanged; useful Markdown migrated with source provenance | NOT_STARTED; source paths and reference captures available |
+| 3 | `src/lib/shop-model.ts`, `content-model.ts`, `editorial-record-model.ts`, `editorial-media-model.ts`, `catalogue-extra.ts`; additive `scripts/` schemas; `tools/exact-legacy/reconcile.mjs` | Explicit identity/field/relationship crosswalks, conflict register, repeat-safe transactions, recovery rehearsal, media provenance/derivatives and preserved-value comparison | PLANNING_PRIMITIVE_IMPLEMENTED; no real row merge, derivative or migration executed |
+| 4 | Public page routes and `src/components/shop/`; `src/components/studio/`, `studio-modules.ts`, `src/app/api/studio/`, current revision/auth services; adapt old actions/import/subscriber/catalog-fill contracts | Full public and authenticated workflows, including create/edit/filter/preview/save/publish/recover in isolation; browser→API→database→refresh evidence | NOT_STARTED; inactive import/subscriber screens and missing scraper/fill are recorded as gaps |
+| 5 | Old `src/lib/scraper/` adapters/jobs/SSRF/normalization, `src/actions/` scraper actions and source registry; new isolated research/job stores and Studio tools | Worldwide dated source register; bounded extraction and normalized review/export per active adapter, retry/cancel/resume and diagnostics | NOT_STARTED; 23 old configured sources observed; no new external job run |
+| 6 | New versioned catalogue-job contracts and Studio selector; Sheets schema, Apps Script/backend dispatch, editable Slides templates and PDF export; existing product/media/content editors | Selected categories/products produce editable Slides and visually verified luxury PDF; meaningful 50+ fixtures exercise filters and content states, genuine content counts reported separately | NOT_STARTED; a generic export screen does not satisfy this pipeline |
+| 7 | Exact integrated candidate, current audit register, migration/provider/privacy checks, protected login and source/data comparisons | Eight widths, motion/keyboard/zoom, meaningful unit/runtime/browser checks, repeated performance, recovery, complete parity register and concrete release candidate | NOT_STARTED; no new release authority implied |
+
+Execute Phase 2's independent source porting after the remaining relevant visual-state baseline is captured. Phase 3 production operations require their exact target/data/backup/recovery preflight and authorization. Phase 4 depends on compatible contracts, Phase 5 on research/job isolation, Phase 6 on product/media snapshots, and Phase 7 on the integrated candidate. No raw Studio screenshots, customer rows, credentials or private Drive file manifests belong in Git.
+
+## Status at handoff (historical, before this execution)
 
 All seven phases are **NOT_STARTED**. This change publishes documentation only. Existing audit/cinematic work at PR #64 remains part of the destination baseline; it is not newly repeated or certified here.
 

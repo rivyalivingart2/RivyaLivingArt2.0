@@ -1,3 +1,12 @@
+# Current execution checkpoint — exact restoration Phase 1, 21 October 2026
+
+The owner has started the seven-phase exact OLDWEBSITE restoration. Continue on `codex/exact-legacy-restoration`, based on freshly fetched main `1936cbbe25c1c7ccd75cab82057354ae94f6ebc0`; the reference main is `2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6`. Read the owner decision and master prompt, then [the execution baseline](docs/restoration/exact-legacy-2026-10-21/PHASE-1-BASELINE.md) and [updated canonical plan](docs/restoration/exact-legacy-2026-10-21/PHASE-WISE-PLAN.md).
+
+Phase 1 is in progress. Source/deployment baselines, authenticated read-only comparisons, protected-source hashes, a dry-run reconciliation planner and an isolated current-app preview are implemented. Public/Studio restoration, real database reconciliation, edited assets, new vendor adapters and catalogue automation are not completed. The prior documentation-only handoff is historical; it no longer prevents routine local implementation. Do not ask again whether the owner wants the exact old design.
+
+Preserve current logo/contact/color/product/content/media/login exceptions. Import, scraper, subscribers, legacy transfer and Sheets are in scope despite older exclusions. Keep raw screenshots, private manifests, fixture credentials and data under ignored `test-results/exact-legacy-2026-10-21/`. No production migration, CMS publication, push/merge/deploy, paid service or external message is authorized by this checkpoint. Do not replay the already repaired production request table. Continue independent local work; prepare any consequential operation concretely before requesting its missing authorization.
+
+---
 # Current owner direction — exact old-site restoration handoff, 21 October 2026
 
 The owner now requires **the SAME OLDWEBSITE design and ALL old public/Studio features in the new repository**, not an inspired redesign. Read [the current owner decision](docs/restoration/exact-legacy-2026-10-21/OWNER-DECISION.md), [master CRAFT prompt](docs/restoration/exact-legacy-2026-10-21/MASTER-CRAFT-PROMPT.md), [seven-phase plan](docs/restoration/exact-legacy-2026-10-21/PHASE-WISE-PLAN.md) and [new-chat entry](docs/restoration/exact-legacy-2026-10-21/CONTINUE-IN-NEW-CHAT.md) first.
