@@ -1,5 +1,11 @@
 # Continue exact OLDWEBSITE restoration in a new Codex chat
 
+## Latest local continuation — homepage port
+
+Continue the local descendant of `5b0a0ea` on `codex/exact-legacy-restoration`. Read [PHASE-2-HOME-CHECKPOINT.md](PHASE-2-HOME-CHECKPOINT.md) and [LEGACY-HOME-MAPPING.md](LEGACY-HOME-MAPPING.md) first. The homepage composition, ruler, rail, doors, image reveals, material layout and journal rows are implemented locally. The complete material sequence, remaining templates/workflows and authenticated Studio remain unfinished. Current login source is unchanged; measured geometry matches, with disclosed small screenshot pixel differences. Final build `GN1TzWAYdKFILJnSQXYyu`; 409 unit/isolation, 403 HTTP, 12 preflight, eight viewport widths, fourteen browser interactions and 54 captures verified.
+
+Keep everything local and preserve protected records. Two unpublished synthetic fixture rows exercise the journal; nothing was published or migrated to production. No fresh live row-digest baseline was run in this UI-only slice; old database export remains missing. Continue the next source-porting boundary in the checkpoint without repeating Phase 1 inventory, fixture preparation, phase-start questions or request-table DDL. The paragraphs below retain their earlier scope.
+
 ## Execution checkpoint added 21 October
 
 Latest continuation: preserve the local HEAD after `d04218c` on `codex/exact-legacy-restoration`. Read [PHASE-1-CONTINUATION.md](PHASE-1-CONTINUATION.md) and [PHASE-2-CHECKPOINT.md](PHASE-2-CHECKPOINT.md) first. The first public foundation port is implemented and verified locally; full restoration is unfinished. Destination live digests match in 19 runtime-visible scopes and all 21 protected source hashes match. Old live database access is still missing. Current login remained visually unchanged and local sign-in/sign-out passed. Preview: `http://127.0.0.1:4210/`; comparison: `http://127.0.0.1:4211/`. No push, production migration, CMS publication or deployment is authorized. Continue the remaining homepage composition and signature devices, then representative public templates and the Studio shell. Do not restart the inventory or request-table repair.

@@ -8,6 +8,9 @@ import {localizeHomeReference} from '@/lib/home-reference-dependencies';
 import type {Locale} from '@/lib/site-settings-model';
 import {journeyText} from '@/lib/journey-text';
 import {HomepageContents} from './homepage-contents';
+import {LegacyCureLine} from './legacy-cure-line';
+import {Meniscus} from './legacy-meniscus';
+import legacy from './legacy-home-sections.module.css';
 import {SectionBody} from './section-body';
 import {EditorialImage} from './editorial-image';
 import {ImmersiveImage} from './immersive-image';
@@ -28,13 +31,14 @@ function PageImage({document:d,immersive=false}:{document:ContentDocument;immers
 }
 function PageBand({document:d,kind}:{document?:ContentDocument;kind:'scope'|'atelier'|'principles'|'commission'}){
  if(!d)return null;
- const sections=d.sections.filter(s=>s.enabled!==false);
- const immersive=kind==='atelier'&&!!(d.headerImage||d.pageSnapshot?.image);
- return <section className={r.band} data-band={kind} data-immersive={immersive}>{immersive&&<PageImage document={d} immersive/>}<header className={r.heading}><div><p className={r.eyebrow}>{d.eyebrow}</p><h2>{d.title}</h2></div><p>{d.description}</p></header>
-  {kind==='atelier'?<div className={r.atelier}>{!immersive&&<PageImage document={d}/>}<div>{sections.slice(0,1).map(section=><div key={section.id}><h3>{section.heading}</h3><SectionBody section={section} unavailable={d.pageSnapshot?.unavailableActionHrefs} mediaPaths={d.pageSnapshot?.mediaPaths}/></div>)}<Link className={s.textLink} href={d.route}>{d.title} <ArrowUpRight aria-hidden size={18}/></Link></div></div>:
-   kind==='commission'?<div className={r.commission}><PageImage document={d}/><Link className={s.button} href={d.route}><JourneyText text="Begin your piece"/> <ArrowUpRight aria-hidden size={18}/></Link></div>:
-    <div className={r.tileGrid}>{sections.map(section=><article key={section.id}>{section.image&&<EditorialImage usage={section.image} available={d.pageSnapshot?.mediaPaths.includes(section.image.path)}/>}<h3>{section.heading}</h3><SectionBody section={section} unavailable={d.pageSnapshot?.unavailableActionHrefs} mediaPaths={d.pageSnapshot?.mediaPaths}/></article>)}</div>}
-  {kind==='scope'&&<Link className={s.textLink} href={d.route}>{d.title} <ArrowUpRight aria-hidden size={18}/></Link>}
+ const sections=d.sections.filter(section=>section.enabled!==false);
+ const heading=<header className={r.heading}><div><p className={r.eyebrow}>{d.eyebrow}</p><h2>{d.title}</h2><p>{d.description}</p></div></header>;
+ return <section className={r.band} data-band={kind}>
+  {kind==='atelier'?<div className={r.atelier}><Meniscus><PageImage document={d}/></Meniscus><div>{heading}{sections.slice(0,1).map(section=><div key={section.id}><h3>{section.heading}</h3><SectionBody section={section} unavailable={d.pageSnapshot?.unavailableActionHrefs} mediaPaths={d.pageSnapshot?.mediaPaths}/></div>)}<Link className={s.textLink} href={d.route}>{d.title} <ArrowUpRight aria-hidden size={18}/></Link></div></div>:<>{heading}
+   {kind==='commission'?<div className={r.commission}><PageImage document={d}/><Link className={s.button} href={d.route}><JourneyText text="Begin your piece"/> <ArrowUpRight aria-hidden size={18}/></Link></div>:
+    <div className={r.tileGrid}>{sections.map(section=><article key={section.id}>{section.image&&<Meniscus><EditorialImage usage={section.image} available={d.pageSnapshot?.mediaPaths.includes(section.image.path)}/></Meniscus>}<h3>{section.heading}</h3><SectionBody section={{...section,image:undefined}} unavailable={d.pageSnapshot?.unavailableActionHrefs} mediaPaths={d.pageSnapshot?.mediaPaths}/></article>)}</div>}
+   {kind==='scope'&&<Link className={s.textLink} href={d.route}>{d.title} <ArrowUpRight aria-hidden size={18}/></Link>}
+  </>}
  </section>;
 }
 function OfferingBand({offering,mediaPaths}:{offering?:ReferenceOffering;mediaPaths:string[]}){
@@ -45,7 +49,7 @@ function CollectionDoors({document:d}:{document:ContentDocument}){
  const h=d.homepage!,snapshot=d.homeSnapshot!,block=h.sections.find(b=>b.type==='categories'&&b.enabled&&!b.contentNeeded),copy=d.sections.find(s=>s.id===block?.id);
  if(!block||!copy)return null;
  const categories=block.categories?.length?block.categories.flatMap(name=>snapshot.categories.filter(c=>c.name===name)):snapshot.categories;
- const card=(category:typeof categories[number])=>{const image=snapshot.products.find(p=>p.category===category.name);return <Link key={category.name} href={'/search?category='+encodeURIComponent(category.name)} className={r.door} data-collection-door>{image?<Image src={image.image} alt={image.imageAlt||image.name} fill sizes="(max-width: 780px) 90vw, 34vw" style={{objectFit:'cover',objectPosition:image.imagePosition}}/>:<span className={r.monogram} aria-hidden>{category.name.slice(0,1)}</span>}<span className={r.doorCopy}><span>{category.count} <JourneyText text={category.count===1?'piece':'pieces'}/></span><strong>{category.name}</strong><ArrowUpRight aria-hidden size={20}/></span></Link>;};
+ const card=(category:typeof categories[number])=>{const image=snapshot.products.find(p=>p.category===category.name);return <Link key={category.name} href={'/search?category='+encodeURIComponent(category.name)} className={r.door} data-collection-door>{image?<Meniscus className={legacy.fillImage}><Image src={image.image} alt={image.imageAlt||image.name} fill sizes="(max-width: 1023px) 90vw, 34vw" style={{objectFit:'cover',objectPosition:image.imagePosition}}/></Meniscus>:<span className={r.monogram} aria-hidden>{category.name.slice(0,1)}</span>}<span className={r.doorCopy}><span>{category.count} <JourneyText text={category.count===1?'piece':'pieces'}/></span><strong>{category.name}</strong><ArrowUpRight aria-hidden size={20}/></span></Link>;};
  return <section id={block.id} className={r.band} data-band="collections"><header className={r.heading}><div><p className={r.eyebrow}>{block.eyebrow}</p><h2>{copy.heading}</h2></div><SectionBody section={copy} mediaPaths={snapshot.mediaPaths} unavailable={snapshot.unavailableActionHrefs}/></header><div className={r.doors}>{categories.slice(0,6).map(card)}</div>{categories.length>6&&<details className={r.more}><summary><JourneyText text="Explore the collection"/> ({categories.length})</summary><div className={r.categoryList}>{categories.slice(6).map(category=><Link key={category.name} href={'/search?category='+encodeURIComponent(category.name)}>{category.name} <span>{category.count} <JourneyText text={category.count===1?'piece':'pieces'}/></span></Link>)}</div></details>}</section>;
 }
 /** Eighteen distinct source slots; unavailable records stay absent on public pages. */
@@ -57,7 +61,7 @@ export function ReferenceHomepage({document:d,reference:raw,composition,locale,h
  const mediaPaths=reference.mediaPaths||[];
  const nodes:Record<HomeReferenceKey,ReactNode>={
   pour:hero,
-  manifesto:<section className={r.manifesto} data-density={manifesto}><h2>{home.strip[0]}<br/>{home.strip[1]}</h2><p>{home.strip[2]}</p></section>,
+  manifesto:<section className={r.manifesto} data-density={manifesto}><h2>{home.strip[0]}<br/>{home.strip[1]}</h2>{home.strip.slice(2).map((text,i)=><p key={i}>{text}</p>)}</section>,
   pieces:renderExisting('selected'),
   'large-format':<PageBand document={page('/architects')} kind="scope"/>,
   material:renderExisting('story'),
@@ -76,5 +80,6 @@ export function ReferenceHomepage({document:d,reference:raw,composition,locale,h
   closing:renderExisting('invitation'),
  };
  const visible=states.filter(s=>s.visible);
- return <div className={r.reference} data-home-composition="reference">{visible.map(slot=><div id={'home-'+slot.key} data-home-slot={slot.key} key={slot.key} className={r.slot}>{nodes[slot.key]}{slot.key==='pour'&&<HomepageContents label={journeyText(locale,'On this page')} items={visible.map(s=>({id:'home-'+s.key,label:s.heading}))}/>}</div>)}</div>;
+ const marks=visible.map(slot=>({id:'home-'+slot.key,label:slot.heading}));
+ return <div className={r.reference} data-home-composition="reference"><noscript><style>{'[data-legacy-cure-line]{display:none!important}[data-home-contents]{display:block!important}'}</style></noscript><LegacyCureLine label={journeyText(locale,'On this page')} marks={marks}/>{visible.map(slot=><div id={'home-'+slot.key} data-home-slot={slot.key} key={slot.key} className={r.slot}>{nodes[slot.key]}{slot.key==='pour'&&<div data-home-contents className={r.mobileContents}><HomepageContents label={journeyText(locale,'On this page')} items={marks}/></div>}</div>)}</div>;
 }

@@ -1,4 +1,4 @@
-# Adapted legacy design contract — first restoration slice
+# Adapted legacy design contract — foundation and homepage restoration
 
 Source: OLDWEBSITE `2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6`, `docs/redesign-contract.md`.
 Original SHA-256: `8200981b2faadaa47b26196e37b71e424158cd6f76625de41184db7f04b08a4b`.
@@ -32,7 +32,7 @@ This preserves useful implementation knowledge from the old contract. It is not 
 
 Current logo artwork/backplate, contacts, color tokens, enabled locale policy, published navigation labels/routes, content, media and product attribution remain authoritative. The extra current header destinations and different copy lengths are visible differences. The footer currently has the current three link groups; the old journal group, newsletter workflow and decorative texture remain pending. The collection menu uses the current three published collections with current product media; old print/supply routes and the four-column content arrangement need the corresponding restored capability.
 
-The full homepage section order, cure ruler, meniscus reveals, scrubbed material story, remaining cards/forms/templates, all Studio shell/table/editor layouts and nine-locale parity remain work. Existing current effects are not certified as matching old motion. The local source-fixture homepage is not a representation of the production homepage's latest published content or video settings.
+The second Phase 2 slice now implements the bound homepage section order, measured cure ruler, meniscus reveals, featured rail, collection doors, journal list and timeline. Read [the explicit source/content mapping](LEGACY-HOME-MAPPING.md) for scope, preserved differences and fallback behavior. The full material sequence, remaining card/form/page templates, Studio shell/table/editor layouts and nine-locale parity remain work. The local source-fixture homepage is not a representation of the production homepage's latest published content or video settings.
 
 ## Rules retained or corrected during migration
 

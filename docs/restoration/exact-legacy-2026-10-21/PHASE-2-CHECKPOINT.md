@@ -1,5 +1,7 @@
 # Local restoration checkpoint — Phase 2 started, 21 October 2026
 
+This is the first foundation checkpoint, retained as historical evidence. Continue from [PHASE-2-HOME-CHECKPOINT.md](PHASE-2-HOME-CHECKPOINT.md) for the later homepage port, current verification and remaining work.
+
 Continued from `d04218c` on `codex/exact-legacy-restoration`. **Local only.** Final application build: `dIA7_A33jqOuNsY09oTOw`. Nothing was pushed, merged, deployed or published.
 
 ## What is implemented

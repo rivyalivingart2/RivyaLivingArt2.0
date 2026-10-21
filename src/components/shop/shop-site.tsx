@@ -70,7 +70,7 @@ export async function ShopSite({route}:{route:string}){
  if(route==='/'){
   const home=documents.find(d=>d.id==='page:home'&&d.homepage&&d.homeSnapshot);
   const copy=await publishedCopy(locale);
-  const reference=presentation?.layout.composition?compileHomeReference(await publishedSource(),{},presentation.layout.editorial):undefined;
+  const reference=home?compileHomeReference(await publishedSource(),{},presentation?.layout.editorial):undefined;
   content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={copy.values} locale={locale} presentation={presentation} reference={reference} film={presentation?.layout.film?materialFilm:undefined}/></>:<Home products={products} articles={(await publishedContent(locale,undefined,'/')).filter(a=>a.kind==='article')}/>;
  }
  else if(isDiscoveryRoute(route)&&documents.some(d=>d.route===route)){

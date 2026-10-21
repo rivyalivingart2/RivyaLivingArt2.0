@@ -1,4 +1,14 @@
-# Current execution checkpoint — first Phase 2 local slice, 21 October 2026
+# Current execution checkpoint — Phase 2 homepage continuation, 21 October 2026
+
+Continue the local descendant of `5b0a0ea` on `codex/exact-legacy-restoration`. Read [the latest homepage checkpoint](docs/restoration/exact-legacy-2026-10-21/PHASE-2-HOME-CHECKPOINT.md), [source/content mapping](docs/restoration/exact-legacy-2026-10-21/LEGACY-HOME-MAPPING.md), and the owner decision/master prompt.
+
+The second Phase 2 slice ports the homepage composition, progress ruler, product rail, collection doors, meniscus reveals, material layout, process rhythm and journal rows. Build `GN1TzWAYdKFILJnSQXYyu`: 409 unit/isolation, 403 HTTP and 12 preflight checks passed; eight widths, fourteen interactions and 54 new captures verified. All 21 protected source hashes remain unchanged. Login geometry matches; small pixel differences are disclosed. Phase 2 remains incomplete; the material sequence, remaining public templates, richer workflows and Studio shell are next. Phase 1's source database export gap remains open. No fresh live row-hash comparison occurred in this UI-only slice.
+
+**Keep all changes local.** No production migration, CMS publication, push/PR/merge/deploy, external message or paid service is authorized. Preserve current brand/contact/content/product/media/login exceptions. Raw evidence and credentials stay ignored. Do not repeat the request-table repair, reset the branch, or rerun fixture preparation on the populated cluster. The private journal test added only two unpublished synthetic local rows. Continue routine authorized work without another phase-start question.
+
+---
+
+# Historical execution checkpoint — first Phase 2 local slice, 21 October 2026
 
 Continue the local descendant of `d04218c` on `codex/exact-legacy-restoration`; preserve the branch and ignored evidence. Read the owner decision and master prompt, then [Phase 1 continuation](docs/restoration/exact-legacy-2026-10-21/PHASE-1-CONTINUATION.md), [Phase 2 checkpoint](docs/restoration/exact-legacy-2026-10-21/PHASE-2-CHECKPOINT.md), and [canonical seven-phase plan](docs/restoration/exact-legacy-2026-10-21/PHASE-WISE-PLAN.md).
 
