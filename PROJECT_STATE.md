@@ -1,3 +1,15 @@
+# Current owner direction — exact old-site restoration handoff, 21 October 2026
+
+The owner now requires **the SAME OLDWEBSITE design and ALL old public/Studio features in the new repository**, not an inspired redesign. Read [the current owner decision](docs/restoration/exact-legacy-2026-10-21/OWNER-DECISION.md), [master CRAFT prompt](docs/restoration/exact-legacy-2026-10-21/MASTER-CRAFT-PROMPT.md), [seven-phase plan](docs/restoration/exact-legacy-2026-10-21/PHASE-WISE-PLAN.md) and [new-chat entry](docs/restoration/exact-legacy-2026-10-21/CONTINUE-IN-NEW-CHAT.md) first.
+
+This supersedes conflicting earlier owner-maintained design/feature exclusions, including no-scraper/no-legacy-transfer/no-Sheets and the previous cleanup-only scope. Every old feature is in the parity inventory and restoration target by default. Retain the explicitly protected current logo, contacts, main color, products/valid populated data and Studio login. Record field-level conflicts and actual necessary secure adaptations; do not silently omit legacy functionality or expose secrets/weaken authentication to match it.
+
+**This turn publishes the documentation handoff only**, through a detailed PR into main and normal Git-integrated checks. The seven implementation phases are not started by this documentation. The new chat should inspect current state and execute the requested local/isolated restoration, showing phase previews. The handoff release is not blanket authority for later production migrations, destructive replacements, CMS publication, paid services, external transactions/messages or future deployments. Do not replay the prior request-table repair.
+
+Baseline refreshed 21 October: clean main/origin at `3f1f9352db9a137c3f4ba1cea14804fc6474d5f6`, with the matching READY production deployment. Reverify at continuation. Historical release/test statements below retain their dates and original scope and do not override this new restoration direction.
+
+---
+
 # Current checkpoint — complete audit bundle release authorized, 19 October 2026
 
 The owner explicitly requested **"push all things into main git branch"**. This supersedes the earlier local-only release holds for the accumulated five-commit bundle through `bd6467538863e72350f3fb6bd3e0dcd8bdb827fb`, based on released main `66e82ef04f76b8460654bab4329ccbadfb47f28e`. Release through a detailed PR, verify its exact head and hosting checks, merge normally, and verify the production deployment and read-only public/Studio behavior.
