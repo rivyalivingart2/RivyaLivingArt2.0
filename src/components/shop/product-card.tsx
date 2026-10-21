@@ -10,6 +10,7 @@ import {imageSizes} from './image-sizes';
 import s from './shop.module.css';
 import {Meniscus} from './legacy-meniscus';
 import legacy from './legacy-home-sections.module.css';
+import {LegacyProductActions} from './legacy-product-actions';
 
 export function ProductCard({product: p,reveal=false}: {product: CardProduct;reveal?:boolean}) {
   const picture=<Image src={p.image} alt={p.imageAlt || p.name + ' — ' + p.subtitle} style={{objectPosition:p.imagePosition}} fill sizes={imageSizes.card}/>;
@@ -39,6 +40,6 @@ export function ProductCard({product: p,reveal=false}: {product: CardProduct;rev
       <small className={s.productIndex}>
         {p.id} / {p.tier === 'personal' ? formatPrice(p.price) : <JourneyText text="Price on request"/>}
       </small>
-    </Link><SavePieceButton id={p.id} name={p.name}/></article>
+    </Link><LegacyProductActions product={p}/><SavePieceButton id={p.id} name={p.name}/></article>
   );
 }

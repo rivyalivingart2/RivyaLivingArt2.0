@@ -1,0 +1,13 @@
+{
+  "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "routesAccounted": 98,
+  "entitiesAccounted": 45,
+  "actionsAccounted": 156,
+  "fieldInventory": 575,
+  "allHaveDestinationOrExplainedGap": true,
+  "recordMatching": "Source namespace + immutable source ID -> explicit destination ID; no title-only joins",
+  "sourceRows": "UNAVAILABLE_READ_ONLY_CONNECTION_REQUIRED",
+  "sourceExportAttempt": "Correct Vercel project returned DATABASE_URL metadata but no value; existing secret access cannot be assumed",
+  "databaseWrites": 0,
+  "status": "DISCOVERY_ACCOUNTED_FOR_WITH_EXPLICIT_ACCESS_AND_RUNTIME_GAPS"
+}

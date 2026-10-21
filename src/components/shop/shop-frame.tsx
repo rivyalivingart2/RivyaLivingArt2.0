@@ -10,6 +10,8 @@ import {sharedCopyValues,type SharedCopy} from '@/lib/shared-copy-model';
 import s from './shop.module.css';
 import f from './public-frame.module.css';
 import pages from './public-pages.module.css';
+import legacy from './legacy-public-pages.module.css';
+import {PublicContact} from './legacy-product-actions';
 
 function FooterNavLink({item,locale}:{item:NavItem;locale:Locale}){
  const label=navigationLabel(item,locale),props=item.newTab?{target:'_blank',rel:'noreferrer'}:{};
@@ -19,9 +21,9 @@ export function ShopFrame({children,business=defaultBusiness,navigation=defaultN
  const label=(key:Parameters<typeof uiText>[1])=>copy[key]||uiText(locale,key);
  const explore=navigation.footerExplore.filter(v=>v.visible),atelier=navigation.footerAtelier.filter(v=>v.visible),legal=navigation.footerLegal.filter(v=>v.visible);
  const whatsapp=business.whatsapp||business.phone.replace(/\D/g,'');
- return <JourneyLanguage locale={locale}><CinematicCanvas><div className={s.site+' '+f.frame} data-legacy-public-frame data-site-copy-revision={copyVersion}><LanguageNotice/>
+ return <JourneyLanguage locale={locale}><PublicContact whatsapp={whatsapp}><CinematicCanvas><div className={s.site+' '+f.frame} data-legacy-public-frame data-site-copy-revision={copyVersion}><LanguageNotice/>
   <ShopHeader navigation={navigation} locale={locale} enabledLocales={enabledLocales} copy={copy} whatsapp={whatsapp} images={collectionImages}/>
-  <main className={publicDesign?pages.surface:undefined} id="main-content" tabIndex={-1}>{children}</main>
+  <main className={publicDesign?pages.surface+' '+legacy.surface:undefined} id="main-content" tabIndex={-1}>{children}</main>
   <footer data-atmosphere="footer" className={f.footer}>
    <div className={f.footerCta}><h2 data-copy-field="footer-statement">{copy['footer-statement']}</h2><Link href="/commission" className={f.outlineButton}>{label('beginPiece')} ↗</Link></div>
    <div className={f.footerGrid}>
@@ -32,5 +34,5 @@ export function ShopFrame({children,business=defaultBusiness,navigation=defaultN
    </div>
    <div className={f.footerBottom}><span>© {new Date().getFullYear()} RivyaLivingArt</span><div className={f.footerLegal}>{legal.map(item=><FooterNavLink key={item.id} item={item} locale={locale}/>)}</div></div>
   </footer>
- </div></CinematicCanvas></JourneyLanguage>;
+ </div></CinematicCanvas></PublicContact></JourneyLanguage>;
 }

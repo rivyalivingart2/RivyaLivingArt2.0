@@ -1,5 +1,11 @@
 # Continue exact OLDWEBSITE restoration in a new Codex chat
 
+## Latest continuation — Phase 1 discovery and Phase 2 foundations
+
+Preserve the local descendant of `13f1ff2` on `codex/exact-legacy-restoration`. Read [PHASE-1-2-CHECKPOINT.md](PHASE-1-2-CHECKPOINT.md), [phase12-verification.json](phase12-verification.json) and [VISUAL-EXCEPTIONS.csv](VISUAL-EXCEPTIONS.csv). The representative Phase 2 foundations, sequence, public templates, Studio table/editor and eight useful Markdown adaptations are implemented locally. Phase 1 discovery is accounted for, but old live SQL export remains unavailable and full live-data acceptance is open. A scraper register preview is not operational scraper parity.
+
+Keep all work local. The working app is on port 4210 and comparison viewer on 4211; latest comparisons start `phase12-`. Continue local Phase 3 mapping/media preparation while carrying source access and real-content constraints. Do not reset this branch, rerun fixture preparation, repeat the repaired request-table DDL, fabricate source records or infer production/publication/release authority. Earlier sections below are historical.
+
 ## Latest local continuation — homepage port
 
 Continue the local descendant of `5b0a0ea` on `codex/exact-legacy-restoration`. Read [PHASE-2-HOME-CHECKPOINT.md](PHASE-2-HOME-CHECKPOINT.md) and [LEGACY-HOME-MAPPING.md](LEGACY-HOME-MAPPING.md) first. The homepage composition, ruler, rail, doors, image reveals, material layout and journal rows are implemented locally. The complete material sequence, remaining templates/workflows and authenticated Studio remain unfinished. Current login source is unchanged; measured geometry matches, with disclosed small screenshot pixel differences. Final build `GN1TzWAYdKFILJnSQXYyu`; 409 unit/isolation, 403 HTTP, 12 preflight, eight viewport widths, fourteen browser interactions and 54 captures verified.

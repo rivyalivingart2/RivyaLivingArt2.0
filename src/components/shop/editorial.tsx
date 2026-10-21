@@ -43,6 +43,7 @@ import {LandingDocumentView} from './landing-document';
 import {editorialDisclosure} from '@/lib/editorial-record-model';
 import m from './migration-public.module.css';
 import {LandingGallery} from './landing-gallery';
+import {LegacyProjectDocument} from './legacy-project-document';
 
 function Intro({eyebrow,title,children,atmosphere='story',language='en'}:{eyebrow:string;title:string;children?:React.ReactNode;atmosphere?:'story'|'reading';language?:Locale}){return <header lang={language} data-public-part="intro" data-atmosphere={atmosphere} className={s.pageIntro+' '+e.intro}><span className={s.eyebrow}>{eyebrow}</span><h1 data-reveal>{title}</h1>{children&&<p>{children}</p>}</header>;}
 const minutes=(a:ContentDocument)=>Math.max(1,Math.ceil([a.description,...a.sections.flatMap(b=>[b.heading,...b.paragraphs,...(b.checklist||[])])].join(' ').trim().split(/\s+/).length/200));
@@ -80,6 +81,7 @@ export async function EditorialDocument({content:source,documents,locale='en',sn
  const tr=(text:string)=>journeyText(locale,text);
  const contentLanguage=source.contentLanguage||'en';
  const captured=savedSnapshot||source.pageSnapshot,snapshot=captured?localizeSnapshot(captured,locale):undefined;
+ if(source.editorial?.kind==='portfolio')return <LegacyProjectDocument document={{...source,pageSnapshot:snapshot||source.pageSnapshot}}/>;
  if(source.landing)return <div lang={contentLanguage}><LandingDocumentView document={{...source,pageSnapshot:snapshot||source.pageSnapshot}}/></div>;
  const route=source.route,articles=documents.filter(d=>d.kind==='article');
  const business=route==='/contact'||!!policies[route]?(await publishedBusiness()).details:null;

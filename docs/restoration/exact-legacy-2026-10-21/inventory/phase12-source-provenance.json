@@ -1,0 +1,21 @@
+{
+  "referenceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "registry": {
+    "source": "src/lib/scraper/seed-data.ts",
+    "sourceSha256": "689758c296221812723b581604f20a5a7774d3f7f4cca9bc2325772897c2d14c",
+    "records": 23,
+    "status": "HISTORICAL_CONFIGURATION_NOT_LIVE_EXTRACTION"
+  },
+  "material": {
+    "frames": 121,
+    "bytes": 2418710,
+    "exactHashesMatch": true
+  },
+  "markdown": {
+    "inventoried": 286,
+    "adapted": 8,
+    "referenceOnly": 278
+  },
+  "databaseWrites": 0,
+  "externalRequests": 0
+}

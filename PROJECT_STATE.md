@@ -1,4 +1,14 @@
-# Current execution checkpoint — Phase 2 homepage continuation, 21 October 2026
+# Current execution checkpoint — Phase 1 discovery / Phase 2 foundations, 21 October 2026
+
+Continue the local descendant of `13f1ff2` on `codex/exact-legacy-restoration`. Read [the latest checkpoint](docs/restoration/exact-legacy-2026-10-21/PHASE-1-2-CHECKPOINT.md), [verification receipt](docs/restoration/exact-legacy-2026-10-21/phase12-verification.json), and [visual exceptions](docs/restoration/exact-legacy-2026-10-21/VISUAL-EXCEPTIONS.csv) first. The 98-route / 45-entity / 156-action discovery is accounted for. Phase 1 complete live-data acceptance remains blocked by the unavailable old SQL export. Do not fabricate it or equate UI counts with a database snapshot.
+
+The representative Phase 2 foundations are implemented locally: 121-frame material sequence; public card/quick-view/product/article/project templates; authenticated Studio shell/table/editor with unsaved preview; historical scraper-register shell; and eight adapted Markdown documents. This is not full Phase 4 workflow parity or an operational scraper. Protected current data/media/login remain authoritative. The receipt verifies 21 protected hashes, 409 unit/isolation, 403 HTTP and 12 preflight checks, 64 responsive checks, 29 browser checks and 25 new captures. All screenshots and credentials remain ignored.
+
+**Local only.** No production migration, CMS publication, push/PR/merge/deploy, external messages or paid services. Preserve the populated isolated cluster and earlier work; never rerun fixture preparation or request-table DDL. Proceed to local Phase 3 mapping/media preparation under the existing owner scope, carrying the source-access blocker. The older checkpoints below retain their historical scope.
+
+---
+
+# Historical execution checkpoint — Phase 2 homepage continuation, 21 October 2026
 
 Continue the local descendant of `5b0a0ea` on `codex/exact-legacy-restoration`. Read [the latest homepage checkpoint](docs/restoration/exact-legacy-2026-10-21/PHASE-2-HOME-CHECKPOINT.md), [source/content mapping](docs/restoration/exact-legacy-2026-10-21/LEGACY-HOME-MAPPING.md), and the owner decision/master prompt.
 

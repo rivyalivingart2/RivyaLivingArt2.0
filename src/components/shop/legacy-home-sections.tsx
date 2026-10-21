@@ -4,6 +4,7 @@ import type {HomeAction,HomeProduct} from '@/lib/homepage-model';
 import {ProductCard} from './product-card';
 import {Meniscus} from './legacy-meniscus';
 import s from './legacy-home-sections.module.css';
+import {LegacyMaterialSequence} from './legacy-material-sequence';
 
 /** Server-rendered content stays visible before JavaScript; the optional motion
  * runtime arms only below-fold images and the eligible desktop rail. */
@@ -21,12 +22,12 @@ export function LegacyFeaturedRail({products,heading,action,label,unavailable=[]
 }
 
 /** The old sticky image / reading-column geometry, bound to existing story copy.
- * The legacy 121-frame sequence requires a separately mapped media slot. */
+ * The restored legacy material study precedes the protected current section. */
 export function LegacyMaterialStory({id,heading,body,image,actions}:{id:string;heading:ReactNode;body:ReactNode;image?:ReactNode;actions:ReactNode}){
- return <section id={id} aria-labelledby={id+'-heading'} data-home-chapter="story" data-legacy-material className={s.material}>
+ return <><LegacyMaterialSequence/><section id={id} aria-labelledby={id+'-heading'} data-home-chapter="story" data-legacy-material className={s.material}>
   <div className={s.shell}>{heading}<div className={s.materialGrid} data-has-image={!!image}>
    {image&&<Meniscus className={s.materialImage}>{image}</Meniscus>}
    <div className={s.materialCopy}>{body}<div className={s.actions}>{actions}</div></div>
   </div></div>
- </section>;
+ </section></>;
 }
