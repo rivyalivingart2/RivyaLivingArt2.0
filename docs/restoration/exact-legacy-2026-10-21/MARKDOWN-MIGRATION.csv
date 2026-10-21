@@ -1,0 +1,2 @@
+source_repository,source_commit,source_path,source_sha256,destination,status,notes
+OLDWEBSITE,2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6,docs/redesign-contract.md,8200981b2faadaa47b26196e37b71e424158cd6f76625de41184db7f04b08a4b,docs/restoration/exact-legacy-2026-10-21/LEGACY-DESIGN-CONTRACT.md,ADAPTED_PARTIAL,Useful foundation knowledge migrated; historical scope restrictions and old contacts superseded; remaining 285 inventoried Markdown paths await individual review

@@ -2,6 +2,10 @@
 
 ## Execution checkpoint added 21 October
 
+Latest continuation: preserve the local HEAD after `d04218c` on `codex/exact-legacy-restoration`. Read [PHASE-1-CONTINUATION.md](PHASE-1-CONTINUATION.md) and [PHASE-2-CHECKPOINT.md](PHASE-2-CHECKPOINT.md) first. The first public foundation port is implemented and verified locally; full restoration is unfinished. Destination live digests match in 19 runtime-visible scopes and all 21 protected source hashes match. Old live database access is still missing. Current login remained visually unchanged and local sign-in/sign-out passed. Preview: `http://127.0.0.1:4210/`; comparison: `http://127.0.0.1:4211/`. No push, production migration, CMS publication or deployment is authorized. Continue the remaining homepage composition and signature devices, then representative public templates and the Studio shell. Do not restart the inventory or request-table repair.
+
+The following execution paragraph describes the earlier `d04218c` baseline and is superseded by the continuation above.
+
 Phase 1 has started locally on `codex/exact-legacy-restoration` from main `1936cbb`. Read [PHASE-1-BASELINE.md](PHASE-1-BASELINE.md) and the current-execution section of [PHASE-WISE-PLAN.md](PHASE-WISE-PLAN.md) before using the original prompt below. Preserve this branch and its local evidence; do not reset it to main and lose the checkpoint. Both live Studios were authenticated for read-only comparison; recheck session state instead of assuming it persists. No credentials belong in chat.
 
 The source inventory, dry-run planner and isolated current-app preview exist. They do not mean the legacy UI, workflows or real data migration is implemented. Complete the listed remaining baseline states and continue scoped source porting without another phase-start question. Real production data/migrations/publication and release remain separate gates. The old reference's normal build runs migration/bootstrap, so it must not be pointed at a real database for convenience. Private evidence is ignored under `test-results/exact-legacy-2026-10-21/`.

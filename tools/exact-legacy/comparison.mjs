@@ -1,22 +1,48 @@
-/** Private local comparison. Serve only the capture allowlist, never runtime files. */
+/** Private loopback comparison. Only explicit screenshot paths are served. */
 import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {createServer} from 'node:http';
 import assert from 'node:assert/strict';
 const root=resolve('test-results/exact-legacy-2026-10-21');
-const captures=JSON.parse(readFileSync(resolve(root,'captures.json'),'utf8'));
+const readCaptures=()=>{
+ const baseline=JSON.parse(readFileSync(resolve(root,'captures.json'),'utf8'));
+ const extension=resolve(root,'phase2-captures.json');
+ const candidate=existsSync(extension)?JSON.parse(readFileSync(extension,'utf8')):[];
+ const currentHome=baseline.filter(c=>c.family==='home'&&c.label==='current').map(c=>({...c,family:'restoration-home'}));
+ return [...baseline,...currentHome,...candidate];
+};
+const captures=readCaptures();
 for(const c of captures){assert.match(c.path,/^screenshots\/[a-z0-9-]+\.jpg$/);assert.equal(c.width,c.requestedWidth);assert.ok(existsSync(resolve(root,c.path)));}
 const data=JSON.stringify(captures).replaceAll('<','\\u003c');
-const html=`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rivya — exact restoration baseline</title>
-<style>*{box-sizing:border-box}body{margin:0;background:#0a1218;color:#eee9df;font:16px/1.5 system-ui,sans-serif}header{padding:28px 32px 22px;border-bottom:1px solid #ffffff30}h1{font-size:28px;margin:4px 0}p{max-width:1000px;margin:8px 0;color:#c6cdd2}.status{font:12px monospace;text-transform:uppercase;color:#9ab9ca;letter-spacing:.1em}a{color:#b7d9e9}nav{display:flex;gap:20px;align-items:end;flex-wrap:wrap;margin-top:20px}label{display:grid;gap:4px;font-size:13px}select{font:inherit;color:inherit;background:#173240;border:1px solid #54707f;padding:9px 14px;min-width:150px}main{padding:24px 32px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}figure{margin:0;min-width:0}h2{font-size:17px;margin:0 0 4px}figcaption{min-height:76px;font-size:13px;color:#bdc8ce}img[hidden]{display:none}img{display:block;width:100%;height:auto;border:1px solid #ffffff30;background:#fff}#note{margin:0 0 22px;font-size:14px}footer{padding:20px 32px;border-top:1px solid #ffffff30;font-size:13px;color:#bdc8ce}@media(max-width:700px){header,main,footer{padding:20px}.pair{grid-template-columns:1fr}h1{font-size:23px}}</style>
-<header><div class="status">Phase 1 • Captured 21 October 2026 • Local evidence</div><h1>Exact restoration: old reference / current website</h1><p>These are matched baseline screenshots of the two live sites, with the protected current login captured from the unchanged isolated build. They show the differences to restore. They are not screenshots of a completed restoration.</p><nav><label>Page family<select id="family"></select></label><label>Viewport width<select id="width"></select></label><a href="http://127.0.0.1:4210/" target="_blank" rel="noreferrer">Open isolated current-app preview ↗</a></nav></header>
-<main><p id="note"></p><section class="pair"><figure><h2>OLDWEBSITE — exact reference</h2><figcaption id="old-caption"></figcaption><a id="old-link"><img id="old-image" alt="Old website baseline"></a></figure><figure><h2>Current website — before restoration</h2><figcaption id="current-caption"></figcaption><a id="current-link"><img id="current-image" alt="Current website baseline"></a></figure></section></main>
-<footer>Reduced-motion screenshots, DPR 1, desktop browser with resized viewport. These do not certify touch, physical phones, full-page layout, animation or authenticated workflows. Preserve the current logo, contacts, main color, products and Studio login. Current-app preview uses source fixtures in a new local database; it does not display live database content.</footer>
-<script>const captures=${data};const family=document.querySelector('#family'),width=document.querySelector('#width');for(const f of [...new Set(captures.map(c=>c.family))])family.add(new Option(f,f));function widths(){const previous=width.value;width.replaceChildren();for(const w of [...new Set(captures.filter(c=>c.family===family.value).map(c=>c.width))].sort((a,b)=>b-a))width.add(new Option(w+' px',w));width.value=[...width.options].some(o=>o.value===previous)?previous:[...width.options].some(o=>o.value==='1440')?'1440':width.options[0].value;render()}function render(){for(const label of ['old','current']){const c=captures.find(c=>c.family===family.value&&c.width===Number(width.value)&&c.label===label);const caption=document.querySelector('#'+label+'-caption'),img=document.querySelector('#'+label+'-image'),link=document.querySelector('#'+label+'-link');if(!c){caption.textContent='Not captured';img.hidden=true;link.removeAttribute('href');continue}img.hidden=false;img.src=c.path;img.alt=label+' '+c.family+' at '+c.width+' pixels';link.href=c.path;link.target='_blank';caption.textContent=c.route+' • '+c.width+' × '+c.height+' • '+c.heading+(c.scope==='isolated-current-login'?' • Isolated current build':'')+(c.scrollWidth>c.width?' • Horizontal overflow observed':'');}document.querySelector('#note').textContent=family.value==='login'?'Protected exception: retain the CURRENT Studio login appearance and behavior.':'Match composition and behavior while keeping the owner’s explicit protected exceptions.';}family.addEventListener('change',widths);width.addEventListener('change',render);widths();</script></html>`;
+const html=`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rivya — local restoration comparison</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#0a1218;color:#eee9df;font:16px/1.5 system-ui,sans-serif}header{padding:28px 32px 22px;border-bottom:1px solid #ffffff30}h1{font-size:28px;margin:4px 0}p{max-width:1050px;margin:8px 0;color:#c6cdd2}.status{font:12px monospace;text-transform:uppercase;color:#9ab9ca;letter-spacing:.1em}a{color:#b7d9e9}nav{display:flex;gap:20px;align-items:end;flex-wrap:wrap;margin-top:20px}label{display:grid;gap:4px;font-size:13px}select{font:inherit;color:inherit;background:#173240;border:1px solid #54707f;padding:9px 14px;min-width:150px}main{padding:24px 32px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}figure{margin:0;min-width:0}h2{font-size:17px;margin:0 0 4px}figcaption{min-height:76px;font-size:13px;color:#bdc8ce}img[hidden]{display:none}img{display:block;width:100%;height:auto;border:1px solid #ffffff30;background:#fff}#note{margin:0 0 22px;font-size:14px}footer{padding:20px 32px;border-top:1px solid #ffffff30;font-size:13px;color:#bdc8ce}@media(max-width:700px){header,main,footer{padding:20px}.pair{grid-template-columns:1fr}h1{font-size:23px}}</style>
+<header><div class="status">Phase 1 baseline + Phase 2 first slice • Local only</div><h1>Exact restoration: reference and working candidate</h1><p>The candidate adapts the legacy public header, drawer, mobile navigation, hero geometry and footer foundation. Other homepage sections and Studio restoration are pending. Current published content, logo, contacts, colors and Studio login remain protected. Local screenshots use source fixtures, not a live-data clone.</p>
+<nav><label>Page / state<select id="family"></select></label><label>Width<select id="width"></select></label><label>Compare reference with<select id="version"><option value="candidate">Local restoration candidate</option><option value="current">Current site baseline</option></select></label><a href="http://127.0.0.1:4210/" target="_blank" rel="noreferrer">Open working local preview ↗</a></nav></header>
+<main><p id="note"></p><section class="pair"><figure><h2>OLDWEBSITE — reference</h2><figcaption id="old-caption"></figcaption><a id="old-link"><img id="old-image" alt="Old website reference"></a></figure><figure><h2 id="right-title"></h2><figcaption id="right-caption"></figcaption><a id="right-link"><img id="right-image" alt="Comparison candidate"></a></figure></section></main>
+<footer>Reduced motion, DPR 1, resized desktop-browser viewport. These are bounded state captures, not physical-phone, animation or complete-flow acceptance. Product/article pairs compare different records and do not establish identity mappings. Missing views remain explicitly unverified. Screenshots and private database evidence remain outside Git.</footer>
+<script>
+const captures=${data};
+const family=document.querySelector('#family'),width=document.querySelector('#width'),version=document.querySelector('#version');
+for(const f of [...new Set(captures.map(c=>c.family))])family.add(new Option(f,f));
+family.value='restoration-home';
+function widths(){const previous=width.value;width.replaceChildren();for(const w of [...new Set(captures.filter(c=>c.family===family.value).map(c=>c.width))].sort((a,b)=>b-a))width.add(new Option(w+' px',w));width.value=[...width.options].some(o=>o.value===previous)?previous:[...width.options].some(o=>o.value==='1440')?'1440':width.options[0].value;render();}
+function render(){
+ document.querySelector('#right-title').textContent=version.value==='candidate'?'Local restoration — first working slice':'Current site — before restoration';
+ for(const [slot,label] of [['old','old'],['right',version.value]]){
+  const c=captures.find(c=>c.family===family.value&&c.width===Number(width.value)&&c.label===label);
+  const caption=document.querySelector('#'+slot+'-caption'),img=document.querySelector('#'+slot+'-image'),link=document.querySelector('#'+slot+'-link');
+  if(!c){caption.textContent='Not captured for this version / width. No parity claim.';img.hidden=true;link.removeAttribute('href');continue;}
+  img.hidden=false;img.src=c.path;img.alt=label+' '+c.family+' at '+c.width+' pixels';link.href=c.path;link.target='_blank';
+  caption.textContent=c.route+' • '+c.width+' × '+c.height+' • '+(c.heading||'Recorded UI state')+(c.scope?.startsWith('isolated')?' • Isolated fixture build':' • Live baseline')+(c.scrollWidth>c.width?' • Horizontal overflow observed':'');
+ }
+ document.querySelector('#note').textContent=family.value.includes('login')?'Protected exception: current Studio login source remains unchanged.':'Exact legacy layout is the target. This checkpoint is partial; content and media differences reflect the protected current records and local fixture scope.';
+}
+family.addEventListener('change',widths);width.addEventListener('change',render);version.addEventListener('change',render);widths();
+</script></html>`;
 writeFileSync(resolve(root,'comparison.html'),html);
-console.log('Generated private comparison for '+captures.length+' captures');
+console.log('Generated private comparison for '+captures.length+' views');
 if(process.argv.includes('--serve')){
- const paths=()=>new Set(JSON.parse(readFileSync(resolve(root,'captures.json'),'utf8')).filter(c=>/^screenshots\/[a-z0-9-]+\.jpg$/.test(c.path)).map(c=>'/'+c.path));
+ const paths=()=>new Set(readCaptures().filter(c=>/^screenshots\/[a-z0-9-]+\.jpg$/.test(c.path)).map(c=>'/'+c.path));
  createServer((request,response)=>{
   if(request.headers.host!=='127.0.0.1:4211'||!['GET','HEAD'].includes(request.method)){response.writeHead(400);response.end();return;}
   const path=new URL(request.url,'http://127.0.0.1:4211').pathname;

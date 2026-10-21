@@ -1,0 +1,159 @@
+{
+  "at": "2026-10-21T09:06:39.535Z",
+  "build": {
+    "at": "2026-10-21T08:55:05.857Z",
+    "buildId": "dIA7_A33jqOuNsY09oTOw",
+    "syntheticLocal": true
+  },
+  "protectedSourceFiles": 21,
+  "protectedSourceUnchanged": true,
+  "runtimeVisibleTableScopes": 19,
+  "runtimeVisibleDigestsUnchanged": true,
+  "additionalCaptureFiles": 54,
+  "dimensionsVerified": true,
+  "viewportChecks": [
+    {
+      "bottomVisible": false,
+      "fontSize": "120px",
+      "headerHeight": 80,
+      "height": 1000,
+      "heroHeight": 1000,
+      "overlay": "block",
+      "scrollWidth": 1905,
+      "titleWidth": 772.796875,
+      "width": 1920
+    },
+    {
+      "bottomVisible": false,
+      "fontSize": "107.75px",
+      "headerHeight": 80,
+      "height": 1000,
+      "heroHeight": 1000,
+      "overlay": "block",
+      "scrollWidth": 1425,
+      "titleWidth": 693.90625,
+      "width": 1440
+    },
+    {
+      "bottomVisible": false,
+      "fontSize": "90.95px",
+      "headerHeight": 80,
+      "height": 1000,
+      "heroHeight": 1000,
+      "overlay": "block",
+      "scrollWidth": 1185,
+      "titleWidth": 585.703125,
+      "width": 1200
+    },
+    {
+      "bottomVisible": true,
+      "fontSize": "76.39px",
+      "headerHeight": 80,
+      "height": 1000,
+      "heroHeight": 1000,
+      "overlay": "block",
+      "scrollWidth": 977,
+      "titleWidth": 491.9375,
+      "width": 992
+    },
+    {
+      "bottomVisible": true,
+      "fontSize": "60.71px",
+      "headerHeight": 80,
+      "height": 1024,
+      "heroHeight": 1024,
+      "overlay": "block",
+      "scrollWidth": 753,
+      "titleWidth": 390.96875,
+      "width": 768
+    },
+    {
+      "bottomVisible": true,
+      "fontSize": "48px",
+      "headerHeight": 80,
+      "height": 844,
+      "heroHeight": 844,
+      "overlay": "block",
+      "scrollWidth": 497,
+      "titleWidth": 309.109375,
+      "width": 512
+    },
+    {
+      "bottomVisible": true,
+      "fontSize": "48px",
+      "headerHeight": 80,
+      "height": 844,
+      "heroHeight": 859.484375,
+      "overlay": "block",
+      "scrollWidth": 375,
+      "titleWidth": 309.109375,
+      "width": 390
+    },
+    {
+      "bottomVisible": true,
+      "fontSize": "48px",
+      "headerHeight": 80,
+      "height": 740,
+      "heroHeight": 984.71875,
+      "overlay": "block",
+      "scrollWidth": 305,
+      "titleWidth": 265,
+      "width": 320
+    }
+  ],
+  "loginPixelComparison": [
+    {
+      "width": 1200,
+      "height": 1000,
+      "meanChannelDifference": 0,
+      "channelsOver12Percent": 0
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "meanChannelDifference": 0,
+      "channelsOver12Percent": 0
+    },
+    {
+      "width": 1920,
+      "height": 1000,
+      "meanChannelDifference": 0.1268,
+      "channelsOver12Percent": 0
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "meanChannelDifference": 0,
+      "channelsOver12Percent": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "meanChannelDifference": 0,
+      "channelsOver12Percent": 0
+    },
+    {
+      "width": 512,
+      "height": 844,
+      "meanChannelDifference": 0,
+      "channelsOver12Percent": 0
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "meanChannelDifference": 0,
+      "channelsOver12Percent": 0
+    },
+    {
+      "width": 992,
+      "height": 1000,
+      "meanChannelDifference": 0,
+      "channelsOver12Percent": 0
+    }
+  ],
+  "limitations": [
+    "Runtime-visible destination scope only; source database export remains unavailable.",
+    "JPEG pixels are a comparison measure, not an assertion of byte-identical dynamic rendering.",
+    "No release, complete motion parity, physical-device or complete workflow acceptance is implied."
+  ]
+}
