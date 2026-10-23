@@ -1,12 +1,13 @@
 import type {ContentDocument} from './content-model';
 import type {EditorialUsage} from './homepage-model';
-import {validUsage} from './homepage-model';
+import {validUsage,usagePaths} from './homepage-model';
 import {sharedCopyId} from './shared-copy-model';
 
 export type EditorialSlot={key:string;sectionId?:string;itemId?:string;blockId?:string;galleryIndex?:number;label:string;editable:boolean;usage?:EditorialUsage;path?:string;productId?:string;reason?:string};
 /** Inventory only slots consumed by the current renderer; do not invent inactive placements. */
 export function editorialSlots(document:ContentDocument):EditorialSlot[]{
- if(document.id===sharedCopyId||document.editorial?.kind==='testimonial')return [];
+ if(document.id===sharedCopyId)return [];
+ if(document.editorial?.kind==='testimonial')return document.editorial.classification==='genuine'?(['avatar','installation'] as const).map(key=>({key:'testimonial:'+key,label:key==='avatar'?'Customer portrait':'Creation or installation',editable:true,usage:document.editorial![key],path:document.editorial![key]?.path})):[];
  if(document.landing)return document.landing.blocks.flatMap<EditorialSlot>(block=>[
   ...(['hero','imageCta'].includes(block.type)?[{key:'landing:'+block.id,blockId:block.id,label:block.heading,editable:true,usage:block.image,path:block.image?.path}]:[]),
   ...(block.gallery||[]).map((usage,galleryIndex)=>({key:'landing-gallery:'+block.id+':'+galleryIndex,blockId:block.id,galleryIndex,label:block.heading+' · image '+(galleryIndex+1),editable:true,usage,path:usage.path}))
@@ -32,6 +33,7 @@ export function assignEditorialSlot(document:ContentDocument,key:string,usage?:E
  if(usage&&!validUsage({...usage,alt:usage.alt===''?'Description needed':usage.alt}))throw Error('Choose an approved public image with a description and valid crops.');
  const next=structuredClone(document);
  if(slot.blockId)next.landing!.blocks=next.landing!.blocks.map(block=>block.id!==slot.blockId?block:slot.galleryIndex!==undefined?{...block,gallery:usage?block.gallery!.map((image,i)=>i===slot.galleryIndex?structuredClone(usage):image):block.gallery!.filter((_,i)=>i!==slot.galleryIndex)}:{...block,image:usage?structuredClone(usage):undefined});
+ else if(key.startsWith('testimonial:'))next.editorial![key==='testimonial:avatar'?'avatar':'installation']=usage?structuredClone(usage):undefined;
  else if(key.startsWith('portfolio-gallery:'))next.editorial!.gallery=usage?next.editorial!.gallery!.map((image,i)=>i===slot.galleryIndex?structuredClone(usage):image):next.editorial!.gallery!.filter((_,i)=>i!==slot.galleryIndex);
  else if(key==='hero')next.homepage!.heroImage=usage?structuredClone(usage):undefined;
  else if(key==='header')next.headerImage=usage?structuredClone(usage):undefined;
@@ -46,7 +48,7 @@ export function editorialUsages(entries:UsageOwner[],path:string){
  return entries.flatMap(entry=>(['draft','published'] as const).flatMap(state=>{
   const d=state==='draft'?entry.document:entry.published;
   if(!d)return [];
-  const direct=editorialSlots(d).filter(slot=>slot.path===path).map(slot=>({record:d.id,title:d.title,route:d.route,slot:slot.key,label:slot.label,state}));
+  const direct=editorialSlots(d).filter(slot=>slot.usage?usagePaths(slot.usage).includes(path):slot.path===path).map(slot=>({record:d.id,title:d.title,route:d.route,slot:slot.key,label:slot.label,state}));
   // A saved preview may also reference the image through a product, article card or fallback.
   if(!direct.length&&(d.homeSnapshot||d.pageSnapshot)?.mediaPaths.includes(path))direct.push({record:d.id,title:d.title,route:d.route,slot:'references',label:'Saved product / article reference',state});
   return direct;

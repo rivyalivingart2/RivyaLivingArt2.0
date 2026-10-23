@@ -1,9 +1,14 @@
+# Latest Phase 3 implementation checkpoint — 23 October 2026
+
+[Implementation](phase3/PHASE-3-IMPLEMENTATION.md) and [verification](phase3/implementation-verification.json) supersede the mapping-only implementation status below. The additive editorial/media foundation, local replay/recovery, six selected owner-image edits and uniform product-size exports are delivered. The deleted-source record merge, remaining unassigned assets and genuine identity/permission evidence are unavailable or unverified; no values are invented. The 326 mapped additive requirements are not 326 completed fields or workflows. Phases 4–6 retain their operational scope. All work remains local, with zero product/import/publication/release operations.
+
+---
 # Seven-phase exact legacy restoration plan
 
 Date: 21 October 2026. This is a prospective execution plan, not a completion report.
 Authority: [OWNER-DECISION.md](OWNER-DECISION.md). Full specification: [MASTER-CRAFT-PROMPT.md](MASTER-CRAFT-PROMPT.md).
 
-## Current execution — 21 October 2026
+## Historical execution — 21 October 2026
 
 **Phase 3 mapping checkpoint from `39b948c`:** The owner explicitly requested local field/media mapping. [The package](phase3/PHASE-3-MAPPING.md) and [verification](phase3/verification.json) account for 566 real fields, 45 entities, 48 relationship contracts and 78 legacy media placements. The earlier count of 575 incorrectly included nine comment lines. Existing isolated data and all tracked application/media bytes remain unchanged; no products, archived imports, media edits/relinks or release occurred. Contract mapping is complete; the full Phase 3 implementation/replay/derivative programme is not.
 

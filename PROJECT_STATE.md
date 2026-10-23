@@ -1,4 +1,15 @@
-# Current execution — Phase 3 field and media mapping, 21 October 2026
+# Current execution — Phase 3 local media implementation, 23 October 2026
+
+Continued from `5545ffb` on `codex/exact-legacy-restoration`. Read [the implementation checkpoint](docs/restoration/exact-legacy-2026-10-21/phase3/PHASE-3-IMPLEMENTATION.md), [verification](docs/restoration/exact-legacy-2026-10-21/phase3/implementation-verification.json) and [production candidate](docs/restoration/exact-legacy-2026-10-21/phase3/PRODUCTION-MIGRATION-CANDIDATE.md). Additive category metadata, mobile image paths/legacy ratios, genuine testimonial media/rating fields, private video/GLB contracts, source crosswalk/conflict storage and versioned editors are implemented locally. This is not complete Phase 4–6 workflow parity or recovery of the deleted source database.
+
+Six selected owner creation photos now have ocean/obsidian/champagne AI presentation edits in uniform 1600 × 2000 (4:5), with 960 × 1200 and 640 × 800 WebP variants. Untouched originals, generated masters, exact prompts and before/after review stay in ignored private evidence. Fourteen private image drafts include six originals, two earlier edits and six final branded edits; no existing product/gallery association changed. This batch does not cover the entire Drive/Photos library. Personal details and reconstructed areas remain subject to owner fidelity/permission review.
+
+Final build `YDrtP647c0oo4I3hvf-7w`: 390 application, 403 built HTTP, 53 mapping/isolation, 12 preflight and 103 final delivery checks pass; 15 browser observations cover desktop/mobile and authenticated media. All 313 pre-existing isolated business rows, 301 original media/login files and 21 protected baseline byte hashes remain unchanged. New local schema: four tables / 31 columns, replayed with transaction recovery. No source records or title replacements imported.
+
+**Keep everything local. No products, archived catalogue/Sheets imports, seeds, production migration, CMS publication, cloud writes, push, PR or deployment.** Do not repeat request-table repair or overwrite before snapshots. Preserve this branch and populated cluster. Private image preview: `http://127.0.0.1:4214/`; final app/Studio: `http://127.0.0.1:4210/`. The candidate app requires the additive schema before activation; production target, backup, grants and upload transport remain separate gates. Earlier entries below are historical.
+
+---
+# Historical execution — Phase 3 field and media mapping, 21 October 2026
 
 The owner authorized Phase 3 from `39b948c`, limited to local field/media mapping while preserving current data and Studio login. Read [the mapping checkpoint](docs/restoration/exact-legacy-2026-10-21/phase3/PHASE-3-MAPPING.md) and [verification](docs/restoration/exact-legacy-2026-10-21/phase3/verification.json). The package maps 45 entities, 566 real fields, 48 relationship contracts and 78 media placements. The earlier 575-field count included nine block-comment prose lines; the corrected mapping is authoritative.
 

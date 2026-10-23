@@ -6,7 +6,7 @@ import {editorialPublicationIssues,publicEditorial,type PublicEditorialRecord} f
 import {landingLimit,type LandingBlock} from './landing-model';
 import {validPageMedia} from './editorial-media-model';
 import type {DependencySource} from './homepage-dependencies';
-import type {EditorialUsage,HomeDependency} from './homepage-model';
+import {usagePaths,type EditorialUsage,type HomeDependency} from './homepage-model';
 export type LandingEntry={id:string;route:string;title:string;description:string;eyebrow:string;sections:ContentSection[];image?:EditorialUsage;editorial?:PublicEditorialRecord;discovery?:DiscoveryMetadata;languages?:string[];localizedCopy?:Partial<Record<'hi'|'gu',Pick<LandingEntry,'title'|'description'|'eyebrow'|'sections'|'image'|'editorial'>>>};
 export type LandingSnapshot={entries:Record<string,LandingEntry[]>;productIds:Record<string,string[]>};
 function entryCopy(d:ContentDocument&{imagePosition?:string;availableEditorialLanguages?:string[]}):LandingEntry{
@@ -27,11 +27,11 @@ export function publicEntry(d:ContentDocument&{imagePosition?:string;availableEd
 /** Resolve published records once. Exact previews store these copies and fingerprints. */
 export function compileLanding(d:ContentDocument,source:DependencySource){
  const result:LandingSnapshot={entries:{},productIds:{}},dependencies:HomeDependency[]=[],issues:string[]=[],mediaPaths:string[]=[],hrefs:string[]=[];
- if(!d.landing&&!d.editorial?.gallery?.length)return {snapshot:result,dependencies,issues,mediaPaths,hrefs};
+ if(!d.landing&&!d.editorial?.gallery?.length&&!d.editorial?.avatar&&!d.editorial?.installation)return {snapshot:result,dependencies,issues,mediaPaths,hrefs};
  const docs=source.content.filter(r=>validContent(r.document,baselineContent.find(b=>b.id===r.key))&&!editorialPublicationIssues(r.document as ContentDocument).length).map(r=>{const doc=r.document as ContentDocument,m=source.media.find(m=>m.key===doc.image)?.document as {focalX?:number;focalY?:number}|undefined;return {...doc,...(m?{imagePosition:(m.focalX??50)+'% '+(m.focalY??50)+'%'}:{})};});
  const add=(kind:HomeDependency['kind'],key:string)=>{const row=source[kind==='product'?'products':kind==='media'?'media':'content'].find(r=>r.key===key);if(row&&!dependencies.some(r=>r.kind===kind&&r.key===key))dependencies.push({kind,key,version:row.version,fingerprint:row.fingerprint});};
- const image=(usage:EditorialUsage)=>{const row=source.media.find(r=>r.key===usage.path&&validPageMedia(r.document));if(row){add('media',row.key);mediaPaths.push(row.key);}else issues.push('Assigned image is not published: '+usage.path);};
- for(const usage of d.editorial?.gallery||[])image(usage);
+ const image=(usage:EditorialUsage)=>{for(const path of usagePaths(usage)){const row=source.media.find(r=>r.key===path&&validPageMedia(r.document));if(row){add('media',row.key);mediaPaths.push(row.key);}else issues.push('Assigned image is not published: '+path);}};
+ for(const usage of [...(d.editorial?.gallery||[]),...(d.editorial?.avatar?[d.editorial.avatar]:[]),...(d.editorial?.installation?[d.editorial.installation]:[])])image(usage);
  for(const b of d.landing?.blocks.filter(b=>b.enabled)||[]){
   for(const usage of [...(b.image?[b.image]:[]),...(b.gallery||[])])image(usage);
   if(['videoHero','videoStory'].includes(b.type)&&!b.film)issues.push(b.heading+': select a verified film.');
@@ -54,7 +54,7 @@ export function compileLanding(d:ContentDocument,source:DependencySource){
   if(!b.mode||['manual','featured'].includes(b.mode))entries.sort((a,c)=>(b.ids||[]).indexOf(a.id)-(b.ids||[]).indexOf(c.id));
   result.entries[b.id]=entries.slice(0,b.limit||landingLimit(b.type));
   for(const entry of result.entries[b.id])hrefs.push(...entry.sections.flatMap(s=>[...bodyLinks(s.body),...(s.policyHref?[s.policyHref]:[])]),...(entry.editorial?.policyHref?[entry.editorial.policyHref]:[]));
-  for(const p of picked){add('content',p.id);const e=publicEntry(p);if(e.image)image(e.image);for(const usage of e.editorial?.gallery||[])image(usage);}
+  for(const p of picked){add('content',p.id);const e=publicEntry(p);if(e.image)image(e.image);for(const usage of [...(e.editorial?.gallery||[]),...(e.editorial?.avatar?[e.editorial.avatar]:[]),...(e.editorial?.installation?[e.editorial.installation]:[])])image(usage);}
   if(['faqPicker','collectionGrid','portfolioGrid','journalGrid','testimonial','testimonialGrid'].includes(b.type)){
    for(const id of b.ids||[])if(!entries.some(e=>e.id===id))issues.push(b.heading+': reference '+id+' is unavailable or has the wrong kind.');
    if(!entries.length)issues.push(b.heading+': no published records selected. Disable this block until content is ready.');

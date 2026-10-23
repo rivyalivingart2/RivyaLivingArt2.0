@@ -35,3 +35,5 @@
 @media(max-width:1023px){.doors{flex-direction:column;height:auto;gap:10px;min-height:0}.door{height:38vh;min-height:260px;flex:none}.doorCopy svg{opacity:1;bottom:0;position:static}.atelier{grid-template-columns:1fr;gap:48px}.atelier>.meniscus{max-width:640px}.tileGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.mobileContents{display:block}.categoryList{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:639px){.tileGrid,.commission,.offering,.portfolio,.roomGrid,.quotes,.concepts,.categoryList{grid-template-columns:1fr}.heading{flex-direction:column;align-items:start}.reference.reference.reference.reference .manifesto{padding-block:80px}.band[data-band=commission]{padding-block:120px}}
 @media print{.band,.reference.reference.reference.reference .manifesto{padding:24px;min-height:0}.doors{height:auto;display:grid;grid-template-columns:repeat(2,1fr)}.door{min-height:260px}.mobileContents{display:none}}
+
+.categoryMedia figure,.categoryMedia figure>div{height:100%;margin:0;aspect-ratio:auto}

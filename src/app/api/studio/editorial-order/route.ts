@@ -29,6 +29,7 @@ export async function POST(request:Request){
    SELECT COALESCE(jsonb_object_agg(kind||':'||key,fingerprint),'{}'::jsonb) AS stamp FROM (
     SELECT 'content' AS kind,content_key AS key,md5(published::text) AS fingerprint FROM rivya_content WHERE visible=true AND published IS NOT NULL
     UNION ALL SELECT 'media',path,md5(published::text) FROM rivya_public_media WHERE published IS NOT NULL
+     UNION ALL SELECT 'extension',kind||':'||entity_key,md5(published::text) FROM rivya_editorial_extensions WHERE published IS NOT NULL
    ) source
   ), created AS (
    INSERT INTO rivya_presentations(presentation_key,draft,version,updated_by)

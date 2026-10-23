@@ -63,7 +63,7 @@ const moduleViews = {
  'content-register':({admin}:ModuleContext)=> <ContentRegister admin={admin}/>,
  'editorial-order':({admin}:ModuleContext)=><EditorialOrderEditor admin={admin}/>,
  analytics:()=> <AnalyticsPanel/>,
- categories:()=> <CatalogueCategories/>,
+ categories:({admin}:ModuleContext)=> <CatalogueCategories admin={admin}/>,
  import:()=> <ConditionalWorkspace view="import"/>,
  subscribers:()=> <ConditionalWorkspace view="subscribers"/>,
  exports:({admin}:ModuleContext)=><Operations view="activity" admin={admin} exportOnly/>,

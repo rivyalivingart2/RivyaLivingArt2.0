@@ -1,3 +1,4 @@
+import {validExtension} from './editorial-extension-model';
 import {publicDiscovery} from './editorial-metadata';
 import {reviewedArticleLabels} from './editorial-language-presentation';
 import {baselineProducts,validProduct,type ShopProduct} from './shop-model';
@@ -6,10 +7,10 @@ import {sharedCopyId} from './shared-copy-model';
 import type {PublicMedia} from './public-media';
 import {validPageMedia} from './editorial-media-model';
 import {baselineContent,validContent,type ContentDocument} from './content-model';
-import {homeActions,homeProductIds,type HomeSnapshot,type HomeProduct,type HomeArticle,type HomeDependency} from './homepage-model';
+import {usagePaths,homeActions,homeProductIds,type HomeSnapshot,type HomeProduct,type HomeArticle,type HomeDependency} from './homepage-model';
 
 export type DependencyRow={key:string;document:unknown;version:number;fingerprint:string;publishedAt?:string|null};
-export type DependencySource={products:DependencyRow[];content:DependencyRow[];media:DependencyRow[]};
+export type DependencySource={products:DependencyRow[];content:DependencyRow[];media:DependencyRow[];extensions?:DependencyRow[]};
 const publicRoutes=new Set(['/','/collectible-design','/memory-art','/personal-art','/search','/commission','/preserve','/personalize','/commission/customize','/journal','/saved-pieces','/portfolio','/testimonials']);
 /** A single SQL snapshot feeds this pure compiler. Never copy a draft or arbitrary stored keys. */
 export function compileHomepageSnapshot(document:ContentDocument,source:DependencySource):HomeSnapshot{
@@ -26,17 +27,17 @@ export function compileHomepageSnapshot(document:ContentDocument,source:Dependen
  }
  const pages=source.content.flatMap(row=>{const d=row.document as ContentDocument;return d?.id===row.key&&d.id!==sharedCopyId&&validContent(d,baselineContent.find(b=>b.id===row.key))?[d]:[];});
  const dependencies:HomeDependency[]=[],issues:string[]=[],mediaPaths=new Set<string>(),unavailableActionHrefs=new Set<string>();
- function depend(kind:HomeDependency['kind'],key:string){const row=source[kind==='product'?'products':kind==='content'?'content':'media'].find(r=>r.key===key);if(row&&!dependencies.some(d=>d.kind===kind&&d.key===key))dependencies.push({kind,key,version:Number(row.version),fingerprint:row.fingerprint});}
+ function depend(kind:HomeDependency['kind'],key:string){const row=(kind==='extension'?source.extensions||[]:source[kind==='product'?'products':kind==='content'?'content':'media']).find(r=>r.key===key);if(row&&!dependencies.some(d=>d.kind===kind&&d.key===key))dependencies.push({kind,key,version:Number(row.version),fingerprint:row.fingerprint});}
  const requestedIds=homeProductIds(home);
  const selected=products.filter(p=>requestedIds.includes(p.id));
  for(const id of requestedIds){const p=selected.find(p=>p.id===id);if(!p){issues.push(`Product ${id} is not available in the published catalogue.`);continue;}depend('product',id);for(const path of [p.image,p.scene])if(path){depend('media',path);mediaPaths.add(path);}}
- const imageUsage=(usage:{path:string}|undefined,label:string)=>{if(!usage)return;if(!images.has(usage.path))issues.push(`${label}: the assigned image is not published.`);else{depend('media',usage.path);mediaPaths.add(usage.path);}};
+ const imageUsage=(usage:{path:string;mobilePath?:string}|undefined,label:string)=>{if(!usage)return;for(const path of usagePaths(usage))if(!images.has(path))issues.push(`${label}: the assigned image is not published.`);else{depend('media',path);mediaPaths.add(path);}};
  imageUsage(home.heroImage,'hero');
  const articles:HomeArticle[]=[];
  for(const section of home.sections.filter(s=>s.enabled)){
   if(section.contentNeeded)issues.push(`${section.id}: this chapter still needs reviewed content. Hide it or complete its review fields.`);
   if(section.type==='selected'&&!section.productIds?.length)issues.push(`${section.id}: select at least one published piece or hide this section.`);
-  if(section.image){if(!images.has(section.image.path))issues.push(`${section.id}: the assigned image is not published.`);else {depend('media',section.image.path);mediaPaths.add(section.image.path);}}
+  imageUsage(section.image,section.id);
   for(const item of section.items||[])imageUsage(item.image,section.id+' / '+item.id);
   const copy=document.sections.find(s=>s.id===section.id);imageUsage(copy?.image,section.id+' / copy');
   for(const id of section.articleIds||[]){const article=pages.find(p=>p.id===id&&p.kind==='article');if(!article){issues.push(`${section.id}: article ${id} is not published.`);continue;}depend('content',id);const coverPath=article.headerImage?.path||article.image;const m=coverPath?images.get(coverPath):undefined;if(m){depend('media',m.path);mediaPaths.add(m.path);}articles.push({discovery:article.discovery,languages:publicDiscovery(article).languages,localizedCopy:reviewedArticleLabels(article),id:article.id,route:article.route,title:article.title,description:article.description,eyebrow:article.eyebrow,sections:article.sections.filter(s=>s.enabled!==false).map(s=>({id:s.id,heading:s.heading,paragraphs:s.paragraphs,checklist:s.checklist})),...(m?{image:m.path,imageAlt:article.headerImage?.alt||article.imageAlt||m.alt,imagePosition:m.focalX+'% '+m.focalY+'%'}:{})});}
@@ -53,7 +54,10 @@ export function compileHomepageSnapshot(document:ContentDocument,source:Dependen
   const members=products.filter(p=>p.category===name),cover=members[0];
   const shown=categoryBlock&&(!categoryBlock.categories?.length||categoryBlock.categories.includes(name));
   if(shown&&cover){depend('product',cover.id);depend('media',cover.image);mediaPaths.add(cover.image);}
-  return {name,count:members.length,tiers:[...new Set(members.map(p=>p.tier))],...(shown&&cover?{image:{image:cover.image,imageAlt:cover.imageAlt,imagePosition:cover.imagePosition}}:{})};
+  const metadata=(source.extensions||[]).find(r=>r.key==='category:'+name);const d=metadata?.document;
+  const usage=shown&&validExtension(d)&&d.kind==='category'&&d.key===name&&d.image&&usagePaths(d.image).every(path=>images.has(path))?d.image:undefined;
+  if(usage&&metadata){depend('extension',metadata.key);imageUsage(usage,'Category '+name);}
+  return {...(usage&&validExtension(d)?{usage,description:d.description}:{}),name,count:members.length,tiers:[...new Set(members.map(p=>p.tier))],...(shown&&cover?{image:{image:cover.image,imageAlt:cover.imageAlt,imagePosition:cover.imagePosition}}:{})};
  });
  return {schemaVersion:1,products:selected,articles,mediaPaths:[...mediaPaths],categories,dependencies,issues:[...new Set(issues)],unavailableActionHrefs:[...unavailableActionHrefs]};
 }

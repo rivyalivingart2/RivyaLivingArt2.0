@@ -39,6 +39,7 @@ export async function POST(request:Request){
      SELECT 'product' AS kind,product_id AS key,md5(published::text) AS fingerprint FROM rivya_catalogue WHERE visible=true AND published IS NOT NULL
      UNION ALL SELECT 'content',content_key,md5(published::text) FROM rivya_content WHERE visible=true AND published IS NOT NULL
      UNION ALL SELECT 'media',path,md5(published::text) FROM rivya_public_media WHERE published IS NOT NULL
+     UNION ALL SELECT 'extension',kind||':'||entity_key,md5(published::text) FROM rivya_editorial_extensions WHERE published IS NOT NULL
     ) ref WHERE ref.kind=dep->>'kind' AND ref.key=dep->>'key' AND ref.fingerprint=dep->>'fingerprint'
    )) AS valid
   ), created AS (

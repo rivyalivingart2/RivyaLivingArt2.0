@@ -27,7 +27,7 @@ test('real raster processing preserves bytes and produces bounded, metadata-free
  for(const [i,v] of result.variants.entries()){const m=await sharp(v.data).metadata();assert.equal(m.width,[640,960,1600][i]);assert.equal(m.format,'webp');assert.equal(m.exif,undefined);assert.ok(v.bytes<600000);}
  await assert.rejects(processEditorialImage(Buffer.from('<svg onload="alert(1)"/>')));
  await assert.rejects(processEditorialImage(await sharp({create:{width:100,height:100,channels:3,background:'#fff'}}).png().toBuffer()));
- await assert.rejects(boundedImageBody(new Request('http://localhost',{method:'PUT',body:Buffer.alloc(4*1024*1024+1)})));
+ await assert.rejects(boundedImageBody(new Request('http://localhost',{method:'PUT',body:Buffer.alloc(20*1024*1024+1)})));
 });
 test('hero, journey and header overrides leave products, originals and other usages untouched',()=>{
  const base=structuredClone(homeCandidate),original=JSON.stringify(base);let d=assignEditorialSlot(base,'hero',usage());d=assignEditorialSlot(d,'journey:journeys:large',{...usage(),mobile:{x:12,y:40,ratio:'1/1'}});

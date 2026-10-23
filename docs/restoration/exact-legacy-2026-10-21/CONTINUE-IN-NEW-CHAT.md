@@ -1,3 +1,10 @@
+# Latest local continuation — 23 October 2026
+
+Continue the local descendant of `5545ffb` on `codex/exact-legacy-restoration`. Start with [Phase 3 implementation](phase3/PHASE-3-IMPLEMENTATION.md), [fresh verification](phase3/implementation-verification.json), and [migration candidate](phase3/PRODUCTION-MIGRATION-CANDIDATE.md), then the latest top entries of AGENTS, PROJECT_STATE, PRODUCT and README. Their explicit scope supersedes historical access/mapping-only entries below.
+
+The remaining local media implementation and six-image ocean-palette batch are delivered. The original database is owner-deleted; its record identities, relationships and overrides remain unknown. Do not claim full-library image preparation or complete later-phase feature parity. No products or archived catalogue/Sheets lists may be added/imported. Preserve current data, original media and Studio login. Nothing is published, pushed or deployed. Do not repeat repair/seed work or overwrite the private before snapshots. Review the local originals/edits at http://127.0.0.1:4214/ and the app at http://127.0.0.1:4210/.
+
+---
 # Continue exact OLDWEBSITE restoration in a new Codex chat
 
 ## Current continuation — Phase 3 mapping from 39b948c
