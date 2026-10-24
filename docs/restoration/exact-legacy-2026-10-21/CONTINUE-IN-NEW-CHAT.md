@@ -1,3 +1,8 @@
+# Superseded execution entry — use the current Sheets/Drive plan
+
+On 24 October 2026 the owner approved the final local public design and resumed work with the new Studio-only redesign and Sheets/Drive migration brief. Read [the current checkpoint](../../google-workspace-2026-10-24/README.md), [audit](../../google-workspace-2026-10-24/AUDIT.md), [architecture](../../google-workspace-2026-10-24/ARCHITECTURE.md) and [0–11 phase plan](../../google-workspace-2026-10-24/PHASE-PLAN.md). Preserve the approved public website and current Studio login. The target is Sheets/Drive after verified migration; current storage stays authoritative during preparation. No products/archived imports or Google Photos rework. All work remains local; no cloud writes, publication or release. Existing restoration work is retained and its earlier receipts remain dated evidence. This entry supersedes the previous stop and any conflicting public-redesign or permanent-SQL instructions below.
+
+---
 # Latest owner decision — confirmed live-site design and stop, 24 October 2026
 
 The owner explicitly selected **Current live www.rivyalivingart.com** for the overall homepage design, backgrounds and colours. Preserve the screenshot structures for the footer and Rivya / Creations, and preserve The Signature — From liquid to light. Complete this final local correction, then stop. This overrides conflicting earlier public-homepage design instructions; data/login protection, no products/imports and local-only restrictions remain. See [the scoped correction](FINAL-LIVE-DESIGN.md). The correction is complete; [the final verification](final-live-design-verification.json) records the local evidence. Work is stopped. Do not resume further Phase 4 or later work without a new request.

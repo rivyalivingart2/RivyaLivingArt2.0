@@ -1,3 +1,8 @@
+# Superseded execution entry — use the current Sheets/Drive plan
+
+On 24 October 2026 the owner approved the final local public design and resumed work with the new Studio-only redesign and Sheets/Drive migration brief. Read [the current checkpoint](../../google-workspace-2026-10-24/README.md), [audit](../../google-workspace-2026-10-24/AUDIT.md), [architecture](../../google-workspace-2026-10-24/ARCHITECTURE.md) and [0–11 phase plan](../../google-workspace-2026-10-24/PHASE-PLAN.md). Preserve the approved public website and current Studio login. The target is Sheets/Drive after verified migration; current storage stays authoritative during preparation. No products/archived imports or Google Photos rework. All work remains local; no cloud writes, publication or release. Existing restoration work is retained and its earlier receipts remain dated evidence. This entry supersedes the previous stop and any conflicting public-redesign or permanent-SQL instructions below.
+
+---
 # RIVYA LIVING ART — EXACT LEGACY RESTORATION MASTER CRAFT PROMPT
 
 Version: 21 October 2026. Read [OWNER-DECISION.md](OWNER-DECISION.md) first.

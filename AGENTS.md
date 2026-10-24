@@ -1,3 +1,12 @@
+# Current owner direction — Sheets/Drive transition and Studio-only restoration
+
+The owner approved the final local public website and supplied the new CRAFT master brief on 24 October 2026. Work has resumed from `e9d3228` on `codex/sheets-drive-foundation`. Read [the current checkpoint](docs/google-workspace-2026-10-24/README.md), [audit](docs/google-workspace-2026-10-24/AUDIT.md), [phase plan](docs/google-workspace-2026-10-24/PHASE-PLAN.md) and [architecture decision](docs/decisions/2026-10-24-sheets-drive.md) first. They supersede the prior stop and earlier public-redesign/permanent-SQL directions.
+
+Preserve the approved homepage, Rivya / Creations, The Signature, footer, all current public layouts and Studio login. Restore only authenticated Studio using the old reference. Sheets/Drive is the target after verified migration; the existing application remains authoritative meanwhile. Keep all work local and preserve populated databases, originals and selected images. No products or archived catalogue/Sheets imports; no Google Photos rework, regeneration, reseeding or request-table repair. No cloud mutation, publication, production migration, push/PR/deployment or external messages have occurred or are implied.
+
+The audit and local architecture/mapping plan are delivered. The local foundation includes a strict record codec, revision/idempotency planner, registered-resource Google read transport and read-only mapping rehearsal. It is not an activated provider or complete migration. All 406 existing local rows and 923 protected tracked source/media/package files are unchanged; 404 rows round-trip inline, two oversized CMS rows are explicitly pending Drive artifacts. See the checkpoint receipt for current tests and next actions. Earlier sections below are historical.
+
+---
 # Current owner direction — live-site design correction and stop
 
 The owner confirmed **www.rivyalivingart.com** as the overall homepage design/background/colour reference, retaining the supplied **Rivya / Creations**, **footer** structures and **The Signature — From liquid to light** section. Read [the final correction](docs/restoration/exact-legacy-2026-10-21/FINAL-LIVE-DESIGN.md). This supersedes earlier exact-OLDWEBSITE homepage geometry instructions. The completed local Phase 4 workflow checkpoint `0e55789` is preserved; full Phase 4 is not complete.

@@ -1,0 +1,1937 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "e9d32283a35765eb7e56d21281e4ca00c1563739",
+  "scope": "Observed synthetic local schema; production shape requires separate read-only validation",
+  "runtimeActivated": false,
+  "workbooks": {
+    "content": {
+      "classification": "private-editorial",
+      "canonicalEditors": "controlled writer only",
+      "directEditing": "staging input only"
+    },
+    "operations": {
+      "classification": "confidential-business",
+      "canonicalEditors": "controlled writer only",
+      "directEditing": "authorized owner input only"
+    },
+    "security": {
+      "classification": "restricted-identity",
+      "canonicalEditors": "controlled authentication writer only",
+      "directEditing": "none"
+    },
+    "system": {
+      "classification": "restricted-operations",
+      "canonicalEditors": "controlled writer only",
+      "directEditing": "review decisions only"
+    }
+  },
+  "tables": [
+    {
+      "sourceTable": "rivya_access_requests",
+      "workbook": "security",
+      "sheet": "access_requests",
+      "primaryKey": [
+        "id"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "kind",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "login",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "name",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "contact",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "status",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "staff_id",
+          "sqlType": "uuid",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "token_hash",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "credential_version",
+          "sqlType": "integer",
+          "nullable": true,
+          "representation": "integer"
+        },
+        {
+          "name": "expires_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "updated_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "decided_by",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_access_requests_pkey",
+          "definition": "PRIMARY KEY (id)"
+        },
+        {
+          "name": "rivya_access_requests_staff_id_fkey",
+          "definition": "FOREIGN KEY (staff_id) REFERENCES rivya_staff(id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_audit",
+      "workbook": "system",
+      "sheet": "audit",
+      "primaryKey": [
+        "id"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "sqlType": "bigint",
+          "nullable": false,
+          "representation": "decimal-string"
+        },
+        {
+          "name": "actor",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "action",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "entity",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_audit_pkey",
+          "definition": "PRIMARY KEY (id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_business_settings",
+      "workbook": "content",
+      "sheet": "business_settings",
+      "primaryKey": [
+        "id"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "details",
+          "sqlType": "jsonb",
+          "nullable": false,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "updated_by",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "updated_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_business_settings_pkey",
+          "definition": "PRIMARY KEY (id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_catalogue",
+      "workbook": "content",
+      "sheet": "catalogue",
+      "primaryKey": [
+        "product_id"
+      ],
+      "fields": [
+        {
+          "name": "product_id",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "draft",
+          "sqlType": "jsonb",
+          "nullable": false,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "published",
+          "sqlType": "jsonb",
+          "nullable": true,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "published_version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "visible",
+          "sqlType": "boolean",
+          "nullable": false,
+          "representation": "boolean"
+        },
+        {
+          "name": "updated_by",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "updated_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_catalogue_pkey",
+          "definition": "PRIMARY KEY (product_id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_content",
+      "workbook": "content",
+      "sheet": "content",
+      "primaryKey": [
+        "content_key"
+      ],
+      "fields": [
+        {
+          "name": "content_key",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "kind",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "route",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "draft",
+          "sqlType": "jsonb",
+          "nullable": false,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "published",
+          "sqlType": "jsonb",
+          "nullable": true,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "published_version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "visible",
+          "sqlType": "boolean",
+          "nullable": false,
+          "representation": "boolean"
+        },
+        {
+          "name": "updated_by",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "updated_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_content_pkey",
+          "definition": "PRIMARY KEY (content_key)"
+        },
+        {
+          "name": "rivya_content_route_key",
+          "definition": "UNIQUE (route)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_editorial_extension_revisions",
+      "workbook": "content",
+      "sheet": "editorial_extension_revisions",
+      "primaryKey": [
+        "kind",
+        "entity_key",
+        "version"
+      ],
+      "fields": [
+        {
+          "name": "kind",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "entity_key",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "document",
+          "sqlType": "jsonb",
+          "nullable": false,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "actor",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "operation",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_editorial_extension_revisions_kind_entity_key_fkey",
+          "definition": "FOREIGN KEY (kind, entity_key) REFERENCES rivya_editorial_extensions(kind, entity_key) ON DELETE RESTRICT"
+        },
+        {
+          "name": "rivya_editorial_extension_revisions_pkey",
+          "definition": "PRIMARY KEY (kind, entity_key, version)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_editorial_extensions",
+      "workbook": "content",
+      "sheet": "editorial_extensions",
+      "primaryKey": [
+        "kind",
+        "entity_key"
+      ],
+      "fields": [
+        {
+          "name": "kind",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "entity_key",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "draft",
+          "sqlType": "jsonb",
+          "nullable": false,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "published",
+          "sqlType": "jsonb",
+          "nullable": true,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "published_version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "updated_by",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "updated_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_editorial_extensions_pkey",
+          "definition": "PRIMARY KEY (kind, entity_key)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_erasure_ledger",
+      "workbook": "operations",
+      "sheet": "erasure_ledger",
+      "primaryKey": [
+        "id"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "order_id",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "reference",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "requested_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "identity_verified_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "erased_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "erased_by",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "reason",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "references_deleted",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "notes_purged",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "details",
+          "sqlType": "jsonb",
+          "nullable": false,
+          "representation": "preserved-json"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_erasure_ledger_pkey",
+          "definition": "PRIMARY KEY (id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_inquiries",
+      "workbook": "operations",
+      "sheet": "inquiries",
+      "primaryKey": [
+        "id"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "reference",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "guest_hash",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "request_key",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "payload_hash",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "product_id",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "product_snapshot",
+          "sqlType": "jsonb",
+          "nullable": true,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "name",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "phone",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "email",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "answers",
+          "sqlType": "jsonb",
+          "nullable": false,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "notes",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "summary",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "assignee",
+          "sqlType": "uuid",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "follow_up",
+          "sqlType": "date",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "contract_version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "request_kind",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "schema_id",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "schema_version",
+          "sqlType": "integer",
+          "nullable": true,
+          "representation": "integer"
+        },
+        {
+          "name": "schema_snapshot",
+          "sqlType": "jsonb",
+          "nullable": true,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "answer_snapshot",
+          "sqlType": "jsonb",
+          "nullable": true,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "submission_source",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "source_route",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "consent_version",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "consent_accepted_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "reference_count",
+          "sqlType": "integer",
+          "nullable": true,
+          "representation": "integer"
+        },
+        {
+          "name": "message_state",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "message_template_version",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "message_destination",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "destination_config_version",
+          "sqlType": "integer",
+          "nullable": true,
+          "representation": "integer"
+        },
+        {
+          "name": "message_finalized_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "message_attempts",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "message_last_attempt_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "message_failure_code",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_inquiries_assignee_fkey",
+          "definition": "FOREIGN KEY (assignee) REFERENCES rivya_staff(id)"
+        },
+        {
+          "name": "rivya_inquiries_id_fkey",
+          "definition": "FOREIGN KEY (id) REFERENCES rivya_studio_orders(id)"
+        },
+        {
+          "name": "rivya_inquiries_pkey",
+          "definition": "PRIMARY KEY (id)"
+        },
+        {
+          "name": "rivya_inquiries_reference_key",
+          "definition": "UNIQUE (reference)"
+        },
+        {
+          "name": "rivya_inquiries_request_key_key",
+          "definition": "UNIQUE (request_key)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_inquiry_notes",
+      "workbook": "operations",
+      "sheet": "inquiry_notes",
+      "primaryKey": [
+        "id"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "sqlType": "bigint",
+          "nullable": false,
+          "representation": "decimal-string"
+        },
+        {
+          "name": "inquiry_id",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "actor",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "body",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_inquiry_notes_inquiry_id_fkey",
+          "definition": "FOREIGN KEY (inquiry_id) REFERENCES rivya_inquiries(id)"
+        },
+        {
+          "name": "rivya_inquiry_notes_pkey",
+          "definition": "PRIMARY KEY (id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_inquiry_upload_sessions",
+      "workbook": "operations",
+      "sheet": "inquiry_upload_sessions",
+      "primaryKey": [
+        "request_key"
+      ],
+      "fields": [
+        {
+          "name": "request_key",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "guest_hash",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "used_slots",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "finalized",
+          "sqlType": "boolean",
+          "nullable": false,
+          "representation": "boolean"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_inquiry_upload_sessions_pkey",
+          "definition": "PRIMARY KEY (request_key)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_managed_exports",
+      "workbook": "operations",
+      "sheet": "managed_exports",
+      "primaryKey": [
+        "id"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "actor",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "row_count",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "criteria",
+          "sqlType": "jsonb",
+          "nullable": false,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "expires_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "invalidated_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "invalidation_reason",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_managed_exports_pkey",
+          "definition": "PRIMARY KEY (id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_migration_markers",
+      "workbook": "system",
+      "sheet": "migration_markers",
+      "primaryKey": [
+        "migration_id"
+      ],
+      "fields": [
+        {
+          "name": "migration_id",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "migration_version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "applied_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_migration_markers_pkey",
+          "definition": "PRIMARY KEY (migration_id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_newsletter_subscribers",
+      "workbook": "operations",
+      "sheet": "newsletter_subscribers",
+      "primaryKey": [
+        "email"
+      ],
+      "fields": [
+        {
+          "name": "email",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "source",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_newsletter_subscribers_pkey",
+          "definition": "PRIMARY KEY (email)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_presentation_revisions",
+      "workbook": "content",
+      "sheet": "presentation_revisions",
+      "primaryKey": [
+        "presentation_key",
+        "version"
+      ],
+      "fields": [
+        {
+          "name": "presentation_key",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "document",
+          "sqlType": "jsonb",
+          "nullable": false,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "actor",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "operation",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_presentation_revisions_pkey",
+          "definition": "PRIMARY KEY (presentation_key, version)"
+        },
+        {
+          "name": "rivya_presentation_revisions_presentation_key_fkey",
+          "definition": "FOREIGN KEY (presentation_key) REFERENCES rivya_presentations(presentation_key)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_presentations",
+      "workbook": "content",
+      "sheet": "presentations",
+      "primaryKey": [
+        "presentation_key"
+      ],
+      "fields": [
+        {
+          "name": "presentation_key",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "draft",
+          "sqlType": "jsonb",
+          "nullable": false,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "published",
+          "sqlType": "jsonb",
+          "nullable": true,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "published_version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "updated_by",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "updated_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_presentations_pkey",
+          "definition": "PRIMARY KEY (presentation_key)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_privacy_controls",
+      "workbook": "operations",
+      "sheet": "privacy_controls",
+      "primaryKey": [
+        "order_id"
+      ],
+      "fields": [
+        {
+          "name": "order_id",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "last_contact_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "became_order",
+          "sqlType": "boolean",
+          "nullable": false,
+          "representation": "boolean"
+        },
+        {
+          "name": "closed_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "ongoing_follow_up",
+          "sqlType": "boolean",
+          "nullable": false,
+          "representation": "boolean"
+        },
+        {
+          "name": "hold_reason",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "hold_review_on",
+          "sqlType": "date",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "deletion_requested_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "identity_verified_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "updated_by",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "updated_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "erased_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_privacy_controls_order_id_fkey",
+          "definition": "FOREIGN KEY (order_id) REFERENCES rivya_studio_orders(id)"
+        },
+        {
+          "name": "rivya_privacy_controls_pkey",
+          "definition": "PRIMARY KEY (order_id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_public_media",
+      "workbook": "content",
+      "sheet": "public_media",
+      "primaryKey": [
+        "path"
+      ],
+      "fields": [
+        {
+          "name": "path",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "draft",
+          "sqlType": "jsonb",
+          "nullable": false,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "published",
+          "sqlType": "jsonb",
+          "nullable": true,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "updated_by",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "updated_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_public_media_pkey",
+          "definition": "PRIMARY KEY (path)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_references",
+      "workbook": "operations",
+      "sheet": "references",
+      "primaryKey": [
+        "id"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "guest_hash",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "request_key",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "pathname",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "bytes",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "inquiry_id",
+          "sqlType": "uuid",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "upload_key",
+          "sqlType": "uuid",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "state",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "storage_provider",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "normalized_mime",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "linked_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "upload_sha256",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "write_token",
+          "sqlType": "uuid",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "write_expires_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": true,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_references_inquiry_id_fkey",
+          "definition": "FOREIGN KEY (inquiry_id) REFERENCES rivya_inquiries(id)"
+        },
+        {
+          "name": "rivya_references_pathname_key",
+          "definition": "UNIQUE (pathname)"
+        },
+        {
+          "name": "rivya_references_pkey",
+          "definition": "PRIMARY KEY (id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_restoration_conflicts",
+      "workbook": "system",
+      "sheet": "restoration_conflicts",
+      "primaryKey": [
+        "source_namespace",
+        "source_entity",
+        "source_id",
+        "field_path"
+      ],
+      "fields": [
+        {
+          "name": "source_namespace",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "source_entity",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "source_id",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "field_path",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "current_digest",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "proposed_digest",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "disposition",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_restoration_conflicts_pkey",
+          "definition": "PRIMARY KEY (source_namespace, source_entity, source_id, field_path)"
+        },
+        {
+          "name": "rivya_restoration_conflicts_source_namespace_source_entity_fkey",
+          "definition": "FOREIGN KEY (source_namespace, source_entity, source_id) REFERENCES rivya_restoration_crosswalk(source_namespace, source_entity, source_id) ON DELETE RESTRICT"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_restoration_crosswalk",
+      "workbook": "system",
+      "sheet": "restoration_crosswalk",
+      "primaryKey": [
+        "source_namespace",
+        "source_entity",
+        "source_id"
+      ],
+      "fields": [
+        {
+          "name": "source_namespace",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "source_entity",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "source_id",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "destination_kind",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "destination_id",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "source_digest",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "expected_version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "evidence",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_restoration_crosswalk_pkey",
+          "definition": "PRIMARY KEY (source_namespace, source_entity, source_id)"
+        },
+        {
+          "name": "rivya_restoration_crosswalk_source_namespace_source_entity__key",
+          "definition": "UNIQUE (source_namespace, source_entity, destination_kind, destination_id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_revisions",
+      "workbook": "content",
+      "sheet": "revisions",
+      "primaryKey": [
+        "kind",
+        "entity_key",
+        "version"
+      ],
+      "fields": [
+        {
+          "name": "kind",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "entity_key",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "document",
+          "sqlType": "jsonb",
+          "nullable": false,
+          "representation": "preserved-json"
+        },
+        {
+          "name": "actor",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "operation",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_revisions_pkey",
+          "definition": "PRIMARY KEY (kind, entity_key, version)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_staff",
+      "workbook": "security",
+      "sheet": "staff",
+      "primaryKey": [
+        "id"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "login",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "name",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "password_hash",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "role",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "active",
+          "sqlType": "boolean",
+          "nullable": false,
+          "representation": "boolean"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_staff_login_key",
+          "definition": "UNIQUE (login)"
+        },
+        {
+          "name": "rivya_staff_pkey",
+          "definition": "PRIMARY KEY (id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_storage_budget",
+      "workbook": "operations",
+      "sheet": "storage_budget",
+      "primaryKey": [
+        "id"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "bytes",
+          "sqlType": "bigint",
+          "nullable": false,
+          "representation": "decimal-string"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_storage_budget_pkey",
+          "definition": "PRIMARY KEY (id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_studio_login_limits",
+      "workbook": "security",
+      "sheet": "studio_login_limits",
+      "primaryKey": [
+        "key"
+      ],
+      "fields": [
+        {
+          "name": "key",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "attempts",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "reset_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_studio_login_limits_pkey",
+          "definition": "PRIMARY KEY (key)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_studio_order_events",
+      "workbook": "operations",
+      "sheet": "studio_order_events",
+      "primaryKey": [
+        "id"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "sqlType": "bigint",
+          "nullable": false,
+          "representation": "decimal-string"
+        },
+        {
+          "name": "order_id",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "actor",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "from_status",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        },
+        {
+          "name": "to_status",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "reason",
+          "sqlType": "text",
+          "nullable": true,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_studio_order_events_order_id_fkey",
+          "definition": "FOREIGN KEY (order_id) REFERENCES rivya_studio_orders(id)"
+        },
+        {
+          "name": "rivya_studio_order_events_pkey",
+          "definition": "PRIMARY KEY (id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_studio_orders",
+      "workbook": "operations",
+      "sheet": "studio_orders",
+      "primaryKey": [
+        "id"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "sqlType": "uuid",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "client",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "title",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "status",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "version",
+          "sqlType": "integer",
+          "nullable": false,
+          "representation": "integer"
+        },
+        {
+          "name": "created_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "updated_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_studio_orders_pkey",
+          "definition": "PRIMARY KEY (id)"
+        }
+      ]
+    },
+    {
+      "sourceTable": "rivya_studio_sessions",
+      "workbook": "security",
+      "sheet": "studio_sessions",
+      "primaryKey": [
+        "token_hash"
+      ],
+      "fields": [
+        {
+          "name": "token_hash",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "credential_version",
+          "sqlType": "text",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "expires_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "idle_expires_at",
+          "sqlType": "timestamp with time zone",
+          "nullable": false,
+          "representation": "text"
+        },
+        {
+          "name": "staff_id",
+          "sqlType": "uuid",
+          "nullable": true,
+          "representation": "text"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rivya_studio_sessions_pkey",
+          "definition": "PRIMARY KEY (token_hash)"
+        },
+        {
+          "name": "rivya_studio_sessions_staff_id_fkey",
+          "definition": "FOREIGN KEY (staff_id) REFERENCES rivya_staff(id)"
+        }
+      ]
+    }
+  ]
+}

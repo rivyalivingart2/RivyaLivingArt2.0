@@ -1,0 +1,127 @@
+{
+  "at": "2026-10-24T06:49:50.737Z",
+  "baselineRevision": "e9d32283a35765eb7e56d21281e4ca00c1563739",
+  "branch": "codex/sheets-drive-foundation",
+  "sourceIdentity": "New implementation source hashes below identify the tested local tree; existing app files are unchanged from the baseline.",
+  "implementationFiles": [
+    {
+      "path": "src/lib/google-workspace/record-codec.ts",
+      "sha256": "518fc04482b034d167b0c23c2c29b604d3d7c5351e0d9f5a264e07c872d1a741"
+    },
+    {
+      "path": "src/lib/google-workspace/google-reader.ts",
+      "sha256": "8ea4c3d4ebaeb13efff655ab9775bd4c05214291d0652e55476b83eda234ab56"
+    },
+    {
+      "path": "src/lib/google-workspace/schema.json",
+      "sha256": "246acf819050e20908c7b851652e927d4335c5da1ed951edc7007f523eb627e5"
+    },
+    {
+      "path": "tools/google-workspace/migration.mjs",
+      "sha256": "7fbe343f2af05516c3a64077b25f49f3b3b992efa191bb1dff6ab46a66a65ca0"
+    },
+    {
+      "path": "tools/google-workspace/rehearse.mjs",
+      "sha256": "ca7b370155d9930dc1071c8aa437a58ba50d0f82d67958247a39352cc1ddc244"
+    },
+    {
+      "path": "tests/google-workspace-record-codec.test.mjs",
+      "sha256": "57cabd426b7cb97f96f5f75b3dadcf2229aface03f2a1ef98085bf22be36b7f0"
+    },
+    {
+      "path": "tests/google-workspace-google-reader.test.mjs",
+      "sha256": "e10b7e9e45a93e5ab835104c320df30aeb8976ee6da6fbfb62f3ef03c908e125"
+    },
+    {
+      "path": "tests/google-workspace-migration.test.mjs",
+      "sha256": "da4f42081216ae793063ca133e162b8376ce303c9ebba37630d8145c32ad42c0"
+    }
+  ],
+  "mainRevision": "1936cbbe25c1c7ccd75cab82057354ae94f6ebc0",
+  "production": {
+    "revision": "1936cbbe25c1c7ccd75cab82057354ae94f6ebc0",
+    "state": "READY",
+    "freshDatabaseVerification": false,
+    "newDeployment": false
+  },
+  "tests": {
+    "application": {
+      "passed": 448,
+      "failed": 0,
+      "newGoogleFoundationTests": 51
+    },
+    "preflight": {
+      "passed": 12,
+      "failed": 0,
+      "sandboxAttempt": "Git fixture initialization was blocked; unchanged tests passed with local fixture execution allowed"
+    },
+    "typeScript": "PASS",
+    "scopedEslint": "PASS",
+    "diffCheck": "PASS",
+    "independentReview": "Three identified contract gaps fixed and regression-tested"
+  },
+  "preservation": {
+    "localBusinessRows": 400,
+    "localTransientRows": 6,
+    "tables": 28,
+    "columns": 230,
+    "keyConstraints": 45,
+    "allRowsUnchanged": true,
+    "schemaUnchanged": true,
+    "protectedTrackedFiles": 923,
+    "existingFilesUnchanged": true,
+    "selectedImages": 169,
+    "selectedWebpVariants": 507,
+    "selectedHashesAndDimensions": "PASS",
+    "regeneratedImages": 0
+  },
+  "rehearsal": {
+    "scope": "SYNTHETIC_LOOPBACK_READ_ONLY_IN_MEMORY",
+    "rows": 406,
+    "tables": 28,
+    "constraintsChecked": 45,
+    "inlineRoundTrips": 404,
+    "driveArtifactsRequired": 2,
+    "largeArtifactBytes": [
+      46644,
+      46665
+    ],
+    "allSourceRecordsAccountedFor": true,
+    "recordsImported": 0,
+    "sourceRecordsPersisted": 0,
+    "cloudCalls": 0,
+    "logicalJsonRelationshipValidation": "PENDING",
+    "productionData": "NOT_READ"
+  },
+  "preview": {
+    "url": "http://127.0.0.1:4210/",
+    "existingBuild": "J0mF2NzSlOPFqGX4L_g0e",
+    "newBuildRun": false,
+    "homepagePresenceVerified": true,
+    "sevenWidthSweep": "NOT_RERUN_NO_UI_CHANGE"
+  },
+  "phases": {
+    "0": "AUDIT_SCOPE_COMPLETE_WITH_EXPLICIT_LIVE_VERIFICATION_GAPS",
+    "1": "LOCAL_ARCHITECTURE_AND_PLAN_COMPLETE",
+    "2": "PARTIAL_LOCAL_CODEC_PLANNER_READ_TRANSPORT_VERIFIED",
+    "3": "READ_ONLY_LOCAL_MAPPING_PREFLIGHT_ONLY",
+    "4-11": "PENDING_RETAIN_PRIOR_IMPLEMENTATIONS"
+  },
+  "externalMutations": {
+    "googleWrites": 0,
+    "productsAdded": 0,
+    "archiveImports": 0,
+    "publication": false,
+    "push": false,
+    "pullRequest": false,
+    "deployment": false,
+    "cutover": false
+  },
+  "runtime": {
+    "googleProviderActivated": false,
+    "oldDatabaseDependencyRemoved": false,
+    "oldBlobDependencyRemoved": false,
+    "googleRuntimeConfigurationPresent": false
+  },
+  "privateEvidenceDirectory": "test-results/google-workspace-2026-10-24/"
+}
