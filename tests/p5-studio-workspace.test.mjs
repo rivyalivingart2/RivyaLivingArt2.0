@@ -18,13 +18,15 @@ test('page finder supports existing aliases and all query words without changing
 });
 
 test('inactive tools leave navigation while their guarded bookmarks remain registered',()=>{
- for(const key of ['import','subscribers']){
+ for(const key of ['import']){
   assert.equal(studioDestinations(true).some(m=>m.key===key),false);
   assert.deepEqual(studioDestinations(true,key),[]);
   assert.equal(studioRoute([key])?.adminOnly,true);
   assert.equal(studioModule(key)?.key,key);
  }
- assert.equal(studioNavigationModules.length,studioModules.length-2);
+ assert.equal(studioNavigationModules.length,studioModules.length-1);
+ assert.equal(studioDestinations(true,'subscribers')[0].key,'subscribers');
+ assert.deepEqual(studioDestinations(false,'subscribers'),[]);
  assert.deepEqual(studioDestinations(false).map(m=>m.key),studioModules.filter(m=>!m.adminOnly).map(m=>m.key));
 });
 test('task cards round-trip only the four supported queue filters and request a readable list',()=>{

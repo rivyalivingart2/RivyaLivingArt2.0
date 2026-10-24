@@ -1,4 +1,11 @@
-# Current Phase 3 disposition — owner-selected images, 24 October 2026
+# Current disposition — Phase 4 in progress, 24 October 2026
+
+The owner authorized starting Phase 4 from `924978a`, locally, with the selected earlier images and no products or archived imports. [The Phase 4 checkpoint](phase4/PHASE-4-CHECKPOINT.md), [verification](phase4/verification.json) and [workflow ledger](phase4/workflow-ledger.csv) record two delivered paths: selected images to private Studio metadata drafts, and newsletter signup to subscriber list/filters/pagination/CSV. No publication or release occurred.
+
+Full Phase 4 public/Studio parity is not complete. Complete the remaining media organization/bulk, editorial taxonomy/bulk, public conditional-state, inquiry/order/staff, recovery, translation/SEO and matched visual workflows. The original 156-action and 98-route inventories remain authoritative scope, subject to the owner's product/import exclusions and protected current data/login. Phases 5–7 retain their vendor/scraper, catalogue and integration/release work. Do not interpret this checkpoint as their completion or authorization to publish.
+
+---
+# Historical Phase 3 disposition — owner-selected images, 24 October 2026
 
 [The owner-selection checkpoint](phase3/PHASE-3-OWNER-SELECTION.md) and [fresh receipt](phase3/owner-selection-verification.json) supersede earlier Photos/fidelity work queues. The owner chose all 169 earlier 4215 images for the local website, rejected the newer cutout experiment, and excluded Photos as duplicate coverage. Do not resume excluded work or treat the selection as documentary/customer-evidence certification.
 

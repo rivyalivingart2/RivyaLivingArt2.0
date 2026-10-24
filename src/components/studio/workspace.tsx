@@ -54,6 +54,7 @@ const AnalyticsPanel=dynamic(()=>import('./analytics-panel').then(m=>m.Analytics
 const CatalogueCategories=dynamic(()=>import('./catalogue-categories').then(m=>m.CatalogueCategories),{loading:WorkspaceLoading});
 const EditorialDesk=dynamic(()=>import('./editorial-desk').then(m=>m.EditorialDesk),{loading:WorkspaceLoading});
 const ConditionalWorkspace=dynamic(()=>import('./conditional-workspace').then(m=>m.ConditionalWorkspace),{loading:WorkspaceLoading});
+const SubscriberWorkspace=dynamic(()=>import('./subscriber-workspace').then(m=>m.SubscriberWorkspace),{loading:WorkspaceLoading});
 function WorkspaceLoading(){return <p data-studio-part="status" className={s.status} role="status">Opening this workspace page…</p>;}
 
 const moduleIcons = {'content-register':FileText,'editorial-order':FileText,'analytics':Activity,'categories':Boxes,'import':Boxes,'exports':Boxes,'research':Boxes,'content-gaps':Boxes,'process':FileText,'materials':FileText,'forms':FileText,'journal':FileText,'portfolio':FileText,'testimonials':FileText,'faqs':FileText,'pages':FileText,'landing-pages':FileText,'seo':FileText,'subscribers':FileText,'content-lab':FileText,overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,sections:LayoutDashboard,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,legacy:FileText,translations:Languages,'route-review':ExternalLink,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
@@ -65,7 +66,7 @@ const moduleViews = {
  analytics:()=> <AnalyticsPanel/>,
  categories:({admin}:ModuleContext)=> <CatalogueCategories admin={admin}/>,
  import:()=> <ConditionalWorkspace view="import"/>,
- subscribers:()=> <ConditionalWorkspace view="subscribers"/>,
+ subscribers:()=> <SubscriberWorkspace/>,
  exports:({admin}:ModuleContext)=><Operations view="activity" admin={admin} exportOnly/>,
  forms:({admin}:ModuleContext)=><CatalogueEditor admin={admin} formsOnly/>,
  'content-gaps':()=> <ContentHealth gapsOnly/>,

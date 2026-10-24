@@ -1,4 +1,15 @@
-# Current execution — owner-selected website images, 24 October 2026
+# Current execution — Phase 4 started locally, 24 October 2026
+
+Continued from `924978a` on `codex/exact-legacy-restoration`. Read [the Phase 4 checkpoint](docs/restoration/exact-legacy-2026-10-21/phase4/PHASE-4-CHECKPOINT.md), [verification](docs/restoration/exact-legacy-2026-10-21/phase4/verification.json) and [workflow ledger](docs/restoration/exact-legacy-2026-10-21/phase4/workflow-ledger.csv). **Phase 4 is in progress, not complete.**
+
+Two real local workflows are delivered: the earlier 169 owner-selected images can be searched and opened as private Studio metadata drafts; website newsletter signups can be searched, filtered, paged and exported from the restored Subscribers screen. Selected image bytes and original-parent lineage are verified. No image was published or assigned to products, customers or reviews. Remaining media bulk/folder/tag operations, editorial taxonomy/bulk workflows, public-state parity, role/recovery and final visual acceptance remain in the ledger.
+
+Final local build `MMFCYzH51pf9AL2D31SVA`: 397 application tests, 56 isolation/mapping checks, 12 preflight checks and 15 targeted API scenarios pass. All 169 originals, 507 selected WebP variants, 301 original media/login files and 21 protected hashes verify. All 388 pre-existing non-session rows across 26 local tables remain unchanged. Test additions: one private image draft, four revisions/audit entries and three synthetic newsletter signups; authentication session/rate-limit changes are reported separately.
+
+**Keep everything local.** No products, archived catalogue/Sheets imports, publication, push/PR/deployment, production changes or external messages. Preserve current data/login, the populated databases and private evidence. Do not reseed or replay request-table repair. Google Photos remains owner-excluded; rejected cutouts remain unused. The selected website collection remains at `http://127.0.0.1:4210/creations`; Studio media and subscribers run on 4210. The unchanged old isolated reference runs on 4212 with alternate PostgreSQL loopback port 55442. Earlier entries below are historical.
+
+---
+# Historical execution — owner-selected website images, 24 October 2026
 
 Continued from `c88071a` on `codex/exact-legacy-restoration`. Read [the owner-selection checkpoint](docs/restoration/exact-legacy-2026-10-21/phase3/PHASE-3-OWNER-SELECTION.md) and [verification](docs/restoration/exact-legacy-2026-10-21/phase3/owner-selection-verification.json) first. The owner chose the **earlier 169-image collection at 4215** for the local website and rejected the newer cutout experiment. Google Photos is **owner-excluded as duplicate coverage**; do not resume its downloads or claim independently verified library equality.
 

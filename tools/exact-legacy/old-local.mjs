@@ -7,17 +7,21 @@ import {spawn,execFileSync} from 'node:child_process';
 import {randomBytes} from 'node:crypto';
 const command=process.argv[2],root=resolve('test-results/exact-legacy-2026-10-21/old-runtime'),app=resolve('../OLDWEBSITE-isolated');
 const resumeEmpty=process.argv.includes('--resume-empty');
+// Windows may reserve the historical port after a restart. This opt-in only
+// changes the reference listener; the same preserved data directory is used.
+const referencePort=process.argv.includes('--alternate-reference-port')?55442:55444;
+assert.ok(referencePort===55444||command==='start');
 assert.ok(['prepare','build','start','stop'].includes(command));assert.ok(process.versions.node.startsWith('22.'));
 assert.equal(readdirSync(app).filter(n=>/^\.env(?:\.|$)/.test(n)&&n!=='.env.example').length,0);
 const configPath=resolve(root,'config.json'),data=resolve(root,'pgdata'),stopFile=resolve(root,'stop');
 if(command==='stop'){writeFileSync(stopFile,'stop');process.exit(0);}
 const current=JSON.parse(readFileSync('test-results/exact-legacy-2026-10-21/runtime/config.json','utf8'));
-const target={host:'127.0.0.1',port:55444,user:'rivya_old_reference',database:'rivya_old_reference'};
+const target={host:'127.0.0.1',port:referencePort,user:'rivya_old_reference',database:'rivya_old_reference'};
 const url='postgresql://rivya_old_reference@127.0.0.1:55444/rivya_old_reference';
 const config=existsSync(configPath)?JSON.parse(readFileSync(configPath,'utf8')):{url,AUTH_SECRET:randomBytes(32).toString('hex'),email:'reference-owner@example.invalid',password:randomBytes(24).toString('hex')};
 assert.equal(config.url,url);
 const env={};for(const key of ['PATH','Path','SystemRoot','SYSTEMROOT','WINDIR','COMSPEC','TEMP','TMP','USERPROFILE','APPDATA','LOCALAPPDATA'])if(process.env[key])env[key]=process.env[key];
-Object.assign(env,{DATABASE_URL:url,AUTH_SECRET:config.AUTH_SECRET,AUTH_TRUST_HOST:'true',AUTH_URL:'http://127.0.0.1:4212',NEXT_PUBLIC_SITE_URL:'http://127.0.0.1:4212',NEXT_TELEMETRY_DISABLED:'1',NODE_ENV:'development'});
+Object.assign(env,{DATABASE_URL:url.replace(':55444/',':'+referencePort+'/'),RIVYA_OLD_REFERENCE_PORT:String(referencePort),AUTH_SECRET:config.AUTH_SECRET,AUTH_TRUST_HOST:'true',AUTH_URL:'http://127.0.0.1:4212',NEXT_PUBLIC_SITE_URL:'http://127.0.0.1:4212',NEXT_TELEMETRY_DISABLED:'1',NODE_ENV:'development'});
 const run=(file,args,cwd=app,extra={})=>new Promise((yes,no)=>{const child=spawn(file,args,{cwd,env:{...env,...extra},stdio:'inherit',windowsHide:true});child.once('error',no);child.once('exit',code=>code===0?yes():no(Error('Isolated reference command failed: '+code)));});
 const control=args=>run(resolve(current.bin,'pg_ctl.exe'),args,process.cwd());
 const {default:pg}=await import(pathToFileURL(current.pgModule).href);
@@ -30,11 +34,12 @@ try{
   appendFileSync(resolve(data,'postgresql.conf'),"\nlisten_addresses = '127.0.0.1'\nport = 55444\nmax_connections = 30\nshared_buffers = '16MB'\n");
   }
  }
- await control(['start','-D',data,'-l',resolve(root,'postgres.log'),'-w','-t','30']);started=true;
+ await control(['start','-D',data,'-l',resolve(root,'postgres.log'),'-o','-p '+referencePort,'-w','-t','30']);started=true;
  const db=new pg.Client({...target,database:command==='prepare'?'postgres':target.database});await db.connect();
  try{
   assert.equal(resolve((await db.query('SHOW data_directory')).rows[0].data_directory).toLowerCase(),data.toLowerCase());
-  assert.equal((await db.query('SELECT inet_server_port() AS port')).rows[0].port,55444);
+  assert.equal((await db.query('SELECT inet_server_port() AS port')).rows[0].port,referencePort);
+  assert.equal((await db.query('SELECT current_user AS name')).rows[0].name,target.user);
   if(command==='prepare'){
    const databases=(await db.query("SELECT datname FROM pg_database WHERE NOT datistemplate AND datname<>'postgres'")).rows;
    if(resumeEmpty)assert.deepEqual(databases,[{datname:target.database}]);

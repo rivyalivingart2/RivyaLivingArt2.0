@@ -1,4 +1,15 @@
-# Latest local continuation — owner-selected collection, 24 October 2026
+# Latest local continuation — Phase 4, 24 October 2026
+
+Continue the local Phase 4 descendant of `924978a` on `codex/exact-legacy-restoration`. Read [the Phase 4 checkpoint](phase4/PHASE-4-CHECKPOINT.md), [receipt](phase4/verification.json), [workflow ledger](phase4/workflow-ledger.csv) and current top project documents. Phase 4 has started; it is not complete.
+
+Delivered: selected earlier 169-image collection → private Studio drafts → metadata save/reload, and website newsletter capture → subscriber list/filter/pagination → CSV. Final build `MMFCYzH51pf9AL2D31SVA` passes 397 application, 56 isolation/mapping, 12 preflight and 15 targeted API scenarios. The 388 existing non-session rows / 26 tables, 301 original media/login files, 21 protected hashes and all 169 source/507 selected export hashes verify. Additions are local and unpublished: one image draft, four revisions/audit entries and three synthetic signups. No products or archived imports.
+
+Use the remaining ledger and full original action/route inventories. Complete real operations rather than counting menus. Preserve current data/login and the populated databases. Keep the chosen earlier images; do not resume Google Photos, rejected cutouts, reseeding or request-table repair. No push, PR, deployment, CMS publication, cloud writes, production migration or external messaging is authorized. The deleted old database cannot supply records; do not invent associations.
+
+App: `http://127.0.0.1:4210/`; Studio: `/studio/media`, `/studio/subscribers`; selected gallery: `/creations`. The old source app is available locally at 4212; Windows refused its historical database port, so start it with `tools/exact-legacy/old-local.mjs start --alternate-reference-port` using the same preserved database on 55442. Never run its prepare/seed commands. Private Phase 4 evidence is ignored under `test-results/exact-legacy-2026-10-21/phase4/`; keep it and the Phase 3 manifests/originals. The new preservation `before` snapshot must not be overwritten.
+
+---
+# Historical local continuation — owner-selected collection, 24 October 2026
 
 Continue the local descendant of `c88071a` on `codex/exact-legacy-restoration`. Read [Phase 3 owner selection](phase3/PHASE-3-OWNER-SELECTION.md), [verification](phase3/owner-selection-verification.json), the latest owner decision and top project-state entries.
 

@@ -1,0 +1,83 @@
+{
+  "at": "2026-10-24T05:41:23.331Z",
+  "sourceCheckpoint": "924978a",
+  "branch": "codex/exact-legacy-restoration",
+  "phase4Status": "IN_PROGRESS",
+  "buildId": "MMFCYzH51pf9AL2D31SVA",
+  "scope": "LOCAL_ONLY",
+  "implemented": [
+    "Selected 169-image collection to private Studio drafts with exact bytes and source lineage",
+    "Metadata draft save/reload, dirty-state protection, concurrent preparation deduplication",
+    "Website signup to administrator subscriber list, search/source/UTC-date filters, sorting, 50-row pagination and complete filtered CSV"
+  ],
+  "checks": {
+    "application": 397,
+    "applicationFailures": 0,
+    "isolationMapping": 56,
+    "preflight": 12,
+    "targetedApiScenarios": 15,
+    "build": true,
+    "typecheck": true,
+    "scopedEslint": true,
+    "selectedOriginalHashes": 169,
+    "exactSelectedWebpHashes": 507,
+    "protectedFileHashes": 21,
+    "originalMediaLoginFiles": 301
+  },
+  "preservation": {
+    "scope": "existing isolated local database; not production evidence",
+    "existingRowsUnchanged": 388,
+    "tables": 26,
+    "excludedTransientTables": [
+      "rivya_studio_sessions",
+      "rivya_studio_login_limits"
+    ],
+    "additions": {
+      "privateMediaDrafts": 1,
+      "mediaRevisions": 4,
+      "auditEntries": 4,
+      "syntheticNewsletterSignups": 3
+    },
+    "existingProductsChanged": 0,
+    "productsAdded": 0,
+    "archivedImports": 0,
+    "publishedRecordsAdded": 0
+  },
+  "browser": {
+    "subscriberSignupSaved": true,
+    "subscriberFilters": true,
+    "csvDownload": true,
+    "selectedImageDraftOpened": true,
+    "metadataSavedReloaded": true,
+    "dirtySwitchBlocked": true,
+    "desktopComparison": true,
+    "mobileWidth": 390,
+    "mobileHeight": 844,
+    "mobileDocumentWidth": 375,
+    "keyboardScrollableTable": true,
+    "wholePhaseVisualAcceptance": false
+  },
+  "oldReference": {
+    "source": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "appPort": 4212,
+    "postgresPort": 55442,
+    "existingDatabaseReused": true,
+    "reseeded": false
+  },
+  "remaining": [
+    "Complete old media folder/tag/favourite/bulk workflow",
+    "Full editorial taxonomy/bulk and contextual draft placements",
+    "All public and Studio role/error/recovery/visual states",
+    "Launching-soon source and larger subscriber-list browser acceptance",
+    "Phases 5-7 integrations and authorized release"
+  ],
+  "release": {
+    "pushed": false,
+    "prCreated": false,
+    "deployed": false,
+    "productionConnected": false,
+    "cmsPublished": false,
+    "externalMessages": false
+  },
+  "privateEvidence": "test-results/exact-legacy-2026-10-21/phase4/"
+}
