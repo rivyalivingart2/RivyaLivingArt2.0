@@ -36,6 +36,28 @@ test('real REST request construction supports verified create/read at one reserv
  assert.ok(h.requests.every(r=>!new URL(r.url).searchParams.has('q')));
 });
 
+test('opaque printable proxy credentials are preserved for fixed-host create and read requests',async()=>{
+ const h=server(),token='proxy-placeholder:unit[credential](binding)=opaque';
+ const io=createGoogleDriveJsonIO(config,{...h.dependencies,token:async()=>token}),documents=createDriveDocumentStore(config,io);
+ const payload={title:'Proxy transport probe'},ref=await documents.ensureJson(registration.fileId,payload);
+ assert.deepEqual(await documents.readJson(ref),payload);
+ assert.ok(h.requests.some(request=>request.init.method==='POST'));
+ assert.ok(h.requests.every(({url,init})=>new URL(url).origin==='https://www.googleapis.com'&&init.headers.Authorization==='Bearer '+token&&init.redirect==='manual'&&init.credentials==='omit'));
+ const bounded=createGoogleDriveJsonIO(config,{token:async()=>'x'.repeat(8192),fetch:async(_url,init)=>{
+  assert.equal(init.headers.Authorization,'Bearer '+'x'.repeat(8192));return json(meta(2));
+ }});
+ assert.equal((await bounded.metadata(registration.fileId,signal())).id,registration.fileId);
+});
+
+test('empty oversized control space and non-ASCII credentials fail before any Drive request',async()=>{
+ for(const token of [null,undefined,42,'','line\r\ninjection','tab\tvalue','nul\0value','delete\x7fvalue','unit\u0085value','unit雪','two words','x'.repeat(8193)]){
+  let calls=0;const io=createGoogleDriveJsonIO(config,{token:async()=>token,fetch:async()=>{calls++;assert.fail('invalid credentials must not fetch');}});
+  await assert.rejects(io.metadata(registration.fileId,signal()),{code:'PROVIDER_UNAVAILABLE'});
+  await assert.rejects(io.create({fileId:registration.fileId,parentId:registration.parentId,mimeType:'application/json',bytes:canonicalDocumentBytes({})},signal()),{code:'PROVIDER_UNAVAILABLE'});
+  assert.equal(calls,0);
+ }
+});
+
 test('REST provider plus document store recovers an unknown POST outcome by reading the reserved ID',async()=>{
  const h=server();h.loseAck=true;const documents=createDriveDocumentStore(config,h.io);
  const ref=await documents.ensureJson(registration.fileId,{title:'One'});assert.equal(ref.fileId,registration.fileId);assert.equal(h.files.size,1);assert.equal(h.requests.filter(r=>r.init.method==='POST').length,1);

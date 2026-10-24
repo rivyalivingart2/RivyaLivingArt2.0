@@ -119,7 +119,10 @@ function validateProtectedSheet(sheet: JsonObject, sheetId: number, registry: Is
   const allowed = new Set([registry.ownerEmail, registry.writer.executionIdentityEmail]);
   const protectedRanges = list(sheet.protectedRanges);
   requireState(protectedRanges.some(raw => {
-    if (!object(raw) || (raw.warningOnly !== undefined && raw.warningOnly !== false) || !object(raw.range) || raw.range.sheetId !== sheetId ||
+    // Sheets omits the protobuf default sheetId=0 inside a GridRange. Only an
+    // absent field defaults to zero; a missing range or explicit invalid ID fails.
+    if (!object(raw) || (raw.warningOnly !== undefined && raw.warningOnly !== false) || !object(raw.range) ||
+      (raw.range.sheetId === undefined ? 0 : raw.range.sheetId) !== sheetId ||
       (raw.unprotectedRanges !== undefined && (!Array.isArray(raw.unprotectedRanges) || raw.unprotectedRanges.length !== 0))) return false;
     const range = raw.range;
     if ((range.startRowIndex ?? 0) !== 0 || (range.startColumnIndex ?? 0) !== 0 || (range.endRowIndex ?? 100) !== 100 || (range.endColumnIndex ?? 12) !== 12) return false;
@@ -180,7 +183,10 @@ export async function verifyIsolatedGoogleReadiness(input: unknown, options: Opt
   try {registry = validateIsolatedSetupRegistry(input); result.checks.push({id: 'registry', status: 'passed', reason: 'local-registry-shape-validated-only'});}
   catch {result.checks.push({id: 'registry', status: 'blocked', reason: 'invalid-private-registry'}); return result;}
   const token = options.token;
-  if (typeof token !== 'string' || !/^[-A-Za-z0-9._~+/]+={0,2}$/.test(token) || token.length > 8192) {
+  // The managed HTTPS proxy may inject an opaque printable placeholder and
+  // replace it at the approved destination. Validate header safety, not the
+  // placeholder's provider-specific token alphabet; never inspect its value.
+  if (typeof token !== 'string' || token.length === 0 || token.length > 8192 || !/^[\x21-\x7e]+$/.test(token)) {
     result.checks.push({id: 'runtime-access', status: 'blocked', reason: 'RIVYA_GOOGLE_ACCESS_TOKEN-missing-or-invalid'});
     result.checks.push({id: 'google-management-reads', status: 'not-run', reason: 'runtime-access-required'}); return result;
   }

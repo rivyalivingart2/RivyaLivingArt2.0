@@ -1,5 +1,7 @@
 # Cloud Google setup and acceptance
 
+**Current state:** the private folders, four protected workbooks and one version-1 signed writer deployment are installed on Google. Real signed writer, Drive JSON, durable job and private publication-pointer checks have run successfully with non-product probes. Read [SANDBOX-CHECKPOINT.md](SANDBOX-CHECKPOINT.md) and [sandbox-verification.json](sandbox-verification.json) for exact evidence and remaining gaps. The owner requires the environment to stay unpublished. Reuse the existing deployment and registry; do not repeat initial provisioning.
+
 This continuation starts at the verified PR #66 main checkpoint `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30`, on `codex/google-cloud-acceptance`. The owner authorized the pending isolated Google setup and selected the owning account in chat. That identity is recorded in the ignored private registry, not in this public document. Remaining choices default to private, owner-only resources and owner-executed Apps Script. The current application provider remains authoritative.
 
 The existing Phase 2 implementation is retained. These tools prepare structural installation and inspect an actual installation; they do not replace the writer, create business data, switch application persistence, or certify the complete real-provider acceptance matrix. Read [the isolated target plan](ISOLATED-TARGET-PLAN.md) and [service placement](SERVICE-PLACEMENT.md) alongside this guide.
@@ -8,17 +10,17 @@ The existing Phase 2 implementation is retained. These tools prepare structural 
 
 The cloud machine has checksum-verified Node 22.23.4, npm 10.9.2 and a clean lockfile installation. Source `/workspace/rivya-cloud/env.sh` before commands in `/workspace/RivyaLivingArt2.0`. The saved environment install script reproduces those dependencies; live processes must restart after a new task or publication.
 
-The environment draft declares these required Google destinations: `www.googleapis.com`, `sheets.googleapis.com`, `script.googleapis.com`, `script.google.com`, `script.googleusercontent.com`, and `oauth2.googleapis.com`. Existing package-manager presets are retained. The current runtime returned a proxy CONNECT denial for Google API access; a saved draft is not evidence that runtime networking has changed. Review/save the environment settings before retrying, and publish the environment separately when ready.
+The environment draft declares these required Google destinations: `www.googleapis.com`, `sheets.googleapis.com`, `script.googleapis.com`, `script.google.com`, `script.googleusercontent.com`, and `oauth2.googleapis.com`. Existing package-manager presets are retained. The initial runtime returned a proxy CONNECT denial; the resumed run subsequently verified live Google API access after the owner saved settings. A saved draft alone is not evidence of runtime access. Keep the environment unpublished under the current owner instruction.
 
-No Google connector or usable Google runtime binding was available during this continuation. The draft declares `RIVYA_GOOGLE_ACCESS_TOKEN` for the three management API hosts and `RIVYA_GOOGLE_REGISTRY_PATH` for the private registry path. Supply the OAuth credential only through secure environment settings. Do not place credentials in chat, command arguments, the registry, Git, or a business workbook. A supplied OAuth token must represent the expected principal and have the required resource permissions; presence alone is not access verification.
+No Google connector was available. The owner subsequently supplied a working OAuth proxy binding through secure environment settings. The draft declares `RIVYA_GOOGLE_ACCESS_TOKEN` for the three management API hosts and `RIVYA_GOOGLE_REGISTRY_PATH` for the private registry path. Do not place credentials in chat, command arguments, the registry, Git, or a business workbook. Verify live account access on resumption; a saved binding may expire and its presence alone is not access verification. The owner desktop can refresh the short-lived token privately if needed.
 
-Read-only management checks need Drive metadata, Sheets read and Apps Script project/deployment read access. Typical least-privilege scopes are `drive.metadata.readonly`, `spreadsheets.readonly`, `script.projects.readonly`, and `script.deployments.readonly`, under Google's `https://www.googleapis.com/auth/` prefix. Initial resource creation and later acceptance require separately applicable write scopes. Do not interpret a successful read token as permission to mutate production.
+The owner-approved setup scopes are `drive.file`, `drive.metadata.readonly`, `spreadsheets`, `script.projects`, and `script.deployments`, under Google's `https://www.googleapis.com/auth/` prefix. The owner enabled those APIs and Apps Script account API access; the OAuth app remains Testing with the intended owner as its test user. Do not expand scopes or interpret sandbox credentials as permission to mutate production.
 
-The writer signing key is a different credential: `createHmac` consumes its real bytes in the server process. A network-proxy placeholder cannot perform local signing. Configure matching private `GW_KEYS_JSON` Script Properties and actual secure server runtime key injection when the deployment is established. No signing key has been generated or registered in this checkpoint.
+The writer signing key is a different credential: `createHmac` consumes its real bytes in the server process. A network-proxy placeholder cannot perform local signing. The owner approved a temporary sandbox-only 0600 runtime key file in a 0700 private directory and RSA-OAEP/SHA-256 encrypted transfer into owner-browser memory. Matching `GW_KEYS_JSON` and exact four-resource `GW_RESOURCES_JSON` properties were saved privately; successful signed behavior verifies their interoperability. The ignored `runtime-secrets.json` records the file path, never its value. Use the 64 hexadecimal characters as UTF-8 key bytes, without decoding them. No ordinary environment variable or source file stores the key. This temporary arrangement is not production secret management.
 
 ## Private registry and structural plan
 
-The owner-populated scaffold is stored at `test-results/google-workspace-cloud/registry.json`, mode `0600`, ignored by Git. All resource IDs, tab IDs and deployment details remain null until observed on Google. It is deliberately invalid for execution and must never be filled with emulator or guessed identifiers.
+The actual observed registry is stored at `test-results/google-workspace-cloud/registry.json`, mode `0600`, ignored by Git. It contains the installed resource/tab IDs and the single browser-created deployment. Preserve it and its checkpoint journals. Never replace it with a scaffold or emulator/guessed identifiers. If private artifacts are absent in a later environment, that is a real resumption dependency; do not recreate business data or silently provision replacements.
 
 For a fresh environment only, create a scaffold without overwriting an existing file:
 
@@ -43,7 +45,9 @@ The plan uses exported record/ledger/audit/history headers, literal string cells
 
 **Never apply initial headers/control writes to an existing initialized or populated target.** Inspect the actual empty grids first. Never reset an inflight/committed control marker to make a readiness check pass. The initial readiness check is intentionally unsuitable for certifying a populated sandbox; later acceptance must retain mutation IDs and inspect real receipts/history.
 
-## Installation sequence once access works
+## Installation reference — already completed for this sandbox
+
+Do not rerun these creation/initialization steps against the current sandbox. Its non-product probes and committed control markers are retained evidence. No triggers or schedulers were installed. The browser completed the approved deployment consent; API reads verified version 1, exact source/manifest and owner execution with `ANYONE_ANONYMOUS` endpoint access. Drive/Sheets/project sharing remains owner-only.
 
 1. Confirm the authenticated Google account. Check for already-created resources with the exact sandbox names before creating duplicates. Do not inspect or reuse archived catalogue rows, production workbooks, or supplied media folders as canonical targets.
 2. Create or identify the four separate sandbox workbooks and the private sandbox root/eight children specified in the target plan. Keep workbooks under the sandbox root. Review complete ownership and sharing; the current default grants no additional users, groups, domains or public links.
@@ -54,6 +58,8 @@ The plan uses exported record/ledger/audit/history headers, literal string cells
 7. Execute each separate real-provider scenario in the target plan, retaining raw evidence privately. Only then advance the phase gates for migration rehearsal, reconciliation and backend integration. No current application feature flag or provider setting changes as a consequence of this guide.
 
 ## Read-only management verification
+
+The complete **initial empty-state** verifier passed all 36 checks before probes. Its private receipt is `management-before-probes.json`. This verifier deliberately requires initial empty rows/ready control and is now unsuitable as a post-probe pass/fail gate. Use the final audit and receipts named in the current checkpoint for the populated sandbox. Never reset cells to make the initial verifier pass.
 
 ```sh
 source /workspace/rivya-cloud/env.sh

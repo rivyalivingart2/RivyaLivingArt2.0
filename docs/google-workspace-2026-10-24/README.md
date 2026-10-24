@@ -1,4 +1,9 @@
-# Current cloud checkpoint — isolated setup tools; real Google access pending
+# Current cloud checkpoint — private Google foundations verified
+
+Read [the installed sandbox checkpoint](SANDBOX-CHECKPOINT.md) and [sanitized evidence](sandbox-verification.json). Private folders, four protected workbooks and the single version-1 signed writer are installed. Real non-product writer/Drive/job/private-pointer and formula-restoration checks pass; the checkpoint states remaining permissions, recovery and production gates. Browser consent/key configuration are complete. Reuse the existing resources and journals, keep the environment unpublished, and preserve the current application provider and data. No products, business migration, CMS publication, cutover or website release occurred.
+
+---
+# Historical cloud checkpoint — isolated setup tools; real Google access pending
 
 PR #66 is merged at verified main `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30`. Cloud continuation uses `codex/google-cloud-acceptance`. Read [the cloud setup guide](CLOUD-GOOGLE-SETUP.md) and [fresh verification receipt](cloud-verification.json). The owner authorized isolated Google setup and selected the owning account; the private registry records that identity while actual resource/deployment IDs remain unconfigured.
 

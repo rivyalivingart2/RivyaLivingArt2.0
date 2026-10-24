@@ -1,3 +1,11 @@
+# Current sandbox continuation override
+
+The private Google sandbox and single version-1 signed writer are now installed. Read [SANDBOX-CHECKPOINT.md](SANDBOX-CHECKPOINT.md) and [sandbox-verification.json](sandbox-verification.json) before the retained original prompt below. Core real non-product acceptance passed; the checkpoint lists the remaining permissions/recovery and production gates. Reuse the observed private registry and journals; never recreate resources or reset control cells to rerun initial checks. Browser consent and private signing configuration are complete.
+
+The latest owner direction keeps this Codex environment unpublished and all Git changes local. No push, merge, website deployment, CMS publication, business migration or production cutover is authorized. The current provider, approved public design, Studio login and existing data/media remain unchanged. A fresh authorized source export/access location is still required for real migration rehearsal; absent Windows private evidence is not data to recreate. The complete original continuation prompt follows as retained context.
+
+---
+
 # Copy-ready Codex Cloud continuation prompt
 
 Continue **Rivya Living Art** from the latest GitHub `main` in `https://github.com/rivyalivingart2/RivyaLivingArt2.0`. Inspect the actual remote head, branch and working tree, preserve existing work, and use a new `codex/` branch. The local Phase 0–2 checkpoint has been prepared for release through a PR; verify the merged PR and current head rather than assuming an old SHA is current.

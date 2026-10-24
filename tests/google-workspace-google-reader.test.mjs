@@ -123,8 +123,20 @@ test('redirect responses and unexpectedly followed URLs are refused',async()=>{
  }
 });
 
+test('opaque printable proxy credentials reach only the fixed API host unchanged',async()=>{
+ for(const token of ['proxy-placeholder:unit[credential](binding)=opaque','x'.repeat(8192)]){
+  const h=harness([json(metadata())],{dependencies:{token:async()=>token}});
+  assert.equal((await h.reader.readDriveMetadata(fileId)).id,fileId);
+  assert.equal(h.requests.length,1);
+  const {url,init}=h.requests[0];
+  assert.equal(new URL(url).origin,'https://www.googleapis.com');
+  assert.equal(init.headers.Authorization,'Bearer '+token);
+  assert.equal(init.redirect,'manual');assert.equal(init.credentials,'omit');
+ }
+});
+
 test('invalid token values and token-provider failures never make a fetch',async()=>{
- for(const token of ['', 'line\r\ninjection', 'two words', 'x'.repeat(8193)]){
+ for(const token of [null,undefined,42,'','line\r\ninjection','tab\tvalue','nul\0value','delete\x7fvalue','unit\u0085value','unit雪','two words','x'.repeat(8193)]){
   const h=harness([],{dependencies:{token:async()=>token}});await rejectsCode(h.reader.readDriveMetadata(fileId),'credentials');assert.equal(h.requests.length,0);
  }
  const h=harness([],{dependencies:{token:async()=>{throw Error('credential contents');}}});

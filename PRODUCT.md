@@ -1,4 +1,12 @@
-# Current cloud checkpoint — isolated Google setup prepared; real access pending
+# Current sandbox checkpoint — real Google foundations verified; production gates remain
+
+The private Google sandbox is installed: owner-only Drive folders, four protected 100×12 workbooks, and one owner-executed version-1 HMAC writer deployment. Real signed save/reload, replay/conflict/concurrency, client acknowledgement-loss recovery, reserved-ID Drive JSON, fresh-process job resume/cancellation, private publication-pointer and guarded formula-rejection/restoration checks passed. Read [the current checkpoint](docs/google-workspace-2026-10-24/SANDBOX-CHECKPOINT.md) and [sanitized evidence](docs/google-workspace-2026-10-24/sandbox-verification.json) for the exact coverage and remaining gaps.
+
+Reuse the observed private registry, deployment and checkpoint journals. Browser consent and matching private key configuration are complete; do not create a duplicate deployment or reset populated/control cells. Keep the Codex environment unpublished: no push, merge, website deployment, CMS publication or production cutover. Preserve public design, Studio login, current provider and all existing data/media; no products or archived imports. The sandbox retains only four synthetic non-product records and three private JSON artifacts. Business migration, phases 3–11 completion and production readiness are not claimed. Earlier entries are historical.
+
+---
+
+# Historical cloud checkpoint — isolated Google setup prepared; real access pending
 
 Continued from verified GitHub main / PR #66 commit `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30` on `codex/google-cloud-acceptance`. The owner now authorizes continuing the isolated Google setup and acceptance, then the remaining committed phases. The selected account is recorded only in the ignored private registry. Read [the cloud setup guide](docs/google-workspace-2026-10-24/CLOUD-GOOGLE-SETUP.md) and [current verification receipt](docs/google-workspace-2026-10-24/cloud-verification.json).
 

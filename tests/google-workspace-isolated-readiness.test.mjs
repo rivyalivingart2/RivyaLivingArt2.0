@@ -81,6 +81,22 @@ test('missing token or invalid private registry makes no external requests and r
   assert.equal(check(invalid,'registry').status,'blocked');assert.equal(calls,0);
 });
 
+test('opaque managed proxy credentials are accepted without being exposed in readiness receipts',async()=>{
+  const proxyCredential='proxy:<opaque-local-test-binding>';
+  const h=harness(),result=await h.run({token:proxyCredential});
+  assert.equal(result.status,'management-checks-passed');assert.ok(h.requests.length>0);
+  assert.ok(h.requests.every(({init})=>init.headers.Authorization==='Bearer '+proxyCredential));
+  assert.ok(!JSON.stringify(result).includes(proxyCredential));
+});
+
+test('unsafe or oversized credential header values fail before any external request',async()=>{
+  for(const invalid of ['', ' leading-space', 'embedded space', 'trailing-space ', 'line\rbreak', 'line\nbreak', 'tab\tvalue', 'nul\0value', 'delete\x7fvalue', 'unicode-π', 'x'.repeat(8193)]){
+    const h=harness(),result=await h.run({token:invalid});
+    assert.equal(result.status,'blocked');assert.equal(check(result,'runtime-access').reason,'RIVYA_GOOGLE_ACCESS_TOKEN-missing-or-invalid');
+    assert.equal(h.requests.length,0);
+  }
+});
+
 test('wrong authenticated account stops before any registered workbook or folder access',async()=>{
   const h=harness(registry(),({url,body})=>{if(url.pathname.endsWith('/about'))body.user.emailAddress='wrong@rivya-acceptance.dev';});
   const result=await h.run();assert.equal(check(result,'runtime-account').reason,'runtime-account-mismatch');assert.equal(h.requests.length,1);
@@ -142,6 +158,30 @@ test('unprotected sheets, formulas, bad headers, wrong dimensions and pre-existi
   for(const mutate of mutations){
     const h=harness(registry(),({url,body})=>{if(url.hostname==='sheets.googleapis.com')mutate(body);});
     const result=await h.run();assert.equal(check(result,'workbook.content.structure').status,'blocked');assert.equal(result.status,'blocked');
+  }
+});
+
+test('Google omitted zero sheetId in a protected GridRange verifies the registered zero sheet',async()=>{
+  const config=registry();for(const workbook of Object.values(config.workbooks))workbook.sheetIds.records=0;
+  const h=harness(config,({url,body})=>{
+    if(url.hostname==='sheets.googleapis.com')body.sheets[0].protectedRanges[0].range={};
+  });
+  const result=await h.run();assert.equal(result.status,'management-checks-passed');
+  for(const group of Object.keys(WORKBOOK_SPECS))assert.equal(check(result,'workbook.'+group+'.structure').status,'passed');
+});
+
+test('omitted GridRange sheetId cannot match nonzero sheets and malformed zero ranges remain rejected',async()=>{
+  const nonzero=await harness(registry(),({url,body})=>{
+    if(url.hostname==='sheets.googleapis.com')body.sheets[0].protectedRanges[0].range={};
+  }).run();
+  assert.equal(check(nonzero,'workbook.content.structure').reason,'canonical-sheet-protection-unverified');
+  for(const range of [undefined,null,[],{sheetId:null},{sheetId:'0'},{sheetId:-1},{sheetId:0.5},{sheetId:2}]){
+    const config=registry();for(const workbook of Object.values(config.workbooks))workbook.sheetIds.records=0;
+    const result=await harness(config,({url,body})=>{
+      if(url.hostname==='sheets.googleapis.com')body.sheets[0].protectedRanges[0].range=range;
+    }).run();
+    assert.equal(check(result,'workbook.content.structure').reason,'canonical-sheet-protection-unverified');
+    assert.equal(result.status,'blocked');
   }
 });
 
