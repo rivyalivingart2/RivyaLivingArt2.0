@@ -8,23 +8,26 @@ import {boundedFileBody,inspectEditorialFile} from '@/lib/editorial-file-process
 import {saveEditorialFile} from '@/lib/editorial-media-storage';
 import {validPageMedia} from '@/lib/editorial-media-model';
 import {revalidatePath} from 'next/cache';
+import {editorialExtensionsEnabled} from '@/lib/editorial-extension-feature';
 export const dynamic='force-dynamic';
 export const runtime='nodejs';
 const json=(value:unknown,status=200)=>Response.json(value,{status,headers:{'Cache-Control':'private, no-store'}});
 export async function GET(request:Request){
  try{
   if(!await studioSession())return json({error:'Sign in to continue.'},401);
+  if(!editorialExtensionsEnabled())return json({available:false,entries:[],categories:[]});
   const sql=studioDb();
   const params=new URL(request.url).searchParams;
   if(params.has('key')){const kind=params.get('kind'),key=params.get('key');if(!['category','video','model'].includes(kind||'')||!key||key.length>180)return json({error:'Invalid history selection.'},400);const revisions=await sql`SELECT version,operation,created_at FROM rivya_editorial_extension_revisions WHERE kind=${kind} AND entity_key=${key} ORDER BY version DESC LIMIT 100`;return json({revisions});}
   const [rows,categories]=await Promise.all([sql`SELECT draft,version,published FROM rivya_editorial_extensions ORDER BY kind,entity_key`,sql`SELECT DISTINCT category FROM (SELECT draft->>'category' AS category FROM rivya_catalogue UNION SELECT published->>'category' FROM rivya_catalogue WHERE published IS NOT NULL) c WHERE category IS NOT NULL ORDER BY category`]);
-  return json({entries:rows.filter(r=>validExtension(r.draft)).map(r=>({document:r.draft,version:r.version,published:r.published})),categories:categories.map(r=>r.category)});
+  return json({available:true,entries:rows.filter(r=>validExtension(r.draft)).map(r=>({document:r.draft,version:r.version,published:r.published})),categories:categories.map(r=>r.category)});
  }catch{return json({error:'Editorial extension storage is unavailable. Existing data is unchanged.'},503);}
 }
 export async function PUT(request:Request){
  if(!originAllowed(request))return json({error:'Request not allowed.'},403);
  try{
   const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);
+  if(!editorialExtensionsEnabled())return json({error:'Category and file metadata are not enabled for this website.'},503);
   const driveId=request.headers.get('x-drive-file-id')||'',filename=decodeURIComponent(request.headers.get('x-file-name')||'');
   if(!/^[A-Za-z0-9_-]{10,100}$/.test(driveId)||!filename||filename.length>180||/[<>/\\]/.test(filename))return json({error:'Provide the exact source Drive ID and filename.'},400);
   let bytes:Buffer,source:ReturnType<typeof inspectEditorialFile>;
@@ -41,6 +44,7 @@ export async function POST(request:Request){
  if(!originAllowed(request))return json({error:'Request not allowed.'},403);
  try{
   const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);
+  if(!editorialExtensionsEnabled())return json({error:'Category and file metadata are not enabled for this website.'},503);
   const body=await smallJson(request,24000);
   if(!body||!['draft','review','publish','hide','restore'].includes(body.operation)||!Number.isSafeInteger(body.version)||body.version<0||!validExtension(body.document))return json({error:'Check the media fields and saved version.'},400);
   if(!['draft','restore'].includes(body.operation)&&session.role!=='admin')return json({error:'Administrator access required.'},403);

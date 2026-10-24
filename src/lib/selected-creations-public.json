@@ -1,0 +1,4745 @@
+{
+  "schemaVersion": 1,
+  "featured": [
+    6,
+    7,
+    8,
+    30,
+    33,
+    44
+  ],
+  "images": [
+    {
+      "index": 1,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 63074,
+          "sha256": "19991d4811764ed8881119989c55a15398109d8542384a6cbc65f3e87de0a658",
+          "url": "/media/owner-creations/owner-001-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 112308,
+          "sha256": "5821575e6ab1c3119765cbbfe7fcf6f8ef3c09657419a29c3afdcfc9d2c1557a",
+          "url": "/media/owner-creations/owner-001-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 208448,
+          "sha256": "6144f4f34956fe0b6db97216fe4f75b95f8cb3483cf4505adc6a9adc94ca4d2c",
+          "url": "/media/owner-creations/owner-001-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 98872,
+          "sha256": "c408eb4044129c3c38f66904bcae650e663315a9b0b722d178eb236a5bda2489",
+          "url": "/media/owner-creations/owner-002-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 192568,
+          "sha256": "ad25dea561106f0e912da0a2613dc076f19786be194188944d12c7af64f340aa",
+          "url": "/media/owner-creations/owner-002-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 370112,
+          "sha256": "15f1002b8fc744802c054e23550e4ff875e9f5400707fcb05ba115a79e768da2",
+          "url": "/media/owner-creations/owner-002-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 115870,
+          "sha256": "d3dcc97fd20c21a67a797620941f3e0cbdcd4403373d35ceb44c6e650b921b13",
+          "url": "/media/owner-creations/owner-003-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 222900,
+          "sha256": "01b7157a9cd0fab6556cfdd72579888caa3cabcd62cceb7b8f16a73380043875",
+          "url": "/media/owner-creations/owner-003-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 428852,
+          "sha256": "512e2cc214175db2df201ce2d69d4a4bd3c00a66097b119e60a6806695da1d99",
+          "url": "/media/owner-creations/owner-003-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "category": "Nameplate",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 70996,
+          "sha256": "856065ffb79a13599f925cd80f9f6ee6ab8786c81762b711057e9e2f2c3856bc",
+          "url": "/media/owner-creations/owner-004-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 137880,
+          "sha256": "97c561ec56d335d65c5002ce3fe20932b208f50ed2320277333639fcedf061a9",
+          "url": "/media/owner-creations/owner-004-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 270954,
+          "sha256": "da77c4ebbb70dd0fa0ecde1132719d4123daeffefca2a8d613c19b4b60c0b4f0",
+          "url": "/media/owner-creations/owner-004-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 77750,
+          "sha256": "79b869976c85feac8f13b3ad955b7d44d08786cc44c85b7ba99dddf517396fcc",
+          "url": "/media/owner-creations/owner-005-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 143220,
+          "sha256": "39ed3a05276c5325ddf903e03e1923e6e1206f1968547080ed7e1e1755865dac",
+          "url": "/media/owner-creations/owner-005-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 266668,
+          "sha256": "bf52e7e12753068e44067dae440544507918cbde24b81eb64513a92764554c38",
+          "url": "/media/owner-creations/owner-005-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 115568,
+          "sha256": "a36daa764e1a02e84552bc996c7f1ecf7f28817b146988c9988c2bf30c9a4d9b",
+          "url": "/media/owner-creations/owner-006-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 210484,
+          "sha256": "3b12abcb59585d0ae1dc922a55f8dd6b6d1a3559c18a3ffbeb5b6659be20bb64",
+          "url": "/media/owner-creations/owner-006-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 392900,
+          "sha256": "9137602829da3d2b40fe48ce9738829d58638d2ad301b6c3e7459c9653481415",
+          "url": "/media/owner-creations/owner-006-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 126648,
+          "sha256": "e0717c278f0c038912d85cedc6baf03dab2b4e19915143ebfc67ff9411895cb4",
+          "url": "/media/owner-creations/owner-007-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 234334,
+          "sha256": "aef217de81e90dedbf560acb894651b7efe497e97dec8a4021f6b6908f1217bb",
+          "url": "/media/owner-creations/owner-007-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 424612,
+          "sha256": "384f24c62c9b9f4facaa56603335c45639329476665449970d5f8ea7e8636205",
+          "url": "/media/owner-creations/owner-007-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 110110,
+          "sha256": "a8237b33d6125aeb7f5bc41fa6e84c8d382b6e6633f96cf8fbad342afcaf1429",
+          "url": "/media/owner-creations/owner-008-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 195798,
+          "sha256": "2a13d1017cdc074e09877394a919472328b127f484de9375e74e75a615d608b8",
+          "url": "/media/owner-creations/owner-008-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 353896,
+          "sha256": "ea75e06f03a5596d99dd14a17e2c67b37853e44fe3efdbf690ca23872e886371",
+          "url": "/media/owner-creations/owner-008-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 74480,
+          "sha256": "467e15b4ac43d2469a201f8689a56a308c73b28c522e9852f76ebf070d2647d5",
+          "url": "/media/owner-creations/owner-009-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 136460,
+          "sha256": "621fa9a5dfebc271aa19d288e22bdbedb88ccd219a3e735d84b39e63ddbbdae2",
+          "url": "/media/owner-creations/owner-009-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 250524,
+          "sha256": "7da0b44dc1418fe275f71fee48f48e14bf9d2db98316feebc2ab3e49ee6a68f3",
+          "url": "/media/owner-creations/owner-009-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "category": "Nameplate",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 73056,
+          "sha256": "48e4b25069b3d95f281aad623fa8890e3d43dab45fea5329f967edf14be84091",
+          "url": "/media/owner-creations/owner-010-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 128870,
+          "sha256": "a127452292e12c7ffc98143d1a8aa20f661ee23e049e7f8b07da8ec0e0e51179",
+          "url": "/media/owner-creations/owner-010-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 237376,
+          "sha256": "d3e3b688276cf94860e6b6c22bb9701650001b7b94fb3dcc15a9dab284ab537e",
+          "url": "/media/owner-creations/owner-010-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "category": "Phone case",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 68568,
+          "sha256": "28a92fbc45c09aa8b34dd04bf0f9760f00954b19498f6527ddadb521e21b8035",
+          "url": "/media/owner-creations/owner-011-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 121536,
+          "sha256": "fd665e2fd4592268be590ec2d79e466970f96e9b10c0850fa7f7cc6e5cf00759",
+          "url": "/media/owner-creations/owner-011-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 217398,
+          "sha256": "3bd468e3f1ddd396cecfb34a84ac2194369f5b811506e81803e2fcc613d76036",
+          "url": "/media/owner-creations/owner-011-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 93918,
+          "sha256": "4c51b35857a62ee52163db7d5b3e9c23a54c1bd0bc3c1835e4d901e332f7d776",
+          "url": "/media/owner-creations/owner-012-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 181276,
+          "sha256": "031d6465232493b02e3c93c2f572c5161a736002a06b8e061f0298f326787002",
+          "url": "/media/owner-creations/owner-012-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 338626,
+          "sha256": "253260d6b6ade235b70b597f347b3a708aba1cd27e11e2b0c59a2e83fe638fbd",
+          "url": "/media/owner-creations/owner-012-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "category": "Nameplate",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 65356,
+          "sha256": "eaf48c38243cd838c0f2c6ae7a3a5e34639d7b2c33af10a21df75a85454a55b7",
+          "url": "/media/owner-creations/owner-013-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 106798,
+          "sha256": "06442146a0da1f22f4bd20aa65a6a7c73bcdaa55d44e9bb49e3889c9d98da28e",
+          "url": "/media/owner-creations/owner-013-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 186916,
+          "sha256": "637866f62da3f8b9a49abdae1fb5c4eaf9fa91774ab76c9e7252dc963165c75a",
+          "url": "/media/owner-creations/owner-013-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "category": "Floral preservation",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 122576,
+          "sha256": "5b485ba49d648f216937282cd654beffa687768a756f0e8ac1b0deedf532f7ea",
+          "url": "/media/owner-creations/owner-014-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 223706,
+          "sha256": "fc18096bc039291c4bf7828e5257b0b1e30820fae6caef9314994eec87f0298c",
+          "url": "/media/owner-creations/owner-014-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 414436,
+          "sha256": "a018f4d19d43b0544f4935a83029bf4ad9f15d9fab4660a0c9b034dc91b096c3",
+          "url": "/media/owner-creations/owner-014-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "category": "Portrait drawing",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 61346,
+          "sha256": "9ea24ca7229a76344495d54f7e4180582694526f192a93192ea4abafe0940d86",
+          "url": "/media/owner-creations/owner-015-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 129304,
+          "sha256": "b249b0b1531d2ba03bd076aa2a34938a15d1e6dc96591d6b6f086bd6b0021e3a",
+          "url": "/media/owner-creations/owner-015-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 247574,
+          "sha256": "5168a628f9c127809b994b3c2cbb66baa680f99902fe4726aa99f173d2c63aaa",
+          "url": "/media/owner-creations/owner-015-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 89002,
+          "sha256": "7b84326e3221fa9b984cf94ac7ad7ff3afaf150e48db3cfb24a8489b225d2b31",
+          "url": "/media/owner-creations/owner-016-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 164062,
+          "sha256": "5ef2361120dfb875b26e250ae5dd25858bafb3663fa148eb66b43f2635492c43",
+          "url": "/media/owner-creations/owner-016-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 304598,
+          "sha256": "e30155570013c3d12f503749ee8c2bf5d0436a86171d1379101287393001a49b",
+          "url": "/media/owner-creations/owner-016-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 85648,
+          "sha256": "dd1c104983bc4c55892d7132b1ce122e772f5a361a084b5c439cbf9a5cf9be24",
+          "url": "/media/owner-creations/owner-017-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 146964,
+          "sha256": "fd2b8f6c57ffa5d1b5807d7844f1df0d0135c2ba62c3d5c05f2b45affba13d08",
+          "url": "/media/owner-creations/owner-017-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 261986,
+          "sha256": "73d3e0b3a33f08c6a22b9359a8349ae5f4f61efaa94f3e0aa9820770fd4c0f2c",
+          "url": "/media/owner-creations/owner-017-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 101538,
+          "sha256": "6e0032ac49d1d74fcca8a7e04ac6e11ce48453eafb31a56698c6019a87aee219",
+          "url": "/media/owner-creations/owner-018-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 188708,
+          "sha256": "46ec662b5e1d8d11fdda422ab06a5c434bfdf470e57e39ac93aa058927e7e096",
+          "url": "/media/owner-creations/owner-018-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 347794,
+          "sha256": "1dcc20222bf442a0a7443add461d126b74fe6d806b69a9274a8466a8a937d0c2",
+          "url": "/media/owner-creations/owner-018-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "category": "Floral preservation",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 74168,
+          "sha256": "6697d178c282f189e936aca9b67350448fdb19b8007ddd876f9e66aa8f6796e9",
+          "url": "/media/owner-creations/owner-019-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 133332,
+          "sha256": "2d0e79739911f69527e8c83d7efff565495001d1cb425ac618be369688899ca8",
+          "url": "/media/owner-creations/owner-019-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 240986,
+          "sha256": "3941c5f57c0b693351e2dfe3cd04e98d0e45bdb13c302eab4cb92cb6be62938f",
+          "url": "/media/owner-creations/owner-019-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 105224,
+          "sha256": "0cea1fea28df2850c418210db20a60d140fa9978772001aabcb71d1177ccc013",
+          "url": "/media/owner-creations/owner-020-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 187548,
+          "sha256": "41e2380b559ac5606d00e536f47ac95786836a740dae3fdac3f807668236201d",
+          "url": "/media/owner-creations/owner-020-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 333994,
+          "sha256": "2b7563f7b8dfd43caf278a997fca20291eed227383a7dab4a4c36f524747312b",
+          "url": "/media/owner-creations/owner-020-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 124260,
+          "sha256": "9f4eeb10af295671ab33141ba4e0f4ee9b8eaa3359ff41510dd0a3dc9f150de0",
+          "url": "/media/owner-creations/owner-021-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 243708,
+          "sha256": "d1d0da9b1136163d24dc32ac6d397870974e7b3cd9b046c9be4dcaa8804aee19",
+          "url": "/media/owner-creations/owner-021-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 468710,
+          "sha256": "fd8af650d886db11ee7b80d1c494ccf004d0f0749402d434745670dc753fddcc",
+          "url": "/media/owner-creations/owner-021-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "category": "Phone case",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 106882,
+          "sha256": "b8ff00b1ceb97ed840bb5965b6e837ffa60e75676c26354d14bd37513ec5b033",
+          "url": "/media/owner-creations/owner-022-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 193564,
+          "sha256": "f0abd3cbbae348333bd069c6d606e6568b4a95cdf5ed28221c866b6b7dc40522",
+          "url": "/media/owner-creations/owner-022-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 347492,
+          "sha256": "dd6610041db36ce48bfb28bf37337544c90d738328fb870d07635429cb931256",
+          "url": "/media/owner-creations/owner-022-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "category": "Ring display",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 102846,
+          "sha256": "00855592d334ca40338137cd7d3d9669ea19ad6d33bd4c55bf98e0baaa76fb15",
+          "url": "/media/owner-creations/owner-023-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 183306,
+          "sha256": "2a40ed0d5053b5bcbfb6d63bbaf7bab0da028d3c1d578bf31164eec3da82c7c3",
+          "url": "/media/owner-creations/owner-023-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 326360,
+          "sha256": "f283768ef2757d81b6a946350a3d1e858e03b2bee3cc16205fc5eb7c5d030b60",
+          "url": "/media/owner-creations/owner-023-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 103892,
+          "sha256": "f129f5ee8a7e634fd8933ab96ae5284b4a7959b14d10dd8d8d443b68cad6f69c",
+          "url": "/media/owner-creations/owner-024-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 197364,
+          "sha256": "3b2e0c2167d2dc2aeb17021b2355655f3e6a24a36fdc43fce1459785f25a865c",
+          "url": "/media/owner-creations/owner-024-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 365324,
+          "sha256": "abf3fa3c152fb83c5fb3ac8a1fd2bf3ac13ecd629e9a62709c621f03143c3a09",
+          "url": "/media/owner-creations/owner-024-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 82476,
+          "sha256": "0cd8eb36090cd46b9bc22b9a944dc4fc47ac30ae7c2c7106c1a658f9a81e875a",
+          "url": "/media/owner-creations/owner-025-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 150502,
+          "sha256": "50fa79b944eb1b61842c0c29762626c109864191e5a36c4e6e98412b8361b0c0",
+          "url": "/media/owner-creations/owner-025-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 269800,
+          "sha256": "eef6facbe5f8ab933b2248a6ea4bdc4e92d3dc2098b3ea0166cd795b78ae27c1",
+          "url": "/media/owner-creations/owner-025-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 73116,
+          "sha256": "d54a1edd8ec24cbe6173e0055506188aaeeef660937d8ceb766ad99aa2cfba61",
+          "url": "/media/owner-creations/owner-026-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 134954,
+          "sha256": "e6c2c6ee86d6c9807ff8f2ee9aa0d5aa322578fbc9825f8b2ef705c8f989f707",
+          "url": "/media/owner-creations/owner-026-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 251988,
+          "sha256": "df29f8b615e3b21825766758fbacca6b6113b8f2c3659102b5db7f902bcd8523",
+          "url": "/media/owner-creations/owner-026-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 106900,
+          "sha256": "dc71962e0d615091ff2336fc14a3c7bd1253ae5666f4e8d2dffb57bad3893e5c",
+          "url": "/media/owner-creations/owner-027-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 191662,
+          "sha256": "7b65ab3e621305aca870e779baf51b443b395e44970bbb8bb070ba1bf6dcc8cc",
+          "url": "/media/owner-creations/owner-027-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 340532,
+          "sha256": "971d745c5edc5108283b48e21ca2a2b0153f2b5851bf48aff7e5a887814a86f3",
+          "url": "/media/owner-creations/owner-027-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 103336,
+          "sha256": "57c270cf4003718fd366c8794a761d990ea4f60c6f300c1636c3dd62798b1484",
+          "url": "/media/owner-creations/owner-028-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 185514,
+          "sha256": "deac93ee2593fb62e8505754511bfa72355803337ee3806c49625b1bceffe3ad",
+          "url": "/media/owner-creations/owner-028-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 329630,
+          "sha256": "3eb3a9f39f82cff501c7699e4f234c90ca12b3e6c5d2b69e9ff7903a56ba7a7b",
+          "url": "/media/owner-creations/owner-028-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 94982,
+          "sha256": "b865e9d31419f4554123f32da1813f88f50b1b76151d73b07db6d8088ed6c2c7",
+          "url": "/media/owner-creations/owner-029-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 177320,
+          "sha256": "5aada3ea6674b6ef2fc0b8138d8e95f191fadc730be8d0345ffbbd36dad8c62c",
+          "url": "/media/owner-creations/owner-029-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 320934,
+          "sha256": "b38eb40fc47a18b74930721e99e91ba00d4b49d08c1d113f9ba547dc1d3b43ea",
+          "url": "/media/owner-creations/owner-029-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 86764,
+          "sha256": "4165070d2aeb242d6ed08ef03e051dee036025de67e1c7fdee56353fd908f40a",
+          "url": "/media/owner-creations/owner-030-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 160792,
+          "sha256": "cd85d9203a28e43a101fa6309da19b95ac5e9a94746fccb90ca5a574e49db140",
+          "url": "/media/owner-creations/owner-030-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 293596,
+          "sha256": "60c7a93bfa4a4da167fcd96b06e398ff93972d3251052b516264877ca9374d41",
+          "url": "/media/owner-creations/owner-030-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "category": "Nameplate",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 77840,
+          "sha256": "59fd27e354adede37a9916523976fb2f72782f62aa5b313a11861cfd6cb0fb8d",
+          "url": "/media/owner-creations/owner-031-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 133098,
+          "sha256": "d50eba691389d530338bb991e74d4a8f150031b6c0a2c76e8416b506c256df80",
+          "url": "/media/owner-creations/owner-031-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 227916,
+          "sha256": "ffd585447ed4b392d4abb4d6b8486daad64e3fd855decc84be2fcd8c8b855962",
+          "url": "/media/owner-creations/owner-031-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 93618,
+          "sha256": "b2252f1b1c158ca63bb174b733a9a7590e620bdc9dd93fba288c881a0ac7f528",
+          "url": "/media/owner-creations/owner-032-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 166102,
+          "sha256": "e26b34b008b6fcf43665901956b97a4951e67d592eda606d2e98a2cdb44bb0ea",
+          "url": "/media/owner-creations/owner-032-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 288258,
+          "sha256": "8d48703ac10ac1635edd493f800e04be0b23191bb2c08b952c3c20a3d347a140",
+          "url": "/media/owner-creations/owner-032-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "category": "Phone case",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 94030,
+          "sha256": "1d7fed131b5ba885b5fe64ac33fbc865888e668ca102fc644ba1a1b94ab80820",
+          "url": "/media/owner-creations/owner-033-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 167572,
+          "sha256": "38677ef37c259ba75afb9b5ec45356e7f6a58ce271cd2c506e7f1c89bda87b3a",
+          "url": "/media/owner-creations/owner-033-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 299652,
+          "sha256": "ae654a5eac4a49318f2e41be04b479df7494095a2ede1c405e9dd543432186ba",
+          "url": "/media/owner-creations/owner-033-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "category": "Nameplate",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 83198,
+          "sha256": "3def946348ad33904aee2b009b2134f3147e608f2a19a0ff03ea9c4c9ab156e3",
+          "url": "/media/owner-creations/owner-034-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 149350,
+          "sha256": "104f09a9ceab572305a61662032e7b7af835c39be78791e15d08e5cf33ceb977",
+          "url": "/media/owner-creations/owner-034-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 269766,
+          "sha256": "5a7827256c355ef744096dabfd4cf21dac77eb0f83961e40b7d1d8306327cda9",
+          "url": "/media/owner-creations/owner-034-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 70220,
+          "sha256": "2310071366fd40e1e4fa3d51ca9358dd59b8039107e3ed4a11c84e9aaabfd633",
+          "url": "/media/owner-creations/owner-035-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 119756,
+          "sha256": "15281fa3e7204e75a64e9066cd0511f216254cfb2f3b2d49c754785d954f75d7",
+          "url": "/media/owner-creations/owner-035-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 210026,
+          "sha256": "4161598d5a644dd16e8e71e3d6bb51d97b87b8207f142cc570a909b0b17a053b",
+          "url": "/media/owner-creations/owner-035-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 94146,
+          "sha256": "0f0e3be158f0d0c47962356f1c7f88d16ce5821e56b951dfc70596608bbeece4",
+          "url": "/media/owner-creations/owner-036-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 166984,
+          "sha256": "83825c23200ccf851fcaad1257b3fd73ad34a238eddeb7b904669bd3b35271b0",
+          "url": "/media/owner-creations/owner-036-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 297054,
+          "sha256": "fe8e096e22d07815502ac4bdb102f457fcc85b0abf4bb74ce8ba653614df0f5b",
+          "url": "/media/owner-creations/owner-036-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 89882,
+          "sha256": "a84da5f59d92c9892a30c5b428fa2b9a6e30cfc43f0d94479930e06285804d88",
+          "url": "/media/owner-creations/owner-037-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 165638,
+          "sha256": "ac7e7d95f4b22178c7fa7d379a492409513080e21ed0a046963dc11ebcd0b7de",
+          "url": "/media/owner-creations/owner-037-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 294450,
+          "sha256": "c357f50dc988db70ad6d0a5d4acf8db8d634ecaae110c04ea088c93bd57e3185",
+          "url": "/media/owner-creations/owner-037-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "category": "Floral preservation",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 87918,
+          "sha256": "6ceef13d5ddeb249e8e58f9c97cb93bf27cac7cdf903f046624667304b673ce1",
+          "url": "/media/owner-creations/owner-038-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 156386,
+          "sha256": "bf2099ff85c4945ad95616a0ec41a1144ff1f2de10919d6ac616246975d6c1d9",
+          "url": "/media/owner-creations/owner-038-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 279320,
+          "sha256": "aba7fcdaf2c1081f87930d7a078c8ebfb0f55ed66a5b42f2088221a7d3d0395d",
+          "url": "/media/owner-creations/owner-038-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "category": "Tabletop",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 133444,
+          "sha256": "d24e94f169d2fab96eb9d58261bc6acf95f3fd7a79e00e05b4a27185fbce6398",
+          "url": "/media/owner-creations/owner-039-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 252928,
+          "sha256": "3ff4e430ad9212f56ab32a117e46d7457cd90cf3421328829c20f60264f586ea",
+          "url": "/media/owner-creations/owner-039-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 467838,
+          "sha256": "038a28365eca630ca9a8137eba0ed3afa47b7d869e96428d58f4c2128ed4c5e4",
+          "url": "/media/owner-creations/owner-039-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 92450,
+          "sha256": "60a1ecfb056d663d35f7280a753c2283d07e271500da5d23de5830f8d6942998",
+          "url": "/media/owner-creations/owner-040-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 166392,
+          "sha256": "bb1f42e0b1682a1f092b3bb93c6e02a2de0292f055b27b2abfb4fa551a0f014b",
+          "url": "/media/owner-creations/owner-040-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 294414,
+          "sha256": "b2a880a841ad67d72f234a00ba5d507134ce8a9ad28bd96e58dec052e1d3f74a",
+          "url": "/media/owner-creations/owner-040-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 91202,
+          "sha256": "3ec7569f84e0aa4a701f0afea91e77f4fb3ed5d47b35c1d90ac0bcf62374fdbb",
+          "url": "/media/owner-creations/owner-041-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 161346,
+          "sha256": "a0b6ab4337513c6397c97f2ec5b0f51f9d5af0c12245361516009d5ce6289e12",
+          "url": "/media/owner-creations/owner-041-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 286796,
+          "sha256": "750cf54ac2b7cf47098e8e53708ea5c9da5387c21cd3541296a8e9b9fbafca63",
+          "url": "/media/owner-creations/owner-041-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 128060,
+          "sha256": "f2325ce50449b7cb21b6c2c2d59801a4d6bbd74c07178940baad05ba9203c625",
+          "url": "/media/owner-creations/owner-042-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 223540,
+          "sha256": "56d98930f01894a810fffbd7b1d01adf49a3c21d87dcdc4dc53e03155b1d40ce",
+          "url": "/media/owner-creations/owner-042-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 387854,
+          "sha256": "9eb532764aa7266c039f6e68b1390014180e5496180630e5fded7105d2fd57b8",
+          "url": "/media/owner-creations/owner-042-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "category": "Phone case",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 101320,
+          "sha256": "0377218597328419c9f3d7c8fa53eb21a90f7c571390d715d9a51e4b5a8734ab",
+          "url": "/media/owner-creations/owner-043-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 201132,
+          "sha256": "c198db7eba412767062391d797cbd23a66bdb875da357ac240c0ebae626566fe",
+          "url": "/media/owner-creations/owner-043-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 381816,
+          "sha256": "e840d5af73dfe2b7ffd8abb58b329036770995bf51800a0c5c028f9670a7a8b1",
+          "url": "/media/owner-creations/owner-043-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "category": "Ring display",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 117656,
+          "sha256": "4cafed764d579f010c80f4b94705a00ce8a723d5bd0e5a2ebb47618ffb816018",
+          "url": "/media/owner-creations/owner-044-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 215290,
+          "sha256": "5a4d1ed67e25cec775714b36445c8b43d005f869a3164e05ebe041fbd9d93143",
+          "url": "/media/owner-creations/owner-044-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 401030,
+          "sha256": "d433997d89a478793e1b73c8b40095f116fd7dcac81cd379a959b302d199869a",
+          "url": "/media/owner-creations/owner-044-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "category": "Nameplate",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 82624,
+          "sha256": "38d8443a722b0fe10f27cb4ac60177df9e49cc1c5746dae3d78c2d07eaf232f1",
+          "url": "/media/owner-creations/owner-045-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 144730,
+          "sha256": "9c31528f9c7366ee1f37d8508093fb8dca8b07161e520b3f65df49d088042da3",
+          "url": "/media/owner-creations/owner-045-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 255336,
+          "sha256": "63781a721f3652fb430ee30af4c2a3551b32455586485c50bb99eca4313e932a",
+          "url": "/media/owner-creations/owner-045-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 88334,
+          "sha256": "45dc4130e56510af38ad22d0c2342307eaa7dbbb57fb329e43c2881fbc27276b",
+          "url": "/media/owner-creations/owner-046-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 152222,
+          "sha256": "7a67c241e9104bda09c80d8f6148f61e35eca6174fbd6866576a3260196f3291",
+          "url": "/media/owner-creations/owner-046-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 271172,
+          "sha256": "9bf8dd4fbe65ff0d175da038cb032ac292ea0a348ef26a810138b54c38ad9491",
+          "url": "/media/owner-creations/owner-046-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "category": "Candle holder",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 98584,
+          "sha256": "f09f2e13cb4edfc40436171a770a1082d3b59ace0d6ef3437836e930cdbca149",
+          "url": "/media/owner-creations/owner-047-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 181306,
+          "sha256": "2d6c039c08be3c1b34dc60350001cc8f7922d324a98b6d944fc576eff64217b1",
+          "url": "/media/owner-creations/owner-047-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 325366,
+          "sha256": "96a07a8383e2b9525e1e31a3372d5046513ca432b083717f836432df34c07bfa",
+          "url": "/media/owner-creations/owner-047-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "category": "Phone case",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 78690,
+          "sha256": "377f67182ccb97d7b5f048843e09fcd148b800d275bf908687e522252520a2f0",
+          "url": "/media/owner-creations/owner-048-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 132364,
+          "sha256": "d8ac794306f4f475eb40d4213a1f268a55aa35343379a46db53d04c66ab60d5c",
+          "url": "/media/owner-creations/owner-048-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 232262,
+          "sha256": "9e2b92a08a5d9b148a01b1c9149824189c26356a48de3edc8898a134c5c42ce3",
+          "url": "/media/owner-creations/owner-048-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 86094,
+          "sha256": "fcefb2035a94c3eb5c2bb157533dcd19681375aa5030fd8121ce3a3bda6fabb0",
+          "url": "/media/owner-creations/owner-049-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 148520,
+          "sha256": "9f16d40a9eeea424124390ceb1537f09febe5700637c93dc50315af1f8d4467f",
+          "url": "/media/owner-creations/owner-049-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 262840,
+          "sha256": "6e94df557b50d813d498d5c41a40ace3664894f4b60a11ad3b7f4bd6458ef001",
+          "url": "/media/owner-creations/owner-049-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 85350,
+          "sha256": "41362b8412995639262ac778a758e59a8640ae862aa7f921fd47055934538658",
+          "url": "/media/owner-creations/owner-050-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 151692,
+          "sha256": "69be38697e230815e36ab55c0291b6a8079ba65851859bdd0ea9454fdd871c0c",
+          "url": "/media/owner-creations/owner-050-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 275006,
+          "sha256": "4762d0803a8f709a85160af7b2e8413eedcc8c3de5e9c715ccb7ab90d3c58cb5",
+          "url": "/media/owner-creations/owner-050-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 100956,
+          "sha256": "ffa4c666ed8385ae7ad29fa19562c7fd0e82d2dade436c3ed667cbe0c73c1d1e",
+          "url": "/media/owner-creations/owner-051-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 179544,
+          "sha256": "a4105342c966f7a70f2ab11c31829799725ede885feb7241f5a233d51d52ff02",
+          "url": "/media/owner-creations/owner-051-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 311522,
+          "sha256": "32b29f6ce14a1464384ca96342ff6665e80e9d5e0ff21470f3784f286e0ebea4",
+          "url": "/media/owner-creations/owner-051-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 91342,
+          "sha256": "f45c6371ca8bc9ece2860b7bac6567fdfcc9cddb55744fa181cdab0ee1bdd631",
+          "url": "/media/owner-creations/owner-052-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 171050,
+          "sha256": "ae9b8a1a604815b1514819475097e656b4e5bfd2fcc9545dc0dcdf7c8c748ab6",
+          "url": "/media/owner-creations/owner-052-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 314748,
+          "sha256": "48623b97a61f4d2ac592a18d527af02879c0da153109b97f8ccf7b8a6c7aae22",
+          "url": "/media/owner-creations/owner-052-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 84192,
+          "sha256": "03be2d114c46ddadfd485a7c4e70239d3f8cf3551bbe4779375d7083f9c84b6d",
+          "url": "/media/owner-creations/owner-053-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 144354,
+          "sha256": "93965df56fbb2e2e32c779532bf592f42d49a84afb57293fc1f69b13205fa46c",
+          "url": "/media/owner-creations/owner-053-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 252586,
+          "sha256": "fdfcfec34ea6c921b5aec9c9cae111c584276379b12162132bdb2214ab8ee940",
+          "url": "/media/owner-creations/owner-053-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "category": "Nameplate",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 93180,
+          "sha256": "e6867eba695b41663cb04b04fcdf36bf76e540510da963e2411292d2aace493f",
+          "url": "/media/owner-creations/owner-054-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 162390,
+          "sha256": "d007357abcca7f24217ad32ae717cc9f52a004209534d7cdb8c970354dcc2912",
+          "url": "/media/owner-creations/owner-054-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 289572,
+          "sha256": "87e2205e2f7e8233d8c43b14db968b251d5bff12dbc7f58fb200236b7908c432",
+          "url": "/media/owner-creations/owner-054-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 98050,
+          "sha256": "82df771c0c4c6582dcfc0852b50954e8b657e069c5258c4b9dc4e06c339a151f",
+          "url": "/media/owner-creations/owner-055-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 160102,
+          "sha256": "72c4ce2eef65eb6788ad173837c1f1ba78d6e350cfd5c8784e70f9b737dd64ea",
+          "url": "/media/owner-creations/owner-055-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 271874,
+          "sha256": "8853aa06d4cf34f9dce3100c6da2913180567ec2abb4f159a6c23b19f8955b04",
+          "url": "/media/owner-creations/owner-055-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 85422,
+          "sha256": "508453fa2a1e2284eaab33857441f0b2372936a59e92f13b0a303989bc25230e",
+          "url": "/media/owner-creations/owner-056-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 145592,
+          "sha256": "2782696c8a95f083f14e26fe6ba570fbc1b66a022c55bd8227ddac59aa9abcf0",
+          "url": "/media/owner-creations/owner-056-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 264906,
+          "sha256": "c818841d658f8cfc6bfd5a3e3a66fb499f871347c7fdd7809047c23dd59b7dbf",
+          "url": "/media/owner-creations/owner-056-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "category": "Candle holder",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 82294,
+          "sha256": "a9b266bd515ae6b70bc0d8bcb4e77592524bed168b6f32619bf7a8b14e3c7855",
+          "url": "/media/owner-creations/owner-057-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 149248,
+          "sha256": "6b57352708eefa28482e3ff13da90b15ed89a994053b1220e2510ef90cba7ac9",
+          "url": "/media/owner-creations/owner-057-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 277070,
+          "sha256": "84b20f8ec55a00b643023395b60dab96629dc0a4bffeb50dc242d66c22d07bfa",
+          "url": "/media/owner-creations/owner-057-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "category": "Phone case",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 98080,
+          "sha256": "df5adbad8e9312d50b9884fd5d6e094d7ade50640682cedf9a25aded29cbe2c6",
+          "url": "/media/owner-creations/owner-058-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 182084,
+          "sha256": "ff5137283f26515ba5cc920586ace7559cba6b825c5a97fdcc64a44e844b8025",
+          "url": "/media/owner-creations/owner-058-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 326538,
+          "sha256": "7d9438fbe6ce47c121b215be879b64f43e1d003ad160ab26bbc2f2203108b1a3",
+          "url": "/media/owner-creations/owner-058-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 73528,
+          "sha256": "466a47853a758d16a6e7184fc95b6bbd1cc01df7ef35d42979b8ec6b3c7dc232",
+          "url": "/media/owner-creations/owner-059-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 126166,
+          "sha256": "b1d9fa0f917bee40ccc7075c0746fee2f24f6857876dee3e4a5abbcf80541fec",
+          "url": "/media/owner-creations/owner-059-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 223560,
+          "sha256": "b4d58203673445fe7ad6f7acf4a7b4f96c0b98942c862dfbf80ac9cc662ea7c2",
+          "url": "/media/owner-creations/owner-059-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 94150,
+          "sha256": "a92d91be1c71271740448087f561b2ca15ea9d221842ad9e5e7a0fa12c8624e9",
+          "url": "/media/owner-creations/owner-060-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 165412,
+          "sha256": "e56b28cdf590d057af2e1611698152a44bf050a7e9283bdd40ea0121504fa683",
+          "url": "/media/owner-creations/owner-060-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 296896,
+          "sha256": "2121786f14982f51054efd914033720c0ad04a9f143fd1d80372054985aeedd2",
+          "url": "/media/owner-creations/owner-060-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 89190,
+          "sha256": "5ebf85c1f05a507718a57943571465ada886c6de975ce9337bc812c03040b056",
+          "url": "/media/owner-creations/owner-061-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 158032,
+          "sha256": "8dedee575564d99da53fd45dc0e45d75701cdd41c4d416b49c816a11c25494ec",
+          "url": "/media/owner-creations/owner-061-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 279208,
+          "sha256": "7976667103d6b5298f72fe92c789a82acde733f08e745e377432a6b381bd9b5a",
+          "url": "/media/owner-creations/owner-061-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "category": "Phone case",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 123770,
+          "sha256": "af72f218544ce8a27d9daa2b47dc59a18f30e09af3c6eaffc625a2d09454caa1",
+          "url": "/media/owner-creations/owner-062-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 238148,
+          "sha256": "f0612404cd05065647c5c9550d546a67fe89c5f54be859ff7f84123e13f872df",
+          "url": "/media/owner-creations/owner-062-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 447080,
+          "sha256": "99281f14f52865cb2318480aaeda6ac3d2a0e6173f55a26643ffe8c6251868cf",
+          "url": "/media/owner-creations/owner-062-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "category": "Ring display",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 88764,
+          "sha256": "5ac27da4f28baa39f725aee46323a0757f22cfa5433e956e0736c1a1cb548c51",
+          "url": "/media/owner-creations/owner-063-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 147960,
+          "sha256": "1306195677f20c3e0800919d7439b192c2d2e9c5f1908ca3452706a0017a7fe1",
+          "url": "/media/owner-creations/owner-063-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 256478,
+          "sha256": "fc6860c6eb976de9a0d8e305e73925c494705c69c28b2b6178a74a0c97411e39",
+          "url": "/media/owner-creations/owner-063-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 126522,
+          "sha256": "a839ac23f6ee0655937df7098ed64432feaae9ba57c9347922210e8b4f80243d",
+          "url": "/media/owner-creations/owner-064-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 231962,
+          "sha256": "d29aecca084b0d9ff1c1fe5c09dbc7b8dc993c924715201d5d4184aca2dbb1d6",
+          "url": "/media/owner-creations/owner-064-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 416694,
+          "sha256": "d001260640f1bb5c26bc3c2975be5d6dce9bc87ee2a9498b364de3c6bd36850a",
+          "url": "/media/owner-creations/owner-064-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 78234,
+          "sha256": "8875e841ba5727ab233b4935ce53171d74652366c6b20812df65175952971801",
+          "url": "/media/owner-creations/owner-065-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 140052,
+          "sha256": "cd77bad61c247c6fcb1c18851161e653c53f0b75be19ec4f96c6914d5e93c325",
+          "url": "/media/owner-creations/owner-065-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 253780,
+          "sha256": "96044f7c1f273b2f0ac8a1c5466ca65e8c25510fe10e0b9b346a2b40258ed8d5",
+          "url": "/media/owner-creations/owner-065-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "category": "Phone case",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 87138,
+          "sha256": "79d5bd04cc323997652f78a08c8612d1a61a74622ed5d242b703d89018015014",
+          "url": "/media/owner-creations/owner-066-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 150226,
+          "sha256": "94a6be582faf144125f62b3ddf69f207ce41217ad5ac4b7f186589ea630d7c68",
+          "url": "/media/owner-creations/owner-066-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 270582,
+          "sha256": "dd3abcfec462d11d69f90563edd2a0a6ea3b8624c0cc69220dd4ccd771f25eee",
+          "url": "/media/owner-creations/owner-066-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 97996,
+          "sha256": "9406fefa0785fd513d132c949695d556236a4ddffea1ddf5bd1556cce705a01c",
+          "url": "/media/owner-creations/owner-067-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 173570,
+          "sha256": "5b83ab33e29b4ca6df62dc75cea86a2562d00de172c0ee18624ccd483cf572c4",
+          "url": "/media/owner-creations/owner-067-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 308390,
+          "sha256": "d27663dbb992a59fef3e74ccdc2b5351d61a766f8be0c50faa4d7ca8c2c521cc",
+          "url": "/media/owner-creations/owner-067-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 80454,
+          "sha256": "2e6c7b1a17703be2843c3981bd0016ffd20afad6994daec9788332fd06f35f50",
+          "url": "/media/owner-creations/owner-068-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 133176,
+          "sha256": "89cdb1ff3c9b440eadf11ba272501caba2ef44ff0dce1fdc9418c265a615e528",
+          "url": "/media/owner-creations/owner-068-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 232648,
+          "sha256": "a85329917465e343c7fe303216a2b27956e9ecb68d1b52eff4e29ba111f3ea30",
+          "url": "/media/owner-creations/owner-068-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "category": "Nameplate",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 109122,
+          "sha256": "899cb1cdadd5d1ab02d5d1dc090fa71b796dfe21c276a63894ea2c59413ee2cb",
+          "url": "/media/owner-creations/owner-069-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 204362,
+          "sha256": "28ff28dca434bcd51ada0bd512656558ca26f9b37ca69f03ac5870bb43d7204c",
+          "url": "/media/owner-creations/owner-069-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 381326,
+          "sha256": "d42739801d6132d90b96c132563f25b9cc36dd4bca44d93efc210fd15368ac82",
+          "url": "/media/owner-creations/owner-069-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 72448,
+          "sha256": "95e67fb34ff8f8a0850af786407c39b491eb91636973d20734841ef146e6449f",
+          "url": "/media/owner-creations/owner-070-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 130540,
+          "sha256": "658d53e2e83eec139737fdfd1bfe7ae3200b974c1be15ef51b6ad87c888a528e",
+          "url": "/media/owner-creations/owner-070-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 240078,
+          "sha256": "7ad951be9d0adb75454511cf74e1eaeb78047bb063fdfcef8c7d7c9200407ebe",
+          "url": "/media/owner-creations/owner-070-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 143130,
+          "sha256": "a67929708eb75b211b8bf79a87a7101fb01e5423680db491d1c5e0a33ab2b392",
+          "url": "/media/owner-creations/owner-071-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 259860,
+          "sha256": "617896c4f79a11ea7afd4d6c8e265f40a2116308cff20b5ac501fd0a773fc9a8",
+          "url": "/media/owner-creations/owner-071-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 463388,
+          "sha256": "8bcb0088d5c8bb056097447aef0537686bb71569797a65f220bd72c3cac75ac5",
+          "url": "/media/owner-creations/owner-071-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 79608,
+          "sha256": "cf33701094edfdf45da78f83989b79f060390cce7ea9f7c48e3a1ccae2d05440",
+          "url": "/media/owner-creations/owner-072-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 141726,
+          "sha256": "4270dd6213d5035835fa50de2fd8b6e11d8a827c2a42df3a80ffd7251d37b5d3",
+          "url": "/media/owner-creations/owner-072-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 256818,
+          "sha256": "16ebdc6088738c238ee742acd7deec37cd0294d3c3204547954572b30df4b3ff",
+          "url": "/media/owner-creations/owner-072-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 82494,
+          "sha256": "ccc3ba93272075060b5767dcc68d6cc093907527ca6cd57991988b1513d2ca5e",
+          "url": "/media/owner-creations/owner-073-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 140126,
+          "sha256": "9950dcde19244304212bcf5034938ddbd6bf0eb58709776ea38e6e71fa88fe80",
+          "url": "/media/owner-creations/owner-073-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 239002,
+          "sha256": "ecca4605d9abfdeac73cb37c60882cb294ccd7f21424343fa18893bf6ff6280a",
+          "url": "/media/owner-creations/owner-073-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 64836,
+          "sha256": "e1663a74c6b8e469ec0a92038fab45b44d4611b96b52027bfed5cf1b0120032f",
+          "url": "/media/owner-creations/owner-074-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 114434,
+          "sha256": "59ad25516675c03d6f12dcad2a2d2ed13fcc3a6da7ae88f93f75e63a519ba7c0",
+          "url": "/media/owner-creations/owner-074-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 203300,
+          "sha256": "7c3d7ab0862469e025907216e29e70055cd4e32128d24aff932ebeae0afdd790",
+          "url": "/media/owner-creations/owner-074-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 79694,
+          "sha256": "fc2d3c3fec5cde0b2c24541a08927293ef2fbb5045106d9397d08100fcf30fa5",
+          "url": "/media/owner-creations/owner-075-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 139918,
+          "sha256": "b10c74fc8a1118d2f868463368416d229b6920b8a6e9b88e64082d9535baeed3",
+          "url": "/media/owner-creations/owner-075-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 254392,
+          "sha256": "fffed28c6f3816470497ce7a9e7ce2087c5683c52f680a28c71363a1db871bc5",
+          "url": "/media/owner-creations/owner-075-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "category": "Candle holder",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 91934,
+          "sha256": "86ac5907572b7148bcfb1c400e8e7bb9134710a3fbbafebed15cf711b8ed2463",
+          "url": "/media/owner-creations/owner-076-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 166868,
+          "sha256": "a9d09a1a22054f5a941e498ee38449b69c0c2e3fa8d136e97c35f985b451ba44",
+          "url": "/media/owner-creations/owner-076-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 305428,
+          "sha256": "7cafe3009763fd21493d5a198984b272d6d57429fd8f9bd9feafdd03dac7ac98",
+          "url": "/media/owner-creations/owner-076-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 113454,
+          "sha256": "be408390bc5a83b77da127fbead8b61a83a03838a0a98cee9100b9b439a6b51c",
+          "url": "/media/owner-creations/owner-077-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 195982,
+          "sha256": "3daf85b174d65a981c5ec9aa57095589afed22ef28dec77397ad9885186ae50b",
+          "url": "/media/owner-creations/owner-077-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 349036,
+          "sha256": "c1360ba4bde5643beb700a79a059249f5841867574e3f0180cded7fab863be3f",
+          "url": "/media/owner-creations/owner-077-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 110804,
+          "sha256": "7e7257571c4383aad707667c17353ca40fbd0046dc3cc8fffe0a171090836c1c",
+          "url": "/media/owner-creations/owner-078-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 195400,
+          "sha256": "9f082603733c33ebb3f945e3f7bfadd8c680e9065cc7d1a5ec0cd23df5c8c20f",
+          "url": "/media/owner-creations/owner-078-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 344700,
+          "sha256": "a12dfc55d6e05a828838a36b9a1385ef1c9727a72769450bfb50d7ae89c72a87",
+          "url": "/media/owner-creations/owner-078-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 79418,
+          "sha256": "7fcca3dc0693a6018e2c3252163b42197d13832977613b17d90baf1dea1410be",
+          "url": "/media/owner-creations/owner-079-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 135752,
+          "sha256": "8f9a2e1dd8beb9546b25128dcc1de4cc4e31f96cf2a678e1216d32b9a2a95aec",
+          "url": "/media/owner-creations/owner-079-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 237368,
+          "sha256": "ee2ea30e620c73f4d6774ff817eed2e2d713423a32ad954f11184d7e2fc3c846",
+          "url": "/media/owner-creations/owner-079-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 94876,
+          "sha256": "1ccacddd6076678cbd773e1de8a813580933200a6be455bdbb8dea987639891e",
+          "url": "/media/owner-creations/owner-080-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 160786,
+          "sha256": "fd3ddeba2bbcab527c123e9bf0f10b25b0b576381d8949a1886950df4408f407",
+          "url": "/media/owner-creations/owner-080-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 281024,
+          "sha256": "0ae905f103db7fe55914b950f89c98880e1363cbf3c43320cf7d59c55c2f054c",
+          "url": "/media/owner-creations/owner-080-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 125228,
+          "sha256": "2673538807600f74eb656562c55dcb147467fe5c8208942fc0e84e77802ec427",
+          "url": "/media/owner-creations/owner-081-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 225420,
+          "sha256": "d96cc5a6aa9f4360c993df88da9d42db98a3dd117ec16c30c7604531f18ed3e1",
+          "url": "/media/owner-creations/owner-081-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 401424,
+          "sha256": "e5ea922eff840a11bb8d2231eac27ced294bbfab2b37cb81e813c42dad93e72b",
+          "url": "/media/owner-creations/owner-081-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 94440,
+          "sha256": "d20192335cf1c518d3f7dd485971b218dbef483d0224322ef794841fcca3deb8",
+          "url": "/media/owner-creations/owner-082-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 169604,
+          "sha256": "8c105a13cbe735bd68e6f4e8940945441706011d4de2ad543dcbec9cc7e202cc",
+          "url": "/media/owner-creations/owner-082-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 314402,
+          "sha256": "3d21b0448c2eb506dab3f1d864b9615262db35bbea230b47f9b3fe839cc1badb",
+          "url": "/media/owner-creations/owner-082-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 89078,
+          "sha256": "66b16d497f547a9bdf3994a7b9cdc797f8b63937b2bd143f7cf70bd8b02d31f3",
+          "url": "/media/owner-creations/owner-083-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 156838,
+          "sha256": "1bab4691de0aad8fbed69364f037c3eb09c71992ff96f59efe4f59284d65df3d",
+          "url": "/media/owner-creations/owner-083-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 276886,
+          "sha256": "c620ad78c633e780f3f6cccc8101acac651793cffed8ecd95c65b519963bcc74",
+          "url": "/media/owner-creations/owner-083-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 74638,
+          "sha256": "94a31d76562eaa308fc1301279aee399323b185d2681a92743b685b752f4b6f4",
+          "url": "/media/owner-creations/owner-084-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 132024,
+          "sha256": "4ce9f69babcdf622514f8669248d01cd73c775bf581c0f312a118c29dfa8ed94",
+          "url": "/media/owner-creations/owner-084-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 241450,
+          "sha256": "606cd06ed020335d4c690f7bc0d9f098afda6d989ee535d814a922024caf8a72",
+          "url": "/media/owner-creations/owner-084-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 104190,
+          "sha256": "d75d801f3461c37f7bea2c469ff1a1c77776b09eace6cf0f581470f6004a3730",
+          "url": "/media/owner-creations/owner-085-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 193994,
+          "sha256": "fe1f08e03f44b42ca25ad7c339856d174f411d013744abdbee6bc4e374d71c4c",
+          "url": "/media/owner-creations/owner-085-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 353876,
+          "sha256": "373014688a71e6236e7f08c1023ed8e364d89f1ad00540aeb1334ee0ac5a09d7",
+          "url": "/media/owner-creations/owner-085-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 87704,
+          "sha256": "e72866eb07845ffd0cc7895bd71912afedb77962238e6633fe7e2c408a14244b",
+          "url": "/media/owner-creations/owner-086-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 151686,
+          "sha256": "6b970906f9aad0be9f97075fad1099f24ef4e99e082f1060218f82ac4fcd0eba",
+          "url": "/media/owner-creations/owner-086-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 272118,
+          "sha256": "7a43ded33d0fd22e23a1f1310938a6f40f56dda948b7656fa41641cfe1f28582",
+          "url": "/media/owner-creations/owner-086-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 89670,
+          "sha256": "8645d1a8260ca6a6126f9728d04c2e5ec3bdf6c6323d833facb65ba8c7fed3f8",
+          "url": "/media/owner-creations/owner-087-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 165340,
+          "sha256": "a679dc429dfb3912b675beff00e0517c74f29ac465d317593fbb06a0f6b2eb97",
+          "url": "/media/owner-creations/owner-087-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 300934,
+          "sha256": "87ffcfd49a5abab797c549a19f529cf52aaa70a57fbba9740935407c291d9460",
+          "url": "/media/owner-creations/owner-087-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 108388,
+          "sha256": "853a0ce4a31028cc627aeed574fcdcba734ba7a121b559de2bccfe3cf58c84ff",
+          "url": "/media/owner-creations/owner-088-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 182552,
+          "sha256": "ab6a19a9d738e28195ebcf5be00c12227b9b640c22825350a299e56254e900ab",
+          "url": "/media/owner-creations/owner-088-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 322206,
+          "sha256": "c0a6774c8cec08bb0a28bc2ae58eef9324e6a4abb4a2ec8988a6f7a47d8c6c40",
+          "url": "/media/owner-creations/owner-088-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 93380,
+          "sha256": "9b6ee0ba60fd7e3ba837780755c2fcab436624c1d1256e4cce73834fdc1edd4f",
+          "url": "/media/owner-creations/owner-089-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 171796,
+          "sha256": "7b68bc1a8d95c60e572fe375df41712f4878b8506c8fdd87972d03225ac26398",
+          "url": "/media/owner-creations/owner-089-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 312072,
+          "sha256": "91ceda82036d1465d1d41734f9b41c454fdbb807e6fbf1d1e9309e11968e57dd",
+          "url": "/media/owner-creations/owner-089-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 90,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 67262,
+          "sha256": "70faf78b97499fa98411d30a45a9d2b60baa4db2dca1e8ed4aaf21c40deb0946",
+          "url": "/media/owner-creations/owner-090-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 119670,
+          "sha256": "3f68101b48c4dbe5f982c2056f2c54173196e32c38ab06f52566369a90099ee5",
+          "url": "/media/owner-creations/owner-090-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 220526,
+          "sha256": "f3d2b975eced87d410b51907f5d5abaf61d491e48616b619a348921c10842fcf",
+          "url": "/media/owner-creations/owner-090-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 91,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 128298,
+          "sha256": "f5b5f28a83986483348087020abe4b465e9f89c5d9fcc410bb1f4446e26f3fa7",
+          "url": "/media/owner-creations/owner-091-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 222928,
+          "sha256": "63386ff72b47891ab6cc68d29e74711e089949fe5aaead7825bd1ca781525738",
+          "url": "/media/owner-creations/owner-091-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 393038,
+          "sha256": "e36e50523273fdedd0909869f362f6412e0026bca4905bd4c04506dcf5b9f4c2",
+          "url": "/media/owner-creations/owner-091-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 73964,
+          "sha256": "07678cd8026b8276ad6e45a44ef52d579200966056f09f4a170cd0018c94fa8c",
+          "url": "/media/owner-creations/owner-092-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 125576,
+          "sha256": "48b8722e63ca0481e02aa819739dcf2a53b1c7df47fd3f6ed877949c59a38481",
+          "url": "/media/owner-creations/owner-092-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 227524,
+          "sha256": "986dff5d28b9046759a2e5bdf7de01dbec876d6b0bdd5a9a8ccdecdd7e67605e",
+          "url": "/media/owner-creations/owner-092-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 93,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 122722,
+          "sha256": "e8c308ed1a2e84ea4bcd866b946299b3cad771169307e40f1a66aedb8ef08e33",
+          "url": "/media/owner-creations/owner-093-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 220322,
+          "sha256": "3a7a806534ea601e25375a831bb10bd306420f198cd4b6883a9b339f533ffcbe",
+          "url": "/media/owner-creations/owner-093-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 397706,
+          "sha256": "8fe4d5d51e7393f0d043d16678d03bf52d172f38c5c7a551e3ac843d9464600b",
+          "url": "/media/owner-creations/owner-093-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 123732,
+          "sha256": "4f52bf77766112e8f4ff0c8dbfa4d2253f1ce3fa8d7e4e3c265b2618077a8830",
+          "url": "/media/owner-creations/owner-094-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 227012,
+          "sha256": "ef15eb024bfc21a42836a6bd0fa02cdd12c0f1db1560415d7bf733c418f9674c",
+          "url": "/media/owner-creations/owner-094-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 408850,
+          "sha256": "8d2bd6bc4eef55765f8c2674832a7e0bb74f733dc586d934aacb9c01c2303ca7",
+          "url": "/media/owner-creations/owner-094-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 95,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 99612,
+          "sha256": "25f15ef1a1664092d9f58aeff85c71b7e90ed7c7d4bec32ff0270a8c7c4157d9",
+          "url": "/media/owner-creations/owner-095-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 189464,
+          "sha256": "a021221289ebe3a57f9d06a8d30ef02ab1320dc63851e3727a523849737241f0",
+          "url": "/media/owner-creations/owner-095-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 342906,
+          "sha256": "db65f3e0ba1a1bdc34ed406ac088facc3086492f2b1ce49e0be1a040de9a1d83",
+          "url": "/media/owner-creations/owner-095-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 96,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 131344,
+          "sha256": "e7f950a261095ce756e2c60d84442183e6c59d6ef31c3d06a3b396fc60102611",
+          "url": "/media/owner-creations/owner-096-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 232140,
+          "sha256": "5f053c500f562ea0b7f5708a5fb6cde2c88f15a06252793c1c52759501a62a11",
+          "url": "/media/owner-creations/owner-096-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 401196,
+          "sha256": "0a4ca4bff21cf8741b75f4e758e3cd540bc0a0973929d8260a8dceaf807ff3b6",
+          "url": "/media/owner-creations/owner-096-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 97,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 107534,
+          "sha256": "de3e134163b45652cd7191681e2f38fc848a840c1a0530a00d5a62df56a7a88c",
+          "url": "/media/owner-creations/owner-097-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 187016,
+          "sha256": "e1fb905cdeb8980c81abb13afb0b1b59ff6a1efd0fc129257d52e46fe6eb0e2c",
+          "url": "/media/owner-creations/owner-097-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 325918,
+          "sha256": "9305a5ef46ef98ea5a83060637cd7ccbd5efca23c619f7de63206879e451a32b",
+          "url": "/media/owner-creations/owner-097-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 98,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 76744,
+          "sha256": "7f06101b87662822e0924a8b18b875286381da998488a3f4db925907cd62ab51",
+          "url": "/media/owner-creations/owner-098-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 126816,
+          "sha256": "58364f139533361b92090cfa31588c48ce0dca660665a5ce8672968828c0d381",
+          "url": "/media/owner-creations/owner-098-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 223434,
+          "sha256": "0600c82c06b69b2712397faecfcd7bb797f3bbd33b5cc54d772a9a6f114ad01d",
+          "url": "/media/owner-creations/owner-098-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 99,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 102354,
+          "sha256": "4630fa506a5fa89a267c366ee7e2ee32d3e52450d85a11dfa2c05bbc016956ea",
+          "url": "/media/owner-creations/owner-099-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 187974,
+          "sha256": "142dad8603c076b3daaa822ad73591e740fb6030411806a31c8b7e2f16d6ff1c",
+          "url": "/media/owner-creations/owner-099-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 344194,
+          "sha256": "a06ee277105955377782cbc4b2b443fde56385fee96edcf07d07a59e126296b7",
+          "url": "/media/owner-creations/owner-099-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 100,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 81304,
+          "sha256": "952aa3d86191e0c738f932a73e16aef4c77877241a010696a194bab45daebeb2",
+          "url": "/media/owner-creations/owner-100-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 142510,
+          "sha256": "4ccea9a20c76b0332ff08d04e757687293aa056c440c1826379d860aa65bd880",
+          "url": "/media/owner-creations/owner-100-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 260844,
+          "sha256": "9e8d6e02951e67fe643ef315a23a1acc9b87ad20c04aa67554e13b5b646d8ff5",
+          "url": "/media/owner-creations/owner-100-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 101,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 83052,
+          "sha256": "b86742ee3c826720dd9f00bda8128c7d14b13ad1a889554d361cdefd1828d4ae",
+          "url": "/media/owner-creations/owner-101-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 149684,
+          "sha256": "15da0d003d3d8f21396c577c1d6f90246b885aa4ab0ab0afc8eef01fd9c25d29",
+          "url": "/media/owner-creations/owner-101-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 274208,
+          "sha256": "620667ea5c562fc6a6b7e6de5af64cfc65ea8cab39be1a3512a0f7e3c32eb695",
+          "url": "/media/owner-creations/owner-101-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 102,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 151552,
+          "sha256": "f6d7a99a4d5518bb395e14c086635f692ec239626b7b56fc48700d18719bbccc",
+          "url": "/media/owner-creations/owner-102-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 276808,
+          "sha256": "580e68253d365dc16deff4bb084027ba43f4d91efe1b4ae6f8f6ce90ec822800",
+          "url": "/media/owner-creations/owner-102-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 503868,
+          "sha256": "4ed00a1961d3adae9674506a8c3e587bb616641612d971c74eace25c4301997e",
+          "url": "/media/owner-creations/owner-102-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 103,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 100344,
+          "sha256": "8adab5d0483ee74eadbd7eb10fa2d627c08755b9e74192df49046bd200dfd3a5",
+          "url": "/media/owner-creations/owner-103-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 182590,
+          "sha256": "ce971c7bc68b5d73f4c0037b1aa9bc072ea7026fe8344a1737c8f0068c0e9b1e",
+          "url": "/media/owner-creations/owner-103-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 323278,
+          "sha256": "32a7276daa84f963c1fbf4ce79b984d018f8f7ddb1755bb5cca5426aa56d3bc8",
+          "url": "/media/owner-creations/owner-103-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 104,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 98494,
+          "sha256": "43b8724417a719e7e8f831334ea62b395a2eccd5c8383f2cf6aac5d7a06e6d28",
+          "url": "/media/owner-creations/owner-104-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 171688,
+          "sha256": "17720ff528f9954de4607ee9a6a9b2ddebd0ceee2ac807e9e1e25149353de75c",
+          "url": "/media/owner-creations/owner-104-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 303474,
+          "sha256": "96da39903d2268632e66f3d1d47a57b348566633887634afe7d98b8965b08e42",
+          "url": "/media/owner-creations/owner-104-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 105,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 107750,
+          "sha256": "aa10b25d3139dde21ae1f38a46b98c2186459a1fbe8bbb1cc9db75cced415a96",
+          "url": "/media/owner-creations/owner-105-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 186538,
+          "sha256": "2db5ee7f825c9c094e5d82ea7d89c76737876deb8081274068ff7f6f5466f54f",
+          "url": "/media/owner-creations/owner-105-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 324200,
+          "sha256": "079ecea04c036f9c2d60e70e86083265096f0c816315336f31ea961ce83dfb2b",
+          "url": "/media/owner-creations/owner-105-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 106,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 95258,
+          "sha256": "5db8f8ce588a466f406fd0cc3cf2cefb6e4d3185fb7c3fd363c31a75fe95c4f4",
+          "url": "/media/owner-creations/owner-106-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 161740,
+          "sha256": "964e6769c42dff201bf15465cb1e8d6610fa214495ea7c4f2e0279ebe85b8193",
+          "url": "/media/owner-creations/owner-106-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 290336,
+          "sha256": "b23d8326bb9fafb7e1fb56406b0d2ff9df3d29669f4ccd738c3c4b38e9e04f41",
+          "url": "/media/owner-creations/owner-106-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 107,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 129352,
+          "sha256": "b01574416c73cbd3c28e258f80a8958ca97ffce4032604031c962b37c23a97fa",
+          "url": "/media/owner-creations/owner-107-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 236092,
+          "sha256": "0035e4aefaa6feb0b6a575b19480fe3288c01bc9060a8a9497e1c4c9579c4fa9",
+          "url": "/media/owner-creations/owner-107-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 419182,
+          "sha256": "ab718a5874ad478149aa05fd2641b3e7c4d2d1c03464e200f943e65bcb8cb8d5",
+          "url": "/media/owner-creations/owner-107-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 108,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 102496,
+          "sha256": "81dabd2b6d84f4acd602a1f2fd76112f08fa32987738343f15d9662934bcfcf2",
+          "url": "/media/owner-creations/owner-108-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 186256,
+          "sha256": "c8fdf0c26ac229e20479e39dfc935fdd28db5b22bf071c36f618bc2cc2eafc71",
+          "url": "/media/owner-creations/owner-108-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 332422,
+          "sha256": "7e322ee725ec2b623ca4b8925f21cae2dcbb3be39c22c52681f00152b5f6f680",
+          "url": "/media/owner-creations/owner-108-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 109,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 124534,
+          "sha256": "a90dfe7b2afb92370b81f17b2dafc33bbb9b1ff62bccfc7d46518ac9a8b30fac",
+          "url": "/media/owner-creations/owner-109-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 223844,
+          "sha256": "096eab53623bbfab741957627a1f6a636888d1a97a1b8e13e8041521675a572b",
+          "url": "/media/owner-creations/owner-109-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 408382,
+          "sha256": "b2bea44659fff95d9fa4f9568d5f887c4742f25f3e0cb10b42f7fc7ded05605c",
+          "url": "/media/owner-creations/owner-109-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 110,
+      "category": "Ring display",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 107844,
+          "sha256": "bb608167288d4ebaddefe95af92cb6609d473f5a81d2a6c5c03655fc383b48be",
+          "url": "/media/owner-creations/owner-110-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 187088,
+          "sha256": "d47f4c837b4f0cb2ca10a61a15d7dd08527e6207f70f2981668d2ee190b27938",
+          "url": "/media/owner-creations/owner-110-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 321082,
+          "sha256": "f8dbb32d2706b4e9be3bed556261583b3de07d157b629cbfafa9ccbb8e564ab4",
+          "url": "/media/owner-creations/owner-110-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 111,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 61986,
+          "sha256": "2a309564dee13049b67968a9d3bf8570c66c06c6b33bbe4e1ffe871b72a32971",
+          "url": "/media/owner-creations/owner-111-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 108468,
+          "sha256": "2ed4b55eff7f82b750e9fc941b5ce7f21eadb6a40f8d8058467470cb050d7f08",
+          "url": "/media/owner-creations/owner-111-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 192088,
+          "sha256": "d15e19179da4a765f885541c10403e7592013aff0145a538db73e51d12d14a20",
+          "url": "/media/owner-creations/owner-111-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 112,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 117172,
+          "sha256": "451100958e54a0f05395f6c44968cd7d1001f49650d3cf464919b4bf477696d5",
+          "url": "/media/owner-creations/owner-112-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 207910,
+          "sha256": "1507c796a914c83dc4334b750e0a81b6c3ee03126ae063421d95a88ba9491955",
+          "url": "/media/owner-creations/owner-112-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 370208,
+          "sha256": "d82a1342a7d44a7f2615533e354a20d52b6c1f7cf5eec501068842a0d3329105",
+          "url": "/media/owner-creations/owner-112-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 113,
+      "category": "Nameplate",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 81734,
+          "sha256": "06ebf2676b2fabb8dbb11cdd127e4064a80f9e0f3a4dbd9a27f7184f82252057",
+          "url": "/media/owner-creations/owner-113-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 140280,
+          "sha256": "af4d4848370bb8b2df5c9a9a97312f229e0cda70ff10f14353f65792d0a6aaee",
+          "url": "/media/owner-creations/owner-113-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 250604,
+          "sha256": "90016388e8cd802d967760b38a80b572994410d81c2e1201462f6a43aaff2cd2",
+          "url": "/media/owner-creations/owner-113-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 114,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 114604,
+          "sha256": "11be0fa819995a58724ba090eb3afc880bdb3e4e2813f4308cb14c166921161e",
+          "url": "/media/owner-creations/owner-114-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 204766,
+          "sha256": "c64fb7d1b04780888979187f33ac43ce0dbb52e88d92d39e4c5db4f2fa668c8a",
+          "url": "/media/owner-creations/owner-114-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 367222,
+          "sha256": "024404518977d701c4160b19b7175b72f1dbbf6d717991cca248fb28eebeefcf",
+          "url": "/media/owner-creations/owner-114-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 115,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 106930,
+          "sha256": "3ebdde9e786b4f79417e9887d40d0b813556de0c59ee4567ad31c475fb74338d",
+          "url": "/media/owner-creations/owner-115-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 196646,
+          "sha256": "cad15682ec0dacaa8dba2bcccbe4b6927dd2a7a79fc345b2f2777a2059ead0b7",
+          "url": "/media/owner-creations/owner-115-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 350908,
+          "sha256": "b22a8e96974f9f31400417ca4849ef07f180af8ca240e3c3482ec95eaf69cf83",
+          "url": "/media/owner-creations/owner-115-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 116,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 96766,
+          "sha256": "ada58d7be9a375b1de093422cd0a4d6d1032e1ebc647c70f6fb2e042cd9f904e",
+          "url": "/media/owner-creations/owner-116-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 173326,
+          "sha256": "f18abffac79b1d32fb5c0d2db1ab1468adc2f535b622a436fb865d6563bbb74c",
+          "url": "/media/owner-creations/owner-116-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 306168,
+          "sha256": "7e9eebc1e63655ab9fcce14f778baaa4874a0083181ee2209586c23da0d99eb0",
+          "url": "/media/owner-creations/owner-116-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 117,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 91376,
+          "sha256": "4e321f339dd444bfebca7e0ae824239a292858ab482bb3ac070cf18d4fb7cb1f",
+          "url": "/media/owner-creations/owner-117-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 159386,
+          "sha256": "8292532395cc4d5dfcf722d746f8efcf57ce4f46a964a9ca260c88a426a7e311",
+          "url": "/media/owner-creations/owner-117-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 280298,
+          "sha256": "8100461fe4d82dc16f75b286c4b1eaf9308e53376959b316c4eee40974939f99",
+          "url": "/media/owner-creations/owner-117-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 118,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 100394,
+          "sha256": "a58a33026e02aac7262d8287874f53921e5ff671a0ac97e838be06e21f9d93ac",
+          "url": "/media/owner-creations/owner-118-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 184390,
+          "sha256": "008f8f204e1706d1490e565b83396834ed20a99fcd24811a66e356d654b50184",
+          "url": "/media/owner-creations/owner-118-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 335978,
+          "sha256": "4edb99d2f35b371fa14d5b6c10e4ec7db9940effd17536b5fc7e32d33a4aa66f",
+          "url": "/media/owner-creations/owner-118-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 119,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 95524,
+          "sha256": "ceabf1bdb08ed122103e240c28093161f7b433c396059872779c8e4c0c56acda",
+          "url": "/media/owner-creations/owner-119-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 167844,
+          "sha256": "dd9d776c2d99bbd4d9b373ce022c6612dc5e4c658bee966d92a83fc9447a74a7",
+          "url": "/media/owner-creations/owner-119-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 295828,
+          "sha256": "a8dcba8502b85da059a352af969d40f7f00d02c241e0c383b55bbcc85d2eb5e9",
+          "url": "/media/owner-creations/owner-119-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 120,
+      "category": "Floral preservation",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 84716,
+          "sha256": "28c40f0ded21709590fbb6287275bc75b68fa74e6a58bf0bb640b6032dc6769e",
+          "url": "/media/owner-creations/owner-120-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 151326,
+          "sha256": "bac4072d5255efbb17b1867bd36813ae03939a5d14c84d5b882fdcd2cc4c1ac7",
+          "url": "/media/owner-creations/owner-120-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 277186,
+          "sha256": "69b3d149b52bcd49549c1b49e13de14926c7e5e9033f0d4de40060fb64a9a4de",
+          "url": "/media/owner-creations/owner-120-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 121,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 106662,
+          "sha256": "ad84040d34a6817cfbad96dfdbfec83a3a5a300cfc537077f4b4fc8e552ce019",
+          "url": "/media/owner-creations/owner-121-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 186156,
+          "sha256": "e0e3699f6201d0e3b4d964333486c2a0b2afa162fd465f8a55728d18d0c4327d",
+          "url": "/media/owner-creations/owner-121-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 330526,
+          "sha256": "c47c1f114c1972f1bb3aa2dcc01e8662695a7b7d97ac1142e9fdef7ffcd162b9",
+          "url": "/media/owner-creations/owner-121-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 122,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 104500,
+          "sha256": "ed73ea1e63e881538fc80a9d4ae01b0feded92aad86263505de1d9a379f31224",
+          "url": "/media/owner-creations/owner-122-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 184578,
+          "sha256": "bf5c043c10dd8d687c8cd9ff22051e9bca59f703854892c9656145fb0bd283fb",
+          "url": "/media/owner-creations/owner-122-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 327588,
+          "sha256": "bfc08be3880b48cc4c68c1bde0656b9283aadb8be89b41a676ef16f5f539308c",
+          "url": "/media/owner-creations/owner-122-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 123,
+      "category": "Phone case",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 74086,
+          "sha256": "ee7b4e4586f6e9bc528bfaa206651267bb4f62557de5e864c1beda1d5b53c288",
+          "url": "/media/owner-creations/owner-123-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 131152,
+          "sha256": "a362dc6ca10cedcde85792273da193f70327d01974991ca01d48ea16eaa269ea",
+          "url": "/media/owner-creations/owner-123-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 235404,
+          "sha256": "4309693497df313975f560818e003e490fd340c09d7b631c51e4e79723c83240",
+          "url": "/media/owner-creations/owner-123-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 124,
+      "category": "Ring display",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 74656,
+          "sha256": "4ffa5af760b6f13d9859119d9a0f14b82f46399be49db53ee10cfa15b984ea15",
+          "url": "/media/owner-creations/owner-124-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 123490,
+          "sha256": "b133be4574f4f114c325bbf55123dcc87f80f33e233454c913a217e469150b8b",
+          "url": "/media/owner-creations/owner-124-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 210690,
+          "sha256": "43418847ec69540e088fcd100b44c160c70701bd4ce2e5fbccec4f81c70f3955",
+          "url": "/media/owner-creations/owner-124-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 125,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 90466,
+          "sha256": "54b2009ceef979269e9bef489342b64558704686b7aefaa51ca67c5ee4f637b2",
+          "url": "/media/owner-creations/owner-125-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 166072,
+          "sha256": "78d637e71b0f5ea8824d1d101af5f3ec4059e8992d35821358856da41db6868b",
+          "url": "/media/owner-creations/owner-125-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 309404,
+          "sha256": "4d20d2778d1a57c1a91bf26756776f312d75ee767e814c522f28194e5e232bcf",
+          "url": "/media/owner-creations/owner-125-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 126,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 106676,
+          "sha256": "35fe3224201f8898b994a2d692354a8f9d3a318020a964e8a5d2b8636c62873d",
+          "url": "/media/owner-creations/owner-126-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 181358,
+          "sha256": "c8c2907b728469aba944d942ba0dda15fcb282d1ad527c482b1bbc1aa0935f65",
+          "url": "/media/owner-creations/owner-126-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 310124,
+          "sha256": "dff628caecf5c35bfbb14ae99a025a88f1d93ac9c030a9c8b1c9fe35f03911c7",
+          "url": "/media/owner-creations/owner-126-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 127,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 103790,
+          "sha256": "02128423464955ba7401c003e7b772c3283d56c8b5ef094425b2abab5c9808b4",
+          "url": "/media/owner-creations/owner-127-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 193456,
+          "sha256": "59c43cf706e53cc0972b9fd9b9fbb33d025c38b7dcb162468ffc0605bb08a0ac",
+          "url": "/media/owner-creations/owner-127-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 359796,
+          "sha256": "b2862d5438582a8085d42f07480c19128a41fdb7774d001b7c6126f38f52bee3",
+          "url": "/media/owner-creations/owner-127-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 128,
+      "category": "Floral preservation",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 74140,
+          "sha256": "a3e701ed7246d269c497a4aeedc7a1104700bdaaf6d53c23d3f09c71baa263e6",
+          "url": "/media/owner-creations/owner-128-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 133722,
+          "sha256": "edd82acb221aa945012a44631c197dc3ca64219ea19a198f29dcafd801975be2",
+          "url": "/media/owner-creations/owner-128-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 242646,
+          "sha256": "799c6f59ee009713ed1f3201ed34266a8700ca9da81eb5ec6ebf546f95c49033",
+          "url": "/media/owner-creations/owner-128-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 129,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 91818,
+          "sha256": "fca892119be8e214e7922563d7dd804b86480dbdd83bd967da07c1e1be6b883a",
+          "url": "/media/owner-creations/owner-129-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 172584,
+          "sha256": "e599e81b3b7c0ee2b712e59e1e5782b03a63f304d1e06b9ab43d32b23333ff92",
+          "url": "/media/owner-creations/owner-129-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 321862,
+          "sha256": "e182fbb7cbd054f1e2d706655dbf98651833f19b13024ab4752caae8053ab4ee",
+          "url": "/media/owner-creations/owner-129-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 130,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 139452,
+          "sha256": "1f835aa1e0d5a9ca8e18630d550b7d58bb51f13cfed697b46aa7d5efa4395607",
+          "url": "/media/owner-creations/owner-130-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 249402,
+          "sha256": "97b58725a224ed2b4d7fda349d48d75acd91ccba95182534f330fb742130b62c",
+          "url": "/media/owner-creations/owner-130-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 440972,
+          "sha256": "2c08c90fc5b265828e3fab97d1ae55c43945ef22ddba7d506648980948e9b469",
+          "url": "/media/owner-creations/owner-130-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 131,
+      "category": "Floral preservation",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 66234,
+          "sha256": "3f151d88d5b1b13f761ffe6c319b36c15cfb5142537129f33c31206a41aa6ad4",
+          "url": "/media/owner-creations/owner-131-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 119650,
+          "sha256": "d15589bb2749a25a8b070b9261a47165d11456165418e9f23f58230ec86ed9ff",
+          "url": "/media/owner-creations/owner-131-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 215908,
+          "sha256": "00ba73ce2a2aa7d9459e976824c45641716521259d619cbcb87dc5235f69f7ae",
+          "url": "/media/owner-creations/owner-131-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 132,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 114976,
+          "sha256": "0c286a2f65488913be684a995a6b7cab1adb327fb75f80110c4da58feec558aa",
+          "url": "/media/owner-creations/owner-132-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 205248,
+          "sha256": "51083688dcfd979a80e1d4aa0ed310d8c9b4ce5efa4dcabc00ef35aea59a0e0b",
+          "url": "/media/owner-creations/owner-132-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 368130,
+          "sha256": "7aa6a66b0dc497962f7cb24a055ac6be8336dba00e0acadc58aed214952eea5b",
+          "url": "/media/owner-creations/owner-132-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 133,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 99176,
+          "sha256": "45b6e11456c8f648e28e13db77ee045966774b435d09c72a735b6db15b45446f",
+          "url": "/media/owner-creations/owner-133-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 177452,
+          "sha256": "47d4ae003eb399facaeaef951c9f996950a2f01c38fb1323a53e7f68decbe268",
+          "url": "/media/owner-creations/owner-133-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 313856,
+          "sha256": "b0382c701e9855469ba1bfb11f26a8a5f9acc9972122edbed75835f95090129b",
+          "url": "/media/owner-creations/owner-133-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 134,
+      "category": "Resin letters",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 69270,
+          "sha256": "539060d357e8f0db2efa83eb44bfd1716af073b8bcf015b411d2e5dce13266a4",
+          "url": "/media/owner-creations/owner-134-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 116498,
+          "sha256": "f3b1f3de650f1123b17ebce408ec52d7cf1ad7882cbf2d0acdc0d11f1c89ab07",
+          "url": "/media/owner-creations/owner-134-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 208662,
+          "sha256": "d759780f5a0042da503d1cbde32a57cbde622ae661c3a52d001e76959313f810",
+          "url": "/media/owner-creations/owner-134-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 135,
+      "category": "Ring display",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 80898,
+          "sha256": "d1d1d9b43db59f36d68ca527b8d25546e5743ad09e17242b409b3e13c2b90ef4",
+          "url": "/media/owner-creations/owner-135-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 140394,
+          "sha256": "82cb1c228812f31d0ea20f8acced922dd6e6adc6c07979d91a10a27bee40c80d",
+          "url": "/media/owner-creations/owner-135-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 252318,
+          "sha256": "f688de99f12cdad6ced47eeee4a4af65e6293b0f7014e854498c12f8d66e75bc",
+          "url": "/media/owner-creations/owner-135-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 136,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 116134,
+          "sha256": "ef023d2346f2a4353927fff7a78f03be201e58f6ab4a512890292c2a62bae6cc",
+          "url": "/media/owner-creations/owner-136-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 211026,
+          "sha256": "c103dd8f91a762e03131b8916b9b43a402d72348899fa18d3bad1a0b5f12fa3e",
+          "url": "/media/owner-creations/owner-136-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 388662,
+          "sha256": "3f6a6711874c652212232351b9f296a053d8147e3fc2d6b87ef961f536d60503",
+          "url": "/media/owner-creations/owner-136-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 137,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 96578,
+          "sha256": "d1d548530156477421610cd49b081f3b3bb0bbd13a15ae98309b1f6255d76821",
+          "url": "/media/owner-creations/owner-137-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 166224,
+          "sha256": "1acc4fee5f199ae9bbcdf0c705e6d5a97506c09ab6c4f9a80166fa4366916f90",
+          "url": "/media/owner-creations/owner-137-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 294706,
+          "sha256": "9b01fb35590ca72bae08c073c970185c199e0bf0fb6c66be5abe9406807ea922",
+          "url": "/media/owner-creations/owner-137-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 138,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 69304,
+          "sha256": "ebed9eb2af4e5e380bbd1536f2f2db7df33d348fe3e6791c99e87144b13a3054",
+          "url": "/media/owner-creations/owner-138-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 130616,
+          "sha256": "081f5210bea324b9f94c4ebf023163bfdc084819f1e65ac94b4e97446d08652f",
+          "url": "/media/owner-creations/owner-138-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 248304,
+          "sha256": "458d233fe19c58b6895e3e9ba846e92aba0b50a090ca912533ea371dfd15a47a",
+          "url": "/media/owner-creations/owner-138-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 139,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 127884,
+          "sha256": "b3136ca11230eef7d13ac108f31d5b730bb7a65d9df3a3b17b6cec02bdf5e335",
+          "url": "/media/owner-creations/owner-139-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 239212,
+          "sha256": "6364f2f1a33855a176cb764a8e05dd271e657f12aa62ce363747c3f218f55dbf",
+          "url": "/media/owner-creations/owner-139-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 428474,
+          "sha256": "c0026045d9ed8161eb9901d176a5333eb4c454fb9cab79044fb6f5d3ab039e86",
+          "url": "/media/owner-creations/owner-139-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 140,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 88684,
+          "sha256": "37553f3658ef60f6a079136908a1f3c83bb698c32f375535d425c93c9eab18c1",
+          "url": "/media/owner-creations/owner-140-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 156564,
+          "sha256": "2b5077604b8113d60e9a9da5a37a549fdabf8dc204a66169b6094c892453b8cc",
+          "url": "/media/owner-creations/owner-140-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 279082,
+          "sha256": "65d826d843c712f56dd9786fe5337b6212a7e01b747c9387621ab0226d0150e8",
+          "url": "/media/owner-creations/owner-140-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 141,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 83340,
+          "sha256": "217bebbddd9f23c8ed5e0fa27e6aa6a7a4b89ac76af19ab6723e09ddaee3e6ac",
+          "url": "/media/owner-creations/owner-141-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 141990,
+          "sha256": "af433e8f9900a30b8bbbf562a573ff2c1f0e495c885fe533dafbba388265e4e1",
+          "url": "/media/owner-creations/owner-141-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 257486,
+          "sha256": "c344069eabc0d027ef3816be96fe14285b2e35944ef439273d63ae0322dedb1c",
+          "url": "/media/owner-creations/owner-141-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 142,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 131864,
+          "sha256": "ed31cb99db7586238cb3baf3acebaf7ce497de98c9f25570753e0a4d2a4ee796",
+          "url": "/media/owner-creations/owner-142-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 240574,
+          "sha256": "61708acb5d429377f537356b74a257f5c783441443ee3fa6aeb36187245eafd4",
+          "url": "/media/owner-creations/owner-142-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 426566,
+          "sha256": "0bc35bbeda6c639ff76a5f85316679835b2dc9e9e45d573819c73d77d9f14f66",
+          "url": "/media/owner-creations/owner-142-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 143,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 76020,
+          "sha256": "6a55e37bf771f224549f31da77c0e0dd9582e3a4e473a3d88720146ea7857af2",
+          "url": "/media/owner-creations/owner-143-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 135224,
+          "sha256": "b02c4b823b5a26851f7cc0517bc18096c65bdf18b03984de56b383d0f065fecc",
+          "url": "/media/owner-creations/owner-143-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 242712,
+          "sha256": "927728da1c900ca530f90190da143379abc5e10a6f33e23fa44f0ccf7baff3dc",
+          "url": "/media/owner-creations/owner-143-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 144,
+      "category": "Floral preservation",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 128076,
+          "sha256": "65868cc21bd4e2cae2cdeba60cf3d35770b5738e719ded3090c5eff3e8a1b943",
+          "url": "/media/owner-creations/owner-144-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 235098,
+          "sha256": "734be100f5b073309e15ed070f045e4b259101b17168e519fb6b8a82f9236f5e",
+          "url": "/media/owner-creations/owner-144-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 430780,
+          "sha256": "3dac0d669fa238948ee6097d919e7f382677225ceaa1bf5487c3b5bd9ff4d36b",
+          "url": "/media/owner-creations/owner-144-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 145,
+      "category": "Nameplate",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 98652,
+          "sha256": "34ecddd7fa2b7ef25c4a53caf61565e95f17ce20c6166b812cd74180a0a02fa7",
+          "url": "/media/owner-creations/owner-145-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 179594,
+          "sha256": "f91c6eccee3b47e6c534f49e24a6f39791d1c5db8d6d285972dffdf1be0f8a30",
+          "url": "/media/owner-creations/owner-145-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 328998,
+          "sha256": "fd3c5f4a69d7412e01c37d142ebdc56b56304838ee0a84f03f4ac88714ffafde",
+          "url": "/media/owner-creations/owner-145-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 146,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 79834,
+          "sha256": "b6e1f018231afad9657b688f9c1e38898a91c8d5bdc421ffc2bd693ec7b3cbaf",
+          "url": "/media/owner-creations/owner-146-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 140438,
+          "sha256": "86af1afc4db66a451d94ca4b7a856d59664b243af873712fa556f04f8a5bd7ad",
+          "url": "/media/owner-creations/owner-146-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 248874,
+          "sha256": "3d1309891653581924446413224a502c87db3a396ce0425e1fa7d9591d5d9892",
+          "url": "/media/owner-creations/owner-146-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 147,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 79672,
+          "sha256": "24e9aa46dd534d3f49f6700cd48adece1d28263524e9661bbbfff448decf8c7d",
+          "url": "/media/owner-creations/owner-147-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 141208,
+          "sha256": "83a1fe45473e882ecd1cf72968302a97735e8fac91b43842c3ef6d9f51669be9",
+          "url": "/media/owner-creations/owner-147-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 260954,
+          "sha256": "bd8cf8305e5b2484d9e87092ed3bc8b13599fb4019d6c78652b998cccf230679",
+          "url": "/media/owner-creations/owner-147-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 148,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 128070,
+          "sha256": "1ddbbe14f36b50ee77a4ce2c1c61aadedecf05d01c2ea3d4e0e679fd1d4f792c",
+          "url": "/media/owner-creations/owner-148-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 235670,
+          "sha256": "f6df027c3f9ac8ca1d057368df944a8426f758e3db5ef4c8a8687691ec97f014",
+          "url": "/media/owner-creations/owner-148-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 433702,
+          "sha256": "da912b148f14cf581ef91a3e30f0ce10a89d2f990d7551e572546a2972ebe063",
+          "url": "/media/owner-creations/owner-148-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 149,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 97630,
+          "sha256": "4ef1922a093f164a7731bfbf97b15577cbc9c8d5188f32f35138fb628d29e82d",
+          "url": "/media/owner-creations/owner-149-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 176300,
+          "sha256": "113d5ea7b7aef8c73c37013e91cebf13ddc1a751266f3ccf4ef7c96935360d07",
+          "url": "/media/owner-creations/owner-149-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 310772,
+          "sha256": "0286a0ab11161dca52ba16c96593190886138fa6f930490998a51169380d98d3",
+          "url": "/media/owner-creations/owner-149-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 150,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 104912,
+          "sha256": "bc3fcde5bb003bba4b8e9a751f83bb4baaa884afba58bb55373353c4eeb5b7ff",
+          "url": "/media/owner-creations/owner-150-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 186956,
+          "sha256": "442f474fa4d8fb4a6aa9cdd62f75582d59579426b15446748a398c160fc93dce",
+          "url": "/media/owner-creations/owner-150-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 334732,
+          "sha256": "4ea213e38b9d8993851ee6997e35558ffca57b4c8696aa83ba31ace2296360be",
+          "url": "/media/owner-creations/owner-150-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 151,
+      "category": "Portrait drawing",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 74004,
+          "sha256": "c0a8620408bcb0dc114a8a3cb174806b68b69162252b3bf20904761c8f581a43",
+          "url": "/media/owner-creations/owner-151-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 151886,
+          "sha256": "3bae3accd3cdd3574c2a2e6cd481bcfe676ad380d772858c4aa953f289df0f75",
+          "url": "/media/owner-creations/owner-151-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 286294,
+          "sha256": "9e1815be5b96d130fbf0ca4cf2353a4abf5cd4e99255028bbb5c2b85d3b47992",
+          "url": "/media/owner-creations/owner-151-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 152,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 55108,
+          "sha256": "abd7d4b036f41ac47be9a71a9350e3d3916e35171a39579d8f3a9b4e52fbeecb",
+          "url": "/media/owner-creations/owner-152-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 95354,
+          "sha256": "40fd1b35a509fd6e45ab861bb73bf166ec8d855e08125ffabfbbf5fac361775c",
+          "url": "/media/owner-creations/owner-152-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 175500,
+          "sha256": "b23efaa512d56d7fc17f5c1e7714ef3c5f62994c2f91243af1af62fa8b118db2",
+          "url": "/media/owner-creations/owner-152-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 153,
+      "category": "Nameplate",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 79564,
+          "sha256": "202a5b991f9a88ced4ee5c95461edd1379a659c3f4a74789351680ffeb8ca70f",
+          "url": "/media/owner-creations/owner-153-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 141484,
+          "sha256": "a218b02b239a412a267b9771c3f3b106afdbe63c6e82ce2f9e50ae3f6ca939e5",
+          "url": "/media/owner-creations/owner-153-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 256176,
+          "sha256": "945af325ccbbc3ded5f9ef1d1b761028f5d053572455a9cc8150d351853e7108",
+          "url": "/media/owner-creations/owner-153-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 154,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 137282,
+          "sha256": "71a56a6bd651b3d076e3e7dea2f4e62b9d7926f9e96141d3704638f9ec2f1fb4",
+          "url": "/media/owner-creations/owner-154-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 260144,
+          "sha256": "b1d04e4bbdabafc63176d9221e7a6078c91628f2ee38200e1453a985ca1d121b",
+          "url": "/media/owner-creations/owner-154-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 472818,
+          "sha256": "a6173faa906c2c716fa0e10aab839eda2af09ccf30128f9a9a0306f77fbe36e3",
+          "url": "/media/owner-creations/owner-154-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 155,
+      "category": "Floral preservation",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 73388,
+          "sha256": "15202f9df0ecb644a8a4e761ec641253c48c89437c0b934e8e3683f778fe0b76",
+          "url": "/media/owner-creations/owner-155-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 137076,
+          "sha256": "9a5408c2224f458c62f9442854554705360882ff1f4923c8f8b26fec62c82055",
+          "url": "/media/owner-creations/owner-155-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 259998,
+          "sha256": "0d8561932bb59051bf3cf75007de0bd1ad0ac4c604919089453ef9d711bc283b",
+          "url": "/media/owner-creations/owner-155-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 156,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 73758,
+          "sha256": "468d3518ea3c6f2862440a24e64170746bac9a003bf04389990a03aeb86eb93a",
+          "url": "/media/owner-creations/owner-156-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 130802,
+          "sha256": "982d66568b5a3e17ee3bcce9c564a00daa32c16d196c02df0a5b30fbb5faa2ff",
+          "url": "/media/owner-creations/owner-156-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 238520,
+          "sha256": "1b2ee6cb43b24540bdd86958f1ddc3ad64d6828ab58ead85efcd40e904524d43",
+          "url": "/media/owner-creations/owner-156-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 157,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 104370,
+          "sha256": "2a04c258c5d70a56f78ecd72a29990dd211aed4a02ec39b8e7ed1d18882d6f62",
+          "url": "/media/owner-creations/owner-157-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 183902,
+          "sha256": "ffd927f89ad298f2b132f03aedc21e4b37fc7dc5dfffa3711fd112f39896a009",
+          "url": "/media/owner-creations/owner-157-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 326522,
+          "sha256": "889cf4a027acdb71d246b691bfde7a53eaa78a60c0e0b29c9b7f5a49dce40f68",
+          "url": "/media/owner-creations/owner-157-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 158,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 111660,
+          "sha256": "d2753dad5f75177ce14636cc3d2450b315a0c1639fb3cff5d256357aa02d8d9a",
+          "url": "/media/owner-creations/owner-158-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 199350,
+          "sha256": "acfaf5aff01fe12cffd8b5b411f3876b11e5df5bdd6cece314d099fc31dbf447",
+          "url": "/media/owner-creations/owner-158-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 361648,
+          "sha256": "13abc130d0ccbd1936fbb113c674a801af464d1f5b795ca4341b3158b32ad966",
+          "url": "/media/owner-creations/owner-158-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 159,
+      "category": "Tray and devotional art",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 90604,
+          "sha256": "b2d99a71a8d0292b91b5051fdc6a94cf180c4d3a937de1894cc09afced68ddb0",
+          "url": "/media/owner-creations/owner-159-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 165190,
+          "sha256": "a35fbc9be24af98d03dc00f8dfe0fa61783b8b798ff5ba964a7975247afe517e",
+          "url": "/media/owner-creations/owner-159-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 292428,
+          "sha256": "71cc00a78f3d3228f3cd0d7828523fce680ce5e81d3917073fd29d713ff6422f",
+          "url": "/media/owner-creations/owner-159-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 160,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 92404,
+          "sha256": "096459b30ff0ac8287b80dd9ac722e74aaf8f939804d434d8ccb881779aaf581",
+          "url": "/media/owner-creations/owner-160-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 165412,
+          "sha256": "f14a9c831ea343a39e531495d68525e180027801788e51e47282cf943e0a3561",
+          "url": "/media/owner-creations/owner-160-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 295446,
+          "sha256": "717a1503891032d7154fda4d9def012a833f60068a963fbf31846962686ee6cd",
+          "url": "/media/owner-creations/owner-160-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 161,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 136288,
+          "sha256": "7d217b6285b85fd0201083d695a5b87e4c1f0137b199cc261dd66876df822cb3",
+          "url": "/media/owner-creations/owner-161-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 255648,
+          "sha256": "19c8980ca5a29c99492a666b5fbec065eb8bf26a79cdd69856c048b44cf6a15b",
+          "url": "/media/owner-creations/owner-161-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 455188,
+          "sha256": "845d6d414c08f463154f6bc103b5745a3ff89b540066b7f481082e6ffe6322ca",
+          "url": "/media/owner-creations/owner-161-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 162,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 121864,
+          "sha256": "476b684e01bf253565cf07caa361afc2ed5744ba505588831cb516b06d002094",
+          "url": "/media/owner-creations/owner-162-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 203992,
+          "sha256": "ebbd2329f073730c1d52be2dae4e4750bf7877bea30de96ba6e166c1356dcbb6",
+          "url": "/media/owner-creations/owner-162-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 358716,
+          "sha256": "cb7bd17cae1e9cdc7fd31bbdef553838f3a8437f219b69cc2ac136a9d3b0b0e8",
+          "url": "/media/owner-creations/owner-162-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 163,
+      "category": "Phone case",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 75928,
+          "sha256": "5258630f2654d0b1b1098c2b8897bcd5767625707486d5293d4464a6d64c3866",
+          "url": "/media/owner-creations/owner-163-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 133620,
+          "sha256": "1f6eb9f42a71aa55583ec1cdb9bc52b4bf7bdc881b50c0ec3ffa28d804fe59bd",
+          "url": "/media/owner-creations/owner-163-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 242730,
+          "sha256": "ac472678de12a6b75bf75467be11ebd1b70dc18a375e7b55b066ad1919652d9f",
+          "url": "/media/owner-creations/owner-163-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 164,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 120726,
+          "sha256": "e2536f2537a171ad8136ef4734346a0c187065d3c524f49d45ab9e0f6ed7ef0c",
+          "url": "/media/owner-creations/owner-164-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 204136,
+          "sha256": "e8a4b88d1a0190030ee6692afd0aaa7c265d9033e4b649e5112a202c3d2428e7",
+          "url": "/media/owner-creations/owner-164-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 346150,
+          "sha256": "91a6912b573b37067b42bbdfe901580fee8aef384c3b69809cc1850351b9fe24",
+          "url": "/media/owner-creations/owner-164-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 165,
+      "category": "Nameplate",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 92702,
+          "sha256": "383f720a9155f4101ebb5f2826096912a5d46ed09053a0fb1a46c720cd3564dc",
+          "url": "/media/owner-creations/owner-165-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 155686,
+          "sha256": "eec46af79404af4aa0ff7ba4e0299398825ed7ab2fa9caffe2b9e72f0364f587",
+          "url": "/media/owner-creations/owner-165-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 269478,
+          "sha256": "9aeed5a765cee8da3b9b23af35416b0653842670e1329b84275dcd16ba992326",
+          "url": "/media/owner-creations/owner-165-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 166,
+      "category": "Phone case",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 61418,
+          "sha256": "dd0558226440a65aa8ec9312e0b06d974e2b9122463d775a2b207f587577730a",
+          "url": "/media/owner-creations/owner-166-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 110190,
+          "sha256": "55fe916603280faada13f64a67e3753b6219578b5148e422a65adfb5eac60d8b",
+          "url": "/media/owner-creations/owner-166-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 196708,
+          "sha256": "66ca69e4f01fa6a48653a76487d80b2742f7ebbd3a62ffce690d3025410801d5",
+          "url": "/media/owner-creations/owner-166-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 167,
+      "category": "Photo keepsake",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 98200,
+          "sha256": "60eaa810834f4cd49442db6613b8704e0fc8388992e3aa9ecd595ff3c9d20adf",
+          "url": "/media/owner-creations/owner-167-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 176596,
+          "sha256": "be3d69f35709a3cb01a0edf8c42951ff0caf49627a5419cc4a3145e94e8dcb7f",
+          "url": "/media/owner-creations/owner-167-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 306650,
+          "sha256": "78270385e0360b65302232d8b2342d8aaec141c89757f1dd8f00b0f7ae8f6f9f",
+          "url": "/media/owner-creations/owner-167-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 168,
+      "category": "Clock",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 74526,
+          "sha256": "8484ad81ce62d3263910739455b9a8cc0f00a5eae4610a6ec2ec7f617e80d7a7",
+          "url": "/media/owner-creations/owner-168-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 132312,
+          "sha256": "820cb07e972c3055a46dfeadd4e2d5b2de022da1b87927352d09ec5d534f7c5c",
+          "url": "/media/owner-creations/owner-168-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 242990,
+          "sha256": "d869bf9e881a1f16e26cc76794eac67e82284c37e5b722ce2b80f04c2daa13a7",
+          "url": "/media/owner-creations/owner-168-ocean-1600x2000.webp"
+        }
+      ]
+    },
+    {
+      "index": 169,
+      "category": "Jewellery and keychains",
+      "classification": "design-visualization",
+      "variants": [
+        {
+          "width": 640,
+          "height": 800,
+          "bytes": 80638,
+          "sha256": "8008ba6aefbdf99ac0212221e3261b028b86347b474b9a7942f9c14f27921583",
+          "url": "/media/owner-creations/owner-169-ocean-640x800.webp"
+        },
+        {
+          "width": 960,
+          "height": 1200,
+          "bytes": 140274,
+          "sha256": "c26c19d34e45ad20b97c4fb21ed0d99bd0b71f14440e3871b21ef505a542da52",
+          "url": "/media/owner-creations/owner-169-ocean-960x1200.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2000,
+          "bytes": 257112,
+          "sha256": "705a42f6568f4d18c61464cdc485390568f5ed6f85e167f05b3124eeaeec70c9",
+          "url": "/media/owner-creations/owner-169-ocean-1600x2000.webp"
+        }
+      ]
+    }
+  ]
+}

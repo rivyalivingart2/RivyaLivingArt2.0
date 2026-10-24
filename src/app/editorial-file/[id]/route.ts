@@ -4,9 +4,11 @@ import {readEditorialFile} from '@/lib/editorial-media-storage';
 import {editorialIdPattern} from '@/lib/editorial-media-model';
 import {validExtension,extensionPublicationIssues} from '@/lib/editorial-extension-model';
 import {byteRange} from '@/lib/editorial-file-processing';
+import {editorialExtensionsEnabled} from '@/lib/editorial-extension-feature';
 export const dynamic='force-dynamic';
 export const runtime='nodejs';
 export async function GET(request:Request,{params}:{params:Promise<{id:string}>}){
+ if(!editorialExtensionsEnabled())return new Response(null,{status:404,headers:{'Cache-Control':'private, no-store'}});
  const {id}=await params,privatePreview=new URL(request.url).searchParams.get('preview')==='1';
  if(!editorialIdPattern.test(id))return new Response(null,{status:404});
  try{

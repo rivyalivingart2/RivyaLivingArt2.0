@@ -1,3 +1,12 @@
+# Current checkpoint — Google foundations complete locally; PR publication authorized
+
+Continued from `43c0f14` on `codex/sheets-drive-foundation`. Read [the Phase 2 checkpoint](docs/google-workspace-2026-10-24/PHASE-2-CHECKPOINT.md), [final verification](docs/google-workspace-2026-10-24/phase2-verification.json), [complete owner brief](docs/google-workspace-2026-10-24/OWNER-BRIEF.md), and [Codex Cloud continuation prompt](docs/google-workspace-2026-10-24/CONTINUE-IN-CODEX-CLOUD.md) first. The audit/plan and local controlled writer, Drive documents, coherent publication contract and durable-job foundation are implemented. Real Google acceptance, migration and cutover remain separate pending gates.
+
+The owner now explicitly authorizes publishing all latest work through a detailed PR into GitHub `main`, then continuing in Codex Cloud. This supersedes older Git local-only holds for this release. Verify the exact PR head, required checks/reviews and resulting deployment; no direct-main push or protection bypass. No Google provisioning, production database migration, CMS publication, destructive overwrite or later release is implied. Release preparation packages only approved image derivatives and gates features that require uninstalled schemas; originals and private evidence stay ignored.
+
+Preserve the approved public design, homepage/Creations/Signature/footer, current Studio login, products/data/URLs/relationships and original media. Add no products or archived catalogue/Sheets imports. Do not reseed, replay request-table repair, recover the deleted old database, regenerate selected images or resume Google Photos. Existing storage remains authoritative until a separately verified cutover. Stop after the authorized PR/main release and handoff; do not start the next implementation phase in this local chat. Earlier entries below are historical.
+
+---
 # Current owner direction — Sheets/Drive transition and Studio-only restoration
 
 The owner approved the final local public website and supplied the new CRAFT master brief on 24 October 2026. Work has resumed from `e9d3228` on `codex/sheets-drive-foundation`. Read [the current checkpoint](docs/google-workspace-2026-10-24/README.md), [audit](docs/google-workspace-2026-10-24/AUDIT.md), [phase plan](docs/google-workspace-2026-10-24/PHASE-PLAN.md) and [architecture decision](docs/decisions/2026-10-24-sheets-drive.md) first. They supersede the prior stop and earlier public-redesign/permanent-SQL directions.

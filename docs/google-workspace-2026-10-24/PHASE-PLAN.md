@@ -8,7 +8,7 @@ Preserve the accepted public design, including Rivya / Creations, The Signature 
 
 Sheets becomes the structured-record authority only after reconciliation and controlled cutover; Drive holds managed files and versioned public snapshots. Keep server authorization/validation and preserve existing login behavior. Do not introduce an alternative persistent database, queue service or disk store. Disposable caches must be rebuildable from the authoritative Google resources.
 
-Current work remains local. Connected inspection is read-only. No products, archived catalogue/Sheets imports, Google Photos revisit, selected-image regeneration, seeds or replayed request repair. No cloud mutation, CMS publication, production migration, push, PR or deployment is included in a local implementation checkpoint. Prepare precise reviewable target ranges/folders, permissions and evidence before any action needing separate authority. Do not ask repeatedly before ordinary local phases.
+The owner subsequently authorized publishing the accumulated Phase 0–2 checkpoint and earlier approved changes through a detailed PR into GitHub main, followed by a Codex Cloud handoff. This supersedes the earlier Git local-only hold for this release. Connected Google inspection remains read-only: no provisioning, CMS publication, storage cutover or production migration is authorized. No products, archived catalogue/Sheets imports, Google Photos revisit, selected-image regeneration, seeds or replayed request repair. Prepare precise reviewable target ranges/folders, permissions and evidence before any action needing separate authority. Do not ask repeatedly before ordinary authorized local work.
 
 Paths below are repository-relative. Existing and current implementation files are named directly; future modules are identified as planned. Private data, Google resource IDs/URLs, credentials, screenshots and raw exports stay in the ignored `test-results/google-workspace-2026-10-24/` directory; commit only schemas, code and sanitized receipts.
 
@@ -40,14 +40,14 @@ The current architecture maps the 28 actual tables into four permission-separate
 
 ## Phase 2 — Google foundations
 
-**Objective/status:** in progress. Record codec, revision/idempotency planner and registered-resource read transport are implemented and tested locally. The deployed writer, durable jobs and provider activation remain open.
+**Objective/status:** local implementation complete. The codec/read transport, controlled writer, signed Apps Script CAS gateway source, verified Drive JSON artifacts/publication contract, durable job state machine and canonical writer adapter are implemented and tested. The two large local CMS records round-trip completely in RAM. Real Google deployment/resources/permissions/round-trip acceptance remain pending separate authorization; this is not a cutover. See [Phase 2 evidence](PHASE-2-CHECKPOINT.md) and [isolated target plan](ISOLATED-TARGET-PLAN.md).
 
 | Task | Files/modules and deliverable | Dependency and impact | Acceptance and evidence |
 | --- | --- | --- | --- |
 | GW-200 | `src/lib/google-workspace/record-codec.ts`; `tests/google-workspace-record-codec.test.mjs`. | GW-100; pure local code, no source-record mutation. | Typed round trips preserve IDs, dates, currencies, units, nulls and formulas-as-text. Reject invalid records/relationships; detect stale expected revisions; duplicate operations return the established result. |
 | GW-201 | `src/lib/google-workspace/google-reader.ts`; `tests/google-workspace-google-reader.test.mjs`; planned server-only runtime configuration. | GW-101; read-only transport first; no login/provider switch. | Allowlisted workbook/folder/file access only; bounded reads/batches; credentials never reach the browser; classify throttling/unavailability without leaking provider responses or granting access. |
-| GW-202 | Controlled mutation coordinator, canonical validation and audit integration. | GW-200/201 and approved isolated Google targets. | Authenticate, authorize, lock, check revisions, validate relationships, apply once, record result and release. Prove human/API edits cannot silently bypass canonical validation. Keep slow operations outside locks. |
-| GW-203 | Sheets job records and Drive artifact references; dispatcher/worker contracts. | GW-102/202. Canonical jobs persist in Google only when isolated writes are authorized. | Lease expiry, retry/backoff, resume/cancel, attempts/checkpoints, input revisions and duplicate-safe output creation pass interruption/concurrency tests. |
+| GW-202 | `controlled-writer.ts`, `writer-gateway.ts`, local `apps-script/Writer.gs`: local implementation verified. | GW-200/201; real isolated Google target acceptance still pending. | Trusted policies, formula/history integrity, all-dependency CAS, one canonical batch, original-receipt replay and durable unknown-write quarantine pass local adversarial tests. Owner/unrelated-API edits still require protected ranges and reconciliation; ScriptLock is not universal exclusion. |
+| GW-203 | `durable-jobs.ts`, `canonical-job-store.ts`, `drive-documents.ts`, `drive-json-rest.ts`, `publication-bundle.ts`: local implementation verified. | GW-102/202; no job/Drive provider is activated in the app. | Leases/fences, frozen inputs, retry/resume/cancel, interrupted CAS, checkpoint/output reuse, full hashed documents and coherent publication pass local tests including the signed gateway. Real Google execution remains a distinct acceptance gate. |
 
 **Deliverable:** tested local foundations plus a concrete isolated target/write plan. Pure unit tests and mocks do not substitute for a real authorized provider round trip.
 
@@ -138,7 +138,7 @@ The current architecture maps the 28 actual tables into four permission-separate
 
 ## Phase 10 — Controlled cutover and release
 
-**Objective/status:** planned and not authorized for execution by the current local-only instruction.
+**Objective/status:** the future Google storage cutover and its release remain planned and unauthorized. The current Phase 0–2 source PR/main publication is a separate owner-authorized release and does not activate Google storage.
 
 | Task | Files/modules and deliverable | Dependency and impact | Acceptance and evidence |
 | --- | --- | --- | --- |

@@ -2,7 +2,8 @@ import 'server-only';
 import {readFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
-import {localCreationAccess,ownerImageRoute,ownerImageSizes,type OwnerCreation} from './owner-creation-model';
+import {localCreationAccess,ownerImageSizes,type OwnerCreation} from './owner-creation-model';
+import publicSelection from './selected-creations-public.json';
 type SelectedImage={index:number;category:string;classification:string;variants:{width:number;path:string;sha256:string}[]};
 type Selection={schemaVersion:number;selectedCollection:string;scope:string;ownerSelected:boolean;cutoutExperimentSelected:boolean;productionPublicationApproved:boolean;featured:number[];images:SelectedImage[]};
 const evidence=()=>resolve(process.cwd(),'test-results/exact-legacy-2026-10-21');
@@ -16,9 +17,8 @@ async function selection():Promise<Selection|null>{
  return data;
 }
 export async function ownerCreations():Promise<{images:OwnerCreation[];featured:OwnerCreation[]}>{
- const data=await selection();if(!data)return {images:[],featured:[]};
- const images=data.images.map(r=>({index:r.index,category:r.category,image:ownerImageRoute(r.index,960),large:ownerImageRoute(r.index,1600),small:ownerImageRoute(r.index,640)}));
- return {images,featured:data.featured.flatMap(index=>images.filter(r=>r.index===index))};
+ const images=publicSelection.images.map(r=>({index:r.index,category:r.category,image:r.variants.find(v=>v.width===960)!.url,large:r.variants.find(v=>v.width===1600)!.url,small:r.variants.find(v=>v.width===640)!.url}));
+ return {images,featured:publicSelection.featured.flatMap(index=>images.filter(r=>r.index===index))};
 }
 export async function ownerCreationBytes(id:string,size:string){
  if(!/^\d{3}$/.test(id)||!ownerImageSizes.some(n=>String(n)===size))return null;

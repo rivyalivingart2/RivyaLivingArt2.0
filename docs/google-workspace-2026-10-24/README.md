@@ -1,3 +1,16 @@
+# Current checkpoint — Phase 0–2 local implementation and release
+
+The owner requested completion from `43c0f14`, then authorized all latest changes through a detailed PR into GitHub `main` and a Codex Cloud handoff. The active branch is `codex/sheets-drive-foundation`. Read [the Phase 2 checkpoint](PHASE-2-CHECKPOINT.md), [verification](phase2-verification.json), [isolated Google target plan](ISOLATED-TARGET-PLAN.md), [complete owner brief](OWNER-BRIEF.md) and [Cloud continuation prompt](CONTINUE-IN-CODEX-CLOUD.md).
+
+The read-only audit and architecture/mapping plan are delivered. The controlled writer and signed Apps Script source, Drive JSON provider/large-document support, coherent publication bundle and durable job runner/canonical adapter are implemented and tested locally. Existing editors, data and login remain on the current provider. No Google resources or scripts have been activated; migration/cutover and real-provider acceptance are pending.
+
+The owner also requested correct service placement. See [SERVICE-PLACEMENT.md](SERVICE-PLACEMENT.md): Google Sheets/Drive/Apps Script own the future data/files/writer, GitHub owns source/tests/PR/handoff, and Vercel owns website previews/deployment. Source availability and real installation are reported separately.
+
+Publication of this branch also includes the earlier approved local website/Studio work. The release packages the exact approved 169-image derivatives for portable website delivery and guards new schema-dependent workflows so no automatic DDL is required. Original source files, private lineage, raw evidence and credentials are excluded from Git. The final receipt records preservation exceptions introduced solely for release compatibility.
+
+Use the existing [phase plan](PHASE-PLAN.md) for phases 3–11 after the pending real Google acceptance. The old checkpoint below records historical evidence at `43c0f14`; its next-work list has now been implemented locally. The current checkpoint and Cloud prompt supersede it.
+
+---
 # Current checkpoint — Studio and Google Workspace transition
 
 The owner approved the final local website and asked to begin the new CRAFT brief on 24 October 2026. Started from `e9d3228`, preserving it on `codex/exact-legacy-restoration`; current work is on `codex/sheets-drive-foundation`. All changes are local. Nothing has been uploaded, imported, published, pushed or deployed.
