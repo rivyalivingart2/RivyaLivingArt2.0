@@ -1,0 +1,278 @@
+{
+  "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "sourceDatabase": "OWNER_REPORTED_DELETED",
+  "recordCrosswalk": [],
+  "entities": [
+    {
+      "entity": "User",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "Category",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "Product",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "OWNER_EXCLUSION"
+    },
+    {
+      "entity": "ProductImage",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "OWNER_EXCLUSION"
+    },
+    {
+      "entity": "CustomizationField",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "OWNER_EXCLUSION"
+    },
+    {
+      "entity": "Inquiry",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "Portfolio",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "PortfolioImage",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "BlogCategory",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "Tag",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "BlogPost",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "Testimonial",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "Faq",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "Media",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "RateLimitHit",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "Page",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "SiteSettings",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "ImportRun",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "OWNER_EXCLUSION"
+    },
+    {
+      "entity": "ActivityLog",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "DeletedImport",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "OWNER_EXCLUSION"
+    },
+    {
+      "entity": "ScrapeSource",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "ScrapeJob",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "ScrapedProduct",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "ResearchProduct",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "ProductSnapshot",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "ProductVariant",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "NormalizationAlias",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "ShortlistEntry",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "ValidationFailure",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "AnalyticsSnapshot",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "OpportunityScore",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "ProductEmbedding",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "PriceHistory",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "Subscriber",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "SiteImage",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "SiteCopy",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "FormOption",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "NavMenu",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "NavItem",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "ContentRevision",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "PageSection",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "CustomPage",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "CustomBlock",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    },
+    {
+      "entity": "ImportConflict",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "OWNER_EXCLUSION"
+    },
+    {
+      "entity": "ResearchRecord",
+      "sourceRecordCount": null,
+      "mappedRecordCount": 0,
+      "reason": "DELETED_SOURCE_RECORDS_UNAVAILABLE"
+    }
+  ],
+  "fileKeyAndAssetMappingsAreNotDatabaseIds": true
+}

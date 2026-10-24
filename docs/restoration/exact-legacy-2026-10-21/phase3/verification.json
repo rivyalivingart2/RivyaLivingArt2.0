@@ -1,0 +1,123 @@
+{
+  "at": "2026-10-21T14:31:57.383Z",
+  "baseCommit": "39b948c",
+  "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "status": "CONTRACT_AND_AVAILABLE_FILE_MAPPING_VERIFIED_LOCALLY",
+  "scope": "Mapping only; no installed app/schema extension, original editing, association application or migration",
+  "checks": {
+    "mappingFields": 566,
+    "entities": 45,
+    "relationshipContracts": 48,
+    "mediaSlots": 78,
+    "mediaFamilies": 9,
+    "deterministicGeneratedArtifacts": 13,
+    "unitTests": 46,
+    "unitFailures": 0,
+    "scopedLint": "PASS",
+    "browserChecks": 8,
+    "browserFailures": 0,
+    "diffCheck": "PASS",
+    "privateEvidenceIgnored": true
+  },
+  "preservation": {
+    "scope": "EXISTING_SYNTHETIC_LOOPBACK_DATABASE_ONLY",
+    "productionBaseline": false,
+    "readOnly": true,
+    "unchangedBusinessTables": 13,
+    "unchangedBusinessRows": 313,
+    "unchangedCatalogueRows": 120,
+    "unchangedApplicationAndMediaFiles": 897,
+    "studioLoginSourceUnchanged": true
+  },
+  "comparisons": {
+    "bundledCopyStates": 24,
+    "conflictsKeptCurrent": 20,
+    "identicalCopyStates": 4,
+    "existingMediaReferences": 866,
+    "missingBundledReferences": 0,
+    "oldAssetsWithExactDestinationBytes": 135
+  },
+  "exclusions": {
+    "productsAdded": 0,
+    "productRowsChanged": 0,
+    "archivedCatalogueOrSheetsImports": 0,
+    "sourceDatabaseRecordsInvented": 0,
+    "databaseWrites": 0,
+    "mediaBytesOrAssociationsChanged": 0,
+    "cloudWrites": 0,
+    "published": 0,
+    "pushed": 0,
+    "deployed": 0
+  },
+  "limits": [
+    "Source DB owner-reported deleted; no real record crosswalk can be verified.",
+    "Drive inventory mixes 280 refreshed metadata observations and 533 dated observations; 787 originals remain unassigned.",
+    "Remote byte identity/dimensions and Photos file-level identities are unverified.",
+    "Proposed schema/editor/media extensions and derivative preparation are subsequent work, not completed by mapping.",
+    "Current app build was not rebuilt; its 897 tracked source/media files are byte-identical. Earlier app test/build receipts retain their original scope."
+  ],
+  "artifacts": [
+    {
+      "path": "asset-duplicates.json",
+      "sha256": "02f90fb4c2095c9d477057ceb021de5a08c14bf5fa3dcc233fa06d005f5880f7"
+    },
+    {
+      "path": "asset-mapping.json",
+      "sha256": "ce276f9c2898b4a2a00cc68bd4f14e927f669972413a8956a41d191adb1c4444"
+    },
+    {
+      "path": "copy-mapping.json",
+      "sha256": "e55b704a912ed6f1a0ecb8182a372eebbe8f0439a3c7bdca081e746c2381cfd5"
+    },
+    {
+      "path": "destination-assets.json",
+      "sha256": "de035659d915ebba979c0a78595d105fcf390f2c595ce6716b84f51ee50a3677"
+    },
+    {
+      "path": "entity-mapping.csv",
+      "sha256": "bb41accfb544599aa5027e3b5098e9e22c5e305d13dcb7beeffedd765e985c5c"
+    },
+    {
+      "path": "field-decision-ledger.json",
+      "sha256": "d061e475c1cbee5aff6fe719bfe099e992efec6837c9dddb6c457b31709a0a87"
+    },
+    {
+      "path": "field-mapping.csv",
+      "sha256": "4413c87e9309e572a9b6c267e6cf5c7a9097006c2a1401ecb941b7d0bd397ccf"
+    },
+    {
+      "path": "mapping-summary.json",
+      "sha256": "acac1fcb43417b05b61398e7b022194fa76ab79302a283cbc54137bc6a866eb5"
+    },
+    {
+      "path": "media-family-mapping.json",
+      "sha256": "b7afd67382f24e2f7de13ff9a5d817083a3c5049002c2d68c72570d7134568e0"
+    },
+    {
+      "path": "media-summary.json",
+      "sha256": "3865532982f403d4325ca3f18903828eb327911ad4f643d115d3ff13d720a1c0"
+    },
+    {
+      "path": "relationship-mapping.csv",
+      "sha256": "a9a9d2d8d04f644d1c1869c9ead045456ce8feb4c2c249f00ddabc966c2a1acb"
+    },
+    {
+      "path": "slot-mapping.json",
+      "sha256": "ad1f5c8d9e9df2f5143b10a8a818cce6b77605fc3e575ee3cb73bdda94f6305d"
+    },
+    {
+      "path": "source-record-crosswalk.json",
+      "sha256": "db90da0114f7deff3bcf6b07091f38facf77fc8f22a6a5617396f4cd5d674bb4"
+    }
+  ],
+  "evidence": {
+    "privateRoot": "test-results/exact-legacy-2026-10-21/phase3/",
+    "screenshots": [
+      "mapping-desktop.png",
+      "mapping-mobile.png"
+    ],
+    "mappingPreview": "http://127.0.0.1:4213/",
+    "appPreview": "http://127.0.0.1:4210/",
+    "phase2Comparisons": "http://127.0.0.1:4211/"
+  }
+}

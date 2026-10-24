@@ -4,6 +4,7 @@ import {studioDb} from '@/lib/studio-db';
 import {captureOrder,orderEntry,orderHistory,orderSource,savedOrder} from '@/lib/editorial-order-store';
 import {orderKey} from '@/lib/editorial-order';
 import {revalidatePath} from 'next/cache';
+import {editorialExtensionDependencyUnion} from '@/lib/editorial-extension-feature';
 export const dynamic='force-dynamic';
 const json=(value:unknown,status=200)=>Response.json(value,{status,headers:{'Cache-Control':'private, no-store'}});
 export async function GET(request:Request){try{
@@ -25,10 +26,12 @@ export async function POST(request:Request){
   if(body.operation==='restore'&&!restored)return json({error:'Revision unavailable.'},404);
   const document=publish?entry.document:await captureOrder(body.scope,restored?.ids||body.ids);
   if(!document)return json({error:'Use every current record for a complete order, or valid selected records for slots. Save a draft before publishing.'},409);
-  const rows=await studioDb()`WITH current_source AS (
+  const sql=studioDb();
+  const rows=await sql`WITH current_source AS (
    SELECT COALESCE(jsonb_object_agg(kind||':'||key,fingerprint),'{}'::jsonb) AS stamp FROM (
     SELECT 'content' AS kind,content_key AS key,md5(published::text) AS fingerprint FROM rivya_content WHERE visible=true AND published IS NOT NULL
     UNION ALL SELECT 'media',path,md5(published::text) FROM rivya_public_media WHERE published IS NOT NULL
+     ${sql.unsafe(editorialExtensionDependencyUnion())}
    ) source
   ), created AS (
    INSERT INTO rivya_presentations(presentation_key,draft,version,updated_by)

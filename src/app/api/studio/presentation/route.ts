@@ -5,6 +5,7 @@ import {revalidatePath} from 'next/cache';
 import {capturePresentation,presentationEntry,presentationHistory,presentationPageSources,savedPresentation} from '@/lib/presentation-store';
 import {designPages} from '@/lib/page-design-model';
 import {homePresentationId,validPresentationChange} from '@/lib/presentation-model';
+import {editorialExtensionDependencyUnion} from '@/lib/editorial-extension-feature';
 export const dynamic='force-dynamic';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
 export async function GET(){
@@ -33,12 +34,14 @@ export async function POST(request:Request){
   const dependencies=publish?document.dependencies:[];
   // All successful changes and their immutable history share a statement. Publication
   // also checks the captured home/media/product fingerprints in that same snapshot.
-  const rows=await studioDb()`WITH dependency_check AS (
+  const sql=studioDb();
+  const rows=await sql`WITH dependency_check AS (
    SELECT NOT EXISTS(SELECT 1 FROM jsonb_array_elements(${JSON.stringify(dependencies)}::jsonb) dep WHERE NOT EXISTS (
     SELECT 1 FROM (
      SELECT 'product' AS kind,product_id AS key,md5(published::text) AS fingerprint FROM rivya_catalogue WHERE visible=true AND published IS NOT NULL
      UNION ALL SELECT 'content',content_key,md5(published::text) FROM rivya_content WHERE visible=true AND published IS NOT NULL
      UNION ALL SELECT 'media',path,md5(published::text) FROM rivya_public_media WHERE published IS NOT NULL
+     ${sql.unsafe(editorialExtensionDependencyUnion())}
     ) ref WHERE ref.kind=dep->>'kind' AND ref.key=dep->>'key' AND ref.fingerprint=dep->>'fingerprint'
    )) AS valid
   ), created AS (

@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-24",
+  "scope": "Final owner-requested local homepage design correction",
+  "sourceBase": "0e55789",
+  "branch": "codex/exact-legacy-restoration",
+  "liveReference": "https://www.rivyalivingart.com/",
+  "reusedSourceCheckpoint": "1936cbb",
+  "status": "SCOPED_CORRECTION_COMPLETE_STOPPED",
+  "fullPhase4Complete": false,
+  "nextPhaseStarted": false,
+  "localBuild": "J0mF2NzSlOPFqGX4L_g0e",
+  "preservedExceptions": [
+    "Screenshot Creations structure and selected images",
+    "Screenshot footer structure",
+    "The Signature - From liquid to light",
+    "Existing local records and current Studio login"
+  ],
+  "checks": {
+    "applicationTests": 397,
+    "applicationFailures": 0,
+    "focusedImagePresentationTests": 6,
+    "scopedEslint": "PASS",
+    "typescriptAndNextBuild": "PASS",
+    "gitDiffCheck": "PASS",
+    "unchangedBusinessRows": 400,
+    "businessTables": 26,
+    "addedRowsDuringDesignCorrection": 0,
+    "originalMediaAndLoginFiles": 301,
+    "protectedSourceHashes": 21,
+    "unchangedSelectedOriginals": 169,
+    "exactSelectedWebpVariants": 507
+  },
+  "browser": {
+    "desktop": [
+      1280,
+      900
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "footerCapture": [
+      1280,
+      700
+    ],
+    "headerAndHeroTypeMeasurementsMatchLive": true,
+    "footerGradientMatchesLive": true,
+    "creationsGridDesktopColumns": 3,
+    "creationsGridMobileColumns": 1,
+    "loadedFeaturedImages": 6,
+    "horizontalOverflow": false,
+    "signatureDesktopStagesAdvance": true,
+    "signatureMobileStatic": true,
+    "pauseFallbackWorks": true,
+    "mobileNavigationOpensAndCloses": true,
+    "searchQuery": "River",
+    "existingSearchResults": 3,
+    "filmReadyState": 4,
+    "misleadingProductCaptionAbsent": true
+  },
+  "boundaries": {
+    "productsAdded": 0,
+    "archivedImports": 0,
+    "migrations": 0,
+    "publications": 0,
+    "pushes": 0,
+    "pullRequests": 0,
+    "deployments": 0,
+    "productionWrites": 0
+  },
+  "evidenceDirectory": "test-results/exact-legacy-2026-10-21/final-live-design/",
+  "limitations": [
+    "The local database retains its existing content; it is not a fresh copy of production editorial records.",
+    "Measured and inspected desktop/mobile views do not certify every route, device or full Phase 4 parity.",
+    "The earlier local Phase 4 workflow checkpoint remains 0e55789; the owner requested stopping after this design correction."
+  ]
+}

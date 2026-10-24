@@ -1,6 +1,37 @@
+# Superseded execution entry — use the current Sheets/Drive plan
+
+On 24 October 2026 the owner approved the final local public design and resumed work with the new Studio-only redesign and Sheets/Drive migration brief. Read [the current checkpoint](../../google-workspace-2026-10-24/README.md), [audit](../../google-workspace-2026-10-24/AUDIT.md), [architecture](../../google-workspace-2026-10-24/ARCHITECTURE.md) and [0–11 phase plan](../../google-workspace-2026-10-24/PHASE-PLAN.md). Preserve the approved public website and current Studio login. The target is Sheets/Drive after verified migration; current storage stays authoritative during preparation. No products/archived imports or Google Photos rework. All work remains local; no cloud writes, publication or release. Existing restoration work is retained and its earlier receipts remain dated evidence. This entry supersedes the previous stop and any conflicting public-redesign or permanent-SQL instructions below.
+
+---
+# Latest owner decision — confirmed live-site design and stop, 24 October 2026
+
+The owner explicitly selected **Current live www.rivyalivingart.com** for the overall homepage design, backgrounds and colours. Preserve the screenshot structures for the footer and Rivya / Creations, and preserve The Signature — From liquid to light. Complete this final local correction, then stop. This overrides conflicting earlier public-homepage design instructions; data/login protection, no products/imports and local-only restrictions remain. See [the scoped correction](FINAL-LIVE-DESIGN.md). The correction is complete; [the final verification](final-live-design-verification.json) records the local evidence. Work is stopped. Do not resume further Phase 4 or later work without a new request.
+
+---
+# Latest owner amendment — selected images and local website use, 24 October 2026
+
+The owner selected all **169 earlier AI-created images at http://127.0.0.1:4215/** for use in the website, asked for an annotation, and rejected the later source-pixel cutout treatment. Use the earlier exports as selected. Preserve the rejected experiment privately; it is not the selected collection.
+
+The owner also instructed us to stop Google Photos because it is the same collection as Drive for this project. Record Photos as owner-excluded duplicate coverage; do not claim byte-for-byte verification or resume its downloads as a prerequisite.
+
+Local use is implemented in the homepage portfolio slot, portfolio page and full `/creations` gallery. [The checkpoint](phase3/PHASE-3-OWNER-SELECTION.md) and [receipt](phase3/owner-selection-verification.json) define the evidence. This is an aesthetic selection of AI-enhanced presentations, not proof of exact lettering/faces, completed customer projects or genuine reviews.
+
+The owner's repeated **local-only / no products / no archived catalogue or Sheets imports / preserve existing data and Studio login** restrictions remain active. The selection permits local website display; it does not authorize CMS publication, production database/media reassignment, cloud uploads, push, PR or deployment. Prior field/media implementation and protected preservation results remain recorded separately. The original dated handoff below is historical and grants no new release authority.
+
+---
 # Owner decision — exact OLDWEBSITE restoration, 21 October 2026
 
 ## Latest instruction
+
+**Phase 3 authorization, 21 October 2026:** "Start Phase 3 from 39b948c. Do not add products or import the archived catalogue/Sheets lists. Preserve my existing data and Studio login, keep everything local, and complete the field and media mapping." This authorizes the local mapping checkpoint described in [PHASE-3-MAPPING.md](phase3/PHASE-3-MAPPING.md). Contract/available-file mapping is verified; it does not recover deleted records or install the proposed extensions. No product additions, product fixtures, archive imports, data/media changes or release occurred. Keep the subsequent implementation boundary and evidence limits explicit.
+
+**Latest restriction, 21 October 2026:** The owner said **"DONT ADD PDODUCT AND THIS"**, quoting the historical catalogue archive counts. Do not add products or import the archived catalogue/Sheets files, samples or saved product rewrites. None was imported. These sources are excluded from migration; preserve them only as existing read-only historical reference, not a future import backlog. Use the existing destination catalogue for design work and testing; no new product fixtures or product additions are authorized. This overrides earlier old-only-product transfer and product-population targets unless the owner later explicitly changes this restriction.
+
+**Execution update, 21 October 2026:** The owner reported: "OLD WEBSITE DATABASE WAS IN VERCEL BUT I ACCEDENTLY REMOVE IT SO YOU HAVE NOW ONLY FILDE SO WORK ACCORDING IT". Continue from the available files, code, assets and saved observations. The Vercel login/export request is superseded as a prerequisite. This is owner-reported deletion, not an independently verified recovery failure. Do not create another database and call it the lost source, execute old seeds into the destination, or infer deleted record IDs/counts/relationships/publication states. The existing destination data and current Studio login remain protected. Keep all work local.
+
+The revised Phase 1 baseline is **available-file discovery with a documented lost-source limitation**. Schema, bundled content and candidate files remain recoverable; deleted database records and overrides are unknown. Phase 2 representative layout acceptance may use the pinned source and clearly labelled isolated specimens; this does not certify recovered data, current business offerings or later full-workflow parity. See [FILE-BASED-CONTINUATION.md](FILE-BASED-CONTINUATION.md).
+
+The original handoff instruction below remains the design/feature target; its publication authorization was for that earlier documentation handoff only.
 
 The owner said: **"I NEED SAME COPY PASTE OLD WEBSITE TYPE DESIGN AND ALL FEATURES IN NEW WEBSITE"**, allowed earlier website rules to be changed where they conflict, requested a prompt for a new Codex chat, and requested publication of this handoff to GitHub main.
 

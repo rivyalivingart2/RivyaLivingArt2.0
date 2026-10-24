@@ -1,0 +1,269 @@
+{
+  "at": "2026-10-21T14:00:46.047Z",
+  "build": {
+    "at": "2026-10-21T13:51:06.578Z",
+    "buildId": "v2CaXW2W1igYEi5x4rN2P",
+    "syntheticLocal": true
+  },
+  "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "status": {
+    "phase1": "AVAILABLE_FILE_BASELINE_COMPLETE_WITH_LOST_SOURCE_LIMITATION",
+    "phase2": "REPRESENTATIVE_DESIGN_FOUNDATIONS_VERIFIED_WITH_PROTECTED_EXCEPTIONS",
+    "wholeSiteFeatureParity": false
+  },
+  "sourceFiles": 105,
+  "sourceEntities": 45,
+  "sourceFieldContracts": 575,
+  "sourceDatabase": {
+    "availability": "OWNER_REPORTED_DELETED",
+    "recovered": false,
+    "verifiedRecordCount": null,
+    "verifiedRecordRelationships": false
+  },
+  "protectedSourceFiles": 21,
+  "protectedSourceUnchanged": true,
+  "login": "Source/assets unchanged; historical geometry evidence retained, not falsely rerun here",
+  "referenceMedia": {
+    "files": 6,
+    "hashesMatch": true,
+    "bytes": 827799,
+    "note": "Six referenced files, five new assets plus one identical pre-existing asset"
+  },
+  "tests": {
+    "targetedUnitAndIsolation": 29,
+    "builtHttp": 403,
+    "buildAndTypes": true
+  },
+  "browser": {
+    "matchedLayoutMeasurements": 48,
+    "publicHomeMeasurements": 8,
+    "viewports": [
+      1920,
+      1440,
+      1200,
+      992,
+      768,
+      512,
+      390,
+      320
+    ],
+    "captures": 12,
+    "matchedPairs": 6,
+    "captureHeight": 640,
+    "visibleImagesHealthy": true,
+    "noHorizontalOverflow": true,
+    "publicProofChaptersPreserved": 3,
+    "unconfirmedOfferingsAbsent": true,
+    "sourceSpecimenAbsentFromPublicHome": true
+  },
+  "pairMeasurements": [
+    {
+      "family": "workshops",
+      "width": 1920,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0,
+      "sectionHeightDelta": 4.40625
+    },
+    {
+      "family": "print",
+      "width": 1920,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0,
+      "sectionHeightDelta": 2.203125
+    },
+    {
+      "family": "proof",
+      "width": 1920,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0,
+      "sectionHeightDelta": -83.984375
+    },
+    {
+      "family": "workshops",
+      "width": 1440,
+      "headingFontDelta": 0.28000000000000114,
+      "largestImageWidthDelta": 0.40625,
+      "sectionHeightDelta": 4.125
+    },
+    {
+      "family": "print",
+      "width": 1440,
+      "headingFontDelta": 0.28000000000000114,
+      "largestImageWidthDelta": 0.40625,
+      "sectionHeightDelta": 1.640625
+    },
+    {
+      "family": "proof",
+      "width": 1440,
+      "headingFontDelta": 0.28000000000000114,
+      "largestImageWidthDelta": 0.203125,
+      "sectionHeightDelta": -84.015625
+    },
+    {
+      "family": "workshops",
+      "width": 1200,
+      "headingFontDelta": 0.28000000000000114,
+      "largestImageWidthDelta": 0.40625,
+      "sectionHeightDelta": 2.296875
+    },
+    {
+      "family": "print",
+      "width": 1200,
+      "headingFontDelta": 0.28000000000000114,
+      "largestImageWidthDelta": 0.40625,
+      "sectionHeightDelta": -0.203125
+    },
+    {
+      "family": "proof",
+      "width": 1200,
+      "headingFontDelta": 0.28000000000000114,
+      "largestImageWidthDelta": 0.203125,
+      "sectionHeightDelta": -85.84375
+    },
+    {
+      "family": "workshops",
+      "width": 992,
+      "headingFontDelta": 0.28000000000000114,
+      "largestImageWidthDelta": 0.8125,
+      "sectionHeightDelta": 2.640625
+    },
+    {
+      "family": "print",
+      "width": 992,
+      "headingFontDelta": 0.28000000000000114,
+      "largestImageWidthDelta": 0.8125,
+      "sectionHeightDelta": 29.109375
+    },
+    {
+      "family": "proof",
+      "width": 992,
+      "headingFontDelta": 0.28000000000000114,
+      "largestImageWidthDelta": 0.40625,
+      "sectionHeightDelta": -82.859375
+    },
+    {
+      "family": "workshops",
+      "width": 768,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0.8125,
+      "sectionHeightDelta": 4.671875
+    },
+    {
+      "family": "print",
+      "width": 768,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0.8125,
+      "sectionHeightDelta": 30.15625
+    },
+    {
+      "family": "proof",
+      "width": 768,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0.40625,
+      "sectionHeightDelta": -80.75
+    },
+    {
+      "family": "workshops",
+      "width": 512,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0.78125,
+      "sectionHeightDelta": 4.53125
+    },
+    {
+      "family": "print",
+      "width": 512,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0.78125,
+      "sectionHeightDelta": 2.546875
+    },
+    {
+      "family": "proof",
+      "width": 512,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0.78125,
+      "sectionHeightDelta": -96.890625
+    },
+    {
+      "family": "workshops",
+      "width": 390,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0,
+      "sectionHeightDelta": 6.375
+    },
+    {
+      "family": "print",
+      "width": 390,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0,
+      "sectionHeightDelta": 2.015625
+    },
+    {
+      "family": "proof",
+      "width": 390,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0,
+      "sectionHeightDelta": -100.765625
+    },
+    {
+      "family": "workshops",
+      "width": 320,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0,
+      "sectionHeightDelta": 6.140625
+    },
+    {
+      "family": "print",
+      "width": 320,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0,
+      "sectionHeightDelta": 1.8125
+    },
+    {
+      "family": "proof",
+      "width": 320,
+      "headingFontDelta": 0,
+      "largestImageWidthDelta": 0,
+      "sectionHeightDelta": -124.15625
+    }
+  ],
+  "limitations": [
+    "File counts are not deduplicated product totals or deleted database rows.",
+    "Bundled source defaults do not recover SiteCopy/SiteImage overrides or publication state.",
+    "The old proof fact strip is omitted from the current composition because those operational facts are unverified; current three chapter texts and existing media relationships are preserved.",
+    "A source fragment comparison excludes its old global header/footer; existing protected/current navigation is visible around the candidate specimen.",
+    "Small fluid-type and image dimension differences from the current reserved scrollbar are recorded rather than masked.",
+    "No fresh production row-hash comparison or real provider/device/native-reader verification was performed.",
+    "Service activation, media/record mapping and complete public/Studio workflows remain in later phases."
+  ],
+  "operations": {
+    "productionDatabaseWrites": 0,
+    "realRecordImports": 0,
+    "cmsPublications": 0,
+    "externalMessages": 0,
+    "pushes": 0,
+    "deployments": 0
+  },
+  "ownerRestrictions": {
+    "productAdditionsAllowed": false,
+    "productArchiveImportsAllowed": false,
+    "newProductFixturesAllowed": false,
+    "authority": "Latest owner instruction: DONT ADD PDODUCT AND THIS; quoted catalogue/Sheets archive counts.",
+    "excludedFiles": [
+      "data/rewrites/rewrites-1.json",
+      "data/rewrites/rewrites-2.json",
+      "data/rewrites/rewrites-3.json",
+      "data/tiers/OwnerSheet_gid630660076.csv.gz",
+      "data/tiers/Tier1_Owner.csv.gz",
+      "data/tiers/Tier2_ResinGoods.csv.gz",
+      "data/tiers/Tier3_Supplies.csv.gz",
+      "data/tiers/Tier4_3DPrint.csv.gz",
+      "data/tiers/sample/OwnerImportReady.sample.csv",
+      "data/tiers/sample/Tier1_Owner.sample.csv",
+      "data/tiers/sample/Tier2_ResinGoods.sample.csv",
+      "data/tiers/sample/Tier3_Supplies.sample.csv",
+      "data/tiers/sample/Tier4_3DPrint.sample.csv",
+      "docs/import/tier1-owner-products.csv"
+    ],
+    "note": "Excluded historical sources, not a future import backlog. Existing destination catalogue and fixtures only."
+  }
+}

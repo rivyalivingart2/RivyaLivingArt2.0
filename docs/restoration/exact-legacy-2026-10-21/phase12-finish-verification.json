@@ -1,0 +1,101 @@
+{
+  "at": "2026-10-21T13:10:16.871Z",
+  "build": {
+    "at": "2026-10-21T13:00:37.393Z",
+    "buildId": "-PQ1q3ySBQe05yA-S1mEm",
+    "syntheticLocal": true
+  },
+  "scope": "LOCAL_PHASE_1_2_CONTINUATION_NOT_FULL_COMPLETION",
+  "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "sourceCheckoutUnchanged": true,
+  "protectedSourceFiles": 21,
+  "protectedSourceUnchanged": true,
+  "foundationMedia": {
+    "files": 6,
+    "bytes": 490199,
+    "sourceHashesMatch": true
+  },
+  "suites": {
+    "unit": 411,
+    "http": 403,
+    "preflight": 12
+  },
+  "eslint": {
+    "errors": 0,
+    "inheritedWarnings": 62
+  },
+  "screenshots": {
+    "total": 28,
+    "finalCandidate": 11,
+    "dimensionsVerified": true,
+    "candidateBuildVerified": true,
+    "excluded": "Full-footer compositor clips showed fixed overlays; actual viewport captures are used instead."
+  },
+  "layoutChecks": 64,
+  "widths": [
+    1920,
+    1440,
+    1200,
+    992,
+    768,
+    512,
+    390,
+    320
+  ],
+  "login": {
+    "widths": [
+      1440,
+      390
+    ],
+    "elements": 7,
+    "identicalGeometry": true,
+    "sourceUnchanged": true
+  },
+  "browserObservations": 17,
+  "browserObservationScope": "Recorded during this continuation; not all observations were repeated after the final CSS-only badge and separator adjustments.",
+  "newsletter": {
+    "checks": [
+      "Browser submission persisted once",
+      "Foreign origin refused",
+      "Invalid email refused",
+      "Unknown source refused",
+      "Honeypot does not persist",
+      "Repeat and mixed-case email are idempotent and do not reveal membership",
+      "Database failure returns honest retryable error"
+    ],
+    "latestBrowserPersistedExactlyOnce": true,
+    "externalMessages": 0
+  },
+  "oldIsolatedObservations": {
+    "readOnlyVerification": true,
+    "discardedTitleUnchanged": true,
+    "subscriberSavedExactlyOnce": true,
+    "http": [
+      {
+        "route": "/en/product/synthetic-reference-draft",
+        "status": 200,
+        "location": null
+      },
+      {
+        "route": "/en/product/synthetic-reference-archived",
+        "status": 200,
+        "location": null
+      },
+      {
+        "route": "/en/portfolio/phase1-missing-project",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "systemComponentStatusNotVerified": true
+  },
+  "limitations": [
+    "Real old database baseline remains blocked by access; synthetic records cannot establish source records, counts or relationships.",
+    "No refreshed live destination row-digest comparison in this UI continuation.",
+    "Old isolated runtime uses documented local fonts, locale routing, crypto import and error-route adapters; vector workflows are not tested.",
+    "Old unpublished, archived and missing route probes returned HTTP 200; this is an observed old status defect, not a passing status-parity claim.",
+    "Representative Phase 2 compositions do not certify every Phase 4 route, role, error state or workflow.",
+    "Protected copy, logos, controls and data change wrapping and full-page heights; no pixel-identical whole-site claim.",
+    "No real record migration, CMS publication, push, PR, merge, deployment, external message or paid service."
+  ]
+}

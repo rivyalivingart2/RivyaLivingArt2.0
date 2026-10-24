@@ -1,0 +1,91 @@
+{
+  "at": "2026-10-24T05:03:02.876Z",
+  "sourceCheckpoint": "c88071a",
+  "branch": "codex/exact-legacy-restoration",
+  "buildId": "gbV5ib2nPHG2Ja9ZxXMvv",
+  "scope": "Owner-selected images in the local website. No production publication or data migration.",
+  "ownerDecision": {
+    "selected": "Earlier 169-image collection at 4215",
+    "newCutoutExperiment": "rejected and retained privately",
+    "googlePhotos": "owner-excluded duplicate coverage; library equality not independently verified"
+  },
+  "selectedImages": 169,
+  "featuredImages": 6,
+  "creationTypes": 12,
+  "format": {
+    "ratio": "4:5",
+    "jpeg": [
+      1600,
+      2000
+    ],
+    "webp": [
+      [
+        640,
+        800
+      ],
+      [
+        960,
+        1200
+      ],
+      [
+        1600,
+        2000
+      ]
+    ]
+  },
+  "checks": {
+    "applicationTests": 393,
+    "applicationFailures": 0,
+    "build": true,
+    "typecheck": true,
+    "scopedEslint": true,
+    "servedVariantHashesMatched": 507,
+    "httpPages": 5,
+    "httpBoundaries": 8,
+    "buildTraces": 119,
+    "privateFilesExcludedFromBuildTraces": true,
+    "deliveryFilesHashed": 1352,
+    "originalsVerified": 169,
+    "imageExports": 676,
+    "archives": 6,
+    "reviewHttpChecks": 11,
+    "browserObservations": 15,
+    "browserFailures": 0,
+    "mobile": {
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "dialogWidth": 352,
+      "dialogHorizontalOverflow": false
+    },
+    "browserDownloadHashMatched": true
+  },
+  "preservation": {
+    "scope": "existing synthetic loopback database only; no production connection",
+    "readOnly": true,
+    "tables": 13,
+    "rows": 355,
+    "tableDigestsUnchanged": true,
+    "originalMediaAndLoginFiles": 301,
+    "protectedByteHashes": 21,
+    "studioLoginCodeUnchanged": true,
+    "applicationChanges": "selected collection presentation and local-only guards only"
+  },
+  "operations": {
+    "productsAdded": 0,
+    "archivedImports": 0,
+    "databaseWrites": 0,
+    "newStudioRecords": 0,
+    "cloudWrites": 0,
+    "cmsPublished": 0,
+    "push": 0,
+    "pullRequests": 0,
+    "deployments": 0
+  },
+  "limits": [
+    "AI-enhanced presentation selection is not documentary-fidelity or customer evidence.",
+    "No deleted database records or genuine image-to-business-record identities were recovered.",
+    "Local preservation is not a fresh production database audit.",
+    "390-pixel desktop emulation is not physical-phone testing. The browser screenshot surface scaled the mobile capture; DOM measurements are the responsive evidence.",
+    "Phases 4–7 full workflow, catalogue and release acceptance are not closed."
+  ]
+}

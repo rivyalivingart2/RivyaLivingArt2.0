@@ -1,0 +1,95 @@
+{
+  "scope": "BUNDLED_DEFAULT_COMPARISON_NOT_DATABASE_RECORD_MATCH",
+  "bindings": [
+    {
+      "sourceFile": "messages/en.json",
+      "sourceKey": "Home.hero.headline",
+      "destinationKey": "page:home",
+      "field": "title",
+      "rule": "KEEP_CURRENT; exact revision/value-digest approval required for a replacement"
+    },
+    {
+      "sourceFile": "messages/en.json",
+      "sourceKey": "Home.hero.eyebrow",
+      "destinationKey": "page:home",
+      "field": "eyebrow",
+      "rule": "KEEP_CURRENT; exact revision/value-digest approval required for a replacement"
+    },
+    {
+      "sourceFile": "messages/en.json",
+      "sourceKey": "Home.hero.lead",
+      "destinationKey": "page:home",
+      "field": "description",
+      "rule": "KEEP_CURRENT; exact revision/value-digest approval required for a replacement"
+    },
+    {
+      "sourceFile": "messages/en.json",
+      "sourceKey": "Home.hero.ctaExplore",
+      "destinationKey": "page:home",
+      "field": "homepage.primary.label",
+      "rule": "KEEP_CURRENT; exact revision/value-digest approval required for a replacement"
+    },
+    {
+      "sourceFile": "messages/en.json",
+      "sourceKey": "Home.hero.ctaBespoke",
+      "destinationKey": "page:home",
+      "field": "homepage.secondary.label",
+      "rule": "KEEP_CURRENT; exact revision/value-digest approval required for a replacement"
+    },
+    {
+      "sourceFile": "messages/en.json",
+      "sourceKey": "Nav.collections",
+      "destinationKey": "page:site-copy",
+      "field": "section:collections",
+      "rule": "KEEP_CURRENT; exact revision/value-digest approval required for a replacement"
+    },
+    {
+      "sourceFile": "messages/en.json",
+      "sourceKey": "Nav.search",
+      "destinationKey": "page:site-copy",
+      "field": "section:search-pieces",
+      "rule": "KEEP_CURRENT; exact revision/value-digest approval required for a replacement"
+    },
+    {
+      "sourceFile": "messages/en.json",
+      "sourceKey": "Nav.bespoke",
+      "destinationKey": "page:site-copy",
+      "field": "section:begin-piece",
+      "rule": "KEEP_CURRENT; exact revision/value-digest approval required for a replacement"
+    },
+    {
+      "sourceFile": "messages/en.json",
+      "sourceKey": "Footer.explore",
+      "destinationKey": "page:site-copy",
+      "field": "section:footer-explore",
+      "rule": "KEEP_CURRENT; exact revision/value-digest approval required for a replacement"
+    },
+    {
+      "sourceFile": "messages/en.json",
+      "sourceKey": "Footer.studio",
+      "destinationKey": "page:site-copy",
+      "field": "section:footer-atelier",
+      "rule": "KEEP_CURRENT; exact revision/value-digest approval required for a replacement"
+    },
+    {
+      "sourceFile": "messages/en.json",
+      "sourceKey": "Footer.contact",
+      "destinationKey": "page:site-copy",
+      "field": "section:footer-talk",
+      "rule": "KEEP_CURRENT; exact revision/value-digest approval required for a replacement"
+    },
+    {
+      "sourceFile": "messages/en.json",
+      "sourceKey": "Footer.ctaHeadline",
+      "destinationKey": "page:site-copy",
+      "field": "section:footer-statement",
+      "rule": "KEEP_CURRENT; exact revision/value-digest approval required for a replacement"
+    }
+  ],
+  "statesCompared": 24,
+  "conflicts": 20,
+  "unchanged": 4,
+  "changesApplied": 0,
+  "privateEvidence": "Ignored phase3/copy-decisions-private.json",
+  "limitation": "Deleted SiteCopy overrides are unknown; bundled defaults do not recover them."
+}

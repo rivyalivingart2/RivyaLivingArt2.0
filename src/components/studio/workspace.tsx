@@ -28,6 +28,7 @@ import {studioFetch,type StaffMember,type WorkspaceIdentity} from './workspace-a
 import s from './workspace.module.css';
 import design from './studio-editing.module.css';
 import operationsDesign from './studio-operations.module.css';
+import legacy from './legacy-studio.module.css';
 
 // Content and operational pages share controls while retaining scoped layouts.
 const contentWorkspaces=new Set<StudioModuleKey>(['products','content-register','editorial-order','content','media','site-copy','sections','site-images','content-health','translations','categories','research','content-gaps','process','materials','forms','journal','portfolio','testimonials','faqs','pages','landing-pages','seo','content-lab']);
@@ -53,6 +54,7 @@ const AnalyticsPanel=dynamic(()=>import('./analytics-panel').then(m=>m.Analytics
 const CatalogueCategories=dynamic(()=>import('./catalogue-categories').then(m=>m.CatalogueCategories),{loading:WorkspaceLoading});
 const EditorialDesk=dynamic(()=>import('./editorial-desk').then(m=>m.EditorialDesk),{loading:WorkspaceLoading});
 const ConditionalWorkspace=dynamic(()=>import('./conditional-workspace').then(m=>m.ConditionalWorkspace),{loading:WorkspaceLoading});
+const SubscriberWorkspace=dynamic(()=>import('./subscriber-workspace').then(m=>m.SubscriberWorkspace),{loading:WorkspaceLoading});
 function WorkspaceLoading(){return <p data-studio-part="status" className={s.status} role="status">Opening this workspace page…</p>;}
 
 const moduleIcons = {'content-register':FileText,'editorial-order':FileText,'analytics':Activity,'categories':Boxes,'import':Boxes,'exports':Boxes,'research':Boxes,'content-gaps':Boxes,'process':FileText,'materials':FileText,'forms':FileText,'journal':FileText,'portfolio':FileText,'testimonials':FileText,'faqs':FileText,'pages':FileText,'landing-pages':FileText,'seo':FileText,'subscribers':FileText,'content-lab':FileText,overview:LayoutDashboard,inquiries:Inbox,'follow-ups':Clock,products:Boxes,content:FileText,sections:LayoutDashboard,media:ImageIcon,'site-copy':FileText,'site-images':ImageIcon,'content-health':Activity,'site-settings':Languages,legacy:FileText,translations:Languages,'route-review':ExternalLink,activity:Activity,staff:Users,settings:SettingsIcon} satisfies Record<StudioModuleKey,typeof LayoutDashboard>;
@@ -62,9 +64,9 @@ const moduleViews = {
  'content-register':({admin}:ModuleContext)=> <ContentRegister admin={admin}/>,
  'editorial-order':({admin}:ModuleContext)=><EditorialOrderEditor admin={admin}/>,
  analytics:()=> <AnalyticsPanel/>,
- categories:()=> <CatalogueCategories/>,
+ categories:({admin}:ModuleContext)=> <CatalogueCategories admin={admin}/>,
  import:()=> <ConditionalWorkspace view="import"/>,
- subscribers:()=> <ConditionalWorkspace view="subscribers"/>,
+ subscribers:()=> <SubscriberWorkspace/>,
  exports:({admin}:ModuleContext)=><Operations view="activity" admin={admin} exportOnly/>,
  forms:({admin}:ModuleContext)=><CatalogueEditor admin={admin} formsOnly/>,
  'content-gaps':()=> <ContentHealth gapsOnly/>,
@@ -112,7 +114,7 @@ function NavigationLinks({admin,view,onNavigate}:{admin:boolean;view?:StudioModu
  return navGroups.map(group=>{const items=group.items.filter(item=>admin||!item.adminOnly);return items.length?<div key={group.title} className={s.navGroup}><span data-studio-part="navGroupTitle" className={s.navGroupTitle}>{group.title}</span><div className={s.navGroupList}>{items.map(item=>{const Icon=moduleIcons[item.key];return <Link key={item.key} prefetch={false} href={studioModuleHref(item)} data-studio-part="navLink" className={s.navLink} title={item.label} aria-label={item.label} aria-current={view===item.key?'page':undefined} onClick={e=>{if(e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey)onNavigate?.(studioModuleHref(item));}}><Icon size={18} className={s.navIcon} aria-hidden="true"/><span className={s.navLabel}>{item.label}</span></Link>;})}</div></div>:null;});
 }
 
-export function Workspace({initial,initialCollapsed=false}:{initial?:{session:WorkspaceIdentity;staff:StaffMember[]};initialCollapsed?:boolean}={}){
+export function Workspace({initial,initialCollapsed=false,children}:{initial?:{session:WorkspaceIdentity;staff:StaffMember[]};initialCollapsed?:boolean;children?:ReactNode}={}){
  const path=usePathname(),activeModule=studioModule(path.split('/')[2]||''),view=activeModule?.key;
  const [identity,setIdentity]=useState<WorkspaceIdentity|null>(initial?.session||null),[staff,setStaff]=useState<StaffMember[]>(initial?.staff||[]),[error,setError]=useState(''),[sessionMessage,setSessionMessage]=useState('');
  const load=useCallback(async()=>{const data=await studioFetch('/api/studio/workspace');setIdentity(data.session);setStaff(data.staff);setSessionMessage('');},[]);
@@ -127,8 +129,9 @@ export function Workspace({initial,initialCollapsed=false}:{initial?:{session:Wo
  useEffect(()=>{if(pendingNavigationFocus!==path)return;const main=document.getElementById('main-content');if(!main)return;const focus=()=>{const heading=main.querySelector<HTMLElement>('h1');if(!heading)return false;heading.tabIndex=-1;heading.focus();pendingNavigationFocus=null;return true;};if(focus())return;const observer=new MutationObserver(()=>{if(focus())observer.disconnect();});observer.observe(main,{subtree:true,childList:true});return()=>observer.disconnect();},[path]);
 
  return (
-  <CinematicCanvas mode="studio"><div data-atmosphere="studio" className={s.workspace+' '+design.shell} data-module={view} data-collapsed={collapsed} onClickCapture={e=>{const a=(e.target as HTMLElement).closest('a');if(e.defaultPrevented||e.button!==0||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey||a?.hasAttribute('data-studio-leave-guard'))return;if(a&&a.target!=='_blank'&&a.getAttribute('href')?.startsWith('/studio')&&document.querySelector('[data-unsaved="true"]')&&!window.confirm('Leave this page and discard unsaved edits?')){e.preventDefault();e.stopPropagation();}}}>
+  <CinematicCanvas mode="studio"><div data-atmosphere="studio" className={s.workspace+' '+design.shell+' '+legacy.shell} data-module={view} data-collapsed={collapsed} onClickCapture={e=>{const a=(e.target as HTMLElement).closest('a');if(e.defaultPrevented||e.button!==0||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey||a?.hasAttribute('data-studio-leave-guard'))return;if(a&&a.target!=='_blank'&&a.getAttribute('href')?.startsWith('/studio')&&document.querySelector('[data-unsaved="true"]')&&!window.confirm('Leave this page and discard unsaved edits?')){e.preventDefault();e.stopPropagation();}}}>
     <header data-studio-part="top" className={s.top}>
+      <nav className={legacy.topCrumb} aria-label="Studio location"><Link href="/studio">Studio</Link><span aria-hidden>/</span><span>{activeModule?.label||'Workspace'}</span></nav>
       <button type="button" className={s.mobileNavToggle} aria-label="Open Studio navigation" aria-haspopup="dialog" aria-expanded={mobileNav} onClick={()=>setMobileNav(true)}><Menu size={20} aria-hidden="true"/><span>Menu</span></button>
       <div data-studio-part="brandGroup" className={s.brandGroup}>
         <Link href="/studio" data-studio-part="brandLink" className={s.brandLink}>
@@ -163,12 +166,13 @@ export function Workspace({initial,initialCollapsed=false}:{initial?:{session:Wo
     {sessionMessage&&<aside data-studio-part="panel" className={s.panel} role="alert"><p><AlertCircle size={16} style={{display:'inline',verticalAlign:'text-bottom',marginRight:6}} />{sessionMessage}</p><button onClick={()=>void load().catch(e=>setSessionMessage(e.message))}>Check renewed access</button></aside>}
     <div data-studio-part="workspaceLayout" className={s.workspaceLayout}>
       <nav data-studio-part="sideNav" className={s.sideNav} aria-label="Studio navigation">
+        <Link href="/studio" className={legacy.sidebarBrand} aria-label="RivyaLivingArt Studio"><Image src="/brand/rivyalivingart-logo-horizontal-transparent.png" width={410} height={116} sizes="180px" alt="RivyaLivingArt"/><span>STUDIO</span></Link>
         <button type="button" className={s.collapseNav} onClick={toggleSidebar} aria-expanded={!collapsed} aria-label={collapsed?'Expand Studio sidebar':'Collapse Studio sidebar'}>{collapsed?<PanelLeftOpen size={18} aria-hidden="true"/>:<PanelLeftClose size={18} aria-hidden="true"/>}<span className={s.navLabel}>Collapse sidebar</span></button>
         <NavigationLinks admin={admin} view={view}/>
       </nav>
       <main id="main-content" tabIndex={-1} className={s.workspaceMain+' '+design.content+(view&&!contentWorkspaces.has(view)?' '+operationsDesign.operations:'')} data-studio-design={view&&contentWorkspaces.has(view)?'content':'operations'}>
         <nav data-studio-part="workspaceCrumb" className={s.workspaceCrumb} aria-label="Workspace breadcrumb"><Link href="/studio">Studio</Link><span aria-hidden> / </span><span aria-current="page">{activeModule?.label||'Unavailable page'}</span><VisualEffectsControl/></nav>
-        {error?<div data-studio-part="panel" className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p data-studio-part="status" className={s.status} role="status">Opening your workspace…</p>:!activeModule?<section data-studio-part="empty" className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>:activeModule.adminOnly&&!admin?<p data-studio-part="empty" className={s.empty}>Administrator access is required.</p>:<div key={activeModule.key}><ModuleView moduleKey={activeModule.key} admin={admin} staff={staff} load={load} staffId={identity.staffId}/></div>}
+        {error?<div data-studio-part="panel" className={s.panel} role="alert">{error}<button onClick={()=>void load().then(()=>setError('')).catch(e=>setError(e.message))}>Retry</button></div>:!identity?<p data-studio-part="status" className={s.status} role="status">Opening your workspace…</p>:children?<>{children}</>:!activeModule?<section data-studio-part="empty" className={s.empty}><h1>Workspace page unavailable.</h1><Link href="/studio">Return to the overview</Link></section>:activeModule.adminOnly&&!admin?<p data-studio-part="empty" className={s.empty}>Administrator access is required.</p>:<div key={activeModule.key}><ModuleView moduleKey={activeModule.key} admin={admin} staff={staff} load={load} staffId={identity.staffId}/></div>}
 
       </main>
     </div>

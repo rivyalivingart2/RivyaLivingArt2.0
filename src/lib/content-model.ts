@@ -1,3 +1,4 @@
+import {validFileUsage,type FileUsage} from './editorial-extension-model';
 import {validDiscovery,validEditorialReview,type DiscoveryMetadata,type EditorialReview} from './editorial-metadata';
 import journal from './reviewed-journal.json';
 import {applyReviewedTranslation,validTranslationFields} from './translation-review';
@@ -22,7 +23,7 @@ export type ContentDocument={
  translations?:Partial<Record<Locale,ContentTranslation>>;
  homepage?:Homepage;homeSnapshot?:HomeSnapshot;
  pageSnapshot?:PageSnapshot;effectiveDate?:string;featuredArticleIds?:string[];
- editorial?:EditorialRecord;landing?:LandingDocument;discovery?:DiscoveryMetadata;review?:EditorialReview;film?:'resin-pour';
+ mediaFiles?:FileUsage[];editorial?:EditorialRecord;landing?:LandingDocument;discovery?:DiscoveryMetadata;review?:EditorialReview;film?:'resin-pour';
 };
 export const articleAliases:Record<string,string>={
  'the-space-around-an-object':'a-room-begins-with-a-statement-table',
@@ -44,6 +45,7 @@ export function validContent(value:unknown,base?:ContentDocument):value is Conte
 function checkContent(value:unknown,base?:ContentDocument):value is ContentDocument{
  if(!value||typeof value!=='object')return false;
  const d=value as ContentDocument;
+ if(d.mediaFiles!==undefined&&(!!d.homepage||!Array.isArray(d.mediaFiles)||d.mediaFiles.length>6||new Set(d.mediaFiles.map(f=>f.kind+':'+f.key)).size!==d.mediaFiles.length||d.mediaFiles.some(f=>!validFileUsage(f))||d.editorial?.kind==='testimonial'&&d.editorial.classification!=='genuine'))return false;
  if(d.film!==undefined&&(d.film!=='resin-pour'||d.kind!=='article'&&d.editorial?.kind!=='portfolio'))return false;
  if(d.discovery!==undefined&&!validDiscovery(d.discovery)||d.review!==undefined&&!validEditorialReview(d.review))return false;
  if(!cleanText(d.id,100)||!['page','article'].includes(d.kind)||!cleanText(d.title,120)||!cleanText(d.eyebrow,100)||!cleanText(d.description,300)||!Array.isArray(d.sections)||(!d.landing&&d.sections.length<1)||d.sections.length>(d.id===sharedCopyId?40:20))return false;

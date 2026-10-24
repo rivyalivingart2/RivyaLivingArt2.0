@@ -1,0 +1,50 @@
+[
+  {
+    "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "source": "public/media/v3/workshop-table.avif",
+    "destination": "public/legacy-reference/foundation/workshop-table.avif",
+    "bytes": 31793,
+    "sha256": "8bb79b79214e9403028e6f0c4f39101ff57f1f331ed5b89435ce68401263bd93",
+    "purpose": "Local-only matched layout specimen; source imagery does not establish genuine customer work"
+  },
+  {
+    "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "source": "public/media/v3/print-head.avif",
+    "destination": "public/legacy-reference/foundation/print-head.avif",
+    "bytes": 36897,
+    "sha256": "5e43773fa7515ea018e025727f8fce0e8c137ea5913ac4d63030366e6c35623a",
+    "purpose": "Local-only matched layout specimen; source imagery does not establish genuine customer work"
+  },
+  {
+    "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "source": "public/redesign/maker-hands.jpg",
+    "destination": "public/legacy-reference/foundation/maker-hands.jpg",
+    "bytes": 136116,
+    "sha256": "138776d5f9a02ec85a613ce32d892643aed732d356779bfd36792c0b89347cd5",
+    "purpose": "Local-only matched layout specimen; source imagery does not establish genuine customer work"
+  },
+  {
+    "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "source": "public/redesign/doorway-memory.jpg",
+    "destination": "public/legacy-reference/foundation/doorway-memory.jpg",
+    "bytes": 181244,
+    "sha256": "5e14af18d1837fe803ad3dcec0a80e582b3f98d602a27bedcd6c64dfe7092d96",
+    "purpose": "Local-only matched layout specimen; source imagery does not establish genuine customer work"
+  },
+  {
+    "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "source": "public/redesign/texture-resin-flow.jpg",
+    "destination": "public/legacy-reference/foundation/texture-resin-flow.jpg",
+    "bytes": 229943,
+    "sha256": "53dfc87a74c50b6ca72a2e76e1d85df051afa01acfc434b26974f804e0cc81c8",
+    "purpose": "Local-only matched layout specimen; source imagery does not establish genuine customer work"
+  },
+  {
+    "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "source": "public/redesign/hero-pour.jpg",
+    "destination": "public/legacy-reference/foundation/hero-pour.jpg",
+    "bytes": 211806,
+    "sha256": "be54fcd332bb12dae0923a86e3d9fa074a0e052fc04520d0bdb369bf499116b7",
+    "purpose": "Local-only matched layout specimen; source imagery does not establish genuine customer work"
+  }
+]

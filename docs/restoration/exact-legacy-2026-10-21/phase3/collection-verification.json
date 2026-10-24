@@ -1,0 +1,109 @@
+{
+  "checkpointBase": "f64294f",
+  "branch": "codex/exact-legacy-restoration",
+  "deliveryDate": "2026-10-24",
+  "scope": "Private local preparation of the supplied creation folder; no production connection or publication",
+  "status": "CREATION_FOLDER_PREPARATION_COMPLETE; FULL_PHASE_3_ACCEPTANCE_OPEN",
+  "deliveryVerification": {
+    "at": "2026-10-23T14:20:46.326Z",
+    "sourceImages": 169,
+    "newEdits": 163,
+    "retainedEdits": 6,
+    "editedCandidates": 169,
+    "originalsVerified": 169,
+    "imageExports": 676,
+    "filesHashed": 1352,
+    "archives": 6,
+    "archiveImageCounts": [
+      30,
+      30,
+      30,
+      30,
+      30,
+      19
+    ],
+    "jpeg": [
+      1600,
+      2000
+    ],
+    "webp": [
+      [
+        640,
+        800
+      ],
+      [
+        960,
+        1200
+      ],
+      [
+        1600,
+        2000
+      ]
+    ],
+    "maxWebpBytes": 503868,
+    "httpChecks": 11,
+    "privateManifestsDenied": true,
+    "conflictingOverwriteDenied": true,
+    "containPreservesComposition": true,
+    "allCandidatesUnassigned": true
+  },
+  "preservationVerification": {
+    "at": "2026-10-23T14:15:57.073Z",
+    "scope": "existing synthetic loopback database only",
+    "readOnly": true,
+    "tables": 13,
+    "rows": 355,
+    "tableDigestsUnchanged": true,
+    "originalMediaAndLoginFiles": 301,
+    "protectedByteHashes": 21,
+    "appSourceUnchangedFromBase": true
+  },
+  "browserVerification": {
+    "at": "2026-10-24T03:59:03.398Z",
+    "origin": "http://127.0.0.1:4215/",
+    "totalVisible": 169,
+    "firstPage": "1–12",
+    "nextPage": "13–24",
+    "clockFilterMatches": 18,
+    "creatorMarkFilterMatches": 37,
+    "search169Matches": 1,
+    "sourceComparisonExpanded": true,
+    "desktop": {
+      "viewportWidth": 1440,
+      "documentWidth": 1425,
+      "columns": 3
+    },
+    "mobile": {
+      "viewportWidth": 390,
+      "documentWidth": 375,
+      "columns": 1
+    },
+    "jpegDownloadSha256MatchesExport": true,
+    "privateScreenshots": [
+      "gallery-final-desktop.png",
+      "gallery-final-mobile.png"
+    ]
+  },
+  "validation": {
+    "eslint": "PASS: seven new JavaScript modules",
+    "applicationBuild": "Not rerun: app, public and package files unchanged; prior build retains its original date"
+  },
+  "limits": {
+    "photosAlbumCoverage": "UNVERIFIED: album-wide downloads failed; one individual original retained; individual-file continuation remains possible",
+    "photosAlbumTotal": null,
+    "documentaryFidelityAccepted": false,
+    "recordAssignmentsMade": false,
+    "deletedSourceDatabaseRecords": "UNKNOWN"
+  },
+  "mutations": {
+    "productsAdded": 0,
+    "archivedImports": 0,
+    "databaseWrites": 0,
+    "studioRecordsAdded": 0,
+    "associationsWritten": 0,
+    "published": 0,
+    "cloudWrites": 0,
+    "pushes": 0,
+    "deployments": 0
+  }
+}

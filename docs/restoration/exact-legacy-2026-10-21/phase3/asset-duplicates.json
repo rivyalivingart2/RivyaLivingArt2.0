@@ -1,0 +1,1770 @@
+[
+  {
+    "sha256": "f5839356f47a89b242ba8e409b10342b5178447234872903c9ea0f08f00e1d8f",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/media/hands-polish.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/foundation/hands-polish.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "32275f88008af08b68a0fb4410de86823f49ca30d5a9389d0036d6dfe18dead1",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/media/v3/art-wall-panel.avif"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/foundation/art-wall-panel.avif"
+      }
+    ]
+  },
+  {
+    "sha256": "40f1c0fc5bc83ad84527a579a44c95dff5f72c3134a945ab03f61487f507bb7a",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/media/v3/bench-coffee-top.avif"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/foundation/bench-coffee-top.avif"
+      }
+    ]
+  },
+  {
+    "sha256": "5e43773fa7515ea018e025727f8fce0e8c137ea5913ac4d63030366e6c35623a",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/media/v3/print-head.avif"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/foundation/print-head.avif"
+      }
+    ]
+  },
+  {
+    "sha256": "a202bdfda6322a228dee3d526dd25147fe56a14990263776cdf2dd1af504328a",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/media/v3/story-cure.avif"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/foundation/story-cure.avif"
+      }
+    ]
+  },
+  {
+    "sha256": "086a724f0a3304d21f6618776fa8ff9afc6a93063244126e332009d2a487bd41",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/media/v3/varmala-press-stack.avif"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/foundation/varmala-press-stack.avif"
+      }
+    ]
+  },
+  {
+    "sha256": "8bb79b79214e9403028e6f0c4f39101ff57f1f331ed5b89435ce68401263bd93",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/media/v3/workshop-table.avif"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/foundation/workshop-table.avif"
+      }
+    ]
+  },
+  {
+    "sha256": "5e14af18d1837fe803ad3dcec0a80e582b3f98d602a27bedcd6c64dfe7092d96",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/redesign/doorway-memory.jpg"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/foundation/doorway-memory.jpg"
+      }
+    ]
+  },
+  {
+    "sha256": "e7dec2a8d6972a0825caf57aae320db7b1a0c319eb2f7a3d5581ba9190040caf",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/redesign/hero-pour-loop-poster.jpg"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/media/migration/hero-pour-loop-poster.jpg"
+      }
+    ]
+  },
+  {
+    "sha256": "61d4633578353e813e64506877eed198bc682b6424701b7783720af51530869d",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/redesign/hero-pour-loop.mp4"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/media/migration/hero-pour-loop.mp4"
+      }
+    ]
+  },
+  {
+    "sha256": "ba77d14e1d380f382bbc86af1c5e8533ad3e8a0ad2bb604d06506b3da5b216c8",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/redesign/hero-pour-loop.webm"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/media/migration/hero-pour-loop.webm"
+      }
+    ]
+  },
+  {
+    "sha256": "be54fcd332bb12dae0923a86e3d9fa074a0e052fc04520d0bdb369bf499116b7",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/redesign/hero-pour.jpg"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/foundation/hero-pour.jpg"
+      }
+    ]
+  },
+  {
+    "sha256": "138776d5f9a02ec85a613ce32d892643aed732d356779bfd36792c0b89347cd5",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/redesign/maker-hands.jpg"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/foundation/maker-hands.jpg"
+      }
+    ]
+  },
+  {
+    "sha256": "53dfc87a74c50b6ca72a2e76e1d85df051afa01acfc434b26974f804e0cc81c8",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/redesign/texture-resin-flow.jpg"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/foundation/texture-resin-flow.jpg"
+      }
+    ]
+  },
+  {
+    "sha256": "4e70ebf870c59f4dca1d2f790a458f86486eb25172410ebc155f4b1b39a8cb38",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_000.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_000.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "a038528213c77b6570a1c6822ea31f48ba12bdf5d8f42bf0ac45f37d197cba4f",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_001.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_001.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "dfd15dc6f86e5e296f895cefa35ddd249772d91ab88ed61240440bae4aa16f22",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_002.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_002.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "51e1b0a1631a17b80d4b5d7d15a0e1e3b39c011756467a7cc964e4248a7e36ba",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_003.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_003.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "babb4fc76c038b1867730092d8f960968a89c51db1bf14c40738db5b9f3f26f6",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_004.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_004.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "98271d9ba2af7ef7323cfb1d72c16747566919d42660377d7a7a0de1c7e3d5e5",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_005.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_005.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "018444cc0f7bb6fe5de874f209f3dbb0cf411f61fbecc9ea032c7dafbcf2a2cf",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_006.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_006.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "b3622a47f136bc58667011a8252796c43bc3183ddad2089657cea6b2bfc50c12",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_007.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_007.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "cd9a35dda86d3fe93b90a0f63382d7e1169f7dbaf453542f85fe35b7936dff23",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_008.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_008.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "57e7abd78c21dc511ab3db41c4c0272d36881de90a71d08d96a7ecc4ccf0c256",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_009.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_009.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "c60818d123f237efa4c6465158ca0a3f5de854b94f8e171e7285d4ec1730dc20",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_010.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_010.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "d5fcc5c715622bb6b964d5fbea2d95bc1f5abb16deaffc24495028725f717b07",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_011.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_011.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "b63629001b219186c796b8f82744af53287acccf412588627f75ee0dab337645",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_012.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_012.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "e68b7a6a981a2ee73d73934f562dca50aa35f8de119a4d06b8ea28b5647bacc7",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_013.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_013.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "80570af98ce9e4ff196d66b4c18c673642f71facc32f183176fa75756916b607",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_014.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_014.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "2ebff2f19b7a79d97a7d0eb9fdcd890e20eb28ed0d45a19b6dff768177c30ad5",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_015.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_015.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "4cb0c52f41a3bc534dafc8e1e90157ce6e5809c50beb5e726983a6c563852d7a",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_016.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_016.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "ac17460d347819f239335f519e6dc3928374a77bf0587972d25ff15b52a3384b",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_017.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_017.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "d54e1d8f081ae20756cb6f2d47f9a411395137b50135621ce9e09fcfedee2b2e",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_018.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_018.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "488a21087cbec8716ab413df15b01c2fe138d62ef0bc9507197e74eb2f1c1dbc",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_019.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_019.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "f10da24f6d5cdb4ae03d33e13b9f3893fb6c2141d0f4c7b3971dad88696cfa09",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_020.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_020.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "308f80b76e67679addcaeff876246773162c039de4c9ff6e004d494cf896e6cc",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_021.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_021.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "5d0a8b97d5b74d35dddb39dd311e78899785ec0c90822e1b1437caac16da20b0",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_022.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_022.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "c22963ada2071a5116de758a9c01bcaf803a8adaece734e5ca92ed3708b61aec",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_023.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_023.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "2cf863d0ca93569b0c67895ab870e26fa9cffb8d98293ee72446db97f51427f6",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_024.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_024.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "1124e6a1f24ad3418e610c0ad29d50515ae6047fd480b11cbcbf84365a9ea28e",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_025.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_025.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "a04a80bcdc1980b5227f3c795b7527f7784ff7778fa23ae5e109d93b7911ae88",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_026.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_026.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "b7691b9c339369618448aaf17d5f37790dd9b68a75765ecefe20379eab836d5f",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_027.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_027.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "d9ea7698fe2de1f5b0ae8ebe31f29d560dfe48c404f3f51a95e687d9b4ff4670",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_028.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_028.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "4afc938e7434f145fcd856f0923e8b19b22cffc762c08d94b787f3e3526d2601",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_029.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_029.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "d9d5ef0a6340b2ba4fbb06853cead8cfde3f7332f2502c806497d3901a90548d",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_030.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_030.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "cb261559fd43f59adcebb99eb7b584307af4f0f1d17cf861da059933cc2fbab2",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_031.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_031.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "1a018081b09a7c9c3cbb3467831c50946436a0c1ec6b63b834d9ae92cc551431",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_032.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_032.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "a0a90187dfad4e54de18264fec0d1e1bd7004c270b91266174d1db2f7f0d1e82",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_033.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_033.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "83477bb006e4108853502d6badc54ab197b88758b2c7c4b3e2be37eef5b81a89",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_034.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_034.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "ca8c022ad752ed6d24e3093535c8ea89d952cb5376571b1eedb6ea5315f22dd7",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_035.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_035.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "9ce497ed3059b7a584d49fb33fb364168c5489e9e55c47209b51d6c61cdcfc24",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_036.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_036.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "256c196ee95efa2a8e97e80e189b7783c41d3b2c10ffd89d28533c67eb6c39fe",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_037.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_037.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "8e03bbf9c34e76ada6d8bfd5f6c57e90de1cdd588c9db56f1b42a77c912ef92b",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_038.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_038.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "8779f65ca521299316b7f4faf672a563d527ecfb8ed8136e80cd83e8cdc290be",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_039.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_039.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "b94b3d0fdf9fa13d24e1051ed599ac338d69a4df98d6b36865fffd0577f9e2b0",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_040.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_040.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "c5be3e1744ca9576012d62b97fb0dda0579f349d6e2d51b1134dfae180df9a97",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_041.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_041.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "fe72a180c894171df029f0db12b1a24c36ceec19516e7173727543fa4fb1c005",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_042.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_042.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "f79def5378f464beb7740dcf2b79845f6234314e6521555da91b93f248207609",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_043.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_043.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "7cb39d035d509bd0eeafe64678e5a11faad6615cb6d72f9b32872e7c354f3637",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_044.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_044.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "67a3b7325e2872377fcf3c0a1a91df2f93675b9c551adf85b5a36b88386637a9",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_045.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_045.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "de121cf944078e815f00402ea6134ef3f13484e08b6ab95575d340443e0f747b",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_046.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_046.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "9872f46a4d1c988734ca81508b261512104d55546f03e4b9dd7f2d0d2a384b9e",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_047.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_047.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "d74c3f605c643f9540773aa2034d0b77262e3f06870c76e6aeb4cbd27edaee4b",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_048.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_048.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "2036caa9a0ba366c6f31f765a3853597225cba6a8f8c1f019cabeb8fbbc3ab53",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_049.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_049.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "0565bed6e6e37b0a1d885033a49524d8f538baac48243fc2099ba940f7b8a311",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_050.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_050.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "f0090e9d4cd2477144f1ba4a4400924ad434241dd311c45f41416b5d35edeac4",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_051.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_051.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "ac7565f6ffbf531fcd5147d987de214fea4a5e1005de2dd4de20ce4a6f340d67",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_052.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_052.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "b543cf3b3e129f1e9e8c1afc99b6a4dee34c1dd4fc2921c533b5c7fc4498b5ec",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_053.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_053.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "fdea80e04b23f36cd08d6afd297980a676d6a0debde3177983004efb45d6aa90",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_054.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_054.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "71c68c78325ecf2a2c4b3652b848a1d4d9b1947751a0a5f24c15ce99e31aa93a",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_055.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_055.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "a0d02be5a7e333929a6bb7bd09d1767fbf43920632040257f494f53fa764c13c",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_056.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_056.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "c916903c8ad09a8cf4ab0398dc675f8d98875ea048198f7f7bbad69b52546349",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_057.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_057.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "d193e14fcf0554fd2736e1ee4b390fa5f6f4a55482cf36f080b5d8fc5a271d2e",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_058.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_058.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "485d922f83c284a4f0aba880affe1eb05c5c1fb843a6ed3a89a9c7a1e1adfc9e",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_059.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_059.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "d19f9d022119146709b28300acb3ac46a6f91573d3d35f21fc69f5f5818a654d",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_060.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_060.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "4b94886f28c2f8f8d18b5dad1ea85551a16cd23066ba9e48155e8a49ddb77141",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_061.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_061.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "9bcb9e1adfeaa11cb609928a2c5f55e308be233d7386b468020aba8afb20f190",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_062.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_062.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "18ed1113aa0411fd03f36d696d43fdc8e8960fb29e88bd46e6bfcacec236a289",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_063.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_063.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "c9212bc4b606820d2eb04cacb02315c36dd4cf5f40ea246f538084e18a335ead",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_064.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_064.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "e7125fc7120553b9c285cb269f7fd750fbcd7718e6c82f24132e3d27595078ae",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_065.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_065.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "25e9909295497a3a737c93b8edfb733674a655a522b066d7d5b814ead6c01b36",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_066.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_066.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "b68b73b42231d889b06e41b3e0012926a500cb4512816ad9cd8c17e7a16cf1ff",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_067.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_067.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "0c403fc05cc53f889351561411135965c1ef02f85a24f0bbf44f64c0dd8195cc",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_068.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_068.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "a7d995e3a747b6ee023eec6361805d8bdebdba1c55009e34d4b48d71eb72f903",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_069.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_069.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "92fbc26fb83737bc6681b4c7dfba9df6bdf347fd5073bebe43ad02c3b41c9bf5",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_070.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_070.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "2ccf969f29dade9f29455b3ae9ce1ae34ec1daefe7f9cfa5aeafb44839cccf3e",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_071.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_071.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "9aa66ddd7bd4435f6b4acb15e0ea24b4071c227d4288b346ae8b123a1ee076ff",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_072.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_072.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "31d4a932c83725a9c5a5d4607a473d857b0436afb93117db9fe7fbd077fd6ea0",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_073.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_073.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "76417660cbccaf55c7de5d85230be975ffd658d4a1399a805a9b82cfb8c2bd49",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_074.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_074.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "ab458a801e97d92a4195a8392921ca5174684fcd1949a6a5159763d17c98e79e",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_075.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_075.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "28392b243c740b88e2426499e400c2a5e62a38b31cfed83ae7fe4dbb5bc6fc2a",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_076.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_076.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "7abb60a4487d061036ecd4d2c7f736c80b6e26cd118628d8a43c91659239deff",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_077.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_077.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "d0f4ed9233d484d9e7e85d794082808969a036dc46db7c8976276f6d3a58ddfd",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_078.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_078.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "516cc6d09b0fdc6f9dabe7acdea23f16abb70dd448a07fd5d7228da5d8e3be49",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_079.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_079.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "f16e44bdc44a90793a409b9dfdb7d955518d18448450c9d9dea3927f724fab3c",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_080.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_080.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "8cb3ea121e9ad4e3ccaea47083eca8b701199b83bab2c0293d06397fe2ade577",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_081.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_081.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "f037abaafcbca45c9def30206437de58bc4c45398848502c94519de0b2f1fca8",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_082.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_082.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "03d04f6945775b2078fc5f0d2ca88cdbcd62ef9ddb4be67eee5fd32ba6175173",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_083.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_083.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "421a72bf4f7759eb01f0bd0c724e4f2e56f78a18204e17ea7a1d834a91d7523e",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_084.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_084.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "b3a177a2f3d3f2c5826c7de7597955b28bb376a1b5e056ad6d309bf47d28a6f5",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_085.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_085.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "98480316e052ec4abd49eae7013ae3e41c7e9a5637afda6431b0ce505e1aa77d",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_086.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_086.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "f6590dccf76a606f367cef16661edd1b07fce66af880546cabaf87492e5e41ee",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_087.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_087.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "0effc87834006ef4a2223bf6ea6b24a5670af371a6583ae8a1109b7788d83c39",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_088.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_088.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "5d7839b149de1e457ad05c90c004f34c9d6e9e927a185f4919f1e4d6d5d1c3e0",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_089.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_089.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "d8f3a0b710cfce720839d7a07c2f2862b235ae66a3b21dbc799f9026a733a8e4",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_090.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_090.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "df36e535e629c7dbaff650e7049ecdd5b0ed918e76b249bfb2825aebec9e1312",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_091.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_091.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "2fd1babe8429fc4cd2834f513ee0f5467e6fb753050e1a046f24d6c1d820a657",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_092.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_092.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "dcffd963df62f22ea1af085d8eea3e4c622401597dd32c9b106655925884b4fd",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_093.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_093.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "cfdf3e4f50daa0102693983f1d80dc5033d98756e7d75938caab76016ca17637",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_094.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_094.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "4fce3bcc8001165385b67d02884ced2505ed8bf2f00a3ad0f3868b0a4362d719",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_095.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_095.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "eb9bafa45f9bdb2227acf4a1340e7e1d83bd2f4f83df845f19560b83cf5c0589",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_096.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_096.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "219a554310a5b4ec9cd13c0bf966926a834411d9969020a2aa3b66d3cbe38bb6",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_097.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_097.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "c780b36f83780235a86f69baf5f869edab08c865918dfa93c32bce2c83d7c4b2",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_098.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_098.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "344667a824e7b56326b420d7bd9f56dd1a0f2d0a4a543305dd1ff3376e67686c",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_099.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_099.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "d216ec0b9937d0a6677abfca11ed52430b51c54f646349e73bfa7ded16978289",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_100.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_100.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "1c48ea321d8eccfaeb896d92f64db88c4766c9bc2e9cb5007a5473e15e672cb3",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_101.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_101.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "46475061bafa8b092c7b968683a23d6684214a86c267679c808fc46b2445a651",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_102.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_102.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "7c5ed833ca165510a56d37f1aede7e4a90e9dc7ea225ce03123ea16ea1574cee",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_103.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_103.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "3fe4c35471ff19e5a1d5ac9534b87c04388e2482744270f118cc1324d76429b3",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_104.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_104.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "9d46f334dc7da6732eb2022c01531fe91d27662fb601446359984574087395d0",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_105.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_105.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "3557253867675e0080e56f59397a78bf3d02e722733a6ac604892bf8e586a653",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_106.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_106.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "817efeafe0e3f34e18a41e50b0b77e3fb169bdab3b3981c08c8085b34486e290",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_107.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_107.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "3458036b05b3e978c7050fc9b6868cf805498e3153ea0b4f0eeb12404d3fbeda",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_108.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_108.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "1657ad92f717163664c6f67f8e710d9a7561d933e34c7c942dd04ae71c1a04f9",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_109.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_109.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "99a9c4b096aea186c42af932c40d8f816879e91495fd4fc10792f74305527446",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_110.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_110.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "b99359811090c4674ca4d8c68d1c4a4418a72e30ea053895cbd225ff3f52b305",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_111.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_111.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "f5b53f1d6a831c20b0309d9faa17157bf11461c09d1bb5b208b8a7c238d71eae",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_112.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_112.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "b3526fe7eb36a7d976f52d4ecd82dc5a04912499a850563b601f26723dbc08ed",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_113.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_113.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "a4e9597e3c2cc9edd3ac62bd623d61d8763c6c41c0fd72def82274300dc19710",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_114.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_114.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "7169a2bcd7148d0d52ad27d532766e2c95b4afad288fe51990b3b8b26afa3fc8",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_115.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_115.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "303d5bb6b3d145e1e5230f299b9c50274700fa8c7352cf52ebac30aa550b3164",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_116.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_116.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "bbb3bbd115729ceb2571b38cd84d1774f2224a635639fd3c58f6a6fabf4ef902",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_117.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_117.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "7b64715d2e78ffa44059763830874d8a76117960ebf476eaf00c3ce8a6eaf925",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_118.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_118.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "6692f21d562ae5c29e27eb16f3c948c6f37b9bff3ede6cdaa7fe27d9850c87fa",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_119.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_119.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "5bfecb66597bc902edae9caa5a0b19f64f97f7ad61c671f4b82d190f73d3838b",
+    "paths": [
+      {
+        "scope": "old-source",
+        "path": "public/sequences/pour-cure/frame_120.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/legacy-reference/pour-cure/frame_120.webp"
+      }
+    ]
+  },
+  {
+    "sha256": "cc7e1bc615987e93d14e4c07fee1a4dc961ae1e6c185902ffb5dbbd5ae0d570e",
+    "paths": [
+      {
+        "scope": "current-destination",
+        "path": "public/media/generated/dp001-matching-detail-4x5.webp"
+      },
+      {
+        "scope": "current-destination",
+        "path": "public/media/generated/river-channel-edge-detail.webp"
+      }
+    ]
+  }
+]

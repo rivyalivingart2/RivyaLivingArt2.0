@@ -1,0 +1,4349 @@
+[
+  {
+    "scope": "current-destination",
+    "path": "public/brand/apple-touch-icon.png",
+    "bytes": 25953,
+    "sha256": "57f8e39f3d47985cf2d978cfa6b8b45a9fe57f5be737542883c002a0be79c84b",
+    "extension": "png",
+    "dimensions": {
+      "width": 180,
+      "height": 180,
+      "format": "png",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/brand/favicon.ico",
+    "bytes": 15086,
+    "sha256": "172bf2944a35cd0a317aead76e3a92bac9daa34e98c919b10ed3e782ffcbdb1d",
+    "extension": "ico",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/brand/rivyalivingart-icon-16.png",
+    "bytes": 646,
+    "sha256": "6b22aee1868ec9a8a9a4fa3d17763ccae9db2e294a5544431e7cf1cc40386ec1",
+    "extension": "png",
+    "dimensions": {
+      "width": 16,
+      "height": 16,
+      "format": "png",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/brand/rivyalivingart-icon-192.png",
+    "bytes": 29162,
+    "sha256": "21896493fc4f060bb3d3fd645d8c25a2d8c9b61d02d4be01bdfc5f79c2db4226",
+    "extension": "png",
+    "dimensions": {
+      "width": 192,
+      "height": 192,
+      "format": "png",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/brand/rivyalivingart-icon-32.png",
+    "bytes": 1516,
+    "sha256": "4cc756f94b51084cbdfc0e51f02cd4e88af5f68f8217684c663a3b5d6dbb9bef",
+    "extension": "png",
+    "dimensions": {
+      "width": 32,
+      "height": 32,
+      "format": "png",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/brand/rivyalivingart-icon-48.png",
+    "bytes": 3092,
+    "sha256": "1e477a68c53bfd98e1bd6a9584120e7449c9f85a90916720764262016a27cf88",
+    "extension": "png",
+    "dimensions": {
+      "width": 48,
+      "height": 48,
+      "format": "png",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/brand/rivyalivingart-icon-512.png",
+    "bytes": 195601,
+    "sha256": "1135e8be28fa5d383008e7cd28fdae1dc970b9dbf3f4e6aa5a04709a634adcd0",
+    "extension": "png",
+    "dimensions": {
+      "width": 512,
+      "height": 512,
+      "format": "png",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/brand/rivyalivingart-icon-96.png",
+    "bytes": 8861,
+    "sha256": "ab5ebfb582f6fb3b10c07e9fda2970374aa92e7d93c7129a2aa5a25e3c7809fc",
+    "extension": "png",
+    "dimensions": {
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/brand/rivyalivingart-logo-horizontal-transparent.png",
+    "bytes": 413161,
+    "sha256": "01bd3efc7602fe1642e13e414d4be4ab544bb6b47e824f29f22ede4ddbf9a9f7",
+    "extension": "png",
+    "dimensions": {
+      "width": 2172,
+      "height": 724,
+      "format": "png",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/brand/rivyalivingart-logo-stacked-transparent.png",
+    "bytes": 423758,
+    "sha256": "1376caf15e998910e7a1235883e156c67119270499d86ca6a03060f5b2e9bf32",
+    "extension": "png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254,
+      "format": "png",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/brand/rivyalivingart-monogram-transparent.png",
+    "bytes": 654758,
+    "sha256": "49c7ab8572bf3fcb3db88bfdcf179dfb50f1ee85e11aedf5ea210d1cd1ad1580",
+    "extension": "png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254,
+      "format": "png",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/brand/site.webmanifest",
+    "bytes": 398,
+    "sha256": "b42ce56adbd7b66389d88d1559b570ce807d60fb7491336caa34e15e74a6c0b9",
+    "extension": "webmanifest",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/fonts/instrument-serif-italic-400.ttf",
+    "bytes": 64208,
+    "sha256": "fecf4861d5202405b8bd45c683858b6870642a026784fe0dbf88ff55dedee8a0",
+    "extension": "ttf",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/fonts/instrument-serif-normal-400.ttf",
+    "bytes": 62284,
+    "sha256": "a99e3db50076202713812ed541feeb23ffeebb61db1fa6b1cf48fe590d37ef18",
+    "extension": "ttf",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/fonts/inter-normal-400.ttf",
+    "bytes": 324820,
+    "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba",
+    "extension": "ttf",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/fonts/inter-normal-500.ttf",
+    "bytes": 325304,
+    "sha256": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63",
+    "extension": "ttf",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/fonts/inter-normal-600.ttf",
+    "bytes": 326048,
+    "sha256": "e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7",
+    "extension": "ttf",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/fonts/jetbrains-mono-normal-400.ttf",
+    "bytes": 112172,
+    "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3",
+    "extension": "ttf",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/fonts/licenses/instrumentserif-OFL.txt",
+    "bytes": 4498,
+    "sha256": "918aca23eab7bf6b4bec8b3155432bdfc17985d2fbb2516c2629785bd1feff42",
+    "extension": "txt",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/fonts/licenses/inter-OFL.txt",
+    "bytes": 4470,
+    "sha256": "f14f2b95a38f4f20cad4d27f7710593f37534c046641be0348da7c28365f4e39",
+    "extension": "txt",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/fonts/licenses/jetbrainsmono-OFL.txt",
+    "bytes": 4492,
+    "sha256": "ef2870fd9ccb5f68d6b89aba72c3b30a27ab66f317b41d8c2c048693236bee01",
+    "extension": "txt",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/fonts/licenses/poppins-OFL.txt",
+    "bytes": 4477,
+    "sha256": "b741a4319a716fa488d77425010697a0990798f7647e07c606f46cf0b55957c7",
+    "extension": "txt",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/fonts/poppins-normal-400.ttf",
+    "bytes": 160316,
+    "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba",
+    "extension": "ttf",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/fonts/poppins-normal-600.ttf",
+    "bytes": 157312,
+    "sha256": "d3bf1bdaf0550e83da9ac0b1d1d9fe6db086835a83aa28578e609a394b9a0286",
+    "extension": "ttf",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/illustrations/ira/LICENSE.md",
+    "bytes": 1126,
+    "sha256": "b7df6f07f6dd4b103a96abfc420969fc3fc1d92215e9a26b2402f32589119437",
+    "extension": "md",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/illustrations/ira/photos-outline.svg",
+    "bytes": 2505,
+    "sha256": "b8ee0e7dbc789ae03046b0b2a8b108eecf15fc192b0b36745f08368088bab9a2",
+    "extension": "svg",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/foundation/art-wall-panel.avif",
+    "bytes": 51888,
+    "sha256": "32275f88008af08b68a0fb4410de86823f49ca30d5a9389d0036d6dfe18dead1",
+    "extension": "avif",
+    "dimensions": {
+      "width": 1200,
+      "height": 1490,
+      "format": "heif",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/foundation/bench-coffee-top.avif",
+    "bytes": 51580,
+    "sha256": "40f1c0fc5bc83ad84527a579a44c95dff5f72c3134a945ab03f61487f507bb7a",
+    "extension": "avif",
+    "dimensions": {
+      "width": 1200,
+      "height": 1490,
+      "format": "heif",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/foundation/doorway-memory.jpg",
+    "bytes": 181244,
+    "sha256": "5e14af18d1837fe803ad3dcec0a80e582b3f98d602a27bedcd6c64dfe7092d96",
+    "extension": "jpg",
+    "dimensions": {
+      "width": 1024,
+      "height": 1536,
+      "format": "jpeg",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/foundation/hands-polish.webp",
+    "bytes": 67236,
+    "sha256": "f5839356f47a89b242ba8e409b10342b5178447234872903c9ea0f08f00e1d8f",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1600,
+      "height": 1179,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/foundation/hero-pour.jpg",
+    "bytes": 211806,
+    "sha256": "be54fcd332bb12dae0923a86e3d9fa074a0e052fc04520d0bdb369bf499116b7",
+    "extension": "jpg",
+    "dimensions": {
+      "width": 1920,
+      "height": 1080,
+      "format": "jpeg",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/foundation/maker-hands.jpg",
+    "bytes": 136116,
+    "sha256": "138776d5f9a02ec85a613ce32d892643aed732d356779bfd36792c0b89347cd5",
+    "extension": "jpg",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024,
+      "format": "jpeg",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/foundation/print-head.avif",
+    "bytes": 36897,
+    "sha256": "5e43773fa7515ea018e025727f8fce0e8c137ea5913ac4d63030366e6c35623a",
+    "extension": "avif",
+    "dimensions": {
+      "width": 1800,
+      "height": 1005,
+      "format": "heif",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/foundation/story-cure.avif",
+    "bytes": 26436,
+    "sha256": "a202bdfda6322a228dee3d526dd25147fe56a14990263776cdf2dd1af504328a",
+    "extension": "avif",
+    "dimensions": {
+      "width": 1200,
+      "height": 1490,
+      "format": "heif",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/foundation/texture-resin-flow.jpg",
+    "bytes": 229943,
+    "sha256": "53dfc87a74c50b6ca72a2e76e1d85df051afa01acfc434b26974f804e0cc81c8",
+    "extension": "jpg",
+    "dimensions": {
+      "width": 1920,
+      "height": 1080,
+      "format": "jpeg",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/foundation/varmala-press-stack.avif",
+    "bytes": 63116,
+    "sha256": "086a724f0a3304d21f6618776fa8ff9afc6a93063244126e332009d2a487bd41",
+    "extension": "avif",
+    "dimensions": {
+      "width": 1200,
+      "height": 1490,
+      "format": "heif",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/foundation/workshop-table.avif",
+    "bytes": 31793,
+    "sha256": "8bb79b79214e9403028e6f0c4f39101ff57f1f331ed5b89435ce68401263bd93",
+    "extension": "avif",
+    "dimensions": {
+      "width": 1800,
+      "height": 1005,
+      "format": "heif",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_000.webp",
+    "bytes": 2830,
+    "sha256": "4e70ebf870c59f4dca1d2f790a458f86486eb25172410ebc155f4b1b39a8cb38",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_001.webp",
+    "bytes": 2796,
+    "sha256": "a038528213c77b6570a1c6822ea31f48ba12bdf5d8f42bf0ac45f37d197cba4f",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_002.webp",
+    "bytes": 2796,
+    "sha256": "dfd15dc6f86e5e296f895cefa35ddd249772d91ab88ed61240440bae4aa16f22",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_003.webp",
+    "bytes": 2804,
+    "sha256": "51e1b0a1631a17b80d4b5d7d15a0e1e3b39c011756467a7cc964e4248a7e36ba",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_004.webp",
+    "bytes": 3356,
+    "sha256": "babb4fc76c038b1867730092d8f960968a89c51db1bf14c40738db5b9f3f26f6",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_005.webp",
+    "bytes": 4134,
+    "sha256": "98271d9ba2af7ef7323cfb1d72c16747566919d42660377d7a7a0de1c7e3d5e5",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_006.webp",
+    "bytes": 4786,
+    "sha256": "018444cc0f7bb6fe5de874f209f3dbb0cf411f61fbecc9ea032c7dafbcf2a2cf",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_007.webp",
+    "bytes": 5334,
+    "sha256": "b3622a47f136bc58667011a8252796c43bc3183ddad2089657cea6b2bfc50c12",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_008.webp",
+    "bytes": 5812,
+    "sha256": "cd9a35dda86d3fe93b90a0f63382d7e1169f7dbaf453542f85fe35b7936dff23",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_009.webp",
+    "bytes": 5996,
+    "sha256": "57e7abd78c21dc511ab3db41c4c0272d36881de90a71d08d96a7ecc4ccf0c256",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_010.webp",
+    "bytes": 6214,
+    "sha256": "c60818d123f237efa4c6465158ca0a3f5de854b94f8e171e7285d4ec1730dc20",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_011.webp",
+    "bytes": 6466,
+    "sha256": "d5fcc5c715622bb6b964d5fbea2d95bc1f5abb16deaffc24495028725f717b07",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_012.webp",
+    "bytes": 6814,
+    "sha256": "b63629001b219186c796b8f82744af53287acccf412588627f75ee0dab337645",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_013.webp",
+    "bytes": 6908,
+    "sha256": "e68b7a6a981a2ee73d73934f562dca50aa35f8de119a4d06b8ea28b5647bacc7",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_014.webp",
+    "bytes": 6988,
+    "sha256": "80570af98ce9e4ff196d66b4c18c673642f71facc32f183176fa75756916b607",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_015.webp",
+    "bytes": 7126,
+    "sha256": "2ebff2f19b7a79d97a7d0eb9fdcd890e20eb28ed0d45a19b6dff768177c30ad5",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_016.webp",
+    "bytes": 7838,
+    "sha256": "4cb0c52f41a3bc534dafc8e1e90157ce6e5809c50beb5e726983a6c563852d7a",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_017.webp",
+    "bytes": 7976,
+    "sha256": "ac17460d347819f239335f519e6dc3928374a77bf0587972d25ff15b52a3384b",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_018.webp",
+    "bytes": 8150,
+    "sha256": "d54e1d8f081ae20756cb6f2d47f9a411395137b50135621ce9e09fcfedee2b2e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_019.webp",
+    "bytes": 8838,
+    "sha256": "488a21087cbec8716ab413df15b01c2fe138d62ef0bc9507197e74eb2f1c1dbc",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_020.webp",
+    "bytes": 9016,
+    "sha256": "f10da24f6d5cdb4ae03d33e13b9f3893fb6c2141d0f4c7b3971dad88696cfa09",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_021.webp",
+    "bytes": 9230,
+    "sha256": "308f80b76e67679addcaeff876246773162c039de4c9ff6e004d494cf896e6cc",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_022.webp",
+    "bytes": 9314,
+    "sha256": "5d0a8b97d5b74d35dddb39dd311e78899785ec0c90822e1b1437caac16da20b0",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_023.webp",
+    "bytes": 10222,
+    "sha256": "c22963ada2071a5116de758a9c01bcaf803a8adaece734e5ca92ed3708b61aec",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_024.webp",
+    "bytes": 10264,
+    "sha256": "2cf863d0ca93569b0c67895ab870e26fa9cffb8d98293ee72446db97f51427f6",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_025.webp",
+    "bytes": 10592,
+    "sha256": "1124e6a1f24ad3418e610c0ad29d50515ae6047fd480b11cbcbf84365a9ea28e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_026.webp",
+    "bytes": 10720,
+    "sha256": "a04a80bcdc1980b5227f3c795b7527f7784ff7778fa23ae5e109d93b7911ae88",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_027.webp",
+    "bytes": 11962,
+    "sha256": "b7691b9c339369618448aaf17d5f37790dd9b68a75765ecefe20379eab836d5f",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_028.webp",
+    "bytes": 12000,
+    "sha256": "d9ea7698fe2de1f5b0ae8ebe31f29d560dfe48c404f3f51a95e687d9b4ff4670",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_029.webp",
+    "bytes": 12352,
+    "sha256": "4afc938e7434f145fcd856f0923e8b19b22cffc762c08d94b787f3e3526d2601",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_030.webp",
+    "bytes": 12200,
+    "sha256": "d9d5ef0a6340b2ba4fbb06853cead8cfde3f7332f2502c806497d3901a90548d",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_031.webp",
+    "bytes": 13426,
+    "sha256": "cb261559fd43f59adcebb99eb7b584307af4f0f1d17cf861da059933cc2fbab2",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_032.webp",
+    "bytes": 13428,
+    "sha256": "1a018081b09a7c9c3cbb3467831c50946436a0c1ec6b63b834d9ae92cc551431",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_033.webp",
+    "bytes": 13698,
+    "sha256": "a0a90187dfad4e54de18264fec0d1e1bd7004c270b91266174d1db2f7f0d1e82",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_034.webp",
+    "bytes": 13916,
+    "sha256": "83477bb006e4108853502d6badc54ab197b88758b2c7c4b3e2be37eef5b81a89",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_035.webp",
+    "bytes": 14760,
+    "sha256": "ca8c022ad752ed6d24e3093535c8ea89d952cb5376571b1eedb6ea5315f22dd7",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_036.webp",
+    "bytes": 15124,
+    "sha256": "9ce497ed3059b7a584d49fb33fb364168c5489e9e55c47209b51d6c61cdcfc24",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_037.webp",
+    "bytes": 15252,
+    "sha256": "256c196ee95efa2a8e97e80e189b7783c41d3b2c10ffd89d28533c67eb6c39fe",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_038.webp",
+    "bytes": 15910,
+    "sha256": "8e03bbf9c34e76ada6d8bfd5f6c57e90de1cdd588c9db56f1b42a77c912ef92b",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_039.webp",
+    "bytes": 16726,
+    "sha256": "8779f65ca521299316b7f4faf672a563d527ecfb8ed8136e80cd83e8cdc290be",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_040.webp",
+    "bytes": 16488,
+    "sha256": "b94b3d0fdf9fa13d24e1051ed599ac338d69a4df98d6b36865fffd0577f9e2b0",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_041.webp",
+    "bytes": 16854,
+    "sha256": "c5be3e1744ca9576012d62b97fb0dda0579f349d6e2d51b1134dfae180df9a97",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_042.webp",
+    "bytes": 17278,
+    "sha256": "fe72a180c894171df029f0db12b1a24c36ceec19516e7173727543fa4fb1c005",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_043.webp",
+    "bytes": 17776,
+    "sha256": "f79def5378f464beb7740dcf2b79845f6234314e6521555da91b93f248207609",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_044.webp",
+    "bytes": 17800,
+    "sha256": "7cb39d035d509bd0eeafe64678e5a11faad6615cb6d72f9b32872e7c354f3637",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_045.webp",
+    "bytes": 17980,
+    "sha256": "67a3b7325e2872377fcf3c0a1a91df2f93675b9c551adf85b5a36b88386637a9",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_046.webp",
+    "bytes": 18562,
+    "sha256": "de121cf944078e815f00402ea6134ef3f13484e08b6ab95575d340443e0f747b",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_047.webp",
+    "bytes": 19100,
+    "sha256": "9872f46a4d1c988734ca81508b261512104d55546f03e4b9dd7f2d0d2a384b9e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_048.webp",
+    "bytes": 19362,
+    "sha256": "d74c3f605c643f9540773aa2034d0b77262e3f06870c76e6aeb4cbd27edaee4b",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_049.webp",
+    "bytes": 20106,
+    "sha256": "2036caa9a0ba366c6f31f765a3853597225cba6a8f8c1f019cabeb8fbbc3ab53",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_050.webp",
+    "bytes": 20470,
+    "sha256": "0565bed6e6e37b0a1d885033a49524d8f538baac48243fc2099ba940f7b8a311",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_051.webp",
+    "bytes": 20752,
+    "sha256": "f0090e9d4cd2477144f1ba4a4400924ad434241dd311c45f41416b5d35edeac4",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_052.webp",
+    "bytes": 20858,
+    "sha256": "ac7565f6ffbf531fcd5147d987de214fea4a5e1005de2dd4de20ce4a6f340d67",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_053.webp",
+    "bytes": 21264,
+    "sha256": "b543cf3b3e129f1e9e8c1afc99b6a4dee34c1dd4fc2921c533b5c7fc4498b5ec",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_054.webp",
+    "bytes": 21776,
+    "sha256": "fdea80e04b23f36cd08d6afd297980a676d6a0debde3177983004efb45d6aa90",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_055.webp",
+    "bytes": 22072,
+    "sha256": "71c68c78325ecf2a2c4b3652b848a1d4d9b1947751a0a5f24c15ce99e31aa93a",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_056.webp",
+    "bytes": 22036,
+    "sha256": "a0d02be5a7e333929a6bb7bd09d1767fbf43920632040257f494f53fa764c13c",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_057.webp",
+    "bytes": 22656,
+    "sha256": "c916903c8ad09a8cf4ab0398dc675f8d98875ea048198f7f7bbad69b52546349",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_058.webp",
+    "bytes": 22996,
+    "sha256": "d193e14fcf0554fd2736e1ee4b390fa5f6f4a55482cf36f080b5d8fc5a271d2e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_059.webp",
+    "bytes": 23136,
+    "sha256": "485d922f83c284a4f0aba880affe1eb05c5c1fb843a6ed3a89a9c7a1e1adfc9e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_060.webp",
+    "bytes": 23258,
+    "sha256": "d19f9d022119146709b28300acb3ac46a6f91573d3d35f21fc69f5f5818a654d",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_061.webp",
+    "bytes": 23120,
+    "sha256": "4b94886f28c2f8f8d18b5dad1ea85551a16cd23066ba9e48155e8a49ddb77141",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_062.webp",
+    "bytes": 23356,
+    "sha256": "9bcb9e1adfeaa11cb609928a2c5f55e308be233d7386b468020aba8afb20f190",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_063.webp",
+    "bytes": 23188,
+    "sha256": "18ed1113aa0411fd03f36d696d43fdc8e8960fb29e88bd46e6bfcacec236a289",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_064.webp",
+    "bytes": 23108,
+    "sha256": "c9212bc4b606820d2eb04cacb02315c36dd4cf5f40ea246f538084e18a335ead",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_065.webp",
+    "bytes": 23580,
+    "sha256": "e7125fc7120553b9c285cb269f7fd750fbcd7718e6c82f24132e3d27595078ae",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_066.webp",
+    "bytes": 24276,
+    "sha256": "25e9909295497a3a737c93b8edfb733674a655a522b066d7d5b814ead6c01b36",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_067.webp",
+    "bytes": 24566,
+    "sha256": "b68b73b42231d889b06e41b3e0012926a500cb4512816ad9cd8c17e7a16cf1ff",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_068.webp",
+    "bytes": 24566,
+    "sha256": "0c403fc05cc53f889351561411135965c1ef02f85a24f0bbf44f64c0dd8195cc",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_069.webp",
+    "bytes": 24352,
+    "sha256": "a7d995e3a747b6ee023eec6361805d8bdebdba1c55009e34d4b48d71eb72f903",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_070.webp",
+    "bytes": 25802,
+    "sha256": "92fbc26fb83737bc6681b4c7dfba9df6bdf347fd5073bebe43ad02c3b41c9bf5",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_071.webp",
+    "bytes": 25002,
+    "sha256": "2ccf969f29dade9f29455b3ae9ce1ae34ec1daefe7f9cfa5aeafb44839cccf3e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_072.webp",
+    "bytes": 25612,
+    "sha256": "9aa66ddd7bd4435f6b4acb15e0ea24b4071c227d4288b346ae8b123a1ee076ff",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_073.webp",
+    "bytes": 25564,
+    "sha256": "31d4a932c83725a9c5a5d4607a473d857b0436afb93117db9fe7fbd077fd6ea0",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_074.webp",
+    "bytes": 26378,
+    "sha256": "76417660cbccaf55c7de5d85230be975ffd658d4a1399a805a9b82cfb8c2bd49",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_075.webp",
+    "bytes": 27036,
+    "sha256": "ab458a801e97d92a4195a8392921ca5174684fcd1949a6a5159763d17c98e79e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_076.webp",
+    "bytes": 27330,
+    "sha256": "28392b243c740b88e2426499e400c2a5e62a38b31cfed83ae7fe4dbb5bc6fc2a",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_077.webp",
+    "bytes": 26812,
+    "sha256": "7abb60a4487d061036ecd4d2c7f736c80b6e26cd118628d8a43c91659239deff",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_078.webp",
+    "bytes": 27636,
+    "sha256": "d0f4ed9233d484d9e7e85d794082808969a036dc46db7c8976276f6d3a58ddfd",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_079.webp",
+    "bytes": 27522,
+    "sha256": "516cc6d09b0fdc6f9dabe7acdea23f16abb70dd448a07fd5d7228da5d8e3be49",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_080.webp",
+    "bytes": 27568,
+    "sha256": "f16e44bdc44a90793a409b9dfdb7d955518d18448450c9d9dea3927f724fab3c",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_081.webp",
+    "bytes": 27320,
+    "sha256": "8cb3ea121e9ad4e3ccaea47083eca8b701199b83bab2c0293d06397fe2ade577",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_082.webp",
+    "bytes": 28654,
+    "sha256": "f037abaafcbca45c9def30206437de58bc4c45398848502c94519de0b2f1fca8",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_083.webp",
+    "bytes": 28308,
+    "sha256": "03d04f6945775b2078fc5f0d2ca88cdbcd62ef9ddb4be67eee5fd32ba6175173",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_084.webp",
+    "bytes": 28532,
+    "sha256": "421a72bf4f7759eb01f0bd0c724e4f2e56f78a18204e17ea7a1d834a91d7523e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_085.webp",
+    "bytes": 27662,
+    "sha256": "b3a177a2f3d3f2c5826c7de7597955b28bb376a1b5e056ad6d309bf47d28a6f5",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_086.webp",
+    "bytes": 28380,
+    "sha256": "98480316e052ec4abd49eae7013ae3e41c7e9a5637afda6431b0ce505e1aa77d",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_087.webp",
+    "bytes": 28008,
+    "sha256": "f6590dccf76a606f367cef16661edd1b07fce66af880546cabaf87492e5e41ee",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_088.webp",
+    "bytes": 27744,
+    "sha256": "0effc87834006ef4a2223bf6ea6b24a5670af371a6583ae8a1109b7788d83c39",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_089.webp",
+    "bytes": 27330,
+    "sha256": "5d7839b149de1e457ad05c90c004f34c9d6e9e927a185f4919f1e4d6d5d1c3e0",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_090.webp",
+    "bytes": 28114,
+    "sha256": "d8f3a0b710cfce720839d7a07c2f2862b235ae66a3b21dbc799f9026a733a8e4",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_091.webp",
+    "bytes": 27514,
+    "sha256": "df36e535e629c7dbaff650e7049ecdd5b0ed918e76b249bfb2825aebec9e1312",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_092.webp",
+    "bytes": 27778,
+    "sha256": "2fd1babe8429fc4cd2834f513ee0f5467e6fb753050e1a046f24d6c1d820a657",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_093.webp",
+    "bytes": 26908,
+    "sha256": "dcffd963df62f22ea1af085d8eea3e4c622401597dd32c9b106655925884b4fd",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_094.webp",
+    "bytes": 28296,
+    "sha256": "cfdf3e4f50daa0102693983f1d80dc5033d98756e7d75938caab76016ca17637",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_095.webp",
+    "bytes": 27124,
+    "sha256": "4fce3bcc8001165385b67d02884ced2505ed8bf2f00a3ad0f3868b0a4362d719",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_096.webp",
+    "bytes": 27884,
+    "sha256": "eb9bafa45f9bdb2227acf4a1340e7e1d83bd2f4f83df845f19560b83cf5c0589",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_097.webp",
+    "bytes": 27156,
+    "sha256": "219a554310a5b4ec9cd13c0bf966926a834411d9969020a2aa3b66d3cbe38bb6",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_098.webp",
+    "bytes": 28850,
+    "sha256": "c780b36f83780235a86f69baf5f869edab08c865918dfa93c32bce2c83d7c4b2",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_099.webp",
+    "bytes": 27390,
+    "sha256": "344667a824e7b56326b420d7bd9f56dd1a0f2d0a4a543305dd1ff3376e67686c",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_100.webp",
+    "bytes": 27540,
+    "sha256": "d216ec0b9937d0a6677abfca11ed52430b51c54f646349e73bfa7ded16978289",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_101.webp",
+    "bytes": 27508,
+    "sha256": "1c48ea321d8eccfaeb896d92f64db88c4766c9bc2e9cb5007a5473e15e672cb3",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_102.webp",
+    "bytes": 29032,
+    "sha256": "46475061bafa8b092c7b968683a23d6684214a86c267679c808fc46b2445a651",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_103.webp",
+    "bytes": 27806,
+    "sha256": "7c5ed833ca165510a56d37f1aede7e4a90e9dc7ea225ce03123ea16ea1574cee",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_104.webp",
+    "bytes": 27724,
+    "sha256": "3fe4c35471ff19e5a1d5ac9534b87c04388e2482744270f118cc1324d76429b3",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_105.webp",
+    "bytes": 27726,
+    "sha256": "9d46f334dc7da6732eb2022c01531fe91d27662fb601446359984574087395d0",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_106.webp",
+    "bytes": 29154,
+    "sha256": "3557253867675e0080e56f59397a78bf3d02e722733a6ac604892bf8e586a653",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_107.webp",
+    "bytes": 27732,
+    "sha256": "817efeafe0e3f34e18a41e50b0b77e3fb169bdab3b3981c08c8085b34486e290",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_108.webp",
+    "bytes": 28010,
+    "sha256": "3458036b05b3e978c7050fc9b6868cf805498e3153ea0b4f0eeb12404d3fbeda",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_109.webp",
+    "bytes": 28598,
+    "sha256": "1657ad92f717163664c6f67f8e710d9a7561d933e34c7c942dd04ae71c1a04f9",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_110.webp",
+    "bytes": 29210,
+    "sha256": "99a9c4b096aea186c42af932c40d8f816879e91495fd4fc10792f74305527446",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_111.webp",
+    "bytes": 28276,
+    "sha256": "b99359811090c4674ca4d8c68d1c4a4418a72e30ea053895cbd225ff3f52b305",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_112.webp",
+    "bytes": 28852,
+    "sha256": "f5b53f1d6a831c20b0309d9faa17157bf11461c09d1bb5b208b8a7c238d71eae",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_113.webp",
+    "bytes": 28660,
+    "sha256": "b3526fe7eb36a7d976f52d4ecd82dc5a04912499a850563b601f26723dbc08ed",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_114.webp",
+    "bytes": 29374,
+    "sha256": "a4e9597e3c2cc9edd3ac62bd623d61d8763c6c41c0fd72def82274300dc19710",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_115.webp",
+    "bytes": 28384,
+    "sha256": "7169a2bcd7148d0d52ad27d532766e2c95b4afad288fe51990b3b8b26afa3fc8",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_116.webp",
+    "bytes": 27842,
+    "sha256": "303d5bb6b3d145e1e5230f299b9c50274700fa8c7352cf52ebac30aa550b3164",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_117.webp",
+    "bytes": 28432,
+    "sha256": "bbb3bbd115729ceb2571b38cd84d1774f2224a635639fd3c58f6a6fabf4ef902",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_118.webp",
+    "bytes": 29174,
+    "sha256": "7b64715d2e78ffa44059763830874d8a76117960ebf476eaf00c3ce8a6eaf925",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_119.webp",
+    "bytes": 28478,
+    "sha256": "6692f21d562ae5c29e27eb16f3c948c6f37b9bff3ede6cdaa7fe27d9850c87fa",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/legacy-reference/pour-cure/frame_120.webp",
+    "bytes": 29218,
+    "sha256": "5bfecb66597bc902edae9caa5a0b19f64f97f7ad61c671f4b82d190f73d3838b",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/concepts/basin.avif",
+    "bytes": 7007,
+    "sha256": "b1d41aba3d4f441584861154dfb0c875b95fa203731bef4c86bd25c50891569b",
+    "extension": "avif",
+    "dimensions": {
+      "width": 480,
+      "height": 600,
+      "format": "heif",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/concepts/riverline.avif",
+    "bytes": 7732,
+    "sha256": "92d727c5cbfced083ded9096f316c0935a49f5115a08a541be6e675b745b667a",
+    "extension": "avif",
+    "dimensions": {
+      "width": 560,
+      "height": 700,
+      "format": "heif",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp001-matching-detail-4x5.webp",
+    "bytes": 222318,
+    "sha256": "cc7e1bc615987e93d14e4c07fee1a4dc961ae1e6c185902ffb5dbbd5ae0d570e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp002-stillwater-full-pour-dining-table-portrait-4x5.webp",
+    "bytes": 260922,
+    "sha256": "d164ca9b13636a9635adc49f94d3095eea4d9e790fd914d0b6649beeca6d7fc0",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp003-verdant-split-slab-dining-table-portrait-4x5.webp",
+    "bytes": 283002,
+    "sha256": "6fe91145884b6e90bd8a24a70bedad751c8c993d255964ddef5c2ca826245ebb",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp004-monolith-long-span-dining-table-portrait-4x5.webp",
+    "bytes": 296026,
+    "sha256": "63bf3fdbb0102e971418605a43d563055198996f239d0bbbf92a5f4df1a68dce",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp005-estuary-oval-dining-table-portrait-4x5.webp",
+    "bytes": 279814,
+    "sha256": "13dbbd1fc9e5d0dab803c89ccadb65e98165e900a4721748c4362de02f06ef22",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp006-canopy-round-dining-table-portrait-4x5.webp",
+    "bytes": 237922,
+    "sha256": "36e9eb1a64acd9af83ce7fb80804a28a30f61a6bd74f43bfa1f27e991c8b4ecf",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp007-tidal-rectangular-dining-table-portrait-4x5.webp",
+    "bytes": 266532,
+    "sha256": "73726f6d29907561c8a0e60f481b60b9c03267ccff7bbc9cd3b2881281cd54eb",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp008-umber-twin-base-dining-table-portrait-4x5.webp",
+    "bytes": 371060,
+    "sha256": "48aa94a2e0d56bc4f9315b296b14b8d40d957fb336f9dce487231e7614fbd20e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp009-lagoon-pedestal-dining-table-portrait-4x5.webp",
+    "bytes": 364776,
+    "sha256": "40ce3571f732b77a6f2743bcbcbad232c865e02f3d811d8a815f002f915018f2",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp010-ridge-bronze-inlay-dining-table-portrait-4x5.webp",
+    "bytes": 266134,
+    "sha256": "e76dc166b8141a33fcfbfd078bc0aec6aa95cf8e14afc57399e3f7bad5dded48",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp011-dune-smoked-resin-dining-table-portrait-4x5.webp",
+    "bytes": 310048,
+    "sha256": "de2e61ea27f3c52a016b39b737884f2ae41756ca6efa56f201018b501a98df37",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp012-grove-communal-dining-table-portrait-4x5.webp",
+    "bytes": 258014,
+    "sha256": "8b33ad445c9a59bbb9afb57c71448203dd0842a5c000f2566df2de5e09edff15",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp013-matching-detail-4x5.webp",
+    "bytes": 241314,
+    "sha256": "3c3705093e3c6bfedbf7755306a528968481200963098fba6c0a727f90f8b0e7",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp014-orbit-circular-centre-table-portrait-4x5.webp",
+    "bytes": 284260,
+    "sha256": "2fd84d619f9ff341950ae94c56bb95041d709ff83406e53f18674a81ea2f0bee",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp015-contour-oval-coffee-table-portrait-4x5.webp",
+    "bytes": 327014,
+    "sha256": "85d48aa3f2ec0e0a00cdc5bfbd5e7ef00f69709abbff325d0141be54771c4e04",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp016-drift-nesting-coffee-table-portrait-4x5.webp",
+    "bytes": 266686,
+    "sha256": "8c45dbe0bf94063df5a93cfa8a26d2840f3f78c5ac7b7f8a8ed8ce46133fb350",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp017-pebble-sculptural-coffee-table-portrait-4x5.webp",
+    "bytes": 300676,
+    "sha256": "861e559001004da701e3cdab0a902176892be56cefc93dec9ade0c2642e69c97",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp018-delta-two-level-coffee-table-portrait-4x5.webp",
+    "bytes": 293714,
+    "sha256": "133ccdd13361e10cf6d202b0597a1305632d69381ed58e9d7398855db54469f6",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp019-cove-low-coffee-table-portrait-4x5.webp",
+    "bytes": 233962,
+    "sha256": "010cadc77213a60a63c64673e23a706e92fb59699a1fd19663741c248217a39d",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp020-halo-ring-base-coffee-table-portrait-4x5.webp",
+    "bytes": 262350,
+    "sha256": "ad79d3b4203c517e4972c679be8c03cc70265a150de3cfd07c59180a4baa749a",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp021-moss-square-coffee-table-portrait-4x5.webp",
+    "bytes": 337922,
+    "sha256": "14381b7c2b9130520fe4285f503c2f8f271300ddacaf94cf08f73f2c45708fc3",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp022-slate-river-coffee-table-portrait-4x5.webp",
+    "bytes": 303874,
+    "sha256": "efc5db672672cd91279f2ab0e826dcd04f4c36cd8394a964313ed376fa8b3b63",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp023-current-asymmetric-coffee-table-portrait-4x5.webp",
+    "bytes": 371032,
+    "sha256": "3fda90d10c40bd89cdde4f22659d424c78b72888f345a93d7386e73a9af29546",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp024-terra-plinth-coffee-table-portrait-4x5.webp",
+    "bytes": 294916,
+    "sha256": "994a548fd79d13ad9e430ff7693db004e86de90b81e29f9c80fcac461b393c36",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp025-twinleaf-matched-side-table-pair-portrait-4x5.webp",
+    "bytes": 295980,
+    "sha256": "a2572efe4c2cb3c3222e89e9ca497428b3c59590fdeb8b45d90b6a6bc2d699f0",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp026-dewdrop-pedestal-side-table-portrait-4x5.webp",
+    "bytes": 255662,
+    "sha256": "6a9d638de0f29ec763031488e28ec8ea0e27e5eb2d205184c872a82f05a52045",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp027-arc-c-shape-side-table-portrait-4x5.webp",
+    "bytes": 264010,
+    "sha256": "a4878df916abf9095f05d99f97a75eb1cbbef785818b601820e0146b7cb30503",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp028-reed-tall-side-table-portrait-4x5.webp",
+    "bytes": 272940,
+    "sha256": "4611ade696290935b07f7714d1e51c69a07db27514eea8743fb1ccf06e141060",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp029-nocturne-bedside-table-portrait-4x5.webp",
+    "bytes": 245954,
+    "sha256": "41041e09a5a8cae7121dfa71e48a6695dbcf45a0cf1f45fa337405e77f7ed428",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp030-loam-drum-side-table-portrait-4x5.webp",
+    "bytes": 278532,
+    "sha256": "65233589d59835d50654b2d227f4dee1405ec5bbc86d174eba2de4b7df05ce31",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp031-lumen-translucent-side-table-portrait-4x5.webp",
+    "bytes": 232272,
+    "sha256": "777a51b09131db4bd21dfbc1cd1e17733e593966a3ae6b7eab4885d817301bc5",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp032-brook-floating-top-side-table-portrait-4x5.webp",
+    "bytes": 225026,
+    "sha256": "f628bbb3163825afc29b2b4e577524cb07f3384af15581a25b0864a4357b864d",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp033-silt-compact-bedside-table-portrait-4x5.webp",
+    "bytes": 230584,
+    "sha256": "9092535e116226919270a2f99336435574b0affa77d49fe29dc4a3be73e89585",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp034-eclipse-round-side-table-portrait-4x5.webp",
+    "bytes": 212078,
+    "sha256": "aff7652affb8fa9b480fe79bbe6880b0f0120f66c11668b3b353bf4131d25b47",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp035-matching-detail-4x5.webp",
+    "bytes": 138914,
+    "sha256": "2a640373e3a89fdd8b132514b619a83eafa8c1f5d5729d57aeb69f086beb83ac",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp036-root-sculptural-base-console-portrait-4x5.webp",
+    "bytes": 261492,
+    "sha256": "c10f353e9fcd519ef63d863a5a213d73a39b1008b615c81adc8fbe52d5ffaadd",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp037-passage-entry-console-portrait-4x5.webp",
+    "bytes": 234468,
+    "sha256": "b7cb01d01f1824ac23a10b0291a90e139f48a0fcdbe327b6ef7e2e006fa4c0d5",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp038-horizon-long-console-portrait-4x5.webp",
+    "bytes": 271490,
+    "sha256": "7d991b31f3b0ede2bafcce86cc6fb9872943d15aeab36198df2ef81d3d5526c4",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp039-meadow-floating-effect-console-portrait-4x5.webp",
+    "bytes": 244104,
+    "sha256": "23e4f8813c98f543e1dd25e22462e857c74bf44a3578ec2cc7f14b9f04a3000e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp040-trace-metal-frame-console-portrait-4x5.webp",
+    "bytes": 249126,
+    "sha256": "988426899e4f145140ad161ec7706c36b9bcffc882073d49c5561b7c20606003",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp041-sienna-curved-console-portrait-4x5.webp",
+    "bytes": 204652,
+    "sha256": "45aa47781733f8b02e9db689e028d79c012cf3e1d70600deffabee2fd3d2e7f7",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp042-canyon-split-level-console-portrait-4x5.webp",
+    "bytes": 257342,
+    "sha256": "38b2317a350076c4bdc77171e75b40e4189f87a6e16c5a8ef93b18730d66f2f0",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp043-petal-sculptural-chair-portrait-4x5.webp",
+    "bytes": 227996,
+    "sha256": "c46c54fa1e7ffa2db369fe48f54c0b29307f4fe874ba9eaa2b38ab0af4243457",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp044-crescent-lounge-chair-portrait-4x5.webp",
+    "bytes": 264576,
+    "sha256": "4d0436718a0d60136bd88d3eb4472a38b229061d9107ab1f57e69eb21458fd75",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp045-aster-dining-chair-portrait-4x5.webp",
+    "bytes": 299382,
+    "sha256": "ab805ce40f16e470560cc87224ba09a8e5966090adb214fdaa4ce5d3790611f5",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp046-rill-counter-stool-portrait-4x5.webp",
+    "bytes": 206282,
+    "sha256": "a8dca361c44fd09abf2bb727e1a4aabdd157e6a2bd669cbb4173c751a9e1d813",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp047-flint-accent-stool-portrait-4x5.webp",
+    "bytes": 225728,
+    "sha256": "011e51433f927a0acc17c36cd1bf166b5653d3117f316ad43132e40674a16a53",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp048-matching-detail-4x5.webp",
+    "bytes": 270340,
+    "sha256": "a7580f2e54ee64a58d9057b94ccbf8d71a593beeef41084ce990bf9655a0c577",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp049-forest-long-bench-portrait-4x5.webp",
+    "bytes": 238266,
+    "sha256": "87fd74a24581c30a8e789b6268ad0eb3df75e1efdc5d763ef185ff0f496208f4",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp050-fold-sculptural-bench-portrait-4x5.webp",
+    "bytes": 226718,
+    "sha256": "d0b3b35fa8752d291c07ec8e572d6bcce099e8b4997a3131e8b3b2f679b31611",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp051-single-slab-atelier-desk-portrait-4x5.webp",
+    "bytes": 397578,
+    "sha256": "6e4e069c3d8ba5352010d798f5dd591f8a7c7facd47fddc8ddb3b4d0f81d0d67",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp052-meridian-writing-desk-portrait-4x5.webp",
+    "bytes": 286606,
+    "sha256": "4233f71609fc6abf9fbedbba31908954feb3072c424e4c022f39dc5b0cdc3baf",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp053-stillpoint-study-desk-portrait-4x5.webp",
+    "bytes": 235988,
+    "sha256": "eaf96a5ead634acca09c0cb7f0bd86e8d06310362f4e8562a74fd4d1404d89c4",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp054-haven-compact-desk-portrait-4x5.webp",
+    "bytes": 324506,
+    "sha256": "5af1135b5d0e72e177ca01676ee5a2bf35a58d73c0e56307715c2a92ceeafc3c",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp055-linework-executive-desk-portrait-4x5.webp",
+    "bytes": 232674,
+    "sha256": "14b39e3b6a5a57d20952073574222b33abafc42bde53eaba9a6d97d9172cd594",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp056-terrace-studio-desk-portrait-4x5.webp",
+    "bytes": 304008,
+    "sha256": "e99d8c0e85d9136bc4721406812bb866e9e233de40127d568df703374a3d0598",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp057-horizon-band-wall-panel-portrait-4x5.webp",
+    "bytes": 289702,
+    "sha256": "274f69cc77fa46e0dd8f1fe8053acb8a833a962552f8a6f38a0aa3acd6e03dce",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp058-vertical-drop-wall-panel-portrait-4x5.webp",
+    "bytes": 226000,
+    "sha256": "f35ffedbec5c36cb322768602abe951c739f3051c17f7df8d3efef8807961e5f",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp059-sequence-wall-triptych-portrait-4x5.webp",
+    "bytes": 257622,
+    "sha256": "6692a17fca6b5bee41651da7cdb19d8f9a85ede6307980f6297235e356a46231",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp060-strata-layered-wall-relief-portrait-4x5.webp",
+    "bytes": 216342,
+    "sha256": "9f29400af1cab6bbe357e6ad63b92229765fc5533bb1a372110e6f71dad276c5",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp061-solstice-circular-wall-piece-portrait-4x5.webp",
+    "bytes": 291154,
+    "sha256": "6a77d9709e596fa7cafcdab4aa638688f52ac0f635c90b5926d9890849ed5f45",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp062-tide-botanical-wall-panel-portrait-4x5.webp",
+    "bytes": 280730,
+    "sha256": "6b7f781d3f4067b79043b4c66bdfbbfc12c41b0972bc9852babb981f8bd41b35",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp063-mist-textured-wall-diptych-portrait-4x5.webp",
+    "bytes": 240494,
+    "sha256": "f93195fda08ce87237f6e9f054a663d07576c9030be03d2d5e5763930bc941c9",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp064-verdure-large-wall-disc-portrait-4x5.webp",
+    "bytes": 256682,
+    "sha256": "b3065b0fb7bf25ca8b7364efade4cf757db7623860ed4d161ad3ae30c64932cc",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp065-contour-flow-wall-relief-portrait-4x5.webp",
+    "bytes": 215960,
+    "sha256": "b55710a72bede5352a55b1536b79c4165046461cb0fc29ee30c9ba85e37e8724",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp066-amber-veil-wall-panel-portrait-4x5.webp",
+    "bytes": 189916,
+    "sha256": "6c30359fa71797e83d1823965f5e419c4bf690e163ba969dab67e1aa8260df2e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp067-stonewave-oversized-wall-art-portrait-4x5.webp",
+    "bytes": 326466,
+    "sha256": "5d76628ebdd7f076ec0bd785da08278482500218befca4103858a77949ccf188",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp068-rivergrid-architectural-wall-set-portrait-4x5.webp",
+    "bytes": 219328,
+    "sha256": "a6e97d2b61b0f31868b0a6039ef61f4ed82444cd6fa69417e5144eaeb8c3ef47",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp069-matching-detail-4x5.webp",
+    "bytes": 282274,
+    "sha256": "a08b5141e6fa7816ae648fe03308daf5c8a2e33786a1e441afe7ffa14c53dcc1",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp070-parametric-floor-vessel-portrait-4x5.webp",
+    "bytes": 255862,
+    "sha256": "a343896b319942f1a352573e0f773da0d4189a90456e4f3488ea916251684853",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp071-cast-architectural-study-portrait-4x5.webp",
+    "bytes": 167548,
+    "sha256": "001aabd54aae583315b9fae01901ba68be818d7b51cc8f2fbd5fe954b2e66d75",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp072-form-study-i-sculpture-portrait-4x5.webp",
+    "bytes": 112060,
+    "sha256": "900ef6cff8830c265ba63423467715bd8dcf3005d28781e5cc984af53b2393c8",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp073-form-study-ii-sculpture-portrait-4x5.webp",
+    "bytes": 92812,
+    "sha256": "9dd9e88f546d004475cf6f08f2bbee07bc333d478dfdf29fe98f81229351ec21",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp074-material-column-sculpture-portrait-4x5.webp",
+    "bytes": 206874,
+    "sha256": "d9cd67d211e432411763fc7138c5eedfd5a2650165d53bdf595adeaaef5e1ecf",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp075-form-study-iii-sculpture-portrait-4x5.webp",
+    "bytes": 106576,
+    "sha256": "2efe78a102fd33f2d1466f38edd323ee38d78657375f05e2d2b4b9a4abd16ebe",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp076-arc-freestanding-resin-sculpture-portrait-4x5.webp",
+    "bytes": 106914,
+    "sha256": "db82659c0b43ef5cf3e92e2b9e41985e9b7ccf802abe9f9b289afff902bc401f",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp077-estuary-reception-counter-portrait-4x5.webp",
+    "bytes": 261808,
+    "sha256": "42724a263a25ddec090a28facbddec613d9a49dceceb047d9d10e44cd976bffd",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp078-canopy-room-divider-concept-portrait-4x5.webp",
+    "bytes": 115714,
+    "sha256": "f0c5fcda0e96ba56fc54f0c402c319767b71cae6fd247e159d3d5372e591fcc3",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp079-monsoon-feature-wall-concept-portrait-4x5.webp",
+    "bytes": 150674,
+    "sha256": "f7d8a90d4dd3c50d5f86276d4eb9d45322afe42910bb85481c348ceaef5a8aed",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp080-grove-resin-and-wood-screen-portrait-4x5.webp",
+    "bytes": 123422,
+    "sha256": "ff779c6d02ddf2948031f38c48f439f7b2c77467a86e0d714e7abc1fd9bd78dc",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp081-contour-hospitality-table-installation-portrait-4x5.webp",
+    "bytes": 201104,
+    "sha256": "876a947c942933cf0e9c3186a2db7af3d448be33ed3ab1df5aeb75228b7c9b7f",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp082-stillwater-lobby-art-installation-portrait-4x5.webp",
+    "bytes": 108680,
+    "sha256": "4f828afda8fc161bb91b1ff9e366b6999f7ac48bc433e91eedcafcf05a7e7aee",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp083-bronzeleaf-display-plinth-set-portrait-4x5.webp",
+    "bytes": 154868,
+    "sha256": "0bb09842b0ebe02605136e5975af186421c251dd88b7e164010c8977d806f2de",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp084-tidal-architectural-panel-installation-portrait-4x5.webp",
+    "bytes": 150234,
+    "sha256": "1366e1c39ef9e69ba755af53a4c4d44f75ddc8ad02825de4196affee9cf9c0bf",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp085-matching-detail-4x5.webp",
+    "bytes": 271532,
+    "sha256": "e9a61ca186156814e46407ada1f4038b628be96e88ce213a3134e2188ec0166a",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp086-forever-solid-block-varmala-keepsake-portrait-4x5.webp",
+    "bytes": 107890,
+    "sha256": "ee6671a09831eeb85f1222a8a01c144c609e50351e329975117fcd3433f60805",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp087-petal-story-bouquet-frame-portrait-4x5.webp",
+    "bytes": 144528,
+    "sha256": "677a6506dfdc361d1ece13a038b40dd985f813600c4119b7b8f16414272a2c02",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp088-meadow-wedding-flower-disc-portrait-4x5.webp",
+    "bytes": 196566,
+    "sha256": "9487ea82280494cfcfeced280d4fc10ee4c7c86d2dcf5d0f722f299ca1f64933",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp089-aster-single-bloom-keepsake-portrait-4x5.webp",
+    "bytes": 127982,
+    "sha256": "30f11a146ef721d5289bbeebd30e911cb327a9d5e8764d2b17306221f6a92172",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp090-memory-garden-flower-shadowbox-portrait-4x5.webp",
+    "bytes": 163548,
+    "sha256": "7477a05102eaefedc9b46b9b191a57021943f5a85c9f18e5bb3ca5e9c37bd446",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp091-hourglass-floral-wall-clock-portrait-4x5.webp",
+    "bytes": 92478,
+    "sha256": "99824624ba918020edf9932ca75368053b10b776e26ce6402fe96b165bb6564d",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp092-petal-hour-round-clock-portrait-4x5.webp",
+    "bytes": 86216,
+    "sha256": "fc038febb2c21d09cabf08c4b6509230b77045ca9d42f4430095928f0f791041",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp093-evergreen-botanical-desk-clock-portrait-4x5.webp",
+    "bytes": 227730,
+    "sha256": "de4f8f63f565b2949fc32625ab3525477aeb7994867a94ef0be88b8c802f450b",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp094-moment-preserved-flower-clock-portrait-4x5.webp",
+    "bytes": 149622,
+    "sha256": "439fc28c0e4a292619f15d3ca0d32cca8b73941897228001ad24169fbba9a691",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp095-union-engagement-tray-portrait-4x5.webp",
+    "bytes": 81288,
+    "sha256": "21b198758ffc3c6b1248861a9130b4691e9af1e853f23fc4ecb3a3a88aeb0ee5",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp096-promise-ring-platter-portrait-4x5.webp",
+    "bytes": 169462,
+    "sha256": "b9060ae805eafaa87739dccddfc5b07e62547d0e52f2c4a98cf9f9c7f7626ec2",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp097-gather-celebration-tray-portrait-4x5.webp",
+    "bytes": 134190,
+    "sha256": "84fe556d0eb296e0fe825689cd5612c1adbc48d45e0766780eb03d3457bf2371",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp098-bloom-paired-ring-dishes-portrait-4x5.webp",
+    "bytes": 139406,
+    "sha256": "74ba8675bc9d171822e73d9d64b05ae235b211005914fc3926f2c1d228316e19",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp099-letterlight-invitation-frame-portrait-4x5.webp",
+    "bytes": 143056,
+    "sha256": "ea86304a3ab2d965787d659f4414feb4f854446ffe965111cf1acca0d453db74",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp100-our-chapter-wedding-card-block-portrait-4x5.webp",
+    "bytes": 158534,
+    "sha256": "fb99e7b02c10383e878cba5e0f98aa740e75d371301786b0220fdfcdc837fbe3",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp101-together-couple-memory-frame-portrait-4x5.webp",
+    "bytes": 89366,
+    "sha256": "0c82fc759310b8f4c681141db5e20996ddb5f71af83076c0d608863f6c4eb4a6",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp102-anniversary-story-display-portrait-4x5.webp",
+    "bytes": 155196,
+    "sha256": "865b8407f3da7ff772a2c12f8a5482721ff12320ed33b0a3406c8f93a41c0780",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp103-threshold-family-nameplate-portrait-4x5.webp",
+    "bytes": 67222,
+    "sha256": "7346a52583d8354e8e4776cd5b5139f7daf092cd88e5bcd812b2c1cd208c0717",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp104-welcome-botanical-nameplate-portrait-4x5.webp",
+    "bytes": 170492,
+    "sha256": "1496d81c02942f6d0a855ca70774b0778684a2bf229fe2ce6761a7b1e2fa60a0",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp105-blessing-pooja-display-portrait-4x5.webp",
+    "bytes": 148098,
+    "sha256": "a1dcbf932c82e622a5ec5535608722ffa58a16ddd681a8d6acccf32da89b83a0",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp106-festival-memory-plaque-portrait-4x5.webp",
+    "bytes": 158910,
+    "sha256": "8470548d2803bb3fd095dd2f68313adc055460828d9806475000ecdfa0683a97",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp107-first-chapter-baby-keepsake-portrait-4x5.webp",
+    "bytes": 61364,
+    "sha256": "8234e84cb6d26bbc53fdb2d949830128e6e3db3b8cec124ce05fd045ee14abe5",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp108-little-bloom-memory-frame-portrait-4x5.webp",
+    "bytes": 98252,
+    "sha256": "247a4dbc8083a7475a82b1897db8956b85c4220f882efd5fe7c8540791da9bf5",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp109-botanical-resin-pendant-portrait-4x5.webp",
+    "bytes": 133334,
+    "sha256": "a6d14d53736484b743d0c748ac685af2f396f4be3634657afc83cbd39c45ced0",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp110-petal-drop-earrings-portrait-4x5.webp",
+    "bytes": 217150,
+    "sha256": "a8eacfbcec37a95529abc78f513a4ad8c3f167d583cf85121dcc9fc1bc4cf121",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp111-thread-of-light-resin-rakhi-portrait-4x5.webp",
+    "bytes": 193308,
+    "sha256": "d10c0558117a3607d0548fab063af4002d9a0652067beb9fad43edf23af8410b",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp112-initial-story-keychain-portrait-4x5.webp",
+    "bytes": 249386,
+    "sha256": "d8ba1e2c944813ce1612d51e42d85a486b6a4d1ccb872037bc1b4f8f3603f034",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp113-chaptermark-flower-bookmark-portrait-4x5.webp",
+    "bytes": 149738,
+    "sha256": "9fbded6a9b403d597c88e0c0d0b755c305f9c91028adbcc15e4d5f945711da8a",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp114-matching-detail-4x5.webp",
+    "bytes": 277074,
+    "sha256": "36d029dfc25995fd3babaee0f5db163d1c23227922d583a70a383ab61bc31cc0",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp115-palm-mini-serving-tray-portrait-4x5.webp",
+    "bytes": 170986,
+    "sha256": "c5615c2b5096897f61cf688684013307c2987d0019f30fc9203a1ad63dc2311a",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp116-still-form-catch-all-bowl-portrait-4x5.webp",
+    "bytes": 129990,
+    "sha256": "c67286f2f847bd7e6027636c6eb63b1fbeda7c962d27cb55b9bb9fae1aafb9a3",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp117-twinleaf-mini-bookends-portrait-4x5.webp",
+    "bytes": 192734,
+    "sha256": "46c4dde929377553d8b2703b44470247d8dbcff73cfd791b7494e0e6c028a78d",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp118-pocketworld-paperweight-portrait-4x5.webp",
+    "bytes": 842738,
+    "sha256": "4246b6ac0f2031616a0ca54f2f4ee52b248b195a7afe1479963466a9819cb17c",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp119-promise-mini-ring-dish-portrait-4x5.webp",
+    "bytes": 167170,
+    "sha256": "beec9d3f712434c08556238add49ac355e248d4ff33fee22f7b08710ca8cc1c5",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/dp120-little-archive-keepsake-box-portrait-4x5.webp",
+    "bytes": 194952,
+    "sha256": "f599f795d40ebea757736d5df35f4daca59b13a0895fc5b28cadd45a58e22ef4",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/generated/river-channel-edge-detail.webp",
+    "bytes": 222318,
+    "sha256": "cc7e1bc615987e93d14e4c07fee1a4dc961ae1e6c185902ffb5dbbd5ae0d570e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/migration/hero-pour-loop-poster.jpg",
+    "bytes": 98481,
+    "sha256": "e7dec2a8d6972a0825caf57aae320db7b1a0c319eb2f7a3d5581ba9190040caf",
+    "extension": "jpg",
+    "dimensions": {
+      "width": 1280,
+      "height": 720,
+      "format": "jpeg",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/migration/hero-pour-loop.mp4",
+    "bytes": 2135160,
+    "sha256": "61d4633578353e813e64506877eed198bc682b6424701b7783720af51530869d",
+    "extension": "mp4",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/migration/hero-pour-loop.webm",
+    "bytes": 1649274,
+    "sha256": "ba77d14e1d380f382bbc86af1c5e8533ad3e8a0ad2bb604d06506b3da5b216c8",
+    "extension": "webm",
+    "dimensions": null,
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/product-hero-001-4x5.webp",
+    "bytes": 170072,
+    "sha256": "fd1ddaa3af08bdc26edfd505edeb25404b5ab17de18d44d9315b877b941d157f",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/product-hero-003-4x5.webp",
+    "bytes": 327458,
+    "sha256": "fa0fbc55cfda871b13e4e35e1f78123a7b87102c8b751cca9d630675b17ac42e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/product-hero-005-4x5.webp",
+    "bytes": 190200,
+    "sha256": "bfdbed581d115b4efb88c75f0a48cbe378eed4e5567c29a783e5248c3d52691a",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/product-hero-009-4x5.webp",
+    "bytes": 335506,
+    "sha256": "1418172d62fc8377d87df288a51149d5ef2eb1cf7c67fa968b229dc1b2c0c3d2",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/product-hero-016-4x5.webp",
+    "bytes": 203782,
+    "sha256": "1eb2e52de87a10c94bbf3b37bea766b7de593b8ed54c52e5a1f9530a238e3d78",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/product-hero-020-4x5.webp",
+    "bytes": 197232,
+    "sha256": "5b03050b65a1c868262db502117e94f6fb5bf6c4a6c17c2e69b20c8551d35c71",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/product-hero-026-4x5.webp",
+    "bytes": 245526,
+    "sha256": "be75f368c0cfd2e0aa7a3eaf5f9ab80aa8bda35249fdf2c3546cc7a950635b25",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/product-hero-029-4x5.webp",
+    "bytes": 225128,
+    "sha256": "d71af51cdcdd5a3000d4d5bde1e42c06baac0a1520591c6af8780f63c266768a",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/product-scene-001-16x9.webp",
+    "bytes": 284552,
+    "sha256": "ffada8bc47db6b61b16a4f73e9498634a520fa900a4ec95aed94d375c483078e",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1672,
+      "height": 941,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/product-scene-003-16x9.webp",
+    "bytes": 231328,
+    "sha256": "22f9de1350df7184342cd0946cb9abbbe7e61f1f94890cd0ca73b0747cba0dcb",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1672,
+      "height": 941,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/product-scene-005-16x9.webp",
+    "bytes": 205688,
+    "sha256": "d6edca6cb44246351e3b9cf784b902ab14976cf62fa6aaa381a9dfc36992ec35",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1672,
+      "height": 941,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/studio-access/making-study.webp",
+    "bytes": 63538,
+    "sha256": "62495bbf349d12443f40874860e1fbf5d92e2c1d0cfa4ccbe60d20f9f129bbdd",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 960,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  },
+  {
+    "scope": "current-destination",
+    "path": "public/media/studio-access/resin-flow.webp",
+    "bytes": 77970,
+    "sha256": "b306f4bcdc8e3efab7ca24aef0ad704ecd4a24997d8b983996d29cf0e8ff235f",
+    "extension": "webp",
+    "dimensions": {
+      "width": 1440,
+      "height": 810,
+      "format": "webp",
+      "orientation": 1,
+      "pages": 1
+    },
+    "metadataError": null
+  }
+]

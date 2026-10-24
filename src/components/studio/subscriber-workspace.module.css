@@ -1,0 +1,5 @@
+/* OLDWEBSITE subscribers: heading, three-column table, count and paging row. */
+.subscribers{min-width:0}
+.pagination{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin:24px 0}
+.pagination p{font-size:14px;color:var(--muted)}
+.subscribers time{white-space:nowrap}

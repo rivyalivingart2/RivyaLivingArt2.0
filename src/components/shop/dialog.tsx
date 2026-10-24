@@ -20,7 +20,7 @@ function lockScroll() {
 }
 
 /** Native modal inertness with explicit keyboard wrap, Escape and opener recovery. */
-export function Dialog({open,title,onClose,children,variant='panel',closeLabel}:{open:boolean;title:string;onClose:()=>void;children:ReactNode;variant?:'panel'|'navigation';closeLabel?:string}) {
+export function Dialog({open,title,onClose,children,variant='panel',closeLabel,className=''}:{open:boolean;title:string;onClose:()=>void;children:ReactNode;variant?:'panel'|'navigation';closeLabel?:string;className?:string}) {
   const tr=useJourneyText();
   const ref=useRef<HTMLDialogElement>(null);
   const titleId=useId();
@@ -41,7 +41,7 @@ export function Dialog({open,title,onClose,children,variant='panel',closeLabel}:
       }
     };
   },[open]);
-  return <dialog ref={ref} className={`${s.dialog} ${variant==='navigation'?s.mobileMenu:''}`} aria-labelledby={titleId} onKeyDown={e=>{
+  return <dialog ref={ref} className={`${s.dialog} ${variant==='navigation'?s.mobileMenu:''} ${className}`} aria-labelledby={titleId} onKeyDown={e=>{
     if(e.key!=='Tab')return;
     const controls=Array.from(e.currentTarget.querySelectorAll<HTMLElement>('a[href],button,input,select,textarea,[tabindex]')).filter(node=>node.tabIndex>=0&&!node.matches(':disabled')&&node.getClientRects().length>0&&!node.closest('[inert]'));
     const first=controls[0],last=controls.at(-1);

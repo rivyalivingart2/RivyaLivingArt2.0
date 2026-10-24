@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-24",
+  "baseCheckpoint": "43c0f145c67b872bba994b9fa0b7e847aecdde9e",
+  "scope": "LOCAL_IMPLEMENTATION_AND_RELEASE_PREPARATION_NOT_GOOGLE_ACTIVATION",
+  "phases": {
+    "phase0": "AUDIT_COMPLETE_WITH_DOCUMENTED_ACCESS_GAPS",
+    "phase1": "LOCAL_ARCHITECTURE_AND_PLAN_COMPLETE",
+    "phase2": "LOCAL_IMPLEMENTATION_VERIFIED_REAL_GOOGLE_ACCEPTANCE_PENDING"
+  },
+  "checks": {
+    "application": {
+      "tests": 580,
+      "passed": 580,
+      "failed": 0,
+      "skipped": 0
+    },
+    "preflight": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "http": {
+      "tests": 409,
+      "passed": 409,
+      "failed": 0,
+      "skipped": 0
+    },
+    "lint": {
+      "errors": 0,
+      "warnings": 62,
+      "classification": "existing warnings; final changed route scoped lint clean"
+    },
+    "typescript": "PASS_IN_NEXT_BUILD",
+    "productionBuild": {
+      "passed": true,
+      "node": "22.23.2",
+      "buildId": "-do-7bOBhVj8AJzm9KpnR",
+      "isolatedCheckout": true,
+      "privateFilesCopied": 0,
+      "credentialsProvided": false
+    },
+    "diffWhitespace": "PASS"
+  },
+  "preservation": {
+    "scope": "EXISTING_SYNTHETIC_LOOPBACK_QA_ONLY",
+    "rows": 406,
+    "tables": 28,
+    "columns": 230,
+    "constraints": 45,
+    "allRowsUnchanged": true,
+    "schemaUnchanged": true,
+    "baselineTrackedFiles": 926,
+    "unchangedTrackedFiles": 912,
+    "explicitSourceExceptions": [
+      {
+        "path": "src/app/api/studio/content/route.ts",
+        "reason": "uninstalled-schema capability gate"
+      },
+      {
+        "path": "src/app/api/studio/editorial-extensions/route.ts",
+        "reason": "uninstalled-schema capability gate"
+      },
+      {
+        "path": "src/app/api/studio/editorial-order/route.ts",
+        "reason": "uninstalled-schema capability gate"
+      },
+      {
+        "path": "src/app/api/studio/presentation/route.ts",
+        "reason": "uninstalled-schema capability gate"
+      },
+      {
+        "path": "src/app/api/studio/subscribers/route.ts",
+        "reason": "uninstalled-schema capability gate"
+      },
+      {
+        "path": "src/app/creations/page.tsx",
+        "reason": "shared public-availability guard"
+      },
+      {
+        "path": "src/app/editorial-file/[id]/route.ts",
+        "reason": "uninstalled-schema capability gate"
+      },
+      {
+        "path": "src/components/shop/owner-creations-gallery.tsx",
+        "reason": "portable approved image delivery or explanatory comment"
+      },
+      {
+        "path": "src/components/shop/owner-creations-preview.tsx",
+        "reason": "portable approved image delivery or explanatory comment"
+      },
+      {
+        "path": "src/components/studio/editorial-extensions.tsx",
+        "reason": "uninstalled-schema capability gate"
+      },
+      {
+        "path": "src/components/studio/editorial-file-fields.tsx",
+        "reason": "uninstalled-schema capability gate"
+      },
+      {
+        "path": "src/components/studio/subscriber-workspace.tsx",
+        "reason": "uninstalled-schema capability gate"
+      },
+      {
+        "path": "src/lib/owner-creations.ts",
+        "reason": "portable approved image delivery or explanatory comment"
+      },
+      {
+        "path": "src/lib/publication-read-query.ts",
+        "reason": "uninstalled-schema capability gate"
+      }
+    ],
+    "studioLoginAuthStaffUnchangedFromOriginMain": true,
+    "originalMediaUnchanged": true
+  },
+  "documents": {
+    "inlineRoundTrips": 404,
+    "completeDocumentRoundTrips": 2,
+    "documentByteLengths": [
+      46644,
+      46665
+    ],
+    "allSourceRecordsRoundTripped": 406,
+    "exactHashesVerified": true,
+    "sameIdRetriesVerified": true,
+    "actualGoogleVerified": false,
+    "sourceRecordsWritten": 0
+  },
+  "publicImages": {
+    "images": 169,
+    "variants": 507,
+    "totalBytes": 97229902,
+    "dimensions": [
+      "640x800",
+      "960x1200",
+      "1600x2000"
+    ],
+    "allServedHashesMatch": true,
+    "servedFromPortableCheckout": true,
+    "originalFilesIncluded": false
+  },
+  "externalEffects": {
+    "googleResourcesCreated": 0,
+    "googleWrites": 0,
+    "productionDatabaseWrites": 0,
+    "productsAdded": 0,
+    "archivedRecordsImported": 0,
+    "cmsPublications": 0,
+    "newProviderActivated": false,
+    "gitRelease": "OWNER_AUTHORIZED_THROUGH_PR; final head/checks/merge/deployment receipt in PR"
+  },
+  "remaining": [
+    "Real isolated Google resources, runtime credentials, protected ranges and installed Apps Script acceptance",
+    "Production reconciliation and migration/cutover",
+    "Remaining Google phases 3-11 and historical Studio workflow ledger",
+    "Native, physical-device, screen-reader and real-business acceptance"
+  ],
+  "sourceSha256NormalizedLf": {
+    "src/lib/editorial-extension-feature.ts": "b39a8f85961b624f9d64e7b4e5f75096e460304fcc816a4c35b0cc4dd360d557",
+    "src/lib/google-workspace/canonical-job-store.ts": "88b63501ec0f23787313b762faee81e7887295e8e45bf5422b9976cc2ca2c235",
+    "src/lib/google-workspace/controlled-writer.ts": "cd35ca4836193f6729f056898e461fbe9d5b34c72f5aa41d6f95dcdbcfbf3170",
+    "src/lib/google-workspace/drive-documents.ts": "bdb6d5bea76a82fc5a543f00ed12c7126e04a6b6ccb49b22e8cc25233f2cb979",
+    "src/lib/google-workspace/drive-json-rest.ts": "3a8f6a20a56af34a56c30ad773b1a8278b01748b01a21eeec327bb0aa52c5a50",
+    "src/lib/google-workspace/durable-jobs.ts": "348d485a939bf8810d9372763060a92f7e87043def4ce7fe2db170a6b5f9a045",
+    "src/lib/google-workspace/google-reader.ts": "8ea4c3d4ebaeb13efff655ab9775bd4c05214291d0652e55476b83eda234ab56",
+    "src/lib/google-workspace/publication-bundle.ts": "687fa86f9b6c73c11f7a445cdd94823671f07ff8a498df7b14a36c01914f3932",
+    "src/lib/google-workspace/record-codec.ts": "518fc04482b034d167b0c23c2c29b604d3d7c5351e0d9f5a264e07c872d1a741",
+    "src/lib/google-workspace/schema.json": "246acf819050e20908c7b851652e927d4335c5da1ed951edc7007f523eb627e5",
+    "src/lib/google-workspace/writer-gateway.ts": "056abcdffc63e29bfb803d219bd459c64b1851e1942983107fa66fcbf158b237",
+    "src/lib/selected-creations-public.json": "47cbe580a9d0124288d82cbd9c248a28f71b32cd606b70cbace974bfa9dff196",
+    "tools/google-workspace/apps-script/Writer.gs": "03d6f2bca96d9ab96d44af7ca09849893d0228d2fc0461ddd03df01e80d439bc",
+    "tools/google-workspace/apps-script/appsscript.json": "b2b07108801bd61d5abaaf01bfc90d2313fdf73184f270eaa176a7efd2462a31",
+    "tools/google-workspace/migration.mjs": "7fbe343f2af05516c3a64077b25f49f3b3b992efa191bb1dff6ab46a66a65ca0",
+    "tools/google-workspace/package-selected-creations.mjs": "ad86c044181b78ea3fff874f924737760da4ddc4aeaf15eb0e56a4341d8c4913",
+    "tools/google-workspace/rehearse-documents.mjs": "51cdb456032dc6b9d1e04b98dad2f71b0ea5f09acbcc282f87954e9eda57157b",
+    "tools/google-workspace/rehearse.mjs": "ca7b370155d9930dc1071c8aa437a58ba50d0f82d67958247a39352cc1ddc244"
+  }
+}

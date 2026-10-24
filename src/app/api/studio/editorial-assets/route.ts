@@ -16,13 +16,22 @@ export async function PUT(request:Request){
   const session=await studioSession();if(!session)return json({error:'Sign in to continue.'},401);
   const driveId=request.headers.get('x-drive-file-id')||'',filename=decodeURIComponent(request.headers.get('x-file-name')||'');
   if(!/^[A-Za-z0-9_-]{10,100}$/.test(driveId)||!filename||filename.length>180||/[<>/\\]/.test(filename))return json({error:'Provide the original filename and exact Drive file ID.'},400);
-  let processed;let bytes:Buffer;try{bytes=await boundedImageBody(request);processed=await processEditorialImage(bytes);}catch{return json({error:'Processing failed. Use a still JPEG, PNG or WebP up to 4 MB, 320 pixels per side and 20 megapixels. Nothing is available for publication.'},400);}
+  let processed;let bytes:Buffer;try{bytes=await boundedImageBody(request);processed=await processEditorialImage(bytes);}catch{return json({error:'Processing failed. Use a still JPEG, PNG or WebP up to 20 MB, 320 pixels per side and 40 megapixels. Nothing is available for publication.'},400);}
   const sql=studioDb();const existing=await sql`SELECT draft,version,published FROM rivya_public_media WHERE path LIKE '/editorial/%' AND draft->'editorial'->>'sha256'=${processed.sha256} LIMIT 1`;
   if(existing.length)return json({entry:{media:existing[0].draft,version:Number(existing[0].version),published:existing[0].published},reused:true});
+  const parentSha256=request.headers.get('x-editorial-parent-sha256'),editNote=request.headers.get('x-editorial-edit-note');
+  let edit:EditorialMedia['editorial']['edit'];
+  if(parentSha256||editNote){
+   if(!parentSha256||!/^[a-f0-9]{64}$/.test(parentSha256)||!editNote)return json({error:'Provide the original hash and editing provenance.'},400);
+   const parent=await sql`SELECT path FROM rivya_public_media WHERE draft->'editorial'->>'sha256'=${parentSha256} AND draft->'editorial'->>'driveId'=${driveId} AND NOT(draft->'editorial' ? 'edit')`;
+   if(!parent.length)return json({error:'Retain the verified original before uploading an edited version.'},400);
+   const note=decodeURIComponent(editNote);if(!note.trim()||note.length>1000||/[<>]/.test(note))return json({error:'Check the edit note.'},400);
+   edit={parentSha256,method:'ai-edit',note};
+  }
   const id=randomUUID();
   await saveEditorialFile(id,'original',bytes,'image/'+processed.format);
   await Promise.all(processed.variants.map(v=>saveEditorialFile(id,String(v.size),v.data,'image/webp')));
-  const m:EditorialMedia={path:editorialPath(id),alt:'Review the image description',caption:'Design visualization',products:[],focalX:50,focalY:50,provenance:'Owner-supplied Drive image; review required.',editorial:{id,driveId,filename,sha256:processed.sha256,bytes:processed.bytes,width:processed.width,height:processed.height,format:processed.format,derivatives:processed.variants.map(({width,height,bytes,sha256})=>({width,height,bytes,sha256})),classification:'unknown',reviewNote:''}};
+  const m:EditorialMedia={path:editorialPath(id),alt:'Review the image description',caption:'Design visualization',products:[],focalX:50,focalY:50,provenance:'Owner-supplied Drive image; review required.',editorial:{id,driveId,filename,sha256:processed.sha256,bytes:processed.bytes,width:processed.width,height:processed.height,format:processed.format,derivatives:processed.variants.map(({width,height,bytes,sha256})=>({width,height,bytes,sha256})),classification:edit?'design-visualization':'unknown',reviewNote:'',...(edit?{edit}:{})}};
   if(!validEditorialMedia(m))throw Error('Processing metadata invalid');
   await sql`WITH created AS (INSERT INTO rivya_public_media(path,draft,version,updated_by) VALUES(${m.path},${JSON.stringify(m)}::jsonb,1,${session.adminId}) RETURNING path), history AS (INSERT INTO rivya_revisions(kind,entity_key,version,document,actor,operation) SELECT 'media',path,1,${JSON.stringify(m)}::jsonb,${session.adminId},'editorial:processed' FROM created) INSERT INTO rivya_audit(actor,action,entity) SELECT ${session.adminId},'editorial:processed',path FROM created`;
   return json({entry:{media:m,version:1,published:null}});

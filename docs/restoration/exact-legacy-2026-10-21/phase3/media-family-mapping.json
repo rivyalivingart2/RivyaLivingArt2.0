@@ -1,0 +1,74 @@
+[
+  {
+    "family": "category",
+    "source": "Category.image",
+    "target": "proposed CategoryMetadata.image: EditorialUsage",
+    "disposition": "ADDITIVE_CATEGORY_CONTRACT_REQUIRED",
+    "policy": "Preserve derived memberships; metadata must not create products",
+    "writes": 0
+  },
+  {
+    "family": "product",
+    "source": "ProductImage + Product.videoUrl/model3dUrl",
+    "target": "ShopProduct image/scene/gallery; video/3D needs extension",
+    "disposition": "OWNER_EXCLUDED_PRODUCT_CHANGES",
+    "policy": "Existing product media remains untouched",
+    "writes": 0
+  },
+  {
+    "family": "blog",
+    "source": "BlogPost.coverImage/content",
+    "target": "ContentDocument.headerImage / sections[].image / body",
+    "disposition": "EXISTING_WITH_ADAPTER",
+    "policy": "Approved path, alt/caption and independent desktop/mobile crops; no arbitrary source URLs",
+    "writes": 0
+  },
+  {
+    "family": "project",
+    "source": "PortfolioImage, before/after/video",
+    "target": "EditorialRecord.gallery + ContentDocument.headerImage",
+    "disposition": "EXISTING_IMAGE_CONTRACT_VIDEO_EXTENSION",
+    "policy": "Twelve-image bound; preserve before/after roles explicitly; genuine project needs evidence",
+    "writes": 0
+  },
+  {
+    "family": "testimonial",
+    "source": "avatar/installation/video/poster + Media IDs",
+    "target": "proposed testimonial media/rating/evidence contract",
+    "disposition": "ADDITIVE_CONTRACT_REQUIRED",
+    "policy": "Current validator rejects image/gallery/linked products; no fabricated portraits, names, reviews or ratings",
+    "writes": 0
+  },
+  {
+    "family": "page/landing",
+    "source": "SiteImage, Page, CustomBlock",
+    "target": "ContentDocument.headerImage / sections[].image / LandingBlock.image/gallery",
+    "disposition": "EXISTING_WITH_RATIO_MOBILE_EXTENSIONS",
+    "policy": "Current one-path EditorialUsage cannot preserve a different mobile URL; old 3:4 and 4:3 ratios need extension",
+    "writes": 0
+  },
+  {
+    "family": "video",
+    "source": "Media.duration/posterUrl and slot pairs",
+    "target": "proposed typed video usage + private original + public poster",
+    "disposition": "ADDITIVE_VIDEO_CONTRACT_REQUIRED",
+    "policy": "Do not convert arbitrary video into current fixed resin-pour enum",
+    "writes": 0
+  },
+  {
+    "family": "private inquiry",
+    "source": "Inquiry.referenceImageUrls",
+    "target": "rivya_references private object relationship",
+    "disposition": "PRIVATE_NO_PUBLIC_MAPPING",
+    "policy": "Never promote customer uploads into public/editorial media",
+    "writes": 0
+  },
+  {
+    "family": "Studio login",
+    "source": "studio.login",
+    "target": "current protected login assets",
+    "disposition": "PROTECTED_NO_CHANGE",
+    "policy": "No source-image replacement or shared CSS change",
+    "writes": 0
+  }
+]

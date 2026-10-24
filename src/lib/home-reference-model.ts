@@ -31,8 +31,8 @@ export function validHomeComposition(value:unknown):value is HomeComposition{
 }
 /** Optional adapters are populated only by approved additive records, never old-site defaults. */
 export type ReferencePortfolio={id:string;classification:'concept'|'evidenced-project';title:string;description:string;href:string;image?:EditorialUsage;localizedCopy?:Partial<Record<'hi'|'gu',{title:string;description:string;image?:EditorialUsage}>>};
-export type ReferenceFeedback={id:string;classification:'fictional-sample'|'approved-feedback';quote:string;attribution:string;image?:EditorialUsage;href?:string;localizedCopy?:Partial<Record<'hi'|'gu',{quote:string;attribution:string}>>};
-export type ReferenceOffering={title:string;description:string;href:string;confirmationSource:string;image?:EditorialUsage;facts:{label:string;value:string}[]};
+export type ReferenceFeedback={id:string;classification:'fictional-sample'|'approved-feedback';quote:string;attribution:string;rating?:number;image?:EditorialUsage;href?:string;localizedCopy?:Partial<Record<'hi'|'gu',{quote:string;attribution:string}>>};
+export type ReferenceOffering={title:string;description:string;href:string;confirmationSource:string;eyebrow?:string;actionLabel?:string;image?:EditorialUsage;facts:{label:string;value:string}[]};
 export type HomeReferenceSnapshot={schemaVersion:1;pages:{document:ContentDocument;version:number}[];dependencies:HomeDependency[];issues:string[];portfolio?:ReferencePortfolio[];feedback?:ReferenceFeedback[];workshops?:ReferenceOffering;printing?:ReferenceOffering;mediaPaths?:string[]};
 export function referenceSectionStates(d:ContentDocument,reference:HomeReferenceSnapshot|undefined,composition:HomeComposition){
  const h=d.homepage!,snapshot=d.homeSnapshot;

@@ -14,6 +14,7 @@ import {draftState} from '@/lib/content-health';
 import {contentListDocument} from '@/lib/content-list-document';
 import {contentReadQuery} from '@/lib/content-read-query';
 import {translationOverviewEntry} from '@/lib/translation-overview';
+import {editorialExtensionDependencyUnion} from '@/lib/editorial-extension-feature';
 export const dynamic='force-dynamic';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
 const editorialComparable=editorialDocument;
@@ -71,6 +72,7 @@ export async function POST(request:Request){
      SELECT 'product' AS kind,product_id AS key,md5(published::text) AS fingerprint FROM rivya_catalogue WHERE visible=true AND published IS NOT NULL
      UNION ALL SELECT 'content',content_key,md5(published::text) FROM rivya_content WHERE visible=true AND published IS NOT NULL
      UNION ALL SELECT 'media',path,md5(published::text) FROM rivya_public_media WHERE published IS NOT NULL
+     ${sql.unsafe(editorialExtensionDependencyUnion())}
     ) current_ref WHERE current_ref.kind=dep->>'kind' AND current_ref.key=dep->>'key' AND current_ref.fingerprint=dep->>'fingerprint'
    )) AS valid
   ), created AS(

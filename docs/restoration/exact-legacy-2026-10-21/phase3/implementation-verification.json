@@ -1,0 +1,460 @@
+{
+  "generatedAt": "2026-10-23T09:15:16.568Z",
+  "baseCheckpoint": "5545ffb",
+  "branch": "codex/exact-legacy-restoration",
+  "buildId": "YDrtP647c0oo4I3hvf-7w",
+  "status": "local-field-media-foundation-and-selected-image-batch-verified",
+  "scope": {
+    "productionAccess": false,
+    "productsAdded": 0,
+    "archivedImports": 0,
+    "recoveredSourceRecords": 0,
+    "titleReplacements": 0,
+    "cmsPublications": 0,
+    "cloudWrites": 0,
+    "pushes": 0,
+    "deployments": 0,
+    "allPhase3RequirementsComplete": false,
+    "allDriveImagesPrepared": false
+  },
+  "implementation": {
+    "additiveTables": [
+      "rivya_editorial_extensions",
+      "rivya_editorial_extension_revisions",
+      "rivya_restoration_crosswalk",
+      "rivya_restoration_conflicts"
+    ],
+    "columnCount": 31,
+    "categoryMetadata": true,
+    "mobileImageSources": true,
+    "legacyCropRatios": [
+      "3/4",
+      "4/3"
+    ],
+    "genuineTestimonialOptionalFields": true,
+    "privateFileFormats": [
+      "mp4",
+      "webm",
+      "glb"
+    ],
+    "videoPlayback": true,
+    "glbDownload": true,
+    "interactive3dViewer": false,
+    "sourceCrosswalkAndConflictRows": 0
+  },
+  "tests": {
+    "application": {
+      "passed": 390,
+      "failed": 0,
+      "receiptModifiedAt": "2026-10-23T08:50:48.573Z",
+      "logSha256": "7d943fef9d965367616552ce0ef01ba54c1ab7b6835f17496ab36a68677a901a"
+    },
+    "builtHttp": {
+      "passed": 403,
+      "failed": 0,
+      "receiptModifiedAt": "2026-10-23T08:54:39.050Z",
+      "logSha256": "bb689e9ffbfd159f4853a5e2d4bd225d92f9f32f8c6ac9ca2843ec6abfece19b"
+    },
+    "mappingAndIsolation": {
+      "passed": 53,
+      "failed": 0,
+      "receiptModifiedAt": "2026-10-23T09:08:02.010Z",
+      "logSha256": "2fc9b6008ffda4883bb0edd6b84e3d8a699195d8752467486494801386230346"
+    },
+    "preflight": {
+      "passed": 12,
+      "failed": 0,
+      "receiptModifiedAt": "2026-10-23T09:08:51.556Z",
+      "logSha256": "2ef064c2124c8094321a41f8a7fb46cf2f22d4e06f2be00cc0ea537a3958a563"
+    }
+  },
+  "build": {
+    "passed": true,
+    "typecheckPassed": true,
+    "logSha256": "059817295ddb853d98868354724a199cfa26301f90f2aa363c9bf0240fb756fa"
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 51,
+    "logSha256": "81ab7445fdc16a9e4b3c28fdb6ebfe9ac21d5f165e9e0e55b1a5588e13cb0877",
+    "finalToolsAndPhase3TestErrors": 0,
+    "finalToolsAndPhase3TestWarnings": 0
+  },
+  "finalDelivery": {
+    "at": "2026-10-23T09:03:10.982Z",
+    "buildId": "YDrtP647c0oo4I3hvf-7w",
+    "passed": 103,
+    "failed": 0
+  },
+  "historicalIntegration": {
+    "categoryMediaAndFile": {
+      "at": "2026-10-23T04:41:55.372Z",
+      "buildId": "XOZmZi8s6mqT10uuF8dWr",
+      "passed": 33,
+      "failed": 0
+    },
+    "brandedRegistration": {
+      "at": "2026-10-23T06:28:28.445Z",
+      "passed": 18,
+      "buildId": "not-recorded-in-receipt"
+    },
+    "note": "Historical integration receipts retain original times; only finalDelivery and builtHttp are claimed against the final build."
+  },
+  "browser": {
+    "at": "2026-10-23T09:07:11.380Z",
+    "observations": [
+      "branded desktop grid",
+      "before-after disclosure",
+      "branded mobile grid",
+      "normal local Studio sign-in",
+      "category search empty result",
+      "category independent mobile preview",
+      "category mobile editor",
+      "unsaved category protection",
+      "six uniform private drafts searchable",
+      "private edited image preview",
+      "unreviewed image publish disabled",
+      "authenticated existing film playback",
+      "file revision history",
+      "existing public homepage desktop",
+      "existing public homepage mobile"
+    ],
+    "desktopWidth": 1440,
+    "mobileWidth": 390,
+    "horizontalOverflowObserved": false,
+    "filmDurationSeconds": 8.041667,
+    "actualPlaybackCompleted": true
+  },
+  "preservation": {
+    "at": "2026-10-23T08:55:16.484Z",
+    "scope": "existing synthetic loopback data",
+    "baselineRows": 313,
+    "allExistingRowsUnchanged": true,
+    "productsAdded": 0,
+    "contentWrites": 0,
+    "approvedMediaWrites": 0,
+    "originalFilesUnchanged": 301,
+    "additionalProtectedContractsUnchanged": 10,
+    "protectedBaselineByteHashes": 21,
+    "gitTextComparison": "CRLF normalized; separate baseline byte hashes exact",
+    "productionAccess": false
+  },
+  "schemaRehearsal": {
+    "at": "2026-10-23T06:28:24.346Z",
+    "scope": "isolated-loopback-only",
+    "schemaReplay": "passed",
+    "staleRevisionRejected": true,
+    "rollbackRestoredExactCounts": true,
+    "tables": [
+      "rivya_editorial_extensions",
+      "rivya_editorial_extension_revisions",
+      "rivya_restoration_crosswalk",
+      "rivya_restoration_conflicts"
+    ],
+    "columnCount": 31,
+    "sourceRecordsImported": 0,
+    "productWrites": 0,
+    "productionAccess": false
+  },
+  "images": {
+    "selectedCreations": 6,
+    "untouchedSelectedOriginals": 6,
+    "initialEditedCandidates": 2,
+    "finalBrandedCandidates": 6,
+    "privateStudioImageDrafts": 14,
+    "privateImageDerivatives": 42,
+    "existingProductAssociationsChanged": 0,
+    "deliveryJpegs": 6,
+    "deliveryWebps": 18,
+    "dimensions": [
+      [
+        1600,
+        2000
+      ],
+      [
+        960,
+        1200
+      ],
+      [
+        640,
+        800
+      ]
+    ],
+    "aspectRatio": "4:5",
+    "nativeGeneratedDimensionsApproximate": [
+      1122,
+      1402
+    ],
+    "resampledForDelivery": true,
+    "palette": [
+      "#080a0e",
+      "#08283a",
+      "#164e6b",
+      "#b89b63",
+      "#f4f1e9"
+    ],
+    "archiveBytes": 7296981,
+    "archiveSha256": "4714e78e5332ae58ed6e9f106a90d228a85a920fc9f7cb502e693ee16bb8efec",
+    "privateFilmDrafts": 1,
+    "ownerFidelityReviewRequired": true
+  },
+  "privateEvidence": {
+    "directory": "test-results/exact-legacy-2026-10-21/phase3-implementation",
+    "tracked": false,
+    "screenshots": [
+      {
+        "file": "images-collection.png",
+        "sha256": "28892d501ade4e79ed75e494bf5dbfc9686843d5422393126a8ac19f484a65c1"
+      },
+      {
+        "file": "images-desktop.jpg",
+        "sha256": "c63afe09265034a4c9ee6ab2ae8541477833e735492dbd751282d1c3c61ac20b"
+      },
+      {
+        "file": "images-mobile.jpg",
+        "sha256": "d58a058f45ea9c55e2f6c7d85d5142ec121296150eb808172a86f3cd5c704d69"
+      },
+      {
+        "file": "studio-image-draft.jpg",
+        "sha256": "173c5d833efbf36d13cbc35b2e42ea4ccd411d6e179b2f6549694a6b53362452"
+      },
+      {
+        "file": "category-crops-desktop.jpg",
+        "sha256": "8cc1f2830e5354b2b807e3ef442ee0e7ee1b9365966cac81c8581a1f6e94e9bd"
+      },
+      {
+        "file": "category-crops-mobile.jpg",
+        "sha256": "357b7ae650c8b317948a96e6d9f44a8fa59e28330e49c099b25f7e7e4791e60c"
+      },
+      {
+        "file": "public-home-mobile.jpg",
+        "sha256": "ad998250ed06179f6df7601a608e7cc6bdfd50c075dc8d5a4f75a1a9095dc4c6"
+      }
+    ]
+  },
+  "changedImplementationHashes": [
+    {
+      "path": "scripts/restoration-phase3-schema.sql",
+      "sha256": "be4d917ac8334bf5e4033ae92f2ee1ad3ef5aa24269620ecd4c228c5ea50d17a"
+    },
+    {
+      "path": "src/app/api/studio/content/route.ts",
+      "sha256": "6b19e4fcb3820484254c2146809281325f9245b8dcd13c1d7399de7e9ae7f53d"
+    },
+    {
+      "path": "src/app/api/studio/editorial-assets/route.ts",
+      "sha256": "786ad10b7ffce30d44cda6acbe7d3ef28e61bb975b1557707f3586d896f171d6"
+    },
+    {
+      "path": "src/app/api/studio/editorial-extensions/route.ts",
+      "sha256": "e560d232c9a6824ffcdbc07fc91657c52191f202957b592af30f19446b3f5db2"
+    },
+    {
+      "path": "src/app/api/studio/editorial-order/route.ts",
+      "sha256": "739b6b8db1ff9c5ecc17d8569fa11f909cde4f12a1df74d58251a4e87b0e4f21"
+    },
+    {
+      "path": "src/app/api/studio/presentation/route.ts",
+      "sha256": "bf6db6c4d3ac0da884ec5f4b852a72301f37a938f996f05aecfdd24fd3c14c52"
+    },
+    {
+      "path": "src/app/editorial-file/[id]/route.ts",
+      "sha256": "20ae43aac919a768b23203ede2e2859df19c5ee3cc9c4b74b7e09b311c2d165b"
+    },
+    {
+      "path": "src/components/shop/editorial-entry-card.tsx",
+      "sha256": "0b68ff837875f172ddccce5db57a9265b463cc9fe627b1ccd3c9e3a0d3a960c8"
+    },
+    {
+      "path": "src/components/shop/editorial-file.tsx",
+      "sha256": "e87a14fb9340ecc6e8ba9861b70a3cde590ae3e294cf4c524e09c86f318cf4fa"
+    },
+    {
+      "path": "src/components/shop/editorial-image.tsx",
+      "sha256": "64860a4236d8eaa9644675c46863e1899dbacdd631a638782aa5e0aaced3785a"
+    },
+    {
+      "path": "src/components/shop/editorial.tsx",
+      "sha256": "3814fed5d3f512ba7aec515242f417327a3a86122f267141bab79786f4746ded"
+    },
+    {
+      "path": "src/components/shop/legacy-project-document.module.css",
+      "sha256": "2ffc3c5344e8536c5f0a0462d1f3ea9adb7efebb472afbc948bbc08ba99155ea"
+    },
+    {
+      "path": "src/components/shop/legacy-project-document.tsx",
+      "sha256": "68fdb34e674787ae7a6116271dc6cd13156181528f2ee4a7d7fe25788c2480ce"
+    },
+    {
+      "path": "src/components/shop/reference-homepage.module.css",
+      "sha256": "a4a47f1adbad788b8bb870d099b2ffd7564b3e9ed48c99d2f6d1bccbaf7b3e69"
+    },
+    {
+      "path": "src/components/shop/reference-homepage.tsx",
+      "sha256": "4d8f5beb298d5b3759cd04e9c227b4c733528aa3e5ef997d0cd0d5824d1e9858"
+    },
+    {
+      "path": "src/components/studio/catalogue-categories.tsx",
+      "sha256": "447d2137e31367f1ac637d6f99cd90d515a981f99c59427fe6cf9b3d9315c14f"
+    },
+    {
+      "path": "src/components/studio/content-editor.tsx",
+      "sha256": "5cde0b329c840451dbe115d7b6f0ecae646d6dce9a486cfdecca97913b7d841f"
+    },
+    {
+      "path": "src/components/studio/editorial-asset-library.tsx",
+      "sha256": "61576c39147467255b16254ec362d8f6d689a2b746996c70cc51c06a25e25ce1"
+    },
+    {
+      "path": "src/components/studio/editorial-crop-fields.tsx",
+      "sha256": "92a716d954b19e578a11abe4759187c891d95b02507b7eb431fc09dd713dbf02"
+    },
+    {
+      "path": "src/components/studio/editorial-extensions.tsx",
+      "sha256": "75aaf99d3f8d47033174c3b52b00ffe1fcf5cfc498254a0f6d932e0a22e53411"
+    },
+    {
+      "path": "src/components/studio/editorial-file-fields.tsx",
+      "sha256": "611e37ea12bb179316520497e68915860e476bbf8a023d15d71d642b2f02e652"
+    },
+    {
+      "path": "src/components/studio/editorial-record-fields.tsx",
+      "sha256": "5f9f418d48523e0055b23d3905595734f059abab86aa2410495ce57ded1eba1f"
+    },
+    {
+      "path": "src/components/studio/media-library.tsx",
+      "sha256": "bb57055f6b112509831f8991fdfedb034d8efea4eb579a7d7e1857f3e25328cb"
+    },
+    {
+      "path": "src/components/studio/site-images-editor.tsx",
+      "sha256": "72e8df6303e1086052d1434ac4b3d6a83dfab82be8dc11d498003d9964290b7f"
+    },
+    {
+      "path": "src/components/studio/workspace.tsx",
+      "sha256": "18e516378ce79d47e886e4495375235824fb0f10392fcbaecedffe596f8e5b58"
+    },
+    {
+      "path": "src/lib/content-model.ts",
+      "sha256": "f695f35337ba7491ea8b67536d28c397edf1a0d7002b6ff14cd17b9189944b58"
+    },
+    {
+      "path": "src/lib/editorial-extension-model.ts",
+      "sha256": "cb8a81aa8e0c9d9e3048978e3a027dd4317b1f427002560b69219095d62a596e"
+    },
+    {
+      "path": "src/lib/editorial-file-dependencies.ts",
+      "sha256": "5b058ff81b28911dfc482c1df98e315c13adb4e3a9ccbf84c17d97ba8a522bb9"
+    },
+    {
+      "path": "src/lib/editorial-file-processing.ts",
+      "sha256": "d8e3d6698ea32ebe8ac7bf81e4afcf8e99291fe6c155d3a576f1b3e23cfeb184"
+    },
+    {
+      "path": "src/lib/editorial-media-model.ts",
+      "sha256": "ac682dd0127aa4e13c260576c9ba1e8b16838186e17518df2473e620e798880b"
+    },
+    {
+      "path": "src/lib/editorial-media-processing.ts",
+      "sha256": "24833d848b015d6c3801a0a2c86b51db9c9b98df32b3c44946bda3bc64177bc9"
+    },
+    {
+      "path": "src/lib/editorial-record-model.ts",
+      "sha256": "54939bfebb47494670459dcd8b4f71c48c89637c94852a93a7d0f0b930460bbb"
+    },
+    {
+      "path": "src/lib/editorial-slots.ts",
+      "sha256": "6e5824c67a86727f655eb45b5e32aee2af51577c81b535825bf4b89e97eaf2c6"
+    },
+    {
+      "path": "src/lib/home-editorial.ts",
+      "sha256": "78605599da15d85dacc8cbd9015dc91b37dcd3039c9573acb8278028e0e43186"
+    },
+    {
+      "path": "src/lib/home-reference-model.ts",
+      "sha256": "3b9f3500de821d93c7e5b4ccef3728e3fa60965f63475a12b28fcbdd9ed1aaae"
+    },
+    {
+      "path": "src/lib/homepage-dependencies.ts",
+      "sha256": "7d2de7275c6ccc14cd114fb6f3405328db14abc87c427a55f30e3f55ca2b9e6b"
+    },
+    {
+      "path": "src/lib/homepage-model.ts",
+      "sha256": "44b735784a7a377dc15597ddfcb4fd62db7a9f54d53baf6e060a716e0ce0c52f"
+    },
+    {
+      "path": "src/lib/landing-dependencies.ts",
+      "sha256": "633892f98c1861abd7c544cfd70752d995aa7c2c59d3ffb10cab678919c9da6e"
+    },
+    {
+      "path": "src/lib/local-editorial-store.ts",
+      "sha256": "3a8a604bab5cd5aa7cae32975f1b6a3489933bed6f03aed5fb0b054da21bd2b2"
+    },
+    {
+      "path": "src/lib/page-dependencies.ts",
+      "sha256": "d99dbccbc532265b243aecafcc7a681deb7bc5060f3bca6865253acc55b7aadb"
+    },
+    {
+      "path": "src/lib/publication-read-query.ts",
+      "sha256": "1b5071fd325493dc8e8d8940b71216296e0d5b4a97b83134a7a84616ed4dc927"
+    },
+    {
+      "path": "src/lib/published-content.ts",
+      "sha256": "e6e7e38763991173ca19e68dc3aacf3cb17418fae459fb11d4bbfc796cde819e"
+    },
+    {
+      "path": "tests/p3-editorial-media.test.mjs",
+      "sha256": "8ef18b7158d71d13e14e2e9217aec5918b10c1e3f700add6c1e7822050f53886"
+    },
+    {
+      "path": "tests/restoration-phase3.test.mjs",
+      "sha256": "b65e8698f44482218646276118b69063335009996820263d04a5bd2ee606e07d"
+    },
+    {
+      "path": "tools/exact-legacy/phase3/implementation-snapshot.mjs",
+      "sha256": "02f69efe43474eecf767a0827deaf03c9491249247650b80eba309473b481d24"
+    },
+    {
+      "path": "tools/exact-legacy/phase3/local-api.mjs",
+      "sha256": "a65c8680ca19704538fe9154509c60fa4b2a71c94ca1417390619d1b66b8aac7"
+    },
+    {
+      "path": "tools/exact-legacy/phase3/prepare-branded-images.mjs",
+      "sha256": "d3f936e4989027a6e74a9609455e819352462a1b159768e65b4ff1340c2719b3"
+    },
+    {
+      "path": "tools/exact-legacy/phase3/prepare-images.mjs",
+      "sha256": "50a0a5536298ac75661029f08014d223288bf04c023a787b3f8234524dbfe2be"
+    },
+    {
+      "path": "tools/exact-legacy/phase3/register-branded-images.mjs",
+      "sha256": "37c3e0f5d2b3babe579f75a87ccb93ca1254230796a960853e8939a7c998781e"
+    },
+    {
+      "path": "tools/exact-legacy/phase3/rehearse-schema.mjs",
+      "sha256": "3d5cc091ea8e087d96426fd888faa7d270bd87e96265378d0a5b4c10bffc49ce"
+    },
+    {
+      "path": "tools/exact-legacy/phase3/verify-final.mjs",
+      "sha256": "d7b785419b4271fe77cf63f2e0337b78ac386f16fd16dfa0be50afd0a9482e0b"
+    },
+    {
+      "path": "tools/exact-legacy/phase3/verify-http.mjs",
+      "sha256": "0a844487b8e68683edbe862ef0db6c0a98a663c31cc137d767a727c507f6d355"
+    }
+  ],
+  "limits": [
+    "The owner-deleted source database has no verified recoverable records or joins.",
+    "The preservation baseline is the existing synthetic loopback database, not a new production snapshot.",
+    "Six selected creations were edited; the full Drive and Photos library is not processed.",
+    "AI presentation edits need fidelity and permission review before publication, especially lettering, portraits and reconstructed areas.",
+    "Category SEO route integration, interactive 3D, and complete later-phase operational workflows are not claimed.",
+    "Production target, backup, least-privilege grants and upload transport remain unverified and unauthorized."
+  ],
+  "stagedEvidenceCheck": {
+    "privateValuesChecked": 9,
+    "privateValuesFound": 0,
+    "privateEvidenceFilesStaged": 0,
+    "credentialBearingDatabaseUrls": 0,
+    "note": "Password-free fixed loopback QA guard URLs are expected source code."
+  }
+}

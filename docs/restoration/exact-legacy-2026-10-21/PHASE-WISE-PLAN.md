@@ -1,9 +1,82 @@
+# Superseded execution entry — use the current Sheets/Drive plan
+
+On 24 October 2026 the owner approved the final local public design and resumed work with the new Studio-only redesign and Sheets/Drive migration brief. Read [the current checkpoint](../../google-workspace-2026-10-24/README.md), [audit](../../google-workspace-2026-10-24/AUDIT.md), [architecture](../../google-workspace-2026-10-24/ARCHITECTURE.md) and [0–11 phase plan](../../google-workspace-2026-10-24/PHASE-PLAN.md). Preserve the approved public website and current Studio login. The target is Sheets/Drive after verified migration; current storage stays authoritative during preparation. No products/archived imports or Google Photos rework. All work remains local; no cloud writes, publication or release. Existing restoration work is retained and its earlier receipts remain dated evidence. This entry supersedes the previous stop and any conflicting public-redesign or permanent-SQL instructions below.
+
+---
+# Latest owner decision — confirmed live-site design and stop, 24 October 2026
+
+The owner explicitly selected **Current live www.rivyalivingart.com** for the overall homepage design, backgrounds and colours. Preserve the screenshot structures for the footer and Rivya / Creations, and preserve The Signature — From liquid to light. Complete this final local correction, then stop. This overrides conflicting earlier public-homepage design instructions; data/login protection, no products/imports and local-only restrictions remain. See [the scoped correction](FINAL-LIVE-DESIGN.md). The correction is complete; [the final verification](final-live-design-verification.json) records the local evidence. Work is stopped. Do not resume further Phase 4 or later work without a new request.
+
+---
+# Current disposition — Phase 4 in progress, 24 October 2026
+
+The owner authorized starting Phase 4 from `924978a`, locally, with the selected earlier images and no products or archived imports. [The Phase 4 checkpoint](phase4/PHASE-4-CHECKPOINT.md), [verification](phase4/verification.json) and [workflow ledger](phase4/workflow-ledger.csv) record two delivered paths: selected images to private Studio metadata drafts, and newsletter signup to subscriber list/filters/pagination/CSV. No publication or release occurred.
+
+Full Phase 4 public/Studio parity is not complete. Complete the remaining media organization/bulk, editorial taxonomy/bulk, public conditional-state, inquiry/order/staff, recovery, translation/SEO and matched visual workflows. The original 156-action and 98-route inventories remain authoritative scope, subject to the owner's product/import exclusions and protected current data/login. Phases 5–7 retain their vendor/scraper, catalogue and integration/release work. Do not interpret this checkpoint as their completion or authorization to publish.
+
+---
+# Historical Phase 3 disposition — owner-selected images, 24 October 2026
+
+[The owner-selection checkpoint](phase3/PHASE-3-OWNER-SELECTION.md) and [fresh receipt](phase3/owner-selection-verification.json) supersede earlier Photos/fidelity work queues. The owner chose all 169 earlier 4215 images for the local website, rejected the newer cutout experiment, and excluded Photos as duplicate coverage. Do not resume excluded work or treat the selection as documentary/customer-evidence certification.
+
+The requested local field/media mapping and additive foundation remain delivered; owner-amended image preparation and local website use are complete. The local homepage/portfolio feature six images and /creations exposes all 169 selected images with filters, pagination, enlargement and downloads. Exact prior export bytes, protected data/media and current Studio login are preserved. There are no products, archived imports, new Studio records, database writes, publication or release in this continuation.
+
+Deleted-source records remain unavailable and genuine associations stay unmapped where evidence is missing. Phase 3's historical production merge/activation is not performed. Phases 4–7 retain their full workflow, scraper, catalogue and integration/release scope; the gallery is not a substitute for those systems.
+
+---
+# Historical Phase 3 image checkpoint — 24 October 2026
+
+[Image collection delivery](phase3/PHASE-3-IMAGE-COLLECTION.md) and [verification](phase3/collection-verification.json) supersede the six-image batch status below: all 169 creation-folder stills are prepared as private branded candidates, with 676 Studio-size exports and six download packs. The existing additive field/media implementation remains unchanged. Creation-folder preparation is complete; the separate Photos album's full coverage and documentary fidelity acceptance remain open. Images are unassigned and unpublished. No new database records, products, archived imports or release operations occurred. This does not close full Phase 3 acceptance or later operational workflows.
+
+---
+# Historical Phase 3 implementation checkpoint — 23 October 2026
+
+[Implementation](phase3/PHASE-3-IMPLEMENTATION.md) and [verification](phase3/implementation-verification.json) supersede the mapping-only implementation status below. The additive editorial/media foundation, local replay/recovery, six selected owner-image edits and uniform product-size exports are delivered. The deleted-source record merge, remaining unassigned assets and genuine identity/permission evidence are unavailable or unverified; no values are invented. The 326 mapped additive requirements are not 326 completed fields or workflows. Phases 4–6 retain their operational scope. All work remains local, with zero product/import/publication/release operations.
+
+---
 # Seven-phase exact legacy restoration plan
 
 Date: 21 October 2026. This is a prospective execution plan, not a completion report.
 Authority: [OWNER-DECISION.md](OWNER-DECISION.md). Full specification: [MASTER-CRAFT-PROMPT.md](MASTER-CRAFT-PROMPT.md).
 
-## Status at handoff
+## Historical execution — 21 October 2026
+
+**Phase 3 mapping checkpoint from `39b948c`:** The owner explicitly requested local field/media mapping. [The package](phase3/PHASE-3-MAPPING.md) and [verification](phase3/verification.json) account for 566 real fields, 45 entities, 48 relationship contracts and 78 legacy media placements. The earlier count of 575 incorrectly included nine comment lines. Existing isolated data and all tracked application/media bytes remain unchanged; no products, archived imports, media edits/relinks or release occurred. Contract mapping is complete; the full Phase 3 implementation/replay/derivative programme is not.
+
+**Latest restriction:** No product additions or imports from archived catalogue/Sheets files, samples or saved product rewrites. The owner explicitly excluded these after the file inventory. No archive rows were imported. Preserve the existing catalogue and use existing fixtures only. This restriction applies across all seven phases, including older product-transfer and product-population text below.
+
+**Latest owner amendment and checkpoint:** the old database was accidentally deleted; continue from the remaining files. [FILE-BASED-CONTINUATION.md](FILE-BASED-CONTINUATION.md) and [its receipt](phase12-files-verification.json) supersede the access handoff below. Phase 1 is complete as an available-file baseline with the lost-source limitation. Phase 2 representative design foundations are complete locally with explicit protected-content exceptions. The final build is `v2CaXW2W1igYEi5x4rN2P`; current protected data/login remain authoritative. Full feature restoration is not complete.
+
+| Phase | Current disposition |
+|---|---|
+| 1 | Available-file baseline complete; deleted database rows/IDs/relationships/overrides remain unknown. 105 source files, 45 entities; Phase 3 corrected the field count to 566 from 575 after excluding nine comment lines. Historical archives were inventoried without importing and are owner-excluded. |
+| 2 | Representative design foundations verified locally; workshop/printing/proof geometry closed, protected three chapters retained, unavailable service/media mappings explicitly deferred to their data/workflow phases. |
+| 3 | CONTRACT_AND_AVAILABLE_FILE_MAPPING_COMPLETE_LOCALLY. Field/relationship/asset/placement decisions and conflict evidence verified; no source rows recovered or changes applied. Next implementation boundary: additive non-product contracts/editors, justified derivatives/associations and isolated replay/recovery. Product additions, archive imports and old seeds remain excluded. |
+| 4–7 | Complete public/Studio workflows, operational scraping, catalogue system, integration/release verification remain to implement/verify as specified below. |
+
+No real records were imported, no production mutation/publication occurred, and nothing was pushed or deployed. The earlier execution paragraphs and concrete plan table below are historical; the current Phase 3 mapping report supersedes their implementation-status counts.
+
+Latest status: [PHASE-1-2-FINISH-CHECKPOINT.md](PHASE-1-2-FINISH-CHECKPOINT.md), [verification](phase12-finish-verification.json) and [exceptions](VISUAL-EXCEPTIONS.csv). The owner requested completion of Phase 1 and 2 before moving on. Source discovery is accounted for, and isolated original components now supply matched project/Studio/error-state evidence. Footer, project geometry, image slots, local newsletter capture and desktop WhatsApp were restored/refined. Real old database acceptance remains blocked by access, and final Phase 2 content mapping/exact-design acceptance remains open. No real migration, publication or release occurred. The earlier paragraphs below are historical; they do not authorize skipping these remaining gates.
+
+Latest continuation: [PHASE-2-HOME-CHECKPOINT.md](PHASE-2-HOME-CHECKPOINT.md). Phase 2 is **IN_PROGRESS_LOCALLY** after the working homepage composition/motion slice. The material sequence, richer product flows, remaining public templates and authenticated Studio are still pending. Phase 1's old live export gap remains open. No production migration/publication or release has occurred; the earlier destination digest evidence below was not refreshed by this UI-only slice.
+
+Phase 1 remains **IN_PROGRESS_WITH_SOURCE_ACCESS_GAP** and Phase 2 is **STARTED_LOCALLY**, continuing `d04218c` on `codex/exact-legacy-restoration` (base main `1936cbb`). Read [PHASE-1-BASELINE.md](PHASE-1-BASELINE.md), [PHASE-1-CONTINUATION.md](PHASE-1-CONTINUATION.md) and [PHASE-2-CHECKPOINT.md](PHASE-2-CHECKPOINT.md). The source inventory covers 98 legacy routes, 45 entities, 575 fields and 156 actions. Destination row digests and protected source hashes are unchanged. The old live export remains unavailable. These are not parity completion counts.
+
+All work below has one integration owner: the current execution agent. Preserve the existing current-service contracts and all explicit owner exceptions while adapting the old components. No routine phase-start confirmation is required.
+
+| Phase | Concrete source and edit areas | Deliverable and passing evidence | Current state |
+|---|---|---|---|
+| 1 | Old `src/app/`, `src/actions/`, `prisma/schema.prisma`; new `src/app/`, `src/lib/studio-modules.ts`, SQL schemas; `tools/exact-legacy/` | Route/action/field inventory, protected hashes, real rendered comparisons, defects and private data reconciliation prerequisites | DISCOVERY_ACCOUNTED_FOR; complete live-data acceptance remains open for old export; production mutation/error states are not claimed observed |
+| 2 | Old `src/components/storefront/`, `src/components/motion/`, `src/components/studio/`, `(v2)` pages, `src/styles/tokens.css`, `src/app/globals.css`; adapt new `src/components/shop/`, Studio shell/styles | Source-backed representative compositions, responsive and motion behavior; current login unchanged; useful Markdown migrated with provenance | REPRESENTATIVE_FOUNDATIONS_IMPLEMENTED_LOCALLY; material sequence, public templates, Studio table/editor and source-register shell; eight Markdown adaptations. Full route/workflow parity is Phase 4; real content gaps remain Phase 3 |
+| 3 | `src/lib/shop-model.ts`, `content-model.ts`, `editorial-record-model.ts`, `editorial-media-model.ts`, `catalogue-extra.ts`; additive `scripts/` schemas; `tools/exact-legacy/reconcile.mjs` | Explicit identity/field/relationship crosswalks, conflict register, repeat-safe transactions, recovery rehearsal, media provenance/derivatives and preserved-value comparison | PLANNING_PRIMITIVE_IMPLEMENTED; no real row merge, derivative or migration executed |
+| 4 | Public page routes and `src/components/shop/`; `src/components/studio/`, `studio-modules.ts`, `src/app/api/studio/`, current revision/auth services; adapt old actions/import/subscriber/catalog-fill contracts | Full public and authenticated workflows, including create/edit/filter/preview/save/publish/recover in isolation; browser→API→database→refresh evidence | NOT_STARTED; inactive import/subscriber screens and missing scraper/fill are recorded as gaps |
+| 5 | Old `src/lib/scraper/` adapters/jobs/SSRF/normalization, `src/actions/` scraper actions and source registry; new isolated research/job stores and Studio tools | Worldwide dated source register; bounded extraction and normalized review/export per active adapter, retry/cancel/resume and diagnostics | NOT_STARTED; 23 old configured sources observed; no new external job run |
+| 6 | New versioned catalogue-job contracts and Studio selector; Sheets schema, Apps Script/backend dispatch, editable Slides templates and PDF export; existing product/media/content editors | Selected categories/products produce editable Slides and visually verified luxury PDF; meaningful 50+ fixtures exercise filters and content states, genuine content counts reported separately | NOT_STARTED; a generic export screen does not satisfy this pipeline |
+| 7 | Exact integrated candidate, current audit register, migration/provider/privacy checks, protected login and source/data comparisons | Eight widths, motion/keyboard/zoom, meaningful unit/runtime/browser checks, repeated performance, recovery, complete parity register and concrete release candidate | NOT_STARTED; no new release authority implied |
+
+Execute Phase 2's independent source porting after the remaining relevant visual-state baseline is captured. Phase 3 production operations require their exact target/data/backup/recovery preflight and authorization. Phase 4 depends on compatible contracts, Phase 5 on research/job isolation, Phase 6 on product/media snapshots, and Phase 7 on the integrated candidate. No raw Studio screenshots, customer rows, credentials or private Drive file manifests belong in Git.
+
+## Status at handoff (historical, before this execution)
 
 All seven phases are **NOT_STARTED**. This change publishes documentation only. Existing audit/cinematic work at PR #64 remains part of the destination baseline; it is not newly repeated or certified here.
 

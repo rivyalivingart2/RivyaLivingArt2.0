@@ -1,0 +1,13 @@
+{
+  "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "routesAccounted": 98,
+  "entitiesAccounted": 45,
+  "actionsAccounted": 156,
+  "fieldInventory": 575,
+  "allHaveDestinationOrExplainedGap": true,
+  "recordMatching": "Source namespace + immutable source ID -> explicit destination ID; no title-only joins",
+  "sourceRows": "UNAVAILABLE_OWNER_REPORTED_DATABASE_DELETED",
+  "sourceExportAttempt": "Historical access investigation superseded by owner instruction to continue from files; no export recovered",
+  "databaseWrites": 0,
+  "status": "AVAILABLE_FILE_DISCOVERY_COMPLETE_WITH_DECLARED_LOST_SOURCE_LIMITATION"
+}

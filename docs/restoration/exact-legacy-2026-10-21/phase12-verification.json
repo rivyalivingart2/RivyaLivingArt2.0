@@ -1,0 +1,200 @@
+{
+  "at": "2026-10-21T11:20:32.577Z",
+  "build": {
+    "at": "2026-10-21T11:13:46.992Z",
+    "buildId": "UgsdRBCWteZqXlg53OfL-",
+    "syntheticLocal": true
+  },
+  "scope": "LOCAL_PHASE_1_DISCOVERY_AND_PHASE_2_REPRESENTATIVE_FOUNDATIONS",
+  "protectedSourceFiles": 21,
+  "protectedSourceUnchanged": true,
+  "suites": {
+    "unit": 409,
+    "http": 403,
+    "preflight": 12
+  },
+  "eslint": {
+    "errors": 0,
+    "inheritedWarnings": 62
+  },
+  "audit": {
+    "production": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "all": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 5,
+      "critical": 0,
+      "total": 5
+    }
+  },
+  "screenshots": 25,
+  "screenshotDimensionsAndBuildVerified": true,
+  "layoutChecks": 64,
+  "widths": [
+    1920,
+    1440,
+    1200,
+    992,
+    768,
+    512,
+    390,
+    320
+  ],
+  "interactions": [
+    {
+      "name": "Registry search narrows historical records",
+      "passed": true
+    },
+    {
+      "name": "Registry selected source shows stable key and historical disclosure",
+      "passed": true
+    },
+    {
+      "name": "Registry no-match state",
+      "passed": true
+    },
+    {
+      "name": "Quick view binds protected River Channel record and contact target",
+      "passed": true
+    },
+    {
+      "name": "Quick view Escape restores trigger focus",
+      "passed": true
+    },
+    {
+      "name": "Public search no-match state",
+      "passed": true
+    },
+    {
+      "name": "Public filter reset restores 120 pieces",
+      "passed": true
+    },
+    {
+      "name": "Product gallery advances to image 2 of 3",
+      "passed": true
+    },
+    {
+      "name": "Product gallery End keyboard selects last image",
+      "passed": true
+    },
+    {
+      "name": "Product zoom opens with enlarged gallery",
+      "passed": true
+    },
+    {
+      "name": "Product zoom Escape restores focus",
+      "passed": true
+    },
+    {
+      "name": "Studio existing record editing and publishing locked initially",
+      "passed": true
+    },
+    {
+      "name": "Unsaved editor changes update separate draft preview",
+      "passed": true
+    },
+    {
+      "name": "Back to products protects unsaved changes",
+      "passed": true
+    },
+    {
+      "name": "Discard restores saved original product without persistence",
+      "passed": true
+    },
+    {
+      "name": "Studio editor tabs support arrow keyboard navigation",
+      "passed": true
+    },
+    {
+      "name": "Studio mobile navigation opens actual modules",
+      "passed": true
+    },
+    {
+      "name": "Studio mobile drawer Escape restores trigger",
+      "passed": true
+    },
+    {
+      "name": "Material sequence loads 121 frames and scrubs into later stage",
+      "passed": true
+    },
+    {
+      "name": "Final material runtime loads all 121 frames with 11px source labels",
+      "passed": true
+    },
+    {
+      "name": "Short-height sequence falls back and cleans up motion",
+      "passed": true
+    },
+    {
+      "name": "Explicit pause replaces sequence with readable static content",
+      "passed": true
+    },
+    {
+      "name": "Homepage product quick view remains reachable with motion enabled",
+      "passed": true
+    },
+    {
+      "name": "No-JavaScript homepage retains material content and navigation",
+      "passed": true
+    },
+    {
+      "name": "Studio product pagination reaches second of six pages",
+      "passed": true
+    },
+    {
+      "name": "Studio reverse sort orders actual rows and retains valid selected page",
+      "passed": true,
+      "note": "Initial test assumed a page reset; the existing pagination contract retains a valid selected page. Rechecked descending row values on page 2."
+    },
+    {
+      "name": "Protected login seven element bounds match at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Protected login seven element bounds match at 390px",
+      "passed": true
+    },
+    {
+      "name": "Mobile quick view remains within viewport",
+      "passed": true
+    }
+  ],
+  "provenance": {
+    "referenceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "registry": {
+      "source": "src/lib/scraper/seed-data.ts",
+      "sourceSha256": "689758c296221812723b581604f20a5a7774d3f7f4cca9bc2325772897c2d14c",
+      "records": 23,
+      "status": "HISTORICAL_CONFIGURATION_NOT_LIVE_EXTRACTION"
+    },
+    "material": {
+      "frames": 121,
+      "bytes": 2418710,
+      "exactHashesMatch": true
+    },
+    "markdown": {
+      "inventoried": 286,
+      "adapted": 8,
+      "referenceOnly": 278
+    },
+    "databaseWrites": 0,
+    "externalRequests": 0
+  },
+  "limitations": [
+    "Source live SQL export remains unavailable; no source record-level reconciliation or migration acceptance.",
+    "Destination live data digests were verified at the earlier Phase 1 continuation, not refreshed by this UI-only slice.",
+    "Different protected records and retained baselines are not a pixel-equivalence or identity-mapping claim.",
+    "Project preview uses explicitly synthetic concept data; no actual project/review evidence is invented.",
+    "Scraper source register is a working Phase 2 shell only; no extraction/import/jobs are implemented by this checkpoint.",
+    "Resized desktop viewports do not certify physical phones, screen readers, real providers or every conditional workflow.",
+    "No production migration, CMS publication, push, merge or deployment."
+  ]
+}

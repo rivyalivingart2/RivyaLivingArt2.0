@@ -84,3 +84,6 @@
  .band[data-immersive=true]>.heading,.band[data-immersive=true]>.atelier{width:100%;max-width:none}.reference p,.band[data-immersive=true] p{color:black}
  .door{min-height:250px}.portfolio article{min-height:450px}.reference .disclosure{color:#574323}.portfolio article>.disclosure{color:#f4f1e9}.tileGrid article{break-inside:avoid}
 }
+
+/* Preserve Phase 3 responsive category media in the live-site door layout. */
+.door>figure{position:absolute;inset:0;margin:0;height:100%}.door>figure>div{height:100%;aspect-ratio:auto}

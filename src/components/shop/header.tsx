@@ -10,7 +10,9 @@ import {LocaleSwitcher} from './locale-switcher';
 import {navigationLabel,uiText,type Locale,type NavigationSettings,type NavItem} from '@/lib/site-settings-model';
 import type {SharedCopy} from '@/lib/shared-copy-model';
 import s from './shop.module.css';
-import f from './public-frame.module.css';
+import f from './live-header.module.css';
+
+export type CollectionImage={href:string;src:string;position?:string};
 
 function NavAnchor({item,locale,className,onClick,current}:{item:NavItem;locale:Locale;className?:string;onClick?:()=>void;current?:boolean}){
  const label=navigationLabel(item,locale);
@@ -18,7 +20,7 @@ function NavAnchor({item,locale,className,onClick,current}:{item:NavItem;locale:
  return item.href.startsWith('/')?<Link href={item.href} className={className} onClick={onClick} aria-current={current?'page':undefined} {...extra}>{label}</Link>:<a href={item.href} className={className} onClick={onClick} aria-current={current?'page':undefined} {...extra}>{label}</a>;
 }
 
-export function ShopHeader({navigation,locale,enabledLocales,copy}:{navigation:NavigationSettings;locale:Locale;enabledLocales:Locale[];copy?:SharedCopy}) {
+export function ShopHeader({navigation,locale,enabledLocales,copy}:{navigation:NavigationSettings;locale:Locale;enabledLocales:Locale[];copy?:SharedCopy;whatsapp?:string;images?:CollectionImage[]}) {
  const pathname=usePathname();
  return <HeaderContent key={pathname} pathname={pathname} navigation={navigation} locale={locale} enabledLocales={enabledLocales} copy={copy}/>;
 }

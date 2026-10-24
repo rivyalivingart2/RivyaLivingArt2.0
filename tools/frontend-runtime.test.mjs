@@ -22,6 +22,9 @@ const fixtureRoutes = [
   '/personal-art',
   ...concepts.map(piece => `/pieces/${piece.slug}`),
 ];
+// Approved static image files do not make the surrounding public navigation and
+// published catalogue available. The collection uses the same request-time gate.
+const creationRoutes = ['/creations', '/creations?image=006'];
 const fixtureNames = new RegExp('demoFixtureKey|DEMO_FIXTURE|<(?:h1|h2|h3)[^>]*>\\s*(?:'+concepts.map(piece=>piece.title.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')\\s*</(?:h1|h2|h3)>');
 const unknownRoutes = [
   '/not-an-existing-collection',
@@ -113,13 +116,14 @@ test('built frontend HTTP access and publication boundaries', async t => {
   for (const mode of [{VERCEL_ENV:'preview',RIVYA_PUBLISHED_PREVIEW:'1'},{VERCEL_ENV:'production',RIVYA_VISUAL_PREVIEW:'1'}]) {
     await t.test(`${mode.VERCEL_ENV} fails closed when published storage is unavailable`, async t => {
       const origin = await startBuiltServer(t, mode);
-      for (const path of ['/', ...fixtureRoutes]) await t.test(`GET ${path} does not publish fallback data`, async () => {
+      for (const path of ['/', ...fixtureRoutes, ...creationRoutes]) await t.test(`GET ${path} does not publish fallback data`, async () => {
         const { response, html } = await getPage(origin, path);
         assert.equal(response.status, 500, `${path} must report unavailable storage`);
         assert.match(response.headers.get('content-type') ?? '', /text\/html/i);
         assertNoindex(response, path);
         assert.doesNotMatch(html, fixtureNames);
         assert.doesNotMatch(html, /postgres(?:ql)?:\/\/|password_hash|token_hash/);
+        if (path.startsWith('/creations')) assert.doesNotMatch(html, /Made personal\.|Presented beautifully\.|\/media\/owner-creations\//);
       });
     });
   }
@@ -127,8 +131,9 @@ test('built frontend HTTP access and publication boundaries', async t => {
     const origin = await startBuiltServer(t, {VERCEL_ENV:'test',RIVYA_ENV:'test',RIVYA_PUBLISHED_PREVIEW:'0'});
     const home = await getPage(origin,'/');
     assert.equal(home.response.status,200);assert.match(home.html,/An atelier taking shape/);assert.doesNotMatch(home.html,fixtureNames);
-    for (const path of fixtureRoutes) await t.test(`${path} denies unavailable public content`,async()=>{
+    for (const path of [...fixtureRoutes, ...creationRoutes]) await t.test(`${path} denies unavailable public content`,async()=>{
       const {response,html}=await getPage(origin,path);assert.equal(response.status,404);assertNoindex(response,path);assert.doesNotMatch(html,fixtureNames);
+      if (path.startsWith('/creations')) assert.doesNotMatch(html, /Made personal\.|Presented beautifully\.|\/media\/owner-creations\//);
     });
     for (const path of unknownRoutes) await t.test(`${path} returns a real 404`,async()=>{
       const {response,html}=await getPage(origin,path);assert.equal(response.status,404);assertNoindex(response,path);assert.match(html,/This page is unavailable/);

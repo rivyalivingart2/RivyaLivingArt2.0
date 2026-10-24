@@ -41,7 +41,7 @@ export const studioModules = [
  {key:"content-lab",segment:"content-lab",label:"Content lab",group:"Settings",aliases:[],adminOnly:false},
 ] as const;
 /** Status-only destinations retain guarded bookmarks but are not everyday tools. */
-export const studioNavigationModules=studioModules.filter(module=>module.key!=='import'&&module.key!=='subscribers');
+export const studioNavigationModules=studioModules.filter(module=>module.key!=='import');
 export type StudioModule = typeof studioModules[number];
 export type StudioModuleKey = StudioModule['key'];
 export function studioModule(segment:string) {

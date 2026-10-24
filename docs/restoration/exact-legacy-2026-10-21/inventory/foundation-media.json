@@ -1,0 +1,50 @@
+[
+  {
+    "source": "public/media/v3/bench-coffee-top.avif",
+    "destination": "public/legacy-reference/foundation/bench-coffee-top.avif",
+    "sha256": "40f1c0fc5bc83ad84527a579a44c95dff5f72c3134a945ab03f61487f507bb7a",
+    "bytes": 51580,
+    "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "usage": "Additive reference slot; no current media overwritten"
+  },
+  {
+    "source": "public/media/v3/art-wall-panel.avif",
+    "destination": "public/legacy-reference/foundation/art-wall-panel.avif",
+    "sha256": "32275f88008af08b68a0fb4410de86823f49ca30d5a9389d0036d6dfe18dead1",
+    "bytes": 51888,
+    "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "usage": "Additive reference slot; no current media overwritten"
+  },
+  {
+    "source": "public/media/v3/story-cure.avif",
+    "destination": "public/legacy-reference/foundation/story-cure.avif",
+    "sha256": "a202bdfda6322a228dee3d526dd25147fe56a14990263776cdf2dd1af504328a",
+    "bytes": 26436,
+    "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "usage": "Additive reference slot; no current media overwritten"
+  },
+  {
+    "source": "public/media/v3/varmala-press-stack.avif",
+    "destination": "public/legacy-reference/foundation/varmala-press-stack.avif",
+    "sha256": "086a724f0a3304d21f6618776fa8ff9afc6a93063244126e332009d2a487bd41",
+    "bytes": 63116,
+    "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "usage": "Additive reference slot; no current media overwritten"
+  },
+  {
+    "source": "public/media/hands-polish.webp",
+    "destination": "public/legacy-reference/foundation/hands-polish.webp",
+    "sha256": "f5839356f47a89b242ba8e409b10342b5178447234872903c9ea0f08f00e1d8f",
+    "bytes": 67236,
+    "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "usage": "Additive reference slot; no current media overwritten"
+  },
+  {
+    "source": "public/redesign/texture-resin-flow.jpg",
+    "destination": "public/legacy-reference/foundation/texture-resin-flow.jpg",
+    "sha256": "53dfc87a74c50b6ca72a2e76e1d85df051afa01acfc434b26974f804e0cc81c8",
+    "bytes": 229943,
+    "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "usage": "Additive reference slot; no current media overwritten"
+  }
+]

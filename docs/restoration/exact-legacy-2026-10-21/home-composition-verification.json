@@ -1,0 +1,401 @@
+{
+  "at": "2026-10-21T10:14:51.884Z",
+  "build": {
+    "at": "2026-10-21T10:00:32.181Z",
+    "buildId": "GN1TzWAYdKFILJnSQXYyu",
+    "syntheticLocal": true
+  },
+  "scope": "LOCAL_HOMEPAGE_FOUNDATION_ONLY",
+  "protectedSourceFiles": 21,
+  "protectedSourceUnchanged": true,
+  "suites": {
+    "unit": 409,
+    "http": 403,
+    "preflight": 12
+  },
+  "additionalScreenshotFiles": 54,
+  "screenshotDimensionsVerified": true,
+  "layoutWidths": [
+    1920,
+    1440,
+    1200,
+    992,
+    768,
+    512,
+    390,
+    320
+  ],
+  "layoutChecks": [
+    {
+      "doorCount": 6,
+      "h1": 1,
+      "height": 1000,
+      "masked": 0,
+      "railCount": 3,
+      "rulerDisplay": "block",
+      "scrollWidth": 1905,
+      "slots": [
+        "pour",
+        "manifesto",
+        "pieces",
+        "large-format",
+        "material",
+        "collections",
+        "maker",
+        "bespoke",
+        "process",
+        "why",
+        "closing"
+      ],
+      "width": 1920
+    },
+    {
+      "doorCount": 6,
+      "h1": 1,
+      "height": 1000,
+      "masked": 0,
+      "railCount": 3,
+      "rulerDisplay": "block",
+      "scrollWidth": 1425,
+      "slots": [
+        "pour",
+        "manifesto",
+        "pieces",
+        "large-format",
+        "material",
+        "collections",
+        "maker",
+        "bespoke",
+        "process",
+        "why",
+        "closing"
+      ],
+      "width": 1440
+    },
+    {
+      "doorCount": 6,
+      "h1": 1,
+      "height": 1000,
+      "masked": 0,
+      "railCount": 3,
+      "rulerDisplay": "block",
+      "scrollWidth": 1185,
+      "slots": [
+        "pour",
+        "manifesto",
+        "pieces",
+        "large-format",
+        "material",
+        "collections",
+        "maker",
+        "bespoke",
+        "process",
+        "why",
+        "closing"
+      ],
+      "width": 1200
+    },
+    {
+      "doorCount": 6,
+      "h1": 1,
+      "height": 1000,
+      "masked": 0,
+      "railCount": 3,
+      "rulerDisplay": "none",
+      "scrollWidth": 977,
+      "slots": [
+        "pour",
+        "manifesto",
+        "pieces",
+        "large-format",
+        "material",
+        "collections",
+        "maker",
+        "bespoke",
+        "process",
+        "why",
+        "closing"
+      ],
+      "width": 992
+    },
+    {
+      "doorCount": 6,
+      "h1": 1,
+      "height": 1024,
+      "masked": 0,
+      "railCount": 3,
+      "rulerDisplay": "none",
+      "scrollWidth": 753,
+      "slots": [
+        "pour",
+        "manifesto",
+        "pieces",
+        "large-format",
+        "material",
+        "collections",
+        "maker",
+        "bespoke",
+        "process",
+        "why",
+        "closing"
+      ],
+      "width": 768
+    },
+    {
+      "doorCount": 6,
+      "h1": 1,
+      "height": 844,
+      "masked": 0,
+      "railCount": 3,
+      "rulerDisplay": "none",
+      "scrollWidth": 497,
+      "slots": [
+        "pour",
+        "manifesto",
+        "pieces",
+        "large-format",
+        "material",
+        "collections",
+        "maker",
+        "bespoke",
+        "process",
+        "why",
+        "closing"
+      ],
+      "width": 512
+    },
+    {
+      "doorCount": 6,
+      "h1": 1,
+      "height": 844,
+      "masked": 0,
+      "railCount": 3,
+      "rulerDisplay": "none",
+      "scrollWidth": 375,
+      "slots": [
+        "pour",
+        "manifesto",
+        "pieces",
+        "large-format",
+        "material",
+        "collections",
+        "maker",
+        "bespoke",
+        "process",
+        "why",
+        "closing"
+      ],
+      "width": 390
+    },
+    {
+      "doorCount": 6,
+      "h1": 1,
+      "height": 740,
+      "masked": 0,
+      "railCount": 3,
+      "rulerDisplay": "none",
+      "scrollWidth": 305,
+      "slots": [
+        "pour",
+        "manifesto",
+        "pieces",
+        "large-format",
+        "material",
+        "collections",
+        "maker",
+        "bespoke",
+        "process",
+        "why",
+        "closing"
+      ],
+      "width": 320
+    }
+  ],
+  "interactionChecks": [
+    {
+      "name": "Private populated journal",
+      "passed": true,
+      "details": "Three existing local articles render with preserved descriptions and real destinations; published homepage selection untouched."
+    },
+    {
+      "name": "Journal pointer preview",
+      "passed": true,
+      "details": "Loaded image follows pointer within viewport."
+    },
+    {
+      "name": "Journal keyboard preview",
+      "passed": true,
+      "details": "Focus hides decorative cursor image."
+    },
+    {
+      "name": "Journal destination",
+      "passed": true,
+      "details": "First row opened the published article and its matching title."
+    },
+    {
+      "name": "Full motion initializes",
+      "passed": true,
+      "details": {
+        "masked": 8,
+        "motion": "active",
+        "rail": "true"
+      }
+    },
+    {
+      "name": "Rail scrub and image reveal",
+      "passed": true,
+      "details": {
+        "closedImages": 0,
+        "left": 249
+      }
+    },
+    {
+      "name": "Keyboard releases rail",
+      "passed": true,
+      "details": {
+        "enhanced": "false",
+        "href": "/pieces/river-channel",
+        "pin": false
+      }
+    },
+    {
+      "name": "Effects pause cleanup",
+      "passed": true,
+      "details": {
+        "masks": 0,
+        "motion": "static",
+        "pin": false
+      }
+    },
+    {
+      "name": "No-JavaScript readable fallback",
+      "passed": true,
+      "details": {
+        "contents": "block",
+        "h1": "Art for the way you live.",
+        "images": 8,
+        "links": 11,
+        "masks": 0,
+        "ruler": "none"
+      }
+    },
+    {
+      "name": "Native no-script disclosure",
+      "passed": true,
+      "details": "With script execution disabled, the native contents disclosure opened and exposed section links."
+    },
+    {
+      "name": "Collection door hover expansion",
+      "passed": true,
+      "details": {
+        "before": 202.5,
+        "after": 394.0625
+      }
+    },
+    {
+      "name": "Remaining categories disclosure",
+      "passed": true,
+      "details": {
+        "extraLinks": 9,
+        "open": true
+      }
+    },
+    {
+      "name": "Collection door destination",
+      "passed": true,
+      "details": {
+        "heading": "Find your piece.",
+        "query": "?category=Tables",
+        "results": 12,
+        "route": "/search"
+      }
+    },
+    {
+      "name": "Protected local sign-in and sign-out",
+      "passed": true,
+      "details": "Existing synthetic owner authenticated to Studio and saved preview; Sign out returned to the unchanged login."
+    }
+  ],
+  "loginPixelComparison": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "meanChannelDifference": 0.2409,
+      "channelsOver12Percent": 0.0005,
+      "pixelIdentical": false,
+      "geometryIdentical": true,
+      "currentImageVariants": [
+        {
+          "asset": "/media/studio-access/making-study.webp",
+          "quality": "75",
+          "width": "1440"
+        },
+        {
+          "asset": "/brand/rivyalivingart-logo-horizontal-transparent.png",
+          "quality": "75",
+          "width": "256"
+        }
+      ],
+      "candidateImageVariants": [
+        {
+          "asset": "/media/studio-access/making-study.webp",
+          "quality": "75",
+          "width": "1440"
+        },
+        {
+          "asset": "/brand/rivyalivingart-logo-horizontal-transparent.png",
+          "quality": "75",
+          "width": "256"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "meanChannelDifference": 0.516,
+      "channelsOver12Percent": 0.0164,
+      "pixelIdentical": false,
+      "geometryIdentical": true,
+      "currentImageVariants": [
+        {
+          "asset": "/media/studio-access/making-study.webp",
+          "quality": "75",
+          "width": "420"
+        },
+        {
+          "asset": "/brand/rivyalivingart-logo-horizontal-transparent.png",
+          "quality": "75",
+          "width": "256"
+        }
+      ],
+      "candidateImageVariants": [
+        {
+          "asset": "/media/studio-access/making-study.webp",
+          "quality": "75",
+          "width": "1440"
+        },
+        {
+          "asset": "/brand/rivyalivingart-logo-horizontal-transparent.png",
+          "quality": "75",
+          "width": "256"
+        }
+      ]
+    }
+  ],
+  "privateFixture": {
+    "at": "2026-10-21T09:49:48.799Z",
+    "scope": "SYNTHETIC_LOOPBACK_ONLY",
+    "privatePresentationRevision": 1,
+    "addedRows": 2,
+    "published": false,
+    "modifiedExistingRows": 0,
+    "selectedArticleCount": 3,
+    "source": "Existing local fixture publications copied into a separate private test snapshot; the public homepage selection is unchanged."
+  },
+  "limitations": [
+    "Old live database export remains unavailable; no new live row-hash comparison was performed in this UI-only slice.",
+    "Current content/media differences and missing mapped slots prevent a claim of exact whole-page parity.",
+    "No production migration, CMS publication, GitHub push or deployment.",
+    "Resized browser viewports are not physical-device or screen-reader acceptance."
+  ]
+}

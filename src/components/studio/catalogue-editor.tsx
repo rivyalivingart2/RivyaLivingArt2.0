@@ -17,6 +17,7 @@ import {studioFetch} from './workspace-api';
 import s from './workspace.module.css';
 import {RevisionHistory} from './revision-history';
 import {usePagination, Pagination} from './pagination';
+import {formatPrice} from '@/lib/product-presentation';
 import {ProductComparison,ProductGalleryEditor} from './product-details';
 import {Plus,RefreshCw,X,ExternalLink} from 'lucide-react';
 
@@ -27,6 +28,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
  const [createRequested]=useState(()=>params.get('create')==='1');
  const newEntry=():Entry=>({version:0,publishedVersion:0,published:null,visible:false,hasDraft:true,product:{id:'RLA-'+crypto.randomUUID(),slug:'new-piece-'+crypto.randomUUID().slice(0,8),name:'New piece',subtitle:'',category:'Tables',tier:'large',image:'',story:'',fields:[{id:'brief',label:'Your requirements',type:'text',required:true,maxLength:240}],revision:1}});
  const [categoryFilter,setCategoryFilter]=useState(params.get('category')||'');
+ const [sort,setSort]=useState('name');
  const [editing,setEditing]=useState(false);
  const [loaded,setLoaded]=useState(false),[publicationFilter,setPublicationFilter]=useState('all');
  const [media,setMedia]=useState<PublicMedia[]>([]),[preview,setPreview]=useState(false),[previewAnswers,setPreviewAnswers]=useState<Record<string,string>>({});
@@ -71,7 +73,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
   if (tierFilter !== 'all' && e.product.tier !== tierFilter) return false;
   if (!query) return true;
   return `${e.product.name} ${e.product.category} ${e.product.id}`.toLowerCase().includes(query.toLowerCase());
- });
+ }).sort((a,b)=>sort==='name-desc'?b.product.name.localeCompare(a.product.name):a.product.name.localeCompare(b.product.name));
 
  const {page, setPage, totalPages, paginatedItems} = usePagination(filteredEntries, 20);
  const switching=useRecordSwitch(dirty);
@@ -84,7 +86,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
   <>
    <div data-studio-part="heading" className={s.heading}>
     <div>
-     <h1>{formsOnly?'Commission forms.':'Pieces & possibilities.'}</h1>
+     <h1>{entry?entry.product.name:formsOnly?'Commission forms':'Products'}</h1>
      <p>Review existing product details, forms and publication state.</p>
     </div>
     <button
@@ -97,9 +99,9 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
     </button>
    </div>
 
-   <p data-studio-part="protectedNote" className={s.protectedNote}>Protected product records: review without changing existing facts, gallery associations or forms. No old products are imported. Editing controls remain available for a deliberate, separately authorized catalogue change.</p><p data-studio-part="status" className={s.status} role="status">{message}</p><LinkedRecordNotice {...linked}/><RecordSwitchNotice control={switching}/>
+   <p data-studio-part="protectedNote" className={s.protectedNote}>Existing product details, gallery associations and forms are protected. Open a product to review its saved version before editing.</p><p data-studio-part="status" className={s.status} role="status">{message}</p><LinkedRecordNotice {...linked}/><RecordSwitchNotice control={switching}/>
 
-   <label>Category<select value={categoryFilter} onChange={e=>setCategoryFilter(e.target.value)}><option value="">All categories</option>{[...new Set(entries.map(e=>e.product.category))].sort().map(category=><option key={category}>{category}</option>)}</select></label>
+   <div hidden={!!entry} data-catalogue-filters><label>Category<select value={categoryFilter} onChange={e=>setCategoryFilter(e.target.value)}><option value="">All categories</option>{[...new Set(entries.map(e=>e.product.category))].sort().map(category=><option key={category}>{category}</option>)}</select></label>
    <div className={s.categoryTabs} role="group" aria-label="Filter by collection">
     <button
       type="button"
@@ -136,6 +138,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
    </div>
 
    <div data-studio-part="toolbar" className={s.toolbar}><label>Publication state<select value={publicationFilter} onChange={e=>setPublicationFilter(e.target.value)}>{['all','Published','Hidden','Unpublished'].map(v=><option key={v} value={v}>{v==='all'?'All publication states':v}</option>)}</select></label>
+    <label>Sort products<select value={sort} onChange={e=>setSort(e.target.value)}><option value="name">Name: A–Z</option><option value="name-desc">Name: Z–A</option></select></label>
     <button
       type="button"
       disabled={busy||!media.length}
@@ -171,7 +174,15 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
     </div>
    </div>
 
-   <div data-studio-part="layout" className={s.layout}>
+   </div>{entry?<button type="button" disabled={busy} onClick={()=>switching.request(()=>{setEntry(null);setEditing(false);setDirty(false);setPreview(false);})}>← Back to products</button>:<>
+    <div data-studio-part="tableWrap" tabIndex={0} role="region" aria-label="Products table, scroll horizontally for all columns">
+     <table><caption className={s.help}>{filteredEntries.length} products · Select a product to review its details</caption><thead><tr><th scope="col">Product</th><th scope="col">Category</th><th scope="col">Price</th><th scope="col">Publication</th><th scope="col">Draft</th></tr></thead><tbody>
+      {paginatedItems.map(e=><tr key={e.product.id}><td><button data-studio-part="product-name" type="button" disabled={busy} onClick={()=>switching.request(()=>{setEditing(false);setEntry(structuredClone(e));setPreviewAnswers({});setDirty(false);setActiveTab(formsOnly?'customization':'general');})}>{e.product.image&&<Image src={e.product.image} alt="" width={48} height={48} sizes="48px"/>}<span>{e.product.name}<small>{e.product.id}</small></span></button></td><td>{e.product.category}</td><td>{formatPrice(e.product.price)}</td><td>{publicationState(e.published,e.visible)}</td><td>{e.hasDraft?'Draft available':'No changes'}</td></tr>)}
+      {!paginatedItems.length&&<tr><td colSpan={5}>{loaded?'No products match these filters.':'Loading products…'}</td></tr>}
+     </tbody></table>
+    </div><Pagination page={page} totalPages={totalPages} setPage={setPage}/>
+   </>}
+   <div data-studio-part="layout" data-catalogue-layout data-has-record={!!entry} className={s.layout}>
     <div data-studio-part="list" className={s.list}>
       {paginatedItems.map(e => (
         <button
@@ -439,6 +450,7 @@ export function CatalogueEditor({admin,formsOnly=false}:{admin:boolean;formsOnly
     ):(
       <div data-studio-part="empty" className={s.empty}>Select a piece to edit its details and customization form.</div>
     )}
+    {entry&&<aside data-studio-part="draft-preview" aria-label="Product draft preview"><details open><summary>Draft preview · unsaved values</summary><div>{entry.product.image&&<Image src={entry.product.image} alt={entry.product.imageAlt||entry.product.name} width={390} height={488} sizes="390px" style={{width:'100%',height:'auto',aspectRatio:'4/5',objectFit:'cover',objectPosition:entry.product.imagePosition}}/>}<p>{entry.product.category}</p><h2>{entry.product.name}</h2><p>{entry.product.subtitle}</p><p>{entry.product.tier==='personal'?formatPrice(entry.product.price):'Price on request'}</p><p>{entry.product.story}</p><dl><dt>Materials</dt><dd>{entry.product.material||'Not recorded'}</dd><dt>Dimensions</dt><dd>{entry.product.dimensions||'Not recorded'}</dd></dl><a href={'/pieces/'+entry.product.slug} target="_blank" rel="noreferrer">Open published piece ↗</a><p className={s.help}>Preview follows this editor. Saving and publication remain separate actions.</p></div></details></aside>}
    </div>
   
 

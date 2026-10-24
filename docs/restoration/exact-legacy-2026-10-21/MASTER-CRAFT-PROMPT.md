@@ -1,7 +1,18 @@
+# Superseded execution entry — use the current Sheets/Drive plan
+
+On 24 October 2026 the owner approved the final local public design and resumed work with the new Studio-only redesign and Sheets/Drive migration brief. Read [the current checkpoint](../../google-workspace-2026-10-24/README.md), [audit](../../google-workspace-2026-10-24/AUDIT.md), [architecture](../../google-workspace-2026-10-24/ARCHITECTURE.md) and [0–11 phase plan](../../google-workspace-2026-10-24/PHASE-PLAN.md). Preserve the approved public website and current Studio login. The target is Sheets/Drive after verified migration; current storage stays authoritative during preparation. No products/archived imports or Google Photos rework. All work remains local; no cloud writes, publication or release. Existing restoration work is retained and its earlier receipts remain dated evidence. This entry supersedes the previous stop and any conflicting public-redesign or permanent-SQL instructions below.
+
+---
 # RIVYA LIVING ART — EXACT LEGACY RESTORATION MASTER CRAFT PROMPT
 
 Version: 21 October 2026. Read [OWNER-DECISION.md](OWNER-DECISION.md) first.
+
+**Current checkpoint:** Phase 3 field/media mapping was authorized from `39b948c` and completed on the available-file/contract basis. Read [the mapping report](phase3/PHASE-3-MAPPING.md) and [verification receipt](phase3/verification.json). There are 566 actual source fields (the historical 575 count included nine comment lines), 45 entities, 48 relationship contracts and 78 media placements. No products, archive imports, data writes, media edits/relinks, Studio login changes or release occurred. Additive extensions, derivatives and justified record associations remain subsequent work; unavailable source records and unassigned media remain explicitly unknown.
+
+**Latest owner restriction:** Do not add products. Archived catalogue/Sheets lists, their samples and saved product rewrites are excluded from migration and population. Preserve the existing destination products and use existing fixtures only. Earlier instructions to transfer old-only products or populate product records are superseded by this restriction. No archived product rows have been imported.
 Plan: [PHASE-WISE-PLAN.md](PHASE-WISE-PLAN.md). Entry prompt: [CONTINUE-IN-NEW-CHAT.md](CONTINUE-IN-NEW-CHAT.md).
+
+**Current execution amendment, 21 October 2026:** The owner reports that the old Vercel database was accidentally deleted and directs work from the available files. [The updated owner decision](OWNER-DECISION.md) supersedes waiting for old SQL access. Recover contracts and candidate content from tracked source, retain provenance, and use the current destination as authoritative. Deleted rows/IDs/overrides/counts remain unknown; seeds and samples are not a recovered export. All implementation stays local. Phase 3 becomes an additive file-derived mapping/reconciliation against protected current data; import only independently supported candidate content after conflict/provenance checks. Full old data transfer cannot be asserted without an actual recovered source.
 
 ## C — CONTEXT
 

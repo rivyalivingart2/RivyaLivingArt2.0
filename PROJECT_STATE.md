@@ -1,3 +1,129 @@
+# Current checkpoint — Google foundations complete locally; PR publication authorized
+
+Continued from `43c0f14` on `codex/sheets-drive-foundation`. Read [the Phase 2 checkpoint](docs/google-workspace-2026-10-24/PHASE-2-CHECKPOINT.md), [final verification](docs/google-workspace-2026-10-24/phase2-verification.json), [complete owner brief](docs/google-workspace-2026-10-24/OWNER-BRIEF.md), and [Codex Cloud continuation prompt](docs/google-workspace-2026-10-24/CONTINUE-IN-CODEX-CLOUD.md) first. The audit/plan and local controlled writer, Drive documents, coherent publication contract and durable-job foundation are implemented. Real Google acceptance, migration and cutover remain separate pending gates.
+
+The owner now explicitly authorizes publishing all latest work through a detailed PR into GitHub `main`, then continuing in Codex Cloud. This supersedes older Git local-only holds for this release. Verify the exact PR head, required checks/reviews and resulting deployment; no direct-main push or protection bypass. No Google provisioning, production database migration, CMS publication, destructive overwrite or later release is implied. Release preparation packages only approved image derivatives and gates features that require uninstalled schemas; originals and private evidence stay ignored.
+
+Preserve the approved public design, homepage/Creations/Signature/footer, current Studio login, products/data/URLs/relationships and original media. Add no products or archived catalogue/Sheets imports. Do not reseed, replay request-table repair, recover the deleted old database, regenerate selected images or resume Google Photos. Existing storage remains authoritative until a separately verified cutover. Stop after the authorized PR/main release and handoff; do not start the next implementation phase in this local chat. Earlier entries below are historical.
+
+---
+# Current owner direction — Sheets/Drive transition and Studio-only restoration
+
+The owner approved the final local public website and supplied the new CRAFT master brief on 24 October 2026. Work has resumed from `e9d3228` on `codex/sheets-drive-foundation`. Read [the current checkpoint](docs/google-workspace-2026-10-24/README.md), [audit](docs/google-workspace-2026-10-24/AUDIT.md), [phase plan](docs/google-workspace-2026-10-24/PHASE-PLAN.md) and [architecture decision](docs/decisions/2026-10-24-sheets-drive.md) first. They supersede the prior stop and earlier public-redesign/permanent-SQL directions.
+
+Preserve the approved homepage, Rivya / Creations, The Signature, footer, all current public layouts and Studio login. Restore only authenticated Studio using the old reference. Sheets/Drive is the target after verified migration; the existing application remains authoritative meanwhile. Keep all work local and preserve populated databases, originals and selected images. No products or archived catalogue/Sheets imports; no Google Photos rework, regeneration, reseeding or request-table repair. No cloud mutation, publication, production migration, push/PR/deployment or external messages have occurred or are implied.
+
+The audit and local architecture/mapping plan are delivered. The local foundation includes a strict record codec, revision/idempotency planner, registered-resource Google read transport and read-only mapping rehearsal. It is not an activated provider or complete migration. All 406 existing local rows and 923 protected tracked source/media/package files are unchanged; 404 rows round-trip inline, two oversized CMS rows are explicitly pending Drive artifacts. See the checkpoint receipt for current tests and next actions. Earlier sections below are historical.
+
+---
+# Current owner direction — live-site design correction and stop
+
+The owner confirmed **www.rivyalivingart.com** as the overall homepage design/background/colour reference, retaining the supplied **Rivya / Creations**, **footer** structures and **The Signature — From liquid to light** section. Read [the final correction](docs/restoration/exact-legacy-2026-10-21/FINAL-LIVE-DESIGN.md). This supersedes earlier exact-OLDWEBSITE homepage geometry instructions. The completed local Phase 4 workflow checkpoint `0e55789` is preserved; full Phase 4 is not complete.
+
+**The requested correction is complete and work is stopped. Do not start another workflow or phase without a new owner request.** Keep all work local. Preserve existing data, products, media and Studio login; add no products or archived imports. No publication, production migration, push/PR/deployment or external message. Final local build `J0mF2NzSlOPFqGX4L_g0e`: 397 application tests, scoped lint/type/build, matched desktop/mobile checks, 400 unchanged business rows, 301 original files, 21 protected hashes and 507 selected image variants verified. See [the receipt](docs/restoration/exact-legacy-2026-10-21/final-live-design-verification.json). Earlier entries are historical.
+
+---
+# Current execution — Phase 4 started locally, 24 October 2026
+
+Continued from `924978a` on `codex/exact-legacy-restoration`. Read [the Phase 4 checkpoint](docs/restoration/exact-legacy-2026-10-21/phase4/PHASE-4-CHECKPOINT.md), [verification](docs/restoration/exact-legacy-2026-10-21/phase4/verification.json) and [workflow ledger](docs/restoration/exact-legacy-2026-10-21/phase4/workflow-ledger.csv). **Phase 4 is in progress, not complete.**
+
+Two real local workflows are delivered: the earlier 169 owner-selected images can be searched and opened as private Studio metadata drafts; website newsletter signups can be searched, filtered, paged and exported from the restored Subscribers screen. Selected image bytes and original-parent lineage are verified. No image was published or assigned to products, customers or reviews. Remaining media bulk/folder/tag operations, editorial taxonomy/bulk workflows, public-state parity, role/recovery and final visual acceptance remain in the ledger.
+
+Final local build `MMFCYzH51pf9AL2D31SVA`: 397 application tests, 56 isolation/mapping checks, 12 preflight checks and 15 targeted API scenarios pass. All 169 originals, 507 selected WebP variants, 301 original media/login files and 21 protected hashes verify. All 388 pre-existing non-session rows across 26 local tables remain unchanged. Test additions: one private image draft, four revisions/audit entries and three synthetic newsletter signups; authentication session/rate-limit changes are reported separately.
+
+**Keep everything local.** No products, archived catalogue/Sheets imports, publication, push/PR/deployment, production changes or external messages. Preserve current data/login, the populated databases and private evidence. Do not reseed or replay request-table repair. Google Photos remains owner-excluded; rejected cutouts remain unused. The selected website collection remains at `http://127.0.0.1:4210/creations`; Studio media and subscribers run on 4210. The unchanged old isolated reference runs on 4212 with alternate PostgreSQL loopback port 55442. Earlier entries below are historical.
+
+---
+# Historical execution — owner-selected website images, 24 October 2026
+
+Continued from `c88071a` on `codex/exact-legacy-restoration`. Read [the owner-selection checkpoint](docs/restoration/exact-legacy-2026-10-21/phase3/PHASE-3-OWNER-SELECTION.md) and [verification](docs/restoration/exact-legacy-2026-10-21/phase3/owner-selection-verification.json) first. The owner chose the **earlier 169-image collection at 4215** for the local website and rejected the newer cutout experiment. Google Photos is **owner-excluded as duplicate coverage**; do not resume its downloads or claim independently verified library equality.
+
+All 169 selected images are now usable at **http://127.0.0.1:4210/creations**, with six featured on the homepage's legacy portfolio slot and the portfolio page. Search, creation-type filters, pagination, enlargement and downloads work. The earlier 4215 review includes the owner's selection annotation. Exact earlier export bytes and their 4:5 sizes are retained; AI-enhanced presentation labels remain truthful.
+
+The requested local field/media mapping, additive foundation and owner-amended image preparation/selection are delivered. The lost source database, unknown genuine record associations and full Phase 4–7 workflows are not completed or invented. This does not certify documentary fidelity of AI edits or authorize publication.
+
+Final local build `gbV5ib2nPHG2Ja9ZxXMvv`: 393 application tests pass; 507 served image variants match; 676 exports and six packs verify. All **355 existing local rows / 13 tables**, **301 original media/login files** and **21 protected hashes** remain unchanged. No products, archived imports, database writes or new Studio records occurred.
+
+**Keep everything local: no push, PR, deployment, CMS publication, cloud writes or production migration.** Preserve current data/login, the populated cluster, originals and private evidence. Do not reseed, replay the request-table repair, resume the rejected cutouts or regenerate the selected set. Earlier entries below are historical.
+
+---
+# Historical execution — Phase 3 creation image collection, 24 October 2026
+
+Continued from `f64294f` on `codex/exact-legacy-restoration`. Read [the image collection checkpoint](docs/restoration/exact-legacy-2026-10-21/phase3/PHASE-3-IMAGE-COLLECTION.md) and [verification receipt](docs/restoration/exact-legacy-2026-10-21/phase3/collection-verification.json) first. All **169 stills in the supplied creation folder** now have private presentation edits: 163 new candidates plus six retained from the previous checkpoint, with 676 uniform 4:5 JPEG/WebP exports and six local download packs. Originals, masters, exact prompts and lineage remain in ignored private evidence.
+
+The working comparison gallery is **http://127.0.0.1:4215/**; the unchanged app/Studio remains on 4210. Creation-folder preparation is complete; full Phase 3 source coverage and fidelity acceptance are not. The separate Photos album's full count/coverage remains unverified after album-download failures; one original was recovered, and individual downloads remain a possible route. Every AI edit remains unassigned and unapproved for publication because lettering, faces and fine details need comparison with the original. Do not equate the 169 photographs with 169 distinct products.
+
+Fresh read-only preservation checks retain all **355 existing synthetic local rows across 13 tables**, **301 original media/login files** and **21 protected hashes**. Application source/public files/package manifests remain unchanged from `f64294f`. This is local evidence, not a new production audit. No database writes or new Studio records occurred in this continuation.
+
+**Keep everything local. No products, archived catalogue/Sheets imports, seeds, production migrations, CMS publication, cloud writes, push, PR or deployment.** Preserve this branch, populated cluster and all private evidence. Do not replay the request-table repair, reseed, fabricate deleted source identities, or assign edited images to existing records without evidence. Earlier entries below are historical.
+
+---
+# Historical execution — Phase 3 local media implementation, 23 October 2026
+
+Continued from `5545ffb` on `codex/exact-legacy-restoration`. Read [the implementation checkpoint](docs/restoration/exact-legacy-2026-10-21/phase3/PHASE-3-IMPLEMENTATION.md), [verification](docs/restoration/exact-legacy-2026-10-21/phase3/implementation-verification.json) and [production candidate](docs/restoration/exact-legacy-2026-10-21/phase3/PRODUCTION-MIGRATION-CANDIDATE.md). Additive category metadata, mobile image paths/legacy ratios, genuine testimonial media/rating fields, private video/GLB contracts, source crosswalk/conflict storage and versioned editors are implemented locally. This is not complete Phase 4–6 workflow parity or recovery of the deleted source database.
+
+Six selected owner creation photos now have ocean/obsidian/champagne AI presentation edits in uniform 1600 × 2000 (4:5), with 960 × 1200 and 640 × 800 WebP variants. Untouched originals, generated masters, exact prompts and before/after review stay in ignored private evidence. Fourteen private image drafts include six originals, two earlier edits and six final branded edits; no existing product/gallery association changed. This batch does not cover the entire Drive/Photos library. Personal details and reconstructed areas remain subject to owner fidelity/permission review.
+
+Final build `YDrtP647c0oo4I3hvf-7w`: 390 application, 403 built HTTP, 53 mapping/isolation, 12 preflight and 103 final delivery checks pass; 15 browser observations cover desktop/mobile and authenticated media. All 313 pre-existing isolated business rows, 301 original media/login files and 21 protected baseline byte hashes remain unchanged. New local schema: four tables / 31 columns, replayed with transaction recovery. No source records or title replacements imported.
+
+**Keep everything local. No products, archived catalogue/Sheets imports, seeds, production migration, CMS publication, cloud writes, push, PR or deployment.** Do not repeat request-table repair or overwrite before snapshots. Preserve this branch and populated cluster. Private image preview: `http://127.0.0.1:4214/`; final app/Studio: `http://127.0.0.1:4210/`. The candidate app requires the additive schema before activation; production target, backup, grants and upload transport remain separate gates. Earlier entries below are historical.
+
+---
+# Historical execution — Phase 3 field and media mapping, 21 October 2026
+
+The owner authorized Phase 3 from `39b948c`, limited to local field/media mapping while preserving current data and Studio login. Read [the mapping checkpoint](docs/restoration/exact-legacy-2026-10-21/phase3/PHASE-3-MAPPING.md) and [verification](docs/restoration/exact-legacy-2026-10-21/phase3/verification.json). The package maps 45 entities, 566 real fields, 48 relationship contracts and 78 media placements. The earlier 575-field count included nine block-comment prose lines; the corrected mapping is authoritative.
+
+**No products or archived catalogue/Sheets imports.** No products/fixtures, database writes, media edits/relinks or app/login changes occurred. All 13 inspected isolated business tables and 897 tracked application/media files are unchanged. The deleted source database remains unavailable; no real source IDs or relationships were invented. Drive lineage is explicit where evidenced, with 787 originals unassigned. Proposed extensions are mapped requirements, not installed features. See the report for complete evidence limits.
+
+The requested contract/available-file mapping is complete; Phase 3 additive non-product implementation, derivatives and replay/recovery remain subsequent work. Keep everything local and preserve this branch and ignored evidence. No push, PR, deploy, production migration, CMS publication or cloud write is authorized. Do not reseed populated clusters or repeat the request-table repair. Mapping preview: `http://127.0.0.1:4213/`; existing app/comparisons: 4210/4211. Earlier entries below are historical.
+
+---
+# Historical execution — available files after old database deletion, 21 October 2026
+
+The owner reports accidental deletion of the old Vercel database and directs continuation using files. Read [the updated owner decision](docs/restoration/exact-legacy-2026-10-21/OWNER-DECISION.md), [file-based continuation](docs/restoration/exact-legacy-2026-10-21/FILE-BASED-CONTINUATION.md) and [105-file baseline](docs/restoration/exact-legacy-2026-10-21/inventory/available-file-baseline.json). Continue from local `7d2556e` on `codex/exact-legacy-restoration`. The Vercel login/export handoff is superseded as a prerequisite; do not ask for it again. Deleted record counts, identities, relationships and overrides remain unknown, never fabricated from seeds or samples.
+
+Latest owner restriction: **do not add products or import archived catalogue/Sheets lists, samples or saved product rewrites**. No such rows were imported. These sources are excluded from migration; use the existing catalogue and existing fixtures only. Preserve the current destination data, media, relationships and Studio login. Work remains local: no push, production migration, CMS publication or deployment. Do not reseed populated clusters or replay the request-table repair. Phase 1 available-file discovery is complete with the lost-source limitation; Phase 2 representative design foundations are verified locally. Read the final file-based receipt linked in the continuation report. Full operational feature parity remains in later phases. Earlier checkpoints below retain their historical evidence and access assumptions.
+
+---
+# Historical execution checkpoint — remaining Phase 1 and 2 work, 21 October 2026
+
+Preserve the local descendant of `f3a7c04` on `codex/exact-legacy-restoration`. Read [the latest pending-work checkpoint](docs/restoration/exact-legacy-2026-10-21/PHASE-1-2-FINISH-CHECKPOINT.md), [verification receipt](docs/restoration/exact-legacy-2026-10-21/phase12-finish-verification.json) and [visual exceptions](docs/restoration/exact-legacy-2026-10-21/VISUAL-EXCEPTIONS.csv). The owner requested Phase 1 and 2 completion before moving on. Both phases are **not yet fully accepted**: real old database access and remaining exact-design/content mapping acceptance remain open.
+
+This continuation reproduces the old project/Studio/error states in a guarded isolated source build, refines footer/project/scope images, and implements local newsletter capture and desktop WhatsApp behavior. Final local build `-PQ1q3ySBQe05yA-S1mEm` passes 411 unit/isolation, 403 HTTP and 12 preflight checks, 64 responsive measurements, unchanged 21 protected source hashes, and 28 accepted captures (11 on the final candidate build). The current Studio login remains unchanged. Original old source remains clean.
+
+**Local only.** No production migration, publication, push/PR/merge/deploy, external messages or paid services. Preserve the populated isolated databases; never reseed or replay the request-table repair. The owner is signing into the OLDWEBSITE Vercel team's Storage page; continue the real read-only source baseline when access is available. Do not replace missing evidence with synthetic records or advance to Phase 3 based on older prose. Raw screenshots, SQL evidence and credentials remain ignored.
+
+---
+
+# Historical checkpoint — Phase 1 discovery / Phase 2 foundations, 21 October 2026
+
+Continue the local descendant of `13f1ff2` on `codex/exact-legacy-restoration`. Read [the latest checkpoint](docs/restoration/exact-legacy-2026-10-21/PHASE-1-2-CHECKPOINT.md), [verification receipt](docs/restoration/exact-legacy-2026-10-21/phase12-verification.json), and [visual exceptions](docs/restoration/exact-legacy-2026-10-21/VISUAL-EXCEPTIONS.csv) first. The 98-route / 45-entity / 156-action discovery is accounted for. Phase 1 complete live-data acceptance remains blocked by the unavailable old SQL export. Do not fabricate it or equate UI counts with a database snapshot.
+
+The representative Phase 2 foundations are implemented locally: 121-frame material sequence; public card/quick-view/product/article/project templates; authenticated Studio shell/table/editor with unsaved preview; historical scraper-register shell; and eight adapted Markdown documents. This is not full Phase 4 workflow parity or an operational scraper. Protected current data/media/login remain authoritative. The receipt verifies 21 protected hashes, 409 unit/isolation, 403 HTTP and 12 preflight checks, 64 responsive checks, 29 browser checks and 25 new captures. All screenshots and credentials remain ignored.
+
+**Local only.** No production migration, CMS publication, push/PR/merge/deploy, external messages or paid services. Preserve the populated isolated cluster and earlier work; never rerun fixture preparation or request-table DDL. Proceed to local Phase 3 mapping/media preparation under the existing owner scope, carrying the source-access blocker. The older checkpoints below retain their historical scope.
+
+---
+
+# Historical execution checkpoint — Phase 2 homepage continuation, 21 October 2026
+
+Continue the local descendant of `5b0a0ea` on `codex/exact-legacy-restoration`. Read [the latest homepage checkpoint](docs/restoration/exact-legacy-2026-10-21/PHASE-2-HOME-CHECKPOINT.md), [source/content mapping](docs/restoration/exact-legacy-2026-10-21/LEGACY-HOME-MAPPING.md), and the owner decision/master prompt.
+
+The second Phase 2 slice ports the homepage composition, progress ruler, product rail, collection doors, meniscus reveals, material layout, process rhythm and journal rows. Build `GN1TzWAYdKFILJnSQXYyu`: 409 unit/isolation, 403 HTTP and 12 preflight checks passed; eight widths, fourteen interactions and 54 new captures verified. All 21 protected source hashes remain unchanged. Login geometry matches; small pixel differences are disclosed. Phase 2 remains incomplete; the material sequence, remaining public templates, richer workflows and Studio shell are next. Phase 1's source database export gap remains open. No fresh live row-hash comparison occurred in this UI-only slice.
+
+**Keep all changes local.** No production migration, CMS publication, push/PR/merge/deploy, external message or paid service is authorized. Preserve current brand/contact/content/product/media/login exceptions. Raw evidence and credentials stay ignored. Do not repeat the request-table repair, reset the branch, or rerun fixture preparation on the populated cluster. The private journal test added only two unpublished synthetic local rows. Continue routine authorized work without another phase-start question.
+
+---
+
+# Historical execution checkpoint — first Phase 2 local slice, 21 October 2026
+
+Continue the local descendant of `d04218c` on `codex/exact-legacy-restoration`; preserve the branch and ignored evidence. Read the owner decision and master prompt, then [Phase 1 continuation](docs/restoration/exact-legacy-2026-10-21/PHASE-1-CONTINUATION.md), [Phase 2 checkpoint](docs/restoration/exact-legacy-2026-10-21/PHASE-2-CHECKPOINT.md), and [canonical seven-phase plan](docs/restoration/exact-legacy-2026-10-21/PHASE-WISE-PLAN.md).
+
+Phase 2 has started with a working public header/drawer/mobile-navigation/hero/footer foundation adapted from OLDWEBSITE. Full-page and Studio restoration are incomplete. Phase 1's destination baseline now has 193 schema columns and 19 unchanged runtime-visible row digests; the old source database export and some workflow states remain open. All 21 protected source hashes match. Final local build `dIA7_A33jqOuNsY09oTOw`; 409 unit/isolation, 403 HTTP and 12 preflight tests passed. These are scoped checks, not full restoration acceptance.
+
+**Keep all changes local.** Preserve current logo/contact/main-color/product/content/media/login exceptions. No production mutation/migration, CMS publication, push/PR/merge/deploy, paid service or external message is authorized. Do not repeat the repaired request-table DDL. Raw screenshots, credentials, private manifests and database evidence remain ignored. Continue routine local source porting without another phase-start question. The older checkpoints below retain their historical date and scope.
+
+---
 # Current owner direction — exact old-site restoration handoff, 21 October 2026
 
 The owner now requires **the SAME OLDWEBSITE design and ALL old public/Studio features in the new repository**, not an inspired redesign. Read [the current owner decision](docs/restoration/exact-legacy-2026-10-21/OWNER-DECISION.md), [master CRAFT prompt](docs/restoration/exact-legacy-2026-10-21/MASTER-CRAFT-PROMPT.md), [seven-phase plan](docs/restoration/exact-legacy-2026-10-21/PHASE-WISE-PLAN.md) and [new-chat entry](docs/restoration/exact-legacy-2026-10-21/CONTINUE-IN-NEW-CHAT.md) first.

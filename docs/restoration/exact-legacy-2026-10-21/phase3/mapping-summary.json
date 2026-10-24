@@ -1,0 +1,219 @@
+{
+  "sourceCommit": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+  "baseCommit": "39b948c",
+  "scope": "FIELD_AND_MEDIA_MAPPING_ONLY",
+  "models": 45,
+  "fields": 566,
+  "relations": 48,
+  "enums": {
+    "Role": [
+      "ADMIN",
+      "EDITOR"
+    ],
+    "ContentStatus": [
+      "DRAFT",
+      "REVIEW",
+      "PUBLISHED",
+      "ARCHIVED"
+    ],
+    "ProductSizeTier": [
+      "LARGE_FORMAT",
+      "MEDIUM_FORMAT",
+      "SMALL_FORMAT"
+    ],
+    "ProductImageRole": [
+      "HERO",
+      "DETAIL",
+      "IN_ROOM",
+      "PROCESS"
+    ],
+    "FieldType": [
+      "SELECT",
+      "TEXT",
+      "SWATCH",
+      "SIZE",
+      "NUMBER",
+      "FILE"
+    ],
+    "InquirySource": [
+      "PRODUCT",
+      "CUSTOM_ORDER",
+      "CONTACT"
+    ],
+    "InquiryStatus": [
+      "NEW",
+      "CONTACTED",
+      "DISCUSSION",
+      "QUOTED",
+      "CONFIRMED",
+      "IN_PRODUCTION",
+      "DELIVERED",
+      "CLOSED",
+      "LOST"
+    ],
+    "TestimonialStatus": [
+      "DRAFT",
+      "PENDING_REVIEW",
+      "VERIFIED",
+      "PUBLISHED",
+      "ARCHIVED"
+    ],
+    "PermissionStatus": [
+      "UNKNOWN",
+      "REQUESTED",
+      "GRANTED",
+      "DECLINED"
+    ],
+    "Provenance": [
+      "UPLOAD",
+      "BUNDLED",
+      "AI"
+    ],
+    "MediaType": [
+      "IMAGE",
+      "VIDEO",
+      "DOCUMENT",
+      "MODEL3D"
+    ],
+    "ScrapeTier": [
+      "LARGE_FORMAT",
+      "MEDIUM_FORMAT",
+      "SMALL_FORMAT",
+      "OWNER",
+      "RESIN_GOODS",
+      "SUPPLIES",
+      "PRINT3D"
+    ],
+    "CollectionMode": [
+      "HTTP",
+      "MANUAL_RESEARCH"
+    ],
+    "PolicyReviewStatus": [
+      "PENDING",
+      "APPROVED",
+      "BLOCKED"
+    ],
+    "AnalyticsLeague": [
+      "FINISHED_ART",
+      "MATERIALS_DIY",
+      "MARKETPLACE_B2B"
+    ],
+    "ScrapePlatform": [
+      "SHOPIFY",
+      "WOOCOMMERCE",
+      "JSONLD",
+      "UNKNOWN"
+    ],
+    "ScrapeJobStatus": [
+      "QUEUED",
+      "RUNNING",
+      "DONE",
+      "FAILED"
+    ],
+    "ReviewStatus": [
+      "PENDING",
+      "APPROVED",
+      "REJECTED",
+      "IMPORTED"
+    ],
+    "ScrapeScope": [
+      "SOURCE",
+      "CATEGORY",
+      "URL"
+    ],
+    "PriceBasis": [
+      "PER_PIECE",
+      "PER_AREA",
+      "STARTING_FROM",
+      "QUOTE_ONLY"
+    ],
+    "AliasKind": [
+      "UNIT",
+      "MATERIAL",
+      "RESIN_STYLE",
+      "COLOUR",
+      "PRODUCT_TYPE",
+      "AVAILABILITY"
+    ],
+    "ShortlistState": [
+      "NEW",
+      "REVIEW",
+      "SHORTLISTED",
+      "REJECTED",
+      "CONFIRMED",
+      "INSPIRATION_ONLY",
+      "DUPLICATE"
+    ],
+    "FormOptionList": [
+      "MATERIAL",
+      "OCCASION",
+      "BUDGET",
+      "TIMELINE"
+    ]
+  },
+  "correction": {
+    "historicalFieldCount": 575,
+    "actualFields": 566,
+    "removedCommentLines": [
+      {
+        "entity": "SiteSettings",
+        "notAField": "The",
+        "reason": "Block-comment prose incorrectly counted by Phase 1 line parser"
+      },
+      {
+        "entity": "SiteSettings",
+        "notAField": "of",
+        "reason": "Block-comment prose incorrectly counted by Phase 1 line parser"
+      },
+      {
+        "entity": "SiteSettings",
+        "notAField": "never",
+        "reason": "Block-comment prose incorrectly counted by Phase 1 line parser"
+      },
+      {
+        "entity": "SiteSettings",
+        "notAField": "were",
+        "reason": "Block-comment prose incorrectly counted by Phase 1 line parser"
+      },
+      {
+        "entity": "SiteSettings",
+        "notAField": "modelled",
+        "reason": "Block-comment prose incorrectly counted by Phase 1 line parser"
+      },
+      {
+        "entity": "SiteSettings",
+        "notAField": "carries",
+        "reason": "Block-comment prose incorrectly counted by Phase 1 line parser"
+      },
+      {
+        "entity": "SiteSettings",
+        "notAField": "client",
+        "reason": "Block-comment prose incorrectly counted by Phase 1 line parser"
+      },
+      {
+        "entity": "SiteSettings",
+        "notAField": "migration",
+        "reason": "Block-comment prose incorrectly counted by Phase 1 line parser"
+      },
+      {
+        "entity": "SiteSettings",
+        "notAField": "old",
+        "reason": "Block-comment prose incorrectly counted by Phase 1 line parser"
+      }
+    ]
+  },
+  "dispositions": {
+    "EXCLUDE_AUTH_RUNTIME": 13,
+    "ADDITIVE_CONTRACT_REQUIRED": 326,
+    "RELATIONSHIP_CROSSWALK_REQUIRED": 34,
+    "OWNER_EXCLUDED_PRODUCT_DATA": 92,
+    "EXISTING_CONTRACT_ADAPTER": 86,
+    "EXCLUDE_SECRET": 1,
+    "KEEP_PROTECTED_DESTINATION": 14
+  },
+  "recordCrosswalkEntries": 0,
+  "productAdditionsAllowed": false,
+  "archivedProductImportsAllowed": false,
+  "sourceRecordsRecovered": false,
+  "applicationWrites": 0
+}

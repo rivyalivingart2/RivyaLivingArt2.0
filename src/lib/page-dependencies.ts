@@ -1,3 +1,5 @@
+import {compileFileDependencies} from './editorial-file-dependencies';
+import type {PublicFile} from './editorial-extension-model';
 import {isDiscoveryRoute,discoveryTier} from './detailed-pages';
 import type {ShopProduct} from './shop-model';
 import {baselineContent,validContent,type ContentDocument} from './content-model';
@@ -6,7 +8,7 @@ import type {HomeSnapshot,EditorialUsage} from './homepage-model';
 import {bodyLinks} from './editorial-body';
 import {compileLanding,landingProductIds,landingActions,publicEntry,type LandingSnapshot,type LandingEntry} from './landing-dependencies';
 import {editorialPublicationIssues} from './editorial-record-model';
-export type PageSnapshot=HomeSnapshot&{availableRoutes?:string[];image?:{path:string;alt:string;position:string};landing?:LandingSnapshot;discovery?:LandingEntry[];faqEntries?:LandingEntry[]};
+export type PageSnapshot=HomeSnapshot&{files?:PublicFile[];availableRoutes?:string[];image?:{path:string;alt:string;position:string};landing?:LandingSnapshot;discovery?:LandingEntry[];faqEntries?:LandingEntry[]};
 export function sectionHrefs(d:ContentDocument){return [...d.sections.filter(s=>s.enabled!==false).flatMap(s=>[...bodyLinks(s.body),...(s.policyHref?[s.policyHref]:[]),...(s.action?[s.action.href]:[])]),...(d.editorial?.policyHref?[d.editorial.policyHref]:[]),...landingActions(d.landing?.blocks||[])];}
 /** Reuse the same public projection and dependency gate as home. Older revisions stay readable. */
 export function compilePageSnapshot(document:ContentDocument,source:DependencySource,options:{includeCatalogue?:boolean}={}):PageSnapshot{
@@ -22,6 +24,8 @@ export function compilePageSnapshot(document:ContentDocument,source:DependencySo
   ...(coverPath?[{id:'cover',type:'story' as const,enabled:true,eyebrow:'',image:document.headerImage||{path:coverPath,alt:document.imageAlt||'',caption:'',desktop:{x:50,y:50,ratio:'3/2'},mobile:{x:50,y:50,ratio:'4/5'}} as EditorialUsage}]:[])
  ]}};
  const snapshot=compileHomepageSnapshot(synthetic,source);
+ const files=compileFileDependencies(document.mediaFiles||[],source);
+ snapshot.dependencies.push(...files.dependencies);snapshot.mediaPaths.push(...files.mediaPaths);snapshot.issues.push(...files.issues);
  snapshot.dependencies.push(...landing.dependencies.filter(d=>!snapshot.dependencies.some(e=>e.kind===d.kind&&e.key===d.key)));
  snapshot.mediaPaths=[...new Set([...snapshot.mediaPaths,...landing.mediaPaths])];
  snapshot.issues.push(...landing.issues,...editorialPublicationIssues(document));
@@ -34,6 +38,6 @@ export function compilePageSnapshot(document:ContentDocument,source:DependencySo
  snapshot.issues=snapshot.issues.filter(issue=>issue!=='Product  is not available in the published catalogue.');
  for(const href of sectionHrefs(document))if(href.startsWith(document.route+'#')&&!visible.some(s=>s.id===href.split('#')[1])){snapshot.issues.push('Missing section: '+href);snapshot.unavailableActionHrefs?.push(href);}
  const cover=source.media.find(r=>r.key===coverPath)?.document as {path:string;alt:string;focalX:number;focalY:number}|undefined;
- return {...snapshot,...(document.landing?{landing:landing.snapshot}:{}),...(discovery?{discovery}:{}),...(faqEntries?{faqEntries}:{}),availableRoutes:source.content.filter(r=>validContent(r.document,baselineContent.find(b=>b.id===r.key))).map(r=>(r.document as ContentDocument).route),...(cover&&snapshot.mediaPaths.includes(cover.path)?{image:{path:cover.path,alt:document.imageAlt||cover.alt,position:cover.focalX+'% '+cover.focalY+'%'}}:{})};
+ return {...snapshot,...(files.files.length?{files:files.files}:{}),...(document.landing?{landing:landing.snapshot}:{}),...(discovery?{discovery}:{}),...(faqEntries?{faqEntries}:{}),availableRoutes:source.content.filter(r=>validContent(r.document,baselineContent.find(b=>b.id===r.key))).map(r=>(r.document as ContentDocument).route),...(cover&&snapshot.mediaPaths.includes(cover.path)?{image:{path:cover.path,alt:document.imageAlt||cover.alt,position:cover.focalX+'% '+cover.focalY+'%'}}:{})};
 }
 export const editorialDocument=(document:ContentDocument)=>{const d={...document};delete d.homeSnapshot;delete d.pageSnapshot;return d;};
