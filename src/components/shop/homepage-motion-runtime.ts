@@ -1,15 +1,12 @@
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
-import {animateLegacyHome} from './legacy-home-motion';
 
 /** Scoped cleanup also restores native anchor behavior on route exit. */
 export function animateHomepage(root:HTMLElement) {
  gsap.registerPlugin(ScrollTrigger);
  const html=document.documentElement,previous=html.style.scrollBehavior;
  html.style.scrollBehavior='smooth';root.dataset.homeMotion='active';
- let legacyCleanup:(()=>void)|undefined;
  const context=gsap.context(()=>{
-  legacyCleanup=animateLegacyHome(root);
   root.querySelectorAll<HTMLElement>('[data-home-parallax]').forEach(frame=>{
    // Keep copy, captions and controls stationary; only the oversized media moves.
    const media=frame.querySelector<HTMLElement>(':scope > [data-home-parallax-layer]')||frame.firstElementChild;
@@ -29,5 +26,5 @@ export function animateHomepage(root:HTMLElement) {
   });
  },root);
  const refresh=requestAnimationFrame(()=>ScrollTrigger.refresh());
- return()=>{cancelAnimationFrame(refresh);legacyCleanup?.();context.revert();html.style.scrollBehavior=previous;root.dataset.homeMotion='static';};
+ return()=>{cancelAnimationFrame(refresh);context.revert();html.style.scrollBehavior=previous;root.dataset.homeMotion='static';};
 }

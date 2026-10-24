@@ -26,7 +26,7 @@ export function ShopFrame({children,business=defaultBusiness,navigation=defaultN
  const journal=atelier.filter(item=>item.href==='/journal'||item.href.startsWith('/journal/'));
  const studio=atelier.filter(item=>!journal.includes(item));
  const whatsapp=business.whatsapp||business.phone.replace(/\D/g,'');
- return <JourneyLanguage locale={locale}><PublicContact whatsapp={whatsapp}><CinematicCanvas><div className={s.site+' '+f.frame} data-legacy-public-frame data-site-copy-revision={copyVersion}><LanguageNotice/>
+ return <JourneyLanguage locale={locale}><PublicContact whatsapp={whatsapp}><CinematicCanvas><div className={s.site+' '+f.frame} data-public-design="live" data-site-copy-revision={copyVersion}><LanguageNotice/>
   <ShopHeader navigation={navigation} locale={locale} enabledLocales={enabledLocales} copy={copy} whatsapp={whatsapp} images={collectionImages}/>
   <main className={publicDesign?pages.surface+' '+legacy.surface:undefined} id="main-content" tabIndex={-1}>{children}</main>
   <footer data-atmosphere="footer" className={f.footer}>

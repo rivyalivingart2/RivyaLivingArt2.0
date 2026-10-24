@@ -4,6 +4,7 @@
 .sequence.sequence.sequence.sequence.sequence.sequence .eyebrow,.sequence.sequence.sequence.sequence.sequence.sequence h3{font:400 11px/1.5 var(--font-mono),monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--champagne,#b89b63)}
 .sequence ol{list-style:none;padding:0;margin:0;max-width:448px;display:flex;flex-direction:column;gap:24px}
 .sequence li{padding-top:16px;border-top:1px solid #f4f1e929}.sequence li p{font-size:16px;line-height:1.65;margin:8px 0 0}.sequence h3{margin:0}
+.sequence.sequence.sequence li p{font-size:16px;line-height:1.65}
 .provenance{font-size:11px;line-height:1.5;opacity:.7;margin:24px 0 0}
 .static{padding-block:clamp(80px,9vw,120px)}.staticGrid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.poster{aspect-ratio:16/9;background:center/cover url('/legacy-reference/pour-cure/frame_120.webp')}
 .stage{display:none;height:400svh}.sticky{position:sticky;top:0;height:100svh;overflow:hidden;background:center/cover url('/legacy-reference/pour-cure/frame_120.webp')}.sticky canvas,.scrim{position:absolute;inset:0;width:100%;height:100%}.scrim{background:linear-gradient(90deg,#101820e6,#10182099 60%,transparent)}.copy{position:relative;height:100%;display:flex;flex-direction:column;justify-content:center}.copy li:not(:first-child){opacity:.3}

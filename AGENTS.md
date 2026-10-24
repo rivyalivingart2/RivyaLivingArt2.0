@@ -1,3 +1,10 @@
+# Current owner direction — live-site design correction and stop
+
+The owner confirmed **www.rivyalivingart.com** as the overall homepage design/background/colour reference, retaining the supplied **Rivya / Creations**, **footer** structures and **The Signature — From liquid to light** section. Read [the final correction](docs/restoration/exact-legacy-2026-10-21/FINAL-LIVE-DESIGN.md). This supersedes earlier exact-OLDWEBSITE homepage geometry instructions. The completed local Phase 4 workflow checkpoint `0e55789` is preserved; full Phase 4 is not complete.
+
+**The requested correction is complete and work is stopped. Do not start another workflow or phase without a new owner request.** Keep all work local. Preserve existing data, products, media and Studio login; add no products or archived imports. No publication, production migration, push/PR/deployment or external message. Final local build `J0mF2NzSlOPFqGX4L_g0e`: 397 application tests, scoped lint/type/build, matched desktop/mobile checks, 400 unchanged business rows, 301 original files, 21 protected hashes and 507 selected image variants verified. See [the receipt](docs/restoration/exact-legacy-2026-10-21/final-live-design-verification.json). Earlier entries are historical.
+
+---
 # Current execution — Phase 4 started locally, 24 October 2026
 
 Continued from `924978a` on `codex/exact-legacy-restoration`. Read [the Phase 4 checkpoint](docs/restoration/exact-legacy-2026-10-21/phase4/PHASE-4-CHECKPOINT.md), [verification](docs/restoration/exact-legacy-2026-10-21/phase4/verification.json) and [workflow ledger](docs/restoration/exact-legacy-2026-10-21/phase4/workflow-ledger.csv). **Phase 4 is in progress, not complete.**

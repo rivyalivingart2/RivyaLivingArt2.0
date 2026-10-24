@@ -1,19 +1,16 @@
 import {usageAvailable} from '@/lib/homepage-model';
+import type {OwnerCreation} from '@/lib/owner-creation-model';
+import {OwnerCreationsPreview} from './owner-creations-preview';
 import type {ReactNode} from 'react';
 import Link from 'next/link';
 import {ArrowUpRight} from 'lucide-react';
 import type {ContentDocument} from '@/lib/content-model';
 import type {HomeSectionType} from '@/lib/homepage-model';
-import {referenceSectionStates,type HomeComposition,type HomeReferenceKey,type HomeReferenceSnapshot} from '@/lib/home-reference-model';
-import {LegacyOfferingBand,LegacyPrinciplesBand} from './legacy-home-offerings';
+import {referenceSectionStates,type HomeComposition,type HomeReferenceKey,type HomeReferenceSnapshot,type ReferenceOffering} from '@/lib/home-reference-model';
 import {localizeHomeReference} from '@/lib/home-reference-dependencies';
 import type {Locale} from '@/lib/site-settings-model';
 import {journeyText} from '@/lib/journey-text';
-import {legacyScopeImages,legacyMakerImage} from '@/lib/legacy-foundation-media';
 import {HomepageContents} from './homepage-contents';
-import {LegacyCureLine} from './legacy-cure-line';
-import {Meniscus} from './legacy-meniscus';
-import legacy from './legacy-home-sections.module.css';
 import {SectionBody} from './section-body';
 import {EditorialImage} from './editorial-image';
 import {ImmersiveImage} from './immersive-image';
@@ -21,8 +18,6 @@ import Image from './public-image';
 import {JourneyText} from './journey-language';
 import {ProductCard} from './product-card';
 import s from './shop.module.css';
-import type {OwnerCreation} from '@/lib/owner-creation-model';
-import {OwnerCreationsPreview} from './owner-creations-preview';
 import r from './reference-homepage.module.css';
 
 const focal=(value:string|undefined)=>{const n=parseFloat(value||'');return Number.isFinite(n)?n:50;};
@@ -36,22 +31,24 @@ function PageImage({document:d,immersive=false}:{document:ContentDocument;immers
 }
 function PageBand({document:d,kind}:{document?:ContentDocument;kind:'scope'|'atelier'|'principles'|'commission'}){
  if(!d)return null;
- const sections=d.sections.filter(section=>section.enabled!==false);
- const heading=<header className={r.heading}><div><p className={r.eyebrow}>{d.eyebrow}</p><h2>{d.title}</h2><p>{d.description}</p></div></header>;
- return <section className={r.band} data-band={kind}>
-  {kind==='atelier'?<div className={r.atelier}><Meniscus>{d.headerImage||d.pageSnapshot?.image?<PageImage document={d}/>:<figure className={r.pageImage}><div><Image src={legacyMakerImage.path} alt={legacyMakerImage.alt} fill sizes="(min-width:1024px) 45vw, 90vw" style={{objectFit:'cover'}}/></div><figcaption>Legacy studio reference</figcaption></figure>}</Meniscus><div>{heading}{sections.slice(0,1).map(section=><div key={section.id}><h3>{section.heading}</h3><SectionBody section={section} unavailable={d.pageSnapshot?.unavailableActionHrefs} mediaPaths={d.pageSnapshot?.mediaPaths}/></div>)}<Link className={s.textLink} href={d.route}>{d.title} <ArrowUpRight aria-hidden size={18}/></Link></div></div>:<>{heading}
-   {kind==='scope'&&<div className={r.scopeImages}>{legacyScopeImages.map((image,index)=><Link key={image.path} href={d.route}><Meniscus><div className={r.scopeImage}><Image src={image.path} alt={image.alt} fill sizes="(min-width:1024px) 22vw, (min-width:640px) 45vw, 90vw" style={{objectFit:'cover'}}/></div></Meniscus><span>{String(index+1).padStart(2,'0')}</span></Link>)}</div>}
-   {kind==='commission'?<div className={r.commission}><PageImage document={d}/><Link className={s.button} href={d.route}><JourneyText text="Begin your piece"/> <ArrowUpRight aria-hidden size={18}/></Link></div>:
-    <div className={r.tileGrid} data-protected-copy={kind==='scope'||undefined}>{sections.map(section=><article key={section.id}>{section.image&&<Meniscus><EditorialImage usage={section.image} available={usageAvailable(section.image,d.pageSnapshot?.mediaPaths)}/></Meniscus>}<h3>{section.heading}</h3><SectionBody section={{...section,image:undefined}} unavailable={d.pageSnapshot?.unavailableActionHrefs} mediaPaths={d.pageSnapshot?.mediaPaths}/></article>)}</div>}
-   {kind==='scope'&&<Link className={s.textLink} href={d.route}>{d.title} <ArrowUpRight aria-hidden size={18}/></Link>}
-  </>}
+ const sections=d.sections.filter(s=>s.enabled!==false);
+ const immersive=kind==='atelier'&&!!(d.headerImage||d.pageSnapshot?.image);
+ return <section className={r.band} data-band={kind} data-immersive={immersive}>{immersive&&<PageImage document={d} immersive/>}<header className={r.heading}><div><p className={r.eyebrow}>{d.eyebrow}</p><h2>{d.title}</h2></div><p>{d.description}</p></header>
+  {kind==='atelier'?<div className={r.atelier}>{!immersive&&<PageImage document={d}/>}<div>{sections.slice(0,1).map(section=><div key={section.id}><h3>{section.heading}</h3><SectionBody section={section} unavailable={d.pageSnapshot?.unavailableActionHrefs} mediaPaths={d.pageSnapshot?.mediaPaths}/></div>)}<Link className={s.textLink} href={d.route}>{d.title} <ArrowUpRight aria-hidden size={18}/></Link></div></div>:
+   kind==='commission'?<div className={r.commission}><PageImage document={d}/><Link className={s.button} href={d.route}><JourneyText text="Begin your piece"/> <ArrowUpRight aria-hidden size={18}/></Link></div>:
+    <div className={r.tileGrid}>{sections.map(section=><article key={section.id}>{section.image&&<EditorialImage usage={section.image} available={usageAvailable(section.image,d.pageSnapshot?.mediaPaths)}/>}<h3>{section.heading}</h3><SectionBody section={section} unavailable={d.pageSnapshot?.unavailableActionHrefs} mediaPaths={d.pageSnapshot?.mediaPaths}/></article>)}</div>}
+  {kind==='scope'&&<Link className={s.textLink} href={d.route}>{d.title} <ArrowUpRight aria-hidden size={18}/></Link>}
  </section>;
+}
+function OfferingBand({offering,mediaPaths}:{offering?:ReferenceOffering;mediaPaths:string[]}){
+ if(!offering?.confirmationSource)return null;
+ return <section className={r.band+' '+r.offering}><div><h2>{offering.title}</h2><p>{offering.description}</p><dl className={r.facts}>{offering.facts.map(fact=><div key={fact.label}><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}</dl><Link className={s.button} href={offering.href}>{offering.title} <ArrowUpRight aria-hidden size={18}/></Link></div>{offering.image&&<EditorialImage usage={offering.image} available={usageAvailable(offering.image,mediaPaths)}/>}</section>;
 }
 function CollectionDoors({document:d}:{document:ContentDocument}){
  const h=d.homepage!,snapshot=d.homeSnapshot!,block=h.sections.find(b=>b.type==='categories'&&b.enabled&&!b.contentNeeded),copy=d.sections.find(s=>s.id===block?.id);
  if(!block||!copy)return null;
  const categories=block.categories?.length?block.categories.flatMap(name=>snapshot.categories.filter(c=>c.name===name)):snapshot.categories;
- const card=(category:typeof categories[number])=>{const image=category.image||snapshot.products.find(p=>p.category===category.name);return <Link key={category.name} href={'/search?category='+encodeURIComponent(category.name)} className={r.door} data-collection-door>{category.usage?<Meniscus className={legacy.fillImage+' '+r.categoryMedia}><EditorialImage usage={{...category.usage,caption:''}}/></Meniscus>:image?<Meniscus className={legacy.fillImage}><Image src={image.image} alt={image.imageAlt||category.name} fill sizes="(max-width: 1023px) 90vw, 34vw" style={{objectFit:'cover',objectPosition:image.imagePosition}}/></Meniscus>:<span className={r.monogram} aria-hidden>{category.name.slice(0,1)}</span>}<span className={r.doorCopy}><span>{category.count} <JourneyText text={category.count===1?'piece':'pieces'}/></span><strong>{category.name}</strong><ArrowUpRight aria-hidden size={20}/></span></Link>;};
+ const card=(category:typeof categories[number])=>{const image=category.image||snapshot.products.find(p=>p.category===category.name);return <Link key={category.name} href={'/search?category='+encodeURIComponent(category.name)} className={r.door} data-collection-door>{category.usage?<EditorialImage usage={{...category.usage,caption:''}}/>:image?<Image src={image.image} alt={image.imageAlt||category.name} fill sizes="(max-width: 780px) 90vw, 34vw" style={{objectFit:'cover',objectPosition:image.imagePosition}}/>:<span className={r.monogram} aria-hidden>{category.name.slice(0,1)}</span>}<span className={r.doorCopy}><span>{category.count} <JourneyText text={category.count===1?'piece':'pieces'}/></span><strong>{category.name}</strong><ArrowUpRight aria-hidden size={20}/></span></Link>;};
  return <section id={block.id} className={r.band} data-band="collections"><header className={r.heading}><div><p className={r.eyebrow}>{block.eyebrow}</p><h2>{copy.heading}</h2></div><SectionBody section={copy} mediaPaths={snapshot.mediaPaths} unavailable={snapshot.unavailableActionHrefs}/></header><div className={r.doors}>{categories.slice(0,6).map(card)}</div>{categories.length>6&&<details className={r.more}><summary><JourneyText text="Explore the collection"/> ({categories.length})</summary><div className={r.categoryList}>{categories.slice(6).map(category=><Link key={category.name} href={'/search?category='+encodeURIComponent(category.name)}>{category.name} <span>{category.count} <JourneyText text={category.count===1?'piece':'pieces'}/></span></Link>)}</div></details>}</section>;
 }
 /** Eighteen distinct source slots; unavailable records stay absent on public pages. */
@@ -74,19 +71,17 @@ export function ReferenceHomepage({document:d,reference:raw,composition,locale,h
   work:<section className={r.band} data-band="portfolio"><header className={r.heading}><h2><JourneyText text="Portfolio"/></h2></header><div className={r.portfolio}>{reference.portfolio?.map(item=><article key={item.id}><p className={r.disclosure}>{<JourneyText text={item.classification==='concept'?'Concept project · not a completed commission':'Documented project'}/>}</p>{item.image&&<EditorialImage usage={item.image} available={usageAvailable(item.image,mediaPaths)}/>}<h3><Link href={item.href}>{item.title}</Link></h3><p>{item.description}</p></article>)}</div></section>,
   words:<section className={r.band} data-band="testimonials"><header className={r.heading}><h2><JourneyText text="Testimonials"/></h2></header><div className={r.quotes}>{reference.feedback?.map(item=><figure key={item.id}><p className={r.disclosure}>{<JourneyText text={item.classification==='fictional-sample'?'Fictional sample · not customer feedback':'Approved customer feedback'}/>}</p>{item.image&&<EditorialImage usage={item.image} available={usageAvailable(item.image,mediaPaths)}/>}<blockquote><p>{item.quote}</p></blockquote>{item.rating!==undefined&&<p aria-label={'Rated '+item.rating+' out of 5'}>{item.rating} / 5</p>}<figcaption>{item.classification==='fictional-sample'?<JourneyText text="Illustrative voice"/>:item.attribution}</figcaption>{item.href&&<Link href={item.href}><JourneyText text="Read the statement"/></Link>}</figure>)}</div></section>,
   bespoke:<PageBand document={page('/commission')} kind="commission"/>,
-  workshops:<LegacyOfferingBand offering={reference.workshops} mediaPaths={mediaPaths} kind="workshops"/>,
-  print:<LegacyOfferingBand offering={reference.printing} mediaPaths={mediaPaths} kind="print"/>,
+  workshops:<OfferingBand offering={reference.workshops} mediaPaths={mediaPaths}/>,
+  print:<OfferingBand offering={reference.printing} mediaPaths={mediaPaths}/>,
   process:renderExisting('steps'),
-  why:<LegacyPrinciplesBand document={page('/our-story')}/>,
+  why:<PageBand document={page('/our-story')} kind="principles"/>,
   journal:renderExisting('journal'),
   closing:renderExisting('invitation'),
  };
  if(ownerCreationImages.length){
-  // Use the existing legacy portfolio slot; leave all published project records intact.
   nodes.work=<><OwnerCreationsPreview images={ownerCreationImages}/>{reference.portfolio?.length?nodes.work:null}</>;
   const work=states.find(s=>s.key==='work');if(work&&work.enabled){work.visible=true;work.heading='Creations';}
  }
  const visible=states.filter(s=>s.visible);
- const marks=visible.map(slot=>({id:'home-'+slot.key,label:slot.heading}));
- return <div className={r.reference} data-home-composition="reference"><noscript><style>{'[data-legacy-cure-line]{display:none!important}[data-home-contents]{display:block!important}'}</style></noscript><LegacyCureLine label={journeyText(locale,'On this page')} marks={marks}/>{visible.map(slot=><div id={'home-'+slot.key} data-home-slot={slot.key} key={slot.key} className={r.slot}>{nodes[slot.key]}{slot.key==='pour'&&<div data-home-contents className={r.mobileContents}><HomepageContents label={journeyText(locale,'On this page')} items={marks}/></div>}</div>)}</div>;
+ return <div className={r.reference} data-home-composition="reference">{visible.map(slot=><div id={'home-'+slot.key} data-home-slot={slot.key} key={slot.key} className={r.slot}>{nodes[slot.key]}{slot.key==='pour'&&<HomepageContents label={journeyText(locale,'On this page')} items={visible.map(s=>({id:'home-'+s.key,label:s.heading}))}/>}</div>)}</div>;
 }

@@ -1,3 +1,8 @@
+# Latest owner decision — confirmed live-site design and stop, 24 October 2026
+
+The owner explicitly selected **Current live www.rivyalivingart.com** for the overall homepage design, backgrounds and colours. Preserve the screenshot structures for the footer and Rivya / Creations, and preserve The Signature — From liquid to light. Complete this final local correction, then stop. This overrides conflicting earlier public-homepage design instructions; data/login protection, no products/imports and local-only restrictions remain. See [the scoped correction](FINAL-LIVE-DESIGN.md). The correction is complete; [the final verification](final-live-design-verification.json) records the local evidence. Work is stopped. Do not resume further Phase 4 or later work without a new request.
+
+---
 # Current disposition — Phase 4 in progress, 24 October 2026
 
 The owner authorized starting Phase 4 from `924978a`, locally, with the selected earlier images and no products or archived imports. [The Phase 4 checkpoint](phase4/PHASE-4-CHECKPOINT.md), [verification](phase4/verification.json) and [workflow ledger](phase4/workflow-ledger.csv) record two delivered paths: selected images to private Studio metadata drafts, and newsletter signup to subscriber list/filters/pagination/CSV. No publication or release occurred.

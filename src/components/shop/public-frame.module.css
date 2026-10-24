@@ -121,3 +121,7 @@
 /* Old footer separators follow its content inset, including the desktop ruler. */
 .newsletter,.footerBottom{position:relative;border-top-color:transparent}
 .newsletter::before,.footerBottom::before{content:'';position:absolute;top:-1px;left:var(--legacy-start);right:var(--legacy-pad);height:1px;background:#f4f1e929;pointer-events:none}
+/* Owner-selected footer structure, with the confirmed live site's atmosphere. */
+.footer.footer{background:linear-gradient(180deg,#080a0e 0%,#08283a 80%);border-top:0}
+.footerCta::before{display:none}
+.footerIdentity p,.footer li a{color:#ddd6cb}

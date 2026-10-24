@@ -31,6 +31,7 @@ import s from './shop.module.css';
 import m from './modern-homepage.module.css';
 import {HomepageMotion} from './homepage-motion';
 import {HomepageDocument} from './homepage-document';
+import {localCreationAccess} from '@/lib/owner-creation-model';
 import {ownerCreations} from '@/lib/owner-creations';
 import {OwnerCreationsPreview} from './owner-creations-preview';
 import {publishedPresentation} from '@/lib/presentation-store';
@@ -74,7 +75,10 @@ export async function ShopSite({route}:{route:string}){
   const home=documents.find(d=>d.id==='page:home'&&d.homepage&&d.homeSnapshot);
   const [copy,creationSelection]=await Promise.all([publishedCopy(locale),ownerCreations()]);
   const reference=home?compileHomeReference(await publishedSource(),{},presentation?.layout.editorial):undefined;
-  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={copy.values} locale={locale} presentation={presentation} reference={reference} ownerCreationImages={creationSelection.featured} film={presentation?.layout.film?materialFilm:undefined}/></>:<><Home products={products} articles={(await publishedContent(locale,undefined,'/')).filter(a=>a.kind==='article')}/><OwnerCreationsPreview images={creationSelection.featured}/></>;
+  // The preserved isolated database has no published presentation. Match the
+  // owner's live film locally without publishing or changing its saved data.
+  const film=presentation?.layout.film||(!presentation&&localCreationAccess())?materialFilm:undefined;
+  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={copy.values} locale={locale} presentation={presentation} reference={reference} ownerCreationImages={creationSelection.featured} film={film}/></>:<><Home products={products} articles={(await publishedContent(locale,undefined,'/')).filter(a=>a.kind==='article')}/><OwnerCreationsPreview images={creationSelection.featured}/></>;
  }
  else if(isDiscoveryRoute(route)&&documents.some(d=>d.route===route)){
   const design=isDesignPageRoute(route)?presentation?.layout.pages?.[route]:undefined;

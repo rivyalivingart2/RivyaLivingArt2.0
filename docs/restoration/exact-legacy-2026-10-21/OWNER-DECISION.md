@@ -1,3 +1,8 @@
+# Latest owner decision — confirmed live-site design and stop, 24 October 2026
+
+The owner explicitly selected **Current live www.rivyalivingart.com** for the overall homepage design, backgrounds and colours. Preserve the screenshot structures for the footer and Rivya / Creations, and preserve The Signature — From liquid to light. Complete this final local correction, then stop. This overrides conflicting earlier public-homepage design instructions; data/login protection, no products/imports and local-only restrictions remain. See [the scoped correction](FINAL-LIVE-DESIGN.md). The correction is complete; [the final verification](final-live-design-verification.json) records the local evidence. Work is stopped. Do not resume further Phase 4 or later work without a new request.
+
+---
 # Latest owner amendment — selected images and local website use, 24 October 2026
 
 The owner selected all **169 earlier AI-created images at http://127.0.0.1:4215/** for use in the website, asked for an annotation, and rejected the later source-pixel cutout treatment. Use the earlier exports as selected. Preserve the rejected experiment privately; it is not the selected collection.
