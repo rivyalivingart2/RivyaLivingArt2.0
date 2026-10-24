@@ -1,4 +1,13 @@
-# Latest local continuation — 23 October 2026
+# Latest local continuation — 24 October 2026
+
+Continue the local descendant of `f64294f` on `codex/exact-legacy-restoration`. Start with [the image collection checkpoint](phase3/PHASE-3-IMAGE-COLLECTION.md) and [its verification receipt](phase3/collection-verification.json), then the latest top entries of AGENTS, PROJECT_STATE, PRODUCT and README. The creation folder's 169 stills now have 169 AI-edited candidates, 676 exports and six private download packs; 163 edits are new in this continuation. Review original/edited comparisons at http://127.0.0.1:4215/.
+
+Creation-folder preparation is complete; the separate Photos album's full inventory/extra-original coverage and final fidelity acceptance remain open. Album-wide downloads timed out; one individual original is preserved. Do not repeat failed bulk attempts without a changed condition, infer totals from virtualized thumbnails, or count this as full-library completion. Individual-file downloads are a possible continuation route. Lettering, personal photographs and fine details can differ in generated edits; all candidates remain unassigned and unpublished.
+
+All 355 existing synthetic loopback rows across 13 tables, 301 media/login files and 21 protected hashes remain unchanged. No app or Studio-login code changed from `f64294f`. No new Studio records, products, archived imports, database writes, cloud writes, publication or release occurred. Preserve private originals/masters/prompts, completed snapshots and the populated cluster. Do not reseed or replay the request-table repair. The prior field/media implementation and production candidate retain their own evidence and activation gates. Keep everything local.
+
+---
+# Historical local continuation — 23 October 2026
 
 Continue the local descendant of `5545ffb` on `codex/exact-legacy-restoration`. Start with [Phase 3 implementation](phase3/PHASE-3-IMPLEMENTATION.md), [fresh verification](phase3/implementation-verification.json), and [migration candidate](phase3/PRODUCTION-MIGRATION-CANDIDATE.md), then the latest top entries of AGENTS, PROJECT_STATE, PRODUCT and README. Their explicit scope supersedes historical access/mapping-only entries below.
 

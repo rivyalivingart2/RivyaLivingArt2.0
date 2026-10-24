@@ -1,4 +1,15 @@
-# Current execution — Phase 3 local media implementation, 23 October 2026
+# Current execution — Phase 3 creation image collection, 24 October 2026
+
+Continued from `f64294f` on `codex/exact-legacy-restoration`. Read [the image collection checkpoint](docs/restoration/exact-legacy-2026-10-21/phase3/PHASE-3-IMAGE-COLLECTION.md) and [verification receipt](docs/restoration/exact-legacy-2026-10-21/phase3/collection-verification.json) first. All **169 stills in the supplied creation folder** now have private presentation edits: 163 new candidates plus six retained from the previous checkpoint, with 676 uniform 4:5 JPEG/WebP exports and six local download packs. Originals, masters, exact prompts and lineage remain in ignored private evidence.
+
+The working comparison gallery is **http://127.0.0.1:4215/**; the unchanged app/Studio remains on 4210. Creation-folder preparation is complete; full Phase 3 source coverage and fidelity acceptance are not. The separate Photos album's full count/coverage remains unverified after album-download failures; one original was recovered, and individual downloads remain a possible route. Every AI edit remains unassigned and unapproved for publication because lettering, faces and fine details need comparison with the original. Do not equate the 169 photographs with 169 distinct products.
+
+Fresh read-only preservation checks retain all **355 existing synthetic local rows across 13 tables**, **301 original media/login files** and **21 protected hashes**. Application source/public files/package manifests remain unchanged from `f64294f`. This is local evidence, not a new production audit. No database writes or new Studio records occurred in this continuation.
+
+**Keep everything local. No products, archived catalogue/Sheets imports, seeds, production migrations, CMS publication, cloud writes, push, PR or deployment.** Preserve this branch, populated cluster and all private evidence. Do not replay the request-table repair, reseed, fabricate deleted source identities, or assign edited images to existing records without evidence. Earlier entries below are historical.
+
+---
+# Historical execution — Phase 3 local media implementation, 23 October 2026
 
 Continued from `5545ffb` on `codex/exact-legacy-restoration`. Read [the implementation checkpoint](docs/restoration/exact-legacy-2026-10-21/phase3/PHASE-3-IMPLEMENTATION.md), [verification](docs/restoration/exact-legacy-2026-10-21/phase3/implementation-verification.json) and [production candidate](docs/restoration/exact-legacy-2026-10-21/phase3/PRODUCTION-MIGRATION-CANDIDATE.md). Additive category metadata, mobile image paths/legacy ratios, genuine testimonial media/rating fields, private video/GLB contracts, source crosswalk/conflict storage and versioned editors are implemented locally. This is not complete Phase 4–6 workflow parity or recovery of the deleted source database.
 

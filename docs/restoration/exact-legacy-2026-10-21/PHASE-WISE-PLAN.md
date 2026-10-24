@@ -1,4 +1,9 @@
-# Latest Phase 3 implementation checkpoint — 23 October 2026
+# Latest Phase 3 image checkpoint — 24 October 2026
+
+[Image collection delivery](phase3/PHASE-3-IMAGE-COLLECTION.md) and [verification](phase3/collection-verification.json) supersede the six-image batch status below: all 169 creation-folder stills are prepared as private branded candidates, with 676 Studio-size exports and six download packs. The existing additive field/media implementation remains unchanged. Creation-folder preparation is complete; the separate Photos album's full coverage and documentary fidelity acceptance remain open. Images are unassigned and unpublished. No new database records, products, archived imports or release operations occurred. This does not close full Phase 3 acceptance or later operational workflows.
+
+---
+# Historical Phase 3 implementation checkpoint — 23 October 2026
 
 [Implementation](phase3/PHASE-3-IMPLEMENTATION.md) and [verification](phase3/implementation-verification.json) supersede the mapping-only implementation status below. The additive editorial/media foundation, local replay/recovery, six selected owner-image edits and uniform product-size exports are delivered. The deleted-source record merge, remaining unassigned assets and genuine identity/permission evidence are unavailable or unverified; no values are invented. The 326 mapped additive requirements are not 326 completed fields or workflows. Phases 4–6 retain their operational scope. All work remains local, with zero product/import/publication/release operations.
 
