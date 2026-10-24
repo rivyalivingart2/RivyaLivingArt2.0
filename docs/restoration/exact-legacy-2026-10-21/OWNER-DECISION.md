@@ -1,3 +1,14 @@
+# Latest owner amendment — selected images and local website use, 24 October 2026
+
+The owner selected all **169 earlier AI-created images at http://127.0.0.1:4215/** for use in the website, asked for an annotation, and rejected the later source-pixel cutout treatment. Use the earlier exports as selected. Preserve the rejected experiment privately; it is not the selected collection.
+
+The owner also instructed us to stop Google Photos because it is the same collection as Drive for this project. Record Photos as owner-excluded duplicate coverage; do not claim byte-for-byte verification or resume its downloads as a prerequisite.
+
+Local use is implemented in the homepage portfolio slot, portfolio page and full `/creations` gallery. [The checkpoint](phase3/PHASE-3-OWNER-SELECTION.md) and [receipt](phase3/owner-selection-verification.json) define the evidence. This is an aesthetic selection of AI-enhanced presentations, not proof of exact lettering/faces, completed customer projects or genuine reviews.
+
+The owner's repeated **local-only / no products / no archived catalogue or Sheets imports / preserve existing data and Studio login** restrictions remain active. The selection permits local website display; it does not authorize CMS publication, production database/media reassignment, cloud uploads, push, PR or deployment. Prior field/media implementation and protected preservation results remain recorded separately. The original dated handoff below is historical and grants no new release authority.
+
+---
 # Owner decision — exact OLDWEBSITE restoration, 21 October 2026
 
 ## Latest instruction

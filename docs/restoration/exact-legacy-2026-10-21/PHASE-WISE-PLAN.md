@@ -1,4 +1,13 @@
-# Latest Phase 3 image checkpoint — 24 October 2026
+# Current Phase 3 disposition — owner-selected images, 24 October 2026
+
+[The owner-selection checkpoint](phase3/PHASE-3-OWNER-SELECTION.md) and [fresh receipt](phase3/owner-selection-verification.json) supersede earlier Photos/fidelity work queues. The owner chose all 169 earlier 4215 images for the local website, rejected the newer cutout experiment, and excluded Photos as duplicate coverage. Do not resume excluded work or treat the selection as documentary/customer-evidence certification.
+
+The requested local field/media mapping and additive foundation remain delivered; owner-amended image preparation and local website use are complete. The local homepage/portfolio feature six images and /creations exposes all 169 selected images with filters, pagination, enlargement and downloads. Exact prior export bytes, protected data/media and current Studio login are preserved. There are no products, archived imports, new Studio records, database writes, publication or release in this continuation.
+
+Deleted-source records remain unavailable and genuine associations stay unmapped where evidence is missing. Phase 3's historical production merge/activation is not performed. Phases 4–7 retain their full workflow, scraper, catalogue and integration/release scope; the gallery is not a substitute for those systems.
+
+---
+# Historical Phase 3 image checkpoint — 24 October 2026
 
 [Image collection delivery](phase3/PHASE-3-IMAGE-COLLECTION.md) and [verification](phase3/collection-verification.json) supersede the six-image batch status below: all 169 creation-folder stills are prepared as private branded candidates, with 676 Studio-size exports and six download packs. The existing additive field/media implementation remains unchanged. Creation-folder preparation is complete; the separate Photos album's full coverage and documentary fidelity acceptance remain open. Images are unassigned and unpublished. No new database records, products, archived imports or release operations occurred. This does not close full Phase 3 acceptance or later operational workflows.
 

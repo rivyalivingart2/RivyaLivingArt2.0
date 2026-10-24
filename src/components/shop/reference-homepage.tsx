@@ -21,6 +21,8 @@ import Image from './public-image';
 import {JourneyText} from './journey-language';
 import {ProductCard} from './product-card';
 import s from './shop.module.css';
+import type {OwnerCreation} from '@/lib/owner-creation-model';
+import {OwnerCreationsPreview} from './owner-creations-preview';
 import r from './reference-homepage.module.css';
 
 const focal=(value:string|undefined)=>{const n=parseFloat(value||'');return Number.isFinite(n)?n:50;};
@@ -53,7 +55,7 @@ function CollectionDoors({document:d}:{document:ContentDocument}){
  return <section id={block.id} className={r.band} data-band="collections"><header className={r.heading}><div><p className={r.eyebrow}>{block.eyebrow}</p><h2>{copy.heading}</h2></div><SectionBody section={copy} mediaPaths={snapshot.mediaPaths} unavailable={snapshot.unavailableActionHrefs}/></header><div className={r.doors}>{categories.slice(0,6).map(card)}</div>{categories.length>6&&<details className={r.more}><summary><JourneyText text="Explore the collection"/> ({categories.length})</summary><div className={r.categoryList}>{categories.slice(6).map(category=><Link key={category.name} href={'/search?category='+encodeURIComponent(category.name)}>{category.name} <span>{category.count} <JourneyText text={category.count===1?'piece':'pieces'}/></span></Link>)}</div></details>}</section>;
 }
 /** Eighteen distinct source slots; unavailable records stay absent on public pages. */
-export function ReferenceHomepage({document:d,reference:raw,composition,locale,hero,manifesto,renderExisting}:{document:ContentDocument;reference:HomeReferenceSnapshot;composition:HomeComposition;locale:Locale;hero:ReactNode;manifesto:'strip'|'statement';renderExisting:(type:HomeSectionType)=>ReactNode}){
+export function ReferenceHomepage({document:d,reference:raw,composition,locale,hero,manifesto,renderExisting,ownerCreationImages=[]}:{document:ContentDocument;reference:HomeReferenceSnapshot;composition:HomeComposition;locale:Locale;hero:ReactNode;manifesto:'strip'|'statement';renderExisting:(type:HomeSectionType)=>ReactNode;ownerCreationImages?:OwnerCreation[]}){
  const reference=localizeHomeReference(raw,locale),states=referenceSectionStates(d,reference,composition),home=d.homepage!,snapshot=d.homeSnapshot!;
  const page=(route:string)=>reference.pages.find(p=>p.document.route===route)?.document;
  const selectedIds=home.sections.find(b=>b.type==='selected'&&b.enabled)?.productIds||[];
@@ -79,6 +81,11 @@ export function ReferenceHomepage({document:d,reference:raw,composition,locale,h
   journal:renderExisting('journal'),
   closing:renderExisting('invitation'),
  };
+ if(ownerCreationImages.length){
+  // Use the existing legacy portfolio slot; leave all published project records intact.
+  nodes.work=<><OwnerCreationsPreview images={ownerCreationImages}/>{reference.portfolio?.length?nodes.work:null}</>;
+  const work=states.find(s=>s.key==='work');if(work&&work.enabled){work.visible=true;work.heading='Creations';}
+ }
  const visible=states.filter(s=>s.visible);
  const marks=visible.map(slot=>({id:'home-'+slot.key,label:slot.heading}));
  return <div className={r.reference} data-home-composition="reference"><noscript><style>{'[data-legacy-cure-line]{display:none!important}[data-home-contents]{display:block!important}'}</style></noscript><LegacyCureLine label={journeyText(locale,'On this page')} marks={marks}/>{visible.map(slot=><div id={'home-'+slot.key} data-home-slot={slot.key} key={slot.key} className={r.slot}>{nodes[slot.key]}{slot.key==='pour'&&<div data-home-contents className={r.mobileContents}><HomepageContents label={journeyText(locale,'On this page')} items={marks}/></div>}</div>)}</div>;

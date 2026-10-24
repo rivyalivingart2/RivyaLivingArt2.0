@@ -31,6 +31,8 @@ import s from './shop.module.css';
 import m from './modern-homepage.module.css';
 import {HomepageMotion} from './homepage-motion';
 import {HomepageDocument} from './homepage-document';
+import {ownerCreations} from '@/lib/owner-creations';
+import {OwnerCreationsPreview} from './owner-creations-preview';
 import {publishedPresentation} from '@/lib/presentation-store';
 import {compileHomeReference} from '@/lib/home-reference-dependencies';
 import {isDesignPageRoute} from '@/lib/page-design-model';
@@ -70,9 +72,9 @@ export async function ShopSite({route}:{route:string}){
  const [products,documents,business]=await Promise.all([needsCatalogue?publishedProducts(locale):Promise.resolve([]),route==='/'||isDiscoveryRoute(route)?publishedContent(locale,route):Promise.resolve([]),publishedBusiness()]);let content:React.ReactNode;
  if(route==='/'){
   const home=documents.find(d=>d.id==='page:home'&&d.homepage&&d.homeSnapshot);
-  const copy=await publishedCopy(locale);
+  const [copy,creationSelection]=await Promise.all([publishedCopy(locale),ownerCreations()]);
   const reference=home?compileHomeReference(await publishedSource(),{},presentation?.layout.editorial):undefined;
-  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={copy.values} locale={locale} presentation={presentation} reference={reference} film={presentation?.layout.film?materialFilm:undefined}/></>:<Home products={products} articles={(await publishedContent(locale,undefined,'/')).filter(a=>a.kind==='article')}/>;
+  content=home?<><WebsiteStructuredData/><HomepageDocument document={home} revision={home.publishedRevision!} copy={copy.values} locale={locale} presentation={presentation} reference={reference} ownerCreationImages={creationSelection.featured} film={presentation?.layout.film?materialFilm:undefined}/></>:<><Home products={products} articles={(await publishedContent(locale,undefined,'/')).filter(a=>a.kind==='article')}/><OwnerCreationsPreview images={creationSelection.featured}/></>;
  }
  else if(isDiscoveryRoute(route)&&documents.some(d=>d.route===route)){
   const design=isDesignPageRoute(route)?presentation?.layout.pages?.[route]:undefined;

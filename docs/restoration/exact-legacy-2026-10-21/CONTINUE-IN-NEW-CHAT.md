@@ -1,4 +1,15 @@
-# Latest local continuation — 24 October 2026
+# Latest local continuation — owner-selected collection, 24 October 2026
+
+Continue the local descendant of `c88071a` on `codex/exact-legacy-restoration`. Read [Phase 3 owner selection](phase3/PHASE-3-OWNER-SELECTION.md), [verification](phase3/owner-selection-verification.json), the latest owner decision and top project-state entries.
+
+The earlier **169 images from the 4215 review** are the selected set. The owner rejected the newer cutout/compositing experiment and excluded Google Photos as duplicate coverage. Do not resume either task or regenerate the selected images. The full collection is now on http://127.0.0.1:4210/creations, with six featured in the homepage's existing portfolio slot and on /portfolio. The original review carries a selection annotation. All exports remain AI-enhanced presentations with no new product/customer/review association.
+
+Final built local candidate `gbV5ib2nPHG2Ja9ZxXMvv` passes 393 application tests and exact hashes for all 507 website variants. Existing 355 local rows in 13 tables, 301 original media/login files and 21 protected hashes remain identical. The requested local image task is complete; the deleted source database and unknown genuine associations are not recovered. Full operational restoration and integration remain in later phases.
+
+Keep the preserved ignored `phase3-completion` and `phase3-website-selection` directories: the local website reads the exact private selection only in its guarded isolated environment. No private images/evidence belong in GitHub. Preserve the populated cluster and original media; do not reseed or replay the request repair. No products, archived imports, publication, push, PR, deployment or production writes are authorized. Earlier entries retain historical evidence only.
+
+---
+# Historical local continuation — 24 October 2026
 
 Continue the local descendant of `f64294f` on `codex/exact-legacy-restoration`. Start with [the image collection checkpoint](phase3/PHASE-3-IMAGE-COLLECTION.md) and [its verification receipt](phase3/collection-verification.json), then the latest top entries of AGENTS, PROJECT_STATE, PRODUCT and README. The creation folder's 169 stills now have 169 AI-edited candidates, 676 exports and six private download packs; 163 edits are new in this continuation. Review original/edited comparisons at http://127.0.0.1:4215/.
 

@@ -1,4 +1,17 @@
-# Current execution — Phase 3 creation image collection, 24 October 2026
+# Current execution — owner-selected website images, 24 October 2026
+
+Continued from `c88071a` on `codex/exact-legacy-restoration`. Read [the owner-selection checkpoint](docs/restoration/exact-legacy-2026-10-21/phase3/PHASE-3-OWNER-SELECTION.md) and [verification](docs/restoration/exact-legacy-2026-10-21/phase3/owner-selection-verification.json) first. The owner chose the **earlier 169-image collection at 4215** for the local website and rejected the newer cutout experiment. Google Photos is **owner-excluded as duplicate coverage**; do not resume its downloads or claim independently verified library equality.
+
+All 169 selected images are now usable at **http://127.0.0.1:4210/creations**, with six featured on the homepage's legacy portfolio slot and the portfolio page. Search, creation-type filters, pagination, enlargement and downloads work. The earlier 4215 review includes the owner's selection annotation. Exact earlier export bytes and their 4:5 sizes are retained; AI-enhanced presentation labels remain truthful.
+
+The requested local field/media mapping, additive foundation and owner-amended image preparation/selection are delivered. The lost source database, unknown genuine record associations and full Phase 4–7 workflows are not completed or invented. This does not certify documentary fidelity of AI edits or authorize publication.
+
+Final local build `gbV5ib2nPHG2Ja9ZxXMvv`: 393 application tests pass; 507 served image variants match; 676 exports and six packs verify. All **355 existing local rows / 13 tables**, **301 original media/login files** and **21 protected hashes** remain unchanged. No products, archived imports, database writes or new Studio records occurred.
+
+**Keep everything local: no push, PR, deployment, CMS publication, cloud writes or production migration.** Preserve current data/login, the populated cluster, originals and private evidence. Do not reseed, replay the request-table repair, resume the rejected cutouts or regenerate the selected set. Earlier entries below are historical.
+
+---
+# Historical execution — Phase 3 creation image collection, 24 October 2026
 
 Continued from `f64294f` on `codex/exact-legacy-restoration`. Read [the image collection checkpoint](docs/restoration/exact-legacy-2026-10-21/phase3/PHASE-3-IMAGE-COLLECTION.md) and [verification receipt](docs/restoration/exact-legacy-2026-10-21/phase3/collection-verification.json) first. All **169 stills in the supplied creation folder** now have private presentation edits: 163 new candidates plus six retained from the previous checkpoint, with 676 uniform 4:5 JPEG/WebP exports and six local download packs. Originals, masters, exact prompts and lineage remain in ignored private evidence.
 

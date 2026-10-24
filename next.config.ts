@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Private local review assets and database evidence must never enter a deployment trace.
+  outputFileTracingExcludes: {'/*':['./test-results/**/*']},
   // Keep Studio-only styles out of public pages while retaining shared CSS chunks.
   experimental: { cssChunking: 'graph' },
   images: {

@@ -14,7 +14,7 @@ function render() {
   for (const r of rows.slice(page * pageSize, (page + 1) * pageSize)) {
     const card = node('article', '', 'card'); card.append(node('h2', 'Image ' + String(r.index).padStart(3,'0') + ' · ' + r.category));
     const img = picture(r.edited, 'Edited '+r.category+' presentation, image '+r.index); img.className = 'product'; card.append(img);
-    card.append(node('p', '1600 × 2000 · 4:5 · Private candidate', 'meta'));
+    card.append(node('p', '1600 × 2000 · 4:5 · Owner-selected for local website', 'meta'));
     const tags = node('div'); for (const f of r.flags) tags.append(node('span', labels[f] || f, 'badge')); card.append(tags);
     const detail = node('details'), summary = node('summary', 'Compare with source photograph'), pair = node('div', '', 'pair');
     for (const [path, caption] of [[r.source,'Source photograph · display copy'],[r.edited,'AI-edited presentation']]) { const figure=node('figure'); figure.append(picture(path,caption),node('figcaption',caption)); pair.append(figure); }

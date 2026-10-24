@@ -1,5 +1,7 @@
 # Phase 3 owner image collection — local continuation from f64294f
 
+> Superseded scope note, 24 October 2026: the owner has selected this earlier 169-image collection for local website use, rejected the subsequent cutout experiment and excluded Google Photos as duplicate coverage. See [the owner-selection checkpoint](PHASE-3-OWNER-SELECTION.md) and [fresh verification](owner-selection-verification.json). The historical candidates and production-publication restriction below retain their provenance; Photos downloads are no longer a pending task.
+
 Date: 24 October 2026. Branch: `codex/exact-legacy-restoration`. This report supplements [the field/media implementation](PHASE-3-IMPLEMENTATION.md) and [mapping](PHASE-3-MAPPING.md). The latest owner restriction remains authoritative: preserve existing data and Studio login, add no products, import no archived catalogue/Sheets lists, and keep everything local.
 
 ## Delivered scope
