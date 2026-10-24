@@ -2,6 +2,8 @@
 
 The owner asked that Google, GitHub and Vercel work live in their respective services. This register separates version-controlled source from installed resources. Keep it current during the Cloud continuation; a file in GitHub is not evidence that its Google service is installed.
 
+**Cloud continuation:** PR #66 is merged at `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30`. New setup/management-verification source is local on `codex/google-cloud-acceptance`; it has not been pushed or released. The owner has authorized isolated Google setup and supplied the owning account, recorded in the private registry. No authenticated Google connection, installed sandbox or new Vercel deployment was established by this continuation. [The cloud setup guide](CLOUD-GOOGLE-SETUP.md) records prerequisites and commands. The table below describes retained responsibilities and the prior installation baseline.
+
 | Service | Responsibility and destination | Current checkpoint |
 |---|---|---|
 | Google Sheets | Canonical structured records, same-workbook ledger/audit/history, resource registrations, job leases/checkpoints and future catalogue input/output metadata. Four permission-separated content/operations/security/system groups. | Schema and mappings complete in source; isolated workbooks and real provider acceptance pending. Existing catalogue lists are excluded. |

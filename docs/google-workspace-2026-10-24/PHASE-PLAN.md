@@ -1,5 +1,7 @@
 # Sheets/Drive transition and Studio completion plan
 
+**Cloud continuation, 24 October 2026:** PR #66 main is verified at `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30`; new branch `codex/google-cloud-acceptance`. Portable setup and Google structural/read-only management tooling are implemented; real Google installation and Phase 2 acceptance remain blocked on authenticated account access and actual resource configuration. See [cloud setup](CLOUD-GOOGLE-SETUP.md) and [fresh evidence](cloud-verification.json). Phase 3–11 dependencies below remain in force; no production provider switch or new release is implied.
+
 Date: 24 October 2026. Baseline: `e9d3228`; branch: `codex/sheets-drive-foundation`. Read [AUDIT.md](AUDIT.md) before execution. This plan implements the latest owner brief and retains completed work instead of resetting earlier restoration phases.
 
 ## Scope and execution rules

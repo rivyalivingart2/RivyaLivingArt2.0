@@ -1,3 +1,13 @@
+# Current cloud checkpoint — isolated Google setup prepared; real access pending
+
+Continued from verified GitHub main / PR #66 commit `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30` on `codex/google-cloud-acceptance`. The owner now authorizes continuing the isolated Google setup and acceptance, then the remaining committed phases. The selected account is recorded only in the ignored private registry. Read [the cloud setup guide](docs/google-workspace-2026-10-24/CLOUD-GOOGLE-SETUP.md) and [current verification receipt](docs/google-workspace-2026-10-24/cloud-verification.json).
+
+The portable Node 22 environment is prepared. New setup tools generate structural payloads and inspect actual Google management state without writes; Phase 2 writer/Drive/publication/jobs foundations are reused. **No Google resources, script deployment, business rows, migration, CMS publication, cutover or new release have been performed in this continuation.** Actual account access, resource registrations and real-provider acceptance remain pending. A saved environment draft and passing local tests do not establish Google installation.
+
+Preserve public design, Studio login/security, existing data/IDs/URLs/relationships and media. No products, archived imports, reseeding, request-table repair, deleted-database recovery, Google Photos or image regeneration. Keep the current provider authoritative. Continue the existing phase plan after its real acceptance/reconciliation prerequisites; production cutover, destructive actions, messages, paid services and later release retain their separate boundaries. Earlier checkpoints below are historical.
+
+---
+
 # Current checkpoint — Google foundations complete locally; PR publication authorized
 
 Continued from `43c0f14` on `codex/sheets-drive-foundation`. Read [the Phase 2 checkpoint](docs/google-workspace-2026-10-24/PHASE-2-CHECKPOINT.md), [final verification](docs/google-workspace-2026-10-24/phase2-verification.json), [complete owner brief](docs/google-workspace-2026-10-24/OWNER-BRIEF.md), and [Codex Cloud continuation prompt](docs/google-workspace-2026-10-24/CONTINUE-IN-CODEX-CLOUD.md) first. The audit/plan and local controlled writer, Drive documents, coherent publication contract and durable-job foundation are implemented. Real Google acceptance, migration and cutover remain separate pending gates.
