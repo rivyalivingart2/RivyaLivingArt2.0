@@ -14,7 +14,7 @@ Fresh `npm run check` completed successfully on the retained application/test so
 
 Fresh runtime checks made zero writes: Google Drive account lookup returned **HTTP 401** for the retained short-lived OAuth binding; the existing HMAC-signed System read succeeded. The token must be refreshed privately before dependent Google management operations. The latest successful complete Google installation/acceptance audit remains the dated sandbox receipt; it is not relabelled as a new audit.
 
-Git HTTPS access works. The GitHub PR API host was explicitly denied by the active network policy. A restricted draft addition for only `api.github.com` was saved, preserving six Google domains and the package-manager preset. A saved draft does not prove active access or GitHub API authorization. No credential value was requested in chat.
+Git HTTPS and API access work through the existing authenticated `gh` CLI. Direct HTTP was denied, but the supported CLI route succeeded; the unnecessary proposed `api.github.com` draft exception was removed, retaining the original six Google domains and package-manager preset. Repository metadata, open-PR listing, branch-rules and commit checks were read. Branch-protection details returned integration HTTP 403, so absence of protection is not inferred. No credential value was requested in chat.
 
 ## Preservation and limits
 
@@ -30,4 +30,4 @@ Publish this branch with a detailed PR covering exact changes, validation, prese
 
 Recovery is a reviewed source revert through a PR, while preserving private Google resources, the registry and mutation journals. Never reset canonical rows/control, delete artifacts or create duplicate deployments to undo this source change. Source revert does not revoke or erase the independently installed sandbox.
 
-PR URL, exact head/checks and any merge/deployment receipts remain pending actual GitHub API access and actions; no successful publication or release is asserted here.
+The branch was published; the observed Vercel branch check passed. PR URL, exact final head/checks and any merge/production-deployment receipts remain pending their actual actions; no merge or production release is asserted here.

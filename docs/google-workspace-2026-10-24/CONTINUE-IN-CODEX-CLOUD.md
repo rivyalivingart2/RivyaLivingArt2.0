@@ -1,6 +1,6 @@
 # Current phase PR continuation — 25 October 2026
 
-The owner now explicitly authorizes continuing on `codex/google-cloud-acceptance` and delivering phase work through detailed PRs into main. This supersedes the earlier no-push/no-PR hold below. Preserve the installed Google resources and completed checkpoints. Read [PHASE-2-PR.md](PHASE-2-PR.md) for current access, validation and release boundaries. Do not infer production migration/cutover, CMS publication or later website release authority; inspect the enabled Vercel Git deployment effects for each concrete PR. Keep this environment unpublished, preserve data/design/login, and continue independent work while the expired Google management token or PR API access is unavailable.
+The owner now explicitly authorizes continuing on `codex/google-cloud-acceptance` and delivering phase work through detailed PRs into main. This supersedes the earlier no-push/no-PR hold below. Preserve the installed Google resources and completed checkpoints. Read [PHASE-2-PR.md](PHASE-2-PR.md) for current access, validation and release boundaries. Do not infer production migration/cutover, CMS publication or later website release authority; inspect the enabled Vercel Git deployment effects for each concrete PR. Keep this environment unpublished, preserve data/design/login, and continue independent work while the expired Google management token blocks dependent operations. GitHub API access works through the supported authenticated `gh` CLI.
 
 ---
 
