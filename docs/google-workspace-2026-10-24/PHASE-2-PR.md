@@ -14,7 +14,7 @@ Fresh `npm run check` completed successfully on the retained application/test so
 
 Fresh runtime checks made zero writes: Google Drive account lookup returned **HTTP 401** for the retained short-lived OAuth binding; the existing HMAC-signed System read succeeded. The token must be refreshed privately before dependent Google management operations. The latest successful complete Google installation/acceptance audit remains the dated sandbox receipt; it is not relabelled as a new audit.
 
-Git HTTPS and API access work through the existing authenticated `gh` CLI. Direct HTTP was denied, but the supported CLI route succeeded; the unnecessary proposed `api.github.com` draft exception was removed, retaining the original six Google domains and package-manager preset. Repository metadata, open-PR listing, branch-rules and commit checks were read. Branch-protection details returned integration HTTP 403, so absence of protection is not inferred. No credential value was requested in chat.
+Git HTTPS and API access work through the existing authenticated `gh` CLI. API requests returned Forbidden with only the original six Google domains allowed; restoring the single `api.github.com` exception restored authenticated reads. The draft retains those six Google domains and the package-manager preset, with all-public Internet off and no environment publication. Repository metadata, open-PR listing, branch-rules and commit checks were read. Branch-protection details returned integration HTTP 403, so absence of protection is not inferred. No credential value was requested in chat.
 
 ## Preservation and limits
 
