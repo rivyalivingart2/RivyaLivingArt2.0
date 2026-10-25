@@ -1,4 +1,14 @@
-# Current sandbox checkpoint — real Google foundations verified; production gates remain
+# Current owner direction — continue on this branch and deliver phase PRs
+
+25 October 2026. The owner explicitly requested continuing on `codex/google-cloud-acceptance` and delivering each phase through a detailed PR into GitHub main. This supersedes the earlier Git local-only hold; retain this branch and both existing checkpoints. Verify actual required checks/reviews and merge through PRs, never by direct-main push or protection bypass. Production migration/cutover, CMS publication, destructive actions and later production release retain their separate concrete authorization boundaries; Vercel Git deployment is enabled, so inspect its release effects before merging.
+
+Actual main remains `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30`. The private Google sandbox/core acceptance is retained at local `4122e89`; do not reprovision or reset it. On resumption the management token returned HTTP 401 while the existing HMAC signed System read succeeded. Refresh that token only in secure settings; no secrets in chat. GitHub PR API access needs the narrowly added `api.github.com` destination; keep the six Google domains/package-manager preset and environment unpublished. See [the phase PR checkpoint](docs/google-workspace-2026-10-24/PHASE-2-PR.md).
+
+Preserve the approved public design, current Studio login/security, provider authority, all existing data/media/IDs/URLs/prices/relationships and selected images. No products, archived imports, reseeding, old-database recovery, request repair replay, Photos revisit or regeneration. Continue independent migration preparation without reconstructing absent business data. Source implementation, local/real-Google verification, migration, publication, cutover and release remain separate statuses. Earlier entries are historical.
+
+---
+
+# Historical sandbox checkpoint — real Google foundations verified; production gates remain
 
 The private Google sandbox is installed: owner-only Drive folders, four protected 100×12 workbooks, and one owner-executed version-1 HMAC writer deployment. Real signed save/reload, replay/conflict/concurrency, client acknowledgement-loss recovery, reserved-ID Drive JSON, fresh-process job resume/cancellation, private publication-pointer and guarded formula-rejection/restoration checks passed. Read [the current checkpoint](docs/google-workspace-2026-10-24/SANDBOX-CHECKPOINT.md) and [sanitized evidence](docs/google-workspace-2026-10-24/sandbox-verification.json) for the exact coverage and remaining gaps.
 
