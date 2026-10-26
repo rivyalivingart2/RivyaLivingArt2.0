@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "kind": "gemini-antigravity-continuation-checkpoint",
+  "date": "2026-10-26",
+  "timeZone": "Asia/Kolkata",
+  "source": {
+    "repository": "https://github.com/rivyalivingart2/RivyaLivingArt2.0",
+    "branch": "codex/google-cloud-acceptance",
+    "baseHead": "ab717a61c3a5133ce32a88b2b36dfe29d9a7c5dd",
+    "observedMain": "019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30",
+    "pullRequest": 67,
+    "newCandidateCommit": "containing commit; exact code hashes below",
+    "codeSha256": {
+      "tools/google-workspace/audit-existing.ts": "4e2aa1935240491ad011a7d5bd331e9d1437f930e7b9b8822db2c361ab36d4fd",
+      "tools/google-workspace/verify-isolated.ts": "de54b1693b99a40eafb081750e6789cccb895c2efe3b4bf4bf71f11fa8fa2ec7",
+      "tests/google-workspace-existing-audit.test.mjs": "297e35cd8cb62a5b715e9d27fb7549293139b3b0ffe03e4b86ab750e051b677b"
+    }
+  },
+  "localVerification": {
+    "runtime": {
+      "node": "22.23.4",
+      "npm": "10.9.2",
+      "nodeArchiveOfficialSha256Verified": true,
+      "lockfileInstall": "passed"
+    },
+    "fullCheck": {
+      "command": "npm run check",
+      "exitCode": 0,
+      "lintErrors": 0,
+      "lintWarnings": 62,
+      "typecheck": "passed",
+      "applicationTests": {
+        "passed": 682,
+        "failed": 0,
+        "skipped": 0
+      },
+      "preflightTests": {
+        "passed": 12,
+        "failed": 0,
+        "skipped": 0
+      },
+      "productionBuild": "passed",
+      "builtHttpTests": {
+        "passed": 409,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "targetedAuditRegression": {
+      "passed": 99,
+      "newCases": 41,
+      "failed": 0,
+      "skipped": 0,
+      "includedInApplicationTotal": true
+    },
+    "independentCodeReview": "no-material-issues",
+    "missingPrivateConfigurationCli": {
+      "exitCode": 1,
+      "status": "blocked",
+      "googleCalls": 0,
+      "googleWrites": 0
+    },
+    "environmentNote": "Checks ran with approved normal child-process I/O; default sandbox suppressed child stdout. No source workaround."
+  },
+  "freshGoogleReadback": {
+    "schemaVersion": 1,
+    "observedAt": "2026-10-26T04:50:03.655Z",
+    "verifiedAt": "2026-10-26T04:51:20.608Z",
+    "scope": "current-connector-readback-only",
+    "googleWrites": 0,
+    "identityMatchesIntendedOwner": true,
+    "ownerOnlyResources": 16,
+    "folders": 9,
+    "workbooks": 4,
+    "gridTabs": 20,
+    "gridSize": [
+      100,
+      12
+    ],
+    "fullGridCellsCovered": 24000,
+    "immutableJsonArtifactMetadataObserved": 3,
+    "canonical": {
+      "content": {
+        "canonicalIntegrity": "passed",
+        "counts": {
+          "records": 1,
+          "ledger": 3,
+          "audit": 3,
+          "history": 3
+        },
+        "historicalCountsMatch": true,
+        "controlState": "committed",
+        "controlMatchesLastReceipt": true,
+        "revisions": [
+          3
+        ],
+        "formulasAccepted": 0
+      },
+      "operations": {
+        "canonicalIntegrity": "passed",
+        "counts": {
+          "records": 2,
+          "ledger": 10,
+          "audit": 10,
+          "history": 10
+        },
+        "historicalCountsMatch": true,
+        "controlState": "committed",
+        "controlMatchesLastReceipt": true,
+        "revisions": [
+          7,
+          3
+        ],
+        "formulasAccepted": 0,
+        "jobStates": [
+          "cancelled",
+          "succeeded"
+        ]
+      },
+      "security": {
+        "canonicalIntegrity": "passed",
+        "counts": {
+          "records": 1,
+          "ledger": 1,
+          "audit": 1,
+          "history": 1
+        },
+        "historicalCountsMatch": true,
+        "controlState": "committed",
+        "controlMatchesLastReceipt": true,
+        "revisions": [
+          1
+        ],
+        "formulasAccepted": 0
+      },
+      "system": {
+        "canonicalIntegrity": "passed",
+        "counts": {
+          "records": 0,
+          "ledger": 0,
+          "audit": 0,
+          "history": 0
+        },
+        "historicalCountsMatch": true,
+        "controlState": "ready",
+        "controlMatchesLastReceipt": null,
+        "revisions": [],
+        "formulasAccepted": 0
+      }
+    },
+    "protectedRangesVerified": false,
+    "scriptDeploymentVerified": false,
+    "runtimeCredentialConfigured": false,
+    "signedGatewayRerun": false,
+    "artifactExactBytesVerified": false,
+    "historicalFullStateHashComparison": false,
+    "limitations": [
+      "Connected Drive/Sheets readback is not runtime credential configuration.",
+      "Protected ranges and Apps Script deployment/source unavailable through current connector.",
+      "No saved prior private full-state hashes or signed verification runners available in fresh checkout.",
+      "Sequential bounded reads; no concurrent snapshot isolation claim.",
+      "Existing eight acceptance and production gap groups remain open."
+    ]
+  },
+  "historicalGoogleEvidence": {
+    "receipt": "sandbox-verification.json",
+    "fullAuditDate": "2026-10-24",
+    "initialManagementChecks": 36,
+    "finalAuditChecks": 36,
+    "scriptVersion": 1,
+    "freshlyRerunHere": false,
+    "priorRuntime401Date": "2026-10-25",
+    "currentConnectorAccountRead": "passed",
+    "runtimeCredentialAndConnectorAreSeparate": true
+  },
+  "remainingDependencies": [
+    "Existing private registry with script/deployment identifiers",
+    "Reviewed private count/control baseline and optional independently retained full-state hashes",
+    "Secure direct runtime OAuth binding for the intended owner",
+    "Retained signing-key file and operation journals for signed acceptance only",
+    "Fresh owner-controlled source export/access for real migration",
+    "Concrete later production-release authorization before PR merge"
+  ],
+  "carriedAcceptanceGroups": [
+    "Authenticated ordinary-editor protected-range denial; no additional principal is shared",
+    "Concurrent owner or unrelated API edits during writer commit",
+    "Actual mid-script interruption after inflight marker and quarantined operator recovery",
+    "Independent expired-lease race under actual Google latency",
+    "Actual quota/rate-limit exhaustion and production latency/capacity SLO",
+    "Public asset and production-scale bundle verification",
+    "Production secret management, source export, migration rehearsal and reconciliation",
+    "Application integration, remaining phases3-11, separately approved cutover and later release"
+  ],
+  "preservation": {
+    "googleWrites": 0,
+    "productsAdded": 0,
+    "archivedImports": 0,
+    "businessRecordsMigrated": 0,
+    "publicDesignChanged": false,
+    "studioLoginOrSecurityChanged": false,
+    "activeProviderChanged": false,
+    "originalOrApprovedMediaChanged": false,
+    "packageOrLockfileChanged": false,
+    "vercelConfigurationChanged": false,
+    "cmsPublication": false,
+    "providerCutover": false,
+    "productionRelease": false
+  },
+  "releaseObservationBeforePublication": {
+    "prOpen": true,
+    "head": "ab717a61c3a5133ce32a88b2b36dfe29d9a7c5dd",
+    "vercelStatus": "success",
+    "previewCommentsCheck": "success",
+    "reviewsObserved": 0,
+    "rulesetsReturned": 0,
+    "branchProtectionDetail": "HTTP403-not-visible",
+    "previewTarget": "preview",
+    "previewReady": true,
+    "productionSourceBranch": "main",
+    "productionSourceCommit": "019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30",
+    "productionReady": true,
+    "gitDeploymentsEnabled": true,
+    "newHeadChecks": "must-read-after-publication",
+    "mergePerformed": false
+  },
+  "statusByBoundary": {
+    "implemented": true,
+    "verifiedLocally": true,
+    "verifiedOnRealGoogle": "fresh connector metadata/canonical readback; historical installed writer/core acceptance; full fresh runtime audit blocked",
+    "migrated": false,
+    "publishedCms": false,
+    "cutOver": false,
+    "releasedProduction": false,
+    "remainingPhasesComplete": false
+  },
+  "privateEvidenceDirectory": "test-results/google-workspace-2026-10-26-readback/",
+  "privateIdentifiersIncluded": false,
+  "secretValuesIncluded": false
+}

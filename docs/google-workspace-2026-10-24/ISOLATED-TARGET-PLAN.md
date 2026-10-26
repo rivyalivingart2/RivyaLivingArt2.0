@@ -1,4 +1,6 @@
-# Isolated Google acceptance target — prepared, not created
+# Isolated Google acceptance target and original installation plan
+
+**Installed sandbox update:** the owner-approved private targets and one version-1 signed writer endpoint now exist. Read [the current checkpoint](SANDBOX-CHECKPOINT.md) and [sanitized evidence](sandbox-verification.json) before the original plan below. Reuse the private registry; do not create duplicate resources or reset initialized tabs. The acceptance matrix remains the governing checklist; completed and carried scenarios are reported separately. No production migration, CMS publication, cutover, website release or environment publication occurred.
 
 This is the exact next external setup for owner review and account configuration. The owner authorized the current GitHub PR/main release and requested service-specific placement; [the placement register](SERVICE-PLACEMENT.md) distinguishes each destination from what is installed. No target IDs, app credentials, workbooks, folders, sharing grants, Apps Script deployment, triggers or Google writes have been created by Phase 2. Read-only connector access does not supply runtime application credentials. Do not use the existing catalogue/Sheets lists as targets or import them.
 

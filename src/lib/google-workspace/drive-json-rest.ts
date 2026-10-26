@@ -43,7 +43,9 @@ export function createGoogleDriveJsonIO(config:DriveRestConfig,dependencies:Driv
  }
  async function request(url:URL,signal:AbortSignal,limit:number,init:{method:'GET'|'POST';body?:Uint8Array;contentType?:string},notFound=false):Promise<Uint8Array|null>{
   for(let attempt=0;attempt<3;attempt++){
-   const accessToken=await abortable(()=>token(signal),signal);if(typeof accessToken!=='string'||accessToken.length>8192||!/^[-A-Za-z0-9._~+/]+={0,2}$/.test(accessToken))return fail('PROVIDER_UNAVAILABLE');
+   // Proxy credentials are opaque header values; their placeholder syntax need
+   // not match an OAuth token alphabet. Spaces/control/non-ASCII remain invalid.
+   const accessToken=await abortable(()=>token(signal),signal);if(typeof accessToken!=='string'||accessToken.length>8192||!/^[\x21-\x7e]+$/.test(accessToken))return fail('PROVIDER_UNAVAILABLE');
    const response=await abortable(()=>fetchResponse(url.href,{method:init.method,headers:{Authorization:'Bearer '+accessToken,Accept:'application/json',...(init.contentType?{'Content-Type':init.contentType}:{})},...(init.body?{body:Buffer.from(init.body)}:{}),redirect:'manual',credentials:'omit',cache:'no-store',referrerPolicy:'no-referrer',signal}),signal);
    if(response.redirected||response.status>=300&&response.status<400||response.url&&response.url!==url.href){close(response);return fail('PROVIDER_UNAVAILABLE');}
    if(notFound&&response.status===404){close(response);return null;}

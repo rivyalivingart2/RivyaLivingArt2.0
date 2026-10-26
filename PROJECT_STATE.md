@@ -1,3 +1,41 @@
+# Current continuation — Gemini/Antigravity handoff and existing-sandbox audit
+
+26 October 2026. Continue **`codex/google-cloud-acceptance`** and existing **PR #67**; main remains the observed PR #66 checkpoint `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30`. The same-branch owner instruction supersedes the older generic new-branch prompt. Read [the current handoff checkpoint](docs/google-workspace-2026-10-24/ANTIGRAVITY-HANDOFF-CHECKPOINT.md), [verification](docs/google-workspace-2026-10-24/antigravity-handoff-verification.json), [complete Gemini/Antigravity prompt](docs/google-workspace-2026-10-24/CONTINUE-IN-GEMINI-ANTIGRAVITY.md) and [local/offline runbook](docs/google-workspace-2026-10-24/LOCAL-OFFLINE-RUNBOOK.md) first.
+
+The private sandbox already exists. Fresh owner-account Drive/Sheets reads verify sixteen owner-only resources, twenty 100×12 grids and coherent retained records/history/control, with zero writes. The portable `audit-existing.ts` verifies a populated registered sandbox without resets. Full local check passes 682 application, 12 preflight and 409 HTTP tests, typecheck/build and lint (zero errors; 62 existing warnings). Fresh connector access is separate from the historical expired runtime token. This checkout lacks the original private registry/baseline/runtime credentials and signed replay inputs; full new Apps Script/runtime acceptance remains blocked, and all eight carried groups remain explicit.
+
+Preserve approved public design, Studio login/security, current provider authority, all data/media/IDs/URLs/prices/relationships and the 169-image collection. No products or archived imports, reseeding, deleted-database recovery, request repair replay, Photos revisit or regeneration. Source/phase PR publication is authorized. Main is connected to Vercel production, so merging a concrete PR retains the user's separate later-release authorization boundary; do not bypass protection or change deployment settings. No business migration, CMS publication, cutover or later production release occurred. Earlier entries below are historical.
+
+---
+
+# Current owner direction — continue on this branch and deliver phase PRs
+
+25 October 2026. The owner explicitly requested continuing on `codex/google-cloud-acceptance` and delivering each phase through a detailed PR into GitHub main. This supersedes the earlier Git local-only hold; retain this branch and both existing checkpoints. Verify actual required checks/reviews and merge through PRs, never by direct-main push or protection bypass. Production migration/cutover, CMS publication, destructive actions and later production release retain their separate concrete authorization boundaries; Vercel Git deployment is enabled, so inspect its release effects before merging.
+
+Actual main remains `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30`. The private Google sandbox/core acceptance is retained at local `4122e89`; do not reprovision or reset it. On resumption the management token returned HTTP 401 while the existing HMAC signed System read succeeded. Refresh that token only in secure settings; no secrets in chat. GitHub PR API access works through the existing authenticated `gh` CLI with `api.github.com` added to the restricted allowlist for the authorized PR workflow. Removing that exception caused actual API requests to return Forbidden; restoring it restored access. Retain the six Google domains and package-manager preset, keep all-public Internet off, and keep the environment unpublished. See [the phase PR checkpoint](docs/google-workspace-2026-10-24/PHASE-2-PR.md).
+
+Preserve the approved public design, current Studio login/security, provider authority, all existing data/media/IDs/URLs/prices/relationships and selected images. No products, archived imports, reseeding, old-database recovery, request repair replay, Photos revisit or regeneration. Continue independent migration preparation without reconstructing absent business data. Source implementation, local/real-Google verification, migration, publication, cutover and release remain separate statuses. Earlier entries are historical.
+
+---
+
+# Historical sandbox checkpoint — real Google foundations verified; production gates remain
+
+The private Google sandbox is installed: owner-only Drive folders, four protected 100×12 workbooks, and one owner-executed version-1 HMAC writer deployment. Real signed save/reload, replay/conflict/concurrency, client acknowledgement-loss recovery, reserved-ID Drive JSON, fresh-process job resume/cancellation, private publication-pointer and guarded formula-rejection/restoration checks passed. Read [the current checkpoint](docs/google-workspace-2026-10-24/SANDBOX-CHECKPOINT.md) and [sanitized evidence](docs/google-workspace-2026-10-24/sandbox-verification.json) for the exact coverage and remaining gaps.
+
+Reuse the observed private registry, deployment and checkpoint journals. Browser consent and matching private key configuration are complete; do not create a duplicate deployment or reset populated/control cells. Keep the Codex environment unpublished: no push, merge, website deployment, CMS publication or production cutover. Preserve public design, Studio login, current provider and all existing data/media; no products or archived imports. The sandbox retains only four synthetic non-product records and three private JSON artifacts. Business migration, phases 3–11 completion and production readiness are not claimed. Earlier entries are historical.
+
+---
+
+# Historical cloud checkpoint — isolated Google setup prepared; real access pending
+
+Continued from verified GitHub main / PR #66 commit `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30` on `codex/google-cloud-acceptance`. The owner now authorizes continuing the isolated Google setup and acceptance, then the remaining committed phases. The selected account is recorded only in the ignored private registry. Read [the cloud setup guide](docs/google-workspace-2026-10-24/CLOUD-GOOGLE-SETUP.md) and [current verification receipt](docs/google-workspace-2026-10-24/cloud-verification.json).
+
+The portable Node 22 environment is prepared. New setup tools generate structural payloads and inspect actual Google management state without writes; Phase 2 writer/Drive/publication/jobs foundations are reused. **No Google resources, script deployment, business rows, migration, CMS publication, cutover or new release have been performed in this continuation.** Actual account access, resource registrations and real-provider acceptance remain pending. A saved environment draft and passing local tests do not establish Google installation.
+
+Preserve public design, Studio login/security, existing data/IDs/URLs/relationships and media. No products, archived imports, reseeding, request-table repair, deleted-database recovery, Google Photos or image regeneration. Keep the current provider authoritative. Continue the existing phase plan after its real acceptance/reconciliation prerequisites; production cutover, destructive actions, messages, paid services and later release retain their separate boundaries. Earlier checkpoints below are historical.
+
+---
+
 # Current checkpoint — Google foundations complete locally; PR publication authorized
 
 Continued from `43c0f14` on `codex/sheets-drive-foundation`. Read [the Phase 2 checkpoint](docs/google-workspace-2026-10-24/PHASE-2-CHECKPOINT.md), [final verification](docs/google-workspace-2026-10-24/phase2-verification.json), [complete owner brief](docs/google-workspace-2026-10-24/OWNER-BRIEF.md), and [Codex Cloud continuation prompt](docs/google-workspace-2026-10-24/CONTINUE-IN-CODEX-CLOUD.md) first. The audit/plan and local controlled writer, Drive documents, coherent publication contract and durable-job foundation are implemented. Real Google acceptance, migration and cutover remain separate pending gates.

@@ -1,0 +1,790 @@
+{
+  "schemaVersion": 1,
+  "kind": "real-google-isolated-sandbox-acceptance",
+  "recordedAt": "2026-10-24T10:06:22.274335+00:00",
+  "branch": "codex/google-cloud-acceptance",
+  "baseMainCommit": "019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30",
+  "previousLocalCheckpoint": "f07d38d2ca7bd530d75d6914388730b2d4a41985",
+  "status": "core-private-sandbox-verified-with-explicit-carried-gaps",
+  "implementation": {
+    "existingPhase2FoundationsReused": true,
+    "newSourceChanges": [
+      "Opaque proxy-credential header validation in two inactive Google HTTP transports",
+      "Protected GridRange default sheet-zero handling in installation verifier"
+    ],
+    "newApplicationProviderActivated": false,
+    "appsScriptSourceChanged": false,
+    "deployedVersion": 1,
+    "versionedWebAppDeploymentsCreated": 1,
+    "triggersOrSchedulersCreated": 0
+  },
+  "localVerification": {
+    "applicationTests": {
+      "passed": 641,
+      "failed": 0,
+      "skipped": 0
+    },
+    "typecheck": "passed",
+    "scopedEslint": "passed",
+    "whitespace": "passed",
+    "protectedPublicLoginProviderMediaDependencyDiff": "unchanged",
+    "buildAndHttp": "Prior f07d38d checkpoint only; not rerun for these inactive transport fixes"
+  },
+  "initialManagement": {
+    "status": "management-checks-passed",
+    "observedAt": "2026-10-24T09:49:46.793Z",
+    "checks": [
+      {
+        "id": "registry",
+        "status": "passed",
+        "reason": "local-registry-shape-validated-only"
+      },
+      {
+        "id": "runtime-account",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.root.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.root.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.originals.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.originals.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.derivatives.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.derivatives.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.privateAttachments.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.privateAttachments.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.publicationSnapshots.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.publicationSnapshots.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.catalogueTemplates.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.catalogueTemplates.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.catalogueOutputs.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.catalogueOutputs.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.jobs.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.jobs.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.recovery.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "drive.recovery.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "workbook.content.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "workbook.content.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "workbook.content.structure",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "workbook.operations.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "workbook.operations.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "workbook.operations.structure",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "workbook.security.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "workbook.security.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "workbook.security.structure",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "workbook.system.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "workbook.system.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "workbook.system.structure",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "apps-script.project.metadata",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "apps-script.project.permissions",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "apps-script.deployment",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      },
+      {
+        "id": "apps-script.deployed-source",
+        "status": "passed",
+        "reason": "verified-by-management-api-read"
+      }
+    ],
+    "writes": 0,
+    "scope": "Initial empty-state verification before non-product probes"
+  },
+  "writer": {
+    "status": "verified",
+    "checks": {
+      "sameKeyReplay": true,
+      "changedIntentConflict": true,
+      "concurrentSameRevision": true,
+      "signedReadWriteReload": true,
+      "directBookkeeping": true,
+      "contentServiceRedirectObserved": true
+    },
+    "historicalRevision": 2,
+    "historicalCounts": {
+      "records": 1,
+      "ledger": 2,
+      "audit": 2,
+      "history": 2
+    }
+  },
+  "writerAcknowledgementLoss": {
+    "status": "verified",
+    "checks": {
+      "signedCommitConfirmedBeforeInjection": true,
+      "coordinatorObservedUnknown": true,
+      "sameMutationReceiptRecovered": true,
+      "directBookkeepingVerified": true,
+      "freshProcessReplayVerified": true
+    },
+    "finalRevision": 3,
+    "finalCounts": {
+      "records": 1,
+      "ledger": 3,
+      "audit": 3,
+      "history": 3
+    },
+    "fault": "signed successful acknowledgement deliberately hidden after completion",
+    "scriptKilled": false,
+    "unfinishedRemoteCommitTested": false,
+    "controlReset": false
+  },
+  "driveDocument": {
+    "status": "verified",
+    "clientAcknowledgementLossInjected": true,
+    "attempts": [
+      {
+        "mode": "create",
+        "status": "passed",
+        "metrics": {
+          "googleReads": 24,
+          "googleCreates": 1,
+          "tokenCalls": 26,
+          "reservedIds": 1,
+          "checksPassed": 18
+        }
+      },
+      {
+        "mode": "verify-replay",
+        "status": "passed",
+        "metrics": {
+          "googleReads": 22,
+          "googleCreates": 0,
+          "tokenCalls": 23,
+          "reservedIds": 0,
+          "checksPassed": 18
+        }
+      }
+    ]
+  },
+  "jobsAndPrivatePublication": {
+    "phases": {
+      "prepare": "passed",
+      "workerFirst": "passed",
+      "workerResume": "passed",
+      "cancel": "passed",
+      "publication": "passed",
+      "verify": "passed"
+    },
+    "runs": [
+      {
+        "mode": "prepare",
+        "status": "passed",
+        "stats": {
+          "apiReads": 12,
+          "driveCreates": 0,
+          "gatewayReads": 8,
+          "gatewayCommits": 2,
+          "checksPassed": 13
+        }
+      },
+      {
+        "mode": "worker-first",
+        "status": "passed",
+        "stats": {
+          "apiReads": 18,
+          "driveCreates": 1,
+          "gatewayReads": 7,
+          "gatewayCommits": 2,
+          "checksPassed": 13
+        }
+      },
+      {
+        "mode": "worker-resume",
+        "status": "passed",
+        "stats": {
+          "apiReads": 17,
+          "driveCreates": 0,
+          "gatewayReads": 19,
+          "gatewayCommits": 4,
+          "checksPassed": 13
+        }
+      },
+      {
+        "mode": "cancel",
+        "status": "blocked",
+        "code": "invalid-response",
+        "stats": {
+          "apiReads": 11,
+          "driveCreates": 0,
+          "gatewayReads": 1,
+          "gatewayCommits": 0,
+          "checksPassed": 11
+        }
+      },
+      {
+        "mode": "cancel",
+        "status": "passed",
+        "stats": {
+          "apiReads": 11,
+          "driveCreates": 0,
+          "gatewayReads": 12,
+          "gatewayCommits": 2,
+          "checksPassed": 14
+        }
+      },
+      {
+        "mode": "publication",
+        "status": "passed",
+        "stats": {
+          "apiReads": 22,
+          "driveCreates": 1,
+          "gatewayReads": 8,
+          "gatewayCommits": 1,
+          "checksPassed": 15
+        }
+      },
+      {
+        "mode": "verify",
+        "status": "passed",
+        "stats": {
+          "apiReads": 17,
+          "driveCreates": 0,
+          "gatewayReads": 5,
+          "gatewayCommits": 0,
+          "checksPassed": 14
+        }
+      }
+    ],
+    "interruption": "Explicit durable retry transition after output creation and before output-reference checkpoint; not an OS kill",
+    "freshProcessResumeDriveCreates": 0,
+    "publicationScope": "Non-rendered private bundle with empty assets and isolated non-secret pointer"
+  },
+  "formula": {
+    "schemaVersion": 1,
+    "scope": "real-google-system-owner-formula-bypass-only",
+    "observedAt": "2026-10-24T10:02:46.659Z",
+    "status": "verified",
+    "checks": {
+      "healthySignedReadBefore": true,
+      "exactFormulaEffectiveTwo": true,
+      "authenticatedSignedRejection": true,
+      "otherStateUnchanged": true,
+      "narrowRestore": true,
+      "fullBaselineRestored": true,
+      "healthySignedReadAfter": true
+    },
+    "directOwnerWrites": 2,
+    "changedCell": "records!A2",
+    "businessRowsRemaining": 0,
+    "controlReset": false,
+    "protectedRangesChanged": false,
+    "verifiedOnRealGoogle": true,
+    "migrated": false,
+    "published": false,
+    "cutOver": false,
+    "released": false,
+    "limitations": [
+      "Owner API bypass under exclusive System use only",
+      "Ordinary editor denial not exercised with the owner-only principal",
+      "No concurrent recovery safety claim",
+      "No automatic resolution of ambiguous write outcomes"
+    ]
+  },
+  "gatewayBoundaries": {
+    "schemaVersion": 1,
+    "status": "passed",
+    "observedAt": "2026-10-24T10:00:55.807Z",
+    "checks": [
+      {
+        "id": "wrong-hmac",
+        "status": "passed",
+        "code": "invalid-response"
+      },
+      {
+        "id": "expired-signed-request",
+        "status": "passed",
+        "code": "unavailable"
+      },
+      {
+        "id": "unregistered-resource",
+        "status": "passed",
+        "code": "unavailable"
+      },
+      {
+        "id": "anonymous-sheets-denied",
+        "status": "passed",
+        "httpStatus": 403,
+        "providerStatus": "PERMISSION_DENIED"
+      },
+      {
+        "id": "anonymous-drive-denied",
+        "status": "passed",
+        "httpStatus": 403,
+        "providerStatus": "PERMISSION_DENIED"
+      },
+      {
+        "id": "healthy-signed-read-after-rejections",
+        "status": "passed"
+      }
+    ],
+    "latency": [
+      {
+        "id": "wrong-hmac",
+        "elapsedMs": 879
+      },
+      {
+        "id": "expired-signed-request",
+        "elapsedMs": 887
+      },
+      {
+        "id": "unregistered-resource",
+        "elapsedMs": 950
+      },
+      {
+        "id": "anonymous-sheets-denied",
+        "elapsedMs": 98
+      },
+      {
+        "id": "anonymous-drive-denied",
+        "elapsedMs": 56
+      },
+      {
+        "id": "healthy-signed-read",
+        "elapsedMs": 2259
+      }
+    ],
+    "googleWrites": 0,
+    "limitations": [
+      "Anonymous API denial is not a second-principal editor ACL test",
+      "No forced Google quota exhaustion",
+      "Latency samples are observations, not an SLO"
+    ]
+  },
+  "finalAudit": {
+    "schemaVersion": 1,
+    "scope": "final-read-only-isolated-sandbox-audit",
+    "observedAt": "2026-10-24T10:04:55.927Z",
+    "status": "passed",
+    "checks": [
+      {
+        "id": "oauth.owner-identity",
+        "status": "passed"
+      },
+      {
+        "id": "root.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "folder.originals.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "folder.derivatives.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "folder.privateAttachments.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "folder.publicationSnapshots.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "folder.catalogueTemplates.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "folder.catalogueOutputs.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "folder.jobs.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "folder.recovery.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "workbook.content.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "workbook.operations.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "workbook.security.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "workbook.system.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "script.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "artifact.drive-probe.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "artifact.drive-probe.bytes-hash-canonical-json",
+        "status": "passed"
+      },
+      {
+        "id": "artifact.job-output.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "artifact.job-output.bytes-hash-canonical-json",
+        "status": "passed"
+      },
+      {
+        "id": "artifact.publication-bundle.owner-private",
+        "status": "passed"
+      },
+      {
+        "id": "artifact.publication-bundle.bytes-hash-canonical-json",
+        "status": "passed"
+      },
+      {
+        "id": "root.exact-children",
+        "status": "passed"
+      },
+      {
+        "id": "folder.catalogueOutputs.exact-children",
+        "status": "passed"
+      },
+      {
+        "id": "folder.catalogueTemplates.exact-children",
+        "status": "passed"
+      },
+      {
+        "id": "folder.derivatives.exact-children",
+        "status": "passed"
+      },
+      {
+        "id": "folder.jobs.exact-children",
+        "status": "passed"
+      },
+      {
+        "id": "folder.originals.exact-children",
+        "status": "passed"
+      },
+      {
+        "id": "folder.privateAttachments.exact-children",
+        "status": "passed"
+      },
+      {
+        "id": "folder.publicationSnapshots.exact-children",
+        "status": "passed"
+      },
+      {
+        "id": "folder.recovery.exact-children",
+        "status": "passed"
+      },
+      {
+        "id": "workbook.content.structure-protection-canonical-integrity",
+        "status": "passed"
+      },
+      {
+        "id": "workbook.operations.structure-protection-canonical-integrity",
+        "status": "passed"
+      },
+      {
+        "id": "workbook.security.structure-protection-canonical-integrity",
+        "status": "passed"
+      },
+      {
+        "id": "workbook.system.structure-protection-canonical-integrity",
+        "status": "passed"
+      },
+      {
+        "id": "probe.final-content-jobs-pointer-system",
+        "status": "passed"
+      },
+      {
+        "id": "script.standalone-owner-version1-exact-source-approved-webapp",
+        "status": "passed"
+      }
+    ],
+    "counts": {
+      "registeredResources": 17,
+      "privateFolders": 9,
+      "workbooks": 4,
+      "scriptProjects": 1,
+      "immutableJsonArtifacts": 3,
+      "protectedTabs": 20
+    },
+    "canonicalCounts": {
+      "content": {
+        "records": 1,
+        "ledger": 3,
+        "audit": 3,
+        "history": 3
+      },
+      "operations": {
+        "records": 2,
+        "ledger": 10,
+        "audit": 10,
+        "history": 10
+      },
+      "security": {
+        "records": 1,
+        "ledger": 1,
+        "audit": 1,
+        "history": 1
+      },
+      "system": {
+        "records": 0,
+        "ledger": 0,
+        "audit": 0,
+        "history": 0
+      }
+    },
+    "terminalJobStates": {
+      "succeeded": 1,
+      "cancelled": 1
+    },
+    "contentRevision": 3,
+    "privatePointerRevision": 1,
+    "systemControl": "ready",
+    "deployedScriptVersion": 1,
+    "privacy": "owner-only",
+    "hierarchy": "exact-registered-root-and-child-membership",
+    "scriptPlacement": "original-standalone-owner-private",
+    "sourceHashes": {
+      "writer": "03d6f2bca96d9ab96d44af7ca09849893d0228d2fc0461ddd03df01e80d439bc",
+      "manifest": "48ba51d002c8a28e2be4ba11b4d1418758c0b11127024219b224c500d7cd7e1f"
+    },
+    "remoteReads": 54,
+    "remoteWrites": 0,
+    "migrated": false,
+    "productionPublished": false,
+    "cutOver": false,
+    "released": false,
+    "limitations": [
+      "Registered isolated resources only; no production audit",
+      "Private non-product publication pointer is not website publication",
+      "No Script Properties or signing-key inspection",
+      "Concurrent external mutation after final read is outside this receipt"
+    ]
+  },
+  "observedReadIncident": {
+    "phase": "cancel-preflight",
+    "errorCode": "invalid-response",
+    "gatewayCommits": 0,
+    "driveCreates": 0,
+    "diagnosticFollowup": "Signed read passed via allowed 302 then GET200 application/json",
+    "cause": "unconfirmed",
+    "subsequentOriginalCheckpointRun": "passed",
+    "sourceOrDeploymentChanged": false
+  },
+  "ownerBrowserSupportingEvidence": {
+    "reportedExecutionStatus": "Completed",
+    "reportedExecutionSecondsRange": [
+      0.75,
+      1.12
+    ],
+    "sharing": "Restricted, one owner",
+    "boundary": "Invocation completion only; signed and direct API receipts are authoritative"
+  },
+  "carriedGaps": [
+    "Authenticated ordinary-editor protected-range denial; no additional principal is shared",
+    "Concurrent owner or unrelated API edits during writer commit",
+    "Actual mid-script interruption after inflight marker and quarantined operator recovery",
+    "Independent expired-lease race under actual Google latency",
+    "Actual quota/rate-limit exhaustion and production latency/capacity SLO",
+    "Public asset and production-scale bundle verification",
+    "Production secret management, source export, migration rehearsal and reconciliation",
+    "Application integration, remaining phases3-11, separately approved cutover and later release"
+  ],
+  "statusByBoundary": {
+    "implemented": true,
+    "verifiedLocally": true,
+    "verifiedOnRealGoogle": "Core isolated non-product checks; carried scenarios remain unverified",
+    "businessRecordsMigrated": false,
+    "cmsOrPublicContentPublished": false,
+    "providerCutOver": false,
+    "websiteReleased": false,
+    "codexEnvironmentPublished": false
+  },
+  "preservation": {
+    "productsAdded": 0,
+    "archivedImports": 0,
+    "productionWrites": 0,
+    "publicDesignChanged": false,
+    "studioLoginChanged": false,
+    "originalOrApprovedMediaChanged": false,
+    "sourcePushed": false,
+    "merged": false,
+    "websiteDeployed": false
+  },
+  "privateEvidenceDirectory": "test-results/google-workspace-cloud/",
+  "secretValuesIncluded": false,
+  "privateResourceIdentifiersIncluded": false,
+  "coverageCounts": {
+    "initialManagementChecksPassed": 36,
+    "finalAuditChecksPassed": 36,
+    "writerChecksPassed": 6,
+    "writerAcknowledgementRecoveryChecksPassed": 5,
+    "formulaChecksPassed": 7,
+    "gatewayBoundaryChecksPassed": 6,
+    "driveCreateChecksPassed": 18,
+    "driveFreshProcessReplayChecksPassed": 18,
+    "jobAndPublicationPhasesPassed": 6,
+    "carriedGapGroups": 8,
+    "note": "Counts are per receipt and overlap; do not sum as distinct acceptance scenarios.",
+    "pendingGroups": {
+      "additionalPrivateSandboxAcceptance": 5,
+      "futureIntegrationAndProduction": 3,
+      "missingBasicSandboxComponents": 0
+    }
+  },
+  "environmentConfiguration": {
+    "startInstructionsDraftSave": "confirmed",
+    "published": false,
+    "savedNetworkMode": "restricted",
+    "presets": [
+      "package_managers"
+    ],
+    "customDomains": [
+      "oauth2.googleapis.com",
+      "script.google.com",
+      "script.googleapis.com",
+      "script.googleusercontent.com",
+      "sheets.googleapis.com",
+      "www.googleapis.com"
+    ],
+    "networkChangedByLastToolUpdate": false,
+    "runtimeReportedMode": "restricted",
+    "runtimeEnforcementState": "unknown",
+    "browserUnsavedAllPublicToggle": "Owner UI attributed Scripts to By Codex and Internet access to By you; human selected original restricted network",
+    "uiCause": "Separate unsaved owner-UI Internet access proposal; no backend network change from start_skill tool call",
+    "furtherEnvironmentEdits": "Desktop restores/verifies/saves exact restricted draft; cloud agent makes no conflicting update",
+    "authorizedVisibility": "Only me",
+    "desktopFinalSave": "awaiting observed confirmation"
+  }
+}

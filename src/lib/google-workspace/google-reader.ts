@@ -155,7 +155,9 @@ export function createGoogleWorkspaceReader(config:GoogleReaderConfig,dependenci
    let token:string;
    try{token=await abortable(()=>tokenSupplier(signal),signal);}
    catch(error){if(signal.aborted)throw error;return fail('credentials');}
-   if(typeof token!=='string'||token.length>8192||!/^[-A-Za-z0-9._~+/]+={0,2}$/.test(token))return fail('credentials');
+   // A managed proxy may supply an opaque placeholder, not an OAuth token's
+   // alphabet. Preserve it verbatim while rejecting unsafe header characters.
+   if(typeof token!=='string'||token.length>8192||!/^[\x21-\x7e]+$/.test(token))return fail('credentials');
    let response:Response;
    try{response=await abortable(()=>fetchResponse(url.href,{method:'GET',headers:{Authorization:'Bearer '+token,Accept:json?'application/json':'*/*'},redirect:'manual',cache:'no-store',credentials:'omit',referrerPolicy:'no-referrer',signal}),signal);}
    catch(error){if(signal.aborted)throw error;return fail('unavailable');}

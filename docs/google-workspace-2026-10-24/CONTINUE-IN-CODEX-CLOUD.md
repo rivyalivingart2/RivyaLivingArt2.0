@@ -1,3 +1,23 @@
+# Current continuation — 26 October 2026
+
+Read [the Gemini/Antigravity handoff checkpoint](ANTIGRAVITY-HANDOFF-CHECKPOINT.md), [sanitized verification](antigravity-handoff-verification.json), [complete continuation prompt](CONTINUE-IN-GEMINI-ANTIGRAVITY.md) and [local/offline runbook](LOCAL-OFFLINE-RUNBOOK.md) first. Continue the existing `codex/google-cloud-acceptance` branch and open PR #67; do not reset to main or provision another sandbox. Fresh connected Drive/Sheets reads succeeded with zero writes. The new portable populated-state audit is locally verified; its full live run requires the original private registry, reviewed baseline and secure runtime OAuth binding. Earlier real writer/protection/deployment evidence remains dated; eight acceptance groups and phases 3–11 remain open. Source PR publication is authorized; a main merge can trigger Vercel production and retains the explicit later-release boundary. The existing production provider stays authoritative.
+
+---
+
+# Current phase PR continuation — 25 October 2026
+
+The owner now explicitly authorizes continuing on `codex/google-cloud-acceptance` and delivering phase work through detailed PRs into main. This supersedes the earlier no-push/no-PR hold below. Preserve the installed Google resources and completed checkpoints. Read [PHASE-2-PR.md](PHASE-2-PR.md) for current access, validation and release boundaries. Do not infer production migration/cutover, CMS publication or later website release authority; inspect the enabled Vercel Git deployment effects for each concrete PR. Keep this environment unpublished, preserve data/design/login, and continue independent work while the expired Google management token blocks dependent operations. GitHub API access works through the supported authenticated `gh` CLI.
+
+---
+
+# Historical sandbox continuation override
+
+The private Google sandbox and single version-1 signed writer are now installed. Read [SANDBOX-CHECKPOINT.md](SANDBOX-CHECKPOINT.md) and [sandbox-verification.json](sandbox-verification.json) before the retained original prompt below. Core real non-product acceptance passed; the checkpoint lists the remaining permissions/recovery and production gates. Reuse the observed private registry and journals; never recreate resources or reset control cells to rerun initial checks. Browser consent and private signing configuration are complete.
+
+The latest owner direction keeps this Codex environment unpublished and all Git changes local. No push, merge, website deployment, CMS publication, business migration or production cutover is authorized. The current provider, approved public design, Studio login and existing data/media remain unchanged. A fresh authorized source export/access location is still required for real migration rehearsal; absent Windows private evidence is not data to recreate. The complete original continuation prompt follows as retained context.
+
+---
+
 # Copy-ready Codex Cloud continuation prompt
 
 Continue **Rivya Living Art** from the latest GitHub `main` in `https://github.com/rivyalivingart2/RivyaLivingArt2.0`. Inspect the actual remote head, branch and working tree, preserve existing work, and use a new `codex/` branch. The local Phase 0–2 checkpoint has been prepared for release through a PR; verify the merged PR and current head rather than assuming an old SHA is current.

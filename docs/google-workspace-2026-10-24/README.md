@@ -1,4 +1,22 @@
-# Current checkpoint — Phase 0–2 local implementation and release
+# Current continuation — 26 October 2026
+
+Read [the Gemini/Antigravity handoff checkpoint](ANTIGRAVITY-HANDOFF-CHECKPOINT.md), [sanitized verification](antigravity-handoff-verification.json), [complete continuation prompt](CONTINUE-IN-GEMINI-ANTIGRAVITY.md) and [local/offline runbook](LOCAL-OFFLINE-RUNBOOK.md) first. Continue the existing `codex/google-cloud-acceptance` branch and open PR #67; do not reset to main or provision another sandbox. Fresh connected Drive/Sheets reads succeeded with zero writes. The new portable populated-state audit is locally verified; its full live run requires the original private registry, reviewed baseline and secure runtime OAuth binding. Earlier real writer/protection/deployment evidence remains dated; eight acceptance groups and phases 3–11 remain open. Source PR publication is authorized; a main merge can trigger Vercel production and retains the explicit later-release boundary. The existing production provider stays authoritative.
+
+---
+
+# Current cloud checkpoint — private Google foundations verified
+
+Read [the installed sandbox checkpoint](SANDBOX-CHECKPOINT.md) and [sanitized evidence](sandbox-verification.json). Private folders, four protected workbooks and the single version-1 signed writer are installed. Real non-product writer/Drive/job/private-pointer and formula-restoration checks pass; the checkpoint states remaining permissions, recovery and production gates. Browser consent/key configuration are complete. Reuse the existing resources and journals, keep the environment unpublished, and preserve the current application provider and data. No products, business migration, CMS publication, cutover or website release occurred.
+
+---
+# Historical cloud checkpoint — isolated setup tools; real Google access pending
+
+PR #66 is merged at verified main `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30`. Cloud continuation uses `codex/google-cloud-acceptance`. Read [the cloud setup guide](CLOUD-GOOGLE-SETUP.md) and [fresh verification receipt](cloud-verification.json). The owner authorized isolated Google setup and selected the owning account; the private registry records that identity while actual resource/deployment IDs remain unconfigured.
+
+The portable environment is prepared, and new structural-plan/private-registry and read-only management-verification tools reuse the existing Phase 2 foundations. No Google resource, script deployment, business-data write, migration, CMS publication, cutover or later release has occurred. Actual authenticated Google access and every real-provider acceptance scenario remain pending. Continue the existing phase gates after those prerequisites; do not rebuild prior foundations or synthesize missing Windows data.
+
+---
+# Historical checkpoint — Phase 0–2 local implementation and release
 
 The owner requested completion from `43c0f14`, then authorized all latest changes through a detailed PR into GitHub `main` and a Codex Cloud handoff. The active branch is `codex/sheets-drive-foundation`. Read [the Phase 2 checkpoint](PHASE-2-CHECKPOINT.md), [verification](phase2-verification.json), [isolated Google target plan](ISOLATED-TARGET-PLAN.md), [complete owner brief](OWNER-BRIEF.md) and [Cloud continuation prompt](CONTINUE-IN-CODEX-CLOUD.md).
 
