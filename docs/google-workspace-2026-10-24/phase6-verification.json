@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "baseCheckpoint": "039be1c6dfce01c40212f4553d1e21b790d9b4b0",
+  "scope": "LOCAL_PHASE_6_MEDIA_CONTENT_AND_FILTERS",
+  "phases": {
+    "phase0": "AUDIT_COMPLETE_WITH_DOCUMENTED_ACCESS_GAPS",
+    "phase1": "LOCAL_ARCHITECTURE_AND_PLAN_COMPLETE",
+    "phase2": "LOCAL_FOUNDATION_DELIVERED_AND_MERGED_PR_67",
+    "phase3": "REHEARSAL_IMPORTER_AND_RECONCILIATION_REPORTING_VERIFIED",
+    "phase4": "BACKEND_REPLACEMENT_ADAPTERS_VERIFIED",
+    "phase5": "AUTHENTICATED_STUDIO_REDESIGN_AND_WORKFLOW_PARITY_VERIFIED",
+    "phase6": "MEDIA_CONTENT_AND_FILTERS_VERIFIED"
+  },
+  "tasks": {
+    "GW-600": {
+      "name": "Media association map, entity slot validation, and truthful claims enforcement",
+      "modules": [
+        "src/lib/google-workspace/media-association-map.ts",
+        "src/lib/studio-media.ts",
+        "src/lib/owner-creations.ts",
+        "src/lib/editorial-media-model.ts"
+      ],
+      "tests": "tests/google-workspace-media-content.test.mjs",
+      "testCount": 3,
+      "passed": 3,
+      "status": "COMPLETE_AND_VERIFIED"
+    },
+    "GW-601": {
+      "name": "Entity coverage analysis, studio filtering, and record separation report",
+      "modules": [
+        "src/lib/google-workspace/entity-coverage.ts",
+        "docs/google-workspace-2026-10-24/entity-coverage-report.json"
+      ],
+      "tests": "tests/google-workspace-media-content.test.mjs",
+      "testCount": 1,
+      "passed": 1,
+      "status": "COMPLETE_AND_VERIFIED"
+    },
+    "GW-602": {
+      "name": "Drive-backed media delivery, 4:5 aspect ratio checks, responsive derivatives, and motion validation",
+      "modules": [
+        "src/lib/google-workspace/drive-media-delivery.ts"
+      ],
+      "tests": "tests/google-workspace-media-content.test.mjs",
+      "testCount": 2,
+      "passed": 2,
+      "status": "COMPLETE_AND_VERIFIED"
+    }
+  },
+  "checks": {
+    "unitTests": {
+      "googleWorkspaceTests": 43,
+      "passed": 43,
+      "failed": 0
+    },
+    "preflight": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "lint": {
+      "errors": 0,
+      "warnings": 62,
+      "classification": "existing warnings; Phase 6 source files lint clean with zero errors"
+    },
+    "typescript": {
+      "errors": 0,
+      "status": "PASS"
+    }
+  },
+  "preservation": {
+    "scope": "APPROVED_MEDIA_ORIGINALS_AND_VALID_CONTENT_ONLY",
+    "totalDistinctEntities": 323,
+    "productionBaseline": 323,
+    "workingDrafts": 0,
+    "syntheticQa": 0,
+    "publicCreations": 169,
+    "variants": 507,
+    "publicDesignPreserved": true,
+    "studioLoginPreserved": true,
+    "existingProviderAuthoritative": true,
+    "zeroInventedReviews": true,
+    "zeroProductsAdded": true
+  },
+  "externalEffects": {
+    "googleResourcesCreated": 0,
+    "googleWrites": 0,
+    "productionDatabaseWrites": 0,
+    "cmsPublications": 0,
+    "externalMessages": 0
+  }
+}

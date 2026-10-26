@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-26T10:11:30.857Z",
+  "scope": "AUTHENTICATED_STUDIO_ENTITY_COVERAGE",
+  "totals": {
+    "totalDistinctRecords": 323,
+    "productionBaselineCount": 323,
+    "workingDraftCount": 0,
+    "syntheticQaCount": 0
+  },
+  "breakdownByKind": {
+    "product": {
+      "total": 120,
+      "published": 120,
+      "draft": 0,
+      "archived": 0
+    },
+    "category": {
+      "total": 15,
+      "published": 15,
+      "draft": 0,
+      "archived": 0
+    },
+    "page": {
+      "total": 20,
+      "published": 20,
+      "draft": 0,
+      "archived": 0
+    },
+    "article": {
+      "total": 36,
+      "published": 36,
+      "draft": 0,
+      "archived": 0
+    },
+    "media": {
+      "total": 131,
+      "published": 131,
+      "draft": 0,
+      "archived": 0
+    },
+    "testimonial": {
+      "total": 1,
+      "published": 0,
+      "draft": 1,
+      "archived": 0
+    }
+  },
+  "breakdownByWorkflow": {
+    "operations": 0,
+    "catalogue": 266,
+    "editorial": 37,
+    "presentation": 20,
+    "governance": 0
+  },
+  "filterEvaluations": {
+    "filterCombinationsTested": 8,
+    "allFiltersReturnConsistentResults": true,
+    "zeroDuplicateRecords": true,
+    "zeroFabricatedRecords": true
+  },
+  "invariants": {
+    "approvedPublicDesignPreserved": true,
+    "genuineAttributionPreserved": true,
+    "zeroInventedReviews": true,
+    "zeroProductsAdded": true
+  }
+}
