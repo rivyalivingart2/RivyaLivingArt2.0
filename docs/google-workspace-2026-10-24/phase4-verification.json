@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "baseCheckpoint": "075ea9645229713ef31caeaad2ebafb702ec8c9c",
+  "scope": "LOCAL_PHASE_4_BACKEND_REPLACEMENT",
+  "phases": {
+    "phase0": "AUDIT_COMPLETE_WITH_DOCUMENTED_ACCESS_GAPS",
+    "phase1": "LOCAL_ARCHITECTURE_AND_PLAN_COMPLETE",
+    "phase2": "LOCAL_FOUNDATION_DELIVERED_AND_MERGED_PR_67",
+    "phase3": "REHEARSAL_IMPORTER_AND_RECONCILIATION_REPORTING_VERIFIED",
+    "phase4": "BACKEND_REPLACEMENT_ADAPTERS_VERIFIED"
+  },
+  "tasks": {
+    "GW-400": {
+      "name": "Studio Auth & Staff restricted Google adapters",
+      "modules": [
+        "src/lib/google-workspace/security-adapter.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-staff.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-access.ts"
+      ],
+      "tests": "tests/google-workspace-studio-auth.test.mjs",
+      "testCount": 8,
+      "passed": 8,
+      "status": "COMPLETE_AND_VERIFIED"
+    },
+    "GW-401": {
+      "name": "Drive-backed publication adapters",
+      "modules": [
+        "src/lib/google-workspace/publication-adapter.ts",
+        "src/lib/published-source.ts",
+        "src/lib/published-media.ts",
+        "src/lib/published-design-source.ts"
+      ],
+      "tests": "tests/google-workspace-publication-adapter.test.mjs",
+      "testCount": 5,
+      "passed": 5,
+      "status": "COMPLETE_AND_VERIFIED"
+    },
+    "GW-402": {
+      "name": "Inquiry, subscriber, and private media operations adapters",
+      "modules": [
+        "src/lib/google-workspace/operations-adapter.ts",
+        "src/lib/subscribers.ts",
+        "src/app/api/newsletter/route.ts",
+        "src/lib/studio-access.ts"
+      ],
+      "tests": "tests/google-workspace-operations-adapter.test.mjs",
+      "testCount": 6,
+      "passed": 6,
+      "status": "COMPLETE_AND_VERIFIED"
+    },
+    "GW-403": {
+      "name": "Studio DB provider switch and removal checkpoint",
+      "modules": [
+        "src/lib/google-workspace/provider-switch.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "tests": "tests/google-workspace-provider-switch.test.mjs",
+      "testCount": 4,
+      "passed": 4,
+      "status": "COMPLETE_AND_VERIFIED"
+    }
+  },
+  "checks": {
+    "unitTests": {
+      "googleWorkspaceTests": 32,
+      "passed": 32,
+      "failed": 0
+    },
+    "preflight": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "lint": {
+      "errors": 0,
+      "warnings": 62,
+      "classification": "existing warnings; Phase 4 source files lint clean with zero errors"
+    },
+    "typescript": {
+      "errors": 0,
+      "status": "PASS"
+    }
+  },
+  "preservation": {
+    "scope": "EXISTING_SYNTHETIC_LOOPBACK_QA_AND_APPROVED_MEDIA_ONLY",
+    "rows": 406,
+    "tables": 28,
+    "columns": 230,
+    "constraints": 45,
+    "allRowsUnchanged": true,
+    "schemaUnchanged": true,
+    "publicCreations": 169,
+    "variants": 507,
+    "publicDesignPreserved": true,
+    "studioLoginPreserved": true,
+    "existingProviderAuthoritative": true
+  },
+  "externalEffects": {
+    "googleResourcesCreated": 0,
+    "googleWrites": 0,
+    "productionDatabaseWrites": 0,
+    "cmsPublications": 0,
+    "externalMessages": 0
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "baseCheckpoint": "36fbaf14f24ae6e62ba31ef720989bf306563b67",
+  "scope": "LOCAL_PHASE_3_MIGRATION_REHEARSAL_AND_RECONCILIATION",
+  "phases": {
+    "phase0": "AUDIT_COMPLETE_WITH_DOCUMENTED_ACCESS_GAPS",
+    "phase1": "LOCAL_ARCHITECTURE_AND_PLAN_COMPLETE",
+    "phase2": "LOCAL_FOUNDATION_DELIVERED_AND_MERGED_PR_67",
+    "phase3": "REHEARSAL_IMPORTER_AND_RECONCILIATION_REPORTING_VERIFIED"
+  },
+  "checks": {
+    "application": {
+      "tests": 691,
+      "passed": 688,
+      "windowsEnvDifferences": 3,
+      "linuxCleanPass": true
+    },
+    "preflight": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "lint": {
+      "errors": 0,
+      "warnings": 62,
+      "classification": "existing warnings; Phase 3 source files lint clean with zero errors"
+    },
+    "typescript": {
+      "errors": 0,
+      "status": "PASS"
+    }
+  },
+  "preservation": {
+    "scope": "EXISTING_SYNTHETIC_LOOPBACK_QA_AND_APPROVED_MEDIA_ONLY",
+    "rows": 406,
+    "tables": 28,
+    "columns": 230,
+    "constraints": 45,
+    "allRowsUnchanged": true,
+    "schemaUnchanged": true,
+    "publicCreations": 169,
+    "variants": 507,
+    "publicDesignPreserved": true,
+    "studioLoginPreserved": true,
+    "existingProviderAuthoritative": true
+  },
+  "rehearsal": {
+    "tablesReconciled": 28,
+    "creationsReconciled": 169,
+    "variantsReconciled": 507,
+    "interruptedResumptionVerified": true,
+    "duplicateCommitsOnResume": 0,
+    "conflictResolutionLedgerVerified": true,
+    "mediaLineageIntegrityVerified": true,
+    "reportPath": "test-results/google-workspace-2026-10-24/reconciliation-rehearsal-report.json"
+  },
+  "externalEffects": {
+    "googleResourcesCreated": 0,
+    "googleWrites": 0,
+    "productionDatabaseWrites": 0,
+    "productsAdded": 0,
+    "archivedRecordsImported": 0,
+    "cmsPublications": 0,
+    "newProviderActivated": false,
+    "gitRelease": "PREPARED_FOR_PR_INTO_MAIN_ON_BRANCH_codex/google-cloud-acceptance"
+  },
+  "sourceSha256NormalizedLf": {
+    "src/lib/google-workspace/importer.ts": "94e6f05b947d677ef77265d57b2f521ed4e1e4c116ec2597a08bdcba5e402cf7",
+    "src/lib/google-workspace/reconciliation.ts": "91ce3136fdc013e5e9e5ccfed3adbdb3d986ab87a4781982781638c871098a05",
+    "src/types/migration.d.ts": "02dfbc2800fa2f30a5b88da49033e138331a9a2413ba977a5db86d863f00857b",
+    "tools/google-workspace/migration.d.ts": "39c04888facd1dcdcbd290f4697c04958b2b3c4e1017a7e4eaa7cb2a70f1d0df",
+    "tools/google-workspace/reconciliation-report.ts": "d98982d6cecec01f0eede3530c7d62cb2c45b25d650a1de150bc0e02e9c100a4",
+    "tests/google-workspace-importer.test.mjs": "b02c68a0275f6c7581d0fad286f6bb638514d22baf74829d418b090be95b1466",
+    "tests/google-workspace-reconciliation.test.mjs": "577ab06c159b5ca6ba069f67d5d7c43f9c740477c657772002761b389455a8da"
+  }
+}
