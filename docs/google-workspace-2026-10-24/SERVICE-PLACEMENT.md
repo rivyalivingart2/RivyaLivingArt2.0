@@ -1,3 +1,9 @@
+# Current continuation — 26 October 2026
+
+Read [the Gemini/Antigravity handoff checkpoint](ANTIGRAVITY-HANDOFF-CHECKPOINT.md), [sanitized verification](antigravity-handoff-verification.json), [complete continuation prompt](CONTINUE-IN-GEMINI-ANTIGRAVITY.md) and [local/offline runbook](LOCAL-OFFLINE-RUNBOOK.md) first. Continue the existing `codex/google-cloud-acceptance` branch and open PR #67; do not reset to main or provision another sandbox. Fresh connected Drive/Sheets reads succeeded with zero writes. The new portable populated-state audit is locally verified; its full live run requires the original private registry, reviewed baseline and secure runtime OAuth binding. Earlier real writer/protection/deployment evidence remains dated; eight acceptance groups and phases 3–11 remain open. Source PR publication is authorized; a main merge can trigger Vercel production and retains the explicit later-release boundary. The existing production provider stays authoritative.
+
+---
+
 # Service ownership and installation status
 
 **Current sandbox status:** one private Drive root and eight child folders, four owner-only workbooks with five 100 × 12 tabs each, and twenty canonical-tab protections are installed. One private Apps Script project contains the original writer source and the approved deployment manifest. Its browser-installed version 1 web app uses `USER_DEPLOYING` and `ANYONE_ANONYMOUS`, with private HMAC signing configuration. The web-app entry point is distinct from the owner-only access to its source, workbooks and files. All 36 management checks passed, including deployment/version/source and private permissions. Actual resource IDs, account details, endpoint and credentials remain private. See [the sandbox checkpoint](SANDBOX-CHECKPOINT.md).

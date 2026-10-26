@@ -145,6 +145,16 @@ function literalCell(raw: unknown): string {
   return entered.stringValue as string;
 }
 
+// Reuse the same read-only transport and management guards for the populated
+// sandbox audit. The initial empty-state verifier and CLI remain unchanged.
+export {
+  googleRead as createReadinessGoogleReader,
+  validatePermissions as validateIsolatedFilePermissions,
+  validateProtectedSheet as validateIsolatedProtectedSheet,
+  literalCell as isolatedLiteralCell,
+  ReadinessError as IsolatedReadinessError,
+};
+
 function validateGrid(data: JsonObject, registry: IsolatedSetupRegistry, group: WorkbookGroup) {
   const workbook = registry.workbooks[group];
   requireState(data.spreadsheetId === workbook.workbookId && object(data.properties) && data.properties.title === WORKBOOK_SPECS[group].title, 'workbook-identity-mismatch');

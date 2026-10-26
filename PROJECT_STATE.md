@@ -1,3 +1,13 @@
+# Current continuation — Gemini/Antigravity handoff and existing-sandbox audit
+
+26 October 2026. Continue **`codex/google-cloud-acceptance`** and existing **PR #67**; main remains the observed PR #66 checkpoint `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30`. The same-branch owner instruction supersedes the older generic new-branch prompt. Read [the current handoff checkpoint](docs/google-workspace-2026-10-24/ANTIGRAVITY-HANDOFF-CHECKPOINT.md), [verification](docs/google-workspace-2026-10-24/antigravity-handoff-verification.json), [complete Gemini/Antigravity prompt](docs/google-workspace-2026-10-24/CONTINUE-IN-GEMINI-ANTIGRAVITY.md) and [local/offline runbook](docs/google-workspace-2026-10-24/LOCAL-OFFLINE-RUNBOOK.md) first.
+
+The private sandbox already exists. Fresh owner-account Drive/Sheets reads verify sixteen owner-only resources, twenty 100×12 grids and coherent retained records/history/control, with zero writes. The portable `audit-existing.ts` verifies a populated registered sandbox without resets. Full local check passes 682 application, 12 preflight and 409 HTTP tests, typecheck/build and lint (zero errors; 62 existing warnings). Fresh connector access is separate from the historical expired runtime token. This checkout lacks the original private registry/baseline/runtime credentials and signed replay inputs; full new Apps Script/runtime acceptance remains blocked, and all eight carried groups remain explicit.
+
+Preserve approved public design, Studio login/security, current provider authority, all data/media/IDs/URLs/prices/relationships and the 169-image collection. No products or archived imports, reseeding, deleted-database recovery, request repair replay, Photos revisit or regeneration. Source/phase PR publication is authorized. Main is connected to Vercel production, so merging a concrete PR retains the user's separate later-release authorization boundary; do not bypass protection or change deployment settings. No business migration, CMS publication, cutover or later production release occurred. Earlier entries below are historical.
+
+---
+
 # Current owner direction — continue on this branch and deliver phase PRs
 
 25 October 2026. The owner explicitly requested continuing on `codex/google-cloud-acceptance` and delivering each phase through a detailed PR into GitHub main. This supersedes the earlier Git local-only hold; retain this branch and both existing checkpoints. Verify actual required checks/reviews and merge through PRs, never by direct-main push or protection bypass. Production migration/cutover, CMS publication, destructive actions and later production release retain their separate concrete authorization boundaries; Vercel Git deployment is enabled, so inspect its release effects before merging.

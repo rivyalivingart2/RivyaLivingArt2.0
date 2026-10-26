@@ -1,3 +1,9 @@
+# Current continuation — 26 October 2026
+
+Read [the Gemini/Antigravity handoff checkpoint](ANTIGRAVITY-HANDOFF-CHECKPOINT.md), [sanitized verification](antigravity-handoff-verification.json), [complete continuation prompt](CONTINUE-IN-GEMINI-ANTIGRAVITY.md) and [local/offline runbook](LOCAL-OFFLINE-RUNBOOK.md) first. Continue the existing `codex/google-cloud-acceptance` branch and open PR #67; do not reset to main or provision another sandbox. Fresh connected Drive/Sheets reads succeeded with zero writes. The new portable populated-state audit is locally verified; its full live run requires the original private registry, reviewed baseline and secure runtime OAuth binding. Earlier real writer/protection/deployment evidence remains dated; eight acceptance groups and phases 3–11 remain open. Source PR publication is authorized; a main merge can trigger Vercel production and retains the explicit later-release boundary. The existing production provider stays authoritative.
+
+---
+
 # Cloud Google setup and acceptance
 
 **Current state:** the private folders, four protected workbooks and one version-1 signed writer deployment are installed on Google. Real signed writer, Drive JSON, durable job and private publication-pointer checks have run successfully with non-product probes. Read [SANDBOX-CHECKPOINT.md](SANDBOX-CHECKPOINT.md) and [sandbox-verification.json](sandbox-verification.json) for exact evidence and remaining gaps. The owner requires the environment to stay unpublished. Reuse the existing deployment and registry; do not repeat initial provisioning.

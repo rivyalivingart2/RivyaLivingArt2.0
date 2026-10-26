@@ -1,3 +1,9 @@
+# Current continuation — 26 October 2026
+
+Read [the Gemini/Antigravity handoff checkpoint](ANTIGRAVITY-HANDOFF-CHECKPOINT.md), [sanitized verification](antigravity-handoff-verification.json), [complete continuation prompt](CONTINUE-IN-GEMINI-ANTIGRAVITY.md) and [local/offline runbook](LOCAL-OFFLINE-RUNBOOK.md) first. Continue the existing `codex/google-cloud-acceptance` branch and open PR #67; do not reset to main or provision another sandbox. Fresh connected Drive/Sheets reads succeeded with zero writes. The new portable populated-state audit is locally verified; its full live run requires the original private registry, reviewed baseline and secure runtime OAuth binding. Earlier real writer/protection/deployment evidence remains dated; eight acceptance groups and phases 3–11 remain open. Source PR publication is authorized; a main merge can trigger Vercel production and retains the explicit later-release boundary. The existing production provider stays authoritative.
+
+---
+
 # Current cloud checkpoint — private Google foundations verified
 
 Read [the installed sandbox checkpoint](SANDBOX-CHECKPOINT.md) and [sanitized evidence](sandbox-verification.json). Private folders, four protected workbooks and the single version-1 signed writer are installed. Real non-product writer/Drive/job/private-pointer and formula-restoration checks pass; the checkpoint states remaining permissions, recovery and production gates. Browser consent/key configuration are complete. Reuse the existing resources and journals, keep the environment unpublished, and preserve the current application provider and data. No products, business migration, CMS publication, cutover or website release occurred.
