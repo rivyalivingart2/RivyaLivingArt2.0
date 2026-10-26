@@ -4,7 +4,7 @@ import {promisify} from 'node:util';
 import {cookies} from 'next/headers';
 import {redirect} from 'next/navigation';
 import {studioDb} from './studio-db';
-import type {GoogleWorkspaceSecurityAdapter} from './google-workspace/security-adapter.ts';
+import type {GoogleWorkspaceSecurityAdapter} from './google-workspace/security-adapter';
 export type StaffSession={adminId:string;role:'admin'|'editor';staffId:string|null;credentialVersion?:number};
 
 let activeSecurityAdapter: GoogleWorkspaceSecurityAdapter | null = null;

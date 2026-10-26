@@ -3,9 +3,15 @@ import {cache} from 'react';
 import {studioDb} from './studio-db';
 import type {PublicMedia} from './public-media';
 import {validPageMedia} from './editorial-media-model';
+import {getPublicationAdapter} from './published-source';
 
 /** Deduplicate public-media reads within one server render, never across users or requests. */
 export const publishedMedia=cache(async()=>{
+ const adapter = getPublicationAdapter();
+ if (adapter) {
+   const media = await adapter.getPublishedMedia();
+   if (media) return media;
+ }
  const rows=await studioDb()`SELECT path,published FROM rivya_public_media WHERE published IS NOT NULL`;
  const images=new Map<string,PublicMedia>();
  for(const row of rows)if(validPageMedia(row.published)&&row.path===row.published.path)images.set(row.path,row.published);
