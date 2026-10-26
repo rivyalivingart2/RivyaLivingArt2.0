@@ -12,7 +12,7 @@ import {
 import type {PublishedSource} from '../published-source';
 import type {PublicMedia} from '../public-media';
 import type {HomepageLayout} from '../presentation-model';
-import type {ArtifactOptions, ArtifactRegistration, DriveDocumentStore, DriveJsonRef} from './drive-documents';
+import type {ArtifactRegistration, DriveDocumentStore, DriveJsonRef} from './drive-documents';
 
 export interface PublicationAdapterStore {
   getPointer: () => Promise<PublicationPointer | null>;

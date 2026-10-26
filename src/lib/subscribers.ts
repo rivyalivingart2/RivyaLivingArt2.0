@@ -1,8 +1,13 @@
 import 'server-only';
 import {studioDb} from './studio-db';
 import {subscriberPageSize,type SubscriberFilters,type SubscriberRow,type SubscriberPage} from './subscriber-model';
+import {getOperationsAdapter} from './google-workspace/operations-adapter';
 /** One snapshot supplies totals and the clamped page, even for an empty result. */
 export async function readSubscribers(f:SubscriberFilters,exportAll=false):Promise<SubscriberPage>{
+ const adapter = getOperationsAdapter();
+ if (adapter) {
+  return adapter.readNewsletterSubscribers(f, exportAll);
+ }
  const result=await studioDb()`WITH filtered AS (
   SELECT email,source,created_at FROM rivya_newsletter_subscribers
   WHERE position(lower(${f.q}) in lower(email))>0

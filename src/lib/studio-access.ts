@@ -3,11 +3,16 @@ import {createHash, randomBytes, randomUUID} from 'node:crypto';
 import {studioDb} from './studio-db';
 import {getSecurityAdapter, hashStaffPassword, type StaffSession} from './studio-auth';
 import {type AccessInput, validAccessPassword, validAccessToken} from './studio-access-validation';
+import {getOperationsAdapter} from './google-workspace/operations-adapter';
 
 /** Do not authorize from client props or a hidden menu. Scope every record access. */
 export async function canAccessInquiry(session:StaffSession,id:string){
   if(session.role==='admin')return true;
   if(!session.staffId)return false;
+  const adapter = getOperationsAdapter();
+  if (adapter) {
+    return adapter.canAccessInquiry(session, id);
+  }
   const rows=await studioDb()`SELECT id FROM rivya_inquiries WHERE id=${id}::uuid AND assignee=${session.staffId}::uuid`;
   return rows.length===1;
 }
