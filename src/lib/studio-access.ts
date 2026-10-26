@@ -1,7 +1,7 @@
 import 'server-only';
 import {createHash, randomBytes, randomUUID} from 'node:crypto';
 import {studioDb} from './studio-db';
-import {hashStaffPassword, type StaffSession} from './studio-auth';
+import {getSecurityAdapter, hashStaffPassword, type StaffSession} from './studio-auth';
 import {type AccessInput, validAccessPassword, validAccessToken} from './studio-access-validation';
 
 /** Do not authorize from client props or a hidden menu. Scope every record access. */
@@ -14,17 +14,42 @@ export async function canAccessInquiry(session:StaffSession,id:string){
 
 const digest = (token: string) => createHash('sha256').update(token).digest('hex');
 export async function requestStudioAccess(input: AccessInput) {
+  const adapter = getSecurityAdapter();
+  if (adapter) {
+    return adapter.requestStudioAccess(input);
+  }
   // Identical insert path for existing and unknown identities. Never change an account here.
   await studioDb()`INSERT INTO rivya_access_requests(id,kind,login,name,contact)
     VALUES(${randomUUID()}::uuid,${input.kind},${input.login},${input.name},${input.contact})
     ON CONFLICT (kind,lower(login)) WHERE status IN ('pending','approved') DO NOTHING`;
 }
 export async function listAccessRequests() {
+  const adapter = getSecurityAdapter();
+  if (adapter) {
+    const list = await adapter.listAccessRequests();
+    return list.map(r => ({
+      id: r.id,
+      kind: r.kind,
+      login: r.login,
+      name: r.name,
+      contact: r.contact,
+      status: r.status,
+      version: r.version,
+      createdAt: r.created_at,
+      expiresAt: r.expires_at,
+    }));
+  }
   return studioDb()`SELECT id,kind,login,name,contact,status,version,created_at AS "createdAt",expires_at AS "expiresAt"
     FROM rivya_access_requests WHERE status IN ('pending','approved') ORDER BY created_at LIMIT 100`;
 }
 export async function decideAccessRequest(session: StaffSession, id: string, version: number, operation: 'approve'|'reject') {
   if (session.role !== 'admin') throw new Error('Administrator access required.');
+  const adapter = getSecurityAdapter();
+  if (adapter) {
+    const res = await adapter.decideAccessRequest(session, id, version, operation);
+    if (!res) return null;
+    return {saved: true, token: res.linkToken, expiresAt: new Date(Date.now() + 30 * 60 * 1000).toISOString()};
+  }
   const sql = studioDb();
   if (operation === 'reject') {
     const rows = await sql`WITH changed AS (
@@ -64,6 +89,10 @@ export async function decideAccessRequest(session: StaffSession, id: string, ver
 }
 export async function redeemAccessLink(token: string, password: string) {
   if (!validAccessToken(token) || !validAccessPassword(password)) return false;
+  const adapter = getSecurityAdapter();
+  if (adapter) {
+    return adapter.redeemAccessLink(token, password);
+  }
   const passwordHash = await hashStaffPassword(password);
   const rows = await studioDb()`WITH candidate AS MATERIALIZED (
     SELECT r.id,r.staff_id,r.credential_version,r.kind FROM rivya_access_requests r JOIN rivya_staff s ON s.id=r.staff_id

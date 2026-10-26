@@ -2,6 +2,7 @@ import 'server-only';
 import {cookies,headers} from 'next/headers';
 import {createHmac,randomBytes} from 'node:crypto';
 import {studioDb} from './studio-db';
+import {getSecurityAdapter} from './studio-auth';
 export const guestCookie=process.env.NODE_ENV==='production'?'__Host-rivya-inquiry':'rivya-inquiry';
 export function privateHash(value:string){const key=process.env.STUDIO_SESSION_SECRET;if(!key||key.length<32)throw new Error('Service unavailable');return createHmac('sha256',key).update(value).digest('hex');}
 export async function guestIdentity(create=false){
@@ -10,6 +11,10 @@ export async function guestIdentity(create=false){
  return privateHash(token);
 }
 export async function limited(key:string,limit:number,minutes=60){
+ const adapter = getSecurityAdapter();
+ if (adapter) {
+  return adapter.recordLoginAttempt(key, limit, minutes);
+ }
  const rows=await studioDb()`INSERT INTO rivya_studio_login_limits(key,attempts,reset_at) VALUES(${key},1,now()+(${minutes} * interval '1 minute')) ON CONFLICT(key) DO UPDATE SET attempts=CASE WHEN rivya_studio_login_limits.reset_at<=now() THEN 1 ELSE rivya_studio_login_limits.attempts+1 END, reset_at=CASE WHEN rivya_studio_login_limits.reset_at<=now() THEN now()+(${minutes} * interval '1 minute') ELSE rivya_studio_login_limits.reset_at END RETURNING attempts`;
  return Number(rows[0].attempts)<=limit;
 }

@@ -4,12 +4,24 @@ import {promisify} from 'node:util';
 import {cookies} from 'next/headers';
 import {redirect} from 'next/navigation';
 import {studioDb} from './studio-db';
+import type {GoogleWorkspaceSecurityAdapter} from './google-workspace/security-adapter.ts';
 export type StaffSession={adminId:string;role:'admin'|'editor';staffId:string|null;credentialVersion?:number};
+
+let activeSecurityAdapter: GoogleWorkspaceSecurityAdapter | null = null;
+export function getSecurityAdapter(): GoogleWorkspaceSecurityAdapter | null {
+  return activeSecurityAdapter;
+}
+export function setSecurityAdapter(adapter: GoogleWorkspaceSecurityAdapter | null): void {
+  activeSecurityAdapter = adapter;
+}
 
 const derive = promisify(scrypt);
 export const sessionCookie = process.env.NODE_ENV === 'production' ? '__Host-rivya-studio' : 'rivya-studio';
 export const sessionSeconds = 8 * 60 * 60;
 export function studioConfigured() {
+  if (activeSecurityAdapter) {
+    return activeSecurityAdapter.isConfigured();
+  }
   return /^postgres(?:ql)?:\/\//.test(process.env.DATABASE_URL||'') && !!process.env.STUDIO_ADMIN_ID?.trim() &&
     (process.env.STUDIO_ADMIN_PASSWORD?.length ?? 0) >= 16 &&
     (process.env.STUDIO_SESSION_SECRET?.length ?? 0) >= 32;
@@ -21,6 +33,9 @@ function fingerprint() {
 function hash(value: string) { return createHash('sha256').update(value).digest('hex'); }
 
 export async function verifyAdmin(id: string, password: string) {
+  if (activeSecurityAdapter) {
+    return activeSecurityAdapter.verifyAdmin(id, password);
+  }
   if (!studioConfigured()) return false;
   const salt = process.env.STUDIO_SESSION_SECRET!;
   const [actual, expected] = await Promise.all([
@@ -32,6 +47,9 @@ export async function verifyAdmin(id: string, password: string) {
 
 /** Durable account-wide throttle cannot be evaded by changing a browser or IP. */
 export async function allowLoginAttempt() {
+  if (activeSecurityAdapter) {
+    return activeSecurityAdapter.recordLoginAttempt('owner', 10, 15);
+  }
   const sql = studioDb();
   const rows = await sql`INSERT INTO rivya_studio_login_limits (key, attempts, reset_at)
     VALUES ('owner', 1, now() + interval '15 minutes')
@@ -41,8 +59,16 @@ export async function allowLoginAttempt() {
     RETURNING attempts`;
   return Number(rows[0].attempts) <= 10;
 }
-export async function hashStaffPassword(password:string){const salt=randomBytes(16).toString('hex');return `${salt}:${((await derive(password,salt,64)) as Buffer).toString('hex')}`;}
+export async function hashStaffPassword(password:string){
+  if (activeSecurityAdapter) {
+    return activeSecurityAdapter.hashPassword(password);
+  }
+  const salt=randomBytes(16).toString('hex');return `${salt}:${((await derive(password,salt,64)) as Buffer).toString('hex')}`;
+}
 export async function authenticateStaff(id:string,password:string):Promise<StaffSession|null>{
+ if (activeSecurityAdapter) {
+   return activeSecurityAdapter.authenticateStaff(id, password);
+ }
  if(await verifyAdmin(id,password))return {adminId:process.env.STUDIO_ADMIN_ID!,role:'admin',staffId:null};
  const rows=await studioDb()`SELECT id,login,password_hash,role,version FROM rivya_staff WHERE lower(login)=lower(${id}) AND active=true`;
  const row=rows[0];const [salt,expected]=(row?.password_hash||'00000000000000000000000000000000:'+ '0'.repeat(128)).split(':');
@@ -50,6 +76,9 @@ export async function authenticateStaff(id:string,password:string):Promise<Staff
  return row&&timingSafeEqual(actual,Buffer.from(expected,'hex'))?{adminId:row.login,role:row.role,staffId:row.id,credentialVersion:row.version}:null;
 }
 export async function createStudioSession(identity?:StaffSession) {
+  if (activeSecurityAdapter) {
+    return activeSecurityAdapter.createStudioSession(identity);
+  }
   const sql = studioDb();
   const token = randomBytes(32).toString('base64url');
   const staffId=identity?.staffId||null;
@@ -66,6 +95,9 @@ export async function createStudioSession(identity?:StaffSession) {
 }
 export async function studioSession() {return studioSessionFromToken((await cookies()).get(sessionCookie)?.value);}
 export async function studioSessionFromToken(token:string|undefined) {
+  if (activeSecurityAdapter) {
+    return activeSecurityAdapter.studioSessionFromToken(token);
+  }
   if (!studioConfigured()) return null;
   if (!token || !/^[A-Za-z0-9_-]{43}$/.test(token)) return null;
   const sql = studioDb();
@@ -93,6 +125,10 @@ export async function requireStudioSession() {
 }
 export async function revokeStudioSession() {
   const token = (await cookies()).get(sessionCookie)?.value;
+  if (activeSecurityAdapter) {
+    await activeSecurityAdapter.revokeStudioSession(token);
+    return;
+  }
   if (token && process.env.DATABASE_URL) {
     const sql = studioDb();
     await sql`DELETE FROM rivya_studio_sessions WHERE token_hash = ${hash(token)}`;
