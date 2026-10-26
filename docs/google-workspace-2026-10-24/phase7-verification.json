@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "baseCheckpoint": "474329b61d31bfefc6da8f69904cb067568eb4fa",
+  "scope": "LOCAL_PHASE_7_SCRAPER_EXPANSION",
+  "phases": {
+    "phase0": "AUDIT_COMPLETE_WITH_DOCUMENTED_ACCESS_GAPS",
+    "phase1": "LOCAL_ARCHITECTURE_AND_PLAN_COMPLETE",
+    "phase2": "LOCAL_FOUNDATION_DELIVERED_AND_MERGED_PR_67",
+    "phase3": "REHEARSAL_IMPORTER_AND_RECONCILIATION_REPORTING_VERIFIED",
+    "phase4": "BACKEND_REPLACEMENT_ADAPTERS_VERIFIED",
+    "phase5": "AUTHENTICATED_STUDIO_REDESIGN_AND_WORKFLOW_PARITY_VERIFIED",
+    "phase6": "MEDIA_CONTENT_AND_FILTERS_VERIFIED",
+    "phase7": "SCRAPER_EXPANSION_VERIFIED"
+  },
+  "tasks": {
+    "GW-700": {
+      "name": "Vendor source registry, compliance metadata, and access control boundaries",
+      "modules": [
+        "src/lib/google-workspace/scraper-registry.ts",
+        "src/components/studio/legacy-sources.json",
+        "src/components/studio/legacy-scraper-reference.tsx"
+      ],
+      "tests": "tests/google-workspace-scraper-expansion.test.mjs",
+      "testCount": 1,
+      "passed": 1,
+      "status": "COMPLETE_AND_VERIFIED"
+    },
+    "GW-701": {
+      "name": "Bounded scraper adapters, rate-limiting, deduplication, and cancellation tokens",
+      "modules": [
+        "src/lib/google-workspace/scraper-adapters.ts"
+      ],
+      "tests": "tests/google-workspace-scraper-expansion.test.mjs",
+      "testCount": 1,
+      "passed": 1,
+      "status": "COMPLETE_AND_VERIFIED"
+    },
+    "GW-702": {
+      "name": "Candidate review, proposed mappings, filtering, and strict product creation prohibition",
+      "modules": [
+        "src/lib/google-workspace/scraper-handoff.ts"
+      ],
+      "tests": "tests/google-workspace-scraper-expansion.test.mjs",
+      "testCount": 1,
+      "passed": 1,
+      "status": "COMPLETE_AND_VERIFIED"
+    }
+  },
+  "checks": {
+    "unitTests": {
+      "googleWorkspaceTests": 46,
+      "passed": 46,
+      "failed": 0
+    },
+    "preflight": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "lint": {
+      "errors": 0,
+      "warnings": 62,
+      "classification": "existing warnings; Phase 7 source files lint clean with zero errors"
+    },
+    "typescript": {
+      "errors": 0,
+      "status": "PASS"
+    }
+  },
+  "preservation": {
+    "scope": "ISOLATED_CANDIDATE_RESEARCH_SEPARATED_FROM_CATALOGUE",
+    "registeredVendors": 23,
+    "activeAutomatedVendors": 4,
+    "manualResearchVendors": 19,
+    "zeroBypassAccessControls": true,
+    "zeroProductCreation": true,
+    "publicCreations": 169,
+    "variants": 507,
+    "publicDesignPreserved": true,
+    "studioLoginPreserved": true,
+    "existingProviderAuthoritative": true,
+    "zeroInventedReviews": true,
+    "zeroProductsAdded": true
+  },
+  "externalEffects": {
+    "googleResourcesCreated": 0,
+    "googleWrites": 0,
+    "productionDatabaseWrites": 0,
+    "cmsPublications": 0,
+    "externalMessages": 0
+  }
+}
