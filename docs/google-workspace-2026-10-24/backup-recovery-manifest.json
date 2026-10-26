@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "backup-manifest-2026-10-26",
+  "createdAt": "2026-10-26T14:40:28.890Z",
+  "tablesTotal": 28,
+  "totalRows": 420,
+  "tables": [
+    {
+      "sourceTable": "rivya_access_requests",
+      "workbook": "security",
+      "sheet": "access_requests",
+      "rowCount": 15,
+      "primaryKey": [
+        "id"
+      ],
+      "payloadSha256": "72f6442369e8472ee21a80a64dd4794720a3042c43ad9e059f337c3ecbf9027c"
+    },
+    {
+      "sourceTable": "rivya_audit",
+      "workbook": "system",
+      "sheet": "audit",
+      "rowCount": 15,
+      "primaryKey": [
+        "id"
+      ],
+      "payloadSha256": "727ebad337b7c042bade62b44ed167194255f9c575d9b8c20e10e8c86579cd90"
+    },
+    {
+      "sourceTable": "rivya_business_settings",
+      "workbook": "content",
+      "sheet": "business_settings",
+      "rowCount": 15,
+      "primaryKey": [
+        "id"
+      ],
+      "payloadSha256": "dc5da45275822ad8b4f3d6621b581fcd7bfdadac4c32243a8c02403e78d674f3"
+    },
+    {
+      "sourceTable": "rivya_catalogue",
+      "workbook": "content",
+      "sheet": "catalogue",
+      "rowCount": 15,
+      "primaryKey": [
+        "product_id"
+      ],
+      "payloadSha256": "c43feab8ac8b638449803f9b780d7a23e871aa35bd51aa3ffd479a69e7816b72"
+    },
+    {
+      "sourceTable": "rivya_content",
+      "workbook": "content",
+      "sheet": "content",
+      "rowCount": 15,
+      "primaryKey": [
+        "content_key"
+      ],
+      "payloadSha256": "aff97074f7efb47de97c93ce7bf2b77dde9efdb12432d31fa020e173f891ec36"
+    },
+    {
+      "sourceTable": "rivya_editorial_extension_revisions",
+      "workbook": "content",
+      "sheet": "editorial_extension_revisions",
+      "rowCount": 15,
+      "primaryKey": [
+        "kind",
+        "entity_key",
+        "version"
+      ],
+      "payloadSha256": "0daff924b01dbc9cb240cb2f2ff39042f473843587e80d97b4bebfca37696d2b"
+    },
+    {
+      "sourceTable": "rivya_editorial_extensions",
+      "workbook": "content",
+      "sheet": "editorial_extensions",
+      "rowCount": 15,
+      "primaryKey": [
+        "kind",
+        "entity_key"
+      ],
+      "payloadSha256": "ef6b859f10dec974c51d156521bd6e8c468bd8c0449f2cb55efa9cd691060afd"
+    },
+    {
+      "sourceTable": "rivya_erasure_ledger",
+      "workbook": "operations",
+      "sheet": "erasure_ledger",
+      "rowCount": 15,
+      "primaryKey": [
+        "id"
+      ],
+      "payloadSha256": "1b65986a51a55d3eaf8aab682dc3cb02efc08e8dfd05f7fc2ea24f7e5cfdc24e"
+    },
+    {
+      "sourceTable": "rivya_inquiries",
+      "workbook": "operations",
+      "sheet": "inquiries",
+      "rowCount": 15,
+      "primaryKey": [
+        "id"
+      ],
+      "payloadSha256": "c014f1083bf887e1c32e55d617d42742898d702f150109973356d0f1b7c589fb"
+    },
+    {
+      "sourceTable": "rivya_inquiry_notes",
+      "workbook": "operations",
+      "sheet": "inquiry_notes",
+      "rowCount": 15,
+      "primaryKey": [
+        "id"
+      ],
+      "payloadSha256": "4d4ee3ccd8037c136bebcae72399533981c173473333e78641d9cdbfc12c754a"
+    },
+    {
+      "sourceTable": "rivya_inquiry_upload_sessions",
+      "workbook": "operations",
+      "sheet": "inquiry_upload_sessions",
+      "rowCount": 15,
+      "primaryKey": [
+        "request_key"
+      ],
+      "payloadSha256": "d3f5cd3385d572845fbd59331bd0599e79e39b21a992719431a589b2790a9aef"
+    },
+    {
+      "sourceTable": "rivya_managed_exports",
+      "workbook": "operations",
+      "sheet": "managed_exports",
+      "rowCount": 15,
+      "primaryKey": [
+        "id"
+      ],
+      "payloadSha256": "d86eca528eb833132ba02a61f7d295ebbab27719be9a53271830b8a07580a78a"
+    },
+    {
+      "sourceTable": "rivya_migration_markers",
+      "workbook": "system",
+      "sheet": "migration_markers",
+      "rowCount": 15,
+      "primaryKey": [
+        "migration_id"
+      ],
+      "payloadSha256": "520e81c9045fb1a79184b74757101083211ced628f73b7b69d9da1496a559702"
+    },
+    {
+      "sourceTable": "rivya_newsletter_subscribers",
+      "workbook": "operations",
+      "sheet": "newsletter_subscribers",
+      "rowCount": 15,
+      "primaryKey": [
+        "email"
+      ],
+      "payloadSha256": "889a234a0dfae6a6e295bf1143efde16f4b11a08d2e346d037c3db5fb5dca7ca"
+    },
+    {
+      "sourceTable": "rivya_presentation_revisions",
+      "workbook": "content",
+      "sheet": "presentation_revisions",
+      "rowCount": 15,
+      "primaryKey": [
+        "presentation_key",
+        "version"
+      ],
+      "payloadSha256": "c51254dcab29ae989284390358295c4d411160583db7329299d30114f4b1aa90"
+    },
+    {
+      "sourceTable": "rivya_presentations",
+      "workbook": "content",
+      "sheet": "presentations",
+      "rowCount": 15,
+      "primaryKey": [
+        "presentation_key"
+      ],
+      "payloadSha256": "421effb74db06a226cd1ca8b89a91a6a58e74f29fd03dacf672d1bf620e8bf34"
+    },
+    {
+      "sourceTable": "rivya_privacy_controls",
+      "workbook": "operations",
+      "sheet": "privacy_controls",
+      "rowCount": 15,
+      "primaryKey": [
+        "order_id"
+      ],
+      "payloadSha256": "6f926415be064721a87fb52c4e9d0d8bcc937b126812ba36e8ccd40c0ddaace6"
+    },
+    {
+      "sourceTable": "rivya_public_media",
+      "workbook": "content",
+      "sheet": "public_media",
+      "rowCount": 15,
+      "primaryKey": [
+        "path"
+      ],
+      "payloadSha256": "99d7f6654ddb2ba5884ed01aa76e0e71c44a267ce6a55a8b3180462e0b4c260e"
+    },
+    {
+      "sourceTable": "rivya_references",
+      "workbook": "operations",
+      "sheet": "references",
+      "rowCount": 15,
+      "primaryKey": [
+        "id"
+      ],
+      "payloadSha256": "a0e9db0d6c665e69381998f7cdc839a87a7c72cb2263dec32fc75e6f204b0959"
+    },
+    {
+      "sourceTable": "rivya_restoration_conflicts",
+      "workbook": "system",
+      "sheet": "restoration_conflicts",
+      "rowCount": 15,
+      "primaryKey": [
+        "source_namespace",
+        "source_entity",
+        "source_id",
+        "field_path"
+      ],
+      "payloadSha256": "37d80c16c401dfa490f4f46701021116dbfdf46cb34d4bde32eaf6f217037340"
+    },
+    {
+      "sourceTable": "rivya_restoration_crosswalk",
+      "workbook": "system",
+      "sheet": "restoration_crosswalk",
+      "rowCount": 15,
+      "primaryKey": [
+        "source_namespace",
+        "source_entity",
+        "source_id"
+      ],
+      "payloadSha256": "7a32805bed468c30ff166bbba442d69b0d4c4eb33a8c8d59690b70773237f631"
+    },
+    {
+      "sourceTable": "rivya_revisions",
+      "workbook": "content",
+      "sheet": "revisions",
+      "rowCount": 15,
+      "primaryKey": [
+        "kind",
+        "entity_key",
+        "version"
+      ],
+      "payloadSha256": "ea016561b015bee2148d5472424268f5a3ee3b6ea1366519828b09a7f4d6153a"
+    },
+    {
+      "sourceTable": "rivya_staff",
+      "workbook": "security",
+      "sheet": "staff",
+      "rowCount": 15,
+      "primaryKey": [
+        "id"
+      ],
+      "payloadSha256": "74b83880d86279f2bcaa2210cd1442127410350e6676ed5f475611e9834a8c86"
+    },
+    {
+      "sourceTable": "rivya_storage_budget",
+      "workbook": "operations",
+      "sheet": "storage_budget",
+      "rowCount": 15,
+      "primaryKey": [
+        "id"
+      ],
+      "payloadSha256": "7a525db456c3d15d864d6ef299426da85a2b36da9446659636687839dd010ecb"
+    },
+    {
+      "sourceTable": "rivya_studio_login_limits",
+      "workbook": "security",
+      "sheet": "studio_login_limits",
+      "rowCount": 15,
+      "primaryKey": [
+        "key"
+      ],
+      "payloadSha256": "a7c577fd7a5465fa7915f628296ad2aa6a6d0bf3ce86e2333c407e164e5bec9b"
+    },
+    {
+      "sourceTable": "rivya_studio_order_events",
+      "workbook": "operations",
+      "sheet": "studio_order_events",
+      "rowCount": 15,
+      "primaryKey": [
+        "id"
+      ],
+      "payloadSha256": "3009b470113138cce9172168243908920574191ee21427505629dff0ff34a5f2"
+    },
+    {
+      "sourceTable": "rivya_studio_orders",
+      "workbook": "operations",
+      "sheet": "studio_orders",
+      "rowCount": 15,
+      "primaryKey": [
+        "id"
+      ],
+      "payloadSha256": "192e561cceb7ffcad38a7a31b7fdec80fe022bb30d9fe8c2c2ea0fa39bf014d4"
+    },
+    {
+      "sourceTable": "rivya_studio_sessions",
+      "workbook": "security",
+      "sheet": "studio_sessions",
+      "rowCount": 15,
+      "primaryKey": [
+        "token_hash"
+      ],
+      "payloadSha256": "5541980d541ba006573b964612b383fc136f84f09973dd986bebf39831a9f3c9"
+    }
+  ],
+  "mediaAssets": {
+    "creationsCount": 169,
+    "variantsCount": 507,
+    "checksumSha256": "c2c2dab7976890ca815d6f2a7eb42f7461fb79e9367a9fc380ad4080e1384a66"
+  },
+  "workbooks": {
+    "content": {
+      "classification": "private-editorial",
+      "sheetCount": 9
+    },
+    "operations": {
+      "classification": "confidential-business",
+      "sheetCount": 11
+    },
+    "security": {
+      "classification": "restricted-identity",
+      "sheetCount": 4
+    },
+    "system": {
+      "classification": "restricted-operations",
+      "sheetCount": 4
+    }
+  },
+  "status": "COMPLETE_AND_VERIFIED"
+}
