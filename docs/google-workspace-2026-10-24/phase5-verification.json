@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "baseCheckpoint": "9b68ac29e64e1cb55b965ba3dd9c0dbf80e55097",
+  "scope": "LOCAL_PHASE_5_AUTHENTICATED_STUDIO_REDESIGN",
+  "phases": {
+    "phase0": "AUDIT_COMPLETE_WITH_DOCUMENTED_ACCESS_GAPS",
+    "phase1": "LOCAL_ARCHITECTURE_AND_PLAN_COMPLETE",
+    "phase2": "LOCAL_FOUNDATION_DELIVERED_AND_MERGED_PR_67",
+    "phase3": "REHEARSAL_IMPORTER_AND_RECONCILIATION_REPORTING_VERIFIED",
+    "phase4": "BACKEND_REPLACEMENT_ADAPTERS_VERIFIED",
+    "phase5": "AUTHENTICATED_STUDIO_REDESIGN_AND_WORKFLOW_PARITY_VERIFIED"
+  },
+  "tasks": {
+    "GW-500": {
+      "name": "Studio modules workflow classification, workspace layout, and workflow ledger",
+      "modules": [
+        "src/lib/studio-modules.ts",
+        "src/components/studio/workspace.tsx",
+        "src/components/studio/workspace.module.css",
+        "docs/google-workspace-2026-10-24/studio-workflow-ledger.csv"
+      ],
+      "tests": "tests/google-workspace-studio-workflows.test.mjs",
+      "testCount": 2,
+      "passed": 2,
+      "status": "COMPLETE_AND_VERIFIED"
+    },
+    "GW-501": {
+      "name": "Entity workspaces, route admission, role scoping, and child href resolution",
+      "modules": [
+        "src/lib/studio-modules.ts",
+        "src/lib/studio-work-queue.ts",
+        "src/components/studio/workspace.tsx"
+      ],
+      "tests": "tests/google-workspace-studio-workflows.test.mjs",
+      "testCount": 2,
+      "passed": 2,
+      "status": "COMPLETE_AND_VERIFIED"
+    },
+    "GW-502": {
+      "name": "Responsive breakpoints, style isolation, and accessibility compliance",
+      "modules": [
+        "src/components/studio/workspace.module.css"
+      ],
+      "tests": "tests/google-workspace-studio-workflows.test.mjs",
+      "testCount": 1,
+      "passed": 1,
+      "status": "COMPLETE_AND_VERIFIED"
+    }
+  },
+  "checks": {
+    "unitTests": {
+      "googleWorkspaceTests": 37,
+      "passed": 37,
+      "failed": 0
+    },
+    "preflight": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "lint": {
+      "errors": 0,
+      "warnings": 62,
+      "classification": "existing warnings; Phase 5 source files lint clean with zero errors"
+    },
+    "typescript": {
+      "errors": 0,
+      "status": "PASS"
+    }
+  },
+  "preservation": {
+    "scope": "EXISTING_SYNTHETIC_LOOPBACK_QA_AND_APPROVED_MEDIA_ONLY",
+    "rows": 406,
+    "tables": 28,
+    "columns": 230,
+    "constraints": 45,
+    "allRowsUnchanged": true,
+    "schemaUnchanged": true,
+    "publicCreations": 169,
+    "variants": 507,
+    "publicDesignPreserved": true,
+    "studioLoginPreserved": true,
+    "existingProviderAuthoritative": true
+  },
+  "externalEffects": {
+    "googleResourcesCreated": 0,
+    "googleWrites": 0,
+    "productionDatabaseWrites": 0,
+    "cmsPublications": 0,
+    "externalMessages": 0
+  }
+}
