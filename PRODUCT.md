@@ -1,4 +1,12 @@
-# Current continuation — Gemini/Antigravity handoff and existing-sandbox audit
+# Current status — Phase 3 complete locally, PR prepared on codex/google-cloud-acceptance
+
+26 October 2026. Phase 3 (isolated migration rehearsal, checkpointing, and reconciliation reporting: tasks GW-300, GW-301, GW-302) is **complete locally and verified** on branch **`codex/google-cloud-acceptance`** from release checkpoint `36fbaf14f24ae6e62ba31ef720989bf306563b67` (merged PR #67 into GitHub `main`). Full check passes 688/691 tests (all 9 new Phase 3 tests pass; 3 known Windows environment differences), preflight passes 12/12, route typegen and TypeScript pass with 0 errors, and ESLint passes with 0 errors (62 existing warnings). Reconciliation rehearsal verifies 28/28 canonical tables and 169 creations / 507 variants with 0 duplicate commits on interrupted resumption. Read [the Phase 3 checkpoint](docs/google-workspace-2026-10-24/PHASE-3-CHECKPOINT.md), [PR description](docs/google-workspace-2026-10-24/PHASE-3-PR.md), and [verification receipt](docs/google-workspace-2026-10-24/phase3-verification.json).
+
+Preserve approved public design, Studio login/security, current provider authority, all data/media/IDs/URLs/prices/relationships and the 169-image collection. Zero products added, zero archived imports, no reseeding, no deleted-database recovery, no request repair replay, no Photos revisit or regeneration. Zero Google cloud writes, zero Drive resources created, zero production database writes, zero CMS publications. Phase deliveries continue through detailed new PRs from `codex/google-cloud-acceptance` into `main`, never direct push. Earlier entries below are historical.
+
+---
+
+# Historical continuation — Gemini/Antigravity handoff and existing-sandbox audit
 
 26 October 2026. Continue **`codex/google-cloud-acceptance`** and existing **PR #67**; main remains the observed PR #66 checkpoint `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30`. The same-branch owner instruction supersedes the older generic new-branch prompt. Read [the current handoff checkpoint](docs/google-workspace-2026-10-24/ANTIGRAVITY-HANDOFF-CHECKPOINT.md), [verification](docs/google-workspace-2026-10-24/antigravity-handoff-verification.json), [complete Gemini/Antigravity prompt](docs/google-workspace-2026-10-24/CONTINUE-IN-GEMINI-ANTIGRAVITY.md) and [local/offline runbook](docs/google-workspace-2026-10-24/LOCAL-OFFLINE-RUNBOOK.md) first.
 
