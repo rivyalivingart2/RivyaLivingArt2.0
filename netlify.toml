@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22.23.2"
+  NPM_VERSION = "10.9.2"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+# The Next.js adapter handles App Router, API routes, images and private responses.
+# No SPA catch-all redirect: it would break the Studio and API authentication.
+# Runtime secrets and RIVYA_DEPLOY_CONTEXT must be set through Netlify's
+# environment API/UI for each deploy context; TOML values are build-only.
+[context.deploy-preview.environment]
+  SITE_INDEXABLE = "false"
+
+[context.branch-deploy.environment]
+  SITE_INDEXABLE = "false"

@@ -1,6 +1,7 @@
 import {publishedSiteSettings} from '@/lib/site-settings';
 import {isLocale,publicJourneyLocales} from '@/lib/site-settings-model';
 import {originAllowed,smallJson} from '@/lib/request-security';
+import {secureCookies} from '@/lib/hosting-environment';
 export async function POST(request:Request){
  if(!originAllowed(request))return Response.json({error:'Request not allowed.'},{status:403});
  try{
@@ -8,7 +9,7 @@ export async function POST(request:Request){
   const {settings}=await publishedSiteSettings();
   if(!isLocale(locale)||!settings.localization.enabled||!publicJourneyLocales(settings.localization.enabledLocales).includes(locale))return Response.json({error:'This language is not enabled.'},{status:400});
   const response=Response.json({saved:true,locale});
-  response.headers.append('Set-Cookie',`NEXT_LOCALE=${locale}; Path=/; Max-Age=31536000; SameSite=Lax${process.env.VERCEL_ENV==='production'?'; Secure':''}`);
+  response.headers.append('Set-Cookie',`NEXT_LOCALE=${locale}; Path=/; Max-Age=31536000; SameSite=Lax${secureCookies(process.env)?'; Secure':''}`);
   return response;
  }catch{return Response.json({error:'Language preference could not be saved.'},{status:400});}
 }

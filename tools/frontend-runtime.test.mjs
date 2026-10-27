@@ -55,7 +55,7 @@ async function startBuiltServer(t, mode) {
   const env = { ...process.env, NODE_ENV: 'production', NEXT_TELEMETRY_DISABLED: '1' };
   // Deliberately isolate deployment-policy cases in child processes only.
   // Blank explicitly: deleting these keys lets Next reload live .env.local values.
-  Object.assign(env,{VERCEL_ENV:'',VERCEL:'',RIVYA_VISUAL_PREVIEW:'0',RIVYA_ENV:'',RIVYA_DATA_MODE:'isolated',DATABASE_URL:'',DATABASE_URL_UNPOOLED:'',BLOB_READ_WRITE_TOKEN:'',STUDIO_ADMIN_ID:'',STUDIO_ADMIN_PASSWORD:'',STUDIO_SESSION_SECRET:'',RIVYA_ORDER_INTAKE_ENABLED:'false',RIVYA_ORDER_MESSAGE_RETRY_ENABLED:'false',SITE_INDEXABLE:'false'});
+  Object.assign(env,{NETLIFY:'',SITE_ID:'',SITE_NAME:'',CONTEXT:'',RIVYA_HOSTING_PROVIDER:'',RIVYA_DEPLOY_CONTEXT:'',VERCEL_ENV:'',VERCEL:'',RIVYA_VISUAL_PREVIEW:'0',RIVYA_ENV:'',RIVYA_DATA_MODE:'isolated',DATABASE_URL:'',DATABASE_URL_UNPOOLED:'',BLOB_READ_WRITE_TOKEN:'',STUDIO_ADMIN_ID:'',STUDIO_ADMIN_PASSWORD:'',STUDIO_SESSION_SECRET:'',RIVYA_ORDER_INTAKE_ENABLED:'false',RIVYA_ORDER_MESSAGE_RETRY_ENABLED:'false',SITE_INDEXABLE:'false'});
   Object.assign(env, mode);
   const child = spawn(process.execPath, [nextBin, 'start', '--hostname', '127.0.0.1', '--port', String(port)], {
     cwd: root,
@@ -113,8 +113,8 @@ function assertNoindex(response, path) {
 // Positive published-page coverage lives in tools/release-qa/public.mjs against
 // a verified disposable database. Source fixtures never replace published data.
 test('built frontend HTTP access and publication boundaries', async t => {
-  for (const mode of [{VERCEL_ENV:'preview',RIVYA_PUBLISHED_PREVIEW:'1'},{VERCEL_ENV:'production',RIVYA_VISUAL_PREVIEW:'1'}]) {
-    await t.test(`${mode.VERCEL_ENV} fails closed when published storage is unavailable`, async t => {
+  for (const mode of [{VERCEL_ENV:'preview',RIVYA_PUBLISHED_PREVIEW:'1'},{VERCEL_ENV:'production',RIVYA_VISUAL_PREVIEW:'1'}, {SITE_ID:'synthetic-site',SITE_NAME:'synthetic-name',RIVYA_DEPLOY_CONTEXT:'production',RIVYA_VISUAL_PREVIEW:'1'}, {SITE_ID:'synthetic-site',SITE_NAME:'synthetic-name',RIVYA_DEPLOY_CONTEXT:'deploy-preview',RIVYA_PUBLISHED_PREVIEW:'1',RIVYA_ENV:'production'}]) {
+    await t.test(`${mode.VERCEL_ENV || 'netlify '+mode.RIVYA_DEPLOY_CONTEXT} fails closed when published storage is unavailable`, async t => {
       const origin = await startBuiltServer(t, mode);
       for (const path of ['/', ...fixtureRoutes, ...creationRoutes]) await t.test(`GET ${path} does not publish fallback data`, async () => {
         const { response, html } = await getPage(origin, path);

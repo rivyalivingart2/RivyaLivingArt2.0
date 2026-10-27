@@ -1,4 +1,5 @@
 import {notFound} from 'next/navigation';
+import {isHostedEnvironment} from '@/lib/hosting-environment';
 import {requireStudioSession} from '@/lib/studio-auth';
 import {PrivateStudioEntry} from '@/components/rivya/private-studio-entry';
 import {LegacyScraperReference} from '@/components/studio/legacy-scraper-reference';
@@ -15,7 +16,7 @@ export const dynamic='force-dynamic';
 export const metadata={title:'Legacy scraper reference',robots:{index:false,follow:false,noarchive:true}};
 export default async function RestorationReference({searchParams}:{searchParams:Promise<{view?:string;fixture?:string}>}){
  const session=await requireStudioSession();
- if(process.env.RIVYA_DATA_MODE!=='isolated'||process.env.RIVYA_QA_TARGET!=='exact-legacy-local'||process.env.RIVYA_RESTORATION_LOCAL!=='true'||process.env.VERCEL)notFound();
+ if(process.env.RIVYA_DATA_MODE!=='isolated'||process.env.RIVYA_QA_TARGET!=='exact-legacy-local'||process.env.RIVYA_RESTORATION_LOCAL!=='true'||isHostedEnvironment(process.env))notFound();
  const query=await searchParams;
  if(query.view==='foundations'){
   const mediaPaths=[specimen.workshops.image.path,specimen.printing.image.path,...specimen.principles.sections.map(s=>s.image.path)];

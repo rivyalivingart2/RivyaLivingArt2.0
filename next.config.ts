@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import {isProductionWebsite} from './src/lib/public-website';
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
@@ -25,7 +26,7 @@ const nextConfig: NextConfig = {
     return [{ source: "/:path*", headers: [
       { key: "X-Content-Type-Options", value: "nosniff" },
       { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-      ...((process.env.SITE_INDEXABLE==='true'&&(process.env.VERCEL_ENV?process.env.VERCEL_ENV==='production':process.env.RIVYA_ENV==='production'))?[]:[{ key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' }]),
+      ...((process.env.SITE_INDEXABLE==='true'&&isProductionWebsite(process.env))?[]:[{ key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' }]),
     ] }, ...['/en/:path*','/hi/:path*','/gu/:path*','/ar/:path*','/es/:path*','/de/:path*','/fr/:path*','/zh/:path*','/ja/:path*','/shop/:path*','/blog/:path*','/product/:path*','/custom-order','/large-resin-art','/whatsapp-order','/workshops'].map(source=>({source,headers:[
       // next.config headers take precedence over Route Handler headers.
       // Old links can carry private tokens; never send their URL as a referrer.

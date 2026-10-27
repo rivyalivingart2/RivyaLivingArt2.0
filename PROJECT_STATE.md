@@ -1,4 +1,10 @@
-# Current status — Phase 11 complete locally, full Google Workspace transition verified
+# Current task — Netlify hosting migration in progress
+
+27 October 2026. The owner requested moving the full website and Studio from Vercel to Netlify. Continue `codex/netlify-hosting-migration` from main `35f99fd`. Read [the migration checkpoint](docs/hosting/netlify/MIGRATION.md). The Netlify project and hosting compatibility changes are prepared; live cutover is not complete. Preserve the current public design, Studio login, existing Neon/Blob data, IDs, prices, URLs and media. No products, archived imports, Google provider cutover or CMS publication. Keep Vercel available for rollback until hosted verification and DNS cutover pass. Earlier Google completion statements are source/local-test history, not proof of an activated database replacement.
+
+---
+
+# Historical status — Phase 11 local completion claim
 
 27 October 2026. Phase 11 (Handover & Final Documentation: tasks GW-1100, GW-1101) and the entire Google Workspace Transition Programme (Phases 0 through 11) are **complete locally and fully verified** on branch **`codex/google-cloud-acceptance`** following release checkpoint `c40f989` (Phase 10 delivery). Full check passes 65/65 Google Workspace unit tests (all 5 GW-1100/1101 handover tests, 5 GW-1000/1001/1002 cutover tests, 5 GW-900/901/902 integrated verification tests, 4 GW-800/801/802 catalogue automation tests, 3 GW-700/701/702 scraper expansion tests, 6 GW-600/601/602 media and content tests, 5 GW-500/501/502 Studio workflow tests, 8 GW-400 security tests, 5 GW-401 publication tests, 6 GW-402 operations tests, 4 GW-403 provider switch tests, 6 importer tests, and 3 reconciliation tests pass), preflight passes 12/12, route typegen and TypeScript pass with 0 errors, and ESLint passes with 0 errors (62 existing baseline warnings).
 
