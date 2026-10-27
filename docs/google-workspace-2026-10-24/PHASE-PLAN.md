@@ -148,7 +148,7 @@ The current architecture maps the 28 actual tables into four permission-separate
 
 ## Phase 10 — Controlled cutover and release
 
-**Objective/status:** the future Google storage cutover and its release remain planned and unauthorized. The current Phase 0–2 source PR/main publication is a separate owner-authorized release and does not activate Google storage.
+**Objective/status:** complete locally and verified on `codex/google-cloud-acceptance`. Cutover runbook (`cutover-runbook.ts`), backup/recovery manifest across all 28 canonical tables and 169 creations / 507 variants (`backup-recovery-manifest.json`), bounded write pause protocol (<= 30s budget), authority switch state machine with authorization gating (`RIVYA_CUTOVER_AUTHORIZED`), simulated dry-run validation, emergency abort/rollback (< 15s budget), and read-only production acceptance (`production-acceptance.ts`) are delivered and verified. Live production cutover retains separate concrete authorization.
 
 | Task | Files/modules and deliverable | Dependency and impact | Acceptance and evidence |
 | --- | --- | --- | --- |
@@ -160,7 +160,7 @@ The current architecture maps the 28 actual tables into four permission-separate
 
 ## Phase 11 — Handover
 
-**Objective/status:** planned; this audit and plan are the first documentation inputs.
+**Objective/status:** complete locally and verified on `codex/google-cloud-acceptance`. Documentation synchronized across all project status files (`AGENTS.md`, `PROJECT_STATE.md`, `PRODUCT.md`, `README.md`, `docs/decisions/2026-10-24-sheets-drive.md`, `PHASE-PLAN.md`); comprehensive Owner Operating Guide (`OWNER-OPERATING-GUIDE.md`), Issue & Limitation Register (`ISSUE-REGISTER.md`), programmatic verification module (`src/lib/google-workspace/handover.ts`), and clean process hygiene delivered. Full check passes 65/65 Google Workspace unit tests.
 
 | Task | Files/modules and deliverable | Dependency and impact | Acceptance and evidence |
 | --- | --- | --- | --- |

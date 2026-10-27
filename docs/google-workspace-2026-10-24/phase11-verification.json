@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "baseCheckpoint": "c40f9898159c8fc6ab396e6fb75ebeaf7b56ea67",
+  "scope": "LOCAL_PHASE_11_HANDOVER_AND_FINAL_DOCUMENTATION",
+  "phases": {
+    "phase0": "AUDIT_COMPLETE_WITH_DOCUMENTED_ACCESS_GAPS",
+    "phase1": "LOCAL_ARCHITECTURE_AND_PLAN_COMPLETE",
+    "phase2": "LOCAL_FOUNDATION_DELIVERED_AND_MERGED_PR_67",
+    "phase3": "REHEARSAL_IMPORTER_AND_RECONCILIATION_REPORTING_VERIFIED",
+    "phase4": "BACKEND_REPLACEMENT_ADAPTERS_VERIFIED",
+    "phase5": "AUTHENTICATED_STUDIO_REDESIGN_AND_WORKFLOW_PARITY_VERIFIED",
+    "phase6": "MEDIA_CONTENT_AND_FILTERS_VERIFIED",
+    "phase7": "SCRAPER_EXPANSION_VERIFIED",
+    "phase8": "CATALOGUE_AUTOMATION_VERIFIED",
+    "phase9": "FULL_INTEGRATED_VERIFICATION_COMPLETE",
+    "phase10": "CONTROLLED_CUTOVER_AND_RELEASE_PREPARATION_COMPLETE",
+    "phase11": "HANDOVER_AND_FINAL_DOCUMENTATION_COMPLETE"
+  },
+  "tasks": {
+    "GW-1100": {
+      "name": "Documentation synchronization across all status files, phase plans, and architectural decisions",
+      "modules": [
+        "AGENTS.md",
+        "PROJECT_STATE.md",
+        "PRODUCT.md",
+        "README.md",
+        "docs/google-workspace-2026-10-24/README.md",
+        "docs/decisions/2026-10-24-sheets-drive.md",
+        "docs/google-workspace-2026-10-24/PHASE-PLAN.md"
+      ],
+      "tests": "tests/google-workspace-handover.test.mjs",
+      "testCount": 3,
+      "passed": 3,
+      "status": "COMPLETE_AND_VERIFIED"
+    },
+    "GW-1101": {
+      "name": "Owner operating guides, issue register, programmatic verification, and task process cleanup",
+      "modules": [
+        "docs/google-workspace-2026-10-24/OWNER-OPERATING-GUIDE.md",
+        "docs/google-workspace-2026-10-24/ISSUE-REGISTER.md",
+        "src/lib/google-workspace/handover.ts"
+      ],
+      "tests": "tests/google-workspace-handover.test.mjs",
+      "testCount": 2,
+      "passed": 2,
+      "status": "COMPLETE_AND_VERIFIED"
+    }
+  },
+  "checks": {
+    "unitTests": {
+      "googleWorkspaceTests": 65,
+      "passed": 65,
+      "failed": 0
+    },
+    "preflight": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "lint": {
+      "errors": 0,
+      "warnings": 62,
+      "classification": "existing repository warnings; Phase 11 source and docs lint clean with zero errors and zero new warnings"
+    },
+    "typescript": {
+      "errors": 0,
+      "status": "PASS"
+    }
+  },
+  "workbooksMatrix": {
+    "content": {
+      "scope": "public_read_restricted_write",
+      "tables": 9
+    },
+    "operations": {
+      "scope": "operations_staff_only",
+      "tables": 11
+    },
+    "security": {
+      "scope": "superadmin_and_service_account_only",
+      "tables": 4
+    },
+    "system": {
+      "scope": "system_automated_only",
+      "tables": 4
+    },
+    "totalTables": 28
+  },
+  "preservation": {
+    "scope": "FULL_PROGRAMME_HANDOVER_WITH_ZERO_LIVE_MUTATIONS",
+    "publicCreations": 169,
+    "variants": 507,
+    "publicDesignPreserved": true,
+    "studioLoginPreserved": true,
+    "existingProviderAuthoritative": true,
+    "zeroInventedReviews": true,
+    "zeroProductsAdded": true,
+    "zeroProductCreationFromScrapers": true
+  },
+  "externalEffects": {
+    "googleResourcesCreated": 0,
+    "googleWrites": 0,
+    "productionDatabaseWrites": 0,
+    "cmsPublications": 0,
+    "externalMessages": 0
+  }
+}
