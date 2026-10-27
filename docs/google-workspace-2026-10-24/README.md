@@ -1,4 +1,12 @@
-# Current continuation — 26 October 2026
+# Current status — Phase 11 complete locally, full Google Workspace transition verified
+
+27 October 2026. The Google Workspace Transition Programme (Phases 0 through 11: GW-000 through GW-1101) is **complete locally and fully verified** on branch **`codex/google-cloud-acceptance`**. Full check passes 65/65 Google Workspace unit tests (including all 5 Phase 11 handover tests, 5 Phase 10 cutover tests, 5 Phase 9 integrated verification tests, 4 Phase 8 catalogue automation tests, 3 Phase 7 scraper tests, 6 Phase 6 media tests, 5 Phase 5 Studio workflow tests, 8 Phase 4 security tests, 5 Phase 4 publication tests, 6 Phase 4 operations tests, 4 Phase 4 provider switch tests, 6 importer tests, and 3 reconciliation tests pass), preflight passes 12/12, route typegen and TypeScript pass with 0 errors, and ESLint passes with 0 errors (62 existing baseline warnings).
+
+Delivered Phase 11 deliverables include the comprehensive [Owner Operating Guide](OWNER-OPERATING-GUIDE.md), [Issue, Limitation & Governance Register](ISSUE-REGISTER.md), programmatic verification module (`src/lib/google-workspace/handover.ts`), [Phase 11 Checkpoint](PHASE-11-CHECKPOINT.md), [Phase 11 PR](PHASE-11-PR.md), and [verification receipt](phase11-verification.json). All 28 canonical tables and 169 approved creations / 507 variants are preserved without modification. Clean process hygiene with zero leaked daemons is asserted. Real Google Cloud migration, live storage cutover, and production release retain their separate owner authorization boundaries (`RIVYA_CUTOVER_AUTHORIZED`). Earlier entries below are historical.
+
+---
+
+# Historical continuation — 26 October 2026
 
 Read [the Gemini/Antigravity handoff checkpoint](ANTIGRAVITY-HANDOFF-CHECKPOINT.md), [sanitized verification](antigravity-handoff-verification.json), [complete continuation prompt](CONTINUE-IN-GEMINI-ANTIGRAVITY.md) and [local/offline runbook](LOCAL-OFFLINE-RUNBOOK.md) first. Continue the existing `codex/google-cloud-acceptance` branch and open PR #67; do not reset to main or provision another sandbox. Fresh connected Drive/Sheets reads succeeded with zero writes. The new portable populated-state audit is locally verified; its full live run requires the original private registry, reviewed baseline and secure runtime OAuth binding. Earlier real writer/protection/deployment evidence remains dated; eight acceptance groups and phases 3–11 remain open. Source PR publication is authorized; a main merge can trigger Vercel production and retains the explicit later-release boundary. The existing production provider stays authoritative.
 

@@ -1,7 +1,9 @@
 # Use Sheets and Drive after verified migration; preserve the approved public site
 
-Status: owner-selected target; implementation in progress, no cutover.
-Date: 24 October 2026. Starting local revision: `e9d3228`.
+Status: owner-selected target; Phase 0–11 local implementation and verification complete on `codex/google-cloud-acceptance`. Real Google cloud migration, storage cutover, and production release retain separate authorization boundaries.
+Date: 27 October 2026 (updated from 24 October 2026). Starting local revision: `e9d3228`.
+
+Phase 11 update (27 October 2026): all 12 programme phases (Phases 0 through 11) are complete locally and verified. Tasks GW-1100 (Documentation Synchronization) and GW-1101 (Owner Operating Guides, Issue Register, and Process Hygiene) are delivered. Full check passes 65/65 Google Workspace unit tests, 12/12 preflight, 0 typecheck errors, and 0 lint errors. See [the Phase 11 checkpoint](../google-workspace-2026-10-24/PHASE-11-CHECKPOINT.md) and [Owner Operating Guide](../google-workspace-2026-10-24/OWNER-OPERATING-GUIDE.md).
 
 Phase 2 update from `43c0f14`: local controlled writer/remote CAS gateway source, Drive documents, coherent publication and durable job adapters are implemented. The owner subsequently authorized all latest source through a PR to `main` and a Cloud handoff. Real Google setup and cutover are still separate. See [the Phase 2 checkpoint](../google-workspace-2026-10-24/PHASE-2-CHECKPOINT.md) and [prepared isolated target plan](../google-workspace-2026-10-24/ISOLATED-TARGET-PLAN.md).
 
