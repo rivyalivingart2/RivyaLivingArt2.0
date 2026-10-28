@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "source-derived-planning-assumptions-not-runtime-configuration",
+  "reviewedAt": "2026-10-28",
+  "writer": {
+    "sandboxGridRows": 100,
+    "defaultMaxRows": 2000,
+    "gatewayMaxRows": 10000,
+    "readsPerMutation": 6,
+    "writesPerMutation": 2,
+    "readsPerReadback": 2,
+    "userReadsPerMinute": 60,
+    "userWritesPerMinute": 60
+  },
+  "sourceBindings": [
+    {
+      "path": "src/lib/google-workspace/controlled-writer.ts",
+      "sha256": "cd35ca4836193f6729f056898e461fbe9d5b34c72f5aa41d6f95dcdbcfbf3170"
+    },
+    {
+      "path": "src/lib/google-workspace/writer-gateway.ts",
+      "sha256": "056abcdffc63e29bfb803d219bd459c64b1851e1942983107fa66fcbf158b237"
+    },
+    {
+      "path": "src/lib/google-workspace/schema.json",
+      "sha256": "246acf819050e20908c7b851652e927d4335c5da1ed951edc7007f523eb627e5"
+    },
+    {
+      "path": "tools/google-workspace/apps-script/Writer.gs",
+      "sha256": "03d6f2bca96d9ab96d44af7ca09849893d0228d2fc0461ddd03df01e80d439bc"
+    }
+  ],
+  "sourceHashEncoding": "utf8-lf"
+}

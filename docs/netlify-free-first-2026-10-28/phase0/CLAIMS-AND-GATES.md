@@ -1,6 +1,6 @@
 # Historical claims and remaining evidence gates
 
-Status review at application revision `41cda9c`, refreshed by the Phase 0 inventory. Historical reports remain dated records; active conclusions below supersede their broader completion wording. The current owner scope is local Phase 0 only, with no GitHub push/PR mutation.
+Status review at application revision `41cda9c`, refreshed by the Phase 0 inventory and [read-only follow-up](FOLLOWUP.md). Historical reports remain dated records; active conclusions below supersede their broader completion wording. Current owner scope has advanced to local Phase 1 architecture, with no GitHub push/PR mutation.
 
 | Earlier claim | Current disposition | Evidence still required |
 |---|---|---|
@@ -14,10 +14,10 @@ Status review at application revision `41cda9c`, refreshed by the Phase 0 invent
 | 37 Studio routes prove old Studio workflow/design parity | **partial** | Full matrix now maps each renderer; missing routes, limited views and authenticated/browser acceptance remain explicit |
 | Scraper jobs/observations in Maps are durable | **broken as persistence claim** | Real bounded source acquisition, canonical observation/job store, durable leases/retries/history/cancellation and reviewed candidate flow |
 | Catalogue placeholder registrations/IDs/URLs prove Slides/PDF outputs | **repaired locally; real generation missing** | Previous fabricated registrations/outputs removed; actual editable templates, generated slides, exported PDF bytes, access and retry/readback required |
-| Seven width constants prove responsive verification | **broken as browser claim** | Actual captures and interactions on required surfaces/widths; current browser control fails before page inspection |
+| Seven width constants prove responsive verification | **broken as browser claim** | Limited real public browser checks now exist; full seven-width public/authenticated comparisons remain open |
 | Unconditional integrated/production READY | **repaired locally** | Evidence evaluator now rejects missing/stale/wrong-revision/simulated receipts; independent authentic receipts are still required |
 | In-process pause/ledger or a boolean performs cutover/rollback | **repaired locally** | Models are labelled simulation; unimplemented authority changes reject requests; real write fence/final delta/authority switch/recovery remain missing |
-| All retained services are free because Netlify is Free | **unverified** | Netlify account Free confirmed; retained Vercel team reports Pro; actual Vercel trial/charges and any current DB plan require separate readback |
+| All retained services are free because Netlify is Free | **unsupported** | Netlify account Free confirmed; retained Vercel team reports Pro and nonzero team-wide billed cost records. Project attribution, settled invoice/trial status and current DB plan still require separate readback |
 | Source-only canonical Netlify-host redirect is live | **partial** | Default host currently returns 200; the prepared redirect has not been deployed |
 
 Local repair test evidence belongs to commit `41cda9c`: 767/767 unit tests, 12/12 preflight, 663/663 isolated built-server HTTP checks, successful Next build/type checking and lint with 0 errors / 62 pre-existing warnings. These were observed in the preceding local repair checkpoint, not rerun wholesale in this documentation-only Phase 0 turn. HTTP tests intentionally omitted production credentials. They do not certify a Google provider or live authenticated Studio journey.
@@ -28,10 +28,10 @@ Fresh Phase 0 evidence includes the source/dependency/old-route inventory, curre
 
 | Gate | Status | Concrete dependency / next action |
 |---|---|---|
-| Current authenticated Studio observation and visual baseline | blocked | Browser extension times out at focus-emulation setup; native window presence is not page evidence. Resume real browser inspection when control works; do not extract stored sessions or invent screenshots |
+| Current authenticated Studio observation and visual baseline | blocked for authentication; public observations partial | Existing tab control worked. The old overview redirected to login when Products opened; no current authenticated workflow is certified. Limited login/Creations browser checks are in FOLLOWUP.md; no session extraction |
 | Installed Google gateway and secure credentials | blocked | Retained cloud registry/key/renewable credential binding unavailable in desktop; inspect the legitimate existing environment when accessible, without replacement/reprovisioning |
 | Provider safety acceptance | blocked | Requires actual existing sandbox binding, controlled test identities and bounded provider actions; write probes belong to the foundations phase |
-| Account/recovery inventory details | partial | Vercel hooks/schedules/integrations/billing detail, Google capacity and source backup/restore evidence remain unverified |
+| Account/recovery inventory details | partial | Seven retained archives and complete bounded team-wide billing summaries observed. Restore/current coverage, project-attributed charges/trial status, hooks/schedules/other integrations and Google capacity remain unverified |
 | Route integration and durable jobs | partial | Source foundations exist; actual current route dependencies are now enumerated for the later implementation phase |
 | Migration/media and native catalogue generation | missing | Actual isolated target copy/readback/restore and provider-created Slides/PDF outputs have not occurred |
 | New release to GitHub / main | blocked | Latest owner explicitly requires a later push instruction. Read-only inspection does not authorize branch pushes or PR creation/update |

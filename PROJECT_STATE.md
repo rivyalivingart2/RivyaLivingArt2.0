@@ -1,3 +1,9 @@
+# Current next step — Phase 1 local architecture
+
+28 October 2026. The owner instructed "now start to work on next step" after Phase 0. Read [OWNER-SCOPE.md](docs/netlify-free-first-2026-10-28/OWNER-SCOPE.md), [Phase 1](docs/netlify-free-first-2026-10-28/phase1/README.md) and [the Phase 0 follow-up](docs/netlify-free-first-2026-10-28/phase0/FOLLOWUP.md) first. Local authority/transaction/capacity and migration/recovery planning is prepared; real provider acceptance remains partial. Keep all changes local: no branch push, PR creation/update or merge until the owner explicitly instructs pushing latest changes to GitHub main. This supersedes the older Phase 0-only notice below. Preserve public/login design, all data/media, current SQL/Blob authority and OLDWEBSITE. No runtime activation, provider mutation, deployment, product additions or archived imports occurred.
+
+---
+
 # Latest owner scope — Phase 0 local audit only
 
 28 October 2026. Read [OWNER-SCOPE.md](docs/netlify-free-first-2026-10-28/OWNER-SCOPE.md) and [the Phase 0 audit](docs/netlify-free-first-2026-10-28/phase0/AUDIT.md) first. The owner explicitly requires all latest changes to remain local until they say to push them to GitHub main. Do not push any branch, create/update a PR, or merge before that instruction. Current work is Phase 0 only; older broad continuation and automatic PR instructions below are superseded. Phase 0 has a complete local inventory/register package but remains partial for authenticated browser inspection, exact Google installation and some account/recovery readback. Preserve the live public website/login, all data/media, existing migration commits, provider recovery resources and OLDWEBSITE. No later-phase implementation or external writes occurred in this audit.

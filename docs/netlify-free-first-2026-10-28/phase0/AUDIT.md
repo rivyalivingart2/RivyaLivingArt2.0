@@ -1,6 +1,6 @@
 # Phase 0 current-state audit — 28 October 2026
 
-**Audit package prepared locally; Phase 0 acceptance remains partial.** Repository, live deployment, DNS, source-data inventory, protected-file baseline and feature/dependency registers are recorded. Complete authenticated browser inspection, exact Google writer installation readback and some recovery/account configuration evidence remain unavailable. Those gaps are explicit below; no later phase is declared complete.
+**Audit package prepared locally; Phase 0 acceptance remains partial.** Repository, live deployment, DNS, source-data inventory, protected-file baseline and feature/dependency registers are recorded. Complete authenticated browser inspection, exact Google writer installation readback and some recovery/account configuration evidence remain unavailable. Those gaps are explicit below; no later phase is declared complete. The subsequent [read-only follow-up](FOLLOWUP.md) records newly accessible public browser, retained archive and team billing evidence; consult it before treating the earlier limitations below as current. The owner's next-step instruction has since advanced independent local architecture to Phase 1.
 
 Follow [the latest owner scope](../OWNER-SCOPE.md): Phase 0 only, no GitHub push or PR changes without the owner's later instruction to push the latest changes to main. This audit changes documentation and a local read-only inventory tool. It changes no application behavior or provider state.
 

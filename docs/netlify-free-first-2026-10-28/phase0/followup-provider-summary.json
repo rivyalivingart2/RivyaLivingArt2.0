@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "observedDate": "2026-10-28",
+  "kind": "read-only-provider-metadata-followup",
+  "archives": {
+    "count": 7,
+    "totalBytes": 819900,
+    "newestProviderCreatedAt": "2026-10-03T20:33:00.874Z",
+    "listMethod": "direct folder fetch; search omitted retained children",
+    "cryptographicVerification": false,
+    "restoreVerified": false,
+    "automatedBackupsRestarted": false,
+    "allUnshared": true,
+    "ownerOnlyMetadata": true
+  },
+  "billing": {
+    "scope": "entire retained Vercel team; not individual project or settled invoice",
+    "from": "2026-10-01T00:00:00Z",
+    "toExclusive": "2026-10-28T00:00:00Z",
+    "windows": [
+      {
+        "from": "2026-10-01T00:00:00Z",
+        "to": "2026-10-08T00:00:00Z",
+        "isError": false,
+        "allRecordsIncluded": true,
+        "records": 5880,
+        "hasBilledCharges": true
+      },
+      {
+        "from": "2026-10-08T00:00:00Z",
+        "to": "2026-10-15T00:00:00Z",
+        "isError": false,
+        "allRecordsIncluded": true,
+        "records": 5999,
+        "hasBilledCharges": true
+      },
+      {
+        "from": "2026-10-15T00:00:00Z",
+        "to": "2026-10-22T00:00:00Z",
+        "isError": false,
+        "allRecordsIncluded": true,
+        "records": 6118,
+        "hasBilledCharges": true
+      },
+      {
+        "from": "2026-10-22T00:00:00Z",
+        "to": "2026-10-28T00:00:00Z",
+        "isError": false,
+        "allRecordsIncluded": true,
+        "records": 5268,
+        "hasBilledCharges": true
+      }
+    ],
+    "recordCount": 23265
+  },
+  "externalWrites": 0
+}

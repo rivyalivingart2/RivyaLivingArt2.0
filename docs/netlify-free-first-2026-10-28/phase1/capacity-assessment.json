@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "kind": "offline-capacity-assessment",
+  "status": "blocked-pending-provider-and-byte-measurements",
+  "sourceObservedAt": "2026-10-28T13:01:01.366Z",
+  "sourceRows": 3454,
+  "sourceBytes": 54650653,
+  "observedTables": 22,
+  "absentTables": [
+    "rivya_editorial_extension_revisions",
+    "rivya_editorial_extensions",
+    "rivya_migration_markers",
+    "rivya_newsletter_subscribers",
+    "rivya_restoration_conflicts",
+    "rivya_restoration_crosswalk"
+  ],
+  "tables": [
+    {
+      "table": "rivya_access_requests",
+      "workbook": "security",
+      "sourceState": "observed",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_audit",
+      "workbook": "system",
+      "sourceState": "observed",
+      "rows": 1099,
+      "inline": 1099,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_business_settings",
+      "workbook": "content",
+      "sourceState": "observed",
+      "rows": 1,
+      "inline": 1,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_catalogue",
+      "workbook": "content",
+      "sourceState": "observed",
+      "rows": 120,
+      "inline": 120,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_content",
+      "workbook": "content",
+      "sourceState": "observed",
+      "rows": 535,
+      "inline": 250,
+      "driveArtifactsRequired": 285
+    },
+    {
+      "table": "rivya_editorial_extension_revisions",
+      "workbook": "content",
+      "sourceState": "absent",
+      "rows": null,
+      "inline": null,
+      "driveArtifactsRequired": null
+    },
+    {
+      "table": "rivya_editorial_extensions",
+      "workbook": "content",
+      "sourceState": "absent",
+      "rows": null,
+      "inline": null,
+      "driveArtifactsRequired": null
+    },
+    {
+      "table": "rivya_erasure_ledger",
+      "workbook": "operations",
+      "sourceState": "observed",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_inquiries",
+      "workbook": "operations",
+      "sourceState": "observed",
+      "rows": 2,
+      "inline": 2,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_inquiry_notes",
+      "workbook": "operations",
+      "sourceState": "observed",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_inquiry_upload_sessions",
+      "workbook": "operations",
+      "sourceState": "observed",
+      "rows": 14,
+      "inline": 14,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_managed_exports",
+      "workbook": "operations",
+      "sourceState": "observed",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_migration_markers",
+      "workbook": "system",
+      "sourceState": "absent",
+      "rows": null,
+      "inline": null,
+      "driveArtifactsRequired": null
+    },
+    {
+      "table": "rivya_newsletter_subscribers",
+      "workbook": "operations",
+      "sourceState": "absent",
+      "rows": null,
+      "inline": null,
+      "driveArtifactsRequired": null
+    },
+    {
+      "table": "rivya_presentation_revisions",
+      "workbook": "content",
+      "sourceState": "observed",
+      "rows": 4,
+      "inline": 0,
+      "driveArtifactsRequired": 4
+    },
+    {
+      "table": "rivya_presentations",
+      "workbook": "content",
+      "sourceState": "observed",
+      "rows": 1,
+      "inline": 0,
+      "driveArtifactsRequired": 1
+    },
+    {
+      "table": "rivya_privacy_controls",
+      "workbook": "operations",
+      "sourceState": "observed",
+      "rows": 26,
+      "inline": 26,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_public_media",
+      "workbook": "content",
+      "sourceState": "observed",
+      "rows": 154,
+      "inline": 154,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_references",
+      "workbook": "operations",
+      "sourceState": "observed",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_restoration_conflicts",
+      "workbook": "system",
+      "sourceState": "absent",
+      "rows": null,
+      "inline": null,
+      "driveArtifactsRequired": null
+    },
+    {
+      "table": "rivya_restoration_crosswalk",
+      "workbook": "system",
+      "sourceState": "absent",
+      "rows": null,
+      "inline": null,
+      "driveArtifactsRequired": null
+    },
+    {
+      "table": "rivya_revisions",
+      "workbook": "content",
+      "sourceState": "observed",
+      "rows": 1395,
+      "inline": 1375,
+      "driveArtifactsRequired": 20
+    },
+    {
+      "table": "rivya_staff",
+      "workbook": "security",
+      "sourceState": "observed",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_storage_budget",
+      "workbook": "operations",
+      "sourceState": "observed",
+      "rows": 1,
+      "inline": 1,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_studio_login_limits",
+      "workbook": "security",
+      "sourceState": "observed",
+      "rows": 28,
+      "inline": 28,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_studio_order_events",
+      "workbook": "operations",
+      "sourceState": "observed",
+      "rows": 47,
+      "inline": 47,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_studio_orders",
+      "workbook": "operations",
+      "sourceState": "observed",
+      "rows": 26,
+      "inline": 26,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_studio_sessions",
+      "workbook": "security",
+      "sourceState": "observed",
+      "rows": 1,
+      "inline": 1,
+      "driveArtifactsRequired": 0
+    }
+  ],
+  "workbooks": [
+    {
+      "workbook": "content",
+      "sourceRows": 2210,
+      "inlineRows": 1900,
+      "driveDocumentsRequired": 310,
+      "assumedInitialMutations": 2210,
+      "requiredRowsPerCanonicalSheet": 2211,
+      "sandboxRowsShort": 2111,
+      "defaultRowsShort": 211,
+      "theoreticalGatewayHistoryHeadroom": 7789
+    },
+    {
+      "workbook": "operations",
+      "sourceRows": 116,
+      "inlineRows": 116,
+      "driveDocumentsRequired": 0,
+      "assumedInitialMutations": 116,
+      "requiredRowsPerCanonicalSheet": 117,
+      "sandboxRowsShort": 17,
+      "defaultRowsShort": 0,
+      "theoreticalGatewayHistoryHeadroom": 9883
+    },
+    {
+      "workbook": "security",
+      "sourceRows": 29,
+      "inlineRows": 29,
+      "driveDocumentsRequired": 0,
+      "assumedInitialMutations": 29,
+      "requiredRowsPerCanonicalSheet": 30,
+      "sandboxRowsShort": 0,
+      "defaultRowsShort": 0,
+      "theoreticalGatewayHistoryHeadroom": 9970
+    },
+    {
+      "workbook": "system",
+      "sourceRows": 1099,
+      "inlineRows": 1099,
+      "driveDocumentsRequired": 0,
+      "assumedInitialMutations": 1099,
+      "requiredRowsPerCanonicalSheet": 1100,
+      "sandboxRowsShort": 1000,
+      "defaultRowsShort": 0,
+      "theoreticalGatewayHistoryHeadroom": 8900
+    }
+  ],
+  "assumptions": [
+    "One canonical record and one initial mutation per source row; four canonical tabs plus one control tab per boundary.",
+    "One header row per canonical tab. No batching, retries, existing sandbox probe rows, staging rows or later writes included.",
+    "History headroom is a row-only upper bound, not usable measured capacity. Character, wire-byte, latency and quota limits also apply.",
+    "API-call arithmetic assumes one execution identity shares the documented per-user quota; actual installation accounting is unverified."
+  ],
+  "quotaModel": {
+    "readsPerMutation": 6,
+    "writesPerMutation": 2,
+    "readsPerIndependentReadback": 2,
+    "noContentionWholeMutationsPerMinute": 10,
+    "withReadbackWholeMutationsPerMinute": 7,
+    "sourceImportMinutesAtWholeMinuteBudget": 494
+  },
+  "unmeasured": [
+    "canonicalSnapshotCharacters",
+    "signedResponseBytes",
+    "DriveRemainingBytes",
+    "peakDemand",
+    "p95Latency",
+    "lockContention",
+    "retentionGrowth",
+    "restoreDuration",
+    "installedRegistryLimits"
+  ],
+  "targetRowsVerified": null,
+  "providerVerified": false,
+  "runtimeActivated": false,
+  "databaseExceptionSelected": false
+}

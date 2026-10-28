@@ -2,6 +2,8 @@
 
 Owner direction: [OWNER-BRIEF.md](OWNER-BRIEF.md). Decision date: 28 October 2026.
 
+Detailed next-step design: [Phase 1 checkpoint](phase1/README.md), [authority ADR](phase1/ADR-001-AUTHORITY.md), [store/transaction contracts](phase1/STORE-CONTRACTS.md), [capacity and placement](phase1/CAPACITY-AND-PLACEMENT.md), [permissions/acceptance](phase1/PROVIDER-ACCEPTANCE.md) and [migration/recovery](phase1/MIGRATION-AND-RECOVERY.md). These refine the summary below. The source-derived assessor identifies insufficient sandbox/default row capacity and unmeasured byte/rate/latency budgets; it is not a provider readiness result. No target database exception has been selected and no authority changed.
+
 ## Authority
 
 | Entity family | Current authority | Target authority / boundary |
