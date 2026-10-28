@@ -2,9 +2,11 @@
 
 Latest brief: [OWNER-BRIEF.md](OWNER-BRIEF.md). Baseline and findings: [CURRENT-STATE.md](CURRENT-STATE.md). All status claims below are bounded to actual evidence; source repair is not migration/cutover.
 
+**Current owner scope is Phase 0 only and local-only**, as recorded in [OWNER-SCOPE.md](OWNER-SCOPE.md). Do not execute the later-phase plan or push/create/update PRs unless the owner gives the corresponding later instruction. The later rows preserve the programme backlog; they are not a new phase-start authorization.
+
 | Phase / task IDs | Status | Affected modules and impact | Acceptance / dependency / next action | Effort after audit |
 |---|---|---|---|---|
-| 0 / NFF-000–004 | partial | refs/deployment/DB/Google/Studio/media inventory; read-only | Refs, Netlify, actual rows/relationships, Blob totals and selected-image bytes refreshed; full workflow inventory remains | 1–2 engineer days |
+| 0 / NFF-000–004 | partial | refs/deployment/DB/Google/Studio/media inventory; read-only | Audit package delivered: 37 modules, 32 old routes, 53 handlers, protected hashes and live counts. Browser, exact installed Google writer and some account/recovery reads remain open; see phase0/AUDIT.md | Remaining work depends on browser/provider access; no acceptance date promised |
 | 1 / NFF-100–103 | partial | architecture/authority/quotas/permissions | Measured rates/latency/capacity; justify narrow free DB only if needed; review live credential renewal | 1–2 days plus provider access |
 | 2 / NFF-200–205 | partial | writer, Drive transport, canonical stores, jobs, credential lifecycle | Five outstanding Google checks; retain original registry and scopes; independent-worker tests | 3–5 days plus account-dependent checks |
 | 3 / NFF-300–303 | source rehearsal verified; target missing | exporter/importer/reconciliation/media; sensitive data | Actual isolated targets, complete readback, byte hashes, JSON/FK checks, interruption and restore | 3–5 days |

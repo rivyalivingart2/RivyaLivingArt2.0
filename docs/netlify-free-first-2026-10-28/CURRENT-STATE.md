@@ -1,5 +1,9 @@
 # Current state and continuation — 28 October 2026
 
+**Latest scope:** [OWNER-SCOPE.md](OWNER-SCOPE.md) supersedes earlier phase-delivery instructions: Phase 0 only; keep all changes local until the owner explicitly instructs pushing the latest changes to GitHub main. No branch push, PR creation/update or merge is authorized now. The fresh [Phase 0 audit](phase0/AUDIT.md), [feature matrix](phase0/FEATURE-MATRIX.md), [dependency map](phase0/DEPENDENCIES.md), [protected baseline](phase0/PROTECTED-BASELINE.md) and [claims/gates register](phase0/CLAIMS-AND-GATES.md) are the current detailed evidence. Phase 0 remains partial for authenticated/browser and exact Google installation/account/recovery readback; later phases were not started in this audit turn.
+
+Application baseline is local commit `41cda9c20947dface0b027484106d0bbcc0cdd14`, still descended from the migration commits. Fresh Phase 0 reads at 14:20–14:21 UTC confirm unchanged live revision, 22 tables / 3,454 rows, all 20 business-table fingerprints and 92 Blob objects. The protected source manifest has 1,198 unchanged files. All 37 modules and 32 old sidebar entries are now mapped; two old routes are absent. The Netlify capability response reports 300 credits included / 0 used; independently reconciled usage remains unverified. Retained Vercel reports Pro, with trial/charges not exposed by the available account response. See the audit for evidence scope.
+
 The latest owner brief is [OWNER-BRIEF.md](OWNER-BRIEF.md). It supersedes conflicting hosting, absolute database prohibition, public redesign and archived-import instructions. This programme is incomplete. Historical Phase 0–11 completion receipts are not provider or release acceptance.
 
 ## Refreshed baseline
@@ -17,7 +21,7 @@ The latest owner brief is [OWNER-BRIEF.md](OWNER-BRIEF.md). It supersedes confli
 - No retained private registry/signing-key file was located in this project's work directories. The cloud checkpoint points to files in its earlier cloud filesystem. Do not reconstruct its registry from display names, reset workbooks, rotate a key or reprovision to hide this dependency.
 - OLDWEBSITE source remains available locally and through GitHub; its deleted database is unavailable. Old source counts are historical, never recoverable data.
 
-Private readback evidence remains ignored under `test-results/hosting-google-audit-20261028/` and `test-results/netlify-migration/private/`. New evidence belongs under `test-results/free-first-20261028/`. Keep raw screenshots, resource registrations, provider IDs, customer rows and credentials out of Git.
+Private readback evidence remains ignored under `test-results/hosting-google-audit-20261028/` and `test-results/netlify-migration/private/`. Earlier repair evidence is under `test-results/free-first-20261028/`; the latest Phase 0 refresh is under `test-results/netlify-free-first-phase0-20261028/`. Keep raw screenshots, resource registrations, provider IDs, customer rows and credentials out of Git.
 
 ## Protected baseline and reuse
 

@@ -1,3 +1,9 @@
+# Latest owner scope — Phase 0 local audit only
+
+28 October 2026. Read [OWNER-SCOPE.md](docs/netlify-free-first-2026-10-28/OWNER-SCOPE.md) and [the Phase 0 audit](docs/netlify-free-first-2026-10-28/phase0/AUDIT.md) first. The owner explicitly requires all latest changes to remain local until they say to push them to GitHub main. Do not push any branch, create/update a PR, or merge before that instruction. Current work is Phase 0 only; older broad continuation and automatic PR instructions below are superseded. Phase 0 has a complete local inventory/register package but remains partial for authenticated browser inspection, exact Google installation and some account/recovery readback. Preserve the live public website/login, all data/media, existing migration commits, provider recovery resources and OLDWEBSITE. No later-phase implementation or external writes occurred in this audit.
+
+---
+
 # Active continuation — 28 October 2026
 
 Read [the refreshed Netlify free-first checkpoint](docs/netlify-free-first-2026-10-28/CURRENT-STATE.md) and its latest owner brief first. Netlify is live at www.rivyalivingart.com on 7b390d5; PR #71 remains draft and production is locked to the migration branch. Continue locally on codex/netlify-free-first, preserving the migration commits. Sheets/Drive is the preferred target with a conditional, justified ongoing-free database exception. The Google replacement, migration, full Studio parity and release acceptance are incomplete. Historical completion claims below are dated and superseded; simulation receipts do not certify providers, backups or production. Preserve public/login design, records/media, credentials and OLDWEBSITE. Add no products and import no archived catalogue. No production migration, publication, credential rotation or old-resource deletion has occurred in this continuation.

@@ -1,0 +1,2168 @@
+{
+  "summary": {
+    "sourceRevision": "41cda9c20947dface0b027484106d0bbcc0cdd14",
+    "migrationAncestor": "7b390d558b9a48d5ec7ccedb8bab104f6b1411f9",
+    "staticOnly": true,
+    "runtimeExecutionVerified": false,
+    "sourceFileCount": 557,
+    "routeHandlerCount": 53,
+    "routesWithStaticSqlDependency": 45,
+    "routesWithStaticBlobDependency": 11,
+    "directSqlFileCount": 53,
+    "directBlobFileCount": 2,
+    "studioModules": 37,
+    "oldSidebarEntries": 32,
+    "oldSidebarUnmapped": [
+      "/studio/catalog-fill",
+      "/studio/scraper"
+    ],
+    "adapterSetterCalls": [],
+    "protectedFiles": 1198,
+    "protectedBytes": 139839148,
+    "protectedFilesChanged": []
+  },
+  "method": "TypeScript AST value imports and literal dynamic imports; type-only imports excluded. Conservative transitive module reachability, not function-level execution. Dynamic/computed dependencies and callback execution may differ. Literal SQL table names may include comments and DDL. API strings are source references, not a coverage claim.",
+  "providerFiles": [
+    {
+      "path": "src/lib/editorial-media-storage.ts",
+      "packages": [
+        "@vercel/blob"
+      ]
+    },
+    {
+      "path": "src/lib/reference-storage.ts",
+      "packages": [
+        "@vercel/blob"
+      ]
+    },
+    {
+      "path": "src/lib/studio-db.ts",
+      "packages": [
+        "@neondatabase/serverless"
+      ]
+    }
+  ],
+  "environmentNames": [
+    "BLOB_READ_WRITE_TOKEN",
+    "DATABASE_URL",
+    "NODE_ENV",
+    "RIVYA_DATA_MODE",
+    "RIVYA_ENV",
+    "RIVYA_MIGRATION_LOCAL_SQL",
+    "RIVYA_NEWSLETTER_ENABLED",
+    "RIVYA_ORDER_INTAKE_ENABLED",
+    "RIVYA_ORDER_MESSAGE_RETRY_ENABLED",
+    "RIVYA_P2_STATE_GALLERY",
+    "RIVYA_QA_TARGET",
+    "RIVYA_REFERENCE_STORAGE",
+    "RIVYA_RESTORATION_LOCAL",
+    "SITE_INDEXABLE",
+    "STUDIO_ADMIN_ID",
+    "STUDIO_ADMIN_PASSWORD",
+    "STUDIO_SESSION_SECRET"
+  ],
+  "directSql": [
+    {
+      "path": "src/app/actions/inquiry.ts",
+      "sqlCallLines": [
+        40,
+        54
+      ],
+      "sqlTableReferences": [
+        "rivya_business_settings",
+        "rivya_catalogue"
+      ]
+    },
+    {
+      "path": "src/app/api/inquiry/reference/route.ts",
+      "sqlCallLines": [
+        28,
+        74
+      ],
+      "sqlTableReferences": [
+        "rivya_inquiry_upload_sessions",
+        "rivya_references",
+        "rivya_storage_budget"
+      ]
+    },
+    {
+      "path": "src/app/api/inquiry/session/route.ts",
+      "sqlCallLines": [
+        13
+      ],
+      "sqlTableReferences": [
+        "rivya_inquiry_upload_sessions"
+      ]
+    },
+    {
+      "path": "src/app/api/newsletter/route.ts",
+      "sqlCallLines": [
+        19
+      ],
+      "sqlTableReferences": [
+        "rivya_newsletter_subscribers"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/analytics/route.ts",
+      "sqlCallLines": [
+        11
+      ],
+      "sqlTableReferences": [
+        "rivya_inquiries",
+        "rivya_studio_orders"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/cleanup/route.ts",
+      "sqlCallLines": [
+        12,
+        38
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_erasure_ledger",
+        "rivya_inquiries",
+        "rivya_inquiry_upload_sessions",
+        "rivya_managed_exports",
+        "rivya_references",
+        "rivya_studio_login_limits",
+        "rivya_studio_sessions"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/content-intake/route.ts",
+      "sqlCallLines": [
+        16
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_content",
+        "rivya_revisions"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/content-list/route.ts",
+      "sqlCallLines": [
+        14
+      ],
+      "sqlTableReferences": []
+    },
+    {
+      "path": "src/app/api/studio/content-register/route.ts",
+      "sqlCallLines": [
+        14
+      ],
+      "sqlTableReferences": [
+        "rivya_content"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/content/route.ts",
+      "sqlCallLines": [
+        27,
+        43
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_catalogue",
+        "rivya_content",
+        "rivya_public_media",
+        "rivya_revisions"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/editorial-assets/image/route.ts",
+      "sqlCallLines": [
+        6
+      ],
+      "sqlTableReferences": [
+        "rivya_public_media"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/editorial-assets/route.ts",
+      "sqlCallLines": [
+        12,
+        20,
+        46
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_public_media",
+        "rivya_revisions"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/editorial-extensions/route.ts",
+      "sqlCallLines": [
+        19,
+        35,
+        51
+      ],
+      "sqlTableReferences": [
+        "rivya_catalogue",
+        "rivya_editorial_extension_revisions",
+        "rivya_editorial_extensions",
+        "rivya_public_media"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/editorial-order/route.ts",
+      "sqlCallLines": [
+        29
+      ],
+      "sqlTableReferences": [
+        "rivya_content",
+        "rivya_presentation_revisions",
+        "rivya_presentations",
+        "rivya_public_media"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/health-context/route.ts",
+      "sqlCallLines": [
+        9
+      ],
+      "sqlTableReferences": [
+        "rivya_business_settings",
+        "rivya_catalogue",
+        "rivya_content",
+        "rivya_public_media"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/inquiry-handoff/route.ts",
+      "sqlCallLines": [
+        32
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_inquiries"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/media/route.ts",
+      "sqlCallLines": [
+        9,
+        18
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_public_media",
+        "rivya_revisions"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/operations/route.ts",
+      "sqlCallLines": [
+        14,
+        50
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_inquiries",
+        "rivya_studio_order_events",
+        "rivya_studio_orders"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/orders/route.ts",
+      "sqlCallLines": [
+        34,
+        84
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_inquiries",
+        "rivya_privacy_controls",
+        "rivya_references",
+        "rivya_staff",
+        "rivya_studio_order_events",
+        "rivya_studio_orders"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/owner-creations/route.ts",
+      "sqlCallLines": [
+        24
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_public_media",
+        "rivya_revisions"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/presentation/route.ts",
+      "sqlCallLines": [
+        37
+      ],
+      "sqlTableReferences": [
+        "rivya_catalogue",
+        "rivya_content",
+        "rivya_presentation_revisions",
+        "rivya_presentations",
+        "rivya_public_media"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/privacy/route.ts",
+      "sqlCallLines": [
+        15,
+        20,
+        44
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_privacy_controls",
+        "rivya_references"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/references/[id]/route.ts",
+      "sqlCallLines": [
+        6
+      ],
+      "sqlTableReferences": [
+        "rivya_inquiries",
+        "rivya_references"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/revisions/route.ts",
+      "sqlCallLines": [
+        8
+      ],
+      "sqlTableReferences": [
+        "rivya_revisions"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/route-review/route.ts",
+      "sqlCallLines": [
+        15
+      ],
+      "sqlTableReferences": [
+        "rivya_content"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/settings/route.ts",
+      "sqlCallLines": [
+        14
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_business_settings"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/site-settings/route.ts",
+      "sqlCallLines": [
+        20
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_business_settings"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/work-queue/route.ts",
+      "sqlCallLines": [
+        10
+      ],
+      "sqlTableReferences": [
+        "rivya_content",
+        "rivya_inquiries",
+        "rivya_studio_orders"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/workspace/route.ts",
+      "sqlCallLines": [
+        19,
+        56
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_catalogue",
+        "rivya_inquiries",
+        "rivya_inquiry_notes",
+        "rivya_privacy_controls",
+        "rivya_references",
+        "rivya_revisions",
+        "rivya_staff",
+        "rivya_studio_order_events",
+        "rivya_studio_orders",
+        "rivya_studio_sessions"
+      ]
+    },
+    {
+      "path": "src/app/editorial-file/[id]/route.ts",
+      "sqlCallLines": [
+        16
+      ],
+      "sqlTableReferences": [
+        "rivya_editorial_extensions"
+      ]
+    },
+    {
+      "path": "src/app/editorial/[id]/route.ts",
+      "sqlCallLines": [
+        7
+      ],
+      "sqlTableReferences": [
+        "rivya_public_media"
+      ]
+    },
+    {
+      "path": "src/app/studio/inquiries/[id]/card/page.tsx",
+      "sqlCallLines": [
+        15
+      ],
+      "sqlTableReferences": [
+        "rivya_inquiries",
+        "rivya_studio_orders"
+      ]
+    },
+    {
+      "path": "src/app/studio/reference/[id]/page.tsx",
+      "sqlCallLines": [
+        10
+      ],
+      "sqlTableReferences": [
+        "rivya_inquiries",
+        "rivya_references"
+      ]
+    },
+    {
+      "path": "src/lib/data-erasure.ts",
+      "sqlCallLines": [
+        47,
+        68,
+        81,
+        109
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_erasure_ledger",
+        "rivya_managed_exports"
+      ]
+    },
+    {
+      "path": "src/lib/editorial-order-store.ts",
+      "sqlCallLines": [
+        33,
+        36,
+        37
+      ],
+      "sqlTableReferences": [
+        "rivya_presentation_revisions",
+        "rivya_presentations"
+      ]
+    },
+    {
+      "path": "src/lib/erasure-execution.ts",
+      "sqlCallLines": [
+        13,
+        26,
+        64,
+        84
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_erasure_ledger",
+        "rivya_inquiries",
+        "rivya_inquiry_notes",
+        "rivya_inquiry_upload_sessions",
+        "rivya_managed_exports",
+        "rivya_privacy_controls",
+        "rivya_references",
+        "rivya_storage_budget",
+        "rivya_studio_order_events",
+        "rivya_studio_orders"
+      ]
+    },
+    {
+      "path": "src/lib/order-handoff.ts",
+      "sqlCallLines": [
+        11,
+        20,
+        55
+      ],
+      "sqlTableReferences": [
+        "rivya_business_settings",
+        "rivya_inquiries",
+        "rivya_privacy_controls"
+      ]
+    },
+    {
+      "path": "src/lib/order-persistence.ts",
+      "sqlCallLines": [
+        7
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_business_settings",
+        "rivya_catalogue",
+        "rivya_inquiries",
+        "rivya_inquiry_upload_sessions",
+        "rivya_references",
+        "rivya_studio_order_events",
+        "rivya_studio_orders"
+      ]
+    },
+    {
+      "path": "src/lib/order-service.ts",
+      "sqlCallLines": [
+        8
+      ],
+      "sqlTableReferences": [
+        "rivya_inquiries",
+        "rivya_inquiries_contract_v2",
+        "rivya_inquiries_contract_version",
+        "rivya_inquiries_message_state",
+        "rivya_inquiries_request_kind",
+        "rivya_references"
+      ]
+    },
+    {
+      "path": "src/lib/presentation-store.ts",
+      "sqlCallLines": [
+        31,
+        37,
+        51
+      ],
+      "sqlTableReferences": [
+        "rivya_presentation_revisions",
+        "rivya_presentations"
+      ]
+    },
+    {
+      "path": "src/lib/published-design-source.ts",
+      "sqlCallLines": [
+        15
+      ],
+      "sqlTableReferences": []
+    },
+    {
+      "path": "src/lib/published-media.ts",
+      "sqlCallLines": [
+        15
+      ],
+      "sqlTableReferences": [
+        "rivya_public_media"
+      ]
+    },
+    {
+      "path": "src/lib/published-shell-source.ts",
+      "sqlCallLines": [
+        6
+      ],
+      "sqlTableReferences": [
+        "rivya_business_settings",
+        "rivya_catalogue",
+        "rivya_content"
+      ]
+    },
+    {
+      "path": "src/lib/published-source.ts",
+      "sqlCallLines": [
+        27,
+        37
+      ],
+      "sqlTableReferences": []
+    },
+    {
+      "path": "src/lib/reference-cleanup.ts",
+      "sqlCallLines": [
+        6
+      ],
+      "sqlTableReferences": [
+        "rivya_inquiry_upload_sessions",
+        "rivya_references",
+        "rivya_storage_budget"
+      ]
+    },
+    {
+      "path": "src/lib/request-security.ts",
+      "sqlCallLines": [
+        19
+      ],
+      "sqlTableReferences": [
+        "rivya_studio_login_limits"
+      ]
+    },
+    {
+      "path": "src/lib/saved-content-preview.tsx",
+      "sqlCallLines": [
+        20
+      ],
+      "sqlTableReferences": [
+        "rivya_revisions"
+      ]
+    },
+    {
+      "path": "src/lib/service-status.ts",
+      "sqlCallLines": [
+        11
+      ],
+      "sqlTableReferences": [
+        "rivya_audit",
+        "rivya_erasure_ledger",
+        "rivya_inquiries",
+        "rivya_inquiry_notes",
+        "rivya_managed_exports",
+        "rivya_privacy_controls",
+        "rivya_references",
+        "rivya_studio_order_events"
+      ]
+    },
+    {
+      "path": "src/lib/studio-access.ts",
+      "sqlCallLines": [
+        16,
+        27,
+        47,
+        58,
+        102
+      ],
+      "sqlTableReferences": [
+        "rivya_access_requests",
+        "rivya_audit",
+        "rivya_inquiries",
+        "rivya_staff",
+        "rivya_studio_sessions"
+      ]
+    },
+    {
+      "path": "src/lib/studio-auth.ts",
+      "sqlCallLines": [
+        53,
+        73,
+        82,
+        103,
+        133
+      ],
+      "sqlTableReferences": [
+        "rivya_staff",
+        "rivya_studio_login_limits",
+        "rivya_studio_sessions"
+      ]
+    },
+    {
+      "path": "src/lib/studio-db.ts",
+      "sqlCallLines": [],
+      "sqlTableReferences": []
+    },
+    {
+      "path": "src/lib/studio-staff.ts",
+      "sqlCallLines": [
+        12
+      ],
+      "sqlTableReferences": [
+        "rivya_staff"
+      ]
+    },
+    {
+      "path": "src/lib/subscribers.ts",
+      "sqlCallLines": [
+        11
+      ],
+      "sqlTableReferences": [
+        "rivya_newsletter_subscribers"
+      ]
+    }
+  ],
+  "directBlob": [
+    "src/lib/editorial-media-storage.ts",
+    "src/lib/reference-storage.ts"
+  ],
+  "routes": [
+    {
+      "path": "src/app/api/inquiry/receipt/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/lib/order-handoff.ts",
+        "src/lib/order-service.ts",
+        "src/lib/published-shell-source.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/inquiry/reference/route.ts",
+      "methods": [
+        "DELETE",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/inquiry/reference/route.ts",
+        "src/lib/order-service.ts",
+        "src/lib/reference-cleanup.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": [
+        "src/lib/reference-storage.ts"
+      ]
+    },
+    {
+      "path": "src/app/api/inquiry/schema/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/lib/published-source.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/inquiry/session/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/inquiry/session/route.ts",
+        "src/lib/order-service.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/local-creations/[id]/[size]/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/locale/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/lib/published-shell-source.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/newsletter/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/newsletter/route.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/access-requests/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/lib/request-security.ts",
+        "src/lib/studio-access.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/analytics/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/analytics/route.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/cleanup/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/cleanup/route.ts",
+        "src/lib/data-erasure.ts",
+        "src/lib/erasure-execution.ts",
+        "src/lib/reference-cleanup.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": [
+        "src/lib/reference-storage.ts"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/content-intake/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/content-intake/route.ts",
+        "src/lib/published-source.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/content-list/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/content-list/route.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/content-register/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/content-register/route.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/content/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/content/route.ts",
+        "src/lib/published-shell-source.ts",
+        "src/lib/published-source.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/editorial-assets/image/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/editorial-assets/image/route.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": [
+        "src/lib/editorial-media-storage.ts"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/editorial-assets/route.ts",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/editorial-assets/route.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": [
+        "src/lib/editorial-media-storage.ts"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/editorial-extensions/route.ts",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/editorial-extensions/route.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": [
+        "src/lib/editorial-media-storage.ts"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/editorial-order/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/editorial-order/route.ts",
+        "src/lib/editorial-order-store.ts",
+        "src/lib/published-design-source.ts",
+        "src/lib/published-source.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/health-context/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/health-context/route.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/homepage-options/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/lib/editorial-order-store.ts",
+        "src/lib/published-design-source.ts",
+        "src/lib/published-media.ts",
+        "src/lib/published-source.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/inquiry-handoff/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/inquiry-handoff/route.ts",
+        "src/lib/order-handoff.ts",
+        "src/lib/order-service.ts",
+        "src/lib/published-shell-source.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/media/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/media/route.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/operations/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/operations/route.ts",
+        "src/lib/data-erasure.ts",
+        "src/lib/erasure-execution.ts",
+        "src/lib/order-service.ts",
+        "src/lib/published-shell-source.ts",
+        "src/lib/request-security.ts",
+        "src/lib/service-status.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": [
+        "src/lib/reference-storage.ts"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/orders/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/orders/route.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/owner-creations/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/owner-creations/route.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": [
+        "src/lib/editorial-media-storage.ts"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/presentation/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/presentation/route.ts",
+        "src/lib/presentation-store.ts",
+        "src/lib/published-design-source.ts",
+        "src/lib/published-source.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/privacy/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/privacy/route.ts",
+        "src/lib/data-erasure.ts",
+        "src/lib/erasure-execution.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": [
+        "src/lib/reference-storage.ts"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/references/[id]/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/references/[id]/route.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": [
+        "src/lib/reference-storage.ts"
+      ]
+    },
+    {
+      "path": "src/app/api/studio/revisions/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/revisions/route.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/route-review/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/route-review/route.ts",
+        "src/lib/editorial-order-store.ts",
+        "src/lib/published-design-source.ts",
+        "src/lib/published-source.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/settings/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/settings/route.ts",
+        "src/lib/published-shell-source.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/site-settings/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/site-settings/route.ts",
+        "src/lib/published-shell-source.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/subscribers/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts",
+        "src/lib/subscribers.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/work-queue/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/work-queue/route.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/api/studio/workspace/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "sqlReachable": [
+        "src/app/api/studio/workspace/route.ts",
+        "src/lib/order-handoff.ts",
+        "src/lib/order-service.ts",
+        "src/lib/published-media.ts",
+        "src/lib/published-shell-source.ts",
+        "src/lib/published-source.ts",
+        "src/lib/request-security.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts",
+        "src/lib/studio-staff.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/ar/[[...legacyPath]]/route.ts",
+      "methods": [],
+      "sqlReachable": [
+        "src/lib/published-shell-source.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/blog/[[...legacy]]/route.ts",
+      "methods": [],
+      "sqlReachable": [],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/custom-order/route.ts",
+      "methods": [],
+      "sqlReachable": [],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/de/[[...legacyPath]]/route.ts",
+      "methods": [],
+      "sqlReachable": [
+        "src/lib/published-shell-source.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/editorial-file/[id]/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/app/editorial-file/[id]/route.ts",
+        "src/lib/studio-auth.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": [
+        "src/lib/editorial-media-storage.ts"
+      ]
+    },
+    {
+      "path": "src/app/editorial/[id]/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "sqlReachable": [
+        "src/app/editorial/[id]/route.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": [
+        "src/lib/editorial-media-storage.ts"
+      ]
+    },
+    {
+      "path": "src/app/en/[[...legacyPath]]/route.ts",
+      "methods": [],
+      "sqlReachable": [
+        "src/lib/published-shell-source.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/es/[[...legacyPath]]/route.ts",
+      "methods": [],
+      "sqlReachable": [
+        "src/lib/published-shell-source.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/fr/[[...legacyPath]]/route.ts",
+      "methods": [],
+      "sqlReachable": [
+        "src/lib/published-shell-source.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/gu/[[...legacyPath]]/route.ts",
+      "methods": [],
+      "sqlReachable": [
+        "src/lib/published-shell-source.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/hi/[[...legacyPath]]/route.ts",
+      "methods": [],
+      "sqlReachable": [
+        "src/lib/published-shell-source.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/ja/[[...legacyPath]]/route.ts",
+      "methods": [],
+      "sqlReachable": [
+        "src/lib/published-shell-source.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/large-resin-art/route.ts",
+      "methods": [],
+      "sqlReachable": [],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/product/[slug]/route.ts",
+      "methods": [],
+      "sqlReachable": [],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/shop/[[...legacy]]/route.ts",
+      "methods": [],
+      "sqlReachable": [],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/whatsapp-order/route.ts",
+      "methods": [],
+      "sqlReachable": [],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/workshops/route.ts",
+      "methods": [],
+      "sqlReachable": [],
+      "blobReachable": []
+    },
+    {
+      "path": "src/app/zh/[[...legacyPath]]/route.ts",
+      "methods": [],
+      "sqlReachable": [
+        "src/lib/published-shell-source.ts",
+        "src/lib/studio-db.ts"
+      ],
+      "blobReachable": []
+    }
+  ],
+  "modules": [
+    {
+      "key": "overview",
+      "segment": "",
+      "label": "Overview",
+      "group": "Today",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "operations",
+      "status": "active",
+      "route": "/studio",
+      "renderer": "Operations",
+      "componentSource": "src/components/studio/operations.tsx",
+      "literalApiReferences": [
+        "/api/studio/operations",
+        "/api/studio/operations?view=",
+        "/api/studio/operations?view=exports"
+      ]
+    },
+    {
+      "key": "inquiries",
+      "segment": "inquiries",
+      "label": "Inquiries & orders",
+      "group": "Today",
+      "aliases": [
+        "orders",
+        "kanban",
+        "enquiries"
+      ],
+      "adminOnly": false,
+      "workflow": "operations",
+      "status": "active",
+      "route": "/studio/inquiries",
+      "renderer": "InquiryBoard",
+      "componentSource": "src/components/studio/inquiry-board.tsx",
+      "literalApiReferences": []
+    },
+    {
+      "key": "follow-ups",
+      "segment": "follow-ups",
+      "label": "Follow-ups due",
+      "group": "Today",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "operations",
+      "status": "active",
+      "route": "/studio/follow-ups",
+      "renderer": "InquiryBoard",
+      "componentSource": "src/components/studio/inquiry-board.tsx",
+      "literalApiReferences": []
+    },
+    {
+      "key": "products",
+      "segment": "products",
+      "label": "Products",
+      "group": "Catalogue",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "catalogue",
+      "status": "active",
+      "route": "/studio/products",
+      "renderer": "CatalogueEditor",
+      "componentSource": "src/components/studio/catalogue-editor.tsx",
+      "literalApiReferences": [
+        "/api/studio/media",
+        "/api/studio/workspace",
+        "/api/studio/workspace?view=catalogue"
+      ]
+    },
+    {
+      "key": "content-register",
+      "segment": "content-register",
+      "label": "Production register",
+      "group": "Editorial",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "editorial",
+      "status": "active",
+      "route": "/studio/content-register",
+      "renderer": "ContentRegister",
+      "componentSource": "src/components/studio/content-register.tsx",
+      "literalApiReferences": [
+        "/api/studio/content-intake",
+        "/api/studio/content-register?"
+      ]
+    },
+    {
+      "key": "editorial-order",
+      "segment": "editorial-order",
+      "label": "Editorial ordering",
+      "group": "Editorial",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "editorial",
+      "status": "active",
+      "route": "/studio/editorial-order",
+      "renderer": "EditorialOrderEditor",
+      "componentSource": "src/components/studio/editorial-order-editor.tsx",
+      "literalApiReferences": [
+        "/api/studio/editorial-order",
+        "/api/studio/editorial-order?scope="
+      ]
+    },
+    {
+      "key": "content",
+      "segment": "content",
+      "label": "All content",
+      "group": "Editorial",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "editorial",
+      "status": "active",
+      "route": "/studio/content",
+      "renderer": "EditorialLibrary",
+      "componentSource": "src/components/studio/editorial-library.tsx",
+      "literalApiReferences": [
+        "/api/studio/content-list?"
+      ]
+    },
+    {
+      "key": "media",
+      "segment": "media",
+      "label": "Public media",
+      "group": "Catalogue",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "catalogue",
+      "status": "active",
+      "route": "/studio/media",
+      "renderer": "MediaLibrary",
+      "componentSource": "src/components/studio/media-library.tsx",
+      "literalApiReferences": [
+        "/api/studio/media"
+      ]
+    },
+    {
+      "key": "site-copy",
+      "segment": "site-copy",
+      "label": "Site copy",
+      "group": "Content",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "presentation",
+      "status": "active",
+      "route": "/studio/site-copy",
+      "renderer": "SiteCopyEditor",
+      "componentSource": "src/components/studio/site-copy-editor.tsx",
+      "literalApiReferences": []
+    },
+    {
+      "key": "sections",
+      "segment": "sections",
+      "label": "Page design",
+      "group": "Content",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "presentation",
+      "status": "active",
+      "route": "/studio/sections",
+      "renderer": "PresentationEditor",
+      "componentSource": "src/components/studio/presentation-editor.tsx",
+      "literalApiReferences": [
+        "/api/studio/presentation"
+      ]
+    },
+    {
+      "key": "site-images",
+      "segment": "site-images",
+      "label": "Site images",
+      "group": "Content",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "presentation",
+      "status": "active",
+      "route": "/studio/site-images",
+      "renderer": "SiteImagesEditor",
+      "componentSource": "src/components/studio/site-images-editor.tsx",
+      "literalApiReferences": [
+        "/api/studio/content",
+        "/api/studio/editorial-assets",
+        "/api/studio/media"
+      ]
+    },
+    {
+      "key": "content-health",
+      "segment": "content-health",
+      "label": "Content health",
+      "group": "Settings",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "governance",
+      "status": "active",
+      "route": "/studio/content-health",
+      "renderer": "ContentHealth",
+      "componentSource": "src/components/studio/content-health.tsx",
+      "literalApiReferences": []
+    },
+    {
+      "key": "site-settings",
+      "segment": "navigation",
+      "label": "Navigation & languages",
+      "group": "Content",
+      "aliases": [],
+      "adminOnly": true,
+      "workflow": "presentation",
+      "status": "guarded",
+      "route": "/studio/navigation",
+      "renderer": "SiteSettingsEditor",
+      "componentSource": "src/components/studio/site-settings-editor.tsx",
+      "literalApiReferences": [
+        "/api/studio/site-settings"
+      ]
+    },
+    {
+      "key": "legacy",
+      "segment": "legacy",
+      "label": "Legacy decisions",
+      "group": "Settings",
+      "aliases": [],
+      "adminOnly": true,
+      "workflow": "governance",
+      "status": "guarded",
+      "route": "/studio/legacy",
+      "renderer": "LegacyDisposition",
+      "componentSource": "src/components/studio/legacy-disposition.tsx",
+      "literalApiReferences": []
+    },
+    {
+      "key": "translations",
+      "segment": "translations",
+      "label": "Language review",
+      "group": "Content",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "presentation",
+      "status": "active",
+      "route": "/studio/translations",
+      "renderer": "TranslationWorkspace",
+      "componentSource": "src/components/studio/translation-workspace.tsx",
+      "literalApiReferences": [
+        "/api/studio/content?view=translations"
+      ]
+    },
+    {
+      "key": "route-review",
+      "segment": "route-review",
+      "label": "Old links & publication",
+      "group": "Settings",
+      "aliases": [],
+      "adminOnly": true,
+      "workflow": "governance",
+      "status": "guarded",
+      "route": "/studio/route-review",
+      "renderer": "RouteReview",
+      "componentSource": "src/components/studio/route-review.tsx",
+      "literalApiReferences": [
+        "/api/studio/route-review"
+      ]
+    },
+    {
+      "key": "activity",
+      "segment": "activity",
+      "label": "Activity & logs",
+      "group": "Today",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "operations",
+      "status": "active",
+      "route": "/studio/activity",
+      "renderer": "Operations",
+      "componentSource": "src/components/studio/operations.tsx",
+      "literalApiReferences": [
+        "/api/studio/operations",
+        "/api/studio/operations?view=",
+        "/api/studio/operations?view=exports"
+      ]
+    },
+    {
+      "key": "staff",
+      "segment": "staff",
+      "label": "Staff access",
+      "group": "Settings",
+      "aliases": [
+        "users"
+      ],
+      "adminOnly": true,
+      "workflow": "governance",
+      "status": "guarded",
+      "route": "/studio/staff",
+      "renderer": "StaffEditor",
+      "componentSource": "src/components/studio/staff-editor.tsx",
+      "literalApiReferences": [
+        "/api/studio/workspace"
+      ]
+    },
+    {
+      "key": "settings",
+      "segment": "settings",
+      "label": "Atelier settings",
+      "group": "Settings",
+      "aliases": [],
+      "adminOnly": true,
+      "workflow": "governance",
+      "status": "guarded",
+      "route": "/studio/settings",
+      "renderer": "Operations",
+      "componentSource": "src/components/studio/operations.tsx",
+      "literalApiReferences": [
+        "/api/studio/operations",
+        "/api/studio/operations?view=",
+        "/api/studio/operations?view=exports"
+      ]
+    },
+    {
+      "key": "analytics",
+      "segment": "analytics",
+      "label": "Analytics",
+      "group": "Today",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "operations",
+      "status": "active",
+      "route": "/studio/analytics",
+      "renderer": "AnalyticsPanel",
+      "componentSource": "src/components/studio/analytics-panel.tsx",
+      "literalApiReferences": [
+        "/api/studio/analytics?"
+      ]
+    },
+    {
+      "key": "categories",
+      "segment": "categories",
+      "label": "Categories",
+      "group": "Catalogue",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "catalogue",
+      "status": "active",
+      "route": "/studio/categories",
+      "renderer": "CatalogueCategories",
+      "componentSource": "src/components/studio/catalogue-categories.tsx",
+      "literalApiReferences": [
+        "/api/studio/workspace?view=catalogue"
+      ]
+    },
+    {
+      "key": "import",
+      "segment": "import",
+      "label": "Bulk import",
+      "group": "Catalogue",
+      "aliases": [],
+      "adminOnly": true,
+      "workflow": "catalogue",
+      "status": "status-only",
+      "route": "/studio/import",
+      "renderer": "ConditionalWorkspace",
+      "componentSource": "src/components/studio/conditional-workspace.tsx",
+      "literalApiReferences": []
+    },
+    {
+      "key": "exports",
+      "segment": "exports",
+      "label": "Exports",
+      "group": "Catalogue",
+      "aliases": [],
+      "adminOnly": true,
+      "workflow": "operations",
+      "status": "guarded",
+      "route": "/studio/exports",
+      "renderer": "Operations",
+      "componentSource": "src/components/studio/operations.tsx",
+      "literalApiReferences": [
+        "/api/studio/operations",
+        "/api/studio/operations?view=",
+        "/api/studio/operations?view=exports"
+      ]
+    },
+    {
+      "key": "research",
+      "segment": "research",
+      "label": "Research",
+      "group": "Catalogue",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "catalogue",
+      "status": "active",
+      "route": "/studio/research",
+      "renderer": "EditorialDesk",
+      "componentSource": "src/components/studio/editorial-desk.tsx",
+      "literalApiReferences": [
+        "/api/studio/content?record=",
+        "/api/studio/content?view=editor"
+      ]
+    },
+    {
+      "key": "content-gaps",
+      "segment": "content-gaps",
+      "label": "Content gaps",
+      "group": "Catalogue",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "catalogue",
+      "status": "active",
+      "route": "/studio/content-gaps",
+      "renderer": "ContentHealth",
+      "componentSource": "src/components/studio/content-health.tsx",
+      "literalApiReferences": []
+    },
+    {
+      "key": "process",
+      "segment": "process",
+      "label": "Process steps",
+      "group": "Content",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "presentation",
+      "status": "active",
+      "route": "/studio/process",
+      "renderer": "ContentEditor",
+      "componentSource": "src/components/studio/content-editor.tsx",
+      "literalApiReferences": [
+        "/api/studio/content",
+        "/api/studio/content?",
+        "/api/studio/content?record=",
+        "/api/studio/content?view=editor",
+        "/api/studio/editorial-assets",
+        "/api/studio/media"
+      ]
+    },
+    {
+      "key": "materials",
+      "segment": "materials",
+      "label": "Materials",
+      "group": "Content",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "presentation",
+      "status": "active",
+      "route": "/studio/materials",
+      "renderer": "ContentEditor",
+      "componentSource": "src/components/studio/content-editor.tsx",
+      "literalApiReferences": [
+        "/api/studio/content",
+        "/api/studio/content?",
+        "/api/studio/content?record=",
+        "/api/studio/content?view=editor",
+        "/api/studio/editorial-assets",
+        "/api/studio/media"
+      ]
+    },
+    {
+      "key": "forms",
+      "segment": "forms",
+      "label": "Commission forms",
+      "group": "Content",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "presentation",
+      "status": "active",
+      "route": "/studio/forms",
+      "renderer": "CatalogueEditor",
+      "componentSource": "src/components/studio/catalogue-editor.tsx",
+      "literalApiReferences": [
+        "/api/studio/media",
+        "/api/studio/workspace",
+        "/api/studio/workspace?view=catalogue"
+      ]
+    },
+    {
+      "key": "journal",
+      "segment": "journal",
+      "label": "Journal",
+      "group": "Editorial",
+      "aliases": [
+        "blog"
+      ],
+      "adminOnly": false,
+      "workflow": "editorial",
+      "status": "active",
+      "route": "/studio/journal",
+      "renderer": "EditorialLibrary",
+      "componentSource": "src/components/studio/editorial-library.tsx",
+      "literalApiReferences": [
+        "/api/studio/content-list?"
+      ]
+    },
+    {
+      "key": "portfolio",
+      "segment": "portfolio",
+      "label": "Portfolio",
+      "group": "Editorial",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "editorial",
+      "status": "active",
+      "route": "/studio/portfolio",
+      "renderer": "EditorialLibrary",
+      "componentSource": "src/components/studio/editorial-library.tsx",
+      "literalApiReferences": [
+        "/api/studio/content-list?"
+      ]
+    },
+    {
+      "key": "testimonials",
+      "segment": "testimonials",
+      "label": "Testimonials",
+      "group": "Editorial",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "editorial",
+      "status": "active",
+      "route": "/studio/testimonials",
+      "renderer": "EditorialLibrary",
+      "componentSource": "src/components/studio/editorial-library.tsx",
+      "literalApiReferences": [
+        "/api/studio/content-list?"
+      ]
+    },
+    {
+      "key": "faqs",
+      "segment": "faqs",
+      "label": "FAQs",
+      "group": "Editorial",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "editorial",
+      "status": "active",
+      "route": "/studio/faqs",
+      "renderer": "EditorialLibrary",
+      "componentSource": "src/components/studio/editorial-library.tsx",
+      "literalApiReferences": [
+        "/api/studio/content-list?"
+      ]
+    },
+    {
+      "key": "pages",
+      "segment": "pages",
+      "label": "Pages",
+      "group": "Editorial",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "editorial",
+      "status": "active",
+      "route": "/studio/pages",
+      "renderer": "EditorialLibrary",
+      "componentSource": "src/components/studio/editorial-library.tsx",
+      "literalApiReferences": [
+        "/api/studio/content-list?"
+      ]
+    },
+    {
+      "key": "landing-pages",
+      "segment": "landing-pages",
+      "label": "Landing pages",
+      "group": "Editorial",
+      "aliases": [
+        "custom-pages"
+      ],
+      "adminOnly": false,
+      "workflow": "editorial",
+      "status": "active",
+      "route": "/studio/landing-pages",
+      "renderer": "EditorialLibrary",
+      "componentSource": "src/components/studio/editorial-library.tsx",
+      "literalApiReferences": [
+        "/api/studio/content-list?"
+      ]
+    },
+    {
+      "key": "seo",
+      "segment": "seo",
+      "label": "SEO",
+      "group": "Settings",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "governance",
+      "status": "active",
+      "route": "/studio/seo",
+      "renderer": "EditorialDesk",
+      "componentSource": "src/components/studio/editorial-desk.tsx",
+      "literalApiReferences": [
+        "/api/studio/content?record=",
+        "/api/studio/content?view=editor"
+      ]
+    },
+    {
+      "key": "subscribers",
+      "segment": "subscribers",
+      "label": "Subscribers",
+      "group": "Settings",
+      "aliases": [],
+      "adminOnly": true,
+      "workflow": "operations",
+      "status": "guarded",
+      "route": "/studio/subscribers",
+      "renderer": "SubscriberWorkspace",
+      "componentSource": "src/components/studio/subscriber-workspace.tsx",
+      "literalApiReferences": [
+        "/api/studio/subscribers?"
+      ]
+    },
+    {
+      "key": "content-lab",
+      "segment": "content-lab",
+      "label": "Content lab",
+      "group": "Settings",
+      "aliases": [],
+      "adminOnly": false,
+      "workflow": "governance",
+      "status": "active",
+      "route": "/studio/content-lab",
+      "renderer": "EditorialDesk",
+      "componentSource": "src/components/studio/editorial-desk.tsx",
+      "literalApiReferences": [
+        "/api/studio/content?record=",
+        "/api/studio/content?view=editor"
+      ]
+    }
+  ],
+  "oldNavigation": {
+    "source": "src/components/studio/sidebar.tsx",
+    "sha256": "61e5e2904c8e5f6d34b6d17d42501e09a61a641d1dd78afdeebd6db1f29320f0",
+    "revision": "2dd6d5de34acf3f98e611eda2e1b858ebd0da8e6",
+    "entries": [
+      {
+        "label": "Overview",
+        "route": "/studio",
+        "currentModule": "overview",
+        "currentRoute": "/studio"
+      },
+      {
+        "label": "Commissions",
+        "route": "/studio/inquiries",
+        "currentModule": "inquiries",
+        "currentRoute": "/studio/inquiries"
+      },
+      {
+        "label": "Analytics",
+        "route": "/studio/analytics",
+        "currentModule": "analytics",
+        "currentRoute": "/studio/analytics"
+      },
+      {
+        "label": "Activity",
+        "route": "/studio/activity",
+        "currentModule": "activity",
+        "currentRoute": "/studio/activity"
+      },
+      {
+        "label": "Products",
+        "route": "/studio/products",
+        "currentModule": "products",
+        "currentRoute": "/studio/products"
+      },
+      {
+        "label": "Categories",
+        "route": "/studio/categories",
+        "currentModule": "categories",
+        "currentRoute": "/studio/categories"
+      },
+      {
+        "label": "Media Library",
+        "route": "/studio/media",
+        "currentModule": "media",
+        "currentRoute": "/studio/media"
+      },
+      {
+        "label": "Bulk Import",
+        "route": "/studio/import",
+        "currentModule": "import",
+        "currentRoute": "/studio/import"
+      },
+      {
+        "label": "Catalog fill",
+        "route": "/studio/catalog-fill",
+        "currentModule": null,
+        "currentRoute": null
+      },
+      {
+        "label": "Exports",
+        "route": "/studio/exports",
+        "currentModule": "exports",
+        "currentRoute": "/studio/exports"
+      },
+      {
+        "label": "Product Scraper",
+        "route": "/studio/scraper",
+        "currentModule": null,
+        "currentRoute": null
+      },
+      {
+        "label": "Research",
+        "route": "/studio/research",
+        "currentModule": "research",
+        "currentRoute": "/studio/research"
+      },
+      {
+        "label": "Content Gaps",
+        "route": "/studio/content-gaps",
+        "currentModule": "content-gaps",
+        "currentRoute": "/studio/content-gaps"
+      },
+      {
+        "label": "Site Copy",
+        "route": "/studio/site-copy",
+        "currentModule": "site-copy",
+        "currentRoute": "/studio/site-copy"
+      },
+      {
+        "label": "Site Images",
+        "route": "/studio/site-images",
+        "currentModule": "site-images",
+        "currentRoute": "/studio/site-images"
+      },
+      {
+        "label": "Page Sections",
+        "route": "/studio/sections",
+        "currentModule": "sections",
+        "currentRoute": "/studio/sections"
+      },
+      {
+        "label": "Process Steps",
+        "route": "/studio/process",
+        "currentModule": "process",
+        "currentRoute": "/studio/process"
+      },
+      {
+        "label": "Materials",
+        "route": "/studio/materials",
+        "currentModule": "materials",
+        "currentRoute": "/studio/materials"
+      },
+      {
+        "label": "Navigation",
+        "route": "/studio/navigation",
+        "currentModule": "site-settings",
+        "currentRoute": "/studio/navigation"
+      },
+      {
+        "label": "Commission Form",
+        "route": "/studio/forms",
+        "currentModule": "forms",
+        "currentRoute": "/studio/forms"
+      },
+      {
+        "label": "Journal",
+        "route": "/studio/blog",
+        "currentModule": "journal",
+        "currentRoute": "/studio/journal"
+      },
+      {
+        "label": "Portfolio",
+        "route": "/studio/portfolio",
+        "currentModule": "portfolio",
+        "currentRoute": "/studio/portfolio"
+      },
+      {
+        "label": "Testimonials",
+        "route": "/studio/testimonials",
+        "currentModule": "testimonials",
+        "currentRoute": "/studio/testimonials"
+      },
+      {
+        "label": "FAQs",
+        "route": "/studio/faqs",
+        "currentModule": "faqs",
+        "currentRoute": "/studio/faqs"
+      },
+      {
+        "label": "Pages",
+        "route": "/studio/pages",
+        "currentModule": "pages",
+        "currentRoute": "/studio/pages"
+      },
+      {
+        "label": "Landing Pages",
+        "route": "/studio/custom-pages",
+        "currentModule": "landing-pages",
+        "currentRoute": "/studio/landing-pages"
+      },
+      {
+        "label": "Site Settings",
+        "route": "/studio/settings",
+        "currentModule": "settings",
+        "currentRoute": "/studio/settings"
+      },
+      {
+        "label": "SEO",
+        "route": "/studio/seo",
+        "currentModule": "seo",
+        "currentRoute": "/studio/seo"
+      },
+      {
+        "label": "Users",
+        "route": "/studio/users",
+        "currentModule": "staff",
+        "currentRoute": "/studio/staff"
+      },
+      {
+        "label": "Subscribers",
+        "route": "/studio/subscribers",
+        "currentModule": "subscribers",
+        "currentRoute": "/studio/subscribers"
+      },
+      {
+        "label": "Content Health",
+        "route": "/studio/content-health",
+        "currentModule": "content-health",
+        "currentRoute": "/studio/content-health"
+      },
+      {
+        "label": "Content Lab",
+        "route": "/studio/content-lab",
+        "currentModule": "content-lab",
+        "currentRoute": "/studio/content-lab"
+      }
+    ]
+  }
+}
