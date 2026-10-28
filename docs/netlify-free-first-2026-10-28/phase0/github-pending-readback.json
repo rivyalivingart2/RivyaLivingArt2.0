@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-28T17:02:21.828Z",
+  "openPullRequests": [
+    71
+  ],
+  "migrationPullRequest": {
+    "number": 71,
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "head": "codex/netlify-hosting-migration",
+    "headSha": "7b390d558b9a48d5ec7ccedb8bab104f6b1411f9",
+    "base": "main",
+    "baseSha": "35f99fd9b5fd1b76333d92b4ddf3b90289c99b2a"
+  },
+  "mutations": 0
+}

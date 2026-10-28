@@ -1,5 +1,23 @@
 # Phase 1 local verification
 
+## Pending-work continuation on local baseline `9a4c26b`
+
+The later continuation adds bounded read-only source paging/fragments, conservative source-encoding capacity measurements and refreshed provider/browser evidence. Application source and runtime configuration remain unchanged. Source rows are assembled only in memory; accepted metadata is written through the existing owner-only private-file helper.
+
+- `node --import tsx --test tests/google-workspace-live-source.test.mjs tests/google-workspace-source-capacity.test.mjs tests/google-workspace-migration.test.mjs tests/google-workspace-writer-gateway.test.mjs tests/phase1-capacity-plan.test.mjs`: **43/43 passed**. Cases include changed initial/readback/final fingerprints, incomplete or altered fragments, Unicode code points, invalid request/byte bounds, conservative omitted-empty-cell wire sizing, lossless migration planning and existing writer conflict/unknown-outcome behavior.
+- The writer-gateway tests execute an emulator. They do **not** satisfy the five real Google safety checks.
+- Current authenticated browser evidence is in [authenticated-browser-readback.json](../phase0/authenticated-browser-readback.json): owner login and reload, 36 route admissions and narrower existing-product read-only checks. No save, publication or complete workflow acceptance is inferred.
+- Four signed Google `read` calls, saved editor-source comparison and exact registered workbook metadata are in [the pending-work report](../PENDING-CLOSURE.md). No Google commit occurred.
+- Source measurement attempts that timed out or found changing security records were rejected and are not completion evidence. The accepted measurement, if present, is separately identified in the pending-work report.
+
+The commands above ran with the available Node 24.14.0 and the project's `tsx` loader. The repository's declared runtime is Node 22; this is a local tool check, not validation of a different deployment runtime. An initial invocation without the required loader failed before source access; it was corrected to the documented command.
+
+Final checks at 17:49 UTC: targeted ESLint completed with no diagnostics; `git diff --check` passed. All 1,198 protected files and 21 public capture hashes matched. All 356 checked local Markdown links resolved. Twenty-three changed/new files contained none of the ten retained private writer values checked; this limited scan supplements deliberate exclusion of private identifiers and record contents, not a universal privacy guarantee. Sanitized capacity output matches the private accepted report and its reader/collector source hashes. No application or public asset file changed. Aggregate verification metadata is retained under ignored `test-results/netlify-pending-20261028/`.
+
+The successful live source run finished at 17:43:16 UTC: 22 tables / 3,455 rows, 36 constraints, all 20 business-table fingerprints unchanged. It rejected the current Content protocol's capacity using measured lower bounds. It created no target records, backup or restore; it is not a migration receipt.
+
+## Earlier architecture-only checkpoint
+
 Source/application baseline: local `c3cb484081232170895151674742de4ec8c6fa61`, with unchanged application code at `41cda9c20947dface0b027484106d0bbcc0cdd14`. Scope: architecture documents, aggregate census/assessment and the offline planning tool. No provider mutation or deployed behavior is claimed from these checks.
 
 ## Commands and evidence

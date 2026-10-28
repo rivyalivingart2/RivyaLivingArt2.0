@@ -4,7 +4,7 @@ Date: 28 October 2026. Status: **accepted owner direction; implementation choice
 
 ## Context
 
-The owner requested the next step after Phase 0 and continues to prohibit GitHub pushes and PR changes. Production still reads SQL/Blob. Four private Google boundaries exist, but exact deployed writer/credential bindings and five provider acceptance checks remain open. The source census contains 22 tables and 3,454 rows. The 28-table schema includes six absent tables; absence is preserved.
+The owner requested the next step after Phase 0 and continues to prohibit GitHub pushes and PR changes. Production still reads SQL/Blob. The later [provider readback](../PENDING-CLOSURE.md) verifies four private Google registrations and successful signed reads. Immutable deployed-version source equivalence, renewable Drive/Slides runtime credentials and five provider acceptance checks remain open. The earlier source census contains 22 tables and 3,454 rows; later security counts can change through normal sign-in and session activity. The 28-table schema includes six absent tables; absence is preserved.
 
 ## Decision
 
@@ -24,6 +24,10 @@ Extend the existing writer for bounded, same-workbook multi-record transactions 
 | Two authoritative stores or process-local Maps | Superficially simple integration | Rejected: conflicting writes or lost state |
 
 Current implementation deficiencies are reasons to finish and test the writer, not proof that a database is necessary. If safe coordination cannot be demonstrated, first consider Security's access requests, staff, sessions and throttles as one transaction family. Extend an exception to Operations only for a separately demonstrated requirement. Preserve one authority and a versioned Sheets staging/projection role for any excepted entity.
+
+The observed 5 TB Google entitlement is a time-limited Jio benefit, with actual use already above the ordinary 15 GB free allowance. It cannot underpin an ongoing-free guarantee. No personal files may be removed to manufacture capacity. Resolve expiry/post-offer capacity and exhaustion behavior before accepting Drive placement; no paid continuation is authorized. Source encoding measurements must also decide bounded partitioning before the current whole-workbook protocol can be accepted.
+
+The later accepted source measurement demonstrates that Content's inline records plus initial history alone exceed 152 MB of signed wire representation and 68 million normalized characters. **Reject the current whole-workbook read protocol for real source-scale activation.** Adopt [bounded canonical reads and retained-history manifests](CAPACITY-REMEDIATION.md) as the next implementation contract. This changes access and encoding while keeping one authoritative store per record type. It does not authorize destructive compaction, a new database or relaxed integrity checks.
 
 Before selecting an exception, record: failing requirement and reproducible evidence; exact owned entities; provider/account ownership and independence from Vercel; current ongoing-free storage/compute/connection/egress limits; no paid trial/auto-recharge; export format and isolated restore; and fail-closed behavior at exhaustion. A known database URL or a Free marketing page is insufficient. No exception is selected here.
 

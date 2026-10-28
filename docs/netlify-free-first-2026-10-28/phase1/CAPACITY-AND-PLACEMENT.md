@@ -27,9 +27,24 @@ The source JSON measured 54,650,653 bytes. That is not the future canonical snap
 
 Every successful later update appends history, audit and a ledger entry. Do not purge them to fit. Before migration, measure actual encoded snapshots, signed wire sizes, p95 latency and growth for all four boundaries. Choose reviewed partitioning/checkpoint archives with retained replay/relationship evidence; simply raising every ceiling is not the design. A 10,000-row allocation would leave Content at most 7,789 extra history rows under this model, before byte limits. This is not a usable-capacity promise.
 
+## Later measured encoding, 17:43 UTC
+
+The accepted [source-encoding measurement](source-encoding-measurement.json) uses actual read-only source rows, verified before/after fingerprints and lossless encoding. It is a source-derived lower bound, **not a target import or observed full Google response**. All 20 business-table fingerprints match the earlier baseline; only login/session data changed. Source now has 3,455 rows, including two sessions, and 54,650,938 JSON bytes.
+
+| Boundary | Source rows / inline rows | Record + initial-history characters, lower bound | Signed-response bytes, conservative lower bound |
+|---|---:|---:|---:|
+| Content | 2,210 / 1,900 | 68,553,028 | 152,446,178 |
+| Operations | 116 / 116 | 159,986 | 450,158 |
+| Security | 30 / 30 | 23,614 | 75,018 |
+| System | 1,099 / 1,099 | 1,006,156 | 3,072,890 |
+
+Content excludes 310 unmaterialized document references; their full payloads total 20,537,481 bytes / 20,135,043 characters. Every boundary also excludes ledger/audit/control overhead, probes and future history. The wire calculation includes nested escaping and entered/effective string duplication, with conservative deductions for omitted blank metadata cells. A smaller number in another row is not a provider fit certificate.
+
+**The current Content whole-workbook read is rejected for source-scale use.** Its signed lower bound exceeds the 8,000,000-byte maximum by more than 19 times, before excluded overhead. Its normalized representation also exceeds the 8 MiB character ceiling. No row-limit or timeout increase can resolve either constraint. Preserve the measurements and implement [the bounded-read and retained-history design](CAPACITY-REMEDIATION.md) before accepting the target. This is a demonstrated protocol capacity failure, not evidence by itself that all data needs a separate database.
+
 ## Quotas, costs and conservative operating behavior
 
-Official references checked 28 October 2026; actual account eligibility/usage is a separate gate.
+Official references checked 28 October 2026; actual account eligibility/usage is a separate gate. The later [owner-account readback](../PENDING-CLOSURE.md) found Google AI Pro offered through Jio: the displayed 5 TB is a time-limited benefit and must not be treated as ongoing free storage. Account use exceeds the standard 15 GB allowance; exact expiry and a viable post-offer capacity plan remain unresolved. No paid continuation or storage/billing change was made.
 
 - [Sheets usage limits](https://developers.google.com/workspace/sheets/api/limits): 300 reads and writes per minute per project, 60 per minute per user/project, recommended 2 MB payloads. One batch counts as one request. Standard use is no additional cost; the page describes planned quota-related billing later in 2026. Recheck actual project settings before activation; no quota increase or billing enablement here.
 - [Apps Script quotas](https://developers.google.com/apps-script/guides/services/quotas): consumer limits include 6 minutes/execution, 30 simultaneous executions/user, 90 minutes/day trigger runtime and 20,000 URL Fetch calls/day. Other Google-product quotas still apply. These are shared budgets, not guaranteed throughput.
@@ -50,4 +65,4 @@ The present writer path performs two Sheets reads to prepare, four more to check
 | Scheduling | One designated scheduler per job family, selected after usage measurement | Scheduler only wakes canonical work; expired leases require fenced reclaim, never duplicate side effects |
 | Files and export | Drive transport with bounded transfer/resume | Registered immutable original or output; exact hash/type/permission readback before linking |
 
-Initial isolated load probes must leave shared quota headroom: begin serially, measure actual calls and bytes, stop on any quota warning, conflict anomaly or unexpected writes. No deliberate account exhaustion. Productive demand rates, peak concurrency, p95 login/save latency, Drive free space, retention growth, Netlify credit use and full restore duration are still **unknown**. Proposed operational targets are: login/save p95 under 3 seconds in normal operation, reject/retain input within 10 seconds on failure, and bounded worker steps with at least 20% execution headroom. These are engineering targets to test, not owner-promised SLAs or measured results.
+Initial isolated load probes must leave shared quota headroom: begin serially, measure actual calls and bytes, stop on any quota warning, conflict anomaly or unexpected writes. No deliberate account exhaustion. Four existing signed sandbox reads now have single observations of 2,278–3,180 ms; this is neither p95 nor source-scale evidence. Productive demand rates, peak concurrency, p95 login/save latency, sustainable free Drive capacity, retention growth, Netlify credit use and full restore duration remain **unknown**. Proposed operational targets are: login/save p95 under 3 seconds in normal operation, reject/retain input within 10 seconds on failure, and bounded worker steps with at least 20% execution headroom. These are engineering targets to test, not owner-promised SLAs or measured results.

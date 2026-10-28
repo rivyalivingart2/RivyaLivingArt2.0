@@ -6,6 +6,8 @@ Status vocabulary: **verified complete**, **implemented but unverified**, **part
 
 For every editable module, later acceptance must cover existing-record load, permission checks, actual save/readback/reload, stale-edit conflict, loading/empty/error/retry states, search/filter/pagination where offered, history/recovery and publication where applicable. Use isolated records and targets for writes. Preserve IDs, URLs, prices, variants, relationships and source evidence. Never create a product to prove an editor works.
 
+**Later live read-only observation, 28 October:** the owner signed in normally on the current Netlify migration deployment `7b390d5`. All 36 inspected navigation routes admitted without a login redirect or generic error boundary. Initial route admission does not certify that every data request finished. Existing product search, empty state, six-page pagination, read-only selection and unchanged saved review after reload were observed; the session survived reload and all six review tabs opened without edits. Seven-width selected-editor geometry had no document-level horizontal overflow. No business mutation was submitted. See [authenticated-browser-readback.json](authenticated-browser-readback.json) and [the pending-work report](../PENDING-CLOSURE.md). Full workflow statuses below remain unverified because save/conflict/publication/recovery and old/new parity were not exercised.
+
 | ID / module and route | Current implementation / current store | Status | Specific missing evidence or limitation |
 |---|---|---|---|
 | S01 Overview — `/studio` | `Operations` overview; operations API; SQL orders/settings/audit | implemented but unverified | Reconcile displayed summaries to actual records; live navigation and failure states |
@@ -60,7 +62,7 @@ The old reference has 32 sidebar entries: 30 resolve through the current registr
 | Customers | partial | Existing inquiries/orders contain relationships; the old sidebar explicitly had no customer-account surface. Do not invent a recovered customer database or equate inquiry count with customers |
 | Workshops | partial | Old source treats workshops as a product category, not an independent sidebar route. Preserve any existing category/data; actual workflow coverage needs record evidence |
 | Durable jobs and notifications | partial | Canonical job-store/lease contracts exist; deployed bounded workers, restarts, delivery/retry/cancellation and provider reconciliation remain unverified; send no messages |
-| Login, access/recovery and roles | partial | Current SQL-backed forms/routes retained, anonymous guards verified; full authenticated lifecycle and Google persistence are unverified |
-| Responsive old-Studio design parity | blocked | Browser inspection failed before page state could be read. Source CSS/route counts cannot establish visual parity at 320, 512, 768, 992, 1200, 1440 and 1920 |
+| Login, access/recovery and roles | partial | Owner sign-in and session across reload now verified on current SQL authority; full role/revocation/recovery lifecycle and Google persistence are unverified |
+| Responsive old-Studio design parity | partial | Actual public captures and selected-product editor geometry now cover 320, 512, 768, 992, 1200, 1440 and 1920. Capture limits remain; authenticated OLDWEBSITE reference and complete visual/device acceptance are unavailable |
 
 The remaining work belongs to the later phases identified in the master brief. This audit does not implement it or certify old feature behavior from historical comments.

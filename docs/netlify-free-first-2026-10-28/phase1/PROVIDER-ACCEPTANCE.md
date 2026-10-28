@@ -1,6 +1,6 @@
 # NFF-102 — Provider acceptance and permissions
 
-All five checks below remain **unrun in this continuation**. This is an executable acceptance specification, not a passing receipt. Local unit tests and earlier signed sandbox probes remain separate. Existing registry/key/renewable credential bindings are not available in this checkout; no endpoint, key, ID or credentials are reconstructed or printed.
+All five checks below remain **unrun in this continuation**. This is an executable acceptance specification, not a passing receipt. The later [pending-work closure](../PENDING-CLOSURE.md) verifies the existing four-resource registration and signing key through legitimate owner-interface readback, followed by four successful signed reads. The private readback is owner-only and ignored by Git; no key was rotated or registration reconstructed from names. Renewable server credentials for direct Drive/Slides access remain unverified. Signed reads do not satisfy any of the five checks below.
 
 ## Five outstanding Google checks
 
