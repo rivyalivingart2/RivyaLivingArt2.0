@@ -1,25 +1,5 @@
-import { createHash } from 'node:crypto';
-import {
-  type StorageProvider,
-  getStorageProvider,
-  setStorageProvider,
-  isSqlDisabled,
-} from './provider-switch';
-import {
-  cutoverOrchestrator,
-  type CutoverStage,
-  type BackupRecoveryManifest,
-} from './cutover-runbook';
-
-export interface AuthorityTransitionEvent {
-  readonly id: string;
-  readonly timestamp: string;
-  readonly fromAuthority: StorageProvider;
-  readonly toAuthority: StorageProvider;
-  readonly operator: string;
-  readonly reason: string;
-  readonly mode: 'SIMULATED_DRY_RUN' | 'AUTHORITY_SWITCHED' | 'ROLLED_BACK';
-}
+import {getStorageProvider, isSqlDisabled, type StorageProvider} from './provider-switch';
+import {cutoverOrchestrator, type BackupRecoveryManifest} from './cutover-runbook';
 
 export interface AuthoritySwitchOptions {
   readonly targetProvider: 'google-workspace';
@@ -29,209 +9,37 @@ export interface AuthoritySwitchOptions {
   readonly reason: string;
 }
 
-export interface AuthoritySwitchResult {
-  readonly status: 'SIMULATED_DRY_RUN' | 'AUTHORITY_SWITCHED' | 'REJECTED';
-  readonly currentAuthority: StorageProvider;
-  readonly message: string;
-  readonly transitionId?: string;
-  readonly prerequisites: {
-    readonly tablesReconciled: boolean;
-    readonly mediaAssetsReconciled: boolean;
-    readonly writePauseOperational: boolean;
-    readonly zeroUncommittedTransactions: boolean;
-  };
-}
-
-export interface RollbackResult {
-  readonly status: 'ROLLED_BACK';
-  readonly restoredAuthority: 'postgres';
-  readonly rollbackId: string;
-  readonly timestamp: string;
-  readonly reason: string;
-}
-
+/** Preparation boundary. A process-local flag or token prefix cannot authorize,
+ * execute, or roll back a production cutover. Retained runbook models are simulations. */
 export class AuthoritySwitchManager {
-  private history: AuthorityTransitionEvent[] = [];
-
-  public getState(env: NodeJS.ProcessEnv = process.env): {
-    currentAuthority: StorageProvider;
-    cutoverStage: CutoverStage;
-    isWritePaused: boolean;
-    authorized: boolean;
-    sqlDisabled: boolean;
-    history: readonly AuthorityTransitionEvent[];
-  } {
-    return {
-      currentAuthority: getStorageProvider(env),
-      cutoverStage: cutoverOrchestrator.getStage(),
-      isWritePaused: cutoverOrchestrator.isWritePaused(),
-      authorized: this.isAuthorized(undefined, env),
-      sqlDisabled: isSqlDisabled(env),
-      history: [...this.history],
-    };
+  getState(env: NodeJS.ProcessEnv = process.env) {
+    return {currentAuthority: getStorageProvider(env), cutoverStage: cutoverOrchestrator.getStage(),
+      isWritePaused: false, authorized: false, sqlDisabled: isSqlDisabled(env), history: []};
   }
-
-  /**
-   * GW-1001: Strict Authorization Gate
-   * Requires explicit authorization token or environment variable RIVYA_CUTOVER_AUTHORIZED=true.
-   */
-  public isAuthorized(token?: string, env: NodeJS.ProcessEnv = process.env): boolean {
-    if (env.RIVYA_CUTOVER_AUTHORIZED === 'true') {
-      return true;
-    }
-    if (token && token.length >= 32 && token.startsWith('cutover-auth-')) {
-      return true;
-    }
+  isAuthorized(_token?: string, _env: NodeJS.ProcessEnv = process.env): boolean {
+    void _token; void _env;
     return false;
   }
-
-  /**
-   * GW-1001: Validate all pre-cutover prerequisites.
-   */
-  public validatePrerequisites(manifest?: BackupRecoveryManifest): {
-    readonly ready: boolean;
-    readonly checks: {
-      readonly tablesReconciled: boolean;
-      readonly mediaAssetsReconciled: boolean;
-      readonly writePauseOperational: boolean;
-      readonly zeroUncommittedTransactions: boolean;
-    };
-  } {
-    const m = manifest || cutoverOrchestrator.generateBackupRecoveryManifest();
-
-    const tablesReconciled = m.tablesTotal === 28 && m.tables.length === 28;
-    const mediaAssetsReconciled = m.mediaAssets.creationsCount === 169 && m.mediaAssets.variantsCount === 507;
-    const writePauseOperational = true;
-    const zeroUncommittedTransactions = true;
-
-    const ready = tablesReconciled && mediaAssetsReconciled && writePauseOperational && zeroUncommittedTransactions;
-
+  validatePrerequisites(_manifest?: BackupRecoveryManifest) {
+    void _manifest;
+    return {ready: false, checks: {tablesReconciled: false, mediaAssetsReconciled: false,
+      writePauseOperational: false, zeroUncommittedTransactions: false}};
+  }
+  executeSwitch(options: AuthoritySwitchOptions, env: NodeJS.ProcessEnv = process.env) {
     return {
-      ready,
-      checks: {
-        tablesReconciled,
-        mediaAssetsReconciled,
-        writePauseOperational,
-        zeroUncommittedTransactions,
-      },
+      status: options.dryRun === true ? 'SIMULATED_DRY_RUN' as const : 'REJECTED' as const,
+      currentAuthority: getStorageProvider(env),
+      message: options.dryRun === true
+        ? 'Planning simulation only; prerequisite evidence is missing and no authority changed.'
+        : 'Durable cutover execution is not installed. Reviewed final-delta, write fencing, restore and scoped authorization are required.',
+      prerequisites: this.validatePrerequisites().checks,
     };
   }
-
-  /**
-   * GW-1001: Execute authority switch with authorization gate and dry-run safety.
-   */
-  public executeSwitch(
-    options: AuthoritySwitchOptions,
-    env: NodeJS.ProcessEnv = process.env
-  ): AuthoritySwitchResult {
-    const prereqs = this.validatePrerequisites();
-    if (!prereqs.ready) {
-      return {
-        status: 'REJECTED',
-        currentAuthority: getStorageProvider(env),
-        message: 'Prerequisites failed. All 28 tables and 169 media assets must be reconciled before cutover.',
-        prerequisites: prereqs.checks,
-      };
-    }
-
-    const authorized = this.isAuthorized(options.authorizationToken, env);
-
-    // If unauthorized or explicit dry-run, execute SIMULATED DRY RUN without mutation
-    if (!authorized || options.dryRun) {
-      const transitionId = `dry-run-${createHash('sha256').update(options.operator + Date.now()).digest('hex').slice(0, 12)}`;
-      const event: AuthorityTransitionEvent = {
-        id: transitionId,
-        timestamp: new Date().toISOString(),
-        fromAuthority: getStorageProvider(env),
-        toAuthority: options.targetProvider,
-        operator: options.operator,
-        reason: options.reason,
-        mode: 'SIMULATED_DRY_RUN',
-      };
-      this.history.push(event);
-
-      return {
-        status: 'SIMULATED_DRY_RUN',
-        currentAuthority: getStorageProvider(env),
-        message: 'Dry run completed successfully. Zero mutations committed. Primary authority remains postgres.',
-        transitionId,
-        prerequisites: prereqs.checks,
-      };
-    }
-
-    // Authorized Cutover Sequence
-    const pauseReceipt = cutoverOrchestrator.acquireWritePause({
-      durationSeconds: 20,
-      drainTimeoutMs: 3000,
-      reason: options.reason,
-      operator: options.operator,
-    });
-
-    // Atomic pointer swap to Google Workspace target
-    cutoverOrchestrator.executeActivePointerSwitch('drive-root-artifact-live-v1', 'live-checksum-verified');
-
-    // Authority switch
-    const fromAuth = getStorageProvider(env);
-    setStorageProvider(options.targetProvider);
-    cutoverOrchestrator.releaseWritePause(pauseReceipt.lockId);
-    cutoverOrchestrator.setStage('POST_CUTOVER_ACTIVE');
-
-    const transitionId = `cutover-${createHash('sha256').update(options.operator + Date.now()).digest('hex').slice(0, 12)}`;
-    const event: AuthorityTransitionEvent = {
-      id: transitionId,
-      timestamp: new Date().toISOString(),
-      fromAuthority: fromAuth,
-      toAuthority: options.targetProvider,
-      operator: options.operator,
-      reason: options.reason,
-      mode: 'AUTHORITY_SWITCHED',
-    };
-    this.history.push(event);
-
-    return {
-      status: 'AUTHORITY_SWITCHED',
-      currentAuthority: options.targetProvider,
-      message: 'Authority successfully transferred to google-workspace. SQL access strictly disabled.',
-      transitionId,
-      prerequisites: prereqs.checks,
-    };
+  emergencyRollback(_reason: string, _operator: string): {status: 'REJECTED'; restoredAuthority: null; currentAuthority: StorageProvider; message: string} {
+    void _reason; void _operator;
+    return {status: 'REJECTED', restoredAuthority: null, currentAuthority: getStorageProvider(),
+      message: 'No rollback performed. Reconcile writes after cutover before selecting a recovery store.'};
   }
-
-  /**
-   * GW-1001: Emergency Rollback Procedure (< 15s recovery budget).
-   * Restores primary authority to postgres and releases any active write pause.
-   */
-  public emergencyRollback(reason: string, operator: string): RollbackResult {
-    const fromAuth = getStorageProvider();
-    setStorageProvider('postgres');
-    cutoverOrchestrator.setStage('ROLLED_BACK');
-
-    const rollbackId = `rollback-${createHash('sha256').update(operator + Date.now()).digest('hex').slice(0, 12)}`;
-    const event: AuthorityTransitionEvent = {
-      id: rollbackId,
-      timestamp: new Date().toISOString(),
-      fromAuthority: fromAuth,
-      toAuthority: 'postgres',
-      operator,
-      reason,
-      mode: 'ROLLED_BACK',
-    };
-    this.history.push(event);
-
-    return {
-      status: 'ROLLED_BACK',
-      restoredAuthority: 'postgres',
-      rollbackId,
-      timestamp: event.timestamp,
-      reason,
-    };
-  }
-
-  public reset(): void {
-    setStorageProvider(null);
-    cutoverOrchestrator.reset();
-    this.history = [];
-  }
+  reset(): void { cutoverOrchestrator.reset(); }
 }
-
 export const authoritySwitchManager = new AuthoritySwitchManager();

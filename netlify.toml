@@ -7,6 +7,14 @@
   NPM_VERSION = "10.9.2"
   NEXT_TELEMETRY_DISABLED = "1"
 
+# Only the default production hostname. Branch/deploy previews remain usable.
+# Netlify forwards the original query string when the target has none.
+[[redirects]]
+  from = "https://rivyalivingart.netlify.app/*"
+  to = "https://www.rivyalivingart.com/:splat"
+  status = 301
+  force = true
+
 # The Next.js adapter handles App Router, API routes, images and private responses.
 # No SPA catch-all redirect: it would break the Studio and API authentication.
 # Runtime secrets and RIVYA_DEPLOY_CONTEXT must be set through Netlify's

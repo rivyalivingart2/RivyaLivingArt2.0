@@ -78,12 +78,13 @@ export function validateSlideLayout(slide: SlideLayoutInput): SlideLayoutValidat
 }
 
 /**
- * Validates PDF output pagination, size, and cryptographic checksum
+ * Validates declared PDF metadata only. Does not read PDF bytes or verify a checksum.
  */
 export function validatePdfOutput(output: PdfOutputInput): PdfOutputValidationResult {
   const issues: string[] = [];
 
   // Minimum expected: 1 cover + 1 intro + products + 1 closing
+  if (![output.pageCount, output.bytes, output.targetProductsCount].every(value => Number.isSafeInteger(value) && value >= 0)) issues.push('PDF metadata must contain finite non-negative integers');
   const expectedMinPages = output.targetProductsCount + 2;
   if (output.pageCount < expectedMinPages) {
     issues.push(`PDF page count (${output.pageCount}) is less than expected layout structure (minimum ${expectedMinPages})`);
@@ -112,13 +113,14 @@ export function validatePdfOutput(output: PdfOutputInput): PdfOutputValidationRe
  */
 export function verifyCatalogueOutputAccess(
   driveId: string,
-  isStudioStaff: boolean
+  isStudioStaff: boolean,
+  authorizeRegisteredOutput?: (driveId: string) => boolean
 ): CatalogueAccessResolution {
-  if (!driveId || !driveId.trim()) {
+  if (!driveId || !/^[A-Za-z0-9_-]{10,200}$/.test(driveId)) {
     return { accessible: false, accessType: 'denied', reason: 'Invalid or missing Drive ID' };
   }
 
-  if (!isStudioStaff) {
+  if (!isStudioStaff || !authorizeRegisteredOutput || !authorizeRegisteredOutput(driveId)) {
     return {
       accessible: false,
       accessType: 'denied',

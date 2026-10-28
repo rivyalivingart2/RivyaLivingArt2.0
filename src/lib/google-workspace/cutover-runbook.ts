@@ -14,9 +14,9 @@ export interface BackupTableManifest {
   readonly sourceTable: string;
   readonly workbook: string;
   readonly sheet: string;
-  readonly rowCount: number;
+  readonly rowCount: number | null;
   readonly primaryKey: readonly string[];
-  readonly payloadSha256: string;
+  readonly payloadSha256: string | null;
 }
 
 export interface BackupRecoveryManifest {
@@ -24,15 +24,17 @@ export interface BackupRecoveryManifest {
   readonly snapshotId: string;
   readonly createdAt: string;
   readonly tablesTotal: number;
-  readonly totalRows: number;
+  readonly totalRows: number | null;
   readonly tables: readonly BackupTableManifest[];
   readonly mediaAssets: {
-    readonly creationsCount: 169;
-    readonly variantsCount: 507;
-    readonly checksumSha256: string;
+    readonly creationsCount: number;
+    readonly variantsCount: number;
+    readonly manifestSha256: string;
+    readonly bytesVerified: false;
   };
   readonly workbooks: Record<string, { readonly classification: string; readonly sheetCount: number }>;
-  readonly status: 'COMPLETE_AND_VERIFIED';
+  readonly status: 'INVENTORY_ONLY_NOT_A_BACKUP';
+  readonly evidenceKind: 'source-schema';
 }
 
 export interface WritePauseOptions {
@@ -43,6 +45,7 @@ export interface WritePauseOptions {
 }
 
 export interface WritePauseReceipt {
+  readonly mode: 'simulation';
   readonly lockId: string;
   readonly acquiredAt: string;
   readonly expiresAt: string;
@@ -60,6 +63,7 @@ export interface FinalDeltaSyncItem {
 }
 
 export interface FinalDeltaSyncPlan {
+  readonly mode: 'simulation';
   readonly planId: string;
   readonly createdAt: string;
   readonly items: readonly FinalDeltaSyncItem[];
@@ -69,6 +73,7 @@ export interface FinalDeltaSyncPlan {
 }
 
 export interface PointerSwitchReceipt {
+  readonly mode: 'simulation';
   readonly switchId: string;
   readonly previousRevision: number;
   readonly newRevision: number;
@@ -79,6 +84,7 @@ export interface PointerSwitchReceipt {
 }
 
 export interface PostCutoverAuditRecord {
+  readonly mode: 'simulation';
   readonly sequence: number;
   readonly timestamp: string;
   readonly table: string;
@@ -89,6 +95,8 @@ export interface PostCutoverAuditRecord {
   readonly signature: string;
 }
 
+/** In-process planning model only. It does not pause application writes, drain
+ * transactions, change durable authority or persist a recovery ledger. */
 class CutoverOrchestrator {
   private currentStage: CutoverStage = 'PRE_CUTOVER_STANDBY';
   private writePauseLock: WritePauseReceipt | null = null;
@@ -126,33 +134,21 @@ class CutoverOrchestrator {
         workbookCounts[wb]++;
       }
 
-      // Compute deterministic payload hash for table structure & baseline seed
-      const tableSeed = JSON.stringify({
-        table: t.sourceTable,
-        sheet: t.sheet,
-        pk: t.primaryKey,
-        fields: t.fields.map((f) => f.name),
-      });
-      const payloadSha256 = createHash('sha256').update(tableSeed).digest('hex');
-
-      // Synthetic baseline row count from rehearsal accounting (12-50 rows per table)
-      const rowCount = 15;
-
       return {
         sourceTable: t.sourceTable,
         workbook: t.workbook,
         sheet: t.sheet,
-        rowCount,
+        rowCount: null,
         primaryKey: t.primaryKey,
-        payloadSha256,
+        payloadSha256: null,
       };
     });
 
-    const creationsCount = publicCreationsData.images.length as unknown as 169;
+    const creationsCount = publicCreationsData.images.length;
     const variantsCount = publicCreationsData.images.reduce(
       (acc: number, img) => acc + img.variants.length,
       0
-    ) as unknown as 507;
+    );
 
     const mediaSeed = JSON.stringify(publicCreationsData.images.map((img) => ({
       index: img.index,
@@ -160,19 +156,18 @@ class CutoverOrchestrator {
     })));
     const mediaChecksum = createHash('sha256').update(mediaSeed).digest('hex');
 
-    const totalRows = tables.reduce((acc, t) => acc + t.rowCount, 0);
-
     return {
       schemaVersion: 1,
       snapshotId: id,
       createdAt: now,
       tablesTotal: tables.length,
-      totalRows,
+      totalRows: null,
       tables,
       mediaAssets: {
         creationsCount,
         variantsCount,
-        checksumSha256: mediaChecksum,
+        manifestSha256: mediaChecksum,
+        bytesVerified: false,
       },
       workbooks: {
         content: { classification: 'private-editorial', sheetCount: workbookCounts.content },
@@ -180,7 +175,8 @@ class CutoverOrchestrator {
         security: { classification: 'restricted-identity', sheetCount: workbookCounts.security },
         system: { classification: 'restricted-operations', sheetCount: workbookCounts.system },
       },
-      status: 'COMPLETE_AND_VERIFIED',
+      status: 'INVENTORY_ONLY_NOT_A_BACKUP',
+      evidenceKind: 'source-schema',
     };
   }
 
@@ -188,7 +184,7 @@ class CutoverOrchestrator {
    * GW-1000: Acquire bounded inbound write pause with safety timeout budget (< 30s).
    */
   public acquireWritePause(options: WritePauseOptions): WritePauseReceipt {
-    if (options.durationSeconds > 30) {
+    if (!Number.isFinite(options.durationSeconds) || options.durationSeconds <= 0 || options.durationSeconds > 30) {
       throw new Error(`Write pause duration of ${options.durationSeconds}s exceeds 30s safety budget.`);
     }
 
@@ -197,11 +193,12 @@ class CutoverOrchestrator {
     const lockId = `wp-lock-${createHash('sha256').update(`${options.operator}:${now}`).digest('hex').slice(0, 16)}`;
 
     this.writePauseLock = {
+      mode: 'simulation',
       lockId,
       acquiredAt: new Date(now).toISOString(),
       expiresAt: new Date(expiresAtMs).toISOString(),
       durationSeconds: options.durationSeconds,
-      inFlightDrained: true,
+      inFlightDrained: false,
       reason: options.reason,
     };
 
@@ -251,6 +248,7 @@ class CutoverOrchestrator {
 
     const planId = `delta-plan-${batchHash.slice(0, 12)}`;
     return {
+      mode: 'simulation',
       planId,
       createdAt: new Date().toISOString(),
       items,
@@ -274,6 +272,7 @@ class CutoverOrchestrator {
     this.currentStage = 'POINTER_SWITCHED';
 
     return {
+      mode: 'simulation',
       switchId,
       previousRevision: this.previousPointerRevision,
       newRevision: this.activePointerRevision,
@@ -288,7 +287,7 @@ class CutoverOrchestrator {
    * GW-1000: Capture post-cutover write events into isolated recovery ledger.
    */
   public capturePostCutoverWrite(
-    entry: Omit<PostCutoverAuditRecord, 'sequence' | 'timestamp' | 'signature'>
+    entry: Omit<PostCutoverAuditRecord, 'sequence' | 'timestamp' | 'signature' | 'mode'>
   ): PostCutoverAuditRecord {
     this.sequenceCounter++;
     const timestamp = new Date().toISOString();
@@ -297,6 +296,7 @@ class CutoverOrchestrator {
       .digest('hex');
 
     const record: PostCutoverAuditRecord = {
+      mode: 'simulation',
       sequence: this.sequenceCounter,
       timestamp,
       table: entry.table,

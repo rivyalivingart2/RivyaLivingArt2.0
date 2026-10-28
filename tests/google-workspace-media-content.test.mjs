@@ -243,18 +243,18 @@ test('GW-602: Media delivery gating, upload bounding, replace lineage, and motio
 
   // Creation media delivery resolves
   const creationDel = resolveMediaDelivery('/api/local-creations/001/960', false);
-  assert.equal(creationDel.canDeliver, true);
-  assert.equal(creationDel.accessType, 'public');
+  assert.equal(creationDel.canDeliver, false);
+  assert.equal(creationDel.accessType, 'denied');
 
   // Private customer reference: unauthenticated fails
   const privUnauth = resolveMediaDelivery('/api/studio/reference/private?id=order-123', false);
   assert.equal(privUnauth.canDeliver, false);
   assert.equal(privUnauth.accessType, 'denied');
 
-  // Private customer reference: authenticated staff succeeds
+  // A staff boolean alone cannot authorize a private customer reference.
   const privAuth = resolveMediaDelivery('/api/studio/reference/private?id=order-123', true);
-  assert.equal(privAuth.canDeliver, true);
-  assert.equal(privAuth.accessType, 'private_gated');
+  assert.equal(privAuth.canDeliver, false);
+  assert.equal(privAuth.accessType, 'denied');
 
   // Traversal path rejected
   const traversalDel = resolveMediaDelivery('/media/../../secret', false);
@@ -326,4 +326,14 @@ test('GW-602: Media delivery gating, upload bounding, replace lineage, and motio
   });
   assert.equal(noisyMotion.valid, false);
   assert.ok(noisyMotion.error?.includes('silent'));
+});
+
+test('Media delivery requires an exact approved path or scoped live registration', () => {
+  for (const path of ['/media/unregistered.webp','/editorial/unregistered.webp','/media/%2e%2e/secret','/media//hero.webp','/media/product-hero-026-4x5.webp?private=true']) assert.equal(resolveMediaDelivery(path,true).canDeliver,false);
+  const asset = {path:'/managed/private-reference.webp',visibility:'private',published:false,archived:false,resourceId:'private-order-reference'};
+  assert.equal(resolveMediaDelivery(asset.path,true,{assets:[asset]}).canDeliver,false);
+  assert.equal(resolveMediaDelivery(asset.path,false,{assets:[asset],authorizePrivate:()=>true}).canDeliver,false);
+  assert.equal(resolveMediaDelivery(asset.path,true,{assets:[asset],authorizePrivate:entry=>entry.resourceId==='private-order-reference'}).canDeliver,true);
+  assert.equal(resolveMediaDelivery(asset.path,true,{assets:[{...asset,archived:true}],authorizePrivate:()=>true}).canDeliver,false);
+  assert.equal(resolveMediaDelivery(asset.path,true,{assets:[asset,asset],authorizePrivate:()=>true}).canDeliver,false);
 });

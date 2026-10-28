@@ -1,3 +1,9 @@
+# Active continuation — 28 October 2026
+
+Read [the refreshed Netlify free-first checkpoint](../../netlify-free-first-2026-10-28/CURRENT-STATE.md) and its latest owner brief first. Netlify is live at www.rivyalivingart.com on 7b390d5; PR #71 remains draft and production is locked to the migration branch. Continue locally on codex/netlify-free-first, preserving the migration commits. Sheets/Drive is the preferred target with a conditional, justified ongoing-free database exception. The Google replacement, migration, full Studio parity and release acceptance are incomplete. Historical completion claims below are dated and superseded; simulation receipts do not certify providers, backups or production. Preserve public/login design, records/media, credentials and OLDWEBSITE. Add no products and import no archived catalogue. No production migration, publication, credential rotation or old-resource deletion has occurred in this continuation.
+
+---
+
 # Vercel to Netlify hosting migration
 
 Owner request: 27 October 2026. Base: `35f99fd9b5fd1b76333d92b4ddf3b90289c99b2a`.

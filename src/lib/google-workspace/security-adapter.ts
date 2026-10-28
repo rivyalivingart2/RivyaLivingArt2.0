@@ -76,6 +76,9 @@ export class SecurityAdapterError extends Error {
 }
 
 export interface SecurityDataStore {
+  /** Atomic provider operation. Read/modify/write must share the provider's
+   * concurrency boundary across workers; separate get/save calls are unsafe. */
+  consumeLoginAttempt: (input: {key: string; limit: number; windowMinutes: number; now: string}) => Promise<boolean>;
   getStaffByLogin: (login: string) => Promise<StaffRecord | null>;
   getStaffById: (id: string) => Promise<StaffRecord | null>;
   listStaff: () => Promise<StaffRecord[]>;
@@ -99,11 +102,26 @@ export interface SecurityDataStore {
   updateAccessRequest: (request: AccessRequestRecord) => Promise<void>;
 }
 
+/** Unit-test simulation. Never a runtime security persistence provider. */
 export class InMemorySecurityStore implements SecurityDataStore {
   private staff = new Map<string, StaffRecord>();
   private sessions = new Map<string, StudioSessionRecord>();
   private loginLimits = new Map<string, StudioLoginLimitRecord>();
   private accessRequests = new Map<string, AccessRequestRecord>();
+
+  async consumeLoginAttempt(input: {key: string; limit: number; windowMinutes: number; now: string}): Promise<boolean> {
+    // No await between read and update: atomic only within this test process.
+    const now = Date.parse(input.now), existing = this.loginLimits.get(input.key);
+    if (existing && (!Number.isSafeInteger(existing.attempts) || existing.attempts < 0 || !Number.isFinite(Date.parse(existing.reset_at)))) {
+      throw new SecurityAdapterError('INVALID_THROTTLE', 'Stored throttle state is invalid.');
+    }
+    const active = existing && Date.parse(existing.reset_at) > now;
+    const attempts = active ? existing.attempts : 0;
+    if (attempts >= input.limit) return false;
+    this.loginLimits.set(input.key, {key: input.key, attempts: attempts + 1,
+      reset_at: active ? existing.reset_at : new Date(now + input.windowMinutes * 60_000).toISOString()});
+    return true;
+  }
 
   async getStaffByLogin(login: string): Promise<StaffRecord | null> {
     const lower = login.trim().toLowerCase();
@@ -284,25 +302,11 @@ export class GoogleWorkspaceSecurityAdapter {
   }
 
   async recordLoginAttempt(key: string, limit: number, windowMinutes = 15, now = new Date()): Promise<boolean> {
-    const existing = await this.store.getLoginLimit(key);
-    const resetTime = new Date(now.getTime() + windowMinutes * 60 * 1000).toISOString();
-
-    if (!existing || new Date(existing.reset_at).getTime() <= now.getTime()) {
-      await this.store.saveLoginLimit({
-        key,
-        attempts: 1,
-        reset_at: resetTime,
-      });
-      return 1 <= limit;
+    if (!key || key.length > 240 || !Number.isSafeInteger(limit) || limit < 1 || limit > 1000 ||
+      !Number.isSafeInteger(windowMinutes) || windowMinutes < 1 || windowMinutes > 1440 || !Number.isFinite(now.getTime())) {
+      throw new SecurityAdapterError('INVALID_THROTTLE', 'Invalid throttle policy.');
     }
-
-    const nextAttempts = existing.attempts + 1;
-    await this.store.saveLoginLimit({
-      key,
-      attempts: nextAttempts,
-      reset_at: existing.reset_at,
-    });
-    return nextAttempts <= limit;
+    return this.store.consumeLoginAttempt({key, limit, windowMinutes, now: now.toISOString()});
   }
 
   async createStudioSession(identity?: StaffSession, now = new Date()): Promise<string> {

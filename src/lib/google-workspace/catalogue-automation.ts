@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import type { Concept } from '../catalogue';
+import {canonicalArtifactJson} from './record-codec';
 
 export type CatalogueTheme = 'editorial-luxury' | 'atelier-minimal' | 'collectors-lookbook';
 
@@ -34,9 +35,17 @@ export interface SelectedCatalogueItem {
   readonly materials: readonly string[];
   readonly dimensionsFormatted: string;
   readonly description: string;
+  readonly originKind: Concept['originKind'];
+  readonly contentStatus: Concept['contentStatus'];
+  readonly mediaStatus: Concept['mediaStatus'];
+  readonly disclosure: string;
+  readonly priceAmountMinor: number | null;
+  readonly currency: 'INR';
+  readonly priceType: Concept['priceType'];
 }
 
 export interface CatalogueInputSnapshot {
+  readonly inputSource: 'caller-supplied-concepts';
   readonly snapshotId: string;
   readonly frozenAt: string;
   readonly sourceRevision: string;
@@ -49,21 +58,23 @@ export interface ReusedArtifactEntry {
   readonly artifactId: string;
   readonly name: string;
   readonly type: 'SLIDES_TEMPLATE' | 'COVER_LAYOUT' | 'TYPOGRAPHY_THEME' | 'PALETTE_SPEC';
-  readonly nativeGoogleDriveId: string;
+  readonly nativeGoogleDriveId: string | null;
+  readonly registrationStatus: 'unverified-specification';
   readonly version: number;
   readonly description: string;
 }
 
 /**
- * Registered native Drive artifacts and template references.
- * Reused without rebuilding templates needlessly.
+ * Historical layout specifications, not discovered Drive resources.
+ * Real template registrations belong in the private provider registry.
  */
-export const registeredTemplateArtifacts: readonly ReusedArtifactEntry[] = [
+export const catalogueTemplateSpecifications: readonly ReusedArtifactEntry[] = [
   {
     artifactId: 'tmpl-slides-luxury-master',
     name: 'Rivya Editorial Luxury Slides Master',
     type: 'SLIDES_TEMPLATE',
-    nativeGoogleDriveId: '1tmpl_rivya_editorial_luxury_slides_v1',
+    nativeGoogleDriveId: null,
+    registrationStatus: 'unverified-specification',
     version: 1,
     description: '16:9 widescreen master template with obsidian background, champagne typography, and 4:5 image frames.',
   },
@@ -71,7 +82,8 @@ export const registeredTemplateArtifacts: readonly ReusedArtifactEntry[] = [
     artifactId: 'tmpl-slides-minimal-master',
     name: 'Rivya Atelier Minimal Slides Master',
     type: 'SLIDES_TEMPLATE',
-    nativeGoogleDriveId: '1tmpl_rivya_atelier_minimal_slides_v1',
+    nativeGoogleDriveId: null,
+    registrationStatus: 'unverified-specification',
     version: 1,
     description: 'Clean monochrome presentation with spacious margins and live-edge detail callouts.',
   },
@@ -79,7 +91,8 @@ export const registeredTemplateArtifacts: readonly ReusedArtifactEntry[] = [
     artifactId: 'tmpl-cover-statement-v1',
     name: 'Rivya Signature Cover Layout',
     type: 'COVER_LAYOUT',
-    nativeGoogleDriveId: '1tmpl_rivya_cover_signature_v1',
+    nativeGoogleDriveId: null,
+    registrationStatus: 'unverified-specification',
     version: 1,
     description: 'Cover layout featuring "The Signature — From liquid to light" atelier identity.',
   },
@@ -87,11 +100,14 @@ export const registeredTemplateArtifacts: readonly ReusedArtifactEntry[] = [
     artifactId: 'tmpl-typography-bilingual-v1',
     name: 'Atelier Bilingual Typography Scale',
     type: 'TYPOGRAPHY_THEME',
-    nativeGoogleDriveId: '1tmpl_rivya_typography_en_hi_v1',
+    nativeGoogleDriveId: null,
+    registrationStatus: 'unverified-specification',
     version: 1,
     description: 'Compatible typography token set supporting English (serif/sans) and Hindi (Devanagari script).',
   },
 ];
+
+export const registeredTemplateArtifacts: readonly ReusedArtifactEntry[] = [];
 
 /**
  * Validates catalogue configuration
@@ -134,17 +150,24 @@ export function validateCatalogueConfig(config: unknown): { valid: boolean; erro
     errors.push(`Invalid priceDisplay: ${String(c.priceDisplay)}`);
   }
 
+  for (const key of ['targetCategoryIds', 'targetProductIds', 'excludedProductIds'] as const) {
+    const ids = c[key];
+    if (!Array.isArray(ids) || ids.length > 1000 || ids.some(id => typeof id !== 'string' || !id || id.length > 160) || new Set(ids).size !== ids.length) errors.push(`${key} must contain bounded unique identifiers`);
+  }
+  if (typeof c.includeCustomizationFields !== 'boolean') errors.push('includeCustomizationFields must be boolean');
+  if (typeof c.date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(c.date) || !Number.isFinite(Date.parse(c.date)) || new Date(c.date).toISOString().slice(0,10) !== c.date) errors.push('date must be a valid ISO date');
+
   return { valid: errors.length === 0, errors };
 }
 
 /**
- * Freezes an immutable catalogue input snapshot from approved catalogue records.
- * INVARIANT: Zero products added; reuses existing approved catalogue concepts only.
+ * Freezes caller-supplied concepts without importing/creating product records.
+ * This source helper is not a verified Sheets snapshot. Retain demo provenance.
  */
 export function createCatalogueInputSnapshot(
   config: CatalogueConfig,
   products: readonly Concept[],
-  sourceRevision = 'ae5c41a'
+  sourceRevision = 'unverified-caller-input'
 ): CatalogueInputSnapshot {
   const validation = validateCatalogueConfig(config);
   if (!validation.valid) {
@@ -163,11 +186,11 @@ export function createCatalogueInputSnapshot(
   });
 
   const selectedItems: SelectedCatalogueItem[] = filtered.map((p) => {
+    if (p.priceAmountMinor !== null && (!Number.isSafeInteger(p.priceAmountMinor) || p.priceAmountMinor < 0)) throw new Error('Invalid minor-unit price.');
     let priceFormatted = 'Price on request';
-    if (config.priceDisplay === 'SHOW_PRICES' && p.priceAmountMinor) {
-      priceFormatted = `₹${Math.round(p.priceAmountMinor / 100).toLocaleString('en-IN')}`;
-    } else if (config.priceDisplay === 'STARTING_FROM' && p.priceAmountMinor) {
-      priceFormatted = `From ₹${Math.round(p.priceAmountMinor / 100).toLocaleString('en-IN')}`;
+    if (config.priceDisplay !== 'ON_REQUEST_ONLY' && p.priceType !== 'ON_REQUEST' && p.priceAmountMinor !== null) {
+      const amount = (p.priceAmountMinor / 100).toLocaleString('en-IN', {maximumFractionDigits: 2, minimumFractionDigits: p.priceAmountMinor % 100 === 0 ? 0 : 2});
+      priceFormatted = `${config.priceDisplay === 'STARTING_FROM' || p.priceType === 'STARTING_FROM' ? 'From ' : ''}₹${amount}`;
     }
 
     const dims = p.dimensions;
@@ -183,20 +206,31 @@ export function createCatalogueInputSnapshot(
       materials: p.materials.map((m) => m.label),
       dimensionsFormatted: dimsFormatted,
       description: p.description,
+      originKind: p.originKind, contentStatus: p.contentStatus, mediaStatus: p.mediaStatus,
+      disclosure: 'Demonstration concept; imagery is a concept visualization, not evidence of completed inventory or an offer.',
+      priceAmountMinor: p.priceAmountMinor, currency: p.currency, priceType: p.priceType,
     };
   });
 
   const frozenAt = new Date().toISOString();
-  const rawPayload = JSON.stringify({ config, selectedItems, sourceRevision });
+  if (new Set(selectedItems.map(item => item.id)).size !== selectedItems.length) throw new Error('Duplicate catalogue identity.');
+  const safeConfig: CatalogueConfig = JSON.parse(canonicalArtifactJson(config));
+  const rawPayload = canonicalArtifactJson({ config: safeConfig, selectedItems, sourceRevision });
   const snapshotSha256 = createHash('sha256').update(rawPayload).digest('hex');
   const snapshotId = `cat-snap-${snapshotSha256.slice(0, 16)}`;
 
-  return {
+  const snapshot: CatalogueInputSnapshot = {
+    inputSource: 'caller-supplied-concepts',
     snapshotId,
     frozenAt,
     sourceRevision,
-    config,
+    config: safeConfig,
     selectedProducts: selectedItems,
     snapshotSha256,
   };
+  function freeze(value: unknown): void {
+    if (value && typeof value === 'object') { Object.values(value).forEach(freeze); Object.freeze(value); }
+  }
+  freeze(snapshot);
+  return snapshot;
 }

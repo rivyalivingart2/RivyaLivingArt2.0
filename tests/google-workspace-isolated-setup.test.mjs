@@ -5,6 +5,7 @@ import {tmpdir} from 'node:os';
 import {join,resolve} from 'node:path';
 import {execFile} from 'node:child_process';
 import {promisify} from 'node:util';
+import {verifyPrivateFilePermissions} from '../tools/google-workspace/private-file.ts';
 import {
   WORKBOOK_SPECS,DRIVE_FOLDER_SPECS,TAB_SPECS,GRID,
   IsolatedSetupError,validateIsolatedSetupRegistry,createIsolatedSetupScaffold,
@@ -177,7 +178,7 @@ test('CLI writes private null scaffold, refuses overwrite, and refuses to valida
   const run=promisify(execFile);
   const result=await run(process.execPath,['--import','tsx',command,'prepare','--scaffold','--output',output]);
   assert.equal(JSON.parse(result.stdout).status,'incomplete-scaffold-invalid-until-configured');
-  assert.equal((await stat(output)).mode&0o777,0o600);
+  await verifyPrivateFilePermissions(output);
   const original=await readFile(output,'utf8');assert.deepEqual(JSON.parse(original),createIsolatedSetupScaffold());
   await assert.rejects(run(process.execPath,['--import','tsx',command,'prepare','--scaffold','--output',output]),error=>{
     assert.equal(JSON.parse(error.stderr).code,'OUTPUT_EXISTS');return true;
@@ -194,7 +195,7 @@ test('CLI writes private null scaffold, refuses overwrite, and refuses to valida
   const prepared=await run(process.execPath,['--import','tsx',command,'prepare','--registry',configured,'--output',planFile]);
   assert.equal(JSON.parse(prepared.stdout).status,'structural-plan-prepared-not-installed');
   assert.doesNotMatch(prepared.stdout,/owner@|registered_/);
-  assert.equal((await stat(planFile)).mode&0o777,0o600);
+  await verifyPrivateFilePermissions(planFile);
   assert.deepEqual(JSON.parse(await readFile(planFile,'utf8')),buildIsolatedStructuralPlan(registry()));
 });
 
@@ -219,14 +220,14 @@ test('CLI checks resolved parents so ignored and external symlinks cannot expose
   t.after(async()=>{await rm(external,{recursive:true,force:true});await rm(ignored,{recursive:true,force:true});});
   const run=promisify(execFile),command='tools/google-workspace/isolated-setup.ts';
   for(const parent of [external,ignored]){
-    const alias=join(parent,'source-alias');await symlink(resolve('src'),alias,'dir');
+    const alias=join(parent,'source-alias');await symlink(resolve('src'),alias,process.platform==='win32'?'junction':'dir');
     await assert.rejects(run(process.execPath,['--import','tsx',command,'prepare','--scaffold','--output',join(alias,'isolated-private-metadata.json')]),error=>{
       assert.equal(JSON.parse(error.stderr).code,'PRIVATE_OUTPUT_REQUIRED');return true;
     });
   }
   await assert.rejects(stat(resolve('src/isolated-private-metadata.json')),error=>error.code==='ENOENT');
-  const safeAlias=join(external,'ignored-alias');await symlink(ignored,safeAlias,'dir');
+  const safeAlias=join(external,'ignored-alias');await symlink(ignored,safeAlias,process.platform==='win32'?'junction':'dir');
   await run(process.execPath,['--import','tsx',command,'prepare','--scaffold','--output',join(safeAlias,'safe.json')]);
-  assert.equal((await stat(join(ignored,'safe.json'))).mode&0o777,0o600);
+  await verifyPrivateFilePermissions(join(ignored,'safe.json'));
   assert.deepEqual(JSON.parse(await readFile(join(ignored,'safe.json'),'utf8')),createIsolatedSetupScaffold());
 });

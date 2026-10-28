@@ -1,3 +1,9 @@
+# Active continuation — 28 October 2026
+
+Read [the refreshed Netlify free-first checkpoint](../netlify-free-first-2026-10-28/CURRENT-STATE.md) and its latest owner brief first. Netlify is live at www.rivyalivingart.com on 7b390d5; PR #71 remains draft and production is locked to the migration branch. Continue locally on codex/netlify-free-first, preserving the migration commits. Sheets/Drive is the preferred target with a conditional, justified ongoing-free database exception. The Google replacement, migration, full Studio parity and release acceptance are incomplete. Historical completion claims below are dated and superseded; simulation receipts do not certify providers, backups or production. Preserve public/login design, records/media, credentials and OLDWEBSITE. Add no products and import no archived catalogue. No production migration, publication, credential rotation or old-resource deletion has occurred in this continuation.
+
+---
+
 # Current status — Phase 11 complete locally, full Google Workspace transition verified
 
 27 October 2026. The Google Workspace Transition Programme (Phases 0 through 11: GW-000 through GW-1101) is **complete locally and fully verified** on branch **`codex/google-cloud-acceptance`**. Full check passes 65/65 Google Workspace unit tests (including all 5 Phase 11 handover tests, 5 Phase 10 cutover tests, 5 Phase 9 integrated verification tests, 4 Phase 8 catalogue automation tests, 3 Phase 7 scraper tests, 6 Phase 6 media tests, 5 Phase 5 Studio workflow tests, 8 Phase 4 security tests, 5 Phase 4 publication tests, 6 Phase 4 operations tests, 4 Phase 4 provider switch tests, 6 importer tests, and 3 reconciliation tests pass), preflight passes 12/12, route typegen and TypeScript pass with 0 errors, and ESLint passes with 0 errors (62 existing baseline warnings).

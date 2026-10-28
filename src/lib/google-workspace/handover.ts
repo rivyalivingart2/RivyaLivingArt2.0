@@ -7,7 +7,7 @@
 
 export interface WorkbookPermissionSpec {
   workbookName: 'content' | 'operations' | 'security' | 'system';
-  accessScope: 'public_read_restricted_write' | 'operations_staff_only' | 'superadmin_and_service_account_only' | 'system_automated_only';
+  accessScope: 'private_editorial' | 'operations_staff_only' | 'superadmin_and_service_account_only' | 'system_automated_only';
   tableCount: number;
   tables: string[];
   ownerStagingAllowed: boolean;
@@ -27,21 +27,21 @@ export interface OperationalRunbookSpec {
 export interface HandoverReadinessReport {
   timestamp: string;
   phase: string;
-  status: 'READY_FOR_HANDOVER';
+  status: 'PLANNING_INVENTORY_ONLY';
   branch: string;
   programPhasesTotal: number;
   canonicalTablesCovered: number;
-  creationsPreserved: number;
-  webpVariantsPreserved: number;
-  workbooksConfigured: number;
+  creationsPreserved: null;
+  webpVariantsPreserved: null;
+  workbooksConfigured: null;
   runbooksRegistered: number;
   processHygiene: {
-    uncontrolledDaemons: number;
-    danglingListeners: number;
-    status: 'CLEAN';
+    uncontrolledDaemons: null;
+    danglingListeners: null;
+    status: 'NOT_INSPECTED';
   };
   storageAuthority: {
-    currentAuthoritative: 'postgres' | 'google-workspace';
+    currentAuthoritative: 'not-inspected';
     cutoverGuarded: boolean;
     sqlDisabledOnWorkspace: boolean;
   };
@@ -63,7 +63,7 @@ export const HANDOVER_METADATA = {
 export const WORKBOOK_PERMISSIONS: Record<'content' | 'operations' | 'security' | 'system', WorkbookPermissionSpec> = {
   content: {
     workbookName: 'content',
-    accessScope: 'public_read_restricted_write',
+    accessScope: 'private_editorial',
     tableCount: 9,
     tables: [
       'creations',
@@ -184,7 +184,7 @@ export const OPERATIONAL_RUNBOOKS: OperationalRunbookSpec[] = [
     authorizationRequired: true,
     budgetSeconds: 30,
     criticalInvariants: [
-      'Requires explicit token or RIVYA_CUTOVER_AUTHORIZED=true',
+      'Requires reviewed durable execution and exact external authorization; flags and token prefixes are insufficient',
       'Write pause timeout budget strictly capped at <= 30 seconds',
       'Final delta sync guarantees zero canonical deletions',
       'SQL database severed with SqlDisabledError upon transition',
@@ -198,14 +198,15 @@ export const OPERATIONAL_RUNBOOKS: OperationalRunbookSpec[] = [
     budgetSeconds: 15,
     criticalInvariants: [
       'Recovery budget strictly capped at <= 15 seconds',
-      'Restores postgres authority synchronously',
-      'Reconciles and replays post_cutover_audit ledger into postgres',
+      'Automatic rollback is unavailable; select authority only after final-delta reconciliation',
+      'Retain every write since cutover and verify replay before any rollback',
     ],
   },
 ];
 
 /**
- * Validates the complete handover package for Tasks GW-1100 and GW-1101.
+ * Checks internal planning constants only. Does not verify installation, data,
+ * process hygiene, storage authority or programme completion.
  */
 export function verifyHandoverPackage(): HandoverReadinessReport {
   // 1. Verify workbook permission coverage
@@ -237,23 +238,23 @@ export function verifyHandoverPackage(): HandoverReadinessReport {
   return {
     timestamp: new Date().toISOString(),
     phase: HANDOVER_METADATA.phase,
-    status: 'READY_FOR_HANDOVER',
+    status: 'PLANNING_INVENTORY_ONLY',
     branch: HANDOVER_METADATA.branch,
     programPhasesTotal: HANDOVER_METADATA.programPhasesCount,
     canonicalTablesCovered: totalTableCount,
-    creationsPreserved: HANDOVER_METADATA.totalApprovedCreations,
-    webpVariantsPreserved: HANDOVER_METADATA.totalWebpVariants,
-    workbooksConfigured: workbookKeys.length,
+    creationsPreserved: null,
+    webpVariantsPreserved: null,
+    workbooksConfigured: null,
     runbooksRegistered: OPERATIONAL_RUNBOOKS.length,
     processHygiene: {
-      uncontrolledDaemons: 0,
-      danglingListeners: 0,
-      status: 'CLEAN',
+      uncontrolledDaemons: null,
+      danglingListeners: null,
+      status: 'NOT_INSPECTED',
     },
     storageAuthority: {
-      currentAuthoritative: 'postgres',
-      cutoverGuarded: true,
-      sqlDisabledOnWorkspace: true,
+      currentAuthoritative: 'not-inspected',
+      cutoverGuarded: false,
+      sqlDisabledOnWorkspace: false,
     },
   };
 }

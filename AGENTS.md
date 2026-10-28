@@ -1,3 +1,9 @@
+# Active continuation — 28 October 2026
+
+Read [the refreshed Netlify free-first checkpoint](docs/netlify-free-first-2026-10-28/CURRENT-STATE.md) and its latest owner brief first. Netlify is live at www.rivyalivingart.com on 7b390d5; PR #71 remains draft and production is locked to the migration branch. Continue locally on codex/netlify-free-first, preserving the migration commits. Sheets/Drive is the preferred target with a conditional, justified ongoing-free database exception. The Google replacement, migration, full Studio parity and release acceptance are incomplete. Historical completion claims below are dated and superseded; simulation receipts do not certify providers, backups or production. Preserve public/login design, records/media, credentials and OLDWEBSITE. Add no products and import no archived catalogue. No production migration, publication, credential rotation or old-resource deletion has occurred in this continuation.
+
+---
+
 # Current task — Netlify hosting migration in progress
 
 27 October 2026. The owner requested moving the full website and Studio from Vercel to Netlify. Continue `codex/netlify-hosting-migration` from main `35f99fd`. Read [the migration checkpoint](docs/hosting/netlify/MIGRATION.md). The private Netlify deployment is READY with existing database/media access and verified public pages; live cutover is blocked by three unavailable current Studio secrets. No public DNS change or main merge has occurred. Preserve the current public design, Studio login, existing Neon/Blob data, IDs, prices, URLs and media. No products, archived imports, Google provider cutover or CMS publication. Keep Vercel available for rollback until hosted verification and DNS cutover pass. Earlier Google completion statements are source/local-test history, not proof of an activated database replacement.
