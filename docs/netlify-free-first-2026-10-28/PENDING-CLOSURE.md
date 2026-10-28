@@ -1,5 +1,7 @@
 # Pending Phase 0/1 work — 28 October 2026
 
+**Dated checkpoint, superseded for current implementation status.** The latest local capacity and recovery work is recorded in [Phase 2](phase2/README.md) and [current state](CURRENT-STATE.md). The earlier instruction below that Phase 2 had not started describes the preceding checkpoint. Full provider, restore, Studio and performance acceptance belongs to the phases assigned by the master brief; it does not block implementing the local foundations needed for those checks. The provider and browser observations below retain their original scope and date.
+
 The owner requested completion of previous pending phases before starting the next step. This continuation closes accessible audit and provider-readback gaps and improves source measurement. **Phase 0/1 acceptance remains partial; Phase 2 has not started.** No branch was pushed, no PR changed, and no deployment or provider configuration was changed. The local application baseline remains `41cda9c`; this work builds on local architecture checkpoint `9a4c26b`.
 
 ## Existing Google writer: actual readback
@@ -68,4 +70,4 @@ The Content boundary's 1,900 inline rows plus their initial history alone need a
 | Production release | No push, PR update, merge, new preview or production deployment |
 | Old-resource removal | None; Vercel, Blob, SQL and OLDWEBSITE remain protected |
 
-Continue the pending prerequisites using these observations. Do not repeat the prior request for a local signing-key path: the existing writer readback is now retained privately. Do not advance to Phase 2 or publish changes while missing evidence is labelled complete. The owner's later GitHub push instruction and exact destructive authorization remain separate requirements.
+Continue using these dated observations and the latest owner scope. Do not repeat the prior request for a local signing-key path: the existing writer readback is retained privately. Missing evidence must stay incomplete while local foundational implementation proceeds. The owner's later GitHub push instruction and exact destructive authorization remain separate requirements.

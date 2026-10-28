@@ -1,6 +1,8 @@
 # Source-scale capacity remediation contract
 
-Status: **required architecture change; implementation and provider acceptance pending**. Evidence: [source-encoding-measurement.json](source-encoding-measurement.json), accepted at 17:43 UTC on 28 October 2026. SQL/Blob remain current authority. No target workbook, provider scope, deployment, product or business record changed.
+Status: **local bounded implementation and actual-source inline measurement complete; real provider and full target acceptance pending**. The [Phase 2 checkpoint](../phase2/README.md) implements this contract and records its precise limits. The original failure evidence is [source-encoding-measurement.json](source-encoding-measurement.json), accepted at 17:43 UTC on 28 October 2026. SQL/Blob remain current authority. No target workbook, provider scope, deployment, product or business record changed.
+
+The new source-derived simulation reproduces 3,145 inline identities/payload hashes. Content's largest signed read is 713,263 bytes and its largest of eight sampled prepared single-record updates is 829,309 bytes. These fit the bounded protocol; the old whole-workbook protocol remains unsuitable. All 310 large documents are still unresolved, and actual target readback, real-provider safety, history growth, latency and sustainable free allocation remain required. No fake Drive references or new database were introduced.
 
 ## Demonstrated failure
 

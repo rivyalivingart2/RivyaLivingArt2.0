@@ -1,6 +1,34 @@
-# Current state and continuation — 28 October 2026
+# Current state — local capacity repair, 29 October 2026
 
-**Latest scope:** finish all pending Phase 0/1 work before starting Phase 2. [OWNER-SCOPE.md](OWNER-SCOPE.md) retains the explicit no-push/no-PR/no-merge rule. [Pending-work closure](PENDING-CLOSURE.md) supersedes the earlier missing signed-writer binding, limited public-width observations and unavailable current Studio authentication below. Owner login and session across reload are now verified, alongside a limited existing-product read-only journey. No application runtime or provider configuration changed. Prior-phase acceptance remains partial; Phase 2 has not started in this continuation.
+**Latest scope:** fix storage capacity, continue pending work, and keep all changes local. Do not push, create/update a PR or merge without the owner's later permission. [OWNER-SCOPE.md](OWNER-SCOPE.md) and [Phase 2](phase2/README.md) are the active continuation instructions. Full provider checks, recovery, Studio parity and verification belong to their assigned phases; they are not a circular prerequisite for implementing their local foundations.
+
+The inactive v2 bounded writer is implemented and locally tested. It retains complete history, reads registered record/proof pages, commits same-workbook groups atomically, preserves original replay receipts and fences unknown outcomes. The original v1 endpoint and production application selection remain unchanged. No new database was selected.
+
+An actual read-only checkpoint completed at **2026-10-28 18:34:02 UTC** (29 October in the owner's time zone): 22 tables, 3,455 rows and all 36 schema/key checks. All 20 business-table fingerprints / 3,425 business rows still matched the protected source. The 55,970,259-byte encrypted archive was decrypted and reconciled locally. Its key uses Windows DPAPI and owner-only permissions; no raw export, key, private registration or source payload hash is committed.
+
+The actual-source local simulation verified all 3,145 inline records. Content's largest signed read measured 713,263 bytes and its largest sampled prepared update 829,309 bytes, both within the new budgets. All four boundaries fit. **310 large documents remain unmaterialized**, and finite metadata growth, actual provider latency/quotas and sustainable free Google-account capacity remain open. See [capacity evidence](phase2/bounded-capacity.json).
+
+The next step, a real restore into a fresh local PostgreSQL cluster, **passed at 18:43:24 UTC**: all 3,455 source-row representations and 36 mapped schema/key checks reconciled. The server stopped and its temporary password file was removed. Two earlier failed attempts are retained; the diagnostic attempt identified sandbox `EACCES` before restoration. See [the restore receipt](phase2/local-record-restore.json). The checkpoint is records-only: media, complete SQL schema semantics, portable/off-device recovery and full operational recovery remain excluded.
+
+| Reporting dimension | Current status |
+|---|---|
+| Implemented | Inactive bounded writer/protocol, source-backed measurement, encrypted local records checkpoint and guarded local SQL restore tooling |
+| Locally verified | Bounded/adversarial and source/codec tests, actual encryption/readback and fresh SQL record restore, source hashes, TypeScript/lint; all 1,198 protected source files unchanged |
+| Real-provider verified | Read-only source checkpoint and unchanged GitHub/Netlify state refreshed; no new Google writes or five-check passes |
+| Preview verified | No new preview or deployment |
+| Migrated | No Google target records/documents/media copied or reconciled |
+| Cut over | No authority switch; existing SQL/Blob remain authoritative |
+| Production released | No push, PR change, merge or deployment |
+| Old dependencies removed | None; Vercel, Blob, SQL and OLDWEBSITE retained |
+| Backups retained | Current encrypted local source-record checkpoint and verified stopped SQL restore retained; complete backup and off-device recovery unverified |
+
+At the 18:14 UTC readback, PR #71 remained open/draft/unmerged at `7b390d558b9a48d5ec7ccedb8bab104f6b1411f9`; base main remained `35f99fd9b5fd1b76333d92b4ddf3b90289c99b2a`. Netlify still published the same migration revision on the locked migration branch at www.rivyalivingart.com. The local work continues from `d24aeeb775f9c32893fc342b2000cebb7395dc1b` on `codex/netlify-free-first`, preserving both migration commits.
+
+Proceed with the exact remaining dependencies in [Phase 2](phase2/README.md) and [the phase plan](PHASE-PLAN.md). Do not claim full Phase 0–11 completion, provider acceptance or release from these local results.
+
+## Dated audit detail retained from the preceding checkpoint
+
+The following details retain their original observation dates. Their earlier implementation sequence/status is superseded by the current section and Phase 2 checkpoint above.
 
 The earlier [Phase 0 follow-up](phase0/FOLLOWUP.md) closed narrower gaps: public browser control worked through an existing tab, Creations category/search/pagination/reset were observed, seven retained archives were listed directly, and bounded Vercel billing summaries returned nonzero team-wide cost records. Its unavailable current-authentication and signed-writer-binding observations are now superseded by the pending-work report. Full authenticated workflows, full responsive comparison, actual archive restore, immutable deployed writer source and renewable Drive/Slides runtime credentials remain unverified. The original [audit](phase0/AUDIT.md), [feature matrix](phase0/FEATURE-MATRIX.md), [dependency map](phase0/DEPENDENCIES.md), [protected baseline](phase0/PROTECTED-BASELINE.md) and [claims/gates register](phase0/CLAIMS-AND-GATES.md) retain their dated scope.
 

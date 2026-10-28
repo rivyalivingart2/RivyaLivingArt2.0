@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-28T18:46:49.006Z",
+  "tables": 22,
+  "rows": 3455,
+  "constraintsChecked": 36,
+  "scope": "SOURCE_RECORDS_ONLY",
+  "localIntegrityVerified": true,
+  "finalPathGuardVerified": true,
+  "restoreVerified": false,
+  "fullBackup": false,
+  "offDeviceVerified": false,
+  "operationalRecoveryVerified": false
+}

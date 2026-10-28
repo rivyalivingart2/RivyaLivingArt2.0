@@ -112,3 +112,20 @@ test('fragment reads remain bounded to four fragments per read-only transaction'
   const result=await rehearseLiveSource(sql,schema,{pageSize:1,chunkCharacters:32});
   assert.equal(largest,4);assert.equal(result.chunkBatches,batches);assert.ok(result.chunkReads>batches);
 });
+
+test('trusted local inspection sees only fully verified source and cannot leak its return into the report',async()=>{
+  let calls=0;
+  const inspectVerifiedSource=async({schema:verifiedSchema,source})=>{
+    calls++;assert.equal(verifiedSchema.tables.length,1);assert.equal(source.rivya_fixture.length,2);
+    assert.equal(source.rivya_fixture[0].content.text,'original');
+    return {privatePayload:'must-not-be-published'};
+  };
+  const report=await rehearseLiveSource(pagedDriver(pagedRows),schema,{pageSize:1,inspectVerifiedSource});
+  assert.equal(calls,1);assert.doesNotMatch(JSON.stringify(report),/must-not-be-published|original/);
+  for(const options of [{alterPage:true},{alterFinal:true},{shortPage:true}]){
+    await assert.rejects(rehearseLiveSource(pagedDriver(pagedRows,options),schema,{pageSize:1,inspectVerifiedSource}),/SOURCE_CHANGED_DURING_PAGING/);
+  }
+  assert.equal(calls,1);
+  await assert.rejects(rehearseLiveSource(pagedDriver(pagedRows),schema,{pageSize:1,inspectVerifiedSource:async()=>{throw Error('INSPECTION_FAILED');}}),/INSPECTION_FAILED/);
+  await assert.rejects(rehearseLiveSource({query(){assert.fail('must reject before reading');}},schema,{inspectVerifiedSource:{}}),/INVALID_INSPECTION_CALLBACK/);
+});

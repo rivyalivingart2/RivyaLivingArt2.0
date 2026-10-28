@@ -1,0 +1,53 @@
+{
+  "kind": "actual-loopback-source-record-restore",
+  "checkedAt": "2026-10-28T18:43:24.413Z",
+  "scope": "SOURCE_RECORDS_ONLY",
+  "evidenceKind": "live-source",
+  "ok": true,
+  "tables": 22,
+  "rows": 3455,
+  "constraintsChecked": 36,
+  "restoreVerified": true,
+  "postgresVersion": "postgres (PostgreSQL) 18.6",
+  "nodeVersion": "v22.23.2",
+  "postgresStarted": true,
+  "postgresStopped": true,
+  "temporaryPasswordRemoved": true,
+  "localPasswordProtected": "windows-dpapi-current-user-v1",
+  "sourceCredentialsUsed": false,
+  "sourceMutations": 0,
+  "providerWrites": 0,
+  "fullBackup": false,
+  "offDeviceVerified": false,
+  "operationalRecoveryVerified": false,
+  "blobObjectsIncluded": 0,
+  "repositoryFilesIncluded": 0,
+  "sqlNullVersusJsonNullCovered": false,
+  "collationsCovered": false,
+  "exactSqlSchemaVerified": false,
+  "errorCode": null,
+  "errorStage": null,
+  "sqlState": null,
+  "nodeErrorCode": null,
+  "cleanupFailure": null,
+  "priorFailedAttempts": [
+    {
+      "checkedAt": "2026-10-28T18:37:17.877Z",
+      "restoreVerified": false,
+      "postgresStopped": true,
+      "temporaryPasswordRemoved": true,
+      "errorStage": null,
+      "nodeErrorCode": null,
+      "errorCode": "RECOVERY_LOCAL_RESTORE_FAILED"
+    },
+    {
+      "checkedAt": "2026-10-28T18:41:00.180Z",
+      "restoreVerified": false,
+      "postgresStopped": true,
+      "temporaryPasswordRemoved": true,
+      "errorStage": "ADMIN_CONNECT",
+      "nodeErrorCode": "EACCES",
+      "errorCode": "RECOVERY_LOCAL_RESTORE_FAILED"
+    }
+  ]
+}

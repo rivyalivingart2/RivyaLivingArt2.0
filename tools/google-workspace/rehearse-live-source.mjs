@@ -19,10 +19,16 @@ const columnsQuery = "select table_name,column_name,data_type,is_nullable from i
 const constraintsQuery = "select t.relname as source_table,c.conname as name,pg_get_constraintdef(c.oid) as definition from pg_constraint c join pg_class t on t.oid=c.conrelid join pg_namespace n on n.oid=t.relnamespace where n.nspname='public' and t.relname like 'rivya_%' and c.contype in ('p','u','f') order by t.relname,c.conname";
 const digest = value => createHash('sha256').update(canonicalArtifactJson(value)).digest('hex');
 
-export async function rehearseLiveSource(sql, schema, {pageSize=null,chunkCharacters=null,onProgress=()=>{}}={}) {
+/** inspectVerifiedSource is a trusted, local-only inspection hook. It receives
+ * private rows in memory only AFTER complete source/relationship verification.
+ * Its return value is deliberately never copied into the printable report.
+ * Callers must separately report any encrypted checkpoint or local restore they
+ * perform; the flags below describe this source reader, not that separate work. */
+export async function rehearseLiveSource(sql, schema, {pageSize=null,chunkCharacters=null,onProgress=()=>{},inspectVerifiedSource=null}={}) {
   if(pageSize!==null&&(!Number.isSafeInteger(pageSize)||pageSize<1||pageSize>100))throw Error('INVALID_PAGE_BUDGET');
   if(chunkCharacters!==null&&(pageSize===null||!Number.isSafeInteger(chunkCharacters)||chunkCharacters<1||chunkCharacters>65536))throw Error('INVALID_CHUNK_BUDGET');
   if(typeof onProgress!=='function')throw Error('INVALID_PROGRESS_CALLBACK');
+  if(inspectVerifiedSource!==null&&typeof inspectVerifiedSource!=='function')throw Error('INVALID_INSPECTION_CALLBACK');
   onProgress({stage:'schema'});
   const beforeColumns = await sql.query(columnsQuery);
   const names = [...new Set(beforeColumns.map(column => column.table_name))];
@@ -111,6 +117,7 @@ export async function rehearseLiveSource(sql, schema, {pageSize=null,chunkCharac
       driveArtifactsRequired: plans.filter(plan => plan.disposition === 'drive-artifact-required').length,
       sourceIdentityPayloadSha256: digest(identity), stableIdsUnique: true, losslessEncodingVerified: true};
   });
+  if(inspectVerifiedSource!==null)await inspectVerifiedSource({schema:measuredSchema,source});
   return {schemaVersion: 1, kind: 'live-source-read-only-rehearsal', checkedAt: new Date().toISOString(),
     sourceTransaction: pageSize===null?'REPEATABLE READ READ ONLY':'PAGED READ ONLY; initial/readback/final projection fingerprints matched', pageSize,chunkCharacters,pagesRead,chunkReads,chunkBatches,sourceBytes, relationships, tables, capacity:capacity.finish(),
     absentMappedTables: schema.tables.filter(table => !names.includes(table.sourceTable)).map(table => table.sourceTable),
