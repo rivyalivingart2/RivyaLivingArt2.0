@@ -1,3 +1,19 @@
+# Current entry point — main publication and AI continuation
+
+29 October 2026. The owner authorized publishing the accumulated local source and
+complete phase/AI guides to GitHub main. Start with [START-HERE.md](START-HERE.md),
+[the Phase 0–11 guide](docs/implementation/PHASE-BY-PHASE.md),
+[the next task](docs/implementation/NEXT-WORK.md) and
+[the Antigravity prompt](docs/implementation/ANTIGRAVITY-START-PROMPT.md).
+The programme remains incomplete. Source publication does not activate Google
+storage or release a production migration. Future pushes need new permission.
+Public/login design, all valid records/media and recovery resources remain protected.
+
+All notices below are dated history; the current shared guides and latest direct
+owner instructions govern continuation.
+
+---
+
 # Active continuation — 28 October 2026
 
 Read [the refreshed Netlify free-first checkpoint](docs/netlify-free-first-2026-10-28/CURRENT-STATE.md) and its latest owner brief first. Netlify is live at www.rivyalivingart.com on 7b390d5; PR #71 remains draft and production is locked to the migration branch. Continue locally on codex/netlify-free-first, preserving the migration commits. Sheets/Drive is the preferred target with a conditional, justified ongoing-free database exception. The Google replacement, migration, full Studio parity and release acceptance are incomplete. Historical completion claims below are dated and superseded; simulation receipts do not certify providers, backups or production. Preserve public/login design, records/media, credentials and OLDWEBSITE. Add no products and import no archived catalogue. No production migration, publication, credential rotation or old-resource deletion has occurred in this continuation.

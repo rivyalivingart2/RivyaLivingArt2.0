@@ -167,11 +167,14 @@ test('the expiry fence rejects the old window before a safe retry consumes the n
   assert.equal(h.snapshot().manifest.mutations.length, 2);
 });
 
-test('initial read and CAS preparation share one total deadline instead of resetting it per store call', async () => {
-  const h = boundedGatewayHarness(); let reads = 0, commits = 0;
-  const provider = {...h.provider, async readManifest(options) { reads++; await delay(70); return h.provider.readManifest(options); }, async commit() { commits++; return {status: 'committed'}; }};
+test('initial read and CAS preparation share one total deadline instead of resetting it per store call', async t => {
+  const h = boundedGatewayHarness(); let reads = 0, commits = 0, elapsed = 0;
+  // Measure both phases deterministically: a busy test worker can oversleep a
+  // real 70 ms delay and expire before the second phase is reached at all.
+  t.mock.method(performance, 'now', () => elapsed);
+  const provider = {...h.provider, async readManifest(options) { reads++; elapsed += 70; return h.provider.readManifest(options); }, async commit() { commits++; return {status: 'committed'}; }};
   await assert.rejects(client(h, provider, {timeoutMs: 110}).consumeLoginAttempt(request(h)), unavailable);
-  assert.equal(reads, 2); assert.equal(commits, 0); assert.equal(h.state.batches, 0);
+  assert.equal(reads, 2); assert.equal(elapsed, 140); assert.equal(commits, 0); assert.equal(h.state.batches, 0);
 });
 
 test('conflict retries retain the same total deadline', async () => {

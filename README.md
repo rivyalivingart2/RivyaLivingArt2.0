@@ -1,3 +1,19 @@
+# Current entry point — main publication and AI continuation
+
+29 October 2026. The owner authorized publishing the accumulated local source and
+complete phase/AI guides to GitHub main. Start with [START-HERE.md](START-HERE.md),
+[the Phase 0–11 guide](docs/implementation/PHASE-BY-PHASE.md),
+[the next task](docs/implementation/NEXT-WORK.md) and
+[the Antigravity prompt](docs/implementation/ANTIGRAVITY-START-PROMPT.md).
+The programme remains incomplete. Source publication does not activate Google
+storage or release a production migration. Future pushes need new permission.
+Public/login design, all valid records/media and recovery resources remain protected.
+
+All notices below are dated history; the current shared guides and latest direct
+owner instructions govern continuation.
+
+---
+
 # Current work — atomic Security workflows
 
 29 October 2026. Read [OWNER-SCOPE.md](docs/netlify-free-first-2026-10-28/OWNER-SCOPE.md), [current state](docs/netlify-free-first-2026-10-28/CURRENT-STATE.md) and [the security workflow continuation](docs/netlify-free-first-2026-10-28/phase2/SECURITY-WORKFLOWS-CONTINUATION.md) first. Atomic lookup maintenance, approval/reissue/rejection, redemption, domain audit and bounded session maintenance now have local implementation and adapter integration. Persistent split-CRUD workflows reject; SQL/Blob remain the active application authority. The combined supported-runtime suite passed 175 tests. An actual retained-checkpoint rehearsal reconciled all 30 Security rows locally without provider requests or source/target writes. Runtime binding, sustainable retained-history capacity, full provider and browser acceptance, migration, full Studio parity and release remain pending. Continue authorized local work; do not push, change/create a PR, merge or deploy without later permission. Preserve public/login design, all records/media, SQL/Blob, existing Google resources and OLDWEBSITE. Add no products or archived imports. Older notices below are historical.

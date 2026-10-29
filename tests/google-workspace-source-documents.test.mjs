@@ -64,8 +64,21 @@ test('source snapshot resists caller mutation during registration and concurrent
   await h.bridge().stage(source);assert.equal(new TextDecoder().decode(h.files.get(fileId)),expected);
   const c=fixture(),results=await Promise.all([c.bridge().stage(input()),c.bridge().stage(input())]);assert.deepEqual(results[0],results[1]);assert.equal(c.files.size,1);
 });
-test('overall timeout stops ignored privacy IO without a reference or uploaded file',async()=>{
-  const h=fixture();await assert.rejects(h.bridge({readPrivacy:async()=>new Promise(()=>{})},{timeoutMs:10}).stage(input()),{code:'TIMEOUT'});assert.equal(h.calls.create,0);assert.equal(h.entries.size,1);
+test('overall timeout stops ignored privacy IO without a reference or uploaded file',async t=>{
+  // Enter the intended IO phase before expiring its timer. Real 10 ms wall time
+  // can expire during payload preparation on a busy full-suite worker instead.
+  const h=fixture(),source=input();let entered,privacySignal;
+  const reading=new Promise(resolve=>{entered=resolve;});
+  const clock=t.mock.method(performance,'now',()=>0);
+  t.mock.timers.enable({apis:['setTimeout']});
+  try{
+    const rejected=assert.rejects(h.bridge({readPrivacy:async(_id,signal)=>{
+      h.calls.privacy++;privacySignal=signal;entered();return new Promise(()=>{});
+    }},{timeoutMs:10}).stage(source),{code:'TIMEOUT'});
+    await reading;t.mock.timers.tick(10);await rejected;
+    assert.equal(privacySignal.aborted,true);assert.equal(h.calls.privacy,1);
+    assert.equal(h.calls.create,0);assert.equal(h.entries.size,1);
+  }finally{clock.mock.restore();t.mock.timers.reset();}
 });
 test('monotonic deadlines deny synchronous timer starvation before upload and after final journal read',async()=>{
   let milliseconds=0;const clock=mock.method(performance,'now',()=>milliseconds);
