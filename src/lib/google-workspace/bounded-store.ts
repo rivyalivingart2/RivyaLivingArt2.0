@@ -155,20 +155,57 @@ export function measureBoundedState(layout:BoundedLayout,state:BoundedState) {
   if(maximumSignedResponseBytes>BOUNDED_LIMITS.responseBytes)return fail('capacity');
   return {metadataBytes:Buffer.byteLength(metadata),metadataCharacters:metadata.length,metadataChunks:chunks.length,pageCount:state.manifest.pages.length,maximumPageCharacters,maximumSignedResponseBytes,maximumPreparedRequestBytes:null,totalRowsByKind,limits:{...BOUNDED_LIMITS},fitsReadBudgets:true,providerVerified:false};
 }
-export type BoundedPolicy={authorize:(context:{actor:MutationActor;commands:RecordMutationCommand[];records:ReadonlyMap<string,GoogleWorkspaceRecord>;operationId:string;replay:boolean})=>boolean|Promise<boolean>;validate:(context:{actor:MutationActor;commands:RecordMutationCommand[];records:ReadonlyMap<string,GoogleWorkspaceRecord>;operationId:string;replay:boolean})=>boolean|Promise<boolean>};
+export type BoundedPolicyContext = {
+  layout: BoundedLayout;
+  actor: MutationActor;
+  commands: RecordMutationCommand[];
+  /** Current records, including guarded relationships; never historical aliases. */
+  records: ReadonlyMap<string, GoogleWorkspaceRecord>;
+  /** Verified prior revision for each command's mutation ID. For replay this is
+   * its historical predecessor, already checked by mutationProof. Preflight is
+   * empty; an initial mutation maps to null. No new history read is introduced. */
+  originalsByMutation: ReadonlyMap<string, GoogleWorkspaceRecord | null>;
+  operationId: string;
+  commitBefore: number | null;
+  replay: boolean;
+  phase: 'preflight' | 'guarded';
+};
+export type BoundedPolicy = {
+  authorize: (context: BoundedPolicyContext) => boolean | Promise<boolean>;
+  validate: (context: BoundedPolicyContext) => boolean | Promise<boolean>;
+};
+/** deadline is an absolute performance.now() value, shared by an adapter across
+ * sequential reads, mutation and conflict reconciliation. It cannot extend the
+ * configured per-operation ceiling. It is never a provider wall-clock lease. */
+export type BoundedOperationOptions = {signal?: AbortSignal; deadline?: number};
 export async function prepareBoundedCommit(input:{layout:BoundedLayout;state:BoundedState;commands:RecordMutationCommand[];actor:MutationActor;operationId:string;now:string;policy:BoundedPolicy;relationships?:string[];commitBefore?:number|null}):Promise<{kind:'replay';receipts:MutationReceipt[]}|{kind:'commit';prepared:BoundedCommit;receipts:MutationReceipt[]}> {
   const {layout,root,manifest}=validateBoundedManifest(input.layout,input.state.root,input.state.manifest),commands=clone(input.commands),actor=clone(input.actor),operationId=input.operationId;
   if(!id(operationId)||!exact(actor,['id'])||!id(actor.id)||!input.policy||typeof input.policy.authorize!=='function'||typeof input.policy.validate!=='function')return fail('configuration');
   const required=requiredBoundedPageIds(manifest,commands,input.relationships);if(new Set(commands.map(c=>c.recordId)).size!==commands.length||new Set(commands.map(c=>c.mutationId)).size!==commands.length)return fail('integrity');
   const pages=new Map(input.state.pages.map(p=>[p.id,validateBoundedPage(manifest,p)]));if(pages.size!==input.state.pages.length||required.some(p=>!pages.has(p))||pages.size>BOUNDED_LIMITS.workingPages)return fail('integrity');
   const records=readBoundedRecords(layout,{root,manifest,pages:[...pages.values()]},[...commands.map(c=>c.recordId),...(input.relationships??[])]),transaction=manifest.transactions.find(t=>t[0]===operationId);
-  const context=()=>({actor:clone(actor),commands:clone(commands),records:new Map([...records].map(([key,value])=>[key,clone(value)])),operationId,replay:!!transaction});
+  const commitBefore=input.commitBefore??null;
+  if(commitBefore!==null&&!number(commitBefore,1))return fail('configuration');
+  const proofsByMutation = new Map(commands.map(command => {
+    const index = manifest.mutations.findIndex(mutation => mutation[0] === command.mutationId);
+    return [command.mutationId, index < 0 ? null : mutationProof(layout,manifest,pages,index)] as const;
+  }));
+  const originalsByMutation = new Map(commands.map(command => {
+    const proof = proofsByMutation.get(command.mutationId);
+    return [command.mutationId, proof ? proof.prior : records.get(command.recordId) ?? null] as const;
+  }));
+  const context = (): BoundedPolicyContext => ({
+    layout:clone(layout),actor:clone(actor),commands:clone(commands),
+    records:new Map([...records].map(([key,value])=>[key,clone(value)])),
+    originalsByMutation:new Map([...originalsByMutation].map(([key,value])=>[key,clone(value)])),
+    operationId,commitBefore,replay:!!transaction,phase:'guarded',
+  });
   if(await input.policy.authorize(context())!==true)return fail('unauthorized');if(await input.policy.validate(context())!==true)return fail('policy-rejected');
   const receipts:MutationReceipt[]=[],plans:Extract<RecordMutationPlan,{kind:'apply'}>[]=[];
-  for(const c of commands){const priorIndex=manifest.mutations.findIndex(x=>x[0]===c.mutationId),prior=priorIndex<0?null:mutationProof(layout,manifest,pages,priorIndex);const plan=planRecordMutation({current:records.get(c.recordId)??null,previousMutation:prior?.ledger??null,command:c,actor,now:input.now,authorize:()=>true});receipts.push(plan.receipt);if(plan.kind==='apply')plans.push(plan);}
+  for(const c of commands){const prior=proofsByMutation.get(c.mutationId);const plan=planRecordMutation({current:records.get(c.recordId)??null,previousMutation:prior?.ledger??null,command:c,actor,now:input.now,authorize:()=>true});receipts.push(plan.receipt);if(plan.kind==='apply')plans.push(plan);}
   if(transaction){if(plans.length||transaction[2]!==commands.length||commands.some((c,i)=>manifest.mutations[transaction[1]+i]?.[0]!==c.mutationId))return fail('integrity');return {kind:'replay',receipts};}
   if(plans.length!==commands.length)return fail('conflict');
-  const commitBefore=input.commitBefore??null;if(commitBefore!==null&&(!number(commitBefore,1)||Date.parse(input.now)>=commitBefore))return fail('commit-expired');
+  if(commitBefore!==null&&Date.parse(input.now)>=commitBefore)return fail('commit-expired');
   const nextManifest=clone(manifest),nextPages=new Map([...pages].map(([k,p])=>[k,clone(p)]));applyPlans(layout,nextManifest,nextPages,plans,operationId);
   const requestSha256=operationHash(actor.id,plans.map(p=>p.ledger)),next=rootFor(layout,nextManifest,{id:operationId,sha:requestSha256,actor:actor.id});validateBoundedManifest(layout,next,nextManifest);
   const changed=[...nextPages.values()].filter(p=>p.id>=manifest.pages.length||nextManifest.pages[p.id][2]!==manifest.pages[p.id][2]);changed.forEach(p=>validateBoundedPage(nextManifest,p));
@@ -195,30 +232,39 @@ export function createBoundedProvider(gateway:ReturnType<typeof createWriterGate
 export function createBoundedStore(config:{layout:BoundedLayout;policy:BoundedPolicy;now:()=>string;timeoutMs?:number},provider:ReturnType<typeof createBoundedProvider>) {
   const layout=validateBoundedLayout(config.layout),timeoutMs=config.timeoutMs??BOUNDED_LIMITS.operationTimeoutMs;
   if(!config.policy||typeof config.policy.authorize!=='function'||typeof config.policy.validate!=='function'||typeof config.now!=='function'||!number(timeoutMs,1,BOUNDED_LIMITS.operationTimeoutMs)||!provider||['readManifest','readPages','commit'].some(k=>typeof provider[k as keyof typeof provider]!=='function'))return fail('configuration');
-  async function run<T>(options:{signal?:AbortSignal},action:(signal:AbortSignal,check:()=>void,markCommit:()=>void)=>Promise<T>):Promise<T> {
-    const controller=new AbortController(),deadline=performance.now()+timeoutMs;let dispatched=false;const relay=()=>controller.abort();options.signal?.addEventListener('abort',relay,{once:true});if(options.signal?.aborted)relay();
+  async function run<T>(options:BoundedOperationOptions,action:(signal:AbortSignal,check:()=>void,markCommit:()=>void)=>Promise<T>):Promise<T> {
+    if(options.deadline!==undefined&&(!Number.isFinite(options.deadline)||options.deadline<0))return fail('configuration');
+    const started=performance.now(),deadline=Math.min(started+timeoutMs,options.deadline??Infinity);
+    const controller=new AbortController();let dispatched=false;const relay=()=>controller.abort();options.signal?.addEventListener('abort',relay,{once:true});if(options.signal?.aborted)relay();
     const error=()=>new BoundedStoreError(dispatched?'outcome-unknown':'unavailable'),check=()=>{if(controller.signal.aborted||performance.now()>=deadline)throw error();};
     let cancel:()=>void=()=>{};const cancelled=new Promise<never>((_,reject)=>{cancel=()=>reject(error());controller.signal.addEventListener('abort',cancel,{once:true});});
-    const timer=setTimeout(relay,timeoutMs);
+    const timer=setTimeout(relay,Math.max(0,deadline-started));
     try{check();return await Promise.race([action(controller.signal,check,()=>{check();dispatched=true;}),cancelled]);}
     finally{clearTimeout(timer);options.signal?.removeEventListener('abort',relay);controller.signal.removeEventListener('abort',cancel);controller.abort();}
   }
   async function collect(base:BoundedManifestRead,ids:number[],signal:AbortSignal,check:()=>void){const pages:BoundedPage[]=[];for(let i=0;i<ids.length;i+=BOUNDED_LIMITS.readPagesPerRequest){check();pages.push(...await provider.readPages(base,ids.slice(i,i+BOUNDED_LIMITS.readPagesPerRequest),{signal}));check();}return pages;}
   return Object.freeze({
-    async mutate(input:{commands:RecordMutationCommand[];actor:MutationActor;operationId:string;relationships?:string[];commitBefore?:number|null},options:{signal?:AbortSignal}={}):Promise<BoundedOutcome>{
+    async mutate(input:{commands:RecordMutationCommand[];actor:MutationActor;operationId:string;relationships?:string[];commitBefore?:number|null},options:BoundedOperationOptions={}):Promise<BoundedOutcome>{
       const safe=clone(input);
       return run(options,async(signal,check,markCommit)=>{
-        if(await config.policy.authorize({...clone(safe),records:new Map(),replay:false})!==true)return fail('unauthorized');check();
+        if(await config.policy.authorize({layout:clone(layout),actor:clone(safe.actor),commands:clone(safe.commands),operationId:safe.operationId,commitBefore:safe.commitBefore??null,records:new Map(),originalsByMutation:new Map(),replay:false,phase:'preflight'})!==true)return fail('unauthorized');check();
         const base=await provider.readManifest({signal});check();const ids=requiredBoundedPageIds(base.manifest,safe.commands,safe.relationships),pages=await collect(base,ids,signal,check);
-        const result=await prepareBoundedCommit({layout,state:{...base,pages},...safe,now:config.now(),policy:config.policy});check();if(result.kind==='replay')return {status:'replay',receipts:result.receipts};markCommit();const outcome=await provider.commit(result.prepared,{signal});check();
+        const result=await prepareBoundedCommit({layout,state:{...base,pages},...safe,now:config.now(),policy:config.policy});check();if(result.kind==='replay')return {status:'replay',receipts:result.receipts};markCommit();
+        let outcome:Awaited<ReturnType<typeof provider.commit>>;
+        try { outcome=await provider.commit(result.prepared,{signal}); }
+        catch { return fail('outcome-unknown'); }
+        check();
         if(!exact(outcome,['status'])||!['committed','replay','conflict','unknown'].includes(outcome.status))return {status:'unknown'};return outcome.status==='committed'||outcome.status==='replay'?{status:outcome.status,receipts:result.receipts}:{status:outcome.status};
       });
     },
-    async load(recordId:string,actor:MutationActor,options:{signal?:AbortSignal}={}):Promise<GoogleWorkspaceRecord|null>{
+    async load(recordId:string,actor:MutationActor,options:BoundedOperationOptions={}):Promise<GoogleWorkspaceRecord|null>{
       const safeActor=clone(actor);return run(options,async(signal,check)=>{
-        if(!id(recordId)||await config.policy.authorize({actor:clone(safeActor),commands:[],records:new Map(),operationId:'read',replay:false})!==true)return fail('unauthorized');check();
-        const base=await provider.readManifest({signal});check();const head=base.manifest.records.find(h=>h[0]===recordId);if(!head)return null;
-        const x=base.manifest.mutations[head[3]],ids=new Set([head[1],x[3],x[5],x[7]]);if(x[2]>=0)ids.add(base.manifest.mutations[x[2]][7]);const pages=await collect(base,[...ids],signal,check),records=readBoundedRecords(layout,{...base,pages},[recordId]);if(await config.policy.authorize({actor:clone(safeActor),commands:[],records:new Map([...records].map(([key,value])=>[key,clone(value)])),operationId:'read',replay:false})!==true)return fail('unauthorized');check();return records.get(recordId)??null;
+        const context = (phase:'preflight'|'guarded',records:ReadonlyMap<string,GoogleWorkspaceRecord>):BoundedPolicyContext => ({layout:clone(layout),actor:clone(safeActor),commands:[],records:new Map([...records].map(([key,value])=>[key,clone(value)])),originalsByMutation:new Map(),operationId:'read',commitBefore:null,replay:false,phase});
+        if(!id(recordId)||await config.policy.authorize(context('preflight',new Map()))!==true)return fail('unauthorized');check();
+        const base=await provider.readManifest({signal});check();const head=base.manifest.records.find(h=>h[0]===recordId);
+        let records:ReadonlyMap<string,GoogleWorkspaceRecord>=new Map();
+        if(head){const x=base.manifest.mutations[head[3]],ids=new Set([head[1],x[3],x[5],x[7]]);if(x[2]>=0)ids.add(base.manifest.mutations[x[2]][7]);const pages=await collect(base,[...ids],signal,check);records=readBoundedRecords(layout,{...base,pages},[recordId]);}
+        if(await config.policy.authorize(context('guarded',records))!==true)return fail('unauthorized');check();return records.get(recordId)??null;
       });
     },
   });

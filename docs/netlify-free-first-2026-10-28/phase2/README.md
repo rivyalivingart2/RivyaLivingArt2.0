@@ -2,6 +2,8 @@
 
 Continuation spans 28–29 October 2026 in the owner's time zone. Technical observations use explicit UTC timestamps. The owner authorized fixing capacity and continuing pending work with all changes local. No GitHub push, PR mutation, deployment, provider configuration change or production business write is part of this step.
 
+**Latest continuation, 29 October:** [the foundations report](FOUNDATIONS-CONTINUATION.md) supersedes the earlier pending job-port and local large-document-model statements below. Bounded jobs and login throttling are now implemented with verified original-prior policies and a shared deadline. The actual checkpoint's 310 oversized payloads passed two complete local emulator passes, and the full 3,455-row bounded representation fits. Eight actual read-only sandbox-probe requests preserved 14 generic historical mutations locally. Actual Google document allocation, full domain replay compatibility, runtime activation and provider acceptance remain open. Older receipts retain their original dates and code hashes.
+
 ## Implementation
 
 The previous whole-workbook protocol cannot fit the actual Content records. The new, inactive `rivya-bounded-v2` protocol uses a registered root, compact manifest/index and fixed physical pages within each existing confidentiality boundary. Ordinary record reads retrieve the current record and its bounded proof pages. Complete history stays retained and is available for explicit audits.
@@ -17,7 +19,7 @@ The exact Apps Script source has been exercised by a local range-slicing emulato
 
 Two independent-review findings were fixed: unchanged validation dependencies are now guarded at commit, and a monotonic deadline check prevents synchronous validation from dispatching a write after its time budget. Neither fix proves the real Google owner/API race safe. Google documents an atomic batch but does not provide an expected-revision precondition against unrelated writers: [batchUpdate reference](https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets/batchUpdate). Explicit ranges and field masks support the bounded reads: [spreadsheets.get reference](https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets/get).
 
-## Actual-source measurement and local recovery
+## Earlier actual-source measurement and local recovery
 
 The read-only source reader now has an explicit trusted local inspection hook. It runs only after source fingerprints, shape, identities and key relationships have reconciled. A separate operator command uses that hook to create an AES-256-GCM encrypted local records checkpoint, with a random key protected by Windows DPAPI CurrentUser. Native owner-only permissions are applied and checked before content is written. Private records, source hashes and key envelopes stay below ignored `test-results/`.
 
@@ -53,14 +55,14 @@ Two earlier attempts remain recorded as failures. The diagnostic attempt isolate
 | Task | Status and remaining acceptance |
 |---|---|
 | NFF-200 bounded writer | Local implementation and adversarial verification; real registration/bootstrap/deployment and provider acceptance remain open |
-| NFF-201 document support | Existing immutable-artifact foundations retained; actual large-document upload, reference readback and capacity still pending |
-| NFF-202 durable jobs | Existing v1 adapter tests pass locally; a safe v2 port needs original-prior proof in its trusted policy context before replaying domain actions |
+| NFF-201 document support | Inactive immutable-document bridge, private local journal and complete actual-source emulator rehearsal pass; real ID reservation, ownership/permissions, upload/readback and provider capacity remain pending |
+| NFF-202 durable jobs | V2 domain adapter now locally verified with original-prior proof, full-intent binding, shared deadline and lease fence; legacy full-action replay bindings and deployed workers remain pending |
 | NFF-203 credentials | Existing signed read configuration retained privately; renewable Drive/Slides runtime binding remains unverified |
 | NFF-204 provider checks | Ordinary-editor denial, owner/API race, actual script interruption/quarantine, independent lease expiry and genuine bounded rate-limit evidence remain open |
-| NFF-205 capacity/placement | Actual-source inline format and sampled update sizes fit locally; large documents, ongoing-free account capacity, growth, provider latency and quotas remain separate gates |
+| NFF-205 capacity/placement | All 3,455 source rows including 310 emulated document references fit locally; only sampled unchanged-payload updates measured. Ongoing-free account capacity, growth, provider latency/quotas and real reference allocation remain separate gates |
 | NFF-300/303 recovery preparation | Actual encrypted source-record checkpoint and fresh loopback SQL restore verified; target Google/media reconciliation and complete recovery remain open |
 
-Next local integration work must port domain policies deliberately: v1 whole-sheet history scans cannot simply be connected to the v2 page provider. Jobs require original-prior proof for historical replay and the same server commit deadline; throttle retries must use one overall deadline, retry only an explicit no-write conflict and deny an unknown outcome. No in-memory map becomes authority.
+Jobs and throttle now implement the required original-prior and shared-deadline behavior. Next local integration must preserve atomic domain actions and migrated source identities: v1 whole-sheet history scans and split staff/request writes cannot simply be connected to v2. The new foundation report records the narrow access-redemption step and its verification status. Session lifecycle, lookup uniqueness, approval/recovery, operations and publication still need controlled integration. No in-memory map becomes authority.
 
 No new database was selected. The measured snapshot failure justified changing the protocol, not adding a service. The Google account's observed 5 TB offer is time-limited and its use exceeds standard free capacity; sustainable free allocation remains unresolved. Do not delete personal files or enable a paid continuation to conceal that limit.
 
