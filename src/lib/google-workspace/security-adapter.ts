@@ -1,6 +1,7 @@
 import {createHash, createHmac, randomBytes, randomUUID, scrypt, timingSafeEqual} from 'node:crypto';
 import {promisify} from 'node:util';
 import type {AccessInput} from '../studio-access-validation.ts';
+import type {StudioSessionLifecycle} from './bounded-session-service';
 
 export interface StaffMember {
   id: string;
@@ -227,22 +228,31 @@ export class GoogleWorkspaceSecurityAdapter {
   private adminId: string;
   private adminPassword?: string;
   private sessionSecret?: string;
+  private sessionLifecycle?: StudioSessionLifecycle;
 
   constructor(
     store: SecurityDataStore,
-    options: {adminId?: string; adminPassword?: string; sessionSecret?: string} = {}
+    options: {adminId?: string; adminPassword?: string; sessionSecret?: string} = {},
+    sessionLifecycle?: StudioSessionLifecycle,
   ) {
     this.store = store;
     this.adminId = options.adminId || process.env.STUDIO_ADMIN_ID || '';
     this.adminPassword = options.adminPassword || process.env.STUDIO_ADMIN_PASSWORD;
     this.sessionSecret = options.sessionSecret || process.env.STUDIO_SESSION_SECRET;
+    this.sessionLifecycle = sessionLifecycle;
+    if (sessionLifecycle && (sessionLifecycle.scope !== 'BOUNDED_ATOMIC_SESSIONS' ||
+        ['createStudioSession', 'studioSessionFromToken', 'revokeStudioSession'].some(key =>
+          typeof sessionLifecycle[key as keyof StudioSessionLifecycle] !== 'function'))) {
+      throw new SecurityAdapterError('ATOMIC_SESSIONS_REQUIRED', 'The atomic session service is invalid.');
+    }
   }
 
   isConfigured(): boolean {
     return Boolean(
       this.adminId.trim() &&
       (this.adminPassword?.length ?? 0) >= 16 &&
-      (this.sessionSecret?.length ?? 0) >= 32
+      (this.sessionSecret?.length ?? 0) >= 32 &&
+      (this.store instanceof InMemorySecurityStore || !!this.sessionLifecycle)
     );
   }
 
@@ -310,6 +320,11 @@ export class GoogleWorkspaceSecurityAdapter {
   }
 
   async createStudioSession(identity?: StaffSession, now = new Date()): Promise<string> {
+    if (this.sessionLifecycle) {
+      this.requireSessionBinding();
+      return this.sessionLifecycle.createStudioSession(identity);
+    }
+    this.requireSimulationSessions();
     const token = randomBytes(32).toString('base64url');
     const tokenHash = this.hash(token);
     const staffId = identity?.staffId || null;
@@ -343,6 +358,11 @@ export class GoogleWorkspaceSecurityAdapter {
   }
 
   async studioSessionFromToken(token: string | undefined, now = new Date()): Promise<StaffSession | null> {
+    if (this.sessionLifecycle) {
+      this.requireSessionBinding();
+      return this.sessionLifecycle.studioSessionFromToken(token);
+    }
+    this.requireSimulationSessions();
     if (!this.isConfigured()) return null;
     if (!token || !/^[A-Za-z0-9_-]{43}$/.test(token)) return null;
 
@@ -389,8 +409,28 @@ export class GoogleWorkspaceSecurityAdapter {
   }
 
   async revokeStudioSession(token: string | undefined): Promise<void> {
+    if (this.sessionLifecycle) {
+      this.requireSessionBinding();
+      await this.sessionLifecycle.revokeStudioSession(token);
+      return;
+    }
+    this.requireSimulationSessions();
     if (!token || !/^[A-Za-z0-9_-]{43}$/.test(token)) return;
     await this.store.deleteSession(this.hash(token));
+  }
+
+  private requireSessionBinding(): void {
+    const binding = this.sessionLifecycle?.ownerCredentialFingerprint;
+    if (typeof binding !== 'string' || !/^[a-f0-9]{64}$/.test(binding) ||
+        !timingSafeEqual(Buffer.from(binding), Buffer.from(this.adminFingerprint()))) {
+      throw new SecurityAdapterError('SESSION_BINDING_CHANGED', 'Session credentials must be configured together.');
+    }
+  }
+
+  private requireSimulationSessions(): void {
+    if (!(this.store instanceof InMemorySecurityStore)) {
+      throw new SecurityAdapterError('ATOMIC_SESSIONS_REQUIRED', 'Persistent sessions require the atomic session service.');
+    }
   }
 
   async workspaceStaff(session: StaffSession): Promise<StaffMember[]> {

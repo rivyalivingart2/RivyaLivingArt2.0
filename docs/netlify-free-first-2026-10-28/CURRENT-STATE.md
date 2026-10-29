@@ -1,4 +1,6 @@
-# Current state — local storage foundations, 29 October 2026
+# Current state — guarded session lifecycle, 29 October 2026
+
+**Latest local continuation:** session creation, validation/refresh and revocation now use a guarded store and token service with explicit adapter integration. The supported-runtime session/related and lookup runs passed 138 distinct tests. The next local dependency, strict security lookup planning and root-pinned reading, is implemented with final verification recorded in [the session continuation](phase2/SESSION-CONTINUATION.md). No Google runtime activation, provider write, migration or release occurred.
 
 **Latest scope:** fix storage capacity, continue pending work, and keep all changes local. Do not push, create/update a PR or merge without the owner's later permission. [OWNER-SCOPE.md](OWNER-SCOPE.md) and [Phase 2](phase2/README.md) are the active continuation instructions. Full provider checks, recovery, Studio parity and verification belong to their assigned phases; they are not a circular prerequisite for implementing their local foundations.
 
@@ -14,9 +16,9 @@ A fresh signed read of all four existing Google sandbox boundaries completed at 
 
 | Reporting dimension | Current status |
 |---|---|
-| Implemented | Inactive bounded writer/jobs/throttle, atomic access-redemption primitive, verified document staging/private local journal and generic legacy preservation planner; checkpoint/restore tooling retained |
-| Locally verified | 195 distinct tests passed across combined and final regression runs; complete actual-checkpoint model passed; 1,198 protected files unchanged; historical SQL restore retains its own date/scope |
-| Real-provider verified | Eight existing signed sandbox reads and GitHub/Netlify metadata; no new Google writes or five-check passes |
+| Implemented | Prior storage foundations plus guarded session lifecycle/token service, explicit adapter delegation and inactive strict lookup planner/reader. Full security provider remains unselected |
+| Locally verified | Latest session/related and lookup runs passed 138 tests; actual-checkpoint lookup plan has zero staff/request rows and zero claims. Prior 195-case storage checkpoint and complete-source model retain their own scope; 1,198 protected files unchanged |
+| Real-provider verified | No provider requests in the session continuation. Earlier eight signed sandbox reads and GitHub/Netlify observations retain their dates; the five Google checks remain open |
 | Preview verified | No new preview or deployment |
 | Migrated | No Google target records/documents/media copied or reconciled |
 | Cut over | No authority switch; existing SQL/Blob remain authoritative |
@@ -24,7 +26,7 @@ A fresh signed read of all four existing Google sandbox boundaries completed at 
 | Old dependencies removed | None; Vercel, Blob, SQL and OLDWEBSITE retained |
 | Backups retained | Current encrypted local source-record checkpoint and verified stopped SQL restore retained; complete backup and off-device recovery unverified |
 
-The refreshed GitHub read still shows PR #71 open/draft/unmerged at `7b390d558b9a48d5ec7ccedb8bab104f6b1411f9`, with base main `35f99fd9b5fd1b76333d92b4ddf3b90289c99b2a`. Netlify's **29 October 03:55:35 UTC** readback is ready/locked on the same migration revision and branch at www.rivyalivingart.com. The local work continues from `f7333aa828885a08ed3883d45efeca9384a51f75` on `codex/netlify-free-first`, preserving both migration commits.
+The refreshed GitHub read still shows PR #71 open/draft/unmerged at `7b390d558b9a48d5ec7ccedb8bab104f6b1411f9`, with base main `35f99fd9b5fd1b76333d92b4ddf3b90289c99b2a`. Netlify's **29 October 03:55:35 UTC** readback is ready/locked on the same migration revision and branch at www.rivyalivingart.com. The latest session work continues from `0745c954bd4167b388a133ba80d4100ef2e8b3e7` on `codex/netlify-free-first`, preserving both migration commits.
 
 Proceed with the exact remaining dependencies in [Phase 2](phase2/README.md) and [the phase plan](PHASE-PLAN.md). Do not claim full Phase 0–11 completion, provider acceptance or release from these local results.
 
