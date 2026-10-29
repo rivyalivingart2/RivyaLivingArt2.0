@@ -1,0 +1,81 @@
+{
+  "sourceTables": 22,
+  "sourceRows": 3455,
+  "securityTableCounts": {
+    "rivya_access_requests": 0,
+    "rivya_staff": 0,
+    "rivya_studio_login_limits": 28,
+    "rivya_studio_sessions": 2
+  },
+  "securitySourceRecords": 30,
+  "claims": 0,
+  "syntheticCoverageMarkers": 1,
+  "sourceRecordsExactlyMatched": true,
+  "currentRecords": 31,
+  "localManifestReads": 1,
+  "localPageReadBatches": 4,
+  "localProofPagesRead": 16,
+  "safetyCeilings": {
+    "records": 256,
+    "proofPages": 256,
+    "bytes": 8388608
+  },
+  "measurement": {
+    "metadataBytes": 9611,
+    "metadataCharacters": 9611,
+    "metadataChunks": 1,
+    "pageCount": 16,
+    "maximumPageCharacters": 7961,
+    "maximumSignedResponseBytes": 34677,
+    "maximumPreparedRequestBytes": null,
+    "totalRowsByKind": {
+      "r": 31,
+      "l": 31,
+      "a": 31,
+      "h": 31
+    },
+    "limits": {
+      "pageRows": 8,
+      "pageCharacters": 131072,
+      "metadataBytes": 1048576,
+      "chunkCharacters": 16384,
+      "responseBytes": 6000000,
+      "requestBytes": 1800000,
+      "members": 8,
+      "workingPages": 64,
+      "readPagesPerRequest": 4,
+      "operationTimeoutMs": 30000
+    },
+    "fitsReadBudgets": true,
+    "providerVerified": false
+  },
+  "kind": "actual-encrypted-checkpoint-local-security-current-proof",
+  "checkedAt": "2026-10-29T07:08:11.167Z",
+  "sourceCheckpointCreatedAt": "2026-10-28T18:33:43.950Z",
+  "sourceCheckpointIntegrityVerified": true,
+  "codeHashes": {
+    "tools/google-workspace/rehearse-security-current.mjs": "dc4bcb07eea167ce010ac6ed107513a470558b4aac685141cfd4905337510846",
+    "src/lib/google-workspace/security-current-snapshot.ts": "26a40a3ad6b8c273ca9537f6119e10479491e97aa723d5e8deb524c125c73a34",
+    "src/lib/google-workspace/security-operation.ts": "26dd9d12bd21c70171b569fbf44fae82dff1eaf3581b250e8e7570760dc18961",
+    "src/lib/google-workspace/security-lookup-projection.ts": "eb11086e364bb1826f3b52b9ed969b017c567b6a0c9326b102456063bc29170a",
+    "src/lib/google-workspace/bounded-store.ts": "f1e008aa4e5be112c95fc4e841d9f3a82da75d60395b9a9954ba533fd58317e2",
+    "src/lib/google-workspace/record-codec.ts": "518fc04482b034d167b0c23c2c29b604d3d7c5351e0d9f5a264e07c872d1a741",
+    "src/lib/google-workspace/schema.json": "246acf819050e20908c7b851652e927d4335c5da1ed951edc7007f523eb627e5",
+    "tools/google-workspace/migration.mjs": "7fbe343f2af05516c3a64077b25f49f3b3b992efa191bb1dff6ab46a66a65ca0",
+    "tools/google-workspace/local-recovery.mjs": "3c1b8985cd47f689d5ca807c3515742f2d4595e2892455447ccecb71d7da66fa"
+  },
+  "providerRequests": 0,
+  "sourceWrites": 0,
+  "targetWrites": 0,
+  "sourceRowsPersisted": 0,
+  "lookupCoverageRegistered": false,
+  "ownerEpochProvisioned": false,
+  "currentProductionInventory": false,
+  "providerVerified": false,
+  "limitations": [
+    "Current records from the dated encrypted checkpoint; not a fresh production inventory.",
+    "One explicitly synthetic coverage marker and local bootstrap history wrappers; no installed Google registration or source-history migration.",
+    "Owner epoch was not created or inferred. No session was authenticated, refreshed, archived or issued.",
+    "No media, full SQL schema, off-device restore, free-plan capacity or real provider latency/quota acceptance."
+  ]
+}

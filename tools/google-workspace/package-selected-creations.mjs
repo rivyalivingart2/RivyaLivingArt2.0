@@ -91,7 +91,10 @@ export async function verifyPortableCreations() {
       bytes += data.length;
     }
   }
-  return {images: manifest.images.length, variants: expectedNames.length, featured: manifest.featured.length, categories: new Set(manifest.images.map(image => image.category)).size, bytes, manifestSha256: sha(manifestBytes)};
+  // Git checkouts can change JSON line endings. The approved receipt hashes LF
+  // text; image verification above must continue hashing the original bytes.
+  const manifestSha256 = sha(manifestBytes.toString('utf8').replace(/\r\n/g, '\n'));
+  return {images: manifest.images.length, variants: expectedNames.length, featured: manifest.featured.length, categories: new Set(manifest.images.map(image => image.category)).size, bytes, manifestSha256};
 }
 
 export async function packageSelectedCreations() {

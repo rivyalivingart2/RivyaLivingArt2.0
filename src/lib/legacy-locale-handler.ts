@@ -1,4 +1,5 @@
 import 'server-only';
+import {secureCookies} from './hosting-environment';
 import {isPublicWebsiteAvailable} from './public-website';
 import {publishedSiteSettings} from './site-settings';
 import {resolveLegacyLocale} from './legacy-locale';
@@ -9,5 +10,5 @@ export async function GET(request:Request){
  if(!result?.target)return notice(request);
  const {settings}=await publishedSiteSettings();
  const locale=settings.localization.enabled&&settings.localization.enabledLocales.some(l=>l===result.locale)?result.locale:'en';
- return new Response(null,{status:307,headers:{Location:result.target,'Cache-Control':'private, no-store','Referrer-Policy':'no-referrer','X-Robots-Tag':'noindex, nofollow, noarchive','Set-Cookie':`NEXT_LOCALE=${locale}; Path=/; Max-Age=31536000; SameSite=Lax${process.env.VERCEL_ENV==='production'?'; Secure':''}`}});
+ return new Response(null,{status:307,headers:{Location:result.target,'Cache-Control':'private, no-store','Referrer-Policy':'no-referrer','X-Robots-Tag':'noindex, nofollow, noarchive','Set-Cookie':`NEXT_LOCALE=${locale}; Path=/; Max-Age=31536000; SameSite=Lax${secureCookies(process.env)?'; Secure':''}`}});
 }

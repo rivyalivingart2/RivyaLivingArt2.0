@@ -1,3 +1,9 @@
+# Active continuation — 28 October 2026
+
+Read [the refreshed Netlify free-first checkpoint](../netlify-free-first-2026-10-28/CURRENT-STATE.md) and its latest owner brief first. Netlify is live at www.rivyalivingart.com on 7b390d5; PR #71 remains draft and production is locked to the migration branch. Continue locally on codex/netlify-free-first, preserving the migration commits. Sheets/Drive is the preferred target with a conditional, justified ongoing-free database exception. The Google replacement, migration, full Studio parity and release acceptance are incomplete. Historical completion claims below are dated and superseded; simulation receipts do not certify providers, backups or production. Preserve public/login design, records/media, credentials and OLDWEBSITE. Add no products and import no archived catalogue. No production migration, publication, credential rotation or old-resource deletion has occurred in this continuation.
+
+---
+
 # Use Sheets and Drive after verified migration; preserve the approved public site
 
 Status: owner-selected target; Phase 0–11 local implementation and verification complete on `codex/google-cloud-acceptance`. Real Google cloud migration, storage cutover, and production release retain separate authorization boundaries.

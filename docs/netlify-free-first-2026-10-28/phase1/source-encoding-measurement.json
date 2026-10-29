@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "kind": "source-encoding-measurement-not-target-migration",
+  "checkedAt": "2026-10-28T17:43:16.558Z",
+  "applicationBaseline": "41cda9c20947dface0b027484106d0bbcc0cdd14",
+  "sourceReaderSha256": "4e2d331900ea98ad3f43d07e901f1d8ff5a72fb884b03746047e1277758c3cf4",
+  "capacityCollectorSha256": "ffc0b9e61741e53574a6bb425508be79f6c6695884fb806832952ce747bc1c1a",
+  "sourceTransaction": "PAGED READ ONLY; initial/readback/final projection fingerprints matched",
+  "pageSize": 10,
+  "chunkCharacters": 32768,
+  "pagesRead": 354,
+  "fragmentReads": 598,
+  "fragmentBatches": 497,
+  "sourceJsonBytes": 54650938,
+  "relationships": {
+    "tables": 22,
+    "rows": 3455,
+    "constraintsChecked": 36
+  },
+  "tables": [
+    {
+      "table": "rivya_access_requests",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_audit",
+      "rows": 1099,
+      "inline": 1099,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_business_settings",
+      "rows": 1,
+      "inline": 1,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_catalogue",
+      "rows": 120,
+      "inline": 120,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_content",
+      "rows": 535,
+      "inline": 250,
+      "driveArtifactsRequired": 285,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_erasure_ledger",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_inquiries",
+      "rows": 2,
+      "inline": 2,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_inquiry_notes",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_inquiry_upload_sessions",
+      "rows": 14,
+      "inline": 14,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_managed_exports",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_presentation_revisions",
+      "rows": 4,
+      "inline": 0,
+      "driveArtifactsRequired": 4,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_presentations",
+      "rows": 1,
+      "inline": 0,
+      "driveArtifactsRequired": 1,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_privacy_controls",
+      "rows": 26,
+      "inline": 26,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_public_media",
+      "rows": 154,
+      "inline": 154,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_references",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_revisions",
+      "rows": 1395,
+      "inline": 1375,
+      "driveArtifactsRequired": 20,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_staff",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_storage_budget",
+      "rows": 1,
+      "inline": 1,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_studio_login_limits",
+      "rows": 28,
+      "inline": 28,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_studio_order_events",
+      "rows": 47,
+      "inline": 47,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_studio_orders",
+      "rows": 26,
+      "inline": 26,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    },
+    {
+      "table": "rivya_studio_sessions",
+      "rows": 2,
+      "inline": 2,
+      "driveArtifactsRequired": 0,
+      "stableIdsUnique": true,
+      "losslessEncodingVerified": true
+    }
+  ],
+  "absentMappedTables": [
+    "rivya_editorial_extension_revisions",
+    "rivya_editorial_extensions",
+    "rivya_migration_markers",
+    "rivya_newsletter_subscribers",
+    "rivya_restoration_conflicts",
+    "rivya_restoration_crosswalk"
+  ],
+  "preservationComparison": {
+    "priorCheckedAt": "2026-10-28T13:01:01.366Z",
+    "businessTables": 20,
+    "businessRows": 3425,
+    "businessTableHashesMatched": true,
+    "changedBusinessTables": [],
+    "changedSecurityTables": [
+      "rivya_studio_login_limits",
+      "rivya_studio_sessions"
+    ],
+    "explanation": "Normal rejected login, owner sign-in and session refresh occurred during the browser audit. Security changes are not business-data migration."
+  },
+  "capacity": {
+    "kind": "measured-source-encoding-lower-bounds",
+    "wireBasis": "conservative-blank-metadata-v1",
+    "targetWrites": 0,
+    "rawRowsPersisted": 0,
+    "providerVerified": false,
+    "excludedFromBounds": [
+      "large-document reference records (no actual target IDs exist)",
+      "ledger and audit rows",
+      "control and registration wrappers",
+      "existing sandbox probes",
+      "future history growth"
+    ],
+    "workbooks": [
+      {
+        "workbook": "content",
+        "sourceRows": 2210,
+        "measuredInlineRows": 1900,
+        "unmaterializedDocuments": 310,
+        "documentPayloadBytes": 20537481,
+        "documentPayloadCharacters": 20135043,
+        "recordAndInitialHistoryCharactersLowerBound": 68553028,
+        "signedResponseBytesWithExplicitEmptyCells": 153092178,
+        "signedResponseBytesLowerBound": 152446178,
+        "exceedsDefaultSnapshotCharacters": true,
+        "exceedsMaximumSnapshotCharacters": true,
+        "exceedsDefaultGatewayBytes": true,
+        "exceedsMaximumGatewayBytes": true
+      },
+      {
+        "workbook": "operations",
+        "sourceRows": 116,
+        "measuredInlineRows": 116,
+        "unmaterializedDocuments": 0,
+        "documentPayloadBytes": 0,
+        "documentPayloadCharacters": 0,
+        "recordAndInitialHistoryCharactersLowerBound": 159986,
+        "signedResponseBytesWithExplicitEmptyCells": 489598,
+        "signedResponseBytesLowerBound": 450158,
+        "exceedsDefaultSnapshotCharacters": false,
+        "exceedsMaximumSnapshotCharacters": false,
+        "exceedsDefaultGatewayBytes": false,
+        "exceedsMaximumGatewayBytes": false
+      },
+      {
+        "workbook": "security",
+        "sourceRows": 30,
+        "measuredInlineRows": 30,
+        "unmaterializedDocuments": 0,
+        "documentPayloadBytes": 0,
+        "documentPayloadCharacters": 0,
+        "recordAndInitialHistoryCharactersLowerBound": 23614,
+        "signedResponseBytesWithExplicitEmptyCells": 85218,
+        "signedResponseBytesLowerBound": 75018,
+        "exceedsDefaultSnapshotCharacters": false,
+        "exceedsMaximumSnapshotCharacters": false,
+        "exceedsDefaultGatewayBytes": false,
+        "exceedsMaximumGatewayBytes": false
+      },
+      {
+        "workbook": "system",
+        "sourceRows": 1099,
+        "measuredInlineRows": 1099,
+        "unmaterializedDocuments": 0,
+        "documentPayloadBytes": 0,
+        "documentPayloadCharacters": 0,
+        "recordAndInitialHistoryCharactersLowerBound": 1006156,
+        "signedResponseBytesWithExplicitEmptyCells": 3446550,
+        "signedResponseBytesLowerBound": 3072890,
+        "exceedsDefaultSnapshotCharacters": false,
+        "exceedsMaximumSnapshotCharacters": false,
+        "exceedsDefaultGatewayBytes": false,
+        "exceedsMaximumGatewayBytes": false
+      }
+    ]
+  },
+  "productionWritesByMeasurement": 0,
+  "targetWrites": 0,
+  "rawRowsPersisted": 0,
+  "targetReconciled": false,
+  "backupCreated": false,
+  "restoreVerified": false
+}

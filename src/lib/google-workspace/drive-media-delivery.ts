@@ -1,5 +1,6 @@
 import { editorialWidths } from '../editorial-media-model';
 import { approvedPublicMedia } from '../public-media';
+import publicCreations from '../selected-creations-public.json';
 
 export interface AspectRatioCheckResult {
   readonly valid: boolean;
@@ -116,67 +117,39 @@ export function verifyDerivativeSizes(
   };
 }
 
-/**
- * Resolves media delivery ensuring strict private/public boundaries:
- * - Public media & creations resolve for all clients.
- * - Private references require authenticated staff session.
- */
+export interface RegisteredDeliveryAsset {
+  path: string;
+  visibility: 'public' | 'private';
+  published: boolean;
+  archived: boolean;
+  resourceId: string;
+}
+
+/** Resolve exact registered paths only. Dynamic registry and authorization must
+ * come from trusted server state; a login alone is not assignment authorization. */
 export function resolveMediaDelivery(
   mediaPath: string,
-  isStaffAuthenticated: boolean
+  isStaffAuthenticated: boolean,
+  policy: {assets?: readonly RegisteredDeliveryAsset[]; authorizePrivate?: (asset: RegisteredDeliveryAsset) => boolean} = {},
 ): MediaDeliveryResolution {
-  if (!mediaPath || typeof mediaPath !== 'string') {
-    return { canDeliver: false, deliveryUrl: null, accessType: 'denied', reason: 'Invalid media path' };
-  }
-
-  // Deny path traversals
-  if (mediaPath.includes('..') || mediaPath.includes('//') || mediaPath.includes('\\')) {
-    return { canDeliver: false, deliveryUrl: null, accessType: 'denied', reason: 'Path traversal detected' };
-  }
-
-  // Private customer reference gating
-  if (
-    mediaPath.startsWith('/api/studio/reference/private') ||
-    mediaPath.startsWith('/references/') ||
-    mediaPath.includes('private-ref')
-  ) {
-    if (!isStaffAuthenticated) {
-      return {
-        canDeliver: false,
-        deliveryUrl: null,
-        accessType: 'denied',
-        reason: 'Private customer references require authenticated Studio staff session',
-      };
+  const deny = (reason: string): MediaDeliveryResolution => ({canDeliver: false, deliveryUrl: null, accessType: 'denied', reason});
+  if (typeof mediaPath !== 'string' || !mediaPath.startsWith('/') ||
+    /[\\%?#\s\u0000-\u001f\u007f]/.test(mediaPath) || mediaPath.includes('..') || mediaPath.includes('//')) return deny('Invalid media path');
+  const matches = (policy.assets ?? []).filter(asset => asset.path === mediaPath);
+  if (matches.length > 1) return deny('Ambiguous media registration');
+  const asset = matches[0];
+  if (asset) {
+    if (asset.archived || !asset.resourceId) return deny('Unavailable media registration');
+    if (asset.visibility === 'public' && asset.published) return {canDeliver: true, deliveryUrl: mediaPath, accessType: 'public'};
+    if (asset.visibility === 'private' && isStaffAuthenticated && policy.authorizePrivate?.(asset) === true) {
+      return {canDeliver: true, deliveryUrl: mediaPath, accessType: 'private_gated'};
     }
-    return {
-      canDeliver: true,
-      deliveryUrl: mediaPath,
-      accessType: 'private_gated',
-    };
+    return deny('Media is not published or this actor cannot access the registered resource');
   }
-
-  // Approved public media or creation
-  const isApproved =
-    approvedPublicMedia.some((m) => m.path === mediaPath) ||
-    mediaPath.startsWith('/media/') ||
-    mediaPath.startsWith('/editorial/') ||
-    mediaPath.startsWith('/api/local-creations/') ||
-    mediaPath.startsWith('/creations/');
-
-  if (isApproved) {
-    return {
-      canDeliver: true,
-      deliveryUrl: mediaPath,
-      accessType: 'public',
-    };
-  }
-
-  return {
-    canDeliver: false,
-    deliveryUrl: null,
-    accessType: 'denied',
-    reason: 'Unregistered media path',
-  };
+  const publicAsset = approvedPublicMedia.some(asset => asset.path === mediaPath) ||
+    publicCreations.images.some(image => image.variants.some(variant => variant.url === mediaPath));
+  if (publicAsset) return {canDeliver: true, deliveryUrl: mediaPath, accessType: 'public'};
+  return deny('Unregistered media path');
 }
 
 /**

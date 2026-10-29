@@ -1,4 +1,3 @@
-import { createHash } from 'node:crypto';
 import type { CatalogueInputSnapshot } from './catalogue-automation';
 
 export type CatalogueJobStatus =
@@ -7,9 +6,11 @@ export type CatalogueJobStatus =
   | 'RENDERING_PDF'
   | 'COMPLETED'
   | 'FAILED'
-  | 'CANCELLED';
+  | 'CANCELLED'
+  | 'BLOCKED';
 
 export interface CatalogueJobRecord {
+  readonly storage: 'simulation';
   readonly id: string;
   readonly snapshotId: string;
   readonly snapshotSha256: string;
@@ -29,6 +30,7 @@ export interface CatalogueJobRecord {
   retryCount: number;
 }
 
+/** Retained queue simulation only. No production catalogue factory is installed. */
 class CatalogueWorkerManager {
   private jobs: Map<string, CatalogueJobRecord> = new Map();
   private snapshotToJob: Map<string, string> = new Map();
@@ -42,13 +44,14 @@ class CatalogueWorkerManager {
     const existingJobId = this.snapshotToJob.get(snapshot.snapshotSha256);
     if (existingJobId) {
       const existing = this.jobs.get(existingJobId);
-      if (existing && existing.status === 'COMPLETED') {
+      if (existing) {
         return existing;
       }
     }
 
     const id = `job-cat-${snapshot.snapshotSha256.slice(0, 10)}-${Date.now()}`;
     const job: CatalogueJobRecord = {
+      storage: 'simulation',
       id,
       snapshotId: snapshot.snapshotId,
       snapshotSha256: snapshot.snapshotSha256,
@@ -102,8 +105,8 @@ class CatalogueWorkerManager {
   }
 
   /**
-   * Executes the worker steps to generate Slides and PDF from the input snapshot.
-   * Produces stable, deterministic Drive IDs and verifies outputs.
+   * Compatibility simulation: explicitly blocked without a real durable worker.
+   * Never manufactures Drive identifiers, bytes, checksums or output URLs.
    */
   async executeJob(
     jobId: string,
@@ -118,46 +121,12 @@ class CatalogueWorkerManager {
       return job;
     }
 
-    job.status = 'PROCESSING_SLIDES';
-    job.startedAt = new Date().toISOString();
-    job.progressPercent = 25;
-
-    // Simulate Apps Script / Google Slides API deck creation with stable IDs
-    const deckSeed = `${snapshot.snapshotSha256}-slides`;
-    const slidesDriveId = `1slides_${createHash('sha256').update(deckSeed).digest('hex').slice(0, 24)}`;
-    const slidesUrl = `https://docs.google.com/presentation/d/${slidesDriveId}/edit`;
-
-    job.slidesDriveId = slidesDriveId;
-    job.slidesUrl = slidesUrl;
-    job.progressPercent = 50;
-
-    if (this.cancellationTokens.has(jobId)) {
-      job.status = 'CANCELLED';
-      job.completedAt = new Date().toISOString();
-      return job;
+    if (job.snapshotSha256 !== snapshot.snapshotSha256 || job.snapshotId !== snapshot.snapshotId) {
+      throw new Error('Catalogue snapshot does not match the queued job.');
     }
-
-    job.status = 'RENDERING_PDF';
-    job.progressPercent = 75;
-
-    // Calculate deterministic output parameters
-    // 1 cover slide + 1 intro/curator statement + N product slides + 1 closing/contact
-    const pageCount = snapshot.selectedProducts.length + 3;
-    const pdfSeed = `${snapshot.snapshotSha256}-pdf-${pageCount}`;
-    const pdfDriveId = `1pdf_${createHash('sha256').update(pdfSeed).digest('hex').slice(0, 24)}`;
-    const pdfUrl = `https://drive.google.com/file/d/${pdfDriveId}/view`;
-
-    const estimatedBytes = pageCount * 450 * 1024; // ~450 KB per slide in high-res vector/raster
-    const outputSha256 = createHash('sha256').update(`${pdfDriveId}-${estimatedBytes}`).digest('hex');
-
-    job.pdfDriveId = pdfDriveId;
-    job.pdfUrl = pdfUrl;
-    job.pageCount = pageCount;
-    job.outputBytes = estimatedBytes;
-    job.outputSha256 = outputSha256;
-    job.progressPercent = 100;
-    job.status = 'COMPLETED';
-    job.completedAt = new Date().toISOString();
+    job.status = 'BLOCKED';
+    job.progressPercent = 0;
+    job.errorMessage = 'PROVIDER_NOT_CONFIGURED: no durable catalogue worker or verified Google template is bound.';
 
     return job;
   }

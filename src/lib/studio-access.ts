@@ -53,7 +53,7 @@ export async function decideAccessRequest(session: StaffSession, id: string, ver
   if (adapter) {
     const res = await adapter.decideAccessRequest(session, id, version, operation);
     if (!res) return null;
-    return {saved: true, token: res.linkToken, expiresAt: new Date(Date.now() + 30 * 60 * 1000).toISOString()};
+    return {saved: true, token: res.linkToken, expiresAt: res.expiresAt ?? null};
   }
   const sql = studioDb();
   if (operation === 'reject') {

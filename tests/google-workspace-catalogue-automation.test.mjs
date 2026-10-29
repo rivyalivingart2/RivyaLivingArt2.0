@@ -5,6 +5,7 @@ import {
   validateCatalogueConfig,
   createCatalogueInputSnapshot,
   registeredTemplateArtifacts,
+  catalogueTemplateSpecifications,
 } from '../src/lib/google-workspace/catalogue-automation.ts';
 import {
   catalogueWorkerManager,
@@ -16,11 +17,12 @@ import {
 } from '../src/lib/google-workspace/catalogue-validation.ts';
 
 test('GW-800: Catalogue configuration validation and artifact register', () => {
-  // Reused artifact register
-  assert.equal(registeredTemplateArtifacts.length, 4);
-  assert.ok(registeredTemplateArtifacts.some((a) => a.type === 'SLIDES_TEMPLATE'));
-  assert.ok(registeredTemplateArtifacts.some((a) => a.type === 'COVER_LAYOUT'));
-  assert.ok(registeredTemplateArtifacts.some((a) => a.type === 'TYPOGRAPHY_THEME'));
+  // Layout specifications are not verified private Drive registrations.
+  assert.ok(catalogueTemplateSpecifications.every(a => a.nativeGoogleDriveId === null));
+  assert.equal(registeredTemplateArtifacts.length, 0);
+  assert.ok(catalogueTemplateSpecifications.some((a) => a.type === 'SLIDES_TEMPLATE'));
+  assert.ok(catalogueTemplateSpecifications.some((a) => a.type === 'COVER_LAYOUT'));
+  assert.ok(catalogueTemplateSpecifications.some((a) => a.type === 'TYPOGRAPHY_THEME'));
 
   // Valid configuration
   const validConfig = {
@@ -82,7 +84,7 @@ test('GW-800: Freeze immutable catalogue input snapshot from approved concepts',
   assert.ok(snapshot.selectedProducts[0].dimensionsFormatted.includes('mm'));
 });
 
-test('GW-801: Worker generation adapter, stable Drive IDs, and idempotency', async () => {
+test('GW-801: Unconfigured catalogue worker blocks instead of inventing Drive outputs', async () => {
   const config = {
     title: 'Rivya Memory Art Collection',
     subtitle: 'Flower preservation and occasion keepsakes',
@@ -103,22 +105,16 @@ test('GW-801: Worker generation adapter, stable Drive IDs, and idempotency', asy
   assert.equal(job.status, 'QUEUED');
   assert.equal(job.snapshotSha256, snapshot.snapshotSha256);
 
-  // Execute job
+  // A local simulation must not return fabricated external outputs.
   const completedJob = await catalogueWorkerManager.executeJob(job.id, snapshot);
-  assert.equal(completedJob.status, 'COMPLETED');
-  assert.equal(completedJob.progressPercent, 100);
-  assert.ok(completedJob.slidesDriveId?.startsWith('1slides_'));
-  assert.ok(completedJob.pdfDriveId?.startsWith('1pdf_'));
-  assert.ok(completedJob.slidesUrl?.includes('docs.google.com/presentation'));
-  assert.ok(completedJob.pdfUrl?.includes('drive.google.com/file'));
-  assert.ok(completedJob.pageCount && completedJob.pageCount > snapshot.selectedProducts.length);
-  assert.ok(completedJob.outputBytes && completedJob.outputBytes > 100000);
-  assert.ok(/^[a-f0-9]{64}$/.test(completedJob.outputSha256 || ''));
-
-  // Idempotent queue: Re-queueing same snapshot returns existing completed job
-  const dedupeJob = catalogueWorkerManager.queueJob(snapshot);
-  assert.equal(dedupeJob.id, job.id);
-  assert.equal(dedupeJob.status, 'COMPLETED');
+  assert.equal(completedJob.storage, 'simulation');
+  assert.equal(completedJob.status, 'BLOCKED');
+  assert.equal(completedJob.progressPercent, 0);
+  for (const field of ['slidesDriveId', 'pdfDriveId', 'slidesUrl', 'pdfUrl', 'pageCount', 'outputBytes', 'outputSha256']) {
+    assert.equal(completedJob[field], undefined);
+  }
+  assert.match(completedJob.errorMessage, /PROVIDER_NOT_CONFIGURED/);
+  assert.equal(catalogueWorkerManager.queueJob(snapshot).id, job.id);
 
   // Cancellation & retry support
   const secondSnapshot = createCatalogueInputSnapshot(
@@ -189,7 +185,33 @@ test('GW-802: Slide layout validation, Hindi script support, and Studio access g
   assert.equal(unauthAccess.accessType, 'denied');
 
   // Access gating: Authenticated Studio staff granted private access
-  const authAccess = verifyCatalogueOutputAccess('1pdf_sample_drive_id', true);
+  const authAccess = verifyCatalogueOutputAccess('1pdf_sample_drive_id', true, id => id === '1pdf_sample_drive_id');
   assert.equal(authAccess.accessible, true);
   assert.equal(authAccess.accessType, 'studio_private');
+});
+
+test('Snapshot preserves exact price and demo provenance, detaches input and rejects later mutation', () => {
+  const config = {title:'Fixture only', subtitle:'Fixture', curatorStatement:'Fixture', theme:'atelier-minimal', language:'en', outputFormat:'SLIDES_AND_PDF', priceDisplay:'SHOW_PRICES', targetCategoryIds:[], targetProductIds:[], excludedProductIds:[], includeCustomizationFields:false, date:'2026-10-28'};
+  const product = {...concepts[0], priceType:'FIXED', priceAmountMinor:12345};
+  const snapshot = createCatalogueInputSnapshot(config, [product]);
+  assert.equal(snapshot.sourceRevision, 'unverified-caller-input');
+  assert.equal(snapshot.inputSource, 'caller-supplied-concepts');
+  assert.equal(snapshot.selectedProducts[0].priceFormatted, '₹123.45');
+  assert.equal(snapshot.selectedProducts[0].priceAmountMinor, 12345);
+  assert.equal(snapshot.selectedProducts[0].originKind, product.originKind);
+  assert.match(snapshot.selectedProducts[0].disclosure, /Demonstration concept/);
+  config.targetProductIds.push('unrelated'); product.title = 'changed';
+  assert.deepEqual(snapshot.config.targetProductIds, []);
+  assert.notEqual(snapshot.selectedProducts[0].title, 'changed');
+  assert.throws(() => snapshot.selectedProducts[0].materials.push('changed'), TypeError);
+  assert.throws(() => {snapshot.config.title = 'changed';}, TypeError);
+  const zero = createCatalogueInputSnapshot({...config,targetProductIds:[]}, [{...product,priceAmountMinor:0}]);
+  assert.equal(zero.selectedProducts[0].priceFormatted, '₹0');
+});
+
+test('Catalogue access needs a registered output policy; malformed declared PDF sizes cannot pass', () => {
+  assert.equal(verifyCatalogueOutputAccess('unregistered_output',true).accessible,false);
+  assert.equal(verifyCatalogueOutputAccess('unregistered_output',true,()=>false).accessible,false);
+  const input = {pageCount:15,bytes:4500000,sha256:'a'.repeat(64),targetProductsCount:12};
+  for (const key of ['pageCount','bytes','targetProductsCount']) for (const value of [NaN,Infinity,-1,0.5]) assert.equal(validatePdfOutput({...input,[key]:value}).valid,false);
 });

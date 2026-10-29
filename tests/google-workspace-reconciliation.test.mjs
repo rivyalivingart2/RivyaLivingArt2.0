@@ -31,7 +31,7 @@ const sampleStaffRow = {
   created_at: '2026-10-24T00:00:00.000Z',
 };
 
-test('reconciliation report verifies clean accounting across all 28 tables', () => {
+test('synthetic plan cannot certify committed rows, target reconciliation, media bytes or recovery', () => {
   const sourceData = {};
   for (const table of schema.tables) {
     sourceData[table.sourceTable] = [];
@@ -70,13 +70,17 @@ test('reconciliation report verifies clean accounting across all 28 tables', () 
   assert.equal(report.scope, 'ISOLATED_SYNTHETIC_REHEARSAL');
   assert.equal(report.productionAuthorityRetained, true);
   assert.equal(report.summary.tablesTotal, 28);
-  assert.equal(report.summary.tablesReconciled, 28);
-  assert.equal(report.summary.allSourceRecordsAccountedFor, true);
-  assert.equal(report.summary.mediaAssetsReconciled, true);
+  assert.equal(report.summary.sourcePlanAccountsForAllRows, true);
+  assert.equal(report.summary.relationshipsValid, true);
+  assert.equal(report.summary.inlineRecordsCommitted, null);
+  assert.equal(report.mediaLineage.lineageConsistent, true);
+  assert.equal(report.summary.tablesReconciled, 0);
+  assert.equal(report.summary.allSourceRecordsAccountedFor, false);
+  assert.equal(report.summary.mediaAssetsReconciled, false);
   assert.equal(report.mediaLineage.approvedCreationsCount, 169);
   assert.equal(report.mediaLineage.variantsCount, 507);
   assert.equal(report.mediaLineage.unassignedProductAssociations, 0);
-  assert.equal(report.summary.interruptionRecoveryVerified, true);
+  assert.equal(report.summary.interruptionRecoveryVerified, false);
 });
 
 test('reconciliation report flags discrepancies when table accounting does not match', () => {
@@ -103,9 +107,9 @@ test('reconciliation report flags discrepancies when table accounting does not m
   // Table summary reports discrepancy
   const staffSummary = report.tables.find(t => t.sourceTable === 'rivya_staff');
   assert.ok(staffSummary);
-  assert.equal(staffSummary.recordsCommitted, 0);
+  assert.equal(staffSummary.recordsCommitted, null);
   assert.equal(staffSummary.sourceRows, 1);
-  assert.equal(report.summary.allSourceRecordsAccountedFor, true); // plan accounts for all
+  assert.equal(report.summary.allSourceRecordsAccountedFor, false); // target has not been read back
 });
 
 test('reconciliation report rejects tampered or unapproved media lineage associations', () => {

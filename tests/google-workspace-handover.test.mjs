@@ -41,7 +41,7 @@ test('GW-1100: Documentation synchronization across AGENTS.md, PROJECT_STATE.md,
   }
 });
 
-test('GW-1100: Architectural decision and Phase Plan status reflect full Phase 0-11 completion', () => {
+test('GW-1100: Architectural decision and Phase Plan status record Phase 0-11 scope without certifying completion', () => {
   const rootDir = process.cwd();
   const decisionPath = path.join(rootDir, 'docs/decisions/2026-10-24-sheets-drive.md');
   const planPath = path.join(rootDir, 'docs/google-workspace-2026-10-24/PHASE-PLAN.md');
@@ -60,13 +60,13 @@ test('GW-1100: Architectural decision and Phase Plan status reflect full Phase 0
 test('GW-1101: Programmatic handover verification and workbook permission matrix', () => {
   const report = verifyHandoverPackage();
 
-  assert.equal(report.status, 'READY_FOR_HANDOVER');
+  assert.equal(report.status, 'PLANNING_INVENTORY_ONLY');
   assert.equal(report.phase, 'Phase 11');
   assert.equal(report.programPhasesTotal, 12);
   assert.equal(report.canonicalTablesCovered, 28);
-  assert.equal(report.creationsPreserved, 169);
-  assert.equal(report.webpVariantsPreserved, 507);
-  assert.equal(report.workbooksConfigured, 4);
+  assert.equal(report.creationsPreserved, null);
+  assert.equal(report.webpVariantsPreserved, null);
+  assert.equal(report.workbooksConfigured, null);
   assert.equal(report.runbooksRegistered, 6);
 
   // Verify permission matrices
@@ -116,9 +116,9 @@ test('GW-1101: Owner Operating Guide and Issue Register completeness and safety 
 test('GW-1101: Process hygiene, daemon cleanup assertion, and storage authority integrity', () => {
   const report = verifyHandoverPackage();
 
-  assert.equal(report.processHygiene.status, 'CLEAN');
-  assert.equal(report.processHygiene.uncontrolledDaemons, 0);
-  assert.equal(report.processHygiene.danglingListeners, 0);
+  assert.equal(report.processHygiene.status, 'NOT_INSPECTED');
+  assert.equal(report.processHygiene.uncontrolledDaemons, null);
+  assert.equal(report.processHygiene.danglingListeners, null);
 
   // Default authority must remain postgres in absence of cutover
   const testEnv = { DATABASE_URL: 'postgresql://synthetic@localhost:5432/db' };

@@ -1,6 +1,8 @@
 import {createHash, createHmac, randomBytes, randomUUID, scrypt, timingSafeEqual} from 'node:crypto';
 import {promisify} from 'node:util';
 import type {AccessInput} from '../studio-access-validation.ts';
+import type {StudioSessionLifecycle} from './bounded-session-service';
+import type {StudioSecurityWorkflows, SecurityRequestListEntry} from './bounded-security-service';
 
 export interface StaffMember {
   id: string;
@@ -76,6 +78,9 @@ export class SecurityAdapterError extends Error {
 }
 
 export interface SecurityDataStore {
+  /** Atomic provider operation. Read/modify/write must share the provider's
+   * concurrency boundary across workers; separate get/save calls are unsafe. */
+  consumeLoginAttempt: (input: {key: string; limit: number; windowMinutes: number; now: string}) => Promise<boolean>;
   getStaffByLogin: (login: string) => Promise<StaffRecord | null>;
   getStaffById: (id: string) => Promise<StaffRecord | null>;
   listStaff: () => Promise<StaffRecord[]>;
@@ -99,11 +104,26 @@ export interface SecurityDataStore {
   updateAccessRequest: (request: AccessRequestRecord) => Promise<void>;
 }
 
+/** Unit-test simulation. Never a runtime security persistence provider. */
 export class InMemorySecurityStore implements SecurityDataStore {
   private staff = new Map<string, StaffRecord>();
   private sessions = new Map<string, StudioSessionRecord>();
   private loginLimits = new Map<string, StudioLoginLimitRecord>();
   private accessRequests = new Map<string, AccessRequestRecord>();
+
+  async consumeLoginAttempt(input: {key: string; limit: number; windowMinutes: number; now: string}): Promise<boolean> {
+    // No await between read and update: atomic only within this test process.
+    const now = Date.parse(input.now), existing = this.loginLimits.get(input.key);
+    if (existing && (!Number.isSafeInteger(existing.attempts) || existing.attempts < 0 || !Number.isFinite(Date.parse(existing.reset_at)))) {
+      throw new SecurityAdapterError('INVALID_THROTTLE', 'Stored throttle state is invalid.');
+    }
+    const active = existing && Date.parse(existing.reset_at) > now;
+    const attempts = active ? existing.attempts : 0;
+    if (attempts >= input.limit) return false;
+    this.loginLimits.set(input.key, {key: input.key, attempts: attempts + 1,
+      reset_at: active ? existing.reset_at : new Date(now + input.windowMinutes * 60_000).toISOString()});
+    return true;
+  }
 
   async getStaffByLogin(login: string): Promise<StaffRecord | null> {
     const lower = login.trim().toLowerCase();
@@ -209,22 +229,39 @@ export class GoogleWorkspaceSecurityAdapter {
   private adminId: string;
   private adminPassword?: string;
   private sessionSecret?: string;
+  private sessionLifecycle?: StudioSessionLifecycle;
+  private workflows?: StudioSecurityWorkflows;
 
   constructor(
     store: SecurityDataStore,
-    options: {adminId?: string; adminPassword?: string; sessionSecret?: string} = {}
+    options: {adminId?: string; adminPassword?: string; sessionSecret?: string} = {},
+    sessionLifecycle?: StudioSessionLifecycle,
+    workflows?: StudioSecurityWorkflows,
   ) {
     this.store = store;
     this.adminId = options.adminId || process.env.STUDIO_ADMIN_ID || '';
     this.adminPassword = options.adminPassword || process.env.STUDIO_ADMIN_PASSWORD;
     this.sessionSecret = options.sessionSecret || process.env.STUDIO_SESSION_SECRET;
+    this.sessionLifecycle = sessionLifecycle;
+    this.workflows = workflows;
+    if (workflows && (workflows.scope !== 'BOUNDED_ATOMIC_SECURITY' ||
+        ['lookupStaff', 'workspaceStaff', 'requestStudioAccess', 'listAccessRequests', 'decideAccessRequest', 'redeemAccessLink', 'audit', 'maintainSessions', 'resetSuccessfulLogin']
+          .some(key => typeof workflows[key as keyof StudioSecurityWorkflows] !== 'function'))) {
+      throw new SecurityAdapterError('ATOMIC_SECURITY_REQUIRED', 'The atomic security workflow service is invalid.');
+    }
+    if (sessionLifecycle && (sessionLifecycle.scope !== 'BOUNDED_ATOMIC_SESSIONS' ||
+        ['createStudioSession', 'studioSessionFromToken', 'revokeStudioSession'].some(key =>
+          typeof sessionLifecycle[key as keyof StudioSessionLifecycle] !== 'function'))) {
+      throw new SecurityAdapterError('ATOMIC_SESSIONS_REQUIRED', 'The atomic session service is invalid.');
+    }
   }
 
   isConfigured(): boolean {
     return Boolean(
       this.adminId.trim() &&
       (this.adminPassword?.length ?? 0) >= 16 &&
-      (this.sessionSecret?.length ?? 0) >= 32
+      (this.sessionSecret?.length ?? 0) >= 32 &&
+      (this.store instanceof InMemorySecurityStore || !!this.sessionLifecycle && !!this.workflows)
     );
   }
 
@@ -262,18 +299,18 @@ export class GoogleWorkspaceSecurityAdapter {
   }
 
   async authenticateStaff(id: string, password: string): Promise<StaffSession | null> {
+    this.requireWorkflowBinding();
+    if (typeof id !== 'string' || !/^[A-Za-z0-9_.@-]{3,80}$/.test(id.trim()) || typeof password !== 'string' || password.length > 1024) return null;
     if (await this.verifyAdmin(id, password)) {
       return {adminId: this.adminId, role: 'admin', staffId: null};
     }
-    const staff = await this.store.getStaffByLogin(id);
-    if (!staff || !staff.active) return null;
-
-    const [salt, expected] = (staff.password_hash || '0'.repeat(32) + ':' + '0'.repeat(128)).split(':');
-    if (!salt || !expected) return null;
+    const staff = this.workflows ? await this.workflows.lookupStaff(id) : await this.store.getStaffByLogin(id);
+    const [salt, expected] = (staff?.password_hash && /^[0-9a-f]{32}:[0-9a-f]{128}$/.test(staff.password_hash)
+      ? staff.password_hash : '0'.repeat(32) + ':' + '0'.repeat(128)).split(':');
 
     const actual = (await deriveScrypt(password, salt, 64)) as Buffer;
     const matches = timingSafeEqual(actual, Buffer.from(expected, 'hex'));
-    if (!matches) return null;
+    if (!staff || !staff.active || !matches) return null;
 
     return {
       adminId: staff.login,
@@ -284,28 +321,19 @@ export class GoogleWorkspaceSecurityAdapter {
   }
 
   async recordLoginAttempt(key: string, limit: number, windowMinutes = 15, now = new Date()): Promise<boolean> {
-    const existing = await this.store.getLoginLimit(key);
-    const resetTime = new Date(now.getTime() + windowMinutes * 60 * 1000).toISOString();
-
-    if (!existing || new Date(existing.reset_at).getTime() <= now.getTime()) {
-      await this.store.saveLoginLimit({
-        key,
-        attempts: 1,
-        reset_at: resetTime,
-      });
-      return 1 <= limit;
+    if (!key || key.length > 240 || !Number.isSafeInteger(limit) || limit < 1 || limit > 1000 ||
+      !Number.isSafeInteger(windowMinutes) || windowMinutes < 1 || windowMinutes > 1440 || !Number.isFinite(now.getTime())) {
+      throw new SecurityAdapterError('INVALID_THROTTLE', 'Invalid throttle policy.');
     }
-
-    const nextAttempts = existing.attempts + 1;
-    await this.store.saveLoginLimit({
-      key,
-      attempts: nextAttempts,
-      reset_at: existing.reset_at,
-    });
-    return nextAttempts <= limit;
+    return this.store.consumeLoginAttempt({key, limit, windowMinutes, now: now.toISOString()});
   }
 
   async createStudioSession(identity?: StaffSession, now = new Date()): Promise<string> {
+    if (this.sessionLifecycle) {
+      this.requireSessionBinding();
+      return this.sessionLifecycle.createStudioSession(identity);
+    }
+    this.requireSimulationSessions();
     const token = randomBytes(32).toString('base64url');
     const tokenHash = this.hash(token);
     const staffId = identity?.staffId || null;
@@ -339,6 +367,11 @@ export class GoogleWorkspaceSecurityAdapter {
   }
 
   async studioSessionFromToken(token: string | undefined, now = new Date()): Promise<StaffSession | null> {
+    if (this.sessionLifecycle) {
+      this.requireSessionBinding();
+      return this.sessionLifecycle.studioSessionFromToken(token);
+    }
+    this.requireSimulationSessions();
     if (!this.isConfigured()) return null;
     if (!token || !/^[A-Za-z0-9_-]{43}$/.test(token)) return null;
 
@@ -385,11 +418,33 @@ export class GoogleWorkspaceSecurityAdapter {
   }
 
   async revokeStudioSession(token: string | undefined): Promise<void> {
+    if (this.sessionLifecycle) {
+      this.requireSessionBinding();
+      await this.sessionLifecycle.revokeStudioSession(token);
+      return;
+    }
+    this.requireSimulationSessions();
     if (!token || !/^[A-Za-z0-9_-]{43}$/.test(token)) return;
     await this.store.deleteSession(this.hash(token));
   }
 
+  private requireSessionBinding(): void {
+    const binding = this.sessionLifecycle?.ownerCredentialFingerprint;
+    if (typeof binding !== 'string' || !/^[a-f0-9]{64}$/.test(binding) ||
+        !timingSafeEqual(Buffer.from(binding), Buffer.from(this.adminFingerprint()))) {
+      throw new SecurityAdapterError('SESSION_BINDING_CHANGED', 'Session credentials must be configured together.');
+    }
+  }
+
+  private requireSimulationSessions(): void {
+    if (!(this.store instanceof InMemorySecurityStore)) {
+      throw new SecurityAdapterError('ATOMIC_SESSIONS_REQUIRED', 'Persistent sessions require the atomic session service.');
+    }
+  }
+
   async workspaceStaff(session: StaffSession): Promise<StaffMember[]> {
+    this.requireWorkflowBinding();
+    if (this.workflows) return this.workflows.workspaceStaff();
     const list = await this.store.listStaff();
     list.sort((a, b) => a.name.localeCompare(b.name));
     if (session.role === 'admin') {
@@ -415,6 +470,8 @@ export class GoogleWorkspaceSecurityAdapter {
   }
 
   async requestStudioAccess(input: AccessInput, now = new Date()): Promise<void> {
+    this.requireWorkflowBinding();
+    if (this.workflows) return this.workflows.requestStudioAccess(input);
     const existing = await this.store.findPendingAccessRequest(input.kind, input.login);
     if (existing) return;
 
@@ -436,7 +493,9 @@ export class GoogleWorkspaceSecurityAdapter {
     });
   }
 
-  async listAccessRequests(): Promise<AccessRequestRecord[]> {
+  async listAccessRequests(): Promise<(AccessRequestRecord | SecurityRequestListEntry)[]> {
+    this.requireWorkflowBinding();
+    if (this.workflows) return this.workflows.listAccessRequests();
     const all = await this.store.listAccessRequests();
     return all
       .filter(r => r.status === 'pending' || r.status === 'approved')
@@ -450,7 +509,9 @@ export class GoogleWorkspaceSecurityAdapter {
     version: number,
     operation: 'approve' | 'reject',
     now = new Date()
-  ): Promise<{saved: true; linkToken?: string} | null> {
+  ): Promise<{saved: true; linkToken?: string; expiresAt?: string} | null> {
+    this.requireWorkflowBinding();
+    if (this.workflows) return this.workflows.decideAccessRequest(id, version, operation);
     if (session.role !== 'admin') {
       throw new SecurityAdapterError('FORBIDDEN', 'Administrator access required.');
     }
@@ -516,10 +577,12 @@ export class GoogleWorkspaceSecurityAdapter {
     req.decided_by = session.adminId;
 
     await this.store.updateAccessRequest(req);
-    return {saved: true, linkToken: token};
+    return {saved: true, linkToken: token, expiresAt: req.expires_at};
   }
 
   async redeemAccessLink(token: string, newPassword: string, now = new Date()): Promise<boolean> {
+    this.requireWorkflowBinding();
+    if (this.workflows) return this.workflows.redeemAccessLink(token, newPassword);
     if (!token || !/^[A-Za-z0-9_-]{43}$/.test(token)) return false;
     const tokenHash = this.hash(token);
 
@@ -547,5 +610,15 @@ export class GoogleWorkspaceSecurityAdapter {
     await this.store.updateAccessRequest(match);
 
     return true;
+  }
+
+  private requireWorkflowBinding(): void {
+    if (this.workflows) {
+      if (this.workflows.ownerCredentialFingerprint !== this.adminFingerprint())
+        throw new SecurityAdapterError('SECURITY_BINDING_CHANGED', 'The security service must be rebound to current credentials.');
+      return;
+    }
+    if (!(this.store instanceof InMemorySecurityStore))
+      throw new SecurityAdapterError('ATOMIC_SECURITY_REQUIRED', 'Persistent security requires the atomic workflow service.');
   }
 }

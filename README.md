@@ -1,4 +1,38 @@
-# Current status — Phase 11 complete locally, full Google Workspace transition verified
+# Current entry point — main publication and AI continuation
+
+29 October 2026. The owner authorized publishing the accumulated local source and
+complete phase/AI guides to GitHub main. Start with [START-HERE.md](START-HERE.md),
+[the Phase 0–11 guide](docs/implementation/PHASE-BY-PHASE.md),
+[the next task](docs/implementation/NEXT-WORK.md) and
+[the Antigravity prompt](docs/implementation/ANTIGRAVITY-START-PROMPT.md).
+The programme remains incomplete. Source publication does not activate Google
+storage or release a production migration. Future pushes need new permission.
+Public/login design, all valid records/media and recovery resources remain protected.
+
+All notices below are dated history; the current shared guides and latest direct
+owner instructions govern continuation.
+
+---
+
+# Current work — atomic Security workflows
+
+29 October 2026. Read [OWNER-SCOPE.md](docs/netlify-free-first-2026-10-28/OWNER-SCOPE.md), [current state](docs/netlify-free-first-2026-10-28/CURRENT-STATE.md) and [the security workflow continuation](docs/netlify-free-first-2026-10-28/phase2/SECURITY-WORKFLOWS-CONTINUATION.md) first. Atomic lookup maintenance, approval/reissue/rejection, redemption, domain audit and bounded session maintenance now have local implementation and adapter integration. Persistent split-CRUD workflows reject; SQL/Blob remain the active application authority. The combined supported-runtime suite passed 175 tests. An actual retained-checkpoint rehearsal reconciled all 30 Security rows locally without provider requests or source/target writes. Runtime binding, sustainable retained-history capacity, full provider and browser acceptance, migration, full Studio parity and release remain pending. Continue authorized local work; do not push, change/create a PR, merge or deploy without later permission. Preserve public/login design, all records/media, SQL/Blob, existing Google resources and OLDWEBSITE. Add no products or archived imports. Older notices below are historical.
+
+---
+
+# Active continuation — 28 October 2026
+
+Read [the refreshed Netlify free-first checkpoint](docs/netlify-free-first-2026-10-28/CURRENT-STATE.md) and its latest owner brief first. Netlify is live at www.rivyalivingart.com on 7b390d5; PR #71 remains draft and production is locked to the migration branch. Continue locally on codex/netlify-free-first, preserving the migration commits. Sheets/Drive is the preferred target with a conditional, justified ongoing-free database exception. The Google replacement, migration, full Studio parity and release acceptance are incomplete. Historical completion claims below are dated and superseded; simulation receipts do not certify providers, backups or production. Preserve public/login design, records/media, credentials and OLDWEBSITE. Add no products and import no archived catalogue. No production migration, publication, credential rotation or old-resource deletion has occurred in this continuation.
+
+---
+
+# Current task — Netlify hosting migration in progress
+
+27 October 2026. The owner requested moving the full website and Studio from Vercel to Netlify. Continue `codex/netlify-hosting-migration` from main `35f99fd`. Read [the migration checkpoint](docs/hosting/netlify/MIGRATION.md). The private Netlify deployment is READY with existing database/media access and verified public pages; live cutover is blocked by three unavailable current Studio secrets. No public DNS change or main merge has occurred. Preserve the current public design, Studio login, existing Neon/Blob data, IDs, prices, URLs and media. No products, archived imports, Google provider cutover or CMS publication. Keep Vercel available for rollback until hosted verification and DNS cutover pass. Earlier Google completion statements are source/local-test history, not proof of an activated database replacement.
+
+---
+
+# Historical status — Phase 11 local completion claim
 
 27 October 2026. Phase 11 (Handover & Final Documentation: tasks GW-1100, GW-1101) and the entire Google Workspace Transition Programme (Phases 0 through 11) are **complete locally and fully verified** on branch **`codex/google-cloud-acceptance`** following release checkpoint `c40f989` (Phase 10 delivery). Full check passes 65/65 Google Workspace unit tests (all 5 GW-1100/1101 handover tests, 5 GW-1000/1001/1002 cutover tests, 5 GW-900/901/902 integrated verification tests, 4 GW-800/801/802 catalogue automation tests, 3 GW-700/701/702 scraper expansion tests, 6 GW-600/601/602 media and content tests, 5 GW-500/501/502 Studio workflow tests, 8 GW-400 security tests, 5 GW-401 publication tests, 6 GW-402 operations tests, 4 GW-403 provider switch tests, 6 importer tests, and 3 reconciliation tests pass), preflight passes 12/12, route typegen and TypeScript pass with 0 errors, and ESLint passes with 0 errors (62 existing baseline warnings).
 

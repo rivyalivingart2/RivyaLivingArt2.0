@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "kind": "source-census-not-target-migration",
+  "observedAt": "2026-10-28T13:01:01.366Z",
+  "applicationRevision": "41cda9c20947dface0b027484106d0bbcc0cdd14",
+  "sourceTransaction": "REPEATABLE READ READ ONLY",
+  "totalRows": 3454,
+  "sourceBytes": 54650653,
+  "tables": [
+    {
+      "table": "rivya_access_requests",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_audit",
+      "rows": 1099,
+      "inline": 1099,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_business_settings",
+      "rows": 1,
+      "inline": 1,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_catalogue",
+      "rows": 120,
+      "inline": 120,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_content",
+      "rows": 535,
+      "inline": 250,
+      "driveArtifactsRequired": 285
+    },
+    {
+      "table": "rivya_erasure_ledger",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_inquiries",
+      "rows": 2,
+      "inline": 2,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_inquiry_notes",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_inquiry_upload_sessions",
+      "rows": 14,
+      "inline": 14,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_managed_exports",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_presentation_revisions",
+      "rows": 4,
+      "inline": 0,
+      "driveArtifactsRequired": 4
+    },
+    {
+      "table": "rivya_presentations",
+      "rows": 1,
+      "inline": 0,
+      "driveArtifactsRequired": 1
+    },
+    {
+      "table": "rivya_privacy_controls",
+      "rows": 26,
+      "inline": 26,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_public_media",
+      "rows": 154,
+      "inline": 154,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_references",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_revisions",
+      "rows": 1395,
+      "inline": 1375,
+      "driveArtifactsRequired": 20
+    },
+    {
+      "table": "rivya_staff",
+      "rows": 0,
+      "inline": 0,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_storage_budget",
+      "rows": 1,
+      "inline": 1,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_studio_login_limits",
+      "rows": 28,
+      "inline": 28,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_studio_order_events",
+      "rows": 47,
+      "inline": 47,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_studio_orders",
+      "rows": 26,
+      "inline": 26,
+      "driveArtifactsRequired": 0
+    },
+    {
+      "table": "rivya_studio_sessions",
+      "rows": 1,
+      "inline": 1,
+      "driveArtifactsRequired": 0
+    }
+  ]
+}

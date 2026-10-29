@@ -5,6 +5,7 @@ import {fileURLToPath} from 'node:url';
 import {execFileSync} from 'node:child_process';
 import {RECORD_COLUMNS, canonicalArtifactJson} from '../../src/lib/google-workspace/record-codec';
 import {LEDGER_COLUMNS, AUDIT_COLUMNS, HISTORY_COLUMNS} from '../../src/lib/google-workspace/controlled-writer';
+import {restrictPrivateFilePermissions} from './private-file';
 
 /** Structural preparation only. This module never contacts Google, creates a key,
  * seeds data, installs a provider, or establishes that target metadata is real.
@@ -43,7 +44,7 @@ export type IsolatedSetupRegistry = {
   workbooks:Record<WorkbookGroup,{workbookId:string;resourceKey:string;sheetIds:Record<TabKey,number>}>;
   drive:{rootFolderId:string;folders:Record<DriveFolderKey,string>};
 };
-export type IsolatedSetupErrorCode = 'INVALID_REGISTRY'|'MISSING_IDENTITY'|'INVALID_TARGET'|'DUPLICATE_TARGET'|'INVALID_SHEET_IDS'|'INVALID_WRITER'|'INVALID_ARGUMENTS'|'PRIVATE_OUTPUT_REQUIRED'|'OUTPUT_EXISTS'|'FILE_UNAVAILABLE';
+export type IsolatedSetupErrorCode = 'INVALID_REGISTRY'|'MISSING_IDENTITY'|'INVALID_TARGET'|'DUPLICATE_TARGET'|'INVALID_SHEET_IDS'|'INVALID_WRITER'|'INVALID_ARGUMENTS'|'PRIVATE_OUTPUT_REQUIRED'|'PRIVATE_OUTPUT_PERMISSIONS_UNVERIFIED'|'OUTPUT_EXISTS'|'FILE_UNAVAILABLE';
 export class IsolatedSetupError extends Error {
   constructor(public readonly code:IsolatedSetupErrorCode){super(`Isolated Google setup: ${code}.`);this.name='IsolatedSetupError';}
 }
@@ -157,7 +158,7 @@ async function readRegistry(path:string){
   if(Buffer.byteLength(text)>1_000_000)fail('INVALID_REGISTRY');
   try{return JSON.parse(text) as unknown;}catch{return fail('INVALID_REGISTRY');}
 }
-async function privateOutput(path:string,value:unknown){
+export async function writePrivateMetadata(path:string,value:unknown){
   const target=resolve(path),repo=fileURLToPath(new URL('../../',import.meta.url));
   try{
     await mkdir(dirname(target),{recursive:true,mode:0o700});
@@ -170,9 +171,10 @@ async function privateOutput(path:string,value:unknown){
       catch{return fail('PRIVATE_OUTPUT_REQUIRED');}
     }
     const handle=await open(actualTarget,'wx',0o600);
-    try{await handle.writeFile(JSON.stringify(value,null,2)+'\n');}finally{await handle.close();}
+    try{await restrictPrivateFilePermissions(actualTarget);await handle.writeFile(JSON.stringify(value,null,2)+'\n');}finally{await handle.close();}
   }catch(error){
     if(error instanceof IsolatedSetupError)throw error;
+    if(error instanceof Error && error.message==='PRIVATE_FILE_PERMISSIONS_UNVERIFIED')fail('PRIVATE_OUTPUT_PERMISSIONS_UNVERIFIED');
     if((error as NodeJS.ErrnoException).code==='EEXIST')fail('OUTPUT_EXISTS');return fail('FILE_UNAVAILABLE');
   }
 }
@@ -196,7 +198,7 @@ export async function isolatedSetupCli(args:readonly string[]){
   }
   if(typeof outputPath!=='string'||scaffold===Boolean(registryPath)||ownerEmail&&!scaffold)fail('INVALID_ARGUMENTS');
   const output=scaffold?createIsolatedSetupScaffold(ownerEmail as string|undefined):buildIsolatedStructuralPlan(await readRegistry(registryPath as string));
-  await privateOutput(outputPath,output);
+  await writePrivateMetadata(outputPath,output);
   console.log(JSON.stringify({status:scaffold?'incomplete-scaffold-invalid-until-configured':'structural-plan-prepared-not-installed',externalWritesPerformed:0}));
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){

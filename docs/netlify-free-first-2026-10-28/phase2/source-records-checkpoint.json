@@ -1,0 +1,37 @@
+{
+  "kind": "sanitized-actual-source-local-records-checkpoint",
+  "checkedAt": "2026-10-28T18:34:02.263Z",
+  "codeHashes": {
+    "tools/google-workspace/rehearse-live-source.mjs": "79d03a6cbcd1680558a6e999b74c22d4d8a77ab1f2a04f6a3b6d31959389a5be",
+    "tools/google-workspace/local-recovery.mjs": "3c1b8985cd47f689d5ca807c3515742f2d4595e2892455447ccecb71d7da66fa",
+    "tools/google-workspace/local-recovery-files.mjs": "9ef719ff9288d50157292ffe84d21a3311d032c5eea32f8f38919df01bd65b48"
+  },
+  "sourceTransaction": "PAGED READ ONLY; initial/readback/final projection fingerprints matched",
+  "sourceJsonBytes": 54650938,
+  "pagesRead": 354,
+  "fragmentReads": 598,
+  "fragmentBatches": 497,
+  "relationships": {
+    "tables": 22,
+    "rows": 3455,
+    "constraintsChecked": 36
+  },
+  "businessTables": 20,
+  "businessRows": 3425,
+  "allBusinessPayloadFingerprintsMatched": true,
+  "scope": "SOURCE_RECORDS_ONLY",
+  "archiveBytes": 55970259,
+  "localIntegrityVerified": true,
+  "keyProtection": "windows-dpapi-current-user-v1",
+  "productionWrites": 0,
+  "providerWrites": 0,
+  "fullBackup": false,
+  "restoreVerified": false,
+  "offDeviceVerified": false,
+  "operationalRecoveryVerified": false,
+  "sqlNullVersusJsonNullCovered": false,
+  "collationsCovered": false,
+  "exactSqlSchemaVerified": false,
+  "blobObjectsIncluded": 0,
+  "repositoryFilesIncluded": 0
+}

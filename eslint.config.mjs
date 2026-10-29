@@ -6,5 +6,5 @@ export default defineConfig([
   ...nextVitals,
   ...nextTypescript,
   // Preserved experiments and generated verification bundles are not source inputs.
-  globalIgnores(["experiments/**", "output/**", ".next/**", "out/**", "next-env.d.ts", "*.tsbuildinfo", "playwright-report/**", "test-results/**"]),
+  globalIgnores(["experiments/**", "output/**", ".next/**", ".netlify/**", "out/**", "next-env.d.ts", "*.tsbuildinfo", "playwright-report/**", "test-results/**"]),
 ]);

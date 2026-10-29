@@ -1,0 +1,43 @@
+{
+  "sourceTables": 22,
+  "sourceRows": 3455,
+  "kind": "actual-encrypted-checkpoint-local-security-lookup-plan",
+  "sourceCounts": {
+    "staff": 0,
+    "requests": 0
+  },
+  "claimCounts": {
+    "staffLogin": 0,
+    "openRequest": 0,
+    "accessToken": 0
+  },
+  "claims": 0,
+  "installed": false,
+  "providerVerified": false,
+  "canonicalWritten": false,
+  "liveSourceCompletenessVerified": false,
+  "atomicIndexMaintenanceImplemented": false,
+  "limitations": [
+    "Completeness is checked only within the supplied staff/request arrays; this is not a live-source or provider coverage certificate.",
+    "Expression/partial uniqueness rules are validated explicitly; schema.json does not represent those SQL indexes.",
+    "ascii-lower-v1 is a local normalization model; actual SQL normalized-key/collation equivalence must be reconciled before bootstrap.",
+    "A trusted root/marker coverage registration requires separately reconciled bootstrap; no readiness boolean or verified provider root is generated.",
+    "All later source/key changes require same-workbook atomic claim maintenance before activation."
+  ],
+  "checkedAt": "2026-10-29T04:52:05.488Z",
+  "sourceCheckpointCreatedAt": "2026-10-28T18:33:43.950Z",
+  "sourceCheckpointIntegrityVerified": true,
+  "codeHashes": {
+    "tools/google-workspace/rehearse-security-lookups.mjs": "a6b8f0d6f623376e4d9f65c0addf1ba4b9a9d6757bd2890210f1899244426807",
+    "src/lib/google-workspace/security-lookup-projection.ts": "eb11086e364bb1826f3b52b9ed969b017c567b6a0c9326b102456063bc29170a",
+    "src/lib/google-workspace/schema.json": "246acf819050e20908c7b851652e927d4335c5da1ed951edc7007f523eb627e5",
+    "src/lib/google-workspace/record-codec.ts": "518fc04482b034d167b0c23c2c29b604d3d7c5351e0d9f5a264e07c872d1a741",
+    "tools/google-workspace/local-recovery.mjs": "3c1b8985cd47f689d5ca807c3515742f2d4595e2892455447ccecb71d7da66fa"
+  },
+  "providerRequests": 0,
+  "sourceWrites": 0,
+  "targetWrites": 0,
+  "sourceRowsPersisted": 0,
+  "lookupCoverageRegistered": false,
+  "currentProductionInventory": false
+}
