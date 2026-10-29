@@ -33,4 +33,6 @@ Before selecting an exception, record: failing requirement and reproducible evid
 
 ## Acceptance
 
+29 October local implementation clarification: new Security domain events and derived lookup claims are owned by the same Security transaction as the staff/access/session change. Historical `rivya_audit` records retain their System mapping and actual IDs. No cross-workbook audit dual write is introduced. The [security continuation](../phase2/SECURITY-WORKFLOWS-CONTINUATION.md) verifies current-record coverage and atomic workflows locally; its 256-record/proof-page and 8 MiB safety ceilings, finite history growth and unmeasured provider cost/latency remain activation gates. This is not acceptance of sustainable production capacity or an activated database exception.
+
 [Capacity/placement](CAPACITY-AND-PLACEMENT.md), [provider acceptance](PROVIDER-ACCEPTANCE.md) and [migration/recovery](MIGRATION-AND-RECOVERY.md) are binding design gates for implementation. Every unresolved measurement remains non-passing. Runtime activation, provider scope changes, migrations, publication and release are separate actions. No accepted historical decision is rewritten; this record supersedes conflicting older service-placement assumptions for the new work.

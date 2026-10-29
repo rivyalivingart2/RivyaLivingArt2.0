@@ -1,6 +1,8 @@
-# Current state — guarded session lifecycle, 29 October 2026
+# Current state — atomic Security workflows, 29 October 2026
 
-**Latest local continuation:** session creation, validation/refresh and revocation now use a guarded store and token service with explicit adapter integration. The supported-runtime session/related and lookup runs passed 138 distinct tests. The next local dependency, strict security lookup planning and root-pinned reading, is implemented with final verification recorded in [the session continuation](phase2/SESSION-CONTINUATION.md). No Google runtime activation, provider write, migration or release occurred.
+**Latest local continuation:** atomic lookup maintenance, approval/reissue/rejection, redemption, domain audit and bounded session maintenance now extend guarded sessions through explicit adapter integration. The supported-runtime combined suite passed **175 distinct tests**, including 37 new workflow/service cases. The [security continuation](phase2/SECURITY-WORKFLOWS-CONTINUATION.md) records the contracts, capacity ceilings and pending runtime/provider assembly. No Google runtime activation, provider write, migration or release occurred.
+
+The **07:08:11 UTC** read-only local rehearsal authenticated/decrypted the retained 28 October checkpoint and exactly reproduced its **30 Security records**: 28 login-limit rows, 2 sessions, zero staff/access requests. Its local current-proof read used one manifest and four page batches / 16 proof pages. One explicitly synthetic coverage marker gives 31 local records. The manifest is 9,611 bytes; no owner epoch was created, no live session used, and no provider requests or source/target writes occurred. See [the aggregate receipt](phase2/security-current-rehearsal.json). The 256-current-record verifier ceiling and finite retained-history growth remain production activation gates.
 
 **Latest scope:** fix storage capacity, continue pending work, and keep all changes local. Do not push, create/update a PR or merge without the owner's later permission. [OWNER-SCOPE.md](OWNER-SCOPE.md) and [Phase 2](phase2/README.md) are the active continuation instructions. Full provider checks, recovery, Studio parity and verification belong to their assigned phases; they are not a circular prerequisite for implementing their local foundations.
 
@@ -16,9 +18,9 @@ A fresh signed read of all four existing Google sandbox boundaries completed at 
 
 | Reporting dimension | Current status |
 |---|---|
-| Implemented | Prior storage foundations plus guarded session lifecycle/token service, explicit adapter delegation and inactive strict lookup planner/reader. Full security provider remains unselected |
-| Locally verified | Latest session/related and lookup runs passed 138 tests; actual-checkpoint lookup plan has zero staff/request rows and zero claims. Prior 195-case storage checkpoint and complete-source model retain their own scope; 1,198 protected files unchanged |
-| Real-provider verified | No provider requests in the session continuation. Earlier eight signed sandbox reads and GitHub/Netlify observations retain their dates; the five Google checks remain open |
+| Implemented | Atomic source/lookup/audit security workflows, session maintenance and explicit server facade/adapter integration, alongside prior guarded sessions. Runtime provider remains unselected |
+| Locally verified | Combined suite passed 175 tests. Actual checkpoint's 30 Security source records match exactly with zero staff/request claims. Earlier storage and restore receipts retain their own scope |
+| Real-provider verified | No provider requests in this security continuation. Earlier eight signed sandbox reads and GitHub/Netlify observations retain their dates; the five Google checks remain open |
 | Preview verified | No new preview or deployment |
 | Migrated | No Google target records/documents/media copied or reconciled |
 | Cut over | No authority switch; existing SQL/Blob remain authoritative |
@@ -26,7 +28,7 @@ A fresh signed read of all four existing Google sandbox boundaries completed at 
 | Old dependencies removed | None; Vercel, Blob, SQL and OLDWEBSITE retained |
 | Backups retained | Current encrypted local source-record checkpoint and verified stopped SQL restore retained; complete backup and off-device recovery unverified |
 
-The refreshed GitHub read still shows PR #71 open/draft/unmerged at `7b390d558b9a48d5ec7ccedb8bab104f6b1411f9`, with base main `35f99fd9b5fd1b76333d92b4ddf3b90289c99b2a`. Netlify's **29 October 03:55:35 UTC** readback is ready/locked on the same migration revision and branch at www.rivyalivingart.com. The latest session work continues from `0745c954bd4167b388a133ba80d4100ef2e8b3e7` on `codex/netlify-free-first`, preserving both migration commits.
+The preceding GitHub read showed PR #71 open/draft/unmerged at `7b390d558b9a48d5ec7ccedb8bab104f6b1411f9`, with base main `35f99fd9b5fd1b76333d92b4ddf3b90289c99b2a`. Netlify's **29 October 03:55:35 UTC** readback was ready/locked on the same migration revision and branch at www.rivyalivingart.com. These provider observations were not refreshed in this local-only continuation. The latest security work continues from `812296c72caefffcf477876a7687d1d96de96dfd` on `codex/netlify-free-first`, preserving both migration commits.
 
 Proceed with the exact remaining dependencies in [Phase 2](phase2/README.md) and [the phase plan](PHASE-PLAN.md). Do not claim full Phase 0–11 completion, provider acceptance or release from these local results.
 

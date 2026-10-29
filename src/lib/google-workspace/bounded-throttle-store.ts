@@ -3,13 +3,14 @@ import {BOUNDED_LIMITS, BoundedStoreError, createBoundedStore, validateBoundedLa
   type BoundedLayout, type createBoundedProvider} from './bounded-store';
 import {canonicalArtifactJson, canonicalJson, type GoogleWorkspaceRecord, type RecordMutationCommand} from './record-codec';
 import {SecurityAdapterError, type SecurityDataStore, type StudioLoginLimitRecord} from './security-adapter';
+import type {LoginAttemptReceipt} from './bounded-security-service';
 
 /** Inactive persistent v2 login limiter. One guarded record is authoritative;
  * every caller shares its source-derived identity and the provider's root CAS.
  * No snapshot load, local counter, SQL fallback or runtime activation. */
 export function createBoundedThrottleStore(config: {
   layout: BoundedLayout; actorId: string; clock: () => number; timeoutMs?: number;
-}, provider: ReturnType<typeof createBoundedProvider>): Pick<SecurityDataStore, 'consumeLoginAttempt'> {
+}, provider: ReturnType<typeof createBoundedProvider>) {
   const layout = validateBoundedLayout(config.layout), actorId = config.actorId;
   const timeoutMs = config.timeoutMs ?? BOUNDED_LIMITS.operationTimeoutMs;
   if (typeof actorId !== 'string' || !actorId || actorId.length > 240 || /[\s\u0000-\u001f\u007f-\u009f]/u.test(actorId) ||
@@ -31,8 +32,8 @@ export function createBoundedThrottleStore(config: {
       typeof value.reset_at !== 'string' || !Number.isFinite(Date.parse(value.reset_at))) return fail();
     return value;
   }
-  return Object.freeze({
-    async consumeLoginAttempt(input) {
+    async function consumeLoginAttemptWithReceipt(input: Parameters<SecurityDataStore['consumeLoginAttempt']>[0]): Promise<
+      {allowed: true; receipt: LoginAttemptReceipt} | {allowed: false}> {
       // Monotonic time bounds the entire invocation, including initial reads,
       // policy work and every safe retry; wall time only defines the window.
       const deadline = performance.now() + timeoutMs, controller = new AbortController();
@@ -56,7 +57,7 @@ export function createBoundedThrottleStore(config: {
             const current = await reader.load(recordId, actor, options); check();
             const existing = readLimit(current, recordId, key), at = clock(); check();
             const active = existing !== null && Date.parse(existing.reset_at) > at;
-            if (active && existing.attempts >= request.limit) return false;
+            if (active && existing.attempts >= request.limit) return {allowed: false};
             const payload = {key, attempts: active ? existing.attempts + 1 : 1,
               reset_at: active ? existing.reset_at : new Date(at + request.windowMinutes * 60_000).toISOString()};
             const commitBefore = Date.parse(payload.reset_at), expectedRevision = current?.revision ?? 0;
@@ -81,7 +82,12 @@ export function createBoundedThrottleStore(config: {
             }}, provider);
             check();
             const outcome = await writer.mutate({actor, commands: [command], operationId, commitBefore}, options); check();
-            if (outcome.status === 'committed') return true;
+            if (outcome.status === 'committed') {
+              const receipt = outcome.receipts[0];
+              if (outcome.receipts.length !== 1 || !receipt || receipt.recordId !== recordId || receipt.revision !== expectedRevision + 1 ||
+                  receipt.lastMutationId !== mutationId) return fail();
+              return {allowed: true, receipt: {key, recordId, revision: receipt.revision}};
+            }
             if (outcome.status === 'conflict') continue;
             // A lost result may already have consumed this attempt. Never retry
             // it as a fresh increment or grant admission from a local guess.
@@ -95,6 +101,10 @@ export function createBoundedThrottleStore(config: {
         return fail();
       } catch { return fail(); }
       finally { clearTimeout(timer); controller.abort(); }
+    }
+  return Object.freeze({consumeLoginAttemptWithReceipt,
+    async consumeLoginAttempt(input: Parameters<SecurityDataStore['consumeLoginAttempt']>[0]): Promise<boolean> {
+      return (await consumeLoginAttemptWithReceipt(input)).allowed;
     },
   });
 }

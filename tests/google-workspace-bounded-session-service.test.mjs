@@ -47,7 +47,9 @@ test('existing adapter delegates create, sliding refresh and logout across cold 
   const legacy=new Proxy({}, {get(){return async()=>{legacyCalls++;throw Error('Legacy session CRUD forbidden');};}});
   const options={adminId:owner.login,adminPassword:owner.password,sessionSecret:owner.sessionSecret};
   const adapter=()=>new GoogleWorkspaceSecurityAdapter(legacy,options,f.service());
-  assert.equal(adapter().isConfigured(),true);
+  // Session-only injection remains usable internally but is not a complete
+  // persistent security provider without atomic identity/access workflows.
+  assert.equal(adapter().isConfigured(),false);
   const token=await adapter().createStudioSession({...staffIdentity});f.h.restart();f.h.state.now+=20*60*1000;
   assert.deepEqual(await adapter().studioSessionFromToken(token),staffIdentity);
   assert.equal(f.read(token).payload.idle_expires_at,'2026-10-28T12:50:00.000Z');

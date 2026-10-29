@@ -44,6 +44,7 @@ Security's target is conditional on atomicity, isolation and latency tests. A ju
 | Family | One target authority | Relationship / projection rule |
 |---|---|---|
 | Staff/access/session/throttle mutations | Security canonical transaction group | Preserve supported credential hashes/versions; revocation cannot be an asynchronous System job |
+| Security lookup claims and new Security domain events | Security canonical transaction group | Claims are pointers to source rows, never a second credential authority. New events commit with source/claim changes. Existing rivya_audit history keeps its System mapping and real IDs; no cross-workbook dual writes |
 | Inquiry/order/reference transactions | Operations canonical group | Record, event, privacy state, reservation and idempotency receipt commit together |
 | Content revisions and publication pointer | Content canonical group | Atomic publication pointer references one validated immutable bundle and its input revision vector |
 | Catalogue jobs, selected input, overrides and output registrations | Content canonical group | Versioned Sheets input; catalogue overrides do not modify canonical products; generated Slides/PDF bytes in private Drive |
