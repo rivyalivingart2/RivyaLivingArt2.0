@@ -99,7 +99,7 @@ This is a source-extracted record of the isolated Phase 1 prototype, not a root 
 
 Existing resin furniture imagery leads the public experience. Dark framing, restrained champagne actions and generous compositions support the work; the proposed ivory reading and working surfaces use an existing brand colour for sustained reading and task clarity. Qualitative language follows the existing direction contract rather than an invented user interview.
 
-Sources: [PRODUCT.md](../../PRODUCT.md), [DIRECTION.md](DIRECTION.md), [styles.css](styles.css), [preview.js](preview.js), [index.html](index.html), [asset-map.json](asset-map.json) and [serve.mjs](serve.mjs). This file and [.impeccable/design.json](.impeccable/design.json) apply only to this experiment. Frontmatter records reused prototype values; the CSS remains implementation truth. The sidecar contains extensions and representative component snippets, not a second primitive-token registry.
+Sources: [PRODUCT.md](../../PRODUCT.md), [DIRECTION.md](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/experiments/redesign-phase1/DIRECTION.md), [styles.css](styles.css), [preview.js](preview.js), [index.html](index.html), [asset-map.json](asset-map.json) and [serve.mjs](serve.mjs). This file and [.impeccable/design.json](.impeccable/design.json) apply only to this experiment. Frontmatter records reused prototype values; the CSS remains implementation truth. The sidecar contains extensions and representative component snippets, not a second primitive-token registry.
 
 **Key Characteristics:**
 - Original logo and image identity remain intact.
@@ -146,7 +146,7 @@ The palette combines dark ocean surfaces with warm ivory, champagne accents and 
 
 ## Layout
 
-Surface modes belong to [DIRECTION.md](DIRECTION.md): Home is Experience/Persuade, Product is Experience/Operate, Journal is Read and Studio is Operate. These are surface-specific choices, not a single global mode. Four specimens represent a subset of the complete site. The homepage's full 18-slot mapping and the broader route/Studio coverage remain in `docs/redesign/modern-design-2026-10-13/`.
+Surface modes belong to [DIRECTION.md](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/experiments/redesign-phase1/DIRECTION.md): Home is Experience/Persuade, Product is Experience/Operate, Journal is Read and Studio is Operate. These are surface-specific choices, not a single global mode. Four specimens represent a subset of the complete site. The homepage's full 18-slot mapping and the broader route/Studio coverage remain in `docs/redesign/modern-design-2026-10-13/`.
 
 | Surface | Actual desktop composition | At or below 800px |
 | --- | --- | --- |

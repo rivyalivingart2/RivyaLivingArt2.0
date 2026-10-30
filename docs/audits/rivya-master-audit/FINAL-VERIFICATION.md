@@ -5,7 +5,7 @@
 **Latest continuation — 19 October:** [PENDING-COMPLETION.md](PENDING-COMPLETION.md) and [pending-verification.json](pending-verification.json) supersede the previous translation-transfer and disposable-service-lifecycle pending statements. They include the renewed-session production request failure, fresh tests and exact remaining gates. Results below retain their original date and scope.
 
 
-**Subsequent local change set:** [FOLLOWUP-CLEANUP.md](FOLLOWUP-CLEANUP.md) records the later owner-approved cleanup and its fresh 365-unit/403-runtime/50-focused-browser checks. Counts and application fingerprint below describe the original audit checkpoint `ad84a2a`, not the later cleanup. Refer to the follow-up for its exact source manifest, current test results and unchanged release gates.
+**Subsequent local change set:** [FOLLOWUP-CLEANUP.md](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/audits/rivya-master-audit/FOLLOWUP-CLEANUP.md) records the later owner-approved cleanup and its fresh 365-unit/403-runtime/50-focused-browser checks. Counts and application fingerprint below describe the original audit checkpoint `ad84a2a`, not the later cleanup. Refer to the follow-up for its exact source manifest, current test results and unchanged release gates.
 
 This is a completed audit and a locally verified candidate, **not a production release or complete accessibility/performance certification**.
 

@@ -15,7 +15,7 @@ The actual main reference was read back and verified. R8-4A continues from that
 merge on development; this new slice is published separately. No force-push,
 branch deletion or history removal occurred.
 
-The [development-first decision](decisions/2026-09-21-development-first.md) remains
+The [development-first decision](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/decisions/2026-09-21-development-first.md) remains
 active. All testing-related work is deferred until after backend/database
 integration. This document records source implementation, not performed browser,
 responsive, keyboard, build or integration QA. Existing tests and checks remain

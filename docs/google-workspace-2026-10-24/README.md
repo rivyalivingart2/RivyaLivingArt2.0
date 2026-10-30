@@ -1,103 +1,28 @@
-# Active continuation — 28 October 2026
+# Google Workspace foundation references
 
-Read [the refreshed Netlify free-first checkpoint](../netlify-free-first-2026-10-28/CURRENT-STATE.md) and its latest owner brief first. Netlify is live at www.rivyalivingart.com on 7b390d5; PR #71 remains draft and production is locked to the migration branch. Continue locally on codex/netlify-free-first, preserving the migration commits. Sheets/Drive is the preferred target with a conditional, justified ongoing-free database exception. The Google replacement, migration, full Studio parity and release acceptance are incomplete. Historical completion claims below are dated and superseded; simulation receipts do not certify providers, backups or production. Preserve public/login design, records/media, credentials and OLDWEBSITE. Add no products and import no archived catalogue. No production migration, publication, credential rotation or old-resource deletion has occurred in this continuation.
+This folder contains the earlier schema, provider setup, operator runbooks and
+machine-readable receipts still used by implementation and tests. Current work
+starts at [START-HERE.md](../../START-HERE.md) and the
+[Netlify free-first brief](../netlify-free-first-2026-10-28/OWNER-BRIEF.md).
 
----
+The older 28-table plan is a schema inventory, not proof that 28 live tables were
+migrated. The retained record checkpoint contained 22 actual tables; refresh real
+source state before any migration. No full Phase 0–11 completion is certified.
 
-# Current status — Phase 11 complete locally, full Google Workspace transition verified
+## References still needed
 
-27 October 2026. The Google Workspace Transition Programme (Phases 0 through 11: GW-000 through GW-1101) is **complete locally and fully verified** on branch **`codex/google-cloud-acceptance`**. Full check passes 65/65 Google Workspace unit tests (including all 5 Phase 11 handover tests, 5 Phase 10 cutover tests, 5 Phase 9 integrated verification tests, 4 Phase 8 catalogue automation tests, 3 Phase 7 scraper tests, 6 Phase 6 media tests, 5 Phase 5 Studio workflow tests, 8 Phase 4 security tests, 5 Phase 4 publication tests, 6 Phase 4 operations tests, 4 Phase 4 provider switch tests, 6 importer tests, and 3 reconciliation tests pass), preflight passes 12/12, route typegen and TypeScript pass with 0 errors, and ESLint passes with 0 errors (62 existing baseline warnings).
+- [Architecture](ARCHITECTURE.md), [service placement](SERVICE-PLACEMENT.md) and
+  [schema task mapping](PHASE-PLAN.md).
+- [Existing sandbox checkpoint](SANDBOX-CHECKPOINT.md) and
+  [prior provider handoff](ANTIGRAVITY-HANDOFF-CHECKPOINT.md): dated evidence only.
+- [Google setup](CLOUD-GOOGLE-SETUP.md), [isolated target plan](ISOLATED-TARGET-PLAN.md)
+  and [local/offline runbook](LOCAL-OFFLINE-RUNBOOK.md).
+- [Owner operating guide](OWNER-OPERATING-GUIDE.md), [issue register](ISSUE-REGISTER.md)
+  and [cutover/recovery runbook](CUTOVER-RUNBOOK.md).
 
-Delivered Phase 11 deliverables include the comprehensive [Owner Operating Guide](OWNER-OPERATING-GUIDE.md), [Issue, Limitation & Governance Register](ISSUE-REGISTER.md), programmatic verification module (`src/lib/google-workspace/handover.ts`), [Phase 11 Checkpoint](PHASE-11-CHECKPOINT.md), [Phase 11 PR](PHASE-11-PR.md), and [verification receipt](phase11-verification.json). All 28 canonical tables and 169 approved creations / 507 variants are preserved without modification. Clean process hygiene with zero leaked daemons is asserted. Real Google Cloud migration, live storage cutover, and production release retain their separate owner authorization boundaries (`RIVYA_CUTOVER_AUTHORIZED`). Earlier entries below are historical.
-
----
-
-# Historical continuation — 26 October 2026
-
-Read [the Gemini/Antigravity handoff checkpoint](ANTIGRAVITY-HANDOFF-CHECKPOINT.md), [sanitized verification](antigravity-handoff-verification.json), [complete continuation prompt](CONTINUE-IN-GEMINI-ANTIGRAVITY.md) and [local/offline runbook](LOCAL-OFFLINE-RUNBOOK.md) first. Continue the existing `codex/google-cloud-acceptance` branch and open PR #67; do not reset to main or provision another sandbox. Fresh connected Drive/Sheets reads succeeded with zero writes. The new portable populated-state audit is locally verified; its full live run requires the original private registry, reviewed baseline and secure runtime OAuth binding. Earlier real writer/protection/deployment evidence remains dated; eight acceptance groups and phases 3–11 remain open. Source PR publication is authorized; a main merge can trigger Vercel production and retains the explicit later-release boundary. The existing production provider stays authoritative.
-
----
-
-# Current cloud checkpoint — private Google foundations verified
-
-Read [the installed sandbox checkpoint](SANDBOX-CHECKPOINT.md) and [sanitized evidence](sandbox-verification.json). Private folders, four protected workbooks and the single version-1 signed writer are installed. Real non-product writer/Drive/job/private-pointer and formula-restoration checks pass; the checkpoint states remaining permissions, recovery and production gates. Browser consent/key configuration are complete. Reuse the existing resources and journals, keep the environment unpublished, and preserve the current application provider and data. No products, business migration, CMS publication, cutover or website release occurred.
-
----
-# Historical cloud checkpoint — isolated setup tools; real Google access pending
-
-PR #66 is merged at verified main `019f4c1bac2c03dfeab00a1ed1fb46dc20c29d30`. Cloud continuation uses `codex/google-cloud-acceptance`. Read [the cloud setup guide](CLOUD-GOOGLE-SETUP.md) and [fresh verification receipt](cloud-verification.json). The owner authorized isolated Google setup and selected the owning account; the private registry records that identity while actual resource/deployment IDs remain unconfigured.
-
-The portable environment is prepared, and new structural-plan/private-registry and read-only management-verification tools reuse the existing Phase 2 foundations. No Google resource, script deployment, business-data write, migration, CMS publication, cutover or later release has occurred. Actual authenticated Google access and every real-provider acceptance scenario remain pending. Continue the existing phase gates after those prerequisites; do not rebuild prior foundations or synthesize missing Windows data.
-
----
-# Historical checkpoint — Phase 0–2 local implementation and release
-
-The owner requested completion from `43c0f14`, then authorized all latest changes through a detailed PR into GitHub `main` and a Codex Cloud handoff. The active branch is `codex/sheets-drive-foundation`. Read [the Phase 2 checkpoint](PHASE-2-CHECKPOINT.md), [verification](phase2-verification.json), [isolated Google target plan](ISOLATED-TARGET-PLAN.md), [complete owner brief](OWNER-BRIEF.md) and [Cloud continuation prompt](CONTINUE-IN-CODEX-CLOUD.md).
-
-The read-only audit and architecture/mapping plan are delivered. The controlled writer and signed Apps Script source, Drive JSON provider/large-document support, coherent publication bundle and durable job runner/canonical adapter are implemented and tested locally. Existing editors, data and login remain on the current provider. No Google resources or scripts have been activated; migration/cutover and real-provider acceptance are pending.
-
-The owner also requested correct service placement. See [SERVICE-PLACEMENT.md](SERVICE-PLACEMENT.md): Google Sheets/Drive/Apps Script own the future data/files/writer, GitHub owns source/tests/PR/handoff, and Vercel owns website previews/deployment. Source availability and real installation are reported separately.
-
-Publication of this branch also includes the earlier approved local website/Studio work. The release packages the exact approved 169-image derivatives for portable website delivery and guards new schema-dependent workflows so no automatic DDL is required. Original source files, private lineage, raw evidence and credentials are excluded from Git. The final receipt records preservation exceptions introduced solely for release compatibility.
-
-Use the existing [phase plan](PHASE-PLAN.md) for phases 3–11 after the pending real Google acceptance. The old checkpoint below records historical evidence at `43c0f14`; its next-work list has now been implemented locally. The current checkpoint and Cloud prompt supersede it.
-
----
-# Current checkpoint — Studio and Google Workspace transition
-
-The owner approved the final local website and asked to begin the new CRAFT brief on 24 October 2026. Started from `e9d3228`, preserving it on `codex/exact-legacy-restoration`; current work is on `codex/sheets-drive-foundation`. All changes are local. Nothing has been uploaded, imported, published, pushed or deployed.
-
-Read [the audit](AUDIT.md), [architecture](ARCHITECTURE.md), [phase plan](PHASE-PLAN.md), [field dictionary](data-dictionary.csv), [migration mapping](migration-mapping.csv), [decision](../decisions/2026-10-24-sheets-drive.md) and [verification receipt](verification.json). These replace the previous stopped execution entry while retaining its completed work and evidence.
-
-## Completed in this checkpoint
-
-| Phase/task | Status | Completed work | Evidence | Remaining action/blocker |
-|---|---|---|---|---|
-| 0 / GW-000–002 | Verified complete within the stated read-only audit scope | Current branches/main/deployment, SQL/Blob/auth dependencies, Studio features, selected imagery and connected catalogue assets audited | Main and production remain `1936cbb`; local protected baseline `e9d3228`; current receipts and source inspection | Live production record reconciliation, complete authenticated coverage and installed Apps Script execution remain unverified |
-| 1 / GW-100–102 | Local planning complete | 28 actual tables, 230 fields, 45 SQL constraints mapped; workbook permissions, auth, publication, jobs, direct-input, migration and recovery design documented | Machine-readable schema, field/migration CSVs and detailed phases 0–11 | Implement and validate each provider/workflow; these documents are not a cutover |
-| 2 / GW-200–201 | Local components implemented and verified; phase partially complete | Strict record codec; stable IDs; literal formula-safe cells; optimistic revisions and idempotent replay planner; bounded registered-resource Google GET transport | 51 new focused tests included in 448 passing application tests; scoped lint and full TypeScript pass | Deployed coordinated writer, durable jobs, runtime credentials, target resources and real Google writes remain open |
-| 3 / GW-300 | Read-only local mapping preflight verified | 406 existing QA rows accounted for in RAM; 404 inline round trips; two presentation/history records explicitly pending Drive artifacts; 45 key constraints verified | Repeatable-read loopback rehearsal and unchanged before/after hashes | Actual Sheets/Drive import, Drive artifact delivery, logical JSON relationships, production export/reconciliation and recovery execution remain pending |
-
-The two oversized presentation records are 46,644 and 46,665 UTF-8 bytes. They exceed the foundation's conservative 45,000-character inline cell budget; complete canonical content is hashed in memory and explicitly planned for Drive. No file ID or successful upload was invented and no content was truncated.
-
-## Preservation and verification
-
-- All **406 pre-existing local rows** remain unchanged: 400 business rows across 26 tables plus six transient authentication rows across two tables. No schema, source-record or product change occurred.
-- All **923 protected tracked application/media/package files** match the baseline. The approved public site and login source remain byte-for-byte unchanged. No existing component or provider was activated or replaced.
-- All **169 selected images / 507 WebP variants** passed fresh read-only hash/dimension checks; six featured images and 12 creation types remain. No media was regenerated or reassigned.
-- **448 application tests pass**, including **51 new foundation tests**; **12 preflight tests pass**; full TypeScript, scoped ESLint and whitespace checks pass. Preflight initially could not initialize temporary Git fixtures inside the sandbox; the same tests passed with permission to run their local fixtures. No application defect was hidden by that retry.
-- Independent review led to explicit current-constraint drift checks, duplicate JSON-key rejection and dense/accessor-safe string-cell validation.
-- The existing built preview remains `J0mF2NzSlOPFqGX4L_g0e` at **http://127.0.0.1:4210/**. Homepage/Creations/Signature presence was rechecked. This foundation has no app imports; no new Next build, complete seven-width sweep, cloud integration or production verification is claimed. Existing accepted screenshots remain under `test-results/exact-legacy-2026-10-21/final-live-design/`.
-
-Private evidence is in ignored `test-results/google-workspace-2026-10-24/`: `baseline-private.json`, `after-private.json`, `rehearsal-verified-private.json`, test logs and `google-artifacts-private.json`. Do not commit these, authentication details, raw exports or screenshots. The rehearsal saves only hashes/counts/metadata, not source records. Its source rows exist only in memory.
-
-## Reuse decisions
-
-Retain existing editors, domain validators, published rendering contracts, media lineage, selected-image draft flow and newsletter/subscriber workflow. The old scraper provides source adapters and workflow logic, but current registry entries are not active scrapers.
-
-Existing connected catalogue artifacts include an eight-tab workbook, three 30-slide A4 editions, a one-slide generator base, four generated native decks, four PDF editions and a V2 script source mirror. They will be reused and adapted. The automation dashboard requires installation/trigger authorization and has queued rows with blank output links; generation is not verified. Do not import the existing workbook's product rows. Its queue state in DocumentProperties and filename-based image lookup require adaptation to Sheets jobs and registered Drive IDs.
-
-## Exact next local work
-
-1. Implement the controlled writer adapter and workbook batch compiler around `planRecordMutation`, including per-workbook revisions/audit/idempotency, trusted authorization, lock/recovery semantics and stale/manual-edit conflicts.
-2. Add Drive payload-reference and immutable-publication bundle contracts for the two oversized records, preserving the existing `PublishedSource`, shell and design projections as one pinned version.
-3. Implement job lease/checkpoint/retry/cancel/fencing rules and test them with disposable non-product fixtures. Then prepare the four-workbook/private-folder sandbox setup with exact permissions and operations for owner review before cloud writes.
-4. Prove a real non-product round trip in an authorized isolated target before changing current app persistence. Continue the remaining phases using the plan; do not rebuild completed imagery or editors.
-
-No runtime Google credentials or canonical target workbooks/folders are configured. Read-only owner connector access is not app access. Keep the current SQL/Blob system authoritative until complete Google-backed migration/auth/publication verification; no stale fallback or uncontrolled dual writes after cutover.
-
-## Safe local commands and continuation
-
-Use the existing Node 22 runtime (`../tooling/node22/node.exe` in this checkout):
-
-```powershell
-& ..\tooling\node22\node.exe --import tsx --test tests/google-workspace-*.test.mjs
-& ..\tooling\node22\node.exe --import tsx --test tests/*.test.mjs
-& ..\tooling\node22\node.exe node_modules/typescript/bin/tsc --noEmit --incremental false
-& ..\tooling\node22\node.exe node_modules/eslint/bin/eslint.js src/lib/google-workspace/*.ts tools/google-workspace/*.mjs tests/google-workspace-*.test.mjs
-# Requires the already prepared local cluster to be running; accepts no remote DB input.
-# Choose a new run label; the tool refuses to overwrite its prior receipt.
-& ..\tooling\node22\node.exe --import tsx tools/google-workspace/rehearse.mjs next-checkpoint
-```
-
-Do not run fixture preparation/seeds or replay the request-table repair. Preserve populated clusters and existing preview processes. No new background service was started by this foundation; completed audit/test processes and agents are idle. The pre-existing local preview remains available for the owner.
+The latest [phase implementation guide](../implementation/PHASE-BY-PHASE.md) and
+[next work](../implementation/NEXT-WORK.md) supersede older continuation prompts.
+Completed/superseded phase reports and PR drafts were removed from the working
+tree; use [the cleanup inventory](../documentation-cleanup-2026-10-30.json) and its
+fixed Git revision when historical evidence is needed. Raw provider receipts and
+private registries remain private; source files/fixtures never prove live migration.

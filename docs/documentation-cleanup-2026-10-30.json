@@ -1,0 +1,1534 @@
+{
+  "date": "2026-10-30",
+  "scope": "Documentation cleanup; GitHub main publication explicitly authorized on 30 October 2026; no production configuration or data changes",
+  "recoveryCommit": "7becabb7b6ee9d98f8786435a6e766e2ed33aaa9",
+  "markdownBefore": 508,
+  "deletedMarkdown": 254,
+  "retention": "Current guides, pending provider/recovery contracts, licenses, skills, OLDWEBSITE references and source-dependent documents retained.",
+  "files": [
+    {
+      "file": "IMPLEMENTATION_AND_IMPROVEMENT_PLAN.md",
+      "reason": "Superseded root prompt or working plan",
+      "sha256": "77efb79170f94e1a0697c8b657cfcd95878b5a428c92c657ed002bb28ec177ab",
+      "bytes": 3710
+    },
+    {
+      "file": "RivyaLivingArt_AGENTS_Addendum_v8.md",
+      "reason": "Superseded root prompt or working plan",
+      "sha256": "1dada1b1e4e9680469744b8919142ebc146ff7cfdad5d415ec247c94ab6c2eb8",
+      "bytes": 6385
+    },
+    {
+      "file": "RivyaLivingArt_Asset_Generation_Prompts_v8.md",
+      "reason": "Superseded root prompt or working plan",
+      "sha256": "83726833744942ee64a55b1ba8eb205a23680bf5295924897d24cffcc5708df6",
+      "bytes": 93756
+    },
+    {
+      "file": "RivyaLivingArt_Codex_Start_Resume_v8.md",
+      "reason": "Superseded root prompt or working plan",
+      "sha256": "201a769d659e944a234c7785a33c4ce80d2ab0cbc778edd5e8913265c2d4d67c",
+      "bytes": 17023
+    },
+    {
+      "file": "RivyaLivingArt_Demo_Content_Blueprint_v8.md",
+      "reason": "Superseded root prompt or working plan",
+      "sha256": "7db6fa08d34428de24125d8dfcdd0de8ae0434d9fd8c4f3a959916e7f20fa27e",
+      "bytes": 51400
+    },
+    {
+      "file": "RivyaLivingArt_Frontend_First_Plan_v8.md",
+      "reason": "Superseded root prompt or working plan",
+      "sha256": "d9d90b3c495ff40f2bc4b634eb732ee43334a513f53246c0773a7902ab2d5b49",
+      "bytes": 22510
+    },
+    {
+      "file": "RivyaLivingArt_Git_Checkpoint_Workflow_v8.md",
+      "reason": "Superseded root prompt or working plan",
+      "sha256": "39bb5235bfa0b14165e72fc0c10bc44a6ff34c310c8cc4011855bad030ca6474",
+      "bytes": 11811
+    },
+    {
+      "file": "RivyaLivingArt_Master_Build_Prompt_v8.md",
+      "reason": "Superseded root prompt or working plan",
+      "sha256": "bce15217349a643587f503173a79a42100dbc73f431738c88a2301f48ba90506",
+      "bytes": 217556
+    },
+    {
+      "file": "RivyaLivingArt_READ_FIRST_v8.md",
+      "reason": "Superseded root prompt or working plan",
+      "sha256": "9867ac45c0581a3ed249fd32cfb986b523938f220ee4b8f4c6c30c89ed536b63",
+      "bytes": 9830
+    },
+    {
+      "file": "RivyaLivingArt_Vercel_Deployment_Handoff_v8.md",
+      "reason": "Superseded root prompt or working plan",
+      "sha256": "a4914ee7af9c9f5803b7cde52443badd67d32e2ee5737b42248e2d2e63e77f28",
+      "bytes": 19365
+    },
+    {
+      "file": "docs/CODEX_WORKFLOW.md",
+      "reason": "Superseded root prompt or working plan",
+      "sha256": "c26c9710fc49d0818dc6ec113c05a5efe56beca8a532fe7658722597d3a26b35",
+      "bytes": 29854
+    },
+    {
+      "file": "docs/R8-0_AUDIT.md",
+      "reason": "Historical completed frontend implementation report",
+      "sha256": "dd6b968e75ba36f154c0ed29ef12e1f77f8b02ef4f38c07bc486ad5583fad12d",
+      "bytes": 5005
+    },
+    {
+      "file": "docs/R8-0_REMOTE_VERIFICATION.md",
+      "reason": "Historical completed frontend implementation report",
+      "sha256": "a01df1d89906e64537c7a1ff908d6e5a09d438accb5939257dadbc8cdd53b7ce",
+      "bytes": 3774
+    },
+    {
+      "file": "docs/R8-1_BROWSER_VERIFICATION.md",
+      "reason": "Historical completed frontend implementation report",
+      "sha256": "3d02f38a57a1d27b59e97473abcff8a3f959d6d9f01703ba5dfbd22f2228e996",
+      "bytes": 5513
+    },
+    {
+      "file": "docs/R8-1_DEPENDENCY_VERIFICATION.md",
+      "reason": "Historical completed frontend implementation report",
+      "sha256": "f26645ac7c9c89e455c3a54f1bdec23a33f5711e959e683a169fe6961c5a3e0c",
+      "bytes": 7236
+    },
+    {
+      "file": "docs/R8-1_FRONTEND_FOUNDATION.md",
+      "reason": "Historical completed frontend implementation report",
+      "sha256": "08000e96090ea447a734a3b2f6b9a0012a3b2c564175d2f8a10619ad541bad2d",
+      "bytes": 4817
+    },
+    {
+      "file": "docs/R8-2_FURNITURE_FRONTEND.md",
+      "reason": "Historical completed frontend implementation report",
+      "sha256": "dfd90981a6899ac9a155c5afb3a878f222004624425508fa292346039679d60e",
+      "bytes": 9326
+    },
+    {
+      "file": "docs/R8-3A_MEMORY_PERSONAL_FRONTEND.md",
+      "reason": "Historical completed frontend implementation report",
+      "sha256": "42b4ff64e70ba78671d8bdeb3271ad866fcc256e4dd430b9e72b7a058158f053",
+      "bytes": 7751
+    },
+    {
+      "file": "docs/R8-3B_INQUIRY_FRONTEND.md",
+      "reason": "Historical completed frontend implementation report",
+      "sha256": "ab3749b252b08522e139fc90d009533bca58ee374d972f9c16608ed4f63e4af5",
+      "bytes": 5792
+    },
+    {
+      "file": "docs/R8-3C_PUBLIC_PAGES.md",
+      "reason": "Historical completed frontend implementation report",
+      "sha256": "3be6ed1295abeb028f47524bf28c156fea33a3b0d6a9345b9a782d1bdb2c56ea",
+      "bytes": 8189
+    },
+    {
+      "file": "docs/R8-3D_SYSTEM_STATES.md",
+      "reason": "Historical completed frontend implementation report",
+      "sha256": "cf0a3e42322604defd8c329da2dbf0a1aae7446e536b1b346fb6fd20d63d2816",
+      "bytes": 7908
+    },
+    {
+      "file": "docs/R8-4B_CONTENT_WORKSPACE.md",
+      "reason": "Historical completed frontend implementation report",
+      "sha256": "4380eaa436250c093e66ba2074340201c607b7ddabf50c31e94d91a7a5467c3d",
+      "bytes": 16037
+    },
+    {
+      "file": "docs/REDESIGN-DOC/RIVYA-IMPLEMENTATION-PLAN.md",
+      "reason": "Superseded redesign prompt or audit plan",
+      "sha256": "f0baf40a0dd5529db4c93fbc5f721ed9d39f8019c44e6e3e993beda9da40c18c",
+      "bytes": 30589
+    },
+    {
+      "file": "docs/REDESIGN-DOC/RivyaLivingArt-Dark-Theme-Audit-and-Implementation-Plan.md",
+      "reason": "Superseded redesign prompt or audit plan",
+      "sha256": "2648c1d244d5da63d951d516b0535c314d9a6874f1512609bcd1af8fb4a36311",
+      "bytes": 91600
+    },
+    {
+      "file": "docs/REDESIGN-DOC/RivyaLivingArt-Dark-Theme-Master-Prompt.md",
+      "reason": "Superseded redesign prompt or audit plan",
+      "sha256": "9f84dbcff63c07df011c5090b6a206d7f27f2a4b44593fd4f7a23386135cfad9",
+      "bytes": 25361
+    },
+    {
+      "file": "docs/REDESIGN-DOC/RivyaLivingArt-DarkTheme-Redesign-Plan.md",
+      "reason": "Superseded redesign prompt or audit plan",
+      "sha256": "10fa553ffb440e62163640dc37e9b1f9ddb7587076dd16dd7d221b053f4c299c",
+      "bytes": 16132
+    },
+    {
+      "file": "docs/REDESIGN-DOC/RivyaLivingArt_Redesign_Implementation_Plan.md",
+      "reason": "Superseded redesign prompt or audit plan",
+      "sha256": "5fcd7ccc8f60790a0ae91dafb28938d1a5b9b229af656e2b25cadb3c8d4da8db",
+      "bytes": 9996
+    },
+    {
+      "file": "docs/REDESIGN-DOC/rivya-dark-theme-implementation-plan-v3.md",
+      "reason": "Superseded redesign prompt or audit plan",
+      "sha256": "979307ac55a32b8b9acd744905fe195fdd11ac2268f416f3e76cf70370a62cd3",
+      "bytes": 17136
+    },
+    {
+      "file": "docs/REDESIGN-DOC/rivyalivingart_master_prompt_implementation_plan.md",
+      "reason": "Superseded redesign prompt or audit plan",
+      "sha256": "e453e75fe5057ce27c85ab82c9cd5016d0630a479a29d00630c8f84e792a9b48",
+      "bytes": 8566
+    },
+    {
+      "file": "docs/audit/AUDIT-PROGRESS.md",
+      "reason": "Superseded redesign prompt or audit plan",
+      "sha256": "26412c91862550eda2a88e94fb188b43f9db16e742e544617c058b4193dd294b",
+      "bytes": 6123
+    },
+    {
+      "file": "docs/audit/DESIGN-SYSTEM-RECOMMENDATIONS.md",
+      "reason": "Superseded redesign prompt or audit plan",
+      "sha256": "8439ba7f4215eea29b710ee6f647f3379e9d36dd21f0ba99359e7e69138a51f5",
+      "bytes": 7035
+    },
+    {
+      "file": "docs/audit/FULL-WEBSITE-AUDIT.md",
+      "reason": "Superseded redesign prompt or audit plan",
+      "sha256": "017f690877bba69de8e598eb9e0ea9315288049e299d3ab0fbb629b04f2cbb65",
+      "bytes": 12376
+    },
+    {
+      "file": "docs/audit/PHASED-IMPLEMENTATION-PLAN.md",
+      "reason": "Superseded redesign prompt or audit plan",
+      "sha256": "98d47a52b9e8e7c0ebbe0d1dbf6d9475eef3173d873fbf393b7a502e8b3ef087",
+      "bytes": 7998
+    },
+    {
+      "file": "docs/audits/rivya-master-audit/FOLLOWUP-CLEANUP.md",
+      "reason": "Historical audit/release summary superseded by current audit",
+      "sha256": "16d63a484d0c1a669338e0f93ec342b99b2fcbc02e7093c8baef2a7379d69568",
+      "bytes": 16682
+    },
+    {
+      "file": "docs/audits/rivya-master-audit/PR-64-REVIEW-FOLLOWUP.md",
+      "reason": "Historical audit/release summary superseded by current audit",
+      "sha256": "6ee7fb07d85c84e0d4eb2242e294f7a799aa7ecee9d2c3f95b86b6710fd5c6dd",
+      "bytes": 3058
+    },
+    {
+      "file": "docs/audits/rivya-master-audit/RELEASE.md",
+      "reason": "Historical audit/release summary superseded by current audit",
+      "sha256": "e4c075f8c4f42a7d315b0aa12920c30e4690bb440f43d39382f624acf4795593",
+      "bytes": 8079
+    },
+    {
+      "file": "docs/audits/rivya-master-audit/SKILLS-AND-AGENTS.md",
+      "reason": "Historical audit/release summary superseded by current audit",
+      "sha256": "03888d7361b1c23e338b0f01fbd9392e9019441e61aea4724baf8cb7112c9a18",
+      "bytes": 15616
+    },
+    {
+      "file": "docs/decisions/2026-09-21-development-first.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "8aaed6898071ed1704d0b9876722e38fb3761b2796e987513fa022adc5b079ed",
+      "bytes": 3704
+    },
+    {
+      "file": "docs/decisions/2026-09-21-main-merge.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "1a9d01483b525f254b209ee579682945f74953fa2bdc3a2fd5d84c45050d0e99",
+      "bytes": 2672
+    },
+    {
+      "file": "docs/decisions/2026-09-21-new-build.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "9c4c1429df0f79d67be63b46335552dc1fd856abb05cee4ef76a789a29cdbc18",
+      "bytes": 1191
+    },
+    {
+      "file": "docs/decisions/2026-09-21-r8-3b-main-merge.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "a2314295ae499dac46cc33d16c1e356335620967765741d678def4138e67f1c1",
+      "bytes": 3436
+    },
+    {
+      "file": "docs/decisions/2026-09-21-r8-3c-main-merge.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "6731eed71d2f50ead2a6be46767f77d9610e1fcf767a9bb3d0e032d5a758e325",
+      "bytes": 4849
+    },
+    {
+      "file": "docs/decisions/2026-09-21-r8-3d-main-merge.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "294812f158171253b97e0bb70b5aea068b23dfcbea0853cd912124a5a43d84c8",
+      "bytes": 4535
+    },
+    {
+      "file": "docs/decisions/2026-09-21-r8-4a-main-merge.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "7ac4ec421a6e988dc6d20e4ee4ba310ab91487c8048aaea93133fecd0c3f7653",
+      "bytes": 4002
+    },
+    {
+      "file": "docs/decisions/2026-09-22-approved-code-publication.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "e9f973be980e8317dd31b82ae2d2a633d6ccbcbfdbbdbce505663f596f8f395b",
+      "bytes": 3551
+    },
+    {
+      "file": "docs/decisions/2026-09-23-approved-full-redesign.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "1f8e5c6a460956592e55f20dccd20d5205860e24d896d85b8703c919858096ac",
+      "bytes": 1128
+    },
+    {
+      "file": "docs/decisions/2026-09-23-phase-2-execution.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "b785e9e3a535a08c9002d7a2f4bc112f815fab70d30d64ffa5b5b9af6a92b25e",
+      "bytes": 1329
+    },
+    {
+      "file": "docs/decisions/2026-09-23-phase-3-execution.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "c245921ce929049f4616679059cc8c40d6cea93a4d551d24134e841159b56c55",
+      "bytes": 1218
+    },
+    {
+      "file": "docs/decisions/2026-09-23-phase-4-execution.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "a54aa66b6a3f062f0f563f81f33c170393e66c18e70c2a060a3d5bc8d74629b7",
+      "bytes": 1017
+    },
+    {
+      "file": "docs/decisions/2026-09-23-phase-5-execution.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "b99cc839c7be57645c5268e5e1ff5f856640688214dbbeadb2e742eec9baca96",
+      "bytes": 1600
+    },
+    {
+      "file": "docs/decisions/2026-09-23-phase-6-execution.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "33d211df844d73ea2e89dc5c1210d7b3d0fc5e8340ae6dfe610878f1da870b84",
+      "bytes": 2334
+    },
+    {
+      "file": "docs/decisions/2026-09-23-phase-7-execution.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "43e5f85485ea16e813dc8addd39740d6005c27f76a2151df4fef8749f236a195",
+      "bytes": 1428
+    },
+    {
+      "file": "docs/decisions/2026-09-23-phase-8-execution.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "34f1b1c67ea536419ec31bbad60d041487ad3f8732c547a84282ee75e44df4a8",
+      "bytes": 1420
+    },
+    {
+      "file": "docs/decisions/2026-09-23-production-release.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "edfdc5cf9eadb5a0dc009e86e5e3585135a754e1c48716caeb26bca8f9e23d8c",
+      "bytes": 1619
+    },
+    {
+      "file": "docs/decisions/2026-09-23-revised-phase-1-approved.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "31a4106cfe586efecab78d7edf728e0ebbe5ea9f769d6cd87075353c1bfba8fb",
+      "bytes": 2019
+    },
+    {
+      "file": "docs/decisions/2026-09-23-shared-database-production-hold.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "256ec7c590b3d6c82e371e37006207990a06e8ddb7b5a1e905ff3d511025ddfd",
+      "bytes": 2510
+    },
+    {
+      "file": "docs/decisions/2026-09-23-vercel-only-hold.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "490ab135388850e3b2d4d923bfe0c0339a71c6cb43922d43876c1475363d27f1",
+      "bytes": 1431
+    },
+    {
+      "file": "docs/decisions/2026-09-24-midnight-atelier.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "e7d10eb7c47dbdf5147ee4955ae7dc0a9644e383a3e21ba16cb36851466a5365",
+      "bytes": 1416
+    },
+    {
+      "file": "docs/decisions/2026-09-24-phase-10-execution.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "d38710382b3d809b8c2e488d6e07f2e346c6833e97eb1decc782edc3e03c005b",
+      "bytes": 911
+    },
+    {
+      "file": "docs/decisions/2026-09-24-phase-9-execution.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "f9282066b98b87614e2afccf55d536ed98537014e3e4bc46070004d2bf7d23c7",
+      "bytes": 1375
+    },
+    {
+      "file": "docs/decisions/2026-09-24-pro-final-release.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "a5f07139d30b2b0634d67dafbbe8c1272a872fba13f16b295b6ed0fe7fb474c8",
+      "bytes": 1741
+    },
+    {
+      "file": "docs/decisions/2026-09-24-publish-current-stop-testing.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "b25df13f7fd94aa434577699ab08cde2fafd92b6557a824def88710fcdc869a8",
+      "bytes": 2394
+    },
+    {
+      "file": "docs/decisions/2026-09-28-midnight-atelier-merge-approved.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "435ce6396f1b5ba0cb4b837f5da6c2f8699d2012dedf3db4e2ad585eec01285b",
+      "bytes": 836
+    },
+    {
+      "file": "docs/decisions/2026-09-30-p1-foundations.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "a298ad2ae436ea1631107eb2a0fdf4ce60680d8c383cff7bda0360b6ec5b6f9b",
+      "bytes": 1701
+    },
+    {
+      "file": "docs/decisions/2026-10-01-local-first-pr-and-p3.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "850fe901a6fa5d270cd6b3ed67c295d45d6627cc2fcf491379cb90b834586f3b",
+      "bytes": 1308
+    },
+    {
+      "file": "docs/decisions/2026-10-01-p0-p1-closure-p2-continuation.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "5dca656cdb050ba18a3c07b1550ad1243e4d9f089d7016aa04ef384fb6716ce4",
+      "bytes": 825
+    },
+    {
+      "file": "docs/decisions/2026-10-01-p2-completion.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "1173cb5e3285f6cf6c05ae3654f258a096c6d932ea6c52b83a25f084cf2eb87b",
+      "bytes": 1068
+    },
+    {
+      "file": "docs/decisions/2026-10-01-p2-homepage-workflow.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "621f5ce49d22b2d5aa2a5531e3e5a81888ae50bce1c1ca5df85a09599143e912",
+      "bytes": 1337
+    },
+    {
+      "file": "docs/decisions/2026-10-01-p3-completion.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "2fbbba6424d0a7a99fcfe0efe4abd8e5c8640f7dbe50192c63f001394a6b4ace",
+      "bytes": 873
+    },
+    {
+      "file": "docs/decisions/2026-10-01-p4-completion.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "afab68d9ae00feb020806522dc794d2a751a6078d556a05814ea99c879db4804",
+      "bytes": 1164
+    },
+    {
+      "file": "docs/decisions/2026-10-01-p4-start.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "de2a869874987dea290345d9c546ae0830bfaf5fc4049c9dd0f4d5b2142a02e6",
+      "bytes": 833
+    },
+    {
+      "file": "docs/decisions/2026-10-01-p5-completion.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "02173a6c9497faf98d289d8f000e4e7a87ee7ad2148949c25609a2bd3724d98c",
+      "bytes": 1369
+    },
+    {
+      "file": "docs/decisions/2026-10-01-p5-start.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "490b5a4766d7537fc894691b1b5f13820ebeca51af92a7ae3a6567aa98a78619",
+      "bytes": 1258
+    },
+    {
+      "file": "docs/decisions/2026-10-01-publish-p2-main.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "3ac9372c64b021f7f699219b40dbbaf05a02b0ccec276d04f400e715357532c8",
+      "bytes": 1250
+    },
+    {
+      "file": "docs/decisions/2026-10-01-publish-p3-p5-main.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "48ca17de064b4ca5e7090925d4657a050f1058d564dea94173c812d64e970bfb",
+      "bytes": 1919
+    },
+    {
+      "file": "docs/decisions/2026-10-03-authorized-main-production.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "e4f93c90bfd72449098fba00cd0113a32c7364a860a4d814ca12e4c9519b09a6",
+      "bytes": 1521
+    },
+    {
+      "file": "docs/decisions/2026-10-03-p6-completion.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "74b29c967b3ac1a3682528e8af8e13288761d7117a7dfbceb29b9760a50194fc",
+      "bytes": 1093
+    },
+    {
+      "file": "docs/decisions/2026-10-03-p6-start.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "ad71d22c295d7c9eb570d5f1f3c7d29151da4f8dba0caf1d3d5ccdf49ed61e2f",
+      "bytes": 1071
+    },
+    {
+      "file": "docs/decisions/2026-10-03-p7-verification.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "eb5117186f399a8fe34bf3f1ed7df7d1edf4adc77839b53357f9e3921a213d5e",
+      "bytes": 2248
+    },
+    {
+      "file": "docs/decisions/2026-10-03-release-follow-up.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "46372dcd1a320289e51d3d8da2b5db7f6d60d4d0d033003cc21f045dd8417a6e",
+      "bytes": 1649
+    },
+    {
+      "file": "docs/decisions/2026-10-05-indexing-next-release.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "3f4a0497d7882d81efe1f700072c9b4f5d8b0a71e2ff452b5d84c5422e57d8a3",
+      "bytes": 1019
+    },
+    {
+      "file": "docs/decisions/2026-10-05-publish-c5-c6-main.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "506d729f8d0cd925ccbee259d9638d28f42ccda33c3403aa64dd100fce923d16",
+      "bytes": 1238
+    },
+    {
+      "file": "docs/decisions/2026-10-05-publish-craft-main.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "1f07c01e612f26a67fefdbd3be2c5c53ae8c931a8714c81996a610fa75b0e0ef",
+      "bytes": 1947
+    },
+    {
+      "file": "docs/decisions/2026-10-05-release-final-acceptance.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "ea6e25d5f0f5d0151013a2560b4c2d439c44e39be5f7c203909b8ade577df9e2",
+      "bytes": 1290
+    },
+    {
+      "file": "docs/decisions/2026-10-05-remove-backups.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "9d4d36d5b71682e389d02f8f1b9659e4cea78beb18ddf21fcc97e9c93e0f250d",
+      "bytes": 3515
+    },
+    {
+      "file": "docs/decisions/2026-10-06-editorial-release.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "e79de76aa738d85a8abc8d94843396b0094bcf8c5de07be2b25b0c224a908e52",
+      "bytes": 2250
+    },
+    {
+      "file": "docs/decisions/2026-10-08-release-retained-work.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "753a8043f026b725b68ceac973aa0f91246204564e0fe2d5c518bb30d27066d0",
+      "bytes": 4609
+    },
+    {
+      "file": "docs/decisions/2026-10-09-m5-m6.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "32ede8565590e7a5c898250ebf7bb8b3bc43bb771d1535691c1233d1f13b7588",
+      "bytes": 1597
+    },
+    {
+      "file": "docs/decisions/2026-10-09-m7-m8.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "fe5c4c23862c11213c74ff61c2789f37a98207ffb816011d34077e339147f1b2",
+      "bytes": 958
+    },
+    {
+      "file": "docs/decisions/2026-10-09-m9.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "04c128ed5896b1a24c3641ff86e9fcce6acfa6fc05988e61c10936340694e20d",
+      "bytes": 1665
+    },
+    {
+      "file": "docs/decisions/2026-10-09-production-presentation-setup.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "1a319dec880e4a3785ea9c89211464a825902fbf895cdd421d08ef46cd40032c",
+      "bytes": 1573
+    },
+    {
+      "file": "docs/decisions/2026-10-09-publish-migration-handoff.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "edfadd2c8befd0f0cf7592e13341d9d301319a803da2e6a84ff69332f2b26384",
+      "bytes": 1705
+    },
+    {
+      "file": "docs/decisions/2026-10-09-release-m0-m4.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "1584dffd084e0b8a49c162cd321669dfd16f1a3c54a15981972b2f4cdd1f1d76",
+      "bytes": 1227
+    },
+    {
+      "file": "docs/decisions/2026-10-10-m10-regression.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "a6014018e2d06cb97f12995261064c878e3cd1e2cc9e36976af1762545983091",
+      "bytes": 1512
+    },
+    {
+      "file": "docs/decisions/2026-10-10-release-m5-m9-and-m10.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "47d5dbdf3c1814316179b10e1a9d8aa7f5c8909300121c591c3b2d9e950ec396",
+      "bytes": 1584
+    },
+    {
+      "file": "docs/decisions/2026-10-12-m10-m11.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "e5d1c2a5f911364a9202cefdaa7993e2054e40084eb0542e61943962491628e9",
+      "bytes": 1124
+    },
+    {
+      "file": "docs/decisions/2026-10-12-m10-next-step.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "eced8df32f6efcaefd7b7a812b01e4c2fd5fd0e477cc774f90ca4b1fa69a9661",
+      "bytes": 1156
+    },
+    {
+      "file": "docs/decisions/2026-10-12-m10-pending-completion.md",
+      "reason": "Historical phase authorization or release decision; current scope supersedes it",
+      "sha256": "97aa532dc09fadd90c70d645e08fcbbcd6748f72552e13308a01a893bc02f12b",
+      "bytes": 1136
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/CONTINUE-IN-CODEX-CLOUD.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "312fb6275a59da51e4f72017129d6737cfebff12e625517cf23a27b29ca2d1b1",
+      "bytes": 11658
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/CONTINUE-IN-GEMINI-ANTIGRAVITY.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "77c0f069694af147ea4106800b1aa5d6ce9d0dea3f5299400d8c114fc9e84b76",
+      "bytes": 31346
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-0-TO-4-PR.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "ff545143057915ad923cf0ee5658ad6ee97be05a267fc2f620c5d01e9a14ed5a",
+      "bytes": 5669
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-10-CHECKPOINT.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "47f3f21a96277012c53eaad9ef60a8b691b4215fa911b90b702b7a9ed50e536c",
+      "bytes": 6148
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-10-PR.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "b8e56a5c276bbf583138f423e3f4d989ff13b551d78422e29e49889459ac6278",
+      "bytes": 5032
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-11-CHECKPOINT.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "7c02125c919d8b6a2d5c61b8470a6f0ce18b02f6f5be324ea5b9eaa2f4bd1e98",
+      "bytes": 6059
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-11-PR.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "b6cb3605075a7b96c708e352c9402bcb2f066b7e4c997f8a193bc837d0a92b2f",
+      "bytes": 3763
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-2-CHECKPOINT.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "ff1c745ac938fe78196844f6175bdfa41d103b4f3ac56b27c6cc4573d03237b4",
+      "bytes": 7118
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-2-PR.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "364b2ed73fefcca6ce20b227ac1ff72b5986cfe33c013ffb35c805ea3f41ee75",
+      "bytes": 5137
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-3-CHECKPOINT.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "09abf60512b3efe807e57c21293e5658443e884a800c743d3e52008611251012",
+      "bytes": 4479
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-3-PR.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "9314da173f45497ca4e57b6ca398c5348fb75e41d00f273acc1812a9f02d25af",
+      "bytes": 3431
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-4-CHECKPOINT.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "bbb29729cf2a33d32592e5454dc54a9bf464612eac9f89d776cd371f55aed4cc",
+      "bytes": 6056
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-4-PR.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "cf226cdba42b4a06e7be8add44b674c1f424abebdd957b8b663d879179034313",
+      "bytes": 5402
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-5-CHECKPOINT.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "8ffe56b334fc8d97c7ee065379faeca0857e24737c3bfcf961f4253cb94196ad",
+      "bytes": 4883
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-5-PR.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "71b3cd1589ab3effcc44b8d062d123f9c0b297c0976853e6d079d567f62ac86d",
+      "bytes": 4944
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-5-TO-9-PR.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "1e18b7c9457eb89daf4d933f4d4eb3d0d99c1128f6aaddc9da55cb52bbfa81d1",
+      "bytes": 9746
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-6-CHECKPOINT.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "e4453201db45794afea9e8bb484c408889fbe3b36446eddff197b279c3ac710c",
+      "bytes": 5470
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-6-PR.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "a7f00fe3286b264146f937ff13386d54622d8ace27a7940bf4503aadda783a55",
+      "bytes": 5588
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-7-CHECKPOINT.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "e3534bd158e435c5b60118851840a1d432c34da60db5a2c7b0f72cd92e0581df",
+      "bytes": 5283
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-7-PR.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "b81a6e08e2785c7001d3e1fa56eb6cc90b559c7a9ffc464046da002a278c4c99",
+      "bytes": 4507
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-8-CHECKPOINT.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "a1a34ffe81cd8244571bcb6b8cdd755b76f0596fd5e96983407e0802547309c2",
+      "bytes": 5687
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-8-PR.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "7d79b840ebd21b5b3b749231c3df67d16a98cdd6d77a0687ffbb4f34092b0b7f",
+      "bytes": 5061
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-9-CHECKPOINT.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "b98022900ba2452a63007e6458c5fe779304676de90294cd066559cec73af411",
+      "bytes": 6260
+    },
+    {
+      "file": "docs/google-workspace-2026-10-24/PHASE-9-PR.md",
+      "reason": "Superseded phase delivery report or AI continuation",
+      "sha256": "5a6dfaf730b5a581fe0d7e6f50e4f4a5cb90f8dda95e9fc585c0ad3c92af50fe",
+      "bytes": 5177
+    },
+    {
+      "file": "docs/redesign/C5-C6-MAIN-RELEASE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "394f372381eb920822d2aec86dde6a8ea8fa59707adcf5535dce4eaf1fc11690",
+      "bytes": 9356
+    },
+    {
+      "file": "docs/redesign/CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "f9f69bbcefc31691eae8b7dd46eadb9326a227b2cd1e299a173e41eb1547c711",
+      "bytes": 10386
+    },
+    {
+      "file": "docs/redesign/CRAFT-C2-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "a3d75552cca8943aa4223cb3ff856c447ee13e6925a00268011bb62498c5505b",
+      "bytes": 7398
+    },
+    {
+      "file": "docs/redesign/CRAFT-C3-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "9bc92c934591133c216710e9b35fcc07b1096bd1dd931241d380f8b4e3657b00",
+      "bytes": 6584
+    },
+    {
+      "file": "docs/redesign/CRAFT-C4-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "ede68eda5849e0f83779a4338d068040f17723db307a342de63f767317a3d76d",
+      "bytes": 8293
+    },
+    {
+      "file": "docs/redesign/CRAFT-C5-ACCEPTANCE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "35da7fd0d4701e13eada9a71c5adc9c54da4d8cd4935a482913584372c6c51d2",
+      "bytes": 7234
+    },
+    {
+      "file": "docs/redesign/CRAFT-C5-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "b3d43b5e03f9dbb5746913fd328f4b7b03ef2b9e7451b6f2b0454440f05b2de6",
+      "bytes": 6416
+    },
+    {
+      "file": "docs/redesign/CRAFT-C6-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "5fb54c5892965cb902fd93af5a185806015c73a57b830045656479c99149008b",
+      "bytes": 11034
+    },
+    {
+      "file": "docs/redesign/CRAFT-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "415fb20cf033bb144bf11892ffed4c26a2c56ce320a782da0d43d039febde9f5",
+      "bytes": 10106
+    },
+    {
+      "file": "docs/redesign/CRAFT-MAIN-RELEASE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "1429e3499f983996ecabbd6e0eebf54fba1b742acaa5f707b93e62547416a615",
+      "bytes": 7070
+    },
+    {
+      "file": "docs/redesign/Current-State-Reconciliation.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "42d65fe86eedea527afd408580bbf9a19210ac18e6be0574f62de2938ddfb19d",
+      "bytes": 21994
+    },
+    {
+      "file": "docs/redesign/DARK-THEME-MASTER-PLAN.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "a3d0cdd05e0cb3831cd73ae986c8646e58236c9b68cb17eba22d0c469c45fea8",
+      "bytes": 23314
+    },
+    {
+      "file": "docs/redesign/FINAL-ACCEPTANCE-2026-10-05.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "a960d9ed5aab863a2ba1fac779c638b815d38691471ecb20bd25df6f0aaeb5c1",
+      "bytes": 12963
+    },
+    {
+      "file": "docs/redesign/FINAL-ACCEPTANCE-PR-DRAFT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "08ff8da9400d2d64e5b667dc084dbe692dc14f73a1e28807e196d7587589a084",
+      "bytes": 4454
+    },
+    {
+      "file": "docs/redesign/FULL-WEBSITE-AND-STUDIO-AUDIT-REPORT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "c0c8038b778711c81818c936d6ff089031b30366698fbd1304a61f1e6e21a640",
+      "bytes": 12209
+    },
+    {
+      "file": "docs/redesign/HOSTED-LOADING-FOLLOWUP.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "d8893547da76dfba25297d17a942af251bcd7d79dcdfc2d8cfc560d0ceb0d0e9",
+      "bytes": 4253
+    },
+    {
+      "file": "docs/redesign/IMPLEMENTATION_PROGRESS.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "eb823c9d2ffba859ea03ef3a24c1e72fc1afdb18601fd0dead173fd88735e1ae",
+      "bytes": 7460
+    },
+    {
+      "file": "docs/redesign/MEDIA-LAYOUT-FIX.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "046bf3810de14364cf23d2e19dad443e1d859bfee72a0ed081e5a3a18c393daa",
+      "bytes": 2415
+    },
+    {
+      "file": "docs/redesign/MIDNIGHT-ATELIER-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "07f8e1a7c58f54f3184501045c84be3e50297a9f3de18a579e6667618327782d",
+      "bytes": 7269
+    },
+    {
+      "file": "docs/redesign/MIDNIGHT-ATELIER-REPORT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "f72c0e52cb9639370263c8aaeec490e656d542ab351d7051cc302198e967157d",
+      "bytes": 7113
+    },
+    {
+      "file": "docs/redesign/P1-CLOSURE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "3c93004c8f4b22bf3d80a8d9f699d12c0ebb1ca9a31f2db3a9154a57689a39bb",
+      "bytes": 7608
+    },
+    {
+      "file": "docs/redesign/P1-FOUNDATIONS-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "0a182239af850ca25c188e6db1412914055304ca714154a1248ee1a232cf8390",
+      "bytes": 8366
+    },
+    {
+      "file": "docs/redesign/P2-CLOSURE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "41d34fad4e302e677d6fa6bc8f01a6ae2d161b6af8ff0d457055f0fc5f730cc1",
+      "bytes": 9946
+    },
+    {
+      "file": "docs/redesign/P2-HOMEPAGE-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "d65855fe733d346d92128bdef8b767147abf421d1d5b2996e0f876251b57748f",
+      "bytes": 10897
+    },
+    {
+      "file": "docs/redesign/P3-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "bb828aea838458fd62a4a29464b2f594e92b883bb8b4e45469432dadab2e8ead",
+      "bytes": 6441
+    },
+    {
+      "file": "docs/redesign/P3-CLOSURE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "54efab28af859970362975ff559036182cd77df5b139a5d78f828c11d4bf8858",
+      "bytes": 9045
+    },
+    {
+      "file": "docs/redesign/P3-P5-CHANGE-REGISTER.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "2c38ee5135272cbb8fa082fd1a7ee9ab603e3755fae053339cb6ae4069a804dc",
+      "bytes": 9334
+    },
+    {
+      "file": "docs/redesign/P3-P5-MAIN-SUMMARY.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "d7614d5951e009516a1ffdaf70b96b8647697dc7b1e17e084719dbdc33a43c3f",
+      "bytes": 11122
+    },
+    {
+      "file": "docs/redesign/P4-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "62abcb13ed8b4e597a7423608f28d2c02f58c0324d70a09b0ff680b272090df5",
+      "bytes": 1430
+    },
+    {
+      "file": "docs/redesign/P4-CLOSURE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "31f189471ca19a0f129c6da990624833f645b605feef91da9bd63ab18b0f0653",
+      "bytes": 12884
+    },
+    {
+      "file": "docs/redesign/P5-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "acc49eac82c77e0218b279e89ab85f3128a4c196bab6775d7b22c4a499bce1f8",
+      "bytes": 1327
+    },
+    {
+      "file": "docs/redesign/P5-CLOSURE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "a5c9e15c957c82d0ce50db81b5ef3fa4d6d44e0d4a7a923d0a7f38103f94cbb6",
+      "bytes": 10715
+    },
+    {
+      "file": "docs/redesign/P5-REFERENCE-COMPARISON.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "93c11ff6a28e3202c7d9e0bb077eb2e2abbd411247efda5a7d83b41ed5c8390d",
+      "bytes": 3156
+    },
+    {
+      "file": "docs/redesign/P5A-IMPLEMENTATION.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "341da4f1b765fcaba137f2584aa1d8ecb460d67660aea4c0f18df99ebc0a136c",
+      "bytes": 8561
+    },
+    {
+      "file": "docs/redesign/P6-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "8abf342fc6d25b194f686bf090324ed2583de2e16e14ec670b4d1c2cffb2246b",
+      "bytes": 1287
+    },
+    {
+      "file": "docs/redesign/P6-CLOSURE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "fbe80d7f55865afeedc021be86da4f7b85cc445e1c133e301d0e08c4ed4a895b",
+      "bytes": 12167
+    },
+    {
+      "file": "docs/redesign/P7-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "c4f20a59a70f447c0972bef08e2526e02f17052b2477530a99f4d3881a5eddba",
+      "bytes": 3105
+    },
+    {
+      "file": "docs/redesign/P7-EVIDENCE-REPRODUCTION.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "d4dbbcfe9ce9d07a2957950baa30f84194561d0a37ee3121b624bc656485d5c0",
+      "bytes": 2695
+    },
+    {
+      "file": "docs/redesign/P7-VERIFICATION-REPORT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "60236fff5cc6390afd2979da92b3afff8e109d0db8cf4c5e53f2bf45f783d155",
+      "bytes": 16661
+    },
+    {
+      "file": "docs/redesign/P8-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "5763feb174cc8d03f675b838d12314c5cd7ad431bed8848cac04217e84354e7f",
+      "bytes": 2217
+    },
+    {
+      "file": "docs/redesign/P8-FINAL-RELEASE-CHECKS.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "4b3f645fa666b569495aef26e533765441debe46a93f3a3884640d8644911a6d",
+      "bytes": 5389
+    },
+    {
+      "file": "docs/redesign/P8-FOLLOW-UP.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "ea27aa8ecba2d89e239dd87c1ee794a564d08b369c869ce8f007dacdad1942ee",
+      "bytes": 9318
+    },
+    {
+      "file": "docs/redesign/P8-PR-DRAFT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "726fd45d21cd675cacedacc75447f61689e487f2af023798bfc5c95736995627",
+      "bytes": 8412
+    },
+    {
+      "file": "docs/redesign/P8-RELEASE-PACKET.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "7889f868cfcaea8344cf9f6f7d90f032fbc37dc8a6bff9dc24b575925c747186",
+      "bytes": 13228
+    },
+    {
+      "file": "docs/redesign/PHASE-11-CHECKPOINT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "9dc14fec851d249c3879218ed2fc8d1a1611ea291a60989271f99c00cf825e06",
+      "bytes": 4359
+    },
+    {
+      "file": "docs/redesign/PHASE-3-DESIGN-SYSTEM.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "b28f460cf9725ffdbed1e9fb44407a15d7eb7f1fd616e0d5ec797d6ca36ab454",
+      "bytes": 12164
+    },
+    {
+      "file": "docs/redesign/PHASE-4-CATALOGUE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "efab296628a9fe911b39d13c834e057249292b9dff4d349cf8e3be7462fdace3",
+      "bytes": 10860
+    },
+    {
+      "file": "docs/redesign/PHASE-5-CUSTOMIZATION.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "c29dcb7ca21bc6aeaf7b3a2770d865649cd25e2c8356c11d82638a811d640d69",
+      "bytes": 11062
+    },
+    {
+      "file": "docs/redesign/PHASE-6-ORDER-HANDOFF.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "0899854ae9fb9f810ac46008aac8fef47c22e7cb726b80d74ea94238f5a61588",
+      "bytes": 13872
+    },
+    {
+      "file": "docs/redesign/PHASE-7-STUDIO.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "6ffa07f375f7355ab0af7d1f5822e51db9f64b553b668da9e3c66ad5f8abb53a",
+      "bytes": 15757
+    },
+    {
+      "file": "docs/redesign/PHASE-7-VERIFICATION-REPORT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "e4d5729471afdabfde3ce971a7bbcc8ed7569adcc218f26dbccf9d9f2dcfdd0a",
+      "bytes": 5883
+    },
+    {
+      "file": "docs/redesign/PHASE-8-PUBLIC-CONTENT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "fcab9b80f2ab6e87e662c339ef44e3fdf11890ed2a5bcc7d8b231e59350d43e5",
+      "bytes": 22078
+    },
+    {
+      "file": "docs/redesign/PHASE-9-MEDIA-REFINEMENT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "214d7ee14a6e46bf98645ad0a32aea4bb0d53ccd20aa34de434e1888e705253d",
+      "bytes": 14401
+    },
+    {
+      "file": "docs/redesign/RivyaLivingArt-Commercial-Implementation-Plan.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "089def24dd688a67ea406084d4e85a812106f8c45d9a31f2cd768ce2971f07b2",
+      "bytes": 129527
+    },
+    {
+      "file": "docs/redesign/RivyaLivingArt-Commercial-Readiness-Report.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "9de951fe0120c80c66a89b028eacc78357528f27f147cccbad2b1f430e2b1f73",
+      "bytes": 22467
+    },
+    {
+      "file": "docs/redesign/UI-UX-SKILLS-IMPROVEMENT-PLAN.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "c466495a2c75e79cb3722edc47cfe9259d213b03f1caeefa00dd212321c53032",
+      "bytes": 17925
+    },
+    {
+      "file": "docs/redesign/cinematic-sections-2026-10-16/CONTINUE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "d02959bde1fb5d3599240c88bfd835757b3b0c8d254166f999dd009f1b4f35ac",
+      "bytes": 4108
+    },
+    {
+      "file": "docs/redesign/cinematic-sections-2026-10-16/DIRECTION.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "89ee6f5bf6b82474c904019daee59f200c447fb0b0b6c453ff07ee4a77cf61ee",
+      "bytes": 3144
+    },
+    {
+      "file": "docs/redesign/cinematic-sections-2026-10-16/SCOPED-REVIEW.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "98c738074054407fc1b7b396ebcc4f4b7557f2a74151aa3a154a7f08d3d0833d",
+      "bytes": 2734
+    },
+    {
+      "file": "docs/redesign/home-hero-2026-10-15/DIRECTION.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "d9fd0209c20f527aa59ddfdbf404c40c2793c2d93f884c56817c63d615424c36",
+      "bytes": 1177
+    },
+    {
+      "file": "docs/redesign/home-hero-2026-10-15/RELEASE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "0a93fba1136f2726cc42e68ed9c5c63b6627e03208879d1425d3899e144c72cd",
+      "bytes": 1666
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/CONTINUE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "7fb5f263b97229e951f0e1e4743ecb4975ce8e337837d221cd539ac0f50c0df8",
+      "bytes": 13780
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-1-REVIEW.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "38b4e8540b82ee79fcd993ae22859b0db9a0a36f2228905ae56ebc351adf91ac",
+      "bytes": 7031
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-2-REVIEW.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "5090433562c75d16f0b2097c929e91f140ea1ed0ab69062368a209e10be6b2ee",
+      "bytes": 8037
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-3-INDEPENDENT-REVIEW.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "e9c332de1b81925c5594dbd59931bf9b7178c62fe13f6ce59d93c0e3b84ebb64",
+      "bytes": 1949
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-3-REVIEW.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "9d6dd972dd899c6819d590a1c1d6e75469057a5eaac66a0da1065c094d4ad842",
+      "bytes": 6046
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-4-DESIGN-DOCUMENTATION.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "c456cfdb6c077ffa88c34981f658c6c91e1f9764abd3332b62720d8bbe532956",
+      "bytes": 6293
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-4-INDEPENDENT-REVIEW.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "be276e5b69f1a8d34773cc346a43b176a9d243b00c7e2e67e57c2f5aac7964d9",
+      "bytes": 10089
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-4-REVIEW.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "d492cbcf38956c9193fa635934f6f647380755fdeb0dcd5e3d7f4f596ec0736c",
+      "bytes": 7237
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-5-DESIGN-DOCUMENTATION.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "55a893fb56884a7617ecf280aa2cd95b378ab72d5bc4f5c3f12a29ada6fdf0c7",
+      "bytes": 10133
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-5-INDEPENDENT-REVIEW.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "12eab445c4860e866edac95968265a392c78d66c9a91fbfae04f9df62f1cb14b",
+      "bytes": 9452
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-5-REVIEW.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "1636cc3e8bd93896236140a7bf271e380431d7aa5311e00b9730854726ef5c05",
+      "bytes": 7266
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-6-DESIGN-DOCUMENTATION.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "c631306a441151c8a000fa51bd859eb8572026c6f5a6cea9dd5f95581265dd64",
+      "bytes": 13851
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-6-INDEPENDENT-REVIEW.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "4f5bcbbe32ac9a0a1ca188a01276b6f03654284a0bfc18944a5edf32292b8e8a",
+      "bytes": 8501
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-6-REVIEW.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "950c080d39adc1e55e66c1abe6e6a4ffde798e8dd3e0d9600853df3293f6cfc6",
+      "bytes": 6950
+    },
+    {
+      "file": "docs/redesign/modern-design-2026-10-13/PHASE-7-PR-DRAFT.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "e033006a940be8ea6bc3f0aefa7dbddd1fc699987284f6db3b5035b1ff2255fa",
+      "bytes": 4430
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/CONTINUE-IN-NEW-CHAT.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "cee6ab53d1ed9a30f451323845367ba621c089599b0b285db56f8535559c1cf3",
+      "bytes": 29122
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/EVIDENCE-NOTES.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "bf17d675e8378279d2e1c7f3d7276866848d4d0d8c3eca8e3857c323e1021a03",
+      "bytes": 2028
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/FINAL-LIVE-VERIFICATION.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "b941532b2b0f6e6e8e876daff5e6e0bb219d3920122b2c7874b2d8aeda109eec",
+      "bytes": 5711
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/IMPLEMENTATION-CHECKPOINT.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "ec2c8203e550181d7f15206c8f45f129ea53c49dcc0895ac89fed953ac227391",
+      "bytes": 31369
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/M11-RELEASE.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "9c5c2bfa58db949789e63a30b80a42f22475db96ebbf945339dd14970773efdc",
+      "bytes": 9561
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/M2-SHARED-FRAMES.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "e1b5595077f4094e6650f1802bc62f3ffa4f7e3bc5a06aa3b11de60ac308fa37",
+      "bytes": 3073
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/M4-IN-PROGRESS.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "6a1ea69733b2bc4acccc6d84450e31306046788ec505d1ede80ffd43008cfc80",
+      "bytes": 3718
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/M5-PUBLIC-JOURNEYS.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "d39646419ac58369e78240f5a0ede4fe89235d37643dbcfe5f511b16c45a24be",
+      "bytes": 4717
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/M6-STUDIO-WORKSPACES.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "b4b219196d37c86678042f6901d4b3c8fc493536f85a3420e57d132bf63dfe2e",
+      "bytes": 5561
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/M7-ORDERS-AND-EDITORIAL-ORDERING.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "3bf7ffd19612f5eb083cc6379da35a8b87c01a3a7deed26e41fff171cbd48bd0",
+      "bytes": 2487
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/M8-EDITORIAL-WORKFLOW.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "589e3d95ea8cbdca41a1f9ccf6f696ed976d6c1643eb5f07fd3618188b4783ed",
+      "bytes": 6088
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/M9-EDITORIAL-DRAFT-PRODUCTION.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "91033bee708fdac2769be02d0db72263714a4ce400e790705aba0fed0e5d2b41",
+      "bytes": 8639
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/PENDING-AFTER-M4.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "ab6ced5468b622fafb0cefa271249dc66c412cdc6ff297afe8aed3b3ad18fab7",
+      "bytes": 4026
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/PENDING-AFTER-M6.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "76a896768fdb71eafb9709f34235679a67b42d29c0b9d92d5679dce75c959ade",
+      "bytes": 1350
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/PENDING-AFTER-M8.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "df2f3c1165e1ac7c0456f635c267ed7fcf2a7d0bd58a3f180659ca118067f597",
+      "bytes": 1476
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/PENDING-AFTER-M9.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "7d0d5caf4500c0f9e2999cab14d8e0749798297c96b9a025407cc2652b83d1cf",
+      "bytes": 1589
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/RELEASE-M0-M4.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "4a4643e02e110f77a9842fff934b592b715bec563142b6a2ae9129e6bffba4aa",
+      "bytes": 5231
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/RELEASE-M5-M9.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "3b9b1fc5af14b71a0eb2418ca8e826f7a74809681cea4e87f7296883504d1bd4",
+      "bytes": 7498
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/Rivya-Combined-Final-Implementation-and-Phase-Wise-Plan.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "5898c22bff810efcc4911a400ade37b397bc15856896e346da98c712c0088acc",
+      "bytes": 281310
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/Rivya-Final-Phase-Wise-Guide.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "f01308df348e5455d4070815e19577337bddbcdbcf76baec93da7f041fa51b40",
+      "bytes": 13370
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/Rivya-Master-Implementation-Prompt.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "b6eb599948d53aa920e27bdc8759acb94505a9caa823fd8481bd42bc2e749f70",
+      "bytes": 6106
+    },
+    {
+      "file": "docs/redesign/old-design-migration-2026-10-08/Rivya-Old-Design-Migration-Plan.md",
+      "reason": "Superseded migration stage report or earlier master plan",
+      "sha256": "b2927fc6eb915db5263c08a2685d2fb099ce0af0e094e4ff4670b7a9eea8e706",
+      "bytes": 178565
+    },
+    {
+      "file": "docs/redesign/sitewide-cinematic-2026-10-16/ACCEPTANCE-PR.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "2e404e127726856f3db56b9cf22ed43c6d230a1e2706c82922ce8b511e38138b",
+      "bytes": 2742
+    },
+    {
+      "file": "docs/redesign/sitewide-cinematic-2026-10-16/CONTINUE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "9fb1fafd9fb9a642d965a4f6637f5096e117fb50c04e328140303c0376481e22",
+      "bytes": 7715
+    },
+    {
+      "file": "docs/redesign/sitewide-cinematic-2026-10-16/DIRECTION.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "3b42444979c280857aeceb4b55d7affff328d01ef84bb41cb30deb148817dad8",
+      "bytes": 3106
+    },
+    {
+      "file": "docs/redesign/sitewide-cinematic-2026-10-16/PUBLIC-IMPLEMENTATION.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "a5d461185d4f31d93171970ca420fe0a88888bc5cd3c38b9f9af19134b37c716",
+      "bytes": 9617
+    },
+    {
+      "file": "docs/redesign/sitewide-cinematic-2026-10-16/RELEASE.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "378651b51c61772bbf7322b48243c216a2db050e2d830516e89de6772c70b9e3",
+      "bytes": 7055
+    },
+    {
+      "file": "docs/redesign/sitewide-cinematic-2026-10-16/STUDIO-IMPLEMENTATION.md",
+      "reason": "Completed or superseded public redesign report",
+      "sha256": "ac07c36fbe787e329a836b51a4f71cc74e5313eed698a823bd832c320ad050cb",
+      "bytes": 9660
+    },
+    {
+      "file": "docs/redesign/studio-access-2026-10-15/DESIGN-NOTES.md",
+      "reason": "Completed login design revision/review",
+      "sha256": "eee03145ffa2d53c179fe0cef692d653bcb8794d27d424b4babf88d4a54277e3",
+      "bytes": 20431
+    },
+    {
+      "file": "docs/redesign/studio-access-2026-10-15/DIRECTION.md",
+      "reason": "Completed login design revision/review",
+      "sha256": "8f33ad64ea5cd72cfa69f151d012a58c77e5d8956ad69b2ef7f9c4c03dae0c55",
+      "bytes": 1794
+    },
+    {
+      "file": "docs/redesign/studio-access-2026-10-15/RELEASE.md",
+      "reason": "Completed login design revision/review",
+      "sha256": "17790b2527b60c23b0b676928dfb5bb72495b8ccbd2e32ab34b163dda9c18dae",
+      "bytes": 2658
+    },
+    {
+      "file": "docs/redesign/studio-access-2026-10-15/REVISION-2-DESIGN-NOTES.md",
+      "reason": "Completed login design revision/review",
+      "sha256": "7d5c883ebba982f6be81458d1197dee934afd1dffd437de23439b12a802490ee",
+      "bytes": 12329
+    },
+    {
+      "file": "docs/redesign/studio-access-2026-10-15/REVISION-2-VISUAL-REVIEW.md",
+      "reason": "Completed login design revision/review",
+      "sha256": "8394a388b01500e77cedb59efe63144f0e8d29cb679b00743bf90842c03cf6f8",
+      "bytes": 8271
+    },
+    {
+      "file": "docs/redesign/studio-access-2026-10-15/REVISION-2.md",
+      "reason": "Completed login design revision/review",
+      "sha256": "28d0668a5c401b7b1aac59e2eb7d8b70b946c012dee973a046e439e706dd2b8e",
+      "bytes": 2358
+    },
+    {
+      "file": "docs/redesign/studio-access-2026-10-15/REVISION-3-VISUAL-REVIEW.md",
+      "reason": "Completed login design revision/review",
+      "sha256": "830da44c9df6bd588516dff4bf09a0efdbd1b586b16ff9ece0e7b782316b45f8",
+      "bytes": 3837
+    },
+    {
+      "file": "docs/redesign/studio-access-2026-10-15/REVISION-3.md",
+      "reason": "Completed login design revision/review",
+      "sha256": "61ad4ba2171c18fe1f1d9e865042d82718411de738fea2de9c8d7471b916d030",
+      "bytes": 2497
+    },
+    {
+      "file": "docs/redesign/studio-access-2026-10-15/REVISION-4.md",
+      "reason": "Completed login design revision/review",
+      "sha256": "23bc5ce5353cdd54a96f0a64f4f538f4d253000726094f40e7b32111c51266af",
+      "bytes": 1874
+    },
+    {
+      "file": "docs/redesign/studio-access-2026-10-15/REVISION-5.md",
+      "reason": "Completed login design revision/review",
+      "sha256": "ffebbb4ec212a663e7d327c026724fe4d3ddee14cce2343719c9508b85ee6d4d",
+      "bytes": 1094
+    },
+    {
+      "file": "docs/redesign/studio-access-2026-10-15/REVISION-6.md",
+      "reason": "Completed login design revision/review",
+      "sha256": "586797e70782766b03e236486bc1f504493555c71e587687adb9f5c37a0f81d5",
+      "bytes": 1543
+    },
+    {
+      "file": "docs/redesign/studio-access-2026-10-15/VISUAL-REVIEW.md",
+      "reason": "Completed login design revision/review",
+      "sha256": "3f9949b9479822db12c34bedafb28fc3b56f5bb7595545bb7842b08d174656d0",
+      "bytes": 8036
+    },
+    {
+      "file": "experiments/redesign-phase1/DIRECTION.md",
+      "reason": "Completed experimental design milestone",
+      "sha256": "b63ec4db72e9ec69d44cd2f4e93512b66336638f06c2c8eb4dcd6202bae62cc9",
+      "bytes": 3806
+    },
+    {
+      "file": "experiments/redesign-phase2/DIRECTION.md",
+      "reason": "Completed experimental design milestone",
+      "sha256": "d0d5b82c3d6c2af670c4fc41dcf86784c91044f64aff808e7c201fbaab5d7926",
+      "bytes": 3093
+    },
+    {
+      "file": "experiments/redesign-phase3/DIRECTION.md",
+      "reason": "Completed experimental design milestone",
+      "sha256": "4dc8dd56300c2f1d75b32ccbd9fed933c42c5dd4487766e15c1a533359d4f5a4",
+      "bytes": 2979
+    },
+    {
+      "file": "experiments/redesign-phase4/DIRECTION.md",
+      "reason": "Completed experimental design milestone",
+      "sha256": "44a7669e8cc91829f2363e849d37a4d05ab6464b327eb65c81d494ffce477d1b",
+      "bytes": 3271
+    },
+    {
+      "file": "experiments/redesign-phase5/DIRECTION.md",
+      "reason": "Completed experimental design milestone",
+      "sha256": "ab83c660ec4e31e4e42992a65e29cd2775f21ce045bf037a5041b528ef4a2ed0",
+      "bytes": 2876
+    },
+    {
+      "file": "experiments/redesign-phase6/DIRECTION.md",
+      "reason": "Completed experimental design milestone",
+      "sha256": "e11ef661628d91ec6d8e6e9abb6ceaf12ba74d875bc70e2ecd54478d88d907e9",
+      "bytes": 2989
+    },
+    {
+      "file": "experiments/sites/rivyalivingart-studio-preview/docs/SITES-FULL-01.md",
+      "reason": "Completed experimental design milestone",
+      "sha256": "d0690638116929f820d486d956e030b6f9425ead8c91fb84546d02f6b8a54007",
+      "bytes": 1920
+    },
+    {
+      "file": "experiments/sites/rivyalivingart-studio-preview/docs/SITES_FULL_02_CHECKPOINT.md",
+      "reason": "Completed experimental design milestone",
+      "sha256": "f6fcf672f0a2f9a4f85540841290a0a006ba18ddd8251a9a2e104e6742f502df",
+      "bytes": 5902
+    },
+    {
+      "file": "experiments/sites/rivyalivingart-studio-preview/docs/SITES_FULL_03_CHECKPOINT.md",
+      "reason": "Completed experimental design milestone",
+      "sha256": "d4d2c8b7ec25e86ac34c6c91b474a2477d5ba5b6d186328d60313fbada30edfd",
+      "bytes": 4217
+    },
+    {
+      "file": "local/.local-work/reports/00-progress.md",
+      "reason": "Historical local implementation/release report",
+      "sha256": "43f4f3270311071fa02329b7e756089b38ac346ac970e81b48fc6c6c99922c1a",
+      "bytes": 1684
+    },
+    {
+      "file": "local/.local-work/reports/05-old-to-new-comparison-updated.md",
+      "reason": "Historical local implementation/release report",
+      "sha256": "a93a692b3bb8f7d7868fe20997924d0a2771b8b0808886c4893e30fcd05a9fd6",
+      "bytes": 1487
+    },
+    {
+      "file": "local/.local-work/reports/09-implementation-report.md",
+      "reason": "Historical local implementation/release report",
+      "sha256": "059f16bfc97b25b8a7f1dcbeaa73efc584d51aa0828f9234a8b3690910192a9a",
+      "bytes": 2311
+    },
+    {
+      "file": "local/.local-work/reports/10-validation-report.md",
+      "reason": "Historical local implementation/release report",
+      "sha256": "c8317f3d3ea7761c4ca278702d58a6ccaa58f1fdb09ad8ae039f44b23485cdd4",
+      "bytes": 1950
+    },
+    {
+      "file": "local/.local-work/reports/11-release-report.md",
+      "reason": "Historical local implementation/release report",
+      "sha256": "4efee0d6f7ab5ba1253e4b317d38d53c6979041e6d902cc9d23d1df0567450cf",
+      "bytes": 1897
+    },
+    {
+      "file": "local/.local-work/reports/12-navigation-localization-release.md",
+      "reason": "Historical local implementation/release report",
+      "sha256": "1e0138192b469b362ab1f630869ef6726c250536e1ccbc378e70452c75b55cb9",
+      "bytes": 3976
+    },
+    {
+      "file": "local/.local-work/reports/13-timezone-locales-followup.md",
+      "reason": "Historical local implementation/release report",
+      "sha256": "71639d0427f4295d74ef98637564d602320a71b67401b20352b182425398cdf0",
+      "bytes": 1880
+    }
+  ]
+}

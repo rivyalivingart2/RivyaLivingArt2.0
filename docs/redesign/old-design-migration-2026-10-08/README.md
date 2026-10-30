@@ -2,11 +2,11 @@
 
 Planning prepared 8 October 2026; repository handoff prepared 9 October 2026.
 
-**Start here:** [Combined final plan](Rivya-Combined-Final-Implementation-and-Phase-Wise-Plan.md).
+**Start here:** [Combined final plan](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/redesign/old-design-migration-2026-10-08/Rivya-Combined-Final-Implementation-and-Phase-Wise-Plan.md).
 
-**Continue in another chat:** [Copy the continuation prompt](CONTINUE-IN-NEW-CHAT.md).
+**Continue in another chat:** [Copy the continuation prompt](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/redesign/old-design-migration-2026-10-08/CONTINUE-IN-NEW-CHAT.md).
 
-Current implementation: M0–M4 and Production setup are delivered; M5–M8 are verified locally for their documented engineering scopes. Read [the checkpoint](IMPLEMENTATION-CHECKPOINT.md), [M8 report](M8-EDITORIAL-WORKFLOW.md) and [pending list](PENDING-AFTER-M8.md). Stop before M9 without explicit permission. M5–M8 are not pushed or deployed. Production content remains 0/480. The planning materials below remain the full reference; historical observations are not fresh acceptance evidence.
+Current implementation: M0–M4 and Production setup are delivered; M5–M8 are verified locally for their documented engineering scopes. Read [the checkpoint](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/redesign/old-design-migration-2026-10-08/IMPLEMENTATION-CHECKPOINT.md), [M8 report](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/redesign/old-design-migration-2026-10-08/M8-EDITORIAL-WORKFLOW.md) and [pending list](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/redesign/old-design-migration-2026-10-08/PENDING-AFTER-M8.md). Stop before M9 without explicit permission. M5–M8 are not pushed or deployed. Production content remains 0/480. The planning materials below remain the full reference; historical observations are not fresh acceptance evidence.
 
 ## What is included
 
@@ -22,16 +22,16 @@ Current implementation: M0–M4 and Production setup are delivered; M5–M8 are 
 
 | Need | File |
 | --- | --- |
-| One combined Markdown document | [Combined plan](Rivya-Combined-Final-Implementation-and-Phase-Wise-Plan.md) |
-| Short phase guide | [Phase guide](Rivya-Final-Phase-Wise-Guide.md) |
-| Detailed source specification | [Detailed plan](Rivya-Old-Design-Migration-Plan.md) |
-| Implementation instruction | [Master instruction](Rivya-Master-Implementation-Prompt.md) |
-| Ready-to-copy new-chat prompt | [Continuation prompt](CONTINUE-IN-NEW-CHAT.md) |
+| One combined Markdown document | [Combined plan](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/redesign/old-design-migration-2026-10-08/Rivya-Combined-Final-Implementation-and-Phase-Wise-Plan.md) |
+| Short phase guide | [Phase guide](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/redesign/old-design-migration-2026-10-08/Rivya-Final-Phase-Wise-Guide.md) |
+| Detailed source specification | [Detailed plan](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/redesign/old-design-migration-2026-10-08/Rivya-Old-Design-Migration-Plan.md) |
+| Implementation instruction | [Master instruction](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/redesign/old-design-migration-2026-10-08/Rivya-Master-Implementation-Prompt.md) |
+| Ready-to-copy new-chat prompt | [Continuation prompt](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/redesign/old-design-migration-2026-10-08/CONTINUE-IN-NEW-CHAT.md) |
 | Task tracking | [Task register](implementation-tracker.json) |
 | Full content register | [480-entry JSON](editorial-production-register.json) |
 | Browser content viewer | [Interactive register HTML](Rivya-Editorial-Production-Register.html) |
 | Page and section mapping | [Old route ledger](old-route-parity.json), [section manifest](old-section-manifest.json) |
-| Evidence limits | [Evidence notes](EVIDENCE-NOTES.md) |
+| Evidence limits | [Evidence notes](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/redesign/old-design-migration-2026-10-08/EVIDENCE-NOTES.md) |
 
 HTML files are standalone local viewers, not new application routes. Open them locally if GitHub shows source instead of rendering them.
 

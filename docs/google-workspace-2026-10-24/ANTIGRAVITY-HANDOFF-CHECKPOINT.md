@@ -6,7 +6,7 @@ Continue on **`codex/google-cloud-acceptance`**. The fresh checkout began clean 
 
 The user's shared conversation URL could not be fetched. The committed current branch, owner brief, phase plan, restoration ledger and live provider observations ground this handoff. Do not reset to the main checkpoint and discard PR #67.
 
-Use [CONTINUE-IN-GEMINI-ANTIGRAVITY.md](CONTINUE-IN-GEMINI-ANTIGRAVITY.md) as the complete copy-ready master prompt. Use [LOCAL-OFFLINE-RUNBOOK.md](LOCAL-OFFLINE-RUNBOOK.md) for local checkout, Windows setup, offline limits, private-runtime transfer and phase-PR procedure. The original [OWNER-BRIEF.md](OWNER-BRIEF.md) and detailed [PHASE-PLAN.md](PHASE-PLAN.md) remain governing scope.
+Use [CONTINUE-IN-GEMINI-ANTIGRAVITY.md](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/google-workspace-2026-10-24/CONTINUE-IN-GEMINI-ANTIGRAVITY.md) as the complete copy-ready master prompt. Use [LOCAL-OFFLINE-RUNBOOK.md](LOCAL-OFFLINE-RUNBOOK.md) for local checkout, Windows setup, offline limits, private-runtime transfer and phase-PR procedure. The original [OWNER-BRIEF.md](OWNER-BRIEF.md) and detailed [PHASE-PLAN.md](PHASE-PLAN.md) remain governing scope.
 
 ## What this checkpoint adds
 
