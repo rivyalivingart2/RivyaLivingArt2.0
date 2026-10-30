@@ -108,7 +108,7 @@ The owner approved the Phase 1 previews and authorized Phase 2 only. This record
 
 Resin imagery leads the public experience within dark ocean framing, restrained champagne actions and generous spacing. Ivory reading and working surfaces support sustained attention; serif public headings pair with functional Inter controls. The original logo, main colours, existing product story and Journal excerpt remain intact. Qualitative language follows the approved direction rather than an invented research or creative interview.
 
-Sources: [PRODUCT.md](../../PRODUCT.md), [DIRECTION.md](DIRECTION.md), [README.md](README.md), [App.tsx](App.tsx), [styles.css](styles.css), [media-manifest.json](media-manifest.json), and all six files in [design-foundation](../../src/components/design-foundation/). The normative extracted values above apply to this scope; source remains implementation truth. The adjacent [.impeccable/design.json](.impeccable/design.json) holds extensions and static component specimens. No root DESIGN.md is created or replaced.
+Sources: [PRODUCT.md](../../PRODUCT.md), [DIRECTION.md](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/experiments/redesign-phase2/DIRECTION.md), [README.md](README.md), [App.tsx](App.tsx), [styles.css](styles.css), [media-manifest.json](media-manifest.json), and all six files in [design-foundation](../../src/components/design-foundation/). The normative extracted values above apply to this scope; source remains implementation truth. The adjacent [.impeccable/design.json](.impeccable/design.json) holds extensions and static component specimens. No root DESIGN.md is created or replaced.
 
 **Key Characteristics:**
 

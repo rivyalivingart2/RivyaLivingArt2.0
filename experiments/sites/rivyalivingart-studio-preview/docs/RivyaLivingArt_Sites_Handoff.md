@@ -1,4 +1,4 @@
-> Historical SITES-01 handoff. Current implementation: [SITES_FULL_02_CHECKPOINT.md](SITES_FULL_02_CHECKPOINT.md).
+> Historical SITES-01 handoff. Current implementation: [SITES_FULL_02_CHECKPOINT.md](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/experiments/sites/rivyalivingart-studio-preview/docs/SITES_FULL_02_CHECKPOINT.md).
 
 # RivyaLivingArt — Website & Studio Preview
 

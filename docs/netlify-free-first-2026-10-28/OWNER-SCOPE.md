@@ -1,4 +1,19 @@
-# Latest owner scope — 29 October 2026
+# Latest owner scope — 30 October 2026
+
+**Cleanup publication authorized:** after reviewing the local cleanup, the owner
+explicitly instructed, "PUSH THIS UPDATED DATA IN GITHUB ALSO". This authorizes
+publishing the reviewed documentation cleanup to GitHub main through the compatible
+PR/review/merge flow. It does not authorize provider configuration, production data
+migration, secret rotation or resource retirement. Future unrelated pushes still
+require new permission.
+
+**30 October documentation cleanup:** the owner requested removing unwanted Markdown
+from old completed work. This authorizes local removal of superseded documents and
+reference/index cleanup. Current guides, pending requirements, operational/recovery
+references, licenses and source-dependent documents remain. Git history preserves
+removed reports. The follow-up instruction above now authorizes this cleanup's
+GitHub publication. Provider writes and deployment configuration changes remain
+outside its scope; the 29 October source publication below is already completed.
 
 **Latest publication instruction:** the owner now explicitly says to push all latest work to GitHub main, include complete phase/implementation guidance for all AI tools, and provide a Google Antigravity continuation prompt. This authorizes publishing the accumulated source/docs and guide bundle through the compatible PR/review/merge flow. It supersedes the earlier local-only prohibition for this publication. It does not authorize provider writes, production migration/cutover, deployment configuration changes, secret rotation, paid plans or destructive retirement. Private data, credentials and evidence remain excluded from GitHub. Future pushes/PR changes/merges require new owner permission.
 

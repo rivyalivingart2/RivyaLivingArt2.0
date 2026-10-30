@@ -1,105 +1,26 @@
-# M10 factual and media evidence register — 12 October 2026
+# Media rights: remaining acceptance work
 
-This is a source-register reconciliation, not a new Drive fetch, legal opinion, independent rights investigation or production database review. It reads committed project decisions, media hashes, authored batches and release receipts. No record, publication, original file, crop or permission was changed. Language review is recorded separately.
+This public checklist replaces the detailed historical evidence register during
+the 30 October 2026 documentation cleanup. Detailed evidence remains retained
+locally outside version control. Obtain it through authorized private access;
+do not upload private source locations, contacts or evidence to GitHub.
+Existing Git history has not been rewritten.
 
-## Evidence already sufficient for a stated closure
+The cleanup grants no new media rights and closes no acceptance gate. Preserve
+the existing approved website presentation, contact details, records and media.
 
-| Evidence row | Disposition | Documentary basis |
-| --- | --- | --- |
-| Owner authorization to publish the 480 displayed entries and their supplied imagery | **Closed for that publication instruction.** Do not ask the owner to grant the same authorization again. | [10 October release decision](../../decisions/2026-10-10-release-m5-m9-and-m10.md). The historical staging manifests still say `ownerApproval: Pending`; those values are not the latest release authority. |
-| Portfolio/Testimonial classification | **Closed for the permitted content mix:** 120 concepts and 120 fictional samples. No genuine customer-project quota remains required for these newly permitted samples. | [Labelled-content decision](../../decisions/2026-10-09-labelled-editorial-content.md), [480-entry production receipt](release-m5-m9-evidence.json). They remain non-factual; no real quote, customer identity, rating or consent was established. |
-| M9 file identity, delivery and technical publication | **Recorded as verified on 9–10 October:** 21 references, 63 public derivatives, 34 core Drive readbacks, 480 published records. | [Drive verification](../../editorial-production/m9/drive-verification.json), [M9 media manifest](../../editorial-production/m9/media-manifest.json), [release receipt](RELEASE-M5-M9.md). These dated results are not a fresh remote audit. |
-| A10, B05, B06, B07, B08, B09 source continuity | **Closed for exact identity and inherited owner-authorized illustration use.** Each source Drive ID and SHA-256 matches the older approved-set manifest. | [Older media manifest](../media-manifest.json), [23 September owner decision](../../decisions/2026-09-23-approved-full-redesign.md). Six matched source identities are distinct from the release receipt’s three reused production media rows. |
-| A03, A05, A06 prior source description | **Closed for the documented candidate provenance and pixel-review scope:** owner-supplied Higgsfield Originals treated as illustrations. | Exact Drive ID and SHA-256 match [P3 asset review](../p3-editorial-asset-review.json). That review explicitly did not establish photographic authenticity or publication/rights investigation. |
-| A03 and A04 old-site reference linkage | **Closed for the recorded local byte identity:** SHA-256 matches the reviewed old-site image record. | [Reviewed reference images](reviewed-reference-images.json). A matching file in OLDWEBSITE is not a creator licence or a completed-project record. |
-| Existing contact and policy authority | **Retain the approved current base.** Phone `+91 8320404132`, email `rivyalivingart2.0@gmail.com`, existing policy conditions and order contracts are protected. | [Combined plan](Rivya-Combined-Final-Implementation-and-Phase-Wise-Plan.md), [M10 release receipt](M10-PENDING-RELEASE.md). No factual change is proposed by this review. |
+Before any new media use or factual association:
 
-## Exact M9 media sources
+- Verify the creator or generation origin and applicable permission for the exact
+  source, retaining the evidence privately.
+- Confirm the intended usage and crop are approved. Repository possession and
+  inherited filenames alone do not establish permission.
+- Keep illustrations labelled truthfully. Do not present generated concepts as
+  evidence of completed products or customer installations.
+- Verify derivatives against their originals and retain the relationship; a
+  format conversion does not provide a separate licence.
+- Record unresolved evidence and obtain the required owner acceptance before
+  expanding the usage. Do not infer acceptance from automated tests.
 
-All 21 sources below have the owner’s instruction to publish the displayed M9 collection. The unresolved evidence is narrower: the project contains no independent creator/licence or generation-account permission record establishing the external rights chain for these source bytes. This does not negate the owner’s existing authorization and is not a request to repeat it. A real source record could identify the creator or generation job/account, its applicable permitted use, and any relevant third-party input or attribution conditions. Do not invent that record from a Drive folder name.
-
-Each row identifies the original Drive file; copied-delivery IDs, full SHA-256 values, original dimensions and derivative hashes remain in the linked media manifest. `J/P` counts are public Journal/Portfolio header-image usages. `F/T` counts are private context/reference assignments, not public customer portraits. All rows additionally lack a dated per-usage human desktop/mobile crop acceptance record; a shared source approval does not document all its new crops.
-
-| Key and original source | Observed subject | Public J/P; private F/T | Evidence that can be carried forward | Exact unresolved source evidence |
-| --- | --- | --- | --- | --- |
-| **A03** [A03-doorway-collectible.jpg](https://drive.google.com/file/d/1o5VSIpFgnyn4Obrfh3Bowhm4-bsxz1Mj/view) | Brown and blue waterfall-end table visualization in a dark room | 16/5; 16/5 | M9 identity, visual observation and published illustration classification; exact P3 Higgsfield source match; exact old-site reference hash match. | Generation job/account and applicable output-use permission for this exact Higgsfield source; new-usage crop sign-off. |
-| **A04** [A04-texture-resin-flow.jpg](https://drive.google.com/file/d/1RNN4QxbJXw9VsRrb9x3EMZ9Rtzkqfmxf/view) | Abstract navy flowing texture with gold-coloured streaks | 5/6; 5/6 | M9 identity, visual observation and published illustration classification; exact old-site reference hash match. | Creator/generation and permitted-use record for this old-site source, beyond repository possession; new-usage crop sign-off. |
-| **A05** [A05-doorway-memory.jpg](https://drive.google.com/file/d/19KOc4hLTXevHis-A0b_8gtedAgsmWRoC/view) | Clear upright floral block with red and cream roses on a dark plinth | 8/11; 8/11 | M9 identity, visual observation and published illustration classification; exact P3 Higgsfield source match. | Generation job/account and applicable output-use permission for this exact Higgsfield source; new-usage crop sign-off. |
-| **A06** [A06-doorway-gifts.jpg](https://drive.google.com/file/d/1woyD_wMKVigC6rp2Vky9sCojxyHAKmM-/view) | Blue and clear bangles, pendant and letter-shaped keyrings on dark fabric | 10/11; 10/11 | M9 identity, visual observation and published illustration classification; exact P3 Higgsfield source match. | Generation job/account and applicable output-use permission for this exact Higgsfield source; new-usage crop sign-off. |
-| **A07** [A07-insitu-tray-table.jpg](https://drive.google.com/file/d/1-bPjADvOIcSv4u-bIEhtIYgbZpvcunqQ/view) | Blue and gold-coloured rectangular tray with handles in a room scene | 2/3; 2/3 | M9 identity, visual observation and published illustration classification. | Creator/generation origin and permitted-use record for this exact Drive source; new-usage crop sign-off. |
-| **A08** [A08-product-scene-001-16x9.webp](https://drive.google.com/file/d/1aHGWxqebzQ3aN45MGFbd0UI0qzBfxtyu/view) | Wide dining-table visualization with a blue channel, chairs and a window view | 10/9; 10/9 | M9 identity, visual observation and published illustration classification. | Creator/generation origin and permitted-use record for this exact Drive source; new-usage crop sign-off. |
-| **A09** [A09-entryway-bench-room.webp](https://drive.google.com/file/d/1ISezdnR77iNaQUbXzlUvZHXmqkqEVbBE/view) | Dark bench visualization with a blue channel beside a pale entry wall | 8/5; 8/5 | M9 identity, visual observation and published illustration classification. | Creator/generation origin and permitted-use record for this exact Drive source; new-usage crop sign-off. |
-| **A10** [A10-river-channel-edge-detail.webp](https://drive.google.com/file/d/1-1I_6vqd0fGYG90hi435v-eqO8HLxGBh/view) | Close view of brown grain-like lines and a blue channel at a waterfall edge | 8/3; 8/3 | M9 identity, visual observation and published illustration classification; exact approved-set AI-concept source match. | Creator/generation permission record beyond the inherited owner approval; new-usage crop sign-off. |
-| **B01** [B01-product-hero-003-4x5.webp](https://drive.google.com/file/d/1CHjwPVf64jbo2esIYhbgWarf8jqu2aYq/view) | Round low-table visualization with brown and blue patterns in a room | 7/6; 7/6 | M9 identity, visual observation and published illustration classification. | Creator/generation origin and permitted-use record for this exact Drive source; new-usage crop sign-off. |
-| **B02** [B02-product-hero-009-4x5.webp](https://drive.google.com/file/d/1SuaGnzFaFWGY94Q-sdj1Bbgely-qdBha/view) | Portrait view of a dark bench with a blue channel | 2/2; 2/2 | M9 identity, visual observation and published illustration classification. | Creator/generation origin and permitted-use record for this exact Drive source; new-usage crop sign-off. |
-| **B03** [B03-product-hero-020-4x5.webp](https://drive.google.com/file/d/1_r-sBU3-WhG3Voc7eQ9-nhtpLNCIRvGW/view) | Framed red and yellow flower-garland visualization against a blue wall | 3/7; 3/7 | M9 identity, visual observation and published illustration classification. | Creator/generation origin and permitted-use record for this exact Drive source; new-usage crop sign-off. |
-| **B04** [B04-product-hero-029-4x5.webp](https://drive.google.com/file/d/1nqNEjc9MLbzob_bvQzEKb1ZeRfTVjM5v/view) | Stacked round coasters with brown, blue and gold-coloured boundaries | 3/2; 3/2 | M9 identity, visual observation and published illustration classification. | Creator/generation origin and permitted-use record for this exact Drive source; new-usage crop sign-off. |
-| **B05** [B05-dp069-matching-detail-4x5.webp](https://drive.google.com/file/d/1IulrKL5VBQJjA694IOBL2tNQOG9m4QTu/view) | Close view of a clear cube containing a gold-coloured lattice and blue forms | 5/7; 5/7 | M9 identity, visual observation and published illustration classification; exact approved-set AI-concept source match. | Creator/generation permission record beyond the inherited owner approval; new-usage crop sign-off. |
-| **B06** [B06-dp085-matching-detail-4x5.webp](https://drive.google.com/file/d/1MNhFSqoHcW4XqhBDJcTRZ-4lH-QdwVF_/view) | Close view of red and yellow petals at the lower edge of a garland frame | 4/6; 4/6 | M9 identity, visual observation and published illustration classification; exact approved-set AI-concept source match. | Creator/generation permission record beyond the inherited owner approval; new-usage crop sign-off. |
-| **B07** [B07-dp114-matching-detail-4x5.webp](https://drive.google.com/file/d/1sxW03X6ltxEsXDXe59GZiO9ZJp5MDt5I/view) | Detail of overlapping brown and blue coaster forms | 3/1; 3/1 | M9 identity, visual observation and published illustration classification; exact approved-set AI-concept source match. | Creator/generation permission record beyond the inherited owner approval; new-usage crop sign-off. |
-| **B08** [B08-dp048-matching-detail-4x5.webp](https://drive.google.com/file/d/12pkItvt0V0MJBM4lCD3YmLWW6qc8X4nC/view) | Close view of the left corner of a bench with grain-like lines and a blue channel | 5/1; 5/1 | M9 identity, visual observation and published illustration classification; exact approved-set AI-concept source match. | Creator/generation permission record beyond the inherited owner approval; new-usage crop sign-off. |
-| **B09** [B09-dp035-matching-detail-4x5.webp](https://drive.google.com/file/d/1IwGSb1BFUXm5zHqR2CtbQ4_T3BoAlDzv/view) | Close view of a console corner and blue waterfall-like channel | 5/6; 5/6 | M9 identity, visual observation and published illustration classification; exact approved-set AI-concept source match. | Creator/generation permission record beyond the inherited owner approval; new-usage crop sign-off. |
-| **B10** [B10-product-varmala-frame.jpg](https://drive.google.com/file/d/1Dq9QL-EiOqh-nwkh-eBnd7PC1TZcqoGz/view) | Clear rectangular floral arrangement with cream and red flowers on beige | 2/10; 2/10 | M9 identity, visual observation and published illustration classification. | Creator/generation origin and permitted-use record for this exact Drive source; new-usage crop sign-off. |
-| **B11** [B11-product-coasters.jpg](https://drive.google.com/file/d/1qzxkgNYdwbO0q7dwerV_AskMFFfdPKIq/view) | Stack of wavy-edged blue coasters with gold-coloured rims | 5/5; 5/5 | M9 identity, visual observation and published illustration classification. | Creator/generation origin and permitted-use record for this exact Drive source; new-usage crop sign-off. |
-| **B12** [B12-product-bangle.jpg](https://drive.google.com/file/d/1LKrYl_brj_VYIUx4SpKlf6bx_myTE-ra/view) | Single blue and clear bangle with gold-coloured flecks | 4/10; 4/10 | M9 identity, visual observation and published illustration classification. | Creator/generation origin and permitted-use record for this exact Drive source; new-usage crop sign-off. |
-| **B13** [B13-product-platter.jpg](https://drive.google.com/file/d/1NmRs-SxxfZJnH1BdX1ajIKXI29MjATUk/view) | Round clear floral display with a raised central ring | 5/4; 5/4 | M9 identity, visual observation and published illustration classification. | Creator/generation origin and permitted-use record for this exact Drive source; new-usage crop sign-off. |
-
-No M9 source was classified here as a real installation, preservation result, genuine material-performance test or customer photograph. For example, the floral images do not establish the success or longevity of preserving actual keepsakes, and the room scenes do not establish that a commissioned installation exists. Most identically named older product files have different SHA-256 values: matching a filename alone was deliberately insufficient for inheriting an approval.
-
-## Crop evidence at the actual usage boundary
-
-The 48 authored batch files contain **240 header-image usages**, one per Journal and Portfolio entry. Both sections use either desktop `16/9` with mobile `3/2`, or `4/5` on both, depending on the assigned source image. All recorded positions are `50%,50%`. That gives **480 explicit desktop/mobile crop states** to identify in an acceptance record, before any additional archive or selected-home-card presentation. FAQ and fictional Testimonial source batches contain no public header image, so no fictional customer-portrait approval is required for them. Their private image references remain traceable.
-
-Exact content IDs, paths, titles and hashes are in [the content manifest](../../editorial-production/m9/content-manifest.json); exact crop values are in [the batch directory](../../editorial-production/m9/batches). Production path remapping and the 480 revision-2 publications are covered by the release receipt. This document uses candidate IDs for stable traceability and does not confuse local media UUIDs with new production uploads.
-
-| Source | Exact public candidate usages whose crop record remains incomplete |
-| --- | --- |
-| A03 | J004, J008, J012, J016, J020, J021, J025, J029, J054, J058, J081, J085, J089, J112, J116, J120, P002, P025, P034, P056, P059 |
-| A04 | J033, J037, J041, J045, J049, P015, P026, P029, P054, P105, P109 |
-| A05 | J051, J055, J059, J061, J065, J069, J114, J118, P016, P036, P061, P064, P067, P071, P075, P078, P080, P111, P119 |
-| A06 | J052, J056, J060, J073, J077, J084, J088, J111, J115, J119, P060, P081, P083, P085, P087, P090, P094, P100, P114, P117, P120 |
-| A07 | J093, J097, P035, P048, P096 |
-| A08 | J001, J005, J009, J042, J046, J050, J053, J057, J113, J117, P001, P006, P010, P032, P040, P042, P053, P058, P112 |
-| A09 | J002, J006, J010, J013, J017, J082, J086, J090, P004, P031, P046, P051, P116 |
-| A10 | J034, J038, J091, J095, J099, J101, J105, J109, P009, P050, P101 |
-| B01 | J003, J007, J022, J026, J030, J083, J087, P003, P007, P017, P033, P037, P055 |
-| B02 | J014, J018, P008, P038 |
-| B03 | J062, J066, J070, P021, P022, P027, P047, P062, P068, P113 |
-| B04 | J092, J096, J100, P013, P099 |
-| B05 | J023, J027, J031, J035, J039, P011, P049, P057, P072, P076, P079, P103 |
-| B06 | J063, J067, J103, J107, P023, P028, P030, P065, P069, P104 |
-| B07 | J032, J036, J040, P107 |
-| B08 | J011, J015, J019, J104, J108, P106 |
-| B09 | J024, J028, J102, J106, J110, P005, P019, P039, P041, P052, P110 |
-| B10 | J064, J068, P018, P024, P043, P063, P066, P070, P074, P077, P108, P115 |
-| B11 | J044, J048, J071, J075, J079, P045, P088, P091, P095, P102 |
-| B12 | J043, J047, J074, J078, P012, P020, P044, P082, P084, P086, P089, P092, P097, P118 |
-| B13 | J072, J076, J080, J094, J098, P014, P073, P093, P098 |
-
-## Film and poster
-
-| Exact source | Verified scope already recorded | Missing evidence |
-| --- | --- | --- |
-| [Poster](https://drive.google.com/file/d/11iY9mANJFy4EZf54HgZ5NJ_g4AzDBLBX/view), `/media/migration/hero-pour-loop-poster.jpg`, 98,481 B | [M4 media receipt](m4-media-evidence.json) records matching Drive/local SHA-256. | Creator/generation and permitted-use record for the original still; a dated acceptance of its actual presentation. |
-| [WebM](https://drive.google.com/file/d/1xau1Vdp2i2QsD77eFvc7duYfDzrOBWL4/view), `/media/migration/hero-pour-loop.webm`, 1,649,274 B | Exact old-source and Drive-byte linkage; controlled playback verified in the named M4/M11/M10 scopes. | Creator/generation and permitted-use record for the original animation. |
-| [MP4](https://drive.google.com/file/d/1HVHyYusnysi_7aduW6xwFJHrwUlWGzIz/view), `/media/migration/hero-pour-loop.mp4`, 2,135,160 B | Additive web derivative copied to Drive, hash verified. Same single eight-second material illustration. | Link derivative permission to the original animation’s actual source record; do not treat the conversion as a separate creator licence. |
-
-The film is one material visualization in two formats, with a poster, not three projects or workshop proof. Its six M9 placements are **J031, J032, J035, J040, P105 and P109**; the approved homepage selection is additionally recorded in the M11 receipt. The visible description states that it is not a recording of a customer commission. No source claim about an actual resin formulation, maker or production stage can be closed from the animation.
-
-## Specific factual dependencies that remain conditional
-
-| Registered feature/source | What is already established | Actual evidence still absent from these registers | Correct disposition |
-| --- | --- | --- | --- |
-| `/our-story` bindings `maker`, `craft`, `studio`; old `maker-hands.jpg` reference | Existing published story wording and current source bindings; old reference pixels were inspected. | An identified real maker/staff or workshop record supporting any newly asserted identity/history/location; any identifiable-person permission if that image is later represented as documentary staff imagery. | Preserve current wording. Do not infer identity or employment from the filename or introduce an invented portrait. Unused old references do not require a new public publication now. |
-| `/process` slots `concept`, `material-selection`, `wood-preparation`, `resin-composition`, `casting`, `curing`, `surface-refinement`, `hand-finishing`, `quality-inspection`, `delivery` | The presentation bindings and private synthetic ten-stage test work. The existing four customer inquiry steps remain current. | Eligible published chapters marked `stage: making`, supported by actual atelier procedures for the relevant stage. A customer communication step, synthetic fixture or material film is not that evidence. | Keep unbound stages unclaimed; private test success closes software behavior only. |
-| `/materials-care` slots `epoxy-resin`, `teak-river-wood`, `mineral-pigments`, `preserved-botanicals` | Structured slot model and private four-material preview work. Current care wording is protected. | Actual material identity/specification and approved structured material entries supporting any newly made factual performance, provenance or preservation claim. | Existing general guidance remains. Do not convert visual similarity into composition, safety, durability or outcome guarantees. |
-| Workshop source: `hero`, `facts`, `why`, `session`, `sessions`, `private`, `room` | Seven-slot private draft/template exists; public Workshops was verified as 410 in the release scope. | Confirmed current offering with a real `confirmationSource` and approved facts for the seven slots; the private placeholders are not an actual programme. | Keep inactive/unavailable until those facts exist. No invented dates, venue, booking or waiting list. |
-| Home printing band | Conditional source contract exists. | Confirmed current printing service, its `confirmationSource`, destination and approved service facts. | Keep unavailable; do not activate from the old-site menu alone. |
-| New Journal/FAQ material, feasibility, care and process guidance | Authored source is traceable and the owner approved publication; current links and limits are recorded. | Independent editorial/factual review of exact revisions is not represented by the assistant-author review fields. The media does not prove physical performance or business capabilities. | Do not manufacture an independent pass; preserve protected text and exact revision records. |
-| New Portfolio/Testimonial records | Owner specifically authorized concepts and fictional samples; their published disclosures are verified in the dated receipt. | No real-client/real-project/real-quote evidence was supplied, and none is claimed. | **Not a missing prerequisite for this approved fictional/concept class.** A future switch to genuine class would require actual source, publication permission, reviewer and approval date. |
-
-The binding and conditional-service dispositions come from [M4 page-template evidence](M4-PAGE-TEMPLATES.md), [M4 machine receipt](m4-evidence.json), [M5 public-contract report](M5-PUBLIC-JOURNEYS.md) and the combined plan. This audit does not assert a fresh database inspection of every binding. No unsupported service is activated to satisfy a visual checklist.
-
-## Completion statement
-
-Owner publication authorization, named source/copy continuity, permitted concept/fictional classification and the recorded technical delivery are no longer generic missing-approval tasks. The unresolved acceptance evidence is specifically: source-origin/permission documentation beyond owner publication authorization for the 21 images and one film/poster family; named per-usage crop acceptance; independent factual review; and the actual business facts needed only if conditional maker/making/material/workshop/printing content is activated. Those external facts cannot be derived from hashes, screenshots, successful builds or an assistant signature. No historical manifest or production record was rewritten to pretend they were supplied.
+Use the current [AI working guide](../../implementation/AI-WORKING-GUIDE.md) and
+[phase guide](../../implementation/PHASE-BY-PHASE.md) for ongoing implementation.

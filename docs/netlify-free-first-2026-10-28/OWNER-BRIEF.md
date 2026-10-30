@@ -31,7 +31,7 @@ Choose one authoritative store for each record type. If a free database exceptio
 - Old reference source: https://github.com/rivyalivingart2/OLDWEBSITE
 - Old website/reference: https://oldwebsite-one.vercel.app/
 - Old authenticated Studio reference: https://oldwebsite-one.vercel.app/studio/login?callbackUrl=%2Fstudio
-- Google owner account: **rivyalivingart2.0@gmail.com**
+- Google owner account: **(owner-held account; see approved private configuration)**
 
 OLDWEBSITE remains a source and design reference. Its Vercel URL does not make Vercel the target hosting platform. Do not delete that reference as part of retiring the new website’s Vercel resources.
 
@@ -59,8 +59,8 @@ Reuse the owner-selected Drive image set already prepared in the website’s col
 
 Approved sources:
 
-- Owner creations: https://drive.google.com/drive/folders/1s-CO-_Yk0FMg-mq2FwHtCPV__kEan6h4?usp=sharing
-- Website images and video: https://drive.google.com/drive/folders/1P2HCTmPge6HsEwtoo-xGEzPTSn68oZOW?usp=drive_link
+- Owner creations: (owner-held Google reference; obtain through authorized private access)
+- Website images and video: (owner-held Google reference; obtain through authorized private access)
 
 Google Photos duplicates the Drive material and is excluded from further collection work. Use Pinterest, Google and worldwide references for research only; do not present third-party work as mine.
 
@@ -71,7 +71,7 @@ Act as the implementation engineer, migration engineer and verifier. Inspect rea
 Read current AGENTS.md, PROJECT_STATE.md, PRODUCT.md where present, README and relevant audit reports. Read:
 
 - docs/google-workspace-2026-10-24/OWNER-BRIEF.md
-- That folder’s PHASE-PLAN.md, ARCHITECTURE.md, SANDBOX-CHECKPOINT.md, PHASE-2-CHECKPOINT.md, ANTIGRAVITY-HANDOFF-CHECKPOINT.md, SERVICE-PLACEMENT.md, migration dictionaries and verification receipts.
+- That folder’s PHASE-PLAN.md, ARCHITECTURE.md, SANDBOX-CHECKPOINT.md, [historical PHASE-2-CHECKPOINT.md](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/google-workspace-2026-10-24/PHASE-2-CHECKPOINT.md), ANTIGRAVITY-HANDOFF-CHECKPOINT.md, SERVICE-PLACEMENT.md, migration dictionaries and verification receipts.
 - docs/hosting/netlify/MIGRATION.md
 - Relevant exact-restoration decisions, feature inventories and checkpoints.
 

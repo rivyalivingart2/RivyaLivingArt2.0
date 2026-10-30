@@ -1,6 +1,6 @@
 # Rivya Living Art — local and offline Antigravity runbook
 
-Prepared 26 October 2026. Open the existing project in Antigravity and use [the Gemini/Antigravity master prompt](CONTINUE-IN-GEMINI-ANTIGRAVITY.md). This guide preserves the existing branch, code and private local work while distinguishing local execution from connected Google verification.
+Prepared 26 October 2026. Open the existing project in Antigravity and use [the Gemini/Antigravity master prompt](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/google-workspace-2026-10-24/CONTINUE-IN-GEMINI-ANTIGRAVITY.md). This guide preserves the existing branch, code and private local work while distinguishing local execution from connected Google verification.
 
 Read [the current handoff checkpoint](ANTIGRAVITY-HANDOFF-CHECKPOINT.md) and [verification receipt](antigravity-handoff-verification.json) for the latest source revision and actual tests. These documents distinguish fresh 26 October observations from retained 24–25 October evidence.
 
@@ -325,7 +325,7 @@ Before ending, preserve work and private journals, stop only this task's process
 
 ## References
 
-- [Complete continuation prompt](CONTINUE-IN-GEMINI-ANTIGRAVITY.md).
-- [Current PR checkpoint](PHASE-2-PR.md), [sandbox checkpoint](SANDBOX-CHECKPOINT.md), [receipt](sandbox-verification.json), [setup](CLOUD-GOOGLE-SETUP.md).
+- [Complete continuation prompt](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/google-workspace-2026-10-24/CONTINUE-IN-GEMINI-ANTIGRAVITY.md).
+- [Current PR checkpoint](https://github.com/rivyalivingart2/RivyaLivingArt2.0/blob/7becabb7b6ee9d98f8786435a6e766e2ed33aaa9/docs/google-workspace-2026-10-24/PHASE-2-PR.md), [sandbox checkpoint](SANDBOX-CHECKPOINT.md), [receipt](sandbox-verification.json), [setup](CLOUD-GOOGLE-SETUP.md).
 - [Phase plan](PHASE-PLAN.md), [service placement](SERVICE-PLACEMENT.md), [architecture](ARCHITECTURE.md), [isolated target and recovery contract](ISOLATED-TARGET-PLAN.md).
 - Repository `package.json`, `tools/frontend-runtime.test.mjs` and `tools/google-workspace/` for the actual runnable source.

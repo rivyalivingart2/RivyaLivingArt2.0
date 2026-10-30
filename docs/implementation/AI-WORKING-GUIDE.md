@@ -36,8 +36,9 @@ Local changes absent from main may be newer: compare and preserve them first.
 Never assume the historical migration branch is the latest source.
 
 Read START-HERE.md, AGENTS.md, these shared guides, CURRENT-STATE.md and the latest
-relevant checkpoint. PROJECT_STATE.md, PRODUCT.md and README contain history below
-their current notices. Do not repeat withdrawn all-phases-complete claims.
+relevant checkpoint. PROJECT_STATE.md, PRODUCT.md and README are concise current
+summaries. Superseded reports are recoverable through [the documentation index](../README.md)
+and fixed Git history; do not repeat withdrawn all-phases-complete claims.
 
 ## Establish the baseline
 
